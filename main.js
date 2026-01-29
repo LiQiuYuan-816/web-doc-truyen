@@ -94,6 +94,20 @@ function renderStories(list) {
         ? "✅ Hoàn thành"
         : "🟢 Đang ra";
 
+    const countryText =
+      countryMap[story.country] || story.country;
+
+const maxGenres = 4;
+
+const genreText =
+  story.genre
+    .slice(0, maxGenres)
+    .map(g => `<span class="genre-tag">${genreMap[g] || g}</span>`)
+    .join("") +
+  (story.genre.length > maxGenres
+    ? `<span class="genre-more">…</span>`
+    : "");
+
     li.innerHTML = `
       <a href="${story.slug}/index.html">
         <strong>${story.title}</strong>
@@ -102,8 +116,12 @@ function renderStories(list) {
 
       <small>
         ✍️ ${story.author}
-        · 🌍 ${story.country}
-        · 📚 ${story.genre.join(", ")}
+        · 🌍 ${countryText}
+      </small>
+      <br>
+
+      <small>
+        📚 ${genreText}
       </small>
       <br>
 
