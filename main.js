@@ -1,4 +1,61 @@
 /* =======================
+   MAP HIỂN THỊ
+======================= */
+
+const countryMap = {
+  "trung-quoc": "🌎 Trung Quốc",
+  "nhat-ban": "🌎 Nhật Bản",
+  "han-quoc": "🌎 Hàn Quốc",
+  "viet-nam": "🌎 Việt Nam",
+  "au-my": "🌎 Âu Mỹ"
+};
+
+const genreMap = {
+  "tu-tien": "Tu Tiên",
+  "tay-huyen": "Tây huyễn",
+  "xuyen-nhanh": "Xuyên nhanh",
+  "xuyen-thu": "Xuyên thư",
+  "lam-ruong": "Làm ruộng",
+  "xay-dung": "Xây dựng",
+  "quyen-muu": "Quyền mưu",
+  "thuc-te-ao": "Thực tế ảo",
+  "dien-canh": "Điện cạnh",
+  "canh-ky": "Cạnh kỹ",
+  "the-thao": "Thể thao",
+  "khong-cp": "Không CP",
+  "dam-my": "Đam mỹ",
+  "chu-cong": "Chủ công",
+  "chu-thu": "Chủ thụ",
+  "tinh-te": "Tinh tế",
+  "linh-gac-dan-duong": "Lính gác dẫn đường",
+  "abo": "ABO",
+  "co-giap": "Cơ giáp",
+  "the-bai": "Thẻ bài",
+  "doc-tam": "Đọc tâm",
+  "doc-the": "Đọc thể",
+  "xem-anh-the": "Xem ảnh thể",
+  "ao-tuong": "Ảo tưởng",
+  "cung-dinh-hau-tuoc": "Cung đình hầu tước",
+  "duong-nhai-con": "Dưỡng nhãi con",
+  "vuon-truong": "Vườn trường",
+  "hoc-ba": "Học bá",
+  "hai-huoc": "Hài hước",
+  "am-ap": "Ấm áp",
+  "ngon-tinh": "Ngôn tình",
+  "nguyen-sang": "Nguyên sang",
+  "dong-nhan": "Đồng nhân",
+  "vo-han-luu": "Vô hạn lưu",
+  "kiem-hiep": "Kiếm hiệp",
+  "khoa-huyen": "Khoa huyễn",
+  "gioi-giai-tri": "Giới giải trí",
+  "tro-choi": "Trò chơi",
+  "trinh-tham": "Trinh thám",
+  "phat-song-truc-tiep": "Phát sóng trực tiếp",
+  "xuyen-khong": "Xuyên không",
+  "doi-thuong": "Đời thường"
+};
+
+/* =======================
    LOAD DATA
 ======================= */
 
