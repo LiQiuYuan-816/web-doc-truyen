@@ -2,6 +2,7 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kho Truyện</title>
 </head>
 <body>
@@ -10,45 +11,34 @@
     <h1>📚 Kho Truyện Của Tôi</h1>
   </header>
   <hr>
-  <!-- ================= SEARCH & FILTER ================= -->
-  <section id="filters">
-    <!-- Tìm theo tên truyện -->
-    <div>
-      <label for="search-title">Tên truyện</label><br>
-      <input
-        type="text"
-        id="search-title"
-        placeholder="Nhập tên truyện..."
-      >
-    </div>
-    <br>
-    <!-- Tìm theo tác giả -->
-    <div>
-      <label for="search-author">Tác giả</label><br>
-      <input
-        type="text"
-        id="search-author"
-        placeholder="Nhập tên tác giả..."
-      >
-    </div>
-    <br>
-    <!-- Lọc theo quốc gia -->
-    <div>
-      <label for="filter-country">Quốc gia</label><br>
-      <select id="filter-country">
-        <option value="all">🌍 Tất cả</option>
-        <option value="trung-quoc">🇨🇳 Trung Quốc</option>
-        <option value="nhat-ban">🇯🇵 Nhật Bản</option>
-        <option value="han-quoc">🇰🇷 Hàn Quốc</option>
-        <option value="viet-nam">🇻🇳 Việt Nam</option>
-        <option value="au-my">🌎 Âu Mỹ</option>
-      </select>
-    </div>
-    <br>
-    <!-- Lọc theo thể loại -->
-    <div>
-      <label for="filter-genre">Thể loại</label><br>
-      <select id="filter-genre">
+  <main>
+    <!-- ================= SEARCH & FILTER ================= -->
+    <form id="filters">
+      <div>
+        <label for="search-title">Tên truyện</label><br>
+        <input type="text" id="search-title" name="title" placeholder="Nhập tên truyện...">
+      </div>
+      <br>
+      <div>
+        <label for="search-author">Tác giả</label><br>
+        <input type="text" id="search-author" name="author" placeholder="Nhập tên tác giả...">
+      </div>
+      <br>
+      <div>
+        <label for="filter-country">Quốc gia</label><br>
+        <select id="filter-country" name="country">
+          <option value="all">🌍 Tất cả</option>
+          <option value="trung-quoc">🇨🇳 Trung Quốc</option>
+          <option value="nhat-ban">🇯🇵 Nhật Bản</option>
+          <option value="han-quoc">🇰🇷 Hàn Quốc</option>
+          <option value="viet-nam">🇻🇳 Việt Nam</option>
+          <option value="au-my">🌎 Âu Mỹ</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <label for="filter-genre">Thể loại</label><br>
+        <select id="filter-genre" name="genre">
         <option value="all">📚 Tất cả</option>
         <option value="tu-tien">Tu Tiên</option>
         <option value="tay-huyen">Tây huyễn</option>
@@ -92,17 +82,19 @@
         <option value="phat-song-truc-tiep">Phát sóng trực tiếp</option>
         <option value="xuyen-khong">Xuyên không</option>
         <option value="doi-thuong">Đời thường</option>
-      </select>
-    </div>
-  </section>
+        </select>
+      </div>
+    </form>
+    <hr>
+    <!-- ================= STORY LIST ================= -->
+    <section id="stories">
+      <ul id="story-list" class="story-list">
+        <!-- JS render truyện tại đây -->
+      </ul>
+    </section>
+  </main>
   <hr>
-    <!-- ===== STORY LIST ===== -->
-  <section>
-    <ul id="story-list"></ul>
-  </section>
-</main>
-<hr>
-   <!-- ================= FOOTER ================= -->
+  <!-- ================= FOOTER ================= -->
   <footer>
     <p>© 2026 – Web đọc truyện cá nhân</p>
   </footer>
