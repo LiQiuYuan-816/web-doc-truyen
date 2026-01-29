@@ -14,7 +14,7 @@ const ICONS = {
 
 let names = [];
 
-fetch("name-data.json")
+fetch("thu-vien-ten/name-data.json")
   .then(res => res.json())
   .then(data => {
     names = data;
