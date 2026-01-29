@@ -6,7 +6,6 @@
   --border: #d6c8b0;
 }
 
-/* ===== RESET ===== */
 * {
   box-sizing: border-box;
 }
@@ -19,39 +18,35 @@ body {
   line-height: 1.8;
 }
 
-/* ===== WRAPPER CHUNG ===== */
-.container,
+/* ===== MAIN WRAPPER ===== */
 main {
   max-width: 900px;
-  margin: 40px auto 80px;
+  margin: 0 auto 80px;
   padding: 0 24px;
 }
 
-/* ===== BACK LINK ===== */
+/* ===== BACK / NAV LINK ===== */
 .back-link {
   display: inline-block;
   margin: 24px;
-  padding: 8px 16px;
-  background: var(--paper-soft);
-  color: var(--brown);
+  padding: 8px 14px;
+  background: #eef3ff;
+  color: #2a5bd7;
   text-decoration: none;
   border-radius: 999px;
   font-weight: 600;
-  border: 1px solid var(--border);
 }
 
 .back-link:hover {
-  background: #efe6d8;
+  background: #dde6ff;
 }
 
-/* =========================
-   TITLE – DÙNG CHUNG
-========================= */
+/* ===== TITLE ===== */
 .novel-title {
   text-align: center;
   font-family: "Playfair Display", serif;
   font-size: 2.1rem;
-  margin: 0 0 12px;
+  margin: 40px 0 12px;
 }
 
 .chapter-title {
@@ -59,26 +54,16 @@ main {
   font-family: "Playfair Display", serif;
   font-size: 1.45rem;
   font-weight: 600;
-  margin: 0 0 28px;
+  margin: 24px 0 28px;
   color: #4a3823;
 }
 
-/* ===== HEADER DẠNG TRANG CHÍNH ===== */
-.novel-header {
-  text-align: center;
-  padding: 32px 0;
-  border-bottom: 2px solid var(--border);
-}
-
-.novel-header h1 {
-  margin: 0 0 12px;
-  font-family: "Playfair Display", serif;
-  font-size: 2rem;
-}
-
+/* ===== META ===== */
 .novel-meta {
+  text-align: center;
   font-size: 0.95rem;
   color: #5c4a32;
+  margin-bottom: 24px;
 }
 
 .novel-meta span {
@@ -86,36 +71,7 @@ main {
   white-space: nowrap;
 }
 
-/* =========================
-   NAVIGATION
-========================= */
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-  margin: 20px 0 32px;
-}
-
-.nav a {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: var(--brown);
-  background: var(--paper-soft);
-  border: 1px solid var(--border);
-  padding: 8px 14px;
-  border-radius: 999px;
-  transition: background 0.2s ease;
-}
-
-.nav a:hover {
-  background: #efe6d8;
-}
-
-/* =========================
-   SECTION – TRANG CHÍNH
-========================= */
+/* ===== SECTION ===== */
 .section {
   margin-top: 40px;
 }
@@ -141,60 +97,76 @@ main {
 .tag-line span {
   display: inline-block;
   margin: 4px 6px 0 0;
-  padding: 4px 10px;
+  padding: 4px 12px;
   background: var(--paper-soft);
   border: 1px solid var(--border);
   border-radius: 999px;
   font-size: 0.85rem;
 }
 
-/* =========================
-   CONTENT BOX – DÙNG CHUNG
-========================= */
-.content,
-.chapter-content {
+/* ===== CONTENT BOX ===== */
+.content {
   background: var(--paper-soft);
   border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 32px 34px;
+  border-radius: 16px;
+  padding: 30px 32px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.06);
 }
 
-.content p,
-.chapter-content p {
-  margin: 0 0 1.3em;
+/* đoạn văn */
+.content p {
+  margin: 0 0 1.2em;
   text-align: justify;
-}
-
-/* ===== CHAPTER RIÊNG ===== */
-.chapter-content p {
   text-indent: 2em;
 }
 
-/* đoạn thoại */
-.chapter-content p:first-child {
+/* đoạn không thụt (thoại, chú thích) */
+.content p.no-indent {
   text-indent: 0;
 }
 
-/* gạch ngăn */
-.chapter-content hr {
+/* gạch ngắt đoạn */
+.content hr {
   border: none;
   border-top: 1px dashed var(--border);
-  margin: 40px 0;
+  margin: 36px 0;
+}
+/* ===== NAV ===== */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin: 28px 0 36px;
 }
 
-/* ===== AUTHOR NOTE ===== */
-.chapter-content h3 {
+.nav a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--brown);
+  background: var(--paper-soft);
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  border-radius: 999px;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.nav a:hover {
+  background: #efe6d8;
+  transform: translateY(-1px);
+}
+/* ===== SUB TITLE IN CONTENT ===== */
+.content h3 {
   font-family: "Playfair Display", serif;
   font-size: 1.3rem;
-  margin-bottom: 16px;
+  margin: 32px 0 16px;
   padding-left: 12px;
   border-left: 5px solid var(--brown);
+  color: #4a3823;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* ===== FOOTER ===== */
 footer {
   text-align: center;
   padding: 24px;
