@@ -1,9 +1,15 @@
 const LABELS = {
-  zh: "Tên gốc",
   pinyin: "Pinyin",
   vi: "Tên Việt",
   alias: "Tham khảo thêm",
   note: "Ghi chú"
+};
+
+const ICONS = {
+  pinyin: "📣",
+  vi: "🇻🇳",
+  alias: "🔎",
+  note: "📝"
 };
 
 let names = [];
@@ -31,10 +37,9 @@ function render(list) {
 
 function renderFields(n) {
   return Object.keys(LABELS)
-    .filter(k => k !== "zh")
     .map(k => `
-      <div>
-        <strong>${LABELS[k]}:</strong> ${n[k] ?? ""}
+      <div class="field">
+        ${ICONS[k]} <strong>${LABELS[k]}:</strong> ${n[k] ?? "…"}
       </div>
     `)
     .join("");
