@@ -4,7 +4,7 @@
 
 let stories = [];
 
-fetch("stories.json")
+fetch("trang-chu/stories.json")
   .then(res => res.json())
   .then(data => {
     stories = data;
