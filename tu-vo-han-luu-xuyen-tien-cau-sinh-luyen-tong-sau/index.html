@@ -16,14 +16,36 @@ body {
   line-height: 1.7;
 }
 
-/* ===== LINK QUAY LẠI ===== */
-header a {
-  text-decoration: none;
-  color: #2563eb;
-  font-size: 15px;
+/* ===== NÚT QUAY VỀ KHO TRUYỆN ===== */
+.top-nav {
+  margin-bottom: 10px;
 }
-header a:hover {
-  text-decoration: underline;
+
+.top-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 10px 16px;
+  font-size: 15px;
+  font-weight: 500;
+
+  color: #2563eb;
+  background: #eef2ff;
+
+  border-radius: 999px;
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+
+.top-nav a:hover {
+  background: #e0e7ff;
+  color: #1d4ed8;
+}
+
+.top-nav a:active {
+  transform: scale(0.96);
 }
 
 /* ===== KHỐI THÔNG TIN TRUYỆN ===== */
@@ -90,7 +112,7 @@ footer {
 
 <body>
 
-<header>
+<header class="top-nav">
   <a href="index.html">⬅ Quay về Kho Truyện</a>
 </header>
 
