@@ -1,0 +1,120 @@
+:root {
+  --paper: #f6f1e7;
+  --ink: #2e2a24;
+  --brown: #6b4f2d;
+  --border: #d6c8b0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Serif", serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+/* ===== HEADER ===== */
+.site-header {
+  padding: 24px;
+  text-align: center;
+  border-bottom: 2px solid var(--border);
+  background: #efe6d8;
+}
+
+.site-header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.site-header nav {
+  margin-top: 12px;
+}
+
+.site-header nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: var(--brown);
+  font-weight: 600;
+}
+
+.site-header nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== MAIN ===== */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.filter-box,
+.story-box {
+  background: #fffaf0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.filter-box h2,
+.story-box h2 {
+  font-family: "Playfair Display", serif;
+  margin-top: 0;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+
+/* ===== FILTER FORM ===== */
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  font-family: inherit;
+  background: #fff;
+}
+
+/* ===== STORY LIST ===== */
+.story-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.story-list li {
+  padding: 12px 8px;
+  border-bottom: 1px dashed var(--border);
+}
+
+.story-list li:last-child {
+  border-bottom: none;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid var(--border);
+  background: #efe6d8;
+  font-style: italic;
+}
