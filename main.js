@@ -97,7 +97,7 @@ function renderStories(list) {
     const countryText =
       countryMap[story.country] || story.country;
 
-const maxGenres = 4;
+const maxGenres = 6;
 
 const genreText =
   story.genre
