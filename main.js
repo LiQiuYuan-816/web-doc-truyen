@@ -1,3 +1,7 @@
+/* =======================
+   LOAD DATA
+======================= */
+
 let stories = [];
 
 fetch("stories.json")
@@ -5,7 +9,14 @@ fetch("stories.json")
   .then(data => {
     stories = data;
     renderStories(stories);
+  })
+  .catch(err => {
+    console.error("Không tải được stories.json", err);
   });
+
+/* =======================
+   RENDER STORY LIST
+======================= */
 
 function renderStories(list) {
   const ul = document.getElementById("story-list");
@@ -13,17 +24,36 @@ function renderStories(list) {
 
   ul.innerHTML = "";
 
+  if (list.length === 0) {
+    ul.innerHTML = "<li>Không có truyện phù hợp.</li>";
+    return;
+  }
+
   list.forEach(story => {
     const li = document.createElement("li");
+
+    const statusText =
+      story.status === "hoan-thanh"
+        ? "✅ Hoàn thành"
+        : "🟢 Đang ra";
 
     li.innerHTML = `
       <a href="${story.slug}/index.html">
         <strong>${story.title}</strong>
       </a>
       <br>
+
       <small>
-        ${story.author} · ${story.country} · ${story.genre.join(", ")}
+        ✍️ ${story.author}
+        · 🌍 ${story.country}
+        · 📚 ${story.genre.join(", ")}
       </small>
+      <br>
+
+      <small>
+        ${statusText} · 📖 ${story.chapters} chương
+      </small>
+
       <p>${story.summary}</p>
     `;
 
@@ -31,18 +61,22 @@ function renderStories(list) {
   });
 }
 
+/* =======================
+   FILTER LOGIC
+======================= */
+
 function applyFilters() {
   const titleKeyword =
-    document.getElementById("search-title").value.toLowerCase();
+    document.getElementById("search-title")?.value.toLowerCase() || "";
 
   const authorKeyword =
-    document.getElementById("search-author").value.toLowerCase();
+    document.getElementById("search-author")?.value.toLowerCase() || "";
 
   const country =
-    document.getElementById("filter-country").value;
+    document.getElementById("filter-country")?.value || "all";
 
   const genre =
-    document.getElementById("filter-genre").value;
+    document.getElementById("filter-genre")?.value || "all";
 
   const filtered = stories.filter(story => {
     const matchTitle =
@@ -57,21 +91,29 @@ function applyFilters() {
     const matchGenre =
       genre === "all" || story.genre.includes(genre);
 
-    return matchTitle && matchAuthor && matchCountry && matchGenre;
+    return (
+      matchTitle &&
+      matchAuthor &&
+      matchCountry &&
+      matchGenre
+    );
   });
 
   renderStories(filtered);
 }
 
-// Gắn sự kiện
+/* =======================
+   EVENT LISTENERS
+======================= */
+
 document.getElementById("search-title")
-  .addEventListener("input", applyFilters);
+  ?.addEventListener("input", applyFilters);
 
 document.getElementById("search-author")
-  .addEventListener("input", applyFilters);
+  ?.addEventListener("input", applyFilters);
 
 document.getElementById("filter-country")
-  .addEventListener("change", applyFilters);
+  ?.addEventListener("change", applyFilters);
 
 document.getElementById("filter-genre")
-  .addEventListener("change", applyFilters);
+  ?.addEventListener("change", applyFilters);
