@@ -3,11 +3,11 @@
 ======================= */
 
 const countryMap = {
-  "trung-quoc": "🌎 Trung Quốc",
-  "nhat-ban": "🌎 Nhật Bản",
-  "han-quoc": "🌎 Hàn Quốc",
-  "viet-nam": "🌎 Việt Nam",
-  "au-my": "🌎 Âu Mỹ"
+  "trung-quoc": "Trung Quốc",
+  "nhat-ban": "Nhật Bản",
+  "han-quoc": "Hàn Quốc",
+  "viet-nam": "Việt Nam",
+  "au-my": "Âu Mỹ"
 };
 
 const genreMap = {
