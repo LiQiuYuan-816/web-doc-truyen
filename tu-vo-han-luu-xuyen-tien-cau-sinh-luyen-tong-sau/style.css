@@ -6,6 +6,7 @@
   --border: #d6c8b0;
 }
 
+/* ===== RESET ===== */
 * {
   box-sizing: border-box;
 }
@@ -18,30 +19,51 @@ body {
   line-height: 1.8;
 }
 
-/* ===== BACK BUTTON ===== */
-.back-link {
-  display: inline-block;
-  margin: 24px;
-  padding: 8px 14px;
-  background: #eef3ff;
-  color: #2a5bd7;
-  text-decoration: none;
-  border-radius: 999px;
-  font-weight: 600;
-}
-
-.back-link:hover {
-  background: #dde6ff;
-}
-
-/* ===== MAIN WRAPPER ===== */
+/* ===== WRAPPER CHUNG ===== */
+.container,
 main {
   max-width: 900px;
-  margin: 0 auto 80px;
+  margin: 40px auto 80px;
   padding: 0 24px;
 }
 
-/* ===== TITLE BLOCK ===== */
+/* ===== BACK LINK ===== */
+.back-link {
+  display: inline-block;
+  margin: 24px;
+  padding: 8px 16px;
+  background: var(--paper-soft);
+  color: var(--brown);
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+  border: 1px solid var(--border);
+}
+
+.back-link:hover {
+  background: #efe6d8;
+}
+
+/* =========================
+   TITLE – DÙNG CHUNG
+========================= */
+.novel-title {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 2.1rem;
+  margin: 0 0 12px;
+}
+
+.chapter-title {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 1.45rem;
+  font-weight: 600;
+  margin: 0 0 28px;
+  color: #4a3823;
+}
+
+/* ===== HEADER DẠNG TRANG CHÍNH ===== */
 .novel-header {
   text-align: center;
   padding: 32px 0;
@@ -64,7 +86,36 @@ main {
   white-space: nowrap;
 }
 
-/* ===== SECTION ===== */
+/* =========================
+   NAVIGATION
+========================= */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin: 20px 0 32px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--brown);
+  background: var(--paper-soft);
+  border: 1px solid var(--border);
+  padding: 8px 14px;
+  border-radius: 999px;
+  transition: background 0.2s ease;
+}
+
+.nav a:hover {
+  background: #efe6d8;
+}
+
+/* =========================
+   SECTION – TRANG CHÍNH
+========================= */
 .section {
   margin-top: 40px;
 }
@@ -97,26 +148,53 @@ main {
   font-size: 0.85rem;
 }
 
-/* ===== CONTENT ===== */
-.content {
+/* =========================
+   CONTENT BOX – DÙNG CHUNG
+========================= */
+.content,
+.chapter-content {
   background: var(--paper-soft);
   border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 28px 30px;
+  border-radius: 18px;
+  padding: 32px 34px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.06);
 }
 
-.content p {
-  margin: 0 0 1.2em;
+.content p,
+.chapter-content p {
+  margin: 0 0 1.3em;
   text-align: justify;
 }
 
-/* dấu gạch ngang ngắt đoạn */
-.content p:only-child:contains("-") {
-  text-align: center;
+/* ===== CHAPTER RIÊNG ===== */
+.chapter-content p {
+  text-indent: 2em;
 }
 
-/* ===== FOOTER ===== */
+/* đoạn thoại */
+.chapter-content p:first-child {
+  text-indent: 0;
+}
+
+/* gạch ngăn */
+.chapter-content hr {
+  border: none;
+  border-top: 1px dashed var(--border);
+  margin: 40px 0;
+}
+
+/* ===== AUTHOR NOTE ===== */
+.chapter-content h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+  padding-left: 12px;
+  border-left: 5px solid var(--brown);
+}
+
+/* =========================
+   FOOTER
+========================= */
 footer {
   text-align: center;
   padding: 24px;
