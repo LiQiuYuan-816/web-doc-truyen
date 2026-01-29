@@ -1,107 +1,121 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kho Truyện</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tàng Thư Các</title>
+
+  <!-- Font chữ cổ điển -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Serif:wght@400;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Icon -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <!-- ================= HEADER ================= -->
-<header>
-  <h1>📚 Kho Truyện Của Tôi</h1>
-  <nav>
-    <a href="index.html">🏠 Trang chủ</a> |
-    <a href="thu-vien-ten/name-library.html">📖 Thư viện tên</a>
-  </nav>
-</header>
-  <main>
-    <!-- ================= SEARCH & FILTER ================= -->
-    <form id="filters">
-      <div>
-        <label for="search-title">Tên truyện</label><br>
-        <input type="text" id="search-title" name="title" placeholder="Nhập tên truyện...">
-      </div>
-      <br>
-      <div>
-        <label for="search-author">Tác giả</label><br>
-        <input type="text" id="search-author" name="author" placeholder="Nhập tên tác giả...">
-      </div>
-      <br>
-      <div>
-        <label for="filter-country">Quốc gia</label><br>
-        <select id="filter-country" name="country">
-          <option value="all">🌍 Tất cả</option>
-          <option value="trung-quoc">🇨🇳 Trung Quốc</option>
-          <option value="nhat-ban">🇯🇵 Nhật Bản</option>
-          <option value="han-quoc">🇰🇷 Hàn Quốc</option>
-          <option value="viet-nam">🇻🇳 Việt Nam</option>
-          <option value="au-my">🌎 Âu Mỹ</option>
-        </select>
-      </div>
-      <br>
-      <div>
-        <label for="filter-genre">Thể loại</label><br>
-        <select id="filter-genre" name="genre">
-        <option value="all">📚 Tất cả</option>
-        <option value="tu-tien">Tu Tiên</option>
-        <option value="tay-huyen">Tây huyễn</option>
-        <option value="xuyen-nhanh">Xuyên nhanh</option>
-        <option value="xuyen-thu">Xuyên thư</option>
-        <option value="lam-ruong">Làm ruộng</option>
-        <option value="xay-dung">Xây dựng</option>
-        <option value="quyen-muu">Quyền mưu</option>
-        <option value="thuc-te-ao">Thực tế ảo</option>
-        <option value="dien-canh">Điện cạnh</option>
-        <option value="canh-ky">Cạnh kỹ</option>
-        <option value="the-thao">Thể thao</option>
-        <option value="khong-cp">Không CP</option>
-        <option value="dam-my">Đam mỹ</option>
-        <option value="chu-cong">Chủ công</option>
-        <option value="chu-thu">Chủ thụ</option>
-        <option value="tinh-te">Tinh tế</option>
-        <option value="linh-gac-dan-duong">Lính gác dẫn đường</option>
-        <option value="abo">ABO</option>
-        <option value="co-giap">Cơ giáp</option>
-        <option value="the-bai">Thẻ bài</option>
-        <option value="doc-tam">Đọc tâm</option>
-        <option value="doc-the">Đọc thể</option>
-        <option value="xem-anh-the">Xem ảnh thể</option>
-        <option value="ao-tuong">Ảo tưởng</option>
-        <option value="cung-dinh-hau-tuoc">Cung đình hầu tước</option>
-        <option value="duong-nhai-con">Dưỡng nhãi con</option>
-        <option value="vuon-truong">Vườn trường</option>
-        <option value="hoc-ba">Học bá</option>
-        <option value="hai-huoc">Hài hước</option>
-        <option value="am-ap">Ấm áp</option>
-        <option value="ngon-tinh">Ngôn tình</option>
-        <option value="nguyen-sang">Nguyên sang</option>
-        <option value="dong-nhan">Đồng nhân</option>
-        <option value="vo-han-luu">Vô hạn lưu</option>
-        <option value="kiem-hiep">Kiếm hiệp</option>
-        <option value="khoa-huyen">Khoa huyễn</option>
-        <option value="gioi-giai-tri">Giới giải trí</option>
-        <option value="tro-choi">Trò chơi</option>
-        <option value="trinh-tham">Trinh thám</option>
-        <option value="phat-song-truc-tiep">Phát sóng trực tiếp</option>
-        <option value="xuyen-khong">Xuyên không</option>
-        <option value="doi-thuong">Đời thường</option>
-        </select>
-      </div>
-    </form>
-    <hr>
-    <!-- ================= STORY LIST ================= -->
-    <section id="stories">
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <h1>
+      <i class="fa-solid fa-book-open"></i>
+      Tàng Thư Các Cá Nhân
+    </h1>
+
+    <nav>
+      <a href="../index.html">
+        <i class="fa-solid fa-house"></i> Trang chủ
+      </a>
+      <a href="thu-vien-ten/name-library.html">
+        <i class="fa-solid fa-scroll"></i> Thư viện tên
+      </a>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main class="container">
+    <!-- ===== FILTER ===== -->
+    <section class="filter-box">
+      <h2>
+        <i class="fa-solid fa-feather"></i>
+        Tra cứu truyện
+      </h2>
+
+      <form id="filters" class="filters">
+        <div class="field">
+          <label>
+            <i class="fa-solid fa-book"></i> Tên truyện
+          </label>
+          <input type="text" id="search-title" placeholder="Nhập tên truyện..." />
+        </div>
+
+        <div class="field">
+          <label>
+            <i class="fa-solid fa-user-pen"></i> Tác giả
+          </label>
+          <input type="text" id="search-author" placeholder="Nhập tên tác giả..." />
+        </div>
+
+        <div class="field">
+          <label>
+            <i class="fa-solid fa-globe"></i> Quốc gia
+          </label>
+          <select id="filter-country">
+            <option value="all">🌏 Tất cả</option>
+            <option value="trung-quoc">🇨🇳 Trung Quốc</option>
+            <option value="nhat-ban">🇯🇵 Nhật Bản</option>
+            <option value="han-quoc">🇰🇷 Hàn Quốc</option>
+            <option value="viet-nam">🇻🇳 Việt Nam</option>
+            <option value="au-my">🌍 Âu Mỹ</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>
+            <i class="fa-solid fa-tags"></i> Thể loại
+          </label>
+          <select id="filter-genre">
+            <option value="all">📚 Tất cả</option>
+            <option value="tu-tien">🗡️ Tu Tiên</option>
+            <option value="kiem-hiep">⚔️ Kiếm hiệp</option>
+            <option value="dam-my">🌸 Đam mỹ</option>
+            <option value="trinh-tham">🕵️ Trinh thám</option>
+            <option value="xuyen-khong">🌀 Xuyên không</option>
+            <option value="doi-thuong">🍵 Đời thường</option>
+          </select>
+        </div>
+      </form>
+    </section>
+
+    <!-- ===== STORY LIST ===== -->
+    <section class="story-box">
+      <h2>
+        <i class="fa-solid fa-books"></i>
+        Danh mục truyện
+      </h2>
+
       <ul id="story-list" class="story-list">
-        <!-- JS render truyện tại đây -->
+        <!-- JS render tại đây -->
       </ul>
     </section>
   </main>
-  <hr>
-  <!-- ================= FOOTER ================= -->
-  <footer>
-    <p>© 2026 – Web đọc truyện cá nhân</p>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <p>
+      <i class="fa-solid fa-candle-holder"></i>
+      © 2026 – Tàng Thư Các Cá Nhân
+    </p>
   </footer>
-  <!-- ================= SCRIPT ================= -->
+
   <script src="main.js"></script>
 </body>
 </html>
