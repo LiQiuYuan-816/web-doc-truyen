@@ -1,3 +1,11 @@
+const LABELS = {
+  zh: "Tên gốc",
+  pinyin: "Pinyin",
+  vi: "Tên Việt",
+  alias: "Tham khảo thêm",
+  note: "Ghi chú"
+};
+
 let names = [];
 
 fetch("name-data.json")
@@ -15,23 +23,31 @@ function render(list) {
     box.innerHTML += `
       <div class="card">
         <div class="zh">${n.zh}</div>
-        <div>📣 ${n.pinyin}</div>
-        <div>🇻🇳 ${n.vi}</div>
-        <div>🔎 ${n.alias}</div>
-        <div>📝 ${n.note}</div>
+        ${renderFields(n)}
       </div>
     `;
   });
+}
+
+function renderFields(n) {
+  return Object.keys(LABELS)
+    .filter(k => k !== "zh")
+    .map(k => `
+      <div>
+        <strong>${LABELS[k]}:</strong> ${n[k] ?? ""}
+      </div>
+    `)
+    .join("");
 }
 
 document.getElementById("search-name").addEventListener("input", e => {
   const q = e.target.value.toLowerCase();
 
   const filtered = names.filter(n =>
-    n.zh.includes(q) ||
-    n.vi.toLowerCase().includes(q) ||
-    n.pinyin.toLowerCase().includes(q) ||
-    n.alias.toLowerCase().includes(q)
+    Object.values(n)
+      .join(" ")
+      .toLowerCase()
+      .includes(q)
   );
 
   render(filtered);
