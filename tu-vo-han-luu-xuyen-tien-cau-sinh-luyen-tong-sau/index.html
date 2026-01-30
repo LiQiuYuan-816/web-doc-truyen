@@ -257,19 +257,23 @@
   © 2026 – Web đọc truyện cá nhân
 </footer>
 <script>
-const BOOK_ID = "tu-vo-han-luu-xuyen-tien"; // ID truyện (PHẢI TRÙNG với lúc lưu bookmark)
+const BOOK_TITLE = "Từ Vô Hạn Lưu Xuyên Tiến Cầu Sinh Luyến Tổng Sau";
 
 const bookmarks = JSON.parse(localStorage.getItem("bookmarks")) || {};
 const box = document.getElementById("continue-box");
 const btn = document.getElementById("continue-btn");
 const info = document.getElementById("continue-info");
 
-if (bookmarks[BOOK_ID]) {
-  const b = bookmarks[BOOK_ID];
-  box.style.display = "block";
-  btn.href = b.url;
-  info.textContent = `Đang đọc: ${b.chapterTitle}`;
+for (const id in bookmarks) {
+  const b = bookmarks[id];
+  if (b.novelTitle === BOOK_TITLE) {
+    box.style.display = "block";
+    btn.href = b.url;
+    info.textContent = `Đang đọc: ${b.chapterTitle}`;
+    break;
+  }
 }
 </script>
+
 </body>
 </html>
