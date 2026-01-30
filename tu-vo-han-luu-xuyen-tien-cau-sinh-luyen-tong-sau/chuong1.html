@@ -20,18 +20,27 @@
 <div class="fixed-top">
   <div class="fixed-inner">
 
-    <h1 class="novel-title">Từ vô hạn lưu xuyên tiến cầu sinh luyến tổng sau</h1>
-    <h2 class="chapter-title">
-      Chương 1: Xuyên Tiến Sinh Tồn Khiêu Chiến Hình Luyến Tổng
-    </h2>
+    <!-- LEFT: NAV -->
+    <div class="top-left">
+      <a class="back-link" href="index.html">📑 Mục lục</a>
+      <a class="back-link" href="../index.html">🏠 Trang chủ</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
 
-    <nav class="nav">
-      <a href="index.html">📑 Mục lục</a>
-      <a href="../index.html">🏠 Trang chủ truyện</a>
-      <a href="../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
-      <a href="chuong2.html">⏭ Chương sau</a>
-      <button id="bookmarkBtn">📌 Kẹp sách</button>
-    </nav>
+    <!-- CENTER: TITLE -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Từ vô hạn lưu xuyên tiến cầu sinh luyến tổng sau
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 1: Xuyên Tiến Sinh Tồn Khiêu Chiến Hình Luyến Tổng</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHAPTER NAV -->
+    <div class="top-right">
+      <a class="back-link" href="chuong2.html">⏭ Chương sau</a>
+    </div>
 
   </div>
 </div>
@@ -194,11 +203,10 @@ function isBookmarked() {
 }
 
 function updateButton() {
-  if (isBookmarked()) {
-    btn.textContent = "✅ Đã kẹp (Bỏ kẹp)";
-  } else {
-    btn.textContent = "📌 Kẹp sách";
-  }
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
 }
 
 function toggleBookmark() {
@@ -227,5 +235,21 @@ function toggleBookmark() {
 updateButton();
 btn.addEventListener("click", toggleBookmark);
 </script>
+  <script>
+  const fixedHeader = document.querySelector(".fixed-top");
+
+  function handleHeaderShrink() {
+    if (window.scrollY > 80) {
+      fixedHeader.classList.add("shrink");
+    } else {
+      fixedHeader.classList.remove("shrink");
+    }
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("load", handleHeaderShrink);
+</script>
+
+
 </body>
 </html>
