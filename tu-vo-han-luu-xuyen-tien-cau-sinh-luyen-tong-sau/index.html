@@ -260,23 +260,6 @@
 <footer>
   © 2026 – Web đọc truyện cá nhân
 </footer>
-<script>
-const BOOK_TITLE = "Từ Vô Hạn Lưu Xuyên Tiến Cầu Sinh Luyến Tổng Sau";
-
-const bookmarks = JSON.parse(localStorage.getItem("bookmarks")) || {};
-const box = document.getElementById("continue-box");
-const btn = document.getElementById("continue-btn");
-const info = document.getElementById("continue-info");
-
-for (const id in bookmarks) {
-  const b = bookmarks[id];
-  if (b.novelTitle === BOOK_TITLE) {
-    box.style.display = "block";
-    btn.href = b.url;
-    info.textContent = `Đang đọc: ${b.chapterTitle}`;
-    break;
-  }
-}
 </script>
 <script>
   const header = document.querySelector('.fixed-top');
