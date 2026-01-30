@@ -2,7 +2,6 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-
   <title>Chương 1 – Xuyên Tiến Sinh Tồn Khiêu Chiến Hình Luyến Tổng</title>
 
   <!-- Google Fonts -->
@@ -15,19 +14,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="page-chapter">
 
+<!-- ================= HEADER ================= -->
 <div class="fixed-top">
   <div class="fixed-inner">
 
-    <!-- LEFT: NAV -->
+    <!-- LEFT -->
     <div class="top-left">
       <a class="back-link" href="index.html">📑 Mục lục</a>
       <a class="back-link" href="../index.html">🏠 Trang chủ</a>
       <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
     </div>
 
-    <!-- CENTER: TITLE -->
+    <!-- CENTER -->
     <div class="novel-header top-center">
       <h1 class="novel-title">
         Từ vô hạn lưu xuyên tiến cầu sinh luyến tổng sau
@@ -37,14 +37,14 @@
       </div>
     </div>
 
-    <!-- RIGHT: CHAPTER NAV -->
+    <!-- RIGHT -->
     <div class="top-right">
       <a class="back-link" href="chuong2.html">⏭ Chương sau</a>
     </div>
 
   </div>
 </div>
-
+<!-- ================= CONTENT ================= -->
 <main>
   <div class="content">
 <p>—— “Uy, Mục Khinh Trần, lại không tỉnh liền đem ngươi ném nơi này tự sinh tự diệt!” </p>
@@ -186,6 +186,7 @@
   <a href="chuong2.html">⏭ Chương sau</a>
 </div>
   </main>
+<!-- ================= BOOKMARK ================= -->
 <script>
 const NOVEL_ID = "tu-vo-han-luu-xuyen-tien-cau-sinh-luyen-tong-sau";
 const NOVEL_TITLE = "Từ vô hạn lưu xuyên tiến cầu sinh luyến tổng sau";
@@ -198,8 +199,7 @@ function getBookmarks() {
 }
 
 function isBookmarked() {
-  const bookmarks = getBookmarks();
-  return !!bookmarks[NOVEL_ID];
+  return !!getBookmarks()[NOVEL_ID];
 }
 
 function updateButton() {
@@ -207,21 +207,18 @@ function updateButton() {
   btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
   btn.classList.toggle("active", marked);
 }
-}
 
 function toggleBookmark() {
-  let bookmarks = getBookmarks();
+  const bookmarks = getBookmarks();
 
   if (bookmarks[NOVEL_ID]) {
-    // ❌ XÓA
     delete bookmarks[NOVEL_ID];
     alert("❌ Đã bỏ kẹp sách");
   } else {
-    // 📌 LƯU
     bookmarks[NOVEL_ID] = {
       novelTitle: NOVEL_TITLE,
       chapterTitle: CHAPTER_TITLE,
-      url: window.location.href,
+      url: location.href,
       time: Date.now()
     };
     alert("📌 Đã lưu chương đang đọc");
@@ -231,25 +228,21 @@ function toggleBookmark() {
   updateButton();
 }
 
-// Khởi tạo khi load trang
 updateButton();
 btn.addEventListener("click", toggleBookmark);
 </script>
-  <script>
-  const fixedHeader = document.querySelector(".fixed-top");
 
-  function handleHeaderShrink() {
-    if (window.scrollY > 80) {
-      fixedHeader.classList.add("shrink");
-    } else {
-      fixedHeader.classList.remove("shrink");
-    }
-  }
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+const fixedHeader = document.querySelector(".fixed-top");
 
-  window.addEventListener("scroll", handleHeaderShrink);
-  window.addEventListener("load", handleHeaderShrink);
+function handleHeaderShrink() {
+  fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+}
+
+window.addEventListener("scroll", handleHeaderShrink);
+window.addEventListener("load", handleHeaderShrink);
 </script>
-
 
 </body>
 </html>
