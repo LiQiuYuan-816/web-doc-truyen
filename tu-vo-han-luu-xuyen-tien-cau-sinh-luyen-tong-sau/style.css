@@ -135,6 +135,47 @@ main {
   margin: 0;
   overflow: hidden;
 }
+/* ===============================
+   SHRINK HEADER – FINAL
+   =============================== */
+
+/* back-link + author mặc định */
+.top-left {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.author {
+  display: none;
+  font-size: 0.9rem;
+  color: #5c4a32;
+  font-style: italic;
+}
+
+/* ===============================
+   SHRINK STATE
+   =============================== */
+
+/* đẩy back-link sang trái */
+.fixed-top.shrink .top-left {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-bottom: 0;
+}
+
+/* hiện tác giả góc phải */
+.fixed-top.shrink .author {
+  display: block;
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+}
 
 /* ===============================
    SECTION
