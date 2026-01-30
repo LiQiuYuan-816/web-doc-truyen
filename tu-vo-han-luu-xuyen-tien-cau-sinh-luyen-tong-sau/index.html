@@ -26,6 +26,10 @@
       <span>✍️ Quán Đầu Bất Hảo Cật</span>
       <span>📘 Hoàn thành</span>
       <span>📖 167 chương</span>
+<!-- 🔹 NÚT ĐỌC TIẾP -->
+  	<div id="continue-box" style="margin-top:16px; display:none;">
+    	<a id="continue-btn" class="continue-btn" href="#">📖 Đọc tiếp</a>
+    	<div id="continue-info" style="margin-top:6px; font-size:0.9rem;"></div>
     </div>
   </header>
 
@@ -251,6 +255,20 @@
 <footer>
   © 2026 – Web đọc truyện cá nhân
 </footer>
+<script>
+const BOOK_ID = "tu-vo-han-luu-xuyen-tien"; // ID truyện (PHẢI TRÙNG với lúc lưu bookmark)
 
+const bookmarks = JSON.parse(localStorage.getItem("bookmarks")) || {};
+const box = document.getElementById("continue-box");
+const btn = document.getElementById("continue-btn");
+const info = document.getElementById("continue-info");
+
+if (bookmarks[BOOK_ID]) {
+  const b = bookmarks[BOOK_ID];
+  box.style.display = "block";
+  btn.href = b.url;
+  info.textContent = `Đang đọc: ${b.chapterTitle}`;
+}
+</script>
 </body>
 </html>
