@@ -22,6 +22,8 @@
   <a href="../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
   <a href="chuong28.html">⏮ Chương trước</a>
   <a href="chuong30.html">⏭ Chương sau</a>
+   <button id="bookmarkBtn">📌 Kẹp sách</button>
+
 </nav>
   <div class="content">
 
@@ -130,7 +132,6 @@
 
 
 
-
 <!-- ===== NAV DƯỚI ===== -->
 <div class="nav">
   <a href="index.html">📑 Mục lục</a>
@@ -140,5 +141,55 @@
   <a href="chuong30.html">⏭ Chương sau</a>
 </div>
   </main>
+<script>
+const NOVEL_ID = "tu-vo-han-luu-xuyen-tien-cau-sinh-luyen-tong-sau";
+const NOVEL_TITLE = "Từ vô hạn lưu xuyên tiến cầu sinh luyến tổng sau";
+const CHAPTER_TITLE = "Chương 29: Phong Mịch Quyết cho rằng chính mình ảo giác";
+
+const btn = document.getElementById("bookmarkBtn");
+
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+
+function isBookmarked() {
+  const bookmarks = getBookmarks();
+  return !!bookmarks[NOVEL_ID];
+}
+
+function updateButton() {
+  if (isBookmarked()) {
+    btn.textContent = "✅ Đã kẹp (Bỏ kẹp)";
+  } else {
+    btn.textContent = "📌 Kẹp sách";
+  }
+}
+
+function toggleBookmark() {
+  let bookmarks = getBookmarks();
+
+  if (bookmarks[NOVEL_ID]) {
+    // ❌ XÓA
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    // 📌 LƯU
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: window.location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+
+// Khởi tạo khi load trang
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
 </body>
 </html>
