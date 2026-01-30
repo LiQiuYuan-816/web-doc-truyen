@@ -278,6 +278,17 @@ for (const id in bookmarks) {
   }
 }
 </script>
+<script>
+  const header = document.querySelector('.fixed-top');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 80) {
+      header.classList.add('shrink');
+    } else {
+      header.classList.remove('shrink');
+    }
+  });
+</script>
 
 </body>
 </html>
