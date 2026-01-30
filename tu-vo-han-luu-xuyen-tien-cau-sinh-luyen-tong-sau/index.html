@@ -268,9 +268,14 @@
 <footer>
   © 2026 – Web đọc truyện cá nhân
 </footer>
-</script>
 <script>
   const header = document.querySelector('.fixed-top');
+  const main = document.querySelector('main');
+
+  function updateLayout() {
+    const headerHeight = header.offsetHeight;
+    main.style.paddingTop = headerHeight + 'px';
+  }
 
   window.addEventListener('scroll', () => {
     if (window.scrollY > 80) {
@@ -278,8 +283,13 @@
     } else {
       header.classList.remove('shrink');
     }
+    updateLayout();
   });
+
+  window.addEventListener('resize', updateLayout);
+  window.addEventListener('load', updateLayout);
 </script>
+
 
 </body>
 </html>
