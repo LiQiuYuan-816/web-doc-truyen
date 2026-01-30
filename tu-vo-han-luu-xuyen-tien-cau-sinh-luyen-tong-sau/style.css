@@ -25,40 +25,31 @@ body {
 }
 
 /* ===============================
-   LAYOUT WRAPPER
+   MAIN LAYOUT
    =============================== */
-.fixed-inner,
 main {
   max-width: 900px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-main {
-  margin-bottom: 80px;
-  padding-top: 230px;
+  margin: 0 auto 80px;
+  padding: 230px 24px 0;
 }
 
 /* ===============================
-   BACK / NAV LINK
+   BACK LINK
    =============================== */
 .back-link {
   display: inline-block;
-  margin: 24px;
-  padding: 8px 14px;
-  background: #eef3ff;
-  color: #2a5bd7;
-  text-decoration: none;
-  border-radius: 999px;
+  padding: 10px 18px;
+  font-size: 15px;
   font-weight: 600;
-}
-
-.fixed-top .back-link {
-  margin: 0 12px 8px 0;
+  border-radius: 999px;
+  background: #e8dfcf;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.2s ease;
 }
 
 .back-link:hover {
-  background: #dde6ff;
+  background: #d9cfbc;
 }
 
 /* ===============================
@@ -69,19 +60,36 @@ main {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999;
-  background: var(--paper);
+  z-index: 1000;
+  background: #f7f2e8;
   padding: 16px 20px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  transition: padding 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  transition: padding 0.25s ease, box-shadow 0.25s ease;
 }
 
+.fixed-inner {
+  max-width: 1100px;
+  margin: auto;
+  padding: 28px 24px 24px;
+  text-align: center;
+  position: relative;
+}
+
+.top-left {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+/* ===============================
+   HEADER CONTENT
+   =============================== */
 .novel-header {
   padding-top: 8px;
 }
 
 .novel-header h1 {
-  text-align: center;
   font-family: "Playfair Display", serif;
   font-size: 2.1rem;
   margin: 24px 0 12px;
@@ -89,12 +97,16 @@ main {
   transition: font-size 0.25s ease, margin 0.25s ease, line-height 0.25s ease;
 }
 
-/* meta */
+/* ===============================
+   META
+   =============================== */
 .novel-meta {
-  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 24px;
   font-size: 0.95rem;
   color: #5c4a32;
-  margin-bottom: 24px;
+  text-align: center;
+  opacity: 0.8;
   transition: opacity 0.2s ease, max-height 0.25s ease, margin 0.25s ease;
 }
 
@@ -103,7 +115,9 @@ main {
   white-space: nowrap;
 }
 
-/* shrink state */
+/* ===============================
+   SHRINK STATE
+   =============================== */
 .fixed-top.shrink {
   padding: 8px 20px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
@@ -160,7 +174,7 @@ main {
 }
 
 /* ===============================
-   CONTENT BOX
+   CONTENT
    =============================== */
 .content {
   background: var(--paper-soft);
@@ -178,49 +192,6 @@ main {
 
 .content p.no-indent {
   text-indent: 0;
-}
-
-.content hr {
-  border: none;
-  border-top: 1px dashed var(--border);
-  margin: 36px 0;
-}
-
-.content h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 1.3rem;
-  margin: 32px 0 16px;
-  padding-left: 12px;
-  border-left: 5px solid var(--brown);
-  color: #4a3823;
-}
-
-/* ===============================
-   NAV (optional)
-   =============================== */
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-  margin: 28px 0 36px;
-}
-
-.nav a {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: var(--brown);
-  background: var(--paper-soft);
-  border: 1px solid var(--border);
-  padding: 8px 16px;
-  border-radius: 999px;
-  transition: background 0.2s ease, transform 0.15s ease;
-}
-
-.nav a:hover {
-  background: #efe6d8;
-  transform: translateY(-1px);
 }
 
 /* ===============================
