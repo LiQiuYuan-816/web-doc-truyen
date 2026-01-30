@@ -131,6 +131,12 @@
       </form>
     </section>
 
+<section id="continue-reading">
+  <h2>📖 Đang đọc</h2>
+  <div id="readingList"></div>
+</section>
+
+
     <!-- ===== STORY LIST ===== -->
     <section class="story-box">
       <h2>
@@ -147,11 +153,47 @@
   <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
     <p>
-      <i class="fa-solid fa-candle-holder"></i>
+     <i class="fa-solid fa-candle"></i>
       © 2026 – Tàng Thư Các Cá Nhân
     </p>
   </footer>
 
   <script src="main.js"></script>
+
+<script>
+const list = document.getElementById("readingList");
+const bookmarks = JSON.parse(localStorage.getItem("bookmarks")) || {};
+
+if (Object.keys(bookmarks).length === 0) {
+  list.innerHTML = "<p>Chưa có truyện nào đang đọc</p>";
+} else {
+  for (const id in bookmarks) {
+    const b = bookmarks[id];
+    list.innerHTML += `
+      <div class="reading-item">
+        <strong>${b.novelTitle}</strong><br>
+        <span>${b.chapterTitle}</span><br>
+        <a href="${b.url}">👉 Đọc tiếp</a>
+      </div>
+      <hr>
+    `;
+  }
+}
+</script>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
