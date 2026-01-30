@@ -227,6 +227,60 @@ main {
     padding-top: 210px;
   }
 }
+/* ===============================
+   HEADER SHRINK ON SCROLL
+   =============================== */
+
+/* hiệu ứng mượt */
+.fixed-top {
+  transition:
+    padding 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+/* tiêu đề */
+.fixed-top .novel-header h1 {
+  transition:
+    font-size 0.25s ease,
+    margin 0.25s ease,
+    line-height 0.25s ease;
+}
+
+/* meta */
+.fixed-top .novel-meta {
+  transition:
+    opacity 0.2s ease,
+    max-height 0.25s ease,
+    margin 0.25s ease;
+}
+
+/* ===== TRẠNG THÁI CO GỌN ===== */
+.fixed-top.shrink {
+  padding: 8px 20px;
+  background: var(--paper);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+/* thu nhỏ tiêu đề */
+.fixed-top.shrink .novel-header h1 {
+  font-size: 1.45rem;
+  margin: 6px 0;
+  line-height: 1.25;
+}
+
+/* ẩn meta khi cuộn */
+.fixed-top.shrink .novel-meta {
+  opacity: 0;
+  max-height: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* ===== MAIN OFFSET ===== */
+main {
+  padding-top: 210px;
+}
 
 /* ===== FOOTER ===== */
 footer {
