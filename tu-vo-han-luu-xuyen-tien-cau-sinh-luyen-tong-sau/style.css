@@ -335,9 +335,6 @@ footer {
   gap: 10px;
 }
 
-.page-chapter .top-right {
-  margin-left: auto;
-}
 
 /* Khi cuộn: thu nhỏ tên truyện */
 .page-chapter .fixed-top.shrink .novel-title {
@@ -397,12 +394,18 @@ footer {
    CHAPTER HEADER – FIX RIGHT BUTTON
    =============================== */
 
-/* Khi cuộn: chia header thành 3 cột */
-.page-chapter .fixed-top.shrink .fixed-inner {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+/* Khi cuộn: top-bar vẫn 1 hàng */
+.page-chapter .fixed-top.shrink .top-bar {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
+
+/* Chương sau luôn sát_toggle phải */
+.page-chapter .fixed-top.shrink .top-right {
+  margin-left: auto;
+}
+
 
 /* LEFT giữ bên trái */
 .page-chapter .fixed-top.shrink .top-left {
