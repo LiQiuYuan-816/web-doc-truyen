@@ -320,3 +320,72 @@ footer {
     padding-top: 140px; /* để JS tự xử */
   }
 }
+/* ===============================
+   CHAPTER PAGE OVERRIDE
+   CHỈ ÁP DỤNG TRANG ĐỌC CHƯƠNG
+   =============================== */
+
+/* Desktop & chung */
+.page-chapter main {
+  padding-top: 200px;
+}
+
+/* Khi cuộn: thu nhỏ tên truyện */
+.page-chapter .fixed-top.shrink .novel-title {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* Khi cuộn: vẫn hiện tên chương */
+.page-chapter .fixed-top.shrink .novel-meta {
+  opacity: 1;
+  max-height: none;
+  margin: 4px 0 0;
+  overflow: visible;
+  font-size: 13px;
+}
+
+/* Mobile riêng cho trang chương */
+@media (max-width: 768px) {
+  .page-chapter main {
+    padding-top: 150px;
+  }
+}
+/* ===============================
+   CHAPTER PAGE – FINAL FIX
+   =============================== */
+
+/* Khi shrink: header xếp gọn 2 dòng */
+.page-chapter .fixed-top.shrink .novel-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tên truyện nhỏ gọn */
+.page-chapter .fixed-top.shrink .novel-title {
+  font-size: 16px;
+  line-height: 1.25;
+  margin: 0;
+}
+
+/* Tên chương luôn hiện, không bị ép */
+.page-chapter .fixed-top.shrink .novel-meta {
+  opacity: 1;
+  max-height: none;
+  overflow: visible;
+  margin: 2px 0 0;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+/* Đảm bảo nội dung không bị che */
+.page-chapter main {
+  padding-top: 200px;
+}
+
+@media (max-width: 768px) {
+  .page-chapter main {
+    padding-top: 150px;
+  }
+}
