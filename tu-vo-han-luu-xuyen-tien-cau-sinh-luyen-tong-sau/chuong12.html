@@ -15,6 +15,7 @@
 <main>
 <h1 class="novel-title">Từ vô hạn lưu xuyên tiến cầu sinh luyến tổng sau</h1>
 <h2 class="chapter-title">Chương 12: con khỉ</h2>
+
 <!-- ===== NAV TRÊN ===== -->
 <nav class="nav">
   <a href="index.html">📑 Mục lục</a>
@@ -22,6 +23,8 @@
   <a href="../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
   <a href="chuong11.html">⏮ Chương trước</a>
   <a href="chuong13.html">⏭ Chương sau</a>
+  <button id="bookmarkBtn">📌 Kẹp sách</button>
+  <button id="removeBookmarkBtn">❌ Bỏ kẹp</button>
 </nav>
   <div class="content">
 
@@ -167,6 +170,50 @@
   <a href="chuong13.html">⏭ Chương sau</a>
 </div>
   </main>
+
+<script>
+const NOVEL_ID = "tu-vo-han-luu-xuyen-tien-cau-sinh-luyen-tong-sau";
+const NOVEL_TITLE = "Từ vô hạn lưu xuyên tiến cầu sinh luyến tổng sau";
+const CHAPTER_TITLE = "Chương 12: con khỉ";
+
+// Lưu bookmark
+function saveBookmark() {
+  let bookmarks = JSON.parse(localStorage.getItem("bookmarks")) || {};
+
+  bookmarks[NOVEL_ID] = {
+    novelTitle: NOVEL_TITLE,
+    chapterTitle: CHAPTER_TITLE,
+    url: window.location.href,
+    time: Date.now()
+  };
+
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  alert("📌 Đã lưu chương đang đọc");
+}
+
+// XÓA bookmark
+function removeBookmark() {
+  let bookmarks = JSON.parse(localStorage.getItem("bookmarks")) || {};
+
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    alert("⚠️ Truyện này chưa được kẹp");
+  }
+}
+
+document.getElementById("bookmarkBtn").addEventListener("click", saveBookmark);
+document.getElementById("removeBookmarkBtn").addEventListener("click", removeBookmark);
+
+// 👉 Nếu muốn TỰ ĐỘNG lưu khi đọc thì bật dòng này
+saveBookmark();
+</script>
+
+
+
+
 </body>
 </html>
 
