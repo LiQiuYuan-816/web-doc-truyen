@@ -1,3 +1,51 @@
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #f7f2e8;
+  z-index: 1000;
+}
+
+.fixed-inner {
+  max-width: 1100px;
+  margin: auto;
+  padding: 28px 24px 24px;
+  text-align: center;
+  position: relative;
+}
+
+.top-left {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.back-link {
+  padding: 10px 18px;
+  font-size: 15px;
+  border-radius: 999px;
+  background: #e8dfcf;
+  text-decoration: none;
+  color: #333;
+}
+
+.novel-title {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  margin: 0;
+}
+
+.author {
+  display: none;
+}
+
+.novel-meta {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
 /* ===============================
    ROOT VARIABLES
    =============================== */
@@ -234,6 +282,40 @@ footer {
   font-style: italic;
   font-size: 0.95rem;
   color: #5c4a32;
+}
+.fixed-top.shrink .fixed-inner {
+  padding: 10px 16px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.fixed-top.shrink .top-left {
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.fixed-top.shrink .back-link {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.fixed-top.shrink .novel-title {
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fixed-top.shrink .novel-meta {
+  display: none;
+}
+
+.fixed-top.shrink .author {
+  display: block;
+  font-size: 13px;
+  opacity: 0.85;
+  text-align: right;
 }
 
 /* ===============================
