@@ -24,7 +24,7 @@
   <a href="chuong11.html">⏮ Chương trước</a>
   <a href="chuong13.html">⏭ Chương sau</a>
   <button id="bookmarkBtn">📌 Kẹp sách</button>
-  <button id="removeBookmarkBtn">❌ Bỏ kẹp</button>
+
 </nav>
   <div class="content">
 
@@ -170,51 +170,55 @@
   <a href="chuong13.html">⏭ Chương sau</a>
 </div>
   </main>
-
 <script>
 const NOVEL_ID = "tu-vo-han-luu-xuyen-tien-cau-sinh-luyen-tong-sau";
 const NOVEL_TITLE = "Từ vô hạn lưu xuyên tiến cầu sinh luyến tổng sau";
 const CHAPTER_TITLE = "Chương 12: con khỉ";
 
-// Lưu bookmark
-function saveBookmark() {
-  let bookmarks = JSON.parse(localStorage.getItem("bookmarks")) || {};
+const btn = document.getElementById("bookmarkBtn");
 
-  bookmarks[NOVEL_ID] = {
-    novelTitle: NOVEL_TITLE,
-    chapterTitle: CHAPTER_TITLE,
-    url: window.location.href,
-    time: Date.now()
-  };
-
-  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
-  alert("📌 Đã lưu chương đang đọc");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
 }
 
-// XÓA bookmark
-function removeBookmark() {
-  let bookmarks = JSON.parse(localStorage.getItem("bookmarks")) || {};
+function isBookmarked() {
+  const bookmarks = getBookmarks();
+  return !!bookmarks[NOVEL_ID];
+}
 
-  if (bookmarks[NOVEL_ID]) {
-    delete bookmarks[NOVEL_ID];
-    localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
-    alert("❌ Đã bỏ kẹp sách");
+function updateButton() {
+  if (isBookmarked()) {
+    btn.textContent = "✅ Đã kẹp (Bỏ kẹp)";
   } else {
-    alert("⚠️ Truyện này chưa được kẹp");
+    btn.textContent = "📌 Kẹp sách";
   }
 }
 
-document.getElementById("bookmarkBtn").addEventListener("click", saveBookmark);
-document.getElementById("removeBookmarkBtn").addEventListener("click", removeBookmark);
+function toggleBookmark() {
+  let bookmarks = getBookmarks();
 
-// 👉 Nếu muốn TỰ ĐỘNG lưu khi đọc thì bật dòng này
-//saveBookmark();
+  if (bookmarks[NOVEL_ID]) {
+    // ❌ XÓA
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    // 📌 LƯU
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: window.location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+
+// Khởi tạo khi load trang
+updateButton();
+btn.addEventListener("click", toggleBookmark);
 </script>
-
-
-
-
 </body>
 </html>
-
-
