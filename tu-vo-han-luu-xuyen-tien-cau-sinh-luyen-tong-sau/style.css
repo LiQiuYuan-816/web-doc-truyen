@@ -393,4 +393,30 @@ footer {
   font-size: 13px;
   line-height: 1.3;
 }
+/* ===============================
+   CHAPTER HEADER – FIX RIGHT BUTTON
+   =============================== */
+
+/* Khi cuộn: chia header thành 3 cột */
+.page-chapter .fixed-top.shrink .fixed-inner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+/* LEFT giữ bên trái */
+.page-chapter .fixed-top.shrink .top-left {
+  justify-content: flex-start;
+}
+
+/* CENTER luôn giữa */
+.page-chapter .fixed-top.shrink .novel-header {
+  justify-self: center;
+  text-align: center;
+}
+
+/* RIGHT dính sát phải */
+.page-chapter .fixed-top.shrink .top-right {
+  justify-self: end;
+}
 
