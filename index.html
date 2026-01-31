@@ -181,29 +181,25 @@ if (Object.keys(bookmarks).length === 0) {
 }
 </script>
 <script>
-  const header = document.querySelector(".site-header");
-  const main = document.querySelector("main.container");
+  const header = document.querySelector('.fixed-top');
+  const main = document.querySelector('main');
 
-  function adjustMainPadding() {
-    if (!header || !main) return;
-    main.style.paddingTop = header.offsetHeight + "px";
+  function updateLayout() {
+    const headerHeight = header.offsetHeight;
+    main.style.paddingTop = headerHeight + 'px';
   }
 
-  // Khi load trang
-  window.addEventListener("load", adjustMainPadding);
-
-  // Khi resize
-  window.addEventListener("resize", adjustMainPadding);
-
-  // Khi scroll (header shrink)
-  window.addEventListener("scroll", () => {
+  window.addEventListener('scroll', () => {
     if (window.scrollY > 80) {
-      header.classList.add("shrink");
+      header.classList.add('shrink');
     } else {
-      header.classList.remove("shrink");
+      header.classList.remove('shrink');
     }
-    adjustMainPadding();
+    updateLayout();
   });
+
+  window.addEventListener('resize', updateLayout);
+  window.addEventListener('load', updateLayout);
 </script>
 
 
