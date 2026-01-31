@@ -182,29 +182,30 @@ if (Object.keys(bookmarks).length === 0) {
 </script>
 <script>
   const header = document.querySelector(".site-header");
-  const main = document.querySelector("main");
+  const main = document.querySelector("main.container");
 
   function adjustMainPadding() {
-    const headerHeight = header.offsetHeight;
-    main.style.paddingTop = headerHeight + "px";
+    if (!header || !main) return;
+    main.style.paddingTop = header.offsetHeight + "px";
   }
 
-  // Cập nhật khi load
+  // Khi load trang
   window.addEventListener("load", adjustMainPadding);
 
-  // Cập nhật khi resize
+  // Khi resize
   window.addEventListener("resize", adjustMainPadding);
 
-  // Thu nhỏ header khi cuộn
+  // Khi scroll (header shrink)
   window.addEventListener("scroll", () => {
     if (window.scrollY > 80) {
       header.classList.add("shrink");
     } else {
       header.classList.remove("shrink");
     }
-    adjustMainPadding(); // cập nhật lại padding
+    adjustMainPadding();
   });
 </script>
+
 
 </body>
 </html>
