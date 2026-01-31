@@ -2,8 +2,11 @@
   max-width: 1100px;
   margin: auto;
   padding: 16px 20px 14px;
-  text-align: center;
   position: relative;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
 }
 
 .top-left {
@@ -317,11 +320,9 @@ footer {
 
 /* Desktop & chung */
 .page-chapter .top-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  display: contents;
 }
+
 
 .page-chapter .top-left,
 .page-chapter .top-right {
@@ -364,9 +365,7 @@ footer {
 
 /* Khi shrink: header xếp gọn 2 dòng */
 .page-chapter .fixed-top.shrink .top-bar {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
   grid-column: 1 / -1;
 }
 
@@ -417,4 +416,27 @@ footer {
   grid-column: 1 / -1;
   grid-row: 2;
   text-align: center;
+}
+/* ===============================
+   TRUE CENTER HEADER FIX
+   =============================== */
+
+
+/* LEFT */
+.top-left {
+  grid-column: 1;
+  justify-content: flex-start;
+}
+
+/* CENTER – LUÔN GIỮA VIEWPORT */
+.novel-header {
+  grid-column: 2;
+  text-align: center;
+  pointer-events: none; /* tránh bị che click */
+}
+
+/* RIGHT */
+.top-right {
+  grid-column: 3;
+  justify-content: flex-end;
 }
