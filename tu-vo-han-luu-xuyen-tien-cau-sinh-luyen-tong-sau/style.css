@@ -2,11 +2,8 @@
   max-width: 1100px;
   margin: auto;
   padding: 16px 20px 14px;
+  text-align: center;
   position: relative;
-
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
 }
 
 .top-left {
@@ -49,10 +46,7 @@
   --brown: #6b4f2d;
   --border: #d6c8b0;
 }
-main {
-  margin-bottom: 80px;
-  padding-top: 0; /* bỏ 230px */
-}
+
 
 /* ===============================
    RESET & BASE
@@ -75,9 +69,10 @@ body {
 
 main {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0 auto 80px;
   padding: 0 24px;
 }
+
 
 
 /* ===============================
@@ -289,10 +284,6 @@ footer {
 }
 
 
-.fixed-top.shrink .top-left {
-  justify-content: flex-start;
-  margin: 0;
-}
 
 
 .fixed-top.shrink .novel-title {
@@ -318,8 +309,15 @@ footer {
    CHỈ ÁP DỤNG TRANG ĐỌC CHƯƠNG
    =============================== */
 
-/* Desktop & chung */
+/* Bình thường */
 .page-chapter .top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Khi shrink */
+.page-chapter .fixed-top.shrink .top-bar {
   display: contents;
 }
 
@@ -329,13 +327,6 @@ footer {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-
-/* Khi cuộn: thu nhỏ tên truyện */
-.page-chapter .fixed-top.shrink .novel-title {
-  font-size: 14px;
-  line-height: 1.2;
 }
 
 /* Khi cuộn: vẫn hiện tên chương */
@@ -363,13 +354,6 @@ footer {
    CHAPTER PAGE – FINAL FIX
    =============================== */
 
-/* Khi shrink: header xếp gọn 2 dòng */
-.page-chapter .fixed-top.shrink .top-bar {
-  align-items: center;
-  grid-column: 1 / -1;
-}
-
-
 /* Tên truyện nhỏ gọn */
 .page-chapter .fixed-top.shrink .novel-title {
   font-size: 16px;
@@ -387,56 +371,34 @@ footer {
   line-height: 1.3;
 }
 /* ===============================
-   FIX CENTER TITLE – FINAL
+   CENTER TITLE – ONLY WHEN SCROLL
    =============================== */
 
+
+/* Grid layout */
 .fixed-top.shrink .fixed-inner {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  grid-template-rows: auto auto;
   align-items: center;
 }
 
 /* LEFT */
 .fixed-top.shrink .top-left {
   grid-column: 1;
-  grid-row: 1;
   justify-content: flex-start;
+  margin: 0;
 }
+
 
 /* RIGHT */
 .fixed-top.shrink .top-right {
   grid-column: 3;
-  grid-row: 1;
   justify-content: flex-end;
 }
 
-/* CENTER – FULL WIDTH, TRUE CENTER */
+/* CENTER – GIỮA TUYỆT ĐỐI */
 .fixed-top.shrink .novel-header {
-  grid-column: 1 / -1;
-  grid-row: 2;
-  text-align: center;
-}
-/* ===============================
-   TRUE CENTER HEADER FIX
-   =============================== */
-
-
-/* LEFT */
-.top-left {
-  grid-column: 1;
-  justify-content: flex-start;
-}
-
-/* CENTER – LUÔN GIỮA VIEWPORT */
-.novel-header {
   grid-column: 2;
   text-align: center;
-  pointer-events: none; /* tránh bị che click */
-}
-
-/* RIGHT */
-.top-right {
-  grid-column: 3;
-  justify-content: flex-end;
+  pointer-events: none;
 }
