@@ -1,6 +1,3 @@
-
-
-
 .fixed-inner {
   max-width: 1100px;
   margin: auto;
@@ -371,11 +368,13 @@ footer {
    =============================== */
 
 /* Khi shrink: header xếp gọn 2 dòng */
-.page-chapter .fixed-top.shrink .novel-header {
+.page-chapter .fixed-top.shrink .top-bar {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  grid-column: 1 / -1;
 }
+
 
 /* Tên truyện nhỏ gọn */
 .page-chapter .fixed-top.shrink .novel-title {
@@ -394,23 +393,28 @@ footer {
   line-height: 1.3;
 }
 /* ===============================
-   CHAPTER HEADER – FINAL (CLEAN)
+   CHAPTER HEADER – FIX RIGHT BUTTON
    =============================== */
 
-/* top-bar chiếm full chiều ngang grid khi shrink */
+/* Khi cuộn: top-bar vẫn 1 hàng */
 .page-chapter .fixed-top.shrink .top-bar {
-  grid-column: 1 / -1;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* LEFT bám trái */
+/* Chương sau luôn sát_toggle phải */
+.page-chapter .fixed-top.shrink .top-right {
+  margin-left: auto;
+}
+
+
+/* LEFT giữ bên trái */
 .page-chapter .fixed-top.shrink .top-left {
   justify-content: flex-start;
 }
 
-/* CENTER ở giữa */
+/* CENTER luôn giữa */
 .page-chapter .fixed-top.shrink .novel-header {
   justify-self: center;
   text-align: center;
