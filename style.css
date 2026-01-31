@@ -172,3 +172,52 @@ body {
   background: #efe6d8;
   font-style: italic;
 }
+/* ===== HEADER FIXED ===== */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background: #f4ecde;
+  border-bottom: 1px solid #e0d6c5;
+
+  padding: 28px 20px;
+  text-align: center;
+
+  transition: all 0.3s ease;
+}
+
+/* Chữ tiêu đề */
+.site-header h1 {
+  font-size: 32px;
+  margin: 0 0 8px;
+  transition: all 0.3s ease;
+}
+
+/* Menu */
+.site-header nav a {
+  margin: 0 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* ===== HEADER THU NHỎ KHI CUỘN ===== */
+.site-header.shrink {
+  padding: 10px 20px;
+}
+
+.site-header.shrink h1 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.site-header.shrink nav a {
+  font-size: 14px;
+}
+
+/* ===== ĐẨY NỘI DUNG XUỐNG TRÁNH BỊ CHE ===== */
+main.container {
+  padding-top: 140px; /* chỉnh theo chiều cao header */
+}
