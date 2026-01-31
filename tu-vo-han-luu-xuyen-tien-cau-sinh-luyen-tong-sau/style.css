@@ -1,3 +1,6 @@
+
+
+
 .fixed-inner {
   max-width: 1100px;
   margin: auto;
@@ -391,28 +394,23 @@ footer {
   line-height: 1.3;
 }
 /* ===============================
-   CHAPTER HEADER – FIX RIGHT BUTTON
+   CHAPTER HEADER – FINAL (CLEAN)
    =============================== */
 
-/* Khi cuộn: top-bar vẫn 1 hàng */
+/* top-bar chiếm full chiều ngang grid khi shrink */
 .page-chapter .fixed-top.shrink .top-bar {
+  grid-column: 1 / -1;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* Chương sau luôn sát_toggle phải */
-.page-chapter .fixed-top.shrink .top-right {
-  margin-left: auto;
-}
-
-
-/* LEFT giữ bên trái */
+/* LEFT bám trái */
 .page-chapter .fixed-top.shrink .top-left {
   justify-content: flex-start;
 }
 
-/* CENTER luôn giữa */
+/* CENTER ở giữa */
 .page-chapter .fixed-top.shrink .novel-header {
   justify-self: center;
   text-align: center;
@@ -422,4 +420,3 @@ footer {
 .page-chapter .fixed-top.shrink .top-right {
   justify-self: end;
 }
-
