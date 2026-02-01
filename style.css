@@ -18,7 +18,9 @@ body {
   line-height: 1.7;
 }
 
-  :target {  scroll-margin-top: 160px;}
+:target {
+  scroll-margin-top: calc(var(--header-height, 140px) + 16px);
+}
 /* ================= HEADER ================= */
 .site-header {
   position: fixed;
@@ -280,45 +282,43 @@ body::before {
    LAYOUT CHUẨN – ĐÚNG THỨ TỰ
    =================================================== */
 
-/* MẶC ĐỊNH: 1 CỘT */
+/* ===== MẶC ĐỊNH: 1 CỘT ===== */
 .page-layout {
   display: flex;
   flex-direction: column;
+  overflow: visible;
+  transition:
+    grid-template-columns 0.6s ease,
+    gap 0.6s ease;
 }
 
-}
-body.scrolled main.container {
-  max-width: 1440px;
-}
-/* THỨ TỰ KHI CHƯA CUỘN */
-.side.right { order: 1; }   /* Tra cứu */
-.side.left  { order: 2; }   /* Đang đọc */
-.center     { order: 3; }   /* Danh sách */
+/* THỨ TỰ KHI CHƯA CUỘN (FLEX) */
+.side.right { order: 1; }
+.side.left  { order: 2; }
+.center     { order: 3; }
 
-/* KHI CUỘN: 3 CỘT */
+/* ===== KHI CUỘN: 3 CỘT ===== */
 body.scrolled .page-layout {
   display: grid;
-  grid-template-columns: 320px 760px 320px;
+  grid-template-columns: 320px minmax(0, 760px) 320px;
   gap: 24px;
   align-items: start;
-  width: fit-content;
+  max-width: 1440px;
   margin: 0 auto;
 }
-.center.story-box {
-  max-width: 100%;
-}
-/* THỨ TỰ KHI CUỘN */
-body.scrolled .side.left  { order: 1; }
-body.scrolled .center     { order: 2; }
-body.scrolled .side.right { order: 3; }
 
-/* Sticky 2 bên */
+/* VỊ TRÍ GRID (thay cho order) */
+body.scrolled .side.left  { grid-column: 1; }
+body.scrolled .center     { grid-column: 2; }
+body.scrolled .side.right { grid-column: 3; }
+
+/* Sticky sidebar */
 body.scrolled .side {
   position: sticky;
   top: calc(var(--header-height, 140px) + 24px);
 }
 
-/* Mobile luôn 1 cột */
+/* ===== MOBILE ===== */
 @media (max-width: 1023px) {
   body.scrolled .page-layout {
     display: flex;
@@ -329,10 +329,8 @@ body.scrolled .side {
     position: static;
   }
 }
-.page-layout {
-  transition: all 0.35s ease;
-}
 
+/* Header & box mượt */
 .site-header {
   will-change: padding, height;
 }
