@@ -252,13 +252,13 @@ EVENT LISTENERS
 ======================= */
 
 document.getElementById("search-title")
-  ?.addEventListener("input", debouncedApplyFilters);
+  ?.addEventListener("input", debouncedFilter);
 
 document.getElementById("search-author")
-  ?.addEventListener("input", debouncedApplyFilters);
+  ?.addEventListener("input", debouncedFilter);
 
-document.getElementById( "filter-country" )
-?.addEventListener( "change", applyFilters);
+document.getElementById("filter-country")
+  ?.addEventListener("change", applyFilters);
 
-document.getElementById( "filter-genre" )
-?.addEventListener( "change", applyFilters);
+document.getElementById("filter-genre")
+  ?.addEventListener("change", applyFilters);
