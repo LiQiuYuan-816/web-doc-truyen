@@ -59,139 +59,208 @@ const genreMap = {
 };
 
 /* =======================
-   LOAD DATA
+CONFIG
+======================= */
+
+const PAGE_SIZE = 20;
+
+/* =======================
+STATE
 ======================= */
 
 let stories = [];
+let currentList = [];
+let currentPage = 1;
 
-fetch("stories.json")
-  .then(res => res.json())
-  .then(data => {
-    stories = data;
-    renderStories(stories);
-  })
-  .catch(err => {
-    console.error("Không tải được stories.json", err);
-  });
 
 /* =======================
-   RENDER STORY LIST
+LOAD DATA
+======================= */
+
+fetch( "stories.json" )
+.then(res => {
+if (!res.ok) throw new Error( "Không tải được stories.json" );
+return res.json();
+})
+.then(data => {
+if (!Array.isArray(data)) {
+console.error( "stories.json phải là mảng" );
+return;
+}
+stories = data.map(normalizeStory);
+applyFilters();
+})
+.catch(err => {
+console.error( "Không tải được stories.json", err);
+});
+
+/* =======================
+NORMALIZE DATA
+======================= */
+
+function normalizeStory(raw) {
+return {
+id: raw.id || crypto.randomUUID(),
+title: raw.title || "Không có tiêu đề",
+slug: raw.slug || "#",
+author: raw.author || "Không rõ",
+country: raw.country || "khong-ro",
+genre: Array.isArray(raw.genre)? raw.genre: [],
+status: raw.status || "dang-ra",
+chapters: Number(raw.chapters) || 0,
+summary: raw.summary || "Chưa có giới thiệu."
+};
+}
+
+/* =======================
+RENDER STORY LIST
 ======================= */
 
 function renderStories(list) {
-  const ul = document.getElementById("story-list");
-  if (!ul) return;
+const ul = document.getElementById( "story-list" );
+if (!ul) return;
 
-  ul.innerHTML = "";
+ul.innerHTML = "";
 
-  if (list.length === 0) {
-    ul.innerHTML = "<li>Không có truyện phù hợp.</li>";
-    return;
-  }
+if (list.length === 0) {
+ul.innerHTML = "<li>Không có truyện phù hợp.</li>";
+return;
+}
 
-  list.forEach(story => {
-    const li = document.createElement("li");
+list.forEach(story => {
+const li = document.createElement( "li" );
 
-    const statusText =
-      story.status === "hoan-thanh"
-        ? "✅ Hoàn thành"
-        : "🟢 Đang ra";
+const statusText =
+story.status === "hoan-thanh"
+?"✅ Hoàn thành"
+:"🟢 Đang ra";
 
-    const countryText =
-      countryMap[story.country] || story.country;
+const countryText =
+countryMap[story.country] || story.country;
 
 const maxGenres = 6;
 
 const genreText =
-  story.genre
-    .slice(0, maxGenres)
-    .map(g => `<span class="genre-tag">${genreMap[g] || g}</span>`)
-    .join("") +
-  (story.genre.length > maxGenres
-    ? `<span class="genre-more">…</span>`
-    : "");
+story.genre
+.slice(0, maxGenres)
+.map(g => `<span class= "genre-tag" >${genreMap[g] || g}</span>`)
+.join( "" ) +
+(story.genre.length > maxGenres
+?`<span class= "genre-more" >…</span>`
+:"");
 
-    li.innerHTML = `
-      <a href="${story.slug}/index.html">
-        <strong>${story.title}</strong>
-      </a>
-      <br>
+li.innerHTML = `
+<a href= "${story.slug}/index.html" >
+<strong>${story.title}</strong>
+</a>
+<br>
 
-      <small>
-        ✍️ ${story.author}
-        · 🌍 ${countryText}
-      </small>
-      <br>
-
-      <small>
-        📚 ${genreText}
-      </small>
-      <br>
-
-      <small>
-        ${statusText} · 📖 ${story.chapters} chương
-      </small>
-
-      <p>${story.summary}</p>
-    `;
-
-    ul.appendChild(li);
+<small>✍️ ${story.author} · 🌍 ${countryText}</small><br>
+<small>📚 ${genreText}</small><br>
+<small>${statusText} · 📖 ${story.chapters} chương</small>
+<p>${story.summary}</p>
+`;
+fragment.appendChild(li);
   });
+ul.appendChild(li);
+});
 }
 
 /* =======================
-   FILTER LOGIC
+PAGINATION
+======================= */
+
+function renderPage(list, page = 1) {
+currentList = list;
+currentPage = page;
+
+const start = (page - 1) * PAGE_SIZE;
+const end = start + PAGE_SIZE;
+
+renderStories(list.slice(start, end));
+renderPagination(list.length);
+}
+
+function renderPagination(totalItems) {
+const container = document.getElementById( "pagination" );
+if (!container) return;
+
+const totalPages = Math.ceil(totalItems / PAGE_SIZE);
+container.innerHTML = "";
+
+if (totalPages <= 1) return;
+
+if (currentPage > 1) {
+container.innerHTML += `<button onclick= "gotoPage(${currentPage - 1})" >‹</button>`;
+}
+
+container.innerHTML += `<span>Trang ${currentPage} / ${totalPages}</span>`;
+
+if (currentPage < totalPages) {
+container.innerHTML += `<button onclick= "gotoPage(${currentPage + 1})" >›</button>`;
+}
+}
+
+function gotoPage(page) {
+renderPage(currentList, page);
+}
+
+
+/* =======================
+FILTER LOGIC
 ======================= */
 
 function applyFilters() {
-  const titleKeyword =
-    document.getElementById("search-title")?.value.toLowerCase() || "";
+const titleKeyword =
+document.getElementById( "search-title" )?.value.toLowerCase() || "";
 
-  const authorKeyword =
-    document.getElementById("search-author")?.value.toLowerCase() || "";
+const authorKeyword =
+document.getElementById( "search-author" )?.value.toLowerCase() || "";
 
-  const country =
-    document.getElementById("filter-country")?.value || "all";
+const country =
+document.getElementById( "filter-country" )?.value || "all";
 
-  const genre =
-    document.getElementById("filter-genre")?.value || "all";
+const genre =
+document.getElementById( "filter-genre" )?.value || "all";
 
-  const filtered = stories.filter(story => {
-    const matchTitle =
-      story.title.toLowerCase().includes(titleKeyword);
+const filtered = stories.filter(story => {
+const matchTitle = story.title.toLowerCase().includes(titleKeyword);
+const matchAuthor = story.author.toLowerCase().includes(authorKeyword);
+const matchCountry = country === "all" || story.country === country;
+const matchGenre = genre === "all" || story.genre.includes(genre);
 
-    const matchAuthor =
-      story.author.toLowerCase().includes(authorKeyword);
+return matchTitle && matchAuthor && matchCountry && matchGenre;
+});
 
-    const matchCountry =
-      country === "all" || story.country === country;
-
-    const matchGenre =
-      genre === "all" || story.genre.includes(genre);
-
-    return (
-      matchTitle &&
-      matchAuthor &&
-      matchCountry &&
-      matchGenre
-    );
-  });
-
-  renderStories(filtered);
+renderPage(filtered, 1);
 }
 
 /* =======================
-   EVENT LISTENERS
+DEBOUNCE
 ======================= */
 
-document.getElementById("search-title")
-  ?.addEventListener("input", applyFilters);
+function debounce(fn, delay = 300) {
+let timer;
+return (...args) => {
+clearTimeout(timer);
+timer = setTimeout(() => fn(...args), delay);
+};
+}
 
-document.getElementById("search-author")
-  ?.addEventListener("input", applyFilters);
+const debouncedFilter = debounce(applyFilters, 300);
 
-document.getElementById("filter-country")
-  ?.addEventListener("change", applyFilters);
+/* =======================
+EVENT LISTENERS
+======================= */
 
-document.getElementById("filter-genre")
-  ?.addEventListener("change", applyFilters);
+document.getElementById( "search-title" )
+?.addEventListener( "input", applyFilters);
+
+document.getElementById( "search-author" )
+?.addEventListener( "input", applyFilters);
+
+document.getElementById( "filter-country" )
+?.addEventListener( "change", applyFilters);
+
+document.getElementById( "filter-genre" )
+?.addEventListener( "change", applyFilters);
