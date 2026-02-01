@@ -251,11 +251,11 @@ const debouncedFilter = debounce(applyFilters, 300);
 EVENT LISTENERS
 ======================= */
 
-document.getElementById( "search-title" )
-?.addEventListener( "input", applyFilters);
+document.getElementById("search-title")
+  ?.addEventListener("input", debouncedApplyFilters);
 
-document.getElementById( "search-author" )
-?.addEventListener( "input", applyFilters);
+document.getElementById("search-author")
+  ?.addEventListener("input", debouncedApplyFilters);
 
 document.getElementById( "filter-country" )
 ?.addEventListener( "change", applyFilters);
