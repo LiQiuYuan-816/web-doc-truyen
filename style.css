@@ -3,6 +3,7 @@
   --ink: #2e2a24;
   --brown: #6b4f2d;
   --border: #d6c8b0;
+  --header-height: 160px;
 }
 
 * {
@@ -15,7 +16,6 @@ body {
   background: var(--paper);
   color: var(--ink);
   line-height: 1.7;
-  padding-top: 160px; /* chừa chỗ cho header fixed */
 }
 
   :target {  scroll-margin-top: 160px;}
@@ -285,8 +285,7 @@ body::before {
   display: flex;
   flex-direction: column;
 }
-body.scrolled {
-  padding-top: 200px;
+
 }
 body.scrolled main.container {
   max-width: 1440px;
@@ -316,7 +315,7 @@ body.scrolled .side.right { order: 3; }
 /* Sticky 2 bên */
 body.scrolled .side {
   position: sticky;
-  top: 200px;
+  top: calc(var(--header-height, 140px) + 24px);
 }
 
 /* Mobile luôn 1 cột */
@@ -329,5 +328,17 @@ body.scrolled .side {
   body.scrolled .side {
     position: static;
   }
+}
+.page-layout {
+  transition: all 0.35s ease;
+}
+
+.site-header {
+  will-change: padding, height;
+}
+
+.side,
+.center {
+  transition: transform 0.25s ease;
 }
 
