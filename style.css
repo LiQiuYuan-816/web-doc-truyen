@@ -288,10 +288,6 @@ body::before {
 .page-layout {
   display: flex;
   flex-direction: column;
-  overflow: visible;
-  transition:
-    grid-template-columns 0.6s ease,
-    gap 0.6s ease;
 }
 
 /* THỨ TỰ KHI CHƯA CUỘN (FLEX) */
@@ -340,5 +336,6 @@ body.scrolled .side {
 .side,
 .center {
   transition: transform 0.25s ease;
+  align-self: start;
 }
 
