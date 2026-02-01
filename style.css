@@ -75,7 +75,7 @@ body {
 
 /* ================= MAIN ================= */
 .container {
-  max-width: 1500px;
+  max-width: 1440px;
   margin: 0 auto 40px;
   padding: 0 20px;
 }
@@ -285,7 +285,9 @@ body::before {
   display: flex;
   flex-direction: column;
 }
-
+body.scrolled main.container {
+  max-width: 1440px;
+}
 /* THỨ TỰ KHI CHƯA CUỘN */
 .side.right { order: 1; }   /* Tra cứu */
 .side.left  { order: 2; }   /* Đang đọc */
@@ -294,7 +296,7 @@ body::before {
 /* KHI CUỘN: 3 CỘT */
 body.scrolled .page-layout {
   display: grid;
-  grid-template-columns: 320px 700px 320px;
+  grid-template-columns: 320px 760px 320px;
   gap: 24px;
   align-items: start;
 }
@@ -322,5 +324,8 @@ body.scrolled .side {
   body.scrolled .side {
     position: static;
   }
+}
+body.scrolled .page-layout {
+  justify-content: center;
 }
 
