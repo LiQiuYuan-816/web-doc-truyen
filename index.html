@@ -43,32 +43,56 @@
 
   <!-- ===== MAIN ===== -->
   <main class="container">
-    <!-- ===== FILTER ===== -->
-    <section class="filter-box">
+ <!-- ===== LAYOUT WRAPPER ===== -->
+  <div class="page-layout">
+    <!-- ===== LEFT: ĐANG ĐỌC ===== -->
+    <aside class="side left" id="readingBox">
+      <section id="continue-reading">
+        <h2>📖 Đang đọc</h2>
+        <div id="readingList"></div>
+      </section>
+    </aside>
+ <!-- ===== CENTER: DANH MỤC TRUYỆN ===== -->
+    <section class="center story-box">
       <h2>
-        <i class="fa-solid fa-feather"></i>
-        Tra cứu truyện
+        <i class="fa-solid fa-books"></i>
+        Danh mục truyện
       </h2>
 
-<div id="filters" class="filters">
-  <div class="field">
-    <label>
-      <i class="fa-solid fa-book"></i> Tên truyện
-    </label>
-    <input type="text" id="search-title" placeholder="Nhập tên truyện..." />
-  </div>
+      <ul id="story-list" class="story-list">
+        <!-- JS render tại đây -->
+      </ul>
 
-  <div class="field">
-    <label>
-      <i class="fa-solid fa-user-pen"></i> Tác giả
-    </label>
-    <input type="text" id="search-author" placeholder="Nhập tên tác giả..." />
-  </div>
+      <div id="pagination" class="pagination"></div>
+    </section>
+    <!-- ===== RIGHT: TRA CỨU ===== -->
+    <aside class="side right" id="searchBox">
+      <section class="filter-box">
+        <h2>
+          <i class="fa-solid fa-feather"></i>
+          Tra cứu truyện
+        </h2>
 
- <div class="field">
-    <label>
-      <i class="fa-solid fa-globe"></i> Quốc gia
-    </label>
+        <div id="filters" class="filters">
+
+          <div class="field">
+            <label>
+              <i class="fa-solid fa-book"></i> Tên truyện
+            </label>
+            <input type="text" id="search-title" placeholder="Nhập tên truyện..." />
+          </div>
+
+          <div class="field">
+            <label>
+              <i class="fa-solid fa-user-pen"></i> Tác giả
+            </label>
+            <input type="text" id="search-author" placeholder="Nhập tên tác giả..." />
+          </div>
+
+          <div class="field">
+            <label>
+              <i class="fa-solid fa-globe"></i> Quốc gia
+            </label>
     <select id="filter-country">
             <option value="all">🌏 Tất cả</option>
             <option value="trung-quoc">🇨🇳 Trung Quốc</option>
@@ -79,11 +103,11 @@
           </select>
         </div>
 
-        <div class="field">
-          <label>
-            <i class="fa-solid fa-tags"></i> Thể loại
-          </label>
-          <select id="filter-genre">
+          <div class="field">
+            <label>
+              <i class="fa-solid fa-tags"></i> Thể loại
+            </label>
+            <select id="filter-genre">
             <option value="all">📚 Tất cả</option>
                     <option value="tu-tien">Tu Tiên</option>
                     <option value="tay-huyen">Tây huyễn</option>
@@ -129,30 +153,15 @@
                     <option value="doi-thuong">Đời thường</option>
                     <option value="trong-sinh">Trọng sinh</option>
                     <option value="am-nhac">Âm nhạc</option>
-          </select>
+            </select>
+          </div>
+
         </div>
-      </div>
-    </section>
+      </section>
+    </aside>
 
-<section id="continue-reading">
-  <h2>📖 Đang đọc</h2>
-  <div id="readingList"></div>
-</section>
-
-
-    <!-- ===== STORY LIST ===== -->
-    <section class="story-box">
-      <h2>
-        <i class="fa-solid fa-books"></i>
-        Danh mục truyện
-      </h2>
-
-      <ul id="story-list" class="story-list">
-        <!-- JS render tại đây -->
-      </ul>
-       <div id="pagination" class="pagination"></div>
-    </section>
-  </main>
+  </div>
+</main>
 
   <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
