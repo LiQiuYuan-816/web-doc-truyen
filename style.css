@@ -294,11 +294,13 @@ body::before {
 /* KHI CUỘN: 3 CỘT */
 body.scrolled .page-layout {
   display: grid;
-  grid-template-columns: 260px 1fr 320px;
+  grid-template-columns: 260px minmax(600px, 1fr) 320px;
   gap: 24px;
   align-items: start;
 }
-
+.center.story-box {
+  max-width: 100%;
+}
 /* THỨ TỰ KHI CUỘN */
 body.scrolled .side.left  { order: 1; }
 body.scrolled .center     { order: 2; }
