@@ -198,20 +198,34 @@ if (Object.keys(bookmarks).length === 0) {
   const header = document.querySelector('.site-header');
   const main = document.querySelector('main.container');
 
+  const SCROLL_DOWN_TRIGGER = 200; // cuộn xuống bao nhiêu px thì thu header
+  const SCROLL_UP_TRIGGER = 20;    // cuộn lên gần top bao nhiêu px thì bung lại
+
+  let isScrolled = false;
+
   function updateLayout() {
     if (!header || !main) return;
     main.style.paddingTop = header.offsetHeight + 'px';
   }
 
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 120) {
+    const y = window.scrollY;
+
+    // CHƯA thu → cuộn xuống đủ sâu mới thu
+    if (!isScrolled && y > SCROLL_DOWN_TRIGGER) {
       header.classList.add('shrink');
       document.body.classList.add('scrolled');
-    } else {
+      isScrolled = true;
+      updateLayout();
+    }
+
+    // ĐÃ thu → chỉ khi cuộn lên gần top mới bung
+    if (isScrolled && y < SCROLL_UP_TRIGGER) {
       header.classList.remove('shrink');
       document.body.classList.remove('scrolled');
+      isScrolled = false;
+      updateLayout();
     }
-    updateLayout();
   });
 
   window.addEventListener('resize', updateLayout);
