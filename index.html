@@ -205,7 +205,10 @@ if (Object.keys(bookmarks).length === 0) {
 
   function updateLayout() {
     if (!header || !main) return;
-    main.style.paddingTop = header.offsetHeight + 'px';
+
+    const h = header.offsetHeight;
+    main.style.paddingTop = h + 'px';
+    document.documentElement.style.setProperty('--header-height', h + 'px');
   }
 
   window.addEventListener('scroll', () => {
@@ -231,8 +234,6 @@ if (Object.keys(bookmarks).length === 0) {
   window.addEventListener('resize', updateLayout);
   window.addEventListener('load', updateLayout);
 </script>
-
-
 
 </body>
 </html>
