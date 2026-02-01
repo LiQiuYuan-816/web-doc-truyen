@@ -277,70 +277,21 @@ body::before {
     inset 0 0 0 1px rgba(255, 255, 255, 0.5);
 }
 /* ===================================================
-   DYNAMIC LAYOUT – CUỘN THÌ CHIA 3 CỘT
-   (KHÔNG ẢNH HƯỞNG CẤU TRÚC CŨ)
+   LAYOUT CHUẨN – ĐÚNG THỨ TỰ
    =================================================== */
 
-/* Mặc định: giữ layout cũ (1 cột) */
-.page-layout {
-  display: block;
-}
-
-/* Khi scroll: chia 3 cột */
-body.scrolled .page-layout {
-  display: grid;
-  grid-template-columns: 260px 1fr 320px;
-  gap: 24px;
-  align-items: start;
-}
-
-/* Hai cột phụ dính khi cuộn */
-body.scrolled .side {
-  position: sticky;
-  top: 110px; /* tránh header shrink */
-}
-
-/* Mobile / tablet vẫn giữ 1 cột */
-@media (max-width: 1023px) {
-  body.scrolled .page-layout {
-    display: block;
-  }
-
-  body.scrolled .side {
-    position: static;
-  }
-}
-
-/* Tinh chỉnh rất nhẹ cho hai bên */
-.side.left {
-  padding-right: 4px;
-}
-
-.side.right {
-  padding-left: 4px;
-}
-
-/* Chuyển động mượt */
-.page-layout,
-.side {
-  transition: all 0.3s ease;
-}
-/* ===================================================
-   FIX LAYOUT ĐÚNG THỨ TỰ – CUỘN MỚI CHIA CỘT
-   =================================================== */
-
-/* Wrapper */
+/* MẶC ĐỊNH: 1 CỘT */
 .page-layout {
   display: flex;
   flex-direction: column;
 }
 
-/* MẶC ĐỊNH: 1 CỘT – ĐÚNG THỨ TỰ */
+/* THỨ TỰ KHI CHƯA CUỘN */
 .side.right { order: 1; }   /* Tra cứu */
 .side.left  { order: 2; }   /* Đang đọc */
 .center     { order: 3; }   /* Danh sách */
 
-/* KHI CUỘN: CHIA 3 CỘT */
+/* KHI CUỘN: 3 CỘT */
 body.scrolled .page-layout {
   display: grid;
   grid-template-columns: 260px 1fr 320px;
@@ -348,18 +299,18 @@ body.scrolled .page-layout {
   align-items: start;
 }
 
-/* ĐỔI THỨ TỰ KHI CUỘN */
-body.scrolled .side.left  { order: 1; }  /* Đang đọc */
-body.scrolled .center     { order: 2; }  /* Danh sách */
-body.scrolled .side.right { order: 3; }  /* Tra cứu */
+/* THỨ TỰ KHI CUỘN */
+body.scrolled .side.left  { order: 1; }
+body.scrolled .center     { order: 2; }
+body.scrolled .side.right { order: 3; }
 
-/* Sticky cho 2 bên */
+/* Sticky 2 bên */
 body.scrolled .side {
   position: sticky;
   top: 110px;
 }
 
-/* Mobile: LUÔN 1 CỘT */
+/* Mobile luôn 1 cột */
 @media (max-width: 1023px) {
   body.scrolled .page-layout {
     display: flex;
@@ -371,9 +322,3 @@ body.scrolled .side {
   }
 }
 
-/* Chuyển động nhẹ */
-.page-layout,
-.side,
-.center {
-  transition: all 0.25s ease;
-}
