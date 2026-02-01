@@ -276,3 +276,52 @@ body::before {
     0 6px 18px rgba(80, 60, 30, 0.18),
     inset 0 0 0 1px rgba(255, 255, 255, 0.5);
 }
+/* ===================================================
+   DYNAMIC LAYOUT – CUỘN THÌ CHIA 3 CỘT
+   (KHÔNG ẢNH HƯỞNG CẤU TRÚC CŨ)
+   =================================================== */
+
+/* Mặc định: giữ layout cũ (1 cột) */
+.page-layout {
+  display: block;
+}
+
+/* Khi scroll: chia 3 cột */
+body.scrolled .page-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr 320px;
+  gap: 24px;
+  align-items: start;
+}
+
+/* Hai cột phụ dính khi cuộn */
+body.scrolled .side {
+  position: sticky;
+  top: 110px; /* tránh header shrink */
+}
+
+/* Mobile / tablet vẫn giữ 1 cột */
+@media (max-width: 1023px) {
+  body.scrolled .page-layout {
+    display: block;
+  }
+
+  body.scrolled .side {
+    position: static;
+  }
+}
+
+/* Tinh chỉnh rất nhẹ cho hai bên */
+.side.left {
+  padding-right: 4px;
+}
+
+.side.right {
+  padding-left: 4px;
+}
+
+/* Chuyển động mượt */
+.page-layout,
+.side {
+  transition: all 0.3s ease;
+}
