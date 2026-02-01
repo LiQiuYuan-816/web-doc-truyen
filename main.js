@@ -52,7 +52,10 @@ const genreMap = {
   "trinh-tham": "Trinh thám",
   "phat-song-truc-tiep": "Phát sóng trực tiếp",
   "xuyen-khong": "Xuyên không",
+  "am-nhac": "Âm nhạc",
+  "trong-sinh": "Trọng sinh",
   "doi-thuong": "Đời thường"
+   
 };
 
 /* =======================
