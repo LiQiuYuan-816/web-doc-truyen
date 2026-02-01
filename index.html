@@ -198,9 +198,7 @@ if (Object.keys(bookmarks).length === 0) {
   const header = document.querySelector('.site-header');
   const main = document.querySelector('main.container');
 
-  const SCROLL_DOWN_TRIGGER = 50;
-  const SCROLL_UP_TRIGGER = 100;
-
+  const SCROLL_TRIGGER = 80;
   let isScrolled = false;
 
   function updateLayout() {
@@ -211,29 +209,33 @@ if (Object.keys(bookmarks).length === 0) {
     document.documentElement.style.setProperty('--header-height', h + 'px');
   }
 
-  // 🔥 QUAN TRỌNG: chạy ngay khi DOM sẵn sàng
-  document.addEventListener('DOMContentLoaded', updateLayout);
-  window.addEventListener('load', updateLayout);
-  window.addEventListener('resize', updateLayout);
+  document.addEventListener('DOMContentLoaded', () => {
+    updateLayout();
 
-  window.addEventListener('scroll', () => {
-    const y = window.scrollY;
+    window.addEventListener('resize', updateLayout);
 
-    if (!isScrolled && y > SCROLL_DOWN_TRIGGER) {
-      header.classList.add('shrink');
-      document.body.classList.add('scrolled');
-      isScrolled = true;
-      updateLayout();
-    }
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
 
-    if (isScrolled && y < SCROLL_UP_TRIGGER) {
-      header.classList.remove('shrink');
-      document.body.classList.remove('scrolled');
-      isScrolled = false;
-      updateLayout();
-    }
+      /* CUỘN XUỐNG */
+      if (!isScrolled && y > SCROLL_TRIGGER) {
+        header.classList.add('shrink');
+        document.body.classList.add('scrolled');
+        isScrolled = true;
+        updateLayout();
+      }
+
+      /* CUỘN LÊN */
+      if (isScrolled && y <= SCROLL_TRIGGER) {
+        header.classList.remove('shrink');
+        document.body.classList.remove('scrolled');
+        isScrolled = false;
+        updateLayout();
+      }
+    });
   });
 </script>
+
 </body>
 </html>
 
