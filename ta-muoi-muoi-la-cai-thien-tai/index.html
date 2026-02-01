@@ -317,8 +317,7 @@
   const main = document.querySelector('main');
 
   function updateLayout() {
-    const headerHeight = header.offsetHeight;
-    main.style.paddingTop = headerHeight + 'px';
+    main.style.paddingTop = header.offsetHeight + 'px';
   }
 
   window.addEventListener('scroll', () => {
@@ -327,12 +326,13 @@
     } else {
       header.classList.remove('shrink');
     }
-    updateLayout();
+    updateLayout(); // 👈 CỰC KỲ QUAN TRỌNG
   });
 
   window.addEventListener('resize', updateLayout);
   window.addEventListener('load', updateLayout);
 </script>
+
 
 
 </body>
