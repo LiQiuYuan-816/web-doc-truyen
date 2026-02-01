@@ -160,8 +160,6 @@ li.innerHTML = `
 <small>${statusText} · 📖 ${story.chapters} chương</small>
 <p>${story.summary}</p>
 `;
-fragment.appendChild(li);
-  });
 ul.appendChild(li);
 });
 }
