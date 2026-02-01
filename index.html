@@ -214,6 +214,29 @@ if (Object.keys(bookmarks).length === 0) {
   window.addEventListener('resize', updateLayout);
   window.addEventListener('load', updateLayout);
 </script>
+<script>
+  const header = document.querySelector('.site-header');
+  const main = document.querySelector('main.container');
+
+  function updateLayout() {
+    if (!header || !main) return;
+    main.style.paddingTop = header.offsetHeight + 'px';
+  }
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 80) {
+      header.classList.add('shrink');
+      document.body.classList.add('scrolled');
+    } else {
+      header.classList.remove('shrink');
+      document.body.classList.remove('scrolled');
+    }
+    updateLayout();
+  });
+
+  window.addEventListener('resize', updateLayout);
+  window.addEventListener('load', updateLayout);
+</script>
 
 
 </body>
