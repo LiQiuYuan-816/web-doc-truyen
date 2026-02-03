@@ -1,0 +1,130 @@
+:root {
+  --paper: #f6f1e7;
+  --ink: #2e2a24;
+  --brown: #6b4f2d;
+  --border: #d6c8b0;
+  --paper-soft: #fffaf0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Serif", serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.7;
+}
+/* ===== BACK / NAV LINK ===== */
+.back-link {
+  display: inline-block;
+  margin: 24px;
+  padding: 8px 14px;
+  background: #eef3ff;
+  color: #2a5bd7;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  background: #dde6ff;
+}
+
+
+/* ===== HEADER ===== */
+header {
+  padding: 28px 20px;
+  text-align: center;
+  background: #efe6d8;
+  border-bottom: 2px solid var(--border);
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+}
+
+header nav {
+  margin-top: 12px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--brown);
+  font-weight: 600;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== MAIN ===== */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ===== SEARCH ===== */
+#search-name {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-family: inherit;
+  background: white;
+  margin-bottom: 24px;
+}
+
+/* ===== NAME LIST ===== */
+#name-list {
+  background: var(--paper-soft);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+
+/* mỗi mục tên */
+.name-item {
+  padding: 14px 10px;
+  border-bottom: 1px dashed var(--border);
+}
+
+.name-item:last-child {
+  border-bottom: none;
+}
+
+/* chữ Hán */
+.name-item .hanzi {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* các dòng thông tin */
+.name-item p {
+  margin: 4px 0;
+}
+
+/* icon + nhãn */
+.name-item span.label {
+  font-weight: 600;
+  color: var(--brown);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin-top: 60px;
+  text-align: center;
+  padding: 20px;
+  background: #efe6d8;
+  border-top: 2px solid var(--border);
+  font-style: italic;
+  font-size: 0.95rem;
+}
