@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tàng Thư Các</title>
+
+  <!-- Font chữ cổ điển -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Serif:wght@400;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Icon -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <h1>
+      <i class="fa-solid fa-book-open"></i>
+      Tàng Thư Các Cá Nhân
+    </h1>
+
+    <nav>
+      <a href="index.html">
+        <i class="fa-solid fa-house"></i> Trang chủ
+      </a>
+      <a href="thu-vien-ten/name-library.html">
+        <i class="fa-solid fa-scroll"></i> Thư viện tên
+      </a>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main class="container">
+ <!-- ===== LAYOUT WRAPPER ===== -->
+  <div class="page-layout">
+    <!-- ===== LEFT: ĐANG ĐỌC ===== -->
+    <aside class="side left" id="readingBox">
+      <section id="continue-reading">
+        <h2>📖 Đang đọc</h2>
+        <div id="readingList"></div>
+      </section>
+    </aside>
+ <!-- ===== CENTER: DANH MỤC TRUYỆN ===== -->
+    <section class="center story-box">
+      <h2>
+        <i class="fa-solid fa-books"></i>
+        Danh mục truyện
+      </h2>
+
+      <ul id="story-list" class="story-list">
+        <!-- JS render tại đây -->
+      </ul>
+
+      <div id="pagination" class="pagination"></div>
+    </section>
+    <!-- ===== RIGHT: TRA CỨU ===== -->
+    <aside class="side right" id="searchBox">
+      <section class="filter-box">
+        <h2>
+          <i class="fa-solid fa-feather"></i>
+          Tra cứu truyện
+        </h2>
+
+        <div id="filters" class="filters">
+
+          <div class="field">
+            <label>
+              <i class="fa-solid fa-book"></i> Tên truyện
+            </label>
+            <input type="text" id="search-title" placeholder="Nhập tên truyện..." />
+          </div>
+
+          <div class="field">
+            <label>
+              <i class="fa-solid fa-user-pen"></i> Tác giả
+            </label>
+            <input type="text" id="search-author" placeholder="Nhập tên tác giả..." />
+          </div>
+
+          <div class="field">
+            <label>
+              <i class="fa-solid fa-globe"></i> Quốc gia
+            </label>
+    <select id="filter-country">
+            <option value="all">🌏 Tất cả</option>
+            <option value="trung-quoc">🇨🇳 Trung Quốc</option>
+            <option value="nhat-ban">🇯🇵 Nhật Bản</option>
+            <option value="han-quoc">🇰🇷 Hàn Quốc</option>
+            <option value="viet-nam">🇻🇳 Việt Nam</option>
+            <option value="au-my">🌍 Âu Mỹ</option>
+          </select>
+        </div>
+
+          <div class="field">
+            <label>
+              <i class="fa-solid fa-tags"></i> Thể loại
+            </label>
+            <select id="filter-genre">
+            <option value="all">📚 Tất cả</option>
+                    <option value="tu-tien">Tu Tiên</option>
+                    <option value="tay-huyen">Tây huyễn</option>
+                    <option value="xuyen-nhanh">Xuyên nhanh</option>
+                    <option value="xuyen-thu">Xuyên thư</option>
+                    <option value="lam-ruong">Làm ruộng</option>
+                    <option value="xay-dung">Xây dựng</option>
+                    <option value="quyen-muu">Quyền mưu</option>
+                    <option value="thuc-te-ao">Thực tế ảo</option>
+                    <option value="dien-canh">Điện cạnh</option>
+                    <option value="canh-ky">Cạnh kỹ</option>
+                    <option value="the-thao">Thể thao</option>
+                    <option value="khong-cp">Không CP</option>
+                    <option value="dam-my">Đam mỹ</option>
+                    <option value="chu-cong">Chủ công</option>
+                    <option value="chu-thu">Chủ thụ</option>
+                    <option value="tinh-te">Tinh tế</option>
+                    <option value="linh-gac-dan-duong">Lính gác dẫn đường</option>
+                    <option value="abo">ABO</option>
+                    <option value="co-giap">Cơ giáp</option>
+                    <option value="the-bai">Thẻ bài</option>
+                    <option value="doc-tam">Đọc tâm</option>
+                    <option value="doc-the">Đọc thể</option>
+                    <option value="xem-anh-the">Xem ảnh thể</option>
+                    <option value="ao-tuong">Ảo tưởng</option>
+                    <option value="cung-dinh-hau-tuoc">Cung đình hầu tước</option>
+                    <option value="duong-nhai-con">Dưỡng nhãi con</option>
+                    <option value="vuon-truong">Vườn trường</option>
+                    <option value="hoc-ba">Học bá</option>
+                    <option value="hai-huoc">Hài hước</option>
+                    <option value="am-ap">Ấm áp</option>
+                    <option value="ngon-tinh">Ngôn tình</option>
+                    <option value="nguyen-sang">Nguyên sang</option>
+                    <option value="dong-nhan">Đồng nhân</option>
+                    <option value="vo-han-luu">Vô hạn lưu</option>
+                    <option value="kiem-hiep">Kiếm hiệp</option>
+                    <option value="khoa-huyen">Khoa huyễn</option>
+                    <option value="gioi-giai-tri">Giới giải trí</option>
+                    <option value="tro-choi">Trò chơi</option>
+                    <option value="trinh-tham">Trinh thám</option>
+                    <option value="phat-song-truc-tiep">Phát sóng trực tiếp</option>
+                    <option value="xuyen-khong">Xuyên không</option>
+                    <option value="doi-thuong">Đời thường</option>
+                    <option value="trong-sinh">Trọng sinh</option>
+                    <option value="am-nhac">Âm nhạc</option>
+                    <option value="ky-si">Kỵ sĩ</option>
+                    <option value="ma-phap">Ma pháp</option>
+                    <option value="co-dai">Cổ đại</option>
+                    <option value="lang-man">Lãng mạn</option>              
+            </select>
+          </div>
+
+        </div>
+      </section>
+    </aside>
+
+  </div>
+</main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <p>
+     <i class="fa-solid fa-candle"></i>
+      © 2026 – Tàng Thư Các Cá Nhân
+    </p>
+  </footer>
+
+  <script src="main.js"></script>
+
+<script>
+const list = document.getElementById("readingList");
+const bookmarks = JSON.parse(localStorage.getItem("bookmarks")) || {};
+
+if (Object.keys(bookmarks).length === 0) {
+  list.innerHTML = "<p>Chưa có truyện nào đang đọc</p>";
+} else {
+  for (const id in bookmarks) {
+    const b = bookmarks[id];
+    list.innerHTML += `
+      <div class="reading-item">
+        <strong>${b.novelTitle}</strong><br>
+        <span>${b.chapterTitle}</span><br>
+        <a href="${b.url}">👉 Đọc tiếp</a>
+      </div>
+      <hr>
+    `;
+  }
+}
+</script>
+
+<script>
+  const header = document.querySelector('.site-header');
+  const main = document.querySelector('main.container');
+
+  const SCROLL_TRIGGER = 80;
+  let isScrolled = false;
+
+  function updateLayout() {
+    if (!header || !main) return;
+
+    const h = header.offsetHeight;
+    main.style.paddingTop = (h + 50) + 'px';
+    document.documentElement.style.setProperty('--header-height', h + 'px');
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    updateLayout();
+
+    window.addEventListener('resize', updateLayout);
+
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+
+      /* CUỘN XUỐNG */
+      if (!isScrolled && y > SCROLL_TRIGGER) {
+        header.classList.add('shrink');
+        document.body.classList.add('scrolled');
+        isScrolled = true;
+        updateLayout();
+      }
+
+      /* CUỘN LÊN */
+      if (isScrolled && y <= SCROLL_TRIGGER) {
+        header.classList.remove('shrink');
+        document.body.classList.remove('scrolled');
+        isScrolled = false;
+        updateLayout();
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
