@@ -163,7 +163,7 @@ li.innerHTML = `
 <small>✍️ ${story.author} · 🌍 ${countryText}</small><br>
 <small>📚 ${genreText}</small><br>
 <small>${statusText} · 📖 ${story.chapters} chương</small>
-<p>${story.summary}</p>
+<p>${story.summary.replace(/\n/g, "<br>")}</p>
 `;
 ul.appendChild(li);
 });
