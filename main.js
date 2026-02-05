@@ -58,7 +58,9 @@ const genreMap = {
    "ky-si": "Kỵ sĩ",
    "ma-phap": "Ma pháp",
    "co-dai": "Cổ đại",
-   "lang-man": "Lãng mạn"    
+   "lang-man": "Lãng mạn"
+   "cc-sakura": "Card Captain Sakura"
+   "conan": "Thám Tử Conan"
 };
 
 /* =======================
