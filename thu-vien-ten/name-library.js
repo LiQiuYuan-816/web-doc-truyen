@@ -43,9 +43,9 @@ fetch("name-data.json")
 selectCountry.addEventListener("change", filterList);
 
 function filterList() {
-  const keyword = inputName.value.toLowerCase().trim();
-  const story = inputStory.value.toLowerCase().trim();
-  const country = selectCountry.value;
+  const keyword = inputName.value.trim().toLowerCase();
+  const story = inputStory.value.trim().toLowerCase();
+  const country = selectCountry.value.trim().toLowerCase();
 
   const filtered = allNames.filter(item => {
     const matchName =
@@ -58,13 +58,15 @@ function filterList() {
       !story || item.story.toLowerCase().includes(story);
 
     const matchCountry =
-      !country || item.country === country;
+      !country ||
+      (item.country && item.country.trim().toLowerCase() === country);
 
     return matchName && matchStory && matchCountry;
   });
 
   renderNameList(filtered);
 }
+
 
 /* ===============================
    RENDER LIST
