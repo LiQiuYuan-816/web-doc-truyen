@@ -19,7 +19,7 @@ const nameListEl = document.getElementById("name-list");
 const wikiSection = document.getElementById("wiki-section");
 const closeWikiBtn = document.getElementById("close-wiki");
 
-fetch("names.json")
+fetch("name-data.json")
   .then(res => {
     if (!res.ok) throw new Error("Không tải được file JSON");
     return res.json();
