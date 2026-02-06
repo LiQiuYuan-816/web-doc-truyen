@@ -22,24 +22,37 @@
   <!-- ===== MAIN LAYOUT ===== -->
   <main class="layout">
     <!-- ===== SIDEBAR SEARCH ===== -->
-    <aside class="sidebar">
-      <h2>🔎 Tìm kiếm</h2>
+<aside class="sidebar">
+  <h2>🔎 Tìm kiếm</h2>
 
-      <input type="text" placeholder="Tên nhân vật">
-      <input type="text" placeholder="Quốc gia / Xuất xứ">
-      <input type="text" placeholder="Tiểu thuyết / Truyện">
-      <input type="text" placeholder="Pinyin / Biệt danh">
+  <!-- TÊN NHÂN VẬT -->
+  <input 
+    type="text" 
+    id="search-name"
+    placeholder="Tên nhân vật (Vi / Zh / Pinyin)"
+  >
 
-      <button>Tìm</button>
-    </aside>
+  <!-- QUỐC GIA -->
+  <select id="search-country">
+    <option value="">— Quốc gia / Xuất xứ —</option>
+    <option value="Trung Quốc">Trung Quốc</option>
+    <option value="Nhật Bản">Nhật Bản</option>
+    <option value="Hàn Quốc">Hàn Quốc</option>
+  </select>
+
+  <!-- TÊN TRUYỆN -->
+  <input 
+    type="text" 
+    id="search-story"
+    placeholder="Tên tiểu thuyết / Truyện"
+  >
+
+</aside>
 
     <!-- ===== CONTENT ===== -->
     <section class="content">
       <section id="name-list">
         <!-- JS render danh sách tên tại đây -->
-        <div class="name-card">Tên 1</div>
-        <div class="name-card">Tên 2</div>
-        <div class="name-card">Tên 3</div>
       </section>
 
       <!-- ===== WIKI (ẨN) ===== -->
