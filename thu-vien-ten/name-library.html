@@ -6,51 +6,55 @@
   <title>Thư Viện Tên</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header>
-  <h1>📖 Thư Viện Tên</h1>
-  <nav>
-<a href="../index.html" class="back-link">← Quay về Kho Truyện</a>
-  </nav>
-</header>
-<hr>
-<main>
-  <!-- SEARCH -->
-  <input
-    type="text"
-    id="search-name"
-    placeholder="🔍 Tìm tên Trung / Việt / Pinyin / Tên khác..."
-  >
-
-  <!-- DANH SÁCH TÊN (GIỮ NGUYÊN) -->
-  <section id="name-list">
-    <!-- JS render tại đây -->
-  </section>
-
-  <!-- ===== WIKI (TÙY CHỌN) ===== -->
-  <section id="wiki-section" class="wiki-container" hidden>
-    <a href="#" id="close-wiki" class="back-link">← Quay lại danh sách</a>
-
-    <h1 id="wiki-title">Tiêu đề Wiki</h1>
-
-    <div class="wiki-meta" id="wiki-meta">
-      <!-- thông tin nhanh -->
+  <!-- ===== HEADER ===== -->
+  <header id="main-header">
+    <div class="header-inner">
+      <h1 class="site-title">📖 Thư Viện Tên</h1>
+      <nav class="header-nav">
+        <a href="../index.html">← Quay về Kho Truyện</a>
+      </nav>
     </div>
+  </header>
 
-    <div id="wiki-content">
-      <!-- nội dung wiki tự nhập -->
-    </div>
-  </section>
-</main>
+  <!-- ===== MAIN LAYOUT ===== -->
+  <main class="layout">
+    <!-- ===== SIDEBAR SEARCH ===== -->
+    <aside class="sidebar">
+      <h2>🔎 Tìm kiếm</h2>
 
+      <input type="text" placeholder="Tên nhân vật">
+      <input type="text" placeholder="Quốc gia / Xuất xứ">
+      <input type="text" placeholder="Tiểu thuyết / Truyện">
+      <input type="text" placeholder="Pinyin / Biệt danh">
 
- <hr>
+      <button>Tìm</button>
+    </aside>
 
-  
-<footer>
-  <p>© 2026 – Thư viện tên cá nhân</p>
-</footer>
+    <!-- ===== CONTENT ===== -->
+    <section class="content">
+      <section id="name-list">
+        <!-- JS render danh sách tên tại đây -->
+        <div class="name-card">Tên 1</div>
+        <div class="name-card">Tên 2</div>
+        <div class="name-card">Tên 3</div>
+      </section>
 
-<script src="name-library.js"></script>
+      <!-- ===== WIKI (ẨN) ===== -->
+      <section id="wiki-section" hidden>
+        <a href="#" id="close-wiki">← Quay lại danh sách</a>
+        <h1 id="wiki-title"></h1>
+        <div id="wiki-meta"></div>
+        <div id="wiki-content"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 – Thư viện tên cá nhân</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
