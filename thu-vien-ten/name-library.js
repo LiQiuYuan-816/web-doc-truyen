@@ -58,7 +58,7 @@ function filterList() {
       !story || item.story.toLowerCase().includes(story);
 
     const matchCountry =
-      !country || item.Country === country;
+      !country || item.country === country;
 
     return matchName && matchStory && matchCountry;
   });
