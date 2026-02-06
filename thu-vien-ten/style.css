@@ -229,15 +229,21 @@ body {
 }
 
 #wiki-content {
-  margin-top: 16px;
+  margin-top: 20px;
+  background: var(--bg-paper);
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  padding: 22px 26px;
   font-size: 1rem;
-  line-height: 1.9;
-  max-width: 680px;
+  line-height: 1.95;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
 }
 
 #wiki-content p {
-  margin-bottom: 1.2em;
+  margin-bottom: 1.4em;
+  text-align: justify;
 }
+
 
 /* ===== FOOTER ===== */
 footer {
@@ -245,4 +251,29 @@ footer {
   padding: 20px;
   color: var(--text-muted);
   font-size: 0.9rem;
+}
+/* ===== WIKI BLOCKS ===== */
+.wiki-block {
+  background: var(--bg-paper);
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  padding: 14px 18px;
+  margin: 14px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+/* Giới thiệu ngắn dưới tiêu đề */
+.wiki-intro {
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* Thông tin nhanh: tuổi, học vấn, tác phẩm */
+.wiki-info p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
