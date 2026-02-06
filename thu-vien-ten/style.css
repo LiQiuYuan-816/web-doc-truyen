@@ -22,6 +22,7 @@ body {
   font-family: "Noto Serif", "Noto Serif SC", serif;
   background: var(--bg-main);
   color: var(--text-main);
+  line-height: 1.7;
 }
 
 /* ===== HEADER ===== */
@@ -38,37 +39,43 @@ body {
 .header-inner {
   max-width: 1200px;
   margin: auto;
-  padding: 20px;
+  padding: 18px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 #main-header.shrink .header-inner {
-  padding: 8px 20px;
+  padding: 10px 20px;
 }
 
 .site-title {
   margin: 0;
-  font-family: "Noto Serif", "Noto Serif SC", serif;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   letter-spacing: 0.5px;
-  color: var(--text-main);
   transition: font-size 0.3s ease;
 }
 
 #main-header.shrink .site-title {
-  font-size: 1.4rem;
+  font-size: 1.35rem;
 }
 
+/* ===== HEADER NAV ===== */
 .header-nav a {
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid transparent;
   color: var(--accent);
-  text-decoration: none;
   font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 .header-nav a:hover {
-  text-decoration: underline;
+  background: var(--bg-paper);
+  border-color: var(--border-soft);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
 }
 
 /* ===== LAYOUT ===== */
@@ -77,84 +84,165 @@ body {
   max-width: 1200px;
   margin: 140px auto 0;
   padding-bottom: 60px;
-  gap: 20px;
+  gap: 28px;
 }
 
 /* ===== SIDEBAR ===== */
 .sidebar {
   width: 260px;
   background: var(--bg-paper);
-  padding: 16px;
+  padding: 18px;
   border: 1px solid var(--border-soft);
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
   position: sticky;
-  top: 100px;
+  top: 110px;
   height: fit-content;
 }
 
 .sidebar h2 {
-  margin-top: 0;
-  font-family: "Noto Serif", "Noto Serif SC", serif;
+  margin: 0 0 12px;
   font-size: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
   border-bottom: 1px solid var(--border-soft);
   padding-bottom: 6px;
 }
 
-.sidebar input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  background: #faf6ee;
-  border: 1px solid var(--border-soft);
-  border-radius: 6px;
-  font-family: inherit;
+.sidebar h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border-soft);
 }
 
-.sidebar input:focus {
+.sidebar input,
+.sidebar select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  background: #faf6ee;
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.sidebar input:focus,
+.sidebar select:focus {
   outline: none;
   border-color: var(--accent);
 }
 
 .sidebar button {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
+  background: #f2ede3;
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
   cursor: pointer;
   font-family: inherit;
+  font-weight: 600;
+}
+
+.sidebar button:hover {
+  background: #ebe3d5;
 }
 
 /* ===== CONTENT ===== */
 .content {
   flex: 1;
+  min-width: 0;
 }
 
+/* ===== NAME LIST ===== */
 #name-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
 }
 
 .name-card {
   background: var(--bg-paper);
-  padding: 12px;
+  padding: 14px;
   border: 1px solid var(--border-soft);
-  border-radius: 10px;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
-  font-family: "Noto Serif", "Noto Serif SC", serif;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
   cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .name-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.07);
+}
+
+.name-main {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.name-sub {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.name-story {
+  margin-top: 6px;
+  font-size: 0.9rem;
+}
+
+/* ===== WIKI ===== */
+#wiki-section {
+  max-width: 760px;
+}
+
+#close-wiki {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: #f5efe4;
+  border: 1px solid var(--border-soft);
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+#close-wiki:hover {
+  background: #ede4d3;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+#wiki-section h1 {
+  font-size: 2rem;
+  margin: 12px 0 6px;
+  letter-spacing: 0.5px;
+}
+
+#wiki-meta p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+#wiki-content {
+  margin-top: 16px;
+  font-size: 1rem;
+  line-height: 1.9;
+  max-width: 680px;
+}
+
+#wiki-content p {
+  margin-bottom: 1.2em;
 }
 
 /* ===== FOOTER ===== */
 footer {
   text-align: center;
   padding: 20px;
-  background: transparent;
   color: var(--text-muted);
   font-size: 0.9rem;
 }
