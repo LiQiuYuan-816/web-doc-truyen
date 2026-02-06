@@ -1,40 +1,81 @@
 /* ===============================
-   HEADER SHRINK ON SCROLL
+   HEADER SHRINK
 ================================ */
 const header = document.getElementById("main-header");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 80) {
-    header.classList.add("shrink");
-  } else {
-    header.classList.remove("shrink");
-  }
+  header.classList.toggle("shrink", window.scrollY > 80);
 });
 
-
 /* ===============================
-   LOAD & RENDER NAME LIST
+   ELEMENTS
 ================================ */
 const nameListEl = document.getElementById("name-list");
 const wikiSection = document.getElementById("wiki-section");
 const closeWikiBtn = document.getElementById("close-wiki");
 
+const inputName = document.getElementById("search-name");
+const inputStory = document.getElementById("search-story");
+const selectCountry = document.getElementById("search-country");
+
+let allNames = [];
+
+/* ===============================
+   LOAD JSON
+================================ */
 fetch("name-data.json")
-  .then(res => {
-    if (!res.ok) throw new Error("Không tải được file JSON");
-    return res.json();
-  })
+  .then(res => res.json())
   .then(data => {
-    renderNameList(data);
+    allNames = data;
+    renderNameList(allNames);
   })
-  .catch(err => {
-    console.error(err);
-    nameListEl.innerHTML = "<p>Không thể tải danh sách tên.</p>";
+  .catch(() => {
+    nameListEl.innerHTML = "<p>Không thể tải dữ liệu.</p>";
   });
 
+/* ===============================
+   LIVE SEARCH
+================================ */
+[inputName, inputStory].forEach(el =>
+  el.addEventListener("input", filterList)
+);
 
+selectCountry.addEventListener("change", filterList);
+
+function filterList() {
+  const keyword = inputName.value.toLowerCase().trim();
+  const story = inputStory.value.toLowerCase().trim();
+  const country = selectCountry.value;
+
+  const filtered = allNames.filter(item => {
+    const matchName =
+      !keyword ||
+      item.vi.toLowerCase().includes(keyword) ||
+      item.zh.toLowerCase().includes(keyword) ||
+      item.pinyin.toLowerCase().includes(keyword);
+
+    const matchStory =
+      !story || item.story.toLowerCase().includes(story);
+
+    const matchCountry =
+      !country || item.Country === country;
+
+    return matchName && matchStory && matchCountry;
+  });
+
+  renderNameList(filtered);
+}
+
+/* ===============================
+   RENDER LIST
+================================ */
 function renderNameList(list) {
   nameListEl.innerHTML = "";
+
+  if (list.length === 0) {
+    nameListEl.innerHTML = "<p>Không tìm thấy kết quả.</p>";
+    return;
+  }
 
   list.forEach(item => {
     const card = document.createElement("div");
@@ -47,14 +88,12 @@ function renderNameList(list) {
     `;
 
     card.addEventListener("click", () => openWiki(item));
-
     nameListEl.appendChild(card);
   });
 }
 
-
 /* ===============================
-   OPEN / CLOSE WIKI
+   WIKI
 ================================ */
 function openWiki(item) {
   nameListEl.style.display = "none";
