@@ -102,12 +102,17 @@ function openWiki(item) {
   document.getElementById("wiki-title").textContent =
     item.wiki.title;
 
-  document.getElementById("wiki-meta").innerHTML = `
-    <p><strong>${item.wiki.meta}</strong></p>
+document.getElementById("wiki-meta").innerHTML = `
+  <div class="wiki-block wiki-intro">
+    <strong>${item.wiki.meta}</strong>
+  </div>
+
+  <div class="wiki-block wiki-info">
     <p>🎂 ${item.wiki.year}</p>
     <p>🎓 ${item.wiki.job}</p>
     <p>📚 ${item.wiki.work}</p>
-  `;
+  </div>
+`;
 
   document.getElementById("wiki-content").innerHTML =
     item.wiki.content;
