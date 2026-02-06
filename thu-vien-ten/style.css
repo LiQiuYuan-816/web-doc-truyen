@@ -1,38 +1,51 @@
+/* ===== THEME ===== */
 :root {
   --paper: #f6f1e7;
+  --paper-soft: #fffaf0;
   --ink: #2e2a24;
   --brown: #6b4f2d;
   --border: #d6c8b0;
-  --paper-soft: #fffaf0;
+  --accent: #c8a96a;
+  --blue-soft: #2a5bd7;
 }
 
+/* ===== RESET ===== */
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: "Noto Serif", serif;
+  font-family: "Noto Serif", "Segoe UI", serif;
   background: var(--paper);
   color: var(--ink);
   line-height: 1.7;
 }
-/* ===== BACK / NAV LINK ===== */
+
+/* ===== LINK ===== */
+a {
+  color: var(--brown);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== BACK LINK ===== */
 .back-link {
   display: inline-block;
-  margin: 24px;
-  padding: 8px 14px;
+  padding: 6px 14px;
   background: #eef3ff;
-  color: #2a5bd7;
-  text-decoration: none;
+  color: var(--blue-soft);
   border-radius: 999px;
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
 .back-link:hover {
   background: #dde6ff;
 }
-
 
 /* ===== HEADER ===== */
 header {
@@ -52,16 +65,6 @@ header nav {
   margin-top: 12px;
 }
 
-header nav a {
-  text-decoration: none;
-  color: var(--brown);
-  font-weight: 600;
-}
-
-header nav a:hover {
-  text-decoration: underline;
-}
-
 /* ===== MAIN ===== */
 main {
   max-width: 900px;
@@ -72,27 +75,32 @@ main {
 /* ===== SEARCH ===== */
 #search-name {
   width: 100%;
-  padding: 10px 14px;
+  padding: 12px 14px;
   font-size: 1rem;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid var(--border);
   font-family: inherit;
-  background: white;
-  margin-bottom: 24px;
+  background: #fff;
+  margin-bottom: 26px;
+}
+
+#search-name:focus {
+  outline: none;
+  border-color: var(--accent);
 }
 
 /* ===== NAME LIST ===== */
 #name-list {
   background: var(--paper-soft);
   border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 24px;
+  border-radius: 16px;
+  padding: 22px;
   box-shadow: 0 6px 14px rgba(0,0,0,0.06);
 }
 
-/* mỗi mục tên */
+/* ===== NAME ITEM ===== */
 .name-item {
-  padding: 14px 10px;
+  padding: 16px 10px;
   border-bottom: 1px dashed var(--border);
 }
 
@@ -101,21 +109,95 @@ main {
 }
 
 /* chữ Hán */
-.name-item .hanzi {
-  font-size: 1.4rem;
+.hanzi {
+  font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
 }
 
-/* các dòng thông tin */
-.name-item p {
+/* field */
+.field {
   margin: 4px 0;
+  font-size: 0.95rem;
 }
 
-/* icon + nhãn */
-.name-item span.label {
-  font-weight: 600;
+.field strong {
   color: var(--brown);
+}
+
+/* ===== TÊN VIỆT CÓ WIKI ===== */
+.vi-name[data-wiki] {
+  cursor: pointer;
+  color: var(--brown);
+  text-decoration: underline dotted;
+}
+
+.vi-name[data-wiki]:hover {
+  color: var(--blue-soft);
+}
+
+/* ========================= */
+/* ===== WIKI SECTION ===== */
+/* ========================= */
+
+.wiki-container {
+  margin-top: 20px;
+  background: #fbf7ef;
+  padding: 32px 36px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(120, 90, 60, 0.15);
+}
+
+/* wiki title */
+.wiki-container h1 {
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 12px;
+  border-left: 6px solid var(--accent);
+  padding-left: 14px;
+}
+
+/* meta */
+.wiki-meta {
+  margin: 16px 0 24px;
+  padding: 12px 16px;
+  background: #f1e6d4;
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+
+/* wiki content */
+#wiki-content p {
+  margin: 12px 0;
+}
+
+/* blockquote */
+.wiki-container blockquote {
+  margin: 20px 0;
+  padding: 14px 20px;
+  background: #f4ecdf;
+  border-left: 5px solid var(--accent);
+  border-radius: 6px;
+  font-style: italic;
+}
+
+/* table */
+.wiki-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0;
+}
+
+.wiki-container th,
+.wiki-container td {
+  padding: 10px;
+  border-bottom: 1px solid #e2d6c3;
+}
+
+.wiki-container th {
+  background: #efe3cf;
+  text-align: left;
 }
 
 /* ===== FOOTER ===== */
