@@ -155,7 +155,7 @@ story.genre
 :"");
 
 li.innerHTML = `
-<a href= "${story.slug}/index.html" >
+  <a href="/stories/${story.slug}/index.html">
 <strong>${story.title}</strong>
 </a>
 <br>
