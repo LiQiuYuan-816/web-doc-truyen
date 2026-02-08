@@ -77,7 +77,7 @@ let stories = [];
 let currentList = [];
 let currentPage = 1;
 
-const BASE_PATH = "";
+const BASE_PATH = "/web-doc-truyen";
 
 /* =======================
 LOAD DATA
