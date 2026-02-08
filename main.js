@@ -77,6 +77,7 @@ let stories = [];
 let currentList = [];
 let currentPage = 1;
 
+const BASE_PATH = "";
 
 /* =======================
 LOAD DATA
@@ -155,7 +156,7 @@ story.genre
 :"");
 
 li.innerHTML = `
-  <a href="/stories/${story.slug}/index.html">
+<a href="${BASE_PATH}/stories/${story.slug}/index.html">
 <strong>${story.title}</strong>
 </a>
 <br>
