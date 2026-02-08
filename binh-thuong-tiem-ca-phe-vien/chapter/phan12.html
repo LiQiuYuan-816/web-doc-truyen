@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Phần 12</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Bình Thường Tiệm Cà Phê Viên 【Amuro Tooru Xem Ảnh Thể】
+      </h1>
+      <div class="novel-meta">
+        <span>Phần 12</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="phan11.html">⏮ Chương trước</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+
+
+        <p>Những việc cần chú ý xem đệ nhất thiên</p>
+        <p>…………………………………………</p>
+        <p>“Hảo soái!”</p>
+        <p>Vốn đang cho rằng có thể được đến cái gì bát quái đâu, có chút người thất vọng mà tưởng. Bất quá người này cũng là thật sự thực thích cái này quốc gia đâu, bằng không như thế nào có thể nói ra loại này lời nói.</p>
+        <p>Ta người yêu là cái này quốc gia sao, Furuya tiên sinh thật sự rất lợi hại, về sau ta cũng muốn như vậy! Kazami Yuuya nghĩ đến.</p>
+        <p>“Này lái xe cũng quá nguy hiểm đi?!”</p>
+        <p>“Này kỹ thuật lái xe, như thế nào không đi lấy tới cái quán quân?”</p>
+        <p>“Trời ạ, như vậy hảo nguy hiểm a!”</p>
+        <p>“Conan? Ngươi như thế nào sẽ……”</p>
+        <p>“Tiểu Lan tỷ tỷ…… Này có thể giải thích, đi……”</p>
+        <p>“Conan, này cũng quá nguy hiểm!”</p>
+        <p>“Tiểu Furuya đây là kế thừa Kenji tương kỹ thuật lái xe đâu.”</p>
+        <p>“Ngươi còn thực tự hào?”</p>
+        <p>“Xem ảnh kết thúc, đạt được tích phân +2+5+5+5, tổng tích phân 56”</p>
+        <p>“Xin hỏi hay không trừu tạp, thân ái Amuro tiên sinh?”</p>
+        <p>Là.</p>
+        <p>【 chúc mừng đạt được</p>
+        <p>SSR lời bình tạp ·Furuya bảo hộ 】</p>
+        <p>【 tự động truyền phát tin trung 】</p>
+        <p>【 hắn đứng ở trong đêm tối, bảo hộ các ngươi ban ngày 】</p>
+        <p>【 xem ảnh đã hoàn thành, tự động rời khỏi trung 】</p>
+        <p>【 hắc phương ký ức tiêu trừ trung 】</p>
+        <p>【 tiêu trừ hoàn thành 】</p>
+        <p>【 rời khỏi thành công 】</p>
+        <p>……………………………</p>
+        <p>ps:</p>
+        <p>Kết thúc lạp</p>
+        <p>   đại gia tiếp theo vốn định nhìn cái gì? Ở bình luận khu nói nói</p>
+        <p>   ở Tấn Giang khai bổn đồng nghiệp, trước mắt ở cùng ký hợp đồng đại chiến 300 hiệp, thận nhập</p>
+
+
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="phan11.html">⏮ Chương trước</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "binh-thuong-tiem-ca-phe-vien";
+const NOVEL_TITLE = "Bình Thường Tiệm Cà Phê Viên 【Amuro Tooru Xem Ảnh Thể】";
+const CHAPTER_TITLE = "Phần 12";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+const fixedHeader = document.querySelector(".fixed-top");
+function handleHeaderShrink() {
+  fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+}
+window.addEventListener("scroll", handleHeaderShrink);
+window.addEventListener("load", handleHeaderShrink);
+</script>
+<script>
+function adjustMainPadding() {
+  const header = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+  main.style.paddingTop = header.offsetHeight + 20 + "px";
+}
+window.addEventListener("load", adjustMainPadding);
+window.addEventListener("resize", adjustMainPadding);
+</script>
+</body>
+</html>
