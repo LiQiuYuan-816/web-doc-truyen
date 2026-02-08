@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cảnh Giáo Tổ Thiên Quốc Lại Vào Nghề</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <!-- STYLE -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== FIXED TOP (HEADER CỐ ĐỊNH) ===== -->
+<div class="fixed-top">
+  <div class="fixed-inner">
+
+    <div class="top-left">
+      <a href="../index.html" class="back-link">← Kho Truyện</a>
+      <a href="../thu-vien-ten/name-library.html" class="back-link">Thư Viện Tên</a>
+    </div>
+
+    <div class="top-center">
+      <h1 class="novel-title">
+       Cảnh Giáo Tổ Thiên Quốc Lại Vào Nghề
+      </h1>
+    </div>
+    <div class="top-right author">
+      ✍️ LOFTER
+    </div>
+
+    <div class="novel-meta">
+      <span>📘 Hoàn thành</span>
+      <span>📖 2 chương</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main>
+  <div class="novel-layout">
+
+    <!-- Ảnh bìa -->
+    <div class="cover-image">
+      <img src="cover.png" alt="Ảnh bìa truyện">
+    </div>
+
+    <!-- ===== VĂN ÁN ===== -->
+    <section class="section">
+      <div class="section-title">📜 Văn án</div>
+
+    <div class="tag-line">
+      <span>Đồng nhân</span>
+      <span>Conan</span>
+      <span>Trinh thám</span>
+
+      <span>Ấm áp</span>
+
+    </div>
+
+    <div class="content">
+        <p>Nguồn: LOFTER</p>
+        <p>Summary: </p>
+        <p>Vài vị cảnh sát tiên sinh ở người chết quốc gia đoàn tụ lúc sau, vì có thể thường xuyên trở lại nhân gian vấn an thân hữu, phát triển một ít tân nghiệp vụ. </p>
+
+    </div>
+  </section>
+    </div>
+
+  <!-- ===== MỤC LỤC ===== -->
+  <section class="section">
+    <div class="section-title">📚 Mục lục</div>
+
+    <div class="content">
+      <ul>
+
+    <li><a href="chapter/phan1.html">Phần 1 </a></li>
+    <li><a href="chapter/phan2.html">Phần 2: Phiên Ngoại Cứu Tế If Tuyến </a></li>
+
+  </ul>
+</div>
+</section>
+
+</main>
+
+<footer>
+  © 2026 – Web đọc truyện cá nhân
+</footer>
+<script>
+  const header = document.querySelector('.fixed-top');
+  const main = document.querySelector('main');
+
+  function updateLayout() {
+    main.style.paddingTop = header.offsetHeight + 'px';
+  }
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 80) {
+      header.classList.add('shrink');
+    } else {
+      header.classList.remove('shrink');
+    }
+    updateLayout(); // 👈 CỰC KỲ QUAN TRỌNG
+  });
+
+  window.addEventListener('resize', updateLayout);
+  window.addEventListener('load', updateLayout);
+</script>
+
+
+
+</body>
+
+</html>

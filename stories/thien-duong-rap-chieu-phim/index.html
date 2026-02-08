@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiên Đường Rạp Chiếu Phim 【Cảnh Giáo Tổ】</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <!-- STYLE -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== FIXED TOP (HEADER CỐ ĐỊNH) ===== -->
+<div class="fixed-top">
+  <div class="fixed-inner">
+
+    <div class="top-left">
+      <a href="../index.html" class="back-link">← Kho Truyện</a>
+      <a href="../thu-vien-ten/name-library.html" class="back-link">Thư Viện Tên</a>
+    </div>
+
+    <div class="top-center">
+      <h1 class="novel-title">
+       Thiên Đường Rạp Chiếu Phim 【Cảnh Giáo Tổ】
+      </h1>
+    </div>
+    <div class="top-right author">
+      ✍️ LOFTER
+    </div>
+
+    <div class="novel-meta">
+      <span>📘 Hoàn thành</span>
+      <span>📖 3 chương</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main>
+  <div class="novel-layout">
+
+    <!-- Ảnh bìa -->
+    <div class="cover-image">
+      <img src="cover.png" alt="Ảnh bìa truyện">
+    </div>
+
+    <!-- ===== VĂN ÁN ===== -->
+    <section class="section">
+      <div class="section-title">📜 Văn án</div>
+
+    <div class="tag-line">
+      <span>Đồng nhân</span>
+      <span>Conan</span>
+      <span>Trinh thám</span>
+      <span>Ấm áp</span>
+
+    </div>
+
+    <div class="content">
+        <p>Nguồn: LOFTER</p>
+        <p>Summary: Hagiwara Kenji từ “Ta đến xem tiểu Furuya cùng tiểu Morofushi nằm vùng gặp lại khôi hài trường hợp, sau đó đi xem lớp trưởng hẹn hò, lại đi nhìn xem tỷ tỷ cùng cái kia tấc đầu tiến triển, cuối cùng đi xem hôm nay tiểu Jinpei có hay không vui vẻ một chút” đến “Tiểu Jinpei tưởng ta cũng không cần nghĩ đến tới tìm ta đi” đến “Tiểu Morofushi ngươi như thế nào cũng tới” chuyện xưa. </p>
+        <p>Warning: Hàm cảnh linh cảnh thu tùng thu, bản sao chương thời điểm ta cũng không xác định hậu kỳ là cb vẫn là cp, nhưng là phi thường minh xác chính là tấu chương có tùng tá tin nhắn đề cập, hậu kỳ sẽ có bọn họ xem cao tá luyến ái đề cập, cho nên thỉnh tự hành tránh lôi. </p>
+
+    </div>
+  </section>
+    </div>
+
+  <!-- ===== MỤC LỤC ===== -->
+  <section class="section">
+    <div class="section-title">📚 Mục lục</div>
+
+    <div class="content">
+      <ul>
+
+    <li><a href="chapter/thuong.html">Thượng: </a></li>
+    <li><a href="chapter/trung.html">Trung : </a></li>
+    <li><a href="chapter/ha.html">Hạ - 1: </a></li>
+
+
+  </ul>
+</div>
+</section>
+
+</main>
+
+<footer>
+  © 2026 – Web đọc truyện cá nhân
+</footer>
+<script>
+  const header = document.querySelector('.fixed-top');
+  const main = document.querySelector('main');
+
+  function updateLayout() {
+    main.style.paddingTop = header.offsetHeight + 'px';
+  }
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 80) {
+      header.classList.add('shrink');
+    } else {
+      header.classList.remove('shrink');
+    }
+    updateLayout(); // 👈 CỰC KỲ QUAN TRỌNG
+  });
+
+  window.addEventListener('resize', updateLayout);
+  window.addEventListener('load', updateLayout);
+</script>
+
+
+
+</body>
+</html>
+
+
