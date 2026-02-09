@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Phần 5</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Linh Trở Thành Kịch Bản Tổ 【Xem Ảnh Thể】
+      </h1>
+      <div class="novel-meta">
+        <span>Phần 5</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="phan4.html">⏮ Chương trước</a>
+      <a class="back-link" href="phan6.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+
+        <p>Đã muốn trao quyền, hành văn không tốt, không cần mang đầu óc xem</p>
+        <p>【 bắt đầu xem ảnh】</p>
+        <p>【 linh đi đương trinh thám, đã có thể đi ra ngoài hoảng có có thể mỗi ngày bị osananajimi đầu uy; phát sinh nổ mạnh, Jinpei bảo hộ linh, Kenji yểm hộ linh, linh tự trách, Jinpei bảo hộ hắn bị thương, Kenji an ủi hắn, làm ghi chép, Kenji càng làm càng khí, công sự xong xuôi, bắt đầu làm việc tư, Kenji đem Hiromitsu gọi tới, linh chột dạ, hắn có thể giải thích, Hiromitsu không để ý tới, hiện tại, chúng ta, hảo, hảo, nói chuyện! 】</p>
+        <p>Morofushi Hiromitsu" zero! "</p>
+        <p>Furuya Rei chột dạ" hiro··· "</p>
+        <p>Hagiwara Kenji sinh khí" tiểu Furuya quá nguy hiểm! "</p>
+        <p>Furuya Rei" thực xin lỗi sao ～ "</p>
+        <p>【Matsuda ý thức là thanh tỉnh, chính là tỉnh không tới, thấy một vòng mục sau đã tỉnh, mấy người tính toán đều đã làm một vòng mục đích sự tình 】</p>
+        <p>Furuya Rei" liền biết không thể gạt được các ngươi! "</p>
+        <p>Matsuda Jinpei" ngươi còn tưởng giấu?! "</p>
+        <p>Furuya Rei ánh mắt một gáo không nói chuyện</p>
+        <p>Xem hắn như vậy kia còn không biết</p>
+        <p>【Vermouth lật xe, Bourbon đi tiếp, fbi phục kích, linh sấn loạn đánh Akai Shuuichi một quyền, linh sảng. 】</p>
+        <p>Akai Shuuichi···Akai Shuuichi không nghĩ nói chuyện, xem một vòng mục cũng đã rất khó đối phó rồi, ván thứ hai liền càng khó đối phó, nhưng cũng rất bội phục hắn.</p>
+        <p>Mizunashi Rena: Ngày này bổn công an trực tiếp thả bay tự mình a.</p>
+        <p>Conan tranh nhau nửa tháng mắt: Amuro ca ca hảo ấu trĩ.</p>
+        <p>Morofushi Hiromitsu: zero đã sớm muốn đánh hắn đi, mệt hắn nhịn lâu như vậy.</p>
+        <p>Ngắn nhỏ một chương</p>
+
+
+
+
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="phan4.html">⏮ Chương trước</a>
+      <a class="back-link" href="phan6.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "linh-tro-thanh-kich-ban-to";
+const NOVEL_TITLE = "Linh Trở Thành Kịch Bản Tổ 【Xem Ảnh Thể】";
+const CHAPTER_TITLE = "Phần 5";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+const fixedHeader = document.querySelector(".fixed-top");
+function handleHeaderShrink() {
+  fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+}
+window.addEventListener("scroll", handleHeaderShrink);
+window.addEventListener("load", handleHeaderShrink);
+</script>
+<script>
+function adjustMainPadding() {
+  const header = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+  main.style.paddingTop = header.offsetHeight + 20 + "px";
+}
+window.addEventListener("load", adjustMainPadding);
+window.addEventListener("resize", adjustMainPadding);
+</script>
+</body>
+</html>
