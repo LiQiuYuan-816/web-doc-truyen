@@ -319,7 +319,7 @@
 
   let storiesData = [];
 
-  // 🔥 Path chuẩn (vì đang ở /truyen/slug/index.html)
+  // 🔥 Path chuẩn (vì đang ở /stories/slug/index.html)
   fetch("../../stories.json")
     .then(res => res.json())
     .then(data => {
@@ -342,7 +342,7 @@
       li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
 
       const a = document.createElement("a");
-      a.href = `../../truyen/${story.slug}/index.html`;
+      a.href = `../../stories/${story.slug}/index.html`;
       a.textContent = `${story.title} (${story.chapters} chương)`;
 
       // 🔥 Highlight truyện đang đọc
