@@ -14,6 +14,22 @@
 </head>
 
 <body>
+<div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+<div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+<div class="library-sidebar" id="librarySidebar">
+  <div class="library-header">
+    📚 Thư viện
+    <span class="close-btn" onclick="toggleLibrary()">✕</span>
+  </div>
+
+  <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+
+  <ul id="storyList"></ul>
+</div>
+
+
 
 <!-- ===== FIXED TOP (HEADER CỐ ĐỊNH) ===== -->
 <div class="fixed-top">
@@ -288,8 +304,76 @@
 
   window.addEventListener('resize', updateLayout);
   window.addEventListener('load', updateLayout);
+
+  // ===== SIDEBAR LOGIC =====
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  let storiesData = [];
+
+  // 🔥 Path chuẩn (vì đang ở /truyen/slug/index.html)
+  fetch("../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    storyList.innerHTML = "";
+
+    // 🔥 Lấy slug an toàn (không phụ thuộc cấu trúc deploy)
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[pathParts.length - 2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+
+      // 🔥 Giới hạn animation delay
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `../../truyen/${story.slug}/index.html`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      // 🔥 Highlight truyện đang đọc
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      // 🔥 Auto đóng sidebar khi click
+      a.addEventListener("click", () => {
+        sidebar.classList.remove("active");
+        overlay.classList.remove("active");
+      });
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  // 🔥 Tìm kiếm realtime
+  searchInput.addEventListener("input", function () {
+    const keyword = this.value.toLowerCase();
+
+    const filtered = storiesData.filter(story =>
+      story.title.toLowerCase().includes(keyword)
+    );
+
+    renderStories(filtered);
+  });
 </script>
 
 
 </body>
 </html>
+
