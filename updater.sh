@@ -1,54 +1,62 @@
 #!/bin/bash
 
-SCRIPT_FILE="script.html"
-
-echo "Bắt đầu thay toàn bộ script trong index.html..."
+echo "Bắt đầu di chuyển script vào trước </body>..."
 echo
 
-find stories -mindepth 2 -maxdepth 2 -type f -name "index.html" \
-  ! -path "stories/tu-vo-han-luu-xuyen-tien-cau-sinh-luyen-tong-sau/*" \
-| while read f; do
+find stories -mindepth 2 -maxdepth 2 -type f -name "index.html" | while read f; do
 
-  echo "----------------------------------------"
+  echo "========================================"
   echo "📄 File: $f"
 
-  TMP_FILE="$(mktemp)"
+  html_line=$(grep -n "</html>" "$f" | tail -1 | cut -d: -f1)
+  script_line=$(grep -n "<script" "$f" | tail -1 | cut -d: -f1)
 
-  awk -v scriptfile="$SCRIPT_FILE" '
-    BEGIN { skip=0 }
+  if [[ -n "$html_line" && -n "$script_line" && "$script_line" -gt "$html_line" ]]; then
 
-    # Nếu gặp <script> thì bắt đầu bỏ qua
-    /<script[ >]/ {
-        skip=1
-        next
-    }
+      echo "🔎 Phát hiện script nằm sau </html> → Đang xử lý..."
 
-    # Nếu đang bỏ qua và gặp </script> thì kết thúc bỏ qua
-    skip && /<\/script>/ {
-        skip=0
-        next
-    }
+      TMP_FILE="$(mktemp)"
 
-    # Nếu không nằm trong script thì in ra
-    !skip { print }
+      awk '
+      BEGIN {
+          inscript=0
+          script=""
+      }
 
-    END {
-        # Sau khi in xong toàn bộ file → thêm script mới
-        while ((getline line < scriptfile) > 0)
-            print line
-        close(scriptfile)
-    }
-  ' "$f" > "$TMP_FILE"
+      /<script[ >]/ {
+          inscript=1
+      }
 
-  if [ -s "$TMP_FILE" ]; then
-    mv "$TMP_FILE" "$f"
-    echo "✅ Đã xóa script cũ và chèn script mới"
+      inscript {
+          script = script $0 "\n"
+          next
+      }
+
+      /<\/script>/ && inscript {
+          inscript=0
+          next
+      }
+
+      /<\/body>/ {
+          if (script != "") {
+              printf "%s", script
+              script=""
+          }
+          print
+          next
+      }
+
+      { print }
+      ' "$f" > "$TMP_FILE"
+
+      mv "$TMP_FILE" "$f"
+      echo "✅ Đã di chuyển script vào trước </body>"
+
   else
-    echo "❌ Lỗi xử lý → Không ghi đè"
-    rm -f "$TMP_FILE"
+      echo "⏭ Script đã đúng vị trí hoặc không tồn tại → Bỏ qua"
   fi
 
 done
 
 echo
-echo "Hoàn tất."
+echo "🎯 Hoàn tất."
