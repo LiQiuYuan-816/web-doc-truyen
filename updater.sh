@@ -1,6 +1,8 @@
 #!/bin/bash
 
-echo "Bắt đầu di chuyển script vào trước </body>..."
+SCRIPT_FILE="script.html"
+
+echo "Bắt đầu chèn script vào trước </body>..."
 echo
 
 find stories -mindepth 2 -maxdepth 2 -type f -name "index.html" | while read f; do
@@ -8,53 +10,37 @@ find stories -mindepth 2 -maxdepth 2 -type f -name "index.html" | while read f; 
   echo "========================================"
   echo "📄 File: $f"
 
-  html_line=$(grep -n "</html>" "$f" | tail -1 | cut -d: -f1)
+  # Kiểm tra có </body> không
+  if ! grep -q "</body>" "$f"; then
+      echo "❌ Không có </body> → Bỏ qua"
+      continue
+  fi
+
+  # Kiểm tra đã có script nằm trước </body> chưa
+  body_line=$(grep -n "</body>" "$f" | tail -1 | cut -d: -f1)
   script_line=$(grep -n "<script" "$f" | tail -1 | cut -d: -f1)
 
-  if [[ -n "$html_line" && -n "$script_line" && "$script_line" -gt "$html_line" ]]; then
-
-      echo "🔎 Phát hiện script nằm sau </html> → Đang xử lý..."
-
-      TMP_FILE="$(mktemp)"
-
-      awk '
-      BEGIN {
-          inscript=0
-          script=""
-      }
-
-      /<script[ >]/ {
-          inscript=1
-      }
-
-      inscript {
-          script = script $0 "\n"
-          next
-      }
-
-      /<\/script>/ && inscript {
-          inscript=0
-          next
-      }
-
-      /<\/body>/ {
-          if (script != "") {
-              printf "%s", script
-              script=""
-          }
-          print
-          next
-      }
-
-      { print }
-      ' "$f" > "$TMP_FILE"
-
-      mv "$TMP_FILE" "$f"
-      echo "✅ Đã di chuyển script vào trước </body>"
-
-  else
-      echo "⏭ Script đã đúng vị trí hoặc không tồn tại → Bỏ qua"
+  if [[ -n "$script_line" && "$script_line" -lt "$body_line" ]]; then
+      echo "⏭ Script đã nằm trong </body> → Bỏ qua"
+      continue
   fi
+
+  TMP_FILE="$(mktemp)"
+
+  awk -v scriptfile="$SCRIPT_FILE" '
+  /<\/body>/ {
+      while ((getline line < scriptfile) > 0)
+          print line
+      close(scriptfile)
+      print
+      next
+  }
+  { print }
+  ' "$f" > "$TMP_FILE"
+
+  mv "$TMP_FILE" "$f"
+
+  echo "✅ Đã chèn script vào trước </body>"
 
 done
 
