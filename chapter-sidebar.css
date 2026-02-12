@@ -1,0 +1,287 @@
+/* ===============================
+   SIDEBAR LIBRARY
+   Không ảnh hưởng layout chính
+   =============================== */
+
+/* Nút mở menu */
+.menu-toggle {
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  z-index: 10001;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+  cursor: pointer;
+
+  background: var(--paper-soft);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.menu-toggle:hover {
+  background: #e9ecf3;
+  transform: translateY(-2px);
+}
+
+
+/* Overlay mờ */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(2px);
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease;
+
+  z-index: 10000;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* Sidebar chính */
+.library-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 320px;
+  max-width: 90%;
+
+  background: var(--paper-soft);
+  border-right: 1px solid var(--border);
+
+  box-shadow: 8px 0 24px rgba(0,0,0,0.08);
+
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+
+  z-index: 10002;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.library-sidebar.active {
+  transform: translateX(0);
+}
+
+
+/* Header sidebar */
+.library-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 20px;
+  font-weight: 600;
+  font-size: 16px;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.close-btn {
+  cursor: pointer;
+  font-size: 18px;
+  opacity: 0.7;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.close-btn:hover {
+  transform: rotate(90deg);
+  opacity: 1;
+}
+
+
+/* Ô tìm kiếm */
+#searchInput {
+  margin: 16px 18px 10px;
+  padding: 10px 14px;
+
+  border-radius: 999px;
+  border: 1px solid var(--border);
+
+  font-family: inherit;
+  font-size: 14px;
+
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+#searchInput:focus {
+  border-color: var(--brown);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+
+/* Danh sách truyện */
+#storyList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex: 1;
+}
+
+/* Scrollbar nhẹ */
+#storyList::-webkit-scrollbar {
+  width: 6px;
+}
+
+#storyList::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+
+
+/* Item */
+#storyList li {
+  opacity: 0;
+  transform: translateX(-8px);
+  animation: fadeSlideIn 0.35s ease forwards;
+}
+
+#storyList li a {
+  display: block;
+  padding: 10px 20px;
+
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--ink);
+
+  border-bottom: 1px solid #f1f1f1;
+
+  transition: background 0.2s ease, padding-left 0.2s ease;
+}
+
+#storyList li a:hover {
+  background: #f3f4f6;
+  padding-left: 24px;
+}
+
+
+/* Animation */
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 640px) {
+  .library-sidebar {
+    width: 85%;
+  }
+
+  .menu-toggle {
+    top: 14px;
+    left: 14px;
+  }
+}
+
+/* ===== CHAPTER SIDEBAR ===== */
+
+.chapter-menu-toggle {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 10001;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+  cursor: pointer;
+
+  background: var(--paper-soft);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.chapter-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.25s;
+  z-index: 10000;
+}
+
+.chapter-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.chapter-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 320px;
+  max-width: 90%;
+  height: 100%;
+
+  background: var(--paper-soft);
+  border-left: 1px solid var(--border);
+
+  box-shadow: -8px 0 24px rgba(0,0,0,0.08);
+
+  transform: translateX(100%);
+  transition: 0.3s ease;
+
+  z-index: 10002;
+  overflow-y: auto;
+}
+
+.chapter-sidebar.active {
+  transform: translateX(0);
+}
+
+.chapter-sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+}
+
+#chapterList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#chapterList li a {
+  display: block;
+  padding: 10px 18px;
+  text-decoration: none;
+  color: var(--ink);
+  border-bottom: 1px solid #f1f1f1;
+}
+
+#chapterList li a:hover {
+  background: #f3f4f6;
+}
