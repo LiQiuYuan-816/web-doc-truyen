@@ -1,0 +1,881 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 9</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+<body class="page-chapter">
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Sổ Tay Chăn Nuôi Trúc Mã Của Kinomoto-Kun
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 9</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong8.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong10.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+
+        <p>Touya cùng Đạo gia phù chú</p>
+        <p>Buổi chiều vật lý cơ sở khóa đều ở phòng thí nghiệm, Touya cùng Yukito thu thập thứ tốt ra tới, mới vừa đi đến sân thể dục, Touya liền nghỉ chân ngẩng đầu hướng đỉnh đầu xem.</p>
+        <p>“Cảm giác như là muốn trời mưa bộ dáng.” Yukito lo lắng nói.</p>
+
+        <p>“Sẽ không.” Touya nhìn mây đen quay cuồng trung mơ hồ chớp động lôi quang, “Chỉ là sét đánh mà thôi.”</p>
+
+        <p>“Bất quá, đích xác muốn sớm một chút về nhà.”</p>
+
+        <p>Touya thu hồi tầm mắt, cùng Yukito sóng vai hướng tới phòng học đi đến.</p>
+
+        <p>***</p>
+
+        <p>Vào đêm sau</p>
+
+        <p>Khó được xách Cerberus ra tới, Touya xách theo pháp trượng đứng ở công viên bên cạnh mái nhà, giương mắt nhìn cách đó không xa quay cuồng ở mây đen lôi quang.</p>
+
+        <p>“Bất quá đi sao?” Kero này vẫn là lần đầu tiên có thể nhìn Touya phong ấn thẻ bài Clow, kích động mà nhìn chung quanh.</p>
+
+        <p>Touya lão thần khắp nơi mà nhắm mắt dưỡng thần: “Chờ cái kia tiểu quỷ tới.”</p>
+
+        <p>“A? Cái gì tiểu quỷ?” Kero gần nhất mê thượng đánh điện chơi, ban ngày cũng không có cùng Sakura cùng đi trường học.</p>
+
+        <p>Touya dùng cằm xa xa chỉ hướng thay đổi một thân xiêm y xuất hiện ở công viên một góc Li Syaoran: “Lý gia tiểu quỷ.”</p>
+
+        <p>“Lý gia a. Clow ma pháp kỳ thật là nguyên với phương tây ma pháp cùng phương đông pháp thuật tập hợp, trong đó phương đông kia bộ phận liền tới tự Lý gia.”</p>
+
+        <p>“Lý gia là phương đông nổi danh đạo sĩ nhà, phi thường lợi hại.” Kero phi ở giữa không trung, làm ra một cái trầm tư tư thế, “Nói lên, cái này tiểu quỷ hẳn là xem như Clow hậu bối.”</p>
+
+        <p>“Cho nên, ngươi đang đợi cái gì?” Kero ngược lại hỏi xong toàn không có ra tay ý tứ Touya.</p>
+
+        <p>“Đạo sĩ sao……” Touya giơ tay vuốt ve cằm, rất có hứng thú nói: “Ta xem qua Clow Reed pháp trận, mặt trên có không ít là tiếng Trung chữ Hán, kia nếu là cùng Lý gia có quan hệ, không bằng làm ta nhìn xem Đạo gia thủ đoạn.”</p>
+
+        <p>“Ai?! Nếu là hắn thu phục lôi bài, kia trương thẻ bài Clow nhưng chính là thuộc về cái kia tiểu quỷ!” Kero tức khắc nóng nảy.</p>
+
+        <p>Gần nhất Touya thu phục thẻ bài Clow đại đa số đều là ám thuộc tính, thật vất vả tới một trương nó, bị tiểu quỷ đầu c·ướp đi sao được!</p>
+
+        <p>“Chỉ cần thẻ bài Clow bị phong ấn liền không quan hệ đi.” Touya bình tĩnh nói, “Bất quá nói lên, nếu không ngừng một người có thể phong ấn thẻ bài Clow, vậy ý nghĩa trừ bỏ ngươi, còn có mặt khác khảo nghiệm tới tuyển chọn thẻ bài Clow chủ nhân, ân?”</p>
+
+        <p>“Cái này……” Kero chột dạ mà hướng phía trước bay một đoạn, đưa lưng về phía Touya, không cho hắn nhìn đến chính mình trên mặt chột dạ, “Sao, tóm lại, ngươi thân là Clow ma pháp sử, như thế nào có thể đem thẻ bài Clow chắp tay nhường lại đâu!”</p>
+
+        <p>Dựa theo phía trước cùng Clow Reed còn có nguyệt ước định, ở thẻ bài Clow không có gom đủ, nguyệt không có xuất hiện phía trước —— bất luận là thẻ bài Clow vẫn là phong ấn thú Cerberus, đều không thể đối tuyển định chủ nhân lộ ra về “Cuối cùng thẩm phán” tồn tại.</p>
+
+        <p>Nhưng nếu là Touya nói, không có không thông qua thẩm phán đạo lý đi?</p>
+
+        <p>Kero gãi chính mình cằm, nói thật cũng không có quá nhiều lo lắng.</p>
+
+        <p>Tuy rằng nguyệt thật là cũng không quá dễ dàng tiếp thu thẻ bài Clow tân chủ nhân, nhưng là so với nó, ánh trăng người thủ hộ mới càng là một cái mộ cường gia hỏa.</p>
+
+        <p>Touya như vậy tân chủ nhân, cảm giác hẳn là các mặt đều có thể phù hợp nguyệt điều kiện.</p>
+
+        <p>Bất quá sao……</p>
+
+        <p>Kero thật sâu thở dài, có điểm đau đầu mà cào vài cái đầu.</p>
+
+        <p>Trừ phi nguyệt từ đáy lòng, liền không thể tiếp thu trừ bỏ Clow Reed ở ngoài người trở thành chúng nó tân chủ nhân.</p>
+
+        <p>—— tính, chuyện sau đó lúc sau lại nói.</p>
+
+        <p>Kero thu thập hảo chính mình b·iểu t·ình, xoay người bay đến Touya trước mặt, lần nữa khuyến khích hắn đi đoạt lấy kia trương lôi bài.</p>
+
+        <p>Touya nhìn chằm chằm ở nóc nhà nhảy nhót lung tung Li Syaoran, hỏi: “Hắn giống như lấy lôi bài không có cách nào?”</p>
+
+        <p>Kero nói: “Lý gia thật là sẽ có một ít về thẻ bài Clow tư liệu, nhưng là không có Clow Reed làm phong ấn pháp trượng, muốn thu phục thẻ bài Clow kỳ thật là một kiện thực cố hết sức sự.”</p>
+
+        <p>“Ta không nhìn lầm nói, cái này tiểu quỷ pháp lực thuộc tính thiên lôi, cùng thuộc tính nói, hắn lấy lôi bài đích xác không có quá tốt biện pháp.”</p>
+
+        <p>“Muốn thu phục 『 The Thunder 』, cần thiết muốn cho nó biến trở về lôi thú bộ dáng mới có thể b·ị b·ắt lấy phong ấn. Nhưng là cùng thuộc tính công kích nói, nói chung sẽ chỉ làm 『 The Thunder 』 càng thêm càn rỡ.”</p>
+
+        <p>Trừ phi sử dụng lôi quang ma pháp sư, xa so 『 The Thunder 』 bài trung còn sót lại ma lực cường hãn đến nhiều.</p>
+
+        <p>Kero lắc đầu nói, rồi sau đó nhớ tới cái gì dường như, nháy mắt một giật mình, đối Touya nói: “Chúng ta không phải có 『 The Shadow 』 sao? Dùng này trương bài tới làm 『 The Thunder 』 tự mình công kích là có thể thực dễ dàng.”</p>
+
+        <p>“Ngô, kia nhiều không thú vị?” Touya như suy tư gì mà nhìn chằm chằm Li Syaoran động tác cuối cùng nhìn vài lần, ngoài miệng nói như vậy, lại từ trong túi lấy ra 『 The Shadow 』 bài.</p>
+
+        <p>Kero vì Touya tâm khẩu bất nhất mắt trợn trắng, kết quả giây tiếp theo liền trơ mắt nhìn Touya phát động 『 The Shadow 』 bài hoàn toàn không để ý tới tàn sát bừa bãi 『 The Thunder 』, ngược lại hướng tới Li Syaoran lặng yên tiềm hành qua đi.</p>
+
+        <p>“Ngươi làm gì?!”</p>
+
+        <p>Touya giơ tay tiếp được 『 The Shadow 』 bài từ Li Syaoran trên người sờ trở về phù chú, cầm ở trong tay quan sát trong chốc lát, xách theo pháp trượng đi ra bóng ma, xoay người mấy cái nhảy lên ở Li Syaoran thân trước đứng yên.</p>
+
+        <p>Li Syaoran căng chặt mặt, nhìn về phía thân cao có chút cảm giác áp bách Touya.</p>
+
+        <p>—— người này hiện tại lại đây, là tới cười nhạo hắn sao!</p>
+
+        <p>Dựa theo chính mình nhìn đến Li Syaoran thủ pháp cùng ma lực vận hành quỹ đạo, Touya lấy ra vừa rồi từ Li Syaoran kia được đến phù chú, huy động pháp trượng, giơ tay chính là trông mèo vẽ hổ một cái triệu lôi thuật.</p>
+
+        <p>“Lôi đế đưa tới, cấp tốc nghe lệnh!”</p>
+
+        <p>Li Syaoran đôi mắt nháy mắt trừng lớn, Touya bên người phi Cerberus cũng là trợn mắt há hốc mồm.</p>
+
+        <p>Lôi quang kích động gian, một cái thật lớn lôi long từ phù chú bên trong rít gào mà ra, hướng tới mây đen bên trong quay cuồng 『 The Thunder 』 một cái đuôi trừu qua đi.</p>
+
+        <p>Ma lực chạm vào nhau, kiêu ngạo 『 The Thunder 』 thực mau hóa thành nguyên hình không cam lòng mà rít gào, nhưng lại bị càng thêm kiêu ngạo ương ngạnh lôi long một móng vuốt ấn ở trên mặt đất, cuối cùng chỉ có thể trương đại miệng rống giận lại không thể động đậy.</p>
+
+        <p>Kero: “……”</p>
+
+        <p>Li Syaoran: “……”</p>
+
+        <p>Touya đi qua đi, ngồi xổm xuống thân hướng tới lôi thú vươn tay.</p>
+
+        <p>Nguyên bản há mồm rít gào lôi thú tức khắc ách thanh, cư nhiên thu nạp quanh thân lôi quang, ủy khuất lại thuận theo cọ hạ Touya lòng bàn tay.</p>
+
+        <p>“Xem ra tính tình lại hư miêu, chỉ cần đánh phục, cũng sẽ thực đáng yêu.” Touya câu môi, quay đầu nhìn về phía Li Syaoran cùng Kero, “Nột?”</p>
+
+        <p>Chính như cùng Kero nói giống nhau, Clow Reed ma pháp trận cùng ma pháp nguyên lý, trong đó có rất lớn một bộ phận đều đã chịu Lý gia pháp thuật ảnh hưởng.</p>
+
+        <p>Trái lại, đã quen thuộc thẻ bài Clow Touya, theo này tuyến đi học Lý gia một ít dễ hiểu pháp thuật, cũng sẽ làm ít công to.</p>
+
+        <p>Kero yên lặng hướng tới Touya phương hướng bay phi, dùng hành động chứng minh chính mình cùng Clow ma pháp sử kiên định một đám.</p>
+
+        <p>Li Syaoran nhìn Touya thu hồi tay lúc sau cả người lần nữa lôi điện vờn quanh, há mồm rít gào lôi thú, b·iểu t·ình cứng lại rồi.</p>
+
+        <p>“Ngươi, ngươi vừa rồi dùng……”</p>
+
+        <p>“Phù chú?” Touya tùy tay dạo qua một vòng trong tay pháp trượng, đem lôi thú cùng lôi long một lần nữa khôi phục thành thẻ bài Clow cùng phù chú bộ dáng.</p>
+
+        <p>Khom lưng nhặt lên trên mặt đất lôi phù còn cấp Li Syaoran, Touya mở miệng nói: “Vừa rồi xem ngươi dùng, liền thử thử, đích xác thực dùng tốt, cảm ơn.”</p>
+
+        <p>Bị nhị độ đả kích Li Syaoran: “.”</p>
+
+        <p>Hoàn toàn không có khi dễ tiểu hài tử chịu tội cảm, Touya thu hồi thẻ bài Clow, ngẩng đầu nhìn mây đen tản ra không trung.</p>
+
+        <p>Đối Li Syaoran, Touya đương nhiên không có gì chán ghét không chán ghét, Sakura duyên phận cùng lựa chọn tự nhiên có Sakura tới kiên định, làm huynh trưởng, hắn chỉ cần xuất hiện ở hẳn là xuất hiện thời điểm, rời khỏi ở muội muội lựa chọn tương lai lúc sau, nhưng đối với thẻ bài Clow cùng cuối cùng đêm trăng tròn thẩm phán ——</p>
+
+        <p>Touya ánh mắt hơi trầm xuống.</p>
+
+        <p>—— hắn không hy vọng còn có điều gọi một cái khác chờ tuyển giả.</p>
+
+        <p>Li Syaoran hít sâu một chút, tiếp nhận Touya đưa qua lôi phù, nghiêm túc nghiêm túc nói: “Tại đây học kỳ sau khi chấm dứt, ta sẽ trở về Hong Kong.”</p>
+
+        <p>Ngụ ý chính là rời khỏi thẻ bài Clow cạnh tranh.</p>
+
+        <p>Lần này đến phiên Touya sửng sốt một chút.</p>
+
+        <p>Li Syaoran đem trong tay kiếm thu hồi phía sau vỏ kiếm: “Lý gia kỳ thật cũng không bắt buộc nhất định phải từ chúng ta thu hồi thẻ bài Clow, chỉ là xác định trưởng bối sở lưu lại ma pháp sẽ không nguy hại vô tội.”</p>
+
+        <p>“Nếu Clow ma pháp sử chờ tuyển giả ma lực không đủ hoặc là không đáng phó thác nói, Lý gia sẽ đem hết toàn lực đoạt lại thẻ bài Clow.”</p>
+
+        <p>Li Syaoran banh mặt, ngẩng đầu cùng Touya bốn mắt nhìn nhau: “Tuy rằng ngươi rất mạnh, nhưng là ở trong khoảng thời gian này ta như cũ sẽ nhìn chăm chú ngươi, nếu ngươi dùng thẻ bài Clow đi làm một ít không tốt sự ——”</p>
+
+        <p>“Ta tuyệt đối, tuyệt đối, sẽ không đứng nhìn bàng quan.”</p>
+
+        <p>Tác giả có chuyện nói:</p>
+
+        <p>Về Syaoran ở đối mặt ma pháp sử là Sakura cùng Touya khi, bất đồng thái độ cùng phản ứng.</p>
+
+        <p>Kỳ thật Syaoran ng·ay từ đầu nhằm vào Sakura không phải bởi vì chính mình cũng muốn tranh đoạt thẻ bài Clow, mà là cảm thấy thu thập thẻ bài Clow rất quan trọng, mà ngây thơ Sakura cũng không có trở thành Clow ma pháp sử năng lực, như vậy ở đối mặt thực lực nghiền áp Touya khi, thái độ khẳng định không phải là giống nhau lạp ~</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong8.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong10.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "so-tay-chan-nuoi-truc-ma-cua-kinomoto-kun";
+const NOVEL_TITLE = "Sổ Tay Chăn Nuôi Trúc Mã Của Kinomoto-Kun";
+const CHAPTER_TITLE = "Chương 9";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+
+});
+</script>
+</body>
+</html>

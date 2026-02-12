@@ -1,0 +1,881 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 22</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+<body class="page-chapter">
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Sổ Tay Chăn Nuôi Trúc Mã Của Kinomoto-Kun
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 22</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong21.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong23.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+
+        <p>Ngày 12 tháng 7 Chủ Nhật, là Seijou cao trung kỷ niệm ngày thành lập trường, ở thứ bảy thời điểm Sakura liền ở vòng quanh Touya chuyển.</p>
+        <p>Năm nay Sakura cũng không có từ Touya trong tay bắt được phiếu, mỗi lần muốn nói cái gì thời điểm, xú ca ca luôn là sẽ đánh trống lảng.</p>
+        <p>Yukito buổi chiều ở nhà quét tước đình viện khi gặp được đi ngang qua Sakura, nghe Sakura nhéo nắm tay có điểm ủy khuất tiểu cáo trạng sau, trên mặt toát ra suy tư: “A…… Xem ra kịch nói sự, Touya thật sự thực để ý a.”</p>
+        <p>“Ai? Nói cái gì kịch?” Sakura tức khắc hai mắt mạo ngôi sao, “Là Yukito ca ca tham diễn kịch nói sao.”</p>
+        <p>“Sao, tuy rằng ta cũng có tham diễn, bất quá so ra kém Touya vai chính biểu diễn là được……” Yukito trong ánh mắt hiện lên bỡn cợt, đưa cho Sakura một trương văn hóa tế khoán, “Nhạ, cái này cho ngươi, cùng các bằng hữu cùng nhau tới chơi đi.”</p>
+        <p>“Hảo!!”</p>
+        <p>Ô ô ô, quả nhiên là Yukito ca ca nhất ôn nhu tốt nhất, không giống nào đó xú ca ca! Hừ!!</p>
+        <p>***</p>
+        <p>Kỷ niệm ngày thành lập trường ngày đó · Seijou cao trung · kịch nói xã</p>
+        <p>Kịch nói xã hậu trường, Touya đang ở phùng cô bé lọ lem trên váy mụn vá, bên cạnh đồng học thường thường sẽ lấy tới yêu cầu may vá sửa chữa đồ vật cầu Touya, Touya cũng luôn là thực đáng tin cậy mà tiếp nhận tới dùng nhanh nhất tốc độ xử lý tốt.</p>
+        <p>“Oa, Kinomoto đồng học thật sự quá lợi hại!”</p>
+        <p>So với Yukito văn nhã ôn hòa, Touya hình tượng nhất quán đều là khốc soái khốc soái vận động hệ, thình lình ở trường học bày ra ra “Hiền huệ nhân thê” một mặt, rước lấy không ít nữ sinh vây xem.</p>
+        <p>Không có biện pháp, bộ dáng này ngoài lạnh trong nóng nam sinh, thật sự là quá mức hấp dẫn người.</p>
+        <p>“Kinomoto nhất định có thể trở thành một cái hảo lão công.”</p>
+        <p>Touya trong tay động tác không ngừng, nhớ tới người nào đó, cười hạ: “A, sẽ đi.”</p>
+        <p>“A a a, loại cảm giác này!!” Hai cái tiểu nữ sinh bị manh đến gương mặt đỏ bừng, mới vừa muốn nói gì, liền nghe bên cạnh khác một người nữ sinh ánh mắt lập loè thử mở miệng .</p>
+        <p>“Kinomoto đồng học vì Tsukishiro đồng học may quá cái gì lễ vật sao?”</p>
+        <p>Ai .?!</p>
+        <p>Hai nữ sinh tức khắc sửng sốt, bên cạnh xem náo nhiệt nghe lén kịch nói xã thành viên cũng không khỏi bát quái lại tò mò ánh mắt nhìn qua.</p>
+        <p>Touya xả đoạn đánh quá kết đầu sợi, nhàn nhạt nói: “Yuki nói, muốn nhiều ít đều có.”</p>
+        <p>“A a a a quả nhiên!! Ta cắn tới rồi .!!” Cái kia hỏi chuyện nữ sinh đột nhiên bụm mặt, kích động chạy xa.</p>
+        <p>Cách đó không xa, kịch nói xã xã trưởng dung tử cũng nghe đến này đoạn đối thoại, trong mắt không khỏi hiện ra ảm đạm.</p>
+        <p>Liền ở gần nhất, cảm giác Kinomoto cùng Tsukishiro đồng học chi gian không khí…… Tựa hồ trở nên không giống bình thường lên.</p>
+        <p>Như vậy rõ ràng tới gần cùng thiên vị, khiến cho nàng nguyên bản muốn được ăn cả ngã về không nói ra thông báo, đều trở nên không hề ý nghĩa lên.</p>
+        <p>“Ai ai ai, đi mau! Sân bóng rổ bên kia, Tsukishiro đồng học hảo soái a!!”</p>
+        <p>“Nghe nói là vì muội muội nhìn trúng thú bông, một mình đấu bóng rổ xã quầy hàng đâu!”</p>
+        <p>Phi kịch nói xã thành viên, chỉ là lại đây tham quan các nữ sinh nghe thấy cái này, tức khắc hướng tới bên ngoài chạy tới.</p>
+        <p>“Ô ô ô soái đã chết! Tsukishiro thật là hoàn mỹ vương tử loại hình!”</p>
+        <p>“Đích xác…… So với quá mức khốc Kinomoto, Tsukishiro nói……”</p>
+        <p>“Ai nha ai nha, các ngươi hai cái thật đúng là chính là có thể làm nổi bật a.” Touya bên người nam sinh buông một cái đại thùng giấy tử, ngồi dưới đất hoãn khẩu khí.</p>
+        <p>Nam sinh thân thể một oai, để sát vào Touya: “Bất quá nói lên, ngươi cùng Tsukishiro đến bây giờ đều vẫn luôn chưa từng có bạn gái, cũng là kiện thực hiếm lạ sự.”</p>
+        <p>Có chút bát quái không chỉ là nữ sinh chi gian, nam sinh kỳ thật sẽ đối cạnh tranh đồng tính càng thêm để ý.</p>
+        <p>“Cho nên, có phải hay không có yêu thích người?” Nam sinh biểu tình thần thần bí bí mà hạ giọng dò hỏi.</p>
+        <p>“A, có.” Touya đứng lên, mặt vô biểu tình mà run run trong tay xách theo đại mã váy.</p>
+        <p>“Ân?! Thật sự có? Là ai?!” Nam sinh tức khắc chi lăng lên.</p>
+        <p>“Người ta thích……” Touya đem váy thu vào đạo cụ cái rương, vỗ vỗ nếp uốn giáo phục quần, “Lúc này, hẳn là ở sân bóng rổ đi.”</p>
+        <p>Nam sinh sửng sốt một chút, đại não bay nhanh chuyển động phân tích một cái chớp mắt, hít hà một hơi: “Kinomoto thích nữ sinh cư nhiên thích Tsukishiro sao?!”</p>
+        <p>Này sẽ ở sân bóng rổ kia chẳng phải là đang xem Tsukishiro chơi bóng chơi soái sao!</p>
+        <p>Như vậy muốn tốt huynh đệ cư nhiên thích cùng cá nhân gì đó . đại tin tức! Kích thích!!</p>
+        <p>Touya vô ngữ mà liếc mắt hưng phấn phía trên nam sinh, chân dài bước ra, lười đến lại nói, nói sang chuyện khác nói: “Đi rồi, đạo cụ kho hàng bối cảnh còn không có dọn lại đây.”</p>
+        <p>“Ha? Hiện tại liền đi sao? Làm ta lại nghỉ ngơi một chút đi .”</p>
+        <p>……</p>
+        <p>Yukito không có gia nhập trường học xã đoàn, nhưng là đủ loại ngoại viện nhưng thật ra rất nhiều, kỷ niệm ngày thành lập trường cùng ngày hắn cũng bị rất nhiều địa phương kêu đi hỗ trợ, thẳng đến kịch nói sắp bắt đầu diễn trước mới đến sân vận động.</p>
+        <p>Touya nhiều hiểu biết Yukito a, ở nhìn đến người này tiến vào trong nháy mắt dao động ánh mắt lúc sau, hắn buông trong tay váy, thở dài, dụng ý liêu bên trong ngữ khí khô cằn nói: “Sakura tới?”</p>
+        <p>“Tới.” Yukito buồn cười hai tiếng, “Ta mang các nàng đi đến sân vận động ngồi xuống.”</p>
+        <p>Nàng…… Nhóm.</p>
+        <p>Touya nheo mắt: “Là Sakura cùng Daidouji?”</p>
+        <p>“Còn có Lý quân nga.”</p>
+        <p>Touya đem trong tay đạo cụ phịch một tiếng đè dẹp lép thành một quán bọt biển.</p>
+        <p>Từ trước thời điểm hắn không để bụng Lý gia tiểu quỷ nhìn đến trận này kịch nói, nhưng là hiện tại……</p>
+        <p>“A a a a Kinomoto ngươi buông tay! Đây chính là phía trước muốn đặt ở trên mặt đất quan trọng đạo cụ!!”</p>
+        <p>Bên cạnh nghe được thanh âm kịch nói xã thành viên vẻ mặt hoảng sợ mà phác lại đây, đẩy Touya hướng cửa đi.</p>
+        <p>“Ngươi không cần đứng ở này! Mau đi đổi váy, đợi lát nữa còn muốn hoá trang đâu!”</p>
+        <p>Yukito nghẹn cười động tác đã không chút nào che giấu, bả vai đều ở một tủng một tủng run rẩy.</p>
+        <p>“Còn có Tsukishiro! Ngươi quần áo thay đổi sao? Tiên nữ giáo mẫu lên sân khấu cũng ở thực dựa trước!”</p>
+        <p>“Phốc…… Khụ, phốc, ta lập tức liền đi ha ha ha ha .”</p>
+        <p>Touya lạnh mặt nắm này chỉ Yuki-Usagi, sải bước hướng tới phòng thay quần áo phương hướng đi đến.</p>
+        <p>Touya sắm vai nhân vật là cô bé lọ lem, lên sân khấu thời điểm váy thật sự là hảo đổi cực kỳ, chẳng qua .</p>
+        <p>Yukito đầu từ thay quần áo gian hai mảnh bố màn trung gian chui ra tới, cười tủm tỉm mà nhìn về phía Touya: “Touya, muốn hay không ta hỗ trợ? Nghe lời kịch xã nữ sinh nói, như vậy váy khóa kéo giống như rất khó chính mình kéo lên bộ dáng.”</p>
+        <p>Touya quần áo cởi hơn phân nửa, chocolate sắc cơ bắp lẳng lặng ngủ đông ở gầy nhưng rắn chắc thân hình phía trên, muốn xuyên váy động tác nửa vời mà tạp ở kia, tạp mang giống nhau quay đầu nhìn chằm chằm Yukito.</p>
+        <p>Yukito vẫn là cười tủm tỉm bộ dáng, một bàn tay cũng từ đầu phía dưới vói vào tới, trong tay cầm Touya quên mang đi vào cô bé lọ lem tạp dề: “Còn có cái này nga.”</p>
+        <p>Touya khóe miệng vừa kéo, bất chấp tất cả: “Vào đi.”</p>
+        <p>Yukito không chút do dự tiến vào, trong lòng ngực còn ôm một khác điều nhìn qua hoa lệ lệ đại váy.</p>
+        <p>“Tiên nữ giáo mẫu váy rất đẹp bộ dáng, chính là có điểm khó xuyên.” Yukito khó xử mà thở dài.</p>
+        <p>“Cho nên nói, ngay từ đầu không phải nói tốt là thanh hoa cá đồ hộp sao, vì cái gì nhất định phải tiên nữ giáo mẫu gì đó……” Yukito thừa nhận, hắn như vậy tới xem Touya phiền toái, chính là bởi vì này hoa lệ lệ tiên nữ váy.</p>
+        <p>Nguyên bản kịch nói xã kịch bản đem tiên nữ giáo mẫu đổi thành thanh hoa cá đồ hộp, Yukito trừu đến thời điểm còn rất vui vẻ, kết quả bị Touya hai ba câu “Kiến nghị” kéo vào nữ trang hàng ngũ.</p>
+        <p>Touya đã kéo hảo váy khóa kéo, cô bé lọ lem váy là xám xịt nhan sắc, mặt trên tràn đầy đại khối mụn vá.</p>
+        <p>Hắn xoay người tới gần Yukito hơi hơi khom lưng, tiến đến Yukito gương mặt biên, cười nhẹ nói: “Bởi vì là Yuki xuyên nói, nhất định sẽ so bất luận kẻ nào đều đẹp.”</p>
+        <p>Cinderella cùng bị bán nữ trang chiếu gì đó, Touya không có thể thay đổi kịch nói xã rút thăm kết quả, liền kéo nào đó thanh hoa cá đồ hộp xuống nước.</p>
+        <p>. đại váy gì đó, muốn xuyên cùng nhau xuyên.</p>
+        <p>“Ngươi……” Yukito thính tai nháy mắt đỏ ba phần, sau đó cúi đầu lựa ra cô bé lọ lem tạp dề nhét vào Touya trong lòng ngực, “Ngươi mau đem tạp dề vây thượng, a, còn có khăn trùm đầu!”</p>
+        <p>Touya duy trì tư thế bất động.</p>
+        <p>Yukito ngẩn người, sau đó ho nhẹ một tiếng, buông trong lòng ngực váy, đem cô bé lọ lem khăn trùm đầu cẩn thận mà cột vào Touya trên đầu, cuối cùng còn không quên chính chính phương hướng.</p>
+        <p>“Cảm ơn.” Touya đứng dậy, sau đó nhắc tới Yukito hoa lệ tiên nữ váy trước sau nghiên cứu một chút, nhướng mày nói, “Ta giúp ngươi đổi?”</p>
+        <p>……</p>
+        <p>“Kinomoto ca ca cùng Tsukishiro ca ca kịch nói là sau tiết mục đâu.” Tomoyo nhìn trong tay tiết mục đơn, đối bên cạnh Sakura nhỏ giọng nói.</p>
+        <p>“Ân……”</p>
+        <p>Sakura ngồi ở Tomoyo cùng Syaoran trung gian, không biết như thế nào, từ đi vào sân vận động, tổng cảm thấy có loại rất kỳ quái cảm giác.</p>
+        <p>Syaoran hỏi: “Làm sao vậy?”</p>
+        <p>Sakura vội vàng xua tay: “Không có gì không có gì, chính là cảm giác giống như có thứ gì giống nhau…… Có thể là ánh đèn ảo giác đi.”</p>
+        <p>“Sau tiết mục nói, chính là cái này dương cầm độc tấu lúc sau?”</p>
+        <p>Tomoyo cười nói: “Đối nga, xem tiết mục đơn nói, hình như là kịch nói 《 cô bé lọ lem 》.”</p>
+        <p>Hôi, cô bé lọ lem……</p>
+        <p>Sakura trên mặt biểu tình đọng lại một chút.</p>
+        <p>Nàng nhớ rõ, năm trước thời điểm, nguyên bản ca ca trừu đến công chúa Bạch Tuyết, nhưng còn hảo có nữ sinh nguyện ý đổi nhân vật, cuối cùng nói là sắm vai rừng rậm đại thụ.</p>
+        <p>Kết quả nói tốt đổi nhân vật nữ đồng học lâm thời ra ngoài ý muốn, cuối cùng xuất hiện ở trên đài công chúa Bạch Tuyết vẫn là cái lại cao lại cường tráng hơn nữa xú mặt thật không tốt chọc “Công chúa Bạch Tuyết”.</p>
+        <p>Năm nay cô bé lọ lem nói, nhà mình xú ca ca cái loại này vai chính rút thăm thể chất, nên sẽ không lại……</p>
+        <p>Đúng lúc này, màu đỏ màn che rơi xuống, ngắn ngủi một phút sau, màn che lần nữa dâng lên, cao lớn chocolate màu da Cinderella mặt vô biểu tình bò trên mặt đất, cũ nát váy dài làn váy phô trên mặt đất.</p>
+        <p>Sakura sau đầu tức khắc treo lên mồ hôi như hạt đậu: “……”</p>
+        <p>“Là Kinomoto .!!!” Sân vận động nữ sinh hét lên.</p>
+        <p>Sakura cười gượng hai tiếng, gắt gao cúi đầu, thật sự là nhìn không được Touya phiên bản cô bé lọ lem.</p>
+        <p>Chỗ ngồi bên cạnh Syaoran còn lại là bị chấn động đến sau một lúc lâu nói không ra lời, nghe trên đài cô bé lọ lem khô cằn không hề cảm tình đáng nói lời kịch, đã từng cái kia uy phong lẫm lẫm Clow ma pháp sử hình tượng phảng phất không tiếng động nứt ra rồi một đạo khe hở.</p>
+        <p>Hắn nói lắp một chút: “Ca ca ngươi…… Còn rất, rất…… Toàn năng……”</p>
+        <p>Sakura lúng túng nói: “Ân, bởi vì ca ca cùng Yukito ca ca tương đối được hoan nghênh duyên cớ, cho nên xã đoàn cùng lớp tiết mục giống nhau đều sẽ làm cho bọn họ tham gia.”</p>
+        <p>“Bất quá Kinomoto ca ca nói, đích xác chính là thực toàn năng bộ dáng.” Tomoyo ngẩng đầu làm tự hỏi trạng, “Lại là học bá, lại là bóng đá xã vương bài, sẽ nấu nướng, còn có may, sẽ đánh rất nhiều công…… Tổng cảm giác rất lợi hại a.”</p>
+        <p>Khi nói chuyện, trên đài kịch bản đã qua đệ nhất mạc.</p>
+        <p>Cinderella bị tam cái cao to thế vai mẹ kế kế tỷ khi dễ đến không hề có sức phản kháng, đang ngồi trên sàn nhà mặt vô biểu tình, dùng vẻ mặt tưởng đao người biểu tình trong miệng ô ô diễn khóc thút thít.</p>
+        <p>Bỗng nhiên một đạo quang đánh tới sân khấu bên trái, hoa lệ tiên nữ váy cùng với ôn nhu thanh âm lên sân khấu, màu xanh băng thiển sa đại làn váy ở ánh đèn hạ chớp động buling quang, màu bạc tóc ngắn tiên nữ giáo mẫu sau lưng còn cõng trong suốt tinh linh cánh.</p>
+        <p>“Là Tsukishiro!! Thiên a thật sự quá đẹp!!”</p>
+        <p>“Ta liền nói này bộ váy nhất định thích hợp Tsukishiro!”</p>
+        <p>“Ha ha ha ha cũng không biết bọn họ là như thế nào thuyết phục Tsukishiro đồng học đáp ứng xuyên?”</p>
+        <p>“Cái này ta biết! Tsukishiro đồng học tự mình cấp Kinomoto đồng học cũng tuyển một bộ vũ hội váy đâu!”</p>
+        <p>Chung quanh hưng phấn lại đè thấp khe khẽ nói nhỏ thanh truyền đến, Sakura cùng Syaoran dại ra mà nhìn sân khấu, bị chấn động mà nói không ra lời.</p>
+        <p>“Ai nha! Như vậy cánh tài liệu ta cũng hữu dụng quá đâu.” Tomoyo đột nhiên mở miệng.</p>
+        <p>“Cái gì?” Sakura nhìn về phía Tomoyo.</p>
+        <p>Tomoyo phủng mặt, vẻ mặt đắm chìm ở chính mình vui sướng trung biểu tình: “Ta vẫn luôn tưởng nếu Sakura nào một ngày có thể mặc vào ta thân thủ làm quần áo sẽ nhiều đáng yêu, cho nên bất tri bất giác thiết kế rất nhiều đâu ～ trong đó có một bộ chính là tinh linh thiếu nữ nga! Cánh cùng Tsukishiro ca ca trên người chính là cùng khoản đâu.”</p>
+        <p>“Như vậy sao, ha…… Ha ha……” Sakura cười gượng hai tiếng.</p>
+        <p>Nhưng vấn đề là, như là như vậy khoa trương quần áo, trừ bỏ sân khấu kịch, cũng không có cơ hội khác xuyên đi?</p>
+        <p>“Ta đáng thương Cinderella a, xin hỏi ngươi có cái gì nguyện vọng muốn thực hiện đâu?” Yukito trong tay cầm ma pháp bổng, ở Touya trước mặt cười múa may.</p>
+        <p>Touya nguyên bản banh biểu tình bởi vì Yukito làm quái suýt nữa phá công, nhưng tốt xấu còn nhớ rõ lời kịch, liền tiếp tục dùng không hề cảm tình cứng nhắc ngữ khí nói: “Ta muốn đi vũ hội ô ô ô, nhưng là không có lễ phục cùng xe ngựa, ô ô ô.”</p>
+        <p>“Ai nha, như vậy mỹ lệ lại đáng yêu Cinderella, cũng cùng thế tục nữ hài tử giống nhau, muốn gả cho vương tử sao?”</p>
+        <p>Yukito cười tủm tỉm mà nói, dùng bất đắc dĩ lại tiếc nuối biểu tình lắc đầu thở dài.</p>
+        <p>Touya: “?”</p>
+        <p>Kịch bản có câu này lời kịch?</p>
+        <p>Nhưng ngay sau đó, Yukito lời kịch lại về tới quỹ đạo: “Hảo đi, làm ngươi tiên nữ giáo mẫu, ta đương nhiên muốn thực hiện ta đáng yêu Cinderella nguyện vọng.”</p>
+        <p>Yukito trên tay ma trượng vung lên, ma trượng cơ quan nhỏ tế lóe tán phấn bay ra, dừng ở hai người trên người.</p>
+        <p>Đúng lúc này, Touya cùng Yukito đồng thời một đốn.</p>
+        <p>Đây là . thẻ bài Clow hơi thở?</p>
+        <p>Hoa mỹ linh quang cùng ma lực bao bọc lấy Touya thân thể, ngại với dưới đài người xem, Touya chẳng sợ biết là thẻ bài Clow đang làm trò quỷ cũng không có cách nào, kiềm chế không ngừng nhảy lên mí mắt, thân hình căng chặt thời khắc chuẩn bị bảo vệ Yukito.</p>
+        <p>Nhưng là này trương thẻ bài Clow tựa hồ cũng không có quấy rối ý tứ, nó chỉ là .</p>
+        <p>Ma lực quang mang tan hết, nguyên bản trên đài cao lớn sa sút cô bé lọ lem lắc mình biến hoá, trên người váy đã biến thành tầng tầng lớp lớp hoa lệ vô cùng công chúa vũ hội bánh kem váy, ngay cả thâm màu nâu ngày thường có vẻ kiệt ngạo khó thuần tóc ngắn cũng thuận theo mà cuốn thành bánh kem cuốn tạo hình.</p>
+        <p>Yukito nhìn Touya đỉnh đầu vương miện, cùng với tóc mặt sau lộ ra hai cái giác giác hồng nhạt nơ con bướm, lại nhìn nhìn ở Touya bên tai cùng cổ gian rực rỡ lấp lánh đá quý thu thập, chớp chớp mắt.</p>
+        <p>Oa nga ～!</p>
+        <p>Này so với hắn tuyển cấp Touya váy còn muốn xinh đẹp không ít, chính yếu chính là, đồ trang sức trang sức cư nhiên vẫn là nguyên bộ.</p>
+        <p>“Nga, ta Cinderella, ngươi thật sự quá đẹp.” Yukito ca ngợi ngữ khí rất là chân thành.</p>
+        <p>Mặt vô biểu tình Touya: “.”</p>
+        <p>Hắn khô cằn ứng câu: “Cảm ơn ngươi, ta hảo tâm tiên nữ giáo mẫu.”</p>
+        <p>Nếu là cho hắn biết là nào trương thẻ bài Clow đang làm trò quỷ .</p>
+        <p>“Như vậy, này liền đi gặp ngươi tâm tâm niệm niệm vương tử đi, ta Cinderella.”</p>
+        <p>Theo Yukito thở dài uyển chuyển thanh âm, sân khấu thượng màn che chậm rãi rơi xuống.</p>
+        <p>Màn che vừa ra hạ, Touya liền phải duỗi tay đi bắt thẻ bài Clow tinh linh nơi địa phương, lại bị trên người trói buộc quần áo trói buộc, dẫn tới kia đạo quang mang đánh chuyển phiêu đãng đi hậu trường, biến mất trong bóng đêm.</p>
+        <p>“Kinomoto, Tsukishiro! Mau xuống dưới!” Một khác đầu kịch nói xã đồng học hạ giọng hướng tới trên đài hai người liều mạng vẫy tay.</p>
+        <p>Yukito nắm lấy Touya cánh tay, thấp giọng nói: “Hình như là không có ác ý tinh linh, trước cố tiết mục đi, người ở đây quá nhiều.”</p>
+        <p>Sân khấu phía dưới, Sakura biểu tình đã bị sang đến chỗ trống, trong đầu tất cả đều là ăn mặc hoa lệ hồng nhạt bánh kem váy chocolate sắc cô bé lọ lem.</p>
+        <p>Biết thẻ bài Clow tồn tại Syaoran lại là rùng mình.</p>
+        <p>Vừa rồi làm Kinomoto ca ca nháy mắt thay đổi một bộ quần áo còn không cho người xem khả nghi ma lực…… Là thẻ bài Clow?</p>
+        <p>Sân khấu màn che lần nữa kéo ra, sắm vai vương tử kịch nói xã xã trưởng dung tử đứng ở sân khấu trung ương, dùng đầy nhịp điệu ngữ khí nói về chọn lựa tân nương vũ hội.</p>
+        <p>Touya mộc mặt xách theo dong dài lại phiền toái làn váy bước nhanh đi lên sân khấu, có lệ mà tiếp thượng cô bé lọ lem lời kịch.</p>
+        <p>Trận này kịch nói sở hữu nhân vật đều là thế vai, cũng bởi vậy, Kinomoto cùng dung tử khiêu vũ thời điểm, dưới đài cũng truyền đến nghị luận sôi nổi thanh âm.</p>
+        <p>“Kinomoto cùng dung tử nói, cũng thực phối hợp a!”</p>
+        <p>“Một cái là mặt lãnh tâm nhiệt bóng đá xã vương bài, một cái là trợ giúp đại gia thực chịu tôn kính kịch nói xã xã trưởng, hai người thật là xứng đôi đâu.”</p>
+        <p>Touya ở khiêu vũ khoảng cách tầm mắt đảo qua sân khấu bên cạnh, ở sân khấu bên phải thấy được đứng ở chỗ tối Yukito.</p>
+        <p>Ở đối thượng Yukito đôi mắt kia một cái chớp mắt, Touya mí mắt tức khắc lại là nhảy dựng.</p>
+        <p>Loại cảm giác này .</p>
+        <p>Lúc này, kịch nói cốt truyện đã tiến hành đến vương tử cầu ái, dung tử quỳ một gối xuống đất thâm tình nói: “Cinderella a, ta muốn cùng ngươi kết hôn, như vậy làm bạn cả đời, ngươi có thể vì ta lưu lại sao?”</p>
+        <p>Yukito cười tủm tỉm mà nhìn sân khấu phía trên, bên người là hai cái đang ở ra sức phiến băng khô nam sinh.</p>
+        <p>Thì ra là thế, dung tử cũng thích Touya a.</p>
+        <p>Rốt cuộc chân chính thích một người thời điểm, đôi mắt tàng không được tinh quang, trên mặt giấu không được thấp thỏm, trong lòng nhịn không được để ý.</p>
+        <p>“Thân ái Cinderella, ta……”</p>
+        <p>Vương tử tay dán cô bé lọ lem gương mặt, chính muốn nói gì, Touya mày đột nhiên vừa nhíu, túm dung tử cánh tay về phía sau nhảy, lót ở dung tử dưới thân thật mạnh ngã ở trên sàn nhà.</p>
+        <p>Hai người nguyên bản nơi đạo cụ đài cao ầm ầm sập, khiến cho trên đài dưới đài chợt khởi kinh hô.</p>
+        <p>“Kinomoto-kun!” Dung tử đại kinh thất sắc.</p>
+        <p>Yukito cũng không màng chính mình váy không có phương tiện, trước tiên vọt tới Touya bên người, vội vàng nói: “Touya! Ngươi không sao chứ? Có hay không bị thương?”</p>
+        <p>“Ta không có việc gì.”</p>
+        <p>Touya trở tay nắm lấy Yukito tay, ngón tay ở Yukito trong lòng bàn tay cắt vài đạo, nhìn Yukito đôi mắt lắc lắc đầu ý bảo chính mình không có việc gì.</p>
+        <p>Vốn đang muốn nói cái gì dung tử đôi mắt khó nén mất mát mà rũ mắt, từ Touya trên người lên, đứng ở bên cạnh khom lưng nói: “Vừa rồi, đa tạ Kinomoto đồng học!”</p>
+        <p>“Không quan hệ, xã trưởng ngươi vẫn là trước xử lý một chút đạo cụ đi.” Touya cùng Yukito giao nắm tay vẫn luôn không có buông ra.</p>
+        <p>Vương tử trang điểm dung tử vội vàng phục hồi tinh thần lại, vội vàng hướng tới sân khấu sau chạy tới.</p>
+        <p>Sân khấu màn che ở vừa rồi xảy ra chuyện thời điểm đã kịp thời hàng xuống dưới.</p>
+        <p>Màn che bên ngoài truyền đến khán giả nghị luận sôi nổi thanh âm, mà màn che sau hai người bên người là hoảng loạn quét tước kịch nói xã thành viên.</p>
+        <p>“Ai? Sao lại thế này? Vừa rồi rõ ràng cái này bậc thang chính là vỡ vụn a, như thế nào hiện tại nhìn qua giống như là chỉ là bị túm đổ?”</p>
+        <p>Touya cảm giác được thẻ bài Clow ma lực đã lan tràn bao trùm toàn bộ sân khấu, lần đầu tiên có loại nghiền ngẫm không đến này trương thẻ bài Clow đến tột cùng tưởng muốn làm cái gì mê mang.</p>
+        <p>“Xã trưởng! Cái này đạo cụ không có biện pháp di động!”</p>
+        <p>“Xã trưởng, nơi này cũng là!”</p>
+        <p>Đúng lúc này, Touya thấy sân khấu trên sàn nhà dùng ma lực viết ra một đoạn tự tới.</p>
+        <p>【 cô bé lọ lem ở đối mặt vương tử cầu ái khi, bỗng nhiên ý thức được chính mình trong lòng có người yêu khác, hắn hướng tới không phải vương cung xa hoa sinh hoạt, mà là cái kia ở khốn cảnh trung cấp cho hắn ấm áp người……】</p>
+        <p>Touya: “?”</p>
+        <p>Đồng dạng nhìn đến này đoạn văn tự Yukito: “Ách, thẻ bài Clow…… Cũng thích xem kịch nói?”</p>
+        <p>Touya vô ngữ cực kỳ, kéo kéo trên người váy.</p>
+        <p>Hắn tổng không thể ở không biết khi nào màn che liền sẽ kéo tới thời điểm, từ váy phía dưới móc ra một cây phong ấn pháp trượng, hiện trường biểu diễn một cái phong ấn thẻ bài Clow đi?</p>
+        <p>Quá ngốc.</p>
+        <p>Liền ở hai người do dự là lúc, sân khấu thượng nguyên bản hoảng loạn các bạn học như là bị khống chế giống nhau chậm rãi đi xuống sân khấu, nguyên bản bị phá hư đạo cụ nháy mắt khôi phục, đỏ thẫm màn che chậm rãi kéo ra.</p>
+        <p>Bị bắt bắt đầu diễn Touya: “.”</p>
+        <p>Bỗng nhiên cười ra tiếng tới Yukito: “Giống như rất có ý tứ bộ dáng.”</p>
+        <p>Dung tử lần nữa đi lên sân khấu, giống như là bị khống chế giống nhau, lại một lần nói ra cầu ái lời kịch.</p>
+        <p>Touya xả hạ khóe miệng, nhìn đến bên người vẻ mặt nhìn náo nhiệt Yukito, trong lòng tức khắc trào ra một loại xúc động, bắt lấy Yukito tay, đối trước mặt vương tử cất cao giọng nói: “Vương tử điện hạ, xin thứ cho ta không thể đáp ứng ngài thỉnh cầu!”</p>
+        <p>“Bởi vì ta đến giờ phút này mới hiểu được, trong lòng ta vẫn luôn đều ái một người khác, chỉ là chúng ta là đồng dạng giới tính, cùng thế tục cảm tình cũng không tương đồng, lúc này mới làm ta không có thể thấy rõ chính mình nội tâm!”</p>
+        <p>Dưới đài người xem một mảnh ầm ầm.</p>
+        <p>Trên đài Yukito vẻ mặt ngốc nhiên.</p>
+        <p>Trên đài kia đoạn dùng ma lực viết kịch bản mắc kẹt một cái chớp mắt, sau đó ngay sau đó viết:</p>
+        <p>【 cô bé lọ lem yêu quan tâm làm bạn tại bên người tiên nữ giáo mẫu, chẳng sợ không có vương cung hoa lệ cùng 12 giờ trước công chúa ma pháp, hắn cũng như cũ ái bên người hắn. 】</p>
+        <p>Touya liếc mắt một cái thẻ bài Clow kịch bản, không có chút nào do dự mà xoay người, đôi tay nắm lấy Yukito tay, đối thượng Yukito ngốc lăng lăng hai mắt, ôn thanh nói:</p>
+        <p>“Ta thân ái giáo mẫu đại nhân, ta trước nay đều là cái kia sa sút cô bé lọ lem, chỉ có ngươi nhìn đến quá ta chật vật.”</p>
+        <p>“Cho nên, ta không hề yêu cầu cái gì đêm khuya 12 giờ ma pháp, không nghĩ đi đến vương tử bên người, ta chỉ hy vọng cầu được ngươi cho phép, làm ta vẫn luôn làm bạn ở cạnh ngươi.”</p>
+        <p>Mơ hồ nhận thấy được gì đó Syaoran: “Ách.”</p>
+        <p>Bị chịu chấn động Sakura: “Hảo kỳ quái kịch nói……”</p>
+        <p>Khái tới rồi Tomoyo: “Kinomoto ca ca lời kịch, đột nhiên liền không như vậy không hề cảm tình đâu.”</p>
+        <p>Bên kia, trên đài ma pháp kịch bản còn ở tiếp tục:</p>
+        <p>【 vẫn luôn ở sâu trong nội tâm yêu thích cô bé lọ lem, lại không thể không ngại với hiện thực đem người thương đẩy ra tiên nữ giáo mẫu mắt hàm nhiệt lệ, cuối cùng ở đêm khuya 12 giờ tiếng chuông, cùng người yêu ôm nhau mà hôn. 】</p>
+        <p>Vốn đang bởi vì Touya nói chinh lăng Yukito nhìn đến thuộc về chính mình kịch bản, không phản ứng lại đây dường như đứng ở tại chỗ.</p>
+        <p>Touya ôm lấy Yukito eo làm Yukito đưa lưng về phía dưới đài người xem, khom lưng làm bộ hôn đi xuống.</p>
+        <p>Dưới đài nháy mắt tiếng thét chói tai nổi lên bốn phía, Yukito cũng bị Touya động tác khiếp sợ cứng đờ ở trên đài.</p>
+        <p>Nhưng mà Touya lại không có thật sự hôn đến Yukito môi.</p>
+        <p>Hai người chi gian hơi thở tương sai, ấm áp hô hấp đánh vào lẫn nhau mặt bộ da thịt phía trên.</p>
+        <p>Tựa xúc phi xúc, tựa hôn phi hôn.</p>
+        <p>Cảm giác được ma lực kích động, Touya nương Yukito to rộng làn váy cùng hoa lệ tiên nữ mũ đầu sa che đậy, pháp trượng chợt lóe tức thu, đem hiện ra nguyên hình thẻ bài Clow thành công phong ấn.</p>
+        <p>Touya liếc mắt một cái thẻ bài Clow tạp mặt.</p>
+        <p>. a, nguyên lai là 『 The Create 』 bài sao.</p>
+        <p>……</p>
+        <p>Sân vận động tiết mục toàn bộ sau khi chấm dứt đã là buổi tối, khu dạy học trước trên đất trống đã bậc lửa lửa trại, ngay sau đó chính là kỷ niệm ngày thành lập trường cuối cùng lửa trại vũ hội.</p>
+        <p>Náo nhiệt lửa trại biên, Sakura chạy đến Touya trước mặt, ngẩng đầu dùng ánh mắt kiểm tra rồi một bên Touya, ở xác định Touya không có bị thương lúc sau mới nhẹ nhàng thở ra.</p>
+        <p>“Ca ca, ngươi đều không nói cho ta ngươi tham gia kịch nói!”</p>
+        <p>“…… Không có gì nhưng nói.” Touya một tay cắm túi, khốc khốc mà đứng ở kia.</p>
+        <p>“Cinderella nói, vẫn là thực thích hợp Touya đúng hay không? Tổng cảm giác lần này kỷ niệm ngày thành lập trường ảnh chụp, Touya nhất định sẽ bán tốt nhất.”</p>
+        <p>Yukito cùng Tomoyo còn có Syaoran chậm rãi đi tới.</p>
+        <p>Touya cùng Sakura nghe vậy, hai huynh muội vô ngữ biểu tình không có sai biệt.</p>
+        <p>Chỉ sợ là nghĩ tới sân khấu thượng khủng bố trang phẫn, Sakura cười gượng hai tiếng, Touya mộc mặt nói: “Ta tuyệt đối, tuyệt đối sẽ không làm nhiếp ảnh bộ bán ra như vậy đồ vật!!”</p>
+        <p>Tầm mắt vừa chuyển, Touya cùng vừa lúc nhìn qua Syaoran bốn mắt nhìn nhau.</p>
+        <p>Hừ.</p>
+        <p>Gần nhất nhìn đến này tiểu quỷ số lần rõ ràng biến nhiều, cái này làm cho muội khống Touya nhiều ít có chút khó chịu.</p>
+        <p>Tổng cảm giác đã không có thẻ bài Clow tầng này quan hệ, này tiểu quỷ cùng Sakura khoảng cách cư nhiên so từ trước tới gần đến còn muốn càng mau chút……</p>
+        <p>Chậc.</p>
+        <p>Syaoran ở đối thượng Touya ánh mắt sau, mạc danh trở nên khẩn trương lên, thân mình tức khắc thẳng thắn không ít, xem đến Touya khó chịu chồng lên.</p>
+        <p>Yukito nhìn mắt âm thầm giận dỗi Touya, cười một cái, rồi sau đó khom lưng mời Sakura qua đi lửa trại biên khiêu vũ.</p>
+        <p>Tomoyo tươi cười đầy mặt mà cầm lấy DV bắt đầu chụp Sakura, Touya cùng Syaoran còn lại là một tả một hữu đứng ở Tomoyo bên người, hai người đều nhìn chằm chằm ở lửa trại bên cạnh khiêu vũ một lớn một nhỏ, buồn không ra tiếng.</p>
+        <p>Tomoyo bỗng nhiên lui về phía sau một bước, nguyên bản chỉ quay chụp Sakura cùng Yukito màn ảnh xuất hiện Touya cùng Syaoran thân ảnh.</p>
+        <p>Dịu dàng lại mang theo điểm phúc hắc tiểu cô nương cười nhẹ nói: “Kinomoto ca ca cùng Lý quân biểu tình, thật sự thực tương tự đâu.”</p>
+        <p>Touya cùng Syaoran không hẹn mà cùng liếc nhau, rồi sau đó hai người đồng thời hừ một tiếng, đem mặt bỏ qua một bên đến một bên.</p>
+        <p>Ai muốn cùng người này ( này tiểu quỷ ) giống?!</p>
+        <p>Tomoyo ý cười trên khóe môi càng thêm sung sướng.</p>
+        <p>. ai nha, mọi người đều thực đáng yêu đâu.</p>
+        <p>Bất quá…… Nói lên được hoan nghênh nhất ảnh chụp, hẳn là không phải là Kinomoto ca ca ảnh chụp, mà là……</p>
+        <p>Tomoyo phiên phiên chính mình DV bên trong, nhìn đến từ sân khấu góc độ chụp được hai cái ca ca thân xuyên hoa lệ cung trang váy sai vị hôn môi ảnh chụp, hơi hơi đỏ mặt.</p>
+        <p>Thật tốt đẹp a ～</p>
+        <p>Liền ở lửa trại vũ hội cử hành đến chính thời điểm cao trào, một mảnh lặng yên không một tiếng động hắc ám nháy mắt phô thiên cái ngày mà bao phủ xuống dưới.</p>
+        <p>“Cái gì?” Touya ánh mắt biến đổi.</p>
+        <p>“Cái này hơi thở .” thẻ bài Clow xuất hiện quá mức cao điệu, Syaoran cũng nháy mắt cảm ứng được.</p>
+        <p>Yukito cùng Sakura vũ bộ cũng dừng lại, Sakura nhìn chung quanh bốn phía, nghi hoặc nói: “Như thế nào lửa trại cùng ánh đèn đột nhiên liền dập tắt?”</p>
+        <p>Dày đặc trong bóng tối, Touya bên người mọi người cùng sự vật đều bị nhất nhất cắn nuốt, Syaoran ở bị hắc ám nuốt hết trước thậm chí chưa kịp nói chuyện, nhưng Touya lực chú ý lại đều ở cách đó không xa Yukito cùng Sakura trên người.</p>
+        <p>Yukito đứng ở tại chỗ, cảm giác được Touya xem ra ánh mắt, trong tay nắm Sakura, đối với Touya hơi hơi mỉm cười, biểu tình bình tĩnh trấn định mà cùng Sakura cùng nhau bị hắc ám cắn nuốt.</p>
+        <p>Touya lại biết, chỉ cần có Yukito ở, Sakura liền sẽ không có nguy hiểm.</p>
+        <p>Mà hắn, chỉ cần giải quyết trước mặt này trương gióng trống khua chiêng xuất hiện thẻ bài Clow.</p>
+        <p>Cùng lúc đó, xa ở Kinomoto trạch Cerberus từ trầm mê điện chơi trò chơi một cái giật mình tỉnh lại.</p>
+        <p>Cái này hơi thở cùng cảm giác .</p>
+        <p>Là 『 The Dark 』 bài?</p>
+        <p>Không xong, nó không có đi theo Touya bên người, căn bản không kịp nhắc nhở Touya.</p>
+        <p>『 The Dark 』 bài cùng 『 The Mirror 』 bài giống nhau, là thực đặc thù có cao chỉ số thông minh thẻ bài Clow, hơn nữa dùng thường quy phương pháp căn bản vô pháp phong ấn.</p>
+        <p>Muốn phong ấn 『 The Dark 』, không chỉ có cần nói ra bài tên, còn cần thiết muốn tìm được 『 The Light 』.</p>
+        <p>Có 『 The Dark 』 địa phương liền có 『 The Light 』, này hai trương bài từ sinh ra khởi liền song sinh tương khắc, là yêu cầu cùng nhau phong ấn mới có thể thành công đặc thù thẻ bài Clow!</p>
+        <p>. đồng dạng, đây cũng là hắn cùng nguyệt thủ hạ ma lực cường đại nhất hai trương vương bài.</p>
+        <p>Nồng đậm trong bóng đêm, Touya đứng ở tại chỗ, hắn có thể cảm giác được chính mình trong cơ thể ma lực cũng như là bị hắc ám cắn nuốt giống nhau trở nên đình trệ gian nan, trong lúc nhất thời ngay cả phong ấn pháp trượng đều không có cách nào giải phong.</p>
+        <p>Không lâu trước đây phong ấn 『 The Mirror 』, Touya thực mau phản ứng lại đây không.</p>
+        <p>. này lại là một trương không thể dùng võ lực thu phục, cần thiết đạt tới thẻ bài Clow yêu cầu mới có thể hiện ra nguyên hình đặc thù bài.</p>
+        <p>Cắn nuốt hết thảy hắc ám……</p>
+        <p>Nhớ tới thẻ bài Clow mặt trái ma pháp trận cấu thành, ngày cùng nguyệt đối ứng quang minh cùng hắc ám, đã biết thẻ bài Clow trung có phong, thủy, mà, hỏa tứ đại nguyên tố hai hai phân biệt đối ứng ma pháp trận trung thái dương cùng ánh trăng, cũng phân biệt từ hai cái người thủ hộ chấp chưởng.</p>
+        <p>Như vậy…… Có phải hay không cũng có phân biệt đối ứng thái dương cùng ánh trăng, quang cùng .</p>
+        <p>“『 The Dark 』?” Touya nhẹ giọng nói.</p>
+        <p>Bên người nguyên bản nồng đậm nặng nề hắc ám vặn vẹo ra mỹ lệ ánh sáng, lại ở nháy mắt lại bị hắc ám sở cắn nuốt.</p>
+        <p>Touya lại hình như có sở giác mà cúi đầu nhìn chính mình trong bóng đêm tản ra ánh sáng nhạt đôi tay.</p>
+        <p>Hắn hiện tại hẳn là ở 『 The Dark 』 bài ma lực bao phủ nội, nếu là bởi vì ma lực quan hệ, đồng dạng có được ma lực Yukito, Sakura cùng tiểu quỷ cũng không nên bị ảnh hưởng, chính mình cùng bọn họ khác nhau chỉ có một cái.</p>
+        <p>. thẻ bài Clow.</p>
+        <p>Hắn trên người, có trừ bỏ phong ấn bên ngoài thẻ bài Clow?</p>
+        <p>Có thể trong bóng đêm phát ra quang minh, chỉ có 『 The Glow 』 『 The Firey 』 hoặc là…… Cùng 『 The Dark 』 như hình với bóng, song sinh tương khắc 『 The Light 』.</p>
+        <p>“『 The Light 』?”</p>
+        <p>Touya vừa dứt lời, rực rỡ lóa mắt quang mang từ thân thể hắn trung chậm rãi tróc mà ra, dáng người cao gầy, đầu đội vương miện thẻ bài Clow tinh linh váy áo tung bay hiện thân ở hắn trước mặt, chiếu sáng trước người hắc ám.</p>
+        <p>『 The Light 』 bài toàn thân là không hề tỳ vết thuần trắng sắc, ôn nhu điển nhã nữ tử hình tượng khiến cho nàng nhìn qua giống như là quang quốc gia nữ vương.</p>
+        <p>“Lần đầu gặp mặt, người thừa kế.”</p>
+        <p>『 The Light 』 bài trên mặt hiện ra nhu hòa tươi cười, đoan trang mà hào phóng mà chậm rãi mở miệng.</p>
+        <p>“Từ thẻ bài Clow giải phong kia một khắc khởi, ta đã chịu gần trong gang tấc ma lực hấp dẫn, có thể tạm tồn tại ngài trong lòng, chỉ có đương ma pháp sử nhận thấy được ta tồn tại hơn nữa gọi ra tên gọi, ta mới có thể hiện thân.”</p>
+        <p>“Ngài có viễn siêu thường nhân kiên định cường hãn tâm linh, không sợ hãi hắc ám, không trốn tránh quang minh, này thật sự là một kiện thực chuyện hiếm thấy.”</p>
+        <p>“Ngài hay không nguyện ý trả lời ta một cái hoang mang?”</p>
+        <p>Trước mặt 『 The Light 』 bài cấp Touya cảm giác trừ bỏ bề ngoài thượng đặc thù, trong lòng trí cùng lời nói thượng đã vô hạn tiếp cận với một cái tâm trí thành thục thành niên nhân loại.</p>
+        <p>Ma lực cũng viễn siêu Touya từ trước gặp qua thẻ bài Clow.</p>
+        <p>Chỉ sợ 『 The Light 』 cùng 『 The Dark 』 này hai trương bài, ở thẻ bài Clow trung địa vị đã là bao trùm tứ đại nguyên tố, chỉ khuất cư với Cerberus cùng nguyệt dưới.</p>
+        <p>“Cái gì vấn đề?” Touya thúc thủ đứng ở tại chỗ, cùng 『 The Light 』 tương đối.</p>
+        <p>“Ngài có chân chính sợ hãi sự vật sao?”</p>
+        <p>Touya trả lời không có tự hỏi, càng không có do dự.</p>
+        <p>“Cô độc.” Hắn đứng ở trong bóng tối, ngửa đầu nhìn về phía trước mặt tản ra quang mang thẻ bài Clow, “Ta sợ hãi thủ không được tưởng bảo hộ người, lưu không được tưởng giữ lại chi vật cô độc.”</p>
+        <p>Touya trước nay đều đối chính mình có minh xác quy hoạch, nghĩ muốn cái gì, không nghĩ muốn cái gì, cái gì là quyết không thể từ bỏ quan trọng, cái gì là hẳn là ở thỏa đáng thời điểm buông tay chúc phúc cổ vũ.</p>
+        <p>Hắn sẽ không trốn tránh đã từng chưa từng làm được nắm chặt trong lòng sở ái thất bại . lại tới một lần, tuyệt không sẽ tái phạm tương đồng sai lầm.</p>
+        <p>“Quả nhiên, tựa như ta cảm nhận được giống nhau, ngài có được một viên trong suốt thả cường đại tâm.”</p>
+        <p>『 The Light 』 bài hơi hơi khom lưng, hướng tới Touya hành lễ: “Như vậy, thỉnh ngài lại lần nữa kêu gọi tên của chúng ta đi.”</p>
+        <p>Tên của chúng ta?</p>
+        <p>Touya sửng sốt, chỉ một thoáng hiểu được này trương bài đặc thù chỗ.</p>
+        <p>Quang khởi nguyên với hắc ám, hắc ám cũng dựa vào quang bóng ma mà sinh.</p>
+        <p>Ở Touya gọi ra hai trương bài tên trong nháy mắt, trước mặt quang mang đại thịnh, nguyên bản bên cạnh người hắc ám lại không có bị đuổi đi, mà là ở ánh nắng dưới hiển lộ ra chân chính hình thái.</p>
+        <p>Đồng dạng đầu đội vương miện, toàn thân thuần hắc, ngự tỷ khí chất tinh linh bay tới 『 The Light 』 trước mặt, cùng song sinh tỷ muội lòng bàn tay tương để, thở dài nói: “Rốt cuộc, tìm được ngươi.”</p>
+        <p>……</p>
+        <p>Trong bóng đêm, tóc bạc Yukito dưới chân đột nhiên không tiếng động phác họa ra ma pháp trận, bên người Sakura ở ma lực dưới tác dụng nhắm chặt hai mắt, mày gắt gao nhăn ở bên nhau như là ở cùng cái gì lực lượng chống lại.</p>
+        <p>Yukito nguyên bản rũ tại bên người tay đột nhiên nắm chặt thành quyền, dưới thân liền sắp thành hình ma pháp trận bắt đầu chảy ngược, kim quang ảm đạm dưới lần nữa biến mất ở trong bóng tối.</p>
+        <p>Hắc ám cũng không có lệnh Yukito cảm giác được khủng hoảng cùng bất an, hắn nhìn mắt bên người không có trở ngại Sakura, nâng lên tay phải, chậm rãi bao trùm bên trái ngực.</p>
+        <p>Thần sắc như suy tư gì.</p>
+        <p>……</p>
+        <p>Bên kia, Touya trước người thẻ bài Clow nắm tay, ma lực quang huy ở các nàng chi gian lưu chuyển tương thông.</p>
+        <p>“Đem chúng ta cùng nhau phong ấn đi, ở lúc sau thời gian, chúng ta cũng sẽ làm bạn ở ngài bên người.”</p>
+        <p>“Nếu là ngài nói, chúng ta tin tưởng, cho dù đối mặt thẩm phán chi nguyệt, ngài cũng sẽ không thất bại.”</p>
+        <p>“Như vậy, liền mong ước ngài tại đây tràng lữ đồ trung được như ước nguyện, hạnh phúc Vĩnh An.”</p>
+        <p>Hai trương kim sắc thẻ bài Clow ở ma lực đan chéo trung hóa thành khinh phiêu phiêu bài rơi vào Touya trong tay.</p>
+        <p>Nháy mắt hoảng thần lúc sau, Touya lần nữa trở lại lửa trại vũ hội náo nhiệt trong đám người, cách đó không xa, Yukito nắm Sakura tay đang cùng với đại gia cùng nhau khiêu vũ, chẳng qua Sakura biểu tình có vẻ có chút hoang mang, nhưng thực mau bị Yukito dời đi lực chú ý.</p>
+        <p>Syaoran nhìn mắt trên cổ tay đồng hồ, biểu tình phức tạp nhìn mắt bên người thu hồi thẻ bài Clow nam nhân.</p>
+        <p>Nguyên lai là 『 The Light 』 cùng 『 The Dark 』 này hai trương bài, nhưng là người nam nhân này thu phục như vậy khó giải quyết thẻ bài Clow, cư nhiên chỉ dùng không đến ba phút thời gian……</p>
+        <p>Còn có cái loại này như là tùy thời tùy chỗ đều có thể làm biết trước mộng, trước đó, trừ bỏ Clow Reed, còn chưa từng có người nào có như vậy khủng bố thiên phú.</p>
+        <p>Syaoran thật sâu nhìn chăm chú Touya, sắc mặt biểu tình xanh trắng biến ảo, hảo không xuất sắc.</p>
+        <p>Người này ma lực đến tột cùng tới như thế nào cảnh giới?</p>
+        <p>“Uy, tiểu quỷ, đừng như vậy xem ta.” Touya sườn mặt liếc mắt Syaoran, “Ta sẽ nhịn không được tấu ngươi.”</p>
+        <p>Syaoran cắn răng, trán tức khắc toát ra một cái chữ thập.</p>
+        <p>Hắn muốn thu hồi vừa rồi đánh giá, Kinomoto Touya thật là cái tính cách ác liệt nam nhân!!!</p>
+        <p>“Ngươi biết đến đi.” Syaoran trầm mặc thật lâu, thình lình mở miệng.</p>
+        <p>“Cái gì?” Touya sườn mặt.</p>
+        <p>Syaoran nghẹn hảo một trận, mới ồm ồm nói: “Phong ấn thư chính diện cùng mặt trái đều có ma văn, phân biệt đối ứng thái dương cùng ánh trăng.”</p>
+        <p>“Này liền đại biểu thẻ bài Clow người thủ hộ có hai cái, bọn họ đều có quyết định thẻ bài Clow chủ nhân quyền lợi.”</p>
+        <p>“Nga?” Touya không nghĩ tới này tiểu quỷ cư nhiên sẽ mở miệng nói cái này, bốn bỏ năm lên, xem như ở…… Nhắc nhở hắn?</p>
+        <p>“Cerberus cái gì cũng chưa nói cho ngươi sao?” Syaoran nhíu mày, nghiêm túc biểu tình nói, “Trên người của ngươi ma lực cường đến kinh người, nếu quang ám hai trương bài đều đã thu phục nói, ngươi trong tay thẻ bài Clow hẳn là không kém mấy trương đi?”</p>
+        <p>“Tuy rằng ta không biết một cái khác người thủ hộ là ai, lại sẽ làm ra cái gì, nhưng có thể khẳng định chính là, vị nào tuyệt đối so với Cerberus khó đối phó nhiều.”</p>
+        <p>Lý gia đối Clow Reed ghi lại kỳ thật cũng không nhiều, trừ bỏ Clow Reed đã từng lưu lại về thẻ bài Clow tư liệu bên ngoài, dư lại chỉ là nói bảo quản thẻ bài Clow sách ma pháp từ phong ấn thú Cerberus trông giữ.</p>
+        <p>Mà đối với một cái khác người thủ hộ, lại là giữ kín như bưng, chỉ tự chưa đề, duy nhất chỉ nhắc tới quá đã từng đi theo Clow Reed bên người một cái khác tinh linh, tựa hồ là thực cao ngạo lạnh nhạt không dễ đối phó tính cách.</p>
+        <p>Thẻ bài Clow có dị động lúc sau, Lý gia liền nghiên cứu quá.</p>
+        <p>Y theo Clow Reed phức tạp kín đáo, thích tầng tầng thiết kế bảo đảm kết quả hành sự tác phong tới xem, Cerberus đã có trông giữ thẻ bài Clow tuyển định người thừa kế quyền lợi, như vậy một cái khác người thủ hộ rất có khả năng mới là quyết định cuối cùng thẻ bài Clow thuộc sở hữu khảo nghiệm.</p>
+        <p>Touya nhìn về phía trước lửa trại, cười hạ: “Cảm tạ.”</p>
+        <p>Syaoran bị như vậy một câu nói lời cảm tạ làm cho cả người không được tự nhiên, thô thanh thô khí nói: “Ta mới không phải nhắc nhở ngươi! Dù sao, dù sao nếu ngươi không có thông qua khảo nghiệm, như vậy ta nhất định sẽ thừa dịp cơ hội này cướp lấy ngươi trong tay .”</p>
+        <p>“Thẻ bài Clow nói, ta sẽ không buông tay.” Touya chocolate sắc sườn mặt ở lửa trại minh diệt quang mang trung vựng nhiễm khai nguy hiểm mà cường đại run rẩy cảm, thâm sắc đôi mắt chỗ sâu trong nhảy lên ngọn lửa, giống như thiêu đốt chấp nhất cùng kiên định, “. tuyệt đối, sẽ không.”</p>
+        <p>Không chỉ là vì trong lòng cùng thẻ bài Clow chặt chẽ tương liên tồn tại, còn bởi vì ở phong ấn này đó tinh linh trong quá trình, Touya trên người dần dần liên lụy mà ra ràng buộc cùng ước định.</p>
+        <p>Syaoran trong lúc nhất thời bị như vậy khí tràng chấn trụ, lui về phía sau hai bước.</p>
+        <p>Touya hoàn toàn không chú ý tới bên người tiểu quỷ thất thố, dùng rất thấp thanh âm tự mình lẩm bẩm: “Căn phòng lớn a, chỉ là tích cóp tiền tựa hồ không quá đủ bộ dáng……”</p>
+        <p>Ít nhất yêu cầu một cái có thể làm 『 The Flower 』 nhẹ nhàng khởi vũ, làm 『 The Mirror 』 an tĩnh đọc sách, làm kia chỉ ánh vàng rực rỡ sư tử có thể ghé vào dưới tàng cây ngủ nướng, làm nguyệt có thể triển khai cặp kia trắng tinh cánh chim tòa nhà mới được.</p>
+        <p>Tuy rằng trong nhà hài tử nhiều khẳng định sẽ ầm ĩ, nhưng nếu có Yukito hỗ trợ nói, nhất định không thành vấn đề.</p>
+        <p>Touya trong lòng nghĩ như vậy, cấp kế tiếp cao trung một năm quy hoạch dán lên mau vào nhãn.</p>
+        <p>. kiếm tiền gì đó, hắn vẫn là thực sở trường.</p>
+        <p>***</p>
+        <p>Nửa tháng sau</p>
+        <p>“Ngươi là như thế nào làm được tinh chuẩn đem mà cùng hỏa này hai trương bài lưu đến cuối cùng a?” Kero buồn bực mà ôm ngực ngồi ở trên mặt bàn, kiểm kê mở ra đặt ở một bên màu xanh biển thẻ bài Clow, vẻ mặt buồn bực.</p>
+        <p>Hiện tại Touya trong tay thẻ bài Clow cơ hồ đã phong ấn đến xấp xỉ, chỉ còn lại có mấy trương cũng không quá khó giải quyết cùng đối Kero tới nói nhất quan trọng 『 The Earthy 』 cùng 『 The Firey 』.</p>
+        <p>『 The Earthy 』 『 The Firey 』 『 The Light 』 là phong ấn hắn ma lực nhất quan trọng nhất tam trương bài, hiện tại chỉ đã trở lại một trương 『 The Light 』, chính là nguyệt bên kia 『 The Windy 』 『 The Watery 』 『 The Dark 』 lại đều đã bị phong ấn.</p>
+        <p>“Nói như vậy, ta liền không có cách nào trước tiên cảm giác hắn tồn tại……” Kero lo lắng sốt ruột mà suy nghĩ, “Hắn cũng không phải cái loại này sẽ rõ biết có người thu thập thẻ bài Clow lại mặc kệ không quản tính cách.”</p>
+        <p>Nếu thu thập thẻ bài Clow người là Sakura như vậy nhu nhược tiểu cô nương, nguyệt không để ở trong lòng chuẩn bị ở thẩm phán mặt trời đã cao định ra thắng bại kỳ thật thực bình thường.</p>
+        <p>Nhưng là Touya uy hiếp tính có mắt đều có thể nhìn ra tới, thậm chí ở chỉ viết tên dưới tình huống, cũng đã thay đổi thẻ bài Clow thẻ bài nhan sắc.</p>
+        <p>Dưới tình huống như thế, Kero không tin trong lòng đối Clow xem đến quan trọng nhất nguyệt, thật sự có thể vẫn luôn nhẫn nại đến thẩm phán ngày mới xuất hiện.</p>
+        <p>“Thật là hao tổn tâm trí……”</p>
+        <p>Kero gãi chính mình sọ não, móng vuốt lại không tự chủ được duỗi hướng về phía Touya đặt ở một bên bánh cookie làm.</p>
+        <p>Touya nghe thấy thanh âm, quay đầu liền thấy búp bê vải đưa lưng về phía hắn ngồi ở trên mặt bàn, một ngụm một cái có nó đầu lớn nhỏ bánh cookie làm, đem đầu mình căng thành bánh quy hình dạng.</p>
+        <p>Touya: “……”</p>
+        <p>Ăn ngay nói thật, liền dựa theo tính cách thích xứng độ tới xem, búp bê vải cùng tiểu quái thú thích xứng độ đích xác rất cao.</p>
+        <p>“Không cần lo lắng, thẩm phán ngày nói, ít nhất không ở gần nhất.”</p>
+        <p>“Ai khụ khụ khụ khụ?” Kero bị Touya đột nhiên xuất khẩu tiên đoán cả kinh, trong miệng bánh quy bởi vì đấm ngực ho khan phun ra đi không ít.</p>
+        <p>Touya ghét bỏ mà chùy hạ Kero đầu, trừu khăn giấy ra tới lau khô mặt bàn.</p>
+        <p>Kero lại không rảnh lo quản những cái đó, bổ nhào vào Touya trước mặt vội vàng đặt câu hỏi: “Ngươi mơ thấy thẩm phán ngày?! Mơ thấy nhiều ít?”</p>
+        <p>“Nhiều ít……”</p>
+        <p>Touya trầm mặc một chút, rồi sau đó nhàn nhạt nói: “Cái gì đều không có.”</p>
+        <p>Đầy mặt chờ mong Kero tức khắc mặt triều hạ ngã quỵ ở trên mặt bàn.</p>
+        <p>“Ngươi vui đùa cái gì vậy a! Ngươi đều biết thẩm phán ngày, sao có thể cái gì cũng chưa nhìn đến?!” Kero hướng tới Touya lớn tiếng rít gào.</p>
+        <p>Touya bình tĩnh nói: “Ta là nói, không có biết trước mộng.”</p>
+        <p>“Ta biết một cái khác người thủ hộ, là bởi vì ở trong mộng thu hồi 『 The Return 』 bài thời điểm, gặp được ngươi, nguyệt, còn có Clow tiên sinh.”</p>
+        <p>“Ha? Ngươi trở về quá từ trước thời gian? Ta như thế nào không có ấn tượng?” Kero biết 『 The Return 』 này trương có thể hồi tưởng thời gian bài, này trương bài phát động yêu cầu cực kỳ cường đại ma lực, có thể đem phát động thẻ bài Clow người đưa đi riêng thời gian tiết điểm ngắn ngủi dừng lại.</p>
+        <p>Nhưng cùng 『 The Time 』 không giống nhau chính là, đây là chân chính về tới quá khứ, sở làm hoặc là sở lưu lại dấu vết đều sẽ chân chính bảo tồn ở trong trí nhớ.</p>
+        <p>Touya cười nhạo nó nói: “Là ai ở cây hoa anh đào hạ ngủ đến tứ chi hướng lên trời, liền bị ta vụng trộm nắm cánh mao đều không tỉnh lại?”</p>
+        <p>Kero: “. khụ! Nói tóm lại, ngươi khẳng định là gặp qua ta uy mãnh khí phách dáng người là được!”</p>
+        <p>Uy mãnh khí phách?</p>
+        <p>Touya hồi tưởng khởi kia chỉ ngáy khờ phê sư tử, đuôi lông mày khơi mào lại buông, đối này cầm giữ lại thái độ: “Đại khái.”</p>
+        <p>“Không đúng, trọng điểm không phải cái này!” Kero hôm nay đầu đột nhiên trở nên không hảo lừa gạt lên, “Ngươi vừa rồi nói thẩm phán ngày không ở gần nhất là có ý tứ gì?”</p>
+        <p>“Ta không có mơ thấy thẩm phán ngày, nhưng là ta mơ thấy cùng Yuki ở tuyết đầu mùa kia một ngày đi Tokyo hẹn hò.”</p>
+        <p>Kero đã sớm nhìn ra bọn họ chi gian miêu nị: “Ha? Kia cùng thẩm phán ngày có cái gì quan…… Chờ hạ.”</p>
+        <p>Kero đôi mắt càng trừng càng lớn: “Người thủ hộ thông thường sẽ không ly thẻ bài Clow quá xa, càng miễn bàn là ở thẻ bài Clow tân chủ nhân xuất hiện, bắt đầu phong ấn thẻ bài Clow lúc sau……”</p>
+        <p>“Bên cạnh ngươi có ma lực người, trừ bỏ Sakura cùng Lý gia tiểu quỷ, cũng chỉ dư lại .”</p>
+        <p>Touya thở dài, ngồi ở án thư tiền triều ghế dựa chỗ tựa lưng một đảo, lười nhác nói: “Yuki xuyên kia kiện tân áo khoác rất đẹp, chỉ tiếc hẹn hò bị đánh gãy a……”</p>
+        <p>“Không phải, từ từ . từ từ!!”</p>
+        <p>Kero hùng hổ mà bay đến Touya trước mặt, dùng vẻ mặt ngươi điên rồi sao biểu tình nhìn Touya: “Ngươi biết rõ thân phận của hắn, ngươi còn cùng hắn yêu đương?!”</p>
+        <p>Hiện tại nhân loại cao trung sinh chiêu số đều như vậy dã sao!!</p>
+        <p>Touya ngữ khí tản mạn mà sửa đúng: “Còn không có chính thức thông báo nga.”</p>
+        <p>“Này không quan trọng!” Kero duỗi tay vung lên, thái độ rất là nghiêm túc, “Ngươi biết chúng ta tồn tại là cái gì sao? Chúng ta là ma pháp tạo vật, chỉ cần ma pháp tồn tại, chúng ta liền sẽ không biến mất.”</p>
+        <p>“Chẳng sợ ngươi trở thành thẻ bài Clow tân chủ nhân, nhưng tựa như Clow qua đời lúc sau thẻ bài Clow cùng ma pháp tạo vật còn có thể tồn tại rất nhiều năm giống nhau, chúng ta cùng nhân loại thọ mệnh là không bình đẳng, hiểu không?”</p>
+        <p>Cerberus tuy rằng ngày thường tùy tiện nhìn qua không đáng tin cậy bộ dáng, nhưng chân chính xụ mặt nói chính sự thời điểm, toàn bộ búp bê vải đều tản ra một loại đứng đắn nghiêm túc khí tràng.</p>
+        <p>Touya vẫn duy trì lưng dựa lưng ghế tư thế, duỗi tay đem bay đến trước mặt búp bê vải giơ lên.</p>
+        <p>Kero bị Touya nắm ở lòng bàn tay, hai tay đáp ở Touya ngón tay thượng, ngốc nói: “Làm gì?”</p>
+        <p>“Cảm ơn.” Touya ngữ khí chân thành nói.</p>
+        <p>“Tạ, cảm tạ cái gì ngoạn ý nhi?” Kero không phản ứng lại đây đây là nào vừa ra, theo bản năng nói, “Nói tạ nhiều vô dụng, chỉnh điểm thật sự.”</p>
+        <p>“Hành, ngày mai cho ngươi làm pudding, bên trong phóng một chỉnh viên dâu tây.”</p>
+        <p>Touya thống khoái đồng ý.</p>
+        <p>“Thật sự?!”</p>
+        <p>Đại khái là ở vào bị phong ấn giai đoạn, vĩ đại phong ấn thú nho nhỏ trong óc không có như vậy đại dung lượng, dâu tây pudding thực mau liền đem vừa rồi nghiêm túc đề tài từ nhỏ nhưng trong óc tễ đến sạch sẽ.</p>
+        <p>Touya lại quay đầu nhìn về phía ngoài cửa sổ.</p>
+        <p>Chưa phong ấn thẻ bài Clow chỉ còn lại có linh tinh mấy trương.</p>
+        <p>Như vậy, năm nay tuyết đầu mùa, lại sẽ ở khi nào đã đến?</p>
+        <p>-------------DFY--------------</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong21.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong23.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "so-tay-chan-nuoi-truc-ma-cua-kinomoto-kun";
+const NOVEL_TITLE = "Sổ Tay Chăn Nuôi Trúc Mã Của Kinomoto-Kun";
+const CHAPTER_TITLE = "Chương 22";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+
+});
+</script>
+</body>
+</html>

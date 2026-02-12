@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 10</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+<body class="page-chapter">
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Sổ Tay Chăn Nuôi Trúc Mã Của Kinomoto-Kun
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 10</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong9.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong11.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+
+        <p>Touya cùng tầng hầm dị động</p>
+        <p>Sáng sớm, Touya đi vào Yukito cửa nhà, giơ tay ấn vang lên chuông cửa.</p>
+        <p>Qua một hồi lâu, một trận dồn dập tiếng bước chân truyền đến, Yukito lúc này mới mở cửa, vẻ mặt xin lỗi mà nhìn về phía Touya: “Xin lỗi, vừa rồi ở tầng hầm ngầm bên kia có điểm ngoài ý muốn.”</p>
+        <p>“A.” Touya nhưng thật ra không để ý cái này, mà là đem trong tay tiện lợi hộp đưa cho Yukito, “Ăn cơm trước.”</p>
+        <p>Yukito trong lòng ngực ôm năm tầng xa hoa tiện lợi, nghiêng đi thân cười đến mi mắt cong cong: “Chúng ta cùng nhau ăn.”</p>
+        <p>Nói xong, Yukito giương mắt nhìn nhìn ngoài cửa thời tiết, trong viện ánh nắng tươi sáng, nhìn qua thật là cái phi thường khó được trời nắng.</p>
+        <p>“Gần nhất đều vẫn luôn không có trong, hôm nay rốt cuộc có thái dương.” Yukito nói, nghĩ nghĩ, “A, còn có chăn muốn phơi một phơi.”</p>
+        <p>Touya đi vào phòng trở tay thế Yukito đóng cửa lại, duỗi tay đẩy Yukito bối hướng nhà ăn phương hướng đi: “Chờ lát nữa cùng nhau làm.”</p>
+        <p>Yukito tuy rằng là một người sinh hoạt, nhưng là mấy năm trước một cái quốc trung sinh một mình dọn lại đây cư trú không khỏi quá mức thấy được, nguyệt liền giả tạo Yukito thân phận, thế Yukito bịa đặt một đôi bên ngoài công tác ông ngoại bà ngoại.</p>
+        <p>Cũng nguyên nhân chính là vì như thế, Tsukishiro trạch cũng không phải cái loại này cùng loại một người cư trú chung cư, mà là càng vì thích hợp người một nhà ở bên nhau viện trạch.</p>
+        <p>Từ trước Touya liền có tới cùng Yukito cùng nhau quét tước thói quen, hiện tại Touya càng là có thời gian liền sẽ cùng Yukito ở bên nhau.</p>
+        <p>Yukito ngồi xuống mở ra tiện lợi hộp, bên trong tràn đầy bày đủ loại kiểu dáng sushi, vừa thấy liền biết Touya trước một ngày buổi tối nhất định đi hướng điền đại thúc sushi cửa hàng làm công.</p>
+        <p>“Nói lên, ngày hôm qua ta đi hiệu sách vừa vặn đụng tới Sakura. Nghe Sakura nói, trong nhà trước hai ngày làm việc nhà thời điểm tựa hồ rối loạn hảo một thời gian?”</p>
+        <p>Yukito một bên cấp trong miệng tắc sushi, một bên nhìn về phía từ phòng bếp ra tới Touya.</p>
+        <p>Touya đối Yukito gia đồ vật quả thực so Yukito bản nhân còn muốn quen thuộc . đặc biệt là phòng bếp.</p>
+        <p>Tsukishiro trạch liếc mắt một cái xem qua đi thực sạch sẽ, nhưng lại không phải cái loại này thường xuyên quét tước sạch sẽ, mà là một loại khuyết thiếu sinh hoạt hơi thở hoặc là nói…… Khuyết thiếu nhân khí quạnh quẽ sạch sẽ.</p>
+        <p>Chỉ có phòng bếp còn có thể ngẫu nhiên nhìn thấy Yukito ngày thường sinh hoạt dấu vết.</p>
+        <p>Touya cấp Yukito trước mặt thả một ly trà Ô Long, rồi sau đó kéo ra Yukito đối diện ghế dựa ngồi xuống: “Có hai trương thẻ bài Clow ở trong nhà, thu thập thời điểm bị Sakura nhặt được.”</p>
+        <p>Sakura bản thân có ma lực, nhưng là cũng không biết thẻ bài Clow là cái gì, trong lúc vô tình phát động thẻ bài Clow, may mắn Kero ở đây, Touya lại vừa vặn về nhà, bằng không còn không biết sẽ phát sinh cái gì.</p>
+        <p>Nghe Touya nói xong phát sinh sự, Yukito đôi mắt có chút tò mò: “『 The Float 』 cùng 『 The Bubbles 』? Cảm giác thẻ bài Clow đều thực thần kỳ bộ dáng a.”</p>
+        <p>Touya nhớ tới phía trước trong nhà gia cụ bay loạn, phao phao bao phủ một mảnh hỗn độn liền cảm thấy đau đầu.</p>
+        <p>Cũng may Sakura thật sự là thô thần kinh tính tình, lại có Kero ở một bên đánh phối hợp, lúc này mới tốt xấu xem như tạm thời giấu diếm được tiểu cô nương.</p>
+        <p>“Bất quá nếu Sakura có ma lực, Touya vì cái gì không nói cho nàng đâu?”</p>
+        <p>Yukito thực hiểu biết Touya, nếu thật sự không tính toán làm Sakura tham dự tiến ma pháp thế giới, như vậy từ lúc bắt đầu, Touya liền sẽ không làm Cerberus đi đến Sakura bên người.</p>
+        <p>“Nếu là vì bảo hộ Sakura nói, phương pháp có rất nhiều loại đi.”</p>
+        <p>“Ân.” Touya dừng một chút, ngón tay lòng bàn tay ở chén trà bên cạnh vuốt ve, “Sakura ma lực rất cường đại, nhưng là thẻ bài Clow dù sao cũng là không thể khống nguy hiểm, ta tưởng ở thẻ bài Clow thu thập không sai biệt lắm lúc sau, lại bắt đầu dẫn đường Sakura nắm giữ trong cơ thể lực lượng.”</p>
+        <p>Dựa theo đã từng quỹ đạo, chuyển thế sau Clow Reed, cái kia nhìn qua cùng Sakura giống nhau tuổi tác Hiiragizawa Eriol, hẳn là cũng sẽ đã đến.</p>
+        <p>Touya ngón tay ở chén trà phía trên nhẹ nhàng lung lay hạ, ly trung trà Ô Long như là bị lôi kéo giống nhau chảy ra một tiểu điều cột nước, ở Touya ngón tay biên vờn quanh một vòng sau, bị Touya ma lực ở giữa không trung tạo thành ma pháp trận hình dạng.</p>
+        <p>“Clow Reed ma pháp rất lợi hại, nhưng thẻ bài Clow lại phi từ không thành có tồn tại.”</p>
+        <p>Touya bắt được thẻ bài Clow đến nay đã có ba tháng, thị trấn Tomoeda hoa anh đào cũng đã tới rồi điêu tàn mùa.</p>
+        <p>Hắn cũng không phải một cái chỉ biết đi theo người khác an bài làm từng bước hành động người, trừ bỏ phong ấn thẻ bài Clow, Touya đối thẻ bài Clow trung ma pháp càng cảm thấy hứng thú.</p>
+        <p>. đặc biệt là ở kiến thức quá Clow Reed ma pháp nơi phát ra chi nhất Lý gia pháp thuật lúc sau.</p>
+        <p>“Thẻ bài Clow nguyên lý là dùng cường đại ma lực cùng khóa chặt ma lực trận pháp, đem nguyên bản liền tồn tại ở trên đời vô hình chi vật chuyển hóa vì hữu hình chi linh.”</p>
+        <p>“Bởi vì này đó bất đồng thuộc tính tồn tại, dựa vào thẻ bài ma lực mà có sinh mệnh, cho nên giống như là ký kết một loại khế ước, nghe theo thẻ bài chủ nhân sử dụng.”</p>
+        <p>“Nói cách khác, chỉ cần nắm giữ thẻ bài Clow chế tác phương pháp……”</p>
+        <p>“Chỉ cần ma lực cũng đủ, cho dù không có thẻ bài Clow, cũng có thể sáng tạo ra tân ma pháp thẻ bài?”</p>
+        <p>Yukito cắn một ngụm sushi cầm trong tay, theo Touya nói ra kết luận.</p>
+        <p>Touya không tỏ ý kiến, giơ tay đánh tan màu hổ phách trà Ô Long ngưng tụ thành pháp trận, ánh mặt trời từ phòng khách cửa sổ sát đất chiếu vào, hôn môi tản ra hơi nước ở trong nhà chiếu ra một đạo cầu vồng.</p>
+        <p>“Nhưng là mấu chốt nhất một chút, chính là sáng tạo thẻ bài Clow sở dụng đến ma pháp trận.” Touya cũng không có giấu giếm chính mình ở điểm này bị đả kích.</p>
+        <p>“Clow Reed không hổ là ở ma pháp sư trung đều xưng là số một số hai người xuất sắc.”</p>
+        <p>Touya cũng từ tiện lợi hộp cầm một cái tay cầm sushi ra tới, cắn một ngụm, hàm hàm hồ hồ nói: “Chẳng sợ có thẻ bài Clow làm nghiên cứu, ta như cũ không có cách nào ở hắn ma pháp trận cơ sở thượng, sửa ra thích hợp Sakura pháp trận.”</p>
+        <p>Đã từng Sakura ở Clow Reed an bài hạ, không chỉ có thu phục thẻ bài Clow, còn đem thẻ bài Clow chuyển hóa thành Sakura độc hữu pháp trận thẻ bài, như vậy này trong đó nhất định là có Touya còn không có tưởng minh bạch liên hệ.</p>
+        <p>Bất quá chuyện này cũng không phải Touya việc cấp bách, rốt cuộc lúc sau có rất nhiều cơ hội đi thỉnh giáo Clow Reed bản nhân.</p>
+        <p>Trước mắt nhất quan trọng là……</p>
+        <p>“Cho nên, ngươi tìm được nhà ngươi tầng hầm ‘ mèo con ’ sao?”</p>
+        <p>Touya hỏi.</p>
+        <p>Yukito nghe vậy, cau mày vẻ mặt nghĩ trăm lần cũng không ra: “Cũng có thể không phải miêu mễ……”</p>
+        <p>Trước hai ngày, Yukito liền đối Touya nói qua, trong nhà tầng hầm giống như vào được thứ gì, luôn là ở đêm khuya tĩnh lặng thời điểm nháo ra nhỏ vụn động tĩnh.</p>
+        <p>“Hơn nữa, tầng hầm tựa hồ biến mất một ít đồ vật……?” Yukito ngữ khí rất là không xác định.</p>
+        <p>Touya sửng sốt: “Ném cái gì?”</p>
+        <p>Yukito muốn nói lại thôi, rồi sau đó thành thạo đem còn thừa sushi nhét vào chính mình trong miệng, rồi sau đó giơ tay bắt lấy Touya tay liền hướng trong nhà tầng hầm đi.</p>
+        <p>Touya trở tay vớt trên bàn trà Ô Long, ở Yukito gian nan đi xuống nuốt thời điểm bất đắc dĩ lại cực kỳ thuận tay mà đem chén trà đưa cho hắn.</p>
+        <p>“A, được cứu trợ.” Yukito thuận đi xuống trong cổ họng đồ ăn, lộ ra đại tùng một hơi biểu tình, rồi sau đó đôi tay bao chén trà cái miệng nhỏ lại nhấp một ngụm, hướng về phía Touya so cái im tiếng thủ thế.</p>
+        <p>“Hư, ngươi nghe.” Yukito lỗ tai dán ở ván cửa thượng, hạ giọng nói.</p>
+        <p>Touya nửa tin nửa ngờ mà nhìn mắt Yukito, rồi sau đó tiến lên một bước, lỗ tai cùng Yukito giống nhau dán qua đi, ngừng thở nghe bên trong động tĩnh.</p>
+        <p>“Kẽo kẹt . kẽo kẹt .”</p>
+        <p>Touya: “……?”</p>
+        <p>Này cái gì quái thanh âm?</p>
+        <p>Yukito vẻ mặt “Ta chưa nói sai đi” biểu tình, lại uống một ngụm trà trong ly trà Ô Long, tiểu tiểu thanh nói:</p>
+        <p>“Vừa rồi ngươi ấn chuông cửa thời điểm làm ta giật cả mình, sau đó giống như cũng dọa đến nó, nguyên bản đôi ở tầng hầm ngầm tạp vật lung tung rối loạn lăn đầy đất.”</p>
+        <p>“Thẻ bài Clow?” Touya đơn giản giơ tay mở ra cửa phòng, sắc bén ánh mắt quét một vòng cũng không chật chội tầng hầm.</p>
+        <p>Rốt cuộc thời gian có thể hoạt động hữu hình chi vật tinh linh cũng không nhiều, hiển nhiên nhất nhàn rỗi gây sự phần lớn đều là gần chút thời gian chạy ra đi thẻ bài Clow.</p>
+        <p>Touya vừa dứt lời, tầng hầm nguyên bản lẳng lặng nằm đồ vật lôi cuốn bóng ma, thẳng tắp hướng tới cửa hai người đứng địa phương tạp qua đi!</p>
+        <p>Touya phản ứng nhanh chóng một phen đóng lại cửa phòng, lôi kéo Yukito hướng bên cạnh chợt lóe.</p>
+        <p>“Phanh!” Bên trong cánh cửa truyền đến thật lớn tiếng đánh, ngay sau đó chính là xôn xao pha lê vỡ vụn thanh âm.</p>
+        <p>“Môn chất lượng không tồi.”</p>
+        <p>“Kỳ thật…… Ta tháng này chi ra tương đối nhiều.” Yukito nhỏ giọng nói.</p>
+        <p>Touya hiểu ý, nhìn mắt không chịu nổi lần thứ hai va chạm ván cửa, quyết định vì Yukito tiền tiêu vặt suy xét một chút, lần nữa đi qua đi kéo ra cửa phòng.</p>
+        <p>Touya: “?”</p>
+        <p>Yukito: “Ngô……”</p>
+        <p>Hai người đồng thời chớp hạ đôi mắt.</p>
+        <p>. vì trước mặt tầng hầm, không hề va chạm tổn hại dấu vết tạp vật.</p>
+        <p>Nhưng vừa rồi kia thanh động tĩnh cũng không phải ảo giác mới là.</p>
+        <p>Yukito đột nhiên nói: “Bên kia, thiếu một cái giá sách.”</p>
+        <p>Touya nhướng mày.</p>
+        <p>Yukito nghĩ nghĩ, khẳng định nói: “Phía trước mới vừa dọn tiến vào thời điểm phòng khách có một cái giá sách, pha lê có một chút dơ, ta cảm thấy khó coi, liền đem giá sách dọn vào tầng hầm, vừa rồi còn ở.”</p>
+        <p>Bởi vì giá sách cũng không tiểu, cho nên lúc ấy Yukito chỉ là đem nó đặt ở tầng hầm cửa liền không lại sửa sang lại.</p>
+        <p>Vừa rồi hướng về phía hai người ngã xuống tới hiển nhiên chính là cái kia giá sách.</p>
+        <p>Điển hình thẻ bài Clow hành vi.</p>
+        <p>Touya cười nhẹ một tiếng, nói: “Cảm giác thẻ bài Clow cũng thực thích Yuki.”</p>
+        <p>Yukito trầm ngâm một lát, nhưng thật ra cấp ra không giống nhau trả lời: “Phải không? Ta tổng cảm giác chúng nó giống như có chút sợ hãi ta đâu.”</p>
+        <p>“Nếu sợ hãi nói, liền sẽ không cố ý lại đây thân cận.”</p>
+        <p>Touya hoạt động xuống tay cổ tay, phong ấn pháp trượng trong chớp mắt xuất hiện ở Touya trong tay.</p>
+        <p>“Chỉ có bởi vì thích, lại không biết như thế nào tới gần, mới có thể như vậy lén lút mà nháo ra động tĩnh tới, muốn tranh thủ tầm mắt dừng lại chú ý, không phải sao?”</p>
+        <p>Này đó Clow Reed sáng tạo ra tới, đã từng cùng Clow Reed, cùng nguyệt còn có khắc lỗ bối lỗ tư sớm chiều ở chung các tinh linh, ở bị phong ấn tại trong sách mấy năm nay, kỳ thật cũng là tưởng niệm đã từng đồng bọn đi.</p>
+        <p>Đứng ở cạnh cửa Yukito không biết sao, thần sắc có chút hoảng hốt, ngốc lăng lăng mà đứng ở cửa phòng biên, mặt mày thế nhưng có chút không biết làm sao mê mang.</p>
+        <p>Touya nhìn hắn một cái, không nhịn xuống giơ tay nhu loạn Yukito tóc.</p>
+        <p>Thật là đáng yêu quá mức a, gia hỏa này.</p>
+        <p>Tầng hầm đích xác có thẻ bài Clow, nhưng lại cũng không phải cái gì có lực sát thương bài, thực mau, 『 The Move 』 cùng 『 The Erase 』 hai trương biến thành thẻ bài Clow ngoan ngoãn dừng ở Touya trong tay.</p>
+        <p>Thấy Yukito đi tới cúi đầu nhìn chính mình trong tay thẻ bài Clow, Touya bỗng nhiên nói: “Nếu muốn quét tước, không bằng tầng hầm cũng thu thập một chút?”</p>
+        <p>“Ai?” Yukito bị Touya nhảy lên đề tài làm cho có chút phát ngốc.</p>
+        <p>Touya đem thẻ bài Clow tung ra, trong tay pháp trượng xoay một cái nửa vòng, một trương kim sắc thẻ bài cùng khác hai trương màu xanh biển thẻ bài đồng thời phát động.</p>
+        <p>Các tinh linh từ ma lực trung uyển chuyển nhẹ nhàng mà ra, xẹt qua Touya cùng Yukito ngọn tóc, như là đối nhìn thấy tân chủ nhân vui sướng, cũng như là cùng cố nhân tương phùng sung sướng.</p>
+        <p>Tầng hầm trung tạp vật bị 『 The Float 』 bài nâng cách mặt đất bản, 『 The Bubbles 』 bài chế tạo ra phao phao rửa sạch rớt tầng hầm nội sở hữu bụi đất dơ bẩn, 『 The Move 』 bài đem nguyên bản hỗn độn chất đống gia cụ vật phẩm chỉnh chỉnh tề tề dọc theo vách tường bày biện chỉnh tề……</p>
+        <p>“Lạch cạch.” Tiểu tinh linh qua đi ấn xuống đèn điện chốt mở.</p>
+        <p>Chỉ chốc lát sau công phu, Touya cùng Yukito trước mắt tầng hầm rực rỡ hẳn lên, cơ hồ lập loè blingbling quang.</p>
+        <p>Yukito đem trong tay chén trà đưa cho Touya, có chút ngốc lăng mà vỗ tay tán thưởng: “Thật là lợi hại……”</p>
+        <p>Touya trong tay bị thình lình tắc chén trà, một cái tay khác còn xách theo pháp trượng, chỉ phải vẫn duy trì như vậy tư thế, hướng tới trước mặt vô hình các tinh linh ôn thanh nói: “Cảm ơn.”</p>
+        <p>Nhỏ bé, hân hoan tiếng cười rơi xuống, thẻ bài Clow nhóm dịu ngoan mà trở về đến thẻ bài bộ dáng, tam trương điệp lên ngoan ngoãn dừng ở Touya lòng bàn tay.</p>
+        <p>Touya thu hồi này tam trương bài, rồi sau đó hỏi Yukito: “Muốn hay không ta tới giúp ngươi thu thập một chút đình viện?”</p>
+        <p>Yukito đương nhiên sẽ không cự tuyệt như vậy khó được cơ hội, cười nói: “Hảo a, vậy làm ơn Touya! Ngô…… Xem ra buổi tối ta phải làm phân siêu đại cà ri chúc mừng hôm nay tổng vệ sinh mới được.”</p>
+        <p>……</p>
+        <p>Còn hảo Yukito hôm qua mới từ siêu thị trở về, tủ lạnh nhét đầy nguyên liệu nấu ăn.</p>
+        <p>Lấy ra làm cà ri phải dùng nguyên liệu nấu ăn, Yukito mở ra súc rửa vòi nước, đánh vào trong ao dòng nước đụng chạm đến hắn ngón tay, hơi có vẻ lạnh lẽo.</p>
+        <p>Xoa tẩy nguyên liệu nấu ăn Yukito bỗng nhiên ngước mắt, nhìn về phía trong đình viện phát động 『 The Rain 』 cùng 『 The Wood 』 hai trương thẻ bài Clow Touya.</p>
+        <p>Ngoài cửa sổ tươi đẹp ánh mặt trời thăm vào phòng, có trong nháy mắt, đem Yukito ở thấu kính sau đôi mắt ánh biến thành sắc lạnh băng lam.</p>
+        <p>Trong đình viện cây cối tươi tốt sinh trưởng lên, nhánh cây quấn quanh đáp ở lan can rào tre phía trên, cỏ dại cũng bị rửa sạch tới rồi một bên.</p>
+        <p>Touya trong tay pháp trượng một lần nữa hóa thành vòng cổ, xoay người nhìn qua thời điểm, Yukito một cái hoảng hốt, đôi mắt nhan sắc nháy mắt biến trở về nguyên bản ôn nhu màu hổ phách.</p>
+        <p>Touya một bên dùng vừa rồi ở tầng hầm ngầm thu phục một khác trương thẻ bài Clow 『 The Erase 』, đem tu bổ đình viện rác rưởi tiêu trừ, thuận tay còn tiêu trừ Yukito nguyên bản phóng ở cửa nhà chuẩn bị vứt bỏ rác rưởi.</p>
+        <p>Yukito thu hồi tầm mắt, cúi đầu rửa sạch trong ao khoai tây, nghe được Touya đi đến bên người tiếng bước chân, hỏi: “Touya thực thích sử dụng thẻ bài Clow?”</p>
+        <p>“Đích xác sẽ thực phương tiện.” Touya thực sự cầu thị.</p>
+        <p>Yukito cười: “Sẽ không cảm thấy lãng phí ma lực sao?”</p>
+        <p>“Cảm giác từ trước xem truyện tranh bên trong, nhân vật chính đều là dùng ma lực vượt mọi chông gai, cứu vớt thế giới gì đó.”</p>
+        <p>Nói như vậy, Yukito chính mình cũng cười ra tiếng tới, đem trong tay khoai tây lấy ra tới đặt ở đảo bếp thượng.</p>
+        <p>“Ma pháp gì đó, nghe đi lên liền rất như là khó được trân quý chi vật.”</p>
+        <p>Touya hai tay ôm ngực dựa vào ở tủ lạnh thượng, biểu tình lãnh đạm đến thậm chí có chút hờ hững, nhưng nói ra nói lại mềm mại đến chua xót: “Ma pháp bị sáng tạo ra tới chính là vì sử dụng, nếu đem chúng nó đánh thức lại khóa ở trong ngăn kéo, cho dù là thẻ bài Clow, cũng sẽ cảm thấy tịch mịch đi.”</p>
+        <p>Hắn giương mắt nhìn về phía đình viện giãn ra cành cây thực vật, bởi vì thẻ bài Clow ma lực tẩm bổ, có vẻ thập phần sinh cơ bồng bột.</p>
+        <p>Lúc trước Clow Reed sáng tạo ra thẻ bài Clow, có lẽ là bởi vì tịch mịch, cũng có lẽ là bởi vì hưởng thụ sinh hoạt, nhưng này đó các tiểu tinh linh đều ở Clow Reed bên người bày ra chính mình năng lực, cùng Clow Reed cùng hai vị người thủ hộ nhóm cho nhau làm bạn.</p>
+        <p>Clow Reed có lẽ sẽ ở nào đó sáng sớm đánh thức mắt buồn ngủ mông lung Cerberus, sau đó mang theo nó cùng nguyệt cùng nhau quét tước dinh thự, nhìn không trung thẻ bài Clow các tinh linh vui sướng bay múa, ngẫu nhiên sẽ rơi xuống mấy cái phao phao chọc đến Cerberus đánh hắt xì phun ra ngọn lửa tới, đốt tới nguyệt góc áo……</p>
+        <p>Touya thanh âm mang theo một tia gần như không thể phát hiện thở dài: “Những cái đó đào tẩu thẻ bài Clow, nếu thật sự muốn nguy hại thế giới, liền sẽ không chỉ là này đó tiểu đánh tiểu nháo trò đùa dai.”</p>
+        <p>Clow Reed sáng tạo ra chúng nó, lại không có cùng này đó tinh linh vĩnh viễn làm bạn thọ mệnh, này đó bị phong ấn đã lâu các tinh linh, chỉ là dùng như vậy phương thức tới biểu đạt chính mình cô độc, cùng cho rằng chính mình bị vứt bỏ thương tâm phẫn uất thôi.</p>
+        <p>Clow Reed mất đi, không chỉ có đem Cerberus cùng nguyệt lưu tại thời gian tại chỗ, cũng đem này đó sớm chiều ở chung thẻ bài Clow cùng phong ấn ở mất đi kia một năm.</p>
+        <p>Cerberus sẽ ở Clow Reed khuyên bảo hạ hướng phía trước xem, lựa chọn cũng tiếp thu tân chủ nhân.</p>
+        <p>Nhưng càng là đơn thuần tính cách, liền càng là bướng bỉnh.</p>
+        <p>Như nhau đơn thuần thẳng thắn, muốn khảo nghiệm tân chủ nhân cho nên chế tạo ra phiền toái thẻ bài Clow nhóm, cũng như nhau……</p>
+        <p>Trước sau không có thể đi ra kia đoạn thời gian, thẻ bài Clow một vị khác người thủ hộ.</p>
+        <p>“Đình viện thiếu điểm hoa, không biết có hay không về hoa bài, bốn mùa thường khai đóa hoa, hẳn là sẽ rất đẹp.”</p>
+        <p>Touya nói.</p>
+        <p>Yukito từ bên cạnh rút ra liệu lý đao: “Kia…… Có lẽ thật sự có như vậy thẻ bài Clow cũng nói không chừng.”</p>
+        <p>Touya nghe vậy đốn hạ, nghiêng đầu nhìn về phía Yukito.</p>
+        <p>“Rốt cuộc kỳ kỳ quái quái thẻ bài Clow đích xác rất nhiều.” Yukito đem khoai tây cắt ra, giương mắt, cười đến mi mắt cong cong, “Nột?”</p>
+ 
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong9.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong11.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "so-tay-chan-nuoi-truc-ma-cua-kinomoto-kun";
+const NOVEL_TITLE = "Sổ Tay Chăn Nuôi Trúc Mã Của Kinomoto-Kun";
+const CHAPTER_TITLE = "Chương 10";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+
+});
+</script>
+</body>
+</html>

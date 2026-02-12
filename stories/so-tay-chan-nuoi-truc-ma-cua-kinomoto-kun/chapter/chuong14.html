@@ -1,0 +1,881 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 14</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+<body class="page-chapter">
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Sổ Tay Chăn Nuôi Trúc Mã Của Kinomoto-Kun
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 14</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong13.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong15.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+
+        <p>“Ai? Dâu tây viên?” Yukito nhìn về phía Touya, màu hổ phách trong ánh mắt như là giây tiếp theo liền sẽ toát ra ngôi sao tới, “Thật sự có thể cùng đi sao!”</p>
+        <p>Touya gật đầu: “Ân, đã cùng giám đốc nói tốt, nếu Yuki tưởng nói……”</p>
+        <p>“Muốn đi!!” Yukito nắm lấy Touya tay thật mạnh trên dưới lắc lắc, đầy mặt đều là hướng tới, “Nghe nói dâu tây viên dâu tây là chỉ cần hái xuống liền có thể vô hạn ăn cái loại này! Siêu lợi hại!”</p>
+        <p>“Vô hạn ăn……” Touya dừng một chút, bỗng nhiên bắt đầu tự hỏi một cái nghiêm túc vấn đề.</p>
+        <p>Nếu kiêm chức công nhân ăn sạch dâu tây nhà ấm nói, đại khái yêu cầu phó bao nhiêu tiền?</p>
+        <p>Ở trong đầu qua một chút giấy tờ, Touya biểu tình nghiêm túc mà từ Yukito trong tay rút ra tay, rồi sau đó trở tay bao lấy Yukito đôi tay, nghiêm túc cầm: “Yuki, như vậy đi, ngươi vẫn là làm khách nhân đi tương đối hảo.”</p>
+        <p>Rốt cuộc làm khách nhân vô hạn ăn nói, nhiều nhất khả năng chỉ là sẽ bị dâu tây viên giám đốc thêm vào gấp đôi kim ngạch…… Đi?</p>
+        <p>Yukito đương nhiên minh bạch Touya ý tứ, tử suy nghĩ kỹ lưỡng, bỗng nhiên nói: “Dâu tây lều lớn loại này quả thực hoàn toàn không giống như là Touya phong cách…… Là lại mơ thấy cái gì sao?”</p>
+        <p>“Lần này không có.” Touya trả lời rất kiên quyết, “Nhưng là Sakura trường học ngày mai tổ chức cùng đi dâu tây lều lớn lữ hành, ta có loại dự cảm bất hảo.”</p>
+        <p>Touya là cái thực tin tưởng chính mình trực giác cùng dự cảm người, hắn ma lực cùng Sakura ma lực tính chất cũng không tương đồng, đối bên người để ý người, hắn ma lực so với hắn bản nhân tới nói muốn càng thêm nhạy bén rất nhiều.</p>
+        <p>“Kia ta cũng tới cùng nhau công tác hảo!” Yukito trên mặt tràn ra tươi cười, “Đã lâu không có cùng Touya cùng nhau công tác qua, hảo hoài niệm a.”</p>
+        <p>Touya nhìn Yukito cười đến mi mắt cong cong bộ dáng, mặc mặc, chung quy là không nhịn xuống, duỗi tay nắm Yukito hai bên gương mặt, nhéo một xả, xúc cảm mềm mụp.</p>
+        <p>“Bùn làm sâm sao……” Yukito lắc đầu ý đồ ném rớt Touya tay.</p>
+        <p>Touya lại dùng bàn tay nâng Yukito gương mặt dùng sức xoa nhẹ hai hạ, lúc này mới đem đáy lòng cái loại này muốn càng thêm thân cận rồi lại có chút khiếp đảm ngo ngoe rục rịch đè ép đi xuống.</p>
+        <p>“Kia cùng ngày tốt nhất cùng ta ở bên nhau, nhất định phải chú ý an toàn, biết không?”</p>
+        <p>“Ân ân.”</p>
+        <p>“Dâu tây nói……”</p>
+        <p>“Ta sẽ không ăn quá nhiều!”</p>
+        <p>“Không, ta ý tứ là,” Touya cười một cái, “Muốn ăn liền ăn, ăn nhiều ít đều có thể.”</p>
+        <p>***</p>
+        <p>Sakura nhìn trước mặt dâu tây nhà ấm, phát ra khát khao cảm thán, đang suy nghĩ nếu Yukito ca ca cũng ở chỗ này thì tốt rồi, bên người đột nhiên truyền đến Syaoran thanh âm.</p>
+        <p>“Nhàm chán.”</p>
+        <p>“Như thế nào có thể nói nhàm chán đâu!” Sakura không phục mà xoay người, “Chẳng lẽ Hong Kong liền không có trích dâu tây hoạt động sao?”</p>
+        <p>“Có, nhưng ta không đi.” Syaoran ngưỡng cằm, giống như lơ đãng nói, “Còn có, lại bất quá đi nói, lão sư yếu điểm danh.”</p>
+        <p>“Úc úc úc úc!” Sakura lúc này mới phát hiện chính mình không biết khi nào rớt đội, vội vàng chạy chậm qua đi đi theo lớp đội ngũ mặt sau.</p>
+        <p>Tomoyo đối đi đến bên người Sakura nhỏ giọng nói: “Nghe vừa rồi giám đốc nói, bên này dâu tây viên không chỉ là cả ngày vô hạn trích ăn, còn có thể dùng tài liệu gia công thành bất đồng dâu tây đồ uống cùng điểm tâm ngọt nga.”</p>
+        <p>Sakura vừa nghe lời này lập tức tràn ngập nhiệt tình: “Chúng ta đây muốn nỗ lực nha!”</p>
+        <p>“Hảo nga.” Tomoyo nhìn Sakura sức sống tràn đầy bộ dáng, cười đến rất là ôn nhu.</p>
+        <p>Kết quả chờ đến các lớp người phụ trách đi ra lúc sau, Sakura nhìn tới gần Touya cùng Yukito, chớp chớp mắt, một loại quen thuộc tổng cảm giác không đúng chỗ nào lại giống như nơi nào đều đối cảm giác nảy lên trong lòng.</p>
+        <p>Cho nên nói…… Vì cái gì luôn là có thể gặp được làm công ca ca đâu?</p>
+        <p>“Ta không phải đã nói rồi sao, hôm nay muốn ra ngoài làm công một ngày, trong nhà nhật trình biểu thượng có ghi nga.” Touya đối thượng Sakura ngốc lăng lăng biểu tình, giơ tay chính là một cái đầu băng.</p>
+        <p>“Kia vì cái gì Yukito ca cũng……” Sakura tầm mắt ở hai người chi gian băn khoăn, có thứ gì giống như từ trì độn đầu gỗ bên trong bắt đầu nảy sinh.</p>
+        <p>“Bởi vì Touya lại đây, cho nên ta liền bồi cùng nhau lại đây.” Yukito ngữ khí mang theo một loại đương nhiên, “Hơn nữa nơi này dâu tây thật sự thực không tồi đâu, Sakura muốn chơi đến vui vẻ nga.”</p>
+        <p>“Ân ân!”</p>
+        <p>Ở Yukito ôn nhu tươi cười dưới, Sakura lại đem vừa rồi cảm giác được vi diệu vứt bỏ, mặt đỏ hồng mà nắm chặt trong tay dùng để phóng dâu tây tiểu rổ.</p>
+        <p>“Ta sẽ nỗ lực trích rất nhiều rất nhiều dâu tây làm điểm tâm liệu lý, Yukito ca ca ngươi…… Ngươi nguyện ý nếm thử sao?” Sakura thanh âm bởi vì mặt đỏ thẹn thùng dần dần thấp hèn tới.</p>
+        <p>“Đương nhiên.” Yukito khom lưng, đối Sakura lộ ra một cái ôn nhu tươi cười.</p>
+        <p>Touya cùng Yukito ở phía trước dẫn đường trong lớp học sinh tiến vào dâu tây nhà ấm, Sakura còn lại là trong đầu nghĩ Yukito ca ăn đến dâu tây liệu lý khi thỏa mãn tươi cười, dưới chân bước chân càng ngày càng chậm, trên mặt vẫn luôn mang theo chưa cởi đỏ ửng.</p>
+        <p>“Uy.” Syaoran thanh âm lần nữa từ bên người truyền đến.</p>
+        <p>Sakura nháy mắt bừng tỉnh: “Lý quân?”</p>
+        <p>Như thế nào cảm giác Lý quân cùng ca ca giống nhau, luôn là sẽ xuất hiện ở bên người nàng nói……</p>
+        <p>“Ngươi còn không có phát hiện sao?” Syaoran nhìn Sakura ánh mắt có loại hận sắt không thành thép, đối thượng Sakura ngây thơ biểu tình, Syaoran cắn răng, thấp giọng nói, “Tsukishiro học trưởng cùng người bình thường không giống nhau.”</p>
+        <p>Ban đầu thời điểm Syaoran đích xác không có phát hiện, nhưng là cách một đoạn thời gian không gặp lúc sau, liền ở vừa rồi, hắn ở Tsukishiro Yukito trên người cảm giác được một loại giương cung mà không bắn cường hãn ma lực, nhưng lại như là ảo giác giống nhau, nháy mắt biến mất không thấy.</p>
+        <p>Ở khắc nghiệt tu hành dưới lớn lên Syaoran tuyệt không sẽ dễ dàng xem nhẹ chính mình cảm giác, rốt cuộc ma pháp là sẽ gạt người.</p>
+        <p>“Yukito ca ca đương nhiên không giống nhau!” Sakura lớn tiếng nói, “Yukito ca ca là ta đã thấy nhất ôn nhu tốt nhất xem hoàn mỹ nhất người!”</p>
+        <p>“…… Tùy ngươi đi.”</p>
+        <p>Syaoran bỏ qua một bên đầu cắt một tiếng, sau đó nhanh hơn bước chân kéo ra cùng Sakura khoảng cách, chớp mắt liền biến mất ở dâu tây nhà ấm.</p>
+        <p>Sakura vẻ mặt mờ mịt oai hạ đầu: “Ai?”</p>
+        <p>“Sakura? Mau tới đây trích dâu tây!” Cách đó không xa, Tomoyo đứng ở lối đi nhỏ hướng về phía Sakura phất tay.</p>
+        <p>Sakura ánh mắt sáng lên, nhớ tới muốn đầu uy Yukito ca ca kế hoạch, vội vàng nắm chặt trong tay rổ hướng tới Tomoyo phương hướng chạy chậm qua đi.</p>
+        <p>……</p>
+        <p>“Touya!” Yukito xa xa thấy ôm ba cái cái rương Touya, chạy chậm hai bước cùng qua đi.</p>
+        <p>Touya dừng lại bước chân quay đầu xem hắn: “Không phải đi nhà ấm cùng Sakura các nàng cùng nhau trích dâu tây sao?”</p>
+        <p>Quốc tiểu nhân học sinh tuổi tác còn nhỏ, liền tính chỉ là ở dâu tây nhà ấm trích dâu tây, bên cạnh cũng vẫn là phải có nhân viên công tác cùng lão sư cùng đi.</p>
+        <p>Lực tương tác luôn luôn kinh người Yukito nhất thích hợp làm như vậy công tác, mà Touya vì trốn thanh tĩnh còn lại là ở giúp tư liệu quán bên kia khuân vác đồ vật.</p>
+        <p>“Chính là từ vừa rồi bắt đầu lại đột nhiên rất tưởng nhìn thấy Touya, cho nên, ta liền tới đây tìm ngươi.” Yukito nói chuyện luôn luôn trắng ra mà thẳng thắn thành khẩn, trên mặt như cũ là ánh mặt trời mà ôn nhu tươi cười.</p>
+        <p>“A.” Touya cũng không có cự tuyệt Yukito tiếp nhận đi trên cùng cái rương hành động, “Cảm ơn, giúp đại ân, ba cái cái rương nói có điểm thấy không rõ phía trước lộ.”</p>
+        <p>Yukito nghe Touya nói như vậy, trong mắt ý cười càng đậm, hỏi: “Này đó là muốn đưa đi nơi nào?”</p>
+        <p>“Đặt ở phía trước kho hàng liền hảo.”</p>
+        <p>Kho hàng môn cũng không có khóa lại, tư liệu trong phòng tư liệu kỳ thật cũng chỉ là một ít thường thấy dâu tây chủng loại phổ cập khoa học, một ít tới tham quan khách nhân cũng sẽ lật xem, cũng không phải cái gì quý trọng đồ vật.</p>
+        <p>Hai người đem cái rương hợp quy tắc hảo buông, đang muốn hướng cửa đi, bước chân đồng thời một đốn, một cổ vi diệu bị ma lực bao phủ cảm giác lặng yên không một tiếng động mà phô tán ra tới.</p>
+        <p>Touya bất động thanh sắc mà vươn tay đi đáp ở kho hàng tay nắm cửa thượng, đem trên tay ma lực cùng Touya ma lực sinh ra va chạm, đem Touya tay đạn tới rồi một bên.</p>
+        <p>Ngô……? Chẳng lẽ lại là trương tính tình không tốt lắm thẻ bài Clow?</p>
+        <p>Touya tùy thân mang theo thường dùng mấy trương thẻ bài Clow, 『 The Sword 』 bài vừa lúc ở bên trong, chỉ là đương hắn dùng 『 The Sword 』 bài thử muốn từ bên trong bổ ra ma lực phong tỏa khi, kia cổ ma lực lần nữa xuất hiện, đem sắc nhọn mũi kiếm đạn tới rồi một bên.</p>
+        <p>Touya tiến lên một bước, ở kia đạo ma lực che giấu trước chạm vào một cái chớp mắt, cái loại này đã mềm mại rồi lại cứng rắn kỳ diệu cảm giác…… Giống như chỉ là vì đưa bọn họ lưu lại, mà không nghĩ thương tổn giống nhau ôn thôn cảm.</p>
+        <p>“Cho nên, này trương bài là muốn làm cái gì?” Yukito cũng đi lên trước tới khom lưng nhìn Touya chính nhìn chằm chằm khoá cửa.</p>
+        <p>Touya trong mắt xẹt qua một tia hiểu rõ, không hề nhìn chằm chằm khoá cửa, mà là xoay người lại, hai tay ôm ngực lưng dựa ở cạnh cửa, nhún vai nói: “Tựa hồ cũng không phải trò đùa dai hoặc là muốn làm khác cái gì.”</p>
+        <p>Yukito sửng sốt một chút: “Ngươi không làm chút gì sao?”</p>
+        <p>Touya nhìn Yukito, biểu tình chuyên chú nói: “Đó là trong chốc lát sự, Yuki, đã có cơ hội như vậy, chúng ta không bằng nói nói chuyện?”</p>
+        <p>Yukito không khỏi về phía sau lui một bước, nhỏ giọng nói: “Nói chuyện gì?”</p>
+        <p>Touya: “Nói chuyện ngươi gần nhất có phải hay không ở vì cái gì sự tình ưu phiền? Tựa như vừa rồi ở dâu tây viên phía trước thời điểm, là bởi vì thất thần mới bị cái kia tiểu quỷ đụng vào đi?”</p>
+        <p>Lý gia cái kia tiểu quỷ tựa hồ nhìn ra cái gì, nhìn về phía Yukito trong ánh mắt không hề là một loại khuynh mộ hảo cảm, mà biến thành một loại nghi hoặc khó hiểu kiêng kỵ.</p>
+        <p>Vừa rồi ở dâu tây viên phía trước thời điểm, kia tiểu quỷ chính là cố ý lại đây tiếp cận Yukito.</p>
+        <p>“A, ngươi nói cái này……” Yukito trên mặt biểu tình biến ảo một cái chớp mắt, có chút ảo não lại có chút mất mát, nhưng thực mau liền đánh lên tinh thần, trả lời nói, “Là nhà ta giống như lại nhiều một trương thẻ bài Clow.”</p>
+        <p>“Vì cái gì không tới tìm ta?”</p>
+        <p>Touya không rõ, Yukito là chưa bao giờ sẽ cùng hắn khách khí, càng miễn bàn là biết hắn ở phong ấn thẻ bài Clow tiền đề hạ.</p>
+        <p>Yukito muốn nói lại thôi hảo sau một lúc lâu, mới thở dài, nói: “Tóm lại, Touya tới xem qua liền minh bạch.”</p>
+        <p>Touya tự xưng là đủ hiểu biết Yukito, chính là đôi khi lại vẫn là cảm thấy Yukito giống như là nhìn như gần trong gang tấc thủy trung nguyệt lượng, rõ ràng giơ tay có thể với tới, rồi lại khó có thể ôm vào trong lòng.</p>
+        <p>Hắn bình tĩnh nhìn Yukito thật lâu sau, lúc này mới đứng thẳng thân mình, giơ tay nhẹ gõ kho hàng ván cửa, ôn nhu nói: “Ta không biết ngươi là nào trương bài, nhưng ngươi hẳn là hưởng ứng ta vừa rồi trong nháy mắt ‘ muốn cùng Yuki ở một chỗ không chịu quấy rầy đơn độc nói chuyện ’ ý niệm, cảm ơn.”</p>
+        <p>Trên cửa ma lực dao động một cái chớp mắt, một cái nho nhỏ mang theo tiểu cánh khóa từ ván cửa lỗ khóa bay ra tới, có chút thẹn thùng mà tới gần Touya, nhẹ nhàng dừng ở Touya vươn trong lòng bàn tay.</p>
+        <p>Yukito lúc này mới phản ứng lại đây bọn họ bị nhốt ở kho hàng nguyên lai chỉ là bởi vì Touya nghĩ sai thì hỏng hết, tức khắc có loại không biết nên nói cái gì thái quá cảm.</p>
+        <p>“Có ma pháp người…… Một ý niệm là có thể làm được như vậy sao?” Yukito lẩm bẩm nói.</p>
+        <p>Bài mặt họa tiểu khóa thẻ bài Clow bị phong ấn, Touya rũ mắt nhìn vẫn mang theo độ ấm thẻ bài, thấp giọng nói: “Quá thịnh lực lượng không chỉ có đại biểu cho cường đại, cũng đồng dạng sẽ mang đến vận rủi.”</p>
+        <p>Touya có lẽ cũng không có như vậy minh bạch ma pháp tồn tại ý nghĩa cùng chân lý, nhưng hắn cũng đủ minh bạch trên thế giới này không có vô duyên vô cớ giao cho lực lượng.</p>
+        <p>Sakura từ quốc tiểu tứ niên cấp bắt đầu đã bị cuốn vào phong ba, từ nay về sau rất nhiều năm, ma lực sở mang đến nguy hiểm liền vẫn luôn hoàn hầu ở Sakura bên người, nàng nhân sinh cũng bởi vậy bị hoàn toàn thay đổi, đi hướng một cái khác hoàn toàn bất đồng phương hướng.</p>
+        <p>Giống như là Pandora hộp một khi mở ra, liền không còn có khép lại khả năng.</p>
+        <p>Nhưng nếu có thể……</p>
+        <p>Touya thu hồi trong tay thẻ bài Clow, ngước mắt nhìn về phía dâu tây nhà ấm phương hướng.</p>
+        <p>Lúc này, hắn muội muội hẳn là ở xách theo rổ ở dâu tây nhà ấm vô ưu vô lự mà ngắt lấy thích dâu tây, nghĩ trong lòng khát khao tiền bối, bên người làm bạn chính là cảm tình muốn tốt tri kỷ bằng hữu.</p>
+        <p>Hắn tưởng cấp Sakura có thể tự mình lựa chọn cơ hội, hắn tưởng ở Sakura ở có thể nhận rõ lý tưởng của chính mình, thật sự biết chính mình nghĩ muốn cái gì bộ dáng tương lai khi, lại đem cái này lựa chọn đưa tới Sakura trước mặt.</p>
+        <p>. ít nhất, không cần lại cùng từ trước giống nhau, ngây thơ mờ mịt lỗ mãng liền xâm nhập cái kia kỳ quái ma pháp thế giới.</p>
+        <p>***</p>
+        <p>Từ dâu tây viên trở về ngày hôm sau, Touya gõ vang lên Yukito gia đại môn.</p>
+        <p>Yukito từ phòng ngủ lấy ra một cái hộp đặt ở hai người trước mặt, hơi có chút đứng ngồi không yên bộ dáng.</p>
+        <p>Touya kinh ngạc mà nhìn hắn vài lần, lại bị Yukito nhét vào trong tay chìa khóa đánh gãy sắp sửa xuất khẩu trêu chọc.</p>
+        <p>“Ca!”</p>
+        <p>Liền ở chìa khóa sắp sửa tiến vào khóa tâm khoảnh khắc, hộp chung quanh đột nhiên hiện ra viên hình cung trạng ma lực kết giới, đem Touya trong tay chìa khóa bắn đi ra ngoài.</p>
+        <p>Touya lúc này mới nghiêm túc nhìn về phía trước mặt trên mặt bàn hộp: “?”</p>
+        <p>Yukito hào không ngoài dự đoán đem bắn bay đi ra ngoài chìa khóa nhặt về tới, bất đắc dĩ nói: “Đại khái bốn ngày trước, cái hộp này đột nhiên liền xuất hiện loại tình huống này, bất luận ta dùng cái gì biện pháp cũng vô pháp mở ra nó.”</p>
+        <p>“Này trương bài…… Hẳn là 『 The Shield 』.” Touya nghĩ nghĩ, nói, “Ta trong tay có một trương 『 The Sword 』, lúc ấy xuất phát từ tò mò hỏi qua búp bê vải, thẻ bài Clow thật là có trương tương đối ứng 『 The Shield 』 bài.”</p>
+        <p>“Nghe nói là một trương chấp nhất trông coi quan trọng tồn tại bài, chỉ có bị từ đáy lòng quý trọng đồ vật mới có thể đưa tới nó bảo hộ.”</p>
+        <p>Touya giơ tay chạm chạm trước mặt nhìn qua cũng không lớn hộp, giương mắt nhìn về phía đồng dạng nhìn chăm chú vào hộp Yukito, nhẹ giọng nói: “Cái hộp này nhất định là rất quan trọng rất quan trọng đồ vật.”</p>
+        <p>. đối Yukito mà nói.</p>
+        <p>“Yuki, ta có thể mở ra nó sao?”</p>
+        <p>Yukito bị Touya chuyên chú ánh mắt xem đến có chút mất tự nhiên, ho nhẹ một tiếng, lẩm bẩm nói: “Lại không phải cái gì đặc thù đồ vật, xem liền xem đi…… Ta chính là cảm thấy……”</p>
+        <p>Yukito nghẹn nghẹn, nghẹn ra mấy chữ tới: “Cảm thấy có điểm ngu đần.”</p>
+        <p>Dùng 『 The Sword 』 hoa khai 『 The Shield 』 bảo hộ, trước mặt hộp theo tiếng văng ra, bên trong trân quý đồ vật triển lộ ở hai người trước mặt.</p>
+        <p>Là lệnh Touya đã xa lạ…… Rồi lại quen thuộc đồ vật.</p>
+        <p>Hắn vươn tay nhẹ nhàng chạm chạm hộp nhất góc lẳng lặng nằm kia khối cục tẩy, bỗng nhiên cười hạ: “Là ta đưa cho ngươi kia khối?”</p>
+        <p>“Ân.” Ở ban đầu thẹn thùng qua đi lúc sau, Yukito lại biến trở về thẳng cầu con thỏ, chỉ vào khác một thứ hoài niệm nói, “Đây là pháo hoa đại hội thời điểm vớt tiểu cá vàng đưa kỷ niệm huy chương.”</p>
+        <p>Đó là bọn họ mới vừa nhận thức khi cùng đi tham gia pháo hoa đại hội thời điểm.</p>
+        <p>Hai cái quốc trung thiếu niên đúng là thiếu niên khí phách hết sức tích cực thời điểm, ở vớt tiểu cá vàng quầy hàng thượng cống hiến sở hữu tiền tiêu vặt cũng chưa có thể vớt đi lên một cái, cuối cùng vẫn là lão bản xem bất quá đi, tặng bọn họ một người một cái tiểu cá vàng, nhân tiện bao gồm cái này nhìn qua cũng không tinh xảo huy chương.</p>
+        <p>.【 thiếu niên! Lần sau các ngươi tới nhiều đưa các ngươi hai mươi trương võng nha, cố lên nga! 】</p>
+        <p>Sau đó năm thứ hai thời điểm, không chịu thua Touya còn liền thật lôi kéo Yukito đi đến đại thúc quầy hàng thượng rửa mối nhục xưa, cảm thấy mỹ mãn mà vớt hơn hai mươi điều tiểu cá vàng về nhà.</p>
+        <p>“Ta còn tưởng rằng cái này huy chương ở lão bản đại thúc kia.” Touya cười, “Sau lại chúng ta đi thời điểm, đại thúc lỏng thật lớn một hơi.”</p>
+        <p>“Ta nói đi toilet, sau đó trộm cố ý đi tìm đại thúc.” Yukito nhấp môi, trên mặt cũng mang theo cười, “Vốn định mua trở về, kết quả đại thúc thấy ta liền đem huy chương đưa cho ta, nói ta đôi mắt liền kém dính vào mặt trên.”</p>
+        <p>Touya nhận ra một khác dạng vật nhỏ, kinh ngạc nói: “Ân? Này ngươi cũng lưu trữ? Ta nhớ rõ đây là lần đó toán học thi đua thời điểm……”</p>
+        <p>……</p>
+        <p>Hộp đồ vật không nhiều lắm, nhưng cũng đích xác không ít, xen kẽ ở hai người mấy năm hồi ức, tràn đầy ái muội tiệm sinh tình tố.</p>
+        <p>Touya tầm mắt cuối cùng dừng lại ở hộp trung ương, nơi đó lẳng lặng nằm một quả tiểu xảo đáng yêu đào hoa kẹp tóc.</p>
+        <p>Này thật sự không giống như là bọn họ trung bất luận cái gì một người đồ vật.</p>
+        <p>Yukito nhìn cái kia đào hoa kẹp tóc cũng có chút hoang mang: “Cái này…… Ta không nhớ rõ là khi nào bỏ vào tới, nhưng là tổng cảm thấy là rất quan trọng đồ vật.”</p>
+        <p>“Giống như……” Yukito ánh mắt có chút mê hoặc, như là nỗ lực hồi tưởng lại không có kết quả mờ mịt, “Hình như là thực để ý người đưa lễ vật?”</p>
+        <p>Touya lại đột nhiên phản ứng lại đây.</p>
+        <p>Yukito ký ức phát sinh ở nguyệt, nhưng lại cũng không có bao hàm nguyệt toàn bộ ký ức.</p>
+        <p>Nếu là Yukito có ấn tượng lại không nhớ rõ nơi phát ra đồ vật, có lẽ .</p>
+        <p>Cái này đào hoa kẹp tóc, đều không phải là Yukito đồ vật, mà là thuộc về…… Nguyệt.</p>
+        <p>Yukito nhìn chằm chằm hộp xuất thần hồi lâu, sau đó làm một cái Touya thập phần kinh ngạc thả khó hiểu hành động.</p>
+        <p>Hắn đem cái kia đào hoa kẹp tóc từ hộp lấy ra tới, đưa cho Touya.</p>
+        <p>Touya sửng sốt: “? Cho ta sao?”</p>
+        <p>Yukito gật gật đầu, biểu tình nghiêm túc: “Ta trực giác nói cho ta, ta hẳn là ở ngay lúc này, đem nó giao cho ngươi.”</p>
+        <p>-------------DFY--------------</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong13.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong15.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "so-tay-chan-nuoi-truc-ma-cua-kinomoto-kun";
+const NOVEL_TITLE = "Sổ Tay Chăn Nuôi Trúc Mã Của Kinomoto-Kun";
+const CHAPTER_TITLE = "Chương 14";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+
+});
+</script>
+</body>
+</html>

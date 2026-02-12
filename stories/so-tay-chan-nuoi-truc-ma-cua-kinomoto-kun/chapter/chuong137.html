@@ -1,0 +1,881 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 137</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+<body class="page-chapter">
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Sổ Tay Chăn Nuôi Trúc Mã Của Kinomoto-Kun
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 137</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong136.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong138.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+
+        <p>Rút thăm trạm thứ nhất, là Kanagawa hải.</p>
+        <p>Này từ đông đi đến tây, có thể trông về phía xa toàn bộ núi Phú Sĩ tương mô loan, là Tokyo đại học kia một năm kế hoạch, đã từng hai người vắng họp kia tràng tu học lữ hành.</p>
+        <p>Đường phố biên thụ cao ngất trong mây, đường cái liên tiếp bờ cát, cùng hải tương vọng.</p>
+        <p>Du khách như dệt, thuyền buồm cùng ván lướt sóng ở màu lam sóng biển xuyên qua, náo nhiệt tiếng cười xa xa truyền đến, trời xanh cùng sóng biển dung hợp ở bên nhau, thổi qua mỗi một tia phong đều viết lãng mạn cùng tình yêu.</p>
+        <p>Bọn họ tay nắm tay, từ đường cái này đầu vẫn luôn đi đến đế, sau đó dọc theo bãi biển, từ ngày treo cao đi đến mặt trời chiều ngả về tây.</p>
+        <p>Ăn cơm xong, hai người ước định ở dân túc cửa thấy, đi chuẩn bị cấp đối phương lễ vật, bổ mắc mưu năm bỏ lỡ tu học lễ vật.</p>
+        <p>Xuyên qua quá đan chéo hẻm nhỏ, tế tế mật mật nước mưa rơi xuống, từ nhỏ hẻm hai đầu chạy tới hai người chạm mặt cùng gia cửa hàng bán hoa trước, ngạc nhiên nhìn nhau sau một lúc lâu, rồi sau đó đồng thời cười ra tiếng tới, đi vào trong tiệm, vì đối phương chọn lựa một bó hoa.</p>
+        <p>Từ cửa hàng bán hoa ra tới, bên ngoài dấu hiệu sắp mưa tiệm thu, hai người trong lòng ngực đều ôm một tiểu thúc hoa.</p>
+        <p>Yukito nhìn về phía Touya trong lòng ngực dương cát cánh, mặt mày một loan.</p>
+        <p>Touya tắc nhìn chằm chằm Yukito trong lòng ngực hoa hướng dương, trong mắt ý cười dần dần dày.</p>
+        <p>“Chạy về đi thôi?” Touya bỗng nhiên ra tiếng, vươn tay nắm lấy Yukito.</p>
+        <p>Yukito trong mắt hiện lên giảo hoạt, lôi kéo Touya trực tiếp vọt vào màn mưa.</p>
+        <p>Touya ngạc nhiên một cái chớp mắt, rồi sau đó bước nhanh đuổi theo Yukito, đem trong tay dương cát cánh nhét vào Yukito trong lòng ngực, thoát thân thượng áo khoác chống ở hai người đỉnh đầu, đem Yukito khóa lại trong lòng ngực.</p>
+        <p>Một đường chạy về dân túc, ướt đẫm hai người nắm tay lên lầu, ở trở tay đóng cửa lại nháy mắt, Touya đem Yukito để ở ván cửa thượng, giơ tay phủng Yukito gương mặt, cực nóng mà kịch liệt hôn lên đi.</p>
+        <p>Dương cát cánh cùng hoa hướng dương hương khí bị xoa nát cùng hơi nước bốc hơi ở bên nhau, lây dính ở hai người ướt đẫm áo sơmi thượng, cuối cùng cánh hoa hỗn hợp ở bên nhau, ngã vào mềm mại sô pha.</p>
+        <p>Hoa ngữ đại biểu chân thành cùng trầm mặc hoa chi quấn quanh ở bên nhau, lưu luyến ra vĩnh hằng bất biến ái.</p>
+        <p>……</p>
+        <p>Lữ hành đệ nhị đứng ở cách xa nhau không xa Hakone.</p>
+        <p>Bọn họ đi Hakone suối nước nóng, so với ấm áp dòng nước, Yukito càng thích Hakone mỹ thực, hơn nữa tiếc nuối không có thể ăn đến càng nhiều suối nước nóng trứng.</p>
+        <p>Nguyệt nhưng thật ra ở đem Touya đuổi đi lúc sau, cẩn thận rửa sạch chính mình bị làm dơ cánh . chỉ tiếc đêm đó lại bị lây dính thượng dấu vết.</p>
+        <p>Nhưng là cũng may ngày hôm sau lên khi, cánh chim đã khôi phục sạch sẽ thoải mái thanh tân, tinh linh ở hừ nhẹ một tiếng lúc sau, tha thứ nửa quỳ ở trên giường ái nhân.</p>
+        <p>Ban đêm công viên giải trí đèn đuốc sáng trưng, Touya trên tay bị trói một chuỗi khí cầu, xa xa nhìn qua lộ ra chút tương phản manh đáng yêu.</p>
+        <p>Hai người đều ăn mặc áo tắm, đứng ở ngựa gỗ xoay tròn trước nghe xong trong chốc lát nhạc khúc, cho nhau nhìn đối phương liếc mắt một cái, đánh mất muốn đi lên chuyển một vòng ý niệm.</p>
+        <p>Sáng lạn lửa khói xông lên bầu trời đêm, Touya kéo xuống trên cổ tay khí cầu, cúi người nghiêng đầu hôn lên ái nhân môi.</p>
+        <p>Phía sau, ngựa gỗ xoay tròn âm nhạc sung sướng mà du dương, loang lổ hoa mỹ quang túm ra một vòng lại một vòng mộng.</p>
+        <p>……</p>
+        <p>Lữ hành đệ tam trạm, bọn họ đi lịch sử đã lâu Tokyo đại học.</p>
+        <p>Bọn họ vòng quanh sân thể dục đi rồi một vòng lại một vòng, đi ngang qua bạn cùng trường bảng khi, Yukito còn ở mặt trên tìm được rồi Touya tên cùng mặt vô biểu tình đầu to ảnh chụp.</p>
+        <p>Yukito đứng ở mục thông báo trước, từng câu niệm ra mặt trên miêu tả Touya văn tự, trên mặt mang theo ngăn không được cười.</p>
+        <p>Touya bên tai ít có mà thiêu hồng, khiêng ác thú vị con thỏ xoay người đi nhanh rời xa làm người xấu hổ vinh dự bảng.</p>
+        <p>Thực đường học sinh nhưng thật ra không ít, rốt cuộc so với bên ngoài, ở chỗ này dùng cơm đích xác rất là hàng ngon giá rẻ.</p>
+        <p>Yukito một người ăn năm chén mì sợi, chồng lên chén làm bên cạnh học sinh trợn mắt há hốc mồm.</p>
+        <p>Bọn họ từ luật học viện một đường đi đến số lý học viện, trải qua một cái thật dài thật dài cây ngô đồng tiểu đạo, ở bị bọn học sinh diễn xưng là tình nhân hành lang cuối hôn môi.</p>
+        <p>Chính trực nghỉ hè, khu dạy học có vẻ có chút trống vắng.</p>
+        <p>Bọn họ chọn một cái không có người phòng học, lẳng lặng ngồi ở dựa cửa sổ vị trí.</p>
+        <p>Hoàng hôn kim sắc ánh chiều tà bao phủ mà xuống, Yukito ngồi ở trước tòa, phản ghé vào ghế sau bàn học thượng, nhắm hai mắt mơ màng sắp ngủ.</p>
+        <p>Ngồi ở ghế sau Touya nâng lên một bàn tay chống gương mặt, ánh mắt ôn nhu nhìn chăm chú vào ái nhân, ở ấm kim sắc ánh sáng nhu hòa hạ, dùng ngón tay từng điểm từng điểm vuốt ve ái nhân sợi tóc.</p>
+        <p>Tuyết trắng cánh triển khai, ở phòng học rơi rụng tinh tinh điểm điểm ánh sáng nhạt.</p>
+        <p>Tỉnh lại nguyệt nhìn về phía Touya, mà Touya lưng dựa ở bên cửa sổ, hướng tới hắn vươn hai tay, thấp giọng nói: “Ta tổng cảm thấy…… Ngươi thiếu ta một cái hôn.”</p>
+        <p>Rất khó đến, nguyệt khóe môi hơi hơi khơi mào độ cung.</p>
+        <p>Nhưng hắn cũng không có động, mà là đứng ở tại chỗ, rũ mắt nói: “Ta khống chế không được.”</p>
+        <p>Hắn khống chế không được từ Touya trên người đoạt lấy ma lực nhiều ít, đó là tinh linh bản năng cầu sinh.</p>
+        <p>Ngũ quan thành thục sắc bén rất nhiều Touya ngồi ở chỗ kia, tín nhiệm mà mềm mại mà rộng mở chính mình, như nhau nhiều năm trước cao trung thời kỳ thanh niên.</p>
+        <p>“Nhưng ngươi yêu ta.”</p>
+        <p>Nguyệt đứng ở tại chỗ hồi lâu, tuyết trắng mà thật lớn hai cánh về phía sau giãn ra, mũi chân nhẹ điểm, chậm rãi tới gần.</p>
+        <p>Ma lực giơ lên bị thúc khởi màu ngân bạch đuôi tóc, vạt áo phiên phi dưới, ánh trăng tinh linh hôn lên ngẩng cổ chờ chém ái nhân, hơi lạnh ngón tay đáp trong người trước ái nhân đầu vai, du kéo ở thâm sắc hầu kết biên.</p>
+        <p>Ma lực chậm rãi rơi xuống, nguyệt tới gần Touya trong lòng ngực, nhẹ nhàng nhắm mắt lại.</p>
+        <p>“Ngươi luôn là đối.”</p>
+        <p>Bọn họ chi gian đánh cuộc, Touya tựa hồ luôn là thắng được kia một phương.</p>
+        <p>Touya vòng lấy trong lòng ngực tinh linh, cánh môi dán nguyệt thái dương, nóng cháy nóng bỏng.</p>
+        <p>“Bởi vì ta biết, ngươi sẽ làm ta thắng.”</p>
+        <p>……</p>
+        <p>Lữ hành thứ 4 trạm, bọn họ về tới thị trấn Tomoeda.</p>
+        <p>Nơi này đường phố cùng hoa cỏ như nhau trong trí nhớ quen thuộc, đi qua ngã tư đường, Yukito tay vói vào túi áo, chớp chớp mắt, sờ ra một quả chanh vị kẹo.</p>
+        <p>Năm đó thích chanh đường tiểu nữ hài đã trưởng thành đại cô nương, vì thế Yukito lột ra lưu li sắc giấy gói kẹo, đem chua ngọt kẹo nhét vào ca ca trong miệng.</p>
+        <p>Touya bởi vì chanh đường nhập khẩu vị chua hung hăng nhíu hạ mi, thấy bên người Yukito cười đến mi mắt cong cong, dưới chân vừa động, biểu tình nhàn nhạt mà đem người để ở cây hoa anh đào đầu hạ bóng ma.</p>
+        <p>Trong miệng dư vị ra ngọt lành kẹo bị vượt qua đi lại cướp về, thẳng đến trước hết trò đùa dai người thở hổn hển liên tục xin tha.</p>
+        <p>Trạm ở cửa nhà, Touya giơ tay ấn xuống chuông cửa.</p>
+        <p>Trong môn một trận tiếng bước chân truyền đến, Fujitaka ba ba mở cửa, cười nói: “Hoan nghênh về nhà.”</p>
+        <p>Phòng bếp bỗng nhiên phát ra một thanh âm vang lên động, Fujitaka ba ba biểu tình biến đổi, vội vàng xoay người hướng tới phòng bếp bước nhanh đi qua đi.</p>
+        <p>Trong phòng bếp, biểu tình vô tội Nadeshiko mụ mụ thu hồi tay, đôi tay bối ở sau người, cười chớp chớp mắt.</p>
+        <p>Fujitaka ba ba nhẹ nhàng thở ra, nhưng biểu tình như cũ có chút lo lắng mà kiểm tra Nadeshiko mụ mụ tay, hoàn toàn không nghĩ tới cả người bao phủ màu trắng ánh sáng nhạt Nadeshiko mụ mụ sớm đã sẽ không bị năng đến sự thật.</p>
+        <p>Touya đứng ở cách đó không xa, hốc mắt ửng đỏ, hầu kết trên dưới lăn lộn, ách thanh kêu: “Mụ mụ……”</p>
+        <p>Nhiều năm trôi qua, hắn lại một lần thấy được mẫu thân.</p>
+        <p>Ôn nhu Nadeshiko mụ mụ bay đến Touya trước người, làn váy dạng nở hoa cánh giống nhau độ cung, khoa tay múa chân một chút Touya vóc dáng, tươi cười vui mừng mà hạnh phúc.</p>
+        <p>Trong phòng bếp, Fujitaka ba ba cùng Touya cùng nhau bận rộn bữa tối, ở Touya công tác lúc sau, bởi vì bận rộn phi thường duyên cớ, hai cha con đã rất ít như vậy như vậy ở chung qua.</p>
+        <p>Fujitaka ba ba một bên thế sườn heo bọc lên trứng gà dịch cùng bột chiên xù, một bên cười khẽ hỏi: “Tốt nghiệp khi Touya nói đánh mất như vậy trân bảo, hiện tại đã tìm trở về sao?”</p>
+        <p>Touya nhìn về phía phòng khách dương cầm biên, một bên nhẹ giọng giao lưu, một bên ngẫu nhiên ấn động phím đàn nguyệt cùng mẫu thân.</p>
+        <p>“Ân, tìm trở về.”</p>
+        <p>Hắn dắt khóe môi, thấp giọng trả lời.</p>
+        <p>……</p>
+        <p>Lữ hành trạm cuối cùng, bọn họ phiêu dương quá hải, ngồi phi cơ, thừa thuyền, đi tới Hong Kong.</p>
+        <p>Ly biệt trước, cũng gần chỉ là một cái ôm, một cái khẽ hôn.</p>
+        <p>Rồi sau đó, một cái lưu tại Hong Kong, một cái về tới Tokyo.</p>
+        <p>Yukito bắt đầu thực nỗ lực phụ lục, chuẩn bị tư liệu phỏng vấn Hong Kong quốc tế trường học ngoại giáo lão sư.</p>
+        <p>Nguyệt cũng không hề phát ngốc, bắt đầu thường xuyên ra vào Lý gia kho sách, tìm kiếm ra đã từng Clow Reed lưu lại bút ký, ở bên trong phát hiện một đạo ma pháp trận.</p>
+        <p>Sakura trộm từ ngoài cửa phòng thăm tiến đầu, tiến đến Yukito bên người, nhìn Yukito trên bàn toán học đề, hít ngược một hơi khí lạnh.</p>
+        <p>Nàng từ nhỏ nhất đau đầu chính là toán học, còn hảo tốt nghiệp sớm, nếu lúc trước giáo nàng toán học lão sư là Yukito ca nói……</p>
+        <p>Sakura tức khắc đánh cái rùng mình.</p>
+        <p>Yukito có chút phúc hắc mà cười nói: “Nói lên, phỏng vấn nói yêu cầu thí giảng, Sakura tới hỗ trợ mô phỏng vừa tan học đường được không?”</p>
+        <p>Sakura vội vàng xua tay, điên cuồng lắc đầu, hơn nữa nhanh chóng đẩy ra Kero: “Ta trảo Kero lại đây giúp Yukito ca!”</p>
+        <p>Yukito không nhịn cười ra tiếng tới, giơ tay xoa xoa Sakura đầu, ôn nhu mà chế nhạo tiểu cô nương: “Như thế nào vẫn là như vậy sợ hãi toán học?”</p>
+        <p>Sakura thở dài, nhỏ giọng lẩm bẩm: “Kia ta cũng không có cách nào sao…… Toán học như vậy khó.”</p>
+        <p>“Cảm giác ta bên người toán học tốt nhất chính là Yukito ca.”</p>
+        <p>Yukito nghe đến đó, sườn phía dưới, dừng một chút, lắc đầu nói: “Không phải nga.”</p>
+        <p>“Touya toán học so với ta muốn hảo rất nhiều.”</p>
+        <p>“Ai? Vì cái gì?”</p>
+        <p>Sakura hồi tưởng cao trung thời kỳ nhà mình ca ca toán học thành tích, tuy rằng nàng kia có thể nói hình lục giác chiến sĩ ca ca đích xác không có gì không am hiểu, tuyệt đối so với không thượng toán học nhiều lần mãn phân, đại học lại chuyên tu số lý Yukito ca đi?</p>
+        <p>Yukito ngòi bút nhẹ nhàng điểm còn không có viết công thức giấy viết bản thảo, ánh mắt ôn nhu.</p>
+        <p>“Bởi vì, hắn đem ta cho rằng vô giải một đạo đề, làm ra có thả chỉ có đáp án.”</p>
+        <p>-------------DFY--------------</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong136.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong138.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "so-tay-chan-nuoi-truc-ma-cua-kinomoto-kun";
+const NOVEL_TITLE = "Sổ Tay Chăn Nuôi Trúc Mã Của Kinomoto-Kun";
+const CHAPTER_TITLE = "Chương 137";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+
+});
+</script>
+</body>
+</html>

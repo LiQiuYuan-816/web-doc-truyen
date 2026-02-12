@@ -1,0 +1,881 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 11</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+<body class="page-chapter">
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Sổ Tay Chăn Nuôi Trúc Mã Của Kinomoto-Kun
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 11</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+
+
+        <p>Hôm nay là Tomoeda tiểu học đại hội thể thao, Sakura từ trước hai ngày bắt đầu liền vẫn luôn ở vào hưng phấn trạng thái, hôm nay càng là sớm liền hừ ca tươi cười đầy mặt mà chạy tới trường học.</p>
+        <p>Bởi vì là nghỉ ngơi ngày duyên cớ, Touya cùng Yukito cũng sẽ đi tham gia đại hội thể thao, chẳng qua báo danh đại hội thể thao gia trưởng hỗ động phân đoạn Fujitaka ba ba bởi vì đột nhiên công tác, sẽ vãn một chút mới đi Sakura trường học.</p>
+        <p>Chuẩn bị tiện lợi công tác liền dừng ở Touya trên người.</p>
+        <p>Vây quanh tạp dề Touya nghe được chuông cửa thanh, đi qua đi thế đứng ở ngoài cửa Yukito mở cửa.</p>
+        <p>Yukito trong tay dẫn theo hai đại bao nguyên liệu nấu ăn, đi vào huyền quan, cười nói: “Buổi sáng đột nhiên gọi điện thoại cho ta, làm ta giật cả mình đâu.”</p>
+        <p>“Thật sự?” Touya khom lưng đang ở từ trong ngăn tủ lấy tạp dề, nghe thấy Yukito nói, nguyên bản duỗi hướng thiển già sắc tạp dề tay ngược lại dừng ở hồng nhạt hoa hoa trên tạp dề, “Ta tưởng người nào đó đang ở cửa hàng tiện lợi tìm hôm nay phân bánh mì ăn.”</p>
+        <p>“Không phải nga, chỉ là hôm nay buổi sáng bánh mì.” Yukito cười tủm tỉm mà sửa đúng nói, rồi sau đó đem trong tay nguyên liệu nấu ăn đặt ở đảo bếp bên cạnh.</p>
+        <p>Trước hai ngày Touya liền nói muốn hắn cùng đi tham gia Sakura đại hội thể thao, Yukito đương nhiên chỉ cần ở buổi sáng điền no chính mình bụng, bởi vì giữa trưa lúc sau hắn bụng liền về Touya quản.</p>
+        <p>Yukito đem nguyên liệu nấu ăn đều từ trong túi lấy ra tới, mới vừa xoay người đã bị phía sau dán lại đây Touya hoảng sợ.</p>
+        <p>Yukito: “?”</p>
+        <p>Touya xách theo trong tay tạp dề, ngón tay run lên, ở Yukito trước mặt triển khai: “Ở phòng bếp muốn đem tạp dề mặc tốt, Yuki cũng không nghĩ trong chốc lát ra cửa trên người lây dính dầu mỡ đi?”</p>
+        <p>Yukito nhìn gần trong gang tấc hồng nhạt toái hoa tạp dề, trầm mặc một chút.</p>
+        <p>Đạo lý hắn đều minh bạch, chính là vì cái gì là hồng nhạt?</p>
+        <p>Yukito ánh mắt chếch đi đến Kinomoto trạch phóng tạp dề tủ bát ngăn kéo thượng . hắn rõ ràng nhớ rõ, trừ bỏ Touya trên người màu nâu tạp dề, hẳn là còn có mặt khác nhan sắc.</p>
+        <p>Trừ bỏ hồng nhạt tiểu hoa ở ngoài, mặt khác tạp dề.</p>
+        <p>Touya đương nhiên mà mở miệng: “Bởi vì Yuki không có dựa theo phía trước ước định hảo hảo ăn cơm, ý đồ dùng bánh mì lừa dối quá quan, cho nên muốn đã chịu trừng phạt.”</p>
+        <p>Yukito: “……?”</p>
+        <p>Hảo tính tình Tsukishiro con thỏ hướng về phía Touya giơ tay, làm Touya đem tạp dề tròng lên chính mình giữa cổ.</p>
+        <p>Hồng nhạt kỳ thật cũng rất đáng yêu đâu.</p>
+        <p>Yukito đang muốn buông tay đi hệ phía sau dây lưng, Touya cũng đã thập phần tự nhiên vươn tay đi hư hư hợp lại Yukito vòng eo, cánh tay cọ qua Yukito bên hông chợt căng thẳng cơ bắp, ở Yukito phía sau đem tạp dề dây lưng đánh một cái xinh đẹp nơ con bướm.</p>
+        <p>“Hảo.” Touya lui về phía sau một bước, thần thái tự nhiên mà đi đến phòng bếp một góc tủ lạnh, từ bên trong cầm chút trứng tôm ra tới.</p>
+        <p>Yukito thân thể thoáng ngửa ra sau một chút, dựa vào đảo bếp bên cạnh, lạnh lẽo độ ấm xuyên thấu qua áo sơmi xâm nhập da thịt, mang đến vài phần tỉnh thần mát lạnh.</p>
+        <p>Yukito trở tay sờ sờ phía sau nho nhỏ nơ con bướm, cong môi cười một chút, không nói cái gì nữa, mà là ngược lại hỏi Touya nói: “Cơm có chưng hảo sao?”</p>
+        <p>“A, ở bên kia.”</p>
+        <p>“Ngô…… Thật là không ít phân lượng đâu.”</p>
+        <p>“Hôm nay cùng nhau ăn tiện lợi người sẽ tương đối nhiều, vất vả.”</p>
+        <p>“Như vậy, kia chỉ có cơm nắm có thể hay không không đủ? Lại thêm một phần gà rán khối, tạc tôm, hậu trứng thiêu…… A, nãi nước hấp đồ ăn cũng không tồi!”</p>
+        <p>***</p>
+        <p>“Tóm lại, ta cùng Touya càng làm càng nhiều, liền không cẩn thận quá nhiều một chút. Cho nên Sakura bằng hữu phương tiện nói, có thể cùng nhau tới ăn nga.”</p>
+        <p>Yukito đầu tiên là khom lưng khen vừa rồi chạy nước rút đệ nhất Sakura, rồi sau đó cười ngâm ngâm nói.</p>
+        <p>Một thân giỏi giang vận động trang Sakura nhìn Touya trong tay dẫn theo hai cái thật lớn tiện lợi hộp, chớp chớp mắt: “Như vậy a……”</p>
+        <p>Cách đó không xa, bởi vì vừa rồi chạy nước rút bại bởi Sakura mà không phục Syaoran cũng đang nhìn cái kia phương hướng, chẳng qua hắn tầm mắt ở Touya cùng Yukito chi gian qua lại băn khoăn, trên mặt biểu tình muôn hồng nghìn tía đến đổi tới đổi lui, rất là xuất sắc.</p>
+        <p>Tomoyo không biết khi nào đi đến hắn bên người, ôn ôn nhu nhu mà cười nói: “Ai nha, Kinomoto ca ca cùng Tsukishiro ca ca vẫn là ở bên nhau đâu.”</p>
+        <p>Syaoran nhấp môi, không cam lòng mà nhìn mắt cho dù xa như vậy khoảng cách xem, cũng như cũ như là ở sáng lên Yukito, tiểu tiểu thanh hỏi: “Bọn họ…… Thường xuyên ở bên nhau sao?”</p>
+        <p>“Đối nga, vẫn luôn ở bên nhau.” Tomoyo trong tay cầm DV, Sakura đối mặt Tsukishiro ca ca khi thẹn thùng bộ dáng cũng siêu cấp đáng yêu đâu!</p>
+        <p>“Tiện lợi hộp rất lớn thực trầm bộ dáng.” Tomoyo cười nói, “Chính là Tsukishiro ca ca trong lòng ngực chỉ có một cái bình giữ ấm, tổng cảm giác Kinomoto ca ca thật sự có thực tốt chiếu cố Tsukishiro ca ca đâu.”</p>
+        <p>Syaoran: “?”</p>
+        <p>Nam hài tử, đặc biệt là cũng không có thông suốt thả tâm tư cũng không có như vậy tinh tế nam hài tử, căn bản không có nhìn ra như vậy nhiều loanh quanh lòng vòng.</p>
+        <p>Nhưng là .</p>
+        <p>Li Syaoran lại trộm nhìn thoáng qua cái kia phương hướng, khẽ hừ một tiếng, xoay người liền phải rời đi.</p>
+        <p>“Tomoyo .! A…… Lý quân cũng ở.” Trùng hợp lúc này xoay người nhìn đến Tomoyo Sakura giương giọng hô, rồi sau đó hai ba bước chạy đến hai người trước mặt, giơ lên một cái xán lạn tươi cười, “Chúng ta cùng ca ca còn có Yukito ca cùng nhau ăn cơm đi? Lý quân muốn hay không cũng tới?”</p>
+        <p>Mọi nơi nhìn mắt, ở mẫu thân bí thư lắc đầu ý bảo Tomoyo mẫu thân còn chưa tới lúc sau, Tomoyo trong ánh mắt hiện lên mất mát, nhưng thực mau lại mỉm cười đáp: “Hảo nga.”</p>
+        <p>Li Syaoran còn lại là không biết trong đầu nghĩ tới cái gì, đỏ mặt, ồm ồm mà cũng ứng thanh “Cảm ơn”.</p>
+        <p>……</p>
+        <p>Dùng xong cơm trưa, thực mau liền tới đến đại hội thể thao buổi chiều tràng, gia trưởng phân đoạn cự ly ngắn thi chạy.</p>
+        <p>Fujitaka ba ba cùng Tomoyo mụ mụ thật vất vả tạp điểm tới rồi, cái này làm cho Sakura cùng Tomoyo trên mặt nguyên bản lo lắng mất mát trở thành hư không.</p>
+        <p>Touya ở thi đấu bắt đầu trước liền cùng Yukito vòng đi Tomoeda tiểu học khu dạy học mặt sau, theo thân cây cùng lan can phiên thượng khu dạy học mái nhà.</p>
+        <p>“Thật sự muốn cho bá phụ đi tham gia thi đấu sao?” Nghe được sân thể dục truyền đến quảng bá thanh, Yukito quay đầu xa xa nhìn thoáng qua, “Bá phụ cảm giác cùng Daidouji tang mẫu thân…… Ta là có thể hỏi một câu nguyên do, vẫn là bảo trì trầm mặc tương đối hảo?”</p>
+        <p>Touya giơ tay gãi gãi gương mặt, có chút buồn rầu lại có chút bất đắc dĩ mà thở dài: “Vị kia Daidouji phu nhân, ở kết hôn trước tên là Amamiya Sonomi. Là ta mẫu thân đường tỷ muội, hai người quan hệ thập phần thân thiết.”</p>
+        <p>“Liền giống như Sakura cùng Tomoyo giống nhau, Sonomi tiểu thư cùng mẫu thân của ta cũng từng như hình với bóng. Ngô…… Mẫu thân cùng phụ thân kết hợp cũng không có làm trong nhà tiếp thu, hơn nữa mẫu thân sau lại sinh bệnh sớm rời đi……”</p>
+        <p>Kỳ thật những việc này Fujitaka ba ba ở trong nhà rất ít đề cập, rất nhiều đều là Touya cùng Nadeshiko mụ mụ nói chuyện phiếm thời điểm, từ Nadeshiko mụ mụ trong miệng biết được.</p>
+        <p>“Nói tóm lại, không có quan hệ.” Trưởng bối sự Touya cũng cũng không có lập trường nhúng tay, càng miễn bàn là bởi vì mẫu thân qua đời mà lưu lại bế tắc.</p>
+        <p>“Như vậy.” Yukito trên mặt kinh ngạc biểu tình dần dần giấu đi, cười hạ nói, “Cảm giác Touya nói, sẽ làm ra thực lý trí lựa chọn, điểm này thượng khả năng không quá sẽ tùy trưởng bối.”</p>
+        <p>Touya nhìn mắt Yukito, ý vị không rõ mà hừ cười một tiếng.</p>
+        <p>. kia nhưng chưa chắc.</p>
+        <p>Yukito bởi vì này một tiếng hừ cười chớp chớp mắt.</p>
+        <p>Touya duỗi tay qua đi loát một phen Yukito bị phong vén lên sợi tóc, nói sang chuyện khác nói: “Lạnh không?”</p>
+        <p>Chỗ cao phong sẽ càng ồn ào náo động một ít, nhưng Yukito ra cửa bị Touya mạnh mẽ bộ áo khoác, nhưng thật ra cũng không có cảm giác được lạnh lẽo, xoay chuyển thân thể đưa lưng về phía phong tới phương hướng, hỏi Touya nói: “Đang đợi thẻ bài Clow?”</p>
+        <p>Yukito thực hiểu biết Touya, bởi vì lấy hắn thiên phú trí tuệ, tầm thường việc học cũng không có gì đáng giá tiêu phí quá nhiều tinh lực.</p>
+        <p>Hắn đem hắn sở hữu chuyên chú cùng ánh mắt, đều lưu tại Touya cùng với Touya có quan hệ sự tình thượng.</p>
+        <p>“Ân.”</p>
+        <p>Touya đem thế hắn chắn phong Yukito kéo đến chính mình bên người, hai người liền ở mái nhà nhô lên kiến trúc tích ra tránh gió hình tam giác bóng ma sóng vai dựa vào.</p>
+        <p>Touya duỗi tay tiếp được một mảnh bay tán loạn cánh hoa, đưa cho Yukito: “Nàng tới.”</p>
+        <p>Yukito cũng thấy được ở nóc nhà mông lung ánh sáng trung càng ngày càng sáng ngời hồng nhạt.</p>
+        <p>Tảng lớn tảng lớn cánh hoa ở không trung bay múa, người mặc váy dài tóc quăn tinh linh ở ma lực quang mang trung khởi vũ, ở chú ý tới Yukito cùng Touya ánh mắt sau đối hai người lộ ra một cái xán lạn tươi cười.</p>
+        <p>“Thật đúng là chính là giống hoa giống nhau thẻ bài Clow a……” Yukito kinh ngạc mà nhìn phấn váy theo gió phi dương tinh linh.</p>
+        <p>Touya khóe môi ngoéo một cái.</p>
+        <p>Ban đầu thời điểm Touya cũng không có phản ứng lại đây, nhưng là Yukito vài lần ở thẻ bài Clow sự tình thượng, đều cùng hắn làm biết trước mộng giống nhau có được rất mạnh nhạy bén lực, cho nên ở Yukito ngày đó nói 『 The Flower 』 bài sau, Touya liền trước tiên đi hỏi qua Cerberus.</p>
+        <p>Phía trước Sakura thu phục 『 The Flower 』 bài khi, Touya tuy rằng ở hiện trường nhưng cũng không có quá nhiều chú ý, nghe Clow bối Lạc tư nói lên này trương bài hảo tính tình cùng yêu thích sau, mới đại khái đoán được Sakura ngày đó về nhà trên người nồng đậm mùi hoa khí là chuyện như thế nào.</p>
+        <p>『 The Flower 』 bài là tính tình thực dịu ngoan một trương bài, thích khiêu vũ, thích tặng cho hoa tươi, càng quan trọng là, nàng thích vui sướng cùng thế gian hết thảy lệnh người sung sướng tình cảm.</p>
+        <p>Đại hội thể thao thượng thuần túy sung sướng hấp dẫn tới thích náo nhiệt 『 The Flower 』 bài, cho nên nàng ở chỗ này khởi vũ, nếu không phải càng thêm hấp dẫn nàng tình cảm, nàng sẽ không từ bỏ tham dự đại hội thể thao vui sướng.</p>
+        <p>“Khiêu vũ phải không?” Touya nhìn về phía sân thể dục thượng càng tích càng hậu cánh hoa, đứng thẳng thân mình hướng tới 『 The Flower 』 bài nơi vị trí đến gần hai bước, “Minh bạch.”</p>
+        <p>『 The Flower 』 bài còn ở quên mình mà xoay tròn khởi vũ, Touya lại ở đầy trời bay múa cánh hoa trung chuyển thân hướng tới phía sau Yukito vươn tay.</p>
+        <p>“Yuki.” Touya trên mặt hiện ra ý cười, “Tới khiêu vũ sao?”</p>
+        <p>“Ai?” Yukito nhìn nhìn quanh thân hoàn cảnh, vẻ mặt mờ mịt, “Khiêu vũ? Ở…… Nơi này?”</p>
+        <p>『 The Flower 』 bài nghe được những lời này, dừng lại xoay tròn động tác, giơ tay che miệng mà cười, nhu hòa ma lực cuốn đi Yukito phía sau, đẩy một phen tại chỗ sững sờ Yukito.</p>
+        <p>Touya đem nhào vào chính mình trong lòng ngực Yukito tiếp vừa vặn, một bàn tay nâng Yukito eo giúp hắn đứng vững, một cái tay khác nắm lấy Yukito tay, bá đạo tiểu mạch sắc không tiếng động lại cường thế mà trượt vào trắng nõn ngón tay khe hở ngón tay gian, chậm rãi, mười ngón tay đan vào nhau.</p>
+        <p>『 The Flower 』 bài bắt đầu lo chính mình khởi vũ, không trung phiêu hạ cánh hoa càng thêm dày đặc lên.</p>
+        <p>“『 The Flower 』 nói, là phải cho nàng cũng đủ vui sướng cùng tình cảm, mới sẽ cam tâm tình nguyện bị thu phục thẻ bài Clow.”</p>
+        <p>Hai người cái trán tương để, Touya nhìn chăm chú vào Yukito đôi mắt, nhẹ giọng nói.</p>
+        <p>Yukito ngây người chỉ là trong nháy mắt, giây tiếp theo, hắn phản nắm lấy Touya tay, ngước mắt cười cong đôi mắt: “Cho nên, nguyên lai Touya còn nhớ rõ phía trước tập luyện hai người vũ?”</p>
+        <p>Touya tức khắc bị gợi lên nghĩ lại mà kinh hồi ức, năm trước vườn trường tế, kịch nói xã rút thăm khi Touya bị trừu đến công chúa Bạch Tuyết nhân vật……</p>
+        <p>Làm lúc ấy “Công chúa Bạch Tuyết” vương tử, Yukito cười ngâm ngâm mà tới gần trên mặt tức khắc cứng đờ Touya: “Touya?”</p>
+        <p>“…… Nhớ rõ.” Touya mặt vô biểu tình nói.</p>
+        <p>Còn không phải là nữ bước sao.</p>
+        <p>A.</p>
+        <p>Không có lễ phục, không có váy dài, thậm chí hai người trên người ăn mặc chỉ là bình thường thường phục, nhưng ở không người nhìn thấy chỗ cao phía trên, bọn họ ở đầy trời bay múa cánh hoa trung ôm nhau.</p>
+        <p>『 The Flower 』 bài không biết khi nào dừng lại, chính mỉm cười nhìn chăm chú vào hai người.</p>
+        <p>Nàng bay qua tới, đưa cho một vũ xong hai người một người một chi xán lạn mà chói mắt hoa hồng, xách lên làn váy, được rồi một cái uốn gối lễ.</p>
+        <p>Pháp trượng xuất hiện ở Touya trong tay, đem mỉm cười tinh linh dừng hình ảnh ở thẻ bài Clow trung ương hình ảnh phía trên.</p>
+        <p>……</p>
+        <p>“Khởi phong!”</p>
+        <p>“Phong đem cánh hoa đều thổi đi rồi! Mau kiểm tra nhìn xem vừa rồi có hay không người bị thương?”</p>
+        <p>……</p>
+        <p>Touya thu hồi pháp trượng, khoanh chân ở nóc nhà phía trên ngồi xuống, tầm mắt bắt giữ đến phía dưới sân thể dục phía trên đang ở cùng Sonomi tiểu thư không cho mảy may thi chạy Fujitaka ba ba.</p>
+        <p>“Nha, thoạt nhìn là bá phụ thắng đâu.” Yukito đứng ở Touya bên người, cũng nhìn về phía bị 『 The Windy 』 bài quét tước quá, chỉ còn lại có một chút cánh hoa tàn lưu sân thể dục.</p>
+        <p>“Ngô.”</p>
+        <p>Touya hồi tưởng một chút phía trước đại hội thể thao sau khi chấm dứt hai vị trưởng bối ở trên bàn cơm đối chọi gay gắt, quay đầu giơ tay câu lấy Yukito ngón tay.</p>
+        <p>“Yuki.”</p>
+        <p>“Ân?”</p>
+        <p>“Đêm nay, chúng ta vẫn là đi ra ngoài ăn đi.”</p>
+        <p>Sakura nói, hẳn là có thể ứng phó…… Đi?</p>
+        <p>Tác giả có chuyện nói:</p>
+        <p>Sakura: A a a a! ( khí thành cá nóc.gif )</p>
+        <p>-------------DFY-------------</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "so-tay-chan-nuoi-truc-ma-cua-kinomoto-kun";
+const NOVEL_TITLE = "Sổ Tay Chăn Nuôi Trúc Mã Của Kinomoto-Kun";
+const CHAPTER_TITLE = "Chương 11";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+
+});
+</script>
+</body>
+</html>

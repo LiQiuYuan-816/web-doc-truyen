@@ -1,0 +1,881 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 89</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+<body class="page-chapter">
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Sổ Tay Chăn Nuôi Trúc Mã Của Kinomoto-Kun
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 89</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong88.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong90.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+
+        <p>“Tomoyo!” Sakura xa xa thấy chờ ở đường phố khẩu Tomoyo, vội vàng chạy mau hai bước, “Xin lỗi, chờ thật lâu đi?”</p>
+        <p>Thật dài tóc quăn biên thành hai cổ tóc bím Tomoyo cười đỡ một phen Sakura, lắc đầu nói: “Không có nga, ta cũng là vừa mới đến.”</p>
+        <p>Từ Hakone trở về lúc sau, Fujitaka ba ba liền lần nữa đầu nhập công tác trung, Sakura nghỉ xuân muốn tới nàng sinh nhật sau hai ngày mới có thể kết thúc.</p>
+        <p>Tomoyo cũng là một người ở nhà, hai cái tiểu cô nương ăn nhịp với nhau, tính toán cùng đi cảm thấy hứng thú cửa hàng dạo một dạo thích đồ vật.</p>
+        <p>Sakura nhìn đến Tomoyo trong lòng ngực ôm thư, nghiêng đầu nói: “Ngươi đang xem thư sao?”</p>
+        <p>Tomoyo bị hỏi đến cái này thời điểm ánh mắt sáng lên, hứng thú bừng bừng nói: “Là gần nhất làm quần áo có sáng tác bình cảnh, cho nên muốn muốn tìm một chút tân linh cảm!”</p>
+        <p>Sakura nhìn Tomoyo ôm vào trong ngực thư, gằn từng chữ một mà đọc ra tên sách: “Long chi…… Mật ngữ?”</p>
+        <p>Sakura không khỏi liền nghĩ đến Hakone thời điểm cùng ca ca còn có Yukito ca cùng nhau giả làm khủng long bộ dáng, văn bản phong bì thượng ác long bỗng nhiên liền quay đầu, thình lình trường Touya mặt.</p>
+        <p>Sakura điên cuồng lắc đầu ném rớt đáng sợ liên tưởng, thái dương nhỏ giọt mồ hôi lạnh: “Cái này thư sẽ có cái gì linh cảm…… Ác, ác long sao?”</p>
+        <p>Tomoyo nghĩ nghĩ, nói: “Kỳ thật ta cũng không có tưởng hảo đâu, tổng cảm giác câu chuyện này giống như thiếu điểm cái gì giống nhau…… Ác long, dũng sĩ, công chúa…… Ân, hảo bình thường chuyện xưa a.”</p>
+        <p>“A, ta có ý tưởng!” Tomoyo bỗng nhiên đề cao thanh âm, “Đáng yêu tinh linh thiếu nữ gặp gỡ nhân loại vương tử, ở trên đường, có dũng có mưu các thiếu niên kết bạn rất nhiều đồng bọn, ở đi ngang qua bị ác long bối rối vương quốc khi, tiếp được quốc vương ủy thác, cùng nhau bước lên giải cứu nhân loại công chúa hành trình……”</p>
+        <p>“A, đáng yêu tinh linh thiếu nữ! Là cái không tồi chuyện xưa đâu ～” Tomoyo đắm chìm ở vừa rồi chuyện xưa, gương mặt phiếm hồng, “Không được, ta phải nhớ kỹ, bằng không về đến nhà, tinh linh Sakura linh cảm liền phải biến mất!”</p>
+        <p>Sakura biểu tình thập phần bất đắc dĩ: “Ha, ha, ha……”</p>
+        <p>“Không xong, hôm nay ra cửa không có mang notebook……”</p>
+        <p>Sakura sửng sốt một chút, sau đó từ chính mình bao bao móc ra một cái notebook đưa cho Tomoyo: “Dùng cái này được rồi!”</p>
+        <p>Tomoyo tiếp nhận cái kia phong bì là hắc bạch giản bút họa notebook, cũng không nhìn kỹ, liền bắt đầu ở trên vở bay nhanh ký lục vừa rồi linh cảm, còn thuận tay vẽ trong đầu chợt lóe mà qua trang phục thiết kế.</p>
+        <p>“Chờ lát nữa cùng nhau đi thư viện đi? Muốn nhìn xem còn có hay không mặt khác ảo tưởng tiểu thuyết……”</p>
+        <p>“Ảo tưởng tiểu thuyết?”</p>
+        <p>“Ân ân, chính là tưởng tượng ra tới, hiện thực bên trong cũng không tồn tại chuyện xưa……”</p>
+        <p>Bị Tomoyo bỏ vào bao bao notebook mặt ngoài xẹt qua một tia quang mang, giây lát lướt qua.</p>
+        <p>……</p>
+        <p>Về đến nhà, đem dv video chứa đựng tốt Tomoyo bỗng nhiên nhớ tới bao bao notebook, lấy ra tới sau mới phát hiện bìa mặt biến thành sao sáu cánh bộ dáng.</p>
+        <p>Ai? Phía trước Sakura cho ta thời điểm, bìa mặt là như thế này sao……?</p>
+        <p>Tomoyo suy nghĩ một hồi lâu, có chút không nhớ gì cả.</p>
+        <p>Mở ra notebook, Tomoyo nhìn ban ngày tùy tay viết xuống ít ỏi vài nét bút linh cảm, bỗng nhiên cảm thấy linh cảm bùng nổ, cầm lấy trên bàn bút, bắt đầu đem câu chuyện này phong phú lên.</p>
+        <p>“Ngô, mỗi một cái nhân vật đều hẳn là phải có nguyên bộ trang phục, phối sức, kiểu tóc……”</p>
+        <p>“A, còn có nơi này……”</p>
+        <p>Cường đại ma lực triển khai tới, theo Tomoyo ở notebook thượng thư viết văn tự càng ngày càng nhiều, cái kia thế giới chưa biết cũng càng thêm hoàn thiện lên.</p>
+        <p>Trong đêm tối, các tinh linh khó được ngửi được cường đại, không hề kinh sợ ý vị ma pháp hơi thở, bản năng hướng tới Daidouji trạch phương hướng tụ tập lại đây……</p>
+        <p>***</p>
+        <p>Là đêm · Kinomoto trạch</p>
+        <p>Touya tay cùng Yukito giao điệp, hai người nằm nghiêng ở trên giường, mặt đối mặt, hô hấp lâu dài.</p>
+        <p>Bỗng nhiên, Touya hô hấp một đốn, nắm Yukito tay căng thẳng, mí mắt khẽ run suy nghĩ muốn mở, lại cuối cùng lại lần nữa quy về bình tĩnh.</p>
+        <p>Vài giây sau, nguyệt bỗng nhiên cắt ra tới, phản nắm lấy Touya thủ đoạn, ánh mắt sắc bén.</p>
+        <p>Nhưng cùng tháng cảm giác được Touya trên người ma pháp giam cầm nơi phát ra khi, trên mặt hiện ra một loại cực kỳ hoang mang khó hiểu thần sắc.</p>
+        <p>Cái này ma lực dao động như thế nào cảm giác……</p>
+        <p>Nguyệt giơ tay nhất chiêu, ngăn kéo trung Thanh Không Bài cộng thêm không có thay đổi mấy trương thẻ bài Clow tất cả bay ra, hắn giương mắt nhìn nhìn, nhắm mắt, hít sâu một cái chớp mắt, mở miệng hỏi: “『 The Create 』 đi đâu?”</p>
+        <p>Thẻ bài nhóm ngươi đẩy ta xô đẩy một hồi lâu, sau đó đem phong ấn phía trước Touya nhị nửa đêm đào tới Auriel chi mắt 『 The Shield 』 đẩy ra tới.</p>
+        <p>Nghe xong bài nhóm ríu rít ngươi một câu ta một câu công đạo nguyệt: “……”</p>
+        <p>『 The Create 』 bài nguyên bản cũng không phải ma lực rất mạnh tinh linh, nhưng là nó sở dĩ bị gọi cùng 『 The Mirror 』 giống nhau đặc thù hình thẻ bài, nguyên nhân liền ở chỗ phong ấn tại 『 The Create 』 bài trung tinh linh, là một cái cũng không có tự chủ ý thức nhưng là cất chứa lực lại không có hạn mức cao nhất bài.</p>
+        <p>Nói ngắn gọn, 『 The Create 』 mạnh yếu quyết định bởi với nó hấp thu ma lực nhiều ít.</p>
+        <p>Lúc trước ma vật hoành hành thời kỳ, Clow đã từng dùng này trương bài đóng mấy chục cái tác loạn ma vật gần hơn nửa năm thời gian.</p>
+        <p>Giơ tay xoa xoa huyệt Thái Dương, nguyệt không cấm bắt đầu nghĩ lại một sự kiện .</p>
+        <p>Loại này Touya muốn hố Sakura kết quả phản quá mức hố đến chính mình trên người hành vi, đây là lần thứ mấy?</p>
+        <p>Nguyệt nhìn mắt lâm vào ma pháp Touya, bất đắc dĩ nằm xuống, không hề kháng cự 『 The Create 』 bài ma pháp, bị kéo vào 『 The Create 』 bài trong thế giới.</p>
+        <p>……</p>
+        <p>Ở kia cổ ma lực bao phủ trước khi đến đây, Touya là phản ứng lại đây, nhưng .</p>
+        <p>Touya cúi đầu, nhìn nhìn chính mình móng vuốt, lâm vào thật sâu trầm mặc.</p>
+        <p>Đối, móng vuốt.</p>
+        <p>Touya ở kim quang xán xán mà đồng vàng trong núi lay một chút, tổng cảm thấy thứ gì ở bụng phía dưới cộm đến hoảng, móng vuốt đào đào, móc ra tới một phen khảm đá quý trường kiếm.</p>
+        <p>“Ầm” một tiếng, khổng lồ, đen nhánh ma long đem hoàn toàn không có uy hiếp đá quý trường kiếm ném đến một bên, thâm sắc dựng đồng tràn đầy sát khí.</p>
+        <p>. đây đều là cái gì có không?!</p>
+        <p>Ma long hang động bên trong nơi nơi rơi rụng lộng lẫy bắt mắt châu báu, mà cả người đen nhánh, vảy chớp động mê muội quang ác long chiếm cứ ở cao cao đồng vàng tiểu trên núi, thô tráng hữu lực cái đuôi mỗi một lần đảo qua đều sẽ xôn xao quét khai một đống ánh vàng rực rỡ tiền tệ.</p>
+        <p>Một giấc ngủ dậy không chỉ có thân ở địa phương thay đổi, ngay cả chủng tộc đều thay đổi cái hoàn toàn Touya: “.”</p>
+        <p>Sakura ma pháp đã có thể làm được liền hắn cũng vô pháp phản kháng nông nỗi?</p>
+        <p>Tổng cảm thấy nơi nào quái quái……</p>
+        <p>Touya nheo lại cực đại long nhãn, nghĩ nghĩ, quyết định rời đi cái này lóe đến hắn đôi mắt đau hang động.</p>
+        <p>Cho nên nói, thật sự có sinh vật có thể tại đây loại sáng sủa đến chói mắt địa phương ngủ sao?</p>
+        <p>Hình thể khổng lồ ma long mở ra long cánh, hướng tới núi cao dưới gào thét mà ra.</p>
+        <p>……</p>
+        <p>“Đây là thứ gì a!!” Syaoran lôi kéo chính mình trên người quần áo, nhìn bên người hoàn cảnh lạ lẫm, hơn nữa còn triệu hoán không ra thuộc về chính mình phong ấn trường kiếm, hỏng mất hô to.</p>
+        <p>“Tiểu…… Syaoran-kun?” Một đạo tinh tế thanh âm từ bên cạnh truyền đến, mang theo một loại nhút nhát sợ sệt thử.</p>
+        <p>Syaoran: “?”</p>
+        <p>Tóc ngắn hoa tinh linh từ lá cây phía dưới dò ra đầu, phía sau trong suốt hai cánh chớp, tuy rằng tinh linh thiếu nữ nhìn qua chỉ có nắm tay lớn nhỏ, nhưng là trên người hồng nhạt nụ hoa váy lại thiết kế đến tương đương tinh xảo đáng yêu.</p>
+        <p>“Tiểu, Sakura……” Syaoran biểu tình ngốc lăng mà nhìn trước mặt tinh linh thiếu nữ, sau đó ở Sakura không thuần thục phía sau cánh thân thể một oai thời điểm, vội vàng vươn tay tiếp được nàng, “Đây là có chuyện gì?”</p>
+        <p>Sakura ngồi ở Syaoran trong lòng bàn tay, nhìn thấy quen thuộc người rốt cuộc thoáng nhẹ nhàng thở ra, nhưng cũng chỉ là gãi gãi đầu, không hiểu ra sao bộ dáng: “Ta cũng không biết, chỉ là một giấc ngủ dậy liền ở chỗ này.”</p>
+        <p>“Ta cũng là.” Syaoran nhớ tới phía trước Sakura bên người phát sinh ma pháp ngoài ý muốn, nhíu nhíu mày, trầm giọng nói, “Tóm lại, chúng ta trước thử đi ra nơi này, nhìn xem có hay không người khác.”</p>
+        <p>Bởi vì muốn bảo hộ Sakura ý niệm, ban đầu hoảng loạn bị Syaoran ngăn chặn, nỗ lực làm chính mình bình tĩnh lại.</p>
+        <p>. chỉ cần là ma pháp ngoài ý muốn, liền nhất định có giải quyết con đường.</p>
+        <p>“Ân ân.” Sakura liên tục gật đầu.</p>
+        <p>Liền ở hai người đi ra một đoạn ngắn khoảng cách lúc sau, đỉnh đầu bỗng nhiên xẹt qua một trận cuồng phong, cơ hồ đem Syaoran lòng bàn tay Sakura thiếu chút nữa thổi chạy.</p>
+        <p>Syaoran: “?!”</p>
+        <p>Sakura ngẩng đầu, ngơ ngác mà nhìn phía trước: “Cái kia là…… Long đi?”</p>
+        <p>Là hôm nay ban ngày thời điểm, nàng mới ở Tomoyo thư thượng nhìn đến quá ma long đi?</p>
+        <p>Tomoyo không phải nói cái loại này đồ vật là ảo tưởng trong tiểu thuyết mặt mới có tồn tại sao!!!</p>
+        <p>Syaoran trong lúc nhất thời cũng ngây dại, hoãn vài giây mới ra tiếng: “Là, đúng vậy đi?”</p>
+        <p>“Không đúng, nó bay qua đi phương hướng khả năng sẽ có người!” Syaoran đột nhiên phản ứng lại đây, bắt đầu hướng tới ma long đi tới phương hướng chạy vội, “Chúng ta cũng qua đi!”</p>
+        <p>……</p>
+        <p>Nhân loại vương quốc cùng ma long sống ở núi cao chỉ có một cái hẻm núi khoảng cách, đương ma long tiến đến khi, xa xa nhìn ra xa binh lính sớm đã trước tiên thổi lên cảnh giới kèn.</p>
+        <p>“Khởi bẩm bệ hạ, ma long đột kích!”</p>
+        <p>Ngồi ở chỗ cao quốc vương đầu đội vương miện, ưu nhã thong dong mà hai chân giao điệp ngồi ở vương tọa phía trên, thân hình cao dài, bên người còn phóng một thanh trường bính thái dương pháp trượng, xẹt qua một đạo kim loại khuynh hướng cảm xúc ánh sáng.</p>
+        <p>Ở thế giới này bị bắt hiển lộ ra linh hồn tuổi tác Eriol trường mi khẽ nhếch, cười nhẹ một tiếng.</p>
+        <p>“Ma long ở đâu ở đâu ở đâu?” Thân xuyên hoa lệ đại váy Akizuki từ cung điện nhập khẩu xách theo váy bay nhanh chạy vào, trên đầu mang tinh xảo đá quý vương miện, “Ta chuẩn bị hảo, vì nhân dân, ta nguyện ý bị ác long cướp đi!”</p>
+        <p>Bên cạnh đại thần nước mắt lưng tròng mà nhìn về phía đại công vô tư công chúa điện hạ, nức nở nói: “Đều do kia ma long thật sự là quá mức cường hãn, đáng thương chúng ta công chúa điện hạ……”</p>
+        <p>Đúng lúc này, lại một cái truyền lệnh quan thần sắc hoảng loạn mà chạy vào, lắp bắp nói: “Khải, khởi bẩm bệ hạ, ma long rời đi!”</p>
+        <p>“Cái gì?!” Akizuki công chúa đột nhiên xoay người, “Hắn liền như vậy đi rồi?!”</p>
+        <p>“Ân?” Quốc vương bệ hạ than nhẹ một tiếng, hỏi, “Hắn còn làm cái gì?”</p>
+        <p>Truyền lệnh quan thần sắc khẩn trương mà nuốt nuốt nước miếng, nhỏ giọng nói: “Ma long đem, đem vương tử điện hạ đoạt đi rồi……”</p>
+        <p>Akizuki: “?”</p>
+        <p>Hắn không phục mà quay đầu nhìn về phía ngồi ở vương tọa phía trên Eriol: “Chuyện xưa giống như không phải như vậy viết đi?”</p>
+        <p>Thành thục tuấn mỹ quốc vương bệ hạ hào không ngoài dự đoán câu khóe môi, nhàn nhạt nói: “『 The Create 』 bài cũng không có gì đã định chuyện xưa, ở ma lực tiêu hao sạch sẽ trước, bị quan ở thế giới này tinh linh cùng nhân loại tưởng muốn làm cái gì đều có thể.”</p>
+        <p>“Chỉ cần cuối cùng đạt thành chuyện xưa kết cục, là ban đầu viết ở 『 The Create 』 bài thượng kết cục liền có thể.”</p>
+        <p>Phía dưới đại thần tuy rằng không nghe hiểu quốc vương cùng công chúa đối thoại, nhưng là lại nghe đã hiểu ma long lựa chọn.</p>
+        <p>Hắn do dự một chút, thấp giọng nói: “Kỳ thật, ma long sẽ lựa chọn cùng bệ hạ giống nhau ưu tú lại tuấn mỹ vương tử điện hạ, cũng không khó lý .”</p>
+        <p>Đại thần cuối cùng không có thể xuất khẩu cái kia tự, ngạnh sinh sinh ở công chúa đằng đằng sát khí ánh mắt hạ bị bắt nuốt trở vào, rồi sau đó xoa xoa mồ hôi lạnh, túm truyền lệnh quan chạy nhanh đi ra ngoài.</p>
+        <p>Akizuki không thú vị mà dẩu dẩu miệng: “Không thú vị!”</p>
+        <p>Eriol lại là đứng lên, hướng tới phản quang mà đến vương hậu đi qua đi, ôn thanh cười nói: “Muốn hay không đi hoa viên đi một chút? Bên này lâu đài hoa viên thật xinh đẹp.”</p>
+        <p>Một thân ào ào kỵ sĩ trang mạo mỹ vương hậu nhẹ giọng mà cười, kéo quốc vương vươn cánh tay, hướng tới lâu đài hậu hoa viên cầm tay mà đi.</p>
+        <p>Akizuki không dám tin tưởng mà kêu rên: “?? Như thế nào các ngươi đều là một cặp một cặp?!!”</p>
+        <p>……</p>
+        <p>Bay đi nhân loại quốc gia đoạt tân nương ma long ở sơn cốc thượng lượn vòng một vòng, cuối cùng tìm một chỗ phong cảnh tú lệ, chỗ dựa có thủy địa phương đáp xuống, thu nạp hai cánh đáp xuống ở sơn cốc ao hồ biên.</p>
+        <p>Touya buông ra hư hư hợp lại long trảo, lộ ra ngồi ở lòng bàn tay cong mặt mày mỉm cười nhân loại vương tử.</p>
+        <p>Yukito đứng lên, giơ tay sờ sờ thò qua tới long não túi, nhìn trước mặt uy phong lẫm lẫm ma long, khẽ cười nói: “Ân…… Kỳ thật còn rất đáng yêu.”</p>
+        <p>Câu này nói đến ngay cả ma long bổn long đều cảm thấy e lệ, Touya súc long trảo, long não túi đáp ở long trảo thượng, thân thể cao lớn cuốn lại đây, cái đuôi vung, đem Yukito vòng ở ở giữa.</p>
+        <p>Cũng không biết có phải hay không biến thành ma long duyên cớ, Touya càng xem càng cảm thấy ăn mặc vương tử trang Yukito giống như là một khối rạng rỡ sáng lên ánh trăng thạch.</p>
+        <p>“Lộc cộc .”</p>
+        <p>Yukito mặt lộ vẻ kinh ngạc che lại thầm thì kêu bụng, cùng Touya hai mặt nhìn nhau.</p>
+        <p>Yukito đều có thể từ Touya long nhãn tình nhìn ra ý cười.</p>
+        <p>Trầm thấp rồng ngâm tiếng vang lên, thân hình khổng lồ ma long giương cánh bay lên, bay đến trên mặt hồ phương tầng trời thấp lượn vòng một vòng, vài giây sau, đột nhiên lao xuống tiến ao hồ, hai chỉ chân trước từng người bắt một cái to mọng cá lớn phá thủy mà ra.</p>
+        <p>Yukito đang muốn tới gần, liền nghe thấy Touya thanh âm truyền đến: “Ở bên bờ chờ một chút.”</p>
+        <p>Giống như một tòa tiểu sơn ma long ngồi xổm ngồi ở ao hồ biên, đầu tiên là dùng long trảo tụ lại một đống nhánh cây, sau đó há mồm đánh cái hắt xì bậc lửa đống lửa.</p>
+        <p>Theo sau, Touya long mặt nghiêm túc mà vươn móng vuốt, bắn ra sắc nhọn móng tay, hướng tới bị chụp vựng hai điều cá lớn vói qua .</p>
+        <p>……</p>
+        <p>Syaoran thở hổn hển chạy qua rừng cây, ngồi ở hắn trên đầu phương Sakura mắt sắc mà bắt giữ đến bên hồ thuộc về nhân loại quần áo, lớn tiếng nói: “Ở chỗ này!”</p>
+        <p>“Vừa rồi cái kia binh lính nói bị cướp đi vương tử điện hạ, hẳn là chính là . ách, tuyết, Yukito ca?”</p>
+        <p>Sakura cùng Syaoran biểu tình dại ra.</p>
+        <p>Ngồi ở bên bờ một thân vương tử phục Yukito trầm mặc một chút, căn cứ ở Sakura trước mặt cũng không biết ma pháp tồn tại nguyên tắc, lộ ra một cái ôn hòa mỉm cười: “Xin hỏi, các ngươi là ở tìm ta sao?”</p>
+        <p>“Chúng ta…… Ách, tới tìm bị ma long cướp đi vương tử…… Điện hạ.”</p>
+        <p>Sakura nhìn Yukito trên người quần áo, nhưng là lại không tìm được thuộc về vương tử vương miện, nhưng là nhìn trước mặt Yukito ca giống như không quen biết nàng cùng Syaoran bộ dáng, hẳn là ma pháp bịa đặt ra tới ảo ảnh…… Đi?</p>
+        <p>Đột nhiên, một cổ nồng đậm cá nướng mùi hương từ bên hồ thổi qua tới.</p>
+        <p>“Lộc cộc.”</p>
+        <p>“Lộc cộc.”</p>
+        <p>Sakura cùng Syaoran bụng lần lượt phát ra đói khát tiếng vang.</p>
+        <p>Yukito chớp chớp mắt, lễ phép dò hỏi: “Muốn cùng chúng ta cùng nhau ăn một chút gì sao?”</p>
+        <p>“Ngươi…… Nhóm?” Syaoran cảnh giác mà nhìn trước mặt người.</p>
+        <p>Người này đến tột cùng là thật sự Tsukishiro Yukito, vẫn là ma pháp ngoài ý muốn giở trò quỷ?</p>
+        <p>Chính vừa lúc bị tươi tốt đại thụ che ở mặt sau, ngồi xổm ngồi bộ dáng như là một khối thật lớn nham thạch ma long chậm rãi xoay người qua, cực đại đầu, sắc nhọn hàm răng cùng lạnh băng dựng đồng làm Syaoran cùng Sakura nháy mắt mồ hôi lạnh ứa ra.</p>
+        <p>Ma long sắc nhọn móng tay từ bên cạnh cây cối tìm được nhân loại vương tử đánh rơi vương miện, dùng móng tay câu lấy, thật cẩn thận lại ôn nhu mà một lần nữa thế vương tử mang lên vương miện.</p>
+        <p>Nhân loại vương tử nhất cử nhất động đều rất là nho nhã lễ độ, nhẹ nhàng thở dài một tiếng, thần sắc u buồn: “Ta cùng ta ái nhân yêu nhau đã lâu, nhưng là bởi vì lẫn nhau thân phận đối lập duyên cớ, phụ vương vẫn luôn kiên quyết phản đối chúng ta ở bên nhau.”</p>
+        <p>“Lần này trốn đi chúng ta cũng là tương tư thành tật, bị bất đắc dĩ.”</p>
+        <p>Ma long mặc không lên tiếng mà dùng hai chỉ chân trước nắm chặt nhánh cây cắm tốt cá nướng, bước trầm trọng nện bước đi tới, đem hai điều cá nướng phân biệt đưa cho nhân loại vương tử cùng tinh linh thiếu nữ.</p>
+        <p>Syaoran cùng Sakura tuy rằng ở cá nướng hương khí hạ liên tục nuốt nước miếng, nhưng trước mặt nhân loại vương tử nói ra nói lại hiển nhiên càng lệnh làm cho bọn họ tam quan lung lay sắp đổ.</p>
+        <p>“Cái kia, từ từ .” Syaoran tiêu hóa hảo một trận, mới ngữ khí gian nan mà mở miệng: “Ý của ngươi là, ngươi cùng này ma long…… Tư bôn?”</p>
+        <p>Sakura giơ tay xé xuống một khối cá nướng, một bên cái miệng nhỏ cái miệng nhỏ mà ăn, một bên nhỏ giọng nói thầm: “Này cùng ta trước kia nghe qua truyện cổ tích như thế nào hoàn toàn không giống nhau……”</p>
+        <p>Ma long thập phần sung sướng mà phun ra hơi thở, nằm ở nhân loại vương tử bên người, long cái đuôi một quyển, đem chính mình cái đuôi nhòn nhọn đáp ở nhân loại vương tử trên đầu gối.</p>
+        <p>Yukito vương tử nghĩ nghĩ, xé xuống một khối cá nướng trước phân cho Touya ma long một ngụm, sau đó chính mình nếm một ngụm, thỏa mãn mà nheo lại đôi mắt, cười ngâm ngâm nói .</p>
+        <p>“Là nga, chúng ta tư bôn ～”</p>
+        <p>“Dũng cảm nhân loại dũng sĩ cùng đáng yêu tinh linh thiếu nữ, các ngươi nguyện ý trợ giúp chúng ta chung thành thân thuộc sao?”</p>
+        <p>……</p>
+        <p>“Hô .”</p>
+        <p>Trải qua trăm cay ngàn đắng, rốt cuộc từ trong mộng giãy giụa tỉnh lại Sakura đột nhiên ngồi dậy.</p>
+        <p>Trong phòng ngủ, Kero tiếng ngáy còn ở hết đợt này đến đợt khác, vừa mới ở trong mộng bị phong ấn thẻ bài lẳng lặng nằm ở chăn thượng.</p>
+        <p>Sakura thuận thuận dồn dập hơi thở, kéo lên chăn, ý đồ nhắm mắt lại, đem vừa rồi trong mộng phát sinh hết thảy bài trừ đầu.</p>
+        <p>Thật là đáng sợ, thật là đáng sợ .</p>
+        <p>Cuối cùng ma long cùng vương tử kết hôn thời điểm, ma long vì cái gì sẽ biến thành xú ca ca bộ dáng a a a a a!!!</p>
+        <p>Không đối……</p>
+        <p>Cùng Yukito ca kết hôn nói, giống như không phải ca ca nói cũng không hợp lý……</p>
+        <p>Sakura ở trong chăn quay cuồng thân thể, nhớ tới ở ma pháp thế giới nhìn đến Yukito ca, tổng cảm thấy nơi nào quái quái.</p>
+        <p>Hơn nữa……</p>
+        <p>Tiểu cô nương vươn tay, ở một mảnh trong bóng tối bắt một chút.</p>
+        <p>Tổng cảm giác, bên người giống như còn có cái gì tồn tại giống nhau……</p>
+        <p>……</p>
+        <p>Một tầng lâu chi cách Touya phòng ngủ</p>
+        <p>Touya từ ngoài cửa sổ phiên tiến vào, phía sau cánh chim một lần nữa biến thành thẻ bài bộ dáng, mà thừa dịp bóng đêm từ Daidouji trạch thu hồi tới 『 The Create 』 bài cũng lẳng lặng nằm ở hắn trong lòng bàn tay.</p>
+        <p>Nguyệt nhìn Touya ánh mắt khó được có chút chế nhạo.</p>
+        <p>Hố muội không thành phản bị lăn lộn một phen Touya: “.”</p>
+        <p>Nguyệt đi đến Touya bên người, thấp giọng nói: “Vừa rồi Sakura trở về thời điểm, có trong nháy mắt, nàng giống như nhận thấy được ta tồn tại.”</p>
+        <p>Đầu giường đồng hồ báo thức chớp động thời gian, nhưng Touya lại hoàn toàn đã không có buồn ngủ.</p>
+        <p>Vừa rồi ở thẻ bài trong thế giới, Eriol lời nói hiện lên ở hắn trong đầu .</p>
+        <p>【 Sakura phong ấn trượng trung thuộc về Clow Reed ma lực, đã toàn bộ tiêu hao hầu như không còn. 】</p>
+        <p>Touya giơ tay, còn chưa từng chuyển hóa hoàn thành 『 The Light 』 bài cùng 『 The Dark 』 bài chậm rãi huyền phù ở hắn trước mặt.</p>
+        <p>Nếu nói như vậy……</p>
+        <p>Touya nhìn về phía trước mặt thẩm phán lưu trình thập phần quen thuộc thẩm phán giả, biểu tình rất là thành khẩn.</p>
+        <p>Nguyệt: “……”</p>
+        <p>-------------DFY--------------</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong88.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong90.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "so-tay-chan-nuoi-truc-ma-cua-kinomoto-kun";
+const NOVEL_TITLE = "Sổ Tay Chăn Nuôi Trúc Mã Của Kinomoto-Kun";
+const CHAPTER_TITLE = "Chương 89";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+
+});
+</script>
+</body>
+</html>

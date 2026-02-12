@@ -1,0 +1,881 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 20</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+<body class="page-chapter">
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Sổ Tay Chăn Nuôi Trúc Mã Của Kinomoto-Kun
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 20</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong19.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong21.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+
+        <p>“Kinomoto-kun, có người tìm nga.” Sushi cửa hàng lão bản đại thúc cười lớn tiếng hướng tới sau bếp phương hướng hô.</p>
+        <p>Ăn mặc phục vụ sinh quần áo lao động mang tạp dề Touya vén rèm lên đi ra, thấy ngồi ở bên ngoài cao ghế nhỏ thượng, cẳng chân lắc qua lắc lại Sakura, sửng sốt một chút.</p>
+        <p>“Ca ca!” Sakura từ trên ghế nhảy xuống, chạy đến Touya trước mặt, ngẩng đầu hướng tới Touya cười đến ngoan ngoãn.</p>
+        <p>“Đã biết đã biết.” Touya động tác tự nhiên mà xoa xoa Sakura tóc ngắn, quay đầu đối lão bản đại thúc nói, “Đại thúc, kia ta liền đi trước.”</p>
+        <p>“Hôm nay cũng phiền toái Kinomoto-kun đâu, giúp đại ân.” Sushi cửa hàng lão bản cùng Touya là lão người quen, Touya từ cao nhất thời liền vẫn luôn có ở sushi cửa hàng làm công.</p>
+        <p>Cùng Sakura từ sushi cửa hàng ra tới, Touya duỗi người giãn ra gân cốt, lười nhác nói: “Tiểu quái thú hôm nay như vậy an tĩnh, không phải là làm chuyện gì tới tìm ca ca đi?”</p>
+        <p>Sakura sửng sốt một chút, trong mắt hiện lên một tia mê mang, rồi sau đó nắm nắm tay hừ nói: “Ca ca!”</p>
+        <p>“Ta chỉ là…… Có một kiện rất quan trọng đồ vật ném.”</p>
+        <p>Touya thở dài, xoa tiểu cô nương đỉnh đầu, ôn thanh nói: “Vẫn là như vậy lỗ mãng hấp tấp a, đã biết . ném ở nơi nào?”</p>
+        <p>“Bên kia rừng cây nhỏ!” Sakura ánh mắt sáng lên, hướng tới thang lầu phía dưới chạy mau hai bước, giơ tay chỉ vào lệch khỏi quỹ đạo đường phố rất nhiều rừng cây.</p>
+        <p>Đang lúc Touya nâng bước muốn hướng cây cối bên trong lúc đi, thụ sau đột nhiên vươn tay nắm lấy Touya cánh tay, đem Touya về phía sau một túm, cùng lúc đó, cặp kia màu hổ phách con ngươi cách thấu kính liếc mắt một cái lui về phía sau hai bước Sakura, ngày thường xưa nay ôn hòa mặt mày có vẻ có vài phần sắc bén.</p>
+        <p>“Yuki?” Touya sửng sốt.</p>
+        <p>Yukito ngước mắt nháy mắt lại khôi phục thành ôn hòa mang cười bộ dáng, buông ra Touya cánh tay, giơ tay gãi gãi gương mặt: “Mới vừa ăn qua đồ vật ở bên ngoài đi, sau đó liền nghĩ đến tìm Touya chơi, không nghĩ tới ở chỗ này đụng phải.”</p>
+        <p>Touya nhìn mắt Yukito, cũng không có hỏi nhiều cái gì, mà là theo Yukito lực đạo liền như vậy nghỉ chân ở bụi cỏ trước, đối Yukito nói: “Nàng là ta muội muội.”</p>
+        <p>Yukito đầu hơi sườn.</p>
+        <p>Sakura nhìn đến Yukito lại không có ngày xưa thẹn thùng tới gần bộ dáng, ngược lại biểu hiện ra như là ý thức được làm sai sự tình co rúm lại.</p>
+        <p>Touya nói tiếp: “Là một cái khác muội muội.”</p>
+        <p>Yukito dùng ánh mắt dò hỏi Touya, ý tứ là Touya đã sớm phát hiện?</p>
+        <p>Touya gật gật đầu.</p>
+        <p>Yukito vì thế hơi hơi mỉm cười, đối duy trì Sakura bộ dáng tiểu cô nương ôn thanh nói: “Ngươi hảo, ta là Touya bằng hữu nga.”</p>
+        <p>Bị trước mặt hai người nhìn thấu thân phận 『 The Mirror 』 bài không khỏi lui về phía sau một bước, hai tay bất an giao điệp trong người trước khẩn trương loạn giảo.</p>
+        <p>Touya suy nghĩ một chút, đối Yukito nói: “Muốn hay không đi nhà ta? Ta có chuyện muốn làm ơn ngươi.”</p>
+        <p>Yukito vốn dĩ chính là bởi vì có chút hoảng hốt cho nên chuyên môn ra tới tìm Touya, tuy rằng không biết chính mình trực giác vì cái gì sẽ chạy tới nơi này, còn tinh chuẩn mà tìm được rồi Touya, nhưng đối với Touya mời, Yukito trước nay đều sẽ không cự tuyệt.</p>
+        <p>Touya lại ngược lại đối mặt duy trì Sakura bộ dáng 『 The Mirror 』 bài, biểu tình nhu hòa nói: “Muốn cùng ta cùng nhau trở về sao?”</p>
+        <p>“Ta……” Bởi vì 『 The Mirror 』 đặc thù ma lực tính chất, nàng là thẻ bài Clow trung ít có có thể mở miệng nói chuyện tinh linh.</p>
+        <p>Nàng kỳ thật cũng không có muốn đi hại Touya ý tứ, chỉ là nghe thẻ bài Clow nhóm nói, người này muốn thay thế được Clow trở thành tân chủ nhân, nàng liền muốn tới dọa lui người nam nhân này.</p>
+        <p>Nàng không nghĩ lại bị phong ấn tiến thẻ bài.</p>
+        <p>Từ trước Clow còn ở thời điểm, 『 The Mirror 』 ngẫu nhiên còn sẽ có ra tới thời điểm, nhưng là từ Clow biến mất, 『 The Mirror 』 bị phong ấn tại sách ma pháp trung mấy năm nay, cái loại này bất lực mà hắc ám cô độc cảm giống như là thủy triều giống nhau bao phủ mà đến.</p>
+        <p>『 The Mirror 』 không thích cô độc, không thích hắc ám.</p>
+        <p>Nàng không nghĩ lại làm thẻ bài Clow.</p>
+        <p>Chính là ở tránh thoát khai thẻ bài Clow trói buộc lúc sau, 『 The Mirror 』 lại phát hiện, không có ma lực người căn bản nhìn không tới nàng, trừ phi biến thành người khác bộ dáng .</p>
+        <p>Chính là cho dù biến thành người khác bộ dáng, ái người kia mọi người, người kia quá sinh hoạt, cũng như cũ không thuộc về nàng.</p>
+        <p>Cho dù thân ở đám người, nàng lại vẫn như cũ cô độc.</p>
+        <p>“Ân!”</p>
+        <p>Chẳng sợ biết trước mặt người là vì phong ấn chính mình, chính là 『 The Mirror 』 lại không có cách nào kháng cự như vậy mời.</p>
+        <p>Bởi vì trước mặt người, mời chính là 『 The Mirror 』, mà không phải mặt khác bị mượn thân phận bề ngoài tồn tại.</p>
+        <p>……</p>
+        <p>Sakura mang theo Kero hôm nay đi Tomoyo gia làm khách, Fujitaka ba ba muốn công tác, trong nhà hôm nay cũng không có người.</p>
+        <p>Về đến nhà, Touya từ phòng tạp vật nhảy ra tới tu bổ tóc phải dùng công cụ, rửa sạch một chút tro bụi, rồi sau đó nhét vào Yukito trong tay.</p>
+        <p>Yukito ngơ ngác mà cầm kéo khoa tay múa chân một chút, chần chờ: “Ngươi muốn cho ta giúp ngươi cắt tóc sao?”</p>
+        <p>“Ân.” Touya đang ở từ tủ lạnh lấy tiểu bánh kem, thuận tay còn khai một lọ nước trái cây, “Dù sao chỉ là xén mà thôi, không cần đi mỹ dung thất, ta muốn tích cóp tiền.”</p>
+        <p>Yukito đem trong tay tóc đẹp kéo cùng cắt tóc áo choàng đặt lên bàn, lâm vào trầm tư.</p>
+        <p>Hắn giống như…… Cũng không có thắp sáng như vậy kỹ năng đi?</p>
+        <p>Yukito còn ở rối rắm, Touya đã bưng bánh kem cùng thêm băng nước trái cây lại đây, phía sau đi theo nhắm mắt theo đuôi, biểu tình khẩn trương 『 The Mirror 』.</p>
+        <p>Touya quay đầu nhìn về phía 『 The Mirror 』, hỏi: “Muốn dâu tây vị vẫn là mạt trà?”</p>
+        <p>『 The Mirror 』 không có bị như vậy hỏi kinh nghiệm, trong lúc nhất thời không biết nên làm cái gì phản ứng.</p>
+        <p>Touya nhìn ra tiểu cô nương co quắp, nâng lên tay do dự một chút, rồi sau đó nhẹ nhàng vỗ vỗ 『 The Mirror 』 đầu: “Đừng khẩn trương, ta là ca ca của ngươi, nơi này tự nhiên cũng là nhà của ngươi.”</p>
+        <p>『 The Mirror 』 đôi tay gắt gao giao nắm ở bên nhau, rốt cuộc lấy hết can đảm, nhỏ giọng nói: “Dâu tây…… Có thể chứ?”</p>
+        <p>“Đương nhiên.” Touya cười một cái, đem dâu tây vị tiểu bánh kem đẩy đến tiểu cô nương trước mặt, “Ngồi xuống ăn, nước chanh là khoảng thời gian trước mua, còn không có hưởng qua, nếu thích nói nhớ rõ cùng ta nói.”</p>
+        <p>Rồi sau đó Touya liền dời đi tầm mắt, nhìn về phía cầm tóc đẹp kéo khoa tay múa chân biểu tình nghiêm túc Yukito.</p>
+        <p>Touya dùng nĩa cắm một khối bánh kem đưa đến Yukito bên miệng, Yukito xem cũng chưa xem, quay đầu liền cắn nĩa đem bánh kem ăn luôn, rồi sau đó tiếp tục nghiên cứu trong tay tóc đẹp kéo.</p>
+        <p>Sắp bị cắt tóc Touya lại là vẻ mặt không sao cả: “Tùy tiện cắt cắt là được.”</p>
+        <p>“Vạn nhất cắt hỏng rồi đâu!” Yukito nghiêm túc mà phủ định Touya cách nói.</p>
+        <p>“Cắt hỏng rồi ta liền mỗi ngày đỉnh như vậy tóc ở ngươi trước mặt hoảng.” Touya bưng tiểu bánh kem, dùng nĩa lười biếng mà hướng trong miệng đưa.</p>
+        <p>Yukito tưởng tượng một chút da đầu nơi nào trọc rớt một khối Touya, tức khắc dùng sức lắc lắc đầu đem cái loại này cảnh tượng từ trong óc ném ra.</p>
+        <p>“Chỉ là xén mà thôi, không cần khẩn trương.” Touya bị Yukito nhấp môi nghiêm túc thái độ đậu cười, tiến đến Yukito trước người thần thần bí bí nói, “Không có quan hệ, cắt hỏng rồi ta cũng có biện pháp.”</p>
+        <p>Yukito hồ nghi: “Thật sự?”</p>
+        <p>“Ân hừ.” Touya đơn giản đem mâm đặt ở một bên, sau đó cuốn cắt tóc dùng đồ vật đi vào lộ thiên trên ban công.</p>
+        <p>Bên ngoài đúng là sau giờ ngọ, ánh mặt trời trong trẻo, trên ban công là từ trước Nadeshiko mụ mụ dưỡng hoa cỏ, hiện tại bị trong nhà ba người cũng chiếu cố rất khá.</p>
+        <p>Touya kéo ghế dựa lại đây ngồi xuống, nhìn về phía Yukito.</p>
+        <p>Yukito bất đắc dĩ, chỉ phải đi đến Touya phía sau, tiếp nhận Touya truyền đạt cắt tóc áo choàng triển khai tới vây quanh ở Touya trên vai.</p>
+        <p>Touya khép hờ mắt, cảm nhận được Yukito hơi lạnh đầu ngón tay lướt qua sau cổ, cắt tóc áo choàng hạ ngón tay buộc chặt một cái chớp mắt.</p>
+        <p>“Hảo đi, chỉ là xén nói…… Ta thử xem xem, không thể lộn xộn biết không?” Yukito thanh âm từ phía sau truyền đến.</p>
+        <p>Touya lười biếng mà lên tiếng, liền dưới ánh mặt trời nhắm mắt dưỡng thần.</p>
+        <p>Rốt cuộc tiêu hóa rớt co quắp khẩn trương 『 The Mirror 』 nghe được đối thoại, đôi tay bao bỏ thêm khối băng nước chanh, tò mò mà đi đến trong suốt cửa kính sát đất bên cạnh cửa biên nhìn hai người.</p>
+        <p>Theo kéo răng rắc răng rắc thanh âm vang lên, Touya thâm màu nâu tóc rớt ở cắt tóc áo choàng thượng, trên mặt đất cũng chảy xuống một chút.</p>
+        <p>Nhìn chằm chằm vào hai người tiểu cô nương trước tiên nhận thấy được không đúng, mắt to hiện lên một tia đáng tiếc.</p>
+        <p>“Không xong.” Yukito ảo não thanh âm đột nhiên vang lên.</p>
+        <p>Touya mở mắt ra: “Ân?”</p>
+        <p>『 The Mirror 』 không biết khi nào chạy đến Touya trước mặt, trong tay giơ một mặt sáng ngời sạch sẽ gương, lo lắng mà nhìn Touya.</p>
+        <p>Touya sửng sốt một chút, rồi sau đó cười nói câu “Cảm ơn”, cứ như vậy liền tiểu cô nương động tác đối với gương quay đầu nhìn nhìn chính mình tóc.</p>
+        <p>Lần đầu tiên cắt tóc, Yukito không có gì kinh nghiệm, bên trái tóc rõ ràng muốn so bên phải đoản rất nhiều.</p>
+        <p>Yukito ngón tay sờ sờ Touya bên phải sợi tóc, chần chờ nói: “Muốn hay không đem bên này xén một chút?”</p>
+        <p>Touya lại không trả lời, mà là nhảy ra một trương màu xanh biển thẻ bài Clow ném đến giữa không trung, ôn thanh nói: “Làm ơn.”</p>
+        <p>Ôm ấp đồng hồ cát lão nhân xuất hiện ở sân phơi thượng, hướng tới Touya hơi khẽ gật đầu, rồi sau đó ở 『 The Mirror 』 cùng Yukito ngạc nhiên nhìn chăm chú hạ, đảo ngược trong lòng ngực đồng hồ cát, đem thời gian chảy ngược trở về Yukito còn không có bắt đầu cắt tóc thời điểm.</p>
+        <p>Yukito cầm kéo, đứng ở tại chỗ ánh mắt có trong nháy mắt hoảng hốt.</p>
+        <p>『 The Time 』 bài hoàn thành nhiệm vụ sau liền khôi phục thành thẻ bài Clow bộ dáng, lẳng lặng nằm ở Touya trong tay.</p>
+        <p>Lão nhân gia có lẽ luôn là có chút quái gở tiểu tính tình.</p>
+        <p>Cầm kéo Yukito cảm giác có chút không thích hợp, nhưng nhìn trước mặt ngồi Touya, vẫn là nâng lên kéo bắt đầu nếm thử cắt tóc.</p>
+        <p>Cắt xong sau, Touya đối với gương quan sát một chút.</p>
+        <p>A…… Lần này là đỉnh đầu có điểm trọc đâu.</p>
+        <p>Yukito ngón tay ấn Touya trên đầu không cẩn thận cắt trọc kia một khối, rất là để ý mà nhấp môi.</p>
+        <p>Vì thế thời gian lại một lần chảy ngược.</p>
+        <p>Thẳng đến hai ba lần sau, Yukito rốt cuộc vừa lòng Touya tân kiểu tóc, nắm kéo như suy tư gì nói: “Ta giống như còn rất có lý phát thiên phú ai……”</p>
+        <p>Touya cởi bỏ giữa cổ cắt tóc áo choàng, chấn động rớt xuống toái phát, giơ tay xoa xoa Yukito đầu, cười nói: “Vất vả.”</p>
+        <p>『 The Mirror 』 ở bên cạnh bàng quan toàn bộ hành trình, chớp chớp mắt, ở Touya liền phải hướng trong phòng đi thời điểm, bỗng nhiên giơ tay nắm lấy Touya góc áo: “Cái kia…… Ca ca, có thể cũng cho ta cắt tóc sao?”</p>
+        <p>Touya sửng sốt một chút, rồi sau đó giơ tay xoa xoa 『 The Mirror 』 biến ảo thành Sakura bộ dáng tóc ngắn, ôn thanh nói: “Cắt tóc nói, hẳn là muốn vốn dĩ diện mạo sẽ càng thích hợp chính mình nga.”</p>
+        <p>『 The Mirror 』 trong lòng ngực còn ôm phía trước dùng để làm Touya xem gương, trên mặt cho tới nay đều mang theo u buồn bị tươi cười làm nhạt: “Ca ca, kêu tên của ta đi.”</p>
+        <p>Thẻ bài Clow trung có một loại thực đặc thù loại hình, chúng nó sẽ không bị bất luận cái gì công kích, bắt giữ loại ma pháp bắt giữ, chỉ có kêu gọi ra chúng nó tên, mới có thể mất đi ngụy trang ma lực hiển lộ ra chân chính hình thái.</p>
+        <p>Từ trước Sakura thu thập thẻ bài Clow thời điểm, Touya liền gặp qua cái này tiểu cô nương, chẳng qua hắn cũng không biết cái này tiểu cô nương đến tột cùng là cái gì bài, nhưng là……</p>
+        <p>Touya nhìn nhìn tiểu cô nương cùng Sakura không có sai biệt khuôn mặt, tầm mắt ở tiểu cô nương trong lòng ngực ôm trên gương dừng lại một cái chớp mắt, nhẹ giọng nói: “Kính?”</p>
+        <p>Ma lực thổi quét ăn mặc giáo phục “Sakura”, 『 The Mirror 』 nhắm mắt lại, bị ma lực quanh quẩn treo ở giữa không trung, rồi sau đó rút đi sở hữu ngụy trang, bằng chân thật hình thái nhẹ nhàng dừng ở Touya trước mặt.</p>
+        <p>Thân xuyên màu trắng váy áo nữ hài ôm ấp gương tròn, thúy sắc sợi tóc rũ đến bên hông, đuôi tóc câu lấy cuốn, giữa mày ấn một mạt màu lam nhạt ma văn.</p>
+        <p>『 The Mirror 』 chân thật khuôn mặt nhìn qua có vẻ tái nhợt mà u buồn, to rộng kiểu Trung Quốc quần áo làm nàng bày biện ra một loại không hề gợn sóng yên tĩnh cảm, đứng ở nơi đó, tựa như một bộ dừng hình ảnh sơn thủy họa.</p>
+        <p>Touya cùng Yukito đứng ở 『 The Mirror 』 đối diện, hai người liếc nhau, Touya khoa tay múa chân một chút chính mình trán, nói: “Nữ hài tử nói, tóc mái nơi này hẳn là vẫn là muốn lưu đi?”</p>
+        <p>Hôm nay mới lấy quá tóc đẹp kéo Yukito khẩn trương nói: “Là, là xén nhiều ít? Vẫn là chỉ là tu một tu?”</p>
+        <p>『 The Mirror 』 đôi mắt cong cong, nhẹ giọng nói: “Ta tưởng cắt thành ca ca muội muội như vậy tóc ngắn, có thể chứ?”</p>
+        <p>Touya nhìn 『 The Mirror 』 trầm ngâm trong chốc lát, vẫn là nói: “Chính là cảm giác vẫn là tóc dài càng thích hợp kính……”</p>
+        <p>“Kính chính là kính, không cần trở thành mặt khác người nào, càng không cần cùng ai tương tự, chỉ cần làm chính mình là được.”</p>
+        <p>Touya khom lưng, vẫn duy trì cùng 『 The Mirror 』 nhìn thẳng tư thái, ngữ khí nghiêm túc mà nói.</p>
+        <p>“Kính tóc dài bộ dáng rất đẹp.”</p>
+        <p>『 The Mirror 』 hốc mắt trung tràn ra nước mắt, nhưng tiểu cô nương vẫn là nỗ lực cong môi đối với Touya lộ ra tươi cười, kiên định đáp: “Ân!”</p>
+        <p>Hai người thương lượng cấp tiểu cô nương tu bổ tóc mái cùng đuôi tóc, liền ở Yukito cấp tiểu cô nương biên bím tóc thời điểm, Touya chuyển đi trên lầu lấy một cái cái hộp nhỏ.</p>
+        <p>『 The Mirror 』 sườn mặt, có chút tò mò mà nhìn qua.</p>
+        <p>Touya mở ra hộp, lấy ra bên trong cùng 『 The Mirror 』 màu tóc tương tự dây cột tóc, động tác ôn nhu mà triền ở tiểu cô nương bím tóc thượng.</p>
+        <p>Tiểu cô nương nắm chặt trong lòng ngực gương tay căng thẳng.</p>
+        <p>Touya muội muội là tóc ngắn, cho nên như vậy dây cột tóc rõ ràng không phải vì hắn muội muội sở chuẩn bị, mà là……</p>
+        <p>“Tối hôm qua có ở trong mộng nhìn đến ngươi, liền cảm thấy cái này nhan sắc dây cột tóc nhất định thực thích hợp ngươi.”</p>
+        <p>…… Là, cố ý vì nàng chuẩn bị.</p>
+        <p>Lẳng lặng chờ đợi Touya đem hai điều dây cột tóc triền ở nàng phát gian, đợi cho Touya cùng Yukito thối lui tới xem nàng khi, 『 The Mirror 』 từ trên ghế đứng lên, hướng tới Touya khẽ cười khai: “Nếu là làm bạn ca ca nói…… Ta vĩnh viễn sẽ không cảm thấy tịch mịch.”</p>
+        <p>“Ca ca, ta chuẩn bị hảo.”</p>
+        <p>Kim sắc ma pháp trận chợt lóe lướt qua, bị một lần nữa phong ấn thẻ bài Clow dừng ở Touya trong tay.</p>
+        <p>Tạp trên mặt, văn tĩnh thiếu nữ trong lòng ngực ôm gương tròn, trước người buông xuống bím tóc gian quấn quanh thúy sắc dây cột tóc, khóe môi hơi câu, trên mặt là thỏa mãn mà hạnh phúc tươi cười.</p>
+        <p>Yukito đi tới, rũ mắt nhìn về phía Touya trong tay 『 The Mirror 』 bài, thanh âm ôn hòa nói: “Là cái thực đáng yêu tiểu cô nương đâu.”</p>
+        <p>“Ân.”</p>
+        <p>Touya rút ra sủy ở trong túi bút, ở tạp trên mặt một bút mà liền ký xuống tên của mình, nhìn thẻ bài nhan sắc từ kim sắc chuyển biến vì màu xanh biển, cười một cái.</p>
+        <p>“Thực đáng yêu.”</p>
+        <p>-------------DFY--------------</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong19.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong21.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "so-tay-chan-nuoi-truc-ma-cua-kinomoto-kun";
+const NOVEL_TITLE = "Sổ Tay Chăn Nuôi Trúc Mã Của Kinomoto-Kun";
+const CHAPTER_TITLE = "Chương 20";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,881 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 17</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+<body class="page-chapter">
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Sổ Tay Chăn Nuôi Trúc Mã Của Kinomoto-Kun
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 17</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong16.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong18.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+
+        <p>“Hoan nghênh trở về.”</p>
+        <p>Ngoài dự đoán, xã đoàn tụ hội kết thúc cùng Yukito từ biệt Touya về đến nhà, ra tới nghênh đón hắn cũng không phải Cerberus, mà là thân hình lộ ra một cổ trân châu bạch Nadeshiko mụ mụ.</p>
+        <p>“Mụ mụ?”</p>
+        <p>Touya kinh ngạc, nhanh hơn động tác đổi hảo giày đi vào huyền quan.</p>
+        <p>“Có cái tiểu cô nương chờ ngươi thật lâu, không cần khi dễ nàng nga.” Nadeshiko mụ mụ đứng ở phòng khách trước, thuần trắng váy dài làn váy bị ma lực hơi hơi giơ lên lại rơi xuống, ánh mắt ôn nhu.</p>
+        <p>Tiểu cô nương?</p>
+        <p>Touya không rõ nguyên do mà đi vào, phòng khách trên sô pha cả người tản ra thẻ bài Clow hơi thở thiếu nữ nháy mắt đứng lên xoay người, chính lắp bắp mà nhìn hắn.</p>
+        <p>Nhìn thiếu nữ quen mắt trang phẫn cùng khuôn mặt, Touya chỉ cảm thấy huyệt Thái Dương thình thịch loạn nhảy.</p>
+        <p>Ngày hôm qua . hoặc là nói thượng một cái hôm nay khi, quanh quẩn ở Kinomoto trạch hơn phân nửa cái buổi tối tiếng ca lần nữa đánh úp lại.</p>
+        <p>Touya: “.”</p>
+        <p>Vốn đã kinh quên đi tiếng ca lần nữa từ hồi ức giết hắn một lần.</p>
+        <p>『 The Song 』 bài tinh linh là tóc dài thiếu nữ bộ dáng, nhìn qua có chút nội hướng.</p>
+        <p>Nàng đến gần Touya hai bước, giương mắt bình tĩnh nhìn Touya, trong ánh mắt tràn đầy một loại không muốn xa rời cùng yêu thích.</p>
+        <p>Touya sửng sốt một chút.</p>
+        <p>Nói lên, cho tới nay mới thôi, hắn sở gặp được thẻ bài Clow tuy rằng tính cách khác nhau, nhưng đích xác không có một trương thẻ bài Clow có được mở miệng nói chuyện năng lực.</p>
+        <p>Touya tuy rằng không rõ lần này 『 The Song 』 bài vì cái gì sẽ chủ động hiện thân, nhưng hắn vẫn là lấy ra pháp trượng phát động phong ấn.</p>
+        <p>Ở cường hãn ma lực bao vây dưới, kiều tiếu thiếu nữ cong mặt mày bật cười, nàng hơi hơi hé miệng, không có thể phát ra âm thanh, nhưng lại chỉ vào Touya yết hầu, so một cái thích thủ thế, rồi sau đó dừng hình ảnh ở thẻ bài Clow trung ương.</p>
+        <p>“Xem ra đứa nhỏ này thực thích Touya tiếng ca đâu.” Nadeshiko mụ mụ mang theo cười thanh âm truyền đến.</p>
+        <p>“Mụ mụ!” Bị biết chính mình chi tiết mẫu thân như vậy trêu chọc, tuy là Touya cũng không cấm đỏ vành tai.</p>
+        <p>Nhưng là……</p>
+        <p>Touya cúi đầu nhìn nhìn trong tay thẻ bài Clow, lại nhìn thời gian, nhanh chóng ở thẻ bài Clow thượng ký xuống tên của mình, nhìn đến thẻ bài Clow chuyển biến vì màu xanh biển tạp mặt, lúc này mới nhẹ nhàng thở ra.</p>
+        <p>Buổi sáng Cerberus nói qua, chẳng sợ thời gian lần nữa chảy ngược, đã ký xuống tên xác định thuộc sở hữu thẻ bài Clow lại sẽ không có thay đổi.</p>
+        <p>Hơn nữa liền hiện tại xem ra, cho dù thời gian bị chảy ngược, Touya chưa kịp ở phong ấn thẻ bài thượng ký tên, thẻ bài Clow nhóm ký ức lại không có bị bao trùm.</p>
+        <p>Suy nghĩ một chút, Touya đem này trương bài nhẹ nhàng kẹp ở dương cầm cầm cái phía dưới.</p>
+        <p>Nadeshiko mụ mụ thổi qua tới, tò mò mà giơ tay chạm chạm dương cầm mặt ngoài, dùng nghi hoặc ánh mắt dò hỏi Touya.</p>
+        <p>Touya hơi hơi hé miệng, nhỏ giọng nói: “Nàng thẩm mỹ ra điểm vấn đề, yêu cầu…… Yêu cầu nghe một chút bình thường đồ vật, nung đúc trọng tố một chút.”</p>
+        <p>Vạn nhất về sau có yêu cầu phát động này trương bài, nhưng là tiểu cô nương há mồm chính là . không được, không dám tưởng.</p>
+        <p>Touya biểu tình tức khắc chết lặng.</p>
+        <p>Nadeshiko mụ mụ nháy mắt hiểu được, trên mặt ý cười càng sâu, cặp kia vô hình tay nâng đã trưởng thành nhi tử gương mặt, ôn nhu Nadeshiko nhẹ giọng nói: “Touya cho dù trưởng thành, cũng vẫn là tương đương đáng yêu đâu ～”</p>
+        <p>Đáng yêu gì đó……</p>
+        <p>Touya ho nhẹ một tiếng, quay mặt đi nói: “Mụ mụ, đứa nhỏ này liền làm ơn ngươi.”</p>
+        <p>“Tốt nga, lần sau Touya tới đánh đàn thời điểm, đứa nhỏ này nhất định có thể ở bên cạnh ca xướng ra rất êm tai thanh âm đâu.”</p>
+        <p>Touya nghẹn một chút: “Mụ mụ!”</p>
+        <p>Cái này tốt nhất nghe tiếng ca, nhưng đừng là hắn tiếng ca . cái loại này ma âm rót nhĩ bị thương, nếu có cùng Yuki thân cận rung động bao trùm, Touya thật sự cảm thấy chính mình sẽ mất ngủ cái hai ba thiên.</p>
+        <p>“Ân ân ～” Nadeshiko mụ mụ vuốt Touya tóc, cười nói, “Mụ mụ biết đến.”</p>
+        <p>“Touya nói, hiện tại không phải hẳn là có càng chuyện quan trọng đi làm sao?”</p>
+        <p>Touya đương nhiên còn có không có làm xong sự.</p>
+        <p>Kia trương nhất khó giải quyết thao tác thời gian thẻ bài Clow còn ở bên ngoài.</p>
+        <p>“Đi thôi, Touya.” Nadeshiko mụ mụ đứng thẳng thân thể, mỹ lệ tóc quăn rối tung ở sau người, “Cố lên nga!”</p>
+        <p>……</p>
+        <p>『 The Time 』 bài ma lực phát sinh ở thị trấn Tomoeda nhất trung tâm gác chuông đỉnh.</p>
+        <p>Kia tòa cổ xưa gác chuông làm bạn thị trấn Tomoeda một thế hệ lại một thế hệ cư dân, là vượt qua tuổi tiết khi không thể thiếu tồn tại.</p>
+        <p>Touya thừa phong đi vào gác chuông trước mặt, phía sau cánh chim cân bằng thân thể hắn huyền đình ở giữa không trung.</p>
+        <p>Một cái áo đen lão nhân trong lòng ngực ôm một cái sắp lậu xong đồng hồ cát, không tiếng động mà yên tĩnh mà đứng ở gác chuông thật lớn kim sắc mặt đồng hồ trước.</p>
+        <p>Touya biểu tình đột nhiên trở nên vi diệu lên.</p>
+        <p>Này trương 『 The Time 』 bài hình tượng, thế nhưng cùng đưa Touya trọng sinh trở về kia trương màu ngân bạch thẻ bài, cơ hồ không có sai biệt.</p>
+        <p>. lão nhân, đồng hồ cát, thời gian chảy ngược.</p>
+        <p>Áo đen lão nhân thấy Touya tiến đến cũng không có kinh hoảng đào tẩu, cũng không có ra tay phản kháng, mà là đứng ở gác chuông trên đài cao, nhìn Touya rất lâu sau đó, như là ở phân rõ cái gì, lại như là ở xác định cái gì.</p>
+        <p>Ở 0 điểm còn kém năm phút khi, hướng tới Touya phương hướng, chậm rãi vươn tay tới.</p>
+        <p>Touya thu nạp cánh chim, triệt hồi 『 The Fly 』 bài chậm rãi rơi xuống đất, giơ tay tiếp nhận 『 The Time 』 bài đưa qua kim sắc đồng hồ cát.</p>
+        <p>Đồng hồ cát xúc tua lạnh lẽo, kim sắc hạt cát ở cuồn cuộn không ngừng mà trượt xuống dưới lạc.</p>
+        <p>『 The Time 』 bài cứ như vậy đứng ở Touya trước mặt, như là chờ đợi Touya phong ấn.</p>
+        <p>Touya có rất nhiều vấn đề muốn hỏi, nhưng là hắn biết, đáp án cũng không ở 『 The Time 』 bài trên người.</p>
+        <p>Kim sắc ma pháp trận chợt lóe lướt qua, lại một trương thẻ bài Clow rơi vào Touya trong tay, Touya nhìn quen thuộc tạp mặt, trong đầu có cái gì linh quang chợt lóe lướt qua, lại chung quy không có thể bắt lấy.</p>
+        <p>Đêm khuya 12 giờ tiếng chuông trôi giạt từ từ truyền khai, thuộc về thị trấn Tomoeda, mới tinh một ngày chậm rãi kéo ra mở màn.</p>
+        <p>***</p>
+        <p>“Ai? Như vậy xem nói, này hai trương bài đích xác thực vi diệu……”</p>
+        <p>Kero trước một ngày bởi vì ngủ ở Sakura cặp sách bị Sakura đánh bậy đánh bạ mang đi cắm trại, bỏ lỡ Touya phong ấn hai trương thẻ bài Clow quá trình.</p>
+        <p>Nguyên nhân chính là vì như thế, Kero mới từ Sakura cặp sách dò ra đầu, đã bị Touya tìm cơ hội xách đến trong phòng xem thẻ bài Clow.</p>
+        <p>Nhìn xem bên trái bị viết thượng tên biến thành màu xanh biển thẻ bài Clow, nhìn xem bên phải màu ngân bạch cơ hồ là tương đồng tạp mặt thẻ bài, vĩ đại phong ấn thú Cerberus lâm vào trầm tư.</p>
+        <p>“『 The Time 』 nói, có thể cho thời gian chảy ngược nhiều ít?” Touya đột nhiên hỏi, “Có thể cho một người từ tương lai trở về quá khứ sao?”</p>
+        <p>Kero không rõ nguyên do mà ngẩng đầu, tuy rằng không biết Touya vì cái gì sẽ hỏi cái này, nhưng vẫn là giải thích nói: “『 The Time 』 bài đích xác có thể thao túng thời gian, mau vào hoặc là lùi lại đều có thể, nhưng khi bài đặc điểm là, mỗi ngày chỉ biết lặp lại một lần, hơn nữa cũng chỉ có thể chảy ngược một ngày thời gian.”</p>
+        <p>Ma lực cường đại người hoặc là thẻ bài Clow người sử dụng, thực dễ dàng phát hiện thời gian không bình thường, loại này chảy ngược thời gian ma pháp có thể bị đánh gãy, nhưng chảy ngược thời gian lại không cách nào bị thay đổi.</p>
+        <p>Cũng đúng là bởi vì thời gian huyền diệu, Clow Reed ở sáng tạo này trương bài thời điểm, làm thời gian chảy ngược chỉ có thể một ngày hạn chế.</p>
+        <p>“Từ trước 『 The Time 』 bài thường xuyên bị dùng để phá án là ai ăn vụng phòng bếp tiểu bánh kem, hoặc là ai đánh nát hành lang bình hoa linh tinh……”</p>
+        <p>Kero gãi đầu, đối diện trước này hai trương nhìn qua tương tự độ cao đến vi diệu bài cũng cảm thấy buồn bực.</p>
+        <p>Cùng Clow Reed giống nhau chế tác ma pháp thẻ bài vốn dĩ liền rất kỳ quái, nếu tạp mặt đều như vậy tương tự, thật sự rất khó nói là trùng hợp.</p>
+        <p>“Khi bài khống chế chỉ có thể là thời gian, mà không thể là thời không, cho nên dùng 『 The Time 』 bài không có khả năng làm một người từ tương lai trở về quá khứ.”</p>
+        <p>“Bất quá cũng không phải không có thẻ bài Clow không thể làm được chuyện này…… 『 The Return 』 bài nói, là chuyên môn tặng người trở lại quá khứ thẻ bài Clow, chẳng qua này trương bài sử dụng phi thường hao phí ma lực, hơn nữa cũng thập phần dễ dàng làm người sử dụng bị lạc ở hỗn loạn đan xen thời gian.”</p>
+        <p>Touya khom lưng từ trên bàn cầm lấy kia trương màu ngân bạch thẻ bài, lưu chuyển ma lực thẻ bài ở hắn trong tay trên dưới tung bay.</p>
+        <p>Nói cách khác, này trương bài tuy rằng có cùng 『 The Time 』 tương tự tạp mặt, nhưng lại cùng 『 The Time 』 đặc tính hoàn toàn bất đồng.</p>
+        <p>Là trùng hợp sao…… Vẫn là……</p>
+        <p>“Ngươi có thể cùng thẻ bài Clow giao lưu sao?” Touya hỏi Kero, “『 The Time 』 giống như là cố tình đang chờ bị ta phong ấn giống nhau.”</p>
+        <p>Kero đậu đậu mắt chớp hạ: “Kia muốn xem là cái gì bài, nếu là nào đó khó mà nói lời nói không thích lý người bài, phỏng chừng sẽ chê ta phiền tới.”</p>
+        <p>Đối, đặc chỉ nào đó cùng ánh trăng tính tình giống nhau âm tình bất định thẻ bài Clow.</p>
+        <p>“Liền tỷ như nó.” Kero bay lên tới, móng vuốt thẳng lăng lăng chỉ hướng trên mặt bàn 『 The Time 』 bài, phồng lên má căm giận nói, “Ta cùng 『 The Time 』 siêu cấp không đối phó.”</p>
+        <p>Mỗi lần mỗi lần, Clow đều là dùng 『 The Time 』 bài tới bắt ăn vụng tiểu bánh kem người!</p>
+        <p>Một trảo một cái chuẩn!</p>
+        <p>Chính là nguyệt cũng ăn vụng quá a! Dựa vào cái gì 『 The Time 』 bài liền bất công nguyệt, mỗi lần liền chảy ngược đã đến giờ nó từ phòng bếp lén lút ra tới!</p>
+        <p>Quá mức quá mức quá mức!</p>
+        <p>Trên mặt bàn 『 The Time 』 bài mặt ngoài đột nhiên hiện lên một đạo lưu quang.</p>
+        <p>Touya hình như có sở giác, đuôi lông mày hơi chọn.</p>
+        <p>Kero biểu tình cứng đờ một chút, coi như không nghe được vừa rồi 『 The Time 』 bài báo ra hắn năm đó ăn vụng đồ vật đánh nát đồ cổ đâm hư pha lê số lần, phành phạch tiểu cánh liền tưởng lưu.</p>
+        <p>『 The Time 』 mặt ngoài lại hiện lên một đạo quang mang.</p>
+        <p>Kero rời đi động tác một đốn.</p>
+        <p>Nó nhìn lén Touya vài mắt, sau đó bay đến Touya bên người vòng quanh Touya dạo qua một vòng, thấu đi lên như là tiểu cẩu giống nhau dùng sức ngửi ngửi hảo một trận.</p>
+        <p>Touya: “? Làm gì?”</p>
+        <p>Đồ ngọt ăn nhiều rốt cuộc điên rồi?</p>
+        <p>Kero hai tay ôm ngực phi ở giữa không trung, vẻ mặt buồn bực: “『 The Time 』 nói ngươi trên người có loại thực kỳ diệu hương vị, ta như thế nào không nghe thấy?”</p>
+        <p>“Sao, tính, 『 The Time 』 loại này bài luôn là thần thần thao thao, lời nói nghe không hiểu là thường có sự, dù sao phong ấn là được lạp! Ta đi xuống lầu ăn pudding lạc ～”</p>
+        <p>“Pudding pudding pudding .”</p>
+        <p>Cửa phòng mở ra, Kero kêu pudding thanh âm dần dần đi xa.</p>
+        <p>Touya rũ mắt nhìn về phía kia trương đồng hồ cát còn đang không ngừng lậu hạ màu ngân bạch thẻ bài, tầm mắt xẹt qua trên mặt bàn lẳng lặng nằm 『 The Time 』 bài, ánh mắt nặng nề.</p>
+        <p>……</p>
+        <p>Đêm · Kinomoto trạch</p>
+        <p>Kéo lên bức màn phòng một mảnh tối tăm, trong chăn, nghiêng người mà nằm Touya mày nhíu lại, ngủ đến cũng không an ổn, tựa hồ ở trong mộng cũng ở tự hỏi cái gì.</p>
+        <p>Trong phòng mỏng manh linh quang chớp động, hai cái thân hình thu nhỏ lại thành mini bản tinh linh lặng yên không một tiếng động mà xuất hiện ở Touya đầu giường.</p>
+        <p>Thần bí nữ tính tinh linh bị mũ che đậy hai mắt, thả người bay đến Touya đỉnh đầu, trong tay linh quang tinh tinh điểm điểm dừng ở Touya mặt bộ, khiến cho nguyên bản ngủ đến cũng không an ổn Touya lâm vào nặng nề cảnh trong mơ.</p>
+        <p>Ăn mặc trường bào tinh linh thiếu nữ ôm ấp mặt đồng hồ, nàng bay đến đầu giường yêu thích không buông tay mà vuốt đầu giường màu ngân bạch thẻ bài, trong ánh mắt tràn đầy chờ mong, nâng lên tay, đem trong lòng ngực mặt đồng hồ thượng kim đồng hồ bay nhanh kích thích một vòng lại một vòng.</p>
+        <p>-------------DFY--------------</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong16.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong18.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "so-tay-chan-nuoi-truc-ma-cua-kinomoto-kun";
+const NOVEL_TITLE = "Sổ Tay Chăn Nuôi Trúc Mã Của Kinomoto-Kun";
+const CHAPTER_TITLE = "Chương 17";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+
+});
+</script>
+</body>
+</html>
