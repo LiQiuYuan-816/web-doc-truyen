@@ -1,0 +1,880 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 23: Đạo cụ kế thừa</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Nản Lòng Trong Nhà Ngồi Xổm Tủ Quần Áo Cùng Vô Hạn Thế Giới Tương Liên
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 23: Đạo cụ kế thừa</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong22.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong24.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-23 -->
+
+        <p>Che giấu phòng che giấu môn? Mặc dù Phùng Ngải Lâm đã ở thế giới thứ hai sống như thế lâu cũng trước nay không gặp được quá loại sự tình này.</p>
+        <p>“Ta nhớ rõ người chơi giống như có thể tạp tường, ngươi là hơn hai mươi năm người chơi lâu năm, tạp cái tường hẳn là thực nhẹ nhàng đi, đã từng có người cùng ta nói, ở vô hạn trong thế giới phó bản quy tắc nhất định sẽ cho người chơi sinh cơ hội, không có phá hỏng sở hữu con đường quy tắc, các ngươi đi đều là đầu óc không…… Vũ lực giá trị cao, vậy hẳn là có vũ lực giá trị cao thông quan phương pháp, tỷ như, tạp này mặt tường gì đó.” Lê Sâm ấp úng nói.</p>
+        <p>Phùng Ngải Lâm ấp úng nói: “Bởi vì không có bất luận cái gì phương diện này tiền lệ……”</p>
+        <p>Có hay không Lê Sâm không biết, nhưng là hiện tại trong hiện thực chính là như vậy, rốt cuộc đây là căn cứ hiện thực mới có thể nhìn đến manh mối.</p>
+        <p>“Trừ bỏ này mặt tường là thang máy, ở bên này hai mặt tường cũng phân biệt treo treo biển hành nghề, mặt trên cũng là công nhân sổ tay, hẳn là cùng các ngươi ở phó bản nhìn đến treo biển hành nghề là đối ứng.” Lê Sâm chống cằm nói.</p>
+        <p>“Treo biển hành nghề……” Phùng Ngải Lâm rũ mắt, lại lần nữa nhìn về phía bởi vì bàn nhỏ thượng không bỏ xuống được, đã toàn bộ phô ở trên mặt đất một đống lớn tay vẽ bản đồ, “Ta nhớ rõ, ở mỗi một cái trong phòng bệnh đều có bức họa, cùng ngươi họa cho ta nhà ăn bên trong trên bản vẽ treo biển hành nghề vị trí hoàn toàn đối ứng, sở hữu bày biện, cũng chỉ có treo biển hành nghề đối ứng, rõ ràng này đó họa chúng ta ở luân hồi đã lặp lại xem qua rất nhiều lần, tìm không thấy bất luận cái gì có ý nghĩa manh mối, vì cái gì sẽ…… Treo biển hành nghề, hoặc là bức họa linh tinh, chẳng lẽ kỳ thật có cái gì hàm nghĩa?”</p>
+        <p>Lê Sâm như thế nào sẽ biết đâu? Hỏi hắn lại vô dụng.</p>
+        <p>Phùng Ngải Lâm cẩn thận nhìn chăm chú này đó phức tạp khổng lồ tay vẽ bản đồ, Lê Sâm chú ý tới đối phương nguyên bản ướt át nửa bên tóc dài lúc này đã làm, bọn họ đã ở chỗ này dùng thời gian rất lâu. Khinh lệnh lâu tựa lưu tam khinh dù linh</p>
+        <p>“Còn muốn xem địa phương khác sao, lão bản?” Cô độc lang đại khái cũng là rất mệt, nói chuyện cũng chưa ngay từ đầu trung khí mười phần.</p>
+        <p>Lê Sâm ánh mắt từ trên mặt đất một đống lớn trang giấy thượng đảo qua, cuối cùng nhắm lại hai mắt, thở dài, lại lần nữa mở to mắt thời điểm, hắn đã từ bỏ tự hỏi.</p>
+        <p>Đã vậy là đủ rồi.</p>
+        <p>Có thể cho Phùng Ngải Lâm xem, đều đã nhìn, hắn sẽ không tự mình trải qua phó bản nội dung, từ Phùng Ngải Lâm trong miệng thuật lại tin tức đã từng có một lần sai lệch, lại mang theo hắn chủ quan ý tưởng, chỉ sợ sẽ không đối phó bản quy tắc đi hướng có chính hướng ý nghĩa giải thích.</p>
+        <p>Hắn có thể vì Phùng Ngải Lâm làm cũng chỉ có nhiều như vậy, hắn cũng sống lại Phùng Ngải Lâm, còn ở trình độ nhất định thượng hỗ trợ, ít nhất hắn có thể nói không thẹn với lương tâm, không nợ Phùng Ngải Lâm cái gì.</p>
+        <p>Nếu ban đầu Phùng Ngải Lâm không có đối hắn biểu đạt thiện ý nói, hắn có lẽ ngay từ đầu còn có thể càng nhẹ nhàng một chút.</p>
+        <p>Ít nhất hiện tại hắn cung cấp này đó tin tức, hẳn là không đến mức muốn lại phát đến trên mạng đi.</p>
+        <p>Lê Sâm mở ra cô độc lang giọng nói, một bên thao tác di động: “Phiền toái ngài, hôm nay công tác liền đến nơi này, ta cho ngươi chuyển khoản ngươi thấy được sao?”</p>
+        <p>“Ai, thấy được thấy được, hắc hắc, hợp tác vui sướng, ta có thể hỏi hỏi các ngươi này rốt cuộc là làm gì sao? Gián điệp thương mại sao? Vẫn là người đối diện gì đó? Vẫn là ngươi tính toán chính mình khai cái thương siêu sao? Ta đối mặt khác thương trường cũng rất quen thuộc muốn hay không……”</p>
+        <p>Nhưng mà Lê Sâm đã cắt đứt video.</p>
+        <p>Thế giới đều thanh tịnh.</p>
+        <p>“Ta không biết đây là có ý nghĩa phỏng đoán vẫn là vô ý nghĩa manh mối, vừa mới ở trong video ta chụp hình ở thang máy gian hai cái treo biển hành nghề công nhân thủ tục, mặt trên viết buổi tối 9 giờ đến buổi sáng 9 giờ mới là thang máy chuyên vận chuyển hàng hoá sử dụng thời gian, cho nên ta tưởng có không có khả năng là chỉ có ở buổi tối không thể thăm dò, chạy thoát ác quỷ đuổi giết thời điểm, mới có thể mở ra thang máy gian.”</p>
+        <p>Phùng Ngải Lâm sửng sốt, khiếp sợ nhìn phía Lê Sâm.</p>
+        <p>Mà Lê Sâm không có tiếp tục xem Phùng Ngải Lâm ánh mắt, mà là cúi đầu trên giấy sao hạ vừa mới chụp hình trung công nhân thủ tục.</p>
+        <p>“Các ngươi không phải vũ lực giá trị rất cao sao? Nếu làm chỉ biết động não nhược kê tới là rất khó ở buổi tối bị quỷ truy đuổi dưới tình huống dễ dàng chạy thoát đi, cho nên cũng có khả năng là cho các ngươi ở nguy hiểm buổi tối thăm dò, mới có thể cho các ngươi càng nhiều manh mối.” Lê Sâm cuối cùng đem sao xong công nhân thủ tục đẩy cho Phùng Ngải Lâm, chậm rãi nói, “Bất quá này cũng chỉ là ta suy đoán thôi, muốn hay không mạo nguy hiểm thử xem xem, còn muốn xem chính ngươi nghĩ như thế nào.”</p>
+        <p>Lê Sâm xoa xoa chính mình lộn xộn màu đen tóc, hắn kỳ thật là thẳng phát, chỉ là vẫn luôn lười đến xử lý mới có thể biến thành như vậy hơi cuốn trạng thái, hắn nhưng thật ra không cảm thấy không tốt, xoã tung không ít.</p>
+        <p>Lê Sâm đứng dậy phía trước nhặt lên Phùng Ngải Lâm di thư, rất mỏng phong thư, nắm không có nửa điểm trọng lượng.</p>
+        <p>“Ta có thể vì ngươi làm được chỉ có này đó, kế tiếp cũng chỉ có thể chính ngươi trở về nỗ lực.”</p>
+        <p>“Chính ngươi ở chỗ này chậm rãi xem đi, ngươi chừng nào thì đi đều được, trên mặt đất này đó bản vẽ ngươi đều có thể toàn bộ mang đi, đi phía trước cũng không cần cho ta biết, ngươi phải nhớ kỹ cùng ta ước định, không cần đối bất luận kẻ nào nói ta giúp quá ngươi sự.” Lê Sâm rất mệt, hôm nay lời nói cơ hồ là hắn một năm phân, miệng khô lưỡi khô.</p>
+        <p>Lê Sâm rời đi phòng ngủ phía trước nghiêng đầu nhìn thoáng qua Phùng Ngải Lâm ở hắn trong phòng ngủ lưu lại đứt tay cùng trường đao, rách nát đứt tay nhìn qua thực thấm người, thứ này hẳn là sẽ không ở hắn trong phòng ngủ hư thối đi?</p>
+        <p>Lê Sâm bước ra phòng ngủ thời điểm, mới cảm thấy chính mình mỏi mệt thực, chơi game cả đêm đều không có hiện tại như vậy mệt.</p>
+        <p>Mệt chưa bao giờ là động não đi tự hỏi cái gì, mà là muốn cùng người giao lưu, hắn không có câu thông chướng ngại, chỉ là thuần túy cùng những người khác đãi ở bên nhau liền sẽ kịch liệt tiêu hao tinh lực mà thôi.</p>
+        <p>Ra phòng ngủ, cùng Phùng Ngải Lâm cách một cánh cửa, liền đủ để cho Lê Sâm cảm thấy trong nhà không khí đều trở nên tươi mát.</p>
+        <p>Từ trên kệ để hàng gỡ xuống một lon Coca, ùng ục ùng ục uống lên mấy khẩu, rũ mắt.</p>
+        <p>Không lạnh.</p>
+        <p>Lê Sâm đem trên kệ để hàng một bộ phận đồ uống đều phóng tới tủ lạnh ướp lạnh, nghĩ nghĩ còn ở tủ lạnh thượng dán trương điều: Nội có băng uống.</p>
+        <p>Rốt cuộc trước kia hắn vẫn luôn cảm thấy chính mình là vô điều kiện miễn phí cung cấp ăn vặt đồ ăn vặt, hiện tại biết mọi người đều là trả phí lúc sau, Lê Sâm cũng nhiều điểm làm tiệm tạp hóa lão bản ý thức trách nhiệm.</p>
+        <p>Nga.</p>
+        <p>Còn có nơi giao dịch.</p>
+        <p>Lê Sâm một lần nữa về tới chính mình cho chính mình quy hoạch tiểu cách gian, dùng kia giản dị giấy xác môn một lần nữa phong lên, nằm trở lại trên sô pha trong nháy mắt kia, Lê Sâm cảm thấy chính mình được đến cứu rỗi.</p>
+        <p>Mở ra Phùng Ngải Lâm phong thư, nhưng mà phong thư thượng cái gì đều không có, ở Lê Sâm nghi hoặc là lúc đột nhiên treo không xuất hiện một đống lớn đồ vật quang lang lang đột nhiên rơi xuống, toàn bộ nện ở Lê Sâm trên người.</p>
+        <p>“Ai u, ai u uy, ai u…… Ngao ô……”</p>
+        <p>Lê Sâm bị tạp ngao ngao kêu không nói, giống như có thứ gì thật mạnh nện ở bụng, nếu không phải hiện tại dạ dày trống trơn hắn có thể trực tiếp nhổ ra, chật vật từ chính mình trên giường phiên đứng dậy, trốn đến góc tường, Lê Sâm cuộn tròn ở góc tường nội, trơ mắt nhìn lúc này chất đống ở hắn coi như giường đệm trên sô pha đồ vật càng tích lũy càng nhiều, cư nhiên biến thành một cái nho nhỏ ngọn núi.</p>
+        <p>Lê Sâm một bên trừu khí, một bên xoa bụng, khó có thể tin nhìn kia một đống lớn vật phẩm.</p>
+        <p>Tuy rằng từng bước từng bước chợt vừa thấy đi lên đều là thực tinh tế vật phẩm, nhưng đồ vật một nhiều toàn bộ xếp ở bên nhau quả thực như là cái rác rưởi sơn, thậm chí còn ẩn ẩn truyền đến một trận kỳ quái khí vị.</p>
+        <p>Này chẳng lẽ chính là cái gọi là phá gia giá trị bạc triệu sao? Phùng Ngải Lâm là có cái gì thu thập phích sao? Hơn hai mươi năm tích lũy đồ vật có thể so Lê Sâm cấp Phùng Ngải Lâm dùng kia rương nhỏ muốn nhiều đi a?</p>
+        <p>Lê Sâm cũng vô pháp phân biệt mấy thứ này giá trị, từng bước từng bước hình thù kỳ quái, hắn cũng thật sự là vô pháp tính toán rốt cuộc là kiếm lời vẫn là mệt.</p>
+        <p>“Chủ nhà, chủ nhà? Ta nghe được ngươi thanh âm, ngươi có khỏe không?”</p>
+        <p>“Còn hảo.” Lê Sâm từ trong một góc đứng dậy, trên người bị tạp đau bộ phận một bị tác động lập tức kích thích Lê Sâm nhe răng trợn mắt.</p>
+        <p>“Ta đi vào.”</p>
+        <p>Lê Sâm còn chưa kịp ngăn cản, kia bất kham một kích giản dị môn cũng đã bị mở ra, Phùng Ngải Lâm nhìn ở trong góc nhỏ yếu bất lực Lê Sâm, cùng với ở bên cạnh lung tung rối loạn đống rác, đột nhiên ý thức được cái gì.</p>
+        <p>“Ngươi không có biện pháp sử dụng không gian túi…… Không, đạo cụ rương sao?” Phùng Ngải Lâm nói.</p>
+        <p>Lê Sâm trầm mặc, đó là cái gì.</p>
+        <p>Lê Sâm mới biết được, cho tới nay hắn nhìn đến đại gia từ trong túi tìm kiếm lấy cái gì, kỳ thật đều là không gian túi, đạo cụ rương là sau lại hứng khởi cách gọi.</p>
+        <p>Bởi vì Lê Sâm không có biện pháp sử dụng đạo cụ rương, cho nên một kế thừa Phùng Ngải Lâm đạo cụ rương, vô pháp gửi đạo cụ liền toàn bộ hạ xuống, biến thành hiện tại như vậy bộ dáng.</p>
+        <p>“Thực xin lỗi, là ta sơ sót, ngươi không phải thế giới thứ hai cư dân, vô pháp dễ dàng sử dụng thế giới thứ hai vật phẩm, ta giúp ngươi thu thập một chút đi.”</p>
+        <p>Lê Sâm chật vật đứng ở một bên, mắt trông mong nhìn đạo cụ sơn, đột nhiên nghĩ tới cái gì.</p>
+        <p>Hắn có lẽ yêu cầu lại mua ba cái kệ để hàng.</p>
+        <p>Tuy rằng hắn không muốn, nhưng là này đó người chơi nghiễm nhiên đã đem hắn nơi này coi như nơi giao dịch, vậy ít nhất cần phải có có thể đổi đạo cụ địa phương, ngay cả Phùng Ngải Lâm một người đạo cụ đều có thể tích lũy như thế nhiều, tổng không thể thật sự cùng rác rưởi giống nhau đôi ở nơi đó, bày ra mở ra làm đại gia rõ ràng nhìn đến, về sau hẳn là liền sẽ không xuất hiện ‘ lão bản, ta muốn XXX, có sao, ở nơi nào ’ linh tinh trạng huống.</p>
+        <p>“Vì cái gì có điểm xú xú?” Lê Sâm nhưng không muốn gặp nạn nghe hương vị ở, như vậy sẽ hấp dẫn hàng xóm.</p>
+        <p>“Hẳn là một ít quái vật trên người rơi xuống thân thể tàn chi đạo cụ, tuy rằng đặt ở đạo cụ rương có thể giữ tươi, nhưng là đặt ở bên ngoài liền sẽ bắt đầu hư thối đi, đều là rất quan trọng đạo cụ, tốt nhất vẫn là nghĩ cách bảo tồn một chút, khả năng có thể có trọng dụng.”</p>
+        <p>Phùng Ngải Lâm vừa nói, một bên từ rác rưởi trong núi móc ra tới thứ gì.</p>
+        <p>Lê Sâm mặt vô biểu tình nhìn ở Phùng Ngải Lâm trong tay đen nhánh, dính nhớp, đang ở thập phần tươi sống nhảy lên trái tim.</p>
+        <p>Lê Sâm: “……”</p>
+        <p>Hảo đi.</p>
+        <p>Lê Sâm rời khỏi vừa mới mua sắm kệ để hàng giao diện, ở mua sắm phần mềm thanh tìm kiếm tìm tòi: Đông lạnh quầy triển lãm.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- END-AUTO-INSERT-23 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong22.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong24.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "nan-long-trong-nha-ngoi-xom-tu-quan-ao-cung-vo-han-the-gioi-tuong-lien";
+const NOVEL_TITLE = "Nản Lòng Trong Nhà Ngồi Xổm Tủ Quần Áo Cùng Vô Hạn Thế Giới Tương Liên";
+const CHAPTER_TITLE = "Chương 23: Đạo cụ kế thừa";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
