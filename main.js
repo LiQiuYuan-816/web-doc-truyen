@@ -60,6 +60,7 @@ const genreMap = {
    "co-dai": "Cổ đại",
    "lang-man": "Lãng mạn",
    "cc-sakura": "Card Captain Sakura",
+   "dien-sinh": "Diễn sinh",
    "conan": "Thám Tử Conan"
 };
 
