@@ -1,0 +1,880 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 24</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ngụy Trang Học Tra
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 24</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong23.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong25.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-24 -->
+
+        <p>“Nha, Tiệp ca!”</p>
+        <p>Vạn Đạt sáng sớm mới vừa thu thập thứ tốt, chuẩn bị xuất phát đi thực đường ăn cơm sáng, quay đầu liền nhìn đến Thẩm Tiệp trong tay xách theo bánh bao sữa đậu nành đi thang lầu đi lên, phất tay chào hỏi.</p>
+        <p>Hắn cùng Thẩm Tiệp là ở trường thi thượng nhận thức, cùng nhau gian lận qua so qua đáp án giao tình, tuy rằng ngày thường liên hệ đến thiếu, mỗi lần nhìn thấy mặt luôn có một loại mạc danh thân thiết cảm.</p>
+        <p>Thẩm Tiệp đang muốn chuyển biến thượng lầu 3, nghe được thanh âm cũng dừng lại: “Hắc, Vạn Sự Thông.”</p>
+        <p>“Ngươi như thế nào tới ký túc xá,” Vạn Đạt đi qua đi, “Tìm Triều ca?”</p>
+        <p>Thẩm Tiệp trong tay xách theo đồ vật lắc qua lắc lại, hận không thể kén chúng nó xoay quanh: “Đúng vậy.”</p>
+        <p>Vạn Đạt nhớ tới Hạ Triều buổi sáng trốn học, vài tên nhậm khóa lão sư lão sư giận sôi máu bộ dáng, hiểu rõ nói: “Triều ca làm ngươi kêu hắn? Rời giường khó khăn hộ a.”</p>
+        <p>“Vạn Sự Thông đồng chí, ngươi đem Triều ca tưởng thành người nào.” Thẩm Tiệp nói, “Hắn như là vì không trốn học còn cố ý để cho người khác kêu người của hắn sao? Ngươi đem hắn nghĩ đến cũng quá tốt đẹp.”</p>
+        <p>Vạn Đạt: “…… Là tại hạ thiên chân.”</p>
+        <p>Thẩm Tiệp lại nói: “Các ngươi ban mới tới cái kia lão sư, người rất không tồi.”</p>
+        <p>“Đường lão sư?”</p>
+        <p>“Ai đối, chính là họ Đường cái kia.”</p>
+        <p>Cao nhị tam ban đã trải qua đổi lão sư phong ba, lúc trước viết liên danh thư thời điểm, oanh động toàn bộ niên cấp tổ, rất có loại anh dũng khởi nghĩa cảm giác, Vạn Đạt cười cười nói: “Lão Đường người này là khá tốt.”</p>
+        <p>Thẩm Tiệp: “Quả thực ngưu bức, ta còn là lần đầu tiên nhìn thấy như vậy.”</p>
+        <p>Đường Sâm không chỉ là đem Hạ Triều kêu lên đi tiến hành rồi một đoạn vừa xú vừa dài nói chuyện, hắn còn tưởng thâm nhập hiểu biết một chút Hạ Triều đồng học linh hồn, cuối cùng đem Thẩm Tiệp cũng kêu qua đi.</p>
+        <p>Thẩm Tiệp lần đầu tiên bị mặt khác ban lão sư gọi vào văn phòng, uống xong hai ly nóng hầm hập trà, ngồi ở chỗ kia có điểm không biết làm sao: “Lão sư, ta là cao nhị tám ban.”</p>
+        <p>Đường Sâm hiền lành mà nói: “Ta biết ngươi là tám ban.”</p>
+        <p>“Ta rất thích chúng ta ban, chúng ta ban hài hòa hữu ái, lão sư đồng học chi gian hỗ trợ lẫn nhau nắm tay cộng tiến, ta cảm thấy rất vui sướng, trước mắt không có tưởng chuyển ban tính toán.” Thẩm Tiệp tổng cảm thấy này lão sư nhìn chằm chằm hắn xem ánh mắt rất kỳ quái, sợ không phải tưởng đào hắn góc tường.</p>
+        <p>Kết quả Đường Sâm chỉ là tìm hắn nói hy vọng hắn trợ giúp một chút bọn họ ban Hạ Triều đồng học.</p>
+        <p>“Ta điều tra một chút, ngươi cùng chúng ta ban Hạ Triều quan hệ không tồi…… Ta tưởng hắn nội tâm nhất định cũng là rất tưởng tới đi học, bất hạnh chiến thắng không được giường, khuyết thiếu một ít tự chủ, nếu ngươi phương tiện nói, buổi sáng có thể mời hắn cùng nhau đi học sao? Vất vả ngươi.”</p>
+        <p>“……”</p>
+        <p>Thẩm Tiệp nghe xong tuy rằng có điểm ngốc, nhưng vẫn là tỏ vẻ ‘ hảo hảo hảo ta sẽ ’.</p>
+        <p>Sau đó Đường Sâm lại nói: “Ta biết các ngươi người trẻ tuổi, sinh hoạt ban đêm thực phong phú. Ta cũng rất tưởng hiểu biết một chút các ngươi người trẻ tuổi hiện tại đều ở chơi chút cái gì, ngươi biết Hạ Triều đồng học gần nhất ở đánh cái gì trò chơi sao?”</p>
+        <p>“Triều ca gần nhất ở đánh cái gì trò chơi?” Vạn Đạt hỏi.</p>
+        <p>“Nói ra đều có điểm hơi xấu hổ,” Thẩm Tiệp kén bao nilon lắc lư tay dừng lại, biểu tình phức tạp, “…… Kỳ tích, Kỳ Tích Noãn Noãn.”</p>
+        <p>Vạn Đạt: “……” Ha?</p>
+        <p>Hai người nói nói một khối hướng trên lầu đi, Vạn Đạt cũng không biết chính mình vì cái gì muốn đi theo đi, chờ hắn phục hồi tinh thần lại đã cùng Thẩm Tiệp hai người đứng ở Hạ Triều ký túc xá cửa.</p>
+        <p>Thẩm Tiệp hôm nay nhiệm vụ chính là đem Triều ca từ trong ổ chăn lôi ra tới.</p>
+        <p>Hắn vừa lúc có Hạ Triều phòng ngủ chìa khóa, vẫn là khai giảng ngày đó triền Hạ Triều nửa ngày mới cầu tới. Bàn tính như ý gõ đến vang, ngẫu nhiên tưởng trốn học thời điểm hướng trong phòng ngủ trốn một trốn, mỹ tư tư.</p>
+        <p>Thẩm Tiệp một bên mở cửa một bên nói: “Làm ta vì ngươi cởi bỏ phong ấn đi Triều ca! Giường tuy vây được trụ thân thể của ngươi, nhưng là vây không được ngươi linh hồn…… Đứng lên đi, cùng ta cùng nhau……”</p>
+        <p>Thẩm Tiệp nói đến một nửa, đột nhiên im bặt.</p>
+        <p>Vạn Đạt đứng ở hắn phía sau thúc giục hắn: “Còn ở ngủ? Trực tiếp cho hắn hoảng lên.”</p>
+        <p>Chờ Vạn Đạt đi lên trước, hướng trong phòng ngủ nhìn thoáng qua, hắn cũng nói không ra lời.</p>
+        <p>“……”</p>
+        <p>“Ngươi đánh ta một chút.”</p>
+        <p>“Ngươi cũng…… Ngươi cũng đánh ta một chút.”</p>
+        <p>Phòng ngủ giường đệm là giường đơn phối trí, tễ hạ hai người vẫn là có điểm miễn cưỡng.</p>
+        <p>Điều hòa độ ấm đánh đến thấp, kéo ra môn một cổ khí lạnh ra bên ngoài thoán.</p>
+        <p>Tạ Du đầu gối lên Hạ Triều cánh tay thượng, đưa lưng về phía môn, từ Thẩm Tiệp cái kia góc độ thoạt nhìn liền cùng rúc vào Hạ Triều trong lòng ngực giống nhau.</p>
+        <p>Hạ Triều bên hông che lại cái góc chăn, cái kia hơi mỏng điều hòa bị đại bộ phận đều cái ở Tạ Du trên người.</p>
+        <p>Tạ Du tóc che khuất nửa khuôn mặt, mơ hồ thấy được cái mũi cùng cằm. Hắn đại khái là cảm giác được một chút động tĩnh, cảm thấy sảo, trong lúc ngủ mơ nhăn lại mi, vô ý thức mà tưởng hướng trong chăn toản.</p>
+        <p>Này một toản lại sảo tới rồi Hạ Triều.</p>
+        <p>Thẩm Tiệp nhìn Hạ Triều động tác tương đương tự nhiên mà nâng nâng bị Tạ Du gối cái tay kia, thủ đoạn vừa động, trực tiếp trở tay khấu thượng Tạ Du cái ót, năm căn ngón tay nhợt nhạt mà cắm vào hắn tóc, trong miệng thấp giọng nói câu: “…… Đừng nháo.”</p>
+        <p>Vạn Đạt bình tĩnh trở lại, không biết nên phát biểu ý kiến gì, cuối cùng chỉ nói hai chữ: “Oa nga.”</p>
+        <p>“Có lẽ sự tình không giống chúng ta tưởng tượng như vậy,” cuối cùng Thẩm Tiệp đóng cửa lại, cùng Vạn Đạt hai người cùng nhau ngồi ở thang lầu thượng trầm tư, sữa đậu nành tùy tay bãi trên mặt đất, “Nhất định là chúng ta tư tưởng quá cổ hủ.”</p>
+        <p>Vạn Đạt hỏi: “Triều ca ngày thường cũng sẽ làm ngươi nằm hắn giường sao?”</p>
+        <p>Thẩm Tiệp không chút nghĩ ngợi nói: “Không có khả năng, ta nằm trên đó hắn tuyệt đối sẽ đem ta đá xuống dưới.”</p>
+        <p>“……”</p>
+        <p>Nói chuyện phiếm cho tới nơi này lại băng rồi.</p>
+        <p>Vạn Đạt vỗ vỗ Thẩm Tiệp bả vai: “Gánh thì nặng mà đường thì xa, huynh đệ ta đi trước một bước. Lập tức liền phải đi học.”</p>
+        <p>Tạ Du đồng hồ sinh học từ trước đến nay thực đúng giờ, hơn nữa giấc ngủ thiển, vừa rồi Thẩm Tiệp lại đây khai cái môn, buồn ngủ đã tiêu đi xuống một nửa.</p>
+        <p>Hắn nằm ở trên giường, có ý thức mà hoãn vài phút, mở mắt ra ánh mắt đầu tiên nhìn đến chính là Hạ Triều hầu kết.</p>
+        <p>Thẩm Tiệp còn ngồi ở thang lầu bậc thang trầm tư.</p>
+        <p>Đột nhiên nghe được phía sau đột nhiên phát ra thứ gì rơi xuống tiếng vang, rầu rĩ mà một chút, sau đó là hắn Triều ca mắng chửi người thanh âm: “Ta thao.”</p>
+        <p>Buổi sáng là Đường Sâm ngữ văn sớm đọc, Hạ Triều vẫn là đến muộn hơn mười phút.</p>
+        <p>“Ngươi có thể hay không đi nhanh điểm?” Tạ Du đỡ hắn, đỡ đến khu dạy học dưới lầu đã có điểm không kiên nhẫn.</p>
+        <p>Hạ Triều phủng sữa đậu nành, hỏi lại: “…… Ta đây đều là bởi vì ai?”</p>
+        <p>Hắn đại buổi sáng bị Tạ Du từ trên giường đá đi xuống, chân phải cổ chân trực tiếp khái ở trên ghế.</p>
+        <p>Mới vừa lên lầu, xa xa liền nhìn đến Đường Sâm chờ ở phòng học cửa, trong tay cầm cái thứ gì, ở hành lang đi qua đi lại.</p>
+        <p>Hạ Triều một ly sữa đậu nành uống đến không sai biệt lắm, thủ đoạn giơ lên, tùy tay hướng thùng rác ném, ném ra một đạo xinh đẹp đường parabol.</p>
+        <p>“Bang”.</p>
+        <p>Không nghiêng không lệch, vừa lúc tạp trung.</p>
+        <p>“Hưng sư vấn tội tới,” Hạ Triều cười, “Xin lỗi a, khả năng yếu hại ngươi cùng ta cùng nhau phạt trạm.”</p>
+        <p>Không biết vì cái gì, càng ở chung càng cảm thấy, rất nhiều thời điểm Hạ Triều cười chỉ là một loại thói quen tính biểu hiện giả dối, tỷ như hiện tại, hắn giống như cũng không có như vậy vui vẻ.</p>
+        <p>Hạ Triều cho rằng Đường Sâm là tới hưng sư vấn tội, kết quả Đường lão sư kháp đồng hồ bấm giây, vỗ vỗ vai hắn: “Mười ba phân 26 giây, Hạ Triều đồng học, so sánh với ngày hôm qua, hôm nay ngươi lấy được tiến bộ rất lớn.”</p>
+        <p>Hạ Triều: “…… A?”</p>
+        <p>Đường lão sư thu hồi biểu, lại nói: “Ngươi chân làm sao vậy? Chạy nhanh, chạy nhanh đi phòng y tế nhìn xem.”</p>
+        <p>Hạ Triều còn không có phản ứng lại đây, Đường Sâm đã ngồi xổm xuống kiểm tra Hạ Triều cổ chân, tỏ vẻ lo lắng: “Tạ Du đồng học, ngươi đi trước đi học đi, ta dẫn hắn đi phòng y tế.”</p>
+        <p>Tạ Du đối vị này Đường lão sư hảo cảm độ gia tăng không ít, đang muốn nói ‘ hảo ’, Hạ Triều lại nói: “Hắn hôm nay cần thiết phải đối ta phụ trách đến cùng.”</p>
+        <p>Tạ Du: “…… Ta lúc ấy như thế nào không đem ngươi một khác chân cũng đá đoạn.”</p>
+        <p>Lưu Tồn Hạo thơ từ đọc diễn cảm đến một nửa, dừng lại, tiến đến Vạn Đạt bên tai nói: “Triều ca hôm nay này chân uy đến cũng thật giống.”</p>
+        <p>Hạ Triều mỗi lần trốn học đến trễ, diễn thông thường đều thực đủ.</p>
+        <p>Bọn họ còn ở tam ban bên trong trong đàn đoán, hôm nay / Triều ca sẽ tìm cái gì lấy cớ đến trễ.</p>
+        <p>[ anh đại - Hứa Tình Tình ]: Không đoán trúng, Triều ca này kịch bản thật là ngũ thải tân phân.</p>
+        <p>[ lớp trưởng - Lưu Tồn Hạo ]: Còn nhớ rõ khai giảng ngày đó hắn trực tiếp cấp Thẩm Tiệp an cái cái gì ngoạn ý nhi bệnh bao tử sao, Thẩm Tiệp hiện tại còn tổng Triều ca nắm chạy phòng y tế khai dược.</p>
+        <p>[ Thể Ủy - La Văn Cường ]: Vì cái gì a?</p>
+        <p>[ lớp trưởng - Lưu Tồn Hạo ]: Triều ca nói, muốn phế vật lợi dụng, không chừng lần tới còn có thể phái được với công dụng, diễn trò liền phải làm đủ.</p>
+        <p>[ anh đại - Hứa Tình Tình ]:……</p>
+        <p>Lưu Tồn Hạo liêu xong lúc sau lại lén lút đem điện thoại nhét trở lại đi, phát hiện ngày thường nhất bát quái bát quái chi vương Vạn Đạt đồng học vẫn cứ thờ ơ: “Ngươi hôm nay làm sao vậy? Không vui?”</p>
+        <p>Vạn Đạt lắc đầu: “Ta hôm nay buổi sáng đã chịu một ít đánh sâu vào.”</p>
+        <p>Vạn Đạt di động cũng vẫn luôn ở chấn, bất quá không phải tam ban bên trong đàn tin tức, đều là quen biết hay không oanh oanh yến yến, tưởng hắn quang côn mười bảy tái, cư nhiên cũng có bị nữ hài tử quay chung quanh một ngày.</p>
+        <p>- các ngươi ban Hạ Triều, liên hệ điện thoại nhiều ít? Ngươi liền cấp một chút sao, ta bảo đảm không nói là ngươi cấp.</p>
+        <p>- Đạt Đạt, chúng ta cũng nhận thức như vậy nhiều năm, ngươi liền giúp giúp ta? Ta viết một phong thư tình, tưởng cấp Tạ Du, có thể thác ngươi hỗ trợ cấp một chút sao?</p>
+        <p>- ngươi một cái đàn ông như thế nào dong dong dài dài! Có phải hay không bằng hữu! Ước Hạ Triều ra tới một chuyến như vậy lao lực, tỷ nhóm suốt đời hạnh phúc liền ở ngươi trên tay.</p>
+        <p>- Hạ Triều có bạn gái sao, hắn thích cái dạng gì nữ hài tử?</p>
+        <p>Vạn Đạt quả thực đầu đau muốn nứt ra.</p>
+        <p>Đừng hỏi! Hai người bọn họ khả năng không thích nữ!! A!!!</p>
+        <p>Phòng y tế.</p>
+        <p>Giáo y cùng Hạ Triều đều thục đến không thể lại thục, liền tên đều kêu được với tới, hắn ăn mặc áo blouse trắng, ngồi ở bàn làm việc trước viết đơn tử, vừa thấy Hạ Triều vào cửa liền nói: “Nha, hôm nay lại là nào vừa ra a?”</p>
+        <p>Hạ Triều nửa cái trọng lượng treo ở Tạ Du trên người, hướng giáo y chào hỏi: “Lục ca, sớm a.”</p>
+        <p>Tạ Du đỡ hắn hướng trên giường bệnh ngồi.</p>
+        <p>Nhưng thật ra Đường Sâm thoạt nhìn tương đối khẩn trương: “Lục giáo y ngươi mau nhìn xem, uy đến còn rất nghiêm trọng, ngươi nhìn xem là khai điểm dược vẫn là yêu cầu thượng đại bệnh viện chẩn bệnh một chút.”</p>
+        <p>Lục giáo y người thoạt nhìn ôn tồn lễ độ, trên thực tế cũng không phải cái gì dễ chọc nhân vật, mỗi ngày như vậy nhiều trang bệnh, hắn nếu là thật tốt khi dễ, kia học phòng y tế đều có thể khai cái trốn học tị nạn trung tâm.</p>
+        <p>Hắn viết xong một trương đơn tử, xé xuống tới, ngay ngắn đè ở bên cạnh, sau đó mới buông bút đứng dậy: “Đừng lo lắng . này bang hài tử, đặc biệt là ngươi lớp học cái này, cái này kêu Hạ Triều, quả thực là cái diễn……”</p>
+        <p>Lục giáo y vừa nói vừa ngồi xổm xuống, tay một đụng tới Hạ Triều cổ chân, xiếc tinh tinh tự nuốt đi xuống: “Thật uy bị thương a.”</p>
+        <p>Không thương đến xương cốt, chườm lạnh tiêu sưng lúc sau lại phun điểm Vân Nam Bạch Dược.</p>
+        <p>“Nghỉ ngơi mấy ngày, không cần kịch liệt vận động,” Lục giáo y nói, “Có cái gì trạng huống, nơi nào không thoải mái liền tới đây, vẫn là muốn nhiều chú ý, ngàn vạn đừng nghĩ không cần né tránh đánh nhau a, lại đánh liền thành người què.”</p>
+        <p>Hạ Triều kia cổ chân một hồi ban liền khiến cho vây xem.</p>
+        <p>Lưu Tồn Hạo ghé vào trên bàn, từ trên xuống dưới xem, còn ở cảm khái: “…… Thoạt nhìn cùng thật sự giống nhau.”</p>
+        <p>Thể dục ủy viên La Văn Cường cũng tới xem náo nhiệt, hắn ngày thường thường xuyên tích cực khai triển thể dục vận động, đối một ít thường thấy thương thục đến không thể lại thục, liếc mắt một cái liền nhìn ra tới: “Đây là thật sự, lớp trưởng, thật sự uy.”</p>
+        <p>Gần nhất tiết thể dục ở luyện bóng rổ, La Văn Cường tưởng tổ cái đội bóng rổ . tuy rằng cũng không có gì thi đấu, nhưng là hắn kia viên nhiệt ái vận động tâm vẫn luôn ở ngo ngoe rục rịch.</p>
+        <p>Vốn dĩ cái thứ nhất tưởng mượn sức chính là Hạ Triều.</p>
+        <p>Hiện tại chân uy còn có điểm đáng tiếc.</p>
+        <p>Lưu Tồn Hạo: “A, thật sự a, sao lại thế này?”</p>
+        <p>Hứa Tình Tình lại đây thu ngày hôm qua tiếng Anh bài thi, Hạ Triều một bên phiên bài thi một bên nói: “Cái này, ngươi phải hỏi ta ngồi cùng bàn.”</p>
+        <p>Tạ Du mặt không đổi sắc nói: “Ta đá, ngượng ngùng.”</p>
+        <p>Hứa Tình Tình thu được bài thi còn rất kinh ngạc: “Hôm nay cư nhiên không phải giấy trắng?”</p>
+        <p>“Đó là, nghiêm túc viết,” Hạ Triều nói, “Nghiêm túc lên ta chính mình đều sợ hãi, khẳng định siêu cường.”</p>
+        <p>Hứa Tình Tình thô sơ giản lược quét xong đệ nhất mặt, lại lật qua đi xem mặt sau đọc đề: “……” Lấy nàng đối này đó đề mục ấn tượng, nàng liền không thấy được một đạo chính xác.</p>
+        <p>Bất quá nàng sợ nói ra quá đả kích Hạ Triều lòng tự tin, đang muốn tùy tiện khen hai câu, liền nghe Tạ Du ở bên cạnh không nóng không lạnh mà tới câu: “Cường cái rắm, không bằng nộp giấy trắng.”</p>
+        <p>Đúng vậy.</p>
+        <p>Nói rất đúng.</p>
+        <p>Hứa Tình Tình đều tưởng vỗ tay.</p>
+        <p>Buổi sáng có tiết thể dục, Lục giáo y cấp Hạ Triều khai đơn, La Văn Cường làm hắn lưu tại trong phòng học nghỉ ngơi.</p>
+        <p>Nói là nghỉ ngơi kỳ thật chính là ngủ.</p>
+        <p>Hạ Triều ghé vào bàn học thượng, từ mặt khác góc độ thượng xem đều chỉ thấy được hắn cái ót, tuy rằng quy quy củ củ mà ăn mặc đồng phục, nhưng cả người khắc đầy “Tản mạn” hai chữ. Bởi vì trên hành lang quá mức ầm ĩ, hắn ngủ đến không quá / an ổn, vì thế nghiêng nghiêng đầu điều chỉnh tư thế, tay thuận thế đáp ở bàn duyên thượng.</p>
+        <p>“Hạ Triều cùng Tạ Du này đối ngồi cùng bàn, ta đều lười đến nói.” Chuông tan học vang, giáo viên tiếng Anh trở lại văn phòng, một bên ở máy lọc nước trước tiếp thủy một bên nói, “Hai người hôm nay giao đi lên tiếng Anh bài thi giống nhau như đúc, chỉnh chỉnh tề tề, không biết là ai sao ai…… Bọn họ như vậy sao có cái gì ý nghĩa? Một đạo đề đều mông không đúng, toàn sai.”</p>
+        <p>Toán học lão sư vừa lúc ở phê tác nghiệp, trên tay này bổn tác nghiệp bộ trừ bỏ bìa mặt thượng ‘ Tạ Du ’ hai chữ viết xinh đẹp, đại khí hào hùng, đầu bút lông sắc bén, bên trong nội dung quả thực thảm không nỡ nhìn, hắn cau mày, lắc đầu: “Này thành tích, lúc trước như thế nào khảo cao trung? Sơ trung tri thức điểm đều làm lỗi.”</p>
+        <p>Một vị khác lớn tuổi chút lão sư khai đạo nói: “Không nháo sự liền không tồi. Muốn ta nói, hai người bọn họ học kỳ này vẫn là có điểm tiến bộ, tính tình xác thật thu liễm chút, xem ra trường học cái này chỗ ngồi an bài vẫn là có điểm tác dụng, chính là cái này thành tích…… Thành tích một chốc cũng cấp không tới.”</p>
+        <p>Vị kia lão sư nói xong, lại nói: “Các ngươi nhìn xem, người lão Đường nhiều bình tĩnh, hắn đều không vội.”</p>
+        <p>Đường Sâm là trọng điểm trường học chuyển tới, tuy rằng tuổi nghề dạy học mau 20 năm, nhưng bọn hắn đối hắn hiểu biết không nhiều lắm, nhưng biết hắn cùng Khương chủ nhiệm là lão đồng học, hai người là mười mấy năm lão bằng hữu.</p>
+        <p>Khương chủ nhiệm như vậy “Cuồng táo” một người, bằng hữu nhưng thật ra tính tình thực hảo.</p>
+        <p>Đường Sâm cúi đầu ở mân mê di động, hình như là không nghe được, chờ kia lão sư kêu hắn tiếng thứ hai thời điểm hắn mới ngẩng đầu: “Cái gì? Xin lỗi xin lỗi, vừa rồi không chú ý nghe.”</p>
+        <p>“Ngươi lộng cái gì đâu?” Giáo viên tiếng Anh tiếp xong thủy, đi ngang qua thời điểm dừng lại bước chân, khom lưng nhìn mắt, “…… Trò chơi?”</p>
+        <p>Trên màn hình di động rõ ràng là cái tóc dài phiêu phiêu phim hoạt hoạ tiểu cô nương, trên người ăn mặc váy, bên cạnh cái kia danh sách còn có một đống đủ loại kiểu dáng quần áo.</p>
+        <p>Đường Sâm lập tức lui ra ngoài, thối lui đến chủ màn hình giao diện, không biết như thế nào giải thích: “A…… Cái này……”</p>
+        <p>Cũng may giáo viên tiếng Anh cũng chỉ là vội vàng liếc quá, không thấy quá cẩn thận, khóa đại biểu lại gõ cửa tiến vào tìm nàng muốn sửa tốt luyện tập bộ. Giáo viên tiếng Anh chuyển cái thân công phu liền quên mất vừa rồi cái kia tiểu nhạc đệm: “Tám ban đúng không? Từ đơn bổn phê hảo, ở trên bàn đâu, ba cái ban xếp ở bên nhau, ngươi tìm xem.”</p>
+        <p>Tiết thể dục vẫn là cứ theo lẽ thường luyện bóng rổ.</p>
+        <p>Nữ sinh chiếm dụng tiết học thời gian tương đối nhiều, trên cơ bản ngày thường đều không có tiếp xúc quá cái này vận động, cầu trực diện tạp lại đây phản ứng đầu tiên không phải đi tiếp mà là bụm mặt ngồi xổm xuống né tránh. Thể dục lão sư dẫn theo các nàng đơn độc luyện, nam sinh lãnh bóng rổ tự do hoạt động.</p>
+        <p>Hứa Tình Tình căn bản không sợ tạp, luyện trong chốc lát cảm thấy không kính, nhất chạy đến nam sinh đôi đi chơi.</p>
+        <p>“Cường Cường, ta nghe nói các ngươi đội bóng rổ còn thiếu người,” Hứa Tình Tình vỗ cầu đi qua đi, “Ngươi cảm thấy ta thế nào? Có thể gia nhập sao?”</p>
+        <p>La Văn Cường đang ở luyện ném rổ, hắn kia một thân cơ bắp phơi thành màu đồng cổ, chợt vừa thấy có điểm kiện mỹ tiên sinh ý tứ, hắn nhảy dựng lên, đem bóng rổ ném đi, lau mồ hôi, nói: “Tình tỷ, ngươi nghiêm túc sao?”</p>
+        <p>Tạ Du dựa lưng vào sân bóng rổ cửa sắt, ngồi ở bóng cây phía dưới, lỗ tai tắc một con tai nghe.</p>
+        <p>Tiếng ca ở bên tai vòng tới vòng lui.</p>
+        <p>Hắn nghe nghe bỗng nhiên giơ tay đi ấn âm lượng kiện, tiếng ca càng ngày càng nhỏ, cuối cùng thành tĩnh âm.</p>
+        <p>Hứa Tình Tình: “Thực nghiêm túc, ngươi ngẫm lại đến lúc đó ta ban xuất chinh thời điểm……”</p>
+        <p>Nàng lời nói còn chưa nói xong, Vạn Đạt liền từ phía sau vòng qua tới đem nàng cầu cấp đoạt, cười hướng bên cạnh chạy: “Muốn thực sự có lúc ấy, ta ban xếp hạng khẳng định lót đế.”</p>
+        <p>Vạn Đạt chạy vội chạy vội đụng vào Lưu Tồn Hạo trên người, Lưu Tồn Hạo trong tay cầm bóng rổ trực tiếp bị hắn đâm bay đi ra ngoài.</p>
+        <p>Lưu Tồn Hạo lập tức tạc: “Ngươi lăn lại đây, ta vừa rồi cái kia ba phần cầu ấp ủ đã lâu ngươi biết không!”</p>
+        <p>Tạ Du chính nhìn, gương mặt bỗng nhiên dán lên một cái băng băng lương lương đồ vật, quay đầu thấy khập khiễng Hạ Triều không biết khi nào đứng ở hắn bên cạnh, trong tay còn cầm hai bình băng nước có ga.</p>
+        <p>“Tiểu bằng hữu,” Hạ Triều đem thủy nhét vào Tạ Du trong tay, nói, “Khác tiểu bằng hữu đều đi chơi bóng rổ, ngươi như thế nào một người ngốc tại nơi này?”</p>
+        <p>Nước có ga là mật đào vị, bình thân nổi lên sương mù, hóa thành bọt nước dính Tạ Du một tay.</p>
+        <p>Vạn Đạt thấy hắn, bất hạnh bị Hứa Tình Tình cùng Lưu Tồn Hạo hai người cùng nhau đuổi giết, đành phải xa xa mà kêu: “Triều ca . ngươi như thế nào xuống dưới?”</p>
+        <p>Hạ Triều nói: “Xuống dưới nhìn xem ta soái khí ngồi cùng bàn.”</p>
+        <p>Vạn Đạt dưới chân lảo đảo, thiếu chút nữa không ngã xuống đi.</p>
+        <p>Hạ Triều vặn ra nắp bình, quả đào thủy hương vị kẹp băng khí mạo đi lên: “Phòng học quá nhàm chán, bên ngoài đám kia nữ sinh ríu rít, ngủ đều ngủ không được.”</p>
+        <p>“Đám kia không đều là tới xem ngươi.” Tạ Du nói.</p>
+        <p>“Như thế nào chính là tới xem ta…… Cái này logic ta còn là không lộng minh bạch, lần trước Vạn Đạt kia tiểu tử cũng nói như vậy.”</p>
+        <p>Hạ Triều uy cái chân, nháo đến toàn niên cấp đều biết, đặc biệt là kia phê tiểu nữ sinh, lo lắng đến vô pháp tập trung tinh lực đi học.</p>
+        <p>“Ngươi cho rằng các nàng mỗi ngày khóa gian đứng ở hành lang làm gì?”</p>
+        <p>Hạ Triều ngửa đầu rót hết một ngụm, nước đá uống đến vui sướng, sau đó nói: “Ta như thế nào biết, ngắm phong cảnh? Phơi nắng bổ Canxi?”</p>
+        <p>“……”</p>
+        <p>Người này EQ ở nào đó phương diện, xưng là tàn tật.</p>
+        <p>Nghĩ đến EQ vấn đề này, nửa ngày, Tạ Du dùng còn ở không ngừng “Nước chảy” bình nước thọc thọc Hạ Triều: “Uy, tàn tật, nói qua luyến ái sao.”</p>
+        <p>Hạ Triều đang xem La Văn Cường bọn họ chơi bóng, trừ bỏ La Văn Cường còn có thể nhìn xem, những người khác trình độ kỳ thật thứ thật sự, cảm giác chính là lại đây quấy rối, nhưng hắn vẫn như cũ hào không keo kiệt chính mình ca ngợi: “Hảo cầu . Hạo Tử ngươi cái này da rắn đi vị thực tao a.”</p>
+        <p>Lưu Tồn Hạo nghiêng đầu so cái “Khốc” thủ thế, thoạt nhìn cũng là tự tin tràn đầy.</p>
+        <p>Hạ Triều cảm giác được khuỷu tay chợt lạnh, lúc này mới phản ứng lại đây vừa rồi Tạ Du nói: “Ta chính là uy cái chân, kêu ta tàn tật còn không đến mức đi?”</p>
+        <p>“Nói thật cho ngươi biết,” Hạ Triều đem cánh tay đặt tại Tạ Du trên vai, lấy một loại khoác lác tư thái chỉ vào sân bóng rổ cửa sắt nói, “Ca tiền nhiệm, có thể từ nơi đó, vẫn luôn bài đến Kim Bảng tiệm cơm, lại bài trở về.”</p>
+        <p>Tạ Du không nói hai lời trực tiếp đem nước có ga nện ở trên mặt hắn.</p>
+        <p>“Ta chỉ đùa một chút, chỉ đùa một chút,” Hạ Triều giơ tay sờ mặt, sờ đến một tay thủy, “…… Tiểu bằng hữu ngươi cái này tính tình có điểm bạo a.”</p>
+        <p>Tiết thể dục tan học, Hạ Triều cùng Tạ Du hai người tiếng Anh bài thi đã bị dán ở báo bảng bên cạnh tiểu triển bản thượng, công khai xử tội.</p>
+        <p>Bên cạnh dán toàn ban tối cao phân Hứa Tình Tình 120 phân bài thi, đối lập tương đương mãnh liệt.</p>
+        <p>Trong ban người lục tục từ sân bóng trở về.</p>
+        <p>Lưu Tồn Hạo lại đây vây xem, nửa ngày nói không nên lời lời nói: “Hai người các ngươi đi…… Các ngươi hai cái…… Vì cái gì muốn cho nhau sao đâu?” Sao ai không tốt, muốn sao đối phương, thành tích cái dạng gì trong lòng không điểm số sao!</p>
+        <p>“Bởi vì ta tin tưởng ta ngồi cùng bàn.” Hạ Triều liền ngồi ở cuối cùng một loạt, ly tiểu triển bản rất gần, hắn xoay người khóa ngồi ở trên ghế, một cặp chân dài vượt ở hai bên, cực kỳ đáng chú ý, “Ta ngồi cùng bàn cũng tin tưởng ta.”</p>
+        <p>Lưu Tồn Hạo nửa ngày không biết nên nói cái gì, lau lau thượng tiết khóa chơi bóng rổ ra hãn, nói: “Hai người các ngươi cũng thật có dũng khí.”</p>
+        <p>Trên thực tế, Tạ Du vốn dĩ không tưởng đem bài thi làm thành như vậy.</p>
+        <p>Nhưng là tối hôm qua quan sát xuống dưới, Hạ Triều đáp đề chất lượng thật sự là đáng sợ.</p>
+        <p>Tạ Du rốt cuộc minh bạch vì cái gì cao một thời điểm, hắn vì khảo thí quải khoa, thành tích lót đế trả giá như vậy nhiều nỗ lực, mỗi lần vắt óc tìm mưu kế khống chế điểm, lại chỉ có thể khuất cư toàn niên cấp đếm ngược đệ nhị.</p>
+        <p>Nguyên lai này tuổi đếm ngược đệ nhất bảo tọa, Hạ Triều trấn.</p>
+        <p>Vì thế Tạ Du làm bài thời điểm cố tình tránh đi chính xác lựa chọn, lập chí muốn lần này nguyệt khảo giữa áp xuống Hạ Triều, lấy cái đệ nhất.</p>
+        <p>Đếm ngược đệ nhất.</p>
+        <p>Tới gần nguyệt khảo, Vạn Đạt bọn họ cũng không ở tiết tự học buổi tối thời điểm giảng quỷ chuyện xưa, đều vội vàng ôn tập.</p>
+        <p>Chó Điên lại đây tuần tra, nhìn đến cao nhị tam ban vui sướng hướng vinh nhiệt ái học tập bộ dáng, khó được cảm thấy vừa lòng: “Không tồi, đặc biệt đối với các ngươi đưa ra khen ngợi, bảo trì đi xuống, các ngươi ban gần nhất học tập không khí thực không tồi. Học sinh chính là phải có loại này học tập bộ dáng, phi thường hảo.”</p>
+        <p>Đường Sâm vừa lúc cơm nước xong lại đây xem bọn hắn, nắng hè chói chang ngày mùa hè, trong tay dẫn theo cái nước ấm ly.</p>
+        <p>Chó Điên: “Lão Đường, tới vừa lúc, có việc tìm ngươi.”</p>
+        <p>Đường Sâm đem ly nước đặt ở trên bục giảng, đi theo Khương chủ nhiệm cùng nhau đi ra ngoài.</p>
+        <p>“Có hay không phát hiện gần nhất Chó Điên tổng hướng chúng ta ban chạy,” có tin tức liền phải cùng nhau chia sẻ, Vạn Đạt biên viết toán học đề biên nói, “Ta ban lão Đường, cùng Chó Điên là hảo cơ hữu. Hảo đến mặc chung một cái quần cái loại này.”</p>
+        <p>Hạ Triều trên mặt bàn quán thư, tay lén lút nhét ở trong ngăn kéo chơi di động.</p>
+        <p>Tuy rằng ngày thường không có lão sư dám quản bọn họ, nhưng Chó Điên là ngoại lệ, gừng càng già càng cay, Khương chủ nhiệm càng là cay trung chi cay. Trị khởi người tới bọn họ cũng chống đỡ không được, cảm giác tùy thời có thể cùng học sinh đánh lên tới, căn bản không ở sợ, tổng cảm thấy hắn tuổi trẻ thời điểm cũng là cái xưng bá giang hồ tàn nhẫn nhân vật.</p>
+        <p>Cho nên mỗi lần Chó Điên lại đây tuần tra, chẳng sợ lại không tình nguyện, bọn họ cũng sẽ đi theo đại gia cùng nhau trang trang bộ dáng.</p>
+        <p>Tạ Du ném chi bút qua đi, nhắc nhở hắn: “Chó Điên.”</p>
+        <p>“Giúp ta yểm hộ một chút,” Hạ Triều cũng không ngẩng đầu lên nói, “Ta hiện tại này quan đúng là đặc thù thời kỳ, không thể phân tâm. Ái ngươi nha.”</p>
+        <p>“Cuối cùng ba chữ cho ta thu hồi đi.”</p>
+        <p>“?”</p>
+        <p>“Nghe ghê tởm.”</p>
+        <p>Tạ Du ném xong bút phát hiện chính mình liền này một chi, lại giơ tay qua đi đem bút nhặt về tới.</p>
+        <p>Trong lúc vô tình thoáng nhìn Hạ Triều trên màn hình di động hình ảnh.</p>
+        <p>Tạ Du trong ấn tượng, hắn vị này ngồi cùng bàn đã đem game thời trang gác lại thật lâu, mấy ngày hôm trước còn lôi kéo hắn cùng nhau chơi “Nam nhân lãng mạn” . ngắm bắn trò chơi.</p>
+        <p>Phỏng chừng game thời trang giống trận gió lốc, ở tiểu nữ sinh trong vòng đã không lưu hành.</p>
+        <p>Khương chủ nhiệm cùng lão Đường trò chuyện một lát liền đi dò xét dưới lầu lớp, Hạ Triều trực tiếp đưa điện thoại di động lấy ra tới, bãi ở bên ngoài chơi.</p>
+        <p>Trên màn hình là một cái phim hoạt hoạ nữ hài, trường tóc, toái váy hoa, hai má phiếm hồng, đứng ở một thân cây hạ, làm kỳ nguyện trạng.</p>
+        <p>Sau đó hình ảnh dần dần ám đi xuống, vài đoạn phụ đề chậm rãi hiện ra tới.</p>
+        <p>“Ngày mai…… Chính là ta cùng hắn hẹn hò nhật tử……”</p>
+        <p>“Hắn có thể hay không tới đâu?”</p>
+        <p>“Hắn sẽ thích ta vì hắn thân thủ làm hoa anh đào bánh sao?”</p>
+        <p>Tạ Du: “……”</p>
+        <p>Vạn Đạt người này trong miệng kêu ta muốn ôn tập lần này nguyệt khảo ta nhất định phải nhất minh kinh nhân các ngươi ai đều không cần lại đây quấy rầy ta, làm bài làm được nửa đường, thật sự nhàm chán, cắn bút đầu tả nhìn xem hữu nhìn xem, cuối cùng tầm mắt dừng ở cuối cùng một loạt, nhìn đến hai viên gắt gao tương ai đầu.</p>
+        <p>Hạ Triều đem tay đáp ở Tạ Du sau cổ, năm căn ngón tay hơi hơi khúc khởi, cố ý vô tình đem hắn hướng phía chính mình ôm.</p>
+        <p>Hai người ghé vào cùng nhau không biết đang nói cái gì.</p>
+        <p>“Hắn vì cái gì không cùng ta hẹn hò?” Hạ Triều đều mau hỏng mất, “Nam nhân thúi mẹ nó, ngày hôm qua rõ ràng nói tốt muốn tới, hảo cảm điều đều xoát đầy.”</p>
+        <p>Tạ Du nhìn trên màn hình vị kia ở trong mưa bi thương rơi lệ thiếu nữ, cũng không biết nên làm gì phản ứng.</p>
+        <p>Hình ảnh góc phải bên dưới có mấy cái đánh dấu, trong đó một cái mặt trên còn có tiểu điểm đỏ, Tạ Du hỏi: “Vừa rồi hắn cho ngươi phát tin nhắn?”</p>
+        <p>Hạ Triều nói: “Bá đạo tổng tài nói hắn công ty có việc khả năng sẽ muộn một chút đến, sau đó có ba cái hồi phục lựa chọn.”</p>
+        <p>Tạ Du mơ hồ bắt giữ tới rồi cái gì: “Ngươi tuyển cái nào?”</p>
+        <p>Hạ Triều: “Đương nhiên là khiển trách hắn sao lại có thể đến muộn.”</p>
+        <p>“……”</p>
+        <p>“Ngươi có bệnh a,” Tạ Du nghe được đau đầu, “Như vậy ai mẹ nó muốn cùng ngươi hẹn hò?”</p>
+        <p>“Như vậy liền không tới hẹn hò, tính cái gì nam nhân a, còn bá tổng,” Hạ Triều mắng về mắng, vẫn là đem điện thoại hướng Tạ Du trong tầm tay đẩy, “Kia kế tiếp làm sao bây giờ…… Thao, nam nhân thúi đối bé ngoan hảo cảm điều biến phụ.”</p>
+        <p>Tạ Du nhẹ điểm hai hạ màn hình, đi theo trò chơi cốt truyện đi xuống dưới: “Hướng nam nhân thúi xin lỗi.”</p>
+        <p>Hạ Triều: “……”</p>
+        <p>“Xin lỗi,” Tạ Du đem điện thoại đẩy trở về, “Ngươi còn có nghĩ được đến nam nhân thúi ái.”</p>
+        <p>“…… Ta mẹ nó.”</p>
+        <p>Hạ Triều chậm chạp không hạ thủ được, cuối cùng vẫn là nhẫn nhục phụ trọng địa điểm ‘ hôm nay thật là ngượng ngùng ’ cái này lựa chọn.</p>
+        <p>Hạ Triều lại nói: “Hạ Tịch nha đầu này về sau tìm bạn trai nếu là dám tìm như vậy, trực tiếp đánh chết, tưởng đều không cần tưởng, hiện tại tiểu cô nương đều là cái gì ánh mắt.”</p>
+        <p>Lại mau đến cuối tuần.</p>
+        <p>Trừ bỏ những cái đó gia cách khá xa cảm thấy qua lại không tiện, đại bộ phận học sinh nội trú thứ sáu liền thu thập đồ vật chuẩn bị về nhà. Đặc biệt là gia trưởng, tổng lo lắng hài tử ở trường học ăn không ngon, vừa đến cuối tuần liền thúc giục hài tử chạy nhanh trở về.</p>
+        <p>Tạ Du ở tiết tự học buổi tối mới vừa tan học thời điểm liền nhận được Cố Tuyết Lam điện thoại: “Cuối tuần trở về sao?”</p>
+        <p>Tạ Du đứng ở trên hành lang, trước mắt một mảnh tối lửa tắt đèn, phía sau là Hạ Triều cùng Vạn Đạt bọn họ đùa giỡn thanh âm, bàn ghế không biết vì cái gì bị chỉnh đến loảng xoảng loảng xoảng vang.</p>
+        <p>“Triều ca, muốn hay không tới gia nhập chúng ta đội bóng rổ a, chúng ta thực ngưu bức.”</p>
+        <p>“Lời này ta thổi thổi liền thôi bỏ đi, các ngươi tự mình lại đây cùng ta thổi, có điểm không thể nào nói nổi. Buổi sáng Lưu Tồn Hạo cái kia da rắn cứt chó đi vị, ta cũng không mặt mũi nói hắn.”</p>
+        <p>“…… Ngươi không phải khen hắn thực ngưu phê sao!”</p>
+        <p>“Lời này là thật là giả ngươi nghe không hiểu a?”</p>
+        <p>Tạ Du gợi lên khóe miệng cười cười, hồi phục nói: “Cuối tuần, không nhất định hồi, lại xem đi.”</p>
+        <p>Cố Tuyết Lam nắm ống nghe, nhỏ không thể nghe thấy mà thở dài, sau đó mới nói: “Ngươi này đều mấy cái tuần không đã trở lại?”</p>
+        <p>Tạ Du tìm cái khắp thiên hạ cha mẹ nghe xong đều cao hứng lý do qua loa lấy lệ: “Lập tức nguyệt khảo, ta muốn chuyên tâm ôn tập.”</p>
+        <p>Học kỳ này Tạ Du biểu hiện cũng không tệ lắm, không trêu chọc chuyện gì, đã đổi mới lão sư, vị kia mới tới Đường lão sư cũng nói Tạ Du rất thủ kỷ luật rất không tồi, muốn nàng yên tâm.</p>
+        <p>Cái này lý do vừa ra, Cố nữ sĩ quả nhiên không lời nói có thể nói.</p>
+        <p>“Vậy ngươi hảo hảo học tập,” Cố Tuyết Lam nói, “Thi xong liền về nhà, muốn ăn cái gì mẹ cho ngươi làm, trường học thức ăn nào có trong nhà hảo……”</p>
+        <p>Tạ Du ‘ ân ’ vài tiếng, trò chuyện một lát liền treo điện thoại.</p>
+        <p>Hạ Triều đã thu thập thứ tốt, nói nói cười cười từ phía sau chụp một chút Tạ Du đầu, cùng với nói chụp, dùng xoa càng chuẩn xác: “Tiểu bằng hữu, cuối tuần không trở về nhà?”</p>
+        <p>Tạ Du người này, nhìn tặc kiên cường, tóc lại đặc biệt mềm, Hạ Triều không nhịn xuống lại xoa nhẹ hai hạ.</p>
+        <p>“Người què,” Tạ Du kêu hắn, “Ngươi hôm nay cấp điểm nhan sắc liền khai phường nhuộm có phải hay không?”</p>
+        <p>Mắt thấy Tạ Du liền phải động nắm tay, Hạ Triều nghiêng người né tránh: “Bình tĩnh. Hòa khí sinh tài, hòa khí sinh tài.”</p>
+        <p>Vạn Đạt vội vã trở về thu quần áo, đi trước một bước.</p>
+        <p>Chờ Tạ Du Hạ Triều hai người sóng vai đi ra khu dạy học, cách rất dài một đoạn thời gian, Hạ Triều mới nói: “Ta cuối tuần cũng không quay về.”</p>
+        <p>Đèn đường đem hai người thân ảnh kéo thật sự trường.</p>
+        <p>“Lưu giáo làm gì,” Tạ Du nói, “Muốn thử xem dân gian đuổi quỷ thuật có hay không dùng?”</p>
+        <p>Hạ Triều đầu tiên là sửng sốt, sau đó tưởng nói điểm cái gì, cuối cùng vẫn là cũng chưa nói, không lại cho chính mình thêm chút xuất sắc ngoạn mục tiết mục, hắn giơ tay gãi đầu phát, bỗng nhiên cười: “Đúng vậy, ta muốn thử xem.”</p>
+        <p>Rồi lại đi ra một đoạn đường, Tạ Du đột nhiên hỏi: “Hạ Tịch, ngươi muội muội tên sao.”</p>
+        <p>“Cái kia nha đầu chết tiệt kia,” Hạ Triều nhìn chằm chằm đèn đường nói ra này năm chữ về sau, lại không nói, nửa ngày mới nói, “…… Ta có phải hay không hẳn là thổi một đợt ta muội lớn lên có bao nhiêu đẹp quả thực tùy ta? Kỳ thật ta cũng không biết, thật nhiều năm không gặp, hẳn là khá xinh đẹp đi, không phải nói nữ đại mười tám biến sao, rốt cuộc khi còn nhỏ như vậy xấu, béo đến giống cái cầu.”</p>
+        <p>Hạ Triều nói được nhẹ nhàng, Tạ Du nghe ra tới không thích hợp, cũng không có phương tiện hỏi.</p>
+        <p>Hạ Triều nhưng thật ra không sao cả, trực tiếp đem của cải đều giũ ra tới, ngắn gọn sáng tỏ hơn nữa đặc biệt bình tĩnh: “Ly dị, nàng đi theo ta mẹ quá.”</p>
+        <p>“Rất êm tai.”</p>
+        <p>Hạ Triều nghiêng đầu: “Cái gì?”</p>
+        <p>Tạ Du nói: “Ngươi muội muội tên.”</p>
+        <p>“Kia ta đâu?” Hạ Triều lại hỏi, “Loại này thời điểm không nên thuận tiện cũng khen một chút ta.”</p>
+        <p>Tạ Du hướng ký túc xá đi, không phải rất tưởng để ý đến hắn: “Ngươi? Ngươi lăn xa chút đi.”</p>
+        <p>Vạn Đạt cuối tuần cũng không trở về nhà, hắn lý do cùng Tạ Du không có sai biệt . “Ta muốn chuyên tâm ôn tập”, bất quá mức độ đáng tin hiển nhiên muốn so Tạ Du cao hơn rất nhiều.</p>
+        <p>“Ta là nghiêm túc, ta mẹ nấu cơm ăn quá ngon, trong nhà có máy tính, máy tính quá hảo chơi.” Vạn Đạt ghé vào bàn học thượng đối Lưu Tồn Hạo nói hết chính mình buồn rầu, “Ta một hồi về đến nhà, thật giống như về tới nghỉ đông và nghỉ hè, căn bản khống chế không được, rất tốt nhân sinh sao lại có thể lãng phí ở học tập mặt trên.”</p>
+        <p>Lưu Tồn Hạo dùng khuỷu tay đỉnh đỉnh hắn, ý bảo hắn câm miệng.</p>
+        <p>Vạn Đạt chống thân thể ngắm một vòng, lại nằm sấp xuống đi: “Làm gì a, lại không có lão sư…… Có lão sư ta cũng không sợ.”</p>
+        <p>Không có lão sư, nhưng là có cao nhị tam ban vĩ đại, lệnh người sợ hãi học tập ủy viên.</p>
+        <p>Tiết Tập Sinh người này, ở niên cấp tổ rất có danh, hắn là các khoa lão sư trong mắt sủng nhi, đồng học trong mắt kỳ nhân.</p>
+        <p>Khai giảng ngày đầu tiên, Tiết Tập Sinh tự giới thiệu thời điểm liền nói “Hy vọng đại gia có thể cộng đồng phấn đấu, nỗ lực, tiến bộ”, trên bàn dán đầy tiện lợi dán, nhớ công thức, từ đơn, câu hình……</p>
+        <p>Tiết Tập Sinh mang theo thật dày mắt kính, trong tay cầm một chồng khóa ngoại luyện tập đề từ cửa đi vào.</p>
+        <p>Hứa Tình Tình đi ngang qua, gặp được hắn thời điểm bị hắn hoảng sợ: “…… Học ủy, ngươi cái này quầng thâm mắt.”</p>
+        <p>Tiết Tập Sinh bước chân phù phiếm, cả người thoạt nhìn có chút mệt nhọc quá độ, hắn giơ tay đỡ đỡ gọng kính, nói: “Không có việc gì, ta còn có thể tiếp tục học tập, nguyệt khảo cố lên Hứa Tình Tình đồng học.”</p>
+        <p>“Thêm, cố lên.” Hứa Tình Tình không biết nói cái gì, ngơ ngác mà đáp lại nói.</p>
+        <p>Lưu Tồn Hạo: “Chó Điên có câu thiền ngoài miệng nói như thế nào tới, cái gì học bất tử hướng chết học, ta cảm thấy ta ban học ủy hoàn toàn chính là người phát ngôn.”</p>
+        <p>Vạn Đạt quả thực xem ngây người: “Quầng thâm mắt nguyên lai có thể sâu như vậy.”</p>
+        <p>Hạ Triều hôm nay không đến trễ, hắn cùng Tạ Du hai người một trước một sau tiến ban: “Sớm a.”</p>
+        <p>Vạn Đạt: “Sớm sớm sớm.”</p>
+        <p>“Nhìn cái gì đâu?” Hạ Triều đơn vai vác cặp sách, thò lại gần.</p>
+        <p>Lưu Tồn Hạo nói: “Đang xem ta ban học ủy quầng thâm mắt.”</p>
+        <p>“Ta đi, như vậy hắc.” Hạ Triều cũng dọa nhảy dựng.</p>
+        <p>Tạ Du đang chuẩn bị vòng qua bọn họ đi trên chỗ ngồi ngủ bù, Hạ Triều đầu cũng không quay lại trực tiếp bắt lấy cổ tay hắn đem hắn cùng nhau túm lại đây: “Lão Tạ, nhìn xem. Này quầng thâm mắt, là có bao nhiêu lâu không ngủ.”</p>
+        <p>Tiết Tập Sinh đại buổi sáng phao ly cà phê, chính phủng vừa uống vừa bối tiếng Anh từ đơn.</p>
+        <p>Tạ Du đối quầng thâm mắt không có gì hứng thú, hắn hiện tại một lòng chỉ nghĩ ngủ bù, duỗi tay đi bẻ Hạ Triều tay.</p>
+        <p>Hạ Triều còn ở vây xem “Gấu trúc”, nhưng là người này rốt cuộc mạch não cùng thường nhân không quá giống nhau, nhìn nhìn thay đổi loại giải đề ý nghĩ: “Có thể hay không là chính mình họa? Ta khi còn nhỏ vì xây dựng khắc khổ học tập biểu hiện giả dối, liền dùng chiêu này đã lừa gạt ta mẹ.”</p>
+        <p>Tạ Du châm chọc nói: “Ngươi cho rằng giống ngươi như vậy trên thế giới còn tìm đến ra cái thứ hai?”</p>
+        <p>Hạ Triều: “Ngươi như vậy khen đến ta có điểm hơi xấu hổ.”</p>
+        <p>Tạ Du tâm nói, ta khen ngươi nãi nãi cái chân.</p>
+        <p>Hạ Triều hằng ngày nghe không ra ngụ ý, tiếp tục chẳng biết xấu hổ nói: “Ngươi Triều ca, độc nhất vô nhị.”</p>
+        <p>Vạn Đạt ở bên cạnh vỗ tay vỗ tay: “Tú.”</p>
+        <p>Lưu Tồn Hạo cũng vỗ tay: “Đế hoa chi tú.”</p>
+        <p>Sớm tự học là toán học.</p>
+        <p>Toán học lão sư làm đại gia thừa dịp buổi sáng tương đối thanh tỉnh, đem nên bối công thức đều bối học thuộc lòng.</p>
+        <p>Nói xong, hắn tìm cái ghế dựa, ngồi ở trên bục giảng phê hôm nay phân tác nghiệp.</p>
+        <p>Tạ Du ghé vào trên bàn ngủ, thái dương từ ngoài cửa sổ biên chiếu tiến vào.</p>
+        <p>Hắn mơ hồ cảm thấy trước mắt trước mắt đột nhiên sáng lên tới một trận, nửa mộng nửa tỉnh gian nhíu nhíu mày, sau đó không bao lâu, kia trận nhiễu người, phảng phất cách một tầng giấy quang lại biến mất.</p>
+        <p>“Còn có ngày hôm qua phát đi xuống tác nghiệp, không đính chính chạy nhanh a, mỗi ngày sai đề đều phải kịp thời lộng minh bạch, bằng không càng tích càng nhiều.”</p>
+        <p>“Sẽ không liền lấy lại đây hỏi ta, hoặc là hỏi đồng học, đính chính hảo cho ta xem, ta phải làm ký lục…… Đừng chờ ta tới tìm ngươi, ta thật muốn là ngày nào đó tới tìm ngươi, ngươi liền xong đời ngươi.”</p>
+        <p>Toán học lão sư nhắc mãi một trận, lại cúi đầu phê tác nghiệp.</p>
+        <p>Trong ban thực an tĩnh.</p>
+        <p>Trừ bỏ phiên động trang sách, hộp bút va chạm, buông bút xóa băng thời điểm phát ra hơi hơi tiếng vang, còn có từ mặt khác lớp truyền tới đọc diễn cảm thanh.</p>
+        <p>Hạ Triều khuỷu tay để ở trên bàn chi, trong tay là tùy tay trảo một quyển luyện tập bộ, luyện tập bộ đối với Tạ Du mặt, vừa lúc ngăn trở từ ngoài cửa sổ chiếu tiến vào ánh sáng.</p>
+        <p>Tạ Du ngủ đến an ổn, hoàn toàn không biết có người ở giúp hắn chắn thái dương.</p>
+        <p>“A, trên thế giới này như thế nào sẽ có ta tốt như vậy ngồi cùng bàn,” Hạ Triều một cái cánh tay cử toan, lại đổi thành một khác điều, trong miệng lầm bầm lầu bầu, nhẹ giọng nói, “…… Chính mình nhìn đều cảm thấy hảo cảm động.”</p>
+        <p>Tác giả có lời muốn nói: Một vạn tự! Ta cư nhiên làm được!</p>
+        <p>Tùy cơ đưa 300 bao lì xì bao!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- END-AUTO-INSERT-24 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong23.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong25.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "nguy-trang-hoc-tra";
+const NOVEL_TITLE = "Ngụy Trang Học Tra";
+const CHAPTER_TITLE = "Chương 24";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
