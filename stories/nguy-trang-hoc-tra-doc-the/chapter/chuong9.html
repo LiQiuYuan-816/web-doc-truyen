@@ -1,0 +1,880 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 9</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ngụy Trang Học Tra［Đọc Thể］
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 9</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong8.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong10.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-9 -->
+
+        <p>【 Tạ Du trở về thời điểm, đại sảnh đèn còn sáng lên, a phương từ hắn vào cửa khởi liền vẫn luôn đi theo hắn phía sau, Tạ Du đi đến nửa đường dừng lại bước chân: “Muốn nói cái gì liền nói.”</p>
+        <p>A phương bất động thanh sắc mà xem một cái đại sảnh, sau đó nhỏ giọng nói: “Thái thái một buổi trưa cảm xúc đều thật không tốt, cơm chiều cũng không như thế nào ăn, lúc này là chân khí trứ, nhị thiếu, ngươi đợi chút đi vào ngàn vạn đừng cùng thái thái tranh luận.”</p>
+        <p>Cố Tuyết Lam ở trong đại sảnh xem TV, tuy rằng mặt ngoài thoạt nhìn hết thảy như cũ, nhưng Tạ Du quang nhìn nàng cái ót liền biết hôm nay buổi tối này quan sợ là không tốt lắm quá. 】</p>
+        <p>Có người chép chép miệng, nói: “Đúng vậy đúng vậy, càng là bình tĩnh, càng là nguy hiểm. Ta mẹ chính là cái dạng này.”</p>
+        <p>【 trong TV chính phóng cẩu huyết gia đình luân lý kịch, sứt sẹo kỹ thuật diễn, hủy tam quan cốt truyện, nam chính dữ tợn ngũ quan tỏ vẻ chính mình thống khổ: “Ta yêu ngươi, nhưng ta cũng ái nàng…… Ta thật sự là không biết nên làm cái gì bây giờ mới hảo, ngươi cùng nàng, đều là ta sinh mệnh quan trọng nữ nhân.” 】</p>
+        <p>“Ai u ta thiên, cười chết……”</p>
+        <p>“Ha ha ha ha, đây là cái gì kinh điển cẩu huyết cốt truyện a! Đã lâu không thấy qua ha ha……”</p>
+        <p>Có người lập tức nhấc tay nói: “Ta nhìn đến quá. Ta mẹ mấy ngày hôm trước ở trong nhà, cùng ta ba, nãi nãi gia gia trước kia xem phim truyền hình xem chính là cái này. Giống như kêu……”</p>
+        <p>【 Tạ Du đi qua đi: “Mẹ.”</p>
+        <p>Cố Tuyết Lam không nói chuyện.</p>
+        <p>Đáp lại hắn chỉ có nam chính càng nói càng thần kỳ lời kịch. 】</p>
+        <p>“Ha ha ha, đây là cái gì kỳ ba đối thoại.”</p>
+        <p>“Ta chỉ muốn biết cố nữ sĩ sinh khí lên là thế nào, có thể hay không đánh Tạ Du?”</p>
+        <p>“Hẳn là…… Không thể nào……”</p>
+        <p>【 “Thực xin lỗi,” Tạ Du chịu đựng não tàn phim truyền hình tàn phá, chủ động cúi đầu thừa nhận sai lầm, “Hôm nay buổi sáng, ta không nên không rên một tiếng liền đi.”</p>
+        <p>“Không nên không rên một tiếng mà đi,” Cố Tuyết Lam giơ tay đóng TV, sau đó đem điều khiển từ xa chụp ở pha lê trên bàn trà, phát ra “Phanh” âm thanh động đất vang, “Như thế nào, còn tính toán nghênh ngang đi ra ngoài không thành? Tạ Du, ta từng nói qua hay không ngươi, cái này kỳ nghỉ ta hy vọng ngươi hảo hảo ngốc tại trong nhà, một ít lung tung rối loạn địa phương liền đừng đi nữa, ngươi hiện tại quan trọng nhất nhiệm vụ chính là học tập.” 】</p>
+        <p>Mọi người xem nội tâm lộp bộp một tiếng, thầm nghĩ: “Xem đi, quả nhiên là bão táp trước bình tĩnh.”</p>
+        <p>【 “Mẹ, ta cảm thấy ta có quyền lợi lựa chọn như thế nào vượt qua ta kỳ nghỉ.”</p>
+        <p>Cố Tuyết Lam thanh âm lược hiện bén nhọn: “. ngươi có cái gì quyền lợi? Chờ chính ngươi độc lập thời điểm lại đến cùng ta nói quyền lợi, ta dưỡng ngươi không phải vì làm ngươi cả ngày ăn không ngồi rồi, ăn no chờ chết, cả ngày liền biết ra bên ngoài chạy, ngươi có hay không nghĩ tới chính mình về sau nên làm cái gì bây giờ? Ngươi bây giờ còn nhỏ, ngươi không thể tưởng được, mẹ giúp ngươi tưởng, ngươi tự chủ không đủ, làm không được mẹ cực cực khổ khổ giám sát ngươi đi làm, kết quả là vẫn là ta sai rồi?” 】</p>
+        <p>“Ta mẹ cũng là như thế này!”</p>
+        <p>“A a a, ta phảng phất thấy ta mẹ tận tình khuyên bảo đối ta nói, ta đều là vì ngươi hảo!”</p>
+        <p>Nhưng mà vẫn là có chút tán đồng thanh âm: “Nhân gia mụ mụ chưa nói sai cái gì đi! Hiện tại không hảo hảo nỗ lực, về sau làm gì? Cái gì công tác đều không cần!”</p>
+        <p>Có người nhược nhược nói một câu: “Nhưng…… Tạ Du không phải học bá sao……”</p>
+        <p>Người nọ khí thế xuống dưới chút, nhưng vẫn là không chịu bỏ qua: “Kia cũng là Cố mụ mụ không biết dưới tình huống! Hắn nếu là sớm nói chính mình thành tích hảo, còn sẽ có nhiều chuyện như vậy sao?! Ta xem hắn căn bản chính là nhàn! Ngụy trang cái gì học tra?!”</p>
+        <p>Mọi người ngầm đầu đi, lẳng lặng nhìn hắn tìm đường chết.</p>
+        <p>Hắn còn muốn nói cái gì, chỉ nghe phía sau truyền đến âm u thanh âm: “Ngươi nhưng thật ra thực hiểu a.”</p>
+        <p>Người nọ tức khắc không nói, sau lưng lạnh cả người. Cả người run rẩy lên không dám nói một lời.</p>
+        <p>Trước công chúng, Tạ Du không nghĩ sát sinh.</p>
+        <p>“Lần sau chú ý điểm, cái gì nên nói cái gì không nên nói, không cần ta tới giáo ngươi. Hiểu?”</p>
+        <p>“Người nọ vội vàng nói: “Hiểu! Hiểu!”</p>
+        <p>【 Tạ Du trầm mặc.</p>
+        <p>Cố Tuyết Lam hoãn khẩu khí, ngồi xuống, run rẩy tay đi lấy trên bàn trà ly nước, sau đó nói: “Ngươi khả năng hiện tại sẽ quái mụ mụ, nhưng là ngươi về sau sẽ minh bạch, mẹ làm như vậy đều là vì ngươi.”</p>
+        <p>“Ta biết,” Tạ Du nói, “Ta chính mình trong lòng hiểu rõ, chờ thi đại học ngài xem ta là khảo cái Thanh Hoa vẫn là Bắc đại.”</p>
+        <p>“Liền biết dùng những lời này tới đổ ta, ngươi có cái gì số, ngươi nếu là thực sự có số, ngươi này thành tích liền sẽ không giống hôm nay như vậy. Còn Thanh Hoa Bắc Đại, ngươi nằm mơ đâu.” Cố Tuyết Lam ngực buồn đến phát đau. 】</p>
+        <p>“Ha ha ha, Tạ Du lời này cũng không phải là nói chơi, nhân gia thật sự có thể thi đậu Thanh Hoa Bắc Đại!”</p>
+        <p>“Chính là nói trở về, Tạ Du hiện tại là học tra, như thế nào thi đậu Thanh Hoa Bắc Đại? Chẳng lẽ lại đến cái tai nạn xe cộ mất trí nhớ, đầu óc liền tuyệt đỉnh thông minh? Ta xem TV đều là như vậy diễn.”</p>
+        <p>“……”</p>
+        <p>【 nàng từ buổi sáng vạn phần xấu hổ mà tiễn đi hoàng lão sư lúc sau, cảm xúc dao động vẫn luôn rất lớn, hiện tại Tạ Du còn ở nàng trước mặt không kiêu ngạo không siểm nịnh mà, hoàn toàn không cảm thấy chính mình phạm vào cái gì sai, nàng sở hữu cảm xúc lập tức xông lên: “Ngươi rốt cuộc là cùng ai học thành bộ dáng này? Chu Đại Lôi? Hứa Diễm Mai? . ngươi cũng tưởng cùng phố Hắc Thủy những người đó giống nhau có phải hay không?!”</p>
+        <p>“……”</p>
+        <p>Tạ Du vốn là tưởng cúi đầu nhận sai, hảo tính tình hống cố nữ sĩ, làm nàng nguôi giận. Rốt cuộc hôm nay việc này xác thật là hắn làm được không đúng, một hai phải hắn ở kỳ nghỉ phối hợp gia giáo học bù, vậy bổ đi.</p>
+        <p>Nhưng là nghe được cuối cùng một câu, hắn đột nhiên ngẩng đầu, nói chuyện thong thả, ánh mắt lại lãnh đến trát người: “Những người đó, bọn họ là người nào?”</p>
+        <p>Cố Tuyết Lam nói xong kia phiên lời nói, chính mình cũng cảm thấy nói lỡ. 】</p>
+        <p>“Tạ Du thực để ý bọn họ đi.”</p>
+        <p>“Kia đương nhiên, Hứa Diễm Mai đem Tạ Du đương thân nhi tử dưỡng. Cái gì thứ tốt đều cấp Tạ Du, còn có Chu Đại Lôi một nhà, cùng Tạ Du quan tâm như vậy hảo. Kết quả bị thân mụ như vậy vừa nói, xác định vững chắc sinh khí.”</p>
+        <p>“Nhân gia mụ mụ cũng là ở nổi nóng!”</p>
+        <p>“Kia cũng không thể nói như vậy a! Nếu không phải phố Hắc Thủy những người đó bọn họ đã sớm……”</p>
+        <p>【 nhưng nàng đang ở nổi nóng, lại không có dưới bậc thang.</p>
+        <p>Hai người trầm mặc mà giằng co.</p>
+        <p>“Đồ ăn ở phòng bếp, đói nói chính mình đi ăn.” Cố Tuyết Lam thái độ mềm xuống dưới, một loại cảm giác vô lực thật sâu mà thổi quét nàng.</p>
+        <p>Tạ Du tính cách ngạnh, rất nhiều thời điểm nàng cũng không biết đến tột cùng nên dùng cái dạng gì phương thức đi giáo dục hắn.</p>
+        <p>Nàng một người đem hài tử lôi kéo đại, Tạ Du trưởng thành quá trình khuyết thiếu kia phân thuộc về phụ thân vị trí, nàng không có cách nào, cũng vô lực giúp hắn lấp đầy. 】</p>
+        <p>“Loại tính cách này lý giải, từ nhỏ liền thiếu hụt thuộc về phụ thân ái, hơn nữa khi còn nhỏ khẳng định đã chịu quá bạn cùng lứa tuổi kỳ thị, dưỡng thành loại này kiên cường tính cách không sai đi.”</p>
+        <p>“Không kiên cường bị khi dễ làm sao bây giờ?”</p>
+        <p>Cố Tuyết Lam đột nhiên nhớ tới, giống như trước kia ở bên ngoài trốn nợ thời điểm, Tạ Du đi đi học thường xuyên làm đến một thân thương trở về, khi đó nàng cũng không hỏi nhiều, hiện tại ngẫm lại thật là chính mình không xứng chức. Trước nay không nghĩ tới Tạ Du có thể hay không bị người khi dễ, hắn khi còn nhỏ như vậy gầy, như vậy nghe lời.</p>
+        <p>Cố Tuyết Lam hốc mắt đột nhiên đỏ lên.</p>
+        <p>【 chưa từng có người đã dạy nàng, nên đi như thế nào dạy dỗ một cái đang đứng ở tuổi dậy thì, nghịch phản tâm lý trọng hài tử, đứa nhỏ này không hề là khi còn nhỏ oa ở nàng trong lòng ngực ỷ lại nàng mềm như bông một tiểu chỉ, cũng không hề sẽ sảo muốn nàng bồi đi ra ngoài chơi, đi ở trên đường, không đi nữa lộ nhảy nhót, đi đến một nửa phát hiện mụ mụ không có theo kịp, dừng lại quay đầu lại tìm nàng. 】</p>
+        <p>Nguyên bản là cái lừa tình không khí, nhưng mà thính phòng lại không như vậy lừa tình.</p>
+        <p>“Ta giống biết Tạ Du khi còn nhỏ cái dạng gì! Khẳng định thực đáng yêu!”</p>
+        <p>“Khi còn nhỏ Tạ Du hảo đáng yêu a! Ta lão mẫu thân tâm đều bắt đầu tràn lan!”</p>
+        <p>【 hắn hiện tại có chính mình nện bước, tựa hồ đem nàng ném ở sau người. Hai người chi gian lời nói cũng trở nên thiếu, nàng không biết hắn rốt cuộc suy nghĩ cái gì, thiếu niên càng ngày càng lập loè trong ánh mắt, dần dần hình thành một cái nàng xem không hiểu thế giới.</p>
+        <p>Cố Tuyết Lam lên lầu lúc sau, Tạ Du đi phòng bếp đổ nước, nhìn đến bên cạnh dùng chén thủ sẵn, chỉnh chỉnh tề tề ở gác ở đàng kia, một mâm cà chua xào trứng gà, trứng gà bị xào thành kim hoàng sắc, phía trên sái một tầng nhỏ vụn hành thái.</p>
+        <p>Cố nữ sĩ thân thủ làm.</p>
+        <p>Hắn đều không cần ăn, liếc mắt một cái là có thể nhìn ra tới.</p>
+        <p>Tạ Du đột nhiên cảm thấy chính mình hôm nay việc này xác thật làm được rất hỗn đản. 】</p>
+        <p>Có lão sư nói: “Biết sai có thể sửa liền hảo.”</p>
+        <p>【 đêm dần dần thâm, to như vậy phòng ở lần nữa quạnh quẽ xuống dưới.</p>
+        <p>Tạ Du tắm xong, nhớ tới hắn di động còn mở ra phi hành hình thức, đem phi hành hình thức đóng cửa lúc sau, mười mấy điều tin nhắn một tổ ong ùa vào tới, leng keng leng keng cái không để yên.</p>
+        <p>Mai dì nhiều nhất, hỏi hắn ở nơi nào, đừng phạm tính tình, chạy nhanh về nhà, mẹ ngươi thực lo lắng.</p>
+        <p>Lôi mẹ cũng phát lại đây hai điều, cuối cùng là lôi tử, hỏi hắn về đến nhà không có.</p>
+        <p>Tạ Du hồi: Tới rồi.</p>
+        <p>Lôi tử: Tới rồi liền hảo, ta vừa đến gia ta mẹ liền bắt lấy ta hỏi có biết hay không ngươi đi đâu, ta đi kia tư thế, chỉnh đến cùng mất tích dân cư dường như, nhưng khẩn trương, làm ta sợ nhảy dựng. 】</p>
+        <p>“Cho nên nói, quan tâm là lẫn nhau. Ngươi đối người khác hảo người khác cũng sẽ đối với ngươi hảo.”</p>
+        <p>“Lôi mẹ đối lôi tử cũng chưa đối Tạ Du như vậy để bụng.”</p>
+        <p>Chu Đại Lôi nói: “Tạ lão bản gần nhất, trong nhà liền không ta địa vị! Ô ô ô……”</p>
+        <p>【 cố nữ sĩ tuy rằng nói đến hung, một bộ ngươi như thế nào giảng ta cũng không nghe bộ dáng, gia giáo sự tình đảo cũng không có kiên trì đi xuống, liền như vậy từ bỏ.</p>
+        <p>Cùng chuyện này căn bản không có quan hệ Chung Kiệt ngược lại giống chỉ đấu thắng gà trống, tâm tình mỹ diệu đến không được, còn thường thường mà lấy cái này ra tới nói sự.</p>
+        <p>Tạ Du học “Ngoan”, toàn bộ hành trình lạnh nhạt lại không mất lễ phép: “Ân, là, ngươi ngưu, ngươi ngưu bức, ngươi nói đúng, cao hứng sao? Vui vẻ không?”</p>
+        <p>Chung Kiệt: “……” Như thế nào nghe càng làm cho người tới khí. 】</p>
+        <p>“Ha ha ha ha, cười chết ta. Cái này Chung Kiệt diễn như thế nào nhiều như vậy!?”</p>
+        <p>“Ha ha ha, ở Tạ Du trước mặt tìm tồn tại cảm đâu, nhân gia Tạ Du ngoan chính là không tức giận.”</p>
+        <p>“Tạ đại lão chiêu này cao a!”</p>
+        <p>【 không cần ứng phó gia giáo, Tạ Du kỳ nghỉ thời gian dư dả rất nhiều.</p>
+        <p>Đề Vương tranh bá mùa giải chế độ lấy kỳ nghỉ là chủ, khai giảng hết hạn, nói cách khác, nghỉ đông và nghỉ hè chính là mùa giải bắt đầu cùng kết thúc tiêu chuẩn. Cái này nghỉ hè là nên ít được lưu ý trò chơi lần đầu tiên thí hoạt động, cuối cùng ra đời Đề Vương sẽ là tôn quý sơ đại Đề Vương.</p>
+        <p>“Ta ái học tập”: X học bá hôm nay không có online? Có phải hay không sinh bệnh?</p>
+        <p>“Vì càng tốt ngày mai”: Vì cái gì là sinh bệnh…… Không thể hướng tốt địa phương ngẫm lại sao, nhân gia cũng là muốn sinh hoạt a.</p>
+        <p>“Ta ái học tập”: Bởi vì ta trong mắt X học bá, chỉ cần còn có một hơi, liền sẽ không từ bỏ học tập, hắn là cỡ nào khắc khổ, tập thiên phú cùng nỗ lực với một thân, không cao ngạo không nóng nảy, rạng sáng 5 điểm đều không ngủ được. Hắn chính là ta học tập tấm gương.</p>
+        <p>“Tử vong đều không thể ngăn cản học tập bước chân X học bá” đang ở bồi hai vị lão a di trên mạng lướt sóng.</p>
+        <p>Tạ Du: “Một vòng tròn.”</p>
+        <p>Hứa Diễm Mai: “Tam mang một.”</p>
+        <p>Lôi mẹ: “Không cần.” 】</p>
+        <p>“…………”</p>
+        <p>“…………”</p>
+        <p>Đề Vương tranh bá người chơi 1 hào: “Ta nên nói cái gì?”</p>
+        <p>Đề Vương tranh bá người chơi 2 hào: “Nói, X thần ở nhà chơi đấu địa chủ đều so với chúng ta lợi hại?”</p>
+        <p>Đề Vương tranh bá 3 hào: “……X thần trong lòng ta hình tượng toàn huỷ hoại.”</p>
+        <p>【 Tạ Du lại ra bài: “Bom.”</p>
+        <p>Phố Hắc Thủy xã hội một tỷ Hứa Diễm Mai đồng chí gần nhất trầm mê di động đấu địa chủ, cả ngày ở trong đàn tìm người bồi nàng cùng nhau đánh bài.</p>
+        <p>Lôi mẹ nhìn mắt chính mình một tay lạn bài: “Không đánh không đánh, dù sao cũng đánh không thắng, ta phải nấu cơm đi.”</p>
+        <p>Hứa Diễm Mai: “Ngươi như thế nào lão như vậy, đánh không thắng liền chạy?”</p>
+        <p>Lôi mẹ bằng phẳng: “Thật đến nấu cơm, bằng không làm nhà ta đại lôi ăn / phân a.”</p>
+        <p>“……” 】</p>
+        <p>“Ha ha ha, quả nhiên là thân mụ.”</p>
+        <p>“Cầu đại lôi bóng ma tâm lý diện tích.”</p>
+        <p>【 Tạ Du nói: “Ta cũng triệt, ngươi cùng ta chơi, ngươi như thế nào chơi đều là thua, nhiều không kính.”</p>
+        <p>Tạ Du vận may là có tiếng hảo, Chu Đại Lôi tổng dùng “Tạ lão bản” này ba chữ xưng hô hắn.</p>
+        <p>Trước kia ăn tết thời điểm đại gia ghé vào cùng nhau đánh bài, Tạ Du tổng bị mọi người kiên quyết chống lại, đều không nghĩ cùng hắn một bàn luận bàn, vì thế Tạ Du rất giống cái lúc tuổi già không có con cái chiếu cố thê thảm lão nhân, một người ngồi ở bên cạnh, nhìn xem TV uống uống nước ấm. 】</p>
+        <p>“Ai u, Tạ Du tới, cùng ta chơi.”</p>
+        <p>“Ha ha, cùng ta chơi, ta đem chúng ta đều bại bởi ngươi.”</p>
+        <p>Tạ Du nói: “Cảm ơn, không cần.”</p>
+        <p>“Ha ha, Âu hoàng ghét bỏ ngươi.”</p>
+        <p>【 bắt đầu Chu Đại Lôi còn sẽ đĩnh đĩnh chính mình huynh đệ, mạnh mẽ kéo hắn thượng bàn: “Không các ngươi nghĩ đến như vậy thần, thật sự, hắn bài kỹ cũng liền giống nhau, đều là cứt chó vận. Không tin ta chờ xem, hôm nay hắn tuyệt đối đồ ăn đến moi chân.”</p>
+        <p>Kết quả Tạ Du hoàn toàn cô phụ hắn cấp tín nhiệm, không ngừng đem có thể cuốn tiền đều thắng đi, còn thắng tới tay bốn trương giấy nợ. 】</p>
+        <p>“Ta thiên nột, Âu hoàng đô không này vận may đi!”</p>
+        <p>“Từ giờ này khắc này sinh ra một cái so Âu hoàng còn ngưu bức đẳng cấp! Nó kêu Tạ Du!”</p>
+        <p>Tạ Du: “……”</p>
+        <p>【 Tạ Du lại lần nữa bước lên Đề Vương tranh bá, là đột nhiên nhớ tới này cuối tuần có một cái hạn thời gấp đôi kinh nghiệm hoạt động.</p>
+        <p>[ Đề Vương chế tác tổ ]: Đêm nay đề bá cuồng hoan, đại gia chuẩn bị hảo sao! Không chỉ có có tân đề hình thượng giá, phong phú hoàn thiện các ngành học nội dung, khó khăn nâng cao một bước, chúng ta còn đẩy ra hoàn toàn mới quan chiến hình thức, nhưng lấy khoảng cách gần quan khán các học bá xoát đề cùng với một chọi một PK nga! Tái chế công khai trong suốt, bằng thực lực nói chuyện, làm gian lận, khai quải, không còn chỗ ẩn thân!</p>
+        <p>Quan chiến hình thức vừa ra, khiến cho toàn phục nhiệt nghị.</p>
+        <p>“Ta ái học tập”: Thật tốt quá, cứ như vậy, ta liền có thể nhìn xem chính mình cùng người khác chênh lệch rốt cuộc ở nơi nào, người khác giải đề ý nghĩ, có lẽ có thể trợ giúp ta khai thác ra tân tư duy, đồng dạng một đạo đề, từ bất đồng thiết nhập điểm đi xem, học tập nhất định có thể làm ít công to!</p>
+        <p>“Đền đáp tổ quốc”: Ca ngợi chế tác tổ, quan chiến hình thức thật sự quá kinh hỉ, vẫn luôn đều rất tưởng nhìn xem bảng xếp hạng đại thần làm bài.</p>
+        <p>“Học tập học tập học tập ta sinh mệnh chỉ có”: Cái này nghỉ hè bởi vì các ngươi, ta mới quá đến như vậy phong phú, mỗi khi ta mở ra cái này APP ta liền biết có làm không xong đề mục đang chờ ta, liền cảm thấy phá lệ hạnh phúc. Làm được rất nhiều ngày thường tiếp xúc không đến nan đề, không ngừng mà khiêu chiến chính mình, bảo trì đối học tập nhiệt ái. 】</p>
+        <p>Có người nói: “Ta đã không nghĩ lại nói kia hai chữ, ai giúp ta nói một chút?”</p>
+        <p>Có người hấp hối giãy giụa: “Ta giúp ngươi nói…… Kẻ điên…… Đều là kẻ điên……”</p>
+        <p>“Tất cả đều là kẻ điên……”</p>
+        <p>【 Tạ Du như cũ không để ý đến chuyện bên ngoài, trực tiếp đi vào xoát đề, không có chú ý tới góc trên bên phải nhiều một hàng màu xám chữ nhỏ, kia hành chữ nhỏ còn ở không ngừng nhảy lên biến hóa.</p>
+        <p>Trước mặt quan chiến nhân số: 82.</p>
+        <p>“Ta ái học tập”: X học bá cái này xoát đề tốc độ có điểm khủng bố……</p>
+        <p>“Vì càng tốt ngày mai”: X thần hảo sao, thần tiên đáp đề. Khó trách hướng bảng xếp hạng hướng đến như vậy mãnh, ta đề đều còn không có thẩm xong, hắn đã giải một nửa, 666.</p>
+        <p>“Học tập học tập ta sinh mệnh chỉ có”: Vừa mới kia đạo hình học không gian có người xem đã hiểu sao, hắn đi lên trực tiếp vẽ năm điều phụ trợ tuyến? Nguyên lai là cái dạng này sao?</p>
+        <p>“Nỗ lực phấn đấu”: Phụ trợ tuyến tao, đợt thao tác này thực có thể, dùng một lần giải quyết một vài tiểu hỏi.</p>
+        <p>“Vì càng tốt ngày mai”: Các bạn học, 666 xoát lên. 】</p>
+        <p>Đề Vương tranh bá người chơi 1 hào: “Chỉ có X thần mới có thể cùng không cần Bích Liên nhất quyết cao thấp!”</p>
+        <p>“Tán thành!”</p>
+        <p>【 Tạ Du không biết có gần một trăm bệnh tâm thần xem hắn xoát đề.</p>
+        <p>Hắn chỉ biết, 3 giờ sáng nửa, hắn cuối cùng đem không nên ép mặt từ bảng xếp hạng đệ nhất tễ đi xuống.</p>
+        <p>No.1: jsdhwdmaX. 】</p>
+        <p>Đề Vương tranh bá người chơi 1 hào: “Ta vĩnh viễn đều sẽ không quên kia một ngày, X thần chiến thắng không cần Bích Liên, nhưng mà ở ngày hôm sau buổi sáng, không cần Bích Liên lại đem đệ nhất đoạt trở về……”</p>
+        <p>“Ta dựa! Thiệt hay giả?”</p>
+        <p>“Thật sự thật sự, toàn bộ nghỉ hè đều là X thần cùng không cần Bích Liên chiến tranh.”</p>
+        <p>“Tràn ngập này bọn họ chiến đấu khói thuốc súng.”</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- END-AUTO-INSERT-9 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong8.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong10.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "nguy-trang-hoc-tra-doc-the";
+const NOVEL_TITLE = "Ngụy Trang Học Tra［Đọc Thể］";
+const CHAPTER_TITLE = "Chương 9";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
