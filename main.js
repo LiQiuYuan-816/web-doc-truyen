@@ -62,7 +62,10 @@ const genreMap = {
    "cc-sakura": "Card Captain Sakura",
    "dien-sinh": "Diễn sinh",
    "hien-dai": "Hiện đại",
-   "conan": "Thám Tử Conan"
+   "conan": "Thám Tử Conan",
+   "hoa-hoat": "Hoa hoạt",
+   "dien-kinh": "Điền kinh"
+
 };
 
 /* =======================
