@@ -1,0 +1,880 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 28</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Matsuda Miêu Miêu Cùng Hắn Oán Loại Đồng Kỳ
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 28</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong27.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong29.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-28 -->
+
+        <p>Hôm nay là mưa dầm thiên.</p>
+        <p>Bởi vì Matsuda Jinpei đồ ăn vặt ăn xong rồi, lớp trưởng cùng Natalie không thể không mang theo hắn đi chọn đồ ăn vặt.</p>
+        <p>“Kỳ thật có thể chờ một chút lại mua, lớp trưởng.” Matsuda Jinpei đạp lên Date Wataru trên vai nói.</p>
+        <p>Natalie cười cười: “Xem ra Matsuko thực vui vẻ đâu. Vừa lúc mua xong đồ ăn vặt, chúng ta cũng có thể đi xem ba ba.”</p>
+        <p>“Đúng vậy, đã lâu đi xem lão ba. Cũng không biết hắn gần nhất thế nào?”</p>
+        <p>“Hảo đi, ta đã biết cho ta mua đồ vật chỉ là nhân tiện.” Matsuda Jinpei quơ quơ cái đuôi phun tào.</p>
+        <p>Kết quả mới vừa tiến cửa hàng thú cưng, hắn liền đụng phải thiếu niên trinh thám đoàn mấy cái hài tử. Conan đang ở cùng Haibara nói cái gì đó, mà mặt khác ba cái hài tử tắc vây quanh ở quầy triển lãm trước xem tiểu động vật.</p>
+        <p>“Date cảnh sát ngươi cũng là tới cấp Matsuko mua đồ vật sao?” Ayumi thấu lại đây.</p>
+        <p>Date Wataru: “Đúng vậy, Matsuko đồ ăn vặt ăn, ta tới cấp hắn bổ sung điểm đồ ăn vặt.”</p>
+        <p>Matsuda Jinpei nhảy đến Haibara bên người: “Đã lâu không thấy a, xem ngươi tinh thần trạng thái không tồi.”</p>
+        <p>Haibara Ai ngồi xổm xuống sờ sờ đầu của hắn, nhẹ giọng nói: “Đã lâu không thấy, Matsuko.”</p>
+        <p>“Matsuko giống như thực thân cận ngươi đâu, Haibara.” Conan ngồi xổm Haibara bên người cũng vươn tay sờ sờ Matsuda miêu miêu.</p>
+        <p>Haibara lãnh đạm mà lên tiếng.</p>
+        <p>Conan còn nói thêm: “Bất quá thượng một lần trảo bom phạm thời điểm, ta phát hiện Matsuko hành vi cử chỉ thật sự giống như một nhân loại.”</p>
+        <p>Ở nhìn đến Conan trong mắt tìm tòi nghiên cứu thần sắc sau, Matsuda Jinpei không cấm lại vừa bực mình vừa buồn cười: “Thật là, cho nên hiện tại là trước hết bị người ngoài phát hiện kỳ quái địa phương sao? Lớp trưởng Furuya các ngươi nhưng thật ra phát huy các ngươi sức tưởng tượng a!”</p>
+        <p>“Ngươi muốn nói cái gì liền nói.” Haibara lãnh đạm nói.</p>
+        <p>Conan ho nhẹ một chút: “Ta là nói cái kia tổ chức có thể hay không nghiên cứu một loại dược vật, làm miêu mễ có được nhân loại tư tưởng linh tinh.”</p>
+        <p>Matsuda Jinpei phun tào: “Ngươi đầu nhỏ đến tột cùng suy nghĩ cái gì? Nếu là thật sự có loại này dược, hắc y tổ chức đã sớm xưng bá địa cầu hảo sao?”</p>
+        <p>Thực hiển nhiên Haibara cũng là đồng dạng tâm tình, nàng nói móc nói: “Ngươi thần tượng Holmes chính là như vậy giáo ngươi trinh thám? Ngươi là cái gì ấu trĩ tiểu học sinh sao? A, Mori tiểu thư cùng ngươi ở bên nhau chỉ sợ sẽ tưởng chính mình là dưỡng đứa con trai đi.”</p>
+        <p>Tam liên kích, trát đến Conan thương tích đầy mình.</p>
+        <p>“Ngươi cái này không đáng yêu nữ nhân.”</p>
+        <p>Haibara lười lý Conan.</p>
+        <p>Bỗng nhiên a một thanh âm vang lên khởi, Matsuda Jinpei bị cả kinh nhảy dựng lên. Lại vừa thấy một người nam nhân ngực cắm đao ngã trên mặt đất run rẩy vài cái liền hoàn toàn không có tiếng động.</p>
+        <p>Làm cảnh sát người nhà Natalie lập tức trấn an đứng dậy biên hài tử, mà lớp trưởng đã bắt đầu gọi điện thoại thông tri các đồng sự.</p>
+        <p>“Ngươi là ôn thần sao?” Hắn nghe được Haibara phun tào.</p>
+        <p>Conan cười mỉa: “Này giống như không liên quan chuyện của ta đi.”</p>
+        <p>“Đúng không, chúng ta cùng nhau ra cửa gặp được án kiện xác suất cao đến thái quá, nếu nói chính mình cùng bọn nhỏ ra tới nói rất ít phát sinh loại chuyện này. Cho nên rốt cuộc là ai vấn đề?”</p>
+        <p>Conan: “……”</p>
+        <p>Matsuda Jinpei: “Này không thấy ra tới, nguyên lai tiểu quỷ ngươi thể chất đặc thù a.”</p>
+        <p>Vội xong án lúc sau đã là buổi chiều, đã không phải bái phỏng người khác thời gian. Lớp trưởng vợ chồng bái phỏng phụ thân kế hoạch cũng chỉ có thể lui về phía sau, Natalie cười nói: “Không quan hệ lạp hàng, ta tưởng ba ba sẽ lý giải chúng ta.”</p>
+        <p>Matsuda Jinpei ngồi ở Date Wataru trên vai tán đồng: “Đúng vậy, lớp trưởng.”</p>
+        <p>Ban đêm, bên ngoài hạ mưa nhỏ.</p>
+        <p>Sàn sạt tiếng mưa rơi luôn là gõ đánh nhân loại trong lòng yếu ớt nhất một mặt. Về vũ, về Hagi ký ức lại một lần đến thăm chính mình trong óc. Chẳng qua bởi vì thấy rõ chính mình cảm tình, nhìn lại này đoạn chuyện cũ tâm tình cũng trở nên không giống nhau.</p>
+        <p>“Trời mưa a, rốt cuộc có thể nghỉ ngơi một ngày.” Hagi ngã xuống hắn trên giường.</p>
+        <p>Mà hắn chính ngồi dưới đất cân nhắc như thế nào tháo dỡ tân giáo cụ.</p>
+        <p>“Jinpei-chan ngươi đều không để ý tới ta sao?” Hagi đem đầu đáp ở hắn cổ thượng: “Ngươi đang làm gì?”</p>
+        <p>Hắn vươn tay mở ra trong tay đồ vật: “Suy nghĩ như thế nào dỡ xuống lão Oni tân giáo cụ.”</p>
+        <p>“Thật là khắc khổ a, Jinpei-chan.”</p>
+        <p>Hắn không có lý Hagi, mà là tiếp tục cân nhắc. Kết quả Hagi giống cái tiểu nữ sinh giống nhau nháo, hắn thật sự chịu không nổi vì thế liền đem Hagi ấn ở trên giường. Đối diện thật lâu sau sau, hai người không hẹn mà cùng mà sai khai tầm mắt.</p>
+        <p>Lúc ấy hắn không rõ vì cái gì chính mình muốn dời mắt, chính là hiện tại hắn cũng hiểu được. Đương chính mình xâm nhập kia phiến hoa oải hương biển hoa khi, chính mình kia viên thình thịch loạn nhảy trái tim liền ở nói cho chính mình, hắn thích Hagi.</p>
+        <p>Bất quá Hagi lúc ấy thẹn thùng bộ dáng rất thú vị, khó được nhìn đến hắn mặt đỏ. Nếu có thể nói, hắn thật muốn nhiều xem vài lần.</p>
+        <p>Bỗng nhiên môn trục nhẹ nhàng hạp động thanh âm vang lên, Matsuda Jinpei từ trong hồi ức tỉnh lại nhìn qua đi. Liền nhìn đến Date Wataru rón ra rón rén mà đi vào thư phòng, hắn trong lòng tò mò vì thế liền lén lút theo đi lên.</p>
+        <p>Hắn tránh ở kẹt cửa nơi đó trộm nhìn Date Wataru đang làm gì.</p>
+        <p>Chỉ thấy lớp trưởng lấy ra một gói thuốc lá, phóng tới hắn ảnh chụp trước, thập phần thành kính mà đã bái bái.</p>
+        <p>“Lớp trưởng không có việc gì bái ta làm gì?” Matsuda Jinpei nghi hoặc: “Hướng ta kỳ nguyện sao?”</p>
+        <p>“Xin lỗi a, Matsuda. Gần nhất có thể là áp lực tâm lý quá lớn, đầu tiên là cảm thấy ngươi biến thành Matsuko đã trở lại, sau lại lại mơ thấy ngươi đối ta nói ngươi thích Hagiwara……”</p>
+        <p>“Cái gì! Lớp trưởng ngươi như thế nào biết chuyện này……”</p>
+        <p>Ý thức được chính mình miệng phun nhân ngôn lúc sau, Matsuda Jinpei mắt mèo trừng đến tròn trịa. Mà Date Wataru ở ngắn ngủi mà khiếp sợ sau, hai mắt phóng thẳng lẩm bẩm tự nói: “A, nguyên lai ta còn đang nằm mơ. Matsuko một con mèo sao có thể nói chuyện đâu?”</p>
+        <p>Mắt thấy lớp trưởng liền phải trở về ngủ, hắn vội vàng tiến lên bắt lấy Date Wataru: “Từ từ lớp trưởng, ngươi trở về!”</p>
+        <p>Bởi vì có điểm kích động, Matsuda miêu miêu móng vuốt nhịn không được mà duỗi ra tới, trảo bị thương Date Wataru mắt cá chân.</p>
+        <p>“Tê, đau.”</p>
+        <p>“Ta không phải cố ý, lớp trưởng.”</p>
+        <p>“Chính là, nằm mơ nói kỳ thật là không cảm giác được đau đi.”</p>
+        <p>Vì thế một người một miêu nhìn nhau lên.</p>
+        <p>Cuối cùng Date Wataru ngồi ở trên mặt đất, nhìn Matsuda Jinpei: “Matsuko ngươi có thể nói?”</p>
+        <p>“Đương nhiên có thể nói. Còn có không cần kêu Furuya lấy cái này buồn cười tên.” Matsuda Jinpei bĩu môi nói thầm: “Loại này nữ hài tử tên mất công hắn nghĩ ra.”</p>
+        <p>“Ngươi thật sự sống?”</p>
+        <p>“Đúng vậy. Lớp trưởng ngươi như thế nào trinh thám đến ta là của ta?”</p>
+        <p>Date Wataru sờ sờ chính mình gương mặt trả lời: “Ta điều tra mấy ngày trước bắt giữ bom phạm trải qua lặp lại phân tích, ta còn là cảm thấy ngươi giống một người giống nhau ở truy tra án này. Hơn nữa các đồng sự đối với ngươi hình dung còn có ta cá nhân cảm giác, ta thật sự suy đoán ra ngươi là Matsuda.”</p>
+        <p>“Nhưng là ngươi biết đến, hiện tại rốt cuộc chú trọng khoa học. Bởi vì cái kia mộng nguyên nhân, cho nên mới sẽ ở đêm nay cầm lòng không đậu mà buột miệng thốt ra.”</p>
+        <p>Matsuda Jinpei nghe vậy thầm nghĩ, cho nên trinh thám ra ta là Matsuda Jinpei như vậy sự thật cũng coi như thỏa mãn biến trở về người yêu cầu.</p>
+        <p>“Matsuda này rốt cuộc là chuyện như thế nào? Ngươi như thế nào biến thành miêu.” Dần dần phản ứng lại đây Date Wataru hỏi: “Chẳng lẽ ngươi thức tỉnh rồi nào đó huyết mạch?”</p>
+        <p>Matsuda Jinpei: “…… Lớp trưởng ngươi cùng ta lão ba nhất định rất có đề tài.” Theo sau lại đem mấy năm nay phát sinh sự tình nói ra tới.</p>
+        <p>“Trời biết mấy năm nay vì cho các ngươi nhận ra ta, ta phế đi bao lớn sức lực.” Matsuda Jinpei phun tào: “Lớp trưởng ngươi cùng Furuya thật là quá khó làm.”</p>
+        <p>Date Wataru sờ sờ đầu: “Chủ yếu là loại chuyện này quá không thể tưởng tượng. Nếu không phải Matsuda ngươi ở trảo phạm nhân chuyện này thật sự quá thấy được, chúng ta khả năng còn ý thức không đến ngươi.”</p>
+        <p>“Sách, cho nên cho các ngươi nhận ra tới cũng chỉ có thể chậm rãi tung ra manh mối, cho các ngươi tìm manh mối trinh thám.”</p>
+        <p>“Đây cũng là không có biện pháp sự tình. Cho nên ta hiện tại có thể nói cho Furuya chuyện này sao?”</p>
+        <p>Nhìn lớp trưởng nóng lòng muốn thử biểu tình, hắn thở dài: “Lớp trưởng ta cảm thấy ngươi khả năng không có biện pháp nói ra chuyện này.”</p>
+        <p>“Vì cái gì?”</p>
+        <p>“Ta cùng ta lão ba thử cùng Chihaya, cũng chính là Hagi tỷ tỷ nói chuyện này, kết quả không nghĩ tới vừa nói đến mấu chốt, lão ba liền sẽ bị một loại mạc danh lực lượng chắn trở về.”</p>
+        <p>“Thật vậy chăng?” Date Wataru có chút không tin.</p>
+        <p>Matsuda Jinpei biết bọn họ đều là thật làm phái, không thấy đến hiện thực là sẽ không tin tưởng.</p>
+        <p>Vì thế sáng sớm hôm sau.</p>
+        <p>Natalie liền phát hiện chính mình trượng phu có chút quái quái, mỗi lần nói chuyện luôn là nói một nửa lưu một nửa. Làm người thực không thoải mái, vì thế nàng hỏi: “Hàng ngươi làm sao vậy? Là thân thể không thoải mái sao?”</p>
+        <p>Date Wataru lắc đầu: “Không, không phải.”</p>
+        <p>Matsuda Jinpei bò ở trên sô pha nhìn bất khuất kiên cường lớp trưởng thầm nghĩ, lớp trưởng ngươi thật đúng là ý chí kiên định a.</p>
+        <p>Chờ đến Date Wataru trung tràng nghỉ ngơi sau, Matsuda Jinpei dùng hắn di động đánh chữ: “Xem đi, lớp trưởng. Ta đều nói không được.”</p>
+        <p>“Ta xem như biết vì cái gì miêu biến trở về người sẽ như vậy phiền toái.” Date Wataru đè đè huyệt Thái Dương: “Ta cảm thấy miêu thần cho ngươi biện pháp nhất định là có tàn khuyết.”</p>
+        <p>“Ta cũng là như vậy cho rằng. Cũng không biết miêu thần tên kia ở đâu, bằng không ta phải đi hỏi một chút nó.”</p>
+        <p>Date Wataru nhéo cằm: “Nhưng là thần minh giống nhau đều rất khó tìm đến.”</p>
+        <p>“Cho nên chủ yếu vẫn là dựa vào chính mình sờ soạng.” Matsuda Jinpei nói: “Ta hiện tại đã biết, chỉ cần có người thiệt tình thật lòng mà nhận ra ta, hoặc là dựa theo manh mối đi bước một trinh thám ra ta là Matsuda Jinpei, như vậy ta là có thể cùng người này dùng nhân loại ngôn ngữ giao lưu, cũng có thể đánh chữ giao lưu sẽ không xuất hiện loạn mã tình huống.”</p>
+        <p>“Đúng rồi, có thể sử dụng nhân loại ngôn ngữ giao lưu thời gian sẽ theo nhận ra ta nhân số gia tăng mà gia tăng.”</p>
+        <p>Date Wataru cầm di động gật đầu: “Ta nhớ kỹ.”</p>
+        <p>Lúc này Natalie đã đi tới: “Hàng, ngươi vì cái gì phải đối một chuỗi loạn mã nói ta nhớ kỹ. Đây là đặc biệt ký hiệu sao?”</p>
+        <p>Date Wataru trơ mắt mà nhìn văn tự biến thành loạn mã, hắn cảm thấy hắn tam quan đã chịu đánh sâu vào càng nghiêm trọng.</p>
+        <p>“Nói lên ngươi hôm nay lão cùng ta nhắc tới Matsuda-kun, có phải hay không cũng từ Satou tiểu thư nơi đó nghe nói Matsuda-kun thích Hagiwara-kun sự tình?”</p>
+        <p>Lời này vừa nói, Date Wataru sặc đến chết khiếp.</p>
+        <p>“Khụ khụ khụ, đây là có chuyện gì? Satou vì cái gì nói như vậy?”</p>
+        <p>Matsuda Jinpei muốn ngăn lại Natalie, nề hà hắn chỉ là một con miêu miêu căn bản không có biện pháp ngăn cản. Vì thế chính mình kia đoạn vô tật mà chết yêu thầm đã bị Natalie bại lộ cho lớp trưởng.</p>
+        <p>Từ từ, nói lên. Đêm qua lớp trưởng sám hối thời điểm, giống như cũng nhắc tới quá ta thích Hagi sự tình đi. Lớp trưởng có phải hay không còn nói là ta chủ động nói cho hắn?</p>
+        <p>Matsuda miêu miêu mạc danh mà nghĩ tới lỏa lồ nội tâm ngày đó buổi tối. Không thể nào, hắn . hắn ngày đó buổi tối thật sự cấp lớp trưởng báo mộng?!</p>
+        <p>--------------------</p>
+        <p>Tác giả có lời muốn nói:</p>
+        <p>Tiểu kịch trường</p>
+        <p>Đang tìm tìm thích hợp miêu mễ thân thể miêu thần đánh cái hắt xì: “Sách, khẳng định là Matsuda kia tiểu tử thúi nói ta. Nhưng là ta này không phải ở giúp hắn nghĩ cách sao.”</p>
+        <p>Miêu thần cân nhắc, nếu Matsuda ái nhân chết mất. Kia nó liền đem người biến trở về tới, chẳng qua biến trở về người phương pháp phải sửa một chút.</p>
+        <p>“Loại này quần thể biến trở về người khẳng định khó khăn thăng cấp. Đại khái là muốn sở hữu cùng các ngươi quan hệ không tồi người đều phải nhận ra các ngươi đi. Cha mẹ huynh đệ tỷ muội bằng hữu, quan hệ không tồi đồng sự linh tinh. Cụ thể tình huống cụ thể phân tích, ta phải nhớ kỹ tỉnh lại đã quên.”</p>
+        <p>Nhắc nhở: Ngày mai buổi tối 9 giờ đổi mới.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- END-AUTO-INSERT-28 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong27.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong29.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "matsuda-mieu-mieu-cung-han-oan-loai-dong-ky";
+const NOVEL_TITLE = "Matsuda Miêu Miêu Cùng Hắn Oán Loại Đồng Kỳ";
+const CHAPTER_TITLE = "Chương 28";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
