@@ -1,0 +1,608 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 9: Tìm kiếm</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Onizuka Giáo Luyện Tuyệt Mật Hồ Sơ
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 9: Tìm kiếm</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong8.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong10.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-9 -->
+
+        <p>【 “Đa tạ.” Furuya Rei quy củ về phía trước mặt vài vị trường cảnh sát nữ sinh cúc một cung.</p>
+        <p>“Không cần khách khí, Furuya-kun.” Vài vị nữ sinh tựa hồ còn có chút kích động, chờ mong mà nhìn về phía đối phương, “Cái kia, có thể trước làm chúng ta xem một chút Furuya-kun ngươi mang lên màu đen tóc giả là cái dạng gì sao?”</p>
+        <p>“Ân, có thể.” Furuya Rei đem tóc giả mang lên, không nghĩ tới bên cạnh các nữ sinh nhịn không được cười ra tới: “Quả nhiên Furuya-kun tóc vàng là xinh đẹp tính đâu!”</p>
+        <p>“Bất quá như vậy trang điểm một chút, liền sẽ không cho người ta rất sâu ấn tượng đi?” Furuya sửa sang lại một chút kiểu tóc, mang lên mũ lưỡi trai, chuẩn bị đi ra ngoài.</p>
+        <p>“Sao, tuy rằng không biết Furuya-kun mượn tóc giả là muốn đi làm cái gì, nhưng là chúc ngươi thành công!” Vài vị nữ sinh cùng kêu lên nói.</p>
+        <p>“Cảm ơn.” Furuya quay đầu lại, thử học Hagiwara như vậy đối này vài vị nữ sinh hơi hơi mỉm cười. 】</p>
+        <p>“Di?” “Một đoạn này là?” “Hoàn toàn liên hệ không thượng a?” “Có lẽ mặt sau sẽ vạch trần?”</p>
+        <p>“Furuya tiên sinh cải trang nói, là vì ẩn nấp mà đi làm chuyện gì sao?” Kudo suy đoán.</p>
+        <p>Chẳng lẽ là muốn đi thu hoạch cái gì tình báo? Akai tự nhiên mà vậy mà liền nghĩ tới vị này tình báo chuyên gia sở trường tuyệt sống.</p>
+        <p>【 đi vào trường cảnh sát bên trên đường, Furuya Rei mục tiêu minh xác . thẳng đến một nhà cửa hàng tiện lợi.</p>
+        <p>“Hoan nghênh quang lâm.”</p>
+        <p>Furuya Rei đi vào trước quầy, cố ý đổi thành mang chút khẩu âm thanh âm hỏi đến: “Ngài hảo, xin hỏi nơi này có tua-vít cái gì linh tinh công cụ sao?”</p>
+        <p>“Ở bên kia trên giá.”</p>
+        <p>“A, đa tạ, ta thấy được . thật là ngượng ngùng a, ta muốn công cụ còn không phải quá toàn…… Ta lần đầu tiên tới bên này, tìm nửa ngày cũng không nhìn thấy tiệm kim khí……”</p>
+        <p>“A, tiệm kim khí nói, nhân viên chạy hàng đến giao lộ sau rẽ phải ngài là có thể thấy, là Irie tiệm kim khí.”</p>
+        <p>“Irie tiệm kim khí sao? Tốt tốt, quá cảm tạ! Nói lên rất kỳ quái, ta ở phía trước một nhà Izakaya cư nhiên không hỏi đến phụ cận có tiệm kim khí đâu.”</p>
+        <p>“A, này đại khái là bởi vì Irie tiên sinh không tốt lời nói, trầm mặc ít lời đi? Hắn liền cùng thái thái ở cùng một chỗ, bình thường xã giao còn rất thiếu. Hơi chút khoảng cách xa một chút khả năng xác thật là không biết.”</p>
+        <p>“Thì ra là thế a, bất quá vẫn là thật cám ơn ngài!” Furuya Rei đè xuống vành nón, đi ra ngoài.</p>
+        <p>“Không khách khí.” 】</p>
+        <p>“Xem ra vị này Furuya tiên sinh mục tiêu là nhà này Irie tiệm kim khí a.” Sera phân tích.</p>
+        <p>“Hơn nữa chỉ là đại khái hiểu biết một chút nhân vật là được.” Hattori bổ sung.</p>
+        <p>Ở trường cảnh sát thời điểm thu hoạch tình báo phương thức đã như vậy ẩn nấp a, thật không hổ là Furuya-kun, Akai âm thầm tán thưởng.</p>
+        <p>Chúng ta Furuya tiên sinh chính là lợi hại! ZERO tổ toàn viên ở trong lòng hò hét.</p>
+        <p>【 căn cứ mấy ngày hôm trước điều nghiên địa hình kết quả, Furuya Rei đã thăm dò xe máy cửa hàng đi làm quy luật.</p>
+        <p>Vì thế, hắn cố ý chọn một ngày Mononobe xin nghỉ nhật tử đi vào xe máy cửa hàng. ( như cũ là mang tóc giả cùng mũ lưỡi trai, nói khẩu âm )</p>
+        <p>“Xin hỏi, Mononobe tiên sinh không có ở sao?”</p>
+        <p>“Ai? Ngươi tìm Mononobe a? Thật không khéo, hắn hôm nay xin nghỉ, có chuyện gì sao?”</p>
+        <p>“Cư nhiên là như thế này sao? Cũng không phải cái gì đại sự lạp . ta gần nhất cũng tính toán văn cái thân, sau đó còn rất thích Mononobe tiên sinh cái kia con bò cạp đồ án cho nên muốn hỏi một chút.”</p>
+        <p>“Như vậy a,” vị này nhân viên cửa hàng đem Furuya kéo đến một bên, nhỏ giọng nói đến, “Ta cũng là nghe nói, Mononobe cái kia con bò cạp xăm mình là tuổi trẻ thời điểm hỗn hei thời điểm văn, cho nên này không phải đến bây giờ cũng không thành gia sao. Tiểu huynh đệ, ta kiến nghị ngươi thật muốn văn nói cũng vẫn là đừng hỏi hắn.”</p>
+        <p>“Nguyên lai là như thế này a, đa tạ.”</p>
+        <p>Furuya Rei xoay người rời đi, khóe miệng giơ lên. 】</p>
+        <p>“Lần này mục tiêu liền rất minh xác,” Kudo phân tích, sau đó ăn ý mà triều phục bộ nhìn thoáng qua, “Mononobe tiên sinh sashimi, cho nên……”</p>
+        <p>“Là vì thế vị kia Morofushi tiểu ca tìm hung thủ đi?” Hattori tiếp thượng.</p>
+        <p>Quả nhiên, Morofushi Takaaki hơi hơi câu môi, đa tạ ngươi, Rei-kun.</p>
+        <p>【 “Hôm nay trọng trang bị huấn luyện khóa, luyện tập nội dung . phụ trọng chạy.” Huấn luyện viên ra lệnh một tiếng, mọi người liền bắt đầu xếp hàng chạy vội.</p>
+        <p>Vài vòng chạy bộ xuống dưới, nguyên bản chỉnh tề đội hình liền bởi vì mỗi người thân thể tố chất bất đồng biến thành trường xà hình.</p>
+        <p>Giờ phút này, Furuya Rei bên người trừ bỏ vẫn luôn bồi hắn Morofushi Hiromitsu, cùng với hắn thân thể tố chất không phân cao thấp Date Wataru, Matsuda Jinpei cùng Hagiwara Kenji cũng đuổi theo.</p>
+        <p>“Nha.” “Rốt cuộc.” “Quả nhiên tới a.” Ba người quay đầu lại nhìn về phía theo kịp Hagiwara cùng Matsuda, cũng ăn ý mà đằng ra tới địa phương.</p>
+        <p>Mà lúc này, mấy người đã cùng mặt sau trường cảnh sát sinh kém ra tới ước chừng 5 mét tả hữu khoảng cách.</p>
+        <p>Duy nhất bất đồng chính là, mặt sau trường cảnh sát sinh thở hồng hộc, mà này mấy người thoải mái mà chuẩn bị bắt đầu nói chuyện phiếm. 】</p>
+        <p>“A! Là phụ trọng chạy!” “Trường cảnh sát nhất không tốt đẹp hồi ức chi nhất a!” “Đến nay còn nhớ rõ huấn luyện viên sẽ không cùng chúng ta nói vòng số, sau đó khiến cho chúng ta vẫn luôn chạy……” Hình ảnh mới vừa vừa xuất hiện, từ trường cảnh sát tốt nghiệp các vị các cảnh sát không cấm bắt đầu khe khẽ nói nhỏ.</p>
+        <p>Tuy rằng nhưng là, các ngươi này năm người thân thể tố chất thật sự là khủng bố như vậy đi! Đây là sở hữu xem ảnh nhân viên cộng đồng tiếng lòng.</p>
+        <p>【 “Nói lên, quang chạy bộ thật sự là quá nhàm chán, chúng ta liêu điểm có ý tứ sự đi?” Date Wataru nhìn bên cạnh mấy người tựa hồ đều đối hiện tại phụ trọng chạy cảm thấy không thú vị, không khỏi đề nghị nói.</p>
+        <p>“Ta nhưng thật ra cảm thấy cái này ý tưởng không tồi.” Trước hết ứng hòa chính là Furuya Rei, Morofushi Hiromitsu cũng tán đồng gật gật đầu.</p>
+        <p>“Hảo a!” Hagiwara Kenji cũng nhanh chóng tỏ thái độ. “Lại như vậy chạy xuống đi, thật sự muốn nhàm chán đã chết!” Matsuda Jinpei ngáp một cái, lấy tỏ vẻ hiện tại thật sự thực nhàm chán.</p>
+        <p>“A, đúng rồi, ngày hôm qua nhìn dáng vẻ, ta cảm thấy Hagiwara ngươi giống như phi thường hiểu biết Onizuka huấn luyện viên khai xe, là hứng thú sao?”</p>
+        <p>“Ai ～ cư nhiên như vậy là có thể khiến cho Furuya-chan hứng thú sao ～” Hagiwara đưa đi một cái wink, “U tây, kia ta liền nói nói đi ～ nhà ta nguyên lai chính là khai sửa xe cửa hàng, cho nên từ nhỏ đến lớn mưa dầm thấm đất, càng ngày càng hiểu biết xe đồng thời, loại này thích tình cảm cũng liền bồi dưỡng ra tới đi?”</p>
+        <p>“Thì ra là thế.” “Nguyên lai ngươi quê quán là khai sửa xe cửa hàng a.” “Khó trách như vậy hiểu biết xe.”</p>
+        <p>Nhưng mà, so sánh với này ba người, Matsuda Jinpei lại ở nghe được Hagiwara nhắc tới nhà hắn sửa xe cửa hàng thời điểm, lộ ra nửa tháng mắt, tựa hồ là gợi lên cái gì không quá tốt đẹp hồi ức. 】</p>
+        <p>Này đã không phải thể lực khủng bố như vậy đi? Đây là đại tinh tinh đi? Vì cái gì ở mọi người đều chạy như vậy mệt thời điểm, các ngươi lại ở phía trước dẫn đầu còn liêu như vậy vui vẻ a!</p>
+        <p>Furuya Rei vấn đề không thể nghi ngờ cũng là ở đây rất nhiều người sở tò mò, mọi người yên lặng cảm tạ một chút vị này trước mắt còn không biết bộ mặt Furuya tiên sinh.</p>
+        <p>Hagiwara Chihaya ở nghe được đệ đệ nhắc tới sửa xe cửa hàng cùng nhìn đến Matsuda Jinpei biểu tình sau, nháy mắt nghĩ tới, khi còn nhỏ Matsuda sở làm những cái đó khứu sự.</p>
+        <p>【 Hagiwara cũng chú ý tới Matsuda biểu tình, vì thế chuyện vừa chuyển: “Nói lên, Jinpei-chan khi còn nhỏ cũng thường xuyên đi nhà ta sửa xe xưởng, tự tiện đem đồ vật lấy tới hủy đi cùng cải tạo, sau đó bị ta ba huấn nga ～”</p>
+        <p>“Ta, chỉ là, tưởng, đem Porsche đổi thành Âu cánh môn!!!” Matsuda liền biết Hagiwara nhắc tới sửa xe xưởng, cuối cùng nhất định phải nhấc lên hắn.</p>
+        <p>Nhưng là, như vậy ngươi không bị mắng mới là lạ a! Furuya Rei ở trong lòng mặt yên lặng nói.</p>
+        <p>“Bất quá mới vừa ngay từ đầu vẫn là xe, sau lại Jinpei-chan liền bắt đầu nghiên cứu bom đâu ～” Hagiwara thật sự là quá hiểu biết nhà mình osananajimi, hắn thành công đem đề tài chuyển tới Matsuda cảm thấy hứng thú địa phương.</p>
+        <p>“Ân, đúng vậy, ta xem một cái liền biết đại khái cái gì cấu tạo.” 】</p>
+        <p>“Nên nói quả nhiên là Matsuda có thể làm ra tới sự sao……” Satou bĩu môi, “Hắn phía trước liền hỏi qua ta có hay không ý đồ làm hắn đem ta RX7 cấp cải tạo một chút……”</p>
+        <p>“A…… Phải không……” Takagi ở một bên xấu hổ cười cười.</p>
+        <p>“Tám…… Tám trứng?!” Nghe đến đó, ở đây không vài người có thể bình tĩnh lại . kia chính là bom ai! Hai người kia là như thế nào có con đường được đến a……</p>
+        <p>“Cái kia, bởi vì ta phụ thân ở đại học khi thượng ngành kỹ thuật, hắn từ phát hiện Matsuda ở máy móc phương diện này có thiên phú lúc sau, lúc ấy liền làm một cái □□ cấp hai người chơi, không nghĩ tới hai người từ đây liền đối với trò chơi này cảm thấy hứng thú.” Hagiwara Chihaya nghe được bên người có người tò mò, liền mở miệng giải thích, không nghĩ tới câu này giải thích thanh âm bị phòng chiếu phim cố ý phóng đại, vì thế tất cả mọi người minh bạch.</p>
+        <p>【 “Nhưng là, nếu nói như vậy, vì cái gì Hagiwara cũng tới đương cảnh sát đâu?” Morofushi Hiromitsu tò mò mà dò hỏi.</p>
+        <p>“Ta cũng thực thích đùa nghịch máy móc, vốn là tưởng kế thừa sửa xe xưởng……” Hagiwara trong giọng nói nhiều vài phần bất đắc dĩ, nhưng như cũ không mất bình thường nghịch ngợm, “Vốn dĩ kinh doanh thuận lợi, đang ở gia tăng chi nhánh, kết quả đột nhiên liền trở nên kinh tế đình trệ, lão ba nhà xưởng cũng đóng cửa. Mà cảnh sát liền bất đồng . khẳng định sẽ không phá sản, đúng không?”</p>
+        <p>Lúc này Hagiwara Kenji đã chạy đến mọi người phía trước, lại tặng một cái wink.</p>
+        <p>“A, đúng vậy……” Furuya trước hết tiếp thượng lời nói.</p>
+        <p>“Xác thật là sẽ không phá sản a……” Mặt khác hai người cũng phản ứng lại đây, ứng hòa đến.</p>
+        <p>Matsuda nhưng thật ra không có gì phản ứng, phỏng chừng là phía trước nghe nhà mình osananajimi đề qua đi . hoàn toàn không giống Hagiwara lần đầu tiên nghe được hắn từ cảnh lý do thời điểm, vẫn là trước sửng sốt một lát mới nói “Lý do quả nhiên rất nhỏ Jinpei đâu”.</p>
+        <p>Hai người chạy ở bên nhau lẩm nhẩm lầm nhầm mà nói chút cái gì, liền cùng nhau gia tốc.</p>
+        <p>Lúc này, Furuya Rei đột nhiên chú ý tới, huấn luyện viên bên cạnh đứng một vị mang kính râm xa lạ nam nhân. 】</p>
+        <p>“Gì?” “A?” “Cái này lý do……” “Ta vốn đang cho rằng…… Matsuda cảnh sát đương cảnh sát lý do đã thực……” “Cảnh sát xác thật sẽ không phá sản ha……”</p>
+        <p>Hagiwara đương cảnh sát lý do thật sự là cấp xem ảnh cảnh sát nhóm sáng lập một mảnh tân thiên địa.</p>
+        <p>Bọn họ này đối osananajimi sao lại thế này a? Kudo Shinichi yên lặng phun tào.</p>
+        <p>“Nam nhân kia, hẳn là tới trường cảnh sát chiêu sinh sao?” Hattori Heiji dù sao cũng là Osaka phủ cảnh bộ trưởng gia công tử, đoán được vài phần, “Bất quá này đoạn xem ảnh thời gian hẳn là vẫn là tháng 5 trung thượng tuần đi? Hẳn là không phải công an đi? Chẳng lẽ là…… Hỏa bạo hỏa chợt vật xử lý ban?”</p>
+        <p>“Hẳn là hỏa bạo hỏa chợt vật xử lý ban.”</p>
+        <p>“Không chuẩn là hỏa bạo hỏa chợt vật xử lý ban?”</p>
+        <p>Kudo, Sera cùng Hattori đồng thời nói ra phỏng đoán, ăn ý mà lẫn nhau chi gian nhìn thoáng qua.</p>
+        <p>【 hình ảnh đã cắt tới rồi nhà ăn, năm người đang ở một cái bàn thượng ăn cơm.</p>
+        <p>Đột nhiên, Furuya Rei bên cạnh Morofushi Hiromitsu buông chiếc đũa: “Xin lỗi, đại gia, ta giống như thật sự là ăn không vô. Hôm nay ta liền về trước ký túc xá.”</p>
+        <p>“Ai? Nhưng là Hiro ngươi vốn dĩ muốn liền tất cả đều là thanh đạm tiểu thái, lại không như thế nào ăn, hôm nay rèn luyện lượng còn rất đại?” Furuya Rei trong giọng nói tràn đầy lo lắng.</p>
+        <p>“Không cần lo lắng, Zero,” Morofushi Hiromitsu xin lỗi mà cười cười: “Hôm nay chính là có điểm không ăn uống, không có việc gì, nếu là ta buổi tối đói bụng, liền ở ký túc xá nấu hạ mì gói liền hảo.”</p>
+        <p>“Phải không……” “Kia, ta đi trước.”</p>
+        <p>Furuya Rei lo lắng mà nhìn Morofushi Hiromitsu rời đi, thẳng đến Date Wataru đột nhiên chụp một chút bờ vai của hắn mới hồi phục tinh thần lại.</p>
+        <p>“Furuya, ngươi không sao chứ?”</p>
+        <p>“Làm sao vậy, Furuya-chan? Ở lo lắng Morofushi-chan sao?”</p>
+        <p>“Hô ngươi đã lâu cũng chưa đáp lời, làm sao vậy, linh?”</p>
+        <p>“Hiro gần nhất…… Chính là ngày đó cùng các ngươi nói sự tình, hắn gần nhất giống như lại nhớ tới cái gì, cũng bị bối rối.”</p>
+        <p>“Thì ra là thế nha ～ ta nhưng thật ra có cái kế hoạch tới giúp Morofushi-chan đâu ～” Hagiwara Kenji nhìn về phía mấy người. 】</p>
+        <p>“Ai, Morofushi cảnh sát này ăn cũng quá ít điểm đi?”</p>
+        <p>Morofushi Takaaki không cấm nhíu mày, hắn đối trong khoảng thời gian này có ấn tượng . này một trận Hiromitsu có một loại cực độ bức thiết muốn giải quyết cha mẹ năm đó bị hại án cảm xúc, hơn nữa nhớ lại tới rất nhiều chi tiết, còn cố ý cho hắn đánh rất nhiều lần điện thoại. Hắn lúc ấy tựa hồ chỉ trở về “Không cần chỉ vì cái trước mắt”, cũng sửa đúng Hiromitsu đối với gia một ít sai lầm ấn tượng. Hiện tại lại ngẫm lại, hẳn là quan hệ hữu nghị trên đường đụng tới nữ hài cùng bên người xuất hiện kia mấy cái có sashimi người làm Hiromitsu lần nữa hồi tưởng lên vụ án kia đi. Bất quá may mắn Hiromitsu bên người có như vậy một đám bạn thân . chư vị, đa tạ.</p>
+        <p>“Nhưng là…… Ta nhớ rõ trường cảnh sát hình như là không cho phép ở trong ký túc xá ăn cái gì cùng tự mang đồ ăn?” “Năm đó mang đồ ăn vặt nhưng không thiếu bị túc quản cùng huấn luyện viên tra được a……”</p>
+        <p>【 “Kỳ thật, Hagiwara ngươi muốn nói phương pháp ta nhưng thật ra có thể đoán được,” Furuya móc ra cảnh sát sổ tay tới: “Trước mấy chu ta điều tra quá một chút, bất quá vì phòng ngừa làm kia ba người cảnh giác, ta là thông qua bọn họ người chung quanh dò hỏi tới rồi một ít tin tức . khai tiệm kim khí Irie tiên sinh trầm mặc ít lời, không yêu cùng người giao tiếp; mà giặt quần áo cửa hàng Tomori tiên sinh chúng ta tương đối quen thuộc, ta cũng không đi tìm hiểu mặt khác quá nhiều tin tức; xe máy cửa hàng vị kia Mononobe tiên sinh thời trẻ nhập quá □□ tổ chức; sau đó, trừ bỏ Irie tiên sinh hiện tại cùng thái thái cùng nhau sinh hoạt, mặt khác hai người đều là sống một mình.”</p>
+        <p>Hagiwara thổi cái huýt sáo: “Thật không hổ là Furuya-chan đâu!”</p>
+        <p>“Lợi hại a, linh!” “Thật không hổ là chúng ta trường cảnh sát đệ nhất!”</p>
+        <p>“Uy uy…… Hiện tại trọng điểm không ở nơi này đi……” Furuya Rei nửa tháng mắt thấy hướng mấy người.</p>
+        <p>“Như vậy…… Nếu Furuya-chan đã tìm hiểu quá một ít tin tức, này ba người mặt khác tương quan điều tra liền giao cho chúng ta đi ～”</p>
+        <p>“OK, như vậy, mấy ngày nay, Hagiwara cùng Matsuda phân biệt phụ trách Tomori tiên sinh cùng Mononobe tiên sinh, ta đi tìm Irie tiên sinh điều tra, sau đó Furuya, gần nhất Morofushi trạng huống liền làm ơn ngươi.” Date Wataru lại lần nữa phát huy chính mình lộ rõ lãnh đạo năng lực.</p>
+        <p>“Thu được!” Ba người cùng kêu lên trả lời. 】</p>
+        <p>Thật không hổ là Furuya tiên sinh!!! Linh tiểu tổ người ở trong lòng điên cuồng vì công an cơ đánh call.</p>
+        <p>Vừa rồi về Amuro tiên sinh kia một đoạn quả nhiên là vì như vậy, Kudo Shinichi lộ ra tự tin mỉm cười.</p>
+        <p>Furuya-kun sau lại trở thành tình báo chuyên gia Bourbon quả nhiên không phải không có lý do gì a, Akai Shuichi nhẹ nhàng cười một chút, cảm nhận được có người nhìn chăm chú ánh mắt, liền đón xem qua đi, vừa vặn đối thượng Kudo Shinichi tầm mắt.</p>
+        <p>“Nhân sinh quý hiểu nhau, gì dùng kim cùng tiền.” Phòng chiếu phim trung quanh quẩn Morofushi Takaaki theo như lời cổ ngữ . Hiromitsu, có thể gặp được như vậy một đám bạn thân, đúng là nhân sinh chi hạnh.</p>
+        <p>Tác giả có lời muốn nói: Cảm tạ ở 2023-03-31 13:30:00.2023-03-31 23:00:00 trong lúc vì ta đầu ra bá vương phiếu hoặc tưới dinh dưỡng dịch tiểu thiên sứ nga .</p>
+        <p>Cảm tạ tưới dinh dưỡng dịch tiểu thiên sứ: Cố hoài diệp 1 bình;</p>
+        <p>Phi thường cảm tạ đại gia đối ta duy trì, ta sẽ tiếp tục nỗ lực!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- END-AUTO-INSERT-9 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong8.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong10.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "onizuka-giao-luyen-tuyet-mat-ho-so";
+const NOVEL_TITLE = "Onizuka Giáo Luyện Tuyệt Mật Hồ Sơ";
+const CHAPTER_TITLE = "Chương 9: Tìm kiếm";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

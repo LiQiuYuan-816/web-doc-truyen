@@ -1,0 +1,606 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 2: Hợp tác</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Onizuka Giáo Luyện Tuyệt Mật Hồ Sơ
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 4: Cộng minh</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong1.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong3.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-2 -->
+
+        <p>【 thị giác đã chuyển tới trên màn hình máy tính, mặt trên nội dung thình lình viết: Chức nghiệp quyền anh tay Matsuda Jotaro, nhân bị nghi ngờ có liên quan giết người bị bắt.</p>
+        <p>“Rốt cuộc tìm được rồi, chính là cái này đi.” Furuya Rei lầm bầm lầu bầu, dư quang xuất hiện Morofushi Hiromitsu.</p>
+        <p>“Kia khởi án tử, lúc ấy giống như còn rất oanh động. Ta còn tưởng rằng ngươi loại địa phương này làm cái gì đâu, nguyên lai là ở điều tra Matsuda phụ thân sự a.”</p>
+        <p>“Ân, bởi vì ta muốn biết hắn như vậy chán ghét cảnh sát nguyên nhân.”</p>
+        <p>“Ta từ cùng Matsuda quan hệ thực tốt Hagiwara nơi đó nghe nói…… Matsuda phụ thân là bị lầm trảo.”</p>
+        <p>“Ai? Trảo sai người?”</p>
+        <p>Morofushi Hiromitsu tựa hồ cũng ở hồi ức lúc ấy Hagiwara tự thuật: “Matsuda phụ thân lúc ấy là một người chức nghiệp quyền anh tay, từ quyền anh tràng về nhà trên đường thấy hai cái nam ở đánh nhau. Bởi vì lúc ấy hắn còn ở chuẩn bị thi đấu, liền không quản rời đi.</p>
+        <p>Không nghĩ tới ngày hôm sau, nơi đó phát hiện trong đó một người thi thể. Vừa lúc có người chứng kiến ở hiện trường phụ cận nhìn thấy quá Matsuda phụ thân, hơn nữa người bị hại đương quá chức nghiệp quyền anh tay, vẫn là ẩu đả đến chết, vì thế Matsuda phụ thân đã bị bắt.</p>
+        <p>Tuy rằng cuối cùng phá án bị tẩy thoát tội danh, lại bỏ lỡ giải quán quân, lúc sau làm cái gì đều không gặp may mắn, cuối cùng từ bỏ quyền anh, giống thay đổi cá nhân dường như cả ngày say rượu.”</p>
+        <p>“Thì ra là thế…… Nhưng hắn vì cái gì còn sẽ muốn đương cảnh sát đâu?”</p>
+        <p>“Không biết…… Hagiwara cũng nói đây là cái mê đâu.” 】</p>
+        <p>Sở Cảnh sát Đô thị người không khỏi có chút hổ thẹn…… Thế nhưng làm loại chuyện này đã xảy ra . lầm trảo sau lại phóng thích mang đến ảnh hưởng là không thể đền bù.</p>
+        <p>“Cần phải đề cao phá án chuẩn xác suất, giảm bớt loại tình huống này phát sinh.” Kuroda Hyoue ở đệ nhất bài quay đầu hướng điều tra một khóa vài người nói: “Tựa như phía trước Furuya nói như vậy, quyết không thể phiến diện mà tin vào người chứng kiến lời chứng.” “Là!”</p>
+        <p>Nhìn Kuroda Hyoue nghiêm túc gương mặt, nguyên bản muốn cười nói “Có ta danh trinh thám Mori Kogoro ở liền sẽ không làm loại chuyện này phát sinh” Mori nhịn xuống, đoan chính dáng ngồi, giống như trở lại trường cảnh sát ở nghe huấn luyện viên dạy bảo.</p>
+        <p>Không biết hắn cái này đại đồ đệ áo choàng còn có thể lại giấu bao lâu đâu……</p>
+        <p>【 Furuya Rei nhìn mắt đồng hồ: “Ai nha, đều lúc này, tuy rằng còn có điểm sớm, vẫn là trước dời bước đến khoa mục kỹ thuật huấn luyện lâu đi? Onizuka huấn luyện viên lần đầu tiên xạ kích huấn luyện khóa, đến muộn nhưng không tốt.”</p>
+        <p>“Xin lỗi, Zero, ngươi đi trước đi.” Morofushi Hiromitsu trên mặt là hơi mang xin lỗi cười: “Ta còn tưởng ở chỗ này lại kiểm số đồ vật.”</p>
+        <p>“Phải không, nhưng đừng đến muộn a!” Furuya Rei một bên hướng cửa đi một bên quay đầu lại nhìn về phía Morofushi Hiromitsu.</p>
+        <p>Lúc sau, hắn tựa hồ dừng lại ở cửa.</p>
+        <p>Quay đầu nhìn về phía ngồi ở máy tính trước mặt người, tâm lý không cấm nhẹ nhàng kêu gọi nói: “Hiro……” 】</p>
+        <p>Trên màn hình đột nhiên trưng bày hiện Morofushi Hiromitsu ở trên máy tính điều tra nội dung . “Nagano một nhà tử thương sự kiện” ánh vào mi mắt.</p>
+        <p>Phòng chiếu phim tĩnh mịch một mảnh.</p>
+        <p>Morofushi Takaaki tưởng mở miệng nói chuyện, lại cái gì đều giảng không ra . hắn ở trách cứ chính mình như vậy sớm làm Hiromitsu rời đi Nagano, rời đi chính mình…… Khi còn nhỏ bị thương quả nhiên một chốc một lát khó có thể đền bù: Hiro, ca ca thật sự làm không đủ xứng chức……</p>
+        <p>“Xem ra đây là vị kia tiểu ca PTSD nguyên nhân đi.” Hattori Heiji trước hết đánh vỡ cục diện bế tắc.</p>
+        <p>“Căn cứ cái này tư liệu tới xem, lúc ấy vị này Morofushi cảnh sát tuổi tác còn rất tiểu nhân . có lẽ…… Chính mắt thấy này hết thảy đi.” Sera cũng làm ra phân tích.</p>
+        <p>“Trong nhà ra ngoài trường nam chỉ hẳn là Morofushi Takaaki cảnh sát đi.” Kudo Shinichi thử tính hỏi một câu: “Morofushi tiên sinh phương tiện lộ ra chút cái gì sao?”</p>
+        <p>“Cần gì ngôn,” Morofushi Takaaki nhìn chăm chú vào màn hình: “Nó sẽ nói cho chúng ta biết.”</p>
+        <p>【 các ngươi cho ta nghe hảo, đây là ‘ hoa anh đào ’, nghê hồng cảnh sát trang bị 5 liền phát súng lục tay mộc thương.” Nghe Onizuka huấn luyện viên ở một bên giảng giải, Furuya Rei đem năm cái viên đạn để vào băng đạn trung.</p>
+        <p>“Lần này xạ kích thí nghiệm tổng cộng 4 luân, mỗi luân 5 phát, lấy trong đó tốt nhất 2 luân thành tích tương thêm, làm cuối cùng thành tích. Không mãn 70 hoàn coi là không đủ tiêu chuẩn……”</p>
+        <p>Onizuka còn chưa nói xong lời nói, Furuya Rei đã giơ lên □□, hai mắt nhìn thẳng hồng tâm, liên tiếp năm phát, toàn bộ mười hoàn. 】</p>
+        <p>Thoạt nhìn Amuro thương pháp cũng không tệ lắm, nhưng cảm giác tựa hồ cố ý ở khống chế trợ thủ đắc lực lực độ a, lần sau tìm hắn tâm sự đi. Mori Kogoro tưởng.</p>
+        <p>“Thật không hổ là Furuya học trưởng!” Sở Cảnh sát Đô thị người không chút nào che giấu chính mình đối với Furuya hâm mộ. Công an còn lại là phi thường thản nhiên mà tiếp nhận rồi cái này hiện thực . nếu là Furuya tiên sinh không có toàn trung bọn họ mới có thể cảm thấy giật mình đâu!</p>
+        <p>Akai Shuichi thổi cái huýt sáo, lấy kỳ tán thưởng.</p>
+        <p>【 “Toàn bộ mệnh trung hồng tâm, có thể a Furuya-chan!” Bên người Hagiwara Kenji cũng thổi cái huýt sáo, tán thưởng nói.</p>
+        <p>Onizuka huấn luyện viên thấy được Furuya thành tích, dặn dò nói: “Furuya, ngươi xúc cảm không tồi. Nhưng là nhớ kỹ, thiên ngoại hữu thiên, nhân ngoại hữu nhân. Các ngươi tiền bối trung, liền có người ở lần đầu tiên thí bắn trúng được đến mãn phân, cũng chính là 20 phát đạn toàn bộ mệnh trung. Có thể xưng là thiên tài.” Hagiwara Kenji lại thổi cái huýt sáo.</p>
+        <p>Date Wataru thì tại một bên kích động hỏi: “Huấn luyện viên! Kia, cái kia tiền bối hiện tại có phải hay không đang ở điều tra một khóa tỏa sáng rực rỡ đâu!”</p>
+        <p>Onizuka mặt tựa hồ có điểm suy sụp: “Không có, hắn đã từ chức, hiện tại hình như là ở Beika-cho khai một nhà trinh thám văn phòng.” 】</p>
+        <p>“Chẳng lẽ nói chính là ba ba?” Ran-chan có chút hoang mang.</p>
+        <p>“Mori lão đệ thương pháp năm đó ở điều tra một khóa, hoặc là nói toàn bộ hình sự bộ đều là nhất tuyệt.” Megure cảnh sát đáp lại Ran-chan.</p>
+        <p>“Xem ra ngươi ba ba vẫn là rất lợi hại, Ran.” Kudo Shinichi mượn cơ hội lấy lòng một chút nhà mình bạn gái.</p>
+        <p>“Hừ, trinh thám tiểu tử, ngươi khen ta cũng đừng nghĩ đánh nữ nhi của ta chủ ý.” Mori đối với thương pháp sự tình như cũ ngậm miệng không nói chuyện.</p>
+        <p>“Nói, ta nhớ rõ Furuya xạ kích huấn luyện chiến tích có phải hay không cũng là 20 phát toàn trung?” Một vị đồng kỳ đối năm đó nhiều ít có chút ấn tượng . tuy nói tự ký bảo mật hiệp nghị sau, những việc này đã sớm bị hắn quên đi, nhưng là nếu hiện giờ đã chịu không khoa học lực lượng đem ký ức lại lần nữa phiên thượng, hắn cũng không tính toán làm năm cái đồng kỳ huy hoàng chuyện xưa lần nữa bị thời gian vùi lấp.</p>
+        <p>“Tuy rằng ở trường cảnh sát nghe đồng kỳ nhóm nói qua Furuya tiên sinh đại danh, nhưng là huấn luyện viên tựa hồ không có cũng không có trực tiếp đề qua, hơn nữa bọn họ kia một lần tốt nghiệp chiếu cũng không có ở trường cảnh sát trên tường treo . kỳ thật ta đến bây giờ cũng không biết Furuya tiên sinh bộ dáng đâu.” Takagi gãi gãi đầu.</p>
+        <p>“Kỳ thật chúng ta cũng không có gặp qua, về Furuya học trưởng nhiều nhất tin tức, cũng cũng chỉ có hiện tại đối phương ở cảnh sát thính đảm nhiệm chức vị quan trọng,” Shiratori nhiều lời một chút: “Nghe nói, học trưởng năm đó khả năng bị phái đi nằm vùng.”</p>
+        <p>【 “Nột, Zero, ngươi như thế nào xúc cảm như vậy hảo?” Cùng hắn cách một cái Hagiwara Kenji Morofushi Hiromitsu vòng qua tới, chỉ chỉ chính mình 4 phát mười hoàn, một phát 9 hoàn chiến tích hỏi: “Rõ ràng lúc ấy ở câu lạc bộ bắn súng thời điểm trình độ còn kém không nhiều lắm.”</p>
+        <p>“A, phía trước ta ngẫu nhiên ở một quyển sách thượng thấy được một cái chỉ đạo phương pháp . kiến nghị là thường dùng tay dùng ba phần, một cái tay khác bảy phần lực, tư thế nói muốn trầm hạ eo, hơi khom, Hiro thử lại? Đúng rồi đúng rồi, thương còn muốn định kỳ bảo dưỡng, nếu không chính xác liền sẽ không hảo . giống loại này súng lục □□ còn đặc biệt không cấm quăng ngã.” 】</p>
+        <p>Một chúng cảnh sát đều tỏ vẻ học được.</p>
+        <p>Kazami: Nguyên lai lần trước Furuya tiên sinh đối ta xạ kích chỉ đạo là hắn trường cảnh sát thời điểm liền biết đến a……</p>
+        <p>Mori Kogoro hơi có chút tự hào . quả nhiên vừa rồi đồ đệ có cố tình khống chế tay lực độ.</p>
+        <p>Morofushi Takaaki nhìn đến đệ đệ hoạt bát một mặt, lo lắng thiếu vài phần . đa tạ ngươi, linh.</p>
+        <p>【 “Uy uy, Matsuda!” Mấy người lực chú ý đều bị Date Wataru thanh âm dời đi qua đi.</p>
+        <p>Matsuda trong tay thương đã biến thành linh kiện, tán rơi trên mặt đất…… Trong tay cầm không biết từ nào biến ra công cụ, một bên không chê sự đại nói: “A, cái này chuyển luân máy định vị quả nhiên là có vấn đề. Nòng súng cùng chuyển luân cuộn chỉ đều sai vị, khó trách ta như thế nào đều đánh không trúng.”</p>
+        <p>Phía sau Onizuka huấn luyện viên hoàn toàn bạo tẩu: “Matsuda! Lập tức cho ta lắp ráp trở về!!!”</p>
+        <p>“Nga?” Matsuda còn thực khiêu khích mà trở về một câu. 】</p>
+        <p>…… Yên tĩnh là hôm nay xem phòng chiếu phim chủ đề.</p>
+        <p>“Matsuda cảnh sát thật đúng là…… Thực…… Ân…… Động thủ năng lực rất mạnh a……” Kudo Shinichi hối hận dẫn đầu mở miệng đánh vỡ yên lặng, căn bản không biết nên nói cái gì.</p>
+        <p>Nhìn đến Matsuda cái dạng này một chút đều sẽ không kỳ quái Satou cùng Chihaya gật gật đầu tỏ vẻ đồng ý . dù sao cũng là đồng thời có chó Shiba cùng chó Dobermann thuộc tính người.</p>
+        <p>Takagi nháy mắt liền ngộ cái gì gọi là hắn cùng Matsuda rất giống nhưng lại hoàn toàn không giống nhau.</p>
+        <p>【 “Ai nha, Jinpei-chan bệnh cũ lại tái phát đâu,” Hagiwara Kenji cười ở một bên giải thích: “Jinpei-chan đặc biệt thích hủy đi đồ vật, từ nhỏ đến lớn, mặc kệ thứ gì, chỉ cần tới rồi trong tay hắn, đều sẽ bị hủy đi cái rơi rớt tan tác, cho nên đâu, hắn đối máy móc đặc biệt hiểu biết, đặc biệt là bom.”</p>
+        <p>“Nhưng là…… Matsuda như vậy loạn hủy đi đồ vật sẽ không bị mắng thực thảm sao……” Hiromitsu yên lặng quan tâm nổi lên đồng kỳ an toàn.</p>
+        <p>“Xác thật bị mắng quá lạp, trừ bỏ khi còn nhỏ loạn sửa ô tô bị ta ba huấn ở ngoài, nhất thảm một lần hẳn là chính là hủy đi tỷ tỷ của ta di động bị đánh đi? Nột, Jinpei-chan, có phải hay không?”</p>
+        <p>“Hagi, thực phiền ai.” Matsuda tức giận quay đầu nói.</p>
+        <p>“Đã biết, xin lỗi xin lỗi, chúng ta đây liền bắt đầu đợt thứ hai xạ kích đi . hoàn toàn không cần phải xen vào Jinpei-chan! 】</p>
+        <p>Phía trước nói nghe cũng chưa cái gì vấn đề, nhưng là bom là chuyện như thế nào a?! Lúc sau liền cùng Hiromitsu phát ra tương đồng tiếng lòng.</p>
+        <p>Đến nỗi Matsuda bởi vì hủy đi di động bị đánh, mọi người đều yên lặng nhìn về phía Chihaya . lại là một cái vũ lực giá trị bạo biểu nữ tính a!</p>
+        <p>【 “Xạ kích huấn luyện đến đây kết thúc, mọi người trả lại trang bị! Matsuda ngươi cho ta đứng ở nơi đó!” Onizuka huấn luyện viên kêu lên. 】</p>
+        <p>Xem ra hoàn toàn nhảy vọt qua sau mấy vòng Furuya học trưởng xạ kích huấn luyện đâu . thật muốn nhìn xem một cái khác 20 phát toàn trung thiên tài a, vài vị hậu bối cảnh sát yên lặng tưởng.</p>
+        <p>【 “Cái gì, ngươi nói thiếu một quả viên đạn?” Onizuka nghe xong, không khỏi đem hoài nghi ánh mắt chuyển tới Matsuda trên người: “Đem ngươi trộm tàng viên đạn giao ra đây.”</p>
+        <p>“Ha? Ta căn bản là không lấy viên đạn, ta đem viên đạn đều đánh xong, còn đem không vỏ đạn cũng đều nộp lên.” Matsuda tựa hồ cũng mang theo chút tính tình.</p>
+        <p>“Đừng cùng ta nói dối!” Onizuka tính tình không phải giống nhau hỏa bạo.</p>
+        <p>“Hảo hảo, các ngươi hai cái đều cho ta cái này lớp trưởng một chút mặt mũi.” Date Wataru lại lần nữa xuất hiện hoà giải: “Chúng ta nhất định sẽ trả lại đổi viên đạn.”</p>
+        <p>Lúc này, Onizuka huấn luyện viên vừa lúc bị trang hoàng nhân viên kêu đi. 】</p>
+        <p>“Date đại ca lời này nói…… Thật là có điểm kỳ quái……” Takagi sửng sốt một chút: “Không nghĩ tới Onizuka huấn luyện viên thật sự sẽ cho Date đại ca cái này mặt mũi……”</p>
+        <p>Xác thật, huấn luyện viên cho ta cái này lớp trưởng một chút mặt mũi như thế nào nghe như thế nào kỳ quái.</p>
+        <p>“Cái này Matsuda tiểu ca tựa hồ là bị hoài nghi, bất quá cũng khó trách hắn tính tình lên đây . rốt cuộc chính mình phụ thân năm đó chính là bởi vì bị oan uổng, mới tạo thành hôm nay như vậy.” Hattori ở một bên cấp Matsuda giải thích.</p>
+        <p>【 Date cùng Matsuda tựa hồ chính nói chuyện với nhau cái gì, theo thị giác di động, Furuya tựa hồ chính dần dần tới gần bọn họ: “Lớp trưởng, ngươi cũng quá ngây thơ rồi. Nếu hắn không tự mình đi chứng minh chính mình trong sạch, kia hắn liền sẽ dẫm vào phụ thân hắn vết xe đổ.”</p>
+        <p>“Tiểu tử ngươi, cái gì cũng không biết cũng đừng nhấc lên ta lão ba!” Furuya nói tựa hồ là lửa cháy đổ thêm dầu, kỳ thật là bởi vì hắn vừa lúc nói trúng rồi Matsuda nội tâm.</p>
+        <p>“Đúng vậy, ta cái gì cũng không biết, vậy ngươi có thể nói cho ta sao? Thuận tiện lại nói cho ta, ngươi phải làm cảnh sát nguyên nhân.” Furuya tựa hồ nghiêng đầu hỏi Matsuda.</p>
+        <p>“Hừ, nói cho ngươi cũng có thể, nhưng phải chờ tới ta đả đảo ngươi tiểu tử này lại nói.” 】</p>
+        <p>“Cái này Furuya Rei lời nói khách sáo tựa hồ rất lợi hại a . sấn Matsuda cảnh sát sốt ruột thời điểm tới muốn tới chính mình muốn tình báo.” Sera không cấm tán thưởng nói.</p>
+        <p>Đó là đương nhiên, Masumi, Akai Shuichi yên lặng ở trong lòng mặt trả lời nàng: Kia chính là tổ chức tình báo chuyên gia Bourbon a, bị dự vì tổ chức tình báo bộ nam nhân, sao có thể chỉ có honey trap đâu.</p>
+        <p>【 lúc này ngoài ý muốn đột nhiên phát sinh . trần nhà đột nhiên xuất hiện một cái lỗ thủng, một người sửa chữa công ngã xuống, một bên trải qua Onizuka thả người nhảy, tiếp được đối phương, lại bị dây an toàn thít chặt cổ, dưới thân sửa chữa công còn lại là lâm vào hôn mê.</p>
+        <p>Mấy cái nữ cảnh tiêm kêu lên, cá biệt còn tính lý trí một ít trường cảnh sát sinh, tắc chạy đi tìm mặt khác huấn luyện viên cùng bác sĩ.</p>
+        <p>“Uy, các ngươi mấy cái, biết nên làm chút cái gì đi?” Date thập phần tín nhiệm mà nhìn về phía mặt khác bốn người.</p>
+        <p>“□□.” Matsuda Jinpei trước hết đáp lại nói, hắn osananajimi Hagiwara Kenji tắc tiếp thượng hắn nói: “Viên đạn.”</p>
+        <p>“Xạ kích.” Furuya Rei không thể nghi ngờ là này mấy người xạ kích thành tích tốt nhất.</p>
+        <p>“Ta tới phụ trách lót chân.” Date Wataru tiến lên, nhìn về phía Morofushi Hiromitsu. “Nói như vậy, ta liền trạm đi lên đương cái giá, nâng huấn luyện viên.” Hiromitsu cùng Date đối thượng ánh mắt.</p>
+        <p>“Hảo, đại gia chuẩn bị hảo sao? Hành động!”</p>
+        <p>Date cùng Hiromitsu ăn ý địa hình thành nhân thang, Hiromitsu còn an ủi huấn luyện viên nói: “Như vậy ngài hẳn là sẽ thoải mái một chút, yên tâm, bọn họ mấy cái lập tức liền sẽ tới cứu ngài.”</p>
+        <p>Một bên bị dọa đến lại hoãn lại đây mấy cái nam sinh, cũng sôi nổi qua đi giúp Date cùng Morofushi vội. 】</p>
+        <p>Thật khiếp sợ các cảnh sát một chỉnh năm</p>
+        <p>“Bọn họ năm cái cùng với nói là đi trường cảnh sát học tập, không bằng nói là đi thực tập.” Kudo Shinichi yên lặng phun tào. ( những lời này là phía trước ở khác xem ảnh thể nhìn đến, cảm thấy thực hảo liền trích dẫn, xâm quyền tức xóa. )</p>
+        <p>“Nột, Shinichi, không cảm thấy vị kia Morofushi tiên sinh thực ôn nhu sao?” Ran-chan chọc chọc hắn, mà Đông Á dấm vương khó được mà không có ghen: “Dù sao cũng là Takaaki tiên sinh đệ đệ, hai người đều thực ôn nhu a.”</p>
+        <p>【 “Yêu cầu bao lâu?” Furuya Rei đột nhiên lên tiếng. “Ân?” Matsuda Jinpei một là không có phản ứng lại đây đối phương chỉ cái gì.</p>
+        <p>“Ta hỏi lắp ráp kia khẩu súng yêu cầu bao lâu thời gian?”</p>
+        <p>“Cái này sao, đại khái yêu cầu, one round……” Matsuda Jinpei tạm thời buông trong tay sống, so cái một.</p>
+        <p>“Một hồi hợp? 3 phút, lâu như vậy sao?”</p>
+        <p>“Ân,” Matsuda lại bắt đầu tu thương: “Bình thường dưới tình huống, ta 30 giây trong vòng là có thể lắp ráp hảo. Nhưng cây súng này có vấn đề, hơn nữa không có biện pháp thí bắn, cho nên phải hảo hảo điều chỉnh, mới có thể làm viên đạn tinh chuẩn phóng ra . rốt cuộc muốn cho chúng ta tóc vàng đại sư một phát mệnh trung cái kia dây thừng.” 】</p>
+        <p>“30 giây, thật nhanh!” Kudo Shinichi lộ ra tới mắt lấp lánh, Ran-chan trộm ở hắn bên cạnh nói: “Ngươi đã không phải Conan nga.” ( quyết chiến sau, Kudo hướng Ran-chan công đạo chính mình, Okiya cùng Haibara thân phận, còn lại tình báo Ran-chan cũng không biết. )</p>
+        <p>Akai Shuichi cùng Mizunashi Rena hai vị đặc công đều cảm thấy Matsuda Jinpei thật sự là quá am hiểu máy móc.</p>
+        <p>【 cùng với làm chờ Matsuda trang thương, Furuya quay đầu lại nhìn nhìn Hagiwara Kenji tiến triển, nhìn đến đối phương đột nhiên đề cao tiếng nói kêu: “A liệt? Ai nha nha! Phía trước như thế nào không đều phát hiện, viên đạn không phải liền rớt ở chỗ này sao!”</p>
+        <p>“Di?” Chung quanh đồng học đều nhìn dưới mặt đất, có một vị nam đồng học tìm kiếm túi quần có vẻ không hợp nhau.</p>
+        <p>Hagiwara đi đến đối phương trước mặt nói: “Viên đạn, chính là bị ngươi trộm đi đi?” 】</p>
+        <p>“Thì ra là thế, phản trá a.” Hattori vỗ tay.</p>
+        <p>“Thật là lợi hại!” Thiếu niên trinh thám đoàn cũng thực hưng đi.</p>
+        <p>【 “Đáng giận, lại là nơi nào ra vấn đề……”.</p>
+        <p>“Không nên gấp gáp, người bị thít chặt cổ sau, hô hấp trung tâm cơ năng sẽ đại khái sẽ ở 1 phút nội đình chỉ, trái tim ở kia lúc sau còn có thể tiếp tục nhảy lên vài phút. Liền tính tim phổi công năng đình chỉ, chỉ cần ở 3 phút trong vòng áp dụng cấp cứu thi thố, liền còn có rất lớn khả năng cứu hắn, thả sẽ không đối đại não mang đến tổn thương.” Furuya Rei bình tĩnh mà ở một bên tự thuật.</p>
+        <p>Hagiwara Kenji tắc hô to đem viên đạn ném cho Furuya Rei: “Muốn ném! Furuya-chan ～ tiếp hảo!”</p>
+        <p>“Còn có cái này . hoàn mỹ tay mộc thương.” Matsuda đưa qua đi tu hảo thương: “Nếu là không đánh trúng, ta liền làm thịt ngươi, Zero!” Matsuda tín nhiệm đối hắn cười. 】</p>
+        <p>“Nói, trinh thám cùng các cảnh sát có phải hay không đều là hành tẩu bách khoa toàn thư?” Duy nhất người thường Azusa phát ra chính mình nghi vấn.</p>
+        <p>Cảnh sát nhóm sôi nổi tỏ vẻ: Đó là chức nghiệp tổ người cùng danh trinh thám nhóm, cùng chúng ta không gì quan hệ……</p>
+        <p>【 tuy rằng súng lục trang viên đạn có chút chậm, nhưng chỉ một giây Furuya liền đem viên đạn trang nhập thương nội, đệ nhị giây cơ hồ chưa từng cẩn thận nhắm chuẩn, liền đã đem viên đạn bắn ra, ở giữa dây thừng.</p>
+        <p>Morofushi cùng Date lại lần nữa ăn ý mà ôm lấy sửa chữa công cùng Onizuka huấn luyện viên.</p>
+        <p>Mới vừa đi tìm người trường cảnh sát sinh cũng phá cửa mà vào.</p>
+        <p>“Uy! Huấn luyện viên! Onizuka huấn luyện viên!” Ở Date Wataru kêu gọi trong tiếng, Onizuka suyễn lên đây khí.</p>
+        <p>Trường cảnh sát sinh nhóm một mảnh hoan hô, thậm chí vây quanh một vòng tròn, đem năm người từng cái cử một lần chúc mừng. 】</p>
+        <p>Thật không hổ là Furuya tiên sinh. Kazami Yuya không biết bao nhiêu lần cảm thán nói.</p>
+        <p>Nhìn đến huấn luyện viên không có việc gì, mọi người cũng đều thở phào nhẹ nhõm.</p>
+        <p>“Giống như này một bộ phận xem ảnh còn kém một bộ phận nga,” Sera nhìn nhìn phía dưới tiến độ điều: “Còn sẽ có cái gì đâu?”</p>
+        <p>【 ban đêm, sân thượng.</p>
+        <p>“Tự tiện sử dụng súng ống thuộc về trọng đại vi phạm quy định hành vi, nhưng là có Onizuka huấn luyện viên giúp chúng ta cầu tình, lần này trường học liền không truy cứu.” Furuya Rei đi hướng ở bên cạnh nằm Matsuda.</p>
+        <p>“Kia cần thiết, dù sao cũng là chúng ta đem nàng từ quỷ môn quan kéo lại.” Thị giác, Matsuda Jinpei đem cảnh mũ cái ở trên mặt.</p>
+        <p>“Matsuda, nghe nói năm đó ngươi phụ thân bị cảnh sát lầm bắt……”</p>
+        <p>Nghe vậy, Matsuda bò dậy mang lên mũ: “Là Hagi tên kia nói đi? Thật là lắm miệng.”</p>
+        <p>Furuya Rei xả một chuỗi đạo lý, Matsuda đồng ý nhưng chính là khó chịu, vì thế, Furuya Rei thuận thế hỏi đến: “Như vậy, ngươi vì cái gì lựa chọn đương cảnh sát đâu?”</p>
+        <p>“Này còn dùng hỏi sao? Đương nhiên là vì đem người nọ tấu thượng một đốn, hủy diệt trong lòng ta khó chịu .”, sợ Furuya không nghe minh bạch, Matsuda còn cố ý giải thích đến: “Chính là Sở Cảnh sát Đô thị lão đại, cảnh thị tổng giám!”</p>
+        <p>Ngay sau đó truyền đến Furuya sang sảng tiếng cười, giây tiếp theo, Furuya liền phản bị Matsuda hỏi vấn đề này. 】</p>
+        <p>Cảm giác Furuya tiên sinh đã thật lâu không có như vậy vui vẻ mà cười qua đi…… Kazami cùng linh tổ người yên lặng tưởng . từ Furuya tiên sinh trở thành bọn họ cấp trên ngày đầu tiên khởi, liền chưa bao giờ tái kiến qua.</p>
+        <p>“Đánh cảnh thị tổng giám, hắn đang nằm mơ đi?” Yamamura Misao bắt được cái này tào điểm, dẫn đầu mở miệng.</p>
+        <p>“Nếu là Matsuda…… Cũng không chuẩn thật sự làm được……” Satou nhỏ giọng tiếp thượng lời nói, kia bảy ngày thời gian cũng đủ làm nàng hơi hơi hiểu biết người nam nhân này.</p>
+        <p>Sở Cảnh sát Đô thị vài vị cảnh sát trên mặt nháy mắt trượt xuống dưới mồ hôi lạnh . nếu phía trước cảnh thị tổng giám thật sự gặp quá tập cảnh nói, bọn họ sẽ không chút do dự trước hoài nghi Matsuda Jinpei đi.</p>
+        <p>Ha hả, vài vị trinh thám cười lạnh đáp lại.</p>
+        <p>Jinpei cái này trả lời, thật đúng là chính là thực Jinpei a…… Hagiwara Chihaya cười cười, thật là lệnh người không chút nào ngoài ý muốn đâu.</p>
+        <p>【 “Vì tìm một nữ nhân . nữ nhân kia đột nhiên liền mất tích, nàng với ta mà nói rất quan trọng.” 】</p>
+        <p>Hình ảnh ở trong phút chốc dừng hình ảnh, này trương hình ảnh thượng hiện ra một đoạn văn tự:</p>
+        <p>Miyano Elena, sinh ra với Anh quốc, Akai Mary muội muội ( Akai Shuichi, Haneda Shukichi, Sera Masumi tiểu dì ), Miyano Atsushi thê tử, Miyano Akemi cùng Miyano Shiho mẫu thân.</p>
+        <p>Từng trị liệu khi còn nhỏ bị thương Furuya Rei. 19 năm trước cùng trượng phu cùng nhau gia nhập Karasuma tập đoàn ( hắc y tổ chức ) lệ thuộc phòng thí nghiệm tiến hành dược vật nghiên cứu, bị tổ chức người coi là “Rơi vào địa ngục thiên sứ ( Hell Angel )”.</p>
+        <p>Akai Shuichi lại một lần cảm thán thế giới thật tiểu. ( Akai quyết chiến sau đã biết Akemi là chính mình biểu muội, nhưng là không biết Furuya Rei cùng các nàng giao tình )</p>
+        <p>Haibara tắc nhìn màn hình mẫu thân, khóe miệng nhẹ nhàng khép kín: “Mụ mụ.”</p>
+        <p>Tác giả có lời muốn nói: Sống lại linh hồn thể Matsuda:</p>
+        <p>Ở Furuya Rei một chỗ phòng đơn nội, đột nhiên trống rỗng xuất hiện một cái ăn mặc hắc tây trang tóc quăn nam nhân.</p>
+        <p>“Ha a.” Matsuda vừa xuất hiện thời điểm còn đang ở ngáp, sau đó, cách kính râm liền đón nhận một con phẫn nộ kim mao miêu miêu.</p>
+        <p>“A, kim mao hỗn đản, ngươi như thế nào cũng đã chết.”</p>
+        <p>“Ha? Quyển mao hỗn đản ngươi xác định không phải ngươi đã chết lúc sau chỉ số thông minh giảm xuống sao?”</p>
+        <p>Quả nhiên, thời gian cũng không ảnh hưởng hai người chi gian vừa thấy mặt liền lẫn nhau tổn hại sự thật.</p>
+        <p>Ở Matsuda ý thức được chính mình lại sống đến giờ lúc sau, sửng sốt một chút: “Sống lại loại chuyện này mới không khoa học đi? Ngươi tố chất tâm lý cũng quá cường đi?!”</p>
+        <p>“Rốt cuộc…… Ta từng vô số lần hy vọng các ngươi sống lại a,” Furuya Rei xả ra tới một cái so với khóc còn khó coi hơn cười: “Huống chi nơi này vốn dĩ chính là một cái không khoa học địa phương a.”</p>
+        <p>“Nói, như thế nào chỉ có ngươi một người…… Nên sẽ không?” Matsuda có chút chần chờ, nhưng vẫn là hỏi ra tới.</p>
+        <p>“Đúng vậy,” Furuya Rei hiện tại đã có thể thản nhiên nói ra sự thật này, nhưng ngoài miệng nói, động tác lại một chút không chậm, nhanh chóng ra quyền đánh hướng Matsuda má phải, Matsuda vội vàng tránh ra, lại không nghĩ bị linh nắm tay xoa làn da qua đi, không có đau đớn, lại đánh ra tới một ít lóe sáng tiểu mảnh nhỏ . nguyên lai Matsuda vẫn là linh hồn thể trạng thái.</p>
+        <p>Furuya Rei buông nắm tay, khó được mà rơi lệ: “Các ngươi thật là một cái so một cái hỗn đản.”</p>
+        <p>Matsuda cũng có chút nghẹn ngào: “Bất quá thật là không nghĩ tới giống lớp trưởng như vậy nam nhân đều sẽ chết a, nhưng là Zero, nếu ngươi đứng ở chúng ta như vậy lập trường, ngươi nhất định là minh bạch chúng ta, đúng không?</p>
+        <p>Hơn nữa, mặc kệ nói như thế nào, ta này không phải đã đã trở lại sao?</p>
+        <p>Ngươi không hề sẽ là lẻ loi một mình, Zero!”</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- END-AUTO-INSERT-2 -->
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong1.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong3.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "onizuka-giao-luyen-tuyet-mat-ho-so";
+const NOVEL_TITLE = "Onizuka Giáo Luyện Tuyệt Mật Hồ Sơ";
+const CHAPTER_TITLE = "Chương 2: Hợp tác";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

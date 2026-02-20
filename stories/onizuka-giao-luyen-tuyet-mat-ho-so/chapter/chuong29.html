@@ -1,0 +1,608 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 29: Ước định</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Onizuka Giáo Luyện Tuyệt Mật Hồ Sơ
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 29: Ước định</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong28.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong30.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-29 -->
+
+        <p>【 “Chúc mừng đại gia thuận lợi tốt nghiệp! Sau này các ngươi sẽ gặp được rất rất nhiều khó khăn, ta hy vọng các ngươi có thể linh hoạt vận dụng ở trường học sở học tri thức cùng kỹ năng, bảo vệ tốt dân chúng an toàn, làm các bá tánh thời khắc yên tâm, thường xuyên nghĩ lại chính mình còn có thể vì đại chúng làm chút gì cũng tích cực áp dụng hành động……” Trên đài, cảnh sát trường học hiệu trưởng đang ở đọc diễn văn, năm người tổ ngồi ở đệ nhất bài, ngay từ đầu còn đều nghiêm túc nghiêm túc mà nghe hiệu trưởng dạy bảo.</p>
+        <p>“Đúng rồi, Jinpei-chan,” Hagiwara hướng phía bên phải nhìn lại, “Các ngươi ba cái vừa rồi ăn mặc chế phục chạy đến ở chỗ nào vậy?”</p>
+        <p>Date cùng Matsuda đều triều Hagiwara nhìn qua, xa ở bên kia Furuya Morofushi lực chú ý cũng bị hấp dẫn lại đây.</p>
+        <p>“Nga, Hiro danna phải cho hắn ca ca gửi thư, vì thế ta cùng linh liền cùng đi bồi hắn chụp ảnh, đúng rồi, Hiro danna còn đáp ứng trong chốc lát mượn chúng ta chụp một trương cấp Chihaya tỷ đưa qua đi đâu.”</p>
+        <p>“Chúng ta từ phụ cận cửa hàng tiện lợi mua Polaroid camera chụp, mang lên chế phục mũ, đương nhiên là có trước đem cái này điển lễ thượng dùng trang trí xóa.” Morofushi nói, tay cũng thuận thế đáp tới rồi trên vai.</p>
+        <p>“Bất quá, Matsuda,” Furuya đột nhiên nghĩ tới cái gì, “Ở gửi thư phía trước ngươi nói muốn lại hảo hảo kiểm tra một chút ảnh chụp, cuối cùng có hảo hảo bỏ vào đi thôi?”</p>
+        <p>“Đương nhiên là có thuận lợi gửi đi ra ngoài!” Matsuda nghịch ngợm mà cười một chút, sau đó móc ra tới di động, “Hơn nữa trở nên càng có nam nhân vị nga ～”</p>
+        <p>“Ngươi cho hắn họa thượng râu!?” Date thiếu chút nữa hô ra tới, “Mới vừa lên làm cảnh sát chỗ nào có thể lưu râu a!”</p>
+        <p>“A?” Matsuda nửa tháng mắt, “Ta nhưng thật ra cảm thấy còn rất không tồi a……”</p>
+        <p>“Uy uy, Matsuda, ngươi gia hỏa này……” Furuya rất có tìm đối phương ở tốt nghiệp thức sau lại ước một trận tư thế.</p>
+        <p>“Đích xác,” Hiromitsu tiếp nhận di động, “Lưu râu cũng không tồi sao……”</p>
+        <p>Lời này vừa nói ra, chỉ còn lại có bốn cái tựa hồ choáng váng đồng kỳ.</p>
+        <p>“Di? Làm sao vậy?” 】</p>
+        <p>Nhìn đến tốt nghiệp thức thượng trường cảnh sát năm người tổ quang minh chính đại mà nói chuyện phiếm còn lấy ra tới di động, bọn hậu bối tựa hồ nháy mắt liền biết vì cái gì ở sau này tốt nghiệp thức, di động đều yêu cầu trước thống nhất nộp lên.</p>
+        <p>Cho nên, này bức ảnh là Scotch hình tượng tham khảo sao…… Akai suy nghĩ.</p>
+        <p>【 “Không có gì lạp,” Hagiwara phản ứng nhanh nhất, “Đúng rồi, nếu Morofushi-chan mua Polaroid nói, chúng ta trong chốc lát tốt nghiệp thức kết thúc về sau đi cửa chụp ảnh đi?”</p>
+        <p>“Nhưng là, phỏng chừng người sẽ rất nhiều?” Date có chút lo lắng.</p>
+        <p>“Vậy trong chốc lát chuồn ra đi thôi.” Matsuda đề nghị.</p>
+        <p>“Sẽ bị Onizuka huấn luyện viên mắng chết đi!” Furuya nhỏ giọng nhắc nhở, “Huấn luyện viên hiện tại ánh mắt đã mau đem chúng ta giết chết!”</p>
+        <p>Mặt khác bốn người đều theo Furuya Rei ánh mắt xem qua đi, sau đó…… Nháy mắt thu liễm, ngồi nghiêm chỉnh.</p>
+        <p>“Nếu không…… Trong chốc lát một tan họp liền chạy đi?” Morofushi nhìn đến huấn luyện viên không ở chú ý bọn họ lúc sau đề nghị đến.</p>
+        <p>“Hảo a, phỏng chừng không ai có thể đoạt lấy chúng ta!” Date tán thành.</p>
+        <p>“Như vậy, kế tiếp thỉnh sinh viên tốt nghiệp đại biểu Furuya Rei lên đài lên tiếng!”</p>
+        <p>Furuya lập tức đứng dậy, biểu tình nghiêm túc lên, hướng trên đài đi.</p>
+        <p>“Zero không thành vấn đề!” “Cố lên, linh!” “Furuya-chan, xem trọng ngươi!” “Hảo hảo biểu hiện, Furuya!” Bên người bốn vị bạn bè sôi nổi đưa lên chúc phúc. Đến nỗi Furuya Rei bản thảo thượng nói nội dung sao, bọn họ bốn cái đều mau bối qua . dù sao cũng là ngày đó buổi tối bốn người cùng nhau giúp Furuya “Kiểm nghiệm” thành quả. 】</p>
+        <p>A, cũng dám đề ra trốn lễ tốt nghiệp…… Này thật sự sẽ không bị trực tiếp khai trừ sao?!</p>
+        <p>Ha hả, đương nhiên không ai có thể chạy qua các ngươi, các cảnh sát không khỏi lộ ra nửa tháng mắt, đại danh đỉnh đỉnh trường cảnh sát năm người tổ thực lực, hoàn toàn không phải thổi!</p>
+        <p>【 Furuya làm xong diễn thuyết sau, tự tin mà đi xuống đài, triều bốn vị đồng kỳ cười, bốn người cũng hồi lấy tươi cười.</p>
+        <p>“Như vậy kế tiếp từ trăm điền lục lãng cảnh thị tổng giám đọc diễn văn!” Dưới đài vỗ tay sấm dậy, mà năm người tổ tắc bắt đầu trêu ghẹo .</p>
+        <p>“Nga ～ đây chính là cái cơ hội tốt a, Jinpei-chan!” Hagiwara trước hết trêu chọc đến.</p>
+        <p>“Đúng vậy, ta nhớ rõ ngươi là nói vì tấu cảnh thị tổng giám mới thượng cảnh sát trường học sao! “Date cũng phụ họa đến.</p>
+        <p>“Ai? Thật vậy chăng?” Morofushi tựa hồ vẫn luôn cho rằng cái này là mấy người nói chơi.</p>
+        <p>“Hiro cùng lớp trưởng mau đem Matsuda đè lại!” Furuya tuyệt đối là không quên trêu ghẹo đối thủ sống còn, “Gia hỏa này thật sự làm được!”</p>
+        <p>“Ngu ngốc, sao có thể a,” Matsuda chống tay, “Ta lại không phải tiểu hài tử.”</p>
+        <p>Rõ ràng chính là tiểu hài tử sao ～ bốn người tiếng lòng đồng bộ.</p>
+        <p>“Hiện tại, trao tặng bằng tốt nghiệp . sinh viên tốt nghiệp đại biểu, Furuya Rei!”</p>
+        <p>“Đến!” Furuya thanh âm to lớn vang dội, ở lễ đường giữa quanh quẩn. 】</p>
+        <p>Nếu là không nói đều đã quên Matsuda cảnh sát là vì cái này lý do thượng trường cảnh sát đâu…… Sẽ không thật sự làm ra loại chuyện này đi? Cảnh thị tổng giám ở trường cảnh sát lễ tốt nghiệp thượng bị tập kích sự tình, giống như không có nghe nói qua?</p>
+        <p>Phốc, Hagiwara Chihaya rốt cuộc nhịn không được cười ra tới, thật sự là quá rõ ràng tiểu hài tử tâm tính đâu, Jinpei.</p>
+        <p>【 “Lễ tốt nghiệp đến đây kết thúc .” huấn luyện viên vừa dứt lời, lễ đường mọi người liền bắt đầu trước sau vứt khởi chế phục mũ, mà năm người tổ thì tại Date Wataru ra lệnh một tiếng “Chạy” sau, triều lễ đường ngoại phóng đi.</p>
+        <p>Tuy rằng có rất nhiều đồng kỳ đối năm người tổ hành vi lộ ra nghi hoặc ánh mắt, cũng có thực mau hiểu được năm người đi làm cái gì: “Chụp ảnh chung!”</p>
+        <p>Thoáng chốc, càng nhiều người đi theo năm người hướng ngoài cửa chạy . nếu không phải huấn luyện viên thông qua micro ở chủ tịch trên đài duy trì trật tự, chỉ sợ hôm nay lễ đường liền phải phát sinh dẫm đạp sự kiện……</p>
+        <p>“Cổng trường chúng ta khẳng định có thể trước hết chiếm thượng!” Matsuda lộ ra thực hiện được tươi cười.</p>
+        <p>“Jinpei-chan, không cần vui vẻ quá mức, tiểu tâm vui quá hóa buồn nga ～”</p>
+        <p>“Nói Hiro ngươi vừa rồi đem camera phóng tới nơi nào?” Furuya có điểm nghi hoặc.</p>
+        <p>“Ở mũ nga,” Morofushi vẫy vẫy trong tay đồ vật, “Vừa vặn có thể buông đâu.”</p>
+        <p>“Còn không có người qua đi!” Date quan sát trạng huống, “Liền thừa hơn mười mét!”</p>
+        <p>“Hô . cướp được đâu.”</p>
+        <p>“Nhưng là…… Làm ai chụp ảnh đâu?” Morofushi trong tay cầm camera.</p>
+        <p>“Mặt sau như vậy nhiều người đâu!” Matsuda chỉ vào phía sau đi theo chạy tới đồng kỳ nhóm, giảo hoạt cười.</p>
+        <p>Vì thế, Hagiwara làm ơn vừa mới lại đây một vị nữ sinh: “Ta thực tin tưởng tiểu lật nguyên camera trình độ đâu!”</p>
+        <p>“Yên tâm đi!” Bị gọi tiểu lật nguyên nữ sinh cũng thực tự tin mà trả lời, “Ta đại học chính là nhiếp ảnh xã nga!”</p>
+        <p>“Thật không hổ là Hagi,” Matsuda nói đến, “Hắn khẳng định đã sớm biết, bằng không cũng sẽ không chuyên môn làm ơn cái này nữ sinh . chúng ta chiếm một cái nửa vòng tròn đi?”</p>
+        <p>“Vẫn là trạm thành tam giác đi,” Furuya phản bác, “Hình tam giác cho người ta thực củng cố cảm giác.”</p>
+        <p>“Ha? Ngươi cho rằng chúng ta năm cái là tiểu học sinh như vậy xếp hàng chụp ảnh sao?” Matsuda có chút bất mãn.</p>
+        <p>“Hảo hảo,” Date một bên đè lại một cái, “Muốn chụp ảnh, nhớ rõ mỉm cười .”</p>
+        <p>“Ca.” Cùng với camera thanh âm, ảnh chụp cũng ra tới . mấy người như vậy vui cười đùa giỡn ảnh chụp hiệu quả thế nhưng ngoài ý muốn không tồi. 】</p>
+        <p>Furuya tiên sinh ở Matsuda cảnh sát trước mặt luôn là rất giống tiểu hài tử…… Không, phải nói hai người đều giống tiểu hài tử giống nhau sảo lên…… Kazami cảm thấy chính mình cảm nhận trung Furuya tiên sinh hình tượng hẳn là đua không trở lại.</p>
+        <p>Kudo Shinichi nhớ rõ hắn xem qua này bức ảnh . Plamya lần đó sự kiện thời điểm, chính là trên ảnh chụp sinh long hoạt hổ năm người hiện giờ đảo mắt cũng chỉ thừa Furuya tiên sinh một người……</p>
+        <p>【 “Chúng ta đây mấy cái ảnh chụp liền làm ơn Hagiwara-kun lạp!” Lật nguyên đem camera đưa cho Hagiwara, đối phương cũng đồng ý.</p>
+        <p>Mặt khác bốn người ở một bên nhìn một màn này, không cấm cảm khái: “Không nghĩ tới nhanh như vậy liền tốt nghiệp a……”</p>
+        <p>“Về sau sẽ rất khó gom lại cùng nhau đi?”</p>
+        <p>“Nói, chế phục thượng đệ nhị viên nút thắt có thể hay không bị các nữ hài tử phải đi a?”</p>
+        <p>“Nếu là thật sự làm như vậy, bị huấn luyện viên nhìn đến nhất định sẽ bị mắng đi!”</p>
+        <p>Bốn người vừa nói vừa đi tới rồi trường cảnh sát nội cây hoa anh đào hạ . đã sâu vô cùng thu, cây hoa anh đào đã không giống mới vừa nhập học khi hoa rụng rực rỡ, màu đỏ lá cây trung ẩn ẩn hỗn loạn chút lá xanh, cũng phá lệ đẹp.</p>
+        <p>“Các ngươi mấy cái quả nhiên ở chỗ này .” Hagiwara chạy chậm lại đây.</p>
+        <p>Bốn người còn lại là mắt sắc mà chú ý tới hắn biến hóa: “Nút thắt…… Nút thắt toàn bộ không có?!”</p>
+        <p>“A,” Hagiwara vò đầu giải thích, “Vừa rồi chụp xong chiếu đã bị bọn họ phải đi……” 】</p>
+        <p>Thật không hổ là Kenji, Hagiwara Chihaya thật sự là biết rõ đệ đệ thuộc tính, nút thắt toàn đưa ra đi gì đó, hoàn toàn là có thể tưởng tượng đến.</p>
+        <p>【 “Bất quá đệ nhị viên nút thắt sao,” Hagiwara dừng một chút, từ túi quần móc ra một cái đồ vật phóng tới Matsuda trong tay, “Hagi quyết định giao cho Jinpei-chan nga ～”</p>
+        <p>“Uy uy……” Matsuda có chút bất đắc dĩ, đỉnh mặt khác ba cái đồng kỳ ánh mắt, sâu kín mà nói đến: “Hagi ngươi tuyệt đối là cố ý……”</p>
+        <p>“Ta cũng muốn Jinpei-chan đệ nhị viên nút thắt đâu ～”</p>
+        <p>“Thật là…… Chịu không nổi ngươi, mỗi lần tốt nghiệp đều như vậy làm……” Tuy rằng ngoài miệng là nói như vậy, Matsuda vẫn là động thủ đem đệ nhị viên nút thắt hủy đi xuống dưới, đưa cho Hagiwara.</p>
+        <p>“Hiro, chúng ta nếu không cũng trao đổi một chút nút thắt?” Furuya triều osananajimi xem qua đi.</p>
+        <p>“Hảo a, Zero.” Morofushi không biết khi nào đã cởi xuống tới nút thắt, phóng tới Furuya trong lòng bàn tay.</p>
+        <p>“Kia ta cũng trước đem nút thắt cởi xuống đến đây đi, trong chốc lát cấp Natalie lấy qua đi.” Date đã hành động lên.</p>
+        <p>“Đại gia, chúng ta lập cái thề?” Hagiwara dẫn đầu bắt tay vươn tới, “Mỗi năm hôm nay, đều tới này cây cây hoa anh đào hạ tụ hội một lần đi? Đương nhiên, Furuya-chan tình huống đặc thù, liền đặc thù xử lý đi?”</p>
+        <p>“Hảo a,” Matsuda đáp thượng osananajimi tay, “Nói định rồi nhưng không cho bội ước a!”</p>
+        <p>“Quả nhiên vẫn là hy vọng không có người sẽ bội ước đi.” Morofushi cũng vươn tay.</p>
+        <p>“Chúng ta cảnh sát mệnh cũng chỉ có một lần, các ngươi mấy cái ra trường học cũng không cần quá lỗ mãng hành sự!” Date còn ở vì bốn cái đồng kỳ nhọc lòng.</p>
+        <p>“Ta nhưng không nghĩ nuốt một ngàn căn châm,” Furuya cuối cùng bắt tay thả đi lên, “Nhất định sẽ làm được nga ～”</p>
+        <p>Ở năm người cùng nhau bắt tay áp xuống đi nháy mắt, một đóa hoa anh đào đột nhiên xuất hiện ở trên màn hình, mỗi cánh hoa đều chỉ hướng một người, cuối cùng một chút biến thành kim sắc cảnh huy. 】</p>
+        <p>Nếu thời gian thật sự có thể ngừng ở giờ khắc này nên thật tốt . như vậy khí phách hăng hái năm vị thiếu niên, cũng không cần lại trải qua cái gì âm dương tương cách.</p>
+        <p>Phòng chiếu phim lâm vào đã lâu yên lặng . người chết không thể sống lại, hiện thực luôn là cho người ta mãnh liệt đánh sâu vào cảm.</p>
+        <p>【 xem phòng chiếu phim sắp kết thúc buôn bán 】 trên màn hình đột nhiên hiện ra một hàng tự tới, 【 cảm tạ các vị quang lâm, hy vọng chúng ta tương lai có duyên gặp lại 】</p>
+        <p>“Ai?” Ở mặt khác trong phòng, cũng chính là chiếu phim gian nội, truyền ra Hagiwara kinh hô, “Cư nhiên thực thể hóa!”</p>
+        <p>“Thật sự,” Morofushi nhìn xem đôi tay, “Sẽ không hoàn toàn sống lại đi……”</p>
+        <p>“Cũng không phải cái gì không có khả năng sự tình,” Matsuda tỏ vẻ thế giới quan tốt đẹp, “Dù sao chúng ta ngay từ đầu lấy linh hồn thể hình thái xuất hiện ở chỗ này bản thân cũng đã thực thái quá.”</p>
+        <p>“Vẫn là thực thể hóa cảm giác hảo a!” Date vỗ vỗ trên người mình, phát hiện không có tái xuất hiện cái gì rơi xuống sáng lấp lánh tiểu mảnh nhỏ, “Natalie, ngươi cảm giác thế nào?”</p>
+        <p>“Ta thực hảo, không cần lo lắng, hàng.” Natalie hồi phục đến.</p>
+        <p>“Chúng ta lần này là hoàn toàn đã trở lại nga, Zero / linh / Furuya-chan / Furuya!” Tiếp thu hiện trạng sau, mấy người thực mau liền mặt hướng bạn bè, đã lâu mà đem tay đáp ở cùng nhau, “Liền kém ngươi nga!”</p>
+        <p>Furuya tiến lên đi rồi vài bước, bắt tay nhẹ nhàng phóng đi lên, nói đến: “Đại gia, hoan nghênh trở về.”</p>
+        <p>Tác giả có lời muốn nói: Chính văn 29 chương kết thúc!</p>
+        <p>Ngày mai phiên ngoại ～ đầu chương vạn tự rơi xuống!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- END-AUTO-INSERT-29 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong28.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong30.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "onizuka-giao-luyen-tuyet-mat-ho-so";
+const NOVEL_TITLE = "Onizuka Giáo Luyện Tuyệt Mật Hồ Sơ";
+const CHAPTER_TITLE = "Chương 29: Ước định";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
