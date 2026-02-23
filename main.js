@@ -64,7 +64,9 @@ const genreMap = {
    "hien-dai": "Hiện đại",
    "conan": "Thám Tử Conan",
    "hoa-hoat": "Hoa hoạt",
-   "dien-kinh": "Điền kinh"
+   "dien-kinh": "Điền kinh",
+   "tuong-lai": "Tương lai"
+
 
 };
 
