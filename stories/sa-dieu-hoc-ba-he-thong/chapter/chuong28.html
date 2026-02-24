@@ -1,0 +1,883 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 28: Lao tới phân ban khảo!</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Sa Điêu Học Bá Hệ Thống
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 28: Lao tới phân ban khảo!</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong27.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong29.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-28 -->
+
+
+        <p>“Là ngốc nghếch a, tối hôm qua ở bán cửa hàng không phải nhìn ra tới ngốc nghếch sao.” Tống Nghĩa dán lên tới, thấp giọng nói: “Tìm cái không ai địa phương tấu hắn một đốn đi, dù sao ta ba khẳng định đến bạo trừu ta, mông nở hoa cùng toàn thân nở hoa cũng không khác nhau.”</p>
+        <p>“Khác nhau vẫn phải có.” Diệp Tư đem ánh mắt từ bên kia thu hồi tới, liếc hắn một cái, “Ta cảm thấy ngươi còn có thể cứu giúp một chút, không cần tự mình từ bỏ.”</p>
+        <p>“Vậy ngươi liền như vậy phóng cao một có ngốc bức nơi nơi kêu gào a?” Tống Nghĩa thẳng trừng mắt.</p>
+        <p>Diệp Tư lắc đầu, “Không nghĩ tìm phiền toái, hai ngày này lưu tâm điểm là được.”</p>
+        <p>“Lưu tâm cái gì?” Tống Nghĩa hỏi.</p>
+        <p>Diệp Tư nói, “Ăn cơm vòng một chút, đi thông cáo bài bên kia nhiều đi dạo.”</p>
+        <p>“Vì sao?” Tống Nghĩa nga một tiếng, “Phân ban khảo thành tích sẽ dán kia đi, ngươi tưởng trước tiên biết kết quả?”</p>
+        <p>Thí.</p>
+        <p>Diệp Tư liếc hắn một cái, “Ân.”</p>
+        <p>Hắn cảm giác Doãn Kiến Thụ cái kia ngốc nghếch lại bất kham cũng không đến mức trực tiếp thượng thủ đi moi Hà Tu ảnh chụp, nhưng hắn chính là tưởng phòng bị, vạn nhất đâu.</p>
+        <p>Vạn nhất đáng yêu học thần đã bị moi đi xuống, kia còn phải.</p>
+        <p>Diệp Tư cau mày nói, “Học kỳ 1 ngươi nói thu kia mấy cái tiểu đệ, còn ở sao.”</p>
+        <p>“Nào mấy cái a?” Tống Nghĩa sửng sốt một chút, phản ứng lại đây, “Nga, ở đâu, tưởng cùng chúng ta hỗn, ta không đáp ứng. Chúng ta du thủ du thực đại đội chính là phong bế tổ chức, liền ta ba, không có khả năng lại chen chân tiến…… Ngươi đánh ta làm gì!”</p>
+        <p>“Làm tà giáo?” Diệp Tư trừng hắn liếc mắt một cái, lại nói, “Làm cho bọn họ nếu là trốn học hạt dạo liền nhiều hướng thông cáo bài bên kia đi bộ đi bộ, nếu là bắt lấy khả nghi nhân sĩ…… Ta liền dẫn bọn hắn hỗn.” Hoặc là dẫn bọn hắn học tập.</p>
+        <p>Tống Nghĩa nhăn mặt cân nhắc nửa ngày mới miễn cưỡng nga một tiếng, tới rồi cũng không làm minh bạch, rốt cuộc là phòng cái gì.</p>
+        <p>Phân ban khảo sau không khí áp lực, gian thao lão Tần mang theo đại gia nhiều chạy ba vòng, nam sinh còn hành, nữ sinh đến sau lại liền bắt đầu có tụt lại phía sau. Diệp Tư vốn dĩ không cảm thấy mệt, nhưng cùng Tống Nghĩa ngươi đá ta một chân ta dỗi ngươi một chút, hô hấp cũng có chút thác loạn, cuối cùng một vòng chạy cái mở đầu liền câm miệng không nói.</p>
+        <p>Hắn yên lặng điều chỉnh hô hấp, tính toán gia tốc hướng nó một phen, xa xa mà liền chỉ bảo học trong lâu ra tới cái thân ảnh. Cao cao, ở thái dương hạ tản ra trí tuệ quang mang.</p>
+        <p>“Ngồi cùng bàn!” Diệp Tư nhảy dựng lên vẫy tay.</p>
+        <p>Hà Tu hồi phất tay, chạy tới cũng ở hắn bên người, “Ta ở Lão Mã văn phòng thấy ngươi toán học thành tích.”</p>
+        <p>Diệp Tư quay đầu ngó hắn liếc mắt một cái, phát hiện hắn khóe miệng nhẹ nhàng câu lấy, thực sung sướng bộ dáng, nghi ngờ nói: “Sẽ không thượng một trăm tam đi?”</p>
+        <p>Hà Tu thế nhưng gật đầu nói, “Thượng, một trăm tam, chỉnh.”</p>
+        <p>Diệp Tư hít sâu một hơi, sau đó đột nhiên hướng khởi nhảy cái cao, cất bước điên chạy.</p>
+        <p>“Dựa, ngươi có tật xấu a ngươi đi đâu!” Tống Nghĩa ở phía sau cắn răng rống, đuổi theo hai bước bi thôi phát hiện thể lực chống đỡ hết nổi, mắt thấy Diệp Tư chạy xa, dư quang đột nhiên lại chạy tới một cái gia hỏa, là Hà Tu.</p>
+        <p>Hà Tu vài bước đuổi theo Diệp Tư, như cũ cùng hắn song song, nói tiếp: “Đạo số đại đề điểm lấy đầy, bất đẳng thức, xác suất, hình bầu dục đại đề, ngươi viết bước đi toàn bộ lấy phân, khấu rớt hai mươi cơ bản đều là ngươi thuần không bộ phận.”</p>
+        <p>Kia đương nhiên, ngươi Diệp Thần học khởi tập tới cũng là rất lợi hại.</p>
+        <p>Diệp Tư cong môi, “Lần sau, lần sau ta lại nhiều viết vài nét bút được rồi.”</p>
+        <p>“Ân.” Hà Tu cười xem hắn, nhìn một hồi lâu mới thu hồi tầm mắt tiếp tục xem phía trước đường băng.</p>
+        <p>Không biết có phải hay không ảo giác, Diệp Tư mơ hồ nghe thấy Hà Tu hô khẩu khí, như trút được gánh nặng dường như. Hắn đang muốn hỏi, Hà Tu bỗng nhiên lại nói, “Nhưng ta lần này thành tích giảm xuống.”</p>
+        <p>“A?” Diệp Tư dừng lại chạy bộ, “Nhiều ít phân a?”</p>
+        <p>Hà Tu đi theo hắn dừng lại, “138.”</p>
+        <p>Diệp Tư vẻ mặt khiếp sợ, “Tình huống như thế nào, phân khấu nào?”</p>
+        <p>“Nơi nơi đều khấu một chút đi.” Hà Tu bình tĩnh nói, “Lão Mã nói ta quá cầu toản cầu khó khăn, cơ sở tri thức có chút bạc nhược. Kỳ thật lý tổng ta cũng đáp đến không tốt lắm, về sau buổi tối ta muốn ở ký túc xá phòng tự học học tập, ngươi muốn hay không cùng nhau tới?”</p>
+        <p>Diệp Tư sửng sốt, “A, hảo a.”</p>
+        <p>Giải tán sau mua đồ uống hồi lớp học khóa, Diệp Tư rót hai khẩu băng, tổng cảm thấy trong lòng hụt hẫng.</p>
+        <p>Hà Tu buổi tối muốn cùng hắn cùng nhau học tập, là chuyện tốt. Nhưng nghe đến Hà Tu nói khảo thí thành tích lui bước, hắn lại cảm thấy nghẹn muốn chết.</p>
+        <p>Hà Tu liếc hắn một cái, “Đừng vẻ mặt khổ đại cừu thâm, ta chỉ là mỗi nói đại đề ném hai phân mà thôi, toán lý hóa đều là như thế này, không như vậy nghiêm trọng, buổi tối trừu thời gian tăng mạnh tăng mạnh là có thể đi lên.”</p>
+        <p>“Nga.” Diệp Tư ngẩn người mới nói nói.</p>
+        <p>Hà Tu ở hắn trong lòng bàn tay chụp hạ, “Trở về đi học.”</p>
+        <p>Bị chụp tiến lòng bàn tay chính là thường ăn cái kia bạch đào đường, phía trước bị Diệp Tư ăn sạch, không nghĩ tới thi xong Hà Tu lại bổ hóa.</p>
+        <p>Diệp Tư đem đường mở ra điền tiến trong miệng, một lát sau mới hít sâu một ngụm mang theo quả đào vị không khí.</p>
+        <p>Hành đi, vậy cùng nhau, buổi tối trừu thời gian tăng mạnh đi.</p>
+        <p>Tiết tự học buổi tối thời điểm lão Tần đi vào, kẹp thật dày một xấp hồ sơ, nói: “Ta hiện tại cho đại gia phát hồ sơ túi, yêu cầu xác nhận trang thứ nhất sở hữu tin tức, hạ tiết khóa trước thu, có vấn đề đơn độc tìm ta, không cần chính mình câu họa.”</p>
+        <p>Hồ sơ phong ở túi giấy, dùng tuyến vòng vòng phong hệ, thoạt nhìn thực nghiêm túc. Mọi người đều thật cẩn thận mà cắt chỉ, chỉ có Diệp Tư nắm đầu sợi một hồi xả, sau đó đem bên trong giấy có chút thô lỗ mà rút ra, dùng ngòi bút từng hàng so đi xuống xem.</p>
+        <p>“Tên họ, Diệp Tư, đối với.”</p>
+        <p>“Xoa xoa năm xoa nguyệt xoa mặt trời mọc sinh, cũng đối với.”</p>
+        <p>Hà Tu ngẩng đầu, “Xoa nguyệt xoa ngày là mấy tháng mấy ngày?”</p>
+        <p>“A.” Diệp Tư nói, “Ba tháng năm.”</p>
+        <p>Hà Tu gật gật đầu, “Đã biết.”</p>
+        <p>“Ngươi đâu?” Diệp Tư duỗi tay kéo Hà Tu cánh tay, thấy hắn sinh nhật.</p>
+        <p>Tám tháng 30.</p>
+        <p>“Ngươi xử nữ a?” Diệp Tư trừng lớn mắt, “Ta đi, này không mau sao?”</p>
+        <p>Hà Tu không hé răng, muốn tiếp tục đối tư liệu thời điểm, dư quang bỗng nhiên quét đến Diệp Tư hồ sơ thượng thân thuộc tin tức.</p>
+        <p>Đại gia nơi đó phổ biến điền hai hàng, ba ba một hàng, mụ mụ một hàng, nhưng Diệp Tư chỉ điền một hàng.</p>
+        <p>Hà Tu theo bản năng dừng lại, nhưng còn không có thấy rõ, Diệp Tư liền sau này phiên một tờ, sai khai hắn tầm mắt.</p>
+        <p>Hà Tu không nói gì, lại lặng im mà thu hồi ánh mắt.</p>
+        <p>Tiết tự học buổi tối tan học sau, bốn người hoảng đi siêu thị mua đồ ăn vặt, trở về khi đi ngang qua tiểu sân thể dục, Diệp Tư đột nhiên dừng lại bước chân nói: “Đánh sẽ cầu đi.”</p>
+        <p>Chuẩn bị phân ban khảo trong khoảng thời gian này hắn đều phải học ma chướng, tưởng sấn thành tích ra tới trước suyễn khẩu khí. Hơn nữa trận bóng rổ phải về tới, tuy rằng còn không có tưởng hảo muốn hay không thượng, nhưng vẫn là tưởng nhiệt cái thân.</p>
+        <p>Tống Nghĩa ngáp nói, “Ta hôm nay không hẹn, này tuần nghỉ ngơi dưỡng sức, chuẩn bị cuối tuần về nhà bị đánh.”</p>
+        <p>“Ta cũng không hẹn.” Ngô hưng nói, “Hồ Tú Kiệt hôm nay ở chúng ta ban để lại bốn bộ bài thi, viết không xong ngày mai xếp hàng đi văn phòng ai đá.”</p>
+        <p>Diệp Tư đồng tình mà nhìn hắn một cái, lại quay đầu lại, “Vậy ngươi?”</p>
+        <p>“Ta bồi ngươi.” Hà Tu cười cười, “Hai ta còn không có đánh quá cầu.”</p>
+        <p>“Chính là a!” Diệp Tư lập tức tinh thần tỉnh táo, đại khái là còn không có cùng Hà Tu trên sân bóng luận bàn quá, hắn thế nhưng so cùng Tống Nghĩa Ngô hưng chơi bóng hăng hái nhiều, lập tức đem chai đồ uống hướng Hà Tu trong lòng ngực một tắc, “Chờ a, ta tìm cái cầu.”</p>
+        <p>Chu Hải Xuyên bọn họ đội bóng vài cái bóng rổ đều đặt ở bán cửa hàng, đăng cái nhớ là có thể mượn đi. Diệp Tư cầm cầu ra tới thời điểm, tiểu sân thể dục mấy cái sân bóng rổ đều mãn người, Hà Tu đứng ở một cái bóng rổ giá phía dưới, trạm đến thẳng tắp.</p>
+        <p>Diệp Tư một cái không nhịn xuống liền cười lên tiếng, đâu tay đem cầu ném văng ra, Hà Tu tiếp được.</p>
+        <p>“Thịt người chiếm bãi a?” Diệp Tư trực tiếp xông lên đi, Hà Tu lập tức đem cầu từ sau lưng thay đổi cái tay, nghiêng người vận cầu phòng ngừa hắn trộm cầu.</p>
+        <p>“Bọn họ kính ta là cái học tập tốt.” Hà Tu nói, “Không cùng ta đoạt.”</p>
+        <p>“Lợi hại a.” Diệp Tư lười biếng mà nói, đột nhiên duỗi ra tay, trực tiếp đem Hà Tu trong tay cầu đoạn hạ. Xoay người chạy ra ba phần tuyến ngoại lại đâu trở về, xem như đổi đến đối phương rổ hạ, sau đó một tay mau công hướng rổ hạ mang cầu.</p>
+        <p>Hà Tu bị hắn lóe một chút, lập tức mở ra cánh tay phòng đi lên, Diệp Tư cười ha hả mà vận cầu, “Ta cảm giác ngươi cùng Tống Nghĩa không sai biệt lắm trình độ a.”</p>
+        <p>Hà Tu đầy mặt nghiêm túc, “Ngươi vừa rồi phân tán ta chú ý.”</p>
+        <p>“Ta liền khen ngươi một câu.” Diệp Tư vỗ cầu sách một tiếng, “Như vậy không cấm khen, nếu là lên sân khấu đối trước vua nịnh nọt, ngươi còn không bị người mười liền phá.”</p>
+        <p>Hà Tu không nói, biểu tình nghiêm túc chuyên chú nhìn chằm chằm trong tay hắn cầu. Con ngươi phảng phất trong nháy mắt thâm đi xuống, đồng tử yên lặng, chỉ có nhẹ nhàng tiếng hít thở, thấu đến gần lúc ấy phun ở người trên mặt, cào ngứa dường như.</p>
+        <p>Diệp Tư phát hiện học thần không thể nghiêm túc, một nghiêm túc lên liền đặc biệt soái, quả thực muốn cùng chính mình không phân cao thấp.</p>
+        <p>Hắn giơ tay làm cái giả động tác, Hà Tu không mắc mưu, ngược lại hướng hắn đổi tay phương hướng chặt đứt lại đây. Diệp Tư theo bản năng sau này chợt lóe, thiếu chút nữa liền đem cầu ném.</p>
+        <p>“Có thể a ngồi cùng bàn.” Diệp Tư vận cầu nói, “Thật sự có tài.”</p>
+        <p>Hà Tu không nói chuyện, nghiêm túc phòng hắn, Diệp Tư tả đột hữu đoạt vài lần cũng chưa thành công, hai người phảng phất cầm cự được.</p>
+        <p>Nếu là chính quy thi đấu, Diệp Tư sớm nên đem cầu truyền ra đi. Nhưng hai người đánh chơi không sao cả, hắn hôm nay có tinh thần, nhất định phải phá Hà Tu này đạo quan.</p>
+        <p>Diệp Tư một tay vận cầu tới gần, Hà Tu ngưng thần phòng thượng, Diệp Tư bước chân không đình, Hà Tu vốn tưởng rằng hắn phải làm cái giả động tác, nhưng là không có, Diệp Tư vận cầu đi lên, bờ vai trái cùng Hà Tu hung hăng va chạm, bị đụng phải trở về.</p>
+        <p>Hà Tu sửng sốt một chút.</p>
+        <p>Lăng lần này công phu, Diệp Tư vận cầu lại công, lại đụng phải hắn một chút, lần này là vai phải.</p>
+        <p>Trước mặt thiên buổi tối bất đồng, không có sóng cuồng dàn nhạc, cũng không có nhiệt triều biển người, dưới ánh trăng thiếu niên tiếng hít thở đều im ắng, từng cái đụng phải tới thời điểm, toàn thế giới đều là hai cái thân thể va chạm khi thanh âm.</p>
+        <p>Nặng nề mà ồn ào náo động, một chút một chút, tiếng đánh xuyên thấu qua cốt cách bò lên trên trung khu thần kinh, làm người trong nháy mắt sau lưng tê dại.</p>
+        <p>Diệp Tư đụng phải vài cái tìm không thấy cơ hội, thực sự có điểm nóng nảy, lại hướng về phía trước mau công thời điểm, bả vai còn không có đụng vào Hà Tu trên người, liền thấy Hà Tu đột nhiên chân trái uy một chút, tả đầu gối đánh cái cong, lập tức liền quỳ xuống đất thượng.</p>
+        <p>Khanh một tiếng.</p>
+        <p>“Ta đi?” Diệp Tư ngốc, buông cầu thò qua tới, “Không có việc gì đi ngồi cùng bàn? Như thế nào đất bằng còn có thể quăng ngã a?”</p>
+        <p>“Chân rút gân.” Hà Tu bình tĩnh nói, “Gần nhất học tập quá mệt mỏi, khả năng có điểm thiếu Canxi.”</p>
+        <p>“A……” Diệp Tư lập mặt nhăn lại, nghĩ thầm ngươi cũng không học tập a, hơn nữa học tập sẽ dẫn tới thiếu Canxi sao.</p>
+        <p>Nhưng hắn không mặt mũi nghi ngờ, lôi kéo Hà Tu đứng lên, ngồi xổm xuống nhìn mắt hắn đầu gối.</p>
+        <p>Nhìn không ra tới gì, quần jean che, là có thể thấy kia khối vải dệt dính điểm thổ.</p>
+        <p>“Liền khái một chút.” Hà Tu nói, “Cách quần nhiều nhất phá điểm da, không có việc gì.”</p>
+        <p>“Kia đi mua cái băng keo cá nhân dự bị.” Diệp Tư nói hướng siêu thị đi, đi rồi hai bước lại triều Hà Tu vẫy tay, “Một khối đi, siêu thị có đèn, ngươi nhìn xem phá không phá.”</p>
+        <p>“Kia bãi……” Hà Tu do dự hạ, Diệp Tư nói, “Đem cầu phóng bãi trung gian là được, mọi người đều minh bạch quy củ, cầu thay người chiếm tràng.”</p>
+        <p>“Hành.” Hà Tu gật gật đầu.</p>
+        <p>Hà Tu kiên trì không làm Diệp Tư loát hắn ống quần, cách quần nắn vuốt, phỏng chừng không có chuyện gì, vì thế liền băng keo cá nhân cũng tỉnh.</p>
+        <p>Hai người ở bán cửa hàng tổng cộng cũng không trì hoãn thượng một phút, đột nhiên nghe bên ngoài có một đám đột nhiên cắm vào tới nói chuyện cùng chơi bóng thanh, Diệp Tư trực giác không đúng, vén rèm lên ra bên ngoài vừa thấy, sân bóng làm người chiếm.</p>
+        <p>Bốn người, dẫn đầu cái kia còn ăn mặc thân xấu hoắc quân huấn phục, nhìn kỹ, Doãn Kiến Thụ.</p>
+        <p>Doãn Kiến Thụ nơi nơi nhìn nhìn, không thấy được người, nhấc chân một đá, nguyên bản đặt ở giữa sân chiếm cầu bị đá đến một bên, hắn chụp hai cái chính mình mang cầu, dựng thẳng lên một ngón tay kêu, “Tới, 2v2, ta cùng Triệu Bình một tổ, các ngươi hai cái……”</p>
+        <p>Lời nói còn chưa nói xong, liền cảm thấy nâng cầu cái tay kia một nhẹ, tiếp theo nháy mắt liền nghe thấy bang một tiếng bạo vang, bóng rổ trực tiếp bị từ trên tay chụp bay, dắt một cổ thật lớn bốc đồng đụng phải bóng rổ giá, lại đột nhiên văng ra, vẫn luôn lăn hơn 100 mét, thẳng đến lăn ra tầm mắt phạm vi.</p>
+        <p>Diệp Tư đứng ở hắn đối diện, “Trận này tử bị cầu chiếm, ngươi hạt?”</p>
+        <p>Doãn Kiến Thụ dùng sức nhìn chằm chằm hắn nhìn một hồi, thổn thức, “Ta đi, này không phải Tieba truyền giáo bá sao, ta không biết ta đoạt giáo bá bãi a.”</p>
+        <p>Đi theo hắn cùng nhau kia mấy cái nam sinh hắc hắc ha ha mà cười khai.</p>
+        <p>Diệp Tư trong lòng kỳ thật có điểm kinh ngạc. Tuy rằng hai ngày này cũng coi như có điểm chuẩn bị tâm lý, nhưng không thể không nói, tân cao một có chút người ngốc nghếch chỉ số vẫn là vượt qua hắn mong muốn.</p>
+        <p>Diệp Tư nhìn Doãn Kiến Thụ, đè nặng vừa nói nói: “Cho ngươi năm giây, mang theo ngươi bằng hữu lăn.”</p>
+        <p>Doãn Kiến Thụ nhướng mày, “Dựa vào cái gì a? Này sân bóng nhà ngươi khai? Ta tới thời điểm không gặp người a.”</p>
+        <p>“Ở Anh Trung, người rời đi mười phút cầu chiếm tràng là quy củ.” Diệp Tư tạm dừng hạ, “Ngươi vừa tới không biết quy củ ta không trách ngươi, đã biết về sau cho ta đường vòng đi.”</p>
+        <p>Doãn Kiến Thụ cười cười, “Diệp lão đại lớn như vậy quy củ a, ngươi này quy củ là lập cấp cao tam đi, ta cộng lại chúng ta cao một không về ngươi quản?”</p>
+        <p>Diệp Tư nhìn hắn, ngữ khí bình tĩnh, nhưng trong mắt lại lộ ra một cổ tàn nhẫn kính, hắn đem Doãn Kiến Thụ nhìn chằm chằm đến sắp thấu, mới nói nói: “Ngươi mới đến hai ngày, nhưng giống như đặc biệt tưởng đối cao tam khởi xướng khiêu chiến. Học tập, bóng rổ, còn có điều gọi giáo bá.”</p>
+        <p>Doãn Kiến Thụ nhún nhún vai, chưa nói là cũng chưa nói không phải, suy nghĩ một hồi lại cười, “Học tập ta liền không thượng quá tâm, bóng rổ tùy tay đánh tới chơi, không để bụng, giáo bá liền càng vô nghĩa, cùng mẹ nó ngốc bức dường như. Nhưng nữ sinh ta có điểm hứng thú, Anh Trung xinh đẹp nữ sinh không ít, nghe nói có không ít đều thích ngươi? Các ngươi ban cái kia, Thẩm Phi học tỷ, cũng thích ngươi?”</p>
+        <p>Diệp Tư chọn hạ mi, “Ngươi biết Thẩm Phi?”</p>
+        <p>“Giáo hoa a, học tập cũng hảo, vẫn là Hồ Tú Kiệt cô nương, ai không biết.” Doãn Kiến Thụ thổi cái huýt sáo, “Không bằng chúng ta làm giao dịch, ngươi đem Thẩm Phi số WeChat cho ta, ta về sau không đoạt ngươi bãi, chúng ta về sau giếng……”</p>
+        <p>Diệp Tư căn bản không nghe hắn phóng xong kia vòng thông thiên đại la kim cương thí, đi lên lôi kéo cổ cổ áo một quyền liền huy đi lên, nắm tay nện ở xương gò má thượng, vững chắc lập tức, Doãn Kiến Thụ lúc ấy liền nghiêng ngã xuống, nếu không phải hắn xách đối phương cổ áo, phỏng chừng người cũng đã bò.</p>
+        <p>“Làm gì!” Kia mấy cái cao một nóng nảy, cũng muốn đi lên, Diệp Tư một tay chỉ vào bọn họ, “Ai dám lại đây.”</p>
+        <p>Ba người đồng thời dừng lại xe, Diệp Tư một tay chỉ vào bọn họ ba, ánh mắt tàn nhẫn, “Nghĩ tới tới cũng đừng nghẹn, hôm nay chúng ta liền đem sự kết, tỉnh các ngươi này đó tiểu khoai tây từng bước từng bước không biết trời cao đất rộng.”</p>
+        <p>Không ai dám động, Diệp Thần quang huy sự tích một mình khởi động Anh Trung Tieba một nửa dán, liền tính không ra tàn nhẫn tay, cũng đủ uy hiếp lực.</p>
+        <p>Diệp Tư một lát sau mới rải khai tay, chờ Doãn Kiến Thụ đứng vững vàng mới nói nói: “Ly cao tam sân bóng, cao tam học tỷ, còn có Anh Trung bảng vàng danh dự, đều xa một chút. Cao tam học tập vội, ta không rảnh một lần một lần tìm ngươi nói chuyện.”</p>
+        <p>Hắn nói xoay người phải đi, tay mới vừa vói vào túi quần, lại nghe Doãn Kiến Thụ trào phúng mà hừ một tiếng, “Học tập? Liền ngươi như vậy, học cái rắm tập.”</p>
+        <p>Diệp Tư gợi lên khóe miệng quay đầu lại nhìn hắn, “Ngày mai cái ngươi cao tam các ba ba phân ban khảo dán thành tích, ngươi có thể tới tham quan một chút. Chờ 2 năm sau ngươi nếu là chưa đi đến tốt nhất ban, cũng có thể dư vị dư vị cao nhất thời xem nhân gia tiến hảo ban hâm mộ.”</p>
+        <p>Doãn Kiến Thụ cười lạnh một tiếng, “Ta trung khảo……”</p>
+        <p>“Ngươi trung khảo khảo 698.” Diệp Tư đánh cái ngáp, chỉ vào bên cạnh vừa rồi bế lên bóng rổ liền vẫn luôn đứng không ra tiếng Hà Tu nói, “Thấy ngươi học thần ba ba không? Ngươi học thần ba ba xem các ngươi kia bộ trung khảo đề, biết hắn nói như thế nào sao.”</p>
+        <p>Doãn Kiến Thụ trừng mắt hắn không hé răng, Diệp Tư cười, học Hà Tu ngày thường cái kia tức chết người không đền mạng bình tĩnh ngữ khí nói: “Vì cái gì khấu rớt 22 phân, trừ bỏ ngữ văn viết văn tất khấu vài phần ở ngoài, ta thật sự tìm không thấy còn có cái gì khấu phân điểm.”</p>
+        <p>“Này giới cao một chỉ số thông minh không được a.” Diệp Tư thở dài một tiếng, tay cất vào túi quần hướng Hà Tu thổi tiếng huýt sáo, Hà Tu ôm cầu bình tĩnh mà theo lại đây.</p>
+        <p>Đi ngang qua Doãn Kiến Thụ, Hà Tu dừng lại bước chân, đem cầu đưa cho hắn.</p>
+        <p>Doãn Kiến Thụ theo bản năng nhận lấy, sau đó vẻ mặt mờ mịt.</p>
+        <p>“Giúp chúng ta đem cầu còn.” Hà Tu nói, “Đừng còn chậm, vượt qua 0 điểm ngươi còn muốn giao phạt tiền.”</p>
+        <p>Diệp Tư đứng ở dưới bóng cây cười tủm tỉm mà chờ Hà Tu lại đây, Hà Tu bình tĩnh mà đi rồi hai bước đột nhiên lại dừng lại, quay đầu lại nói: “Năm nay thành phố H trung khảo toán học quá có lệ, nhưng không nghĩ tới ngươi toán học khấu chín phần còn có thể đệ nhất, ta hai ngày này vẫn luôn nghĩ việc này, nghĩ trăm lần cũng không ra.”</p>
+        <p>Hà Tu nghĩ nghĩ, “Giáo dục bắt buộc trình độ giảm xuống a.”</p>
+        <p>Hắn nói xong nhàn nhạt phiêu khai, bay tới Diệp Tư bên cạnh, Diệp Tư đã cười đến đỡ thụ thẳng không đứng dậy eo. Hà Tu nói: “Trở về ngủ sao.”</p>
+        <p>“Ngủ ngủ ngủ.” Diệp Tư một phen leo lên Hà Tu cổ, ôm hắn xoay người, nói thầm nói: “Ngồi cùng bàn, ta khi nào mới có thể tu luyện ra ngươi Balala trang bức công lực? Ngươi nói chuyện so với ta đánh người còn đau đâu, kia tôn tử đôi mắt đều khí tái rồi.”</p>
+        <p>Hà Tu bình tĩnh nói, “Hắn là thật sự kém, ta không khoa trương. Kém thả tự tin, lệnh người khó hiểu.”</p>
+        <p>“Đủ rồi.” Diệp Tư cười đến thẳng không dậy nổi eo, chụp ở Hà Tu trên vai, “Mau câm miệng.”</p>
+        <p>Tuần tam cả ngày, cao tam này một tầng hành lang không khí đều như là đọng lại. Buổi chiều thời điểm có người nhìn đến cao tam mấy cái ngành học tổ tổ văn phòng có lão sư qua lại thu thập đồ vật, lập tức hướng trở về báo tin, tức khắc tất cả mọi người giống không có người tâm phúc giống nhau mà hoảng.</p>
+        <p>“Các khải hoàn tư trang bị đã có định án.” Tiểu béo trầm ổn mà ngồi ở trên chỗ ngồi phân tích, “Phỏng chừng sẽ có tương đương một đám không muốn cùng cao tam lão sư đi xuống cao nhất cao nhị, ta nghe nói, thượng giới cao tam lão sư có một nửa đều xuống dưới mang chúng ta.”</p>
+        <p>“Ngươi nghe ai nói?” Thẩm Phi quay đầu lại nhìn hắn, “Đừng ở chỗ này dao động quân tâm, ta mẹ nói chúng ta ban biến động nhỏ nhất.”</p>
+        <p>“Chúng ta ban lão sư biến động nhỏ nhất, nhưng đồng học biến động đại a.” Tiểu béo chép chép miệng, “Ai nha, chỉ có thể lưu trước 50, phỏng chừng phải đi một đại sóng.”</p>
+        <p>“Ngươi câm miệng!” Hàng phía sau Trương Sơn Cái đột nhiên nổi giận, cuốn lên một cái giấy đoàn liền triều hắn ném lại đây, đáng tiếc có thất chính xác, trật chừng ba bốn mươi độ, nện ở trên mặt đất.</p>
+        <p>“Gấp cái gì a?” Tiểu béo quay đầu lại liếc hắn một cái, chậm rì rì nói, “Ngươi thứ tự như vậy ổn, biên nhi nghỉ ngơi đi, ta còn chưa nói cái gì đâu.”</p>
+        <p>“Ngươi vẫn luôn đang nói.” Diệp Tư nhìn hắn, “Hiện tại câm miệng, lại làm ta nghe thấy ngươi nói một chữ, ta đem ngươi miệng phùng thượng.”</p>
+        <p>Tiểu béo hừ một tiếng, chuyển qua đi đem trên bàn luyện tập sách hướng cặp sách tắc, động tĩnh không nhỏ, chung quanh người đều nhìn lại đây.</p>
+        <p>“Dù sao ta là khẳng định đến đi rồi.” Tiểu béo thở dài, “Lần trước ta bài 68, lần này khảo đến còn không bằng lần trước đâu. Các vị bốn ban các tinh anh, hạnh ngộ, tiểu đệ đi trước một bước.”</p>
+        <p>Hắn nói xong lời nói liền bế lên một chồng thư muốn ra bên ngoài dọn, chuẩn bị đi hành lang trên ban công trước chiếm cái địa phương, đợi lát nữa đằng đông tây phương liền. Hắn này một động tác, một đám phải đi cùng không xác định có thể hay không lưu nhân tâm thái cơ hồ băng rồi, trong phòng học lập tức liền có tiếng khóc, còn có tức muốn hộc máu tiếng mắng.</p>
+        <p>Diệp Tư triển khai lần trước phiếu điểm nhìn thoáng qua.</p>
+        <p>Niên cấp 49.</p>
+        <p>Kỳ thật hắn hẳn là cùng nhau đi theo hoảng, trong phòng này sẽ không có người so với hắn lăn ra bốn ban đại giới lớn hơn nữa, nhưng không biết sao lại thế này, hắn ngược lại trong lòng thực bình tĩnh.</p>
+        <p>Nhất định có thể tiến trước 50 sao, kỳ thật không nhất định, lần này phía trước đề đơn giản, chính hắn cũng có thể cảm giác ra tới.</p>
+        <p>Nhưng hắn chính là cảm thấy thản nhiên. Liền tính phân đi cái thứ hai ban, cũng còn có tiếp tục đi phía trước đuổi hy vọng, chỉ cần người tồn tại một ngày, liền có một ngày hy vọng, ai còn có thể nói từ bỏ không phải.</p>
+        <p>Chẳng qua, nếu đi rồi, ban ngày liền không thể cùng Hà Tu làm ngồi cùng bàn.</p>
+        <p>Diệp Tư đột nhiên trong lòng tư nhi một chút, có điểm hụt hẫng, quay đầu nhìn Hà Tu liếc mắt một cái.</p>
+        <p>Hà Tu chính nhìn hắn, mắt đen bình tĩnh, ở hắn vọng lại đây khi, đối hắn cong cong khóe môi.</p>
+        <p>“Ngươi đi không được.” Hà Tu nhẹ giọng nói, “Ta trong lòng hiểu rõ.”</p>
+        <p>Diệp Tư lôi kéo miệng cười cười, Hà Tu nói hiểu rõ, hắn thật liền đi theo kiên định một phân, giống như lưu lại mặt nhi một chút từ ba bốn thành, trực tiếp nhảy thăng đến □□ thành.</p>
+        <p>“Yết bảng!”</p>
+        <p>Đột nhiên có người ở hành lang kêu, “Ta di động chụp ảnh!”</p>
+        <p>Trong lớp một tổ ong đều ra bên ngoài dũng, trước sau môn thiếu chút nữa bị tễ bạo, Diệp Tư một cái không lưu ý, cảm giác có người trực tiếp từ chính mình đầu trên đỉnh bay đi ra ngoài, thân nhẹ như yến, dùng ra nhất chiêu giang hồ thất truyền đã lâu khinh công đầu trên đỉnh phiêu.</p>
+        <p>“Thứ 50! Thứ 50 là ai?!” Tiểu béo thân cổ quát.</p>
+        <p>Diệp Tư trong lòng một đốn, không có quay đầu lại, nhưng lại dừng nguyên bản động tác.</p>
+        <p>“Vương Kha Nhiên!” Người kia rống to, “Là các ngươi bốn ban!”</p>
+        <p>Diệp Tư trong lòng nháy mắt giống như không một chút, nhưng hắn vừa nhấc đầu, lại thấy quay đầu sau này môn xem Vương Kha Nhiên lập tức vành mắt đỏ, liền gần như bản năng đối Vương Kha Nhiên cười cười.</p>
+        <p>Để lại, khá tốt.</p>
+        <p>Vương Kha Nhiên ghé vào trên bàn khóc ra tới, nàng ngồi cùng bàn là cái năm học tiền mười, kích động mà ôm nàng liều mạng xoa bối, xoa đến cách một tầng giáo phục đều có thể thấy nữ hài tử nội y mang xốc mỗi người, nhưng cũng không ai chú ý tới.</p>
+        <p>Diệp Tư thu hồi tầm mắt, nhẹ nhàng liếm khóe môi.</p>
+        <p>“46 đến 49, La Hàn, Từ Hân, Trương Sơn Cái, còn có tam ban Hứa Sam Nguyệt.” Hành lang liên tục ở báo niên cấp đại bảng, Diệp Tư ngồi ở trên chỗ ngồi cầm một chi bút nghe, nghe xong 46 đến 49, lại nghe xong 41 đến 45, vẫn luôn đều không có hắn.</p>
+        <p>Nghe xong 36 đến 40 kia tổ lúc sau, Diệp Tư cơ bản đã hiểu rõ, hắn quay đầu nhìn Hà Tu, dừng một chút, “Ta khả năng đến đi rồi.”</p>
+        <p>“Ta……” Diệp Tư không biết còn có thể nói cái gì, có thứ gì đột nhiên chắn ở cổ họng, đổ đến hắn đặc biệt muốn mắng người, hắn cúi đầu đào án thư đường kia đôi lung tung rối loạn bài thi, mới vừa đem bài thi túm ra tới một cái giác, một bàn tay đột nhiên ấn ở trên tay hắn.</p>
+        <p>Hà Tu lòng bàn tay rất năng, so ngày thường năng, gắt gao mà ấn hắn.</p>
+        <p>“Lại nghe một tổ.” Hà Tu hít sâu một hơi, lại đè nặng thanh âm nói, “Ta cảm thấy ngươi còn có khả năng lại đi phía trước.”</p>
+        <p>Nào còn có khả năng a, Diệp Tư chính mình đánh giá quy trình tổng 260 nhiều, nhưng trong ban lý tổng đánh giá đến 200 bảy trở lên liền hơn ba mươi cái, toán học cũng không sai biệt lắm, lại nói, học tập tốt cũng không riêng đều ở bốn ban a, còn có khác ban đâu.</p>
+        <p>Diệp Tư tưởng giật nhẹ khóe miệng tự giễu một câu, nhưng há mồm chưa nói ra tiếng tới, chỉ có thể từ bỏ, cúi đầu dùng không bị ấn một cái tay khác tiếp theo ra bên ngoài xả bài thi.</p>
+        <p>“33 Văn Thư Lôi, 32 Mao Mạn Ngữ, 31 Hạ Mân…… 30, Diệp Tư!” Cửa báo phiếu điểm người nọ đột nhiên ngao một giọng nói, quát: “Diệp Thần lại đi phía trước! Ngưu bức a!”</p>
+        <p>Diệp Tư đột nhiên quay đầu lại, một phen đẩy ra tễ ở phía sau cửa người, khó có thể tin hỏi, “Ta? 30?”</p>
+        <p>“Đúng vậy.” Người nọ cúi đầu đem ảnh chụp phóng đại một chút, “Ngọa tào, ngươi ngữ văn 142? Năm học tối cao phân! Viết văn đến rất cao a?”</p>
+        <p>Ngữ văn 142, phỏng chừng viết văn chính là 52.</p>
+        <p>Diệp Tư ngốc một chút, nửa ngày đại não đều là chỗ trống, qua một hồi lâu mới có thể cảm giác được Hà Tu ở kêu hắn.</p>
+        <p>Hà Tu ánh mắt cũng có chút mờ mịt, “Viết văn viết cái gì?”</p>
+        <p>Diệp Tư sửng sốt hơn nửa ngày mới nhớ lại, “A” một tiếng, mắt nhìn phía trước nửa ngày cũng chưa nhớ tới nên nói cái gì.</p>
+        <p>Hà Tu làm học thần bất khuất kiên cường kính nhi lên đây, lại dùng khuỷu tay đâm hắn, “Viết cái gì?”</p>
+        <p>“Ta, liền viết……” Diệp Tư sửa sửa hỗn độn mạch não, nói: “Không phải bạn cùng phòng cấp bạn cùng phòng đầu độc sao?”</p>
+        <p>“A.” Hà Tu gật đầu, “Sau đó đâu?”</p>
+        <p>“Ta liền nói không thể như vậy làm a.” Diệp Tư do dự nói, “Không viết cái gì đặc biệt, ta nghị luận thật sự thấu không đủ 800 tự, liền ấn ngươi phía trước kịch bản, kẹp tự kẹp nghị một chút.”</p>
+        <p>Liền…… Liền đơn giản mà, ca tụng một chút chính mình liền giường bạn cùng phòng.</p>
+        <p>Còn lấy chính mình liền giường bạn cùng phòng vì lệ, trình bày và phân tích một chút đương đại hữu ái phòng ngủ tinh thần nên là cái dạng gì.</p>
+        <p>Mẹ nó.</p>
+        <p>Diệp Tư đột nhiên cảm thấy gương mặt phát sốt, đem mới vừa móc ra tới bài thi mấy quyền dỗi về án thư đường, quát: “52 liền 52, ngươi là chưa thấy qua 52 viết văn sao, có cái gì nhưng hỏi a!”</p>
+        <p>Tác giả có lời muốn nói: Cho ta xem thảm trứng viết văn. Phật trứng đứng ở tác giả trước mặt, vươn tay.</p>
+        <p>Không cho, tác giả liếc hắn một cái, xoay người.</p>
+        <p>Phật trứng lại vòng đến tác giả trước mặt, liền xem một cái.</p>
+        <p>Hắn không cho ngươi xem, ta không thể giúp ngươi. Tác giả thở dài, ngươi đừng ở ta trước mắt vòng, 108 vòng, ngươi không vựng a?</p>
+        <p>Ta lòng đỏ trứng đều cùng lòng trắng trứng dung. Phật trứng thở dài, nhưng ta muốn nhìn a, ta muốn nhìn thảm trứng viết như thế nào ta.</p>
+        <p>Hắn viết ngươi. Tác giả thanh thanh giọng nói, là cái soái trứng.</p>
+        <p>Thật sự? Phật trứng ánh mắt sáng lên.</p>
+        <p>Giả, tác giả nói.</p>
+        <p>Hắn liền viết ngươi là trứng trong ổ hắn thích nhất trứng, tác giả nghĩ nghĩ lại bổ sung nói.</p>
+        <p>..—</p>
+        <p>Phân ban khảo này giai đoạn kết thúc lạp!</p>
+        <p>Mặt sau hai cái nhi tử lại cho ta nỗ lực hơn kết giao ngao ngao ngao! Cùng với Diệp Tư nỗ lực học tập a!</p>
+        <p>Đại gia ngày mai thấy .</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- END-AUTO-INSERT-28 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong27.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong29.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "sa-dieu-hoc-ba-he-thong";
+const NOVEL_TITLE = "Sa Điêu Học Bá Hệ Thống";
+const CHAPTER_TITLE = "Chương 28: Lao tới phân ban khảo!";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

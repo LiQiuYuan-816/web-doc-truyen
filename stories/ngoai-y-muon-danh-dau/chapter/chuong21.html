@@ -1,0 +1,883 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 21</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ngoài Ý Muốn Đánh Dấu
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 21</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong20.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong22.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-21 -->
+
+
+        <p>2 nguyệt 2 hào hôm nay, Thiên Toàn tập đoàn chính thức quan tuyên 《 gấp giấy 》 lập hạng quay chụp tin tức.</p>
+        <p>Tuyên truyền bộ sáng lập một cái “Gấp giấy đoàn phim” quan hơi, hơn nữa ở quan hơi công bố mấy cái quan trọng nhân vật thử kính thời gian địa điểm, cùng với mặt khác cùng tổ diễn viên thông báo tuyển dụng quảng cáo.</p>
+        <p>Trình Hạ sáng tinh mơ mở ra di động xoát Weibo, liền thấy trang đầu lướt qua này đến từ “Gấp giấy đoàn phim” thông cáo, trong đó điểm tán nhiều nhất một cái, là tác giả chanh thảo chuyển phát.</p>
+        <p>Chanh thảo là mấy năm nay toát ra tới tân duệ tác giả, danh khí không tính đặc biệt đại, nhưng bởi vì viết thư phong cách tươi mát ấm áp, thực am hiểu nhân vật tâm lý đắp nặn, cũng có một đám cố định fans. Hiển nhiên, Thiên Toàn tuyên truyền bộ bên kia liên hệ thượng nguyên tác giả, tác giả đồng ý phối hợp tuyên truyền, liền xoay 《 gấp giấy 》 muốn chính thức quay chụp tin tức.</p>
+        <p>Tin tức này phía dưới, nhắn lại đã có vài ngàn.</p>
+        <p>. tất cả đều đang mắng.</p>
+        <p>“Ta thiên, ta phòng ở muốn sụp!”</p>
+        <p>“Không ai có thể diễn hảo trong lòng ta Tần năm, thỉnh không cần huỷ hoại ta Tần năm!”</p>
+        <p>“Thiên Toàn xuất phẩm? Ta thảo, nhà bọn họ chụp tất cả đều là cẩu huyết lôi kịch, kêu trời khóc đất ngược tâm ngược thân thật là đủ rồi.”</p>
+        <p>“Gấp giấy như vậy tiểu tươi mát kịch như thế nào chụp? Lại muốn thêm một đống không thể hiểu được kẻ thứ ba đi, ghê tởm.”</p>
+        <p>“Tuyên truyền nói là tuyển tân nhân, tân nhân có thể diễn hảo như vậy phức tạp nhân vật sao, ta dù sao không tin.”</p>
+        <p>“Tác giả tưởng tiền tưởng điên rồi sao? Này bộ kịch đều phải bán bản quyền?”</p>
+        <p>Nào đó thư phấn thật sự quá hung.</p>
+        <p>Trình Hạ nhưng thật ra có thể lý giải thư phấn cảm thụ, hắn xem nguyên tác thời điểm cũng phi thường thích thư trung nhân vật, một ngàn cá nhân trong lòng có một ngàn cái Hamlet, mỗi người trong tưởng tượng vai chính đều không giống nhau, cho nên, đại gia rất khó tiếp thu đem cảm nhận trung thích người trong sách cụ tượng hóa, đây cũng là tiểu thuyết cải biên cần thiết muốn gặp phải một cái khảm.</p>
+        <p>Trình Hạ cũng không cho rằng chính mình liền rất phù hợp tiểu thuyết vai chính “Tần năm” hình tượng, nhưng hắn có tin tưởng diễn hảo nhân vật này. Trong khoảng thời gian này, hắn mỗi ngày đều đang xem thư, nhìn ít nhất năm biến, thư trung mỗi một cái cảnh tượng, mỗi một đoạn đối thoại, hắn đều đem chính mình đại nhập Tần năm, nghiêm túc tự hỏi nếu chính mình là Tần năm nói hẳn là như thế nào biểu đạt cảm xúc, dùng cái dạng gì ngữ khí cùng biểu tình?</p>
+        <p>Thậm chí ở trong mộng, hắn còn biến thành Tần năm, đã trải qua Tần năm cả đời.</p>
+        <p>Hắn thực thích nhân vật này, cho nên liền tính các độc giả mắng đến lại hung, hắn cũng muốn thử xem xem.</p>
+        <p>Trình Hạ thở sâu mở ra chính mình Weibo.</p>
+        <p>Làm hắn ngoài ý muốn chính là, hắn Weibo fans từ ngày hôm qua một cái trướng vài trăm cái. Vốn tưởng rằng là Nhan tỷ cho hắn mua cương thi phấn, kết quả góc trên bên phải xuất hiện rất nhiều tin nhắn, click mở vừa thấy, tất cả đều là Trần Di Quân fans.</p>
+        <p>“Ta từ quân tỷ bên kia tìm hiểu nguồn gốc lại đây, là Thiên Toàn tân thiêm tiểu ca ca sao? Lớn lên rất soái a!” “Quân tỷ phấn tới đánh tạp, quân tỷ chú ý ngươi, ngươi cùng nàng quan hệ hẳn là không tồi đi? Cố lên!” “Tiểu soái ca, ta thích ngươi nhan, lục soát một chút giống như ngươi còn không có diễn quá cái gì kịch, xem trọng ngươi nga!”</p>
+        <p>Trình Hạ: “…………”</p>
+        <p>Minh tinh hiệu ứng có bao nhiêu đáng sợ, hắn hôm nay xem như cảm nhận được.</p>
+        <p>Trần Di Quân bất quá là thuận tay chú ý hắn, những cái đó cuồng nhiệt các fan liền tìm hiểu nguồn gốc, sờ đến hắn Weibo tới.</p>
+        <p>Trần Di Quân chịu chú ý Trình Hạ thuyết minh hai người quan hệ không tồi, cho nên, Trần Di Quân fans đối Trình Hạ thái độ phi thường lễ phép ôn hòa, đại bộ phận đều tỏ vẻ Trình Hạ lớn lên đẹp, sau đó nói vài câu cổ vũ nói.</p>
+        <p>Trình Hạ khách khí mà trở về mấy cái tin nhắn, mở ra trang đầu, phát hiện Bùi tổng cũng chuyển phát 《 gấp giấy 》 tuyên truyền.</p>
+        <p>Nhớ tới người đại diện nói không cần tay hoạt điểm tán, vì thế hắn yên lặng tắt đi đại hào Weibo, sau đó dùng “Ngày mùa hè cam” tiểu hào chú ý Bùi tổng cùng “Gấp giấy web drama phía chính phủ Weibo” . tiểu hào điểm tán nên sẽ không có người phát hiện đi?</p>
+        <p>Mấy ngày kế tiếp, Trình Hạ ngủ thực không an ổn, hắn luôn là thường xuyên mà mơ thấy thư trung vai chính Tần năm.</p>
+        <p>Tần năm từ nhỏ gia cảnh bần hàn, hắn mười tuổi năm ấy cha mẹ ở một hồi tai nạn xe cộ trung qua đời, hắn mỗi ngày tan học sau đều sẽ đi làm công kiếm tiền nuôi sống chính mình, như vậy nghèo khổ gia đình lớn lên hài tử, trên người lại không hề có người nghèo keo kiệt, tự ti, chẳng sợ ăn mặc tẩy đến trắng bệch quần áo cũ, hắn cũng thản nhiên tự nhiên, ánh mặt trời lạc quan, trên mặt luôn là mang theo trong sáng tươi cười.</p>
+        <p>Hắn có cái thân thể không tốt lắm muội muội kêu Tần nguyệt, hắn ngày thường chẳng những muốn làm công kiếm tiền, chiếu cố muội muội, còn phải trừu thời gian học tập, ở như vậy khó khăn điều kiện hạ, hắn thành tích ở trong ban như cũ cầm cờ đi trước, thường xuyên đã chịu lão sư khen ngợi, có thể thấy được hắn có bao nhiêu nỗ lực khắc khổ.</p>
+        <p>Tần năm bởi vì diện mạo soái khí, thành tích ưu dị, ở trường học thực chịu các bạn học thích. Hắn tính cách thiên Alpha, hơn nữa phân hoá tương đối trễ, vẫn luôn không có biểu hiện ra bất luận cái gì Omega đặc thù, đại gia ( bao gồm chính hắn ) đều cho rằng hắn là cái Alpha. Cao một, cao nhị kia hai năm còn có không ít Omega tìm hắn thông báo, đều bị hắn uyển cự, bởi vì hắn căn bản không có thời gian yêu đương.</p>
+        <p>Không ai nghĩ đến, cao tam thời điểm, 18 tuổi Tần họp thường niên phân hoá thành một cái Omega.</p>
+        <p>Thư trung một vị khác vai chính Lục Phong Dương là cái không học vấn không nghề nghiệp phú nhị đại, nhưng vị này phú nhị đại không giống giống nhau vườn trường trong sách A như vậy thường xuyên tìm vai chính phiền toái, bởi vì khai giảng ngày đó hắn cùng mấy cái lưu manh đánh nhau, bị đi ngang qua vai chính giúp một phen, hắn liền cùng vai chính hảo huynh đệ tương xứng, nơi chốn che chở vai chính.</p>
+        <p>Lục Phong Dương học tập quá kém, thường xuyên tìm vai chính chép bài tập, vai chính mỗi lần đều không cho hắn sao, một hai phải cho hắn giảng đề. Hai người ở chung hình thức không có như vậy nhiều ngược luyến tình thâm, ngược lại nhẹ nhàng khôi hài.</p>
+        <p>Tần năm ở không phân hoá phía trước liền rất thích Lục Phong Dương, phân hoá sau, loại cảm giác này càng thêm mãnh liệt, nhưng Lục Phong Dương tên ngốc này còn mỗi ngày đắp bờ vai của hắn một ngụm một câu hảo anh em, Tần năm đành phải đem loại này thích trộm giấu ở trong lòng.</p>
+        <p>Hắn gia đình bối cảnh không cho phép hắn cùng Lục Phong Dương đi đến cùng nhau.</p>
+        <p>Mặt ngoài, Tần năm tính cách lạc quan, trên mặt luôn là mang theo tươi cười, nhưng thực tế thượng, hắn sinh hoạt thượng vất vả gian nan, cảm tình thượng nói không nên lời ái mộ, này hết thảy đều che giấu dưới ánh nắng tươi cười dưới. Thậm chí Lục Phong Dương nói với hắn khởi lớp bên cạnh cái kia xinh đẹp Omega khi, hắn cũng sẽ cười phụ họa nói: Là thật xinh đẹp, cùng ngươi rất xứng.</p>
+        <p>Chỉ có ở xoay người khi, hắn trong mắt mới có thể hiện lên một tia mất mát cùng ảm đạm.</p>
+        <p>Như vậy vai chính làm người đặc biệt đau lòng.</p>
+        <p>Đương nhiên 《 gấp giấy 》 cuối cùng kết cục là tốt, Lục Phong Dương chỉ là trì độn, cũng không tra, sau lại phát hiện Tần năm bí mật, thích thượng Tần năm, thậm chí bị Tần năm nỗ lực sở ảnh hưởng, quyết định hăng hái hướng về phía trước, hảo hảo học tập.</p>
+        <p>Tiểu thuyết kết cục hai người thi đậu cùng sở đại học, Tần năm đem chính mình thân thủ chiết giấy đưa cho Lục Phong Dương. Gấp giấy là hắn từ nhỏ yêu nhất chơi trò chơi, mỗi khi tâm phiền ý loạn, thương tâm khổ sở thời điểm, Tần năm liền sẽ lấy ra một trương giấy chiết chơi.</p>
+        <p>Lục Phong Dương đem giấy mở ra, bên trong dùng đoan chính chữ viết viết một cái nguyện vọng.</p>
+        <p>. ta tưởng cùng Lục Phong Dương thi đậu cùng sở đại học, về sau cũng vẫn luôn ở bên nhau.</p>
+        <p>Thiếu niên dưới ánh mặt trời tươi cười xán lạn.</p>
+        <p>Lục Phong Dương nhìn như vậy lóa mắt hắn, rốt cuộc nhịn không được, đem đối phương gắt gao mà ôm vào trong ngực.</p>
+        <p>Rất nhiều Alpha cùng Omega vì vai chính tiểu thuyết không phải ngươi đem ta kéo vào rừng cây nhỏ gặm một ngụm, chính là ta đem ngươi ấn ở trên tường thân…… Ở đại lượng lấy “Đánh dấu” vì mánh lới vườn trường tiểu thuyết trung, chanh thảo này bổn 《 gấp giấy 》 lấy Tần năm trải qua làm chủ tuyến, từ đầu tới đuôi đều thực nước trong, phi thường chú trọng hai cái vai chính tình cảm cùng trưởng thành miêu tả.</p>
+        <p>Hai người cũng không có quá kịch liệt thân thiết diễn, nhưng cuối cùng ở bên nhau khi, lại có thể làm người đọc hiểu ý cười. Nguyên tác chỉnh thể phong cách nhẹ nhàng ấm áp, trung gian có chút tương đối ngược cốt truyện, cũng không phải cái loại này tê tâm liệt phế ngược luyến tình thâm, mà là làm người cảm giác được cái mũi lên men, hốc mắt ướt át nhàn nhạt chua xót.</p>
+        <p>Tần năm nhân vật này thật không tốt nắm chắc, mặt ngoài ánh mặt trời lạc quan, nội tâm giãy giụa bất an, ánh mặt trời quá mức sẽ có vẻ vô tâm không phổi, giãy giụa quá độ liền có vẻ do dự không quyết đoán. Dùng như thế nào ánh mắt, động tác tới biểu đạt cảm xúc, Trình Hạ gần nhất cân nhắc thật lâu.</p>
+        <p>Liên tục mấy ngày đều mơ thấy Tần năm, hắn cảm thấy chính mình tựa hồ có chút nhập diễn.</p>
+        <p>Liền ở như vậy trạng thái hạ, 2 nguyệt 7 hào lặng yên đã đến.</p>
+        <p>Trình Hạ sáng tinh mơ 7 giờ rời giường rửa mặt đánh răng, vội vàng ăn qua bữa sáng, thay đổi thân sạch sẽ áo lông, bên trong xuyên kiện sơ mi trắng, còn lấy thượng một kiện phía trước chụp MV khi tài trợ thương cho hắn giáo phục, bên ngoài tròng lên áo lông vũ liền tới đến Thiên Toàn chờ đợi.</p>
+        <p>Thiên Toàn cổng lớn đầu người kích động, bắt mắt vị trí dán một trương “Tham gia 《 gấp giấy 》 thử kính diễn viên, thỉnh cưỡi 3 hào thang máy thẳng tới 17 lâu” to lớn poster.</p>
+        <p>Tuy rằng lần này thử kính không phải cả nước hải tuyển, nhưng “Thiên Toàn chế tác” cái này danh hào đánh ra đi, như cũ có không ít nghệ sĩ cùng loại nhỏ công ty quản lý mua trướng, rốt cuộc Thiên Toàn là giới giải trí một cây đại thụ, có thể đáp thượng này đi nhờ xe, nói không chừng liền phát hỏa đâu?</p>
+        <p>Tham dự thử kính người cư nhiên xếp thành hàng dài.</p>
+        <p>Trình Hạ hoảng sợ, vội vàng từ cửa hông đi vào tìm người đại diện.</p>
+        <p>Chu Nhan ở lầu một chờ bọn họ, chờ chu gia văn, Tiết linh, tề tiểu thiên cùng Trình Hạ toàn bộ đến đông đủ, nàng mới đưa bốn người mang đi chỗ ngoặt chỗ, thấp giọng dặn dò nói: “Các ngươi mấy cái, đợi lát nữa đi lên lúc sau trước rút thăm, trừu đến mấy hào liền mấy hào đi vào. Ta nghe chương trợ lý truyền đến tin tức, hôm nay đoàn phim chủ sang tất cả đều ở đây, liền tác giả cũng tự mình lại đây.”</p>
+        <p>Bốn cái tân nhân nghe đến đó, hơi hơi trừng lớn đôi mắt, trong lòng đều có chút khẩn trương.</p>
+        <p>Chu Nhan ngữ tốc bay nhanh mà nói: “Nguyên tác tác giả không tham dự kịch bản cải biên, nhưng sẽ cho đạo diễn một ít ý kiến, cuối cùng ai diễn cái nào nhân vật, vẫn là từ đạo diễn tới định. Này bộ kịch đạo diễn là Lưu Học Nghị, các ngươi khả năng chưa từng nghe qua hắn, hắn không tính đặc biệt nổi danh, nhưng đối diễn viên yêu cầu phi thường cao. Dựa đi cửa sau linh tinh cũng đừng suy nghĩ, muốn đả động hắn, trừ phi ngươi kỹ thuật diễn quá quan.”</p>
+        <p>Nàng ánh mắt đảo qua trước mặt bốn người, dứt khoát nói: “Đi thôi. Đừng quá khẩn trương, bình thường phát huy là được.”</p>
+        <p>Trình Hạ tại bên người cầm quyền, ngoan ngoãn đi theo người đại diện phía sau lên lầu.</p>
+        <p>Thiên Toàn 17 lâu đã bị toàn bộ đằng không, chuyên môn bố trí ra một cái thử kính nơi, bên ngoài hành lang có hai bài ghế dựa cung người chờ đợi, bên cạnh còn có vài cái trống không văn phòng cung người nghỉ ngơi.</p>
+        <p>Thử kính hiện trường cửa sau có đánh dấu chỗ cùng rút thăm hộp, Trình Hạ đi theo người đại diện đi qua đi.</p>
+        <p>Rút thăm chỗ nữ sinh là C tổ trợ lý, thấy bọn họ liền cười nói: “Thử kính Lục Phong Dương, Tần nguyệt, Triệu Lạc trừu cái hộp này, thử kính Tần năm, trương hiểu hằng, từ phi trừu bên này.”</p>
+        <p>Này sáu cái nhân vật, cũng là 《 gấp giấy 》 trung xỏ xuyên qua trước sau vai chính cùng quan trọng vai phụ.</p>
+        <p>Nhan tỷ mang chu gia văn là Alpha, tuyển tiểu thuyết trung “Lục Phong Dương” nhân vật này, hắn trừu đến 10 hào. Tiết linh tuyển chính là vai chính muội muội “Tần nguyệt” nhân vật này, trừu 26 hào. Tề tiểu thiên cùng Trình Hạ đều tuyển “Tần năm”, người trước trừu đến 67 hào, Trình Hạ trừu đến 98 hào, đặc biệt dựa sau.</p>
+        <p>Muội tử thấy bọn họ dãy số liền nhắc nhở nói: “Buổi sáng là 1-50 hào, buổi chiều là 50 hào về sau, nếu không các ngươi hai cái đi về trước, buổi chiều lại qua đây đi?”</p>
+        <p>Chu Nhan cũng nói: “Trình Hạ, tề tiểu thiên, các ngươi muốn đi về trước sao?”</p>
+        <p>Trình Hạ cười lắc đầu: “Không được, ta ở chỗ này chờ đi, thuận tiện bối bối kịch bản.”</p>
+        <p>Tề tiểu thiên vốn định trở về, nghe đến đó cũng nói: “Kia ta cũng tại đây chờ kết quả đi.”</p>
+        <p>..—</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- END-AUTO-INSERT-21 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong20.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong22.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "ngoai-y-muon-danh-dau";
+const NOVEL_TITLE = "Ngoài Ý Muốn Đánh Dấu";
+const CHAPTER_TITLE = "Chương 21";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

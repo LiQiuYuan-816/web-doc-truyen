@@ -1,0 +1,883 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 15</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ngoài Ý Muốn Đánh Dấu
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 15</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong14.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong16.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-15 -->
+
+
+        <p>Thu được Trần Di Quân tin tức sau, Trình Hạ cũng không có vội vã hồi phục, hắn trước cấp người đại diện Chu Nhan gọi điện thoại, tưởng biết nói người đại diện ngày mai như thế nào an bài.</p>
+        <p>Điện thoại một chuyển được, Chu Nhan liền vô cùng lo lắng mà nói: “Trình Hạ, ta vừa định tìm ngươi. Trần Di Quân người đại diện đã liên hệ quá ta, nói là ngày mai thí trang, định tạo hình, MV muốn ở một vòng trong vòng quay chụp hoàn thành. Nàng bên kia nhật trình thực đuổi, chúng ta chỉ có thể tận lực phối hợp. Ngươi ngày mai có không có vấn đề?”</p>
+        <p>Chu Nhan một bên dùng máy tính mặt bàn WeChat bản cùng đối phương người đại diện câu thông, một bên cùng Trình Hạ gọi điện thoại.</p>
+        <p>Trình Hạ không chút do dự gật đầu: “Ta không thành vấn đề, Nhan tỷ ngài an bài đi.”</p>
+        <p>Chu Nhan ở WeChat gõ hạ mấy chữ hồi phục “Không thành vấn đề”, ngay sau đó nói: “Trần Di Quân người khá tốt, chủ động đưa ra phải cho ngươi 2 vạn diễn xuất phí, ta muốn hỏi một chút ngươi ý kiến, chúng ta muốn hay không này số tiền?”</p>
+        <p>Trình Hạ cười nói: “Tiền liền từ bỏ đi? Di quân tỷ chịu mang ta cái này tân nhân, ta hẳn là cảm tạ nàng mới đúng, muốn diễn xuất phí có vẻ quá mức keo kiệt, còn không bằng hữu nghị biểu diễn. Huống chi ta là nàng fans, lần này tương đương với đi theo nàng thơm lây. Nàng nếu là tuyển người khác, ta liền không cái này lộ mặt cơ hội.”</p>
+        <p>Chu Nhan vui mừng gật đầu: “Ngươi có thể minh bạch liền hảo. Ngày mai sớm một chút lên, 9 giờ rưỡi đến công ty tìm ta.”</p>
+        <p>“Tốt Nhan tỷ, ngày mai thấy.”</p>
+        <p>Cắt đứt điện thoại lúc sau, Trình Hạ lại lễ phép mà cấp Trần Di Quân hồi phục tin tức, biểu đạt một chút cảm tạ.</p>
+        <p>***</p>
+        <p>Lúc này, Thiên Toàn tập đoàn tầng cao nhất văn phòng.</p>
+        <p>Bùi Thiệu Trạch thấp giọng hỏi gõ cửa tiến vào Chương Phàm: “Lưu đạo bên kia nói như thế nào?”</p>
+        <p>Chương Phàm lấy quá một phần hợp đồng đưa cho hắn: “Ta vừa rồi cùng Lưu đạo gọi điện thoại xác nhận quá, ước đến ngày mai buổi sáng 11 giờ rưỡi, ở long hoa cao ốc 3 lâu tiệm cơm Tây 1 hào phòng cùng ngài mặt nói.”</p>
+        <p>Bùi Thiệu Trạch gật gật đầu, tiếp nhận Chương Phàm truyền đạt hợp đồng cẩn thận lật xem.</p>
+        <p>Hắn không thích ướt át bẩn thỉu, nếu ngày mai gặp mặt sau cảm thấy thích hợp, hiện trường liền có thể đem hợp đồng giao cho đối phương mau chóng định ra tới. Chỉ có định rồi đạo diễn, biên kịch, mới có thể xác định diễn viên, nắm chặt thời gian khởi động máy quay chụp.</p>
+        <p>Lưu đạo tên đầy đủ Lưu Học Nghị, là Học viện điện ảnh biên đạo hệ tốt nghiệp tân nhân, trước mắt 26 tuổi, ở đạo diễn trung xem như tương đối tuổi trẻ. Bùi Thiệu Trạch tìm hắn một là bởi vì hắn giá cả lợi ích thực tế, thượng bộ kịch đã đóng máy, thời gian thượng thực đầy đủ. Đại bài đạo diễn thu phí quý không nói, hơn nữa cũng chưa đương kỳ.</p>
+        <p>Thứ hai, Lưu Học Nghị mấy năm gần đây ở internet kịch lĩnh vực thập phần sinh động, quay chụp tam bộ vốn nhỏ thanh xuân phim thần tượng, tuy rằng danh khí không lớn, chụp kịch cũng không có gì bọt nước, nhưng hắn chụp kịch phong cách ấm áp, phim ảnh diễn đàn cho điểm đều ở 8 phân trở lên, cũng không phải làm ẩu, hắn đối web drama chất lượng trấn cửa ải phi thường nghiêm khắc.</p>
+        <p>Vị này đạo diễn, là Bùi Thiệu Trạch nhìn trên trăm vị đạo diễn tư liệu sau mới định ra tới.</p>
+        <p>Chương Phàm gần nhất cùng Bùi Thiệu Trạch cùng nhau tăng ca, đối Bùi tổng chuyên nghiệp vô cùng bội phục. Mỗi một cái đạo diễn tư liệu hắn đều phải nhìn kỹ, còn sẽ ở trên mạng xem đánh giá, thậm chí tự mình click mở bọn họ qua đi quay chụp tác phẩm tiêu biểu phẩm tới xem đạo diễn phong cách.</p>
+        <p>Tra tư liệu thái độ, liền cùng nghiên cứu sinh viết luận văn tốt nghiệp giống nhau nghiêm túc.</p>
+        <p>Từ bao cỏ phú nhị đại biến thành nghiêm cẩn lưu loát sự nghiệp hình nam nhân, trước mặt Bùi Thiệu Trạch quả thực như là thoát thai hoán cốt.</p>
+        <p>Bùi Thiệu Trạch đem hợp đồng đưa cho Chương Phàm: “Đi pháp vụ đóng dấu, ngày mai buổi sáng 9 giờ cùng tài xế tới tân hồ biệt thự tiếp ta, ngươi cùng ta cùng đi thấy Lưu đạo.” Hắn giương mắt nhìn về phía trước mặt trợ lý, hòa nhã nói: “Mấy ngày nay vất vả, hôm nay trước tiên tan tầm đi.”</p>
+        <p>Chương Phàm trong lòng vui vẻ: “Cảm ơn Bùi tổng!”</p>
+        <p>***</p>
+        <p>Trình Hạ trở lại chung cư liền bắt đầu xem tiểu thuyết nguyên tác, kết quả quá mê mẩn, vẫn luôn thấy được đêm khuya. Hắn buông thư, đi đến cửa sổ sát đất trước xoa xoa đau nhức bả vai.</p>
+        <p>Bỗng nhiên, hắn ánh mắt dừng ở nghiêng đối diện một phiến trên cửa sổ .</p>
+        <p>Thiên Toàn cao ốc 33 lâu.</p>
+        <p>Bởi vì là tan tầm thời gian, chỉnh đống Thiên Toàn cao ốc tất cả đều tắt đèn, bởi vậy, 33 lâu văn phòng ánh đèn liền phá lệ thấy được.</p>
+        <p>Văn phòng nội người tựa hồ vì thông khí, mở ra một phiến cửa sổ, Trình Hạ thấy thân hình cao lớn nam nhân từ bàn làm việc trước đứng dậy đi bên cạnh đổ chén nước, sau đó bưng cái ly đi vào bên cửa sổ.</p>
+        <p>Cách một cái phố hắn thấy không rõ đối phương mặt, nhưng chỉ bằng vào dáng người phán đoán, hắn liếc mắt một cái liền nhận ra đây là Bùi Thiệu Trạch, Bùi tổng!</p>
+        <p>Đã trễ thế này còn ở tăng ca?</p>
+        <p>Bùi tổng thật là cái phụ trách, chuyên nghiệp hảo lão bản.</p>
+        <p>【 Trình Hạ đối với ngươi hảo cảm độ +5】</p>
+        <p>Mới vừa bưng lên cái ly chuẩn bị uống nước Bùi Thiệu Trạch: “?”</p>
+        <p>Hôm nay căn bản không cùng Trình Hạ gặp mặt, thậm chí hoàn toàn không có liên hệ.</p>
+        <p>Từ đâu ra hảo cảm độ?</p>
+        <p>Cảm giác này giống như là loại ở chậu hoa tiểu cây non, không cần tưới nước, không cần bón phân, chính mình liền cọ cọ trường cao giống nhau.</p>
+        <p>Trình Hạ chính là một cây sẽ chính mình sinh trưởng cây non.</p>
+        <p>Bùi Thiệu Trạch tâm tình vui sướng mà uống xong thủy, lấy ra di động cấp Trình Hạ phát đi điều WeChat: “Ngày mai đi chụp MV sao?”</p>
+        <p>Di động bắn ra tin tức làm Trình Hạ hoảng sợ, vội vàng hồi phục: “Đúng vậy, Bùi tổng ngài biết?”</p>
+        <p>“Trần Di Quân cùng ta nói rồi. MV Trương đạo cùng nàng hợp tác quá rất nhiều lần. Vị này đạo diễn yêu cầu nghiêm khắc, một cái màn ảnh chụp vài biến là thường có sự, ngươi chuẩn bị tâm lý thật tốt, lần này MV quay chụp khả năng không có trong tưởng tượng như vậy nhẹ nhàng.”</p>
+        <p>“Ta minh bạch.” Trình Hạ trở về một câu, theo sát lại nói: “Bùi tổng ngài sớm một chút nghỉ ngơi, đừng quá vất vả!”</p>
+        <p>“Ân. Ngươi cũng là, đi ngủ sớm một chút đi.” Bùi Thiệu Trạch đang chuẩn bị tan tầm, phát xong tin tức liền đóng lại cửa sổ đi ngầm gara.</p>
+        <p>Trình Hạ thấy phố đối diện văn phòng tắt đèn, lúc này mới xoay người đi phòng tắm tắm rửa.</p>
+        <p>***</p>
+        <p>Ngày kế, Trình Hạ 7 giờ đúng giờ lên, rửa mặt đánh răng xong sau tùy tiện xuyên thân sạch sẽ quần áo, dù sao di quân tỷ nói tài trợ thương hội cung cấp trang phục, hắn chỉ cần đem chính mình mang qua đi là đủ rồi.</p>
+        <p>Trợ lý từ đa đa sáng tinh mơ lại đây cho hắn đưa dinh dưỡng bữa sáng, còn cõng cái cặp sách, sách này bao quả thực giống hộp bách bảo, các loại sinh hoạt dụng cụ đầy đủ mọi thứ. Trình Hạ nhịn không được cảm thán: “Đa tỷ, ngài chuẩn bị đến cũng quá đầy đủ hết đi!”</p>
+        <p>Từ đa đa nói: “Ta là ngươi trợ lý, đương nhiên muốn đem ngươi chiếu cố hảo a.”</p>
+        <p>Trình Hạ triều nàng lộ ra cái tươi cười: “Tỷ tỷ vất vả.”</p>
+        <p>Tiểu thiếu niên nói ngọt lại lễ phép, từ đa đa nghe hắn gọi tỷ tỷ thật là đặc biệt dễ nghe. Nàng thực may mắn lúc trước trợ lý phân phối thời điểm tuyển Trình Hạ, đối Trình Hạ thái độ cũng càng thêm ôn hòa: “Ăn trước bữa sáng, ăn xong rồi chúng ta lại đi công ty tìm Chu Nhan.”</p>
+        <p>Hai người đi vào công ty khi Chu Nhan đã chuẩn bị hảo, dặn dò Trình Hạ một ít những việc cần chú ý, ba người liền cùng nhau xuống lầu đến bãi đỗ xe. Vốn dĩ nghĩ Trần Di Quân dù sao cũng là đại bài minh tinh, nói 10 điểm rất có thể sẽ đến trễ. Kết quả Trần Di Quân bảo mẫu xe tương đương đúng giờ, 10 điểm chỉnh liền tới tới rồi gara.</p>
+        <p>Trần Di Quân đeo phó khốc khốc kính râm, buông cửa sổ xe chủ động triều Trình Hạ vẫy tay: “Trình Hạ, lại đây cùng ta ngồi một chiếc xe!”</p>
+        <p>Trình Hạ nhìn người đại diện liếc mắt một cái, thấy Chu Nhan không phản đối, liền đi qua đi theo Trần Di Quân cùng nhau ngồi vào hàng phía sau, người đại diện cùng trợ lý thượng một khác chiếc xe.</p>
+        <p>Trần Di Quân bảo mẫu xe không gian thập phần rộng mở, hàng phía sau có thể nhẹ nhàng làm một cái người trưởng thành nằm ngủ. Trần Di Quân đem cửa sổ xe mành kéo lên, mở ra đèn, sau đó cấp Trình Hạ đệ đi một chồng tư liệu: “Đây là MV kịch bản, ngươi trước xem một chút.”</p>
+        <p>Trình Hạ tiếp nhận tới nhìn kỹ xem, phát hiện hắn ở MV trung biểu diễn nhân vật từ đầu tới đuôi đều không có lời kịch. Này dù sao cũng là ca khúc MV, lại không phải đoản kịch, ca hát xướng đến một nửa bỗng nhiên có người toát ra tới nói chuyện ngược lại sẽ rất kỳ quái. Không lời kịch là bình thường. Không lời kịch biểu diễn khó khăn cũng không so có lời kịch thấp.</p>
+        <p>Có lời kịch thời điểm, diễn viên có thể thông qua khống chế thanh âm lớn nhỏ, đầy nhịp điệu tới biểu đạt chính mình cảm xúc, lợi hại diễn viên thậm chí có thể sử dụng một hai câu lời kịch liền đem người xem mang đi vào. Chính là, không có lời kịch loại này “Người câm kịch”, phải toàn dựa động tác cùng ánh mắt, đối Trình Hạ tới nói, đây là cái không nhỏ khiêu chiến.</p>
+        <p>Chờ Trình Hạ xem xong, Trần Di Quân mới thẳng thắn mà nói: “Này đầu đơn khúc là ta tháng trước mới vừa lục tốt, tưởng ở Lễ Tình Nhân cùng ngày thượng giá, MV muốn ở một vòng trong vòng chụp xong, còn phải hậu kỳ chế tác, cho nên thời gian thượng sẽ tương đối đuổi, mấy ngày nay muốn vất vả ngươi.”</p>
+        <p>Trình Hạ lý giải mà nói: “Ta minh bạch, ngài này bài hát giảng chính là mối tình đầu, ở Lễ Tình Nhân thượng giá tương đối thích hợp. Hơn nữa năm nay Lễ Tình Nhân cùng Tết Âm Lịch trước sau không vượt qua ba ngày, đúng là các loại âm nhạc trang web lưu lượng lớn nhất thời điểm.”</p>
+        <p>Trần Di Quân nhìn về phía Trình Hạ, ánh mắt ôn nhu: “Nghỉ đông muốn tuyên bố tân ca ca sĩ đặc biệt nhiều, muốn ở cạnh tranh kịch liệt nghỉ đông đương sát ra trùng vây không dễ dàng như vậy. Làm ngươi tới diễn này bài hát MV, cũng không phải tùy tiện quyết định, ngày đó ta ánh mắt đầu tiên nhìn thấy ngươi, liền cảm thấy ngươi đặc biệt thích hợp này bài hát. Trình Hạ, ngươi cần phải cố lên.”</p>
+        <p>Trình Hạ nghiêm túc gật đầu: “Quân tỷ yên tâm, ta nhất định hảo hảo phối hợp.”</p>
+        <p>Trần Di Quân cười tủm tỉm mà vỗ vỗ Trình Hạ bả vai, lấy ra di động, cùng Trình Hạ chụp đóng mở ảnh. Nàng vốn định phát bằng hữu vòng, viết vài câu lại xóa rớt, nói: “Không được, ta phải bảo mật, đến lúc đó cho đại gia một kinh hỉ!”</p>
+        <p>Thực mau, bảo mẫu xe liền chạy đến phụ cận một khu nhà trung học.</p>
+        <p>Bởi vì gần nhất phóng nghỉ đông, bọn học sinh đều về nhà, Trần Di Quân dứt khoát mượn trường học tràng quán tới quay chụp MV.</p>
+        <p>Nhân viên công tác đã ở hiện trường làm tốt chuẩn bị.</p>
+        <p>Trần Di Quân vừa xuống xe liền lôi kéo Trình Hạ đi gặp đạo diễn: “Vị này chính là Trương đạo. Đây là ta cho ngươi nói tân nhân, Trình Hạ.”</p>
+        <p>Trương đạo chuyên môn cấp ngôi sao ca nhạc chụp MV, yêu cầu nghiêm khắc, đã tốt muốn tốt hơn, nghe nói Trần Di Quân tìm cái tân nhân hắn còn có chút không cao hứng, kết quả, thiếu niên đi tới lễ phép hỏi “Trương đạo hảo” thời điểm, hắn bỗng nhiên hai mắt sáng ngời .</p>
+        <p>Ánh mặt trời ấm áp thiếu niên, trong trí nhớ vĩnh viễn không thể quên được mối tình đầu.</p>
+        <p>Này mẹ nó còn không phải là một trương thích hợp mối tình đầu mặt sao!</p>
+        <p>Trương đạo kích động mà lôi kéo Trình Hạ hướng phòng hóa trang đi: “Mau mau mau, định trang phát tạo hình, ta muốn chụp mấy cái màn ảnh thử xem.”</p>
+        <p>Bị kéo chạy Trình Hạ có điểm ngốc.</p>
+        <p>Thấy Trình Hạ bị kéo đi, người đại diện Chu Nhan cùng trợ lý từ đa đa cũng vẻ mặt khẩn trương mà theo qua đi.</p>
+        <p>Trình Hạ bị đạo diễn đưa đi phòng thay quần áo thay quần áo.</p>
+        <p>Bởi vì MV quay chụp cảnh tượng ở trường học, Trình Hạ đến thay giáo phục. Giáo phục là tài trợ thương cung cấp, xanh trắng đan xen, đại bộ phận người mặc vào sẽ có vẻ thực xấu đồ thể dục, mặc ở Trình Hạ trên người lại cùng bìa mặt người mẫu dường như. Dáng người tỷ lệ người tốt thật là mặc gì cũng đẹp. Nếu là Trình Hạ đại ngôn này khoản giáo phục, phỏng chừng giáo phục có thể bán được bán hết.</p>
+        <p>Đạo diễn hai mắt tỏa ánh sáng, tiếp đón Trình Hạ tới hoá trang kính trước ngồi xuống, chuyên viên trang điểm cùng tạo hình sư lập tức bắt đầu lăn lộn hắn mặt cùng tóc, Trình Hạ cảm thấy chính mình mau thành thí nghiệm trên đài tiểu bạch thử.</p>
+        <p>Chuyên viên trang điểm tỷ tỷ làm hắn trợn mắt, nhắm mắt, hắn đều phải nghe lời mà phối hợp.</p>
+        <p>Một đoạn thời gian sau, trang phát cùng tạo hình rốt cuộc xác định.</p>
+        <p>Đơn giản màu đen tóc ngắn cùng toái tóc mái, không có dư thừa tân trang, làm hắn cả người có vẻ tươi mát tự nhiên. Trình Hạ bản thân làn da liền bạch, đồ phấn nền cũng sẽ không có quá dày nặng trang cảm. Mũi ảnh tân trang làm thiếu niên cái mũi càng thêm tinh xảo lập thể. Chuyên viên trang điểm cho hắn chọn son môi nhan sắc so với hắn bản thân môi sắc chỉ thâm một chút, tô lên lúc sau thực hiện khí sắc.</p>
+        <p>Thiên thông thường trang, lại xứng với một đầu thoải mái thanh tân tóc ngắn, này hoàn toàn chính là trung học thời đại giáo thảo đi? Đi vào phòng hóa trang Trần Di Quân khoa trương mà kêu ra tiếng: “A a a thật là đẹp mắt! Trình Hạ ta phải làm ngươi số một tiểu mê muội…… Không, tiểu mê tỷ!”</p>
+        <p>Người chung quanh bị nàng phù hoa kỹ thuật diễn chọc cho cười.</p>
+        <p>Không nghĩ tới, đại danh đỉnh đỉnh ngôi sao ca nhạc Trần Di Quân ngầm cư nhiên là loại này thoát tuyến tính cách. Trình Hạ nhìn về phía nàng, nghiêm túc mà nói: “Quân tỷ, ngài mới là ta thần tượng, cũng đừng lấy ta trêu ghẹo.”</p>
+        <p>Trần Di Quân cười tủm tỉm mà đối với Trình Hạ chụp mấy tấm ảnh chụp.</p>
+        <p>Trương đạo ở bên cạnh hưng phấn mà xoa tay: “Tới tới tới, chúng ta trước thử chụp mấy cái màn ảnh!”</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- END-AUTO-INSERT-15 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong14.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong16.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "ngoai-y-muon-danh-dau";
+const NOVEL_TITLE = "Ngoài Ý Muốn Đánh Dấu";
+const CHAPTER_TITLE = "Chương 15";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

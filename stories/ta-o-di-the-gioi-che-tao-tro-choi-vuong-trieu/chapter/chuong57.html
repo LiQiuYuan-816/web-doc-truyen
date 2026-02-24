@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 57: Giáo dục cùng thí nghiệm</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ta Ở Dị Thế Giới Chế Tạo Trò Chơi Vương Triều
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 57: Giáo dục cùng thí nghiệm</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong56.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong58.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-57 -->
+        <p>◎ “Ác nhân”? ◎</p>
+        <p>Người trưởng thành kết thúc kỳ nghỉ đi làm thời điểm, nghỉ đông rốt cuộc cũng kết thúc, vị thành niên nhóm lưu luyến không rời rời đi gia, trở về trường học sinh hoạt.</p>
+        <p>Nhưng mà chờ bọn họ lãnh tân giáo tài thời điểm, đột nhiên cảm nhận được đến từ thế giới “Ác ý”: Bọn họ nhìn đến nhiều ra tới, phi thường quen thuộc, bìa sách……</p>
+        <p>Khai giảng cái thứ nhất cuối tuần, Phong Thuân diễn đàn trò chơi bản khối bị trung tiểu học sinh chiếm lĩnh.</p>
+        <p>Trên diễn đàn nhất hỏa thiệp, khúc dạo đầu chính là mười mấy quyển sách ảnh chụp, kế tiếp còn có từ trong sách lấy ra tới mấy chục thiên thơ cổ văn, cuối cùng là bất đồng học sinh phẫn nộ biểu tình bao……</p>
+        <p>【 kỳ nghỉ cảm thấy 《 Đại Mộng ngàn năm 》 thật tốt chơi, Nhiên lão đại thật lợi hại, đi học ta cảm thấy 《 Đại Mộng ngàn năm 》 là ác độc nhất trò chơi, Nhiên lão đại là ác độc nhất người! 】</p>
+        <p>【 khai giảng ngày đầu tiên, lãnh đến giáo tài kia một khắc, ta thiệt tình cảm thấy chính mình ở làm ác mộng. 】</p>
+        <p>【 học thơ cổ văn ta còn có thể tiếp thu, vì cái gì muốn ngâm nga? Cần thiết sao? 】</p>
+        <p>【 a a a a, Nhiên lão đại, chúng ta quyết đấu! 】</p>
+        <p>【 vì cái gì? Vì cái gì? Vì cái gì? Ta đều mau tốt nghiệp, vì cái gì còn muốn tao ngộ này đó? 】</p>
+        <p>【 đã xảy ra cái gì? Này đó hài tử đều điên rồi sao? 】</p>
+        <p>【 giống nhau không hiểu được a, hôm nay diễn đàn vị thành niên siêu tiêu a. 】</p>
+        <p>【 làm ta nhớ lại 《 chốn đào nguyên 》 thêm vị thành niên phòng trầm mê hệ thống thời điểm. 】</p>
+        <p>【 lần này so vị thành niên phòng trầm mê còn quá mức, Nhiên lão đại đã trở thành vị thành niên lớn nhất địch nhân. 】</p>
+        <p>【 ta là gia trưởng, nhà ta Bảo Nhi đã nguyền rủa Nhiên lão đại cùng 《 Đại Mộng ngàn năm 》 ban ngày. 】</p>
+        <p>【 nhà ta tiểu tử thúi không thầy dạy cũng hiểu học xong vu cổ chi thuật, hiện tại ở trát tiểu nhân, này tiểu nhân là ai, đại gia hẳn là đoán được. 】</p>
+        <p>【 càng nói ta càng mơ hồ. 】</p>
+        <p>【 vẫn là ta tới giải thích đi, năm nay Trung Châu giáo dục cục tiến hành rồi khóa sửa, bọn nhỏ gia tăng rồi thơ cổ văn chương trình học. Tiểu học còn hảo, mỗi học kỳ chỉ cần ngâm nga mấy thiên cổ thơ từ cùng 《 Luận Ngữ 》 câu, học sinh trung học muốn bối Trang Tử 《 Tiêu Dao Du 》, Mạnh Tử 《 cá ta sở dục cũng 》…… Nghe nói lần này khóa sửa chính là 《 Đại Mộng ngàn năm 》 khiến cho, cũng là Nhiên lão đại đề nghị. 】</p>
+        <p>【 thiệt hay giả? Như vậy hung tàn sao? 】</p>
+        <p>【 chơi trò chơi khi, ta nhìn những cái đó cổ văn, đặc biệt khó đọc, có tự đều không quen biết, ngâm nga? Nghiêm túc? 】</p>
+        <p>【 ách…… Nói như thế nào đâu? Thâm biểu đồng tình? 】</p>
+        <p>【 còn hảo ta năm trước tốt nghiệp ( mồ hôi lạnh )……】</p>
+        <p>【 giống như trên giới sinh viên tốt nghiệp, mới vừa nghe được chuyện này, ta chỉ nghĩ cấp một cái biểu tình: Ha ha ha ha ha ha! 】</p>
+        <p>【 đồng dạng tốt nghiệp người, nếm thử bối một chút, thật sự hảo khó a. 】</p>
+        <p>【 không cấm muốn ngâm nga, còn muốn sẽ phiên dịch, còn muốn viết cảm tưởng, khảo thí còn muốn khảo, ta đã điên rồi, này rốt cuộc là vì cái gì? 】</p>
+        <p>【《 Đại Mộng ngàn năm 》 đột nhiên liền không thơm, soái khí thôn trang đột nhiên trở nên mặt mày khả ố lên. 】</p>
+        <p>【 ra Khổng Tử tay làm, ai muốn? 】</p>
+        <p>【 ra mặc tử tay làm, miễn phí đưa. 】</p>
+        <p>【 thôn trang tay làm cũng không nghĩ muốn, nhìn đến hắn lòng ta ngạnh……】</p>
+        <p>【 đã tháo dỡ trò chơi, ta đối Thời Không phòng làm việc sinh ra PTSD. 】</p>
+        <p>Trên mạng bình luận càng ngày càng nhiều, vị thành niên nhóm phát tiết chính mình bất mãn, bất quá bọn họ ngoài miệng nói muốn tháo dỡ trò chơi, chân chính tháo dỡ lại không mấy cái, rốt cuộc 《 Đại Mộng ngàn năm 》 là thật sự hảo chơi, căn bản không có thay thế phẩm.</p>
+        <p>Cho nên chuyện này ảnh hưởng lớn nhất chính là trong trò chơi chư tử bách gia, trứ danh nhân vật tất cả đều đã trải qua thoát phấn sự kiện, Khổng Mạnh trang mặc lão này năm người thoát phấn nhiều nhất, những cái đó mua tứ thư ngũ kinh chờ thư tịch đương thần bái học sinh, cuối tuần về nhà liền đem này đó thư toàn ném.</p>
+        <p>Cố An Nhiên nằm ở biệt thự trên sô pha thấy thánh nhân nhóm thoát phấn toàn quá trình, hắn cười nói: “Lúc này mới chỗ nào đến chỗ nào a, 《 Ly Tao 》 còn không có ra tới, nhớ trước đây ta ăn khổ, Lam Tinh bọn nhỏ cũng muốn nếm thử a.”</p>
+        <p>Lâm Kỳ Thuân giờ khắc này đặc biệt may mắn chính mình tuổi đại, đã không cần đọc sách, hắn mở ra vòng tay thông tin, liên hệ Tạp Độ, làm đối phương an bài hai cái bảo tiêu tới biệt thự.</p>
+        <p>“Cái gì muốn bảo tiêu?” Cố An Nhiên hỏi: “Ca, ngươi gần nhất muốn đi nguy hiểm địa phương sao?”</p>
+        <p>Lâm Kỳ Thuân nói: “Vì ngươi chuẩn bị.”</p>
+        <p>“Ha?” Cố An Nhiên nghi hoặc, “Ta muốn bảo tiêu?”</p>
+        <p>“Vị thành niên lực sát thương rất lớn.” Lâm Kỳ Thuân ngữ khí nghiêm túc, “Ta lo lắng ngươi sẽ bị bọn họ trùm bao tải.” Nghĩ vậy nhi, hắn lại làm Tạp Độ bỏ thêm hai cái bảo tiêu.</p>
+        <p>“Đảo cũng không cần như thế khoa trương.” Cố An Nhiên sửng sốt trong chốc lát, nói: “Nhiều làm bài tập, nhiều khảo thí, bọn nhỏ liền không có thời gian tưởng bảy tưởng tám.”</p>
+        <p>Lâm Kỳ Thuân thái dương khẽ nhúc nhích, nhà mình vị này thật là am hiểu sâu lửa cháy đổ thêm dầu chi đạo, hắn thật đúng là không sợ bị đánh a!</p>
+        <p>《 Đại Mộng ngàn năm 》 đối Trung Châu ảnh hưởng không thua gì 《 Huyền Âm Tầm Cổ 》, trong trò chơi bày ra văn hóa vốn dĩ đã bị đại gia hỏa tôn sùng, khóa sửa sau càng sâu.</p>
+        <p>Những cái đó thánh nhân, chẳng sợ qua mấy ngàn năm, bọn họ lời nói việc làm tư cũng thực đáng giá học tập, bọn nhỏ đều không phải là không hiểu, bọn họ chỉ là không cam lòng mà thôi.</p>
+        <p>Khóa sửa đã thành sự thật, trên mạng náo loạn hai ngày, chờ vị thành niên nhóm đi học, cái này đề tài cũng làm lạnh.</p>
+        <p>****</p>
+        <p>2 giữa tháng tuần, 《 Đại Mộng ngàn năm 》 cùng 《 chốn đào nguyên 》 đồng thời đổi mới, trong khi hai chu “Tết Âm Lịch hoạt động”, làm cái này truyền thống ngày hội trở về Trung Châu.</p>
+        <p>“Năm thú”, “Pháo đốt”, “Câu đối xuân” chờ, thành internet nhiệt danh từ.</p>
+        <p>Trung Châu các khu thương trường theo sát trào lưu, Thời Không phòng làm việc đẩy Tết Âm Lịch, thương trường người phụ trách lập tức định chế rất nhiều đèn lồng, câu đối xuân, phúc tự, song cửa sổ từ từ, này đó cùng Tết Âm Lịch có quan hệ nguyên tố, thương trường một kiện đều không ít.</p>
+        <p>Trung Châu các khu các bộ môn cũng hưởng ứng lần này hoạt động, một ít xí nghiệp còn cấp công nhân thả ba ngày giả.</p>
+        <p>Thời Không phòng làm việc cấp công nhân thả 7 thiên giả, Phong Thuân tập đoàn cũng giống nhau.</p>
+        <p>Hai cái trò chơi Tết Âm Lịch hoạt động bắt đầu khi, 《 thần thánh liên minh 》Alpha phiên bản hoàn thành.</p>
+        <p>Lúc này chính trực Tết Âm Lịch kỳ nghỉ, Cố An Nhiên chuẩn bị 10 cái nội trắc tài khoản, đem Sầm Qua chờ bằng hữu mời đến biệt thự.</p>
+        <p>“Tới tới tới.” Đại gia tụ ở bên nhau chính là ăn ngon uống tốt, ăn xong uống xong, Cố An Nhiên lấy ra thí nghiệm tài khoản, “Tới thử xem chúng ta tân trò chơi.”</p>
+        <p>Hắn đem tài khoản đã phát đi xuống, Lâm Kỳ Thuân, Sầm Qua, Sầm Duyệt, Tiêu Hải Nhất, Tiêu Xán Nhất, Từ Duyên Cẩn, Tạp Độ, Lưu bá, Hoàng Sầm Ưu, hơn nữa chính hắn, vừa vặn 10 người.</p>
+        <p>Nghe được Cố An Nhiên nói tân trò chơi, Sầm Qua ánh mắt sáng lên, “Cái gì trò chơi? Không nghe ngươi nói quá a.”</p>
+        <p>Từ Duyên Cẩn cũng mở miệng nói: “《 Đại Mộng ngàn năm 》 mới phát hành bao lâu a, thời không liền có tân trò chơi? Các ngươi phòng làm việc thật đúng là cao sản a.”</p>
+        <p>“Này tính cái gì?” Làm Thời Không phòng làm việc công nhân, Tiêu Xán Nhất trong mắt lộ ra kiêu ngạo, “Chúng ta phòng làm việc trò chơi không chỉ có ra mau, còn đặc biệt hảo chơi!”</p>
+        <p>Hoàng Sầm Ưu cùng Cố An Nhiên nhìn nhau liếc mắt một cái, hai người nở nụ cười.</p>
+        <p>Tiêu Hải Nhất từ Minh Tinh trở về không mấy ngày, hắn hiện tại đang đứng ở phóng không tư duy nghỉ phép trạng thái, hắn cũng tò mò hỏi: “Cái gì loại hình trò chơi?”</p>
+        <p>“MOBA.” Cố An Nhiên nói cái mọi người đều không hiểu danh từ, sau đó lại giải thích: “Nhiều người tại tuyến đẩy tháp cạnh kỹ trò chơi.”</p>
+        <p>Cái này đại gia càng mộng bức.</p>
+        <p>Cố An Nhiên đem trò chơi gói cài đặt chia cho đại gia, “Một câu hai câu giải thích không rõ, tân trò chơi kêu 《 thần thánh liên minh 》, đây là thí nghiệm bản, chỉ có 5V5 xứng đôi hình thức, đại gia chơi một ván liền biết ý tứ của ta.”</p>
+        <p>“5V5?” Từ Duyên Cẩn hỏi: “Chẳng lẽ trò chơi này muốn 10 một nhân tài có thể chơi?”</p>
+        <p>“Thí nghiệm bản là như thế này.” Cố An Nhiên nói: “Chính thức phiên bản sẽ tăng thêm 1v1, 3v3 hình thức còn có Nhân Cơ hình thức.”</p>
+        <p>Tiêu Hải Nhất chú ý tới Cố An Nhiên lời nói trọng điểm, “《 thần thánh liên minh 》 là PVP trò chơi? Chính thức phiên bản ít nhất cũng muốn hai người mới có thể chơi lên?”</p>
+        <p>“Là như thế này, bất quá trò chơi chính thức phát hành sau, có thể khai tự định nghĩa phòng, 1 cá nhân nói, có thể cùng AI chơi. 《 thần thánh liên minh 》 AI đem từ trưởng thành trò chơi động cơ ‘ không ’ đảm nhiệm, cùng hắn đánh sẽ so đồng nghiệp đánh khó.”</p>
+        <p>“Tính tính, ngươi nói nhiều như vậy, chúng ta cũng nghe không rõ, khai chơi đi.” Sầm Qua phất phất tay, click mở trò chơi, “Thử xem liền minh bạch.”</p>
+        <p>《 thần thánh liên minh 》Alpha phiên bản tương đương đơn sơ, UR giao diện phi thường đơn giản, liền “Bắt đầu trò chơi” một cái cái nút, điểm đánh lúc sau, xuất hiện ba cái khoanh tròn, hai bên khoanh tròn là màu xám, liền trung gian khoanh tròn sáng lên, mặt trên viết “Xứng đôi”.</p>
+        <p>Sầm Qua điểm xứng đôi, sau đó hắn trò chơi giao diện liền thay đổi. Tân giao diện bên trên là 5 cái trong suốt khung, phía dưới là năm cái sân khấu, viết hắn id sân khấu rỗng tuếch.</p>
+        <p>Màn hình trung gian là cái đại giao diện, sắp hàng rất nhiều tiểu khung, đếm kỹ một chút có 20 cái. Mỗi cái tiểu trong khung đều có một cái chân dung, này đó chân dung có quỷ dị, có xinh đẹp, có soái khí, có tà ác, phong cách không đồng nhất.</p>
+        <p>“Xứng đôi giao diện biểu hiện chính là đại gia nhưng tuyển anh hùng, trước mắt có 20 cái, nội trắc trong lúc toàn miễn phí.”</p>
+        <p>Cố An Nhiên nói xong, Sầm Qua liền tuyển một cái nhất thuận mắt mỹ nữ chân dung, hải dương nữ thần thái hi tư.</p>
+        <p>Hắn tuyển xong, một trận hoa mỹ quang hiệu hiện lên, thái hi tư theo gió vượt sóng mà thân ảnh của nàng xuất hiện ở viết hắn tên sân khấu thượng.</p>
+        <p>Nước biển vì y, cá voi cọp vì tòa, cuộn sóng màu lam nhạt tóc dài ở trong màn hình đãng ra gợn sóng, vị này hải dương nữ thần cho người ta cảm giác phi thường mỹ lệ thả thần bí.</p>
+        <p>“Oa!” Cái này mở màn quá kinh diễm, Sầm Qua trợn mắt há hốc mồm, những người khác cũng không sai biệt lắm.</p>
+        <p>Cố An Nhiên nói tiếp: “Tiến vào xứng đôi sau, đại gia sẽ phân thành màu lam phương cùng màu đỏ phương hai đội, tuyển xong anh hùng là có thể tiến vào trò chơi.”</p>
+        <p>Hắn cảm thấy cần thiết muốn ở thí nghiệm bản tăng thêm dạy học video hoặc là tay mới giáo trình, nếu không người thí nghiệm khả năng liền quy tắc trò chơi đều làm không rõ ràng lắm.</p>
+        <p>Không có dạy học, Cố An Nhiên chỉ có thể biên chơi biên giáo.</p>
+        <p>Ván thứ nhất, hắn một bên giới thiệu quy tắc, một bên dẫn đường đại gia tham quan hẻm núi chiến trường chính là đồ, còn kỹ càng tỉ mỉ giới thiệu hẻm núi chiến trường các nguyên tố.</p>
+        <p>Ván thứ hai, thực chiến dạy học, hắn bắt đầu phổ cập một ít cơ bản trò chơi sách lược, báo cho đại gia kinh tế cùng phòng ngự tháp tầm quan trọng.</p>
+        <p>Ván thứ ba, Lâm Kỳ Thuân bắt được Cố An Nhiên giới thiệu trung càng sâu trình tự đồ vật.</p>
+        <p>Này cục hắn lựa chọn một cái kêu hành hương giả đánh dã anh hùng, giai đoạn trước liền đem địch quân trung đơn Cố An Nhiên trảo băng rồi.</p>
+        <p>Sau đó hắn đem tầm nhìn làm đi ra ngoài, từ thượng bắt được hạ, 20 sát 0 chết, đánh đến màu lam phương quân lính tan rã.</p>
+        <p>Này cục trò chơi kết thúc, Cố An Nhiên nhìn chính mình 12 chết 2 giết chiến tích, nhìn về phía Lâm Kỳ Thuân ánh mắt tràn ngập lên án, “Ca! Ngươi thật quá mức a!” Tóm được hắn trảo, làm hắn không hề trò chơi thể nghiệm!</p>
+        <p>Thượng cục Cố An Nhiên dạy học thời điểm, chính là đuổi theo Lâm Kỳ Thuân giết, Lâm Kỳ Thuân đã chết 20 nhiều lần, lúc này sát trở về, hắn nhưng thật ra ủy khuất, Lâm Kỳ Thuân cười nói: “Không phải ngươi nói, trung đơn cùng đánh dã là chân ái sao?”</p>
+        <p>“Ngươi chính là như vậy yêu ta sao?” Cố An Nhiên khóc không ra nước mắt, hắn lại vác đá nện vào chân mình, “Này ái quá trầm trọng, ta không chịu nổi.”</p>
+        <p>Lâm Kỳ Thuân kéo một chút Cố An Nhiên tóc, “Hạ cục đôi ta một tổ, chân chính trung dã liên động.”</p>
+        <p>“Các ngươi thật đúng là một đôi hảo phu phu!” Sầm Qua phản đối, “Các ngươi một tổ, chúng ta còn chơi thí, ta không đồng ý a.”</p>
+        <p>“Ta cũng không đồng ý!” Từ Duyên Cẩn cũng nói.</p>
+        <p>Lần này liền Lưu bá đều phản đối.</p>
+        <p>Chiều hôm nay, đại gia vẫn luôn ở chơi trò chơi, MOBA trò chơi mị lực thực mau bị đại gia get tới rồi.</p>
+        <p>Cố An Nhiên đối lần này thí nghiệm thực vừa lòng, kỳ nghỉ sau khi kết thúc, hắn lại sửa chữa một ít trò chơi tham số, nội sườn là có thể ở phòng làm việc cùng Phong Thuân diễn đàn mở rộng.</p>
+        <p>Tác giả có chuyện nói:</p>
+        <p>Hôm nay tiếp người đi, rất bận, văn liền tương đối ngắn nhỏ.</p>
+<!-- END-AUTO-INSERT-57 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong56.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong58.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "ta-o-di-the-gioi-che-tao-tro-choi-vuong-trieu";
+const NOVEL_TITLE = "Ta Ở Dị Thế Giới Chế Tạo Trò Chơi Vương Triều";
+const CHAPTER_TITLE = "Chương 57: Giáo dục cùng thí nghiệm";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

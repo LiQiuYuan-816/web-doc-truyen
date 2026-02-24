@@ -1,0 +1,883 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 17: Sinh hoạt</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Một Giấc Ngủ Dậy Ta Thành Tiểu Hiromitsu Mẹ
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 17: Sinh hoạt</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong16.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong18.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-17 -->
+
+
+        <p>Này bữa cơm ăn đến ăn mà không biết mùi vị gì.</p>
+        <p>Thật vất vả ăn xong lại về tới Morofushi gia trong phòng, ta trường thở dài một hơi, một bên tống cổ bọn nhỏ về phòng nghỉ ngơi một chút, một bên một mình ngồi ở trong phòng khách bắt đầu tự hỏi sau này an bài.</p>
+        <p>Kỳ thật, ta nhất định phải mau chóng xuất viện nguyên nhân, trừ bỏ cởi bỏ tiểu Hiromitsu khúc mắc hòa hoãn cùng Takaaki căng chặt cảm xúc ở ngoài, còn có một cái, đó chính là Shusuke lễ tang.</p>
+        <p>Takahashi cảnh sát ngày hôm qua thông qua điện thoại nói cho ta, cái này án kiện bởi vì chứng cứ liên thực hoàn chỉnh, kết án cũng chính là hai ngày này sự tình.</p>
+        <p>Mà Shusuke thi thể, cũng rốt cuộc có thể từ người nhà tiến hành kế tiếp xử lý.</p>
+        <p>Mặc kệ như thế nào, lễ tang đều là muốn làm.</p>
+        <p>Cùng ta giống nhau, Shusuke cha mẹ đã đều không còn nữa.</p>
+        <p>Nhưng là hắn còn có một cái so với hắn lớn tuổi mười tuổi ca ca. Chỉ là bởi vì công tác nguyên nhân, đại ca không ở Nagano trong nhà thời điểm tương đối nhiều. Tựa như hiện tại, trong nhà cũng chỉ có tẩu tử cùng đại ca một đôi nhi nữ ở.</p>
+        <p>Mặt khác tương đối gần thân thích, đại khái chính là gia trụ Tokyo một vị đường huynh, cùng gả tới rồi Kanagawa hai cái biểu tỷ.</p>
+        <p>Bởi vì Shusuke là trong nhà này đồng lứa nhỏ nhất hài tử, đặc biệt là tuổi tác kém còn khá lớn, cho nên này đó huynh đệ tỷ muội luôn luôn thực quan tâm hắn.</p>
+        <p>Xảy ra chuyện lúc sau, bọn họ cũng đều thật cẩn thận mà liên hệ qua ta . rõ ràng bọn họ chính mình cũng bi thương đến không được, lại kiệt lực khống chế được chính mình ngữ khí, sợ làm ta càng thêm khổ sở.</p>
+        <p>Mặc kệ như thế nào, tổng phải cho này đó thân nhân một cái cáo biệt cơ hội.</p>
+        <p>Đương nhiên, trừ bỏ lễ tang, ta còn cần thiết nối tiếp một ít chuyện khác. Tỷ như, Shusuke công tác đơn vị phái ra đại biểu, chuẩn bị hôm nay hoặc là ngày mai lại đây an ủi công nhân goá phụ, thuận tiện đưa lên một bút tiền an ủi.</p>
+        <p>Đúng vậy, không sai, chính là tiền an ủi.</p>
+        <p>Còn có công ty bảo hiểm, cũng liên hệ đến ta, làm ta mau chóng đi một chút thân lãnh bảo hiểm kim thủ tục.</p>
+        <p>Thám tử lừng danh Conan thế giới tuy rằng tràn ngập các loại không khoa học, nhưng là bởi vì nó lúc ban đầu giả thiết đều là lấy Nhật Bản hiện thực sinh hoạt làm khuôn mẫu, cho nên toàn bộ thế giới vận hành quy tắc vẫn là có thể tham khảo ta đã từng ở thế giới thật hiểu biết quá Nhật Bản phát triển sử.</p>
+        <p>Tỷ như Nhật Bản xã hội cơ hồ bao trùm đến mỗi người bảo hiểm chế độ, liền đồng dạng phóng ra tới rồi danh kha trong thế giới. Giống Morofushi gia loại tình huống này, ta có thể thân lãnh đến tương đương khả quan một bút bảo hiểm kim.</p>
+        <p>Ta có chút không thể hiểu được mà muốn cười . ngươi xem, sinh hoạt chính là như vậy vô tình, nó sẽ không bởi vì người nào đó rời đi mà đình trệ, nó chỉ biết trước sau như một mà đi phía trước đi. Mặc kệ ta cỡ nào kháng cự đối mặt ta ái nhân tử vong, ta đều phải trù bị hắn lễ tang, hơn nữa tự mình nối tiếp này từng hạng phảng phất là Shusuke lấy mệnh đổi lấy tiền tài.</p>
+        <p>Chính là như vậy, lạnh băng mà không thể nề hà.</p>
+        <p>Ta thậm chí cần thiết đến khuất phục với như vậy hiện thực, bởi vì chúng ta yêu cầu này đó tiền.</p>
+        <p>Ta cùng hai đứa nhỏ sinh hoạt, cần thiết đến có này đó tiền làm giảm xóc mới được. Mặc kệ ta tương lai tính toán như thế nào mưu cầu một phần công tác kiếm tiền dưỡng gia, hiện tại ta xác xác thật thật không có sinh hoạt nơi phát ra. Tuy rằng ở Nhật Bản đi học có chính phủ trợ cấp không cần hoa cái gì phí dụng, nhưng là những cái đó thượng vàng hạ cám phí dụng cũng không thiếu . hai đứa nhỏ đi học cùng chúng ta mẫu tử sinh hoạt hằng ngày, chi tiêu nhưng không thấp.</p>
+        <p>Ta khóe miệng mang theo một tia cười khổ, duỗi tay xoa xoa chính mình gương mặt, nhẹ giọng cho chính mình cổ vũ: “Xe đến trước núi ắt có đường, thuyền cập bến tự nhiên có chỗ đậu. Đừng nghĩ quá xa, tổng hội có biện pháp, hiện tại nói, trước đem trước mắt vài món sự làm tốt đi!”</p>
+        <p>………………………… Thời gian phân cách tuyến…………………………</p>
+        <p>Trận này lễ tang rốt cuộc kết thúc.</p>
+        <p>Ta mang theo Takaaki Hiromitsu cùng đại ca người một nhà đi ra mộ địa khi, có chút ngoài ý muốn nhìn đến đường huynh đang đứng ở ven đường chờ chúng ta.</p>
+        <p>Có chút nghi hoặc mà đi lên trước, ta nhìn trên nét mặt mang theo mỏi mệt hắn hỏi: “Nhị ca, ngươi còn không có hồi Tokyo sao?”</p>
+        <p>Đường huynh đưa qua một cái thoạt nhìn nặng trĩu túi giấy, ôn hòa mà hồi phục ta: “Phía trước bạn bè thân thích người tương đối nhiều cũng tương đối tạp, ta không dám đem cái này lấy ra tới cho ngươi. Hiện tại nơi này đều là người trong nhà, cũng liền an tâm rồi.”</p>
+        <p>Ta có điều dự cảm, tiếp nhận túi giấy mở ra vừa thấy, quả nhiên, một chồng điệp yên Nhật tiền mặt an tĩnh mà nằm ở trong túi.</p>
+        <p>Trong lòng chua xót, nhỏ giọng cự tuyệt nói: “Nhị ca, ta không thể thu.”</p>
+        <p>Đường huynh nói: “Trận này lễ tang tiêu phí không thấp, Shusuke kia phân tiền an ủi chỉ sợ cũng không dư lại cái gì đi? Không bột đố gột nên hồ, Takaaki cùng Hiromitsu còn muốn đi học, ngươi nhật tử không hảo quá.”</p>
+        <p>Hắn đè lại ta còn tưởng chống đẩy tay: “Nơi này không chỉ có có ta và ngươi tẩu tử tâm ý, còn có Shusuke hai cái biểu tỷ. Ngươi không cần nói, ta vô pháp hướng hai vị tỷ muội công đạo. Saki-chan, không cần lại cự tuyệt, ngươi khó xử chúng ta đều xem tới được, lúc này không giúp một phen, ta sợ về sau ta nhìn thấy Shusuke tiểu tử này . hắn sẽ tấu ta đâu.”</p>
+        <p>Ta mím môi, chung quy là nhận lấy này túi tiền: “Cảm ơn nhị ca, cũng cảm ơn hai vị tỷ tỷ.”</p>
+        <p>Đường huynh nhìn nhìn ta phía sau cách đó không xa đứng Takaaki cùng Hiromitsu, có chút do dự mà nói: “Saki-chan, ta biết ta nói như vậy thực đả thương người, nhưng là này xác thật cũng là chúng ta suy xét quá một loại tình huống . ngươi, còn tính toán mang theo hai đứa nhỏ tiếp tục sinh hoạt bao lâu?”</p>
+        <p>Ta sửng sốt: “Nhị ca?”</p>
+        <p>Hắn thở dài: “Saki-chan, ngươi mới 30 tuổi, người lại xinh đẹp . hiện thực một chút tới giảng, về sau tổng hội có người lại lần nữa theo đuổi ngươi. Tới rồi lúc ấy .”</p>
+        <p>Ta đánh gãy hắn: “Không có lúc ấy, nhị ca, sẽ không có.”</p>
+        <p>Ta quay đầu đi xem mộ địa, ngữ khí chém đinh chặt sắt: “Ta trượng phu sẽ chỉ là một người. Morofushi Shusuke, tồn tại là người của ta, đã chết là ta quỷ.”</p>
+        <p>Đường huynh trầm mặc sau một lúc lâu, rốt cuộc là không có tiếp tục đề tài vừa rồi: “Ta nghe đại ca nói, ngươi muốn chuyển nhà? Có tưởng hảo đi nơi nào sao?”</p>
+        <p>Ta chậm rãi lắc đầu: “Xác thật muốn chuyển nhà, xảy ra chuyện về sau nguyên bản nhân tế vòng cơ hồ đều biết Morofushi gia phát sinh sự tình, con phố kia vốn dĩ không khí cũng không tốt lắm, ta xác thật lo lắng Takaaki cùng Hiromitsu sẽ chịu ảnh hưởng. Nhưng là . cụ thể đi nơi nào, còn không có tưởng hảo, hơn nữa, ta cũng đến dò hỏi một chút bọn nhỏ ý tưởng.”</p>
+        <p>Hắn đề nghị: “Không bằng tới Tokyo đi, ta và ngươi tẩu tử cũng ở Tokyo kinh doanh thời gian dài như vậy, tóm lại xem như có thể chiếu ứng lẫn nhau. Hơn nữa hiện giờ Tokyo giá nhà đang ở dâng lên, lấy ta dự đánh giá tới xem, này chỉ là bắt đầu, địa ốc phát triển đã từ mùa xuân bắt đầu hướng giữa hè đi rồi . Saki ngươi hiện tại mua phòng không lỗ.”</p>
+        <p>Ta nhìn đường huynh chắc chắn ánh mắt, trong đầu đột nhiên hiện ra một cái vấn đề .</p>
+        <p>20 thế kỷ 90 niên đại, Nhật Bản có phải hay không địa ốc sụp đổ tới???</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- END-AUTO-INSERT-17 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong16.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong18.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "mot-giac-ngu-day-ta-thanh-tieu-hiromitsu-me";
+const NOVEL_TITLE = "Một Giấc Ngủ Dậy Ta Thành Tiểu Hiromitsu Mẹ";
+const CHAPTER_TITLE = "Chương 17: Sinh hoạt";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

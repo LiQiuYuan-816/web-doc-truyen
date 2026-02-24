@@ -1,0 +1,880 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 54: Hổ phách thời gian</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Sa Điêu Học Bá Hệ Thống
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 54: Hổ phách thời gian</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong53.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong55.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-54 -->
+
+        <p>Diệp Tư trở về khi Hà Tu bên cạnh ngồi một cái ô vuông áo sơmi nam sinh, toàn bộ phòng tự học đều không, liền thừa này hai người.</p>
+        <p>“Học thần, cho nên ngươi là cảm thấy ta cao nhị này một năm toán học hẳn là nhiều làm nan đề phải không?” Nam sinh bắt một chút Hà Tu cánh tay hỏi.</p>
+        <p>Hà Tu đem cánh tay trở về thu thu, lãnh đạm mà nhìn trước mặt truyện tranh, ừ một tiếng.</p>
+        <p>“Kia vật lý đâu? Vật lý có cái gì tốt học tập phương pháp sao?” Nam sinh cúi đầu xoát xoát ở notebook thượng viết “Toán học nan đề” bốn chữ, lại ngẩng đầu nhếch miệng cười, “Ta cơ học cơ sở quá kém, một đụng tới đề cũng chỉ biết bộ Newton đệ nhị định luật, f=ma, khác ta gì đều sẽ không. Giống ta như vậy tới rồi cao tam có phải hay không liền xong rồi?”</p>
+        <p>Loại này tóm được cơ hội xông lên hỏi học tập phương pháp không phải lần đầu tiên thấy, chỉ là ở Diệp Tư trong ấn tượng cao nhất cao nhị khi phát sinh còn tương đối nhiều, sau lại Hà Tu lãnh đạm thanh danh truyền xa, cũng liền không ai nguyện ý đi lên nếm mùi thất bại.</p>
+        <p>Đại khái là học kỳ này Hà Tu hơi chút hoạt bát điểm, lại tham gia vài lần tập thể hoạt động, cho nào đó ảo tưởng cuồng tro tàn lại cháy hi vọng.</p>
+        <p>Diệp Tư nhăn lại mi, lười biếng mà dựa vào trên tường, muốn làm một cái vãn tay áo động tác nhưng tay đụng tới cánh tay mới phát hiện chính mình chỉ xuyên cái bối tâm, vì thế sửa vì sống động một chút thủ đoạn.</p>
+        <p>Nam sinh xem Hà Tu phản ứng lãnh đạm, chưa từ bỏ ý định mà lại túm một chút Hà Tu tay áo, “Học thần ngươi tại tuyến sao, ngươi cảm thấy ta vật lý còn có thể cứu giúp một chút sao?”</p>
+        <p>Hà Tu giơ tay đem trước mặt truyện tranh thư khép lại, quay đầu nhìn hắn, ngữ khí bình tĩnh, “Ngươi mới vừa nói ngươi sẽ dùng Newton đệ nhị định luật phải không.”</p>
+        <p>Nam sinh một hồi mãnh gật đầu.</p>
+        <p>Từ Diệp Tư góc độ có thể thấy Hà Tu sườn mặt, từ nhĩ hạ đến cằm cằm cái kia tuyến banh đến gắt gao, Hà Tu hiển nhiên đã có điểm sinh khí.</p>
+        <p>Hà Tu bình tĩnh nói: “Muốn làm ngươi ba giây đồng hồ trong vòng rời đi này gian phòng tự học, yêu cầu một cái a lớn hơn 5 tăng tốc độ, nhìn ra ngươi chất lượng vì 55 kg, nói cách khác, ta yêu cầu ở trên người của ngươi đánh ra hai trăm 75 Newton lực.”</p>
+        <p>Nam sinh nghe vậy hoảng sợ nửa giây, ngay sau đó lại hắc hắc cười mỉa, “Học thần quá sẽ nói giỡn, sàn nhà có cọ xát đâu, a=5 không đủ.”</p>
+        <p>“Đúng vậy, ta cũng suy xét tới rồi.” Hà Tu không có bất luận cái gì biểu tình biến hóa, “Cho nên ngươi có thể lại lải nhải một hồi, chờ ta ngồi cùng bàn trở về hắn có thể trực tiếp làm ngươi phi đi ra ngoài, không khí lực cản tương đối tiểu, liền có thể xem nhẹ bất kể.”</p>
+        <p>“Ngươi ngồi cùng bàn?” Ô vuông nam ngốc một chút.</p>
+        <p>“Là ta.” Một cái âm trầm thanh âm đột nhiên xuất hiện ở sau người. Nam sinh một run run, hoảng sợ mà mãnh quay đầu lại lại chính thấy giáo bá đại nhân lạnh nhạt mà nhìn chằm chằm hắn.</p>
+        <p>Diệp Tư mặt vô biểu tình, “Ngươi nhận thức ta sao.”</p>
+        <p>Ô vuông nam cứng đờ hai giây, rồi sau đó mãnh gật đầu.</p>
+        <p>Diệp Tư: “Muốn chạy vẫn là tưởng phi?”</p>
+        <p>“Đi đi đi!!” Nam sinh đột nhiên đứng lên, hoảng loạn bế lên trên bàn đồ vật quay đầu liền chạy.</p>
+        <p>Thẳng đến kinh hoảng tiếng bước chân ở hành lang biến mất, Diệp Tư mới uể oải mà đi xuống lôi kéo khóe miệng, một mông ở Hà Tu bên cạnh ngồi xuống, lẩm bẩm nói: “Cao tam ký túc xá thế nhưng làm cao nhị tiểu thí hài trà trộn vào tới.”</p>
+        <p>Hà Tu có chút bất đắc dĩ mà cười, “Đi lên liền hỏi như thế nào học có thể khảo mãn phân, ta thật là vô pháp trả lời……”</p>
+        <p>“Không bằng kiến nghị hắn đổi cái đầu óc đi.” Diệp Tư lạnh nhạt mặt, tùy tay xé mở một cái trong đất giá cắn một ngụm, đem nguyên bản đặt ở Hà Tu đối diện luyện tập sách túm lại đây, tiếp tục viết đề.</p>
+        <p>Hà Tu nhìn thoáng qua thời gian, “Một chút, có thể hay không có điểm quá vất vả.”</p>
+        <p>“Không có việc gì.” Diệp Tư nhai chocolate hàm hồ mà nói: “Ta giữa trưa còn có ngủ trưa đâu.”</p>
+        <p>Hà Tu liền gật gật đầu không nói nữa. Diệp Tư viết xong một đạo đề, ánh mắt ở Hà Tu an tĩnh sườn mặt thượng dừng lại nửa ngày, Hà Tu không chỉ có liếc mắt một cái nhìn qua chính là cái đại soái so, lại còn có thực dễ coi, chỉ là lông mi rũ xuống tới kia phiến nhợt nhạt bóng ma, liền đủ hắn theo dõi mười phút.</p>
+        <p>Diệp Tư nhìn chằm chằm sau khi phát hiện Hà Tu bất động, hơn nữa biểu tình có chút cứng đờ.</p>
+        <p>“Ngươi nhìn cái gì đâu.” Hà Tu nhìn chằm chằm trước mắt truyện tranh thư, nhưng lời nói là hỏi hắn.</p>
+        <p>Diệp Tư: “Xem ngươi lớn lên hảo soái nga.”</p>
+        <p>“……” Hà Tu một nghẹn, thiếu chút nữa ho khan ra tới, quay đầu lại thấy Diệp Tư mỹ tư tư mà thu hồi tầm mắt, ở thư thượng tùy tay câu hai bút, “Cũng không biết về sau là cái nào vũ trụ vô địch sét đánh ngưu bức gia hỏa có thể có ngươi cái này bạn trai.”</p>
+        <p>“……”</p>
+        <p>Hà Tu đầy mặt không thể hiểu được, quay đầu lại nhìn chằm chằm truyện tranh thư lại ngăn không được có chút thất thần.</p>
+        <p>Qua một hồi lâu, Diệp Tư lại đắm chìm nhập lệnh người khó hiểu mang điện tiểu cầu tự do khiêu vũ vận động trung, đột nhiên nghe Hà Tu thấp giọng nói, “Kia cái dạng gì người có thể có ngươi loại này bạn trai đâu.”</p>
+        <p>Diệp Tư ngẩng đầu, lại thấy Hà Tu chính trầm tĩnh mà nhìn chính mình. Mắt đen yên lặng mà thâm thúy, thăm không ra cảm xúc.</p>
+        <p>Diệp Tư buông bút, hầu kết giật giật, “Ta đã có yêu thích người a.”</p>
+        <p>Đối diện cặp kia mắt đen đột nhiên thâm, Hà Tu nhìn chằm chằm hắn, một lát sau thấp giọng nói, “Đúng không, không nghe ngươi nói quá. Nàng…… Là cái dạng gì người?”</p>
+        <p>“Hắn là ta đồng loại.” Diệp Tư nói, thu hồi tầm mắt lại phiên một tờ thư, bình tĩnh nói: “Là trên thế giới này ta duy nhất đồng loại. Ta…… Thật sự siêu cấp vô địch cự vô bá thích hắn.”</p>
+        <p>Hà Tu mờ mịt, trong đầu răng rắc một tiếng. Hắn một lát sau mới phản ứng lại đây, là BB lại chụp lại màn hình.</p>
+        <p>Chụp lại màn hình làm cái gì đâu, ký lục hắn trọng sinh sau nhất khẩn trương lại nhất không thể hiểu được một khắc sao.</p>
+        <p>Hà Tu hầu kết giật giật, một lát sau vẫn là đem lời muốn nói nuốt trở vào, tiếp tục không chút để ý mà nhìn chằm chằm truyện tranh thư, lại một cách cũng xem không đi vào.</p>
+        <p>Hắn trong lòng có một loại thực điên cuồng ý tưởng, cái này ý tưởng làm hắn cảm thấy chính mình điên rồi, nhưng lại vô pháp thoát khỏi, điên cuồng xé rách thần kinh, một lát cũng không được an bình.</p>
+        <p>Diệp Tư đột nhiên siêu cấp ngáp một cái, sau đó cánh tay vòng lại đây, lại dính ở trên người hắn.</p>
+        <p>“Ta buồn ngủ quá nga, thiên nhiệt thật sự gian nan.” Diệp Tư lẩm bẩm nói, “Ta này mẫu thai solo độc thân cẩu nếu là thật thoát đơn, khẳng định muốn bức tên kia mỗi ngày cho ta mua kem mới được.”</p>
+        <p>Hà Tu không hé răng, thu thập đồ vật tùy ý Diệp Tư treo ở hắn trên cổ chậm rì rì trở về đi. Thẩm Lãng đã ngủ hạ, Ôn Thần không biết đã chạy đi đâu, hai người trong bóng đêm sờ soạng lên giường, Diệp Tư nằm xuống phía trước đột nhiên nghe Hà Tu nhỏ giọng nói câu, “Mỗi ngày mua kem, ta cũng có thể.”</p>
+        <p>Diệp Tư rốt cuộc không nhịn xuống hắc hắc hắc vui vẻ lên, trong bóng đêm đôi mắt sáng lấp lánh mà nhìn chằm chằm hắn, “Thật sự?”</p>
+        <p>Hà Tu bị hắn đột nhiên tiếng cười làm mông một cái chớp mắt, “Có thể a.”</p>
+        <p>Diệp Tư tay ở hắn phía sau lưng xương bả vai thượng một hồi cuồng xoa, “Hành a, vậy từ ngày mai bắt đầu rồi.”</p>
+        <p>“?”</p>
+        <p>Hà Tu còn ngốc, Diệp Tư đã thân mình tạp đến ván giường thượng, nhấc lên chăn thuần thục mà một con . ngửa đầu hô qua đi.</p>
+        <p>“……”</p>
+        <p>Bởi vì câu kia “Ta có yêu thích người”, Hà Tu suốt một đêm cũng chưa ngủ.</p>
+        <p>Lệnh nhân sinh khí chính là, Diệp Tư này một đêm ngủ đến phá lệ hương. Đầu dựa gần đầu ngủ lâu như vậy, Hà Tu vẫn là lần đầu tiên nghe hắn cả đêm đều ở nhỏ giọng đánh khò khè, kỳ thật không sảo cũng không khó nghe, nhưng tựa như không có lúc nào là không ở tỏ rõ “Lão tử ngủ đến thật sự thực hảo”, làm ngủ không được người có chút ngứa răng.</p>
+        <p>Sau nửa đêm Thẩm Lãng cũng bắt đầu ngáy ngủ, Thẩm Lãng ngáy ngủ giống máy khoan điện, Thẩm Lãng “Ca .” một tiếng, Diệp Tư “Hô .” một tiếng, hai người hết đợt này đến đợt khác, Hà Tu đầu hôn não trướng mà nhịn nửa ngày, cuối cùng tự sa ngã địa điểm khai trò chơi.</p>
+        <p>Mãi cho đến ngày hôm sau buổi sáng, Hà Tu một phút cũng chưa ngủ, nghe được rời giường linh từ trên giường ngồi dậy thời điểm trong đầu một nồi cháo, còn vẫn luôn có thể nghe được tối hôm qua “Ca .”, “Hô .”, “Ca .”, “Hô .” ảo giác.</p>
+        <p>Hà Tu suy yếu mà ngồi ở trên giường đem trán chôn ở trong lòng bàn tay, chỉ nghe Diệp Tư phiên cái thân ngồi dậy, tinh khí thần mười phần mà vỗ vỗ gối đầu, “Sớm a ngồi cùng bàn!”</p>
+        <p>“Sớm……” Hà Tu ngẩng đầu, “Ngủ ngon sao.”</p>
+        <p>“Giống nhau đi.” Diệp Tư xoay người cọ cọ xuống giường, ngẩng đầu vừa thấy, Hà Tu đang ngồi ở trên giường vẻ mặt khó có thể tin mà nhìn hắn.</p>
+        <p>“Như thế nào lạp?” Diệp Tư không rõ nguyên do mà gãi gãi cánh tay, “Nga đúng rồi, hôm nay ta không muốn ăn thực đường, hai ta chạy mau hai bước đi trường học bên ngoài đánh cuộc một keo bánh rán ra quán được không?”</p>
+        <p>“Hành.” Hà Tu thở dài, dẫm lên cây thang chậm rãi xuống dưới.</p>
+        <p>Diệp Tư một bên điên cuồng phiên tủ quần áo một bên thuận miệng nói, “Ta hôm nay xuyên Pikachu, ngươi xuyên củ tỏi vương bát sao?”</p>
+        <p>Hà Tu vốn dĩ tay đều đặt ở sơ mi trắng thượng, lại lâm thời quải cái cong, “Xuyên đi.”</p>
+        <p>Hà Tu quải ra tới quần áo đều là bạch, có nhan sắc áo thun đều điệp ở tủ chỗ sâu trong. Diệp Tư nói muốn đổi, hắn liền không thể không đẩy ra treo kia một loạt áo sơmi đi mặt sau tìm, nhưng mà đầu mới vừa thăm đi vào, hắn lại đột nhiên cứng lại rồi.</p>
+        <p>Quầy không có gì quang, có điểm ám, nhưng vẫn là có thể rất rõ ràng mà thấy cái kia cố lên bài bị người động quá.</p>
+        <p>Hà Tu tim đập phảng phất đọng lại, hắn trố mắt giật mình mà nhìn chằm chằm cái kia từ Pikachu xuất phát biu mà một chút chỉ hướng củ tỏi vương bát thô mũi tên, ý đồ cẩn thận phân biệt một chút mũi tên nhan sắc, nhưng chính mình giống như trong nháy mắt bệnh mù màu, một hồi xem là phấn, một hồi xem là lục, một hồi xem lại biến đen.</p>
+        <p>Có như vậy trong nháy mắt, hắn thậm chí hoài nghi là chính mình nghe xong một đêm “Ca . hô .” hòa âm mang đến ảo giác.</p>
+        <p>Nhưng ngay sau đó, hắn thấy Bulbasaur hai cái gương mặt bị mạnh mẽ bôi cố ý hình má hồng.</p>
+        <p>Cô đơn đơn mũi tên bị phát hiện, biến thành kiêu ngạo song mũi tên.</p>
+        <p>Toàn bộ thế giới phảng phất đều tại đây một cái chớp mắt quy về yên tĩnh, hắn nửa người trên thăm tiến cái này nho nhỏ trong không gian, nghe trong ngăn tủ kim loại cùng tạo phấn đan chéo ở bên nhau nhàn nhạt khí vị, nhìn chằm chằm kia phúc đã bị hai người vẽ xấu hủy diệt thiết kế cảm cố lên bài, qua phảng phất có một thế kỷ như vậy trường, mới hoảng hốt gian nghe được chính mình bãi công trái tim một lần nữa ở trong lồng ngực nhảy lên lên, một chút một chút, trầm ổn hữu lực, lại như là bị làm cái gì tăng tốc độ, không một hồi liền bắt đầu phanh phanh phanh kinh hoàng.</p>
+        <p>Diệp Tư vẫn luôn không ra tiếng, Hà Tu còn không có tưởng hảo chính mình muốn nói gì, phía sau đột nhiên truyền đến Thẩm Lãng một tiếng hoảng sợ kêu to, ngay sau đó chính là quang quang quang từ trên giường liền lăn mang nhảy nhảy xuống đất thanh âm. “Thao! Này trong ngăn tủ tuyệt đối con mẹ nó có tà thần! Hai ngươi chờ, ta hiện tại đi kêu Ôn Thần!!”</p>
+        <p>Thẩm Lãng hỏng mất mà chạy như điên ra ký túc xá, còn giữ cửa dùng sức ngã vào khung cửa, một tiếng vang lớn, Hà Tu không thể không từ trong ngăn tủ rời khỏi tới, mờ mịt mà nhìn môn, “Hắn làm sao vậy.”</p>
+        <p>Diệp Tư không nói chuyện, một mông ngồi ở chính mình trên ghế, cười đến dừng không được tới.</p>
+        <p>“Ngươi trong ngăn tủ có phải hay không có tà thần a.” Diệp Tư nói, “Ngươi như thế nào nhìn chằm chằm lâu như vậy a.”</p>
+        <p>Hà Tu: “……” Ta trong ngăn tủ có thứ gì, chẳng lẽ ngươi không biết sao.</p>
+        <p>Hà Tu cảm giác chính mình cả người đều ở nóng lên, hắn nhẹ nhàng hút một hơi, quay đầu lại thấy Diệp Tư tên này căn bản không có mặc kia kiện Pikachu áo thun, mà là ngoan ngoãn mà bộ giáo phục sơ mi trắng ngồi ở kia cười ngâm ngâm mà nhìn hắn.</p>
+        <p>“Ta.” Hà Tu dừng một chút, từ trong ngăn tủ xả ra một kiện giống nhau sơ mi trắng, “Ta hình như là thấy cái gì.”</p>
+        <p>Diệp Tư cười, “Ta tối hôm qua cũng thấy, ta thiên, làm ta sợ muốn chết. Đáng sợ đi?”</p>
+        <p>“…… Đáng sợ.” Hà Tu mờ mịt gật đầu, một lát sau mới túm hạ bối tâm, tròng lên giáo phục áo sơmi, rồi sau đó cầm bàn chải đánh răng gì đó đi tới cửa lại dừng lại bước chân.</p>
+        <p>“Cùng nhau sao.” Hà Tu quay đầu lại nhìn chằm chằm Diệp Tư.</p>
+        <p>Diệp Tư từ trên ghế nhảy lên, “Đương nhiên a.”</p>
+        <p>Hai người trầm mặc mà rửa mặt đánh răng, dùng chính là dựa gần hai cái bồn rửa tay. Ký túc xá phòng rửa mặt rất rộng mở, mỗi cái tay bồn chi gian đều cách thực khoan khoảng cách. Hà Tu không biết Diệp Tư có phải hay không cố ý, nhất cử nhất động cánh tay đều một hai phải ở trên người hắn đâm một chút hoặc là cọ một cọ mới được, đụng phải nửa ngày, hắn rốt cuộc nhịn không được ngẩng đầu xem qua đi, “Làm gì.”</p>
+        <p>“Ta nói ngươi người này có phải hay không có điểm mộc.” Diệp Tư lười biếng mà cười, ánh mặt trời từ cửa sổ hoảng tiến vào có điểm chói mắt, vì thế Diệp Tư liền nheo lại kia con mắt, tiếp tục nói: “Xem xong liền mẹ nó không điểm phản ứng phải không.”</p>
+        <p>Hà Tu xem hắn một lát, trầm mặc mà thu hồi tầm mắt, cúi đầu tiếp tục rửa mặt.</p>
+        <p>Diệp Tư lúc này rốt cuộc nhịn không được mắng một câu dựa, nhưng thấy dưới ánh mặt trời học thần lỗ tai hồng như là muốn lộ ra huyết tới dường như, lại nhịn không được cười vài tiếng, không đâm hắn, điều điều thủy ôn, đem đầu duỗi đến vòi nước phía dưới một hồi hướng.</p>
+        <p>Thủy bắn Hà Tu một thân, Hà Tu cũng không có né tránh, chờ Diệp Tư tẩy xong sau mới cầm lấy cái kia mượt mà khăn lông cái ở hắn cái ót thượng. Diệp Tư thuận tay ấn xuống, ở trên đầu một hồi xoa.</p>
+        <p>“Đi thôi.” Diệp Tư mang theo một đầu hơi nước nói, “Còn muốn đi ra ngoài mua bánh rán.”</p>
+        <p>Hà Tu gật gật đầu, “Còn có ngươi kem.”</p>
+        <p>“Dựa.” Diệp Tư nhịn không được cười ngã vào Hà Tu trên người, “Ai mẹ nó đại buổi sáng ăn kem a?”</p>
+        <p>Hà Tu từ hắn treo, nhàn nhạt gợi lên khóe miệng, “Ngươi ăn, ngươi mỗi ngày đều ăn.”</p>
+        <p>Diệp Tư cười đến sặc lên, một bên ho khan một bên nói: “Hành, ăn liền ăn.”</p>
+        <p>Bọn họ là vội vàng sớm nhất một lần rời giường linh khởi, này sẽ còn không có vang đệ nhị đạo, các ký túc xá môn đều còn đóng lại. Thẩm Lãng cũng không biết chạy nào đi tìm Ôn Thần đi, toàn bộ hành lang đều trống rỗng.</p>
+        <p>Sáng sớm ánh mặt trời phá lệ sạch sẽ sáng ngời, xuyên thấu qua hành lang cửa sổ cách một phương một phương mà đầu trên mặt đất gạch thượng. Hà Tu nghiêng đầu nhìn Diệp Tư, xem trên mặt hắn kia phó tiêu chí tính trong sáng tươi cười. Hôm nay cặp kia hắc mâu trung sung sướng thần sắc phá lệ rõ ràng, Diệp Tư tâm tình tựa hồ có điểm thật tốt quá, bắt đầu chính mình cùng chính mình chơi trò chơi, đi đến bên cửa sổ liền nheo lại mắt, rời đi ánh mặt trời liền trừng lớn, nhíu lại trừng, giống cái ngốc tử, lại chơi đến rất cao hứng bộ dáng.</p>
+        <p>Hắn một cái cánh tay chặt chẽ mà vòng ở Hà Tu trên cổ, cũng không chê nhiệt, dùng sức nghe kia cổ như có như không quả đào vị.</p>
+        <p>Đi đến phòng cháy thang lầu thông đạo bên cạnh, Hà Tu đột nhiên dừng bước.</p>
+        <p>“Ân?” Diệp Tư mở híp đôi mắt, đang muốn hỏi cái gì, lại đột nhiên cảm giác Hà Tu tới tay ở hắn trên eo nhéo một chút, túm hắn tay xoay người liền hướng trong thông đạo đi.</p>
+        <p>Trầm trọng phòng cháy môn đẩy ra phát ra một tiếng dài lâu “Chi .”, như là cắt mở cái này trầm tịch sáng sớm. Diệp Tư bị Hà Tu lôi kéo cánh tay, cửa mở một cái chớp mắt phía sau cửa sổ thấu tiến vào ánh mặt trời ở trong không khí chiếu ra một cái thông đạo, trong thông đạo có tro bụi ở nhẹ nhàng bay múa, hắn nhìn những cái đó tro bụi, thế nhưng đột nhiên có một loại năm tháng cảm giác.</p>
+        <p>Hắn quay đầu đi, nhìn Hà Tu sườn mặt.</p>
+        <p>Nhĩ hạ đến cằm cằm cái kia tuyến lại căng thẳng, Hà Tu đang khẩn trương, khẩn trương đến túm hắn cánh tay cái tay kia đều có điểm phát run.</p>
+        <p>Diệp Tư có chút khẩn trương lại buồn cười mà “Ai” một tiếng, Hà Tu dừng lại chân, trên tay một xả đem hắn kén tới rồi trên tường.</p>
+        <p>“Dựa.” Diệp Tư cắn răng mắng, mắng xong lại cười đến không được, “Ngươi mẹ nó trên tay có thể hay không có điểm số, dán poster đâu ngươi.”</p>
+        <p>Hà Tu không nói chuyện, lỗ trống thang lầu gian vang lưỡng đạo lẫn lộn ở bên nhau tiếng hít thở, Hà Tu nhìn chằm chằm hắn nửa ngày, mở miệng tiếng nói lại có điểm ách, “Chuyện khi nào.”</p>
+        <p>“Cái gì chuyện khi nào.” Diệp Tư cười, lại có điểm ngượng ngùng, nheo nheo mắt, “Nói cái gì đâu, bổn Pikachu nghe không hiểu a.”</p>
+        <p>Hà Tu nhìn chằm chằm hắn một hồi, ngực phập phồng càng thêm dồn dập. Một đạo chói tai rời giường linh đột nhiên vang lên, Hà Tu đột nhiên như là bị cái gì hung hăng đẩy một phen dường như, đột nhiên khuynh quá thân mình ở Diệp Tư ngoài miệng hôn đi xuống.</p>
+        <p>Hai người đều hổn hển mang suyễn mà ở lẫn nhau bên lỗ tai thượng thở phì phò, Hà Tu cắn Diệp Tư môi, lại dán lại gặm, hắn có thể cảm giác được chính mình không quá ôn nhu, nhưng ngưu bức hống hống Diệp Thần tựa hồ cũng không cần hắn ôn nhu, lật lọng liền gặm trở về.</p>
+        <p>Hà Tu bắt tay đáp ở Diệp Tư trên eo, cách áo sơmi vải dệt sờ đến Diệp Tư lưng quần, lại đi xuống sờ soạng một phen.</p>
+        <p>“Dựa.” Diệp Tư mông bị nắm đến, cảm giác chính mình mặt đỏ đến muốn sung huyết, cũng không cam lòng yếu thế mà điên cuồng ở Hà Tu trên người xoa, bắt được nào xoa nào, một hồi phát rồ lục thân không nhận thủ pháp.</p>
+        <p>Nhìn xem, nhìn xem loại này học tập tốt, ngày thường trang đến giống cái thần tiên dường như, kết quả mới thân đệ nhất khẩu liền niết người khác mông.</p>
+        <p>Không đem hắn cả người chà rớt da đều thực xin lỗi hắn.</p>
+        <p>Diệp Tư cảm giác chính mình cùng Hà Tu tựa như hai chỉ tiểu cẩu ở đánh nhau, lại thượng thủ lại thượng miệng, không một người trong lòng có phổ, hoàn toàn làm bậy.</p>
+        <p>Hắn dồn dập mà ấn Hà Tu bối, đột nhiên nghe thấy hành lang cuối có mấy cái ký túc xá cửa mở, biến mất hơn nửa ngày Thẩm Lãng quát: “Ôn Thần! Ngươi mẹ nó nhưng xem như tỉnh! Ra đại sự!”</p>
+        <p>“……”</p>
+        <p>Hà Tu sau này lui nửa bước, Diệp Tư cũng buông ra dính ở trên người hắn tay, sau đó hai người ánh mắt không hẹn mà cùng dừng ở đối diện trên môi.</p>
+        <p>Giống nhau như đúc đỏ bừng còn có dấu răng, rõ ràng mới vừa trải qua một hồi hỗn loạn chật vật chiến đấu.</p>
+        <p>“Dựa.” Diệp Tư trước phá công, cười mắng dùng sức xoa xoa miệng, “Ngươi nói cùng bọn họ nói hai ta ăn cay rát cái lẩu bọn họ có thể tin sao?”</p>
+        <p>Hà Tu khắc chế mà lắc đầu, “Trừ phi bọn họ não tàn.”</p>
+        <p>“Kia……” Diệp Tư tê một tiếng, nhìn Hà Tu trên người kia kiện bị xoa đến nhăn bèo nhèo áo sơmi, không cần cúi đầu liền biết chính mình cũng hảo không đến nào đi, thở dài nói: “Kia làm sao bây giờ a.”</p>
+        <p>“Đi trước ăn kem đi.” Hà Tu hít sâu một hơi, có chút do dự mờ mịt nói: “Ăn xong kem…… Nhìn xem có thể hay không hảo một chút.”</p>
+        <p>Diệp Tư lại mừng rỡ thiếu chút nữa tài tiến trong lòng ngực hắn.</p>
+        <p>Này sẽ trở về tặng đồ ước tương đương tìm chết, Hà Tu kéo ra phòng cháy môn một cái phùng, đem vừa rồi tiến vào phía trước hai người hoảng loạn trung tùy tay ném ở hành lang trên mặt đất bồn kéo vào tới, Diệp Tư tắc phụ trách ở 602 trong đàn chọc một chút Thẩm Lãng.</p>
+        <p>Diệp Tư: Lãng ca, ta bồi học thần đi xem đầu óc, ngươi đợi lát nữa đến phòng cháy thang bên ngoài đem đôi ta chậu rửa mặt nhặt về đi, còn có đi đi học khi cũng mang lên ta cặp sách a.</p>
+        <p>Thẩm Lãng bay nhanh hồi phục: Dựa? Sao lại thế này? Học thần làm sao vậy?!</p>
+        <p>Diệp Tư dùng tiếc nuối miệng lưỡi hồi phục: Hắn trong ngăn tủ có tà môn đồ vật, ngươi cùng Ôn Thần ngàn vạn đừng nhìn, chờ chúng ta quay đầu lại nói tỉ mỉ.</p>
+        <p>Diệp Tư phát xong này một cái, thuận tay đem đàn tin tức che chắn rớt, vui sướng mà thổi một tiếng huýt sáo, “Đi thôi, từ phòng cháy thang lén lút đi xuống.”</p>
+        <p>Hà Tu cười ừ một tiếng, đôi tay cắm ở túi quần đi hai bước lại dừng lại, chờ Diệp Tư duỗi cánh tay khoanh lại cổ hắn, hắn mới tiếp tục mại chân.</p>
+        <p>Sáng sớm thoảng qua, giống như cuối cùng một đạo rời giường linh chính là cái phân cách tuyến, linh vang qua, bên ngoài liền từ mờ mờ sáng sớm lập tức cắt đến ánh mặt trời nùng liệt buổi sáng. Hai người dọc theo đường đi đều thực an tĩnh, đại thái dương hạ kề tại cùng nhau thực nhiệt, nhưng càng nhiệt liền ai đến càng chặt thật, ai cũng không muốn lui một bước.</p>
+        <p>Này sẽ là đi học tối cao phong, nhưng trọ ở trường cơ bản đều ở hướng thực đường đi, là đi theo khu dạy học tương phản phương hướng, đi đường nghênh diện đụng tới đều là từ cổng trường tiến vào học sinh ngoại trú.</p>
+        <p>Diệp Tư lười biếng mà híp mắt, “Ngươi nói hôm nay quán bánh rán kia đại ca có thể ra quán sao?”</p>
+        <p>“Khó nói.” Hà Tu cười, “Từ đâu ra đại ca, kia số tuổi đều có thể đương ngươi gia gia.”</p>
+        <p>“Thí.” Diệp Tư bĩu môi, “Còn gia gia đâu, kêu đại ca đều là cho hắn mặt mũi, hôm nay nếu là không ra quán hắn chính là cái đệ đệ.”</p>
+        <p>Hà Tu cười cười không nói chuyện, giơ tay ở Diệp Tư cánh tay thượng lại xoa xoa. Hai người đi rồi một hồi, Hà Tu đột nhiên thấp giọng nói: “Cho nên, vừa rồi……”</p>
+        <p>“Ân?” Diệp Tư quay đầu xem hắn, hai khuôn mặt dán đến thân cận quá, gần đến Diệp Tư nhịn không được lại có một chút khẩn trương.</p>
+        <p>Hà Tu dùng nóng hừng hực lòng bàn tay ở hắn phía sau lưng thượng dán dán, “Cho nên ta là biến thành một cái vũ trụ sét đánh vô địch ngưu bức gia hỏa bạn trai sao.”</p>
+        <p>Diệp Tư nhìn hắn lông mi tiêm nhẹ nhàng mà run rẩy, giơ lên khóe miệng, “Đúng vậy, kia ta cũng làm ta cái kia đồng loại bạn trai?”</p>
+        <p>Hà Tu gật đầu, “Ân.”</p>
+        <p>“Bạn trai!” Diệp Tư dùng sức ở hắn xương bả vai thượng nhéo nhéo, “Ngươi hảo!”</p>
+        <p>“Ngươi hảo.” Hà Tu giơ lên ý cười, lại nhịn không được nhạc lên tiếng, thở dài một tiếng, như là muốn đem trong khoảng thời gian này tới nay không thể hiểu được cùng lo lắng hãi hùng tất cả đều than ra tới.</p>
+        <p>“Cùng mộng giống nhau.” Hà Tu nhìn cổng trường rộn ràng nhốn nháo học sinh cảm khái nói.</p>
+        <p>Diệp Tư vòng vòng cánh tay, “Ta cũng cảm thấy, có điểm không chân thật.”</p>
+        <p>“Bạn trai.” Hà Tu đột nhiên bay nhanh nói, sau đó xoay đầu dùng sức nhìn chằm chằm hắn.</p>
+        <p>“Ai.” Diệp Tư nhướng mày, “Bạn trai?”</p>
+        <p>“Là ta.” Hà Tu thính tai lại có điểm hồng, vẫn là nghiêm túc mà gật đầu.</p>
+        <p>Hai người đi rồi hai bước, đi ra cổng trường, lại đồng thời cười đến không thể không dừng lại, Diệp Tư ôm Hà Tu cổ, dùng sức đâu đâu, “Thật mẹ nó vui vẻ a.”</p>
+        <p>“Ta cũng là.” Hà Tu kiều khóe miệng giống như vẫn luôn liền không buông, “Ta vũ trụ sét đánh vô địch cự vô bá vui vẻ.”</p>
+        <p>Diệp Tư bang một tiếng chụp ở hắn phía sau lưng thượng, “Có thể! Có thể nói!”</p>
+        <p>Hà Tu lại nở nụ cười.</p>
+        <p>Quán bánh rán đệ đệ không có ra quán, hai người ở món ăn bán lẻ cửa hàng tủ đông bắt hai căn kem, Diệp Tư cầm một cây chocolate, Hà Tu là dâu tây, đứng ở tường vây bên cạnh một chỗ không ai râm mát địa phương gặm. Gặm một nửa Diệp Tư đem chính mình kia chỉ vói qua, vì thế Hà Tu liền tự nhiên mà vậy mà đem băng côn đổi lại đây.</p>
+        <p>Hắn không biết có phải hay không chính mình quá chưa hiểu việc đời, ở bên nhau sau lần đầu tiên trao đổi băng côn ăn, hắn đều cảm giác ngực phanh phanh phanh mà nhảy cái không để yên, kích động đến có điểm ăn không ra băng côn là cái gì mùi vị.</p>
+        <p>“Ai, hy vọng sẽ không dạ dày đau.” Diệp Tư ăn một miệng lạnh lẽo, xoa xoa bụng, “Đợi lát nữa mua điểm bánh mì gì đó mang vào đi thôi, không mua nhiệt đồ vật, đừng một lạnh một nóng thật ăn hỏng rồi.”</p>
+        <p>“Hành.” Hà Tu gật đầu, kỳ thật hắn có điểm muốn đi mua cái nhiệt sữa đậu nành uống uống, nhưng Diệp Tư nói không ăn nhiệt vậy quên đi, Diệp Tư nói cái gì đều là đúng.</p>
+        <p>Hà Tu đứng ở kia đem băng côn ăn xong, Diệp Tư còn dư lại cuối cùng một ngụm, hắn quay đầu đi nhìn Diệp Tư nghiêm túc ăn băng côn sườn mặt, lòng tràn đầy xao động giống như lại trầm tĩnh đi xuống một chút.</p>
+        <p>Hà Tu nhịn không được duỗi tay lại ở Diệp Tư phía sau lưng thượng xoa xoa, xoa xoa liền nhịn không được lại đi xuống nhéo một phen, ở thu hoạch Diệp Tư một cái trừng mắt lúc sau gợi lên khóe miệng, “Đi mua bánh mì đi, ngươi ăn cái gì?”</p>
+        <p>“Đậu đỏ.” Diệp Tư bay nhanh nói, “Ta muốn hai cái đi, thêm hai căn xúc xích, chết đói.”</p>
+        <p>Hà Tu gật gật đầu. Từ Diệp Tư trên tay tiếp nhận ăn thừa băng côn côn niết ở trong tay, muốn tìm cái thùng rác trước ném. Hai người đặt ở túi quần di động đồng thời vang lên một tiếng, Diệp Tư tùy tay móc ra tới xem.</p>
+        <p>“Lãng ca trước hai ngày nói ra cái tân hotdog khá tốt ăn.” Hà Tu ném xong rác rưởi trở về nói, “Đi bán cửa hàng nhìn xem đi, thường ăn cái loại này đều là tinh bột, ăn cũng không no.”</p>
+        <p>Nhưng mà hắn những lời này không có được đến đáp lại, Diệp Tư nhìn chằm chằm di động biểu tình thập phần ngưng trọng, Hà Tu tạm dừng hạ, “Diệp Tư?”</p>
+        <p>“Xong rồi.” Diệp Tư đột nhiên bắt lấy hắn tay hướng nói biên chạy hai bước, vừa vặn có một xe taxi dừng lại, trong xe học sinh còn không có mở cửa, Diệp Tư liền một phen kéo ra cửa sau đem người túm đi xuống, rống lên một tiếng, “Lên xe!”</p>
+        <p>Hà Tu nhanh chóng lên xe chui vào bên trong, Diệp Tư nhảy vào tới một phen kéo lên cửa xe, “Sư phó, thị bệnh viện cấp cứu phòng khám bệnh, đi mau!”</p>
+        <p>“Làm sao vậy?” Hà Tu hỏi.</p>
+        <p>Diệp Tư không hồi hắn, hổn hển mang suyễn mà đối với không khí sững sờ, Hà Tu đành phải chính mình đào di động click mở tin tức danh sách.</p>
+        <p>Là phía trước ăn sinh nhật tiểu trong đàn Thẩm Phi phát tin tức.</p>
+        <p>“Tiểu Giản bị xe quát đến các ngươi có người có thể tới sao nhanh lên thị bệnh viện cấp cứu hắn chúng ta đi vào”</p>
+        <p>Tác giả có lời muốn nói: Phật trứng đứng ở bệ bếp trước, vẻ mặt bình tĩnh, cơm chiều ăn cái gì?</p>
+        <p>Gạo kê cháo, tác giả vạch trần nắp nồi nói.</p>
+        <p>Phật trứng gật gật đầu, vậy ngươi nhiều phóng một chút gạo kê, ta bạn trai trứng thảm trứng thích uống trù một chút.</p>
+        <p>Tác giả tùy ý gật đầu.</p>
+        <p>Quá một hồi Phật trứng lại lại đây, ta bạn trai trứng thảm trứng ngày thường dùng cái kia Pikachu chén nhỏ chén đi đâu?</p>
+        <p>Không phải ở kia sao. Tác giả quay đầu nhìn mắt chén trì, ngươi hạt a.</p>
+        <p>Nga, Phật trứng nhìn thoáng qua, mới vừa không thấy được.</p>
+        <p>Ăn cơm trước, Phật trứng đứng ở ghế nhỏ thượng, ngươi nhìn đến ta bạn trai trứng thảm trứng sao?</p>
+        <p>Tác giả ẩn nhẫn mà nhắm miệng không nói lời nào.</p>
+        <p>Phật trứng thở dài, hảo kỳ quái, vừa rồi ta bạn trai trứng thảm trứng còn tại đây xem TV đâu.</p>
+        <p>Tác giả:……</p>
+        <p>Phật trứng nhìn tác giả liếc mắt một cái, lại nói, ngươi đi kêu ta bạn trai trứng thảm trứng đi, ta bạn trai trứng thảm trứng không thích chúng ta cõng hắn ăn cơm trước.</p>
+        <p>Đủ lạp!! Tác giả giận tím mặt, một phen túm lên tiểu giẻ lau che lại lải nhải Phật trứng, ta biết hắn là ngươi bạn trai trứng! Câm miệng!</p>
+        <p>Phật trứng yên lặng nắm hạ tiểu giẻ lau, cái này hảo xú, ta bạn trai trứng thảm trứng không thích, lấy đi.</p>
+        <p>..</p>
+        <p>Khẽ meo meo nói hai việc:</p>
+        <p>1. Chỉ phòng đại gia nghĩ nhiều, đây là một quyển nhiệt huyết thanh xuân hướng bánh ngọt nhỏ, cho nên vô luận vai chính vẫn là vai phụ đều sẽ không bi kịch</p>
+        <p>2. Nhìn đến nơi này nếu đại gia cảm thấy gõ bàn phím còn rất ngọt ngào nói, có thể khẽ meo meo cất chứa một phát gõ bàn phím chuyên mục</p>
+        <p>..</p>
+        <p>Ngày mai thấy .</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- END-AUTO-INSERT-54 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong53.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong55.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "sa-dieu-hoc-ba-he-thong";
+const NOVEL_TITLE = "Sa Điêu Học Bá Hệ Thống";
+const CHAPTER_TITLE = "Chương 54: Hổ phách thời gian";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

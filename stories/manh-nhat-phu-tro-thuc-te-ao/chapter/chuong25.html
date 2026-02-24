@@ -1,0 +1,421 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 25: Chuyển chức đi lạp ( bắt trùng )</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Mạnh Nhất Phụ Trợ Thực Tế Ảo
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 25: Chuyển chức đi lạp ( bắt trùng )</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong24.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong26.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-25 -->
+<p>Này đầu sát thông cáo, lại lần nữa làm Kênh Thế Giới sôi trào lên.</p>
+<p>【 thế giới 】 Cain: Cái gì ngoạn ý? Đây là đem khiêu chiến bổn đương kinh nghiệm bổn ở đánh a? Kinh nghiệm bổn cực hạn tốc độ cũng mới 20 phút, kết quả khiêu chiến vốn cũng dùng giống nhau thời gian cầm đầu sát???</p>
+<p>【 thế giới 】 Sương Mù Xem Hoa: Đồng đội hỏi ta vì cái gì đột nhiên quỳ xuống……⊙▽⊙ ta làm nàng xem thông cáo lúc sau, nàng cùng ta cùng nhau quỳ xuống……</p>
+<p>【 thế giới 】 Tình Không Vạn Lí: Các ngươi có thể hay không quá khoa trương? Bọn họ đội ngũ so phó bản cao hơn 10 cấp, có cấp bậc áp chế, đánh lên đảm đương nhiên nhanh.</p>
+<p>【 thế giới 】 Bình Chân Như Vại: Ngươi nói có nhất định đạo lý, nhưng là ngươi tin hay không, liền tính là đồng dạng cấp bậc người chơi đi vào, cũng không có cách nào nhanh như vậy thông quan?</p>
+<p>【 thế giới 】 Nhất Diệp Cô Chu: Ta tin! Ngoan ngoãn ngồi chờ đại lão chia sẻ công lược ( mỉm cười biểu tình )</p>
+<p>【 thế giới 】 Già Đồ: Trách không được các đại lão đột nhiên muốn thu 25 cấp trở lên trang bị, hẳn là chuẩn bị muốn đi khiêu chiến Vực Sâu phó bản đi?</p>
+<p>【 thế giới 】 Thiên Mạch: Ta nhớ rõ Vực Sâu phó bản muốn 15 người! Ta muốn chạy nhanh thăng cấp! Vạn nhất đại lão đoàn đội thiếu người, ta còn có thể kịp thời bổ thượng!</p>
+<p>【 thế giới 】 Bất Dạ Thiên: Ngọa tào, huynh đệ ngươi rất có ý tưởng a! Cao phát ra thích khách, Rừng Rậm Mộ Địa kinh nghiệm bổn cầu tổ a!</p>
+<p>Mà lúc này phó bản nội, Truy Hồn cùng Linh Mặc chính vây quanh bảo rương xoay vòng vòng, trong miệng còn lẩm bẩm.</p>
+<p>“Thiên linh linh, địa linh linh, phù hộ Nhiễm ca trừu cái tím trang!”</p>
+<p>“Thiên linh linh, địa linh linh, phù hộ Nhiễm ca trừu đến kỹ năng thư!”</p>
+<p>Nhiễm Kỳ: “……”</p>
+<p>Đại huynh đệ, này đều tinh tế lịch ba ngàn năm, các ngươi như thế nào còn đang làm phong kiến mê tín?</p>
+<p>Tiểu Bạch long nhưng thật ra cảm thấy bọn họ hành vi rất thú vị, cũng chụp phủi tiểu cánh, đi theo bọn họ phía sau một bên phi một bên nãi hồ hồ mà chít chít kêu.</p>
+<p>Mấy người lải nha lải nhải xoay nửa ngày, Truy Hồn nhìn về phía Nhiễm Kỳ, vẻ mặt nghiêm túc nói: “Nhiễm ca! Đến ngươi phát huy lúc!”</p>
+<p>Nhiễm Kỳ buồn cười mà lắc lắc đầu, sau đó tiến lên mở ra cái thứ nhất bảo rương.</p>
+<p>【 hệ thống 】 chúc mừng ngài đạt được [ kỹ năng thư · Thánh Quang Thuật ] cùng đặc thù đạo cụ [ Vực Sâu Mảnh Nhỏ ].</p>
+<p>【 kỹ năng thư · Thánh Quang Thuật 】</p>
+<p>Nhưng học cấp bậc: 30</p>
+<p>Hạn chế chức nghiệp: Mục sư</p>
+<p>Sử dụng thuyết minh: Mở ra có thể học được kỹ năng [ Thánh Quang Thuật ]. Ngâm xướng 3 giây, làm lạnh thời gian 5 phút, triệu hoán thần thánh chi lực, tràn ngập quanh thân 3 mễ phạm vi, sở hữu tiến vào thi pháp phạm vi người chơi đều nhưng nhanh chóng khôi phục sinh mệnh giá trị, liên tục thời gian 15 giây ( thi pháp giả di động hoặc tử vong, tắc thánh quang trị liệu hiệu quả biến mất ).</p>
+<p>“Ha ha ha, thật sự ra kỹ năng thư! Vẫn là phạm vi quần thể trị liệu kỹ năng! Vực Sâu phó bản thời điểm đã có thể có thể phái đại tác dụng!” Linh Mặc cao hứng cực kỳ, chỉ cảm thấy chính mình cầu nguyện linh đến không được.</p>
+<p>“Chúng ta Nhiễm ca lại trở nên càng cường, khẳng định là trước mắt mới thôi cái thứ nhất học được bốn kỹ năng mục sư! Nãi biến thiên hạ vô địch thủ a!” Truy Hồn cũng tới một đợt cầu vồng thí.</p>
+<p>Nhiễm Kỳ làm toàn đội duy nhất mục sư, này bổn kỹ năng thư không hề nghi ngờ mà bị phân cho hắn.</p>
+<p>Kỳ thật Nhiễm Kỳ kỹ năng thụ là toàn mãn trạng thái, hắn căn bản không cần kỹ năng thư, chỉ cần cấp bậc đạt tới yêu cầu lúc sau, tương ứng kỹ năng liền sẽ trực tiếp tự động thắp sáng. Nhưng là hắn cùng Dạ Kiêu bọn họ hợp thành cố định đội lúc sau, cơ hồ vẫn luôn đều ở bên nhau, căn bản tìm không thấy đạt được kỹ năng mới lý do, cho nên liền tính hắn đã kích hoạt rồi Thánh Quang Thuật, cũng không có cách nào sử dụng.</p>
+<p>Hiện tại được đến kỹ năng thư, hắn mới rốt cuộc có thể quang minh chính đại mà sử dụng cái này kỹ năng mới, đến nỗi này bổn kỹ năng thư, hắn là không nghĩ lãng phí, vẫn là trước lưu trữ, chờ về sau tìm cơ hội đưa cho Phụng Thiên hảo.</p>
+<p>Sau đó, Nhiễm Kỳ thực tự giác mà cấp đội ngũ giao 10 kim vất vả phí.</p>
+<p>Dạ Kiêu: “Không cần cấp nhiều như vậy.”</p>
+<p>“Không có việc gì, ta có tiền.” Nhiễm Kỳ nhìn hắn một cái, lại ý xấu mà bổ sung nói, “Ta nhặt ve chai tránh.”</p>
+<p>Dạ Kiêu: “……”</p>
+<p>Nhiễm Kỳ tùy ý một câu, thiếu chút nữa đem hắn nghẹn cái chết khiếp.</p>
+<p>Tiếp theo, Nhiễm Kỳ lại mở ra cái thứ hai bảo rương.</p>
+<p>【 hệ thống 】 chúc mừng ngài đạt được cao cấp tài liệu [ hoa ăn thịt người độc đằng ] cùng đặc thù đạo cụ [ cao cấp nhất công kích ma văn · phối phương ].</p>
+<p>【 hoa ăn thịt người độc đằng 】</p>
+<p>Cấp bậc: A cấp</p>
+<p>Thuyết minh: Cao cấp tài liệu, nhưng dùng cho chế tác vũ khí, cũng mang thêm độc tính thương tổn.</p>
+<p>【 cao cấp nhất công kích ma văn · phối phương 】</p>
+<p>Cấp bậc: A cấp</p>
+<p>Thuyết minh: Cường hóa loại ma văn phối phương, sử dụng sau nhưng học được cao cấp nhất phá hư ma văn chế tác phương pháp, có thể vì vũ khí gia tăng cơ sở lực công kích 20%.</p>
+<p>“Này hai dạng đồ vật tính hảo vẫn là không tốt?” Truy Hồn cùng Linh Mặc thấu đi lên không hiểu ra sao hỏi.</p>
+<p>“Đương nhiên là thứ tốt! Nhiễm ca khai ra tới đồ vật có thể là không tốt sao?” Kiếm Chỉ Lưu Niên tức giận mà trắng bọn họ hai cái liếc mắt một cái, “Cái này độc đằng là làm vũ khí chủ yếu tài liệu, công kích ma văn càng là phụ ma vật phẩm trung khó nhất đạt được một loại, đều là khả ngộ bất khả cầu thứ tốt.”</p>
+<p>“Cái này ta đương nhiên biết a! Nhưng là chế tác A cấp vũ khí không phải đối kỹ năng thuần thục độ yêu cầu rất cao sao? Tài liệu đã có thể chỉ có như vậy một phần! Cảm giác tuy rằng lợi hại nhưng là không dùng được……”</p>
+<p>“Chính là a! Ma văn là cái thứ tốt ta đương nhiên biết a! Nhưng là tiền đề là cần thiết học được luyện kim thuật a! Luyện kim thuật nhưng được công nhận sở hữu sinh hoạt kỹ năng khó nhất học một loại!”</p>
+<p>Nhiễm Kỳ đem bọn họ đối thoại đều nghe vào trong tai, lúc này liền cười nói, “Cái này liền không cần các ngươi lo lắng, đồ vật giao cho ta, các ngươi liền chờ đổi tân trang bị là được.”</p>
+<p>“Nhiễm ca vạn tuế!!!” Mấy người tức khắc hoan hô lên.</p>
+<p>“Đi thôi! Thừa dịp trạng thái hảo, chúng ta đi đem Hắc Thạch Quặng Mỏ khiêu chiến bổn đầu sát cũng cấp bắt lấy tới!”</p>
+<p>Xác thật như Kênh Thế Giới người chơi theo như lời như vậy, bọn họ đánh Rừng Rậm Mộ Địa thời điểm là có cấp bậc áp chế ưu thế, cho nên đánh đến mới như vậy nhẹ nhàng, nhưng Hắc Thạch Quặng Mỏ liền không giống nhau, dù sao cũng là 25 cấp phó bản, liền tiểu quái lực công kích đều cao đến thái quá, nếu là không đề cập tới khởi tinh thần đối đãi nói, còn thật có khả năng lật thuyền trong mương.</p>
+<p>Bất quá bọn họ ỷ vào Nhiễm Kỳ có Thánh Quang Thuật, vẫn như cũ áp dụng cùng kinh nghiệm bổn đồng dạng đấu pháp, làm Linh Mặc cùng Kiếm Chỉ Lưu Niên hai cái chạy trốn mau đi dẫn quái, sau đó Truy Hồn cùng Cố Nhạc hai cái có quần công kỹ năng phụ trách tiếp ứng.</p>
+<p>Đương nhiên, bọn họ không có khả năng tìm đường chết mà dùng một lần đem sở hữu tiểu quái đều đưa tới, mà là chia lượt mà đưa tới mười mấy.</p>
+<p>Bọn họ đem tiểu quái dẫn tới cùng nhau lúc sau, Nhiễm Kỳ liền phóng ra đàn liệu kỹ năng, những người khác vây quanh đi lên, giống như chém dưa xắt rau giống nhau đem này đó tiểu quái toàn bộ tiêu diệt. Chờ Nhiễm Kỳ Thánh Quang Thuật CD kết thúc, đệ nhị sóng tiểu quái liền lại kéo lại đây, bọn họ cứ như vậy vẫn duy trì dẫn một đám thanh một đám tốc độ, thực mau tới tới rồi tắc kè hoa BOSS trước mặt.</p>
+<p>Đánh BOSS thời điểm, mấy người đặc biệt cẩn thận, bởi vì cái này BOSS phạm vi công kích kỹ năng không ít, đặc biệt là phun độc kỹ năng lực sát thương, so với kinh nghiệm bổn lại đề cao không ít. Tuy rằng Nhiễm Kỳ có quần thể trị liệu năng lực, nhưng là Thánh Quang Thuật chỉ có thể hồi phục sinh mệnh giá trị, cũng không thể đi trừ mọi người trúng độc trạng thái, một khi có hai người trở lên đồng thời trúng độc, vẫn như cũ là xong đời tiết tấu, cho nên nhìn đến BOSS bụng phồng lên thời điểm, đại gia vẫn là liều mạng mà chạy lên.</p>
+<p>Cũng không biết cái này BOSS có phải hay không cùng Nhiễm Kỳ có thù oán, Nhiễm Kỳ rõ ràng xem nó đầu là hướng tới bên phải, cho nên hắn mới hướng bên trái chạy, ai biết cái này đáng chết tắc kè hoa đột nhiên tới cái thần long bãi đầu, lại đối với hắn phương hướng phun độc.</p>
+<p>Còn hảo bởi vì có kinh nghiệm lần trước, lúc này đây mọi người đều đặc biệt chú ý BOSS tình huống, trước tiên liền ném kỹ năng qua đi cấp Nhiễm Kỳ tranh thủ thời gian, ly Nhiễm Kỳ tương đối gần Cố Nhạc càng là giơ cực đại tấm chắn vọt tới hắn trước mặt, dùng tấm chắn ngăn cản BOSS phun ra nọc độc, mang theo hắn đi tới khu vực an toàn.</p>
+<p>“A a a, ta tấm chắn a!!! Bền độ chỉ còn 30! Còn ở không ngừng rớt a!” Cố Nhạc đột nhiên lớn tiếng kêu rên lên.</p>
+<p>Bởi vì Cố Nhạc toàn bộ hành trình dùng thân thể của mình cùng tấm chắn giúp Nhiễm Kỳ chống đỡ, cho nên Nhiễm Kỳ cũng không có lây dính đến độc tố, Cố Nhạc trên người hơi chút dính vào một ít, dùng Tinh Lọc Thuật tinh lọc một chút liền giải quyết, nhưng là hắn gánh vác đại bộ phận thương tổn tấm chắn bền độ lại bắt đầu điên cuồng giảm xuống.</p>
+<p>Trang bị bền độ thanh linh nói, là sẽ trực tiếp báo hỏng, cũng khó trách Cố Nhạc phản ứng sẽ như vậy lớn.</p>
+<p>“Không quan hệ…… Hỏng rồi nói, đi ra ngoài ta lại cho ngươi làm một khối……”</p>
+<p>“Hành đi! Nhất định phải làm một khối càng tốt!” Cố Nhạc cường điệu.</p>
+<p>“Không thành vấn đề……”</p>
+<p>Nhiễm Kỳ cũng là tâm mệt, thời khắc mấu chốt luôn là bị mục sư đoản chân cấp liên lụy. Hắn nghĩ chờ đi ra ngoài phó bản lúc sau, nhất định phải đi làm một đống gia tốc nước thuốc, sau đó lại cấp giày phụ cái tăng tốc độ gió mạnh ma văn.</p>
+<p>Hắn phải làm mục sư trung tốc độ nhanh nhất cái kia tử!</p>
+<p>“Chít chít!” Phảng phất bị BOSS công kích Nhiễm Kỳ hành vi chọc giận, phía trước vẫn luôn ngoan ngoãn ghé vào Dạ Kiêu đầu vai an tĩnh ngủ Tiểu Hắc long nổi giận, phát ra vài tiếng nãi hung nãi hung tiếng kêu, sau đó bay lên trời, hăng hái bay về phía BOSS, há mồm phun ra một đoàn màu đen điềm xấu sương mù.</p>
+<p>Cùng lúc đó, Dạ Kiêu thu được một cái hệ thống nhắc nhở.</p>
+<p>【 hệ thống 】 ngài sủng vật thành công kích phát Vận Rủi Nguyền Rủa kỹ năng, kỹ năng cấp bậc tăng lên.</p>
+<p>Hắn ngẩng đầu vừa thấy, tắc kè hoa BOSS động tác rõ ràng trở nên chậm chạp, công kích thương tổn cũng giảm xuống.</p>
+<p>“Mau! Tiểu Hắc kích phát nguyền rủa kỹ năng! BOSS công kích giảm xuống 10%! Đại gia tập hỏa!”</p>
+<p>“Được rồi!” Mọi người lập tức liều mạng mà ném nổi lên kỹ năng.</p>
+<p>Tắc kè hoa BOSS thấy tình thế không ổn, lại bắt đầu sử dụng bảo mệnh tuyệt chiêu, đem thân thể nhan sắc điều chỉnh vì cùng cảnh vật chung quanh nhất trí, lặng yên ẩn nấp lên.</p>
+<p>Nhưng mà không đợi mọi người tìm kiếm BOSS vị trí, Tiểu Bạch cũng đã phác cánh bay đến một khối màu đen trên cục đá, dùng ngắn ngủn tiểu jiojio hung hăng mà đạp vài cái.</p>
+<p>Dạ Kiêu hiểu ý mà vứt ra một cái hỏa cầu, quả nhiên đem BOSS cấp một lần nữa đánh ra tới.</p>
+<p>Tắc kè hoa chật vật mà khôi phục thân hình, chỉ có thể nói cái này BOSS quá xui xẻo, gặp gỡ hai chỉ tiểu khắc tinh đi.</p>
+<p>BOSS ngã xuống đất lúc sau, Tiểu Hắc lại lần nữa lấy sét đánh không kịp bưng tai chi thế đem rớt ra tới trang bị cấp nhặt lên. Còn hảo Dạ Kiêu trước tiên sửa lại nhặt thiết trí, kia kiện trang bị trực tiếp vào đoàn đội ba lô.</p>
+<p>【 hệ thống thông cáo 】 người chơi [ Dạ Kiêu ] một đốn mãnh tấu, ma hóa tắc kè hoa không cam lòng mà ném xuống [ kỵ sĩ chi nhận ] chật vật đào tẩu.</p>
+<p>【 kỵ sĩ chi nhận 】</p>
+<p>Hạn chế cấp bậc: 25 cấp trở lên</p>
+<p>Chức nghiệp yêu cầu: Thích khách</p>
+<p>Vật phẩm cấp bậc: A cấp</p>
+<p>Bền độ: 200/200</p>
+<p>Thuộc tính: Cơ sở lực công kích +75, mệnh trung +22, thể chất +19, một đòn trí mạng +10</p>
+<p>“Tím trang chủy thủ!” Kiếm Chỉ Lưu Niên trong mắt phát ra ra kích động quang mang, hắn nhưng tính cũng muốn có một kiện tím trang, hơn nữa vẫn là cực kỳ khó được màu tím vũ khí!</p>
+<p>Không riêng Kiếm Chỉ Lưu Niên chính mình kích động, Kênh Thế Giới các người chơi cũng đi theo cùng nhau kích động.</p>
+<p>【 thế giới 】 Sơn Hà Bất Phá: Lại là bọn họ…… Lại là bọn họ…… Mỗi lần xoát hệ thống thông cáo đều là bọn họ! Ta hoài nghi đây là phía chính phủ thí nghiệm nhân viên!!</p>
+<p>【 thế giới 】 Cửu Nguyệt Thiên: Không quen nhìn lại có thể sao mà? Ngươi còn có thể đánh bọn họ sao mà?</p>
+<p>【 thế giới 】 Lục Nguyệt Tuyết: Xem ngươi cái kia tìm đường chết bộ dáng! Tiểu tâm các đại lão treo giải thưởng ngươi!</p>
+<p>【 thế giới 】 Cain: Thích khách tím võ! Ta ghen ghét!</p>
+<p>【 thế giới 】 Vô Hoan: Mới vừa đánh BOSS bắt được màu lam vũ khí đột nhiên không thơm……</p>
+<p>Kiếm Chỉ Lưu Niên cao hứng phấn chấn mà hướng trong đội ngũ giao 5 kim vất vả phí, sau đó liền thay tân chủy thủ, toàn thân đen nhánh, mặt trên còn vẽ màu đỏ tươi hoa văn, đừng nói thật đúng là rất soái.</p>
+<p>Có tím trang khích lệ, mấy người đều hưng phấn lên, lại mã bất đình đề mà hướng tới tiếp theo cái BOSS sát đi, trên đường những cái đó tổ ong cũng một chút không lãng phí, Tiểu Bạch tất cả đều giúp Nhiễm Kỳ cấp thu lên.</p>
+<p>Cuối cùng một cái BOSS vốn nên là khó nhất, nhưng là Dạ Kiêu bọn họ đã nắm giữ nó nhược điểm, bởi vậy đánh lên tới không chút nào cố sức, thành công lại bắt lấy một cái đầu sát.</p>
+<p>【 hệ thống thông cáo 】 chúc mừng người chơi [ Dạ Kiêu ][ Truy Hồn ][ Linh Mặc ][ Kiếm Chỉ Lưu Niên ][ Coca ][ Bạch Nhiễm ] lấy 29 phân 01 giây 95 thành tích thông quan Hắc Thạch Quặng Mỏ khiêu chiến phó bản, cũng hoạch SSS cấp đánh giá, thêm vào khen thưởng [ hoàng kim bảo rương ] một cái.</p>
+<p>【 thế giới 】 Già Đồ: Tốc độ này thật là quá không khoa học đi? Cuối cùng BOSS không đánh thượng nửa giờ căn bản đánh không chết a! Khiêu chiến bổn cư nhiên cũng nhanh như vậy??</p>
+<p>【 thế giới 】 Đầu Mao Quyển Quyển: Ngươi đã quên bọn họ kinh nghiệm vốn là đã cầm cực nhanh thành tựu? Khẳng định có cái gì chúng ta không biết tốc thông bí quyết!</p>
+<p>【 thế giới 】 Nhất Diệp Cô Chu: Vẫn là câu nói kia . ngồi xổm đại lão công lược!</p>
+<p>【 thế giới 】 Dăm Ba Câu: Đúng đúng đúng, cầu đại lão chia sẻ một chút công lược đi! Người tốt cả đời bình an!</p>
+<p>【 thế giới 】 Mộ Quang: Người tốt cả đời phát tài! Cầu đại lão cứu cứu bọn nhỏ đi!</p>
+<p>Nhưng mà, Dạ Kiêu bọn họ lực chú ý căn bản không trên Kênh Thế Giới thượng, bọn họ đều mắt trông mong mà nhìn chằm chằm kia hai cái ánh vàng rực rỡ bảo rương đâu.</p>
+<p>“Thiên linh linh, địa linh linh……” Hai cái mê tín gia hỏa lại bắt đầu.</p>
+<p>【 hệ thống 】 chúc mừng ngài đạt được trang sức [ kỵ sĩ nhẫn ] cùng đặc thù đạo cụ [ Vực Sâu Mảnh Nhỏ ].</p>
+<p>【 kỵ sĩ nhẫn 】</p>
+<p>Hạn chế cấp bậc: 25 cấp trở lên</p>
+<p>Chức nghiệp yêu cầu: Pháp sư</p>
+<p>Vật phẩm cấp bậc: A cấp</p>
+<p>Bền độ: 200/200</p>
+<p>Thuộc tính: Cơ sở lực công kích +70, trí lực +25, thể chất +19, cơ sở lực phòng ngự +66</p>
+<p>Nhiễm Kỳ khai ra màu tím nhẫn, hơn nữa là chỉ có pháp sư có thể sử dụng, vì thế này cái thuộc tính thật tốt nhẫn liền về Dạ Kiêu.</p>
+<p>“Mau mau mau! Tiếp theo cái bảo rương!” Truy Hồn đám người mãn nhãn chờ đợi mà thúc giục nói.</p>
+<p>【 hệ thống 】 chúc mừng ngài đạt được [ kỹ năng thư · Băng Hà ].</p>
+<p>Nhiễm Kỳ vận khí thật sự quá hảo, cư nhiên lại bị hắn cấp khai ra tới một quyển kỹ năng thư, hơn nữa vẫn là pháp sư chuyên dụng quần công kỹ năng.</p>
+<p>【 kỹ năng thư · Băng Hà 】</p>
+<p>Nhưng học cấp bậc: 30</p>
+<p>Hạn chế chức nghiệp: Pháp sư</p>
+<p>Sử dụng thuyết minh: Mở ra có thể học được kỹ năng [ Băng Hà ]. Ngâm xướng 3 giây, làm lạnh thời gian 1 phút, ngưng tụ hàn băng chi lực, bao trùm quanh thân 4 mễ phạm vi, hình thành hàn băng mảnh đất, tạo thành ma pháp thương tổn 110%+ trí lực, đã chịu công kích địch nhân ở 6 giây nội di động tốc độ giảm xuống đồng tiến nhập trì độn trạng thái.</p>
+<p>“Ngưu bức! Nhiễm ca ngưu bức!”</p>
+<p>Dạ Kiêu lực công kích tuy rằng cao, nhưng là vẫn luôn không có quần công kỹ năng, bất luận là tại dã ngoại xoát quái, vẫn là ở phó bản nội đàn quái, hắn đều chỉ có thể từng bước từng bước mà đánh, hiệu suất thật sự quá thấp. Hiện tại có cái này kỹ năng, hắn rốt cuộc xem như được như ước nguyện.</p>
+<p>Phía trước nhắc tới quá, 30 cấp là 《 Ma Vực 》 trò chơi một cái quan trọng đường ranh giới, đương người chơi tới 30 cấp sau, có thể đi trước tân chủ thành, tiến hành chuyển chức cũng mở rộng kỹ năng thụ. Chuyển chức có hai cái chi nhánh lựa chọn, các chi nhánh đều có bất đồng trọng điểm điểm.</p>
+<p>Tỷ như mục sư có thể chuyển chức trở thành thần thánh mục sư hoặc là Thần Điện tư tế, thần thánh mục sư thiên trị liệu hệ; mà Thần Điện tư tế còn lại là thiên phụ trợ hệ.</p>
+<p>Cung tiễn thủ có thể chuyển chức trở thành du hiệp hoặc là thần tiễn, thần tiễn sử dụng trường cung tiến hành viễn trình công kích; mà du hiệp còn lại là sử dụng đoản cung phối hợp nhanh nhẹn thân pháp tiến hành trung cự ly ngắn công kích.</p>
+<p>Thích khách có thể chuyển chức trở thành thần ảnh hoặc là độc nha, thần ảnh là ẩn núp với trong bóng đêm kẻ ám sát, lấy tốc độ cùng nhanh nhẹn là chủ; mà độc nha tắc thiên về với dùng độc công kích.</p>
+<p>Chiến sĩ có thể chuyển chức trở thành chiến thần cùng kiếm khách, chiến thần tương đương với cuồng chiến sĩ, có rất mạnh lực công kích; kiếm khách còn lại là thiên về phòng ngự, có được rất nhiều đại khai đại hợp kéo quái kỹ năng.</p>
+<p>Pháp sư tắc có thể chuyển chức vì chiến đấu pháp sư cùng nguyên tố pháp sư, chiến đấu pháp sư tinh thông gần người cách đấu, nguyên tố ma pháp vì phụ; nguyên tố pháp sư lợi dụng băng, hỏa, thủy, mộc, thổ chờ tự nhiên thuộc tính lực lượng tiến hành chiến đấu.</p>
+<p>Tuy rằng Hỏa Cầu Thuật cùng Băng Hà là hai loại tính chất hoàn toàn tương phản ma pháp, nhưng là chỉ cần chuyển chức thành nguyên tố pháp sư, liền có thể tự do mở rộng kỹ năng thụ.</p>
+<p>“A a a a! Như thế nào đều là pháp sư đồ vật!” Truy Hồn buồn bực không thôi.</p>
+<p>Linh Mặc nhịn không được nói: “Ta cũng toan……”</p>
+<p>“Được rồi, cho các ngươi vất vả phí tổng được rồi đi?” Dạ Kiêu thực tự giác mà hướng trong đội ngũ giao 15 kim, cuối cùng là trấn an mấy người hâm mộ ghen tị hận cảm xúc.</p>
+<p>“Vừa vặn phó bản đều đánh xong, chúng ta cùng đi Sina thành chuyển chức đi.”</p>
+<p>“Tốt, đi thôi!”</p>
+<p>Toàn viên 30 cấp tình huống, là hẳn là đi tân chủ thành chuyển chức, Vực Sâu phó bản nhập khẩu cũng ở Sina ngoài thành.</p>
+<p>“Từ từ……” Kiếm Chỉ Lưu Niên đột nhiên mở miệng gọi lại đại gia, “Vừa rồi GM lại cho ta phát tin tức, hỏi chúng ta có thể hay không đem vừa rồi thông quan hai cái khiêu chiến bổn công lược viết ra tới, mặt khác phát sóng trực tiếp sự tình lão đại ngươi suy xét đến thế nào?”</p>
+<p>Ở bọn họ liên tiếp lại bắt lấy hai cái đầu sát lúc sau, GM lại lần nữa phát tin tức cùng bọn họ liên hệ, hy vọng bọn họ có thể tiếp tục ở trên diễn đàn chia sẻ công lược, mặt khác lại đề ra một chút phát sóng trực tiếp Vực Sâu phó bản sự tình, hơn nữa lại lần nữa tăng giá cả, nếu bọn họ đồng ý tiến hành phát sóng trực tiếp nói, đến lúc đó phía chính phủ bên này sẽ cho bọn họ đội ngũ mỗi người 8 trương vật thật phiếu hối đoái.</p>
+<p>“Ngươi hỏi hắn có thể hay không cho chúng ta mỗi người 10 trương, rốt cuộc còn có Giang Nam bọn họ.” Đến lúc đó phó bản là đại gia cùng nhau đánh, không có khả năng chỗ tốt chỉ có bọn họ đội ngũ người lấy.</p>
+<p>Kiếm Chỉ Lưu Niên gật gật đầu: “Tốt, ta hỏi một chút!”</p>
+<p>Không quá một hồi, GM liền cho đáp lại.</p>
+<p>“GM đồng ý! Bất quá hắn hỏi chúng ta chuẩn bị khi nào đánh Vực Sâu phó bản, hắn hảo phối hợp ở official website tuyên truyền.”</p>
+<p>Dạ Kiêu nói: “Hành, chúng ta còn phải làm điểm chuẩn bị, chờ xác định thời gian lại nói cho hắn.”</p>
+<p>Giang Nam bọn họ đội ngũ người còn không có toàn bộ đến 30 cấp, hơn nữa trang bị cùng kỹ năng còn phải nghĩ biện pháp thăng cấp, này đó đều yêu cầu thời gian tới chuẩn bị. Vực Sâu phó bản khó khăn thật sự rất cao, nội trắc thời điểm bọn họ cũng chỉ đánh qua cái thứ nhất BOSS mà thôi, luôn là phải làm đủ chuẩn bị lại đi, mới có khả năng thành công.</p>
+<p>“Hảo.”</p>
+<p>Tác giả có lời muốn nói: Có thể hay không thỉnh đáng yêu Tiểu Thiên sử nhóm điểm tiến tác giả chuyên mục, cất chứa một chút tác giả khuẩn nha ..(★▽★)</p>
+<p>Mặt khác làm chúng ta chúc mừng ngày hôm qua 188 vị Âu hoàng, cùng với độc đến 559 giải thưởng lớn Âu hoàng trung chiến đấu cơ 【 y phi 】 đồng học ... vỗ tay! Bốp bốp bốp bốp .. hôm nay phát 88 cái tiểu bao lì xì .. an ủi một chút không đoạt giải tiểu khả ái =3=</p>
+<p>Chuyển chức liền không thiết trí quá phức tạp, cũng chỉ chuyển một lần, sẽ không có nhị chuyển cùng tam xoay. Chuyển chức phương hướng nói, chiến đấu pháp sư cùng nguyên tố pháp sư tham khảo chính là DNF, mặt khác chức nghiệp là tham khảo long chi cốc cùng RO tiên cảnh truyền thuyết, cơ bản đều dựa vào biên, nếu có chỗ nào biên không đúng chỗ, còn thỉnh đại gia tha thứ một chút o(╯□╰)o ma văn giả thiết cùng long chi cốc văn chương không sai biệt lắm, đại gia có thể lý giải vì phụ ma . long chi cốc văn chương yêu cầu từng khối từng khối đánh . mà chúng ta Nhiễm Nhiễm có thể chính mình làm .. này liền lợi hại hơn đối không .. hì hì</p>
+<p>===========</p>
+<!-- END-AUTO-INSERT-25 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong24.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong26.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "manh-nhat-phu-tro-thuc-te-ao";
+const NOVEL_TITLE = "Mạnh Nhất Phụ Trợ Thực Tế Ảo";
+const CHAPTER_TITLE = "Chương 25: Chuyển chức đi lạp ( bắt trùng )";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

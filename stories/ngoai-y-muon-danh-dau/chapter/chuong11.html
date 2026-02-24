@@ -1,0 +1,883 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 11</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ngoài Ý Muốn Đánh Dấu
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 11</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-11 -->
+
+
+        <p>Trình Hạ bồi cha mẹ ăn xong cơm chiều, trở lại phòng ngủ đóng cửa lại, lúc này mới bay nhanh mà đánh hạ một đoạn lời nói chia cho Bùi Thiệu Trạch: “Bùi tổng, ngượng ngùng, vừa rồi phụ thân hỏi ta kia kiện áo lông vũ lai lịch, ta liền làm bộ là tìm học trưởng mượn. Ta phụ thân có bệnh tim, ta không nghĩ nói cho hắn ngày đó buổi tối sự tình, ngài đừng nóng giận a!”</p>
+        <p>Trình Dịch Minh làm người chính trực, nguyên tác trung hắn bị võng hữu nhục mạ cùng Trình Hạ ảnh khỏa thân khí đến tâm ngạnh qua đời, Trình Hạ cũng bởi vậy hoàn toàn hắc hóa. Nhìn ra được phụ tử hai người cảm tình thực hảo, Trình Hạ lo lắng phụ thân, bịa đặt lấy cớ cũng về tình cảm có thể tha thứ,</p>
+        <p>Bùi Thiệu Trạch đương nhiên sẽ không sinh khí, đánh chữ trả lời: “Không quan hệ. Ngươi thi xong?”</p>
+        <p>“Ân, ngày hôm qua mới vừa khảo xong.”</p>
+        <p>“Ngày mai có thời gian nói hồi công ty thiêm hiệp nghị, cho ngươi an bài tân người đại diện kêu Chu Nhan, là cái thực hảo ở chung Beta nữ tính.” Bùi Thiệu Trạch phát xong những lời này, tiếp theo nói, “Còn có, ta là C tổ tổ trưởng, thiêm xong hiệp nghị gót người đại diện cùng nhau đến văn phòng tìm ta, về ngươi tương lai phát triển phương hướng, chúng ta lại hảo hảo nói chuyện.”</p>
+        <p>Lần này hảo cảm độ sẽ khấu vài giờ? Nghe thấy chính mình là tổ trưởng, Trình Hạ có thể hay không đã chịu kinh hách?</p>
+        <p>Bùi Thiệu Trạch đợi một lát……</p>
+        <p>Trong đầu cũng không có bắn ra hảo cảm độ khấu trừ nhắc nhở, ngược lại chờ tới Trình Hạ hồi phục: “Đã biết, cảm ơn Bùi tổng!”</p>
+        <p>Bùi Thiệu Trạch: “?”</p>
+        <p>Không khấu?</p>
+        <p>Bùi Thiệu Trạch nhíu mày ở trong đầu hỏi: “Hệ thống, hảo cảm độ là như thế nào tính toán?”</p>
+        <p>Đang ở ngủ đông hệ thống 1022 bị đánh thức, ngáp dài nói: “Đối với ngươi sinh ra tín nhiệm, cảm kích, ái mộ chờ chính diện cảm xúc, liền sẽ gia tăng hảo cảm trị số; đối với ngươi sinh ra sợ hãi, hoài nghi, ghen ghét, thù hận chờ mặt trái cảm xúc, liền sẽ khấu trừ trị số.”</p>
+        <p>Hoài nghi, sợ hãi chờ mặt trái cảm xúc cũng sẽ khấu số liệu?</p>
+        <p>Trách không được Trình Hạ phía trước hảo cảm độ ở lặp lại hoành nhảy, Bùi Thiệu Trạch cuối cùng minh bạch nguyên nhân . nói cách khác, đối Trình Hạ như vậy não động phong phú gia hỏa, vẫn là tận lực đem nói minh bạch tương đối hảo.</p>
+        <p>Bùi Thiệu Trạch cầm lấy di động, kiên nhẫn mà cấp Trình Hạ phát đi một đoạn giải thích: “Nghệ sĩ phân tổ là công ty quản lý tầng quyết định, đem ngươi phân đến C tổ, cũng không phải đối với ngươi có ý kiến gì. Ngày đó buổi tối sự ta đã điều tra rõ là Triệu Văn Tu quỷ kế, cùng ngươi không quan hệ, không cần để ở trong lòng, về sau đi theo tân người đại diện hảo hảo nỗ lực lên.”</p>
+        <p>Trình Hạ nhìn đến này đoạn tin tức, huyền vài thiên tâm cuối cùng hoàn toàn thả lại trong bụng, hắn kích động mà ôm di động ở trên giường lăn một vòng, bay nhanh mà đánh chữ hồi phục: “Cảm ơn Bùi tổng, ta nhất định sẽ nỗ lực!!”</p>
+        <p>Hai cái dấu chấm than.</p>
+        <p>Sau đó, Bùi Thiệu Trạch trong đầu lại bắn ra một cái .</p>
+        <p>【 Trình Hạ đối với ngươi hảo cảm độ +10】</p>
+        <p>Quả nhiên, đừng làm cho hắn lung tung não bổ, nói rõ thì tốt rồi.</p>
+        <p>Bùi Thiệu Trạch tâm tình sung sướng mà buông xuống di động, dùng trên bàn máy bàn cấp bản quyền bộ tổng giám bát đi cái nội tuyến: “Chu tổng giám, ta muốn tư liệu, phiền toái ngươi mau chóng đưa đến ta văn phòng.”</p>
+        <p>Một lát sau, mang mắt kính chu tổng giám ôm một đại điệp folder gõ cửa phòng làm việc, đi đến Bùi Thiệu Trạch trước mặt, thần sắc nghiêm túc mà nói: “Bùi tổng, ta làm bản quyền tổ đồng sự tăng ca, đem bản quyền còn ở công ty tiểu thuyết toàn bộ sửa sang lại hảo nội dung đại khái cùng nhân vật tiểu truyện, đây là sửa sang lại tốt tư liệu, thỉnh ngài xem qua.”</p>
+        <p>Bùi Thiệu Trạch ý bảo hắn đem tư liệu đặt lên bàn, ngẩng đầu nhìn về phía hắn nói: “Thực hảo, vất vả các ngươi. Ta sẽ nhìn kỹ một lần, tuyển ra thích hợp vở, lập hạng phía trước lại cùng các ngươi liên hệ.”</p>
+        <p>“Tốt, Bùi tổng ngài trước vội.” Chu tổng giám xoay người rời đi văn phòng.</p>
+        <p>Thiên Toàn tập đoàn bản quyền bộ mỗi năm đều sẽ mua sắm một ít thích hợp cải biên thành phim ảnh tiểu thuyết bản quyền, mặc kệ chụp không chụp, trước đem bản quyền mua tới phóng, vạn nhất nào đó đề tài bỗng nhiên đỏ, nắm chặt thời gian lập hạng quay chụp là có thể tàn nhẫn kiếm một bút.</p>
+        <p>Tưởng phủng một tân nhân, đơn giản nhất biện pháp chính là từ công ty đã mua sắm bản quyền trong sách tuyển một quyển thích hợp, trực tiếp đầu tư quay chụp. Gần nhất bản quyền ở Thiên Toàn, ai diễn vai chính từ Thiên Toàn định đoạt; thứ hai, Trình Hạ hiện tại là C tổ nghệ sĩ, Bùi Thiệu Trạch tưởng đầu bao nhiêu tiền, muốn tìm ai tới đạo diễn, không cần trải qua rườm rà hội nghị thảo luận, chính mình là có thể đánh nhịp quyết định.</p>
+        <p>Chu tổng giám làm việc hiệu suất rất cao, còn rất cẩn thận mà làm một phần mục lục, đem sở hữu hồ sơ phân loại sửa sang lại phương tiện lão bản xem xét. Bùi Thiệu Trạch ở trong lòng tán hắn một câu, căn cứ mục lục đánh số bắt đầu tìm đọc.</p>
+        <p>Trình Hạ mới vừa mãn 18 tuổi, trên người còn mang theo ngây ngô học sinh khí, như vậy tân nhân nhất thích hợp đương nhiên là thanh xuân vườn trường kịch vai chính. Bản quyền bộ lấy tới tiểu thuyết giữa vườn trường văn có vài thiên, Bùi Thiệu Trạch nhanh chóng xem xong cốt truyện đại khái, loại bỏ một ít không phù hợp Trình Hạ nhân thiết, cùng với cốt truyện cẩu huyết ngược luyến, cuối cùng tuyển định một bộ vườn trường văn.</p>
+        <p>Trình Hạ hiện tại kỹ thuật diễn còn có chút non nớt, khống chế không được quá phức tạp nhân vật, từ đơn giản kịch bản bắt đầu sẽ càng thêm bảo hiểm. Này bộ vườn trường văn không như vậy nhiều tê tâm liệt phế ngược luyến tình thâm, chỉnh thể thượng là “Hoan hỉ oan gia” nhẹ nhàng khôi hài lộ tuyến, nhất quan trọng là, tiểu thuyết vai chính ánh mặt trời rộng rãi tính cách thực phù hợp Trình Hạ nhân thiết.</p>
+        <p>Chỉ cần chụp đến hảo, Trình Hạ khẳng định có thể tiểu hồng một phen.</p>
+        <p>Bùi Thiệu Trạch đem folder đơn độc phóng đi một bên.</p>
+        <p>Nhìn quá nhiều tư liệu, hắn có chút đau đầu, liền nhắm mắt lại dựa vào ghế dựa nghỉ ngơi một lát.</p>
+        <p>Chương Phàm bưng cà phê tiến vào thời điểm Bùi Thiệu Trạch đang ở nhắm mắt dưỡng thần.</p>
+        <p>Bùi tổng mấy ngày nay vẫn luôn ở công ty tăng ca, đặt ở trước kia Chương Phàm căn bản là không dám tưởng tượng Bùi Thiệu Trạch sẽ thời gian dài như vậy đãi ở trong văn phòng xử lý văn kiện. Trước kia Bùi Thiệu Trạch buổi tối thường xuyên cùng mấy cái anh em đi ngợp trong vàng son câu lạc bộ High cái suốt đêm, sau đó ngủ đến giữa trưa, ngày đêm điên đảo là thái độ bình thường, nhắc tới công ty sự hắn liền vẻ mặt không kiên nhẫn.</p>
+        <p>Hiện giờ cái này Bùi Thiệu Trạch……</p>
+        <p>Tựa như thay đổi cá nhân.</p>
+        <p>Không chỉ Chương Phàm, công ty rất nhiều công nhân, đặc biệt là C tổ các đồng sự đều có loại cảm giác này.</p>
+        <p>Bùi tổng công tác khi thái độ nghiêm khắc, rồi lại dứt khoát lưu loát, không nói nhiều một câu vô nghĩa, an bài sự tình gọn gàng ngăn nắp. Nhiều như vậy người đại diện một lần nữa phân tổ, hắn cư nhiên ở ngắn ngủn một vòng trong vòng đem tổ nội tình huống lý đến rành mạch.</p>
+        <p>Hắn là chịu cái gì kích thích sao?</p>
+        <p>Chương Phàm chính nghi hoặc, Bùi Thiệu Trạch bỗng nhiên mở bừng mắt.</p>
+        <p>Nam nhân đôi mắt lạnh nhạt lại thâm thúy, Chương Phàm ở hắn trong ánh mắt thấy chính mình nho nhỏ ảnh thu nhỏ, cái loại cảm giác này, giống như là đối phương liếc mắt một cái liền đem chính mình nhìn thấu giống nhau.</p>
+        <p>Chương Phàm sống lưng chợt lạnh, lập tức đem cà phê đưa cho hắn: “Bùi tổng, ngài cà phê……”</p>
+        <p>“Ân.” Bùi Thiệu Trạch bưng lên cà phê, không chút để ý mà uống lên hai khẩu, đem cái ly thả lại trên bàn, như là lơ đãng mà thấp giọng hỏi nói: “Có phải hay không cảm thấy, ta gần nhất thay đổi rất nhiều?”</p>
+        <p>Bị nhìn thấu tâm tư Chương Phàm trái tim phát khẩn, trên mặt miễn cưỡng bài trừ cái tươi cười, thật cẩn thận mà nói: “Ngài xác thật…… Biến hóa rất đại, ta nhớ rõ ngài trước kia rất ít tới công ty, đối Thiên Toàn sự cũng không quá cảm thấy hứng thú.”</p>
+        <p>Bùi Thiệu Trạch nhàn nhạt nói: “Ta phụ thân năm trước chẩn bệnh ra lúc đầu dạ dày ung thư, tuy rằng làm phẫu thuật giữ được một cái mệnh, nhưng thân thể hắn không bằng từ trước, ta làm Bùi gia trưởng tử, cũng nên gánh vác trách nhiệm.”</p>
+        <p>Đây là Bùi Thiệu Trạch vì “Thay đổi người” tìm được nhất thích hợp lý do, cũng miễn cho công ty người mỗi ngày nghi thần nghi quỷ.</p>
+        <p>Đương nhiên, chính hắn cũng là như vậy cho rằng, phụ thân còn sinh bệnh, thân là Bùi gia trưởng tử, trơ mắt nhìn phụ thân vất vả sáng lập cơ nghiệp rơi vào người khác trong tay, quá phế vật.</p>
+        <p>Hắn sẽ không làm loại sự tình này phát sinh.</p>
+        <p>Chương Phàm nghe hắn bình tĩnh thanh âm, tâm tình phức tạp gật gật đầu: “Bùi tổng, ngài có thể như vậy tưởng thật sự là quá tốt. Xem ngài nhanh như vậy liền đem C tổ sự tình an bài thỏa đáng, chủ tịch nhất định sẽ thực vui mừng.”</p>
+        <p>【 Chương Phàm đối với ngươi hảo cảm độ +5】</p>
+        <p>Bùi Thiệu Trạch nhìn về phía Chương Phàm, nói chuyện ngữ khí cũng ôn hòa chút: “Tiểu chương, mấy ngày nay vất vả ngươi. Ngày mai C tổ có một cái kêu Trình Hạ tân nhân sẽ đến công ty thiêm hiệp nghị, ngươi đi pháp vụ bộ nhìn xem, làm pháp vụ bên kia đem hợp đồng chi tiết cùng hắn giải thích rõ ràng. Thiêm xong lúc sau dẫn hắn tới văn phòng thấy ta.”</p>
+        <p>Chương Phàm lập tức gật đầu: “Tốt Bùi tổng, ta đây liền đi an bài.”</p>
+        <p>Chờ Chương Phàm đi rồi, Bùi Thiệu Trạch lại một lần mở ra trong đầu hệ thống thực đơn.</p>
+        <p>Trình Hạ hảo cảm độ biến thành 40, người đại diện đổi mới vì Chu Nhan.</p>
+        <p>Chương Phàm hảo cảm độ từ lúc bắt đầu 60 tăng tới 65, Lâm Thiên Thụ từ 75 khấu đến 70, Triệu Văn Tu hảo cảm độ -100.</p>
+        <p>Ngoài ra, danh sách trung còn xuất hiện Chu Nhan, thôi quyết, dương minh nguy, chu Kiến An, cho phép hân từ từ tân tên . chỉ cần mấy ngày nay cùng hắn từng có tiếp xúc người, trừ bỏ cha mẹ ngoại, tất cả đều xuất hiện ở danh sách giữa.</p>
+        <p>Thôi phó tổng đối hắn hảo cảm độ là 0, dương phó tổng là 50, đều không đạt tiêu chuẩn.</p>
+        <p>Chu Kiến An, cho phép hân hai vị trung tầng quản lý, tuy rằng bị hắn buộc tăng ca sửa sang lại bản quyền tư liệu, một lần nữa sửa chữa hợp đồng, hảo cảm độ lại ở 60, thuyết minh hai người đối công tác nghiêm túc phụ trách, sẽ không đem tư nhân cảm xúc mang tới công tác giữa.</p>
+        <p>Bùi Thiệu Trạch nhìn danh sách, như suy tư gì.</p>
+        <p>Hảo cảm độ sẽ ảnh hưởng các vai phụ đối thái độ của hắn, hảo cảm độ cao người, sẽ càng dễ dàng nghe lời hắn, làm việc cũng càng thêm dụng tâm. Tất yếu thời điểm, hắn yêu cầu tăng lên một ít vai phụ hảo cảm độ tới trợ giúp Trình Hạ. Rốt cuộc hắn cũng không thể dựa vào chính mình một người làm Trình Hạ đỏ tía.</p>
+        <p>***</p>
+        <p>Cùng thời gian, thanh đường tiểu khu cư dân lâu nội.</p>
+        <p>Trình Hạ ở tủ quần áo phiên tới phiên đi, động tĩnh quá lớn, kinh động mẫu thân Giang Quỳnh.</p>
+        <p>Giang Quỳnh gõ mở cửa, nghi hoặc mà nhìn về phía tủ quần áo phương hướng: “Ngươi ở phiên cái gì đâu? Ta còn tưởng rằng trong nhà vào chỉ lão thử.”</p>
+        <p>Trình Hạ khom lưng ngồi xổm ở tủ quần áo bên cạnh, thanh âm mang theo một tia nôn nóng: “Mẹ, ta kia kiện màu nâu nhạt áo len lông dê đã chạy đi đâu, như thế nào tìm không thấy a?”</p>
+        <p>“Ngươi là nói tháng trước mới vừa mua kia kiện?” Giang Quỳnh đi vào phòng ngủ, mở ra tủ quần áo mặt trên ô đựng đồ, “Ta thu ở chỗ này, ngươi muốn xuyên nói ta cho ngươi uất một chút.”</p>
+        <p>“Thật tốt quá, ta ngày mai xuyên!”</p>
+        <p>“Ngày mai muốn ra cửa sao?” Giang Quỳnh đem áo lông bắt lấy tới, ôn nhu mà nhìn hắn hỏi.</p>
+        <p>Trình Hạ hưng phấn mà giải thích nói: “Ta ngày mai muốn đi công ty thiêm bổ sung hiệp nghị, còn phải gặp mặt lão bản, dù sao cũng phải cấp lão bản lưu lại cái ấn tượng tốt đi? Hiện tại là mùa đông, xuyên một kiện đơn giản áo len lông dê hẳn là sẽ không làm lỗi, mẹ ngươi nói đi?”</p>
+        <p>Giang Quỳnh tán đồng: “Ân, ta lại cho ngươi chọn một cái quần.” Nàng từ tủ quần áo tìm được điều màu đen quần jean, lại cầm lấy màu nâu nhạt áo lông ở Trình Hạ trên người khoa tay múa chân một chút: “Không tồi, như vậy xuyên rất soái khí.”</p>
+        <p>Trình Hạ vừa muốn nói chuyện, di động bỗng nhiên vang lên.</p>
+        <p>Hắn tiếp khởi điện thoại, bên tai truyền đến cái xa lạ nữ âm: “Ngươi hảo, là Trình Hạ sao?”</p>
+        <p>“Đúng vậy.” Trình Hạ lễ phép hỏi: “Ngài là?”</p>
+        <p>“Ta là ngươi người đại diện Chu Nhan, ngươi có thể kêu ta Nhan tỷ.” Chu Nhan ngữ khí tương đương ôn hòa, “Thật sự xin lỗi, mấy ngày nay công ty bên trong điều chỉnh, người đại diện bộ môn vẫn luôn ở làm công tác giao tiếp, hôm nay mới rốt cuộc xác định xuống dưới. Bùi tổng đã an bài ta đến mang ngươi, về sau ngươi có bất luận vấn đề gì đều có thể tùy thời tìm ta.”</p>
+        <p>So với Triệu Văn Tu cao cao tại thượng, Chu Nhan ôn hòa thanh âm cùng lưu loát nói chuyện phương thức làm Trình Hạ rất là thưởng thức, hắn khách khí nói: “Nhan tỷ ngài hảo, phiền toái hỏi một chút, ta ngày mai tới công ty thiêm hiệp nghị nói là trực tiếp đi pháp vụ bộ sao?”</p>
+        <p>“Ngươi ngày mai tới rồi lúc sau đánh ta điện thoại, ta đi xuống lầu tiếp ngươi.” Chu Nhan dừng một chút, lại nói, “Đối hợp đồng có không hài lòng địa phương cũng có thể cùng ta nói, ta giúp ngươi cùng pháp vụ nói. Tân phiên bản hợp đồng, có chút linh hoạt điều khoản là có thể sửa chữa.”</p>
+        <p>Lần trước ký hợp đồng là Triệu Văn Tu dẫn hắn đi, thấy hắn một tờ một tờ lật xem, Triệu Văn Tu vẻ mặt không kiên nhẫn: “Ngươi chỉ là cái tân nhân, công ty cấp tân nhân hợp đồng đều là thống nhất khuôn mẫu, có cái gì đẹp? Chạy nhanh ký đi!”</p>
+        <p>Hiện giờ, Chu Nhan nói lại làm Trình Hạ trong lòng hơi hơi ấm áp.</p>
+        <p>Đổi cái người đại diện, quả nhiên khá hơn nhiều.</p>
+        <p>Trình Hạ nghiêm túc mà nói: “Cảm ơn Nhan tỷ, ta ngày mai buổi sáng tới công ty tìm ngài, phương tiện thêm một chút WeChat sao?”</p>
+        <p>Chu Nhan nói: “Đương nhiên, ta thêm ngươi đi. Nhớ rõ mang lên thân phận chứng, ngày mai thấy.”</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- END-AUTO-INSERT-11 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "ngoai-y-muon-danh-dau";
+const NOVEL_TITLE = "Ngoài Ý Muốn Đánh Dấu";
+const CHAPTER_TITLE = "Chương 11";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

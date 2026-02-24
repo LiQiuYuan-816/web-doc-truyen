@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 15: Một cái trò chơi</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ta Ở Dị Thế Giới Chế Tạo Trò Chơi Vương Triều
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 15: Một cái trò chơi</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong14.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong16.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-15 -->
+        <p>◎ bài trò chơi ◎</p>
+        <p>Lâm Kỳ Thuân cùng Sầm Qua giúp Cố An Nhiên đem nhạc cụ hợp quy tắc hảo, ba người trở lại trên lầu khi, Sầm Qua nói: “Hậu thiên ta muốn tổ chức một cái tiệc tối, các ngươi lại đây bái?”</p>
+        <p>“Không có hứng thú.” Lâm Kỳ Thuân nói.</p>
+        <p>Cố An Nhiên kiếp trước kiếp này cũng chưa tham gia quá kẻ có tiền yến hội, này gợi lên hắn nhíu lại mị lòng hiếu kỳ.</p>
+        <p>Lâm Kỳ Thuân chú ý tới Cố An Nhiên thần sắc, lại đối Sầm Qua nói: “Cho ta hai trương thư mời.”</p>
+        <p>Sầm Qua nhìn Cố An Nhiên liếc mắt một cái, triều hắn giơ ngón tay cái lên.</p>
+        <p>Cố An Nhiên hoàn toàn không biết đã xảy ra cái gì.</p>
+        <p>Ba người đi vào nhà ăn, Lưu bá đã chuẩn bị hảo cơm trưa, ăn cơm khi, Cố An Nhiên hỏi: “Phát sóng trực tiếp ngôi cao làm cho thế nào?”</p>
+        <p>“Tiến triển thực thuận lợi.” Sầm Qua uống canh, “Không có gì bất ngờ xảy ra nói, thiên trung tiết phía trước là có thể diện thế.”</p>
+        <p>Cố An Nhiên “Ngô” một tiếng, “Đến lúc đó ta có thể làm một cái phát sóng trực tiếp hoạt động.”</p>
+        <p>“Khá tốt.” Sầm Qua cười nói: “Vừa vặn cấp phát sóng trực tiếp ngôi cao kéo kéo nhân khí.”</p>
+        <p>“Ăn cơm khi đừng nói chuyện.” Lâm Kỳ Thuân nhìn Sầm Qua liếc mắt một cái.</p>
+        <p>Sầm Qua cúi đầu ăn canh.</p>
+        <p>Lâm Kỳ Thuân hỏi Cố An Nhiên: “Thứ tư tuần sau phiên bản đổi mới chuẩn bị cho tốt sao?”</p>
+        <p>Ách…… Cố An Nhiên có điểm rối rắm, hắn cũng ở ăn cơm, loại này thời điểm muốn hay không trả lời đâu?</p>
+        <p>Sầm Qua đột nhiên cảm thấy canh không hảo uống lên, “Lão Lâm, ngươi cũng thật song tiêu!”</p>
+        <p>Lâm Kỳ Thuân biểu tình không có chút nào biến hóa, như cũ nhìn Cố An Nhiên, chờ hắn trả lời.</p>
+        <p>“Đã chuẩn bị cho tốt, lần này đổi mới rất đơn giản, phóng một ít manh mối mà thôi.”</p>
+        <p>Sầm Qua buông cái thìa, “Tiểu nhiễm, 《 chốn đào nguyên 》 cửa hàng thật không thể gia tăng hạt giống kiến trúc loại này đạo cụ sao?”</p>
+        <p>Lâm Kỳ Thuân cùng Lưu bá cũng dừng ăn cơm động tác.</p>
+        <p>Cố An Nhiên chọn một chút mi, Lâm Kỳ Thuân cùng Lưu bá là nhóm đầu tiên chơi 《 chốn đào nguyên 》 người, thuộc về thâm niên người chơi, hai người bọn họ còn đều thích thu thập trò chơi sách tranh, đáng tiếc hai người vận may thiên phi, thu thập tiến độ thực cảm động.</p>
+        <p>“Cửa hàng sẽ không gia tăng, bất quá mặt sau phiên bản sẽ gia nhập giao dịch thị trường, người chơi chi gian có thể mua bán hoặc đổi thành chính mình yêu cầu đồ vật, ngôi cao chỉ thu một bộ phận thủ tục phí.” Cố An Nhiên suy xét tới rồi “Châu Phi” người chơi trò chơi thể nghiệm, cho bọn hắn một cái sửa mệnh cơ hội.</p>
+        <p>Lâm Kỳ Thuân hỏi: “Giao dịch thị trường sẽ không theo cửa hàng công năng trùng hợp sao?”</p>
+        <p>“Sẽ không.” Cố An Nhiên nói: “Giao dịch thị trường là cho người chơi cung cấp thương nghiệp ngôi cao, thiên trung tiết phiên bản ta còn sẽ mở ra tích phân cửa hàng.”</p>
+        <p>“Phía chính phủ cửa hàng, đài giao dịch, tích phân cửa hàng là 《 chốn đào nguyên 》 tam đại thương nghiệp cơ cấu, trong đó tích phân cửa hàng định kỳ buôn bán.”</p>
+        <p>“Thượng phiên bản đổi mới sau, trò chơi liền nhiều ra một cái tích phân lan, nhưng ta tích phân là 0. Tích phân cửa hàng là làm gì đó? Tích phân như thế nào đạt được?” Sầm Qua hỏi.</p>
+        <p>Cố An Nhiên lắc đầu, “Tạm thời bảo mật.”</p>
+        <p>Sầm Qua lòng hiếu kỳ đi lên, nhưng Cố An Nhiên chính là không nói, hắn cũng chỉ có thể từ bỏ truy vấn.</p>
+        <p>“Tân trò chơi đâu?” Lâm Kỳ Thuân hỏi, “Chuẩn bị giáo người chơi như thế nào sử dụng nhạc cụ?”</p>
+        <p>“Đương nhiên không phải.” Cố An Nhiên nói, “Ta hiện tại rối rắm là làm âm nhạc trò chơi, tập đổi thức thẻ bài trò chơi, vẫn là RPG trò chơi, hoặc là nói ba người kết hợp.”</p>
+        <p>Sầm Qua cùng Lâm Kỳ Thuân nhìn nhau liếc mắt một cái, sau đó hắn hỏi: “Có thể kỹ càng tỉ mỉ nói nói sao? Này ba loại trò chơi loại hình chúng ta đều không có nghe nói qua.”</p>
+        <p>“Âm nhạc trò chơi thuộc về một loại tiết tấu trò chơi, người chơi điểm đánh màn hình xuất hiện ấn phím hoàn thành trò chơi……” Cố An Nhiên cảm thấy chỉ dựa vào giải thích, rất khó làm người lý giải.</p>
+        <p>“Sau đó ta làm đơn giản âm du, các ngươi thể hội một chút liền minh bạch.”</p>
+        <p>Sầm Qua hỏi: “Kia RPG đâu?”</p>
+        <p>“RPG là nhân vật sắm vai trò chơi ý tứ……” Cố An Nhiên thấy Sầm Qua như cũ mờ mịt, liền càng thêm kỹ càng tỉ mỉ mà nói: “Này liền tương đương với ta xây dựng một cái thế giới, bên trong có rất nhiều cá nhân, người chơi sắm vai một cái hoặc nhiều người, ở ta định quy tắc hạ, đi xong chuyện xưa tuyến.”</p>
+        <p>Sầm Qua đại khái minh bạch, nhưng vẫn là không thể đem cái này khái niệm cụ hiện hóa.</p>
+        <p>“RPG trò chơi hơi chút phức tạp một ít, ta về sau khẳng định sẽ làm, đến lúc đó các ngươi sẽ biết.”</p>
+        <p>Lưu bá cười trộn lẫn một chút: “Thẻ bài trò chơi đâu?”</p>
+        <p>“Thẻ bài trò chơi thoát thai với bài trò chơi……” Cố An Nhiên tạm dừng một chút, “Lam Tinh không có bài trò chơi?”</p>
+        <p>Lưu bá lắc đầu, Lâm Kỳ Thuân cũng nhìn về phía Cố An Nhiên.</p>
+        <p>Cố An Nhiên nghĩ đến Lam Tinh lịch sử, cảm thấy trước kia Lam Tinh khẳng định có bài loại này giải trí hạng mục, phỏng chừng tất cả tại cứu thế đại xung thứ thời kỳ phong cấm.</p>
+        <p>“Chờ ta một chút.” Cố An Nhiên bắt đầu gắp đồ ăn, “Cơm nước xong, ta trước làm một bộ bài, đại gia cùng nhau chơi.”</p>
+        <p>Sầm Qua nháy mắt bị nhắc tới hứng thú.</p>
+        <p>Cố An Nhiên là cái hành động lực rất mạnh người, hắn cơm nước xong liền chạy tới phòng làm việc, Lâm Kỳ Thuân đi theo hắn phía sau.</p>
+        <p>“Ca, trong nhà có ngạnh tạp giấy sao?”</p>
+        <p>Lâm Kỳ Thuân lắc đầu, “Muốn ngạnh tạp giấy làm cái gì?”</p>
+        <p>“Vốn dĩ muốn làm một bộ thật thể bài, như vậy chơi lên tương đối có cảm giác.” Cố An Nhiên giải thích nói.</p>
+        <p>Lâm Kỳ Thuân mở ra vòng tay, đổ bộ giả thuyết cửa hàng, “Muốn cái gì tài chất tạp giấy?”</p>
+        <p>“Tính.” Cố An Nhiên lắc đầu, “Làm tiểu an hiệp trợ ta biên cái bài trình tự đi.”</p>
+        <p>“Lam Tinh hậu cần 5 phút đưa tới cửa.” Lâm Kỳ Thuân hỏi: “Thật không cần?”</p>
+        <p>Cố An Nhiên trọng sinh sau còn không có mua hàng online quá, không biết Lam Tinh cường đại hậu cần tốc độ, hắn đi đến Lâm Kỳ Thuân bên người, “Này khoản là được, trong nhà có máy in sao?”</p>
+        <p>“Công cụ trong phòng có.” Lâm Kỳ Thuân nhìn Cố An Nhiên, “Ở chỗ này trụ thời gian cũng không tính đoản, trong nhà có cái gì còn không rõ ràng lắm sao?”</p>
+        <p>Cố An Nhiên xoa cái mũi, đối với a trạch tới nói, quen thuộc nhất địa phương vĩnh viễn chỉ có a trạch phòng.</p>
+        <p>Lâm Kỳ Thuân một tay chống ở công tác trên bàn, “Ta trong khoảng thời gian này không vội, sáng mai bắt đầu, cùng ta cùng nhau chạy bộ.”</p>
+        <p>Cố An Nhiên hoàn toàn không nghĩ: “Ta có thể cự tuyệt sao?”</p>
+        <p>Lâm Kỳ Thuân cười mà không nói.</p>
+        <p>“Ta thân thể nhược, chạy bất động.” Cố An Nhiên ý đồ giãy giụa.</p>
+        <p>“Thân thể nhược mới yêu cầu rèn luyện.” Lâm Kỳ Thuân bác bỏ Cố An Nhiên nói, “Chỉ dựa vào internet, ngươi vĩnh viễn vô pháp dung nhập thế giới này.”</p>
+        <p>Cố An Nhiên ở Lam Tinh ràng buộc quá ít, tổng cấp Lâm Kỳ Thuân một loại tùy thời đều sẽ rời đi thời không lữ khách cảm giác, mà hắn tương đương không thích loại cảm giác này.</p>
+        <p>Ràng buộc thiếu, vậy gia tăng ràng buộc, Lâm Kỳ Thuân tin tưởng, một ngày nào đó Cố An Nhiên sẽ trở thành chân chính Lam Tinh người.</p>
+        <p>Chạy bộ đề tài hạ màn, 5 phút lúc sau, một con thuyền máy bay không người lái đưa tới tạp giấy chuyển phát nhanh.</p>
+        <p>Cố An Nhiên đem một khối to tạp giấy lấy ra, “Ta phải làm chính là bài poker, nó từ 54 trương bất đồng màu sắc và hoa văn bài cấu thành……”</p>
+        <p>Lâm Kỳ Thuân nhìn màn hình ảo thượng xuất hiện màu sắc và hoa văn, hỏi: “Này đó màu sắc và hoa văn có cái gì ngụ ý sao?”</p>
+        <p>“Nghe nói hắc đào đại biểu hoà bình, hoa mai đại biểu may mắn, khối vuông đại biểu tài phú, hồng đào đại biểu tình yêu.”</p>
+        <p>Cố An Nhiên đem số liệu đưa vào máy in, “Chúng ta đi phòng làm việc đi, đem chúng nó đóng dấu ra tới.”</p>
+        <p>Lâm Kỳ Thuân lại hỏi: “Này đó trương hình người bài đâu?”</p>
+        <p>“J là Jack, Q là Queen, K là King.” Cố An Nhiên trả lời, “Bài poker khởi nguyên với phương tây, địa cầu phương tây cùng loại Lam Tinh Tây Châu cùng bộ phận Đông Châu, này mười hai trương hình người bài đại biểu 12 cá nhân, cụ thể ai ta cũng không biết.”</p>
+        <p>Lâm Kỳ Thuân gật đầu, hắn chỉ vào trên màn hình nhất đặc thù hai trương bài, “Này hai cái vai hề là có ý tứ gì?”</p>
+        <p>“Chúng nó là bài tổ nhất đặc thù tồn tại, thông thường xưng quỷ bài hoặc vương bài, màu đỏ đại vương cơ bản có thể thông ăn sở hữu bài, màu đen Tiểu Vương so đại vương thấp một bậc.”</p>
+        <p>Lâm Kỳ Thuân đại khái hiểu được bài màu sắc và hoa văn ý tứ, “Đi thôi, đi phòng làm việc đem chúng nó đóng dấu ra tới.”</p>
+        <p>Bài làm ra tới sau, Cố An Nhiên cùng Lâm Kỳ Thuân về tới phòng khách.</p>
+        <p>“Làm tốt a.” Sầm Qua triều bọn họ đi đến, “Cho ta xem.”</p>
+        <p>Cố An Nhiên đem bài đưa tới.</p>
+        <p>Sầm Qua mở ra nhìn một chút, hỏi: “Thoạt nhìn có chút ý tứ, muốn như thế nào chơi?”</p>
+        <p>Cố An Nhiên nhìn về phía phòng khách, “Lưu bá đâu?”</p>
+        <p>Sầm Qua hướng ra phía ngoài chỉ chỉ: “Hắn mua sắm tân thực vật hạt giống, hiện tại đi nhà ấm trồng hoa.”</p>
+        <p>“Ta vốn đang suy nghĩ 4 cá nhân nói, sẽ dạy đại gia chơi quán trứng, hiện tại 3 cá nhân, ta trước giáo chơi đấu địa chủ cách chơi đi.” Cố An Nhiên đem Sầm Qua trong tay bài tiếp nhận tới, hiện trường biểu diễn một cái hoa thức tẩy bài.</p>
+        <p>“Khốc!” Sầm Qua giơ ngón tay cái lên.</p>
+        <p>“Chút lòng thành, chút lòng thành.” Cố An Nhiên cười nói, nhớ trước đây hắn đại học vì trang 13, không thiếu đối với video học phát ca tẩy bài, những cái đó quá huyền huyễn học không được, bình thường một ít đều bị hắn học xong.</p>
+        <p>Nề hà tẩy bài công phu ở hảo, cũng không chịu nổi bạn cùng phòng sẽ tính bài, Cố An Nhiên đại học 4 năm, liền không thắng quá.</p>
+        <p>“Đấu địa chủ quy tắc rất đơn giản.” Cố An Nhiên đi đến sô pha trước, làm một cái biết rõ quy tắc tay già đời, hắn không tin chính mình không thắng được! “1 mới là địa chủ, một bên khác vì nông dân, địa chủ một người, nông dân hai người……”</p>
+        <p>Cố An Nhiên nói xong quy tắc, Sầm Qua cười nói: “Ta không sai biệt lắm minh bạch, bắt đầu đi.”</p>
+        <p>Cố An Nhiên lại nhìn về phía Lâm Kỳ Thuân.</p>
+        <p>Lâm Kỳ Thuân gật đầu, “Bắt đầu đi.”</p>
+        <p>“Chờ hạ.” Cố An Nhiên cười nói, “Chúng ta thêm chút nhi điềm có tiền đi.”</p>
+        <p>Sầm Qua không nghe hiểu, “Điềm có tiền là có ý tứ gì?”</p>
+        <p>Cố An Nhiên nói: “Liền người thắng đạt được khen thưởng.”</p>
+        <p>Lâm Kỳ Thuân nhìn về phía Cố An Nhiên: “Ngươi nghĩ muốn cái gì?”</p>
+        <p>“Đợi chút!” Sầm Qua ngẩng đầu, “Lão Lâm, ngươi như thế nào không hỏi ta nghĩ muốn cái gì đâu? Có lẽ là ta thắng đâu?”</p>
+        <p>Lâm Kỳ Thuân liền cái ánh mắt cũng chưa cấp Sầm Qua.</p>
+        <p>Cố An Nhiên trả lời nói: “Ta thắng, khiến cho ta khai xe bay!”</p>
+        <p>“Hành!” Lâm Kỳ Thuân gật đầu, “Ta tới giáo ngươi.”</p>
+        <p>Giờ khắc này, Sầm Qua cảm thấy chính mình không nên ở chỗ này.</p>
+        <p>Tác giả có chuyện nói:</p>
+        <p>Rốt cuộc đã trở lại, về sau tiết ngày nghỉ không bao giờ ra cửa, tất cả đều là người, căn bản là không hảo chơi, đồ vật cũng cự quý cự khó ăn! Còn gặp được không tố chất cắm đội, quả thực khổ bức! </p>
+<!-- END-AUTO-INSERT-15 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong14.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong16.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "ta-o-di-the-gioi-che-tao-tro-choi-vuong-trieu";
+const NOVEL_TITLE = "Ta Ở Dị Thế Giới Chế Tạo Trò Chơi Vương Triều";
+const CHAPTER_TITLE = "Chương 15: Một cái trò chơi";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

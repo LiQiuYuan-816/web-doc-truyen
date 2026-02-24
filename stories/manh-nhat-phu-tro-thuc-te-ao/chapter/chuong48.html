@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 48: Đấu vòng loại tuyển chọn ( bắt trùng )</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Mạnh Nhất Phụ Trợ Thực Tế Ảo
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 48: Đấu vòng loại tuyển chọn ( bắt trùng )</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong47.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong49.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-48 -->
+<p>“Ân? Lớp trưởng như thế nào không cho ta phát thông tin?” Nhiễm Kỳ nghi hoặc hỏi.</p>
+<p>“Đương nhiên đã phát, bất quá ngươi lúc ấy biểu hiện ở trò chuyện trung, hắn liền trước liên hệ ta, dù sao đôi ta quan hệ hảo, mọi người đều rất rõ ràng sao! Cho ta biết chẳng khác nào thông tri ngươi lạp!” Cố Nhạc cười câu lấy Nhiễm Kỳ bả vai.</p>
+<p>“Kia nhưng thật ra, ha ha ha.” Nhiễm Kỳ cầm chén đem trong nồi nấu tốt cơm cấp thịnh ra tới, “Đúng rồi, lớp trưởng nói giáo nội tái đại khái muốn liên tục mấy ngày? Có thể hay không chậm trễ chúng ta chơi trò chơi a?”</p>
+<p>Lớp trưởng khẳng định sẽ không nhàn đến không có việc gì tổ chức cái gì xem tái hoạt động, khẳng định là trường học cùng lão sư yêu cầu, một khi đã như vậy, bọn họ đến lúc đó khẳng định là không thể vắng họp.</p>
+<p>Tưởng tượng đến người dự thi còn có Trương Thước cái kia thảo người ghét gia hỏa, Nhiễm Kỳ liền cảm thấy phiền lòng, huống chi lúc này đây cao niên cấp học sinh sẽ không tham dự giáo nội tái, xuất tuyến khó khăn đại đại giảm xuống, hắn thật sự không quá muốn nhìn đến Trương Thước đắc ý dương dương bộ dáng. Có lúc đó, còn không bằng hoa ở trong trò chơi, tranh thủ nhanh lên thăng cấp, bắt được càng nhiều vật thật phiếu hối đoái.</p>
+<p>“Cái này nhưng thật ra chưa nói, bất quá năm sáu thiên luôn là muốn đi?” Cố Nhạc lực chú ý đã hoàn toàn bị trên bàn đồ ăn cấp hấp dẫn, mơ hồ mà đáp một câu, sau đó dùng sức mà hút lưu một chút nước miếng, “Thơm quá a, hôm nay này làm đều là cái gì đồ ăn a?”</p>
+<p>Năm sáu thiên không tính lâu lắm, cùng lắm thì đến lúc đó lộ cái mặt lúc sau tìm cơ hội chuồn êm là được, dù sao đến lúc đó toàn giáo như vậy nhiều người, thiếu một hai người cũng sẽ không bị phát hiện.</p>
+<p>Nhiễm Kỳ buông tâm lúc sau, cũng đem lực chú ý chuyển dời đến mỹ thực thượng, cười nói, “Ta hôm nay làm chính là khoai điều, khoai tây nghiền còn có khoai tây ớt xanh xào thịt, ngươi nếm thử đi.”</p>
+<p>Mới vừa tạc ra tới khoai điều màu sắc kim hoàng, còn mạo nóng bỏng nhiệt khí, thoạt nhìn phi thường mê người, Cố Nhạc gấp không chờ nổi mà vươn tay, cầm lấy một cây khoai điều bỏ vào trong miệng.</p>
+<p>Khoai điều da xốp giòn, bên trong lại là mềm lạn khẩu cảm, cứ việc chỉ thả một chút muối, lại cũng đủ tiên hương.</p>
+<p>“Cái này ăn ngon!” Cố Nhạc ánh mắt sáng lên, lại giơ tay cầm một cây.</p>
+<p>Khoai điều loại đồ vật này, ăn lên liền cùng có nghiện giống nhau, một cây tiếp theo một cây, bất tri bất giác cũng đã ăn non nửa bàn đi xuống.</p>
+<p>“Đừng quang ăn khoai điều a, thử lại khoai tây nghiền!” Nhiễm Kỳ đem trang khoai tây nghiền mâm cùng một phen muỗng nhỏ đưa tới trong tay của hắn, làm hắn đào ăn.</p>
+<p>Khoai tây nghiền là đặt ở chén nhỏ đặt ở trong nồi chưng, đảo ra tới đặt ở mâm thượng lúc sau, chính là một cái xinh đẹp nửa vòng tròn hình, lại tưới thượng điều chế tốt hắc hồ tiêu nước, tuy rằng không có sữa bò cùng mỡ vàng tăng hương, nhưng hương vị cũng là phi thường không tồi, phi thường thơm ngon.</p>
+<p>Cố Nhạc tiếp nhận cái muỗng đào một đại muỗng, bỏ vào trong miệng, tức khắc lại là một trận mãnh khen, “Cái này cũng hảo hảo ăn a!”</p>
+<p>“Thích liền ăn nhiều một chút.” Nhiễm Kỳ cười tủm tỉm mà nói, sau đó liền bay nhanh mà bắt đầu ăn xong rồi khoai tây ớt xanh xào thịt, bởi vì bỏ thêm nước tương duyên cớ, món này nhiễm xinh đẹp màu nâu, hơn nữa mỡ heo ánh sáng, nhìn khiến cho người đặc biệt có muốn ăn.</p>
+<p>Ra nồi phía trước Nhiễm Kỳ còn cố tình nấu một chút, món này khoai tây khẩu cảm tô lạn, hơn nữa hút đầy nước sốt, thập phần ngon miệng. Ớt xanh hương vị mang theo một chút cay cùng hơi hơi ngọt thanh, hơi mỏng thịt ba chỉ mới là xuất sắc nhất, thịt nước nồng đậm, thịt mỡ cùng tinh thịt hoàn mỹ kết hợp, phát ra ra không giống nhau mị lực. Đáng tiếc không có tương hột, bằng không món này hương vị còn có thể càng nồng đậm một ít.</p>
+<p>Bất quá như bây giờ cũng đã thực không tồi, này đạo hàm tiên ngon miệng đồ ăn phi thường ăn với cơm, hắn một ngụm đồ ăn một ngụm cơm, ăn đến vui vẻ vô cùng.</p>
+<p>Chờ Cố Nhạc từ khoai tây nghiền mỹ vị trung tránh thoát ra tới thời điểm, Nhiễm Kỳ cơm đều đã đi xuống nửa chén.</p>
+<p>“Uy uy uy! Ngươi sao lại có thể ăn vụng!” Cố Nhạc trừng mắt nhìn hắn liếc mắt một cái, cũng vội vàng bưng lên bát cơm, mồm to ăn lên.</p>
+<p>******</p>
+<p>Nhoáng lên hai ngày thời gian liền đi qua, giáo nội tuyển chọn tái chính thức bắt đầu, tổng cộng có 246 danh học sinh báo danh tham dự.</p>
+<p>Hôm nay cử hành chính là một chọi một vòng đào thải, đem một hơi đào thải rớt một nửa tuyển thủ. Thi đấu hai bên là từ trí não tiến hành xứng đôi, bảo đảm hai bên sức chiến đấu sẽ không kém rất nhiều, có không thắng lợi quyết định bởi với thực lực của bọn họ hay không cũng đủ cường đại. Bất đồng chuyên nghiệp tuyển thủ so đấu hạng mục cũng không giống nhau, so đấu hạng mục chủ yếu chia làm tam loại . cơ giáp, chiến giáp cùng chỉ huy.</p>
+<p>Cơ giáp tự nhiên không cần nhiều lời, là tinh tế trong chiến tranh nhất thường thấy công cụ chiến đấu . hợp kim Titan thân máy có cường đại lực phòng ngự, hơn nữa trang bị có mấy trăm loại bất đồng công năng vũ khí, sức chiến đấu phi thường cường. Có thể tiến vào cơ giáp hệ, đều là thể chất ở A cấp trở lên tinh anh học viên.</p>
+<p>Đương nhiên, cơ giáp giá trị chế tạo sang quý, toàn tinh tế nhân thủ một đài là không có khả năng, cho nên cao tốc nhẹ hình chiến giáp liền đúng thời cơ mà sinh. Chiến giáp tương đương với loại nhỏ đơn binh cơ giáp, trên cơ thể người ngoại phụ gia một tầng máy móc xương vỏ ngoài, trang bị các loại nhẹ hình vũ khí, cũng có thể khởi đến tăng mạnh sức chiến đấu tác dụng. Bất quá sử dụng chiến giáp phi thường khảo nghiệm người sử dụng tự thân sức chiến đấu, không chỉ có thể chất cần thiết đạt tới B cấp trở lên, còn cần tiến hành gần gũi vật lộn thể thuật học tập.</p>
+<p>Lúc trước nguyên chủ sẽ phát sinh ngoài ý muốn, chính là bởi vì hắn trái với trường học quy định trộm lẻn vào chiến giáp hệ đối chiến phòng huấn luyện, vi phạm quy định sử dụng chiến giáp, dẫn tới chiến giáp phát sinh nổ mạnh, thân thể hắn cũng suýt nữa vô pháp phục hồi như cũ, bởi vậy làm hắn ấn tượng đặc biệt khắc sâu.</p>
+<p>Đại quy mô tinh chiến đương nhiên không thể thiếu quan chỉ huy, kẻ trong cuộc thì mê, kẻ bàng quan thì tỉnh, cần thiết có người trạm ở người đứng xem góc độ, từ đại cục thượng nắm giữ chiến đấu hướng đi, cho nên chỉ huy hệ so đấu tuy rằng càng thiên hướng với trí đấu, nhưng đồng dạng cũng là phi thường xuất sắc.</p>
+<p>Thi đấu đem từ buổi sáng 10 điểm vẫn luôn tiến hành đến buổi chiều 4 điểm, tuyển thủ dự thi đem ở giả thuyết chiến đấu trong nhà phân tổ tiến hành mô phỏng đối chiến, hiện trường người xem có thể ở siêu đại cao thanh trên màn hình quan khán mỗi một hồi chiến đấu. Mà đương tuyển thủ dự thi dùng hết toàn lực đạt được thắng lợi, từ đối chiến trên đài đi xuống tới khi, người xem tiếng hoan hô chính là đối hắn tốt nhất khen thưởng.</p>
+<p>Trải qua kịch liệt cuộc đua lúc sau, ước chừng một nửa người đều sẽ bị đào thải, mà dư lại người còn muốn ở ngày hôm sau lại lần nữa tiến hành thi đấu, cuối cùng chỉ có mười tên xuất sắc giả có thể trổ hết tài năng, đại biểu trường học tham gia khu vực tái.</p>
+<p>Cùng Dạ Kiêu bọn họ chào hỏi qua lúc sau, Nhiễm Kỳ cùng Cố Nhạc đúng giờ ở 9 điểm nửa hạ tuyến. Bọn họ giặt sạch cái chiến đấu tắm, thay trường học chế phục, dùng nhanh nhất tốc độ chạy đến khu dạy học cửa tập hợp.</p>
+<p>Lớp trưởng thông tri bọn họ 9 điểm 45 tập hợp, bọn họ chính là chính chính hảo hảo 9 điểm 45 đến, không có đến trễ, nhưng cũng không có sớm đến một phút.</p>
+<p>Lớp trưởng mặt vô biểu tình địa điểm xong rồi danh, xác nhận tất cả mọi người đến đông đủ lúc sau, liền mang theo mênh mông cuồn cuộn đội ngũ triều trường học huấn luyện quán đi đến.</p>
+<p>Thật đúng là chính là như vậy không khéo, tiến vào huấn luyện quán thời điểm, bọn họ cùng cơ giáp hệ đội ngũ gặp được, làm người dự thi Trương Thước ngẩng đầu ưỡn ngực mà đi ở đội ngũ đằng trước.</p>
+<p>Nhiễm Kỳ yên lặng mà mắt trợn trắng, dời đi tầm mắt làm như nhìn không tới.</p>
+<p>Chính là hắn tưởng trang nhìn không thấy, Trương Thước lại không cho hắn cơ hội này, thừa dịp hai chi đội ngũ đi ngang qua nhau thời điểm, hung hăng đụng phải hắn một chút.</p>
+<p>Nhiễm Kỳ thân thể tố chất nơi nào có thể cùng Trương Thước so sánh với? Nếu không phải Cố Nhạc kịp thời kéo lại hắn, chỉ sợ hắn cả người đều phải cấp Trương Thước đâm bay đi ra ngoài.</p>
+<p>“Trương Thước! Ngươi thật quá đáng!” Cố Nhạc tức giận không thôi mà đối với Trương Thước quát.</p>
+<p>Trương Thước lại là cố ý giả bộ vẻ mặt mờ mịt bộ dáng, xoay người nói: “Làm sao vậy? Ta làm cái gì sao?”</p>
+<p>“Ngươi cố ý đâm người!”</p>
+<p>“A? Ta không có a.” Trương Thước dừng một chút, lộ ra bừng tỉnh bộ dáng, dùng phi thường thiếu tấu ngữ khí nói, “Nguyên lai ta vừa rồi là đụng vào thứ gì sao? Ta như thế nào đều không có cảm giác được đâu? Còn tưởng rằng chỉ là đụng tới cái tiểu sâu đâu.”</p>
+<p>“Ngươi……!”</p>
+<p>“Nhạc Nhạc.” Nhiễm Kỳ xoa xoa nhức mỏi bả vai, kéo lại tức giận không thôi Cố Nhạc, “Trương Thước, xin lỗi.”</p>
+<p>“Xin lỗi? Ta dựa vào cái gì cho ngươi xin lỗi?” Trương Thước như là nghe được cái gì thú vị chê cười giống nhau, mang theo mấy cái tiểu tuỳ tùng cười đến ngửa tới ngửa lui.</p>
+<p>Nhiễm Kỳ mắt lạnh nhìn hắn, “Không xin lỗi sao?”</p>
+<p>“Muốn ta xin lỗi? Nằm mơ đi thôi!”</p>
+<p>“Nga.” Nhiễm Kỳ mới mặc kệ hắn, quay đầu nhìn về phía bọn họ lớp trưởng, “Lớp trưởng, ta cảm thấy Trương Thước đồng học là cố ý đâm ta, thỉnh ngươi kêu lão sư lại đây, ta muốn xin điều lấy theo dõi.”</p>
+<p>“Hiện tại?” Lớp trưởng kinh ngạc hỏi, hiện tại khoảng cách thi đấu bắt đầu đã chỉ còn 5 phút, nếu muốn điều tra nói, chỉ sợ muốn trì hoãn không ít thời gian, hơn nữa làm thiệp sự một bên khác Trương Thước cũng là không thể rời đi, thế tất sẽ chậm trễ thi đấu.</p>
+<p>“Đúng vậy, chính là hiện tại.” Nhiễm Kỳ lạnh lùng mà nói, “Ngươi nếu là không có phương tiện, ta liền cho ta ba phát cái thông tin, mời ta ba liên hệ hiệu trưởng.”</p>
+<p>Người nhẫn nại đều là có hạn độ, ngày thường một ít tiểu đánh tiểu nháo, Nhiễm Kỳ có thể không so đo, dù sao không phải một cái hệ, nhiều nhất chỉ là ngôn ngữ xung đột mà thôi, coi như là chó sủa cũng liền thôi. Nhưng là lúc này đây Trương Thước hành vi thật sự là có chút quá mức, đại khái là trong khoảng thời gian này tất cả mọi người đem hắn coi như tuyển thủ hạt giống, cầu vồng thí nghe nhiều, cả người đều có điểm phiêu đi? Nếu là hắn lại không làm ra phản kích, chỉ biết bị làm như mềm quả hồng, làm Trương Thước làm trầm trọng thêm.</p>
+<p>“Này…… Này……” Lớp trưởng hãn đều phải xuống dưới, Nhiễm Kỳ hiện tại rõ ràng chính là muốn đem chuyện này nháo đại, chậm trễ thi đấu thời gian không tính, nếu Trương Thước thật là cố ý đâm người, hơn nữa xác thật dẫn tới Nhiễm Kỳ bị thương, như vậy trường học là tuyệt đối sẽ không bao che hắn, nói không chừng đến lúc đó sẽ trực tiếp hủy bỏ hắn dự thi tư cách, lại cái khác cho xử phạt.</p>
+<p>Trước kia Nhiễm Kỳ không thế nào so đo, bọn họ cũng liền cảm thấy hắn dễ khi dễ, hiện tại nghĩ đến, Nhiễm Kỳ sau lưng còn đứng Nhiễm Thiệu Quân đâu, kia chính là đế quốc mười đại phú hào chi nhất! Thật đem sự tình nháo đến hiệu trưởng kia đi nói, liền càng thêm khó có thể thu thập!</p>
+<p>“Trương Thước đồng học, ta xem này khả năng chính là một hiểu lầm, bằng không ngươi nói lời xin lỗi đi……” Lớp trưởng do dự, vẫn là nhìn về phía Trương Thước.</p>
+<p>“Nhiễm Kỳ!” Trương Thước nghiến răng nghiến lợi mà nhìn về phía Nhiễm Kỳ.</p>
+<p>“Ân, kêu ta làm gì?” Nhiễm Kỳ bình tĩnh mà nhìn trở về.</p>
+<p>Trương Thước mặt tức khắc một trận thanh, một trận hồng, cùng cái đèn nê ông dường như đổi tới đổi lui, hắn nỗ lực hồi tưởng vừa rồi đâm Nhiễm Kỳ động tác, có phải hay không thực rõ ràng, có thể hay không thật sự bị theo dõi chụp được tới……</p>
+<p>Thời gian một phút một giây mà qua đi, chung quanh mọi người đều nhìn chăm chú vào bọn họ, ở huấn luyện trong quán lão sư vẫn luôn không thấy lớp học sinh tiến vào, đã bắt đầu hướng cửa phương hướng đi tới.</p>
+<p>Ở đủ loại áp lực dưới, Trương Thước cuối cùng vẫn là bị bắt thấp hèn cao ngạo đầu, “Thực xin lỗi!”</p>
+<p>“Ngươi nói cái gì? Ta không nghe rõ.”</p>
+<p>Trương Thước ngẩng đầu căm tức nhìn hắn, nắm tay nâng vài lần, cuối cùng vẫn là không cam lòng mà cúi đầu, ồm ồm nói: “Ta nói xin lỗi!”</p>
+<p>Nhiễm Kỳ hỏi: “Thực xin lỗi ta cái gì?”</p>
+<p>“Nhiễm Kỳ! Ngươi không cần quá phận!” Trương Thước giận trừng mắt hắn.</p>
+<p>“Rốt cuộc là ai quá mức?” Nhiễm Kỳ cười lạnh nhướng mày, “Là ta thỉnh ngươi đâm ta sao?”</p>
+<p>Trương Thước tức khắc nghẹn lời, cắn răng nói, “Thực xin lỗi…… Vừa rồi không cẩn thận đụng vào ngươi!”</p>
+<p>“Hành đi, lần sau tiểu tâm một chút.” Nhiễm Kỳ nói xong, lại lần nữa nhìn về phía lớp trưởng, “Lớp trưởng, ta bả vai vẫn là rất đau, ta đi một chuyến y tế chỗ, thi đấu liền không nhìn, phiền toái ngươi giúp ta cùng lão sư nói một tiếng.”</p>
+<p>“Hảo, tốt……” Hắn đều nói như vậy, lớp trưởng còn có thể nói cái gì? Chỉ có thể đáp ứng hạ.</p>
+<p>Tác giả có lời muốn nói: Cảm tạ đại gia sinh nhật chúc phúc, cũng chúc mọi người đều là vĩnh viễn 18 tuổi tiểu tiên nữ! Khoai điều so tâm!! Ma ma nói cho ta chuẩn bị một cái đại đại bánh sinh nhật! Ăn không hết nha ～ thật là ngọt ngào phiền não ～ hôm nay cũng phát 100 cái bao lì xì đại gia cùng nhau cao hứng cao hứng! Kế tiếp ba ngày, tuy rằng đi ra ngoài chơi, nhưng cũng sẽ nỗ lực đổi mới! Ta mang theo bàn phím đát!!</p>
+<p>============</p>
+<!-- END-AUTO-INSERT-48 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong47.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong49.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "manh-nhat-phu-tro-thuc-te-ao";
+const NOVEL_TITLE = "Mạnh Nhất Phụ Trợ Thực Tế Ảo";
+const CHAPTER_TITLE = "Chương 48: Đấu vòng loại tuyển chọn ( bắt trùng )";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,883 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 11: Takaaki</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Một Giấc Ngủ Dậy Ta Thành Tiểu Hiromitsu Mẹ
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 11: Takaaki</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-11 -->
+
+
+        <p>Bên cạnh là năm ấy 7 tuổi tiểu nhi tử, phía sau cách đó không xa chính là trượng phu Morofushi Shusuke thi thể, mà ta, lại thu được một phần tràn ngập châm chọc ý vị “Viện trợ”.</p>
+        <p>Ishida Taro phảng phất cảm thấy chính mình thắng định rồi: “Saki-chan, ngươi yên tâm, ta sẽ không bạc đãi ngươi, ngươi nói ngươi một gia đình phụ nữ, về sau mang theo hai cái kéo chân sau như thế nào sinh hoạt a .”</p>
+        <p>Ta phẫn nộ mà đánh gãy hắn: “Không được vũ nhục ta hài tử! Ngươi cút cho ta đi ra ngoài!”</p>
+        <p>Hắn bĩu môi, tựa hồ là muốn cho ta nhận rõ hiện thực: “Nguyên bản cho rằng Hiromitsu đứa nhỏ này cũng đã chết, nói vậy ngươi gánh nặng còn nhẹ nhàng điểm, rốt cuộc Morofushi Takaaki đều đã 13 tuổi, ly thành niên độc lập cũng không có mấy năm, đến lúc đó ngươi một tái giá .”</p>
+        <p>Bang!</p>
+        <p>Ta run rẩy tay hung hăng quăng hắn một bạt tai.</p>
+        <p>Ishida Taro sau một lúc lâu mới phản ứng lại đây, trên mặt dữ tợn dữ tợn lên: “Hảo a, rượu mời không uống lại thích uống rượu phạt! Chờ cảnh sát mang đi ngươi, ngươi liền biết cầu ta là cỡ nào có lợi một cái lựa chọn!”</p>
+        <p>Vừa nói, hắn một bên càng thêm đến gần một bước, đồng thời dùng tay đi sờ ta khóe miệng.</p>
+        <p>Động tác quá nhanh, ta trốn tránh không kịp, bị hắn được sính.</p>
+        <p>“Đến lúc đó, ta đảo muốn nhìn, ngươi này trương miệng anh đào nhỏ, ở trên giường có thể kêu ra cái gì đa dạng tới!”</p>
+        <p>Nói xong, hắn nhìn thoáng qua ta phía sau an an tĩnh tĩnh Shusuke, xả ra cái đắc ý cười, xoay người đi rồi.</p>
+        <p>Ta chỉ cảm thấy từng luồng máu đánh thẳng đầu, trên người sở hữu tế bào đều ở kêu gào đem cái này súc sinh không bằng đồ vật giết chết!</p>
+        <p>Kịch liệt cảm xúc dao động kích thích đến ta trước mắt biến thành màu đen, hô hấp dồn dập đến ghê tởm tưởng phun.</p>
+        <p>Đầu váng mắt hoa bên trong, ta nhịn không được ngồi xổm xuống thân tới.</p>
+        <p>Lúc này, ta bỗng nhiên phát hiện vẫn luôn bị ta nắm tay tiểu Hiromitsu đang muốn giãy giụa mở to mắt, tựa hồ là tưởng xem xét ta trạng huống.</p>
+        <p>Ta không lại quản cái gì miệng vết thương không miệng vết thương, trực tiếp ngồi quỳ xuống dưới thuận thế ôm hắn, đem hắn khuôn mặt nhỏ dán đến ta bên gáy.</p>
+        <p>“Hiromitsu,” ta nhẹ giọng nói, nhìn ta phía trước máu chảy đầm đìa mặt đất cùng thi thể, “Ngươi có thể mở to mắt.”</p>
+        <p>Đứa nhỏ này hơi giãy giụa động tác ngừng lại.</p>
+        <p>Ta nhìn không tới hắn chính mặt, không biết hắn có hay không mở to mắt, ta chỉ có thể nghe được hắn ở ta bên tai thanh thiển tiếng hít thở tựa hồ ở mỗ một khắc tăng thêm vài phần.</p>
+        <p>Ổn ổn chính mình càng ngày càng suy yếu lực đạo, ta tiếp tục như vậy nửa cố định mà ôm hắn, một bàn tay nhẹ vịn trụ hắn đầu, bảo đảm hắn chỉ có thể nhìn về phía đại môn phương hướng mà không thể quay đầu hướng địa phương khác xem: “Ngươi có thể mở to mắt, nhưng là Hiromitsu, từ nay về sau, ngươi muốn đi phía trước xem.”</p>
+        <p>“Mụ mụ cùng ngươi nói một sự kiện, ngươi phải nhớ kỹ nói cho phía sau tới cảnh sát các thúc thúc . ở cái này môn thính góc tường có một chậu quân tử lan, chậu hoa bên trên có một cái ta ba ngày trước trang bị camera theo dõi, nó ghi hình sẽ thật thời võng truyền tới trong nhà trong máy tính. Ngươi nhớ kỹ sao?”</p>
+        <p>Nho nhỏ hài tử gật gật đầu, mềm mại tóc cọ ở ta gương mặt biên, có điểm ngứa.</p>
+        <p>Đúng vậy, cameras. Đã từng ta, ở điên cuồng cùng thế giới ý thức đối nghịch trước, còn làm một sự kiện, chính là trang bị cái này cameras.</p>
+        <p>Lúc ấy ta cũng là tuyệt vọng tới rồi đỉnh điểm, cảm thấy nếu ta cùng Shusuke nhất định sẽ chết, kia ít nhất cũng muốn đem Tomori Hajime kéo vào địa ngục . không thể làm hắn mười mấy năm sau còn đi tai họa Hiromitsu!</p>
+        <p>Hiện tại, cái này cameras cũng coi như là phái thượng công dụng.</p>
+        <p>Không chỉ là Tomori Hajime xâm lấn cùng hành hung, còn có vừa mới Ishida Taro đủ loại làm người ghê tởm lời nói việc làm, đều đã bị truyền tống tới rồi trên máy tính.</p>
+        <p>Ta không biết này có thể hay không cho ta giết chết Tomori Hajime hành vi gia tăng đồng tình phân. Bởi vì xác thật tựa như vừa mới Ishida theo như lời như vậy, ta hiện tại trong tay không có chứng cứ chứng minh chính mình trừ bỏ giết chết đối phương liền không có mặt khác tự bảo vệ mình biện pháp.</p>
+        <p>Chính là ta hiện tại thật sự là không có sức lực suy nghĩ này đó.</p>
+        <p>Cả người đều ở rét run, ý thức càng ngày càng mơ hồ.</p>
+        <p>Thời gian dài tinh thần căng chặt, thân thể tổn thương cùng mất máu, hơn nữa cảm xúc thượng kịch liệt bi thương cùng phẫn nộ, đều làm ta khó có thể lại kiên trì đi xuống.</p>
+        <p>Hiện tại duy nhất chống ta, chính là trong lòng ngực hài tử.</p>
+        <p>Ta còn không thể ngã xuống. Cảnh sát còn không có tới, ta không dám đem tuổi nhỏ Hiromitsu trông chờ cấp hiện tại bên người những người khác.</p>
+        <p>“Mụ mụ?” Tiểu Hiromitsu đợi nửa ngày, không có chờ đến ta tiếp tục nói tiếp, có chút nghi vấn mà mở miệng nói.</p>
+        <p>“Hiromitsu,” ta mơ hồ tầm mắt vẫn luôn dừng ở cách đó không xa Shusuke thi thể thượng, “Nhớ kỹ, muốn đi phía trước xem.”</p>
+        <p>Ishida Taro không có đóng lại cửa phòng nửa sưởng, mặt trời xuống núi cuối cùng một chút ánh chiều tà chiếu xạ tiến vào, sái chúng ta một thân.</p>
+        <p>Ta đưa lưng về phía đại môn, tầm mắt càng ngày càng hoảng, nhưng vẫn là lại lần nữa cường điệu:</p>
+        <p>“Hiromitsu, đi phía trước xem, không cần quay đầu lại.”</p>
+        <p>Xe cảnh sát cùng xe cứu thương tiếng còi đan xen tới gần, ta đã nghe được bọn họ ngừng ở viện môn khẩu thanh âm.</p>
+        <p>Như là thở dài nhẹ nhõm một hơi, ta mơ mơ màng màng mà nhắc mãi một câu “Mụ mụ mệt mỏi liền ngủ một lát”, ngay sau đó liền hôn mê bất tỉnh.</p>
+        <p>Ý thức tiêu tán khi, ta tựa hồ cảm giác được tiểu Hiromitsu nỗ lực đỡ lấy ta thoát lực thân thể, kinh hoảng mà hô hai tiếng “Mụ mụ”.</p>
+        <p>Ta tưởng lại an ủi an ủi hài tử, chính là ta thật sự thật sự quá mệt mỏi, chỉ trong nháy mắt, đen nhánh thủy triều liền bao phủ ta.</p>
+        <p>Ta hoàn toàn ngất xỉu.</p>
+        <p>Khi ta lại lần nữa tỉnh lại khi, người đã nằm ở bệnh viện trên giường bệnh.</p>
+        <p>Trắng tinh mép giường nằm bò một con ngủ tiểu Hiromitsu.</p>
+        <p>Ta chớp chớp mắt, làm vừa mới thức tỉnh mơ hồ tầm mắt tận khả năng rõ ràng một ít.</p>
+        <p>Tầm nhìn nội không có cảnh sát.</p>
+        <p>Là đi ra ngoài sao?</p>
+        <p>Chính nghi hoặc khi, một cái dáng người cao gầy thon dài nam hài tử trong tay cầm một con mang ống hút ly nước, đi đến.</p>
+        <p>Vừa nhấc đầu nhìn đến ta mở mắt, Morofushi Takaaki nguyên bản nghiêm túc trầm thấp thần sắc tức khắc giảm bớt vài phần: “Mụ mụ, ngươi tỉnh.”</p>
+        <p>Hắn bước nhanh đến gần, cúi người nhìn nhìn đầu giường những cái đó máy móc các loại số liệu, ấn chuông gọi sau, quay đầu nhìn về phía ta, thượng chọn hai mắt lộ ra ấm áp: “Hoan nghênh trở về, mụ mụ.”</p>
+        <p>Ta nhìn ta đại nhi tử, 13 tuổi thiếu niên thân cao đã trừu điều, có vẻ có chút quá mức gầy. Ưu nhã đoan chính ngũ quan thật sự rất giống Morofushi Shusuke, bởi vì ở tuổi dậy thì, bên miệng đã toát ra màu xanh lơ tiểu hồ tra nhi.</p>
+        <p>Đại khái, cũng là vì này đó đột phát sự tình, căn bản không kịp xử lý. Bằng không, y Takaaki cái này chú trọng dáng vẻ đến có cưỡng bách chứng tính tình, đã sớm nhịn không nổi.</p>
+        <p>Ta nhẹ nhàng mở miệng: “Ta ngủ bao lâu?” Một trương miệng mới biết được chính mình tiếng nói có bao nhiêu ách.</p>
+        <p>Takaaki đem trong tay cầm cái kia ly nước gần sát, sau đó đem ống hút phóng tới ta bên miệng: “Dùng ống hút sẽ càng phương tiện một ít, ngươi đã ngủ một ngày một đêm, mụ mụ. Bác sĩ nói ngươi tinh thần quá mức mỏi mệt .”</p>
+        <p>“Hơn nữa mất máu quá nhiều.” Hài đồng thanh âm nói tiếp.</p>
+        <p>A, ở một bên ngủ tiểu Hiromitsu cũng tỉnh.</p>
+        <p>Tiểu gia hỏa màu lam mắt mèo mở lưu viên, rất là ủy khuất: “Ca ca ngươi nói tốt mụ mụ tỉnh liền kêu ta, như thế nào gạt ta nha.”</p>
+        <p>Takaaki không cái tay kia không khách khí mà xoa xoa đệ đệ đầu: “Ta cũng vừa nhìn đến mụ mụ tỉnh, không thể so ngươi sớm vài giây.”</p>
+        <p>Tiểu Hiromitsu đô đô miệng, ngược lại hướng ta cầu an ủi: “Mụ mụ ngày hôm qua đột nhiên liền hôn mê, hù chết Hiromitsu! May mắn cảnh sát thúc thúc cùng bác sĩ thúc thúc ngay sau đó liền vào nhà .”</p>
+        <p>Ta lo lắng mà nhìn về phía đại nhi tử: “Hiromitsu hắn có hay không . có hay không nhìn đến .”</p>
+        <p>Takaaki bình tĩnh đôi mắt ảm đạm rồi một chút, đốn hai giây sau nói: “Hắn quá lo lắng ngươi, không có tâm tư xem nơi khác, hơn nữa cảnh sát cùng bác sĩ thực mau liền đem hắn mang đi ra ngoài.”</p>
+        <p>Ta thở dài nhẹ nhõm một hơi, tiếp theo lại quan tâm nói: “Takaaki đâu? Ngươi như thế nào trở về? Sau khi trở về có hay không gặp được cái gì phiền toái? Cảnh sát tìm ngươi hỏi tới sao?”</p>
+        <p>Hắn trật tự rõ ràng mà từng cái trả lời nói: “Ta thực hảo. Cắt đứt điện thoại sau, ta cùng lão sư thuyết minh một chút tình huống, sau đó cùng Kansuke cùng nhau ngồi xe taxi trở về. Sau khi trở về ta trực tiếp liền tới đến bệnh viện, không có gặp được cái gì phiền toái, chỉ là thực lo lắng mụ mụ cùng Hiromitsu. Phía trước đã có cảnh sát cùng ta liêu quá hai câu, bất quá bởi vì chúng ta tình huống đặc thù, ở phòng bệnh bên ngoài đơn giản hỏi vài câu sau liền kết thúc.”</p>
+        <p>“Kansuke-kun cũng tới sao? Như thế nào không thấy được hắn?” Ta hơi hơi quay đầu đi xem bệnh ngoài cửa phòng.</p>
+        <p>“Hắn đi hỗ trợ múc cơm, làm ta ngốc phòng bệnh nơi này.”</p>
+        <p>Ta nhẹ nhàng cười rộ lên: “Hoạn nạn thấy chân tình, Takaaki, ngươi có thể giao cho như vậy một cái bằng hữu, mụ mụ thực vui vẻ.”</p>
+        <p>Morofushi Takaaki không được tự nhiên mà nhấp nhấp miệng.</p>
+        <p>Ta hiểu rõ, đại nhi tử thật sự 【 ngạo kiều 】.</p>
+        <p>Lúc này, nghe được chuông gọi sau tiến vào xem xét bác sĩ cũng tới rồi, bắt đầu cho ta tiến hành kiểm tra.</p>
+        <p>Đang ở kiểm tra trong lúc, phòng bệnh môn bị gõ vang, là hai tên người mặc chế phục cảnh sát.</p>
+        <p>Không biết có phải hay không ta ảo giác, tổng cảm giác mép giường tiểu Hiromitsu lập tức liền đứng lên cả người thứ, một cổ áp suất thấp rất là bất thiện hướng kia hai vị cảnh sát phương hướng vọt qua đi.</p>
+        <p>Ta ngốc ngốc mà quay đầu xem ta tiểu nhi tử, lại trông thấy hắn cặp kia nguyên bản hẳn là thiên chân vô tà đôi mắt chỗ sâu trong, lan tràn ra tảng lớn bóng ma.</p>
+        <p>Này?</p>
+        <p>Tiểu Hiromitsu lãnh tiểu Scotch hào sao?</p>
+        <p>Uy? Thế giới ý thức ở sao? Ta nhãi con như thế nào có điểm hắc hóa khuynh hướng? Σ( ° △°|||)︴</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- END-AUTO-INSERT-11 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "mot-giac-ngu-day-ta-thanh-tieu-hiromitsu-me";
+const NOVEL_TITLE = "Một Giấc Ngủ Dậy Ta Thành Tiểu Hiromitsu Mẹ";
+const CHAPTER_TITLE = "Chương 11: Takaaki";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

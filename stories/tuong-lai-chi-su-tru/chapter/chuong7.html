@@ -1,0 +1,492 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 7: Hot search</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tương Lai Chi Sư Trù
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 7: Hot search</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong6.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong8.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-7 -->
+<p>“Gấp cái gì. Ta này không phải ít nhất ba năm không thể trở về sao? Ai, đúng rồi, ta nếu muốn cùng trong nhà thông tin, bảng giá là nhiều ít?”</p>
+<p>Trí não vì hắn định chính là xa hoa khách sạn, lò nướng phối trí không tồi, tuy rằng không lớn, nhưng cũng không phải mini gia dụng hình.</p>
+<p>Một lần có thể nướng 8 cái.</p>
+<p>Ngày mai đánh giá mang 12 cái tả hữu không sai biệt lắm.</p>
+<p>Lại nướng một đợt cũng là đủ rồi.</p>
+<p>Thời gian thực đầy đủ, hắn cũng liền cùng trí não thương lượng nổi lên chi tiết.</p>
+<p>【 tin nhắn, 100 tự 1 điểm tích phân. Giọng nói một phút, 10 điểm tích phân, video, một phút 50 điểm tích phân. 】</p>
+<p>“Ta đột nhiên có bất hảo dự cảm, ngươi nói cho ta, tích phân như thế nào tính đi.”</p>
+<p>【 bất đồng thức ăn cấp bậc, bất đồng thuật toán. 】</p>
+<p>Tổng cộng chia làm 10 cái cấp bậc.</p>
+<p>Đơn giản nhất, 1 cấp, tỷ như xào trứng gà, xào rau xanh như vậy thức ăn, một chút tích phân.</p>
+<p>“Cái gì!!”</p>
+<p>Trí não làm lơ Bành dịch bắc thét chói tai, tiếp tục công bố.</p>
+<p>2 cấp 5 điểm</p>
+<p>3 cấp 10 điểm</p>
+<p>4 cấp 20 điểm.</p>
+<p>5 cấp 40 điểm</p>
+<p>6 cấp 100 điểm</p>
+<p>7 cấp 300 điểm</p>
+<p>8 cấp 500 điểm</p>
+<p>9 cấp 1000 điểm</p>
+<p>10 cấp 5000 điểm</p>
+<p>“Cái gì đồ ăn, so xào trứng gà khó khăn 5000 lần?”</p>
+<p>【 ngươi đều sẽ không đồ ăn. 】 đối với nấu ăn, Bành dịch bắc là có thiên phú, từ sơ trung bắt đầu cũng đích xác hảo hảo học.</p>
+<p>Hàn Kỳ nhắc tới quá danh sư chỉ điểm, cũng là thật sự.</p>
+<p>Bành dịch bắc ông ngoại thân ca ca, là cửa hiệu lâu đời quốc doanh quán ăn đầu bếp.</p>
+<p>Ngoại thúc công này một chi ra không ít đầu bếp, am hiểu cái gì tự điển món ăn đều có. Biểu tỷ phu càng là cơm Tây dương đầu bếp.</p>
+<p>Bành Dịch Bắc năm đó muốn học bếp, lão nhân gia chỉ có cao hứng.</p>
+<p>Nhưng cả nhà có một chút điểm mấu chốt không có thả lỏng, đó chính là, không thể buông học tập.</p>
+<p>Học được tri thức có lẽ đối với ngươi tương lai kiếm tiền cùng chức nghiệp không có bất luận cái gì trợ giúp, nhưng là nó có thể đề cao ngươi tầm mắt, ngươi tu dưỡng, ngươi nội tình.</p>
+<p>Cái này quan điểm Bành Dịch Bắc bản nhân cũng là đồng ý, hắn còn có cái chu du thế giới mộng tưởng đâu.</p>
+<p>Dưới tình huống như thế, tự nhiên thời gian liền ít đi.</p>
+<p>Huống chi, có chút cao nan độ danh đồ ăn, căn bản không truyền ra ngoài. Hắn muốn học cũng học không đến.</p>
+<p>“Không học giỏi những cái đó đồ ăn ta sẽ lại cầm lấy tới, hoàn toàn không học, hiện tại học cũng không kịp a.”</p>
+<p>Thực đơn đều không có.</p>
+<p>Nói thực đơn, thực đơn đến.</p>
+<p>“Ngươi ở trên địa cầu còn thu thập cái này?” Hắn còn rõ ràng nhớ rõ, Cơ Huyền chính là dùng đã thất truyền tu chân pháp môn mới đổi lấy trí não đồng ý trước nợ trướng.</p>
+<p>Thực đơn, giống như…… Không thể so đi.</p>
+<p>【 tri thức thu thập chẳng phân biệt khó dễ. 】</p>
+<p>“Có đạo lý.”</p>
+<p>【 Hàn Kỳ mãnh liệt yêu cầu trước ký lục mỹ thực loại tương quan tin tức 】</p>
+<p>“…………” Có thể lý giải a.</p>
+<p>【 hắn nói muốn viết mỹ thực văn. 】</p>
+<p>“……”</p>
+<p>“Bất quá này 5000, không hảo kiếm a.” Hắn có thể học được sẽ, hắn có kiên nhẫn, nhưng là thế giới này có có thể học sẽ sao?</p>
+<p>【 luôn là có thiên tài. 】</p>
+<p>“Ta muốn về nhà yêu cầu nhiều ít tích phân?”</p>
+<p>【 hai trăm triệu 】 trước đổi tiền nợ, lại phó lộ phí.</p>
+<p>“Ta học.”</p>
+<p>Hắn cũng muốn hảo hảo học, thuận tiện nhất định phải tìm được mấy cái ngút trời kỳ tài, hắn nhất định đem chỉnh bổn thực đơn dốc túi tương thụ.</p>
+<p>Nói là nói như vậy, nhưng là 5000 cùng hai trăm triệu chi gian chênh lệch, ngẫm lại đều làm người cảm thấy tuyệt vọng.</p>
+<p>【 nếu ngươi học sinh, đi giáo người khác như thế nào nấu ăn, chỉ cần người kia học xong, tích phân đồng dạng tính ở ngươi trên đầu. Cùng lý, có người nhìn ngươi dạy học video học được nấu ăn, cũng đồng dạng tính tích phân. 】 cảm giác được Bành Dịch Bắc nội tâm tuyệt vọng, trí não hữu nghị nhắc nhở.</p>
+<p>Internet dạy học đích xác hiệu suất chậm điểm, nhưng là không chịu nổi chịu đông đảo a.</p>
+<p>Chờ hắn dạy học kinh nghiệm phong phú điểm, chụp đến cẩn thận điểm, không chuẩn liền có người có thể học được a.</p>
+<p>Lượng mới là trọng điểm, tỷ như xào rau xanh, liền như vậy một đạo đồ ăn, toàn cầu chỉ cần có một phần mười người học được, hắn là có thể về nhà.</p>
+<p>【 ha hả 】</p>
+<p>“Làm trí não, không có việc gì khai trào phúng là không đúng.”</p>
+<p>Tuy rằng hắn cũng cảm thấy huyền, nếu thế giới này có thể hai trăm triệu người có xem video nắm giữ một đạo đơn giản thức ăn bản lĩnh.</p>
+<p>Cũng không đến mức…… Như vậy thảm.</p>
+<p>Làm xong ngày mai “Lễ vật”, Bành Dịch Bắc cũng không quên mở ra đầu cuối, viết một phần chính thức một chút, khiêm tốn một chút, đáng tin cậy một chút công tác báo cáo.</p>
+<p>Chẳng sợ thế giới này đối trù nghệ phương diện đầu tư đặc biệt hào, chẳng sợ tương lai kim chủ, có tiền thiện tâm.</p>
+<p>Chính mình cũng đến biểu đạt một chút chính mình đối tại đây phân sự nghiệp nghiêm túc.</p>
+<p>Ít nhất muốn đem hiệu quả và lợi ích hồi quỹ cấp viết rõ ràng.</p>
+<p>Bành Dịch Bắc không biết chính là, ở hắn vùi đầu khổ viết nhân sinh đệ nhất phân hạng mục kế hoạch thời điểm.</p>
+<p>Cảnh sát tiểu ca đang ở hoả tốc nổi tiếng internet.</p>
+<p>Cảnh sát cái này công tác rất bận rất bận, nhưng là cầu hôn giả vẫn là có thể bài trừ tới.</p>
+<p>Đương cảnh sát tiểu ca bắt được bố lôi sau, không nói hai lời, một bên xin nghỉ, một bên đi mua nhẫn cùng hoa.</p>
+<p>Trước vài phút còn bình thường ra cảnh đâu, lúc này đột nhiên liền phải đi cầu hôn.</p>
+<p>Sợ tới mức lãnh đạo chạy nhanh cấp giả.</p>
+<p>Có thể như vậy đột nhiên, mười có tám chín là bạn gái hạ tối hậu thư.</p>
+<p>Hiện giờ thời gian này, đã đèn rực rỡ mới lên, nếu động tác mau một chút, vừa lúc có thể theo kịp tiếp bạn gái tan tầm.</p>
+<p>Châu báu trong tiệm, nhân viên cửa hàng vẻ mặt kinh hách nhìn một cái ăn mặc chế phục liền chạy vào mua nhẫn ( đã sớm xem trọng nào một khoản ), mua sắm, tính tiền, không vượt qua ba phút, hoả tốc rời đi tuổi trẻ tiểu cảnh sát.</p>
+<p>Lén lút đem tiểu ca bóng dáng chụp được tới, phát bằng hữu vòng chúc phúc.</p>
+<p>Nàng đều não bổ ra một đoạn lãng mạn ngàn dặm truy thê.</p>
+<p>A, lại tin tưởng tình yêu.</p>
+<p>Nhẫn ba phút thu phục, hoa liền càng nhanh, hắn trực tiếp mua nhân gia trên kệ để hàng triển lãm dùng hàng mẫu. Trực tiếp vọt tới bạn gái công ty dưới lầu.</p>
+<p>Tay phủng hoa tươi cảnh sát tiểu ca ca, nháy mắt chung quanh tan tầm, đi ngang qua, đều không đi rồi.</p>
+<p>Đầu cuối toàn bộ giơ lên, ta chụp.</p>
+<p>Cảnh sát tiểu ca vừa định hỏi chính mình bạn gái ở nơi nào.</p>
+<p>Liền nhìn đến bạn gái đi theo các đồng sự cùng nhau đi ra đại môn, tuyệt đối trùng hợp kinh hỉ.</p>
+<p>Dùng cảnh sát tiểu ca cách nói, đó chính là vận mệnh an bài.</p>
+<p>Nữ chính nhìn đến chính mình bạn trai phủng hoa tươi, một đầu hãn ở chính mình công ty cửa chờ chính mình, đó là tức đau lòng lại kinh hỉ.</p>
+<p>Lớn hơn nữa kinh hỉ còn ở phía sau đâu.</p>
+<p>Bạn trai nhìn đến chính mình, xoạch một chút, liền quỳ xuống.</p>
+<p>Một tay hoa tươi, một tay nhẫn.</p>
+<p>“Tiểu y, gả cho ta đi!”</p>
+<p>Chung quanh một mảnh ồn ào, loại này thời điểm thỏa thỏa chỉ có chúc phúc.</p>
+<p>Nhưng mà nữ chính là ngốc, nàng không phải không muốn a.</p>
+<p>Chỉ là, này quá đột nhiên đi.</p>
+<p>Đôi ta còn ở cãi nhau đâu, ngươi không phải hẳn là trước hợp lại, lại cầu hôn? ( vấn đề này Bành Dịch Bắc cũng rất tưởng hỏi. )</p>
+<p>Hôm nay là cái gì đặc thù nhật tử sao?</p>
+<p>Nữ hài tử luôn là dễ dàng tưởng nhiều, nhìn bạn trai một thân cảnh phục, lập tức não bổ liên tiếp tục kịch người yêu sắp chấp hành nguy hiểm nhiệm vụ BE cốt truyện.</p>
+<p>“Vì cái gì như vậy đột nhiên?”</p>
+<p>Chung quanh nhiệt liệt không khí đột nhiên một ngưng, này tiết tấu không đúng a.</p>
+<p>Cầu hôn bị cự, chẳng lẽ là muốn lên hot search tiết tấu?</p>
+<p>Sau đó nhìn đến cảnh sát tiểu ca cũng không dựa theo kịch bản tới.</p>
+<p>Hắn đem nhẫn liền hộp cùng nhau trước đặt ở nữ sinh trên tay, hoa tươi trực tiếp ném ở một bên. Lấy ra một cái thần thần bí bí tiểu hắc bao.</p>
+<p>“Ta hôm nay ra cảnh, gặp được một vị đầu bếp đang ở làm tân đồ ăn, hắn mời ta thí ăn một chút.”</p>
+<p>Tiểu ca cẩn thận mở ra màu đen bao.</p>
+<p>Lấy ra hai cái màu trắng chén nhỏ, cẩn thận thác đến bạn gái trước mặt.</p>
+<p>“Đây là hắn đưa ta.”</p>
+<p>Vây xem quần chúng:!!!! Cái gì?! Đây là cái gì huyền huyễn cốt truyện!</p>
+<p>“Ta trước tiên nghĩ đến chính là ngươi, ta muốn bắt tới cùng ngươi chia sẻ.” Tình ý miên man, thâm tình chân thành.</p>
+<p>Vây xem quần chúng ( nữ ): Nhà người khác bạn trai a.</p>
+<p>“Loại này kỳ ngộ rất khó tới lần thứ hai, ta nghĩ hôm nay cầu hôn ở thích hợp bất quá.”</p>
+<p>Ngộ che còn hưu ly cái rốt cuộc bị mở ra.</p>
+<p>Nướng bố lôi vẻ ngoài tức khắc hấp dẫn mọi người lực chú ý.</p>
+<p>Đương một cái màu bạc muỗng nhỏ, gõ khai caramel tầng ngoài, kia rất nhỏ thanh thúy răng rắc, cùng với phong tỏa ở caramel dưới hiện giờ chậm rãi phiêu ra nồng đậm mùi sữa.</p>
+<p>Làm chung quanh vây xem quần chúng tức khắc đỏ đôi mắt.</p>
+<p>Liền hướng về phía cái này vẻ ngoài, hướng về phía cái này mùi hương, liền tuyệt đối kém không đến chỗ nào đi.</p>
+<p>Tuyệt đối không phải cái nào tiểu hài tử ở phòng bếp lung tung lăn lộn, cuối cùng nói là “Sáng ý tân đồ ăn”.</p>
+<p>Nghe một chút vừa mới cảnh sát tiểu ca nói gì đó!</p>
+<p>Ngẫu nhiên gặp được!</p>
+<p>Đầu bếp!</p>
+<p>Đưa!</p>
+<p>Vây xem quần chúng hâm mộ ghen ghét hoàn toàn không ảnh hưởng một muỗng mang theo caramel bố lôi đưa đến nữ chính trong miệng.</p>
+<p>Từ bị cầu hôn nữ chính không thể tưởng tượng thật mắt to cùng với kia hàm ở trong miệng không chịu nuốt vào không tha biểu tình trung.</p>
+<p>Bọn họ đọc ra “Mỹ vị” hai chữ.</p>
+<p>Mà trận này cầu hôn nam chính.</p>
+<p>Nói đặt kết cục một câu.</p>
+<p>“Thích sao? Hai cái đều cho ngươi!”</p>
+<p>Nữ chính lập tức đoạt lấy nhẫn, mang ở trên tay.</p>
+<p>Đem hai ly bố lôi cái hảo cái nắp, thả lại bọc nhỏ, kéo mới mẻ ra lò vị hôn phu tay, ngẩng đầu ưỡn ngực vẻ mặt kiêu ngạo bài khai vây xem quần chúng rời đi.</p>
+<p>Nói giỡn, nàng mới không cần ở chỗ này ăn đâu.</p>
+<p>Nhất định phải tìm cái cao cấp đại khí thượng cấp bậc địa phương, hảo hảo nhấm nháp.</p>
+<p>Ôm vị hôn phu, giơ bố lôi, cẩn thận chụp ảnh, phát bằng hữu vòng!</p>
+<p>Hâm mộ ghen tị hận thủy triều hướng tới nàng vọt tới đi.</p>
+<p>Nàng sắp là toàn công ty, không, toàn thương nghiệp khu nhất tịnh tử!</p>
+<p>..%%%</p>
+<p>Trên mạng như thế nào sôi trào, hắn mặc kệ.</p>
+<p>Bước đầu thu phục “Kế hoạch án” sau.</p>
+<p>Bành Dịch Bắc liền ở mềm mại đến không thể tưởng tượng trên giường lớn ngủ rồi, giây ngủ.</p>
+<p>Có lẽ là ngày này quá đến quá xuất sắc, xuyên qua, biết được “Tin người chết”, trở về phương pháp, đột nhiên mà tới 100 vạn, cảnh sát tới cửa, này thật sự là quá tiêu hao hắn tâm lực.</p>
+<p>Có lẽ là bởi vì, bằng hữu khuynh tẫn toàn lực tương trợ, về nhà hy vọng, ấm áp hắn bất an.</p>
+<p>Đi vào giấc ngủ trước suy đoán trắng đêm khó miên hoàn toàn không có xuất hiện.</p>
+<p>...—</p>
+<p>Xa lạ trần nhà, xa hoa đại đại giường.</p>
+<p>Rời giường chuyện thứ nhất, xác định chính mình không ở trên địa cầu.</p>
+<p>Ngẫm lại hai cái trăm triệu tiền nợ, ngẫm lại chờ đợi chính mình người nhà.</p>
+<p>Ân, thực hảo. Động lực mười phần.</p>
+<p>Thói quen tính đi sờ di động, tới cái sáng sớm “Xoát”.</p>
+<p>Chỉ sờ đến đồng hồ giống nhau đầu cuối.</p>
+<p>Nội tâm có điểm khó chịu đem đầu cuối mang lên.</p>
+<p>Thế giới này đầu cuối đương nhiên có thể sử dụng tới trả tiền, nhưng chẳng sợ mạnh mẽ kêu nó “Alipay”, buổi sáng 7 giờ cũng không có con kiến rừng rậm năng lượng chờ thu.</p>
+<p>Thế giới này có “Weibo”, nhưng thao tác giao diện hoàn toàn không giống nhau, lăn lộn hot search cũng không phải quen thuộc các minh tinh lần thứ N ly hôn.</p>
+<p>Thế giới này có “WeChat”, nhưng hắn bằng hữu vòng bạn tốt rỗng tuếch. Nghĩ đến trí não cho hắn an bài “Bạn tốt” nhóm, thực ăn ý che chắn hắn cái này không biết khi nào hơn nữa người xa lạ.</p>
+<p>Đánh răng, rửa mặt, sau đó từ ướp lạnh lấy ra ngày hôm qua quấy tốt nhân thịt cùng hỗn độn da.</p>
+<p>Tìm đem lớn nhỏ thích hợp tiểu dao ăn, khơi mào một miếng thịt nhân, đặt ở hoành thánh da giàu có kỹ xảo tính nhéo, một cái thoạt nhìn thực thô ráp hoành thánh liền ra đời.</p>
+<p>Đây cũng là hiện tại nhìn thô ráp.</p>
+<p>Chờ đến một chút nồi.</p>
+<p>Lược mỏng hoành thánh da, liền sẽ như là cánh chim giống nhau giãn ra khai.</p>
+<p>Đỏ tươi nhân ở mỏng da bao vây hạ hiện ra mê người màu hồng phấn, giống như nửa xấu hổ nửa lộ giai nhân, nhẹ y bạc sam.</p>
+<p>Đương hoành thánh ở trong nước bị quấy thời điểm, lại như là từng cái tiểu cá vàng, lay động sinh tư, linh động nhàn nhã.</p>
+<p>Chỉ là nhìn kia màu hồng phấn đầu nhỏ cùng với thật lớn đuôi cá đong đưa.</p>
+<p>Là có thể chữa khỏi sáng sớm bực bội.</p>
+<p>Tiểu hoành thánh lớn nhỏ vừa phải, một ngụm một cái, có canh có thủy vẫn là nóng hổi.</p>
+<p>Trước tiên chuẩn bị hảo về sau, làm lên tương đương phương tiện, là bữa sáng thật tốt lựa chọn.</p>
+<p>Hoành thánh canh đế đều thực học cấp tốc.</p>
+<p>Nhiều nhất chính là tảo tía, trứng da, cải bẹ, tôm khô, muối, nước ấm một hướng, còn có thể thêm dấm cùng nước tương gia vị.</p>
+<p>Ngươi thích phức tạp một chút, có thể đào bảo mua có sẵn thiên lý hương canh liêu.</p>
+<p>Hiện tại điều kiện có hạn, Bành dịch bắc liền làm cái chủ nghĩa tối giản.</p>
+<p>Muối, bột ngọt. Liền này hai dạng.</p>
+<p>Sạch sẽ mát lạnh “Nước sông” phụ trợ đến trong chén tiểu cá vàng phá lệ tươi mát khả nhân.</p>
+<p>Mờ mịt lượn lờ một chút nhiệt khí, càng là làm tiểu khả ái nhóm bằng thêm vài phần ninh người tiên khí.</p>
+<p>Nhìn bán tương mê người “Tiểu cá vàng”, Bành Dịch Bắc nhưng không say mê lâu lắm.</p>
+<p>Một muỗng, múc một cái, để vào trong miệng.</p>
+<p>Hoành thánh phóng lâu rồi nhưng không thể ăn, đồ ăn, quan trọng nhất vẫn là hương vị a.</p>
+<p>Một ngụm đi xuống, tươi mới nhân thịt hỗn mềm hoạt hoành thánh da hỗn hợp thanh đạm lại không nhạt nhẽo nước canh.</p>
+<p>Đầu lưỡi cùng hàm răng lẫn nhau hợp tác, đem đáng yêu tiểu cá vàng nội tại mỹ hoàn toàn hiện ra ở vị giác là thượng, nhậm quân bình phán.</p>
+<p>Tươi ngon khẩu cảm được đến chứng thực sau, cùng với nước canh hoa nhập thực quản, xua tan đói khát cảm vui sướng.</p>
+<p>Làm cho cả người từ dạ dày bộ bắt đầu liền ấm áp.</p>
+<p>Còn có một nửa trước sau lưu luyến ở trên giường linh hồn chính thức bị mỹ thực đánh thức.</p>
+<p>Nếu nói nơi nào có tỳ vết……</p>
+<p>Đệ nhất, quên mua hành, đệ nhị, thế giới này “Rượu gia vị” như thế nào có điểm quái quái.</p>
+<p>【 bởi vì kia không phải rượu gia vị……】</p>
+<p>“Không phải liền không phải đi, không chỉ là thế giới này nguyên liệu nấu ăn đến từng cái sờ soạng lại đây, liền gia vị liêu đều đến từ đầu bắt đầu chuẩn bị.”</p>
+<p>Một bên phun tào cảm thán “Sinh hoạt không dễ” một bên dùng ngày hôm qua mua được quần áo cùng đồ dùng tẩy rửa chuyển chính mình.</p>
+<p>Rốt cuộc này cũng coi như là trọng đại “Phỏng vấn”.</p>
+<p>Nhưng là đem mặt rửa sạch sẽ, sơ chung phát, lại đồ cái hộ da sương, hắn vẫn là sẽ.</p>
+<p>Nam sinh sao, sạch sẽ thoải mái thanh tân là được.</p>
+<p>Hướng trí não xác nhận quá, chính mình hôm nay trang điểm tuyệt đối thuộc về thế giới này chủ lưu bình thường thẩm mỹ trong phạm vi sau.</p>
+<p>Vui vẻ thoải mái hẹn trước xe taxi . huyền phù cái loại này .</p>
+<p>Trong tay cầm lễ vật, dự tính so hẹn trước thời gian trước thời gian một giờ tới.</p>
+<p>Hoàn mỹ.</p>
+<p>Hắn là nhàn nhã bình tĩnh.</p>
+<p>Hồn nhiên không biết, hắn sắp đi hoàn tinh công ty cao tầng, tập thể dùng các loại lý do kiều ban, không ra thời gian tới ở công ty chờ hắn.</p>
+<p>Trực tiếp lạm dụng chức quyền, đoạt “Đầu tư bộ” tiểu tỷ tỷ việc.</p>
+<p>Ngồi ở văn phòng đám người.</p>
+<p>Vì hôm nay thuận lợi gặp mặt, bọn họ thậm chí ở rườm rà họp thường niên sau, thức đêm suốt đêm thảo luận các loại ứng đối phương án.</p>
+<p>“Tốt, làm hắn tiến vào, đến 1120 hào phòng gian.” Đặc trợ tiên sinh đẩy đẩy tinh anh mắt kính khung, sau đó bắt đầu đuổi người.</p>
+<p>“Người tới, các ngươi mấy cái, đi cách vách trốn đi.”</p>
+<p>Song bào thai, tổng tài đều bị đuổi đi.</p>
+<p>Đặc trợ nguyên nhân thực đầy đủ.</p>
+<p>Tổng tài gương mặt này quá nổi danh, một cái 100 vạn tiểu án tử, ngươi tự mình cùng người ký hợp đồng? Nói giỡn đâu.</p>
+<p>Song bào thai, bàn hợp đồng các ngươi sẽ sao?</p>
+<p>Đến nỗi những người khác, bọn họ còn không biết đâu.</p>
+<p>Nhưng thật ra Bành dịch bắc đến gần phỏng vấn văn phòng, nhìn đến liền một người có điểm ngây ngẩn cả người.</p>
+<p>Ngạch…… Lễ vật chuẩn bị nhiều.</p>
+<p>Bất quá có thể giao cho vị tiên sinh này phân, tổng so chuẩn bị không đủ muốn hảo.</p>
+<p>Hắn mới đem trên tay đồ vật giơ lên.</p>
+<p>Liền nhìn đến trước mắt vị này thoạt nhìn liền thập phần có tinh anh phạm nhi soái ca chợt ánh mắt sắc bén lên.</p>
+<p>Thấu kính sáng lên một chút cái loại này sắc bén cảm.</p>
+<p>“Cam sành nướng bố lôi.” Khẳng định câu.</p>
+<p>“Đối…… Ngài là làm sao mà biết được?” Thế giới này không phải không món này sao?</p>
+<p>“Chú ý hot search động thái là giới giải trí nhân sĩ môn bắt buộc. Nguyên lai món này là ngươi làm.”</p>
+<p>Hot search, cái gì hot search?</p>
+<p>“Ta có thể nếm thử xem sao?”</p>
+<p>“Đương nhiên có thể!”</p>
+<p>Mới ăn đệ nhất khẩu, vị kia tinh anh tiên sinh, liền đem cái muỗng buông xuống, thao tác một chút đầu cuối.</p>
+<p>[ leng keng, đến trướng 1000W tinh tệ, thỉnh chú ý kiểm tra và nhận. ]</p>
+<p>“??!”Bành dịch bắc.</p>
+<p>Từ từ, một ngụm nướng bố lôi không như vậy quý..</p>
+<!-- END-AUTO-INSERT-7 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong6.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong8.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tuong-lai-chi-su-tru";
+const NOVEL_TITLE = "Tương Lai Chi Sư Trù";
+const CHAPTER_TITLE = "Chương 7: Hot search";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

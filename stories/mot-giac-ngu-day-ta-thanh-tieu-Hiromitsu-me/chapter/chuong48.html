@@ -1,0 +1,883 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 48: Tìm kiếm</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Một Giấc Ngủ Dậy Ta Thành Tiểu Hiromitsu Mẹ
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 48: Tìm kiếm</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong47.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong49.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-48 -->
+
+
+        <p>Tiểu Hagiwara nói nhắc nhở ta . Kamiya Hiroshi không có nghe được Rikako là 【 bởi vì trúng độc mà bị đưa hướng bệnh viện cứu giúp 】 cái này tin tức điểm.</p>
+        <p>Chúng ta là vừa rồi mới từ Hasegawa cảnh sát trong miệng xác định tin tức này, chính là lúc ấy Kamiya Hiroshi còn chưa tới tràng.</p>
+        <p>Người bình thường đang nghe nói chính mình thê tử trúng độc sau, hẳn là đều sẽ theo bản năng mà đưa ra 【 trúng cái gì độc, như thế nào sẽ trúng độc 】 linh tinh vấn đề, chính là vừa mới Kamiya Hiroshi không có.</p>
+        <p>Takaaki như suy tư gì: “Như vậy, Kamiya tiên sinh hẳn là còn không biết chính mình thê tử là vì cái gì nằm viện.”</p>
+        <p>Ngay sau đó hắn chuyển hướng Hasegawa cảnh sát: “Xin hỏi, Kamiya tiên sinh hiện tại đi Rikako phòng thu thập hành lý thích hợp sao? Rốt cuộc nếu là người khác đầu độc nói, Kamiya tiên sinh cũng coi như là hôm nay gặp qua người bị hại hiềm nghi giả đi?”</p>
+        <p>Hasegawa cảnh sát vẫy vẫy tay nói: “Không có quan hệ. Tuy rằng hiện tại còn không biết cụ thể là cái gì độc, nhưng là căn cứ Kamiya thái thái nôn cùng trong cơ thể máu thí nghiệm, bệnh viện phương diện đã thực minh xác mà nói cho ta đồng sự . loại này độc tố nhất định là ở người bị hại dạ dày bắt đầu phát huy tác dụng, hơn nữa hàm lượng đã đạt tới đến chết lượng, tại đây loại phân lượng hạ, người bị hại giống nhau sẽ ở một giờ nội độc phát, nói cách khác .”</p>
+        <p>Hắn nhìn chung quanh chúng ta mọi người: “Liền tính suy xét đến khả năng có đặc thù nhân tố trở ngại . tỷ như dùng không dễ tiêu hóa đồ vật bao bọc lấy độc dược, người bị hại độc cũng nhất định là ở nàng độc phát phía trước hai cái giờ trong vòng, bị ăn xong đi hoặc là uống xong đi. Căn cứ trước mắt sở hiểu biết tin tức, Kamiya Rikako cũng không có giấu giếm chính mình ẩm thực trải qua động cơ cùng dấu hiệu, như vậy .”</p>
+        <p>Date Satonobu ngồi ở một bên nhìn chằm chằm chính mình trong tay bút ký, lẩm bẩm nói: “Như vậy, chỉ cùng Rikako nữ sĩ xài chung quá ngọ cơm, lúc sau liền vẫn luôn có chứng cứ không ở hiện trường Kamiya tiên sinh, liền không khả năng là hung thủ.”</p>
+        <p>Tiểu Date Wataru nghiêng đầu hỏi chính mình phụ thân: “Vì cái gì hoàn toàn không có khả năng? Nếu là hắn ở thê tử khẳng định sẽ tiếp xúc đến nào đó vật phẩm thượng lau độc, bất đồng dạng cũng có thể làm được xa ở ngàn dặm ở ngoài giết chết nàng sao?”</p>
+        <p>Hasegawa nhìn chính mình đồng kỳ hài tử, lắc đầu nói: “Không đúng, Kamiya thái thái trong cơ thể độc dược cũng không phải □□, mà loại này độc vật ở nàng trong cơ thể sở bày biện ra phân lượng, cũng tuyệt không sẽ là thông qua 【 đụng chạm lại nhập khẩu 】 loại này hình thức có khả năng đủ đạt tới.”</p>
+        <p>Yamato Kansuke thô thanh thô khí hỏi: “Không thể điều tra ra dạ dày dung vật rốt cuộc thứ gì có độc sao?”</p>
+        <p>“Từ nôn tới xem, độc dược đã hoàn toàn tản ra,” Hasegawa thở dài nói, “Phân không rõ là cái gì mang độc.”</p>
+        <p>Tình huống nhất thời lâm vào cục diện bế tắc.</p>
+        <p>Ta nhìn thoáng qua Date Satonobu notebook, phát hiện mặt trên qua loa mà viết:</p>
+        <p>【 Takuya Takao, người bị hại bạn tốt kiêm kẻ ái mộ, buổi chiều 4 giờ 30 phút tả hữu, người bị hại ăn xong hắn cung cấp mơ khô cùng nước trái cây ( theo bản nhân giảng, nước trái cây chưa khui ). Tới khách sạn sau, khoảng 5 giờ cùng người bị hại tách ra, thẳng đến 6 giờ 30 phút mới biết được xảy ra chuyện.</p>
+        <p>Aizawa Reina, người bị hại bạn tốt kiêm đồng sự, buổi chiều 3 giờ đến bốn điểm gian, cùng người bị hại cùng nhau phân ăn khoai lát, chocolate, thạch trái cây chờ đồ ăn vặt ( đều vì chưa khui trạng thái ). Tới khách sạn sau, khoảng 5 giờ chủ động đem người bị hại đưa đến trong phòng, cũng từ khách sạn tủ lạnh lấy ra một lọ nước đá uy người bị hại uống xong ( không bình nước đã ném xuống, cũng với buổi chiều 6 giờ bị xe rác chở đi ). Lúc sau cùng người bị hại tách ra, thẳng đến 6 giờ 30 phút mới biết được xảy ra chuyện.</p>
+        <p>Daidouji Rin, người bị hại bạn tốt, Takuya Takao kẻ ái mộ. Buổi chiều 3 giờ đến bốn điểm gian, cùng người bị hại cùng nhau phân ăn khoai lát, chocolate, thạch trái cây chờ đồ ăn vặt ( đều vì chưa khui trạng thái ). Tới khách sạn sau, khoảng 5 giờ cùng người bị hại tách ra, thẳng đến 6 giờ bởi vì không yên tâm, tiến đến người bị hại 104 phòng xem xét, phát hiện người bị hại tình huống có dị, theo sau nâng này rời đi phòng cũng chuẩn bị đi hướng bệnh viện.</p>
+        <p>Kamiya Hiroshi, người bị hại trượng phu, 12 giờ rưỡi cùng người bị hại cộng tiến cơm trưa, theo sau với 1 giờ chiều một mình đi trước công tác đơn vị tăng ca, có hơn mười người đồng sự làm chứng cứ không ở hiện trường người. Thẳng đến 6 giờ rưỡi nhận được Daidouji Rin điện thoại, biết được thê tử nằm viện cứu giúp, với 7 giờ rưỡi đuổi tới suối nước nóng khách sạn. 】</p>
+        <p>Ta nhìn hắn nhíu mày, sau đó có chút do dự mà ở Kamiya Hiroshi tên thượng vẽ cái xoa.</p>
+        <p>Ta trong lòng thầm nghĩ: Xác thật, chẳng sợ vị này Kamiya tiên sinh biểu hiện đến tựa hồ không quá yêu chính mình tân hôn thê tử, hiện tại xem ra, hắn cũng không phải là hung thủ.</p>
+        <p>Bỗng nhiên, ngồi ở trong góc Matsuda Jinpei nghiêng đi mặt đi, cùng Hagiwara Kenji nhỏ giọng nói thầm chút cái gì, sau đó hai cái tiểu gia hỏa cùng nhau từ trên chỗ ngồi nhảy xuống, hướng đại nhân báo bị nói: “Chúng ta có chút đói bụng, tưởng về phòng thay quần áo lại đi nhà ăn ăn cơm, có thể chứ?”</p>
+        <p>Ta cúi đầu nhìn thoáng qua thời gian, đã 7 giờ 40 phút, tức khắc đau lòng mà đem Hiromitsu cùng Rei cũng chạy tới nơi: “Hai ngươi cũng đi theo Jinpei bọn họ đi, quá muộn, khẳng định đã sớm đói bụng.”</p>
+        <p>Hagiwara thái thái vỗ vỗ tiểu Date Wataru bả vai: “Wataru-kun cũng đi thôi.”</p>
+        <p>Vì thế, năm cái nam hài tiến đến cùng nhau, hướng dừng chân khu đi đến . không biết vì sao, ta tổng cảm giác tiểu Matsuda cùng tiểu Hagiwara trên mặt biểu tình có điểm nóng lòng muốn thử.</p>
+        <p>Vài giây sau, ta nhìn đến Matsuda Jinpei thăm quá thân đi cùng chính mình các bạn nhỏ nói hai câu lời nói, sau đó tiểu Furuya Rei đột nhiên trợn tròn đôi mắt, còn đem chính mình khuôn mặt nhỏ chuyển hướng ta bên này, hơn nữa thần sắc toát ra một tia chột dạ.</p>
+        <p>Ngay sau đó, đầu của hắn đã bị Hiromitsu dùng đôi tay nhanh chóng xoay trở về.</p>
+        <p>Ta:……</p>
+        <p>Ta có bất hảo dự cảm =_=</p>
+        <p>Vô lực đỡ trán trong chốc lát, ta nhanh chóng quyết định: “Takaaki! Mang lên Kansuke-kun, đuổi kịp phía trước kia năm cái!!!”</p>
+        <p>“Ở bọn họ đem thiên thọc ra lỗ thủng phía trước . cho ta đè lại!”</p>
+        <p>Morofushi Takaaki: “…… Tốt, mụ mụ.”</p>
+        <p>……………………………………………………………………………………</p>
+        <p>Chờ đến sở hữu trẻ vị thành niên đều đi rồi, ta lúc này mới thở dài, bắt đầu nỗ lực tìm kiếm án kiện đột phá khẩu . chạy nhanh giải quyết, đỡ phải chậm trễ ngày mai cấp Hiromitsu ăn sinh nhật.</p>
+        <p>Bất quá, may mắn không ra mạng người, bằng không đại gia trong lòng đều đến có một vướng mắc.</p>
+        <p>Tự hỏi một chút sau, ta dẫn đầu hướng vẫn luôn trầm mặc Takuya Takao đưa ra nghi vấn: “Takuya tiên sinh, ngài phía trước nói cảm thấy Kamiya tiên sinh hắn 【 tâm thuật bất chính 】, như vậy cái này nhận tri ngài là như thế nào được đến đâu?”</p>
+        <p>Takuya Takao thần sắc có chút tối tăm, giống như từ Kamiya Hiroshi sau khi xuất hiện hắn chính là này phúc biểu tình: “Ngươi không hỏi ta cũng muốn nói ra, Kamiya Hiroshi người này nhất định có vấn đề. Bốn tháng trước, hắn ở một lần tụ hội thượng gặp phải Rikako, theo sau một tháng, hắn bắt đầu phi thường ân cần mà theo đuổi nàng, các loại viên đạn bọc đường ùn ùn không dứt. Rikako cho rằng hắn đối chính mình nhất kiến chung tình, liền không có đề phòng. Nhưng là ta cảm thấy không thích hợp. Vì thế, ta tìm thám tử tư điều tra một chút người nam nhân này, sau đó phát hiện . hắn 28 tuổi cư nhiên đã kết quá hai lần hôn, hơn nữa phía trước hai nhậm thê tử, đều là chết vào bệnh tim! Hắn thậm chí từ đệ nhị nhậm thê tử tử vong trung đạt được 2000 vạn bảo hiểm kim!”</p>
+        <p>Lời này lập tức khiến cho mọi người chú ý.</p>
+        <p>Aizawa Reina đầy mặt khiếp sợ: “Cái gì?! Này, này . Takuya ngươi phía trước vì cái gì không nói?!”</p>
+        <p>Takuya Takao thống khổ mà nhéo chính mình tóc: “Ta nói rồi! Ta đã nói với Rikako, chính là nàng nói Kamiya Hiroshi cùng nàng thẳng thắn quá kia hai lần 【 bất hạnh hôn nhân 】. nàng căn bản không có bất luận cái gì hoài nghi, thậm chí còn thực đồng tình nam nhân kia trải qua!”</p>
+        <p>Nghe vậy, Aizawa Reina hoảng hốt mà cúi đầu, nhẹ giọng nói: “Ta cư nhiên trước nay không nghe nàng nói qua chuyện này……”</p>
+        <p>Daidouji Rin mím môi, cũng mở miệng nói: “Có một việc, ta không biết này có tính không là manh mối…… Phía trước Rikako cùng ta nhắc tới quá một câu, Kamiya quân công tác viện nghiên cứu rất lợi hại, nàng hiện tại ăn thực phẩm chức năng chính là bọn họ nghiên cứu chế tạo.”</p>
+        <p>Ta: “Ngươi theo như lời loại này thực phẩm chức năng, Rikako nữ sĩ hôm nay cũng ăn đúng không?”</p>
+        <p>“Đúng vậy,” đại khái là bởi vì nhìn đến quá ta cùng Takaaki dùng hết toàn lực cứu giúp Rikako tình cảnh, Daidouji Rin đối ta hảo cảm độ rất cao, nàng thực kỹ càng tỉ mỉ mà trả lời ta nói, “Loại này thực phẩm chức năng là nàng kết hôn sau bắt đầu ăn, mỗi ngày giữa trưa sau khi ăn xong đều sẽ ăn hai viên, nghe nói đối bảo trì dáng người cùng tốt đẹp giấc ngủ rất có hiệu quả. Hôm nay nàng chính là lên xe sau ăn hai viên cái loại này lam bạch sắc bao con nhộng, lúc ấy chúng ta ba cái đều ở bên cạnh.”</p>
+        <p>Đại khái là Takuya Takao phía trước sở giảng Kamiya tiên sinh hôn nhân sử quá mức khủng bố, liền Hasegawa cảnh sát đều có chút dao động: “Kia bình thực phẩm chức năng hiện tại ở đâu?”</p>
+        <p>Daidouji Rin vội vàng nói: “Ở Rikako trong bao, phát hiện nàng trạng thái thực tao muốn đi bệnh viện sau, ta đã từng vọt vào nàng trong phòng giúp nàng lấy giấy chứng nhận cùng tiền bao . sau đó ở tìm kiếm khi liền thấy được cái kia bình thuốc nhỏ.”</p>
+        <p>“Ngươi xác định nhìn đến chính là cái kia thực phẩm chức năng sao?”</p>
+        <p>Aizawa Reina lúc này có chút không kiên nhẫn mà nói xen vào: “Rin-chan đương nhiên sẽ không nhìn lầm! Ba tháng tới Rikako luôn là tùy thân mang theo cái này dược, chúng ta lại không phải người mù! Hôm nay ở trên xe, bởi vì là tân một lọ, cái nắp thực khẩn, vẫn là ta giúp nàng vặn ra nắp bình khai phong.”</p>
+        <p>Matsuda Jotaro: “Cho nên, chúng ta hiện tại có phải hay không hẳn là đi đem cái kia bảo vệ sức khoẻ dược lấy lại đây, làm người kiểm tra một chút? Này tốt xấu cũng coi như khả nghi vật phẩm đi?”</p>
+        <p>Hasegawa cảnh sát có chút do dự: “Chính là, dựa theo thời gian tới suy tính, này bình thực phẩm chức năng hẳn là không ở điều tra phạm vi .”</p>
+        <p>Matsuda Jotaro mặt mày tức khắc sắc bén như đao: “A, quả nhiên là như thế này.”</p>
+        <p>Hắn châm chọc mà cười cười: “Nhiều điều tra một chút đồ vật có thể mệt chết các ngươi sao? Làm như vậy cảnh sát, không ra oan án rất khó đi?”</p>
+        <p>Nghiêm túc giảng, Matsuda Jotaro lời này có điểm thứ người, đặc biệt là ở đây hiện chức cảnh sát không ngừng một cái.</p>
+        <p>Bất quá . ta thở dài, hắn tuyệt đối là liên tưởng đến chính mình phía trước bị oan uổng cái kia án tử.</p>
+        <p>May mắn, Date Wataru phụ thân tính cách rất hào phóng sang sảng, hắn không để ý Matsuda Jotaro lời nói không tốt, ngược lại chủ động khuyên bảo khởi chính mình đồng kỳ: “Hasegawa, lúc trước chúng ta đều là đối với hoa anh đào cảnh huy tuyên quá thề . nếu có điểm đáng ngờ, chúng ta đây liền nên đi kiểm chứng, không buông tha bất luận cái gì một cái người xấu, không oan uổng bất luận cái gì một cái người tốt . như vậy mới không làm thất vọng trên người này thân cảnh phục a.”</p>
+        <p>Hasegawa cảnh sát rũ mắt suy nghĩ vài giây, cuối cùng gật đầu: “Hảo, kia hiện tại chúng ta liền đi lấy được bằng chứng! Đương nhiên, cũng phải nhường Kamiya tiên sinh trước đừng rời khỏi nơi này, chờ đợi một chút kiểm chứng kết quả.”</p>
+        <p>……………………………………………………………………………………</p>
+        <p>Chúng ta ở hành lang lí chính hảo đụng phải dẫn theo một cái nữ sĩ ba lô đi ra ngoài Kamiya Hiroshi. Hắn trường khoản màu đen áo gió nguyên bản rất có khí chất, nhưng là phối hợp kia chỉ hồng nhạt còn mang hoa anh đào đồ án ba lô, liền có vẻ phá lệ quái dị.</p>
+        <p>Nghe được chúng ta ngăn lại mục đích của hắn sau, Kamiya Hiroshi không có bị hoài nghi phẫn nộ, ngược lại bình tĩnh mà đem trong bao thực phẩm chức năng dược bình đưa qua, sau đó rất là thông tình đạt lý mà đáp ứng rồi tạm thời lưu lại nơi này yêu cầu.</p>
+        <p>Hasegawa cảnh sát tựa hồ cảm thấy có chút xấu hổ: “Ngài yên tâm, dược phẩm kiểm nghiệm kết quả ra tới sau, ta nhất định lập tức thông tri ngài, này chỉ là một cái lệ thường bước đi . tuyệt không sẽ chậm trễ ngài đi bệnh viện làm bạn Kamiya thái thái.”</p>
+        <p>Kamiya Hiroshi nhàn nhạt mà cười cười: “Không quan hệ, ta có thể đi trước nơi này nhà ăn ăn cơm, vừa lúc cũng đói bụng.”</p>
+        <p>Lúc này, ta bỗng nhiên mở miệng: “Kamiya tiên sinh đối với Rikako nữ sĩ trúng độc phản ứng thật làm ta giật mình, ngài tựa hồ thực . bình tĩnh?”</p>
+        <p>Hắn thật sâu mà nhìn ta liếc mắt một cái, ánh mắt có chút lãnh, nhưng nói chuyện khi ngữ khí lại rất ôn hòa: “Ta sinh mệnh đã chứng kiến quá quá nhiều bất hạnh, cho nên lần này Rikako có thể sống sót, thật sự đã là 【 ngoài ý muốn chi hỉ 】, khác ta cái gì đều không nghĩ truy cứu. Nói lên, ta nhất nên cảm tạ, hẳn là ngài, Morofushi nữ sĩ . thật sự phi thường cảm tạ ngài đem Rikako cứu tới.”</p>
+        <p>Hắn vươn tay tới, ta do dự một chút, sau đó nắm đi lên.</p>
+        <p>Khớp xương rõ ràng ngón tay buộc chặt, lực đạo đột nhiên tăng đại thậm chí làm ta cảm nhận được một tia đau đớn, Kamiya Hiroshi mỉm cười: “Ngài bọn nhỏ thực hoạt bát, bất quá lần sau, không cần tùy tiện ở trong phòng người khác mặt chơi chơi trốn tìm.”</p>
+        <p>Theo sau hắn buông ra tay.</p>
+        <p>“Như vậy, chư vị, ta đi ăn cơm,” hắn hướng chúng ta hơi hơi khom lưng, “Gặp lại.”</p>
+        <p>Đương đại gia ánh mắt không tự giác mà theo người nam nhân này thân ảnh di động khi, ta đột nhiên phát hiện hành lang cuối toát ra tới một lưu đầu nhỏ, trong đó một cái quyển mao một cái tóc vàng còn đang ở lẫn nhau xé rách -_-||</p>
+        <p>Ta liền biết bọn họ năm cái nhất định là đánh cái gì kỳ quái chủ ý!</p>
+        <p>Kamiya Hiroshi đều đang lén lút cáo trạng! Cho nên các ngươi rốt cuộc là như thế nào lăn lộn hắn?! Takaaki đâu? Hắn như thế nào đều không có quản quản các ngươi .</p>
+        <p>“Trạm hảo, không được chạy.” Đại nhi tử trầm thấp thanh âm vừa lúc ở lúc này xuất hiện!</p>
+        <p>Ven tường toát ra năm cái đầu nhỏ nháy mắt nghe lời mà từ dựng bài một liệt biến thành hoành bài một hàng . Hiromitsu bọn họ chen chúc mà dọc theo hành lang vách tường đứng một loạt.</p>
+        <p>Ta này viên lão mẫu thân tâm tức khắc trở nên vô cùng vui mừng: Nhìn xem, quả nhiên nhà ta Takaaki vẫn là thực đáng tin cậy!</p>
+        <p>Giây tiếp theo, Takaaki nghiêm túc hỏi đối diện năm cái củ cải nhỏ: “Ấn ta nói kế hoạch bắt được bao con nhộng sao?”</p>
+        <p>Ta:……</p>
+        <p>Takaaki?!?!</p>
+        <p>Ngươi nếu như bị bắt cóc liền chớp chớp mắt a!!! QAQ</p>
+        <p>Tác giả có lời muốn nói: 【 bên ngoài tiểu kịch trường 】</p>
+        <p>Takaaki: Các ngươi trước như vậy blablabla sau đó lại blablabla……</p>
+        <p>Năm cái tiểu bảo bối: Ân ân ân!</p>
+        <p>Yamato Kansuke: Ta làm cái gì?</p>
+        <p>Takaaki: Làm bộ tức giận ca ca, vọt vào đi dùng trảo bướng bỉnh đệ đệ lý do đem bọn họ 【 truy biến mỗi một góc 】, sau đó đem bọn họ đuổi tới vị kia Kamiya tiên sinh bên người</p>
+        <p>Yamato Kansuke: Đã hiểu! Làm cho bọn họ có thể chui vào hắn áo gió phía dưới đi tìm dược bình đúng không!</p>
+        <p>Năm phút sau .</p>
+        <p>Kamiya Hiroshi trên đùi treo một đống nhãi con, một bước khó đi.</p>
+        <p>Kamiya Hiroshi: MMP!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- END-AUTO-INSERT-48 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong47.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong49.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "mot-giac-ngu-day-ta-thanh-tieu-hiromitsu-me";
+const NOVEL_TITLE = "Một Giấc Ngủ Dậy Ta Thành Tiểu Hiromitsu Mẹ";
+const CHAPTER_TITLE = "Chương 48: Tìm kiếm";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

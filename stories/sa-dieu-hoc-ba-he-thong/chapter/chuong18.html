@@ -1,0 +1,883 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 18: Lao tới phân ban khảo!</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Sa Điêu Học Bá Hệ Thống
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 18: Lao tới phân ban khảo!</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong17.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong19.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-18 -->
+
+
+        <p>Vớ là ở giáo công nhân viên chức phòng vệ sinh đổi, Hà Tu ra WC đã bị Hồ Tú Kiệt kêu đi rồi, Diệp Tư tự mình dẫm lên đệ nhất tiết khóa chuông tan học hồi ban, kéo ra cửa sau nhảy vào chỗ ngồi lập tức ở trên bàn nằm sấp xuống.</p>
+        <p>Tuy rằng nằm bò, nhưng hắn đôi mắt không nhàn rỗi, dư quang quét trong lớp người, cũng thuận tiện quét hữu phía trước cách mấy bài Ôn Thần.</p>
+        <p>Này tiểu hỏa thế nhưng so với hắn hai trở về còn sớm.</p>
+        <p>Lão Mã đừng kêu Lão Mã, kêu thần mã đi, không, dứt khoát kêu Bật Mã Ôn.</p>
+        <p>“Diệp Thần.” Tiểu béo quay đầu lại hỏi, “Ngươi một người đã trở lại? Học thần đâu?”</p>
+        <p>Diệp Tư híp híp mắt, “Quan ngươi chuyện gì, quay lại đi.”</p>
+        <p>Tiểu béo áo một tiếng, sờ sờ cái mũi vặn trở về, một lát sau lại nhịn không được xoay trở về, “Thật là ngươi cùng học thần giải quyết a? Ngưu bức, Ôn Thần trở về thời điểm giống như chuyện gì đều không có.”</p>
+        <p>Diệp Tư nghe vậy lại hướng Ôn Thần kia liếc mắt một cái, Ôn Thần chính bình tĩnh mà sửa sang lại bài thi.</p>
+        <p>Tiểu béo đem béo mặt tới gần, “Cho nên nói học thần đâu?”</p>
+        <p>Diệp Tư một chân đá hắn trên ghế, đem hắn liền người mang ghế đi phía trước đặng một cái cẳng chân khoảng cách, lãnh khốc nói: “Học thần bị ta xuyên trên chân, thiếu ma kỉ, đừng tưởng rằng ngươi béo ta liền không thể đem ngươi tắc án thư đường.”</p>
+        <p>Lời này hắn không hoàn toàn khoa trương, Hà Tu người này thoạt nhìn lạnh như băng, nhưng nhiệt độ cơ thể so người bình thường đều cao điểm, mới vừa đổi đến hắn trên chân kia chỉ vớ nóng hầm hập.</p>
+        <p>Hai người bọn họ ở giáo công nhân viên chức trong WC rút thăm, rút thăm kết quả là Hà Tu xuyên đi hai chỉ hắc, hắn xuyên đi hai chỉ bạch. Hiện tại Diệp Tư chân trái tròng lên Hà Tu cởi ra kia chỉ vớ, tả hữu chân độ chênh lệch nhiệt độ trong ngày kinh người.</p>
+        <p>Độ ấm không giống nhau hắn liền có điểm táo, cúi đầu nhìn nửa ngày chính mình kia chỉ chân, cũng không thấy ra cái gì hoa tới.</p>
+        <p>Nhưng hắn cảm giác vừa rồi thoát vớ thời điểm Hà Tu đỏ mặt lên, liền từng cái, bị hắn bắt giữ tới rồi.</p>
+        <p>Kỳ thật hắn cũng có chút ngượng ngùng, nhưng hắn có thể trang, che giấu đến hảo.</p>
+        <p>Di động chấn động lên, Tống Nghĩa cùng Ngô hưng cơ hồ đồng thời ở trong đàn nói câu giống nhau nói.</p>
+        <p>“Xem Tieba.”</p>
+        <p>Diệp Tư hoa khai Anh Trung Tieba, đi xuống túm hai hạ, một cái chọc màu đỏ hot thiệp tiến vào tầm nhìn.</p>
+        <p>【 báo!!! Hà Tu cùng Diệp Tư cùng tẩm! Cùng tẩm ngày đầu tiên vớ mặc nhầm! 】</p>
+        <p>Diệp Tư cũng chưa click mở, liền bò trên bàn cười một hơi.</p>
+        <p>Lãnh khốc cuồng chiến cùng thánh quang mục sư làm ra như vậy thần triển khai, ăn dưa quần chúng nhóm đều thực kích động đâu.</p>
+        <p>Hắn click mở nhìn nhìn, nói cái gì đều có, có rất nhiều thế Hà Tu lo lắng, sợ học thần ở ký túc xá bị đánh, thậm chí còn có hoài nghi trở lại ký túc xá sau hắn sẽ buộc Hà Tu ăn vớ.</p>
+        <p>【 rốt cuộc kia chính là chúng ta không hiểu thế sự hào hoa phong nhã học thần Hà Tu a! 】</p>
+        <p>Không hiểu thế sự hào hoa phong nhã học thần vung lên đại chảo có cán đem người ong một tiếng nện ở trên mặt đất thời điểm cũng không ai thấy a.</p>
+        <p>Diệp Tư đem Tieba đóng, ngồi thẳng đánh giá phòng học một vòng.</p>
+        <p>Không thể không nói bốn ban học sinh tố chất là rất cao, kỳ thật mới vừa mới xảy ra cái gì đại gia trong lòng đều hiểu rõ, nhưng không ai nghị luận, cũng không cố tình bảo trì an tĩnh, trong phòng học hống hống nháo nháo nên như thế nào còn như thế nào.</p>
+        <p>Diệp Tư từ ngực lộ ra khẩu khí, tay vói vào Hà Tu án thư đường một hồi sờ, sờ đến kia túi bạch đào đường bắt một phen ra tới, một viên một viên xé mở tất cả đều chen vào trong miệng.</p>
+        <p>Ngọt a.</p>
+        <p>Đệ nhị tiết là ngữ văn, lão Tần cầm giáo trình tiến vào, trước vỗ vỗ bục giảng làm đại gia an tĩnh.</p>
+        <p>“Giảng bài phía trước, ta có nói mấy câu tưởng cùng đại gia nói.”</p>
+        <p>Lão Tần áo sơmi thượng có điểm vết nước, phỏng chừng là đem bị trảo nhíu địa phương vọt hạ còn không có làm. Hắn ánh mắt đảo qua toàn ban đồng học, xẹt qua Ôn Thần, không nhiều ở trên người hắn dừng lại.</p>
+        <p>“Cao tam, nhân sinh trận đầu trận đánh ác liệt bãi ở trước mắt, mọi người đều ở mão kính. Nhưng học tập không phải sinh hoạt duy nhất, hiện tại không phải, thi đại học trước một trăm thiên không phải, thậm chí thi đại học trước một ngày cũng không phải. Ngồi ở cái này trong phòng, lão sư hy vọng đại gia có thể ái chính mình, ái người khác. Chúng ta bốn ban là một cái gia, chờ về sau đi vào đại học, xã hội, các ngươi rất khó lại có được như vậy một cái gia, cũng rất khó lại trở lại cái này gia. Hy vọng đại gia có thể quý trọng trước mắt người cùng trước mắt thời gian, theo đuổi chính mình muốn, ở cao trung cuối cùng một năm, đừng lưu tiếc nuối.”</p>
+        <p>Diệp Tư có điểm không nghĩ tới lão Tần có thể nói lời này, hắn dựa vào lưng ghế tán suy sụp suy sụp mà ngồi, thấy Ôn Thần ghé vào trên bàn. Hắn ngồi cùng bàn giơ tay loát loát hắn phía sau lưng, trước bàn quay đầu lại đệ một trương khăn giấy, tiểu béo kinh động ba người, cho hắn truyền căn xúc xích.</p>
+        <p>Lão Tần có đôi khi cũng rất làm người kinh hỉ, tuy rằng hắn không Lão Mã như vậy cao EQ cùng dạy học trình độ.</p>
+        <p>Cửa sau phùng thổi vào tới một cổ tiểu phong, Hà Tu khẽ không thanh mà tiến vào ở chính mình trên chỗ ngồi ngồi xuống.</p>
+        <p>Diệp Tư để sát vào hắn, “Tình huống?”</p>
+        <p>“Không có việc gì.” Hà Tu tay vói vào án thư đường tìm máy chơi game, thấp giọng nói, “Ta nói ngươi nói sai, là ta muốn bồi ngươi đi đem đầu tóc nhiễm hồi hắc.”</p>
+        <p>“A.” Diệp Tư nghĩ thầm, giảo hoạt a ngồi cùng bàn, thành thạo a.</p>
+        <p>“Còn cùng Hồ Tú Kiệt nói đem ngươi đánh Trần Tử Hàng kia 800 tự kiểm điểm miễn.” Hà Tu liếc hắn một cái, “Sự tình giải thích thanh, nàng cũng cảm thấy ngươi tội không đến viết 800 tự.”</p>
+        <p>Diệp Tư sửng sốt một hồi mới nhớ tới còn có như vậy cái kiểm điểm, cúi đầu cười hai tiếng.</p>
+        <p>Hà Tu tìm được máy chơi game, tĩnh âm khởi động máy, lại giơ tay tiến án thư đường sờ đồ vật ăn. Hắn sờ đến kia túi đường, xách ra tới ngẩn người, quay đầu lại xem Diệp Tư, “Không có a?”</p>
+        <p>Diệp Tư hơi há mồm, “Không cảm thấy ta quanh thân bay một cổ bạch đào tiên khí sao?”</p>
+        <p>Hà Tu hít hà một hơi, “Ngươi ăn đường có điểm tàn nhẫn a.”</p>
+        <p>“Người ác hơn.” Diệp Tư nói.</p>
+        <p>Lão Tần đem một phòng học người đều phiến cảm tính, chính mình cảm xúc cũng lên đây, đem giáo trình hướng trên bàn một khấu.</p>
+        <p>“Ái là nhân loại tốt đẹp nhất tình cảm, nào có cái gì che che giấu giấu. Ngươi yêu ta, ta yêu ngươi, hiện tại a, đại gia đem trên bàn sách vở đều đẩy đẩy, chuyển qua đi cho chính mình ngồi cùng bàn một cái ôm, lại đối với đối phương nói một câu, ta yêu ngươi, tới.”</p>
+        <p>Phòng học cười vang, nhưng thật là có người như vậy làm, vô luận là khác phái ngồi cùng bàn vẫn là đồng tính ngồi cùng bàn. 17-18 tuổi thanh xuân nhiệt huyết, cảm xúc bị mang theo tới, làm cái gì đều cảm thấy hăng hái.</p>
+        <p>Phía trước tiểu béo cho ngồi cùng bàn một cái khảm nhập ngực ôm, “Ta yêu ngươi!”</p>
+        <p>Cách vách bàn nam sinh có điểm thẹn thùng, nhưng nữ ngồi cùng bàn hào phóng, chủ động ôm hạ.</p>
+        <p>Diệp Tư đột nhiên cảm thấy mông phía dưới kim đâm dường như, hắn mãnh vừa quay đầu lại, Hà Tu chính mặt vô biểu tình mà nhìn chằm chằm không khí, cái kia chính nghĩa thần sắc, nói hắn ở nghiên cứu tro bụi hóa học kết cấu cũng không có gì không thể tin tưởng.</p>
+        <p>Nhưng chính là…… Có điểm ngốc, phỏng chừng cũng bị lão Tần này thần thao tác tú choáng váng.</p>
+        <p>“Khụ.” Diệp Tư thanh hạ giọng nói, “Này ngốc bức sự……”</p>
+        <p>“Ta không nghĩ làm.” Hà Tu lập tức nói, đem ánh mắt giãy giụa từ không trung thu hồi tới, nhìn chằm chằm máy chơi game lại nói, “Ngốc thấu.”</p>
+        <p>Diệp Tư trong lòng nhẹ nhàng thở ra, nhưng lại có điểm buồn bã, hắn gật gật đầu, “Đúng vậy, ngốc thấu.”</p>
+        <p>Ôm nghi thức thực mau kết thúc, lão Tần bắt đầu giảng bài. Qua một hồi lâu, Diệp Tư mới nghe thấy Hà Tu thở dài một cái.</p>
+        <p>Hắn cũng đi theo thấu khẩu khí, kỳ thật vừa rồi lão Tần tuyên bố trong nháy mắt kia hắn cùng Hà Tu phản ứng không sai biệt lắm, đó chính là kiên quyết không thể như vậy làm.</p>
+        <p>Nguyên nhân hắn cũng nói không rõ, khả năng vẫn là cảm thấy ngốc bức, hơn nữa cảm thấy trái tim không quá thoải mái. Nếu không phải biết chính mình trọng sinh không có bệnh tim, hắn thật sự theo bản năng muốn đi đào thuốc trợ tim hiệu quả nhanh.</p>
+        <p>Đại mùa hè.</p>
+        <p>Tịnh làm chút lung tung rối loạn có không.</p>
+        <p>“Vẫn là ăn đường đi.” Hà Tu đột nhiên từ trong túi sờ ra một cái chocolate nhân rượu ném lại đây, Diệp Tư mở ra ném vào trong miệng, nhai một hồi suy nghĩ mới bị kia cổ hướng vị cấp mang về tới.</p>
+        <p>Ngọt kéo kéo, cay kéo kéo, còn có điểm sặc.</p>
+        <p>Nhưng rất nâng cao tinh thần.</p>
+        <p>Cao tam học kỳ 1 còn có thể dục khóa, nhưng chính là từ một vòng tam tiết biến thành một vòng một tiết, bốn ban an bài ở thứ hai buổi chiều cuối cùng một tiết.</p>
+        <p>Diệp Tư đứng lên kêu Tống Nghĩa đi chơi bóng, lời nói mới ra khẩu, Hà Tu liền đối hắn nói, “Thể dục khóa hai chúng ta lên không được.”</p>
+        <p>“Vì cái gì a?” Diệp Tư nhìn hắn.</p>
+        <p>“Lão Mã tìm.” Hà Tu nói, “Lúc này là tìm chúng ta hai cái, làm thể dục khóa đi hắn văn phòng một chút.”</p>
+        <p>Nếu là khác lão sư tìm Diệp Tư không có khả năng đi, nhưng Lão Mã mặt mũi hắn tưởng bán.</p>
+        <p>“Vẫn là Ôn Thần sự sao?” Diệp Tư biên cùng Hà Tu hướng văn phòng đi biên hỏi.</p>
+        <p>Hà Tu nghĩ nghĩ, “Ta cảm thấy Ôn Thần sự hẳn là hiểu rõ, Lão Mã cũng không quá sẽ tìm chúng ta hỏi cái không để yên.”</p>
+        <p>Hà Tu biểu tình cũng có chút mê mang.</p>
+        <p>Lão Mã văn phòng liền hắn một người, Diệp Tư cùng Hà Tu đi vào, phát hiện cái bàn một khác đầu đã dọn xong hai trương ghế, trước mặt thậm chí còn bày hai bình Coca.</p>
+        <p>Tìm học sinh còn làm đến giống chiêu đãi khách nhân.</p>
+        <p>“Hai ngươi, tới a.” Lão Mã ánh mắt sáng lên, vẫy tay làm hai người bọn họ qua đi.</p>
+        <p>Diệp Tư cùng Hà Tu liếc nhau, đi qua đi song song ngồi xuống.</p>
+        <p>Lão Mã lòng bàn tay ở trên bàn chà xát, “Hôm nay ở văn phòng bên ngoài, ta nói cái gì hai ngươi đều nghe thấy được đi?”</p>
+        <p>Diệp Tư nói, “Ngươi hôm nay nói kỳ thật có điểm nhiều.”</p>
+        <p>Lão Mã ha ha cười hai tiếng, “Ta nói ta khả năng sẽ tiếp nhận bốn ban, hai ngươi đều nghe được.”</p>
+        <p>“Đúng vậy.” Hà Tu gật đầu.</p>
+        <p>Lão Mã dùng sức gật đầu, “Đúng vậy, kỳ thật chính là nói hai ngươi về sau đều là đệ tử của ta. Hà Tu liền không cần phải nói, ta xem qua ngươi từ cao nhất bắt đầu mỗi lần đại khảo toán học bài thi lưu trữ. Hậu sinh khả uý.”</p>
+        <p>Hắn nói lại nhìn về phía Diệp Tư, “Còn có ngươi . ngươi tên này, thật sẽ làm sự tình, ta nghe Hà Tu nói ngươi đầu so với hắn còn nhanh?”</p>
+        <p>Diệp Tư một bộ ngươi là ai ngươi đang nói gì đó biểu tình.</p>
+        <p>Lão Mã từ án thư đường nhảy ra một xấp đóng dấu luyện tập sách, “Là cái dạng này! Tự chủ chiêu sinh! Tự chủ chiêu sinh lập tức liền phải bắt đầu báo, các ngươi này đó đầu toản, liền thích hợp nghiên cứu này đó. Ta này a, có bổn thi đua đề, là chính mình viết. Còn không có xuất bản, ta trước ấn một phần, hai ngươi thử xem?”</p>
+        <p>Diệp Tư trong đầu bỗng nhiên vang lên sa điêu chậm rì rì thanh âm: “Hệ thống đổi mới trung . đáp án kho ghi vào xong.”</p>
+        <p>“……”</p>
+        <p>Diệp Tư quay đầu hướng Hà Tu đệ đi cầu cứu ánh mắt, lại không ngờ Hà Tu kia đôi mắt phóng quang, nhìn kia bổn mới mẻ đề tựa như thấy kim cương dường như.</p>
+        <p>Xong đời, xú vị…… Cái kia chí thú hợp nhau.</p>
+        <p>Lão Mã mở ra hai trang, “Hà Tu không phải nói Diệp Tư tính nhẩm tốc độ có đôi khi còn muốn mau sao? Hai ngươi nhìn xem, này đạo cao số tam trọng tích phân có thể tính nhẩm sao?”</p>
+        <p>Hà Tu đôi mắt đảo qua đề làm, trong lòng đã viết ra tích phân thức. Hắn đang muốn phát động đại não hóa giải tư thế, Lão Mã đem đề hướng Diệp Tư kia đẩy đẩy, vẻ mặt chờ mong hỏi, “Sẽ sao?”</p>
+        <p>Diệp Tư chết lặng mà nhìn hắn, “A…… Tuyển a.”</p>
+        <p>Hà Tu kinh ngạc ngẩng đầu, nhìn Diệp Tư.</p>
+        <p>Lão Mã cũng ngẩn người, một lát sau mới nói, “Đúng rồi a.”</p>
+        <p>Lão Mã lại chỉ vào một đạo lấp chỗ trống, “Vậy ngươi hai nhìn nhìn lại cái này.”</p>
+        <p>Hà Tu đành phải từ bỏ phía trước kia đạo, sửa xem này đạo bao nhiêu. Hắn ở trong đầu bay nhanh liền hai điều phụ trợ tuyến, bên cạnh Diệp Tư tựa hồ không có gì ý nghĩ, có chút mờ mịt.</p>
+        <p>Lão Mã nói, “Diệp Tư có thể lấy thi viết thử một lần, sẽ tính sao?”</p>
+        <p>Diệp Tư: “…… Dấu khai căn 47.”</p>
+        <p>Hà Tu ở trong lòng đem kia hai điều phụ trợ tuyến cấp lau, quay đầu nhìn hắn.</p>
+        <p>Diệp Tư nuốt nước bọt, “Lão sư, ta thật không sao có thể. Ngươi đừng hỏi ta, ngươi hỏi ít hơn ta một đạo đề, ta liền ít đi sẽ một đạo đề, thật sự.”</p>
+        <p>Lão Mã kích động đến muốn mệnh, “Thiên tài, ta đương nhiều năm như vậy lão sư, lần đầu tiên muốn dùng thiên tài tới hình dung một học sinh. Ngươi, ngươi ngươi, ngươi đừng có gấp, cái này đâu?”</p>
+        <p>Lúc này Hà Tu căn bản không xem đề, mặt vô biểu tình mà hoa khai di động, cấp Diệp Tư ấn cái tính giờ.</p>
+        <p>Diệp Tư nhìn nhảy lên con số, trong lòng dày vò đến gần như chết lặng, hắn từ trên tường trong gương thấy chính mình mặt, lãnh khốc cực hạn, giống cái trang bức cuồng.</p>
+        <p>Sa điêu thanh âm ở não nội vang lên: “Chết bất đắc kỳ tử báo động trước, thỉnh người chơi đình chỉ kéo dài.”</p>
+        <p>“Chết bất đắc kỳ tử báo động trước, 3, 2, 1.”</p>
+        <p>“Bảy phần chi tam mười chín.” Diệp Tư thở dài, đem đáp án nói ra.</p>
+        <p>Hà Tu ấn xuống di động, nhìn mắt trên màn hình 10’22, một lát sau đem điện thoại sủy lên.</p>
+        <p>Học thần tâm thái băng rồi. Đây là Diệp Tư tiểu radar chuẩn xác tra xét đến.</p>
+        <p>Kỳ thật hắn cũng có chút băng rồi.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- END-AUTO-INSERT-18 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong17.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong19.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "sa-dieu-hoc-ba-he-thong";
+const NOVEL_TITLE = "Sa Điêu Học Bá Hệ Thống";
+const CHAPTER_TITLE = "Chương 18: Lao tới phân ban khảo!";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
