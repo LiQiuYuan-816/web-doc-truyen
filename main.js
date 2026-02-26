@@ -75,7 +75,7 @@ const genreMap = {
 CONFIG
 ======================= */
 
-const PAGE_SIZE = 20;
+const PAGE_SIZE = 10;
 
 /* =======================
 STATE
