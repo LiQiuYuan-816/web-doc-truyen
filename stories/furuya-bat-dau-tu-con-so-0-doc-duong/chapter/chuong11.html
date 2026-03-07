@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 11: Đọc Đương Ván Thứ Hai ( 6 )</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Furuya Bắt Đầu Từ Con Số 0 Đọc Đương
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 11: Đọc Đương Ván Thứ Hai ( 6 )</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-11 -->
+<p>==========</p>
+<p>“Như vậy, ta liền cùng Natalie đi ra ngoài chơi.” Date Wataru nói xong, lại đột nhiên nhớ tới cái gì giống nhau cảnh cáo bọn họ, “Đừng làm cho ta phát hiện các ngươi cùng lại đây a!”</p>
+<p>“A ha ha, như thế nào sẽ đâu, quấy rầy người yêu đương chính là sẽ thiên lôi đánh xuống!” Hagiwara Kenji đối hai người phất tay, “Bất quá, nếu không biết đi chỗ nào hẹn hò nói có thể tùy thời gọi điện thoại hỏi ta nga .”</p>
+<p>“Lớp trưởng yên tâm đi hẹn hò đi, chơi đến vui vẻ nha.” Morofushi Hiromitsu cũng cười nói.</p>
+<p>“Đáng giận! Tên hỗn đản kia nhân sinh người thắng!” Matsuda Jinpei tức giận bất bình mà xoa bị Date Wataru tấu quá đầu.</p>
+<p>“Trời mưa……” Furuya Rei vươn tay, tiếp được tí tách tí tách nhỏ giọt mưa phùn.</p>
+<p>Hắn ngẩng đầu nhìn phía trong mưa bung dù dắt tay dần dần đi xa lớp trưởng cùng Natalie, nhìn hai người bóng dáng lâm vào trầm tư.</p>
+<p>“Không quan hệ, bọn họ có dù, mưa nhỏ mà thôi, lập tức liền sẽ đình, đi thôi đi thôi, Furuya-chan.” Hagiwara Kenji lôi kéo hắn trở về đi.</p>
+<p>Hắn cười trấn an tóc vàng thanh niên từ tối hôm qua bắt đầu liền vẫn luôn không thả lỏng quá thần kinh: “Lớp trưởng bọn họ sẽ không xảy ra chuyện gì, này một tháng qua đều không có phát sinh cái gì không phải sao? Cho nên hôm nay cũng sẽ an toàn vượt qua, liền cho bọn hắn hai người một cái thân mật tình lữ một chỗ không gian đi.”</p>
+<p>Kỳ thật rất tưởng theo sau Matsuda Jinpei nhịn không được nói: “Nhưng là các ngươi chẳng lẽ thật sự không hiếu kỳ lớp trưởng là như thế nào cùng bạn gái ở chung sao? Cảm giác bọn họ chi gian ở chung phương thức nói không chừng sẽ có chút ngoài dự đoán nga! Lớp trưởng ở nàng bạn gái trước mặt thế nhưng như vậy ôn nhu nghe lời……”</p>
+<p>“Xác thật rất tò mò.” Morofushi Hiromitsu cười đem tay đáp ở osananajimi trên vai, đối Matsuda Jinpei cùng Hagiwara Kenji cong lên đôi mắt nói: “Nhưng là, ta kế tiếp cùng Zero còn có mặt khác sự tình nga.”</p>
+<p>Furuya Rei gật đầu.</p>
+<p>Hôm nay, bọn họ ước hảo cùng Morofushi Takaaki cùng nhau gặp mặt ăn một bữa cơm.</p>
+<p>Tomori Hajime bị bắt cũng gần một tháng, sự kiện cơ bản giải quyết, Morofushi Takaaki lần này lại đây chỉ là xử lý cuối cùng một chút thủ tục.</p>
+<p>Lần trước trảo phạm nhân bận quá, hai anh em không có thể nói thượng nói mấy câu nói chuyện, cho nên đem gặp mặt thời gian định ở hôm nay.</p>
+<p>Đến nỗi Furuya Rei vì cái gì cũng cùng đi……</p>
+<p>“Lần trước mang Zero cùng ca ca gặp mặt, vẫn là cao trung thời điểm đi? Lúc ấy chúng ta không phải nói muốn làm cảnh sát sao.” Morofushi Hiromitsu vừa đi vừa cười, thoạt nhìn phi thường vui vẻ chờ mong bộ dáng, “Hiện tại chúng ta thật sự thành công tiến vào cảnh giáo, ca ca nói cũng tưởng cho chúng ta chúc mừng một chút nga, nói muốn cảm tạ Zero cho tới nay đối ta chiếu cố.”</p>
+<p>“Rõ ràng vẫn luôn là Hiro ở chiếu cố ta a.” Furuya Rei bất đắc dĩ nói.</p>
+<p>“Ta trừ bỏ trù nghệ phương diện, cũng không có những mặt khác có thể giúp đỡ Zero đi?” Morofushi Hiromitsu nghĩ nghĩ, “Nhiều nhất hơn nữa một cái đàn ghi-ta cùng âm nhạc.”</p>
+<p>Nói tới đây, Morofushi Hiromitsu nhịn không được nở nụ cười, trêu chọc chính mình cái này tựa hồ làm bất luận cái gì sự đều thực hoàn mỹ osananajimi.</p>
+<p>“Bởi vì Zero đối với liệu lý hoàn toàn không am hiểu đâu.”</p>
+<p>“Kia Hiro lúc sau dạy ta như thế nào làm liệu lý thế nào?” Furuya Rei thuận theo tự nhiên mà nói tiếp.</p>
+<p>Morofushi Hiromitsu cao hứng gật đầu: “Hảo a, Zero cuối cùng nguyện ý hảo hảo học tập liệu lý, kỳ thật nấu cơm là có một chút tiểu kỹ xảo……”</p>
+<p>Furuya Rei cấp mấy người nói tương lai sự tình, chỉ nói một ít mấu chốt điểm, mặt khác tỷ như hắn nằm vùng Tổ chức Áo Đen cụ thể công tác tình huống là một chút cũng chưa nói, thậm chí liền Bourbon rốt cuộc là cái gì phong cách cũng không biết, trù nghệ siêu cao Amuro Tooru tồn tại đương nhiên cũng không biết.</p>
+<p>Furuya Rei bình tĩnh lúc sau, vẫn là muốn tận lực ở bọn họ trước mặt biểu hiện ra một cái bình thường Furuya Rei trạng thái cùng ấn tượng, mà phi Bourbon hoặc là Amuro Tooru.</p>
+<p>Mà những người khác cũng tựa hồ sợ hãi chọc đến hắn chuyện thương tâm, giống nhau sẽ không chủ động nhắc tới tương lai những cái đó sự tình, nỗ lực muốn cho hắn chuyên tâm hảo hảo sống ở lập tức có bọn họ làm bạn hiện tại.</p>
+<p>Furuya Rei có đôi khi cũng sẽ có điểm buồn rầu bọn họ đối với chính mình quá mức cẩn thận cùng lo lắng, có đôi khi sẽ sinh ra nếu không nói cho bọn họ thì tốt rồi ý tưởng, làm đến hiện tại làm cho bọn họ như vậy thương tâm cùng lo lắng……</p>
+<p>“Hẳn là chính là nơi đó.” Morofushi Hiromitsu đôi mắt sáng lấp lánh mà lôi kéo Furuya Rei hướng phố đối diện tiệm cà phê đi đến.</p>
+<p>Furuya Rei đã có thể dần dần thấy dựa cửa sổ ngồi Morofushi Takaaki, hắn đột nhiên có chút khẩn trương, có điểm sợ hãi.</p>
+<p>Hắn biết, đây là hắn nội tâm di lưu 29 tuổi Furuya Rei đối với Morofushi Takaaki sợ hãi, bởi vì 29 tuổi Furuya Rei không biết muốn như thế nào đối mặt mất đi đệ đệ Morofushi Takaaki.</p>
+<p>Hiro liền chết ở hắn trước mặt, hắn lại không có thể cứu Hiro, liền như vậy làm Morofushi Takaaki mất đi cuối cùng một người thân.</p>
+<p>Cho dù cuối cùng chi chiến khi, hắn dùng Furuya Rei mà phi Amuro Tooru thân phận cùng Morofushi Takaaki gặp mặt nói khai sau, đối phương cũng không có trách cứ hắn, thậm chí còn trái lại an ủi hắn, hắn cũng hoàn toàn vô pháp phóng bình tâm thái.</p>
+<p>Liền tính thời gian xoay chuyển đến bây giờ, hắn lấy 22 tuổi cảnh giáo sinh Furuya Rei thân phận đứng ở còn thực tuổi trẻ Morofushi Takaaki trước mặt, cho dù hắn bên người liền đứng tươi cười xán lạn Hiro, Furuya Rei cũng vô pháp không thèm để ý.</p>
+<p>“Không cần khách khí, tưởng uống điểm cái gì?” Đơn giản tiếp đón qua đi, Morofushi Takaaki đem thực đơn đưa cho đối diện hai người, như suy tư gì rồi lại không mất lễ phép mà đánh giá đệ đệ bên người tóc vàng thanh niên.</p>
+<p>[ ca ca, ta ở Tokyo giao cho bằng hữu nga! Hắn ngoại hiệu là Zero! Siêu soái khí đúng không! ]*</p>
+<p>[ ca ca, hắn chính là ta phía trước cùng ngươi nói Zero, ta bạn thân, Furuya Rei, hắn cũng cùng ca ca giống nhau tưởng trở thành cảnh sát nga! ]*</p>
+<p>Morofushi Takaaki đối với không có thể bồi ở đệ đệ Hiromitsu bên người kỳ thật vẫn luôn thực áy náy, may mắn hắn bên người có như vậy một cái quan hệ như vậy tốt bằng hữu cùng nhau cho nhau làm bạn lớn lên, hiện tại thậm chí còn cùng nhau lên làm cảnh sát điều tra ra tới bọn họ cha mẹ bị giết chân tướng bắt được phạm nhân, Hiromitsu tâm lý vấn đề tựa hồ cũng hoàn toàn giải quyết……</p>
+<p>Morofushi Takaaki biểu tình từ trước đến nay đều là thiên hướng lãnh đạm bình tĩnh lý trí loại hình, lúc này trên mặt lại nhịn không được gợi lên một cái nhợt nhạt tươi cười.</p>
+<p>Hắn vì đệ đệ có thể có như vậy một cái bạn tốt mà cao hứng.</p>
+<p>Xem ra hắn có thể hoàn toàn yên tâm.</p>
+<p>*</p>
+<p>Cà phê uống đến một nửa, Furuya Rei đặt ở trong túi di động bắt đầu điên cuồng chấn động lên, khiến cho bên cạnh Morofushi hai huynh đệ chú ý.</p>
+<p>Hắn nói thanh xin lỗi, ở Morofushi Takaaki tỏ vẻ không quan hệ sau lấy ra di động, điểm ra cái kia icon bất tường nói chuyện phiếm phần mềm, tiến vào cái kia chỉ có hắn có thể thấy đàn liêu.</p>
+<p>Thấy nói chuyện phiếm nội dung khi, tóc vàng thanh niên thân thể một chút liền cứng đờ, tím màu xám đồng tử nháy mắt mãnh súc.</p>
+<p>Furuya Rei bay nhanh đem lịch sử trò chuyện phiên tới rồi hết thảy ban đầu thời điểm.</p>
+<p>【 Ajiro Shinpei: Ta giống như, bị địch nhân phát hiện ta có thể tiến hành tử vong hồi đương sự tình. 】</p>
+<p>【 Ajiro Shinpei: Cánh tay của ta thượng còn bị để lại đánh dấu. 】</p>
+<p>Ban đầu, là Ajiro Shinpei ở trong đàn phát ra một cái bom.</p>
+<p>Sau đó, là Akemi Homura mở ra lần thứ hai luân hồi sau hỏng mất.</p>
+<p>【 Akemi Homura: Chúng ta đều bị Kyubey lừa!!! 】</p>
+<p>【 Akemi Homura: Ma nữ chính là ma pháp thiếu nữ biến thành! Chúng ta cuối cùng đều sẽ biến thành dáng vẻ kia! Sở hữu giết chóc ma nữ đều đã từng là bảo hộ thế giới ma pháp thiếu nữ! Chúng ta đều bị Kyubey lợi dụng!!! 】</p>
+<p>【 Akemi Homura: Hơn nữa ở lúc ban đầu ký kết khế ước biến thành ma pháp thiếu nữ thời điểm, chúng ta kỳ thật liền đã chết a! Chúng ta đã biến thành linh hồn đá quý! Thân thể này chỉ là một cái thể xác mà thôi! Như vậy chúng ta thật sự còn có thể xem như nhân loại sao? 】</p>
+<p>【 Akemi Homura: Vì cái gì? Vì cái gì sẽ biến thành như vậy? Như vậy ma pháp thiếu nữ mới không phải chúng ta muốn a!!! 】</p>
+<p>【 Akemi Homura: Nàng khóc lóc cầu ta giết nàng, nàng nói chính mình không nghĩ biến thành ma nữ. 】</p>
+<p>【 Akemi Homura: Ta rõ ràng là vì bảo hộ nàng mới có thể trở lại quá khứ từ đầu bắt đầu, nhưng là vì cái gì, vì cái gì cuối cùng ta sẽ cầm thương đối với nàng, ta vì cái gì phải đối nàng nổ súng? 】</p>
+<p>【 Akemi Homura: Ta thân thủ giết chết nàng. 】</p>
+<p>Cuối cùng, là Natsuki Subaru tên mặt sau tử vong hồi đương số lần đột nhiên từ 11 biến thành 12, bị trong đàn người phát hiện hắn lại tử vong hồi đương.</p>
+<p>【 Natsuki Subaru: Ta lại thất bại 】</p>
+<p>【 Natsuki Subaru: Ta lại thất bại ta lại thất bại ta lại thất bại ta lại thất bại ta lại thất bại ta lại thất bại 】</p>
+<p>【 Natsuki Subaru: Tất cả mọi người đã chết 】</p>
+<p>【 Natsuki Subaru: Sống sót, sống sót, vì cái gì muốn cho ta loại người này sống sót a! Vì cái gì phải vì ta loại người này liều mạng a!! Rõ ràng là ta hại chết mọi người!!! 】</p>
+<p>【 Natsuki Subaru: Lười biếng! Ha ha ha! Lười biếng! Ta xác thật thực lười biếng a! Này hết thảy đều là ta sai! Đều là bởi vì ta kiến nghị cho nên đại gia mới có thể chết! Bởi vì ta thô tâm đại ý bởi vì ta ngạo mạn cùng lười biếng cho nên mới sẽ tạo thành hiện tại thảm trạng! Đều là bởi vì ta sai!!! 】</p>
+<p>【 Natsuki Subaru: Nếu ta không ở nói, đại gia có phải hay không liền sẽ không nhanh như vậy mà tao ngộ như vậy tử vong? Đau sao? Khẳng định rất đau đi. Hận sao? Khẳng định rất hận đi. Thực xin lỗi thực xin lỗi thực xin lỗi nếu không có ta nói có phải hay không liền sẽ không có người chết mất? Đều là bởi vì ta đi tới thế giới này sao? 】</p>
+<p>Hiện tại ba người hơi chút bình tĩnh một chút, nhớ tới trong đàn còn may mắn còn tồn tại một người.</p>
+<p>【 Furuya tiên sinh cẩn thận! 】</p>
+<p>【 này cũng quá xảo, chúng ta tất cả mọi người ở cùng thời gian xảy ra chuyện, sao có thể chỉ là trùng hợp? 】</p>
+<p>【 tiếp theo cái nói không chừng sẽ đến lượt ngươi! 】</p>
+<p>Furuya Rei bỗng nhiên đứng dậy.</p>
+<p>“Thực xin lỗi ta có điểm việc gấp đi trước!” Furuya Rei một bên gọi Date Wataru điện thoại một bên hướng bên ngoài chạy tới.</p>
+<p>“Zero?” Morofushi Hiromitsu kinh ngạc đi theo đứng dậy, ý thức được cái gì, vội vàng duỗi tay đi bắt hắn, “Từ từ! Zero!!!”</p>
+<p>Nhưng mà hắn vẫn là chậm một bước, không có thể thành công bắt lấy tóc vàng thanh niên, sửng sốt một chút sau lập tức quay đầu lại đi xem chính mình ca ca.</p>
+<p>“Đi thôi, Hiromitsu.” Morofushi Takaaki cùng hắn đối diện.</p>
+<p>Có thượng chọn màu lam đơn phượng nhãn thanh niên đối với đệ đệ chậm rãi nói: “Nhân sinh đến một tri kỷ đủ rồi, tư thế lúc này lấy cùng hoài coi chi.” *</p>
+<p>*</p>
+<p>Furuya Rei nôn nóng mà cùng điện thoại đối diện Hagiwara Kenji nói cái gì, chạy đến một nửa lại đột nhiên bị đèn đỏ ngăn cản.</p>
+<p>Hắn mặt vô biểu tình, đang chuẩn bị bay thẳng đến xe tới xe lui đường cái tiến lên, lại bởi vì phía sau theo tới osananajimi lại đánh mất cái này ý tưởng.</p>
+<p>Chính hắn liền tính, nhưng không thể làm Hiro lâm vào nguy hiểm bên trong.</p>
+<p>“Zero! Làm sao vậy? Đã xảy ra cái gì?” Morofushi Hiromitsu lo lắng mà nhìn hắn.</p>
+<p>“Lớp trưởng cùng Natalie đã xảy ra chuyện!” Furuya Rei cầm di động tay gân xanh bạo khởi, “Lớp trưởng điện thoại đánh không thông, Matsuda cùng Hagi ở cách vách phố thương trường, nói bên cạnh ngân hàng đã xảy ra cướp bóc án, lớp trưởng cùng Natalie giống như liền ở bên trong!”</p>
+<p>“Là hiệu ứng bươm bướm!” Hắn cắn răng nói.</p>
+<p>“Bởi vì chúng ta trước tiên bắt được Tomori Hajime, Tomori Hajime sự tình thượng tin tức, bị đám kia kẻ bắt cóc thấy cái này ở cảnh giáo phụ cận bị bắt tội phạm, bởi vậy hủy bỏ cướp bóc cảnh giáo phụ cận cửa hàng tiện lợi kế hoạch, nhảy qua này một bước diễn luyện trực tiếp bắt đầu đoạt ngân hàng đi! Mà lớp trưởng cùng Natalie còn lại là bởi vì ta nói cho bọn họ tương lai sự tình cho nên hiện tại gặp mặt hẹn hò, bọn họ hẳn là tính toán từ ngân hàng lấy điểm tiền đi ra ngoài chơi, cứ như vậy cùng đã định vận mệnh giống nhau lại lần nữa gặp gỡ đám kia bọn cướp!” Hắn ngữ tốc bay nhanh mà lại rõ ràng chải vuốt rõ ràng chỉnh sự kiện.</p>
+<p>Đây là hiệu ứng bươm bướm, là vận mệnh trò đùa dai, là không chỗ không ở thế giới ác ý.</p>
+<p>“Không có việc gì, không nên gấp gáp, tâm phù khí táo nãi tối kỵ.” Furuya Rei hít sâu, “Nơi đó ly chúng ta chỉ có một cái phố khoảng cách, rất gần, chúng ta hiện tại chạy tới nơi hỗ trợ nói, chỉ cần chúng ta năm người cùng nhau nỗ lực, lớp trưởng bọn họ liền sẽ không……”</p>
+<p>“Oanh .” đinh tai nhức óc tiếng nổ mạnh đánh gãy Furuya Rei nói, cực nóng hỏa lãng từ sau lưng dời non lấp biển đè xuống, đem hắn đại não cùng cuối cùng một tia bình tĩnh cũng hoàn toàn thiêu đốt hầu như không còn.</p>
+<p>Furuya Rei đồng tử mãnh súc, rộng mở xoay người, thấy bọn họ vừa mới ra tới tiệm cà phê đã hoàn toàn bị hừng hực lửa lớn cắn nuốt.</p>
+<p>“Ca ca!!!” Morofushi Hiromitsu không chút do dự nhằm phía biển lửa.</p>
+<p>“Từ từ! Hiro!” Furuya Rei bỗng nhiên duỗi tay đi bắt hắn, lại không có thể bắt lấy.</p>
+<p>“Hiro!!!!!!”</p>
+<p>--------------------</p>
+<p>Chú: Nơi này chu mục cùng nguyên tác trung chu mục cốt truyện cũng không phải hoàn toàn giống nhau, nhiều ít sẽ chịu group chat hiệu ứng bươm bướm ảnh hưởng. Những cái đó sự tình có lẽ sẽ trước tiên, có lẽ sẽ thay đổi một loại phương thức, nhưng rất khó biến mất, tử vong phương thức số lần cùng nguyên tác cũng sẽ bất đồng. Nhưng là yên tâm, cuối cùng sẽ HE, rốt cuộc ta cũng không phải cái gì ma quỷ ( đẩy mắt kính )</p>
+<p>PS: Trước mắt mấy cái nguyên tác trung, Ajiro Shinpei tử vong 16 thứ, Natsuki Subaru tử vong 47 thứ, Akemi Homura luân hồi hơn 100 thứ.</p>
+<p>*: 1, đến từ nguyên tác lời kịch</p>
+<p>2, “Nhân sinh đến một tri kỷ đủ rồi, tư thế lúc này lấy cùng hoài coi chi.”</p>
+<p>Những lời này đến từ Lỗ Tấn, đại ý là: Một đời người có thể được đến một cái tri kỷ liền đã vậy là đủ rồi, đời này kiếp này đều hẳn là giống một mẫu sở sinh đồng bào thân huynh đệ như vậy đối đãi hắn.</p>
+<p>Mọi người đều biết, Furuya Rei, là Morofushi gia người ngoài biên chế huynh đệ, là Miyano gia danh dự trưởng tử.</p>
+<!-- END-AUTO-INSERT-11 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "furuya-bat-dau-tu-con-so-0-doc-duong";
+const NOVEL_TITLE = "Furuya Bắt Đầu Từ Con Số 0 Đọc Đương";
+const CHAPTER_TITLE = "Chương 11: Đọc Đương Ván Thứ Hai ( 6 )";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

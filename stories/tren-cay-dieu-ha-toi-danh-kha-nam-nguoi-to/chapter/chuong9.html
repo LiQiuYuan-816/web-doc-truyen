@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 9: Tìm kiếm nhiệm vụ mục tiêu</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Trên Cây Diêu Hạ Tới Danh Kha Năm Người Tổ
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 9: Tìm kiếm nhiệm vụ mục tiêu</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong8.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong10.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-9 -->
+<p>“Hoshino ca ca, ngươi quan sát tương đối nhiều là mặt sau EF hai bàn nam tính?” Edogawa Conan chống cằm, “Chẳng lẽ là tưởng luyến ái?”</p>
+<p>Vừa vặn quan sát đều đúng vậy hai người trung một cái là chưa lập gia đình có bạn gái, một cái là đã kết hôn có tử.</p>
+<p>“Không có! Ngươi như thế nào sẽ như vậy tưởng, độc thân thực hảo, ta thực thỏa mãn.” Hoshino Aoi nhịn không được bắn hạ Edogawa Conan cái trán, “Ta căn bản không có luyến ái tính toán a, đừng loạn tưởng.”</p>
+<p>Hoshino Aoi hoảng sợ, giống hắn như vậy có bí mật, đối với chính mình quá khứ cũng cơ hồ đều nhớ không nổi, thậm chí không biết sẽ không sẽ lâu dài lưu ở thế giới này người, hà tất đi trêu chọc nhân gia đâu?</p>
+<p>“Ai?! Hoshino-kun hẳn là thực được hoan nghênh đi?” Amuro Tooru thò qua tới cũng một bộ có chút bát quái bộ dáng.</p>
+<p>Xem Hoshino Aoi quần áo trang điểm, hằng ngày sử dụng đồ vật, hắn mở ra văn phòng nhìn không phải thực kiếm tiền, nhưng là tựa hồ hắn bản nhân không phải thực thiếu tiền.</p>
+<p>Hắn đã từng gặp qua Hoshino Aoi mở ra xe thể thao, điều khiển quá rất có danh khí xe máy.</p>
+<p>Hằng ngày chi phí đều không tính kém.</p>
+<p>“Hoàn toàn không có nga, chưa từng có chịu quá thư tình cũng không có người thông báo.” Hoshino Aoi có chút buồn cười, bọn họ là có cái gì hiểu lầm a!</p>
+<p>“Tại sao lại như vậy?” Edogawa Conan vẻ mặt khó mà tin được, “Hoshino ca ca rõ ràng chính là trường một bộ thực được hoan nghênh mặt a?”</p>
+<p>“…… Cho nên đề tài vì cái gì sẽ biến thành như vậy? Dù sao ta không có tính toán luyến ái, cũng không có người coi trọng ta lạp!” Hoshino Aoi nhu loạn Edogawa Conan tóc, sau đó lấy ánh mắt đi trát ở cười trộm Amuro Tooru.</p>
+<p>Amuro Tooru vô tội buông tay.</p>
+<p>Không ai thích hắn là một kiện thực tốt sự tình, ở hắn hoàn toàn không tính toán luyến ái thời điểm.</p>
+<p>“Bất quá Hoshino ca ca ngươi không có phản bác chính mình lực chú ý ở kia hai người cùng với bọn họ bên người người trên người.” Edogawa Conan đem đề tài lôi kéo trở về.</p>
+<p>Hoshino Aoi thấy hắn không hề dây dưa luyến ái tương quan đề tài, cũng không để bụng hắn một lần nữa đem trước một cái đề tài một lần nữa nhắc tới tới.</p>
+<p>“Ngươi một hai phải như vậy cho rằng nói, kỳ thật là bọn họ cho ta một loại không yên ổn cảm, bất quá ta không xác định là ai.” Hoshino Aoi cơ hồ là không tiếng động mà nói ra câu nói kế tiếp, nho nhỏ thanh âm chỉ đủ Amuro Tooru cùng Edogawa Conan nghe thấy, “Hơn nữa vị kia cầm camera tiên sinh, tựa hồ có chút kỳ quái khẩn trương.”</p>
+<p>“Hoshino ca ca cũng phát hiện?” Edogawa Conan đem ly trung Coca hút xong rồi, lại đi muốn một ly trà Ô Long.</p>
+<p>“Hắn thoạt nhìn tuy rằng thực bình tĩnh, nhưng là hắn động tác nhỏ vẫn là biểu lộ hắn khẩn trương.” Amuro Tooru cũng thò qua tới.</p>
+<p>“Bất quá các ngươi cư nhiên thật sự theo ta bất an, quan sát những người khác, có thể là không công lạp.” Hoshino Aoi trảo trảo chính mình tóc.</p>
+<p>“Dù sao cũng không sự tình gì làm, không xâm phạm riêng tư thoáng chú ý một chút, cũng không ảnh hưởng cái gì.” Amuro Tooru đem chính mình một phần gà rán toàn bộ ăn xong rồi, “Bọn họ tựa hồ phải rời khỏi, chúng ta cũng trở về đi?”</p>
+<p>“Ân, Conan-kun còn có muốn ăn cái gì sao?”</p>
+<p>“Từ bỏ, hồi số 7 thùng xe đi? Không biết Ran-nee các nàng đang làm cái gì.” Edogawa Conan cầm tân mua trà Ô Long cùng bọn họ chậm rãi đi trở về số 7 thùng xe.</p>
+<p>Bọn họ ba người liền cùng Asano Shin bọn họ xa hơn một chút địa phương chậm rãi đi trở về đi.</p>
+<p>“Bọn họ tựa hồ muốn đi mặt khác thùng xe bộ dáng.” Edogawa Conan bĩu môi.</p>
+<p>“Có người mời nói tựa hồ là có thể không tuân thủ hai khi lúc sau đi mặt khác thùng xe nhấm nháp tự giúp mình đồ ngọt quy tắc.” Amuro Tooru cũng mơ hồ nghe được bọn họ nói.</p>
+<p>“Chúng ta không có biện pháp đi thôi? Nhân loại quan sát liền như vậy kết thúc.” Hoshino Aoi thở dài.</p>
+<p>“Các ngươi đã trở lại?” Mori Ran cười hướng bọn họ vẫy vẫy tay, “Conan-kun ở số 6 toa ăn ăn cái gì?”</p>
+<p>Edogawa Conan phi thường tự nhiên mà hướng Mori Ran làm nũng, nói cho nàng chính mình ăn cái gì.</p>
+<p>Cùng một người khi có chút trầm mặc sớm tuệ bộ dáng không quá tương đồng.</p>
+<p>“Cho nên, quan sát ra cái gì sao?”</p>
+<p>“Rõ ràng không có.”</p>
+<p>Hoshino Aoi tạm thời từ bỏ đi trước số 8 thùng xe, kết quả đâu một vòng không có tìm được khả năng nhiệm vụ người, nhưng thật ra giải khóa tân nhân vật, Matsumoto Kumosugi.</p>
+<p>Matsumoto Kumosugi, Hoshino Aoi nhìn đến hắn thời điểm, hắn liền một bộ có chút khẩn trương bộ dáng, cho dù hắn ngụy trang khá tốt, đại bộ phận người thường hẳn là vô pháp phát hiện.</p>
+<p>Người này muốn tiêu hồng, có vấn đề xác suất không nhỏ, đoàn tàu thượng “Không lý trí tiên sinh”, hy vọng ngài không cần làm ra cái gì lệnh chính mình hối hận sự tình.</p>
+<p>Không biết số 8 thùng xe còn có không có gì khả năng người.</p>
+<p>Ai…… Trực tiếp quá khứ lời nói quá quái, thật giống như đã sớm biết sẽ phát sinh cái gì giống nhau, lần sau có phải hay không muốn nếm thử dùng chút đảo nhỏ tệ giả tạo một chút ủy thác người lại làm loại này như lọt vào trong sương mù nhiệm vụ.</p>
+<p>Hoshino Aoi ghé vào trên bàn, nhanh nhạy lỗ tai nghe được Mori Kogoro không thú vị ngáp thanh, cùng với hắn phiên động báo chí thanh âm, Mori Ran cùng Suzuki Sonoko đè thấp thanh tuyến tiếng cười nói, Edogawa Conan ý đồ gia nhập hai cái nữ hài đề tài, Amuro Tooru di động chấn động thanh âm, D bàn ba cái nữ hài đi lại, lấy dùng đồ ngọt thanh âm, còn có F bàn một nhà bốn người tán phiếm thanh.</p>
+<p>Không có E bàn, bọn họ tựa hồ đi theo Matsumoto Kumosugi cùng Igarashi Suzune đi trước số 8 thùng xe.</p>
+<p>Đáng giận a, nhiệm vụ sẽ lại cấp một lần nhắc nhở sao?</p>
+<p>Hoshino Aoi không xác định đảo nhỏ APP nhiệm vụ nhắc nhở có thể hay không lại cấp một lần, số ít nhiệm vụ sẽ có lần thứ hai nhắc nhở.</p>
+<p>“A! Này không phải Mori tiền bối sao?” Một thanh âm thanh thúy giọng nữ kinh hô.</p>
+<p>Màu nâu đại cuộn sóng, một bộ hợp thể váy liền áo, trang dung tinh xảo nữ tính kéo chính mình tựa hồ là người yêu nam nhân, đối với Mori Kogoro chào hỏi.</p>
+<p>“Sakai? Ngươi như thế nào cũng ở chỗ này, thật là đã lâu không thấy.” Mori Kogoro có chút kinh ngạc, “Vị này chính là……?”</p>
+<p>“Đây là ta vị hôn phu Endo Hibiki.” Sakai chặt chẽ mà tới gần Endo Hibiki, lộ ra một cái có chút hạnh phúc tươi cười.</p>
+<p>Endo Hibiki ngượng ngùng cào cào gương mặt: “Ngài chính là danh trinh thám Mori Kogoro tiên sinh! Hạnh ngộ.”</p>
+<p>Endo Hibiki có chút kinh hỉ, vươn tay muốn cùng Mori Kogoro bắt tay.</p>
+<p>Mori Kogoro động tác tự nhiên cùng hắn bắt tay, ở đường xá thượng gặp gỡ muốn bắt tay mọi người đã là rất quen thuộc sự tình.</p>
+<p>“Hạnh ngộ hạnh ngộ!”</p>
+<p>“Tương! Ngươi cư nhiên nhận thức Mori tiên sinh sao?” Endo Hibiki có chút thật cao hứng, “Ngươi đều không có nói cho ta đâu!”</p>
+<p>Hắn mang theo thân mật oán giận.</p>
+<p>“Hibiki ngươi cũng không nói cho ta ngươi muốn gặp Mori tiền bối a!” Sakai Kaori dở khóc dở cười, “Thật là, đây là ta ở đội điều tra số 1 thời điểm tiền bối, bất quá hắn chuyển chức đương danh trinh thám đi, mà ta cũng từ bỏ tiếp tục đương hình cảnh.”</p>
+<p>“Sakai ngươi ở lúc sau cũng từ chức?” Mori Kogoro thật là có chút chấn kinh rồi, hắn cái này hậu bối phi thường thích hình cảnh cái này chức nghiệp, hắn cho rằng nàng sẽ vẫn luôn lập tức đi.</p>
+<p>“Ân, bởi vì ngoài ý muốn ta không có cách nào tiếp tục đương hình cảnh.” Sakai Shō tươi cười mang lên một chút chua xót.</p>
+<p>“Xin lỗi, ta không biết……”</p>
+<p>“Đều đi qua, ta hiện tại cũng quá thực hảo.” Sakai Shō xua xua tay ý bảo nàng đi ra kia đoạn đi qua, “Chúng ta hiện tại ở số 8 thùng xe, vốn dĩ muốn đi số 5 thùng xe nhìn xem mặt khác điểm tâm ngọt, vừa vặn gặp gỡ các ngươi, bọn họ là……?”</p>
+<p>Sakai Shō nhìn ngồi ở Mori Kogoro bên cạnh Edogawa Conan cùng đối diện Mori Ran cùng Suzuki Sonoko: “Đứa nhỏ này ta còn có ấn tượng, là tiền bối nữ nhi đi.”</p>
+<p>“Là, đây là ta nữ nhi lan, cùng nàng tốt nhất bằng hữu Suzuki Sonoko, đây là gởi nuôi ở nhà ta hài tử Edogawa Conan.” Mori Kogoro đem cùng hắn một bàn người nhất nhất giới thiệu, sau đó chỉ vào bên cạnh A bàn, “Này là đệ tử của ta Amuro Tooru, cùng Ran bằng hữu Hoshino Aoi.”</p>
+<p>“Ngài hảo, Sakai tiểu thư.”</p>
+<p>“Các ngươi hảo!”</p>
+<p>“Đây là ta ở đội điều tra số 1 hậu bối Sakai Shō.”</p>
+<p>Đại gia cho nhau chào hỏi qua.</p>
+<p>“Sakai các ngươi nếu là muốn thử xem mặt khác khẩu vị điểm tâm ngọt có thể ở chúng ta nơi này lưu trong chốc lát, thử xem kiểu Pháp cùng nga thức điểm tâm ngọt.” Mori Kogoro mở miệng nói.</p>
+<p>“Này không tốt lắm đâu?”</p>
+<p>Mori Kogoro nhìn về phía Hoshino Aoi.</p>
+<p>“Không có quan hệ, Amuro-kun cùng ta cùng nhau ngồi ở A bàn, như vậy C bàn liền không ra tới.” Hoshino Aoi không thèm để ý cái này, hoặc là hoà giải những người khác náo nhiệt ngồi cùng nhau hắn càng vui vẻ, “Cùng đại gia cùng nhau ngồi thực vui vẻ, có phải hay không Conan-kun?”</p>
+<p>“Ân! Ta cùng Hoshino ca ca cùng nhau đi.” Edogawa Conan chạy đến A bàn cùng Hoshino Aoi Amuro Tooru cùng nhau.</p>
+<p>“Thật là quá cảm tạ, đợi chút các ngươi nếu muốn thử xem số 8 thùng xe đồ ngọt có thể cùng chúng ta cùng nhau trở về.” Endo Hibiki cao hứng mà lưu lại, tưởng cùng Mori Kogoro nói chuyện phiếm.</p>
+<p>Có thể gặp được chính mình có chút hảo cảm danh nhân còn có thể đủ ở bên nhau nói chuyện phiếm, thật là may mắn một ngày đâu.</p>
+<p>Endo Hibiki nhịn không được khóe miệng giơ lên.</p>
+<p>Sakai Shō thấy hắn như vậy cao hứng, không có lại tiếp tục cự tuyệt, mà là lưu tại số 7 thùng xe.</p>
+<p>Hoshino Aoi nghe được Endo Hibiki nói, ánh mắt sáng lên.</p>
+<p>Đi theo bọn họ nói, có thể càng sớm tiến vào số 8 thùng xe.</p>
+<p>Hoshino Aoi thở phào nhẹ nhõm, thật sự quá cảm tạ Mori tiên sinh, hy vọng sẽ không quá muộn.</p>
+<p>“Ai? Endo ngươi là IT ngành sản xuất, kia rất bận rộn đi.”</p>
+<p>“Ha ha ha ha, đúng vậy, cho nên ta tích cóp hồi lâu mới không ra hai ngày, vẫn luôn không có gì kỳ nghỉ bồi nàng, hôm nay bồi nàng tới nơi này nhấm nháp nàng thích đồ ngọt, ngày mai còn có khác kế hoạch.”</p>
+<p>“Thật không sai a……”</p>
+<p>“Amuro-kun cùng Conan-kun có chuẩn bị đi số 8 thùng xe sao?” Hoshino Aoi hướng hai người đưa ra mời.</p>
+<p>Đảo nhỏ nhiệm vụ trung, cứu người tương quan nhiệm vụ, chẳng sợ hắn chỉ là đánh phối hợp đem người cứu, có lẽ hắn khen thưởng không có nhiều như vậy, nhưng hắn nhiệm vụ cũng coi như hoàn thành.</p>
+<p>Dù sao hắn hôm nay dị dạng đều bị hai người phát hiện, mang theo hẳn là cũng…… Không có việc gì đi.</p>
+<p>“Ta muốn đi ta muốn đi!” Edogawa Conan có chút tích cực, hắn đối đồ ngọt hứng thú cũng liền như vậy, hiện tại có tống cổ thời gian sự tình, hắn đương nhiên thực tích cực.</p>
+<p>“Hảo a, ta cũng muốn thử xem bên kia đồ ngọt.” Thuận tiện lại quan sát một chút, Amuro Tooru màu xanh xám trong ánh mắt ánh Hoshino Aoi cùng Edogawa Conan nói chuyện phiếm thân ảnh.</p>
+<p>“Bất quá nếu chúng ta quá khứ thời điểm, bọn họ trở lại số 7 thùng xe đâu?” Edogawa Conan nói vấn đề khả năng tính không nhỏ, “Hoshino ca ca còn muốn qua đi sao?”</p>
+<p>Bọn họ sẽ không lập tức liền đi trước số 8 thùng xe, muốn xem Sakai tiểu thư cùng Endo tiên sinh thời gian.</p>
+<p>“Không biết a…… Rốt cuộc không phải cái gì xác định ủy thác, chỉ là bởi vì có chút kỳ quái dự cảm mới muốn đi.” Hoshino Aoi không thể cấp ra thực xác định trả lời, “Bất quá hẳn là sẽ đi đi? Ta còn là rất muốn đi nếm thử anh thức đồ ngọt.”</p>
+<!-- END-AUTO-INSERT-9 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong8.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong10.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tren-cay-dieu-ha-toi-danh-kha-nam-nguoi-to";
+const NOVEL_TITLE = "Trên Cây Diêu Hạ Tới Danh Kha Năm Người Tổ";
+const CHAPTER_TITLE = "Chương 9: Tìm kiếm nhiệm vụ mục tiêu";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

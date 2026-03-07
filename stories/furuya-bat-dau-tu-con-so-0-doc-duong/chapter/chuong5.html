@@ -1,0 +1,476 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 5: Đọc Đương Một Vòng Mục ( 5 )</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Furuya Bắt Đầu Từ Con Số 0 Đọc Đương
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 5: Đọc Đương Một Vòng Mục ( 5 )</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong4.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong6.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-5 -->
+<p>=========</p>
+<p>Onizuka huấn luyện viên cũng không có xảy ra chuyện, ở nguy hiểm bên trong thành công bị bọn họ năm người hợp tác cứu xuống dưới.</p>
+<p>Cái này làm cho Furuya Rei hung hăng thở dài nhẹ nhõm một hơi, khẩn trương mấy ngày tâm tình cũng rốt cuộc buông một ít, cả người nháy mắt nhẹ nhàng không ít.</p>
+<p>Trước mắt hắn có thể nghĩ đến nguy hiểm cũng liền cái này, chuyện này an toàn vượt qua, kế tiếp ít nhất một tháng đều không cần lại lo lắng.</p>
+<p>Như vậy, hắn nên tự hỏi muốn hay không cùng Hiro nói chuyện này, hơn nữa lại muốn nói như thế nào.</p>
+<p>Có quan hệ muốn hay không cùng bên người người ta nói chính mình là từ tương lai quay lại chuyện này, hắn cố vấn một chút trong đàn hai vị tiền bối thiếu niên.</p>
+<p>【 Natsuki Subaru:…… Ta cảm thấy ngươi hiện tại có thể không cần trước tiên rối rắm vấn đề này, bởi vì vô luận nói hay là không, vô luận đối phương tin vẫn là không tin, dù sao hết thảy đều sẽ ở tử vong hồi đương sau toàn bộ khởi động lại, hết thảy nỗ lực đều là uổng phí công phu, một lần hai lần còn hảo, nhiều thật sự chịu không nổi. Hơn nữa loại chuyện này rốt cuộc thật sự quá thái quá, sinh hoạt ở bình thường trong thế giới người sao có thể dễ dàng tin tưởng? Bọn họ sẽ cho rằng ngươi ở nói giỡn, cho rằng ngươi điên rồi, thậm chí cho rằng ngươi đang nói lừa gạt người mà có điều mưu đồ. Hơn nữa chuyện này bị quá nhiều người đã biết, kỳ thật cũng không phải cái gì chuyện tốt, nếu ở đã vô pháp đọc lấy kia một cái đã xác định đọc đương điểm lúc sau bị địch nhân phát hiện chúng ta có thể chết vong hồi đương, như vậy tình huống liền sẽ trở nên càng thêm không xong. Biện pháp tốt nhất vẫn là chính chúng ta tích lũy lần trước thất bại kinh nghiệm, chính chúng ta tưởng một cái tốt lý do đi dẫn đường đại gia tránh đi bi kịch. 】</p>
+<p>【 Ajiro Shinpei: Ta cảm thấy ngươi có thể thử xem xem, ta lần này đem ta có thể chết vong hồi đương sự tình nói cho Nagumo lão sư, nàng nháy mắt liền lý giải hết thảy, thậm chí ở ta đem hết thảy nói ra phía trước liền trước tiên trinh thám ra tới ta là từ tương lai quay lại. Ta…… Ta thật sự thực cảm động, ta rốt cuộc không phải một người chiến đấu, có biết hết thảy cũng cộng đồng nỗ lực đồng bạn, loại cảm giác này thật sự thực hảo. Ta còn chuẩn bị lúc sau tìm cơ hội đem chuyện này nói cho những người khác, đại gia cùng nhau nỗ lực tổng hội thành công. 】</p>
+<p>Hai cái thiếu niên cơ hồ là đồng thời phát ra chính mình ý kiến, lại lần đầu tiên sinh ra khác nhau.</p>
+<p>Nhưng bọn hắn lại không có sinh ra tranh chấp gì đó.</p>
+<p>Ajiro Shinpei tự nhiên không cần phải nói, hắn thực minh bạch Natsuki Subaru sở dĩ có như vậy nhận tri, tất cả đều là hắn tự mình trải qua, là hắn thiệt tình như vậy lo lắng cùng kiến nghị, bởi vậy thậm chí sẽ phản qua đi an ủi khuyên Natsuki Subaru.</p>
+<p>Natsuki Subaru tính cách có đôi khi là có điểm kích động, nhưng này cũng không đại biểu hắn là cái loại này sẽ không vì người khác suy nghĩ loại hình, hắn bản chất là một vị phi thường chính trực ôn nhu thiện lương thiếu niên, thực mau liền bình tĩnh lại xin lỗi.</p>
+<p>Natsuki Subaru thật sự thực hâm mộ bọn họ, hắn căn bản vô pháp đối những người khác lộ ra chính mình tử vong hồi tưởng sự tình, ai nghe được liền sẽ chết, mà hắn phát tiết cảm xúc giống nhau mặt bên thuyết minh, những người khác cũng căn bản lý giải không được.</p>
+<p>【 Natsuki Subaru: Thực xin lỗi, là ta nhất thời cực đoan, Furuya Shinpei các ngươi cùng ta không giống nhau, ta nơi chính là quỷ dị khó lường ma pháp dị thế giới, bên người đều là xa lạ dị thế giới người, đương nhiên sẽ không dễ dàng tin tưởng ta. Mà các ngươi liền ở nguyên lai còn tính khoa học thế giới, bên người đều là quen thuộc người, nói ra nói không chừng sẽ càng tốt. Giống như là Shinpei nói như vậy, có quen thuộc tín nhiệm cùng biết hết thảy đồng bạn cộng đồng chiến đấu, chúng ta làm ra những cái đó sự, sinh ra những cái đó cảm tình đều có thể bị lý giải, khẳng định sẽ thực hạnh phúc đi. 】</p>
+<p>Không, kỳ thật không phải.</p>
+<p>Furuya Rei ngón tay khẽ run.</p>
+<p>Bởi vì hắn về tới ban đầu thời điểm, như vậy trừ bỏ osananajimi Hiro, hiện tại đại gia đối hắn cùng người xa lạ cũng không có gì khác nhau.</p>
+<p>Hết thảy đều là bắt đầu từ con số 0, giao bằng hữu cũng là.</p>
+<p>*</p>
+<p>Furuya Rei cuối cùng vẫn là quyết định đem hết thảy đều nói cho Morofushi Hiromitsu.</p>
+<p>Hắn tin tưởng chính mình osananajimi.</p>
+<p>Hiện tại thời gian là buổi chiều 7 giờ, sắc trời còn không có hoàn toàn hắc rớt.</p>
+<p>Bọn họ vừa mới kết thúc một ngày huấn luyện không bao lâu, cơm nước xong chuẩn bị làm chính mình sự tình, là cái tốt nhất nói chuyện thời gian.</p>
+<p>Kỳ thật nếu không phải cùng Matsuda ước hảo buổi tối đánh nhau…… Luận bàn, thời gian này định ở an tĩnh buổi tối nói không chừng sẽ càng tốt.</p>
+<p>Rốt cuộc, Furuya Rei không có trăm phần trăm nắm chắc đang nói ra hết thảy lúc sau sẽ phát sinh cái gì, nếu trạng thái đã chịu ảnh hưởng cùng Matsuda đánh nhau…… Luận bàn, khẳng định sẽ bị cái kia nhạy bén gia hỏa phát hiện, sau đó phiền toái liền sẽ càng nhiều.</p>
+<p>Nhưng là Furuya Rei cũng không nghĩ làm osananajimi tiếp tục như vậy lo lắng đi xuống, sớm một chút nói với hắn rõ ràng sớm một chút an tâm.</p>
+<p>Tuy rằng loại chuyện này nói ra rất có thể sẽ phá hủy thế giới quan cùng nhận tri, có lẽ cũng không sẽ làm Hiro cảm thấy an tâm, thậm chí sẽ càng thêm vì hắn lo lắng, thậm chí bởi vì bị liên lụy tiến vào mà càng thêm buồn rầu cùng gặp được nguy hiểm……</p>
+<p>Furuya Rei: “……”</p>
+<p>Gõ xong môn Furuya Rei cứng đờ, do dự.</p>
+<p>“Zero?” Mở cửa Morofushi Hiromitsu sửng sốt.</p>
+<p>Nhưng hắn nhiều hiểu biết Furuya Rei a, nháy mắt liền minh bạch hết thảy.</p>
+<p>“Zero! Ngươi muốn đem hết thảy đều nói cho ta sao?” Morofushi Hiromitsu hơi hơi đề cao thanh âm, vốn là mượt mà thượng chọn màu lam mắt mèo đều một chút sáng lên.</p>
+<p>Tuy rằng nhà hắn osananajimi tính cách ở chính sự thượng đều thực thẳng thắn, nhưng là ở cảm tình phương diện lại nhiều ít có chút ngạo kiều, có đôi khi thích thứ gì bị chọc thủng có lẽ đỏ mặt cũng muốn mạnh miệng nói hắn mới không thích, tuy rằng thực đáng yêu nhưng là ở nào đó dưới tình huống lại có điểm làm người buồn rầu đâu.</p>
+<p>Morofushi Hiromitsu nguyên bản còn tưởng rằng hắn sẽ tiếp tục rối rắm mấy ngày, không nghĩ tới nhanh như vậy liền quyết định đối hắn thẳng thắn thành khẩn, nháy mắt vui vẻ đến không được, cả người cũng thả lỏng không ít.</p>
+<p>Furuya Rei: “……”</p>
+<p>Furuya Rei mặt mày cũng không tự giác thả lỏng cong lên.</p>
+<p>“Đúng vậy, dựa theo ước định, ta tới nói cho ngươi hết thảy, Hiro.” Hắn nói.</p>
+<p>Hắn bị có chút gấp không chờ nổi lại phi thường vui vẻ osananajimi kéo vào phòng, hai người cùng nhau ngồi ở trên giường, liền cùng khi còn nhỏ giống nhau ngồi xếp bằng dựa tường ghé vào cùng nhau nói chuyện phiếm tâm sự.</p>
+<p>Furuya Rei trước kia thường xuyên làm như vậy, ban đầu là bởi vì Morofushi Hiromitsu khi còn nhỏ bởi vì cha mẹ bị giết án kiện một người chuyển trường đến Tokyo còn mắc phải thất ngữ chứng.</p>
+<p>“Nói ra sẽ càng nhẹ nhàng nga? *” nho nhỏ tóc vàng nam hài đối với một người an tĩnh ngồi ở góc phát ngốc tóc đen mắt mèo nam hài lộ ra xán lạn tươi cười, “Nếu ngươi tạm thời nói không nên lời, liền nghe ta tới nói thế nào?”</p>
+<p>Furuya Rei hoa rất dài rất dài thời gian tới giải thích này hết thảy.</p>
+<p>Hắn chậm rãi cấp 22 tuổi osananajimi giới thiệu chính mình 29 tuổi cả đời, nói bọn họ cảnh giáo năm người trở thành thực tốt bằng hữu, nói bọn họ tốt nghiệp sau đều trở thành rất tuyệt cảnh sát, nói bọn họ hai người cùng nhau nằm vùng tiến vào một cái quốc tế khủng bố tổ chức, nói Hiro nằm vùng bại lộ thân phận chết ở chính mình trước mặt, nói Hagiwara Matsuda còn có lớp trưởng đều một người tiếp một người hi sinh vì nhiệm vụ, nói hắn cuối cùng ở phá hủy tổ chức quyết chiến chi dạ cũng chết ở sáng sớm trước trong bóng tối.</p>
+<p>Furuya Rei chậm rãi cấp Morofushi Hiromitsu giải thích chính mình là từ tương lai trọng sinh trở về sự tình, nói hắn cũng không rõ ràng này hết thảy đến tột cùng là chuyện như thế nào, nói hắn còn nhận thức hai cái đồng dạng đã trải qua tử vong hồi đương đồng bạn, là hai cái thực tốt thiếu niên, bọn họ ở các thế giới khác, ở di động đàn liêu, trừ bỏ hắn ai đều nhìn không thấy.</p>
+<p>“Liền tính là như vậy thái quá sự tình, Hiro cũng sẽ tin tưởng ta sao?” Hắn nhẹ giọng hỏi.</p>
+<p>Sau đó Furuya Rei được đến một cái ôm.</p>
+<p>Một cái ấm áp mà lại hữu lực ôm.</p>
+<p>Vẫn luôn an tĩnh nghe hắn kể ra Morofushi Hiromitsu đột nhiên duỗi tay ôm lấy hắn, phi thường dùng sức địa.</p>
+<p>“Đương nhiên, ta như thế nào sẽ không tin ngươi đâu? Ta chỉ là có điểm quá chấn kinh rồi.” Morofushi Hiromitsu nói, “Ta biết Zero sẽ không gạt ta, đúng không?”</p>
+<p>Furuya Rei đem đầu thật sâu mà vùi vào hắn bả vai, buộc chặt cánh tay hồi ôm lấy hắn, cảm thụ được hắn nhiệt độ cơ thể cùng tim đập, rầu rĩ mà ừ một tiếng.</p>
+<p>“Ngươi có thể lựa chọn đem này đó nói cho ta, ta thật sự thật cao hứng, khiến cho ta tới cùng ngươi cùng nhau gánh vác đi, chúng ta là bằng hữu không phải sao?”</p>
+<p>Morofushi Hiromitsu chậm rãi vuốt ve nhà mình osananajimi nhu thuận tóc vàng.</p>
+<p>“Cho tới nay đều thực vất vả đi, Zero, ngươi làm được đã đủ hảo, hiện tại có thể hơi chút thả lỏng nghỉ ngơi một chút nga.”</p>
+<p>*</p>
+<p>Nghỉ ngơi là không có khả năng nghỉ ngơi.</p>
+<p>Furuya Rei bình tĩnh lúc sau liền đỏ mặt nhiệt lỗ tai chạy.</p>
+<p>“Ta chờ hạ còn muốn tìm Matsuda có việc!” Hắn lớn tiếng nói.</p>
+<p>Furuya Rei ngồi xổm ở trên sân thượng điên cuồng vò đầu, một đầu nhu thuận tóc vàng đều bị xoa thành con nhím đầu toàn bộ tạc khởi.</p>
+<p>A a a! Vì cái gì cuối cùng sẽ trái lại biến thành Hiro an ủi hắn a! Lúc này không nên là hắn kiên nhẫn trấn an thế giới quan bị đánh sâu vào đến mờ mịt Hiro sao?!</p>
+<p>Furuya Rei ý đồ dùng mu bàn tay làm chính mình trên mặt độ ấm giáng xuống, nhân tiện ngăn trở chính mình trên mặt biểu tình.</p>
+<p>Cái gì a, quả thực quá phạm quy a, Hiro……</p>
+<p>Nhưng là, nhưng là, thật sự thực vui vẻ a.</p>
+<p>Kia hai cái thiếu niên nói đúng, ở đã trải qua chuyện như vậy lúc sau tái ngộ đến một cái có thể hoàn toàn lý giải tín nhiệm ngươi người cùng nhau sóng vai chiến đấu, loại cảm giác này thật sự thật tốt quá.</p>
+<p>Furuya Rei trong nháy mắt cảm thấy cái gì đều không cần lo lắng.</p>
+<p>Thân thể hắn hiện tại tràn ngập năng lượng, máu đều ở nóng lên, lại khinh phiêu phiêu mà cảm giác có thể bay lên thiên, cuối cùng trực tiếp bật cười.</p>
+<p>“Phốc ha ha ha, ha ha ha ha .”</p>
+<p>Giống người điên giống nhau vui vẻ mà ở không người sân thượng cười một hồi lâu, Furuya Rei tâm tình hoàn toàn bình phục xuống dưới.</p>
+<p>Hắn cầm lấy di động nhìn thoáng qua, đã mau đến 8 giờ.</p>
+<p>“Matsuda gia hỏa kia như thế nào còn chưa tới?” Hắn vén lên tóc mái còn đang cười, “Ta đã có điểm gấp không chờ nổi, hôm nay nhất định sẽ hảo hảo cùng ngươi thoải mái đánh một hồi.”</p>
+<p>Nhưng là Matsuda Jinpei thế nhưng thật sự đến muộn.</p>
+<p>Furuya Rei lại lần nữa nhìn thoáng qua thời gian, nhíu mày.</p>
+<p>Buổi tối 10 điểm tra tẩm, cho nên bọn họ ước định 8 giờ đánh nhau…… Luận bàn, 9 giờ trở về tắm rửa ngủ, thời gian vừa vặn.</p>
+<p>Nhưng hiện tại đã tới rồi 8 giờ quá thập phần, Matsuda Jinpei lại còn chưa tới.</p>
+<p>Này đối với thực chờ mong trận này luận bàn Matsuda mà nói tuyệt đối không bình thường.</p>
+<p>Lúc này, Ajiro Shinpei phía trước câu nói kia đột nhiên hiện lên Furuya Rei trong óc.</p>
+<p>【 Furuya tiên sinh, làm ơn tất tiểu tâm chú ý bên người quan trọng người an toàn, nhất định phải bảo vệ tốt bọn họ. 】</p>
+<p>Nháy mắt, trên người hắn nhiệt ý toàn bộ tan đi, một chút từ đầu lạnh đến chân, như trụy động băng.</p>
+<p>“Matsuda!” Furuya Rei xoay người liền hướng dưới lầu chạy tới.</p>
+<p>Ở dài dòng đen nhánh hàng hiên trung, hắn lấy ra di động không ngừng gọi Matsuda Jinpei điện thoại, nhưng vẫn không chuyển được.</p>
+<p>Kỳ thật hắn còn không có cùng Matsuda trao đổi quá số điện thoại, cũng biết lúc này Matsuda đại khái sẽ không đem điện thoại mang ở trên người, nhưng hắn vẫn là vẫn luôn ở đánh, thậm chí cấp Hagi cũng đánh, đều không có chuyển được.</p>
+<p>“Đáng chết!”</p>
+<p>Hắn phảng phất lại về tới kia một cái ban đêm, đánh không thông điện thoại, chạy không xong cầu thang, cùng với cuối cùng tới muộn nhìn đến vũng máu trung thi thể……</p>
+<p>Thẳng đến chạy ra khu dạy học, tầm nhìn có đèn đường ánh sáng, Furuya Rei mới hơi chút hoàn hồn bình tĩnh.</p>
+<p>Hắn hít sâu, biết chính mình có điểm phạm vào PTSD, hắn nỗ lực tưởng an ủi chính mình sẽ không, nơi này chính là cảnh giáo, kia chính là Matsuda a, hắn có thể có cái gì nguy hiểm? Không cần chính mình dọa chính mình, bằng không chờ hạ khẳng định sẽ bị Matsuda tên kia cười nhạo.</p>
+<p>Như vậy không thể được a, lúc sau nhất định phải tìm cơ hội chữa khỏi cái này PTSD, bằng không quá ảnh hưởng hắn lý trí phán đoán.</p>
+<p>“Bên kia thật sự không cần phải xen vào sao? Chúng ta vẫn là đi báo cáo huấn luyện viên đi?”</p>
+<p>“Đừng đi, sẽ chọc phải phiền toái, đám kia người đều là chút du thủ du thực, cũng không biết như thế nào tiến vào cảnh giáo.”</p>
+<p>“Chính là ta cảm thấy, cái kia tóc quăn kỳ thật người còn khá tốt, hắn là vì cứu cái kia bị bá lăng nhân tài đi đánh nhau đi?”</p>
+<p>Furuya Rei bỗng nhiên tiến lên bắt lấy hai người: “Các ngươi nói cái kia quyển mao là Matsuda Jinpei sao?! Bọn họ ở nơi nào?!”</p>
+<p>Hai cái học sinh bị hắn biểu tình cùng khí thế hoảng sợ, nói chuyện đều run run rẩy rẩy đi lên.</p>
+<p>“Ta, ta không biết tên của hắn là cái gì, chính là một cái mặt lớn lên rất soái màu đen tóc quăn nam nhân, tại tại tại trường học cửa sau bên kia rừng cây nhỏ.”</p>
+<p>“Cụ, cụ thể chúng ta cũng không biết, chỉ là đại khái nhìn ra là hắn nhìn không được kia sáu cá nhân bá lăng một người, cho nên xông lên đi trực tiếp cùng người đánh nhau……”</p>
+<p>Furuya Rei hơi chút thở dài nhẹ nhõm một hơi, buông ra hai người nói câu xin lỗi, xoay người liền hướng trường học cửa sau rừng cây nhỏ chạy đến.</p>
+<p>Nơi đó hắn thục, tới gần trường học cửa sau cùng học sinh ký túc xá, đó chính là hắn ban đầu cùng Matsuda hẹn đánh nhau địa phương.</p>
+<p>Furuya Rei tưởng, đánh nhau mà thôi, đối Matsuda tới nói cũng không phải cái gì hiếm thấy sự tình, liền tính là một đám người cũng rất khó đánh thắng cái kia sẽ quyền anh đại tinh tinh.</p>
+<p>Hắn giống như bởi vì Natsuki Subaru cùng Ajiro Shinpei tử vong hồi đương quá nhiều lần mà có điểm phản ứng quá độ, hắn bên này thế giới cũng không có nguy hiểm như vậy cùng không khoa học mới đúng.</p>
+<p>Nhưng là chờ hắn lần này tìm được Matsuda nhất định phải nghiêm túc cùng hắn nói một chút hắn cái này không coi ai ra gì tính cách, như thế nào so với hắn trong trí nhớ gia hỏa kia còn càng thêm bừa bãi đâu, chẳng lẽ hắn còn ở trong trí nhớ cấp tên kia bỏ thêm lự kính không thành?</p>
+<p>Xác nhận chỉ là đơn thuần học sinh đánh nhau lúc sau, Furuya Rei thả lỏng rất nhiều lại có chút sinh khí.</p>
+<p>Matsuda hắn cho rằng chính mình thật là cái gì siêu nhân a, một người đối thượng một đám người liền trực tiếp xông lên đi, ít nhất kêu vài người a! Ít nhất thông tri một chút bọn họ đi? Tên kia có phải hay không hoàn toàn đã quên hắn còn ở sân thượng chờ đợi ước định việc này?</p>
+<p>Thật là, phụ thân hắn bởi vì không nghĩ chậm trễ thời gian cùng chọc phải phiền toái cho nên sẽ thích hợp quá thấy đánh nhau tranh chấp làm như không thấy, kết quả hắn lại làm cho thẳng quá độ nhìn đến cái gì khó chịu sự tình trực tiếp xông lên đi chính là làm.</p>
+<p>Hắn loại này lộ ra ngoài kiêu ngạo táo bạo tính cách, thẳng đến…… Thẳng đến Hagi tử vong lúc sau, mới nháy mắt thay đổi cái dạng.</p>
+<p>Kỳ thật hắn tính cách vẫn là giống nhau thẳng thắn, nhưng thoạt nhìn lắng đọng lại, hoặc là tĩnh mịch rất nhiều, đại bộ phận thời điểm hắn trên người đều sẽ bị một cổ vứt đi không được an tĩnh thả hơi thở nguy hiểm bao vây, nhưng trên thực tế vẫn là giống nhau không coi ai ra gì.</p>
+<p>Này liền dẫn tới rất nhiều người ở hắn không nói lời nào không hiểu biết hắn thời điểm đều cho rằng đó là một cái u buồn thần bí mà lại nguy hiểm mỹ nam tử, chính là cái kia màu đen kính râm làm hắn khí chất nháy mắt biến thành hắc đạo đại lão.</p>
+<p>Nhưng Furuya Rei kỳ thật nhất không quen nhìn hắn dáng vẻ kia.</p>
+<p>Hắn lúc ấy lại sẽ rất tưởng niệm cảnh giáo Matsuda Jinpei.</p>
+<p>Furuya Rei nhịn không được thật dài thở dài, tính, hắn xem Matsuda cái nào bộ dáng đều không vừa mắt.</p>
+<p>Chờ hạ đem người sau khi tìm được, liền dựa theo ước định, nghiêm túc mà hảo hảo đem người đánh một đốn đi.</p>
+<p>Furuya Rei đã có thể dần dần thấy bên kia bóng người, từ trong thanh âm có thể dễ dàng phán đoán ra tới xác thật là Matsuda chiếm thượng phong, kêu thảm thiết đều là những người khác.</p>
+<p>Có điểm quen tai, tựa hồ chính là phía trước ở WC nói hắn nói bậy bị Matsuda mới vừa tấu quá người.</p>
+<p>Này nhóm người, bị Matsuda tấu sau, trong lòng không thuận lại đi tìm những người khác khi dễ bá lăng sao?</p>
+<p>Furuya Rei rốt cuộc chạy tới con đường kia chung điểm, hắn nhấc chân cũng muốn hướng bên kia không quá có thể bị đèn đường chiếu sáng lên rừng hoa anh đào đi đến, đôi mắt lại bỗng nhiên mở to.</p>
+<p>Đi vào hắn mới phát hiện, ở Matsuda Jinpei phía sau một cây đại thụ mặt sau thế nhưng trộm đi ra một người, chính cao cao giơ lên màu đen cảnh côn chuẩn bị đánh lén cùng một người khác triền đấu Matsuda Jinpei.</p>
+<p>“Matsuda cẩn thận!!!!!!!”</p>
+<p>Nhưng là không còn kịp rồi, hắn liền đào thương thời gian đều không có, Matsuda hai chữ hô lên nháy mắt, tóc quăn thanh niên cái ót đã bị trong bóng đêm cảnh côn hung hăng tạp trung.</p>
+<p>Matsuda Jinpei liền thanh âm cũng vô pháp phát ra một chút, trực tiếp ngã xuống, máu tươi nhanh chóng lan tràn, thân thể càng là mất tự nhiên mà cứng đờ cũng run rẩy lên.</p>
+<p>Trường hợp một chút hỗn loạn cả lên.</p>
+<p>“Uy! Ngươi làm gì! Vạn nhất đánh chết người rồi làm sao bây giờ!”</p>
+<p>“Huyết, thật nhiều huyết…… Uy, hắn trạng thái có phải hay không không thích hợp?”</p>
+<p>“Có người! Có người phát hiện! Làm sao bây giờ làm sao bây giờ?”</p>
+<p>Furuya Rei cái gì đều nhìn không thấy, cái gì đều nghe không thấy, tầm nhìn chỉ có cái kia ngã vào vũng máu tóc quăn thanh niên.</p>
+<p>Hắn rốt cuộc tìm được rồi Matsuda Jinpei, lại liền duỗi tay chạm vào hắn cũng không dám.</p>
+<p>Hắn lần này vẫn là đến chậm.</p>
+<p>Người cái ót đã chịu va chạm có rất lớn khả năng sẽ trực tiếp dẫn đến cái chết, Matsuda tình huống hiện tại đại khái suất là tiểu não xuất huyết, bởi vì đại lượng xuất huyết áp bách đến não làm do đó khiến cho hô hấp cùng tuần hoàn chướng ngại, kế tiếp rất có khả năng trực tiếp dẫn tới hắn hô hấp cùng tim đập đình chỉ.</p>
+<p>Không cứu, như vậy đã cứu không được, lại lợi hại bác sĩ đều không còn kịp rồi, khoảng cách chân chính tử vong thời gian ước chừng chỉ có không đến một phút.</p>
+<p>Người sinh mệnh chính là như vậy yếu ớt.</p>
+<p>Đại não lo chính mình phân tích ra hiện trường tình báo, thậm chí cuối cùng còn giúp hắn cảm thán một câu sinh mệnh yếu ớt.</p>
+<p>Furuya Rei mặt vô biểu tình, nửa quỳ trên mặt đất, tận lực lấy sẽ không lại lần nữa tạo thành thương tổn tư thế đem tóc quăn thanh niên lật qua tới bình đặt ở trên mặt đất, bắt lấy hắn cứng đờ cũng run nhè nhẹ tay nhẹ giọng kêu tên của hắn.</p>
+<p>“Matsuda?”</p>
+<p>Nhưng là tóc quăn thanh niên đã lâm vào nửa ngất cùng run rẩy, mở to hai mắt nhìn hắn muốn nói cái gì, miệng đóng mở lại chỉ có thể phát ra vô ý nghĩa rách nát âm tiết.</p>
+<p>Hắn hô hấp ở lấy một loại đáng sợ tốc độ giảm bớt biến thiển.</p>
+<p>Hắn run rẩy động tác cũng càng ngày càng nhỏ, cuối cùng hoàn toàn đình chỉ.</p>
+<p>Từ sự tình phát sinh đến kết thúc, không đến một phút, cho người ta phản ứng thời gian đều không có, Matsuda Jinpei tử vong.</p>
+<p>Furuya Rei nắm hắn tay, cương ở đương trường.</p>
+<p>“…… Matsuda?”</p>
+<p>Trầm mặc.</p>
+<p>Matsuda Jinpei trầm mặc quả thực đinh tai nhức óc.</p>
+<p>【 Matsuda Jinpei đã tử vong 】</p>
+<p>【 đánh ra chi nhánh kết cục: Hoa anh đào điêu tàn · Matsuda Jinpei chi tử 】</p>
+<p>Furuya Rei cảm giác được hít thở không thông, trái tim giống như bị người trực tiếp xé rách, hô hấp hỗn loạn, trước mắt biến thành màu đen.</p>
+<p>Hắn lại nghĩ tới cái kia báo tang.</p>
+<p>[ Sở Cảnh sát Đô thị canh gác bộ cơ động đội nổ mạnh vật xử lý ban . cùng hình sự bộ điều tra một khóa mạnh mẽ phạm tam hệ tương ứng</p>
+<p>Matsuda Jinpei</p>
+<p>Ở nổ mạnh giải thể trung hi sinh vì nhiệm vụ ]*</p>
+<p>Nhưng là…… Nhưng là! Nhưng là Matsuda hiện tại mới 22 tuổi! Hắn thậm chí mới vừa tiến vào cảnh giáo! Hắn còn không có dạy hắn như thế nào hủy đi đạn! Bọn họ còn không có trở thành bằng hữu chân chính! Hắn nhân sinh mới vừa bắt đầu! Hắn còn không có trở thành chịu người kính ngưỡng Matsuda cảnh sát! Hắn cứ như vậy đã chết? Bởi vì cái loại này gia hỏa đánh lén? Bởi vì phía trước vì hắn xuất đầu chọc tới đám kia xã hội cặn bã?</p>
+<p>Ha ha, kia hắn trọng sinh trở về, rốt cuộc là vì cái gì? Lại có ích lợi gì đâu?</p>
+<p>Hắn trở về chỉ là vì làm Matsuda trước tiên tử vong sao?</p>
+<p>“Chết, đã chết?!”</p>
+<p>“Không có! Này không liên quan chuyện của chúng ta! Ta không có giết người! Ta không có giết người!!!”</p>
+<p>Furuya Rei bỗng nhiên ngẩng đầu.</p>
+<p>Kia sáu cá nhân bị hắn biểu tình hoảng sợ, bị kia bình sinh hiếm thấy đáng sợ sát khí sợ tới mức cơ hồ lá gan muốn nứt ra, chân mềm nhũn thiếu chút nữa trực tiếp quỳ xuống tới liền hô hấp đều biến mất.</p>
+<p>Thẳng đến bị ấn ở trên mặt đất cơ hồ là hướng chết tấu, bọn họ cũng không nghĩ ra vì cái gì cái này cảnh giáo đệ nhất tóc vàng học sinh xuất sắc sẽ có được loại này so với bọn hắn gặp qua sở hữu cùng hung cực ác tội phạm còn khủng bố hơi thở.</p>
+<p>Sẽ chết! Sẽ chết!! Người này là thật sự sẽ đem bọn họ đều giết!!!</p>
+<p>Hắn thật sự chỉ là cảnh giáo sinh sao?! Hắn nên sẽ không thật là cái gì mặt khác quốc gia thậm chí là khủng bố tổ chức phái đến cảnh sát bên này nằm vùng đi?!</p>
+<p>Lấy lại tinh thần mấy người bắt đầu phát ra tê tâm liệt phế tiếng kêu thảm thiết cùng cầu cứu thanh, nhanh chóng đem mặt khác học sinh thậm chí là huấn luyện viên đều hấp dẫn lại đây.</p>
+<p>Nhưng là Furuya Rei cái gì đều nghe không được, những người khác đều bị hắn đánh tới không thể động đậy, chỉ có cuối cùng cái này.</p>
+<p>Người nam nhân này, là bọn họ lớp học, là cái kia buổi chiều súng lục huấn luyện khi trộm tàng viên đạn bị Hagi phát hiện người, cũng là vừa rồi giơ lên không biết từ nơi nào trộm tới cảnh côn trốn đi đánh lén Matsuda Jinpei người.</p>
+<p>Furuya Rei cưỡi ở trên người hắn, nhéo hắn cổ áo, mặt vô biểu tình một quyền một quyền tấu đi xuống, bắn khởi máu tươi nhiễm hồng hắn tóc vàng, lại theo gương mặt chảy xuống.</p>
+<p>Kia bộ dáng khủng bố đến liền huấn luyện viên đều bị dọa tới rồi.</p>
+<p>“Zero!” Morofushi Hiromitsu đẩy ra đám người vọt vào đi, không chút do dự trực tiếp bắt được Furuya Rei nâng lên máu tươi đầm đìa nắm tay, “Zero ngươi bình tĩnh một chút, có thể nói cho ta đã xảy ra cái gì sao?”</p>
+<p>“Furuya-chan……?” Hagiwara Kenji cũng toát ra đầu tới, theo sau thấy cây hoa anh đào hạ an tĩnh nằm Matsuda Jinpei, “Từ từ? Bên kia, là Jinpei-chan sao? Ha ha, không thể nào? Uy, Jinpei-chan, ngươi như thế nào lại đánh nhau a, ngươi là ở cố ý giả chết làm ta sợ sao? Hagi-chan phải bị dọa khóc nga, uy uy uy, ta thật sự muốn sinh khí a……”</p>
+<p>“Đủ rồi! Furuya! Ngươi lại đánh bọn họ liền phải thật sự bị đánh chết! Ngươi còn muốn làm cảnh sát sao?!” Date Wataru đầu tiên là nghiêm khắc quát lớn hắn một câu, sau đó lại chậm lại ngữ điệu nghiêm túc nói: “Furuya, rốt cuộc đã xảy ra sự tình gì? Ngươi nói cho ta, ta sẽ hảo hảo nghe ngươi nói.”</p>
+<p>Furuya Rei cứng đờ vài giây, sau đó chậm rãi đem chính mình tay từ osananajimi trong tay rút về tới, đứng lên lui về phía sau hai bước.</p>
+<p>Tóc vàng thanh niên giờ phút này biểu tình chỗ trống đến đáng sợ, nhẹ giọng nói: “Không còn kịp rồi, đã vô dụng, Matsuda đã chết.”</p>
+<p>Hắn rõ ràng mà biết, ở Matsuda tử vong nháy mắt, cái này hắn vừa mới còn tràn ngập chờ mong hạnh phúc thế giới đã rách nát.</p>
+<p>“Zero!” Morofushi Hiromitsu kinh hãi tiến lên một bước, có dự cảm bất hảo.</p>
+<p>“Hiro, xin lỗi, chúng ta lúc sau tái kiến.”</p>
+<p>Tóc vàng thanh niên nói xong, đột nhiên từ trên người lấy ra một khẩu súng, thần sắc kiên định mà đem họng súng nhắm ngay đầu mình.</p>
+<p>Furuya Rei chuẩn bị cây súng này thời điểm, cũng không có nghĩ tới đệ một viên đạn đầu tiên sẽ dùng để tự sát.</p>
+<p>“Ta nhất định sẽ đem Matsuda cứu trở về tới.” Hắn nghiêm túc đối bên kia ôm Matsuda Jinpei thi thể Hagiwara Kenji hứa hẹn nói.</p>
+<p>“Không, từ từ! Zero!! Dừng tay a!!!!!!” Morofushi Hiromitsu kinh hãi muốn chết mà nhào qua đi tưởng ngăn cản hắn.</p>
+<p>Furuya Rei không chút do dự khấu động cò súng.</p>
+<p>“Phanh .”</p>
+<p>【 ngươi đã tử vong 】</p>
+<p>【 một vòng mục kết thúc 】</p>
+<p>【 đánh ra BE kết cục: Không coi ai ra gì 】</p>
+<p>【 hay không đọc đương 】</p>
+<p>【 là 】</p>
+<p>【 đọc đương trung……】</p>
+<p>--------------------</p>
+<p>Một vòng mục kết thúc.</p>
+<p>Lúc sau đánh ra kết cục hẳn là đều là dùng bốn chữ thành ngữ, giai đoạn trước là phù hợp cảnh giáo tổ truyện tranh nhân vật tương ứng tiêu đề.</p>
+<p>Nơi này là đối ứng truyện tranh đệ nhị thiên Matsuda Jinpei bìa mặt tiêu đề 【 không coi ai ra gì 】</p>
+<p>Kế tiếp là cảnh giáo tổ tiểu tiết học, nội dung cơ bản đến từ Aoyama thăm hỏi.</p>
+<p>Matsuda Jinpei:</p>
+<p>1, răng giả là cao trung thời điểm đánh nhau rụng răng sau bổ.</p>
+<p>2, cùng Hagiwara Kenji đại khái là tiểu học thời điểm nhận thức.</p>
+<p>3, lần đầu tiên hủy đi đồ vật là quạt điện.</p>
+<p>4, ngày thường tùy thân mang theo tháo dỡ công cụ.</p>
+<p>5, tay thực linh hoạt, thích cà ri, thích chỗ cao, thích ngủ ở sân thượng mái nhà nghỉ ngơi cùng tự hỏi vấn đề.</p>
+<p>6, ca hát ngũ âm không được đầy đủ.</p>
+<p>7, từ cảnh giáo tốt nghiệp sau trước sau ở Sở Cảnh sát Đô thị canh gác bộ cơ động đội nổ mạnh vật xử lý ban cùng hình sự bộ điều tra một khóa mạnh mẽ phạm tam hệ nhậm chức.</p>
+<p>8, Conan nguyên niên 3 năm trước 11.7 ngày ở hủy đi đạn trong quá trình hi sinh vì nhiệm vụ, hưởng thọ 26 tuổi.</p>
+<p>*: Đến từ nguyên tác lời kịch</p>
+<p>.</p>
+<p>PS: Nguyên tác Matsuda hi sinh vì nhiệm vụ báo tang hình ảnh ta phóng vây cổ</p>
+<p>PSS: Trên mạng căn cứ nguyên tác truyện tranh cùng tiểu thuyết thống kê, Ajiro Shinpei tổng cộng tử vong 16 thứ, Natsuki Subaru tử vong 47 thứ.</p>
+<p>Như vậy, linh sẽ tử vong bao nhiêu lần đâu?</p>
+<!-- END-AUTO-INSERT-5 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong4.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong6.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "furuya-bat-dau-tu-con-so-0-doc-duong";
+const NOVEL_TITLE = "Furuya Bắt Đầu Từ Con Số 0 Đọc Đương";
+const CHAPTER_TITLE = "Chương 5: Đọc Đương Một Vòng Mục ( 5 )";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

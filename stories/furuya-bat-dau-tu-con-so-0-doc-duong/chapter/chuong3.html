@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+ <title>Chương 3: Đọc Đương Một Vòng Mục ( 3 )</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Furuya Bắt Đầu Từ Con Số 0 Đọc Đương
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 3: Đọc Đương Một Vòng Mục ( 3 )</span>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="top-right">
+      <a class="back-link" href="chuong2.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong4.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<!-- AUTO-INSERT-3 -->
+<p>=========</p>
+<p>Hắn đến từ 《 Thám Tử Lừng Danh Conan 》?</p>
+<p>Furuya Rei trước hết bị hấp dẫn chính là cái tên kia.</p>
+<p>Danh trinh thám…… Conan?</p>
+<p>“Zero? Làm sao vậy? Cái này biểu tình?” Morofushi Hiromitsu tò mò mà đến gần rồi nhẹ giọng hỏi.</p>
+<p>Kỳ thật từ tối hôm qua bắt đầu, hắn liền cảm giác Zero không quá thích hợp.</p>
+<p>Nhưng ở hắn nhìn chăm chú hạ, vừa mới còn lộ ra ngưng trọng thần sắc tựa hồ ở tự hỏi cái gì đáng sợ sự tình tóc vàng thanh niên lại xoay mặt liền lộ ra dường như không có việc gì tươi cười, giống như vừa mới hết thảy đều chỉ là hắn ảo giác giống nhau.</p>
+<p>“Không, không có gì, ta chỉ là suy nghĩ, nếu tạm thời không thể ăn cay, kia ta mấy ngày nay muốn ăn cái gì thôi.” Hắn nói.</p>
+<p>“Zero……” Morofushi Hiromitsu lo lắng nhìn hắn, “Nếu ngươi gặp được sự tình gì……”</p>
+<p>“Thật sự không có gì lạp.” Tóc vàng thanh niên thở dài, có điểm ngượng ngùng dời đi tầm mắt, “Hảo đi, ta chỉ là suy nghĩ, nếu cái kia quyển mao hỗn đản ở ban ngày khiêu khích ta làm sao bây giờ, tổng không thể làm trò đồng học cùng huấn luyện viên mặt lại đánh một trận đi?”</p>
+<p>Hắn giơ tay chạm vào một chút trên mặt băng gạc, đau đến tê một chút: “Kỳ thật vẫn là rất đau, thật phiền toái, tên kia nắm tay xác thật thực trọng.”</p>
+<p>Morofushi Hiromitsu nhất thời bị dời đi lực chú ý, bắt lấy hắn tay đi xuống kéo: “Vẫn là rất đau sao? Thật là, đừng như vậy không nhẹ không nặng mà chạm vào miệng vết thương a, huấn luyện xong cơm sáng sau ta tới giúp ngươi đổi dược đi.”</p>
+<p>“Ân, vậy vẫn là phiền toái ngươi, Hiro.” Tóc vàng thanh niên cười nói, tại hạ lâu bị những người khác thấy phía trước đưa điện thoại di động thu hồi đồ thể dục túi.</p>
+<p>“Có cái gì phiền toái, không phải vẫn luôn như vậy sao, ai kêu Zero ngươi từ nhỏ đến lớn luôn là bị thương đâu.” Morofushi Hiromitsu có chút bất đắc dĩ mà thở dài, lại hỏi: “Đem điện thoại mang đi huấn luyện không quan hệ sao? Bị huấn luyện viên phát hiện khẳng định sẽ bị mắng.”</p>
+<p>Cảnh giáo có thể mang di động tiến vào, nhưng huấn luyện trong lúc không chuẩn chơi di động, buổi tối 10 điểm lúc sau tắt đèn tra tẩm cũng không chuẩn chơi di động, một khi trái với quy định nói không chừng sẽ trực tiếp tịch thu di động.</p>
+<p>“Không thành vấn đề, sẽ không bị phát hiện.” Furuya Rei thoạt nhìn thực kiên định lại tự tin mà cười nói.</p>
+<p>Vì thế Morofushi Hiromitsu liền không lại tiếp tục cái này đề tài, cùng nhà mình osananajimi cùng nhau cười nói chút mặt khác thông thường đề tài đi hướng sân thể dục.</p>
+<p>Không thích hợp, hắn tưởng, Zero tuyệt đối gặp được sự tình gì.</p>
+<p>Nhưng là vì cái gì không muốn nói với hắn đâu?</p>
+<p>Morofushi Hiromitsu nghĩ tới chính mình tối hôm qua ác mộng, nghĩ tới chính mình đảm đương cảnh sát nguyên nhân, nghĩ tới chính mình một người ở trong tối trộm điều tra án kiện……</p>
+<p>Nhưng là cũng không thích hợp a, cùng hắn tính cách không giống nhau, Zero vẫn luôn đều phi thường thẳng thắn nghiêm túc, liền tính thật có chuyện gì cũng trước nay không giấu diếm được hắn.</p>
+<p>Tuy rằng nói không nên lời rốt cuộc không đúng chỗ nào, như thế nào quan sát cũng không có phát hiện vấn đề, nhưng bằng vào đối osananajimi quen thuộc cùng quan tâm, Morofushi Hiromitsu vẫn là đem sở hữu lực chú ý đều phóng tới quan sát Furuya Rei trên người.</p>
+<p>Hắn thậm chí hoàn toàn đã quên vẫn luôn quấn quanh chính mình trong lòng huyết sắc bóng ma, toàn đi lo lắng nhà mình osananajimi.</p>
+<p>Cảnh giáo sinh hoạt có nghiêm khắc thời gian quy định, buổi sáng 6 giờ rời giường, 6 giờ hai mươi ở sân thể dục tập hợp sớm huấn.</p>
+<p>Tháng tư, đúng là xuân về hoa nở mùa, sơ thăng ánh mặt trời cùng với sáng lạn hoa anh đào chiếu vào đi ngang qua người đi đường trên người.</p>
+<p>Morofushi Hiromitsu quay đầu phát hiện nhà mình osananajimi tụt lại phía sau, có chút sững sờ mà ngẩng đầu xem hoa anh đào, gió thổi rối loạn hắn tóc vàng, làm người có điểm nhìn không thấy trên mặt hắn thần sắc.</p>
+<p>Nhưng Morofushi Hiromitsu cảm thấy hắn hiện tại giống như thực hoảng hốt, phảng phất lâm vào một người thế giới, mà thế giới kia tràn đầy bi thương thống khổ sự tình.</p>
+<p>“Zero!” Morofushi Hiromitsu nhịn không được kêu hắn một tiếng.</p>
+<p>Tóc vàng thanh niên sửng sốt hai giây, lúc này mới chậm rãi quay đầu lại nhìn về phía hắn, chỗ trống mà lại đen tối yên màu tím đôi mắt dần dần nhiễm quang.</p>
+<p>Hắn cười đột nhiên duỗi tay ở không trung bắt một phen, sau đó giống cái tiểu hài tử giống nhau giơ nắm tay chạy tới cho hắn xem.</p>
+<p>“Hiro ngươi xem!”</p>
+<p>Morofushi Hiromitsu thở dài nhẹ nhõm một hơi, khóe mắt đuôi lông mày cũng nhịn không được nhiễm ý cười, cúi đầu nhìn lại: “Là cái gì?”</p>
+<p>Furuya Rei chậm rãi mở ra nắm tay, ở kia chỉ tiểu mạch sắc lòng bàn tay nằm, là một đóa xinh đẹp hoa anh đào.</p>
+<p>“Chỉnh đóa rơi xuống hoa anh đào thực hiếm thấy đúng không.” Tóc vàng thanh niên nghiêng đầu cười, tươi cười thậm chí ôn hòa tới rồi ôn nhu nông nỗi, làm người tim đập nhanh lại đau lòng.</p>
+<p>“Một đóa hoa anh đào, năm cánh hoa, tất cả đều ở đâu.” Hắn nói.</p>
+<p>*</p>
+<p>Buổi sáng 6 giờ hai mươi, năm nay tân nhập giáo một ngàn hai trăm nhiều danh tân sinh đã toàn bộ tập hợp ở rộng lớn sân thể dục thượng chuẩn bị bắt đầu sớm huấn.</p>
+<p>Mà Onizuka ban bên này tắc hơi chút ra điểm vấn đề.</p>
+<p>“Matsuda! Furuya! Các ngươi hai cái thương là chuyện như thế nào?!”</p>
+<p>Vẫn luôn lo lắng cũng lặng lẽ chú ý Furuya Rei Morofushi Hiromitsu rốt cuộc đem lực chú ý phóng tới bên cạnh tóc quăn thanh niên trên người.</p>
+<p>A, xác thật là vừa thấy liền biết là thứ đầu người đâu, thậm chí còn dám dùng cái loại này ngữ khí trực tiếp trêu đùa khiêu khích thoạt nhìn liền rất đáng sợ huấn luyện viên.</p>
+<p>…… Không nghĩ tới lớp trưởng thế nhưng là cái dạng này lớp trưởng, thế nhưng mắt đều không nháy mắt mà nói dối sau đó đi huấn luyện viên lộ làm huấn luyện viên không đường có thể đi, chỉ định hắn huấn luyện viên hiện tại có thể hay không có điểm hối hận?</p>
+<p>Morofushi Hiromitsu ở chạy bộ buổi sáng trong quá trình vẫn luôn cười đi theo Furuya Rei mặt sau, nhìn hắn cùng phía trước Matsuda Jinpei ồn ào nhốn nháo cuối cùng bị lớp trưởng Date Wataru cùng nhau đắp bả vai ha ha giải hòa, cùng Matsuda Jinpei quan hệ thực tốt Hagiwara Kenji còn lại là ở bên cạnh vô tâm không phổi mà ha ha cười Matsuda Jinpei thế nhưng liền răng giả đều bị xoá sạch.</p>
+<p>Lúc này Furuya Rei giống như lại trở nên thập phần bình thường.</p>
+<p>Hơn nữa, hắn thoạt nhìn thật sự rất thích tân đồng học, thoạt nhìn thật sự thực vui vẻ a, Zero.</p>
+<p>Vì thế Morofushi Hiromitsu cũng nhịn không được nở nụ cười.</p>
+<p>Lúc sau khẳng định có thể thành vì bạn tốt đi, hắn tưởng.</p>
+<p>*</p>
+<p>Buổi sáng 7 giờ, bữa sáng thời gian bắt đầu rồi.</p>
+<p>Furuya Rei ăn mì soba thời điểm tưởng trộm thêm tương ớt, bị Morofushi Hiromitsu phát hiện, chột dạ lại không phục mà từ bỏ thêm cay.</p>
+<p>Morofushi Hiromitsu bất đắc dĩ mà cho hắn bỏ thêm dấm cùng hồ tiêu tới làm mì sợi càng có hương vị.</p>
+<p>Buổi sáng 8 giờ, bắt đầu rồi hôm nay lý luận khóa.</p>
+<p>Cảnh giáo sinh buổi sáng giống nhau đều là lý luận khóa cùng thực tiễn huấn luyện khóa, nhưng bọn hắn hiện tại mới vừa nhập học, đại bộ phận đều là lý luận khóa.</p>
+<p>Mà vô luận là lý luận vẫn là thực tiễn, Furuya Rei từ trước đến nay đều là không hề nghi ngờ đệ nhất.</p>
+<p>Càng khó đến chính là, hắn ở xác thật thiên tài cơ sở thượng, còn so với ai khác đều nghiêm túc phụ trách tích cực.</p>
+<p>Nhưng là làm Morofushi Hiromitsu không nghĩ tới chính là, thoạt nhìn giống như vẫn luôn thực chán ghét cảnh sát Matsuda Jinpei, thế nhưng hoàn chỉnh bối ra cảnh sát hành vi thủ tục.</p>
+<p>Hắn ngữ khí, là nghiêm túc, cũng là thiệt tình cho là như vậy.</p>
+<p>Morofushi Hiromitsu phát hiện Furuya Rei nhìn về phía Matsuda Jinpei trong mắt có ý cười, càng thêm cảm thấy bọn họ khẳng định có thể thành vì bạn tốt.</p>
+<p>Giữa trưa 12 điểm, là cơm trưa thời gian.</p>
+<p>Morofushi Hiromitsu điểm thịt gà cơm chiên trứng phần ăn, sau đó đoan đến Furuya Rei bên người ngồi xuống ăn cơm, tiếp tục giám sát hắn không thể ăn cay.</p>
+<p>“Nhưng là ta thật sự rất tưởng ăn cay cà ri a, Hiro.” Furuya Rei thập phần ủy khuất mà nhìn hắn.</p>
+<p>Morofushi Hiromitsu bị cặp kia vô tội rũ xuống mắt thấy, cuối cùng chỉ có thể nhận thua, làm hắn ăn chầu này cay cà ri.</p>
+<p>Ngồi ở đối diện Matsuda Jinpei đầu tiên là thực vô ngữ mà cười nhạo Furuya Rei như là cái bị mụ mụ tang quản tiểu hài tử, sau đó bị Hagiwara Kenji lấy ra khăn giấy cho hắn lau mặt mà tạc mao cùng thẹn quá thành giận, cuối cùng lại bị cố ý đâm Furuya Rei một chút lại âm dương quái khí hắn tóc vàng cùng màu da người chọc sinh khí.</p>
+<p>“Cảnh sát gì đó, đều cho ta gặp quỷ đi thôi!”</p>
+<p>Morofushi Hiromitsu lửa giận cùng lo lắng đều bị hắn này lớn tiếng một câu cấp làm không có.</p>
+<p>Furuya Rei thậm chí trực tiếp bật cười.</p>
+<p>Matsuda Jinpei thiếu chút nữa cùng hắn ở thực đường lại lần nữa đánh lên tới.</p>
+<p>*</p>
+<p>Ăn xong cơm trưa liền đến nghỉ trưa thời gian, cảnh giáo sinh giữa trưa không ngủ ngủ trưa rất khó chịu đựng buổi chiều đại lượng huấn luyện.</p>
+<p>Morofushi Hiromitsu cầm chính mình phòng hòm thuốc đi Furuya Rei ký túc xá giúp hắn đổi dược, lại lần nữa băng bó miệng vết thương.</p>
+<p>Morofushi Hiromitsu thật sự rất quen thuộc, từ hắn tiểu học thời điểm gặp được Zero lúc sau liền thường xuyên giúp hắn băng bó miệng vết thương.</p>
+<p>Nghe nói Zero phía trước đều vẫn luôn là một cái nữ bác sĩ giúp hắn băng bó, nhưng ở hắn dọn đi Tokyo phía trước, cái kia nữ bác sĩ một nhà liền biến mất.</p>
+<p>Zero cũng đúng là vì tìm kiếm từ biệt sau liền thần bí mất tích nữ bác sĩ, mới có thể sinh ra đương cảnh sát đi điều tra ý tưởng.</p>
+<p>Tóm lại, ở kia lúc sau, liền vẫn luôn là hắn cấp Zero xử lý miệng vết thương, đã nhiều năm như vậy, đương nhiên đều có thể quen tay hay việc.</p>
+<p>“Hiro thủ pháp vẫn là trước sau như một hoàn mỹ đâu.” Tóc vàng thanh niên lại không biết vì cái gì ngược lại hiếm lạ dường như đối với gương xem cái không ngừng.</p>
+<p>Morofushi Hiromitsu thu thập hòm thuốc tay một đốn.</p>
+<p>Hắn nhìn tựa hồ cứng đờ một chút osananajimi, có nghĩ thầm hỏi cái gì, nhưng đối với cặp kia vô tội rũ xuống mắt lại như thế nào đều nói không nên lời.</p>
+<p>Tính, chờ hắn khi nào tưởng nói rồi nói sau, trước không buộc hắn, nhìn nhìn lại tình huống.</p>
+<p>Ở osananajimi ký túc xá cũng không phát hiện cái gì kỳ quái chỗ Morofushi Hiromitsu cuối cùng vẫn là rời đi.</p>
+<p>Môn đóng lại lúc sau, Furuya Rei trên mặt tươi cười nháy mắt biến mất, ảo não mà chụp một chút đầu.</p>
+<p>Hắn đối mặt Hiro thật là có điểm quá mức lơi lỏng, nhưng là muốn hắn đối Hiro vẫn luôn cảnh giác cũng không tránh khỏi quá khó xử người.</p>
+<p>Chính là Hiro rõ ràng đã phát hiện hắn không đúng, hôm nay vẫn luôn ở quan sát hắn……</p>
+<p>Tính, Hiro nói tạm thời không cần lo lắng, hắn không phải Matsuda như vậy có việc liền không nín được trực tiếp xông lên tính cách, trước giải quyết mặt khác vấn đề lại nói.</p>
+<p>Furuya Rei ngồi ở án thư trước, sắc mặt nghiêm túc mà lấy ra di động.</p>
+<p>Cái này đàn……</p>
+<p>【. Furuya Rei đã tiến vào group chat .】</p>
+<p>【 Natsuki Subaru: Tân nhân đã trở lại? 】</p>
+<p>【 Natsuki Subaru: Thật tốt quá, ngươi không sao chứ? 】</p>
+<p>Furuya Rei tự hỏi hắn những lời này ý tứ thời điểm, đột nhiên phát hiện không thích hợp.</p>
+<p>Mỗi người nói chuyện phiếm chân dung cùng tên góc trái phía trên kỳ thật còn trụy một cái nho nhỏ vòng tròn, bên trong viết một con số, tỏ vẻ người kia tử vong cùng hồi đương số lần.</p>
+<p>Ajiro Shinpei tên mặt sau, con số từ 3 biến thành 4.</p>
+<p>Furuya Rei lập tức click mở hữu thượng đàn thành viên danh sách.</p>
+<p>【1, Natsuki Subaru: Đến từ 《Re: Bắt đầu từ con số 0 dị thế giới sinh hoạt 》, mười chu mục tiến hành trung, đã tử vong mười lần. 】</p>
+<p>【2, Ajiro Shinpei: Đến từ 《 Summer Time Rendering 》, bốn phía mục tiến hành trung, đã tử vong bốn lần. 】</p>
+<p>【3, Furuya Rei: Đến từ 《 Thám Tử Lừng Danh Conan 》, một vòng mục tiến hành trung, đã tử vong một lần. 】</p>
+<p>Furuya Rei đồng tử co chặt.</p>
+<p>Gần chỉ là một cái buổi sáng thời gian, cái kia tên là Ajiro Shinpei người đã lại đã chết một lần?</p>
+<p>【 Ajiro Shinpei: Tân nhân đừng sợ, chúng ta đều là giống nhau, ta cùng Subaru-kun cũng không phải cái gì người xấu. Ngươi nếu là có cái gì muốn hỏi có thể nói thẳng, chúng ta sẽ tận lực giúp ngươi cùng nhau giải quyết, chỉ có tập hợp đại gia lực lượng mới có thể thăm dò giải quyết loại này đáng sợ vấn đề. 】</p>
+<p>【 Natsuki Subaru: Shinpei? Ngươi lại đã chết? Chuyện khi nào? 】</p>
+<p>【 Ajiro Shinpei: Liền ở vừa mới ( miêu miêu thở dài.jpg ) 】</p>
+<p>【 Natsuki Subaru: Ngươi bên kia thế giới thật là nguy hiểm a…… Cho nên lần này là chết như thế nào? ( đổ mồ hôi.jpg ) 】</p>
+<p>【 Ajiro Shinpei:? Ngươi nghiêm túc sao? Subaru-kun ngươi bên kia thế giới so với ta nguy hiểm một trăm lần không ngừng đi? 】</p>
+<p>【 Furuya Rei: Các ngươi hảo, ta là Furuya Rei. 】</p>
+<p>【 Furuya Rei: Xin lỗi xin lỗi, bởi vì ta ở huấn luyện trung không chuẩn xem di động, cho nên liền buổi sáng lâm thời nhìn thoáng qua, hiện tại nghỉ trưa mới đến đến cập lại lần nữa tiến vào. ( miêu miêu cúi đầu xin lỗi jpg ) 】</p>
+<p>Gạt người, hắn kỳ thật làm bộ đi WC khi vài lần lấy ra di động nhìn trộm bọn họ nói chuyện phiếm, dùng ẩn thân hình thức.</p>
+<p>【 Natsuki Subaru: Không có việc gì không có việc gì, vấn đề không lớn, ngươi không có việc gì liền hảo. 】</p>
+<p>【 Ajiro Shinpei: Đúng vậy, bởi vì chúng ta thế giới đều rất nguy hiểm, một không cẩn thận liền sẽ tử vong, cho nên chúng ta vẫn luôn ở lo lắng ngươi xảy ra chuyện, nhìn đến ngươi hồi đương số lần không thay đổi mới yên tâm. 】</p>
+<p>【 Natsuki Subaru: Cho nên Furuya ngươi bên kia là tình huống như thế nào? Có thể cùng chúng ta nói nói sao? Nếu rất nguy hiểm nói, chúng ta đại khái có thể cho ra một ít kiến nghị nga. Có thể có tân nhân gia nhập, chúng ta cũng thực vui vẻ, gặp được loại chuyện này lại không có mấy cái biết đến đồng bạn tâm sự, đại khái thật sự sẽ điên đi. ( thở dài.jpg ) 】</p>
+<p>【 Ajiro Shinpei: Kỳ thật từ buổi sáng Furuya-kun gia nhập đàn liêu sau, ta liền ở tự hỏi vạn nhất về sau còn có tân nhân tiến vào tình huống, cho nên đã ở viết một ít ta chính mình tích lũy tổng kết tân nhân tồn tại kinh nghiệm, nhưng là còn không có viết xong ta liền gặp được nguy hiểm trừu không ra thân……】</p>
+<p>Furuya Rei chớp chớp mắt, hai người kia…… Hình như là thực ôn nhu lại thiện lương người a.</p>
+<p>Furuya Rei nhất tâm nhị dụng, một bên ở trong đàn cùng hai người nói chuyện phiếm thu hoạch càng nhiều hảo cảm cùng tình báo, này với hắn mà nói đã rất quen thuộc, vì thế bên kia còn ở trong đầu tự hỏi một kiện chuyện rất trọng yếu.</p>
+<p>Hắn thế giới, ít nhất là trong trí nhớ cảnh giáo thời kỳ, hẳn là không thể xưng là một không cẩn thận liền sẽ tử vong nguy hiểm thế giới đi?</p>
+<p>Nhưng là…… Kia bốn người tử vong hình ảnh không chịu khống chế mà điên cuồng ở Furuya Rei trong đầu hồi phóng lập loè.</p>
+<p>Dự cảm bất hảo như là nước biển giống nhau, cùng hắc ám huyết tinh chuyện cũ cùng nhau lệnh người hít thở không thông đem hắn hoàn toàn bao phủ.</p>
+<p>--------------------</p>
+<p>ps: Cảnh giáo làm việc và nghỉ ngơi thời gian là ta chính mình ở trên mạng lục soát kết hợp cảnh giáo thiên truyện tranh viết ra tới, Tooko đôi mắt nhan sắc tuy rằng ngẫu nhiên sẽ biến thành màu lam, nhưng là phía chính phủ giả thiết là tím màu xám.</p>
+<!-- END-AUTO-INSERT-3 -->
+
+
+
+<!-- ===== NAV DƯỚI ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong2.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong4.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "furuya-bat-dau-tu-con-so-0-doc-duong";
+const NOVEL_TITLE = "Furuya Bắt Đầu Từ Con Số 0 Đọc Đương";
+const CHAPTER_TITLE = "Chương 3: Đọc Đương Một Vòng Mục ( 3 )";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
