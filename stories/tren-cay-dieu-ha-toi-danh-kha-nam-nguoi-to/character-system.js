@@ -1,6 +1,8 @@
 let characters = [];
 
-/* load dữ liệu nhân vật */
+/* ==============================
+   LOAD DATA NHÂN VẬT
+============================== */
 
 fetch("../../../thu-vien-ten/name-data.json")
 .then(res => res.json())
@@ -9,33 +11,45 @@ fetch("../../../thu-vien-ten/name-data.json")
  highlightNames();
 });
 
-/* highlight tên trong chương */
+/* ==============================
+   ESCAPE REGEX
+============================== */
+
+function escapeRegExp(string){
+ return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+/* ==============================
+   HIGHLIGHT TÊN TRONG CHƯƠNG
+============================== */
 
 function highlightNames(){
 
- let container = document.querySelector(".chapter-content");
+ const container = document.querySelector(".chapter-content");
  if(!container) return;
 
  let html = container.innerHTML;
 
  characters.forEach(c => {
 
-  let names = [c.zh, c.vi, c.pinyin];
+  const names = [c.zh, c.vi, c.pinyin];
 
   names.forEach(name => {
 
    if(!name) return;
 
-   let info =
+   const safeName = escapeRegExp(name);
+
+   const info =
 `${c.vi}
 Zh: ${c.zh}
 Pinyin: ${c.pinyin}`;
 
-   let regex = new RegExp(name, "gi");
+   const regex = new RegExp(`\\b${safeName}\\b`, "gi");
 
    html = html.replace(
     regex,
-    `<span class="highlight-name" data-info="${info}">${name}</span>`
+    `<span class="highlight-name" data-info="${info}">$&</span>`
    );
 
   });
@@ -45,39 +59,55 @@ Pinyin: ${c.pinyin}`;
  container.innerHTML = html;
 }
 
-/* mở / đóng tìm kiếm */
+/* ==============================
+   MỞ / ĐÓNG SEARCH BOX
+============================== */
 
 const btn = document.getElementById("searchBtn");
 const box = document.getElementById("searchBox");
 
-if(btn){
+if(btn && box){
+
  btn.onclick = () => {
-  box.style.display =
-  box.style.display === "none" ? "block" : "none";
+
+  if(box.style.display === "block"){
+   box.style.display = "none";
+  }else{
+   box.style.display = "block";
+  }
+
  };
+
 }
 
-/* tìm nhân vật */
+/* ==============================
+   TÌM NHÂN VẬT
+============================== */
 
-const input = document.getElementById("searchInput");
-const results = document.getElementById("results");
+const input = document.getElementById("characterSearchInput");
+const results = document.getElementById("characterResults");
 
-if(input){
+if(input && results){
 
  input.addEventListener("input", function(){
 
-  const key = this.value.toLowerCase();
+  const key = this.value.toLowerCase().trim();
+
+  if(!key){
+   results.innerHTML = "";
+   return;
+  }
 
   const found = characters.filter(c =>
 
-   c.zh.toLowerCase().includes(key) ||
-   c.vi.toLowerCase().includes(key) ||
-   c.pinyin.toLowerCase().includes(key)
+   (c.zh && c.zh.toLowerCase().includes(key)) ||
+   (c.vi && c.vi.toLowerCase().includes(key)) ||
+   (c.pinyin && c.pinyin.toLowerCase().includes(key))
 
   );
 
   results.innerHTML = found.map(c => `
-   <div>
+   <div class="character-item">
     <b>${c.vi}</b><br>
     Zh: ${c.zh}<br>
     Pinyin: ${c.pinyin}
