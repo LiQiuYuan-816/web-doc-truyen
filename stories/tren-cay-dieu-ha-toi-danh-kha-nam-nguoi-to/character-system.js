@@ -11,80 +11,71 @@ function escapeRegExp(string){
  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-function highlightNames(){
-
- const container = document.querySelector(".chapter-content");
- if(!container) return;
-
- let html = container.innerHTML;
+function getAllNames(){
+ const list = [];
 
  characters.forEach(c => {
 
-  const names = [c.zh, c.vi, c.pinyin];
+  [c.zh, c.vi, c.pinyin].forEach(field => {
 
-  names.forEach(name => {
+   if(!field) return;
 
-   if(!name) return;
-
-   const safeName = escapeRegExp(name);
-
-   const info =
-`${c.vi}
+   field.split(",").forEach(n=>{
+    const name = n.trim();
+    if(name) list.push({
+      name,
+      info:`${c.vi}
 Zh: ${c.zh}
-Pinyin: ${c.pinyin}`;
-
-   const regex = new RegExp(safeName,"gi");
-
-   html = html.replace(
-    regex,
-    `<span class="highlight-name" data-info="${info}">$&</span>`
-   );
+Pinyin: ${c.pinyin}`
+    });
+   });
 
   });
 
  });
 
- container.innerHTML = html;
+ return list;
 }
 
-const btn = document.getElementById("searchBtn");
-const box = document.getElementById("searchBox");
+function highlightNames(){
 
-if(btn && box){
- btn.onclick = () => {
-  box.style.display =
-   box.style.display === "block" ? "none" : "block";
- };
-}
+ const container = document.querySelector(".chapter-content");
+ if(!container) return;
 
-const input = document.getElementById("characterSearchInput");
-const results = document.getElementById("characterResults");
+ const names = getAllNames();
 
-if(input && results){
+ const walker = document.createTreeWalker(
+  container,
+  NodeFilter.SHOW_TEXT,
+  null,
+  false
+ );
 
- input.addEventListener("input", function(){
+ let node;
 
-  const key = this.value.toLowerCase().trim();
+ while(node = walker.nextNode()){
 
-  if(!key){
-   results.innerHTML = "";
-   return;
-  }
+  let text = node.nodeValue;
 
-  const found = characters.filter(c =>
-   (c.zh && c.zh.toLowerCase().includes(key)) ||
-   (c.vi && c.vi.toLowerCase().includes(key)) ||
-   (c.pinyin && c.pinyin.toLowerCase().includes(key))
-  );
+  names.forEach(n=>{
 
-  results.innerHTML = found.map(c => `
-   <div class="character-item">
-    <b>${c.vi}</b><br>
-    Zh: ${c.zh}<br>
-    Pinyin: ${c.pinyin}
-   </div>
-  `).join("");
+   const regex = new RegExp(escapeRegExp(n.name),"gi");
 
- });
+   if(regex.test(text)){
+
+    const spanHTML = text.replace(
+      regex,
+      `<span class="highlight-name" data-info="${n.info}">$&</span>`
+    );
+
+    const temp = document.createElement("span");
+    temp.innerHTML = spanHTML;
+
+    node.replaceWith(temp);
+   }
+
+  });
+
+ }
 
 }
