@@ -576,5 +576,62 @@ color: #55615b;
 .page-chapter .fixed-top.shrink .top-right {
   flex-shrink: 0;
 }
+/* icon tìm kiếm */
 
+#searchBtn{
+ position: fixed;
+ bottom: 30px;
+ right: 30px;
+ font-size: 22px;
+ padding: 10px 14px;
+ border-radius: 50%;
+ cursor: pointer;
+ z-index: 999;
+}
+
+/* hộp tìm kiếm */
+
+#searchBox{
+ position: fixed;
+ bottom: 80px;
+ right: 30px;
+ width: 250px;
+ background: white;
+ border: 1px solid #ccc;
+ padding: 10px;
+ display: none;
+ z-index: 999;
+}
+
+/* highlight tên */
+
+.highlight-name{
+ background: #fff3a0;
+ padding: 2px 4px;
+ border-radius: 4px;
+ cursor: pointer;
+ position: relative;
+}
+
+/* tooltip */
+
+.highlight-name::after{
+ content: attr(data-info);
+ position: absolute;
+ bottom: 120%;
+ left: 0;
+ background: #222;
+ color: white;
+ padding: 6px 8px;
+ border-radius: 6px;
+ font-size: 13px;
+ white-space: pre-line;
+ opacity: 0;
+ pointer-events: none;
+ transition: 0.2s;
+}
+
+.highlight-name:hover::after{
+ opacity: 1;
+}
 
