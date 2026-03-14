@@ -1,9 +1,5 @@
 let characters = [];
 
-/* ==============================
-   LOAD DATA NHÂN VẬT
-============================== */
-
 fetch("../../../thu-vien-ten/name-data.json")
 .then(res => res.json())
 .then(data => {
@@ -11,17 +7,9 @@ fetch("../../../thu-vien-ten/name-data.json")
  highlightNames();
 });
 
-/* ==============================
-   ESCAPE REGEX
-============================== */
-
 function escapeRegExp(string){
  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
-
-/* ==============================
-   HIGHLIGHT TÊN TRONG CHƯƠNG
-============================== */
 
 function highlightNames(){
 
@@ -45,7 +33,7 @@ function highlightNames(){
 Zh: ${c.zh}
 Pinyin: ${c.pinyin}`;
 
-   const regex = new RegExp(`\\b${safeName}\\b`, "gi");
+   const regex = new RegExp(safeName,"gi");
 
    html = html.replace(
     regex,
@@ -59,30 +47,15 @@ Pinyin: ${c.pinyin}`;
  container.innerHTML = html;
 }
 
-/* ==============================
-   MỞ / ĐÓNG SEARCH BOX
-============================== */
-
 const btn = document.getElementById("searchBtn");
 const box = document.getElementById("searchBox");
 
 if(btn && box){
-
  btn.onclick = () => {
-
-  if(box.style.display === "block"){
-   box.style.display = "none";
-  }else{
-   box.style.display = "block";
-  }
-
+  box.style.display =
+   box.style.display === "block" ? "none" : "block";
  };
-
 }
-
-/* ==============================
-   TÌM NHÂN VẬT
-============================== */
 
 const input = document.getElementById("characterSearchInput");
 const results = document.getElementById("characterResults");
@@ -99,11 +72,9 @@ if(input && results){
   }
 
   const found = characters.filter(c =>
-
    (c.zh && c.zh.toLowerCase().includes(key)) ||
    (c.vi && c.vi.toLowerCase().includes(key)) ||
    (c.pinyin && c.pinyin.toLowerCase().includes(key))
-
   );
 
   results.innerHTML = found.map(c => `
