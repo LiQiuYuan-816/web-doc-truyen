@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 74</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Thời không tin nhắn
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 74</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong73.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong75.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“A ——” 1983 năm 6 nguyệt vãn, một đạo thê lương kêu thảm thiết trước nay hà thôn một nhà nông trong viện truyền ra.</p>
+<p>Tới hà thôn tên tuy mang theo một cái ‘ hà ’ tự, nhưng thôn này tọa lạc với vân Tứ Xuyên cùng Thương Sơn tỉnh giao giới, tứ phía núi vây quanh, từ bên ngoài đến thôn chỉ có một cái cong cong chiết chiết lên đường, người ngoài đến nơi đây chỉ có thể tới trước phụ cận trong huyện, sau đó tìm cái xe lừa hoặc là xe bò sờ soạng đi lên, nếu lần đầu tiên tới rất có khả năng bị lạc phương hướng, nơi này chỉ có người địa phương mới biết được như thế nào ra ra vào vào.</p>
+<p>Tới hà thôn cộng 36 hộ, đại gia phòng ở giống nhau kiến ở chân núi hoặc là tương đối bình thản giữa sườn núi, các gia các hộ không dựa gần, bất quá hướng lên trên số tam đại đều có thiên ti vạn lũ quan hệ, thôn dân gian phi thường đoàn kết.</p>
+<p>“Chạy chạy chạy! Lão tử tìm ngươi một ngày, có bản lĩnh lại chạy a!” Lúc này nông viện nam sườn một chỗ chuồng bò, tôn kiến thịnh vai trần, đối trên mặt đất nữ nhân tay đấm chân đá. Đây là một cái 25 tả hữu gầy yếu nữ nhân, nữ nhân thực bạch, chỉ mặc một cái bạch đế lam hoa áo ba lỗ, nhân bị dùng sức đá vào trên mặt đất, cánh tay cùng trên đùi đều là một ít cứt trâu cùng đá hoa thương miệng vết thương.</p>
+<p>“Tào nima! Dưỡng không thân bạch nhãn lang!” Cùng nữ tử trắng nõn gầy yếu so sánh với, tôn kiến thịnh năm nay 47 tuổi, thân cao 1 mét 65, khô gầy, cả người thoạt nhìn nhăn dúm dó, so thực tế tuổi tác già rồi năm tuổi.</p>
+<p>“Đồ đê tiện!” Nhân mão đủ sức lực đánh người, lúc này tôn kiến thịnh ngực kịch liệt phập phồng, cả người mang theo một cổ bạo ngược.</p>
+<p>“Ta không dám, cũng không dám nữa ——” nữ nhân nguyên bản yên lặng bị đánh, bị đánh đau, cuối cùng xin tha.</p>
+<p>“Không dám? Ngươi con mẹ nó nói bao nhiêu lần, ta xem ngươi còn dám!” Tôn kiến thịnh nắm khởi đối phương tóc, trực tiếp tạp hướng bên cạnh đầu gỗ cọc thượng.</p>
+<p>Nữ nhân trên trán nháy mắt mạo huyết, thê lương tiếng gào vang vọng bầu trời đêm.</p>
+<p>“Mụ mụ sẽ sẽ không có việc gì?” Nhà chính, Tôn Tiểu Đào một bên ở bàn ăn trước ăn cơm một bên hướng ra phía ngoài mặt nhìn xung quanh hỏi.</p>
+<p>“Sẽ không, mụ mụ ngươi không nghe lời, ba ba là tại giáo huấn mụ mụ.” Lý trường quyên là cái 70 tuổi nông thôn lão nhân, nàng rất là khinh thường nói.</p>
+<p>“Mụ mụ vì cái gì không nghe lời?” Tôn Tiểu Đào năm nay 6 tuổi, từ ký sự khởi mụ mụ liền vẫn luôn ra bên ngoài chạy, mỗi lần chạy trốn bị trảo sau, ba ba đều sẽ đánh mụ mụ.</p>
+<p>“Mẹ ngươi coi trọng bên ngoài dã nam nhân, không nghĩ muốn ba ba cùng nãi nãi, cũng không nghĩ muốn ngươi!”</p>
+<p>Lý trường quyên ngữ khí là ngăn không được chán ghét, nàng sau khi nói xong sờ sờ Tôn Tiểu Đào đầu “Nhà chúng ta chỉ có ba ba cùng nãi nãi ái ngươi, mụ mụ không yêu ngươi, mụ mụ lão tưởng đem chúng ta ném chạy ra đi, như vậy là không cần đối. Về sau nếu là nhìn thấy mụ mụ chạy trốn, muốn trước tiên nói cho ba ba nãi nãi, biết không?”</p>
+<p>“Đã biết……” Tôn Tiểu Đào tuy nói ‘ biết ’, nhưng vẫn là không biết Lý trường quyên trong miệng dã nam nhân là ai.</p>
+<p>Nửa giờ sau, bên ngoài tiếng kêu thảm thiết đình chỉ, tôn kiến thịnh xoa hãn vào nhà.</p>
+<p>“Thế nào?” Lý trường quyên cho hắn đổ chén bắp hồ hỏi.</p>
+<p>“Khóa lại, phỏng chừng có thể sống yên ổn mấy ngày.” Tôn kiến thịnh cầm lấy chén một hơi uống lên nửa chén, tiếp theo sờ sờ Tôn Tiểu Đào đầu “Còn đau đầu sao?”</p>
+<p>“Không đau.” Tôn Tiểu Đào mấy ngày nay cảm lạnh phát sốt, tôn kiến thịnh hôm nay sáng sớm đi trong huyện cho hắn lấy dược, bạch thư tĩnh ở trong nhà chiếu cố Lý trường quyên, có thể là trước tiên kế hoạch hảo, nàng chờ tôn kiến thịnh rời đi trong chốc lát sau liền ném xuống Lý trường quyên cùng Tôn Tiểu Đào chạy. Chạy đến nửa đường bị hạ điền hàng xóm phát hiện, bằng không thật làm nàng chạy đến trong huyện mặt rốt cuộc tìm không thấy.</p>
+<p>“Muốn xem khẩn mẹ ngươi, mẹ ngươi nếu là chạy, ngươi liền không còn có mụ mụ!” Tôn kiến thịnh cùng Lý trường quyên giống nhau dặn dò nói.</p>
+<p>“Ta đã biết……” Tôn Tiểu Đào cái hiểu cái không đáp ứng nói.</p>
+<p>Tôn Tiểu Đào cùng Lý trường quyên một cái phòng, tôn kiến thịnh bạch thư tĩnh một cái phòng, có khi bạch thư tĩnh bị nhốt ở chuồng bò, tôn kiến thịnh chính mình nhất nhất cá nhân ngủ. Rạng sáng 1 giờ, Tôn Tiểu Đào chờ tất cả mọi người ngủ sau, trộm từ nhà chính cầm một cái bánh bột bắp, sau đó lặng lẽ sờ đến chuồng bò.</p>
+<p>Chuồng bò rất lớn, bên trong có một đầu hai mươi tuổi lão ngưu, bình thường lão ngưu buộc ở chuồng bò bên trái, bạch thư tĩnh chọc tôn kiến thịnh không vui sau sẽ buộc bên phải biên, hai bên ai cũng không ai ai.</p>
+<p>Chuồng bò bên trong trừ bỏ lão ngưu còn có một ít cỏ khô cùng cứt trâu, mùa hè quá nhiệt sẽ có bay tới bay lui tiểu phi trùng. Tôn Tiểu Đào đi vào chuồng bò khi, đã nghe tới rồi một cổ gay mũi cứt trâu mùi vị, bốn phía có ong ong phi trùng âm.</p>
+<p>Bạch thư tĩnh cái trán miệng vết thương đã đọng lại, nàng nghe được tiếng bước chân, cảnh giác ngồi dậy “Ai?”</p>
+<p>“Mẹ, là ta.” Tôn Tiểu Đào linh hoạt chui vào chuồng bò.</p>
+<p>Bạch thư tĩnh lớn lên cùng tên giống nhau trắng nõn sạch sẽ, nhân bộ dáng phi thường hảo, thoạt nhìn đều không giống trong núi mặt người, nàng nghe được Tôn Tiểu Đào thanh âm sau, đã không có vừa rồi cảnh giác “Tiểu đào a……”</p>
+<p>“Đây là ta cho ngươi lấy bánh ngô.” Tôn Tiểu Đào đem trong lòng ngực bánh ngô đưa cho bạch thư tĩnh.</p>
+<p>“Từ trong phòng bếp lấy?” Lý trường quyên tâm nhãn tiểu, trong nhà mặt ăn đồ vật đều hiểu rõ, nàng nếu là biết chính mình ăn một cái bánh bột bắp, ngày mai một ngày đều sẽ không chịu bỏ qua.</p>
+<p>“Không phải, ta buổi tối ăn cơm trộm tàng.” Tôn Tiểu Đào đôi mắt sáng long lanh nói.</p>
+<p>“Ân……” Bạch thư tĩnh do dự một chút vẫn là ăn.</p>
+<p>Bạch thư tĩnh là người phương bắc, cha mẹ đều là phương bắc một tòa tiểu thành điện tử xưởng công nhân viên chức. Bảy năm trước, nàng một người tới phương nam thăm người thân. Ở trung chuyển ga tàu hỏa khi gặp được một cái lạc đường lão nhân. Nàng năm ấy 18 tuổi, kinh không được lão nhân năn nỉ ỉ ôi, cuối cùng quyết định đưa lão nhân về nhà, ở đi đến một cái hẻm nhỏ khi, bị người từ phía sau gõ một gậy gộc, lúc sau nhiều lần quay vòng bị bán được nơi này.</p>
+<p>Nàng tới rồi sau không ngừng một lần muốn chạy trốn đi ra ngoài, chỉ là nơi này trừ bỏ sơn vẫn là sơn, phụ cận thôn dân cũng đều nhận thức, nàng mỗi lần còn không có chạy rất xa liền sẽ bị trảo trở về, hôm nay là nàng mấy năm nay một cái tương đồng hình ảnh mà thôi.</p>
+<p>“Khụ khụ ——” bạch thư tĩnh tâm tưởng sự, ăn quá cấp, không tự giác ho khan lên.</p>
+<p>“Từ từ!” Tôn Tiểu Đào bước chân ngắn nhỏ chạy đi ra ngoài, chỉ chốc lát sau dùng chén tiếp chén nước lạnh trở về.</p>
+<p>“Cảm ơn……” Bạch thư tĩnh liền chén mồm to uống lên lên, chờ uống không sai biệt lắm, thần sắc phức tạp nhìn về phía Tôn Tiểu Đào.</p>
+<p>Nàng bị bán tới tháng thứ ba liền mang thai, nàng mới vừa mang thai khi căn bản không nghĩ muốn hài tử, thậm chí không ngừng một lần muốn đánh rớt.</p>
+<p>“Ngươi nếu là đem lão tử loại đánh, lão tử liền tìm toàn thôn nam nhân luân ngươi, lại đem ngươi bán được trong thị trấn mỗi ngày ai thảo! Ngươi đừng nghĩ chạy trốn, ta ở bán phía trước sẽ trước đem ngươi độc ách, lại đem ngươi gân tay gân chân đều đánh gãy!” Tôn kiến thịnh mua tức phụ chính là vì nối dõi tông đường, hắn biết bạch thư tĩnh ý đồ sau chính là một trận đòn hiểm.</p>
+<p>Bạch thư tĩnh biết tôn kiến thịnh nói được thì làm được, nàng không muốn chết, cuối cùng đem hài tử sinh xuống dưới. Mới ra ở cữ, tôn kiến thịnh liền muốn nhị thai, bạch thư tĩnh thời gian mang thai bị đánh tàn nhẫn, vô pháp tái sinh, tôn gia lại không có tiền mua cái thứ hai tức phụ, cuối cùng tôn kiến thịnh cùng Lý trường quyên chỉ có thể nhận mệnh.</p>
+<p>Tôn kiến thịnh cùng Lý trường quyên đối Tôn Tiểu Đào phi thường hảo, bạch thư tĩnh còn lại là bảo đảm đối phương có thể tồn tại là được, nàng vô pháp nhi ái một cái bị quải hậu sinh hạ hài tử.</p>
+<p>“Ngươi ba đâu?” Lúc này bạch thư tĩnh uống xong sau hỏi.</p>
+<p>“Ngủ rồi……” Tôn Tiểu Đào so cái ‘ hư ’ thủ thế.</p>
+<p>“Vì cái gì cho ta đưa bánh bột bắp?” Bạch thư tĩnh hỏi.</p>
+<p>“Ngươi là ta mụ mụ a!” Tôn Tiểu Đào mở to hai mắt cười nói, hắn bị tôn kiến thịnh dưỡng trắng trẻo mập mạp, bởi vậy cười rộ lên phi thường đáng yêu.</p>
+<p>Bạch thư tĩnh bị đóng bảy ngày, bảy ngày sau, tôn kiến thịnh cởi bỏ trên người nàng dây xích.</p>
+<p>“Còn chạy không chạy?” Tôn kiến thịnh bóp bạch thư tĩnh mặt, hung tợn hỏi.</p>
+<p>“Không chạy, không bao giờ chạy!” Bạch thư tĩnh nỗ lực hứa hẹn.</p>
+<p>“Lại chạy liền đem ngươi ném lồng heo tử.” Tôn kiến thịnh phi thường vừa lòng.</p>
+<p>“1 cộng 1 bằng 2, nhị cộng 2 bằng bốn……” Năm sau tám tháng, Tôn Tiểu Đào ở trong sân viết viết vẽ vẽ, bạch thư tĩnh ở một bên lượng quần áo, nàng nghe Tôn Tiểu Đào trong miệng lẩm nhẩm lầm nhầm, tò mò hỏi “Tiểu đào, ai dạy ngươi toán học?”</p>
+<p>“Không ai dạy ta, ta nghe Triệu Phi bằng bọn họ niệm!” Triệu Phi bằng là cùng thôn hài tử, so Tôn Tiểu Đào lớn hơn hai tuổi, ở trong thị trấn đọc tiểu học.</p>
+<p>“Ngươi có thích hay không toán học?” Bạch thư tĩnh đi tới hỏi —— nàng bị trói khi vừa mới cao trung tốt nghiệp, này ở cái này niên đại thuộc về có học vấn.</p>
+<p>“Thích!”</p>
+<p>“Vì cái gì thích?”</p>
+<p>“Ta nghe Triệu Phi bằng bọn họ nói, toán học hảo về sau có thể tránh đồng tiền lớn……”</p>
+<p>Lúc này mặt trời chiều ngả về tây, bạch thư tĩnh đem một cái hồng nhạt khăn trải giường đáp hảo, triều Tôn Tiểu Đào bên này cười cười “Kia ta trong chốc lát vội xong rồi giáo ngươi.”</p>
+<p>“Hảo!” Tôn Tiểu Đào có chút xem ngây người, hắn trước kia liền cảm giác chính mình mụ mụ lớn lên đẹp, hiện tại đối phương cười rộ lên càng đẹp mắt.</p>
+<p>Năm trước kia sự kiện sau, bạch thư tĩnh như là bị đánh sợ, không sảo không nháo, có khi tôn kiến thịnh cùng Lý trường quyên cố ý bán ra sơ hở, nàng cũng không hướng bên ngoài chạy, phảng phất thật sự nhận mệnh.</p>
+<p>Chín tháng, Tôn Tiểu Đào chính thức đi học, trong thôn mặt không có tiểu học, bọn họ đi học muốn đi 3 km bên ngoài cách vách thôn, nhân bọn học sinh thiếu, có khi rất nhiều năm nhất năm 2 bọn học sinh hỗn đi học.</p>
+<p>Tôn Tiểu Đào thông minh, thường xuyên ở trong ban mặt khảo tiền tam danh. Hắn mỗi ngày 6 giờ đi trên đường núi học, đi học lúc ấy mang theo trước một ngày buổi tối làm tốt dưa muối cùng bánh bột bắp, giữa trưa đoái thủy ăn, buổi tối lại đi đường núi trở về.</p>
+<p>Hắn lần đầu tiên một mình đi đường núi khi mới bảy tuổi, này ở ba mươi năm sau rất khó tưởng tượng, bất quá lấy hiện tại cái này niên đại phi thường bình thường.</p>
+<p>Hắn từ năm nhất niệm tới rồi lớp 3, này ba năm trừ bỏ thượng hảo hảo học tập, hắn cũng biết rất nhiều chuyện, tỷ như bạch thư tĩnh là ba ba nãi nãi trước kia mua lại đây, ở bọn họ nơi này, mọi người đều là từ bên ngoài mua tức phụ.</p>
+<p>“Mụ mụ ngươi còn chạy sao?” 1987 năm 12 tháng, Trịnh quang huy một bên ăn cơm đối Tôn Tiểu Đào tò mò hỏi thăm.</p>
+<p>“Ngươi như thế nào biết ta mụ mụ muốn chạy?” Tôn Tiểu Đào ăn bánh bột bắp hỏi.</p>
+<p>“Mẹ ngươi lần đầu tiên chạy thời điểm là ta ba cùng ngươi ba cùng nhau trảo trở về, ta phía trước nghe ta ba cùng ta mẹ nói.”</p>
+<p>“…… Nga.” Tôn Tiểu Đào không nghĩ tới Trịnh quang huy cũng biết chuyện này.</p>
+<p>“Chúng ta nhà ai mua tức phụ, ai tức phụ muốn chạy, này đều phi thường bình thường, ta mẹ cũng là ta ba mua tới, nghe ta ba giảng, ta mẹ liền không chạy qua, phía trước mang tới trong huyện mặt làm nàng một người ngốc, ta mẹ cũng không chạy.”</p>
+<p>“Mẹ ngươi vì cái gì không chạy?” Tôn Tiểu Đào tới hứng thú hỏi.</p>
+<p>“Ta mẹ sinh ta ca cùng ta a, nàng nếu là chạy cũng không chỗ ngồi đi, hơn nữa có ai không cần hài tử.” Trịnh quang huy nói xong, nhớ tới phía trước vấn đề “Mẹ ngươi hiện tại còn chạy sao?”</p>
+<p>“Không chạy, mấy năm nay cũng chưa chạy qua.” Bạch thư tĩnh không chỉ có không chạy, tương phản đối hắn cùng tôn kiến thịnh phi thường hảo, tựa như mặt khác bị bán được nơi này nữ nhân giống nhau.</p>
+<p>Buổi tối 7 giờ, Tôn Tiểu Đào vuốt hắc về đến nhà.</p>
+<p>“Tiểu đào đã trở lại?” Bạch thư tĩnh đang ở trong phòng bếp nấu cơm, nhìn thấy Tôn Tiểu Đào sau ló đầu ra tiếp đón.</p>
+<p>“Đã trở lại!” Tôn Tiểu Đào cười về phòng làm bài tập.</p>
+<p>Lý trường quyên ở trong phòng điểm dầu hoả đèn đóng đế giày —— hiện tại mỗi nhà đã mở điện, bất quá Lý trường quyên luyến tiếc điện phí, giống nhau có thể điểm dầu hoả đèn thời điểm đều là điểm dầu hoả đèn, tôn kiến thịnh năm nay 51, cùng trong thôn những người khác tổ một cái kiến trúc đội, hiện tại ở trong trấn mặt cho người ta xoát tường xây nhà, thu vào so trước kia cao, bọn họ mấy năm nay chỉnh thể sinh hoạt điều kiện bay lên.</p>
+<p>Mười phút sau, đồ ăn làm tốt, bạch thư tĩnh đem đồ ăn bưng ra tới, tiếp theo tiếp đón Lý trường quyên ăn cơm.</p>
+<p>“Ta ba khi nào trở về?” Trên bàn cơm, Tôn Tiểu Đào tò mò hỏi.</p>
+<p>“Hậu thiên, ngươi ba lần này sau khi trở về, năm trước liền không ra đi.” Hôm nay tháng chạp mùng một, bạch thư tĩnh sau khi nói xong hỏi “Ngươi chừng nào thì khảo thí?”</p>
+<p>“Minh sau hai ngày, khảo xong liền có thể phóng nghỉ đông.”</p>
+<p>“Ân, hảo hảo khảo!”</p>
+<p>“Chờ tiểu đào khảo xong rồi, làm kiến thịnh mang theo đi trấn trên mặt mua điểm quần áo, lại mua điểm thịt khô.” Lý trường quyên ở một bên đi theo nói, nàng năm kia sinh tràng bệnh nặng hậu thân tử không trước kia hảo, bởi vậy mấy năm nay đối bạch thư trạng thái tĩnh độ hòa hoãn rất nhiều.</p>
+<p>“Hảo, ta đã trở về nói với hắn nói.” Bạch thư tĩnh cười nói.</p>
+<p>Ngày thứ ba buổi chiều, Tôn Tiểu Đào thi xong sau về nhà.</p>
+<p>“Cho ngươi mua giày, ngươi thử xem thích hợp hay không.” Lúc này tôn kiến thịnh đã về nhà, trong phòng phóng các loại điểm tâm cùng quần áo, trong tay hắn cầm một đôi giày bông, chính ngồi xổm thân mình cấp bạch thư tĩnh xuyên giày.</p>
+<p>“Giống như có chút nhỏ……” Bạch thư tĩnh mặc vào sau trên mặt đất dẫm hai hạ, phát hiện giày làm quá tiểu, còn cần đại nhất hào.</p>
+<p>“Không có việc gì, Cung Tiêu Xã mua, giày nhỏ còn có thể đổi.” Tôn kiến thịnh có chút đáng tiếc thu hồi giày, tính toán quá hai ngày đi trấn trên đổi một đổi.</p>
+<p>“Ba ba, mụ mụ!” Tôn Tiểu Đào vào nhà.</p>
+<p>“Tiểu đào a, tới! Cho ngươi mua mứt vỏ hồng, còn có một khối bánh kem!” Tôn kiến thịnh từ Tôn Tiểu Đào sinh ra khởi liền phi thường cưng chiều hài tử, hắn chờ Tôn Tiểu Đào vào cửa sau trực tiếp đem người bế lên, từ trong túi lấy ra một cái bàn tay đại bánh kem hộp. Đây là một khối làm ơn bơ bánh kem, hiện tại thời tiết lãnh có chút biến ngạnh, bất quá xem khởi phi thường ăn ngon.</p>
+<p>Tôn Tiểu Đào dùng cái muỗng xẻo một khối, đầu tiên là chính mình nếm một ngụm, tiếp theo dùng dao nhỏ cắt thành bốn khối “Cấp, đại gia một người một khối!”</p>
+<p>“Thật ngoan!” Tôn kiến nở rộ tâm xoa xoa Tôn Tiểu Đào đầu, cảm giác chính mình dưỡng cái hảo nhi tử.</p>
+<p>Một cái bàn tay đại bánh kem bị phân thành bốn phân, người một nhà ăn hoà thuận vui vẻ.</p>
+<p>Cơm nước xong sau, tôn kiến thịnh về phòng tử nghỉ ngơi, bạch thư tĩnh ở phòng bếp xoát nồi rửa chén.</p>
+<p>“Ta hôm nay phi thường cao hứng, chúng ta về sau đều có thể như vậy vô cùng cao hứng sao?” Tôn Tiểu Đào đi vào phòng bếp cùng bạch thư tĩnh nói chuyện phiếm.</p>
+<p>“Đương nhiên, chúng ta về sau đều sẽ vô cùng cao hứng.” Bạch thư tĩnh cười nói.</p>
+<p>Hiện tại Tôn Tiểu Đào phóng nghỉ đông, tôn kiến thịnh không cần công tác, ở kế tiếp ba ngày, đại gia cùng nhau tổng vệ sinh, dán câu đối, cả nhà đều ở chờ mong sắp đến Tết Âm Lịch.</p>
+<p>Ba ngày sau, tôn kiến thịnh chuẩn bị mang theo Tôn Tiểu Đào đi trấn trên cắt tóc, đồng thời đem bạch thư tĩnh giày thay đổi.</p>
+<p>“Ta và các ngươi cùng đi đi, bằng không giày không thích hợp, còn phải lại đi một chuyến.” Bạch thư tĩnh rửa rửa tay, tính toán cùng tôn kiến thịnh cùng Tôn Tiểu Đào cùng nhau qua đi.</p>
+<p>“Này……” Tôn kiến thịnh có chút do dự.</p>
+<p>“Hài tử lớn như vậy, ngươi còn sợ ta chạy a?” Bạch thư tĩnh cười nói.</p>
+<p>“Hảo đi.”</p>
+<p>Tôn kiến thịnh đi cùng thôn hàng xóm gia mượn chiếc xe bò, hắn ở phía trước đánh xe, bạch thư tĩnh ôm lấy Tôn Tiểu Đào ở ngồi trên xe, bạch thư tĩnh đôi mắt thượng mông tầng mảnh vải, như vậy có thể bảo đảm nàng lên đường khi sẽ không cố tình ghi nhớ rời đi lộ tuyến.</p>
+<p>“Chờ tới rồi trấn trên phải hảo hảo nghe lời, ngươi nếu là muốn chạy, về sau liền sẽ không như vậy thoải mái.” Tôn kiến thịnh đánh xe trước trịnh trọng nhắc nhở.</p>
+<p>“Ta chạy cái gì chạy, không chạy.” Bạch thư tĩnh nói.</p>
+<p>Bạch thư tĩnh này bốn năm xác thật không có chạy qua, tôn kiến thịnh sau khi nghe xong yên tâm. Ba người buổi sáng 7 giờ xuất phát, chờ đến trấn trên khi vừa mới 9 giờ. Hiện tại 1987 năm, xa xôi tỉnh xa xôi thị trấn cũng không phát đạt, bất quá tới gần ăn tết, trong huyện tuyến đường chính thượng có không ít bán câu đối xuân cùng hạt dưa đậu phộng, nhìn vô cùng náo nhiệt.</p>
+<p>Ba người ở trên phố dạo qua một vòng, tiếp theo đi vào tiệm cắt tóc. Tôn Tiểu Đào ở trên ghế cắt tóc, bạch thư tĩnh ở bên cạnh chờ, ở đây người đến người đi, nàng không có yêu cầu cứu ý đồ, tôn kiến thịnh hoàn toàn yên tâm.</p>
+<p>Giữa trưa, ba người ở ven đường ăn chén mì sợi, tôn kiến thịnh đang chuẩn bị mua chút hàng tết về nhà, lúc này một cái nam tử thấy được hắn ——</p>
+<p>“Kiến thịnh a, nhà của chúng ta ống nước hỏng rồi, đang chuẩn bị tìm người qua đi tu, trong huyện mặt sửa chữa cửa hàng đóng cửa. Ngươi sẽ tu sao? Sửa chữa phí tính nửa ngày công.” Tôn kiến thịnh năm trước vẫn luôn ở trong huyện mặt xây nhà, nơi này rất nhiều người đều nhận thức hắn. Hắn sau khi nghe xong hỏi “Nơi nào hỏng rồi?”</p>
+<p>“Chính là bơm nước trừu không lên, áp lực bơm hỏng rồi……” Nam tử nghiêm túc miêu tả một chút.</p>
+<p>Tôn kiến thịnh cộng lại hạ, cái này thực hảo tu, đại khái nửa giờ sau là có thể vội xong. Hắn do dự sau nhìn về phía bạch thư tĩnh cùng Tôn Tiểu Đào ——</p>
+<p>“Ngươi đi trước vội đi, ta mang theo tiểu đào ở trên phố đi dạo, trong chốc lát còn ở cái này sạp thượng đẳng ngươi.” Bạch thư tĩnh đúng lúc nói.</p>
+<p>“Hảo.” Tôn kiến thịnh ở bên ngoài vẫn luôn là người hiền lành trạng thái, hắn không nghĩ từ bỏ cái này kiếm tiền cơ hội, nói xong ‘ hảo ’ sau nhìn về phía Tôn Tiểu Đào “Ta đi vội trong chốc lát, ngươi xem trọng mẹ ngươi.”</p>
+<p>“Đã biết.” Tôn Tiểu Đào phất phất tay.</p>
+<p>Tôn kiến thịnh rời đi sau, bạch thư tĩnh cùng Tôn Tiểu Đào ở trên phố dạo. Bạch thư tĩnh người phương bắc, nơi này là phương nam vùng núi, nàng ở chỗ này sinh sống mười một năm, nhưng bình thường chỉ cùng tôn kiến thịnh một nhà tiếp xúc, bởi vậy yêu cầu rất lớn sức lực mới có thể nghe rõ dân bản xứ nói cái gì.</p>
+<p>Hai người đi dạo trong chốc lát, bạch thư tĩnh từ trong túi lấy ra 5 mao tiền, phía trước đối diện một cái đồ uống quán “Ngươi đi phía trước mua bình uống, mụ mụ quá mệt mỏi, bất quá đi.”</p>
+<p>Cái này niên đại đồ uống đều là một ít tự chế nước đường, màu sắc rực rỡ phi thường có lực hấp dẫn. Tôn Tiểu Đào nhịn không được dụ hoặc chạy qua đi, đương hắn mua xong hai túi quả táo thủy, lại xoay người khi, bạch thư tĩnh không thấy.</p>
+<p>Bạch thư tĩnh tự Tôn Tiểu Đào đi mua thủy sau liền vẫn luôn chạy, nàng chạy qua thị trấn phố lớn ngõ nhỏ, do dự báo nguy đi báo nguy vẫn là ngồi xe rời đi ——</p>
+<p>Nàng nghĩ tới báo nguy, nhưng nàng đối nơi này trời xa đất lạ, trong thôn năm kia đăng ký hộ khẩu, nàng hộ khẩu lộng tới tôn kiến thịnh trong nhà, nàng lo lắng báo nguy sau sẽ bị tôn kiến thịnh tìm được, nếu là lấy gia đình tranh cãi vì từ bị đưa trở về, nàng liền thật sự không còn có cơ hội.</p>
+<p>Nàng do dự sau, cuối cùng cắn răng một cái, chạy đến địa phương bến xe. Tùy tiện thượng một chuyến xe ——</p>
+<p>“Khi nào đi?” Bạch thư tĩnh run thanh âm hỏi.</p>
+<p>“Ba điểm hai mươi.” Người bán vé nâng hạ mí mắt nói. Hiện tại hai điểm 30, ly khởi hành thời gian còn có 50 phút, bạch thư tĩnh có chút sốt ruột “Nơi này nhanh nhất xe là nào tranh?”</p>
+<p>“Ngươi muốn đi đâu nhi?”</p>
+<p>“Thành phố mặt, hoặc là địa phương khác, càng nhanh càng tốt!”</p>
+<p>“Liền lần này, còn có một chuyến là 4 giờ 10 phút, đến cách vách thâm vân thị.” Người bán vé tính tính nói.</p>
+<p>“Hảo……” Bạch thư tĩnh hỏi thanh chi tiết sau mua vé xe, ngồi vào hàng sau cùng vị trí.</p>
+<p>Hai điểm 40, trên xe đã ngồi một nửa, bạch thư tĩnh điều chỉnh hô hấp, ngực còn ở kịch liệt phập phồng ——</p>
+<p>Nàng vừa rồi chạy trốn khi từng nghĩ tới muốn hay không đi nơi này Cục Công An hoặc là huyện chính phủ báo nguy, chỉ là nghĩ nghĩ liền từ bỏ cái này ý tưởng. Nơi này đối nàng là một cái xa lạ địa phương, nàng không biết báo nguy sau có thể hay không bị đương thành bệnh tâm thần đưa trở về, ổn thỏa khởi kiến vẫn là trốn càng xa càng tốt.</p>
+<p>Tự bị bán được cái này địa phương, nàng không có lúc nào là không nghĩ trở về!</p>
+<p>Hai điểm 50, trên xe chỗ ngồi đã ngồi đầy, có không ít người cầm tiểu ghế gấp ngồi xuống lối đi nhỏ thượng. Bạch thư tĩnh bên cạnh là cái 50 tả hữu trung niên nữ nhân, nữ nhân cầm một cái đại bao tải, bên trong không biết phóng thứ gì. Nàng đem thân mình lùn lùn, giấu ở bao tải mặt sau, hy vọng chịu đựng này nửa giờ sau chạy nhanh rời đi.</p>
+<p>Liền tại đây trái lo phải nghĩ trung, ngoài cửa sổ xe có người vội vàng chạy qua.</p>
+<p>Bạch thư tĩnh tâm chợt phát khẩn —— là tôn kiến thịnh! Nàng dọa không dám hô hấp, thân mình áp càng thấp. Đúng lúc này, xe buýt cửa mở, Tôn Tiểu Đào lên xe.</p>
+<p>“Thúc thúc a di, ta mẹ tìm không thấy, ta tìm hạ ta mẹ……” Cửa phương hướng truyền đến Tôn Tiểu Đào thanh âm, theo sau đường đi một trận sột sột soạt soạt, Tôn Tiểu Đào như là từ trước sau này từng cái xác định chỗ ngồi thượng nhân viên.</p>
+<p>Bạch thư tĩnh đem đầu áp càng thấp, không dám lộn xộn. Làm như qua nửa phút, lại làm như qua thật lâu, nàng bên cạnh nhiều một bóng hình. Cái này thân ảnh tồn tại cảm quá cường, nàng không thể lại trang nhìn không thấy, chỉ có thể hoảng sợ ngẩng đầu.</p>
+<p>Tôn Tiểu Đào năm nay mười tuổi, thân cao đã vượt qua 1 mét bốn, nhân đứng nguyên nhân, ở nhỏ hẹp trong không gian phi thường có cảm giác áp bách, lúc này Tôn Tiểu Đào nhìn bạch thư tĩnh, bạch thư tĩnh nhìn về phía Tôn Tiểu Đào, bốn mắt nhìn nhau.</p>
+<p>“Mụ mụ, ta mua xong đồ uống.” Xe buýt hoàn cảnh phi thường ồn ào, Tôn Tiểu Đào thanh âm dị thường rõ ràng.</p>
+<p>Bạch thư tĩnh lúc này mới chú ý tới, trong tay hắn cầm hai bao quả táo thủy.</p>
+<p>“Ta……” Bạch thư tĩnh giật giật môi, nói không nên lời lời nói.</p>
+<p>“Tiểu đào, tìm được mẹ ngươi không có?” Lúc này ngoài xe truyền đến tôn kiến thịnh thanh âm.</p>
+<p>“Cầu ngươi, cầu xin ngươi……” Bạch thư tĩnh dọa trừng lớn đôi mắt, phản xạ có điều kiện đối Tôn Tiểu Đào xin tha.</p>
+<p>Tôn Tiểu Đào vẫn luôn nhìn bạch thư tĩnh, theo sau bình tĩnh xoay người.</p>
+<p>Bạch thư tĩnh nhẹ nhàng thở ra, liền ở nàng cho rằng tránh được một kiếp khi, nghe được một đạo phảng phất ác mộng thanh âm “Ba, ở chỗ này.”</p>
+<p>Ở kế tiếp nửa giờ, bạch thư tĩnh phảng phất đã trải qua một hồi ác mộng, nàng bị hung tợn kéo xuống xe.</p>
+<p>“Làm sao vậy, phát sinh chuyện gì?” Bốn phía có hành khách tò mò.</p>
+<p>“Ta tức phụ, tinh thần có chút vấn đề.” Tôn kiến thịnh khờ khạo nói.</p>
+<p>“Ta không thành vấn đề! Ta là bị quải tới, cứu cứu ta!” Bạch thư tĩnh ra sức giãy giụa, chỉ là nơi này đều là phụ cận sinh hoạt thôn dân, bọn họ thấy bạch thư tĩnh bộ dáng liền biết đã xảy ra chuyện gì, không có bất luận cái gì can thiệp.</p>
+<p>“Làm sao vậy? Phát sinh chuyện gì?” Có nhân viên công tác chú ý tới bên này.</p>
+<p>“Ta tức phụ, tinh thần có chút vấn đề.” Tôn kiến thịnh lặp lại vừa rồi nói từ.</p>
+<p>“Đi trở về hảo hảo nhìn, đừng làm cho nàng phát bệnh.” Nơi này mà chỗ núi lớn, nhân viên công tác cũng đều là nơi này thôn dân, bọn họ căn bản không nhúng tay những việc này.</p>
+<p>Bạch thư tĩnh bị che miệng trói lại xe bò, nàng trừng mắt, phảng phất không biết chính mình rõ như ban ngày vì cái gì sẽ bị trói về đi.</p>
+<p>“Con mẹ nó ngươi không phải nói không chạy? Còn chạy! Con mẹ nó!” Tôn kiến thịnh lăn lộn một buổi trưa, một bụng khí. Hắn chờ xe bò tới rồi trên núi, xác định bốn bề vắng lặng sau trực tiếp bạch thư tĩnh tay đấm chân đá ——</p>
+<p>Hắn mấy năm nay tuy rằng đánh quá bạch thư tĩnh, nhưng không mấy năm trước như vậy lợi hại, hắn tuổi tác lớn, mấy năm nay là thật sự tưởng an an ổn ổn sinh hoạt. Hiện tại thần mẹ nó nhật tử, đều mười một năm, này tiện nữ nhân còn muốn chạy!</p>
+<p>Tôn kiến thịnh càng nghĩ càng giận, cảm giác chính mình nếu là tới trễ nửa giờ, nói không chừng đối phương thật sự chạy, bởi vậy đánh lên tới không lưu tình chút nào.</p>
+<p>Bạch thư tĩnh bị đánh huyết nhục mơ hồ, mơ mơ màng màng trung, nàng nhìn về phía một bên Tôn Tiểu Đào “Vì cái gì……”</p>
+<p>Nàng trước kia không thích đứa con trai này, nhưng mấy năm nay đối hắn không tồi, vừa rồi chỉ cần đối phương không phát ra tiếng, nàng thật sự có khả năng đào tẩu.</p>
+<p>Bạch thư tĩnh hỏi thanh âm thực nhẹ thực nhẹ, Tôn Tiểu Đào nghe được, hắn bất mãn nhìn về phía đối phương “Ta ba đối với ngươi tốt như vậy, ngươi vì cái gì muốn chạy đâu? Ngươi nếu là giống Trịnh quang huy mụ mụ như vậy, an an ổn ổn lưu lại nơi này thật tốt.”</p>
+<p>Tôn Tiểu Đào trước kia không hiểu bạch thư tĩnh vì cái gì muốn chạy, vì cái gì không giống những người khác mụ mụ như vậy yêu bọn họ. Hắn đi học sau đã biết Bạch thư tĩnh là mua lại đây.</p>
+<p>Trịnh quang huy mụ mụ cùng những người khác mụ mụ đều là mua lại đây, nhưng các nàng đối bọn nhỏ đều thực hảo, các nàng sinh hài tử căn bản không nghĩ chạy. Bạch thư tĩnh cũng sinh chính mình, chính mình thực ngoan, nàng vì cái gì còn chạy?</p>
+<p>Tôn Tiểu Đào thực tức giận, mấy năm nay bạch thư tĩnh đối chính mình thực hảo, nhưng hắn có thể rõ ràng nhận thấy được, rất đúng chính mình hảo so sánh với, nàng càng muốn chạy ra đi. Hắn trước kia tưởng, chỉ cần chính mình tiếp tục ngoan một ít, bạch thư tĩnh nói không chừng liền sẽ cam tâm tình nguyện lưu lại nơi này. Nhưng hôm nay chuyện này cho thấy, bạch thư tĩnh liền cùng ba ba nói như vậy, chính là một con dưỡng không thân bạch nhãn lang!</p>
+<p>Tôn Tiểu Đào tức giận phi thường nhìn về phía bạch thư tĩnh.</p>
+<p>“Thật nên ở ngươi sinh ra thời điểm liền đem ngươi bóp chết……” Bạch thư tĩnh ở trong mắt hắn thấy được hung ác, đó là so tôn kiến thịnh càng thêm ác liệt hung ác. Nàng vừa mới nói xong, Tôn Tiểu Đào trực tiếp giơ tay đánh nàng một bạt tai.</p>
+<p>“Bang ——” cái này cái tát ở yên tĩnh trong núi phi thường vang dội.</p>
+<p>Này đạo cái tát sau, không chỉ có bạch thư tĩnh, ngay cả tôn kiến thịnh cũng sửng sốt một chút.</p>
+<p>“Ba, ngươi nói đúng, giống loại này nữ nhân chỉ có dùng sức đánh nàng mới có thể nghe lời.” Tôn Tiểu Đào bình tĩnh nói.</p>
+<p>Chuyện này sau, bạch thư tĩnh trực tiếp bị khóa một tháng, chờ thả ra khi, nàng móng tay bị rút, hai chân gân chân bị cời chặt đứt. Có thể tiểu phạm vi hoạt động, nhưng đi không được xa địa phương, càng đừng nói chạy ra núi lớn.</p>
+<p>Trải qua việc này sau, bạch thư tĩnh điên rồi. Nàng điên cùng những người khác điên không giống nhau, nàng phần lớn là an an tĩnh tĩnh, có thể làm việc, nhưng sẽ không cười, ngẫu nhiên xem một chút hoa hoa thảo thảo mới có thể lộ ra trước kia tươi cười.</p>
+<p>Nàng cười so trước kia thiên chân, nhưng Tôn Tiểu Đào phi thường bực bội, bởi vì mặc kệ là khi còn nhỏ vẫn là ở chung hài hòa kia bốn năm, bạch thư tĩnh chưa từng có buông tâm phòng đối bọn họ như vậy cười quá.</p>
+<p>Bạch thư tĩnh không phải vẫn luôn điên, có đôi khi sẽ thanh tỉnh, nàng thanh tỉnh sau sẽ dùng ác độc nhất nói mắng bọn họ, nàng tưởng tự sát, nhưng thân thể tàn tật, có Lý trường quyên nhìn, rất khó tự sát thành công.</p>
+<p>Tôn Tiểu Đào thực thích đối bạch thư tĩnh động thủ, hắn thích bạch thư tĩnh ở hắn uy hiếp hạ lộ ra sợ hãi biểu tình, sau lại từ bạch thư tĩnh thanh tỉnh sau động thủ dần dần diễn biến thành đối phương nổi điên khi cũng sẽ động thủ.</p>
+<p>Tôn Tiểu Đào so tôn kiến thịnh càng thích bạo lực, hắn bạo lực làm tôn kiến thịnh cùng Lý trường quyên cảm thấy sợ hãi, bất quá hai người cưng chiều Tôn Tiểu Đào, vẫn luôn là mở một con mắt nhắm một con mắt.</p>
+<p>Tôn Tiểu Đào bạo lực hành vi giằng co chín năm, thẳng đến mười chín tuổi khi năm ấy, hắn dùng tay gắt gao bóp chặt bạch thư tĩnh. Bạch thư tĩnh thống khổ vô pháp hô hấp, hắn cảm giác đối phương cái này biểu tình làm hắn tâm thần sung sướng, bởi vậy véo càng dùng sức, thẳng đến vừa lơ đãng, bạch thư tĩnh đã chết.</p>
+<p>“Đã chết a……” Tôn Tiểu Đào nhìn đối phương thi thể có chút ngây người, không nghĩ tới đối phương như vậy không trải qua đánh.</p>
+<p>“chết…… Đã chết?” Lúc đó Lý trường quyên đã qua đời, tôn kiến thịnh dần dần già đi, hắn nhìn đến bạch thư tĩnh thi thể sau sửng sốt.</p>
+<p>“Đã chết.” Tôn Tiểu Đào trong giọng nói tràn ngập tiếc nuối.</p>
+<p>2 năm sau, tôn kiến thịnh nhân bệnh qua đời, Tôn Tiểu Đào cầm sở hữu tiền rời đi núi lớn. Hắn thích bạo lực, nhưng đối ngoại vẫn luôn là thiện lương khiêm tốn bộ dáng, hắn EQ không tồi, hơn nữa cao trung tốt nghiệp, trằn trọc nhiều thành thị sau cuối cùng đi tới Từ Hồ. Lúc ấy Từ Hồ xưởng thép thông báo tuyển dụng cổng, hắn dựa vào không tồi EQ trở thành một người cổng.</p>
+<p>Tôn Tiểu Đào thực thích chính mình công tác, năm đó sự tình phảng phất hóa thành bụi bặm. Thẳng đến một ngày nào đó, xưởng thép đệ nhị thực đường tới một người tân công nhân ——</p>
+<p>“Ngươi hảo!” Tân công nhân là cái ngốc tử, đối hắn lễ phép cười nói.</p>
+<p>Tôn Tiểu Đào nhìn nàng bộ dáng, đối phương cùng trong trí nhớ bạch thư tĩnh độ cao trùng hợp, những cái đó không bị coi trọng, tràn ngập bạo lực nhật tử ở trong lòng mặt thức tỉnh. Hắn muốn giết người, tựa như năm đó giết chết bạch thư tĩnh giống nhau, đem này đó sẽ cười người toàn bộ giết chết.</p>
+<p>“Ngươi hảo.” Hắn cấp đối phương làm tốt đăng ký, chậm rãi cười nói.</p>
+<p>Tôn Tiểu Đào là cái nghiêm cẩn người, hắn tuy rằng muốn giết La Hiểu Dung, nhưng Từ Hồ là cái có hai mươi vạn dân cư thành thị, giống như vậy tùy tiện giết người là sẽ bị trảo, hắn muốn giết người, nhưng sẽ không đánh bạc chính mình mệnh, bởi vậy ở giết người ý tưởng toát ra tới sau liền hung hăng mà ngăn chặn.</p>
+<p>Chỉ là hắn mỗi ngày đi làm tan tầm đều sẽ nhìn thấy La Hiểu Dung, có đôi khi tuần tra sẽ nhìn thấy, đi ngang qua đệ nhị thực đường hội kiến quá…… La Hiểu Dung tựa như bạch thư tĩnh bóng dáng, nhắc nhở chính hắn giết qua người, nhắc nhở hắn là một cái không bị mẫu thân chờ mong mà sinh người. Cuối cùng, hắn quyết định thực hành chính mình giết người kế hoạch.</p>
+<p>Hắn kế hoạch phi thường chu đáo 12 tháng mười bảy hào, xưởng thép hoạt động lễ mừng, hắn sấn hoạt động lễ mừng trong lúc đem La Hiểu Dung lừa đến đệ nhị nhà xưởng, hoặc là đánh vựng sau chính mình khiêng qua đi. Hắn nghiên cứu quá phụ cận theo dõi, chỉ cần theo kế hoạch là sẽ không bị phát hiện, hắn giết La Hiểu Dung sau liền đem gây án công cụ ném thứ 6 nồi hơi phòng ——</p>
+<p>Cái này nồi hơi phòng có theo dõi góc chết, hắn thường xuyên tới nồi hơi phòng đánh bài Poker, đối nơi này hoàn cảnh bố trí phi thường quen thuộc, hơn nữa lễ mừng trong lúc, hắn có cũng đủ nắm chắc đem đồ vật ném nồi hơi trong phòng, đến lúc đó hủy thi diệt tích không có bất luận kẻ nào phát hiện, trừ bỏ nồi hơi phòng, hắn còn có thể đem đồ vật ném tới chất thải công nghiệp xử lý trong phòng, tóm lại xưởng thép quá lớn, nơi này có rất nhiều có thể xử lý hung khí địa phương.</p>
+<p>Tôn Tiểu Đào càng nghĩ càng hưng phấn, đồng thời cũng dựa theo kế hoạch tiến hành.</p>
+<p>12 tháng mười bảy, xưởng thép lễ mừng cứ theo lẽ thường tiến hành, hắn trước xem theo dõi xác định La Hiểu Dung tung tích, tiếp theo xác định đến đệ nhị nhà xưởng các đoạn đường, sau đó mặc vào áo mưa ra cửa, lừa gạt La Hiểu Dung, đem nàng mang tới không người đường nhỏ khi chuẩn bị động thủ……</p>
+<p>Liền ở hắn chuẩn bị động thủ khi, một hàng y phục thường cảnh sát vọt ra.</p>
+<p>“Cảnh sát!” Cảnh sát nhanh chóng đem hắn chế phục, đồng thời khảo thượng thủ khảo.</p>
+<p>Tôn Tiểu Đào ngốc, không biết các cảnh sát là như thế nào phát hiện.</p>
+<p>2005 năm tháng 5 mười hào, Tôn Tiểu Đào giết hại bạch thư tĩnh án tử bị tra xét ra tới, nhân phạm quá giết người án cùng lần thứ hai giết người chưa toại, hắn bị tuyên án ở tù chung thân, không có hoãn thi hành hình phạt khả năng.</p>
+<p>Hắn bị phán xử ở tù chung thân sau, mỗi đêm đều sẽ làm một cái phi thường quái dị mộng. Trong mộng, 2004 năm ngày 21 tháng 10 vãn, hắn ở xưởng thép trực ban, ngoài ý muốn phát hiện kiến trúc đội bên kia có động tĩnh, hắn đánh đèn pin qua đi, phát hiện Triệu phương phương đang ở dùng kéo cắt một kiện áo mưa, bên cạnh còn có một cái phi thường tiểu xảo cây búa.</p>
+<p>Tôn Tiểu Đào gặp qua Triệu phương phương, nàng là kiến trúc đội viên công, một cái phi thường trầm mặc có sức lực nữ nhân.</p>
+<p>Tôn Tiểu Đào giết qua người, bởi vậy đối Triệu phương phương hành động cảm thấy phi thường kỳ quái, có một loại đồng loại người cảm giác……</p>
+<p>Hai ngày sau, hắn thông qua báo chí biết được, có một người cao trung nữ sinh ở bên hồ về nhà lúc ấy thiếu chút nữa ngộ hại, lúc ấy hiềm nghi người ăn mặc kiện áo mưa, gây án công cụ là đem cây búa, cảnh sát nhắc nhở thị dân nhóm chú ý an toàn.</p>
+<p>Tôn Tiểu Đào nhìn đến báo chí, lập tức đã biết hiềm nghi người là ai. Vào lúc ban đêm, hắn chờ kiến trúc đội tất cả đều tan tầm sau, trộm tìm được rồi Triệu phương phương.</p>
+<p>“Có việc?” Triệu phương phương cảnh giác nhìn về phía hắn.</p>
+<p>“Ta nhìn đến báo chí.” Tôn Tiểu Đào nói.</p>
+<p>Triệu phương phương gắt gao nhìn chằm chằm hắn —— tự bị Tôn Tiểu Đào nhìn đến chính mình cắt áo mưa sau, nàng liền vẫn luôn lo lắng cho mình sự tình bại lộ, nàng trong lúc này từng nghĩ tới muốn hay không giết Tôn Tiểu Đào, nhưng vẫn luôn không tìm được cơ hội, không nghĩ tới vẫn là bại lộ.</p>
+<p>“Ta không biết ngươi nói cái gì.” Triệu phương phương thượng vàng hạ cám nghĩ, nhưng trên mặt chút nào không hiện.</p>
+<p>“Ta không phải cử báo ngươi, là cảm giác ngươi một người động thủ quá nguy hiểm.” Tôn Tiểu Đào ý bảo đối phương không cần lo lắng, tiếp theo gằn từng chữ một hỏi “Muốn hợp tác sao?”</p>
+<p>Hai bên thử sau chính thức hợp tác, Tôn Tiểu Đào biết Triệu phương phương tên thật Triệu Phương Lệ, trước kia giết qua người. Này không quan hệ, hắn cũng giết hơn người, chỉ là không cùng Triệu Phương Lệ nói mà thôi.</p>
+<p>Hai người hợp tác sau sự tình phi thường thuận lợi, cuối cùng đối phương giúp chính mình trói lại La Hiểu Dung, hắn phụ trách hành hung, La Hiểu Dung đã chết. Hai người hành hung quá trình là phi thường an toàn, ở La Hiểu Dung chết phía trước ngày nọ, hắn trực ban khi gặp được con ma men Quách Thành Xuân, lúc ấy đối phương hận đời, cảm giác tất cả mọi người hẳn là chết.</p>
+<p>Hắn nghĩ đến Triệu Phương Lệ ở bổn thị đệ nhất khởi án kiện, đó là một cái cao trung nữ sinh. Bởi vậy hắn lời trong lời ngoài tất cả đều là đối giết người hung thủ sùng bái —— hắn nói thời điểm không nghĩ tới Quách Thành Xuân sẽ làm cái gì, không nghĩ tới đối phương làm việc không mang theo đầu óc, thật sự chạy tới giết người. Bất quá Quách Thành Xuân vận khí tốt, không bị cảnh sát phát hiện, hắn phạm vụ án này còn có thể nghe nhìn lẫn lộn.</p>
+<p>Tôn Tiểu Đào rất vừa lòng, cũng có một loại xúi giục giết người cảm giác thành tựu.</p>
+<p>Trong mộng La Hiểu Dung sau khi chết, hắn không có thu tay lại, tương phản phối hợp Triệu Phương Lệ giết càng nhiều người. Giống nhau đều là Triệu Phương Lệ động thủ, hắn giúp đỡ bố trí cùng bài tra hoàn cảnh, loại này giết người làm hắn cảm giác được phi thường đại kích thích.</p>
+<p>Giết người trong quá trình, Triệu Phương Lệ cũng dần dần biểu hiện ra đối chính mình hảo cảm.</p>
+<p>Tôn Tiểu Đào cảm giác phi thường buồn cười, hắn sao có thể thích một cái giết người phạm? Hơn nữa Triệu Phương Lệ lớn lên một chút cũng không xinh đẹp.</p>
+<p>Triệu Phương Lệ càng ngày càng cực đoan, trùng hợp hắn lúc này gặp được một cái không tồi nữ hài tử. Hắn muốn nhận tay, bởi vậy lừa gạt Triệu Phương Lệ từ chức, cùng nàng nói cùng nhau tư bôn. Chờ hai người tách ra xe lửa cùng thời gian đến một cái xa lạ thành thị khi.</p>
+<p>Nào đó vùng hoang vu dã ngoại đêm khuya, hắn đem Triệu Phương Lệ giết. Triệu Phương Lệ là cái không hộ khẩu, cho dù bị người phát hiện thi thể cũng điều tra không ra cái gì manh mối. Sự thật cùng hắn tưởng giống nhau, hắn phạm án một tháng sau, hết thảy như thường.</p>
+<p>Đến tận đây, bạch thư tĩnh, La Hiểu Dung, Từ Hồ liên hoàn giết người án đều thành qua đi thức, hắn thành một người bình thường.</p>
+<p>Đây là hắn trận đầu mộng, ở về sau trong mộng, hắn nhìn đến Vương Gia Tuệ cùng La Hiểu Dung tử vong thời gian đều có biến hóa, bất quá chỉnh thể ở hắn cùng Triệu Phương Lệ khả khống phạm vi nội.</p>
+<p>Thẳng đến thứ 7 tràng mộng —— thứ 7 tràng trong mộng, Quách Thành Xuân phạm án khi bị bắt, hắn tháng hào hôm nay ở theo dõi nhìn đến Lâm Vụ dẫn người trước tiên mai phục, đây là hắn cùng Triệu Phương Lệ thương lượng tốt giết người thời gian, Lâm Vụ vì cái gì sẽ trước tiên mai phục?</p>
+<p>Hắn biết Lâm Vụ, La Hiểu Dung nhi tử, học tập khá tốt, cũng rất thông minh.</p>
+<p>Hắn suy tư sau thông tri Triệu Phương Lệ đình chỉ hành động, hai người đều dùng hắc tạp, tin nhắn giao lưu dùng ám hiệu, cho dù di động ném cũng không ai biết.</p>
+<p>Hành động đình chỉ sau, Tôn Tiểu Đào phát lên một cổ mèo vờn chuột thú vị nhi, hắn không tin Lâm Vụ sẽ mỗi lần đều trước tiên biết trước. Tình huống cùng hắn đoán giống nhau…… Một vòng sau, La Hiểu Dung bị hại, đối phương trước tiên không biết.</p>
+<p>La Hiểu Dung bị hại sau 20 năm sau, Lâm Vụ thường xuyên tới xưởng thép, hắn nhìn đến chính mình ở trong mộng cùng đối phương trở thành bằng hữu, sẽ ‘ lo lắng ’ giúp đối phương cùng nhau phân tích hung thủ, sau đó cảm khái hung thủ quá đáng giận.</p>
+<p>Hắn thật sự thực ‘ quan tâm ’ đối phương, nhưng trong lòng…… Quá sung sướng!</p>
+<p>Loại này giết người sau, đối phương đau khổ tìm hung, không biết hung thủ liền ở trước mặt cảm giác quá sung sướng!</p>
+<p>Này đó mộng đứt quãng, trong mộng rất nhiều chuyện đều sẽ thành công, thẳng đến thứ 15 cái, hắn giết Lâm Vụ. Thứ 19 giấc mộng, Triệu Phương Lệ bị bắt…… Triệu Phương Lệ bị bắt, bởi vậy không có hai người kế tiếp hợp tác sự tình, nàng bị bắt tựa như một tòa cao lầu quan trọng nhất một khối hòn đá tảng bị rút ra, mặt sau hết thảy đều ầm ầm sập.</p>
+<p>Hô ——</p>
+<p>2005 năm tháng 5 30 hào, Lâm Vụ tuyết thiên tìm chính mình cảnh trong mơ sau khi kết thúc, Tôn Tiểu Đào sợ hãi ngồi dậy.</p>
+<p>“Đại buổi tối có ngủ hay không a.” Hắn động tĩnh quá lớn, mặt khác bạn tù nhóm phi thường bất mãn.</p>
+<p>“Thực xin lỗi, thực xin lỗi……” Tôn Tiểu Đào nhìn nhìn chính mình tay, hắn lúc này đã phân không rõ chính mình là ở trong mộng còn ở mộng ngoại.</p>
+<p>Ngày hôm sau sáng sớm, Tôn Tiểu Đào hướng ngục giam đánh xin ——</p>
+<p>“Ta muốn gặp Lâm Vụ.” Hắn muốn hỏi một chút Lâm Vụ, chính mình trong mộng sự tình có phải hay không thật sự.</p>
+<p>“Thấy ta?” Lúc đó Lâm Vụ đang ở làm cuối cùng thi đại học lao tới, hắn cảm giác Tôn Tiểu Đào muốn gặp chính mình yêu cầu có chút kỳ quái, hắn nghĩ nghĩ “Không thấy.”</p>
+<p>Mặc kệ Tôn Tiểu Đào là vì cái gì, hắn đều không nghĩ thấy.</p>
+<p>Lâm Vụ dụng tâm thi đại học, chờ hắn lại nghe được Tôn Tiểu Đào tin tức khi, là hắn một tháng sau ——</p>
+<p>“Điên rồi?” Lâm Vụ nghe Vương Mãn Sơn gọi điện thoại tới hỏi.</p>
+<p>“Hẳn là điên rồi, trong miệng mỗi ngày nhắc mãi vương phi song, Triệu hiểu lộ, quách rả rích này đó tên, nói chính mình thực xin lỗi các nàng, không nên sát các nàng.”</p>
+<p>Tôn Tiểu Đào hiện tại ngồi tù, có quen biết đồng sự qua đi xem hắn, truyền quay lại tới chính là đối phương khả năng điên tin tức.</p>
+<p>Nhân trong miệng hắn nhắc mãi quá mức kỳ quặc, cảnh sát còn phái người tra xét, này đó đều là bản địa cao trung sinh, sống hảo hảo. Đại gia phân tích sau, suy đoán này đó có thể là Tôn Tiểu Đào giết người mục tiêu, nhân hắn bị bắt còn chưa kịp thực thi, hơn nữa bị phán hình sau tinh thần áp lực đại, sinh ra ảo giác.</p>
+<p>“Sẽ giảm hình phạt sao?” Lâm Vụ quan tâm khởi chuyện quan trọng nhất.</p>
+<p>“Sao có thể, hắn tình huống hiện tại cũng không tính điên, có thể ăn cơm làm việc, hình như là được vọng tưởng chứng, đắm chìm ở chính mình tiểu thế giới.” Vương Mãn Sơn cười cười nói.</p>
+<p>Nói ngắn gọn, Tôn Tiểu Đào tinh thần đã cùng người bình thường không giống nhau, hắn đã quy định phạm vi hoạt động, sau này đều sẽ đắm chìm ở cao áp tinh thần trong thế giới.</p>
+<p>“Ân.” Lâm Vụ trò chuyện hai câu sau chưa từng có nhiều chú ý.</p>
+<p>Mười phút sau, hai người cắt đứt điện thoại.</p>
+<p>Lâm Vụ mới vừa cắt đứt điện thoại, lật xem di động tin nhắn.</p>
+<p>“Đính hảo vé máy bay! Số 9 đến Từ Hồ, số 9 thấy!”</p>
+<p>Tin nhắn là Tần Vệ Đông phát, lúc đó đối phương đã xuất ngoại nửa năm, dự tính bảy tháng số 9 trở về, hắn hiện tại thi đại học kết thúc, có sung túc thời gian gặp mặt.</p>
+<p>“Số 9 thấy.” Lâm Vụ cười hồi phục, đồng thời nối tiếp xuống dưới gặp mặt tràn ngập chờ mong.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong73.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong75.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "thoi_khong_tin_nhan";
+const NOVEL_TITLE = "Thời không tin nhắn";
+const CHAPTER_TITLE = "Chương 74";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

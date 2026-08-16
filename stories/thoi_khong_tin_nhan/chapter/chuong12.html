@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 12.  tu di động</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Thời không tin nhắn
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 12.  tu di động</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong11.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong13.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Lâm Vụ 17 tuổi, ở Nhất Trung đi học, học tập thành tích khá tốt……” La Lương không biết Tần Vệ Đông vì cái gì hỏi thăm Lâm Vụ, hắn cho rằng hai người có mâu thuẫn, tất cả đều từ chuyện lớn đến chuyện nhỏ nói lên.</p>
+<p>Phiêu hương các cửa, Tần Vệ Đông tìm cái sang bên bậc thang ngồi xuống, nghiêm túc nghe.</p>
+<p>Nửa giờ sau, hắn hiểu biết Lâm Vụ cơ bản tình huống Phụ thân tàn tật, mẫu thân thiểu năng trí tuệ, phụ thân ở hắn cao một năm ấy qua đời, hiện tại mang theo mẫu thân sinh hoạt, mẫu thân ở thực đường bao bao tử, một tháng tiền lương 900, Lâm Vụ học tập thành tích khá tốt, từ nhỏ đến lớn đều là mũi nhọn sinh……</p>
+<p>“Hắn người này bình thường âm u, cũng không hợp đàn, cao một thời điểm thiếu chút nữa giết người……” La Lương càng nói càng hăng hái.</p>
+<p>“Giết người?” Tần Vệ Đông bắt lấy trọng điểm.</p>
+<p>“Chính là cao một nghỉ đông, hắn cùng trong viện một người khởi tranh chấp, chúng ta đến thời điểm Lâm Vụ cầm đao, người kia ngã ở trên mặt đất.”</p>
+<p>“Thấy huyết?”</p>
+<p>“Không có, người kia là dọa ngã ở trên mặt đất.”</p>
+<p>Tần Vệ Đông có chút ngoài ý muốn, tính tính đối phương ngay lúc đó tuổi tác sau hỏi “Hắn tiến Trung Tâm Cải Tạo Thiếu Niên?” Ấn La Lương miêu tả, Lâm Vụ tuy rằng không có giết người, nhưng thuộc về uy hiếp đe dọa, loại này ấn quy định là yêu cầu câu lưu chỗ.</p>
+<p>“Không có, Cục Công An làm xong ghi chép liền ra tới.”</p>
+<p>“Vì cái gì?”</p>
+<p>“Dao nhỏ không phải Lâm Vụ, là người kia mang quá khứ……”</p>
+<p>Tần Vệ Đông đã hiểu, đây là đối phương mang theo dao nhỏ chuẩn bị đe dọa, bị Lâm Vụ ‘ phản sát ’.</p>
+<p>“Hắn cũng chưa giết người, ngươi làm gì nói hắn giết người?”</p>
+<p>“Chúng ta đến thời điểm Lâm Vụ biểu tình rất khủng bố, không phải điên cuồng vặn vẹo, là cái loại này mặt vô biểu tình bình tĩnh, tựa như điện ảnh biến thái sát nhân cuồng, nhà bọn họ vốn dĩ liền không bình thường, chúng ta cảm giác hắn di truyền mẹ nó, là cái tiềm tàng bệnh tâm thần……”</p>
+<p>Tần Vệ Đông nhíu mày “Mẹ nó không phải trí lực chướng ngại sao?”</p>
+<p>“Đều giống nhau.”</p>
+<p>“Trí lực chướng ngại là trí lực chướng ngại, bệnh tâm thần là bệnh tâm thần, nói nữa, bệnh tâm thần cũng không nhất định di truyền.” Tần Vệ Đông sửa đúng.</p>
+<p>“…… Nga.” La Lương nghe có điểm hôn mê, hỏi “Tần ca, chúng ta muốn tìm người đánh hắn một đốn sao?”</p>
+<p>“Các ngươi trước kia thường xuyên đánh hắn?”</p>
+<p>“Khi còn nhỏ nháo quá vài lần mâu thuẫn, bất quá hắn đánh trả rất tàn nhẫn, cũng không có hại. Sau lại tuổi lớn, chúng ta liền nước giếng không phạm nước sông.”</p>
+<p>“Các ngươi đều nháo quá cái gì mâu thuẫn?”</p>
+<p>“Cái này muốn nói sao?” La Lương không biết Tần Vệ Đông vì cái gì muốn hỏi thăm này đó.</p>
+<p>“Ân, đều nói nói.” Tần Vệ Đông thay đổi cái tư thế nói.</p>
+<p>“Kỳ thật ban đầu đều là việc nhỏ……”</p>
+<p>La Lương cùng Lâm Vụ không có trực tiếp mâu thuẫn, là bọn họ này đám người cùng Lâm Vụ có mâu thuẫn. Cụ thể nguyên nhân đại khái là Lâm Vụ phụ thân người què, mẫu thân thiểu năng trí tuệ, nhà bọn họ ở xưởng thép không quyền không thế, rất nhiều tiểu hài tử khinh thường bọn họ, đại gia thích đi theo Lâm Hải Minh học đi đường. Lâm Hải Minh thành thật, chỉ biết làm một ít xua đuổi thủ thế, dẫn đại gia cười ha ha.</p>
+<p>Sau lại đại gia cảm giác học đi đường không đã ghiền, thích dùng đá tạp La Hiểu Dung, hoặc là đem nàng mang đường cái thượng xem nàng xấu mặt, lại hoặc là lừa nàng ăn một ít trên mặt đất nhặt que cay……</p>
+<p>La Hiểu Dung sẽ không biểu đạt, bọn họ càng ngày càng quá đáng, những việc này đã bị Lâm Vụ phát hiện.</p>
+<p>Lâm Vụ không túng, trực tiếp thượng thủ đánh người. Hắn đánh người phi thường âm, đều là chiếu người ngoài nhìn không thấy địa phương đánh, cũng lộng không ra miệng vết thương, bị đánh tiểu hài tử nói cho đại nhân, đại nhân biết là nhà mình hài tử khi dễ người, lại đem hài tử đánh một đốn. Những việc này thường xuyên qua lại, bọn họ cùng Lâm Vụ cha mẹ mâu thuẫn biến thành cùng Lâm Vụ gian mâu thuẫn, hai bên vẫn luôn ngươi tới ta đi, thẳng đến sơ trung sau mới có sở giảm bớt.</p>
+<p>“Chúng ta sơ trung sau đều không liên hệ, chính là Triệu Kỳ không có việc gì thời điểm thích đậu hai hạ……” Triệu Kỳ là cùng Lâm Vụ động đao tử người kia, sự tình phát sinh không bao lâu, hắn liền cùng cha mẹ nhân công tác dọn đến nơi khác.</p>
+<p>“Các ngươi thật không phải đồ vật.” Tần Vệ Đông tuy là thứ đầu, nhưng phi thường khinh bỉ loại này ỷ mạnh hiếp yếu ác ý hành vi.</p>
+<p>“Bọn họ không phải, ta là! Không phải, ta cũng không thể nói là đồ vật, ta chính là đi theo phía sau bọn họ xem náo nhiệt.” La Lương càng nói càng loạn, cuối cùng nói “Hắn chọc ngươi? Ta tìm người giúp ngươi đánh trở về?”</p>
+<p>“Lăn, ai nói ta muốn đánh người?” Tần Vệ Đông nhíu mày “Ta chỉ là tìm ngươi hiểu biết một ít tình huống, ngươi đừng cho ta xằng bậy, chuyện của ta ngươi đừng nhúng tay, cũng đừng nghĩ đánh người.”</p>
+<p>La Lương thấy Tần Vệ Đông nói nghiêm túc, vội vàng bảo đảm “Ta tuyệt không nhúng tay!”</p>
+<p>“Ân.” Tần Vệ Đông không có nói chuyện phiếm tâm tư, hắn nói hai câu lời nói cắt đứt điện thoại.</p>
+<p>Hiện tại 9 giờ 10 phút, Tần Vệ Đông vừa mới đứng dậy, Hồ Vĩ từ tiệm cơm ra tới, nhìn thấy hắn sau nói “Tần ca, như thế nào không đi vào a? Cho ngươi gọi điện thoại không đả thông.”</p>
+<p>“Mới vừa đánh một chiếc điện thoại, này liền đi vào.”</p>
+<p>Tần Vệ Đông vỗ vỗ trên người tro bụi, đi theo Hồ Vĩ cùng đi trên lầu ca hát, đại gia từ 9 giờ chơi tới rồi buổi tối 11 giờ, Tần Vệ Đông cấp cổng tắc hai bao yên, mới mang theo Hồ Vĩ trộm hồi ký túc xá.</p>
+<p>Hôm nay Cao Minh Minh có việc về nhà, Hồ Vĩ cùng Cao Minh Minh nói một tiếng, ngủ ở hắn giường đệm. Tần Vệ Đông cùng Cao Minh Minh trên dưới phô, hiện tại cùng Hồ Vĩ trên dưới phô, ký túc xá mặt khác hai người ở cách vách ký túc xá đánh bài, trong phòng chỉ có Tần Vệ Đông cùng Hồ Vĩ hai người.</p>
+<p>“Con khỉ.” Tần Vệ Đông nằm ở trên giường, đột nhiên hô Hồ Vĩ ngoại hiệu.</p>
+<p>“Làm sao vậy?” Hồ Vĩ đang ở chơi đẩy cái rương, sau khi nghe được ngẩng đầu.</p>
+<p>“Ngươi nói một người từ nhỏ đến lớn vẫn luôn bị khi dễ, những người này khi dễ hắn cùng cha mẹ hắn. Sau đó xuất hiện một cái người xa lạ, người xa lạ nói với hắn, mẹ ngươi ba tháng sau đã chết…… Này có phải hay không khiêu khích?” Tần Vệ Đông tổ chức một chút ngôn ngữ hỏi.</p>
+<p>“Đương nhiên a.” Hồ Vĩ trả lời không cần nghĩ ngợi.</p>
+<p>“Cái này người xa lạ không biết hắn sự tình trong nhà, hắn chỉ là bang nhân tiện thể nhắn.”</p>
+<p>“Nào có tiện thể nhắn mang cha mẹ chết a, nếu là có người nói như vậy ta ba, ta cái thứ nhất tước hắn!” Hồ Vĩ thường xuyên bị hắn ba đánh, nhưng hắn yêu hắn ba, hắn ba cũng yêu hắn, hắn tuyệt không cho phép có người công kích hắn ba.</p>
+<p>“Cái này người xa lạ không biết, hắn cho rằng chính mình là giúp người làm niềm vui.”</p>
+<p>“Nào có giúp người làm niềm vui nói đến ai khác cha mẹ chết.” Hồ Vĩ phi thường khinh thường “Người này hoặc là não trừu hoặc là não nằm liệt, tuyệt không có đệ nhị loại khả năng.”</p>
+<p>Hồ Vĩ nói xong, thượng phô không động tĩnh.</p>
+<p>“Tần ca?” Hồ Vĩ hô một tiếng.</p>
+<p>“A.” Tần Vệ Đông lãnh a, tiếp theo cười lạnh “Ngủ!”</p>
+<p>Hồ Vĩ Như thế nào đột nhiên như vậy lạnh?</p>
+<p>Đi học, tan học, tiếp La Hiểu Dung về nhà.</p>
+<p>Lâm Vụ cao trung thời kỳ sinh hoạt phi thường đơn giản, La Hiểu Dung đổi công tác sau, hắn không cần đón đưa, chỉ có đi học tan học hai điểm một đường, hắn phi thường vừa lòng hiện tại trạng thái, cũng không nghĩ có bất luận cái gì biến hóa.</p>
+<p>Chỉ là ngày hôm sau tan học, hắn mới ra cổng trường, liền cảm giác có người đi theo chính mình. Hiện tại 8 giờ 35, cửa trường đều là rộn ràng nhốn nháo cao tam học sinh, hắn đi rồi hai bước, bỗng nhiên xoay người ——</p>
+<p>Phía sau 5 mét có hơn địa phương, một cái cao cái thiếu niên rời rạc đi theo hắn. Hôm nay thời tiết có chút lạnh, thiếu niên ăn mặc một kiện hồng áo khoác, thiển lam quần jean, trên đầu mang đỉnh đầu màu trắng mũ lưỡi trai, nhân vai rộng eo thon vóc người thon dài, ở một đám cao trung giáo phục phi thường thấy được.</p>
+<p>Lâm Vụ nhận ra tới, đây là mấy ngày hôm trước ngõ nhỏ người kia.</p>
+<p>Hắn đi phía trước đi, đối phương đi theo đi phía trước đi, hắn dừng lại, đối phương đi theo dừng lại. Lâm Vụ xem qua đi khi, đối phương chút nào không che giấu chính mình hành tung, bay thẳng đến hắn cười cười.</p>
+<p>Lâm Vụ ……</p>
+<p>Lâm Vụ phi thường muốn hỏi đối phương vì cái gì đi theo chính mình, chỉ là con đường này không phải hắn một người, hắn muốn hỏi như vậy, có vẻ chính mình có chút tự mình đa tình.</p>
+<p>Lâm Vụ chịu đựng không khoẻ, giống thường lui tới giống nhau đi đến giao thông công cộng trạm bài, đối phương đi theo đi đến trạm bài.</p>
+<p>Lâm Vụ lên xe, đối phương đi theo lên xe.</p>
+<p>Lâm Vụ xuống xe, đối phương đi theo xuống xe.</p>
+<p>Lâm Vụ đi vào tiểu khu đại môn, đối phương ở phía sau đi theo, hắn đi rồi 100 mét, rốt cuộc nhịn không được quay đầu lại hỏi “Ngươi có phải hay không đi theo ta?”</p>
+<p>“Ngươi mới vừa phát hiện?” Tần Vệ Đông ngữ khí ngạc nhiên, phảng phất ngoài ý muốn Lâm Vụ vì cái gì vừa mới phát hiện.</p>
+<p>“Có việc?” Lâm Vụ nhíu mày.</p>
+<p>“Có!” Tần Vệ Đông trực tiếp lấy ra di động.</p>
+<p>Hắn ngày hôm qua nghĩ kỹ, hắn ban đầu mục đích là tra ra xa lạ dãy số, hiện tại manh mối chỉ có Lâm Vụ, hắn không cần thiết bởi vì một hồi không thoải mái câu thông bỏ dở nửa chừng.</p>
+<p>“Ngươi có nhận thức hay không cái này dãy số?” Tần Vệ Đông thực mau nhảy ra xa lạ dãy số —— hắn đổi di động, phía trước lịch sử trò chuyện ở cũ di động, SIM tạp thượng chỉ có phía trước bảo tồn số di động.</p>
+<p>“Không quen biết.” Lâm Vụ nhìn thoáng qua nói.</p>
+<p>“Ngươi lại nhìn kỹ xem!” Tần Vệ Đông đối hắn có lệ thái độ phi thường bất mãn.</p>
+<p>“Thật sự không quen biết.” Lâm Vụ nhân tế quan hệ phi thường đơn giản, trừ bỏ Vương Mãn Sơn cùng Hách Thục Cần, hắn không quen biết mặt khác dãy số, cái này dãy số trừ bỏ cùng hắn sinh nhật ngày tương đồng, cũng không có gì đặc biệt.</p>
+<p>“Ngươi lại ngẫm lại.” Tần Vệ Đông nghiêm túc nhìn chằm chằm Lâm Vụ biểu tình.</p>
+<p>“Không quen biết.” Lâm Vụ phi thường khẳng định.</p>
+<p>“Mấy ngày hôm trước chính là cái này dãy số cho ta phát tin nhắn, làm ta cho ngươi truyền lời.” Tần Vệ Đông nói lên ngõ nhỏ sự tình.</p>
+<p>Lâm Vụ ngoài ý muốn nhìn về phía hắn “Cảm ơn, ta đã biết.”</p>
+<p>“Liền không có?”</p>
+<p>“Đã không có.” Trải qua lần trước không thoải mái sau, Lâm Vụ tự động cùng đối phương bảo trì khoảng cách, hắn không ngại kia đoạn lời nói là ai nói, trước mặt thiếu niên cũng hảo, những người khác cũng đúng, hắn đều không để bụng, hắn không nghĩ đem tinh lực đặt ở này đó vô ý nghĩa sự tình. Đương nhiên đối phương nếu là được voi đòi tiên tiếp tục quấy rầy, hắn không ngại ngạnh cương đi xuống.</p>
+<p>“Ta hiện tại phải về nhà, ngươi còn có mặt khác sự tình sao?” Lâm Vụ hỏi.</p>
+<p>“Đã không có……”</p>
+<p>“Tái kiến.” Lâm Vụ cũng không quay đầu lại rời đi.</p>
+<p>Tần Vệ Đông nhìn đối phương bóng dáng, tổng cảm giác sự tình có chút không khoẻ, hắn nghĩ rồi lại nghĩ, rốt cuộc biết không khoẻ điểm ở đâu!</p>
+<p>Hắn đại buổi tối cùng lại đây, là tưởng chứng minh chính mình giúp người làm niềm vui cao quý phẩm chất. Nhưng là vừa mới, đối phương toàn bộ hành trình đều ở có lệ, là ở tống cổ hắn!</p>
+<p>“Dựa!” Tần Vệ Đông cảm giác sự tình không thể như vậy qua đi, hắn không thể bị người hiểu lầm, hắn là giúp người làm niềm vui, đạo đức tốt năm hảo thanh niên!</p>
+<p>Tần Vệ Đông trực tiếp theo qua đi.</p>
+<p>Lâm Vụ không biết Tần Vệ Đông theo lại đây, 26 hào lâu, hắn mới vừa đi đến dưới lầu, liền thấy La Hiểu Dung ở bậc thang ngồi. La Hiểu Dung nhìn thấy hắn, vui vẻ tiến lên “Sương mù sương mù!”</p>
+<p>“Mẹ, ngươi như thế nào xuống dưới? Phía dưới lãnh.”</p>
+<p>La Hiểu Dung ăn mặc một bộ đông khoản áo ngủ, Lâm Vụ phản ứng đầu tiên chính là giúp nàng gắt gao cổ áo.</p>
+<p>“Không lạnh.” La Hiểu Dung hô hà hơi nói. Nàng trước kia đều là cùng Lâm Vụ cùng nhau về nhà, hiện tại chính mình một người ngốc tại trong phòng có chút không thói quen, nàng thích ở dưới lầu chờ.</p>
+<p>“Kia ta cho ngươi định cái đồng hồ báo thức, ngươi về sau nghe được đồng hồ báo thức lại xuống dưới.” Lâm Vụ biết La Hiểu Dung có đôi khi phi thường bướng bỉnh, hắn không ở vấn đề này thượng dây dưa, cùng nàng nói hai câu sau, nắm La Hiểu Dung lên lầu.</p>
+<p>Tần Vệ Đông lại đây khi, nhìn đến chính là Lâm Vụ giúp La Hiểu Dung khẩn quần áo cùng lên lầu hình ảnh.</p>
+<p>Hắn nhìn nhà ngang tường ngoài thượng cửa sổ, chỉ chốc lát sau, lầu 3 cửa sổ sáng.</p>
+<p>Hắn tuy tưởng nói rõ ràng, nhưng còn không có trực tiếp gõ nhân gia đại môn đam mê, hắn muốn thật gõ, hoàn toàn chính là theo dõi cuồng cùng quấy rầy phạm vào.</p>
+<p>Tần Vệ Đông tìm cái cản gió địa phương đứng, lấy ra di động, chuẩn bị hỏi một chút Hồ Vĩ ở đâu.</p>
+<p>Hắn chuẩn bị quay số điện thoại, 12 hào lâu đường đi truyền đến một đạo tiếng bước chân, Tần Vệ Đông quay đầu lại.</p>
+<p>Xưởng thép người nhà viện có 90% cư dân đều là xưởng thép công nhân viên chức, nơi này ở kiến phòng khi, mỗi đống dưới lầu mặt đều có một loạt thủy quản, cư dân nhóm có thể dùng thủy rửa rau giặt quần áo, này đó thủy phí xưởng thép chi trả, xem như người nhà viện công nhân viên chức phúc lợi.</p>
+<p>Tần Vệ Đông quay đầu lại khi, liền thấy Lâm Vụ thay áo ngủ, bưng một đại bồn quần áo xuống dưới.</p>
+<p>Hắn xuống dưới sau từ bên cạnh trong bồn hoa lấy ra một cái ván giặt đồ, sau đó dùng chậu nước tiếp thủy, ngồi ở thủy quản bên trên cục đá bắt đầu giặt quần áo, này đó quần áo có hắn thu y quần mùa thu, cũng có La Hiểu Dung áo khoác quần.</p>
+<p>Lâm Vụ mang bao tay cao su, tẩy phi thường thuần thục.</p>
+<p>Tần Vệ Đông ở bóng ma nhìn trong chốc lát, cảm giác hiện tại không phải giải thích hảo thời cơ —— hắn không khẩu bạch nha, liền tính nhiều lần bảo đảm chính mình nói chính là thật sự, quá khó làm người tin phục.</p>
+<p>Tần Vệ Đông đi đến người nhà viện môn khẩu, vừa lúc Hồ Vĩ điện thoại đánh lại đây.</p>
+<p>“Tần ca, ta hiện tại ở gió xoáy tiệm bida, ngươi ở đâu? Cả đêm chưa thấy được ngươi, ngươi trong chốc lát lại đây sao?” Hồ Vĩ bên kia có điểm sảo, hắn kêu giọng nói hỏi.</p>
+<p>“Vừa rồi có chút việc, bất quá đi.” Tần Vệ Đông thuận miệng nói hai câu, hỏi “Di động cao ốc có thể tu di động sao?”</p>
+<p>“Ngươi di động hỏng rồi?!” Hồ Vĩ thay đổi cái an tĩnh địa phương, khiếp sợ hỏi —— Tần Vệ Đông mới vừa đã đổi mới di động, mới một tuần!</p>
+<p>“Không hư, ta tưởng đem phía trước cái kia tu một chút, đương dự phòng cơ.” Hắn phía trước không nghĩ tới tu di động, vừa rồi đột nhiên tưởng, cũ di động có hắn cùng xa lạ dãy số lịch sử trò chuyện, hắn đem điện thoại sửa được rồi, tổng có thể chứng minh chính mình là người tốt đi?</p>
+<p>Hắn hiện tại không chỉ có có trò đùa dai người khác hiềm nghi, hơn nữa càng bôi càng đen, hắn phải vì chính mình chính danh!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong11.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong13.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "thoi_khong_tin_nhan";
+const NOVEL_TITLE = "Thời không tin nhắn";
+const CHAPTER_TITLE = "Chương 12.  tu di động";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

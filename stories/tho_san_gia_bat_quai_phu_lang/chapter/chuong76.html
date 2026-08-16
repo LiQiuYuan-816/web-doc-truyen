@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 76. Xây dựng ninh thủy thôn 2</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Thợ săn gia bát quái phu lang
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 76. Xây dựng ninh thủy thôn 2</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong75.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong77.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Nhưng loại này thay đổi khẳng định không thể làm đến quá nhanh, bằng không làm ánh mắt tốt nhìn ra tới, còn tưởng rằng này cánh rừng chính mình sẽ chạy đâu.</p>
+<p>Đêm nay Thẩm Vân Chu cùng Khương Ninh chỉ di động tam cây, lại đem bị chém thụ kéo về trong nhà, xưởng mỗi ngày ngao quả xoài tương dùng không ít củi lửa, vừa lúc có thể tục thượng.</p>
+<p>Liền như vậy qua hai ba thiên, trong đất hoang cũng khai không sai biệt lắm, từng cái thụ hố đào đến lại đại lại viên. Khương Ninh cùng Thẩm Vân Chu liền đi một chuyến huyện thành, gần nhất là thỉnh quen biết lại viên đi một chuyến trong thôn, đem mà cấp đăng ký thượng. Thứ hai là mua một ít tư vị tốt quả đào, lấy hạch đào giục sinh cây non.</p>
+<p>Những cái đó bán cây giống tất nhiên sẽ nói nhà mình là tư vị tốt cây giống, nhưng đến tột cùng có phải hay không, Khương Ninh muốn chính mình hưởng qua mới biết được.</p>
+<p>Hai người tới rồi trong thành, trên đường bán hoa quả tươi còn không ít, đều là phụ cận thôn trong nhà có cây ăn quả nhân gia, cõng quang gánh bắt được ven đường tới bán. Lúc này bán quả đào liền có tam gia, có hai nhà đều là một người trước mặt bày cái sọt ở bán, còn có một nhà chi cái sạp, trừ bỏ quả đào, còn có quả táo cùng một ít màu xanh lơ quả nho.</p>
+<p>Khương Ninh tới trước một cái sạp thượng, này quán chủ là cái 30 tới tuổi nữ nhân, một người thủ một cái sọt. Khương Ninh kế hoạch chẳng những muốn nếm thử tư vị, còn muốn cùng quán chủ nói chuyện phiếm, hiểu biết một chút thụ tình huống.</p>
+<p>Kia nữ nhân thấy hai người bọn họ quần áo thể diện, lường trước là trong tay có tiền, đầy mặt tươi cười hỏi Khương Ninh muốn nhiều ít. Khương Ninh ánh mắt ở sọt quét một lần “Ngươi này bán thế nào? Trước muốn một cái nếm thử hương vị, nếu là tư vị hảo, này một sọt ta tất cả đều muốn.”</p>
+<p>Kia nữ nhân sửng sốt, nghe xong lời này trên mặt lại không thấy vui sướng, ngược lại tươi cười cứng lại rồi, ấp úng nói “Nếu là luận cái mua, kia một cái phải năm, không, bảy văn tiền, không có lời, ngươi nếu không mua nhiều chút, mười lăm văn một cân, ngươi nếu là toàn muốn ta lại cho ngươi tiện nghi chút.”</p>
+<p>Khương Ninh lại lắc lắc đầu. Tới rồi hắn hiện tại tình trạng này, ăn đến trong miệng đồ ăn liền tính không khó ăn, chỉ là hương vị bình thường, liền đã là tội ác tày trời —— hắn bụng chỉ có như vậy một chút địa phương, ăn bình thường hương vị đồ ăn, đã có thể ăn không vô ăn ngon.</p>
+<p>Nếu là này quả đào hương vị không tốt, mặc cho hắn nhiều tiện nghi, mua cũng là bạch phóng lãng phí.</p>
+<p>Bảy văn tiền tuy rằng đối quả đào mà nói có chút quý, nhưng đối Khương Ninh tới nói lại cũng không tính cái gì, từ túi tiền lau bảy văn tiền liền đưa cho kia nữ nhân, sau đó nhắm mắt lại bắt tay hướng sọt duỗi “Làm ta tùy cơ lấy một cái, nếm thử này quả đào bình quân trình độ……”</p>
+<p>Tuy rằng như vậy xem bình quân trình độ không có gì đạo lý, nhưng vận khí cũng là thực lực một loại sao, nếu là tùy tiện lấy một cái không thế nào tốt hương vị cũng không tệ lắm nói, thuyết minh này một sọt quả đào phẩm chất đều ở trục hoành trở lên.</p>
+<p>Ai ngờ kia nữ nhân lại nói “Ai nha, ta cho ngươi chọn, cho ngươi chọn cái tốt nhất.”</p>
+<p>Nàng nói, liền ở sọt chọn cái nhất hồng, không khỏi phân trần nhét vào Khương Ninh trong tay.</p>
+<p>Khương Ninh sửng sốt, nhưng quả đào đã bị nhét ở trong tay, hắn cũng không có thả lại đi, mà là làm Thẩm Vân Chu từ túi nước đổ nước, đương trường liền đem quả đào rửa sạch sẽ, dùng sức một bẻ liền một phân thành hai —— này vẫn là cái lập hạch đào nhi.</p>
+<p>Thẩm Vân Chu thấy thế liền cười “Này còn bẻ cái gì? Ngươi nếm hai khẩu cho ta ăn là được, hai ta cũng phân một hồi đào.”</p>
+<p>Khương Ninh trừng mắt nhìn hắn liếc mắt một cái, trên đường cái nói cái gì đâu? Duỗi tay liền đem nửa bên quả đào nhét vào Thẩm Vân Chu trong miệng, sau đó liền nhìn đến Thẩm Vân Chu cả khuôn mặt đều ninh lên.</p>
+<p>Thẩm Vân Chu cũng không phải không ăn qua khó ăn đào, có quả đào hương vị nhạt nhẽo như nước, khẩu cảm lại giống ở nhai giày da Vừa không là cái loại này mềm đến vào miệng là tan đào, lại không phải giòn đào, có địa phương sẽ xưng loại này khẩu cảm vì “Cấn”.</p>
+<p>Nhưng đều không bằng trong miệng cái này khó ăn, này quả đào thế nhưng thực toan. Thẩm Vân Chu rất ít ở quả đào thượng ăn đến vị chua, cho rằng không tư vị đã là khó ăn quả đào cực hạn, lại không nghĩ bị này quả đào ám toán một phen.</p>
+<p>Vẫn là nói bởi vì đây là cổ đại quả đào. Hiện đại quả đào trải qua tiến hóa, liền tính khó ăn cũng tương đối không có lực sát thương……</p>
+<p>Hắn vội vàng đem kia nửa khối quả đào nhổ ra, vẻ mặt thống khổ nhìn Khương Ninh.</p>
+<p>Hai người bọn họ ở quầy hàng trước cãi nhau ầm ĩ, cũng hấp dẫn một ít người qua đường ánh mắt, lại cũng tưởng mua đào liền vì lại đây, nhìn chằm chằm Khương Ninh cùng Thẩm Vân Chu xem, có nghĩ thầm bạch phiêu một chút bọn họ thí ăn kinh nghiệm.</p>
+<p>Lại thấy Thẩm Vân Chu vẻ mặt vặn vẹo, lại đem ánh mắt chuyển tới Khương Ninh trên mặt.</p>
+<p>Khương Ninh ngẩn người, thập phần cẩn thận mà cắn một nho nhỏ khẩu, sau đó cả khuôn mặt cũng nhíu lại.</p>
+<p>Này đào đâu chỉ tội ác tày trời? Quả thực hẳn là tru diệt cửu tộc, họ hàng xa hàng xóm đều đến sung quân Ninh Cổ Tháp.</p>
+<p>Hơn nữa! Này vẫn là kia nữ nhân tỉ mỉ chọn lựa một cái thực hồng đào, Khương Ninh cũng không dám tưởng tượng, hắn nếu là thật nhắm mắt tùy cơ lấy một cái, đến khó ăn tới trình độ nào?</p>
+<p>Hai người vẻ mặt thống khổ, xấu hổ mà triều kia nữ nhân vẫy vẫy tay, chậm rãi hướng nơi xa đẩy.</p>
+<p>Chung quanh người thấy hắn hai này biểu tình, cũng đều không tính toán mua, kia nữ nhân trong lòng sốt ruột, không cấm ở trong miệng nhắc mãi “Ai, liền không nên làm nếm, nếm lại không mua……” Ý tứ là này hai người không nghĩ mua, mới cố ý làm ra một bộ lựa bộ dáng, vu hãm nàng quả đào.</p>
+<p>Có mấy cái vây xem người quả nhiên có chút do dự, bị nàng lời này quấy nhiễu.</p>
+<p>Khương Ninh tức khắc có chút không cao hứng, hắn là nếm này đào không giả, nhưng hắn lại không phải không cho tiền, hắn hoa bảy văn tiền mua có được không? Vốn dĩ đã đi ra hai bước, lại xoay người đi vòng trở về “Ngươi lời này nói, ta lại không phải không thành tâm mua, ta thành tâm mua đào, nhưng ngươi này quả đào thật sự khó ăn, ta còn thế nào cũng phải mua không thể? Lại nói ta lại không phải bạch nếm ngươi, ta không cho tiền sao? Ngươi muốn nói như vậy, đem bảy văn tiền lui ta, ta hoa bảy văn tiền cắn một ngụm toan đào, ta mới mệt lớn!”</p>
+<p>Nữ nhân trên mặt lúc xanh lúc đỏ, nàng không nghĩ tới Khương Ninh ăn mặc như vậy thể diện, trong miệng là một chút không cho người. Bất quá kia bảy văn tiền đều tới rồi nàng trong túi, khẳng định không thể còn, liền thiên qua đi đầu giả chết.</p>
+<p>Khương Ninh nhìn nhìn người chung quanh, đem chính mình chỉ cắn một cái miệng nhỏ nửa bên đào cho một cái vây xem đại nương “Ta liền cắn này một cái miệng nhỏ, bên cạnh đều là sạch sẽ, này đào cái gì hương vị, đại gia đại nhưng chính mình nếm thử.”</p>
+<p>Lúc này đồ ăn trân quý, cũng không có như vậy nhiều người chú trọng vệ sinh, kia đại nương lập tức liền tiếp nhận tới, bẻ tiếp theo tiểu khối nếm, tức khắc biểu tình cũng không hảo, nàng liền lại đem dư lại quả đào truyền cho những người khác.</p>
+<p>Kia nữ nhân tức khắc nóng nảy “Ngươi làm cái gì hư ta sinh ý!”</p>
+<p>Cái này đều không cần Khương Ninh cùng nàng cãi nhau, tự có hưởng qua quả đào người qua đường hát đệm “Không cho ngươi gạt người liền tính hư ngươi sinh ý? Ngươi này đào chính là khó ăn, nếu không phải này tiểu phu lang, chưa chừng lại có người thượng ngươi đương. Ai kiếm tiền đều không dễ dàng, tiêu tiền mua một đống khó ăn đồ vật trở về, ngươi này không phải hố người sao?”</p>
+<p>Kia nữ nhân một trương miệng khó địch mọi người, cõng lên sọt đổi địa phương bán.</p>
+<p>Khương Ninh cùng Thẩm Vân Chu lúc này mới đi đệ nhị gia. Đệ nhị gia cũng là cái phụ nhân cõng một cái cái sọt, lại là cái bốn năm chục tuổi đại nương.</p>
+<p>Bốn năm chục tuổi ở hiện đại không thế nào hiện, lúc này lại đã tóc nửa trăm hiện ra lão thái tới, này đại nương sạp liền ở kia nữ nhân nghiêng đối diện, mới vừa rồi đem tình huống xem đến rõ ràng, thấy Khương Ninh hai người lại đây, không cần phải nói, tùy tay cầm lấy một cái đặt ở mặt trên quả đào, cùng một phen tiểu đao, hướng Khương Ninh phương hướng đệ “Tùy tiện nếm! Không thể ăn không cần tiền!”</p>
+<p>Hiển nhiên đối nhà mình quả đào rất có tin tưởng.</p>
+<p>Khương Ninh cũng không khách khí, làm theo trước giặt sạch sạch sẽ, dùng đại nương cung cấp tiểu đao cắt hai tiểu khối ra tới.</p>
+<p>Nhà này bán cũng là ly hạch đào, ly hạch đào đại bộ phận là giòn đào, cắn một ngụm một cổ tử ngọt thanh hương vị, nhai lên ca ca vang.</p>
+<p>Kỳ thật Khương Ninh tính toán mua mềm đào nhiều một ít, bởi vì hắn là tính toán làm đào tương dùng. Nhưng giòn đào cũng không tồi, thiết viên đặt ở nước uống cũng thực mỹ vị. Lại nói này đại nương sọt đào không nhiều lắm, Khương Ninh liền dứt khoát đều mua tới “Ta liền này sọt đều phải, đại nương nói cái giá đi.”</p>
+<p>Lại cùng này đại nương xả nhàn thoại “Đại nương này quả đào là nhà mình loại? Là có vườn trái cây vẫn là trong viện lão thụ a?”</p>
+<p>Kia đại nương thấy Khương Ninh như thế thống khoái, trong lòng cũng thật cao hứng, nàng có thể sớm chút đi trở về. Nhà mình quả đào hảo, nàng cũng nguyện ý nhiều cùng người khen khen “Là chúng ta nhà mình trong viện, liền này một cây, bán xong này đó đã không có. Nhà của chúng ta còn có một ngụm nước ngọt giếng, ta suy nghĩ chính là nước ngọt dưới nền đất hạ dễ chịu, mới có thể sinh ra hương vị như vậy tốt cây đào tới.”</p>
+<p>Rất nhiều người không vui ở trong sân loại cây đào, nói có như vậy như vậy kiêng kỵ, dễ dàng có cái gì ở tại cây đào thượng. Muốn nàng nói, liền tính ở, kia cũng là hảo thần tiên ở tại nhà nàng cây đào thượng, mới phù hộ các nàng gia mỗi năm đều có thể dựa vào cây đào kiếm một bút!</p>
+<p>Còn có kia nhẹ dạ thân thích đến nhà nàng khuyên nàng đem thụ chém, muốn nàng nói, đều là ghen ghét!</p>
+<p>Khương Ninh lại cùng đại nương trò chuyện trong chốc lát, xác định là một gốc cây không bệnh không tai hảo cây đào, liền thanh toán tam đồng bạc, cảm thấy mỹ mãn liền sọt mang đào cùng nhau mang đi.</p>
+<p>Nhưng bọn hắn cũng không có lập tức trở về, vẫn là chuyển tới đệ tam gia quầy hàng thượng. Đệ tam gia quán chủ là cái ba bốn mươi tuổi lùn tráng hán tử, nguyên bản thấy này hai cái đại khách hàng đã bao viên trương đại nhà mẹ đẻ quả đào, sợ là sẽ không lại đến chính mình nơi này, lúc này thấy bọn họ hai người chuyển qua tới, quả thực vui mừng khôn xiết.</p>
+<p>Hắn cũng phi thường có ánh mắt cầm tiểu đao tới, làm Khương Ninh cùng Thẩm Vân Chu thí ăn.</p>
+<p>Bất quá nhà hắn quả đào, lại là mềm đào, Khương Ninh lấy tiểu đao mới vừa thiết một lỗ hổng, liền có đầy đủ nước sốt chảy ra, hắn dứt khoát trực tiếp thượng miệng hít hít, đôi mắt chính là sáng ngời.</p>
+<p>Này quả đào thế nhưng có chút thủy mật đào cảm giác.</p>
+<p>Quán chủ phi thường nhiệt tình nói “Ta cùng vừa rồi cái kia đại nương là một cái thôn, không dối gạt các ngươi nói, không ngừng là nhà nàng có nước ngọt giếng, chúng ta thôn thủy đều ngọt, hảo thủy nhưng không phải dưỡng ra hảo quả tử tới sao! Nhà của chúng ta có hai mẫu vườn trồng trọt mà, loại các màu cây ăn quả, mọi thứ đều ăn ngon!” Nói lại đệ cái quả táo cấp Khương Ninh, phi làm Khương Ninh nếm thử.</p>
+<p>Khương Ninh liền đem cắn hai khẩu quả đào đưa cho Thẩm Vân Chu —— cái này thật sự phân đào.</p>
+<p>Này quả táo hương vị cũng không tồi, là mặt quả táo, xem ra nhà này chủng loại đều là thiên mềm.</p>
+<p>Khương Ninh nguyên bản cũng có loại điểm quả táo, làm mứt vỏ hồng kế hoạch, lúc này liền mua sở hữu quả đào, cùng một nửa quả táo. Thấy có màu xanh lục quả nho, cũng nhéo một cái nếm thử, cư nhiên hương vị cũng không tệ lắm, tuy rằng mang theo vị chua, lại là chua ngọt chua ngọt.</p>
+<p>Vì thế cũng chọn đại cũng cầm mấy xâu. Cái này liền không suy xét trồng trọt, chỉ là ăn cái mới mẻ.</p>
+<p>Bọn họ hai cái vừa đi, lập tức có không ít người vây đi lên, muốn mua quán chủ dư lại trái cây.</p>
+<p>Vừa rồi quán chủ cùng Khương Ninh lời nói bọn họ đều nghe thấy được, nếu là hảo thuỷ sản ra hảo quả, hẳn là bất luận là gì đều ăn ngon. Này quán chủ làm thành một bút đại mua bán, mặt đều phải cười toan, cũng không keo kiệt, lại đem tiểu đao lấy ra tới, đem quả tử cắt ra cho đại gia nếm Bất quá hắn cũng là cái sẽ xem người hạ đồ ăn đĩa, đối người khác liền không cho toàn bộ mà là đem quả tử cắt thành hơi mỏng một mảnh nhỏ một mảnh nhỏ, một cái quả tử một đám người nếm xong rồi còn dư lại non nửa cái quả tử.</p>
+<p>Nhưng đại gia cũng thực thỏa mãn, lập tức quán thượng đồ vật liền bán hết, có thể sớm thu quán về nhà. Còn có người nhớ kỹ này quán chủ bộ dáng, nhà bọn họ trong đất sản xuất nhất định ăn ngon.</p>
+<p>Khương Ninh cùng Thẩm Vân Chu về trước quả hồng thụ hẻm tiểu viện, đem quả táo cùng quả đào đặt ở trong sân, xách hai đại xuyến quả nho, đi trước Giang tri huyện trong phủ bái phỏng. Ai biết Giang tri huyện thế nhưng không ở trong phủ, liên quan Giang Đại Lang, Giang tiểu thư, Lý Thục cũng không ở trong phủ, người gác cổng quản gia cũng nói không hảo bọn họ đi đâu vậy.</p>
+<p>Khương Ninh cùng Thẩm Vân Chu liếc nhau, nghĩ thầm tám phần là thương lượng kia hai cái rương tài bảo sự tình, nói không chừng người đã trộm rời đi Phù Thủy huyện, lại đến Lạc Kinh.</p>
+<p>Bất quá hắn cũng không nói nhiều, chỉ đem quả nho lấy ra tới một chuỗi, phân cho người gác cổng quản gia nếm thử.</p>
+<p>Kia người gác cổng nhéo một cái quả nho, lại nghĩ tới một chuyện tới “Khương tiểu ca nhi là vào thành tới nói khai khẩn đất hoang chuyện này đi? Đại nhân cùng phu nhân đều công đạo qua, ngươi chỉ lo đi tìm lão Trương, hắn bảo đảm cho ngươi làm được thỏa đáng.”</p>
+<p>Khương Ninh cảm tạ, lại cùng Thẩm Vân Chu hướng nha môn đi. Trương ca chính ở trong sân cùng mặt khác mấy cái tiểu lại nói chuyện phiếm, thấy Khương Ninh liền cười nói “Mấy ngày trước đây liền biết các ngươi đã trở lại, cũng không ở trong huyện lộ diện, ngươi kia tòa nhà ta giúp đỡ ngươi chăm sóc đến hảo hảo, còn lập công lớn đâu, ngươi nhưng đến hảo hảo cảm ơn ta!”</p>
+<p>Khương Ninh còn không biết đã xảy ra chuyện gì, vội hỏi Trương ca. Mấy cái tiểu lại đều cười, thoạt nhìn đều biết đến bộ dáng “Ngươi phó thác Trương ca giúp ngươi xem tòa nhà, chúng ta liền thường hướng bên kia chuyển động, liền nhân tiện cùng bên kia hộ gia đình thảo nước miếng uống. Kia họ lại một nhà thật là lại túng lại lại, chúng ta lại không thượng nhà hắn thảo thủy đi, ngươi đi rồi không ra năm ngày, gia nhân này thế nhưng liền dọn đi, không dám ở kia ngõ nhỏ ở.”</p>
+<p>Khương Ninh nghe xong cũng thẳng lắc đầu. Kia lại người nhà thật đúng là bắt nạt kẻ yếu, cùng nhà bọn họ đấu, tinh thần đến cùng cái gì dường như, quan sai ở ngõ nhỏ chỉ là chuyển động mấy ngày, thế nhưng liền sợ tới mức dọn đi rồi……</p>
+<p>Bất quá Khương Ninh nhưng thật ra giật mình. Kia lại người nhà phía trước tưởng mua nhà hắn tòa nhà, chính là bởi vì hai nhà sân liền nhau, đả thông cư trú rất là rộng mở.</p>
+<p>Hiện tại lại gia muốn dọn đi, nhà mình chẳng phải là có thể đem kia sân mua tới đả thông?</p>
+<p>Khương Ninh đem chuyện này ghi tạc trong lòng, trước đem quả nho phân cho mấy cái tiểu lại ăn, lại cùng bọn họ đề ra đăng ký đất hoang sự tình.</p>
+<p>Mấy cái tiểu lại liên tục gật đầu “Đại nhân ngày hôm trước liền công đạo qua, ngày mai liền làm Trương ca thượng các ngươi thôn đi một chuyến, ngươi nhưng đến chuẩn bị tốt hơn rượu và thức ăn tới chiêu đãi.”</p>
+<p>Khương Ninh trong lòng tính toán, rất là hoài nghi Giang phu nhân trở về cùng ngày, cùng giang đại nhân đem chuyện đó nhi vừa nói, toàn gia liền lại đi vòng Lạc Kinh, trên mặt lại không hiện, chỉ vui tươi hớn hở đối Trương ca đám người nói “Đó là khẳng định, đêm nay ta liền ở tại quả hồng thụ hẻm bên kia, sáng mai chúng ta cùng thượng Tú Hà thôn đi, Trương ca muốn ăn cái gì, trên đường hiện mua, bọn yêm trong thôn gà vịt ngỗng, ngươi chỉ ai ai chết được không?”</p>
+<p>Đại gia tức khắc cười làm một đoàn.</p>
+<p>Từ nha môn ra tới, hai người liền trở về quả hồng thụ hẻm tòa nhà. Lần này nhân Trương ca đám người nhắc nhở, Khương Ninh nhìn kỹ, quả nhiên thấy lại gia cửa phòng cấm đoán, trên ngạch cửa đều rơi xuống một tầng hôi.</p>
+<p>Ngõ nhỏ nhà khác nhìn Khương Ninh, cũng so với phía trước nhiều một ít kính sợ, bất quá bởi vì phía trước cũng cùng Khương Ninh không có gì ăn tết, không chột dạ tắc không sợ hãi, bởi vậy cũng vẫn là nhiệt tình cùng Khương Ninh chào hỏi.</p>
+<p>Có biết Khương Ninh là đánh Lạc Kinh trở về, còn tò mò cùng Khương Ninh hỏi thăm Lạc Kinh cái dạng gì.</p>
+<p>Khương Ninh chọn thú vị cùng đại gia nói “Đồ vật là thật quý, cùng chúng ta nơi này giống nhau hồ bánh, đến quý hai ba cái tiền, ta ăn cũng không thể so chúng ta nơi này cường.”</p>
+<p>“Phòng ở liền càng quý, chúng ta này tiểu viện, ở Lạc Kinh cũng đến bán mấy trăm quán.”</p>
+<p>“Người cũng đặc biệt nhiều, còn có rất nhiều người Hồ, trên đường bán gì đó đều có, so chúng ta nơi này náo nhiệt gấp mười lần.”</p>
+<p>Khương Ninh nói được miệng khô lưỡi khô, hơn nữa, cũng không thể chính hắn một người nói a, hắn rời đi trong khoảng thời gian này, huyện thành có cái gì bát quái, vài vị cũng đến cho ta chấn động rớt xuống ra tới a?</p>
+<p>Khương Ninh liền nói “Nhà ta bên trong loạn, vừa trở về cái gì cũng chưa thu thập, liền không thỉnh đại gia qua đi làm, trong chốc lát ta mang điểm quả cắt tới, cái nào thím gia phương tiện, chúng ta ngồi hảo hảo lao lao?”</p>
+<p>Nghe Lạc Kinh hiểu biết nghe được không thể tự thoát ra được mọi người liên tục gật đầu, sau đó lập tức tuyển ra một cái thích hợp nói chuyện phiếm nơi “Liền đi hồ nương tử trong nhà đi, nhà nàng giường đất rộng mở, ngồi đến hạ.”</p>
+<p>Hồ thím cũng không có ý kiến, chỉ là ở trong lòng tưởng, quả thiết là cái gì?</p>
+<p>Chờ Khương Ninh bưng cái đại mâm lại đây, mọi người mới biết được, nguyên lai chính là cắt ra hoa quả tươi a!</p>
+<p>Khương Ninh còn muốn hạch giục sinh cây giống đâu, toàn bộ quả tử là không thể cho, tự nhiên muốn cắt thành quả thiết.</p>
+<p>Nhưng này đó hàng xóm lại ở trong lòng tưởng, không hổ là hầu hạ quá tri huyện phu nhân. Có phải hay không chỉ có bọn họ này đó thô ráp thứ dân mới toàn bộ quả tử ôm gặm, nhân gia quan phu nhân đều là cắt thành tiểu khối ăn, có vẻ rất có lễ nghi thực ưu nhã a?</p>
+<p>Bất quá trái cây cắt thành tiểu khối, nhưng thật ra có cái cực đại chỗ tốt, so ôm gặm có thể đằng ra miệng tới, chính là trong miệng nhai tiểu khối trái cây, cũng không chậm trễ lao nhàn cắn.</p>
+<p>Vì thế này một buổi chiều, này đó thím trừ bỏ nghe được Lạc Kinh hiểu biết, cũng đem này mười ngày qua huyện thành bao gồm quanh thân thôn bát quái tin tức toàn bộ ôn tập một lần “…… Lại lão hán đã xem trọng nhà mới, chính là không có tiền mua, chờ đem bên này phòng ở bán. Chỉ là hắn bên này phòng ở quải giá cả cao, lại nhất thời nửa khắc bán không ra đi.”</p>
+<p>“Hắn người này cũng là, lúc trước áp kia Chu Môi nhân nhi tử giá cả ép tới như vậy tàn nhẫn, tới rồi chính hắn nơi này, là một chút cũng không chịu làm. Hắn muốn kia giá cả, có thể bán đi ra ngoài mới là lạ! Chờ hắn nhìn trúng kia phòng ở bị người khác mua đi, ta xem hắn làm sao bây giờ.”</p>
+<p>“Có thể làm sao bây giờ, lại mua tân bái?”</p>
+<p>Khương Ninh đúng lúc ra tới dẫn đường, đem khống phương hướng “Kia lại người nhà hiện giờ đang ở nơi nào đâu? Chẳng lẽ thuê nhà trụ? Nếu là thuê nhà thời gian lâu rồi nhưng không có lời, không bằng hàng chút giá cả sớm bán.”</p>
+<p>Hồ thím vỗ đùi “Hoặc là nói hắn họ lại đâu! Hắn thế nhưng mang theo nhi tử, con dâu, tôn tử, một đại gia người, trụ đến hắn đệ đệ trong nhà đi. Hắn đệ đệ trong nhà cũng không dư dả, hiện giờ trong nhà mãn đều mau trạm không dưới chân, đem hắn đệ đệ gia nhi phu lang tức giận đến mang theo hài tử trở về nhà mẹ đẻ, cái này đảo hảo, đảo làm cho bọn họ trụ rộng mở, càng không đi rồi.”</p>
+<p>Khương Ninh cảm thấy mỹ mãn tiếp thu một đợt tân tin tức, không cấm tại nội tâm cảm thán nói Không hổ là họ lại, thật lại a.</p>
+<p>Hắn đệ đệ cũng họ lại, nhưng nhìn dáng vẻ ở lại phương diện này, xa không bằng hắn.</p>
+<p>Một cái thím liền nói “Hắn đệ đệ một nhà cũng là đáng thương, kia Lại lão hán cả gia đình qua đi khi, nhưng thật ra đem trong nhà gạo thóc đều mang theo qua đi, nhưng là chúng ta người thành phố lại không địa, ai ở trong nhà dốc hết sức truân lương a, cũng liền bán thượng mấy ngày đủ ăn, hiện ăn hiện đi mua là được. Bọn họ mang đi lương có thể ăn dăm ba bữa? Lúc sau toàn là ăn hắn đệ đệ trong nhà, ta nghe nói hắn đệ đệ tự bọn họ trụ qua đi lúc sau, đã mua ba bốn hồi lương.”</p>
+<p>Hồ thím nghe xong, liền nói “Kia chính là thiếu đại đức, hiện tại lương thực nhiều quý a!”</p>
+<p>Lời này vừa ra, lập tức khiến cho những người khác phụ họa, đề tài lập tức chuyển tới lương giới dâng lên mặt trên. Khương Ninh lưu tâm vừa nghe, mới biết được năm nay lương giới so với năm trước, thế nhưng đã trướng nhị thành, còn có tiếp tục dâng lên xu thế.</p>
+<p>Nhà bọn họ chính mình có đất, ăn đều là nhà mình trong đất sản lương thực, cây đậu, cũng liền không có nhọc lòng quá lương giới. Nhưng thật ra đi Lạc Kinh khi, hỏi thăm quá Lạc Kinh lương giới, so Phù Thủy huyện quý rất nhiều.</p>
+<p>Hắn nhớ tới Chu Trạo từ nơi khác hướng Lạc Kinh chuyển lương thực hành vi, ngay từ đầu chỉ tưởng bình thường chênh lệch giá, chẳng lẽ là Lạc Kinh lương giới cũng vẫn luôn ở dâng lên?</p>
+<p>Khương Ninh suy nghĩ trong chốc lát, mới hỏi nói “Hảo sinh sôi, như thế nào lương giới bỗng nhiên trướng? Nhưng có cái gì duyên cớ?”</p>
+<p>Mấy cái thím đều kinh ngạc nhìn Khương Ninh, hồ thím hỏi “Nhà ngươi không phải trong thôn sao? Ngươi không biết? Năm nay vẫn luôn cũng chưa như thế nào trời mưa, nước mưa không đủ, nghe nói cây trồng vụ hè thời điểm, kia mạch viên đều không bằng năm rồi no đủ. Cây trồng vụ hè lúc sau càng là chỉ hạ một hồi mưa bụi, kia mạ đều héo bẹp, toàn chỉ vào gánh thủy tưới ruộng đâu, tri huyện đại nhân còn triệu thợ thủ công tăng cường làm một đám xe chở nước, liền sợ năm nay thu hoạch vụ thu không ra gì.”</p>
+<p>“Nhưng hôm nay nhiệt khô hạn, người cũng chịu không nổi a, hãn ra nhiều, nhân thân tử cũng chột dạ, sao có thể tịnh chỉ vào gánh thủy tưới ruộng a, nhưng ông trời chính là không mưa!”</p>
+<p>“Cũng mất công chúng ta là Biện Châu phía dưới huyện thành, dựa gần kênh đào, bằng không lương giới có thể chỉ trướng hai thành? Những cái đó ly kênh đào xa địa phương, chỉ sợ càng tao ương.”</p>
+<p>“Cũng không nhất định, nói không chừng ly kênh đào xa địa phương, nhân gia trời mưa đâu.”</p>
+<p>“Tóm lại chỉ là trướng điểm giá, thiếu không được lương, liền cám ơn trời đất.”</p>
+<p>Khương Ninh trong lòng cả kinh Xong rồi, nhà bọn họ, thậm chí bọn họ thôn địa, ở cây trồng vụ hè phía trước bị Thẩm Vân Chu bỏ thêm dị năng buff, thu hoạch rất là không tồi, lúc ấy người trong thôn còn rất cao hứng.</p>
+<p>Cây trồng vụ hè lúc sau Thẩm Vân Chu cũng thường thường ở trong thôn chuyển động, tùy cơ quan tâm một chút tân gieo giống chồi non.</p>
+<p>Dẫn tới bọn họ cũng chưa như thế nào ý thức được, xác thật thật lâu không trời mưa………</p>
+<p>Cũng không biết bọn họ rời đi hơn mười ngày, trong thôn mạ có khỏe không? Hơn nữa hiện tại bãi ở Khương Ninh trước mặt còn có một nan đề, bọn họ là tiếp tục dùng dị năng duy trì Tú Hà thôn hoa màu, vẫn là đình chỉ chuyển vận dị năng hành vi, làm Tú Hà thôn hoa màu cùng mặt khác thôn giống nhau, “Thuận theo thiên thời”?</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong75.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong77.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tho_san_gia_bat_quai_phu_lang";
+const NOVEL_TITLE = "Thợ săn gia bát quái phu lang";
+const CHAPTER_TITLE = "Chương 76. Xây dựng ninh thủy thôn 2";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
