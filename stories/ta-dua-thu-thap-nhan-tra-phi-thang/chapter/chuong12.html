@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 12</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ta dựa thu thập nhân tra phi thăng
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 12</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong11.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong13.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Việt Tu Đình tự nhiên cũng không phải ngốc, nghe được bọn họ như vậy nói, nơi nào còn có thể không rõ đây là xảy ra chuyện gì, tức khắc cũng là một trận tức giận.</p>
+<p>Nghe nói xanh thẫm hoa khi hắn cũng không có gì ý tưởng, Kiếm Tông đích xác không thiếu cấp đại sư huynh dưỡng thân thể các loại linh dược, thậm chí phẩm giai đều phải so xanh thẫm hoa cao chút.</p>
+<p>Hơn nữa đồ vật là người ta, bởi vì Hách sư muội nguyện ý ra một phần lực, bọn họ Kiếm Tông cảm kích, không muốn cũng không có gì nhưng nói. Nhưng……</p>
+<p>Nếu đồ vật là Hách sư muội bắt được phải cho đại sư huynh, hắn lại tự mình cầm đi bán chính là mặt khác một chuyện.</p>
+<p>Chỉ là hắn giận về giận, vẫn là kỳ quái nói “Cứ nghe vị này vương đạo hữu tính tình cực hảo, cùng Hách sư muội cũng là tình đầu ý hợp, đối này cực hảo, hiện giờ như thế nào sẽ làm ra loại sự tình này tới.”</p>
+<p>“Được không, không phải người khác nói, mà là chính mình cảm nhận được.”</p>
+<p>Vệ Hi quay đầu nhìn về phía Hách Tĩnh Xu, “Hắn là đối với ngươi thực hảo, làm ngươi mỗi ngày vui vẻ cũng không đau buồn sao?”</p>
+<p>Hách Tĩnh Xu không có mở miệng.</p>
+<p>Đáp án thập phần rõ ràng, không có, thậm chí rất nhiều thời điểm ủy khuất chính là cái này Vương Ba Đạm cấp.</p>
+<p>Bên kia Vương Ba Đạm còn ở thổi phồng, “Kỳ thật cũng không phải ta vận khí tốt, là Tĩnh Xu làm ra, ta tìm cái lấy cớ muốn tới tay, nữ nhân này sao, nàng đồ vật không chính là của ta.”</p>
+<p>“Ngươi vận khí cũng thật hảo, Kiếm Tông đệ tử, còn không phải bình thường đệ tử, đối với ngươi nhất vãng tình thâm.” Kia bằng hữu hâm mộ nói “Khi nào cũng cho ta giới thiệu một cái.”</p>
+<p>Vương Ba Đạm nói “Quay đầu lại quay đầu lại, gặp được tốt nhất định thông tri ngươi.”</p>
+<p>“Này đó đại tông môn đệ tử a, nhìn cao cao tại thượng, kỳ thật hảo thượng thủ thật sự, nói vài câu lời hay liền đem ngươi cùng ngày, quay đầu lại ngươi nói cái gì nàng đều nghe.”</p>
+<p>“Đúng không?”</p>
+<p>“Đương nhiên, ta cùng ngươi nói……” Lời nói đến một nửa, Vương Ba Đạm phát hiện mới vừa rồi đáp lời cũng không phải chính mình bằng hữu, ngạc nhiên nhìn qua đi.</p>
+<p>Lúc này tuyết sa đã bị xốc lên, Vệ Hi đi ra.</p>
+<p>Hắn diện mạo ở khắp nơi mỹ nhân tu hành giới cũng là đỉnh đỉnh đẹp, trên người xuyên lại là thượng phẩm phòng ngự pháp y, lại trang bị che lấp tu vi ngọc bội, trong khoảng thời gian ngắn Vương Ba Đạm căn bản nhìn không ra hắn sâu cạn.</p>
+<p>Chỉ tiểu tâm dò hỏi “Không biết tiền bối là……”</p>
+<p>“Kiếm Tông, Vệ Hi.”</p>
+<p>Vừa nghe Kiếm Tông hai chữ, Vương Ba Đạm tức khắc một trận khẩn trương, ngẫm lại chính mình đều nói qua cái gì mồ hôi lạnh đều xuống dưới. Ngay sau đó nghe được Vệ Hi hai chữ, rồi lại nho nhỏ thở dài nhẹ nhõm một hơi.</p>
+<p>Này Vệ Hi bất quá một cái Luyện Khí một tầng, vận may bị vào Kiếm Tông, uổng có tiểu sư thúc tên tuổi, tu vi lại chỉ là Luyện Khí một tầng không nói, nghe nói liền gà cũng không dám sát, hắn nghe được lại có thể như thế nào.</p>
+<p>Hắn tức khắc cũng không như vậy cung kính, chỉ là bình bình đạm đạm nói “Nguyên lai là Kiếm Tông tiểu sư thúc.”</p>
+<p>Lắng nghe dưới, thế nhưng còn có vài phần trào phúng.</p>
+<p>Hách Tĩnh Xu đương trường liền đứng lên.</p>
+<p>Nàng chính mình chịu khi dễ không có gì, nhưng không thể đối tiểu sư thúc như thế bất kính. Tựa như lúc trước nàng bị lấy đi rất nhiều dược thảo cũng chưa nói cái gì, nhưng chuẩn bị cấp đại sư huynh bị lấy đi, nàng liền sinh khí.</p>
+<p>Nhưng mà đứng ở phía trước tiểu sư thúc nhìn lại tựa hồ một chút ít cũng không chịu ảnh hưởng, còn cười một tiếng, “Quả nhiên là cái ngu xuẩn.”</p>
+<p>Vương Ba Đạm sắc mặt tức khắc biến đổi, chính muốn nói gì, liền nghe Vệ Hi ngay sau đó nói “Ngươi biết ngay nói ta là ai, chẳng lẽ ta sẽ một mình một người đi ra ngoài?”</p>
+<p>Khi ta là ngươi?</p>
+<p>Câu nói kế tiếp hắn chưa nói xuất khẩu, nhưng kia khinh phiêu phiêu đảo qua tới ánh mắt, lại làm Vương Ba Đạm sắc mặt nháy mắt khó coi đến muốn mệnh.</p>
+<p>Thế cho nên hắn cũng chưa trước tiên phản ứng lại đây, phía trước Vệ Hi nói gì đó.</p>
+<p>Chỉ nghĩ “Ngươi bất quá cũng chỉ là một cái Luyện Khí…… Tĩnh Xu?”</p>
+<p>Hách Tĩnh Xu giận mà vén rèm mà ra, Vương Ba Đạm sắc mặt lập tức lại là biến đổi, “Tĩnh Xu ngươi nghe ta nói, những lời này đó bất quá là nam nhân bên ngoài……”</p>
+<p>Bên này động tĩnh pha đại, đã hấp dẫn rất nhiều người ánh mắt.</p>
+<p>Vệ Hi nhìn qua đi “Làm phiền chư vị làm cái mà, chúng ta đánh cá nhân.”</p>
+<p>Mọi người “……”</p>
+<p>Vương Ba Đạm cũng là sửng sốt, ngay sau đó nói “Như thế nào, đại tông môn muốn khi dễ tán tu sao?”</p>
+<p>“Không phải khi dễ tán tu, là thay trời hành đạo.” Vệ Hi há mồm chính là “Ngươi bậc này bại hoại tán tu thanh danh người, không gia tăng thu thập, người khác còn đương tán tu đều là ngươi như vậy đâu.”</p>
+<p>Có người tò mò tránh ở trong đám người ra tiếng “Hắn làm cái gì?”</p>
+<p>“Xem thường đại tông môn đệ tử, cảm thấy một câu một cái chuẩn, sau đó hắn nói nhà nào liền nghe cái gì, làm trời cao trời cao, làm xuống đất xuống đất…… Nga, còn không có thiếu muội nhân gia linh dược, nói là cho biểu muội trị thương, kết quả quay đầu liền bán, như thế nào, ngươi biểu muội sửa tên kêu linh dược cửa hàng sao?”</p>
+<p>“Giống bậc này rác rưởi tồn tại, dễ dàng làm người nghĩ lầm tán tu tất cả đều là loại này cơm mềm ngạnh ăn, ngóng trông bái cái đại tông môn nữ tu hút máu sâu mọt.”</p>
+<p>Hắn một trương miệng ba, dăm ba câu liền đem lời nói đều nói rõ ràng, Vương Ba Đạm nghe được xanh cả mặt.</p>
+<p>Tu hành giới, đặc biệt là tán tu càng chú trọng tự quét tuyết trước cửa, giống loại này người khác tranh đấu cực nhỏ có nhúng tay. Hắn lúc trước kia lời nói, cũng là nhắc nhở chúng mục khuy khuy dưới, chẳng lẽ các ngươi Kiếm Tông không cần thanh danh sao.</p>
+<p>Kết quả hiện giờ bởi vậy……</p>
+<p>Chỉ sợ đừng nói tấu hắn, chính là giết hắn cũng chỉ sẽ có người trầm trồ khen ngợi.</p>
+<p>Này đề cập đến tán tu thanh danh, cùng với bọn họ ích lợi.</p>
+<p>Tán tu vốn là không bị để mắt, nếu là lại đến như vậy một cái thanh danh, càng không bị nhìn ở trong mắt. Huống chi mộng tưởng luôn là phải có, mấy năm nay tán tu cũng có không ít cùng danh môn đại tông đệ tử ở bên nhau, đến lúc này về sau không phải hoàn toàn không cơ hội.</p>
+<p>Còn có người nhận ra Vương Ba Đạm, rốt cuộc người sau ở tán tu trung cũng coi như là có chút thanh danh.</p>
+<p>Này vừa lật phổ cập khoa học, lại càng có vẻ nhân gia nói được là thật sự.</p>
+<p>Hắn kia bằng hữu vốn chính là hồ bằng cẩu hữu, lúc này nơi nào còn dám đứng ở nơi đó cùng hắn cùng một trận chiến tuyến, thậm chí vì không bị đánh, càng là gì đều nói.</p>
+<p>Trong nháy mắt, vô số khinh thường ánh mắt triều Vương Ba Đạm đầu qua đi.</p>
+<p>Hắn vốn dĩ bên ngoài thanh danh rất tốt, đoan đến là rất biết trang. Cũng cũng chỉ có mấy cái cùng hắn cá mè một lứa bằng hữu biết hắn đế, lúc này chính là bị bán.</p>
+<p>“Nghe nói hắn còn bên ngoài thường xuyên nói hắn cùng Kiếm Tông kia nữ tu cảm tình thực hảo, hắn lại cho đối phương thứ gì, kết quả là tương phản a!”</p>
+<p>Việt Tu Đình cũng nhìn về phía Hách Tĩnh Xu, này hắn bắt ngươi đồ vật, truyền thành như vậy ngươi liền cam chịu?</p>
+<p>Hách Tĩnh Xu há miệng thở dốc, cuối cùng nói “Hắn nói hắn là tán tu, trong tay không đồ vật cho ta, nhưng hắn trong lòng là có ta. Vì mặt mũi, ở bên ngoài nói thượng vài câu cũng dễ nghe, bằng không người khác khi ta hảo lừa gạt, người khác nữ tu có cái gì, hắn cũng muốn làm người cho rằng ta có……”</p>
+<p>Hảo gia hỏa, Vệ Hi thẳng hô hảo gia hỏa, như vậy không biết xấu hổ nói đây cũng là</p>
+<p>Có thể nói xuất khẩu?</p>
+<p>“Nằm tao.” Không biết cái nào nữ tu thanh âm truyền đến “Quả nhiên là đại tông môn đệ tử sao, chính là có tiền. Giống ta như vậy, ai muốn cùng ta nói cái này, đầu cho hắn xoá sạch.”</p>
+<p>“Tóm lại lừa cảm tình miễn cưỡng có thể nhẫn, lừa tiền tuyệt đối không được, một cái linh thạch đều không có.”</p>
+<p>Hách Tĩnh Xu “Ta, ta……”</p>
+<p>“Tu Đình, động thủ.” Vệ Hi nói xong kéo qua một cái ghế, giáo dục Hách Tĩnh Xu, “Nghe được sao, ngươi lớn lên hảo, tu vi cũng không kém, sư tôn đãi ngươi cũng hào phóng, có cái gì không tự tin, ngươi như vậy nếu là lại không tự tin, người khác còn có sống hay không.”</p>
+<p>Sự tình có thể phát triển đến này nông nỗi, làm tra nam như thế kiêu ngạo, hắn cảm thấy bên trong chưa chắc không có Hách Tĩnh Xu không tự tin nguyên nhân.</p>
+<p>Bên kia Việt Tu Đình động tác thực mau, bát kiếm liền thượng.</p>
+<p>Một chúng vây xem không những không ai ngăn cản, đem hỗ trợ đem cái bàn đều dời đi, các dọn các, phân biệt phóng tới mặt khác tương đối trống không địa phương.</p>
+<p>Ghế dựa lôi kéo, bên này ăn biên xem.</p>
+<p>“Đừng nói, đều là Kim Đan sơ kỳ, Vương Ba Đạm cùng nhân gia Kiếm Tông đệ tử nhưng vô pháp so.”</p>
+<p>“Hoàn toàn bị đè nặng đánh a!”</p>
+<p>“Hắn không phải nói chính mình Kim Đan kết đến đặc biệt kết bạn, cùng cảnh giới nội vô địch sao?”</p>
+<p>“Này cũng kêu vô địch nói, kia ta về sau có phải hay không có thể đi ra ngoài thổi ta có thể vượt cấp chiến đấu…… Rốt cuộc đánh thua cũng kêu có thể chiến đấu, ta này có thể so hắn nói được càng giống lời nói thật.”</p>
+<p>Vương Ba Đạm không cần lắng nghe liền biết, hôm nay qua đi, hắn dĩ vãng tích góp những cái đó hảo thanh danh toàn không có.</p>
+<p>Đáng giận,</p>
+<p>Rõ ràng mỗi cái bàn đều hẳn là có cách âm trận, hắn đều mở ra, như thế nào còn sẽ bị nghe được……</p>
+<p>Vệ Hi còn lại là xem xét liếc mắt một cái hắn cái kia bằng hữu, người sau chính tránh ở trong đám người, xem đến vẻ mặt vui sướng. Cẩn thận nghe tiếng tim đập, còn có thể nghe được 【 làm tiểu tử ngươi trang bức, đừng cho là ta không biết ngươi nói là phải cho ta giới thiệu đại tông môn nữ tu, sau lưng lại nói thầm ta tức xấu lại xuẩn, nào có người có thể coi trọng. 】</p>
+<p>Không sai, cách âm trận đúng là hắn cấp tắt đi.</p>
+<p>Nhưng thật ra không nghĩ tới vừa lúc đụng tới Kiếm Tông người, làm hắn cũng suýt nữa đi theo chịu liên lụy. Hắn chỉ là tưởng bị người nghe thấy, sau đó truyền ra đi làm đối phương thanh danh tẫn hủy thôi.</p>
+<p>“Không được a, này liền bò?”</p>
+<p>“Vừa mới kia nhất chiêu là Kiếm Tông là du</p>
+<p>Long</p>
+<p>Ngâm đi, ta trước kia gặp qua một lần……”</p>
+<p>Chờ đến Vệ Hi lại nhìn về phía Vương Ba Đạm khi, này người đã bị đánh đến mẹ đều phải nhận không ra. Hắn cười lạnh một tiếng “Chính thứ lại làm ta nghe được ngươi bên ngoài nói hươu nói vượn, liền cho ngươi ba điều chân toàn đánh gãy.”</p>
+<p>Nói âm vừa ra, chân trời bắt đầu có mây tụ tập mà đến.</p>
+<p>“Kiếp vân?”</p>
+<p>“Là ai muốn độ kiếp? Độ kiếp chẳng lẽ không đều là trước tiên tìm hảo địa phương sao, nào có ở phố xá sầm uất?”</p>
+<p>Mọi người ngươi nhìn xem ta, ta nhìn xem ngươi.</p>
+<p>Ngay cả Việt Tu Đình cùng Hách Tĩnh Xu cũng không rảnh lo tra nam, tò mò tả hữu nhìn xung quanh, kết quả liền nghe bọn hắn tiểu sư thúc mở miệng nói</p>
+<p>“Đừng tìm, là ta.”</p>
+<p>Hắn Trúc Cơ.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong11.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong13.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "ta-dua-thu-thap-nhan-tra-phi-thang";
+const NOVEL_TITLE = "Ta dựa thu thập nhân tra phi thăng";
+const CHAPTER_TITLE = "Chương 12";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
