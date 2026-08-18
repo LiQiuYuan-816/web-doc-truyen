@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 24</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Một giấc ngủ dậy ta kế thừa địa cầu [ tinh tế ]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 24</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong23.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong25.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Oa……”</p>
+<p>“Oa……”</p>
+<p>“Oa……”</p>
+<p>Bước vào cửa hàng bán hoa sau mọi người không hẹn mà cùng “Oa” ra tiếng.</p>
+<p>Dưỡng lão phố lão bản nhóm phổ biến có tiền, các nàng có thể nói chính là Tinh Võng Thương Thành các đại thực vật cửa hàng khách quen!</p>
+<p>Nhưng nói thực ra một câu —— các nàng thật sự chưa từng có gặp qua như vậy đẹp cửa hàng bán hoa!!!</p>
+<p>Rõ ràng nó trang hoàng rất đơn giản nha, vì cái gì nó giả bộ tới như vậy đẹp? Vì cái gì là có thể như vậy đẹp a?</p>
+<p>Phảng phất đi tới tiên cảnh!</p>
+<p>Kìm nén không được ngo ngoe rục rịch đôi tay, mọi người cầm lòng không đậu duỗi tay đụng vào tinh mỹ hoa khí trung đóa hoa nhi, có chút tiểu nữ sinh thậm chí còn sấn Tạ Tinh Thần không chú ý khi nhẹ nhàng lôi kéo ô vuông cửa sổ lớn đài bên rũ xuống lụa trắng.</p>
+<p>Đương lụa trắng tung bay mang đến một trận thanh phong khi, ô vuông cửa sổ lớn trên đài bày hoa tươi cũng phát ra càng thanh nhã mùi hương.</p>
+<p>Hảo, hảo hảo nghe nha.</p>
+<p>Xinh đẹp nữ sinh gắt gao nhìn chằm chằm cửa sổ kia thúc tạo hình đơn giản hoa nhài, nàng giật mình miệng khẽ nhếch.</p>
+<p>Cửa sổ thượng hoa nhài là Tạ Tinh Thần chọn lựa kỹ càng thành quả.</p>
+<p>Nó lá cây bị Tạ Tinh Thần toàn bộ tháo xuống, chỉ để lại tiểu xảo lịch sự tao nhã nửa khai màu trắng nụ hoa, theo gió di động gian lộ ra ẩn ẩn hương khí.</p>
+<p>Loại này hương khí bất đồng với nữ sinh đã từng ngửi qua mặt khác hoa tươi hương khí, nó có vẻ càng nhẹ, càng nhu, càng tuyển nhã, ở lơ đãng trung khiến cho ngươi thích thượng nó.</p>
+<p>“Lão bản, này đó hoa là các ngươi tinh cầu đặc sản sao?” Alice chỉ vào tiểu xảo tú khí hoa nhài, nhỏ giọng hỏi.</p>
+<p>Tạ Tinh Thần cười tủm tỉm trả lời “Đúng vậy, nữ sĩ. Nhà này địa cầu cửa hàng bán toàn bộ hoa tươi đều là địa cầu đặc có hoa cỏ nga!”</p>
+<p>Tư nhân tinh cầu chủ tinh võng khai cửa hàng bán chính mình tinh cầu “Đặc sản” cũng không phải một kiện kỳ quái sự, hoàn toàn tương phản, việc này nhưng quá bình thường.</p>
+<p>Bình thường đến Alice đều cảm thấy vừa mới chính mình đang hỏi vô nghĩa.</p>
+<p>Alice ngượng ngùng cười cười, không lời nói tìm nói giảm bớt xấu hổ “Ngươi nơi này hoa khai cũng thật hảo a, hơn nữa giá cả cũng không tính thực quý.”</p>
+<p>Nàng nhìn trúng cái này kêu hoa nhài tiểu bạch hoa một chi mới 199 tinh tệ, dễ nghe như vậy hoa mới bán 199 tinh tệ, đáng giá!</p>
+<p>Cho rằng Tạ Tinh Thần cửa hàng bán chính là bình thường cây xanh, Alice đối Tạ Tinh Thần cửa hàng định giá bất giác chút nào dị dạng, nhìn một vòng, nàng chỉ cảm thấy cửa hàng này thật rất không tồi, ít nhất nó gia hoa cỏ giá cả rất là công đạo!</p>
+<p>Không kém tiền nàng tùy tay mua hai cái từ trong suốt xanh ngọc thạch hoa khí trang cỡ trung hoa nhài rổ cùng cỡ trung hoa oải hương lẵng hoa.</p>
+<p>Tạ Tinh Thần bán hoa thực linh hoạt, nói là lẵng hoa, nhưng kỳ thật trừ mấy cái cố định phối hợp ngoại, toàn bộ mở ra khách hàng tự chọn.</p>
+<p>Tạ Tinh Thần Thật tốt một cái kiếm lẵng hoa tiền cơ hội!</p>
+<p>Cỡ trung lẵng hoa nhưng tuyển 10 chi hoa tươi, Alice không có lựa chọn hỗn đáp, nàng trực tiếp tuyển đơn thuần hoa nhài rổ cùng hoa oải hương lẵng hoa.</p>
+<p>Hơn nữa hoa khí, một cái cỡ trung ở trong chứa 10 chi hoa nhài hoa nhài rổ giá bán là 2000 tinh tệ, mà hoa oải hương lẵng hoa còn lại là 3000 tinh tệ.</p>
+<p>Ở trên quang não hạ đơn sau, Alice thanh toán 5000 tinh tệ.</p>
+<p>【 leng keng, chúc mừng người chơi hoàn thành hệ thống kinh doanh nhiệm vụ “Khai một gian cửa hàng bán hoa”; nhiệm vụ khen thưởng 700 kinh nghiệm giá trị. 】</p>
+<p>【 hệ thống Leng keng, thí nghiệm đến người chơi cấp bậc đạt tới lv2, hệ thống thương thành nhưng mua sắm thương phẩm đã đổi mới. 】</p>
+<p>Alice đài thọ sau hệ thống nhắc nhở ứng vang lên.</p>
+<p>Mới vừa tấn chức vì lv2 cấp bậc, Tạ Tinh Thần tâm tình nói không nên lời tốt đẹp.</p>
+<p>Không nói hai lời, Tạ Tinh Thần tặng Alice một trương tạp, này trương tạp là —— địa cầu cửa hàng ưu tiên mua sắm tạp.</p>
+<p>Tạ Tinh Thần đem tấm card đưa cho Alice, Alice tiếp nhận sau, ưu tiên mua sắm tạp nháy mắt hóa thành đầy trời cánh hoa.</p>
+<p>Lưu loát cánh hoa vòng quanh Alice dạo qua một vòng, cuối cùng chậm rãi biến mất không thấy.</p>
+<p>Alice …… Anh, này cũng quá đẹp bá! Này hoàn toàn ngăn cản không được a!</p>
+<p>Thiếu nữ tâm đều phải ra tới.</p>
+<p>Tạ Tinh Thần từ nàng kia bulingbuling trong ánh mắt cảm nhận được trước mắt nữ hài nhi đến tột cùng có bao nhiêu thích loại này trung nhị ma pháp cảnh tượng sau hắn cười.</p>
+<p>Ma pháp quả nhiên là cái thứ tốt!</p>
+<p>Ma pháp đặc hiệu đồng dạng là cái thứ tốt!</p>
+<p>Tạ Tinh Thần khóe miệng giơ lên “Nữ sĩ, ngài mới vừa lĩnh chính là chúng ta cửa hàng ưu tiên mua sắm tạp, bằng này tạp, ngài đem có được mười lần cửa hàng thương phẩm ưu tiên mua sắm cơ hội.”</p>
+<p>Cái gọi là ưu tiên mua sắm cơ hội là chỉ Ở thương phẩm đem bán trước 5 phút, có được này tạp khách hàng nhưng ưu tiên mua sắm, thả mỗi người mỗi loại thương phẩm có thả chỉ có thể mua sắm một kiện.</p>
+<p>Loại này ưu tiên mua sắm quyền tạp đối khách hàng mà nói không tính khó được, trừ phi đưa ra này trương ưu tiên mua sắm tạp chính là siêu cấp đại cửa hàng, như thế, này trương tạp là có thể dùng “Trân quý” hai chữ hình dung.</p>
+<p>Tạ Tinh Thần như vậy trịnh trọng chuyện lạ làm Alice hơi kinh ngạc, nhưng……</p>
+<p>Nghiêm túc quan sát nhà này cửa hàng bán hoa sau Alice cảm thấy nàng đã hiểu!</p>
+<p>Như vậy đẹp cửa hàng gia!</p>
+<p>Cái nào nữ hài tử tiến vào có thể khống chế được chính mình đôi tay oa?</p>
+<p>Cho nên nó khẳng định có thể thực mau biến thành một nhà võng hồng cửa hàng!</p>
+<p>Đến lúc đó chính mình ưu tiên mua sắm tạp là có thể có tác dụng lạp.</p>
+<p>Tư cập này, Alice vô cùng cao hứng cùng Tạ Tinh Thần nói lời cảm tạ, theo sau mỹ tư tư rời đi.</p>
+<p>Liền ở nàng bước ra cửa hàng bán hoa môn kia một khắc, một đám nhìn giống học sinh người trẻ tuổi nghênh diện mà đến.</p>
+<p>Tâm tình thực tốt Alice cấp tân các khách nhân làm hạ vị trí, trước làm này đàn học sinh tử tiến vào mua sắm.</p>
+<p>Không từng tưởng này đàn học sinh tử cũng không phải tới mua sắm mà là tới tìm tra?</p>
+<p>“Tạ đồng học đã lâu không thấy nha.”</p>
+<p>Bốn cái học sinh cùng gei máng giống nhau túm túm đứng ở Tạ Tinh Thần trước mặt.</p>
+<p>Nhìn đến bọn họ động tác, Tạ Tinh Thần mãn đầu óc dấu chấm hỏi, nguyên bản thăng cấp vui sướng bị nhìn đến sâu phiền lòng hòa tan.</p>
+<p>Thật là, vì cái gì này đàn “Đồng học” có thể như vậy âm hồn không tan?</p>
+<p>Hắn phía trước xóa rớt bọn họ thông tin phương thức chính là không nghĩ tái kiến bọn họ, kết quả……</p>
+<p>Quá đen đủi!</p>
+<p>Khai trương đại cát, Tạ Tinh Thần không nghĩ vận dụng vũ lực, bọn họ cũng không đáng vận dụng vũ lực.</p>
+<p>Hắn liền xem thường đều lười đến phiên một cái, chỉ tùy tiện có lệ ứng phó “Khách nhân các ngươi hảo, tưởng tuyển cái gì hoa chính mình tuyển đi thôi.”</p>
+<p>Đối Tạ Tinh Thần tới nói, này đã đủ cấp này đàn đồng học mặt mũi.</p>
+<p>Nhưng mà ngốc bức chỗ vì ngốc bức chính là bởi vì bọn họ…… Nghe không hiểu tiếng người.</p>
+<p>Thấy Tạ Tinh Thần thái độ này, bọn họ cư nhiên run đi lên.</p>
+<p>Từng cái ăn chén mì phản chén đế người giờ phút này hận không thể lỗ mũi hướng lên trời.</p>
+<p>Đi đầu Nguy Trạch Minh ngoài cười nhưng trong không cười đối với Tạ Tinh Thần nói “Nghe nói lão đồng học khai gia cửa hàng bán hoa, chúng ta lại đây giúp đỡ một chút.”</p>
+<p>Theo sau nhìn quanh một vòng, ra vẻ khó xử nói “Cũng không biết tạ đồng học sao lại thế này, ngươi này đều thành một người tinh cầu chủ, kết quả cư nhiên ở chỗ này khai cửa hàng bán bình thường cây xanh?”</p>
+<p>Nói đến “Tinh cầu chủ” ba chữ, Nguy Trạch Minh nghiến răng nghiến lợi.</p>
+<p>Từ nhỏ hắn liền mộng tưởng có được một viên thuộc về chính mình gieo trồng tinh, nhưng cái này suốt đời khó có thể thực hiện nguyện vọng như thế đơn giản đã bị chính mình nhất khinh thường người thực hiện?</p>
+<p>Còn chưa chính thức tốt nghiệp liền có được một viên gieo trồng tinh, như vậy thành tựu cho dù phóng tới giáo sử cũng thực có thể đánh.</p>
+<p>Nghe vậy, Tạ Tinh Thần sợ ngây người.</p>
+<p>Thời buổi này vai ác cư nhiên như thế ngốc bạch ngọt?</p>
+<p>Tới tìm tra phía trước đều không mang theo làm điểm điều tra?</p>
+<p>Như vậy chỉ số thông minh bồn địa là hiện thực tồn tại sao?</p>
+<p>Nhưng mà này bốn cái lão đồng học dùng sự thật nói cho Tạ Tinh Thần, bọn họ chính là hiện thực tồn tại cao đẳng trong học viện chỉ số thông minh bồn địa.</p>
+<p>Alex cười nhạo “Vốn dĩ cho rằng ngươi hỗn khá tốt, hiện tại xem ra cũng bất quá như vậy, không nghĩ tới ngươi rời đi trường học cư nhiên sẽ hỗn thảm như vậy.”</p>
+<p>Alvin đi theo gật đầu nói “Nhân gia Du Trừng đều thành tứ cấp gieo trồng sư, nhưng ngươi lại ở chỗ này bán bình thường thực vật.”</p>
+<p>Cuối cùng, Mông Đồng Đồng tính toán chọc tâm “Ta thật thế Nghê lão sư thương tâm, chính mình thích nhất học sinh còn không có tốt nghiệp liền trở nên như thế sa đọa.”</p>
+<p>Bốn người âm dương quái khí nói chuyện giọng lệnh người nghe liền không thoải mái.</p>
+<p>Lời này nói chung quanh khách hàng đều nhịn không được nhíu mày.</p>
+<p>Này đó học sinh nói chuyện như thế nào như vậy khó nghe.</p>
+<p>Bán bình thường cây xanh làm sao vậy?</p>
+<p>Toàn Tinh Võng Thương Thành như vậy nhiều bán bình thường cây xanh các ngươi có bản lĩnh nhưng thật ra từng nhà tìm tra qua đi a.</p>
+<p>“Đây là nào sở học giáo học sinh? Nói chuyện cũng quá không có giáo dưỡng đi.”</p>
+<p>“Xem các ngươi mấy cái tuổi còn trẻ, sao có thể nói như vậy lời nói đâu?”</p>
+<p>“Lời này khó nghe, nhân phẩm không được, còn đồng học đâu, nhân gia khai trương cùng ngày không tới chúc mừng ngược lại tới tìm tra, các ngươi không cảm thấy chính mình hành vi khó coi sao?”</p>
+<p>Vây xem quần chúng nghị luận sôi nổi, nhưng chút nào không ảnh hưởng da mặt dày bốn người tổ.</p>
+<p>Hơn nữa không biết bốn người này có phải hay không thiếu ngược, vây xem lên án công khai bọn họ người càng nhiều, bọn họ ngược lại càng hăng say càng kiêu ngạo.</p>
+<p>Tạ Tinh Thần Mẹ nó thiểu năng trí tuệ jpg</p>
+<p>Tạ Tinh Thần mỉm cười )</p>
+<p>“Các ngươi nói sa đọa là chỉ trước tiên bắt được bằng tốt nghiệp vẫn là ta trở thành tinh cầu chủ?”</p>
+<p>Lời này vừa nói ra, toàn trường vắng lặng, sau một lúc lâu, cười vang thanh vang tận mây xanh.</p>
+<p>Thấy Tạ Tinh Thần trái lại chọc bọn họ, bốn người mau tức ch·ế·t rồi.</p>
+<p>Bọn họ vì cái gì sẽ đến nơi này chính là bởi vì bọn họ biết cái này không bị đại gia thích Tạ Tinh Thần cư nhiên mua một viên nghi cư tinh cầu trở thành tinh cầu chủ.</p>
+<p>Cho nên ở biết hắn muốn ở Tinh Võng Thương Thành khai một nhà cửa hàng cũng bán tinh cầu đặc sản khi, bọn họ mới quyết định lại đây, tưởng đem Tạ Tinh Thần cửa hàng cấp giảo thất bại.</p>
+<p>Ai ngờ đến Tạ Tinh Thần cư nhiên có thể tinh chuẩn đả kích bọn họ chỗ đau!</p>
+<p>Bị chọc đến chỗ đau bốn người mạnh miệng, chua phản bác nói “Còn không phải là một cái tinh cầu chủ sao? Này có gì đặc biệt hơn người.”</p>
+<p>Tạ Tinh Thần mỉm cười buông tay “Đúng rồi, còn không phải là một cái tinh cầu chủ sao, xác thật không có gì ghê gớm.”</p>
+<p>Tạ Tinh Thần nói chưa dứt lời, vừa nói, Alvin bốn người tâm can tì phổi thận đều ở đau.</p>
+<p>Có gì đặc biệt hơn người?</p>
+<p>Ha hả, chính là thực ghê gớm a!</p>
+<p>Nếu không bọn họ sao có thể như thế ghen ghét.</p>
+<p>Lòng đố kỵ hừng hực thiêu đốt, bốn người ngạnh căng “Đương ai không có tư nhân tinh cầu dường như, Du Trừng cũng sắp trở thành tinh cầu chủ, ngươi nhưng không phải chúng ta ban con bò cạp ba ba độc nhất phân, đừng tưởng rằng chính mình thực ngưu.”</p>
+<p>Tạ Tinh Thần bất nhã trợn trắng mắt, giờ phút này, hắn thanh tuấn trên mặt tràn đầy vô ngữ.</p>
+<p>“Du Trừng phải làm tinh cầu chủ cùng các ngươi bốn người có quan hệ gì sao? Có thể hay không đừng như vậy khôi hài, đừng làm đến cùng các ngươi phải làm tinh cầu chủ giống nhau ok? Làm người vẫn là phải có điểm tự mình hiểu lấy, liền các ngươi như vậy, đừng nói tinh cầu chủ, liền trang viên chủ đều không thể, các bạn học, các ngươi vẫn là tắm rửa ngủ đi, trong mộng cái gì đều có.”</p>
+<p>“Phốc…… Mắng……”</p>
+<p>“Ha ha ha ha ha ha ha……”</p>
+<p>“Vị này tiểu ca nói chuyện cũng thật hảo chơi QvQ!”</p>
+<p>Chung quanh người bị Tạ Tinh Thần chọc cười, ngay cả đi ra ngoài đi dạo một vòng trở về Nghê Khôn Kỳ cũng nhịn không được cười ha ha.</p>
+<p>Mọi người tiếng cười nhạo làm Alvin bốn người sắc mặt từ hồng biến lục lại từ lục biến tím cuối cùng biến hắc, muôn màu muôn vẻ mặt bộ nhan sắc lần nữa thuyết minh bọn họ là như thế “Vô tâm cơ”.</p>
+<p>Như vậy vui mừng lộ rõ trên nét mặt lại không tốt lời nói, còn nghĩ đến hắn nơi này đương vai ác?</p>
+<p>Tạ Tinh Thần ) hy vọng trên thế giới này sở hữu vai ác đều như vậy!</p>
+<p>Bốn người ngón tay run rẩy chỉ vào Tạ Tinh Thần, bị khí đến nói không nên lời lời nói.</p>
+<p>Tạ Tinh Thần bình tĩnh nhún vai, học bọn họ âm dương quái khí nói “Các ngươi vẫn là nhanh lên đi thôi, nhưng ngàn vạn đừng tức giận hư a, tức điên cần phải chính mình tiêu tiền trị liệu lạc.”</p>
+<p>Liền…… Tức ch·ế·t người không đền mạng.</p>
+<p>Vốn định tìm tra bốn người bị Tạ Tinh Thần nói mấy câu khí đến tâm ngạnh.</p>
+<p>Liền ở bọn họ bạo khởi nghĩ đến ngạnh thời điểm, bên cạnh bỗng nhiên truyền đến một tiếng quen thuộc ho khan thanh.</p>
+<p>Trong lòng có loại dự cảm bất hảo, bốn người cứng đờ quay đầu lại, kết quả thấy được —— Nghê Khôn Kỳ.</p>
+<p>Sắc mặt nháy mắt trắng bệch.</p>
+<p>Tiếp theo “A” hét thảm một tiếng, bốn người vừa lăn vừa bò đào tẩu.</p>
+<p>Tạ Tinh Thần ???</p>
+<p>Cái gì gà nhi ngoạn ý jpg</p>
+<p>Tạ Tinh Thần trong lòng quá phức tạp.</p>
+<p>Quay đầu lại, hắn uyển chuyển kiến nghị nói “Lão sư, ta cảm thấy chúng ta trường học về sau chiêu học sinh thời điểm có phải hay không đến hơi chút nghiêm cẩn điểm? Ít nhất muốn trắc một trắc chỉ số thông minh?”</p>
+<p>Nghê Khôn Kỳ tức giận trừng mắt nhìn hắn liếc mắt một cái, nhưng khóe miệng lại cũng nhịn không được hơi hơi giơ lên.</p>
+<p>Nghê Khôn Kỳ bất đắc dĩ “Liền ngươi miệng lợi hại.”</p>
+<p>Tạ Tinh Thần không cho là đúng “Là bọn họ quá yếu.”</p>
+<p>Ngụ ý ta miệng cũng không lợi hại.</p>
+<p>Nghê Khôn Kỳ nghe vậy, bất đắc dĩ điểm điểm Tạ Tinh Thần đầu “Ngươi a, cũng liền gần nhất tiến bộ điểm, trước kia ngươi nhưng đều bị người vui đùa chơi.”</p>
+<p>Tạ Tinh Thần trầm mặc.</p>
+<p>Cũng không phải là sao, liền này đó tùy tiện là có thể ứng phó quá khứ tiểu ngốc bức, trước kia cư nhiên còn có thể hống đến nguyên chủ Đoàn Đoàn chuyển.</p>
+<p>Ai ~ nguyên chủ thật đúng là cái đại oan loại!</p>
+<p>“Nhân tư nhân nguyên nhân quấy rầy đại gia mua sắm thật sự ngượng ngùng a! Vì biểu xin lỗi, bổn ngày trước một trăm danh khách hàng mua sắm đem đưa tặng giảm giá 20% ưu đãi thả tùy đơn tặng kèm ưu tiên mua sắm tạp một trương.”</p>
+<p>Tạ Tinh Thần ngượng ngùng cùng cửa hàng bán hoa xem náo nhiệt khách hàng xin lỗi cũng phụ thượng ưu đãi tâm ý.</p>
+<p>Cái này làm cho đứng ở cửa xem xong náo nhiệt tính toán rời đi Alice xoay người phản hồi.</p>
+<p>Alice kinh hỉ nhìn về phía Tạ Tinh Thần “Lão bản, kia ta hiện tại lại mua sắm nói có thể hay không nhiều lấy một trương ưu tiên mua sắm tạp nha?”</p>
+<p>Tạ Tinh Thần còn không có đáp lời đâu, Alice liền toản lỗ hổng “Ta vừa mới chính là trước tiên bắt được khen thưởng nha, cho nên hiện tại tân khen thưởng hẳn là cũng có ta phân đi? Bằng không có phải hay không có điểm không công bằng nha?”</p>
+<p>Tạ Tinh Thần tưởng tượng, cảm thấy cũng không phải cái gì đại sự, nhiều cấp điểm ưu đãi coi như là cho đệ một khách quen phúc lợi.</p>
+<p>Tạ Tinh Thần gật đầu đáp ứng “Đương nhiên có thể.”</p>
+<p>Thu được minh xác hồi phục Alice thỏa mãn cười.</p>
+<p>Nàng mục tiêu minh xác đem cửa sổ nhất thấy được cũng nhất phấn nộn xinh đẹp phấn toản cẩm chướng đương trường gia nhập mua sắm xe.</p>
+<p>Thêm mua sau Alice thực cơ linh đem hoa tươi chuyển phát nhanh phái đưa thời gian tuyển ở một tuần sau, cuối cùng nàng chạy đến giả thuyết mua sắm đài tính tiền, nhiều thanh toán 10 tinh tệ, tuyển khắp nơi thế giới giả thuyết đóng gói mang đi.</p>
+<p>Tạ Tinh Thần nhìn thấy Alice cái này lựa chọn lược cảm kinh ngạc “Alice tiểu thư, ngài cư nhiên càng thích phấn toản cẩm chướng?”</p>
+<p>Tạ Tinh Thần lời này cũng không phải là bắn tên không đích.</p>
+<p>Alice mua hai lần hoa tươi, chỉ có lần này nàng lựa chọn thêm vào nhiều phó 10 tinh tệ tiến hành giả thuyết tính tiền, cho nên nàng yêu tha thiết loại nào hoa không phải thực rõ ràng sao?</p>
+<p>Duy nhất làm người cảm thấy ngoài ý muốn chính là Alice thích phấn toản cẩm chướng, nhưng nàng lần đầu tiên mua sắm cư nhiên là hoa nhài cùng hoa oải hương.</p>
+<p>Alice ngượng ngùng đem đầu vùi ở phấn toản cẩm chướng bó hoa trung, khuôn mặt ửng đỏ nói “Bởi vì hoa nhài quá dễ ngửi, cho nên ta liền nhịn không được trước mua hoa nhài.”</p>
+<p>Tạ Tinh Thần Đã hiểu, lại là một cái bị phấn toản cẩm chướng nhan giá trị hấp dẫn, nhưng cuối cùng vẫn là luyến tiếc hoa nhài hương vị nữ hài tử.</p>
+<p>Alice không có nói sai, tuy rằng thực tế ảo thương thành giả thuyết độ không đạt được hiện thực tiêu chuẩn, nhưng nàng ngửi được hoa nhài hương vị sau xác thật cảm thấy thực thoải mái, đúng là loại này thoải mái làm nàng không chút do dự hạ đơn hoa nhài.</p>
+<p>Đến nỗi hoa oải hương?</p>
+<p>Đây là nàng mua cho chính mình đệ đệ!</p>
+<p>Hắn đệ đệ thích màu lam, màu tím, cho nên nàng cấp đệ đệ mua hoa oải hương lẵng hoa.</p>
+<p>Lại là một trận cánh hoa quay chung quanh đặc hiệu, Alice được đến đệ nhị trương địa cầu cửa hàng ưu tiên mua sắm tạp.</p>
+<p>Tuy rằng hiện tại địa cầu cửa hàng còn gần là một nhà mới vừa khai trương tiểu hoa cửa hàng, nhưng Alice linh nghiệm giác quan thứ sáu nói cho nàng tương lai muốn nhiều hơn độn ưu tiên tạp!</p>
+<p>Bởi vậy Alice rời đi trước, nhỏ giọng hỏi Tạ Tinh Thần “Lão bản, nhà ngươi cũng là khai trương ba ngày đều sẽ làm hoạt động đưa ưu tiên mua sắm tạp sao?”</p>
+<p>Alice hỏi thực giảo hoạt, sao nghe dưới là hỏi chuyện, thực tế ở dẫn đường Tạ Tinh Thần làm ba ngày đưa tạp hoạt động.</p>
+<p>Tạ Tinh Thần ngay từ đầu còn không có phản ứng lại đây, cho rằng Alice thật sự đang hỏi khai trương hoạt động, chờ hắn trả lời “Đúng vậy” sau, hắn mới hiểu được.</p>
+<p>Alice vui vẻ ra mặt “Oa, thật sự nha? Này thật là thật tốt quá! Đúng rồi lão bản, ngày mai trước vài tên mua sắm đưa tạp nha?”</p>
+<p>Toàn trường không chỉ có Alice một cái người thông minh!</p>
+<p>Rất nhiều khách nhân tiến vào đi dạo một vòng sau đồng dạng cảm thấy địa cầu cửa hàng là cái tiềm lực cổ.</p>
+<p>Cho dù hiện tại nó ưu tiên tạp mua sắm tạp tác dụng không lớn, nhưng tích cóp một tích cóp, có lẽ vài năm sau nó chính là một cái bảo bối! Vì thế sôi nổi dựng lên lỗ tai.</p>
+<p>Tạ Tinh Thần dở khóc dở cười, thấy đại gia hứng thú bừng bừng, trầm ngâm một lát sau hắn ngữ khí chân thành đối sở có người nói “Nếu như vậy, kia ta cũng không làm hư, ngày mai cùng hậu thiên cùng hôm nay giống nhau, ở bổn tiệm tiêu phí trước một trăm danh khách hàng đều đưa một trương ưu tiên tạp tốt không? Hơn nữa thời gian này dựa theo rạng sáng tính, rạng sáng vừa đến, tự động đổi mới danh ngạch.”</p>
+<p>Chân thành, vô kịch bản.</p>
+<p>Alice cao hứng, bàng thính quần chúng cũng cao hứng.</p>
+<p>Mọi người khẳng khái cấp Tạ Tinh Thần “Địa cầu cửa hàng” điểm cất chứa, chú ý, cũng giả thiết hảo lần tới mua sắm thời gian sau, cảm thấy mỹ mãn tính tiền rời đi.</p>
+<p>Nguyên bản Tạ Tinh Thần cho rằng không có gì dùng giả thuyết quầy thu ngân khai trương cùng ngày cư nhiên ngoài ý muốn có tác dụng.</p>
+<p>Rất nhiều người mua phấn toản cẩm chướng, hoa hồng đỏ, hoa oải hương khách nhân cư nhiên nguyện ý ôm chúng nó mãn thế giới giả thuyết chạy.</p>
+<p>Cái này phát triển Tạ Tinh Thần cũng là không thể tưởng được.</p>
+<p>Nghê Khôn Kỳ đối này rất là bất đắc dĩ “Ngươi nha, thật là nên thông minh thời điểm không thông minh! Này không phải rõ ràng sự sao? Ngươi trong tiệm bán hoa đẹp, cho nên tự nhiên có người nguyện ý nhiều ra điểm tiền khoe khoang khoe khoang.”</p>
+<p>Đối có thể mua nổi hoa tươi người tới nói 10 tinh tệ không quý.</p>
+<p>Nhiều ra 10 tinh tệ là có thể phủng hoa tươi ở Tinh Võng khoe ra 10 giờ, quả thực huyết kiếm!</p>
+<p>Tạ Tinh Thần emmm…… Liền không phải thực hiểu các ngươi tinh tế người.</p>
+<p>Nghê Khôn Kỳ tiếp tục nói “Ngươi có hay không nghĩ tới đem ngươi trên tinh cầu này đó thực vật thượng truyền tới hệ thống trang hoàng không gian?”</p>
+<p>Tạ Tinh Thần khó hiểu “Thượng truyền tới hệ thống trang hoàng không gian?”</p>
+<p>Nghê Khôn Kỳ gật đầu “Đúng vậy, thượng truyền sau ngươi có thể lựa chọn cùng hệ thống ký hợp đồng, đến lúc đó ngươi là có thể tự hành thiết trí mua sắm giá cả, thấp nhất nhưng thiết trí vì 0 tinh tệ, tối cao nhưng thiết trí 1000 tinh tệ, vượt qua 1000 tinh tệ giá cả cần đệ trình thương thành xét duyệt, đương nhiên, kiếm được tiền đến cùng thương thành 55 phân.”</p>
+<p>Tạ Tinh Thần bừng tỉnh đại ngộ.</p>
+<p>Trách không được trang hoàng không gian vật phẩm trang sức nhiều như vậy, nguyên lai là khách hàng chính mình thượng truyền!</p>
+<p>Bần cùng làm công nhân tâm động!</p>
+<p>Nhưng…… Tâm động cũng không phải hiện tại hành động.</p>
+<p>Hắn được ngay chính mình nhiệm vụ trước.</p>
+<p>Tuy rằng không có đã làm sinh ý, nhưng hắn cũng biết độc nhất vô nhị sinh ý tốt nhất làm!</p>
+<p>Hắn yêu cầu hoàn thành nhiệm vụ, cho nên giai đoạn trước cần thiết bảo đảm chính mình gia hoa là độc nhất vô nhị, chờ thắp sáng hệ thống sách tranh sau trở lên truyền trang hoàng không gian hoàn toàn tới kịp.</p>
+<p>Hạ quyết tâm sau, Tạ Tinh Thần trong lòng đại định.</p>
+<p>Nhìn sẽ cho chính mình mang đến vô số tinh tệ hoa tươi, Tạ Tinh Thần cười mê ch·ế·t người.</p>
+<p>Rất nhiều bị mặt tiền cửa hàng tiên khí trang hoàng hống tiến vào khách nhân bị mê đến hỗn hỗn độn độn, không nói hai lời “Khẳng khái giúp tiền”, một đợt chú ý cất chứa sau, mắt cũng không chớp mua này đó ở Tạ Tinh Thần trong mắt ch·ế·t quý ch·ế·t quý hoa tươi.</p>
+<p>Tuy rằng mới vừa khai trương, nhưng cửa hàng bán hoa sinh ý thực hảo, chỉ là một cái buổi sáng mà thôi, Tạ Tinh Thần liền bán ra thật nhiều hoa tươi.</p>
+<p>Hơn nữa Tinh Võng Thương Thành khai cửa hàng so với chính mình tưởng muốn phương tiện.</p>
+<p>Tự mình thí nghiệm sau Tạ Tinh Thần phát hiện cửa hàng căn bản không cần nhân công, chỉ cần trước tiên thiết trí hảo hoa tươi số lượng, kim ngạch, mua sắm sổ đen cùng bạch danh sách sau, khách hàng là có thể tự giúp mình mua hoa.</p>
+<p>Tạ Tinh Thần cùng Nghê Khôn Kỳ hiện tại còn đứng ở chỗ này, đơn thuần chỉ muốn nhìn một chút cửa hàng tình huống cùng với cùng nhân tiện cùng dưỡng lão phố mặt khác chủ quán liên lạc hạ cảm tình thôi.</p>
+<p>Sư sinh hai người ở cửa hàng bán hoa mặt ngây người ba bốn giờ, cuối cùng Tạ Tinh Thần mời lão sư dời bước tới cửa hoa viên nhỏ phơi nắng.</p>
+<p>“Sao trời, ngươi nơi này trang hoàng thật không sai.”</p>
+<p>Bưng một ly Tạ Tinh Thần còn chưa bắt đầu bán hoa hồng trà, Nghê Khôn Kỳ một bên phơi nắng một bên cảm khái “Đây mới là sinh hoạt nha.”</p>
+<p>Trang lịch sự tao nhã màu trắng tây trang tam kiện bộ Tạ Tinh Thần đạm nhiên cười, ưu nhã bưng lên chính mình trà hoa ly, chậm rãi hạp một ngụm.</p>
+<p>Vì cùng cửa hàng bán hoa phối hợp thượng, hắn hôm nay cố ý tuyển kiện màu trắng tây trang.</p>
+<p>Bất quá khả năng bởi vì trên người thiếu niên khí quá nặng, ăn mặc màu trắng tây trang Tạ Tinh Thần cũng không giống cao lớn anh tuấn bạch mã vương tử, ngược lại giống kiều quý quý tộc tiểu công tử.</p>
+<p>Nhưng mặc kệ giống cái gì cũng tốt, hắn đều là mỹ, mỹ đến quang ngồi ở hoa viên nhỏ uống trà hoa là có thể hấp dẫn vô số người vào tiệm mua sắm nông nỗi.</p>
+<p>Bỗng nhiên, một tiếng kinh hô truyền đến.</p>
+<p>Tạ Tinh Thần theo tiếng đi tới.</p>
+<p>Hận không thể chọc hạt chính mình mắt!</p>
+<p>Hảo hảo uống trà không hảo sao? Vì cái gì lòng hiếu kỳ như vậy trọng?</p>
+<p>Tạ Tinh Thần cảm thấy chính mình hôm nay điểm quá bối.</p>
+<p>Buông cái ly, hắn thở dài nói “Lão sư, ta phiền toái lại tới nữa.”</p>
+<p>Tạ Tinh Thần hy vọng cái kia khách không mời mà đến nhanh lên đi.</p>
+<p>Nhưng mà nếu có thể bị kêu “Khách không mời mà đến”, kia tự nhiên không đơn giản như vậy bị giải quyết.</p>
+<p>Nghê Khôn Kỳ nhàn nhã nói “Ngươi hiện tại không phải tiến hóa rất lợi hại sao? Còn sợ khách không mời mà đến?”</p>
+<p>Tạ Tinh Thần lại than, ngữ khí trầm trọng cười khổ “Không phải sợ không sợ vấn đề, mà là không nghĩ bị hắn ảnh hưởng tâm tình.”</p>
+<p>Mỗi lần nhìn đến Phó Vân Châu hai huynh đệ hắn cũng chưa hảo tâm tình.</p>
+<p>Tạ Tinh Thần thật sự không nghĩ lại hồi ức nguyên chủ những cái đó rách nát sự.</p>
+<p>Nhưng không như mong muốn, mỗi lần gặp được này đối huynh đệ, hắn trong đầu tổng hội không tự giác xuất hiện nào đó hồi ức đoạn ngắn, hơn nữa này đó hồi ức đoạn ngắn đều lệnh người cảm thấy không quá vui sướng.</p>
+<p>Nhắc Tào Tháo Tào Tháo đến, nào đó làm Tạ Tinh Thần cảm thấy rất xấu tâm tình tồn tại vẻ mặt ủy khuất chạy tới.</p>
+<p>Tạ Tinh Thần Ta càng ủy khuất jpg</p>
+<p>Phó Vân Sâm ở lan can bên dừng lại, hắn liếc mắt Nghê Khôn Kỳ, tức khắc không dám la lối khóc lóc, chỉ ủy khuất ba ba lại muốn nói lại thôi nhìn về phía Tạ Tinh Thần.</p>
+<p>Thấy Tạ Tinh Thần chỉ là lạnh nhạt uống trà, Phó Vân Sâm rốt cuộc không nín được.</p>
+<p>Hắn nghẹn khuất nói “Tạ Tinh Thần, ngươi không nhìn thấy ta ở chỗ này sao?”</p>
+<p>Tạ Tinh Thần trang không nghe thấy, sau đó cho chính mình cùng Nghê Khôn Kỳ bỏ thêm trà hoa.</p>
+<p>Phó Vân Sâm càng ủy khuất, hắn chỉ trích nói “Tạ Tinh Thần ngươi như thế nào biến thành như vậy? Trước kia ngươi không phải như thế!”</p>
+<p>Nghe vậy, bổn không tính toán để ý tới hắn Tạ Tinh Thần thật mạnh đem ấm trà phóng tới trên bàn.</p>
+<p>Hắn ánh mắt đông lạnh “Ta không phải cùng ngươi đã nói về sau thấy ta đừng tới quấy rầy ta sao? Ngươi lớn như vậy người chẳng lẽ còn nghe không hiểu tiếng người không thành? Chúng ta không quan hệ hiểu không? Không quan hệ!”</p>
+<p>Phó Vân Sâm bẹp miệng “Ta không tin ngươi nhỏ mọn như vậy, trước kia ngươi rõ ràng rất hào phóng đối ta thực tốt, tuy rằng lần này ta xác thật có sai, nhưng ta cẩn thận nghĩ tới, ta sai kỳ thật cũng không phải rất lớn, chúng ta vẫn là có thể làm bằng hữu, phía trước ngươi lời nói tuy rằng làm ta thực thương tâm, nhưng suy xét đến ngươi lúc ấy cảm xúc không ổn định, ta sẽ không mang thù.”</p>
+<p>Tạ Tinh Thần đau đầu, Tạ Tinh Thần buồn nôn.</p>
+<p>Vì cái gì liền có người có thể như vậy cố chấp lấy tự mình vì trung tâm?</p>
+<p>Thật thật thương tổn tính không lớn vũ nhục tính cực cường.</p>
+<p>Hắn đến tột cùng là cái gì thể chất? Vì cái gì tổng phải bị bất đồng chủng loại ngốc bức quay chung quanh?</p>
+<p>Nghe rõ Tạ Tinh Thần toái toái niệm nội dung Nghê Khôn Kỳ không nín được cười ra tiếng.</p>
+<p>Nàng tiếng cười làm Phó Vân Sâm ngoan ngoãn câm mồm.</p>
+<p>Phó Vân Sâm rất sợ Nghê Khôn Kỳ, bởi vì Nghê Khôn Kỳ đối hắn chưa bao giờ giả sắc thái, chỉ cần làm sai sự bị nàng phát hiện liền sẽ bị nàng mắng máu chó phun đầu.</p>
+<p>Cùng chi tương phản, Nghê Khôn Kỳ thực thích Tạ Tinh Thần, cho dù Tạ Tinh Thần làm sai sự, nàng cũng sẽ không mắng hắn.</p>
+<p>Có Nghê Khôn Kỳ cái này thiên vị Tạ Tinh Thần lão sư ở, Phó Vân Sâm bị bắt thu liễm.</p>
+<p>Liền ở Phó Vân Sâm tính toán cáo từ lần sau lại đến “Khuyên bảo” Tạ Tinh Thần khi, Tạ Tinh Thần ngăn lại hắn.</p>
+<p>Đem Phó Vân Sâm mang tới mỗi cái cửa hàng đều có tư nhân trang hoàng không gian, Tạ Tinh Thần vừa định mở miệng lại bị Phó Vân Sâm hưng phấn đánh gãy.</p>
+<p>Tò mò nhìn trang hoàng không gian, Phó Vân Sâm đại kinh tiểu quái nói “Oa, sao trời, ngươi hảo thông minh a, cư nhiên nghĩ đến đem trang hoàng không gian đương mật thất, như vậy ta sẽ không sợ Nghê lão sư lạp, ngươi là muốn cùng ta xin lỗi sao? Đúng vậy lời nói liền nhanh lên, tuy rằng ta nhất định sẽ tiếp thu ngươi xin lỗi, nhưng là ngươi cũng muốn nghiêm túc đi một lần hình thức mới được nga.”</p>
+<p>Tạ Tinh Thần ???</p>
+<p>Con mắt nào của ngươi nhìn đến ta muốn cùng ngươi xin lỗi?</p>
+<p>Đôi mắt không cần liền bán đi, hoàn toàn mới đôi mắt còn rất đáng giá.</p>
+<p>Thiếu chút nữa bị khí cười, Tạ Tinh Thần khóe miệng nhịn không được run rẩy hơi hơi gợi lên.</p>
+<p>Thấy Tạ Tinh Thần “Cười”, Phó Vân Sâm cũng cao hứng cười rộ lên.</p>
+<p>Nhưng giây tiếp theo, Tạ Tinh Thần biểu tình trở nên thực lãnh đạm.</p>
+<p>Tựa như bão táp tiến đến trước ban đêm, bình tĩnh che giấu mặt biển sóng gió.</p>
+<p>Phó Vân Sâm chưa bao giờ gặp qua như vậy Tạ Tinh Thần.</p>
+<p>Tạ Tinh Thần chưa bao giờ như thế đứng đắn, chỉ vì đánh thức nghe không tiến tiếng người hùng hài tử.</p>
+<p>“Phó Vân Sâm, ngươi đã không phải hài tử, thỉnh ngươi không cần lại trốn tránh hiện thực hảo sao?”</p>
+<p>Phó Vân Sâm không cao hứng, hắn nước mắt đều phải ra tới, nhưng vẫn như cũ mạnh miệng nói “Ta như thế nào trốn tránh hiện thực?”</p>
+<p>Tạ Tinh Thần không dao động, tiếp tục lãnh khốc nói “Đã từng ngươi thương tổn Tạ Tinh Thần, cho nên Tạ Tinh Thần không nghĩ lại cùng ngươi làm bằng hữu, cho nên…… Ngươi có thể đừng lại đến quấn lấy ta sao? Chúng ta từ biệt đôi đường mỗi bên vui vẻ, từ đây sinh lão bệnh tử không liên quan với nhau mới là tốt nhất kết quả.”</p>
+<p>Phó Vân Sâm nghe được lời này trong lòng thực không thoải mái, hắn hối hận.</p>
+<p>Hối hận đã từng như vậy đối chính mình tốt nhất bằng hữu.</p>
+<p>Hắn cho rằng Tạ Tinh Thần sẽ là hắn cả đời tốt nhất bằng hữu, hắn sẽ cùng dĩ vãng giống nhau vô điều kiện bao dung hắn.</p>
+<p>Nhưng hiện tại, cái này bằng hữu giống như bị hắn đánh mất.</p>
+<p>Phó Vân Sâm tưởng giữ lại “Chúng ta liền không thể một lần nữa đương bạn tốt sao?”</p>
+<p>Tạ Tinh Thần quyết đoán cự tuyệt “Không thể.”</p>
+<p>Cái gì bằng hữu, bất quá là đại hình bảo mẫu thôi.</p>
+<p>Phó gia người đều không phải thiện tra, thiện lương nhất ngược lại là hắn khối băng mặt chồng trước, Phó Vân Sâm nhìn hoạt bát rộng rãi lại tính trẻ con, nhưng thực tế lãnh tâm lãnh tình.</p>
+<p>Hài đồng có thể là thiên chân, nhưng đồng dạng hài đồng cũng có thể là tà ác, mà Phó Vân Sâm chính là cái kia tà ác hài đồng.</p>
+<p>Cho nên Tạ Tinh Thần chỉ có thể nói một cách quyết liệt điểm, hy vọng hắn đừng quấn lấy chính mình không bỏ.</p>
+<p>Nhưng sự thật chứng minh Tạ Tinh Thần có điểm xem nhẹ hùng hài tử lực sát thương.</p>
+<p>Phó Vân Sâm nhưng không hắn cho rằng như vậy muốn thể diện, cuối cùng Tạ Tinh Thần đều bắt đầu bạo thô, hùng hài tử vẫn là ta không nghe ta không nghe.</p>
+<p>Tạ Tinh Thần Dần dần táo bạo jpg</p>
+<p>Vì cái gì đều tinh tế thời đại, ta còn muốn gặp qy a di cổ độc.</p>
+<p>Thời khắc mấu chốt may mắn Nghê Khôn Kỳ đứng dậy, nếu không Tạ Tinh Thần còn phải tiếp tục xử lý Phó Vân Sâm cái này làm người phiền đến nổ mạnh phiền toái nhỏ.</p>
+<p>“Lão sư, ta thiệt tình cảm tạ ngươi!” Tạ Tinh Thần tâm rất mệt.</p>
+<p>Nghê Khôn Kỳ đồng tình nhìn hắn một cái, đúng trọng tâm kiến nghị nói “Ngươi về sau vẫn là thiếu đi lên xem cửa hàng đi.”</p>
+<p>Này một đợt tiếp một đợt, Tạ Tinh Thần không mệt nàng xem náo nhiệt đều xem mệt mỏi.</p>
+<p>Tạ Tinh Thần lòng có xúc động gật đầu hẳn là.</p>
+<p>Chờ Nghê Khôn Kỳ có việc hạ tuyến sau hắn lập tức cũng đi theo chạy, ngay cả thu được tiểu Randy tin tức hắn cũng không dám online, sợ thượng tuyến lại gặp được cái gì cẩu huyết cốt truyện.</p>
+<p>Hắn · Tạ Tinh Thần · chỉ nghĩ làm ruộng không nghĩ chó săn huyết cốt truyện!</p>
+<p>Địa cầu cửa hàng bán hoa tươi hoặc nhan giá trị hơn người, hoặc hương khí động lòng người.</p>
+<p>Cho nên cho dù mới vừa khai trương, sinh ý cũng không kém.</p>
+<p>Buổi tối 8 giờ, Alice về đến nhà, đồng thời, giả thiết hảo thời gian chuyển phát nhanh giao hàng tận nhà.</p>
+<p>Từ chuyển phát nhanh người máy trong tay tiếp nhận kim loại chuyển phát nhanh hộp, mở ra sau, một trận di người mùi hương phảng phất làm người đặt mình trong với trong hoa viên.</p>
+<p>Đem thực vật chuyên dụng kim loại chuyển phát nhanh hộp còn cấp chuyển phát nhanh người máy, Alice bước chân nhẹ nhàng dựa theo thuyết minh ở hoa khí trung để vào số lượng vừa phải nước trong cùng vài giọt cao cấp dinh dưỡng dịch.</p>
+<p>Ở ánh đèn cùng thủy quang chiếu rọi xuống, trong suốt ngọc bích lẵng hoa phát ra lộng lẫy bắt mắt quang mang, sấn đến hoa nhài cùng hoa oải hương rực rỡ lấp lánh.</p>
+<p>“Ta muốn cắt nhiều ít lá cây?”</p>
+<p>Nhìn tràn đầy đều là lá cây hoa nhài, Alice phát ra linh hồn chất vấn.</p>
+<p>Cắt lá cây hoa nhài hiển nhiên càng đẹp mắt, nhưng cùng lúc đó, nó tồn tại thời gian sẽ trở nên càng đoản.</p>
+<p>Nhưng không cắt lá cây nó lại giống cỏ dại (? ).</p>
+<p>“Tỷ, ngươi làm gì đâu?”</p>
+<p>Tiến gia môn liền thấy nhà mình tỷ tỷ cầm kéo do do dự dự, Alice đệ đệ Vincent tò mò hỏi.</p>
+<p>Nghe được đệ đệ thanh âm, Alice tạc “Ngươi như thế nào đã trở lại? Ngươi trường học nghỉ sao?”</p>
+<p>Vincent thành thật lắc đầu, đúng lý hợp tình nói ra chính mình trốn học sự “Không có a, ngày mai còn có một ngày khóa đâu, nhưng ta không nghĩ thượng.”</p>
+<p>Alice tức khắc không rảnh lo hoa nhài điểm này việc nhỏ, trong đầu tất cả đều là Vincent trốn học.</p>
+<p>Nhưng mà ——</p>
+<p>“Tỷ, ta đều mau ba ngày ba đêm không ngủ, ta cảm giác ta trở về mới có thể ngủ, ngươi khiến cho đáng thương đáng thương ta đi, ngủ tiếp không ngươi phải ch·ế·t đệ đệ.” Vincent đáng thương vô cùng nói.</p>
+<p>Alice nhụt chí, biết hắn mất ngủ lấy hắn không có biện pháp, chỉ tức giận không đau không ngứa đánh hắn hai hạ “Chỉ này một lần không có lần sau, nếu đã trở lại, vậy ngươi liền đi ngủ đi, vừa vặn ta cho ngươi mua cái hoa oải hương lẵng hoa, lão bản nói nó có thể giúp miên, nó vẫn là ngươi thích nhất màu tím, ngươi đợi lát nữa nhớ rõ bắt được phòng phóng.”</p>
+<p>Nói xong, Alice đem hoa oải hương lẵng hoa đưa cho trong nhà cái này đại oan loại, đuổi hắn vào phòng ngủ.</p>
+<p>Không biết là hoa tươi tác dụng vẫn là trong nhà làm người an tâm, Vincent mới vừa thượng 0 giường liền có buồn ngủ.</p>
+<p>Dần dần mà, hắn đôi mắt khép không được.</p>
+<p>Cuối cùng, hắn ngủ nước miếng giàn giụa.</p>
+<p>Nửa đêm lại đây xem xét Alice ???</p>
+<p>Khôi hài đâu, đây là ngủ không được?</p>
+<p>Thằng nhãi này sẽ không vì trốn học cố ý lừa nàng đi!</p>
+<p>Mất ngủ ba ngày ba đêm người một hồi gia có thể ngủ cùng heo giống nhau?</p>
+<p>Thâm giác bị lừa gạt Alice cả người đều không tốt.</p>
+<p>Nhưng mà này đệ đệ rốt cuộc không phải nhặt được, Alice lại khí đều nhịn đi xuống, tính toán ngày mai lại nhất nhất tính sổ.</p>
+<p>Dựng ngày</p>
+<p>Thái dương phơi đến trên giường, muốn tránh cũng không được Vincent mơ mơ màng màng bò dậy.</p>
+<p>Không đến một lát, hắn liền tinh thần.</p>
+<p>Chờ tinh thần sau, hắn ngốc.</p>
+<p>Chẳng lẽ trong nhà thật sự có thể trị hắn mất ngủ?</p>
+<p>Nếu không như thế nào giải thích hắn ở trường học ngủ không được ở nhà lại ngủ đến cùng heo giống nhau?</p>
+<p>Vincent mang theo khó hiểu rời giường, kết quả nghênh đón lão tỷ một đốn béo tấu.</p>
+<p>Giảng đạo lý, này hành vi mặc hắn đầy người là miệng hắn cũng giải thích không rõ a.</p>
+<p>Thành thành thật thật ăn một đốn tấu, Vincent nho nhỏ vận động một chút lại chạy về phòng ngủ.</p>
+<p>Ba ngày ba đêm không ngủ cũng không phải là tùy tiện ngủ một đêm là có thể bổ thượng sự, lại ngủ mấy cái giờ, Vincent 4-5 giờ thời điểm cuối cùng tỉnh.</p>
+<p>Nguyên bản cho rằng buổi sáng ngủ nhiều chính mình buổi tối khẳng định ngủ không được, không tưởng một hồi đến phòng ngủ, hắn lại ngủ cùng heo giống nhau.</p>
+<p>Ở nhà liên tiếp ba ngày ăn được ngủ ngon, Vincent hồi giáo thời điểm phá lệ không tha.</p>
+<p>Rời đi trước, Alice làm hắn đem hoa oải hương lẵng hoa mang về ký túc xá.</p>
+<p>Ôm hoa oải hương lẵng hoa, Vincent mắt nhìn thẳng, chờ đi vào ký túc xá sau, hắn sắc mặt banh không được.</p>
+<p>“Tỷ cũng thật là, ta là nam hài tử gia, làm gì làm ta đem lẵng hoa mang về trường học.”</p>
+<p>Không dám ở Alice trước mặt oán giận, Vincent chỉ dám trở lại ký túc xá đóng cửa lại tất tất.</p>
+<p>Cũng may hoa oải hương không phải cái gì đàn bà hề hề hoa cỏ, bằng không có thần tượng tay nải Vincent nhất định sẽ đem nó ném mới tiến cổng trường.</p>
+<p>Đệ nhất học viện dừng chân điều kiện thực hảo, ba người trụ một bộ ba phòng một sảnh chung cư, bảo đảm mỗi cái học sinh đều có một cái tư nhân không gian.</p>
+<p>Phòng rất nhỏ, ước chừng chỉ có năm mét vuông, nhưng có chút tiểu nhân hảo, Vincent mới vừa đem hoa oải hương lấy tiến vào, bất quá làm tiếng đồng hồ, cả phòng đều là hoa oải hương mùi hương.</p>
+<p>Vincent vò đầu “Không biết Alice ở đâu mua, còn khá tốt nghe.”</p>
+<p>So với hắn mua xa hoa hương huân hương vị còn hảo!</p>
+<p>Một ngày xuống dưới Vincent không ra phòng ngủ, không biết có phải hay không hắn ảo giác, hắn tổng cảm thấy chính mình hôm nay hiệu suất đặc biệt cao?</p>
+<p>Ngày thường vắt hết óc đều trị không được tác nghiệp, hôm nay cư nhiên tâm bình khí hòa liền viết xong?</p>
+<p>Nhất quan trọng là hắn giữa trưa ngủ trưa cư nhiên có thể ngủ!</p>
+<p>Nghĩ đến đây, Vincent nhịn không được đem ánh mắt phóng tới tủ đầu giường bên hoa oải hương thượng đá quý lẵng hoa thượng.</p>
+<p>Tự hỏi thật lâu, cuối cùng hắn…… Ôm nó gõ vang cách vách đại môn.</p>
+<p>“Làm gì a? Ta làm bài tập đâu.”</p>
+<p>Vincent “Không làm gì, tỷ của ta cho ta mua cái hoa oải hương lẵng hoa, ta dùng cảm thấy tâm tình hảo, làm bài tập cũng mau, đừng nói ta không lo ngươi là huynh đệ, hoa oải hương mượn ngươi nửa ngày.”</p>
+<p>Dứt lời, bạn cùng phòng “Leng keng” một tiếng mở ra ký túc xá môn, nịnh nọt tiếp nhận Vincent hoa oải hương.</p>
+<p>“Ai nha, ngươi nói ngươi, cái này làm cho ta nói cái gì hảo đâu! Cảm tạ huynh đệ.”</p>
+<p>Nói xong “Leng keng” một tiếng, lại đóng cửa lại.</p>
+<p>Vincent thấy nhiều không trách đạp một chân bạn cùng phòng cửa phòng.</p>
+<p>“Tiểu tử ngươi cho ta cẩn thận một chút a, nếu là hoa hỏng rồi ta chặt đứt ngươi đầu.”</p>
+<p>Bạn cùng phòng “Biết rồi, ngươi đừng dong dài.”</p>
+<p>Đem hoa oải hương đưa ra đi sau, Vincent làm bài tập hiệu suất trở nên thấp hèn.</p>
+<p>Ba cái giờ sau, thật sự chịu không nổi Vincent gõ vang bạn cùng phòng cửa phòng, ở bạn cùng phòng lưu luyến trong ánh mắt lãnh khốc đem hoa oải hương lấy đi.</p>
+<p>Bạn cùng phòng “Vincent, ngươi lại mượn ta một giờ a, ta tác nghiệp mau viết xong uy.”</p>
+<p>“Liền một giờ, một giờ, một giờ a!”</p>
+<p>“Vincent, ngươi xin thương xót đi, lần sau ta mua xa hoa cây xanh nói cũng cho ngươi mua một chậu, ngươi trước đem cái này bảo bối mượn ta đi.”</p>
+<p>Vincent Xa hoa cây xanh?</p>
+<p>Alice nói này hai cái lẵng hoa chỉ tốn nàng 5000 tinh tệ a!</p>
+<p>Hai cái lẵng hoa tổng cộng có 20 chi hoa đâu, bình quân một chi hai trăm nhiều tinh tệ hoa có thể là cái gì xa hoa cây xanh?</p>
+<p>Vincent mông, sau một lúc lâu, hắn sắc mặt quái dị lấy một đóa hoa oải hương đi vào đến trường học phòng kiểm tra tiêu tiền làm thí nghiệm.</p>
+<p>Thí nghiệm báo cáo 2 cây xanh hàm lượng thành công dọa đến hắn.</p>
+<p>Vincent !!!</p>
+<p>Dựa! Chủ quán ở làm từ thiện sao?</p>
+<p>2 cây xanh hàm lượng hai cái lẵng hoa liền bán 5000 tinh tệ?</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong23.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong25.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "mot-giac-ngu-day-ta-ke-thua-dia-cau-tinh-te";
+const NOVEL_TITLE = "Một giấc ngủ dậy ta kế thừa địa cầu [ tinh tế ]";
+const CHAPTER_TITLE = "Chương 24";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

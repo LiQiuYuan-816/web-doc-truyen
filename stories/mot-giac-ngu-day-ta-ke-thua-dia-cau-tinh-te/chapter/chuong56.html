@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 56</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Một giấc ngủ dậy ta kế thừa địa cầu [ tinh tế ]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 56</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong55.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong57.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Cái gì kêu vui quá hóa buồn?</p>
+<p>Đây là vui quá hóa buồn!</p>
+<p>Nhìn đến Tạ Tinh Thần này Weibo, đại bộ phận võng hữu nổi giận.</p>
+<p>Dựa vào cái gì đem địa cầu cửa hàng thương phẩm một phần năm chuyên môn cấp xa xôi tinh cầu này nhóm người đoạt?</p>
+<p>Chỉ bằng bọn họ mặt đại? Vẫn là bằng bọn họ sẽ khóc?</p>
+<p>Sinh hoạt ở phát đạt tinh cầu cùng giống nhau tinh cầu người nháy mắt khí tạc.</p>
+<p>Đặc biệt là ở tại cái loại này muốn thượng không thượng muốn hạ không hạ giống nhau tinh cầu cư dân, bọn họ kinh nghe tin tức này sau khóe mắt muốn nứt ra.</p>
+<p>Làm len sợi a, có như vậy xử lý sự tình sao?</p>
+<p>Chẳng lẽ phát đạt tinh cầu cùng xa xôi tinh cầu người là người, các nàng liền không phải?</p>
+<p>Hiện tại phát đạt tinh cầu người bằng vào võng tốc mau quang não phối trí hảo, các nàng đoạt bất quá, sau đó xa xôi tinh cầu người võng tốc chậm nhưng lại có chuyên môn tranh mua số lượng, các nàng cũng đoạt bất quá.</p>
+<p>Cho nên…… Cuối cùng đạt thành chỉ có giống nhau tinh cầu công dân bị thương thành tựu?</p>
+<p>【 chăn dê tinh người Thảo, dựa vào cái gì a, trung gian tầng liền không xứng sinh hoạt không xứng tồn tại bái? 】</p>
+<p>【 cá cá hảo hảo ăn A a a a a tức ch·ế·t ta a chúng ta trung đẳng tinh cầu người cũng muốn chuyên chúc tranh mua liên tiếp, nếu không chúng ta căn bản đoạt không thắng phát đạt tinh cầu đám kia ngốc bức!!! 】</p>
+<p>【 khi nào thượng giá chanh a Chính là a Tạ lão bản ngươi không thể như vậy bất công, thân là một cái công bằng công chính lão bản ngươi không thể chỉ bất công một đám người mà bỏ qua mặt khác một đám người đi? 】</p>
+<p>Này…… Tạ Tinh Thần thật là có nói.</p>
+<p>【 Tạ Tinh Thần v Ta cũng không nghĩ, nhưng ai làm Tinh Minh các đại văn minh trung đẳng tinh cầu cùng phát đạt tinh cầu phân loại thật sự quá rối loạn đâu 00】</p>
+<p>Này phân loại loạn tới trình độ nào?</p>
+<p>Năm đại văn minh trung đẳng tinh cầu có lẽ chính là nào đó văn minh phát đạt tinh cầu liền không nói, ngay cả nào đó có tiền tiểu văn minh trung đẳng tinh cầu đồng dạng cũng có thể nói mặt khác đại văn minh phát đạt tinh cầu.</p>
+<p>Nơi này không chỉ chế cái nào văn minh, nhưng có một cái điển hình trường hợp —— nhân ngư văn minh.</p>
+<p>Toàn Tinh Minh đều biết máy móc văn minh nhất có tiền, mà nhân ngư văn minh tắc khuất cư máy móc văn minh sau.</p>
+<p>Nhưng mà cùng động một chút mấy chục thượng trăm cái tinh cầu văn minh bất đồng, nhân ngư văn minh tổng cộng mới có được bảy, tám tinh cầu.</p>
+<p>Là bọn họ không nghĩ muốn càng nhiều tinh cầu sao?</p>
+<p>Cũng không phải như thế, mà là trước mắt chỉ có này mấy cái tinh cầu là nhất thích hợp nhân ngư cư trú “Sao thuỷ”.</p>
+<p>Tinh cầu thiếu, dựa gần, văn minh có tiền thả công dân còn tụ tập sinh hoạt, này liền dẫn tới nhân ngư văn minh tinh cầu xây dựng trình độ cực cao, ngay cả kém cỏi nhất cái kia tinh cầu cũng so giống nhau văn minh phát đạt tinh cầu hảo.</p>
+<p>Kia toàn Tinh Minh có bao nhiêu như thế phân loại văn minh đâu?</p>
+<p>Tạ Tinh Thần không đếm được hắn cũng không nghĩ số.</p>
+<p>Rốt cuộc hắn chỉ là một cái bán hóa a, hắn lại không phải tương quan bộ môn lãnh đạo, hắn vì cái gì muốn thao cái này tâm?</p>
+<p>Mà xa xôi tinh cầu tiêu chuẩn liền bất đồng, trừ tinh cầu xây dựng trình độ, vị trí ngoại còn có một cái rất quan trọng chỉ tiêu —— tinh cầu gd.</p>
+<p>Như vô đặc thù tình huống bị đánh dấu vì xa xôi tinh cầu tinh cầu nhất định là không phát đạt tinh cầu, lại hoặc là bị dị thú xâm nhập sau trùng kiến tinh cầu, dù sao tạm vô loại thứ ba khả năng.</p>
+<p>Bởi vậy Tạ Tinh Thần lời này một chút tật xấu đều không có.</p>
+<p>Nhưng chính là bởi vì không tật xấu, cho nên mới càng chọc tâm.</p>
+<p>Võng hữu Thảo ( một loại thực vật ), như vậy phân loại quái ai?</p>
+<p>Đây là tương quan bộ môn chế định phân loại a!</p>
+<p>Tinh Minh, xem tên đoán nghĩa “Tinh tế liên minh”, đã là liên minh, kia khẳng định là các đại văn minh tự trị, lại liên hợp trở thành minh hữu.</p>
+<p>Muốn cho đại gia thống nhất tiêu chuẩn?</p>
+<p>Mọi người mỉm cười ) Liền, thực, khó.</p>
+<p>Một bên hướng Tạ Tinh Thần bán thảm, võng hữu một bên còn không quên chuyển phát hắn rút thăm trúng thưởng Tinh Bác, như thế miệng chê nhưng thân thể lại thành thật làm Tạ Tinh Thần không như thế nào lo lắng.</p>
+<p>Mắt thấy đã vượt qua sáu vị số chuyển phát, Tạ Tinh Thần tâm tình còn rất nhẹ nhàng.</p>
+<p>Tuy rằng phun tào người nhiều, nhưng xem rút thăm trúng thưởng Tinh Bác chuyển phát số lượng liền biết này đàn võng hữu thôi.</p>
+<p>Bật cười đóng cửa Tinh Bác, Tạ Tinh Thần ở phòng ngủ làm thả lỏng thao.</p>
+<p>Tháp tháp rung động xương cốt thả lỏng sau có loại kỳ dị đưa khoái cảm.</p>
+<p>Ngồi ở án thư trước, nhìn càng ngày càng ấm áp xinh đẹp phòng ngủ, Tạ Tinh Thần tuấn tú mặt mày giãn ra khai.</p>
+<p>Nhà hắn Phát Tài càng ngày càng có thể làm!</p>
+<p>Trừ bỏ đã sớm bị hắn phát hiện thẩm mỹ lực, sức sáng tạo ngoại, hiện tại nấu cơm còn tặc bổng.</p>
+<p>Tư cập này, Tạ Tinh Thần không thể không cảm khái Phát Tài thật là nhân loại tốt nhất bạn lữ!</p>
+<p>Ngồi đại khái nửa giờ, buồn ngủ rốt cuộc đánh úp lại.</p>
+<p>Tạ Tinh Thần ngáp một cái, xoa xoa đôi mắt, quyết định thượng 0 giường ngủ.</p>
+<p>Hôm sau</p>
+<p>Cùng với chim nhỏ tiếng kêu, Tạ Tinh Thần giãy giụa bò dậy, tính toán lặp lại khô khan ba điểm một đường sinh hoạt.</p>
+<p>Nga, không đúng, hiện tại không phải ba điểm một đường, bởi vì hôm nay hắn không đi hoa điền, hắn muốn đi cấp con thỏ loại cà rốt.</p>
+<p>Nghĩ đến đây con thỏ, Tạ Tinh Thần bả vai suy sụp hạ.</p>
+<p>Nếu muốn hắn tuyển một kiện năm nay hối hận nhất sự kiện, Tạ Tinh Thần tuyệt đối tuyển lần trước làm phì phì đi ra ngoài lữ hành khi thuận tay cho hắn tuyển [ quý hiếm · cỏ bốn lá ].</p>
+<p>Hiện tại hảo, hắn như vậy trân quý [ quý hiếm · cỏ bốn lá ] khả năng phải bị phì phì lãng phí rớt.</p>
+<p>Chọc khai giao diện, vốn là tâm tình không đáng Tạ Tinh Thần càng thương tâm.</p>
+<p>【 đồng bọn tin tức giao diện 】</p>
+<p>Tên Phì Thỏ Kỉ ( phì phì )</p>
+<p>Chủng tộc Thích ăn cà rốt du lịch thỏ</p>
+<p>Trạng thái Tưởng về nhà ăn cà rốt!</p>
+<p>Bọc hành lý [+]</p>
+<p>Ghi chú Ngài đồng bọn đã đem ngài chuẩn bị đồ ăn [ cà rốt ] ăn xong lạp, đói bụng nó hiện tại hôi thường tưởng về nhà chọc ~</p>
+<p>Ha hả, [ cà rốt ] ăn xong liền tưởng về nhà?</p>
+<p>Kia hắn [ quý hiếm · cỏ bốn lá ] làm sao bây giờ?</p>
+<p>Phải biết thứ này chính là tiêu hao phẩm, chỉ có thể dùng một lần, này không phải lãng phí sao?</p>
+<p>Nghĩ đến đây, Tạ Tinh Thần tỏ vẻ gần nhất chính mình thật sự không nghĩ lại nhìn đến bất luận cái gì có quan hệ phì phì sự.</p>
+<p>Nhưng mà hiện thực là —— hắn còn phải đi cấp kia chỉ tham ăn phì Thỏ Kỉ loại cà rốt!</p>
+<p>Tạ Tinh Thần Ha hả a, liền, thực, tuyệt!</p>
+<p>Tạ Tinh Thần mỉm cười “Tính, cứ như vậy đi.”</p>
+<p>Dù sao hắn lại không thể thế nào, kia hà tất khó xử chính mình đâu.</p>
+<p>Tạ Tinh Thần một bên thở dài một bên xách theo một kiện mỏng áo khoác ra cửa.</p>
+<p>Mấy ngày nay hạ nhiệt độ, hơn nữa phì phì gia ở chân núi, cho nên mang lên áo khoác rất cần thiết.</p>
+<p>Vì thế cứ như vậy, Tạ Tinh Thần mang theo một đám người máy chịu thương chịu khó chạy đến phì phì quê quán bận việc nửa ngày.</p>
+<p>Chờ hắn tinh bì lực tẫn, phi tinh đái nguyệt khi trở về, thời gian đã vẫn như cũ đi vào rạng sáng.</p>
+<p>Tạ Tinh Thần không cần đoạt đồ vật, hắn tự nhiên đối rạng sáng thời gian này điểm không mẫn cảm.</p>
+<p>Nhưng hôm nay, ngồi canh địa cầu cửa hàng người, đặc biệt là xa xôi tinh cầu người, các nàng trong lòng nhưng đừng quá lửa nóng!</p>
+<p>Nhìn không chớp mắt nhìn trên màn hình đếm ngược, thân kinh bách chiến các nàng đã học được ở thỏa đáng nhất thời điểm ra tay.</p>
+<p>Một giây, hai giây……</p>
+<p>Sophia rốt cuộc cướp được nàng tâm tâm niệm niệm có 5 Lục Vật Chất Hàm Lượng hoa hướng dương!</p>
+<p>Không dám tin tưởng nhìn chính mình trên quang não đơn đặt hàng, sau một lúc lâu, Sophia mới kinh hỉ thét chói tai ra tiếng.</p>
+<p>Sophia “Mụ mụ, mụ mụ, ta cướp được, ta cướp được hoa hướng dương!”</p>
+<p>Sophia lại kêu lại nhảy, nàng hai mắt sáng lên ôm chính mình quang não, thiếu chút nữa hỉ cực mà khóc.</p>
+<p>Đang ở làm việc nhà Puli nghe vậy cũng là cả kinh, nàng không ưu nhã há to miệng, không dám tin tưởng nói “Thật vậy chăng?”</p>
+<p>Puli chưa từng nghĩ tới Sophia có thể cướp được hoa hướng dương, bởi vì nhiều năm như vậy, ở tranh mua chuyện này thượng chưa từng nghe nói qua có cái nào xa xôi tinh cầu người lấy được thành công quá!</p>
+<p>Sophia vui sướng gật đầu, cũng đem đơn đặt hàng triển lãm cấp nhà mình mụ mụ xem, nàng vui sướng cực kỳ “Đúng vậy mụ mụ, ngài xem, đây là ta cướp được hoa hướng dương lạp.”</p>
+<p>Nói nói Sophia thậm chí cao hứng xướng khởi ca tới.</p>
+<p>Hôm nay nhất định là nàng may mắn ngày, ha ha ha ha ha ha……</p>
+<p>Vui sướng xoay tròn, cao hứng khiêu vũ, giờ phút này Sophia trong lòng tràn ngập nồng đậm vui sướng chi tình, nàng đối Tạ lão bản cảm kích cũng theo chính mình thành công hạ đơn mà tăng vọt.</p>
+<p>Hai mẹ con ở kia cao hứng cả buổi, các nàng cũng đã quên đi đoạt lấy những thứ khác, nhưng phản ứng lại đây sau hai người cũng không hối hận.</p>
+<p>Bởi vì các nàng đã cướp được chính mình muốn nhất cái kia đồ vật lạp!</p>
+<p>Mà cùng Sophia có tương đồng cảm thụ còn có vô số sinh hoạt ở xa xôi tinh thượng văn minh khác công dân.</p>
+<p>Chưa từng có ở tranh mua thượng lấy được quá thành công mọi người lúc này rốt cuộc cảm nhận được tranh mua vui sướng!</p>
+<p>Cho dù hôm nay bọn họ hoa tiền là bọn họ vất vả tích góp một tháng, một năm, hai năm…… Tiền, nhưng này tiền bọn họ hoa vui vẻ hoa vui sướng, hoa làm người tâm hoa nộ phóng!</p>
+<p>Chỉ từ ngôn ngữ là có thể cảm nhận được đám kia xa xôi tinh cầu người vui sướng, cái này làm cho vẫn luôn ở Tinh Bác thượng kêu gào muốn ngang nhau đối đãi võng hữu sôi nổi lựa chọn câm miệng.</p>
+<p>Trước mặt mọi người người nhìn đến xa xôi tinh cầu này nhóm người vô số cảm ơn lời nói khi, rất nhiều nhân tài biết nguyên lai xa xôi tinh cầu người bởi vì hiện thực nguyên nhân, chưa bao giờ thành công tham dự quá đứng đầu tranh mua.</p>
+<p>Cái này, đại gia có chút lời nói liền nói không nên lời.</p>
+<p>Rốt cuộc trên thế giới này vẫn là người tốt chiếm đa số, mà nói đến cùng Tạ Tinh Thần cách làm cũng bất quá là vì bảo đảm tương đối công bằng thôi.</p>
+<p>Nếu như thế, lại nháo cũng bất quá là có vẻ chính mình nhân phẩm thấp kém.</p>
+<p>Kia thôi bỏ đi…… Không náo loạn.</p>
+<p>Tuy rằng không cam lòng, nhưng trò khôi hài giằng co một ngày rốt cuộc vẫn là rơi xuống màn che, làm đám kia muốn nhìn chê cười người hy vọng thất bại.</p>
+<p>Từ phòng tắm ra tới, Tạ Tinh Thần ngồi ở tự động hong khô cơ hạ hong tóc thuận tiện phát ngốc.</p>
+<p>【 leng keng, ngài Thỏ Kỉ du lịch đã về rồi, nhiệt ái du lịch nó lúc này giống như cũng không có đi rất xa địa phương đâu! 】</p>
+<p>Nghe được thanh âm, Tạ Tinh Thần trong lòng một “Lộp bộp”.</p>
+<p>Hắn từ phát ngốc trung bừng tỉnh, trong lòng có loại dự cảm bất hảo, tức khắc buồn ngủ tiêu tán.</p>
+<p>Tạ Tinh Thần xả ra một mạt cứng đờ mỉm cười hỏi hệ thống “Tiểu Ma a, phì phì lúc này có cho ta mang cái gì lễ vật sao?”</p>
+<p>Hệ thống trầm mặc một lát, theo sau ra tiếng.</p>
+<p>【 hệ thống Ngài đồng bọn cho ngài mang về tới một trương ảnh chụp. 】</p>
+<p>Hoa trọng điểm Ảnh chụp, không phải bưu thiếp.</p>
+<p>Tạ Tinh Thần trước mắt tối sầm.</p>
+<p>Hắn đây là làm cái gì nghiệt a, cư nhiên gặp được một cái đồ tham ăn đồng bọn, vì ăn, nó liền lữ hành đều vứt ở sau đầu!</p>
+<p>Tạ Tinh Thần ngoài cười nhưng trong không cười nói “Vậy ngươi đem ảnh chụp cho ta xem đi.”</p>
+<p>Khả năng nhìn ra Tạ Tinh Thần tâm tình không tốt, hệ thống lúc này nhắc nhở âm cũng không có, nó trực tiếp đem ảnh chụp điều ra tới cấp Tạ Tinh Thần xem.</p>
+<p>Chờ nhìn đến phì phì Thỏ Kỉ dựa vào một cục đá lớn mỹ tư tư bẹp bẹp gặm cà rốt, Tạ Tinh Thần nhịn không được hít sâu.</p>
+<p>Không cần khí, khí ra bệnh tới không người thế.</p>
+<p>Không nói một lời mở ra đồng bọn giao diện, quả nhiên ——[ quý hiếm · cỏ bốn lá ] không có.</p>
+<p>Tạ Tinh Thần nước mắt nháy mắt từ hốc mắt lưu lại.</p>
+<p>Kỳ thật phì phì lúc này trở về mang không mang theo đồ vật cũng không quan trọng, quan trọng là hắn [ quý hiếm · cỏ bốn lá ]!</p>
+<p>Hắn chẳng lẽ thật là một cái kẻ xui xẻo sao?</p>
+<p>Nếu không vì cái gì trang bị thứ tốt sau, Thỏ Kỉ lại ra ngoài ý muốn?</p>
+<p>[ quý hiếm · cỏ bốn lá ] a!</p>
+<p>Đây chính là trong truyền thuyết đeo thượng liền nhất định sẽ phát sinh vận may cỏ bốn lá.</p>
+<p>Nhưng mà nhà hắn phì con thỏ đeo sau đâu?</p>
+<p>Một lòng chỉ có cà rốt, trên đường hết thảy là mây bay.</p>
+<p>A, hắn như thế nào liền như vậy xuẩn, hắn vì cái gì phải cho con thỏ trên đường chuẩn bị cà rốt?</p>
+<p>Vẫn là cấp chưa từng có ăn qua cà rốt con thỏ chuẩn bị cà rốt!</p>
+<p>Phàm là phải cho con thỏ chuẩn bị cà rốt, hắn đều hẳn là làm con thỏ ăn nị lại chuẩn bị!</p>
+<p>Mãn đầu óc đều là cà rốt, Tạ Tinh Thần nhìn đến trở về phì phì cũng cảm thấy nó giống căn cà rốt.</p>
+<p>Chưa từng có</p>
+<p>Như thế “Quyến luyến” quá đồng bọn, phì phì một hồi tới thẳng đến Tạ Tinh Thần phòng ngủ.</p>
+<p>Theo tiếng vang nhìn lại, Tạ Tinh Thần nhìn đến một con ngoan manh đáng yêu phì con thỏ.</p>
+<p>Nhìn kỹ, nó miệng thượng mao còn nhiễm một chút cà rốt nhan sắc.</p>
+<p>Tạ Tinh Thần ) nghe ta nói cảm ơn ngươi.</p>
+<p>Phì phì nhảy lên 0 giường, Tạ Tinh Thần không phản ứng nó, phì phì lại ở Tạ Tinh Thần trên người nhảy nhót, Tạ Tinh Thần vẫn là không phản ứng nó, cuối cùng phì phì thấy hai chân thú vẫn không nhúc nhích, nó tự hỏi một lát sau, xông thẳng hắn mặt phương hướng nhảy lại đây.</p>
+<p>Tạ Tinh Thần !!!</p>
+<p>Đột nhiên nghiêng người, Tạ Tinh Thần tránh thoát hủy dung một kích.</p>
+<p>Tạ Tinh Thần nổi giận, hắn tức giận bắt lấy phì phì hai chỉ trường lỗ tai nói “Phì phì, ngươi làm gì đâu?”</p>
+<p>Phì phì vẻ mặt vô tội nhìn hắn chép miệng.</p>
+<p>Tạ Tinh Thần Sinh khí jg</p>
+<p>Muốn đánh nó lại không hạ thủ được, Tạ Tinh Thần cuối cùng căm giận rua nó vài hạ, sau đó thở phì phì từ không gian cái nút lấy ra hai căn cà rốt đưa qua đi tức giận nói “Ăn ăn ăn, suốt ngày ngươi liền sẽ ăn.”</p>
+<p>Phì phì nhìn đến cà rốt sau hai mắt sáng lên, nhảy nhót đi lên liền phải đoạt.</p>
+<p>Tạ Tinh Thần cảnh cáo nói “Phì phì, ta nói cho ngươi, hôm nay liền hai căn cà rốt, lấy đi chạy nhanh về nhà, bằng không một cây cà rốt cũng chưa, thật là, hiện tại nhìn đến ngươi ta liền đau lòng.”</p>
+<p>Nói xong Tạ Tinh Thần hai mắt vô thần nằm xuống đi, có loại linh hồn xuất khiếu hư vô cảm.</p>
+<p>Bắt được hai căn cà rốt, phì phì vô cùng cao hứng nhảy nhót đi rồi, hoàn toàn không biết chính mình thương tổn cái này hai chân thú tâm.</p>
+<p>Sáng sớm hôm sau, Tạ Tinh Thần vẻ mặt quầng thâm mắt rời giường.</p>
+<p>Hôm nay vẫn là cấp phì phì loại cà rốt một ngày, nghĩ đến đây hắn liền xuyên q.</p>
+<p>Hôm nay phân bữa sáng là Phát Tài đặc chế nước dừa cao lương lộ + cháo trắng + bánh quẩy.</p>
+<p>Không thể không nói hiện tại Phát Tài nấu nướng năng lực càng ngày càng cường.</p>
+<p>Hắn liền bánh quẩy đều sẽ làm.</p>
+<p>Tạ Tinh Thần bất quá cho nó làm mẫu hai lần mà thôi, Phát Tài là có thể làm ra bán tương thực tốt “Bánh quẩy”.</p>
+<p>Đối này, Tạ Tinh Thần tỏ vẻ những cái đó năm mua Phát Tài tiền cấp thiếu!</p>
+<p>Đồ ăn tổng có thể vuốt phẳng bi thương.</p>
+<p>Một cây bánh quẩy, một chén cháo, lại đến ly nước dừa cao lương lộ, Tạ Tinh Thần cảm giác chính mình rốt cuộc không như vậy khổ sở.</p>
+<p>Tạ Tinh Thần ăn cũng không ngẩng đầu lên nói “Phát Tài nha, đợi lát nữa ngươi cùng Phú Quý cùng ta đi hoa cải dầu mà loại cà rốt, Trường Thọ liền không đi, ngươi nói cho hắn, làm hắn lưu tại bên này loại cây trà.”</p>
+<p>Nói đến cũng là buồn bực, Tạ Tinh Thần hoàn thành nhiệm vụ được đến trà sữa cơ, nhưng mà hắn không lá trà, vì thế hắn trà sữa cơ để đó không dùng.</p>
+<p>Đừng hỏi vì cái gì không thể dùng trà sữa cơ làm trái cây trà.</p>
+<p>Hỏi chính là trà sữa cơ không cho!</p>
+<p>Thần kỳ trà sữa cơ xuất phẩm đồ uống tất cả đều là hàm trà, ngay cả trái cây trà cũng không ngoại lệ, làm trái cây trà đều đến đoái điểm nước trà đi vào.</p>
+<p>Tạ Tinh Thần Xuyên q.</p>
+<p>Phát Tài nghe vậy, gật đầu đáp “Tốt lão bản, đã biết lão bản.”</p>
+<p>Nói xong, hắn xoay người rời đi, đem hôm nay an bài nói cho Phú Quý cùng Trường Thọ.</p>
+<p>Hai mươi phút sau Tạ Tinh Thần ăn xong cơm sáng, hắn mang lên Phát Tài, Phú Quý cùng với bảy tám cái gieo trồng người máy đi trước hoa cải dầu địa.</p>
+<p>Mới vừa hạ huyền phù xe, Phú Quý liền bắt lấy một con triều nơi này chạy như bay tới con thỏ, cũng quay đầu đối với Tạ Tinh Thần nói “Lão bản, là phì phì.”</p>
+<p>Kỳ thật không cần Phú Quý nói, Tạ Tinh Thần cũng nhận ra đây là phì phì.</p>
+<p>Rốt cuộc…… Trừ bỏ phì phì, ai miệng thượng mao mao còn có thể nhiễm cà rốt sắc đâu.</p>
+<p>Phải biết nơi này cà rốt mà nhưng đều bị Tạ Tinh Thần dùng loại nhỏ năng lượng tráo bao lại, đám thỏ con qua đi chỉ có thể giống khối bánh giống nhau bị ngăn trở bên ngoài.</p>
+<p>Thấy phì phì miệng chung quanh cà rốt sắc mao mao, Tạ Tinh Thần đột phát kỳ tưởng nói “Phì phì, nếu không ta cho ngươi làm cái mỹ dung?”</p>
+<p>Hướng trên người phun một cây cà rốt đồ án linh tinh mỹ dung?</p>
+<p>Nói như vậy nó cao hứng hắn cũng cao hứng.</p>
+<p>Rốt cuộc toàn cầu duy nhất một con mỹ dung thỏ, tạ tinh</p>
+<p>Thần rốt cuộc không cần lo lắng chính mình tìm không thấy phì phì.</p>
+<p>Mà khi hắn ngước mắt, nhìn đến bò mãn ở năng lượng tráo thượng con thỏ sau, Tạ Tinh Thần lại yên lặng đánh mất cái này ý niệm.</p>
+<p>Tính tính, hắn thật không nghĩ thu hoạch một con bị đè dẹp lép con thỏ.</p>
+<p>Tạ Tinh Thần búng búng phì phì cái trán, bất đắc dĩ nói “Tính ngươi gặp may mắn.”</p>
+<p>Nói xong, hắn buông nó, mang theo người máy nhóm tiến vào hoa cải dầu điền bên cạnh cà rốt địa.</p>
+<p>Tạ Tinh Thần ngày hôm qua tuy rằng mang theo người máy tới loại cà rốt, nhưng bởi vì muốn gây giống, cho nên bọn họ một ngày mới loại không đến nửa mẫu đất.</p>
+<p>Nhưng bởi vì gây giống công tác làm hảo, cho nên thu hoạch hạt giống lượng phi thường khả quan, này đó hạt giống cũng đủ đem dư lại mà loại hảo.</p>
+<p>Phú Quý ở Tạ Tinh Thần quyết định ở chỗ này loại cà rốt sau mang theo khai hoang người máy lại đây khai năm mẫu đất.</p>
+<p>Mà Tạ Tinh Thần hôm nay phân mục tiêu chính là trồng đầy này năm mẫu đất, sau đó lại đi bên cạnh đỉnh núi rải hạt giống, làm cà rốt ở trên núi tự do sinh trưởng.</p>
+<p>Thấy phì phì ở năng lượng tráo ngoại trông mòn con mắt, mềm lòng Tạ Tinh Thần cuối cùng vẫn là đem nó mang theo tiến vào, báo cho một phen sau, một người n người máy bắt đầu trồng trọt.</p>
+<p>Tạ Tinh Thần không phải trồng trọt chủ lực, nhưng hắn lại là khai hoang trung quan trọng nhất một vòng.</p>
+<p>Đương gieo trồng người máy đem hạt giống rắc đi sau, Tạ Tinh Thần liền phải hướng trong đất chuyển vận tinh thần lực, xúc tiến này đó hạt giống thích ứng hoàn cảnh, khỏe mạnh lớn lên.</p>
+<p>Theo sau, lại có người máy đẩy di động phun cơ lại đây, chúng nó yêu cầu cấp mới vừa gieo trồng thổ địa phun đựng thực vật dinh dưỡng dịch thủy.</p>
+<p>Này một ít liệt công tác nhìn như đơn giản kỳ thật rườm rà khô khan, năm mẫu đất thu phục sau đã là buổi chiều thời gian.</p>
+<p>Sợ mới vừa gieo cà rốt bị con thỏ gia tộc soàn soạt, Tạ Tinh Thần không thể không lại lần nữa lấy nhiều bốn cái loại nhỏ năng lượng tráo ra tới.</p>
+<p>Chờ loại nhỏ năng lượng tráo mở ra sau, Tạ Tinh Thần còn công đạo phì phì “Phì phì a, cà rốt hạt giống ta đã cho ngươi gieo, nhưng hiện tại chúng nó đang ở sinh trưởng nảy mầm, cho nên ngươi không thể làm mặt khác con thỏ lại đây làm sự biết không?”</p>
+<p>Con thỏ nhất sẽ đào động, nếu là chúng nó liên hợp lại đào động, đừng nói loại nhỏ năng lượng tráo, chính là cỡ trung năng lượng tráo cũng khiêng không được a.</p>
+<p>Đối này, Tạ Tinh Thần chỉ có thể đem này chỉ phì phì xách lại đây giáo dục.</p>
+<p>Phì phì nghiêng đầu, hồng hồng trong ánh mắt tràn ngập đại đại mê hoặc.</p>
+<p>Tạ Tinh Thần vỗ vỗ nó béo đầu, chỉ vào bị loại nhỏ năng lượng tráo bao phủ năm mẫu cà rốt mà, cố ý đem sự tình nói rất nghiêm trọng “Nhìn đến không, chính là này năm cái bị năng lượng tráo che chở thổ địa, bên trong loại ngươi cà rốt…… Nếu có con thỏ xông tới, ngươi cà rốt liền không có.”</p>
+<p>Nghe vậy, phì phì hai mắt trừng lớn, không thông minh đầu nhỏ tử tự động đem “Năng lượng tráo = cà rốt” họa đẳng thức.</p>
+<p>Nó hẳn là minh bạch chưa?</p>
+<p>Tạ Tinh Thần tưởng.</p>
+<p>Nhưng thực mau, hắn liền biết phì phì minh bạch.</p>
+<p>Bởi vì liền ở Tạ Tinh Thần tưởng tái giáo dục giáo dục phì phì xem trọng cà rốt mà khi, phì phì nhảy nhót đến năng lượng tráo phụ cận, hướng về phía “Con thỏ tường” phẫn nộ rít gào một tiếng…… Đem chung quanh con thỏ toàn bộ dọa chạy.</p>
+<p>Thật · đinh tai nhức óc!</p>
+<p>Tạ Tinh Thần trợn mắt há hốc mồm.</p>
+<p>Đây là cái gì chủng loại con thỏ? Nó vì cái gì như vậy hung?</p>
+<p>Hốt hoảng đi ra hoa cải dầu mà, Tạ Tinh Thần xem quái vật giống nhau hãy chờ xem tức bẹp gặm hoa cải dầu phì Thỏ Kỉ.</p>
+<p>Thu hoạch phì phì một cái nghiêng đầu sát sau, Tạ Tinh Thần bước chân hoảng hốt đi hướng cách vách đỉnh núi.</p>
+<p>Đối với cách vách đỉnh núi, Tạ Tinh Thần cũng không có gì loại cà rốt hảo phương pháp.</p>
+<p>Rốt cuộc bên kia là một cái loại nhỏ núi sâu rừng già, vừa không là núi hoang, kia nó tự có nó sinh thái tuần hoàn.</p>
+<p>Mạnh mẽ ở mặt trên loại cà rốt không phải không được, nhưng Tạ Tinh Thần sợ phá hư sinh thái.</p>
+<p>Cuối cùng Tạ Tinh Thần lựa chọn ngồi trên huyền phù xe tùy duyên rải loại.</p>
+<p>Hạt giống rắc đi, đến nỗi có thể hay không nảy mầm liền xem mệnh bá!</p>
+<p>Có thể nảy mầm liền nảy mầm, không thể nảy mầm cũng không cái gọi là, dù sao dưới chân núi còn có như vậy nhiều cà rốt đâu, đủ đám kia con thỏ gặm.</p>
+<p>Đỉnh núi không lớn, cẩn thận ở mặt trên rải loại cũng bất quá phế đi một giờ mà thôi.</p>
+<p>Chờ Tạ Tinh Thần</p>
+<p>Rải xong loại, Phú Quý mở ra huyền phù xe trực tiếp đem đại gia tái trở về.</p>
+<p>Hoa điền, một trận lại một trận thanh phong phất tới.</p>
+<p>Này cổ mang theo mùi hoa thanh phong làm người cầm lòng không đậu nhắm mắt lại hưởng thụ.</p>
+<p>Tạ Tinh Thần thực thích hoa quế hương vị, mỗi lần ngửi được hoa quế hương, hắn luôn có có loại nhẹ nhàng lại ngọt ngào cảm.</p>
+<p>Hơn nữa nồng đậm hoa quế vị thực dễ dàng làm người nhớ tới các loại về hoa quế ăn vặt cùng với nữ hài nhi thường dùng nước hoa.</p>
+<p>Tinh tế thời đại cũng là có nước hoa, bất quá chúng nó hương vị rất kỳ quái, so với thuần thiên nhiên thực vật mùi hương, này đó nước hoa càng giống hóa chất hợp thành vật.</p>
+<p>Ở nguyên chủ trong trí nhớ, trên thị trường nước hoa, mặc kệ bán nhiều quý, marketing thật tốt, nghe lên đều có cổ thấp kém tinh dầu vị.</p>
+<p>Đến nỗi chân chính giá trị thiên kim dùng tự nhiên hoa cỏ chế tác mà thành định chế hương?</p>
+<p>Tạ Tinh Thần đồng dạng ngửi qua, nhưng thể cảm cũng không phải quá hảo.</p>
+<p>Tuy rằng chúng nó so hợp thành hương tự nhiên tươi mát, nhưng thực tế hương vị vẫn như cũ không ra sao.</p>
+<p>Dù sao ở hắn xem ra, những cái đó giá trị thiên kim nước hoa còn không bằng nhà hắn cái gì đều không thêm hoa quế tới hảo.</p>
+<p>Bán nước hoa kỳ thật rất kiếm tiền, cho nên Tạ Tinh Thần thật là có cái này kế hoạch.</p>
+<p>Bất quá dựa theo trước mắt hắn hoa tươi mẫu số, cái này kế hoạch chú định chỉ có thể đem gác xó. Chờ khi nào hắn hoa tươi sản lượng tiêu thăng, hắn mới có thể suy xét chế tác nước hoa.</p>
+<p>Rốt cuộc thực hiện thực một cái vấn đề —— nước hoa tuy kiếm tiền, nhưng nguyên liệu là cái vấn đề, có được nguyên lai hắn còn phải suy xét điều hương cái này kỹ thuật sống, tìm không thấy tốt điều hương sư, nước hoa một giây biến “Xú thủy”.</p>
+<p>Nhìn mắt hoa quế phương hướng, Tạ Tinh Thần cảm thấy đặc biệt tiếc nuối.</p>
+<p>Bất quá chờ hắn trở lại tinh hạm hắn liền không có thời gian tưởng chuyện này, bởi vì hắn đến bắt đầu công tác.</p>
+<p>Tạ Tinh Thần trở lại tinh hạm sau chuyện thứ nhất chính là đi gây giống thất quan sát hạt giống, đào tạo hạt giống.</p>
+<p>Gây giống thất xem như Tạ Tinh Thần chuyên chúc công tác gian, cho nên hắn không từng tưởng chính mình sau khi trở về cư nhiên sẽ nhìn đến Trường Thọ ở gây giống thất.</p>
+<p>Nhìn thấy Tạ Tinh Thần, hơi mang khuôn mặt u sầu Trường Thọ rốt cuộc cười, hắn thành thành thật thật tiếp đón Tạ Tinh Thần nói “Lão bản, ngài đã về rồi?”</p>
+<p>Tạ Tinh Thần gật đầu, nhìn đến Trường Thọ tươi cười liền biết vấn đề không lớn, vì thế thanh âm nhẹ nhàng nói “Là nha, ta đã về rồi, ngươi bên này công tác còn thuận lợi sao?”</p>
+<p>Nghe vậy, Trường Thọ chần chờ một lát sau mới gật đầu “Có điểm thuận lợi?”</p>
+<p>Tạ Tinh Thần ?</p>
+<p>“Có điểm thuận lợi?” Tạ Tinh Thần hỏi.</p>
+<p>Thuận lợi còn có thể dùng “Có điểm” tới dễ dàng sao?</p>
+<p>Trường Thọ lại lần nữa gật đầu, cũng giải thích nói “Dã cây trà hạt đi xuống, nhưng so với lục vật chất nước thuốc, này đó dã cây trà hạt giống như càng thích lão bản tinh thần lực của ngươi.”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong55.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong57.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "mot-giac-ngu-day-ta-ke-thua-dia-cau-tinh-te";
+const NOVEL_TITLE = "Một giấc ngủ dậy ta kế thừa địa cầu [ tinh tế ]";
+const CHAPTER_TITLE = "Chương 56";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 7, đánh sâu vào version nội địa</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Toàn năng trung đơn ( điện cạnh )
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 7, đánh sâu vào version nội địa</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong6.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong8.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Buổi tối 9 giờ, chiến đội Thiên Hoàn căn cứ.</p>
+<p>Trì Sóc đi vào nhất hào phòng huấn luyện khi, các đội viên đã đồng thời ngồi ở trước máy tính bắt đầu hằng ngày huấn luyện, hắn đi ngang qua huấn luyện viên Lâm Phong phía sau, phát hiện trò chơi trong màn hình đúng là tân anh hùng “Vực Sâu Chúa Tể” tư liệu giao diện.</p>
+<p>Lâm Phong là chiến đội Thiên Hoàn đời thứ nhất chủ lực trung đơn tuyển thủ, tính tình thực ôn hòa Beta nam tính, giải nghệ sau lưu tại Thiên Hoàn đảm nhiệm huấn luyện viên chính.</p>
+<p>Bởi vì đã từng đương quá tuyển thủ chuyên nghiệp, hắn chấp giáo lý niệm cùng rất nhiều chuyên môn đương huấn luyện viên người không giống nhau —— hắn sẽ càng tôn trọng các tuyển thủ chính mình ý nguyện, cũng cũng không bãi huấn luyện viên cái giá, rất ít làm tuyển thủ đi ăn không ngồi chờ, trừ phi nào đó tuyển thủ thật sự ở trong lúc thi đấu phạm phải nghiêm trọng sai lầm còn không biết hối cải.</p>
+<p>Mỗi lần trò chơi ra tân anh hùng, huấn luyện viên Lâm đều sẽ chính mình trước luyện một lần. Hắn cho rằng huấn luyện viên không thể lý luận suông, cần thiết đối sở hữu anh hùng đều rõ như lòng bàn tay, thi đấu khi mới có thể tuyển ra tốt nhất đội hình. Bởi vậy, Lâm Phong cũng là trước mắt Liên Minh sở hữu huấn luyện viên chính trung, trò chơi thực lực mạnh nhất một vị.</p>
+<p>Trì Sóc dừng lại bước chân, cúi người nhìn về phía hắn màn hình máy tính hỏi “Tân anh hùng cường độ thế nào?”</p>
+<p>Lâm Phong nói “Hẳn là T0 cấp bậc trung đơn. Này anh hùng thao tác khó khăn có điểm đại, Q kỹ năng di chuyển vị trí, khoảng cách thực đoản, khống chế không tốt dễ dàng đâm tường. Ba cái ám ảnh có thể phân liệt, xác nhập, đánh đoàn hoặc là đơn sát đều có không tồi thương tổn, linh hoạt tính rất cao. Hậu kỳ tấn công nổ mạnh, giết người liền đổi mới kỹ năng cơ chế, sẽ làm hắn càng sát càng cường.”</p>
+<p>“Thu gặt hình pháp sư dồn sát thương?” Trì Sóc ở hắn bên cạnh ngồi xuống, một bên khai máy tính một bên nói “Thi đấu phục còn không có chính thức thêm tái tân anh hùng, muốn 11 nguyệt mới online. Yêu cầu trước tiên nhằm vào Vực Sâu Chúa Tể, làm một ít đội hình thượng bố trí sao?”</p>
+<p>Huấn luyện viên Lâm cười nói “Thi đấu phục một khi online, loại này phiên bản cường thế anh hùng rất có thể sẽ thường trú Ban vị, nhưng cũng đến hai tay chuẩn bị, vạn nhất đối diện không Ban, chúng ta cũng luyện luyện tân đội hình.”</p>
+<p>Trì Sóc gật đầu nói “Ngày mai ta cùng ngươi cùng đi bài vị, làm quen một chút tân anh hùng.”</p>
+<p>Căn cứ lịch thi đấu an bài, mỗi cái phía chính phủ mùa giải lại phân thành ba cái võng du tiểu mùa giải.</p>
+<p>Tỷ như phía chính phủ mùa giải thứ 9, võng du bản cài đặt sẽ phân thành 9-1, 9-2, 9-3 ba cái tiểu mùa giải, đối ứng phía chính phủ quý tiền tái, quý trung tái, quý hậu tái ba cái bất đồng giai đoạn.</p>
+<p>Vì làm các người chơi bảo trì mới mẻ cảm, gia tăng chiến thuật phương án, mỗi cái tiểu mùa giải đều sẽ ra một ít tân anh hùng.</p>
+<p>Tân anh hùng mới ra thời điểm giống nhau đều rất cường thế, sẽ trước tiên ở võng du bản cài đặt online, thi đấu phục lùi lại 2 tháng trở lên, đây cũng là vì phòng ngừa tân anh hùng xuất hiện cái gì BUG dẫn tới chính thức Chức Nghiệp League đã chịu ảnh hưởng.</p>
+<p>Trước mắt, 9-3 phiên bản tân anh hùng [ Vực Sâu Chúa Tể  Locker ] đã ở võng du đoan thượng tuyến, sở hữu người chơi đều nhưng mua sắm hoặc là nhiệm vụ đổi, nhưng thi đấu phục còn không có nhân vật này, chức nghiệp sân thi đấu tạm thời không thể dùng hắn.</p>
+<p>Tuyển thủ chuyên nghiệp cần thiết trước tiên quen thuộc tân anh hùng. Nếu không, một khi tân anh hùng đi vào chính thức sân thi đấu, ngươi liền hắn kỹ năng đều làm không rõ, đối thủ tuyển hắn lại muốn như thế nào nhằm vào?</p>
+<p>Bởi vậy, trừ bỏ chiến đội Thiên Hoàn, mặt khác chiến đội tuyển thủ cùng huấn luyện viên khẳng định cũng sẽ luyện tập tân anh hùng “Vực Sâu Chúa Tể” —— đây là Diệp Thiếu Dương theo như lời “Đại gia đứng ở cùng vạch xuất phát” mấu chốt.</p>
+<p>Diệp Thiếu Dương tiếp tục mang Tần Thụy dùng “Vực Sâu Chúa Tể” đánh bài vị.</p>
+<p>Bắt được thuận tay anh hùng, quả nhiên có lợi cho hắn phát huy ra bản thân trình độ.</p>
+<p>Liền tính đồng đội lại đồ ăn, hắn cũng mang đến động.</p>
+<p>4 tiếng đồng hồ, 15 cục thắng lợi, đem đem MVP, thắng liên tiếp bắt được tích phân lần lượt phiên bội. Trong nháy mắt, đệ đệ Tần Thụy đã tới rồi [ bạch kim I] đẳng cấp, Diệp Thiếu Dương cũng một hơi từ [ đồng thau III] đánh tới [ hoàng kim I].</p>
+<p>Trò chơi này bài vị thăng cấp chế độ là thắng liên tiếp càng nhiều, thêm tích phân liền càng nhiều. 5 thắng liên tiếp thêm 1 viên tinh, 10 thắng liên tiếp thêm 2 viên, 15 thắng liên tiếp thêm 3 viên, chỉ cần đánh ra thắng liên tiếp, đẳng cấp vậy cùng ngồi hỏa tiễn giống nhau vèo vèo hướng lên trên thoán.</p>
+<p>Mắt thấy đã qua buổi tối 12 điểm, Diệp Thiếu Dương xoa xoa đau nhức bả vai, quay đầu lại nói “Trước nghỉ ngơi đi, ngày mai lại nói.” Hắn đã ở trước máy tính liên tục ngồi 9 tiếng đồng hồ.</p>
+<p>Tần Thụy cũng mệt mỏi, tắt đi trò chơi, quay đầu lại nhìn hắn nói “Ca, ngươi chơi game thật lợi hại, so với ta các bạn học mạnh hơn nhiều. Bọn họ trước kia mang ta còn thường xuyên thua, ngươi dẫn ta trực tiếp 15 thắng liên tiếp.” Đệ đệ kích động đến gương mặt đều hơi hơi đỏ lên, “Ta chưa từng có thắng liên tiếp quá nhiều như vậy thứ!”</p>
+<p>“Ngươi chơi game đã bao lâu?” Diệp Thiếu Dương nói.</p>
+<p>“Hai tháng.” Tần Thụy nói, “Thi đại học sau khi kết thúc, ta cùng trong lớp mấy cái đồng học cùng nhau kiến hào, bọn họ có người đã thượng kim cương, chỉ có ta tạp ở hoàng kim. Bọn họ chê ta kéo chân sau, liền không mang theo ta chơi.”</p>
+<p>“Ngươi muốn đánh thượng vương giả sao?” Diệp Thiếu Dương đột nhiên hỏi.</p>
+<p>“A?” Tần Thụy hoàn toàn sửng sốt. Hắn chơi hai tháng, vẫn là hoàng kim, thường xuyên bị người mắng, ở hắn xem ra kim cương đẳng cấp đều xa xôi không thể với tới, huống chi là đại biểu võng du đoan đứng đầu trình độ 【 mạnh nhất vương giả 】.</p>
+<p>Hắn đồng học giữa không có một cái mạnh nhất vương giả.</p>
+<p>Lợi hại nhất Alpha lớp trưởng cũng mới kim cương I, vẫn luôn tạp ở thăng cấp tái, không thể đi lên đại sư.</p>
+<p>“Mạnh nhất vương giả?” Tần Thụy hoài nghi mà vò đầu, “Ta có thể được không?”</p>
+<p>“Ta nói có thể là có thể.” Diệp Thiếu Dương cười nhìn về phía đệ đệ, vỗ vỗ vai hắn “Ngày mai bắt đầu, ta sẽ giáo ngươi một ít chơi game ý thức. Chỉ cần ngươi sẽ người bảo lãnh, thực dễ dàng cùng ta thượng phân.”</p>
+<p>“……” Tần Thụy cảm giác chính mình bị bầu trời bánh có nhân cấp tạp trúng.</p>
+<p>Hắn từ nhỏ dịu ngoan nghe lời, học tập thượng vẫn luôn là các lão sư trong mắt tam hảo học sinh, chơi game thời điểm lại luôn là bị mắng, lòng tự tin thường xuyên đã chịu đả kích.</p>
+<p>Hắn không hiểu lắm trò chơi này, cho nên, người khác mắng hắn mắng đến lại khó nghe, hắn cũng ngượng ngùng cãi lại.</p>
+<p>Hôm nay Dương ca giúp hắn mắng trở về, miễn bàn có bao nhiêu hả giận. Dương ca còn dẫn hắn 15 thắng liên tiếp, hắn lần đầu tiên cảm giác được chơi trò chơi nhiệt huyết —— nguyên lai thắng thi đấu còn có thể thắng được như vậy sảng!</p>
+<p>Lúc này Tần Thụy đã thành Diệp Thiếu Dương tiểu mê đệ, mắt trông mong mà nhìn ca ca “Ta đi theo ngươi nghiêm túc học, đến lúc đó là có thể đánh thượng vương giả?”</p>
+<p>Diệp Thiếu Dương nói “Không sai, ngày mai hai chúng ta song bài, ca mang ngươi thượng vương giả.”</p>
+<p>Tần Thụy “Thật tốt quá!”</p>
+<p>Hôm nay đột nhiên xuyên qua lại đây, từ tiếp thu ABO thế giới quan đến sửa sang lại tân trò chơi tư liệu, lại đến mặt sau mang đệ đệ đánh mười mấy cục bài vị…… Diệp Thiếu Dương đại não đã nhét vào quá nhiều tri thức, sắp nổ mạnh. Hắn xoa xoa trướng đau huyệt Thái Dương, đứng dậy dứt khoát mà tắt đi máy tính “Đi rồi, tắm rửa ngủ.”</p>
+<p>Tần Thụy cũng tắt đi máy tính, trên mặt tươi cười so với phía trước xán lạn rất nhiều “Ân, Dương ca ngủ ngon.”</p>
+<p>Diệp Thiếu Dương bế lên bò ở trên sô pha ngủ gà ngủ gật tiểu bạch miêu, giúp nó thuận thuận mao, đem miêu bỏ vào trên ban công trong ổ mèo, lúc này mới xoay người tắm rửa ngủ.</p>
+<p>Hắn phòng ngủ rất đại, có thể là nguyên chủ ở chỗ này sinh sống rất nhiều năm duyên cớ, hắn thực mau thích ứng phòng ngủ hoàn cảnh, không ra mười phút liền ngủ rồi.</p>
+<p>Trong mộng tất cả đều là hắn trước kia ở LPL những cái đó đoạn ngắn.</p>
+<p>Các đồng đội tôn kính mà kêu hắn “Diệp đội”, các fan cùng đối thủ nhóm kêu hắn “Dương Thần”, rất nhiều fans giơ lên tiếp ứng bài ở thi đấu hiện trường hô lớn tên của hắn, cũng có người ở trên mạng mắng hắn “Ngốc bức chỉ biết đi quốc tế tái mất mặt”.</p>
+<p>Đồng đội quen thuộc mặt một người tiếp một người mà xuất hiện, cuối cùng một hồi toàn cầu trận chung kết hình ảnh, như là pha quay chậm giống nhau ở trước mắt không ngừng hồi phóng……</p>
+<p>Bị ác mộng bừng tỉnh thời điểm, Diệp Thiếu Dương phát hiện hai mắt của mình có chút chua xót.</p>
+<p>Hắn biết, quá khứ những cái đó, mặc kệ là huy hoàng vẫn là thung lũng, đều đã một đi không trở lại.</p>
+<p>Hắn đã ở tân thế giới từ đầu bắt đầu. Về sau hắn sẽ có tân đồng đội, tân trải qua, duy nhất bất biến chính là, hắn sẽ tiếp tục vì “Thế giới quán quân” mộng tưởng mà nỗ lực.</p>
+<p>Diệp Thiếu Dương thở sâu, xốc lên chăn xuống giường ra cửa.</p>
+<p>Tần Thụy đã sớm tỉnh, vây quanh tạp dề đang ở phòng bếp làm bữa sáng, Diệp Thiếu Dương đẩy ra phòng bếp môn, nhìn đứng ở bệ bếp bên nghiêm túc chiên trứng gà đệ đệ, đánh cái ngáp, hỏi “Ngươi khởi sớm như vậy?”</p>
+<p>“Ta thói quen ngủ sớm dậy sớm.” Tần Thụy cười nói, “Ca ngươi đi rửa tay, chuẩn bị ăn cơm đi.”</p>
+<p>Diệp Thiếu Dương xoay người đi rửa mặt đánh răng, trở về thời điểm Tần Thụy đã đem phong phú bữa sáng đặt tới trên bàn cơm, có kim hoàng chiên trứng, thơm ngào ngạt bánh nhân thịt, còn có hai chén vừa thấy khiến cho người muốn ăn tăng nhiều bí đỏ cháo.</p>
+<p>Diệp Thiếu Dương nhớ rõ tủ lạnh rỗng tuếch, hắn ngẩng đầu hỏi “Ngươi sáng tinh mơ đi ra ngoài mua đồ ăn sao?”</p>
+<p>“Ân, dưới lầu liền có siêu thị, ta mua rất nhiều thịt đồ ăn, đủ đôi ta ăn ba ngày.”</p>
+<p>Diệp Thiếu Dương “……”</p>
+<p>Sẽ nấu cơm Omega đệ đệ quả thực chính là thiên sứ!</p>
+<p>Biểu ca đem Tiểu Thụy phái tới cùng hắn cùng nhau trụ, là tới cứu vớt hắn dạ dày đi?</p>
+<p>Diệp Thiếu Dương tâm tình rất tốt, kẹp lên chiên trứng nếm một ngụm, giơ ngón tay cái lên “Ăn ngon.”</p>
+<p>Tần Thụy tươi cười thẹn thùng “Ta mua xương sườn, quay đầu lại cho ngươi làm sườn heo chua ngọt. Ca ngươi còn muốn ăn cái gì, có thể cùng ta nói, ta lại đi siêu thị mua.”</p>
+<p>Diệp Thiếu Dương tâm tình phức tạp mà nhìn đệ đệ.</p>
+<p>Như vậy tính cách ôn nhu sẽ nấu cơm, bị người mắng cũng sẽ không mắng trở về nam hài tử, hắn trước kia ở giới điện cạnh căn bản không có gặp qua.</p>
+<p>Có phải hay không phân hoá thành Omega nguyên nhân?</p>
+<p>Tần Duyệt cùng Tần Thụy đều là Omega, người trước ôn hòa trí thức, người sau dịu ngoan đáng yêu, thế giới này Omega, nên sẽ không đều là cái dạng này đi?</p>
+<p>Không nói thô tục, không mắng chửi người, ôn hòa săn sóc, thiện giải nhân ý?</p>
+<p>Diệp Thiếu Dương nghĩ nghĩ chính mình cũng có 50％ xác suất phân hoá thành Omega, lại liên tưởng một chút chính mình ôn ôn nhu nhu bộ dáng…… Liên tưởng không tới, ngược lại nổi lên một thân nổi da gà.</p>
+<p>Hắn nhưng làm không được ôn nhu nghe lời, từ trước đến nay đều là người khác nghe lời hắn.</p>
+<p>Liền tính phân hoá thành Omega, nên mắng vẫn là làm theo mắng.</p>
+<p>Hơn nữa, hắn có một vạn loại phương pháp mắng chửi người không mang theo chữ thô tục, bị cử báo cũng không hiệu.</p>
+<p>Diệp Thiếu Dương nhanh chóng ăn sạch bữa sáng, mang theo đệ đệ đi vào thư phòng mở ra máy tính.</p>
+<p>Tần Thụy ngồi ở bên cạnh, bày ra một bộ nghiêm túc học tập thái độ “Ca, hiện tại bắt đầu đánh bài vị sao?”</p>
+<p>Diệp Thiếu Dương nói “Không vội, trước tới hai cục người cơ, ta dạy cho ngươi như thế nào chơi phụ trợ. Thuận lợi nói, hôm nay ngủ phía trước ta tưởng trực tiếp xông lên vương giả, thuận tiện lấy Vực Sâu Chúa Tể hướng một chút version nội địa.”</p>
+<p>Tần Thụy “……”</p>
+<p>Một ngày xông lên vương giả, còn hướng version nội địa? Dương ca như vậy tự tin sao?</p>
+<p>Tần Thụy mở ra bạn tốt danh sách, điểm tiến [ Tiểu Bạch ] tư liệu lan.</p>
+<p>Tư liệu lan sẽ xuất hiện người chơi thường dùng anh hùng, sử dụng 10 thứ trở lên anh hùng mới có thể bị ký lục ( người cơ không tính ). Tiểu Bạch thường dùng anh hùng trước mắt chỉ có [ Vực Sâu Chúa Tể ] một cái, sử dụng số lần 15 thứ, thắng suất 100％.</p>
+<p>Anh hùng chiến lực 3689.</p>
+<p>Góc trái phía trên xuất hiện một cái huy chương đồng tiêu chí —— thành phố Tinh Thành Tân Giang khu đứng hàng đệ nhất.</p>
+<p>Tần Thụy kích động nói “Ca, ngươi bắt được khu tiêu!”</p>
+<p>Diệp Thiếu Dương thần sắc bình tĩnh “Ân, quá mấy ngày lấy cái quốc tiêu cho ngươi xem.”</p>
+<p>Tần Thụy “……”</p>
+<p>Ca ca theo đuổi quả nhiên không bình thường.</p>
+<p>Diệp Thiếu Dương dựa theo ký ức, mở ra xuyên qua ngày đó phát sóng trực tiếp phần mềm —— nền tảng livestream Kình Ngư.</p>
+<p>Đây là Hoa Quốc lớn nhất phát sóng trực tiếp nền tảng chi nhất, điểm tiến Thần Chiến phân chia loại sau, quả nhiên thấy đại lượng đứng đầu trò chơi chủ bá, trước mắt, nhân khí tối cao chủ bá tên là 【 A Ngư ca 】, phòng live stream tên là “Dậy sớm chim chóc có trùng ăn, Vực Sâu Chúa Tể tân anh hùng dạy học”, tại tuyến quan khán nhân khí cao tới 200 vạn.</p>
+<p>Buổi sáng 8 điểm nửa, thời gian này đoạn điện cạnh tuyển thủ nhóm khẳng định đều đang ngủ. Vị này “A Ngư ca” hiển nhiên là chức nghiệp trò chơi chủ bá, phòng live stream nhân khí như vậy cao, khẳng định cũng có chút tài năng.</p>
+<p>Trò chơi mỗi lần ra tân anh hùng, sẽ có rất nhiều người chơi vì học tập tân anh hùng chơi pháp, tới xem các loại phát sóng trực tiếp dạy học. Đây chính là tích lũy nhân khí, dẫn người chú ý tốt nhất phương pháp.</p>
+<p>Diệp Thiếu Dương đem chính mình phòng live stream tên từ “Ma mới tùy tiện chơi” đổi thành “Phát sóng trực tiếp Vực Sâu Chúa Tể hướng version nội địa.”</p>
+<p>Lục tục có người tiến vào phòng live stream.</p>
+<p>【 Tiểu Bạch?? Này không phải ngày hôm qua định đoạn tái liền thua ba lần ma mới sao, ngươi còn không có tháo dỡ trò chơi a? 】</p>
+<p>【 ngươi thật sự muốn đi lên ‘ trò chơi khu nhất đồ ăn chủ bá ’ này bất quy lộ sao? 】</p>
+<p>【 hoan nghênh chủ bá giới đất đá trôi trở về. 】</p>
+<p>【 chủ bá lần này lại muốn chết vài lần, đưa vài người đầu? 】</p>
+<p>Diệp Thiếu Dương “……”</p>
+<p>Khụ khụ, hắc lịch sử không đề cập tới cũng thế.</p>
+<p>Hắn không lý những cái đó làn đạn, nhanh chóng ở bình luận khu cố định trên top một cái thông cáo “Buổi sáng 10 giờ bắt đầu, tân anh hùng [ Vực Sâu Chúa Tể ] hướng version nội địa đứng hàng, hoan nghênh vây xem.”</p>
+<p>Phòng live stream khán giả “…………”</p>
+<p>Một ván thi đấu liền chết 8 thứ tân nhân, lấy tân anh hùng hướng version nội địa đứng hàng??</p>
+<p>Ai cho ngươi dũng khí a?!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong6.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong8.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "toan-nang-trung-don-dien-canh";
+const NOVEL_TITLE = "Toàn năng trung đơn ( điện cạnh )";
+const CHAPTER_TITLE = "Chương 7, đánh sâu vào version nội địa";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

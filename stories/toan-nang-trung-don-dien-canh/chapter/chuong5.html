@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 5, mới lộ đường kiếm</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Toàn năng trung đơn ( điện cạnh )
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 5, mới lộ đường kiếm</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong4.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong6.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Tần Thụy ôm notebook máy tính cùng Diệp Thiếu Dương đi vào thư phòng, từ nhà ăn chuyển đến một cái ghế đặt ở biểu ca điện cạnh ghế bên cạnh, mở ra trò chơi mời bạn tốt.</p>
+<p>Buổi tối 8 giờ rưỡi là người chơi tại tuyến cao phong kỳ, không ra 5 giây bọn họ liền xứng đôi tới rồi thi đấu. Bởi vì kim cương dưới đẳng cấp cũng không cần BP ( cấm tuyển anh hùng ), thi đấu bắt đầu sau, bọn họ chỉ có thể nhìn đến chính mình đồng đội.</p>
+<p>5 cái người chơi, Diệp Thiếu Dương [ Tiểu Bạch ] là đồng thau đẳng cấp, Tần Thụy [ Tiểu Thụy ] là hoàng kim, dư lại [ Ca Chỉ Là Truyền Thuyết ], [ Ngươi Mỉm Cười ], [ Ta Tim Đập ] đều là bạc trắng đoạn, sau hai người ID vừa thấy chính là tình lữ.</p>
+<p>Dựa theo đẳng cấp bình quân nguyên tắc, này cục hẳn là bạc trắng đẳng cấp quyết đấu.</p>
+<p>Diệp Thiếu Dương tài khoản chỉ có 5 cái anh hùng, hắn giây tuyển vừa rồi ở huấn luyện doanh luyện tập quá trung lộ pháp sư “Băng Sương Nữ Thần  Sherry ”. Một người mặc tuyết trắng pháp sư bào, có được kim sắc cuộn sóng tóc quăn mỹ nữ xuất hiện ở trước mắt.</p>
+<p>Tần Thụy thấy ca ca tuyển pháp sư, liền giây tuyển cái phụ trợ ra tới —— “Rừng Rậm Sứ Giả  Nhã An”, đây là cái trát đại đuôi ngựa, có một đôi tinh anh tộc tai nhọn đáng yêu tiểu loli, kỹ năng tất cả đều là thêm huyết.</p>
+<p>Theo sát, đồng đội [ Ngươi Mỉm Cười ] tuyển pháp sư anh hùng, [ Ta Tim Đập ] tuyển ra cái xạ thủ, [ Ca Chỉ Là Truyền Thuyết ] tuyển cái thích khách anh hùng. Đội hình liền thành 1 thích khách, 2 pháp sư, 1 xạ thủ, 1 phụ trợ.</p>
+<p>[ Ngươi Mỉm Cười ] Ta chơi pháp sư, Tiểu Bạch ngươi đổi cái anh hùng được chưa?</p>
+<p>[ Ta Tim Đập ] Phụ trợ đổi cái thịt một chút, ngươi này Rừng Rậm Sứ Giả chính mình chính là cái da giòn!</p>
+<p>[ Ngươi Mỉm Cười ] Nghe ta bạn trai, đổi cái thịt đi, tốc độ tốc độ.</p>
+<p>[ Tiểu Thụy ] Xin lỗi, ta không quá sẽ khác phụ trợ.</p>
+<p>[ Tiểu Bạch ] Bạc trắng cục không như vậy chú trọng, chơi chính mình am hiểu anh hùng.</p>
+<p>[ Ngươi Mỉm Cười ] ……</p>
+<p>[ Ngươi Mỉm Cười ] Hai cái pháp sư như thế nào đánh?</p>
+<p>[ Tiểu Bạch ] Có thể đánh.</p>
+<p>[ Tiểu Bạch ] Ta đi lên lộ, trung lộ nhường cho ngươi, khai đi.</p>
+<p>Tình lữ đảng thấy hắn không đến thương lượng, đành phải giận dỗi dường như đồng thời ấn xuống chuẩn bị.</p>
+<p>Trò chơi bắt đầu.</p>
+<p>Diệp Thiếu Dương nói được không sai, bạc trắng đẳng cấp cấp thấp thi đấu cũng không coi trọng đội hình, cũng không nhiều ít chiến thuật đáng nói, chỉ cần có một cái thực lực cường tay già đời, là có thể giết lung tung mang đồng đội nằm thắng.</p>
+<p>Nghiêm khắc tới nói, đây là hắn lần đầu tiên chính thức đánh 《 Thần Chiến 》 thi đấu xếp hạng. Phía trước mới vừa xuyên qua lại đây lần đó không tính, lúc ấy đầu óc đều là ngốc, không thể hiểu được bị ám sát, hắn cũng không để ở trong lòng nghiêm túc đi đánh.</p>
+<p>Nhưng là lần này, hắn nghiêm túc.</p>
+<p>Băng Sương Nữ Thần cái này anh hùng hắn ở huấn luyện doanh thử qua mấy cái người cơ, đã phi thường thuần thục.</p>
+<p>Trò chơi bắt đầu, Diệp Thiếu Dương tính hảo thời gian ngồi xổm ở thượng lộ bụi cỏ, chờ đối phương biên lộ chiến sĩ xuất hiện ở trong tầm nhìn, hắn quyết đoán một cái Q kỹ năng ném qua đi xoá sạch đối phương 10% huyết lượng. Điểm này huyết không đau không ngứa, nhưng đối tuyến quan trọng chính là tiêu hao cùng tìm kiếm cơ hội, có đôi khi, thường thường là điểm này huyết lượng chênh lệch, có thể ở thời khắc mấu chốt xoay chuyển chiến cuộc.</p>
+<p>Đối phương căn bản không để ý điểm này rớt huyết, Diệp Thiếu Dương bay nhanh phổ công đánh chết tiểu binh.</p>
+<p>Trong nháy mắt hắn liền lên tới 2 cấp, học được W kỹ năng “Đóng Băng Ba Thước”. Hắn dự phán hảo đối diện chiến sĩ đi vị, chính xác mà đem đối phương đông cứng ở tại chỗ, theo sát thượng Q kỹ năng tiếp tục tiêu hao đối phương huyết lượng.</p>
+<p>Lần này rớt huyết lượng tới rồi 30%.</p>
+<p>Chiến sĩ nhận thấy được đối diện so với chính mình lợi hại, túng ở tháp hạ không dám ra tới.</p>
+<p>Hai người hoà bình ở chung, từng người bổ binh phát dục.</p>
+<p>Thẳng đến 3 phút, Diệp Thiếu Dương trên người dẫn đầu bốc lên thăng cấp quang mang.</p>
+<p>Hắn Băng Sương Nữ Thần 6 cấp.</p>
+<p>Cùng LOL giống nhau, anh hùng 6 cấp là 《 Thần Chiến 》 giữa phi thường mấu chốt một cái tiết tấu điểm. Thần Chiến mỗi cái anh hùng đều có 4 cái chủ động kỹ năng, 6 cấp thời điểm có thể học được chung cực đại chiêu.</p>
+<p>Băng Sương Nữ Thần chung cực đại chiêu kêu “Hàn Băng Phong Bạo”, triệu hoán phạm vi lớn bão tuyết tạo thành cực cường băng hệ pháp thuật thương tổn, nếu mục tiêu bị đông lại tắc thương tổn phiên bội. Vừa lúc có thể cùng W kỹ năng “Đóng Băng Ba Thước” cùng Q kỹ năng “Hàn Khí Xâm Tập” phối hợp, đánh ra một bộ tam liên chiêu bùng nổ.</p>
+<p>Đây là nhất cơ sở pháp sư liền chiêu chơi pháp, Diệp Thiếu Dương sớm đã nhớ kỹ trong lòng.</p>
+<p>Đối phương chiến sĩ túng ở tháp hạ, Diệp Thiếu Dương tàng tiến biên lộ bụi cỏ chờ đợi cơ hội.</p>
+<p>Đúng lúc này, bên tai vang lên hệ thống âm hiệu ——</p>
+<p>First Blood!</p>
+<p>Double Kill!</p>
+<p>Hạ bộ đột nhiên bùng nổ quy mô nhỏ đoàn chiến, tình lữ đảng chết thảm ở đối phương thích khách dao mổ dưới!</p>
+<p>Tần Thụy chạy trốn mau, tàn huyết về nhà.</p>
+<p>Đoàn đội kênh trò chuyện xuất hiện rậm rạp tự phù ——</p>
+<p>[ Ngươi Mỉm Cười ] Thái kê (cùi bắp) đừng tới đánh bài vị được không? @[ Tiểu Thụy ]</p>
+<p>[ Ta Tim Đập ] Biết rõ chính mình đồ ăn, có thể hay không đừng tới thi đấu xếp hạng hố người? Người cơ càng thích hợp ngươi.</p>
+<p>[ Ngươi Mỉm Cười ] Đối diện phụ trợ sẽ đánh phối hợp, nhà ta phụ trợ cũng chỉ biết chạy trốn, ha hả.</p>
+<p>[ Ta Tim Đập ] Ngốc bức phụ trợ! 6 phân đầu, tốc độ hạ cục.</p>
+<p>Tần Thụy thấy này đó mắng hắn nói, sắc mặt có chút khó coi.</p>
+<p>Hắn cắn cắn môi, trở lại nước suối khôi phục trạng thái, sau đó đi vào hạ bộ.</p>
+<p>Tình lữ đảng còn ở tiếp theo mắng.</p>
+<p>[ Ngươi Mỉm Cười ] Đôi ta ở phía trước đánh đoàn, ngươi ở bên cạnh xem diễn? Bán đồng đội muốn mặt sao?</p>
+<p>[ Ta Tim Đập ] Trừ bỏ sẽ kẹp chặt cái đuôi chạy trốn ngươi còn sẽ làm gì?</p>
+<p>[ Ta Mỉm Cười ] Nên không phải là cái nhát như chuột Omega đi, đánh đoàn cũng chỉ biết chạy?</p>
+<p>[ Ngươi Tim Đập ] Chính là, tùy tiện thêm khẩu huyết đôi ta đều sẽ không chết! Nhìn ngươi này túng bao bộ dáng!</p>
+<p>[ Ta Mỉm Cười ] Kiến nghị ngươi tháo dỡ trò chơi. Ngốc bức ****.</p>
+<p>Hai người nói chuyện càng ngày càng khó nghe.</p>
+<p>Diệp Thiếu Dương lớn nhất tật xấu chính là bênh vực người mình. Nếu hai người mắng chính là hắn, hắn có lẽ mặc kệ. Nhưng đem đệ đệ mắng đến hốc mắt đỏ lên, hắn cũng không thể nhẫn.</p>
+<p>Diệp Thiếu Dương nhìn mắt Tần Thụy “Ngươi không mắng trở về?”</p>
+<p>Tần Thụy cúi đầu, thanh âm có chút ủy khuất “Ta ba nói, Omega tốt nhất đừng mắng thô tục, quá thô lỗ.”</p>
+<p>Diệp Thiếu Dương nhướng mày “…… Đúng không?”</p>
+<p>Ngay sau đó, hắn tiện tay tốc bay nhanh mà đánh chữ mắng trở về ——</p>
+<p>[ Tiểu Bạch ] Đã chết liền biết phun phụ trợ, chính mình cái gì trình độ trong lòng không điểm B số?</p>
+<p>[ Tiểu Bạch ] Như thế nào? Còn muốn ta gia phụ trợ bồi hai người các ngươi tuẫn tình?</p>
+<p>[ Tiểu Bạch ] Kinh tế kém còn đầu thiết đi đánh đoàn, kỹ năng phóng không, flash đâm tường, thao tác quả thực cay đôi mắt.</p>
+<p>[ Tiểu Bạch ] Hai ngươi mau nhắm lại miệng đi nước suối treo máy đi, nhà ta phụ trợ có ta đến mang.</p>
+<p>Vị này Tiểu Bạch xoát khởi bình tới thật sự là quá nhanh.</p>
+<p>Bốn điều tin tức nháy mắt bắn ra, tình lữ đảng nhất thời bị mắng ngốc, đầu óc không đuổi kịp hắn tốc độ.</p>
+<p>Diệp Thiếu Dương mở miệng nói “Tiểu Thụy, tới thượng lộ tìm ta.”</p>
+<p>Tần Thụy sửng sốt một chút, lập tức từ dã khu tung ta tung tăng mà chạy tới thượng lộ.</p>
+<p>Lúc này, thượng lộ binh tuyến đã đã đến, đối diện chiến sĩ quả nhiên nhịn không được thò đầu ra thanh binh, còn chưa kịp đánh chết một con tiểu binh, dưới chân đột nhiên dâng lên một đoàn hoa sen trạng băng tinh, theo sát chính là che trời lấp đất bão tuyết!</p>
+<p>Chiến sĩ huyết tựa như khai áp phóng hồng giống nhau xôn xao mà rớt, huyết lượng nhanh chóng thấy đáy.</p>
+<p>Trong màn hình bắn ra tin tức ——</p>
+<p>[ Tiểu Bạch ] đánh chết [ Hoa Hoa Công Tử ]!</p>
+<p>Tần Thụy đuổi tới thời điểm, thấy chính là chiến sĩ ngã vào vũng máu hình ảnh.</p>
+<p>Hắn có chút không thể tin được mà quay đầu lại xem ca ca, lại phát hiện Diệp Thiếu Dương sắc mặt phi thường bình tĩnh.</p>
+<p>Sát xong đối diện chiến sĩ, Diệp Thiếu Dương đi dã khu thu sóng tài nguyên, sau đó hồi thủy tinh khôi phục trạng thái, mua trang bị. Lại hồi thượng lộ khi, sống lại chiến sĩ lại ở bổ binh, hắn xoay tay lại một cái WQR liền chiêu, chiến sĩ trực tiếp nằm yên.</p>
+<p>[ Tiểu Bạch ] đánh chết [ Hoa Hoa Công Tử ]!</p>
+<p>Tình lữ đảng cuối cùng lấy lại tinh thần, bắt đầu ở công bình điên cuồng spam nhục mạ Tiểu Bạch, khung chat một đống lớn *** che chắn từ, Diệp Thiếu Dương bị thăm hỏi mười tám đại tổ tông. Một vị khác đồng đội [ Ca Chỉ Là Truyền Thuyết ] một bộ “Không để ý đến chuyện bên ngoài” bình tĩnh thái độ, không chi viện, không cãi nhau, từ đầu đến cuối đều ở dã khu du đãng.</p>
+<p>Diệp Thiếu Dương không lại lãng phí thời gian cùng tình lữ cãi nhau, chuyên tâm chơi game.</p>
+<p>Trên màn hình không ngừng bắn ra tin tức ——</p>
+<p>[ Tiểu Bạch ] đánh chết [ Hoa Hoa Công Tử ]!</p>
+<p>[ Tiểu Bạch ] đánh chết [ Hoa Hoa Công Tử ]!</p>
+<p>Thi đấu 5 phút, thượng lộ bị Diệp Thiếu Dương hoàn toàn đánh thông quan.</p>
+<p>Đối diện ý thức được không ổn, tổ đoàn đi thượng lộ bọc đánh, Diệp Thiếu Dương ở thượng lộ cao điểm tháp phụ cận dã khu trong bụi cỏ trước tiên ngồi canh, Tần Thụy cùng hắn cùng nhau ngồi xổm ở bụi cỏ, cho hắn thêm đầy huyết.</p>
+<p>Đối phương năm người xếp thành đội từ trước mặt hắn trải qua.</p>
+<p>Tay mới không hiểu sai khai thân vị, cũng không biết kỹ năng thăm thảo, trực tiếp lấy mặt tới thăm bụi cỏ.</p>
+<p>Diệp Thiếu Dương bay nhanh mà ấn xuống bàn phím ——</p>
+<p>Đóng Băng Ba Thước, Hàn Khí Xâm Tập, Hàn Băng Phong Bạo!</p>
+<p>Lưu sướng tam liên chiêu ở 1 giây nội phóng thích xong, tinh chuẩn dự phán làm đối diện năm người nháy mắt đông lạnh thành khắc băng.</p>
+<p>Diệp Thiếu Dương một thân xa hoa trang bị, kinh tế đã hình thành nghiền áp.</p>
+<p>Che trời lấp đất bão tuyết rào rạt rơi xuống, bị đông lạnh trụ năm người vô pháp hành động, trực tiếp bị đánh một đợt đoàn diệt!</p>
+<p>Trên màn hình liền xoát tin tức ——</p>
+<p>[ Tiểu Bạch ] đánh chết [ Hoa Hoa Công Tử ]!</p>
+<p>[ Tiểu Bạch ] đánh chết [ Chanh Tiểu Pudding ], double kill!</p>
+<p>[ Tiểu Bạch ] đánh chết [ Tuyết Nữ ], triple kill!</p>
+<p>[ Tiểu Bạch ] đánh chết [ Nước Chảy Có Tình ], penta kill!</p>
+<p>[ Tiểu Bạch ] đã siêu thần!</p>
+<p>[ Tiểu Bạch ] bắt đầu chúa tể thi đấu!</p>
+<p>Tình lữ đảng “………”</p>
+<p>Tình huống như thế nào??</p>
+<p>Vốn dĩ tính toán này cục thi đấu 6 phút đầu hàng, kết quả không tới 6 phút, đầu hàng cái nút cũng chưa xuất hiện……</p>
+<p>Này liền thắng!</p>
+<p>Thắng?!</p>
+<p>Cãi nhau ồn ào đến quá đầu nhập hai người, đều không hiểu được thượng lộ là như thế nào đánh thông quan.</p>
+<p>Diệp Thiếu Dương nhanh chóng bán đi toàn bộ trang bị, thay một kiện công tốc tối cao vật lý vũ khí, mang theo tiểu binh đẩy thủy tinh.</p>
+<p>Hắn một bên tự động công kích thủy tinh, một bên đánh chữ “Thắng, vui vẻ không?”</p>
+<p>Tình lữ “……”</p>
+<p>Vui vẻ??</p>
+<p>Chính mình ở kia mắng chửi người, đồng đội mang nằm thắng cảm giác cũng không vui vẻ!</p>
+<p>[ Tiểu Bạch ] Ta mang nhà ta phụ trợ thắng, cùng hai người các ngươi có quan hệ sao?</p>
+<p>[ Tiểu Bạch ] chết một lần có thể phun năm phút, các ngươi là dùng miệng chơi game?</p>
+<p>[ Tiểu Bạch ] Không nói tái kiến.</p>
+<p>Hắn đánh chữ tốc độ tay bay nhanh, linh hồn tam liên hỏi liên tục xoát ở công bình thượng, thời gian cũng tính toán đến vừa vặn, đánh hạ “Không nói tái kiến” bốn chữ kia một khắc, thủy tinh vừa lúc “Phanh” một tiếng nổ mạnh!</p>
+<p>Trò chơi kết thúc, kim sắc “Victory” chữ ở màn hình trung gian bắn ra.</p>
+<p>Nói chuyện phiếm giao diện đã không thể đánh chữ.</p>
+<p>Kia đối tình lữ chẳng sợ có lại nhiều câu oán hận, cũng vô pháp đánh chữ mắng hắn.</p>
+<p>Đây là Diệp Thiếu Dương “Thực tế hành động đánh ngươi mặt, ngươi còn không thể mắng trở về” phong cách.</p>
+<p>Tần Thụy “…………”</p>
+<p>Hắn quay đầu nhìn về phía ca ca, đầy mặt không thể tin được “Ca, ngươi chừng nào thì lợi hại như vậy a? Không phải 2 ngày trước mới bắt đầu chơi trò chơi này sao?”</p>
+<p>Diệp Thiếu Dương da mặt dày, nghiêm trang nói “Tuy rằng chỉ chơi hai ngày, nhưng ta phát hiện, chính mình còn rất có chơi game thiên phú, cảm ơn ngươi kéo ta nhập hố.”</p>
+<p>Hắn tổng không thể nói chính mình đến từ một thế giới khác, còn lấy quá cả nước quán quân. Liền dùng “Thiên phú” tới giải thích đi, dù sao thiên phú thứ này đặc biệt huyền hồ, nghe tới cũng không tính khả nghi.</p>
+<p>Trước kia chưa từng chơi trò chơi, 21 tuổi mới ở biểu đệ giới thiệu hạ tiếp xúc 《 Thần Chiến 》, kết quả phát hiện chính mình rất có chơi game thiên phú, vì thế tưởng trở thành tuyển thủ chuyên nghiệp —— này chuyện xưa phải nói đến qua đi đi?</p>
+<p>Cho dù có người hoài nghi, cũng tìm không thấy chứng cứ, hắn xác thật là mấy ngày nay mới bị đệ đệ kéo vào hố.</p>
+<p>Vừa rồi chỉ là bạc trắng đoạn cấp thấp cục, nhưng ít ra chứng minh hắn đối trò chơi lý giải là đúng. Càng làm cho hắn vui sướng chính là, hắn thân thể này tốc độ tay cũng thực mau, có thể ứng đối cao cường độ điện cạnh Chức Nghiệp League.</p>
+<p>Tuy rằng 21 tuổi đối điện cạnh tuyển thủ tới nói xác thật chậm chút, nhưng hắn kiếp trước đánh quá vô số trận thi đấu, đại tái kinh nghiệm phi thường phong phú, đoàn đội thích ứng lực rất mạnh, tố chất tâm lý càng không cần lo lắng.</p>
+<p>Hắn tin tưởng, chỉ cần hắn đánh ra thành tích, nhất định sẽ có Bá Nhạc huấn luyện viên nguyện ý thiêm hắn!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong4.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong6.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "toan-nang-trung-don-dien-canh";
+const NOVEL_TITLE = "Toàn năng trung đơn ( điện cạnh )";
+const CHAPTER_TITLE = "Chương 5, mới lộ đường kiếm";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

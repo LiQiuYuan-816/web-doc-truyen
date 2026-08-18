@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 27, quyết thắng cục</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Toàn năng trung đơn ( điện cạnh )
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 27, quyết thắng cục</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong26.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong28.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Lão bản vấn đề làm Diệp Thiếu Dương rất là ngoài ý muốn, hắn hiện tại chỉ biết chơi [ Vực Sâu Chúa Tể ], [ Ảo Thuật Sư ], [ Băng Sương Nữ Thần ] ba cái anh hùng, chẳng sợ hắn chủ động nói “Ta muốn đi đánh Chức Nghiệp League” cũng không ai sẽ tin.</p>
+<p>Đại bộ phận người nghe được lời này, chỉ biết cho rằng hắn niên thiếu khinh cuồng, không biết trời cao đất dày. Cho nên, Diệp Thiếu Dương trừ bỏ cùng nền tảng Kình Ngư đàm phán thời điểm muốn khăng khăng hơn nữa “Điện cạnh tuyển thủ” cái kia phụ gia điều khoản ở ngoài, không cùng bất luận kẻ nào nói qua —— hắn muốn đánh chức nghiệp.</p>
+<p>Bởi vì hắn hiện tại thực lực còn chưa đủ, nói cũng tương đương nói vô ích.</p>
+<p>Hắn nguyên bản kế hoạch nhiều lấy một ít anh hùng version nội địa tiêu, chờ anh hùng trì cũng đủ thâm, trở thành bị chịu chú mục người qua đường vương lúc sau, lại đi tiếp xúc chức nghiệp chiến đội, đến lúc đó liền sẽ không có người cho rằng hắn “Khẩu xuất cuồng ngôn”.</p>
+<p>Không nghĩ tới, lão bản cư nhiên sẽ chủ động hỏi hắn vấn đề này. Diệp Thiếu Dương không có chính diện trả lời, hỏi ngược lại “Lão bản ngài cảm thấy, ta như là có thể đánh chức nghiệp thi đấu người sao?”</p>
+<p>Trì Sóc nói “Theo ta quan sát, ngươi thao tác cùng ý thức cũng chưa cái gì vấn đề, mặt khác điều kiện có phải hay không đạt tiêu chuẩn, còn phải trải qua chuyên nghiệp khảo hạch cùng thí nghiệm.”</p>
+<p>Không phải nói trò chơi chơi đến hảo là có thể đi thi đấu, điện cạnh tuyển thủ xác thật yêu cầu rất nhiều chuyên nghiệp thí nghiệm.</p>
+<p>Diệp Thiếu Dương hiếu kỳ nói “Lão bản là làm điện cạnh tương quan ngành sản xuất sao?”</p>
+<p>Hắn đã sớm ở tò mò lão bản thân phận, ngay từ đầu cho rằng đối phương chỉ là cái thổ hào trò chơi người yêu thích, nhưng là hôm nay giáp mặt nhìn thấy đối phương, Diệp Thiếu Dương phát hiện lão bản đối trò chơi lý giải phi thường thông thấu, vừa rồi giới thiệu Kinh Trập, Hỏa Văn chiến đội tuyển thủ khi, cũng có thể nhìn ra lão bản đối giới điện cạnh hiểu biết căn bản không giống như là ngoài vòng người.</p>
+<p>Trì Sóc trầm mặc một lát, nghiêm trang mà nói “Ngươi đoán được đối, ta là một chi điện cạnh chiến đội huấn luyện viên. Nếu ngươi có đương điện cạnh tuyển thủ ý nguyện, ta có thể giúp ngươi.”</p>
+<p>Nói chính mình là huấn luyện viên, cũng không phải cố ý lừa Tiểu Bạch, mà là huấn luyện viên cái này thân phận càng dễ dàng làm người buông cảnh giác. Bởi vì, đại bộ phận chiến đội thiêm tuyển thủ, huấn luyện viên ý kiến đều sẽ chiếm rất lớn tỉ trọng. Rất nhiều chiến đội huấn luyện viên, cũng sẽ đi dân gian tìm kiếm ưu tú mầm, mang về bồi dưỡng.</p>
+<p>Quả nhiên, nghe được hắn là huấn luyện viên sau, Tiểu Bạch ánh mắt lập tức trở nên cung kính lên “Huấn luyện viên ngài hảo, ngài là như thế nào chú ý tới ta? Ta khai phát sóng trực tiếp cũng mới một tuần.”</p>
+<p>Trì Sóc giải thích nói “Ngươi lúc ấy đánh vương giả thăng cấp tái, cùng A Ngư ca kia một hồi quyết đấu, bị người ghi hình, phát tới rồi có rất nhiều điện cạnh tuyển thủ trong đàn. Ta nhìn kia trận thi đấu, phát hiện ngươi rất có chỉ huy thiên phú, mới đi ngươi phòng live stream chú ý ngươi.”</p>
+<p>Diệp Thiếu Dương bừng tỉnh đại ngộ “Nguyên lai là như thế này.”</p>
+<p>Thật là cảm ơn quân đội bạn A Ngư ca phụ trợ.</p>
+<p>A Ngư ca công khai mắng điện cạnh tuyển thủ, ở giới điện cạnh thanh danh khẳng định thực xú. Lúc ấy hắn ở bài vị đụng vào A Ngư ca, hắn chỉ nghĩ mau chóng đánh thượng vương giả, cho nên mới ở ngược gió cục kiên nhẫn chỉ huy đồng đội phiên bàn, không nghĩ tới đơn giản một ván vương giả thăng cấp tái cư nhiên bị người ghi hình, thậm chí ở điện cạnh tuyển thủ bên trong bắt đầu truyền bá.</p>
+<p>Như vậy xem ra, hẳn là có không ít huấn luyện viên ở chú ý hắn.</p>
+<p>Lão bản là hành động nhanh nhất một cái, đã mau vào đến cùng hắn lén gặp mặt.</p>
+<p>Diệp Thiếu Dương hỏi “Cho nên, ngài ở phòng live stream cho ta xoát lễ vật, mời ta tới xem thi đấu, cùng ta gặp mặt, chính là vì xác nhận ta thích không thích hợp đánh chức nghiệp sao?”</p>
+<p>Trì Sóc thản nhiên thừa nhận “Không sai.”</p>
+<p>Diệp Thiếu Dương lúc này hoàn toàn buông xuống cảnh giác.</p>
+<p>Huấn luyện viên phát hiện có thiên phú người qua đường, tự mình đi tiếp xúc, như vậy ví dụ hắn gặp qua rất nhiều. Nếu đối phương như thế trực tiếp, Diệp Thiếu Dương cũng không có giấu giếm tất yếu, dứt khoát nói “Ta hiện tại đã 21 tuổi, nếu như đi đánh chức nghiệp nói, ngài cảm thấy còn kịp sao?”</p>
+<p>Trì Sóc có chút ngoài ý muốn nhìn về phía Tiểu Bạch.</p>
+<p>Nam sinh ánh mắt thực thẳng thắn, thanh âm cũng thực tuổi trẻ, căn bản không có thành niên Alpha trầm thấp âm sắc, Trì Sóc còn tưởng rằng Tiểu Bạch là cái 18 tuổi tả hữu mới vừa phân hoá thiếu niên, không nghĩ tới đã 21 tuổi.</p>
+<p>21 tuổi mới tiếp xúc điện cạnh, xác thật có chút vãn.</p>
+<p>Đại bộ phận tân nhân đều là mười mấy tuổi bắt đầu thí huấn, 21 tuổi đã là các đại chiến đội chủ lực.</p>
+<p>Nhưng cũng không phải hoàn toàn không có hy vọng.</p>
+<p>Đánh giá một cái tuyển thủ chuyên nghiệp, không thể chỉ xem tuổi tác.</p>
+<p>Trì Sóc nhìn về phía hắn, ngữ khí ôn hòa “Chỉ cần ngươi nguyện ý, 21 tuổi cũng tới kịp.”</p>
+<p>Nghe được hợp tâm ý trả lời, Diệp Thiếu Dương không khỏi nở nụ cười “Phải không?”</p>
+<p>Trì Sóc nói “Thi đấu chủ yếu vẫn là xem thiên phú, có chút người đánh đã nhiều năm thi đấu, biểu hiện như cũ rất kém cỏi. Có một số người, xuất đạo năm thứ nhất, là có thể bắt lấy mùa giải MVP.”</p>
+<p>Diệp Thiếu Dương gật đầu tán đồng “Kia đảo cũng là.”</p>
+<p>Trì Sóc ánh mắt thực bình tĩnh, nghiêm túc nhìn Tiểu Bạch đôi mắt nói “Muốn trở thành điện cạnh tuyển thủ, cần thiết thông qua một ít chuyên nghiệp thí nghiệm, tỷ như, phản ứng tốc độ, động thái thị lực, hữu hiệu tốc độ tay chờ, ta có thể mang ngươi đi thí nghiệm, như vậy, ngươi cũng có thể càng thêm rõ ràng mà hiểu biết chính mình.”</p>
+<p>“Nếu không có đương điện cạnh tuyển thủ thiên phú, ngươi có thể ở chủ bá con đường này thượng tiếp tục đi xuống đi. Lấy ngươi trò chơi kỹ thuật cùng phát sóng trực tiếp phong cách, nhất định có thể trở thành chủ bá giới đỉnh lưu.”</p>
+<p>“Nhưng nếu, ngươi có đánh chức nghiệp thiên phú……”</p>
+<p>“Ngươi liền có thể nhiều một loại lựa chọn, đi hướng cái kia càng cao sân khấu.”</p>
+<p>Trì Sóc quay đầu, nhìn về phía sân thi đấu trung ương nhất sân khấu.</p>
+<p>Diệp Thiếu Dương cũng theo hắn ánh mắt quay đầu lại nhìn lại ——</p>
+<p>Đại sân khấu cách âm trong phòng, hai bên tuyển thủ đang ở làm cuối cùng chuẩn bị.</p>
+<p>Có người ở uống nước điều chỉnh trạng thái, có người ghé vào cùng nhau cùng huấn luyện viên thương thảo chiến thuật, quyết thắng cục phía trước cuối cùng nghỉ ngơi thời gian, bọn họ cần thiết hảo hảo nắm chắc, bởi vì, kế tiếp thi đấu, đem quyết định chiến đội ở mùa giải này vận mệnh.</p>
+<p>Khẩn trương, kích thích thi đấu, không đến cuối cùng một khắc, ai cũng vô pháp xác định kết quả.</p>
+<p>—— hắn sở nhiệt ái, bất chính là cái này sân khấu sao?</p>
+<p>Chẳng sợ sống lại một đời, hắn quyết tâm cũng chưa từng có biến quá.</p>
+<p>21 tuổi làm sao vậy? Chỉ cần hắn nguyện ý, hết thảy đều không muộn.</p>
+<p>Diệp Thiếu Dương đem ánh mắt thu hồi tới, nhìn về phía Trì Sóc “Cảm ơn ngài đối ta thưởng thức, ta có thể đi theo ngài đi làm thí nghiệm, nhìn xem chính mình có hay không điện cạnh phương diện thiên phú. Nhưng là, ta cũng tưởng trước tiên đem lời nói cùng ngài nói rõ ràng.”</p>
+<p>Diệp Thiếu Dương dừng một chút, nghiêm túc nói “Ta vô pháp bảo đảm, nhất định sẽ gia nhập huấn luyện viên ngài nơi đội ngũ.”</p>
+<p>Hắn là muốn bắt thế giới quán quân người.</p>
+<p>Cho nên, không chỉ là chiến đội lựa chọn hắn, hắn cũng sẽ lựa chọn chiến đội —— hắn cần thiết tuyển một chi có tiềm lực đoạt giải quán quân đội ngũ, mà không phải tùy tùy tiện tiện gia nhập nhị lưu chiến đội, tiêu ma chính mình thời gian.</p>
+<p>Trì Sóc thực thưởng thức Tiểu Bạch thẳng thắn thành khẩn, gật đầu nói “Đương nhiên, lựa chọn nào chi đội ngũ, là ngươi tự do.”</p>
+<p>Đại sân khấu thượng ánh đèn sáng lên, hình ảnh thiết trở về giải thích tịch.</p>
+<p>Giải thích Du Du kích động nói “Người xem các bằng hữu, hoan nghênh trở về! Hai bên tuyển thủ đã làm tốt chuẩn bị, quyết thắng cục sắp bắt đầu, làm chúng ta đem ánh mắt ngắm nhìn đến trên màn hình lớn!”</p>
+<p>Minh Vũ “Quý hậu tái quyết thắng cục cùng thường quy tái bất đồng, quy tắc là phóng Ban, một cái anh hùng đều không cấm, hai chi chiến đội tuyển thủ đều có thể bắt được chính mình nhất am hiểu anh hùng.”</p>
+<p>Du Du “Làm chúng ta chờ mong một chút bọn họ sẽ lấy ra cái dạng gì đội hình ——”</p>
+<p>Quyết thắng cục phóng Ban, anh hùng trì đối tuyển thủ toàn diện mở ra, hai bên 10 cái tuyển thủ, đồng thời lựa chọn anh hùng, hơn nữa hai bên anh hùng còn có thể lặp lại. Loại này tái chế Diệp Thiếu Dương cũng gặp qua, có đôi khi, nào đó đội hình hệ thống phi thường cường thế, thậm chí sẽ xuất hiện hai bên lựa chọn giống nhau như đúc đội hình PK tình huống.</p>
+<p>Nhưng hôm nay, Kinh Trập cùng Hỏa Văn lựa chọn cũng không tương đồng.</p>
+<p>Kinh Trập quả nhiên lấy ra độc đội, Phương Chính Thanh [ Nhãn Kính Xà Vương ] cùng Tạ Viễn [ Độc Thuật Sĩ ], song độc pháp sư, trong đó [ Độc Thuật Sĩ ] ra công tốc trang bị đi xạ thủ vị, đẩy tháp hiệu suất bay nhanh, phối hợp phụ trợ [ Hắc Ám Tư Tế ] hút máu hộ thuẫn, toàn bộ đội ngũ đặc biệt thịt, tấn công cũng rất mạnh, thật không tốt nhằm vào.</p>
+<p>Hỏa Văn chiến đội tuyển ra tới đội hình, Diệp Thiếu Dương lần đầu tiên thấy —— đội trưởng Chu Chu lấy ra [ Liệt Diễm Nữ Thần ] cái này trung đơn pháp sư, đánh dã lấy chính là [ Bẫy Rập Thợ Săn ], xạ thủ là [ Pháo Đài Chuyên Gia ], Diệp Thiếu Dương cẩn thận hồi ức một chút ba cái anh hùng kỹ năng, nhìn về phía Trì Sóc “Trận địa chiến sao?”</p>
+<p>Trì Sóc thấp giọng nói “Đúng vậy. Liệt Diễm Nữ Thần có thể trên mặt đất trải đám cháy, tiến vào đám cháy phạm vi địch nhân sẽ bị thiêu đốt trạng thái ảnh hưởng, không ngừng rớt huyết; Bẫy Rập Thợ Săn có thể phạm vi lớn mai phục bẫy rập, đem tràng vực nội địch nhân khóa chân vô pháp di động; Pháo Đài Chuyên Gia có thể ở ẩn nấp vị trí giá khởi pháo đài, phóng ra phạm vi đạn pháo.”</p>
+<p>Diệp Thiếu Dương bừng tỉnh đại ngộ “Nói như vậy, địch nhân liền sẽ một bước khó đi.”</p>
+<p>Nơi nơi đều là liệt hỏa, bẫy rập, còn có một cái giấu đi pháo đài xạ thủ, một pháo oanh chết một người.</p>
+<p>Đối diện đánh đoàn thời điểm, gặp mặt lâm “Không chỗ đặt chân” xấu hổ. Hỏa Văn chiến đội, liền có thể dựa vào trận địa chiến ưu thế, vững bước về phía trước đẩy mạnh, thẳng đến đẩy đến địch quân thủy tinh.</p>
+<p>Nhưng như vậy đội hình cũng có cái thiếu sót thật lớn.</p>
+<p>Diệp Thiếu Dương phân tích nói “Trận địa chiến, đánh đoàn xác thật rất mạnh, đầy đất đều là đám cháy, bẫy rập, đối diện căn bản là vô pháp thiết nhập. Nhưng là, đơn độc một cái anh hùng lấy ra tới, không có sức bật, dễ dàng bị từng cái đánh bại.”</p>
+<p>Trì Sóc tán thưởng mà nhìn về phía hắn “Không sai.”</p>
+<p>Tiểu Bạch ngộ tính quả nhiên rất cao, có thể nhất châm kiến huyết mà chỉ ra đội hình khuyết tật.</p>
+<p>Trì Sóc nói “Hỏa Văn huấn luyện viên khẳng định đoán được đối diện sẽ tuyển độc đội, mới lấy ra bọn họ sở am hiểu trận địa chiến hệ thống. Bởi vì, độc đội đồng dạng không có bùng nổ, hai bên đều là thích hợp đánh đoàn đội hình. Này một ván, phỏng chừng sẽ kéo thành 40 phút trở lên đánh lâu dài.”</p>
+<p>Bùng nổ dựa cái gì? Dựa có thể nháy mắt thiết nhập đối phương hàng phía sau thích khách, có thể nháy mắt giết chết đối diện trung tâm trung đơn, thậm chí yêu cầu trung dã liên kết cùng đi giây người. Đoàn chiến còn không có bắt đầu, liền trước mang đi đối diện một người, tạo thành 5 đánh 4 cục diện, đem đối thủ một đợt đánh băng.</p>
+<p>Mà xem Hỏa Văn chiến đội đội hình, [ Bẫy Rập Thợ Săn ] cái này đánh dã không cụ bị giây người năng lực, trung lộ [ Liệt Diễm Nữ Thần ] quần công lợi hại, đơn sát năng lực lại cực nhược. Đến nỗi xạ thủ? Đừng nói đi giây người, đừng bị đối diện giây mới là mấu chốt.</p>
+<p>Kinh Trập chiến đội đồng dạng, [ Nhãn Kính Xà Vương ], [ Độc Thuật Sĩ ] phối hợp điệp độc, đánh đoàn thời điểm, có thể đem đối diện trên người trúng độc nhanh chóng điệp thượng năm tầng, dẫn tới đối phương toàn viên rong huyết. Nhưng là, điệp độc yêu cầu thời gian, bọn họ không cụ bị nháy mắt giết chết đối phương năng lực, càng am hiểu đánh tiêu hao chiến.</p>
+<p>Hai bên đều là thiên đoàn chiến đội hình.</p>
+<p>Dưới loại tình huống này, liền rất dễ dàng kéo dài tới hậu kỳ, dựa chi tiết thủ thắng.</p>
+<p>Diệp Thiếu Dương hưng phấn mà ngồi thẳng thân thể, ngẩng đầu nhìn về phía màn hình lớn.</p>
+<p>Binh tuyến hoạt động, đoàn chiến thời cơ còn có các tuyển thủ chi tiết thao tác, này cục thi đấu, hắn nhất định có thể học được rất nhiều.</p>
+<p>Trì Sóc phát hiện, Tiểu Bạch lại tiến vào “Không coi ai ra gì xem tái hình thức”, phảng phất cái gì cũng vô pháp quấy rầy đến hắn, hắn chính là cái máu lạnh vô tình quan chiến máy móc.</p>
+<p>Như vậy nghiêm túc cùng chuyên chú, thật sự rất khó đến.</p>
+<p>Trì Sóc từ Tiểu Bạch trên người thu hồi ánh mắt, dựa vào ghế dựa thượng, nhìn về phía màn hình lớn.</p>
+<p>Này cục thi đấu, rất nhiều người xem khả năng sẽ cảm thấy nhàm chán. Bởi vì hai bên ngay từ đầu liền cho nhau tránh chiến, căn bản không có thể đánh lên tới, hai bên đều ở vùi đầu thanh binh, phát dục, xoát dã, giống như chơi nổi lên game một người chơi……</p>
+<p>Nhưng Diệp Thiếu Dương cũng không cảm thấy nhàm chán.</p>
+<p>Lôi kéo, giằng co, nhìn đến sẽ là tràn đầy chi tiết.</p>
+<p>Tỷ như Phương đội đột nhiên một cái kỹ năng bức đi vị, làm Chu Chu rơi rớt một cái tiểu binh.</p>
+<p>Chu Chu liên tục đám cháy áp chế, làm Phương Chính Thanh bất đắc dĩ lui về tháp hạ thanh binh, Hỏa Văn chiến đội đánh dã cùng trung đơn liên thủ xâm lấn dã khu, trộm rớt đối diện một cái tiểu dã quái.</p>
+<p>Cao thủ đứng đầu quyết đấu, liền ở này đó rất nhỏ chỗ.</p>
+<p>Thi đấu trước 15 phút, không có bùng nổ một lần đoàn chiến.</p>
+<p>Thẳng đến hai bên pháp sư, xạ thủ phát dục xong, tam kiện bộ trang bị làm tốt, rốt cuộc có thể rời núi.</p>
+<p>Hai bên bắt đầu nhanh chóng ôm đoàn, cho nhau thử.</p>
+<p>Đệ nhất sóng đoàn, Kinh Trập hai cái tuyển thủ bị bẫy rập định trụ, Chu Chu một bộ liệt hỏa thiêu đốt, đánh một đợt 0 đổi 2, Kinh Trập chiến đội nhanh chóng lui lại, bất đắc dĩ vứt bỏ tiểu long.</p>
+<p>Đệ nhị sóng đoàn chiến, Kinh Trập chủ động cường khai, thượng đơn tuyển thủ đỉnh liệt hỏa vọt vào đám người bên trong, một cái quần thể trào phúng kéo đến đối diện trung lộ cùng đánh dã, Phương Chính Thanh, Tạ Viễn lập tức liên thủ điệp độc, trực tiếp độc bạo bắt lấy hai người đầu!</p>
+<p>Thi đấu tiến hành đến 20 phút, hai bên đẩy rớt lẫn nhau ngoại tháp, nội tháp, chỉ còn cao điểm.</p>
+<p>Cao điểm bảo vệ chiến lại giằng co hơn mười phút, ngươi tới ta đi, có thể thấy được lôi kéo trình độ có bao nhiêu kịch liệt.</p>
+<p>Thẳng đến 40 phút đại hậu kỳ, mấu chốt nhất một đợt đại long đoàn chiến, hai bên bắt đầu điên cuồng giằng co, Diệp Thiếu Dương khẩn trương mà nắm lấy nắm tay, nhìn không chớp mắt mà nhìn chằm chằm màn hình lớn.</p>
+<p>Hoa lệ kỹ năng, cực hạn thao tác……</p>
+<p>Còn có đã lâu nhiệt huyết.</p>
+<p>Hắn tuy rằng lấy người đứng xem thân phận nhìn này đó tuyển thủ ở trên sân thi đấu đánh giá, nhưng hắn luôn là nhịn không được tưởng, nếu hắn ở sân thi đấu, hắn nên như thế nào tránh né Phương Chính Thanh độc vòng cùng Chu Gia Văn liệt hỏa? Hắn nên như thế nào ở khắp nơi là bẫy rập địa phương tìm kiếm đột phá? Hắn có thể tránh đi phụ trợ nhìn chằm chằm phòng, giây đối diện xạ thủ sao?</p>
+<p>Rất khó.</p>
+<p>Hắn pháp sư dồn sát thương, ở hoàn cảnh như vậy hạ, khả năng cũng là “Không chỗ đặt chân”.</p>
+<p>Đây là thế giới nhất lưu trung đơn.</p>
+<p>Hắn vị này người từ ngoài đến, khoảng cách “Thế giới nhất lưu” còn có rất dài lộ phải đi.</p>
+<p>Cuối cùng một đợt đoàn chiến đánh đến dị thường kịch liệt, Hỏa Văn chiến đội dẫn đầu ngã xuống hai cái, lại dùng trang bị [ sống lại giáp ] đứng lên; Kinh Trập bị giết ba người, khi bọn hắn cũng dùng [ sống lại giáp ] đứng lên thời điểm……</p>
+<p>Chờ đợi bọn họ, là hừng hực liệt hỏa trải bãi tha ma.</p>
+<p>Chu đội chuyên môn để lại kỹ năng, đối phó bọn họ sống lại đứng lên tàn huyết trạng thái.</p>
+<p>Ánh lửa bắn ra bốn phía, lửa cháy ngập trời, 3 người huyết điều nháy mắt biến mất!</p>
+<p>Kinh Trập chiến đội bị đoàn diệt.</p>
+<p>Hỏa Văn chiến đội bị chết chỉ còn Chu Chu một người, hắn mang theo một đợt tiểu binh, chậm rãi đẩy rớt thủy tinh.</p>
+<p>Giải thích Du Du kích động nói “Chúc mừng Hỏa Văn chiến đội bắt lấy quý hậu tái đầu thắng!”</p>
+<p>Toàn trường người xem tiếng hoan hô cơ hồ muốn ném đi nóc nhà.</p>
+<p>Diệp Thiếu Dương cũng nhịn không được vì các tuyển thủ xuất sắc biểu hiện vỗ tay!</p>
+<p>Quá soái. Trận này thi đấu, sở hữu tuyển thủ phát huy đều thực xuất sắc, đặc biệt là cuối cùng quyết thắng cục, mấy sóng đoàn chiến có tới có lui, đánh thật sự kịch liệt, thậm chí có thể làm huấn luyện viên nhóm tư liệu sống lặp lại quan sát nghiên cứu.</p>
+<p>Trì Sóc quay đầu lại nhìn về phía hắn.</p>
+<p>Suốt 45 phút quyết thắng cục, Tiểu Bạch toàn bộ hành trình ngồi ngay ngắn, ánh mắt vẫn luôn không có rời đi quá sân thi đấu màn hình.</p>
+<p>Đây là đối điện tử cạnh kỹ nhiệt ái đi?</p>
+<p>Hắn ánh mắt, không lừa được người.</p>
+<p>Trì Sóc thấp giọng hỏi “Thế nào? Hôm nay trận này thi đấu, không làm ngươi đến không đi?”</p>
+<p>Diệp Thiếu Dương cười gật đầu “Ân, thu hoạch rất nhiều, ta quay đầu lại còn muốn lại đi trên mạng xem một lần hồi phóng.”</p>
+<p>Trì Sóc đứng lên nói “Chờ khán giả ly tràng yêu cầu thời gian rất lâu. Ngươi cùng ta tới, ta mang ngươi đi rồi đài thông đạo, có thể tốc độ nhanh nhất đi ra ngoài.”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong26.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong28.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "toan-nang-trung-don-dien-canh";
+const NOVEL_TITLE = "Toàn năng trung đơn ( điện cạnh )";
+const CHAPTER_TITLE = "Chương 27, quyết thắng cục";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

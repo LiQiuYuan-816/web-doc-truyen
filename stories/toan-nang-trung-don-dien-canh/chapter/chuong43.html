@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 43, sư phụ</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Toàn năng trung đơn ( điện cạnh )
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 43, sư phụ</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong42.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong44.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Ngày kế buổi sáng, Diệp Thiếu Dương cấp Trì Sóc phát đi điều tin tức “Trì đội, ngươi vài giờ đến?”</p>
+<p>Trì Sóc nói “Ta vừa đến Đế Đô sân bay, đại khái giữa trưa 1 điểm đến Tinh Thành, về trước tranh gia, buổi chiều 3 điểm tả hữu lái xe đi tiếp ngươi, phương tiện đem địa chỉ chia cho ta sao?”</p>
+<p>Diệp Thiếu Dương cấp Trì Sóc đã phát cái địa chỉ định vị, sau đó liền cùng Mộc tỷ cùng Tiểu Vĩ cùng nhau đánh bài vị.</p>
+<p>Thẳng đến buổi chiều 2 giờ rưỡi, Diệp Thiếu Dương mới lấy cớ có việc, đóng phát sóng trực tiếp đi thay quần áo.</p>
+<p>Hắn ở tủ quần áo tìm kiếm một lát, tìm được một bộ tương đối thoả đáng hưu nhàn trang. Đi gặp Trì đội sư phụ, không thể ăn mặc quá mức tùy tiện, nhưng cũng không cần thiết xuyên âu phục như vậy khoa trương.</p>
+<p>Đơn giản quần jean phối hợp thuần sắc áo thun ngắn tay, hẳn là sẽ không làm lỗi.</p>
+<p>Diệp Thiếu Dương đổi hảo quần áo, đối với gương đem đầu tóc chải vuốt chỉnh tề.</p>
+<p>Tần Thụy thấy ca ca lại muốn ra cửa, vội vàng chạy tới hỏi “Ca, ngươi đi đâu, muốn hay không ta bồi ngươi đi?”</p>
+<p>Diệp Thiếu Dương bất đắc dĩ “Ta lại không phải tiểu hài nhi, ngươi không cần mỗi ngày bồi ta.” Hắn quay đầu lại nhìn về phía một thân áo ngủ đệ đệ, “Nói, các ngươi đại học không phải nên khai giảng sao, ngươi như thế nào còn cả ngày đãi trong nhà không đi đi học?”</p>
+<p>Tần Thụy cười nói “Chúng ta chuyên nghiệp chương trình học thực nhẹ nhàng, hơn nữa đều là trên mạng đồng bộ phát sóng trực tiếp, cũng có thể không đi trường học, ở trong nhà thượng võng khóa, mỗi tuần đi thiêm một lần đến, hoàn thành tác nghiệp là được.”</p>
+<p>“Vậy ngươi liền ở nhà thượng võng khóa đi, ta hôm nay muốn đi gặp một cái rất quan trọng người, ngươi không quá phương tiện đi theo.” Diệp Thiếu Dương từ cửa huyền quan quầy lấy ra Alpha phun sương che đậy tề ở trên người phun một vòng, sau đó đem Tần Thụy cấp tin tức tố chặn dán nhét vào túi, triều đệ đệ lộ ra cái tươi cười “Ngươi xem, ngươi công đạo ta làm, ta đều nhớ rõ.”</p>
+<p>Tần Thụy lúc này mới buông tâm “Ca, ta làm tốt cơm chờ ngươi trở về.”</p>
+<p>Diệp Thiếu Dương triều hắn vẫy vẫy tay, xoay người xuống lầu.</p>
+<p>Đi vào tiểu khu cửa khi, liếc mắt một cái liền thấy Trì Sóc kia chiếc quen thuộc màu đen xe hơi, Trì Sóc cũng thấy được hắn, chủ động xuống xe, đi vào phó giá vị trí giúp hắn kéo ra cửa xe.</p>
+<p>Diệp Thiếu Dương nói thanh cảm ơn, ngồi vào phó giá, nhìn về phía Trì Sóc “Trì đội, lần này thật là phiền toái ngươi. Kỳ thật không cần thiết giúp ta xin như vậy cao ký hợp đồng phí, ta nói rồi, ta không để bụng tiền……”</p>
+<p>Trì Sóc quay đầu lại, ánh mắt nghiêm túc “Ta cũng nói qua, sẽ cho ngươi tranh thủ đến tốt nhất đãi ngộ.”</p>
+<p>Diệp Thiếu Dương bất đắc dĩ nói “Hảo đi, chờ lát nữa bái kiến sư phụ ngươi, chúng ta tổng không thể tay không đi thôi?”</p>
+<p>Trì Sóc chỉ chỉ hàng phía sau hộp quà “Lễ vật ta mang theo, ngươi không cần lo lắng.”</p>
+<p>Diệp Thiếu Dương liền không lại rối rắm, cột kỹ đai an toàn nhìn thẳng vào phía trước.</p>
+<p>Nửa giờ sau, xe tới một chỗ tiểu biệt thự.</p>
+<p>Nơi này phong cảnh thực hảo, non xanh nước biếc, biệt thự trước còn có một tảng lớn bồn hoa cùng hồ nước, rất thích hợp tu thân dưỡng tính.</p>
+<p>Diệp Thiếu Dương mang theo lòng hiếu kỳ, cùng Trì Sóc cùng nhau đi vào biệt thự.</p>
+<p>Tiến sân, liền nghe thấy biệt thự vang lên thanh thúy dễ nghe dương cầm thanh, lưu sướng âm phù không ngừng mà lướt qua bên tai, Diệp Thiếu Dương nghe không ra đây là cái gì khúc, nhưng âm phù nhảy lên tốc độ cực nhanh, hẳn là rất khó đạn.</p>
+<p>Hai người ăn ý mà dừng lại bước chân, không có trực tiếp tiến lên quấy rầy.</p>
+<p>Một lát sau, dương cầm thanh chậm rãi ngừng lại, phòng trong vang lên một cái trầm thấp ôn hòa thanh âm “Là Tiểu Trì tới rồi sao? Vào đi.”</p>
+<p>Trì Sóc mang theo Diệp Thiếu Dương vào nhà.</p>
+<p>Diệp Thiếu Dương nhìn đến một cái ăn mặc màu trắng đồ ở nhà, dẫm lên dép lê cao lớn nam nhân. Đối phương diện mạo tuấn mỹ văn nhã, tóc lược trường, khí chất thực xuất chúng, cùng với nói hắn là điện cạnh tuyển thủ, không bằng nói, hắn lớn lên càng giống một vị nghệ thuật gia.</p>
+<p>Trì Sóc đem lễ vật đặt ở huyền quan chỗ, cung kính mà kêu lên “Sư phụ.”</p>
+<p>Minh Thăng hơi hơi mỉm cười, đem ánh mắt đầu hướng Diệp Thiếu Dương.</p>
+<p>Hắn đối thượng một đôi sáng ngời trong suốt đôi mắt, cặp mắt kia không có chút cùng nhút nhát, tương phản, đi vào xa lạ địa phương, nam sinh ánh mắt phi thường tự tin cùng thẳng thắn. Ngũ quan lớn lên còn khá xinh đẹp, một đầu đơn giản thoải mái thanh tân tóc mái, có điểm như là con lai, quần áo sạch sẽ, cho người ta ấn tượng đầu tiên thực không tồi.</p>
+<p>Minh Thăng hòa nhã nói “Vị này chính là ngươi cùng ta nói tân nhân chủ bá?”</p>
+<p>Diệp Thiếu Dương cười chào hỏi “Minh đội hảo, ta họ Diệp, kêu Diệp Thiếu Dương, ngài kêu ta Tiểu Diệp là được. Ta trên mạng tên gọi Tiểu Bạch.”</p>
+<p>Minh Thăng tiếp đón hai người vào nhà, sau đó cấp Trì Sóc cầm căn cần câu cùng một đại túi mồi câu, nói “Tiểu Trì, ngươi đi bên hồ câu cá, nếu có thể câu đến, buổi tối chúng ta nấu canh uống. Ta cùng Tiểu Diệp đơn độc tâm sự.”</p>
+<p>Trì Sóc “……”</p>
+<p>Diệp Thiếu Dương “……”</p>
+<p>Tình huống như thế nào?!</p>
+<p>Trì Sóc sắc mặt cương một chút, không quá yên tâm mà nhìn Diệp Thiếu Dương liếc mắt một cái.</p>
+<p>Minh Thăng cười khẽ ra tiếng “Yên tâm, ngươi mang đến người, ta có chừng mực.”</p>
+<p>Trì Sóc đành phải theo sư phụ trong tay tiếp nhận cần câu “Vậy các ngươi hảo hảo liêu.”</p>
+<p>Hắn xoay người đi rồi, Minh Thăng lúc này mới mang theo Diệp Thiếu Dương đi vào lầu hai.</p>
+<p>Nơi này có một gian rất lớn điện cạnh phòng, bên trong trang bị khốc huyễn màu lam đèn trần, vượt qua 3 mễ rộng mở trên mặt bàn bãi hai đài phối trí cực cao máy tính.</p>
+<p>Lúc này, máy tính là khởi động máy trạng thái.</p>
+<p>Minh Thăng đem Trì Sóc chi khai, đây là muốn cùng chính mình một mình đấu ý tứ sao?</p>
+<p>Lo lắng Trì Sóc ở đây nói, hai người bất luận thắng thua mặt mũi thượng đều không qua được, cho nên mới lén PK?</p>
+<p>Đang nghĩ ngợi tới, liền thấy Minh Thăng chỉ chỉ trong đó một cái chỗ ngồi “Ngồi đi.”</p>
+<p>Diệp Thiếu Dương ngồi xuống, trước mặt hắn trong máy tính đã đăng nhập một cái tài khoản, tên gọi [ Rõ Ràng Thực Bất Đắc Dĩ ], tài khoản mua sắm toàn bộ trung đơn anh hùng. Hắn ngồi xuống hạ, liền nhận được một cái mời ——</p>
+<p>Bạn tốt [ Rõ Ràng Thực Vui Vẻ ] mời ngươi tiến vào huấn luyện doanh.</p>
+<p>Diệp Thiếu Dương ấn xuống đồng ý, nhẹ giọng nói “Minh Thần, ta sẽ pháp sư không nhiều lắm.”</p>
+<p>Minh Thăng như cũ mặt mang mỉm cười “Vậy dùng ngươi sẽ đi.”</p>
+<p>Ván thứ nhất, Diệp Thiếu Dương tuyển [ Vực Sâu Chúa Tể ], đây là hắn bắt lấy version nội địa anh hùng.</p>
+<p>Minh Thăng cũng tuyển [ Vực Sâu Chúa Tể ].</p>
+<p>Đồng dạng anh hùng PK, mới có thể chân chính nhìn ra một người đối cái này anh hùng lý giải. Diệp Thiếu Dương lập tức hết sức chăm chú mà nhìn chằm chằm màn hình lớn ——</p>
+<p>Hai bên bắt đầu thanh binh phát dục, thẳng đến 6 cấp học được đại chiêu, Diệp Thiếu Dương dẫn đầu ra tay, nhưng mà, Minh Thăng như là dự đoán được hắn sẽ ra tay giống nhau, nháy mắt cùng hắc ảnh đổi vị, trốn rớt hắn đại chiêu, sau đó lập tức phản đánh.</p>
+<p>First Blood!</p>
+<p>Ván thứ nhất Diệp Thiếu Dương thua, hắn có chút kinh ngạc mà nhìn về phía Minh Thăng, đã giải nghệ tuyển thủ, tuổi tác 28 tuổi Thiên Hoàn tiền nhiệm đội trưởng, như thế nào sẽ có như vậy mau phản ứng?</p>
+<p>Diệp Thiếu Dương nhanh chóng làm chính mình bình tĩnh lại, bắt đầu ván thứ hai.</p>
+<p>Hắn vẫn là tuyển [ Vực Sâu Chúa Tể ], ván thứ hai đánh đến phi thường cẩn thận, địch bất động, ta bất động, hai người đều ở bay nhanh mà thanh binh phát dục, cho nhau phóng kỹ năng, trốn kỹ năng, đua đều là rất nhỏ thao tác cùng binh tuyến xử lý, mãi cho đến làm ra trung tâm trang bị lúc sau, Diệp Thiếu Dương mới đột nhiên ra tay.</p>
+<p>Bất quá lần này hắn để lại cái tâm nhãn, trước phóng hắc ảnh qua đi, lừa rớt Minh Thịnh flash, theo sát flash tiến tháp, tốc độ tay bay nhanh mà xoát đánh dấu, khai đại, lại lưu cuối cùng một cái bóng dáng trốn chạy.</p>
+<p>—— ngàn dặm ở ngoài khởi xướng đánh bất ngờ, giết chết đối thủ sau nhanh nhẹn rời đi.</p>
+<p>Đây là Diệp Thiếu Dương bắt được pháp sư dồn sát thương khi, dứt khoát lưu loát giết người phong cách.</p>
+<p>Minh Thăng nhàn nhạt nói “Không tồi. Lại đến.”</p>
+<p>Ván thứ ba, Minh Thăng chủ động tuyển [ Vận Mệnh Nữ Thần ], Diệp Thiếu Dương cũng đi theo tuyển [ Vận Mệnh Nữ Thần ].</p>
+<p>Khai cục không bao lâu, hắn đã bị Minh Thịnh xuất kỳ bất ý một bộ liền chiêu nháy mắt giết chết. Nhưng Diệp Thiếu Dương trời sinh chính là không chịu thua tính cách, thứ 4 cục tiếp tục đầu thiết tuyển [ Vận Mệnh Nữ Thần ], tốc độ tay bùng nổ cường sát đối thủ, tìm về bài mặt.</p>
+<p>Hai người liên tục thay đổi 5 cái pháp sư anh hùng, đều là Diệp Thiếu Dương trước mắt sẽ dùng. Vực Sâu Chúa Tể, Vận Mệnh Nữ Thần, Ảo Thuật Sư, Băng Sương Nữ Thần, Liệt Diễm Nữ Thần…1V1 tổng cộng đánh 10 cục, cuối cùng chiến tích là 5 5 đánh thành thế hoà.</p>
+<p>Diệp Thiếu Dương bội phục nói “Minh đội ý thức vẫn là rất mạnh!”</p>
+<p>Minh Thăng buông ra con chuột, mỉm cười nói “Đáng tiếc, tốc độ tay đã không được, chỉ đánh vài phút còn hảo, điện cạnh thi đấu thường xuyên một tá chính là mấy cái giờ, 30 phút trở lên thi đấu, ta liền không có biện pháp bảo trì như vậy trạng thái.”</p>
+<p>Hắn ánh mắt ôn hòa mà nhìn Diệp Thiếu Dương, trong mắt hiện lên một tia thưởng thức “Trì Sóc ở trước mặt ta nói ngươi rất nhiều lời hay, còn nói phải cho ngươi 1000 vạn ký hợp đồng phí. Này bút ký hợp đồng phí, là ngươi yêu cầu sao?”</p>
+<p>Diệp Thiếu Dương “……”</p>
+<p>Ta không phải, ta không có!</p>
+<p>Minh Thăng nhìn sắc mặt của hắn, hiểu rõ nói “Là Trì Sóc tự chủ trương đi.”</p>
+<p>Diệp Thiếu Dương ho nhẹ một tiếng, không biết nên nói như thế nào.</p>
+<p>Trì đội tuy rằng là vì hắn tranh thủ quyền lợi, nhưng hắn cũng không nghĩ làm người cảm thấy hắn là cái thực để ý tiền tài, lòng tham không đáy người.</p>
+<p>Minh Thăng đột nhiên nói sang chuyện khác nói “Ngươi đối trung đơn vị trí này, như thế nào lý giải đâu?”</p>
+<p>Diệp Thiếu Dương biểu tình trở nên phi thường nghiêm túc, giống như tiết học bị lão sư vấn đề. Hắn tử suy nghĩ kỹ lưỡng, mới đáp “Ta cá nhân cái nhìn, nếu đem một chi đoàn đội so sánh là một người, trên dưới lộ giống như là người tứ chi, không có tứ chi sẽ vô pháp hành động; phụ trợ giống như là người đôi mắt, không có đôi mắt sẽ biến thành người mù; đánh dã, tựa như nhân thủ vũ khí, hắn có thể là sắc bén đao, đâm thủng địch nhân ngực; cũng có thể là kiên cố thuẫn, vì đồng đội hộ giá hộ tống.”</p>
+<p>Diệp Thiếu Dương dừng một chút, nhìn Minh Thăng đôi mắt nói “Mà trung lộ, chính là một người lưng.”</p>
+<p>Minh Thăng khóe miệng dần dần hiện lên một tia ý cười.</p>
+<p>Lưng, loại này cách nói hắn vẫn là lần đầu tiên nghe thấy.</p>
+<p>Trung lộ vì cái gì quan trọng?</p>
+<p>Bởi vì nó ở vào bản đồ nhất trung tuyến, tựa như nhân thể cột sống, dắt một phát, mà động toàn thân.</p>
+<p>Trung lộ một tháp là hai bên tất tranh chiến lược yếu địa.</p>
+<p>Một khi trung lộ ngoại tháp mất đi, như vậy đem tạo thành phản ứng dây chuyền —— chúng ta sẽ mất đi tầm nhìn, sẽ mất đi dã khu quyền khống chế, sẽ vứt bỏ đại long, tiểu long, sẽ bị đối thủ không ngừng mà lăn kinh tế.</p>
+<p>Cho nên ở trong lúc thi đấu, thường xuyên xuất hiện thượng lộ, hạ bộ ngoại tháp bất đắc dĩ phóng rớt, trung lộ lại cần thiết tử thủ tình huống. Kỳ thật, thủ không phải trung lộ, mà là dã khu quyền khống chế, tầm nhìn quyền khống chế cùng lớn nhỏ long tranh đoạt quyền.</p>
+<p>Một cái ưu tú trung đơn, không chỉ có phải học được chi viện cùng giết người, còn phải học được kháng áp thủ tháp.</p>
+<p>Minh Thăng ngay từ đầu cho rằng Tiểu Bạch cũng là giống Trì Sóc như vậy sắc nhọn sắc bén tuyển thủ, pháp sư dồn sát thương chơi đến hảo, tưởng cùng Trì Sóc cùng nhau trung dã liên kết giết người. Nhưng hôm nay tự mình tiếp xúc qua đi, hắn phát hiện —— Tiểu Bạch so với hắn tưởng muốn bình tĩnh.</p>
+<p>Bất luận là vừa mới PK khi ẩn nhẫn tìm kiếm cơ hội, quyết đoán ra tay ám sát, vẫn là đối với trung lộ lý giải, người này cái nhìn đại cục đều phi thường xuất sắc. Cũng khó trách Trì Sóc đối hắn nhìn với con mắt khác.</p>
+<p>Minh Thăng hỏi tiếp nói “Nếu đoàn đội yêu cầu ngươi chơi công cụ người trung đơn, làm ngươi tàng khởi chính mình mũi nhọn, làm ngươi tuyển chính mình không thích anh hùng, ngươi sẽ vui sao?”</p>
+<p>Diệp Thiếu Dương thực dứt khoát gật đầu “Đương nhiên. Ta mê chơi pháp sư dồn sát thương, nhưng ta biết, pháp sư dồn sát thương cũng không phải thắng hạ thi đấu duy nhất phương thức. Chúng ta đương điện cạnh tuyển thủ, thi đấu chung cực mục tiêu không chính là vì thắng sao? Chỉ cần có thể thắng, tuyển cái nào anh hùng lại có quan hệ gì.”</p>
+<p>Minh Thăng khẽ thở dài “Không sai. Trì Sóc thích nhất [ Huyết Y Thích Khách ], nhưng là, cái này anh hùng hắn đã suốt ba năm không có bắt được trên sân thi đấu, hắn vì Thiên Hoàn trả giá rất nhiều.” Minh Thịnh nhìn về phía Diệp Thiếu Dương, trong mắt mang theo ôn hòa ý cười “Ngươi có thể bảo vệ tốt Trì Sóc, làm hắn dã hạch trở về sân thi đấu sao?”</p>
+<p>Diệp Thiếu Dương thản nhiên nói “Ta cảm thấy có thể.”</p>
+<p>“…… Ngươi rất có tự tin.” Minh Thăng đứng lên, đem một phần nghĩ tốt hợp đồng đưa cho Diệp Thiếu Dương “Ta liền thích tự tin tuyển thủ. Đây là Thiên Hoàn ký hợp đồng tân nhân hợp đồng khuôn mẫu, ngươi có thể trước nhìn xem.”</p>
+<p>Diệp Thiếu Dương kinh ngạc mà tiếp nhận tới, cẩn thận sau này phiên phiên.</p>
+<p>Minh Thăng nói “Chi tiết còn muốn lại sửa chữa. Cấp tân nhân ký hợp đồng phí thông thường là 100 đến 300 vạn, nhưng ngươi là Trì Sóc phi thường coi trọng người, ta hôm nay cũng gặp qua ngươi, ngươi thiên phú cùng phản ứng năng lực đều thực xuất sắc, nói thật, ta tuy rằng giải nghệ, nhưng có thể cùng ta một mình đấu 55 khai trung đơn tuyển thủ cũng không nhiều, cho ngươi 300 vạn xác thật là có chút nhân tài không được trọng dụng.”</p>
+<p>Diệp Thiếu Dương phát hiện, cuối cùng ký hợp đồng kim kia một lan, điền chính là 500 vạn.</p>
+<p>Minh Thăng giải thích nói “500 vạn là dùng một lần chi trả ký hợp đồng phí, còn có 500 vạn, sẽ làm thêm vào tiền thưởng, ở các ngươi bắt được quốc nội league quán quân lúc sau phát lại bổ sung cho ngươi.”</p>
+<p>Diệp Thiếu Dương thực mau liền đã hiểu Minh Thăng ý tứ.</p>
+<p>Ký hợp đồng phí 1000 vạn, câu lạc bộ rất khó trực tiếp phê xuống dưới, rốt cuộc Diệp Thiếu Dương là tân nhân, không có bất luận cái gì thi đấu kinh nghiệm, cấp đến 500 vạn đã là xem ở Trì Sóc mặt mũi thượng, Minh Thăng tự thân xuất mã có thể nói xuống dưới giá cả.</p>
+<p>Dư lại 500 vạn, bắt được quốc nội league quán quân sau coi như khen thưởng phát lại bổ sung cho hắn —— này kỳ thật là đem 1000 vạn hủy đi thành hai bút.</p>
+<p>Nếu hắn lấy không được quốc nội quán quân, hắn xác thật không đáng giá tám vị số ký hợp đồng phí, rốt cuộc quốc nội quán quân đội rất nhiều đội viên cũng là 1000 vạn tả hữu giá trị con người.</p>
+<p>Nếu hắn có tin tưởng bắt lấy quốc nội quán quân, 1000 vạn phần thành hai bút cấp, không phải cũng là hắn sao?</p>
+<p>Minh Thăng cười cười nói “Không đồng nhất thứ cho ngươi, đảo không phải ta keo kiệt. Mà là Thiên Hoàn câu lạc bộ không chỉ ta một cái cổ đông, còn có chút không hiểu điện cạnh, chỉ phụ trách ra tiền lão bản, rất khó thuyết phục bọn họ hoa 1000 vạn đi thiêm một cái không có thi đấu kinh nghiệm tân nhân. Phân thành hai bút cấp, một khác bút làm tiền thưởng, đây là ta có thể nghĩ đến phương thức tốt nhất, hy vọng ngươi lý giải.”</p>
+<p>Hắn nhẹ nhàng vỗ vỗ Diệp Thiếu Dương bả vai “Ta có tin tưởng, ngươi gia nhập Thiên Hoàn lúc sau, Thiên Hoàn có thể bắt được sau mùa giải quốc nội quán quân.”</p>
+<p>Diệp Thiếu Dương dùng sức gật đầu “Ân, ta minh bạch. Ta tiếp thu phương thức này.” Như vậy cao ký hợp đồng phí, kỳ thật xa xa vượt qua hắn mong muốn.</p>
+<p>Minh Thăng nói “Mặt khác, ta sẽ cùng câu lạc bộ bàn lại một điều kiện, nếu các ngươi có thể đánh tiến thế giới đại tái, bắt lấy quán quân, thế giới quán quân tiền thưởng, câu lạc bộ không cần 1 phân tiền, toàn bộ cấp đến tuyển thủ, từ các ngươi chia đều.”</p>
+<p>Diệp Thiếu Dương “……”</p>
+<p>Thế giới quán quân tiền thưởng toàn bộ cấp đến tuyển thủ, này cũng coi như phi thường hào khí! Thiên Hoàn cũng không thiếu tiền, bọn họ để ý, vẫn luôn là cái kia đã từng cùng Thiên Hoàn gặp thoáng qua thế giới quán quân.</p>
+<p>Diệp Thiếu Dương nắm chặt trong tay này phân hợp đồng, nghiêm túc mà nói “Cảm ơn Minh Thần cùng Trì đội vì ta tranh thủ đãi ngộ. Ta có thể hồi báo các ngươi —— chỉ có thành tích.”</p>
+<p>Lại nhiều nói, đều không bằng thật đánh thật thành tích.</p>
+<p>Thiên Hoàn đối hắn như thế hậu đãi, hắn sẽ vì này chi câu lạc bộ, cũng vì chính mình mộng tưởng, dùng hết toàn lực.</p>
+<p>Minh Thăng mỉm cười nhìn chăm chú vào Diệp Thiếu Dương đôi mắt, chủ động vươn tay “Hoan nghênh gia nhập Thiên Hoàn.”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong42.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong44.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "toan-nang-trung-don-dien-canh";
+const NOVEL_TITLE = "Toàn năng trung đơn ( điện cạnh )";
+const CHAPTER_TITLE = "Chương 43, sư phụ";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

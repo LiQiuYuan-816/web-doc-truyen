@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 25</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Một giấc ngủ dậy ta kế thừa địa cầu [ tinh tế ]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 25</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong24.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong26.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Vincent đả thông tin lại đây thời điểm Alice đang ở phát sóng trực tiếp.</p>
+<p>Đối mặt chính mình đại oan loại đệ đệ, Alice có thể làm sao bây giờ?</p>
+<p>Rau trộn, đệ đệ nào có sự nghiệp quan trọng!</p>
+<p>Nhưng mà Vincent hôm nay liền cùng động kinh giống nhau, Alice không tiếp hắn thông tin hắn liền vẫn luôn đánh lại đây.</p>
+<p>Rơi vào đường cùng Alice đành phải đem hắn —— kéo đen.</p>
+<p>Võng hữu Ha ha ha ha ha ha</p>
+<p>【 không hổ là Alice, ta liền ái ngươi này nhanh nhẹn kính!!! 】</p>
+<p>Võng hồng Alice cùng nàng đại oan loại đệ đệ hôm nay cũng là võng hữu ha ha ha hằng ngày đâu.</p>
+<p>Nguyên nhân chính là vì đại oan loại đệ đệ bị fans khác loại yêu thích, cho nên Alice phát sóng trực tiếp thời điểm vẫn luôn không có che chắn hắn đệ đệ tin tức.</p>
+<p>Ai, đại oan loại đệ đệ cũng bất quá là nàng kiếm tiền công cụ thôi.</p>
+<p>Biết nhà mình đệ đệ chân chính sốt ruột có việc tìm sẽ mở ra cưỡng chế thông tin, Alice kéo hắc hắn sau phi thường yên tâm cùng fans nói chuyện phiếm.</p>
+<p>Làm một người có chút danh tiếng võng hồng, Alice có thể nói đa tài đa nghệ, xướng nhảy đều có thể không nói, mỹ trang càng là dễ như trở bàn tay.</p>
+<p>Tỷ như hôm nay, nàng liền chuẩn bị cấp fans triển lãm một phen gần nhất toàn võng bạo nhiệt tâm cơ đào hoa trang.</p>
+<p>Nhưng mà Alice vừa mới bắt đầu nói muốn khiêu chiến tâm cơ đào hoa trang, công bình thượng liền thổi qua một đống dấu chấm hỏi.</p>
+<p>【 đại con báo Từ từ, ta không nghe lầm đi, vừa mới Alice nói bắt đầu hoá trang??? 】</p>
+<p>【 mộng du tiên cảnh Ngọa tào, Alice không phải đã hóa hảo sao? Vừa mới nàng cư nhiên là tố nhan? 】</p>
+<p>【 vẫn luôn cá mặn Ta không tin, ta không tin, Alice nhất định gạt ta, nàng tố nhan sao có thể là cái dạng này!!! 】</p>
+<p>【 thực vật a thực vật Hừ, Alice, ngươi cho rằng ta chưa thấy qua ngươi tố nhan bộ dáng sao? Đừng nghĩ lừa gạt ta! 】</p>
+<p>Tinh tế thời đại cũng kêu khoa học kỹ thuật thời đại, mỹ dung nghi loại này cao nhu cầu sản phẩm sớm bị phổ cập, cho nên đại gia làn da trạng huống phổ biến không quá kém.</p>
+<p>Nhưng mà làn da trạng thái không kém không đại biểu da như ngưng chi, mặt nếu đào phấn a!</p>
+<p>【 ta trụ sao thuỷ nha Nhân ngư làn da cũng chưa ngươi hảo, cho nên…… Alice ngươi gần nhất làm gì? 】</p>
+<p>【 ánh mặt trời ánh mặt trời mau tới ánh mặt trời Chẳng lẽ tiếp mỹ phẩm dưỡng da quảng cáo không thành? Alice ngươi cũng bắt đầu sa đọa sao? 】</p>
+<p>Nhìn đến fans hoài nghi nàng tiếp quảng cáo, mới vừa dọn xong gia hỏa cái chuẩn bị hoá trang Alice sửng sốt.</p>
+<p>Nàng vội vàng phủ nhận “Không có tiếp quảng cáo, thật sự không có tiếp quảng cáo! Nếu ta tiếp quảng cáo nói, khẳng định trực tiếp cùng đại gia nói.”</p>
+<p>Alice không thiếu tiền, nhà nàng tuy không đến mức nói đại phú đại quý, tinh hạm phi thuyền vũ trụ tưởng mua liền mua, nhưng đối nàng hai nói tùy tiện mua điểm xa hoa cây xanh liền cùng chơi giống nhau, cho nên nàng cũng không cùng mặt khác tiểu võng hồng dường như kiếm đồng tiền dơ bẩn.</p>
+<p>Cho tới nay tới, Alice cũng liền tiếp nhận mười mấy mở rộng, hơn nữa này đó sản phẩm vẫn là nàng tự mình dùng quá, cảm thấy dùng tốt!</p>
+<p>【 thích nhất màu bạc dầu bôi trơn Ta tin tưởng Alice nhân phẩm, Alice lại không thiếu tiền, làm gì muốn kiếm đồng tiền dơ bẩn. 】</p>
+<p>【 tiểu sâu là trên thế giới xinh đẹp nhất sinh vật Cho nên Alice gần nhất là gặp được cái gì chuyện tốt sao? Cảm giác ngươi tinh thần thực hảo gia. 】</p>
+<p>Tinh thần thực hảo?</p>
+<p>Alice sửng sốt, nhịn không được đối với gương cẩn thận tả hữu chiếu chiếu, cuối cùng nàng phát hiện chính mình khí sắc xác thật thực hảo!</p>
+<p>Alice tự hỏi một lát, chần chờ nói “Khả năng bởi vì ta gần nhất ngủ ngon? Nói thật, phía trước luôn có điểm tinh thần không phấn chấn, nhưng gần nhất liền bình thường nhiều, mỗi ngày ăn được ngủ ngon, giống như áp lực toàn tiêu cảm giác.”</p>
+<p>Đối này, võng hữu sôi nổi tỏ vẻ hâm mộ!</p>
+<p>Áp lực toàn tiêu gì đó không khỏi cũng thật tốt quá đi.</p>
+<p>【 văn minh duy nhất đại soái ca Áp lực toàn tiêu? Như vậy ngưu giảm bớt áp lực tác dụng nha, chủ bá là mua cái gì xa hoa cây xanh sao? 】</p>
+<p>Này vừa hỏi như thể hồ quán đỉnh, Alice mạc danh nhớ tới chính mình mua hoa nhài lẵng hoa.</p>
+<p>Nhưng ——</p>
+<p>Hai ngàn tinh tệ mua hoa nhài lẵng hoa có an thần tác dụng?</p>
+<p>Nói giỡn đi.</p>
+<p>Alice chần chờ.</p>
+<p>Theo sau nàng khẳng định ở trong lòng thuyết phục chính mình —— không có khả năng!</p>
+<p>Trên thế giới nhưng không có làm từ thiện lão bản!</p>
+<p>Lão bản nhóm từng cái đều là hút máu nhà tư bản.</p>
+<p>Có như vậy công hiệu cây xanh không bán ra giá trên trời liền tính, lỗ vốn bán khách nhân?</p>
+<p>Ha hả, chuyện như vậy chỉ có trong mộng có.</p>
+<p>Tư cập này, Alice khẳng định lắc đầu.</p>
+<p>Nàng thậm chí còn đem chính mình đặt ở phòng ngủ hoa nhài lấy ra tới cấp fans 360° triển lãm, một bên triển lãm nàng một bên cười lớn phủ nhận “Ta gần nhất nhưng không mua quá xa hoa cây xanh, mấy ngày nay ta duy nhất mua thực vật chính là cái này bình thường thực vật lạp, tên của nó kêu hoa nhài, ta dạo Tinh Võng Thương Thành thời điểm ở một nhà kêu [ địa cầu cửa hàng ] tư nhân tinh cầu chủ cửa hàng mua.</p>
+<p>Nó hương vị siêu cấp dễ ngửi der~ dù sao so với ta ngửi qua sở hữu xa hoa nước hoa đều phải thoải mái nhiều! Hơn nữa nó giá cả cũng tương đương thích hợp, mọi người xem, ta này một cái lẵng hoa có nhiều như vậy hoa, nhưng tổng cộng chỉ tốn ta hai ngàn tinh tệ! Nếu đại gia thích nói, đại gia có thể suy xét đi mua sắm lạp.”</p>
+<p>Vì làm thực vật tồn tại càng lâu, Alice không có đem hoa nhài lá cây toàn gỡ xuống, cho nên hiện tại nàng fans nhìn đến chính là hoa nhài toàn dạng, hơn nữa Alice không chút do dự đem mua sắm hoa nhài cửa hàng tuôn ra tới, cho nên fans hoàn toàn tin tưởng đây là bình thường cây xanh!</p>
+<p>Thậm chí bởi vì Alice thái độ quá mức nhiệt tình, bộ phận fans cho rằng nàng tiếp quảng cáo.</p>
+<p>【 ta trụ sao thuỷ cách vách nha Alice có thể khai thực tế ảo phát sóng trực tiếp sao? Ta tưởng nghe nghe cái này hoa nhài hương vị gia. 】</p>
+<p>Alice mặt lộ khó xử “Không được oa, ta tháng này thực tế ảo phát sóng trực tiếp ngạch độ dùng xong rồi.”</p>
+<p>【 ta trụ sao thuỷ nha Cách vách đừng tới quấy rối, tưởng nghe hoa nhài đi [ địa cầu cửa hàng ], Tinh Võng Thương Thành mức độ giống thật còn chưa đủ ngươi nghe? 】</p>
+<p>Alice gật đầu phụ họa “Đúng vậy, muốn mau đi thực tế ảo thương thành! Thiệt tình kiến nghị các ngươi đi [ địa cầu cửa hàng ] nhìn xem, nó gia trang hoàng hảo mỹ, tiên khí phiêu phiêu trung mang theo tự nhiên ưu nhã, tự nhiên ưu nhã trung lại có một tia hoạt bát, rõ ràng toàn cửa hàng vật phẩm trang sức đều rất đơn giản, nhưng cố tình trang cùng tiên cảnh giống nhau, so nào đó võng hồng đánh tạp mà xinh đẹp nhiều, nhất quan trọng là nó gia bán hoa hoa thực có lời, cái này nhan giá trị cái này hương vị nhà khác ít nhất quý gấp đôi không ngừng!”</p>
+<p>Nghe thấy vài thiên hoa nhài Alice nhịn không được hóa thân nước máy!</p>
+<p>Này ba ngày nàng mỗi ngày điều rạng sáng đồng hồ báo thức, đúng giờ lên mua hoa, đoạt trước một trăm vị trí.</p>
+<p>Trước hai ngày người không nhiều lắm, đúng giờ đi lên là có thể cướp được trước một trăm danh, ngày thứ ba bắt đầu trở nên rất khó đoạt, nàng thậm chí hiểm hiểm tạp ở đệ 99 danh thượng, nếu không phải nàng quang não tốc độ mau, phỏng chừng liền đoạt không đến trước trăm tên.</p>
+<p>Nghĩ đến chính mình quang não tài khoản thượng gửi bốn trương ưu tiên tạp, Alice thật · cao hứng.</p>
+<p>Lại tưởng nàng an bài chuyển phát nhanh giao hàng trình tự, nàng càng cao hứng.</p>
+<p>Tuần sau phấn toản cẩm chướng, hạ tuần sau hoa hồng đỏ, lại hạ hạ tuần sau hoa quế, hơn nữa này chu hoa nhài, một tháng thời gian bị nàng an bài thỏa đáng.</p>
+<p>Vô cùng cao hứng cấp fans an lợi chính mình gần nhất nhất tâm thủy cửa hàng, Alice lúc sau dựa theo nguyên kế hoạch ra một cái đào hoa trang phỏng trang.</p>
+<p>Nhưng mà tiếc nuối chính là có châu ngọc ở đằng trước, fans tổng cảm thấy nàng đào hoa phỏng trang hiệu quả còn không bằng bản thân khí sắc.</p>
+<p>Này đánh giá……</p>
+<p>Phỏng trang thất bại, nhưng Alice vẫn như cũ mỹ tư tư!</p>
+<p>Ta cũng không nghĩ cao hứng, nhưng các nàng nói ta tố nhan càng đẹp mắt gia!</p>
+<p>Alice bị hống fans hống đến phân không rõ nam bắc, hạ bá khi khóe miệng còn vẫn luôn giơ lên.</p>
+<p>Mới vừa hạ bá, Alice đại oan loại đệ đệ lại lần nữa tới đoạt mệnh liên hoàn call.</p>
+<p>Đem Vincent từ sổ đen thả ra, Alice không nhanh không chậm chọc khai thông tin thỉnh cầu.</p>
+<p>Alice “Ngươi có việc?”</p>
+<p>Vincent “Ngươi có bệnh?”</p>
+<p>Không thể tin được chính mình nghe được cái gì, Alice trừng lớn hai mắt, hung ba ba nói “Ngươi mới có bệnh!”</p>
+<p>Giống như thanh âm lớn là có thể áp quá đệ đệ giống nhau.</p>
+<p>Vincent nóng nảy “Tỷ, ngươi sợ không phải ngốc tử đi? Ngươi cư nhiên cho ngươi fans đề cử [ địa cầu cửa hàng ]? Ngươi có độc đi!”</p>
+<p>Alice )</p>
+<p>Alice đào đào lỗ tai, nhịn không được nói “Ngươi lặp lại lần nữa.”</p>
+<p>Vincent mới không bồi nàng chơi loại này nhàm chán đích xác nhận trò chơi.</p>
+<p>Còn lặp lại lần nữa đâu?</p>
+<p>Hắn đâu ra cái này thời gian rỗi.</p>
+<p>Vincent một bên mở ra quang não một bên giàu có tỷ đệ ái khuyên nhủ “Sấn hiện tại đi địa cầu cửa hàng mua đồ vật ít người ngươi chạy nhanh nhiều mua điểm đi, tốt nhất đem tương lai ba tháng hoa đều lấy lòng, kia chính là 2 Lục Vật Chất Hàm Lượng cây xanh, kết quả lại bán bình thường thực vật giá cả, ngươi tìm được như vậy cửa hàng không cất giấu còn khẳng khái nói cho fans, luận ngưu bức vẫn là ngươi ngưu!”</p>
+<p>Nói xong Vincent đem thông tin đóng, vì mau, hắn không có đăng nhập thế giới thực tế ảo mà là lựa chọn trang web thương thành tìm tòi [ địa cầu cửa hàng ].</p>
+<p>Tiến vào sau hắn cũng không xem thương phẩm tình hình cụ thể và tỉ mỉ, một hơi đem toàn bộ thương phẩm mua được cửa hàng quy định hạn mua số lần, lại đi hậu trường đem xứng đưa thời gian sửa chữa đến một vòng một lần.</p>
+<p>Vẫn luôn đem xứng đưa thời gian bài mãn đến Tinh Võng Thương Thành quy định nhất vãn ba tháng, hắn lúc này mới đem dư lại bó hoa lập tức xứng đưa.</p>
+<p>Chậm đệ đệ một bước Alice ở đệ đệ thu phục hết thảy sau mới đột nhiên lao tới tiến vào [ địa cầu cửa hàng ], nhưng mà chậm một bước liền mệt vô số lần, nàng mới mua bốn năm phân hoa tươi liền biểu hiện bán khánh.</p>
+<p>Alice ???</p>
+<p>Không phải, phía trước gian nan đoạt một trăm danh liền tính, vì cái gì hiện tại liền bình thường mua hoa đều như vậy khó?</p>
+<p>Tính toán đâu ra đấy địa cầu cửa hàng mới khai bốn ngày mà thôi, nó gia khách hàng mua đồ vật đến nỗi như vậy cuốn sao?</p>
+<p>Trợn mắt há hốc mồm nhìn cửa hàng thượng 【 bán khánh 】 chữ, Alice khóc.</p>
+<p>2 Lục Vật Chất Hàm Lượng tiên lại so với bình thường hoa tươi giá bán còn thấp.</p>
+<p>Đây là lão bản làm từ thiện đâu!</p>
+<p>Chính là nàng lại đem lão bản từ thiện đưa cho người khác.</p>
+<p>Ô ô ô ô, nàng chính là vũ trụ vô địch siêu cấp đại ngốc tử!</p>
+<p>Khóc không ra nước mắt nhìn “Bán khánh” hai chữ, Alice tâm ngạnh đến khó có thể hô hấp.</p>
+<p>Mà càng làm cho nàng tâm ngạnh sự chuyện này kế tiếp phát triển.</p>
+<p>Rõ ràng chỉ có số ít người biết đến bảo bối.</p>
+<p>Bị nàng này đẩy, lại qua mấy cái giờ, rạng sáng vừa qua khỏi, nhiệt độ nổ mạnh.</p>
+<p>Trong một đêm địa cầu cửa hàng nhà nhà đều biết.</p>
+<p>Rõ ràng nàng bán an lợi thời điểm nói đây là bình thường thực vật!</p>
+<p>Kết quả bất quá cả đêm, cư nhiên liền có mấy cái fans vứt ra thí nghiệm báo cáo?</p>
+<p>Tuyệt!</p>
+<p>Như vậy giá cả, như vậy phẩm chất, trực tiếp làm địa cầu cửa hàng xông lên Tinh Võng hot search, hơn nữa không phải các văn minh phân tần hot search, mà là tổng tần hot search!</p>
+<p>Alice QAQ</p>
+<p>Về sau nàng còn như thế nào cùng này đàn nhanh tay súc vật đoạt đồ vật a!</p>
+<p>Phải biết địa cầu cửa hàng mỗi loại hoa tươi mỗi ngày chỉ thả ra một ngàn chi mua sắm lượng!</p>
+<p>Phía trước mỗi người mỗi loại hạn mua số lượng là 3, cơ bản muốn cướp đều có thể cướp được, nhưng hiện tại nó cửa hàng fans đều xông lên trăm vạn, nàng phỏng chừng liền 1 đều khó đoạt!</p>
+<p>Đừng hỏi, hỏi chính là hối hận!</p>
+<p>Tự mình cảm nhận được cửa hàng bán hoa không cần công nhân, Tạ Tinh Thần yên tâm thoải mái lười biếng, rốt cuộc —— cửa hàng bán hoa khai trương cùng ngày cho hắn mang đến nồng đậm bóng ma tâm lý.</p>
+<p>Cho nên khai trương ngày hôm sau bắt đầu Tạ Tinh Thần không lại đăng nhập thực tế ảo thương thành, mỗi ngày chỉ ở tỉnh ngủ sau đăng nhập trang web bản thương thành thượng giá bó hoa, lại đem cửa hàng đơn đặt hàng chia sẻ cấp chuyển phát nhanh người máy đóng gói chuyển phát nhanh.</p>
+<p>Hôm nay, Tạ Tinh Thần ở đồng hồ sinh học dưới tác dụng thức tỉnh.</p>
+<p>Tỉnh lại sau chuyện thứ nhất chính là đem đơn đặt hàng chia sẻ cấp chuyển phát nhanh người máy.</p>
+<p>Nguyên bản hắn cho rằng cửa hàng đơn đặt hàng sẽ cùng dĩ vãng giống nhau nửa ngày chỉ bán ra một nửa, nhưng hôm nay giống như có điểm không thích hợp?</p>
+<p>Cửa hàng đơn đặt hàng như thế nào đột nhiên bạo?</p>
+<p>Nhìn mắt bán khánh thời gian, Tạ Tinh Thần phát hiện rạng sáng vừa đến, hoa đã bị cướp sạch.</p>
+<p>Tạ Tinh Thần ?</p>
+<p>Khai cửa hàng ngày thứ năm, Tạ Tinh Thần gặp được hắn vô pháp lý giải sự.</p>
+<p>Nguyên bản mỗi ngày miễn cưỡng chỉ có thể bán 5000 chi hoa, hiện tại mấy chục giây quét sạch tồn kho?</p>
+<p>Tạ Tinh Thần trầm mặc.</p>
+<p>Theo sau cơ trí như hắn lập tức mở ra Tinh Võng.</p>
+<p>Liền tìm đều không cần tìm, tổng tần hot search trước năm chính là hắn muốn đáp án.</p>
+<p>Xa hoa cây xanh chỉ bán 199 đây là muốn quậy kiểu gì!</p>
+<p>Alice lương tâm đề cử → địa cầu cửa hàng</p>
+<p>Sử thượng nhất lương tâm tinh cầu chủ phi hắn mạc chúc</p>
+<p>Anh anh anh võng tốc quá chậm ta đoạt không đến hoa hoa a</p>
+<p>Ta tuyên bố phấn toản cẩm chướng cùng hoa hồng đỏ là ta yêu nhất</p>
+<p>Tạ Tinh Thần Liền rất đột nhiên.</p>
+<p>Hắn biết hắn dùng cái này bình thường thực vật giá cả bán xa hoa cây xanh hắn cửa hàng bán hoa khẳng định sẽ bạo, nhưng hắn thật không đoán được sẽ bạo nhanh như vậy.</p>
+<p>Quang xem tiêu đề Tạ Tinh Thần là có thể cách không cảm nhận được sa điêu các võng hữu nội tâm kích động chi tình, chờ click mở hot search sau càng đến không được, có thể nói —— toàn võng kêu rên.</p>
+<p>Tạ Tinh Thần cầm lòng không đậu chọc khai hậu trường, nhìn xuống đất cầu cửa hàng cửa hàng fans số.</p>
+<p>Cái, mười, trăm, ngàn, vạn, mười vạn, trăm vạn!</p>
+<p>Đáng sợ trăm vạn fans một đêm đạt thành.</p>
+<p>Tạ Tinh Thần thỏa mãn.</p>
+<p>Mới ở trên hot search ngây người mấy cái giờ hắn cửa hàng liền có trăm vạn phấn lạp, kia lại chờ một đoạn thời gian, hắn cửa hàng chú ý lượng tuyệt đối nhẹ nhàng quá ngàn vạn!</p>
+<p>Có cái này fans số đếm, hắn cảm thấy chính mình sách tranh nhiệm vụ đặc biệt có hy vọng!</p>
+<p>Làm lơ một đống quỳ cầu gia tăng thương phẩm số lượng nhắn lại, Tạ Tinh Thần vô cùng cao hứng hạ Tinh Võng.</p>
+<p>Hệ thống sách tranh thượng hoa nhài cùng cẩm chướng sắp hàng ở 01 trang 01 bài, thắp sáng chúng nó điều kiện là tiêu thụ 10000, hoa oải hương cùng hoa quế ở đệ nhị bài, thắp sáng chúng nó yêu cầu tiêu thụ 20000, mà hoa hồng còn lại là ở thứ 5 bài, thắp sáng nó yêu cầu tiêu thụ 50000.</p>
+<p>Trước mắt Tạ Tinh Thần cửa hàng bán hoa khai trương năm ngày, dựa theo mỗi ngày tiêu thụ mỗi loại hoa tươi 1000, một ngày tổng tiêu thụ 5000 chi, khoảng cách thắp sáng hoa nhài tấm card cùng cẩm chướng tấm card hắn chỉ cần lại đến 5 thiên! Thắp sáng hoa oải hương tấm card, hoa quế tấm card tắc còn cần 15 thiên, thắp sáng hoa hồng tấm card sẽ tương đối trễ, nhưng cũng chỉ cần một tháng rưỡi thời gian.</p>
+<p>Tạ Tinh Thần Thật tốt quá!</p>
+<p>Đây là xem đến cùng nhiệm vụ!</p>
+<p>Bất quá ngay cả như vậy, Tạ Tinh Thần vẫn như cũ không tính toán trước tiên hoàn thành nhiệm vụ.</p>
+<p>Bởi vì hắn hoa điền quá ít.</p>
+<p>Hắn cố nhiên có thể lựa chọn dùng một lần hoàn thành nhiệm vụ, nhưng hắn hiện tại còn không có tìm được mặt khác hoa cỏ, muốn làm lâu dài sinh ý như vậy không thể thực hiện.</p>
+<p>Cho nên nói vẫn là đến lại khai vài mẫu hoa điền mới được!</p>
+<p>Tạ Tinh Thần tính toán trước mắt chính mình có được hoa điền số lượng, phát hiện bức thiết yêu cầu khuếch trương hoa điền.</p>
+<p>Cũng may hiện tại hắn có hoa điền cũng có hạt giống, chỉ cần hắn nguyện ý hoa nhiều điểm tiền, nhiều hơn cấp hoa tươi tưới sinh trưởng dịch cùng thực vật dinh dưỡng dịch, kia hắn là có thể ngắn lại hoa tươi gieo trồng kỳ, ngắn hạn đại lượng thu hoạch hoa tươi.</p>
+<p>Tạ Tinh Thần cũng không ngẩng đầu lên nói “Phát Tài Phú Quý Trường Thọ ra tới làm việc lạp.”</p>
+<p>Ba cái người máy nghe được Tạ Tinh Thần kêu to, từ các hoa điền trung toát ra tới.</p>
+<p>Tạ Tinh Thần hỏi “Cho các ngươi chuẩn bị hoa điền thi hảo phì sao?”</p>
+<p>Ba cái người máy “Hảo, lão bản.”</p>
+<p>Tạ Tinh Thần vừa lòng gật gật đầu, bắt đầu ra lệnh “Phát Tài ngươi hôm nay nhiệm vụ là gieo trồng một mẫu hoa quế một mẫu hoa nhài, Phú Quý ngươi hôm nay nhiệm vụ là gieo trồng hai mẫu hoa hồng, Trường Thọ ngươi hôm nay nhiệm vụ là gieo trồng tam mẫu hoa oải hương.”</p>
+<p>Đến nỗi dư lại tam mẫu cẩm chướng tắc từ chính mình phụ trách.</p>
+<p>Không sai, Tạ Tinh Thần tính toán hôm nay liền đem chính mình hoa điền khuếch trương đến hai mẫu hoa quế, hai mẫu hoa nhài, tam mẫu hoa hồng, năm mẫu hoa oải hương cùng năm mẫu phấn toản cẩm chướng!</p>
+<p>Vì thế, hắn thậm chí đem quản gia mới vừa giao cho hắn trang viên tiền lời toàn bộ cầm đi mua loại nhỏ gieo trồng máy móc.</p>
+<p>Có loại thực máy móc phụ trợ, lại có sức sống tràn đầy hạt giống, một ngày gieo trồng vài mẫu hoa điền trở thành một kiện khả năng sự.</p>
+<p>Vốn dĩ Tạ Tinh Thần cũng không nghĩ như vậy đuổi, nhưng này không vừa vặn đã dưỡng đến thích hợp gieo trồng thời điểm, mà cửa hàng bán hoa lại thiếu đại lượng hoa tươi sao.</p>
+<p>Khắc gan lại khắc kim, Tạ Tinh Thần đem lão quản gia đưa tới tiền tiêu một chút đều không dư thừa tiền đề hạ lại liều mạng áp bức chính mình, cuối cùng hắn thật sự quán triệt chứng thực chính mình hoa điền khai khẩn kế hoạch!</p>
+<p>Ngắn ngủn một ngày, hắn lại có được vài mẫu cho hắn mang đến cuồn cuộn tiền lời hoa điền.</p>
+<p>Thật sự không sức lực nhất nhất cấp hoa điền thực vật giáo huấn tinh thần lực, Tạ Tinh Thần ở trí năng phun cơ trung ương khống chế đài để vào một quản lục vật chất nước thuốc, sau đó mở ra chỉ có thể phun cơ, tiến hành phun tác nghiệp.</p>
+<p>Loại này lục vật chất nước thuốc là gieo trồng sư sở trường trò hay.</p>
+<p>Nước thuốc bản thân không đáng giá tiền, đáng giá chính là gieo trồng sư hướng trong chuyển vận thực vật thân hòa tính tinh thần lực.</p>
+<p>Vì được đến loại này nước thuốc, mỗi cái gieo trồng sư đều sẽ ở nhàn rỗi khi đem tràn đầy tinh thần lực chuyển vận đến nước thuốc trung lấy thay đổi nước thuốc Lục Vật Chất Hàm Lượng.</p>
+<p>Trước đem nước thuốc trung ám vật chất đuổi đi, lại dùng tinh thần lực giục sinh lục vật chất, trong tình huống bình thường nước thuốc trung Lục Vật Chất Hàm Lượng đạt tới 60 khi, nó liền có thể thay thế tinh thần lực cấp tân gieo trồng thực vật tưới.</p>
+<p>Này chi nước thuốc là Tạ Tinh Thần ngày thường nỗ lực thành quả, vừa vặn, nó chính là hắn vì loại này thời khắc mấu chốt sử dụng mới chế tác.</p>
+<p>Bất quá Tạ Tinh Thần nước thuốc trữ hàng không nhiều lắm, rốt cuộc phía trước hắn mỗi ngày đi hoa điền cấp thực vật chuyển vận tinh thần lực, căn bản không có dư thừa tinh thần lực có thể chứa đựng.</p>
+<p>Này chi nước thuốc vẫn là hắn nỗ lực khắc gan thành quả, bất quá bên trong Lục Vật Chất Hàm Lượng giống nhau, khó khăn lắm đạt tới nhưng dùng 60 thôi.</p>
+<p>Tạ Tinh Thần không tưởng quá nhiều, hắn mệt mỏi cho nên dùng.</p>
+<p>Dùng xong hậu nhân về tinh hạm nằm khoang trị liệu.</p>
+<p>“Xem ra ta phòng là bạch lộng.” Tạ Tinh Thần ưu sầu cười nhạo.</p>
+<p>Đem trị liệu thất đương phòng ngủ, phỏng chừng toàn bộ tinh tế trừ bỏ hắn cũng không ai đi.</p>
+<p>Bởi vì khoang trị liệu muốn trị liệu không thể liền Tinh Võng, cho nên Tạ Tinh Thần nằm xuống tới sau chỉ có thể đông tưởng tây tưởng.</p>
+<p>Cũng may sẽ tiến khoang trị liệu người bản thân chính là tinh thần mệt mỏi người, Tạ Tinh Thần mới vừa nằm xuống đi không bao lâu hắn liền lâm vào ngủ say.</p>
+<p>Tinh thần lực khôi phục thuốc thử từ khoang trị liệu thượng một chút nhỏ giọt, còn không có dừng ở Tạ Tinh Thần trên người, nó phảng phất đã bị vô hình đồ vật hấp thu hầu như không còn.</p>
+<p>Dựng ngày</p>
+<p>Tạ Tinh Thần sớm lên đến phòng bếp nấu cháo.</p>
+<p>Cháo hải sản nấu hảo sau, hắn đem hoa hồng trà cùng trà hoa lài trang vào xinh đẹp thủy tinh bình trung, lại dùng lụa mang ở mặt trên đánh một cái tinh mỹ nơ con bướm, sau đó tính cả một đại thúc hoa cùng chính mình dậy sớm nấu kia nồi cháo hải sản cùng đưa cho chuyển phát nhanh người máy.</p>
+<p>Đây là hắn cấp Nghê lão sư chuẩn bị “Tiền lương”.</p>
+<p>Không quý trọng, nhưng lại là hắn một phần tâm ý!</p>
+<p>Hoa hồng trà mỹ dung dưỡng nhan, trà hoa lài dùng thuốc lưu thông khí huyết an thần, thanh gan minh mục, hai người hỗn hợp còn có gầy thân bài độc tác dụng, đưa lão sư thật sự đặc biệt thích hợp!</p>
+<p>Đến nỗi cháo hải sản, đó chính là Tạ Tinh Thần đột phát kỳ tưởng kết quả.</p>
+<p>Tạ Tinh Thần tưởng chính là Nếu Nghê lão sư thích hắn làm đồ ăn, kia hắn có phải hay không có thể đưa nàng một chút gia vị liêu?</p>
+<p>Hắn hiện tại gia vị liêu loại có một mẫu, nhưng mà quang chính hắn một người căn bản ăn không hết, sợ lãng phí hắn chỉ nghĩ lấy tới tặng người.</p>
+<p>Nghĩ đến bị hắn loại ở hoa điền trung khương hành tỏi, Tạ Tinh Thần lại cao hứng lại mất mát, cao hứng chính là hắn khương hành tỏi đều có, mất mát chính là hắn cũng chỉ có khương hành tỏi.</p>
+<p>Ai! Liền ớt cay đều không có, cuộc sống này có điểm khổ sở.</p>
+<p>Nhân gia cơm Tây còn có hương liệu cùng hắc hồ tiêu đâu.</p>
+<p>Nhưng nơi này đâu?</p>
+<p>Chỉ có muối cùng một ít kỳ kỳ quái quái gia vị liêu.</p>
+<p>Tạ Tinh Thần một bên phun tào một bên nhìn chuyển phát nhanh người máy đem hắn muốn tặng cho lão sư lễ vật đóng gói đầu nhập loại nhỏ trùng động tiếp thu khí trung.</p>
+<p>Chờ chuyển phát nhanh người máy sau khi trở về, Tạ Tinh Thần đi một chuyến gia vị điền.</p>
+<p>Khương hành tỏi thành thục thực mau, hắn hôm nay lại thu hoạch một đợt.</p>
+<p>Củ tỏi hành tây liền căn đào khởi sau bị Tạ Tinh Thần phơi khô tồn trữ, khương nói một bộ phận để vào tủ đông, một bộ phận đồng dạng phơi khô.</p>
+<p>Nhưng mà miễn cưỡng hành lá, tỏi diệp này đó liền không được, này đó ăn không hết chỉ có thể ném.</p>
+<p>Này cũng quá lãng phí đi!</p>
+<p>Tạ Tinh Thần nhịn không được đem ánh mắt đầu hướng hệ thống thương thành.</p>
+<p>Nói…… Được xưng cái gì đều có hệ thống thương trường có không có khả năng có bánh rán hành chế tác máy móc?</p>
+<p>Nếu có lời nói hắn thật sự không ngại lại đi Tinh Võng Thương Thành khai một nhà tiệm ăn vặt!</p>
+<p>Rốt cuộc tinh tế có vô số loại bột mì cùng du, mà hắn có hành!</p>
+<p>Chỉ cần có loại này máy móc, bánh rán hành cái này ăn vặt hoàn toàn có thể làm ra tới!</p>
+<p>Thí nghiệm đến Tạ Tinh Thần xuất hiện kịch liệt cảm xúc dao động, vẫn luôn không ra tiếng hệ thống bỗng nhiên 【 leng keng 】 một tiếng, tiếp theo đem màn hình dỗi đến Tạ Tinh Thần trước mặt.</p>
+<p>Tuy nói Tạ Tinh Thần trò chơi cấp bậc đã lên tới lv2, nhưng hắn hệ thống thương thành giao diện như cũ đen nhánh một mảnh.</p>
+<p>Bất quá lúc này không giống nhau, lúc này đen như mực giao diện trung một cái đen như mực vật phẩm đang ở không chịu khống phóng đại, thu nhỏ lại, thập phần dẫn nhân chú mục.</p>
+<p>Nhìn cái này vật phẩm, Tạ Tinh Thần ngầm hiểu, trước mắt sáng ngời nói “Tiểu Ma, này chẳng lẽ là…… Chế tác bánh rán hành máy móc?”</p>
+<p>【 leng keng, chúc mừng người chơi phát hiện “Bánh rán hành chế tác cơ”. 】</p>
+<p>Hệ thống nhắc nhở âm hưởng khởi sau, trước mắt vẫn như cũ một mảnh đen nhánh, Tạ Tinh Thần lên án “Tiểu Ma, cái này máy móc không thể mua sắm.”</p>
+<p>【 leng keng, kinh thí nghiệm, người chơi buôn bán ngạch không đủ. 】</p>
+<p>Tạ Tinh Thần Hút oxy jpg</p>
+<p>Buôn bán ngạch không đủ? Bất quá là một cái bánh rán hành chế tác cơ mà thôi, nó vì cái gì như vậy quý?</p>
+<p>Trước mắt là hắn khai cửa hàng ngày thứ sáu, năm loại hoa tươi một ngày buôn bán ngạch cao tới 139, 5000 tinh tệ, hiện tại sáu ngày qua đi, hắn buôn bán ngạch cao tới 837, 0000 tinh tệ.</p>
+<p>Hơn tám trăm vạn tinh tệ buôn bán ngạch, nhưng mà hệ thống thương thành tất cả đều là đen như mực cùng “?”.</p>
+<p>Tạ Tinh Thần nghiêm mặt nói “Tiểu Ma, ta cảm thấy các ngươi hệ thống thương thành giá bán thực không hợp lý.”</p>
+<p>Cái gì máy móc có thể bán như vậy quý?</p>
+<p>【 hệ thống nhắc nhở Hệ thống xuất phẩm mỹ thực chế tác nghi có thể chế tạo ra “Lương” cập trở lên phẩm chất đồ ăn. 】</p>
+<p>Tạ Tinh Thần chấn kinh rồi “Đồ ăn còn có cấp bậc chi phân?”</p>
+<p>【 hệ thống nhắc nhở Đồ ăn chế tác cấp bậc vì “Lương” cập trở lên sẽ xuất hiện đồ ăn hiệu quả, cụ thể hiệu quả thỉnh người chơi tự hành thăm dò. 】</p>
+<p>Tạ Tinh Thần Làm sao bây giờ…… Càng muốn muốn.</p>
+<p>Tạ Tinh Thần hít sâu một hơi, đau mình nói “Vậy ngươi có thể nói cho ta này đài bánh rán hành chế tác cơ bán bao nhiêu tiền sao?”</p>
+<p>Hắn thật sự đoán không ra những cái đó đen như mực cùng “?”.</p>
+<p>Cũng may hệ thống cũng không có như vậy tuyệt tình, chỉ cần không gian lận nó ngẫu nhiên vẫn là nguyện ý trả lời người chơi.</p>
+<p>【 loại nhỏ mỹ thực chế tác nghi thường quy giá bán vì một ngàn vạn buôn bán ngạch. 】</p>
+<p>Tạ Tinh Thần ha hả “Hành bá, kia ta ngày mai mua.”</p>
+<p>Đợi lát nữa hắn đến đi tranh hoa nhài chi sâm làm điểm hoa nhài mới được.</p>
+<p>Nhưng mà ——</p>
+<p>【 hệ thống nhắc nhở Vật ấy phẩm vì mỗi ngày đổi mới vật phẩm, còn thừa mua sắm thời gian 26. 】</p>
+<p>Thực hảo, tạp điểm.</p>
+<p>Buổi tối rạng sáng vừa đến, hắn buôn bán ngạch tới, nhưng hắn bánh rán hành chế tác cơ cũng không có.</p>
+<p>Tạ Tinh Thần không chút do dự đăng nhập cửa hàng bán hoa, sau đó mỗi loại hoa tươi thiết trí thượng giá 1200 kiện thương phẩm.</p>
+<p>Bất quá mười lăm phút, mới vừa thượng giá hoa tươi tiêu thụ không còn, được đến buôn bán ngạch 167, 4000 tinh tệ.</p>
+<p>Hơn nữa phía trước buôn bán ngạch, Tạ Tinh Thần hệ thống buôn bán ngạch đạt rốt cuộc đạt tới 1004, 4000 tinh tệ.</p>
+<p>Ở Tạ Tinh Thần buôn bán ngạch đạt tới một ngàn vạn sau, hệ thống thương thành giao diện cuối cùng không hề đen nhánh một mảnh.</p>
+<p>Hệ thống thương thành chia làm hai cái bộ phận, trên cùng là mỗi ngày đổi mới lan, phía dưới còn lại là thường quy thương phẩm mua sắm chuyên mục.</p>
+<p>Tạ Tinh Thần còn không có mua, hắn cố xem đổi mới ra tới thỏa mãn hắn cấp bậc cùng với một ngàn vạn buôn bán ngạch thương phẩm.</p>
+<p>Nhưng mà này đó thương phẩm thật sự quá ít, đều là chút cùng loại với tinh thần lực khôi phục dược tề loại này hiện thực tồn tại đồ vật, duy nhất một đài nhìn có khoa học viễn tưởng cảm màu ngân bạch mỹ thực chế tác nghi vẫn là hệ thống nhắc nhở bánh rán hành chế tác cơ, nó chính an tĩnh nằm ở hệ thống thương thành mỗi ngày đổi mới lan trung.</p>
+<p>【 tên Bánh rán hành chế tác cơ</p>
+<p>Sản xuất vật phẩm Bánh rán hành ( lương )</p>
+<p>Hiệu quả Loại trừ ám vật chất ( nhược )</p>
+<p>Sản xuất hiệu suất 1000 cái 24 giờ</p>
+<p>Mua sắm cấp bậc 2 cấp</p>
+<p>Sở cần buôn bán ngạch Một ngàn vạn 】</p>
+<p>Bởi vì buôn bán ngạch không đủ, Tạ Tinh Thần chỉ có thể cam chịu mua sắm số lượng “1”.</p>
+<p>【 leng keng, người chơi đã mua sắm “Bánh rán hành chế tác cơ x1”, đã khấu trừ buôn bán ngạch 1000, 0000 tinh tệ, còn thừa buôn bán ngạch 4, 4000 tinh tệ; máy móc đem với 24 giờ sau tới, thỉnh xác nhận đưa hóa địa chỉ. 】</p>
+<p>Tạ Tinh Thần tò mò mở ra chính mình Tinh Võng Thương Thành, mặt trên quả nhiên khấu trừ một ngàn vạn tinh tệ.</p>
+<p>Tạ Tinh Thần “Hệ thống khấu thật tiền?”</p>
+<p>Hắn còn tưởng rằng chỉ khấu trừ buôn bán ngạch đâu!</p>
+<p>【 thí nghiệm đến người chơi nghi vấn, hệ thống hồi phục như sau Hệ thống sở khấu trừ buôn bán ngạch vì người chơi kinh doanh đạt được hiện thực tiền, người chơi từ hệ thống thương thành mua sắm thương phẩm, hiện thực đều có hợp lý giải thích. 】</p>
+<p>Chỉnh khá tốt.</p>
+<p>Hắn cuối cùng không lo lắng như thế nào giải thích hệ thống xuất phẩm đồ vật.</p>
+<p>【 hệ thống nhắc nhở Thỉnh người chơi xác nhận thu hóa địa chỉ. 】</p>
+<p>Tạ Tinh Thần Tuy rằng không nghĩ cư trú tinh hạm trở thành mỹ thực gia công phường, nhưng hắn thật sự không có tiền kiến nhà xưởng.</p>
+<p>Hắn cũng tưởng đem cư trú mà cùng công tác mà tách ra oa!</p>
+<p>Vì hệ thống ngẩng cao giá hàng cảm thấy tuyệt vọng.</p>
+<p>Tạ Tinh Thần không ôm hy vọng giãy giụa nói “Tiểu Ma, ta muốn hỏi một chút, ta làm cái này hệ thống nhiệm vụ, các ngươi sẽ khen thưởng ta đại hình kiến trúc sao?”</p>
+<p>【 hệ thống Sẽ. 】</p>
+<p>Tạ Tinh Thần bất giác cao hứng, ngược lại thực nghiêm túc hỏi lại “Nhiệm vụ này khó sao?”</p>
+<p>【 hệ thống Khó. 】</p>
+<p>Tạ Tinh Thần Ta liền biết.</p>
+<p>Cho nên vẫn là nỗ lực dọn gạch bá.</p>
+<p>Thật sự không được đi dã ngoại thăm dò cũng đúng oa.</p>
+<p>Đối hệ thống mất đi hy vọng, Tạ Tinh Thần lại lần nữa hiểu ra làm người phải dựa vào chính mình đạo lý này.</p>
+<p>Quyết định, buổi chiều liền đi thăm dò!</p>
+<p>Nghê Khôn Kỳ từ chuyển phát nhanh người máy trong tay tiếp nhận chuyển phát nhanh, Tạ Tinh Thần đưa nàng lễ vật tới rồi!</p>
+<p>Đó là một bó rất lớn thật xinh đẹp hoa tươi!</p>
+<p>Phấn nộn phấn toản cẩm chướng là chủ hoa, xứng hoa còn lại là đi toàn bộ lá cây chỉ còn lại có màu trắng tiểu hoa bao hoa nhài.</p>
+<p>Phấn, bạch hai loại hoa phối hợp lên có vẻ phá lệ hoạt bát, sinh động lại xinh đẹp.</p>
+<p>Chỉ xem một cái, đại gia thiếu nữ tâm liền nhịn không được chạy ra.</p>
+<p>Ôm như vậy một đại thúc hoa tươi, Nghê Khôn Kỳ đầy mặt tươi cười ở trường học nghiên cứu lâu hành tẩu.</p>
+<p>Đi lại gian, hoa nhài thanh hương ẩn ẩn di động.</p>
+<p>“Nghê lão sư, ngươi này hoa nơi nào mua nha?”</p>
+<p>Trong lâu giáo thụ ánh mắt đi theo Nghê Khôn Kỳ di động, phá lệ khứu giác lợi hại người thậm chí nhịn không được lần nữa tới gần.</p>
+<p>Ở trường học nghiên cứu lâu công tác cơ bản là trong trường học lão giáo thụ, cho nên lẫn nhau rất là quen thuộc.</p>
+<p>Thấy đại gia tò mò, Nghê Khôn Kỳ không có úp úp mở mở, vui tươi hớn hở nói “Học sinh đưa.”</p>
+<p>“Ha, học sinh đưa?”</p>
+<p>“Đây là học sinh đào tạo tân phẩm hoa tươi?”</p>
+<p>Đang ngồi đều là gieo trồng hệ thâm niên giáo thụ, nhưng mọi người đều không quen biết này thúc hoa, thuyết minh này hoa nhất định là tân chủng loại!</p>
+<p>Cho nên nó nếu không phải nào đó tân tinh cầu chủ tinh cầu đặc sản, nếu không chính là trường học học sinh đào tạo kiểu mới hoa cỏ.</p>
+<p>Hai người chọn thứ nhất, càng nhiều người tin tưởng nó là học sinh đào tạo kiểu mới hoa cỏ, rốt cuộc —— tinh cầu chủ quá ít.</p>
+<p>Nhân loại văn minh đệ nhất học viện sáng lập đến nay ít nói mấy trăm năm lịch sử, nhưng mà trường học xuất thân tinh cầu chủ số lượng trước mắt còn không có phá trăm, cái này số lượng phân đến gieo trồng hệ càng là thiếu đến đáng thương.</p>
+<p>Nghê Khôn Kỳ lắc đầu “Không phải học sinh đào tạo tân chủng loại, là Tạ Tinh Thần đưa ta.”</p>
+<p>“Tạ Tinh Thần” ba chữ vừa ra, trong nhà an tĩnh một lát.</p>
+<p>Vị này ở gieo trồng hệ chính là lừng lẫy nổi danh “Đại nhân vật”, nhưng hắn cùng Du Trừng bất đồng, Tạ Tinh Thần lấy luyến ái não nổi danh.</p>
+<p>Bất quá sao……</p>
+<p>Mọi người nhìn Nghê Khôn Kỳ liếc mắt một cái, ngầm hiểu.</p>
+<p>Nàng vị này học sinh cùng nàng giống nhau, đã từng nàng cũng lấy luyến ái não nổi danh.</p>
+<p>Nghê Khôn Kỳ không để bụng này đàn giáo thụ tưởng cái gì, thu được lễ vật nàng quá muốn tìm người khoe ra.</p>
+<p>Vì thế nàng ra vẻ bình đạm nhưng lời nói vẫn là nhịn không được tràn đầy khoe khoang nói “Sao trời 4 tháng thời điểm mua viên gieo trồng tinh, hiện tại bận việc còn khá tốt, mấy ngày hôm trước hắn ở Tinh Võng Thương Thành khai gia cửa hàng bán đặc sản, kia đồ vật ta nhìn, bán kêu một cái tiện nghi a, ta vừa thấy này giá cả không đúng, ta còn tưởng rằng hắn bán bình thường thực vật đâu, lúc ấy đã bị ta hảo một đốn phê bình giáo dục.</p>
+<p>Kết quả không từng tưởng ta oan uổng hài tử, hắn nói hắn không phải vì kiếm tiền, chính là hy vọng càng nhiều người có thể mua khởi xa hoa cây xanh, ai, đứa nhỏ này thiên chân đến ta cũng không biết nên nói hắn cái gì hảo.”</p>
+<p>Nói xong, Nghê Khôn Kỳ thỏa thuê đắc ý cầm lấy Tạ Tinh Thần đưa nàng trà hoa hộp quà, che miệng cười không ngừng “Còn có này trà hoa cũng là hắn làm cho, ta phía trước uống lên ly tùy tiện khen câu hảo uống, kết quả đứa nhỏ này liền cho ta đưa nhiều như vậy! Cái này màu đỏ chính là hoa hồng trà, nói là có thể mỹ dung dưỡng nhan, này màu trắng chính là trà hoa lài, nga, đối, chính là ta trên bàn phóng kia thúc hoa, nó có an thần minh mục hiệu quả, sau đó hai loại trà hoa cùng nhau hướng phao còn có thể gầy thân bài độc.”</p>
+<p>Trà hoa khoe ra xong, Nghê Khôn Kỳ cuối cùng đem Tạ Tinh Thần nấu cho nàng kia nồi cháo hải sản bưng ra tới.</p>
+<p>“Đây là sao trời hôm nay buổi sáng lên cho ta nấu cháo hải sản, đại gia không ăn bữa sáng nói không bằng cùng nhau nếm thử?”</p>
+<p>Mọi người …… Đáng giận, bị nàng trang tới rồi.</p>
+<p>Nhìn những cái đó lễ vật, mọi người trong lòng tất cả tư vị.</p>
+<p>Thân là giáo thụ, nhiều năm như vậy tới bọn họ đã dạy không ít học sinh, gặp được đệ tử tốt càng là không ít, nhưng mà nhưng Tạ Tinh Thần như vậy săn sóc hài tử lại không nhiều lắm.</p>
+<p>Bọn họ nơi nào gặp qua loại này liền ăn uống đều cấp lão sư chuẩn bị tốt học sinh a!</p>
+<p>Thấy Nghê Khôn Kỳ một quyển thỏa mãn ở kia mỹ tư tư ăn cháo, nguyên bản không tính toán ăn giáo thụ cũng nhịn không được thấu cái náo nhiệt.</p>
+<p>“Nghê Khôn Kỳ, này cháo thật là tạ đồng học nấu?”</p>
+<p>“Vị này tạ đồng học thật là gieo trồng sư không phải đầu bếp sao? Này trù nghệ cũng quá ngon đi!”</p>
+<p>“Này cháo phối liệu là cái gì? Ta giống như chưa thấy qua này vài loại thực vật.”</p>
+<p>“……”</p>
+<p>Cháo hải sản chinh phục một chúng giáo thụ.</p>
+<p>Rõ ràng thường xuyên đi ăn xa hoa nhà ăn, nhưng vẫn là bị một nồi đơn giản cháo hải sản chinh phục, này đàn không thiếu tiền giáo thụ ăn xong một nồi cháo hải sản sau hối hận.</p>
+<p>Sớm biết rằng Tạ Tinh Thần như thế đa tài đa nghệ, bọn họ lúc ấy liền cướp đem hắn chộp tới đương học sinh, hiện tại nhưng hảo, bị Nghê Khôn Kỳ nhặt cái đại tiện nghi!</p>
+<p>Các vị giáo thụ đấm ngực dừng chân, hối hận không thôi.</p>
+<p>“Kia cái gì, giáo sư Nghê, ngươi xem, ngươi nhiều như vậy trà hoa đâu, có phải hay không có thể phân điểm cho ta?”</p>
+<p>Uống xong cháo hải sản, thấy Nghê Khôn Kỳ trên bàn như vậy dùng nhiều trà, có cái nữ giáo thụ liếm mặt già cùng nàng muốn.</p>
+<p>Một người mở miệng, mặt sau người cũng đi theo mở miệng, cuối cùng Nghê Khôn Kỳ một cái cũng chưa cấp, chỉ đáp ứng hỏi một chút chính mình học sinh bán hay không.</p>
+<p>Vì thế đang định đi dã ngoại thăm dò Tạ Tinh Thần chấn kinh rồi!</p>
+<p>Chính mình bất quá đưa lão sư điểm hoa tươi, trà hoa cùng cháo thôi, kết quả lão sư cho chính mình mở ra thị trường?</p>
+<p>Nghĩ đến kho hàng ít nói mấy trăm cân trà hoa, Tạ Tinh Thần nhưng thật ra không keo kiệt đưa điểm cấp trường học lão các giáo sư.</p>
+<p>Rốt cuộc này đó trà hoa là hắn phía trước lấy xong hạt giống sau dư thừa đóa hoa chế tác mà thành.</p>
+<p>Đối với nhu cầu cấp bách mở rộng hoa điền phạm vi Tạ Tinh Thần mà nói, làm gây giống cơ sở hoa tươi thật sự chỉ có hạt giống cùng có thể trồng rễ cây phái thượng công dụng, đến nỗi đóa hoa? Kia chỉ là sản phẩm phụ thôi.</p>
+<p>Hắn sẽ đem này đó đóa hoa chế thành trà hoa, thuần túy là bởi vì nhiều năm như vậy tới hắn tiết kiệm quán không thể gặp lãng phí.</p>
+<p>Cho nên đem này đó trà hoa đưa cho các giáo sư cũng không tính cái gì vấn đề lớn.</p>
+<p>Rốt cuộc có thể tiến trường học nghiên cứu lâu giáo thụ đều là đức cao vọng trọng học giả, bên trong lại không có Tạ Tinh Thần kẻ thù, tự nhiên như thế, Tạ Tinh Thần khẳng định vui cấp nhà mình lão sư làm mặt mũi công trình.</p>
+<p>Hoa tươi cũng có thể đưa, thứ này càng đơn giản, làm người máy đi hoa điền trích điểm là được.</p>
+<p>Duy nhất làm Tạ Tinh Thần khó xử chính là —— đồ ăn.</p>
+<p>Hắn gần nhất thật sự vội, vội đến chính mình cũng chưa thời gian ăn cơm cái loại này.</p>
+<p>Hôm nay cấp Nghê Khôn Kỳ nấu kia nồi cháo hải sản vẫn là hắn trăm vội trung ngạnh trừu thời gian làm.</p>
+<p>Bất quá ——</p>
+<p>Tạ Tinh Thần bỗng nhiên nghĩ tới chính mình buổi sáng từ hệ thống thương thành mua kia đài mỹ thực cơ.</p>
+<p>Tạ Tinh Thần “Lão sư, ta bên này có một loại kêu bánh rán hành đồ ăn, từ ngày mai bắt đầu nó là có thể mỗi ngày cố định sản xuất, nếu không đến lúc đó ngươi đưa cho các giáo sư nhìn xem thích không thích? Nếu bọn họ thích nói ta có thể mỗi ngày đều cho các ngươi gửi.”</p>
+<p>Nghê Khôn Kỳ không chút nghĩ ngợi nói “Không cần đưa cho bọn họ nhìn, ngươi trực tiếp cho ta gửi lại đây đi, đúng rồi, này đó hoa nha trà nha bánh a gì đó bao nhiêu tiền?”</p>
+<p>Tạ Tinh Thần hỗn không thèm để ý “Nơi nào liền dùng tiền, liền như vậy điểm đồ vật, khi ta hiếu kính ngài.”</p>
+<p>Nghe vậy, Nghê Khôn Kỳ khóe miệng cầm lòng không đậu thượng kiều, hiển nhiên những lời này làm nàng tâm tình thực hảo, nhưng…… Như thế nào liền không cần tiền?</p>
+<p>Như vậy đồ tốt lấy tiền làm sao vậy!</p>
+<p>Nếu sao trời không phải nàng học sinh, đám kia lão nhân tưởng mua còn mua không được đâu, miễn phí lấy nàng học sinh đồ vật? Nằm mơ đi thôi!</p>
+<p>Nghê Khôn Kỳ thái độ cường ngạnh, Tạ Tinh Thần không có biện pháp, chỉ có thể tùy tiện báo cái giá cả.</p>
+<p>Tạ Tinh Thần “Kia hoa tươi một bó 5000 tinh tệ, trà hoa một vại một vạn tinh tệ, bánh rán hành ta liền không thu tiền, mỗi ngày cho bọn hắn đưa hai cái.”</p>
+<p>Tạ Tinh Thần cấp bánh rán hành định giá là 100 tinh tệ.</p>
+<p>Nhưng đầu to thu sau tiền trinh hắn không nghĩ so đo.</p>
+<p>Nhưng mà Nghê Khôn Kỳ vẫn là không muốn “Làm buôn bán nào có mỗi ngày đưa đạo lý? Ngươi đừng không dám ra giá, đám kia lão nhân lão thái thái quá có tiền, không thiếu ngươi này tam dưa hai táo.”</p>
+<p>Theo sau nàng bàn tay vung lên, nói thẳng “Ta xem qua ngươi cửa hàng hoa tươi giá cả, đừng nói cái gì cấp các giáo sư giá thấp, bó hoa thống nhất một bó một vạn tinh tệ, trà hoa một tiểu vại ba vạn tinh tệ, đến nỗi cái kia ngươi nói bánh rán hành vậy 100 tinh tệ một cái.”</p>
+<p>Thấy Tạ Tinh Thần còn muốn nói cái gì, Nghê Khôn Kỳ thái độ cường ngạnh “Hảo, cái này giá cả liền dựa theo ta mới vừa nói tính, liền kia đều tính ưu đãi, ngươi đừng lại cho ta đánh gãy, ngày mai buổi sáng ngươi trước phát thập phần lại đây, ta vội đi.”</p>
+<p>Nói xong không cho Tạ Tinh Thần cự tuyệt cơ hội Nghê Khôn Kỳ lập tức offline, lại qua mấy chục giây, tiền đến trướng.</p>
+<p>【 máy móc ngân hàng Ngài tài khoản với 0 ngày 28 tháng 5 đến trướng 401000 tinh tệ. 】</p>
+<p>Thực đột nhiên, Tạ Tinh Thần cứ như vậy mở ra một cái kỳ kỳ quái quái tiêu thụ con đường.</p>
+<p>Nhưng mà hiện tại Tạ Tinh Thần còn không biết này tiêu thụ con đường đối hắn có bao nhiêu quan trọng.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong24.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong26.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "mot-giac-ngu-day-ta-ke-thua-dia-cau-tinh-te";
+const NOVEL_TITLE = "Một giấc ngủ dậy ta kế thừa địa cầu [ tinh tế ]";
+const CHAPTER_TITLE = "Chương 25";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

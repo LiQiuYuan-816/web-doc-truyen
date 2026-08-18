@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 142</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Một giấc ngủ dậy ta kế thừa địa cầu [ tinh tế ]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 142</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong141.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong143.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Cổ trúc, ngươi hảo sao?”</p>
+<p>Tiếu ân đứng ở cổ trúc ký túc xá cửa tham đầu tham não hướng trong vọng.</p>
+<p>Đối thượng cổ trúc ánh mắt sau, hắn càng là hưng phấn dùng khoa trương môi ngữ không tiếng động hướng hắn nói chuyện.</p>
+<p>Đây là trong khoảng thời gian này nhân loại văn minh đệ nhất học viện gieo trồng hệ đặc có hiện tượng.</p>
+<p>Không biết nội tình người chỉ sợ sẽ cho rằng bọn họ có cái gì bệnh nặng, nhưng biết nội tình người lại nghiêm khắc tuân thủ “Ký túc xá an tĩnh” này túc quy.</p>
+<p>Cổ trúc hướng về phía tiếu ân gật gật đầu.</p>
+<p>Hắn thật cẩn thận đem trên tay này bình lục vật chất nước thuốc để vào chứa đầy nắn hình bùn cái hộp nhỏ trung cố định hảo, theo sau cầm nó tay chân nhẹ nhàng đi ra ký túc xá.</p>
+<p>Hai người hạ ký túc xá, ở khoảng cách ký túc xá ước chừng 50 mễ sau, bọn họ mới dùng bình thường âm nói chuyện.</p>
+<p>Chỉ thấy tiếu ân hưng phấn xách theo chính mình chuyên dụng cái hộp nhỏ, hắn ánh mắt lượng lượng nói “Cổ trúc, ta hai ngày này vượt mức bình thường phát huy ai, ta cư nhiên chế tạo ra 2 bình Lục Vật Chất Hàm Lượng vượt qua 50 lục vật chất nước thuốc, ha ha ha ha!”</p>
+<p>Dựa theo tình hình chung, một vài niên cấp học sinh ước chừng chỉ có thể chế tạo ra 40 Lục Vật Chất Hàm Lượng lục vật chất nước thuốc, có thể hai ngày chế tác hai bình 50 Lục Vật Chất Hàm Lượng lục vật chất nước thuốc đã là xưng là “Ưu tú”.</p>
+<p>Nhưng thực tế thượng, lục vật chất nước thuốc có một cái nghiêm khắc tiêu chuẩn tuyến ——60 Lục Vật Chất Hàm Lượng.</p>
+<p>Thấp hơn 60 Lục Vật Chất Hàm Lượng lục vật chất nước thuốc, cho dù nó có 59 Lục Vật Chất Hàm Lượng, nhưng nó hiệu quả cùng chân chính lục vật chất nước thuốc vẫn là khác nhau như trời với đất.</p>
+<p>Hơn nữa nó an toàn cùng không còn phải xem vận khí ( đại khái suất an toàn? ), tác dụng nói cũng chỉ một, chỉ có thể làm hiệu suất cao thực vật dinh dưỡng dịch.</p>
+<p>Bởi vì hiệu quả râu ria duyên cớ, cho nên đừng nhìn trên mạng như vậy nhiều người ồn ào “Thế nào đều là lục vật chất nước thuốc, hiệu quả khẳng định so thực vật dinh dưỡng dịch hảo”, nhưng thực tế thượng, này đó không đạt tiêu chuẩn nước thuốc căn bản không ai nguyện ý mua.</p>
+<p>Rốt cuộc, thực vật đâu, nhiều trân quý a!</p>
+<p>Ai đều biết 60 dưới Lục Vật Chất Hàm Lượng lục vật chất nước thuốc ổn định tính không tốt, cho nên hiểu công việc người đều không nghĩ thu.</p>
+<p>Trừ phi bản nhân chính là gieo trồng sư, có thể đối này đó lục vật chất nước thuốc tiến hành tinh luyện gia công.</p>
+<p>Nhưng dưới loại tình huống này, chỉ thu một lọ hai bình liền không có ý tứ gì, nếu chỉ thu một hai bình, kia không bằng chính mình chế tác càng phương tiện.</p>
+<p>Nhưng đại lượng bán ra?</p>
+<p>Trường học cấm.</p>
+<p>Đến cuối cùng, bọn học sinh thành phẩm cũng chỉ có thể sử dụng tới tưới trường học thực vật.</p>
+<p>Bởi vậy mỗi một cái có loại thực hệ cao đẳng học viện này thực vật đều thực sum xuê, bất quá bởi vì học sinh lục vật chất thành phẩm không ổn định duyên cớ, có đôi khi sẽ tưới ra thực vật biến dị, này yêu cầu gieo trồng hệ các giáo sư ra ngựa.</p>
+<p>“Cổ trúc, ngươi mấy ngày nay chế tác nhiều ít đạt tiêu chuẩn có thể bán vật chất nước thuốc a?” Tiếu ân hiếu kỳ nói.</p>
+<p>Tiếu ân trong miệng “Đạt tiêu chuẩn” đều không phải là chỉ 60 tiêu chuẩn, mà là chỉ địa cầu cửa hàng thu hoạch yêu cầu ——50 Lục Vật Chất Hàm Lượng.</p>
+<p>Cổ trúc nghe vậy cười, hắn ánh mắt lượng lượng nói “2 bình, bên trong có một lọ còn đạt tới 59.”</p>
+<p>Tiếu ân đã líu lưỡi lại tiếc nuối “Ta đi, 59 a? Thiếu chút nữa điểm là có thể đạt tới 60.”</p>
+<p>Tuy nói chỉ có 1 chênh lệch, nhưng giá cả lại một trời một vực!</p>
+<p>Dựa theo địa cầu cửa hàng lục vật chất nước thuốc thu mua giới 50 Lục Vật Chất Hàm Lượng lục vật chất nước thuốc có thể bán 5000 tinh tệ, 51-52 có thể bán 6000 tinh tệ, 53-54 có thể bán 7000 tinh tệ…… Lấy này loại suy, 59 Lục Vật Chất Hàm Lượng lục vật chất nước thuốc có thể bán 10000 tinh tệ.</p>
+<p>Nhưng đây là bình thường lục vật chất nước thuốc giá cả, một khi đạt tới trong nghề bình thường tiêu chuẩn ( 60 ), này giá cả liền tăng tới 3 vạn tinh tệ một chi, lại hướng lên trên trướng, giá cả càng quý.</p>
+<p>Hơn nữa còn có ẩn hình phúc lợi.</p>
+<p>Chỉ có mỗi tháng cấp địa cầu cửa hàng bán ra vượt qua 3 chi hoàn toàn đủ tư cách ( 60 Lục Vật Chất Hàm Lượng ) lục vật chất nước thuốc, địa cầu cửa hàng mới có thể cấp người này cung cấp một lần mua sắm cơ hội.</p>
+<p>Tuy nói nên mua sắm cơ hội nhưng lựa chọn thương phẩm phạm vi không lớn, nhưng nói như thế nào đều hảo, tổng hảo quá đến Tinh Võng cùng một đống người đoạt đi?</p>
+<p>Thật không dám giấu giếm, tiếu ân nhưng thèm dưa hấu!!!</p>
+<p>Chính là hắn thật sự làm không ra tới 60 Lục Vật Chất Hàm Lượng lục vật chất nước thuốc.</p>
+<p>Nghĩ đến đây, tiếu ân trù trù thở dài một hơi, sau đó hồ ngôn loạn ngữ “Nếu không ta trở về tìm ta ca nỗ lực nỗ lực?”</p>
+<p>Tuy nói hắn ca đã tốt nghiệp, nhưng hắn tốt xấu đã từng cũng là đệ nhất học viện gieo trồng hệ học sinh không phải?</p>
+<p>Cho nên hắn hẳn là cũng coi như học sinh? Hắn sản xuất lục vật chất nước thuốc hẳn là cũng coi như học sinh tác phẩm?</p>
+<p>Nhưng mà ——</p>
+<p>Cổ trúc trừng hắn một cái, nhỏ giọng nói “Ngươi lớn lên không đẹp nghĩ đến đảo rất mỹ.”</p>
+<p>Nói xong, cổ trúc bước nhanh đi đến tổng hợp lâu.</p>
+<p>Chờ bọn họ tới tổng hợp lâu đại sảnh khi, nơi này đã kín người hết chỗ.</p>
+<p>Thật dài lớn lên đội ngũ vòng hai cái vòng lớn, đã từ đầu bài đến cái đuôi lại vòng trở về từ cái đuôi bài đến cùng…… Bài thật dài đội ngũ.</p>
+<p>Người này lưu lượng quả thực!</p>
+<p>Tình cảnh này làm tiếu ân rất là vô ngữ “Nói chúng ta trường học gieo trồng hệ thực sự có nhiều người như vậy sao?”</p>
+<p>Tuy nói hôm nay nghỉ, nhưng đại gia chẳng lẽ liền không có chính mình việc cần hoàn thành?</p>
+<p>Này sợ không phải toàn hệ người đều tới đi?</p>
+<p>Không sai, toàn hệ!</p>
+<p>Bao gồm những cái đó ấn dĩ vãng lệ thường tới nói đã ly giáo học trưởng học tỷ.</p>
+<p>Nhìn đến những cái đó sắp tốt nghiệp học trưởng cùng học tỷ, tiếu ân cùng cổ trúc liếc nhau sau, không biết nên nói cái gì.</p>
+<p>Dù sao liền, rất thực một lời khó nói hết.</p>
+<p>Rõ ràng đều đi thực tập, kết quả một lời không hợp hồi trường học?</p>
+<p>Phía trước lão sư còn cùng bọn họ nói các học trưởng học tỷ công tác bận rộn.</p>
+<p>Nhưng hiện tại, bọn họ đang làm gì?</p>
+<p>Đệ trình đủ tư cách lục vật chất nước thuốc, sau đó đi mua đồ vật?</p>
+<p>Nhìn học trưởng, các học tỷ vui tươi hớn hở đi vào cách vách căn nhà kia, tiếu ân cùng cổ trúc đều nhịn không được lộ ra hâm mộ thần sắc.</p>
+<p>Chờ nhìn đến nào đó học tỷ cười đến thấy răng không thấy mắt ôm một cái cực đại vô cùng dưa hấu ra tới sau, hắn càng hâm mộ.</p>
+<p>Nhưng mà hâm mộ cũng không có gì dùng.</p>
+<p>Bởi vì chờ đến hắn thời điểm, hắn chỉ lấy tới rồi tinh tệ, không có biện pháp đi cách vách kia gian đại nhà ở mua đồ vật.</p>
+<p>Tiếu ân thở ngắn than dài rời đi tổng hợp lâu, biết đến người biết hắn đây là kiếm tiền, không biết người còn tưởng rằng tiếu ân mới vừa bị cướp bóc đâu.</p>
+<p>Cổ trúc nhìn về phía tiêu cực tiếu ân, vỗ vỗ hắn bả vai, an ủi nói “Tiếu ân, mau tỉnh lại lên, chúng ta lúc này mới năm nhất đâu, cẩn thận tính tính chúng ta còn có ba năm thời gian nhưng nỗ lực, ngươi xem học tỷ học trưởng bọn họ, khoảng cách chính thức tốt nghiệp liền dư lại như vậy điểm thời gian, chờ bọn họ bắt được bằng tốt nghiệp sau bọn họ liền không phúc lợi này, ngẫm lại có phải hay không vẫn là cảm thấy chúng ta hảo?”</p>
+<p>Không thể không nói cổ trúc thật sự rất biết an ủi người!</p>
+<p>Nghe xong hắn “Đối lập thức” an ủi sau tiếu ân tức khắc cao hứng lên.</p>
+<p>Nói cũng là khoát!</p>
+<p>Bọn họ hiện tại mới năm nhất đâu!</p>
+<p>Còn có ước chừng ba năm thời gian, hắn như thế nào liền không thể chế tạo ra lục vật chất nước thuốc?</p>
+<p>Tháng trước hắn không cũng chỉ có thể chế tác 45 Lục Vật Chất Hàm Lượng lục vật chất nước thuốc sao? Nhưng tháng này hắn đã đột phá cực hạn, chế tạo ra 50 hàm lượng lục vật chất nước thuốc.</p>
+<p>Tuy nói vẫn là so ra kém cổ trúc, nhưng năng lực của hắn cũng không kém!</p>
+<p>Nỗ lực một phen, nghỉ hè liều mạng rèn luyện, có lẽ sau học kỳ hắn là có thể chế tạo ra 60 Lục Vật Chất Hàm Lượng lục vật chất nước thuốc đâu?</p>
+<p>Nghĩ đến đây, tiếu ân kiên định mục tiêu “Kia ta hủy bỏ nghỉ hè lữ hành hoạt động tính, ta tính toán đi ta ca bên kia, dùng hắn cao cấp khoang trị liệu cùng tinh thần lực khôi phục thuốc thử tiến hành cực hạn rèn luyện.”</p>
+<p>Cái gọi là “Cực hạn rèn luyện”, chính là giống Tạ Tinh Thần phía trước làm như vậy, đem toàn bộ tinh thần lực tiêu hao xong, sau đó nằm khoang trị liệu, nằm xong lại đem tân tăng tinh thần lực tiêu hao xong lại nằm khoang trị liệu, như thế tuần hoàn lặp lại rèn luyện tinh thần lực.</p>
+<p>Phương pháp thực hảo, nhưng rất khó chịu, cũng thực khiêu chiến cực hạn.</p>
+<p>Cổ trúc nghe vậy, tức khắc lộ ra hâm mộ biểu tình, cũng tiếc nuối nói “Đáng tiếc ta không có biện pháp tiến hành cực hạn rèn luyện.”</p>
+<p>Cơ sở tinh thần lực khôi phục thuốc thử muốn mười vạn tinh tệ một chi, phối hợp khoang trị liệu sử dụng, một chi tỉnh dùng nhiều nhất cũng chỉ có thể dùng vài lần.</p>
+<p>Hắn là xa xôi tinh cầu ra tới người, gia đình khó khăn đến liền hắn học phí, sinh hoạt phí cũng chưa biện pháp lấy ra tới.</p>
+<p>Hắn sở dĩ có thể ở chỗ này an tâm đọc sách, toàn lấy “Học bổng + kiêm chức” phúc.</p>
+<p>Lúc này lục vật chất nước thuốc có thể bán tiền với hắn mà nói đã là thiên đại chuyện tốt.</p>
+<p>Cực hạn rèn luyện gì đó, hắn hoàn toàn không dám tưởng.</p>
+<p>Nhưng mà tiếu ân lại không như vậy cảm thấy.</p>
+<p>Hắn tự hỏi sau khi nghiêm túc đối cổ trúc nói “Cổ trúc, ta cảm thấy kỳ thật ngươi có thể nếm thử một chút. Dù sao hiện tại lục vật chất nước thuốc cũng có thể bán tiền, ngươi nghỉ hè cũng liền không cần phải đi làm công, mà trong trường học có cao cấp khoang trị liệu, ngươi cũng không cần lại mua, tính đến tính đi ngươi chỉ cần mua một chi cơ sở tinh thần lực chữa trị thuốc thử là được.”</p>
+<p>“Này thuốc thử là thực quý không sai, nhưng tỉnh điểm dùng, ít nhất có thể sử dụng năm sáu lần đâu, này năm sáu lần còn chưa đủ ngươi đột phá sao? Ngươi khoảng cách đạt tiêu chuẩn liền kém 1 mà thôi.”</p>
+<p>Cổ trúc nghe vậy muốn nói cái gì, nhưng lại bị tiếu ân ngăn lại, tiếu ân nói tiếp “Dựa theo chúng ta trường học quy định, trường học học sinh một năm có thể xin một chi cơ sở tinh thần lực khôi phục dược tề, chỉ cần ở năm thứ hai trả hết tiền nợ có thể, 10 vạn tinh tệ mà thôi, ngươi mấy ngày nay đều đã kiếm lời 17 vạn tinh tệ không phải sao? Chẳng lẽ ngươi cảm thấy chính mình còn không dậy nổi này mười vạn tinh tệ?”</p>
+<p>“Có lẽ ngươi sẽ cảm thấy không mua thuốc thử tiến hành tinh thần lực rèn luyện càng kiếm tiền, nhưng có đôi khi tăng lên thực lực so kiếm tiền muốn tới càng quan trọng, cho nên vì sao không ở có thể gánh nặng khởi tiền đề hạ không bác một bác? Có lẽ tương lai càng trời cao biển rộng đâu?”</p>
+<p>Cổ trúc bị hắn thuyết phục.</p>
+<p>Lại hoặc là nói cổ trúc kiếm được tiền, thấy được tương lai lộ, hắn cảm thấy chính mình có thể gánh vác khởi lúc này đây sau khi thất bại hậu quả.</p>
+<p>Cuối cùng, hắn dựa theo bạn tốt tiếu ân kiến nghị hướng học viện xin một chi cơ sở tinh thần lực khôi phục thuốc thử, sau đó nghỉ hè chỗ nào cũng không đi, liền lưu tại học viện tiến hành cực hạn rèn luyện.</p>
+<p>Mà cùng hắn giống nhau lựa chọn học sinh không ít.</p>
+<p>Này dẫn tới nghỉ hè trị liệu trong nhà tới tới lui lui đều là người, so bình thường đi học khi cũng chẳng thiếu gì.</p>
+<p>Mà như vậy cực hạn thành quả là khả quan!</p>
+<p>Bất quá một cái nghỉ hè mà thôi, rất nhiều học sinh đột phá chính mình tinh thần lực cực hạn, bọn họ tinh thần lực được đến nhất định lượng tăng trưởng, cùng lúc đó, lục vật chất nước thuốc chế tác năng lực cũng thẳng tắp bay lên.</p>
+<p>Đặc biệt là cổ trúc, hắn ở xin một chi cơ sở tinh thần lực khôi phục thuốc thử sau liều mạng tiến hành cực hạn rèn luyện.</p>
+<p>Cuối cùng, hắn quả nhiên chế tạo ra chân chính đạt tiêu chuẩn ( 60 ) lục vật chất nước thuốc.</p>
+<p>Mà mặt khác không đạt tiêu chuẩn, nhưng cũng có 59 lục vật chất cũng có mười mấy chi, hắn đem này đó lục vật chất nước thuốc bán, tiền hắn vô dụng tới trả hết học viện, mà là lựa chọn lại lần nữa mua sắm tinh thần lực khôi phục thuốc thử tiến hành cực hạn rèn luyện.</p>
+<p>Như thế tuần hoàn lặp lại, đến khai giảng khi, cổ trúc đã có thể không dựa ngoại vật ổn định chế tạo ra 60 Lục Vật Chất Hàm Lượng lục vật chất nước thuốc.</p>
+<p>Lúc này, hắn chẳng những trả hết thiếu trường học tiền, còn kiếm được chính mình tương lai ba năm học phí, sinh hoạt phí.</p>
+<p>Như cổ trúc giống nhau người không ít, bọn họ cũng cùng cổ trúc giống nhau tiến bộ thật lớn.</p>
+<p>Rốt cuộc —— có thể từ xa xôi tinh thi đậu tốt nhất gieo trồng học viện học sinh, hắn thiên tư cùng nghị lực nhất định cũng là siêu việt thường nhân.</p>
+<p>Nếu là cho bọn họ một cái cùng những người khác giống nhau công bằng cạnh tranh hoàn cảnh, bọn họ thật không thấy được sẽ thua.</p>
+<p>Sự thật cũng chứng minh —— bọn họ không chỉ có không có thua, bọn họ thậm chí còn thắng.</p>
+<p>Ở công bằng điều kiện hạ thực lực của bọn họ được đến tăng lên, chất lượng sinh hoạt cũng đi theo tăng trưởng không ít.</p>
+<p>Gần chỉ là hai tháng thời gian, Tạ Tinh Thần phải tới rồi 200 hơn bình đủ tư cách lục vật chất nước thuốc ( 60 trở lên ) cùng với 3000 hơn bình không đạt tiêu chuẩn lục vật chất nước thuốc ( 60 dưới ).</p>
+<p>Hợp quy lục vật chất nước thuốc trải qua thí nghiệm sau bị hắn đặt ở chuyên môn nhà kho trung bảo tồn, mà không đủ tiêu chuẩn lục vật chất nước thuốc tắc cần tiến thêm một bước tiến hành gia công, tinh luyện.</p>
+<p>Gia công, tinh luyện nhìn như thực phiền toái, nhưng kỳ thật đảo cũng không như vậy phiền toái, rốt cuộc —— Tạ Tinh Thần đem thu hóa tuyến tạp ở 50 cái này điểm thượng.</p>
+<p>Nếu muốn nói 60 Lục Vật Chất Hàm Lượng lục vật chất nước thuốc là một cái đại ngạch cửa, kia 50 chính là một cái cửa nhỏ hạm.</p>
+<p>Nếu lục vật chất nước thuốc trung Lục Vật Chất Hàm Lượng có thể đạt tới 50 cái này cửa nhỏ hạm, bọn họ xử lý lên sẽ nhẹ nhàng rất nhiều.</p>
+<p>Chính là đi……</p>
+<p>Tạ Tinh Thần không nghĩ tới này mấy cái trường học gieo trồng hệ học sinh cư nhiên như thế có thể đánh!</p>
+<p>Hắn hiện tại mới cùng 5 sở cao đẳng học viện gieo trồng hệ hình thành hợp tác quan hệ mà thôi, hơn nữa bọn họ cũng mới hợp tác rồi không đến ba tháng thời gian, kết quả hắn lại thu được 3000 hơn bình lục vật chất nước thuốc?</p>
+<p>Tạ Tinh Thần Đau cũng vui sướng jpg</p>
+<p>Nói đến cùng, hắn chỉ có hai cái chính thức công nhân.</p>
+<p>Trong đó Thẩm Hải Vận năng lực cường, mà nhậm hạc minh đến bây giờ đều còn không có tốt nghiệp.</p>
+<p>Làm Thẩm Hải Vận gia công lục vật chất nước thuốc hắn cảm thấy không thành vấn đề, nhưng nhậm hạc minh?</p>
+<p>Tạ Tinh Thần nhớ tới phía trước hắn còn ở gia công hạc minh chế tác không đủ tiêu chuẩn lục vật chất nước thuốc một chuyện.</p>
+<p>Liền, có hay không một loại khả năng…… Bầu trời có thể rớt chút đáng tin cậy công nhân cho hắn?</p>
+<p>Nếu không hắn cùng mặt khác cao đẳng học viện gieo trồng hệ hợp tác ý nghĩa liền không lớn.</p>
+<p>Rốt cuộc hắn thật không có biện pháp làm chính mình trở thành chế tác lục vật chất nước thuốc dây chuyền sản xuất một viên.</p>
+<p>Đối này, Thẩm Hải Vận biểu hiện muốn nói lại thôi.</p>
+<p>Tạ Tinh Thần cho rằng hắn đây là vì chính mình sau này dây chuyền sản xuất công nhân giống nhau nhật tử có ý kiến, hắn tức khắc ngượng ngùng nói “A hải a, kia cái gì, ngươi nhiều hơn đảm đương một chút, quá đoạn thời gian khả năng sẽ hảo?”</p>
+<p>Nhưng mà lời này nói ra chính hắn đều không tin.</p>
+<p>Toàn bộ địa cầu cửa hàng có thể làm việc gieo trồng sư liền ba cái, trong đó có một cái vẫn là học sinh, mà hắn đâu? Hắn mỗi ngày đến vội chuyện khác, tính đến cuối cùng, cũng chỉ có Thẩm Hải Vận tiếp nhận việc này!</p>
+<p>Tạ Tinh Thần đều hạ quyết tâm, nếu là Thẩm Hải Vận hướng hắn oán giận, hắn liền cấp Thẩm Hải Vận thăng chức tăng lương, tốt xấu trước đem người ổn xuống dưới lại nói.</p>
+<p>Nhưng mà không nghĩ tới chính là Thẩm Hải Vận muốn nói cũng không phải việc này, hắn nói Tạ Tinh Thần chưa bao giờ không nghĩ tới một sự kiện.</p>
+<p>Tạ Tinh Thần sợ ngây người.</p>
+<p>Hắn lại lần nữa lặp lại “Ngươi nói, ngươi có thể đề cử gieo trồng sư cho ta?”</p>
+<p>Thuộc về bầu trời rớt bánh có nhân đây là!</p>
+<p>Thẩm Hải Vận gật đầu, tuấn dật trên mặt xuất hiện một mạt đỏ ửng, hiển nhiên, giờ phút này hắn rất là ngượng ngùng.</p>
+<p>“Đúng vậy, những người đó đều là đã từng cùng ta giống nhau chịu quá thực vật hiệp hội nào đó người chèn ép, đến bây giờ đều còn không thể bình thường tìm công tác gieo trồng sư, bất quá ta bảo đảm, bọn họ năng lực đều rất mạnh, có mấy cái năng lực thậm chí so với ta còn cường.”</p>
+<p>Nghe vậy, Tạ Tinh Thần cau mày.</p>
+<p>Này thực vật hiệp hội là chuyện như thế nào?</p>
+<p>Mỗi ngày không phải chèn ép cái này chính là chèn ép cái kia?</p>
+<p>Cho nên này đến tột cùng là một cái thế nào thần kỳ tổ chức?</p>
+<p>Vì cái gì nó đến bây giờ còn sừng sững không ngã?</p>
+<p>Tạ Tinh Thần trong lòng điên cuồng phun tào.</p>
+<p>Phun tào xong sau, hắn đối Thẩm Hải Vận nói người thực cảm thấy hứng thú.</p>
+<p>Thấy nhà mình lão bản hứng thú dạt dào, Thẩm Hải Vận thở phào nhẹ nhõm.</p>
+<p>Theo sau hắn thực nghiêm túc đem cùng chính mình có tương đồng tao ngộ bằng hữu nhất nhất giới thiệu cho Tạ Tinh Thần.</p>
+<p>Đãi nghe được bọn họ năng lực cùng với kỳ vọng tiền lương đãi ngộ sau, hắn đều sợ ngây người.</p>
+<p>Này giống nhau cao đẳng học viện hảo điểm thực tập sinh đãi ngộ bọn họ liền thỏa mãn?</p>
+<p>Đây là bị chèn ép nhiều lợi hại?</p>
+<p>Tạ Tinh Thần trợn mắt há hốc mồm.</p>
+<p>Chờ nghe Thẩm Hải Vận nói những người này hắn nhận thức ít nhất cũng có 3-4 năm, thả hắn có thể bảo đảm mỗi một cái gia thế trong sạch, năng lực còn không thể so hắn kém, thậm chí cá biệt người so với hắn cường sau, Tạ Tinh Thần lập tức đánh nhịp Tới phỏng vấn, hết thảy cho ta tới phỏng vấn!</p>
+<p>Vì thế cứ như vậy, một hồi hoàn toàn mới phỏng vấn ở nào đó trời trong nắng ấm buổi chiều bắt đầu rồi.</p>
+<p>“Hải vận, ngươi lão bản thật sự nguyện ý chiêu chúng ta sao?”</p>
+<p>“A hải, ngươi có hay không nói với hắn quá chuyện của chúng ta?”</p>
+<p>“Tiểu vận, ngươi lão bản thật sự không sợ thực vật hiệp hội sao?”</p>
+<p>“……”</p>
+<p>Đàn video trung, trừ Thẩm Hải Vận ngoại, còn lại tám người có vẻ lo lắng sốt ruột.</p>
+<p>Không phải bọn họ không tự tin, chỉ là bị đả kích nhiều, bọn họ băn khoăn cũng nhiều.</p>
+<p>Phải biết đã từng bọn họ nhưng đều là thiên chi kiêu tử, dùng “Khí phách hăng hái” tới hình dung đó là một chút đều không quá phận.</p>
+<p>Nhưng mấy năm gần đây, ở thực vật hiệp hội chèn ép hạ, đại gia tâm thái uể oải không ít.</p>
+<p>Bất quá rốt cuộc còn có ngạo cốt trong người, bọn họ tình nguyện mấy năm không công tác, ở nặc danh trang web giá thấp bán lục vật chất nước thuốc đều hảo, cũng không muốn hướng đám kia cặn bã cúi đầu!</p>
+<p>Thẩm Hải Vận nghe vậy, tức khắc cười “Các ngươi yên tâm đi, ta đã cùng ta lão bản nói qua, không thành vấn đề, ta lão bản không sợ này đó.”</p>
+<p>Thấy bọn họ còn lòng có cố kỵ, Thẩm Hải Vận liền dùng chính mình nêu ví dụ tử.</p>
+<p>Thẩm Hải Vận “Các ngươi nhìn xem ta, ta phía trước không cũng cùng các ngươi giống nhau sao? Ta phỏng vấn thời điểm cũng cùng ta lão bản nói việc này, kết quả hắn một chút cũng không thèm để ý, làm theo đem ta chiêu đi vào.”</p>
+<p>“Ta hiện tại quá khả hảo lạp, tiền lương so với phía trước cao không nói, phúc lợi đãi ngộ cũng đặc biệt ngưu, nếu lão bản không chê nói, ta có thể ở hắn nơi đó làm đến ch·ế·t.”</p>
+<p>Thẩm Hải Vận sinh động không khí.</p>
+<p>Thấy đại gia mày giãn ra khai sau, hắn lại nói “Phúc lợi đãi ngộ phương diện này đại gia không cần lo lắng, ta lão bản rất hào phóng, tuyệt đối sẽ không bạc đãi đại gia, chỉ cần ngươi đủ lợi hại, lấy siêu cao tiền lương một chút vấn đề đều không có, cho nên chiều nay phỏng vấn thời điểm đại gia muốn nỗ lực lấy ra chính mình giữ nhà bản lĩnh a.”</p>
+<p>Lần này phỏng vấn tổng cộng chia làm hai bộ phận —— thực tế ảo phỏng vấn + tuyến</p>
+<p>Trước thực tế ảo phỏng vấn. Nên phân đoạn từ Tạ Tinh Thần phụ trách, ở mấy cái giờ sau liền phải tiến hành rồi.</p>
+<p>Sau tuyến thủy.</p>
+<p>Chờ hai lần phỏng vấn đều thông qua sau, thông qua người là có thể được đến Tạ lão bản giao thông trợ cấp cùng với đi công tác trợ cấp, cầm này số tiền đến nhân loại văn minh trung tâm tinh cầu bụi gai trang viên nhập chức.</p>
+<p>Tám người đều biết đây là thay đổi bọn họ hiện trạng tốt nhất cơ hội.</p>
+<p>Cho nên càng là tới gần thời gian phỏng vấn, bọn họ trong lòng càng là thấp thỏm bất an.</p>
+<p>Nhưng hết thảy thấp thỏm, ở phỏng vấn chân chính tiến hành khi, toàn biến thành an tâm.</p>
+<p>Bọn họ tuy rằng bị chịu chèn ép, nhưng chưa bao giờ từ bỏ quá gieo trồng sư công tác này, cũng chưa bao giờ từ bỏ quá học tập tương quan nội dung.</p>
+<p>Thậm chí bởi vì đại gia rời đi vườn trường này tòa tháp ngà voi sau gặp quá nhiều đếm không xuể không công bằng đãi ngộ, cho nên mọi người ngược lại càng thêm nỗ lực hướng về phía trước, cực lực tích góp lực lượng, để có một ngày có thể đạt được thành công, có thể trở thành cái kia chế định quy tắc lợi hại người!</p>
+<p>Cho nên đương từ phỏng vấn quan trong miệng nghe được quen thuộc vấn đề sau, này đàn chưa bao giờ từ bỏ quá học tập người tức khắc an tâm.</p>
+<p>Trên thế giới này ai đều khả năng phản bội ngươi duy độc tri thức sẽ không, chỉ cần ngươi học được nó, kia nó chính là thuộc về ngươi!</p>
+<p>Quen thuộc vấn đề làm đại gia dần dần thả lỏng, cùng lúc đó, Tạ Tinh Thần trên mặt ý cười cũng trở nên càng ngày càng nùng.</p>
+<p>Nguyên bản hắn cho rằng Thẩm Hải Vận chỉ là Vương bà bán dưa mèo khen mèo dài đuôi, hắn nói trung nhiều ít mang theo chút khoa trương sắc thái, không từng tưởng…… Nhân gia không chỉ có không khuếch đại, thậm chí còn “Khen tiểu”!</p>
+<p>Quang từ này đó hỏi đáp hắn liền hiểu biết này nhóm người thực vật học tri thức rốt cuộc có bao nhiêu vững chắc.</p>
+<p>Rất nhiều sừng ngật đáp vấn đề nếu không phải hắn cố ý đi tìm, phỏng chừng hắn đều hồi đáp không được, nhưng người ta đâu? Không chút nghĩ ngợi phải trả lời ra tới.</p>
+<p>Tạ Tinh Thần hỏi hồi lâu, cuối cùng hắn vừa lòng duỗi tay nói “Chúc mừng ngươi thành công thông qua lần này thực tế ảo phỏng vấn phân đoạn, ngày mai chúng ta sẽ cho ngươi gửi đưa một rương không đạt tiêu chuẩn lục vật chất nước thuốc, rồi sau đó sẽ vào sáng ngày kia 6 điểm đến buổi tối 18 điểm này 12 tiếng đồng hồ tiến hành tuyến hạ lục vật chất nước thuốc gia công phỏng vấn.”</p>
+<p>Nghe vậy, nghiêm khải càng trên mặt xuất hiện tươi cười, hắn một bên cùng Tạ Tinh Thần bắt tay một bên tự tin nói “Không thành vấn đề, ta có thể.”</p>
+<p>Tạ Tinh Thần gật đầu “Kia làm chúng ta chờ mong hậu thiên đã đến, cũng hy vọng ngươi có thể chính thức thông qua tuyến</p>
+<p>Lại cùng nghiêm khải càng hàn huyên vài câu, rời đi trước, Tạ Tinh Thần ấn xuống lục lạc, ý bảo tiếp theo vị diện thí giả tiến tràng.</p>
+<p>Tám người phỏng vấn giằng co ước chừng hơn hai giờ.</p>
+<p>Hơn hai giờ sau, tám người không hề ngoài ý muốn tất cả đều tiến vào tiếp theo luân —— tuyến</p>
+<p>Lúc này nhận người chủ yếu mục đích là gia công không đủ tiêu chuẩn lục vật chất nước thuốc, bởi vậy Tạ Tinh Thần đơn giản thô bạo đem phỏng vấn nội dung định như vậy định ra.</p>
+<p>Dựa theo Thẩm Hải Vận công tác hiệu suất, hắn 12 tiếng đồng hồ đại khái có thể tinh luyện 30-50 bình lục vật chất nước thuốc.</p>
+<p>Suy xét đến có người khả năng sẽ siêu tiêu, cho nên Tạ Tinh Thần trực tiếp một người chuyển phát nhanh 100 bình yêu cầu tinh luyện lục vật chất nước thuốc qua đi.</p>
+<p>Gửi xuất lục vật chất nước thuốc sau, Tạ Tinh Thần bắt đầu phân phối người máy, bảo đảm một người ít nhất có một người máy nhìn chằm chằm.</p>
+<p>Mà chính hắn còn lại là tính cơ động bộ đội, tùy duyên kiểm tra.</p>
+<p>Ngày thứ ba, tuyến</p>
+<p>Sáng sớm 5 giờ 50 phút, quảng giác video tin thông chuyển được.</p>
+<p>Ở video trung, Tạ Tinh Thần nhìn đến tám người đã toàn chuẩn bị sẵn sàng.</p>
+<p>Sáng sớm 6 điểm chỉnh, đương Tạ Tinh Thần kêu bắt đầu sau, này tám người bay nhanh cầm lấy chính mình trước mặt không đủ tiêu chuẩn lục vật chất nước thuốc tinh luyện.</p>
+<p>Trong đó, có một người nữ sinh, nàng tinh luyện tốc độ mau đến đem Tạ Tinh Thần đều cấp dọa.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong141.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong143.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "mot-giac-ngu-day-ta-ke-thua-dia-cau-tinh-te";
+const NOVEL_TITLE = "Một giấc ngủ dậy ta kế thừa địa cầu [ tinh tế ]";
+const CHAPTER_TITLE = "Chương 142";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 205, trung đơn dạy học</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Toàn năng trung đơn ( điện cạnh )
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 205, trung đơn dạy học</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong204.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong206.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Ván thứ hai thi đấu, Thiên Hoàn là màu lam phương, ATB thành màu đỏ phương.</p>
+<p>Thiên Hoàn ưu tiên cấm tuyển, huấn luyện viên Lâm nhằm vào phụ trợ, [ Chúc Phúc Chi Quang ] cái này có thể giải khống, gia tăng hộ thuẫn phụ trợ cái thứ nhất bị Ban rớt; ATB theo sát Ban rớt [ Tiềm Hành Đạo Tặc ].</p>
+<p>Ở BO5 trong lúc thi đấu, chính mình dùng quá cường thế anh hùng, Ban rớt không cho đối thủ dùng cũng là thường thấy ý nghĩ. ATB ván thứ nhất lấy đạo tặc đánh ra không tồi hiệu quả, ván thứ hai Ban rớt không cho Trì Sóc dùng, đây là đề phòng Trì Sóc lấy đạo tặc cùng Diệp Thiếu Dương đánh liên kết .</p>
+<p>Lâm Phong thực trấn định mà tiếp tục Ban phụ trợ, cấm dùng [ Quang Diệu Chi Thuẫn ].</p>
+<p>ATB tắc Ban rớt Diệp Thiếu Dương thành danh anh hùng [ Vực Sâu Chúa Tể ].</p>
+<p>Diêu Mộc nhìn đến nơi này, nói “ATB hôm nay vẫn luôn nhằm vào trung dã, [ Vực Sâu Chúa Tể ] cùng [ Tiềm Hành Đạo Tặc ] này hai cái trung tâm anh hùng, rất có thể kế tiếp thi đấu đều sẽ không thả ra.”</p>
+<p>Đông ca nói “Đúng vậy, Dương Dương [ Vực Sâu Chúa Tể ] ở Hoa Quốc khu trận chung kết bắt lấy penta kill, cũng là trận chung kết FMVP! ATB đối hắn cái này anh hùng hiển nhiên có điều kiêng kỵ. Nhưng nói như vậy, [ Quyền Hoàng ]+[ Vận Mệnh Nữ Thần ] kinh điển trung dã liên kết phóng ra, Thiên Hoàn có thể hay không lấy đâu?”</p>
+<p>Diêu Mộc nói “Ta cảm thấy sẽ không lấy, bởi vì Thiên Hoàn là màu lam phương, chỉ có thể trước đoạt một cái anh hùng, mặc kệ Thiên Hoàn trước tuyển ai, đối diện đều sẽ dỡ xuống Thiên Hoàn tổ hợp.”</p>
+<p>Đệ nhất giai đoạn tuyển anh hùng, Thiên Hoàn không chút do dự khóa [ Đao Kiếm Ý Chí ].</p>
+<p>Đông ca nói “Đệ nhất tuyển trực tiếp lấy thượng đơn? Xem ra, lão Tần này cục phải dùng chiến sĩ bổ thương tổn.”</p>
+<p>ATB huấn luyện viên nhìn đến nơi này, 1 lâu cùng 2 lâu lập tức tuyển định [ Hút Máu Công Tước ] thượng đơn +[ Vận Mệnh Nữ Thần ] trung đơn, vừa lúc có thể hủy đi Diệp Thiếu Dương cùng Trì Sóc Quyền Hoàng + Mệnh Nữ tổ hợp. Hiển nhiên, ATB chuyên môn nghiên cứu hôm khác Hoàn đội hình.</p>
+<p>Thiên Hoàn 2, 3 lâu bắt lấy xạ thủ [ Phong Chi Tinh Linh ]+ phụ trợ [ Thánh Kỵ Sĩ ], bảo hạ lộ hai người tổ.</p>
+<p>ATB ở 3 lâu lựa chọn đánh dã [ Quyền Hoàng ].</p>
+<p>Quốc nội người xem nhịn không được phun tào ——</p>
+<p>【 Thiên Hoàn rất mạnh Quyền Hoàng + Mệnh Nữ tổ hợp bị ATB tuyển đi rồi! 】</p>
+<p>【 huấn luyện viên vì cái gì không trước đoạt trung dã? Trung dã bị nhằm vào đến thảm như vậy, còn không lấy dã hạch cùng trung hạch, đệ nhất giai đoạn luôn tuyển xạ thủ, biết rõ Tiểu Tinh vô pháp chủ C! 】</p>
+<p>【 không biết huấn luyện viên tổ nghĩ như thế nào, trung đơn cùng đánh dã vẫn luôn đặt ở P2 giai đoạn lại tuyển, dùng tốt anh hùng đều bị Ban hết 】</p>
+<p>Cũng khó trách các fan sốt ruột, Thiên Hoàn ván thứ nhất chính là bởi vì đem trung đơn, đánh dã đặt ở 2 giai đoạn lựa chọn, Diệp Thiếu Dương pháp sư dồn sát thương cùng Trì Sóc dã hạch bị Ban quang, đội hình thượng liền rất bị động.</p>
+<p>Quả nhiên, ATB huấn luyện viên nhìn Thiên Hoàn không chọn trung đơn, ở P2 giai đoạn tiếp tục Ban trung dã.</p>
+<p>[ Ninja ] Trì Sóc đừng nghĩ lấy ra tới, [ Ảo Thuật Sư ] loại này mang tiết tấu pháp sư dồn sát thương cũng không cho Diệp Thiếu Dương lấy, tiến thêm một bước áp súc trung đánh đơn dã anh hùng trì.</p>
+<p>Lâm Phong tắc nhằm vào ATB còn không có tuyển xạ thủ vị, liên tục Ban rớt [ phi mũi tên sao băng ][ Thánh Linh Cung Thủ ].</p>
+<p>ATB xạ thủ Kim Chang Ho ván thứ nhất dùng quá [ Thần Thương Thủ ], ván thứ hai bị Ban rớt hai cái xạ thủ, Trình Tinh lại lấy đi một cái, rơi vào đường cùng hắn đành phải tuyển ra kéo tiết tấu [ hút máu công chúa ], tưởng dựa đại chiêu hút máu tới cẩu mệnh.</p>
+<p>Thiên Hoàn 4 lâu cùng 5 lâu lựa chọn [ thời gian người lữ hành ]+[ Nhà Đấu Vật ].</p>
+<p>Cái này lựa chọn làm hiện trường người xem chấn động, phòng live stream nội xoát đầy dấu chấm hỏi ——</p>
+<p>【 cái quỷ gì? [ Thánh Kỵ Sĩ ] phụ trợ, lại tới cái [ thời gian người lữ hành ] phụ trợ? 】</p>
+<p>【 không có AP tấn công sao? 】</p>
+<p>【 chẳng lẽ là song phụ trợ, nói như vậy tấn công đủ sao? 】</p>
+<p>Diêu Mộc sửng sốt một chút, nói “Thiên Hoàn cái này đội hình……[ thời gian người lữ hành ] vẫn luôn là Khúc Giang dùng, nhưng là [ Đao Kiếm Ý Chí ] [ Thánh Kỵ Sĩ ] lại đều là hàng phía trước, này cục không trung đơn a?”</p>
+<p>Đông ca nói “Tuyển [ Nhà Đấu Vật ] đánh dã, rõ ràng là đi mang tuyến hoạt động hệ thống, chờ cuối cùng trao đổi xong anh hùng rồi nói sau, [ thời gian người lữ hành ] cái này gia tốc phụ trợ, còn không biết là ai lấy.”</p>
+<p>Diêu Mộc gật gật đầu “Cũng là. Rốt cuộc phía trước trong lúc thi đấu, Liệt Dương đã từng dùng xạ thủ đi trung lộ, Khúc Giang cũng từng lấy quá trung đơn đi phụ trợ vị, Thiên Hoàn là song trung đơn, anh hùng có thể đổi.”</p>
+<p>ATB huấn luyện viên hơi hơi nhíu nhíu mày “Bọn họ đây là muốn đánh hoạt động? Phụ trợ lấy [ Rừng Rậm Sứ Giả ], thêm huyết cùng bọn họ bám trụ, đừng làm cho bọn họ đánh tốc độ kém đẩy tháp.”</p>
+<p>Phụ trợ Jung Jae Min nghiêm túc gật đầu “Minh bạch huấn luyện viên, ta sẽ bảo vệ tốt xương hạo.”</p>
+<p>Xạ thủ Kim Chang Ho nghi hoặc nói “[ Phong Chi Tinh Linh ] đẩy tháp tốc độ rất chậm, bọn họ muốn đánh hoạt động, vì cái gì không chọn đẩy tháp tốc độ càng mau [ Súng Máy Thợ Săn ]? Thiên Hoàn BP thật là không thể hiểu được.”</p>
+<p>Choi Hyuk cười nói “Có thể là chúng ta nhằm vào trung dã nhằm vào đến quá chết, bọn họ không anh hùng nhưng tuyển.”</p>
+<p>Hai bên anh hùng tuyển định lúc sau, bắt đầu cho nhau trao đổi, ATB năm cái vị trí đều thực minh xác, thượng đơn [ Hút Máu Công Tước ], hạ bộ [ Huyết Tộc Công Chúa ]+[ Rừng Rậm Sứ Giả ], trung dã là kinh điển liên kết tổ hợp [ Quyền Hoàng ]+[ Vận Mệnh Nữ Thần ].</p>
+<p>Thiên Hoàn bên này, khán giả đều mang theo nghi hoặc, [ Đao Kiếm Ý Chí ] bị đổi đến thượng lộ giao cho lão Tần sử dụng, đánh dã là [ Nhà Đấu Vật ], 3 lâu Diệp Thiếu Dương sử dụng anh hùng, cư nhiên là [ Thời Không Lữ Hành Giả ]!</p>
+<p>Diêu Mộc cả kinh nói “Liệt Dương cư nhiên dùng [ Thời Không Lữ Hành Giả ] đi trung đơn vị?! Phụ trợ hình trung đơn?”</p>
+<p>Quả nhiên, Trình Tinh 4 lâu đổi thành [ Phong Chi Tinh Linh ], kỹ năng mang [ tinh lọc ], Khúc Giang 5 lâu bắt lấy hàng phía trước xe tăng [ Thánh Kỵ Sĩ ].</p>
+<p>Đông ca sờ sờ cằm “Này cục không nhất định là hoạt động đấu pháp? Dương Dương lấy phụ trợ đi trung đơn, [ Thời Không Lữ Hành Giả ] cái này anh hùng xác thật có thể ra pháp thuật trang bị, hắn Q kỹ năng là thẳng tắp bạo phá thương tổn, W kỹ năng quần thể gia tốc, E kỹ năng mở ra ‘ Thời Gian Hồi Tưởng ’ cấp các đồng đội hồi huyết, R kỹ năng còn lại là đại chiêu trầm mặc.”</p>
+<p>Diêu Mộc lo lắng nói “Chính là, phụ trợ hình trung đơn, hơn nữa công cụ người đánh dã, thương tổn không quá đủ đi?” Nàng dừng một chút, thở sâu nói “Thiên Hoàn này cục đội hình lựa chọn phi thường quyết đoán, hiển nhiên ở huấn luyện tái trung luyện tập quá, hiện tại có kết luận quá sớm, chúng ta vẫn là xem tuyển thủ ở thi đấu khi biểu hiện!”</p>
+<p>Dưới đài, xem thi đấu Tạ Viễn nhịn không được phun tào “Thương tổn không đủ? Suy nghĩ nhiều.”</p>
+<p>Phương Chính Thanh híp híp mắt, trêu chọc nói “Làm ATB thể nghiệm một chút, cái gì kêu tốc độ xe quá nhanh.”</p>
+<p>Thi đấu bắt đầu.</p>
+<p>Diệp Thiếu Dương ra cửa khi trực tiếp học W kỹ năng đoàn đội gia tốc, hắn liền thương tổn kỹ năng đều không học, mang theo Trì Sóc xâm lấn đối diện lam buff dã khu, ATB tuy rằng nhận thấy được Thiên Hoàn ý đồ, kịp thời phòng thủ, nhưng Diệp Thiếu Dương một cái gia tốc lui lại, Trì Sóc bay nhanh mà thu đi lam buff liền chạy, ATB chạy đến phòng thủ người căn bản với không tới bọn họ.</p>
+<p>Theo sát, Diệp Thiếu Dương khai gia tốc mang theo Trì Sóc tới trung lộ ăn binh tuyến.</p>
+<p>Hai người cùng nhau ăn luôn binh tuyến, cùng nhau đoạt rớt cua đồng, sau đó, Diệp Thiếu Dương tiếp tục khai gia tốc, mang theo Trì Sóc biến mất ở trung lộ đường sông. ATB tuyển thủ trong tầm nhìn nhìn không thấy bọn họ, góc nhìn của thượng đế khán giả mới biết được, Diệp Thiếu Dương kỳ thật mang mang Trì Sóc đi đánh hồng buff, tiết tấu mau đến bay lên.</p>
+<p>Diêu Mộc nhìn đến nơi này mới hiểu được Thiên Hoàn này cục ý nghĩ “Liệt Dương dùng [ Thời Không Lữ Hành Giả ] đi trung đơn, liền có thể cùng Sóc Nguyệt chặt chẽ liên kết ! Trung lộ là khoảng cách đánh dã gần nhất vị trí, hắn mở ra gia tốc cùng Sóc Nguyệt cùng nhau thanh binh, thanh dã khu, tốc độ sẽ xa so đối diện đánh dã mau!”</p>
+<p>Đông ca trêu chọc nói “Nói như vậy, hai người chia đều kinh tế, phát dục cũng sẽ không chịu ảnh hưởng quá lớn. Trì đội mang theo Dương Dương, tương đương với mở ra xa hoa xe thể thao ở xoát dã. Mà đối diện Choi Hyuk, còn cưỡi xe đạp!”</p>
+<p>Quốc nội người xem nghe đến đó, sôi nổi ở làn đạn xoát ra một loạt 666.</p>
+<p>【 Sóc Nguyệt + Liệt Dương, này tốc độ xe quá nhanh! 】</p>
+<p>【 Dương Dương ngươi chạy chậm một chút, ta góc nhìn của thượng đế đều xem đến hoa mắt ~】</p>
+<p>【 mở ra siêu xe Sóc Nguyệt cùng Liệt Dương, này liền tay cầm tay xoát xong rồi dã khu? 】</p>
+<p>Đúng lúc này, Diêu Mộc đột nhiên mắt sắc phát hiện Diệp Thiếu Dương trang bị lan không quá thích hợp.</p>
+<p>Nàng nhịn không được hệ thống nữ “Phụ trợ trung đơn? Chúng ta tới xem Dương Dương trang bị, đệ nhất kiện ra [ làm lạnh giày ], cái thứ hai giống như phải làm [ bạo liệt ma trượng ]?”</p>
+<p>Đông ca vội phụ họa nói “Không sai, hắn mua [ Ma Thần thủy tinh ], xác thật là [ bạo liệt ma trượng ] trước trí trang bị! Hắn này cục, căn bản không ấn thường quy kịch bản, mà là bùng nổ một đợt lưu đấu pháp!”</p>
+<p>Bạo liệt ma trượng, cái này trang bị hiệu quả là, phóng thích đơn cái kỹ năng khi, kích phát “Bạo phá” hiệu quả, đối chung quanh trong phạm vi nhỏ địch nhân tạo thành xích thương tổn, hơn nữa nhất định bạo kích. Trang bị hiệu quả làm lạnh 20 giây.</p>
+<p>Bởi vì là “Nhất định bạo kích”, thả trang bị hiệu quả làm lạnh 20 giây, cái này trang bị càng thích hợp một đợt lưu đấu pháp, cũng chính là “Một bộ bùng nổ giây người”.</p>
+<p>Ngày thường, đại gia ở trong lúc thi đấu thường xuyên nhìn đến [ Thời Không Lữ Hành Giả ] đi phụ trợ vị, giúp nhà mình xạ thủ thêm huyết, gia tốc, đánh đoàn thời điểm lợi dụng tốc độ kém qua lại lôi kéo.</p>
+<p>Này vẫn là lần đầu tiên nhìn đến Diệp Thiếu Dương lấy cái này anh hùng đi trung đơn.</p>
+<p>Trung lộ Park Won Suk thấy Diệp Thiếu Dương mất tích, lập tức nhắc nhở nói “Trung đơn miss, cẩn thận!”</p>
+<p>Phụ trợ Jung Jae Min nghĩ thầm, Trì Sóc vừa rồi ở trung lộ ngoi đầu, xoát xong dã khu, rất có thể sẽ chi viện hạ bộ. Hắn vừa muốn đi Thiên Hoàn hồng buff bụi cỏ phụ cận thăm một chút tầm nhìn, kết quả ngay sau đó, liền thấy Diệp Thiếu Dương cùng Trì Sóc phong giống nhau tốc độ từ mặt bên vòng ra tới!</p>
+<p>Diệp Thiếu Dương mở ra đoàn đội gia tốc, Trì Sóc, Khúc Giang, Trình Tinh, Diệp Thiếu Dương bốn người đồng thời ra tay, còn tại hạ lộ thanh binh Kim Chang Ho, căn bản chưa kịp phản ứng, đã bị Trì Sóc một cái choáng váng, Khúc Giang tiếp thượng liền khống, Trình Tinh bay nhanh bắn tỉa, Diệp Thiếu Dương ném qua đi một cái Q kỹ năng.</p>
+<p>Kim Chang Ho flash chạy trốn, đáng tiếc, trên người Q kỹ năng nổ tung, hắn thuận tiện giao flash cũng bị nổ chết!</p>
+<p>——First Blood!</p>
+<p>Lúc này mới thi đấu khai cục vài phút? Diệp Thiếu Dương [ Thời Không Lữ Hành Giả ] cư nhiên bắt được đầu người!</p>
+<p>ATB phụ trợ vội vàng xoay người lui lại, nhưng Diệp Thiếu Dương kịp thời mở ra W kỹ năng gia tốc, Trì Sóc [ Nhà Đấu Vật ] nhanh chóng di chuyển vị trí qua đi đem Jung Jae Min vựng tại chỗ, Trình Tinh cự ly xa bắn tỉa, bắt lấy phụ trợ đầu người!</p>
+<p>Đông ca nhịn không được hô lên thanh “Xinh đẹp! Này một đợt nhanh chóng chi viện, đánh đến ATB hạ bộ hai người tổ trở tay không kịp. Dương Dương Q kỹ năng phóng đến quá chuẩn, vừa lúc đặt ở Kim Chang Ho flash chạy trốn vị trí, Kim Chang Ho giao cái tử vong flash, quả thực bệnh thiếu máu.”</p>
+<p>Diêu Mộc cười nói “Hạ bộ bắt lấy double kill, này sóng tiết tấu xác thật mang đến hảo.”</p>
+<p>Thượng lộ, lão Tần biết Dương Dương đi chi viện hạ bộ, đã sớm triệt cái vô tung vô ảnh.</p>
+<p>Mà lúc này, Choi Hyuk mới xoát xong đệ nhất sóng dã.</p>
+<p>Hắn một người xoát dã tốc độ, xa xa không bằng Trì Sóc cùng Diệp Thiếu Dương hai người khai gia tốc liên thủ xoát.</p>
+<p>Choi Hyuk nhíu nhíu mày, nói “Hạ bộ cẩn thận, sống lại sau chuẩn bị đánh tiểu long!”</p>
+<p>Lần đầu tiên tử vong lúc sau thực mau là có thể sống lại, ATB hạ bộ hai người tổ nhanh chóng đi vào long hố phụ cận, Thiên Hoàn 4 người cũng nhanh chóng tập kết. ATB trung dã cá nhân thực lực xác thật rất mạnh, Choi Hyuk [ Quyền Hoàng ] nhìn chuẩn thời cơ, cùng Park Won Suk [ Vận Mệnh Nữ Thần ] liên kết , hai người đồng thời đem kỹ năng ném hướng Trình Tinh!</p>
+<p>Chỉ cần Tiểu Tinh đã chết, Thiên Hoàn gặp mặt lâm đoàn chiến tấn công không đủ vấn đề.</p>
+<p>Nhưng mà, Trình Tinh huyết ngã xuống một đoạn, lại nháy mắt hồi phục nửa huyết, Park Won Suk đại chiêu tương đương với bạch đánh —— bởi vì Diệp Thiếu Dương ở thỏa đáng nhất thời kỳ mở ra E kỹ năng.</p>
+<p>Thời Gian Hồi Tưởng, huyết lượng trở lại 1 giây phía trước.</p>
+<p>Trình Tinh ăn một đợt đại chiêu, cố tình không bị giết chết, Tiểu Tinh cơ trí mà mở ra [ tinh lọc ] nhảy lên trốn chạy, cự ly xa bắn tỉa, điên cuồng tấn công, Diệp Thiếu Dương mở ra gia tốc biên đánh biên lui.</p>
+<p>Tiểu long bị lặp lại kéo thoát.</p>
+<p>Choi Hyuk phiền không thắng phiền, dứt khoát nói “Triệt, không cùng bọn họ háo.”</p>
+<p>Có [ Thời Không Lữ Hành Giả ] đội hình đặc biệt am hiểu qua lại lôi kéo, gia tốc một khai, tiến khả công, lui khả thủ, Diệp Thiếu Dương đối thời cơ nắm chắc năng lực lại phi thường xuất sắc.</p>
+<p>ATB tưởng khai đoàn? Diệp Thiếu Dương khai gia tốc mang theo đồng đội trốn chạy.</p>
+<p>ATB không đánh bọn họ, muốn đánh long? Diệp Thiếu Dương lại khai gia tốc lại đây quấy rầy.</p>
+<p>Loại cảm giác này dị thường khó chịu.</p>
+<p>ATB dứt khoát phóng rớt tiểu long, bắt đầu nhanh chóng phát dục.</p>
+<p>Park Won Suk [ Vận Mệnh Nữ Thần ] không thế nào ăn kinh tế, nhưng thực ăn cấp bậc, yêu cầu cấp bậc đạt tới 8 cấp lúc sau thương tổn mới có thể lớn nhất hóa; Choi Hyuk [ Quyền Hoàng ] cũng không có làm ra trung tâm trang bị.</p>
+<p>Chờ hai người bọn họ lại phát dục một đoạn thời gian, là có thể trung dã liên kết , một bộ giết chết Thiên Hoàn da giòn.</p>
+<p>Giết Trình Tinh hoặc là Diệp Thiếu Dương, đoàn chiến sẽ thực hảo thắng.</p>
+<p>Nhưng mà, Choi Hyuk bàn tính như ý không có khả năng đánh đến như vậy thuận.</p>
+<p>Diệp Thiếu Dương này cục lựa chọn [ Thời Không Lữ Hành Giả ], tự nhiên muốn đem “Mau tiết tấu” phát huy đến mức tận cùng. Thiên Hoàn này cục là biến chủng hoạt động đấu pháp, dựa trung đơn đến mang tiết tấu.</p>
+<p>Trung đơn gia tốc, hiệp trợ đánh dã nhanh chóng rửa sạch dã khu cũng chi viện tuyến thượng, thành lập ưu thế, đẩy tháp.</p>
+<p>Diệp Thiếu Dương lần này đem mục tiêu nhắm ngay trung lộ.</p>
+<p>Hắn cùng Trì Sóc rửa sạch xong hồng buff sau, làm bộ đi sát hạ bộ xạ thủ, cố ý tại hạ lộ lộ cái tầm nhìn, ATB xạ thủ cùng phụ trợ lần này học ngoan, lập tức lui lại.</p>
+<p>Lại không dự đoán được, này hai người lộ xong mặt sau, Diệp Thiếu Dương lập tức mở ra gia tốc, mang Trì Sóc vòng đi trung lộ.</p>
+<p>Lúc này, Park Won Suk mới vừa thanh xong một đợt binh tuyến, tính toán đi hạ bộ chi viện. Kết quả, hắn vừa ly khai trung lộ, một cái thật lớn □□ từ trên trời giáng xuống, thẳng tắp khấu ở hắn trên mặt!</p>
+<p>—— lữ giả kim đồng hồ, làm thời gian yên lặng, trong phạm vi quân địch tập thể định thân.</p>
+<p>Park Won Suk đột nhiên không kịp phòng ngừa bị định tại chỗ, Trì Sóc theo sát đi lên, một bộ liền chiêu đem hắn đánh cho tàn phế, sau đó, Diệp Thiếu Dương cự ly xa ném cái Q kỹ năng, theo Q kỹ năng bạo phá, [ Vận Mệnh Nữ Thần ] chết ở đi chi viện trên đường.</p>
+<p>Tử vong Vận Mệnh Nữ Thần, sẽ phát ra ai thán giọng nói “Đây là vận mệnh của ta sao?”</p>
+<p>Quốc nội, xem phát sóng trực tiếp khán giả nghe được anh hùng thê thảm giọng nói, tự động phiên dịch thành tiếng Trung sau, nhịn không được xoát mãn bình ha ha ha.</p>
+<p>【 Dương Dương [ Vận Mệnh Nữ Thần ] giết người giọng nói Đây là vận mệnh, không cần ý đồ phản kháng! 】</p>
+<p>【 hiện giờ, Dương Dương giết chết đối diện [ Vận Mệnh Nữ Thần ], giọng nói Đây là vận mệnh sao? 】</p>
+<p>【 cái này anh hùng thật là trào phúng công lực kéo mãn 】</p>
+<p>【 thế giới đệ nhất trung đơn? Liền này? 】</p>
+<p>Choi Hyuk nhíu mày nói “Tình huống như thế nào?”</p>
+<p>Park Won Suk sắc mặt có chút khó coi, hắn xác thật không nghĩ tới, Nhật Nguyệt tổ hợp rõ ràng xuất hiện ở hạ bộ, lại nhanh như vậy đi vào trung lộ. Diệp Thiếu Dương khai gia tốc lên đường, xác thật làm hắn chuẩn bị không kịp.</p>
+<p>Park Won Suk thấp giọng giải thích “Giả tầm nhìn, bọn họ này một đợt chân chính mục tiêu là ta.”</p>
+<p>Choi Hyuk thở sâu, bình tĩnh mà nói “Thời Không Lữ Hành Giả gia tốc lúc sau chạy trốn thực mau, các ngươi đối tuyến cẩn thận, tận lực bảo vệ cho tháp, kéo dài tới hậu kỳ đánh đoàn, bọn họ tấn công không đủ.”</p>
+<p>Nhưng mà, thủ tháp cũng không có dễ dàng như vậy.</p>
+<p>Diệp Thiếu Dương cùng Trì Sóc sát xong Park Won Suk, lại trộm đi vào thượng lộ.</p>
+<p>Lúc này, Han Seong Woo cùng lão Tần đang ở 1V1 một mình đấu, Han Seong Woo cá nhân thực lực lược cao hơn lão Tần, người trước tuyển anh hùng lại là có thể khai đại chiêu hút máu [ Hút Máu Công Tước ], bay liên tục năng lực cường, lão Tần cùng hắn một mình đấu, thay đổi một đợt kỹ năng sau, huyết lượng đã không đến một nửa.</p>
+<p>Han Seong Woo nhìn chằm chằm lão Tần huyết điều, đúng lúc này, đường sông con cua đổi mới, hai người cùng nhau tiến lên đoạt con cua. Lão Tần đương nhiên không đoạt lấy, Han Seong Woo nhìn chuẩn cơ hội, một bộ liền chiêu đi xuống ——</p>
+<p>Mắt thấy Tần Nhất Chúc liền thừa một tia huyết da, đúng lúc này, lưỡng đạo thân ảnh đột nhiên mở ra gia tốc từ trong bụi cỏ toát ra tới, Tần Nhất Chúc diễn kịch diễn xong rồi, quay đầu lại một đao, đem Han Seong Woo phách vựng tại chỗ.</p>
+<p>Trì Sóc cùng Diệp Thiếu Dương theo sát thượng tấn công, 3 người nháy mắt giết chết Han Seong Woo.</p>
+<p>Han Seong Woo nhịn không được mắng ra tiếng “Dựa! Như thế nào lại tới thượng lộ?”</p>
+<p>Vốn tưởng rằng hai người bọn họ giết chết trung đơn sẽ đi đánh lam buff, kết quả hai vị này phóng lam buff mặc kệ, lại khai gia tốc đi thượng lộ giết người. Han Seong Woo thực lực lại cường cũng không có khả năng 1 đánh 3, chẳng sợ hắn giao flash, Diệp Thiếu Dương khai gia tốc truy, hắn cũng trốn không thoát.</p>
+<p>Han Seong Woo lần đầu tiên cảm giác được bực bội.</p>
+<p>Đánh nhiều năm như vậy thi đấu, hắn cũng gặp được quá đủ loại đối thủ, nhưng là, hôm nay này cục, Thiên Hoàn tiết tấu quá nhanh, trung đơn cùng đánh dã mở ra gia tốc, xuất quỷ nhập thần, trong chốc lát đi hạ bộ trảo xạ thủ, trong chốc lát đột nhiên nhảy đến trung lộ, trong chốc lát lại tới thượng lộ?</p>
+<p>Diệp Thiếu Dương tiết tấu rất kỳ quái, như là “Tùy cơ bắt người”, phụ trợ nhìn đến tầm nhìn căn bản vô dụng, hắn động bất động liền cấp một đợt giả tầm nhìn làm ngươi đoán không được hắn sẽ đi nào.</p>
+<p>Này một đợt trảo xong thượng lộ sau, ba người liên thủ nhanh chóng đẩy tháp, đem ngoại tháp nhổ.</p>
+<p>Theo sát, lão Tần cùng Trì Sóc, Diệp Thiếu Dương cùng nhau xâm lấn đối diện hồng buff dã khu, Choi Hyuk lúc ấy đang ở đánh hồng buff, bị Diệp Thiếu Dương mở ra gia tốc một cái đại chiêu trầm mặc, hắn kỹ năng vô pháp thả ra, bị Trì Sóc nhân cơ hội dùng [ khiển trách ] đoạt rớt hồng buff.</p>
+<p>Đoạt xong sau, 3 người nghênh ngang mà đi.</p>
+<p>Choi Hyuk “………………”</p>
+<p>Quốc nội người xem nhìn đến nơi này, sôi nổi kích động lên ——</p>
+<p>【 Thiên Hoàn này cục mau tiết tấu hoạt động rất mạnh, ta xem ATB đều có chút rối loạn! 】</p>
+<p>【 này cục khẳng định là Dương Dương ở chỉ huy, hắn khống tuyến, bắt người tiết tấu mang đến thật tốt quá! 】</p>
+<p>【 tuy rằng hắn đi theo Trì đội thường xuyên du tẩu, nhưng trung lộ binh tuyến một cái cũng chưa lậu, đây mới là nhất ngưu bức 】</p>
+<p>Một cái tuyển thủ, chỉ có đối binh tuyến tính toán tuyệt đối chính xác, đối thời cơ nắm chắc tuyệt đối ưu tú khi, mới có thể làm được một bên thanh binh, một bên nhanh chóng chi viện, thả có thể trợ giúp đồng đội thành lập ưu thế.</p>
+<p>Cái gì kêu cái nhìn đại cục rất mạnh chi viện hình trung đơn?</p>
+<p>Diệp Thiếu Dương này cục thi đấu, quả thực giống như là một ván đánh cấp toàn thế giới trung đơn tuyển thủ “Chỉ đạo tái”!</p>
+<p>Thi đấu tiến hành đến 18 phút, hai bên kinh tế kém đã kéo ra tới rồi 2000.</p>
+<p>Choi Hyuk cùng Park Won Suk tuy rằng tìm mấy sóng cơ hội, nhưng đều bị Diệp Thiếu Dương “Gia tốc kéo ra khoảng cách” thành công hóa giải. Hai người thực mau phát hiện, chẳng sợ hai người bọn họ làm ra hảo trang bị, cũng vô pháp trung dã liên kết trảo chết Thiên Hoàn da giòn.</p>
+<p>Bởi vì Thiên Hoàn có cái “Gia tốc trung đơn”.</p>
+<p>Ở gia tốc Diệp Thiếu Dương trước mặt, ATB trung dã có vẻ phá lệ vụng về, căn bản đuổi không kịp!</p>
+<p>Thi đấu 20 phút, hai bên kinh tế kém 3000.</p>
+<p>Thiên Hoàn hoạt động đánh thật sự chi tiết, vẫn luôn ở quả cầu tuyết, đẩy tháp, xâm lấn dã khu.</p>
+<p>ATB tìm không thấy phiên bàn điểm, kinh tế chênh lệch liền càng kéo càng lớn.</p>
+<p>Thiên Hoàn bắt đầu đại long bức đoàn, ATB căng da đầu lại đây xem long.</p>
+<p>Hai bên lôi kéo một lát, Park Won Suk dẫn đầu tìm được cơ hội tưởng một bộ liền chiêu tưởng giây Trình Tinh, nhưng mà, Trình Tinh giây khai tinh lọc, nhảy vào trong bụi cỏ, Choi Hyuk vòng sau muốn đi giết hắn, Diệp Thiếu Dương kịp thời W gia tốc cứu Trình Tinh.</p>
+<p>Sau đó quay đầu lại một cái đại chiêu ——</p>
+<p>Lữ giả kim đồng hồ, thời gian yên lặng.</p>
+<p>AT B trạm vị dựa sau 3 người bị Diệp Thiếu Dương siêu phạm vi lớn đồng hồ cấp trầm mặc!</p>
+<p>Khúc Giang nhảy đi mặt bên bảo hộ Trình Tinh, Trì Sóc cùng lão Tần liên thủ sát tiến ATB hàng phía sau điên cuồng tấn công, Trì Sóc vựng một cái, lão Tần một đao tiếp một đao mà chặt bỏ đi, đảo mắt liền đem ATB hàng phía sau toàn bộ đánh cho tàn phế.</p>
+<p>Diệp Thiếu Dương đồng hồ ầm ầm nổ tung!</p>
+<p>——Double kill!</p>
+<p>——Triple kill!</p>
+<p>Triple kill!</p>
+<p>Công cụ người trung đơn? Tấn công không đủ?</p>
+<p>Diệp Thiếu Dương một thân tấn công trang bị, Q kỹ năng nổ tung tạo thành xích thương tổn trực tiếp thu 3 cá nhân đầu.</p>
+<p>Mà bên kia, Choi Hyuk cùng Park Won Suk đuổi theo Trình Tinh chạy, hai người cuối cùng liên thủ giết chết Trình Tinh cùng Khúc Giang, đáng tiếc, hai người bọn họ đã không có kỹ năng.</p>
+<p>Diệp Thiếu Dương khai gia tốc quay đầu lại truy người, lão Tần một đao phách một cái, Trì Sóc một đao chém một cái.</p>
+<p>ATB đoàn diệt!</p>
+<p>Diêu Mộc kích động nói “Này cục Thiên Hoàn đội hình tính cơ động quá cường! Thượng đơn [ Đao Kiếm Ý Chí ] đao hình thái cùng kiếm hình thái có thể cắt, có di chuyển vị trí; đánh dã [ Nhà Đấu Vật ] có di chuyển vị trí; xạ thủ [ Phong Chi Tinh Linh ] có di chuyển vị trí; trung đơn [ Thời Không Lữ Hành Giả ] lại có thể gia tốc! ATB tổng không thể đi đánh da dày thịt béo xe tăng [ Thánh Kỵ Sĩ ] đi?”</p>
+<p>Đông ca cười nói “Này một đợt đại long đoàn, ATB trung dã đi cường sát Tiểu Tinh, Khúc Giang chắn rớt quá nhiều thương tổn, cuối cùng, hai người bọn họ tuy rằng giết chết Tiểu Tinh, đáng tiếc đồng đội chết sạch.”</p>
+<p>Diêu Mộc nói “Thiên Hoàn bắt lấy đại long! Thiên Hoàn dựa bay nhanh du tẩu cùng chi tiết hoạt động, bắt lấy ván thứ hai thắng lợi!”</p>
+<p>Đều nói Hàn Quốc đội ngũ hoạt động kỹ thuật rất mạnh.</p>
+<p>Nhưng Diệp Thiếu Dương cố tình không chịu thua.</p>
+<p>Làm từ địa cầu thời đại xuyên qua lại đây người, hắn đã sớm theo dõi [ Thời Không Lữ Hành Giả ] cái này có thể gia tốc phụ trợ, nghiên cứu ra một bộ gia tốc trung đơn, chi viện mang tiết tấu chơi pháp.</p>
+<p>Thực may mắn các đồng đội có thể đuổi kịp hắn tiết tấu, đặc biệt là Trì Sóc, từ đầu đến cuối đều bồi hắn, hai người cùng nhau nhanh chóng du tẩu quả cầu tuyết, đem ATB tiết tấu hoàn toàn đánh băng.</p>
+<p>Hắn muốn dùng này một ván thi đấu nói cho toàn thế giới ——</p>
+<p>Chúng ta Hoa Quốc khu đội ngũ, hoạt động cũng không kém!</p>
+<p>Tác giả có lời muốn nói Ngày mai tiếp tục nha ~</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong204.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong206.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "toan-nang-trung-don-dien-canh";
+const NOVEL_TITLE = "Toàn năng trung đơn ( điện cạnh )";
+const CHAPTER_TITLE = "Chương 205, trung đơn dạy học";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

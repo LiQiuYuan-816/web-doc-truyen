@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 75</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Một giấc ngủ dậy ta kế thừa địa cầu [ tinh tế ]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 75</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong74.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong76.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Làm một người ăn mặc cần kiệm bình thường bà chủ, Lâm Lang từ trước cũng không mua tự nhiên đồ ăn, nhưng mà trong khoảng thời gian này nàng thay đổi.</p>
+<p>Hôm nay, Lâm Lang lại thu được một cái tự nhiên đồ ăn chuyển phát nhanh, chờ chuyển phát nhanh người máy đi rồi, chung quanh nguyên bản an tĩnh như gà bà chủ chậm rãi tụ ở bên nhau khe khẽ nói nhỏ, ngôn luận trung đều là Lâm Lang gia Phát Tài.</p>
+<p>Như vậy đồn đãi được hoan nghênh nhất, bất quá nửa ngày thời gian, chung quanh nơi này khu liền truyền khắp tin tức, cũng còn có không ngừng ngoại truyện xu hướng.</p>
+<p>Đương Lâm Lang một nhà cơm nước xong ra tới tản bộ khi, thậm chí có người tiến lên trêu chọc.</p>
+<p>“Lâm Lang a, nghe nói nhà ngươi hôm nay lại đầu tư vốn to mua tự nhiên đồ ăn?” Lắm mồm đại nương trong mắt hiện lên một mạt ghen ghét.</p>
+<p>Lâm Lang kéo kéo miệng, đem trong lòng không kiên nhẫn che giấu, ôn nhu cười nói “Cũng không có, này không chưa thử qua, cho nên muốn nếm thử một chút a.”</p>
+<p>Đại nương nghe vậy bĩu môi, biết Lâm Lang tuyệt đối chưa nói nói thật.</p>
+<p>“Ngươi lần trước không cũng mua sao?”</p>
+<p>Lâm Lang ngoài cười nhưng trong không cười “Lần trước rút thăm trúng thưởng trúng điểm, ta lão công cũng không ăn qua, liền lại tiêu tiền mua một chút.”</p>
+<p>Đại nương nghe vậy gật đầu lại lắc đầu, theo sau từ bên gõ sườn hỏi rất nhiều, cuối cùng Lâm Lang gia cũng không có đột nhiên Phát Tài sau, nàng nhiệt tình tiêu tán đi xuống, lời nói gian thậm chí còn mang theo một chút khinh thường.</p>
+<p>“Hại, các ngươi này đàn người trẻ tuổi cũng thật không biết sinh sống, kia tự nhiên đồ ăn đương nhiên hảo, nhưng các ngươi cũng đến ước lượng chính mình có thể ăn được hay không đến khởi a! Liền ngươi lão công kiếm kia gà toái, còn ăn tự nhiên vật thật đâu, có dinh dưỡng dịch uống liền không tồi.”</p>
+<p>Đại nương nói chuyện không khách khí, Lâm Lang cũng sinh khí, nàng sắc mặt đột biến rốt cuộc nhẫn không đi xuống nói “Quan ngươi đánh rắm a, ngươi là ai a còn có thể quản nhà ta xài như thế nào tiền không thành? Có bản lĩnh trước đem chính mình nhi tử quan tâm một chút đi, cả ngày trộm cắp sớm hay muộn tiến ngục giam mặt hàng.”</p>
+<p>Nói xong, mặc kệ Susan hắc một khuôn mặt, Lâm Lang lôi kéo nhi tử liền đi.</p>
+<p>Vốn đang thực khí Lâm Lang nhìn đến trong nhà quả xoài cùng trái dừa sau, nàng ngực cái loại này đổ đổ cảm giác rốt cuộc tiêu tán.</p>
+<p>Tính tính, cùng những người này so đo cái gì đâu, có cái này so đo thời gian nàng còn không bằng nhiều cùng Tạ lão bản học làm mỹ thực.</p>
+<p>Mấy cái hít sâu xuống dưới, Lâm Lang rốt cuộc đem thảo người ghét hàng xóm vứt ở sau đầu, ở nhi tử cố lên trong tiếng, nàng vô cùng cao hứng bắt đầu chế tác mỹ thực.</p>
+<p>Lâm Lang trù nghệ thiên phú không tồi, tuy rằng phía trước bởi vì bần cùng nàng chưa bao giờ tiếp xúc quá tự nhiên đồ ăn, nhưng liền cùng ông trời truy ở phía sau uy cơm ăn giống nhau, nàng lần đầu tiên xuống bếp liền làm ra không tồi liệu lý.</p>
+<p>Nhìn đến chính mình lần đầu tiên nấu cơm thành quả, Lâm Lang rối rắm hai ngày, cuối cùng ở nhà người duy trì hạ nàng cắn răng mắng “Vốn to” mua cái nhất tiện nghi phát sóng trực tiếp cầu ở Tinh Võng phát sóng trực tiếp app thượng đăng ký đương chủ bá.</p>
+<p>Đến bây giờ, bởi vì nàng trù nghệ thiên phú, nàng phòng live stream fans đã phá mười vạn, xem như cái nho nhỏ phấn hồng, tuy rằng phát sóng trực tiếp thời gian còn không dài, nhưng Lâm Lang quang đánh thưởng đều kiếm lời năm vạn nhiều tinh tệ.</p>
+<p>Nàng nửa tháng kiếm tiền so nàng lão công cực cực khổ khổ công tác một năm còn nhiều, đây cũng là nàng vì cái gì có thể vẫn luôn mua tự nhiên thực phẩm nguyên nhân, cũng là Lâm Lang giận dỗi đại nương tự tin.</p>
+<p>Mà hiện tại giống Lâm Lang người như vậy cũng không ít, mỹ thực phát sóng trực tiếp cũng nhấc lên tân phong trào.</p>
+<p>Người xem lựa chọn càng nhiều, các nàng đối nội dung tự nhiên càng bắt bẻ.</p>
+<p>Đã từng lấy làm mỹ thực vì mánh lới thực tế thủ pháp lạn không được lại còn có thể hút phấn thời đại đã qua đi.</p>
+<p>Một đám người xưa còn chưa đi ra từ trước cái kia trù nghệ vòng lẩn quẩn, nhưng cường hữu lực người cạnh tranh cũng đã xuất hiện.</p>
+<p>Mà cái này cục diện hình thành đều là bởi vì địa cầu cửa hàng!</p>
+<p>Bởi vì địa cầu cửa hàng đại lượng bán ra giá cả lợi ích thực tế tự nhiên đồ ăn, bởi vì Tạ Tinh Thần không tàng tư trù nghệ dạy dỗ, vì thế…… Rất nhiều đối mỹ thực có hứng thú người xuất hiện.</p>
+<p>Lâm Lang là trong đó một cái, nhưng tất nhiên không phải xuất sắc nhất một cái, khả năng dựa mỹ thực ăn thượng cơm, đối Lâm Lang mà nói, này đã là một kiện cực kỳ may mắn sự.</p>
+<p>Đồng dạng sự phát sinh ở bất đồng tinh cầu, nhưng bởi vì phương hướng là tốt, cho nên trên mạng một mảnh hỉ khí dương dương.</p>
+<p>Khoảng cách chúng võng hữu diss Tạ Tinh Thần không có tâm đã qua đi nửa tháng.</p>
+<p>Bị diss rất là đáng thương Tạ Tinh Thần cuối cùng vẫn là thuận theo này ban miệng chê nhưng thân thể lại thành thật võng hữu, một lần nữa đem cà chua cùng cà rốt liên tiếp treo trở về.</p>
+<p>Cũng may mắn hắn một lần nữa quải đi trở về, nếu không hắn cũng không biết sản năng quá thừa muốn làm sao.</p>
+<p>Trời biết mã đàn vì cái gì đối này hai loại thu hoạch hứng thú thiếu thiếu đâu?</p>
+<p>Dù sao thảo nguyên bên kia người máy đưa về tin tức, nói chúng nó uy mã khi này đàn mã đối với cà rốt cùng cà chua cơ bản một con ngựa chỉ cần một viên, tựa như cải thiện khẩu vị giống nhau, ăn xong chúng nó liền đi rồi, một chút cũng không có từ trước cái loại này lì lợm la liếm muốn đồ vật ăn bướng bỉnh kính.</p>
+<p>Nghĩ đến chúng nó đối đường yêu thích, Tạ Tinh Thần chỉ có thể lung tung suy đoán đây là bởi vì cà chua cùng cà rốt đều không đủ ngọt cho nên chúng nó mới không yêu!</p>
+<p>Nhưng kỳ thật nguyên nhân này cũng không phải thực có thể thuyết phục Tạ Tinh Thần.</p>
+<p>Bởi vì hắn loại cà chua cùng cà rốt chất lượng thật!! Đặc! Biệt! Hảo!</p>
+<p>Hảo tới trình độ nào đâu?</p>
+<p>Hảo đến cà chua mỗi người cái đại no đủ, toan là chua ngọt là ngọt, mà chua chua ngọt ngọt hỗn hợp ở bên nhau lại đặc biệt khai vị, nước cà chua thủy còn nhiều có thể ép nước.</p>
+<p>Đến nỗi cà rốt tắc tiểu xảo thanh thúy, hương vị điềm mỹ, dùng để ăn sống cũng hảo nấu canh cũng thế, có thể nói là các có các khẩu cảm.</p>
+<p>Phải biết đây chính là liền nuôi dưỡng xưởng cái kia bắt bẻ đến làm nhân sinh khí Bách Khê đều nguyện ý tiếp thu đồ ăn, tuy rằng hắn chỉ đem chúng nó làm ngẫu nhiên cấp tiểu dương nhãi con cùng tiểu ngưu nhãi con nhóm dùng làm tưởng thưởng dùng, nhưng này không càng thuyết minh cà chua cùng cà rốt hảo sao?</p>
+<p>Tạ Tinh Thần tưởng không rõ.</p>
+<p>Tạ Tinh Thần không nghĩ.</p>
+<p>Tính, mã đàn không ăn thì không ăn bái, vừa vặn hắn có thể lấy ra tới bán tiền.</p>
+<p>Hắn gần nhất tiêu dùng đại, đem tích cóp tiền lấy ra đi mua mỹ thực cơ cùng gieo trồng tương quan sản phẩm, trước mắt, gieo trồng nghiệp vụ khai triển thuận lợi, mỹ thực sản lượng cũng phiên vài phiên, võng hữu cũng sôi nổi tỏ vẻ đoạt khó khăn hạ thấp không ít.</p>
+<p>Nhưng tương đối, Tạ Tinh Thần trong khoảng thời gian này tích cóp tiền lại lần nữa quét sạch, tưởng tu tinh tế tuyến đường, hắn đến một lần nữa tích cóp tiền mới được.</p>
+<p>“Thật là tiền khó kiếm phân khó ăn a!” Nhìn trống rỗng chỉ còn sáu vị số tài khoản ngạch trống, Tạ Tinh Thần phát ra trí mạng cảm thán.</p>
+<p>Nói thực ra, không có đương quá tinh cầu chủ người khả năng vĩnh viễn đều không thể tưởng tượng vì cái gì giai đoạn trước tinh cầu chủ nhóm sẽ xây dựng càng nghèo.</p>
+<p>Hiện tại, Tạ Tinh Thần minh bạch.</p>
+<p>Bởi vì tinh cầu xây dựng độ càng cao, kế tiếp yêu cầu tiêu tiền xây dựng hạng mục liền càng nhiều, càng quý.</p>
+<p>Ngược lại vừa tới khai hoang khi mới là tiền tiêu ít nhất thời điểm, ngay lúc đó đầu to cũng bất quá là tu một cái tinh cảng thôi.</p>
+<p>Hiện tại?</p>
+<p>Mấy chục tỷ mấy chục tỷ chi ra làm người nghe đều cảm thấy sợ hãi!</p>
+<p>Tạ Tinh Thần lắc đầu, áp xuống trong lòng ẩn ẩn toát ra đầu vội vàng.</p>
+<p>Nóng vội ăn không hết nhiệt đậu hủ!</p>
+<p>Không nhanh như vậy có thể xây dựng tinh tế đường hàng không liền không nhanh như vậy đi, dù sao một ngày nào đó có thể kiến tốt.</p>
+<p>Đầu phóng không, Tạ Tinh Thần nằm ở tinh hạm cửa đối với kia phiến hoa oải hương hoa điền ghế bập bênh thượng.</p>
+<p>Tối hôm qua hạ một trận mưa, tới gần ánh mặt trời đại lượng mới dừng lại.</p>
+<p>Vì thế thần khởi vừa thấy, hoa điền hoa oải hương nhóm sôi nổi chuế Tiểu Ngọc châu, nhất phái tươi mát tự nhiên thái độ.</p>
+<p>Sau cơn mưa không khí phá lệ tươi mát, tươi mát trung thậm chí còn mang theo một tia mơ hồ có thể nghe bùn đất hương thơm.</p>
+<p>Tạ Tinh Thần mạc danh thích cái này vị, vì thế hắn tỉnh ngủ liền dọn trương ghế nằm nằm nơi này.</p>
+<p>“Tính, ta còn là xoát cái Tinh Bác đi.”</p>
+<p>Phục hồi tinh thần lại Tạ Tinh Thần chống cằm phiền muộn, cuối cùng quyết định dời đi chính mình lực chú ý đến Tinh Bác xem bát quái đi.</p>
+<p>Mỗi người đều thích ăn dưa, cho nên Tinh Bác mỗi ngày lưu lượng không thấp.</p>
+<p>Thậm chí có thể nói nó chưa bao giờ trải qua quá lưu lượng cơn sóng nhỏ.</p>
+<p>Tinh Bác là cái thứ nhất từ nhiều văn minh liên hợp mà ra ứng dụng mạng xã hội, là Tinh Minh thành lập năm đó, từ các tộc thiên tài cùng nhau nghiên cứu chế tạo ra tới tức thời xã giao app, lúc ấy có thể nói một khi mặt thế lập tức thịnh hành toàn tinh tế.</p>
+<p>Bởi vì dùng người nhiều, cho nên Tinh Bác thượng dưa thật đúng là không ít.</p>
+<p>Cho dù không xem tổng bản chỉ xem phân tần, kia cũng là ngươi phương xướng bãi ta lên sân khấu, thật thật là náo nhiệt cực kỳ.</p>
+<p>Tạ Tinh Thần không phải Tinh Minh thuần chủng nhân loại, cho nên hắn xem hot search cũng không có cố định ở nhân loại văn minh, mà là không ngừng ở mấy cái văn minh loạn hoảng, bắt được cái nào thú vị liền xem cái nào.</p>
+<p>Này không, hắn tùy tay nhoáng lên liền hoảng đến thực vật văn minh.</p>
+<p>Nhưng thực vật văn minh người thực vật nhóm thật sự là quá Phật hệ!</p>
+<p>Cái này trường mệnh chủng chủng tộc tựa hồ liền Tinh Bác đều lười đến phát giống nhau, hot search vạn năm như một ngày —— các bộ môn tương quan kiến nghị hoặc xướng nghị.</p>
+<p>Đến nỗi như vậy phía chính phủ đồ vật sẽ lên hot search?</p>
+<p>Ha hả, tự nhiên là dựa theo pháp luật pháp quy tương quan bộ môn nhân viên ở bản thân bộ môn phát xong tương quan tin tức sau có truyền bá trách nhiệm cùng nghĩa vụ.</p>
+<p>Bởi vì là công tác, hơn nữa phát xác suất không cao, cho nên bọn họ bạn bè thân thích còn tính nể tình, ở chính mình ca ca đệ đệ tỷ tỷ muội muội ba ba mụ mụ…… Chuyển phát Tinh Bác sau, bọn họ giống nhau đều sẽ đi theo chuyển phát hoặc đánh giá.</p>
+<p>Như thế, liền tạo thành thực vật văn minh phân tần hot search kỳ ba sự tích —— hot search tất cả đều là phía chính phủ văn kiện nội dung.</p>
+<p>Tạ Tinh Thần vẻ mặt phức tạp nhìn từ trước các minh tinh tạp tiền mua hot search hiện tại thành phía chính phủ thông cáo tin tức điều, cảm thán một câu hắn nhanh chóng cắt qua đi.</p>
+<p>Lúc này hắn tùy cơ đi vào nhân ngư văn minh Tinh Bác phân tần.</p>
+<p>Kết quả mở ra hot search, mặt trên cư nhiên tất cả đều là đi biển bắt hải sản video cùng với khai trân châu trai video?</p>
+<p>Tạ Tinh Thần “……”</p>
+<p>Liền, chính mình bỗng nhiên dẫn dắt phong trào?</p>
+<p>Tâm tình phức tạp click mở này đó hot search, Tạ Tinh Thần phát hiện này đó video nội dung cùng chất hóa nghiêm trọng, nhưng…… Không chịu nổi này nhóm người cá đẹp nha!</p>
+<p>Bính trừ hết cái này phong trào là chính mình mang theo tới nguyên nhân, kỳ thật vô luận là đi biển bắt hải sản video vẫn là khai trân châu trai Tạ Tinh Thần đều thực thích xem, bởi vậy hắn chính là chịu đựng cảm thấy thẹn, từ này đó Tinh Bác thượng liên tiếp chuyển nhảy đến chủ bá phát sóng trực tiếp giao diện.</p>
+<p>Vừa mới bắt đầu xem thời điểm còn hảo, nhưng nhìn không bao lâu sau này nhóm người cá văn minh chủ bá cùng với vô số võng hữu liền luôn là thích tới một cái “Tạ Tinh Thần”, bằng không lại là cái “Tạ lão bản”, nói như thế nào đâu, liền…… Phi thường ảnh hưởng Tạ Tinh Thần thể nghiệm.</p>
+<p>Lại ngao mười phút, Tạ Tinh Thần cuối cùng vẫn là chịu không nổi cảm thấy thẹn cảm, hắn lui lại.</p>
+<p>Lúc này Tạ Tinh Thần cũng không dám lại tùy cơ chuyển nhảy văn minh khác Tinh Bác phân tần, hắn cố ý tuyển cái chưa từng xem qua văn minh Tinh Bác bản khối —— Trùng tộc văn minh.</p>
+<p>Trùng tộc văn minh là Tinh Minh thần bí nhất văn minh không gì sánh nổi.</p>
+<p>Bọn họ rất ít cùng khác văn minh giao lưu, Tạ Tinh Thần cho tới bây giờ chỉ biết Trùng tộc văn minh người thực có thể đánh, hơn nữa bọn họ có chính mình độc hữu phong tục tập quán.</p>
+<p>Trùng tộc văn minh giống cái cùng giống đực cũng không phải dựa theo truyền thống thân thể cấu tạo phân chia, bọn họ giống đực cùng giống cái đều là nam tính bề ngoài, khác nhau ở chỗ giống đực dáng người tương đối tinh tế, tinh thần lực cấp bậc cao, mà giống cái dáng người tương đối cao lớn, thân thể tố chất cường.</p>
+<p>Trùng tộc văn minh công dân số lượng không nhiều lắm, hơn nữa đều thực tính bài ngoại, cao lãnh.</p>
+<p>Bọn họ xã hội trừ bỏ đối hùng tử sẽ khoan dung ngoại, bình thường văn minh người đi vào Trùng tộc văn minh người liền điểu đều sẽ không điểu, có thể nói là “Để cho người khó có thể chịu đựng đi công tác mà” không gì sánh nổi.</p>
+<p>Nhưng này cũng không phải tuyệt đối sự!</p>
+<p>Bởi vì vừa mới Tạ Tinh Thần theo như lời toàn bộ nội dung đều nhằm vào người trưởng thành, đối với ấu tể, Trùng tộc văn minh người lại là một khác phiên thái độ, văn minh khác ấu tể ở Trùng tộc văn minh đều có thể được đến đối xử tử tế, có thể nói Trùng tộc văn minh là Tinh Minh nhiều như vậy văn minh bên trong coi trọng nhất ấu tể văn minh.</p>
+<p>Nơi này là ấu tể thiên đường, đồng thời nơi này cũng là thương tổn ấu tể người địa ngục!</p>
+<p>Mặc kệ là cái nào văn minh người, nếu ở Trùng tộc văn minh địa bàn thượng ngươi thương tổn ấu tể?</p>
+<p>Ha hả, kia tuyệt đối quan ngươi không thương lượng! Ngay cả ngươi vốn dĩ văn minh muốn tới chuộc, bọn họ đều sẽ không điểu ngươi cái loại này.</p>
+<p>Chính là như vậy một cái dị dạng ấu tể quan ái xã hội, hôm nay Tinh Bác nhiệt một cư nhiên là “Lòng dạ hiểm độc miên” sự kiện.</p>
+<p>Tạ Tinh Thần ???</p>
+<p>Giảng đạo lý, Tạ Tinh Thần nhìn đến đệ nhất giây hắn đều dọa đến trái tim mau sậu đình!</p>
+<p>Đệ nhị giây phản ứng lại đây sau, hắn nhịn không được muốn nhìn xem đến tột cùng là vị nào cư nhiên dám như thế tìm đường ch·ế·t, dám ở Trùng tộc địa bàn làm lòng dạ hiểm độc miên!</p>
+<p>Lòng dạ hiểm độc miên, xem tên đoán nghĩa, lòng dạ hiểm độc bông, nhưng nơi này “Lòng dạ hiểm độc” cũng không phải chỉ bông màu đen tâm, cũng không phải chỉ dơ bẩn bông, mà là chỉ bông nội bộ có ám vật chất tàn lưu.</p>
+<p>【 có tiền độc thân trùng Đồng Tâm đúng không, ha hả, hành, các ngươi chờ! 】</p>
+<p>【 ta hùng tử quá đáng yêu Cư nhiên dám ở Trùng tộc địa bàn thượng bán lòng dạ hiểm độc miên? Các ngươi là không biết “ch·ế·t” tự viết như thế nào sao? Quân đội đã bắt đầu tập kết, dị hình văn minh các ngươi nếu không cho Trùng tộc một công đạo, kia chúng ta liền đánh đi. 】</p>
+<p>Nhìn đến quân đội tập kết, Tạ Tinh Thần bị dọa nhảy dựng.</p>
+<p>Hắn chỉ nghĩ xem náo nhiệt, hắn không nghĩ xem đánh giặc!</p>
+<p>Đi xuống phiên, chỉ phiên đến đôi câu vài lời, nhưng từ giữa cũng có thể đoán được nguyên nhân gây ra trải qua, Tạ Tinh Thần tâm đều lạnh.</p>
+<p>Này dị hình văn minh Đồng Tâm tập đoàn là thật sự không muốn sống sao?</p>
+<p>Ở đâu cái văn minh bán lòng dạ hiểm độc miên không hảo cư nhiên dám ở Trùng tộc văn minh bán lòng dạ hiểm độc miên?</p>
+<p>Này đạp mã không phải nhà xí đốt đèn tìm ch·ế·t sao?</p>
+<p>Nhân gia mua bông, vải bông đều là cho ấu tể dùng, hiện tại có tiểu ấu tể tư chất bị hao tổn, Trùng tộc văn minh không phẫn nộ mới là lạ!</p>
+<p>Lòng dạ hiểm độc miên sự kiện lên men quá nhanh.</p>
+<p>Trên cơ bản Tạ Tinh Thần mới vừa điểm nhập đi vào giải xong tiền căn hậu quả ra tới, việc này cũng đã thượng Tinh Bác tổng bản hot search!</p>
+<p>【 sóng sóng cầu Ngọa tào, là cái kia Đồng Tâm sao? Ta biết đến cái kia Đồng Tâm sao? 】</p>
+<p>【lll vui Ngưu bức a Đồng Tâm, các ngươi cư nhiên dám ở Trùng tộc văn minh bán lòng dạ hiểm độc miên? Ta kính nể các ngươi can đảm. 】</p>
+<p>【 chán ghét chim gõ kiến Thật sự, một khi người sống lâu rồi thật liền cái gì đều có thể thấy, trăm triệu không nghĩ tới sinh thời cư nhiên còn có thể nhìn đến văn minh như thế xuẩn tìm đường ch·ế·t phương thức! Đồng Tâm là thực sự có bệnh a, không có việc gì cư nhiên đi trêu chọc Trùng tộc? Hơn nữa trêu chọc vẫn là Trùng tộc ấu tể! 】</p>
+<p>Toàn tinh tế công dân tạc.</p>
+<p>Bọn họ trợn mắt há hốc mồm hiểu biết xong Đồng Tâm tìm đường ch·ế·t thao tác sau, mạc danh có loại kinh hoảng cảm.</p>
+<p>Thực mau, loại này dự cảm ứng nghiệm.</p>
+<p>【 đi công tác làm công người Dựa!! Trùng tộc thật sự ở tập kết quân đội, ta hiện tại liền ở Trùng tộc văn minh đi công tác, ta mẹ nó tận mắt nhìn thấy đến quân hạm từ không trung bay qua, mẹ nó, nơi này đã thần hồn nát thần tính. 】</p>
+<p>【 khi nào kiếm cái 100 vạn a Anh anh anh, Đồng Tâm người tìm đường ch·ế·t có thể hay không đừng kéo lên chúng ta a, ta chỉ là một cái an phận thủ thường đi công tác người mà thôi, ta không nghĩ đánh giặc a!!! 】</p>
+<p>【 ta yêu nhất du lịch lạp Thảo, nơi này tinh cảng đều phong, Trùng tộc văn minh trên đường phố đều bắt đầu giới nghiêm, trước mắt ta biết đến sở hữu dị hình văn minh công dân đều bị trông coi đi lên! 】</p>
+<p>Thân ở Trùng tộc văn minh làm công mọi người sôi nổi xuất hiện, bọn họ ở Tinh Võng phát sóng trực tiếp Trùng tộc văn minh động tác.</p>
+<p>Kia một lời không hợp liền phải đấu võ tiết tấu làm vừa mới còn cổ xuý “Đánh bái”, “Có loại liền đánh a”, “Không đánh là tôn tử” người xám xịt xóa bình luận.</p>
+<p>Trùng tộc văn minh bất đồng với văn minh khác, bọn họ tuy rằng đã tiến hóa, nhưng gien trung còn mang theo giết chóc thiên tính.</p>
+<p>Ai biết bọn họ giết đỏ cả mắt rồi sau có thể hay không nhấc lên một khác tràng tinh tế đại chiến?</p>
+<p>Khác không nói, quang xem bọn họ lúc này có thể một lời không hợp liền tập kết quân đội bộ dáng, này đạp mã cái nào văn minh có thể làm ra tới a?</p>
+<p>Bất quá là mấy cái ấu tể tư chất bị hao tổn thôi, ở khác văn minh này nhiều lắm là cái dân sự án kiện, nhưng tới rồi Trùng tộc văn minh? Ha hả, muốn phát triển trở thành tinh tế ch·i·ế·n tr·a·nh rồi!</p>
+<p>Cái này các tộc thủ lĩnh đều ngồi không yên, Tinh Minh cao tầng càng là suốt đêm xuất phát chạy tới Trùng tộc văn minh, dị hình văn minh người càng là run bần bật, hận cực kỳ cái này có hậu đài liền kiêu ngạo ương ngạnh Đồng Tâm tập đoàn.</p>
+<p>【 mẹ nó thiểu năng trí tuệ Thảo a, ta là dị hình văn minh người, ta biết cái này Đồng Tâm tập đoàn, mẹ nó đây là cái rác rưởi xí nghiệp. 】</p>
+<p>【 ta chỉ là cái bình thường công dân Không sai! Đồng Tâm ỷ vào sau lưng có người ở dị hình văn minh vênh váo tự đắc, rõ ràng thương phẩm có vấn đề còn ngạnh áp xuống dư luận, này liền tính, ngươi mẹ nó cư nhiên còn đi Trùng tộc văn minh làm sự? Ngươi là tưởng đại gia cùng ch·ế·t sao? 】</p>
+<p>【 khí tạc thiên Giao ra Đồng Tâm người! Đem tương quan nhân viên giao cho Trùng tộc văn minh, mặt khác dị hình là vô tội, chúng ta cũng là người bị hại!!! 】</p>
+<p>Dị hình văn minh người luống cuống, rất nhiều bình thường công dân bắt đầu không ngừng tin nóng.</p>
+<p>Thượng tầng phỏng chừng là sứt đầu mẻ trán, giờ phút này, căn bản không ai lo lắng cảnh cáo bổn văn minh công minh không cần bên ngoài bôi đen chính mình văn minh hình tượng, bọn họ đã ốc còn không mang nổi mình ốc.</p>
+<p>“Đều là ngươi, làm cái gì tiến quân văn minh khác, chúng ta là hôn đầu mới tin ngươi chuyện ma quỷ.”</p>
+<p>Một cái diện mạo kỳ lạ, có ba con mắt trung niên nam nhân phẫn nộ hướng về phía bên cạnh nửa người trên là người nửa người dưới là bạch tuộc dị hình phẫn nộ rít gào.</p>
+<p>Hiển nhiên, hắn cũng thu được Trùng tộc văn minh muốn tiến công tin tức.</p>
+<p>Trùng tộc văn minh phó lãnh đạo, cũng chính là cái kia nửa người trên là người nửa người dưới là bạch tuộc dị hình bị dọa đến mặt không có chút máu.</p>
+<p>Hắn đối tam bắt tay nhằm vào không bất luận cái gì phản ứng, ngược lại cầu cứu dường như nhìn về phía một tay.</p>
+<p>Dị hình văn minh một tay là hoàn toàn người hình thái, hắn sai mở mắt, biểu tình nghiêm túc nói “Chuyện này đến cấp Trùng tộc văn minh một công đạo.”</p>
+<p>Ngụ ý, mặc kệ là phó lãnh đạo vẫn là Đồng Tâm, đều đến vì lần này “Lòng dạ hiểm độc miên” sự kiện phụ trách.</p>
+<p>Nghe minh bạch một tay ngụ ý sau phó lãnh đạo sắc mặt nháy mắt trắng bệch.</p>
+<p>“Bất quá là mấy cái bình dân ấu tể mà thôi, tư chất bị hao tổn liền tư chất bị hao tổn, làm Đồng Tâm cấp đại ngạch bồi thường không phải hảo sao? Dựa vào cái gì khai chiến?” Phó lãnh đạo lại tức lại giận.</p>
+<p>Có loại này một lời không hợp liền đấu võ văn minh sao?</p>
+<p>Có, Trùng tộc văn minh!</p>
+<p>Dị hình văn minh tuy rằng sức chiến đấu không tồi, nhưng bọn hắn tuyệt đối đánh không thắng Trùng tộc văn minh, chỉ cần khai chiến, bọn họ chỉ có đánh thua một đường.</p>
+<p>Hơn nữa dị hình văn minh cho tới nay đều rất khó làm được đoàn kết, ngược lại Trùng tộc văn minh, bọn họ là toàn tinh tế nhất đoàn kết văn minh, đoàn kết đến tất cả mọi người minh bạch chọc một cái trùng = chọc toàn bộ Trùng tộc văn minh.</p>
+<p>“Không được, ta không thể ngồi chờ ch·ế·t.”</p>
+<p>Phó lãnh đạo vội vàng liền phải rời đi, nhưng còn không có rời đi, hắn đã bị một tay lưu lại.</p>
+<p>Trùng tộc văn minh lửa giận yêu cầu tưới diệt, Đồng Tâm tập đoàn cùng phó lãnh đạo chính là tốt nhất hết giận người được chọn.</p>
+<p>Tam bắt tay thương hại nhìn mắt cùng ch·ế·t cẩu giống nhau nằm trên mặt đất run bần bật phó lãnh đạo, không chút nào nương tay đem hắn nhốt lại.</p>
+<p>“Tộc trưởng, chúng ta hiện tại làm sao bây giờ?” Tam bắt tay đau đầu hỏi.</p>
+<p>Một tay ánh mắt thấu thị phương xa, hắn thâm hít sâu một hơi, đau đầu nói “Trước cùng Tinh Minh cao tầng liên hệ, nhất định không thể phát sinh ch·i·ế·n tr·a·nh.”</p>
+<p>Còn không có đấu võ, dị hình văn minh liền túng.</p>
+<p>Nhưng chuyện này phóng tới trên Tinh Võng cư nhiên không bị đàn trào.</p>
+<p>Đối này, chỉ có thể cảm khái Trùng tộc văn minh bên ngoài hung danh quá mức!</p>
+<p>Nhưng nói thật, Tạ Tinh Thần thấy thế còn thở phào một hơi.</p>
+<p>Dị hình văn minh nguyện ý cúi đầu nhận thua kia nhưng thật tốt quá!</p>
+<p>Nếu là bọn họ không nhận thua, kia hai cái văn minh phỏng chừng thật đến đánh lên tới.</p>
+<p>Đánh lên tới sau dị hình văn minh bị diệt hắn không đau lòng, nhưng hắn sợ Trùng tộc văn minh nhiệt huyết phía trên lại lần nữa khơi mào tinh tế ch·i·ế·n tr·a·nh!</p>
+<p>Như vậy lo lắng phàm là hiểu biết quá tinh tế sử người đều có!</p>
+<p>Rốt cuộc bởi vì như vậy sự thật ở là quá nhiều, nhiều đến không sai biệt lắm thành tất nhiên, nếu không cũng sẽ không sự tình một phát diếu, toàn bộ văn minh lãnh đạo đều chạy đến Trùng tộc văn minh khuyên can.</p>
+<p>Thật sự là không khuyên không được a, hiện tại không khuyên, chưa chừng ngày nào đó liền đánh tới chính mình cửa nhà!</p>
+<p>【 respect Trùng tộc văn minh người thật sự hảo cuồng dã a, trách không được nhân gia là năm đại văn minh trung thần bí nhất cũng là sức chiến đấu mạnh nhất văn minh đâu! 】</p>
+<p>【 đại lão 666 Phải biết lần này bị thương ấu tể tuy rằng đều là bình dân ấu tể, nhưng bên trong có hai cái tiểu hùng tử, Trùng tộc văn minh có thể thiện bãi cam hưu liền kỳ quái. 】</p>
+<p>【 ánh mặt trời mưa móc Ha không phải đâu? Cư nhiên có tiểu hùng tử? Ngưu bức, dị hình văn minh lúc này thật thảm, ai không biết tiểu hùng tử là toàn bộ Trùng tộc văn minh trong lòng bảo a! 】</p>
+<p>Thấy Tinh Minh cao tầng ra mặt, mọi người thể cảm không lớn có thể đánh lên tới, vì thế…… Mọi người ăn dưa thuộc tính lại lần nữa lên.</p>
+<p>Lúc này, Tạ Tinh Thần là thật thật khai mắt.</p>
+<p>Hắn từ này đó dưa trung vô ý thức hiểu biết rất nhiều Trùng tộc văn minh xã hội cấu thành cùng với vũ lực cấu thành.</p>
+<p>Kia lược dị dạng bị tin tức tố ảnh hưởng xã hội làm hắn nhịn không được may mắn chính mình không có sinh ở Trùng tộc văn minh.</p>
+<p>Nhưng nghe nói…… Loại này ở hắn xem ra dị dạng một chồng nhiều vợ thả chỉ có thể làm được tương đối công bằng chế độ xã hội đã là Trùng tộc văn minh phát triển từng ấy năm tới nay có khả năng cầu đến nhất hài hòa công bằng xã hội.</p>
+<p>Tạ Tinh Thần “……”</p>
+<p>Ngạch, này hẳn là hài hòa cùng công bằng bị hắc nhất thảm một lần bá!</p>
+<p>Càng hiểu biết càng cảm thấy Trùng tộc văn minh kỳ kỳ quái quái Tạ Tinh Thần nhịn không được đem tâm tư phóng tới phía chính phủ thông báo thượng.</p>
+<p>Xác định cho dù khai chiến địa cầu cũng không ở khai chiến khu vực trong phạm vi sau Tạ Tinh Thần hung hăng thở phào nhẹ nhõm.</p>
+<p>Nói câu đại lời nói thật, tuy rằng các võng hữu đều nói lúc này đại khái suất đánh không đứng dậy, nhưng Tạ Tinh Thần lại không dám như thế lạc quan.</p>
+<p>Ai biết ngày mai cùng ngoài ý muốn ai tới trước?</p>
+<p>Mù quáng lạc quan chỉ biết hạ thấp chạy trốn tỷ lệ!</p>
+<p>Sự tình còn không có đậy quan định luận, Tạ Tinh Thần mấy ngày nay cũng không dám đến quá xa địa phương công tác.</p>
+<p>Đãi ở tinh hạm phụ cận vẫn luôn chú ý lòng dạ hiểm độc miên sự kiện, chờ phát hiện dị hình văn minh giao ra văn minh phó lãnh đạo cùng với Đồng Tâm tập đoàn đổng sự, cao quản cùng với tương quan người phụ trách, cũng đem bọn họ toàn bộ đưa vào tinh tế toà án sau, Tạ Tinh Thần lúc này mới hoàn toàn thả lỏng lại.</p>
+<p>Lại qua một vòng, “Lòng dạ hiểm độc miên” tương quan nhân viên bị tinh tế toà án chuyển giao đến Trùng tộc toà án, mà lúc này, Trùng tộc quân đội cũng giải tán.</p>
+<p>Như thế rất tốt, Tạ Tinh Thần hoàn toàn biến thành xem náo nhiệt tâm thái.</p>
+<p>Tường đảo mọi người đẩy, đám kia ở dị hình văn minh làm trời làm đất người phỏng chừng như thế nào cũng không nghĩ tới đã từng chính mình khinh thường dị hình văn minh bình dân nhóm cư nhiên nắm giữ nhiều như vậy bọn họ phạm tội chứng cứ.</p>
+<p>Ở có nhân tâm thúc đẩy hạ, này nhóm người nên phán x·ử t·ử h·ì·nh bị phán x·ử t·ử h·ì·nh, còn thừa nên lưu đày lưu đày, nên đào quặng đào quặng, chỉ có một cái tiểu cao tầng, bởi vì hắn xác thật cái gì cũng chưa làm, cũng xác thật đối những việc này một chút cũng không biết tình, cuối cùng hắn bị thả ra, nhưng cho dù hắn bị thả ra, hắn cũng đối Trùng tộc văn minh sinh ra nồng đậm bóng ma tâm lý!</p>
+<p>“Không phải đâu, cái kia phó lãnh đạo cư nhiên mới bị phán đi quặng tinh đào quặng 300 năm? Dựa, ta cảm thấy hắn hẳn là tử hình mới đúng!”</p>
+<p>Tràn ngập thiếu niên khí Tạ Tinh Thần bất mãn lẩm bẩm, ngữ khí thật là hận đến không được.</p>
+<p>Nhưng chỉ chốc lát, xem bình luận hắn lại cao hứng đi lên.</p>
+<p>Ha ha ha, đào quặng 300 năm gia, đối dị hình văn minh phó lãnh đạo người như vậy tới nói phỏng chừng so ch·ế·t càng khó chịu đi!</p>
+<p>“Cũng đúng! Đào quặng giống như cũng khá tốt, hắn thật sự liền xứng đáng đào quặng 300 năm!” Tạ Tinh Thần nhìn đến bình luận vui vẻ.</p>
+<p>Mỹ tư tư xem xong này đàn dị hình cặn bã nhóm xử quyết kết quả, Tạ Tinh Thần lúc này mới vừa lòng gật gật đầu.</p>
+<p>Hắn nện bước nhẹ nhàng xoay người, cao giọng đối phía sau Trường Thọ nói “Trường Thọ a, chúng ta hiện tại liền đi bá! Là thời điểm đi xem người máy nhóm nói ở thảo nguyên thượng nơi nơi chạy màu sắc rực rỡ kẹo bông gòn.”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong74.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong76.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "mot-giac-ngu-day-ta-ke-thua-dia-cau-tinh-te";
+const NOVEL_TITLE = "Một giấc ngủ dậy ta kế thừa địa cầu [ tinh tế ]";
+const CHAPTER_TITLE = "Chương 75";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

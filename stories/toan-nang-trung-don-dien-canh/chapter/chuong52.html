@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 52, tập huấn</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Toàn năng trung đơn ( điện cạnh )
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 52, tập huấn</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong51.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong53.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Ngày kế sáng sớm, Diệp Thiếu Dương vẫn là ấn ngày thường làm việc và nghỉ ngơi rời giường, chính mình khai máy tính luyện anh hùng. 10 điểm chỉnh thời điểm đúng giờ mở ra nền tảng Kình Ngư phòng live stream.</p>
+<p>Hắn cấp tiểu miêu mua hàng online một trương sô pha lười, cùng trong nhà sô pha kiểu dáng rất giống, bởi vậy, cameras nhắm ngay trên sô pha tiểu miêu, các võng hữu cũng không có phát hiện hắn đã dọn gia.</p>
+<p>Phòng live stream có không ít người cùng hắn chào hỏi.</p>
+<p>【 Tiểu Bạch sớm, ngày hôm qua như thế nào không có tới? 】</p>
+<p>【 ngày hôm qua cả ngày không phát sóng trực tiếp, tưởng niệm miêu miêu một ngày 】</p>
+<p>【 chủ bá tình huống như thế nào? Đột nhiên biến mất là bị Miêu Tinh người bắt cóc sao ~】</p>
+<p>Diệp Thiếu Dương giải thích nói “Gần nhất tương đối vội, phát sóng trực tiếp thời gian sẽ giảm bớt, về sau mỗi ngày buổi sáng 10 điểm đến 12 điểm phát sóng trực tiếp đánh bài vị, mặt khác thời gian ta có an bài khác, xin lỗi đại gia.”</p>
+<p>Đại bộ phận điện cạnh chiến đội huấn luyện thời gian là buổi chiều cùng buổi tối, về sau hắn chỉ có thể buổi sáng phát sóng trực tiếp 2 giờ, này đó thủy hữu là từ hắn tay mơ thời kỳ liền vẫn luôn xem hắn phát sóng trực tiếp, hắn cũng nên cùng đại gia nói một tiếng. Diệp Thiếu Dương thuận tay đem phòng live stream thông cáo đổi thành “Buổi sáng 10~12 điểm phát sóng trực tiếp”, không lại đánh “Hướng version nội địa” chữ.</p>
+<p>【 Tiểu Bạch ngươi phiêu, 8 cái version nội địa ngươi liền thỏa mãn sao? 】</p>
+<p>【 ngươi không lấy tân anh hùng hướng version nội địa? 】</p>
+<p>【 còn tưởng rằng chủ bá muốn gom đủ sở hữu trung đơn version nội địa tiêu đâu! 】</p>
+<p>Hắn lúc trước hướng version nội địa, là vì khiến cho các đại chiến đội chú ý.</p>
+<p>Hiện giờ, mục đích đã đạt thành, version nội địa tiêu với hắn mà nói cũng không quan trọng, hắn khẳng định muốn phối hợp chiến đội huấn luyện.</p>
+<p>“Không lấy version nội địa, tùy tiện đánh đánh.” Diệp Thiếu Dương đánh hai giờ bài vị, liền lấy cớ có việc offline.</p>
+<p>Giữa trưa 12 giờ rưỡi, hắn đi vào lầu một thực đường.</p>
+<p>Chiến đội Thiên Hoàn các đội viên mới vừa tỉnh ngủ, Trình Tinh cùng Tạ Tiểu Thiên một người treo một đôi quầng thâm mắt, hiển nhiên là tối hôm qua bị đấm bạo lúc sau không có ngủ hảo. Diệp Thiếu Dương trong lòng buồn cười, chủ động tiếp đón bọn họ “Tới ngồi.”</p>
+<p>Trình Tinh bưng mâm ngồi ở hắn bên cạnh, cúi đầu như gà con mổ thóc.</p>
+<p>Tạ Tiểu Thiên cũng đã đi tới, sắc mặt phức tạp mà nhìn Diệp Thiếu Dương, muốn nói lại thôi.</p>
+<p>Diệp Thiếu Dương nghi hoặc nói “Làm sao vậy? Có chuyện liền nói.”</p>
+<p>Tạ Tiểu Thiên nhỏ giọng hỏi “Ngài, ngài chính là Tiểu Bạch chủ bá?”</p>
+<p>Này đều dùng tới tôn xưng “Ngài”, xem ra, Trình Tinh tối hôm qua trở về lúc sau, cấp Tạ Tiểu Thiên phổ cập khoa học Tiểu Bạch chủ bá lai lịch. Diệp Thiếu Dương cười như không cười mà nhìn trước mặt thiếu niên “Như thế nào, ngươi [ Vực Sâu Chúa Tể ] thao tác kỹ xảo, là cùng Tiểu Bạch chủ bá dạy học video học sao?”</p>
+<p>Tạ Tiểu Thiên cái này liền lỗ tai đều đỏ “Khụ, ân.”</p>
+<p>Hắn thật là ngốc bức về đến nhà! Không biết trước mặt này tôn đại thần chính là Vực Sâu Chúa Tể version nội địa đệ nhất chủ bá Tiểu Bạch, ngày hôm qua cư nhiên lấy Vực Sâu Chúa Tể cùng người một mình đấu, kết quả bị đấm bạo, cũng không phải là xứng đáng sao?</p>
+<p>Diệp Thiếu Dương an ủi nói “Kỳ thật ngươi thao tác cơ sở thực vững chắc, phản ứng cũng mau, chính là đầu óc không đủ linh hoạt. Vực Sâu Chúa Tể tam giác đổi vị pháp không phải ngươi như vậy chơi, ngươi mỗi lần đều nghịch kim đồng hồ đổi vị, ta thực dễ dàng đoán trúng ngươi bước tiếp theo sẽ đi nào. Tam giác đổi vị pháp muốn tùy cơ đổi vị, đừng làm cho đối thủ bắt giữ đến ngươi quy luật.”</p>
+<p>Tạ Tiểu Thiên ngơ ngác mà nhìn hắn, đây là ở giáp mặt chỉ đạo sao?</p>
+<p>Thấy Tạ Tiểu Thiên nghe được nghiêm túc, Diệp Thiếu Dương tiếp theo nói “Pháp sư dồn sát thương chú trọng chính là xuất kỳ bất ý, đánh úp, ngươi ngồi xổm thảo bị ta thấy, vậy ngươi liền không khả năng đánh lén thành công. Nhất định phải chú ý tạp trụ đối diện tầm nhìn. Thông thường, không binh tuyến dưới tình huống, có thể nhìn đến đối phương khoảng cách là mấy cái thân vị?”</p>
+<p>Tạ Tiểu Thiên theo bản năng mà trả lời “5 cái tả hữu.”</p>
+<p>Diệp Thiếu Dương nói “Ngươi ngày hôm qua quá nóng vội, ngồi xổm thảo thời điểm khoảng cách ta 4.5 cái thân vị, một mảnh góc áo ở ta trong tầm nhìn lướt qua, động thái thị lực đủ cường tuyển thủ, liền sẽ nháy mắt phát hiện ngươi vị trí. Những chi tiết này, thi đấu thời điểm sẽ trí mạng. Pháp sư dồn sát thương, kỳ thật so khống chế loại pháp sư càng cần nữa bình tĩnh, hiểu sao?”</p>
+<p>Tạ Tiểu Thiên “…… Ta, ta về sau sẽ chú ý.”</p>
+<p>Trì Sóc bưng mâm lại đây thời điểm, liền nghe thấy Diệp Thiếu Dương ở giáo dục tân nhân.</p>
+<p>Rất kỳ quái, rõ ràng Diệp Thiếu Dương mới là này chi chiến đội tân nhân, nhưng mà, hắn cùng nhị đội thiếu niên giảng thuật này đó tri thức thời điểm —— hắn ngược lại như là chiến đội Thiên Hoàn đội trưởng, ở mang theo bọn đệ đệ trưởng thành, hơn nữa không hề không khoẻ cảm.</p>
+<p>Trì Sóc đáy lòng lại lần nữa dâng lên một tia nghi hoặc. Tổng cảm thấy Diệp Thiếu Dương không giống cái tân nhân, ngược lại giống trải qua qua sóng to gió lớn người. Ngày hôm qua hắn cùng Tạ Tiểu Thiên, Trình Tinh một mình đấu ghi hình, Trì Sóc trở về lúc sau cũng phục bàn xem qua. Cũng không phải Diệp Thiếu Dương thực lực thật sự cường đại đến có thể 3 0 nghiền áp này hai người, rốt cuộc hai vị này cũng là Thiên Hoàn Thanh Huấn Doanh phi thường ưu tú tuyển thủ chuyên nghiệp. Chỉ là, Diệp Thiếu Dương càng sẽ bình tĩnh mà nắm lấy cơ hội mà thôi.</p>
+<p>Cao thủ quyết đấu, thắng thua liền ở kia một cái chớp mắt. Tâm thái thượng thua, kia tự nhiên là vô pháp thắng, cho nên, cuối cùng Diệp Thiếu Dương cũng chỉ ra hai cái tân nhân vấn đề —— thiên phú cũng không tệ lắm, chính là tâm thái dễ dàng băng, còn muốn nhiều thụ thụ ngược.</p>
+<p>Trì Sóc tâm tình phức tạp. Không nghĩ tới, Diệp Thiếu Dương sẽ chủ động trợ giúp chiến đội Thiên Hoàn tân nhân.</p>
+<p>Phát hiện Trì Sóc đã đi tới, Diệp Thiếu Dương lập tức dừng lại đối thoại.</p>
+<p>Khụ, hắn bệnh nghề nghiệp lại tái phát, kiếp trước đương quán đội trưởng, thấy này đó tiểu bằng hữu vấn đề, liền nhịn không được tưởng chỉ ra tới, hắn này cách làm có điểm bao biện làm thay, ở Thiên Hoàn, Trì Sóc mới là đội trưởng.</p>
+<p>Vốn tưởng rằng Trì Sóc sẽ không cao hứng, kết quả, Trì Sóc ở bên cạnh bàn ngồi xuống sau, nhàn nhạt nói “Tiểu Thiên, về sau đi theo Thiếu Dương nhiều học học. Huấn luyện viên không cho ngươi đánh chủ lực, không phải nói ngươi trình độ không đủ, mà là ngươi tâm lý thừa nhận năng lực còn chưa đủ, đánh Chức Nghiệp League dễ dàng mang băng đồng đội.”</p>
+<p>Tạ Tiểu Thiên gật đầu như đảo tỏi “Đã biết Trì đội, ta sẽ đi theo Dương ca học.”</p>
+<p>Trì Sóc nhìn về phía Trình Tinh “Còn có ngươi.”</p>
+<p>Trình Tinh “Là, sư phụ! Ta cũng sẽ đi theo Dương ca học!”</p>
+<p>Trước kia chiến đội Thiên Hoàn Boss chỉ có Trì Sóc một cái, về sau lại nhiều cái đại Boss Diệp Thiếu Dương?</p>
+<p>Dù sao hai cái đều không thể trêu vào, nghe lời là được rồi.</p>
+<p>Tạ Tiểu Thiên cùng Trình Tinh nhanh chóng giải quyết rớt cơm trưa, bưng mâm chạy, Diệp Thiếu Dương lúc này mới nhìn về phía Trì Sóc, ho nhẹ một tiếng “Trì đội, ta vừa rồi có phải hay không vượt qua? Không nên nói bọn họ.”</p>
+<p>Trì Sóc ánh mắt ôn hòa “Không quan hệ. Này đó tân nhân xác thật có rất nhiều vấn đề, ngươi cứ việc nói. Ngươi là Thiên Hoàn chủ lực trung đơn, cũng nên ở chiến đội dựng đứng một ít uy tín.”</p>
+<p>Diệp Thiếu Dương nở nụ cười “Trì đội không ngại liền hảo. Khác tuyển thủ ta không dám nói thêm cái gì, nhưng trung đơn, ta còn là có chút ý tưởng, có thể cùng Tiểu Thiên chia sẻ. Đứa nhỏ này thiên phú xác thật không tồi, tương lai chúng ta không ở Thiên Hoàn, hắn cũng muốn khiêng lên Thiên Hoàn gánh nặng đi.”</p>
+<p>Trì Sóc “……”</p>
+<p>Bồi dưỡng đời sau tuyển thủ, đây là rất nhiều có trách nhiệm tâm đội trưởng mới có thể làm sự tình.</p>
+<p>Diệp Thiếu Dương chịu đem chính mình tâm đắc chia sẻ cấp Tạ Tiểu Thiên, thuyết minh hắn đối chiến đội Thiên Hoàn đã có lòng trung thành. Cho nên, hắn mới nguyện ý vì Thiên Hoàn bồi dưỡng đời sau trung đơn.</p>
+<p>Này xem như mua một tặng một sao?</p>
+<p>Mua cái tân trung đơn, tân trung đơn còn phải vì Thiên Hoàn dạy ra tới đời sau trung đơn người thừa kế?</p>
+<p>Trì Sóc nhìn Diệp Thiếu Dương, đáy lòng không khỏi hiện lên một tia ấm áp.</p>
+<p>Mấy năm nay hắn làm chính xác nhất quyết định, chính là động tác nhanh chóng đem Diệp Thiếu Dương kéo vào chiến đội Thiên Hoàn.</p>
+<p>Thiếu Dương thật là hắn phát hiện tốt nhất bảo tàng.</p>
+<p>Cơm trưa sau, mọi người tới đến huấn luyện khu, bắt đầu hằng ngày huấn luyện.</p>
+<p>Huấn luyện viên Lâm đem chủ lực đội 5 cá nhân mang tới tiểu phòng huấn luyện, tiểu phòng huấn luyện càng thêm an tĩnh, càng lợi cho chuyên chú tập huấn. Năm người dựa theo thi đấu khi chỗ ngồi, mở ra máy tính ngồi xong.</p>
+<p>Huấn luyện viên Lâm cấp Diệp Thiếu Dương cầm trương đóng dấu tốt bảng biểu, đặt lên bàn, nói “Thiếu Dương, chúng ta huấn luyện viên tổ cho ngươi chuyên môn định chế huấn luyện kế hoạch. Hiện tại là 10 giữa tháng tuần, hạ mùa giải sẽ ở sang năm 1 tháng chính thức bắt đầu, còn có hai tháng rưỡi thời gian, ta tin tưởng ngươi có thể thực mau cùng thượng chiến đội tiết tấu.”</p>
+<p>Diệp Thiếu Dương mở ra vừa thấy ——</p>
+<p>Hiện tại là 10 nguyệt 15, sang năm 1 nguyệt 15 hào chính thức mở ra S10 mùa giải, đi trừ 1 tháng tân niên kỳ nghỉ, để lại cho Diệp Thiếu Dương thời gian chỉ có hai tháng rưỡi, huấn luyện viên tổ cho hắn phân thành ba cái huấn luyện giai đoạn.</p>
+<p>Tháng thứ nhất, hắn yêu cầu mở rộng anh hùng trì.</p>
+<p>Anh hùng trì xác thật là Diệp Thiếu Dương lớn nhất nhược hạng, hắn hiện tại chỉ biết 8 cái trung đơn anh hùng, còn xa xa không đủ, cần thiết mau chóng luyện sẽ khác, hiểu được sở hữu trung lộ anh hùng đội hình phối hợp kịch bản.</p>
+<p>Này một tháng thời gian, huấn luyện viên tổ tuyển Trì Sóc cấp Diệp Thiếu Dương đương bồi luyện, mang theo Diệp Thiếu Dương cùng nhau quen thuộc.</p>
+<p>Mỗi ngày buổi chiều 2~6 điểm suốt 4 tiếng đồng hồ, Diệp Thiếu Dương yêu cầu độc lập luyện tập, ở huấn luyện doanh ác mộng hình thức chuyên môn luyện những cái đó sẽ không chơi anh hùng.</p>
+<p>6~7 điểm là cơm chiều thời gian, sau khi ăn xong một giờ nghỉ ngơi.</p>
+<p>Buổi tối 8 giờ bắt đầu, hắn cùng Trì Sóc cùng nhau song bài đánh bài vị, luyện tập tân anh hùng phối hợp. Trung đơn trước cùng đánh dã phối hợp hảo, sau đó lại dung nhập toàn bộ đội ngũ.</p>
+<p>“Này một tháng, ngươi liền trước an tâm luyện anh hùng. Thanh binh, bổ đao những chi tiết này kỹ xảo, cũng ở huấn luyện doanh luyện anh hùng thời điểm hoàn thành.” Huấn luyện viên Lâm mở ra một cái trong máy tính phần mềm “Đây là độc lập huấn luyện doanh, chúng ta chiến đội tự chủ nghiên cứu phát minh phần mềm, số liệu cùng phía chính phủ đồng bộ. Nó sẽ tự động thống kê ngươi mỗi phút bổ binh số, kinh tế thu hoạch tốc độ, mỗi ngày huấn luyện khi trường, ngươi có thể chính mình xem xét, chúng ta huấn luyện viên tổ cũng có thể tùy thời nhìn đến.”</p>
+<p>Nói như vậy tuyển thủ tưởng lười biếng cũng không được, huấn luyện viên tổ hậu trường có thể thống kê mỗi người huấn luyện thời gian.</p>
+<p>Chuyên nghiệp huấn luyện phần mềm, so trò chơi tự mang huấn luyện doanh muốn dùng tốt rất nhiều, đặc biệt là mỗi phút kinh tế thu hoạch tốc độ, đây là đánh giá một cái tuyển thủ chuyên nghiệp quan trọng chỉ tiêu. Trên sân thi đấu, nếu ngươi kinh tế thu hoạch tốc độ thấp hơn đối diện trung đơn, kia đánh nhau thời điểm rất có thể sẽ bị đối phương trang bị nghiền áp.</p>
+<p>Như thế nào ở nhanh nhất thời gian nội tích lũy kinh tế, cũng là một môn kỹ xảo.</p>
+<p>Huấn luyện viên Lâm nói “Buổi tối cùng Trì Sóc song bài, ta nơi này liệt trương biểu, bên trong là trung đơn cùng đánh dã tổ hợp phối hợp, tỷ như, Huyết Y Thích Khách Vực Sâu Chúa Tể, Quyền Hoàng Vận Mệnh Nữ Thần, Tiềm Hành Đạo Tặc Ảo Thuật Sư, Bẫy Rập Thợ Săn Liệt Diễm Nữ Thần từ từ…… Đều là lấy sau trên sân thi đấu sẽ dùng đến phối hợp, hai ngươi cũng trước tiên làm quen một chút.”</p>
+<p>Diệp Thiếu Dương lý giải gật đầu “Ân, ta minh bạch, ta sẽ dựa theo huấn luyện an bài nghiêm khắc chấp hành.”</p>
+<p>Trung dã phối hợp có rất nhiều loại phương án, tỷ như song thích khách bùng nổ lưu trung dã liên kết , hoặc là một cái mang khống, một cái bùng nổ đánh du tẩu, lại hoặc là công cụ người trung đơn xứng dã hạch, công cụ người đánh dã xứng trung hạch từ từ.</p>
+<p>Thiên Hoàn chiến thuật không thể quá đơn điệu, muốn tổng hợp, toàn diện, Diệp Thiếu Dương cùng Trì Sóc liền cần thiết học được sở hữu trung dã tổ hợp hình thức, tương lai toàn bộ đội ngũ đội hình điều chỉnh, cũng liền sẽ có nhiều hơn lựa chọn.</p>
+<p>Thiên Hoàn huấn luyện viên tổ phi thường chuyên nghiệp.</p>
+<p>Đệ nhất giai đoạn một tháng, làm Diệp Thiếu Dương mở rộng anh hùng trì, cùng Trì Sóc luyện tập phối hợp; đồng thời, chuyển phụ trợ vị Khúc Giang, cũng yêu cầu cùng tân xạ thủ Trình Tinh tiến hành ma hợp. Mỗi ngày buổi tối, Trì Sóc cùng Diệp Thiếu Dương song bài, Khúc Giang cùng Trình Tinh song bài, Tần Nhất Chúc đi chính mình chơi, thượng đơn đại bộ phận thời gian cũng là chính mình chơi.</p>
+<p>Đệ nhị giai đoạn, trung dã, bắn phụ hai người tổ ma hợp xong sau, hợp đội bắt đầu tập huấn. Này một tháng thời gian, sẽ càng thêm coi trọng toàn đội đội hình phối hợp cùng chỉ huy ăn ý độ, ước một ít huấn luyện tái tới tìm kiếm đội ngũ vấn đề.</p>
+<p>Đệ tam giai đoạn trước khi thi đấu nhằm vào huấn luyện, sẽ căn cứ lịch thi đấu an bài tiến hành quy hoạch bố cục.</p>
+<p>Nói cách khác, Diệp Thiếu Dương muốn ở nhập đội hai tháng rưỡi sau trực tiếp thượng sân thi đấu, thời gian kỳ thật tương đương gấp gáp. Rất nhiều đội ngũ ma hợp ít nhất cũng muốn nửa năm mới có thể sinh ra ăn ý, hắn quang cùng Trì Sóc có ăn ý cũng không được, một khi hắn cùng Tần Nhất Chúc, Trình Tinh này đó đồng đội phối hợp tách rời, đoàn chiến vẫn là có khả năng băng.</p>
+<p>Nếu thời gian cấp bách, kia hắn liền dùng hết toàn lực, tận lực tăng lên chính mình, đi thích ứng chi đội ngũ này.</p>
+<p>Diệp Thiếu Dương mở ra huấn luyện phần mềm, bắt đầu nghiêm túc luyện tập.</p>
+<p>Trì Sóc ngẫu nhiên quay đầu lại xem hắn, tổng có thể thấy hắn nghiêm túc thần sắc. Một khi mở ra trò chơi, Diệp Thiếu Dương liền sẽ hết sức chăm chú, ánh mắt nhìn chằm chằm màn hình máy tính, thon dài trắng nõn ngón tay ở bàn phím, con chuột thượng nhanh chóng đánh.</p>
+<p>Có thiên phú, còn chịu tĩnh hạ tâm tới nỗ lực, Trì Sóc tin tưởng, Diệp Thiếu Dương thực mau là có thể đuổi kịp chiến đội Thiên Hoàn bước chân, dung nhập chi đội ngũ này.</p>
+<p>Dựa theo huấn luyện biểu thượng an bài, Diệp Thiếu Dương yêu cầu trước luyện sẽ 6 đại pháp sư ——</p>
+<p>Diệt Thế Pháp Sư  Rod; Thánh Linh Pháp Sư  Alston Nhật Luân Pháp Sư  Holman Nguyệt Quang Pháp Sư  Lin Phi Thiên Pháp Sư  Moore Đại Địa Pháp Sư  Bruno.</p>
+<p>Này 6 cái nam tính pháp sư đều không đơn giản, trong đó, Diệt Thế Pháp Sư là yêu cầu tỉ lệ ghi bàn pháo đài nháy mắt hạ gục anh hùng; Thánh Linh Pháp Sư là công cụ người trung đơn; thiên luân, ánh trăng là phổ công pháp thuật tấn công, yêu cầu cực hạn thao tác; Phi Thiên Pháp Sư là duy nhất nhưng phi hành trung đơn pháp sư dồn sát thương; Đại Địa Pháp Sư là thao tác rất khó địa hình khống tràng anh hùng.</p>
+<p>Muốn ở ngắn hạn nội luyện sẽ nhiều như vậy anh hùng, đối Diệp Thiếu Dương tới nói cũng là rất lớn khiêu chiến.</p>
+<p>Nhưng hắn thích nhất chính là khiêu chiến.</p>
+<p>Một buổi trưa thời gian, 6 cái pháp sư cơ sở liền chiêu, thao tác thủ pháp, hắn đã đại khái quen thuộc.</p>
+<p>Muốn tiến thêm một bước tăng lên, liền yêu cầu thực chiến luyện tập.</p>
+<p>Buổi tối 8 điểm, huấn luyện viên an bài “Hai người tổ ma hợp thời gian” bắt đầu.</p>
+<p>Khúc Giang cùng Trình Tinh mở ra tiểu hào, bắn phụ song bài đi đánh bài vị, Diệp Thiếu Dương vừa định đổ bộ Trì Sóc cho hắn tiểu hào, lại nghe Trì Sóc nhàn nhạt nói “Chúng ta đi version quốc tế.”</p>
+<p>Diệp Thiếu Dương giật mình, quay đầu lại xem hắn “Version quốc tế?”</p>
+<p>Trì Sóc nói “Quốc nội thi đấu xếp hạng kịch bản liền nhiều như vậy, thấp tinh cục đối chúng ta trình độ tăng lên không có quá lớn trợ giúp. Version quốc tế vương giả cục sẽ tương đối khó đánh, có rất nhiều đến từ bất đồng tái khu tuyển thủ chuyên nghiệp, đấu pháp kịch bản hỗn loạn, nhưng cũng có càng nhiều mới mẻ độc đáo phối hợp.”</p>
+<p>Hắn dừng một chút, nghiêm túc nói “Lúc trước, Chu Gia Văn chính là ở version quốc tế đánh ra danh khí, hắn cũng cấp Hỏa Văn chiến đội mang đến rất nhiều tân chiến thuật ý nghĩ.”</p>
+<p>Diệp Thiếu Dương vui vẻ đồng ý “Không thành vấn đề, vậy đi version quốc tế.”</p>
+<p>Thần Chiến version quốc tế, là toàn cầu thông dụng server, này cũng liền ý nghĩa, bọn họ rất có thể ở version quốc tế đụng vào đến từ mặt khác tái khu chức nghiệp cao thủ, cũng có thể đụng tới càng nhiều mới mẻ đội hình phối hợp.</p>
+<p>Trì Sóc nói “Ta trong tay không có version quốc tế tiểu hào, chúng ta một lần nữa kiến một cái, từ đồng thau cục tốc độ nhanh nhất đánh đi lên.” Diệp Thiếu Dương gật đầu “Tốt.”</p>
+<p>Trên mặt bàn liền có Thần Chiến version quốc tế icon, hai người mở ra bản cài đặt đăng ký.</p>
+<p>Diệp Thiếu Dương tùy tay đăng ký một cái tiếng Anh ID Sunshine.</p>
+<p>Kết quả quay đầu nhìn lại, Trì Sóc cũng đăng ký tiếng Anh ID Moonlight.</p>
+<p>Hai người “……”</p>
+<p>Khụ, này như thế nào lại tình lữ danh.</p>
+<p>Diệp Thiếu Dương nói giỡn nói “Đại biểu thái dương cùng ánh trăng tiêu diệt quốc tế bạn bè?”</p>
+<p>Trì Sóc “……”</p>
+<p>Hôm nay, version quốc tế đồng thau cục đột nhiên xuất hiện một đôi kỳ quái ID.</p>
+<p>Một cái ánh mặt trời, một tháng quang.</p>
+<p>Đụng vào này hai người các võng hữu người da đen dấu chấm hỏi Đây là cái nào quốc gia cao thủ, chạy tới version quốc tế tạc cá chơi a?</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong51.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong53.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "toan-nang-trung-don-dien-canh";
+const NOVEL_TITLE = "Toàn năng trung đơn ( điện cạnh )";
+const CHAPTER_TITLE = "Chương 52, tập huấn";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

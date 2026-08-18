@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 78, mùa giải mới</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Toàn năng trung đơn ( điện cạnh )
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 78, mùa giải mới</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong77.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong79.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Ngày kế, phía trước ước hảo Từ Trác, Phương Chính Thanh đám người đột nhiên đi vào Tinh Thành, đại gia cùng nhau liên hoan, Trì Sóc cẩn thận tự hỏi qua đi, quyết định tạm thời không mang theo Diệp Thiếu Dương đi gặp chính mình các bằng hữu, rốt cuộc hiện tại danh không chính ngôn không thuận, chờ tương lai hai người đính hôn, lại ước vài người tụ hội cũng không muộn.</p>
+<p>5 người ăn cơm thời điểm, Từ Trác rõ ràng nhận thấy được Trì Sóc tâm tình khá tốt, nhịn không được trêu chọc nói “Trì Sóc, ngươi gần nhất phát sinh cái gì chuyện tốt sao?”</p>
+<p>Trì Sóc lập tức nghiêm túc xuống dưới “Không có gì.”</p>
+<p>Phương Chính Thanh nói “Nhà các ngươi vị kia Omega tuyển thủ, hạ mùa giải là đầu phát phụ trợ vẫn là thay thế bổ sung?”</p>
+<p>Trì Sóc nhướng mày xem hắn “Lén tụ hội, có ngươi như vậy dò hỏi địch tình?”</p>
+<p>Phương Chính Thanh cười nói “Ta liền biết ngươi sẽ không trả lời.”</p>
+<p>Trần Khiêm Hoa nói sang chuyện khác nói “Nghe nói, Thần Chiến tròn mười năm sẽ có phiên bản đại đổi mới, hai ngày này hẳn là liền phải ra thông cáo. Lần này đổi mới nội dung, trừ bỏ tân anh hùng thượng tuyến ở ngoài, còn có trong trò chơi một ít cải biến.”</p>
+<p>Tạ Viễn thở dài “Xem ra, hưu xong giả trở về lúc sau đến mau chóng thích ứng tân phiên bản. Không biết cái này mùa giải tân ra anh hùng là cái gì vị trí? Mùa giải trước mới ra [ Vực Sâu Chúa Tể ], khẳng định sẽ không liên tục ra trung đơn.”</p>
+<p>Từ Trác nói “Hẳn là đánh dã, đã lâu không ra thích khách đi?”</p>
+<p>Hắn nhìn về phía Trì Sóc, người sau gật đầu một cái, nói “Từ vị trí thay phiên tới xem, lần này hẳn là đánh dã. Không biết sẽ ra công cụ người đánh dã, vẫn là dã hạch.”</p>
+<p>Phương Chính Thanh đỡ đỡ mắt kính, híp mắt cười nói “Nếu ra chính là dã hạch, ngươi liền không cần đi luyện, dù sao sẽ bị huấn luyện viên nhóm Ban rớt, ngươi cũng lấy không được.”</p>
+<p>Trần Khiêm Hoa cười khẽ ra tiếng “Phương đội lời này trát tâm.”</p>
+<p>Trì Sóc “…… Hôm nay Phương Chính Thanh mua đơn.”</p>
+<p>Phương Chính Thanh “Không thành vấn đề, ta dùng ngươi di động mua đơn.”</p>
+<p>5 cá nhân một bên nói chuyện phiếm một bên ăn cơm, buổi tối thời điểm mới từng người lái xe về nhà. Sắp chia tay phía trước, Trì Sóc gọi lại Từ Trác, hỏi “Lão Từ, ngươi cùng Tạ Vi Vũ ma hợp đến thế nào?”</p>
+<p>Từ Trác cười bán cái cái nút “Trên sân thi đấu nhìn thấy sẽ biết.”</p>
+<p>Trì Sóc cùng bọn họ từng người ôm một chút “Hạ mùa giải thấy.”</p>
+<p>Đây là mùa giải mới bắt đầu trước cuối cùng ấm áp thời khắc.</p>
+<p>Thật tới rồi trên sân thi đấu, này nhóm người điên rồi giống nhau đuổi giết Trì Sóc, thật là một chút bằng hữu chi nghị đều không màng. Đương nhiên, Trì Sóc ám sát bọn họ số lần cũng không ít.</p>
+<p>Về đến nhà sau, Trì Sóc cấp Diệp Thiếu Dương đã phát điều tin tức, giải thích nói “Vốn dĩ hôm nay nghĩ tới đi bồi ngươi, nhưng lâm thời có chút việc chậm trễ, Phương Chính Thanh, Từ Trác bọn họ tới Tinh Thành, ta cùng bọn họ tiểu tụ một chút.”</p>
+<p>Đủ tư cách Alpha muốn cùng chính mình Omega hội báo hành trình.</p>
+<p>Tuy rằng hiện tại hai người còn không có xác định quan hệ, nhưng Trì Sóc cảm thấy, vẫn là cùng Thiếu Dương nói một chút tương đối hảo.</p>
+<p>Diệp Thiếu Dương có điểm ngốc.</p>
+<p>Các ngươi tụ hội liền tụ hội bái, nói cho ta làm gì?</p>
+<p>Hắn nghĩ nghĩ, thực mau liền minh bạch Trì Sóc ý tứ “Nga, Trì đội ngươi cùng bọn họ tụ một tụ cũng khá tốt, chờ thi đấu thật sự đấu võ, liền không có thời gian lén tụ hội đi.”</p>
+<p>“Đúng vậy.” Trì Sóc hỏi “Ngươi chừng nào thì hồi chiến đội?”</p>
+<p>“Ta tính toán hậu thiên trước tiên trở về.”</p>
+<p>“Hảo, kia ta bồi ngươi cùng nhau về đi.”</p>
+<p>Trì Sóc lập tức liền đính hồi Đế Đô vé máy bay.</p>
+<p>Ngày 10 tháng 1, kỳ nghỉ còn không có kết thúc, hắn cùng Diệp Thiếu Dương liền trước tiên quay trở về căn cứ.</p>
+<p>Ở sân bay thời điểm, hắn còn chủ động giúp Diệp Thiếu Dương cấp Tiểu Bạch xử lý sủng vật gửi vận chuyển, đối Diệp Thiếu Dương thập phần chiếu cố. Diệp Thiếu Dương cũng không cảm thấy có vấn đề, hắn kiếp trước đương đội trưởng thời điểm, cũng là như thế này chiếu cố đội viên.</p>
+<p>Bởi vì Thiên Hoàn câu lạc bộ vẫn là phóng nghỉ đông trạng thái, thực đường không mở ra, Trì Sóc liền đi phụ cận siêu thị mua đồ ăn, mỗi ngày ở ký túc xá cấp Diệp Thiếu Dương nấu cơm.</p>
+<p>Hai người mỗi ngày chính mình nấu cơm, đậu Tiểu Bạch chơi, còn lại thời gian đánh bài vị, nhật tử đảo cũng quá đến nhẹ nhàng thích ý.</p>
+<p>Thực mau, mặt khác đồng đội lần lượt kết thúc kỳ nghỉ đã trở lại.</p>
+<p>Phía chính phủ tuyên bố 《 Thần Chiến 》 tròn mười năm phiên bản đại đổi mới, lần này cải biến lớn nhất địa phương là, trước kia đệ nhất sóng BUFF là 30 giây đổi mới, binh tuyến cũng là 30 giây xuất phát. Đổi mới lúc sau, biến thành 1 phân 30 giây.</p>
+<p>Đừng nhìn chỉ là gia tăng rồi 1 phút thời gian, nhưng các tuyển thủ chuyên nghiệp có thể làm sự tình, liền biến nhiều.</p>
+<p>Tỷ như, 5 người ôm đoàn đi thượng lộ hạ bộ trảo đối diện tuyển thủ, giết chết đối phương sau lại tập thể hồi trình, một lần nữa chạy đến tuyến thượng cũng là tới kịp. Lại hoặc là, 5 người ôm đoàn xâm lấn dã khu…… Cứ như vậy, giai đoạn trước cường thế anh hùng sẽ thực chiếm tiện nghi, dễ dàng ở khai cục liền mở ra cục diện, chiến thuật phương diện cũng sẽ có nhiều hơn biến hóa.</p>
+<p>Ngoài ra, 10-1 mùa giải thượng tuyến tân anh hùng quả nhiên là cái đánh dã, hơn nữa là thích khách loại dã hạch.</p>
+<p>[ Truy Hồn Giả ], đây là một cái cơ chế thực đặc thù anh hùng.</p>
+<p>Đương trường thượng anh hùng ( bao gồm đồng đội cùng địch nhân ) tử vong sau, hắn là có thể thu thập người chết linh hồn vì chính mình sở dụng, thuần dã hạch anh hùng, đánh đoàn thời điểm chỉ cần đã chết người, hắn liền có thể điên cuồng thu gặt.</p>
+<p>Ngày 12 tháng 1, huấn luyện viên Lâm hấp tấp mà trở lại căn cứ, kêu đại gia đi phòng họp khẩn cấp mở họp.</p>
+<p>Thiên Hoàn các đội viên toàn bộ đến đông đủ, ấn từng người vị trí phân biệt ngồi xong.</p>
+<p>Trì Sóc bất động thanh sắc mà cùng Khúc Giang thay đổi một chút vị trí, ngồi ở Diệp Thiếu Dương bên cạnh.</p>
+<p>Huấn luyện viên Lâm mở ra PPT, nói “Kỳ nghỉ kết thúc, đại gia cũng nên thu hồi tâm, nắm chặt thời gian chuẩn bị mùa giải mới. Lần này phiên bản đại đổi mới, ta tưởng các ngươi cũng đều nhìn thông cáo, tân anh hùng [ Truy Hồn Giả ] là cái dã hạch, Trì Sóc đi trước luyện đi. Bất quá, tân anh hùng chính thức đổ bộ thi đấu phục còn muốn 1 cái nhiều tháng, hơn nữa đại khái suất sẽ bị Ban, nhằm vào cái này anh hùng đội hình hệ thống, chúng ta hậu kỳ lại nói. Trước mắt nhất mấu chốt, là lập tức muốn bắt đầu quý tiền tái.”</p>
+<p>Hắn mở ra một trương PPT, mặt trên là quý tiền tái phân tổ.</p>
+<p>Huấn luyện viên Lâm nói “Đây là Liên Minh ngày hôm qua mở họp khi tùy cơ rút thăm kết quả, các ngươi có thể xem một chút.”</p>
+<p>Mọi người ngẩng đầu nhìn về phía màn hình lớn, Khúc Giang như suy tư gì “Chúng ta quý tiền tái phân đến thượng nửa tái khu, cùng tổ có Kinh Trập, Băng Hồn, Nguyệt Ảnh, Trì đội lão bằng hữu thật đúng là tề a?”</p>
+<p>Trì Sóc “…… Ân, Liên Minh máy tính thật sẽ tùy cơ.”</p>
+<p>Tần Nhất Chúc nói “Hạ nửa tái khu có Bắc Mục, Dao Quang, Hỏa Văn, áp lực cũng không nhỏ.”</p>
+<p>Trì Sóc nhàn nhạt nói “Không cần lo lắng, thường quy tái lại chậm rãi đánh.”</p>
+<p>Huấn luyện viên Lâm nói “Trì đội nói được không sai, quý tiền tái, chỉ là quyết định thường quy tái phân tổ, thua cũng không quan trọng. Hơn nữa, cái này mùa giải, chúng ta cũng không tính toán đánh sâu vào S tổ.”</p>
+<p>Diệp Thiếu Dương trong khoảng thời gian này nghỉ phép ở nhà, cũng kỹ càng tỉ mỉ tra xét hạ 《 Thần Chiến 》 phía chính phủ Chức Nghiệp League tái chế.</p>
+<p>Quý tiền tái, tương đương với mùa giải bắt đầu trước dự nhiệt hoạt động, tựa như học sinh trung học “Nhập học thí nghiệm” tới quyết định phân ban tình huống. Liên Minh sẽ tùy cơ rút thăm, đem 18 chi chiến đội phân thành hai cái tái khu, thượng nửa khu, hạ nửa khu các có 9 chi đội ngũ, tổ nội tuần hoàn, BO3, chỉ đánh một tuần thời gian, lịch thi đấu bài đến phi thường chặt chẽ.</p>
+<p>Một tuần qua đi, sở hữu đội ngũ sẽ dựa theo quý tiền tái tích phân chính thức phân tổ.</p>
+<p>Thượng, hạ nửa khu đệ 1~3 danh, phân đến S tổ, cũng chính là 【 học bá tổ 】;</p>
+<p>Đệ 4~6 danh, phân đến A tổ, 【 bình thường tổ 】;</p>
+<p>Đệ 7~9 danh học sinh dở, liền sẽ phân đến B tổ, cũng chính là 【 học tra tổ 】.</p>
+<p>Phân tổ sau khi kết thúc, bắt đầu chính thức thường quy tái.</p>
+<p>Thường quy tái là S tổ, A tổ, B tổ phân biệt đánh tổ nội thi đấu vòng tròn, đệ nhất giai đoạn đánh xong sau, S tổ đếm ngược hai tên giáng cấp đến A tổ, A tổ đếm ngược hai vị giáng cấp đến B tổ, mà A tổ, B tổ trước hai tên sẽ thăng cấp.</p>
+<p>Sau đó, sở hữu chiến đội tích phân thanh linh, lại đánh đệ nhị giai đoạn. Đệ nhị giai đoạn sau khi kết thúc, S tổ đếm ngược hai tên như cũ giáng cấp, A tổ, B tổ trước hai tên thăng cấp. B tổ 6 chi đội ngũ, sẽ tập thể đào thải bị loại trừ.</p>
+<p>Đệ tam giai đoạn, quyết định quý hậu tái danh ngạch. S tổ 1~4 danh tiến quý hậu tái người thắng tổ, S tổ 5, 6 danh cùng A tổ 1, 2 danh tiến quý hậu tái bại giả tổ.</p>
+<p>Cái này tái chế tương đối phức tạp, nhưng Diệp Thiếu Dương thực mau liền lý giải, kỳ thật chẳng khác nào “Mạt vị đào thải chế”, cùng rất nhiều tuyển tú tổng nghệ quy tắc không sai biệt lắm, học bá ban đếm ngược sẽ đào thải đến bình thường ban, bình thường ban ưu tú sinh sẽ tấn chức đến học bá ban……</p>
+<p>Mỗi cái tổ áp lực đều sẽ rất lớn.</p>
+<p>Thiên Hoàn huấn luyện viên tổ sẽ như thế nào an bài? Diệp Thiếu Dương chờ mong mà nhìn về phía huấn luyện viên Lâm.</p>
+<p>Lâm Phong nói “Chúng ta huấn luyện viên tổ điều tra mặt khác đội ngũ số liệu, cẩn thận thảo luận sau, quyết định quý tiền tái làm 2 đội đi đánh. Chúng ta không hướng S tổ, có thể tiến A tổ liền hảo, thật sự không được, cũng có thể từ B tổ chậm rãi đánh lên, đi lên trên.”</p>
+<p>Mọi người kinh ngạc mà cho nhau liếc nhau.</p>
+<p>Thiên Hoàn mùa giải trước ở S tổ đánh đến vỡ đầu chảy máu, vòng thứ nhất đã bị giáng cấp, đợt thứ hai cùng vòng thứ ba miễn cưỡng giữ được A tổ ghế. Cái này mùa giải, cư nhiên không đi S tổ?</p>
+<p>Huấn luyện viên Lâm nói “Tiến S tổ, chỉ là nói ra đi dễ nghe, nhưng cũng có cái rất lớn vấn đề —— chúng ta Thiên Hoàn chủ lực đội thay máu, hơn nữa S10 phiên bản đại đổi mới, một khi theo không kịp S tổ mau tiết tấu, rất có thể trở thành vòng thứ nhất đã bị đào thải xuống dưới đội ngũ, như vậy đối các tuyển thủ tâm thái sẽ là thực trầm trọng đả kích.”</p>
+<p>Hắn nhìn về phía Diệp Thiếu Dương cùng Trình Tinh, nói “Đặc biệt là Thiếu Dương cùng Trình Tinh đều là không có đại tái kinh nghiệm tân nhân, trực tiếp đi S tổ đánh cường đội, nếu thua số lần nhiều, đối toàn bộ chiến đội sĩ khí cũng sẽ sinh ra bất lợi ảnh hưởng.”</p>
+<p>Diệp Thiếu Dương “……”</p>
+<p>Hảo đi, từ huấn luyện viên tổ góc độ tới xem, cái này mùa giải Thiên Hoàn, xác thật không hảo vọt vào S tổ.</p>
+<p>Diệp Thiếu Dương là cái tân nhân, Trình Tinh cũng là tân nhân, Khúc Giang lâm thời chuyển phụ trợ, như vậy Thiên Hoàn như thế nào cùng S tổ những cái đó cường đội đi đối kháng? Nếu là tổ nội thi đấu vòng tròn vẫn luôn liền bại, bị đào thải xuống dưới, các đội viên tâm thái một khi băng rồi, tưởng lại một lần nữa điều chỉnh lại đây là rất khó.</p>
+<p>Sĩ khí, cũng là ảnh hưởng thi đấu kết quả quan trọng nhân tố.</p>
+<p>Tân nhân vẫn luôn thua, liền sẽ hoài nghi chính mình, trở nên không đủ tự tin, hoàn cảnh xấu tuần hoàn, thua trận càng nhiều.</p>
+<p>Tương phản, nếu như đi A tổ hoặc là B tổ, khai cục áp lực tiểu một ít, một phương diện có thể mau chóng luyện binh, ma hợp đội hình, về phương diện khác, nhiều thắng mấy cục, đối các tuyển thủ tin tưởng bồi dưỡng, so một đường liền bại muốn hảo quá nhiều.</p>
+<p>Diệp Thiếu Dương có thể lý giải huấn luyện viên tổ quyết định.</p>
+<p>Từ B ban nghịch tập đến S ban, tổng so với bị đào thải xuống dưới muốn hảo.</p>
+<p>Lâm Phong nói “Quý tiền tái này một tuần thời gian, chủ lực đội nắm chặt đi ma hợp, các ngươi 5 cá nhân, khai tiểu hào đi version quốc tế 5 bài, tốc độ nhanh nhất thích ứng tân phiên bản, tân tiết tấu. Thời gian cải biến muốn nhớ cho kỹ, chờ quý tiền tái đánh xong chính thức xác định phân tổ lúc sau, các ngươi lại lấy hoàn toàn mới diện mạo đi đánh thường quy tái.”</p>
+<p>Mọi người sôi nổi gật đầu tỏ vẻ minh bạch.</p>
+<p>Huấn luyện viên Lâm nhìn về phía Nhan Bân “2 đội tân nhân, các ngươi ngày thường cũng rất khó có cùng Phương Chính Thanh, Từ Trác này đó đỉnh cấp đại thần giao thủ cơ hội, lần này quý tiền tái, các ngươi sẽ đối mặt rất nhiều cường địch, mặc kệ cuối cùng thành tích thế nào, đánh ra chính mình phong cách cùng trình độ là đủ rồi.”</p>
+<p>Nhan Bân lập tức gật đầu “Minh bạch!”</p>
+<p>Huấn luyện viên Lâm “Hảo, tan họp, đều đi huấn luyện đi.”</p>
+<p>1 đội 5 người mở ra tiểu hào đi version quốc tế, đem tiểu hào tên toàn bộ đổi thành loạn mã, sau đó tổ đội đánh bài vị. 5 người bài vị, thực dễ dàng đụng vào chức nghiệp chiến đội, mùa giải mới, quả nhiên có không ít chức nghiệp đội ở version quốc tế luyện binh.</p>
+<p>Diệp Thiếu Dương phát hiện, lần này phiên bản cải biến lúc sau, kỳ thật càng giống hắn kiếp trước LOL tiết tấu, khai cục 1 phân 30 giây chỗ trống kỳ có thể làm rất nhiều chuyện, bố tầm nhìn cũng hảo, đi dã khu hoặc là mỗ con đường làm chút chuyện cũng thế, cho dù là xoá sạch đối diện trung đơn một cái flash, kế tiếp đối tuyến đều sẽ nhẹ nhàng rất nhiều.</p>
+<p>Chờ thêm đoạn thời gian, đại gia quen thuộc thi đấu tiết tấu, nếu Trì đội nguyện ý tín nhiệm hắn nói……</p>
+<p>Hắn cũng có thể chỉ huy.</p>
+<p>Thời gian quá thật sự mau, ngày 15 tháng 1, Thần Chiến Chức Nghiệp League mùa giải thứ 10 rốt cuộc chính thức khai mạc.</p>
+<p>Các đại chiến đội bắt đầu sôi nổi thả ra S10 tuyển thủ tuyên truyền chiếu.</p>
+<p>Tuyên truyền chiếu thượng, các tuyển thủ các nét mặt toả sáng, thần thái sáng láng, đối mùa giải mới tràn ngập tin tưởng.</p>
+<p>Trong đó, chiến đội Thiên Hoàn S10 tuyên truyền chiếu một thả ra liền khiến cho nhiệt nghị ——</p>
+<p>Thiên Hoàn mùa giải này 10 người dự thi đại danh đơn trung, có một cái xa lạ ID Thiên Hoàn - Liệt Dương.</p>
+<p>Hơn nữa, cái này tân nhân trạm cư nhiên là đệ nhất bài chính giữa nhất C vị!</p>
+<p>Đại bộ phận chiến đội đều là minh tinh tuyển thủ hoặc đội trưởng trạm C vị, làm một tân nhân trạm C vị thật là chưa từng nghe thấy!</p>
+<p>Thiên Hoàn đệ nhất bài năm người trạm vị cũng thực hỗn loạn.</p>
+<p>Thượng đơn “Thiên Hoàn - Chúc Hỏa”, đánh dã “Thiên Hoàn - Sóc Nguyệt”, đứng ở chính giữa nhất chính là tân nhân “Thiên Hoàn - Liệt Dương”, hắn bên cạnh là “Thiên Hoàn - Phồn Tinh”, lại bên cạnh mới là Khúc Giang “Thiên Hoàn - Giang Thủy”.</p>
+<p>Các võng hữu xem này mê hoặc trạm vị có điểm ngốc.</p>
+<p>【 tình huống như thế nào a? Liệt Dương là ai, cư nhiên trạm C vị! 】</p>
+<p>Có người nhắc nhở nói 【 hắn chính là Thiên Hoàn hoa 500 vạn thiêm cái kia Omega tân nhân, Diệp Thiếu Dương a 】</p>
+<p>Đại gia cầm tuyên truyền chiếu cùng chuyển đội cửa sổ một đôi so —— quả nhiên là vị này Omega tiểu soái ca.</p>
+<p>Các fan kích động đến ngao ngao thét chói tai.</p>
+<p>【Omega, khó trách muốn trạm C vị! 】</p>
+<p>【 đây là chúng ta Omega tiểu soái ca bài mặt? Ái ái 】</p>
+<p>【 Sóc Nguyệt, Liệt Dương, Phồn Tinh? Đây là từ đâu ra gia tộc danh? Thái dương ánh trăng ngôi sao đều toàn đâu. 】</p>
+<p>【 Thiên Hoàn này mùa giải là tới khôi hài sao? 】</p>
+<p>【 tả hữu vẫn là Chúc Hỏa cùng Giang Thủy, đơn giản tổng kết chính là Như nước với lửa nhật nguyệt tinh?】</p>
+<p>【 các ngươi cũng thật sẽ đặt tên [ đầu chó.jpg]】</p>
+<p>Chức Nghiệp Liên Minh trong đàn, nhìn đến Thiên Hoàn tuyên truyền chiếu lúc sau tâm sinh nghi hoặc người cũng có rất nhiều.</p>
+<p>Diệp Thiếu Dương vì cái gì trạm C vị? Đại khái là Omega tuyển thủ đặc thù đãi ngộ?</p>
+<p>Mọi người đều cho rằng, Thiên Hoàn là căn cứ “Omega ưu tiên” lễ nghi, làm Diệp Thiếu Dương vị này Omega tuyển thủ đứng ở chính giữa nhất, hắn thân cao so Trì Sóc lùn 10 cm, xác thật thích hợp trạm C vị.</p>
+<p>Rất nhiều chiến đội vì tuyên truyền chiếu đẹp, cũng sẽ điều chỉnh các đội viên trạm vị.</p>
+<p>Không ai nghĩ đến, đứng ở trung gian tươi cười xán lạn Omega tiểu ca ca, cư nhiên đỉnh rớt Khúc Giang trung đơn vị trí.</p>
+<p>【 quyển thứ nhất xong 】</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong77.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong79.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "toan-nang-trung-don-dien-canh";
+const NOVEL_TITLE = "Toàn năng trung đơn ( điện cạnh )";
+const CHAPTER_TITLE = "Chương 78, mùa giải mới";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

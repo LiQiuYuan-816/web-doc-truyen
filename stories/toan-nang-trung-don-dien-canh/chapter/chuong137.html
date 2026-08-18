@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 137, trung dã liên kết</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Toàn năng trung đơn ( điện cạnh )
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 137, trung dã liên kết</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong136.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong138.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Chúc mừng Thiên Hoàn bắt lấy ván thứ nhất thi đấu! Bổn cục thi đấu MVP cấp tới rồi Thiên Hoàn Phồn Tinh!”</p>
+<p>“Tiểu Tinh tại đây cục thi đấu biểu hiện, xác thật thực ưu tú, từ đầu tới đuôi một lần cũng chưa chết, đánh ra đoàn chiến 45% tấn công, còn làm chúng ta xem xét tới rồi một hồi ngũ thải ban lan pháo hoa biểu diễn!”</p>
+<p>Hiện trường vang lên một trận cười vang.</p>
+<p>Trên màn hình lớn xuất hiện MVP tin tức tạp, Trình Tinh ảnh chụp bị phóng đại, bên cạnh là hắn mùa giải này tư liệu giao diện, bao gồm thắng suất, anh hùng trì, KDA cho điểm cùng MVP số lần chờ.</p>
+<p>Hắn là lấy MVP số lần ít nhất xạ thủ.</p>
+<p>Nhưng là, nhìn Tiểu Tinh tươi cười cứng đờ ảnh chụp, phòng live stream nội nhịn không được sôi nổi spam ——</p>
+<p>【 Tiểu Tinh chụp cái chiếu như thế nào đuổi kịp pháp trường dường như? 】</p>
+<p>【 cười đến hảo cứng đờ! Có phải hay không nhiếp ảnh gia cầm đao đặt tại hắn trên cổ chụp? 】</p>
+<p>【 Tiểu Tinh, bị bắt cóc ngươi liền chớp chớp mắt 】</p>
+<p>【 có một nói một, tuy rằng Tiểu Tinh là Thiên Hoàn nhất đồ ăn một cái điểm, nhưng hắn tiến bộ xác thật man mau 】</p>
+<p>【 Thiên Hoàn có cái kêu Liệt Dương đại ma vương, phụ trợ đến Tiểu Tinh tương đối đồ ăn thôi! 】</p>
+<p>【 nhìn Weibo Tiểu Tinh 100 loại cách chết hợp tập, có điểm đồng tình cái này tiểu khả ái, chết quá thảm 】</p>
+<p>【 ngôi sao hùng khởi! 】</p>
+<p>Cách âm trong phòng, Trình Tinh gỡ xuống tai nghe, kích động mà hô “Dương ca ngưu bức!”</p>
+<p>Đây là mỗi lần đánh xong thi đấu hắn đều sẽ kêu một câu.</p>
+<p>Làm Diệp Thiếu Dương số một thiết phấn, cấp Diệp Thiếu Dương thổi cầu vồng thí là Trình Tinh hằng ngày thao tác.</p>
+<p>Bất quá, trước kia so xong tái hắn kêu những lời này thời điểm, thường thường sẽ nhìn đến Dương ca cùng sư phụ ôm nhau cho nhau chúc mừng, hắn liền yên lặng đãi ở bên cạnh, không dám quấy rầy. Nhưng là hôm nay, Diệp Thiếu Dương cũng không có đi ôm Trì Sóc, dù sao quay đầu nhìn về phía Trình Tinh, vỗ vỗ tiểu thiếu niên bả vai, cười nói “Này cục đánh đến không tồi.”</p>
+<p>Trình Tinh cười ngây ngô vò đầu “Ta hôm nay xúc cảm khá tốt, thao tác cũng cảm thấy so trước kia thuận!”</p>
+<p>Khúc Giang nói “Có phải hay không bởi vì, ngươi quên mấu chốt bàn quang hiệu?”</p>
+<p>Trình Tinh cúi đầu vừa thấy, hắn bàn phím quả nhiên sáng lên đèn màu, theo hắn mỗi lần đánh ấn phím, bàn phím còn sẽ biến ảo bảy màu quang hiệu, thập phần khốc huyễn.</p>
+<p>Trình Tinh nghi hoặc “Khả năng cũng có nguyên nhân này?”</p>
+<p>Diệp Thiếu Dương cười nói “Vậy đừng đóng, dù sao ngươi bàn phím cũng hoảng không đến chúng ta.”</p>
+<p>Trình Tinh ngồi trở về, đôi tay ở trên bàn phím đập loạn một trận, quơ chân múa tay, cơ hồ muốn đem “Vui vẻ” viết ở trán thượng…… Vị này tiểu bằng hữu tâm lý tuổi tác vẫn là tương đối ấu trĩ.</p>
+<p>Huấn luyện viên Lâm đi vào cách âm phòng, khen nói “Ván thứ nhất đại gia đánh rất khá, ba đường đẩy tháp tiết tấu phi thường bổng! Tiểu Tinh muốn trọng điểm khen một chút, đánh ra phi thường cao tấn công, một lần cũng chưa chết, rất tuyệt.”</p>
+<p>Trình Tinh hắc hắc cười “Là đại gia bảo hộ đến hảo!”</p>
+<p>Huấn luyện viên Lâm nói “Ván tiếp theo, chúng ta vẫn là giữ nguyên kế hoạch tới?”</p>
+<p>Diệp Thiếu Dương nhìn về phía Trì Sóc “Hỏa Văn sẽ lấy trận địa chiến sao? Này cục bọn họ màu lam phương, có thể đoạt Liệt Diễm Nữ Thần.”</p>
+<p>Trì Sóc bình tĩnh mà nói “Nếu bọn họ ván thứ hai lấy trận địa chiến, ta liền tuyển [ Tiềm Hành Đạo Tặc ] đi cường sát đối diện xạ thủ, nếu bọn họ không lấy, vậy trung dã liên kết mang tiết tấu đi.”</p>
+<p>Huấn luyện viên Lâm gật gật đầu “Ân, xem BP tình huống lại nói.”</p>
+<p>Cùng thời gian, Hỏa Văn chiến đội cách âm trong phòng.</p>
+<p>Huấn luyện viên nói “Chúng ta ván thứ hai lấy về trận địa chiến, vẫn là dùng B phương án?”</p>
+<p>Chu Gia Văn mày nhíu lại, tử suy nghĩ kỹ lưỡng, nói “Trận địa chiến không cần cầm, Thiên Hoàn xem ra là chuyên môn nghiên cứu quá phá giải phương pháp, lấy ra tới ngược lại là thượng bọn họ bộ.”</p>
+<p>Huấn luyện viên cũng là như vậy tưởng, nói “Chúng ta đây vẫn là ổn một chút, dùng tương đối cân đối đội hình.”</p>
+<p>Nghỉ ngơi thời gian đi qua, ván thứ hai thực mau bắt đầu.</p>
+<p>Này cục, Hỏa Văn chiến đội màu lam phương ưu tiên cấm tuyển, bọn họ cái thứ nhất Ban rớt vẫn là [ Linh Giới Tuyết Điểu ], song phi không có phóng, bởi vì Song Phi tổ hợp đối xạ thủ vị là cái thật lớn uy hiếp.</p>
+<p>Thiên Hoàn như cũ Ban khai đoàn hình phụ trợ, miễn cho Trình Tinh bị cường khai.</p>
+<p>Hỏa Văn cái thứ hai Ban vị cấp đến Diệp Thiếu Dương [ Vực Sâu Chúa Tể ], phòng ngừa hắn xoát đánh dấu cường sát xạ thủ.</p>
+<p>Hai bên tuyển anh hùng, Hỏa Văn đệ nhất tuyển, trực tiếp cầm nhất linh hoạt xạ thủ [ Phong Chi Tinh Linh ].</p>
+<p>Thượng một ván, Hỏa Văn xạ thủ cơ hồ không có thể đánh ra cái gì thương tổn, bị Liệt Diễm Nữ Thần quyển lửa hạn chế đi vị, quá khó phát huy. Này cục đoạt hạ Phong Chi Tinh Linh, tự bảo vệ mình năng lực cường, không sợ chết, phát dục lên tấn công cũng rất cao.</p>
+<p>Thiên Hoàn bên này 1 2 lâu trực tiếp cầm thượng đơn [ Cương Thiết Chi Khu ] cùng phụ trợ [ Bạch Hùng ].</p>
+<p>Hỏa Văn bắt lấy trung đơn [ Diệt Thế Pháp Sư ] cùng đánh dã [ Săn Ma Giả ], kinh điển trung dã liên kết tổ hợp, trong đó [ Diệt Thế Pháp Sư ] cũng là Chu Gia Văn thành danh anh hùng chi nhất, pháo đài pháp sư, tấn công cự cao, một cái đại chiêu có thể trực tiếp giết chết da giòn; mà [ Săn Ma Giả ] là công kích khoảng cách khá xa đánh dã, có thể từ nơi xa khống chế đối thủ, phối hợp trung đơn giây người.</p>
+<p>Này câu đối động tổ hợp cũng phi thường cường thế, trang bị lên lúc sau, cơ hồ có thể trảo một cái, giây một cái.</p>
+<p>Đến phiên Thiên Hoàn lựa chọn, Thiên Hoàn 3 lâu quyết đoán bắt lấy [ Tuyết Nữ ].</p>
+<p>Hai vị giải thích liếc nhau, nói “Tuyết Nữ cái này xạ thủ, Tiểu Tinh hẳn là lần đầu tiên lấy ra tới đi?”</p>
+<p>“Không sai, cái này anh hùng công kích khoảng cách trung đẳng, giai đoạn trước thương tổn cũng không cao, bắn ra băng tiễn có thể giảm tốc độ đối thủ, am hiểu đánh mất háo. League có ích cái này anh hùng tương đối thiếu, quá kéo tiết tấu. 10 phút phía trước băng tiễn, tựa như ở cào ngứa, muốn đánh ra thương tổn, ít nhất đến làm ra tam kiện bộ.”</p>
+<p>“Nhưng là, [ Tuyết Nữ ] lớn nhất ưu thế là E kỹ năng pháp thuật hộ thuẫn, có thể bộ cái hộ thuẫn cho chính mình, chống cự điếu nhất định pháp thuật thương tổn, ở giai đoạn trước cũng coi như là không tồi tự bảo vệ mình năng lực.”</p>
+<p>“Hỏa Văn trung đơn là bùng nổ rất mạnh pháp sư, đánh dã đại chiêu cũng mang pháp thuật thương tổn, Thiên Hoàn bên này tuyển [ Tuyết Nữ ], trình độ nhất định thượng có thể phòng ngừa đối diện giây người, xem như phản chế tuyển pháp, cũng không có gì sai.”</p>
+<p>“Xem ra Tiểu Tinh anh hùng trì cũng không giống trong tưởng tượng như vậy thiển? Cái này ít được lưu ý xạ thủ hắn cũng sẽ chơi.”</p>
+<p>“Ân, chờ mong một chút Tiểu Tinh dùng [ Tuyết Nữ ] có thể hay không chống đỡ được đối diện bùng nổ.”</p>
+<p>Đệ nhất giai đoạn BP kết thúc, Thiên Hoàn tuyển trên dưới lộ, Hỏa Văn cầm trung dã bắn.</p>
+<p>Đệ nhị giai đoạn, Thiên Hoàn nhằm vào phụ trợ, thượng đơn cấm anh hùng, Hỏa Văn tiếp tục nhằm vào đánh dã cùng trung lộ.</p>
+<p>Bởi vì Thiên Hoàn xạ thủ vị cầm [ Tuyết Nữ ] cái này giảm tốc độ anh hùng, Hỏa Văn Ban rớt [ Hải Dương Nữ Thần ], phòng ngừa Thiên Hoàn trung đơn xạ thủ song giảm tốc độ; lúc sau lại Ban Trì Sóc ám sát năng lực rất mạnh [ Tiềm Hành Đạo Tặc ].</p>
+<p>Đệ nhị giai đoạn, Thiên Hoàn trước lấy đánh dã vị [ Ninja ].</p>
+<p>Ở [ Tiềm Hành Đạo Tặc ] bị Ban dưới tình huống, thiết hàng phía sau năng lực tương đối cường chính là có thể lợi dụng ảnh phân thân truy kích [ Ninja ], cái này anh hùng không cần lam, có thể làm lam cấp trung đơn.</p>
+<p>Thiên Hoàn cuối cùng counter vị như cũ để lại cho Diệp Thiếu Dương.</p>
+<p>Hỏa Văn 4 lâu, 5 lâu tuyển anh hùng, thượng đơn tiếp tục lấy [ Hút Máu Công Tước ], phụ trợ cầm [ Thánh Kỵ Sĩ ].</p>
+<p>Giải thích nói “Còn nhớ rõ thượng một ván, Thiên Hoàn lấy [ Thánh Kỵ Sĩ ] đi thượng đơn, mấu chốt đoàn chiến trung một cái thế thân kỹ năng giúp xạ thủ chắn rớt một đại sóng thương tổn, Hỏa Văn lấy [ Thánh Kỵ Sĩ ] đánh phụ trợ vị, cũng là muốn bảo xạ thủ bảo rốt cuộc!”</p>
+<p>“Làm chúng ta nhìn xem Thiên Hoàn cuối cùng một tay counter vị sẽ tuyển cái gì trung đơn?”</p>
+<p>“…… Liệt Dương cầm [ Bắc Hải Cự Yêu ]!”</p>
+<p>Hiện trường bùng nổ một trận kinh hô.</p>
+<p>Hai vị giải thích thanh âm cũng không khỏi kích động lên “Mọi người đều biết, Thần Chiến giữa, bùng nổ mạnh nhất hai cái trung lộ pháo đài anh hùng chính là [ Diệt Thế Pháp Sư ] cùng [ Bắc Hải Cự Yêu ]! Hôm nay, Hỏa Văn tuyển Diệt Thế Pháp Sư, Thiên Hoàn tuyển Bắc Hải Cự Yêu, đây là muốn trung lộ lẫn nhau oanh tiết tấu sao?”</p>
+<p>“Liệt Dương pháp sư dồn sát thương chơi rất khá, nhưng hắn tuyển pháo đài pháp sư số lần cũng không nhiều, này một ván trung lộ hẳn là hội chiến huống kịch liệt, làm chúng ta cùng nhau chờ mong một chút, hai vị ưu tú trung đơn tuyển thủ tại đây cục trong lúc thi đấu quyết đấu!”</p>
+<p>Diệt Thế Pháp Sư, 6 đoàn sương đen hình cung công kích, toàn bộ mệnh trung nói có thể một cái đại chiêu giây người.</p>
+<p>Bắc Hải Cự Yêu, triệu hoán cự thú, mở ra bồn máu mồm to cắn nuốt mục tiêu, kỹ năng mệnh trung cũng có thể một ngụm cắn chết người.</p>
+<p>Diệt Thế Pháp Sư ưu thế là kỹ năng thuấn phát, đối phương rất khó trước tiên phòng bị, nhưng hình cung công kích không dễ dàng nhắm chuẩn, đối diện nhanh chóng đi vị nói rất có thể bắn thiên; Bắc Hải Cự Yêu ưu thế là, đại chiêu “Cự Yêu Thôn Phệ” vì phạm vi cắn nuốt, hậu kỳ trang bị lên có thể một ngụm nuốt rớt hai ba cái da giòn, nhưng kỹ năng sẽ lùi lại 0.1 giây phóng thích, dễ dàng bị trốn rớt.</p>
+<p>Hai cái pháo đài anh hùng các có ưu khuyết, đều yêu cầu dự phán đối diện đi vị.</p>
+<p>Đánh trung đó chính là xuất sắc thao tác, đánh không trúng sẽ rất khó xem, đặc biệt [ Bắc Hải Cự Yêu ], võng du thường xuyên xuất hiện người chơi triệu hồi ra một cái đại yêu quái, kết quả cắn một ngụm không khí xấu hổ cục diện.</p>
+<p>Chu Gia Văn cùng Diệp Thiếu Dương trung lộ pháo đài quyết đấu, thành ván thứ hai lớn nhất xem điểm.</p>
+<p>Đồng thời, Trì Sóc cùng Nghiêm Ngạn song dã hạch cũng đem ở dã khu sinh ra kịch liệt tranh đoạt.</p>
+<p>Hai vị giải thích tổng kết nói “Này một ván, Thiên Hoàn hạ bộ xạ thủ [ Tuyết Nữ ] có thể cho chính mình bộ pháp thuật hộ thuẫn, tự bảo vệ mình năng lực cường, Hỏa Văn hạ bộ [ Phong Chi Tinh Linh ] di chuyển vị trí nhiều, tương đối khó sát; mấu chốt vẫn là nhìn trúng dã!”</p>
+<p>“Không sai, trung lộ hai cái pháo đài, dã khu hai cái thích khách. Này một ván thắng thua, mấu chốt ở chỗ hai bên trung dã liên kết tiết tấu! Bên kia trung dã trước sáng tạo ưu thế, bên kia liền càng dễ dàng thắng!”</p>
+<p>“Làm chúng ta tiến vào Thiên Hoàn vs Hỏa Văn trận thứ hai quyết đấu!”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong136.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong138.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "toan-nang-trung-don-dien-canh";
+const NOVEL_TITLE = "Toàn năng trung đơn ( điện cạnh )";
+const CHAPTER_TITLE = "Chương 137, trung dã liên kết";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

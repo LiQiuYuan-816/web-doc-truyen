@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 18, trung dã liên kết</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Toàn năng trung đơn ( điện cạnh )
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 18, trung dã liên kết</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong17.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong19.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Trì Sóc cũng thực chờ mong cùng Tiểu Bạch song bài, tiếp tục thử Tiểu Bạch chi tiết.</p>
+<p>Giả thiết Tiểu Bạch là cái loại này thiên phú đặc biệt cường, có thực lực đánh chức nghiệp tuyển thủ, hắn có thể giành trước làm chiến đội Thiên Hoàn ký xuống vị này tân nhân, đừng bị mặt khác câu lạc bộ cướp đi.</p>
+<p>Nếu Tiểu Bạch chỉ là ngẫu nhiên mấy cái anh hùng chơi đến tương đối hảo, tốc độ tay cùng ý thức các phương diện đều không thích hợp đánh Chức Nghiệp League, kia hắn cũng có thể thông qua cùng Tiểu Bạch song bài, mau chóng quen thuộc [ Vực Sâu Chúa Tể ] cái này anh hùng.</p>
+<p>Giao một cái chủ bá bằng hữu cũng không mệt, về sau nhàn cũng có thể cùng nhau bài vị chơi.</p>
+<p>Phòng live stream 10 vạn lễ vật chỉ là lễ gặp mặt, hỗn cái bạn tốt vị, lúc sau lại chậm rãi hiểu biết.</p>
+<p>Thi đấu giao diện thực mau tái nhập.</p>
+<p>Diệp Thiếu Dương ở giọng nói kênh hỏi “Lam khai vẫn là hồng khai?”</p>
+<p>Trì Sóc đánh chữ “Phản lam.”</p>
+<p>Trong trò chơi, bên ta thế lực cùng địch quân thế lực điểm trung bình thành thượng, hạ hai nửa.</p>
+<p>Hạ nửa khu bên trái là lam BUFF, bên phải hồng BUFF, hai cái BUFF ở vào dã khu ngay trung tâm, đánh chết BUFF sau sẽ có thêm thành, lam BUFF nhưng “Liên tục hồi phục lam lượng”, hồng BUFF nhưng “Công kích mang thêm giảm tốc độ hiệu quả”.</p>
+<p>Địch quân dã khu giống như chiếu gương giống nhau, cùng bên ta là tương phản.</p>
+<p>Nói cách khác, bên ta lam BUFF khu đối ứng chính là địch quân hồng BUFF khu, trung gian cách một cái hà —— đây cũng là đường sông tầm quan trọng, phụ trợ khai cục muốn đi đường sông xem tầm nhìn, phòng ngừa địch nhân xâm lấn, trộm đi bên ta BUFF.</p>
+<p>Đại bộ phận đánh dã đều thích khai cục trước sát nhà mình BUFF, cũng chính là thường nói lam khai, hoặc là hồng khai.</p>
+<p>Mà phản lam, phản hồng, còn lại là tương đối cấp tiến đấu pháp.</p>
+<p>Khai cục mặc kệ nhà mình dã khu, ngược lại xâm lấn địch nhân dã khu, đi đoạt lấy đối diện BUFF!</p>
+<p>Trì Sóc thích phản dã, đây là Chức Nghiệp Liên Minh rất nhiều tuyển thủ đều biết đến sự tình.</p>
+<p>Hắn đánh dã phong cách luôn luôn sắc nhọn —— “Đối diện dã khu là ta hậu hoa viên”, chỉ cần làm hắn tìm được cơ hội, đối phương dã khu tài nguyên liền sẽ bị hắn lục soát □□ tịnh, một cái tiểu quái đều không cho ngươi lưu!</p>
+<p>Nhìn trống không dã khu, rất nhiều cùng Trì Sóc đấu cờ đánh dã tuyển thủ tâm thái sẽ băng.</p>
+<p>Trì Sóc cũng là Chức Nghiệp Liên Minh thù hận giá trị lớn nhất tuyển thủ, thi đấu thời điểm, thậm chí xuất hiện quá đối diện 5 cá nhân ôm đoàn tới bắt Trì Sóc rầm rộ!</p>
+<p>Này cục thi đấu, Diệp Thiếu Dương nghiêm túc, Trì Sóc cũng nghiêm túc.</p>
+<p>Khai cục đi phản lam, đây là “Xuất kỳ bất ý, đánh úp” cách làm.</p>
+<p>Bởi vì, Trì Sóc này cục tuyển đánh dã ——[ Huyết Y Thích Khách ] là không có lam điều!</p>
+<p>Không có lam điều anh hùng, tự nhiên không cần đoạt “Khôi phục lam lượng” lam BUFF.</p>
+<p>Mặc dù là phản dã, đối thủ cũng cho rằng hắn sẽ đi trộm hồng BUFF.</p>
+<p>Kết quả……</p>
+<p>Cố tình làm ngươi không thể tưởng được.</p>
+<p>Trì Sóc cùng Diệp Thiếu Dương kết bạn cùng nhau, khẽ meo meo mà chạy tới đối diện lam BUFF dã khu, nhanh chóng đem lam BUFF đánh tới tàn huyết, sau đó, Trì Sóc đột nhiên dừng lại công kích, nói “Ngươi lấy.”</p>
+<p>Diệp Thiếu Dương sửng sốt một chút “Nhường cho ta?”</p>
+<p>Trì Sóc “Ân, xem một chút [ Vực Sâu Chúa Tể ] bắt được lam, có thể hay không ngăn chặn đối diện trung đơn.”</p>
+<p>Diệp Thiếu Dương cười nói “Kia ta liền không khách khí.”</p>
+<p>Trung lộ pháp sư là nhất yêu cầu lam, có thể không ngừng hồi phục pháp lực, nhiều phóng mấy cái kỹ năng.</p>
+<p>Diệp Thiếu Dương nhanh chóng thu đi tàn huyết lam BUFF.</p>
+<p>Binh tuyến tới trung lộ, Diệp Thiếu Dương đi thanh tuyến, Trì Sóc lại từ đường sông vòng qua đi, vòng đến đối diện hồng BUFF dã khu. Xem đối diện đánh dã đem hồng BUFF đánh tới tàn huyết lúc sau, hắn một cái [ khiển trách ] kỹ năng đoạt hạ hồng BUFF, sau đó lợi dụng chính mình thăng 2 cấp, đối phương mới 1 cấp cấp bậc kém, quyết đoán giết đối diện đánh dã ——</p>
+<p>First Blood!</p>
+<p>Trì Sóc bắt được một huyết.</p>
+<p>Diệp Thiếu Dương “666.”</p>
+<p>Trì Sóc trở lại nhà mình dã khu, nhanh chóng đem hồng BUFF, lam BUFF song song thu vào trong túi.</p>
+<p>Tiểu Bạch phòng live stream làn đạn khu trực tiếp tạc ——</p>
+<p>【 ngọa tào ngọa tào, 4 cái BUFF, mộng ảo khai cục! 】</p>
+<p>【 đối diện dã khu đã băng. Lão bản ngưu bức a, này trình độ còn muốn chủ bá mang sao? 】</p>
+<p>【 này một đợt xâm lấn đánh đến quá xinh đẹp! 】</p>
+<p>【 chỉ dám đánh nhà mình BUFF ma mới đánh dã, cấp lão bản dâng lên đầu gối ~~】</p>
+<p>4 cái BUFF khai cục, đây là trong lúc thi đấu cực nhỏ thấy “Mộng ảo khai cục”.</p>
+<p>Thi đấu hiện trường tổng cộng liền 4 cái BUFF, mặc kệ phòng thủ vẫn là xâm lấn, đánh dã khai cục thời điểm đại bộ phận dưới tình huống đều là ngươi lấy 2 cái, ta lấy 2 cái.</p>
+<p>Nhưng là Trì Sóc vừa rồi phản dã xâm lấn, giúp trung lộ Diệp Thiếu Dương đoạt cái thứ nhất lam; đơn sát đối phương đánh dã, đoạt đối diện hồng; sau đó lợi dụng đối phương đánh dã chết về nhà thời gian, nhanh chóng xoát rớt bên ta lam, hồng……</p>
+<p>Nói cách khác, dã khu khai cục bốn cái BUFF, đều bị Trì Sóc cấp cướp được!</p>
+<p>Lúc này Trì Sóc, cấp bậc so đối diện đánh dã suốt cao 2 cấp.</p>
+<p>Chân chính mộng ảo khai cục!</p>
+<p>Đối diện đánh dã sống lại sau, tốc độ nhanh nhất đi trước dã khu, nhìn trống không dã khu, tâm thái trực tiếp băng rồi.</p>
+<p>Sau đó, trung lộ truyền đến đánh chết tin tức.</p>
+<p>——[ Tiểu Bạch ( Vực Sâu Chúa Tể ) đánh chết mỗi ngày đánh bài vị ( Ảo Thuật Sư ) ]</p>
+<p>Diệp Thiếu Dương bắt được lam, pháp lực giá trị vẫn luôn là mãn, tùy hứng phóng kỹ năng, 4 cấp liền đơn sát đối diện pháp sư!</p>
+<p>Phòng live stream các võng hữu sôi nổi spam 666.</p>
+<p>Đối phương trung đơn bị Diệp Thiếu Dương ép tới không dám ra tháp.</p>
+<p>Nhưng ngươi không dám ra tháp cũng vô dụng, bên ta trung dã liên kết , cường giết ngươi không nói chơi!</p>
+<p>Thấy Đánh Dã lão bản ngồi xổm ở mặt bên bụi cỏ, điểm cái “Khởi xướng tiến công” cục nội nhắc nhở, Diệp Thiếu Dương không chút do dự, trực tiếp flash đi lên khai người, đem đối diện pháp sư nháy mắt đánh cho tàn phế, Trì Sóc lập tức ẩn thân qua đi, đâm sau lưng một đao thu đi đầu người, hai người một trước một sau nghênh ngang mà đi.</p>
+<p>【 dã khu kinh tế kém quá lớn, đối diện đánh dã mới 4 cấp, lão bản đều 6 cấp, này còn đánh cái mao 】</p>
+<p>【 soái a, hai người càng tháp, cường sát đối diện pháp sư! 】</p>
+<p>【 đối diện dã khu cùng trung lộ toàn băng, Tiểu Bạch cùng lão bản phối hợp quá tuyệt vời! 】</p>
+<p>Khai cục 5 phút, trung lộ ngoại tháp bị đẩy.</p>
+<p>Trung đơn bị đánh bạo, trang bị kém Diệp Thiếu Dương suốt một cái đại kiện.</p>
+<p>Đối phương dã khu hoàn toàn thất thủ, đối phương đánh dã đừng nói là lam, hồng BUFF, một cái tiểu quái cũng chưa có thể cướp được!</p>
+<p>Hai người liên tục chiến đấu ở các chiến trường hạ bộ, lại lần nữa phối hợp tiến công.</p>
+<p>Lần này là Trì Sóc động thủ trước, đem đối diện xạ thủ một bộ đánh cho tàn phế, Diệp Thiếu Dương thao tác [ Vực Sâu Chúa Tể ] hắc ảnh qua đi, bạo đánh dấu giết chết đối phương xạ thủ, đổi mới kỹ năng, tiếp tục sát đối phương phụ trợ, trực tiếp bắt lấy double kill!</p>
+<p>Hai người đẩy rớt xuống lộ ngoại tháp, cùng đi phía dưới dã khu cướp đoạt tài nguyên.</p>
+<p>Sau đó chuyển thượng lộ.</p>
+<p>Đi đến nào, giết đến nào, thượng lộ da dày thịt béo xe tăng cũng không có thể chống đỡ được trung đơn cùng đánh dã liên thủ bùng nổ, ôm hận mà chết. Hai người nhanh chóng đẩy rớt thượng lộ ngoại tháp, xâm lấn dã khu tiếp tục cướp đoạt tài nguyên, lại lần nữa giết chết đối phương đánh dã.</p>
+<p>Bên ta mặt khác ba vị người chơi ăn dưa xem diễn, chỉ lo spam đánh 666.</p>
+<p>Thi đấu 7 phút.</p>
+<p>Đối phương ấn xuống đầu hàng.</p>
+<p>Phòng live stream các võng hữu “……”</p>
+<p>【 đối diện trò chơi thể nghiệm cực kém, phỏng chừng muốn hoài nghi nhân sinh 】</p>
+<p>【 vương giả thấp tinh đoạn như vậy khủng bố sao? 】</p>
+<p>【 ta còn tưởng rằng đây là tạc cá cục! Đối diện đánh dã run bần bật, dã khu một bước khó đi! 】</p>
+<p>【 này quả thực là cường đạo đấu pháp. Không ngừng xâm lấn, đối phương đánh dã chỉnh cục thi đấu một cái BUFF cũng chưa cướp được 】</p>
+<p>【 Tiểu Bạch cùng lão bản còn rất có ăn ý, trung dã liên kết trực tiếp đem đối diện đánh đầu hàng 】</p>
+<p>【 đây là hai cái ma quỷ sao? 】</p>
+<p>【 cho các ngươi thể nghiệm một chút bị hai cái ma quỷ chi phối sợ hãi! 】</p>
+<p>Diệp Thiếu Dương nhìn “Thắng lợi” chữ, tâm tình sung sướng mà khen “Lão bản kỹ thuật không tồi!”</p>
+<p>Trì Sóc đánh chữ khiêm tốn “Còn hành.”</p>
+<p>Diệp Thiếu Dương nói “Ta phát hiện [ Vực Sâu Chúa Tể ] khai cục cầm lam lúc sau, cường thế kỳ có thể trước tiên, chỉ cần 3 cái Q kỹ năng đều mệnh trung đối diện, hơn nữa W, giống nhau là có thể đơn sát đối phương.”</p>
+<p>Trì Sóc nhìn mắt đấu cờ tin tức, đánh chữ hỏi “Ngươi ra làm lạnh trang?”</p>
+<p>Diệp Thiếu Dương nói “Vực Sâu Chúa Tể làm làm lạnh trang bị, chi viện năng lực cùng thao tác tính đều tương đối cường.”</p>
+<p>Nói tới đây, Diệp Thiếu Dương thuận tiện cấp các võng hữu giải thích nói “Tới học [ Vực Sâu Chúa Tể ] các bằng hữu, cùng đại gia nói một ít kỹ xảo, cái này anh hùng tấn công chủ yếu dựa Q kỹ năng, chú ý hắc ảnh phóng thích thời cơ. Thông thường có thể bắt lấy đối diện trung đơn thanh binh thời điểm, phóng hắc ảnh qua đi, thanh rớt tiểu binh đồng thời, tiêu hao đối thủ huyết lượng.”</p>
+<p>“Chú ý, nếu ngươi không phải đặc biệt tự tin có thể đánh bạo đối thủ, trong tay liền lưu một cái bóng đen dùng để chạy trốn.” Diệp Thiếu Dương mở ra vừa rồi đối cục diện bản, con chuột chỉ hướng chính mình trang bị khu nói “Đệ nhất kiện trang bị ra làm lạnh giày, cái thứ hai ra tinh vân pháp trượng, đem làm lạnh thời gian chất đầy, như vậy Q kỹ năng liền có thể nhanh chóng phóng thích, thao tác càng linh hoạt.”</p>
+<p>“Kỹ càng tỉ mỉ ra trang trình tự ở chỗ này, đại gia yêu cầu có thể chụp hình. Trong trò chơi ta cũng chia sẻ.”</p>
+<p>Tiểu Bạch chủ bá thanh âm trong sáng, nghiêm túc mà cho đại gia giảng thuật [ Vực Sâu Chúa Tể ] cái này anh hùng thao tác cùng trang bị, các võng hữu sôi nổi ghi hình bảo tồn, chuẩn bị quay đầu lại cẩn thận nghiên cứu.</p>
+<p>【 dạy học chủ bá, ái ái! Đang muốn học cái này tân anh hùng 】</p>
+<p>【 chủ bá ra trang thực chuyên nghiệp a! Trước đôi làm lạnh? Cùng ta ý tưởng không quá giống nhau 】</p>
+<p>【 rốt cuộc Vực Sâu Chúa Tể là dựa vào hắc ảnh đánh dấu đánh thương tổn, đánh dấu càng nhiều thương tổn càng cao. Làm lạnh không đủ nói hắc ảnh nửa ngày mới có thể thả ra một cái, chờ ngươi phóng xong, rau kim châm đều lạnh 】</p>
+<p>【 trang bị trình tự đã chụp hình, này liền đi trong trò chơi thực tiễn! 】</p>
+<p>【 chủ bá hỏi một chút, Vực Sâu Chúa Tể tự thân có di chuyển vị trí, xài chung kỹ năng vẫn là mang flash sao? 】</p>
+<p>【 chính là chính là, ta còn tưởng rằng muốn mang tinh lọc. 】</p>
+<p>Anh hùng xài chung kỹ năng, có flash, khiển trách, tinh lọc, choáng váng chờ, mọi người khai cục khi đều có thể lựa chọn một cái mang tới thi đấu giữa. Đánh dã đều là mang khiển trách ( đối dã khu tiểu quái có thêm vào thương tổn ), không có di chuyển vị trí xạ thủ, pháp sư thông thường sẽ mang flash ( thuấn di một khoảng cách, nhưng xuyên tường chạy trốn ).</p>
+<p>Vực Sâu Chúa Tể bản thân liền có di chuyển vị trí kỹ năng, còn cần mang flash sao?</p>
+<p>Diệp Thiếu Dương cười giải thích “Vực Sâu Chúa Tể tuy rằng có di chuyển vị trí, nhưng hắc ảnh thả ra đi khoảng cách thực đoản, không dễ dàng đánh tới đối diện hàng phía sau. Mang [ flash ], có trợ giúp đoàn chiến thời điểm thuấn di đi hàng phía sau giây người.”</p>
+<p>“Pháp sư dồn sát thương mấu chốt, chính là muốn tốc độ nhanh nhất đánh chết đối diện da giòn, tạo thành đoàn chiến khi nhân số ưu thế. Vực Sâu Chúa Tể giết người lúc sau kỹ năng sẽ đổi mới, cho nên, hết thảy ý nghĩ, đều lấy ‘ giây người ’ là chủ.”</p>
+<p>【 ta flash thông thường dùng để chạy trốn, chủ bá flash đều là dùng để giết người? 】</p>
+<p>【 flash đi khai người, còn muốn mang lên hắc ảnh, này thao tác quá khó khăn! 】</p>
+<p>【 ta như vậy tay tàn, quả nhiên không thích hợp chơi pháp sư dồn sát thương, flash qua đi chỉ có thể tặng người đầu Q_Q】</p>
+<p>【 ta thử một chút, đồng thời thao tác ba cái hắc ảnh căn bản lo liệu không hết quá nhiều việc, chỉ có thể nói chủ bá 666】</p>
+<p>Trì Sóc nghe hắn cùng các võng hữu giới thiệu tân anh hùng chơi pháp, phát hiện cái này Tiểu Bạch chủ bá chẳng những chơi game ý thức rất mạnh, ý nghĩ cũng phi thường rõ ràng. Mới vừa thượng tuyến tân anh hùng, hắn mới chơi hai ngày liền xông lên toàn tỉnh đệ nhất, cũng nghiên cứu ra chính mình trang bị kịch bản.</p>
+<p>Hơn nữa, Trì Sóc vừa rồi nhìn một chút, này một bộ trang bị, xác thật là nhất thích hợp Vực Sâu Chúa Tể.</p>
+<p>Trì Sóc đối Tiểu Bạch chủ bá càng ngày càng cảm thấy hứng thú, đánh chữ nói “Tiếp tục bài vị?”</p>
+<p>Diệp Thiếu Dương “Hảo, dứt khoát đánh tới giữa trưa ăn cơm đi.”</p>
+<p>Hai người tiếp tục tổ đội bài vị.</p>
+<p>Sau đó, các võng hữu kiến thức tới rồi trung dã liên kết đáng sợ chỗ!</p>
+<p>Lão bản vẫn luôn tuyển [ Huyết Y Thích Khách ] đánh dã, Tiểu Bạch vẫn luôn tuyển [ Vực Sâu Chúa Tể ] đi trung lộ, người trước là đánh dã giữa sức bật mạnh nhất, người sau là pháp sư giữa thu gặt năng lực mạnh nhất……</p>
+<p>Đánh dã cùng trung đơn liên thủ xuất kích, đó chính là hủy thiên diệt địa thương tổn, trừng ai ai chết.</p>
+<p>Đại gia phát hiện, Tiểu Bạch cùng lão bản phối hợp tương đương ăn ý, hoặc là là Tiểu Bạch flash đi đem đối diện đánh cho tàn phế, đánh dã vào bàn thu đầu người; hoặc là là đánh dã đem đối diện huyết lượng đè thấp, Tiểu Bạch lại phóng hắc ảnh qua đi thu gặt.</p>
+<p>Chỉ cần bọn họ đồng thời ra tay, cơ hồ không ai có thể từ hai người bọn họ thủ hạ chạy trốn.</p>
+<p>Kế tiếp bài vị không có đụng vào chức nghiệp đoàn xe, hai người lại bắt đầu thắng liên tiếp.</p>
+<p>Mạnh nhất vương giả ×2 tinh!</p>
+<p>Mạnh nhất vương giả ×4 tinh!</p>
+<p>Mạnh nhất vương giả ×10 tinh!</p>
+<p>Phòng live stream võng hữu sôi nổi spam ——</p>
+<p>【 trung dã liên kết quá khủng bố, súc ở tháp hạ đều có thể bị này hai cường sát! 】</p>
+<p>【666, xem đến thật đã ghiền! 】</p>
+<p>【 đối diện dã khu bị phản quang, căn bản vô pháp đánh 】</p>
+<p>【 Tiểu Bạch chủ bá lại lại lại thắng liên tiếp lạp! Vực Sâu Chúa Tể đem đem MVP, chiến lực 9000! 】</p>
+<p>Đem đem MVP? Đó là bởi vì lão bản phối hợp đến hảo.</p>
+<p>Trước mắt chiến lực đã vượt qua 9000, khoảng cách version nội địa 10000 tiêu chuẩn kém không xa.</p>
+<p>Diệp Thiếu Dương kiếp trước đặc biệt thích chơi pháp sư dồn sát thương loại anh hùng, cùng đánh dã liên kết , sát bạo đối diện da giòn.</p>
+<p>Cũng nguyên nhân chính là này, sau lại thi đấu thời điểm, đối diện huấn luyện viên thường xuyên sẽ BAN rớt hắn lợi hại pháp sư dồn sát thương. Chính thức Chức Nghiệp League giữa, hắn rất khó tuyển đến chính mình thích pháp sư dồn sát thương anh hùng.</p>
+<p>Hắn đã thật lâu không có cảm thụ quá như vậy sảng khoái trung dã liên kết phối hợp.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong17.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong19.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "toan-nang-trung-don-dien-canh";
+const NOVEL_TITLE = "Toàn năng trung đơn ( điện cạnh )";
+const CHAPTER_TITLE = "Chương 18, trung dã liên kết";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
