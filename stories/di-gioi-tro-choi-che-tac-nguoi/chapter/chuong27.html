@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 27</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Dị giới trò chơi chế tác người
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 27</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong26.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong28.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Ngày kế buổi sáng, Tạ Vân Phàm đem đại ca Tạ Tinh Hà, luật sư Trâu Chí Thành cùng nhau đưa đi sân bay.</p>
+<p>Hợp đồng đã ký kết, luật sư không cần thiết lưu tại đế đô, huống chi hắn luật sở còn có rất nhiều công tác.</p>
+<p>Tạ Tinh Hà còn lại là thu được Dung Thành bên kia thiết kế sư phát tới tin tức “Quá xong tiết, chúng ta công ty nội thất công nhân đều đã trở lại, Tạ tiên sinh, các ngươi muốn tuyển cái ngày tốt khởi công sao?”</p>
+<p>Trải qua vài lần sửa chữa, office building trang hoàng thiết kế đã định rồi, liền chờ khởi công đâu. Dù sao Tạ Tinh Hà lưu tại đế đô, trò chơi thiết kế phương diện hắn cũng giúp không được vội, dứt khoát trở về đương trông coi.</p>
+<p>Bất quá, đi phía trước Tạ Tinh Hà vẫn là không quá yên tâm, nhìn đệ đệ nói “Ngươi một người ở đế đô, nếu là có người khi dễ ngươi, nhất định nói cho ta.”</p>
+<p>Tạ Vân Phàm bất đắc dĩ nói “Yên tâm đi, ta đều thành niên, sẽ chiếu cố hảo chính mình.”</p>
+<p>Tạ Tinh Hà cười nói “Kia ta đi rồi, office building trang hoàng có cái gì tiến triển, ta lại cho ngươi phát ảnh chụp.”</p>
+<p>“Tốt ca, vất vả ngươi nhìn chằm chằm một chút. Chờ trò chơi này làm xong, chúng ta office building phỏng chừng cũng trang hoàng hảo, đến lúc đó lại chính thức nhận người.”</p>
+<p>Tạ Tinh Hà sảng khoái mà nói “Không thành vấn đề!”</p>
+<p>Tạ Vân Phàm nói “Còn có, trò chơi này nghiên cứu phát minh thời gian muốn vài tháng, ta phải lưu tại đế đô phối hợp công tác, trường học bên kia chỉ có thể trước tạm nghỉ học nửa năm, sang năm lại trở về học bù. Tạm nghỉ học xin muốn gia trưởng ký tên, ca ngươi đến lúc đó giúp ta đi một chuyến trường học, đem xin biểu cho ta gửi lại đây đi.”</p>
+<p>Tạ Tinh Hà sửng sốt một chút.</p>
+<p>Gia trưởng ký tên? Cũng đúng, cha mẹ không còn nữa, hắn hiện tại tính Vân Phàm “Gia trưởng”, đáng tiếc hắn cái này ca ca không có gì tiền đồ, hiện giờ nhưng thật ra nhìn đệ đệ càng bay càng cao, đều có thể cùng Khải Hàng hợp tác đại hạng mục, hắn thật là có chung vinh dự.</p>
+<p>Tạ Tinh Hà tâm tình phức tạp mà vươn tay, xoa xoa đệ đệ đầu, nói “Yên tâm, này đó đều giao cho ta tới làm đi, ca ca sẽ toàn lực duy trì công tác của ngươi.”</p>
+<p>Huynh đệ hai người nhìn nhau cười, ôm một chút, cho nhau từ biệt.</p>
+<p>Trâu luật sư nhìn một màn này cũng rất là vui mừng.</p>
+<p>Tạ gia, xem ra thật có thể Đông Sơn tái khởi!</p>
+<p>Buổi chiều, Tạ Vân Phàm mang theo Ninh Toa cùng với Sở Việt, đúng giờ đi vào Khải Hàng trò chơi tổng bộ.</p>
+<p>Xã giao giám đốc tự mình tiếp bọn họ đến 13 lâu phòng họp.</p>
+<p>To như vậy trong phòng hội nghị ngồi đầy người, cái này làm cho “Mới vào chức trường” Sở Việt khẩn trương đến đôi tay đều ở phát run. Không khỏi ở trước mặt mọi người xấu mặt, hắn vội vàng đem tay nhét vào trong túi, yên lặng đi theo lão bản phía sau, thấp đầu hạ thấp tồn tại cảm.</p>
+<p>Tạ Vân Phàm nhưng thật ra thần sắc bình tĩnh, đại trò chơi hạng mục, công tác đoàn đội có hơn trăm người đều thực thường thấy, Khải Hàng hiển nhiên rất coi trọng lần này hợp tác, đem công ty tinh nhuệ đều điều lại đây.</p>
+<p>Nhiếp giám đốc chỉ chỉ hội nghị bàn phía trước nhất vị trí, nói “Tạ tiên sinh, bên này thỉnh.”</p>
+<p>Tạ Vân Phàm thần sắc thản nhiên mà đi qua đi ngồi xuống.</p>
+<p>Trong phòng hội nghị người đều không quen biết hắn, còn tưởng rằng hắn là công ty mới tới đồng sự.</p>
+<p>Đại gia ở trong đàn trộm đánh chữ nghị luận “Người này ai a? Nhìn qua hảo tuổi trẻ.”</p>
+<p>“Là mới tới thực tập sinh sao? Chưa thấy qua a!”</p>
+<p>“Hắn vị trí ở Lạc tổng bên cạnh, nên không phải là Lạc tổng tìm tới trợ lý đi?”</p>
+<p>Một lát sau, Lạc Hàng đẩy cửa tiến vào. Thời gian vừa lúc buổi sáng 9 giờ chỉnh.</p>
+<p>Lạc Hàng ánh mắt quét mắt phòng họp, nói “Người đến đông đủ, mở họp đi.”</p>
+<p>Hắn đi qua đi, ở Tạ Vân Phàm bên cạnh vị trí ngồi xuống, bình tĩnh mà nói “Hôm nay đem đại gia kêu lên tới, là vì triệu khai 《 Địa Phủ Mê Cung thực tế ảo bản 》 khởi động đại hội. Từ giờ trở đi, chúng ta Khải Hàng trò chơi cùng Dương Phàm phòng làm việc, chính thức hợp tác thành lập 《 Địa Phủ Mê Cung thực tế ảo bản 》 công tác tổ, hôm nay đang ngồi các vị, đều là công tác tổ thành viên, hoan nghênh đại gia gia nhập cái này cấp quan trọng hạng mục.”</p>
+<p>Trong phòng hội nghị vang lên nhiệt liệt vỗ tay.</p>
+<p>“Yêu cầu cường điệu một chút, lần này hạng mục nghiêm khắc bảo mật, tất cả mọi người muốn thiêm bảo mật hiệp nghị, về sau công tác tiến trình trung, hết thảy cùng trò chơi có quan hệ tin tức đều không thể hướng ra phía ngoài người lộ ra, bao gồm các ngươi người nhà bằng hữu, cũng không thể đề cập, hy vọng đại gia phối hợp.”</p>
+<p>Trợ lý tiểu Tề nhanh chóng đem bảo mật hiệp nghị phân phát đến bàn làm việc thượng, làm đại gia lấy về đi thiêm.</p>
+<p>Lạc Hàng dừng một chút, mở ra laptop, lấy ra trước tiên chế tác tốt PPT, kỹ càng tỉ mỉ giảng thuật đối 《 Địa Phủ Mê Cung 》 trò chơi này thị trường tiền cảnh phân tích.</p>
+<p>Khải Hàng trò chơi CEO xác thật rất có quyết đoán, nói chuyện logic rõ ràng, các loại số liệu bảng biểu cũng thực có sức thuyết phục, thủ hạ người đều ở ngẩng đầu nghiêm túc mà nghe hắn giảng, không một cái làm việc riêng.</p>
+<p>Bọn họ lần này ở nước ngoài tiến hành rồi kỹ càng tỉ mỉ thị trường điều nghiên, cho rằng “Thực tế ảo game kinh dị” tiềm lực thật lớn, đây cũng là Khải Hàng cùng Tạ Vân Phàm hợp tác mấu chốt.</p>
+<p>Lạc Hàng giới thiệu xong thị trường tiền cảnh sau, nhìn về phía Tạ Vân Phàm, nói “Phía dưới, ta cho đại gia trọng điểm giới thiệu một chút, lần này hạng mục tổng kế hoạch —— Tạ Vân Phàm tiên sinh. Đại gia hoan nghênh.”</p>
+<p>Mọi người “A???”</p>
+<p>Trong phòng hội nghị nhân viên công tác tập thể sửng sốt.</p>
+<p>Vừa rồi, thấy vị này 20 xuất đầu tiểu soái ca đi vào phòng họp, bọn họ còn tưởng rằng, đây là lão bản tìm tới tiểu trợ lý, hoặc là chạy chân đánh tạp thực tập sinh……</p>
+<p>Kết quả, hắn cư nhiên th·à·nh h·ạng mục tổng kế hoạch?</p>
+<p>Như vậy tuổi trẻ? Có thể trấn trụ bãi sao?</p>
+<p>Lạc Hàng đi đầu vỗ tay, công nhân nhóm phản ứng lại đây, lúc này mới vội vàng đuổi kịp lão bản tiết tấu, trong phòng hội nghị vang lên thưa thớt vỗ tay.</p>
+<p>Tạ Vân Phàm đứng lên, thần sắc thong dong “Chào mọi người, ta là 《 Địa Phủ Mê Cung 》 game mobile bản tổng kế hoạch, Dương Phàm phòng làm việc người phụ trách Tạ Vân Phàm. Cảm tạ Lạc tổng tín nhiệm, thực vinh hạnh có thể tiếp tục đảm nhiệm thực tế ảo bản địa phủ tổng kế hoạch, hy vọng đại gia hợp tác vui sướng.”</p>
+<p>Mọi người “……”</p>
+<p>Game mobile cùng game thực tế ảo căn bản không phải một mã sự, lão bản vì cái gì sẽ làm hắn hàng không đương kế hoạch? Phòng họp góc, có không ít người cúi đầu nhíu mày, lộ ra không hiểu, thậm chí khó chịu biểu tình.</p>
+<p>Làm một ngoại nhân tới quản hạng mục, đáng tin cậy sao?</p>
+<p>“Một trò chơi, quan trọng nhất chính là cách chơi, đây cũng là ta thỉnh hắn tiếp tục đảm nhiệm thực tế ảo bản kế hoạch mấu chốt, ta tin tưởng hắn tài hoa cùng năng lực.”</p>
+<p>“Đương nhiên, game mobile cùng game thực tế ảo có rất nhiều bất đồng, cụ thể như thế nào cải biên, ta cũng sẽ tự mình tiến tổ, đảm nhiệm trò chơi tổng giám chế, cùng kế hoạch cùng nhau đem hảo quan.”</p>
+<p>“Các vị đối công tác an bài có ý kiến gì, có thể trực tiếp cùng ta phản ứng.”</p>
+<p>Mọi người “……”</p>
+<p>Lạc Hàng câu này “Có ý kiến hướng ta tới”, hiển nhiên là ở lực đĩnh Tạ Vân Phàm.</p>
+<p>Xem ra, Lạc tổng thực coi trọng Tạ Vân Phàm tài hoa, Tạ Vân Phàm đảm nhiệm chủ kế hoạch đã là ván đã đóng thuyền sự thật, đại gia chẳng sợ trong lòng không phục, mặt ngoài cũng không dám minh xác phản đối.</p>
+<p>Vỗ tay hơi chút nhiệt liệt chút.</p>
+<p>Cũng có chút người đối Tạ Vân Phàm biểu đạt thiện ý “Hoan nghênh!”</p>
+<p>Lạc Hàng nhìn về phía Tạ Vân Phàm, ngữ khí ôn hòa “Ngươi có cái gì muốn nói sao?”</p>
+<p>Tạ Vân Phàm nói “Đại gia đối ta còn chưa đủ hiểu biết, có nghi ngờ cũng thực bình thường. Bất quá, chúng ta mục tiêu là nhất trí, đều muốn làm hảo trò chơi này, nếu trong quá trình có cái gì tranh luận, hy vọng đại gia đừng để trong lòng. Ta luôn luôn đối sự, không đối người.”</p>
+<p>“Ta lần này, còn mang theo 《 Địa Phủ Mê Cung 》 hai vị nguyên họa sư lại đây. Nhân vật họa sư Ninh Toa, cảnh tượng họa sư Sở Việt, đại gia trước nhận thức một chút.”</p>
+<p>Ninh Toa chủ động đứng lên, tự nhiên hào phóng mà cùng mọi người chào hỏi “Các vị hảo, ta là Ninh Toa, thật cao hứng có thể cùng đại gia cùng nhau công tác.”</p>
+<p>Sở Việt tuy là chức trường tay mơ, nhưng hắn phản ứng mau, đi theo Ninh Toa học theo, đảo cũng không trêu chọc ra cái gì chê cười.</p>
+<p>Chỉ là, hai vị hàng không nguyên họa sư, làm trong phòng hội nghị Mỹ Thuật tổ người sắc mặt thật không đẹp —— ngoài ra còn thêm mỹ thuật, đây là coi thường bọn họ Khải Hàng Mỹ Thuật tổ sao?</p>
+<p>Tạ Vân Phàm bổ sung nói “Ta thực thích 《 Tinh Không Mạn Bộ 》 mỹ thuật phong cách, nhưng 《 Địa Phủ Mê Cung 》 là kiểu Trung Quốc kh·ủ·ng b·ố, ta hy vọng thực tế ảo bản cùng game mobile bản phong cách bảo trì nhất trí, làm cho bọn họ tiếp tục họa, không cần phí thời gian đi ma hợp, hy vọng đại gia lý giải.”</p>
+<p>Lạc Hàng gật gật đầu, nhìn về phía Khải Hàng Mỹ Thuật tổ trưởng “Hạ tổng giám, về sau, toàn lực phối hợp hai vị họa sư công tác.”</p>
+<p>Hạ Dĩ Hi không rất cao hứng mà rũ xuống đôi mắt “Thu được.”</p>
+<p>Tạ Vân Phàm nói “Ta nơi này có một phần Địa Phủ Mê Cung game mobile bản kỹ càng tỉ mỉ tư liệu giả thiết, đại gia quay đầu lại có thể trước hiểu biết nhìn xem.”</p>
+<p>Lạc Hàng nhìn về phía bên cạnh trợ lý “Tiểu Tề, đem mọi người kéo một cái công ty bên trong công tác đàn, về sau có tư liệu, cũng cũng may trong đàn tuyên bố cùng chung.”</p>
+<p>Tiểu Tề lập tức kéo người kiến đàn.</p>
+<p>Khải Hàng trò chơi có chính mình bên trong làm công internet, kéo đàn thực mau, Tạ Vân Phàm mấy cái ngoại lai người yêu cầu mặt khác đăng ký tài khoản.</p>
+<p>Một lát sau, tên là “Địa Phủ Mê Cung thực tế ảo bản” công tác đàn chính thức thành lập.</p>
+<p>Trong đàn có gần trăm người, ấn tiểu tổ phân loại, như Mỹ Thuật tổ, Trị Số tổ, Trình Tự tổ, Quan Tạp tổ từ từ, mỗi cái tiểu tổ đều có chính mình người phụ trách. Mà “Tổng kế hoạch - Tạ Vân Phàm” cùng “Tổng giám chế - Lạc Hàng” song song xếp hạng trước nhất, hai người đều thành đàn quản lý.</p>
+<p>Khải Hàng nhân viên công tác hai mặt nhìn nhau.</p>
+<p>Hàng không tổng kế hoạch sự, truyền ra đi nói, sẽ trở thành trong nghề cười liêu đi? Lạc tổng cũng thật đủ lớn mật, như vậy quan trọng hạng mục, giao cho một ngoại nhân……</p>
+<p>Tạ Vân Phàm ở trong đàn chia sẻ game mobile giả thiết tư liệu, nói “Đại gia sau khi trở về, trước nhìn một cái tư liệu, ngày mai buổi sáng 9 điểm, ta lại cùng các ngươi kỹ càng tỉ mỉ an bài đệ nhất giai đoạn công tác kế hoạch.”</p>
+<p>Hắn nhìn về phía Lạc Hàng, phóng nhẹ thanh âm nói “Lạc tổng, không khác sự nói, có thể trước tan họp, ta có mấy vấn đề tưởng cùng ngươi thảo luận một chút.”</p>
+<p>Lạc Hàng nói “Hảo, tan họp.”</p>
+<p>Hắn khép lại laptop, đứng dậy mang theo Tạ Vân Phàm đi chính mình văn phòng. Ninh Toa cùng Sở Việt cũng tự giác mà đi theo lão bản ra cửa.</p>
+<p>Mấy người đi rồi, trong phòng hội nghị giống như nổ tung nồi.</p>
+<p>“Ngọa tào, không lầm đi? Tiểu tử này nhìn qua tuổi tác còn không có ta đại, đương tổng kế hoạch?”</p>
+<p>“Sẽ làm game mobile, không nhất định sẽ làm thực tế ảo, Lạc tổng tưởng cái gì đâu?”</p>
+<p>“Không biết, chúng ta Khải Hàng một cái công ty lớn, Dương Phàm phòng làm việc không có gì danh khí, nói như thế nào cũng nên chúng ta người đương tổng kế hoạch, hắn đảm đương phó tổ trưởng còn nói đến thông.”</p>
+<p>“Không hiểu Lạc tổng ý nghĩ, bất quá, Lạc tổng mỗi lần quyết định đều là đúng.”</p>
+<p>“……”</p>
+<p>Tuy rằng đại gia không tin Tạ Vân Phàm, nhưng bọn hắn tin tưởng Lạc Hàng.</p>
+<p>Có Lạc Hàng trấn bãi, mặc dù trong lòng có câu oán hận cũng ngượng ngùng nói ra, lén phun tào vài câu sau, đại gia liền từng người trở về chính mình văn phòng.</p>
+<p>Lạc Hàng văn phòng ở vào Khải Hàng cao ốc tầng cao nhất, không gian rộng mở, văn phòng kệ thủy tinh còn cất chứa không ít Khải Hàng trò chơi quanh thân cùng với đạt được vinh dự giấy chứng nhận.</p>
+<p>Tạ Vân Phàm đi vào văn phòng, nhìn nơi này bày biện, không khỏi tâm sinh hâm mộ. Hắn kiếp trước cũng không có lớn như vậy văn phòng đâu.</p>
+<p>Lạc Hàng cấp Tạ Vân Phàm đổ một ly trà, mang theo đối phương tới sô pha bên ngồi xuống, hỏi “Đối với thực tế ảo bản cải biên, ngươi có phải hay không đã có ý tưởng?”</p>
+<p>Tạ Vân Phàm nói “Ân, game mobile bản lúc ấy làm được tương đối vội vàng, hơn nữa kinh phí hữu hạn, rất nhiều cách chơi đều chưa kịp thực hiện, ta tưởng ở thực tế ảo bản trung hoàn thiện địa phủ thiết kế.”</p>
+<p>Lạc Hàng thực cảm thấy hứng thú nói “Nói như vậy, thực tế ảo bản cách chơi sẽ càng thêm phong phú?”</p>
+<p>Tạ Vân Phàm nói “Đương nhiên, Ngũ Phương Quỷ Đế, mười đại Diêm Vương, đầu trâu mặt ngựa, này đó NPC sẽ toàn bộ họa ra tới. Còn có cầu Nại Hà, Uổng Mạng Thành, Nghiệt Kính đài, lục đạo luân hồi môn, Sâm La Điện từ từ độc lập với 18 địa ngục ở ngoài cảnh tượng, ta cũng tưởng toàn bộ làm tốt.”</p>
+<p>Hắn dừng một chút, nghiêm túc mà nói “Ta tưởng hiện ra, không chỉ là một cái 18 tầng mê cung, mà là toàn bộ vong hồn nơi thế giới ngầm, cũng gọi là —— Quỷ Giới.”</p>
+<p>Lạc Hàng “……”</p>
+<p>Toàn bộ vong hồn thế giới sao? Quỷ Giới, nghe đi lên rất có ý tứ.</p>
+<p>Nhìn Tạ Vân Phàm đĩnh đạc mà nói bộ dáng, Lạc Hàng lại tìm về đã lâu “Nhiệt tình”. Năm đó nhắc tới 《 Tinh Không Mạn Bộ 》 thời điểm, hắn cũng là như thế này có liêu không xong ý tưởng, nói không xong sáng ý, đối trò chơi hiện ra tràn ngập chờ mong.</p>
+<p>Tạ Vân Phàm liêu khởi trò chơi tới, đồng dạng tự tin tràn đầy.</p>
+<p>Hắn trong đầu có quá nhiều phong phú ý tưởng, nếu có thể đem này đó đều ở thực tế ảo bản địa phủ trung hiện ra…… Sẽ là cỡ nào làm người chơi kinh hỉ một sự kiện?</p>
+<p>Lạc Hàng mỉm cười nói “Ngươi là chủ kế hoạch, trò chơi chỉnh thể cải biến từ ngươi tới quyết định. Đương nhiên, game thực tế ảo cần thiết phải chú ý người chơi thể nghiệm cảm, tỷ như, ngươi hàn băng địa ngục, tổng không thể độ ấm quá thấp, thật đem người chơi cấp đông lạnh ra bóng ma tâm lý tới.”</p>
+<p>Người chơi chơi trò chơi, có thể thể nghiệm mạo hiểm cùng kích thích, nhưng không phải cố ý đi tìm ngược. Ngươi nếu là dao nhỏ thật sự không ngừng vết cắt người chơi, lồng hấp thật sự làm nhân thể nghiệm đến chính mình mau bị chưng thục…… Này không gọi trò chơi, cái này kêu “Khổ hình”.</p>
+<p>Không ai sẽ tiêu tiền đi tìm tội chịu.</p>
+<p>Ở mạo hiểm, kích thích cơ sở thượng, bảo đảm trò chơi nhưng chơi tính mới là mấu chốt.</p>
+<p>Tạ Vân Phàm sờ sờ cái mũi, nói “Game thực tế ảo trị số khống chế ta xác thật không hiểu lắm, còn cần Lạc tổng tự mình trấn cửa ải, ngươi có làm thực tế ảo kinh nghiệm, phương diện này ta tin tưởng ngươi phán đoán.”</p>
+<p>Lạc Hàng nhẹ nhàng thở ra, hắn liền sợ Tạ Vân Phàm quá trục, rất nhiều đạo lý giảng không thông, hai người nếu là khác nhau quá nhiều, trò chơi nghiên cứu phát minh tiến độ liền sẽ đình trệ.</p>
+<p>Còn hảo Tạ Vân Phàm không phải tự đại đồ đệ, nguyện ý nghe ý kiến.</p>
+<p>Lạc Hàng giải thích nói “Chúng ta công ty có chuyên nghiệp y học đoàn đội, có thể căn cứ người chơi thần kinh ngưỡng giới hạn, thừa nhận cực hạn chờ số liệu, tới thiết kế hoàn cảnh mặt trái ảnh hưởng. Tỷ như lồng hấp địa ngục, game mobile người chơi chỉ có thể nhìn đến chân dung mặt trên nhiệt khí giá trị. Phiên bản thực tế ảo, người chơi tiến vào lồng hấp địa ngục sau, sẽ cảm nhận được chân thật ‘ nhiệt ’, phảng phất thật sự thân ở lồng hấp trung. Cái này độ ấm, chúng ta sẽ khống chế ở làm người chơi rất khó chịu, nhưng không đến mức sinh lý tính ngất trình độ.”</p>
+<p>Nghe Lạc Hàng nói lên này đó chuyên nghiệp đồ vật, Tạ Vân Phàm phát hiện, game thực tế ảo xác thật không hắn tưởng đơn giản như vậy.</p>
+<p>Hắn gật gật đầu, nhìn về phía đối phương nói “Lạc tổng, ta chỉ làm trò chơi cách chơi, bản đồ chờ thiết kế, mỗi cái hoàn cảnh trị số nên như thế nào điều chỉnh, có thể toàn bộ giao cho ngươi.”</p>
+<p>Lạc Hàng mỉm cười nói “Cảm ơn ngươi tín nhiệm, chúng ta hợp tác cộng thắng.”</p>
+<p>Tạ Vân Phàm cũng cười gãi gãi đầu.</p>
+<p>Những lời này, kỳ thật hẳn là từ hắn tới nói.</p>
+<p>Cảm ơn ngươi tín nhiệm, làm ta một cái “Tay mơ kế hoạch” tiếp tục chủ đạo Địa Phủ Mê Cung hạng mục, thậm chí tại hội nghị công khai lực đĩnh, làm công nhân có ý kiến hướng ngươi tới……</p>
+<p>Đây là ngươi đối trò chơi sáng ý lý giải cùng tôn trọng, ta sẽ không làm ngươi thất vọng.</p>
+<p>【 nhị hợp nhất, họp hội ý 】</p>
+<p>Ngày kế sáng sớm 9 điểm, Tạ Vân Phàm đúng giờ đi vào Khải Hàng trò chơi tổng bộ.</p>
+<p>Lạc Hàng làm hậu cần thuộc cấp toàn bộ 13 lâu đều thu thập ra tới, thành lập lâm thời “Địa Phủ Mê Cung công tác khu”, sở hữu tiểu tổ thành viên đều dọn đến tầng lầu này làm công, cho nhau câu thông tương đối phương tiện.</p>
+<p>Ngay cả Lạc Hàng chính mình, cũng đem làm công đồ dùng dọn xuống dưới, làm tốt “Trường kỳ chiến đấu” chuẩn bị, Tạ Vân Phàm văn phòng an bài ở hắn bên cạnh.</p>
+<p>Tạ Vân Phàm cầm laptop, đi phòng họp mở họp.</p>
+<p>Hắn tối hôm qua suốt đêm làm thực tế ảo bản địa phủ quy hoạch, hơn nữa làm triển lãm cá nhân kỳ PPT hồ sơ, tính toán cho đại gia cẩn thận giảng một giảng.</p>
+<p>Đi đến nửa đường, đột nhiên phát hiện một cái tóc vàng nam sinh đứng ở chỗ ngoặt nơi đó lén lút chụp ảnh, Tạ Vân Phàm thấy hắn lén lút, không khỏi đi qua đi nói “Làm gì đâu?”</p>
+<p>Sở Việt sợ tới mức thiếu chút nữa nhảy dựng lên.</p>
+<p>Quay đầu lại đối thượng Tạ Vân Phàm đôi mắt, hắn gương mặt đỏ lên, vội vàng nhỏ giọng nói “Lão bản, ta ba mẹ căn bản không tin ta tới Khải Hàng, ta chụp ảnh cho bọn hắn chứng minh một chút, hắc hắc.”</p>
+<p>Làm 《 Tinh Không Mạn Bộ 》 fan trung thành, có thể tới Khải Hàng tổng bộ, Sở Việt tổng cảm thấy chính mình sống ở trong mộng, tối hôm qua đều mất ngủ, đỉnh một đôi rõ ràng quầng thâm mắt.</p>
+<p>Tạ Vân Phàm hiếu kỳ nói “Tới Khải Hàng công tác, như vậy làm ngươi kích động sao?”</p>
+<p>Sở Việt gãi gãi tóc “Dù sao cũng là quốc nội lớn nhất game thực tế ảo công ty chi nhất, ta rất nhiều đồng học nằm mơ đều nghĩ đến nơi này tham quan. Vẫn là ta vận khí tốt, gặp được lão bản, đi theo ngươi đi tới trong mộng địa phương, hắc hắc.”</p>
+<p>Vị này nghệ thuật thanh niên ngẫu nhiên có chút khờ khạo, bất quá hắn họa cảnh tượng thời điểm phi thường lớn mật. Tạ Vân Phàm vỗ vỗ vai hắn “Vậy quý trọng lần này cơ hội. Các ngươi trường học, không quay về không thành vấn đề đi?”</p>
+<p>Sở Việt vội nói “Không thành vấn đề! Ta đều đại bốn, đúng hạn giao đề cương luận văn là được.”</p>
+<p>Tạ Vân Phàm hỏi “Công tác hoàn cảnh còn thói quen sao?”</p>
+<p>Sở Việt nói “Còn hảo, bọn họ cho ta cùng Toa Toa tỷ an bài một cái văn phòng, Toa Toa tỷ người khá tốt, cũng tương đối chiếu cố ta.”</p>
+<p>Lễ phép cùng tôn trọng phương diện, Khải Hàng luôn luôn thực chu đáo, không có khó xử Tạ Vân Phàm mang đến người.</p>
+<p>Tạ Vân Phàm gật gật đầu “Hảo, đi mở họp đi.”</p>
+<p>Một lát sau, 13 lâu văn phòng nội.</p>
+<p>Hạng mục tổ toàn viên đến đông đủ, Lạc Hàng cũng tự mình tới.</p>
+<p>Tạ Vân Phàm mở ra chính mình chế tác PPT, giảng thuật nói “Lần này game thực tế ảo, không đơn thuần chỉ là là 18 tầng địa phủ mê cung, mà là toàn bộ thế giới ngầm, cũng chính là nhân loại sau khi ch·ế·t vong hồn đi vào thế giới, chúng ta kêu nó Quỷ Giới.”</p>
+<p>“Tiến vào Quỷ Giới, yêu cầu trải qua quỷ môn quan, thông qua một cái thật dài lộ, tới Sâm La Điện, Sâm La Điện là Quỷ Giới làm công địa phương, nó mặt sau là một tòa Âm Sơn, lại sau này là mười tám địa ngục.”</p>
+<p>“Game thực tế ảo mười tám địa ngục, cùng game mobile bản mê cung không giống nhau. Game mobile người chơi có thể gan trò chơi liên tục gan mười mấy giờ, qua tầng thứ nhất lại đi tầng thứ hai, là một cái ‘ trình tự ’ cách chơi, còn có Mạnh bà hồi đương tới ngược đãi người chơi. Game thực tế ảo người chơi tại tuyến thời gian không thể quá dài, nếu làm như vậy, ta tưởng, không ai sẽ có kiên nhẫn, một tầng một tầng hoa nửa năm thời gian đi đi kh·ủ·ng b·ố mê cung.”</p>
+<p>“Game thực tế ảo trọng ở thể nghiệm, cho nên, ta ở chỗ này làm một ít cải biến, đem 18 địa ngục làm thành một cái mặt bằng đại cảnh tượng, tựa như võng du bản đồ, một mảnh khu vực đại biểu một cái địa ngục, người chơi có thể lựa chọn tiến vào nào đó địa ngục, đơn đi này một cái địa ngục mê cung, hơn nữa khiêu chiến nên tầng Boss, quá quan sau lại tuyển một cái khác.”</p>
+<p>“18 địa ngục mặt sau là cầu Nại Hà, Mạnh bà liền ở cầu Nại Hà bên kia chờ ngươi, canh Mạnh bà ở game thực tế ảo công năng không phải hồi đương, mà là làm vong hồn quên đi hết thảy kiếp trước nhân quả, tẩy sạch ký ức luân hồi chuyển thế.”</p>
+<p>“Lại sau này là Uổng Mạng Thành, Bình Dương đại đạo, lục đạo luân hồi môn, trải qua luân hồi môn, có thể đầu thai chuyển thế, mở ra tân nhân sinh.”</p>
+<p>Tạ Vân Phàm chỉ vào PPT toàn bộ Quỷ Giới đại địa đồ, nói “Đây là vong hồn đi vào địa phủ sau, yêu cầu trải qua toàn bộ quá trình.”</p>
+<p>Mọi người “…………”</p>
+<p>Cho nên, thực tế ảo bản địa phủ, tương đương với “Vong hồn địa phủ lịch hiểm ký” sao?</p>
+<p>Tạ Vân Phàm nói “Trừ bỏ này đó nhất định phải đi qua chi lộ ngoại, còn có thêm vào trứng màu khu vực, tỷ như Ngũ Phương Quỷ Đế sở trấn thủ năm tòa sơn, có thể cho người chơi thưởng thức địa phủ bất đồng phong cảnh.”</p>
+<p>Hắn nhìn về phía Lạc Hàng, nói “Ta suy xét đến thực tế ảo người chơi tại tuyến khi trường không thể lâu lắm, cho nên, mỗi cái cảnh tượng tiết tấu đều phải nhanh hơn, hơn nữa làm đại địa đồ lựa chọn, cùng loại Tinh Không Mạn Bộ như vậy, người chơi muốn đi cái nào tinh cầu liền đi đâu cái tinh cầu, đối trò chơi cảm thấy hứng thú người chơi, có thể chậm rãi thăm dò, thích nào đó khu vực, cũng có thể lặp lại chỉ chơi này một mảnh địa phương.”</p>
+<p>Thực tế ảo cùng game mobile lớn nhất khác nhau chính là “Đắm chìm thể nghiệm”.</p>
+<p>Nếu thật đem người chơi ném vào Địa Phủ Mê Cung tr·a t·ấ·n vài tiếng đồng hồ, không ít người sẽ tinh thần hỏng mất yêu cầu tâm lý trị liệu, vậy không cần thiết. Lập thể mê cung thích hợp si cũng thực không hữu hảo.</p>
+<p>Cấp nhất định tự chủ lựa chọn quyền, bọn họ mới nguyện ý trả phí, đi thể nghiệm “Vong hồn thế giới”.</p>
+<p>Đây là cái mới lạ thế giới, theo bản đồ chậm rãi giải khóa, Quỷ Giới cũng sẽ càng thêm hoàn chỉnh.</p>
+<p>Tạ Vân Phàm nói “Địa phủ, trừ bỏ Hắc Bạch Vô Thường này đó có biên chế nhân viên công vụ ở ngoài, đương nhiên còn có rất nhiều du hồn dã quỷ, lần này thực tế ảo bản, vì làm địa phủ càng thêm rất thật, ta thêm vào thiết kế kỳ ngộ hệ thống.”</p>
+<p>“Người chơi tại địa phủ thăm dò trong quá trình, sẽ kích phát một ít kỳ ngộ, gặp được một ít cá tính quỷ quái, hiểu biết bọn họ chuyện xưa. Này đó đều làm thành nhiệm vụ chi nhánh.”</p>
+<p>“Tỷ như, Nhiếp Tiểu Thiến, nàng chính là một cái nữ quỷ, một thân bạch y, tóc dài chấm đất. Nàng bị bức hại người, lại đáy lòng thiện lương, gặp được thư sinh Ninh Thải Thần sau, hai người chi gian còn đã xảy ra một đoạn cảm động câu chuyện tình yêu……”</p>
+<p>Tạ Vân Phàm quyết định đem Liêu Trai chuyện xưa cùng địa phủ kết hợp.</p>
+<p>Đơn độc làm một cái địa phủ, chỉ có kh·ủ·ng b·ố, chơi lâu rồi cũng không có ý tứ gì.</p>
+<p>Nhưng nếu kết hợp đại lượng về quỷ quái truyền thuyết đâu? Như vậy, liền biến thành một cái có máu có thịt, rộng lớn mạnh mẽ —— Quỷ Giới.</p>
+<p>Nếu là Quỷ Giới, gặp được “Quỷ” thực bình thường.</p>
+<p>Mọi người sau khi ch·ế·t đều phải tới nơi này, bị Hắc Bạch Vô Thường “Hợp nhất” quỷ, đại bộ phận đều sẽ luân hồi chuyển thế, nhưng cũng có rất nhiều “Dã quỷ”, ở Quỷ Giới bên ngoài du đãng, không chịu tiến vào luân hồi.</p>
+<p>Người chơi gặp được Nhiếp Tiểu Thiến, có thể hiểu biết nàng vì cái gì biến thành dã quỷ.</p>
+<p>Kỳ ngộ kích phát Công Tôn Cửu Nương chi nhánh, cũng có thể hiểu biết nàng cuộc đời chuyện xưa……</p>
+<p>Kiều Sinh cùng Liên Thành, này đó thú vị truyền kỳ đương nhiên phải dùng “Chi nhánh” phương thức đặt ở Quỷ Giới giữa, người chơi còn có thể giúp các nàng hoàn thành hoàn hồn tâm nguyện, tương đương với hoàn thành nhiệm vụ chi nhánh.</p>
+<p>Rất nhiều chuyện xưa, nói không chừng còn có thể cấp người chơi mang đến một ít xúc động.</p>
+<p>—— đúng vậy, chúng ta Quỷ Giới, không được đầy đủ là kh·ủ·ng b·ố!</p>
+<p>Có hung ác t·à·n b·ạ·o lệ quỷ, tự nhiên cũng có trọng tình trọng nghĩa hảo quỷ.</p>
+<p>Có chút quỷ, như thế nào cũng không chịu quá cầu Nại Hà, không chịu uống xong kia một chén canh Mạnh bà, bởi vì hắn trong lòng yêu hận tình thù trước sau vô pháp buông, ở người chơi dưới sự trợ giúp, bọn họ có thể hoàn hồn trọng sinh, lại trong lòng vướng bận.</p>
+<p>Có chút quỷ, chẳng sợ đã ch·ế·t, cũng như cũ sửa không xong sinh thời “Ác”, bộ phận bị đánh vào mười tám trong địa ngục, trải qua khổ hình trừng phạt. Còn có một ít ở Quỷ Giới du đãng, làm thành dã ngoại lệ quỷ tiểu Boss, cấp người chơi tăng thêm trò chơi khó khăn.</p>
+<p>Vô số vong hồn cấu thành Quỷ Giới, đây mới là một cái no đủ, phong phú Quỷ Giới.</p>
+<p>Tạ Vân Phàm đối với chính mình bài giảng, thao thao bất tuyệt mà cho đại gia giới thiệu trò chơi thiết kế lý niệm.</p>
+<p>Khổng lồ Quỷ Giới bản đồ, phong phú nhiệm vụ chi nhánh.</p>
+<p>Phong cảnh xem xét khu, mê cung khiêu chiến khu, dã ngoại Boss, cốt truyện kỳ ngộ……</p>
+<p>Phòng họp mọi người nghe Tạ Vân Phàm giảng thuật, đều mau sợ ngây người.</p>
+<p>Lạc Hàng trên mặt lộ ra kinh ngạc lại thưởng thức thần sắc.</p>
+<p>Này thực tế ảo bản địa phủ, so với đơn thuần 18 tầng mê cung, không chỉ phong phú một chút a!</p>
+<p>Game mobile, chỉ là làm người chơi ở 18 trong địa ngục đảo quanh, người chơi có thể nhìn đến cũng chỉ có địa phủ mấy cái NPC, tương đương với “Tại địa phủ NPC giám sát hạ đi xong 18 tầng mê cung”.</p>
+<p>Nhưng game thực tế ảo không giống nhau, trừ bỏ mười tám địa ngục, còn gia tăng rồi quá nhiều nhưng chơi nội dung.</p>
+<p>Đây là trực tiếp làm ra một cái khổng lồ thế giới quan a?!</p>
+<p>Nếu Tạ Vân Phàm này đó giá cấu, thật sự có thể toàn bộ thực hiện nói, hắn làm được “Địa phủ thế giới quan”, hoàn toàn không thua với 《 Tinh Không Mạn Bộ 》 “Vũ trụ thế giới quan”!</p>
+<p>Chẳng qua, Tinh Không Mạn Bộ, là lãng mạn mỹ lệ khoa học viễn tưởng tinh tế lữ hành.</p>
+<p>Mà địa phủ, lại là mạo hiểm kích thích vong hồn thế giới lữ hành!</p>
+<p>Game thực tế ảo người chơi, thích nhất chính là loại này “Mới lạ thăm dò”.</p>
+<p>Làm cho bọn họ tới Quỷ Giới thăm dò.</p>
+<p>Tưởng chơi mạo hiểm kích thích, đi qua địa ngục mê cung, thể nghiệm địa ngục kh·ủ·ng b·ố, đi đánh mười đại Diêm Vương Boss, ch·ế·t đi sống lại đánh cái mấy ngày, quá quan sẽ rất có cảm giác thành tựu.</p>
+<p>Thích ngắm phong cảnh, đi Ngũ Phương Quỷ Đế năm tòa sơn nhìn liếc mắt một cái đi, không giống nhau địa phủ phong cảnh, khẳng định đáng giá chụp ảnh đánh tạp.</p>
+<p>Ái đi cốt truyện, có thể chơi nhiệm vụ chi nhánh, kích phát kỳ ngộ hệ thống, hiểu biết các loại nữ quỷ, nam quỷ nhóm làm người rơi lệ chuyện xưa, hiệp trợ này đó quỷ nhóm hoàn thành sinh thời tâm nguyện.</p>
+<p>Sở hữu thực tế ảo người chơi, đều có thể ở “Quỷ Giới” tìm được chính mình thích chơi nội dung.</p>
+<p>Như vậy trò chơi……</p>
+<p>Làm ra tới cũng thật là đáng sợ đi?</p>
+<p>Thẳng đến giờ phút này, đại gia mới phát hiện, bọn họ xác thật nghiêm trọng coi thường Tạ Vân Phàm.</p>
+<p>Gia hỏa này nhìn tuổi trẻ —— làm trò chơi, thật sự rất có ý tưởng.</p>
+<p>Trách không được Lạc tổng muốn cho Tạ Vân Phàm đương tổng kế hoạch, bọn họ chính mình đương kế hoạch nói, nghĩ đến ra nhiều như vậy trò chơi nội dung sao? Tưởng phá đầu đều nghĩ không ra a!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong26.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong28.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "di-gioi-tro-choi-che-tac-nguoi";
+const NOVEL_TITLE = "Dị giới trò chơi chế tác người";
+const CHAPTER_TITLE = "Chương 27";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

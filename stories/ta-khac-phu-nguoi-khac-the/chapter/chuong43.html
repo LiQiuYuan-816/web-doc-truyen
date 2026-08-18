@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 43 vương bộ đầu tính toán trốn chạy</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ta khắc phu, ngươi khắc thê
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 43 vương bộ đầu tính toán trốn chạy</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong42.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong44.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Tương hỉ dự tính ngày sinh ở tháng giêng, tới gần năm ấy quan, Dương mẫu rốt cuộc cấp tương hỉ hài tử tìm được rồi một cái thích hợp bà vú.</p>
+<p>Không phải phía trước muốn nhìn kia gia, là ngưu tam lực giới thiệu, ở nông thôn một cái mới vừa sinh xong hài tử nông phụ.</p>
+<p>Họ Mạnh, tương hỉ kêu nàng Mạnh đại tỷ.</p>
+<p>Nàng đã sinh quá bốn cái, hài tử quá nhiều thật sự ăn không được cơm, mới ra tới làm bà vú sống.</p>
+<p>Dương mẫu đem người cấp tương hỉ cùng cùng Dương Thống Xuyên lãnh trước mặt nhìn, cảm giác không tồi, mang hài tử cũng có kinh nghiệm.</p>
+<p>Giống nhau bà vú một tháng có thể có 300 văn tiền công, so nha hoàn đều cao.</p>
+<p>Dương Thống Xuyên nhiều cấp 50 văn, Mạnh đại tỷ ngàn ân vạn tạ tỏ lòng trung thành.</p>
+<p>Sở dĩ có thể nhiều cấp điểm, là bởi vì tương hỉ kiên trì ra ở cữ liền không cần bà vú, muốn chính mình mang.</p>
+<p>Tương cường khoảng thời gian trước cũng hỗ trợ chọn hảo một con lập tức liền phải hạ nhãi con mẫu dương buộc ở sân mặt sau.</p>
+<p>Dương Thống Xuyên muốn đem mua dương tiền cho hắn, tương cường chết sống không cần.</p>
+<p>“Trước kia nhật tử gian nan, thua thiệt hỉ ca nhi, hiện tại nhật tử hảo một chút, ta làm ca ca cũng muốn vì hắn làm chút gì.”</p>
+<p>“Đại ca đừng nói như vậy, tương hỉ chưa từng có như vậy nghĩ tới. Đúng rồi, đại ca khoảng thời gian trước không phải nói muốn đổi phòng ở sao? Xem thế nào.”</p>
+<p>“Trong nhà nhà cũ bán không được mấy cái tiền, chợ tiến lên cửa hàng hậu viện nhà ở cũng không tiện nghi, ta tính toán tìm cái quầy phường mượn tiền một ít. Sau đó chậm rãi còn.”</p>
+<p>“Điều này cũng đúng cái biện pháp, đến lúc đó ta làm đại ca giúp ngươi tìm một cái lợi tức hợp lý quầy phường, lợi tức có thể thấp một chút.”</p>
+<p>“Hảo hảo hảo, đến lúc đó liền phiền toái ngươi.”</p>
+<p>Tương cường cảm thấy từ tương hỉ gả tiến Dương gia, trong nhà có giúp đỡ, nhật tử quá đến quá thuận.</p>
+<p>Hiện tại tất cả đồ vật đều chuẩn bị thỏa đáng</p>
+<p>Chỉ đợi ăn tết.</p>
+<p>Hôm nay, Dương Thống Xuyên ở nha môn thượng chức, bị vương bộ đầu kêu đi vào, nói cho Dương Thống Xuyên một cái đại sự.</p>
+<p>“Quá xong năm, ta liền không tính toán làm.”</p>
+<p>“Ngài làm gì vậy, nhiều như vậy huynh đệ, ly ngài, đều phải lộn xộn.”</p>
+<p>“Ngươi cũng đừng cho ta mang cao mũ. Chúng ta Huyện lão gia sang năm liền phải rời chức, phỏng chừng là thăng chức, mới tới huyện lệnh còn không biết là tình huống như thế nào. Ta chính là trước tiên cho ngươi giao cái đế.”</p>
+<p>Vương bộ đầu mấy năm nay tham không ít, nhưng là đại bộ phận đều cấp huyện lệnh cùng huyện úy thượng cống.</p>
+<p>Chỉ là chờ huyện lệnh nhậm chức một mãn thăng chức, huyện úy có thể đi lên còn hảo thuyết, nếu là không thể đi lên, mới tới huyện lệnh chỉ sợ không phải như vậy hảo hầu hạ.</p>
+<p>“Thống xuyên a, ngươi tuy rằng tuổi tác tiểu, nhưng là người thông minh, sẽ làm việc, ta cũng hướng huyện úy đề cử ngươi, chỉ là cuối cùng có thể hay không thành, việc này ta liền bất lực.”</p>
+<p>Vương bộ đầu nói đến cái này phân thượng, Dương Thống Xuyên nếu là ở không có điểm tỏ vẻ, chính là không hiểu chuyện.</p>
+<p>Buổi tối liền bao một phần đại lễ đưa đến Vương gia cùng huyện úy gia.</p>
+<p>Vương gia trong phòng hành lý đã đóng gói không sai biệt lắm.</p>
+<p>“Như vậy cấp làm cái gì.”</p>
+<p>“Cái này phòng ở đã bán, ra tháng giêng, chúng ta liền chuyển nhà.”</p>
+<p>“Ngài này về sau là đi nơi nào thăng chức a.”</p>
+<p>Vương bộ đầu rõ ràng dừng một chút, mới nói một câu.</p>
+<p>“Đi lâm tiêu đầu nơi đó hỗn khẩu cơm ăn.”</p>
+<p>Dương Thống Xuyên minh bạch, lúc trước Lâm Ngọc Quân sát phu án, vương bộ đầu khẳng định lén làm cái gì.</p>
+<p>Cho nên mới sốt ruột chạy.</p>
+<p>Tháng chạp 23 là phương bắc năm cũ.</p>
+<p>Hôm nay mọi người thói quen ăn sủi cảo, ý vì cấp Táo vương gia tiễn đưa.</p>
+<p>Ngày mới hơi lượng, Dương mẫu liền ở nhà bếp bận rộn tế bái Táo vương gia.</p>
+<p>Đại gia cũng đều đi lên.</p>
+<p>Táo vương gia thần tượng bị chim én sát bóng minh ngói lượng.</p>
+<p>“Hôm nay là Táo vương gia trời cao phục mệnh nhật tử, nhưng đến làm hắn lão nhân gia giúp nhà ta nhiều lời nói tốt.” Dương mẫu cung kính đem cống phẩm nhất nhất dọn xong.</p>
+<p>Dương Thống Xuyên ở Táo vương gia thần tượng một bên dán hồng tiên, hồng tiên thượng là Dương phụ thân thủ viết Trời cao ngôn chuyện tốt, hạ giới bảo bình an.</p>
+<p>【 thần tiên làm sao có thời giờ quản thế gian sự. 】 Dương Thống Xuyên trong lòng như vậy nghĩ, nhưng là ngoài miệng không dám nói, trên tay sống cũng không dám đình.</p>
+<p>Đại ca dương thống sơn đi theo đại lão bản đi nơi khác thu hóa đi, nhanh nhất cũng muốn đêm nay mới có thể trở về.</p>
+<p>Trong nhà này đó sống hôm nay đều là Dương Thống Xuyên.</p>
+<p>Tương hỉ ở một bên nhìn hắn cười, thuận tiện đem một hồi quét trần dùng cái chổi đều tìm ra.</p>
+<p>“Hôm nay quét trần, ngươi đừng đăng cao, làm không được liền lưu trữ chờ ta ngày mai hạ giá trị trở về lại làm, hoặc là chờ đại ca trở về làm.” Dương Thống Xuyên gần nhất rất bận, mau ăn tết, nha môn tăng lớn buổi tối đêm tuần lực độ.</p>
+<p>Dương Thống Xuyên thường xuyên đều phải sau nửa đêm mới có thể trở về.</p>
+<p>“Đã biết, yên tâm đi.” Tương hỉ cầm hai cái nấu trứng gà phóng tới Dương Thống Xuyên trong tay.</p>
+<p>“Mau đi đi, bị muộn rồi.”</p>
+<p>“Hảo, ta đi trước. Hôm nay trên đường người nọ nhiều, ngươi đừng ra cửa, lại bị đụng tới.” Dương Thống Xuyên không kịp ăn cơm sáng, giao đãi hảo tương yêu thích cũng may gia đợi sau liền ra cửa. Trong lòng ngực còn sủy hai cái trứng gà.</p>
+<p>Đại tẩu minh nhạc mang theo chim én ở trong sân tháo giặt đệm chăn.</p>
+<p>Nhìn tương hỉ cùng Dương Thống Xuyên sáng sớm liền nị nị oai oai, hai người đều cười.</p>
+<p>Ăn qua cơm sáng, đại gia liền bắt đầu phân công.</p>
+<p>Tương hỉ chủ yếu là đem nhà chính gia cụ sát ra tới.</p>
+<p>Đây là đại phu nói cho hắn, sinh sản trước nhiều hoạt động hoạt động không có chỗ hỏng, như vậy sinh thời điểm dễ dàng một ít.</p>
+<p>Chạng vạng, tương hỉ ở nhà bếp cùng Dương mẫu cùng nhau niết sủi cảo.</p>
+<p>Sủi cảo tuyển cải trắng nhân thịt, người trong nhà đều thích ăn.</p>
+<p>“Cũng không biết thống sơn đêm nay có thể hay không gấp trở về.”</p>
+<p>“Hẳn là có thể, này đều đi ra ngoài bảy tám thiên, chính là hắn chủ nhân, hôm nay cũng muốn về nhà ăn tết không phải.”</p>
+<p>“Chỉ hy vọng như thế.” Dương mẫu gần nhất tóc bạc đều nhiều thật nhiều.</p>
+<p>Nhi hành ngàn dặm mẫu lo lắng, Dương mẫu trong lòng đựng đầy sự.</p>
+<p>Một bên lo lắng đại nhi tử ở bên ngoài làm việc thuận lợi không thuận lợi, một bên là bởi vì thân muội muội phía trước lưu đày sự.</p>
+<p>Tiểu dì lưu đày trước, Dương mẫu cố ý đi nhìn một lần, kết quả bị tiểu dì mắng máu chó phun đầu.</p>
+<p>Trở về khí nằm trên giường uống lên ba ngày dược.</p>
+<p>Tương hỉ cùng minh nhạc thay phiên tại bên người hầu hạ, lúc này mới chậm rãi chuyển biến tốt.</p>
+<p>Cũng may làm sủi cảo công phu cửa có động tĩnh, là dương thống sơn đã trở lại.</p>
+<p>Còn mang theo thật nhiều hàng tết.</p>
+<p>Trong nhà nhất kích động chính là minh nhạc, lần này dương thống sơn là đi theo chủ nhân xuống nông thôn thu đồ vật.</p>
+<p>Vùng khỉ ho cò gáy ra điêu dân, mấy người đều là mang theo tiền mặt đi xuống, minh nhạc lo lắng đề phòng vài thiên.</p>
+<p>“Đều thuận lợi đi.” Minh nhạc nhìn dương thống sơn giày, mặt trên đều là bùn đất.</p>
+<p>“Ân, đều thuận lợi.” Dương thống sơn chỉ nói chuyện tốt, không nói chuyện xấu, đem cấp minh nhạc mua điểm tâm đều nhét vào trong lòng ngực nàng.</p>
+<p>“Trở về liền hảo, thời gian vừa lúc, dọn dẹp một chút, buổi tối ăn sủi cảo.” Dương mẫu thấy dương thống sơn nguyên vẹn đã trở lại, trên mặt tươi cười rõ ràng rất nhiều.</p>
+<p>Tương hỉ cùng chim én đem hàng tết bắt được nhà chính đi, mấy thứ này xử lý như thế nào là yêu cầu Dương mẫu làm quyết định.</p>
+<p>Dương phụ hôm nay không đi ra ngoài, cũng ở trong nhà quét trần.</p>
+<p>Chờ mặt trời xuống núi, Dương Thống Xuyên đã trở lại, Dương mẫu liền tự mình đi hạ đệ nhất nồi sủi cảo.</p>
+<p>“Trước kính tổ tiên, lại đưa Táo vương gia.” Dương mẫu đem đệ nhất bàn sủi cảo thượng cống.</p>
+<p>Sau đó mới làm tương hỉ đem dư lại sủi cảo từng mâm bưng lên trên bàn đi.</p>
+<p>Người một nhà vây quanh cái bàn ngồi xong, Dương phụ giơ cái ly ở nơi đó phát biểu “Diễn thuyết”</p>
+<p>Dương Thống Xuyên nghe nhàm chán, liền ở cái bàn phía dưới sờ tương hỉ tay chơi.</p>
+<p>Tương hỉ bị hắn làm cho ngứa, cũng không dám động.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong42.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong44.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "ta-khac-phu-nguoi-khac-the";
+const NOVEL_TITLE = "Ta khắc phu, ngươi khắc thê";
+const CHAPTER_TITLE = "Chương 43 vương bộ đầu tính toán trốn chạy";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

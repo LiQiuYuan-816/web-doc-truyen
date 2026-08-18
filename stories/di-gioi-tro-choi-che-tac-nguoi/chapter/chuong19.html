@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 19</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Dị giới trò chơi chế tác người
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 19</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong18.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong20.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Thứ tư vãn, trò chơi bác chủ “Màu Tím Bông Cải” đang ở nhàm chán xoát video. Gần nhất không có gì hảo ngoạn trò chơi, hắn đều nửa tháng không phát Weibo.</p>
+<p>Vừa lúc có cái “Chủ bá hoa thức cách ch·ế·t tuyển tập” video chuyển tới Weibo trang đầu, video phát sinh ở A trạm một cái UP chủ cắt nối biên tập, bị ăn dưa quần chúng chuyển phát tới rồi Weibo.</p>
+<p>Màu Tím Bông Cải click mở vừa thấy, tức khắc cười đến đấm bàn “Này cái gì trò chơi a? Quá biến thái!”</p>
+<p>Chơi chơi liền không thích hợp……</p>
+<p>Hắn một bên bạo thô khẩu, một bên lại nhịn không được tiếp tục.</p>
+<p>Bất tri bất giác gan tám giờ, bản đồ bản nháp vẽ một đống lớn, dụi dụi mắt vừa thấy, cư nhiên trời đã sáng??</p>
+<p>Thời gian quá đến thật mau.</p>
+<p>Hắn thật lâu chưa từng chơi như vậy phía trên trò chơi.</p>
+<p>Nam nhân xoay người ngủ hạ, ngày kế tỉnh lại lại lần nữa mở ra trò chơi……</p>
+<p>Hàn băng địa ngục mặt sau, còn có chảo dầu địa ngục, từng cái thật lớn chảo dầu liền ở bên nhau, người chơi ở chảo dầu phía trên “Cầu độc mộc” hành tẩu, yêu cầu thực tốt cân bằng cảm, một không cẩn thận ngã xuống, liền sẽ bị chảo dầu tạc thục.</p>
+<p>Ngưu hố địa ngục, một đám trâu rừng nổi điên giống nhau loạn đâm, người chơi chỉ có S hình đi vị, nhanh chóng tránh né mới có thể quá quan.</p>
+<p>Thạch áp địa ngục, hành lang khắp nơi lăn xuống cự thạch, tạp tiết tấu quẹo vào trốn rớt lăn thạch, tạp không được đã bị áp thành bánh nhân thịt.</p>
+<p>Giã cối địa ngục càng là thái quá, liền ngũ cốc ngũ cốc đều ra tới, cái gì bắp, đậu nành, đậu phộng, nơi nơi đều là thật lớn kho lúa, người chơi sẽ bị đột nhiên sụp đổ lương thực ch·ế·t đuối?</p>
+<p>Bị đậu phộng, đậu nành ch·ế·t đuối, loại này cách ch·ế·t, kế hoạch là nghĩ như thế nào ra tới!</p>
+<p>Hai ngày sau, Màu Tím Bông Cải treo một đôi nồng đậm quầng thâm mắt, thông quan rồi đơn giản khó khăn.</p>
+<p>Hắn nhìn thông quan giao diện, thật lâu đều không thể bình tĩnh.</p>
+<p>Game một người chơi thông quan sau thông thường sẽ có chào bế mạc anime, có chút trò chơi còn có phiến đuôi khúc. 《 Địa Phủ Mê Cung 》 đầu tư kinh phí hiển nhiên không cao, anime trực tiếp tỉnh, chỉ thả một đoạn đáp tạ đọc diễn văn.</p>
+<p>“Đây là Dương Phàm phòng làm việc đệ một trò chơi.</p>
+<p>Lúc ban đầu thiết kế 《 Địa Phủ Mê Cung 》 thời điểm, ta cũng từng có quá thấp thỏm, lo lắng trò chơi này sẽ bị mắng, sẽ lỗ vốn, rốt cuộc nó phong cách đặc thù, đại gia không nhất định có thể tiếp thu.</p>
+<p>Nhưng ta còn là nỗ lực đem nó làm ra tới, rốt cuộc, đây là ta vẫn luôn muốn hoàn thành trò chơi thiết kế.</p>
+<p>Mê cung loại trò chơi rất nhiều, ta tưởng ở cách chơi thượng có điều sáng tạo, cho nên gia nhập các loại cao nan độ khiêu chiến.</p>
+<p>kh·ủ·ng b·ố, chỉ là trò chơi này biểu tượng.</p>
+<p>Phong phú khiêu chiến cách chơi, mới là nó nội hạch.</p>
+<p>Hy vọng ngài ở bất đồng khiêu chiến trung cảm nhận được trò chơi lạc thú, đây là ta thân là trò chơi chế tác người lớn nhất vui mừng.</p>
+<p>Thông quan sau, sẽ mở ra thành tựu hệ thống, mê cung nội cũng đem xuất hiện rất nhiều bảo rương cùng với trứng màu.</p>
+<p>Cảm thấy hứng thú người chơi có thể tiếp tục ván thứ hai.</p>
+<p>Cảm ơn sở hữu bằng hữu đối 《 Địa Phủ Mê Cung 》 duy trì, có bất luận cái gì ý kiến cùng kiến nghị, hoan nghênh bưu kiện yfstudio@xxx.</p>
+<p>Dương Phàm phòng làm việc.”</p>
+<p>Phiến đuôi có một con thuyền Tiểu Thuyền Buồm, lập với mênh mang biển rộng, theo âm nhạc nhẹ nhàng lay động.</p>
+<p>Rất là đáng yêu.</p>
+<p>Màu Tím Bông Cải nhìn này con Tiểu Thuyền Buồm, nhất thời chóp mũi chua xót.</p>
+<p>Dương Phàm phòng làm việc, một cái chưa từng nghe nói qua tân nhân đoàn đội, này vẫn là phòng làm việc đệ một trò chơi?</p>
+<p>Ở “Vòng tiền trò chơi” khắp nơi hoành hành thời đại, đại bộ phận game mobile làm ẩu, cách chơi trực tiếp copy paste, không hề tân ý, người chơi mỗi ngày online, đều là lặp lại xoát phó bản, treo máy……</p>
+<p>Đã thật lâu, thật lâu không xuất hiện quá như vậy một khoản chế tác hoàn mỹ, cách chơi mới mẻ độc đáo, nơi chốn đều tràn ngập thành ý tác phẩm!</p>
+<p>Chẳng sợ trò chơi này mắt thường có thể thấy được đầu tư không cao, nhưng mỗi số tiền đều hoa ở lưỡi dao thượng.</p>
+<p>Người chơi thông quan sau, vốn dĩ đã xong việc, kết quả kế hoạch còn mở ra thêm vào thành tựu hệ thống cùng bảo rương, trứng màu cách chơi, làm người chơi có thể lại chơi một lần mê cung.</p>
+<p>Ván thứ hai có nhiều hơn kinh hỉ cùng thu hoạch, này tương đương với cho người chơi một đợt miễn phí “Bán sau phục vụ”!</p>
+<p>Ai hiểu a!</p>
+<p>Hắn có điểm bị kế hoạch thành ý cảm động tới rồi.</p>
+<p>Rất nhiều trò chơi, đừng nói là lần thứ hai, hắn liền đệ nhất biến đều lười đến chơi đi xuống, nhưng trò chơi này hắn lại rất vui lại chơi hai lần, ba lần, nhìn xem tân khai thành tựu hệ thống cùng bảo rương trứng màu.</p>
+<p>18 tầng mê cung, thiết kế 18 loại bất đồng thông quan phương thức, cách chơi phi thường phong phú. Xem nhẹ kh·ủ·ng b·ố nguyên tố, bản chất, này kỳ thật là một khoản nội hạch hảo chơi thả mới mẻ độc đáo “Khiêu chiến trò chơi”.</p>
+<p>Làm mười mấy năm trò chơi người chơi lâu năm, hắn ở người chơi quần thể cùng trò chơi diễn đàn rất có danh khí, thường xuyên viết các loại trò chơi công lược, cũng bị các người chơi thân thiết mà xưng là “Đồ Ăn Thần”.</p>
+<p>Lần này, hắn đột nhiên có loại mãnh liệt, muốn đề cử một khoản hảo trò chơi xúc động.</p>
+<p>Nếu kế hoạch đơn thuần đem nó làm thành “Dọa người game kinh dị”, chỉ có thể dùng nhất thời mánh lới hấp dẫn thích kích thích người chơi.</p>
+<p>Nhưng trò chơi này không đơn thuần chỉ là là “Game kinh dị”.</p>
+<p>Như kế hoạch theo như lời, kh·ủ·ng b·ố là da thịt, cách chơi mới là nội hạch.</p>
+<p>Trò chơi quan trọng nhất chính là “Hảo chơi” —— cách chơi thượng sáng tạo, nhất khó được.</p>
+<p>Thật cao hứng, kế hoạch bắt được trò chơi bản chất.</p>
+<p>Như vậy tân nhân phòng làm việc, thật là làm người trước mắt sáng ngời!</p>
+<p>Nam nhân kích động mà mở ra máy tính, tiêu tốc độ tay viết nổi lên Weibo.</p>
+<p>Nửa tháng không phát bác, lần này hắn nhịn không được phải làm một lần nước máy, suốt đêm đề cử.</p>
+<p>Hắn hy vọng cái này tân nhân phòng làm việc có thể bảo trì “Nghiêm túc làm trò chơi” nhiệt tình cùng ước nguyện ban đầu, không bị tư bản lôi cuốn, đi được càng thêm lâu dài!</p>
+<p>Weibo # Địa Phủ Mê Cung # siêu thoại khu.</p>
+<p>Cái này siêu thoại là người chơi tự hành khai thông, trước mắt còn không có quản lý, siêu thoại khu thiệp đại bộ phận là “Trò chơi này hảo khó” “Hù ch·ế·t lão tử” linh tinh người qua đường phun tào.</p>
+<p>Thứ sáu vãn 10 điểm, một vị ID kêu “Màu Tím Bông Cải” bác chủ đột nhiên đã phát điều đề cử.</p>
+<p>“Gần nhất ở chơi 《 Địa Phủ Mê Cung 》, cho đại gia đề cử một chút này khoản máy rời tân du. kh·ủ·ng b·ố phong mê cung rất ít thấy, kế hoạch não động đột phá phía chân trời, mỗi một tầng thông quan phương thức đều không giống nhau, tuy rằng chơi thời điểm kinh hồn táng đảm, nhưng thông quan lúc sau siêu cấp có thành tựu cảm.</p>
+<p>Ta gan hai ngày nửa, vừa qua khỏi xong đơn giản hình thức, ván thứ hai tính toán chơi ác mộng hình thức.</p>
+<p>Cần thiết tán một chút @ Dương Phàm phòng làm việc, có thể cảm nhận được chế tác người dụng tâm, không lừa gạt người chơi, các loại chi tiết đều xử lý rất khá, còn có gia tăng trứng màu cách chơi bán sau, thật là thành ý tràn đầy.</p>
+<p>Địa Phủ Mê Cung, tuyệt đối là game một người chơi trung tinh phẩm tác phẩm xuất sắc.</p>
+<p>Trở lên thuần nước máy đề cử, thích game một người chơi nhất định phải chơi một chút.</p>
+<p>Mặt sau còn mang thêm một trương hắn ở “Game mobile nhà” chấm điểm 9.5 phân chụp hình.</p>
+<p>Màu Tím Bông Cải, tên gọi tắt Đồ Ăn Thần, có được mấy trăm vạn fans nổi danh trò chơi bác chủ.</p>
+<p>Nước máy đề cử a, nhiều khó được!</p>
+<p>Này Weibo chuyển phát nhắn lại số thực mau phá 10 vạn, có người hoài nghi đây là lấy tiền mở rộng, nhưng có càng nhiều fans tỏ vẻ “Đồ Ăn Thần liền Mộng Chi Dực đều mắng, ta không tin hắn sẽ lấy tiền đẩy rác rưởi!”</p>
+<p>“Gần nhất trò chơi này thực hỏa a, ta xem có không ít chủ bá ở chơi.”</p>
+<p>“Mấy ngày nay huyết tẩy A trạm trò chơi, không nghĩ tới liền ta Đồ Ăn Thần cũng nhập hố.”</p>
+<p>“Đơn giản khó khăn ta đã đánh tới tầng thứ tám, thật sự lại ngược lại phía trên!”</p>
+<p>“Mọi người đều nói tốt chơi, kia ta cũng đi thử thử.”</p>
+<p>Bác chủ đề cử hiệu quả thực hảo, huống chi là Đồ Ăn Thần như vậy danh tiếng thực tốt trò chơi bác chủ.</p>
+<p>Tạ Vân Phàm nhìn đến siêu thoại khu đứng đầu thiệp, lập tức đổ bộ phía chính phủ tài khoản, ở tảo tía Weibo phía dưới nhắn lại “Cảm ơn bác chủ đề cử, tân thành lập tiểu phòng làm việc, cảm tạ đại gia duy trì ~”</p>
+<p>Màu Tím Bông Cải “Tiểu Thuyền Buồm khách khí. Địa Phủ Mê Cung thật sự thực hảo chơi, cố lên, xem trọng ngươi nga!”</p>
+<p>Này bình luận tức khắc khiến cho oanh động.</p>
+<p>“Oa, sống official weibo sao!”</p>
+<p>“Bắt được sống kế hoạch, chạy nhanh chú ý một đợt!”</p>
+<p>“Tuy rằng chơi thời điểm vẫn luôn mắng kế hoạch, nhưng ta còn là tưởng nói, kế hoạch ngươi thật 6!”</p>
+<p>“Tân phòng làm việc? Về sau còn sẽ có trò chơi khác sao?”</p>
+<p>“Có điểm lo lắng các ngươi có thể hay không phá sản……”</p>
+<p>“Game kinh dị ta không dám chơi, chờ mong hạ một trò chơi a.”</p>
+<p>Này Weibo ngắn hạn nội chuyển phát, bình luận gia tăng mãnh liệt, cư nhiên xông lên Weibo trò chơi khu hot search!</p>
+<p># Địa Phủ Mê Cung # đề tài lần đầu tiên hàng không hot search.</p>
+<p>Không ít chú ý trò chơi khu người qua đường điểm đi vào, liền thấy Đồ Ăn Thần đề cử bác ở đứng đầu, phía dưới còn có official weibo hỗ động.</p>
+<p>Người qua đường nhóm thuận tay chú ý “Dương Phàm phòng làm việc”.</p>
+<p>Kết quả liền thấy chiều nay tuyên bố nóng hầm hập Weibo.</p>
+<p>Dương Phàm phòng làm việc Các vị 《 Địa Phủ Mê Cung 》 người chơi bằng hữu, cảm ơn đại gia chú ý ^^ official weibo đem từng bước giải khóa địa phủ NPC tư liệu giả thiết tập, trước thả ra Hắc Bạch Vô Thường giả thiết, cảm thấy hứng thú bằng hữu có thể hiểu biết một chút bọn họ bối cảnh chuyện xưa nga.</p>
+<p>Bạch Vô Thường, nguyên danh Tạ Tất An, nhân xưng Thất gia.</p>
+<p>Hắc Vô Thường, nguyên danh Phạm Vô Cữu, nhân xưng Bát gia.</p>
+<p>Hai người từ nhỏ kết bái trở thành huynh đệ, tình như thủ túc.</p>
+<p>Trong truyền thuyết, hai người ngày nọ cùng nhau đi đến dưới cầu, mắt thấy thiên muốn trời mưa, Bạch Vô Thường làm đệ đệ chờ một lát, chính mình trở về lấy dù, không liêu hắn đi rồi mưa to tầm tã, nước sông tràn lan, Hắc Vô Thường không muốn thất ước, vẫn luôn tại chỗ chờ đợi, lại bởi vì dáng người thấp bé, bị nước sông cấp ch·ế·t đuối.</p>
+<p>Sau đó không lâu, Bạch Vô Thường lấy dù trở về, phát hiện đệ đệ qua đời, tự trách, bi thống dưới, hắn treo cổ ở kiều trụ thượng, cho nên hắn vong hồn mới có thể vươn thật dài đầu lưỡi.</p>
+<p>Hai người đi vào địa phủ sau, Diêm Vương cho rằng bọn họ huynh đệ tình thâm nghĩa trọng, phong bọn họ vì “Hắc Bạch Vô Thường”, nhân xưng “Câu Hồn sứ giả”, phụ trách dẫn đường vong hồn tiến đến địa phủ báo danh.</p>
+<p>Weibo xứng hai trương poster, nhan sắc một đen một trắng, bên trái là NPC nguyên họa, bên phải bối cảnh chuyện xưa viết đến rõ ràng đơn giản rõ ràng.</p>
+<p>Theo hot search điểm đi vào người chơi đều bị kinh tới rồi ——</p>
+<p>“Nguyên lai Hắc Bạch Vô Thường là huynh đệ?”</p>
+<p>“Hắc Vô Thường bị thủy ch·ế·t đ·u·ố·i, Bạch Vô Thường thắt cổ tự sát……666!”</p>
+<p>“Kỳ thật ta không chán ghét Tiểu Hắc, hắn trào phúng làm ta thực phía trên.”</p>
+<p>“Như vậy xem, Tiểu Hắc cũng rất thảm, vì tại chỗ chờ ca ca, hạ mưa to cũng không có rời đi, bị ch·ế·t đ·u·ố·i…… Vô pháp lý giải, nhưng tỏ vẻ kính nể.”</p>
+<p>“Ca ca là thắt cổ tự sát, cho nên mới le lưỡi sao? Đột nhiên cảm thấy hắn không kh·ủ·ng b·ố đâu!”</p>
+<p>“Ta có điểm thích Hắc Bạch Vô Thường, bọn họ thực đáng yêu a!”</p>
+<p>“Cái này kêu đáng yêu? Hảo đi, xem xong bối cảnh tư liệu sau xác thật không như vậy chán ghét ~”</p>
+<p>“Chơi trò chơi này, ta vẫn luôn ở phá vỡ nổi điên cùng nhiệt huyết phía trên chi gian tự do cắt, mấy ngày nay xem hai người bọn họ đều xem thuận mắt, Hắc Vô Thường không trào phúng ta hai câu, ta liền toàn thân không thoải mái.”</p>
+<p>“Ha ha, Địa Phủ Mê Cung người chơi tinh thần đều không quá bình thường ~”</p>
+<p>Theo càng ngày càng nhiều người qua đường dũng mãnh vào official weibo, ngắn ngủn một đêm, “Dương Phàm phòng làm việc” fans lượng từ lúc bắt đầu không đến 500 người, điên tăng tới 20 vạn người.</p>
+<p>Không ít người ở thúc giục càng “Ta muốn Mạnh bà tư liệu, Tiểu Thuyền Buồm mau phát mau phát.”</p>
+<p>Còn có người hỏi “Diêm Vương là ai a? Đơn giản hình thức chưa thấy qua, ác mộng hình thức sẽ xuất hiện sao?”</p>
+<p>Theo Weibo hot search không ngừng lên men, càng nhiều người qua đường đã biết 《 Địa Phủ Mê Cung 》 trò chơi này, hơn nữa bị official weibo bối cảnh giả thiết hấp dẫn.</p>
+<p>Thứ bảy vãn, 24 điểm, phá 80 vạn.</p>
+<p>Một vòng thời gian, nước chảy đột phá 1500 vạn.</p>
+<p>Này thế…… Quá mãnh!</p>
+<p>Tác giả có chuyện nói</p>
+<p>Chú Hắc Bạch Vô Thường tư liệu giả thiết đến từ dân gian truyền thuyết.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong18.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong20.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "di-gioi-tro-choi-che-tac-nguoi";
+const NOVEL_TITLE = "Dị giới trò chơi chế tác người";
+const CHAPTER_TITLE = "Chương 19";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

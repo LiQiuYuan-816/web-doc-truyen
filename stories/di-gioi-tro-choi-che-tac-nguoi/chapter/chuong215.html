@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 215</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Dị giới trò chơi chế tác người
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 215</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong214.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong216.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Công trắc đầu ngày, các người chơi đều kích động mà thăm dò cái này mới lạ thế giới.</p>
+<p>Nơi này hết thảy nhìn qua cùng hiện thực thập phần tương tự, rất nhiều người chơi thậm chí ở trong trò chơi thấy được chính mình quê nhà tiêu chí tính kiến trúc.</p>
+<p>Trên diễn đàn nơi nơi đều là đối trò chơi “Chân thật tính” ca ngợi tiếng động.</p>
+<p>“Thành phố Giang Hải trung ương quảng trường, còn không phải là trong hiện thực 5-1 quảng trường sao? hoàn nguyên, hảo ngưu, hại ta cho rằng chính mình xuyên qua!”</p>
+<p>“Tây Kinh cư nhiên xuất hiện Châu Âu nổi danh mà tiêu tháp sắt?”</p>
+<p>“Ta sinh ra điểm tuyển chính là Lăng Dương, nơi này tảng lớn biển hoa cũng cùng ta quê quán giống nhau.”</p>
+<p>Trò chơi nội trí “Tinh Võng” trên diễn đàn, không ít người chơi thượng truyền chính mình quay chụp cảnh điểm ảnh chụp, đại gia sôi nổi kinh ngạc cảm thán với trò chơi kiến mô hoàn nguyên trình độ.</p>
+<p>Năm đó, Mộng Chi Dực từng đẩy ra quá một khoản 《 thành thị nhà 》RPG nhân vật sắm vai trò chơi, người chơi có thể lựa chọn bất đồng chức nghiệp, ở trong trò chơi vượt qua nên chức nghiệp một ngày.</p>
+<p>Bất quá kia khoản trò chơi là phỏng theo 《 Cung Đình Phong Vân 》 hình thức máy rời nhân vật sắm vai, đưa ra thị trường sau lại xuất hiện một đống bug, cuối cùng bị khiếu nại hạ giá chỉnh đốn và cải cách.</p>
+<p>Hiện giờ, Dương Phàm Khải Hàng 《 toàn cầu biến dị 》, mặc kệ là thành thị kiến mô, cảnh tượng nhuộm đẫm, cốt truyện thiết kế, này không đều nháy mắt hạ gục hữu thương mười tám con phố sao?</p>
+<p>Này mới là chân chính “Thực tế ảo thành thị”!</p>
+<p>Dừng ở đây, các người chơi còn tưởng rằng trò chơi này là cùng loại với 《 thành thị nhà 》 nhân vật sắm vai trò chơi. Có thể ở thế giới thực tế ảo lựa chọn bất đồng chức nghiệp, còn có thể cùng nước ngoài người chơi cùng nhau công tác, nói chuyện phiếm, đảo cũng là một loại mới lạ thể nghiệm.</p>
+<p>Thẳng đến Hoa Quốc thời gian giữa trưa 12 điểm.</p>
+<p>Trong trò chơi tốc độ dòng chảy thời gian cùng hiện thực bất đồng, trong hiện thực qua đi 2 tiếng đồng hồ, trong trò chơi đã là “Một ngày lúc sau”.</p>
+<p>Có chút người chơi hạ tuyến đi ăn cơm trưa.</p>
+<p>Chưa từng chơi nghiện tắc tiếp tục ở trong trò chơi thăm dò.</p>
+<p>Manh Thỏ lần này tuyển chính là bác sĩ, trong trò chơi một ngày qua đi, nàng đêm nay muốn trực đêm ban, ở hệ thống dưới sự chỉ dẫn, nàng cái này “Thường dân” cũng có thể thuận lợi cấp người bệnh khai hảo lời dặn của thầy thuốc.</p>
+<p>Cùng nàng cùng nhau trực ban còn có hai cái hộ sĩ, cũng đều là người chơi, đến từ Châu Âu.</p>
+<p>Trò chơi nội, đồng hồ chỉ hướng ban đêm 22 điểm.</p>
+<p>Manh Thỏ ngồi ở bác sĩ văn phòng, đang theo hai vị hộ sĩ người chơi nói chuyện phiếm, thuận tiện xoát xoát Tinh Võng diễn đàn. Đúng lúc này, bên ngoài đột nhiên vang lên rung chuông thanh, có người bệnh tới.</p>
+<p>Nàng nơi chính là khoa cấp cứu, ban đêm có người bệnh thực bình thường.</p>
+<p>Manh Thỏ đi vào tiếp khám đài, chỉ thấy một cái 35 tuổi trên dưới nữ nhân, trong tay nắm cái tiểu nữ hài, thần sắc nôn nóng, nhìn thấy nàng liền cuống quít nói “Bác sĩ ngài mau giúp ta nhìn xem, nữ nhi của ta tan học về nhà sau vẫn luôn nói chính mình rất đói bụng, đã ăn luôn một nồi cơm, còn tưởng tiếp tục ăn.”</p>
+<p>Manh Thỏ nhìn mắt tiểu nữ hài, nghi hoặc nói “Bao lớn nồi?”</p>
+<p>Nữ nhân dùng tay khoa tay múa chân một chút, cư nhiên có bồn như vậy đại.</p>
+<p>Manh Thỏ “……”</p>
+<p>Này tiểu cô nương là đại dạ dày vương a?</p>
+<p>Nữ nhân sắc mặt tái nhợt “Bình thường, cái nồi này cơm là chúng ta một nhà ba người cơm chiều, hôm nay ta mới vừa đem mễ đoan đến trên bàn, nàng cư nhiên một người ăn xong rồi……”</p>
+<p>“Nàng còn ăn luôn tam bàn đồ ăn.”</p>
+<p>“Còn tưởng tiếp tục ăn.”</p>
+<p>Tiểu nữ hài vẻ mặt vô tội ngây thơ, kéo kéo nữ nhân tay áo “Mụ mụ, ta đói.”</p>
+<p>Manh Thỏ “……”</p>
+<p>Đây là tình huống như thế nào? Trong hiện thực cũng chưa bao giờ nghe qua như vậy ca bệnh a, nhân loại dạ dày là có dung lượng hạn chế đi? Cô nương này ăn một nồi mễ, tam bàn đồ ăn, cư nhiên còn nói “Đói”?</p>
+<p>Phòng live stream không ít người xem nhìn đến nơi này, sôi nổi suy đoán lên.</p>
+<p>【 này người bệnh có phải hay không cảm nhiễm kỳ quái virus? 】</p>
+<p>【 không khí có điểm quỷ dị……】</p>
+<p>【 cho nên trò chơi này là có các loại đặc thù ca bệnh, yêu cầu người chơi xử lý sao? 】</p>
+<p>Manh Thỏ đang muốn hỏi một chút trò chơi tự mang “Chữa bệnh phụ trợ hệ thống”, loại tình huống này thân là bác sĩ nàng hẳn là như thế nào hạ chẩn bệnh, như thế nào khai dược?</p>
+<p>Nhưng mà, nàng mới vừa mở ra phụ trợ hệ thống, kia tiểu nữ hài đột nhiên thẳng lăng lăng mà nhìn chằm chằm nàng mặt, ánh mắt kia…… Giống như là đói khát đến cực điểm dã thú theo dõi một khối thịt mỡ.</p>
+<p>Manh Thỏ đối thượng nàng ánh mắt, nhất thời sởn tóc gáy.</p>
+<p>“Tiểu cô nương ngươi?”</p>
+<p>Manh Thỏ lời còn chưa dứt, tiểu nữ hài đột nhiên bắt lấy cánh tay của nàng dùng sức mà cắn đi xuống. Này nữ hài hàm răng sắc bén đến như là mãnh thú, cư nhiên sống sờ sờ đem Manh Thỏ cánh tay cắn xuống dưới một miếng thịt!</p>
+<p>“A —— ngọa tào!” Manh Thỏ đau đến một cái giật mình, một cái tát đem tiểu cô nương lật đổ trên mặt đất, bay nhanh mà chạy về bác sĩ văn phòng, khóa trái cửa.</p>
+<p>Sau đó, nàng từ cửa sổ thấy được cực kỳ kinh tủng một màn.</p>
+<p>Chỉ thấy tiểu cô nương quay đầu lại nhìn về phía nàng mụ mụ, vẫn là cái loại này xem con mồi ánh mắt.</p>
+<p>Nàng mụ mụ đang đứng ở dại ra trạng thái, tiểu cô nương động tác nhanh nhẹn mà đem nữ nhân phác gục, nhắm ngay trắng nõn cổ liền cắn đi xuống ——</p>
+<p>Bên ngoài truyền đến tê tâm liệt phế tiếng thét chói tai, dã thú gặm thực con mồi răng rắc thanh.</p>
+<p>Máu tươi chảy đầy đất, Manh Thỏ đầy mặt hoảng sợ, đãi ở bác sĩ trong văn phòng, người đều đã tê rần.</p>
+<p>Phòng live stream nội khán giả cũng ngây người.</p>
+<p>【 phong cách đột biến, thành phim kinh dị? 】</p>
+<p>【 ngọa tào, ta minh bạch 《 toàn cầu biến dị 》 ý tứ, này mẹ nó là tận thế trò chơi a! 】</p>
+<p>【 kế hoạch cần thiết làm được như vậy rất thật sao? Ta xem phát sóng trực tiếp đều bị dọa tới rồi 】</p>
+<p>【 đồng tình đang ở trong trò chơi các người chơi……】</p>
+<p>Manh Thỏ làm nhiều năm trò chơi chủ bá, cũng coi như là thấy qua sóng to gió lớn. Nhưng vừa rồi này một đợt, xác thật làm nàng kinh hồn chưa định.</p>
+<p>Này có thể so lúc trước 《 Quỷ Giới 》 dọa người nhiều.</p>
+<p>Rốt cuộc 《 Quỷ Giới 》 là thế giới giả tưởng, người chơi đã sớm làm tốt chuẩn bị tâm lý.</p>
+<p>Nhưng 《 toàn cầu biến dị 》 cảnh tượng làm được quá mức chân thật, đại nhập cảm kéo mãn, người chơi khai cục sẽ cảm thấy chính mình phảng phất ở thế giới hiện thực…… Đột nhiên tới như vậy một chút, đầu đều cho ngươi dọa phi.</p>
+<p>Manh Thỏ thở sâu, bình tĩnh lại tìm về chính mình thanh âm “Mọi người trong nhà, đây là tận thế trò chơi sinh tồn a, khai cục bình tĩnh, là tay mới bảo hộ kỳ đi?”</p>
+<p>“Thất sách thất sách! Ta hẳn là trước tiên ở bệnh viện nơi nơi đi dạo, làm rõ ràng chạy trốn lộ tuyến, kết quả tẫn cố cùng hai vị ngoại quốc người chơi nói chuyện phiếm đi.”</p>
+<p>“Hiện tại làm sao bây giờ? Ta bị kia tiểu nữ hài cắn một ngụm, có thể hay không cảm nhiễm?”</p>
+<p>“Ta như thế nào đột nhiên có điểm đói?”</p>
+<p>“Hảo đói, nơi nào có ăn?”</p>
+<p>Phòng live stream khán giả “………”</p>
+<p>Da đầu đều phải tạc.</p>
+<p>Chủ bá, ngươi muốn biến dị sao? Mau tỉnh lại a!</p>
+<p>Cùng lúc đó, Lam Ngư TV nhân khí chủ bá Hoan Hoan chính lái xe ở trong thành thị hạt dạo, nơi nơi quay chụp ảnh chụp truyền tới trên Tinh Võng chia sẻ.</p>
+<p>Trong trò chơi có trí năng điều khiển hệ thống, xe đều là tự động khai, này cũng tránh cho người chơi sẽ không lái xe dẫn tới giao thông ủng đổ, tai nạn xe cộ chờ vấn đề.</p>
+<p>Hoan Hoan nói “Ta chơi võng du thói quen là trước chạy đồ. Lần này chức nghiệp tuyển taxi công nghệ tài xế, vừa lúc lái xe làm quen một chút quanh thân hoàn cảnh.”</p>
+<p>“Mới vừa nhận được hệ thống phái đơn, điểm xuất phát Thái An tiểu khu cửa đông, chung điểm tình yêu bệnh viện thú cưng.”</p>
+<p>Hoan Hoan dựa theo hướng dẫn đi vào tiểu khu cửa đông, xa xa thấy một người nam nhân đứng ở tiểu khu cửa triều hắn vẫy tay, trong tay nắm một cái cẩu.</p>
+<p>Hoan Hoan đem xe ở ven đường dừng lại, kia nam nhân nắm cẩu thượng ghế sau.</p>
+<p>Ở trong trò chơi đều phải nuôi chó, là người chơi vẫn là NPC đâu?</p>
+<p>Hoan Hoan dư quang ngắm mắt kính chiếu hậu, vừa lúc đối thượng trong gương đôi mắt —— kia chỉ đại cẩu đôi mắt mạo quỷ dị lục quang, đang thẳng lăng lăng mà nhìn chằm chằm hắn xem.</p>
+<p>Hoan Hoan trong lòng cả kinh —— đây là cẩu?? Hình thể không khỏi cũng quá lớn đi?</p>
+<p>Vừa rồi hắn không thấy rõ, lúc này nhìn kỹ, này cẩu là hắn trong hiện thực chưa bao giờ gặp qua chủng loại —— cùng với nói là cẩu, càng như là một con lang.</p>
+<p>Đại cẩu nhìn chằm chằm hắn giống như nhìn chằm chằm một con con mồi, này ánh mắt làm Hoan Hoan trong lòng chuông cảnh báo xao vang, nhưng cẩu cũng không có công kích hắn, chỉ là không ngừng mà le lưỡi.</p>
+<p>Chủ nhân ở bên cạnh nhẹ nhàng trấn an đại cẩu, thấp giọng nói “Ngượng ngùng, nhà ta cẩu cẩu sinh bệnh, phiền toái ngài nhanh lên đưa ta đi bệnh viện thú cưng.”</p>
+<p>Hoan Hoan lấy lại tinh thần, hỏi “Nga…… Ngươi là người chơi sao?”</p>
+<p>Nam nhân gật đầu “Ân, đúng vậy.”</p>
+<p>Hoan Hoan nhẹ nhàng thở ra, cười nói “Ở trong trò chơi còn muốn nuôi chó a?”</p>
+<p>Nam nhân thanh âm bình tĩnh “Tuyển thân phận là cửa hàng thú cưng lão bản.”</p>
+<p>Hoan Hoan cái này hoàn toàn yên tâm, chở nam nhân cùng cẩu cùng nhau đi trước bệnh viện thú cưng. Này cẩu có lẽ thật sự sinh bệnh, mới có vẻ không thích hợp đi?</p>
+<p>Phòng live stream người xem lúc này cũng không ý thức được vấn đề.</p>
+<p>Thẳng đến chói tai tiếng thắng xe, cùng với một tiếng thét chói tai vang vọng bầu trời đêm ——</p>
+<p>“A a…… Ta dựa! Ngươi mẹ nó dưỡng chính là cái gì quái vật!”</p>
+<p>Hoan Hoan từ ghế điều khiển chạy xuống tới, một đường triều lối đi bộ chạy như bay, kia chỉ đại cẩu từ trong xe đuổi tới, ven đường người đi đường bị hoảng sợ, sôi nổi thét chói tai chạy trốn.</p>
+<p>Cái kia cẩu cực kỳ nhanh nhẹn, hình thể chợt tăng trưởng, nhất thời thế nhưng so sư tử còn muốn khổng lồ.</p>
+<p>Hoan Hoan trơ mắt nhìn đại cẩu phác gục ven đường một cái người đi đường, phía sau truyền đến thê lương tiếng kêu thảm thiết, cùng với dã thú gặm thực con mồi răng rắc răng rắc thanh.</p>
+<p>Này kinh tủng trường hợp làm người chung quanh toàn bộ lâm vào khủng hoảng.</p>
+<p>“A a a —— nó ở ăn người!”</p>
+<p>“Ngọa tào, đây là thứ gì?”</p>
+<p>“Vườn bách thú sư tử chạy ra? Má ơi, chạy mau a!”</p>
+<p>Chói tai loa thanh cùng người đi đường tiếng thét chói tai hỗn tạp ở bên nhau, Hoan Hoan lỗ tai ầm ầm vang lên, ngay sau đó, một cổ quái dị đói khát cảm từ dạ dày bộ bốc lên dựng lên.</p>
+<p>Hắn lẩm bẩm nói “Ta đột nhiên hảo đói a……”</p>
+<p>Màn hình đen xuống dưới, hắn giống như mất đi ý thức.</p>
+<p>Phòng live stream khán giả “……”</p>
+<p>Lại một cái “Hảo đói” kết thúc trò chơi chủ bá?</p>
+<p>Lục ca đang ở huấn luyện căn cứ, cùng mấy cái người chơi cùng nhau chơi game.</p>
+<p>Buổi tối là điện cạnh tuyển thủ huấn luyện thời gian, hắn cùng mấy cái nước Mỹ, Anh quốc, Hoa Quốc đồng đội đã hỗn chín, Tiểu Thuyền Buồm này một đợt cấy vào quảng cáo 《 giang hồ 》 làm được rất thành công, hẳn là trực tiếp làm trò chơi liên động.</p>
+<p>Bọn họ ở 《 toàn cầu biến dị 》 thế giới thực tế ảo chơi game, cảm giác còn rất mới mẻ. Mấy người phối hợp đánh hai thanh, thời gian bất tri bất giác đi vào buổi tối 10 điểm.</p>
+<p>Huấn luyện viên thanh âm truyền đến “Hảo, hôm nay huấn luyện liền đến nơi này.”</p>
+<p>Mấy người rời khỏi trò chơi, một cái tóc vàng mắt xanh nước Mỹ soái ca nói “Muốn hay không đi ăn khuya a? Ta mời khách. Ta chơi qua 《 Phố Mỹ Thực 》, trong trò chơi đồ vật hẳn là cũng ăn rất ngon!”</p>
+<p>Các đồng đội sôi nổi đồng ý “Hảo a.”</p>
+<p>Soái ca nghĩ nghĩ, nói “Thành phố Giang Hải ở vào bờ biển, đi ăn hải sản thế nào?”</p>
+<p>Một cái khác đồng đội nói “Ta vừa rồi từ cửa sổ nhìn thoáng qua, đối diện vừa lúc có một nhà hải sản cửa hàng, nếu không liền đi kia đi.”</p>
+<p>Một đám “Điện cạnh tuyển thủ” kết bạn đi đối diện hải sản nhà ăn.</p>
+<p>Thành phố Giang Hải có địa lý ưu thế, hải sản đều là ngư dân cùng ngày vớt.</p>
+<p>Nhà này nhà ăn diện tích rất lớn, lầu một trong đại sảnh bày chỉnh chỉnh tề tề pha lê lu nước, bên trong có sống tôm, con cua, ốc biển, bào ngư chờ hải sản phẩm, chủng loại thập phần đầy đủ hết, khách nhân có thể hiện trường chọn mới mẻ.</p>
+<p>Mấy người cầm rổ bắt đầu chọn hải sản. Lục ca tò mò mà khắp nơi quan sát, đột nhiên, hắn ánh mắt cứng đờ mà dừng hình ảnh ở phía trước pha lê lu ——</p>
+<p>Một con thật lớn con cua chính an tĩnh mà ghé vào nơi đó.</p>
+<p>Hắn trong hiện thực cũng gặp qua cua hoàng đế, nhưng này chỉ con cua…… Này không phải cua hoàng đế, đây là tiên vương cua đi? Một chân gần 1 mét trường, thành tinh a?</p>
+<p>Chính kinh ngạc gian, soái ca đồng đội kích động nói “Nga, này chỉ con cua cũng quá soái, ta trước nay chưa thấy qua lớn như vậy con cua. Chúng ta có thể ăn sao?”</p>
+<p>Nhà ăn lão bản cười tủm tỉm mà nói “Đương nhiên có thể ăn. Này chỉ cua hoàng đế lớn lên lại đại lại phì, là chúng ta trong tiệm quý nhất.”</p>
+<p>Nước Mỹ đồng đội “Không quan hệ, ta có tiền.”</p>
+<p>Lục ca vội vàng cản hắn “Chờ một chút, này con cua có điểm không đúng đi?”</p>
+<p>Lời còn chưa dứt, nhà ăn lão bản liền dùng một trương võng đem con cua vớt ra tới.</p>
+<p>Vừa rồi còn ngoan ngoãn mà đãi ở nơi đó con cua, vừa ra thủy như là đột nhiên có tinh thần, nó đột nhiên từ võng trung tránh ra, tám điều chân dài trên mặt đất nhanh chóng bò sát, một đôi thật lớn cái kìm, hướng tới đoàn người chung quanh điên cuồng công kích ——</p>
+<p>“A a!” Nhà ăn nội tức khắc tràn ngập tiếng kêu thảm thiết.</p>
+<p>Lục ca thấy tình huống không ổn, cất bước liền chạy.</p>
+<p>Nhưng mà, hắn phát hiện chính mình chạy vội tốc độ cư nhiên so bất quá kia chỉ đại con cua?</p>
+<p>Nhìn bao phủ ở chính mình đỉnh đầu bóng ma, Lục ca trong lòng tức khắc tuyệt vọng.</p>
+<p>Không sợ đối thủ mạnh như thần, liền sợ đồng đội ngu như heo!</p>
+<p>Cảm ơn vị này nước Mỹ đồng đội mang đại gia ăn hải sản, kiến thức tới rồi plus bản “Cua hoàng đế”?</p>
+<p>Chủ bá nhóm chiến tích thảm không nỡ nhìn.</p>
+<p>Manh Thỏ bị người bệnh cắn, Hoan Hoan bị cẩu cắn, Lục ca bị con cua cắn.</p>
+<p>Ba người đều dùng “Hảo đói” kết thúc trò chơi nội ngày đầu tiên.</p>
+<p>Theo một cái lại một cái chủ bá khai cục bị đào thải, các võng hữu rốt cuộc phát hiện ——《 toàn cầu biến dị 》 trò chơi này, cũng không phải đơn giản nhân vật sắm vai.</p>
+<p>Mà là “Tận thế buông xuống”.</p>
+<p>Đại gia thật là xem nhẹ kế hoạch biến thái a!</p>
+<p>Tác giả có chuyện nói</p>
+<p>Tiểu Thuyền Buồm Còn có càng biến thái, chúc mừng các ngươi có thể trọng khai ~</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong214.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong216.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "di-gioi-tro-choi-che-tac-nguoi";
+const NOVEL_TITLE = "Dị giới trò chơi chế tác người";
+const CHAPTER_TITLE = "Chương 215";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

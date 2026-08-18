@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 41</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Dị giới trò chơi chế tác người
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 41</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong40.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong42.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Tạ Vân Phàm về đến nhà sau, liền mở ra máy tính bắt đầu viết trò chơi dàn giáo. Đang ở viết code, di động đột nhiên vang lên thu được tin tức nhắc nhở âm.</p>
+<p>Còn tưởng rằng là tất thiết đoàn đội đồng bọn có việc hỏi hắn, quay đầu vừa thấy, lại ngoài ý muốn thấy được một cái quen thuộc chân dung —— Lạc Hàng.</p>
+<p>Tạ Vân Phàm ngừng tay đầu công tác, mở ra WeChat.</p>
+<p>Lạc Hàng đã phát điều khoản tự tin tức cho hắn “Ta làm tài vụ đem Q3 lợi nhuận kết toán cho ngươi, thu được sao?”</p>
+<p>Hôm nay vội vàng tìm người, mở họp, đảo không chú ý tin nhắn. Tạ Vân Phàm mở ra di động tin nhắn, quả nhiên nhìn đến “Ngài tài khoản thu được gửi tiền XXX” nhắc nhở. Hắn cẩn thận đếm đếm…… Cư nhiên có 1.5 trăm triệu!</p>
+<p>7 nguyệt đưa ra thị trường trò chơi, ngắn ngủn hai tháng thuần lợi nhuận như vậy cao. Tạ Vân Phàm tâm tình tốt lắm phát đi cái gương mặt tươi cười “Thu được một số tiền khổng lồ, cảm ơn Lạc tổng!”</p>
+<p>Lạc Hàng “Không khách khí. Nước ngoài lợi nhuận 10 tháng mới có thể kết toán xong, đến lúc đó cùng nhau đánh cho ngươi.”</p>
+<p>“Tốt, không nóng nảy.”</p>
+<p>Lạc Hàng dừng một chút, nói “Ta mấy ngày nay ở cùng đại lý trao đổi phán, sau khi kết thúc còn muốn đi Châu Âu bên kia mở họp, cuối tháng mới có thể trở về. Đến lúc đó ta trực tiếp phi Dung Thành, tìm các ngươi nói 《 Cách Đấu Đại Sư 》 hợp tác.”</p>
+<p>Tạ Vân Phàm “Không thành vấn đề. Ta phòng làm việc trang hoàng xong rồi, chờ ngươi tới rồi Dung Thành, có thể tới đi dạo.”</p>
+<p>Lạc Hàng mỉm cười nói “Hảo.”</p>
+<p>Tuy rằng cách hơn phân nửa cái địa cầu, nhưng hai người thuận miệng nói chuyện phiếm, vẫn là giống lúc trước ở Khải Hàng trong lúc công tác như vậy ăn ý.</p>
+<p>Lạc Hàng quan tâm hỏi “Khai giảng lúc sau ở vội cái gì?”</p>
+<p>Tạ Vân Phàm “Ở vội đề cương luận văn.”</p>
+<p>Lạc Hàng có chút ngoài ý muốn “Tất thiết? Trường học còn muốn ngươi mặt khác đệ trình tất thiết sao? Trực tiếp đem 《 Địa Phủ Mê Cung 》 giao đi lên thì tốt rồi đi.”</p>
+<p>Tạ Vân Phàm nói “Ta muốn mang mấy cái đồng học cùng nhau làm tất thiết.”</p>
+<p>Lạc Hàng hiểu được “Thì ra là thế.”</p>
+<p>Kỳ thật Tạ Vân Phàm lúc trước tạm nghỉ học thời điểm, trường học lãnh đạo đã biết hắn là Dương Phàm phòng làm việc người phụ trách. 《 Địa Phủ Mê Cung 》 cùng 《 Quỷ Giới 》 thành công, đủ để cho hắn trở thành “Vinh dự bạn cùng trường”.</p>
+<p>Nhưng Tạ Vân Phàm không nghĩ ở trường học bạo áo choàng, hắn chỉ nghĩ điệu thấp tốt nghiệp.</p>
+<p>Lạc Hàng đột nhiên nghĩ đến một sự kiện, nói “Đúng rồi, đại học tất thiết tác phẩm có thể tham gia cả nước thi đấu. Lấy thực lực của ngươi, lấy thưởng hẳn là không thành vấn đề.”</p>
+<p>Tạ Vân Phàm nghi hoặc nói “Thi đấu?”</p>
+<p>“Ân, sở hữu trò chơi chuyên nghiệp tất thiết tác phẩm đều có thể cầm đi dự thi. Có chuyên gia giám khảo cho điểm, đoạt giải tác phẩm có thể được đến nhiều nhất 100 vạn tiền thưởng, còn có cùng chuyên nghiệp công ty hợp tác cơ hội.”</p>
+<p>Lạc Hàng cho hắn phát tới một cái official website địa chỉ “Đây là thi đấu official website, ngươi có thể suy xét một chút muốn hay không tham gia.”</p>
+<p>“Tốt, ta quay đầu lại nhìn kỹ xem quy tắc.”</p>
+<p>“Ân, sớm một chút nghỉ ngơi.”</p>
+<p>“Lạc tổng tái kiến ~”</p>
+<p>Kết thúc đối thoại sau, Tạ Vân Phàm mở ra thi đấu official website nhìn nhìn quy tắc.</p>
+<p>Trước mắt, Hoa Quốc có 40 nhiều sở trường học đều mở “Trò chơi thiết kế” chuyên nghiệp, mỗi năm nghỉ đông có một lần “Cả nước sinh viên trò chơi thiết kế đại tái”.</p>
+<p>Đây là nhằm vào thiết kế hệ học sinh thi đấu, cũng không hạn chế niên cấp, lợi hại đồng học, đại một liền có thể nguyên sang trò chơi đi tham gia.</p>
+<p>Thi đấu phân sơ thẩm, đấu bán kết cùng trận chung kết.</p>
+<p>Nghỉ đông thi đấu, thời gian thượng hoàn toàn tới kịp.</p>
+<p>Đối Tạ Vân Phàm tới nói, loại này thi đấu tham gia hay không đều không quan hệ đau khổ. Nhưng đối mặt khác mấy cái tiểu đồng bọn tới nói rất có ý nghĩa.</p>
+<p>Nếu có thể dẫn dắt đoàn đội đoạt giải, một phương diện có thể vì trường học làm vẻ vang; về phương diện khác, Quý Diễm, Chu Thức Nguyệt đám người lý lịch thượng có cả nước đại tái đoạt giải trải qua, tốt nghiệp sau sẽ càng tốt tìm công tác.</p>
+<p>Dung Thành đại học là Tạ Vân Phàm trường học cũ, phong cách trường học mở ra khoan dung, lão sư cũng thực quan tâm hắn, hắn trước kia như vậy tìm đường ch·ế·t, cũng chưa bị trường học khai trừ, học kỳ 1 xin tạm nghỉ học thời điểm, hiệu trưởng cũng không khó xử hắn.</p>
+<p>Mặc kệ như thế nào, Dung Thành đại học đối hắn thực hảo. Tốt nghiệp phía trước, hắn cũng nên vì trường học làm điểm sự.</p>
+<p>Hạ quyết tâm sau, Tạ Vân Phàm đem “Cả nước sinh viên trò chơi thiết kế đại tái” official website bảo tồn xuống dưới, tiếp tục vùi đầu viết trò chơi dàn giáo.</p>
+<p>Mà lúc này, đang ở ký túc xá tìm linh cảm các bạn học, hoàn toàn không nghĩ tới —— Tạ Vân Phàm đã ở kế hoạch tham gia thi đấu, dẫn bọn hắn bay.</p>
+<p>Hai ngày sau, Ninh Toa mang theo một đống hành lý đi vào Dung Thành. Tạ Vân Phàm trước tiên cho nàng thuê hảo độc thân chung cư.</p>
+<p>Ninh Toa ở chung cư dàn xếp xuống dưới, phát tin tức nói “Lão bản, chung cư hoàn cảnh thực hảo, cảm ơn ngươi dụng tâm! Ta yêu cầu đi công ty làm công sao?”</p>
+<p>“Không vội, ngươi trước tiên ở chung cư trụ hạ. Phòng làm việc còn ở trù bị trung, chính thức nhận người khả năng muốn tới năm sau. Trong khoảng thời gian này ngươi trước giúp ta họa mấy cái trò chơi nhỏ nhân vật, ấn thương bản thảo giá cả đơn độc cho ngươi kết toán.”</p>
+<p>Ninh Toa sảng khoái mà nói “Không thành vấn đề!”</p>
+<p>Tạ Vân Phàm cho nàng phát đi kỹ càng tỉ mỉ nhân vật giả thiết.</p>
+<p>Ninh Toa mở ra tới nhìn kỹ xem.</p>
+<p>Nhạc cụ nhân cách hoá trò chơi, nhân vật nguyên họa muốn xông ra nhạc cụ đặc sắc.</p>
+<p>Tỷ như, tỳ bà giả thiết là minh diễm nữ tử, kéo tinh xảo búi tóc, trong lòng ngực ôm tỳ bà, che khuất nửa bên mặt, “Tỳ bà che nửa mặt hoa” giả thiết, họa ra tới sẽ rất có mỹ cảm.</p>
+<p>Đàn tranh là dịu dàng đại khí nữ tử, lưu trữ màu đen cập eo tóc dài, quần áo sắc điệu tươi mát tố nhã, có thể cho nàng ngồi ở đình hóng gió cúi đầu đánh đàn.</p>
+<p>Sáo trúc âm sắc thanh thúy dễ nghe, họa thành tiêu sái soái khí thiếu niên, ngồi ở nhánh cây thượng tự do tự tại mà thổi nhạc khúc. Ống tiêu thanh âm trầm thấp ổn trọng, nhân vật hình tượng là nhẹ nhàng công tử, ở ao hồ trung ương cưỡi một diệp thuyền con, xông ra ý cảnh.</p>
+<p>Nhị hồ âm sắc rất có chuyện xưa cảm, họa thành một vị để râu lão gia gia, bối cảnh cát vàng đại mạc, cho người ta thê lương, tịch liêu cảm giác.</p>
+<p>Đàn dương cầm là hoạt bát đáng yêu thiếu nữ; đàn Không là ôn nhu đoan trang tiểu tỷ tỷ, chuông nhạc là vạm vỡ soái ca……</p>
+<p>Mỗi loại nhạc cụ đều có này đối ứng nhân vật thiết kế.</p>
+<p>Ninh Toa xem xong sau, hồi phục nói “Lão bản, chỉ vẽ nhân vật hình tượng cùng bối cảnh, không cần đơn độc thiết kế trang phục, là ý tứ này sao?”</p>
+<p>Tạ Vân Phàm “Đúng vậy. Mỗi cái nhạc cụ, họa một trương nhân vật lập vẽ, lại họa một trương mang bối cảnh thẻ bài sách tranh.”</p>
+<p>Ninh Toa “Minh bạch, ta nắm chặt thời gian cho ngươi xem bản nháp!”</p>
+<p>Một vòng sau, tất thiết tiểu tổ lần đầu tiên họp hội ý.</p>
+<p>Tạ Vân Phàm mang theo các đội viên đi vào nhạc cụ dân gian đoàn hoạt động địa điểm.</p>
+<p>Nhan Khả có hoạt động thất chìa khóa, tới nơi này, có thể thật thời nghe được nàng chọn lựa nhạc khúc, còn không cần sợ tạp âm ảnh hưởng người khác.</p>
+<p>Tạ Vân Phàm đem đóng dấu tốt hiệp nghị đưa cho đồng học “Mọi người xem xem, không thành vấn đề nói ký tên ấn dấu tay.”</p>
+<p>Hiệp nghị ước định trò chơi lợi nhuận phân phối, khấu trừ phí tổn sau thuần lợi nhuận, chủ kế hoạch Tạ Vân Phàm chiếm 25%, những người khác 15%.</p>
+<p>Như có đội viên nửa đường rời khỏi, hoặc là bởi vì cá nhân sai lầm ( sao chép người khác sáng ý, để lộ bí mật trò chơi cách chơi chờ ), dẫn tới trò chơi đã chịu mặt trái ảnh hưởng, tắc tự động từ bỏ lợi nhuận phân phối, hơn nữa muốn bồi thường đội viên khác tổn thất.</p>
+<p>Trò chơi nguyên họa bản quyền về Tạ Vân Phàm, mặt khác miễn phí tư liệu sống như âm nhạc, phong cảnh chờ, vốn dĩ chính là xài chung bản quyền, không cần thêm vào ước định.</p>
+<p>Cốt truyện là Chu Thức Nguyệt viết, Tạ Vân Phàm lén cùng nàng thương lượng quá, Chu Thức Nguyệt tỏ vẻ “Mấy cái đoản thiên tiểu chuyện xưa mà thôi, ta chính mình cũng vô pháp một người làm xong tất thiết, bản quyền trực tiếp cho ngươi, ngươi tới an bài là được.”</p>
+<p>Dù sao trò chơi kiếm tiền, nàng là có thể phân đến lợi nhuận. Nàng lại không phải cái gì đại tác gia, không có khả năng đem này mấy cái đoản thiên đơn độc cầm đi xuất bản, không sao cả.</p>
+<p>Nhan Khả tò mò hỏi “Chúng ta trò chơi này có thể lợi nhuận sao?”</p>
+<p>Tạ Vân Phàm nói giỡn nói “Mặc kệ có thể hay không lợi nhuận, trước tiên định hảo lợi nhuận phân phối, miễn cho tương lai kiếm được tiền, đại gia bởi vì ích lợi phân phối không đều, xé bức xé đến toà án đi.”</p>
+<p>Mọi người nhịn không được cười ra tiếng tới.</p>
+<p>Mấy năm trước xác thật từng có như vậy ví dụ, mỗ trọng điểm đại học tất thiết tác phẩm bán mấy trăm vạn, tham gia thiết kế ba người, vì ích lợi phân phối, trở mặt thành thù, chống án đến toà án thưa kiện, nháo đến mọi người đều biết……</p>
+<p>Tiền tài cùng ích lợi thực khảo nghiệm nhân tính. Tạ Vân Phàm băn khoăn cũng có đạo lý, trước tiên thiêm hảo hiệp nghị, mặc kệ về sau kiếm nhiều kiếm thiếu, ai cũng vô pháp nói cái gì nữa.</p>
+<p>Quý Diễm vò đầu nói “Vân Phàm, chúng ta lấy 15% có phải hay không có điểm nhiều? Trò chơi này cách chơi sáng ý đều là ngươi thiết kế, ngươi lấy , dư lại chúng ta mỗi người 10% tương đối hợp lý đi?”</p>
+<p>Tạ Vân Phàm sảng khoái mà nói “Không sao cả, trò chơi bản quyền ở trong tay ta, về sau ta bán bao nhiêu tiền đều sẽ cùng đại gia cùng nhau phân. Tất thiết là đại gia hợp tác thành quả, kế tiếp các ngươi nhiệm vụ cũng thực trọng, nên lấy nhiều ít liền lấy nhiều ít.”</p>
+<p>Hắn dứt khoát mà lấy ra bút ký tên cùng mực đóng dấu “Tới, đều ký tên đi, nhất thức sáu phân, mỗi người một phần.”</p>
+<p>Mọi người nhanh chóng cúi đầu ký tên, ấn vân tay.</p>
+<p>Lúc này, mọi người đều cảm thấy trò chơi này kiếm không được tiền. Nhưng là, thiêm hiệp nghị kia một khắc, trong lòng vẫn là rất cao hứng —— Vân Phàm có dự kiến trước, ít nhất về sau, bọn họ sẽ không bởi vì ích lợi vấn đề mà nháo bẻ.</p>
+<p>15% lợi nhuận, bọn họ đều rất thỏa mãn!</p>
+<p>Thiêm xong hiệp nghị, Tạ Vân Phàm nói tiếp “Đại gia hội báo một chút tiến độ, Thức Nguyệt trước tới.”</p>
+<p>Chu Thức Nguyệt nói “Ta viết hai cái chuyện xưa, đối thoại chi tiết còn muốn lại sửa sửa, cho đại gia xem một chút.”</p>
+<p>Nàng đem hai cái đoản thiên kịch bản phát đến trong đàn. Tạ Vân Phàm nhìn kỹ xem, hai cái chuyện xưa rất đoản, làm thành trò chơi cốt truyện cũng liền 1 phút tả hữu. Nhân vật đối thoại thực ngắn gọn, phong cách tươi mát tự nhiên, không có cố tình lừa tình.</p>
+<p>Hắn thập phần kinh ngạc với Chu Thức Nguyệt hành văn cùng cốt truyện đem khống năng lực, xác thật rất lợi hại. Nàng nói chính mình là viết tiểu thuyết, phỏng chừng là cái đại lão đi?</p>
+<p>Tạ Vân Phàm cũng không hảo đi hỏi thăm đối phương riêng tư, liền khen hai câu “Viết đến khá tốt, liền ấn loại này tiết tấu viết 10 cái tả hữu đoản thiên.”</p>
+<p>Chu Thức Nguyệt “Tốt, ta quay đầu lại lại tìm xem linh cảm.”</p>
+<p>Tạ Vân Phàm nhìn về phía Nhan Khả “Âm nhạc tuyển hảo sao?”</p>
+<p>Nhan Khả nói “Ta trước tuyển 10 đầu, đại gia nghe một chút.” Nàng xoay người dùng di động liền thượng nhạc cụ dân gian đoàn âm hưởng, bắt đầu truyền phát tin tuyển ra tới khúc.</p>
+<p>Dù sao cũng là tỳ bà thập cấp tuyển thủ, Nhan Khả chọn khúc, tiết tấu cảm rất mạnh, thực thích hợp làm thành đánh âm phù trò chơi nhỏ.</p>
+<p>Tạ Vân Phàm khen “Khúc tuyển đến không tồi, đều là kinh điển khúc mục, thực thích hợp sửa âm du.” Hắn nhìn về phía Quý Diễm “A Diễm bên này thế nào?”</p>
+<p>Quý Diễm hội báo nói “Ta làm 10 cái trạm kiểm soát, mỗi cái trạm kiểm soát phân đơn giản khó khăn hai loại hình thức.” Hắn đem hồ sơ phát ở trong đàn “Đây là cụ thể trạm kiểm soát số liệu.”</p>
+<p>Tạ Vân Phàm nhìn nhìn, nói “Thăng cấp quá trình còn chưa đủ tơ lụa, thuần thục độ gia tăng trị số quá nhảy lên.”</p>
+<p>Quý Diễm lập tức nói “Ân ân, ta lại sửa sửa.”</p>
+<p>Tạ Vân Phàm cổ vũ nói “Chỉnh thể thượng thiết kế đến không tồi, chi tiết hậu kỳ lại điều chỉnh.” Hắn nhìn về phía mặt khác một vị bạn cùng phòng “Khải Nhiên ngươi bên này đâu?”</p>
+<p>Từ Khải Nhiên đỏ mặt nói “UI thiết kế ta làm một bản, ta cảm thấy không quá đẹp…… Các ngươi xem một chút.”</p>
+<p>Tạ Vân Phàm thò lại gần ngắm liếc mắt một cái, này thao tác giao diện hoa hòe loè loẹt, các loại màu sắc rực rỡ quang hiệu, xác thật không quá phù hợp trò chơi phong cách.</p>
+<p>Hắn nhắc nhở nói “Ngươi thử xem kết hợp nhạc cụ đặc sắc, giống đàn tranh, thao tác giao diện bối cảnh có thể làm chút sơn thủy, bối cảnh nhược hóa xử lý, giao diện trung gian làm thành cầm huyền thao tác khu.”</p>
+<p>“4K ca khúc, cùng thời gian chỉ ở 4 căn cầm huyền thượng xuất hiện âm phù; 6K chính là 6 cái âm phù, 8K dùng 8 căn cầm huyền, mặt khác cầm huyền chỉ làm trang trí.”</p>
+<p>“Cây sáo cùng lý, làm một cây nằm ngang cây sáo thao tác khu, dựng rơi xuống âm phù, đừng làm cho người chơi thao tác thời điểm cảm thấy quá hỗn loạn.”</p>
+<p>“Âm du thao tác muốn đơn giản, hảo nhập môn. Ngươi có thể nghe một chút bất đồng âm nhạc tìm một chút linh cảm.”</p>
+<p>Từ Khải Nhiên vừa mới bắt đầu làm UI thời điểm đầu óc trống rỗng, nhưng nghe Tạ Vân Phàm như vậy vừa nói, hắn chỉ cảm thấy bế tắc giải khai!</p>
+<p>Thao tác quá phức tạp, người chơi sẽ trực tiếp bỏ du. Ở giao diện phong cách thượng có điều sáng tạo, bản chất vẫn là 4k 6k 8k thao tác hình thức, người chơi là có thể nhanh chóng thích ứng.</p>
+<p>Một trò chơi có không thành công, mỗi một cái chi tiết đều rất quan trọng.</p>
+<p>Từ Khải Nhiên kích động nói “Minh bạch! Ta trọng tố một bản thử xem.”</p>
+<p>Trương Tử Chính phụ trách trò chơi thí nghiệm, hiện tại trò chơi còn không có làm ra tới, hắn này thứ hai thẳng tại cấp Nhan Khả đương trợ thủ.</p>
+<p>Tạ Vân Phàm nói “A Chính tiếp tục giúp Nhan Khả ghi âm nhạc. Chúng ta đi chuyên nghiệp phòng thu âm, phí dụng phương diện tìm ta chi trả. Nhan Khả, ngươi làm nhạc cụ dân gian đoàn đồng học giúp một chút, nắm chặt thời gian đem này 10 đầu khúc trước lục ra tới.”</p>
+<p>Nhan Khả “Thu được!”</p>
+<p>Tạ Vân Phàm nói “Những người khác tiếp tục chính mình phụ trách bộ phận, tuần sau thấy.”</p>
+<p>Một vòng thực mau qua đi.</p>
+<p>Cuối tuần lại lần nữa chạm trán thời điểm, mỗi người đều có một ít tiến triển.</p>
+<p>Quý Diễm điều chỉnh sau trạm kiểm soát số liệu so lần trước hợp lý nhiều. Chu Thức Nguyệt lại viết hai cái tân cốt truyện, vị này thần bí đại lão viết chuyện xưa xác thật thực ngưu, Tạ Vân Phàm xem đến mùi ngon.</p>
+<p>Từ Khải Nhiên trước làm tốt đàn tranh nhạc khúc UI thao tác giao diện, Tạ Vân Phàm phát hiện vị này bạn cùng phòng một điểm liền thông, rất có ý tưởng. Sắc điệu phối hợp, thao tác giao diện đặc hiệu đều thực tươi mát đẹp.</p>
+<p>Nhan Khả lục xong 10 bài âm nhạc demo, phát đến trong đàn cùng chung.</p>
+<p>Tạ Vân Phàm bên này đã đem trò chơi dàn giáo viết xong.</p>
+<p>Kế tiếp, chỉ cần đem bất đồng ca khúc làm tốt tiết tấu thiết kế, dẫn vào đến mỗi cái trạm kiểm soát, là có thể làm ra trò chơi hình thức ban đầu.</p>
+<p>Tạ Vân Phàm tiếp tục an bài nhiệm vụ “Nhan Khả chuẩn bị tuyển nhóm thứ hai khó khăn càng cao khúc; những người khác tiếp tục sau này làm. Ta tới tập hợp trước mắt hoàn thành bộ phận, trò chơi ra tới sau, A Chính lập tức cầm đi thí nghiệm.”</p>
+<p>Mọi người sôi nổi gật đầu tỏ vẻ minh bạch.</p>
+<p>Ở Tạ Vân Phàm an bài hạ, mọi người đều cảm thấy rất có nhiệt tình.</p>
+<p>Bọn họ lần đầu tiên phát hiện, đoàn đội có cái lợi hại chủ kế hoạch, làm trò chơi thật sự có thể trật tự rõ ràng, làm ít công to.</p>
+<p>Mỗi tuần đều có rất lớn tiến triển, thật giống như trơ mắt nhìn chính mình gieo hạt giống ở chậm rãi nảy mầm, loại cảm giác này cũng quá tuyệt vời đi!</p>
+<p>****</p>
+<p>Cuối tuần hai ngày, Tạ Vân Phàm ở nhà tăng ca. Hắn đem hiện giai đoạn nội dung, dẫn vào viết tốt trò chơi dàn giáo giữa, làm một ít hàm tiếp xử lý.</p>
+<p>Đề cương luận văn tác phẩm không cần thiết lấy tiền tạp hiệu quả, có thể sử dụng miễn phí tư liệu sống, liền trực tiếp dùng tư liệu sống kho giải quyết. Cốt truyện anime hoà thuận vui vẻ hồn thu thập hệ thống, hắn tính toán cuối cùng lại làm, trước đem âm du trạm kiểm soát cấp chuẩn bị cho tốt.</p>
+<p>Làm tốt cái thứ nhất trạm kiểm soát, hắn đem trò chơi đóng gói chia cho Trương Tử Chính.</p>
+<p>Trương Tử Chính thu được gói cài đặt, kích động mà ở trong ký túc xá rống to “Ngọa tào, các huynh đệ, cái thứ nhất trạm kiểm soát ra tới!”</p>
+<p>Quý Diễm hưng phấn mà thò qua tới “Mau mau, mở ra chơi một chút thử xem!”</p>
+<p>Trương Tử Chính thở sâu, mở ra trò chơi gói cài đặt thời điểm đôi tay đều ở hơi hơi phát run —— ai hiểu a! Hắn từ nhỏ đến lớn chơi qua thượng trăm khoản trò chơi, này vẫn là lần đầu tiên chơi đồng học chính mình làm trò chơi.</p>
+<p>Sơ bản thí nghiệm demo, không có mở màn anime, thậm chí không có đổ bộ đăng ký giao diện, trực tiếp vào cửa thứ nhất.</p>
+<p>Âm nhạc vang lên, âm phù thong thả rơi xuống.</p>
+<p>Giao diện là Từ Khải Nhiên thiết kế, mơ hồ xử lý quá sơn thủy bối cảnh nhìn qua rất có ý cảnh, cầm huyền thượng xuất hiện âm phù tiêu chí.</p>
+<p>Đệ nhất bài hát phi thường đơn giản, Trương Tử Chính một hơi liên kích 125.</p>
+<p>Tạ Vân Phàm hỏi “Thao tác xúc cảm thế nào?”</p>
+<p>Trương Tử Chính cân nhắc một lát, nói “Cảm giác không quá lưu sướng? Tiết tấu thường xuyên tạp không chuẩn xác, âm phù ấn xuống đi thời điểm, lùi lại 0 điểm vài giây mới có phản hồi.”</p>
+<p>Tạ Vân Phàm “Hảo, ta sửa sửa xem.”</p>
+<p>Nửa giờ sau hắn lại phát tới một cái gói cài đặt “Thử lại?”</p>
+<p>Trương Tử Chính thử thử, nói “Lần này quá nhanh nhạy, đối thủ tàn đảng thực không hữu hảo, hơn nữa cái này đặc hiệu ta cảm thấy có chút lóa mắt, tự quá lớn, dễ dàng khiến cho ngộ phán.”</p>
+<p>Tạ Vân Phàm sửa chữa hệ thống phản hồi thời gian. Quý Diễm cùng Từ Khải Nhiên, cũng ở nắm chặt thời gian sửa các loại đặc hiệu, tự phù số liệu.</p>
+<p>Vài người không ngừng mà thí nghiệm, sửa chữa, vẫn luôn sửa đến đêm khuya, Trương Tử Chính mới kích động mà nói “Ta cảm thấy này một bản thao tác thực tơ lụa!”</p>
+<p>Tạ Vân Phàm “Không vội mà định bản thảo, ngày mai lại chơi mấy lần nhìn xem.”</p>
+<p>Làm tro cốt cấp người chơi, Trương Tử Chính trò chơi kinh nghiệm phong phú, hơn nữa tốc độ tay cực nhanh, thao tác hay không lưu sướng, hắn có thể nhạy bén mà cảm giác đến.</p>
+<p>Ngày kế, Trương Tử Chính lại chơi mấy lần, nói “Ta cảm giác khá tốt.”</p>
+<p>Tạ Vân Phàm nói “Đây là đơn giản nhất ca, thao tác cảm thụ khả năng không như vậy rõ ràng. Chờ thượng khó khăn lại tiếp tục thí nghiệm, chúng ta đã tốt muốn tốt hơn.”</p>
+<p>Trương Tử Chính “Minh bạch!”</p>
+<p>Tất thiết tiểu đội lịch sử trò chuyện, động bất động chính là 999+.</p>
+<p>Mọi người đều nghiêm túc mà đầu nhập đến công tác giữa.</p>
+<p>Toàn bộ đoàn đội đồng tâm hiệp lực hoàn thành một sự kiện cảm giác, thực nhiệt huyết, cũng thực làm người kích động. Đại học thời đại có thể gặp được như vậy nghiêm túc đoàn kết đội ngũ, có lẽ là bọn họ may mắn đi? Đại gia cũng thực quý trọng cơ hội này.</p>
+<p>Thao tác hình thức, bọn họ thí nghiệm mấy chục biến, cuối cùng định ra nhất lưu sướng tơ lụa phiên bản. Tiết tấu, giao diện, tự thể, đặc hiệu…… Này đó ảnh hưởng người chơi cảm thụ đồ vật cũng sửa chữa vài cái phiên bản.</p>
+<p>Mỗi người đều ở bận rộn.</p>
+<p>Tạ Vân Phàm ngược lại tương đối thanh nhàn.</p>
+<p>Loại này trò chơi nhỏ, rất nhiều đồ vật không cần hắn tự mình trấn cửa ải. Quý Diễm, Từ Khải Nhiên những người này, đại học mấy năm lại không phải bạch thượng, hắn chỉ cần đem công tác nhiệm vụ công đạo đi xuống, đem trình tự dàn giáo viết hảo, làm các bạn học chính mình sửa chữa liền có thể.</p>
+<p>Trong khoảng thời gian này, Tạ Vân Phàm ở nắm chặt ôn tập phụ lục.</p>
+<p>Năm 1 đến năm 3 treo khoa, trường học chỉ cần an bài thi lại, hắn liền đi khảo thí, tận lực mỗi môn khóa đều bắt được đạt tiêu chuẩn điểm.</p>
+<p>Thời gian quá thật sự mau, đảo mắt tới rồi 10 nguyệt.</p>
+<p>Lạc Hàng từ nước ngoài trở về, thẳng đến Dung Thành. Tạ Tinh Hà tự mình lái xe đi tiếp hắn, đính bản địa tối cao đương nhà ăn tới chiêu đãi khách quý.</p>
+<p>Tạ Vân Phàm kêu taxi đi cùng hai người gặp mặt.</p>
+<p>Lạc Hàng một thân chính thức tây trang, đại ca hôm nay cũng xuyên âu phục. Chỉ có Tạ Vân Phàm quần jean xứng ngắn tay, nguyên khí tràn đầy học sinh bộ dáng, cùng “Thành công nhân sĩ” trang điểm hai vị nam nhân tựa hồ có sự khác nhau.</p>
+<p>Tạ Tinh Hà thấp giọng ở đệ đệ bên tai nói “Nói chuyện hợp tác, ngươi cũng không đổi thân quần áo, liền như vậy lại đây?”</p>
+<p>Tạ Vân Phàm bình tĩnh mà nói “Không sao cả, ta cùng Lạc Hàng hợp tác hơn nửa năm, đã rất quen thuộc, hắn không để bụng này đó.”</p>
+<p>Lạc Hàng nhìn về phía Tạ Vân Phàm, khóe miệng lộ ra cái mỉm cười “Một tháng không thấy, ngươi trạng thái hảo rất nhiều. Xem ra, trong khoảng thời gian này không như thế nào thức đêm?”</p>
+<p>Tạ Vân Phàm thẳng thắn nói “Gần nhất xác thật không thức đêm, 11 giờ đúng giờ ngủ. Tất thiết lại không nóng nảy, không giống làm 《 Quỷ Giới 》 thời điểm mỗi ngày ca đêm.”</p>
+<p>Lạc Hàng nói “Lúc ấy, phải nắm chặt thời gian đuổi ở quỷ hút máu phía trước đưa ra thị trường, xác thật vất vả.”</p>
+<p>Tạ Vân Phàm cười nói “Không có việc gì, ngươi cũng giống nhau tăng ca, làm trò chơi sao, tăng ca thực bình thường.” Hắn dừng một chút, hỏi, “Đúng rồi, quỷ hút máu kia trò chơi sau lại thế nào? Ta không quá chú ý.”</p>
+<p>Lạc Hàng nói “Bọn họ ở quốc nội nước chảy rất kém cỏi, xa không bằng đệ nhất bộ, nước ngoài nhưng thật ra bán đến không tồi, Âu Mỹ thị trường ăn loại này đề tài.”</p>
+<p>Hắn từ folder lấy ra một trương bảng biểu “Đây là 《 Quỷ Giới 》 ở hải ngoại tiêu thụ tài vụ báo biểu, quốc tế gửi tiền yêu cầu một đoạn thời gian, chờ đến trướng sau ta liền đánh cho ngươi.”</p>
+<p>Tạ Vân Phàm nhìn kỹ xem báo biểu, cảm khái nói “Khấu trừ các loại hoạt động đại lý phí dụng, lợi nhuận thêm lên cũng phá trăm triệu, trò chơi này cũng thật có thể kiếm tiền.”</p>
+<p>Tạ Tinh Hà thực kinh ngạc “Hải ngoại lợi nhuận cũng có nhiều như vậy sao?”</p>
+<p>Lạc Hàng nói “Ân, chúng ta 《 Quỷ Giới 》 phong cách đặc biệt, cách chơi mới mẻ độc đáo, ở nước ngoài người chơi quần thể trung đánh giá cũng thực hảo.”</p>
+<p>Tạ Vân Phàm nói sang chuyện khác nói “Đúng rồi, 《 Cách Đấu Đại Sư 》 sự ta cùng ta ca nói qua, cụ thể hợp tác hình thức, các ngươi liêu đi.”</p>
+<p>Lạc Hàng nhìn về phía Tạ Tinh Hà “Tạ tiên sinh, 《 Cách Đấu Đại Sư 》 trò chơi này có rất nhiều vấn đề, chúng ta muốn lấy lại đi một lần nữa cải tạo, hậu kỳ mở rộng phát hành cũng từ chúng ta phụ trách, lợi nhuận phương diện Khải Hàng chiếm 6 thành, ngươi xem được không?”</p>
+<p>Tạ Tinh Hà vội vàng nói “Không thành vấn đề!” Hắn phía trước đều làm tốt lấy hai thành lợi nhuận chuẩn bị, Lạc Hàng trực tiếp cho hắn bốn thành, thật đủ hào phóng.</p>
+<p>Lạc Hàng hỏi “Trò chơi muốn treo ở Dương Phàm phòng làm việc danh nghĩa, vẫn là lấy ngươi cái người danh nghĩa cùng Khải Hàng hợp tác?”</p>
+<p>Tạ Tinh Hà còn chưa kịp trả lời, Tạ Vân Phàm liền chủ động nói “Lấy ca ca ta danh nghĩa đi, trò chơi này là hắn tâm huyết.”</p>
+<p>Tạ Tinh Hà trong lòng ấm áp, cười nói “Ân, nghe Vân Phàm.”</p>
+<p>Lạc Hàng nói “Hy vọng Tạ tiên sinh có thể cùng ta cùng đi đế đô, trò chơi cụ thể như thế nào sửa, chúng ta kế hoạch còn muốn tùy thời cùng ngươi thảo luận.”</p>
+<p>Tạ Tinh Hà không thể tin được mà nhìn về phía hắn “Ta cũng có thể tham dự chế tác?”</p>
+<p>Lạc Hàng cười nói “Này vốn dĩ chính là ngươi trò chơi, ngươi đương nhiên có thể tham dự. Bất quá, ngươi một người, vô pháp giống Vân Phàm như vậy trực tiếp đương chủ kế hoạch.”</p>
+<p>Lạc Hàng câu này nói thật sự uyển chuyển. Kỳ thật Tạ Tinh Hà trong lòng cũng rõ ràng, hắn không có đệ đệ như vậy năng lực đi đương chủ kế hoạch. Hắn đương chủ kế hoạch hậu quả, chính là 《 Cách Đấu Đại Sư 》 đưa ra thị trường nửa tháng ch·ế·t đột ngột hạ giá.</p>
+<p>Cũng không dám lại đến một lần a.</p>
+<p>Vẫn là làm Khải Hàng người đương chủ kế hoạch đi, hắn đi đương trợ thủ, đề đề ý kiến gì đó, trọng ở tham dự.</p>
+<p>Hai bên vui sướng mà đạt thành chung nhận thức, xác định ký hợp đồng thời gian.</p>
+<p>Lạc Hàng thuận miệng hỏi “Vân Phàm đề cương luận văn làm được thế nào?”</p>
+<p>Tạ Vân Phàm lấy ra di động, mở ra gói cài đặt đưa cho Lạc Hàng “Âm du, còn không có làm xong, ngươi muốn hay không chơi một chút thử xem?”</p>
+<p>Lạc Hàng mở ra trò chơi thí chơi hai cục, bình luận “Thao tác thực lưu sướng, tiết tấu cảm cũng khống chế được thực hảo. Chẳng qua, nội dung có chút thiếu đi?”</p>
+<p>Tạ Vân Phàm nói “Cốt truyện cùng sách tranh còn chưa kịp dẫn vào, cái này chỉ là bước đầu trạm kiểm soát thí nghiệm bản.” Hắn dừng một chút, nói “Tương lai, game thực tế ảo cũng có thể cấy vào loại này âm du.”</p>
+<p>Lạc Hàng hiểu rõ nói “Giống 《 Diệp Tử Hí 》 như vậy, làm thành một loại hưu nhàn cách chơi sao?”</p>
+<p>Tạ Vân Phàm “Đúng vậy. Game thực tế ảo đàn tranh, tỳ bà, ấn hiện thực nhạc cụ một so một phục khắc, người chơi sẽ có tự mình đánh đàn chân thật cảm. Rất nhiều khi còn nhỏ không học quá nhạc cụ người chơi, cũng có thể ở game thực tế ảo viên mộng.”</p>
+<p>Ở game thực tế ảo ôm tỳ bà đàn tấu? Hoặc là kéo kéo nhị hồ, thổi thổi sáo? Chỉ cần tạp hảo hệ thống âm nhạc tiết tấu, liền có thể bắn ra lưu sướng nhạc khúc, chẳng sợ không học quá nhạc cụ người, cũng đồng dạng có thể cảm thụ đàn tấu nhạc cụ vui sướng.</p>
+<p>Nghe đi lên rất có ý tứ.</p>
+<p>Lạc Hàng khen “Ý tưởng này không tồi. Đơn độc làm thực tế ảo bản âm du, tiền cảnh cũng không tốt, nhưng cấy vào đến đại hình trong trò chơi, làm một loại hưu nhàn cách chơi, khẳng định sẽ thực chịu người chơi hoan nghênh.”</p>
+<p>Tạ Vân Phàm nói “Ta cũng như vậy tưởng.”</p>
+<p>Tạ Tinh Hà hiếu kỳ nói “Ngươi cái này âm du, tính toán thượng giá tiêu thụ sao?”</p>
+<p>Tạ Vân Phàm nói “Ta làm trò chơi này, không phải vì kiếm tiền, mà là tưởng mở rộng nhạc cụ dân gian. Đến lúc đó xem tình huống đi, nếu trực tiếp thượng thủ du nhà bán nói, giá cả khống chế ở 5 đồng tiền trong vòng.”</p>
+<p>5 đồng tiền trong vòng trò chơi, khấu trừ thủ tục phí tương đương với tặng không.</p>
+<p>Tạ Vân Phàm xác thật không để bụng về điểm này lợi nhuận, định giá tiện nghi chút, mua người càng nhiều, đối “Mở rộng nhạc cụ dân gian” cũng sẽ càng thêm có lợi.</p>
+<p>Cơm trưa sau khi kết thúc, huynh đệ hai người mang Lạc Hàng đi phòng làm việc đi dạo.</p>
+<p>“Trang hoàng thật sự xinh đẹp, không gian rộng mở. Dưới lầu phong cảnh cũng khá tốt, không khí thực tươi mát.” Lạc Hàng nói giỡn nói, “Ta đều nghĩ đến ngươi nơi này làm công.”</p>
+<p>Tạ Vân Phàm tích cực mà nói “Hoan nghênh đi ăn máng khác!”</p>
+<p>Lạc Hàng thu hồi vui đùa, nhìn về phía hắn nói “Ngày mai ta làm Dung Thành phân bộ giám đốc cho ngươi đưa một đám khoang trò chơi lại đây, bãi ở 20 lâu thể nghiệm trung tâm.”</p>
+<p>Khải Hàng khoang trò chơi một đài giá cả đều phải thượng vạn. Bất quá, về sau còn có hợp tác cơ hội, yêu cầu khoang trò chơi làm thí nghiệm, đảo cũng không cần cùng hắn khách khí.</p>
+<p>Tạ Vân Phàm nói “Cảm ơn, ta coi như là Lạc tổng đưa khai trương lễ vật?”</p>
+<p>Lạc Hàng hơi hơi mỉm cười “Ân. Chờ chính thức khai trương, ta lại đến chúc mừng.”</p>
+<p>Buổi chiều, Lạc Hàng bị Dung Thành phân bộ giám đốc tiếp đi.</p>
+<p>Tạ Vân Phàm cùng ca ca cùng nhau về nhà. Trên đường trở về, hắn chủ động đề nói “Ca, 《 Quỷ Giới 》 quốc nội lợi nhuận bắt được 1.5 trăm triệu, hơn nữa nước ngoài 1 trăm triệu, ngươi thiếu ngân hàng cho vay không cần lo lắng. Trò chơi này sáu tháng cuối năm còn sẽ tiếp tục kiếm tiền, minh hôn hoạt động khẳng định cũng có một tuyệt bút tiền lời. Ngân hàng mỗi tháng lợi tức rất cao, muốn hay không trước tiên còn khoản?”</p>
+<p>“Không cần.” Tạ Tinh Hà có chút hổ thẹn mà cúi đầu, nói, “Ta đương ca ca như thế nào có thể làm ngươi hỗ trợ trả tiền? Chờ ta cùng Khải Hàng hợp tác, đến lúc đó 《 Cách Đấu Đại Sư 》 có thể kiếm tiền nói, ta chính mình chậm rãi còn.”</p>
+<p>“…… Hảo đi.” Tạ Vân Phàm không có miễn cưỡng, rốt cuộc ca ca cũng có lòng tự trọng, chính mình thiếu tiền chính mình còn, hắn trong lòng sẽ càng thêm kiên định đi?</p>
+<p>Mặc kệ như thế nào, Tạ gia khủng hoảng kinh tế xem như hoàn toàn phiên thiên.</p>
+<p>Một tháng thời gian thực mau qua đi.</p>
+<p>Tất thiết tiểu đội trong đàn, tin tức càng ngày càng nhiều, đến 10 dưới ánh trăng tuần thời điểm, trò chơi hình thức ban đầu cũng đã làm xong.</p>
+<p>Nhân vật lập vẽ, thẻ bài sách tranh tái nhập, trò chơi lập tức bay lên một cái bậc thang. Phía trước trò chơi là để mặt mộc, hiện tại chính là ăn diện lộng lẫy.</p>
+<p>Nhan Khả nhịn không được nói “Cây sáo cùng ống tiêu cũng quá soái đi! Vì thu thập bọn họ lập vẽ, ta có thể gan một tuần tích cóp Nhạc Hồn mảnh nhỏ!”</p>
+<p>Quý Diễm thích nhất tỳ bà tiểu tỷ tỷ, Từ Khải Nhiên cảm thấy đàn tranh muội muội càng mỹ. Chu Thức Nguyệt nhưng thật ra thực thích nhị hồ lão gia gia, nói lão gia gia vừa thấy liền rất có chuyện xưa cảm, nàng muốn trước đổi nhị hồ sách tranh.</p>
+<p>10 cuối tháng, cốt truyện anime chế tác hoàn thành, toàn bộ nhạc khúc âm phù chế tác hoàn thành, đặc hiệu, thao tác hệ thống, trạm kiểm soát trị số cuối cùng bản cũng rốt cuộc định bản thảo.</p>
+<p>Ngày 1 tháng 11, trò chơi hoàn chỉnh bản demo chính thức ra đời!</p>
+<p>Hồi tưởng từ khai giảng tổ đội, đến bây giờ trò chơi toàn bộ hoàn thành, ngắn ngủn hai tháng thời gian, bọn họ mỗi ngày đều rất bận rộn……</p>
+<p>Nhưng vội thật sự vui vẻ.</p>
+<p>Tạ Vân Phàm ở tất thiết tiểu đội trong đàn đã phát điều tin tức “@ toàn thể thành viên, các vị vất vả, cuối cùng bản demo ta phát đến trong đàn, đại gia thí chơi mấy ngày, không có bug nói, ta liền đệ trình cấp trường học xét duyệt.”</p>
+<p>Mọi người sôi nổi hồi phục “Thu được!”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong40.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong42.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "di-gioi-tro-choi-che-tac-nguoi";
+const NOVEL_TITLE = "Dị giới trò chơi chế tác người";
+const CHAPTER_TITLE = "Chương 41";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

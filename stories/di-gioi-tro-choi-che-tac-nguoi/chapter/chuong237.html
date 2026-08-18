@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 237</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Dị giới trò chơi chế tác người
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 237</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong236.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong238.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Ngày 3 tháng 10, đăng ký quá Dương Phàm trò chơi các người chơi đồng thời thu được một cái tin nhắn ——</p>
+<p>Thư mời</p>
+<p>Tôn kính người chơi, thành mời ngài tham gia Tạ Vân Phàm tiên  sinh cùng Lạc Hàng tiên sinh thực tế ảo hôn lễ</p>
+<p>Thời gian: Ngày 6 tháng 10 buổi sáng 11:30</p>
+<p>Địa điểm: Khải Hàng cập hợp tác phương khoang trò chơi “Thực tế ảo hôn lễ” chuyên khu</p>
+<p>Hôn lễ cùng ngày, còn đem có đại lượng phúc lợi đưa tặng nga</p>
+<p>Chờ mong ngài quang lâm ^^</p>
+<p>Này từ vận doanh thương đàn phát tin tức, giống như đầu nhập bình tĩnh mặt hồ trọng bàng bom, chẳng những các người chơi tập thể bị tạc mông, trò chơi giới đồng hành cũng đều trợn mắt há hốc mồm.</p>
+<p>Tin tức phát ra sau không lâu, # thực tế ảo hôn lễ # đề tài nhanh chóng tiêu lên hot search bảng một.</p>
+<p>Đại lượng người chơi dũng mãnh vào đề tài tham dự thảo luận.</p>
+<p>“Phía trước phỏng vấn thời điểm Tiểu Thuyền Buồm nói hắn không phải độc thân, các võng hữu đoán nửa ngày hắn đối tượng sẽ là ai, kết quả…… Cư nhiên rơi rớt Lạc tổng?!”</p>
+<p>“Trách không được Khải Hàng ở Dung Thành phân bộ muốn kiến ở Dương Phàm tập đoàn cách vách, Lạc tổng rất có dự kiến trước a, gần quan được ban lộc.”</p>
+<p>“Cái gì? Dương Phàm lão bản cùng Khải Hàng lão bản muốn kết hôn?”</p>
+<p>“Lần đầu tiên thấy kết cái hôn cấp toàn cầu người chơi phát thư mời, ngưu bức.”</p>
+<p>“Này sóng cẩu lương sái đến phi thường cao điệu!”</p>
+<p>“Sớm tại 《 Cung Đình Phong Vân 》 hai người bọn họ hai người phát sóng trực tiếp thời điểm, ta liền cảm thấy hai vị soái ca siêu cấp xứng đôi, còn yên lặng khái một chút hai người bọn họ cp. Không nghĩ tới ta khái cp trở thành sự thật?”</p>
+<p>“Dương Phàm xuất phát, cường cường liên thủ!”</p>
+<p>“Nhất có tài hoa kế hoạch cùng nhất có lương tâm hoạt động, xác thật thực xứng đôi. Hôn lễ hiện trường còn có phúc lợi đưa tặng, quang hướng điểm này, ta cũng phải đi vây xem một chút.”</p>
+<p>“Thật sự cấp toàn cầu người chơi đã phát thư mời sao? Hôn lễ cùng ngày nhất định siêu cấp náo nhiệt đi!”</p>
+<p>“Hy vọng server cấp lực một chút, đừng kết hôn kết một nửa tạp băng rồi.”</p>
+<p>“Đến lúc đó đồng thời tại tuyến toàn cầu người chơi số lượng nhất định thực đáng sợ.”</p>
+<p>“Về sau ta có thể hay không cùng người khác khoác lác, nói ta tham gia quá trò chơi giới hai vị đại lão —— Tạ tổng cùng Lạc tổng hôn lễ, còn thu được bọn họ tự mình phát thư mời!”</p>
+<p>“Cái này ngưu bức mọi người đều có thể thổi, rốt cuộc chúng ta xác thật thu được thư mời ^^”</p>
+<p>Võng du có cái gì bát quái, các người chơi cũng sẽ nói chuyện say sưa mà chạy tới vây xem.</p>
+<p>Huống chi lần này là từ trước tới nay quy mô nhất long trọng thực tế ảo hôn lễ. Thư mời đều phát tới tay cơ, đương nhiên muốn đi hiện trường xem xem náo nhiệt!</p>
+<p>Cùng lúc đó, nổi danh trò chơi chủ bá, cắt nối biên tập UP chủ, công lược bác chủ từ từ, sôi nổi ở cá nhân ngôi cao tỏ vẻ Chờ mong tham gia trận này độc đáo hôn lễ.</p>
+<p>Lục ca nói “Ta từ 《 Địa Phủ Mê Cung 》 liền bắt đầu chơi Tiểu Thuyền Buồm trò chơi, cũng coi như là Dương Phàm trò chơi trung thực fans. Tiểu Thuyền Buồm muốn kết hôn, ta thực thế hắn vui vẻ!”</p>
+<p>Manh Thỏ hưng phấn nói “Làm trò toàn cầu người chơi mặt kết hôn, vẫn là thực tế ảo hôn lễ, siêu cấp lãng mạn a! Nhiều như vậy người chơi cùng nhau chứng kiến bọn họ tình yêu, ta đều bắt đầu cảm động.”</p>
+<p>Công lược đại thần Màu Tím Bông Cải đã phát điều Weibo tỏ vẻ “Chúc mừng hai vị đi đến cùng nhau, hy vọng hai người cảm tình có thể lâu lâu dài dài, chúng ta người chơi, tương lai cũng có thể có càng thật tốt chơi trò chơi.”</p>
+<p>Dương Phàm cùng Khải Hàng bên trong công nhân, nhìn đến tin tức này sau cũng không có quá kinh ngạc.</p>
+<p>“Bọn họ cuối cùng muốn kết hôn sao?”</p>
+<p>“Năm đó Tạ tổng đem Lạc tổng thu nhỏ lại bản AI đặt ở chính mình văn phòng, ta còn tưởng rằng đó là Lạc tổng đưa hắn đính ước tín vật.”</p>
+<p>“Hai vị lão bản ở bên nhau, này không phải đại gia trong lòng biết rõ ràng sao?”</p>
+<p>“Hai người bọn họ thường xuyên ở viên khu phụ cận nhà ăn cùng nhau ăn cơm, ta gặp phải rất nhiều lần.”</p>
+<p>“Ta còn thấy hai người bọn họ cùng nhau chạy bộ buổi sáng, trên đường vừa nói vừa cười.”</p>
+<p>“Mỗi lần hai người bọn họ nói chuyện phiếm người khác đều cắm không thượng lời nói.”</p>
+<p>“CP cảm mười phần, hai bên công nhân trong lòng đều hiểu rõ, ha ha!”</p>
+<p>“Hai người bọn họ cho rằng giấu rất khá sao? Kỳ thật liền kém đem [ thích ] viết ở trên mặt.”</p>
+<p>Tạ Vân Phàm cùng Lạc Hàng “……”</p>
+<p>Nghe đến mấy cái này nghị luận, hai người quả thực dở khóc dở cười.</p>
+<p>—— cái gọi là trong nhà chưa tỏ, ngoài ngõ đã tường. Cùng bọn họ ở chung lâu rồi công nhân, đã sớm nhìn ra hai người đối lẫn nhau cảm tình không giống bình thường. Nhưng thật ra bọn họ này hai cái trì độn đương sự, mãn đầu công tác, qua lâu như vậy mới nhận thấy được chính mình tâm ý.</p>
+<p>Dương Phàm & Khải Hàng hợp tác dài đến tám năm, Lạc Hàng cùng Tạ Vân Phàm đi đến cùng nhau, là không hề nghi ngờ “Cường cường liên hợp”, đại bộ phận người chơi đều tỏ vẻ chúc phúc.</p>
+<p>Tạ Vân Phàm cùng Lạc Hàng, gần nhất vội vàng trù bị hôn lễ. Làm trong một trò chơi hôn lễ cảnh tượng rất đơn giản, đây là sinh viên đều sẽ thiết kế cơ sở nội dung, khó chính là phong cách xác định.</p>
+<p>Rốt cuộc làm cái gì phong cách hảo đâu?</p>
+<p>Hai người thương lượng lúc sau, quyết định ở tiên phủ tổ chức hôn lễ.</p>
+<p>Tiên phủ là bọn họ cộng đồng chế tạo gia viên, là bọn họ nhận thấy được chính mình tâm ý địa phương. Hơn nữa, tiên hiệp phong cách hôn lễ nghi thức, ở toàn thế giới tới nói, đây cũng là đầu lệ.</p>
+<p>Kiểu Tây hôn lễ ở trong hiện thực quá thường thấy, lấy tiên hiệp là chủ đề hôn lễ chẳng những cùng trò chơi hoàn mỹ phù hợp, còn có thể mượn cơ hội tuyên truyền một chút Hoa Hạ văn hóa.</p>
+<p>Hai người ăn nhịp với nhau.</p>
+<p>Định ra phong cách sau, liền bắt đầu thỉnh trang phục thiết kế sư giúp bọn hắn thiết kế hôn phục.</p>
+<p>Màu đỏ cổ trang hôn phục sẽ càng vui mừng, bọn họ đều là nam sinh, xuyên cùng khoản tình lữ trang liền hảo. Đến nỗi hiện trường bố trí, hai người cũng hoa một phen tâm tư, hy vọng đến lúc đó có thể cho các người chơi một kinh hỉ.</p>
+<p>Tạ Vân Phàm bản thân chính là làm kế hoạch, đem hết thảy đều an bài đến gọn gàng ngăn nắp.</p>
+<p>Trong nháy mắt tới rồi ngày 6 tháng 10.</p>
+<p>Buổi sáng 11 giờ, toàn cầu sở hữu Khải Hàng khoang trò chơi cùng với nhị cấp đại lý thương khoang trò chơi đổ bộ giao diện, đồng thời xuất hiện một cái tân icon ——【 thực tế ảo hôn lễ 】.</p>
+<p>Rất nhiều người chơi sớm đã ở khoang trò chơi chờ đợi, thấy hôn lễ nhập khẩu xuất hiện, lập tức đưa vào thư mời số di động, đổ bộ đi vào.</p>
+<p>Các người chơi sôi nổi tỏ vẻ “Đây là ta lần đầu tiên gấp không chờ nổi mà muốn tham gia một hồi tiệc cưới!” “Chờ Tiểu Thuyền Buồm kết hôn, quả thực so chờ tân du công trắc còn muốn cho người hưng phấn.”</p>
+<p>Đăng nhập vào game sau, các người chơi tức khắc bị hiện trường bố trí làm cho sợ ngây người ——</p>
+<p>Cổ kính hôn lễ cảnh tượng, dùng chính là 《 Tu Tiên Thế Giới 》 tiên phủ mô hình đây là các người chơi gặp qua diện tích nhất khổng lồ tiên phủ.</p>
+<p>Trong phủ sở hữu hành lang, môn thính, đều treo đầy màu đỏ rực hỉ tự đèn lồng.</p>
+<p>Liếc mắt một cái vọng không đến cuối màu đỏ quang thảm, giống như ráng màu giống nhau, phô ở không trung bên trong.</p>
+<p>Vô số tiên thú, linh điểu ở trời cao trung tự do xoay quanh.</p>
+<p>Tiên phủ nội mọc đầy các loại kỳ hoa dị thảo, đều là trong hiện thực chưa bao giờ có gặp qua linh thực, chung quanh sương mù vờn quanh, giống như thế ngoại đào nguyên giống nhau tốt đẹp.</p>
+<p>Một màn này hình ảnh, làm chơi qua 《 Tu Tiên Thế Giới 》 người chơi kích động vô cùng, chưa từng chơi người chơi cũng bị chấn động đến nói không ra lời.</p>
+<p>“Lần đầu tiên nhìn đến như vậy hôn lễ hình thức, này không thể so giáo đường tuyên thệ có sáng ý nhiều?”</p>
+<p>“Phiêu ở trên trời quang thảm là làm gì? Thật xinh đẹp.”</p>
+<p>“Sẽ không hai vị tân lang muốn ở trời cao trung bước trên thảm đỏ đi?”</p>
+<p>“Cũng có thể là ngự kiếm phi hành?”</p>
+<p>“Nghi thức địa điểm ở nơi nào, cái này tiên phủ cũng quá lớn, dạo đến ta lạc đường!”</p>
+<p>“Xem lễ khu tọa độ ( 520.1314 ), kế hoạch hảo hội.”</p>
+<p>Bản đồ kênh có thể nói chuyện phiếm.</p>
+<p>Không ít người chơi theo tọa độ tìm qua đi, quả nhiên thấy lần này hôn lễ “Tuyên thệ đài”.</p>
+<p>Chỉ thấy hai cây che trời đại thụ cành lá giao hòa, sinh cơ bừng bừng, đúng là tiên hiệp trong trò chơi “Nhân duyên thụ” kiến mô phục khắc.</p>
+<p>Nhân duyên thụ chung quanh, bày một vòng yến hội bàn ghế.</p>
+<p>Tham gia tiệc cưới đương nhiên muốn ăn yến hội. Dương Phàm Khải Hàng liên thủ chế tạo 《 Phố Mỹ Thực 》 đã chứng minh, trong trò chơi mỹ thực khẩu vị cũng không thua với hiện thực.</p>
+<p>Không ít người chơi kích động nói “Cư nhiên còn có tiệc rượu sao?” “Ta cho rằng chỉ là tham gia cái hôn lễ, thật đúng là làm chúng ta ăn tịch a!” “666, này một đợt không lỗ.” “Lần đầu tiên tham gia hôn lễ không cần móc tiền, còn có thể miễn phí ăn tiệc, cảm giác hảo kỳ diệu ~”</p>
+<p>Khải Hàng hậu trường, tại tuyến người chơi số lượng không ngừng tiêu thăng.</p>
+<p>11 giờ, hôn lễ hiện trường mới vừa mở ra khi, liền dũng mãnh vào 1 ngàn vạn người chơi.</p>
+<p>Lúc sau mỗi cách 5 phút, người chơi số lượng đều ở phiên bội tăng trưởng.</p>
+<p>5 ngàn vạn……1 trăm triệu……5 trăm triệu……</p>
+<p>Ở tiệc cưới chính thức bắt đầu khi, tại tuyến người chơi số lượng cư nhiên đột phá 1 tỷ?!</p>
+<p>Này chỉ là một hồi hôn lễ. Lại so với rất nhiều trò chơi công trắc cùng ngày nhiệt độ còn muốn đáng sợ.</p>
+<p>—— từ 1 tỷ người chơi cộng đồng chứng kiến, sử thượng quy mô nhất long trọng hôn lễ!</p>
+<p>Game thực tế ảo sẽ có thật thể va chạm, vì dùng một lần cất chứa đại lượng người chơi, Lạc Hàng bắt đầu dùng cấp bậc cao nhất Tinh Võng server đội bay, tiệc cưới hiện trường phân ra vô số phó bản copy.</p>
+<p>1 tỷ người chơi đồng thời tại tuyến cũng hoàn toàn không tạp đốn. Người chơi mặc kệ thân ở với cái nào copy cảnh tượng, nhìn đến nghi thức, ăn đến tiệc rượu đều là giống nhau.</p>
+<p>Hoạt động tổ tổng giám kích động vô cùng “Hai vị lão bản nhân khí hảo cao, này một đợt cũng coi như là biến hướng tuyên truyền đi, Lạc tổng thực sự có ý tưởng.”</p>
+<p>Ở 1 tỷ người chơi tha thiết chờ mong trung, trong trò chơi kim đồng hồ rốt cuộc đi hướng .</p>
+<p>Hiện trường vang lên cổ đại hôn lễ thường dùng hỉ nhạc, không khí nháy mắt náo nhiệt lên.</p>
+<p>Một trận thanh thúy tiếng chim hót từ trên cao trung truyền đến.</p>
+<p>Các người chơi đồng thời ngẩng đầu nhìn về phía không trung.</p>
+<p>Chỉ thấy trời cao trung, một con xinh đẹp phượng hoàng, lôi kéo một chiếc hoa lệ màu đỏ cổ phong hôn xe, dọc theo phô tốt quang thảm, triều hôn lễ hiện trường thong thả phi hành mà đến.</p>
+<p>Phượng hoàng hình thể khổng lồ, triển khai lửa đỏ cánh chim, đủ để che trời.</p>
+<p>Toàn bộ không trung đều bị nhuộm đẫm thành kim hồng màu sắc.</p>
+<p>Ở phượng hoàng thần thú chung quanh, còn có vô số chỉ kim sắc linh điểu giương cánh bạn hành, phảng phất ở hộ tống hôn trên xe hai người, cùng nhau đi hướng hạnh phúc chung điểm.</p>
+<p>Rộng mở cổ phong hôn trên xe buộc lại không ít màu đỏ dải lụa, ở trên bầu trời theo gió lay động. Ăn mặc đỏ thẫm hỉ phục Lạc Hàng cùng Tạ Vân Phàm, tay nắm tay, sóng vai ngồi ở cùng nhau.</p>
+<p>Phượng hoàng lôi kéo hôn xe ở trên bầu trời thong thả xoay quanh, bạn hành linh điểu nhóm ở không trung bay qua, lưu lại kim sắc quang tích, thắng qua nhất đồ sộ mưa sao băng.</p>
+<p>Một màn này hình ảnh vô cùng mỹ lệ, hiện trường người chơi kích động đến nhìn không chớp mắt, có chút người vội vàng mở ra trò chơi nội trí ghi hình cái nút, đem này phó cảnh tượng quay chụp xuống dưới.</p>
+<p>—— cư nhiên là như thế long trọng nghi thức!</p>
+<p>—— cũng là các người chơi chưa bao giờ gặp qua hôn lễ nghi thức!</p>
+<p>Phượng hoàng, ý nghĩa niết bàn trọng sinh.</p>
+<p>Đây là Tạ Vân Phàm tự mình lựa chọn hôn lễ thần thú. Không có người biết, hắn đi vào thế giới xa lạ này, kỳ thật sống lại một lần.</p>
+<p>Có thể gặp được Lạc Hàng, đối hắn mà nói, cũng là tân bắt đầu.</p>
+<p>Từ phượng hoàng lôi kéo bọn họ hôn xe ở không trung phi hành, 520 chỉ kim sắc tiểu linh điểu ở hai sườn bạn hành, này nghi thức cũng là Tạ Vân Phàm chủ ý, tiên hiệp phong mười phần, so điện ảnh đặc hiệu còn muốn long trọng.</p>
+<p>Hắn cùng Lạc Hàng chẳng phân biệt cái gì tân lang, tân nương, cũng không cần gia trưởng đưa bọn họ đưa lên thảm đỏ. Tại đây đoạn quan hệ, bọn họ trước sau ở sóng vai đi trước.</p>
+<p>Cho nên, đi hôn lễ hiện trường thời điểm, bọn họ cũng muốn sóng vai mà ngồi.</p>
+<p>Trên bầu trời này “Bách điểu triều phượng” hình ảnh, làm vô số người chơi khống chế không được mà thét chói tai ra tiếng.</p>
+<p>“A a a, quá soái đi!”</p>
+<p>“Đây là toàn thế giới nhất hoa lệ hôn lễ nghi thức, không gì sánh nổi.”</p>
+<p>“Tiên hiệp phong hôn lễ, phượng hoàng, linh điểu, hôn xe, nhân duyên thụ, hôm nay thật là mở rộng tầm mắt!”</p>
+<p>“Hôn lễ cảnh tượng cùng nghi thức thiết kế đến xác thật dụng tâm.”</p>
+<p>“Không hổ là trò chơi kế hoạch, kết cái hôn đều phải như vậy lãng mạn ~”</p>
+<p>Ở các người chơi nhìn chăm chú hạ, phượng hoàng mang theo hôn xe dừng lại ở nghi thức địa điểm trên không.</p>
+<p>Tạ Vân Phàm cùng Lạc Hàng tay trong tay đứng lên.</p>
+<p>Bọn họ dưới chân quang thảm từ không trung hướng mặt đất chậm rãi kéo dài, giống như một cái huyền phù dải lụa, hai người sóng vai theo quang thảm đi xuống tới, cuối cùng ngừng ở nhân duyên thụ trước mặt.</p>
+<p>Dưới tàng cây xuất hiện một người, già vẫn tráng kiện, tươi cười đầy mặt, hắn nhìn về phía Lạc Hàng cùng Tạ Vân Phàm, nói “Hoan nghênh hai vị tân nhân.”</p>
+<p>Hiện trường người chơi nghị luận sôi nổi.</p>
+<p>“Cái này NPC là Nguyệt Lão đi?”</p>
+<p>“Không sai, ta lúc trước làm song tu nhiệm vụ thời điểm, ở miếu Nguyệt Lão gặp qua hắn.”</p>
+<p>“Làm Nguyệt Lão làm chứng hôn người, thực sự có ý tưởng!”</p>
+<p>Nguyệt Lão cười tủm tỉm nói “Ta là thế gian nhân duyên chưởng quản giả, Nguyệt Lão, cũng là bổn tràng nghi thức nhân chứng. Hai vị nguyện ý trở thành lẫn nhau bạn lữ, nắm tay làm bạn, đầu bạc đến lão sao?”</p>
+<p>Lạc Hàng cùng Tạ Vân Phàm nhìn về phía lẫn nhau, đồng thời nói “Ta nguyện ý.”</p>
+<p>Nguyệt Lão lấy ra hai căn tơ hồng, đưa cho bọn họ “Bị Nguyệt Lão tơ hồng cột vào cùng nhau hai người, sẽ gắn bó làm bạn, vĩnh không chia lìa.”</p>
+<p>“Nếu hai vị xác định muốn cùng đối phương lâu lâu dài dài mà ở bên nhau, thỉnh đem tơ hồng hệ ở đối phương trên cổ tay, cho thấy các ngươi quyết tâm.”</p>
+<p>Lạc Hàng cùng Tạ Vân Phàm từng người tiếp nhận một cây tơ hồng.</p>
+<p>Kiểu Tây hôn lễ, cho nhau mang nhẫn kim cương.</p>
+<p>Tiên hiệp phong cách hôn lễ, cho nhau hệ tơ hồng.</p>
+<p>Lúc trước hai người cùng nhau chơi trò chơi khi, cũng là vì song tu nhiệm vụ mới ý thức được chính mình cảm tình, Tạ Vân Phàm còn làm tơ hồng tay xuyến đưa cho Lạc Hàng.</p>
+<p>Hiện giờ, ở toàn thế giới người chơi trước mặt, ở trong trò chơi “Nguyệt Lão” chứng kiến dưới, bọn họ nguyện ý lại lần nữa đem này tượng trưng tình yêu tơ hồng, tự mình hệ ở lẫn nhau trên tay.</p>
+<p>Hai người cấp đối phương hệ tơ hồng động tác đều thực nghiêm túc.</p>
+<p>Trắng nõn trên cổ tay nhiều căn tơ hồng, liền phảng phất trong lòng cũng nhiều một phần ràng buộc.</p>
+<p>Hệ hảo lúc sau, hai người nhìn nhau cười.</p>
+<p>Hiện trường tấu nổi lên hỉ nhạc, theo sát là ti nghi cao giọng hò hét.</p>
+<p>“Nhất bái thiên địa!”</p>
+<p>“Nhị bái cao đường!”</p>
+<p>“Phu thê đối bái!”</p>
+<p>“Kết thúc buổi lễ!”</p>
+<p>Hai người thực nghiêm túc mà ở trong trò chơi đã bái thiên địa.</p>
+<p>Hai bên người nhà hôm nay cũng đi vào hiện trường, tất cả đều ăn mặc thống nhất cổ phong phục sức.</p>
+<p>Lạc Hàng bà ngoại kích động vô cùng —— cháu ngoại thực sự có tiền đồ, cưới đến lợi hại như vậy trò chơi kế hoạch, này tuyệt đối là nàng tham gia quá nhất thú vị hôn lễ.</p>
+<p>Nguyệt Lão nói “Chúc mừng hai vị trở thành phu thê.”</p>
+<p>Hai người xoay người, nhìn về phía dưới đài.</p>
+<p>Tạ Vân Phàm cao giọng nói “Ta cùng Lạc Hàng, là bởi vì trò chơi quen biết, cũng là vì trò chơi mà yêu nhau. Trò chơi cùng chúng ta mà nói, đã thành trong sinh hoạt không thể thiếu một bộ phận.”</p>
+<p>“Mấy năm nay, chúng ta vẫn luôn ở nỗ lực chế tác các loại cách chơi bất đồng trò chơi. Hy vọng, sở hữu người chơi, cũng có thể ở trong trò chơi, cảm nhận được không giống nhau lạc thú.”</p>
+<p>Lạc Hàng theo sát nói “Hôm nay là chúng ta kết hôn nhật tử, thật cao hứng mời đến toàn cầu vượt qua 1 tỷ người chơi, cộng đồng chứng kiến trận này hôn lễ. Phi thường cảm tạ đại gia quang lâm.”</p>
+<p>“Hoạt động bộ môn cấp các vị tham gia tiệc cưới khách quý chuẩn bị một phần quà kỷ niệm, hy vọng đại gia có thể thích. Cũng chúc đại gia sinh hoạt như ý, hữu tình nhân chung thành quyến chúc.”</p>
+<p>Dưới đài vang lên nhiệt liệt vỗ tay.</p>
+<p>Bản đồ kênh bị rậm rạp tự phù xoát mãn.</p>
+<p>“Nhiều ít? 1 tỷ?”</p>
+<p>“Quá trâu bò, cư nhiên có nhiều như vậy người chơi tại tuyến tham gia tiệc cưới?”</p>
+<p>“Ta thực kiêu ngạo có thể đi vào hiện trường, chứng kiến này lịch sử tính thời khắc!”</p>
+<p>Hệ thống Hôn lễ nghi thức kết thúc, quà kỷ niệm đã gửi đi đến ngài hộp thư, thỉnh chú ý kiểm tra và nhận.</p>
+<p>Hệ thống Yến hội sắp bắt đầu, thỉnh tự do nhập tòa nhấm nháp mỹ thực, chúc ngài chơi đến vui sướng.</p>
+<p>Hai hàng hệ thống tin tức qua đi, các người chơi sôi nổi kích động mà chạy đi tìm chỗ ngồi.</p>
+<p>Hôm nay yến hội phi thường phong phú, gà vịt thịt cá mọi thứ đều toàn, nghe nói là danh trù tại tuyến hạ nhà ăn chế tác, đồng bộ đồ ăn số liệu đến tiệc cưới, cung khách khứa nhấm nháp.</p>
+<p>Này cùng “Hiện trường ăn tịch” có cái gì khác nhau?</p>
+<p>Không thể không nói, hai vị lão bản quá có thành ý!</p>
+<p>Các người chơi miễn phí tham gia tiệc cưới, còn có thể tại trong trò chơi ăn thỏa thích. Ăn uống no đủ sau, còn có quà kỷ niệm có thể lấy?</p>
+<p>Rất nhiều người chơi chờ mong mà mở ra hộp thư.</p>
+<p>Không biết thực tế ảo tiệc cưới quà kỷ niệm sẽ đưa thứ gì đâu? Hẳn là sẽ không tùy tiện đưa điểm đồng vàng tống cổ nhiều như vậy người chơi đi.</p>
+<p>Theo quà kỷ niệm mở ra, không ít người chơi kinh ngạc mà trừng lớn đôi mắt ——</p>
+<p>[《 Quỷ Giới 》 trứng màu bảo rương ×10]</p>
+<p>[《 Nhạc Hồn 》 tiệc cưới bối cảnh âm nhạc cất chứa tạp ×1]</p>
+<p>[ 《 Tây Thiên Lấy Kinh 》 thầy trò tổ hạn định phục sức đổi mã ×4]</p>
+<p>[ 《 Thiên Niên Chi Luyến 》 trừu tạp cuốn ×10]</p>
+<p>[《 Địch Nhân Kiệt tra án 》《 thực tế ảo kịch bản sát 》 cao cấp kịch bản miễn phí cuốn ×2]</p>
+<p>[《 Loạn Thế Xuân Thu 》 trừu tạp cuốn ×10]</p>
+<p>[ 《 Phố Mỹ Thực 》 đồng vàng ×52000]</p>
+<p>[ 《 Bách Biến Y Thụ 》 tiệc cưới cùng khoản hạn định lễ phục ×1]</p>
+<p>[《 Thịnh Thế Đại Đường 》 tiệc cưới cùng khoản hạn định đèn lồng ×50]</p>
+<p>[《 giang hồ 》 Nguyệt tạp giảm khoán ×3]</p>
+<p>[ 《 Tu Tiên Thế Giới 》 tiên phủ cùng khoản nhưng sinh sôi nẩy nở kim sí điểu linh thú ×2]</p>
+<p>[《 toàn cầu biến dị 》 mùa giải thứ hai 《 linh khí sống lại 》 công trắc thư mời ]</p>
+<p>Các người chơi “…………”</p>
+<p>Đây là sở hữu trò chơi đều tặng một đợt phúc lợi a?!</p>
+<p>“Lão bản đại khí!”</p>
+<p>“Ta đều xem hoa mắt, phúc lợi nhiều như vậy sao?”</p>
+<p>“Hai ngươi có thể hay không quá mấy ngày lại kết một lần hôn? Lần này tiệc cưới không đủ đã ghiền, rất tưởng lại xem một lần, lại lấy một lần quà kỷ niệm gì đó ~”</p>
+<p>“Hai vị về sau mỗi năm đều quá cái kết hôn ngày kỷ niệm đi, đến lúc đó cũng cấp các người chơi phát phát lễ vật. Kế hoạch kết hôn ngày kỷ niệm, cũng là các người chơi ngày hội!”</p>
+<p>“Này sóng phúc lợi, thật là đem ta tạp hôn mê……”</p>
+<p>Sở hữu trò chơi đều đã phát phúc lợi, nhiều hố người chơi càng là kinh hỉ không thôi.</p>
+<p>Trừu tạp mười liền cuốn, hạn định quần áo, hạn định trang trí, đánh gãy tạp, hi hữu linh thú, thậm chí còn có mùa giải thứ hai thư mời. Nói cách khác 《 toàn cầu biến dị 》 mùa giải thứ hai lập tức cũng muốn tới.</p>
+<p>Thật là thêm vào kinh hỉ.</p>
+<p>Lần này người chơi, ăn đến cũng thật tốt quá đi?</p>
+<p>“Thuyền nhỏ cùng Lạc tổng tân hôn vui sướng!”</p>
+<p>“Quà kỷ niệm siêu cấp hào phóng, này đều không chỉ một cái 648.”</p>
+<p>“Cảm ơn lão bản, chúc các ngươi hạnh phúc nga ~”</p>
+<p>“Hai vị siêu cấp xứng đôi, nhất định sẽ đầu bạc đến lão!”</p>
+<p>Bản đồ kênh bị đại lượng spam tin tức lấp đầy.</p>
+<p>Tạ Vân Phàm cùng Lạc Hàng liếc nhau, nhẹ nhàng dắt lẫn nhau tay, trên cổ tay tơ hồng đụng chạm ở bên nhau, phát ra nhu hòa ánh sáng.</p>
+<p>Nơi này, là từ bọn họ thân thủ chế tạo trò chơi thế giới.</p>
+<p>Tương lai rất nhiều năm, thuộc về Dương Phàm Khải Hàng trò chơi vũ trụ, còn sẽ không ngừng mà phát triển lớn mạnh.</p>
+<p>Mà bọn họ, cũng đem nắm tay đi qua kế tiếp nhân sinh.</p>
+<p>Gắn bó làm bạn, vĩnh không chia lìa.</p>
+<p>【 chính văn xong 】</p>
+<p>Tác giả có chuyện nói</p>
+<p>Chính văn đến nơi đây tạm thời hạ màn, ta cảm thấy ở chỗ này kết thúc liền vừa vặn tốt, cảm ơn đại gia này một đường duy trì cùng làm bạn!</p>
+<p>Kế tiếp, còn có một ít yêu cầu bổ sung nội dung, sẽ lấy “Phúc lợi phiên ngoại” hình thức đưa ra.</p>
+<p>Học tập Tiểu Thuyền Buồm cho đại gia phát phúc lợi ~</p>
+<p>Phúc lợi phiên ngoại không cần mua sắm, ta sẽ thiết trí đặt mua tỷ lệ ở 60% tả hữu, đặt mua đạt tới bảo bảo, mặt sau phiên ngoại toàn bộ đều có thể miễn phí nhìn đến.</p>
+<p>Lại lần nữa cảm tạ đại gia!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong236.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong238.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "di-gioi-tro-choi-che-tac-nguoi";
+const NOVEL_TITLE = "Dị giới trò chơi chế tác người";
+const CHAPTER_TITLE = "Chương 237";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 12</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Dị giới trò chơi chế tác người
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 12</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong11.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong13.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Trò chơi đã đóng gói đưa thẩm, chờ bản hào xuống dưới còn muốn một đoạn thời gian. Tới gần cuối kỳ, Tạ Vân Phàm đem càng nhiều tinh lực đặt ở ôn tập khảo thí thượng.</p>
+<p>Ngày 31 tháng 12 hôm nay, đại ca Tạ Tinh Hà đột nhiên về tới Dung Thành.</p>
+<p>Tạ Tinh Hà từ xuất ngoại nghỉ phép sau, mỗi cách mấy ngày liền sẽ phát tin tức hỏi hắn “Có hay không đi trường học đi học? Gần nhất không gặp rắc rối đi?”</p>
+<p>Ở đại ca trong lòng, hắn vẫn là cái kia không học vấn không nghề nghiệp, làm người đau đầu đệ đệ.</p>
+<p>Tạ Vân Phàm cũng không có đem thành lập phòng làm việc sự nói cho đại ca.</p>
+<p>Bất quá, hắn về sau phải làm rất nhiều trò chơi, chuyện này chung quy giấu không được người nhà. Thứ bậc một trò chơi lấy được hảo thành tích rồi nói sau, đến lúc đó cũng càng có sức thuyết phục.</p>
+<p>31 ngày vãn, biểu tỷ Minh Chi lái xe đi sân bay tiếp Tạ Tinh Hà trở về, Tạ Vân Phàm cũng thu được tin tức, trở về tranh Tạ gia ở vùng ngoại thành biệt thự.</p>
+<p>Này hai tháng xuất ngoại giải sầu, Tạ Tinh Hà trạng thái hảo rất nhiều, không giống ngay từ đầu như vậy suy sút, quát râu, ăn mặc sạch sẽ quần áo, nhìn qua nhân mô nhân dạng.</p>
+<p>Hắn lần này trở về, cũng là tưởng cùng người nhà cùng nhau quá tân niên.</p>
+<p>Tạ Tinh Hà vỗ vỗ đệ đệ bả vai, cười tủm tỉm mà nói “Vân Phàm, ngươi lúc ấy làm ta đi ra ngoài giải sầu, còn đừng nói, đi ra ngoài đi rồi một chuyến, thực sự có tân kỳ ngộ!”</p>
+<p>Tạ Vân Phàm hiếu kỳ nói “Kỳ ngộ? Ngươi ở nước ngoài gặp được người nào?”</p>
+<p>Tạ Tinh Hà nói “Ta đi Nam Dương đảo nghỉ phép, vừa lúc gặp phải Mộng Chi Dực lão bản, hắn đối 《 Cách Đấu Đại Sư 》 trò chơi này thực cảm thấy hứng thú, tưởng cùng ta hợp tác.”</p>
+<p>Tạ Vân Phàm hỏi “Như thế nào hợp tác?”</p>
+<p>“Bọn họ tưởng mua trò chơi bản quyền một lần nữa nghiên cứu phát minh, 《 Cách Đấu Đại Sư 》 lúc trước bởi vì trị số chiến lực thất hành mới bị bách hạ giá. Nấu lại cải tạo nói, có cơ hội một lần nữa đưa ra thị trường. Mộng Chi Dực là quốc nội lớn nhất công ty game, cùng bọn họ hợp tác rất có tiền cảnh.”</p>
+<p>Mộng Chi Dực? Nhà này công ty Tạ Vân Phàm nghe nói qua.</p>
+<p>Kinh điển mê cung trò chơi 《 mộng chi tháp 》 chính là bọn họ nghiên cứu phát minh.</p>
+<p>Đây là một nhà tập trò chơi chế tác, phát hành, hoạt động vì nhất thể đại hình internet công ty, cùng loại với kiếp trước đằng X, võng Y loại này đại tập đoàn, chiếm cứ trò chơi giới một phần ba giang sơn.</p>
+<p>Cùng bọn họ hợp tác, tiền cảnh xác thật không tồi.</p>
+<p>Bất quá, công ty lớn đối đã phá sản công ty, khẳng định sẽ không cấp ra cái gì hảo đãi ngộ.</p>
+<p>Tạ Vân Phàm trực tiếp hỏi “Bọn họ ra giá nhiều ít? Mua đứt vẫn là phân thành?”</p>
+<p>Tạ Tinh Hà nói “3000 vạn mua đứt.”</p>
+<p>Tạ Vân Phàm không khỏi nhíu mày “Ca, ngươi trò chơi này giai đoạn trước nghiên cứu phát minh đầu tư mấy cái trăm triệu, 3000 vạn đem sở hữu số liệu đóng gói bán cho bọn họ, quá mệt đi?”</p>
+<p>Tạ Tinh Hà trong mắt hiện lên một tia mất mát “Ta cũng biết thực mệt, nhưng Mộng Chi Dực dù sao cũng là công ty lớn, ta ở bọn họ trước mặt không cái gì quyền lên tiếng. Huống chi, 《 Cách Đấu Đại Sư 》 đã hạ giá, hiện tại một phân tiền đều kiếm không đến, ta lại không năng lực trọng tố, không bán nói, những cái đó số liệu số hiệu chỉ có thể lạn ở ta trong máy tính.”</p>
+<p>Tạ Vân Phàm “……”</p>
+<p>Hắn có thể cảm nhận được ca ca đối mặt công ty lớn khi cảm giác vô lực.</p>
+<p>Mộng Chi Dực là quốc nội đỉnh cấp công ty game. Mà đã phá sản, thiếu nợ vô số Tạ Tinh Hà, ở bọn họ trong mắt, bất quá là có thể nhẹ nhàng đắn đo tiểu ngư.</p>
+<p>Thương nhân trọng lợi, chỉ là, 3000 vạn mua đứt một khoản game thực tế ảo số liệu cùng bản quyền, loại này “Nhân lúc cháy nhà mà đi hôi của” cách làm, không khỏi quá mức vô sỉ.</p>
+<p>Thấy đại ca có chút ủy khuất, Tạ Vân Phàm trong lòng cũng không quá dễ chịu, hắn nhẹ nhàng vỗ vỗ ca ca tay, nói “Ca, ngươi đừng vội. Ngươi trò chơi này phong cách đặc thù, Mộng Chi Dực muốn nhận mua, nói không chừng mặt khác công ty cũng có thu mua ý đồ, chúng ta chờ một chút xem.”</p>
+<p>Tạ Tinh Hà vò đầu “Ân, ta đang ở suy xét, còn không có định.”</p>
+<p>Tạ Vân Phàm không nói thêm nữa, chỉ là càng khẩn mà cầm ca ca tay. Hắn sẽ không trơ mắt mà nhìn ca ca ăn lớn như vậy mệt.</p>
+<p>Tân niên kỳ nghỉ qua đi, Tạ Vân Phàm hộp thư thu được một cái tin tức “Ngài hảo, ngài trò chơi 《 Địa Phủ Mê Cung 》 xét duyệt đã thông qua, phân loại vì C loại, trò chơi bản hào C654XXXX, thỉnh đổ bộ quảng điện tổng thự trò chơi xét duyệt official website XX tìm đọc.”</p>
+<p>Tạ Vân Phàm theo hộp thư liên tiếp điểm đi vào vừa thấy, quả nhiên, trò chơi xét duyệt official website đã có phê duyệt thông qua thông cáo, hắn 《 Địa Phủ Mê Cung 》 thế nhưng có mặt.</p>
+<p>Bắt được bản hào, liền có thể chọn ngày đưa ra thị trường.</p>
+<p>Tạ Vân Phàm đem trò chơi chia cho Tiểu Hồ, làm cho bọn họ làm chung trắc.</p>
+<p>Hồ Phi gan hai cái suốt đêm, đem ác mộng hình thức cũng đánh thông quan, kích động nói “Lão bản, không phát hiện bug. Phía trước đề qua xuyên mô, tạp đốn chờ vấn đề cũng toàn bộ giải quyết!”</p>
+<p>Tạ Vân Phàm hỏi “Nếu làm ngươi cấp trò chơi này chấm điểm, 10 phân ngươi có thể cho vài phần?”</p>
+<p>Hồ Phi do dự một lát, nói “9 phân trở lên đi.”</p>
+<p>Tạ Vân Phàm nói “Nói thật, đừng bởi vì thu tiền của ta, liền cấp như vậy cao phân.”</p>
+<p>Hồ Phi mặt đỏ lên, nói “Không không không, này không phải nhân tình phân, ta thật cảm thấy trò chơi này rất có ý tứ. Tuy rằng trong quá trình rất nhiều lần tưởng quăng ngã di động, nhưng lại thực chờ mong tiếp theo quan sẽ có bao nhiêu biến thái.”</p>
+<p>Tạ Vân Phàm “Mặt khác thí nghiệm đại luyện nói như thế nào?”</p>
+<p>Hồ Phi nói “Nhất trí khen ngợi! Thật lâu chưa từng chơi như vậy phía trên trò chơi.”</p>
+<p>Tạ Vân Phàm trong lòng cục đá cuối cùng rơi xuống đất “Vậy là tốt rồi.”</p>
+<p>Hồ Phi hỏi “Lão bản, ngươi tính toán khi nào đưa ra thị trường a?”</p>
+<p>Tạ Vân Phàm “Hẳn là sẽ ở nghỉ đông.”</p>
+<p>Hồ Phi ngẩn người, tiểu tâm kiến nghị nói “Nghỉ đông đưa ra thị trường tân trò chơi sẽ rất nhiều. Hơn nữa 《 cơ giáp học đồ 》 trận chung kết, 《 hoang đảo cầu sinh 》 league chuyên nghiệp, một đống lớn thi đấu cũng sẽ ở nghỉ đông tiến hành. Thời gian này đưa ra thị trường nói, cạnh tranh có thể hay không quá kịch liệt a!”</p>
+<p>Tạ Vân Phàm đương nhiên biết, ở cạnh tranh kịch liệt nghỉ đông đưa ra thị trường, hắn trò chơi nhỏ rất có thể trở thành pháo hôi.</p>
+<p>Nhưng cũng có khả năng lực lượng mới xuất hiện, trở thành lớn nhất hắc mã.</p>
+<p>Tạ Vân Phàm nói “Không quan hệ. Ta trò chơi này thích hợp kỳ nghỉ đưa ra thị trường, có thể hấp dẫn học sinh người chơi.”</p>
+<p>Hồ Phi không mặt mũi nhiều lời.</p>
+<p>Trong lòng lại cảm thấy, ngạnh tễ nghỉ đông đương không phải sáng suốt cử chỉ.</p>
+<p>Đến lúc đó, bảng xếp hạng thượng đại trò chơi động tác nhất trí ra tân phó bản, hơn nữa các loại thi đấu đánh sâu vào…… Lại có mấy người nguyện ý chú ý ngươi này khoản ít được lưu ý mê cung trò chơi đâu?</p>
+<p>Ngày 7 tháng 1 buổi chiều, Tạ Vân Phàm khảo xong rồi cuối cùng một môn khóa.</p>
+<p>Trường học chính thức thả nghỉ đông, hắn mới từ trường thi đi ra, di động đột nhiên vang lên, điện báo biểu hiện một chuỗi rất kỳ quái dãy số, là 400 mở đầu mười vị số.</p>
+<p>Tạ Vân Phàm tiếp khởi điện thoại “Ngươi hảo.”</p>
+<p>Bên tai truyền đến trong trẻo giọng nữ “Ngươi hảo, xin hỏi là Dương Phàm phòng làm việc người phụ trách sao?”</p>
+<p>Tạ Vân Phàm giật mình “Đúng vậy, xin hỏi ngài là?”</p>
+<p>“Ta là Mộng Chi Dực trò chơi hoạt động bộ môn, thấy ngài trò chơi 《 Địa Phủ Mê Cung 》 đã bắt được bản hào, tưởng cùng ngài nói chuyện trò chơi phát hành cùng hoạt động tương quan công việc. Ta là thông qua xét duyệt official website liên hệ đến ngài, phương tiện thêm cái WeChat sao?”</p>
+<p>Tạ Vân Phàm “……”</p>
+<p>Lại là Mộng Chi Dực. Nhà này công ty tin tức nhưng thật ra thực linh thông, hắn trò chơi quá thẩm không bao lâu liền chủ động liên hệ hắn.</p>
+<p>Tạ Vân Phàm lễ phép mà nói “Tốt, ta thêm ngài.”</p>
+<p>Đối phương ID Mộng Tiểu Nguyệt, chân dung là cái phim hoạt hoạ nhân vật. Bỏ thêm bạn tốt sau lập tức phát tới một chuỗi tin tức “Ngài hảo, Mộng Chi Dực là quốc nội nhất chuyên nghiệp trò chơi nghiên cứu phát minh hoạt động công ty, chúng ta hoạt động trò chơi có rất nhiều kinh điển bạo khoản, mê cung trò chơi 《 mộng chi tháp 》 chính là chúng ta tác phẩm chi nhất, trước mắt là mê cung loại trò chơi tiêu thụ bảng cùng cho điểm bảng đệ nhất danh.”</p>
+<p>Tạ Vân Phàm khách khí mà nói “Ta biết, cửu ngưỡng cửu ngưỡng.”</p>
+<p>Về 《 mộng chi tháp 》, hắn đã từ Tiểu Hồ nơi đó nghe được lỗ tai đều khởi cái kén.</p>
+<p>Đối phương nói “Ngài trò chơi vừa lúc là mê cung đề tài, chúng ta ở official website xem qua trò chơi đại khái giới thiệu, cảm thấy rất có tân ý, cho nên mới thông qua phía chính phủ liên hệ đến ngài. Chúng ta đối hoạt động mê cung loại trò chơi có phi thường phong phú kinh nghiệm. Nếu ngài cố ý hướng nói, có thể cùng chúng ta hợp tác.”</p>
+<p>Một trò chơi có thể hay không thành công, mấu chốt ở chỗ hai cái phương diện, một cái là “Trò chơi nội dung”, một cái là “Hoạt động hình thức”, kế hoạch cùng hoạt động tương đương với trợ thủ đắc lực, thiếu một thứ cũng không được.</p>
+<p>Nếu có thể tìm được thực lực rất mạnh hoạt động công ty, trò chơi người dùng số lượng có thể bò lên mấy lần, thậm chí mấy trăm lần. Đương nhiên, hảo trò chơi bị rác rưởi hoạt động hủy diệt ví dụ cũng nhiều đếm không xuể.</p>
+<p>Cho nên, tìm đối tượng hợp tác nhất định phải thận trọng.</p>
+<p>Tạ Vân Phàm hỏi “Các ngươi tưởng như thế nào hợp tác?”</p>
+<p>Mộng Tiểu Nguyệt “Chúng ta tưởng 200 vạn mua ngài trò chơi bản quyền, ngài yên tâm đem trò chơi giao cho chúng ta hoạt động cùng mở rộng. Đây là Dương Phàm phòng làm việc chế tác đệ một trò chơi đi? Mộng Chi Dực có được vượt qua 30% trò chơi người dùng, nhất định sẽ giúp ngài khai hỏa danh khí.”</p>
+<p>Tạ Vân Phàm trực tiếp bị chọc cười.</p>
+<p>200 vạn mua đứt? Đương hắn là cái gì cũng đều không hiểu tay mơ ma mới? Đối phương có phải hay không cảm thấy, giống hắn loại này không có danh khí tân nhân phòng làm việc, leo lên Mộng Chi Dực là hắn phúc phận?</p>
+<p>Này “Phúc phận” không cần cũng thế.</p>
+<p>Tạ Vân Phàm nhàn nhạt nói “Mua đứt không suy xét. Phần lãi gộp phân thành, ta sáu, các ngươi bốn.”</p>
+<p>Mộng Chi Dực tập đoàn tổng bộ, đang ở đánh chữ nữ sinh nháy mắt trừng lớn đôi mắt —— sáu, bốn phần thành? Ngươi còn chiếm đầu to? Làm sao dám!</p>
+<p>Nàng dở khóc dở cười mà nhìn về phía phía sau nam nhân “Phương tổng, Dương Phàm phòng làm việc nói muốn thuần lợi nhuận phân thành, hắn chiếm sáu thành.”</p>
+<p>Hoạt động bộ chủ quản Phương Kế Minh một miệng trà trực tiếp phun tới “Ta thao? Này mẹ nó là cái trò chơi tiểu bạch, căn bản không biết chúng ta công ty thực lực đi!”</p>
+<p>Nữ sinh vô ngữ nói “Ta đều nói với hắn qua, chúng ta tác phẩm tiêu biểu bao gồm 《 mộng chi tháp 》, là mê cung trong trò chơi đến nay không người siêu việt điện phủ cấp tác phẩm.”</p>
+<p>Phương Kế Minh không thể tin được “Ngươi nói rõ ràng, hắn còn đề như vậy thái quá yêu cầu?”</p>
+<p>Bị như vậy thực lực cường đại hoạt động công ty coi trọng, đối tân nhân tới nói là bầu trời rớt bánh có nhân.</p>
+<p>Một khoản dung lượng chỉ có 500M máy rời mê cung trò chơi, nghiên cứu phát minh phí tổn khẳng định không cao, 200 vạn bán đi, hắn đã có thể kiếm rất nhiều tiền. Lưng dựa mộng chi duyên này cây đại thụ, vừa lúc có thể nhân cơ hội khai hỏa danh khí.</p>
+<p>Hắn cư nhiên lòng tham không đủ, còn dám nói sáu, bốn phần thành? Thật là không biết tốt xấu!</p>
+<p>Phương Kế Minh bị khí cười “Phỏng chừng là cái ma mới, đối trò chơi thị trường hoàn toàn không hiểu biết…… Tính, không cần cùng này đó tâm cao khí ngạo tiểu bằng hữu so đo, làm hắn kiến thức một chút thương nghiệp cạnh tranh tàn khốc. Loại này ít được lưu ý mê cung trò chơi, không có cường đại hoạt động, tuyệt đối lạnh lạnh.”</p>
+<p>Nữ sinh gật gật đầu, trả lời “Xin lỗi, ngài điều kiện này, chúng ta vô pháp tiếp thu.”</p>
+<p>“Không quan hệ, về sau có cơ hội lại hợp tác đi ～”</p>
+<p>Tạ Vân Phàm thu hồi di động, như suy tư gì.</p>
+<p>Mộng Chi Dực nhà này công ty gần nhất hẳn là có đại động tác, lão bản tự mình tìm ca ca thu mua 《 Cách Đấu Đại Sư 》 bản quyền, hoạt động bộ môn còn mỗi ngày nhìn chằm chằm xét duyệt official website, tìm một ít không có gì danh khí tiểu phòng làm việc thu mua có tiềm lực tân trò chơi, phỏng chừng lừa dối không ít không hiểu giá thị trường tân nhân.</p>
+<p>Tạ Vân Phàm cũng không phải là thấy 200 vạn liền hai mắt sáng lên sinh viên.</p>
+<p>Hắn trò chơi này tiềm lực xa không chỉ như thế.</p>
+<p>Vốn dĩ hắn còn muốn tìm cái chuyên nghiệp trò chơi vận doanh thương giúp hắn tuyên truyền 《 Địa Phủ Mê Cung 》, nhưng trải qua Mộng Chi Dực lần này “Không hề có thành ý” đàm phán, hắn cũng ý thức được hợp tác gian nan ——</p>
+<p>Hắn phòng làm việc là không có bất luận cái gì danh khí “Tân nhân phòng làm việc”, cùng vận doanh thương hợp tác, tuyệt đối chiếm không đến tiện nghi.</p>
+<p>Hơn nữa, hắn cũng không yên tâm đem chính mình đệ một trò chơi giao cho người khác tới hoạt động, vạn nhất hoạt động đến danh tiếng tan vỡ, vậy khó có thể vãn hồi rồi.</p>
+<p>Nếu lấy không được quyền lên tiếng, không bằng chính mình tới.</p>
+<p>Hắn ở thế giới này không có nhiều ít nhân mạch, không quen biết quảng cáo marketing công ty, càng không có mức độ nổi tiếng cùng người dùng cơ sở.</p>
+<p>Chính mình đi tuyên truyền một khoản tân trò chơi, sẽ phi thường khó.</p>
+<p>Nhưng hắn tin tưởng, này khoản phong cách đặc thù 《 Địa Phủ Mê Cung 》, nhất định sẽ không bị mai một.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong11.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong13.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "di-gioi-tro-choi-che-tac-nguoi";
+const NOVEL_TITLE = "Dị giới trò chơi chế tác người";
+const CHAPTER_TITLE = "Chương 12";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

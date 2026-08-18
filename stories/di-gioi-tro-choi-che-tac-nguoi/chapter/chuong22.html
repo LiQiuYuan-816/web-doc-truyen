@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 22 ba hợp một</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Dị giới trò chơi chế tác người
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 22 ba hợp một</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong21.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong23.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>【 ba hợp một chương, biết người biết ta 】</p>
+<p>Nếu nói cho ca ca chính mình chính là 《 Địa Phủ Mê Cung 》 kế hoạch, Tạ Vân Phàm liền tưởng cùng ca ca hảo hảo thương lượng một chút cùng Mộng Chi Dực đàm phán sự. Hắn nói thẳng nói “Ca, Mộng Chi Dực Diệp tổng, phía trước cũng đi tìm ta.”</p>
+<p>Tạ Tinh Hà ngẩn người, thực mau liền phản ứng lại đây “Hắn tìm ngươi, chẳng lẽ là tưởng nói 《 Địa Phủ Mê Cung 》 bản quyền hợp tác sao?”</p>
+<p>“Ân, hắn muốn đem 《 Địa Phủ Mê Cung 》 cải biên thành game thực tế ảo.”</p>
+<p>“Hắn cho ngươi khai điều kiện gì? Bao nhiêu tiền mua đứt?” Tạ Tinh Hà lo lắng mà nhìn về phía đệ đệ, lấy Mộng Chi Dực bủn xỉn cùng cao ngạo, đối một nhà tân thành lập phòng làm việc khẳng định sẽ không quá hào phóng đi?</p>
+<p>Tạ Vân Phàm nói “Hợp tác hình thức, còn không có tế liêu, hắn ước ta thứ năm buổi chiều mặt nói.”</p>
+<p>Tạ Tinh Hà nhíu mày “Cùng ta ước chính là thứ năm buổi sáng, xem ra, hắn lần này đến Dung Thành đi công tác, rất có thể chính là vì nói chúng ta trò chơi bản quyền?”</p>
+<p>Tạ Vân Phàm nói “Đến lúc đó chúng ta cùng đi đi. Buổi sáng liêu 《 Cách Đấu Đại Sư 》, buổi chiều bàn lại 《 Địa Phủ Mê Cung 》, ngươi xem được không?”</p>
+<p>Tạ Tinh Hà tâm tình phức tạp mà gãi gãi đầu. Nếu là hôm nay phía trước Tạ Vân Phàm nói ra những lời này, hắn khẳng định sẽ không chút do dự cự tuyệt, hơn nữa nghiêm túc mà quát lớn đệ đệ “Ngươi một cái tiểu thí hài đi theo đi làm gì? Đừng cho ta thêm phiền!”</p>
+<p>Nhưng hiện giờ, biết được đệ đệ chính là sắp tới hắc mã trò chơi 《 Địa Phủ Mê Cung 》 tổng kế hoạch, hắn đột nhiên cảm thấy, mang lên đệ đệ ngược lại là cái cường đại trợ lực —— rốt cuộc hắn vị này ngưu bức đệ đệ, lấy trăm vạn xuất đầu nghiên cứu phát minh phí dụng kiếm lời hai ngàn nhiều vạn lợi nhuận.</p>
+<p>Đệ đệ làm buôn bán đầu óc có thể so chính mình mạnh hơn nhiều. Nghĩ đến đây, Tạ Tinh Hà quyết đoán gật đầu “Hành, chúng ta cùng đi.”</p>
+<p>Tạ Vân Phàm hỏi tiếp “Ca, game thực tế ảo ta không quá hiểu biết, ta chỉ biết quốc nội trước mắt làm game thực tế ảo khoang, có Mộng Chi Dực, Khốc Chơi, Khải Hàng tam gia công ty, đúng không? Cụ thể tình huống như thế nào?”</p>
+<p>Hắn tới thế giới này thời gian không dài, gần nhất chuyên chú làm game mobile, đối game thực tế ảo biết được không nhiều lắm. Đại ca rốt cuộc nghiên cứu phát minh quá game thực tế ảo, hiểu biết đến khẳng định so với hắn toàn diện.</p>
+<p>Tạ Tinh Hà uống lên nước miếng, giải khát, giới thiệu nói “Ngươi nói này tam gia công ty, trong đó Mộng Chi Dực cùng Khốc Chơi, đều là quốc nội trò chơi đại xưởng, game mobile, game thực tế ảo hai tay trảo. Khải Hàng nói, trước mắt chỉ làm game thực tế ảo.”</p>
+<p>“Mộng Chi Dực thực thích chính mình nghiên cứu phát minh, chính mình hoạt động, thu mua không ít tiểu công ty trò chơi bản quyền đi cải biên. 《 đại người chơi 》 là bọn họ chiêu bài game thực tế ảo, cùng loại với thực tế ảo công viên trò chơi, từng có sơn xe, nhảy lầu cơ chờ phi thường phong phú trò chơi nhỏ, mỗi cục trò chơi đều phải trả phí, đặc biệt chịu các bạn nhỏ hoan nghênh, hàng năm đều ở game thực tế ảo bán chạy bảng tiền tam danh.”</p>
+<p>Dị thế giới bọn nhỏ, trong nhà mua cái khoang trò chơi, không cần đi công viên trò chơi xếp hàng, là có thể thể nghiệm đến đủ loại hảo ngoạn trò chơi. Có điều kiện gia trưởng, tự nhiên nguyện ý cấp hài tử mua một cái.</p>
+<p>Tạ Vân Phàm hiếu kỳ nói “Chơi một ván thực tế ảo bản tàu lượn siêu tốc, yêu cầu bao nhiêu tiền?”</p>
+<p>Tạ Tinh Hà nói “Một ván trò chơi nhỏ thu phí hai khối tiền, nghe đi lên không quý, nhưng Mộng Chi Dực người dùng số đếm đại, tích lũy lên tương đương đáng sợ, trò chơi này mỗi tháng nước chảy đều có thể nhẹ nhàng phá trăm triệu.”</p>
+<p>Tạ Vân Phàm hiểu rõ nói “Xem ra, nhà này công ty hoạt động năng lực xác thật rất mạnh. Bắt lấy tiểu bằng hữu cái này chủ lực tiêu phí quần thể, Mộng Chi Dực cơ hồ có thể nằm đếm tiền.”</p>
+<p>Tạ Tinh Hà tán đồng gật gật đầu, tiếp theo nói “Bọn họ còn có mấy khoản kinh điển trò chơi, tỷ như, tại tuyến dưỡng tiểu động vật 《 sủng vật nhạc viên 》, người chơi có thể nhận nuôi thuộc về chính mình thực tế ảo bản miêu miêu cẩu cẩu; 《 ta thành thị 》, người chơi có thể ở bên trong sắm vai lão sư, bác sĩ chờ, thể nghiệm bất đồng chức nghiệp một ngày…… Dù sao, Mộng Chi Dực game thực tế ảo, đều là giải trí, hưu nhàn hướng.”</p>
+<p>Tạ Vân Phàm tự hỏi một lát, suy đoán nói “Bọn họ đối 《 Cách Đấu Đại Sư 》 cùng 《 Địa Phủ Mê Cung 》 cảm thấy hứng thú, là tưởng mở rộng sản phẩm tuyến? Phía trước sản phẩm phong cách quá đơn điệu đi?”</p>
+<p>Tạ Tinh Hà nói “Ta cũng cảm thấy. Cách đấu loại trò chơi, kh·ủ·ng b·ố loại trò chơi, đều là Mộng Chi Dực nhược hạng —— nhưng thật ra Khốc Chơi cường hạng.”</p>
+<p>Khốc Chơi, quốc nội trò chơi giới đầu sỏ công ty chi nhất, nghiệp vụ phi thường rộng khắp.</p>
+<p>Game mobile phương diện, bọn họ có kéo dài không suy 《 hoang dã nguy cơ 》 bắn nhau trò chơi, cùng gần nhất xông lên bán chạy bảng đệ nhị RPG tổ đoàn thám hiểm võng du 《 đại thời đại hàng hải 》.</p>
+<p>Game thực tế ảo, bọn họ có đơn người mạo hiểm hướng 《 rừng cây chơi parkour 》, kinh điển đối chiến trò chơi 《 cơ giáp học đồ 》, còn có lược kh·ủ·ng b·ố đơn người RPG kh·ủ·ng b·ố trò chơi sinh tồn 《 tang thi vây thành 》 chờ.</p>
+<p>Nhà này công ty phong cách cùng Mộng Chi Dực hoàn toàn bất đồng, lấy “Nhiệt huyết chiến đấu” làm chủ yếu đặc sắc, nếu nói Mộng Chi Dực bắt được “Nhi đồng” cái này tiêu phí quần thể, Khốc Chơi tắc càng chịu người trưởng thành hoan nghênh.</p>
+<p>Tạ Vân Phàm hỏi “Khốc Chơi ở thực tế ảo lĩnh vực thực lực, có phải hay không so Mộng Chi Dực cường một ít?”</p>
+<p>“Không sai, Khốc Chơi là chiến đấu loại trò chơi thuỷ tổ, bọn họ chẳng những chính mình nghiên cứu phát minh trò chơi, còn đại lý siêu nhiều nước ngoài kinh điển tác phẩm. Trước mắt, Khốc Chơi khoang trò chơi độc chiếm trò chơi nhiều nhất, thị trường chiếm hữu suất cũng tối cao.”</p>
+<p>“Kia Khải Hàng đâu?” Tạ Vân Phàm đối nhà này công ty khá tò mò.</p>
+<p>Tam gia công ty giữa, “Khải Hàng trò chơi” điệu thấp nhất.</p>
+<p>Cái này nghỉ đông đương, Mộng Chi Dực cùng Khốc Chơi cạnh tranh gay cấn, các loại hoạt động ùn ùn không dứt, Khải Hàng cư nhiên thời khắc mấu chốt ẩn thân. Nhà này công ty rất kỳ quái, game mobile hoàn toàn không đọc qua, chỉ làm game thực tế ảo, nhưng bọn họ nổi danh game thực tế ảo cũng chỉ có một khoản.</p>
+<p>Tạ Tinh Hà nói “Khải Hàng, nói lên rất đáng tiếc. Toàn thế giới đệ nhất khoản game thực tế ảo, chính là bọn họ chế tạo ra tới 《 Tinh Không Mạn Bộ 》.”</p>
+<p>《 Tinh Không Mạn Bộ 》, game thực tế ảo khai sơn chi tác.</p>
+<p>Một khoản căn cứ vào sao trời vũ trụ, thiên văn thăm dò máy rời mạo hiểm trò chơi. Người chơi cưỡi tinh hạm ở trong vũ trụ ngao du, có thể thấy rất nhiều xinh đẹp Tinh Vân, tinh cầu.</p>
+<p>Trò chơi này tràn ngập lãng mạn ảo tưởng sắc thái, đem thần bí vũ trụ cùng sao trời, dùng game thực tế ảo phương thức hiện ra ở các người chơi trước mặt. Mỗi cái người chơi đều có thể trở thành “Du hành vũ trụ viên”, đối thích khoa học viễn tưởng, vũ trụ, thiên văn người chơi tới nói, trò chơi này thật là đủ để phong thần kinh điển tác phẩm.</p>
+<p>Tạ Tinh Hà nói “Trò chơi này phong cách độc đáo, đưa ra thị trường sau đoạt giải vô số. Nó nhất ngưu bức địa phương ở chỗ, đi ra biên giới, đại lý quyền bán được toàn thế giới, đặc biệt cấp người trong nước mặt dài. Cho nên, Khải Hàng trò chơi fan trung thành siêu cấp nhiều, bọn họ khoang trò chơi chất lượng cũng thực hảo, phần cứng thực lực là tam đại xưởng trung mạnh nhất.”</p>
+<p>Tạ Vân Phàm hiếu kỳ nói “Sau lại đâu? Nhà này công ty vì cái gì đáng tiếc?”</p>
+<p>Tạ Tinh Hà thở dài “Khai cục vương tạc, sau đó liền đi xuống sườn núi lộ.”</p>
+<p>Tạ Vân Phàm ngẩn người “Bọn họ sẽ không chỉ làm 《 Tinh Không Mạn Bộ 》 một trò chơi đi?”</p>
+<p>Tạ Tinh Hà gật gật đầu “Đúng vậy, cụ thể tình huống như thế nào ta cũng không rõ ràng lắm. Nhà này công ty rất thần bí, nhưng bọn hắn chỉ làm game thực tế ảo, lợi nhuận năng lực, khẳng định là không bằng Mộng Chi Dực cùng Khốc Chơi.”</p>
+<p>Tạ Vân Phàm vuốt cằm như suy tư gì.</p>
+<p>Từ đại ca miêu tả xem, trước mắt, quốc nội game thực tế ảo thị trường tam phân thiên hạ.</p>
+<p>Khốc Chơi địa vị củng cố, kinh điển bạo khoản nhiều nhất; Mộng Chi Dực phát triển tấn mãnh, dã tâm rất lớn, tưởng mở rộng sản phẩm tuyến, chiếm trước càng nhiều thị trường; Khải Hàng có kinh điển danh tiếng trò chơi 《 Tinh Không Mạn Bộ 》, phần cứng thực lực cường, đáng tiếc kế tiếp trò chơi không đuổi kịp, chỉ có thể củng cố một đám nhớ tình bạn cũ fan trung thành.</p>
+<p>Tam gia công ty các có ưu khuyết.</p>
+<p>Tạ Vân Phàm tổng hợp phân tích lúc sau cho rằng, cùng Khốc Chơi hợp tác 《 Cách Đấu Đại Sư 》 là tối ưu lựa chọn.</p>
+<p>Khốc Chơi hoạt động quá nhiều khoản chiến đấu trò chơi, kinh nghiệm phong phú, trị số cân bằng khẳng định có thể làm tốt, server cũng không cần lo lắng, làm thi đấu kinh nghiệm tương đương sung túc. Nhưng là, Khốc Chơi đã có 《 cơ giáp học đồ 》 loại này chiến đấu loại bạo khoản trò chơi, không nhất định sẽ đối 《 Cách Đấu Đại Sư 》 cảm thấy hứng thú.</p>
+<p>Mộng Chi Dực thực lực đương nhiên rất mạnh, nguyệt nước chảy phá trăm triệu đại trò chơi có vài cái, công ty không thiếu tiền, tưởng mở rộng thị trường, nhìn trúng bọn họ huynh đệ trò chơi. Vốn là thực tốt hợp tác cơ hội, đáng tiếc, bọn họ ra giá rất thấp, rất có loại “Cửa hàng đại khinh khách” ngạo mạn.</p>
+<p>Khải Hàng, nhà này công ty nghe đi lên không quá đáng tin cậy, một khoản 《 Tinh Không Mạn Bộ 》 ăn đến lão, kế tiếp mệt mỏi, rất khó tin tưởng thực lực của bọn họ có thể hay không hoạt động hảo một khoản cách đấu trò chơi.</p>
+<p>Tạ Vân Phàm cân nhắc một lát, nói “Ca, một trò chơi mấu chốt nhất chính là sáng ý cùng thiết kế, bản quyền ở chúng ta trên tay, Mộng Chi Dực nếu là có thành ý, chúng ta liền hợp tác. Không thành ý nói, ta tình nguyện không bán, cũng không ăn cái này ngậm bồ hòn, ngươi nói đi?”</p>
+<p>Tạ Tinh Hà sảng khoái gật đầu “Ân, ta cũng như vậy tưởng!”</p>
+<p>Phía trước thiếu ngân hàng rất nhiều tiền, hắn kỳ thật không tự tin nói ra lời này, cũng từng do dự quá muốn hay không giá thấp bán đi trò chơi, trước còn rớt một bộ phận cho vay?</p>
+<p>Nhưng là hiện tại không giống nhau.</p>
+<p>Đệ đệ là cái kiếm tiền tay thiện nghệ, Tạ Tinh Hà áp lực giảm bớt không ít, này khoản 《 Cách Đấu Đại Sư 》 cũng là hắn nghiên cứu phát minh hơn hai năm tâm huyết, dựa vào cái gì bán rẻ a?</p>
+<p>Ai còn thiếu ngươi 3000 vạn dường như, nhà của chúng ta Tiểu Phàm một tuần là có thể kiếm trở về!</p>
+<p>Nghĩ vậy một chút, Tạ Tinh Hà eo nháy mắt thẳng thắn.</p>
+<p>【 ba hợp một chương, đàm phán 】</p>
+<p>Hai ngày sau, Tạ Vân Phàm trừu thời gian làm địa phủ NPC nhân vật tư liệu sửa sang lại.</p>
+<p>Lúc trước thiết kế trò chơi thời điểm, hắn làm nguyên họa sư vẽ chín nhân vật, một cái là người chơi, dư lại tám là Hắc Vô Thường, Bạch Vô Thường, Mạnh bà, tứ đại phán quan cùng với Diêm La Vương.</p>
+<p>Địa phủ nhân vật kỳ thật rất nhiều, nhưng máy rời mê cung trò chơi dung lượng hữu hạn, hơn nữa thời gian hấp tấp, sơ bản 《 Địa Phủ Mê Cung 》 cũng không có đem toàn bộ địa phủ hoàn chỉnh mà bày biện ra tới.</p>
+<p>Tạ Vân Phàm nghĩ, nếu tương lai có cơ hội khai phá ra “Thực tế ảo bản địa phủ” nói, hắn có thể đem đầu trâu mặt ngựa, mười đại Diêm Vương, Ngũ Phương Quỷ Đế từ từ nhân vật, toàn bộ thêm đi vào.</p>
+<p>Hắn sẽ khuynh tẫn toàn lực, chế tạo ra sử thượng “Nhất rất thật âm tào địa phủ”, hù ch·ế·t người cái loại này.</p>
+<p>Nếu là trò chơi này có thể đi ra biên giới, toàn thế giới phát hành, như vậy, mặt khác quốc gia người chơi, cũng có thể hảo hảo hiểu biết một chút Hoa Hạ về “Địa phủ” thú vị truyền thuyết.</p>
+<p>Đương nhiên, muốn làm thành chuyện này, hắn còn có rất dài lộ phải đi.</p>
+<p>Bởi vì 《 Địa Phủ Mê Cung 》 bước lên game mobile nhà bán chạy bảng, hơn nữa đại lượng nước máy khen ngợi đề cử, mấy ngày nay nhiệt độ vẫn luôn rất cao.</p>
+<p>Nằm đếm tiền cảm giác, thật sảng!</p>
+<p>Trừ bỏ hoàn thiện địa phủ nhân vật giả thiết ở ngoài, Tạ Vân Phàm còn trừu thời gian tìm tới ca ca đã từng nghiên cứu phát minh 《 Cách Đấu Đại Sư 》 trò chơi Demo, tự mình thí chơi một chút.</p>
+<p>Trò chơi này căn cứ vào “Tinh Vân khoang trò chơi” nghiên cứu phát minh, đại ca trong thư phòng vừa lúc có một đài giữ lại cho mình khoang trò chơi, trước mắt trên thị trường đã mua không được, này đài vẫn là không xuất bản nữa.</p>
+<p>Tạ Vân Phàm nằm tiến khoang trò chơi trung, lần đầu tiên cảm nhận được game thực tế ảo mang cho hắn chấn động.</p>
+<p>Thực chân thật, phảng phất tự mình đi tới quyền anh tràng quán.</p>
+<p>Chung quanh người xem tiếng gọi ầm ĩ, cũng làm đến giống như đúc.</p>
+<p>Kỳ thật, ca ca thị trường nhạy bén độ rất cao, hai năm trước hắn tiến quân game thực tế ảo lĩnh vực, lúc ấy game thực tế ảo mới vừa khởi bước, quốc nội chỉ có hai ba khoản trò chơi, là thực thích hợp nhập cục thời cơ.</p>
+<p>Nếu hắn 《 Cách Đấu Đại Sư 》 cùng Tinh Vân khoang trò chơi có thể thành công nói, hiện tại Tạ Tinh Hà, cũng là trò chơi giới đại lão.</p>
+<p>Đáng tiếc chuyện xưa kết cục là Tinh Vân tập đoàn phá sản, trò chơi hạ giá, kho hàng đọng lại khoang trò chơi cũng bán không xong, thành một đống sắt vụn đồng nát.</p>
+<p>Tạ Vân Phàm lấy này không xuất bản nữa khoang trò chơi nghiêm túc chơi chơi 《 Cách Đấu Đại Sư 》 bất đồng nhân vật, thực mau liền phát hiện trò chơi này trí mạng vấn đề —— chiến đấu không lưu sướng, kỹ năng cân bằng làm được quá lạn, lợi hại nhân vật có thể nhất chiêu nháy mắt hạ gục đối thủ, không hề cạnh kỹ thể nghiệm cảm.</p>
+<p>Từ khoang trò chơi ra tới sau, Tạ Vân Phàm bất đắc dĩ hỏi “Ca, ngươi có phải hay không thích nhất ‘ quyền hoàng ’ nhân vật này?”</p>
+<p>Tạ Tinh Hà kích động mà nói “Đúng vậy, ta cảm thấy quyền hoàng nhất soái, ra quyền tốc độ mau như gió mạnh! Đây là ta khi còn nhỏ thích nhất manga anime nhân vật hắc hắc.”</p>
+<p>Tạ Vân Phàm không khách khí mà phun tào “Cho nên, ngươi liền đem hắn thiết kế thật sự lợi hại, một quyền đánh ch·ế·t một cái tiểu bằng hữu?”</p>
+<p>Tạ Tinh Hà “…… Khụ khụ.”</p>
+<p>Tạ Vân Phàm nghiêm túc mà nói “Ca, kế hoạch không thể có tư tâm, cạnh kỹ trò chơi, chiến đấu số liệu thất hành là trí mạng. Hơn nữa, trò chơi này tiết tấu quá nhanh, mới vừa đổ bộ liền trực tiếp tiến vào quyền anh tràng, người chơi không có trơn nhẵn quá độ kỳ, rất khó đối trò chơi sinh ra lòng trung thành.”</p>
+<p>Tạ Tinh Hà dùng sức vò đầu, “Trò chơi tiết tấu” vấn đề hắn cũng không phải thực minh bạch nên như thế nào đem khống. 《 Cách Đấu Đại Sư 》 tiết tấu xác thật băng rồi, lúc trước thống kê quá, 70% người chơi một ngày nội bỏ du.</p>
+<p>Tạ Vân Phàm thấy ca ca thần sắc uể oải, vỗ vỗ bờ vai của hắn, cổ vũ nói “Ca, ngươi trò chơi này nội hạch cách chơi kỳ thật thực hảo, phong cách cũng phi thường bổng, thiết kế rất có ý tứ, về lò nấu lại nói, ta cảm thấy có thể hỏa.”</p>
+<p>Tạ Tinh Hà đột nhiên ngẩng đầu “Ngươi thật cảm thấy trò chơi này còn có thể cứu chữa?”</p>
+<p>Trong khoảng thời gian này hắn trải qua đả kích quá nhiều. Từ công ty phá sản sau, hắn vẫn luôn lâm vào chiều sâu tự mình hoài nghi bên trong, thật lâu chưa từng nghe qua người khác đối 《 Cách Đấu Đại Sư 》 khẳng định.</p>
+<p>Tạ Tinh Hà ngượng ngùng mà sờ sờ cái mũi “Không phải đang an ủi ta đi?”</p>
+<p>Tạ Vân Phàm nói “Ta nói chính là lời nói thật. Thực tế ảo cách đấu trò chơi nhất định có nó chịu chúng, 《 cơ giáp học đồ 》 loại này chiến đấu trò chơi đều có thể hỏa biến toàn thế giới, ngươi này khoản chân nhân cách đấu, làm tốt khẳng định sẽ được hoan nghênh.”</p>
+<p>Tạ Tinh Hà cố nén mũi toan, thấp giọng nói “Hy vọng như thế, ta cũng muốn cho trò chơi này một lần nữa đưa ra thị trường, đây chính là ta hoa suốt hai năm thời gian nghiên cứu ra tới a……”</p>
+<p>Tạ Vân Phàm có thể lý giải loại này cảm thụ.</p>
+<p>Trò chơi này ngưng tụ ca ca tâm huyết, hắn sẽ giúp ca ca thực hiện tâm nguyện.</p>
+<p>Hai ngày thời gian thực mau qua đi.</p>
+<p>Thứ năm sáng sớm, chuẩn bị sẵn sàng Tạ Vân Phàm cùng Tạ Tinh Hà, cùng nhau lái xe đi Diệp tổng ước định địa điểm —— Dung Thành trung tâm thành phố một đống office building, cũng là “Mộng Chi Dực trò chơi” phương nam phân bộ.</p>
+<p>Trực tiếp đem người ước tới công ty, có thể thấy được, Diệp tổng đem chính mình đương thành đàm phán chủ đạo phương.</p>
+<p>Tạ Tinh Hà hôm nay xuyên thân thực chính thức tây trang, trang điểm đến tinh thần phấn chấn, còn rất soái.</p>
+<p>Tạ Vân Phàm vốn dĩ không nghĩ xuyên tây trang, nhưng đại ca nói, đi đối phương công ty ăn mặc quá tùy tiện sẽ có vẻ nhược thế, vì thế suốt đêm cấp Tạ Vân Phàm mua trở về một bộ âu phục buộc hắn mặc vào.</p>
+<p>Huynh đệ hai người nhan giá trị đều rất cao, ăn mặc chính trang đi vào công ty, hấp dẫn không ít nhân viên công tác lực chú ý.</p>
+<p>Hai người đi vào trước đài.</p>
+<p>Tạ Tinh Hà nói “Ngươi hảo, ta là Tạ Tinh Hà, hẹn Diệp tổng hôm nay buổi sáng gặp mặt.”</p>
+<p>Trước đài mỹ nữ rất có lễ phép mà mỉm cười nói “Tạ tiên sinh, ngài hảo, Diệp tổng ở khai một cái hội nghị khẩn cấp, khả năng muốn ngài chờ một lát, bên này thỉnh.”</p>
+<p>Huynh đệ hai người đi theo nàng đi vào thang máy, đi vào cao ốc 30 lâu.</p>
+<p>Này đống lâu tổng cao 33 tầng, ở vào Dung Thành trung tâm thành phố, có thể mua một đống lâu làm nam bộ làm công căn cứ, có thể thấy được Mộng Chi Dực có bao nhiêu tài đại khí thô.</p>
+<p>Office building trang hoàng đến phi thường xa hoa, rộng mở sáng ngời cửa sổ sát đất có thể nhìn xuống thành thị đẹp nhất cảnh đêm, nghe nói, này đống lâu trắng đêm không tắt đèn, bởi vì bọn họ công nhân là 24 giờ đợi mệnh, buổi tối đều có người lưu lại tăng ca.</p>
+<p>Tạ Vân Phàm nhớ tới chính mình Dương Phàm phòng làm việc, trước mắt chỉ có hắn một cái lẻ loi quang côn tư lệnh……</p>
+<p>Cũng nên thu thập cái làm công địa điểm, bắt đầu chiêu binh mãi mã.</p>
+<p>Bằng không, bằng hắn một người lực lượng, như thế nào cùng này đó công ty lớn cạnh tranh đâu?</p>
+<p>Thang máy tới, tiếp đãi mang theo hai người đi vào bên cạnh phòng nghỉ, cho bọn hắn đổ trà, mỉm cười nói “Hai vị chờ một lát, Diệp tổng họp xong lập tức lại đây.”</p>
+<p>Tạ Tinh Hà nói “Tốt, ngươi đi vội đi.”</p>
+<p>Chờ tiếp đãi đi rồi, hắn mới nhịn không được phun tào “Ước hảo 9 điểm, không tuân thủ khi, làm chúng ta chờ, đây là ra oai phủ đầu đi? Cảm thấy chúng ta là tới cầu hắn hợp tác?”</p>
+<p>Tạ Vân Phàm cầm ca ca tay “Không có việc gì, từ từ đi.”</p>
+<p>May mắn bồi ca ca tới. Bằng không làm hắn một người ở chỗ này chờ, ngẫm lại cũng quái đáng thương.</p>
+<p>Hai người vẫn luôn chờ đến buổi sáng 9 giờ rưỡi, sắp mất đi kiên nhẫn thời điểm, Diệp Đằng mới đẩy cửa tiến vào.</p>
+<p>Nam nhân dáng người hơi béo, mang một bộ bạc biên mắt kính, cười tủm tỉm, nhìn qua khá tốt nói chuyện. Hắn vừa vào cửa, liền mau chân đi tới, vươn tay nói “Tạ tổng, thật sự là ngượng ngùng a, công ty lâm thời khai cái hội nghị khẩn cấp, làm ngươi đợi lâu.”</p>
+<p>Tạ Tinh Hà miễn cưỡng cười cười, nói “Không quan hệ, dù sao ta nhàn rỗi, Diệp tổng mời ngồi.”</p>
+<p>Diệp Đằng tiếp đón cùng hắn tiến vào trợ lý “Đi cấp hai vị đảo ly trà.”</p>
+<p>Trợ lý lập tức xoay người ra cửa đổ trà nóng tiến vào.</p>
+<p>Diệp Đằng nhìn về phía ngồi ở Tạ Tinh Hà bên cạnh người trẻ tuổi, nghi hoặc nói “Vị này chính là?”</p>
+<p>Tạ Tinh Hà “Đã quên giới thiệu, đây là ta đệ đệ.”</p>
+<p>Tạ Vân Phàm cười chào hỏi “Diệp tổng hảo, ta kêu Tạ Vân Phàm.”</p>
+<p>Diệp Đằng ngẩn người, trong lòng nhịn không được phun tào —— nói sinh ý, mang cái tiểu bằng hữu tới xem náo nhiệt gì?</p>
+<p>Bất quá, mặt ngoài hắn vẫn là duy trì hiền lành, cười nói “Đệ đệ còn ở đọc đại học đi? Nếu không, ngươi đi trước bên cạnh game thực tế ảo khoang thể nghiệm trong phòng chơi một hồi?”</p>
+<p>Tạ Vân Phàm “Không được Diệp tổng, 《 Cách Đấu Đại Sư 》 trò chơi này ta cũng tham dự nghiên cứu phát minh. Cho nên, ta cũng muốn nghe một chút ngài đối nó cái nhìn.”</p>
+<p>Tạ Tinh Hà vội vàng theo đệ đệ nói “Không sai, ta đệ đệ ý kiến cũng rất quan trọng. Diệp tổng, chúng ta tiến vào chính đề đi, về hợp tác phương thức, ngài vẫn là kiên trì 3000 vạn mua đứt sao?”</p>
+<p>Diệp Đằng thở dài nói “Ai, ngươi cũng biết, 《 Cách Đấu Đại Sư 》 đưa ra thị trường lúc sau danh tiếng tan vỡ, người chơi cho điểm còn không đến 6 phân, bị các võng hữu mắng lên hot search, chúng ta Mộng Chi Dực thu mua nó bản quyền, cũng là mạo tương đối lớn nguy hiểm.”</p>
+<p>“Hơn nữa, trò chơi này vấn đề cùng bug rất nhiều, chúng ta mua trở về lúc sau, yêu cầu đối nó về lò nấu lại, này còn phải một tuyệt bút nghiên cứu phát minh kinh phí.”</p>
+<p>Tạ Vân Phàm bất động thanh sắc mà nghe hắn nói lời nói.</p>
+<p>Đàm phán phía trước chèn ép đối thủ, điển hình chức trường PUA phương thức, làm ngươi cảm thấy chính mình thực không xong, chúng ta nguyện ý cùng ngươi hợp tác là ngươi vinh hạnh, do đó đè thấp giá cả.</p>
+<p>“3000 vạn mua đứt đã không thấp. Tạ tổng, Mộng Chi Dực là quốc nội lớn nhất game thực tế ảo chủ đầu tư, mượn dùng chúng ta ngôi cao, ngươi trò chơi này mới có khả năng khởi tử hồi sinh, đúng không? Một đống số liệu, ngươi lưu trữ không bán, cũng không có gì dùng a!”</p>
+<p>“……” Tạ Tinh Hà ở bàn hạ dùng sức nắm lấy nắm tay. Diệp Đằng lời trong lời ngoài vẫn luôn ở làm thấp đi trò chơi này, phảng phất hắn tới tìm Tạ Tinh Hà nói chuyện hợp tác, là đối Tạ Tinh Hà một loại “Ban ân”.</p>
+<p>Cái này làm cho Tạ Tinh Hà cảm thấy dị thường sỉ nhục. Chính mình hao phí tâm huyết làm được trò chơi, bị đối phương nói được không đáng một đồng.</p>
+<p>Liền ở hắn tưởng phát hỏa kia một khắc, bàn hạ tay đột nhiên bị nhẹ nhàng nắm lấy, Tạ Tinh Hà quay đầu nhìn lại, đối thượng đệ đệ bình tĩnh ôn hòa đôi mắt.</p>
+<p>Hắn hỏa khí nháy mắt tiêu.</p>
+<p>Hôm nay không thể xúc động, ổn định, nghe một chút Vân Phàm nói như thế nào đi.</p>
+<p>Quả nhiên, ngay sau đó liền nghe Tạ Vân Phàm mỉm cười mở miệng nói “Diệp tổng, chúng ta đương nhiên biết 《 Cách Đấu Đại Sư 》 không đủ hoàn thiện, nhưng rất nhiều vấn đề đều có thể thông qua trị số điều chỉnh tới chữa trị. 《 cơ giáp học đồ 》 có thể hỏa biến toàn thế giới, thuyết minh, cách đấu loại trò chơi còn là phi thường có tiền cảnh, đúng hay không?”</p>
+<p>Hắn nhìn về phía Diệp Đằng, ánh mắt thành khẩn lại ôn hòa.</p>
+<p>Diệp Đằng không tự giác mà bị hắn mang chạy trật “Đó là đương nhiên!”</p>
+<p>Vừa dứt lời, lại cảm thấy chính mình nhất thời nói sai, vội vàng vãn tôn nói “Cách đấu trò chơi là có tiền cảnh, khụ, nhưng Cách Đấu Đại Sư về lò nấu lại, chúng ta bên này nghiên cứu phát minh phí tổn rất cao a! Đưa ra thị trường lúc sau có thể hay không lợi nhuận, vẫn là cái không biết bao nhiêu, cho nên, chúng ta yêu cầu gánh vác đại lượng nguy hiểm.”</p>
+<p>Tạ Vân Phàm nói “Theo ta được biết, 《 cơ giáp học đồ 》 mỗi tháng nước chảy đều có thể phá trăm triệu, nếu 《 Cách Đấu Đại Sư 》 thành công đưa ra thị trường, chữa trị phía trước bug, trò chơi này lợi nhuận năng lực tuyệt đối sẽ không kém. Chẳng sợ giảm phân nửa, một tháng mấy ngàn vạn cũng không thành vấn đề.”</p>
+<p>“Cho nên, 3000 vạn mua đứt giá cả chúng ta vô pháp tiếp thu.”</p>
+<p>“Nếu Diệp tổng thực sự có thành ý hợp tác, chúng ta có thể liên hợp nghiên cứu phát minh. Ta cùng ca ca ta phụ trách trò chơi kế hoạch giám chế, Mộng Chi Dực cung cấp game thực tế ảo khoang ngôi cao, chúng ta đem 《 Cách Đấu Đại Sư 》 khai phá thành Mộng Chi Dực độc chiếm trò chơi, lợi nhuận, chia đôi thành thế nào?”</p>
+<p>Nghe đệ đệ bình tĩnh mà nói ra này đoạn lời nói, Tạ Tinh Hà sợ ngây người.</p>
+<p>Diệp Đằng thiếu chút nữa đem trong miệng trà phun ra tới.</p>
+<p>Chia đôi thành? Ngươi đang chọc cười sao! Mộng Chi Dực cung cấp game thực tế ảo khoang ngôi cao, các ngươi lấy không lợi nhuận? Này mẹ nó đem Mộng Chi Dực đương thành cho ngươi làm công?</p>
+<p>Diệp Đằng buông cái ly, ngoài cười nhưng trong không cười nói “Tiểu bằng hữu, ngươi đừng nói giỡn, ngươi còn ở đọc đại học, có phải hay không không rõ lắm luật lệ? Cái kia…… Tạ tổng, ngươi ý kiến đâu?”</p>
+<p>Hắn nhìn về phía Tạ Tinh Hà.</p>
+<p>Tạ Tinh Hà thẳng thắn sống lưng, nghiêm túc nói “Ta đệ đệ ý tứ chính là ta ý tứ.”</p>
+<p>Diệp Đằng “????”</p>
+<p>Các ngươi hai anh em đậu ta chơi đâu?!</p>
+<p>Tạ Vân Phàm nhìn ca ca liếc mắt một cái, tiếp tục nói “Ta không nói giỡn. Game thực tế ảo cạnh tranh kịch liệt, Mộng Chi Dực trước mắt game thực tế ảo 《 đại người chơi 》《 sủng vật nhạc viên 》, đều là giải trí hưu nhàn hướng. Cách đấu loại trò chơi, kỳ thật là quý công ty đoản bản đi.”</p>
+<p>Diệp Đằng “……”</p>
+<p>Tạ Vân Phàm ánh mắt thành khẩn “Mua 《 Cách Đấu Đại Sư 》 là các ngươi trước mặt tối ưu lựa chọn, rốt cuộc 《 Cách Đấu Đại Sư 》 sở hữu mỹ thuật, âm nhạc, thậm chí trình tự tài nguyên đều là có sẵn, mua trở về sửa lại số liệu, ngắn hạn nội là có thể đưa ra thị trường. So với làm một khoản tân trò chơi tới nói, đầu tư có thể thiếu cái chín thành, đúng không?”</p>
+<p>Diệp Đằng “……”</p>
+<p>“Chúng ta yêu cầu Mộng Chi Dực hiệp trợ hoàn thành trò chơi nghiên cứu phát minh, mà quý công ty cũng yêu cầu chúng ta trò chơi tới mở rộng thị trường, chúng ta hai bên là đôi bên cùng có lợi quan hệ. Một khi đã như vậy, vì cái gì không thể công bằng hợp tác?”</p>
+<p>Rõ ràng các ngươi công ty cũng thực yêu cầu 《 Cách Đấu Đại Sư 》, mới có thể vội vã thu mua!</p>
+<p>Vì cái gì không thể cấp đối phương ít nhất tôn trọng cùng công bằng?</p>
+<p>Tạ Tinh Hà nghe đến đó, hốc mắt không cấm có chút chua xót, hắn thực may mắn đệ đệ cùng hắn cùng nhau tới đàm phán, nếu là hắn, là không có tự tin nói ra những lời này.</p>
+<p>Diệp Đằng tươi cười dần dần biến mất.</p>
+<p>Bởi vì, Tạ Vân Phàm xác thật ngắn ngủn vài câu chọc trúng yếu hại.</p>
+<p>Trước kia đàm phán thời điểm, gặp được đồng hành đều đối hắn cung cung kính kính. Hắn thân là Mộng Chi Dực tập đoàn phụ trách bản quyền phó tổng, đi đến nơi nào đều là bị người phủng.</p>
+<p>Đột nhiên gặp được Tạ Vân Phàm như vậy ngạnh tra, hắn nhất thời có chút vô ngữ.</p>
+<p>Dám cùng Mộng Chi Dực nói chia đôi người, quốc nội còn không có xuất hiện quá.</p>
+<p>Diệp Đằng sắc mặt trầm trầm, nhẫn nại tính tình nói “Chia đôi không có khả năng, nếu các ngươi nhất định phải nói phân thành, Mộng Chi Dực có thể tiếp thu điểm mấu chốt là nhị bát phân, chúng ta chiếm tám phần. Ngươi phải biết, Mộng Chi Dực là quốc nội lớn nhất trò chơi thương, chúng ta game thực tế ảo khoang đã bán ra 2000 nhiều vạn đài!”</p>
+<p>Quốc nội game thực tế ảo khoang kiềm giữ lượng trước mắt cũng mới mấy ngàn vạn, Mộng Chi Dực người dùng số đếm xác thật là số một số hai.</p>
+<p>Tạ Vân Phàm nói “Ta biết Mộng Chi Dực thực lực, nhưng là Diệp tổng, chúng ta trò chơi này cách chơi cùng sáng ý cũng là trước mắt trên thị trường tuyệt vô cận hữu. Nếu Mộng Chi Dực nguyện ý toàn ngôi cao mở rộng, phối hợp tuyên truyền, sáu bốn phần thành, thuần lợi nhuận chiếm bốn thành là chúng ta điểm mấu chốt, không thể lại thấp.”</p>
+<p>“……” Diệp Đằng cố nén tức giận, cười nói “Lấy chúng ta Mộng Chi Dực địa vị, muốn làm cách đấu trò chơi nói, đối tượng hợp tác lựa chọn còn có rất nhiều. Ta là xem ở Tạ tổng mặt mũi thượng mới tìm các ngươi nói, Tinh Vân tập đoàn đã phá sản, trò chơi này số liệu, ngươi không bán, chính mình cũng không năng lực nghiên cứu phát minh không phải sao? Không bằng bán cho chúng ta, ngươi cũng có thể kiếm cái hảo thanh danh.”</p>
+<p>Tạ Vân Phàm nhàn nhạt nói “Nếu Diệp tổng mang theo ý nghĩ như vậy, xác thật vô pháp nói đi xuống.”</p>
+<p>Tạ Tinh Hà thấy đệ đệ thần sắc kiên quyết, lập tức đứng lên, nói “Diệp tổng, hôm nay liền trước như vậy đi, về sau có cơ hội lại hợp tác.”</p>
+<p>Diệp Đằng nói “Ngươi trở về vẫn là hảo hảo suy xét một chút, nghĩ thông suốt tùy thời liên hệ ta. Ngươi đệ đệ còn trẻ, không có gì kinh nghiệm cùng lịch duyệt, loại việc lớn này vẫn là đương ca ca làm chủ đi?”</p>
+<p>Tạ Tinh Hà gật gật đầu, nói “Diệp tổng, ngài nếu là nghĩ thông suốt, cũng tùy thời liên hệ ta a.”</p>
+<p>Diệp Đằng “……”</p>
+<p>Tạ Tinh Hà cùng Tạ Vân Phàm xoay người rời đi Mộng Chi Dực tập đoàn.</p>
+<p>Vừa đi ra đại môn, Tạ Tinh Hà liền thấp giọng mắng “Hôm nay may mắn có ngươi ở, đem hắn cấp dỗi trở về. Diệp Đằng cái này vương bát đản, phía trước vài lần đàm phán thời điểm, cũng là loại này cao cao tại thượng ngữ khí, ta xem hắn khó chịu thật lâu!”</p>
+<p>Tạ Vân Phàm nói “Ca, công ty lớn cao ngạo quán, khinh thường chúng ta, chúng ta không cần thiết chịu cái này khí. Cách Đấu Đại Sư lợi nhuận năng lực sẽ không kém, bọn họ không hợp tác là bọn họ tổn thất.”</p>
+<p>Tạ Tinh Hà tâm tình khá hơn nhiều “Ân, ca thỉnh ngươi ăn cơm đi! Muốn ăn cái gì?”</p>
+<p>Tạ Vân Phàm nói “Ăn lẩu đi, mùa đông thích hợp cái lẩu.”</p>
+<p>Huynh đệ hai người ăn cơm trưa, theo sát lại lái xe đi vào phụ cận một nhà xa hoa nhà ăn.</p>
+<p>Buổi chiều hai điểm, Diệp Đằng đẩy cửa đi vào VIP-1 hào phòng.</p>
+<p>Vừa vào cửa, liền thấy hai trương quen thuộc mặt.</p>
+<p>Tạ Tinh Hà cùng Tạ Vân Phàm? Này đối huynh đệ như thế nào tại đây?!</p>
+<p>Diệp Đằng ngẩn người, còn tưởng rằng chính mình đi nhầm, quay đầu lại lại nhìn mắt phòng hào…… Không nhìn lầm a?</p>
+<p>Tạ Vân Phàm mỉm cười đứng lên, vươn tay nói “Diệp tổng ngài hảo, ta là Dương Phàm phòng làm việc người phụ trách, chúng ta lại gặp mặt.”</p>
+<p>Diệp Đằng “……”</p>
+<p>Vừa mới nói băng, buổi chiều lại tiếp theo nói?</p>
+<p>Này không phải thực xấu hổ sao?!</p>
+<p>【 ba hợp một, đàm phán kết thúc 】</p>
+<p>Từ bất đồng gặp mặt địa điểm liền có thể thấy được, Diệp Đằng đối 《 Cách Đấu Đại Sư 》 cùng 《 Địa Phủ Mê Cung 》 là khác nhau đối đãi.</p>
+<p>Cách Đấu Đại Sư, một khoản thất bại tác phẩm, Tạ Tinh Hà ở trong mắt hắn cũng là cái không đáng giá nhắc tới “Kẻ thất bại”, cho nên, hắn đối Tạ Tinh Hà cũng không có nhiều ít tôn trọng. Hắn thu mua trò chơi này, là ôm “Ngươi đều phá sản còn không chạy nhanh bán” tâm thái, đàm phán thời điểm cũng cao cao tại thượng.</p>
+<p>Dương Phàm phòng làm việc không giống nhau, tân thành lập phòng làm việc, làm ra nghỉ đông hắc mã tiểu bạo khoản, não động đại, tiền đồ vô lượng. Hắn sờ không rõ nhà này phòng làm việc át chủ bài, cho nên, lần đầu gặp mặt hắn ước ở nhà ăn phòng, nghĩ bên ngoài liêu nói có thể thả lỏng một ít.</p>
+<p>Không nghĩ tới, Dương Phàm phòng làm việc lão bản, cư nhiên chính là Tạ Tinh Hà đệ đệ?</p>
+<p>Này quá làm người ngoài ý muốn.</p>
+<p>Diệp Đằng dù sao cũng là lão bánh quẩy, chỉ xấu hổ hai giây, liền nhanh chóng điều chỉnh tốt tâm thái, tươi cười sang sảng mà vươn tay nói “Thật xảo! Không nghĩ tới, ngươi tuổi còn trẻ, cư nhiên có thể nghiên cứu phát minh ra 《 Địa Phủ Mê Cung 》 như vậy bạo khoản trò chơi. Ta liền nói, buổi sáng nghe ngươi đĩnh đạc mà nói, hiểu được thật nhiều a.”</p>
+<p>Tạ Tinh Hà rất tưởng trợn trắng mắt. Ngươi buổi sáng còn nói “Tiểu hài tử không xã hội kinh nghiệm”, sửa miệng sửa đến thật là nhanh.</p>
+<p>Tạ Vân Phàm thần sắc bất biến, chỉ chỉ chỗ ngồi nói “Diệp tổng mời ngồi.”</p>
+<p>Diệp Đằng cùng trợ lý cùng nhau ngồi xuống, tò mò hỏi “Các ngươi phòng làm việc những người khác đâu? Ta phía trước còn nói, thỉnh các ngươi cùng nhau ăn một bữa cơm tới.”</p>
+<p>Tạ Vân Phàm nói “Dương Phàm phòng làm việc, trước mắt theo ta một người.”</p>
+<p>Diệp Đằng thần sắc khẽ biến.</p>
+<p>Hắn mới vừa nói cái gì? Phòng làm việc liền hắn một người? Game mobile nhà bán chạy bảng thứ 7 danh trò chơi, cư nhiên là hắn một người tác phẩm?</p>
+<p>Tạ Vân Phàm giải thích nói “Mỹ thuật, âm nhạc linh tinh tư liệu sống, đều là tiêu tiền mua, bọn họ cũng không phải Dương Phàm phòng làm việc chính thức công nhân, tổng kế hoạch theo ta một người, trình tự là ta viết.”</p>
+<p>Diệp Đằng trầm mặc một lát, hắn không thể tin được trước mặt người thanh niên này, cư nhiên có thể chế tạo ra 《 Địa Phủ Mê Cung 》 như vậy bạo khoản trò chơi, có thể làm ra phong cách độc đáo bán chạy máy rời game mobile, đây chính là khó được một ngộ kỳ tài.</p>
+<p>Tạ Tinh Hà nhìn rất phế vật, này đệ đệ đảo thật là có điểm bản lĩnh đâu?</p>
+<p>Diệp Đằng một sửa phía trước thái độ, ngữ khí hiền lành mà nói “Về 《 Cách Đấu Đại Sư 》, thật sự là xin lỗi, ta giữa trưa mới vừa cấp tổng bộ đánh quá điện thoại, sáu bốn phần như vậy tỷ lệ, tổng bộ vô pháp thông qua, dù sao cũng là đại hạng mục, tài chính khởi đầu muốn thượng trăm triệu, ta một người nói cũng không tính.”</p>
+<p>Hắn khẳng định không gọi điện thoại, chỉ là tìm cái dưới bậc thang.</p>
+<p>Tạ Vân Phàm không có chọc thủng hắn, nói sang chuyện khác nói “Không quan hệ, chúng ta nói chuyện 《 Địa Phủ Mê Cung 》 đi, Diệp tổng cảm thấy, cái dạng gì hợp tác hình thức tương đối hảo?”</p>
+<p>Diệp Đằng tươi cười ôn hòa “Ta nhìn ra được tới, ngươi thực chán ghét mua đứt, càng muốn liên hợp nghiên cứu phát minh đúng không? Trò chơi này là ngươi sáng ý, cho nên, liên hợp nghiên cứu phát minh hình thức ta có thể tiếp thu. Lợi nhuận phân thành có thể từ từ nói chuyện, ta bên này cũng có thể ở quyền hạn trong phạm vi, cho ngươi lớn nhất nhượng bộ.”</p>
+<p>Tạ Vân Phàm nói “Ta ý tưởng là, Mộng Chi Dực chọn một ít người cho ta, thành lập Địa Phủ Mê Cung trò chơi chuyên tổ, chỉ phụ trách nghiên cứu phát minh thực tế ảo bản địa phủ. Ta sẽ ở phiên bản thực tế ảo gia tăng càng nhiều cách chơi cùng NPC, hoàn thiện toàn bộ địa phủ thiết kế. Cho nên, trò chơi này ta cần thiết đảm nhiệm tổng kế hoạch.”</p>
+<p>Diệp Đằng giật mình —— nói cách khác, Mộng Chi Dực ra người, xuất lực, Tạ Vân Phàm đương hạng mục tổng kế hoạch? Thành lập trò chơi nghiên cứu phát minh tiểu tổ, mọi người tất cả đều muốn nghe hắn?</p>
+<p>Hàng không một cái tổng kế hoạch? Ngươi không lầm đi?</p>
+<p>Chế tác tổ bên kia chỉ sợ muốn nháo phiên thiên!</p>
+<p>Diệp Đằng vô ngữ cực kỳ “Ngươi điều kiện này, hẳn là không mấy nhà công ty nguyện ý tiếp thu. Chúng ta công ty bên trong tương đối phức tạp, bất đồng tiểu tổ phụ trách bất đồng trò chơi, còn có bên trong cạnh tranh chế độ, ngươi hàng không đương hạng mục kế hoạch, làm mọi người nghe ngươi, sao có thể a?”</p>
+<p>Tạ Vân Phàm nói “Nhưng Địa Phủ Mê Cung trò chơi này, chỉ có ta có thể làm ra tới. Ta đem trò chơi giao cho các ngươi, các ngươi có thể hoàn thành sao? Các ngươi biết địa phủ còn có bao nhiêu cái NPC không có xuất hiện sao? Biết mỗi một tầng địa ngục lai lịch sao?”</p>
+<p>Diệp Đằng “Này……”</p>
+<p>Này xác thật là không biết.</p>
+<p>Nhưng mà, hàng không một vị hạng mục kế hoạch, Mộng Chi Dực chưa bao giờ từng có như vậy tiền lệ.</p>
+<p>Mộng Chi Dực thăng chức chế độ đều là luận tư bài bối, nếu làm Tạ Vân Phàm hàng không, mặt khác hạng mục người phụ trách sẽ nghĩ như thế nào? Bọn họ ở công ty ngao thật nhiều năm mới có thể có địa vị, kết quả, Tạ Vân Phàm một cái 20 tuổi xuất đầu sinh viên, trực tiếp đương hạng mục người phụ trách?</p>
+<p>Bọn họ sẽ cao hứng sao? Khiếu nại tin đều có thể cho ngươi viết một cái sọt.</p>
+<p>Huống chi đem Mộng Chi Dực mỹ thuật, kỹ sư, văn án từ từ nhân tài điều đi cấp viết Vân Phàm đương thủ hạ, những người này cũng sẽ không chịu phục.</p>
+<p>Diệp Đằng tự hỏi một lát, nói “Nếu không như vậy, ngươi đem trò chơi thiết kế ý nghĩ nói cho chúng ta biết kế hoạch, sau đó, ngươi lấy hạng mục phó tổng giam thân phận gia nhập Mộng Chi Dực, hiệp trợ hắn tới hoàn thành?”</p>
+<p>Tạ Vân Phàm lắc đầu “Không được. Trò chơi này cần thiết ta định đoạt, Địa Phủ Mê Cung muốn như thế nào sửa, đến lúc đó nên như thế nào lợi nhuận, đều phải từ ta tự mình quyết định, đây là ta điểm mấu chốt. Lợi nhuận phương diện, ta có thể nhượng bộ, nhưng quyền lên tiếng không thể nhượng bộ.”</p>
+<p>Trò chơi này thực đặc thù, là đến từ dị thế giới truyền thuyết, thế giới này người vô pháp hoàn thành. Hắn không nghĩ đem Địa Phủ Mê Cung giao cho người khác trong tay, kia tuyệt đối sẽ huỷ hoại trò chơi này.</p>
+<p>Diệp Đằng sắc mặt càng ngày càng khó coi.</p>
+<p>Này không thể nghi ngờ là hắn trải qua quá để cho nhân sinh khí đàm phán.</p>
+<p>Buổi sáng nói Cách Đấu Đại Sư, dõng dạc muốn lợi nhuận chia đôi; buổi chiều nói Địa Phủ Mê Cung, cư nhiên muốn hàng không đến Mộng Chi Dực đương hạng mục kế hoạch, làm Mộng Chi Dực công nhân đều nghe hắn?</p>
+<p>Chúng ta công ty người dựa vào cái gì nghe ngươi a? Ngươi có phải hay không nằm mơ còn chưa ngủ tỉnh?</p>
+<p>Diệp Đằng có chút sinh khí, lại có chút buồn cười, hắn cảm thấy cái này Tạ Vân Phàm mang theo một loại mới vào xã hội ngu xuẩn cùng thiên chân.</p>
+<p>Diệp Đằng bất đắc dĩ nói “Ngươi điều kiện này, chúng ta công ty là không có khả năng đáp ứng.”</p>
+<p>Tạ Vân Phàm nói “Ta có thể lý giải. Xem ra là vô pháp hợp tác rồi?”</p>
+<p>Diệp Đằng đứng lên “Ân, về sau nếu có tân trò chơi, tưởng khai phá phiên bản thực tế ảo nói, hoan nghênh ngươi lại liên hệ ta nga.”</p>
+<p>Tạ Vân Phàm đứng dậy cùng hắn nắm tay “Tốt Diệp tổng, có cơ hội tái kiến.”</p>
+<p>Đàm phán tan rã trong không vui, hai cái hạng mục đều nói thất bại.</p>
+<p>Tạ Tinh Hà cũng cảm thấy đệ đệ điều kiện quá khó làm người tiếp thu, nhưng hắn có thể lý giải đệ đệ kiên trì —— thà rằng không bán, cũng không nghĩ huỷ hoại trò chơi.</p>
+<p>Có lẽ, đây là bọn họ hai anh em duy nhất điểm giống nhau đi.</p>
+<p>Kỳ quái chính là, về nhà trên đường hai người cũng không có “Đàm phán thất bại” uể oải, ngược lại cảm thấy thực nhẹ nhàng. Rốt cuộc, Mộng Chi Dực cũng không phải rất có thành ý đối tượng hợp tác, nói băng liền nói băng đi.</p>
+<p>Tạ Tinh Hà vỗ vỗ đệ đệ vai “Ngươi hiện tại kiếm lời mười mấy lần lợi nhuận, đã là thực tốt khai cục, từ từ tới.”</p>
+<p>Tạ Vân Phàm thần sắc bình tĩnh, tựa hồ đã sớm liệu đến kết quả này “Không vội. Ta tính toán đem Địa Phủ Mê Cung lợi nhuận trước đề ra, ta phía trước chỉ thuê một gian chung cư làm công, hôm nay đi Mộng Chi Dực sau, rất hâm mộ bọn họ công tác hoàn cảnh.”</p>
+<p>Tạ Tinh Hà hiểu rõ nói “Ngươi tưởng thuê cái office building làm công sao?”</p>
+<p>Tạ Vân Phàm nói “Phòng làm việc về sau khẳng định muốn nhận người, ta cái kia độc thân chung cư quá nhỏ, ta tưởng thuê một tầng office building, 500 bình trở lên, có thể cất chứa trăm người tả hữu đoàn đội cùng nhau làm công, thuê hảo lại sửa chữa một chút, vì tương lai khai công ty làm chuẩn bị.”</p>
+<p>Tạ Tinh Hà sảng khoái mà nói “Cái này dễ làm a, ca có kinh nghiệm, thuê nhà trang hoàng đều bao ở ta trên người!”</p>
+<p>Huynh đệ hai người nhìn nhau cười.</p>
+<p>Tinh Vân tập đoàn office building sớm đã người đi nhà trống, liền nhãn hiệu đều gỡ xuống, công ty tuyên bố phá sản kia một khắc, rất nhiều người đều cảm thấy Tạ gia sẽ xong đời.</p>
+<p>Hẳn là không ai nghĩ đến, bọn họ huynh đệ sẽ bắt đầu từ con số 0, làm lại từ đầu đi? Tạ Tinh Hà thở sâu, nhìn về phía đệ đệ ánh mắt khó được ôn hòa.</p>
+<p>Lần này một lần nữa gây dựng sự nghiệp, lúc đầu tài chính chỉ có mấy ngàn vạn, không giống hắn năm đó như vậy mấy cái trăm triệu hướng trong tạp.</p>
+<p>Nguyên nhân chính là vì thất bại quá một lần, từ đầu bắt đầu, bọn họ mỗi một bước, đều phải đi được càng thêm tiểu tâm cẩn thận.</p>
+<p>Lần này, Tạ Vân Phàm mới là chủ đạo.</p>
+<p>Hắn nguyện ý nghe đệ đệ an bài, đem hết toàn lực trợ giúp đệ đệ.</p>
+<p>Tạ Vân Phàm mặc kệ là làm buôn bán đầu óc, vẫn là làm trò chơi ý nghĩ, đều so với hắn cường quá nhiều, hắn cam nguyện đương cái này trợ thủ.</p>
+<p>Không cần chính mình động não, bị đệ đệ mang phi cảm giác, kỳ thật còn rất sảng!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong21.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong23.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "di-gioi-tro-choi-che-tac-nguoi";
+const NOVEL_TITLE = "Dị giới trò chơi chế tác người";
+const CHAPTER_TITLE = "Chương 22 ba hợp một";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

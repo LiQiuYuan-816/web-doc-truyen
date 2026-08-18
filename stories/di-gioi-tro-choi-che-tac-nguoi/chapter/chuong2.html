@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 2</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Dị giới trò chơi chế tác người
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 2</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong1.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong3.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Tạ Tinh Hà bị đưa đi VIP phòng bệnh lưu viện quan sát.</p>
+<p>Chờ hộ sĩ đi rồi, Tạ Vân Phàm chủ động tìm kiếm đề tài nói “Tỷ, công ty bên kia tình huống rất nghiêm trọng sao? Ta ca hắn như thế nào sẽ đột nhiên luẩn quẩn trong lòng, nuốt một chỉnh bình thuốc ngủ?”</p>
+<p>Minh Chi nhìn về phía trên giường bệnh Tạ Tinh Hà, hồng hốc mắt nhẹ giọng nói “Ngươi ca lúc trước vì nghiên cứu phát minh khoang trò chơi, đem danh nghĩa phòng ở, xe, tất cả đều thế chấp cấp ngân hàng làm cho vay, còn mượn bằng hữu không ít tiền. Hiện giờ hạng mục thất bại…… Hắn có thể là quá tuyệt vọng, mới có thể nghĩ đến tự sát đi.”</p>
+<p>Tình huống so Tạ Vân Phàm nghĩ đến còn muốn nghiêm trọng. Nếu chỉ là công ty nợ nần, phá sản thanh toán sau còn có thể bảo toàn một bộ phận cá nhân tài sản. Nhưng Tạ Tinh Hà vì làm đại hạng mục, chính mình cũng đầu một tuyệt bút tài chính, còn thế chấp nhà xe tìm ngân hàng cho vay…… Quả thực lỗ sạch vốn.</p>
+<p>Từ trước mắt hiểu biết tình huống phỏng đoán, mấy năm gần đây đúng là game thực tế ảo vừa mới mặt thế, các đại nhà máy hiệu buôn điên cuồng chia cắt thị trường giai đoạn. Trò chơi làm tốt lắm, đương nhiên có thể đếm tiền đếm tới mỏi tay.</p>
+<p>Nhưng mà, Tinh Vân tập đoàn cũng không có nghiên cứu phát minh trò chơi kinh nghiệm, Tạ Tinh Hà tùy tiện tiến quân trò chơi giới, còn tưởng một hơi ăn cái đại mập mạp, sao có thể đâu?</p>
+<p>Giai đoạn trước đại lượng đầu nhập căn bản thu không trở về phí tổn, cho vay lãi suất lại cao, chuỗi tài chính đứt gãy, công ty cứu không trở lại, chính mình cũng bồi hết quần lót, khó trách luẩn quẩn trong lòng muốn tự sát.</p>
+<p>Tạ Vân Phàm bất đắc dĩ hỏi “Hắn còn thiếu ngân hàng bao nhiêu tiền?”</p>
+<p>Minh Chi do dự một lát, nói “Mấy nhà ngân hàng hợp nhau tới, không sai biệt lắm hai cái trăm triệu đi.”</p>
+<p>Tạ Vân Phàm “……”</p>
+<p>Hai cái trăm triệu? Đại ca ngươi cũng thật sẽ phá của a!</p>
+<p>Tạ Vân Phàm quay đầu lại nhìn về phía trên giường bệnh nam nhân, gây dựng sự nghiệp thất bại người trẻ tuổi hắn gặp qua rất nhiều, trực tiếp bồi quang của cải còn đảo thiếu ngân hàng hai cái trăm triệu…… Vị này đại ca cũng thật là một nhân tài.</p>
+<p>Thấy Tạ Vân Phàm ánh mắt phức tạp, Minh Chi vội vàng bổ sung nói “Tiểu Phàm ngươi đừng lo lắng, ngươi ba di chúc viết thật sự rõ ràng, tây giao biệt thự đã qua hộ cho ngươi, còn có ngân hàng 300 vạn tiền mặt tiền tiết kiệm cũng tồn tại ngươi danh nghĩa. Ngươi về sau không lo ăn mặc, ca ca ngươi thiếu nợ, cũng không cần phải ngươi tới còn.”</p>
+<p>Ca ca thiếu tiền, xác thật không cần đệ đệ phụ trách.</p>
+<p>Nhưng hắn chiếm cứ Tạ Vân Phàm thân thể, còn kế thừa cha mẹ di sản. Đại ca tuy không phải làm buôn bán tài liệu, đối hắn cái này đệ đệ vẫn luôn đều thực hảo. Hắn tổng không thể đương bạch nhãn lang, chỉ hưởng thụ Tạ gia mang cho hắn chỗ tốt, lại không màng thân sinh huynh đệ ch·ế·t sống đi?</p>
+<p>Mắc nợ 2 trăm triệu…… Coi như là địa ngục khai cục đi. Thiếu nợ chậm rãi còn, tổng có thể trả hết.</p>
+<p>Tạ Vân Phàm hít sâu một hơi, nhìn về phía Minh Chi nói “Tỷ, ngươi mệt mỏi một ngày, về trước gia nghỉ ngơi, đêm nay ta tới gác đêm.”</p>
+<p>Minh Chi nghĩ nghĩ, nói “Hành, kia ta đi về trước, nữ nhi của ta mấy ngày nay cảm mạo phát sốt, còn cần ta chiếu cố. Ngươi ca nếu là tỉnh, ngươi lại cho ta gọi điện thoại.”</p>
+<p>Tạ Vân Phàm gật đầu “Yên tâm, ta sẽ chăm sóc hảo hắn.”</p>
+<p>Tiễn đi biểu tỷ sau, Tạ Vân Phàm xoay người ngồi ở trên sô pha, mở ra di động, lên mạng hiểu biết thế giới này tin tức.</p>
+<p>Nơi này khoa học kỹ thuật phát đạt trình độ, so với hắn nơi nguyên thế giới muốn cao đến nhiều.</p>
+<p>Smart phone ở mấy năm tiền tiến hành quá một lần toàn diện thăng cấp, màn hình lớn gấp di động sớm đã phổ cập, chip tính năng vô cùng tơ lụa, di động nội tồn cũng mở rộng mấy chục lần.</p>
+<p>Cũng nguyên nhân chính là vì như vậy biến cách, lấy máy tính vì vật dẫn “Game PC” dần dần xuống dốc, bị “Game mobile” sở thay thế được. Hiện giờ di động, mang theo phương tiện, tính năng xuất sắc, game PC đại bộ phận cách chơi game mobile cũng có thể thực hiện.</p>
+<p>Game thực tế ảo là ở ba năm trước đây xuất hiện, từ “Khải Hàng khoa học kỹ thuật tập đoàn” tự chủ nghiên cứu phát minh đệ nhất khoản game thực tế ảo 《 Tinh Không Mạn Bộ 》 mặt thế sau, thực mau liền thịnh hành toàn cầu, vô số người chơi tỏ vẻ “Mở ra tân thế giới đại môn”, trò chơi nghiên cứu phát minh lĩnh vực cũng chính thức bước vào thực tế ảo thời đại.</p>
+<p>Trước mắt trò chơi thị trường, di động trò chơi cùng game thực tế ảo chia đều thiên hạ.</p>
+<p>Game thực tế ảo tắc chủ công cao cấp người chơi thị trường.</p>
+<p>Khoang trò chơi giá cả sang quý, mua nổi khoang trò chơi người chơi số lượng tuy thiếu, lại là “Thiếu mà tinh”, này đó người chơi trả phí ý thức cường đại, theo đuổi tinh phẩm, thực dễ dàng chuyển biến thành trò chơi nhà máy hiệu buôn fan trung thành, người dùng dính tính cực cao.</p>
+<p>Đại ca Tạ Tinh Hà tưởng tiến quân game thực tế ảo thị trường, nghiên cứu phát minh ra “Tinh Vân khoang trò chơi” cùng các đại nhà máy hiệu buôn phân một ly canh, mang theo Tinh Vân tập đoàn đánh một hồi xinh đẹp khắc phục khó khăn, ý tưởng là tốt, có dã tâm cũng có quyết đoán, đáng tiếc kinh nghiệm không đủ, quá mức liều lĩnh.</p>
+<p>Trước nay chưa làm qua trò chơi, đi lên liền trực tiếp làm tối cao khó khăn, lớn nhất đầu tư game thực tế ảo…… Gây dựng sự nghiệp thất bại cũng là tất nhiên.</p>
+<p>Thân là trò chơi kế hoạch, Tạ Vân Phàm rất rõ ràng “Bạo khoản trò chơi” được đến không dễ.</p>
+<p>Hắn kiếp trước làm trò chơi kinh nghiệm thực phong phú, hiện giờ thay đổi cái thế giới, cụ thể làm cái gì, như thế nào làm, cũng không thể một lần là xong. Hắn còn cần một đoạn thời gian làm kỹ càng tỉ mỉ thị trường điều nghiên.</p>
+<p>Trực tiếp làm thực tế ảo khẳng định không được. Game thực tế ảo nghiên cứu phát minh chu kỳ trường, đầu tư kim ngạch thật lớn, thị trường cơ bản chăn bộ công ty lũng đoạn, trước mắt, hắn còn không có thực lực này cùng công ty lớn cạnh tranh.</p>
+<p>Chỉ có thể trước từ đầu tư kim ngạch thiếu, nghiên cứu phát minh chu kỳ đoản, có thể nhanh chóng biến hiện game mobile làm khởi.</p>
+<p>Chờ về sau, có sung túc tài chính cùng cường đại đoàn đội, lại đi chạm vào “Game thực tế ảo” cái này xa lạ lĩnh vực cũng không muộn.</p>
+<p>Một đêm thời gian bất tri bất giác qua đi.</p>
+<p>Tạ Tinh Hà tỉnh lại kia một khắc, liền thấy đệ đệ ngồi ở trên sô pha chính mở ra di động lên mạng.</p>
+<p>Màn hình di động ánh sáng chiếu sáng hắn mặt —— cùng trong ấn tượng giống nhau dương quang soái khí một khuôn mặt, di truyền cha mẹ ưu tú nhất ngũ quan.</p>
+<p>Chẳng qua, ngày thường Tạ Vân Phàm bất hảo bất kham, trên mặt luôn là treo không đứng đắn tươi cười. Hiện giờ hắn lại thần sắc nghiêm túc, ánh mắt khẩn nhìn chằm chằm màn hình di động, biểu tình rất là nghiêm túc.</p>
+<p>“Ba mẹ trên đời thời điểm đều mặc kệ ta, ngươi dựa vào cái gì quản ta!”</p>
+<p>Trong trí nhớ đột nhiên hiện lên đệ đệ dỗi hắn khi thiếu tấu bộ dáng, Tạ Tinh Hà tức khắc đầu đau muốn nứt ra, nhịn không được nổi giận nói “Ngươi ở chỗ này làm gì?”</p>
+<p>Nam nhân thanh âm khàn khàn khô khốc, giọng nói giống như bị lưỡi dao thổi qua.</p>
+<p>Tạ Vân Phàm buông xuống di động, ngẩng đầu nhìn về phía hắn “Ca, ngươi tỉnh?” Dứt lời liền ấn xuống trong phòng gọi linh, bước nhanh đi đến đại ca mép giường, “Có hay không nơi nào không thoải mái? Ta kêu bác sĩ lại đây.”</p>
+<p>Tạ Tinh Hà lạnh lùng nói “Ngươi ước gì ta đã ch·ế·t, không còn có người quản ngươi đi?”</p>
+<p>“……” Tạ Vân Phàm cười gượng gãi gãi tóc.</p>
+<p>20 tuổi sinh viên, mỗi ngày liền biết cùng hồ bằng cẩu hữu lêu lổng, đường núi đua xe thiếu chút nữa xảy ra chuyện, bị ca ca mắng một đốn cũng là xứng đáng. Cư nhiên có mặt tranh luận, thật là kỳ cục.</p>
+<p>Nghĩ đến đây, Tạ Vân Phàm lập tức thành khẩn mà xin lỗi “Ca, thực xin lỗi, ta lúc ấy nói chính là khí lời nói, ngươi đừng để trong lòng. Ta bảo đảm, về sau không bao giờ cho ngươi chọc phiền toái.”</p>
+<p>Tạ Tinh Hà sửng sốt.</p>
+<p>Gia hỏa này là ở xin lỗi sao? Mặt trời mọc từ hướng tây?</p>
+<p>Đúng lúc này, bác sĩ đẩy cửa tiến vào, cấp Tạ Tinh Hà làm mấy hạng kiểm tra, nói “Còn hảo kịp thời giặt sạch dạ dày, trạng thái ổn định, hôm nay liền có thể xuất viện.”</p>
+<p>Tạ Vân Phàm quay đầu lại hỏi “Bác sĩ, hắn hiện tại có thể ăn cái gì sao?”</p>
+<p>“Gần nhất mấy ngày, ăn trước chút thanh đạm dễ tiêu hóa thức ăn lỏng.”</p>
+<p>“Tốt, cảm ơn bác sĩ.”</p>
+<p>Bác sĩ đi rồi, Tạ Vân Phàm cầm lấy di động cấp Minh Chi đã phát điều tin tức, nói cho nàng đại ca tỉnh, sau đó đi đến mép giường ngồi xuống, ngữ khí ôn hòa nói “Ca, về sau có cái gì phiền lòng sự, có thể cùng ta nói, đừng nghĩ không khai a! Mệnh chỉ có một cái, ném đã có thể không có. Ba mẹ không ở, chúng ta huynh đệ cùng nhau vượt qua cửa ải khó khăn, không có gì không qua được điểm mấu chốt.”</p>
+<p>Tạ Tinh Hà nghiêng đầu nhìn về phía ngoài cửa sổ, tự giễu mà cười nói “Ngươi không hiểu, công ty sự tình thực phức tạp, hạng mục gặp được khó khăn, nói tốt muốn đồng cam cộng khổ đối tác tất cả đều triệt tư trốn chạy, cái này điểm mấu chốt ta thật đúng là mại bất quá đi…… Không có người sẽ lưu tại kẻ thất bại bên người.”</p>
+<p>Đang nói, mu bàn tay thượng đột nhiên ấm áp.</p>
+<p>Tạ Tinh Hà nghi hoặc mà cúi đầu, lại phát hiện đệ đệ nhẹ nhàng cầm hắn tay. Ấm áp độ ấm thông qua đầu ngón tay truyền lại lại đây, thực mau liền đem hắn tay cấp che nhiệt.</p>
+<p>“Ta sẽ lưu tại bên cạnh ngươi, bởi vì chúng ta là người một nhà.” Tạ Vân Phàm thấp giọng nói.</p>
+<p>Có thể là linh hồn cùng thân thể dần dần dung hợp duyên cớ, Tạ Vân Phàm nhìn trước mặt đại ca, chỉ cảm thấy thập phần thân thiết.</p>
+<p>Đại ca là trên đời nhất quan tâm hắn người, hắn sẽ không từ bỏ số lượng không nhiều lắm thân nhân.</p>
+<p>“……” Tạ Tinh Hà ngơ ngẩn mà nhìn đệ đệ, hốc mắt đột nhiên có chút chua xót.</p>
+<p>Đây là Tạ Vân Phàm lớn lên lúc sau, lần đầu tiên chủ động nắm hắn tay an ủi hắn. Trước kia cái kia Tạ Vân Phàm chỉ biết cùng hắn tranh luận, tức giận đến hắn não nhân đau.</p>
+<p>Thật là buồn cười, sống sót sau tai nạn, đảo làm cho bọn họ huynh đệ chi gian cảm tình biến hảo rất nhiều, không hề vừa thấy mặt liền giương cung bạt kiếm.</p>
+<p>“Nghe Minh Chi tỷ nói, ngươi thiếu ngân hàng cho vay còn không có trả hết. Ba mẹ lưu lại kia bộ biệt thự, muốn hay không bán trả nợ?” Tạ Vân Phàm đề nghị nói.</p>
+<p>“Không được.” Tạ Tinh Hà phục hồi tinh thần lại, lập tức cự tuyệt, “Tạ gia tổ trạch không thể bán, đó là chúng ta từ nhỏ lớn lên địa phương, trong viện thụ vẫn là ba mẹ thân thủ loại, lầu 3 có rất nhiều mụ mụ lưu lại họa tác…… Huống chi, kia bộ biệt thự đoạn đường không tốt, mặc dù bán, lấy hiện tại giá nhà cũng bán không bao nhiêu tiền.”</p>
+<p>“Nga. Kia đem ta xe bán, trước đem gần nhất hai tháng cho vay còn thượng. Dư lại, chúng ta lại chậm rãi nghĩ cách.” Tạ Vân Phàm nói.</p>
+<p>“Bán xe?” Tạ Tinh Hà hoài nghi mà nhìn về phía đệ đệ, “Ngươi không đi đua xe?”</p>
+<p>“Không được, đua xe quá nguy hiểm, ta còn tưởng sống lâu mấy năm.” Tạ Vân Phàm xem nhẹ đối phương nghi ngờ ánh mắt, nói sang chuyện khác hỏi, “Ca, ngươi trong tay trước mắt có thể điều động tiền mặt còn có bao nhiêu?”</p>
+<p>“Không nhiều ít, đều cầm đi trả nợ.” Tạ Tinh Hà chật vật mà gãi đầu phát.</p>
+<p>“Nói cách khác, ta hiện tại có thể chi phối tài chính, chỉ có ba mẹ để lại cho ta 300 vạn tiền tiết kiệm phải không?”</p>
+<p>“Ân.” Tạ Tinh Hà dừng một chút, cường điệu nói, “Ta thiếu nợ, cùng ngươi lại không quan hệ. Kia 300 vạn là ba mẹ để lại cho ngươi sinh hoạt phí, không được loạn hoa, nghe thấy không?”</p>
+<p>“Nghe thấy được.”</p>
+<p>Tạ Vân Phàm mặt ngoài đáp ứng, trong lòng lại ở cân nhắc, nên như thế nào lợi dụng này số tiền.</p>
+<p>Nếu vẫn luôn tồn tại ngân hàng đương sinh hoạt phí, sớm muộn gì sẽ có tiêu hết một ngày. Chỉ có “Tiền sinh tiền”, mới có thể giúp ca ca vượt qua nguy cơ, mới có thể thành lập thuộc về chính mình phòng làm việc.</p>
+<p>Ở thế giới này, tưởng gây dựng sự nghiệp, muốn kiếm tiền, hắn cũng chỉ có một cái lộ có thể đi —— đó chính là nhặt lên “Làm trò chơi” nghề cũ.</p>
+<p>Loại nhỏ trò chơi, đối hình ảnh, âm nhạc yêu cầu cũng không quá cao, mấu chốt ở chỗ trò chơi cách chơi. 300 vạn, làm một cái tiểu hạng mục tài chính khởi đầu, vậy là đủ rồi.</p>
+<p>Trò chơi nhỏ khai phá lên thời gian đoản, biến hiện mau. Chỉ cần danh tiếng đánh ra đi, phần lãi gộp phiên cái vài lần, thậm chí mấy chục lần đều có khả năng.</p>
+<p>Chẳng qua hắn mới 20 tuổi, đại học ở đọc, trước kia lại là cái không học vấn không nghề nghiệp lưu manh phú nhị đại, hơn nữa ca ca gây dựng sự nghiệp thất bại mặt trái buff chồng lên, hắn hiện tại nói “Ta phải làm trò chơi”, không có người sẽ tin hắn, càng không ai nguyện ý giúp hắn.</p>
+<p>Hắn rất khó kéo tới đầu tư, chỉ có thể dựa điểm này tiền tiết kiệm đi trước ra bước đầu tiên.</p>
+<p>Nói được lại nhiều, cũng không bằng chân chính làm một khoản hảo ngoạn trò chơi, mới có thể làm người tin phục.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong1.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong3.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "di-gioi-tro-choi-che-tac-nguoi";
+const NOVEL_TITLE = "Dị giới trò chơi chế tác người";
+const CHAPTER_TITLE = "Chương 2";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
