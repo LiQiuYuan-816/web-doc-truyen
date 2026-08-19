@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 53</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Xuyên qua tinh tế không phải làm ngươi làm trò chơi / Ta ở tinh tế làm trò chơi phong thần
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 53</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong52.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong54.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>[ Dữu Tử Giải Trí V Hoan nghênh quả bưởi lão bằng hữu @ sao trời phòng làm việc - Bùi lại lần nữa đi vào chúng ta phòng live stream, lần này trò chơi chế tác người Bùi lại đem vì chúng ta mang đến như thế nào tân trò chơi đâu? Phát sóng trực tiếp đem với bổn thứ bảy vãn 8 giờ online, thỉnh đại gia nhiều hơn chờ mong! ]</p>
+<p>Dữu Tử Giải Trí cũng coi như là thực nghe lời, nửa điểm không cọ Sior cùng Bùi Tinh công khai nhiệt độ, trong văn án cũng chỉ đem Bùi làm như trò chơi chế tác người đối đãi, thậm chí vì nhiều cho chính mình lộng điểm nhiệt độ, còn ở bình luận khu đã phát về [ ngươi cảm thấy sao trời phòng làm việc hạ một trò chơi sẽ là cái gì loại hình ] đầu phiếu.</p>
+<p>Chờ đợi Bùi Tinh bát quái ăn dưa quần chúng …… Tuy rằng có chút thất vọng, bất quá không quan hệ! Phòng live stream đều có cùng người xem hỗ động phân đoạn!</p>
+<p>Dữu Tử Giải Trí hai ngày này hận không thể nơi nơi khua chiêng gõ trống, làm toàn thế giới đều biết chính mình lại mời tới rồi Bùi Tinh làm phát sóng trực tiếp khách quý.</p>
+<p>Mặt khác giải trí phòng làm việc càng là ghen ghét đến không được, gần nhất Bùi Tinh nhiệt độ so không ít nhất tuyến nghệ sĩ đều phải cao, đã nhiều ngày vốn nên quan tuyên tân kịch cũng đều tạm lánh mũi nhọn. Nhưng đối phương chính là không ra khỏi cửa, cũng không hồi phục bọn họ tin tức, làm cho bọn họ liền phỏng vấn đều phỏng vấn không đến.</p>
+<p>Ai biết chuyện này sau Bùi Tinh lần đầu tiên phát sóng trực tiếp cư nhiên vẫn là lựa chọn Dữu Tử Giải Trí? Phải biết thượng một lần Dữu Tử Giải Trí mời đến Bùi Tinh khi ngành giải trí người còn không lớn xem trọng, rốt cuộc ở bọn họ trong mắt trò chơi chế tác người nhiệt độ lại cao, cũng không có nhân khí idol lưu lượng đại.</p>
+<p>Trừ bỏ thâm niên người chơi ai ngờ nghe ngươi trò chơi phía sau màn chuyện xưa? Ai để ý trò chơi rốt cuộc là vài người làm?</p>
+<p>Bọn họ cũng không nghĩ tới phát sóng trực tiếp cư nhiên chỉnh ra như vậy đại một tuồng kịch, trực tiếp đem phát sóng trực tiếp nhiệt độ đẩy đến đỉnh núi, một cho tới bây giờ còn sẽ bị sao trời fans nhảy ra tới dùng Bùi Tinh tinh thần lực trị số cho người ta lặp lại an lợi.</p>
+<p>—— cũng chỉ có thể cảm thán này có lẽ chính là thời vậy, mệnh vậy, ít nhất bọn họ không có Dữu Tử Giải Trí ánh mắt.</p>
+<p>Giả thuyết không gian phát sóng trực tiếp chính là điểm này hảo, Bùi Tinh không cần ra cửa liền có thể tiếp thu Dữu Tử Giải Trí phỏng vấn.</p>
+<p>Ngay cả sao trời phòng làm việc cũng là, nếu không phải bởi vì giáp mặt cùng mặt khác người câu thông ý nghĩ của chính mình tương đối phương tiện, Bùi Tinh hận không thể mỗi ngày liền oa ở trong nhà làm trò chơi.</p>
+<p>Lần này phát sóng trực tiếp dẫn đường bá kiểm tra rồi vài biến lưu trình, xác nhận không có lầm sau mới đối những người khác ý bảo.</p>
+<p>Đêm đó 8 giờ, phòng live stream đúng giờ mở ra ——</p>
+<p>Bởi vì Sior tới ngồi xổm phát sóng trực tiếp người không ít, bọn họ đều nhịn không được tò mò, có thể cùng Sior ở bên nhau người đến tột cùng là bộ dáng gì?</p>
+<p>Bùi Tinh lúc này đây vì bày ra ra bản thân ở phía trước kia tràng bịa đặt trung vô tội, cố tình không có sử dụng kỳ kỳ quái quái giả thuyết nhân vật hình tượng, trực tiếp dùng chính mình dung mạo tiến vào phòng live stream.</p>
+<p>Vì thế này đó người xem mới vừa tiến vào phòng live stream liền đã chịu Bùi Cẩu mỹ nhan công kích</p>
+<p>[ a, trách không được có người hoài nghi Bùi Cẩu là người nhân tạo đâu, nhân loại thật sự có thể mọc ra như vậy tinh xảo mặt sao? ]</p>
+<p>[ phía trước không cần nhắc lại người nhân tạo, phía chính phủ không phải đều làm sáng tỏ sao? ]</p>
+<p>[ Bùi Cẩu mỹ nhan đồ rốt cuộc có thể lại nhiều mấy trương! Phía trước lễ trao giải hiện trường phát sóng trực tiếp kia mấy trương ta đều phải nhìn chán. ]</p>
+<p>“Chào mọi người buổi tối tốt lành, ta là các ngươi quen thuộc người chủ trì, quả bưởi tiểu thư!” Quả bưởi tiểu thư hôm nay ăn mặc một thân lục nhạt lễ phục, thoạt nhìn phá lệ dịu dàng, “Hôm nay chúng ta mời đến chính là quả bưởi lão bằng hữu —— sao trời phòng làm việc Bùi tiên sinh!”</p>
+<p>Bùi Tinh phối hợp hàn huyên vài cái, người chủ trì ở nhìn thấy phòng live stream làn đạn khu sinh động độ cũng đủ khi, mới rốt cuộc bắt đầu rồi tiếp theo cái giai đoạn.</p>
+<p>Này một cái giai đoạn là vấn đề giai đoạn, Dữu Tử Giải Trí đã đem phát sóng trực tiếp lúc ấy vấn đề nội dung đều giao dư Bùi Tinh kiểm tra rồi một lần, xác nhận đều có thể hỏi sau mới viết ở kịch bản thượng.</p>
+<p>Quả bưởi tiểu thư hỏi mấy cái không đau không ngứa vấn đề sau, nhìn mắt trong tay tiểu vở “…… Gần nhất về võng hữu đều ở chú ý ngài cá nhân vấn đề, phương tiện ở tiết mục thượng cho chúng ta một chút giải đáp sao?”</p>
+<p>“Đương nhiên.” Bùi Tinh gật gật đầu, “Cụ thể là về cái gì đâu?”</p>
+<p>Người chủ trì nói “Về phía trước ồn ào huyên náo người nhân tạo sự kiện, Bùi tiên sinh ngài thấy thế nào?”</p>
+<p>[ trực tiếp hỏi ra tới sao? Như vậy dũng sao? ]</p>
+<p>[ có cái gì không dám hỏi, Bùi Cẩu hành đến chính ngồi đến đoan còn có phía chính phủ chống lưng, chỉ là phía trước vẫn luôn không có chủ động giải thích thôi. ]</p>
+<p>Bùi Tinh tùy ý quét mắt làn đạn, trả lời nói “Bọn họ cấp ra chứng cứ không hoàn toàn tính bịa đặt, chỉ là cái kia chứng cứ nhằm vào đối tượng không phải ta bản nhân.”</p>
+<p>“Mọi người đều biết, ta tinh thần lực bình xét cấp bậc có 3S, ở toàn bộ Liên Bang cũng rất ít thấy. Có lẽ cũng là bởi vì này, bọn họ mới có thể sinh ra bắt chước ta bản nhân chế tác người nhân tạo tâm tư, nhưng hiển nhiên bọn họ không có thành công, cuối cùng còn trái lại vu hãm ta bản nhân chính là bị chế tạo ra người nhân tạo.”</p>
+<p>“Bất quá loại này đổi trắng thay đen cách nói tự nhiên là không có người sẽ tin tưởng.”</p>
+<p>Bùi Tinh nhẹ nhàng bâng quơ nói mấy câu lại làm người chủ trì cùng người xem nghe được hãi hùng khiếp vía ——</p>
+<p>Bắt chước Bùi Tinh bản nhân chế tác, như thế nào bắt chước? Bùi Tinh bản nhân có phải hay không cũng bị bách tham dự nghiên cứu hạng mục, trở thành nghiên cứu người bị hại?</p>
+<p>Bởi vì đẳng cấp cao tinh thần lực, Bùi Tinh trước 19 năm đến tột cùng bị nhiều ít khổ? Tinh tặc hủy diệt hắn tồn tại đoạn thời gian đó, hắn đến tột cùng là như thế nào mới có thể trưởng thành hiện tại cái này lạc quan bộ dáng?</p>
+<p>Những cái đó bị dùng làm thực nghiệm người nhân tạo đâu, bọn họ sinh ra chính mình ý thức sao?</p>
+<p>Nhưng liền tính trong lòng có nhiều như vậy nghi vấn, đại gia vẫn là không hẹn mà cùng mà không có ở Dữu Tử Giải Trí phòng live stream trực tiếp thảo luận những đề tài này.</p>
+<p>Rốt cuộc đây cũng là Bùi Tinh đau xót, bọn họ còn làm không được chất vấn một cái người bị hại.</p>
+<p>Rốt cuộc không có người lại thảo luận về người nhân tạo đề tài, Bùi Tinh bất động thanh sắc mà nhẹ nhàng thở ra.</p>
+<p>Người chủ trì tốt đẹp tố chất làm nàng lập tức phản ứng lại đây, đem đề tài chuyển dời đến Bùi Tinh công tác thượng “Nghe nói sao trời mấy ngày nay vẫn luôn đều không có người đi làm, là bởi vì tân trò chơi tiến độ đã hoàn thành sao?”</p>
+<p>Bùi Tinh cười nói “Đã hoàn thành, hiện tại là đại gia nghỉ phép thời gian, dự tính ngày mai tuyên bố trò chơi báo trước, đại gia có thể nhiều hơn chờ mong chúng ta tân trò chơi.”</p>
+<p>Người chủ trì tò mò hỏi “Có thể nhiều lộ ra một ít sao? Tỷ như tân trò chơi loại hình……”</p>
+<p>Bùi Tinh móc ra chính mình rõ ràng là sớm đã chuẩn bị tốt trò chơi demo, mang theo ác ma mỉm cười đưa cho người chủ trì “Đương nhiên, quả bưởi tỷ còn có thể tự mình thượng thủ nếm thử một chút.”</p>
+<p>Người chủ trì đối với hắn trêu ghẹo nói “Một đoạn này kịch bản bên trong không có a, chính ngươi thêm sao?”</p>
+<p>Bùi Tinh xin khoan dung “Tuyên truyền một chút tân trò chơi sao, lý giải một chút lý giải một chút.”</p>
+<p>Người chủ trì nghiên cứu một chút trò chơi cơ chế “Kia không thể chỉ là ta chơi, như vậy, chúng ta một người tới một ván, xem ai đánh đến ra cho điểm càng cao.”</p>
+<p>“Nếu là ta cho điểm càng cao, vậy có thể nhiều trừu ba cái người xem hỗ động, nếu là ngươi cho điểm cao, kia Dữu Tử Giải Trí official weibo liền chuyển phát sao trời phòng làm việc trò chơi tuyên truyền.”</p>
+<p>Vô luận thấy thế nào, hai bên đều là không có hại, bởi vậy trận này thi đấu liền tại đây loại hoà thuận vui vẻ bầu không khí trung bắt đầu rồi.</p>
+<p>[ trò chơi này phương thức tác chiến thoạt nhìn hảo mới mẻ độc đáo a, tựa như dùng âm nhạc công kích đối phương giống nhau. ]</p>
+<p>[ người chủ trì phản ứng thật nhanh! Vừa mới đột nhiên nghênh diện tới như vậy nhiều mặt khối, đến lượt ta ta khẳng định người trực tiếp ngốc ở kia. ]</p>
+<p>[ đáng tiếc Bùi Cẩu phản ứng càng mau, xem ra hôm nay nhiều trừu mấy cái người xem là không diễn. ]</p>
+<p>[ có người chú ý tới âm nhạc sao? Là Đường Thừa phổ khúc! ]</p>
+<p>Một khúc kết thúc, Bùi Tinh đánh ra S cấp cho điểm, mà người chủ trì còn lại là A cấp.</p>
+<p>Người chủ trì bội phục mà nói “Quá lợi hại, bất quá ta cảm thấy nếu ta nhiều chơi vài lần, nói không chừng vẫn là có thể đạt tới S.”</p>
+<p>Bùi Tinh “Rốt cuộc ta là chế tác nó người, quen thuộc độ cao cũng thực bình thường.”</p>
+<p>Người chủ trì nói “Vừa mới làn đạn có người dò hỏi trò chơi âm nhạc, sao trời là cùng Đường Thừa lão sư đạt thành hợp tác sao?”</p>
+<p>Bùi Tinh gật đầu “Không sai……”</p>
+<p>Phát sóng trực tiếp bình bình ổn ổn mà kết thúc, nhưng như cũ dựa lướt sóng người nhiệt tình thượng Tinh Võng hot search.</p>
+<p>Một cái là # Bùi Tinh đáp lại người nhân tạo #, một cái là bởi vì nhan khống quá nhiều bị ngạnh sinh sinh lục soát ra tới # Bùi Tinh động đồ #.</p>
+<p>Cái thứ nhất mục từ bên trong là account marketing đối với Bùi Tinh đáp lại về người nhân tạo sự kiện một đoạn ngắn ghi hình, cái thứ hai điểm đi vào tắc tất cả đều là các loại Bùi Tinh phát sóng trực tiếp hình ảnh, đại gia hận không thể 360 độ tất cả đều chụp một lần.</p>
+<p>[ vừa mới xem xong Bùi Tinh đáp lại, lại thu không ít phòng live stream chụp hình, ta hiện tại đã không phản đối Bùi Tinh cùng Sior ở bên nhau, phiền toái ba ba mụ mụ nhiều giọt sương mặt, tạ tạ tạ tạ ( cầu nguyện ) ]</p>
+<p>[ ai có thể nghĩ đến ta một cái chưa bao giờ mê chơi trò chơi người cư nhiên bởi vì phía trước bát quái đi ngồi xổm phòng live stream sau, liền xem Bùi Tinh nói một giờ trò chơi đâu? ]</p>
+<p>[ ta mười tuổi muội muội xem xong Mụ mụ ta về sau cũng muốn làm trò chơi! ]</p>
+<p>Ở luôn luôn chuyên chú trò chơi trò chơi diễn đàn nội, đại gia còn lại là điên cuồng thảo luận nổi lên tân trò chơi cách chơi</p>
+<p>[ phi game thực tế ảo, lại là luyến ái lại là chiến đấu lại là thẻ bài, như thế nào cảm giác nguyên tố có điểm nhiều a. ]</p>
+<p>[ cách chơi ta nhưng thật ra man thích, nam tính hẳn là cũng có thể chơi luyến ái trò chơi đi! ]</p>
+<p>[ ngày mai chính thức tuyên truyền, bổn 《 linh khí sống lại 》 người chơi hiện tại cũng đã bắt đầu mong đợi! Sao trời nhân vật kiến mô cùng đặc hiệu thật là trước sau như một hảo! ]</p>
+<p>Mặc kệ nói như thế nào, sao trời này một chuyến trò chơi tuyên truyền vẫn là thập phần thành công.</p>
+<p>Hiện giờ trên Tinh Võng phàm là thích ăn dưa người, đều đã biết sao trời phòng làm việc cùng sắp bọn họ muốn ra tân trò chơi, trong lúc nhất thời vô luận đối trò chơi có cảm thấy hứng thú hay không người đều nhịn không được chú ý lên ——</p>
+<p>Sao trời là nương lần này dư luận phong ba đông phong trực tiếp cất cánh, vẫn là sẽ bởi vì trò chơi kéo vượt bị đàn trào?</p>
+<p>Chủ nhật cùng ngày giữa trưa 12 giờ, sao trời đúng giờ tuyên bố 《 hoa trong gương, trăng trong nước 》 trò chơi báo trước.</p>
+<p>Theo sao trời phòng làm việc mấy chữ giấu đi, màn ảnh trung, một vị chỉ có thể nhìn đến bóng dáng tóc dài nữ hài xuất hiện ở trước gương.</p>
+<p>“Ta tổng hội mơ thấy gương bên kia còn có một cái khác thế giới.”</p>
+<p>“Thế giới kia ta thân ở quang minh, lại bị hắc ám hoàn hầu.”</p>
+<p>Nữ hài vô ý thức về phía gương nâng lên tay, chạm đến trong gương chính mình đầu ngón tay.</p>
+<p>Theo sương mù nổi lên bốn phía, trơn nhẵn kính mặt trong nháy mắt tựa hồ nổi lên gợn sóng.</p>
+<p>Hình ảnh dần dần trở tối ——</p>
+<p>[ nếu lúc trước ta biết này hết thảy, sẽ đem mọi người vận mệnh đường cong hoàn toàn quấy rầy, ta nhất định sẽ không lựa chọn chạm vào cái này kỳ dị thế giới. ]</p>
+<p>Theo màn hình lại lần nữa sáng lên, một cái lại một cái mới mẻ tuấn mỹ thanh niên xuất hiện ở giữa màn hình.</p>
+<p>Điên cuồng ấn tạm dừng người chơi Oa! Nhiều như vậy!</p>
+<p>[ như vậy, ngươi sẽ cùng ai thành lập khởi ràng buộc đâu? ]</p>
+<p>Trailer cuối cùng một cái đoạn ngắn hạ màn, hình ảnh dần dần trở tối, biểu hiện ra hoa thể 《 hoa trong gương, trăng trong nước 》LOGO cùng ngày 22 tháng 9 chính thức thượng tuyến thông cáo.</p>
+<p>Bùi Tinh sớm tại phát sóng trực tiếp thời điểm liền lộ ra cụ thể cách chơi, bởi vậy lần này tuyên truyền chỉ là đem trò chơi chủ tuyến cốt truyện cùng các loại ưu tú kiến mô lôi ra tới lộ cái mặt.</p>
+<p>Nhưng hiển nhiên, bình luận người chơi đã chút nào không thèm để ý cốt truyện ——</p>
+<p>[ một trăm! Ta tất cả đều muốn! ]</p>
+<p>[ vốn dĩ tưởng nói luyến ái trò chơi vẫn là thực tế ảo hương, hiện tại xem ra phi thực tế ảo cũng không tồi a. ]</p>
+<p>[ cùng Đường Thừa lão sư hợp tác âm du! Bổn âm nhạc người yêu thích tới, hy vọng sao trời sẽ không làm ta thất vọng! ]</p>
+<p>[ các ngươi mau đi xem phía chính phủ quanh thân thương thành, 《 hoa trong gương, trăng trong nước 》 đã bắt đầu bán phía chính phủ trò chơi trang bị! Cơ sở khoản mới 19 tinh tệ, xứng với mặt khác quanh thân cùng nhau mua còn bao ship, đại gia hướng a! ]</p>
+<p>Cái gì? Sao trời cư nhiên vô thanh vô tức mà đổi mới quanh thân thương trường?</p>
+<p>Sao trời trung thực người chơi hoả tốc đuổi tới, sau đó đã bị đả kích lót tóm tắt trung trắng ra giới thiệu từ làm đến nhất thời nghẹn lời.</p>
+<p>Tóm tắt là như thế này viết</p>
+<p>[ Bùi tổng nói là mua có thể gia tăng trò chơi thể nghiệm đả kích lót. Có thể có có thể không trang bị, chủ yếu tác dụng là sẽ dùng hết hiệu cùng chấn động cổ vũ người chơi, bởi vậy lại xưng cổ vũ lót. ]</p>
+<p>Mang thêm sản phẩm giới thiệu video trung, theo người chơi đem một đoạn hoàn chỉnh liền chiêu đánh ra, đả kích lót phát ra cùng quang bình thượng chiến đấu đặc hiệu tương tự vầng sáng, theo người chơi thao tác không ngừng biến hóa.</p>
+<p>Người chơi Mới 19 tinh tệ sao? Mua mua, ta yêu cầu cái này! Nó khẳng định có thể cổ vũ đến ta!</p>
+<p>Bởi vì đả kích lót hiện giờ còn chỉ là dự bán giai đoạn, cũng không hạn chế người chơi mua sắm số lượng, càng nhiều người chơi ở xác định đả kích lót sẽ không mua không được sau, liền tạm thời ấn xuống muốn mua sắm tâm, tính toán trước chờ những người khác thu được lại quyết định chính mình muốn hay không mua sắm.</p>
+<p>Vì thế, này bộ phận người chơi thuận tay lại đem sao trời quanh thân thương trường mặt khác khu vực cũng đi dạo một lần</p>
+<p>[ thật nhiều phía trước thiếu hóa đều bất động thanh sắc trên mặt đất tân a, còn có 《 Pokemon 》 mới nhất xuất hiện quang hệ sủng vật cư nhiên cũng có quanh thân, Bùi Cẩu còn rất theo sát thời đại. ]</p>
+<p>[ khóc, ai còn nhớ rõ bên hồ Đại Minh 《 linh khí sống lại 》, Bùi Cẩu, ví tiền của ta đã sớm chuẩn bị hảo, liền chờ ngươi tới thu gặt. ]</p>
+<p>Trên thực tế, 《 linh khí sống lại 》 một tuần trước mới nghênh đón một hồi đổi mới, tạp trì cũng đầu nhập vào không ít tân thẻ bài, chỉ là các người chơi luôn là sẽ không biết đủ, cũng không biết các nàng cùng sao trời đến tột cùng ai mới là kiếm tiền cái kia.</p>
+<p>Mà hiện tại Bùi Tinh muốn làm, đó là ở 《 hoa trong gương, trăng trong nước 》 tuyên bố trước, đem 《 Pokemon 》 người chơi vẫn luôn muốn mô phỏng đại tái làm ra tới.</p>
+<p>Vốn dĩ thời gian có thể không cần như vậy đuổi, nhưng ai biết phía trước phát sóng trực tiếp tuyên truyền hiệu quả như vậy hảo, dẫn tới Bùi Tinh cư nhiên có chút hối hận không đem sở hữu trò chơi đều đánh một lần quảng cáo đâu?</p>
+<p>Bất quá này cũng chỉ có thể là ngẫm lại, nếu Bùi Tinh mỗi một cái đều đánh một lần quảng cáo, kia cuối cùng nhất khả năng kết quả đó là phòng live stream người xem một cái trò chơi đều không nhớ rõ.</p>
+<p>《 Pokemon 》 người chơi trên cơ bản đều phá lệ trường tình, liền tính là hiện tại ở trên Tinh Võng thảo luận nhiệt độ so với mới vừa đem bán đương thời trượt không ít, Bùi Tinh ở trên phố gặp được mang theo chính mình giả thuyết sủng vật người chơi tần suất lại là càng ngày càng cao, thậm chí liền gia trưởng nói chờ nhà mình tiểu hài tử khảo thí khảo hảo liền cho hắn mua 《 Pokemon 》 liên danh khoản quang não đều thành một cái ngạnh.</p>
+<p>Nhưng bởi vì 《 Pokemon 》 người chơi phía trước vẫn luôn chỉ có thể ở trong hiện thực sử dụng thực tế ảo hình chiếu cùng mặt khác người đối chiến, vô hình bên trong hạn chế các người chơi đối chiến đối tượng.</p>
+<p>Bởi vậy, không ít 《 Pokemon 》 người chơi đề nghị sao trời cũng ở thế giới thực tế ảo tổ chức một cái cùng loại đạo quán khiêu chiến tái người chơi chi gian thi đấu.</p>
+<p>Bùi Tinh tự hỏi quá, cái này đề nghị thực hiện lên cũng không khó khăn, thậm chí còn có thể coi như phát sóng trực tiếp tiết mục phát sóng trực tiếp đi ra ngoài.</p>
+<p>Sao trời đã sớm chuẩn bị hảo giả thuyết đối chiến bản đồ, các loại hoàn cảnh đều có, người chơi yêu cầu ở thi đấu bắt đầu trước rút ra tam trương bản đồ, dựa theo nghiêm khắc tam cục hai thắng chế độ thắng hạ thi đấu, thu hoạch cũng đủ tích phân sau mới có thể đi trước tiếp theo tràng.</p>
+<p>Nhưng là chờ đến Bùi Tinh đem sở hữu đều chuẩn bị xong rồi, mới bắt đầu tự hỏi một cái thực nghiêm túc vấn đề ——</p>
+<p>Sủng vật đánh nhau trong quá trình bị thương nên làm cái gì bây giờ?</p>
+<p>Rốt cuộc vô chừng mực đối chiến tất nhiên sẽ mang đến thương tổn, nhưng sao trời tất nhiên sẽ không mở ra sống lại cơ chế, như vậy sẽ cổ vũ người chơi làm sủng vật tử chiến.</p>
+<p>Nhưng không mở ra sống lại cơ chế, kia thi đấu hiện trường có thể hay không trở nên quá mức tàn khốc?</p>
+<p>Bùi Tinh hỏi hỏi Sophia, Sophia đương nhiên nói “Này không phải rất đơn giản sao? Cho mỗi cái sủng vật trang bị thượng cùng bọn họ tự thân phòng ngự giá trị nhất trí quang thuẫn, quang thuẫn mất đi hiệu lực nháy mắt trực tiếp tuyên cáo thất bại bắn ra bên ngoài là được.”</p>
+<p>Bùi Tinh khiếp sợ “Đối nga!”</p>
+<p>Hắn vừa mới như thế nào không nghĩ tới đâu!</p>
+<p>Sophia nói “Cái này thêm lên thực mau, hẳn là sẽ không ảnh hưởng đến thi đấu thời gian.”</p>
+<p>Bùi Tinh gật gật đầu “Kia ta đi liên hệ một chút có thể đại phê lượng chế tác thật thể huy chương hợp tác thương, tranh thủ đến lúc đó mọi người đều có khen thưởng.”</p>
+<p>Vì thế vẫn luôn yên lặng thu phục sủng vật, dưỡng thành sủng vật, không có việc gì lưu lưu sủng vật đánh đánh đối chiến 《 Pokemon 》 Phật hệ các người chơi, rốt cuộc nghênh đón trò chơi lần đầu tiên đại hoạt động ——</p>
+<p>[ sao trời phòng làm việc V 《 Pokemon 》 tuyến thượng sủng vật đại tái sắp với ngày 10 tháng 9 chính thức kéo ra màn che! Thi đấu đem ở miêu trảo phát sóng trực tiếp ngôi cao toàn bộ hành trình phát sóng trực tiếp. Sủng vật đại sư nhóm, mau mang theo các ngươi sủng vật cùng nhau gia nhập thi đấu, đoạt được cuối cùng thắng lợi đi! ]</p>
+<p>[ phụ Báo danh yêu cầu cùng liên tiếp ]</p>
+<p>Sao trời phòng làm việc ở báo danh yêu cầu trung minh xác yêu cầu người chơi muốn có được không thua năm con sủng vật cùng ba cái đạo quán đạo quán khiêu chiến tái thắng lợi huy chương.</p>
+<p>Thành công báo danh sau, yêu cầu ở ngày 10 tháng 9 đến ngày 13 tháng 9 này bốn ngày nội tích góp đến ít nhất 10 cái tích phân, mới có thể tham dự tiếp theo luân cuộc đua.</p>
+<p>Vòng thứ nhất mỗi cục nhiều nhất chỉ có thể thượng hai cái sủng vật, người chơi thắng lợi một lần nhớ hai cái tích phân, thất bại một lần khấu một cái tích phân.</p>
+<p>Đợt thứ hai còn lại là ngày 13 tháng 9 đến ngày 15 tháng 9, như cũ yêu cầu mười cái tích phân, người chơi thắng lợi một lần nhớ một cái tích phân, thất bại một lần khấu hai cái tích phân.</p>
+<p>Đương nhiên, trước hai đợt chỉ là sàng chọn quá trình, trải qua trước hai đợt, có thể nói đại tái mới vừa bắt đầu.</p>
+<p>Cũng là đến này một vòng, phía chính phủ mới có thể chính thức đối thi đấu tiến hành phát sóng trực tiếp.</p>
+<p>Ngày 16 tháng 9 cùng ngày, các người chơi sẽ dựa theo phía trước tích góp tích phân bị bài tự, phân tổ chiến đấu cho đến quyết ra người thắng, sao trời sẽ vì người thắng ban phát thuộc về bọn họ huy hiệu.</p>
+<p>Mà lúc này bình luận khu ——</p>
+<p>[《 Pokemon 》 người chơi tập hợp! Là các ngươi vẫn luôn muốn tuyến thượng đối chiến hình thức! ]</p>
+<p>[ sẽ không xúc phạm tới sủng vật giả thiết thật sự là thật tốt quá! Ta bình thường đạo quán khiêu chiến tái đều thật cẩn thận……]</p>
+<p>[ Bùi Cẩu một làm liền làm một cái đại a, còn phát sóng trực tiếp, đến lúc đó nếu chiến đấu quá kéo có thể hay không bị thay phiên trào. ]</p>
+<p>[ ngươi nhìn kỹ, là qua trước hai đợt mới có thể bị phát sóng trực tiếp. Ngươi đều quá trước hai đợt, khẳng định sẽ không quá đồ ăn đi. ]</p>
+<p>[ khiến cho ta tới thắng hạ lần này đạo quán khiêu chiến tái đi! ]</p>
+<p>[ mặt trên ngươi lời kịch nhớ lăn lộn đi, lần này không phải đạo quán khiêu chiến tái. ]</p>
+<p>[ mặc kệ mặc kệ, ta đi trong trò chơi huấn luyện sủng vật của ta, lúc này đây ta nhất định bắt lấy một cái thứ tự! ]</p>
+<p>Chơi trò chơi, theo đuổi còn không phải là một cái người không mà ta có cảm giác sao? Huống chi lần đầu tiên thi đấu, đại gia hẳn là chuẩn bị đến đều không đầy đủ, nói không chừng chính mình liền gặp vận may cứt chó, bắt lấy quán quân đâu?</p>
+<p>Lúc này không ít người đều ở trong lòng mặc niệm ——</p>
+<p>Sao trời lần đầu tiên vì 《 Pokemon 》 tổ chức đại hình hoạt động, cái này quán quân huy hiệu bọn họ nhất định phải bắt được!</p>
+<p>--------------------</p>
+<p>Tác giả có lời muốn nói</p>
+<p>Hôm nay thượng cái kẹp cho nên đổi mới chậm điểm, bất quá 9 giờ còn có canh một, cảm ơn tiểu khả ái nhóm duy trì ~</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong52.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong54.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "xuyen-qua-tinh-te-khong-phai-lam-nguoi-lam-tro-choi-ta-o-tinh-te-lam-tro-choi-phong-than";
+const NOVEL_TITLE = "Xuyên qua tinh tế không phải làm ngươi làm trò chơi / Ta ở tinh tế làm trò chơi phong thần";
+const CHAPTER_TITLE = "Chương 53";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

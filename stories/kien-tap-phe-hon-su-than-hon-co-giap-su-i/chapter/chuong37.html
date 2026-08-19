@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 37 cùng nhau chơi trò chơi</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Kiến tập phệ hồn sư (Thần hồn cơ giáp sư I)
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 37 cùng nhau chơi trò chơi</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong36.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong38.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Đương Đông Cửu Nhật từ truyền tống khẩu ra tới khi, năm cái trang bị hoa lệ gia hỏa đã chờ đợi đã lâu.</p>
+<p>“Hải, Cửu Nhật, bên này.” Hi Thụy hướng hắn phất tay.</p>
+<p>Viractalia đại lục đối nhân vật bề ngoài trên dưới điều hành không lớn, trên cơ bản, người chơi đều là nguyên trạng biểu hiện, trừ bỏ tóc dài ngắn không đồng nhất, áo quần lố lăng, quen thuộc người thực dễ dàng nhận ra lẫn nhau.</p>
+<p>Đông Cửu Nhật chậm rãi đến gần bọn họ, liếc mắt một cái xẹt qua đi, thô sơ giản lược nhìn cái minh bạch.</p>
+<p>Caroll  Grace là Thánh kỵ sĩ, để phòng ngự là chủ, công kích vì phụ chức nghiệp, cao cấp Thánh kỵ sĩ, còn có thể kiêm chức đương nãi ba, phi thường được hoan nghênh chức nghiệp, nhưng luyện lên thực khó khăn. Xem hắn kia một hàng đầu, nhất định là cao cấp Thánh kỵ sĩ, không dung khinh thường.</p>
+<p>Winifred  Stoke là chiến sĩ, công kích tính cường cận chiến chức nghiệp, khoan kiếm cùng song kiếm là bọn họ chủ yếu vũ khí, cao công, nhanh nhẹn, né tránh cao, là PK thường thắng quân.</p>
+<p>Hi Thụy  Field là bạch tinh linh, cung là chủ yếu công kích vũ khí, có thể sử dụng bẫy rập, mặt khác bạch tinh linh là thiên nhiên sứ giả, xu sử linh thú không nói chơi. Linh thú yêu cầu chính mình tại dã ngoại bắt giữ, hậu thiên bồi dưỡng, cường đại linh thú có thể vì chủ nhân mang đến thật lớn trợ giúp. Cấp thấp bạch tinh linh chỉ có thể có được một cái linh thú, trung cấp bạch tinh linh có thể có được hai chỉ, đạt tới cao cấp, là có thể có được năm con linh thú. Hi Thụy trên đầu ngồi xổm một con lông xù xù phấn cầu, trên vai bò một con trắng trẻo mập mạp vật nhỏ, trong lòng ngực còn ôm một cái, phỏng chừng là cao cấp bạch tinh linh.</p>
+<p>Nate  Vi nhĩ, là cái mục sư, xem tên đoán nghĩa, mục sư có được thần chức, thuộc chữa khỏi hệ, kỹ năng phần lớn là phụ trợ tính, nhưng mục sư cũng có lực công kích, tục xưng pháp mục, một cái cường hãn pháp mục, có thể lược đảo một cái chiến sĩ.</p>
+<p>Bốn cái Âu thức trang điểm người nước ngoài trung gian, đứng một cái Hoa Quốc cổ đại hiệp sĩ, kia kêu một cái đột ngột. Bổn sâm  bá đức từ kỳ lân đại lục tới, chức nghiệp là hiệp sĩ. Hiệp sĩ tương đương với chiến sĩ, nhưng so chiến sĩ càng thêm linh hoạt, có được vượt nóc băng tường khinh công, sử dụng chính là kiểu Trung Quốc bảo kiếm, hiệp sĩ còn có cái bí sát kỹ, đó chính là ám khí.</p>
+<p>Đông Cửu Nhật đến gần bọn họ, lược ngửa đầu. Hắn 180 cm thân cao, đứng ở bọn họ năm người trước mặt, thế nhưng còn lược hiện lùn. Đông Cửu Nhật ninh hạ mày, trầm mặc.</p>
+<p>“Cửu Nhật, ngươi đã tới.” Hi Thụy chụp hạ vai hắn.</p>
+<p>Bổn sâm nghi hoặc mà nhìn hắn. “Ngươi không phải huyền y chân nhân sao? Như thế nào ăn mặc thích khách trang bị? Ngô, cư nhiên vẫn là tiểu cực phẩm, có thể kích phát ẩn thân kỹ năng.”</p>
+<p>Đông Cửu Nhật “Này thân quần áo nhẹ nhàng.”</p>
+<p>“Cửu Nhật.” Caroll nhìn hắn, mỉm cười.</p>
+<p>Đông Cửu Nhật tầm mắt ở trên mặt hắn đình trú vài giây.</p>
+<p>“Dược phẩm, đồ ăn đều mang theo?” Winifred hỏi.</p>
+<p>Trong trò chơi, nhân vật có thể lực hạn chế, yêu cầu đồ ăn bổ sung thể lực, mà dược phẩm là bị thương, trúng độc, choáng váng chờ trạng thái, mục sư vạn nhất chiếu bất quá tới, liền phải tự lực cánh sinh.</p>
+<p>Đông Cửu Nhật phiên phiên bao vây, tỏ vẻ không thành vấn đề. Nguyên chủ làm trang bị đầu cơ trục lợi thương, thường xuyên có đuổi giết hắn, hơn nữa hắn thích đơn độc đi ra ngoài đánh BOSS, trên người mang theo rất nhiều dược phẩm cùng đồ ăn, để chuẩn bị cho bất cứ tình huống nào.</p>
+<p>“Thay ngươi đạo sĩ phục.” Bổn sâm nói. Một hồi bọn họ muốn đi thám hiểm, xuyên phi bản chức nghiệp trang bị, tương đương đi chịu chết.</p>
+<p>“Ân.” Đông Cửu Nhật tìm ra giấu ở bao vây trong một góc trang bị, một kiện đổi trang.</p>
+<p>Những người khác chỉ cảm thấy trước mắt sáng ngời, không chút nào thu hút hắc y thiếu niên, nháy mắt trở nên tiên phong đạo cốt, tươi mát tuấn dật.</p>
+<p>Hoa mỹ nói quan đem màu đen phát trường tốc khởi, ngày thường bao phủ đôi mắt tóc mái sau này sơ, chỉ chừa hai lũ rũ ở hai sườn, lộ ra trơn bóng cái trán, tà phi hai hàng lông mày hạ là một đôi thanh lãnh mắt đen, thẳng thắn mũi, màu hồng nhạt môi, nhu hòa hình dáng sử lãnh đạm biểu tình hòa hoãn vài phần. Hắn trên người là lam nhạt cùng thuần trắng giao nhau đạo bào, to rộng tay áo, không gió tự động, áo choàng vạt áo trường chấm đất, thêu có màu bạc điềm lành vân văn, bối thượng cõng kiếm, kiếm có vỏ kiếm, Thanh Long đồ đằng, màu bạc kim loại khuynh hướng cảm xúc dưới ánh mặt trời chiết xạ ra loá mắt quang mang.</p>
+<p>“Oa, Cửu Nhật, ngươi trang bị thật thú vị.” Hi Thụy vây quanh Đông Cửu Nhật chuyển, tấm tắc bảo lạ.</p>
+<p>Bổn sâm chụp đầu của hắn. “Ít thấy việc lạ, không thấy quá chính tông đạo sĩ?”</p>
+<p>Sờ sờ cằm, trên dưới đánh giá Cửu Nhật, hắn nói “Cửu Nhật này trang bị xác thật là đạo sĩ trung đỉnh cấp trang bị, không tồi.”</p>
+<p>Ăn mặc một thân trói buộc quần áo, Đông Cửu Nhật lược hiện câu thúc.</p>
+<p>“Đi đâu?” Hắn hỏi. Bốn phía người chơi khác đều đang xem bọn họ sáu người, lại không đi, một hồi muốn giống gấu trúc giống nhau bị vây xem.</p>
+<p>“Đi ma vân quật.” Nate nói.</p>
+<p>“Grace học trưởng, người tề, chúng ta xuất phát đi.” Hi Thụy quay đầu đối Caroll nói.</p>
+<p>Caroll gật đầu, đi qua đi tự nhiên mà ôm Đông Cửu Nhật bả vai. “Một hồi theo sát chúng ta.”</p>
+<p>Đông Cửu Nhật run lên, không có né tránh.</p>
+<p>Winifred nhìn bọn họ liếc mắt một cái, không có lên tiếng, nhưng thật ra theo ở phía sau Hi Thụy cùng Nate đầu ghé vào cùng nhau, khe khẽ nói nhỏ.</p>
+<p>Ma vân quật ở bảy màu thảo nguyên nơi nào đó, nhập khẩu tùy cơ biến hóa, người chơi chạm vào vận khí mới có thể phát hiện. Bảy màu thảo nguyên mệnh danh thực mộng ảo, nhưng lại một bước khó đi, thảo nguyên thượng có rất nhiều ma thú, cấp bậc cao, lực công kích cường, người chơi nếu thâm nhập thảo nguyên, liền phải làm tốt thời gian dài cùng này đó ma thú làm đấu tranh chuẩn bị.</p>
+<p>Đệ nhất chỉ ngăn cản con đường ma thú là một con loại nhỏ ngưu thú, trừ bỏ sẽ đấu đá lung tung ngoại, sẽ không cái khác công kích kỹ năng, cho nên thực mau đã bị Winifred mấy kiếm cấp chém.</p>
+<p>Đương ngưu thú huyết vẩy ra, thi thể ầm ầm ngã xuống đất, một mảnh huyết nhục mơ hồ, Đông Cửu Nhật bước chân một đốn.</p>
+<p>Caroll nhìn hắn một cái, nói “Hiện tại mới vừa bắt đầu, mặt sau còn có càng cường đại ma thú.”</p>
+<p>“Cửu Nhật, kỳ lân đại lục kia có ma thú sao?” Hi Thụy đi ở hắn bên người hỏi.</p>
+<p>Đông Cửu Nhật còn chưa trả lời, bổn sâm tiếp lời nói. “Ở kỳ lân đại lục, không gọi ma thú, kêu yêu thú, còn có quỷ quái. Trên thực tế, ở kỳ lân đại lục, càng có rất nhiều người với người chi gian đấu tranh, chính là cái gọi là giang hồ.”</p>
+<p>Kỳ lân đại lục giả thiết, cùng Hoa Quốc cổ đại giống nhau như đúc, như võ hiệp tiểu thuyết trung, giang hồ tà ác, môn phái chi tranh, báo thù tình sát nhiều đếm không xuể.</p>
+<p>Đoàn người lại đi rồi một đoạn đường, Thánh kỵ sĩ Caroll đầu tàu gương mẫu, chiến sĩ Winifred như bóng với hình, bọn họ rất có ăn ý, phảng phất kề vai chiến đấu quá vô số lần, chỉ cần Caroll một tỏa định mục tiêu, Winifred liền vọt qua đi, nhưng hắn vĩnh viễn có thể khống chế thù hận, lưu loát mà giết ma thú, lại không hao tổn một giọt sinh mệnh.</p>
+<p>Bổn sâm là hiệp khách, chọn kiếm, thừa dịp khe hở, trợ giúp Winifred sát cá lọt lưới. Hiệp khách thân pháp mau mẫn, phối hợp khinh công, hảo không phiêu dật.</p>
+<p>Mục sư Nate cho mọi người một cái chúc phúc ngoại, liền không có động qua, nhẹ nhàng vô cùng. Hi Thụy xu sử ba con tinh linh, trợ giúp thanh quái, mà hắn tắc hi hi ha ha mà đi theo Cửu Nhật bên người.</p>
+<p>Từ bước vào bảy màu thảo nguyên khởi, Đông Cửu Nhật vẫn luôn chưa từng ra tay.</p>
+<p>Không phải hắn không nghĩ ra tay, mà là mỗi khi hắn muốn ra tay khi, quái liền ngã xuống đất. Đạo sĩ là pháp hệ chức nghiệp, so với Angel đại lục pháp sư, đạo sĩ ngâm xướng thời gian càng đoản, có chút kỹ năng càng là thuấn phát, chỉ là hắn không phải chân chính Đông Cửu Nhật, tuy có ký ức, nhưng dù sao cũng là tân nhân thượng thủ, lược hiện ngây ngô, khởi tay muốn phát kỹ năng khi, ma thú cũng đã bị kia năm người cấp giải quyết.</p>
+<p>Tiếp theo ma thú không hề là một con một con đụng phải tới, dày đặc ma thú thành đôi trát ở bên nhau, này liền làm cho bọn họ không thể không nghiêm túc đối đãi. Sáu bảy chỉ ma thú một vây đi lên, mỗi người đều phải đề cao cảnh dịch, bắt đầu thi thố tài năng.</p>
+<p>Đây là Đông Cửu Nhật lần đầu tiên ở trong trò chơi cùng quái chính thức giằng co, trò chơi mức độ giống thật quá cao, làm hắn có chút vô pháp thích từ.</p>
+<p>Đao kiếm đâm vào quái trên người, quái sẽ phát ra thê lương kêu thảm thanh, ma thú bạo nộ bộ mặt dữ tợn, gần gũi xem, phi thường khủng bố.</p>
+<p>Đông Cửu Nhật không tự chủ được mà có chút khẩn trương.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong36.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong38.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "kien-tap-phe-hon-su-than-hon-co-giap-su-i";
+const NOVEL_TITLE = "Kiến tập phệ hồn sư (Thần hồn cơ giáp sư I)";
+const CHAPTER_TITLE = "Chương 37 cùng nhau chơi trò chơi";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 15</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Xuyên qua tinh tế không phải làm ngươi làm trò chơi / Ta ở tinh tế làm trò chơi phong thần
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 15</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong14.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong16.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>[ Dữu Tử Giải Trí V Bổn chủ nhật 8 giờ, quả bưởi phòng live stream chính thức online! Lần này mời đến khách quý là đến từ @ sao trời chế tác tổ trò chơi chế tác người Bùi, cùng chúng ta tán gẫu một chút về trò chơi chế tác phía sau màn chuyện xưa, đại gia cùng nhau đến xem đi! ]</p>
+<p>Sao trời fans diễn đàn nội</p>
+<p>[ mọi người xem tới rồi Dữu Tử Giải Trí tân phát bác văn sao? ]</p>
+<p>[ Bùi Cẩu hẳn là bị bức ra tới làm sáng tỏ. ]</p>
+<p>[ đạo đức bắt cóc người thật là phiền đã chết, dựa vào cái gì Bùi Cẩu muốn miễn phí cho bọn hắn cung cấp tư liệu sống, còn phải đợi bọn họ làm xong trở lên tuyến tiếp theo cái trò chơi a, không có bản lĩnh liền nói người khác đảo loạn thị trường, ta lần này đều đau lòng Bùi Cẩu. ]</p>
+<p>[ nhưng là, trò chơi chế tác khi trường chuyện này xác thật vô pháp giải thích a, nếu là cố ý đem đã làm tốt tác phẩm tập trung tuyên bố, kia cùng cố tình đâm đương hướng người khác doanh số có cái gì khác nhau? ]</p>
+<p>Mà bên kia, biết được Bùi Tinh bước tiếp theo động tác 《 ửng đỏ ảo tưởng 》 chế tác người Kyle đang ở kế đó tự tàu thuỷ thông tin.</p>
+<p>“Chờ phát sóng trực tiếp bắt đầu, chúng ta sẽ tìm thuỷ quân trà trộn vào đi, ở phòng live stream người xem liền tuyến thời điểm vấn đề Bùi trò chơi chế tác thời gian vấn đề, nếu đối phương tránh mà không nói, Kyle, đến lúc đó liền yêu cầu ngươi lên sân khấu.”</p>
+<p>Kyle biết tàu thuỷ chỉ cần chính mình sắm vai một cái nhảy nhót vai hề nhân vật, bất quá vô luận thành công không thành công, chính mình đều có một tuyệt bút tiền tài có thể lấy, tàu thuỷ cũng hứa hẹn quá sẽ giúp hắn ứng phó những cái đó quan phục sau bất mãn người chơi, hắn còn có cái gì không hài lòng đâu?</p>
+<p>Nếu là đến lúc đó đại gia đối hắn ác ý quá cường, hắn còn có thể tạo giả một cái tâm lý bệnh tật chẩn bệnh chứng minh, đổi cái ngành sản xuất tiếp theo sinh hoạt.</p>
+<p>Cơ hồ có thể đoán trước đến Bùi cuối cùng kết cục, Kyle một bên hừ ca một bên dạo nổi lên diễn đàn.</p>
+<p>“Bùi, đã lâu không thấy.” Thêm nhĩ đẩy đẩy trên mũi mắt kính, “Lần này lại tới kiểm tra thân thể sao?”</p>
+<p>Cảm tạ thêm nhĩ, có thể đem chính mình phía trước vẫn là người bị tình nghi thời điểm kiểm tra nói được như thế bình thường tầm thường.</p>
+<p>Bùi Tinh một bên ở trong lòng yên lặng nghĩ, một bên gật gật đầu nói “Ta cảm thấy ta tinh thần lực khả năng lại bay lên, muốn nhìn xem có không có gì tác dụng phụ.”</p>
+<p>Thêm nhĩ nhướng mày, kéo ra kiểm tra thất đại môn “Vào đi.”</p>
+<p>Kỳ thật vốn dĩ Bùi Tinh là tưởng tùy tiện tìm một chỗ làm kiểm tra, nhưng Sior kiên trì hắn thể chất quá mức đặc thù, không thích hợp bại lộ ở những người khác trước mặt, lúc này mới liên hệ đối Bùi Tinh tình huống rõ ràng thêm nhĩ.</p>
+<p>Tinh thần lực thí nghiệm rất đơn giản, chỉ cần đem mang lên một cái liên tiếp khí, sau đó bắt đầu ở bác sĩ dẫn đường hạ tự hỏi là được.</p>
+<p>“Ân, hảo, như vậy liền tính hoàn thành.” Thêm nhĩ gật gật đầu, ý bảo Sior có thể giúp Bùi Tinh đem liên tiếp khí gỡ xuống tới.</p>
+<p>“Để cho ta tới nhìn xem báo cáo, tinh thần lực 102981…… Tiểu gia hỏa, ngươi sẽ không sấn Sior ngủ rồi trộm ăn cấm dược đi.” Thêm nhĩ trêu ghẹo nói, “Bất quá tuy rằng ngươi mấy tháng trước tinh thần lực chỉ có bảy vạn nhiều, nhưng ngay lúc đó tinh thần lực hiển nhiên không quá ổn định, có lẽ tinh thần lực dâng lên đối với ngươi mà nói là chuyện tốt.”</p>
+<p>Tổng sở đều biết, tinh thần lực đạt tới một vạn, đó là sờ đến S cấp ngạch cửa, tinh thần lực đạt tới hai vạn còn lại là 2S, đạt tới năm vạn mới có thể bị gọi 3S cấp.</p>
+<p>Năm vạn phía trên tinh thần lực đối lập trống canh một thấp tới nói chính là chất bay vọt, mà mười vạn tắc lại là một cái ngạch cửa, ít nhất ở Sior phía trước 3S chưa từng có xuất hiện quá mười vạn trở lên tinh thần lực trị số.</p>
+<p>Thêm nhĩ tiếp tục xem phía dưới thí nghiệm báo cáo “Tinh thần lực có rõ ràng rèn luyện quá dấu vết, ngươi gần nhất có sử dụng tinh thần lực làm gì sao?”</p>
+<p>Bùi Tinh “Chế tác game thực tế ảo có tính không? Kiến mô thời điểm sẽ dùng đến tinh thần lực.”</p>
+<p>“Tinh thần lực có thể nhiều rèn luyện một chút, đối tinh thần lực của ngươi ổn định tính chỗ tốt rất lớn.” Thêm nhĩ ở trên quang não đưa vào mấy hành tự, “Bất quá không thể cảm thấy đau đầu sau mới đình chỉ, ngươi có thể nhiều nếm thử một chút nắm giữ cái kia độ.”</p>
+<p>Sior gật gật đầu “Ta sẽ xem trọng hắn.”</p>
+<p>“Mặt khác liền không có vấn đề, thân phận tin tức thượng cái kia không ổn định tiêu chí đã có thể đi rớt, chờ ngươi về đến nhà thời điểm là có thể đổi mới.”</p>
+<p>Bùi Tinh đại hỉ, hắn vốn dĩ chỉ nghĩ thu hoạch một cái chứng minh chính mình gần nhất tinh thần lực giá trị có 3S báo cáo, còn tính toán quá nếu đối phương chết cắn không bỏ, chính mình còn có thể chủ động bại lộ chính mình vật thí nghiệm thân phận, không nghĩ tới thêm nhĩ như vậy tri kỷ!</p>
+<p>Bùi Tinh nhảy nhót mà đi đến trước cửa, lại xoay người cúc một cung “Thật là phiền toái thêm nhĩ bác sĩ!”</p>
+<p>Sior chỉ là hừ lạnh một tiếng, bất động thanh sắc mà đẩy Bùi Tinh rời đi.</p>
+<p>Mà ở bị thêm nhĩ thiết trí thành riêng tư hình thức quang bình thượng, toàn bộ hành trình nghẹn cười thêm nhĩ ở cõng Sior tổ kiến tiểu trong đàn điên cuồng đưa vào “Các ngươi nói được không sai, Sior thật sự giống như hỉ đương cha! Hôm nay gặp được Bùi, Sior quả thực hận không thể đem hắn nhãi con ngậm nơi nơi chạy!”</p>
+<p>“Này chẳng lẽ chính là Lily nói thượng sai kiệu hoa gả đối lang?”</p>
+<p>Đến nỗi trong đàn có người hỏi vì cái gì thêm nhĩ không lớn chú ý Bùi tinh thần lực?</p>
+<p>Làm ơn! Đã biết nhưng là lại không thể nghiên cứu, còn không bằng chạy nhanh quên mất đâu!</p>
+<p>“Chào mọi người, hoan nghênh đi vào quả bưởi phỏng vấn phòng live stream, ta là các ngươi người chủ trì, quả bưởi tiểu thư!”</p>
+<p>Ăn mặc màu vàng nhạt lễ phục người chủ trì tự giới thiệu sau khi kết thúc, tự nhiên mà đem đề tài chuyển dời đến một bên Bùi Tinh trên người</p>
+<p>Hôm nay Bùi ở Sophia hiếp bức hạ, lựa chọn một cái hơi chút bình thường một chút vu sư trang điểm kiến mô.</p>
+<p>《 tiền giấy 》 trung vu sư ăn mặc áo choàng cùng đeo mặt nạ kỳ thật nhìn kỹ đều thực tinh xảo, chỉ là trong trò chơi vu sư ăn mặc bị cố ý làm cũ, hơn nữa âm trầm trầm bầu không khí thêm thành, người chơi phỏng chừng cũng không dám nhìn kỹ.</p>
+<p>[ a này, cư nhiên thoạt nhìn còn khá xinh đẹp……]</p>
+<p>[ cảm ơn Bùi Cẩu, bóng ma tâm lý đã không có. ]</p>
+<p>[ Bùi Cẩu có dám hay không lộ mặt! ]</p>
+<p>Bùi Tinh bình tĩnh mà phất tay nói “Chào mọi người, ta là sao trời phòng làm việc Bùi.”</p>
+<p>“Hôm nay, chúng ta phát sóng trực tiếp chủ yếu chia làm ba cái phân đoạn, đầu tiên là thường lui tới đều sẽ có hỏi đáp phân đoạn, tiếp theo đó là võng hữu vấn đề phân đoạn, cuối cùng một cái thần bí phân đoạn đại gia có thể ở làn đạn đoán xem sẽ là cái gì đâu?”</p>
+<p>Người chủ trì ngậm cười, lại cùng người xem đơn giản mà lẫn nhau động một chút, thấy phòng live stream đại gia nhiệt tình đã bị điều động lên, mới đối chiếu kịch bản hỏi ra cái thứ nhất vấn đề “Mọi người đều biết, sao trời phòng làm việc không lâu trước đây tuyên bố một khoản tâm lý game kinh dị 《 tiền giấy 》, ngài ở chế tác trò chơi này khi, là như thế nào sinh ra ý nghĩ đâu?”</p>
+<p>Bùi Tinh “Trên thị trường game kinh dị phần lớn là dựa vào huyết tinh bạo lực tới nhuộm đẫm khủng bố bầu không khí, người chơi yêu cầu cùng sợ hãi trực tiếp đối chiến, ta liền tưởng sao trời có thể hay không làm theo cách trái ngược, chế tác một khoản không có huyết tinh bạo lực, không thể trực tiếp đối kháng trò chơi đâu?”</p>
+<p>Người chủ trì hỏi tiếp nói “Không ít người chơi phản ứng trò chơi này thuộc về tác dụng chậm đại loại hình, ngài lại là thấy thế nào đâu?”</p>
+<p>Bùi Tinh giải thích nói “Bởi vì ta chế tác trò chơi mục đích chính là đem vô pháp chạy thoát số mệnh loại này sợ hãi cảm trực tiếp chiếu rọi ở người chơi tiềm thức trung, trò chơi thiết kế trong ngoài thế giới đó là khủng bố tầng tầng tiến dần lên một cái quá trình, theo trò chơi tiến độ đề cử, khủng bố cũng sẽ dần dần thăng cấp.”</p>
+<p>“Đến nỗi tác dụng chậm quá lớn như thế nào giải quyết, có thể đi nếm thử một chút 《 linh khí sống lại 》 hoặc là 《 nguyệt thỏ 》, nhẹ nhàng chữa khỏi các ngươi tâm linh.”</p>
+<p>Bùi Tinh tận dụng mọi thứ đánh quảng cáo hành vi một chút liền khiến cho này hai cái trò chơi người chơi nhiệt tình</p>
+<p>Chúng ta liền nói Bùi Cẩu không có khả năng quên chúng ta!</p>
+<p>Người chủ trì “Về sao trời tiếp theo khoản chế tác trò chơi, phương tiện lộ ra một chút tin tức sao?”</p>
+<p>Bùi Tinh hào phóng mà nói “Đương nhiên có thể, hạ một trò chơi đồng dạng là hoàn toàn mới loại hình, như cũ là game thực tế ảo, đại gia có thể kính thỉnh chờ mong.”</p>
+<p>Người chủ trì hơi mang kinh ngạc “Sao trời mỗi lần trò chơi đều là hoàn toàn mới loại hình, Bùi chế tác người linh cảm số lượng thật là kinh người.”</p>
+<p>Bùi Tinh cười khổ “Kỳ thật mỗi cái linh cảm sau lưng đều sẽ có hàng trăm hàng ngàn phế án, chỉ có thể nói cuối cùng giao ra giải bài thi còn tính lệnh người vừa ý đi.”</p>
+<p>Versailles Bùi Tinh bị làn đạn điên cuồng chỉ chỉ trỏ trỏ</p>
+<p>Cái gì kêu “Còn tính lệnh người vừa ý”? Không cần xem thường chính mình hảo đi! Sao trời năm nay ra nổi bật còn chưa đủ nhiều sao!</p>
+<p>Thấy đạo bá ý bảo thời gian không sai biệt lắm, người chủ trì đề tài vừa chuyển “Thực cảm tạ Bùi chế tác người trả lời, kế tiếp đó là phòng live stream người xem liền tuyến phân đoạn, đại gia có thể điểm đánh phòng live stream góc phải bên dưới tiểu tâm tâm, làn đạn cùng chúng ta hỗ động, chúng ta nhân viên công tác sẽ hậu trường tùy cơ rút ra ba vị may mắn người xem cùng chúng ta liền tuyến.”</p>
+<p>Người chủ trì vừa dứt lời, làn đạn số lượng liền điên cuồng gia tăng ——</p>
+<p>Tàu thuỷ tìm tới thuỷ quân rốt cuộc tập thể kết cục.</p>
+<p>Này sóng thuỷ quân vẫn là thực thông minh, bọn họ sợ hãi bị trước tiên phong hào, dứt khoát vẫn luôn xen lẫn trong chân chính fans chi gian, còn thường thường phục chế một chút người khác phát làn đạn, tránh cho cuối cùng bởi vì hỗ động lượng không đủ mà bị hậu trường trực tiếp xoát rớt.</p>
+<p>Có lẽ là Bùi Tinh tương đối may mắn, cái thứ nhất cùng cái thứ hai bị lựa chọn phòng live stream người xem đều là sao trời fans.</p>
+<p>Cái thứ nhất hỏi Bùi Tinh 《 linh khí sống lại 》 khi nào khai tân hoạt động, Bùi Tinh trả lời ngày mai liền khai, hôm nay buổi tối là có thể ở trên official website nhìn đến thông cáo.</p>
+<p>Cái thứ hai còn lại là 《 tiền giấy 》 nhập hố người chơi, hỏi Bùi Tinh vấn đề là vai chính thật sự vĩnh viễn thoát đi thanh hà thôn sao? Bùi Tinh cười hắc hắc, dùng thế kỷ 21 vô nghĩa đại pháp thành công đem fans lừa gạt trở về, đối phương quải rớt liền tuyến thời điểm đều còn không có phản ứng lại đây, như thế nào mỗi câu nói đơn độc nói hắn đều có thể lý giải, đặt ở cùng nhau liền nghe không hiểu đâu?</p>
+<p>Bùi Tinh nói đại khái chính là “Nghe nói rất nhiều người đều đối cái này kết cục có nghi hoặc, chuyện này rốt cuộc là thế nào, trò chơi chế tác người cũng thập phần mê hoặc, làm chúng ta cùng nhau đến xem đi, nguyên lai là mê hoặc trò chơi kết cục a, kết cục đương nhiên là ngươi đánh ra tới là cái dạng gì chính là cái dạng gì lạp!”</p>
+<p>Một bên người chủ trì vẻ mặt kính nể, nàng đột nhiên cảm thấy nếu Bùi Tinh làm tin tức công tác khẳng định cũng là một cái quỷ tài.</p>
+<p>Có lẽ là tàu thuỷ bên kia nóng nảy, thấy trước hai cái cũng chưa lựa chọn bọn họ thuỷ quân, dứt khoát làm Kyle hiện tại liền kết cục, trực tiếp ở phòng live stream dùng chính mình tài khoản chất vấn Bùi Tinh.</p>
+<p>Kết quả sự tình chính là như vậy xảo, Kyle còn chưa kịp nói cái gì, đã bị hậu trường trừu trúng.</p>
+<p>Làm chuyên nghiệp nhân sĩ, hiểu biết khách quý tin tức thuộc về cơ bản thao tác, hiện giờ trừu đến Kyle tuyệt đối thuộc về phát sóng trực tiếp sự cố.</p>
+<p>Đạo bá khiếp sợ hỏi một bên công nhân “Hắn vì cái gì sẽ ở phòng live stream? Hơn nữa mới tiến vào không đến một phút, vì cái gì sẽ bị hậu trường trừu trung?”</p>
+<p>Công nhân khóc không ra nước mắt “Đây là ngài lần trước kêu ta sửa trình tự a! Chỉ cần có đại V tiến vào, liền tuyến thời điểm liền trăm phần trăm trừu đến đại V, ngài nói như vậy có thể đề cao phòng live stream lưu lượng……”</p>
+<p>Nếu đã đã xảy ra, kia hiện tại đầu tiên hẳn là nghĩ cách giải quyết. Đạo bá khẩn trương mà nhìn chằm chằm trước mặt hình ảnh, từ tai nghe dặn dò người chủ trì khéo đưa đẩy một chút, nếu Kyle quá mức kích động nhớ rõ hoà giải, bọn họ sẽ lập tức đem Kyle thay cho đi.</p>
+<p>Cùng mọi người dự đoán bất đồng, Kyle thanh âm như cũ vẫn duy trì bình tĩnh “Ta là đồng dạng là trò chơi chế tác người Kyle.”</p>
+<p>[《 ửng đỏ ảo tưởng 》 lui tiền!!! ]</p>
+<p>[ Kyle như thế nào tới? Hắn là tới tạp bãi sao? ]</p>
+<p>“Khoảng thời gian trước ta ở mạng xã hội thượng tuyên bố văn chương đại gia hẳn là đều xem qua đi.” Kyle lo chính mình mở miệng nói, “Bùi, ta khinh thường ngươi đảo loạn thị trường hành vi, ta đối sao trời chỉ có hai người chế tác đoàn đội là có thể hoàn thành như thế thật lớn lượng công việc cảm thấy hoang mang.”</p>
+<p>“Ngươi có thể trả lời ta cái này nghi hoặc sao?”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong14.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong16.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "xuyen-qua-tinh-te-khong-phai-lam-nguoi-lam-tro-choi-ta-o-tinh-te-lam-tro-choi-phong-than";
+const NOVEL_TITLE = "Xuyên qua tinh tế không phải làm ngươi làm trò chơi / Ta ở tinh tế làm trò chơi phong thần";
+const CHAPTER_TITLE = "Chương 15";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

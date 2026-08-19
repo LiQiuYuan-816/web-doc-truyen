@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 18</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Xuyên qua tinh tế không phải làm ngươi làm trò chơi / Ta ở tinh tế làm trò chơi phong thần
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 18</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong17.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong19.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Bùi Tinh cái thứ nhất làm được là bơ lạc tâm tâm niệm niệm du nấu tôm hùm đất.</p>
+<p>Tôm hùm đất bị nổ thành màu đỏ tươi, lại ở bỏ thêm gia vị trong nồi lặp lại phiên xào, thịnh ra khi rải lên một chút hành thái, quả thực mãn phòng phiêu hương.</p>
+<p>[ thơm quá a! Ta cũng muốn ăn! ]</p>
+<p>[ huynh đệ, ta vừa mới thử một cái, siêu cấp năng, hơn nữa bên ngoài xác thật sự là quá khó ăn. ]</p>
+<p>Sophia kẹp ra một phần tư phóng tới bên cạnh tiểu trong mâm, thấy làn đạn thảo luận không cấm bật cười “Bên ngoài xác là không thể ăn, hơn nữa mới ra nồi liền gặm có thể không năng sao?”</p>
+<p>[ nhưng là nó thơm quá ta hảo thèm ( khóc khóc ) ]</p>
+<p>“Đại gia có thể như vậy đem tôm sau này bẻ ra, như vậy thực dễ dàng là có thể ăn đến bên trong tôm thịt.” Sophia cẩn thận giới thiệu nói, “Món này tương đối cay, không tiếp thu được tiểu khả ái cũng không cần cưỡng cầu.”</p>
+<p>[ ăn ngon!!! ]</p>
+<p>[ vì cái gì bên trong thịt cũng như vậy hương a, ta còn tưởng rằng sẽ không ngon miệng. ]</p>
+<p>[ ta đã ăn xong rồi ô ô ô, quỳ cầu Bùi Cẩu nhiều làm một nồi tôm hùm đất! ]</p>
+<p>Bơ lạc nói “Vẫn luôn ăn một cái là sẽ nị, hơn nữa sở hữu đồ ăn đều ăn rất ngon, đại gia có thể chờ mong tiếp theo cái nha!”</p>
+<p>Bùi Tinh gật gật đầu, triển lãm ra bản thân trong tay vừa mới thiết xong hoa đao cá quế chiên xù, non mịn thịt cá thượng bị cắt ra đều đều chiều sâu, xách lên tới cũng hoàn toàn sẽ không rớt.</p>
+<p>“Món này kêu cá quế chiên xù, là chua ngọt khẩu đồ ăn, thượng một đạo cảm thấy quá cay tiểu khả ái có thể thử xem cái này.”</p>
+<p>[ đã chuẩn bị hảo dinh dưỡng dịch phối hợp ăn! ]</p>
+<p>[ ha ha ha phía trước ngươi hảo thông minh, ta cũng hạ tuyến lấy dinh dưỡng dịch. ]</p>
+<p>Càng nhiều người còn lại là hô bằng gọi hữu, ý đồ kêu vừa mới rời khỏi phòng live stream người đều trở về cùng chính mình cộng đồng chia sẻ mỹ thực vui sướng.</p>
+<p>Nói là bữa tối, trên thực tế mọi người từ 5 điểm vẫn luôn ăn tới rồi 7 giờ rưỡi, trừ bỏ đậu hủ thúi khiến cho tranh luận, mặt khác đồ ăn đều là nghiêng về một bên khen.</p>
+<p>Ở Bùi Tinh tỏ vẻ trò chơi chính thức bản sẽ xuất hiện phi hạc du thương, từ du thương nơi đó mua sắm thực đơn có thể cho một cái phòng bếp sát thủ đều làm ra ăn ngon thức ăn khi, làn đạn nhiệt tình lại lần nữa đạt tới đỉnh núi</p>
+<p>[ liền tính là vì này đó thực đơn ta cũng muốn tới chơi trò chơi này! ]</p>
+<p>[ khi nào online! Đừng ép ta quỳ xuống tới cầu ngươi! ]</p>
+<p>Lại móc ra một hồ hoa quế rượu gạo Bùi Tinh cười tủm tỉm mà cho đại gia đều phân một phần “Nhanh, trò chơi đem ở ngày 15 tháng 12 chính thức online, đại gia có thể đi official website điểm đánh hẹn trước.”</p>
+<p>Bị hoa quế rượu gạo mê mà thần hồn điên đảo người xem Hẹn trước! Nhất định hẹn trước!</p>
+<p>—— cái gì mỹ thực rượu ngon, lấy đến đây đi ngươi!</p>
+<p>Lần này trò chơi phát sóng trực tiếp thanh thế cực kỳ to lớn, vô số người qua đường ở phòng live stream người xem nhiệt tình an lợi hạ mơ mơ màng màng địa điểm trò chơi hẹn trước, hẹn trước nhân số thế nhưng trực tiếp phá một trăm triệu.</p>
+<p>Nhưng trò chơi định giá ra tới khi, các đại nhà máy hiệu buôn sôi nổi lắc đầu cảm khái sao trời đi rồi một bước sai cờ ——</p>
+<p>Bùi Tinh đem 《 ta trôi nổi đảo 》 định giá vì 1199!</p>
+<p>Phải biết, Bùi Tinh phía trước chế tác mấy khoản trong trò chơi, 《 Ma Viên 》199 tinh tệ, 《 nguyệt thỏ 》14 tinh tệ, 《 tiền giấy 》219 tinh tệ, 《 linh khí sống lại 》 dứt khoát miễn phí.</p>
+<p>Tuy nói 《 linh khí sống lại 》 khắc kim điểm nhiều, nhưng hoàn toàn không khắc kim người chơi cũng là có trò chơi thể nghiệm, chỉ là muốn gom đủ thẻ bài liền không khả năng.</p>
+<p>Sao trời trò chơi cho tới nay đều là người chơi thổi phồng “Lương tâm trò chơi chế tác tổ” đối tượng, chẳng lẽ Bùi ánh mắt thật sự như vậy thiển cận, tính toán đem cực cực khổ khổ bồi dưỡng rau hẹ một đợt cắt xong sao?</p>
+<p>Loại này ngôn luận cơ hồ nơi nơi đều là, ngay cả vẫn luôn duy trì sao trời người cũng có chút nghi hoặc.</p>
+<p>Trên thực tế, ở Bùi Tinh trong mắt, cái này định giá xem như thấp.</p>
+<p>Trong trò chơi có các loại đến từ một cái khác văn minh sáng tạo vật, Bùi Tinh thậm chí tiềm hạ tâm từng cái thực nghiệm xảy ra chuyện vật chế tác bản vẽ, bên trong bao hàm nhưng du ngoạn nội dung tuyệt đối so với bọn họ tưởng muốn nhiều đến nhiều, trò chơi tự do độ cũng cơ hồ bị kéo mãn.</p>
+<p>“Ta nghe qua một câu ngạn ngữ, kêu ‘ rượu thơm không sợ hẻm sâu ’.” Bùi Tinh đạm nhiên tự nhiên mà xẹt qua một chúng xướng suy ngôn luận, đối Sophia nói, “《 ta trôi nổi đảo 》 nhất định sẽ hỏa.”</p>
+<p>Ngày kế trò chơi diễn đàn nội</p>
+<p>[ có không ai có thể nói một chút sao trời tân trò chơi thế nào? Rốt cuộc được không chơi? Đáng giá hoa 1199 mua sao? ]</p>
+<p>Cái này thiệp vốn là trò chơi tuyên bố cùng ngày phát, nhưng mãi cho đến hôm nay mới có chơi qua trò chơi đại lão đến trả lời</p>
+<p>[ lâu như vậy đều không có người thượng tuyến tới giới thiệu, phỏng chừng đều là bị trò chơi mê hoặc, ta là vẫn luôn ngao tới rồi khoang thực tế ảo cảnh cáo mới ra tới. ]</p>
+<p>[ đầu tiên, ta là bị ngày hôm qua phòng live stream “Đàn tranh” hấp dẫn tới, đến nỗi đối trò chơi đánh giá ——《 ta trôi nổi đảo 》 thật sự thực tuyệt! 1199 giá trị tuyệt đối đến! ]</p>
+<p>[ bất quá làm một cái người chơi mới, trò chơi thể nghiệm cũng không có như vậy hữu hảo, Bùi Cẩu phát sóng trực tiếp vài thứ kia không tồn tại, sinh ra điểm căn bản chính là một mảnh núi hoang, người chơi một cái đào hố điền thổ mọi thứ tinh thông “Xẻng nhỏ” cùng một cái có thể sinh ra bất luận cái gì hạt giống vải bạt túi. ]</p>
+<p>[ người chơi sinh ra tức có được “Tra xét” kỹ năng, có thể hiểu biết NPC cơ sở tin tức cùng với đối người chơi hảo cảm độ, theo hảo cảm độ gia tăng, ở tại trên đảo nhỏ NPC sẽ mở ra nhưng thuê hình thức, cùng du thương giao dịch cũng sẽ càng thêm đơn giản. ]</p>
+<p>[ ta vận khí tương đối hảo, trồng trọt không bao lâu liền gặp phi hạc du thương, nghe nói loại này loài chim cũng kêu “Tiên hạc”, khí chất thật sự thực tiên ( xứng đồ.jpg ) ]</p>
+<p>[ ở du thương nơi đó ta hoa cơ hồ toàn bộ thân gia đổi lấy một phen tỳ bà cùng một trương tàn phá khúc phổ, chỉ có thể đàn tấu nửa đoạn trước, nhưng cái này âm sắc thật là tuyệt! Ghi hình đã phát tới rồi trên Tinh Võng, đại gia có hứng thú có thể đến xem. PS Trong video diễn tấu là hệ thống tiếp quản biểu diễn, ta bản nhân học được không nhanh như vậy. ]</p>
+<p>[ video liên tiếp ]</p>
+<p>Cái này thiệp nháy mắt đã bị trên đỉnh trang đầu</p>
+<p>[ tiên hạc hảo mỹ, tỳ bà cũng hảo hảo nghe, ma ma hỏi ta vì cái gì quỳ xem quang não……]</p>
+<p>[ du thương giới thiệu từ nói tỳ bà đàn tấu thanh âm là “Tiếng chói tai nhất thiết lẫn lộn đạn, hạt châu rơi trên mâm ngọc”, thật sự hảo mỹ, ta đột nhiên liền lý giải vì cái gì ta sẽ thích nó. ]</p>
+<p>[ phi hạc nói chính mình đến từ Hoa Hạ, Hoa Hạ là nào, chúng ta có thể đi sao? ]</p>
+<p>Ở đông đảo võng hữu trung, một vị soạn nhạc chuyên nghiệp học sinh lặp đi lặp lại nghe xong mấy lần trò chơi ghi hình trung tiếng nhạc, kích động mà đem video chia sẻ cho chính mình giáo thụ “Lão sư! Ngươi xem cái này nhạc cụ, có phải hay không thực phù hợp chúng ta phía trước muốn làm ra hiệu quả!”</p>
+<p>Tuổi già giáo thụ nheo lại đôi mắt “Tiếng nhạc thanh thúy, âm vực đủ quảng…… Cái này nhạc cụ tên gọi là gì?”</p>
+<p>“Là gần nhất tân ra một trò chơi nhạc cụ, nhưng trò chơi chế tác người cho bản vẽ, nói có thể ở trong hiện thực cũng làm ra tới.” Thấy lão giáo thụ có chút không tin bộ dáng, hắn chạy nhanh bổ sung nói, “Liền tính bản vẽ là giả, cũng có thể hướng hắn lãnh giáo một chút nhạc khúc hợp thành kỹ xảo.”</p>
+<p>Lão giáo thụ trầm ngâm “Cái này chỉ pháp cùng nhạc cụ kết cấu, thoạt nhìn không giống như là giả, vẫn là đi trước hỏi một chút đi.”</p>
+<p>Chút nào không biết trò chơi này khiến cho nhiều ít âm nhạc người yêu thích hoặc chuyên nghiệp nhân sĩ chú ý, theo đệ nhất sóng người chơi du ngoạn kết thúc, diễn đàn nhiều ra đủ loại kiểu dáng chia sẻ thiệp —— có chia sẻ chính mình tân kiến tạo tơ lụa công phường, có chia sẻ chính mình mới làm bánh chưng, còn có tình lữ hoặc bằng hữu đem tiểu đảo liên tiếp ở bên nhau cộng đồng kiến tạo.</p>
+<p>[ ta rất thích 《 ta trôi nổi đảo 》, ta cùng bạn trai gần nhất vẫn luôn dị tinh cầu, bình thường nói chuyện phiếm cũng sẽ không biết nói cái gì, nhưng 《 trôi nổi đảo 》 thật sự thực thích hợp hai người cùng nhau du ngoạn, hơn nữa ở trong trò chơi làm ruộng một chút đều không mệt! ]</p>
+<p>[ chúng ta một cái phòng ngủ người đều ở chơi trò chơi này! Trong hiện thực không thể trụ căn phòng lớn, chẳng lẽ ở trong trò chơi còn không được sao! ]</p>
+<p>[ vì cái gì! Trò chơi này vì cái gì sẽ cổ vũ trộm đồ ăn! Ta loại khoai tây không thấy, nhưng là không thể xác định là cùng ta cùng nhau chơi người trộm, vẫn là tiểu động vật trộm, hiện tại chỉ có thể vô năng cuồng nộ! ]</p>
+<p>[ trên lầu, ngươi khẳng định không có cùng quanh thân tiểu động vật đánh hảo quan hệ đi, thân mật giá trị mãn 60 sau là có thể thuê chúng nó cho ngươi xem đồng ruộng, loại nhỏ động vật còn sẽ trốn đi nhớ kỹ trộm ngươi đồ vật người trông như thế nào, chờ ngươi đã trở lại lại họa cho ngươi xem, chẳng qua khả năng có chút trừu tượng ( xứng đồ Cầm nhánh cây họa que diêm người đuôi to sóc ) ]</p>
+<p>[ ha ha ha ha ha giúp ngươi nhìn, nhưng là lại không hoàn toàn xem. ]</p>
+<p>Trừ bỏ cái thứ nhất đồng thời phát hiện “Tỳ bà” cùng “Khúc phổ” người chơi ngoại, ở 《 ta trôi nổi đảo 》 diễn đàn trung, nhân khí tối cao hẳn là liền số mỹ thực người yêu thích [ mây trắng từ từ ].</p>
+<p>Vị này người chơi nghe nói tự lần đầu tiên nếm thử quá nấu sau khi ăn xong, liền đối với du thương mang đến thực đơn sinh ra vô cùng hứng thú.</p>
+<p>Nhưng du thương mang đến bản vẽ phân loại thông thường là tùy cơ, vì thế mây trắng từ từ dứt khoát ở trên diễn đàn tuyên bố chính mình nguyện ý tinh tệ giao dịch đổi lấy thực đơn cùng thực phẩm xưởng bản vẽ thiệp, làm ngồi xổm hắn không có thực đơn người chơi kéo hắn tiểu đảo lại đây, hắn liền có thể trực tiếp cùng người khác trên đảo nhỏ du thương giao dịch.</p>
+<p>Hiện tại cùng mây trắng từ từ giao dịch người đều thích kêu hắn làm hai bữa cơm thỉnh chính mình cùng nhau ăn coi như là trả tiền, rốt cuộc mây trắng từ từ trong tay có không ít hi hữu thực đơn, này cũng không phải là tiêu tiền là có thể mua được.</p>
+<p>Hiện giờ người chơi trong miệng mây trắng từ từ tiểu đảo, đã biến thành thừa thãi mỹ thực mây trắng từ từ ăn uống cửa hàng, mọi người mỗi ngày cầu thần bái phật hy vọng có thể xoát ra một cái đại lão không có hi hữu thực đơn, hảo cũng nhấm nháp một chút Mãn Hán toàn tịch là cái gì tư vị.</p>
+<p>—— chính là ăn xong một đốn liền không còn có hạ đốn điểm này làm các người chơi có chút bất mãn.</p>
+<p>Loại này lợi dụng sơ hở thủ pháp làm Bùi Tinh nhìn dở khóc dở cười “Lại không phải về sau ăn không đến, này cũng quá chấp nhất đi!”</p>
+<p>Bất quá xen vào mây trắng từ từ ý tưởng vẫn là rất có ý tứ, Bùi Tinh dứt khoát chuyên môn cho hắn ban phát một cái đặc thù xưng hô ——</p>
+<p>[ mỹ thực đánh giá gia Có được 100 nói trở lên thực đơn nhưng đạt được này danh hiệu, đeo khi du thương hảo cảm độ tự động bay lên 5 điểm. ]</p>
+<p>Đừng nhìn cái này đạo cụ thoạt nhìn không có thực tế tác dụng, trên thực tế du thương hảo cảm độ là cùng bọn họ đã đến ngươi tiểu đảo tần suất móc nối, mây trắng từ từ điên cuồng bạo gan mua như vậy nhiều thực đơn, đeo xưng hô trước hảo cảm độ cũng gần 10 điểm.</p>
+<p>Đây là du thương, sở hữu người chơi đều không chiếm được NPC.</p>
+<p>Vừa lòng gật gật đầu, Bùi Tinh lại ở tân đổi mới phiên bản hạn chế một tháng nội tiểu đảo hoạt động số lần nhiều nhất vì ba lần.</p>
+<p>Rốt cuộc có ý tưởng về có ý tưởng, phía chính phủ vẫn là muốn kịp thời ngăn lại sao!</p>
+<p>Bất quá xen vào tinh tế người tố chất vẫn là thực không tồi, Bùi Tinh vẫn là cấp cái này người chơi để lại một cái khẩu tử, ở kế hoạch án thượng bay nhanh viết nói Vẫn chưa cùng người khác Liên Cơ người chơi có thể tự chủ lựa chọn chính mình hay không muốn tùy cơ xứng đôi đến những người khác tiểu đảo.</p>
+<p>Khiến cho mây trắng từ từ bài ăn uống tiểu đảo trở thành trong trò chơi một cái tùy cơ kinh hỉ đi!</p>
+<p>Quả nhiên, trò chơi đổi mới một phát ra, tùy cơ xứng đôi công năng ở trò chơi diễn đàn liền bị các người chơi nhiệt liệt thảo luận</p>
+<p>[ ta không có nhìn lầm đi! Máy rời người chơi có thể tùy ý xứng đôi những người khác trôi nổi đảo! ]</p>
+<p>[ hơn nữa tùy cơ xứng đôi tiểu đảo nhiều nhất chỉ có thể liên tiếp một tuần, thả khách nhân không thể ở chủ nhân trên đảo nhỏ trộm đồ ăn, a, không thể trộm đồ ăn nhân sinh còn có cái gì ý nghĩa. ]</p>
+<p>[ như vậy cũng khá tốt, bảo hộ người chơi, hơn nữa thật sự tưởng cùng đối phương vẫn luôn Liên Cơ nói, một vòng cũng đủ nói cho đối phương chính mình ID tự hào. ]</p>
+<p>[ cái này công năng hảo thực dụng! Trong hiện thực bằng hữu không chơi trò chơi này, nhìn người khác Liên Cơ hai cái trên đảo nhỏ vật tư như vậy phong phú thật là hâm mộ chết ta. ]</p>
+<p>Liền tại đây tràng oanh oanh liệt liệt xây dựng phong loại, này khoản ở đồng hành trong mắt tuyệt đối không có khả năng xoay người trò chơi, mới qua đi không đến hai chu, liền nhất cử đạt được 5800w doanh số!</p>
+<p>Đừng nhìn số lượng không tính nhiều, đại hình trò chơi định giá chú định nó không có khả năng trở thành toàn dân trò chơi, nhưng cùng phía trước những cái đó trò chơi so sánh với, 《 ta trôi nổi đảo 》 trở thành trò chơi giới danh xứng với thực máy in tiền, phong phú cách chơi cũng chú định nó trường thịnh không suy.</p>
+<p>Những người khác Nói như thế nào đâu, vả mặt số lần nhiều, giống như đã đã tê rần.</p>
+<p>Phía trước trò chơi còn có thể đơn giản trinh thám một chút Bùi Tinh ý tưởng, nhưng lần này bạo hỏa 《 ta trôi nổi đảo 》 làm cho bọn họ hoàn toàn không hiểu ra sao.</p>
+<p>Vì cái gì làm trò chơi muốn nơi chốn đều như vậy khảo cứu? Vì cái gì Bùi có thể nghĩ ra như vậy nhiều hoa hoè loè loẹt thức ăn cùng nhạc cụ? Còn có trầm hương cùng trà lại là thứ gì? Vì cái gì trò chơi hoàn toàn vứt bỏ chủ tuyến lại như cũ có thể đạt được người chơi yêu thích?</p>
+<p>Nhớ tới Bùi Tinh cái loại này Ta căn bản không để bụng ngươi cùng phong, bởi vì ta vĩnh viễn sẽ sáng tạo tiếp theo cái đầu gió thái độ, bọn họ liền càng thêm tới khí ——</p>
+<p>Chẳng lẽ bọn họ không nghĩ cũng làm ra tới một cái 《 trôi nổi đảo 》 sao! Tựa như thi không đậu Liên Bang đệ nhất trường quân đội người là bởi vì chính mình không nghĩ sao!</p>
+<p>Bất quá kết luận đã ra tới, trò chơi này phức tạp vượt qua cao, bọn họ căn bản phỏng ra tới đồng cấp trò chơi khác.</p>
+<p>Nhưng làm thấp xứng bản, đi ít lãi tiêu thụ mạnh chiêu số hẳn là vẫn là hành đến thông.</p>
+<p>Đương nhiên, các người chơi ở mặt khác trong trò chơi bị nhạt nhẽo vô vị đồ ăn làm đất giận ném dinh dưỡng dịch chuyện này chính là lời phía sau.</p>
+<p>Mà bên kia, ở ngắn ngủi nghỉ phép trung Bùi Tinh rốt cuộc thông qua Sior nhận được vị kia lão giáo thụ thông tin.</p>
+<p>Tuy rằng đoán trước đến sẽ có chuyên nghiệp nhân sĩ tìm tới cửa, nhưng không nghĩ tới tới nhanh như vậy Bùi Tinh kinh ngạc mà nhướng mày.</p>
+<p>Được đến Sior khẳng định hồi phục, Bùi Tinh quyết định một mình phó ước, rốt cuộc hắn cũng không thể mọi chuyện đều dựa vào Sior, tốt xấu kiếp trước cũng có 26 tuổi hảo đi!</p>
+<p>“Thật không nghĩ tới, tìm lâu như vậy, Bùi tiên sinh ngài cư nhiên ở tại Sior gia.” Lão giáo thụ ngậm cười lắc lắc đầu.</p>
+<p>Lão giáo thụ cùng Sior gia gia đã từng là bằng hữu, nhưng ở Sior bước lên tòng quân con đường sau liên hệ liền dần dần giảm bớt, vì thế cho tới bây giờ hắn mới phát hiện cái này trùng hợp.</p>
+<p>Bùi Tinh vội vàng xua tay “Không cần như vậy xưng hô ta, ta chỉ là một cái làm trò chơi.”</p>
+<p>Lão giáo thụ lắc đầu “Ngài quá mức khiêm tốn, ta nghiên cứu quá trong trò chơi tỳ bà cùng với đàn tranh chế tác bản vẽ, cũng ở trong hiện thực đã làm nếm thử, xác thật là được không.”</p>
+<p>“Có được như vậy bản vẽ lại hào phóng mà thông báo thiên hạ, Bùi tiên sinh định lực thật sự là làm ta tán thưởng.”</p>
+<p>Bùi Tinh cười cười “Bởi vì này cũng không phải ta sáng tạo ra đồ vật, đây là thuộc về Hoa Hạ văn minh trái cây, ta chỉ là đem này phục hồi như cũ một bộ phận thôi.”</p>
+<p>Lão giáo thụ có chút nghi hoặc “Hoa Hạ, là phi hạc tới địa phương sao? Cái này địa phương là chân thật tồn tại sao?”</p>
+<p>Bùi Tinh nói “Ai biết được, ngài có thể đem hắn làm như ta một hồi ảo mộng.”</p>
+<p>Nghe minh bạch Bùi Tinh ngụ ý, lão giáo thụ vẫn chưa cưỡng cầu, nói tiếp “Vô luận như thế nào giảng, ngài rõ ràng có thể lợi dụng này phân kỹ thuật làm càng nhiều chuyện, lại chỉ là vô cùng đơn giản mà đem này công bố ở trong trò chơi, loại này phẩm đức xác thật đáng giá ta khen ngợi.”</p>
+<p>“Hiện giờ, âm nhạc lĩnh vực thật lâu đều không có tân sức sống xuất hiện, ngài cung cấp này đó tư liệu chính là chúng ta một liều cường tâm châm.”</p>
+<p>“Bùi tiên sinh, ta lần này tới chính là tưởng hướng ngài đưa ra mời, xin hỏi ngài hay không nguyện ý đi vào Liên Bang Âm Nhạc Học viện, đảm nhiệm ta giáo danh dự giảng sư?”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong17.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong19.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "xuyen-qua-tinh-te-khong-phai-lam-nguoi-lam-tro-choi-ta-o-tinh-te-lam-tro-choi-phong-than";
+const NOVEL_TITLE = "Xuyên qua tinh tế không phải làm ngươi làm trò chơi / Ta ở tinh tế làm trò chơi phong thần";
+const CHAPTER_TITLE = "Chương 18";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

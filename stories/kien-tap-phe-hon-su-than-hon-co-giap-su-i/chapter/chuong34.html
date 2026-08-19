@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 34 tổ đoàn chơi trò chơi</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Kiến tập phệ hồn sư (Thần hồn cơ giáp sư I)
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 34 tổ đoàn chơi trò chơi</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong33.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong35.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Đại gia bàn ăn lễ nghi đều phi thường hảo, một đốn bữa ăn ngon ở hưởng thụ trung vượt qua.</p>
+<p>Cơm nước xong sau, bọn họ phao thượng một ly trà hoa, bắt đầu chậm rãi nói chuyện phiếm.</p>
+<p>“…… Cửu Nhật làm này bàn Đông Pha thịt, hương vị quá thuần khiết.” Bổn sâm chưa đã thèm. “Trước kia gia tộc bọn ta mời Hoa Quốc liệu lý đại sư, cũng làm quá Đông Pha thịt, chính là như thế nào ăn đều cảm thấy hương vị thiếu chút nữa, vừa rồi ăn Cửu Nhật làm, thiếu chút nữa cắn rớt đầu lưỡi. Vị thuần nước nùng, hương nhu không nị!”</p>
+<p>Đông Cửu Nhật bình tĩnh mà tiếp nhận rồi hắn tán dương. “Cảm ơn.”</p>
+<p>Hi Thụy tò mò hỏi “Học trưởng, này thịt vì cái gì kêu Đông Pha thịt?”</p>
+<p>Bổn sâm xoa khóe miệng du nước, thong thả ung dung mà nói “Bái ta mụ mụ ban tặng, ta đối Hoa Quốc đã lâu lịch sử tương đương có hứng thú. Nghe nói Đông Pha là danh hiệu, tên thật kêu Tô Thức, là 1400 nhiều năm trước người Hoa. Ngay lúc đó triều đại xưng Tống, hắn ở Hàng Châu làm thái thú, dẫn dắt dân chúng khơi thông Tây Hồ. Đúng rồi, các ngươi biết Tây Hồ sao? Ở Côn Bằng liên minh đông vùng duyên hải, phong cảnh thực mỹ, cổ nhân có ngôn, dục đem Tây Hồ so tây tử, nùng trang đạm mạt tổng thích hợp —— hảo đi, các ngươi không biết tây tử, tây tử chính là Tây Thi, Xuân Thu thời kỳ Việt Quốc người, tứ đại mỹ nhân chi nhất, tứ đại mỹ nhân biết không? Tây Thi, Vương Chiêu Quân, Điêu Thuyền, Dương Ngọc Hoàn bốn cái nữ nhân được xưng là Hoa Quốc cổ đại tứ đại mỹ nhân. Muốn nói này tứ đại mỹ nhân, kia kêu một cái mỹ a, cổ nhân lấy trầm ngư lạc nhạn, bế nguyệt tu hoa tới hình dung các nàng, biết cái gì là trầm ngư lạc nhạn, bế nguyệt tu hoa sao? Cái gọi là……”</p>
+<p>“Trọng điểm.” Winifred đột nhiên ra tiếng đánh gãy.</p>
+<p>Toàn bộ bàn ăn không khí hàng đến băng điểm.</p>
+<p>Hi Thụy cùng Nate sợ tới mức liên thủ đều không biết hướng nào bày, Đông Cửu Nhật không cấm nhìn về phía hắn, thật không có bị hắn khí thế trấn trụ.</p>
+<p>Caroll khóe miệng một câu, hoàn toàn không chịu ảnh hưởng.</p>
+<p>Bổn sâm nhún nhún vai, vẻ mặt vô tội. “Nếu các ngươi chơi Viractalia đại lục, sẽ biết. Có rảnh đi một chuyến kỳ lân đại lục, đó là lấy Hoa Quốc cổ đại vì bối cảnh, Tây Hồ biên có một cái nữ NPC kêu tô tiểu muội, cùng nàng đối thoại, là có thể nhận được một cái nhiệm vụ, làm xong nhiệm vụ này, các ngươi liền biết Tô Đông Pha sự tích, Đông Pha thịt điển cố cũng liền rõ ràng.”</p>
+<p>Những người khác ……</p>
+<p>Bổn sâm đôi tay một kích, tiếc nuối mà nói “Thiếu chút nữa đã quên, duy thụy khắc Terry, hai khối đại lục nửa năm mới khai một lần truyền tống, hiện tại không đến mở ra thời kỳ, các ngươi chỉ sợ tạm thời không cơ hội.”</p>
+<p>Bị hắn một gián đoạn, không khí lại lần nữa lung lay lên.</p>
+<p>Nếu cho tới trò chơi, Hi Thụy liền tới hứng thú. “Học trưởng, ngươi ở trong trò chơi là cái gì chức nghiệp?”</p>
+<p>“Hiệp khách.” Bổn sâm nhe răng cười. “Hệ thống cam chịu ta là người Hoa, cho nên ta sinh ra ở kỳ lân đại lục, cấp bậc đi lên sau, ta liền chuyển tới Angel đại lục.”</p>
+<p>“Oa, kia thật tốt quá, buổi tối online, ta tìm ngươi chơi.” Hi Thụy hưng phấn mà nói, “Nate, ngươi cũng cùng nhau đến đây đi. Chúng ta có thể tổ đội đi xoát ma vân quật, nghe nói nơi đó trang bị thực không tồi.”</p>
+<p>Nate gật gật đầu, không cấm nhìn về phía Winifred cùng Caroll. “Stoke học trưởng cùng Grace học trưởng cũng chơi sao? Buổi tối muốn hay không cùng đi?”</p>
+<p>Caroll lại không đáp, ngược lại hỏi một bên an tĩnh Đông Cửu Nhật. “Cửu Nhật chơi trò chơi sao?”</p>
+<p>Đông Cửu Nhật vẫn luôn an tĩnh mà nghe bọn hắn nói chuyện với nhau, nghe được hỏi hắn, hắn trả lời “Chơi.”</p>
+<p>“Oa, Cửu Nhật, ngươi cũng có chơi? Chúng ta một cái ký túc xá, ngươi cư nhiên đều không nhắc tới. A ha, ngươi cái gì chức nghiệp, có hay không tới Angel đại lục? Buổi tối chúng ta cùng nhau hành động đi!” Hi Thụy cao hứng đến quơ chân múa tay.</p>
+<p>Đông Cửu Nhật nói “Ta là huyền y chân nhân, mới từ kỳ lân đại lục chuyển phục đến Angel đại lục.”</p>
+<p>“Huyền y chân nhân? Kia không phải có thể phi thiên tu chân đạo sĩ sao?” Bổn sâm kinh ngạc mà nói. Huyền y chân nhân rất khó tu luyện, không có nghị lực, là không có cách nào phi thiên. Chỉ có phi thiên huyền y chân nhân, mới có thể xếp vào cao thủ hàng ngũ.</p>
+<p>“Phi thiên?” Nate khiếp sợ. “Học trưởng, ở kỳ lân đại lục, không cần mượn dùng đạo cụ hoặc rồng bay linh tinh là có thể phi thiên sao?”</p>
+<p>Bổn sâm nói “Cũng không thể trống rỗng phi hành lạp, yêu cầu một ít pháp khí linh tinh đạo cụ, tỷ như huyền y chân nhân là có thể ngự kiếm phi hành. Đúng không, Cửu Nhật?”</p>
+<p>“Đúng vậy.” Đông Cửu Nhật gật đầu.</p>
+<p>“Hảo bổng! Cửu Nhật, buổi tối nhất định phải cùng nhau chơi trò chơi!” Hi Thụy chờ mong mà nói.</p>
+<p>“Chúng ta có thể tổ cái đoàn.” Caroll đề nghị.</p>
+<p>“Hảo a! Hảo a!” Hi Thụy đôi tay tán thành.</p>
+<p>Đông Cửu Nhật thấy hắn như vậy hưng phấn, cự tuyệt nói ngạnh ở yết hầu đầu. Hắn nguyên kế hoạch là ở trong trò chơi tìm kiếm một cái thích hợp phát tài chi đạo, cũng không nghĩ ra đi đánh đánh giết giết. Chính cân nhắc, đột nhiên một đạo tầm mắt quét lại đây, hắn lập tức đón nhận đi, đối thượng Winifred sắc bén mắt vàng.</p>
+<p>Đông Cửu Nhật thần sắc bình tĩnh, không kiêu ngạo không siểm nịnh.</p>
+<p>Winifred tựa hồ ở xem kỹ hắn, xúc thượng hắn cặp kia như mặt nước thanh triệt đôi mắt, túc hạ mi, dời đi tầm mắt.</p>
+<p>Caroll đột nhiên chạm chạm hắn gác ở trên bàn tay, Đông Cửu Nhật sửng sốt, dục dời đi khi, lại bị cầm thật chặt.</p>
+<p>“Ta trò chơi nick name kêu Kyle, ngươi kêu gì?” Caroll ôn hòa hỏi.</p>
+<p>Đông Cửu Nhật nhìn chằm chằm tương nắm tay, chinh lăng.</p>
+<p>Tay giống bị điện xúc giống nhau, tê dại cảm duyên xuống tay cánh tay, một đường hướng lên trên leo lên, làm hắn đầu váng mắt hoa, nhưng vì không bị người khác nhìn ra hắn dị dạng, hắn bình tĩnh mà trả lời “Húc Nhật Đông Thăng.”</p>
+<p>“Buổi tối thượng tuyến thời điểm, thêm cái bạn tốt.” Caroll dường như không có việc gì mà buông ra hắn tay.</p>
+<p>Đông Cửu Nhật nhanh chóng mà bắt tay phóng tới bàn hạ, nắm thành nắm tay.</p>
+<p>“Cũng muốn thêm ta bạn tốt nga.” Hi Thụy nói, “Ta ở Viractalia đại lục kêu phỉ thụy đức, chức nghiệp là triệu hoán tinh linh.”</p>
+<p>“Ta là Vi nhĩ bá, mục sư.” Nate nói.</p>
+<p>“Ta còn là kêu bổn sâm, hiệp sĩ.” Bổn sâm nháy nháy mắt.</p>
+<p>“La ân, chiến sĩ.” Winifred nói.</p>
+<p>“Ách, ta cho rằng Stoke học trưởng sẽ chơi Thánh kỵ sĩ.” Hi Thụy kỳ quái mà nói.</p>
+<p>“Tại sao lại như vậy cho rằng?” Caroll hỏi hắn.</p>
+<p>Hi Thụy tao phía dưới, ngượng ngùng mà nói “Bởi vì Stoke học trưởng cơ giáp là Mal đức, tựa như Thánh kỵ sĩ giống nhau, có được phòng ngự tính chung, cho nên mới sẽ cho là như vậy.”</p>
+<p>“Nga, lúc trước tuyển chức nghiệp khi, ta trước tuyển Thánh kỵ sĩ, hắn cũng chỉ có thể chơi chiến sĩ.” Caroll cười tủm tỉm mà nói.</p>
+<p>“…… Như vậy a.”</p>
+<p>Mọi người lại trò chuyện chút đề tài, kết thúc lần này liên hoan. Buổi chiều cơ giáp thi đấu lập tức muốn bắt đầu rồi, mà Đông Cửu Nhật bọn họ ba cái tân sinh muốn chạy đến A khu đi học.</p>
+<p>Caroll phi thường săn sóc mà dùng xe bay đưa bọn họ đi A khu khu dạy học, lại chuyển đi Yale đấu trường.</p>
+<p>Ba cái tân sinh đứng ở khu dạy học trên quảng trường, ngẩng đầu nhìn không trung, nhìn đi xa xe bay, thần sắc khác nhau.</p>
+<p>Hi Thụy đôi tay phủng mặt, một bộ không dám tin tưởng bộ dáng. “Chúng ta thế nhưng cùng các học trưởng cùng nhau ăn bữa cơm.”</p>
+<p>Nate vẻ mặt chờ mong. “Tưởng nhanh lên biến cường, giống học trưởng giống nhau tham gia cơ giáp thi đấu.”</p>
+<p>Đông Cửu Nhật thu hồi tầm mắt, hướng khu dạy học đi đến, hắn tay phải vẫn luôn nắm thành nắm tay, không có buông ra.</p>
+<p>“Ai, Cửu Nhật, chờ một lát chúng ta.” Hi Thụy kéo Nate, đuổi theo.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong33.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong35.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "kien-tap-phe-hon-su-than-hon-co-giap-su-i";
+const NOVEL_TITLE = "Kiến tập phệ hồn sư (Thần hồn cơ giáp sư I)";
+const CHAPTER_TITLE = "Chương 34 tổ đoàn chơi trò chơi";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

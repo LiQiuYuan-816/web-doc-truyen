@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 6</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Xuyên qua tinh tế không phải làm ngươi làm trò chơi / Ta ở tinh tế làm trò chơi phong thần
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 6</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong5.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong7.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Tân duệ trò chơi đại tái bắt đầu mới ngày thứ ba, 《 Ma Viên 》 liền bạo, đại bạo đặc bạo.</p>
+<p>《 Ma Viên 》 thật kết cục trung, tiểu chu toàn thần, một mình một người gánh vác toàn bộ tuyệt vọng, từ đây lúc sau chỉ làm một cái khái niệm, tức vì vòng tròn chi lý vĩnh tồn, sở hữu đồng bạn cùng người nhà đều đem quên đi nàng tồn tại.</p>
+<p>Cái này kết cục bị Bùi Tinh an bài vì he kết cục, rốt cuộc mọi người đều tốt tốt đẹp đẹp mà lại sinh hoạt ở bên nhau, cũng không có ma nữ cùng ma pháp thiếu nữ tồn tại, tiểu viên cũng nói chính mình vĩnh viễn sẽ không tuyệt vọng.</p>
+<p>Nhưng thật là như vậy sao?</p>
+<p>Nhìn Tiểu Diễm với trong lúc ngủ mơ mơ hồ nhớ tới chính mình quan trọng người, nhìn khâu so như cũ không có rời đi thế giới này, thậm chí các thiếu nữ như cũ ở chỗ mặt khác tồn tại chiến đấu, người chơi lại trì độn cũng cảm nhận được trò chơi sau lưng ác ý.</p>
+<p>Vô pháp chạy thoát tuyệt vọng, không biết như thế nào mới có thể sửa đổi số mệnh, một cái lại một cái tuyệt vọng thiếu nữ cấu thành 《 Ma Viên 》.</p>
+<p>Tìm không thấy chế tác người các fan thông quan trò chơi sau nói hết dục bạo tăng, lại sợ quá mức thường xuyên mà ở công cộng trò chơi trên diễn đàn spam sẽ ảnh hưởng những người khác quan cảm, dứt khoát tự phát tổ kiến một cái 《 Ma Viên 》 người chơi diễn đàn, ở bên trong chia sẻ khởi chính mình mới nhất phát hiện trứng màu cùng cốt truyện phân tích.</p>
+<p>[ tiêu đề Toàn tuyến thông quan sau lựa chọn tiểu viên làm nhưng thao tác nhân vật, tránh đi Akemi Homura ký kết khế ước trở thành ma pháp thiếu nữ sẽ thế nào? ]</p>
+<p>[ lầu chính rt]</p>
+<p>[ ta đi thử, luôn là sẽ bị các loại cốt truyện sát chặn lại, chính là nói không ra chính mình tưởng hứa hạ nguyện vọng. ]</p>
+<p>[ nói ra liền tính ooc đi. ]</p>
+<p>[ lâu chủ Ta liền có việc rời đi một hồi, không nghĩ tới đại gia đã che lại nhiều như vậy lâu. ]</p>
+<p>[ lâu chủ Ta liền nói thẳng đi, cuối cùng một cái chu mục, khống chế tiểu viên ở Tiểu Diễm cùng ma nữ chi dạ thời điểm chiến đấu liền có thể trước tiên cùng khâu so ký kết khế ước. ]</p>
+<p>[ dựa, lâu chủ cũng quá độc ác, ngươi sấn Tiểu Diễm thời điểm chiến đấu trộm gia a! ]</p>
+<p>[ mau nói mặt sau thế nào! Không được điếu người ăn uống! ]</p>
+<p>[ lâu chủ Thực nghiệm kết quả chính là, tiểu viên trước tiên hứa hạ nguyện vọng chỉ là đả đảo ma nữ chi dạ, hơn nữa sau khi biến thân cũng cùng thành thần trang phẫn không giống nhau, thoạt nhìn chỉ là bình thường ma pháp thiếu nữ, vũ khí là hoa hồng chi làm thành cung tiễn, bất quá cũng cường đến có thể nhất kiếm sát xuyên ma nữ chi dạ là được. ]</p>
+<p>[ chia sẻ video liên tiếp ]</p>
+<p>[ ta dựa dựa dựa, ta nhớ ra rồi, phía trước đã từng nói qua ma pháp thiếu nữ hứa hạ nguyện vọng sẽ cùng các nàng năng lực có quan hệ. Tỷ như sa gia hương hứa hạ nguyện vọng là làm chính mình yêu thầm người khôi phục khỏe mạnh, đối ứng nàng chính mình chính là khôi phục lực cường đại. Học tỷ là hy vọng có thể sống sót, cho nên sức chiến đấu cường đại. ]</p>
+<p>[ nguyện ý gánh vác nhiều ít số mệnh liền sẽ đạt được nhiều ít lực lượng sao…… Ta giống như đã hiểu ( gào khóc ) ]</p>
+<p>[ kỳ thật Bùi Cẩu tặc không có nói sai, trò chơi chủ đề xác thật là ái cùng ma pháp. Cách vách có cái đại lão, đánh ra tiểu chu toàn thần kết cục sau khống chế Tiểu Diễm ở trên phố lung lay một vòng, trùng hợp gặp được tiểu viên mụ mụ. ]</p>
+<p>[ tiểu viên mụ mụ chính là người thường, vốn dĩ cũng nên quên chính mình nữ nhi, kết quả ở Tiểu Diễm cùng nàng đáp lời sau chủ động nói chính mình tổng cảm thấy chính mình hẳn là còn có cái nữ nhi, hơn nữa chính mình khẳng định sẽ cho nữ nhi mang lên Tiểu Diễm trên đầu vật trang sức trên tóc. ]</p>
+<p>[ ta khóc bạo a, Tiểu Diễm trên đầu dải lụa chính là viên thần đưa cho nàng! ]</p>
+<p>[《 Ma Viên 》 thật sự quá tuyệt, cốt truyện hoàn hoàn tương khấu, ở nó xuất hiện trước ta chưa từng có nghĩ tới chỉ có tiểu hài tử sẽ thích ma pháp thiếu nữ cư nhiên còn có loại này giải pháp. Tác giả nói không sai, muốn thực hiện một cái không có khả năng kỳ tích, như thế nào sẽ không cần gánh vác tương ứng tuyệt vọng đâu? ]</p>
+<p>[《 Ma Viên 》 hiện tại đã xông lên đệ nhị, các huynh đệ hướng a! ]</p>
+<p>Mà bên kia, tàu thuỷ kỳ hạ tân phòng làm việc trò chơi chủ chế tác người Simon chính vẻ mặt tối tăm mà lật xem trên mạng thổi phồng 《 Ma Viên 》 ngôn luận.</p>
+<p>—— nói đến này, liền không thể không giới thiệu một chút tam đại công ty game.</p>
+<p>Đầu tiên là tư lịch già nhất Phi Ưng, Phi Ưng kỳ hạ đại hình game thực tế ảo nhiều đếm không xuể, cách chơi nhiều tương đối ngạnh hạch, có không ít thích nghiên cứu kỹ thuật fan trung thành.</p>
+<p>Lúc này đây Phi Ưng phái ra tân phòng làm việc tác phẩm, trải qua liên tục hai tháng tuyên phát, Phi Ưng chính mình phát sóng trực tiếp ngôi cao kỳ hạ chủ bá mở rộng, vừa online liền vững vàng chiếm cứ đệ nhất vị trí, 《 Ma Viên 》 tạm thời cũng không có muốn vượt qua đối phương xu thế, phỏng chừng bọn họ đang ở vui tươi hớn hở mà xem mặt khác hai nhà chê cười.</p>
+<p>Tiếp theo chính là bằng vào 《 trùng động 》 ngang trời xuất đạo mười sáu, mười sáu cái này kỳ quái tên nghe nói là bởi vì người sáng lập thích ăn thạch lựu, lại sợ trực tiếp kêu thạch lựu giống cái gì gà rừng công ty, dứt khoát nổi lên cái hài âm mười sáu.</p>
+<p>Mười sáu đoản bản cũng thực rõ ràng, tuy rằng bọn họ mỗi lần đều có thể đẩy ra mới lạ điểm tử, nhưng chế tác game thực tế ảo thật sự là quá thiêu tiền, mười sáu ở trò chơi chế tác trung đầu nhập càng nhiều, có thể làm tuyên phát liền càng ít.</p>
+<p>Cùng Phi Ưng mỗi ra một cái trò chơi liền che trời lấp đất mà tuyên phát bất đồng, mười sáu thông thường chỉ là ý tứ ý tứ tuyên truyền một chút, dư lại liền dựa fans nước máy.</p>
+<p>Mà tam đại công ty trung, nhất lệnh người chán ghét chính là tàu thuỷ. Tàu thuỷ không có gì chính mình đồ vật, làm trò chơi toàn dựa từ đồng hành nơi đó chắp vá lung tung, nhất ngưu chính là hắn mỗi lần còn đều có thể khống chế tốt một cái người khác thưa kiện đánh không thắng độ, vừa hỏi chính là tham khảo, kính chào.</p>
+<p>Phi Ưng cùng mười sáu còn hảo, mặt khác trung tiểu công ty không biết bị bọn họ loại này cùng phong sao chép cách làm hủy diệt rồi nhiều ít, rốt cuộc rất nhiều fans cũng không chú ý này đó, bọn họ chỉ nghĩ chơi kiến mô càng thêm tinh tế, nội dung càng thêm phong phú trò chơi.</p>
+<p>Cũng là bởi vì này, tàu thuỷ không biết tích góp nhiều ít trò chơi người yêu thích cùng trò chơi người hành nghề tức giận, hiện giờ nhìn đến tàu thuỷ trò chơi 《 a nhĩ khoa tư 》 bị tễ hạ tiền tam, đều nhịn không được cười lên tiếng.</p>
+<p>Khắp chốn mừng vui a! Tân nhân trò chơi chế tác người hung hăng đánh tàu thuỷ mặt!</p>
+<p>“Simon, ngươi 《 a nhĩ khoa tư 》 đã xếp hạng thứ 4, đây là ngươi nói có thể lao tới quán quân đại chế tác?” Simon quang não vang lên, thông tin đối diện người không khách khí mà nói, “Ta không muốn nghe ngươi họa những cái đó bánh, tuyên phát tài nguyên đều cho ngươi, nếu là liền tiền tam đều vào không được, ngươi liền trực tiếp cuốn gói cút đi!”</p>
+<p>Đối diện không chút khách khí mà cắt đứt thông tin, chỉ dư Simon một người đỏ mắt, thở hổn hển “Bùi! Bùi!”</p>
+<p>“Súng bắn chim đầu đàn, nếu ngươi như vậy, kia cũng đừng trách ta bất nghĩa!”</p>
+<p>Chờ Bùi Tinh rốt cuộc bước lên chính mình phòng làm việc tài khoản, chen chúc tới tin tức nhắc nhở cơ hồ làm công nghệ cao quang não đều tạp một cái chớp mắt.</p>
+<p>“Xem ra người chơi đối ta trò chơi đánh giá đều không tồi nha.”</p>
+<p>Mạnh mẽ xem nhẹ rớt fans kêu rên, Bùi Tinh cười sờ sờ cằm, thuận tay biên tập một cái tin tức gửi đi đến sao trời phòng làm việc quan hào thượng</p>
+<p>[ đại gia hảo, ta là 《 Ma Viên 》 chế tác người Bùi, cảm ơn đại gia có thể thích ta trò chơi, cũng hy vọng về sau sao trời phòng làm việc sẽ cho đại gia mang đến càng nhiều vui sướng. ]</p>
+<p>Lập tức liền có người hồi phục nói</p>
+<p>[ Bùi Cẩu tặc, ngươi thật sự cảm thấy ngươi mang đến vui sướng sao? ]</p>
+<p>Bùi Tinh buồn cười, dứt khoát cấp này bình luận điểm cái tán.</p>
+<p>Không thể tưởng được đi, chế tác người hắn không chỉ có không có nghĩ lại, hắn còn cảm thấy thật sự là quá tán.</p>
+<p>Xẹt qua liên tiếp bình luận, Bùi Tinh rốt cuộc lại tìm được rồi một cái chính mình cảm thấy hứng thú</p>
+<p>[《 Ma Viên 》 sẽ có 2 sao? Một người huyết thư cầu kế tiếp! ]</p>
+<p>Bùi Tinh dứt khoát ở dưới kịch thấu một chút [ đại khái đối kế tiếp có ý tưởng, nhưng không phải gần nhất ra, khả năng phải đợi một đoạn thời gian, ta tiếp theo cái muốn làm một cái ấm áp trò chơi nhỏ, khả năng không phải thực tế ảo, cho đại gia điều hòa một chút tâm tình. ]</p>
+<p>Nhìn đến “Ấm áp” này hai chữ, người chơi cơ hồ là phản xạ có điều kiện mà nhớ tới 《 Ma Viên 》 tóm tắt trung cơ hồ làm cho bọn họ hoạn thượng ma pháp thiếu nữ PTSD “Ái cùng ma pháp”, nhịn không được run lập cập.</p>
+<p>Một lần bị rắn cắn, mười năm sợ dây thừng, Bùi Tinh thoải mái hào phóng mà đem chính mình tiếp theo cái trò chơi phương hướng kịch lộ ra tới, lại căn bản không ai tin tưởng, ngược lại suy đoán nổi lên vì cái gì sao trời phòng làm việc khả năng không hề làm game thực tế ảo.</p>
+<p>Đừng nhìn Bùi Tinh nói được như vậy ba phải cái nào cũng được, trên thực tế hắn liền tiếp theo cái trò chơi cụ thể làm cái gì loại hình đều đã nghĩ kỹ rồi.</p>
+<p>Ở trong khoảng thời gian này nghỉ ngơi trung, Bùi Tinh cũng sưu tập không ít về tinh tế thời đại trò chơi tri thức</p>
+<p>Tỷ như sở dĩ trên quang não phi thực tế ảo truyền thống trò chơi thị trường như thế tiêu điều, chủ yếu là bởi vì ở trường kỳ trong chiến tranh, quang não bị làm được càng ngày càng nhỏ dễ dàng mang theo, cũng vứt bỏ cồng kềnh thật thể màn hình, ngược lại sử dụng màn hình ảo.</p>
+<p>Tại đây loại quang bình thượng chơi game căn bản không có bất luận cái gì xúc cảm đáng nói, hơn nữa game thực tế ảo càng thích hợp người chơi toàn thân tâm đắm chìm nhập trong trò chơi, cũng có thể lý giải vì sao nhà phát triển game cùng người chơi sẽ không hẹn mà cùng mà lựa chọn game thực tế ảo.</p>
+<p>Mà ở trong đầu nhét đầy các loại hiếm lạ cổ quái ý tưởng Bùi Tinh trong mắt, đây là một mảnh chưa bị khai phá bảo địa!</p>
+<p>Tinh tế người chẳng lẽ là có thể tùy thời tùy chỗ chơi game thực tế ảo sao? Đáp án là không.</p>
+<p>Game thực tế ảo khoang giống nhau chỉ tồn tại với chính mình trong nhà, cùng bên ngoài mạng thực tế ảo đi, mà tinh tế nhân dân ở trên đường, ở làm công khi đại bộ phận thời gian, có thể sử dụng chỉ có quang não.</p>
+<p>Mà Bùi Tinh mục tiêu chính là chế tác một khoản có thể làm tinh tế người ở ngồi xe thời điểm chơi một chút, chờ người thời điểm chơi một chút, thậm chí công tác sờ cá thời điểm cũng trộm chơi một chút hưu nhàn đặt loại trò chơi nhỏ!</p>
+<p>Cùng loại Bùi Tinh kiếp trước bạo hỏa 《 lữ hành ếch xanh 》, chính là người chơi ở di động dưỡng một con tiểu ếch xanh, đương ngươi mở ra APP khi, tiểu ếch xanh khả năng sẽ ở nhà đọc sách, khả năng đang ngủ, cũng có thể ra xa nhà lữ hành.</p>
+<p>Trò chơi tiết tấu rất chậm, ở tiểu ếch xanh ra cửa khi, người chơi chỉ có thể ở nhà chờ nhãi con trở về, hoặc là cho chính mình gửi tới một trương bưu thiếp, dẫn tới người chơi một lần xưng hô chính mình vì ở nhà chờ chính mình hài tử lão mẫu thân.</p>
+<p>《 lữ hành ếch xanh 》 cũng không có gì nhiệm vụ chủ tuyến, nhưng thao tác không gian cũng rất nhỏ, nhưng chính là làm người quá một hồi liền nhịn không được click mở nhìn xem, phảng phất chính mình thật sự dưỡng một cái sủng vật.</p>
+<p>Trò chơi này bạo hỏa làm một ít người không hiểu ra sao, nhưng ở Bùi Tinh trong mắt, đây đúng là bởi vì hiện đại người mỏi mệt tâm lý yêu cầu một cái ấm áp cảng tới chữa khỏi duyên cớ.</p>
+<p>Thậm chí còn càng sớm một chút □□ sủng vật, cũng là cùng loại kịch bản.</p>
+<p>Mà Bùi Tinh hiện tại liền muốn làm một cái trò chơi, làm tinh tế người cũng cảm thụ một chút ở chính mình quang não dưỡng nhãi con tâm tình!</p>
+<p>Bùi Tinh linh cảm như suối phun, lập tức điều ra chính mình quang não tự mang ký sự bổn, điên cuồng ghi nhớ chính mình tân ý tưởng ——</p>
+<p>Quyết định! Tại hạ một cái game thực tế ảo chế tác án ra tới trước, liền trước làm một cái trò chơi nhỏ cho đại gia điều hòa một chút đi!</p>
+<p>Mà ký sự bổn bìa mặt thượng, thình lình viết bốn cái chữ to 《 nguyệt thỏ nhà 》.</p>
+<p>--------------------</p>
+<p>Tác giả có lời muốn nói</p>
+<p>Luyến ái trò chơi phải đợi 《 nguyệt thỏ 》 làm xong mới có thể làm! Bởi vì vai chính có thể cọ Tân Duệ Đại Tái đệ nhất nhiệt độ tuyên truyền! Tiểu khả ái không nên gấp gáp nga ~</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong5.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong7.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "xuyen-qua-tinh-te-khong-phai-lam-nguoi-lam-tro-choi-ta-o-tinh-te-lam-tro-choi-phong-than";
+const NOVEL_TITLE = "Xuyên qua tinh tế không phải làm ngươi làm trò chơi / Ta ở tinh tế làm trò chơi phong thần";
+const CHAPTER_TITLE = "Chương 6";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

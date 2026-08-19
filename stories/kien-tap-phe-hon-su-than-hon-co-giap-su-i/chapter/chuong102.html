@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 102 cơ giáp biên trình cùng biến mất trò chơi giao diện</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Kiến tập phệ hồn sư (Thần hồn cơ giáp sư I)
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 102 cơ giáp biên trình cùng biến mất trò chơi giao diện</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong101.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong103.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Hải, các nam hài, các ngươi ở quan hệ hữu nghị sao?” Thành niên nam tử thanh âm giống ma chú, đánh vỡ này quỷ dị trường hợp.</p>
+<p>Tất cả mọi người hồn về bản thể, căng chặt thân thể một thả lỏng, nằm liệt ngồi ở trên ghế, mồ hôi lạnh ứa ra.</p>
+<p>“Cook giáo thụ!” Á tác kinh hô.</p>
+<p>Vừa rồi cũng không biết là chuyện như thế nào, đột nhiên tiến vào chuẩn bị chiến tranh trạng thái, phụ cận giống như có mãnh thú nguy hiểm. Những người khác đều là một bộ sống sót sau tai nạn biểu tình, xem ra cùng hắn cảm giác không sai biệt lắm.</p>
+<p>Hi Thụy đám người đã chịu cảm giác áp bách tuy rằng không có đối diện người mãnh liệt, nhưng cũng không dám thả lỏng. Bọn họ là cơ giáp chiến sĩ hậu bị viên, tinh thần lực cấp bậc cao hơn người thường, nhưng ở Đông Cửu Nhật tinh thần lực bao phủ hạ, thế nhưng sẽ khẩn trương. Này thuyết minh cái gì? Đông Cửu Nhật tinh thần lực cấp bậc cao hơn bọn họ!</p>
+<p>“Cook đầu bếp trưởng.” Đông Cửu Nhật thu liễm tinh thần lực, khôi phục bình thường, bình tĩnh về phía tóc vàng lục mắt kéo phu nhĩ? Cook chào hỏi.</p>
+<p>Tư duy đứng dậy, lễ phép về phía kéo phu nhĩ hành lễ, giấu ở bàn hạ tay, run nhè nhẹ, màu lam trong mắt có chút vô hạn chờ mong cùng khát vọng.</p>
+<p>“Ta đang ở chân thành thỉnh cầu Đông Cửu Nhật đồng học gia nhập liệu lý bộ đâu.”</p>
+<p>Kéo phu nhĩ cười tủm tỉm mà nói “Thì ra là thế, ta cho rằng các ngươi ở tương thân đâu, ha ha.”</p>
+<p>“Tương thân? Cook giáo thụ, ngươi đang nói cái gì a!” Lôi kêu to. Gì ánh mắt, rõ ràng bọn họ hai bên ở phân cao thấp, như thế nào liền thành tương thân? Nói nữa, đối diện người đều là nam sinh, hắn thích chính là muội tử, căn bản không có khả năng cùng nam sinh tương thân.</p>
+<p>“Ha hả, vừa rồi các ngươi không khí rất tốt đẹp, đều phải sát ra hỏa hoa, làm người không hiểu lầm đều khó.” Kéo phu nhĩ nhún nhún vai. Kỳ thật, hắn ở nơi xa xem một hồi lâu, nếu không phải cảm thấy ra hơi thở nguy hiểm, là sẽ không ra tới đánh vỡ cục diện bế tắc.</p>
+<p>Lúc ấy, Đông Cửu Nhật trên người phát ra nhiếp nhân khí thế, liền hắn đều cảm thấy trong lòng run sợ.</p>
+<p>“Như vậy, Cửu Nhật, ngươi hồi đáp đâu?” Kéo phu nhĩ tò mò hỏi Đông Cửu Nhật.</p>
+<p>Thiếu chút nữa mất khống chế tinh thần lực, liền Đông Cửu Nhật chính mình đều có điểm sợ hãi, nếu không phải Cook đầu bếp trưởng ra tới đánh gãy, hắn khả năng thật sự khống chế không được nảy sinh “Muốn ăn.”</p>
+<p>“Thực xin lỗi.” Đông Cửu Nhật ôn hòa mà nhìn về phía tư duy. Rời xa cực phẩm mỹ vị dụ hoặc, là hắn trước mắt duy nhất có thể làm.</p>
+<p>“Quá…… Quá tiếc nuối……” Tư duy ảm đạm thần thương, liền tóc bạc đều không ánh sáng màu.</p>
+<p>“Tư duy!” Hắn đồng bạn lo lắng mà nhìn hắn. Tại sao lại như vậy? Tới phía trước, bọn họ đã sớm đoán trước đến Đông Cửu Nhật khả năng sẽ cự tuyệt, nhưng tư duy phản ứng quá kỳ quái! Vẫn luôn là bọn họ trung tâm nhân vật tư duy, từ trước đến nay định liệu trước, gặp được suy sụp cũng không cúi đầu. Chính là, hiện giờ lọt vào cự tuyệt, hắn thế nhưng đã chịu đả kích.</p>
+<p>“Không có việc gì.” Tư duy miễn cưỡng mà cười cười, trấn an đồng bạn.</p>
+<p>“Xác thật tiếc nuối.” Kéo phu nhĩ thân chịu đồng cảm. Một cái liệu lý thiên tài, lại là cơ giáp sinh, quá tiếc nuối!</p>
+<p>“Nếu không có cái khác sự, chúng ta trước rời đi.” Đông Cửu Nhật đối tư duy nói.</p>
+<p>“Gặp lại.” Tư duy ôn nhu mà chăm chú nhìn hắn. “Ta chờ mong ngươi hồi tâm chuyển ý một ngày.”</p>
+<p>Cư nhiên còn chưa từ bỏ ý định.</p>
+<p>“Tái kiến.” Đông Cửu Nhật đồng thời triều kéo phu nhĩ gật đầu, mang theo Hi Thụy chờ ba người dẫn đầu rời đi nhà ăn.</p>
+<p>Nhìn bọn họ biến mất ở cửa bóng dáng, tư duy lộ ra lưu luyến thần sắc.</p>
+<p>“Ân?” Kéo phu nhĩ vẻ mặt hoang mang. Hắn đắc ý môn sinh trạng huống có điểm không thích hợp đâu.</p>
+<p>Tư duy thở dài, đối kéo phu nhĩ nói. “Cook giáo thụ, như vậy, chúng ta cũng đi về trước, buổi chiều còn có khóa.”</p>
+<p>“Đi thôi, đừng đến trễ.”</p>
+<p>“Giáo thụ, tái kiến.” Những người khác lần lượt chào hỏi qua, đi theo tư duy mặt sau, rời đi nhà ăn.</p>
+<p>Kéo phu nhĩ sờ sờ cằm.</p>
+<p>Ra nhà ăn, lôi gấp không chờ nổi mà truy vấn tư duy. “Vì cái gì?”</p>
+<p>“Cái gì?” Tư duy nghi hoặc.</p>
+<p>“Ngươi biết ta hỏi cái gì!” Lôi quát khẽ.</p>
+<p>“Lôi!” Á tác đè lại lôi bả vai.</p>
+<p>Lôi kích động mà đẩy ra á tác tay. “Từ trước đến nay tôn quý bộ trưởng lại đối một cái bình dân ăn nói khép nép mà nói thỉnh cầu, kẻ hèn một cái bình dân cư nhiên dám cự tuyệt bộ trưởng, hắn cho rằng hắn là ai!”</p>
+<p>“Lôi ——”</p>
+<p>Tư duy dừng lại bước chân, quay đầu lại xem hắn, sắc bén lam mắt như duệ kiếm, bộc lộ mũi nhọn.</p>
+<p>Lôi bị hắn ánh mắt chấn trụ. Vì cái gì, tư duy dùng như vậy đáng sợ ánh mắt xem hắn. Hắn nói sai rồi cái gì?</p>
+<p>“Bội ti ——” hắn quay đầu nhìn về phía bội ti, xin giúp đỡ.</p>
+<p>“Ngu ngốc!” Bội ti gõ một cái hắn trán.</p>
+<p>“Tư duy.” Lâm trác quân lo lắng mà nhẹ kêu một tiếng.</p>
+<p>Á tác thở sâu, đối tư duy nói “Ta cũng muốn biết, vì cái gì.”</p>
+<p>Tư duy nhìn chung quanh bọn họ, cuối cùng ngẩng đầu nhìn trời không.</p>
+<p>“Chúng ta từ lựa chọn tiến vào gia chính hệ khởi, liền chú định tương lai đem có một cái cam tâm tình nguyện muốn đi theo chủ nhân. Chúng ta chưa bao giờ tôn quý quá, chân chính tôn quý chính là tương lai chủ nhân. Chính là các ngươi nghĩ tới không có, chủ nhân không nhất định là quan to hiển quý, có lẽ là các ngươi khinh thường bình dân. Quan trọng là cảm giác. Các ngươi biết không? Liền ở vừa rồi, ta cảm thấy chủ nhân của ta buông xuống!”</p>
+<p>Tư duy tay phải ấn ở trái tim khẩu, thân thể kích động mà phát run, trên mặt toát ra hưởng thụ biểu tình.</p>
+<p>“Cường đại lại có xâm lược tính tinh thần lực, là như vậy lệnh người sợ hãi, nhưng cái loại này sợ hãi lại làm ta cảm thấy hạnh phúc, ta thậm chí khát vọng hắn chà đạp thân thể của ta.”</p>
+<p>“Đương hắn hắc mắt nhìn ta khi, ta cả người đều run rẩy, vui vẻ chịu đựng mà dâng lên ta linh hồn, trở thành hắn người hầu, xé rách cũng hảo, cắn nuốt cũng thế, chỉ nghĩ cầu xin chủ nhân trìu mến.”</p>
+<p>“Cái loại này lập tức sẽ mất đi tự mình cảm giác, giống bụi gai quấn quanh thân thể của ta, bị thương thương tích đầy mình, cũng vô oán vô hối.”</p>
+<p>“Tư duy!”</p>
+<p>Những người khác không dám tin tưởng, như vậy tư duy là bọn họ chưa bao giờ gặp qua, như thiêu thân lao đầu vào lửa, như thế hèn mọn, như thế chấp nhất.</p>
+<p>Gió nhẹ phất quá hắn màu bạc sợi tóc, tư duy nhắm mắt lại, chậm rãi lộ ra một mạt ôn nhu cười.</p>
+<p>“Ta, tuyệt đối, tuyệt đối sẽ không từ bỏ! Chủ nhân của ta.”</p>
+<p>Tại sao lại như vậy? Chẳng qua là thấy một mặt, khiến cho bọn họ bộ trưởng đánh mất tự mình. Đông Cửu Nhật, có tài đức gì, làm tư duy phụng hắn là chủ. Nhưng mà, bọn họ biết, tư duy đã luân hãm.</p>
+<p>Bọn họ mỗi người tương lai đều sẽ luân hãm.</p>
+<p>Ma Wei học viện gia chính hệ không phải bình thường gia chính hệ, nơi này bồi dưỡng chung cực quản gia là muốn cùng chủ nhân định khế ước, chung thân vì phó, vĩnh không phản bội, chủ nhân hết thảy chính là bọn họ sở hữu, mặc kệ chủ nhân là phú quý, là bần cùng, là cao quý, là đê tiện, bọn họ đều đem đi theo nhất sinh nhất thế.</p>
+<p>Đây là bọn họ vinh quang, cũng là bi ai.</p>
+<p>Cho nên, vô pháp kiên trì người, ở năm 3 khi liền sẽ chuyển hệ, mỗi người chỉ có một lần cơ hội.</p>
+<p>Tư duy năm 3, hắn vốn có cơ hội lựa chọn, chính là hắn thế nhưng ở hôm nay, gặp gỡ vận mệnh chi chủ.</p>
+<p>Thật không hiểu nên vì hắn cao hứng vẫn là khổ sở.</p>
+<p>Bởi vì, hắn chủ nhân…… Cự tuyệt hắn.</p>
+<p>————————</p>
+<p>Kinh tâm động phách rồng ngâm tiếng vang triệt toàn bộ tổng thống phòng xép, màu tím phù văn ở không trung hiện lên, cự long dữ tợn đầu tự phù trận vụt ra, miệng rộng một trương, một ngụm cắn nuốt áo bào trắng pháp sư.</p>
+<p>3D giả thuyết video lặp lại truyền phát tin, ngồi ở trên sô pha thanh niên tóc đen ở màn hình ảo thượng không ngừng điểm, đương nhìn đến nào đó trang web khi, hắn dừng lại động tác, nghiêm túc mà nhìn lên.</p>
+<p>“Thánh Triết, ngươi có đang nghe ta nói chuyện sao? Ngươi nơi đó là cái gì thanh âm, hảo sảo.”</p>
+<p>Thanh niên trên cổ tay phân biệt khí truyền ra một người nam nhân hồn hậu thanh âm.</p>
+<p>“Là trò chơi video, ngươi ngày hôm qua truyền cho ta.” Thanh niên trả lời, hắn thanh âm như nước chảy đánh thạch, thanh minh uyển dương.</p>
+<p>“Lặp lại truyền phát tin có ý tứ? Vẫn luôn nghe kia rác rưởi pháp sư tiếng kêu thảm thiết, không chê khái sầm sao?”</p>
+<p>“Khó được vật nhỏ không kiêng dè trên mặt đất truyền giết người video, có thể thấy được tức giận đến không nhẹ.” Thanh niên sung sướng mà cười.</p>
+<p>“A, sấn chúng ta không ở, kia vật nhỏ cư nhiên dám trộm vượt khu chạy.” Nam nhân thanh âm giơ lên, ẩn hàm tức giận.</p>
+<p>“Không chạy chờ bị chúng ta bang hội đuổi giết luân bạch sao?” Thanh niên tắt đi video, trong phòng rốt cuộc an tĩnh.</p>
+<p>“Vật nhỏ quá quật cường, thề sống chết không gia nhập chúng ta bang hội, ta đành phải chủ động điểm.”</p>
+<p>“Quá chủ động, hậu quả chính là người từ kỳ lân đại lục chạy đến Angel đại lục. Ngươi phong bế huấn luyện ba tháng, ta đâu, đang ở khai toàn cầu lưu động buổi biểu diễn, hôm qua mới kết thúc, rốt cuộc có thể nghỉ ngơi nửa tháng.”</p>
+<p>“Ta ra tới cũng mới ba ngày, lão nhân quả thực không đem ta đương người, suốt ba tháng mới buông tha ta! Ta trước tiên muốn lên trò chơi, server cư nhiên giữ gìn!”</p>
+<p>“Chiều nay ba điểm khai phục, còn có hai giờ, không vội không vội.” Thanh niên đứng dậy đi trong phòng quầy rượu quầy bar cho chính mình đổ ly rượu vang đỏ.</p>
+<p>“Ta liền chờ khai phục, ta muốn đem cả cái bang hội đều chạy đến Angel đại lục, xem hắn chạy đi đâu.” Nam nhân thanh âm tràn ngập tà ác. Bang hội có mấy vạn thành viên, toàn vượt phục dịch đến Angel đại lục đi, tiếp tục đuổi bắt kia tiểu phá hài, làm hắn không chỗ có thể trốn, không chỗ nhưng trốn.</p>
+<p>“Diệu, ngươi càng là truy khẩn, hắn trốn càng xa.” Thanh niên nhắc nhở người yêu. “Còn có, ngươi như vậy chấp nhất với một người khác. Không sợ ta ghen?”</p>
+<p>“Ngươi ghen?” Nam nhân ngả ngớn mà cười nói. “Cũng không biết là ai truy người truy càng cần. Đem người hài tử đổ ở trăng non hẻm núi suốt mười ngày, kia hài tử không bị dọa đến tá trò chơi, dũng khí đáng khen.”</p>
+<p>“Cuối cùng hắn đem chúng ta bang hội hơn trăm người toàn đùa chết.” Thanh niên mổ rượu vang đỏ, tuấn mỹ trên mặt dạng nhàn nhạt tươi cười.</p>
+<p>“Cho nên, ta càng muốn muốn hắn! Thật tốt mầm, lại dạy dỗ dạy dỗ, là có thể cùng lam khê cùng nhau tiếp nhận chúng ta bang hội, chúng ta cũng có thể an tâm đi hưởng tuần trăng mật.” Nam nhân tiếc nuối địa đạo.</p>
+<p>Kia tiểu phá hài vững vàng bình tĩnh, chẳng những đối chính mình hà khắc, ra tay ác hơn, lam khê tính cách tuy rằng ôn thôn, làm việc nghiêm túc, xử lý bang hội sự vụ có trật tự. Hai người phối hợp quản lý bang hội nói, quả thực là vô địch song hiệp, đánh đâu thắng đó, không gì cản nổi.</p>
+<p>“Tuần trăng mật? Ha hả.” Chờ nhà hắn lão nhân buông tha hắn lại nói.</p>
+<p>“Thân ái, khai video, chúng ta tới lỏa liêu.” Nam nhân đè thấp thanh âm, tràn ngập dụ hoặc.</p>
+<p>Thanh niên không dao động, bình tĩnh mà kết thúc điện thoại. Uống xong trong ly cuối cùng một chút rượu vang đỏ, ngồi trở lại sô pha, từ phân biệt khí kéo ra màn hình ảo, tiến vào siêu bác, do dự hạ, khóe miệng hơi hơi giơ lên, đã phát một cái siêu bác, thuận tiện @ mỗ một người.</p>
+<p>——————————</p>
+<p>“Câu quyền, bãi quyền, sườn đá, xoay tròn làm né tránh, diệu a! Cửu Nhật, ngươi là như thế nào biên ra như vậy giản lược mệnh lệnh?”</p>
+<p>Đông Cửu Nhật ký túc xá trong phòng, Nor ngồi xếp bằng ngồi trên sàn nhà, mang đến quang não tùy ý mà bày, ngón tay ở giả thuyết bàn phím thượng bay nhanh mà di động tới.</p>
+<p>Đông Cửu Nhật ngồi ở trên ghế, nhìn chằm chằm quang não nào đó trang web, ngẫu nhiên điểm vài cái.</p>
+<p>“Trước kia ở cơ giáp câu lạc bộ đánh quá công, có vị huấn luyện viên là biên trình cao thủ, nhàn rỗi thời điểm sẽ dạy ta.” Đông Cửu Nhật nói.</p>
+<p>“Thật hâm mộ! Làm công đều có thể gặp được cao thủ. Đúng rồi, ngươi vị thành niên, bọn họ như thế nào sẽ làm ngươi làm công?” Nor nhìn chằm chằm số hiệu, thuận miệng hỏi.</p>
+<p>Đông Cửu Nhật quay đầu nhìn hắn một cái. “Krila thành là ở nông thôn thành thị, quản lý thượng không có thành phố lớn nghiêm khắc, hơn nữa có người quen giới thiệu, quản lý giả liền mắt nhắm mắt mở. Giống ta 13-14 tuổi liền ra tới làm công người rất nhiều.”</p>
+<p>Nor ấn phím bàn động tác một đốn, ngẩng đầu đối thượng Đông Cửu Nhật mặt, thấy hắn thần sắc như thường, trong mắt không gợn sóng, liền cúi đầu, tiếp tục biên trình.</p>
+<p>“Khá tốt, học được khó lường đồ vật.” Nor nói.</p>
+<p>“Còn hành, chủ yếu là tiền lương cao.” Đông Cửu Nhật khóe miệng hơi hơi giơ lên.</p>
+<p>“Hảo! Ta này bộ động tác thiết kế xong, có thể thực chiến.” Nor cao hứng phấn chấn hỏi. “Tới một hồi?”</p>
+<p>“Chờ một lát.” Đông Cửu Nhật tiếp tục xem trang web.</p>
+<p>“Như thế nào? Ở vội cái gì?” Nor tò mò mà thấu đi lên xem. Chỉ thấy kia trang web thượng có rất nhiều người nhắn lại, hơn nữa đây là một cái thương thành, bán ra đồ vật chỉ một, tiêu thụ lượng lại rất khả quan.</p>
+<p>“Bán điểm đồ vật, không nghĩ tới thu hoạch không tồi.” Đông Cửu Nhật nói.</p>
+<p>“…… Từ từ!” Nor cẩn thận đọc thương phẩm giới thiệu, trong phút chốc liền trợn mắt há hốc mồm. “Ngươi —— ngươi ở bán cơ giáp thao tác biên trình?”</p>
+<p>“Ân.” Đông Cửu Nhật khó hiểu hỏi. “Có cái gì kỳ quái? Ta cũng không nghĩ tới một cái đơn giản biên trình cư nhiên như vậy đáng giá. Mới treo lên một giờ, mua sắm lượng liền siêu thượng vạn.”</p>
+<p>Lập tức tiến trướng mười mấy vạn tín dụng điểm, Đông Cửu Nhật thật là có điểm ngoài ý muốn, này có thể so hắn ở nhà ăn làm công càng kiếm tiền.</p>
+<p>Nor đỡ trán. “Ngươi cái coi tiền như rác, một cái bình thường biên trình ở trên mạng báo giá đều là một vạn lên giá, ngươi thế nhưng chỉ tiêu một trăm tín dụng điểm! Khó trách mua sắm người nhiều như vậy! Ha, còn ở gia tăng, khẳng định là có người dùng quá, lĩnh hội tinh túy, nơi nơi tuyên truyền!”</p>
+<p>“Thì ra là thế.” Đông Cửu Nhật gõ gõ mặt bàn. Xác thật ngoài dự đoán, cơ giáp dự thiết biên trình cư nhiên có thể kiếm tiền. Trước kia ở câu lạc bộ chỉ học được da lông, đánh cái cơ sở, hiện giờ ở học viện thâm nhập học tập mấy tháng, hoàn toàn nhập môn. Vả lại, hắn có được mấy đời ký ức, lịch duyệt cùng tri thức không tiền khoáng hậu mà tăng lên, biên trình khi dung nhập Hoa Quốc võ thuật, cùng với ở mạt thế tổng kết sát quái kinh nghiệm, thông hiểu đạo lí sau, liền có hiện tại biên trình năng lực.</p>
+<p>“Chạy nhanh đem giá cả nhấc lên nha, như vậy một bộ hảo biên trình, chỉ bán một trăm tín dụng điểm, quá tiện nghi người khác.” Nor vẻ mặt thương tiếc.</p>
+<p>“Chỉ là cái tiểu ngoạn ý, về sau có tân biên trình rồi nói sau.” Đông Cửu Nhật không sao cả địa đạo. Đã định rồi cái này giới, lại đề cao giá cả, ngược lại sẽ mất đi tín dụng, ảnh hưởng khách hàng đối hắn đánh giá, mất nhiều hơn được. Huống hồ, hắn thiết giá cả tuy rằng tiện nghi, nhưng tiêu thụ lượng đề lên rồi, ít lãi tiêu thụ mạnh cũng là kinh thương chi đạo.</p>
+<p>Nor khinh bỉ hắn. Người khác trong mắt bảo bối, đến hắn này liền thành tiểu ngoạn ý. Đương kim thế giới, nhiều ít cơ giáp chiến sĩ vì cầu một bộ tinh hoa biên trình mà táng gia bại sản a. Cao cấp cơ giáp thao tác biên trình, có thể phát huy ra cơ giáp sức chiến đấu, thời khắc mấu chốt còn có thể bảo hộ cơ giáp chiến sĩ tánh mạng, cho nên đối với độc nhất vô nhị biên trình, toàn thế giới cơ giáp chiến sĩ đều là xua như xua vịt.</p>
+<p>Tìm được tân phương pháp kiếm tín dụng điểm Đông Cửu Nhật tâm tình sung sướng, tắt đi quang não trang web, dò hỏi Nor. “Đi nơi nào luận bàn?”</p>
+<p>“Thượng cơ giáp thế giới, chúng ta lựa chọn một đài cơ giáp, dùng tân biên dự thiết biên trình quyết đấu.” Nor xoa tay hầm hè.</p>
+<p>“Ân.”</p>
+<p>Hai người mang lên quang não mũ giáp, ý thức tiến vào thế giới giả thuyết, ở màn hình thực tế ảo thượng, lựa chọn cơ giáp thế giới, một đạo quang hiện lên sau, Đông Cửu Nhật đứng ở một tòa đại lâu trước.</p>
+<p>Ra ra vào vào người nối liền không dứt, Đông Cửu Nhật nhìn chung quanh bốn phía, không thấy được Nor. Hắn mở ra giao diện, cấp Nor đã phát điều tin nhắn.</p>
+<p>Thực mau Nor hồi phục, nói là đã ở đại lâu, làm Đông Cửu Nhật trực tiếp đi 1809 hào phòng gian.</p>
+<p>Động tác rất nhanh.</p>
+<p>Đông Cửu Nhật không nhanh không chậm mà tiến vào đại lâu, ở đại sảnh nhân viên tiếp tân kia đăng ký một chút, bắt được phòng tạp, tiến vào thang máy.</p>
+<p>Cơ giáp thế giới là một cái internet giả thuyết đài chiến đấu, chỉ có một cái chủ thành, chủ thành chỉ có một tràng cao ngất trong mây đại lâu, này tràng đại lâu có được vô hạn chiến đấu phòng, tùy ý khách hàng lựa chọn đối chiến hình thức. Mặt khác chủ thành còn có một cái khổng lồ đấu trường, bất luận kẻ nào đều có thể báo danh tham gia thi đấu, phân chu tái, nguyệt tái, quý tái cùng năm tái, tích phân tái chế, tích phân tối cao giả, đem đạt được phong phú khen thưởng. Khen thưởng không đơn thuần chỉ là chỉ có tín dụng điểm, còn có cao phối trí cơ giáp, cùng với một ít khả ngộ bất khả cầu linh kiện, biên trình từ từ. Bởi vậy, toàn thế giới cơ giáp chiến sĩ, mỗi ngày đều sẽ háo mấy cái giờ ở cơ giáp trong thế giới thi đua.</p>
+<p>Đây là Đông Cửu Nhật lần đầu tiên tiến vào cơ giáp thế giới, rốt cuộc hắn mới vừa nhập học không đến nửa năm, vẫn là cái tay mới, quá sớm tiến vào chỉ có thể bị cao thủ ngược cùi bắp.</p>
+<p>Bất quá, hiện giờ hắn có được bất phàm biên trình năng lực, kỹ thuật nâng lên cao vài phần, không đến mức một tráo mặt đã bị người xử lý.</p>
+<p>Phòng tạp một xoát, môn tự động mở ra, Đông Cửu Nhật tiến vào 1809 hào phòng. Đây là một cái thật lớn chiến đấu phòng, không có bất luận cái gì trang trí, chỉ có trống trải nơi sân.</p>
+<p>“Tới rồi?” Nor đối Đông Cửu Nhật vẫy tay. “Tới nơi này tuyển cơ giáp.”</p>
+<p>Đông Cửu Nhật đi qua đi, ở trên màn hình nhìn đến rất nhiều cơ giáp hình ảnh, loại hình khác nhau, trị số bất đồng, có cách lâm, Mal đức, đức khắc đặc, ái thâm khắc cùng với tư nại da, quân đội chuyên dụng bổn mỗ khắc cũng không ở trong đó.</p>
+<p>“Ngươi tuyển cái nào?” Nor hỏi.</p>
+<p>“Cách lâm đi.” Bọn họ năm nhất, cơ giáp cầu đều là sơ cấp trạng thái, chỉ có cách lâm hình thức.</p>
+<p>Nor tuy rằng đối cái khác cơ hình ưu ái có thêm, nhưng rốt cuộc chỉ học được cách lâm cơ giáp thao tác.</p>
+<p>Hai người nhanh nhẹn mà tuyển hảo cơ giáp, chiến đấu giữa sân, lập tức xuất hiện hai giá mấy thước cao cơ giáp.</p>
+<p>Nor vươn nắm tay, đối Đông Cửu Nhật nói “Lần này ta sẽ không lại thua!”</p>
+<p>Đông Cửu Nhật ra quyền cùng hắn đâm một cái. “Cố lên.”</p>
+<p>Hai người triều từng người lựa chọn cơ giáp đi đến, cùng cơ giáp tiến hành tinh thần trói định sau, cơ giáp trí năng liền cùng người chơi liên thông.</p>
+<p>Đông Cửu Nhật nhẹ nhàng nhảy, thực mau nhảy vào khoang điều khiển.</p>
+<p>“Ngươi chủ nhân tốt, ta là ưng 035 hào, thật cao hứng cùng ngươi kề vai chiến đấu.” Máy móc thức thanh âm ở khoang điều khiển vang lên.</p>
+<p>Đông Cửu Nhật ở trên ghế điều khiển ngồi xuống, đôi tay đặt ở bàn điều khiển thượng, một bên bắt đầu dự thiết biên trình, một bên đối cơ giáp trí năng nói “Ngươi hảo, ưng 035 hào, ta là Đông Cửu Nhật, thật cao hứng trở thành ngươi chiến hữu.”</p>
+<p>Một bộ biên trình xuống dưới, dùng mười phút, kiểm tra một lần, không có vấn đề sau, hắn triều Nor bên kia đã phát thông tín.</p>
+<p>“Chuẩn bị hảo sao?”</p>
+<p>“Lại chờ ta một phút.” Nor hồi phục.</p>
+<p>Cơ giáp chiến sĩ trí nhớ là kinh người, đều có xem qua là nhớ bản lĩnh, phức tạp biên trình ngắm một lần là có thể toàn bộ nhớ kỹ hơn nữa phục chế xuống dưới. Nor kỳ thật đã thua xong biên trình, nhưng cuối cùng lại sửa lại mấy cái kiện.</p>
+<p>“Ok! Bắt đầu đi!” Nor hưng phấn mà kêu to. “Chờ bị ta tấu đi, ha ha!”</p>
+<p>Hai đài cơ giáp nháy mắt tiến vào trạng thái chiến đấu. Hai người tuyển cơ giáp sử dụng vũ khí đều là kiếm, không có vũ khí nóng, thuần túy sử dụng kiếm thuật, khổng lồ cơ giáp ở nhân vi thao tác hạ, kim loại bề ngoài chỉ là một tầng biểu hiện giả dối, thân thủ nhanh nhẹn linh hoạt đến như võ lâm cao thủ. Đối chiến chi gian, hư hư thật thật, tận dụng mọi thứ, thừa cơ dựng lên, kiếm tẩu thiên phong, này thế càng hùng.</p>
+<p>Đông Cửu Nhật biểu nổi lên tốc độ tay, ngón tay ở thao tác kiện thượng di động, như một đạo tàn ảnh, nhằm vào dự thiết biên trình không đủ chỗ, sử dụng tức thời biên trình.</p>
+<p>Đương Nor kiếm khí thế bàng bạc mà đã đâm tới khi, hắn di ảnh đổi bước, nghiêng người hiện lên, đồng thời trường kiếm sau này một trận, chặn lại hắn thế công.</p>
+<p>“Hắc! Lại đến!” Nor kích động mà nhanh hơn tốc độ tay, kính đề vai cánh tay, điên khởi lộn một vòng, đem từ Đông Cửu Nhật kia học mấy chiêu Hoa Quốc võ thuật toàn dùng tới.</p>
+<p>Đáng tiếc đồ đệ dù sao cũng là đồ đệ, mới học mấy ngày, liều chết đều không đuổi kịp sư phụ. Đông Cửu Nhật khép mở tự nhiên, thủ như xử nữ, động như thỏ chạy, tiến một lui chi gian, đánh úp, nháy mắt liền chọn rơi xuống hắn kiếm.</p>
+<p>“A!” Nor nắm tay nện ở bàn điều khiển thượng, ảo não mà gầm nhẹ. “NO! Lại thua rồi!”</p>
+<p>Đông Cửu Nhật nhất kiếm đánh bại Nor cơ giáp động cơ, xác định hắn lại vô đánh trả chi lực, lúc này mới chậm rì rì mà thu hồi kiếm, ưu nhã mà đem trường kiếm cắm vào bên hông vỏ.</p>
+<p>“Tiến bộ thực mau, nhưng còn cần tiếp tục nỗ lực.”</p>
+<p>“Ai, ai, ai!” Nor ủ rũ cụp đuôi mà từ cơ giáp ra tới, cả người là hãn.</p>
+<p>Đông Cửu Nhật đem cơ giáp dựa đến bên cạnh, mở ra cửa khoang, nhảy xuống tới. “Hoa Quốc võ thuật, bác đại tinh thâm, ngươi vừa mới tiếp xúc, học được một chút da lông đã tính không tồi.”</p>
+<p>“Như vậy ngươi đâu? Ngày thường cũng nhìn không ra tới sẽ võ thuật a, thực chiến khóa thượng, ngươi cho điểm giống như chỉ có Ｂ.” Nor khó hiểu hỏi.</p>
+<p>Đông Cửu Nhật nhéo nhéo chính mình cánh tay. “Thiếu niên thân thể còn ở trưởng thành, quá độ rèn luyện, sẽ bị thương căn cơ.”</p>
+<p>“Thiếu tới, giấu dốt đi ngươi.” Nor phiết miệng.</p>
+<p>Đông Cửu Nhật mắt đen lóe lóe, không có phủ nhận.</p>
+<p>“Đi, hạ tuyến đi, không sai biệt lắm đến ba điểm, rốt cuộc có thể tiến Viractalia đại lục. Ta đã chờ không kịp mà tưởng chơi trò chơi, này một vòng nhưng đem ta nghẹn đến mức, mau nghẹn ra nội thương. Ta tiểu sủng vật nhất định tưởng ba ba, bạn gái của ta nhất định mau đem ta đã quên, nga nga, còn có, Cửu Nhật, tiến trò chơi sau, chúng ta thêm hạ bạn tốt a, ha ha, tưởng tượng đến ngươi chính là trong video cái kia cường đại huyền y chân nhân, ta liền hưng phấn. Chúng ta tổ đội, cùng đi sát già lam hiệp hội paparazzi tử, làm cho bọn họ không dám lại đi ngang!”</p>
+<p>“Ân.” Đông Cửu Nhật lên tiếng, ra phòng, cùng Nor cùng đi phục vụ đài tính tiền lui tạp, trực tiếp offline.</p>
+<p>Mới vừa tháo xuống quang não mũ giáp, mở to mắt đã bị Hi Thụy kia trương gần trong gang tấc đại mặt cấp hoảng sợ.</p>
+<p>“Làm sao vậy?” Hắn không dấu vết mà dịch hạ.</p>
+<p>Hi Thụy đem phân biệt khí bắn ra màn hình kéo lại đây, phóng đại, chỉ thấy siêu bác trên mạng một cái bị chuyển phát, nhắn lại, điểm tán đều có thượng trăm triệu bác văn thình lình lọt vào trong tầm mắt, để cho Đông Cửu Nhật khiếp sợ chính là, như vậy một cái bị toàn thế giới người chú ý siêu bác @ người, cư nhiên là hắn siêu bác hào.</p>
+<p>Húc Nhật Đông Thăng, gần nhất ở võng du bộc lộ tài năng, bị chúng người chơi truy phủng huyền y chân nhân, ở siêu bác thượng không chút tiếng tăm gì ID, đột nhiên lập tức bạo đỏ! Đến nỗi cái kia @ người của hắn, này bác văn nguyên PO, kêu Cổ Thánh Triết, cùng thế giới ca vương Lý mân cát tề danh một khác ca vương. Mới vừa kết thúc hắn thế giới lưu động buổi biểu diễn, phát điều thứ nhất siêu bác, thế nhưng @ một cái vô danh tiểu tốt, còn nói muốn cùng hắn ước hẹn ở võng du, lại tục tình duyên.</p>
+<p>“Cửu Nhật ~~~~~” Hi Thụy thanh âm thẹn thùng đến đều run rẩy. “Nói cho ta, ngươi cùng cổ thiên vương là cái gì quan hệ? Cái gì kêu lại tục tình duyên? Ngươi không phải có Grace học trưởng sao? Vì cái gì còn muốn cùng ta đoạt cổ cự cự?”</p>
+<p>Đông Cửu Nhật duỗi chỉ đỉnh khai hắn đầu, sâu thẳm mắt đen nhìn không ra cái gì cảm xúc.</p>
+<p>“Ta không quen biết hắn.” Hắn mặt vô biểu tình mà nói.</p>
+<p>Thế giới ca vương, Cổ Thánh Triết sao?</p>
+<p>“Nột, Hi Thụy, Cửu Nhật đều nói không quen biết, chúng ta mau trở về phòng đi thôi, một hồi trò chơi liền phải khai phục!” Nate giữ chặt Hi Thụy cánh tay. Hi Thụy thích người quá nhiều, các đại minh tinh có một cái sọt.</p>
+<p>“Không có khả năng! Không quen biết hắn vì cái gì muốn @ ngươi?” Hi Thụy chưa từ bỏ ý định.</p>
+<p>“Ai biết được? Có lẽ hắn @ sai rồi.” Đông Cửu Nhật rũ xuống mắt, quanh thân khí tràng đều thay đổi.</p>
+<p>Nate tay mắt lanh lẹ mà kéo đi rồi sẽ không xem sắc mặt Hi Thụy, lưu lại Nor cùng Đông Cửu Nhật. Nor muốn nói lại thôi, tổng cảm thấy nên nói cái gì đó, lại không biết nói như thế nào. Hắn đối minh tinh gì đó không có hứng thú, nếu là cùng cơ giáp tương quan đề tài, còn có thể vòng vài câu.</p>
+<p>Đông Cửu Nhật click mở phân biệt khí màn hình, tiến vào siêu bác trang web, vô số điều tin tức bắn ra, thiếu chút nữa đem hắn trang web tễ bạo, hắn click mở thiết trí, toàn bộ xóa bỏ.</p>
+<p>Đã thật lâu không có thượng siêu bác, cuối cùng một cái vẫn là khai giảng trước phát.</p>
+<p>【 ly mộng tưởng lại gần một bước. 】</p>
+<p>Đây là tới Ma Wei học viện trước một ngày phát, bởi vì thi đậu tha thiết ước mơ học viện, hưng phấn đến ngủ không được, liền đã phát điều như vậy trung nhị siêu bác. Lúc sau ở đi Ma Wei học viện huyền phù đoàn tàu thượng bị dị thú tập kích, đã xảy ra quá nhiều chuyện, liền không lại phát bác văn.</p>
+<p>Này siêu bác phía dưới nhắn lại mau vượt qua một trăm triệu, tất cả đều là không quen biết người, không cần xem cũng biết, đều là ca vương Cổ Thánh Triết fan não tàn.</p>
+<p>Tưởng lấy phương thức này tới đuổi giết đả kích ta sao? Quá ngây thơ rồi.</p>
+<p>Đông Cửu Nhật kéo ra giả thuyết bàn phím, ngón tay vừa động, đã phát một cái bác văn, hơn nữa @ Cổ Thánh Triết.</p>
+<p>【 ngươi chiến thư, ta tiếp được. @ Cổ Thánh Triết phóng ngựa lại đây! 】</p>
+<p>“Chiến thư?” Đứng ở Đông Cửu Nhật phía sau Nor không hiểu ra sao, rõ ràng là liếc mắt đưa tình bác văn, vì cái gì Cửu Nhật đem chi đương thành chiến thư?</p>
+<p>Đông Cửu Nhật quay đầu lại ngó hắn liếc mắt một cái, thanh âm thanh lãnh mà nói “Đối với một cái phát động thượng vạn bang chúng toàn phục truy giết một người bang chủ, ngươi cảm thấy hắn cảm tình giá trị mấy cái tiền?”</p>
+<p>“…… Cho nên, ngươi là cái kia bị đuổi giết người?” Nor líu lưỡi. “Quá biến thái đi!”</p>
+<p>Đông Cửu Nhật tắt đi siêu bác, cầm lấy quang não mũ giáp. “Lập tức ba điểm, tiến trò chơi đi.”</p>
+<p>“Ngươi không tức giận sao?” Nor vẻ mặt không thể tưởng tượng. Hắn cảm thấy Cửu Nhật thể chất có chút vấn đề, ở Angel đại lục bị già lam hiệp hội toàn phục đuổi giết, ở kỳ lân đại lục cũng bị đuổi giết, như vậy đi xuống, còn có thể hảo hảo chơi trò chơi sao?</p>
+<p>“Sinh khí, như thế nào không tức giận?” Đông Cửu Nhật nhìn hạ phân biệt khí thông tin, cấp Caroll đã phát mấy cái tin tức đều không có hồi phục, nhìn dáng vẻ, hắn bạn trai rất bận, không biết hắn nhận được cái gì nhiệm vụ, liền tin tức đều phong tỏa.</p>
+<p>“Nhìn không ra tới.” Nor ngồi trở lại sàn nhà, ôm cái đại gối dựa, mang lên quang não mũ giáp. Cửu Nhật sắc mặt như thường, trong ánh mắt bình tĩnh không gợn sóng, hoàn toàn nhìn không ra hắn có sinh khí.</p>
+<p>Đông Cửu Nhật cười khẽ một chút, ý thức liên tiếp internet, thực mau tiến vào Viractalia đại lục.</p>
+<p>Ngày 6 tháng 11 buổi chiều 3 giờ chỉnh, là đại hình võng du Viractalia đại lục trọng khai server nhật tử, vô số người chơi nhón chân mong chờ, đối với đông đảo lấy trò chơi làm người sinh lạc thú người chơi mà nói, đình phục một vòng giữ gìn, quả thực tàn vô nhân đạo, cũng may rốt cuộc ngao tới rồi cuối cùng một ngày, server trọng khai.</p>
+<p>Ba điểm chỉnh, vô số kể người chơi chen chúc trên mặt đất trò chơi.</p>
+<p>Kỳ á công ty trí năng server tương đương cấp lực, đồng thời cộng tái mấy trăm triệu người chơi, cư nhiên không có bị đánh sâu vào vượt rớt.</p>
+<p>Đông Cửu Nhật tinh thần thể huyền phù ở một mảnh trên không đụng trời dưới không chấm đất trong không gian, nguyên bản đăng nhập giao diện không có nhảy đánh ra tới, liên tiếp đãi NPC cũng chưa thấy.</p>
+<p>Đây là tình huống như thế nào?</p>
+<p>Hắn duỗi thân tứ chi, phát hiện đã tiến vào nhân vật sắm vai, nói cách khác, lúc này hắn đã tiến vào trò chơi số liệu trong thân thể, thân xuyên huyền y chân nhân đạo bào, đỉnh đầu nói quan, bối thượng cõng trường kiếm, phập phềnh ở trong không gian.</p>
+<p>Như thế nào tiến trò chơi?</p>
+<p>Mới như vậy tưởng tượng, thân thể đột nhiên không trọng, bỗng chốc đi xuống rớt.</p>
+<p>Hắn nhanh chóng thi triển huyền y chân nhân đặc có kỹ năng —— ngự kiếm thuật, bối thượng kiếm tự động bắn ra, chui vào hắn lòng bàn chân, bám trụ thân thể hắn, nhưng hạ trụy còn ở tiếp tục, rơi gần mười phút, trước mắt tối sầm, tựa hồ xuyên qua một cái đường hầm, trong đầu hiện lên một cái nhu hòa thanh âm.</p>
+<p>【 hoan nghênh đi vào Viractalia đại lục, chúc ngài lữ đồ vui sướng. 】</p>
+<p>Đông Cửu Nhật chậm rãi mở to mắt, đập vào mắt chính là đơn sơ trúc ốc nóc nhà, hắn đột nhiên ngồi dậy, phát hiện chính mình đang ở giường tre thượng.</p>
+<p>Nơi này là trò chơi gia, rừng trúc tiểu trúc.</p>
+<p>Hắn thượng một lần hạ tuyến cuối cùng địa điểm, đúng là rừng trúc tiểu trúc. Như vậy, Caroll đâu? Đông Cửu Nhật khắp nơi tìm kiếm, không có nhìn đến Caroll, nhìn dáng vẻ hắn còn không có online.</p>
+<p>Duỗi vươn vai, hắn đi ra trúc ốc, đi vào trong viện. Sân vẫn là bộ dáng cũ, có giếng, có đình, có rừng trúc, nhưng mà, trong một góc cái kia Truyền Tống Trận, không thấy.</p>
+<p>Đông Cửu Nhật nghi hoặc mà ở Truyền Tống Trận nơi góc, luôn mãi xác nhận, thật sự biến mất, một chút dấu vết đều không có.</p>
+<p>“Ngô.” Hắn ra sân, hướng phụ cận ao hồ đi đến, dọc theo đường đi không có gặp được người, ngẫu nhiên có thuỷ điểu bay qua, yên lặng tuân lệnh người vui vẻ thoải mái.</p>
+<p>Tân Thủ thôn Norton thôn vẫn là bộ dáng cũ, NPC từng người bận rộn, đương nhìn đến thân xuyên đạo bào Đông Cửu Nhật xuất hiện khi, trước kia cũng không chào hỏi bọn họ, cư nhiên mở miệng hướng hắn nói chuyện.</p>
+<p>“Tiểu tử, thay ta hướng ngươi gia gia vấn an.”</p>
+<p>“Tiểu mặt trời mới mọc, ngươi gia gia thân thể hảo chút sao?”</p>
+<p>“Tiểu gia hỏa, hôm nay muốn mua cái gì? Tới một ít mới mẻ rau dưa, có phiên gia, có cây cải bắp, còn có cà tím.”</p>
+<p>“……”</p>
+<p>Đông Cửu Nhật từ lúc ban đầu kinh ngạc, đến sau lại ứng phó tự nhiên. Hắn từ Nam Sơn ông lão nơi đó kế thừa rừng trúc tiểu trúc, thành Norton thôn phụ cận cư dân, cho nên trong thôn NPC đem hắn đương thành đồng loại đi.</p>
+<p>Dọc theo đường đi cùng NPC chào hỏi qua, đi tới giáo đường, ở trên quảng trường vòng một vòng, nguyên lai Truyền Tống Trận nơi địa phương, trống không một vật.</p>
+<p>Không có Truyền Tống Trận!</p>
+<p>Đông Cửu Nhật rốt cuộc ý thức được sự tình đại điều.</p>
+<p>Hắn chuẩn bị điều ra trò chơi giao diện, xem xét tình huống, nhưng mà, cái gì đều không có, không có bản đồ, không có huyết lượng điều, không có trò chơi giao diện, không có giọng nói hệ thống, không có bất luận cái gì nhưng thao tác đồ vật.</p>
+<p>Trò chơi giữ gìn ra vấn đề sao? Vì cái gì triệu hoán không ra trò chơi hệ thống?</p>
+<p>Hắn sờ sờ trên người, bên hông nhiều ra một cái tiểu thêu bao, ngón tay một chạm vào, ý thức tìm tòi, hắn nhìn đến tiểu thêu trong bao có rất nhiều đồ vật, ban đầu tồn trữ ở trò chơi ba lô tất cả đồ vật, đều ở tiểu thêu trong bao. Cho nên, này tiểu thêu bao chính là túi trữ vật sao?</p>
+<p>Đông Cửu Nhật ra giáo đường, đi vào trong thôn trên đường phố, toàn bộ phố trừ bỏ NPC không có người chơi khác, hắn không có biện pháp cùng người chơi khác giao lưu, chỉ có thể tìm tới tuần cảnh hỏi thăm chút tin tức.</p>
+<p>“Ngươi hảo, trưởng quan, ta có thể quấy rầy ngươi vài phút sao?” Đông Cửu Nhật hỏi.</p>
+<p>“Ngươi hảo, là tiểu mặt trời mới mọc nha, thật cao hứng có thể giúp ngươi, có chuyện gì sao?” Trung niên tuần cảnh thực nhiệt tình.</p>
+<p>“Ta muốn đi á bác kéo thành, như thế nào đi phương tiện?” Đông Cửu Nhật hỏi.</p>
+<p>“Á bác kéo thành?” Tuần cảnh sờ sờ cằm. “Á bác kéo thành ly chúng ta Norton thôn rất xa đâu, ngươi đến ngồi xe ngựa nửa tháng, mới có thể tới. Thôn khẩu có trạm dịch, ngươi đi nơi đó hỏi A Đức ba, cho hắn tiền, hắn là có thể mang ngươi qua đi. Bất quá, thân ái tiểu mặt trời mới mọc, ngươi vì cái gì muốn đi á bác kéo thành, Norton thôn không hảo sao?”</p>
+<p>“…… Ta có bằng hữu ở á bác kéo thành, nghĩ tới đi bái phỏng hạ.” Đông Cửu Nhật cười trả lời.</p>
+<p>Nơi này thật sự game online sao? Không có bất luận cái gì trò chơi giao diện, từ Tân Thủ Thôn đi thành phố lớn, không có Truyền Tống Trận, chỉ có nhất nguyên thủy xe ngựa, hơn nữa yêu cầu đi nửa tháng. Không biết thời gian giả thiết, hay không vẫn như qua đi giống nhau, hiện thực thời gian cùng trò chơi thời gian vì một so nhị, nếu là, như vậy, hắn từ Norton thôn ngồi xe ngựa đi á bác kéo thành, phải tốn phí hiện thực thời gian một vòng mới có thể tới..</p>
+<p>Một chỉnh chu đều ở trên xe ngựa vượt qua, liên hệ không đến bằng hữu, này liền có chút không như vậy lệnh người vui sướng.</p>
+<p>Đông Cửu Nhật tính toán offline, đi trò chơi diễn đàn nhìn xem là tình huống như thế nào.</p>
+<p>Nhưng mà, không có trò chơi hệ thống, hắn nên như thế nào hạ tuyến đâu?</p>
+<p>“Ngươi biết người chơi như thế nào hạ tuyến sao? Trưởng quan?” Đông Cửu Nhật thử tính mà dò hỏi tuần cảnh.</p>
+<p>Tuần cảnh lấy một loại kỳ dị mà ánh mắt nhìn hắn. “Người chơi? Hạ tuyến? Đó là cái gì? Tiểu mặt trời mới mọc, ngươi nơi nào không thoải mái? Muốn hay không đi la bác sĩ nơi đó nhìn xem?”</p>
+<p>“Ách, không cần, cảm ơn ngươi quan tâm, trưởng quan.” Đông Cửu Nhật hành lễ, dường như không có việc gì tránh ra.</p>
+<p>Trạm ở trong góc, hắn quan sát này đó đi tới đi lui NPC. Bất đồng với qua đi, nhiệm vụ NPC ở cố định điểm qua lại đi, phảng phất trong nháy mắt, này đó di động số liệu có được linh hồn, bọn họ sinh hoạt ở thế giới này, là chân thật tồn tại người, có sinh có sắc mà tồn tại.</p>
+<p>Mười phút sau, Đông Cửu Nhật đi vào tiệm tạp hóa.</p>
+<p>“Ngươi hảo, xin hỏi có thế giới bản đồ bán sao?”</p>
+<p>Tiệm tạp hóa lão bản là cái phụ nữ trung niên, thấy Đông Cửu Nhật tiến vào, cười tủm tỉm mà nói “Vài thiên không gặp tiểu mặt trời mới mọc, hoan nghênh hoan nghênh.”</p>
+<p>Trong thôn mỗi người đều nhận thức hắn đâu, chính là hắn không quen biết bọn họ nha, liền tên đều kêu không được.</p>
+<p>“Có thế giới bản đồ sao? Đại tỷ.”</p>
+<p>“Ai nha, ta đều tuổi này, như thế nào còn gọi ta đại tỷ? Kêu ta a mạc thẩm liền hảo lạp. Thế giới bản đồ? Như vậy quý giá đồ vật, chúng ta ở nông thôn địa phương sao có thể có, nhưng thật ra có phụ cận bản đồ, ngươi nhìn xem, có thể hay không hành?” Phụ nữ trung niên cười thành một đóa hoa, từ trên kệ để hàng bắt lấy một khối động vật da, đưa cho Đông Cửu Nhật.</p>
+<p>Đông Cửu Nhật tiếp nhận tới, mở ra vừa thấy, chỉ có giản dị đường cong, bất đắc dĩ mà thở dài.</p>
+<p>“Bao nhiêu tiền, a mạc thẩm?” Thắng với vô đi, ít nhất phụ cận bản đồ có thể đại khái nhìn đến phương hướng.</p>
+<p>“Không cần, không cần, đều là cùng thôn người.” A mạc thẩm phất tay.</p>
+<p>“Kia như thế nào không biết xấu hổ?” Đông Cửu Nhật tay sờ ở túi trữ vật thượng, chuẩn bị sờ mấy cái đồng vàng.</p>
+<p>A mạc thẩm cười nói “Nếu ngươi thật cảm thấy băn khoăn, liền đi trong hồ cho ta câu mấy cái cá.”</p>
+<p>Này xem như tuyên bố nhiệm vụ sao?</p>
+<p>Đông Cửu Nhật gật đầu đáp ứng rồi.</p>
+<p>Ra tiệm tạp hóa, hắn một đường hướng tây, đi tới thôn phụ cận ao hồ, từ túi trữ vật lấy ra câu cá can, tìm cái râm mát địa phương, treo lên mồi câu, vứt ra cá câu.</p>
+<p>Nếu là nguyên lai trò chơi, có số liệu thêm thành, câu cá có thuần thục độ nói đến, hệ thống sẽ không ngừng nhắc nhở, chính là hiện tại cái gì đều không có, lẳng lặng mà đợi mười mấy phút, một con cá đều không có thượng câu.</p>
+<p>Con cá đều thành tinh sao?</p>
+<p>Đông Cửu Nhật nhẫn nại tính tình, tìm khối đại thạch đầu, tính toán háo đi xuống. Hắn cũng không tin, không có trò chơi thêm thành, một con cá đều câu không lên.</p>
+<p>Công phu không phụ lòng người, đang đợi hơn nửa giờ, cá câu động.</p>
+<p>Hắn đề đề cần câu, hiển nhiên là điều cá lớn, kéo lên rất cố sức, hắn dùng chút lực, một cổ làm khí, đem cần câu nhắc tới ném trở về.</p>
+<p>Một con cá lớn phá thủy mà ra, Đông Cửu Nhật bắt lấy ném hồi cá tuyến, đem cá ném tới trên bờ, ly thủy cá tung tăng nhảy nhót, Đông Cửu Nhật đem nó ném vào cá sọt. Vô pháp hô hấp con cá ở cá sọt lại nhảy nhót vài phút, cuối cùng rốt cuộc an tĩnh.</p>
+<p>Không biết a mạc thẩm muốn mấy cái cá, Đông Cửu Nhật treo lên mồi câu, cần câu vung, ngồi ở trên cục đá, tiếp tục câu cá. Mấy cái giờ sau, rốt cuộc câu bốn con cá, mỗi con cá đều có mười mấy cân trọng, Đông Cửu Nhật thu ngư cụ, dẫn theo cá sọt, hướng trong thôn đi đến.</p>
+<p>Bụng có điểm đói, ấn ngày thường trò chơi giả thiết, đói khát độ đạt tới trình độ nhất định, sẽ liền lộ đều đi không được, nhưng hiện tại, bụng tuy rằng đói, còn có sức lực làm việc.</p>
+<p>Đem cá sọt giao cho a mạc thẩm, a mạc thẩm thăm dò vừa thấy có bốn con cá, cao hứng phấn chấn mà nhận lấy.</p>
+<p>“Cảm ơn ngươi a, tiểu mặt trời mới mọc.”</p>
+<p>Đông Cửu Nhật nhìn a mạc thẩm hừ ca xoay người vào buồng trong, cái gì nhiệm vụ khen thưởng đều không có cấp.</p>
+<p>Đứng ở cửa hàng đợi vài phút, a mạc thẩm không tái xuất hiện, hắn rốt cuộc xác định, háo mấy cái giờ, câu bốn con cá, giao cho nhiệm vụ NPC, hoàn thành nhiệm vụ sau, NPC hoàn toàn đã quên khen thưởng sự.</p>
+<p>Có lẽ…… Khen thưởng vẫn phải có, kia trương quỷ vẽ bùa bản đồ.</p>
+<p>Này còn tính trò chơi sao?</p>
+<p>Đông Cửu Nhật đi ra tiệm tạp hóa, từ túi trữ vật lấy ra một cái bánh bao, đây là một vòng trước, trò chơi còn chưa giữ gìn khi làm. Nhưng mà mới cắn một ngụm, hắn liền phun ra.</p>
+<p>Bánh bao sưu!</p>
+<p>Hắn cầm cắn một ngụm bánh bao, có chút dở khóc dở cười.</p>
+<p>Túi trữ vật khó giữ được tiên.</p>
+<p>Thanh quang túi sở hữu đồ ăn, biến vị, hủ, tanh tưởi, toàn ném vào rác rưởi ống. Sờ sờ bụng, hắn đã không có sức lực lại đi câu cá.</p>
+<p>Gần đây đi tiệm cơm, hướng đầu bếp đức lỗ, muốn một mâm mì xào.</p>
+<p>Xong ăn mì xào, hắn ra tiệm cơm, hướng chính mình gia đi đến. Lúc này, thái dương tây lạc, đã là chạng vạng.</p>
+<p>Trở lại rừng trúc tiểu trúc, Đông Cửu Nhật đi một chuyến WC. Giống ở trong hiện thực giống nhau, trong trò chơi thân thể này, cư nhiên cũng có sinh lý phản ứng. Từ trong WC ra tới sau, hắn lấy thùng nước ở giếng đánh bồn thủy, rửa rửa mặt cùng tay, nghĩ đến cái gì, hắn cởi đạo bào, một tầng lại một tầng, phi thường rườm rà.</p>
+<p>Liền một kiện đổi trang kỹ năng cũng đã không có.</p>
+<p>Nơi này thế giới, không hề là trò chơi, mà là hiện thực.</p>
+<p>Hắn tinh thần thể, thông qua quang não trò chơi mũ giáp, xuyên qua đến dị thế giới. Đây là trước mắt hắn ở “Trò chơi” háo nửa ngày đến ra kết luận.</p>
+<p>Công ty game vì cái gì tiến hành hệ thống giữ gìn thăng cấp đâu? Một cái bình thường game online thực tế ảo thăng cấp trở thành chân thật dị thế giới, người chơi giống người xuyên việt, trở thành dị loại, nếu muốn dung nhập thế giới này, cần thiết nhận đồng nó.</p>
+<p>Đạo bào cởi, điệp đặt ở một bên ghế đá thượng, Đông Cửu Nhật cầm khăn lông, chậm rãi chà lau thân thể. Nhìn nước trong dần dần biến ô, hắn mặt đều vặn vẹo.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong101.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong103.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "kien-tap-phe-hon-su-than-hon-co-giap-su-i";
+const NOVEL_TITLE = "Kiến tập phệ hồn sư (Thần hồn cơ giáp sư I)";
+const CHAPTER_TITLE = "Chương 102 cơ giáp biên trình cùng biến mất trò chơi giao diện";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

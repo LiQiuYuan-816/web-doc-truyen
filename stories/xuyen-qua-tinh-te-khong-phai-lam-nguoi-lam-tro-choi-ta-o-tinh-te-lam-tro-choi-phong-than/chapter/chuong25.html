@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 25</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Xuyên qua tinh tế không phải làm ngươi làm trò chơi / Ta ở tinh tế làm trò chơi phong thần
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 25</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong24.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong26.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Đúng vậy! Hắn muốn thành niên!</p>
+<p>Bùi Tinh vẫn luôn không muốn đối mặt sự tình chung quy vẫn là bị mở ra ở mặt bàn thượng.</p>
+<p>Ở quang não thân phận tin tức thượng, Bùi Tinh sinh nhật điền chính là ngày 1 tháng 4, tinh tế thân thể thí nghiệm chỉ có thể trắc ra hắn đại khái sinh nhật hẳn là ở 1 nguyệt đến 6 nguyệt chi gian, hỏi cập Bùi Tinh muốn chính mình sinh nhật là ngày nào đó khi, Bùi Tinh dứt khoát lựa chọn đời trước ngày cá tháng tư làm chính mình sinh nhật.</p>
+<p>Bởi vì lúc ấy hắn cảm thấy chính mình chết đột ngột sau cư nhiên xuyên qua chuyện này tuyệt đối là trời cao ở cùng hắn nói giỡn.</p>
+<p>A, này vẫn là ta chính mình tạo nghiệt.</p>
+<p>Bùi Tinh trong lòng tất cả hối hận, sớm biết rằng liền đem chính mình sinh nhật lại nói vãn một chút, chờ hắn một thành niên, chỉ sợ ôn nhu dễ thân Sior liền sẽ nháy mắt hóa thân lần đầu tiên gặp mặt khi đại khối băng, sau đó không lưu tình chút nào mà đem hắn quăng ra ngoài.</p>
+<p>Bùi Tinh tạm thời cũng nói không rõ là chính mình về sau lại muốn một người càng khó chịu, vẫn là Sior sắp cùng hắn không có bất luận cái gì liên hệ khó chịu.</p>
+<p>Đời trước Bùi Tinh chân chính cha mẹ rất sớm liền rời đi hắn, từ có ký ức khởi hắn đó là một người, hiện giờ có thể mỗi ngày cùng một cái khác người nhà ăn cơm nói chuyện phiếm, thậm chí xảy ra chuyện gì đều có người có thể dựa vào cảm giác là hắn đã từng tưởng cũng không dám tưởng.</p>
+<p>“Không nghĩ không nghĩ! Này không phải còn có mấy ngày sao!” Hóa thân đà điểu Bùi Tinh thẳng tắp mà nằm ở trên giường, “Đến lúc đó liền nói ta còn không có mua phòng ở, không chỗ ở, Sior khẳng định còn sẽ lưu lại ta!”</p>
+<p>Trên thực tế, Bùi Tinh người này tính cách, nếu là Sior thật sự biểu đạt ra muốn đuổi hắn ý tứ, chỉ sợ hắn rời đi tốc độ cũng sẽ so với ai khác đều mau. Cũng chính là hiện tại Sior đối hắn cũng đủ dung túng, làm Bùi Tinh lá gan biến đại không ít.</p>
+<p>Cưỡng bách chính mình quên việc này, Bùi Tinh đem chính mình bọc thành một đoàn, hôn hôn trầm trầm mà lâm vào giấc ngủ.</p>
+<p>Mà nhắc tới chuyện này Sophia ngày hôm sau liền tao ngộ Bùi Tinh kếch xù lượng công việc công kích.</p>
+<p>Bùi Tinh đem sủng vật cách chơi cùng tinh tế bản thân liền có, hoặc đã từng xuất hiện quá hi hữu loại sinh vật liên hệ ở bên nhau, bởi vậy đối với tư liệu chuẩn xác độ yêu cầu liền sẽ trở nên cực kỳ thật lớn.</p>
+<p>Hơn nữa có tinh cầu cũng không mở ra chính mình bản địa giống loài quý hiếm nhị sang, gặp được loại tình huống này bọn họ cũng muốn tiểu tâm tránh đi.</p>
+<p>Bùi Tinh lần đầu tiên không ngừng đối với Sophia giảng giải trò chơi cấu tứ, không tự giác mà đem mặt bản lên, bổn bởi vì sắp bị Bùi Tinh tự mình chỉ điểm mà thập phần hưng phấn kế hoạch cùng kiến mô không khỏi cũng khẩn trương mà cầm lấy bút.</p>
+<p>“《 Pokemon 》 trò chơi này trung tâm cách chơi chính là thu phục sủng vật, bồi dưỡng sủng vật cùng sủng vật đối chiến.” Bùi Tinh điểm điểm bảng đen, “Trò chơi cách chơi chia làm thực tế ảo cùng nửa thực tế ảo hai cái hình thức, thực tế ảo hình thức các ngươi đã biết, chính là dọc theo đường đi không ngừng thu phục sủng vật, đạt được đạo quán khiêu chiến tái thắng lợi.”</p>
+<p>“Đến nỗi nửa thực tế ảo, tức là sủng vật có thể làm bạn chủ nhân, cũng có thể bị người chơi triệu hồi ra tới cùng một cái khác người chơi đối chiến.”</p>
+<p>Tinh tế nửa thực tế ảo trang bị kỳ thật vẫn là thực phương tiện, lớn nhỏ cơ bản liền cùng quang não giống nhau đại, thậm chí còn có cao cấp quang não tự mang nửa thực tế ảo hình thức, bởi vậy này cũng không phải một cái thiên mã hành không đề án.</p>
+<p>Mấy người nghe được điên cuồng gật đầu Tuy rằng nửa thực tế ảo hiện tại là cái thực ít được lưu ý khu vực, nhưng lão bản ý tưởng xác thật có điểm ý tứ!</p>
+<p>Huống chi đây là Bùi Tinh, sao trời cái nào trò chơi không phải đầu tiên là mọi người không xem trọng, lại trở lên tuyến sau người chơi sức sống hung hăng đánh đối phương mặt?</p>
+<p>Bùi Tinh lại điểm điểm sủng vật mô khối “Vì chế tác này một trò chơi, sao trời chuẩn bị hướng khoa học kỹ thuật công ty mua sắm sơ cấp AI, làm mỗi người sủng vật tính cách làm được độc nhất vô nhị, thả là nhưng bồi dưỡng. Nếu là không cẩn thận mất đi sủng vật hoặc ở đối chiến trung làm sủng vật tử vong, kia thực xin lỗi, không còn có cái kia giống nhau như đúc sủng vật.”</p>
+<p>Sophia “Đối sủng vật phóng thích thiện ý mới có thể đạt được dính người sủng vật, như vậy cũng thực phù hợp hiện thực quy luật.”</p>
+<p>Bùi Tinh gật gật đầu “Ta chuẩn bị làm một cái che giấu sủng vật ác ý giá trị, nếu ác ý giá trị vượt qua 0, sủng vật chạy trốn xác suất liền sẽ dần dần biến đại. Đương nhiên, nếu người chơi đối sủng vật làm không tốt sự tình bị phía chính phủ phát hiện, chính là trực tiếp phong hào.”</p>
+<p>Đây cũng là vì tránh cho người chơi vô ý thức xem nhẹ rớt chính mình không đủ cường đại hoặc là hi hữu sủng vật, nếu ngươi đều không thích, người nọ gia trốn chạy luôn là có thể đi?</p>
+<p>Sophia nhấc tay hỏi “Kia trò chơi khắc kim điểm như thế nào tính?”</p>
+<p>Bùi Tinh nói “Ta dự đoán chính là người chơi mỗi trải qua một cái sủng vật đạo quán, hoàn thành đối chiến sau trừ bỏ có thể trực tiếp mang đi đại biểu thắng lợi huy chương, còn có thể khắc kim mua sắm địa phương đặc sản.”</p>
+<p>Một cái vẫn luôn trầm mặc kế hoạch muội tử nhược nhược mà giơ lên tay “Có thể hay không đem khắc kim điểm làm thành đưa cho sủng vật cụ có một chút thuộc tính thêm thành phối sức hoặc là món đồ chơi linh tinh?”</p>
+<p>Bùi Tinh ánh mắt sáng lên Đúng vậy, hắn đời trước vì miêu chủ tử mua đủ loại nhà cây cho mèo cùng món đồ chơi sạn phân quan chẳng lẽ còn không đủ nhiều sao? Hắn khẳng định là lâu lắm chưa thấy qua dưỡng sủng vật người, trong lúc nhất thời si ngốc.</p>
+<p>Tiếp thu kế hoạch muội tử ý kiến, Bùi Tinh vừa lòng mà khích lệ một chút vị này kế hoạch, rốt cuộc mặt khác vài vị hiện tại còn mãn đầu óc đối kháng loại trò chơi đâu, mạnh mẽ làm cho bọn họ đề ý kiến cũng đề không đến điểm tử thượng.</p>
+<p>“Trò chơi này, ta hy vọng cuối cùng có thể chế tác thành từ 199 tuổi, cho tới 5 tuổi tiểu bằng hữu đều có thể thích thượng một trò chơi, đến lúc đó trò chơi sẽ mở ra nửa thực tế ảo hình thức, nếu là về sau ở trên đường cũng có thể thấy có người mang theo chính mình sủng vật tản bộ, vậy xem như thành công.”</p>
+<p>Bùi Tinh há mồm liền cấp nhà mình công nhân vẽ cái thật lớn vô cùng bánh, sau đó mọi người ở đây nhiệt huyết sôi trào trung đuổi bọn hắn đi công tác.</p>
+<p>Vô nghĩa, lại không cho bọn họ đi công tác, Sophia liền nói không chừng muốn lại đây hỏi hắn vì cái gì ngày hôm qua không trở về chính mình tin tức.</p>
+<p>Bay nhanh trốn đến chính mình tư nhân giả thuyết không gian trung hoàn thiện nổi lên chủ yếu nhân vật kiến mô, Bùi Tinh lại lần nữa cắt hồi công tác cuồng hình thức.</p>
+<p>Sao trời fans cũng không biết sao trời tân kế hoạch, nhưng 《 linh khí sống lại 》 trung thực người chơi đều phát hiện sao trời tân chiêu không ít người.</p>
+<p>[ lần này quan tuyên tân hoạt động giống như trên cơ bản đều là tân nhân hoàn thành a, về sau sẽ không Bùi Cẩu liền đem 《 linh khí sống lại 》 trực tiếp uỷ quyền cấp tân nhân đi? ]</p>
+<p>[ vẫn là muốn Bùi Cẩu, cảm giác không phải hắn giống như liền ít đi cái kia vị. ]</p>
+<p>[ Bùi Cẩu một người sở hữu sự đều cho hắn hiển nhiên không hiện thực đi, có thể rút ra thời gian họa mấy trương tạp mặt ta liền cảm thấy mỹ mãn……]</p>
+<p>Tóm lại, các nàng cũng không phải nói tân đoàn đội không tốt, chính là từ nghèo thành giàu dễ, từ giàu về nghèo khó a.</p>
+<p>Mặc kệ ngoài miệng nói như thế nào, tới rồi tân hoạt động mở ra thời gian, các nàng vẫn là một hơi vọt vào trò chơi, xoa tay hầm hè chuẩn bị đem tạp trong hồ tân ra tạp mặt trừu cái sạch sẽ.</p>
+<p>—— đi thôi! Ví tiền của ta!</p>
+<p>Lần này hoạt động nội dung lại là đã lâu chủ tuyến cốt truyện, nữ chủ ở ngăn cản cực đoan phái ý đồ đối thiên đạo thiên vị nhân loại xuống tay kế hoạch sau, bị một con tên là Cùng Kỳ hung thú một móng vuốt đánh gãy khắc hoa vòng tay.</p>
+<p>Lúc này người chơi còn vui tươi hớn hở mà ở thảo luận cốt truyện</p>
+<p>[ hảo, hiện tại vòng tay không có, ta cũng không cần bị đuổi giết, khá tốt. ]</p>
+<p>[ ta thích cái này Cùng Kỳ! Tuy rằng nhìn qua có điểm hung nhưng là là thật sự soái! Ta có thể! ]</p>
+<p>Kết quả giây tiếp theo, Cùng Kỳ bình tĩnh lại sau, lại đột nhiên phát hiện không thích hợp “Đôi mắt của ngươi…… Là kia quốc sư Vãng Sinh Kính?”</p>
+<p>Người chơi Dựa!</p>
+<p>Sau đó người chơi sắm vai nữ chủ liền bị càng vì cực kỳ tàn ác đuổi giết.</p>
+<p>Bởi vì kia khắc hoa vòng tay căn bản không phải cái gì cao cấp pháp khí, chỉ là đem nữ chủ trong mắt Vãng Sinh Kính phong ấn sau tiết ra một sợi hơi thở làm cho bọn họ sinh ra ảo giác thôi.</p>
+<p>Người chơi Một sợi hơi thở liền đáng giá làm cho bọn họ như vậy để ý, kia hoàn chỉnh bản chẳng phải là càng hấp dẫn người? Hơn nữa đều ở trong ánh mắt, các ngươi chẳng lẽ tính toán đào đôi mắt sao?!</p>
+<p>Đào đôi mắt đương nhiên là không có khả năng, bằng không này mang cho người chơi bóng ma tâm lý cũng quá lớn.</p>
+<p>Trên thực tế chấp nhất với vãng sinh nhiều là một ít nhân vật, hướng Cùng Kỳ, Chúc Long loại này đại yêu, là căn bản không có vãng sinh, bọn họ sinh mệnh dài lâu đến vượt quá mọi người tưởng tượng.</p>
+<p>Hơn nữa không có khắc hoa vòng tay hạn chế, người chơi có thể trực tiếp sử dụng Vãng Sinh Kính mang đến lực lượng, cùng phía trước chỉ có thể nhìn ra tới nơi nào có nguy hiểm so sánh với tựa như khai quải.</p>
+<p>Người chơi Ta xông lên! Kêu các ngươi mơ ước lão nương đôi mắt, hiện tại bị phản giết đi!</p>
+<p>Chờ hoạt động kết thúc khi, này một đám người chơi còn có chút chưa đã thèm</p>
+<p>[ mọi người trong nhà, ta mang theo bốn cái nam nhân đại sát đặc giết bộ dáng thật sự là quá soái đi. ( phụ video liên tiếp ) ]</p>
+<p>[ tưởng tượng đến về sau ta đều như vậy cường, tin tưởng đột nhiên liền tới rồi đâu! ]</p>
+<p>[ bất quá lần này cốt truyện hảo ra ngoài ta dự kiến a, không nghĩ tới vòng tay căn bản không phải nhất hố, Vãng Sinh Kính mới là……]</p>
+<p>[ kỳ thật hẳn là đã sớm đoán được đi, bằng không vì cái gì chúng ta làm người chơi có thể trở lại quá khứ? Ta trừu trung quá vãng sinh điện cốt truyện thẻ bài, bên trong đối Vãng Sinh Kính giới thiệu vì “Thượng cổ thời đại Nữ Oa sở luyện chế, có thể xem kính tiền nhân chi tiền trình vãng sự”, này liền có thể giải thích đến thông bái. ]</p>
+<p>[ ta có dự cảm tiếp theo cái cốt truyện điểm hẳn là chính là vì cái gì Vãng Sinh Kính sẽ tới kẻ lừa đảo sư phó trong tay, lại bị hóa tiến nữ chủ đôi mắt. ]</p>
+<p>Càng nhiều người kỳ thật không để bụng cái gì cốt truyện, các nàng chỉ để ý lần này tân ra bài mặt đẹp hay không đẹp</p>
+<p>[ các ngươi để ý cốt truyện, mà ta chỉ để ý lão công của ta, lão công lần này lập vẽ hảo soái ta hảo ái ( mlem mlem ) ]</p>
+<p>[ mau đến xem nữ chủ khảo vấn cấm dục sư huynh, sư huynh, không có ngươi ta nhưng như thế nào sống a ( khóc lớn ) ]</p>
+<p>[ ai nhìn đến ta đại cẩu cẩu? Nga, nguyên lai ở chỗ này nha ( phụ Husky đồ ) ]</p>
+<p>Này một đợt hoạt động qua đi, cũng có không ít phía trước vẫn luôn ở quan vọng, chỉ thích nữ chủ đại sát tứ phương nữ hoàng đảng vào hố.</p>
+<p>Hậu trường vẫn luôn chú ý tân công nhân nghẹn họng nhìn trân trối ——</p>
+<p>Hắn biết 《 linh khí sống lại 》 khả năng sẽ hấp dẫn rất nhiều người khắc kim, nhưng không biết cư nhiên có thể kiếm nhiều như vậy a!</p>
+<p>Chờ đến Bùi Tinh cho bọn hắn phát tiền thưởng khi, mấy người càng là tay đều ở run lên.</p>
+<p>“Thật sự phải cho chúng ta phát nhiều như vậy tiền thưởng sao?” Một vị công nhân nhịn không được đem nội tâm hoạt động nói ra thanh, “Ta giống như cũng không như thế nào tăng ca a.”</p>
+<p>Sao trời vốn dĩ ở thông báo tuyển dụng bọn họ khi liền trực tiếp cấp ra bọn họ kỳ vọng tối cao tiền lương, kỳ thật loại này tiền thưởng bọn họ cũng chưa nghĩ tới, huống hồ hắn phía trước ngốc quá công ty cũng căn bản là không có tăng ca phí này vừa nói, đều kêu công nhân tự giác vì công ty phụng hiến, nhiều lắm ở trò chơi vừa mới khai phá kết thúc khi một người bao một cái bao lì xì.</p>
+<p>Bùi Tinh bật cười “Cầm đi, liền điểm này tiền thưởng cũng không tính cái gì, các ngươi tiếp theo ở sao trời hảo hảo làm, về sau lại nhận người, nếu các ngươi năng lực đủ liền có thể đơn độc mang hạng mục, đến lúc đó tiền thưởng nhưng không ngừng như vậy điểm.”</p>
+<p>Vài vị công nhân điên cuồng gật đầu Làm! Đương nhiên muốn đi theo sao trời làm! Không làm chính là ngốc tử!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong24.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong26.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "xuyen-qua-tinh-te-khong-phai-lam-nguoi-lam-tro-choi-ta-o-tinh-te-lam-tro-choi-phong-than";
+const NOVEL_TITLE = "Xuyên qua tinh tế không phải làm ngươi làm trò chơi / Ta ở tinh tế làm trò chơi phong thần";
+const CHAPTER_TITLE = "Chương 25";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

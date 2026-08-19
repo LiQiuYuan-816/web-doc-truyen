@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 8</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Xuyên qua tinh tế không phải làm ngươi làm trò chơi / Ta ở tinh tế làm trò chơi phong thần
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 8</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong7.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong9.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Ở mạng thực tế ảo gặp mặt sao?” Bùi Tinh nhìn nhìn, dứt khoát lưu loát địa điểm đồng ý.</p>
+<p>Chờ Owen xuất hiện đến trước mặt hắn khi, Bùi Tinh mới đổi thành kinh ngạc biểu tình.</p>
+<p>Tinh tế người phổ biến thọ mệnh 200 tuổi, Owen mới 31, có thể coi như tuổi trẻ tài cao, hơn nữa Owen diện mạo coi như soái khí, mười sáu người chơi liền có không ít là hắn bạn gái phấn, bởi vậy Bùi Tinh cơ hồ là ánh mắt đầu tiên liền nhận ra Owen.</p>
+<p>Hắn vốn dĩ cho rằng mười sáu tới nhiều lắm là cái tiểu cao tầng, sau đó gặp mặt chính là muốn hắn đi nơi đó công tác, nhưng vì cái gì mười sáu Boss tự mình tới?</p>
+<p>Nhưng mà, lúc này Owen lại so với khởi Bùi Tinh càng thêm khiếp sợ ——</p>
+<p>Trước mặt hắn đứng chính là một cái Smart độ phân giải tiểu nhân, cả người đều là liễu đinh, màu tím nghiêng tóc mái chặn nửa khuôn mặt, mặt sau tóc căn căn đứng thẳng, cực có hậu hiện đại nghệ thuật cảm.</p>
+<p>Owen A này……</p>
+<p>Bùi Tinh chạy nhanh chiếm cứ tiên cơ “Ngài hảo, ta là sao trời phòng làm việc Bùi. Bởi vì không nghĩ bại lộ trong hiện thực thân phận, cho nên dùng chính mình kiến mô, ngài sẽ không để ý đi?”</p>
+<p>Lời nói đều nói đến cái này phân thượng, Owen tự nhiên không có khả năng có ý kiến gì “Ta là Owen, Bùi tiên sinh kiến mô vẫn là rất có ý tứ.”</p>
+<p>Bùi Tinh xấu hổ mà cười hai tiếng, còn hảo kiến mô sẽ không mặt đỏ, Owen cũng không có phát hiện.</p>
+<p>Hai người lại liền 《 Ma Viên 》 trò chuyện một hồi, lệnh Bùi Tinh kinh ngạc chính là, Owen là thật sự tự thể nghiệm thông quan rồi một lần 《 Ma Viên 》, hơn nữa đối cốt truyện cũng có chính mình độc đáo lý giải.</p>
+<p>“Ta cảm thấy 《 Ma Viên 》 khâu so là ở công kích những cái đó vì ích lợi làm thực nghiệm trên cơ thể người cặn bã, tựa như khoảng thời gian trước cái kia chỉ có một cái vật thí nghiệm tồn tại nghiên cứu tổ chức giống nhau.”</p>
+<p>Owen cảm khái mà nói, “Cho nên ta cảm thấy xác thật là cái tràn ngập hy vọng trò chơi, ma pháp thiếu nữ cuối cùng bị cứu vớt, chỉ là cuối cùng kết cục khâu so như cũ tồn tại, kế tiếp sẽ phát sinh cái gì thực sự làm ta rất tò mò.”</p>
+<p>Bùi Tinh một bên ngón chân moi mặt đất một bên phụ họa đối phương nói, còn ở trong lòng thầm nghĩ Ta là nghĩ như vậy sao? Nguyên lai trò chơi này còn ở châm chọc những người đó sao? Kỳ thật ta chính là cái kia duy nhất sống sót thực nghiệm thể, nga không, chuyện này là có thể nói sao?</p>
+<p>Cơ hồ đem có thể liêu đều trò chuyện biến, Owen rốt cuộc tiến vào chính đề “Bùi tiên sinh hẳn là đã đoán được, ta lần này tới là muốn mời ngài gia nhập chúng ta mười sáu.”</p>
+<p>Thấy đối phương vẻ mặt khó xử, Owen dứt khoát nói thẳng nói “Đương nhiên, này chỉ là đi cái lưu trình.”</p>
+<p>“Kia ngài là tưởng?” Bùi Tinh khiêm tốn hỏi.</p>
+<p>“Mười sáu phía trước vẫn luôn cực hạn với trò chơi ngành sản xuất, mà 《 Ma Viên 》 cốt truyện làm chúng ta thấy được tân phương hướng.”</p>
+<p>“Nếu Bùi tiên sinh ngài tạm thời không có phải làm 《 Ma Viên 2》 ý tứ, muốn hay không cùng mười sáu hợp tác đem 2 cải biên thành động họa điện ảnh?”</p>
+<p>Bùi Tinh tự hỏi một phen, cảm thấy đối phương đề kiến nghị thập phần được không.</p>
+<p>Hắn người này vẫn luôn là có mới nới cũ, phải đợi hắn không ra thời gian tới làm 《 Ma Viên 2》, chỉ sợ fans phải chờ tới hoa đều cảm tạ.</p>
+<p>Huống hồ trò chơi cùng điện ảnh cùng có lợi cộng lợi, mười sáu tại tiến hành điện ảnh tuyên phát khi cũng không thể tránh né mà sẽ hấp dẫn người tới chơi trò chơi, Owen hiện giờ như vậy kéo hạ mặt, chính là coi trọng 《 Ma Viên 》 ưu tú cốt truyện tuyến, muốn một hơi ở điện ảnh ngành sản xuất khai hỏa chính mình thanh danh, thuận tiện cho chính mình bán một cái hảo.</p>
+<p>Hiểu rõ trong đó loanh quanh lòng vòng, Bùi Tinh lại như cũ không có trực tiếp tiếp nhận đối phương cành ôliu.</p>
+<p>“Xin lỗi, trên thực tế ta mới 19, vẫn là cái vị thành niên.” Bùi Tinh khó xử mà nói, “Loại sự tình này không có ta người giám hộ gật đầu, ta là không dám đồng ý.”</p>
+<p>Bùi Tinh lời này cũng không tính làm bộ, nhưng Sior kỳ thật cho hắn rất lớn tự do, đương nhiên chuyện này liền không cần nói cho người khác.</p>
+<p>“19 tuổi?” Owen bị hoảng sợ, theo sau trong ánh mắt lại nhiều phân thưởng thức, “Bùi, ngươi mang đến kinh hỉ thật sự là quá nhiều, hảo đi, ngươi có thể nhiều cùng chính mình người giám hộ thảo luận một chút, vị thành niên lỗ mãng hấp tấp không thể được.”</p>
+<p>Thật vất vả ứng phó xong Owen, Bùi Tinh thật dài mà thở dài một hơi.</p>
+<p>Quả nhiên, so với xã giao cái loại này loanh quanh lòng vòng, hắn vẫn là càng thích chính mình một người yên lặng làm trò chơi.</p>
+<p>Đem hôm nay phát sinh sự hoàn chỉnh chia cho Sior, Bùi Tinh ngượng ngùng một chút, lại ở cuối cùng bỏ thêm một câu cực kỳ trà xanh nói “Ta dùng người giám hộ làm lấy cớ, Sior ngươi sẽ không sinh khí đi.”</p>
+<p>Đối diện không bao lâu liền phát tới hồi phục “Cẩn thận một ít là chuyện tốt. Còn có, làm người giám hộ, ta vốn dĩ liền nên là ngươi hậu thuẫn.”</p>
+<p>Cùng tiểu cẩu giống nhau cọ cọ chính mình quang não, Bùi Tinh tâm tình lại lần nữa hảo lên.</p>
+<p>Bên kia Sior cũng đem chính mình sưu tập đến về mười sáu tin tức chia cho Bùi Tinh “Owen người này chính là thích bồi dưỡng cùng hắn năm đó giống nhau tân nhân, có thể cùng hắn hợp tác, nhưng nếu chỉ là bán bản quyền nói, tốt nhất ở hợp đồng viết rõ ràng không tiếp thu cốt truyện tùy ý cải biến.”</p>
+<p>Bùi Tinh điên cuồng gật đầu, ý thức được đối diện nhìn không tới lại đánh chữ nói “Ta biết, ta cũng tưởng cho chính mình tác phẩm kế tiếp điện ảnh đương một hồi biên kịch, Owen hẳn là sẽ không cự tuyệt.”</p>
+<p>Quả nhiên, Owen ở biết được Bùi Tinh duy nhất yêu cầu này sau, cực kỳ vừa lòng mà ở hợp đồng hơn nữa này một cái, sau khi kết thúc ưu nhã mà cùng Bùi Tinh nắm tay</p>
+<p>“Hợp tác vui sướng.”</p>
+<p>Trong nháy mắt liền tới rồi tân duệ trò chơi đại tái cuối cùng một ngày.</p>
+<p>Ở mười ngày trước, 《 Ma Viên 》 cũng đã vững vàng ngồi trên đệ nhất bảo tọa, càng là có 95% trở lên người chơi cho năm sao khen ngợi, thiếu bộ phận không có cấp năm sao chính là bởi vì bị trí úc trò chơi cốt truyện ngược tới rồi, ở bình luận thân thiết thăm hỏi Bùi lão cẩu.</p>
+<p>Mà mười sáu cùng sao trời phòng làm việc lẫn nhau quan cũng là gần nhất các người chơi nhiệt nghị một cái đề tài, thậm chí còn có đồn đãi nói hai nhà sẽ hợp tác trò chơi.</p>
+<p>Hợp tác trò chơi không biết là thật là giả, nhưng Owen ở phỏng vấn trung biểu hiện ra đối sao trời phòng làm việc độ cao tán dương, chứng thực hai người lén có lui tới suy đoán.</p>
+<p>Không ra mọi người dự kiến, 《 Ma Viên 》 làm chỉ có một người phòng làm việc tác phẩm, nhất cử tháo xuống tân duệ trò chơi đại tái quán quân.</p>
+<p>Liên minh cao tầng cũng ở trên Tinh Võng chính mình tài khoản trung cấp ra như vậy lời bình</p>
+<p>[ ta thật cao hứng trò chơi ngành sản xuất xuất hiện mới mẻ máu, cố lên đi người trẻ tuổi! Hy vọng ngươi tác phẩm có thể hội tụ thành một mảnh lộng lẫy sao trời! ]</p>
+<p>Thượng Tinh Võng cùng duy trì chính mình fans nói hỉ, bắt được liên minh hai mươi vạn tiền thưởng cùng quán quân mở rộng vị, Bùi Tinh mỹ tư tư mà tham gia tân duệ trò chơi đại tái sưu tầm.</p>
+<p>Lần này Bùi Tinh dùng chính là một cái có tóc đen hắc môi hắc mắt ảnh Smart độ phân giải kiến mô.</p>
+<p>Nhân viên công tác cơ hồ đều phải không nín được cười, nhưng tốt đẹp chuyên nghiệp tố chất khiến nàng lập tức khống chế được chính mình biểu tình, làm bộ tự nhiên mà mở ra phòng live stream.</p>
+<p>“Đến đây đi, cùng đại gia chào hỏi một cái.”</p>
+<p>Màn ảnh phối hợp mà chuyển hướng Bùi Tinh, phòng live stream nháy mắt bị dấu chấm hỏi spam</p>
+<p>[ các huynh đệ? Xin hỏi đây là cái cái gì? ]</p>
+<p>[《 Ma Viên 》 chế tác người thẩm mỹ hảo đặc thù, này đối với nhân loại tới nói vẫn là quá vượt mức quy định chút……]</p>
+<p>Bùi Tinh phối hợp mà cười cười, chút nào không màng hắn hiện tại cười rộ lên như là mới ăn xong tiểu hài tử “Chào mọi người, ta là sao trời phòng làm việc Bùi.”</p>
+<p>Người chủ trì trêu ghẹo mà nói “Bùi tiên sinh dùng kiến mô cũng dọa chúng ta nhảy dựng, xin hỏi đây là về sau sẽ xuất hiện trong trò chơi kiến mô sao?”</p>
+<p>Bùi Tinh “Đương nhiên sẽ không, đây là ta chuyên chúc Smart tạo hình.”</p>
+<p>Người chủ trì lại hỏi “Mọi người đều biết, 《 Ma Viên 》 ở trò chơi tóm tắt trung đã từng giới thiệu quá, đây là một khoản về ái cùng ma pháp trò chơi, Bùi chế tác người bản thân là như thế nào lý giải đâu?”</p>
+<p>Bùi Tinh ra vẻ nghiêm túc mà trả lời nói “Ma pháp hẳn là không cần giải thích đi, đến nỗi ái, trò chơi bản thân nội hạch chính là liền tính thân ở tuyệt vọng, cũng sẽ khai ra ái cùng hy vọng chi hoa.”</p>
+<p>[ không hổ là ngươi, ái chiến sĩ. ]</p>
+<p>[ giống như nói rất đúng, lại giống như nơi nào đều không đúng. ]</p>
+<p>Sinh động một chút không khí, người chủ trì rốt cuộc tiến vào chính đề, chọn lựa mấy cái võng hữu tiếng hô rất lớn vấn đề hỏi “Theo Bùi tiên sinh theo như lời, 《 Ma Viên 》 là sẽ có tục, xin hỏi có thể lộ ra một chút 《 Ma Viên 2》 tính toán khi nào mặt thế sao?”</p>
+<p>“Đương nhiên có thể.” Bùi Tinh gật gật đầu, “Đại gia hẳn là có không ít người chú ý tới sao trời cùng mười sáu follow lẫn nhau đi. Trên thực tế, tuy rằng ta tạm thời không tính toán làm 《 Ma Viên 2》, nhưng sao trời đã cùng mười sáu đạt thành hợp tác, tương lai đem từ mười sáu dùng thực tế ảo động họa điện ảnh phương thức bày biện ra kế tiếp chuyện xưa.”</p>
+<p>Đương nhiên, Bùi Tinh đang nói ra này đoạn lời nói trước đã cùng Owen thông qua khí. Hai người đều thực tán đồng ở phỏng vấn trung trước lộ ra một đợt tạo thế, phía chính phủ lại thuận thế công khai như vậy phương án.</p>
+<p>Người chủ trì kinh ngạc mà nhướng mày, đây là ở kịch bản ngoại thu hoạch ngoài ý muốn, chỉ sợ lần này phát sóng trực tiếp lưu lượng cũng sẽ đạt tới tân cao.</p>
+<p>“Nếu sao trời phòng làm việc tiếp theo cái trò chơi kế hoạch không phải 《 Ma Viên 2》, như vậy kế tiếp sẽ có cái dạng nào quy hoạch đâu?”</p>
+<p>Bùi Tinh thừa cơ lại đánh lên quảng cáo “Ta khoảng thời gian trước chế tác một khoản có thể ở trên quang não du ngoạn hưu nhàn hướng trò chơi nhỏ, tên là 《 nguyệt thỏ nhà 》, hôm nay liền sẽ ở phía chính phủ trang web thượng thượng tuyến, là một khoản ấm áp hưu nhàn hướng trò chơi, hy vọng có thể an ủi các người chơi bị 《 Ma Viên 》 xúc phạm tới tâm linh.”</p>
+<p>“Đến nỗi kế tiếp, ta sẽ nếm thử một khoản hoàn toàn mới loại hình game thực tế ảo, dự tính ba tháng mặt sau thế, đại gia có thể nhiều hơn chờ mong.”</p>
+<p>Làn đạn [ hắn nói bị 《 Ma Viên 》 xúc phạm tới đúng không! Quả nhiên là cẩu tặc! ]</p>
+<p>[ nhưng hắn nói hoàn toàn mới loại hình ai. ]</p>
+<p>[ Bùi Cẩu thương ta 800 biến, ta đãi Bùi Cẩu như sơ luyến. ]</p>
+<p>Mặc kệ phòng live stream sôi nổi hỗn loạn, người chủ trì cùng Bùi Tinh hai người lại trò chuyện chút không đau không ngứa đề tài, mới ở khán giả lưu luyến không rời hạ từ biệt.</p>
+<p>Mà bên kia, Owen đang ở vui sướng khi người gặp họa mà cấp Phi Ưng lão bản đả thông tin ——</p>
+<p>“Hắc! Đệ nhất lại bị tân nhân cướp đi cảm giác thế nào?”</p>
+<p>Cái này “Lại” tự liền thập phần có linh hồn, mọi người đều biết, Phi Ưng thượng một lần bị cướp đi đệ nhất vẫn là bởi vì mười sáu.</p>
+<p>Phi Ưng lão tổng vẫn duy trì cao lãnh nhân thiết, nhàn nhạt hỏi “Ta không ngại này đó, nếu hắn chỉ là phù dung sớm nở tối tàn, kia hiện tại tranh chấp đều không có ý nghĩa. Nếu sao trời là thật sự có cái gì, kia cũng đối trò chơi ngành sản xuất lợi lớn hơn tệ.”</p>
+<p>Kỳ thật trò chơi ngành sản xuất bên trong vẫn luôn đều có ẩn hình cùng tin đồn thống, tỷ như đối kháng loại trò chơi sở dĩ như vậy hỏa, chính là bởi vì các công ty lớn đều ở làm loại này trò chơi, mà hiện giờ đối kháng loại trò chơi tiền lãi sắp qua đi, nếu sao trời có thể vì trò chơi giới dò đường, sẽ tiết kiệm được bọn họ không ít thời gian cùng tinh lực.</p>
+<p>Thí dụ như hiện tại, các đại trò chơi nhà máy hiệu buôn trừ bỏ đầu óc xách không rõ còn muốn quan vọng, về cốt truyện hướng trò chơi kế hoạch án hẳn là đều đặt ở trên bàn.</p>
+<p>“Hảo đi, ngươi thật không thú vị.” Owen bẹp bẹp miệng, “Ta chỉ là đả thông tin lại đây cùng ngươi khoe ra một chút, mười sáu đã cùng sao trời hợp tác rồi, ta tin tưởng chính mình ánh mắt, lúc này đây nhất định là ta ăn trước đến bánh kem.”</p>
+<p>Cùng này công thức hoá bác văn bất đồng, Owen tư nhân blog thực bình dân mà chuyển phát này bác văn, xứng với ba cái rải hoa hoa tiểu biểu tình.</p>
+<p>Phía dưới bình luận khu lập tức bị hai nhà fans công chiếm, tràn ngập [ song bếp mừng như điên ] từ từ ngôn luận.</p>
+<p>Bùi Tinh đối chính mình trở thành hai cái đại lão bản lén nói chuyện phiếm đề tài chuyện này hồn nhiên không biết, mà ở trên Tinh Võng, 《 nguyệt thỏ nhà 》 bất tri bất giác thượng tuyến.</p>
+<p>Sao trời phòng làm việc lúc này đang đứng ở nơi đầu sóng ngọn gió, đẩy ra 《 nguyệt thỏ nhà 》 liền lập tức bị các gia phòng làm việc mua sắm tới nghiên cứu ——</p>
+<p>Bọn họ tuy rằng khinh thường sao trời, cảm thấy Bùi không có khả năng luôn có vừa vặn thích hợp thị trường hảo điểm tử, nhưng vẫn là sợ hãi, vạn nhất này lại là tiếp theo cái Owen làm sao bây giờ?</p>
+<p>Tìm hiểu không đến đối phương bạo hỏa bí mật, kia mua tới nghiên cứu một chút cũng có thể a!</p>
+<p>《 nguyệt thỏ nhà 》 cũng không quý, trò chơi trực tiếp mua sắm xuống dưới chỉ dùng 14 tinh tệ, so với game thực tế ảo tới nói quả thực chính là hộc máu đại bán phá giá, thuộc về người thường cũng sẽ không đau lòng trình độ.</p>
+<p>Sau đó bọn họ đã bị đơn giản trò chơi phương thức, đáng yêu phong cách, chỉ có ở mua sắm cấp nguyệt thỏ khăn quàng cổ, phát kẹp, áo choàng chờ tiểu vật phẩm trang sức mới có thể nạp phí cửa hàng chấn kinh rồi.</p>
+<p>Cũng không phải nói trò chơi không có mặt khác nhưng mua sắm vật phẩm, nhưng mặt khác vật phẩm đều có thể thông qua nguyệt thỏ ở trang viên gieo trồng cà rốt mua sắm.</p>
+<p>Bọn họ nghĩ trăm lần cũng không ra —— quý nhất siêu nhân áo choàng cũng chỉ yêu cầu 5 tinh tệ, tiện nghi tiểu hoa đồ trang sức thậm chí chỉ cần 1 tinh tệ, hơn nữa chỉ có thể làm trang trí, không có bất luận cái gì thực tế sử dụng, như vậy thật sự sẽ có người mua sao?</p>
+<p>Càng thêm lệnh người khó hiểu chính là, cơ hồ tất cả mọi người phát hiện, ở du ngoạn thời gian đạt tới hai mươi phút tả hữu sau, trò chơi này dứt khoát liền không có có thể chơi địa phương!</p>
+<p>“Cà rốt còn muốn nửa giờ thành thục, hồ ly cửa hàng đồ vật một cái đều mua không nổi, NPC đối thoại thuần túy là nói chuyện phiếm...... Sao trời điên rồi sao? Vẫn là trị số thiết trí sai lầm?”</p>
+<p>Không có khắc kim điểm, không có hấp dẫn người chơi vẫn luôn chơi đi xuống móc, trò chơi rốt cuộc như thế nào kiếm tiền?</p>
+<p>“Quá đáng tiếc, lần đầu tiên sáng tạo thành công làm Bùi trở nên tự đại.” Một cái bụng phệ nam nhân lắc lắc đầu, “Cốt truyện hướng trò chơi mới là gần nhất xu thế tất yếu, trò chơi này nhất định phải nằm liệt giữa đường.”</p>
+<p>Nhưng cũng có người ngoại lệ, tỷ như tàu thuỷ bên trong liền đưa ra như vậy kiến nghị “《 Ma Viên 》 bạo hỏa cùng nó xuất sắc cốt truyện thoát không được can hệ, mà tốt kịch bản khó tìm, nếu không thể đem cốt truyện cùng trò chơi hoàn mỹ kết hợp càng là lãng phí một cái hảo điểm tử. Ta kiến nghị phục khắc Ma Viên ý tưởng có thể tạm thời gác lại, trước đối 《 nguyệt thỏ nhà 》 tiến hành hóa giải, mặc kệ là tăng ca vẫn là đẩy nhanh tốc độ, trong một tháng đều cần thiết hoàn thành, cần phải cọ thượng này một đợt nhiệt độ.”</p>
+<p>“Ta đồng ý.”</p>
+<p>“Ta cũng là.”</p>
+<p>“Hảo, kia trò chơi này liền giao cho thuyền buồm phòng làm việc.”</p>
+<p>Cuối cùng một người giải quyết dứt khoát.</p>
+<p>Trùng hợp chính là, thuyền buồm phòng làm việc chính là Simon hiện tại ở phòng làm việc.</p>
+<p>Bất quá nếu là làm Bùi Tinh đã biết, phỏng chừng cũng chỉ sẽ trào phúng Simon hiện tại đi thuyền buồm, về sau tất nhiên lại lần nữa lật thuyền.</p>
+<p>Mà tối nay, trừ bỏ Bùi Tinh ngoại, chú định là mọi người đều gian nan một cái ban đêm.</p>
+<p>Cơ hồ toàn trò chơi ngành sản xuất đều ở như hổ rình mồi ngày mai công bố đầu ngày doanh số —— sao trời lần này sẽ ăn con cua thất bại sao?</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong7.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong9.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "xuyen-qua-tinh-te-khong-phai-lam-nguoi-lam-tro-choi-ta-o-tinh-te-lam-tro-choi-phong-than";
+const NOVEL_TITLE = "Xuyên qua tinh tế không phải làm ngươi làm trò chơi / Ta ở tinh tế làm trò chơi phong thần";
+const CHAPTER_TITLE = "Chương 8";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

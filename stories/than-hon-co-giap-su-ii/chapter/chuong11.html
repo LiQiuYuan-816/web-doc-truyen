@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 11 Đánh vỡ khốn cục</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Thần hồn cơ giáp sư II
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 11 Đánh vỡ khốn cục</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Thủ đô  Harris thành</p>
+<p>Ban đêm tư đế văn phố, đèn đuốc sáng trưng, làm mỹ thực một cái phố, rất nhiều người lựa chọn tới nơi này dùng cơm.</p>
+<p>Duyệt Lai khách sạn ở trên mạng giả thuyết thành thị khai trương sau, cửa hàng thật sinh ý phát triển không ngừng, hơn nữa Đông Cửu Nhật kỹ thuật cùng tài chính nhập cổ, mặt tiền rực rỡ hẳn lên, thực đơn sáng tạo khác người, mỗi ngày cao bằng mãn đường.</p>
+<p>Đường Trung Bình cùng bốn cái đầu bếp ở trong phòng bếp bận việc hơn hai giờ, rốt cuộc được một chút nhàn rỗi.</p>
+<p>“Đường lão bản, ngươi đi xem phát sóng trực tiếp đi, dư lại giao cho chúng ta.” Hàn bếp nhanh chóng mà thiết khoai tây ti, cũng không ngẩng đầu lên mà đối Đường Trung Bình nói.</p>
+<p>“Đúng vậy, khó được nhạc nhạc thượng phát sóng trực tiếp, ngươi cái này đương ba, như thế nào cũng đến đi cổ cổ động. Dã ngoại cầu sinh không dễ dàng, nhạc nhạc da thịt non mịn, không biết cấm không cấm được?” Mập mạp thành thạo mà điên muỗng.</p>
+<p>Đường Trung Bình dùng sạch sẽ bố sát xong lưu lý đài, nhìn về phía điện tử màn hình, thấy danh sách chỉ còn một phần ba, liền nói “Hành, vậy vất vả các ngươi. Nhạc nhạc cái này tiểu tử thúi, thật không biết hắn là nghĩ như thế nào, nghỉ không trở về nhà ăn tết, thiên đi tìm cái kia cái gì Lục ảnh đế, chơi đến vui đến quên cả trời đất, còn không có tìm hắn tính sổ. Hắn đảo hảo, tự chủ trương mà tiếp cái gì dã ngoại cầu sinh phát sóng trực tiếp, quá nguy hiểm. Chờ hắn đã trở lại, ta phi tấu lạn hắn mông không thể!”</p>
+<p>Mập mạp nhấp miệng cười.</p>
+<p>Đường lão bản cũng liền ngoài miệng nói nói, trên thực tế nào bỏ được đánh nhạc nhạc? Nhạc nhạc là hắn tâm đầu nhục, đau còn không kịp đâu!</p>
+<p>Đường Trung Bình từ sau bếp ra tới, ở đại đường gặp được Lý diệp, Lý diệp đang ở đối phục vụ sinh nói cái gì, nhìn đến hắn, kêu “Lão bản, ngươi muốn đi xem phát sóng trực tiếp sao?”</p>
+<p>“Là, ta không yên tâm nhạc nhạc, không biết hắn hiện tại như thế nào?” Đường Trung Bình nói.</p>
+<p>“Đi 203 ghế lô đi, nơi đó hiện tại nhàn rỗi, có quang não nhưng network, ta đi cho ngươi đoan cơm chiều, ngươi vừa ăn biên xem.” Lý diệp nói.</p>
+<p>Đường Trung Bình nghĩ nghĩ, gật đầu “Trong chốc lát ngươi cùng ta một khối xem.”</p>
+<p>“Này…… Trong tiệm còn có khách nhân, ta đi không khai.” Lý diệp nói.</p>
+<p>“Không phải có phục vụ sinh ở sao? Ngươi cái này đại đường giám đốc ngẫu nhiên có thể nghỉ ngơi một chút.” Đường Trung Bình vỗ vỗ bờ vai của hắn, “Liền như vậy định rồi, ta đi ghế lô chờ ngươi.”</p>
+<p>Lý diệp cười cười, đồng ý.</p>
+<p>Hắn cùng Đường Trung Bình là lão bằng hữu, vài thập niên giao tình, không câu nệ tiểu tiết.</p>
+<p>Đường Trung Bình tiến vào 203 ghế lô, khẽ chạm trên bàn cơm cái nút, hình tròn bàn lớn tự động biến thành hình vuông bàn dài, thích hợp bốn người tòa.</p>
+<p>Hắn chọn trương ghế dựa ngồi xuống, thanh khống quang não, tìm được Eric giải trí phát sóng trực tiếp ngôi cao.</p>
+<p>Chỉ chốc lát sau, trước bàn trong không khí toát ra một cái to lớn màn hình ảo, tiến vào dã ngoại cầu sinh phát sóng trực tiếp video, vô số làn đạn bay nhanh quét qua, chặn toàn bộ hình ảnh.</p>
+<p>“Điều chỉnh làn đạn thiết trí.” Đường Trung Bình nói, “Súc đến góc trái bên dưới.”</p>
+<p>“Thu được.” Quang não AI đáp lại, làn đạn biến mất, tập trung ở góc trái bên dưới bình luận trong khung.</p>
+<p>Nam bán cầu mùa đông, ban ngày so đêm tối trường, Bắc bán cầu trời tối đều hai giờ, Nam bán cầu còn ở vào hoàng hôn đan xen khoảnh khắc.</p>
+<p>Khu rừng rậm rạp, tối tăm ánh sáng, bảy người leo lên ở nhánh cây thượng, gắt gao mà ôm thân cây, run bần bật, dưới tàng cây truyền đến “Bang bang” tiếng đánh, cùng với liên miên không dứt thú tiếng hô.</p>
+<p>Đường Trung Bình liếc mắt một cái thấy được Đường Nhạc.</p>
+<p>Video trung, Đường Nhạc thân mật mà súc ở nam nhân trong lòng ngực, cùng nhau ngồi ở nhánh cây thượng, đương cây cối bị kịch liệt lay động thời điểm, hai người ôm đến càng khẩn, mặt đều mau dán ở bên nhau.</p>
+<p>Đường Trung Bình đại nhíu mày.</p>
+<p>Người nam nhân này…… Là cái kia kêu rực rỡ ảnh đế?</p>
+<p>Mang nhạc nhạc tiến giới giải trí đầu sỏ gây tội!</p>
+<p>Nếu không phải hắn, nhạc nhạc như thế nào sẽ êm đẹp cơ giáp sinh không lo, phi đi tham gia cái gì tuyển tú tiết mục, tuy rằng được quán quân, nhưng từ đây nhân sinh quải hướng về phía một khác điều quỹ đạo.</p>
+<p>Tám năm trước, ở phía sau hẻm thùng rác biên nhặt được nhạc nhạc, Đường Trung Bình liền hạ quyết tâm, nhất định phải làm cái này chịu quá ngược đãi hài tử bình an vui sướng mà trưởng thành, hắn không cần quá nhiều quang hoàn, càng không cần bất luận cái gì gánh nặng, muốn làm cái gì, liền làm cái gì.</p>
+<p>Nếu tiến giới giải trí phát triển nhạc nhạc có thể vui vẻ, như vậy tùy hắn đi chơi, vạn nhất hỗn không đi xuống, còn có thể về nhà kế thừa gia nghiệp, tóm lại không đói được hắn.</p>
+<p>Bất quá, hiện tại phát sóng trực tiếp trong video là cái gì trạng huống?</p>
+<p>Vì cái gì các khách quý đều tránh ở trên cây?</p>
+<p>Di?</p>
+<p>Ngồi ở một khác căn nhánh cây thượng tóc đen thiếu niên…… Là Đông Cửu Nhật?</p>
+<p>Cửu Nhật thế nhưng cũng tham gia dã ngoại cầu sinh tiết mục?</p>
+<p>Đường Trung Bình treo tâm, thoáng chốc hạ xuống.</p>
+<p>Đông Cửu Nhật cũng không phải là cái bình thường thiếu niên, hắn là cơ giáp sinh lại tinh thông trù nghệ, dựa vào tinh vi nấu nướng kỹ thuật tại thế giới Trù Nghệ Đại Tái thượng đạt được đáng quý hạng nhất kim thưởng.</p>
+<p>Duyệt Lai khách sạn sắp đóng cửa khi, hắn cầm tổ truyền thực đơn cùng hùng hậu tài chính, thành khẩn mà tới nói sinh ý.</p>
+<p>Một tháng không đến, Duyệt Lai khách sạn khởi tử hồi sinh.</p>
+<p>Hắn vững vàng bình tĩnh, đầu óc rõ ràng, hiểu được cân nhắc lợi hại, có hắn ở, nhất định có thể chiếu cố đến nhạc nhạc.</p>
+<p>Lý diệp bưng bữa tối tiến ghế lô, nhìn đến trong video khách quý đều oa ở trên cây không biết đang làm gì, buông mâm đồ ăn, tò mò mà tới gần màn hình ảo.</p>
+<p>“Sao lại thế này?” Hắn hỏi Đường Trung Bình.</p>
+<p>“Không rõ ràng lắm, ta mở ra phát sóng trực tiếp sau, bọn họ liền ở trên cây.” Đường Trung Bình lắc đầu.</p>
+<p>Lý diệp triều góc trái bên dưới bình luận khung xem xét vài lần, mày một ninh, nhanh chóng mà ở màn hình ảo góc phải bên dưới kéo ra camera một cái khác thị giác, phóng đại ——</p>
+<p>“A!”</p>
+<p>Hắn hoảng sợ, liên tục lui về phía sau.</p>
+<p>Trong video, rậm rạp dị thú tụ tập dưới tàng cây, không ngừng mà va chạm thân cây, ý đồ đem tránh ở thụ thượng nhân loại đâm xuống dưới.</p>
+<p>Đường Trung Bình chấn động, buột miệng thốt ra “Sa?”</p>
+<p>Vừa rồi hắn ngồi ở bàn ăn trước, ly màn hình có điểm xa, lại đem bình luận khung súc ở góc trái bên dưới, hoàn toàn không chú ý mặt khác người xem bình luận, bởi vậy xem đến không hiểu ra sao.</p>
+<p>Lúc này Lý diệp điều ra một cái khác thị giác, nhìn đến dưới tàng cây thượng trăm chỉ Sa thú, hắn cả kinh đứng lên.</p>
+<p>“Như thế nào sẽ có nhiều như vậy sa?”</p>
+<p>“Bọn họ tránh ở trên cây đã bao lâu?” Lý diệp lo lắng địa đạo, “Sa khó đối phó, đặc biệt số lượng nhiều như vậy!”</p>
+<p>Đường Trung Bình tim đập tới rồi cổ họng, lo âu mà nhìn chằm chằm phát sóng trực tiếp video.</p>
+<p>Sa thịt bạch tươi mới, là đầu bếp thích xử lý nguyên liệu nấu ăn chi nhất, có thể thịt kho tàu, tiểu xào, hầm canh cùng với nướng BBQ.</p>
+<p>Làm đầu bếp ngành sản xuất bảy tám chục năm, Đường Trung Bình qua tay xử lý sa không có thượng vạn cũng có mấy ngàn đầu.</p>
+<p>Nhưng mà, vào phòng bếp sa là chết, mà phòng live stream sa lại là sống.</p>
+<p>Sa thuộc quần cư dị thú, chú trọng tập thể đi săn, hiện giờ xuất động thượng trăm đầu, ngồi canh trên cây con mồi, tuyệt không sẽ dễ dàng từ bỏ.</p>
+<p>Đường Trung Bình biết rõ Sa thú hung mãnh.</p>
+<p>Đã từng vì đề cao tinh thần lực, hắn bị Caroll  Grace mang đi bí mật nghiên cứu căn cứ, ở nơi đó, hắn giấc mộng Nam Kha, phảng phất xuyên qua thời không về tới mạt thế thời kỳ.</p>
+<p>Hắn gặp được Đường gia tổ tông đường sở, gặp được đường sở nhi tử Đường Bảo, cùng với Đường Bảo bạn lữ sở dực.</p>
+<p>Bọn họ là trong lịch sử danh nhân, là mạt thế trung anh hùng, là nhân loại người mở đường.</p>
+<p>Đường Trung Bình đi theo bọn họ anh dũng mà cùng dị thú chiến đấu, kiên cường bất khuất mà ở trong nghịch cảnh sinh tồn, đã gian nan lại thống khổ, vô số người ngã xuống, vô số người đứng lên, các tiền bối vi hậu bối nhóm sáng lập ra một cái thông hướng tương lai quang minh đại đạo.</p>
+<p>Mặc kệ đó là ảo cảnh vẫn là chân thật thế giới, hắn đều thiết thân mà thể hội quá dị thú đáng sợ cùng tàn nhẫn, hiện giờ nhìn đến phát sóng trực tiếp trong video, các khách quý bị thượng trăm chỉ Sa thú vây quanh, hắn lòng nóng như lửa đốt, lo lắng không thôi.</p>
+<p>“Phanh ——”</p>
+<p>Sa thú lại một lần hung hăng mà va chạm thân cây, này đó tráng đến yêu cầu năm người vây quanh cây cối, sắp chịu đựng không được sa thường xuyên va chạm.</p>
+<p>Belloc sợ tới mức hàm răng run lên, lời nói đều cũng không nói ra được.</p>
+<p>Hắn hận không thể cho chính mình đánh mấy cái miệng tử, vì cái gì muốn ở trong rừng rậm lớn tiếng kêu la?</p>
+<p>Nếu thời gian có thể lùi lại, hắn nhất định sẽ nhắm chặt miệng, đương người câm!</p>
+<p>Nhưng mà trên đời không có thuốc hối hận, hắn lớn giọng đem dị thú cấp hấp dẫn lại đây.</p>
+<p>Chính là tới liền tới đi, vì cái gì lập tức tới một đoàn đâu?</p>
+<p>“Hô hô hô ——” hắn gắt gao mà ôm thân cây, hạ giọng dò hỏi, “Hơn nửa giờ, chúng nó còn không rời đi, chúng ta làm sao bây giờ? Vẫn luôn đãi ở trên cây sao?”</p>
+<p>Cùng hắn ở cùng cây thượng ưu na cắn môi, nhỏ giọng mà nói “Ta…… Ta tưởng đi WC.”</p>
+<p>“…… Lại kiên trì một chút.” Lý Mân Cát khuyên bảo.</p>
+<p>“Sa thú có kiên nhẫn nhất, chỉ cần phát hiện con mồi, tuyệt sẽ không từ bỏ.” Đông Cửu Nhật híp mắt, cúi đầu đánh giá dưới tàng cây dị thú.</p>
+<p>“Chúng ta chỉ có bảy người, chúng nó có thượng trăm đầu, cho chúng nó tắc không đủ nhét kẽ răng đi?” Belloc ưu thương mà nói, “Đại gia mau ngẫm lại biện pháp.”</p>
+<p>“Biện pháp?” Cổ Thánh Triết nói, “Duy nhất biện pháp chính là giết chúng nó.”</p>
+<p>Đổi thành hơn hai mươi năm trước chính mình, này đó nhất giai dị thú không đáng giá nhắc tới, mở ra cơ giáp một đao một cái, tùy tiện sát, giết còn có thể kéo hồi căn cứ làm bữa tối.</p>
+<p>“Ai ——” Belloc thở dài, “Vì cái gì tiết mục tổ không cho chúng ta mang vũ khí? Bàn tay trần có thể đánh thắng được mới là lạ!”</p>
+<p>Nếu là Cổ Thánh Triết không gian vòng cổ cao tính năng vũ khí có thể lấy ra tới sử dụng thì tốt rồi!</p>
+<p>Đáng chết tiết mục tổ, thế nhưng cấm bọn họ sử dụng cao tính năng vũ khí!</p>
+<p>Belloc hận đến cắn răng, hướng huyền phù tại bên người tiểu viên cầu camera nhe răng.</p>
+<p>Bố lợi thành mỗ tràng cao lầu, đạo diễn cùng nhân viên công tác vây quanh thực tế ảo hình ảnh, không khí khẩn trương mà thảo luận.</p>
+<p>“Thượng trăm trước Sa thú, có điểm huyền.”</p>
+<p>“Bọn họ không phải thượng kỳ xuất ngũ quân nhân, không mang theo vũ khí tiến rừng rậm quá không hợp lý.”</p>
+<p>“Sáu vị khách quý là thế giới cấp đại minh tinh, vạn nhất xảy ra chuyện, số trăm triệu fans có thể đem Eric công ty vây đến chật như nêm cối!”</p>
+<p>“Ta cảm thấy…… Có thể hay không phóng khoáng điều kiện? Cho phép cổ thiên vương sử dụng cao tính năng vũ khí?”</p>
+<p>“Hoặc là làm hai vị cơ giáp sinh sử dụng cơ giáp.”</p>
+<p>Lưu trữ râu xồm đạo diễn sắc mặt thâm trầm, đối nhân viên công tác đề nghị mắt điếc tai ngơ.</p>
+<p>Người chủ trì Đan Nhĩ nhịn không được dò hỏi “Cliff, quyết định của ngươi?”</p>
+<p>Đạo diễn sờ sờ râu, lắc đầu “Chờ một chút.”</p>
+<p>Đan Nhĩ nói “Lại chờ đợi, bọn họ muốn thành Sa thú điểm tâm.”</p>
+<p>Đạo diễn liếc mắt nhìn hắn, cười nói “Đan Nhĩ, này không giống ngày thường ngươi, trước kia những cái đó khách quý gặp được so này càng đáng sợ dị thú, ngươi đều có thể thờ ơ lạnh nhạt, vì cái gì thay đổi đại minh tinh, liền mất đi lý trí?”</p>
+<p>Đan Nhĩ “Này……”</p>
+<p>Đạo diễn bưng lên trên bàn cà phê, uống lên hai khẩu, thong thả ung dung nói “Bọn họ có thể hỗn cho tới bây giờ địa vị, tuyệt phi hời hợt hạng người. Chờ xem, một hồi nhất định có trò hay nhưng xem.”</p>
+<p>Đan Nhĩ bất đắc dĩ, ngồi ở đạo diễn bên cạnh, cũng bưng lên cà phê, một hơi uống lên nửa ly.</p>
+<p>Rừng rậm, bảy vị khách quý còn tại trầm tư suy nghĩ, tham thảo đối sách.</p>
+<p>Đột nhiên, một đạo “Lộc cộc” thanh đột ngột mà vang lên.</p>
+<p>Mọi người nghe tiếng quay đầu, nhìn về phía Đường Nhạc, Đường Nhạc thẹn thùng mà che lại dạ dày bộ. “Ta…… Ta cơm trưa ăn đến không nhiều lắm, hiện tại hảo đói.”</p>
+<p>Rực rỡ nhẹ niết lỗ tai hắn, nhẹ mắng “Giữa trưa ta làm ngươi ăn nhiều, ngươi còn không chịu?”</p>
+<p>Đường Nhạc gục xuống đầu, ủy khuất mà nói “Lúc ấy không đói bụng.”</p>
+<p>“Ục ục ~~” lại là một tiếng vang lớn.</p>
+<p>Đường Nhạc vội vàng phủ nhận “Lần này không phải ta!”</p>
+<p>Ưu na xấu hổ mà cười nói “Là ta, ta cũng đói bụng.”</p>
+<p>Belloc kinh ngạc “Ngươi giữa trưa không phải ăn rất nhiều sao?”</p>
+<p>Hắn nhớ rất rõ ràng, ưu na ước chừng ăn ba bốn bàn đồ ăn, cuối cùng thêm hai cái tiểu bánh kem.</p>
+<p>Lúc ấy hắn còn buồn bực, nữ minh tinh không đều sẽ ăn uống điều độ sao? Như thế nào ưu na không chỗ nào cố kỵ, sức ăn kinh người, dáng người còn có thể bảo trì đến như vậy thon thả?</p>
+<p>Ưu na mặt không đỏ khí không suyễn. “Ta ăn đến nhiều, tiêu hóa càng mau.”</p>
+<p>“Bang bang ——”</p>
+<p>Thân cây lại một lần trong chăn Sa thú mãnh liệt mà va chạm, trên cây người phát ra tiếng kinh hô.</p>
+<p>“Cẩn thận, nắm chặt!” Lý Mân Cát giữ chặt ưu na lay động thân thể.</p>
+<p>“Tạ…… Tạ……” Ưu na sắc mặt tái nhợt, vừa rồi kia một chút, nàng thiếu chút nữa ngã xuống.</p>
+<p>“Đại thụ vẫn luôn bị đâm, sớm hay muộn muốn đảo, ta đều nhìn đến sa miệng rộng bén nhọn hàm răng!” Belloc mồ hôi đầy đầu, “Thúc đẩy cân não, ngẫm lại biện pháp nha!”</p>
+<p>Rực rỡ trầm ngâm nói “Trừ phi có người dẫn dắt rời đi chúng nó.”</p>
+<p>Cổ Thánh Triết nhíu mày “Như thế nào dẫn? Chúng ta những người này giữa, ai có bản lĩnh dẫn đi lên trăm chỉ dị thú?”</p>
+<p>Rực rỡ như có như không mà liếc hướng Cổ Thánh Triết bên cạnh Đông Cửu Nhật.</p>
+<p>“Ta nhớ rõ…… Cửu Nhật tinh thần lực là ngũ cấp?” Hắn không xác định hỏi.</p>
+<p>Đường Nhạc thân thể cứng đờ, chỉ cảm thấy hắn phụ ở bên tai mình nói chuyện, nhiệt khí phun đến hắn tê dại.</p>
+<p>Đông Cửu Nhật không có phủ nhận. “Là, ta tinh thần lực là ngũ cấp.”</p>
+<p>Rực rỡ lại hỏi “Thể năng thế nào?”</p>
+<p>Đông Cửu Nhật không đáp hỏi lại “Ngài muốn cho ta đi dẫn dắt rời đi Sa thú?”</p>
+<p>Rực rỡ than nhẹ một tiếng, uyển chuyển nói “Chúng ta bên trong, tinh thần lực của ngươi cấp bậc tối cao, lại là cơ giáp sinh, có lẽ có năng lực dẫn đi sa ῳ*Ɩ thú.”</p>
+<p>Cổ Thánh Triết mày nhăn lại, nói “Cửu Nhật bất quá là năm nhất tân sinh, tinh thần lực tuy rằng cao nhưng kinh nghiệm không đủ, chỉ sợ sẽ biến khéo thành vụng. Nếu thật muốn dẫn dắt rời đi Sa thú, không bằng hơn nữa Đường Nhạc, hắn cũng là cơ giáp sinh, tinh thần lực là tứ cấp đỉnh, tiếp cận ngũ cấp. Ngài cảm thấy đâu?”</p>
+<p>Cổ Thánh Triết lời này nói được có chút khiêu khích, Cửu Nhật là hắn nghĩa tử, vì bao che cho con, hắn nhưng không sợ đắc tội Lục ảnh đế.</p>
+<p>“Xin lỗi.” Rực rỡ xin lỗi địa đạo, “Là ta nghĩ sai rồi, Cửu Nhật cùng Nhạc Nhạc đều chỉ có 18 tuổi, không nên làm cho bọn họ mạo hiểm.”</p>
+<p>Dừng một chút, hắn trầm giọng nói “Ta sẽ võ thuật, từ ta đi dẫn dắt rời đi dị thú, các ngươi nghĩ cách hướng la tạp hồ phương hướng chạy. Tới rồi nơi đó, chúng ta gặp lại hợp.”</p>
+<p>Phòng phát sóng trực tiếp fans nghe được Lục ảnh đế nói, tất cả đều phát ra nôn nóng bình luận.</p>
+<p>【 không cần a! Lục lục! Ngươi không cần đi mạo hiểm! 】</p>
+<p>【 sẽ võ thuật lại không phải sẽ khinh công! Ngươi chạy bất quá Sa thú! 】</p>
+<p>【 ngàn vạn không cần có việc! Ô ô ô! Tại sao lại như vậy? La tạp hồ rừng rậm vì cái gì có nhiều như vậy Sa thú? 】</p>
+<p>【 Cửu Nhật không phải nói chính mình là tương lai cơ giáp chiến sĩ, bảo hộ nhân loại đuổi đi dị thú là hắn sứ mệnh sao? Vậy thượng nha! 】</p>
+<p>【 uy uy, phía trước gia hỏa, Cửu Nhật hiện tại chỉ là cơ giáp sinh. 】</p>
+<p>【 cơ giáp sinh có cơ giáp nha, hắn có thể triệu hoán cơ giáp cầu đi? 】</p>
+<p>【 năm nhất cơ giáp là sơ cấp cơ giáp, không cụ bị giết chết dị thú năng lực. 】</p>
+<p>【 dù sao ta mặc kệ! Lục lục tuyệt không có thể đi xuống! Hoặc là đổi cổ thiên vương! Hắn là thượng giáo, đã từng là cơ giáp chiến sĩ, kinh nghiệm phong phú, khẳng định có thể bảo mệnh! 】</p>
+<p>【 nhà các ngươi ảnh đế mệnh quý, nhà của chúng ta thiên vương liền mệnh tiện? A Triết đều trịnh trọng nói rõ quá thân thể chịu quá thương, vô pháp tái chiến đấu, các ngươi làm hắn đi xuống là tưởng hắn chết sao? Quá ác độc! 】</p>
+<p>【 chính là! Chính là! Thật không nghĩ tới, Lục ảnh đế fans tâm địa như thế ác độc. 】</p>
+<p>【 vì cái gì không đề cập tới Lý Thiên Vương? Hắn tiếng ca là công kích thuộc tính, không bằng làm hắn xướng bài hát, thử xem xem có thể hay không dùng tiếng ca giết Sa thú? 】</p>
+<p>【 tiếng ca…… Sẽ vô khác biệt công kích đi? Vạn nhất giết địch một ngàn tự tổn hại 800 làm sao bây giờ? 】</p>
+<p>【 chân chính lợi hại ca sĩ, có thể khống chế tiếng ca trung tinh thần lực, đàn thương hoặc đơn sát, tùy tâm sở dục. 】</p>
+<p>【 mọi người đều đừng sảo! Khó khăn vào đầu, sảo tới sảo đi có ích lợi gì? Không bằng cùng nhau cầu nguyện. 】</p>
+<p>Trên cây khách quý không có mở ra phòng live stream video, hoàn toàn không biết fans vì bọn họ, cãi nhau ngất trời, các loại nhân thân công kích ùn ùn không dứt, sắp trở mặt thành thù.</p>
+<p>Rực rỡ nói xong lời nói, trên cây có một lát lặng im.</p>
+<p>Đông Cửu Nhật nương mỏng manh quang, đánh giá rực rỡ.</p>
+<p>Từ hắn góc độ chỉ có thể nhìn đến rực rỡ hoàn mỹ không tì vết sườn mặt, mí mắt rũ xuống, thật dài lông mi che khuất trong mắt thần sắc.</p>
+<p>Không thể không nói, hắn mặt phi thường thích hợp màn hình lớn, thần vận, hơi thở cùng với kỹ thuật diễn, đều không thể bắt bẻ.</p>
+<p>Nếu Đông Cửu Nhật là một cái chân chính 18 tuổi thiếu niên, ở đối phương đề cập tinh thần lực ngũ cấp khi, nhất định sẽ đầu óc nóng lên, phấn đấu quên mình ngầm đi dẫn quái, vì những người khác tranh thủ chạy trốn thời gian.</p>
+<p>Nhưng mà hắn không phải.</p>
+<p>Tiền tam thế cùng này một đời thêm lên, hắn tuổi tác vượt qua 150 tuổi, sao có thể bị người khác nhẹ nhàng một kích, liền phạm trung nhị bệnh?</p>
+<p>Hắn xác thật có năng lực dẫn dắt rời đi Sa thú, thậm chí có thể tay không giết sạch chúng nó.</p>
+<p>Đương hắn vẫn là mạt thế Đường Bảo khi, mỗi ngày phải rời khỏi căn cứ đi săn giết dị thú.</p>
+<p>Sa thú thịt chất tươi mới, khẩu cảm tinh tế, là căn cứ nhất bán chạy dị thú thịt, mỗi ngày đều có đoàn xe ra khỏi thành săn giết.</p>
+<p>Hắn cùng sở dực tổ kiến đội ngũ là có tiếng săn giết đội, nào thứ không phải thắng lợi trở về?</p>
+<p>Khi đó tinh thần lực chỉ có tam cấp, mười phút liền có thể giết chết một đầu sa, hiện tại tinh thần lực ngũ cấp, sát một đầu sa càng là một giây sự.</p>
+<p>Nhưng vì cái gì hắn muốn động thân mà ra?</p>
+<p>Súng bắn chim đầu đàn, đao chém địa đầu xà.</p>
+<p>18 tuổi cơ giáp tân sinh, sát một đầu nhất giai dị thú, là thiên phú dị bẩm, sát một trăm đầu nhất giai dị thú, là dị loại.</p>
+<p>Hiện giờ bọn họ ở phát sóng trực tiếp, quan khán nhân số siêu sáu trăm triệu, trước mắt bao người, nếu dùng ra tinh thần nguyên lực lượng, hắn bí mật liền muốn thông báo thiên hạ, tiết mục đều không cần tiếp tục, trực tiếp đưa vào tinh thần lực viện nghiên cứu chờ bị cắt miếng.</p>
+<p>Hắn lại không phải ngốc tử, sao lại thượng Lục ảnh đế đương?</p>
+<p>Lộ ra một mạt nhẹ nhàng tươi cười, Đông Cửu Nhật nói “Đại gia có phải hay không quên cái gì?”</p>
+<p>“A? Đã quên cái gì?” Belloc hỏi.</p>
+<p>Đông Cửu Nhật duỗi chỉ chọc chọc huyền phù tại bên người tiểu viên cầu, khơi mào xinh đẹp lông mày, ánh mắt thanh triệt. “Chúng ta mỗi người có ba lần xin giúp đỡ cơ hội, vì cái gì không sử dụng đâu?”</p>
+<p>“Ách!!”</p>
+<p>Tác giả có chuyện nói</p>
+<p>----------------------</p>
+<p>Đường Trung Bình Đường Nhạc dưỡng phụ, Hoa Quốc Đường gia ở Tư Đặc Lâm đế quốc người phụ trách, Duyệt Lai khách sạn lão bản, cùng Đông Cửu Nhật là sinh ý hợp tác đồng bọn.</p>
+<p>Đã từng vì tăng lên tinh thần lực xin giúp đỡ với Đông Cửu Nhật, bị Caroll mang đi căn cứ bí mật.</p>
+<p>( cụ thể nhưng xem 《 mạnh nhất cơ giáp sư Ⅰ》 quyển thứ tư Đường Trung Bình mạt thế sinh hoạt )</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "than-hon-co-giap-su-ii";
+const NOVEL_TITLE = "Thần hồn cơ giáp sư II";
+const CHAPTER_TITLE = "Chương 11 Đánh vỡ khốn cục";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

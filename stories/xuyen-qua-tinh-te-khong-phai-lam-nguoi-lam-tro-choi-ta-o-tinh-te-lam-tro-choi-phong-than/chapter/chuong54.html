@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 54</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Xuyên qua tinh tế không phải làm ngươi làm trò chơi / Ta ở tinh tế làm trò chơi phong thần
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 54</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong53.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong55.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Mấy ngày nay, kiếm tiền nhiều nhất người không gì hơn các đại đạo quán sân huấn luyện huấn luyện sư.</p>
+<p>Các người chơi hận không thể đem gốc gác đều móc ra tới cấp huấn luyện sư, hy vọng chính mình sủng vật có thể trước tiên tiến hóa hoặc là tập đến kỹ năng mới, cuối cùng mệt người chơi cùng sủng vật đều là thở hồng hộc.</p>
+<p>Đến nỗi vì cái gì người chơi cũng mệt mỏi, chẳng lẽ sủng vật đánh nhau thời điểm lan đến gần ngươi ngươi không chạy trốn sao? Một cái đủ tư cách sủng vật đại sư, ít nhất không nên ở sủng vật đối chiến thời điểm kéo đối phương chân sau!</p>
+<p>Rốt cuộc, ở 《 Pokemon 》 người chơi ngày đêm chờ đợi trung, ngày 10 tháng 9 cùng ngày buổi sáng 8 giờ, phía chính phủ tuyến thượng sủng vật đại tái chính thức kéo ra màn che!</p>
+<p>“Đi đi đi, chúng ta mau đi thi đấu tràng!”</p>
+<p>Trước hết một cái tại tuyến hạ công viên phát hiện ám hệ sủng vật Hôi Sa Miêu người chơi [ Phao Phao Thủy ] hưng phấn mà đối chính mình đồng bạn nói “Ta đã chờ không kịp xem đối thủ phản ứng!”</p>
+<p>Bởi vì sủng vật bồi dưỡng chu kỳ đều không ngắn, bởi vậy người chơi liền tính một ngày ngâm mình ở trong trò chơi 12 tiếng đồng hồ, tính toán đâu ra đấy đến bây giờ cũng nhiều nhất có thể có được 3-4 cái cao cấp dị năng sủng vật, đặc biệt là hậu kỳ mới có thể đạt được ám hệ cùng quang hệ, càng là tạm thời không ai có thể thành công làm cho bọn họ thăng đến trung cấp.</p>
+<p>Đương nhiên, dựa vào chính mình khai quải vận khí ở trò chơi mới vừa thượng tuyến không bao lâu thời điểm liền bắt được ám hệ sủng vật Phao Phao Thủy ngoại trừ.</p>
+<p>“Nhanh như vậy ngươi Hôi Sa Miêu cùng Lan Hồ liền đều đã là cao cấp sao?” Đồng bạn hâm mộ mà nói, “Thật tốt, ta Phi Phi Điểu chính là tiến hóa không được, cũng không biết vì cái gì.”</p>
+<p>Phao Phao Thủy vô ngữ “Còn không phải bởi vì ngươi quá sủng nó? Ta đều hoài nghi ngươi có phải hay không ở cố ý cùng ta khoe ra ngươi Phi Phi Điểu nhiều thân nhân.”</p>
+<p>Đồng bạn cười hắc hắc, ngay sau đó tò mò hỏi “Có thể cho ta nhìn xem Hôi Sa Miêu hiện tại sách tranh sao? Ta bảo đảm không tiết lộ đi ra ngoài.”</p>
+<p>Sủng vật bình thường dị năng thăng cấp phương thức chỉ có thể làm cho bọn họ lên tới trung cấp, có thể lên tới cao cấp sủng vật hoặc nhiều hoặc ít đều sẽ có một hai cái kỹ năng đã xảy ra biến dị, hoặc là dứt khoát học xong kỹ năng mới.</p>
+<p>Tựa như miêu miêu đại ma vương Sâm Thử, ở dị năng tiến hóa vì cao cấp khi nhanh nhẹn cũng chồng chất đến tối cao, học xong vốn dĩ Sâm Thử hẳn là sẽ không có được tốc độ thêm thành kỹ năng [ hăng hái ].</p>
+<p>Loại này không có chỗ nào mà không phải là trong chiến đấu đòn sát thủ, bởi vì đối thủ đối che giấu kỹ năng trên cơ bản không có chuẩn bị, mà Phao Phao Thủy thực lực, hiển nhiên là có thể đi vào vòng thứ ba, vậy càng phải đối Hôi Sa Miêu kỹ năng bảo mật.</p>
+<p>“Đương nhiên không thành vấn đề, ta tin tưởng ngươi.” Phao Phao Thủy gật gật đầu, triển lãm ra sách tranh giao diện ——</p>
+<p>Chủng loại Hôi Sa Miêu</p>
+<p>Tập tính Vì hôi ai tinh bản thổ sinh vật, hành tung mơ hồ không chừng, tựa hồ không có cố định nơi ở.</p>
+<p>Dị năng chủng loại Ám hệ ( cao cấp )</p>
+<p>Kỹ năng một Lưỡi dao sắc bén ( đem ám hệ nguyên tố ngưng kết thành lưỡi dao sắc bén công kích đối thủ, nhiều nhất đồng thời phát ra năm cái, miệng vết thương sẽ phụ gia [ cảm nhiễm ] trạng thái, trạng thái nhưng chồng lên. )</p>
+<p>Kỹ năng nhị Hắc ám cùng ẩn nấp ( trong bóng đêm có thể hoàn toàn ẩn nấp chính mình thân hình, không có hắc ám khi, Hôi Sa Miêu có thể lợi dụng dị năng ngăn cách nơi sân, chế tạo hắc ám hiệu quả. )</p>
+<p>Kỹ năng tam Tư duy quấy nhiễu ( thông qua ở hoàn cảnh trung phát ra ám hệ nguyên tố cưỡng chế ảnh hưởng đối thủ cảm giác, đối thủ đang ở [ cảm nhiễm ] trạng thái khi ảnh hưởng phiên bội. )</p>
+<p>Phao Phao Thủy đồng bạn nhanh chóng phát hiện bất đồng chỗ ——</p>
+<p>“Ẩn nấp biến thành hắc ám cùng ẩn nấp? Kia chẳng phải là ban ngày bản đồ cũng sẽ không quấy nhiễu đến Hôi Sa Miêu phát huy?”</p>
+<p>“Nhiên cũng nhiên cũng.” Phao Phao Thủy rung đầu lắc não, “Ta tính toán đem Hôi Sa Miêu cái này kỹ năng làm bia ngắm dựng thẳng lên tới, như vậy đối thủ về sau ở nhìn đến vô che đậy ban ngày bản đồ, liền sẽ đối Hôi Sa Miêu thiếu cảnh giác.”</p>
+<p>Mà theo trò chơi đại tái bắt đầu, về 《 Pokemon 》 thảo luận khu lưu lượng cũng một đường bay lên</p>
+<p>[ thật nhiều chủ bá phát sóng trực tiếp 《 Pokemon 》 đại tái a! Sủng vật sách tranh người thu thập mừng như điên! ]</p>
+<p>[ phía trước, ngươi chỉ là xem thi đấu cũng không có biện pháp thu thập a. ]</p>
+<p>[ không phải vậy, ngươi đem đại tái phát sóng trực tiếp phóng đại, sau đó dùng quang não quét qua, nó vẫn là sẽ đem sủng vật cơ sở tin tức biểu hiện ra tới, bất quá chỉ có sơ cấp cơ sở tin tức. ]</p>
+<p>[ nguyên lan tinh, xa băng tinh, thiên sao Mộc, chim bay tinh, hôi ai tinh còn có quang sao sớm, trên cơ bản chính là này đó đi. ]</p>
+<p>[ gan đế hẳn là cũng quá không được quang sao sớm, quả thực là địa ngục cấp khó khăn, phía trước mấy cái đạo quán còn có thể dựa thuộc tính khắc chế, ở quang sao sớm hoàn toàn vô dụng. Ám hệ nhưng thật ra có thể cùng quang hệ lẫn nhau khắc chế, nhưng thượng một cái mới là hôi ai tinh, ám hệ sủng vật bồi dưỡng lên lại chậm. Nghe nói ở quang sao sớm cao cấp ám hệ sủng vật còn sẽ chịu tinh cầu áp chế. Tổng kết chính là, nếu không có ít nhất ba con trở lên sủng vật ở trung cấp cập trở lên, liền dứt khoát không cần suy nghĩ. ]</p>
+<p>[ bất quá ta nhớ rõ phía trước diễn đàn liền có người nói quá chính mình tại tuyến hạ thu phục một con ám hệ sủng vật, ai còn nhớ rõ? Hắn sẽ không qua đi? ]</p>
+<p>[ xác thật có chuyện này, thiệp liên tiếp tại đây ( truyền tống môn ), bất quá qua cũng không có gì dùng lạp, như vậy đoản thời gian chỉ sợ quang sao sớm sủng vật đều bồi dưỡng không đứng dậy. ]</p>
+<p>Phao Phao Thủy xác thật không có thành công bồi dưỡng ra quang hệ sủng vật, nhưng hắn cầm đạo quán khiêu chiến tái thắng lợi khen thưởng đi cấp Hôi Sa Miêu điên cuồng học bổ túc a!</p>
+<p>Mà theo thời gian đẩy mạnh, thông qua trước một, nhị luân thi đấu Phao Phao Thủy cũng dùng tổng cộng 35 phân điểm thuận lợi tiến vào vòng thứ ba thi đấu.</p>
+<p>Phao Phao Thủy vận khí cũng không biết có tính không hảo, hắn vòng thứ nhất thi đấu liền đụng phải một cái trước hai đợt đã từng nổi bật cực kỳ chủ bá, nghe nói cái này chủ bá sủng vật tác chiến khi phối hợp năng lực đều này cao vô cùng, có thể ở đối chiến thời phát huy ra một thêm một rộng lớn với nhị tác dụng.</p>
+<p>Nhìn đối phương phái ra rõ ràng là cao cấp sủng vật Phi Phi Điểu cùng tuyết lang, Phao Phao Thủy hít sâu một hơi, cũng lấy ra chính mình mạnh nhất chiến lực —— Lan Hồ cùng Hôi Sa Miêu!</p>
+<p>Phòng live stream người xem gặp được hiếm thấy sủng vật nháy mắt hưng phấn</p>
+<p>[ ám hệ! Không phải nói ám hệ thăng cấp so mặt khác đều phải khó sao, cư nhiên thực sự có người có thể đem ám hệ sủng vật bồi dưỡng lên a! ]</p>
+<p>[ hẳn là chỉ là trung cấp đi? Chủ bá hai cái sủng vật đều là cao cấp, không đáng sợ hãi. ]</p>
+<p>[ chủ bá, mau đi thử thử Hôi Sa Miêu dị năng! ]</p>
+<p>Chủ bá bất đắc dĩ mà nói “Hôi Sa Miêu có cái cơ bản kỹ năng [ hỗn loạn ], Lan Hồ hai cái kỹ năng cũng đều cùng mị hoặc có quan hệ, ta trực tiếp hướng lên trên mãng chính là đưa lên đi cho người ta khống chế.”</p>
+<p>Cái thứ nhất tùy cơ ra bản đồ thuộc về trung quy trung củ thảo nguyên bản đồ, hai bên đều dùng bình thường công kích đơn giản thử một chút, rốt cuộc vẫn là Phao Phao Thủy trước nhịn không được, làm Lan Hồ ở Hôi Sa Miêu lưỡi dao sắc bén yểm hộ hạ tiếp cận tuyết lang.</p>
+<p>Phao Phao Thủy hô “Lan Hồ, mị hoặc!”</p>
+<p>Năm cái lưỡi dao sắc bén công kích đến Phi Phi Điểu phiền không thắng phiền, mạnh mẽ sử dụng loại nhỏ gió lốc ngừng trong đó tam cái tiến công, dư lại hai quả tắc như cũ là thẳng tắp về phía nó đánh tới!</p>
+<p>Nhưng mà tuyết lang một cái hất đuôi, ở Phi Phi Điểu [ gió mạnh ] thêm vào hạ mạnh mẽ chuyển hướng tránh đi Lan Hồ hành động lộ tuyến, mà ở tuyết lang trước mặt trực tiếp dâng lên một mặt băng làm gương, trực tiếp ngăn trở ở Lan Hồ kỹ năng công kích!</p>
+<p>Phao Phao Thủy nhìn ở thừa nhận một lần công kích sau dần dần vỡ vụn băng kính, khiếp sợ mà nói “Này cũng đúng sao?”</p>
+<p>—— dùng băng cách trở chiến trường, này tuyệt đối là biến dị sau năng lực!</p>
+<p>“Băng trùy gia tốc!”</p>
+<p>Thi đấu trong sân chiến đấu tình huống thay đổi trong nháy mắt, ở Phao Phao Thủy còn không có phản ứng lại đây thời điểm, Phi Phi Điểu liền thừa tuyết lang đâm ra băng trùy bay nhanh đi tới Lan Hồ bên cạnh người, một kích đánh hôn mê còn chưa kịp phóng thích kỹ năng Lan Hồ.</p>
+<p>Tuyết lang hiển nhiên ở băng trùy thượng hoàn toàn từ bỏ phụ gia công kích dị năng, chỉ là đơn thuần mà ngưng kết ra băng trùy hình dạng, mà bay chim bay dẫm lên băng trùy nháy mắt liền từ bỏ chính mình năng lực phi hành, thẳng đến bị đưa đến Lan Hồ trước mặt khi mới mở ra cánh, một kích tức trung!</p>
+<p>Hiện tại Phao Phao Thủy trước mặt trên sân thực tế chiến lực chỉ còn lại có Hôi Sa Miêu.</p>
+<p>Phao Phao Thủy nỗi lòng hỗn loạn, hắn trước nay không nghĩ tới chính mình trận đầu liền gặp được như thế mạnh mẽ đối thủ, thậm chí đối phương liền đối Lan Hồ công kích lực độ cũng đem khống đến vừa vặn tốt, chỉ là đánh hôn mê Lan Hồ do đó trục xuất lên sân khấu, vẫn chưa dùng nhiều một tia dị năng.</p>
+<p>Giống làm Phi Phi Điểu dẫm lên băng trùy cấp tốc di động loại này phương thức tác chiến hắn càng là không hề nghĩ ngợi quá.</p>
+<p>Nhìn nơi sân trốn đông trốn tây Hôi Sa Miêu, Phao Phao Thủy rốt cuộc hạ quyết tâm “Hôi Sa Miêu! Quấy nhiễu ẩn nấp!”</p>
+<p>Hoàn cảnh hắc ám kỹ năng vốn chính là từ tư duy quấy nhiễu chuyển hóa mà đến, sử dụng đều yêu cầu trước tiên phô khai ám nguyên tố, bởi vậy Phao Phao Thủy dứt khoát đưa bọn họ thiết trí thành liền chiêu.</p>
+<p>Hôi Sa Miêu đã sớm ở chậm rãi thẩm thấu tiến cảnh vật chung quanh trung hắc ám nguyên tố đột nhiên trở nên mắt thường có thể thấy được, mà ở như vậy nơi sân trung, ý đồ tới gần Phi Phi Điểu hai mắt vẫn luôn, thế nhưng càng bay càng chậm, bắt đầu chỉ ở quanh thân bồi hồi.</p>
+<p>Chủ bá kinh hãi “Phi Phi Điểu?”</p>
+<p>Sao lại thế này, Hôi Sa Miêu dị năng ảnh hưởng phạm vi cư nhiên còn có thể như vậy quảng sao?</p>
+<p>Còn không có tưởng minh bạch nguyên nhân, chủ bá lấy lại bình tĩnh “Tuyết lang đừng qua đi! Viễn trình công kích, phô khai băng nguyên tố!”</p>
+<p>Đối phương phản ứng có thể nói là thực nhanh, nhưng như cũ không có ngăn cản trụ Hôi Sa Miêu quanh thân càng ngày càng nhiều sương đen tụ tập, cuối cùng trực tiếp hình thành một khối thật lớn bóng ma.</p>
+<p>Mà Hôi Sa Miêu ẩn nấp trong đó, chẳng biết đi đâu.</p>
+<p>[ Hôi Sa Miêu tuyệt đối là cao cấp dị năng! Vừa mới còn có thể nói chỉ là thả ra ám nguyên tố, hiện tại liền hoàn toàn là có thể thay đổi hoàn cảnh trình độ! Chỉ có cao cấp dị năng mới có thể làm được! ]</p>
+<p>[ bóng ma giống như còn ở mở rộng…… Chủ bá mau công kích a! Chờ hạ bản đồ hoàn toàn trở tối liền xong rồi! ]</p>
+<p>Thế cục hai độ xoay ngược lại, hiện tại hai bên đều chỉ còn lại có một con sủng vật làm chiến lực, Hôi Sa Miêu dứt khoát lưu loát mà sử dụng lưỡi dao sắc bén ở Phi Phi Điểu thanh tỉnh trước đem này đào thải rớt, một mình cùng tuyết lang giằng co.</p>
+<p>Tuyết lang băng hệ năng lực không phải không thể công kích, chỉ là hắn không xác định Hôi Sa Miêu vị trí, băng nguyên tố phô khai cũng đối ám hệ cao cấp sủng vật không có hiệu quả.</p>
+<p>Đây là Hôi Sa Miêu ưu thế, đại bộ phận người chơi sẽ theo bản năng mà cho rằng Hôi Sa Miêu chỉ là trung cấp sủng vật, có thể dựa nguyên tố trực tiếp nghiền áp.</p>
+<p>Tựa như đối diện chủ bá, hắn nhìn đến Hôi Sa Miêu tụ tập ám nguyên tố, cũng chỉ là cho rằng đối phương muốn mở rộng tư duy quấy nhiễu phạm vi, hoàn toàn không có nghĩ tới đối phương là muốn chế tạo ra một khối dùng để ẩn nấp bóng ma!</p>
+<p>Hôi Sa Miêu liền giống như cao cấp nhất thích khách, ở tuyết lang thật lớn thân thể bị nạp vào hắc ám trong nháy mắt phát động công kích ——</p>
+<p>Năm cái quanh quẩn ám nguyên tố lưỡi dao sắc bén từ bất đồng phương hướng bắn ra, xẹt qua địa phương thoát ra mấy cái thật dài ám sắc cái đuôi, tuyết lang ở bị đánh trúng trong nháy mắt thân thể phát ra một trận tuyết trắng quang mang.</p>
+<p>Thương tổn cùng cảm nhiễm trạng thái chồng lên, làm tuyết lang bất quá hai giây liền bị đào thải ra bên ngoài.</p>
+<p>[ Hôi Sa Miêu! Hôi Sa Miêu! Hôi Sa Miêu! ]</p>
+<p>[ ám hệ sủng vật —— ngưu ( tất )! ]</p>
+<p>Vốn tưởng rằng là dựa vào hai chỉ cao cấp sủng vật cùng phối hợp là có thể thắng tuyệt đối một ván thi đấu, ai có thể nghĩ đến Hôi Sa Miêu cư nhiên bằng vào sức của một người đem thế cục hoàn toàn vặn ngã đâu!</p>
+<p>Hơn nữa Hôi Sa Miêu tiểu xảo lại lưu sướng thân thể đường cong, thần bí màu tím đôi mắt cùng dần dần từ màu xám quá độ đến thuần hắc cái đuôi tiêm ——</p>
+<p>Hiện tại Hôi Sa Miêu chính là tân minh tinh sủng vật!</p>
+<p>Phao Phao Thủy thắng liên tiếp hai cục, thành công bắt lấy trận thi đấu này thắng lợi.</p>
+<p>Đương nhiên, cùng vị này đối thủ tác chiến, cũng làm hắn minh bạch không ít chính mình khuyết điểm, chính yếu chính là, hắn quá mức ỷ lại sủng vật bản thân.</p>
+<p>Hiện tại là Hôi Sa Miêu vừa xuất hiện, đại gia còn không có tìm được đối kháng nó phương pháp, nhưng nhất định sẽ có người nghiên cứu ra tới.</p>
+<p>Làm tốt về sau muốn ở trong trò chơi nhiều huấn luyện một chút các sủng vật ăn ý quyết định, Phao Phao Thủy điệu thấp ngầm tuyến.</p>
+<p>Hắn không biết chính là, chính mình cùng tên kia chủ bá đối chiến đã bị ghi hình truyền bá tới rồi trò chơi trên diễn đàn, khiến cho không ít người thảo luận</p>
+<p>[ Hôi Sa Miêu đối thủ kỳ thật rất mạnh a, chỉ là thi đấu tràng lớn nhỏ hạn chế đối Hôi Sa Miêu quá có lợi, làm cao cấp sủng vật nó có thể trực tiếp đem ám nguyên tố phủ kín toàn bộ nơi sân. ]</p>
+<p>[ xác thật, nếu muốn phá giải cũng chỉ có thể ngay từ đầu liền thượng bạo lực đấu pháp, Hôi Sa Miêu tốc độ cũng không tính cao, đem nó cùng Lan Hồ tách ra, ở ngay từ đầu thời điểm đơn sát thì tốt rồi. ]</p>
+<p>[ hơn nữa Hôi Sa Miêu hỗn loạn năng lực cũng không có như vậy cường, chủ yếu là Phi Phi Điểu vẫn luôn ở nó ám nguyên tố trong phạm vi, trúng chiêu sau cũng không có lập tức rời đi, dẫn tới trạng thái chồng lên. ]</p>
+<p>[ bất quá Hôi Sa Miêu nếu muốn sử dụng hắc ám năng lực, liền tất nhiên sẽ làm ám nguyên tố hiện hình, nói như vậy tránh đi cũng rất đơn giản. ]</p>
+<p>[ học xong học xong, lần sau gặp được Hôi Sa Miêu cứ như vậy đánh! ]</p>
+<p>Đương nhiên, chờ bọn họ tái ngộ đến Phao Phao Thủy thời điểm, phát hiện Phao Phao Thủy thực lực lần nữa tinh tiến, Lan Hồ cùng Hôi Sa Miêu càng là ăn ý khăng khít, nếu đơn độc nhằm vào Hôi Sa Miêu, Lan Hồ nhất định sẽ hảo hảo dạy bọn họ làm người chuyện này đó là lời phía sau.</p>
+<p>Đại tái cuối cùng, Phao Phao Thủy như cũ dừng bước với trước tám cường.</p>
+<p>Chủ yếu là hắn tác chiến hình thức khuyết điểm cũng quá mức rõ ràng, nếu là đối phương vừa vặn có có thể khắc chế hắn hai chỉ có tiến công tiết tấu cũng đủ mau cao cấp sủng vật, hơn nữa thi đấu bản đồ buff, thắng hạ hắn cũng là nhẹ nhàng.</p>
+<p>Bởi vậy tuy rằng không có bắt được quán quân, Phao Phao Thủy như cũ đối kết quả thập phần vừa lòng.</p>
+<p>“Chỉ là đáng tiếc, ta cũng hảo muốn quán quân huy chương a.” Phao Phao Thủy trường thở dài một hơi, “Đạo quán khiêu chiến tái cũng là chỉ có thắng lợi đến cuối cùng nhân tài có huy chương, ta hiện tại khẳng định là đã không có.”</p>
+<p>Phao Phao Thủy đồng bạn nhìn chính mình quang não, đột nhiên vẻ mặt khiếp sợ mà nói “Ta không nhìn lầm đi! Sao trời vừa mới phát thanh minh, nói tiến vào vòng thứ ba thi đấu đều có thể đạt được thắng lợi huy chương!”</p>
+<p>“Cái gì?”</p>
+<p>Cùng với sao trời phòng làm việc tuyên cáo đại tái thuận lợi kết thúc thông cáo, đối hoạt động cụ thể giải thích thuyết minh cũng nháy mắt bị các người chơi nghiên cứu cái thấu.</p>
+<p>[ ta xem minh bạch! Đệ nhất danh đạt được huy chương sẽ là chuyên môn vì hắn chế tác định chế khoản, trước tám cường huy chương sẽ có càng nhiều chi tiết, trừ cái này ra chính là chỉ cần đạt được vòng thứ ba thi đấu dự thi tư cách, thắng cho tới thiếu một hồi, là có thể đi trên official website xin chính mình huy chương! ]</p>
+<p>[ còn có chính là tham gia thi đấu vị thành niên, có thể ở cung cấp chứng minh sau có được hạn lượng bản sủng vật cầu vật trang sức! Nếu ta có thể vãn mấy tháng sinh ra thì tốt rồi ( khóc lớn ) ]</p>
+<p>[ cư nhiên đều là vật thật sao? Còn muốn từng cái gửi qua bưu điện lại đây, sao trời có thể hay không quá tiêu pha? ]</p>
+<p>[ hẳn là không thể nào, sao trời lần này phát sóng trực tiếp không phải miêu trảo phát sóng trực tiếp còn cho bọn hắn kéo tài trợ sao? Hảo uống dinh dưỡng dinh dưỡng dịch, quả xoài quả nho kem ~ ta đều có thể bối xuống dưới bọn họ quảng cáo từ. ]</p>
+<p>Xác thật, trận này liên tục thời gian suốt bốn ngày phát sóng trực tiếp cấp miêu trảo phòng live stream mang đến lưu lượng cùng dinh dưỡng dịch công ty mang đến tiền lời đại đại vượt qua bọn họ tính toán, bởi vậy ban đầu cấp Bùi Tinh làm lợi không ít chủ quản cũng dương mi thổ khí, cả ngày bị lãnh đạo làm điển hình khen ngợi.</p>
+<p>Đến nỗi huy chương cùng gửi qua bưu điện kia một chút phí tổn, ai sẽ để ý đâu?</p>
+<p>Bùi Tinh bản nhân còn lại là ở hoàn thành cấp quán quân định chế khoản huy chương chế tác, đem kiến mô văn kiện chia cho hợp tác nhà máy hiệu buôn sau, còn chưa kịp nghỉ ngơi nhiều mấy ngày, liền lại nghênh đón 《 hoa trong gương, trăng trong nước 》 chính thức online.</p>
+<p>《 hoa trong gương, trăng trong nước 》 bản thân làm một cái tập trừu tạp, luyến ái, âm nhạc, đối chiến vì nhất thể phi game thực tế ảo, phí tổn tự nhiên cũng thấp không đến nào đi.</p>
+<p>Nhưng phi game thực tế ảo thị trường cùng game thực tế ảo thị trường chịu chúng bất đồng, bọn họ càng tiếp thu với càng rẻ tiền trò chơi giá bán, bởi vậy sao trời dứt khoát đem trò chơi định giá định vì cùng 《 nguyệt thỏ 》 giống nhau 14 tinh tệ.</p>
+<p>Nhưng làm trừu tạp trò chơi, bên trong thiết trí khắc kim điểm tự nhiên không ít, chỉ là Bùi Tinh tận lực làm được liền tính không khắc kim cũng có thể thuận lợi chơi đi xuống thôi.</p>
+<p>Sao trời vì phương tiện lúc sau trò chơi hoạt động, đem bối cảnh giả thiết phô đến cực đại.</p>
+<p>Chuyện xưa phát sinh ở người chơi khống chế nữ chủ liên tục một tháng làm về một cái khác thế giới mộng sau, người chơi ở cảnh trong mơ dưới sự chỉ dẫn thông qua gương đi tới chân thật dị thế giới.</p>
+<p>Thế giới xa lạ này cùng nữ chủ hoà bình nguyên thế giới bất đồng, nó trường kỳ ở vào trong chiến loạn, hắc ám sinh vật sẽ không ngừng ý đồ công kích trung tâm thế giới đại biểu đối quang minh thần tín ngưỡng tháp cao, tín ngưỡng Quang Minh thần Thánh kỵ sĩ tắc sẽ dùng quang minh lực lượng không ngừng đem chúng nó đuổi đi.</p>
+<p>Mà người chơi khống chế nữ chủ, chính là bị dị giới “Chính mình” triệu hoán mà đến Thánh nữ.</p>
+<p>Dị giới nữ chủ từ nhỏ làm Thánh nữ lớn lên, nhưng lực lượng vẫn luôn cực kỳ bạc nhược, thậm chí không giống như là chân chính Thánh nữ, chỉ là Thánh nữ việc quá mức quan trọng, những người khác cũng không dám vọng thêm đàm luận.</p>
+<p>Ở gặp lần này hắc ám sinh vật công kích khi, dị giới nữ chủ rốt cuộc ý thức được linh hồn của chính mình khuyết thiếu quan trọng nhất một bộ phận, cũng bắt đầu ý đồ triệu hoán đối phương trở về “Bản thể”.</p>
+<p>Nữ chủ liên tục một tháng về dị thế giới mộng cũng là từ đối phương ký ức mà đến, bởi vì dị giới nữ chủ hy vọng đối phương có thể mượn từ hai mắt của mình trước tiên cảm thụ một phen thế giới này.</p>
+<p>Ở nữ chủ ý thức được đối phương ý đồ cùng đối phương đối hy vọng chính mình có thể cứu vớt thế giới này thỉnh cầu sau, rốt cuộc tạm thời đồng ý lưu tại dị giới, mà nữ chủ trong thân thể một khác bộ phận thuộc về nguyên chủ linh hồn tắc dần dần lâm vào ngủ say.</p>
+<p>Trong trò chơi, người chơi có thể thông qua trừu tạp đạt được đối ứng nhân vật, cũng ở trong chiến đấu cùng chi sinh ra ràng buộc, mà theo ràng buộc bay lên, người chơi liền có thể mở ra luyến ái cốt truyện.</p>
+<p>Có thể nói trò chơi lớn nhất lượng điểm trừ bỏ mới mẻ độc đáo cách chơi chính là tổng cộng có một trăm nam nhân giả thiết, liền ở trò chơi online cùng ngày, nhiệt tình người chơi trực tiếp đem 《 hoa trong gương, trăng trong nước 》 đưa lên ngày đó nhiệt tiêu bảng.</p>
+<p>Mà xuống tái trò chơi người chơi còn lại là xoa tay hầm hè ——</p>
+<p>14 cái tinh tệ cùng một trăm nam nhân yêu đương? Sao trời, ngươi tốt nhất không cần làm giả dối tuyên truyền!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong53.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong55.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "xuyen-qua-tinh-te-khong-phai-lam-nguoi-lam-tro-choi-ta-o-tinh-te-lam-tro-choi-phong-than";
+const NOVEL_TITLE = "Xuyên qua tinh tế không phải làm ngươi làm trò chơi / Ta ở tinh tế làm trò chơi phong thần";
+const CHAPTER_TITLE = "Chương 54";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
