@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 14</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Thần vực ( game online thực tế ảo )
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 14</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong13.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong15.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Mục Xuyên cười cười, không nói cái gì nữa. Kỳ thật hắn vì Kình Thương bọn họ hướng Colin đại sư dẫn tiến cũng không phải không có tư tâm, Kình Thương bọn họ không chỉ là cao thủ đứng đầu, vẫn là đỉnh cấp đại hiệp hội Bích Lạc Hoàng Tuyền sáng lập giả, Mục Xuyên cùng bọn họ đánh hảo quan hệ cũng đối hắn có lợi.</p>
+<p>“Đúng rồi, các ngươi muốn hay không gia nhập chúng ta hiệp hội? Chúng ta thực khát cầu giống các ngươi hai vị như vậy cao thủ, nếu gia nhập chúng ta có thể cho các ngươi quản lý tầng đãi ngộ.” Phong Lê nói làm Mục Xuyên có chút kinh ngạc. Sáng tạo hiệp hội điều kiện là yêu cầu 20 cái đồng vàng, không nghĩ tới bọn họ như vậy đã sớm sáng lập.</p>
+<p>Lộ Dao nghiêng đầu, nhìn Phong Lê “Hiệp hội gọi là gì a?”</p>
+<p>Phong Lê không biết vì cái gì dừng một chút, biểu tình có chút kỳ dị, cuối cùng là Phong Tự lãnh đạm mà mở miệng “Bích Lạc Hoàng Tuyền.”</p>
+<p>Không chỉ Mục Xuyên, liền Lộ Dao đều phát hiện bọn họ kỳ quái biểu hiện. Lộ Dao nghĩ sao nói vậy, trực tiếp hỏi “Tên này làm sao vậy?”</p>
+<p>Phong Lê biểu tình càng thêm một lời khó nói hết, mà lần này là Kình Thương trả lời.</p>
+<p>Hắn “A” một tiếng, hai tròng mắt hơi hơi nheo lại, ngữ khí tùy ý “Không phải có câu thơ kêu thượng cùng bích lạc hạ hoàng tuyền sao? Bích Lạc Hoàng Tuyền chính là nếu chọc chúng ta, chính là thượng thiên hạ địa ta cũng sẽ đem hắn tìm ra xử lý.”</p>
+<p>Mục Xuyên cùng Lộ Dao đều bị Kình Thương lời nói cấp kinh sợ, thật lâu không nói gì. Nửa ngày, Lộ Dao mới có chút vô ngữ mà nói “Như thế nào cảm giác như vậy trung nhị……”</p>
+<p>Phong Lê chạy nhanh ra tới hoà giải, hắn ha ha cười, tỏ vẻ này đó đều không quan trọng. Mà Kình Thương lại lần nữa nằm xuống nhắm mắt lại, khinh thường mà tỏ vẻ không cùng các ngươi này đó phàm phu tục tử so đo. Cuối cùng, Mục Xuyên vẫn là uyển chuyển từ chối Phong Lê mời. Lộ Dao xem Mục Xuyên cự tuyệt, cũng không có đáp ứng.</p>
+<p>Ở giải quyết rớt Thiên Vũ cái này khúc mắc phía trước, hắn không có cách nào hoàn toàn dung nhập một cái tân tập thể.</p>
+<p>Thu thập thứ tốt sau, Kình Thương bọn họ đều tỏ vẻ việc này không nên chậm trễ, trực tiếp hồi Sile thôn đi tìm Colin đại sư. Bọn họ thực mau trở về tới rồi Sile thôn, Mục Xuyên mang theo bọn họ đi tới Colin rách tung toé trước cửa, lại lần nữa gõ vang.</p>
+<p>Thực mau, đại môn mở ra, Colin kia lưu trữ kim sắc tóc ngắn cùng màu trắng hồ tra mặt từ phía sau cửa dò ra.</p>
+<p>“Colin đại sư, ta đã đem vẫn thiết mang về tới,” Mục Xuyên hơi hơi khom người, “Này ba vị là bằng hữu của ta, chúng ta là ở bọn họ dưới sự trợ giúp mới đem dương giác cự ma giết ch·ế·t, bọn họ biết được ta nhận thức ngài lúc sau hy vọng có thể thấy ngài một mặt, không biết……”</p>
+<p>Colin đại sư tầm mắt dừng ở Mục Xuyên phía sau Kình Thương đám người trên người, qua lại nhìn quét một hồi, sao cũng được mà sách một tiếng, mở cửa làm cho bọn họ đi vào.</p>
+<p>Vào cửa lúc sau, Kình Thương lực chú ý một chút đã bị trên tường treo kia đem kiếm bảng to hấp dẫn. Colin ở lấy quá Mục Xuyên đưa cho hắn vẫn thiết sau, phát hiện Kình Thương tầm mắt, tức khắc hừ một tiếng, âm dương quái khí mà mở miệng “Long tộc tiểu tử, rất thật tinh mắt a, này đem thương khung kiếm chính là dùng đại lượng trân quý ngũ cấp toái tinh thiết cùng rất nhiều tứ cấp tài liệu chế tạo ra tới, giá cả nhưng không tiện nghi.”</p>
+<p>Kình Thương cũng không cho rằng xử, rốt cuộc có thể trực tiếp nhìn thấy Colin đại sư đã là thực may mắn, một chút ghét bỏ với hắn mà nói không đau không ngứa. Hắn quay đầu nhìn về phía Colin, ánh mắt nóng cháy “Colin đại sư trực tiếp nói cái giá đi.”</p>
+<p>Colin cười lạnh một tiếng “15 cái đồng vàng.”</p>
+<p>Kình Thương không chút do dự lấy ra 15 cái đồng vàng, sau đó đem kiếm bảng to bắt lấy tinh tế mà đoan trang. Này đem kiếm bảng to chỉnh thể trình tro đen sắc, thoạt nhìn giản dị tự nhiên, lại lộ ra một tia uyên bác hạo xa hơi thở, ánh sáng hạ nhận thân sẽ phản xạ ra điểm điểm phụ ma dấu vết. Kình Thương giơ lên thương khung thử múa may hai hạ, tro đen sắc kiếm bảng to nắm ở hắn thon dài trong tay thế nhưng có vẻ vô cùng tương xứng.</p>
+<p>Phong Lê thấy thế, cũng không chịu nổi tâm ngứa, đối Colin lộ ra cái như xuân phong ấm áp mỉm cười “Ngài hảo Colin đại sư, xin hỏi ngài có hay không có thể bán ra mộc hệ pháp trượng cùng cung tiễn? Ta cùng Phong Tự nhất định sẽ cho ra ngài vừa lòng giá cả.” Phong Tự cũng đi theo gật đầu, luôn là lãnh lãnh đạm đạm màu xanh nhạt đôi mắt lóe cùng Kình Thương tương đồng nóng cháy.</p>
+<p>Colin ngẩng đầu nhìn bọn họ liếc mắt một cái, biểu tình thoáng hòa hoãn, nói “Chờ.” Nói xong, hắn đứng dậy đi tới nội phòng.</p>
+<p>Mục Xuyên lúc này rốt cuộc hậu tri hậu giác mà nhớ tới người lùn cùng Long tộc luôn luôn không thế nào đối bàn, cùng tinh linh quan hệ tương đối hữu hảo. Hắn có chút xin lỗi mà nhìn về phía Kình Thương, lại thấy hắn chuyên chú mà nghiên cứu trong tay kiếm bảng to. Chờ hắn nhận thấy được Mục Xuyên tầm mắt ngẩng đầu, hẹp dài mắt đỏ lượng kinh người, hắn có chút hưng phấn mà há mồm liền nói “Vong Xuyên, chúng ta khi nào tới một hồi?”</p>
+<p>Mục Xuyên “……”</p>
+<p>Xem ra hắn thật sự một chút đều không ngại sao. Nghĩ, hắn đem tầm mắt đầu hướng về phía từ trong phòng đi ra Colin.</p>
+<p>Colin trên tay ôm một phen pháp trượng cùng một phen cung, ở hắn vừa đi ra tới thời điểm, Phong Lê cùng Phong Tự hai người đôi mắt liền sáng. Bọn họ gấp không chờ nổi mà từ Colin trên tay tiếp nhận, tinh tế đoan trang.</p>
+<p>Phong Lê trong tay pháp trượng tên là rừng rậm chi ngữ, thân trượng thon dài, trình màu nâu vật liệu gỗ hoa văn, mặt trên tuyên khắc rất nhiều thâm màu xanh lục phù văn. Đầu trượng là một khối thật lớn hình thoi tứ cấp rừng rậm đá quý, đang tản phát ra ôn hòa mộc hệ năng lượng, ở đá quý cùng mộc thân trượng chi gian, từ màu ngân bạch bí bạc làm đá quý thác đem hai người liền ở bên nhau.</p>
+<p>Phong Tự trong tay cung tên là nhẹ nhứ, trình màu xanh lơ, từ tứ cấp chuông gió mộc chế tạo mà thành, đường cong lưu sướng, khom lưng như giương cánh cánh chim, nắm tay chỗ có màu bạc kim loại bao vây, mặt trên khảm hai viên màu xanh lơ tam cấp phong ngữ đá quý. Phong Tự bát hai hạ cung thượng huyền, thế nhưng không chút sứt mẻ, hắn lãnh đạm trên mặt khó được xuất hiện một tia ý cười, thở dài “Hảo cung.”</p>
+<p>“Đương nhiên hảo, pháp trượng cùng cung các 10 cái đồng vàng.”</p>
+<p>Phong Tự nhanh chóng đem đồng vàng móc ra tới nhét vào Colin trong tay, sợ hắn đổi ý giống nhau, sau đó liền ôm âu yếm cung không nói. Phong Lê cũng mỉm cười móc ra đồng vàng, đưa cho Colin.</p>
+<p>Thấy bọn họ đều lộng tới v·ũ kh·í, Mục Xuyên lại ma Colin bán cho hắn một phen dùng tam cấp tài liệu chế tạo chủy thủ đổi đi lang trảo chủy, cuối cùng bọn họ bị Colin bắn cho ra cửa.</p>
+<p>Colin ở kẹt cửa sau âm mặt đối Mục Xuyên nói “Tiểu tử, ba ngày sau tới tìm ta.” Nói xong “Ping” mà một tiếng đóng cửa lại.</p>
+<p>Mục Xuyên có chút dở khóc dở cười, đành phải xoay người cùng bọn họ nói “Đi thôi.”</p>
+<p>Về tới Kelin trấn, ước hảo ba ngày sau cùng đi Thần Điện khai hoang sau, đại gia liền từng người tan. Thời gian đã đến buổi chiều 3 giờ, đi ra ngoài đánh quái cũng đánh không được bao lâu, Lộ Dao còn muốn tiếp tục thu thập kỹ năng, chính mình đi rồi, chỉ còn lại có Mục Xuyên cùng Kình Thương hai mặt nhìn nhau.</p>
+<p>“Cùng nhau trở về?”</p>
+<p>“Hảo.”</p>
+<p>Hai người cùng nhau đi ở gạch màu đỏ đường nhỏ thượng, không khí có chút cổ quái, có loại mê chi trầm mặc. Chung quanh lui tới đám người đều nhịn không được nhìn bọn họ nghị luận, kỳ quái chính là cư nhiên không có người tiến lên vây xem đáp lời. Bất đồng với Mục Xuyên đã sớm mang hảo mũ choàng kéo khăn quàng cổ đem mặt che mà kín mít, Kình Thương không chút nào cố kỵ mà triển lãm hắn hi hữu chủng tộc đặc thù, chân dài bước chút nào không thèm để ý chung quanh người ánh mắt.</p>
+<p>Mục Xuyên ngẩng đầu nhìn Kình Thương liếc mắt một cái, khụ một tiếng, mở miệng đánh vỡ trầm mặc “Cái kia Thần Điện ở địa phương nào?”</p>
+<p>Kình Thương nghiêng đầu nhìn Mục Xuyên, màu đỏ đôi mắt dưới ánh mặt trời như đá quý tươi đẹp bắt mắt “Đó là ở một cái thực bí ẩn tiểu sơn cốc……”</p>
+<p>Nói nói, hai người chi gian không khí bắt đầu trở nên hòa hợp, bắt đầu tham thảo nổi lên Thần Vực chiến đấu kỹ xảo cùng các loại kỹ năng. Bọn họ càng nói càng đầu cơ, Mục Xuyên bất động thanh sắc mà thấu chút chiến đấu kỹ xảo cấp Kình Thương, mà Kình Thương có chút độc đáo ý tưởng cùng đối kỹ năng cùng chiêu thức lý giải cũng không e dè mà nói cho Mục Xuyên, có chút cũng làm Mục Xuyên tán thưởng không thôi.</p>
+<p>Kình Thương có chút cái nhìn cùng giải thích so sánh với đời sau tuy còn có chút non nớt, nhưng cũng thực tiếp cận, hơn nữa có chút quan điểm thậm chí làm Mục Xuyên cảm giác mới mẻ, làm Mục Xuyên nhịn không được cùng hắn thảo luận. Hai người càng nói càng kích động, liền kém không khoa tay múa chân hai hạ. Nói chính hứng khởi hai người không có phát hiện, bọn họ đi trên đường càng ngày càng nhiều người, nhìn chằm chằm bọn họ khe khẽ nói nhỏ.</p>
+<p>Dần dần mà, chung quanh tầm mắt càng ngày càng vô pháp bỏ qua, Mục Xuyên cau mày nhìn chung quanh càng ngày càng nhiều người liếc mắt một cái, rốt cuộc nhịn không được hỏi ra khẩu “Kình Thương ngươi không sợ bị người khác vây xem sao?”</p>
+<p>Kình Thương biểu tình thực tùy ý “Sợ cái gì, bọn họ cũng không dám lại đây.” Nói xong, hắn nhàn nhạt mà liếc người chung quanh liếc mắt một cái, bị hắn nhìn đến người cư nhiên nhịn không được lui ra phía sau một bước.</p>
+<p>Mục Xuyên “……”</p>
+<p>Thực hảo rất cường đại.</p>
+<p>Liền như vậy trò chuyện, thực mau về tới gia. Đứng ở thiết nghệ trước đại môn, Kình Thương lại không có lập tức đi vào, hắn suy nghĩ một hồi, đối nghi hoặc mà nhìn hắn Mục Xuyên nói “Ngươi có phải hay không muốn Colin đại sư giúp ngươi chế tạo v·ũ kh·í?” Mục Xuyên gật đầu.</p>
+<p>Kình Thương “Kia chờ ngươi bắt được v·ũ kh·í mới lúc sau chúng ta lại luận bàn đi.”</p>
+<p>Mục Xuyên cười, màu hồng nhạt môi gợi lên một mạt đẹp độ cung “Hảo.”</p>
+<p>————</p>
+<p>Cùng Kình Thương từ biệt tách ra, Mục Xuyên đi vào đại môn. Myron đã sớm chờ ở cạnh cửa xin đợi, ở Mục Xuyên đi vào đi sau đi theo hắn, hướng hắn hội báo lữ quán cùng dược tề cửa hàng tình huống.</p>
+<p>“Tiên sinh, trước mắt dược tề cửa hàng đã ở trang hoàng giai đoạn, đã có thể chuẩn bị dược tề tồn kho lấy bị thượng giá, ta kiến nghị tiên sinh có thể mướn mấy cái chuyên trách dược tề sư vì vì trong tiệm chuyên trách chế dược. Lữ quán còn ở xây dựng trung……”</p>
+<p>Mục Xuyên cẩn thận nghe, thỉnh thoảng gật đầu, chờ hắn ở đại sảnh ngồi xuống, hắn lấy ra tờ giấy viết xuống mấy cái tên, cùng Myron nói “Chuyên trách dược tề sư nói liền đi tìm mấy người này nhìn xem.” Nói xong, hắn mở ra hộp thư vừa thấy. Mục Xuyên sớm đã đóng cửa nhắc nhở âm để tránh quấy rầy, hiện tại mở ra hộp thư, phát hiện treo ở nhà đấu giá đồ vật đã đều chụp đi ra ngoài, đồng vàng tích lũy tới rồi 35 cái.</p>
+<p>Mục Xuyên lấy ra một cái đồng vàng cấp Myron, làm còn thừa xây dựng phí dụng cùng mọi người thuê phí dụng. Myron nhận lấy sau, tiếp tục đối Mục Xuyên nói “Tiên sinh, còn có một việc, chính là lữ quán cùng tiệm thuốc tên.”</p>
+<p>Mục Xuyên nghĩ nghĩ, thuận miệng nói “Liền kêu Thâm Lam đi.”</p>
+<p>Giải quyết xong sự tình, Mục Xuyên duỗi người, lên lầu. Lầu hai đã dựa theo Mục Xuyên yêu cầu kiến hảo trữ vật thất, chế tác thất cùng rèn luyện thất, Mục Xuyên trực tiếp đi vào chế tác thất, lấy ra rất nhiều chế dược nguyên liệu. Lần này hắn được đến không ít dược liệu, có thể thử làm chút hi hữu dược tề.</p>
+<p>Mục Xuyên hướng bình thủy tinh ngã vào ma pháp nước suối, sau đó đem nham dung thảo phóng tới pha lê dược nghiên nghiền nát, chậm rãi, dược nghiên nham dung thảo bùn chảy ra vài giọt xích hồng sắc chất lỏng. Mục Xuyên đem dược nghiên thảo dịch tiểu tâm mà ngã vào bình thủy tinh trung, rơi vào ma pháp nước suối trung thảo dịch giống như tích nhập chảo dầu thủy, lập tức sôi trào lên.</p>
+<p>Mục Xuyên lập tức để vào một viên trong suốt thẩm tách tinh thể, tinh thể ngộ thủy tức dung, sôi trào chất lỏng chậm rãi làm lạnh. Mục Xuyên cầm pha lê bổng theo một phương hướng đều đều mà quấy, vẩn đục chất lỏng chậm rãi trở nên thanh triệt, chờ Mục Xuyên lấy ra pha lê bổng, chỉnh bình dược tề đã biến thành lãnh diễm màu đỏ, giống như thủy tinh trong suốt trong suốt.</p>
+<p>Hệ thống [ đạt được sơ cấp lực lượng tăng phúc dược tề x1], [ chế dược kinh nghiệm +10]</p>
+<p>Mục Xuyên cầm lấy cái nắp đắp lên, giơ lên này bình lực lượng tăng phúc dược tề đối với ngoài cửa sổ ánh mặt trời, nhẹ nhàng quơ quơ, xuyên thấu qua ánh mặt trời dược tề rút đi lãnh diễm, trở nên đỏ tươi ướt át.</p>
+<p>Giống như Kình Thương đôi mắt nhan sắc, Mục Xuyên mạc danh mà nghĩ đến. Đem này bình lực lượng tăng phúc dược tề bỏ vào trên bàn chỉnh chỉnh tề tề mã tốt bình thủy tinh đội ngũ, Mục Xuyên suy nghĩ có chút phiêu.</p>
+<p>Kình Thương thật là một cái kỳ lạ người, nhìn như tùy tính tiêu sái, trên thực tế hẳn là cái trong lòng thâm trầm nội liễm, lòng có tính toán trước người. Rất nhiều lần Mục Xuyên nhìn Kình Thương sâu thẳm mắt đỏ đều nhìn không ra hắn suy nghĩ cái gì, nhìn như điên cuồng hiếu chiến, trên thực tế hắn ánh mắt vẫn luôn là thanh minh. Còn có kia liếc mắt một cái dọa đường lui người ánh mắt cùng khí chất, Mục Xuyên đột nhiên nghĩ đến, nói không chừng đời trước nói Kình Thương có quân đội bối cảnh nghe đồn thực tế là thật sự?</p>
+<p>Kia hắn khả năng biết Thần Vực thực tế tình huống, như vậy Kình Thương sẽ trước tiên mua đất gì đó là có thể đối thượng, hắn muốn hay không đem 5 năm sau kỳ quái sinh vật xâm lấn sự tình nói cho Kình Thương?</p>
+<p>Mục Xuyên có chút do dự, nhưng cuối cùng lại tiết khẩu khí. Trước không nói như thế nào giải thích hắn có thể trước tiên biết trước 5 năm sau sự, chính phủ cùng quân đội có thể hay không tin hắn, liền tính nói cũng không có gì dùng. Mục Xuyên bò ngã vào trên bàn, ngân bạch sợi tóc hỗn độn mà đáp ở trên mặt, kim sắc đôi mắt dưới ánh mặt trời lộ ra một tia ai lạnh.</p>
+<p>Nhớ tới kia như bẻ gãy nghiền nát phá hư địa cầu quái vật, cùng ch·ế·t ở đối kháng trên chiến trường đông đảo binh tướng, Mục Xuyên đem mặt vùi vào trong khuỷu tay. Có lẽ hắn có thể làm, chỉ có ở tai nạn bắt đầu phía trước, nghĩ cách thỉnh cầu chính phủ trước tiên mở ra Thần Vực di dân đi.</p>
+<p>Tác giả có lời muốn nói 【 vô trách nhiệm tiểu kịch trường 】</p>
+<p>Mục Xuyên Ngươi là trung nhị sao?</p>
+<p>Kình Thương Lão tử đây là khí phách!</p>
+<p>Mục Xuyên Ngươi là trung nhị đi.</p>
+<p>Kình Thương ( một giây biến nghiêm túc mặt ) ta có thể làm được, liền không phải trung nhị.</p>
+<p>————</p>
+<p>Hôm nay lại bị biên biên xấu cự, quả thực tâm thái nổ mạnh (</p>
+<p>Bất quá xem đầu điểm như vậy thấp, phỏng chừng ký cũng nhập không được v. Xem ta dựa ái phát điện biubiubiu~~~~</p>
+<p>Cầu nhắn lại cầu cất chứa cầu hoa hoa ~~ ái các ngươi -3-</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong13.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong15.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "than-vuc-game-online-thuc-te-ao";
+const NOVEL_TITLE = "Thần vực ( game online thực tế ảo )";
+const CHAPTER_TITLE = "Chương 14";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
