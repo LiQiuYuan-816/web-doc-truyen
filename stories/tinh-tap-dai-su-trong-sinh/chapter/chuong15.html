@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương  14, hiệp hội Tài Quyết</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tinh tạp đại sư ( trọng sinh )
+      </h1>
+      <div class="novel-meta">
+        <span>Chương  14, hiệp hội Tài Quyết</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong14.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong16.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Buổi tối 6 giờ rưỡi, ăn cơm xong luyện dùm nhóm cùng nhau vào trò chơi, Tạ Minh Triết tiến cá nhân không gian liền nghe được bên tai truyền đến hệ thống nhắc nhở âm “Ngươi có tân bưu kiện, thỉnh đến phòng khách màn hình tinh thể lỏng trước tìm đọc.”</p>
+<p>Hắn đi theo nhắc nhở âm đi qua đi mở ra hộp thư ——</p>
+<p>Phía chính phủ bưu kiện “Tinh Tạp chức nghiệp liên minh thứ 10 giới league chuyên nghiệp đem ở ngày 10 tháng 8 chính thức khởi động, thi đấu vé vào cửa đặt trước thông đạo hiện đã toàn diện mở ra……”</p>
+<p>Phía chính phủ bưu kiện “Vì nghênh đón mùa giải mới đã đến, ngày 1 tháng 8 -10 ngày đánh dấu mãn năm ngày có thể đạt được đầy năm kỷ niệm thẻ bài……”</p>
+<p>Một đại bài phía chính phủ bưu kiện xem đến Tạ Minh Triết hoa cả mắt.</p>
+<p>Gần nhất vừa lúc là mùa giải mới đã đến mấu chốt thời kỳ, phía chính phủ hoạt động rất nhiều, rậm rạp thông tri bưu kiện xếp ở bên nhau, Tạ Minh Triết lười đến tiếp tục xem, dứt khoát đem bưu kiện danh sách cấp tắt đi. Vừa lúc Tề sư huynh phát tới nhập đội mời, Tạ Minh Triết liền gia nhập hắn đội ngũ tiếp tục đi Bạch Lộ tinh thăng cấp.</p>
+<p>Lúc này, chợ đen.</p>
+<p>“Cái kia Béo thúc còn không có hồi phục ngươi sao?” Tàn Dương nhìn Song Song hỏi.</p>
+<p>“Ta rõ ràng cho hắn đã phát bưu kiện, khả năng hắn không ở tuyến đi?” Song Song thần sắc uể oải.</p>
+<p>“……” Tàn Dương cau mày trầm mặc một lát, nói, “Hắn nếu là hồi phục ngươi, ngươi trước tiên nói cho ta. Nếu ở chợ đen phát hiện hắn, cũng lập tức đi liên hệ, liền nói ta muốn đại lượng thu mua hắn thẻ bài, làm hắn tới cùng ta mặt nói.”</p>
+<p>“Tốt, phó hội trưởng.” Song Song nhìn theo phó hội trưởng nôn nóng mà rời đi, trong lòng thập phần áy náy. Nàng mới vừa chơi trò chơi hơn một tháng, đối với chiến đấu tạp cũng không hiểu biết, vốn dĩ hiệp hội Tài Quyết ở chợ đen bày quán chính là nàng sư phụ, hôm nay sư phụ lâm thời có việc làm nàng thế thân, nàng hoàn toàn không chú ý tới này trương Võ Tòng thẻ bài kỹ năng có bao nhiêu đặc biệt, nếu là nàng lúc ấy nghĩ nhiều tưởng tượng, liền sẽ không dễ dàng như vậy thả chạy Béo thúc.</p>
+<p>Hiện tại đảo hảo, căn bản liên hệ không thượng Béo thúc. Song Song cắn chặt răng, xoay người lại đi cấp Béo thúc phát bưu kiện.</p>
+<p>Đường phố cuối, Hồng Chúc ở chợ đen khai “Mỹ nữ thẻ bài thu mua quầy hàng” vẫn là không chờ đến tưởng chờ người. Hồng Chúc có chút không kiên nhẫn, dứt khoát đem hiệp hội mấy cái nguyên lão toàn bộ kêu lên đi lén khai tiểu hội “Đại gia mấy ngày nay thảm thức tìm tòi chợ đen, chú ý sở hữu nguyên sang thẻ bài mặt trái, chỉ cần phát hiện có ‘ Nguyệt Bán ’ cái này nguyên sang logo thẻ bài, lập tức truy tung chủ bán, mau chóng điều tra rõ người này là ai!”</p>
+<p>Mọi người hai mặt nhìn nhau —— Nguyệt Bán? Người này là như thế nào đắc tội Hồng Chúc tỷ? Xem Hồng Chúc tỷ tỷ kia nghiến răng nghiến lợi bộ dáng, cơ hồ muốn đem hắn lột da rút gân, thật là thế hắn vuốt mồ hôi.</p>
+<p>Tàn Dương đem Võ Tòng tạp lấy về hiệp hội căn cứ, giao cho Tài Quyết tổng hội trưởng Huyễn Nguyệt.</p>
+<p>Huyễn Nguyệt thực tế thân phận là câu lạc bộ Tài Quyết thẻ bài chuyên gia, đối thẻ bài số liệu rất có nghiên cứu. Nhìn đến này trương tạp sau, hắn đôi mắt đột nhiên sáng ngời, phản ứng đầu tiên chính là lập tức đem thẻ bài lấy về cá nhân không gian, Tàn Dương tự nhiên cũng theo qua đi.</p>
+<p>Hai người đi vào thư phòng thẻ bài bàn điều khiển trước, Huyễn Nguyệt từ trưng bày quầy lấy tới vài tổ bất đồng cấp bậc kinh nghiệm tinh thạch, trước cấp thẻ bài uy kinh nghiệm uy đến 20 cấp, sau đó uy nhị tinh mảnh nhỏ tiến hóa đến nhị tinh, tiếp theo uy kinh nghiệm đến 30 cấp, tiến hóa tam tinh……</p>
+<p>Trong nháy mắt, mấy trăm vạn kinh nghiệm tinh thạch, 600 trương bất đồng cấp bậc tiến hóa mảnh nhỏ đều bị đút cho Võ Tòng.</p>
+<p>Mới vừa bắt được 1 cấp một Tinh Tạp không ngừng mà ở bàn điều khiển trên không xoay tròn, thẻ bài mặt trái nhan sắc cũng dần dần đã xảy ra biến hóa, thẳng đến cuối cùng, thẻ bài bày biện ra thuần màu đen kim loại ánh sáng, mặt trái hình thành tảng lớn hoa mỹ hỏa hồng sắc hoa văn.</p>
+<p>70 cấp, thất tinh hắc tạp!</p>
+<p>Huyễn Nguyệt lúc này mới cầm lấy thẻ bài, nhìn về phía tạp trên mặt số liệu ——</p>
+<p>Võ Tòng ( hỏa hệ )</p>
+<p>Cấp bậc 70 cấp</p>
+<p>Tiến hóa tinh cấp ★★★★★★★</p>
+<p>Nhưng dùng số lần 77</p>
+<p>Cơ sở thuộc tính Sinh mệnh 19200, phòng ngự 19200, công kích 19200, nhanh nhẹn 80, bạo kích suất 90</p>
+<p>Phụ gia kỹ năng Võ Tòng đánh hổ ( vươn nắm tay tạp hướng mãnh hổ phần đầu, tạo thành kếch xù thương tổn, 85 xác suất kích phát chết ngay hiệu quả )</p>
+<p>Huyễn Nguyệt nhìn số liệu, nhíu mày hỏi “Nhiếp thần Bạch Hổ bài ở trong tay ngươi sao?”</p>
+<p>Tàn Dương gật đầu “Ở. Này trương tạp Nhiếp thần mùa giải trước dùng quá nhiều lần, hư hao sau cho ta sửa chữa, ta cũng là mới vừa tu hảo.”</p>
+<p>Huyễn Nguyệt “Đi đấu trường thử xem hiệu quả.”</p>
+<p>Hai người liếc nhau, trực tiếp từ tinh hệ đồ truyền tống đến Phượng Hoàng tinh vực, khai cái tư nhân đối chiến lôi đài, hơn nữa mật mã.</p>
+<p>Lôi đài bắt đầu, Tàn Dương triệu hồi ra thất tinh Bạch Hổ, chỉ thấy hùng hổ mãnh hổ thả người nhảy, đột nhiên nhào hướng đối phương Võ Tòng ảo ảnh. Nhưng mà Bạch Hổ vừa mới gần người, kia Võ Tòng liền nắm chặt song quyền, dứt khoát lưu loát mà tạp hướng mãnh hổ phần đầu —— thể tích thật lớn Bạch Hổ cư nhiên trực tiếp bị hắn đánh ghé vào trên mặt đất!</p>
+<p>Nhất chiêu nháy mắt hạ gục!</p>
+<p>Tàn Dương kinh hồn táng đảm mà phiên phiên đấu trường chiến đấu kỷ lục.</p>
+<p>—— Võ Tòng tạp phóng thích kỹ năng [ Võ Tòng đánh hổ ], kích phát chết ngay phán định, đánh chết Bạch Hổ tạp.</p>
+<p>Chỉ có này một câu.</p>
+<p>Đơn giản thô bạo đến làm người vô pháp đánh giá.</p>
+<p>Huyễn Nguyệt cũng thấy chiến đấu kỷ lục, như suy tư gì mà nói “chết ngay phán định quả thật là một kích phải giết, này ở trong trò chơi lần đầu tiên xuất hiện đi?”</p>
+<p>Tàn Dương đầy mặt kinh hãi “Ta cũng trước nay chưa thấy qua ‘ kích phát chết ngay ’ loại này kỳ quái kỹ năng!”</p>
+<p>Huyễn Nguyệt nghĩ nghĩ, nói “Ngươi trong tay còn có khác đại thần cao cấp tạp sao? Đổi một trương thử xem.”</p>
+<p>Tàn Dương nói; “Còn có một trương Lam thần Hỏa Phượng Hoàng.”</p>
+<p>Thất tinh Hỏa Phượng Hoàng, triệu hồi ra tới phượng hoàng toàn thân lửa đỏ, triển khai thật lớn hai cánh cơ hồ có thể che trời. Chỉ thấy Hỏa Phượng Hoàng đột nhiên mở ra hai cánh, trong miệng phát ra bén nhọn kêu to, giống như một đoàn thiêu đốt ngọn lửa giống nhau, bay nhanh mà lao xuống hướng trên mặt đất Võ Tòng!</p>
+<p>Võ Tòng tạp lập tức ra quyền phản kích, đáng tiếc hắn không đến 2 vạn phòng ngự quá thấp, trực tiếp bị phượng hoàng hỏa hệ quần công đại chiêu “Phượng vũ thiên tường” cấp nháy mắt hạ gục!</p>
+<p>Nhìn trên mặt đất đốt thành tro Võ Tòng ảo ảnh, Tàn Dương cùng Huyễn Nguyệt nhất thời hai mặt nhìn nhau.</p>
+<p>Trầm mặc một lát sau, Huyễn Nguyệt mới phân tích nói “Này trương Võ Tòng tạp kỹ năng quá cửa hông, chết ngay phán định chỉ đối mãnh hổ tạp có hiệu lực, đối thượng mặt khác loại hình thẻ bài hoàn toàn không có tác dụng, công kích, phòng ngự số liệu cũng chỉ có thể xem như tam lưu tiêu chuẩn —— nhưng nói nó là phế tạp cũng không đúng, bởi vì, một khi gặp gỡ Nhiếp Viễn Đạo, nó chính là một trương thần tạp.”</p>
+<p>“Ai sẽ nhàn rỗi không có việc gì, chuyên môn nhằm vào Nhiếp thần Bạch Hổ?” Tàn Dương biểu tình có chút cổ quái, “Cùng Nhiếp thần có thù oán a?”</p>
+<p>“Thẻ bài tác giả là người nào?”</p>
+<p>“15 cấp tân nhân, tên gọi Béo thúc.”</p>
+<p>Béo thúc? Đây là cái gì kỳ quái tên? Huyễn Nguyệt trong lòng nói thầm, đem thẻ bài lật qua tới, nhìn màu đen bài mặt góc phải bên dưới cái kia “Nguyệt Bán” logo tiêu chí, hắn đột nhiên có chút bất an, lập tức liền thượng cơ sở dữ liệu, nói “Lục soát lục soát xem người này rốt cuộc làm nhiều ít trương thẻ bài.”</p>
+<p>Tìm tòi tác giả logo, cơ sở dữ liệu thực mau liền cấp ra kết quả 20 trương.</p>
+<p>Huyễn Nguyệt đột nhiên một cái giật mình “Dư lại 19 trương thẻ bài, nên sẽ không tất cả đều là Võ Tòng tạp, bị hắn cấp bán đi chợ đen đi?!”</p>
+<p>Tàn Dương sắc mặt cũng nháy mắt âm trầm xuống dưới “Nếu như bị mặt khác câu lạc bộ thu được này trương tạp, Nhiếp thần Bạch Hổ bài chẳng phải là phế đi?”</p>
+<p>“…………” Hai người liếc nhau.</p>
+<p>Làm Tài Quyết lão hội trưởng, Huyễn Nguyệt luôn luôn rất bình tĩnh, nhưng hiện tại hắn lại bình tĩnh không được.</p>
+<p>—— chết ngay phán định, thần con mẹ nó chết ngay phán định!</p>
+<p>Loại này phán định ở trong trò chơi chưa từng có xuất hiện quá, rất nhiều người khả năng cũng chưa làm minh bạch “Kích phát chết ngay” là có ý tứ gì, còn tưởng rằng “chết ngay” là cùng kim hệ thẻ bài “Tức tàn” không sai biệt lắm, cho nên chợ đen mua tạp, bán tạp người, đều không rõ lắm này trương Võ Tòng tạp giá trị.</p>
+<p>Nhưng là, tuyển thủ chuyên nghiệp cùng các đại hiệp hội cao tầng đều biết loại này phán định.</p>
+<p>Bởi vì, đây là gần nhất mới gia nhập cơ sở dữ liệu, hoàn toàn mới một loại kỹ năng phán định!</p>
+<p>Trước mùa giải tổng kết đại hội, Đường Mục Châu đột nhiên đưa ra “Một đổi một công năng tạp” làm thẻ bài có chứa “chết ngay hiệu quả” lý niệm.</p>
+<p>Nghe nói kia một hồi đại hội, các tuyển thủ chuyên nghiệp phân thành hai phái triển khai đấu khẩu, nhất phái tán đồng Đường thần lý niệm, duy trì cơ sở dữ liệu gia tăng chết ngay bài; một khác phái mãnh liệt phản đối, cho rằng như vậy thẻ bài sẽ ảnh hưởng thi đấu cân bằng, căn bản không hợp lý.</p>
+<p>Đường Mục Châu mỉm cười lên phong độ nhẹ nhàng, hắn liệt kê rất nhiều gia tăng chết ngay bài lý do, cuối cùng còn nói “chết ngay bài xuất hiện, sẽ đại đại phong phú trên sân thi đấu chiến thuật. Chẳng lẽ các ngươi không muốn làm ra một trương bài, xuất kỳ bất ý mà giết chết ta ngàn năm thần thụ sao?”</p>
+<p>Chúng tuyển thủ “…………”</p>
+<p>Đường thần này sóng thù hận kéo chính là thật ổn, phàm là bị hắn thần thụ buộc chặt quá người, đều tưởng giết chết này cây phiền nhân đại thần thụ.</p>
+<p>Làm người không nghĩ tới chính là, luôn luôn cùng Đường Mục Châu không rất hợp bàn Nhiếp Viễn Đạo, cư nhiên cũng duy trì Đường thần ý tưởng.</p>
+<p>Nhiếp Viễn Đạo bình tĩnh mà nói “chết ngay loại thẻ bài uy hiếp cũng không có đại gia tưởng như vậy đại, phía chính phủ nếu có thể điều tiết khống chế số liệu, nhiều nhất cũng chính là một đổi một công năng tạp thôi. Dùng chết ngay bài đổi đi đối thủ thần tạp, này sẽ làm thi đấu chiến thuật càng thêm hay thay đổi, ta đồng ý Đường Mục Châu đề nghị.”</p>
+<p>Thủy hệ tuyển thủ Kiều Khê cười tủm tỉm nói “Ta cũng cảm thấy Đường thần ý tưởng thực không tồi, chết ngay phán định thẻ bài xuất hiện ở sân thi đấu, có thể ở thời khắc mấu chốt thắng vì đánh bất ngờ. Nếu không, nào đó người huyết lượng vượt qua 20 vạn thẻ bài hướng nơi đó một phóng, ta đều không nghĩ tiếp tục thi đấu.”</p>
+<p>Bị điểm danh thổ hệ đại biểu Trịnh Phong sờ sờ cái mũi, nói “Khê thần là nói ta kia trương huyết lượng 20 vạn voi trắng đúng không? Kỳ thật ta cũng cảm thấy nó huyết lượng quá dày, mỗi lần thi đấu làm đại gia đánh nửa ngày, ta rất ngượng ngùng.”</p>
+<p>Mọi người “…… Ngươi lăn!”</p>
+<p>Để tránh đại gia giáp mặt đánh lên tới, liên minh chủ tịch lập tức duy trì trật tự “Hảo, hiện tại bắt đầu đầu phiếu.”</p>
+<p>Cuối cùng, Đường Mục Châu kiến nghị thông qua chức nghiệp liên minh đại hội quyết nghị.</p>
+<p>Liên minh đem kiến nghị đệ trình cấp phía chính phủ, phía chính phủ trải qua thảo luận sau quyết định tiếp thu.</p>
+<p>Vì điều tiết khống chế thẻ bài cân bằng, phía chính phủ làm số liệu sư đoàn đội khai rất nhiều lần sẽ, cũng tiến hành kỹ càng tỉ mỉ công thức suy đoán, xác định chết ngay loại thẻ bài sinh mệnh, công kích, phòng ngự chờ số liệu phạm vi —— cái này quá trình tiêu phí suốt nửa năm nhiều thời giờ, cũng là tháng trước mới chính thức ra sân khấu thông cáo.</p>
+<p>Phía chính phủ thông cáo nói, kỹ năng cơ sở dữ liệu gia nhập “chết ngay phán định”, nhưng yêu cầu phi thường khắc nghiệt.</p>
+<p>Đầu tiên, “chết ngay phán định” thẻ bài, chỉ có thể mang một cái chết ngay kỹ năng, hơn nữa nhằm vào không thể quá rộng khắp, tỷ như “Thực vật chết ngay” “Động vật chết ngay” “Nhân loại chết ngay” như vậy tạp là không cho phép xuất hiện —— chết ngay phán định nhiều nhất nhằm vào mỗ một cái tử phân loại thẻ bài.</p>
+<p>Tiếp theo, chỉ cần thẻ bài có chứa “chết ngay phán định”, này một loại tạp đem bị đưa về “Dùng một lần công năng tạp”, công kích, phòng ngự thuộc tính cần thiết rất thấp, nói cách khác, phóng xong kỹ năng sau, nó chính mình cũng sẽ lập tức chết, nhiều nhất đạt tới “Một đổi một” hiệu quả, để tránh ảnh hưởng cạnh kỹ cân bằng.</p>
+<p>Ngoài ra liên minh cũng tương ứng mà ra sân khấu một cái quy định —— chết ngay loại thẻ bài mỗi trận thi đấu nhiều nhất mang theo một trương, nhưng làm vũ khí bí mật sử dụng.</p>
+<p>Phía chính phủ thông cáo mới thả ra không lâu, trong trò chơi người chơi khả năng rất nhiều người cũng chưa chú ý tới. Rốt cuộc mỗi lần đổi mới thời điểm, thông cáo một chuỗi dài, không chuyên môn nghiên cứu thẻ bài người cũng không sẽ đi chú ý “Kỹ năng cơ sở dữ liệu gia tăng chết ngay phán định” như vậy tin tức.</p>
+<p>Trước mắt các đại câu lạc bộ nghiên cứu thẻ bài chuyên gia nhóm, đều ở nếm thử chế tác loại này có chứa “Phải giết hiệu quả” bài, khác câu lạc bộ tiến độ như thế nào, Huyễn Nguyệt cũng không biết, nhưng câu lạc bộ Tài Quyết Nhiếp thần, Lam thần trước mắt còn không có làm ra tới, không nghĩ tới, lại bị cái này kêu “Béo thúc” người đoạt trước, lại còn có làm ra một trương nhằm vào mãnh hổ loại thẻ bài Võ Tòng —— trực tiếp nhằm vào đến Nhiếp thần!</p>
+<p>Nhiếp thần nếu là biết, hắn đồng ý Đường Mục Châu lý niệm gia tăng chết ngay phán định, kết quả nhanh như vậy liền có người làm ra một trương đối hắn Bạch Hổ tạp kích phát chết ngay bài, hắn có thể hay không tức chết?</p>
+<p>Này trương thẻ bài nhưng tuyệt không thể bị khác câu lạc bộ tìm được!</p>
+<p>Huyễn Nguyệt chau mày, nhanh chóng làm ra quyết định; “Lập tức an bài nhân thủ thảm thức tìm tòi chợ đen! Sở hữu nguyên sang logo là ‘ Nguyệt Bán ’ thẻ bài tất cả đều cho ta mua trở về, đặc biệt là Võ Tòng tạp, một trương đều không cần lậu!”</p>
+<p>Chợ đen đã thật lâu không như vậy náo nhiệt qua.</p>
+<p>Ở chợ đen bày quán các người chơi vẻ mặt mộng bức —— Phong Hoa cùng Tài Quyết nhiều như vậy quản lý tễ ở chợ đen, là muốn làm gì?</p>
+<p>Hồng Chúc thấy lui tới quen thuộc ID, đầu đều mau tạc. Tài Quyết rất nhiều nguyên lão đột nhiên xuất hiện ở chợ đen, hơn nữa ở bán thẻ bài quầy hàng thượng cẩn thận tìm tòi, tựa hồ đang tìm cái gì thẻ bài. Nàng trong lòng đặc biệt bất an, tổng cảm thấy Tài Quyết là đem Đại Ngọc tạp cấp mua trở về. Mà Tàn Dương ý tưởng cùng Hồng Chúc giống nhau, còn tưởng rằng là hiệp hội Phong Hoa mua đi rồi mặt khác Võ Tòng tạp, đang tìm tìm nguyên tác giả.</p>
+<p>Hai người cho nhau nghi kỵ, gặp mặt thời điểm lại làm bộ bình tĩnh mà chào hỏi “Hồng tỷ, ngươi còn ở chợ đen a?”</p>
+<p>Hồng Chúc ra vẻ bình tĩnh “Ân, nhàn rỗi nhàm chán nơi nơi đi dạo.”</p>
+<p>Tàn Dương ngoài cười nhưng trong không cười “Ta cũng là, thật xảo!”</p>
+<p>Hồng Chúc “Đúng vậy, thật xảo.”</p>
+<p>Hai người ngoài miệng lễ phép mà chào hỏi, trong lòng đã sớm đem đối phương mắng trăm tám mươi lần.</p>
+<p>Một lát sau, hiệp hội Phong Hoa cùng hiệp hội Tài Quyết rất nhiều quản lý xuất hiện ở chợ đen tin tức truyền khắp nằm vùng vòng.</p>
+<p>Mặt khác hiệp hội hội trưởng nhóm nhận được tin tức đều thập phần mờ mịt.</p>
+<p>Rốt cuộc làm sao vậy? Hai nhà đại hiệp hội đột nhiên bắt đầu thảm thức tìm tòi chợ đen, chẳng lẽ là chợ đen lại xuất hiện lợi hại thẻ bài?</p>
+<p>Vì thế, mặt khác đại hiệp hội cũng sôi nổi bắt đầu hành động ——</p>
+<p>“Tuy rằng không biết vì cái gì, nhưng chúng ta cũng đi xem xem náo nhiệt.” Lưu Sương Thành hội trưởng nói.</p>
+<p>“Đi chợ đen nhìn xem, bọn họ rốt cuộc đang tìm cái gì?” Ám Dạ Chi Đô hội trưởng bình tĩnh mà mệnh lệnh nói.</p>
+<p>“Có phải hay không chợ đen xuất hiện chế tạp thiên tài a?” Chúng Thần Điện hội trưởng sấm rền gió cuốn đều tự mình lại đây.</p>
+<p>Không quá mười phút, một đại sóng hiệp hội quản lý tập thể đi vào chợ đen xem náo nhiệt.</p>
+<p>Hồng Chúc thật sự rất tưởng khóc, rốt cuộc khác Đại Ngọc tạp bị ai cấp mua đi rồi? Tàn Dương cũng rất tưởng mắng chửi người, Béo thúc làm 20 trương tạp, hắn chỉ mua được 1 trương Võ Tòng, nên sẽ không dư lại 19 trương tất cả đều là Võ Tòng, bị các đại câu lạc bộ cấp mua đi rồi đi?!</p>
+<p>Chợ đen loạn thành một nồi cháo.</p>
+<p>Trên đường nơi nơi đều là đỉnh đầu “xx hiệp hội phó hội trưởng” “xx hiệp hội quản lý” danh hiệu đại nhân vật, bày quán người chơi sôi nổi cùng hội trưởng nhóm chụp ảnh chung lưu niệm. Mà hoàn toàn đảo loạn chợ đen đầu sỏ gây tội Tạ Minh Triết, lúc này đang cùng tiểu đồng bọn cùng nhau ở Bạch Lộ tinh huyệt động vui sướng mà thăng cấp.</p>
+<p>Tề sư huynh hỏi “Béo thúc, ngươi phía trước mua như vậy nhiều sao vân giấy, nói muốn thử nguyên sang thẻ bài, cuối cùng làm thành sao?”</p>
+<p>Tạ Minh Triết cười nói “Ta liền tùy tiện làm hai trương, cơ sở thuộc tính đều không tốt lắm, bán đi chợ đen kiếm lời điểm tiền tiêu vặt.”</p>
+<p>Tư Tư hưng phấn mà hỏi “Béo thúc ngươi làm chính là cái gì tạp? Có thể cho ta xem sao?”</p>
+<p>“Đều là nhân vật tạp, đã toàn bộ bán đi. Về sau có cơ hội lại làm mấy trương cho ngươi cất chứa đi!”</p>
+<p>Tề sư huynh lấy người chơi lâu năm miệng lưỡi kiến nghị nói “Thuộc tính kém nhân vật tạp xác thật bán không ra hảo giá cả, bất quá, có thể kiếm điểm tiền tiêu vặt cũng không tồi. Làm tạp tương đối tiêu hao tinh thần lực. Không cần dùng một lần làm quá nhiều, miễn cho thiêu đầu óc.”</p>
+<p>Tạ Minh Triết gật đầu “Ân ân. Ta đêm nay lại làm mười trương liền kết thúc công việc.”</p>
+<p>—— Hồng Chúc cùng Tàn Dương nếu là nghe được những lời này, phỏng chừng sẽ bị hắn cấp tức chết.</p>
+<p>Tạ Minh Triết kỳ thật phi thường vô tội, bởi vì hắn đối này hết thảy đều không biết gì.</p>
+<p>Hắn chỉ là cái mới vừa chơi thẻ bài trò chơi tay mới, ở hắn xem ra, Tinh Tạp thế giới thẻ bài nhiều như lông trâu, có thể bán ra giá cao thẻ bài công kích, phòng ngự đều là vài vạn khởi bước, tỷ như đấu giá hội bán ra giá cao kia trương dạ lai hương, huyết lượng 10 vạn, phòng ngự 5 vạn, hắn làm Đại Ngọc tạp phòng ngự mới 15 điểm, thăng cấp đến thất tinh không đến 1000 điểm; Võ Tòng tạp công kích, phòng ngự cũng không cao, khẳng định bán không ra giá tốt.</p>
+<p>Hắn căn bản không biết, chết ngay loại phán định kỹ năng mấy ngày hôm trước vừa mới gia nhập cơ sở dữ liệu, ở trong trò chơi này còn chưa bao giờ xuất hiện quá —— hắn còn tưởng rằng loại này kỹ năng thực thường thấy đâu!</p>
+<p>Hai đại hiệp hội người ở chợ đen nơi nơi tìm kiếm “Nguyệt Bán” chế tác thẻ bài.</p>
+<p>Hồng Chúc, Tàn Dương này đó hội trưởng đều sắp cấp điên rồi.</p>
+<p>Tạ Minh Triết lại thập phần nhàn nhã.</p>
+<p>Hắn đi theo Tề sư huynh cùng Tư Tư ở Bạch Lộ tinh huyệt động một bên nói chuyện phiếm, một bên xoát quái.</p>
+<p>Hắn đến mau chóng lên tới 35 cấp, gia nhập Trần ca đội ngũ, rốt cuộc hắn hiện tại là chính thức luyện dùm, không thể hoang phế công tác.</p>
+<p>Đến nỗi thẻ bài, hắn tính toán đêm nay lại trừu thời gian làm mười trương Võ Tòng, cầm đi chợ đen nơi nơi bán một bán, kiếm điểm nhi tiền tiêu vặt.</p>
+<p>Muỗi lại tiểu cũng là thịt, phê lượng chế tác, tổng có thể kiếm chút tiền cơm đi!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong14.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong16.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tinh-tap-dai-su-trong-sinh";
+const NOVEL_TITLE = "Tinh tạp đại sư ( trọng sinh )";
+const CHAPTER_TITLE = "Chương  14, hiệp hội Tài Quyết";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
