@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 24</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tinh cầu khởi động lại [ xây dựng ] / Tinh tế người chơi [ thực tế ảo ]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 24</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong23.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong25.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Mẹ, chúng ta thật sự đi Long Bắc đầu tư nha?” Cùng thời gian, tô tỉnh thanh sơn khu một đống xa hoa biệt thự, chu hân có chút tò mò hỏi. Đây là một gian tỉ mỉ bố trí thư phòng, lúc này trong thư phòng mở ra ấm đèn, trước máy tính ngồi một cái 50 tả hữu, năng hoa lê tiểu cuốn trung niên nữ tử.</p>
+<p>“Quốc gia khả năng muốn phát triển bên kia nhi, trước hỏi hỏi.” Nữ tử nói.</p>
+<p>Nữ tử tên là tô tuệ vân, tuổi trẻ khi đã làm xưởng quần áo nữ công, sau lại sáng lập chính mình trang phục đại nhà xưởng, nhất phong cảnh khi từng có hai ngàn danh công nhân. Nàng là dựng nghiệp bằng hai bàn tay trắng xông ra tới, lúc sau toàn cầu nguy cơ, trang phục phí tổn dâng lên, cư dân nhu cầu không cao đẳng các loại nguyên nhân, xưởng quần áo ở đại tai nạn sau năm thứ ba liền phá sản.</p>
+<p>Nàng mấy năm nay vẫn luôn nghĩ Đông Sơn tái khởi.</p>
+<p>Nàng cùng bằng hữu hợp khai quá vận chuyển công ty, sáng lập quá nước máy xưởng, năm kia còn nhận thầu một ngàn mẫu thổ địa loại lúa nước, bất quá mấy năm nay hoàn cảnh chung không tốt, nàng làm cái gì bồi cái gì, xưởng quần áo tích cóp hạ tiền cũng không có nhiều ít.</p>
+<p>“Ta tra xét hạ, quốc gia kiến địa phương này là không người khu, mùa đông bình quân nhiệt độ không khí âm 50, cái này địa phương liền tính tưởng phát triển cũng phát triển không đứng dậy đi?” Chu hân nhìn máy tính giao diện hỏi.</p>
+<p>Vừa rồi tô tuệ vân xem chính là Trường Ninh thị nhà second-hand ngôi cao, nơi đó bình quân giá nhà 900, này phóng mười năm trước là tưởng cũng không dám tưởng.</p>
+<p>“Không nhất định……” Nếu là trước kia, tô tuệ vân cho rằng đây là một cái tùy tùy tiện tiện chính sách, nhưng hiện tại cả nước quản khống kỳ, quốc gia ở cái này mấu chốt thượng đột nhiên tuyên bố kiến thị, cái này quyết sách thấy thế nào như thế nào khác thường.</p>
+<p>Đương nhiên, chính yếu nguyên nhân là không người khu giá nhà quá tiện nghi, liền tính tùy tiện đầu tư hai bộ cũng sẽ không thương gân động cốt.</p>
+<p>“Kia ta hỏi lại hỏi?” Chu hân nói. Các nàng vừa rồi hỏi năm gia, hiện tại Long Bắc kiến thị tin tức truyền khai, nhân chính sách không rõ, thật không có nhiều ít bán gia lập tức ra tay —— đại gia bán giá cả đã nghiêm trọng thấp hơn phí tổn giới, nếu là quốc gia thật sự khai phá không người khu, bọn họ không ngại chờ một chút.</p>
+<p>“Hành.” Tô tuệ vân gật gật đầu, nói chuyện phiếm trung, trên bàn di động vang lên. Nàng nhìn một chút, điểm đánh tiếp nghe “Triệu ca?”</p>
+<p>Điện báo giả tên là Triệu kiệt, là nàng khai xưởng quần áo khi sinh ý đồng bọn, hai người quan hệ không tồi.</p>
+<p>“Xem hôm nay tin tức không có?” Triệu kiệt trực tiếp đi thẳng vào vấn đề.</p>
+<p>“Nhìn, ta vừa rồi còn cùng khuê nữ nói chuyện phiếm, muốn đi bên kia mua mấy bộ phòng đầu tư.”</p>
+<p>“Ngươi có đi hay không? Ta vừa rồi cùng lão Hồ bọn họ thương lượng, chuẩn bị quá mấy ngày qua đi nhìn xem, nếu là có không tồi hạng mục có thể thử xem.”</p>
+<p>“Đầu tư phòng ở?” Triệu kiệt từng đương quá chuyên nghiệp xào khách trọ, kinh tế trượt xuống sau tổn thất thảm trọng.</p>
+<p>“Không chạm vào phòng ở, phía bắc người lại không ngốc, hiện tại quốc gia mới ra chính sách, bọn họ khẳng định muốn quan vọng một đoạn thời gian.” Triệu kiệt nói.</p>
+<p>“Kia làm cái gì?”</p>
+<p>“Quốc gia muốn thật sự xây dựng phía bắc, khẳng định muốn tu lộ làm xây dựng, nói không chừng đến lúc đó liền có hảo hạng mục……”</p>
+<p>Tô tuệ vân nghĩ nghĩ cũng đúng, suy tư sau nói “Khả năng đi không được.”</p>
+<p>“Vì cái gì?” Triệu kiệt sửng sốt, bọn họ vài người cùng nhau chơi hơn phân nửa đời, tô tuệ vân không phải lo trước lo sau tính cách a.</p>
+<p>Tô tuệ vân bất đắc dĩ “Hiện tại cả nước quản khống, đừng nói không người khu, chúng ta tiểu khu đều ra không được.”</p>
+<p>“Hại!” Triệu kiệt quá hưng phấn, hoàn toàn đã quên này tra.</p>
+<p>“Chúng ta trong khoảng thời gian này nhiều lưu ý một ít tin tức, nếu là có cơ hội trước tiên qua đi nhìn xem.” Hắn nói.</p>
+<p>“Hành!”</p>
+<p>“Về sau kinh tế trọng tâm có thể hay không hướng bắc di?”</p>
+<p>“Hẳn là sẽ không, cảm giác sẽ một lần nữa phát triển bên kia công nghiệp nặng.”</p>
+<p>“Hiện tại rất nhiều quốc gia đều đình chỉ dầu mỏ than đá xuất khẩu, chúng ta quốc gia là chuẩn bị chính mình khai thác?”</p>
+<p>Tin tức tuyên bố sau, có không ít người suy đoán Long Bắc kiến thị nguyên nhân. Trải qua kéo tơ lột kén, bọn họ suy đoán là hiện tại thế cục quá loạn, quốc gia ở vì Long Cổ đường lui làm chuẩn bị.</p>
+<p>“Quốc gia muốn khai phá Long Bắc tài nguyên sản nghiệp?” 12 tháng mười hào, Trịnh Hồng đào tâm tình phức tạp nhìn mới nhất phân tích. Hiện tại cự quốc gia kiến tạo Long Tinh thị tin tức đã qua đi ba ngày.</p>
+<p>Này ba ngày, trên mạng đều ở suy đoán quốc gia vì cái gì kiến thị, cuối cùng đến ra kết luận Hiện tại tang thi nguy cơ, toàn cầu than đá dầu mỏ giá cả đại biên độ dâng lên, một ít quốc gia nhân thế cục vấn đề đã đình chỉ nguồn năng lượng xuất khẩu, toàn cầu khả năng bùng nổ thế giới đại chiến.</p>
+<p>Long Cổ từ trường kỳ chiến lược suy xét, tính toán đại biên độ khai phá không người khu tài nguyên, như vậy cũng có thể ở quốc tế quan hệ trung chiếm chủ đạo địa vị.</p>
+<p>Ba phút sau, Trịnh Hồng minh phiên đến một thiên tên là 《 than đá cùng dầu mỏ Bật mí không người khu cuối cùng giá trị 》 văn chương khi, hoàn toàn nổi giận “Lăn con mẹ nó cuối cùng giá trị!”</p>
+<p>Văn chương từ địa lý hoàn cảnh chờ nhân tố phân tích không người khu đã không thích hợp sinh tồn, hiện tại lớn nhất giá trị chính là đối một ít khoáng sản tài nguyên điểm tiến hành chiều sâu khai thác. Nơi này ‘ chiều sâu khai thác ’ không hề là trước đây ‘ bảo vệ môi trường hình ’ khai thác, mà là lấy phá hư sinh thái thổ địa làm cơ sở đoạt lấy tính khai thác.</p>
+<p>“Chúng ta chỗ đó vốn dĩ chính là không người khu, liền tính thật khai phá, cũng là vì cả nước làm cống hiến.” Vương nhân đổ hai ly nước sôi, ngồi vào Trịnh Hồng minh bên người nói chuyện phiếm nói.</p>
+<p>“Kia không giống nhau!” Trịnh Hồng minh nhớ tới chính mình phụ thân ——</p>
+<p>Phụ thân hắn là một người mỏ than công nhân, khi đó mỏ than tụ tập, một ngọn núi trên đầu khả năng có ba tòa quặng mỏ. Hắn mỗi lần cấp phụ thân đưa cơm khi, đối phương đều là từ đen như mực giếng mỏ hạ đi lên, giếng rất sâu, hắn trên mặt trên tay đều là hắc, làn da khô khốc giống một cái tuổi xế chiều lão nhân.</p>
+<p>Bọn họ khi đó trụ ở phụ cận trong thôn, có đôi khi gió cát lớn, than đá phấn sẽ thổi đến thôn, bọn họ một trương miệng một ngụm than đá, các thôn dân cũng không dám ở bên ngoài lượng quần áo, không trung vĩnh viễn là ảm đạm bộ dáng.</p>
+<p>Phụ thân hắn chết vào than đá bụi dụ phát ung thư phổi. Phụ thân hạ táng khi ăn mặc màu xanh biển áo liệm, tóc sơ không chút cẩu thả, nhìn giống một cái tinh xảo lão nhân, nhưng hắn chết năm ấy kỳ thật mới 39 tuổi……</p>
+<p>Trịnh Hồng minh phi thường thống hận vô tiết chế khoáng sản khai thác.</p>
+<p>Hắn thượng sơ trung sau, quốc gia ban bố nghiêm khắc khai thác pháp luật, Trường Ninh bắt đầu mênh mông cuồn cuộn bảo vệ môi trường thống trị, trải qua 20 năm phát triển, Trường Ninh không trung biến sáng, cũng không hề là trước đây màu đen thành thị.</p>
+<p>Bọn họ lần này đại quy mô di chuyển, nguyên nhân căn bản là Long Bắc khí hậu không thích hợp sinh tồn, này cùng phá hư hoàn cảnh không giống nhau —— tuy rằng hiện tại Trường Ninh đã không có ‘ hoàn cảnh ’.</p>
+<p>Vương nhân chú ý tới Trịnh Hồng minh cảm xúc không đúng, vội vàng nói “Quốc gia chỉ là nói kiến thị, mặt khác cái gì cũng chưa nói, này đó đều là các võng hữu đoán mò.”</p>
+<p>“Ân.” Trịnh Hồng minh buồn một tiếng, hỏi “Phòng ở quải thế nào?”</p>
+<p>“Phía trước hỏi người rất nhiều, hôm nay lại không ai hỏi……” Vương nhân nghĩ đến đây liền buồn bực.</p>
+<p>Long Tinh thị tin tức mới vừa thả ra khi, những người khác đều cho rằng quốc gia có đại động tác, lại nhìn Trường Ninh phòng ở tiện nghi, bởi vậy tưởng nhặt của hời mua một ít. Hiện tại bình tĩnh lại, tưởng mua phòng người lý trí, phần lớn ở vào quan vọng trạng thái.</p>
+<p>“Không ai hỏi cũng đừng bán, hiện tại bán cũng vô dụng.” Trịnh Hồng minh nói.</p>
+<p>“Hảo!” Vương nhân cũng bị bán phòng tin tức lộng mệt, chuẩn bị hạ giá phòng ở tin tức.</p>
+<p>Hai người trò chuyện trong chốc lát, vương nhân hỏi “Hiện tại Trường Ninh Thông Bình Tùng Sơn đều cũng thành Long Tinh thị, về sau Trường Ninh là kêu Trường Ninh khu vẫn là Trường Ninh thị? Hoặc là mặt trên đem Trường Ninh tên sửa lại, một lần nữa phân chia một chút hành chính kết cấu?”</p>
+<p>“Không biết.” Trịnh Hồng minh hiện tại không đi suy xét tên sự tình, hắn chỉ lo lắng quốc gia kế tiếp chính sách.</p>
+<p>“Vương đội trưởng, chúng ta qua đi làm gì nha.” Liền ở khắp nơi thế lực các hoài tâm tư đồng thời, đi trước Long Bắc Trường Ninh thị một chiếc quân dụng xe lớn thượng, Triệu tiểu phương tò mò hỏi. Triệu tiểu phương là Kinh Vân 128 dã chiến doanh một người binh lính bình thường, một ngày trước, doanh khai khẩn cấp mở họp, muốn điều động 5000 danh sĩ binh đi trước Long Bắc chấp hành nhiệm vụ.</p>
+<p>Mọi người nghe được tin tức sau, phản ứng đầu tiên chính là gần nhất kiến thị tin tức.</p>
+<p>“Doanh trưởng, nơi đó muốn khai phá tài nguyên, không phải điều động công binh cùng thăm dò binh a.” Lúc ấy có đội trưởng nghe xong nhấc tay hỏi.</p>
+<p>“Ai nói muốn khai thác tài nguyên?” Doanh trưởng vẫy vẫy tay, tiếp tục nói “Điều động binh lính lấy thượng thân phân chứng, trong chốc lát công an hệ thống người tới, trước cho đại gia sửa một chút hộ tịch địa chỉ.”</p>
+<p>“Cái gì hộ tịch địa chỉ?” Mọi người sửng sốt.</p>
+<p>“Sửa thân phận chứng địa chỉ, đây là nhiệm vụ, không thể sửa tìm ta thuyết minh nguyên nhân!”</p>
+<p>Cứ như vậy, 5000 danh sĩ binh choáng váng hồi ký túc xá lấy thân phận chứng, sau đó xếp hàng sửa hộ tịch, chụp thân phận chứng, lãnh thân phận chứng…… Rườm rà lưu trình thế nhưng nửa ngày liền xong xuôi.</p>
+<p>Triệu tiểu phương nguyên quán Tứ Xuyên đại bạch thôn, hắn sửa hộ tịch trước cố ý cùng trong nhà gọi điện thoại hội báo tình huống ——</p>
+<p>“Các ngươi hộ tịch sửa lại, gia đình quan hệ sửa không thay đổi?” Triệu tiểu phương phụ thân sau khi nghe xong hỏi.</p>
+<p>“Không thay đổi, gia đình quan hệ còn cùng trước kia giống nhau, chính là hộ tịch sở tại đổi thành Long Tinh thị.”</p>
+<p>“Tân kiến cái kia thành thị?”</p>
+<p>“Đối!”</p>
+<p>“Đây là mặt trên nhiệm vụ, lãnh đạo cho các ngươi sửa liền sửa đi, đừng không hợp đàn.”</p>
+<p>Cứ như vậy, Triệu tiểu phương xong xuôi thủ tục sau cổ tân thân phận chứng.</p>
+<p>Tân thân phận chứng tư liệu ——</p>
+<p>Tên họ Triệu tiểu phương.</p>
+<p>Sinh ra ngày 2011 năm 2 nguyệt 12 hào.</p>
+<p>Hộ tịch sở tại Long Cổ quốc Long Tinh thị trưởng ninh khu tân phong tiểu khu 112 hào lâu.</p>
+<p>Tân phong tiểu khu là Long Bắc một cái quân doanh cải biến, bọn họ 5000 người địa chỉ đều là tân phong.</p>
+<p>Đại gia tối hôm qua làm tốt thân phận chứng, hôm nay liền mênh mông cuồn cuộn đi trước Long Bắc, tốc độ thượng hoàn toàn là sấm rền gió cuốn. Nghiêm khắc nói, chính phủ ban bố tin tức đến bây giờ bất quá ba ngày, này đã là phi giống nhau tốc độ.</p>
+<p>Bọn họ cưỡi chính là tám luân xe tải lớn, một chiếc trên xe 50 người, lúc này bọn họ xe đội trưởng sau khi nghe xong, nói “Cho ngươi đi ngươi liền đi, hỏi như vậy nhiều làm gì!”</p>
+<p>“Ta là trong lòng không có yên lòng……” Triệu tiểu phương gãi gãi đầu.</p>
+<p>Vương đội trưởng vui vẻ “Ta cũng không có yên lòng.”</p>
+<p>Hiện tại đừng nói bọn họ không có yên lòng, phỏng chừng doanh trưởng cũng không biết làm cái gì. Bất quá đây là Long Cổ viện trực tiếp an bài, mặt trên phân phó, bọn họ phục tùng mệnh lệnh là được.</p>
+<p>Vương đội trưởng cùng đại gia trò chuyện trong chốc lát, hỏi “Khẩu trang cùng cách ly phục đều mang theo đi?”</p>
+<p>“Mang theo!” Bọn họ doanh cùng bên ngoài giống nhau, mỗi ngày đều Lượng Thể ôn. Doanh địa thực hành phong bế thức quản lý, bọn họ doanh địa hết hạn đến bây giờ còn phi thường an toàn.</p>
+<p>“Không người khu bên kia không có gì người, nhưng nên chú ý còn phải chú ý.” Vương đội trưởng nhắc nhở nói.</p>
+<p>“Chúng ta biết.”</p>
+<p>Kinh Vân đến Trường Ninh có một ngàn km, bọn họ ở Kinh Vân cao tốc thời điểm còn không có cảm giác, theo xe càng ngày càng bắc, đại gia cảm nhận được đến xương gió lạnh. Chờ tới rồi Trường Ninh địa giới, mọi người chỉ có một cái cảm giác Liền tính đem Long Bắc kiến tạo thành tài nguyên thành thị, nhưng lấy hiện tại hoàn cảnh cùng trạng thái, còn có thể xây lên tới sao?</p>
+<p>‘ tân phong tiểu khu ’ ở vào Trường Ninh đông giao, là trước đây một cái quân khu cải biến. Nơi này ngày hôm qua thông thủy mở điện, nhưng vật tư khuyết thiếu, đại gia xuống xe sau lãnh hàm răng run lên.</p>
+<p>“Nơi này biên phòng bộ đội lạnh hay không?” Triệu tiểu phương bọc kiện quân áo khoác hỏi.</p>
+<p>“Ngươi có thể cảm giác được lãnh, bọn họ có thể không lạnh?” Vương đội trưởng gõ hắn một chút “Đại gia thu thập đi xuống đại sảnh lãnh than, lạnh buổi tối thiêu điểm than hỏa, bất quá phải chú ý thông gió, tránh cho carbon monoxit trúng độc.”</p>
+<p>Bọn lính ngay ngắn trật tự xếp hàng lãnh than, tiếp theo hồi ký túc xá nghỉ ngơi.</p>
+<p>5000 người nghe không ít, nhưng đặt ở trong doanh địa còn có chút vắng vẻ. Ngày hôm sau, đại gia nghỉ ngơi chỉnh đốn hảo sau chờ đợi nhiệm vụ, chính là liên tiếp đợi hai ngày, đừng nói nhiệm vụ, bọn họ liền chính mình mỗi ngày muốn cái gì cũng không biết, trong lúc nhất thời, 5000 binh lính có chút mê mang……</p>
+<p>Ký chủ tên họ Thẩm Khoát.</p>
+<p>Ta thành thị Long Tinh thị.</p>
+<p>Trước mặt nhiệm vụ 1, trở thành thị trưởng, có được hợp pháp thành thị thân phận. [ đã hoàn thành ]2, có được 5000 danh cư dân thành phố. [ đã hoàn thành ]3, kiến tạo thành thị chính phủ viện. [ tiến hành trung ]</p>
+<p>Liền ở Triệu tiểu phương đám người không hiểu ra sao đồng thời, Trường Ninh toà thị chính, Thẩm Khoát đau đầu nhìn hệ thống giao diện. Hiện tại nhiệm vụ [1][2] đã hoàn thành, nhiệm vụ [3] vẫn luôn ở vào tiến hành trung.</p>
+<p>“Vẫn là không thể dùng?” Đàm Minh Chương nhìn đến Thẩm Khoát biểu tình sau hỏi.</p>
+<p>“Không thể……”</p>
+<p>Hắn nguyên tưởng rằng ‘ kiến tạo thành thị chính phủ viện ’ là đơn giản nhất một cái, nhưng này ba ngày, hắn ở bộ đội biên phòng doanh, Thông Bình toà thị chính, Trường Ninh toà thị chính đều kích hoạt quá, mặt sau vẫn luôn không có bất luận cái gì biến hóa.</p>
+<p>“Hẳn là không phải kiến tạo vấn đề……” Đàm Minh Chương dùng ngón tay gõ gõ cái bàn.</p>
+<p>“Có thể hay không nơi sân quyền sở hữu vấn đề?” Bọn họ đang theo Trình Hữu Thanh đám người mở ra video hội nghị, đối phương nghe được bên này tiến độ sau hỏi.</p>
+<p>“Hẳn là không phải.” Bọn họ ngày hôm qua kích hoạt sau khi thất bại, liền thử ở vùng ngoại thành kiến ở một tòa màu cương phòng, còn đem đất quyền sở hữu hoa tới rồi Thẩm Khoát danh nghĩa, như cũ vô pháp kích hoạt.</p>
+<p>“Vậy kỳ quái……”</p>
+<p>Mọi người thảo luận một vòng, vẫn là Trần Khánh phúc lâm tâm đến hỏi “Các ngươi lộng thẻ bài sao?”</p>
+<p>“Cái gì thẻ bài?”</p>
+<p>“Long Tinh toà thị chính thẻ bài a, ngươi xem Kinh Vân toà thị chính có [ Kinh Vân toà thị chính ], Trường Ninh có [ Trường Ninh toà thị chính ], Long Tinh cũng đến toàn bộ [ Long Tinh toà thị chính ].”</p>
+<p>“Còn không có……” Đàm Minh Chương sửng sốt, bọn họ mấy ngày nay vẫn luôn vội vàng kiến thị chuẩn bị, xác thật đã quên làm thẻ bài.</p>
+<p>“Ta thử xem.” Đàm Minh Chương lập tức đứng dậy.</p>
+<p>Trường Ninh hiện tại là không người khu, không có chuyên nghiệp quảng cáo công ty. Cũng may bộ đội biên phòng doanh có không ít công cụ, bọn họ tìm một cái 3 mét lớn lên tấm ván gỗ tiến hành xử lý, tiếp theo ở mặt trên viết lưu niệm Long Tinh toà thị chính.</p>
+<p>Vì tránh cho khúc chiết, bức tranh chữ này là Thẩm Khoát viết, tuy so ra kém thư pháp đại gia, nhưng tốt xấu còn có thể xem.</p>
+<p>“Chúng ta treo ở chỗ nào?” Thẩm Khoát đề xong sau hỏi. Hắn có dự cảm, chờ thẻ bài treo lên sau, nhiệm vụ này rất có khả năng hoàn thành……</p>
+<p>“Thăm dò doanh?” Đàm Minh Chương nghĩ nghĩ nói.</p>
+<p>Kỳ thật lấy hiện tại điều kiện, treo ở Trường Ninh toà thị chính, Thông Bình toà thị chính này đó địa phương là đơn giản nhất, nhưng này đó địa phương đều có trước kia chính phủ làm công quá dấu vết, nếu là nơi này một lần nữa phát triển, kế tiếp công tác tương đối phiền toái.</p>
+<p>Hắn nói thăm dò doanh ở vào Trường Ninh đông sườn, nơi này ba mặt núi vây quanh, tổng chiếm địa 5000 mét vuông, cửa chính là đại lộ, ly Trường Ninh trung tâm thành phố nhiều nhất hai mươi phút.</p>
+<p>Nơi này nên có sinh hoạt cùng làm công phương tiện đều có, lúc trước doanh địa dọn sạch sẽ, bởi vậy không có dư thừa đồ vật —— đại gia phía trước cái thứ nhất tuyển chỉ chính là nơi này, chỉ là nơi này vẫn luôn vô pháp kích hoạt, mới nếm thử biên phòng doanh địa, Trường Ninh toà thị chính các nơi.</p>
+<p>“Có thể!” Thẩm Khoát cũng thiên hướng với thăm dò doanh.</p>
+<p>Đại gia thương lượng hảo sau, mọi người trực tiếp đi vào thăm dò doanh, Thẩm Khoát đem doanh địa thẻ bài thay thế, thay Long Tinh toà thị chính.</p>
+<p>“Đinh, thí nghiệm đến ký chủ hoàn thành ‘ kiến tạo thành thị chính phủ viện ’ nhiệm vụ, hay không đệ trình?”</p>
+<p>“Đệ trình.”</p>
+<p>Hệ thống đổi mới ——</p>
+<p>Ký chủ tên họ Thẩm Khoát.</p>
+<p>Trước mặt nhiệm vụ 1. Trở thành thị trưởng, có được hợp pháp thành thị thân phận……[ đã hoàn thành ]</p>
+<p>Nhiệm vụ khen thưởng Tùy cơ nhà xưởng X1.</p>
+<p>“Đinh, chúc mừng ký chủ hoàn thành [ ta thành thị ] sơ cấp nhiệm vụ, tốt thành thị không thể thiếu ưu tú thành thị quản lý giả. Thỉnh ký chủ chiêu mộ nhân tài, thành lập chính phủ gánh hát đi! Chiêu mộ yêu cầu Phó thị trưởng X1, hành chính viên X2, quy hoạch viên X2, tuyên truyền viên X2……”</p>
+<p>Ở Thẩm Khoát đệ trình kia một khắc, tân nhiệm vụ đồng bộ đổi mới.</p>
+<p>Thẩm Khoát đếm một chút, tân chính phủ gánh hát lớn đến phó thị trưởng, nhỏ đến cổng bảo an đều có, tổng cộng yêu cầu 300 người.</p>
+<p>Lấy không người khu hiện tại trạng thái…… Thuộc về một cái đại ban tử.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong23.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong25.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tinh-cau-khoi-dong-lai-xay-dung";
+const NOVEL_TITLE = "Tinh cầu khởi động lại [ xây dựng ] / Tinh tế người chơi [ thực tế ảo ]";
+const CHAPTER_TITLE = "Chương 24";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 11</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tinh cầu khởi động lại [ xây dựng ] / Tinh tế người chơi [ thực tế ảo ]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 11</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Ngày hôm sau buổi chiều 5 điểm, Tiền Đông hôn hôn trầm trầm tỉnh ngủ. Hắn trong lòng có việc, một giấc này ngủ phi thường không thoải mái, chỉ nhớ rõ Thôn Ủy Hội tới cấp hắn lượng quá nhiệt độ cơ thể, 36 độ tám, hết thảy bình thường.</p>
+<p>“Vài giờ?” Tiền Đông ngồi dậy hỏi.</p>
+<p>“5 điểm mười ba, giữa trưa kêu ngươi kêu không tỉnh.” Vương Mai nhìn TV nói.</p>
+<p>“Còn có hay không ăn?”</p>
+<p>“Trong nồi có chút mì sợi.”</p>
+<p>Tiền Đông soạt ăn hai đại chén, hỏi “Kiều kiều đâu?”</p>
+<p>Kiều kiều là bọn họ khuê nữ, năm nay năm tuổi.</p>
+<p>“Ở ta mẹ kia phòng chơi xếp gỗ.” Hiện tại thôn quản nghiêm, bọn họ phần lớn thời gian đều trạch ở trong nhà.</p>
+<p>“Ân.” Tiền Đông gật gật đầu, đang chuẩn bị đi sân đi dạo khi, một sờ đâu, “Ta vòng tay đâu?”</p>
+<p>“Cái gì vòng tay?”</p>
+<p>“Năm trước mua, có thể ngay cả di động cái kia!” Hắn năm trước hoa 288 mua cái vận động vòng tay, có thể kế bước cùng thí nghiệm giấc ngủ chất lượng, bình thường ngủ đều mang, hiện tại thủ đoạn cùng trong túi đều không có.</p>
+<p>“Không biết a, ngươi ngày hôm qua trở về thời điểm liền không có.”</p>
+<p>Tiền Đông dùng sức nghĩ nghĩ, khả năng ngày hôm qua lạc trên thuyền, hắn do dự một chút, bát thông Triệu Tứ điện thoại ——</p>
+<p>Nửa phút sau, điện thoại chuyển được, “Làm sao vậy?”</p>
+<p>Triệu Tứ giọng nói giống tắc một cục bông, phi thường nghẹn ngào.</p>
+<p>“Ta vận động vòng tay có phải hay không lạc trên thuyền?” Tiền Đông trực tiếp hỏi.</p>
+<p>“Ân, ta ngày hôm qua phát hiện sau cho ngươi gọi điện thoại, ngươi bên kia di động tắt máy.” Triệu Tứ ách giọng nói cười mắng “Ngày hôm qua làm gì? Đi như vậy cấp.”</p>
+<p>“Ta nói, ngươi tẩu tử tìm ta có việc……” Có thể là ngủ một giấc, Tiền Đông cảm giác chính mình ngày hôm qua phạm mơ hồ, hắn cùng Vương Bằng Triệu Tứ từ nhỏ trường đến đại, có cái gì sợ quá.</p>
+<p>“Đồ vật trước tiên ở ta nơi này phóng, lần sau gặp mặt cho ngươi?” Triệu Tứ nói.</p>
+<p>“Ta đi lấy đi.” Tiền Đông nghĩ ra môn đi bộ vòng.</p>
+<p>Nửa giờ sau, hắn đi vào Triệu Tứ cửa nhà.</p>
+<p>Triệu Tứ năm nay 32, cha mẹ qua đời sớm, trong nhà nghèo, mấy năm nay vẫn luôn không có cưới vợ sinh con. Hắn vào cửa thời điểm, sắc trời đã có điểm tối sầm, trong viện chỉ có một con héo héo chó đen.</p>
+<p>“Gâu, gâu gâu ——”</p>
+<p>Chó đen nhìn thấy hắn sau hưng phấn vẫy đuôi.</p>
+<p>“Như thế nào như vậy nhiệt tình?” Tiền Đông tiến lên sờ soạng hai hạ, lúc này mới phát hiện cẩu trong bồn khô khô, ít nhất có ba ngày không phóng ăn, bát nước cũng là trống trơn.</p>
+<p>Tiền Đông một trận đau lòng, triều phòng trong kêu “Như thế nào không cho lão hắc phóng ăn a?” Chó đen năm nay bảy tuổi, trước kia kêu tiểu hắc, tuổi tác đi lên sau thành lão hắc, hắn là nhìn lão hắc lớn lên.</p>
+<p>Trong phòng an tĩnh không ai theo tiếng.</p>
+<p>“Ngươi đợi chút.” Tiền Đông đi phòng bếp tìm điểm cẩu lương, lại đổ một đại bồn nước máy, chuẩn bị cho tốt sau đi vào nhà chính.</p>
+<p>“Ngươi nếu là không nghĩ dưỡng có thể phóng ta chỗ đó……” Hắn đang chuẩn bị nói lẩm bẩm một ít nuôi chó vấn đề, ở nhìn đến phòng trong cảnh tượng khi sửng sốt ——</p>
+<p>Lúc này Triệu Tứ giống rút gân người bệnh giống nhau cả người phát run ngồi dưới đất, trên người hắn bọc thật dày chăn bông, trước mặt là một cái than nắm bếp lò. Hắn tay đặt ở bếp lò mặt trên, lòng bàn tay bị nướng khởi phao, nhưng hắn như là không cảm giác.</p>
+<p>“Còn phát sốt đâu?” Tiền Đông quái dị cảm lại nổi lên.</p>
+<p>“Thiêu, ăn điểm dược……” Triệu Tứ phản ứng trì độn ngẩng đầu, tiếp theo từ trong túi sờ ra một cái vòng tay “Đây là ngươi ngày hôm qua lạc trên thuyền, ta cho ngươi lấy về tới.”</p>
+<p>“Cảm…… cảm ơn.” Tiền Đông căng da đầu tiếp nhận, hai bên tiếp xúc khi, hắn phát hiện Triệu Tứ gầy chỉ còn một tầng xương cốt giá, mu bàn tay thượng là thanh một khối tím một khối đốm đen, nhìn tựa như sắp bệnh biến cương thi.</p>
+<p>Tiền Đông bị ý nghĩ của chính mình hoảng sợ, vội vàng lấy lại bình tĩnh hỏi “Xem ngươi thiêu rất nghiêm trọng, ta đưa ngươi đi bệnh viện?”</p>
+<p>“Không cần.” Triệu Tứ hướng bếp lò bên thấu thấu, không nghĩ nhúc nhích.</p>
+<p>Tiền Đông nhìn về phía đối phương, lúc này Triệu Tứ bọc thành một cái vết chai dày, thần sắc dại ra nhìn chằm chằm ngọn lửa, hắn hốc mắt biến thành màu đen tròng mắt đột ra, nhìn so ngày hôm qua còn khủng bố.</p>
+<p>“Thật không cần?……” Tiền Đông hỏi.</p>
+<p>Triệu Tứ nhìn chằm chằm bếp lò không nói lời nào, phảng phất quên mất Tiền Đông.</p>
+<p>Tiền Đông có chút sợ hãi chuyển qua cửa, hắn do dự một chút, lấy ra di động, đối Triệu Tứ ca ca chụp hai trương chiếu.</p>
+<p>Chụp ảnh thanh âm rất lớn, Triệu Tứ không bất luận cái gì phản ứng.</p>
+<p>Hắn rời đi Triệu gia sau, trong đầu đều là Triệu Tứ bộ dáng, nghĩ nghĩ, bước chân một đốn quải đến Vương Bằng gia.</p>
+<p>Vương Bằng chưa lập gia đình, cùng cha mẹ ở tại một cái sân.</p>
+<p>“Bằng tử a? Hắn buổi sáng sau khi trở về liền vẫn luôn ngốc ở trong phòng, nhìn dáng vẻ không thoải mái.” Vương Mẫu đang ở nấu cơm, nhìn thấy Tiền Đông sau nhiệt tình nói.</p>
+<p>“Ta qua đi nhìn xem.”</p>
+<p>Tiền Đông đi tới Vương Bằng cửa sổ trước, phòng trong, Vương Bằng cuộn thân mình đoàn thành một đoàn, hắn mặt triều cửa sổ phương hướng. Tuy không có trợn mắt, nhưng Tiền Đông có thể nhìn đến Vương Bằng bộ dáng Làn da tiều tụy, gương mặt ao hãm, bệnh trạng cùng Triệu Tứ giống nhau.</p>
+<p>“Như thế nào không đi vào a?” Vương Mẫu đi tới hỏi.</p>
+<p>“Hắn ngủ rồi, ta không quấy rầy hắn.” Tiền Đông biết rõ cố hỏi nói “Bằng tử phát sốt?”</p>
+<p>“Phát sốt, hình như là Triệu Tứ trước phát sốt, bằng tử vẫn luôn đi theo hắn, không quá hai ngày liền thiêu. Hiện tại đại đội vẫn luôn tuyên truyền dự phòng lưu cảm, muốn ta nói, các ngươi trong khoảng thời gian này liền ngốc tại trong nhà, đừng mỗi ngày đi ra ngoài chạy loạn……”</p>
+<p>Tiền Đông !!!</p>
+<p>“Bằng tử là Triệu Tứ lây bệnh lại đây?” Hắn phía trước cho rằng hai người cùng nhau phát sốt, không có ai lây bệnh ai!</p>
+<p>“Đúng vậy, hình như là số 8 đi, khi đó Triệu Tứ liền có điểm phát sốt……”</p>
+<p>Tiền Đông thần sắc hoảng hốt rời đi, liền Vương Mẫu lúc sau nói cái gì đều không nhớ rõ. Hắn ý thức được một cái vấn đề Triệu Tứ có thể lây bệnh cấp Vương Bằng, như vậy này hai người có thể hay không lây bệnh cho chính mình?</p>
+<p>Tưởng tượng đến hai người hiện tại bộ dáng, hắn cảm giác phía sau lưng ở đổ mồ hôi lạnh.</p>
+<p>“Đông Tử?” Về nhà trên đường, Tiền Đông bị thôn thư ký gọi lại.</p>
+<p>“Đây là mặt trên phát sốt cao tuyên truyền sổ tay, ngươi lần trước mở họp thời điểm không mang đi, trong thôn yêu cầu mỗi nhà mỗi hộ đều đến có một phần.” Thôn thư ký đưa cho Tiền Đông một quyển sách nhỏ.</p>
+<p>Quyển sách tiêu đề 《 cảnh giác! Đại tai nạn sau cao nguy truyền nhiễm virus! 》.</p>
+<p>Tiền Đông lần trước mở họp khi gặp qua cái này quyển sách, lúc ấy không để trong lòng, ở trang lót tùy tiện vẽ hai bút liền ném trên bàn. Hiện tại lại lần nữa nhìn đến, chỉ cảm thấy chính mình té hầm băng.</p>
+<p>“Làm sao vậy?” Thôn thư ký chú ý tới Tiền Đông sắc mặt không đúng.</p>
+<p>“Trần thúc……” Tiền Đông khóc không ra nước mắt “Vương Bằng Triệu Tứ giống như phát sốt.”</p>
+<p>Hắn làm bằng hữu cử báo hai người phát sốt rất không địa đạo, nhưng hắn hiện tại sợ hãi a! Mặc kệ hai người trên người có hay không cao truyền nhiễm virus, hắn đều sợ hãi biến thành cả người phát run tròng mắt ngoại đột khủng bố hình dáng, thật là đáng sợ!</p>
+<p>Thôn thư ký !!!</p>
+<p>Mười phút sau, Trung tâm Kiểm soát và Phòng ngừa Dịch bệnh người tới, đem Vương Bằng Triệu Tứ kéo đến trấn vệ sinh viện.</p>
+<p>Tiền Đông cho rằng chuyện này liền tính xong rồi, ai ngờ qua một giờ, xe cảnh sát, xe cứu thương, xe cứu hỏa…… Nửa cái Thanh Vân trấn cảnh vệ nhân viên đều tới, đại gia xuống xe sau nhanh chóng kéo lên cảnh giới điều, đem toàn bộ Lâm Khê thôn vây quanh lên, cũng có toàn bộ võ trang nhân viên y tế một lần nữa tới cửa Lượng Thể ôn, các thôn dân cấm rời đi nhà mình sân.</p>
+<p>Tiền Đông, Vương Mai, Vương phụ Vương mẫu…… Trong khoảng thời gian này cùng Vương Bằng Triệu Tứ từng có tiếp xúc thôn dân toàn bộ bị mang đi cách ly.</p>
+<p>Tiền Đông bị nhét vào cách ly xe, tiếp theo rút máu xét nghiệm…… Hắn ở trên mạng xem qua sốt cao nhân viên bị lôi đi video, nhưng những cái đó video tương đối ôn hòa, không có chính mình khoa trương như vậy.</p>
+<p>Tiền Đông trong lòng một trận khủng hoảng.</p>
+<p>“Triệu Tứ, 32 tuổi, thật thời nhiệt độ cơ thể 39 độ sáu, Vương Bằng, 31 tuổi, thật thời nhiệt độ cơ thể 39 độ năm. Hai người đều là sắp tới phát sốt, theo Vương Bằng cha mẹ giảng thuật, Triệu Tứ số 8 trước liền xuất hiện nóng lên bệnh trạng, trong khoảng thời gian này vẫn luôn dựa thuốc hạ sốt tránh thoát nhiệt độ cơ thể thí nghiệm…… Hiện tại hai người có rõ ràng rét run phát run, gián đoạn tính phấn khởi chờ bệnh trạng, nhân viên y tế ở bọn họ trên người thí nghiệm một loại kiểu mới virus, cụ thể số liệu muốn ngày mai buổi sáng mới có thể ra kết quả.”</p>
+<p>11 nguyệt 15 rạng sáng 1 giờ, Thẩm Khoát, Trình Hữu Thanh, Từ Thu Tinh đám người tất cả đều thần sắc nghiêm túc tụ tập ở sinh vật phòng thí nghiệm.</p>
+<p>Thanh Vân trấn phía trước có 128 danh sốt cao người bệnh, này đó người bệnh thực hành đơn độc cách ly, bọn họ trải qua lấy máu cập mấy ngày liền quan sát, này đó người bệnh trên người tạm không có phát hiện truyền nhiễm virus.</p>
+<p>Căn cứ Thẩm Khoát tiên đoán thời gian tuyến, 11 nguyệt 15, Sangke sẽ xuất hiện đầu lệ tang thi virus.</p>
+<p>Bọn họ trong khoảng thời gian này quan sát quốc nội trạng huống đồng thời, cũng sẽ đem lực chú ý đặt ở Sangke tin tức thượng, đối Thanh Vân trấn càng là thực hành nghiêm khắc quản khống dự phòng. Nhưng không tưởng ở như vậy cao áp quản khống hạ, còn sẽ xuất hiện giấu báo tình huống.</p>
+<p>“Bọn họ quá có thể giấu diếm……” Trình Hữu Thanh phát lên một trận thất bại cảm.</p>
+<p>“Bọn họ trước tiên ăn thuốc hạ sốt, lấy hiện tại kỹ thuật xác thật không hảo thí nghiệm.” Từ Thu Tinh ở một bên trấn an nói.</p>
+<p>Bọn họ không biết đến cụ thể virus, chỉ có thể sàng chọn virus khả năng xuất hiện quần thể, như vậy sàng chọn phạm vi cũng không tinh chuẩn —— kỳ thật hạ đạt một bậc chuẩn bị chiến đấu khi, quốc gia liền minh xác yêu cầu các tiệm thuốc tạm thời hạ giá thuốc hạ sốt, có hạ sốt bệnh trạng người bệnh yêu cầu ở chuyên nghiệp bệnh viện lấy dược khai chứng minh.</p>
+<p>Quốc gia tận khả năng tỏa định virus phạm vi, nhưng 10 nguyệt 27 hào đến bây giờ thời gian quá ngắn, một ít tiệm thuốc chấp hành không kịp thời, hơn nữa thuốc hạ sốt lại là nhất thường thấy gia đình dự trữ dược, này liên tiếp xuống dưới, chung quy là có một ít đầu cơ trục lợi, cá lọt lưới……</p>
+<p>“Ai.” Trình Hữu Thanh cũng biết hiện tại không phải truy cứu thuốc trị cảm thời điểm, hắn lấy lại bình tĩnh nói, “Đi trước vệ sinh viện nhìn xem đi.”</p>
+<p>Hiện tại Vương Bằng Triệu Tứ hai người sốt cao không lùi, thân thể các khí quan đều ở cấp tốc phát sinh bệnh biến, bọn họ đã trước tiên từ Kinh Vân vận chuyên nghiệp chữa bệnh thiết bị, hiện tại hàng đầu nhiệm vụ chính là khống chế được hai người bệnh tình, phân tích ra virus số liệu, đem khả năng nguy hiểm hàng đến thấp nhất.</p>
+<p>“Mười lăm hào, chờ vận xong này phê vật tư, chúng ta liền có thể nhẹ nhàng năm ngày.” Liền ở sinh vật tổ tăng ca thêm giờ phân tích virus số liệu khi, Sangke mạc cơ bờ biển một cái ướp lạnh thuyền hàng thượng, Sigard một bên uống bia, một bên cùng bên cạnh phó thủ nói chuyện phiếm nói.</p>
+<p>Đây là một con thuyền xanh trắng đan xen cỡ trung ướp lạnh thuyền hàng, Sigard là thuyền hàng tổ trưởng, chủ yếu phụ trách trên thuyền hóa rương bày biện cập an toàn. Này đó hóa rương phần lớn là một ít trái cây, thịt trứng cầm loại, trang rương khi cũng đã nghiêm khắc kiểm tra, bởi vậy thuyền hàng thúc đẩy sau, hắn công tác phi thường đơn giản.</p>
+<p>Sigard đương 20 năm thuyền hàng tổ trưởng, khả năng tuổi tác lớn, hắn tính toán lại làm hai năm liền trước tiên về hưu, hắn có điểm nhớ nhà tiểu tôn tử……</p>
+<p>Sigard lải nhải nói một vòng, thấy phó thủ không có giống thường lui tới giống nhau tiếp lời, mà là ánh mắt dại ra nhìn cái bàn. Hắn dùng ngón tay chọc một chút đối phương, “Còn phát sốt đâu?”</p>
+<p>Phó thủ tên là Ryan, là một cái 25 tuổi tinh tráng tiểu hỏa, nói ngọt nhanh nhẹn, người trên thuyền đều thực thích hắn. Mười ngày trước, Ryan đột nhiên phát sốt, mặc kệ chích vẫn là uống thuốc, trận này sốt cao lặp đi lặp lại chính là không tốt.</p>
+<p>Khả năng mùa đông lưu cảm quý, trên thuyền có 132 người, hiện tại đã có 37 người lục tục phát sốt.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tinh-cau-khoi-dong-lai-xay-dung";
+const NOVEL_TITLE = "Tinh cầu khởi động lại [ xây dựng ] / Tinh tế người chơi [ thực tế ảo ]";
+const CHAPTER_TITLE = "Chương 11";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

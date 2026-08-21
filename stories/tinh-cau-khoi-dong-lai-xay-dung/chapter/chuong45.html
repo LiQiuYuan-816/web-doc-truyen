@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 45</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tinh cầu khởi động lại [ xây dựng ] / Tinh tế người chơi [ thực tế ảo ]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 45</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong44.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong46.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Triệu tỷ, chúng ta lần này xét duyệt tiêu chuẩn là cái gì?” Tám tháng 21 hào buổi sáng 9 giờ, thanh hồ Tùng Sơn khu chính phủ, vương hiểu kỳ cõng ba lô đi vào văn phòng hỏi.</p>
+<p>Tùng Sơn khu chính phủ nguyên là Tùng Sơn toà thị chính nhân mã, 5 năm trước toàn thị di chuyển sau, Tùng Sơn chính phủ cơ sở nhân viên tất cả đều đánh tan phân tới rồi mặt khác thành phố. Hiện tại Long Bắc các địa cấp thị đều có Tùng Sơn khu, Tùng Sơn toà thị chính quyền lực trải qua phân giải sau, hiện tại tiến tương đương với một cái khu chính phủ.</p>
+<p>“Lần này là Long Cổ viện thống nhất xét duyệt, nghe nói là tiên cơ thẩm lại người thẩm, xét duyệt tiêu chuẩn còn không rõ ràng lắm.” Triệu Tĩnh là văn phòng chủ nhiệm, đang ở sửa sang lại gần nửa tháng công tác báo cáo.</p>
+<p>“Ta nhìn Long Tinh lãnh đạo danh sách, bên trong có rất nhiều Long Bắc lãnh đạo gánh hát, bất quá thị trưởng tên chưa từng nghe qua, hắn là cái gì bối cảnh a?” Vương hiểu kỳ buông ba lô sau hỏi thăm nói.</p>
+<p>Hiện tại Long Tinh lãnh đạo gánh hát danh sách đã công bố, như là Trịnh Đào, khúc bình này đó đều là hệ thống nội lão người quen, nhưng Long Tinh thị trưởng thân phận thần bí, trừ bỏ tên ngoại không có bất luận cái gì tin tức.</p>
+<p>“Hẳn là Kinh Vân bên kia điều tới.” Triệu Tĩnh suy đoán nói.</p>
+<p>“Ta nhìn trên mạng phân tích, gần mấy năm cao tầng bên trong không có tên này……” Vương hiểu kỳ tưởng không rõ.</p>
+<p>Triệu Tĩnh thấy nàng càng nghĩ càng xa, trực tiếp gõ “Quốc gia làm ai đương thị trưởng coi như thị trưởng, này đó đều không phải chúng ta suy xét. Ngươi này chu báo tuần viết xong?”</p>
+<p>“Này liền viết!” Vương hiểu kỳ lập tức mở ra máy tính, nàng viết trong chốc lát, lại hỏi “Chúng ta lần này dọn trở lại đi qua, về sau tưởng trở về còn có thể hay không trở về?”</p>
+<p>Lần này quốc gia có 10W cái dọn trở lại danh ngạch, trong đó 9W là bình thường cư dân, dư lại chính là nhân viên công vụ cùng bệnh viện bác sĩ, đại gia nhân thuộc về hệ thống nội, yêu cầu trước hướng đơn vị đánh báo cáo, lại từ đơn vị thống nhất xin.</p>
+<p>Vương hiểu kỳ năm nay hai mươi tám tuổi, thượng chu ấn lưu trình trình dọn trở lại xin.</p>
+<p>“Nếu có thể chịu đựng cái này mùa đông liền không cần trở về, chịu không nổi sẽ trở về.” Lần này mười vạn người thuộc về thí dọn trở lại nhân viên. Lần này người sau khi trở về, sẽ ở chính phủ điều phối hạ tiến hành một ít xã hội vận chuyển —— nguy hiểm càng cao kỳ ngộ càng lớn, đây cũng là đại gia ở biết Long Bắc khí hậu ác liệt dưới tình huống, nguyện ý tranh trước đoạt sau trở về nguyên nhân chi nhất.</p>
+<p>Nhìn chung lịch sử, chỉ cần là quốc gia mạnh mẽ duy trì chính sách, đều có rất lớn phát triển kỳ ngộ.</p>
+<p>Triệu Tĩnh năm nay 47, nàng cũng rất tưởng trở về, chỉ là khu chính phủ công tác nhiều, trong nhà lão nhân sinh bệnh, nàng mới không có báo danh. Nàng sau khi nói xong nghĩ nghĩ nói “Hiện tại hoàn cảnh chung không tốt, giống chúng ta an trí khu đều là một cái củ cải một cái hố, ngươi liền tính ngốc đi xuống cũng không hảo thăng chức, đây là nếu có thể đi ra ngoài, khẳng định là cái kỳ ngộ, hảo hảo nắm chắc được!”</p>
+<p>“Ta biết!” Vương hiểu kỳ dùng sức gật đầu, nàng chính là ôm phát triển tiền đồ trở về sấm.</p>
+<p>“Hiện tại Long Tinh đang ở thi công, muốn thật có thể xây lên tới, phụ cận giá nhà hẳn là sẽ trướng một trướng.”</p>
+<p>“Gần nhất hai năm trướng không đứng dậy, cả nước ổn định khả năng sẽ trướng.”</p>
+<p>“Trường Ninh lần này có không ít phòng cháy viên danh ngạch, cũng không biết có thể hay không tuyển thượng……”</p>
+<p>Ở kế tiếp mười ngày, cư dân nhóm tất cả đều khẩn trương chờ đợi cuối cùng xét duyệt.</p>
+<p>“Lão bản, hai phân bản mặt!” Chín tháng nhất hào giữa trưa một chút, hai người trung niên nam tử đi vào khang dân bản mặt cửa hàng.</p>
+<p>Đỗ Khang Dân đang xem tin tức, sau khi nghe được lập tức buông xuống di động “Muốn chén lớn chén nhỏ? Phóng không phóng ớt cay?”</p>
+<p>“Hai cái chén lớn, nhiều phóng ớt cay, lại thêm hai cái trứng gà đậu hủ.”</p>
+<p>Hai người ở điều hòa phía dưới thổi một lát phong, trong lúc vô tình đảo qua Đỗ Khang Dân di động giao diện “Lão bản, ngươi cũng chú ý dọn trở lại tin tức?”</p>
+<p>“Phía trước báo danh, hiện tại đang đợi hai điểm phía chính phủ công bố.” Căn cứ official website tin tức, cư dân nhóm hai điểm sau có thể đưa vào thân phận chứng tra kết quả.</p>
+<p>“Chúng ta cũng báo danh, bất quá chúng ta ở tại vùng ngoại thành, nơi đó phòng ở quá tan, cảm giác thông qua tỷ lệ tương đối tiểu.” Hai người thuận miệng liêu nói.</p>
+<p>“Quốc gia còn xem phòng ở?” Đỗ Khang Dân hỏi.</p>
+<p>“Xem trên mạng phân tích, khẳng định là dân cư càng tụ tập địa phương thông qua suất càng cao.”</p>
+<p>“Cũng là.” Đỗ Khang Dân gia ở trung tâm thành phố cũ xưa trong tiểu khu, địa lý vị trí này khối có thể thỏa mãn điều kiện. Chỉ là hắn sơ trung bằng cấp, không biết bằng cấp này khối có đủ hay không……</p>
+<p>Ba phút sau, Đỗ Khang Dân thịnh hai chén mặt, cuối cùng nói “Hy vọng đều có thể quá đi.” Hắn mấy ngày xem tin tức đều xem mau thần kinh khẩn trương.</p>
+<p>Hai người ăn xong rời đi sau, trong tiệm lại lục tục tới hai bàn khách nhân, Đỗ Khang Dân làm tâm viên ý mã.</p>
+<p>Một chút 50, Vương Mẫn từ cách vách siêu thị trở về “Lưu tỷ đem cửa hàng đóng, nàng tính toán nghỉ ngơi trong chốc lát, xem xong dọn trở lại kết quả lại khai cửa hàng.”</p>
+<p>“Chúng ta cũng quan?” Đỗ Khang Dân khẩn trương hỏi, hắn cảm giác chính mình tựa như một cái chờ phán cuốn học sinh.</p>
+<p>“Lưu tỷ là hẹn bác sĩ giác hơi, chúng ta quan cái gì a.” Vương Mẫn vui vẻ.</p>
+<p>Liền tại đây nôn nóng chờ đợi trung, hai điểm chỉnh, hai người đúng giờ đăng nhập dọn trở lại trang web, bọn họ lần này không cần chờ đợi, thực thuận lợi tìm được rồi tuần tra giao diện.</p>
+<p>Đỗ Khang Dân đưa vào chính mình số căn cước công dân, khẩn trương nhắm mắt “Thế nào?”</p>
+<p>“Chính ngươi xem.” Vương Mẫn đầu tiên là trầm mặc hai giây, tiếp theo ngữ khí bình tĩnh đẩy đẩy hắn.</p>
+<p>“Không quá?”</p>
+<p>Đỗ Khang Dân lo lắng mở mắt ra, thấy được di động giao diện “Chúc mừng ngài ( Đỗ Khang Dân tiên sinh ) thành công đạt được Thông Bình thị đầu phê dọn trở lại danh ngạch, thỉnh ngài với 9 nguyệt 1 hào ~30 hào gian hồi hướng Thông Bình, trong lúc nhưng miễn phí cưỡi sông dài - Thông Bình thị đi tới đi lui đoàn tàu. Liên hệ người Vương Mẫn.”</p>
+<p>Đỗ Khang Dân điểm đánh [ Vương Mẫn ] mặt sau nhảy chuyển liên tiếp “Chúc mừng ngài ( Vương Mẫn nữ sĩ ) thành công đạt được Thông Bình thị đầu phê dọn trở lại danh ngạch, thỉnh ngài với……”</p>
+<p>Đỗ Khang Dân cùng Vương Mẫn là phu thê, Vương Mẫn cũng xin Thông Bình dọn trở lại danh ngạch, bởi vậy hai người thống nhất thông qua.</p>
+<p>“Chúng ta qua?” Đỗ Khang Dân đem giao diện qua lại nhìn hai lần.</p>
+<p>“Qua!” Vương Mẫn cảm giác chính mình trái tim bùm bùm nhảy, có loại đã khẩn trương lại hưng phấn cảm giác.</p>
+<p>“Nhà ta trồng rau, có bảy năm gieo trồng kinh nghiệm, xin biểu thượng dán nhà của chúng ta lều lớn, không nghĩ tới qua!”</p>
+<p>“Nhà ta là khai siêu thị, vào nghề ý đồ viết khai siêu thị, cũng qua!”</p>
+<p>“Ta có A bổn điều khiển chứng, cũng qua……”</p>
+<p>Buổi tối 8 giờ, trải qua sáu giờ lên men, có không ít võng hữu phơi ra chính mình xin biểu chụp hình.</p>
+<p>Các trang web căn cứ này đó xin biểu tuổi tác, thường chỗ ở chỉ, chức nghiệp chờ nhân tố thành lập thống kê mô hình, cuối cùng phát hiện lần này thông qua cư dân xác thật là ấn tụ tập mà phân bố, trừ này còn có loại thực, ăn uống, hậu cần chờ phương diện sở trường đặc biệt, thuộc về đem những người này tụ tập ở bên nhau, cung cấp tương ứng vật tư sau là có thể tiến hành nhất cơ sở xã hội vận chuyển.</p>
+<p>“Quốc gia thật sự tính toán phát triển Long Bắc?” Có không ít người nhìn ra này đó số liệu sau lưng ý nghĩa.</p>
+<p>“Nếu là đại gia có thể chịu đựng năm nay mùa đông, hẳn là có thể phát triển lên.” Phía trước tam mà cư dân là bởi vì thời tiết ác liệt mới quyết định dời. Hiện tại muốn liên tục phát triển, đầu tiên muốn giải quyết vẫn là tài nguyên vấn đề.</p>
+<p>Nếu muốn dùng tài nguyên chịu đựng mùa đông, có hai loại biện pháp 1, cử cả nước chi lực vì Long Bắc cung cấp dầu mỏ than đá chờ sinh tồn tài nguyên. 2, đối Long Bắc khu vực tiến hành phá hư tính khai thác, như vậy không thể nghi ngờ với tát ao bắt cá.</p>
+<p>Phía trước quốc gia đầy đủ suy xét sau, mới quyết định từ bỏ Long Bắc tiến hành 3000 vạn dân cư dời.</p>
+<p>Hiện tại nếu muốn dời trở về, vẫn là sẽ đối mặt phía trước vấn đề.</p>
+<p>“Quốc gia hẳn là sẽ không khai thác Long Bắc đi?” Hiện tại quốc gia mạnh mẽ kiến tạo Long Tinh thị, nhìn dáng vẻ sẽ không tiến hành tài nguyên thượng khai thác, kia dư lại chỉ có đệ một loại khả năng……</p>
+<p>“Chúng ta cũng không phải không giúp Long Bắc, nhưng chịu đựng một năm còn có tiếp theo năm, tổng không thể cả nước không cần du dùng điện, tất cả đều đầu nhập Long Bắc xây dựng trung đi?” Có tỉnh ngoài võng hữu do dự, bọn họ không phải không muốn duy trì Long Bắc xây dựng, chỉ là toàn cầu nguồn năng lượng giá cả không ngừng dâng lên, thật muốn tới rồi tình trạng này, hoàn toàn không cần thiết dời trở về.</p>
+<p>“Quốc gia làm làm cái gì chúng ta liền làm cái đó, cùng lắm thì bình thường thấp than đi ra ngoài!” Có tính tình đại võng hữu không chút nào để ý. Nhìn chung quốc gia này nửa năm quyết sách, một bậc chuẩn bị chiến đấu, S1 virus, hướng dẫn rương…… Nơi này mỗi một cái đều thay đổi cả nước cách cục, cứu vớt mấy tỷ dân cư.</p>
+<p>Hiện tại đừng nói chi viện Long Bắc xây dựng, liền tính làm cho bọn họ đem trong nhà than nắm quyên đi ra ngoài cũng nguyện ý!</p>
+<p>“Cũng đúng.”</p>
+<p>“Duy trì liền duy trì, cùng lắm thì về sau tỉnh điểm.”</p>
+<p>“Ta hiện tại có thể đi đường tuyệt không lái xe, bình thường ra cửa cũng là tùy tay quan thủy quan điện.”</p>
+<p>Võng hữu cái cách nói này được đến không ít tán thành, tóm lại mọi người đều đương chính mình là tìm được đường sống trong chỗ chết, quốc gia nếu muốn cử cả nước chi lực xây dựng Long Bắc, vậy kiến đi!</p>
+<p># quốc gia xây dựng Long Bắc # được đến cả nước cư dân nhất trí duy trì.</p>
+<p>“Không cần cử cả nước chi lực……” Long Tinh chong chóng trong xưởng, Đàm Minh Chương cảm khái nhìn võng hữu ngôn luận.</p>
+<p>Xác định Long Tinh thị xây dựng kế hoạch sau, bọn họ xác thật suy xét quá điều lấy tỉnh ngoài tài nguyên tới bảo đảm Long Tinh nhiệm vụ hoàn thành. Nhưng chong chóng xưởng sau khi xuất hiện, bọn họ căn bản dùng không đến tỉnh ngoài tài nguyên, không chỉ có dùng không đến, căn cứ trong khoảng thời gian này thí nghiệm, bọn họ ở thỏa mãn công trình xây dựng đồng thời, còn có thể sinh sản loại nhỏ chong chóng thỏa mãn cư dân hằng ngày sở cần.</p>
+<p>Chỉ cần có phong sẽ có cuồn cuộn không ngừng nguồn năng lượng, năm nay Long Bắc không chỉ có sẽ không lãnh, còn có khả năng vượt qua gần mười năm tới tốt nhất quá một cái mùa đông.</p>
+<p>“Ta đính số 7 vé xe lửa, hiện tại một ngày 30 tranh xe lửa, căn bản không cần đoạt phiếu!”</p>
+<p>“Hiện tại xe lửa chỉ có có dọn trở lại tư cách cư dân mới có thể ngồi sao?”</p>
+<p>“Tạm thời là cái dạng này, mỗi người cưỡi khi có thể mang 200 cân hành lý, một ít sô pha giường linh tinh đại kiện cũng có thể trên mạng xin khuân vác, bất quá muốn chính mình dọn đến ga tàu hỏa.”</p>
+<p>Dọn trở lại cư dân vượt qua lúc ban đầu hưng phấn sau, bắt đầu chuẩn bị kế tiếp dời công tác.</p>
+<p>Hiện tại quốc gia ở an trí khu - dọn trở lại khu địa phương đều khai thông chuyên chúc dọn trở lại đoàn tàu, nhân khoảng cách thân cận quá, này đó xe lửa phần lớn nửa giờ, một giờ phát một chuyến, dọn trở lại cư dân nhóm căn bản không sợ đoạt không đến phiếu.</p>
+<p>Này đó đoàn tàu trừ bỏ hành khách thùng xe, còn có chuyên môn chuyển nhà thùng xe, mỗi người mỗi lần đều có thể mang theo nhất định thể tích cùng số lượng hành lý, vượt qua quy định thể tích có thể trước tiên xin, mỗi ngày ban đêm đều sẽ có chuyên môn hành lý đoàn tàu.</p>
+<p>Hành lý tới an trí thị sau, cư dân nhưng cùng quốc gia hợp tác chuyển nhà công ty liên hệ. Này bộ phận có cố định miễn phí trọng lượng, vượt qua miễn phí tổng sản lượng yêu cầu cư dân nhóm chính mình chi trả phí dụng, này đó phí dụng trải qua quốc gia trợ cấp chỉ vì bình thường chuyển nhà 1 10.</p>
+<p>Tóm lại, tưởng ngồi xe lửa? Miễn phí! Tùy tiện ngồi!</p>
+<p>Chở hành lý? Miễn phí! Tùy tiện vận!</p>
+<p>Chín tháng số 5, tam mà nhóm đầu tiên dọn trở lại đoàn tàu chính thức khai thông.</p>
+<p>“Hiện tại vài giờ?”</p>
+<p>“7 giờ hai mươi.”</p>
+<p>“Chúng ta tới không phải cao phong thời gian đoạn đi?”</p>
+<p>“Không phải……”</p>
+<p>Buổi sáng 7 giờ, sông dài an trí khu phụ cận ga tàu hỏa, Đỗ Khang Dân cùng Vương Mẫn mê mang nhìn trước mặt xe lửa đại sảnh.</p>
+<p>Sông dài an trí khu đệ nhất chiếc xe lửa là 5 điểm xuất phát, thời gian quá sớm, bọn họ mua chính là 7 giờ 50 phiếu. Hôm nay ly chính phủ công bố kết quả bất quá năm ngày, này năm ngày không đủ cư dân đóng gói hành lý. Bởi vậy bọn họ suy đoán hiện tại ga tàu hỏa người không nhiều lắm, bọn họ tưởng đi về trước nhìn xem.</p>
+<p>Ai ngờ chính mình như vậy tưởng, những người khác cũng là như vậy tưởng! Lúc này nhìn kín người hết chỗ, mỗi người cõng ba lô cầm di động đợi xe đại sảnh, Đỗ Khang Dân phảng phất thấy được mười năm trước cảnh tượng Xuân vận.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong44.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong46.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tinh-cau-khoi-dong-lai-xay-dung";
+const NOVEL_TITLE = "Tinh cầu khởi động lại [ xây dựng ] / Tinh tế người chơi [ thực tế ảo ]";
+const CHAPTER_TITLE = "Chương 45";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

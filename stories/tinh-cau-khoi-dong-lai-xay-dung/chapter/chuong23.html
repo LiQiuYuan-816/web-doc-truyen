@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 23</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tinh cầu khởi động lại [ xây dựng ] / Tinh tế người chơi [ thực tế ảo ]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 23</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong22.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong24.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Hết hạn 12 tháng số 7 vãn 9 giờ, cát xuân cùng nguyên huyện tân tăng 2 khởi tang thi ca bệnh, toàn tỉnh tích lũy tân tăng 23 khởi…… Hiện tại không phải một bậc quản khống, như thế nào lại tân tăng nha.” 12 tháng số 8 vãn 6 giờ, Trịnh Hồng minh một bên nhìn 《 cát ngày xuân báo 》 một bên nhíu mày nói.</p>
+<p>Trịnh Hồng minh năm nay 35 tuổi, nguyên Trường Ninh quản lí giao thông công ty một người cơ sở công nhân. Toàn cầu đại tai nạn sau, Trường Ninh, Thông Bình, Tùng Sơn tam thị nhân ở vào Long Cổ nhất bắc bộ, hoàn cảnh tai hoạ nghiêm trọng, tam thị cư dân ở Long Cổ chính phủ an bài hạ bắt đầu hướng Long Ninh nam bộ, cát xuân tỉnh, sông dài tỉnh chờ mà di chuyển, lần này di chuyển đề cập 3000 vạn dân cư, được xưng là Long Cổ gần trăm năm lớn nhất một lần dân cư di chuyển.</p>
+<p>Trịnh Hồng minh là sinh trưởng ở địa phương Trường Ninh người, dựa theo chính sách bị an trí ở cát xuân tỉnh Long Ninh khu mới —— đây là từ Long Cổ chính phủ giám thị, Trường Ninh chính phủ kiến tạo an trí khu mới, phân Long Ninh một khu nhị khu chờ hai mươi cái khu, mỗi cái khu đều có gần mười vạn dân cư.</p>
+<p>Này đó là chính phủ thống nhất kiến tạo phòng ở, an trí cư dân có thể mua sắm thuê, một ít phù hợp chính sách cư dân có thể xin miễn phí bảo đảm nhà ở. Trừ này, an trí cư dân còn được hưởng trước kia phòng ốc quyền tài sản đất nền nhà quyền chờ, chờ tam thị hoàn cảnh cải thiện có thể dời trở về.</p>
+<p>Trịnh Hồng minh ở Trường Ninh có hai căn hộ, hắn năm trước cùng nghiệp chủ cùng nhau tổ chức ‘ Trường Ninh địa chỉ cũ lữ hành đoàn ’. 30 người xe tải cùng nhau hồi Trường Ninh nhìn nhìn. Bọn họ ở trở về trước còn đối dời trở về ôm có hy vọng, nhưng nhìn đến Trường Ninh hiện trạng sau, sở hữu hy vọng đều tưới diệt Gió lạnh gào thét, đại địa trở thành vùng đất lạnh, cây cối chết đi, trên thân cây kết mãn băng sương……</p>
+<p>Trước kia Trường Ninh lãnh về lãnh, tốt xấu còn có một ít nhân khí. Hiện tại Trường Ninh từ thành phố đến quanh thân trong huyện đều lộ ra một cổ tử khí trầm trầm, lúc này mới bốn năm, như thế nào thành hiện tại cái dạng này?</p>
+<p>“Nơi này đã đoạn thủy cắt điện, liền tính lưu lại cũng không có biện pháp sinh tồn. Chúng ta thị phía trước là bình nguyên, mặt sau là Long Bắc núi non, một ít dòng nước lạnh thổi qua không đi, hoàn cảnh muốn so một ít phương bắc quốc gia còn muốn ác liệt……” Một cái đồng hành đại ca từ địa lý xã hội chờ nhiều phương diện phân tích Trường Ninh biến thành hiện tại nguyên nhân.</p>
+<p>Đại gia cũng không biết nói đúng không, chỉ là biết nơi này không phải trong trí nhớ Trường Ninh.</p>
+<p>Trịnh Hồng minh sau khi trở về phát ngốc rất dài một đoạn thời gian.</p>
+<p>Nghiêm khắc nói, Long Ninh khu mới an trí phòng không tồi, cát xuân chính phủ cùng cư dân cũng không có tính bài ngoại, nhưng hắn luôn có một loại tâm vô về chỗ, không hợp nhau cảm giác. Hắn tưởng, này khả năng chính là văn hóa sách giáo khoa nỗi nhớ quê đi.</p>
+<p>Hắn trước kia làm quản lí giao thông công tác, nơi này không có như vậy nhiều địa phương tu, hắn tham gia xã khu công tác sau tìm phân ban quản lý tòa nhà công tác.</p>
+<p>Hắn khoảng thời gian trước sẽ cùng mặt khác đồng sự từng nhà Lượng Thể ôn, sau lại tang thi bùng nổ, rất nhiều nghiệp chủ lo lắng ban quản lý tòa nhà nhân viên mang theo virus, cự tuyệt cùng ban quản lý tòa nhà nhân viên tiếp xúc.</p>
+<p>Ban quản lý tòa nhà cũng lo lắng công nhân an toàn, bởi vậy bọn họ từ mỗi ngày Lượng Thể ôn đổi thành mỗi tuần một lượng, mặt khác thời gian yêu cầu nghiệp chủ thu mang thời gian video phát đến trong đàn, nếu là có hư hư thực thực người lây nhiễm sẽ trực tiếp đăng báo Trung tâm Kiểm soát và Phòng ngừa Dịch bệnh.</p>
+<p>Trịnh Hồng minh phụ trách bọn họ lâu video kiểm tra, khả năng thân cư chức vị quan trọng, hắn mỗi ngày trừ bỏ công tác, thời gian còn lại đều ở chú ý quốc gia tin tức.</p>
+<p>“Cùng nguyên huyện có phải hay không lão Chu tiểu dì gia cái kia huyện?” Lúc này Trịnh Hồng nói rõ xong, thê tử vương nhân từ phòng bếp đi ra hỏi.</p>
+<p>“Là, ly chúng ta nơi này 80 km.” Trịnh Hồng minh nói.</p>
+<p>“Bên kia tình huống thế nào?”</p>
+<p>“Cảm nhiễm hai cái người đã bị mang đi, cùng bọn họ có tiếp xúc bị cho rằng sát gần nhau, những người khác yêu cầu một lần nữa Lượng Thể ôn.”</p>
+<p>“Hiện tại toàn huyện bị cách ly?”</p>
+<p>“Không sai biệt lắm, chủ yếu con đường bị phong bế, bình thường cư dân không cho xuất gia môn.”</p>
+<p>“Ai……” Vương nhân không phải lần đầu tiên nghe người lây nhiễm tin tức, nhưng lần này liền cách bọn họ 80 km…… Còn rất sợ hãi.</p>
+<p>“Ngao cháo hảo.” Lúc này phòng bếp mạo khí nhi, vương nhân nhắc nhở nói.</p>
+<p>“Ngươi giúp ta thịnh một chén.” Trịnh Hồng minh nhìn chằm chằm báo chí không nhúc nhích.</p>
+<p>“Ngươi đi!” Vương nhân trực tiếp rút ra báo chí, nhà bọn họ phân công minh xác, mỗi lần một người nấu cơm, một cái khác đến phụ trách thịnh cơm rửa chén này đó việc vặt.</p>
+<p>“Ta đi thì ta đi……” Trịnh Hồng minh bất đắc dĩ đi phòng bếp thịnh cháo. Đây là cải tiến gạo nấu ra tới cháo trắng, hương vị chua xót, rất khó ăn.</p>
+<p>Vương nhân liền dưa muối ăn hai khẩu, nói chuyện phiếm nói “Ta hôm nay thượng second-hand trang web thượng nhìn nhìn, chúng ta tiểu khu phòng ở hiện tại báo giá 1200 một bình.”</p>
+<p>“Trường Ninh bên kia phòng ở?”</p>
+<p>“Đúng vậy, còn có báo giá 900.”</p>
+<p>Bọn họ ở Trường Ninh có hai căn hộ, một bộ đơn vị phòng, hiện tại thị trường giới 700 nguyên bình. Một bộ là đại tai nạn trước mua thương phẩm phòng, bọn họ mua thời điểm 8500 nguyên bình, hiện tại chỉ có thể bán được 1200 nguyên bình, hơn nữa dù ra giá cũng không có người bán căn bản không ai mua ——</p>
+<p>Đại tai nạn sau, toàn cầu từng xuất hiện nghiêm trọng khủng hoảng kinh tế, thế giới các quốc gia tổn thất nghiêm trọng. Long Cổ ở khủng hoảng kinh tế kỳ nội từng ban bố hơn hàng tức chính sách, Trường Ninh, Thông Bình, Tùng Sơn tam mà nhân không thích hợp cư trú, quốc gia chấp thuận tam mà cho vay nghiệp chủ có thể tạm dừng khoản vay mua nhà.</p>
+<p>Quốc gia ở tam thị di chuyển công tác trung đầu nhập vào 23W trăm triệu nguyên, bằng không tam thị dân cư cũng sẽ không thông thuận hoàn thành an trí.</p>
+<p>Trịnh Hồng minh hồi ức một chút quá vãng, thuận miệng hỏi “Như thế nào quan tâm khởi giá nhà?”</p>
+<p>“Ta tưởng đem chúng ta kia hai bộ quải đi ra ngoài……” Vương nhân do dự một chút nói, nàng phía trước liền nghĩ đem hai căn hộ bán đi Kinh Vân, la hải này đó kinh tế tốt chỗ nào bán phòng, hiện tại xuất hiện tang thi virus, càng kiên định nàng cái này ý tưởng.</p>
+<p>“Chúng ta đơn vị phòng 70 bình, ấn thị trường giới chỉ có thể bán được năm vạn. Thương phẩm phòng đại điểm nhi, nhưng cũng nhiều nhất mười lăm vạn, này hai mươi vạn liền Kinh Vân một cái toilet đều không đủ. Kia hai căn hộ đều ở không người khu, hiện tại ai đi kia góc xó xỉnh mua phòng a?”</p>
+<p>“Liền tính không đi Kinh Vân mua phòng, chúng ta nhiều tích cóp điểm tiền cũng hảo a.”</p>
+<p>“Hiện tại kinh tế đê mê, không ai mua phòng.” Hiện tại đừng nói mua phòng, trên mạng đều là một ít tận thế luận, bọn họ đều không nhất định sống đến sang năm.</p>
+<p>“Ai……” Vương nhân là danh yoga lão sư, hiện tại phong khống ở nhà. Nàng không phải cần thiết bán phòng, chỉ là không làm chút chuyện trong lòng không yên ổn……</p>
+<p>“Ngươi tưởng quải liền quải đi.” Trịnh Hồng minh cảm giác sẽ không có người mua, cũng liền làm thỏa mãn vương nhân ý tưởng.</p>
+<p>Vương nhân đem trong nhà hai căn hộ quải đến second-hand ngôi cao.</p>
+<p>Hiện tại bọn họ cùng tiểu khu ở bán phòng nguyên 772 bộ, Trường Ninh thị ở bán phòng nguyên 75000 bộ, một ít một hai vạn xa hoa tiểu khu càng là té 2500 nguyên bình, Trường Ninh thị giá nhà đã toàn tuyến sụp đổ.</p>
+<p>Vương nhân quải sau khi rời khỏi đây liền không để ý, ai ngờ qua một giờ, ngôi cao phần mềm vang lên ——</p>
+<p>“Ngài hảo, ở bán phòng sao?” Nặc danh người mua hỏi.</p>
+<p>“Đúng vậy.”</p>
+<p>“Ngài này căn hộ toàn khoản vẫn là cho vay? Có bất động sản chứng sao? Thủ tục đầy đủ hết sao?”</p>
+<p>“Toàn khoản, có chứng, thủ tục đầy đủ hết.”</p>
+<p>“Tặng gia cụ gia điện sao?”</p>
+<p>“Tặng, bất quá ảnh chụp là 5 năm trước chụp, hiện tại không biết tình huống thế nào, cũng không biết có thể hay không sử dụng.”</p>
+<p>“Không có việc gì, có thể đi trên mạng lưu trình sao?”</p>
+<p>Vương nhân nhìn đến những lời này khi ngây ngẩn cả người.</p>
+<p>Hiện tại một bậc chuẩn bị chiến đấu trong lúc, Long Cổ đã khai thông phía chính phủ nhà second-hand đăng ký ngôi cao, mua bán hai bên nhưng ở trên mạng xử lý tài chính giám thị thủ tục, thủ tục xong xuôi sau, mua bán hợp đồng liền có pháp luật hiệu quả và lợi ích, trong lúc này chỉ cần không phải trọng đại giấu giếm vấn đề, mua bán hai bên đều không thể đổi ý. Hơn nữa đề cập đến trọng đại giấu giếm, hai bên yêu cầu đánh xong kiện tụng sau, bán gia mới có thể lại lần nữa bán phòng.</p>
+<p>Nhân phòng khoản từ đầu đến cuối đều từ kẻ thứ ba giám thị, giống nhau bán gia đều sẽ không cố ý giấu giếm, người mua cũng tưởng nhanh chóng hoàn thành giao dịch. Chỉ cần trải qua nhà second-hand ngôi cao đăng ký, mua bán hai bên cơ bản đều ván đã đóng thuyền tử.</p>
+<p>Vừa rồi nói chuyện phiếm khi, nàng cho rằng đối phương là bất động sản người môi giới, hiện tại…… Đối phương liền nhanh như vậy đi lưu trình?</p>
+<p>“Ngài hảo, xin hỏi ngài quản lí giao thông người nhà viện phòng ở bán ra sao? Thấp nhất giá cả nhiều ít?” Lúc này lại có người cố vấn.</p>
+<p>“Là chủ nhà bản nhân bán phòng sao?”</p>
+<p>“Có thể video xem phòng sao?”</p>
+<p>“Thành tâm tưởng mua, có thể lẫn nhau nghiệm tin tức đi lưu trình sao?”</p>
+<p>Ở kế tiếp mười phút, lại có bao nhiêu danh người dùng cố vấn phòng ở sự tình, bọn họ ID cùng nói chuyện thói quen bất đồng, nhìn cũng không giống người máy.</p>
+<p>Vương nhân có chút kỳ quái, lấy ra di động, chuẩn bị tìm tòi # mới vừa quải ra phòng ở có người muốn mua có thể tin sao #, chỉ là còn không có đưa vào, ở nhìn đến hot search khi ngây ngẩn cả người.</p>
+<p>Lúc này hot search đệ nhất 【 Long Cổ tin tức Vì thúc đẩy Long Ninh tỉnh bắc bộ phát triển, quốc gia của ta chính phủ quyết định ở Long Bắc núi non lấy nam, Tùng Sơn giang lấy bắc khu vực thành lập Long Tinh đặc biệt hành chính thị, Long Tinh thị đem từ Long Cổ chính phủ trực tiếp quản hạt. ( nguyên Trường Ninh thị, Thông Bình thị, Tùng Sơn thị tam thị phạm vi ) [ bản đồ ]】</p>
+<p>Hot search đệ nhị 【 Long Ninh tỉnh diện tích rút nhỏ! 】</p>
+<p>Hot search đệ tam 【 Long Tinh thị diện tích. 】</p>
+<p>Lúc này hot search tiền mười có bảy điều đều cùng # Long Tinh thị # có quan hệ, dư lại chính là các tỉnh tang thi tình huống.</p>
+<p>Vương nhân cơ bản xác định, di động cố vấn giả hẳn là bất động sản người đầu tư. Đại gia bằng thứ nhất tin tức chuẩn bị ở Long Bắc mua phòng…… Có thể hay không quá xúc động?</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong22.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong24.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tinh-cau-khoi-dong-lai-xay-dung";
+const NOVEL_TITLE = "Tinh cầu khởi động lại [ xây dựng ] / Tinh tế người chơi [ thực tế ảo ]";
+const CHAPTER_TITLE = "Chương 23";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 8</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tinh cầu khởi động lại [ xây dựng ] / Tinh tế người chơi [ thực tế ảo ]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 8</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong7.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong9.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Ngày 27 tháng 10 khởi, các đại thương trường cảnh khu chờ buôn bán nơi đem thực hành nhiệt độ cơ thể thí nghiệm tiến vào…… Quyên Nhi, các ngươi siêu thị nói nhiệt độ cơ thể thí nghiệm không có?” Ngày 25 tháng 10 rạng sáng, Từ Chí Phong giống thường lui tới giống nhau xoát ngủ trước tin tức, ở xoát đến một bậc chuẩn bị chiến đấu khi đầu tiên là sửng sốt, tiếp theo triều toilet vị trí lớn tiếng hỏi.</p>
+<p>“Cái gì nhiệt độ cơ thể thí nghiệm?” Lưu Quyên xoa tóc ra tới.</p>
+<p>Lưu Quyên năm nay 36, ở trường phong siêu thị đương lý hóa viên, đây là một cái địa cấp thị chuỗi siêu thị, thực hành sớm chín vãn mười chế, nàng giống nhau là thượng một hưu một, mỗi ngày tan tầm vội xong đều đến một hai điểm.</p>
+<p>“Quốc gia mới vừa phát văn kiện, nói muốn thực hành virus một bậc chuẩn bị chiến đấu.” Từ Chí Phong từ trên giường ngồi dậy, đưa qua di động tin tức.</p>
+<p>“Không nghe nói a.” Lưu Quyên nghiêm túc nhìn nhìn, hỏi “Các ngươi đơn vị thông tri?”</p>
+<p>Từ Chí Phong là một người cơ sở phòng cháy viên, trong tin tức viết, yêu cầu cả nước bài tra phòng cháy chạy trốn an toàn tai hoạ ngầm.</p>
+<p>“Không có.” Từ Chí Phong lắc đầu.</p>
+<p>“Mặt trên nói chính là cái gì virus?” Lưu Quyên tò mò.</p>
+<p>“Không biết, chỉ là nói Long Khoa viện kiểm tra ra một loại truyền nhiễm virus, yêu cầu cả nước bài tra dự phòng……”</p>
+<p>Hai người phân tích một vòng, đều cảm giác cái này tin tức quá đột ngột. Nói chuyện phiếm trung, Lưu Quyên di động vang lên ——</p>
+<p>“Siêu thị vừa rồi đã phát thông tri, yêu cầu toàn thể công nhân ngày mai buổi sáng 9 giờ mở họp!”</p>
+<p>“Ta ngày mai hưu ban……” Lưu Quyên sửng sốt.</p>
+<p>“Lãnh đạo nhóm yêu cầu mỗi người đều đến, hẳn là sẽ tính tăng ca phí.”</p>
+<p>Lưu Quyên bên này vừa mới nói xong, Từ Chí Phong di động đi theo vang lên ——</p>
+<p>“Vừa rồi trong đội phát thông tri, yêu cầu sở hữu phòng cháy viên cần thiết đến trong đội mở họp……” Phòng cháy đội trừ bỏ mở họp thông tri, trong đàn còn có một cái 《 về 2035.10.27 một bậc chuẩn bị chiến đấu quan trọng thông tri 》 văn kiện.</p>
+<p>Hai người xem xong sau liếc nhau, đều có chút không hiểu ra sao.</p>
+<p>“Đại buổi tối họp cái gì a.”</p>
+<p>“Ta xem trên mạng nói truyền nhiễm virus, hẳn là rất nghiêm trọng.”</p>
+<p>“Không biết tình huống như thế nào……”</p>
+<p>Cùng thời gian, cả nước các nơi Sở Y Tế, phòng cháy cục, Trung tâm Kiểm soát và Phòng ngừa Dịch bệnh, công thương quản lý cục chờ đều triệu khai hội nghị khẩn cấp, rất có một loại mưa gió sắp tới tư thế.</p>
+<p>“Như thế nào đột nhiên mở họp nha?”</p>
+<p>“Ta ngày hôm qua ở trong huyện, hôm nay đua xe chạy tới.”</p>
+<p>25 hào buổi sáng 9 giờ, Lưu Quyên đúng giờ tới hội nghị hiện trường.</p>
+<p>Bọn họ nơi địa phương vì Xuân Sơn tỉnh Lâm An thị, đây là một cái tam tuyến thành thị, trường phong là thành phố mặt long đầu xí nghiệp, có 37 gia đại hình siêu thị, bọn họ là phân khu mở họp, Lưu Quyên đến thời điểm, phòng họp đã ngồi một nửa.</p>
+<p>“Ngươi hôm nay không phải hưu ban?” Cơm đáp tử nhìn đến Lưu Quyên sau có chút ngoài ý muốn.</p>
+<p>“Ngày hôm qua Trần tỷ gọi điện thoại, yêu cầu hôm nay buổi sáng cần thiết đến.” Lưu Quyên vốn dĩ có chút câu oán hận, bất quá xem nhiều người như vậy cố ý tới rồi, câu oán hận cũng tiêu hơn phân nửa.</p>
+<p>“Vừa rồi thành phố mặt hạ thông tri, nếu là chuẩn bị chiến đấu trong lúc, sở hữu công nhân đều cần thiết đeo khẩu trang, siêu thị ra vào nhân viên phải tiến hành nhiệt độ cơ thể thí nghiệm. Chúng ta trong khoảng thời gian này sẽ điều động một ít nhân viên thay phiên luân cương, đại gia tưởng thủ vệ khẩu cũng có thể trực tiếp báo danh.” Ba phút sau, phân khu giám đốc nói thẳng nổi lên siêu thị an bài.</p>
+<p>Hắn mới vừa ở thành phố họp xong, hiện tại toàn thị đều đang nói một bậc chuẩn bị chiến đấu sự tình, ngay cả một ít thị cao tầng cũng đi tỉnh tìm hiểu tin tức.</p>
+<p>“Trần giám đốc, mặt trên nói chính là cái gì virus nha?” Một cái công nhân tò mò hỏi, hắn buổi sáng mới vừa nghe virus tin tức, không nghĩ tới hiện tại đã lan tràn cả nước.</p>
+<p>“Không biết, khả năng cùng viêm gan B Bính gan giống nhau.”</p>
+<p>“Chúng ta ở cửa thủ, nếu là có nóng lên khách hàng một hai phải tiến làm sao bây giờ?”</p>
+<p>“Trước không cho tiến, mặt sau lại xem thành phố an bài.”</p>
+<p>Ngày thứ ba buổi sáng, Lâm An các nơi cửa liền mang lên ‘ hưởng ứng một bậc chuẩn bị chiến đấu, dự phòng virus lây bệnh, sốt cao sốt cao cấm đi vào ’ thẻ bài.</p>
+<p>“Ta nhiệt độ cơ thể 36 độ nhị, có thể tiến đi?”</p>
+<p>“Ta 36.”</p>
+<p>“Ta 36 độ chín!”</p>
+<p>Cư dân nhóm ở các nơi cửa bài khởi hàng dài, đại gia đương thành là một hồi toàn dân quá mọi nhà. Cư dân nhóm nhìn hiếm lạ, một ít nhiệt độ cơ thể nhân viên kiểm tra lần đầu tiên làm loại này công tác, làm cũng phi thường hiếm lạ.</p>
+<p>Chính là hai ngày sau, mọi người đều hiếm lạ không đứng dậy.</p>
+<p>“Ta chính là bình thường cảm mạo, dựa vào cái gì không cho tiến?”</p>
+<p>“Ta buổi chiều muốn đi công ty mở họp, lại không bệnh, làm gì đem ta cách ly!”</p>
+<p>“Bệnh tâm thần đi! Các ngươi đây là hạn chế tự do thân thể!”</p>
+<p>Ở chính phủ cưỡng chế quản khống hạ, cư dân nhóm mua sắm đi ra ngoài chờ đã chịu không ít ảnh hưởng. Đặc biệt là một ít quốc tế chuyến bay hành khách, bọn họ tuy trước tiên xem qua Long Cổ một bậc chuẩn bị chiến đấu văn kiện, nhưng thượng có chính sách hạ có đối sách, bọn họ vẫn luôn cho rằng chính phủ chỉ là làm làm bộ dáng, nhưng không tưởng như vậy nghiêm khắc, bọn họ chỉ cần bị thí nghiệm ra nhiệt độ cơ thể dị thường, liền sẽ bị lập tức lôi đi cách ly!</p>
+<p>“Đây là một hồi không văn minh dã man hành vi, là toàn cầu dân chủ lùi lại!” Wales là 《 quốc tế thời báo 》 chuyên mục tác giả, mỗi tháng công tác chính là thừa phi cơ đến toàn cầu các nơi phỏng vấn một ít tình hình chính trị đương thời tin tức.</p>
+<p>Tháng này, hắn nguyên tính toán sáng tác một thiên ‘ đại tai nạn sau Long Cổ công nhân ’ đưa tin, cái này đưa tin chủ yếu khắc hoạ đại tai nạn sau, Long Cổ công nhân bần cùng sinh hoạt. Hắn liền này thiên báo chí đưa tin sau quốc tế phản ứng đều nghĩ tới, ai ngờ đừng nói báo chí đưa tin, hắn hiện tại căn bản đi không ra sân bay!</p>
+<p>“Wales tiên sinh, dựa theo Long Cổ văn kiện, ngài nhiệt độ cơ thể dị thường, là không cho phép rời đi sân bay.” Phạm Văn Lộ là sân bay trực ban giám đốc, cùng Wales vẫn duy trì 1 mét khoảng cách, mang khẩu trang nói.</p>
+<p>“Ta muốn liên hệ đại sứ quán!” Wales nổi giận.</p>
+<p>“Có thể.” Phạm Văn Lộ ý bảo hắn tùy ý liên hệ, nhưng rời đi sân bay phạm vi…… Không có khả năng.</p>
+<p>Wales là Moerke quốc công dân. Nửa giờ sau, Moerke đại sứ quán nhân viên công tác ra mặt giao thiệp, Wales như cũ cấm rời đi sân bay, cuối cùng, Wales có hai loại lựa chọn. Một, cưỡi Long Cổ quốc tế phi cơ rời đi, nhưng nhân là sốt cao nhân viên, yêu cầu cưỡi đặc thù cách ly ghế dựa. Nhị, cưỡi Moerke quốc tế phi cơ rời đi.</p>
+<p>“Ta sẽ ngồi Moerke phi cơ rời đi, cũng nhất định sẽ đem Long Cổ chuyên chế công bố với chúng, cho các ngươi tiếp thu quốc tế dư luận thẩm phán!” Wales cười lạnh.</p>
+<p>“Chúng ta chỉ là ấn Long Cổ chế độ làm việc.” Phạm Văn Lộ không kiêu ngạo không siểm nịnh.</p>
+<p>“Hừ!” Wales nổi giận đùng đùng rời đi.</p>
+<p>“Chúng ta làm như vậy sẽ sẽ không có việc gì?” Một cái nhân viên công tác có chút khẩn trương hỏi. Chuyện này đã kinh động Long Cổ chính phủ cùng Moerke trú Long Cổ đại sứ quán, nếu như bị người có tâm mang tiết tấu, khả năng sẽ khiến cho một ít không tốt quốc tế ảnh hưởng.</p>
+<p>“Không có việc gì.” Nơi này là Kinh Vân sân bay, nàng vừa rồi xử lý phương thức là xin chỉ thị quá cao tầng. Đây là Long Cổ đối cực nóng nhân viên hộ lý phương thức, hơn nữa trong tương lai một đoạn thời gian nội, có thể là nhất ôn hòa xử lý phương thức……</p>
+<p>《 Long Cổ, 22 thế kỷ dã man cùng chuyên chế 》.</p>
+<p>11 nguyệt 3 hào, một thiên tên là 《 Long Cổ, dã man, chuyên chế 》 tin tức bước lên 《 quốc tế thời báo 》. 《 quốc tế thời báo 》 là toàn cầu phát hành lượng tiền tam quốc tế báo chí, 《 Long Cổ, dã man, chuyên chế 》 ở vào báo chí trang đầu, này tắc tin tức một khi tuyên bố, trực tiếp bị toàn cầu các nơi truyền thông chuyển phát ——</p>
+<p>“Ngày 25 tháng 10, Long Cổ Long Khoa viện từng công bố một loại kiểu mới virus, nhưng tính đến hiện tại, cũng không có cái này virus bất luận cái gì số liệu.”</p>
+<p>“Đây là một hồi xâm phạm 1.5 tỷ cư dân quyền lợi chuyên chế hành vi!”</p>
+<p>“Ở như vậy cưỡng chế quản khống trung, Long Cổ cư dân đã thuận theo, đánh mất bất luận cái gì phản kháng tinh thần.”</p>
+<p>Toàn cầu truyền thông sớm tại 25 hào liền chú ý Long Cổ một bậc chuẩn bị chiến đấu, khi đó quốc tế trên mạng liền có một ít châm chọc mỉa mai thanh âm, lần này 《 quốc tế thời báo 》 phát biểu sau, càng là đem châm chọc mỉa mai đẩy đến đỉnh.</p>
+<p>Long Cổ nhằm vào quốc tế thượng gây sóng gió không có nhiều lời, chỉ là phát biểu một thiên tên là 《 đại tai nạn hạ, cao nguy virus biến dị đối nhân loại sinh tồn cập ảnh hưởng 》 văn chương.</p>
+<p>【2125 năm, toàn cầu đại tai nạn bùng nổ sau, nhân loại liền gặp phải đồ ăn, hoàn cảnh, màu xanh lục sinh tồn chờ các loại nguy cơ. Động thực vật nhóm vì sinh tồn bắt đầu biến dị, một ít vi khuẩn chân khuẩn cũng đã xảy ra biến hóa nghiêng trời lệch đất, chúng ta ở cảnh giác biến dị động vật đồng thời, cũng muốn cảnh giác trong đó bệnh khuẩn biến dị……】</p>
+<p>Long Cổ từ khách quan mặt phân tích virus khả năng tính, cũng kêu gọi toàn cầu chú ý virus biến dị.</p>
+<p>“Nóng lên vì một loại nhất thường thấy cảm nhiễm virus, nhân loại ở gần ba ngàn năm trong lịch sử, đã có hoàn thiện miễn dịch hệ thống, cho dù có lần thứ hai virus biến dị, lấy trước mặt khoa học kỹ thuật cũng có thể hoàn mỹ giải quyết, càng thêm sẽ không bùng nổ đại quy mô ôn dịch……” Có quyền uy y học tạp chí phản bác.</p>
+<p>Long Cổ chính phủ không có cãi cọ, mà là đâu vào đấy thực hành một bậc chuẩn bị chiến đấu chính sách.</p>
+<p>11 nguyệt 5 hào khởi, chuẩn bị chiến đấu thăng cấp.</p>
+<p>Cư dân nhóm có 24H nội độ ấm thông hành mã mới có thể cưỡi cao thiết phi cơ chờ phương tiện giao thông, liên tục sốt cao ba ngày, có rét run phát run cư dân yêu cầu cưỡng chế cách ly —— này một vòng nội, cả nước đã hấp tấp thành lập các đại cách ly điểm. Này đó cách ly điểm đều là đơn người cách ly, trừ này, một ít cảnh khu siêu thị, tiệm net công viên trò chơi đã cưỡng chế ngừng kinh doanh, cư dân có thể trên mạng mua sắm vật tư, từ chính phủ nhân viên thống nhất xứng đưa.</p>
+<p>“Lão tử liền trông chờ tháng này tiền lương giao tiền thuê nhà, hiện tại nói dừng là dừng, các ngươi cấp lão tử tiền a.”</p>
+<p>“Chúng ta tiểu khu thực hành toàn diện phong khống, có thông hành mã mới có thể ra vào.”</p>
+<p>“Mỗi ngày nói cao truyền nhiễm virus, này đều mười ngày, liền virus bóng dáng cũng chưa nhìn.”</p>
+<p>Các tỉnh chính phủ nhìn đến Long Cổ viện thái độ sau, trực tiếp tiến hành rồi tối cao quy cách quản khống. Ở như vậy cưỡng chế quản khống hạ, hiện tại không chỉ có quốc tế, ngay cả quốc nội cũng khiến cho không ít mâu thuẫn cảm xúc, Long Cổ trong khoảng thời gian này trực tiếp tổn thất đã đạt 300 trăm triệu, gặp xưa nay chưa từng có trong ngoài nước áp lực.</p>
+<p>“Vệ sinh bộ đã hướng Thế Vệ tổ chức trình đệ tam phân truyền nhiễm virus đoán trước, bất quá bị Thế Vệ bên kia đè nặng, bọn họ khiển trách Long Cổ ở toàn cầu tản ôn dịch lo âu……” Tháng 11 mười hào, Quảng Ninh tỉnh phía Đông một cái vùng duyên hải làng chài nội, Từ Thu Tinh vừa đi, một bên cùng Thẩm Khoát trò chuyện gần nhất quốc tế động thái.</p>
+<p>Long Cổ trong khoảng thời gian này thừa nhận không ít trong ngoài nước áp lực, nhưng cũng không có thay đổi virus sách lược, tương phản, ở một ít chứng thực xử lý mặt trên càng thêm nghiêm khắc. Từ chế định phương châm khởi, Long Cổ liền hướng Thế Vệ tổ chức trình một ít truyền nhiễm virus đoán trước, kêu gọi toàn cầu dự phòng, nhưng nhân một ít quốc tế nguyên nhân, này đó đoán trước cũng không có đã chịu coi trọng.</p>
+<p>“Cái này virus lây bệnh phạm vi quá quảng, liền tính toàn thể dự phòng, cũng có khả năng bị cảm nhiễm.” Thẩm Khoát nói chuyện phiếm nói.</p>
+<p>“Ít nhất có thể giảm bớt một ít nhân viên thương vong.” Từ Thu Tinh cười cười, có thể là bạn cùng lứa tuổi nguyên nhân, hai người trong khoảng thời gian này ở chung còn tính vui sướng.</p>
+<p>Hai người đi phía trước đi rồi vài bước, đi vào một chỗ bờ biển, lúc này bờ biển ngừng một con thuyền thuyền đánh cá, Trình Hữu Thanh cùng một ít sinh vật nhân viên đang ở thu thập cá biển hàng mẫu.</p>
+<p>Dựa theo đời trước thời gian tuyến.</p>
+<p>Ngày 15 tháng 11, Sangke quốc dẫn đầu phát hiện tang thi virus.</p>
+<p>Ngày 17 tháng 11, Long Cổ quốc xuất hiện đầu lệ tang thi bệnh hoạn giả.</p>
+<p>Long Cổ đầu lệ tang thi bệnh hoạn giả xuất hiện ở Quảng Ninh tỉnh Lâm Khê thôn, đây là một cái bờ biển làng chài, cảm nhiễm nguyên nhân hẳn là cùng chịu ô nhiễm hải dương loại cá có quan hệ —— kỳ thật đời trước, toàn cầu đối tang thi virus xuất hiện nguyên nhân nghị luận sôi nổi. Có một bộ phận cho rằng hải dương loại cá, một khác bộ phận còn lại là biến dị động vật có vú, này hai cái quần thể trên người đều thí nghiệm tới rồi tang thi virus.</p>
+<p>Nhưng mặc kệ lúc ban đầu virus nguyên tự nơi nào, trận này nguy cơ khởi điểm vẫn là mười năm trước hạch ô nhiễm tiết lộ.</p>
+<p>Long Cổ ở tuyên bố 《 một bậc chuẩn bị chiến đấu 》 sau, liền tăng lớn cả nước hải sản cùng hoang dại thị trường giám thị, tuy không thể ngăn chặn tang thi virus, nhưng có thể đem virus truyền bá hàng đến nhỏ nhất.</p>
+<p>Thẩm Khoát cũng không có cất giấu, theo ký ức tiên đoán Lâm Khê thôn cảm nhiễm ca bệnh, bọn họ là thượng chu đáo đạt Lâm Khê thôn, đã ở chỗ này ngây người một vòng, cũng thành lập lâm thời sinh vật phòng thí nghiệm.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong7.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong9.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tinh-cau-khoi-dong-lai-xay-dung";
+const NOVEL_TITLE = "Tinh cầu khởi động lại [ xây dựng ] / Tinh tế người chơi [ thực tế ảo ]";
+const CHAPTER_TITLE = "Chương 8";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

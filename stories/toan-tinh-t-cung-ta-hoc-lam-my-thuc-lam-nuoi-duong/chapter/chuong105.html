@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>105. Lên đài nấu cơm</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Toàn tinh tế cùng ta học làm mỹ thực làm nuôi dưỡng
+      </h1>
+      <div class="novel-meta">
+        <span>105. Lên đài nấu cơm</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong104.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong106.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Giang Linh tốt xấu là đương quá xã súc, hắn trong ấn tượng họp thường niên Công nhân phí hết tâm tư chuẩn bị tiết mục, lấy lòng lãnh đạo.</p>
+<p>Hắn đương nhiên cũng tham gia ăn tết sẽ, nghe người khác bằng hữu nói, đối phương công ty họp thường niên đều trừu di động, trừu cứng nhắc, trừu tiền mặt, nếu là không trừu trung nói, còn có tham dự thưởng, chỉ cần đi hiện trường biểu diễn tiết mục, mỗi người đều có thể lãnh đến ba năm trăm đồng tiền.</p>
+<p>Tuy rằng không nhiều lắm, nhưng tốt xấu cũng không bạch làm đi.</p>
+<p>Giang Linh lúc ấy nghe xong liền nhưng hâm mộ, vì cái gì đâu? Bởi vì bọn họ công ty chính là cái kia không làm người công ty, lão bản khấu khấu sưu sưu, biểu diễn tiết mục không thể rơi xuống, đến nỗi trừu di động trừu cứng nhắc? Không có cửa đâu.</p>
+<p>Dù sao Giang Linh trong ấn tượng, có thể trừu đến tốt nhất phần thưởng chính là một cái nồi, nhìn ra một hai trăm đồng tiền, thậm chí không bằng khác công ty tham dự thưởng.</p>
+<p>Này dẫn tới bọn họ công ty công nhân đối với họp thường niên biểu diễn nhiệt tình không cao, tuy rằng có mấy cái vì lấy lòng lãnh đạo lão bản thực tích cực, nhưng là đại bộ phận người, đều không muốn làm này đó.</p>
+<p>Khả năng cũng là vì nhìn ra bọn họ tính tích cực quá thấp, có một năm, lãnh đạo cùng bọn họ tuyên bố, năm nay có thể trừu giải thưởng lớn, mỗi cái công nhân đều có thể trừu, nếu nguyện ý biểu diễn tiết mục nói, còn có thêm vào tiền mặt khen thưởng.</p>
+<p>Bất quá mọi người đều không phải ngốc tử, công ty vẫn luôn như vậy moi, sao có thể đột nhiên hào phóng? Sợ là chơi bọn họ đâu.</p>
+<p>Cuối cùng, còn lãnh đạo tạo áp lực hạ, bọn họ vẫn là chuẩn bị tiết mục, Giang Linh căng da đầu lên đài xướng bài hát.</p>
+<p>Kết quả không chút nào ngoài ý muốn, tiền mặt khen thưởng thật là có, còn trang ở bao lì xì, bọn họ vui vui vẻ vẻ xuống đài, chuẩn bị mở ra bao lì xì nhìn xem, rốt cuộc mặc kệ thế nào, tốt xấu cũng là có tiền lấy.</p>
+<p>Kết quả một cái nữ đồng sự gấp không chờ nổi mở ra bao lì xì sau, mặt lập tức liền suy sụp đi lên, Giang Linh liền cảm giác không tốt lắm, nghĩ thầm này bao lì xì sẽ không tha 3000 vạn đi? Ngàn vạn muốn vui vẻ, ngàn vạn muốn vui sướng, ngàn vạn muốn khỏe mạnh?</p>
+<p>Bất quá tin tức tốt, công ty không như vậy không làm người, bên trong xác thật là có tiền, tin tức xấu, bên trong có hai mươi khối, thậm chí không có Giang Linh lương theo giờ cao.</p>
+<p>Giang Linh “……”</p>
+<p>Đến nỗi mặt sau rút thăm trúng thưởng, càng là ly đại quá mức, trừ bỏ năm rồi đều có điện nấu nồi ở ngoài, còn có một cái thần bí giải thưởng lớn.</p>
+<p>Đáng thương công nhân lại một lần thăng ra không nên có chờ mong, cuối cùng, thần bí giải thưởng lớn bị Giang Linh một cái quan hệ cũng không tệ lắm nam đồng sự trừu đến.</p>
+<p>Nam đồng sự lộ ra vui sướng biểu tình, vui vẻ lên đài lãnh thưởng, thẳng đến khách mời người chủ trì lãnh đạo tuyên bố, phần thưởng là “Có thể cùng lão bản chụp ảnh chung một trương, hơn nữa được đến lão bản tự tay viết ký tên.”</p>
+<p>Giang Linh trơ mắt nhìn nam đồng sự không banh trụ, sắc mặt mắt thường có thể thấy được suy sụp, liền này còn phải miễn cưỡng cười vui.</p>
+<p>Nam đồng sự trong lén lút cùng hắn phun tào, nói này “Thần bí giải thưởng lớn”, còn không bằng cho hắn một cái nồi đâu!</p>
+<p>Như vậy thái quá thao tác, nhìn hoàn toàn chính là một cái gánh hát rong, nhưng trên thực tế, Giang Linh công ty ở trong ngành cũng coi như là có chút danh tiếng, cũng không biết công ty vì cái gì như vậy moi.</p>
+<p>Nếu không phải tiền lương cũng không tệ lắm, phỏng chừng mọi người đều nhịn không nổi công ty ghê tởm thao tác.</p>
+<p>Nhớ lại này đó, Giang Linh không nhịn xuống lộ ra một lời khó nói hết biểu tình, hắn ở do dự muốn hay không tham gia lộc cộc ngôi cao họp thường niên.</p>
+<p>Nếu có lên đài biểu diễn nhu cầu, hắn một cái nấu cơm chủ bá, tổng không thể lên đài biểu diễn nấu cơm đi?</p>
+<p>Ách…… Cũng không phải không được?</p>
+<p>Liền ở Giang Linh do do dự dự muốn hay không tham gia thời điểm, A Mỹ phát tới thông tin tin tức Ta trộm cùng ngươi nói, họp thường niên có thần bí giải thưởng lớn.</p>
+<p>Giang Linh “……” Hắn hiện tại đối thần bí giải thưởng lớn đã PTSD.</p>
+<p>Giang Linh hồi phục Cái gì thần bí giải thưởng lớn? Cùng lão bản chụp ảnh chung?</p>
+<p>A Mỹ ? Ngươi như thế nào sẽ có ác độc như vậy ý tưởng?</p>
+<p>Giang Linh sờ sờ cái mũi, xem đi, tinh tế người đều cảm thấy thực ác độc.</p>
+<p>A Mỹ Ta nghe được, là 100 vạn tinh tệ! Trừ cái này ra, khác phần thưởng cũng không tiện nghi, có mới nhất khoản quang não, có thể liền khoang thực tế ảo mới nhất khoản máy chơi game.</p>
+<p>A Mỹ Năm nay phần thưởng cũng không tệ lắm, tới hay không?</p>
+<p>A Mỹ đã chịu thượng cấp chỉ đạo, đối phương hy vọng Vũ Thủy Thủy có thể lên sân khấu, nghĩ như vậy tới cũng không cần làm người khí phát sầu, nhưng A Mỹ cảm thấy vẫn là muốn tôn trọng Vũ Thủy Thủy bản nhân ý nguyện.</p>
+<p>Hơn nữa, liền tính Vũ Thủy Thủy không tới, thượng cấp cũng không thể nói nàng cái gì, nàng hiện tại trong tay không nói cái khác chủ bá, đơn Vũ Thủy Thủy một cái, liền cũng đủ thượng cấp đối nàng khách khách khí khí.</p>
+<p>Bất quá, nếu Vũ Thủy Thủy nguyện ý nói, nàng vẫn là rất hy vọng đối phương tới.</p>
+<p>Đơn thông qua quang não giao lưu, nàng liền cảm thấy, Vũ Thủy Thủy là một cái không tồi người, nàng đối Vũ Thủy Thủy còn khá tò mò, có thể nhìn thấy tự nhiên vui vẻ.</p>
+<p>Giang Linh Tới!</p>
+<p>Giang Linh nghĩ nghĩ, vẫn là đáp ứng rồi, bởi vì hắn vốn dĩ liền phải đi trung ương tinh cầu, vừa lúc, lộc cộc ngôi cao tổng bộ liền ở trung ương tinh cầu.</p>
+<p>Nếu muốn đi trung ương tinh cầu, vậy tham gia một chút cái này nghe tới cũng không tệ lắm họp thường niên đi.</p>
+<p>Nói lên, hắn sở dĩ đi trung ương tinh cầu, gần nhất là muốn giải quyết nhà hắn phòng ở vấn đề, phòng ở hắn muốn từ Carl huân tước trong tay phải về tới, hiện tại không cần, chẳng lẽ còn muốn cho đối phương ở bên trong thanh thản ổn định quá lớn năm sao?</p>
+<p>Thứ hai, Elysius phía trước giật dây liên hệ não khoa chuyên gia, cũng sẽ ở phía sau mấy ngày đến trung ương tinh cầu, Giang Linh khẳng định muốn đi một chuyến.</p>
+<p>Não khoa chuyên gia nơi đó, có chuyên nghiệp thí nghiệm thiết bị, có thể xem xét hắn rốt cuộc là vì cái gì nguyên nhân mất trí nhớ, cũng hảo cung cấp chuyên nghiệp tính trị liệu.</p>
+<p>Như vậy chuyện quan trọng, Giang Linh đương nhiên đến đi.</p>
+<p>Một khi đã như vậy, năm trước sẽ bất quá là nhân tiện sự.</p>
+<p>A Mỹ nghe Vũ Thủy Thủy muốn đi, tự nhiên vui mừng tỏ vẻ Ngươi yên tâm, tới chính mình, khách sạn đều cho ngươi an bài hảo hảo.</p>
+<p>A Mỹ Chúng ta mỗi năm đều hồi trao giải, ta đánh giá, ngươi như thế nào cũng có thưởng lấy đi?</p>
+<p>Qua hồi lâu, A Mỹ lại lại đây nói, thượng cấp cùng nàng giảng, hy vọng Vũ Thủy Thủy có thể lên đài giảng nói mấy câu.</p>
+<p>Giang Linh nghĩ thầm, hắn một cái nấu cơm, nói cái gì? Giảng thực đơn sao?</p>
+<p>Giang Linh Là cần thiết được với đài nói chuyện sao? Vẫn là lên đài là được?</p>
+<p>A Mỹ nghĩ thầm có khác nhau sao? Bất quá vẫn là nói Lên đài là được.</p>
+<p>Giang Linh Kia ta ở trên đài nấu cơm biết không?</p>
+<p>A Mỹ phản ứng đầu tiên, cảm giác Vũ Thủy Thủy hảo ái nấu cơm, bằng không như thế nào sẽ nghĩ ra như vậy thái quá ý tưởng? Đệ nhị phản ứng, cũng không tồi ai! Đến lúc đó nàng cũng đi hiện trường, khẳng định cũng có thể nếm thử, tuy rằng Vũ Thủy Thủy thường xuyên cho nàng gửi một ít ăn, làm công ty đồng sự hâm mộ ghen tị hận, nhưng mỹ thực loại đồ vật này, ai lại sẽ ghét bỏ đâu?</p>
+<p>Bất quá A Mỹ cảm thấy, cái này vẫn là hỏi một câu thượng cấp tương đối hảo, nhưng là, thượng cấp khẳng định sẽ đồng ý đi?</p>
+<p>Quả nhiên, thượng cấp đồng ý, còn nuốt nuốt nước miếng, không biết có phải hay không bị thèm.</p>
+<p>Giang Linh kỳ thật liền thuận miệng như vậy vừa nói, hắn cũng cảm thấy chính mình thao tác quá trừu tượng, họp thường niên thượng biểu diễn nấu cơm ha ha.</p>
+<p>Hắn đang muốn nói, chính mình chính là chỉ đùa một chút.</p>
+<p>Kết quả, A Mỹ thông tin tin tức nhảy ra Có thể.</p>
+<p>Giang Linh “???”</p>
+<p>Cho nên, hắn thật muốn lên đài biểu diễn nấu cơm?</p>
+<p>Hảo đi, hắn dễ như trở bàn tay tiếp nhận rồi chuyện này, hơn nữa tự hỏi, làm cái gì tương đối hảo, cái loại này trường hợp, làm một ít nhanh tay ăn vặt tương đối thích hợp đi?</p>
+<p>Thực mau, lộc cộc ngôi cao họp thường niên tuyên truyền poster làm ra tới, Vũ Thủy Thủy chiếm cứ c vị, mặc dù nhìn là một cái ngũ quan mơ hồ thanh niên, thường xuyên xem Vũ Thủy Thủy phát sóng trực tiếp người xem, đều nhận ra tới.</p>
+<p>Từng cái bôn tương đi cáo, còn có chạy đến lộc cộc ngôi cao này Tinh Bác phía dưới hỏi, đêm đó có thể hay không phát sóng trực tiếp.</p>
+<p>Lộc cộc ngôi cao tiểu biên hồi phục nói Sẽ phát sóng trực tiếp.</p>
+<p>Tiểu biên còn thần thần bí bí tỏ vẻ Đêm đó Vũ Thủy Thủy chuẩn bị kinh hỉ nga, đi hiện trường người thật có phúc.</p>
+<p>Giang Linh vừa vặn nhìn đến “……” Ngươi nói kinh hỉ, không phải là ta muốn lên đài nấu cơm đi?</p>
+<p>Giang Linh có chút xấu hổ xấu hổ, sớm biết rằng liền không linh cơ vừa động, hiện tại hảo, căng da đầu cũng được với!</p>
+<p>Hắn vội vàng rời khỏi giao diện, một chút đều không nghĩ nhìn đến đại gia suy đoán hắn muốn làm cái gì.</p>
+<p>Ha hả, như thế nào sẽ có người nghĩ đến lên đài nấu cơm loại này thao tác đâu QAQ</p>
+<p>Bất quá xấu hổ về xấu hổ, Giang Linh vẫn là bắt đầu làm chuẩn bị, nếu muốn lên đài nấu cơm, khẳng định không thể đem đồ làm bếp cũng dọn đi lên đi? Cho nên Giang Linh tính toán làm một bộ liền huề cùng loại với bày quán dùng toa ăn.</p>
+<p>Bận bận rộn rộn, hắn lại đi nhìn trang viên dưỡng tiểu động vật nhóm, hiện tại khanh khách thú cùng Trường Nhĩ thú cơ hồ không có gì yêu cầu nhọc lòng, tiểu mu mu thú cũng trưởng thành rất nhiều, những cái đó sản nãi mu mu thú, hiện giờ bụng lớn hơn nữa một ít, theo đã trường kỳ cư ở nơi này động vật học chuyên gia nói, dự tính ngày sinh đại khái ở ăn tết sau.</p>
+<p>Giang Linh nguyên bản lo lắng thiên quá lãnh tiểu nhân sản nãi mu mu thú sinh ra có thể hay không chịu đông lạnh, bất quá thực mau hắn liền bình thường trở lại, không nói đây là tinh tế thời đại, chính là 21 thế kỷ, nếu không nghĩ làm mới sinh ra tiểu động vật chịu đông lạnh, cũng có rất nhiều biện pháp.</p>
+<p>Quả nhiên, gần nhất động vật học chuyên gia đã xuống tay an bài sản nãi mu mu thú phòng sinh, phòng sinh rất lớn một cái, so Giang Linh chính mình phòng ở còn đại, hơn nữa có rất nhiều Giang Linh chưa thấy qua công nghệ cao đồ dùng, theo động vật học chuyên gia theo như lời, này đó đều là vì tùy thời tùy chỗ làm kiểm tra, phương tiện quan sát sản nãi mu mu thú trong bụng ấu tể tình huống.</p>
+<p>Chợt đi vào, nhìn cùng một cái loại nhỏ bệnh viện giống nhau.</p>
+<p>Giang Linh cảm thấy đi, xem ra mới sinh ra sản nãi mu mu thú ấu tể, hẳn là sẽ không chịu đông lạnh.</p>
+<p>Sau đó chính là Giang Linh phía chính mình, hắn tính toán năm sau đầu xuân, lại mở rộng dưỡng mị mị thú cùng với cạc cạc thú.</p>
+<p>Cạc cạc thú tốt nhất dưỡng ở thủy biên, nói như vậy, Giang Linh tính toán lại dưỡng một ít cá, loại củ sen gì đó.</p>
+<p>Mị mị Thú Quyển còn có ao cá, này đó đã xuống tay chuẩn bị, chờ sang năm đầu xuân, liền có thể trực tiếp dưỡng.</p>
+<p>Này đó cơ bản không cần Giang Linh nhọc lòng, hắn cùng kiến trúc đội đã hợp tác quá rất nhiều lần, chỉ cần giai đoạn trước nói hảo yêu cầu, hậu kỳ cơ bản không có cái gì yêu cầu Giang Linh nhọc lòng.</p>
+<p>Giang Linh bên này bận bận rộn rộn, trạch ân bên kia cũng ở vội, hắn ở vội vàng làm lộc cộc ngôi cao họp thường niên vé vào cửa, nhưng vé vào cửa quá quý, đến mười mấy vạn tinh tệ! Hắn cho cha mẹ muốn, kết quả bọn họ thế nhưng nói lấy không ra nhiều như vậy tinh tệ!</p>
+<p>Trạch ân cảm thấy bọn họ ở lừa hắn, sao có thể liền mười mấy vạn tinh tệ đều lấy không ra? Nhà bọn họ chính là ở tại trung ương tinh cầu biệt thự!</p>
+<p>Hắn lập tức buông tàn nhẫn lời nói! Nếu không cho hắn tinh tệ, hắn liền không nhận bọn họ! Carl huân tước bị tức giận đến muốn chết, Mai Lạp đạt tắc khóc đến không thành tiếng.</p>
+<p>Trạch ân kết luận bọn họ sẽ cho chính mình tinh tệ, phóng xong tàn nhẫn lời nói sau chút nào không lo lắng, tiếp tục liên hệ phiếu lái buôn, lần nữa dặn dò đối phương, nhất định phải đem phiếu để lại cho chính mình.</p>
+<p>Hừ, hắn nhất định phải nhân cơ hội nhận thức Vũ Thủy Thủy, làm những cái đó dám hoài nghi cười nhạo hắn plastic bằng hữu quỳ xuống tới cầu hắn!</p>
+<p>Lộc cộc ngôi cao họp thường niên, chỉ biết thả ra 500 trương vé vào cửa, dư lại đều là mời ngôi cao chủ bá, còn có một ít lão bản gì đó.</p>
+<p>Mỗi năm này 500 trương vé vào cửa, cơ bản đều là bị những cái đó chủ bá fans cấp đoạt đi rồi, mà fans sức mua liền không cần phải nói.</p>
+<p>Phía chính phủ định giá bán là một ngàn đến 3000 không đợi, kết quả chính là bị này đàn fans xào liên tục đi cao.</p>
+<p>Trừ phi ngươi đi lên là có thể cướp được phiếu, nếu không muốn từ cướp được phiếu người nơi nào mua phiếu, liền phải cùng người khác cạnh tranh.</p>
+<p>Dưới loại tình huống này, phiếu giới cũng không phải là mấy ngàn là có thể giải quyết.</p>
+<p>Giang Linh kỳ thật cũng biết loại tình huống này, hắn riêng khai phát sóng trực tiếp, làm fans không cần đoạt phiếu, hắn cũng không biết này phiếu bị xào như vậy quý, là lộc cộc ngôi cao giở trò quỷ thật đúng là hoàng ngưu (bọn đầu cơ) làm, nhưng Giang Linh vẫn là cảm thấy, lộc cộc phát sóng trực tiếp thực không làm người, phàm là bọn họ quy định chỉ có thể dùng cướp được phiếu thân phận id vào bàn, cũng sẽ không đem làm phiếu giới xào thành như vậy.</p>
+<p>Giang Linh không tin bọn họ làm không được, hắn trừu cái thưởng đều có thể tỏa định thân phận id, hơn nữa yêu cầu cái này đi người, cần thiết chứng minh bọn họ mang người là thân hữu quan hệ, đại đại hạ thấp hoàng ngưu (bọn đầu cơ) đầy trời chào giá tình huống phát sinh.</p>
+<p>Nhưng Giang Linh cũng quản không được nhân gia lộc cộc ngôi cao như thế nào làm, chỉ có thể khuyên fans không cần hoa tiền tiêu uổng phí, động một chút mười mấy vạn tinh tệ, nhiều như vậy tiền, hoa ở chính mình trên người không hương sao?</p>
+<p>Dù sao hắn nên khuyên đều khuyên, muốn thật nói chính mình không kém tiền, không để bụng mười mấy vạn tinh tệ, Giang Linh cũng lấy bọn họ không có biện pháp.</p>
+<p>Năm nay đã đáp ứng rồi muốn đi tham gia họp thường niên, Giang Linh cũng không hảo đổi ý, nhưng sang năm lộc cộc ngôi cao còn như vậy tùy ý hoàng ngưu (bọn đầu cơ) xào phiếu giới, hắn vẫn là không đi.</p>
+<p>Hắn khai phát sóng trực tiếp khuyên fans vẫn là có hiệu quả, rất nhiều phía trên fans nhưng thật ra bình tĩnh lại, ý thức được hoa mười mấy vạn tinh tệ, thật sự là không có lời.</p>
+<p>Bất quá, Giang Linh có lương tri, không đại biểu mỗi người đều có, tỷ như nói vẫn luôn không quen nhìn hắn Mại Tạp, gần nhất phát sóng trực tiếp luôn là cố ý vô tình nhắc tới, chính mình cũng sẽ tham gia lộc cộc ngôi cao họp thường niên.</p>
+<p>Mại Tạp đối với lộc cộc ngôi cao đem Vũ Thủy Thủy đặt ở poster C vị, hơn nữa đương thành tuyên truyền trọng điểm hành vi, rất là bất mãn.</p>
+<p>Mà càng làm cho hắn bất mãn chính là, hắn vị trí, từ năm trước tiếp cận C vị vị trí, đến bây giờ, lại hướng bên cạnh xê dịch, ở poster thượng chiếm so, chỉ có Vũ Thủy Thủy một phần mười, hắn ở mặt trên, thậm chí không có Giang Linh đầu đại!</p>
+<p>Mại Tạp nhìn đến cái này poster, thiếu chút nữa không khí điên, hận không thể trực tiếp đổi ý, không đi tham gia họp thường niên, hắn cảm thấy, đây là đối hắn vũ nhục!</p>
+<p>Mại Tạp tức giận cùng chính mình người đại diện đức nói chuyện này, không nghĩ tới vẫn luôn duy trì hắn, cùng hắn cùng nhau khúc khúc Vũ Thủy Thủy, khúc khúc ngôi cao không ánh mắt đức, thái độ thế nhưng thay đổi, đối phương trực tiếp tỏ vẻ “Ngươi còn không có nhận rõ hiện thực, lấy Vũ Thủy Thủy hiện tại nhân khí, ngươi cùng hắn tương đối, đó chính là ăn vạ hắn. Ngôi cao không phủng hắn, chẳng lẽ phủng ngươi sao? Nhân gia Vũ Thủy Thủy nhân khí như vậy cao, đều đã phá vòng, còn mỗi ngày phát sóng trực tiếp, ngươi đâu? Một tháng phát sóng trực tiếp một hai lần, ngươi không phát hiện ngươi gần nhất nhân khí trượt xuống càng thêm lợi hại sao?”</p>
+<p>“Mại Tạp, trước kia thích ngươi fans, không nhất định sẽ vẫn luôn ở, fans cũng không phải ngốc tử, ngươi vẫn luôn như vậy lừa gạt người, nhân gia xoay người rời đi, ngươi tính cái gì, ngươi đến lúc đó chính là cái rắm!” Đức nói chuyện có chút khó nghe, hắn kỳ thật gần nhất càng thêm chịu không nổi Mại Tạp.</p>
+<p>Đặc biệt là nhìn ban đầu chỉ là một cái tiểu tân nhân Vũ Thủy Thủy, một đường đi đến hôm nay cái này nhiệt độ, hắn hận không thể Vũ Thủy Thủy là trong tay hắn chủ bá!</p>
+<p>Hơn nữa, căn cứ A Mỹ ở văn phòng nhắc tới Vũ Thủy Thủy nói, có thể phỏng đoán ra, Vũ Thủy Thủy ngầm cũng là một cái tính tình thực tốt chủ bá, không chỉ có đối A Mỹ khách khí, hơn nữa còn thường thường cấp A Mỹ đưa một ít đối phương làm mỹ thực.</p>
+<p>Quang điểm này, liền cũng đủ làm văn phòng người, đều hâm mộ A Mỹ.</p>
+<p>Càng đừng nói, Vũ Thủy Thủy còn đặc biệt cần mẫn, thường thường liền sẽ phát sóng trực tiếp, chẳng sợ như vậy phát hỏa, cũng không có phiêu, chưa bao giờ sẽ chủ động cấp A Mỹ gây chuyện, dựa vào hắn, A Mỹ cũng không biết kiếm lời nhiều ít!</p>
+<p>Phải biết, trong tay chủ bá nhiệt độ, chính là liên quan đến bọn họ này đó chủ bá người đại diện tiền lương nhiều ít.</p>
+<p>Trước kia Mại Tạp nhiệt độ cao, kiếm nhiều, đức đương nhiên nguyện ý phủng hắn, chẳng sợ đối với đức kém tính tình rất là bất mãn, hắn cũng nguyện ý chịu đựng, ai làm Mại Tạp cho hắn kiếm lời không ít tinh tệ đâu?</p>
+<p>Nhưng gần đây, Mại Tạp càng thêm kiêu ngạo, công nhiên ở phòng live stream chê cười fans, ở fans trước mặt vạn rất cao ngạo liền có bao nhiêu cao ngạo, fans cũng là có tính tình, lặp đi lặp lại nhiều lần như vậy, hoàn toàn nhịn không nổi.</p>
+<p>Đặc biệt là còn có Vũ Thủy Thủy như vậy cần lao, lại lợi hại, vĩnh có thể làm ra bất đồng mỹ thực chủ bá đối lập, liền có vẻ Mại Tạp càng thêm bất kham.</p>
+<p>Những cái đó thoát phấn fans, nơi nơi phát Mại Tạp hắc dán, này đó đã từng thích quá Mại Tạp người, hắc khởi Mại Tạp tới, mới là thật sự tận hết sức lực, bọn họ cũng càng biết Mại Tạp nhược điểm.</p>
+<p>Đức chỉ là liên hệ dán chủ, cấp dán chủ chỗ tốt, làm đối phương xóa hắc dán liền hoa không ít tâm lực.</p>
+<p>Càng đừng nói có chút không kém tiền chủ, nói như thế nào cũng không muốn xóa, hiện tại những cái đó hắc dán còn treo đâu.</p>
+<p>Hắn cả ngày bị những việc này phiền sứt đầu mẻ trán, Mại Tạp còn không cảm kích, cảm thấy hắn không bản lĩnh, không làm những người đó đem thiệp xóa sạch sẽ, lời này quả thực khí đức hộc máu.</p>
+<p>Mà ở nhìn đến A Mỹ cả ngày vui vui vẻ vẻ, nhàn nhã cùng cái gì dường như, đức liền càng thêm chua xót, đồng thời ghen ghét A Mỹ, như thế nào vận khí liền tốt như vậy, phát hiện Vũ Thủy Thủy cái này hạt giống tốt, nếu là Vũ Thủy Thủy là bị hắn khai quật, hiện tại A Mỹ quá đến sinh hoạt liền là của hắn!</p>
+<p>Lại tưởng tượng đến, Mại Tạp nguyên bản là A Mỹ thủ hạ chủ bá, đức liền càng nôn đến luống cuống, này đó thống khổ, vốn dĩ hẳn là A Mỹ tới thừa nhận! Hắn hiện tại, hoàn toàn chính là ở thế A Mỹ chịu tội!</p>
+<p>Lúc này đức liền hoàn toàn đã quên, Mại Tạp kinh tế ước chính là hắn từ A Mỹ trong tay cướp đi, nếu không phải hắn lúc ấy xem Mại Tạp nhiệt độ cao, ức chế không được trong lòng tham lam, hơn nữa hắn vẫn luôn phủng Mại Tạp, lại như thế nào sẽ có hôm nay loại tình huống này?</p>
+<p>Nhưng hiển nhiên, đức là sẽ không nghĩ lại chính mình, hắn cùng Mại Tạp nói trắng ra là chính là cùng loại người, sẽ không nghĩ lại chính mình, chỉ biết chỉ trích người khác.</p>
+<p>Hắn đối Mại Tạp bất mãn đọng lại đã lâu, vì thế, ở Mại Tạp cho hắn oán giận ngôi cao cấp Vũ Thủy Thủy C vị, không cho hắn, hơn nữa hắn chiếm vị chỉ có Vũ Thủy Thủy đầu như vậy đại thời điểm, Mại Tạp hoàn toàn nhịn không được, mở ra trào phúng hình thức.</p>
+<p>Mại Tạp có thể là không nghĩ tới đức thế nhưng không cùng hắn khúc khúc Vũ Thủy Thủy cùng platform, ngược lại trào phúng khởi hắn tới, trong lúc nhất thời có chút phản ứng không kịp.</p>
+<p>Đức nói ra, khả năng cảm thấy trong lòng sảng khoái rất nhiều, một chút liền ngăn không được “Ngươi biết chỉ là nửa năm thời gian, ngươi liền rớt nhiều ít phấn sao? Hiện tại phòng live stream nhìn náo nhiệt, lưu lại đều là hướng về phía ngươi mặt đi, ngươi còn ở mỹ thực bản khối ngốc làm gì? Ta xem ngươi còn không bằng đi đi nhan giá trị đường đua được!”</p>
+<p>Lời này nghe hình như là ở khen Mại Tạp lớn lên không tồi, nhưng phối hợp đức biểu tình, cảm giác liền không giống nhau.</p>
+<p>Đức chính là ở trào phúng hắn, buồn cười, Mại Tạp xác thật lớn lên có điểm tiểu soái, nhưng là hơn phân nửa dưới tình huống, đều là muốn chọn góc độ, hắn ở mỹ thực bản khối, còn có thể đi một chút nhan giá trị lộ tuyến, nếu là đi đương nhan giá trị chủ bá, liền chờ bị người trào bình thường đi.</p>
+<p>Mại Tạp cũng là có điểm tự mình hiểu lấy, bằng không cũng sẽ không chạy tới càng thêm vất vả mỹ thực bản khối, mà không đi nhan giá trị bản khối.</p>
+<p>Ở mỹ thực bản khối, hắn còn có sẽ làm mỹ thực quang hoàn ( tuy rằng tới tới lui lui cũng chỉ biết làm như vậy vài đạo ), bởi vì có cái này quang hoàn ở, đại gia đối với hắn diện mạo xem kỹ, cũng liền vô ý thức thiếu rất nhiều.</p>
+<p>Muốn thật đi nhan giá trị bản khối, người khác theo bản năng liền sẽ xem kỹ ngươi diện mạo.</p>
+<p>Nhưng Mại Tạp tuy rằng có tự mình hiểu lấy, nhưng hắn bị người phủng quán, đặc biệt là phòng live stream hiện tại chỉ còn lại có những cái đó thổi hắn nhan giá trị fans, dẫn tới Mại Tạp một lần đối chính mình nhan giá trị tự tin đến không nên có độ cao.</p>
+<p>Cho nên, ở đức mặt lộ vẻ trào phúng thời điểm, Mại Tạp hoàn toàn banh không được, cùng đức đại sảo một trận, hơn nữa buông lời hung ác, chính mình muốn đổi người đại diện!</p>
+<p>Nếu là trước kia hắn nói như vậy, đức đã sớm kinh sợ hống hắn, nhưng hiện tại, đức không nghĩ hầu hạ, Mại Tạp cho hắn kiếm càng ngày càng ít, còn đặc biệt sẽ gây chuyện, hắn ước gì đối phương chạy nhanh đi tai họa người khác đi.</p>
+<p>Nếu là có người nguyện ý bị hắn tai họa nói.</p>
+<p>Mại Tạp quả thực khí tạc, ở hắn xem ra, hắn hiện tại so bất quá Vũ Thủy Thủy, hoàn toàn là đức vấn đề, trước kia hắn ở A Mỹ thuộc hạ, tuy rằng A Mỹ luôn là quản đông quản tây, nhưng đối phương rất biết marketing lăng xê, cũng sẽ ở hắn nói sai lời nói thời điểm, kịp thời trấn an fans cảm xúc.</p>
+<p>Nếu hắn vẫn luôn ở A Mỹ thủ hạ nói, khẳng định so Vũ Thủy Thủy còn hỏa!</p>
+<p>Cho nên, thừa dịp họp thường niên, hắn muốn đi tìm A Mỹ, một lần nữa đi A Mỹ thủ hạ, đức không phải không để bụng hắn quản lý ước sao? Chỉ cần đối phương chủ động từ bỏ hắn quản lý ước, hắn liền có thể một lần nữa trở lại A Mỹ thủ hạ, trở về ngày xưa huy hoàng! Không đúng, hắn muốn so ngày xưa càng thêm huy hoàng!</p>
+<p>Cùng lúc đó, đang ở bận rộn A Mỹ đánh cái hắt xì, phía sau lưng tỏa sáng, tổng cảm giác chính mình bị cái gì ác độc đồ vật cấp theo dõi.</p>
+<p>Mại Tạp làm tốt quyết định sau, tâm tình hảo rất nhiều, nhưng hắn đối với công ty cách làm, vẫn là không phục lắm, là, hiện tại Vũ Thủy Thủy là so với hắn nhiệt độ cao, nhưng đối phương fans đều là một đám quỷ nghèo, hút kim năng lực căn bản so ra kém chính mình.</p>
+<p>Hắn phải hướng ngôi cao chứng minh, hắn so Vũ Thủy Thủy càng thêm có giá trị!</p>
+<p>Kết quả là, Mại Tạp liền tới khai phát sóng trực tiếp, lời trong lời ngoài đều đang nói “Ngôi cao họp thường niên, ta hy vọng các ngươi cũng có thể đi duy trì ta.”</p>
+<p>Tuy rằng không có nói rõ, nhưng là mọi người đều minh bạch hắn ý tứ.</p>
+<p>Nhưng ngày thường duy trì Mại Tạp, mua Mại Tạp đại ngôn sản phẩm còn chưa tính, đi ngôi cao họp thường niên, một trương vé vào cửa đến mười mấy vạn đâu, fans bất đắc dĩ tỏ vẻ “Vé vào cửa quá quý, mười mấy vạn đâu.”</p>
+<p>Mười mấy vạn mà thôi? Thực quý sao? Mại Tạp tàng trụ trong mắt không kiên nhẫn, ngôn ngữ gian ám chỉ fans tìm cha mẹ muốn, hoặc là đi mượn đều có thể.</p>
+<p>Hắn này đó fans đều tuổi còn nhỏ, bằng không cũng sẽ không như vậy hảo lừa, Mại Tạp đều sụp đã không biết bao nhiêu lần, còn ngốc hề hề duy trì hắn.</p>
+<p>Lúc này bọn họ cũng không ý thức được Mại Tạp lời nói có cái gì không đúng, thật đúng là suy xét dựa theo Mại Tạp nói, đi mượn.</p>
+<p>Nhưng bọn họ tuổi còn nhỏ, vừa mở miệng chính là mười mấy vạn, chung quanh đều là bạn cùng lứa tuổi, như thế nào sẽ cho, bọn họ cũng chỉ có thể mượn tiền khoản.</p>
+<p>Bất quá cũng may Liên Bang đối vị thành niên bảo hộ thực nghiêm khắc, một thí nghiệm đến tình huống không đúng, liền có tương quan bộ môn liên hệ gia trưởng, ở gia trưởng ép hỏi hạ, bọn họ ấp úng nói vì cái gì mượn tinh tệ.</p>
+<p>Gia trưởng khí tìm được tương quan bộ môn, trực tiếp đem ngôi cao cấp cử báo, mà nhận được cử báo ngôi cao cao tầng, quả thực bị Mại Tạp ngu xuẩn hành vi thiếu chút nữa khí vựng.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong104.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong106.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "toan-tinh-t-cung-ta-hoc-lam-my-thuc-lam-nuoi-duong";
+const NOVEL_TITLE = "Toàn tinh tế cùng ta học làm mỹ thực làm nuôi dưỡng";
+const CHAPTER_TITLE = "105. Lên đài nấu cơm";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 35</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tinh cầu khởi động lại [ xây dựng ] / Tinh tế người chơi [ thực tế ảo ]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 35</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong34.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong36.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Long Cổ muốn mở ra vắc-xin hợp tác rồi?!”</p>
+<p>“Tiêm vào sau, có phải hay không có thể giống Long Cổ cư dân giống nhau ra cửa?”</p>
+<p>Ở Long Cổ công bố vắc-xin hợp tác kia một khắc, có không ít quốc tế võng hữu ở vắc-xin tin tức hạ nhắn lại.</p>
+<p>“Chúng ta tiêm vào sau, có phải hay không không bao giờ sợ Phi Mạt cùng phân truyền miệng bá?”</p>
+<p>Agatha là Ai Thản Á quốc một cái bần dân, cùng Sangke, Moerke này đó phát đạt quốc gia bất đồng, Ai Thản Á tuy cũng thực hành bạo đầu + cực nóng tiêu độc xử lý phương thức, nhưng nhân kinh tế điều kiện kém, cực nóng xử lý không đạt tiêu chuẩn, bọn họ là toàn cầu cảm nhiễm suất tối cao quốc gia chi nhất.</p>
+<p>Địa phương chính phủ tuy nỗ lực rửa sạch, nhưng nhân cảm nhiễm nhân số quá nhiều, này đó người lây nhiễm bị giết sau sẽ trực tiếp bại lộ ở trong không khí, tiếp theo hư thối, hấp dẫn con muỗi, truyền bá virus…… Ai Thản Á có 70% người lây nhiễm đều là bởi vì vệ sinh không đạt tiêu chuẩn khiến cho, nếu cùng Long Cổ hợp tác, các nàng chỉ cần lo lắng máu cảm nhiễm là được, này đại đại đề cao sinh tồn tỷ lệ.</p>
+<p>Nghĩ đến đây, nàng vội vàng mở ra quốc nội tin tức ——</p>
+<p>【2 nguyệt 5 hào buổi sáng 10 điểm, Ai Thản Á cùng Long Cổ chính phủ chính thức ký tên S1 vắc-xin hợp tác hợp đồng, hợp đồng cường điệu, Long Cổ đem lấy 700 ai thản tệ chi giá cả bán ra cấp Ai Thản Á 5000W chi vắc-xin, Ai Thản Á chính phủ nhưng phân kỳ mười năm chi trả. Này đó vắc-xin cần miễn phí hoặc là ổn định giá bán ra cấp sở cần cư dân, cấm giá cao trữ hàng……2 nguyệt 10 hào khởi, Ai Thản Á cư dân đem chính thức tiêm chủng vắc-xin, vắc-xin vì tự trả tiền tiêm chủng, giá cả 700 Ai Thản Á tệ……】</p>
+<p>“Thật tốt quá!” Agatha xem xong sau kích động che miệng lại. Long Cổ tệ cùng Ai Thản Á tỷ giá hối đoái vì 1 10, 700 Ai Thản Á tệ nghe không ít, nhưng hoàn toàn ở cư dân thừa nhận trong phạm vi.</p>
+<p>“Ta là một người Ai Thản Á cư dân, phi thường cảm tạ Long Cổ vắc-xin hợp tác……” Agatha bình phục hảo tâm tình, mở ra Long Cổ cá heo biển phía chính phủ tài khoản. Nàng cảm tạ Long Cổ cưỡng chế điều kiện, bằng không cho dù hai bên hợp tác, người nghèo nhóm cũng rất khó lấy ổn định giá mua được vắc-xin, là Long Cổ cứu người thường sinh mệnh!</p>
+<p>Hai tháng mười hào, Ai Thản Á, Mạnh gia tạp, Sangke, Moerke chờ quốc bắt đầu tiêm chủng vắc-xin, các quốc gia vắc-xin giá cả phổ biến ở 0-100 Long Cổ nguyên chi gian, các quốc gia cho dù tưởng nhân cơ hội kiếm một bút, nhưng giảm đi vắc-xin bảo quản, nhân viên y tế tiền lương chờ phí dụng, bọn họ căn bản không kiếm tiền, các quốc gia chính phủ phai nhạt kiếm chênh lệch giá tâm tư, chỉ hy vọng quốc nội có thể giống Long Cổ giống nhau sớm ngày khôi phục sinh sản, thực hiện tang thi cùng cư dân nhóm cùng tồn tại.</p>
+<p>“Ta hẹn trước ba điểm hai mươi vắc-xin, trong chốc lát qua đi tiêm chủng.”</p>
+<p>“Lan bá đặc! Ngươi phản bội ta!”</p>
+<p>“Xin lỗi, chúng ta không cần thiết cùng chính mình sinh mệnh không qua được, quân đội đã làm nhất nghiêm khắc thí nghiệm, Long Cổ S1 vắc-xin xác thật có thể phòng ngừa Phi Mạt virus……”</p>
+<p>“Nhưng là ngươi phản bội chúng ta tín ngưỡng!”</p>
+<p>Hai tháng mười bảy buổi chiều 3 giờ, áo Lyle táo bạo hồi phục tin tức.</p>
+<p>Áo Lyle cá heo biển ID1920, phía trước nhân ‘ Long Cổ cư dân ngu dốt ’ vấn đề cùng Triệu đậu đậu đối phun một vòng. Hắn không đi qua Long Cổ, nhưng ở trong mắt hắn, Long Cổ là ngu muội lạc hậu, càng không thể nghiên cứu phát minh ra S1 vắc-xin cùng tang thi hướng dẫn rương, này hết thảy đều là Long Cổ đối thế giới âm mưu.</p>
+<p>Không tưởng đối phương không chỉ có nghiên cứu ra tới, bổn quốc chính phủ còn thấp hèn thỉnh cầu hợp tác, hắn cảm nhận được phản bội!</p>
+<p>“Áo Lyle, ngươi hẳn là thành thục một ít.” Lan bá đặc làm như bất đắc dĩ trả lời.</p>
+<p>“Ta còn có ba tháng nên thành nhân lễ, phi thường thành thục!” Áo Lyle phẫn hận ấn di động. Tiếp theo như là nhớ tới cái gì, “Ngươi quên chúng ta tiểu tổ cách ngôn sao? Tuyệt không sử dụng Long Cổ vắc-xin!”</p>
+<p>Hắn cùng lan bá đặc là ở Triệu đậu đậu bình luận khu nhận thức, lúc ấy hắn cùng Triệu đậu đậu bởi vì một ít chính trị vấn đề sảo lên, lan bá đặc tin nhắn hắn. Bọn họ hợp thành ‘ hắc long liên minh ’, liên minh tổ chức có 225 người, mọi người đều là kiên định Long Cổ hắc. Trên mạng một có gió thổi cỏ lay, mọi người đều sẽ tập thể đồ bản đối phương bình luận khu, đại gia tuy không có đã gặp mặt, nhưng này hai tháng đã tổ kiến thâm hậu internet hữu nghị.</p>
+<p>Bọn họ liên minh cách ngôn chính là ‘ phản đối Long Cổ hết thảy, cự tuyệt Long Cổ sản phẩm ’, hiện tại lan bá đặc rõ ràng phản bội liên minh!</p>
+<p>Phẫn nộ trung, lan bá đặc hồi phục “Phi thường tiếc nuối, chúng ta tổ chức đã ở nửa giờ trước giải tán……”</p>
+<p>“Vì cái gì?” Áo Lyle sửng sốt.</p>
+<p>“Ngươi có thể nhìn xem một chút tổ chức thông cáo.”</p>
+<p>Hắc long liên minh dùng chính là cá heo biển võng đàn liêu phần mềm, áo Lyle điểm đánh tiến vào.</p>
+<p>“Xin lỗi, ta phụ thân đã giúp ta xin S1 vắc-xin, ta quyết định tiêm chủng! Ta vi phạm liên minh tín ngưỡng, sẽ chủ động rời khỏi đàn liêu.”</p>
+<p>“Cảm tạ đại gia này hai tháng làm bạn, ta đã tiêm chủng vắc-xin.”</p>
+<p>“Ta rất thích đậu đậu phòng live stream, hy vọng Moerke có thể tiến cử tang thi hướng dẫn rương.”</p>
+<p>“Long Cổ khá tốt, chúng ta có thể buông thành kiến.”</p>
+<p>“Xin lỗi……”</p>
+<p>Đại gia tiến đàn khi tuyên quá thề, nếu vi phạm hắc long tín ngưỡng đem trực tiếp lui đàn. Hiện tại Moerke đã bắt đầu tiêm chủng vắc-xin, đại gia lựa chọn vắc-xin, chỉ có thể tuân thủ phía trước hứa hẹn.</p>
+<p>Cá heo biển võng đàn liêu phần mềm phân sơ đẳng, trung đẳng, cao đẳng. Bọn họ hai tháng trước thăng cấp thành trung đẳng đàn liêu, trung đẳng đàn có cái ẩn hình quy định Nếu đàn tổ chức thành viên thấp hơn mười người, nên đàn đem tự động giải tán.</p>
+<p>Nửa giờ trước, lan bá đặc lui đàn sau, đàn nội nhân viên chỉ còn chín người, cứ như vậy, hắc long tổ chức đại bản doanh đã không có……</p>
+<p>“Các ngươi đều phản bội tín ngưỡng!” Áo Lyle tiếp tục phẫn nộ.</p>
+<p>Lan bá đặc không hồi phục, chỉ là ở nửa giờ sau phát tới một tổ ảnh chụp [ ảnh chụp ][ ảnh chụp ][ ảnh chụp ]……</p>
+<p>“Hiện tại tiêm chủng người quá nhiều, nhóm đầu tiên vắc-xin khả năng dự trữ không đủ, ngươi nếu là tiêm chủng chạy nhanh hẹn trước!”</p>
+<p>“Ta không tiêm chủng!”</p>
+<p>Áo Lyle mới vừa hồi phục xong, cửa có người gõ cửa “Áo Lyle, ngươi ở phòng sao?”</p>
+<p>“Ta ở!” Áo Lyle mở ra cửa phòng, cửa là nàng 80 tuổi bà ngoại.</p>
+<p>Lúc này bà ngoại ăn mặc một bộ hồng nhạt váy liền áo, tay vác một cái tinh xảo bọc nhỏ, nhìn đến áo Lyle nói “Nhanh lên thu thập một chút, chúng ta hẹn trước 5 điểm tiêm chủng, trong chốc lát bệnh viện hẳn là có rất nhiều người……”</p>
+<p>“Cái gì tiêm chủng?”</p>
+<p>“Long Cổ S1 vắc-xin a.”</p>
+<p>“Ta không hẹn trước, ta cũng không đi tiêm chủng!”</p>
+<p>Tổ mẫu dùng tay bao đánh hắn một chút “Phụ thân ngươi thượng chu giúp ngươi hẹn trước, nhanh lên thu thập! Chúng ta không nghĩ ngươi biến thành tang thi, cũng không nghĩ bị ngươi cắn được……”</p>
+<p>Áo Lyle tuy có một vạn loại không tình nguyện, nhưng ở tổ mẫu ‘ cả nhà tánh mạng ’ uy hiếp hạ, vẫn là buồn bực đi trước bệnh viện, tiếp theo xếp hàng tiêm chủng.</p>
+<p>“Ngươi thắng!” Buồn bực trung, áo Lyle cấp Triệu đậu đậu nhắn lại, hắn cảm giác cùng đối phương hai tháng giằng co trung, chính mình thua nhất phái đồ địa.</p>
+<p>Áo Lyle đã có thể tưởng tượng đối phương sẽ dùng nhất bén nhọn ngôn ngữ trào phúng chính mình, ai ngờ tin tức gửi đi sau nhắc nhở 【 xin lỗi, ngài đã bị đối phương kéo hắc, vô bình luận quyền hạn. 】</p>
+<p>Áo Lyle ???!</p>
+<p>Táo bạo!</p>
+<p>“Người xem các bằng hữu, ta vị trí hiện tại là la hải cùng an thương trường, kinh fans gửi bài, nơi này phát hiện một người tang thi……”</p>
+<p>Cùng thời gian, la hải cùng an khu một đống xa hoa thương trường, Triệu đậu đậu thuần thục mở ra phát sóng trực tiếp.</p>
+<p>Hắn hiện tại fans lượng 2700W+, phòng live stream ổn định người xem nhân số 7600W+, nơi này còn có không ít minh tinh đại V, đến nỗi phía trước anti-fan nhóm…… Anti-fan chỉ biết ảnh hưởng hắn kiếm tiền tâm tình, đã vui sướng toàn bộ kéo đen!</p>
+<p>Ngày 20 tháng 2, toàn cầu tiêm chủng nhân số 27 trăm triệu +, này đó vắc-xin là Long Cổ nắm giữ trung tâm kỹ thuật, lúc sau cùng một ít hải ngoại y dược công ty hợp lực sinh sản, bằng không dựa vào long y dược sức sản xuất rất khó thỏa mãn toàn cầu sở cần.</p>
+<p>Theo tiêm chủng phạm vi mở rộng, toàn cầu đã nghiệm chứng, Long Cổ S1 vắc-xin có thể hữu hiệu phòng ngừa Phi Mạt truyền bá, hiện tại toàn cầu tang thi tăng trưởng suất so phía trên tháng giảm xuống 772%, Long Cổ quốc tế lực ảnh hưởng không ngừng tăng lên.</p>
+<p>“Đinh, chúc mừng [ sinh vật phòng thí nghiệm ] tích lũy đạt được 30 trăm triệu thịnh hành giá trị, đạt được thành tựu Sinh vật mị lực. Thành tựu khen thưởng Tùy cơ Quát Quát Nhạc X1.” Ngày 20 tháng 2 vãn 10 điểm, liền ở toàn cầu tiêm chủng nhân số đột phá 3 tỷ khi, Long Tinh căn cứ trong ký túc xá, hệ thống đồng bộ đổi mới.</p>
+<p>Nửa tháng trước, sinh vật hướng dẫn rương nghiên cứu phát minh thành công sau, Thẩm Khoát cùng Đàm Minh Chương ở Kinh Vân ngây người một tuần, xác định hướng dẫn rương công tác từng bước khai triển sau, hai người lại về tới Long Tinh căn cứ.</p>
+<p>Hiện tại hệ thống nhiệm vụ 1, quy hoạch Long Tinh thổ địa. 2, gieo trồng cỏ nuôi súc vật hạt giống. Nhiệm vụ [1] đã hoàn thành, nhiệm vụ [2] nhân yêu cầu thời gian nhất định, dự tính tháng 5 trung tuần mới có tiến độ. Hiện tại ly tháng 5 trung tuần còn có ba tháng thời gian, đại gia khẳng định không thể làm chờ, bởi vậy thương lượng sau, đại gia quyết định trước san bằng một chút Long Tinh thị thổ địa, như vậy có hậu tục nhiệm vụ có thể trực tiếp thi công.</p>
+<p>Trong khoảng thời gian này, Thẩm Khoát đều là ban ngày đi công trường hiện trường, buổi tối hồi căn cứ, sinh hoạt trạng thái cùng bọn lính giống nhau bận bận rộn rộn.</p>
+<p>Lúc này Thẩm Khoát mới vừa mở họp xong trở lại ký túc xá, đang theo Từ Thu Tinh trò chuyện Longxin —— Từ Thu Tinh đang ở nghiên cứu tang thi virus lần thứ hai biến dị, bọn họ đã lấy được đại lượng số liệu hàng mẫu, nhân có một ít thực nghiệm số liệu không chính xác, sinh vật tổ thảo luận sau, quyết định làm Từ Thu Tinh mang đội lại đây khảo sát mấy ngày. Nói là khảo sát, chủ yếu là mượn sinh vật phòng thí nghiệm nghiên cứu một ít tư liệu, đối phương ngày mai buổi chiều lại đây, dự tính ở chỗ này ngốc một vòng, hai người đang ở thảo luận sinh vật phòng thí nghiệm sự tình.</p>
+<p>Lúc này hệ thống đổi mới, Từ Thu Tinh thấy Thẩm Khoát không nói chuyện, có chút tò mò “Làm sao vậy?”</p>
+<p>“Không có việc gì, suy nghĩ một chút sự tình.”</p>
+<p>Thẩm Khoát một bên hồi phục, một bên mở ra thành tựu tình hình cụ thể và tỉ mỉ.</p>
+<p>Thịnh hành giá trị [ ta thành thị ] tương quan phương tiện, nghiên cứu, văn hóa chờ ở vị trí thế giới lực ảnh hưởng.</p>
+<p>Hệ thống phía trước đổi mới quá cư dân nhóm cống hiến giá trị, hạnh phúc chỉ số, này đó là thông qua bổn thành nội cư dân nhóm tính toán, mà thịnh hành giá trị có thể thông qua thành nội ngoại tính toán…… Này thuộc về một cái tân phát hiện.</p>
+<p>Thẩm Khoát sau khi suy nghĩ cẩn thận, mở ra hệ thống khen thưởng Tùy cơ Quát Quát Nhạc X1. Hắn phía trước từng đạt được quá Quát Quát Nhạc khen thưởng, bởi vậy không có do dự trực tiếp điểm đánh.</p>
+<p>“Chúc mừng ký chủ đạt được thời gian đạo cụ Sao trời ngôn ngữ. 00”</p>
+<p>Ở Thẩm Khoát điểm đánh kia một khắc, không gian vặn vẹo, ở này trước mặt xuất hiện một trương bàn tay đại màu đen tấm card, tấm card tính chất hoàn mỹ, mặt trên một ít lấp lánh vô số ánh sao, nhìn dáng vẻ như là tinh quang hội tụ thành ngân hà.</p>
+<p>Phía trước [ virus mô phỏng khí ] là trực tiếp khởi động, bởi vậy Thẩm Khoát đạt được [ sao trời ngôn ngữ ] sau cũng không có điểm đánh.</p>
+<p>Hắn tuy rằng không có điểm đánh, nhưng tấm card xuất hiện kia một khắc, mặt sau thời gian động……</p>
+<p>59……</p>
+<p>58……</p>
+<p>57……</p>
+<p>Thẩm Khoát còn không có minh bạch này đó con số là có ý tứ gì, liền cảm giác chính mình ý thức một mảnh mơ hồ.</p>
+<p>“Hôm nay chiếu 《 tinh cầu văn minh 》, thổ bồi tinh quốc chụp, này đàn tiểu chú lùn bị công nhận cho rằng không có nghệ thuật thiên phú, nhưng lần này chụp không tồi, trên Tinh Võng hưởng ứng khá tốt……” Mơ mơ màng màng trung, bên người có người ở lải nhải nói chuyện.</p>
+<p>Thẩm Khoát nếm thử mở to mắt, hắn thử rất nhiều lần, rốt cuộc mở.</p>
+<p>Đây là một cái 28 tả hữu thanh niên nam tử, nam tử mang đôi mắt, ăn mặc một bộ thoả đáng hưu nhàn trang, đang ngồi ở hắn bên cạnh tước một cái màu đỏ quả tử.</p>
+<p>Thẩm Khoát mở mắt ra sau, vừa lúc cùng thanh niên đối diện.</p>
+<p>Thanh niên khiếp sợ nhìn hắn, lời nói mới rồi hoàn toàn mà ngăn, chờ hoãn vài giây sau mới không xác định nói “…… Thẩm Khoát?”</p>
+<p>“Vương, Vương Bình Bình?” Thẩm Khoát mở miệng ra, khả năng trường kỳ không nói chuyện, hắn thanh âm có chút trầm thấp nghẹn ngào.</p>
+<p>Nam tử là hắn đại học đồng học Vương Bình Bình, cũng là chính mình tạp tiến trò chơi người khởi xướng, hoặc là nói, đây là nhiều năm sau Vương Bình Bình……</p>
+<p>“Thẩm Khoát, ngươi còn ở sao?”</p>
+<p>“Thẩm Khoát?”</p>
+<p>Liền ở Thẩm Khoát khiếp sợ trước mắt cảnh tượng đồng thời, Long Tinh trong ký túc xá, Từ Thu Tinh đã phát một cái lại một cái tin tức, tiếp theo là di động vang lên.</p>
+<p>‘ Thẩm Khoát ’ ngã vào di động bên cạnh, không người tiếp nghe.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong34.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong36.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tinh-cau-khoi-dong-lai-xay-dung";
+const NOVEL_TITLE = "Tinh cầu khởi động lại [ xây dựng ] / Tinh tế người chơi [ thực tế ảo ]";
+const CHAPTER_TITLE = "Chương 35";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

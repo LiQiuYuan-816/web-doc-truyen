@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 9</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tinh cầu khởi động lại [ xây dựng ] / Tinh tế người chơi [ thực tế ảo ]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 9</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong8.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong10.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Trình lão sư.” Thẩm Khoát cùng Từ Thu Tinh đi lên thuyền đánh cá, phi thường thuần thục thay phòng hộ phục cùng phòng độc mặt nạ bảo hộ.</p>
+<p>“Các ngươi tới?” Trình Hữu Thanh đang ở nhớ cá biển số liệu, nhìn thấy hai người sau tiếp đón.</p>
+<p>“Vừa rồi ở đông khu bên kia nhìn nhìn, nơi này có hay không ta có thể làm?” Từ Thu Tinh mang hảo thủ bộ sau hỏi.</p>
+<p>“Đem này đó cá biển ảnh chụp chụp một chút, lại dán lên đánh số.”</p>
+<p>Từ Thu Tinh từ bên cạnh trên giá cầm lấy camera, đang chuẩn bị chụp ảnh khi nhìn về phía Thẩm Khoát ——</p>
+<p>“Các ngươi vội, không cần phải xen vào ta.”</p>
+<p>Thẩm Khoát thân phận đặc thù, theo lý thuyết không nên tới nơi này, chỉ là hắn nên tiên đoán đều tiên đoán, cũng muốn nhìn xem tang thi quỹ đạo còn có thể hay không cùng đời trước giống nhau, liền đi theo sinh vật tổ cùng nhau tới Lâm Khê thôn.</p>
+<p>Ở kế tiếp nửa giờ, Từ Thu Tinh cùng mặt khác sinh vật nhân viên cùng nhau lấy ra cá biển hàng mẫu, Thẩm Khoát tắc ngồi ở đuôi thuyền nghiêm túc đánh giá cá thùng cá biển.</p>
+<p>Này đó cá biển có cá hồi, cá ngừ đại dương, cá hố cá chim chờ các loại chủng loại, là sinh vật tổ thỉnh cầu địa phương hải sản bộ môn cùng nhau vớt. Chịu hải ô nhiễm ảnh hưởng, này đó loại cá đều đã xảy ra trình độ nhất định thượng biến dị, tỷ như thùng cá hố tròng mắt nhô lên, bối thượng nhiều một vòng ngạnh ngạnh màu đen vây lưng, này đó đều là cường độ thấp biến dị, biển sâu bên trong sinh vật biển càng khoa trương.</p>
+<p>Thẩm Khoát nghiêm túc nhìn chằm chằm thùng cá hố.</p>
+<p>“Đang xem cái gì?” Lúc này Từ Thu Tinh hơi làm nghỉ ngơi, đi tới hỏi.</p>
+<p>“Xem cá.” Thẩm Khoát nói.</p>
+<p>“Cá có cái gì đẹp?”</p>
+<p>“Ngươi có hay không cảm giác này đó cá đều lớn lên không giống nhau? Cho dù vẻ ngoài tương đồng, nhưng vẩy cá hoa văn, đôi mắt lớn nhỏ, trường khoan kích cỡ, mỗi con cá đều lớn lên không giống nhau.”</p>
+<p>“Này không phải thực bình thường sao? Trên thế giới không có hai mảnh hoàn toàn tương đồng lá cây, đương nhiên không có giống nhau như đúc cá biển.”</p>
+<p>“Phải không……”</p>
+<p>Nếu là bình thường thế giới, này xác thật không phải cái gì vấn đề lớn, nhưng tiền đề là ‘ bình thường thế giới ’. Lần này trò chơi khởi động lại sau, Thẩm Khoát cố ý quan sát người chung quanh sự cảnh vật.</p>
+<p>Hắn rất ít chơi game thực tế ảo, nhưng đại học trong lúc học tinh tế kinh tế học, từng nghiên cứu quá tinh tế trò chơi phát triển quá trình. Game thực tế ảo bị trở thành thế giới thứ hai, bên trong hoàn cảnh bối cảnh, nhân vật logic đều là từ AI kéo dài. Nhưng AI lại bắt chước nhân loại tình cảm, tầng dưới chót logic cũng là lạnh băng, hắn từng hệ thống học tập quá ‘ nhân loại tư duy cùng AI tư duy bất đồng ’, có thể thực nhanh chóng phán đoán ra máy móc AI.</p>
+<p>Căn cứ vào này một đặc điểm, hắn vẫn luôn ở quan sát trò chơi nhân vật tư duy logic. Hắn phát hiện nơi này ‘NPC’ nhóm phi thường thông minh, tỷ như Từ Thu Tinh đám người là làm sinh vật nghiên cứu, bọn họ có phi thường phong phú sinh vật tri thức, có một ít quan điểm thậm chí dẫn đầu với tinh tế.</p>
+<p>Hắn nghiên cứu thế giới này kinh tế học, thế giới này kinh tế thế cục phi thường hoàn thiện, không có bất luận cái gì BUG.</p>
+<p>Hắn tìm không ra bất luận cái gì AI dấu vết, cũng là vì như vậy, hắn trong khoảng thời gian này cảm xúc có chút mê mang.</p>
+<p>Nơi này nhân vật tình cảm quá dư thừa.</p>
+<p>Nơi này có 6 tỷ người, tựa như 6 tỷ cái độc lập sinh mệnh giống nhau.</p>
+<p>“Suy nghĩ cái gì?” Từ Thu Tinh thực nhạy bén nhận thấy được Thẩm Khoát cảm xúc không đúng.</p>
+<p>“Ta trước hai ngày làm một giấc mộng……” Thẩm Khoát châm chước một chút ngôn ngữ, “Trong mộng, Hải Vân Tinh là một cái sa bàn hộp, tất cả mọi người là thần minh ‘ món đồ chơi ’, đây là một cái giả dối thế giới. Trong mộng cảnh tượng tương đối rõ ràng, cho nên ta mấy ngày nay có chút nghi hoặc, cho rằng thế giới là giả, luôn có một loại sương mù xem hoa cảm giác.”</p>
+<p>Thẩm Khoát không có nói trò chơi số liệu, chỉ là dùng thần minh món đồ chơi ẩn dụ.</p>
+<p>“Ngươi là từ đâu chút phương diện cho rằng thế giới là giả?” Từ Thu Tinh cảm giác Thẩm Khoát cái này mộng quá kỳ quái.</p>
+<p>“…… Cảm giác?” Thẩm Khoát ba phải cái nào cũng được nói.</p>
+<p>Từ Thu Tinh giơ ra bàn tay, lúc này một sợi gió biển từ đầu ngón tay xẹt qua “Ngươi xem, đây là phong, ta tuy rằng nhìn không thấy, nhưng có thể chạm vào cảm giác đến.”</p>
+<p>Hắn chỉ hướng cá “Đây là cá biển.”</p>
+<p>Gõ gõ boong tàu “Đây là boong tàu.”</p>
+<p>“Gió biển, cá biển, boong tàu, này đó đều là chân thật.” Từ Thu Tinh nghĩ nghĩ, lại chọc một chút Thẩm Khoát cánh tay “Có hay không cảm giác? Ngươi cũng là chân thật.”</p>
+<p>“Này đó đều là chúng ta có thể xem tới được sờ được đến. Trừ bỏ này đó, vân, thái dương, vũ trụ, này đó đối với chúng ta đều là chân thật. Ta trước kia cũng nghĩ tới ‘ thế giới thật giả ’ vấn đề này. Sau lại tưởng, mặc kệ là thật là giả, chỉ cần chúng ta có thể cảm giác được chạm vào, như vậy hắn chính là chân thật.</p>
+<p>Nghiêm túc cảm thụ lập tức.</p>
+<p>Lập tức là chân thật, như vậy thế giới này chính là chân thật.”</p>
+<p>“Lập tức là chân thật, thế giới này chính là chân thật……”</p>
+<p>Thẩm Khoát tuy chịu được tịch mịch, nhưng đời trước sống một mình 5 năm, trong lúc giống người nguyên thủy giống nhau sinh hoạt ở núi lớn. Lần này trò chơi khởi động lại, con đường phía trước không rõ, 5 năm cô tịch cảm cũng không có hoàn toàn tiêu trừ. Bởi vậy hắn cảm giác chính mình giống một cái không ngừng bị dùng sức ấn lò xo, khả năng giây tiếp theo liền chia năm xẻ bảy.</p>
+<p>Hắn vừa rồi chỉ là phát tiết chính mình cảm xúc, không chờ mong đối phương trả lời. Không nghĩ tới đối phương không chỉ có trả lời, còn nghiêm túc thuyết minh thế giới quan của mình.</p>
+<p>“Không cần có quá nhiều áp lực.” Từ Thu Tinh sau khi nói xong lo lắng nói.</p>
+<p>“Cái gì áp lực?” Thẩm Khoát không phản ứng lại đây.</p>
+<p>“Quốc gia đã thực hành nhất nghiêm khắc quản khống chính sách, cho dù có tang thi virus, cũng sẽ không nhanh như vậy lan tràn.” Từ Thu Tinh cho rằng Thẩm Khoát lo lắng tang thi virus, mấy ngày nay xuất hiện tinh thần hoảng hốt.</p>
+<p>“Ta biết.” Thẩm Khoát cười cười, không có quá nhiều giải thích.</p>
+<p>Từ Thu Tinh quan sát hạ Thẩm Khoát, xác định đối phương không có dị thường sau, lúc này mới nhẹ nhàng thở ra.</p>
+<p>Kỳ thật có đôi khi, hắn cảm giác Thẩm Khoát rất thần bí. Loại này thần bí không phải tiên đoán, mà là đối phương thường xuyên cho hắn một loại tự do thế giới bên ngoài cảm giác, tựa như thế giới này quần chúng…… Đương nhiên, loại cảm giác này có nhất định chủ quan tính, hắn không có cùng bất luận kẻ nào nói lên.</p>
+<p>“Chu Dương đâu?” Hai người trò chuyện trong chốc lát, Thẩm Khoát tách ra đề tài hỏi.</p>
+<p>Chu Dương là cùng tổ lại đây nghiên cứu viên chi nhất, viên mặt, tính cách phi thường nhiệt tình thảo hỉ, mấy ngày nay vẫn luôn giống chỉ ong mật ở trên thuyền đổi tới đổi lui. Nhưng hôm nay ban ngày đến bây giờ, hắn vẫn luôn không thấy được bóng người.</p>
+<p>“Đi cấp các thôn dân mở họp.” Từ Thu Tinh nói.</p>
+<p>Dựa theo Thẩm Khoát tiên đoán, 11.17, Lâm Khê thôn trước hết xuất hiện tang thi người bệnh. Nhân cư dân phòng bị ý thức bạc nhược, thôn thực mau xuất hiện người cắn người hiện tượng, tiếp theo lan tràn đến toàn bộ thị trấn. Chờ chính phủ thu được tin tức, Lâm Khê thôn nơi Thanh Vân trấn đã là tang thi virus cao nguy hiểm khu vực.</p>
+<p>11.18, đã biết tang thi người bệnh có 327 lệ, cái này con số còn đang không ngừng gia tăng.</p>
+<p>Thẩm Khoát nhìn đến Lâm Khê thôn tin tức khi mới vừa làm xong căn cứ phòng hộ nhiệm vụ, hắn đối cái này tin tức chi tiết không rõ ràng lắm, chỉ biết ‘11.17’‘ Lâm Khê thôn ’‘ cao nguy hiểm khu vực ’ này mấy cái từ ngữ mấu chốt. Đến nỗi trước hết cảm nhiễm thôn dân là ai, vì sao cảm nhiễm…… Một mực không biết.</p>
+<p>Long Cổ chính phủ hiểu biết Thẩm Khoát biết trước nội dung sau, liền đối Thanh Vân trấn tiến hành rồi nghiêm khắc bố trí. Thị trấn thôn dân càng là tự 7 hào khởi, cấm không phải tình huống đặc thù tiến vào rời đi. Mỗi cái thôn dân mỗi ngày đều có độ ấm thí nghiệm, chỉ cần xuất hiện nóng lên phát sốt bệnh trạng, trực tiếp bị kéo đến Thanh Vân trấn cách ly điểm tiến hành cách ly.</p>
+<p>Nếu thật sự có tang thi virus, quản khống Thanh Vân trấn cũng không thể tránh được virus, nhưng có thể giảm bớt trấn trên thôn dân thương vong, đây cũng là chính phủ ở trước mặt điều kiện hạ nhất thích hợp xử lý phương thức.</p>
+<p>“Hiện tại tổ cấm nghiên cứu viên ly thôn, nếu là có vật tư thiếu, có thể liên hệ nhân viên công tác đại mua.” Từ Thu Tinh tiếp tục nói.</p>
+<p>Lần này trong viện tới 32 danh nghiên cứu viên, đặc biệt có Trình Hữu Thanh loại này quốc gia cấp, đại gia ở chỗ này có nhất định tính nguy hiểm, nhưng không có người tưởng lùi bước. Nếu Lâm Khê thôn thật sự xuất hiện đầu lệ tang thi người bệnh, bọn họ tưởng trước tiên hiểu biết virus nguyên, như vậy cũng có thể càng có nắm chắc nghiên cứu phát minh ra kháng thể.</p>
+<p>Thẩm Khoát không có lộ ra Long Cổ nghiên cứu ra Phi Mạt kháng thể sự tình ——</p>
+<p>Phi Mạt kháng thể là tám tháng sau xuất hiện, hắn nếu là hiện tại ‘ tiên đoán ’, không biết có thể hay không thay đổi kháng thể đi hướng.</p>
+<p>Này liền giống một con bướm cánh.</p>
+<p>Tự cùng Long Cổ hợp tác ngày ấy khởi, rất nhiều ‘ tiên đoán ’ đều sẽ cùng đời trước không giống nhau, đến nỗi có cái gì không giống nhau…… Hắn cũng không có nắm chắc.</p>
+<p>“Từ sư huynh, Thẩm tiên sinh!” Lúc này một cái nhạc a thanh âm từ phía sau truyền đến.</p>
+<p>Hai người quay đầu.</p>
+<p>Người tới viên mặt, ăn mặc một bộ cồng kềnh phòng hộ phục, trong tay cầm một xấp văn kiện, đúng là Từ Thu Tinh sư đệ Chu Dương, hai người phía trước đều ở Kinh Vân sinh vật trong sở công tác.</p>
+<p>“Mở họp xong?” Từ Thu Tinh cười hỏi.</p>
+<p>“Khai xong rồi……”</p>
+<p>Nếu nói bên ngoài quản khống lực độ thuộc về 1.0, Thanh Vân trấn tắc thuộc về 2.0 tăng mạnh bản. Thanh Vân trấn có ba vạn cư dân, hiện tại các cao tốc, tỉnh nói, nông thôn tiểu đạo toàn diện phong tỏa. Có thôn dân trạch trong nhà tỏ vẻ lý giải, còn có một bộ phận có mãnh liệt mâu thuẫn cảm xúc, này đã nghiêm trọng ảnh hưởng bọn họ bình thường sinh sống!</p>
+<p>Chu Dương vừa rồi cùng thôn dân nói một ít virus lây bệnh cùng phát hiện sốt cao sốt cao sau xử lý phương pháp. Hắn không biết thôn dân nghe lọt được không có, nhưng hắn chính mình giảng phi thường nghiêm túc, cũng miệng khô lưỡi khô.</p>
+<p>“Vất vả!” Từ Thu Tinh cho hắn đệ bình chưa khui nước khoáng.</p>
+<p>“Chờ vội xong này hai tháng, nhất định phải hướng trong viện xin tiền thưởng!” Chu Dương rót một mồm to trêu chọc nói.</p>
+<p>Mười phút sau, hai người tiếp tục xử lý cá biển hàng mẫu công tác.</p>
+<p>Thẩm Khoát nghe xong Từ Thu Tinh ‘ lập tức ’ lý luận, tâm tình hảo không ít. Mặc kệ nói như thế nào, tránh cho tam đại virus xuất hiện, hoàn thành hệ thống nhiệm vụ, đây là hắn ‘ lập tức ’ hai cái mục tiêu.</p>
+<p>“Mở họp mở họp! Từng ngày đều là mở họp! Liền thôn đều ra không được, khai cái gì sẽ!” Liền ở sinh vật tổ áp dụng hàng mẫu đồng thời, Lâm Khê thôn 7 bài 6 hào, Tiền Đông bọc một kiện hậu áo bông, vẻ mặt không kiên nhẫn về nhà.</p>
+<p>“Làm sao vậy?” Vương Mai đang ở chỉ đạo khuê nữ học ghép vần, nghe được động tĩnh sau hỏi.</p>
+<p>“Không có việc gì, chính là vừa mới trong thôn mở họp, trực tiếp khai hai giờ.” Lâm Khê thôn có 220 hộ thôn dân, căn cứ Thôn Ủy Hội yêu cầu, mỗi nhà mỗi hộ cần thiết phái một cái đại biểu mở họp. Tiền Đông mẫu thân tuổi tác lớn, Vương Mai muốn chiếu cố hài tử, hắn chỉ có thể làm gia đình đại biểu đi Thôn Ủy Hội mở họp.</p>
+<p>“Mặt trên nói chúng ta thị trấn khả năng có cao nguy hiểm virus, mặt trên cũng là coi trọng chúng ta.” Vương Mai hảo tính tình trấn an.</p>
+<p>“Này đều nói nửa tháng, cũng không gặp virus trông như thế nào……” Tiền Đông nói thầm một chút, lúc này có người ở cửa nhỏ giọng gõ cửa.</p>
+<p>“Làm sao vậy?” Tiền Đông mở ra đại môn. Cửa là chính mình hồ bằng cẩu hữu Vương Bằng, Triệu Tứ.</p>
+<p>“Bắt cá, có đi hay không?” Triệu Tứ nhỏ giọng hỏi.</p>
+<p>Lâm Khê thôn ven biển ăn hải, mỗi người đều là xuống nước bắt cá một tay. Bọn họ trước kia sẽ đem bắt đến cá bán được trấn trên, đại tai nạn sau cá biển biến dị, bọn họ thu vào đại chịu ảnh hưởng. Bất quá hàng năm cùng cá giao tiếp, cho dù này đó cá biến dị, bọn họ cũng biết cái gì có thể ăn cái gì không thể ăn, bọn họ không có việc gì khi thường xuyên sẽ xuống biển vớt cá tìm đồ ăn ngon.</p>
+<p>“Mặt trên không phải không cho tự mình xuống biển vớt cá?” Tiền Đông tâm thần vừa động hỏi. Cái này thông tri là tháng trước phát, nghiêm cấm yêu cầu Thanh Vân trấn thôn dân tự mình xuống biển, trấn trên thuỷ sản thị trường cũng giám thị phi thường nghiêm khắc.</p>
+<p>“Mấy ngày nay hải lưu, không dưới thủy ít nhiều a. Ta biết một chỗ, mặt trên quản không được, chúng ta liền vớt điểm chính mình ăn, lại không lấy ra đi bán.” Triệu Tứ thèm nửa tháng, hiện tại phi thường muốn ăn cá.</p>
+<p>“Thôn Ủy Hội thật quản không được?”</p>
+<p>“Nơi đó tương đối bí ẩn, cá nhiều, quản không được!”</p>
+<p>Tiền Đông cũng có chút thèm, ba người một thương lượng, quyết định đêm nay hai điểm trộm vớt cá.</p>
+<p>“Mặt trên tra đến nghiêm, đừng cùng người khác nói a.” Triệu Tứ sau khi nói xong nhắc nhở.</p>
+<p>“Không nói!” Tiền Đông càng nghĩ càng thèm, thậm chí ảo tưởng vớt được tràn đầy hải sản về nhà.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong8.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong10.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tinh-cau-khoi-dong-lai-xay-dung";
+const NOVEL_TITLE = "Tinh cầu khởi động lại [ xây dựng ] / Tinh tế người chơi [ thực tế ảo ]";
+const CHAPTER_TITLE = "Chương 9";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

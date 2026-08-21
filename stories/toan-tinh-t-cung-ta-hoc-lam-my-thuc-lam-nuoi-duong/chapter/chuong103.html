@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>103. Cá quế chiên xù</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Toàn tinh tế cùng ta học làm mỹ thực làm nuôi dưỡng
+      </h1>
+      <div class="novel-meta">
+        <span>103. Cá quế chiên xù</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong102.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong104.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Chúng ta trước từ như thế nào phân biệt cá quế bắt đầu đi.” Tinh tế tuy rằng rất nhiều sinh vật đều sinh ra nhất định biến hóa, ngay cả có chút người đều có hình thú, thủy sinh sinh vật cũng sinh ra nhất định biến hóa, nhưng Giang Linh vẫn là từ đông đảo cá trung phân biệt ra cá quế.</p>
+<p>Cá quế biến hóa cũng không lớn, cùng Giang Linh trong trí nhớ so sánh với, hình thể lớn một ít, còn có, chính là nó trên người vằn, theo nó ở trong nước bơi lội, sẽ sinh ra biến hóa, trừ cái này ra, một ít đều vẫn là Giang Linh trong trí nhớ bộ dáng.</p>
+<p>“Cá quế lại danh cá quế, nó thể cao dẹt, phần lưng phồng lên, giống như vậy, bày biện ra thoi trạng.” Vì làm người xem càng thêm tinh chuẩn phân biệt ra cá quế, Giang Linh riêng cầm một cái cá quế, làm làm mẫu “Đầu của nó so với mặt khác sẽ cá lớn hơn một chút, miệng tương đối xông ra, ta cảm thấy nó miệng tốt nhất phân biệt, xem, nó phía dưới miệng so bên trên trường rất nhiều, chợt vừa thấy, khụ khụ…… Có chút buồn cười, tuy rằng cười nhạo một cái sinh vật diện mạo có chút không tốt lắm, nhưng đại gia có thể căn cứ cái này phân biệt.”</p>
+<p>“Còn có chính là, cá quế vảy cùng khác cá so sánh với, cũng tương đối thật nhỏ, nhan sắc có chút hoàng lục sắc cảm giác, bụng bạch bạch, thân thể sườn biên còn có bất quy tắc đốm khối.” Giang Linh cơ hồ đem chính mình phán đoán cá quế yếu điểm đều nói.</p>
+<p>Cá quế đặc thù vẫn là tương đối rõ ràng, dù sao Giang Linh cảm thấy thực hảo phân biệt.</p>
+<p>Người xem hi hi ha ha “Ai nha, đừng nói, cái này cá quế miệng thật là có chút đặc biệt ha ha ha.”</p>
+<p>“Vũ Thủy Thủy Vũ Thủy Thủy, ta cùng ngươi giảng, kỳ thật ngươi chỉ cần trọng điểm giảng một chút nó miệng thì tốt rồi, rốt cuộc ta còn là lần đầu thấy có cá miệng là cái dạng này, thật sự hảo khôi hài a.”</p>
+<p>“Các ngươi như thế nào có thể như vậy đâu? Chẳng lẽ nó lớn lên như vậy buồn cười, là nó chính mình nguyện ý sao! Các ngươi này đàn người xấu, không cho chê cười khả khả ái ái cá quế.”</p>
+<p>Cá quế Cảm giác ngươi cũng không buông tha ta.</p>
+<p>Giang Linh ho nhẹ một tiếng, thật sự không nghĩ cùng này đàn người xấu người xem cùng nhau cười một con cá quế, nó chỉ là một con cá mà thôi, quản hắn diện mạo cái dạng gì, ăn ngon không phải được rồi sao?</p>
+<p>“Được rồi được rồi, nếu đại gia có thể nhận thức cá quế, chúng ta đây tiến vào trân quý, làm cá quế chiên xù đi!” Giang Linh lấy ra dao phay, đem vừa mới dùng để giảng giải cá quế từ trong nước vớt ra tới, lưu loát đem tung tăng nhảy nhót ( vật lý ý nghĩa thượng ) cá quế dùng đao đem chụp vựng, sau đó cắt ra nó bụng.</p>
+<p>Hồi lâu không gặp Vũ Thủy Thủy sát cá, người xem lại nhịn không được run bần bật một chút, nhìn Giang Linh nhanh chóng đem cá nội tạng cùng vảy rửa sạch sạch sẽ, sau đó dùng sạch sẽ nước trôi tẩy, còn không quên cùng bọn họ giảng “Cá quế vảy không tốt lắm xóa, đại gia có thể dùng nước ấm hơi chút năng một chút, như vậy vảy càng tốt bóc ra, đương nhiên, nhớ rõ năng thời điểm không cần năng lâu lắm, phòng ngừa đem cá quế da cá năng hư.”</p>
+<p>Người xem “Ân ân, ta đã làm nhà ta bảo mẫu người máy nhớ kỹ.”</p>
+<p>Đến nỗi làm cho bọn họ thân thủ làm này đó, vẫn là thôi đi, không hạ thủ được a.</p>
+<p>Ô ô ô, muốn trở nên cùng Vũ Thủy Thủy giống nhau lãnh khốc, bọn họ còn phải muốn luyện luyện a.</p>
+<p>Toàn bộ cá rửa sạch sẽ sau, phía dưới liền đến có kỹ thuật hàm lượng một bước “Chúng ta kế tiếp, muốn đi cốt.”</p>
+<p>Giang Linh đem cá đầu triều hạ, một bàn tay đè lại cá thân thể, một bàn tay cầm đao “Chúng ta đao dán xương cá, từ cá phần lưng hạ đao, chậm rãi phiến đến đuôi cá địa phương, đại gia phiến thời điểm nhớ rõ chú ý, đuôi cá địa phương không cần cắt đứt, làm da cá liên tiếp.”</p>
+<p>“Tiếp theo, chúng ta đem cá lật qua tới, cùng vừa mới giống nhau, đem bên này dùng đồng dạng biện pháp xử lý, tiếp theo liền có thể đem trung gian chủ cốt gỡ xuống tới.” Theo Giang Linh nói xong, hắn liền gỡ xuống một khối chủ cốt.</p>
+<p>Người xem xem đôi mắt đều mở to, không phải, bọn họ đều không thấy rõ Vũ Thủy Thủy là như thế nào làm, như thế nào đối phương liền như vậy gỡ xuống một khối hoàn thành cá chủ cốt? Hắn là như thế nào làm được?</p>
+<p>Không nghĩ tới này còn không có kết thúc, Vũ Thủy Thủy lại nói “Chúng ta kế tiếp đem cá quế xương cá cũng xóa, dùng mũi đao nhẹ nhàng đi diệt trừ thịt cá thượng tế thứ.”</p>
+<p>Người xem lúc này xem như minh bạch, nguyên lai Vũ Thủy Thủy phía trước nói làm cái gì đồ ăn đơn giản, nguyên lai là thật sự! Nhìn xem này cá quế chiên xù, không nói mặt sau có khó không, liền nói đi cốt đi thứ cái này, bọn họ đã đủ đau đầu.</p>
+<p>Nếu làm cho bọn họ quay lại cốt đi thứ, chẳng sợ Vũ Thủy Thủy đã dạy, bọn họ cũng có thể đem thịt cá làm cho nát nhừ.</p>
+<p>Bọn họ không khỏi cúi đầu, nhìn mắt chính mình đôi tay, lại xem Vũ Thủy Thủy đôi tay, chỉ cảm thấy, đồng dạng là tay, như thế nào chênh lệch cũng như vậy đại a!</p>
+<p>Hơn nữa, Vũ Thủy Thủy tay còn như vậy đẹp!</p>
+<p>“Tiếp theo còn không có xong.” Giang Linh nói, làm người xem một lần nữa phục hồi tinh thần lại “Phía dưới chính là thịt cá thành hình mấu chốt, chúng ta muốn ở thịt cá trên người thiết hoa đao, này một bước làm tốt, tạc ra tới mới giống sóc.”</p>
+<p>“Chúng ta đem thịt cá bình phô ở trên thớt, da cá bên kia triều hạ.” Giang Linh phô hảo cá, một bàn tay cầm đao “Đao cùng thớt căng 45 độ góc, đao cứ như vậy, nghiêng thiết nhập da cá.”</p>
+<p>Nói thật ra, Giang Linh cũng rất ít làm như vậy cao nan độ đồ ăn, cá quế chiên xù hắn đã từng nhàn tới không có việc gì học quá, cũng nguyên liệu nấu ăn quá rất nhiều lần, cuối cùng đảo cũng thành công.</p>
+<p>Hắn không xác định lần này có thể hay không thành công, cho nên động tác rất là cẩn thận, cũng chậm rất nhiều.</p>
+<p>“Vân nghiêng muốn phiến ra từng loạt từng loạt, mỗi đến khoảng cách đại khái không đến một centimet. Phiến hảo lúc sau, tiếp theo đem cá xoay tròn 90 độ, lần này đao cùng thớt trình vuông góc trạng thái thiết nhập thịt cá, đồng dạng, da cá cũng không thể cắt đứt.” Giang Linh thiết cẩn thận, xem người xem đều không khỏi ngừng lại rồi hô hấp.</p>
+<p>Bên cạnh công nhân cũng không dám lại đây quấy rầy, sợ Giang Linh không cẩn thận thiết sai rồi, tuy rằng bọn họ cảm thấy, Giang Linh rất lợi hại, khẳng định sẽ không thiết sai, nhưng là, vẫn là tiểu tâm một chút tương đối hảo.</p>
+<p>Ở mọi người thật cẩn thận chú thích hạ, Giang Linh cứ như vậy, đem thịt cá cắt thành chỉnh chỉnh tề tề trình hình thoi tiểu khối, Giang Linh rốt cuộc thở phào nhẹ nhõm, lộ ra một cái tươi cười “Hiện tại nhìn còn không quá rõ ràng, chờ hạ nồi tạc qua sau, này đó hình thoi tiểu khối liền sẽ ngoại phiên, nhìn cùng sóc mao giống nhau.”</p>
+<p>“Hiện tại đã thành công một nửa.” Giang Linh ngữ khí cũng nhẹ nhàng rất nhiều, hắn lấy phòng bếp giấy, lau khô cá mặt ngoài hơi nước “Chúng ta tiếp theo hướng cá thân sinh bôi lên một tầng hơi mỏng muối cùng rượu gia vị, cấp cá đi một chút tỉnh.”</p>
+<p>Lúc này người xem đã không có học tập tâm tư, học không được, căn bản học không được, bọn họ bắt đầu chờ mong một chút, cá nước thủy làm được cá quế chiên xù, có phải hay không nhìn thật sự giống sóc con.</p>
+<p>Mười phút thực mau qua đi, Giang Linh lấy ra tinh bột bắp “Chúng ta đem làm tinh bột bắp, đều đều chụp ở cá trên người, muốn cẩn thận một chút, đem thịt cá mỗi cái khe hở đều phải chụp mãn, chụp hảo lúc sau đâu, lại đem cá cầm lấy tới, run rớt cá trên người dư thừa tinh bột.”</p>
+<p>“Hảo, chúng ta hướng trong nồi đảo du, đốt tới tám phần nhiệt.” Giang Linh cảm giác du độ chênh lệch nhiệt độ trong ngày không nhiều lắm, tay xách theo đuôi cá “Chú ý, không cần đem cá trực tiếp đảo đi vào tạc, chúng ta lấy một cái muỗng, từ trong nồi múc một ít nhiệt du, tưới ở thịt cá hoa văn thượng.”</p>
+<p>Người xem liền thấy, theo Vũ Thủy Thủy hướng thịt cá mặt trên tưới nhiệt du, thịt cá thượng hoa văn chậm rãi phiên khởi, lúc này đã xuất hiện một chút biến hóa.</p>
+<p>“Đều lâm thượng nhiệt du sau, đem cá đầu cùng thịt cá đều bỏ vào trong chảo dầu, đem chúng nó tạc mặt ngoài kim hoàng xốp giòn.” Giang Linh đem thịt cá cùng cá đầu bỏ vào đi, chảo dầu lập tức bốc lên phao phao tới, qua hồi lâu, Giang Linh mới đem tạc kim hoàng xốp giòn thịt cá cùng cá đầu vớt ra tới bãi bàn.</p>
+<p>“Muốn thoạt nhìn giống sóc con, bãi bàn cũng là muốn thực chú trọng, không thể tùy tiện bãi.” Giang Linh cẩn thận đem thịt cá cùng cá đầu đều dọn xong.</p>
+<p>Người xem gấp không chờ nổi muốn nhìn, sóc con hình dạng cá rốt cuộc là cái dạng gì, chỉ thấy, toàn bộ cá cá đầu ngẩng lập, đuôi cá hơi kiều, tạo hình nhìn rất sống động, xác thật giống một con kiều cái đuôi sóc con.</p>
+<p>Người xem rất là kinh ngạc cảm thán “Ta nguyên bản tưởng giả, không nghĩ tới một con cá thật sự có thể nhìn giống sóc con! Khụ khụ, ta liền nói Vũ Thủy Thủy như thế nào sẽ khoác lác đâu!”</p>
+<p>“Vũ Thủy Thủy quá lợi hại đi! Này ai có thể nghĩ đến, ta tưởng phá đầu cũng không thể tưởng được, cá còn có thể như vậy, càng đừng nói làm ra tới.”</p>
+<p>“Hôm nay như cũ là tin tưởng vững chắc Vũ Thủy Thủy sẽ ma pháp một ngày!”</p>
+<p>Giang Linh bất đắc dĩ “Này cũng không phải ta nghĩ ra được, cổ địa cầu liền có cá quế chiên xù, ta chẳng qua là đem chúng nó phục khắc ra tới mà thôi, chỉ có thể nói, cổ địa cầu người rất có trí tuệ.”</p>
+<p>Người xem mỗi lần nghe được Vũ Thủy Thủy nói cái gì “Cổ địa cầu”, đều đối cái kia bọn họ đã dần dần quên đi văn minh, tràn ngập hứng thú.</p>
+<p>Nguyên bản, bọn họ tuy rằng biết cổ địa cầu, nhưng là, hiểu biết không nhiều lắm, cũng không cảm giác nhiều lắm, mà theo xem Vũ Thủy Thủy phát sóng trực tiếp càng ngày càng nhiều, bọn họ cũng càng ngày càng muốn hiểu biết, cổ địa cầu rốt cuộc là cái dạng gì, kia nhất định là một cái rất có ý tứ thời điểm, bằng không vì cái gì cổ địa cầu người, có thể ra đời như vậy nhiều kỳ tư diệu tưởng tới đâu?</p>
+<p>Cho nên, bọn họ tưởng nói “Vũ Thủy Thủy, cái này cá quế chiên xù nhìn thơm quá, có phải hay không có thể ăn? Bất quá, nó như vậy đáng yêu, ta đều không hạ miệng được, cũng không biết là cái gì hương vị.”</p>
+<p>“Còn không thể ăn lạp, chúng ta còn muốn điều chua ngọt nước, chờ lát nữa tưới ở cá trên người.” Giang Linh lúc này đã thả lỏng lại, còn hảo không có lật xe.</p>
+<p>Ân, tuy rằng hắn làm tốt lật xe chuẩn bị tâm lý, nhưng là, Giang Linh vẫn là hy vọng có thể thuận lợi làm thành công, rốt cuộc hắn cũng là thực sĩ diện.</p>
+<p>“Kế tiếp liền đơn giản nhiều.” Giang Linh cười nói “Chúng ta đem đại bộ phận du đảo ra tới, lưu chút ít đế du, đem gừng tỏi bạo hương, tiếp theo, thêm thanh đậu Hà Lan, cà rốt đinh, nấm hương đinh cùng nhau phiên xào, lại gia nhập sốt cà chua xào ra hồng du. Cuối cùng, thêm nước trong, đường trắng, dấm cùng nước tương, lửa lớn thiêu khai sau, gia nhập thủy tinh bột thêm sốt.”</p>
+<p>Theo Giang Linh động tác, trong nồi nước sốt trở nên đặc sệt, Giang Linh nói “Chúng ta đem chua ngọt nước xối ở cá trên người, lại rải một ít hạt thông, như vậy một đạo cá quế chiên xù liền hoàn toàn hoàn thành lạp.”</p>
+<p>Lúc này, cá quế chiên xù ở xối thượng chua ngọt nước sau, nhìn trở nên càng thêm mỹ vị, trong không khí tràn ngập tạc thịt cá tiêu mùi hương, cùng với chua ngọt nước chua ngọt thanh hương, còn kèm theo gừng tỏi tân hương, nghe liền cảm thấy trình tự phong phú, một chút cũng không nị người.</p>
+<p>Bọn họ cũng không dám tưởng, này một ngụm đi xuống, đến có bao nhiêu ăn ngon!</p>
+<p>Hôm nay đồ ăn thật sự là thái thái quá phong phú đi!</p>
+<p>“Chúng ta cuối cùng còn thừa một cái canh.” Giang Linh thở phào nhẹ nhõm, làm nhiều như vậy đồ ăn, tuy rằng hắn thực thích làm này đó, nhưng là cũng không thể tránh khỏi cảm thấy có chút mệt, cũng may cuối cùng cái này canh cũng không khó “Mu mu thú nãi hải sản nùng canh, chuẩn bị tôm tươi, tiên bối, con mực, bông cải xanh, hành tây, khoai tây, mu mu thú nãi, còn có muối, tiêu xay, cùng dầu quả trám.”</p>
+<p>Tài liệu nhìn rất phong phú, nhưng làm lên xác thật không khó, Giang Linh lấy ra tung tăng nhảy nhót tôm tươi, này đó tôm tươi cùng tôm hùm đất là giống nhau vận mệnh, tinh tế người trong mắt, chúng nó cũng là sâu, chẳng qua không có tôm hùm đất khó coi.</p>
+<p>Bất quá có tôm hùm đất ở phía trước, hiện tại không ít người đều thực ham thích với mua tôm hùm đất bán thành phẩm, không chỉ có ăn ngon, còn có thể ở xã giao truyền thông triển lãm chính mình trù nghệ.</p>
+<p>Tuy rằng, tôm hùm đất bán thành phẩm thao tác lên rất đơn giản, hoàn toàn không có gì kỹ thuật hàm lượng đáng nói, nhưng này nhóm người như cũ tham thảo đặc biệt lửa nóng, còn giao lưu một ít “Tiểu kỹ xảo”, cũng là không ai.</p>
+<p>Tóm lại, đại gia đã hoàn toàn tiếp nhận rồi tôm hùm đất, cho nên ở Vũ Thủy Thủy lấy ra tôm tươi thời điểm, bọn họ nhìn bề ngoài cùng tôm hùm đất có điểm giống tôm tươi, tò mò chỉ có nó có hay không tôm hùm đất ăn ngon, cũng không hoài nghi nó có thể hay không ăn.</p>
+<p>“Chúng ta trước đem tôm tươi xóa tôm tuyến cùng tôm xác.” Giang Linh chỉ là làm mẫu một chút như thế nào làm, dư lại liền giao cho người bên cạnh, hắn lại lấy ra con mực, thiết hoa đao, đem tiên bối rửa sạch sẽ.</p>
+<p>Bông cải xanh trác thủy, hành tây cắt thành mạt, này đó đều rất đơn giản “Chúng ta đem khoai tây da xóa, đem nó phóng tới trong nồi chưng thục.”</p>
+<p>Khoai tây chưng thục sau, Giang Linh lấy ra tới, đem nó áp thành tinh tế khoai tây nghiền “Tiếp theo chúng ta hướng trong nồi gia nhập mu mu thú nãi, tiểu hỏa đun nóng, mãi cho đến nó hơi hơi sôi trào, tiếp theo ngã vào vừa mới khoai tây nghiền, quấy đều, nấu tam đến năm phút.”</p>
+<p>Theo thời gian trôi qua, nước canh đã trở nên đặc sệt, Giang Linh nói “Chúng ta đem khoai tây nghiền mu mu thú nãi phóng tới một bên dự phòng.”</p>
+<p>“Hướng trong nồi gia nhập dầu quả trám, đem vừa mới xử lý tốt hành tây mạt, tôm tươi, con mực cùng tiên bối đảo đi vào nhanh chóng phiên xào, biến sắc lúc sau thịnh ra tới, đem bông cải xanh cũng xào một chút, xào hảo lúc sau, đem chúng nó đều bỏ vào vừa mới nấu tốt khoai tây nghiền mu mu thú nãi, lại gia nhập muối, tiêu xay, quấy đều là được.” Giang Linh nói “Một phần đơn giản mu mu thú nãi hải sản nùng canh liền làm tốt.”</p>
+<p>Đặc sệt nước canh hỗn hợp tôm tươi con mực cùng tiên bối bông cải xanh, nghe mang theo nùng hương.</p>
+<p>Theo Giang Linh làm tốt mu mu thú hải sản nùng canh ra nồi, Theodore đã thiêu một nồi nước ấm, Giang Linh đi qua đi nói “Rượu nhưỡng bánh trôi còn thừa cuối cùng một bước, chúng ta đem phía trước làm tốt rượu nếp than đào một ít đảo đi vào, tiếp theo đem bánh trôi chậm rãi hạ gần trong nồi.”</p>
+<p>Màu trắng bánh trôi từng cái trượt vào trong nồi, Giang Linh nhắc nhở “Lúc này ngàn vạn không cần quấy, để tránh bánh trôi nấu phá, chúng ta làm nó trước nấu một phút, sau đó dùng cái muỗng từ phía dưới nhẹ nhàng sạn vài cái, phòng ngừa bánh trôi dính nồi, tiếp theo lại nấu năm phút, ra nồi có thể phóng một ít đường, đường đỏ cùng đường trắng đều có thể, ta phóng một ít đường đỏ.”</p>
+<p>Thực mau, một cái cùng tròn tròn mập mạp bánh trôi trắng liền ở trong nồi đọc lên, Giang Linh bỏ thêm một ít đường đỏ, quấy đều, ngọt tư tư rượu nhưỡng bánh trôi liền hoàn thành.</p>
+<p>Lúc này, mặt khác đồ ăn đã đoan tới rồi trên bàn, theo cuối cùng rượu nhưỡng bánh trôi bãi ở mỗi người trước mặt, cái bàn đã bị bãi tràn đầy được, liếc mắt một cái nhìn lại, đặc biệt phong phú, người xem hâm mộ khóc, bọn họ không dám tưởng, chính mình nếu là ngồi ở cái này cái bàn trước, đến có bao nhiêu hạnh phúc!</p>
+<p>Đáng tiếc, đây là không có khả năng sự, bọn họ lại lần nữa hướng này đó mosaic đầu đi ghen ghét ánh mắt, mưu toan dùng ánh mắt giết chết mosaic, nhưng cũng chưa quên nhắc nhở Vũ Thủy Thủy “Vũ Thủy Thủy! Nhớ rõ phóng thí ăn, chúng ta cũng muốn qua mùa đông đến.”</p>
+<p>“Đúng đúng, chúng ta cũng muốn qua mùa đông đến!”</p>
+<p>Giang Linh tự nhiên sẽ không quên phóng thí ăn, hắn trước thả thí ăn, mới bưng lên rượu nhưỡng bánh trôi uống một ngụm, ấm áp chè làm cho cả thân thể đều ấm đi lên.</p>
+<p>Hắn ngây ngốc uống mọi người đều có rượu nhưỡng bánh trôi, còn lại người lại đều nhìn chằm chằm cái bàn nhìn, tuy rằng rượu nhưỡng bánh trôi cũng thực hảo uống bộ dáng, nhưng là, dù sao nó hảo hảo đặt ở chính mình trong chén, cũng sẽ không chạy, nhưng mặt khác trên bàn đồ ăn liền không giống nhau, kẹp chậm là thật sự sẽ không có!</p>
+<p>Kết quả là, bọn họ không hẹn mà cùng đem chiếc đũa duỗi hướng chính mình muốn ăn đồ ăn, từng cái đôi mắt đều mạo lục quang, như lang tựa hổ a, rốt cuộc lần này nấu cơm làm không ít thời gian, bọn họ nghe các loại mùi hương, đã sớm thèm điên rồi!</p>
+<p>Bất quá Giang Linh đảo cũng không đến mức ăn không đến, bên cạnh Elysius đã tri kỷ cho hắn gắp rất nhiều đồ ăn, Giang Linh tuy rằng không vui phản ứng hắn, nhưng hắn cảm thấy, chính mình vất vả ban ngày, làm người kẹp cái đồ ăn như thế nào? Ăn!</p>
+<p>Đồng dạng như lang tựa hổ còn có đoạt thí ăn người xem, hôm nay thái phẩm phong phú, thí ăn số lượng liền nhiều, tuy rằng cũng bảo đảm không được mỗi người đều có thể ăn đến, nhưng ít nhất có thể ăn cơm người nhiều một ít.</p>
+<p>Không có cướp được người khóc chít chít, mà cướp được người, cao giọng tuyên bố “Ta quyết định, về sau đông chí chính là vĩ đại nhất ngày hội!”</p>
+<p>Lời này vừa nói ra, nháy mắt đưa tới vô số người hưởng ứng “Không sai, về sau ngày hội ta chỉ qua mùa đông đến!”</p>
+<p>Những lời này có chút khoa trương, nếu là nghỉ ngày hội, bọn họ vẫn là thực nguyện ý quá một quá, bất quá, câu này khoa trương nói, cũng mới có thể biểu đạt bọn họ hiện tại tâm tình.</p>
+<p>Nếu là có một cái ngày hội, có thể ăn đến siêu cấp nhiều mỹ thực, ai không muốn quá a!</p>
+<p>Có chút không cướp được thí ăn, đã thèm điên rồi, trở về cùng nhà ngươi lão phụ thân lão mẫu thân nói “Ba mẹ, ta muốn qua mùa đông đến! Đáng giận, đông chí tốt như vậy ngày hội, ta thế nhưng trước nay không nghe nói qua! Rốt cuộc là cái nào tên vô lại đoạt đi rồi đông chí!”</p>
+<p>Hắn cha mẹ tỏ vẻ “Hài tử, chúng ta không biết đông chí là cái gì, nhưng là chúng ta cảm thấy ngươi đầu óc yêu cầu trị một trị.”</p>
+<p>Mặc kệ thế nào, trải qua Giang Linh trận này phát sóng trực tiếp, nhưng thật ra có không ít người nghe được “Đông chí” cái này ngày hội, thậm chí một ít làm cổ địa cầu nghiên cứu tương quan chuyên gia, còn ở Tinh Bác phổ cập khoa học cổ địa cầu “Đông chí”.</p>
+<p>Bất quá võng hữu xem xong này đó phổ cập khoa học, chỉ nghĩ nói Huyên thuyên nói gì đâu? Nói một đống nghe không hiểu nói.</p>
+<p>Bọn họ chỉ biết, đông chí có thể ăn một đống lớn mỹ thực! Mãnh liệt kiến nghị, đem đông chí cũng liệt vào Liên Bang ngày hội! Tốt nhất ngày hội thời điểm, có thể cho bọn họ chuẩn bị một bàn lớn mỹ thực, khụ khụ, đem cái này đương chuyện này làm a.</p>
+<p>Võng hữu tự nhiên biết, bọn họ có điểm mơ mộng hão huyền, nhưng là, cũng không gây trở ngại bọn họ nằm mơ làm vui vẻ vô cùng.</p>
+<p>Thẳng đến, bọn họ ở Tinh Bác xoát đến Vũ Thủy Thủy đã phát một cái thông tri như sau Gần nhất đại gia hiểu biết tới rồi đông chí cái này ngày hội, rất nhiều người cũng thực thích cái này cổ địa cầu ngày hội. Bất quá nói lên ngày hội, mỗi năm năm mạt cuối cùng một ngày cùng đầu năm mấy ngày, mới là cổ địa cầu người coi trọng nhất ngày hội —— Tết Âm Lịch.</p>
+<p>Tết Âm Lịch hôm nay, cổ địa cầu người muốn dán câu đối, phóng pháo hoa, xuyên bộ đồ mới, phương xa người cũng sẽ về đến nhà một nhà đoàn viên, ngày này, bọn họ sẽ đem đồ tốt nhất lấy ra tới, chuẩn bị một cơm phong phú cơm tất niên.</p>
+<p>Kế tiếp, khoảng cách Tết Âm Lịch còn có hơn một tháng thời gian, ta sẽ khởi xướng rút thăm trúng thưởng, mời 1500 vị bằng hữu, đại gia vượt qua ngân hà, cùng nhau tham gia một hồi “Cơm tất niên”.</p>
+<p>Rút thăm trúng thưởng nhân số vì 500 người, mỗi người có thể mang hai vị thân hữu, qua lại phi thuyền phiếu cùng yến hội phí dụng toàn bao, hy vọng đại gia hãnh diện, cũng hy vọng các ngươi chơi vui vẻ.</p>
+<p>Võng hữu nhìn đến mở đầu Vũ Thủy Thủy nói bọn họ thích đông chí kia khối, còn có chút chột dạ, khụ khụ, bọn họ hoàn toàn là bởi vì đông chí có thể ăn ngon tới.</p>
+<p>Có loại không thể hiểu được bị khích lệ, nhưng chính mình biết chính mình là cái dạng gì chột dạ cảm.</p>
+<p>Bọn họ một bên chột dạ, một bên tiếp tục đi xuống xem, vốn dĩ cho rằng Vũ Thủy Thủy là mượn đông chí nhiệt độ, phổ cập khoa học một chút cổ địa cầu “Tết Âm Lịch”, kết quả nhìn đến mặt sau, bọn họ !!!</p>
+<p>Cái gì! Vũ Thủy Thủy muốn rút thăm trúng thưởng! Hơn nữa nhìn đến Vũ Thủy Thủy nói cái gì không có? Vũ Thủy Thủy nói, cổ địa cầu người ở Tết Âm Lịch, sẽ đem đồ tốt nhất lấy ra tới, chuẩn bị một cơm “Cơm tất niên”.</p>
+<p>Mà Vũ Thủy Thủy, chính là mời bọn họ đi ăn “Cơm tất niên”!</p>
+<p>Này ai có thể cự tuyệt! Bọn họ nằm mơ cũng không dám có thể lớn như vậy a.</p>
+<p>Đại gia một bên kích động, một bên lập tức tham dự rút thăm trúng thưởng, muốn tham dự rút thăm trúng thưởng rất đơn giản, chỉ cần đưa ra một chút chính mình thân phận id là được, nếu vận khí tốt trừu trung nói, đến lúc đó vào bàn liền phải dùng đến cái này thân phận id.</p>
+<p>Thành công tham dự rút thăm trúng thưởng sau, mọi người nhìn Vũ Thủy Thủy nói, nếu trừu trung, có thể mang theo hai vị thân hữu nhắc nhở, sờ sờ cằm, lập tức đem chính mình nhận thức thân hữu đều kêu lên tới, tham dự rút thăm trúng thưởng!</p>
+<p>Hơn nữa lặp đi lặp lại nhiều lần cường điệu “Loại chuyện tốt này, chính là ta nói cho ngươi, ngươi nếu là trừu trúng, cần thiết mang lên ta, có nghe hay không?”</p>
+<p>Tham dự rút thăm trúng thưởng thời gian tổng cộng là hai ngày thời gian, hai ngày sau khi chấm dứt, Vũ Thủy Thủy vì biểu hiện công bằng, sẽ ở phòng live stream hiện trường rút thăm trúng thưởng.</p>
+<p>Trong lúc này, tham dự rút thăm trúng thưởng người, lại phá lệ hoảng hốt, vạn nhất chính mình trừu không trúng làm sao bây giờ a! Chỉ có thể bái nhất bái quá nãi, hy vọng nàng phù hộ chính mình.</p>
+<p>Hai ngày thời gian thực mau qua đi, Giang Linh dựa theo ước định, mở ra phát sóng trực tiếp.</p>
+<p>Một khai phát sóng trực tiếp, phòng live stream liền dũng mãnh vào một số lớn người, Giang Linh chớp chớp mắt, tuy rằng hắn phòng live stream từ trước đến nay náo nhiệt, mỗi lần một khai phát sóng trực tiếp, cũng lập tức sẽ có người tiến vào, nhưng này vẫn là lần đầu tiên, nhiều người như vậy.</p>
+<p>Nếu là trong hiện thực, những người này đứng ở hắn chung quanh, phỏng chừng hắn đến phạm hội chứng sợ mật độ cao.</p>
+<p>Mà người xem vừa tiến đến, liền bắt đầu lẩm nhẩm lầm nhầm “Vũ Thủy Thủy, hy vọng ngươi trừu trung ta! Phù hộ phù hộ, ta về sau nguyện ý một lòng hướng thiện, mỗi ngày đỡ lão nãi nãi quá đường cái!”</p>
+<p>“Cầu xin, ta nguyện ý dùng tương lai 20 năm cơm ngon rượu say, đổi lần này rút thăm trúng thưởng trừu trung!”</p>
+<p>“Mặt trên, ngươi như thế nào liền ăn mang lấy?”</p>
+<p>Nhìn đến có người nói làm Vũ Thủy Thủy hắc rương chính mình, Giang Linh lập tức tỏ vẻ “Lần này rút thăm trúng thưởng toàn dựa vận khí, ta chính mình cũng không biết kết quả, nếu không trừu trung, đại gia cũng không cần khổ sở lạp, về sau chúng ta sẽ càng ngày càng tốt.”</p>
+<p>“Kia ta bắt đầu rút thăm trúng thưởng.” Giang Linh nói xong, tham dự rút thăm trúng thưởng người mỗi cái đều có một cái hào, hiện tại này đó hào đặt ở một hệ thống trung, ai hào bị trừu trung, liền đại biểu ai trúng thưởng.</p>
+<p>Như vậy cũng là vì bảo hộ riêng tư, để tránh thân phận tin tức bại lộ, Giang Linh ở phương diện này vẫn là thực chú ý.</p>
+<p>Theo hắn ấn xuống rút thăm trúng thưởng cái nút, trên màn hình lớn tiêu bất đồng con số viên cầu, ở mọi người nín thở ngưng thần gian, bắt đầu nhảy lên lên, mà những cái đó bị lựa chọn viên cầu, tắc sẽ từ bao vây lấy viên cầu đại cầu xuất khẩu ra tới.</p>
+<p>Theo từng cái viên cầu bị lựa chọn, có người mặt lộ vẻ mừng như điên, cũng có người thất vọng lúc sau gắt gao nhìn chằm chằm màn hình, không quan hệ, còn có cơ hội!</p>
+<p>Cứ như vậy, 500 cái viên cầu đều bị tuyển ra tới, trận này rút thăm trúng thưởng, cũng rơi xuống màn che.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong102.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong104.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "toan-tinh-t-cung-ta-hoc-lam-my-thuc-lam-nuoi-duong";
+const NOVEL_TITLE = "Toàn tinh tế cùng ta học làm mỹ thực làm nuôi dưỡng";
+const CHAPTER_TITLE = "103. Cá quế chiên xù";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

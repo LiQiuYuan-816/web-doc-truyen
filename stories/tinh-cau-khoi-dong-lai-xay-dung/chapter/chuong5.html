@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 5</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tinh cầu khởi động lại [ xây dựng ] / Tinh tế người chơi [ thực tế ảo ]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 5</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong4.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong6.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Năm nay bệnh bạch cầu người bệnh số lượng là năm kia 1.7 lần, thực quản ung thư cùng đường hô hấp ung thư số lượng cũng ở gia tăng, lần đó hạch ô nhiễm tiết lộ di chứng quá nghiêm trọng……” Buổi tối 9 giờ, Trình Hữu Thanh cùng Thường Thanh Viễn đám người đi ra chính phủ văn phòng.</p>
+<p>Mấy năm nay ô nhiễm môi trường nghiêm trọng, liên quan một ít bệnh nan y người bệnh số lượng cũng đang không ngừng gia tăng. Trình Hữu Thanh là sinh vật học viện sĩ, có thể rõ ràng cảm thấy mấy năm gần đây công tác càng ngày càng nghiêm túc.</p>
+<p>“Các ngươi nơi này chậm rãi lộng là được, nông nghiệp này khối là thật không hảo làm!” Thường Thanh Viễn là nông nghiệp bộ người phụ trách, hiện tại cả nước chỉ có mười hai loại biến dị hạt giống, này không phải nói trước kia hạt giống không thể dùng, mà là thổ địa không duy trì. Như là đậu phộng cao lương này đó thường thấy cây nông nghiệp, chỉ có riêng thổ nhưỡng mới có thể đào tạo, bọn họ cũng đang rầu rĩ như thế nào đào tạo ra dinh dưỡng lại hiệu suất cao cây nông nghiệp.</p>
+<p>“Ai.” Trình Hữu Thanh thở dài. Hai người trò chuyện trong chốc lát, thường thanh sơn hỏi “Hiện tại về nhà vẫn là đi trong viện?” Bọn họ đều là ‘ thanh ’ tự bối, lại là đại học bạn cùng trường, hai người mấy năm nay quan hệ vẫn luôn không tồi.</p>
+<p>“Đi trong viện đi.” Trình Hữu Thanh còn có một ít công tác không xử lý xong, nàng tính toán trở về đẩy nhanh tốc độ.</p>
+<p>10 điểm hai mươi, Trình Hữu Thanh trở lại Long Khoa viện, hiện tại trong viện mọi âm thanh đều tĩnh, chỉ có một ít cửa sổ mở ra màu trắng ánh đèn.</p>
+<p>Trình Hữu Thanh trở lại văn phòng, ở đi ngang qua gian ngoài khi sửng sốt “Sao ngươi lại tới đây?”</p>
+<p>Lúc này gian ngoài trên sô pha ngồi một thanh niên, khả năng chờ một lát, thanh niên có chút ngủ gật.</p>
+<p>“Trình lão sư!” Từ Thu Tinh nghe được thanh âm sau lập tức bừng tỉnh. Trợ lý nói cho hắn Trình lão sư ở chính phủ mở họp, nhân trong lòng có việc, hắn liền trực tiếp lại đây đám người, không muốn ngủ trứ……</p>
+<p>“Nghĩ như thế nào khởi xem ta?” Trình Hữu Thanh một bên thoát áo khoác áo khoác một bên nói chuyện phiếm, Từ Thu Tinh là nàng coi trọng nhất học sinh, có thể tùy ý xuất nhập văn phòng gian ngoài.</p>
+<p>Từ Thu Tinh không có hàn huyên “Ta có một kiện chuyện trọng yếu phi thường yêu cầu cùng ngài mặt nói!”</p>
+<p>“Chuyện gì?”</p>
+<p>“Ta gặp được một cái kỳ quái người……” Từ Thu Tinh lấy ra quán cà phê bút ghi âm.</p>
+<p>“Ngươi là nói, người này ngày hôm qua tiên đoán Maerha núi lửa?” Nửa giờ sau, Trình Hữu Thanh nghiêm túc nhìn bút ghi âm. Nàng sáng nay nghe nói Maerha núi lửa sự tình, núi lửa thời gian vì 7 , đệ nhất chi bút ghi âm thời gian là ngày hôm qua buổi chiều 6 giờ.</p>
+<p>“Đúng vậy, hắn đang nói chuyện này thời điểm phi thường có tự tin.”</p>
+<p>“Hắn còn tiên đoán tang thi virus?”</p>
+<p>“Đối!”</p>
+<p>Sinh hoạt không phải phim khoa học viễn tưởng, Trình Hữu Thanh cảm giác tang thi virus, người cắn người sự tình quá mức không thể tưởng tượng. Nhưng trước tiên biết trước núi lửa, lại có thể chính xác đến mỗi phút mỗi giây, đây là rất khó làm được.</p>
+<p>“Hắn hiện tại ở đâu?” Trình Hữu Thanh nghĩ rồi lại nghĩ hỏi.</p>
+<p>“Hẳn là còn ở Kinh Vân thị.”</p>
+<p>“Ta muốn gặp hắn.”</p>
+<p>Từ Thu Tinh lập tức gọi Thẩm Khoát điện thoại, đây là hai người trao đổi dãy số sau lần đầu tiên điện thoại trò chuyện. Hắn hỏi hỏi đối phương địa chỉ cùng ý nguyện, trực tiếp cùng trong viện tài xế cùng nhau qua đi tiếp người.</p>
+<p>Một giờ sau, Thẩm Khoát ở Từ Thu Tinh cùng nhân viên an ninh cùng đi xuống dưới tới rồi Long Khoa viện văn phòng, đây là một gian chuyên môn tiếp khách văn phòng, Trình Hữu Thanh đã đổi hảo quần áo ở bên trong chờ.</p>
+<p>“Trình viện trưởng!” Thẩm Khoát nhìn thấy đối phương sau dẫn đầu duỗi tay.</p>
+<p>Hắn phía trước chỉ ở quảng bá nghe qua ‘ Trình Hữu Thanh ’ tên này, đây là hắn lần đầu tiên nhìn thấy bản nhân. Trình Hữu Thanh 60 tả hữu, Thiên Đình no đủ gò má mượt mà, tuy có một đầu màu trắng cuốn tóc ngắn, nhưng tinh thần nhấp nháy, có vẻ phi thường có sức sống.</p>
+<p>“Thẩm tiên sinh.” Trình Hữu Thanh bắt tay.</p>
+<p>Thẩm Khoát cùng Từ Thu Tinh hình dung giống nhau, phi thường tuổi trẻ, tựa như một người bình thường sinh viên. Hai người bắt tay sau, Trình Hữu Thanh trực tiếp hỏi “Ngươi thật sự có biết trước năng lực?”</p>
+<p>“Không tính biết trước, chỉ là biết một ít sắp phát sinh sự tình.”</p>
+<p>“Tang thi virus sự tình là thật sự?”</p>
+<p>“Đúng vậy!”</p>
+<p>Trình Hữu Thanh đã từ bút ghi âm thượng đã biết nói chuyện với nhau chi tiết, nàng lần này gặp mặt chủ yếu là phán đoán một chút đối phương mục đích. Thẩm Khoát thực tuổi trẻ, cùng nàng giao lưu khi phi thường trầm ổn, nói đến tang thi virus khi cũng phi thường khẳng định……</p>
+<p>“Phi thường cảm tạ ngươi có thể nói cho chúng ta biết virus sự tình, nhưng ngươi phải hiểu được, này nếu là một hồi trò đùa dai, hậu quả phi thường nghiêm trọng.” Nói ngắn gọn, cái này hậu quả không phải Thẩm Khoát có thể thừa nhận.</p>
+<p>“Ta biết.” Thẩm Khoát gật đầu.</p>
+<p>“Ta sẽ đăng báo chính phủ, nhưng trước đó, sẽ dùng một ít đặc thù lưu trình xem xét ngươi cá nhân tư liệu.”</p>
+<p>“Có thể!”</p>
+<p>Rạng sáng 1 giờ, Thẩm Khoát rời đi Long Khoa văn phòng.</p>
+<p>Nhân sự tình quan trọng, hắn trong khoảng thời gian này đều sẽ ở tại Long Khoa trong viện, muốn đi địa phương khác yêu cầu đặc thù xin.</p>
+<p>“Ta mấy ngày nay cũng sẽ ở nơi này, có việc trực tiếp liên hệ.” Từ Thu Tinh cùng Thẩm Khoát cùng nhau ra tới, có chút mỏi mệt nói, hắn hôm nay cả ngày tinh lực đều ở tiên đoán mặt trên, hiện tại thân thể có chút đỉnh không được.</p>
+<p>“Giáo sư Từ, ngươi có thể đi trước nghỉ ngơi, ta cùng Trần trợ lý bọn họ cùng đi ký túc xá là được.” Trần trợ lý là Trình Hữu Thanh công tác trợ lý, phụ trách Thẩm Khoát dừng chân an bài.</p>
+<p>“Không có việc gì.” Từ Thu Tinh đi theo hỗ trợ an bài hảo ký túc xá, lúc này mới mỏi mệt rời đi.</p>
+<p>Từ Thu Tinh lời nói không nhiều lắm, nhưng ở một ít xử thế chi tiết thượng phi thường thoả đáng. Đối phương rời đi sau, Thẩm Khoát nhìn về phía ngoài cửa sổ, bên ngoài ánh trăng sáng ngời, hôm nay đã là ‘ trọng sinh ’ ngày thứ năm……</p>
+<p>Sáng sớm hôm sau, Trình Hữu Thanh thông qua xin điều ra Thẩm Khoát tư liệu ——</p>
+<p>Thẩm Khoát, 23 tuổi, tốt nghiệp ở Vinh Dương đại học sư phạm, hiện cư Vinh Dương tỉnh Thương Vân thị tiểu khu Tinh Tinh……</p>
+<p>Thẩm Khoát cá nhân lý lịch đơn giản, không có gì chỗ đặc biệt.</p>
+<p>“Làm sao vậy?” Phụ trách tiếp đãi hộ tịch khoa chủ nhiệm tò mò hỏi.</p>
+<p>“Không có việc gì.” Trình Hữu Thanh lấy lại bình tĩnh. Nàng tối hôm qua thông qua kỹ thuật thủ đoạn, đã xác định bút ghi âm là núi lửa bùng nổ trước thu, không có bất luận cái gì bóp méo dấu vết.</p>
+<p>Núi lửa, tang thi virus, nhị đại virus……</p>
+<p>Trình Hữu Thanh cầm Thẩm Khoát tư liệu cùng bút ghi âm, trực tiếp đi trước Long Cổ viện.</p>
+<p>Long Cổ viện là Long Cổ quốc chính trị trung tâm, nàng cho dù thân là Long Khoa viện viện trưởng, cũng không thể trực tiếp liên hệ thượng tối cao tầng. Trừ phi vận dụng khẩn cấp thông đạo. Loại này khẩn cấp thông đạo cần thiết cùng quốc gia đại sự có quan hệ, nàng chưa bao giờ sử dụng quá. Hiện tại…… Nàng muốn hành sử cái này quyền lợi.</p>
+<p>Long Khoa viện là Long Cổ tối cao học thuật cơ cấu, Trình Hữu Thanh tuy không có đặc biệt nhắc nhở, Thẩm Khoát còn là phi thường thức thời ngốc tại trong ký túc xá không có loạn dạo. Ăn cơm, ngủ, sửa sang lại tin tức…… Ở kế tiếp một ngày, Thẩm Khoát quá phi thường đơn điệu.</p>
+<p>Một ngày sau, ký túc xá cửa phòng vang lên.</p>
+<p>“Ngài hảo, ta là 335 quân khu bí thư viên Triệu Đông, Đàm quân trưởng thỉnh ngài qua đi một chuyến.” Một cái dáng người đĩnh bạt thanh niên binh lính cúi chào, ở hắn phía sau còn đi theo hai cái hộ vệ binh.</p>
+<p>“Hảo.”</p>
+<p>Xem tình huống, Trình Hữu Thanh hẳn là cùng Long Cổ cao tầng liên hệ thượng. Đến nỗi những người này thân phận…… Đối phương có thể không chịu ngăn trở tiến vào Long Khoa viện, thuyết minh thân phận chính quy.</p>
+<p>Thẩm Khoát tưởng thông quan kiện sau không có rối rắm, trực tiếp đi theo đối phương rời đi.</p>
+<p>Điệu thấp quân dụng chiếc xe không ngừng đi trước, hai giờ sau, mọi người tới đến một cái đề phòng nghiêm ngặt quân khu, tiếp theo trải qua tầng tầng kiểm tra, cuối cùng tới một gian trong phòng hội nghị.</p>
+<p>Lúc này Trình Hữu Thanh cùng Từ Thu Tinh đám người đều ở trong phòng hội nghị, trừ này còn có một ít khí tràng cường đại, thân xuyên quân trang quân nhân nhóm. Cầm đầu quân nhân 50 tả hữu, mặt chữ điền, mặt mày như đuốc phi thường uy nghiêm.</p>
+<p>“Ngài hảo, ta là Đàm Minh Chương, tang thi virus người tổng phụ trách.” Nam tử tự giới thiệu nói.</p>
+<p>“Ngài hảo, ta là Thẩm Khoát.”</p>
+<p>“Ân.” Đàm Minh Chương ý bảo Thẩm Khoát ngồi vào phòng họp không vị thượng, nói tiếp “Chúng ta đã xem qua Trình viện trưởng nộp lên văn kiện, thực cảm tạ ngươi có thể tin tưởng chính phủ, chỉ là tang thi virus liên lụy quá lớn, nếu là trước tiên bố trí khẳng định sẽ ảnh hưởng cả nước các ngành các nghề, cho nên, xin hỏi ngươi còn có hay không mặt khác chứng cứ chứng minh tang thi virus?”</p>
+<p>Đàm Minh Chương ý tứ rất đơn giản, chỉ có một cái núi lửa bùng nổ không đủ để làm cho bọn họ hạ đạt liên quan đến cả nước dân sinh mệnh lệnh.</p>
+<p>“Có.” Thẩm Khoát đối cái này đi hướng sớm có chuẩn bị.</p>
+<p>Hắn sửa sang lại một chút ý nghĩ “Mười tháng hai mươi hào, một cái ID Bảo Châu nữ sinh sẽ ở Chu Vân Phong nhảy vực tự sát. Mười tháng 22, Thái Bình Dương trung bộ sẽ phát sinh 8.2 cấp đáy biển động đất. Mười tháng 23, Cát Xương huyện đem phát sinh mưa to, ba tòa thôn trang bị yêm, 23 người gặp nạn…… Đây là sắp tới sẽ phát sinh sự tình, đương nhiên, tiền đề là không có đã chịu can thiệp.”</p>
+<p>Thẩm Khoát chỉ nói này tam sự kiện.</p>
+<p>Hội nghị mọi người liếc nhau.</p>
+<p>Hôm nay mười tháng mười chín, nếu là đối phương nói chính là thật sự, ngày mai sẽ phát sinh cái thứ nhất tiên đoán.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong4.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong6.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tinh-cau-khoi-dong-lai-xay-dung";
+const NOVEL_TITLE = "Tinh cầu khởi động lại [ xây dựng ] / Tinh tế người chơi [ thực tế ảo ]";
+const CHAPTER_TITLE = "Chương 5";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

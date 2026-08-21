@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 68</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tinh cầu khởi động lại [ xây dựng ] / Tinh tế người chơi [ thực tế ảo ]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 68</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong67.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong69.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Từ ca, hôm nay lại là đệ nhất nha.” Ngày 22 tháng 8 sớm 5 điểm, chu hằng vừa đến cổng soát vé, liền gặp mặt từ hồng vượng đã ôm bố bao mũ rơm ở cổng soát vé trước chờ. Hắn phía sau là một cái thật dài đội ngũ, mỗi người bên chân đều là đủ loại kiểu dáng đòn gánh cái sọt, đây là cùng an huyện ga tàu hỏa đặc sắc Vượt tỉnh bán đồ ăn.</p>
+<p>Cùng an huyện mà trưởng phòng hồ tỉnh phía Đông, là địa phương nổi danh nghèo khó huyện, nơi này địa hình gập ghềnh, mỗi ngày chỉ có một chuyến đoàn tàu đi ngang qua. Đoàn tàu vì K1032, thủy phát trưởng ga hồ tỉnh năm phong thị, trạm cuối đại khê tỉnh quan lĩnh thị, trung gian kéo dài qua mười hai tòa thành thị.</p>
+<p>Dựa theo quốc gia yêu cầu, lần này đoàn tàu bổn hẳn là đổi đường dây hoặc là đình vận, nhưng cùng an huyện lưu thủ lão nhân quá nhiều, mọi người đều là dựa vào lần này xe lửa ra cửa xem bệnh mua đồ vật, đường sắt cục đầy đủ suy xét sau bảo lưu lại này đường bộ.</p>
+<p>Cùng an huyện không có gì kinh tế nơi phát ra, duy nhất có thể xưng là thu vào chính là trồng trọt bán đồ ăn, bởi vậy nơi này rất nhiều thôn dân đều sẽ loại xong đồ ăn sau đi phụ cận quan lĩnh thị bán ra —— cùng an huyện hành chính thượng thuộc về trường hồ tỉnh, nhưng ly đại khê tỉnh quan lĩnh thị gần nhất, nơi này cũng dần dần hình thành có đặc sắc vượt tỉnh bán đồ ăn đội ngũ.</p>
+<p>“Ha ha, ta ngày nào đó không phải đệ nhất?” Từ hồng vượng năm nay 65 tuổi, hắn đã vượt tỉnh bán đồ ăn 20 năm, liền cùng ăn tết đi trong miếu đoạt đầu hương giống nhau, hắn mỗi ngày lớn nhất lạc thú chính là sớm đến nhà ga sau cái thứ nhất xếp hàng.</p>
+<p>“Hiện tại trấn chính phủ đã cùng nông nghiệp cục ký trợ nông hợp đồng, ngài ngày mai có phải hay không không tới?” Hiện tại ly kiểm phiếu còn có ba phút, chu hằng cùng đối phương nói chuyện phiếm nói.</p>
+<p>“Không tới, về sau đem đồ ăn bán được nông sản phẩm trạm thu mua là được.”</p>
+<p>“Như vậy hảo a, về sau tỉnh mỗi ngày lăn lộn.”</p>
+<p>“Hảo là hảo, chính là có điểm không thói quen……”</p>
+<p>Một tháng trước, quốc gia tuyên bố nâng đỡ nông nghiệp thông cáo, đại gia nguyên tưởng rằng cùng chính mình không có quan hệ, ai ngờ thông cáo ngày hôm sau, trấn chính phủ từng nhà phát thông tri, trong trấn mặt quyết định thành lập nông sản phẩm trạm thu mua, đại gia về sau có đồ ăn có thể trực tiếp bán cho trạm thu mua. Trừ này, trấn chính phủ còn tính toán ở trong huyện kiến tạo quả quýt căn cứ, đem cùng an huyện chế tạo thành một cái quả quýt chi hương.</p>
+<p>“Này đó tiền như thế nào tính?”</p>
+<p>Cư dân nhóm không hiểu quốc gia chính sách, bọn họ chỉ biết trước kia cũng có nông nghiệp thương tới trong huyện thu đồ ăn. Này đó nông nghiệp thương ép giá áp phi thường tàn nhẫn, bên ngoài một khối 5-1 cân dưa leo nhiều nhất cấp 5 mao, hơn nữa một tháng sau mới có thể kết khoản, đại gia ăn hai lần mệt sau, hiện tại đối nông sản phẩm trạm thu mua này đó phi thường cảnh giác.</p>
+<p>“Nông nghiệp trạm sẽ dựa theo thị trường giới thu mua, đại gia đem đồ ăn kéo đến trạm thu mua sau là có thể tính tiền, bất quá muốn phù hợp tiêu chuẩn rau dưa, không thể lộng một ít lão đồ ăn cục đá khối lừa gạt.”</p>
+<p>“Chúng ta bán đồ ăn khi nào lừa gạt quá a.” Các thôn dân bất mãn sửa đúng, hỏi tiếp “Là tiền mặt tính tiền?”</p>
+<p>“Tiền mặt cùng trên mạng chuyển khoản đều được.”</p>
+<p>“Như vậy hảo!”</p>
+<p>Đại gia không văn hóa, thích nhất loại này tiền trao cháo múc. Hơn nữa trung gian cho dù có cái gì miêu nị, cùng lắm thì một lần nữa vượt tỉnh bán đồ ăn. Cứ như vậy, các thôn dân cùng chính phủ ký nông sản phẩm hợp tác hợp đồng, dựa theo hợp đồng, nông nghiệp trạm ngày mai khai trương.</p>
+<p>Mọi người nói chuyện phiếm trong chốc lát, lúc này K1032 tiến trạm tin tức vang lên.</p>
+<p>“Đại gia chuẩn bị hảo thân phận chứng bắt đầu kiểm phiếu, không cần chen chúc không cần dẫm đạp, mỗi người đều có tòa nhi!” Chu hằng thuần thục mở ra kiểm phiếu áp —— cùng an huyện tuy là nghèo khó huyện, nhưng nơi này cùng bên ngoài giống nhau đều là thân phận chứng kiểm phiếu, đại gia đem thân phận chứng phóng tới kiểm phiếu cơ trước, người mặt phân biệt sau liền có thể đi vào.</p>
+<p>Từ hồng vượng kiểm xong phiếu sau cái thứ nhất vọt đi vào, này liền giống một cái tín hiệu, những người khác tất cả đều ma quyền soàn soạt đi phía trước hướng.</p>
+<p>“Không cần tễ, đều có tòa!” Chu hằng cầm loa ở bên cạnh duy trì trật tự.</p>
+<p>Cùng an trạm mỗi ngày đều có hơn 100 người vượt tỉnh bán đồ ăn, đại gia tới rồi quan lĩnh trạm sau sẽ ngồi xe buýt đi trước các chợ lớn tràng, khả năng sớm chút năm xe lửa tòa yêu cầu đoạt, hiện tại cho dù có tòa, đại gia cũng thói quen cầm hành lý đi phía trước hướng.</p>
+<p>“Ai……” Chu hằng thấy thôn dân kiểm xong phiếu sau thở dài. Chờ nông nghiệp trạm chính thức khai trương sau, ga tàu hỏa về sau liền không như vậy náo nhiệt, bất quá nghĩ lại tưởng tượng, đại gia vượt tỉnh bán đồ ăn là vì sinh kế, nếu là nông nghiệp trạm hình thức được không, này hoàn toàn là một cái huệ nông trợ nông hảo phúc lợi.</p>
+<p>Ba phút sau, từ hồng vượng theo di động tin nhắn tìm được rồi chỗ ngồi —— đây là một cái dựa môn dựa cửa sổ vị trí, đã có thể ngắm phong cảnh, lại có thể tới trạm sau cái thứ nhất đi ra ngoài, hắn đối vị trí này thập phần vừa lòng, đem đòn gánh cái sọt phóng hảo sau, liền thập phần thuần thục tễ đến trên chỗ ngồi.</p>
+<p>Chỉ chốc lát sau, trong xe người toàn đầy.</p>
+<p>“Ta xem tin tức, hiện tại thật nhiều địa phương đều bắt đầu loại cây đào cây lê, này đó trái cây thụ còn có thể mọc ra tới sao?”</p>
+<p>“Không biết, phía trước hạch ô nhiễm tiết lộ, toàn cầu cây ăn quả đã chết hơn phân nửa, mấy năm nay vẫn luôn không hoãn lại đây.”</p>
+<p>“Nếu có thể sống, ta cảm giác chúng ta nơi này có thể loại điểm quả quýt sơn trà, ta nhớ rõ khi còn nhỏ, trên núi quả quýt phi thường hảo……”</p>
+<p>“Ngươi năm nay 63, ‘ khi còn nhỏ ’ có 50 năm đi?”</p>
+<p>Xe lửa khởi động sau, các thôn dân bắt đầu mồm năm miệng mười nói chuyện phiếm, đại gia phần lớn thảo luận gần nhất nông nghiệp trạm thu mua cùng trấn chính phủ quả quýt căn cứ kế hoạch.</p>
+<p>Từ hồng vượng dựng lỗ tai nghe xong trong chốc lát, vừa nhấc đầu, phát hiện đối diện là cái cụ ông, đại gia thoạt nhìn hơn 70 tuổi, ăn mặc bạch bối tâm cùng một cái kiểu cũ màu xanh biển áo khoác, hắn cảm giác đối phương quen mắt, nhưng nhớ không nổi ở đâu gặp qua.</p>
+<p>“Đại ca, ngươi cũng vào thành bán đồ ăn?” Từ hồng vượng chào hỏi hỏi.</p>
+<p>“Ân.” Cụ ông thoạt nhìn không nghĩ nói chuyện.</p>
+<p>“Ta cũng là, này nửa năm không biết làm sao vậy, trong đất hoa màu lớn lên đặc biệt hảo, cũng không biết chúng ta hoàn cảnh có thể hay không khôi phục đến mười ba năm trước bộ dáng……” Từ hồng vượng là cái tự quen thuộc, hắn trò chuyện một đống lớn, nhìn đến lão nhân bên chân sọt sau có chút tò mò “Ngươi không mang lá xanh đồ ăn?”</p>
+<p>Hiện tại rau xanh rau ngó xuân này đó rau dưa giá cả cao, trong thành cư dân cũng thích ăn. Bởi vậy bọn họ trong khoảng thời gian này vào thành đều thích mang nửa sọt lá xanh đồ ăn, lại xứng điểm dưa leo Tây Hồng thị trộn lẫn bán. Mà hiện tại, cụ ông sọt tất cả đều là dưa leo Tây Hồng thị, trừ này, bên ngoài còn có một tầng chăn bông, chăn bông phía dưới phóng khối băng.</p>
+<p>“Không trầm a.” Từ hồng vượng chấn kinh rồi.</p>
+<p>Chăn bông cùng khối băng có thể làm lạnh giữ tươi, nhưng này hai cái thêm lên ít nhất mười cân, hoàn toàn không cần thiết a.</p>
+<p>“Còn hành.” Cụ ông không có nhiều lời.</p>
+<p>Từ hồng vượng còn tưởng mở miệng hỏi hai câu, bất quá thấy đối phương vẻ mặt không nghĩ nói chuyện, cũng không mặt nóng dán mông lạnh.</p>
+<p>Cùng an huyện đến quan lĩnh thị tám 12 phút, phiếu giới bảy khối năm, xe lửa khoảng cách 130 km.</p>
+<p>6 giờ 30, xe lửa tiến trạm.</p>
+<p>Xe lửa đến trạm sau, mọi người một tổ ong xuống xe. Đại gia có cõng cái sọt, có dùng đòn gánh chọn sọt, quan lĩnh ga tàu hỏa nháy mắt biến thành chợ bán thức ăn.</p>
+<p>Từ hồng vượng là dùng đòn gánh chọn sọt, hắn xuống xe sau triều mặt sau nhìn thoáng qua, lúc này xe lửa đối diện lão nhân vừa mới xuống dưới —— đối phương 1 mét 65 tả hữu vóc dáng, dáng người gầy ba ba, trên mặt cũng tất cả đều là tuổi tác đi lên khe rãnh. Lúc này hắn đang dùng lực cõng một cái màu mận chín sọt, cái này sau lưng cao ước nửa thước, nhân mặt trên đồ vật quá nặng, nhìn muốn đem đối phương vai áp suy sụp giống nhau.</p>
+<p>“Thật quái……” Từ hồng vượng cảm giác lão nhân này có chút kỳ quái, khác không nói, quang sọt chăn bông cùng khối băng liền quá ngốc.</p>
+<p>“Từ ca!” Lúc này có bán đồ ăn đáp tử ở nơi xa phất tay tiếp đón.</p>
+<p>“Tới!” Từ hồng vượng vội vàng chọn đồ ăn qua đi.</p>
+<p>Bọn họ cố định quầy hàng là ga tàu hỏa nam diện hâm hâm chợ bán thức ăn, hai người tới rồi sau, đã có không ít địa phương sạp bắt đầu ra quán. Bọn họ phía trước đã cho thị trường phương quản lý phí, bởi vậy hai người phi thường thuần thục ở chính mình cố định địa điểm phóng đòn gánh, tiếp theo ngồi vào đòn gánh mặt sau thạch đôn thượng, từ đòn gánh bên cạnh lấy ra rau dưa giữ tươi tiểu ấm nước, một cái đơn giản sạp liền chuẩn bị cho tốt.</p>
+<p>“Rau xanh bán thế nào a.” Từ hồng vượng vừa mới chuẩn bị cho tốt, một cái 40 tả hữu nữ tử đứng ở đòn gánh trước hỏi.</p>
+<p>“Hai khối 5-1 cân, này đó đều là trước tiên trát tốt, một bó đại khái một cân đến một cân nửa.”</p>
+<p>“Xưng chuẩn sao?”</p>
+<p>“Chuẩn! Phía trước liền có thị trường cân chuẩn, ngươi mua sau có thể đến phía trước tùy tiện xưng.”</p>
+<p>“Dưa leo cùng Tây Hồng thị đâu?”</p>
+<p>“Dưa leo hai khối, Tây Hồng thị hai khối nhị.”</p>
+<p>Nữ tử ở đòn gánh trước chọn lựa sau, cuối cùng mua mười đồng tiền rau dưa bao.</p>
+<p>7 giờ về sau, chợ bán thức ăn bắt đầu thượng nhân, có thể là chủ nhật nguyên nhân, bọn họ nông gia đồ ăn cũng so mặt khác sạp trước bán tướng hảo, không đến 10 điểm, hai người đòn gánh toàn bán xong rồi.</p>
+<p>“Hôm nay quá nhanh!” Bán đồ ăn đáp tử đếm đếm túi tiền cùng di động chuyển khoản tiền, hắn ra tới trước mang theo 60 cân đồ ăn, bán 112, giảm đi lộ phí còn có thể thừa 90 nhiều.</p>
+<p>“Hiện tại trong đất có thể loại bình thường hạt giống, chúng ta bán đều là bình thường đồ ăn, đại gia ăn mười năm biến dị rau dưa, khẳng định muốn ăn bình thường rau dưa cải thiện một chút thức ăn……”</p>
+<p>Từ Long Tinh kiến thị bắt đầu, toàn cầu hoàn cảnh tựa như được đến ‘ tự nhiên chúc phúc ’ giống nhau, cây cối nảy mầm, thực vật biến sinh cơ bừng bừng, phía trước chỉ có thể loại biến dị hạt giống thổ địa cũng có thể bắt đầu loại bình thường hạt giống, hơn nữa loại ra hương vị căn bản không cần đại tai nạn trước kém.</p>
+<p>Cũng là bởi vì này, cả nước này nửa năm ẩm thực ngành sản xuất đều là trả thù tính phát triển, một ít xưởng thực phẩm tử dần dần sống lại, bọn họ này nửa năm chỉ cần lại đây bán đồ ăn, liền không có bán không xong thời điểm.</p>
+<p>11 giờ, hai người ở phụ cận tiệm mì sợi ăn cơm, hơn nữa xa xỉ bỏ thêm một khối phì nị nị cầm thịt.</p>
+<p>Ăn đến một nửa, từ hồng vượng vỗ đùi “Ta nhớ ra rồi!”</p>
+<p>“Nhớ tới cái gì?” Bán đồ ăn đáp tử hoảng sợ.</p>
+<p>“Nhớ tới đối diện người là ai!”</p>
+<p>“Là ai?” Bọn họ bán đồ ăn khi, hắn đảo nghe từ hồng vượng nói qua, tới thời điểm, hắn đối diện ngồi một cái bối khối băng kỳ quái lão nhân.</p>
+<p>“Đại thụ thôn Trịnh trường quý!”</p>
+<p>“Ai a?”</p>
+<p>“Chính là thượng quá trong huyện mặt tin tức, nhi tử bị tang thi cắn cái kia……”</p>
+<p>Trịnh trường quý năm nay 72 tuổi, tuổi trẻ khi ở cán thép xưởng xem máy móc, tay phải bị cưa một nửa. Hắn tay phải sử không thượng lực, chỉ có thể ở nhà trồng trọt nghề nông, là trong huyện mặt sớm nhất một đám vượt tỉnh bán đồ ăn công.</p>
+<p>Kết hôn sau, hắn sinh ba cái nhi tử, đại nhi tử cùng con thứ hai nhân bệnh chết non, thê tử sau khi chết chỉ còn tiểu nhi tử Trịnh phi. Trịnh phi từ nhỏ hiếu thuận học tập hảo, cao trung khi còn lấy quá trong huyện học bổng, sau lại thi đậu la hải học y, tốt nghiệp sau ở tỉnh đệ nhất bệnh viện đương khoa chỉnh hình bác sĩ.</p>
+<p>Trịnh phi bằng cấp hảo, cũng đau lòng Trịnh trường quý, liền ở đại gia cho rằng Trịnh gia khổ tận cam lai khi, ba năm trước đây, Trịnh phi bị một người tang thi người bệnh cắn thương cảm nhiễm, chuyện này còn thượng quá tin tức, nghe nói là vì cứu người bị cắn……</p>
+<p>Chuyện này sau, trong huyện người một trận thổn thức, Trịnh trường quý gặp đả kích sau cũng trường kỳ trạch ở trong nhà, đại gia đã thật lâu chưa thấy qua hắn.</p>
+<p>Từ hồng vượng hồi tưởng Trịnh trường quý xe lửa thượng bộ dáng —— nếu không phải hắn trí nhớ hảo, căn bản nhớ không dậy nổi đối phương là Trịnh trường quý, ba năm không gặp, đối phương tựa như già rồi mười tuổi giống nhau.</p>
+<p>“Hắn tới thành phố làm gì?” Hai người trò chuyện trong chốc lát sau, bán đồ ăn đáp tử tò mò hỏi.</p>
+<p>“Không biết……” Từ hồng vượng vừa mới nói xong, đột nhiên giống nhớ tới cái gì giống nhau mở ra di động tin tức.</p>
+<p>8 nguyệt 17 hào tin tức ——</p>
+<p>【8 nguyệt 20 hào khởi, cư dân nhưng thông qua internet, điện thoại hẹn trước chờ phương thức xin Tây Bắc tang thi căn cứ thăm danh ngạch, xin thành công sau, nhưng ở hẹn trước cùng ngày đi trước căn cứ thăm. Đây là tang thi căn cứ lần đầu cư dân công khai…… Cư dân xin yêu cầu Tang thi người bệnh trực hệ, đơn thứ nhiều nhất ba người, cùng tang thi người bệnh nửa năm nội chỉ có thể thăm một lần. ( có đặc thù tình huống nhưng đệ trình bảng biểu ), căn cứ nhóm đầu tiên thăm thời gian vì 8 nguyệt 25 hào……】</p>
+<p>Từ hồng vượng xem xong sau, trong lòng sở hữu nghi hoặc sáng tỏ Trịnh trường quý muốn đi căn cứ xem tiểu nhi tử?</p>
+<p>【X3780 thứ đoàn tàu sắp tiến trạm, cưỡi X3780 đoàn tàu lữ khách thỉnh đến đệ tam cổng soát vé kiểm phiếu. 】</p>
+<p>Tình huống cùng từ hồng vượng suy đoán giống nhau, lúc này quan lĩnh ga tàu hỏa nội, Trịnh trường quý ôm cái sọt, nghiêm túc nghe nhà ga bá báo, hắn cưỡi xe lửa vì X3780, mục đích địa Ninh tây tỉnh Tây Lâm thị.</p>
+<p>Nơi này khoảng cách tang thi căn cứ 52 km, là một cái hoang mạc thành thị, cũng bị cư dân vì xưng là tang thi thành thị.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong67.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong69.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tinh-cau-khoi-dong-lai-xay-dung";
+const NOVEL_TITLE = "Tinh cầu khởi động lại [ xây dựng ] / Tinh tế người chơi [ thực tế ảo ]";
+const CHAPTER_TITLE = "Chương 68";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
