@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 25</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Thịnh Thế Văn Hào
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 25</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong24.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong26.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Dư Bách Lâm đại khái có thể đoán được, kia mẫu đơn thơ khôi đại khái là bởi vì 《 Mẫu Đơn Thi Tập 》 duyên cớ. Nhưng danh hào này như thế nào nghe như thế nào giống hoa danh.</p>
+<p>Tuổi trẻ Kinh Khôi chỉ đương Dư Bách Lâm da mặt mỏng thẹn thùng, tâm giác người này cùng đồn đãi trung cuồng vọng hình tượng cũng không tương xứng, rõ ràng là cái khiêm tốn thẹn thùng thiếu niên lang.</p>
+<p>Văn nhân khinh nhau a văn nhân khinh nhau, tưởng bọn họ này Ngũ kinh khôi, ở bên ngoài thi rớt thư sinh trong miệng, phỏng chừng hết thảy yêu ma hóa đi.</p>
+<p>“Tại hạ Triệu Tín.” Tuổi trẻ Kinh Khôi cười nói.</p>
+<p>“Kinh Thi khôi, kính đã lâu.” Dư Bách Lâm nói. Nghĩ thầm còn hảo đi ngang qua bảng đơn phía trước nhìn lướt qua, nhớ kỹ trước vài vị tên.</p>
+<p>“Tại hạ Vệ Ngọc Nam.” Một khác ôn hòa nam tử nói.</p>
+<p>Dư Bách Lâm tiếp tục chào hỏi.</p>
+<p>Ngay sau đó, còn lại vài vị Kinh Khôi cũng cùng Dư Bách Lâm chào hỏi.</p>
+<p>Kinh Thành Kinh Khôi, trung tiến sĩ tỷ lệ rất lớn. Chẳng sợ tiếp theo giới trung không được, mài giũa mấy giới, luôn là có thể thi đậu. Hiện tại tạo dựng quan hệ, về sau chính là triều đình người trong mạch.</p>
+<p>Cùng trường cùng bảng, chính là người đọc sách nhân tế võng.</p>
+<p>Trước hết đối Dư Bách Lâm biểu đạt thiện ý chính là Kinh Thi khôi Triệu Tín, sau đó là Dịch Kinh khôi Vệ Ngọc Nam.</p>
+<p>Này hai người đều là Kinh Thành người trong, hơn nữa là cùng trường bạn tốt.</p>
+<p>Thượng thư Kinh Khôi là một vị ước chừng ba bốn mươi tuổi trung niên nhân, tên là Trịnh Khải, lưu trữ tam lũ mỹ cần, tuy rằng thần sắc nghiêm túc cũ kỹ, nhưng Dư Bách Lâm cảm giác được đến hắn thiện ý cùng nhận đồng.</p>
+<p>Chỉ kia lễ Kinh Khôi Hà Vi An không chỉ có thái độ lạnh nhạt, thả đối Dư Bách Lâm cùng Triệu Tín có được mơ hồ địch ý, làm Dư Bách Lâm có chút tò mò.</p>
+<p>Hắn không đắc tội quá người này đi?</p>
+<p>Dư Bách Lâm chưa từng nghĩ nhiều, liền bước lên công đường trước bậc thang. Chúng cử tử ở ngạch cửa trước dừng bước, từ Dư Bách Lâm dẫn đầu đôi tay chắp tay thi lễ nói “Đệ tử bái kiến chư vị giám khảo.”</p>
+<p>“Miễn lễ.”</p>
+<p>Hà Chấn Châu liếc mắt một cái liền thấy được cầm đầu thiếu niên kia Giải Nguyên, trong mắt hiện lên một tia tiếc nuối cùng hoài niệm.</p>
+<p>Dư Bách Lâm sở không biết chính là, Hà Chấn Châu cùng hắn lại là có một đinh điểm quan hệ.</p>
+<p>Dư Bách Lâm phụ thân Dư Tiêu Nhân, tuy không kịp hắn hiện tại phong cảnh, nhưng hắn làm đâu chắc đấy, tích lũy đầy đủ, qua đời phía trước văn thải phong hoa cũng đều là không tồi.</p>
+<p>Tự nhiên, hắn cũng sẽ bị người thưởng thức.</p>
+<p>Dư Tiêu Nhân năm đó tú tài cử nhân một lần liên tục đề danh, sau tự giác lắng đọng lại không đủ, từ bỏ một lần khoa cử, ngược lại khắp nơi du học, cũng ở một chỗ thư viện tạm lưu học tập khi, bị từ quan tại đây dạy học Hà Chấn Châu chỉ điểm quá.</p>
+<p>Có thể nói, Hà Chấn Châu xem như Dư Tiêu Nhân nửa sư.</p>
+<p>Hà Chấn Châu thập phần thưởng thức Dư Tiêu Nhân nhân hậu trung hiếu phẩm chất, trở lại triều đình giữa lưng tưởng, đãi Dư Tiêu Nhân vào kinh khoa cử, khẳng định sẽ đến nhà mình phủ đệ bái phỏng, đến lúc đó liền thu hắn vì đệ tử.</p>
+<p>Vốn dĩ Hà Chấn Châu năm đó liền động thu đồ đệ tâm tư, bất đắc dĩ tự thân khó bảo toàn, sợ ảnh hưởng Dư Tiêu Nhân con đường làm quan tiền đồ, mới ẩn nhẫn không nói.</p>
+<p>Đáng tiếc, đương Hà Chấn Châu lại lần nữa được đến Dư Tiêu Nhân tin tức khi, đã là Dư Bách Lâm nổi danh Kinh Thành, bị người thâm bái thân thế lúc sau.</p>
+<p>Nhìn đến Dư Bách Lâm trò giỏi hơn thầy, Hà Chấn Châu vui mừng rất nhiều lại có chút tiếc nuối.</p>
+<p>Nếu là năm đó thu Dư Tiêu Nhân vì đồ đệ, liền tính Dư Tiêu Nhân vì nước hy sinh thân mình một chuyện thiên mệnh không thể sửa, hắn tốt xấu có thể chiếu cố Dư Bách Lâm cô nhi quả phụ một vài, không đến mức bị Dư gia khi dễ đến như thế thê thảm.</p>
+<p>Khụ khụ, đương nhiên, này khối lương tài mỹ ngọc, chính là chính mình đệ tử.</p>
+<p>Hà Chấn Châu cùng Trương Nhạc cũng có vài phần giao tình, nói lên việc này khi, Trương Nhạc vỗ án cười to, nói này đồ mệnh trung chú định nên hắn sở hữu, người khác hâm mộ không được, tức giận đến Hà Chấn Châu thổi râu trừng mắt.</p>
+<p>Hiện tại ngẫm lại…… Vẫn là hảo tiếc nuối. Này đệ tử vốn nên là của ta. Hà Chấn Châu có điểm tâm tắc.</p>
+<p>Dư Bách Lâm cũng không biết cầm đầu quan chủ khảo từng nhân hắn cùng lão sư Trương Nhạc “Đánh quá một trận”, nhìn nghiêm túc quan chủ khảo, Dư Bách Lâm tất cung tất kính, đối giám khảo vấn đề trả lời thoả đáng. Hà chấn châu một bên loát chòm râu cùng chung quanh giám khảo cùng nói “Hậu sinh khả uý”, một bên trong lòng lấy máu.</p>
+<p>Như thế thần đồng, vốn nên là đệ tử của ta a! Ta cũng đã muộn một bước a! Nếu là sớm biết được Dư Bách Lâm việc, nào còn có Trương Sùng Chi chuyện gì?</p>
+<p>Lần này gặp mặt vốn nên như vậy kết thúc. Dư Bách Lâm đoạt lớn nhất nổi bật cũng vốn nên đương nhiên. Hắn tuy không phải bổn triều trong lịch sử tuổi tác nhỏ nhất Giải Nguyên, cũng không phải lần này trung bảng tuổi tác nhỏ nhất cử nhân, nhưng cũng đủ để cho người ghé mắt.</p>
+<p>Giám khảo lại đối còn lại vài vị Kinh Khôi dò hỏi một vài, đang chuẩn bị làm người tan đi, kia lễ Kinh Khôi Hà Vi An đột nhiên tiến lên hai bước, thần sắc kiêu căng nói “Đệ tử năm tuổi không rõ đọc sách, chín tuổi thơ danh truyền xa, mười ba tuổi tiến học, từ nhỏ thành danh, bất quá nhược quán Kinh Khôi mà thôi. Dư Bách Lâm năm nay phía trước không có tiếng tăm gì, đệ tử không phục này Giải Nguyên, giám khảo đại nhân có không vì đệ tử giải thích nghi hoặc. “</p>
+<p>Dư Bách Lâm ánh mắt có chút phiêu. Lợi hại a, làm trò giám khảo mặt nghi ngờ a. Này chẳng những là cho chính mình tìm tra, càng là đánh giám khảo nhóm mặt a.</p>
+<p>Đương nhiên, khoa cử lúc sau đích xác có thể hướng giám khảo “Hỏi cuốn”. Cũng từng có học sinh thật nhân giám khảo sai lầm mà rơi bảng, bằng vào “Hỏi cuốn” trúng tuyển.</p>
+<p>Nhưng nói chung, trừ phi giám khảo thật phạm vào cấp thấp sai lầm, lật lại bản án là không hy vọng.</p>
+<p>Thả “Hỏi cuốn” khẳng định phải đắc tội giám khảo, lúc sau nếu là không trúng càng thêm mất mặt, người thường sẽ không dễ dàng nếm thử.</p>
+<p>Kia lễ Kinh Khôi Hà Vi An lại không phải thi rớt, cử nhân bài vị trừ bỏ phong cảnh, kỳ thật Giải Nguyên cùng chính bảng nhất mạt một vị địa vị đãi ngộ cũng không khác nhau, thật sự không đáng như thế tiểu kê bụng, tính toán chi li. Thậm chí còn này trước mặt mọi người cấp giám khảo nan kham.</p>
+<p>“Dư Giải Nguyên một lòng đọc sách, trong lòng không có vật ngoài, với mười hai tuổi phó huyện thí, Tiểu Tam Nguyên nhất cử thành danh. Mười bốn tuổi mẫu đơn Thi Hội danh dương thiên hạ, cũng với cùng năm trúng tuyển Giải Nguyên.” Dư Bách Lâm không nói chuyện, giám khảo cũng không nói chuyện, Kinh Thi khôi Triệu Tín lại cười lạnh mở miệng, “Ai mà không năm tuổi không rõ? Ngươi chín tuổi ở truyền thơ danh, nhưng có truyền tới hiện tại như cũ ai cũng khoái thơ làm? Dư Giải Nguyên Mẫu Đơn Thi Tập thượng mỗi một đầu thơ đều lệnh người khen không dứt miệng, thế gian tông sư đại nho cũng cùng khen ngợi. Ngươi mười ba tuổi tiến học mà thôi, Dư Giải Nguyên mười ba tuổi chính là Tiểu Tam Nguyên. Ta không nói đến quá vãng huy hoàng cùng khoa cử thứ tự có gì quan hệ. Cũng chỉ nói qua hướng, huynh đài cũng so ra kém đi?”</p>
+<p>Hà Vi An trên mặt thanh thanh bạch bạch, nhìn về phía Triệu Tín ánh mắt chi phẫn hận, hận không thể nhào lên trước gặm cắn này thịt dường như.</p>
+<p>“Đừng nói Dư Giải Nguyên, chỉ luận thơ từ, ngươi có từng áp ta một đầu?” Triệu Tín cười lạnh.</p>
+<p>Dư Bách Lâm minh bạch. Vị này huynh đài nguyên lai cùng kia lễ Kinh Khôi cũng nhận thức, còn từng có dơ bẩn.</p>
+<p>Bất quá mặc kệ bọn họ có gì quá vãng, Triệu Tín lần này mở miệng vì hắn nói chuyện, Dư Bách Lâm liền nhớ kỹ này phân tình nghĩa.</p>
+<p>“Yết bảng lúc sau, ở bảng mọi người văn chương vốn là sẽ công khai khan phát. Dư Bách Lâm Giải Nguyên chi vị vì đang ngồi sở hữu giám khảo nhất trí tán thành, nếu ngươi có nghi ngờ, nhưng làm trong nhà trưởng bối ngự tiền buộc tội bản quan.” Hà Chấn Châu cười nhạo nói, “Ngươi cũng có thể lại làm Thái hậu cấp bản quan một đạo ý chỉ, làm bản quan từ quan về quê.”</p>
+<p>Hà Chấn Châu lời này vừa nói, ở đây giám khảo sắc mặt đều là thập phần phức tạp.</p>
+<p>Hà Chấn Châu cùng đương kim Thái hậu cùng họ Hà, lại phi một nhà Hà. Năm đó Hà Chấn Châu từ quan về quê, chính là vẫn là đắc tội vẫn là Hoàng hậu Hà thái hậu, ở này bức bách hạ rời đi quải ấn rời đi.</p>
+<p>Hiện giờ Hà Hoàng Hậu tuy đã thành Hà thái hậu, Hoàng Đế lại phi nàng thân tử, Hà Chấn Châu càng là đương kim Thánh Thượng thân tử triệu còn. Hà gia cũng sẽ không có phía trước như vậy kiêu ngạo.</p>
+<p>Giám khảo tầm mắt lại đầu hướng kia lễ Kinh Khôi. Thái hậu nhà mẹ đẻ một bên chi đều như thế kiêu ngạo, thật đương mỗi người đều sợ bọn họ hà gia dường như.</p>
+<p>Tiên đế khi hà gia như mặt trời ban trưa, trong triều đại bộ phận Văn Thần Võ Tướng tình nguyện bị chèn ép cũng không muốn cùng với làm bạn.</p>
+<p>Hiện tại tân đế đăng cơ, bọn họ rốt cuộc có cái gì tự tin tiếp tục càn rỡ?</p>
+<p>“Đủ rồi, lại nháo, bản quan trị ngươi thất nghi chi tội.” Hà Chấn Châu hừ lạnh nói.</p>
+<p>Hà Vi An chỉ phải cắn răng lui ra. Nếu thật trị hắn thất nghi chi tội, làm quan chủ khảo, có quyền lực cách hắn trúng cử tư cách.</p>
+<p>Lần này bị nghi ngờ giả vốn là Dư Bách Lâm, nhưng sự tình từ bắt đầu đến kết thúc, Dư Bách Lâm đều không nói một lời, kính cẩn nghe theo đứng ở một bên, nhậm người khác cãi cọ giải thích.</p>
+<p>Dư Bách Lâm như thế trầm ổn, làm ở đây mọi người đối này tâm tính nhiều vài phần tán dương.</p>
+<p>Hắn phía trước ở mẫu đơn Thi Hội thượng truyền ra “Trương dương” lời đồn, cũng tự sụp đổ.</p>
+<p>Sự tình quan công danh đều có thể không cao ngạo không nóng nảy vững vàng bình tĩnh người, như thế nào bị Vương gia một phen coi khinh chọc giận. Không nói được hắn đúng là xem thấu Vương gia ý đồ bản tính, mới có thể cố ý làm nổi bật.</p>
+<p>Xem, hiện tại không phải nói Đức Vương thực thưởng thức hắn? Còn phái hạ nhân chờ ở trường thi ngoại tiếp hắn về nhà đâu.</p>
+<p>Người này có chút lòng dạ, tiền đồ không thể hạn lượng a.</p>
+<p>Hà Chấn Châu lại lần nữa nắm một chút râu. Này vốn nên là hắn đệ tử! Đáng giận Trương Sùng Chi!</p>
+<p>Ra trường thi là lúc, Hà Vi An hoành Dư Bách Lâm cùng Triệu Tín liếc mắt một cái, nói “Các ngươi tự giải quyết cho tốt” lúc sau, phất tay áo bỏ đi.</p>
+<p>Mặt khác cử nhân có thấp thỏm lo âu, cũng có phẫn nộ coi khinh. Triệu Tín làm đắc tội Hà Vi An tàn nhẫn nhất người, tắc một bộ phong khinh vân đạm bộ dáng, tựa hồ không đem Hà Vi An để vào mắt.</p>
+<p>Nghĩ đến cũng là, nếu nói từ rất sớm phía trước vẫn luôn áp Hà Vi An một đầu, đắc tội Hà Vi An rất nhiều thứ còn có thể sống như thế tiêu sái, Triệu Tín xác thật không sợ Hà Vi An.</p>
+<p>“Đa tạ huynh đài bênh vực lẽ phải.” Dư Bách Lâm đối Triệu Tín chắp tay khom lưng nói.</p>
+<p>“Giải Nguyên cần gì như thế.” Triệu Tín cười nói, “Ta xem chi Mẫu Đơn Thi Tập lúc sau, đã sớm tâm duyệt Giải Nguyên thật lâu sau. Hiện giờ nhìn thấy, trong lòng thật sự vui mừng. Nếu Giải Nguyên không chê, nhưng gọi ta Tử Thành.”</p>
+<p>“Ta còn chưa từng lấy tự, Tử Thành trực tiếp kêu ta Dư Bách Lâm là được.” Dư Bách Lâm nói. Ai nói cổ nhân hàm súc? “Tâm duyệt” gì đó đều nói ra. Nếu là đổi đến hiện đại, thỏa thỏa nhận người hiểu lầm.</p>
+<p>“Tại hạ tự Chi Lan.” Vệ Ngọc Nam phiết Triệu Tín liếc mắt một cái nói, “Giải Nguyên a, ngươi vẫn là đừng cùng Tử Thành huynh đi thân cận quá. Người này miệng quá độc, ba ngày hai đầu chọc phiền toái, ta chính là bị vạ lây nhiều lần, phiền không thắng phiền.”</p>
+<p>“Chi Lan huynh cũng kêu tên của ta là được.” Dư Bách Lâm cười nói, “Tử Thành huynh nghĩ sao nói vậy, nơi nào kêu miệng độc?”</p>
+<p>“Vẫn là Bách Lâm hiểu biết ta. Chi Lan, ta quyết định cùng ngươi cắt bào đoạn nghĩa!” Triệu Tín nghiêm mặt nói.</p>
+<p>“Cắt liền cắt, ta nhẫn ngươi thật lâu.” Vệ Ngọc Nam hừ lạnh.</p>
+<p>Dư Bách Lâm thấy này hai người đột nhiên liền sảo lên, trong lúc nhất thời không biết như thế nào cho phải. Một khác cử tử đột nhiên nói “Giải Nguyên đừng để ý đến hắn hai. Bọn họ ở thư viện thời điểm, ba ngày hai đầu liền phải cắt bào đoạn nghĩa, áo choàng cắt không biết bao nhiêu lần, cũng chưa thấy đoạn quá.”</p>
+<p>Dư Bách Lâm vô ngữ.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong24.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong26.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "thinh-the-van-hao";
+const NOVEL_TITLE = "Thịnh Thế Văn Hào";
+const CHAPTER_TITLE = "Chương 25";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

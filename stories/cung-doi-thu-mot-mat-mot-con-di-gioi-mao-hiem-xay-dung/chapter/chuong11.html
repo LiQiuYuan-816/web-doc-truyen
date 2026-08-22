@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 11</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Cùng đối thủ một mất một còn dị giới mạo hiểm [ xây dựng ]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 11</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Hoàn thành bước đầu hiểu biết sau, không khí liền nhẹ nhàng rất nhiều.</p>
+<p>Leo cũng bị cho phép trị liệu trên mặt thương thế, triệt bỏ “Trầm mặc”.</p>
+<p>Bất quá Perilla như cũ trận địa sẵn sàng đón quân địch, một khi phát hiện Leo nói chuyện lại bất quá đầu óc, lập tức đem “Trầm mặc” tạp Leo trên đầu.</p>
+<p>Tần Lang thực hâm mộ.</p>
+<p>Nếu hắn lựa chọn pháp hệ chức nghiệp, liền có thể cấp Hạ Hề Phong thượng “Trầm mặc” buff.</p>
+<p>Bất quá tư cập Hạ Hề Phong nếu bị hắn “Trầm mặc”, khả năng sẽ ở hệ thống làm trầm trọng thêm mà spam, Tần Lang trong lòng thở dài.</p>
+<p>Hệ thống như thế nào không có tạm thời che chắn kéo hắc lựa chọn đâu?</p>
+<p>Tuy rằng Tần Lang là cái diện than, nhưng Hạ Hề Phong liếc nhìn hắn một cái, liền biết hắn trong lòng cái gì tính toán, lập tức ở hệ thống cho hắn đã phát liên tiếp “Phi phi phi” “Ha ha ha”.</p>
+<p>“Các ngươi phải làm khai thác kỵ sĩ? Chúng ta đây chạy nhanh hồi thôn thông tri đại gia tin tức tốt này, lại khai một hồi yến hội!” Có thể nói lời nói Leo ngữ điệu đều đề cao không ít.</p>
+<p>Khai yến hội! Khai yến hội! Halfling không có lúc nào là không ở tìm cơ hội khai yến hội!</p>
+<p>Perilla nói “Mới vừa đương khai thác kỵ sĩ, Phong cùng Lang khẳng định rất bận.”</p>
+<p>Leo lập tức sửa miệng “Chúng ta hồi trong thôn làm đại gia tới hỗ trợ! Chờ Phong cùng Lang vội qua, chúng ta liền tới khai yến hội!”</p>
+<p>Perilla nghĩ nghĩ, gật đầu “Hảo.”</p>
+<p>Không ngừng Tần Lang trên đầu toát ra dấu chấm hỏi, liền Hạ Hề Phong cái này tự quen thuộc rửng mỡ đều đầy đầu mờ mịt.</p>
+<p>Các ngươi liền như vậy chính mình định rồi? Chúng ta ý kiến đâu?</p>
+<p>Leo cùng Perilla tựa hồ hoàn toàn không ý thức được Hạ Hề Phong cùng Tần Lang khả năng sẽ phản đối, đã cao hứng phấn chấn mà thảo luận muốn như thế nào hỗ trợ Hạ Hề Phong cùng Tần Lang khai hoang.</p>
+<p>Vừa lúc hiện tại là nông nhàn, toàn thôn người đều nhàn đến hận không thể mỗi ngày khai yến hội.</p>
+<p>Nếu không khai yến hội, như vậy halfling yêu nhất chính là lao động.</p>
+<p>Trồng trọt! Trồng trọt! Trồng trọt!</p>
+<p>Đem biên biên giác giác đất hoang đều loại lên!</p>
+<p>Leo hướng Hạ Hề Phong cùng Tần Lang vỗ ngực “Các ngươi yên tâm, chúng ta chỉ làm việc. Các ngươi nói như thế nào làm, liền như thế nào làm!”</p>
+<p>Amro vui vẻ mà xem Hạ Hề Phong cùng Tần Lang chê cười. Hắn nhìn ra này hai cái tiểu bối đã thực xấu hổ.</p>
+<p>Sule chờ Amro hoà giải.</p>
+<p>Về khai thác kỵ sĩ sự, nên thành chủ lên tiếng, nhưng Amro làm lơ hắn ánh mắt ám chỉ.</p>
+<p>Sule đem này bút trướng ghi tạc trong lòng, không thể không chính mình ra mặt ngăn cản Leo cùng Perilla.</p>
+<p>“Các ngươi đạt được Thái Dương Hoa quải sức, đã bị halfling coi là tộc nhân, halfling sẽ toàn lực trợ giúp các ngươi, không cần thẹn thùng.” Sule nói, “Ta biết các ngươi còn khó có thể lý giải chuyện này, tương lai các ngươi nhiều chiếu cố bọn họ liền hảo.”</p>
+<p>Hạ Hề Phong “A?” Này cũng quá chiếm tiện nghi đi?</p>
+<p>Tần Lang vội vàng ném nồi “Hắn là vinh dự halfling, ta không phải.”</p>
+<p>Ta không có lấy Thái Dương Hoa quải sức, đừng kéo lên ta.</p>
+<p>Hạ Hề Phong “?” Cứu Leo người là ngươi!</p>
+<p>Leo nghi hoặc “Hai người các ngươi không phải nhất thể? Phân như vậy khai làm gì? Perilla, ngươi quải sức có phải hay không còn không có đưa ra đi?”</p>
+<p>Perilla kiến thức rộng rãi, tâm tư so giống nhau halfling tinh tế một ít. Tuy rằng vừa rồi hắn halfling bản tính phía trên, bình tĩnh lại là có thể lý giải Hạ Hề Phong cùng Tần Lang xấu hổ.</p>
+<p>Nguyên nhân chính là vì Hạ Hề Phong cùng Tần Lang là người tốt, bọn họ mới có thể vì mới vừa kết bạn không lâu halfling toàn lực trợ giúp mà cảm thấy không được tự nhiên.</p>
+<p>Perilla trong lòng nghẹn cười, thật nghe theo Leo xằng bậy, lấy ra thuộc về chính mình Thái Dương Hoa quải sức.</p>
+<p>Cái này đến phiên Tần Lang “?”.</p>
+<p>Hạ Hề Phong đè lại Tần Lang bả vai “Chạy nhanh tiếp được.”</p>
+<p>Ta có thể không tiếp sao? Tần Lang không tình nguyện mà tiếp được Perilla Thái Dương Hoa quải sức, còn phải nói tiếng cảm ơn.</p>
+<p>Thái Dương Hoa quải sức đại biểu cho một cái halfling cả đời hữu nghị đảm bảo, hắn còn tưởng cùng halfling làm bằng hữu, liền không thể cự tuyệt như vậy trầm trọng hữu nghị.</p>
+<p>Tần Lang thu hảo Thái Dương Hoa quải sức sau, rốt cuộc chịu đối mới vừa nhận thức các bằng hữu nhiều lời nói mấy câu “Thái Dương Hoa quải sức ý nghĩa trọng đại, các ngươi không nên quá qua loa.”</p>
+<p>Leo cười nắm lấy Perilla bả vai, hai người tả hữu lay động một chút. Giờ phút này Perilla tươi cười liền cùng Leo giống nhau như đúc.</p>
+<p>“Ngươi phải tin tưởng chúng ta halfling trực giác a, chúng ta halfling cũng không qua loa!”</p>
+<p>“Đối!”</p>
+<p>Tần Lang trợn trắng mắt.</p>
+<p>Hạ Hề Phong nhìn làm ra thập phần bất nhã biểu tình Tần Lang ôm bụng cười cười to.</p>
+<p>Tuy rằng hắn như cũ thực xấu hổ, nhưng thấy Tần Lang ăn mệt, hắn liền vui vẻ.</p>
+<p>Tần Lang thực chán ghét phiền toái, cũng chán ghét thiếu nhân tình. Cho nên nhiệt tình thiện lương không suy tư hồi báo người, đã sẽ làm Tần Lang thiếu nhân tình, lại sẽ làm Tần Lang lâm vào phiền toái, là Tần Lang đại khắc tinh.</p>
+<p>Trong hiện thực người như vậy rất ít thấy, nhưng xin lỗi, nơi này là kỳ ảo thế giới, đồng thoại chủng tộc halfling, hiểu?</p>
+<p>Ha ha ha ha ha ha.</p>
+<p>Sule nguyên bản có điểm lo lắng Tần Lang có phải hay không có chút lạnh nhạt, hiện tại xem ra, hắn nhiều lo lắng.</p>
+<p>Tuy rằng hộ đạo giả các có các tật xấu, nhưng bản tâm đều là cực hảo.</p>
+<p>Leo lập tức liền muốn đi xem bạn bè nhóm tân địa bàn trông như thế nào, bị Sule ngăn cản.</p>
+<p>Tiểu tiên tri cùng hắn hộ đạo giả đồng bạn vừa tới Lục Sa Thành, đối Lục Sa Thành hoàn toàn không biết gì cả, nên nhiều dạo một dạo, lại đi khai hoang.</p>
+<p>Còn nữa, vãn bối nhóm tới, trưởng bối há có thể không tỏ vẻ một vài?</p>
+<p>Sule làm chủ, Hạ Hề Phong cùng Tần Lang trước tiên ở lâu đài trụ mấy ngày, Leo cùng Perilla cũng trụ hạ, vừa lúc kiểm tra công khóa.</p>
+<p>Tuy rằng Amro không thừa nhận là Leo lão sư, công khóa vẫn là muốn kiểm tra.</p>
+<p>Daemon ngượng ngùng nói “Ta hình như là dư thừa.”</p>
+<p>Sule đối Daemon vẫy tay “Lại đây.”</p>
+<p>Daemon lập tức giống cái hài tử giống nhau tung ta tung tăng mà theo qua đi.</p>
+<p>Amro toàn bộ hành trình xem diễn, Sule nói cái gì hắn liền làm cái đó.</p>
+<p>Hạ Hề Phong nhịn không được spam 【 ai là Lục Sa Thành linh vật a? Ai mới là Lục Sa Thành linh vật a! Các người chơi nên hướng Sule nói trước khiểm! 】</p>
+<p>Tần Lang ở trong lòng gật đầu tán đồng.</p>
+<p>Người chơi tiếp xúc Lục Sa Thành thành chủ như vậy truyền kỳ NPC, đều là ở nhiệm vụ trong lúc hoặc là đại sự kiện trong lúc, khi đó Amro đều không thẹn anh hùng thành chủ chi danh, đặc biệt đáng tin cậy.</p>
+<p>Người chơi như thế nào biết, Amro lén là cái dạng này người?</p>
+<p>Xem ra “Tối tăm long” mới là chân chính lao tâm lao lực thành chủ, trách không được đầy mặt tối tăm.</p>
+<p>Sule hỏi Hạ Hề Phong cùng Tần Lang muốn đi nơi nào tham quan.</p>
+<p>Hai người tuy rằng rất tò mò Lục Sa Thành bảo, vô luận là người chơi có thể đi địa phương vẫn là không thể đi địa phương, trong trò chơi kiến trúc dọn tới rồi trong hiện thực, đều sẽ câu dẫn khởi người chơi mãnh liệt lòng hiếu kỳ.</p>
+<p>Bất quá tham quan cơ hội có rất nhiều. Tận thế lợi kiếm còn treo ở trên đầu, thừa dịp Amro cùng Sule hai cái người bận rộn hôm nay cố ý không ra thời gian, Hạ Hề Phong cùng Tần Lang tưởng hướng Amro cùng Sule thỉnh giáo một vài.</p>
+<p>Hạ Hề Phong đi thư viện, ý đồ làm rõ ràng hiện tại ly tận thế còn có mấy năm, sau đó hướng Sule thỉnh giáo tay xoa đạo cụ sự.</p>
+<p>Tuy rằng hệ thống không minh nói cho Hạ Hề Phong, nhưng Hạ Hề Phong tới rồi thập cấp lúc sau trong óc xuất hiện một đống lớn tri thức, rõ ràng cũng chuyển chức.</p>
+<p>Hệ thống tự động “3D đóng dấu” lượng sản đạo cụ nhiều lắm đến “Ưu tú”, Hạ Hề Phong muốn chế tạo ra “Hoàn mỹ” mang đặc thù mục từ đạo cụ, cũng chỉ có thể chính mình tay xoa.</p>
+<p>Đầu biết, tay không nhất định sẽ. Nếu tiên tri đều có thể là sinh hoạt toàn chức nghiệp đại sư, Hạ Hề Phong đương nhiên muốn chạy nhanh ôm lấy đùi, bái sư học nghệ.</p>
+<p>Tần Lang phải làm sự rất đơn giản, cũng là bái sư học nghệ.</p>
+<p>Người chơi kỹ năng biến thành hiện thực năng lực, kỹ năng cùng kỹ năng chi gian hàm tiếp liền càng có nhiều hơn đa dạng, có người chỉ đạo khẳng định so với chính mình sờ soạng càng mau.</p>
+<p>Perilla tưởng cùng Hạ Hề Phong cùng đi thư viện, bị Leo cường kéo đi sân huấn luyện.</p>
+<p>Leo “Nếu lão…… Thành chủ lại tấu ta, tổng phải có cá nhân giúp ta chữa thương!”</p>
+<p>Perilla “Ngươi liền không thể quản được ngươi kia há mồm, đừng khiêu khích thành chủ sao!”</p>
+<p>Daemon “Lang, ngươi yên tâm, ta chữa thương cũng rất quen thuộc.”</p>
+<p>Tần Lang một chút đều không yên tâm. Hắn chỉ nghĩ huấn luyện, không nghĩ bị thương.</p>
+<p>Hạ Hề Phong đi thời điểm đưa cho Tần Lang liên tiếp 【 ha ha ha 】, mong ước Tần Lang nhiều hơn bị đánh.</p>
+<p>Lục Sa Thành thư viện tàng thư thập phần phong phú, so trong trò chơi “Đoạn tích” Lục Sa Thành thư viện thư tịch nhiều quá nhiều.</p>
+<p>Bất quá phân loại cách cục thượng, trong hiện thực Lục Sa Thành thư viện cùng trong trò chơi không sai biệt lắm.</p>
+<p>Hạ Hề Phong mục đích tính rất mạnh, lập tức lựa chọn “Lịch sử ký lục” phân loại.</p>
+<p>Từ các quốc gia quan viên ký lục hạ chính quy lịch sử, đến thần thoại nghiên cứu giả thảo luận Truyền Thuyết truyền thuyết ít ai biết đến, thậm chí các tộc người ngâm thơ rong gian truyền xướng dân gian chuyện xưa, Hạ Hề Phong từ năm nay “Tin tức” bắt đầu xem, một tháng một tháng, một năm một năm mà sau này đẩy.</p>
+<p>Hắn tuy nhớ không được trò chơi biên niên sử trung đại sự kiện phát sinh cụ thể niên hiệu, nhưng đề cập đến quan trọng NPC hoặc là quan trọng nhiệm vụ, quan trọng phó bản, Hạ Hề Phong miễn cưỡng có chút ấn tượng.</p>
+<p>Tỷ như “Enson đăng thần” sự kiện, phát sinh ở “Hy Vọng Chi Nhật rơi xuống” trước hai năm. 2 năm sau, “Hy Vọng Chi Nhật rơi xuống”.</p>
+<p>Ở “Enson đăng thần” sự kiện sau hai năm gian, các nơi cũng đã xuất hiện hủ hóa quái vật, sở hữu chủng tộc cao tầng đều đã ngửi được mưa gió sắp đến hương vị, bắt đầu triệu tập trong tộc bên ngoài du lịch tinh anh chiến sĩ hồi tộc, tăng mạnh quân bị, củng cố phòng thủ thành phố.</p>
+<p>Người chơi có thể nhớ kỹ có thể đảo đẩy xác thực thời gian sự, ở toàn bộ thế giới lịch sử tiến trình thượng có thể là “Việc nhỏ”, tỷ như ai ai ai mới sinh ra, ai ai ai mới vừa yêu đương, ai ai ai mới vừa kiến hảo phòng ở —— trong trò chơi người chơi xoát nị nhiệm vụ đại khái đều là loại này việc nhỏ, lịch sử đại sự kiện phần lớn là chủ tuyến hoặc là hoạt động, người chơi chỉ đẩy một lần, ngược lại ấn tượng không thâm.</p>
+<p>Hạ Hề Phong tưởng từ mênh mông bể sở ghi lại trung đi tìm quen thuộc sự kiện, thập phần khô khan cùng gian nan.</p>
+<p>Bất quá đối với tro cốt cấp cốt truyện người chơi mà nói, ngồi ở thư viện trung, phẩm hồng trà cùng bánh quy nhỏ, nhìn sắp chữ xinh đẹp giấy chất thư, so với bọn họ ở trong trò chơi nơi nơi cướp đoạt trò chơi giả thiết đôi câu vài lời, đã là một loại hưởng thụ.</p>
+<p>Hạ Hề Phong xem đến thập phần đầu nhập, phiên thư tốc độ mau đến giống như là hắn chỉ nhìn lướt qua, hoàn toàn không có đọc dường như.</p>
+<p>Sule cũng phủng một ly không thêm đường cùng nãi cà phê đen, ngồi ở Hạ Hề Phong đối diện đọc sách.</p>
+<p>Hạ Hề Phong tiến thư viện liền có nhằm vào mà chọn lựa muốn đọc thư tịch, đối bất đồng chủng tộc văn tự thậm chí cổ ngữ ngôn đều hoàn toàn không có đọc chướng ngại, hút vào tin tức tốc độ mau đến giống như là luyện kim con rối rà quét ghi vào…… Hết thảy khác thường hành vi, Sule đều không kỳ quái.</p>
+<p>Tiên tri “Thần quyến năng lực” chính là như vậy.</p>
+<p>Hạ Hề Phong hiển nhiên đã biết trước tới rồi cái gì, mới có thể từ trong hiện thực tin tức tìm kiếm đối ngôn ngữ xác minh. Hắn thập phần cẩn thận, không có mù quáng mà tín nhiệm dự kiến hình ảnh, phi thường ưu tú.</p>
+<p>Hạ Hề Phong không có hướng hắn thổ lộ được đến tiên đoán, Sule cũng cho rằng đây là tiểu tiên tri ưu tú một mặt.</p>
+<p>Tiên tri liền nên có được cảnh giác tâm, cũng nên có một mình giải quyết “Tiên đoán” ngạo khí.</p>
+<p>Tóm lại, hiện tại Sule xem Hạ Hề Phong giống như là xem chính mình trứng rồng, Hạ Hề Phong làm cái gì đều là tốt, đều là vô cùng ưu tú.</p>
+<p>Bên kia, Amro chuyển trong tay chủy thủ, nhìn về phía một cái mới vừa chuyển chức tiểu bối, trong mắt thế nhưng bốc cháy lên chiến ý “Ngươi không nên lựa chọn người ngâm thơ rong. Vì sao không lựa chọn thích khách?”</p>
+<p>Tần Lang “Halfling bằng hữu khả năng không thích thích khách.”</p>
+<p>Amro sửng sốt, không nghĩ tới cư nhiên được đến như vậy trả lời.</p>
+<p>Amro trong mắt chiến ý rút đi, phiếm thượng một chút hiền từ “Không cần lo lắng, halfling tuy rằng đối một ít chức nghiệp có thành kiến, nhưng bọn hắn đối có được Thái Dương Hoa quải sức bằng hữu thiên vị, sẽ thắng qua sở hữu thành kiến.”</p>
+<p>“Ô……”</p>
+<p>Tần Lang thân thể cứng đờ, thong thả quay đầu.</p>
+<p>Leo khóc đến giống cái lệ nhân, Perilla hốc mắt cũng đỏ. Hai người cảm động ánh mắt, làm Tần Lang muốn dùng ngón chân moi ra một tòa một so một phục chế Lục Sa Thành lâu đài.</p>
+<p>Các ngươi khóc cái gì a!</p>
+<p>Daemon cảm thán “Quá cảm động, đây là halfling cùng Thái Dương Hoa bằng hữu hữu nghị!”</p>
+<p>Ngươi đừng dùng điệu vịnh than cảm thán được chưa? Tần Lang da đầu đều tê dại.</p>
+<p>Amro giơ tay xoa xoa Tần Lang tóc.</p>
+<p>Tần Lang “???” Ngươi cái này động tác là làm gì?</p>
+<p>Amro hiền từ nói “Sule mới vừa phối trí một lọ tẩy điểm nước thuốc, đi đem chức nghiệp giặt sạch.”</p>
+<p>Trong trò chơi cũng có tẩy điểm nước thuốc, nhưng chỉ có đứng đầu dược tề sư có thể phối trí, còn không có mở ra cấp người chơi. Trò chơi trước mắt trừ bỏ chức nghiệp đạt tới 200 cấp mãn cấp khi cố định đưa một lọ trói định nước thuốc, người chơi không có mặt khác đạt được tẩy điểm nước thuốc con đường.</p>
+<p>Bất quá người chơi cũng không để bụng cái này, một lần nữa khai cái tân hào là được, luyện cấp nhiều chuyện đơn giản. Cái nào người chơi không có tiểu hào?</p>
+<p>Trò chơi biến thành hiện thực, tuy rằng tẩy điểm nước thuốc không hề “Hạn lượng”, nhưng liền công ty trò chơi công bố tẩy điểm nước thuốc bộ phận nguyên vật liệu, cùng “Có thể phối trí giả bất quá mười người” miêu tả, này nước thuốc đều không thể nói trân quý, quả thực là dù ra giá cũng không có người bán quý hiếm.</p>
+<p>Tần Lang hắc tuyến “Thành chủ, không cần như vậy phiền toái, ta cuối cùng đều là muốn đem người ngâm thơ rong cùng thích khách kỹ năng…… Năng lực đều tu tập mãn.”</p>
+<p>Amro nói “Ta biết ngươi nói chức nghiệp lộ tuyến. Cái này lộ tuyến, hẳn là trước quen thuộc thích khách chiến đấu, lại lấy người ngâm thơ rong năng lực phụ tá.”</p>
+<p>Tần Lang nói “Ta sau chức nghiệp liền tuyển thích khách.”</p>
+<p>Amro làm lơ “Sau chức nghiệp” loại này kỳ quái cách nói. Dù sao tiên tri rất kỳ quái, hộ đạo giả cũng các có các kỳ quái.</p>
+<p>“Phải bảo vệ hảo ngươi Phong, mỗi một bước đều cần thiết đi ở hoàn mỹ nhất trên đường.” Amro nhắc nhở, “Đây là ngươi ta sứ mệnh.”</p>
+<p>Hộ đạo giả chiến đấu chức nghiệp quy hoạch lộ tuyến cần thiết mỗi một bước đều hoàn mỹ vô khuyết, nếu không vô pháp bảo vệ tốt tiên tri.</p>
+<p>Tần Lang nghĩ nghĩ cái này nguy cơ tứ phía thế giới, chỉ có thể gian nan mà thiếu hạ này bút nhân tình nợ.</p>
+<p>Đều là Hạ Hề Phong sai, là hắn nói halfling sẽ không cao hứng, làm chính mình chuyển chức người ngâm thơ rong.</p>
+<p>Cái này nợ, bọn họ đến cùng nhau còn.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "cung-doi-thu-mot-mat-mot-con-di-gioi-mao-hiem-xay-dung";
+const NOVEL_TITLE = "Cùng đối thủ một mất một còn dị giới mạo hiểm [ xây dựng ]";
+const CHAPTER_TITLE = "Chương 11";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
