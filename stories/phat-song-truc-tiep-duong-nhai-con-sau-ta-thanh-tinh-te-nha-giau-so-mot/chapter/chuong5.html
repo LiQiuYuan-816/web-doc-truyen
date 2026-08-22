@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 5</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Phát sóng trực tiếp dưỡng nhãi con sau ta thành tinh tế nhà giàu số một
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 5</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong4.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong6.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Đương nắng sớm chiếu tiến phòng ngủ, lặng lẽ gõ một chút Minh Hữu mí mắt. Minh Hữu mơ mơ màng màng mở mắt ra, nhìn trước mặt mềm mụp lộn xộn màu đen mao mao đã phát một hồi lâu ngốc, mới chậm rãi lấy lại tinh thần.</p>
+<p>Đúng rồi, ta nhìn thấy linh thú! Vẫn là một con siêu cấp thiện lương siêu cấp ôn nhu siêu cấp đáng yêu màu đen đại miêu miêu!</p>
+<p>Minh Hữu một cái cá chép lộn mình xoay người ngồi dậy, không cẩn thận đặng một chân đại miêu miêu phấn đô đô mềm mại tiểu bụng bụng.</p>
+<p>Màu đen đại miêu trong cổ họng phát ra “Lộc cộc lộc cộc” thanh âm, hai tiền trảo trảo cuộn tròn ở đại đại miêu đầu hạ, xoay người tiếp tục ngủ.</p>
+<p>“Oa!” Minh Hữu kinh ngạc trừng lớn đôi mắt. Hắn cư nhiên ôm đại miêu miêu ngủ cả đêm! Đại miêu miêu cư nhiên làm hắn ôm ngủ cả đêm!</p>
+<p>Tối hôm qua đại miêu miêu không phải ở trên ban công ngủ sao? Khi nào tiến phòng thượng giường!</p>
+<p>【 đinh, ký chủ đã rời giường, an tĩnh hình thức giải trừ. 】</p>
+<p>【 chúc mừng ký chủ, hoàn thành tay mới hệ liệt nhiệm vụ đệ nhất hoàn, linh thú hảo cảm độ bay lên đến hữu hảo, khen thưởng 100 tri thức giá trị. 】</p>
+<p>【 tay mới hệ liệt nhiệm vụ đệ nhị hoàn, cùng linh thú bảo trì năm cái giờ trở lên thân mật tiếp xúc. Thân mật tiếp xúc tức lẫn nhau khoảng cách nhỏ hơn 1 mét. 】</p>
+<p>【 đinh! Thí nghiệm đến ký chủ đã hoàn thành tay mới hệ liệt nhiệm vụ đệ nhị hoàn, khen thưởng 200 tri thức giá trị. 】</p>
+<p>【 mở ra tay mới hệ liệt nhiệm vụ đệ tam hoàn, thỉnh ký chủ thu phục đệ nhất chỉ linh thú cộng sự. 】</p>
+<p>【 ấm áp nhắc nhở, này thế giới vô tinh linh cầu, đương linh thú đối ký chủ hảo cảm độ đạt tới hữu hảo, tiếp thu ký chủ vì này lấy nick name, ký chủ nhưng hướng linh thú đưa tặng cộng sự đạo cụ, linh thú mang theo đạo cụ lúc sau, coi là thu phục. 】</p>
+<p>【 lần này tay mới nhiệm vụ cộng sự đạo cụ vì hệ thống cung cấp. Chữa khỏi lục lạc đã phát đến hệ thống ba lô, thỉnh ký chủ đem chữa khỏi lục lạc đưa tặng cấp linh thú, tức hoàn thành tay mới nhiệm vụ. Ký chủ về sau thu phục linh thú, cần chính mình hướng hệ thống mua sắm đạo cụ. 】</p>
+<p>Thình lình xảy ra tri thức giá trị cự khoản tạp đến Minh Hữu đầu óc choáng váng. Hắn chỉ còn lại có 180 điểm tri thức giá trị, nháy mắt gia tăng tới rồi 480 điểm?</p>
+<p>Hồi tưởng chính mình mười chín năm, mới tích cóp một ngàn điểm tri thức giá trị, Minh Hữu không biết nên là bi từ tâm tới, vẫn là hỉ từ tâm tới.</p>
+<p>“Nhật tử càng ngày càng tốt, chuyện tốt!” Minh Hữu vỗ vỗ chính mình mặt, đem chữa khỏi lục lạc từ hệ thống ba lô trung lấy ra.</p>
+<p>Chữa khỏi lục lạc là một cái phảng phất thủy tinh tạo hình mà thành lục lạc, lục lạc mặt ngoài chảy xuôi bảy màu lưu quang, đủ thấy này bất phàm.</p>
+<p>Minh Hữu quơ quơ lục lạc, lục lạc vẫn chưa phát ra âm thanh, nhưng ở hắn “Trong mắt”, lục lạc chung quanh nhộn nhạo bảy màu vầng sáng.</p>
+<p>Linh thú hẳn là có thể “Nghe thấy” chữa khỏi lục lạc “Thanh âm”.</p>
+<p>Căn cứ hệ thống giới thiệu, chữa khỏi lục lạc phát ra năng lượng dao động, có thể trấn an linh thú nóng nảy, vuốt phẳng linh thú mỏi mệt, liên tục không ngừng khôi phục linh thú tinh thần lực.</p>
+<p>Dùng trò chơi thuật ngữ tới nói, chính là một cái gia tăng hỗn loạn chống cự, liên tục hồi lam đạo cụ.</p>
+<p>Nắng sớm giống dây thường xuân giống nhau, chậm rãi che kín chỉnh trương đại giường, cũng phàn tới rồi màu đen đại miêu trên mặt.</p>
+<p>Màu đen đại miêu hiển nhiên đối thình lình xảy ra ánh sáng rất bất mãn, hai chỉ móng vuốt che lại mặt, trong miệng “Huyên thuyên” vài thanh, mới uể oải mở to mắt.</p>
+<p>Đương hắn nhân chiếu sáng mà co rút lại thành một cái kim sắc dựng tuyến đôi mắt, thoáng nhìn bên cạnh ngồi xếp bằng Minh Hữu khi, đại đại miêu đầu “Ong” một tiếng vang lớn, ký ức thu hồi.</p>
+<p>Arthur vừa lăn vừa bò ngồi dậy, thẹn quá thành giận “Ngao ngao ngao ngao ngao!” Ta không có bò giường!</p>
+<p>Minh Hữu nghiêng đầu nhìn Đại Hắc miêu, không rõ hắn ở tức giận cái gì.</p>
+<p>Arthur ngượng ngùng nói “Ngao ngao ngao ngao!” Là ngươi mộng du!</p>
+<p>Minh Hữu tiếp tục dùng mê hoặc ánh mắt nhìn phiết phi cơ nhĩ Đại Hắc miêu.</p>
+<p>Arthur nháy mắt nhụt chí.</p>
+<p>Hắn biện giải cái gì? Này tiểu thanh niên căn bản nghe không hiểu hắn nói cái gì.</p>
+<p>Gào hai câu lúc sau, Arthur đột cảm mỏi mệt. Hắn nhảy xuống giường, dẩu đít duỗi người, đầu vung, ý bảo Minh Hữu, nên ăn cơm.</p>
+<p>Câu này “Ngao ngao ngao” Minh Hữu nghe hiểu. Bất quá ăn cơm phía trước, hắn muốn thử đưa Đại Hắc miêu lễ vật.</p>
+<p>“Đại Hắc, ta có lễ vật muốn tặng cho ngươi.” Minh Hữu mở ra bàn tay, lộ ra trong tay lập loè kỳ dị quang huy lục lạc, “Đây là chữa khỏi lục lạc, có thể trấn an khôi phục tinh thần lực của ngươi.”</p>
+<p>Arthur vẻ mặt hồ nghi thò qua tới.</p>
+<p>Chữa khỏi lục lạc? Vừa thấy liền rất khả nghi bộ dáng. Này nên không phải là cái gì gián điệp đạo cụ đi? Nghe trộm? Vẫn là trực tiếp rà quét thân thể hắn số liệu? Có lẽ dứt khoát là chậm | tính | độc dược?</p>
+<p>“Ngươi nghe một chút.” Minh Hữu cầm lấy lục lạc, lay động một chút.</p>
+<p>Chữa khỏi lục lạc năng lượng dao động khuếch tán đến Arthur trên người, làm hắn không khỏi híp mắt, lộ ra thoải mái thần sắc.</p>
+<p>“Linh âm” biến mất, Arthur mở mắt ra, thần sắc càng nghi hoặc.</p>
+<p>Ngoạn ý nhi này là cái gì? Dường như thật sự đối hắn thương thế hữu dụng.</p>
+<p>Hắn thấu đi lên, vươn chân trước, móng vuốt nhòn nhọn câu lấy lục lạc.</p>
+<p>Lắc lư.</p>
+<p>Thoải mái……</p>
+<p>Ở lắc lư.</p>
+<p>Thật thoải mái……</p>
+<p>Ta lắc lắc lắc lắc!</p>
+<p>“Ngao ô mễ!” Arthur một cái không lưu ý, lại bò đến trên mặt đất bắt đầu lăn lộn, một bên lăn lộn một bên không ngừng kích thích lục lạc.</p>
+<p>Đây là cái gì! Đây là cái gì! Vì cái gì như vậy “Dễ nghe”! Tâm tình hảo sung sướng! Tinh thần hảo thoải mái! Liền đau đầu đều không cảm giác được!</p>
+<p>“Thích sao? Tặng cho ngươi.” Thấy Đại Hắc miêu như thế thích chữa khỏi lục lạc, Minh Hữu lộ ra xán lạn tươi cười, “Ngươi muốn đem lục lạc hệ ở trên cổ, vẫn là hệ ở trảo trảo thượng?”</p>
+<p>Nghe được Minh Hữu thanh âm, Arthur vẻ mặt nghiêm lại, lúc này mới nhớ tới bên cạnh còn có người xử.</p>
+<p>Hắn nhanh nhẹn bò dậy, móng vuốt đè lại lục lạc.</p>
+<p>Lấy Minh Hữu trải qua, không có khả năng được đến loại này liền hắn cùng hắn ca cũng chưa gặp qua thứ tốt. Minh Hữu sau lưng thế lực đến tột cùng là cái gì? Chẳng lẽ là một cái văn minh trình tự so Tinh Minh càng cao ngoại tinh hệ văn minh?</p>
+<p>Dinh dưỡng khối vuông cùng chữa khỏi lục lạc, đại biểu cho bọn họ thiện ý, vẫn là bao vây lấy vỏ bọc đường độc dược?</p>
+<p>Arthur suy tư trong chốc lát, lông xù xù lỗ tai run run, lông xù xù đầu to điên cuồng điểm. Gật đầu thời điểm biên độ quá lớn động tác quá nhanh, lỗ tai hắn trên dưới tung bay, đều mau thấy không rõ nhiều đóa, chỉ còn lại có một cái tròn xoe đầu to.</p>
+<p>Thu! Không thu bạch không thu! Thứ này đối hắn rất hữu dụng, đối toàn bộ Tinh Minh đều rất hữu dụng! Không thể vì chuyện nhỏ mà bỏ việc lớn!</p>
+<p>“Ta cho ngươi tìm căn dải lụa hệ lên!” Nói, Minh Hữu từ hệ thống ba lô lấy ra một cây lập loè kim loại ánh sáng màu đen dải lụa.</p>
+<p>Này căn màu đen dải lụa là hắn ở huấn luyện hình thức trung được đến vật thật khen thưởng, tên là “Tụ khí dải lụa”, trong trò chơi có thể giảm bớt tinh linh phóng thích chiêu thức làm lạnh thời gian. Ở trong hiện thực, đại khái có thể gia tăng một đinh điểm linh thú sử dụng năng lực khi “Tụ khí” tốc độ?</p>
+<p>Liền tính không có gì đại tác dụng, nó nhan sắc, vừa lúc thích hợp màu đen đại miêu miêu.</p>
+<p>Arthur nhìn chằm chằm trong chốc lát màu đen dải lụa, sau đó dùng cổ quái ánh mắt đánh giá Minh Hữu.</p>
+<p>Gia hỏa này lại lấy ra một cái có được năng lượng dao động thứ tốt. Hắn biết mấy thứ này giá trị sao?</p>
+<p>Minh Hữu từ Arthur móng vuốt hạ đem chữa khỏi lục lạc moi ra tới, đem chữa khỏi lục lạc xuyến tiến tụ khí dải lụa trung. Hắn do dự trong chốc lát, nghiêm túc nói “Đại Hắc, ta không thể như vậy làm ngươi như vậy mơ màng hồ đồ trở thành ta cộng sự.”</p>
+<p>Arthur lông xù xù đầu to một oai. Tiểu thanh niên rốt cuộc muốn bắt đầu nói điều kiện sao? Hắn liền nói, tiểu thanh niên sau lưng thế lực, như thế nào sẽ bạch bạch đưa ra nhiều như vậy thứ tốt.</p>
+<p>“Ta nói cho ngươi một bí mật.”</p>
+<p>Ngươi nói, chỉ cần ngươi không phải Trùng tộc gian tế, xem ở ngươi có thể trị hảo ta cùng ta cấp dưới phân thượng, ta nhất định che chở ngươi.</p>
+<p>“Kỳ thật ta là Linh Thú Sư.”</p>
+<p>Ha? Linh Thú Sư là cái quỷ gì?</p>
+<p>“Ta khả năng vẫn là cái này vũ trụ…… Ách, bảo thủ một chút, ta có thể là Tinh Minh duy nhất một cái Linh Thú Sư.”</p>
+<p>Cho nên Linh Thú Sư đến tột cùng là cái quỷ gì?</p>
+<p>“Mười chín năm, ngươi là ta nhìn thấy đệ nhất chỉ linh thú. Đại Hắc, ngươi muốn hay không trở thành ta cộng sự?”</p>
+<p>Arthur nâng trảo cào lỗ tai.</p>
+<p>Hắn lại lần nữa hoài nghi, tiểu thanh niên có phải hay không tinh thần ra vấn đề, như thế nào nói chuyện không điểm logic? Ngươi mười chín năm liền nhìn đến ta này một con linh thú, vậy ngươi như thế nào biết trên thế giới có linh thú tồn tại? Ngươi lại như thế nào trở thành kia cái gì Linh Thú Sư?</p>
+<p>“Ngươi thành ta cộng sự lúc sau, ta là có thể cùng ngươi tâm ý tương thông, giúp ngươi chế định kỹ càng tỉ mỉ trị liệu kế hoạch, cho ngươi chuyên môn định chế thích hợp ngươi dinh dưỡng bữa tiệc lớn. Thậm chí ta còn có thể giúp ngươi tăng phúc chiêu thức uy lực.” Minh Hữu nghiêm túc nói, “Tuyển ta đương cộng sự được không? Ta tuyệt đối có thể cùng ngươi cùng nhau đi hướng linh thú đỉnh!”</p>
+<p>Arthur ←_←.</p>
+<p>Hắn minh bạch, tiểu thanh niên không phải tinh thần ra vấn đề, chỉ là tiến vào trung nhị kỳ. Hắn tuổi trẻ thời điểm cũng có cái này tật xấu, tổng cho rằng thiên không sinh ta Arthur hổ, Tinh Minh vạn cổ như đêm dài.</p>
+<p>Này người trẻ tuổi, hợp ta ăn uống!</p>
+<p>Arthur tự cho là minh bạch Minh Hữu ý tứ, vươn miêu trảo tử.</p>
+<p>Tới tới tới, đi theo ca hỗn, ca về sau che chở ngươi! Chờ ca thương hảo, chúng ta cùng đi hướng Tinh Minh đỉnh!</p>
+<p>Minh Hữu lại không có lập tức nắm lấy Arthur miêu trảo tử, hắn tiếp tục nói “Nói đối với ngươi chỗ tốt, ta cũng muốn nói nói ngươi trở thành ta cộng sự lúc sau, ta có thể được đến chỗ tốt.”</p>
+<p>Arthur tròn xoe mắt mèo mị thành một cái phùng. Nha, tiểu thanh niên muốn ngả bài sao? Làm ta nghe một chút, ngươi sau lưng thế lực muốn cái gì.</p>
+<p>“Linh Thú Sư sở hữu năng lực cùng tri thức, đều là quay chung quanh linh thú. Không có linh thú, ta chính là cái phế vật.” Minh Hữu gục đầu xuống, trên mặt khó có thể ức chế hiển lộ ra bi thương biểu tình, “Ta cái gì đều không có, cái gì đều làm không tốt.”</p>
+<p>Arthur mới vừa mị thành một cái phùng mắt mèo lập tức trợn tròn.</p>
+<p>Hắn nhớ tới Minh Hữu điều tra tư liệu thượng sự.</p>
+<p>Minh Hữu ở trường học trung là có tiếng người tốt, ôn nhu thiện lương chăm chỉ hiếu học, còn có tinh thần trọng nghĩa. Cái kia hiện tại đỉnh Minh Hữu thân phận hồng trường thẳng, đã từng ở bạo lực học đường trung bị Minh Hữu trợ giúp quá. Nếu không phải Minh Hữu động thân mà ra, tên kia đều bị chỉnh thôi học.</p>
+<p>Nhìn Minh Hữu héo tháp tháp, phảng phất bị sương đánh qua cà tím bộ dáng, Arthur trong lòng mạc danh trào ra một cổ hỏa khí.</p>
+<p>Hắn đi phía trước một bước, đem đầu to củng tiến Minh Hữu trong lòng ngực, dùng đỉnh đầu hung hăng đụng phải một chút Minh Hữu cằm.</p>
+<p>“Ngao ngao ngao ngao!” Cho ta đánh lên tinh thần! Không chuẩn thở dài! Không chuẩn cúi đầu! Ai khi dễ ngươi ngươi liền trả thù trở về! Ngươi vừa rồi muốn lôi kéo ta cùng nhau phàn càng linh thú đỉnh khí thế đi đâu vậy!</p>
+<p>Minh Hữu che lại cằm, nhìn Arthur cho hắn cổ vũ ánh mắt, mũi đột nhiên đau xót.</p>
+<p>“Đại Hắc! Gặp được ngươi thật sự là quá tốt!” Minh Hữu hít hít cái mũi, đột nhiên ôm lấy Đại Hắc miêu cực đại miêu đầu, mặt ở Đại Hắc miêu đỉnh đầu cọ a cọ, “Trở thành ta cộng sự đi! Ta sẽ hảo hảo bảo hộ ngươi! Không bao giờ làm ngươi đã chịu bất luận cái gì thương tổn!”</p>
+<p>Arthur duỗi hai chân trước, ghét bỏ đến đem Minh Hữu đẩy ra. Còn bảo hộ ta đâu. Da trâu đều bị ngươi thổi thành vũ trụ chiến hạm. Liền ngươi kia nhu nhược dạng, ta bảo hộ ngươi mới đúng.</p>
+<p>“Thật sự, ta nhất định có thể bảo hộ ngươi.” Minh Hữu xoa xoa đôi mắt, nước mắt không ra tới, chỉ là khóe mắt có chút đỏ lên, “Có được linh thú Linh Thú Sư chính là vô địch!”</p>
+<p>“Ngao ngao ngao.” Ân ân ân. Arthur có lệ gào hai tiếng, ngồi xổm ngồi xong lúc sau, lại lần nữa vươn một con chân trước.</p>
+<p>Minh Hữu thập phần trịnh trọng đem chữa khỏi lục lạc hệ ở Arthur móng vuốt thượng. Sau đó, hắn đôi tay nắm lấy Arthur miêu trảo tử, cúi đầu ở lông xù xù trảo bối thượng, lạc hạ nhẹ nhàng một hôn.</p>
+<p>【 tân nhân nhiệm vụ hoàn thành, chúc mừng ký chủ, rốt cuộc trở thành chân chính Linh Thú Sư! Hệ thống toàn bộ công năng bỏ lệnh cấm! Tay mới đại lễ bao đã phái đưa xong! 】</p>
+<p>【 tay mới đại lễ bao trung bao hàm, “Siêu cấp Linh Thú Sư thể chất” quang hoàn 1 cái! Linh Thú Sư vòng tay 1 cái! Tri thức giá trị 1000 điểm! Bảy loại thuộc tính dinh dưỡng khối vuông các 100 viên! 】</p>
+<p>【 nhiệm vụ chủ tuyến mở ra! Thỉnh ký chủ học tập càng nhiều linh thú tương quan tri thức, hoàn thiện 《 linh thú bách khoa sách tranh 》. Này nhiệm vụ vô trừng phạt, vô thời gian hạn chế. 】</p>
+<p>【 sinh có nhai, mà học vô nhai. Thỉnh ký chủ ở thế giới này, tiếp tục vì sáng tạo một cái linh thú cùng nhân loại hài hòa ở chung thế giới mà phấn đấu! 】</p>
+<p>Arthur xấu hổ thu hồi móng vuốt, móng vuốt cọ cọ sàn nhà “Ngao ngao ngao.” Như thế nào hệ cái lục lạc, làm đến cùng cái cầu hôn dường như.</p>
+<p>Minh Hữu nghiêm túc nói “Cùng linh thú ký kết cộng sự khế ước, cùng cầu hôn không sai biệt lắm.”</p>
+<p>Arthur trợn tròn đôi mắt “Ngao?” Còn có việc này?</p>
+<p>Minh Hữu gật đầu “Linh Thú Sư cùng linh thú cộng sự tâm ý tương thông, tinh thần tương liên, so phu thê còn thân mật.”</p>
+<p>Arthur vẻ mặt “Gia hỏa này lại ở lo chính mình nói cái gì trung nhị giả thiết” biểu tình.</p>
+<p>“Hảo, lễ vật ta thu, nên ăn cơm. Đói chết hổ!” Arthur đi đường khi, hệ lục lạc miêu trảo tử động tác biên độ đặc biệt đại, nhìn qua trảo vũ đủ đạo, như là ở khiêu vũ giống nhau.</p>
+<p>Leng keng, leng keng, * 罒ω罒 *, leng keng, leng keng ~</p>
+<p>“Ăn cơm phía trước, ta trước giúp ngươi làm thân thể kiểm tra. Làm thân thể kiểm tra, ta mới có thể vì ngươi lượng thân đặt làm dinh dưỡng thực đơn.” Minh Hữu đem ngủ khi xuyên áo thun quần đùi kéo xuống, bay nhanh thay trường tụ quần dài, sau đó chạy chậm vài bước, đuổi kịp Arthur.</p>
+<p>“Hảo.” Arthur bước chân một đốn, kim sắc đôi mắt trừng đến cùng cái chuông đồng dường như, thân thể cung khởi, bốn con móng vuốt đồng thời cách mặt đất, giống một con cương thi đại miêu giống nhau, tại chỗ nhảy nhót nửa thước cao, “Ngươi nghe hiểu được ta nói cái gì!”</p>
+<p>Minh Hữu gật đầu.</p>
+<p>“Ngươi như thế nào có thể nghe hiểu ta nói cái gì! Ngươi lại không phải linh thú!” Arthur điên cuồng ngao ngao ngao ngao.</p>
+<p>Minh Hữu gãi gãi đầu, lộ ra hoang mang biểu tình “Bởi vì chúng ta là cộng sự a. Có cộng sự, ta chính là chính thức Linh Thú Sư. Làm Linh Thú Sư, có thể nghe hiểu chính mình cộng sự nói cái gì, không phải thực hợp lý sao?”</p>
+<p>Cái này nơi nào hợp lý! Arthur đại miêu hoảng sợ.</p>
+<p>Đương Minh Hữu đem một người cao, toàn kim loại thân xác kiểu cũ máy trị liệu, từ lầu hai nhẹ nhàng khiêng đến lầu một thời điểm, Arthur lại lần nữa biến thành tại chỗ nhảy nhót cương thi miêu.</p>
+<p>Ngao ngao ngao ngao sao lại thế này? Ngày hôm qua ngươi dọn khối thịt đều mệt đến chết khiếp a!</p>
+<p>Minh Hữu lại gãi gãi đầu, lại lần nữa lộ ra hoang mang biểu tình “Bởi vì ta đã là Linh Thú Sư a, Linh Thú Sư sức lực lớn một chút, không phải thực hợp lý sao?”</p>
+<p>Cái này nơi nào hợp lý ngao ngao ngao!</p>
+<p>Tác giả có lời muốn nói “Thiên không sinh ta Arthur hổ, Tinh Minh vạn cổ như đêm dài” sửa tự “Thiên không sinh ta Lý thuần cương, kiếm đạo vạn cổ như đêm dài”, mà những lời này xuất xứ là “Trời không sinh Trọng Ni, vạn cổ như đêm dài”.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong4.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong6.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "phat-song-truc-tiep-duong-nhai-con-sau-ta-thanh-tinh-te-nha-giau-so-mot";
+const NOVEL_TITLE = "Phát sóng trực tiếp dưỡng nhãi con sau ta thành tinh tế nhà giàu số một";
+const CHAPTER_TITLE = "Chương 5";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

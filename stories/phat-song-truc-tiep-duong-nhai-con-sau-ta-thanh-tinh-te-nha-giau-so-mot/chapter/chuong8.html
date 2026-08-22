@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 8</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Phát sóng trực tiếp dưỡng nhãi con sau ta thành tinh tế nhà giàu số một
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 8</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong7.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong9.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Minh Hữu mới vừa đem cơm làm tốt, Arthur liền rải bốn con móng vuốt nhạc điên nhạc điên đã trở lại.</p>
+<p>Nói là rải bốn con móng vuốt, trên thực tế Arthur chỉ có ba điều chân ở nhảy nhót, còn có một chân bởi vì bị thương vô pháp nhúc nhích.</p>
+<p>Ba điều chân đi đường đại miêu miêu vốn dĩ hẳn là nhìn qua thực thê thảm, nhưng Arthur lông xù xù đại trên mặt tràn đầy khoe khoang hổ thức mỉm cười, cái đuôi giơ lên thật cao, chỉ ba điều chân cũng có thể nhảy nhót cùng khiêu vũ dường như, nhìn không ra nửa điểm khổ sở bi thương.</p>
+<p>Rất khó tưởng tượng, hắn ngày hôm qua còn ở kề cận cái chết bồi hồi.</p>
+<p>Minh Hữu vừa thấy đến Arthur, khóe miệng liền nhịn không được thượng câu. Hắn tưởng, lại bi thương tuyệt vọng người, nhìn đến như vậy đáng yêu như vậy hoan thoát đại miêu miêu, đều sẽ nhịn không được bị đại miêu miêu lạc quan cảm nhiễm, lộ ra cùng đại miêu miêu giống nhau tươi đẹp tươi cười đi?</p>
+<p>“Thơm quá thơm quá, làm ta nhìn xem, có cái gì ăn ngon!” Arthur tiến phòng bếp, liền người lập dựng lên, lông xù xù đầu to hướng thùng sắt nồi to thấu, sợ tới mức Minh Hữu vội từ sau lưng ôm lấy hắn, đem hắn kéo ly bệ bếp.</p>
+<p>“Tiểu tâm chút! Đừng năng!” Minh Hữu xem đến kinh hồn táng đảm, sợ Đại Hắc miêu một cái không lưu ý, đem thùng sắt ném đi.</p>
+<p>Arthur ngồi xổm ngồi dưới đất, đệm thịt bất mãn chụp sàn nhà “Ta có như vậy ngu xuẩn!”</p>
+<p>“Không không không, Đại Hắc thông minh nhất, ta chỉ là sợ ngươi năng.” Minh Hữu đem hầm thịt múc ra tới, chính mình một chén lớn, Arthur một đại bồn, “Ngươi muốn cơm sao?”</p>
+<p>Arthur quay chung quanh chính mình chậu cơm qua lại chuyển động, không ngừng liếm miệng, chờ thịt lạnh chờ thật sự nôn nóng “Không cần. Ta là lão hổ, ăn cái gì cơm.”</p>
+<p>Minh Hữu kẹp thịt chiếc đũa một đốn, nói “Ta tưởng linh thú thực đơn, hẳn là cùng bình thường động vật không giống nhau. Các ngươi hẳn là từ ăn chay trung đạt được năng lượng càng nhiều, ăn thịt chỉ là nếm hương vị cùng no bụng, chuyển hóa thành năng lượng hiệu suất rất thấp.”</p>
+<p>Arthur kinh ngạc đến lỗ tai đều dựng lên, giống radar giống nhau tả hữu chuyển động “Còn có này cách nói?”</p>
+<p>Minh Hữu gật đầu. Hệ thống nói linh thú cùng tinh linh cùng nguyên, như vậy linh thú thực đơn, hẳn là cùng tinh linh giống nhau.</p>
+<p>Minh Hữu nghĩ nghĩ, trình bày tinh linh thế giới năng lượng chuyển hóa lý luận.</p>
+<p>Tinh linh loại này sinh vật, sở có được đặc thù năng lực đến từ chính thái dương, ánh trăng cùng địa cầu, nói cách khác, chúng nó lực lượng, là hằng tinh cùng hành tinh sở có được đặc thù năng lượng.</p>
+<p>Ở dinh dưỡng liên trung, thông thường đem thực vật làm tầng thứ nhất sinh sản giả, mà côn trùng cùng động vật chờ, còn lại là được xưng là “Người tiêu thụ” dị thực giả.</p>
+<p>Bị gọi “Dinh dưỡng” năng lượng hoá học, thông qua tầng tầng người tiêu thụ không ngừng hướng về phía trước truyền, sinh vật có thể không ngừng tích lũy. Cho nên đối nhân loại bình thường mà nói, trực tiếp dùng ăn dinh dưỡng liên thượng tầng “Người tiêu thụ”, hấp thụ dinh dưỡng hiệu suất càng cao.</p>
+<p>Dùng Minh Hữu cái kia thời đại thông tục dễ hiểu tới nói, chính là “Có nước luộc, là có thể ăn ít lương”.</p>
+<p>Nhưng tinh linh sở yêu cầu “Năng lượng”, lại cùng bình thường dinh dưỡng bất đồng. Thực vật làm tầng thứ nhất sinh sản giả, có thể đem tinh cầu năng lượng tích lũy đến chính mình trong cơ thể. Nhưng nó nếu bị mặt khác động vật hoặc là sâu vồ mồi, năng lượng sẽ bị “Người tiêu thụ” tiêu hao một bộ phận, bảo tồn ở “Người tiêu thụ” trong cơ thể năng lượng liền sẽ giảm bớt.</p>
+<p>Cho nên loại này “Năng lượng”, sinh vật liên trình tự càng cao “Người tiêu thụ”, trong cơ thể bảo tồn có thể bị mặt khác người tiêu thụ hấp thu năng lượng liền càng ít.</p>
+<p>Đây là 《 Tinh Linh Thế Giới 》 trò chơi này quan trọng nhất một bộ phận thế giới quan. Bởi vì cái này quy luật, cho nên các tinh linh trong tình huống bình thường sẽ không cho nhau vồ mồi, nhân loại cũng cơ hồ sẽ không đem tinh linh làm đồ ăn.</p>
+<p>“Này liền cùng hoá thạch nguồn năng lượng không sai biệt lắm. Chúng ta có thể đem hoá thạch nguồn năng lượng tinh luyện, nhưng nếu là đã thiêu đốt quá xỉ than, liền cơ bản rất khó lợi dụng.” Minh Hữu nói, “Linh thú đồ ăn, hẳn là giàu có năng lượng đồ vật. Trừ bỏ thực vật ở ngoài, ẩn chứa năng lượng khoáng thạch, nguồn nước, thậm chí sóng điện từ, quang hạt chờ mặt khác năng lượng, đều có thể là các ngươi đồ ăn.”</p>
+<p>Arthur nhiều chuyện đến lão đại, đại đến có thể đem Minh Hữu đầu nhét vào đi.</p>
+<p>Hắn toàn bộ hổ đều thạch hóa.</p>
+<p>Nếu này tiểu thanh niên theo như lời chính là thật sự, như vậy toàn Tinh Minh linh thú dinh dưỡng học đều lầm nghiên cứu phương hướng!</p>
+<p>Không phải từ dinh dưỡng học xuất phát, mà là từ năng lượng học xuất phát sao?!</p>
+<p>“Chúng ta nơi đó thế giới là cái dạng này, linh thú cùng tinh linh cùng nguyên, hẳn là khác biệt không lớn?” Minh Hữu nói, “Có thể vì tinh linh bổ sung đại lượng dinh dưỡng dinh dưỡng khối vuông, đối với ngươi cũng áp dụng, hẳn là khác biệt không lớn. Cụ thể nghiên cứu, đến chờ ta học tập càng nhiều linh thú tương quan tri thức lúc sau mới có thể xác định.”</p>
+<p>Chờ học tập càng nhiều tri thức, tích góp cũng đủ tri thức giá trị, hắn là có thể từ hệ thống giải khóa “Linh thú dinh dưỡng học” môn học này.</p>
+<p>Hiện tại hắn học tập, còn chỉ là luyện tập hình thức trung “Tinh linh dinh dưỡng học”. “Ngươi yêu cầu này đó đồ vật, mới có thể hoàn thành cái này nghiên cứu?” Arthur giải trừ thạch hóa, một cái đầu chùy vọt vào Minh Hữu trong lòng ngực, đầu không ngừng củng Minh Hữu cằm, “A a a a a ngươi biết nếu ngươi có thể xác định chuyện này, toàn bộ Tinh Minh linh thú đào tạo sách giáo khoa sẽ toàn bộ trọng viết sao?”</p>
+<p>Arthur ở sử dụng đầu chùy phía trước, Minh Hữu liền tâm hữu linh tê đem chén đũa phóng tới trên bệ bếp, giang hai tay cánh tay làm tốt tiếp được va chạm chuẩn bị. Đại Hắc miêu lông xù xù đầu to vừa vào hoài, đã bị Minh Hữu hung hăng ôm lấy, dùng sức xoa nắn.</p>
+<p>“Không cần quá nhiều đồ vật, ta chỉ cần so đối một chút hiện tại linh thú nghiên cứu cơ sở tri thức là có thể xác định.” Minh Hữu nhìn thoáng qua giải khóa “Linh thú dinh dưỡng học” sở yêu cầu tri thức giá trị, trong lòng đánh giá một con số, “Bất quá ta tuổi còn nhỏ, địa vị thấp, liền tính đem linh thú dinh dưỡng học sửa sang lại ra tới, cũng không ai sẽ tin đi?”</p>
+<p>Học thuật chi tranh liền cùng đạo thống chi tranh dường như, dị đoan đánh nhau, không chết không ngừng. Minh Hữu có điểm túng.</p>
+<p>“Sợ cái gì, có ta ở đây.” Arthur tiếp tục dùng đỉnh đầu củng Minh Hữu cằm, lông xù xù xúc cảm cào đến Minh Hữu khanh khách cười không ngừng, “Ta cùng ngươi nói, ta đã cho ngươi xin phát sóng trực tiếp, chúng ta hiện tại phát sóng trực tiếp trung trực tiếp nghiệm chứng ngươi lý luận. Chờ ngươi đem viện điều dưỡng linh thú đều cứu sống, bằng chứng như núi, ai còn dám nghi ngờ ngươi? Chúng ta cái này kêu tiền trảm hậu tấu!”</p>
+<p>“Phát sóng trực tiếp?” Minh Hữu một bên cười một bên hỏi, “Ha ha ha đừng cọ, hảo ngứa.”</p>
+<p>Arthur chẳng những không đình, còn làm trầm trọng thêm. Thẳng đến Minh Hữu cười đến mau thở không nổi khi, hắn mới đình chỉ cọ cọ, ngồi xổm ngồi ở Minh Hữu trước mặt, dù bận vẫn ung dung liếm trảo trảo rửa mặt.</p>
+<p>“Đúng vậy, phát sóng trực tiếp.” Arthur đem phát sóng trực tiếp sự nói cho Minh Hữu, “Đêm nay thượng bọn họ nên lại đây tu sửa phòng ở, ngày mai chúng ta là có thể bắt đầu phát sóng trực tiếp.”</p>
+<p>“Trừ bỏ phát sóng trực tiếp, ngươi còn có thể trước tiên học tập linh thú tương quan tri thức. Sách giáo khoa ta đã truyền cho ngươi công nhân quang não. Có không hiểu liền hỏi ta.” Arthur đắc ý ngửa đầu, miêu râu run run, “Ta chính là sở hữu linh thú tương quan khoa đều được mãn phân thiên tài!”</p>
+<p>“Đại Hắc thật là quá lợi hại! Đại Hắc nhất định là trên thế giới nhất nhất nhất lợi hại Sư Hổ Thú!” Minh Hữu lập tức tiểu hải cẩu vỗ tay.</p>
+<p>“Ngươi khen ta ta cũng sẽ không đắc ý, trước mắt Tinh Minh theo ta một con Ám Ảnh Sư Hổ.” Arthur gãi gãi lỗ tai, “Tinh Minh nghiên cứu cho thấy, linh thú loại này sinh mệnh thể càng như là từ dị năng trực tiếp cấu thành năng lượng thể, cho nên cùng tộc đàn trung mỗi từng cái thể, đều bởi vì sở có được dị năng bất đồng, mà dẫn tới thú thể có chút khác biệt.”</p>
+<p>“Lặng lẽ cùng ngươi nói, ta ca là một con kim sắc đại sư tử! Ta lần đầu tiên hóa thú…… Ách, ta ý tứ là, ta khi còn nhỏ còn tưởng rằng ta là nhặt được!” Arthur miêu trảo tử nửa che miệng, tặc mi tặc nhãn nói, “Vì tìm kiếm thân sinh cha mẹ, ta còn rời nhà trốn đi quá. Chuyện này đại ca hiện tại còn nhớ. Cho nên ngươi gặp được hắn, ngàn vạn đừng hỏi vì cái gì hắn thú thể cùng ta bất đồng, hắn sẽ bão nổi.”</p>
+<p>Minh Hữu dùng sức gật đầu, đem chuyện này chặt chẽ nhớ kỹ.</p>
+<p>“Lạch cạch.”</p>
+<p>Hai người chính trò chuyện thiên, đột nhiên nghe được chậu bị ngạnh | vật gõ vang thanh âm.</p>
+<p>Hai người đồng thời quay đầu, đồng thời tạc mao.</p>
+<p>Khi nào trong phòng bếp nhiều một con cực đại gấu trắng! Minh Hữu sợ tới mức lông tơ đều dựng thẳng lên tới!</p>
+<p>“Ngao ngao ngao ngao ngao ta thịt!” Hiển nhiên Arthur tạc mao nguyên nhân cùng Minh Hữu hoàn toàn không giống nhau, “Hỗn đản bổn hùng!! Ta còn một ngụm cũng chưa ăn!”</p>
+<p>Đại Bạch hùng nghe màu đen đại miêu rít gào, chẳng những không có sợ hãi, còn vươn đầu lưỡi, đem chậu đế liếm cái không còn một mảnh, liền nước sốt cũng chưa cấp màu đen đại miêu lưu.</p>
+<p>“Ta muốn tấu chết ngươi!” Arthur tức giận đến múa may móng vuốt liền phải tiến lên, bị Minh Hữu phi phác ôm lấy.</p>
+<p>“Trước đừng đi! Hắn tâm chi lực dao động rất kỳ quái! Giống như không có rõ ràng ý thức!” Minh Hữu lại bày ra ra hắn không chút nào khoa học sức trâu, nhất chiêu thiên cân đỉnh, đem Arthur mông chặt chẽ ấn ở trên mặt đất.</p>
+<p>Đại Bạch hùng vẫn duy trì ngốc ngốc biểu tình, trước nhìn thoáng qua điên cuồng rít gào màu đen đại miêu, lại cúi đầu nhìn thoáng qua không chậu cơm.</p>
+<p>Trên mặt hắn lộ ra ngộ thần sắc, một móng vuốt nắm lên chậu cơm, một móng vuốt khác cùng gõ la dường như, ở chậu cơm đế điên cuồng đánh.</p>
+<p>“Đang đang đang, đang đang đang!”</p>
+<p>Arthur bị “Gõ la thanh” sợ tới mức lỗ tai đều phiết lên “Hắn làm gì?”</p>
+<p>Minh Hữu không xác định nói “Thúc giục thêm lương?”</p>
+<p>Tác giả có lời muốn nói Thực xin lỗi đại gia m(-_- ) m, thân đường đệ thi đại học thành tích ra tới, khảo 678 phân, chúng ta cả nhà đều tụ ở bên nhau giúp hắn tuyển chí nguyện trung, đổi mới chậm, ta sai rồi, này chương phát 50 cái Tiểu Hồng bao xin lỗi.</p>
+<p>Ha ha ha ha ha 678 phân, cao hơn trọng bổn tuyến 149 phân ha ha ha ha ha.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong7.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong9.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "phat-song-truc-tiep-duong-nhai-con-sau-ta-thanh-tinh-te-nha-giau-so-mot";
+const NOVEL_TITLE = "Phát sóng trực tiếp dưỡng nhãi con sau ta thành tinh tế nhà giàu số một";
+const CHAPTER_TITLE = "Chương 8";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

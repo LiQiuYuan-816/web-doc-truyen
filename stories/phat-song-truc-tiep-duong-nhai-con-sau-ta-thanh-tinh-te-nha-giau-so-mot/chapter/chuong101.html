@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 101</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Phát sóng trực tiếp dưỡng nhãi con sau ta thành tinh tế nhà giàu số một
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 101</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong100.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong102.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Arthur cùng Minh Hữu hôn lễ, cuối cùng hoàn toàn chơi điên rồi.</p>
+<p>Không biết là từ ai bắt đầu ( kỳ thật chính là từ Đại Kim sư tử bệ hạ bắt đầu ), các khách quý chén rượu một ném, “Phanh” biến thành linh thú, đi theo Đại Hắc miêu cùng Minh Hữu đầy đất vui vẻ.</p>
+<p>Khán giả lúc này mới phát hiện, đương sở hữu trang trí phẩm triệt rớt lúc sau, dùng để tổ chức hôn lễ địa phương, chính là một cái siêu đại hình linh thú công viên giải trí, trong đó có các loại linh thú có thể dùng “Huấn luyện” phương tiện.</p>
+<p>Các loại linh thú thích rượu điểm tâm một chậu một chậu, một thùng một thùng bưng đi lên, các loại lông xù xù một bên dẫm lên nhịp, một bên đem đầu chui vào trong bồn thùng phàm ăn, ăn no liền tiếp tục điên bụng giương nanh múa vuốt lung tung vũ đạo.</p>
+<p>Phụ trách tấu nhạc dàn nhạc không biết khi nào làn điệu cũng đi theo thay đổi, biến thành các loại tiết tấu cảm siêu cường vui sướng tiểu vũ khúc. Có dàn nhạc thành viên còn biến thành linh thú, một bên dùng dị năng thao tác nhạc cụ diễn tấu, một bên móng vuốt cùng cái đuôi đánh nhịp, dường như một bên diễn tấu một bên khiêu vũ dường như.</p>
+<p>Không thể biến thành linh thú các tân khách cũng thực vui vẻ. Bọn họ xuyên qua ở đàn mao loạn vũ linh thú tùng trung, bên người vờn quanh nhận thức linh thú, trong chốc lát sờ sờ này chỉ bằng hữu lỗ tai, trong chốc lát sờ sờ kia chỉ trưởng bối cái đuôi, cơm đều không rảnh lo ăn.</p>
+<p>Khán giả tắc toan đến thẳng cắn khăn tay.</p>
+<p>“Hảo sung sướng a, ta muốn đi hôn lễ hiện trường QAQ.”</p>
+<p>“Làm linh thú, ta nhìn bọn họ phàm ăn đồ vật, để lại chua xót nước mắt. Ta cũng muốn tham gia!”</p>
+<p>“Ta không bao giờ nói Minh tiên sinh hôn lễ bình dân, không có so cái này càng xa hoa hôn lễ. Bọn họ ăn đồ vật thật tốt quá, lệ mục.”</p>
+<p>“Đương nhiên hảo, ta hiện tại uống rượu, là Minh tiên sinh thân thủ sản xuất, hắc hắc hắc.”</p>
+<p>“Cái gì! Bắt được một cái tham gia hiện trường hôn lễ linh thú! Đừng chạy!”</p>
+<p>Khán giả toan về toan, trên mặt lại cũng đi theo ở đây các linh thú lộ ra vui sướng tươi cười.</p>
+<p>So với nghiêm túc thần thánh hôn lễ, đại gia cùng nhau vui vui vẻ vẻ cuồng hoan, đích xác càng làm cho người vui vẻ.</p>
+<p>Cái gì lễ nghi phiền phức hết thảy ném một bên đi, hôn lễ chính là làm đại gia cùng nhau cười vui nhật tử, mà không phải tân hôn vợ chồng son chịu tội nghi thức.</p>
+<p>“Chúc Arthur điện hạ cùng Minh tiên sinh vĩnh kết đồng tâm!”</p>
+<p>“Chúc toàn Tinh Minh nhất nhất nhất đáng yêu Đại Hắc miêu điện hạ, cùng toàn Tinh Minh nhất nhất nhất đáng yêu Minh Tiểu Hữu tiên sinh, trăm năm ngàn năm trăm triệu năm hảo hợp.”</p>
+<p>“Thân vương điện hạ cùng Minh tiên sinh muốn vĩnh viễn hạnh phúc a, tín nữ nguyện dùng cả đời chay mặn phối hợp đổi lấy các ngươi hạnh phúc!”</p>
+<p>“Điện hạ cùng mười anh hùng nhất định phải vĩnh viễn cùng Tiểu Hữu ở bên nhau, vĩnh vĩnh viễn viễn vui vẻ đi xuống, chúc phúc các ngươi!”</p>
+<p>“Vì các ngươi bậc lửa một trản thân thủ làm tình yêu đèn, hy vọng các ngươi vĩnh viễn sẽ không gặp được phiền não sự.”</p>
+<p>Khán giả ở trên mạng cùng phòng live stream điên cuồng chuyển phát chúc phúc nói, so với chính mình kết hôn cao hứng.</p>
+<p>Một ít lý trí người không khỏi líu lưỡi, Arthur điện hạ cùng Minh Hữu thật là toàn dân thần tượng, nhân khí cao kỳ cục.</p>
+<p>Nếu hai người bọn họ về sau không đi nhầm lộ, đại khái đời này đều sẽ sừng sững với đỉnh cao nhất, không ai có thể đem bọn họ kéo xuống đến đây đi.</p>
+<p>Như vậy, muốn như thế nào cùng này hai người xử hảo quan hệ, đổi lấy chỗ tốt đâu?</p>
+<p>Arthur cùng Minh Hữu rốt cuộc công khai “Cường cường liên hợp”, hoàng thất đem duy nhất Linh Thú Sư “Thu vào trong túi”, tương đương với đem toàn Tinh Minh linh thú chỉnh hợp nhau tới, Tinh Minh thực lực chưa từng có cường đại, này sắp sửa dẫn phát rất nhiều gợn sóng.</p>
+<p>Nhưng này cùng chúng ta đã chơi hải Minh Tiểu Hữu có quan hệ gì đâu?</p>
+<p>“Đại Hắc Đại Hắc, chúng ta muốn vĩnh viễn ở bên nhau.” Minh Hữu ôm nhà mình Đại Hắc miêu đầu, gặm vài cái.</p>
+<p>Đại Hắc miêu ghét bỏ sờ sờ trên mặt nước miếng, biệt nữu “Ân” một tiếng.</p>
+<p>“Nha, điện hạ thẹn thùng.”</p>
+<p>“Điện hạ quả nhiên là ngạo kiều.”</p>
+<p>“Điện hạ đừng như vậy, quái ghê tởm.”</p>
+<p>“Điện hạ ngài có thể hay không thẳng thắn thành khẩn một chút?”</p>
+<p>“Điện hạ như là Tiểu Hữu thẹn thùng tiểu tức phụ.”</p>
+<p>“Điện hạ a, chậc chậc chậc, ngươi lại vặn một chút eo, liền càng giống thẹn thùng tiểu tức phụ.”</p>
+<p>“Điện hạ…… Ta không nói.”</p>
+<p>“Điện hạ…… A a a a! Ta còn cái gì cũng chưa nói đi!”</p>
+<p>Đại Hắc miêu điện hạ bỏ xuống tân hôn ái nhân Minh Tiểu Hữu, múa may miêu trảo tử dùng sức đuổi theo chính mình cấp dưới, thế muốn đem này mấy cái dĩ hạ phạm thượng gia hỏa chụp trong đất chôn sống.</p>
+<p>Minh Hữu bế lên không biết khi nào quải hắn trên đùi Cổn Cổn, xoa xoa Cổn Cổn lông xù xù đầu nhỏ, nhéo nhéo Cổn Cổn tròn vo lỗ tai nhỏ “Như thế nào? Buồn ngủ?”</p>
+<p>Cổn Cổn móng vuốt nhỏ ôm lấy Minh Hữu, đầu gác ở Minh Hữu trên vai, nhẹ nhàng lắc đầu “Ân ân!” Không vây, chỉ là tưởng cùng các ngươi ở bên nhau.</p>
+<p>Minh Hữu cười “Hảo, Cổn Cổn cùng chúng ta cũng sẽ vẫn luôn ở bên nhau, chúng ta là người một nhà.”</p>
+<p>Cổn Cổn cười đến đôi mắt mị lên.</p>
+<p>Minh Hữu ngửa đầu nhìn thoáng qua bầu trời bay loạn cộng sự nhóm, đôi mắt cùng Cổn Cổn giống nhau, cười đến mị lên.</p>
+<p>Hôn lễ kết thúc, Minh Hữu đem đại gấu nâu đặc huấn kế hoạch giao cho Herman lúc sau, tạm thời vô tâm tình quản đại gấu nâu sự.</p>
+<p>Bởi vì, Arthur thân thích nhóm liên tiếp không ngừng mời Minh Hữu đi làm khách.</p>
+<p>Arthur thân thích, đương nhiên tất cả đều là đại miêu.</p>
+<p>Đại miêu không có quá mãnh liệt đại gia tộc quan niệm, chỉ có tiểu gia quan niệm. Tuy rằng thời khắc mấu chốt bọn họ cùng nhau trông coi, nhưng ngày thường không thường xuyến môn.</p>
+<p>Cho dù Minh Hữu sau khi xuất hiện, bọn họ có tâm cùng Minh Hữu giao hảo. Nhưng ở đi ra cửa tìm Minh Hữu, cùng về nhà phơi nắng ngủ ngon gian, bọn họ dứt khoát kiên quyết lựa chọn người sau.</p>
+<p>Đại miêu, phần lớn đều thực lười.</p>
+<p>Lần này Arthur cùng Minh Hữu kết hôn, bọn họ không thể không rời đi chính mình “Oa”, tới Thủ Đô tinh ở tạm, liền thuận tiện cùng Minh Hữu giao lưu một chút cảm tình.</p>
+<p>Vì thế Minh Hữu loát tới rồi siêu cấp nhiều đại miêu, đủ loại đại miêu, hổ khoa miêu khoa báo khoa, thậm chí gia miêu khoa đại miêu.</p>
+<p>Minh Hữu ôm một con hai mét đại mèo Dragon Li không buông tay “Thiên lạp thiên lạp, ta cư nhiên gặp được lớn như vậy Trung Hoa tức chết miêu!</p>
+<p>Mèo Dragon Li trưởng bối nghiêng đầu, khó hiểu vỗ lỗ tai. Trung Hoa tức chết miêu là cái gì?</p>
+<p>“Hảo đáng yêu hảo đáng yêu.” Minh Hữu mỗi lần xuyến môn thời điểm đều đi không nổi, nhìn thấy quen thuộc mèo Dragon Li, liền càng đi không nổi.</p>
+<p>Hai mét đại thật miêu mễ! Gia miêu! Mèo Dragon Li! Miêu ngao!</p>
+<p>“Ngươi không quản quản ngươi tức phụ?” Một cái khác trưởng bối hài hước hỏi, “Này tính xuất quỹ sao?”</p>
+<p>Arthur liếc Minh Hữu liếc mắt một cái, nói “Không cần phải xen vào. Chỉ cần biến trở về người, hắn liền sẽ không thích.”</p>
+<p>Minh Hữu hoa tâm chỉ giới hạn trong linh thú.</p>
+<p>Trưởng bối cười lắc đầu, đối vãn bối cảm tình không hề đánh giá.</p>
+<p>Bọn họ chính mình trong lòng hiểu rõ liền hảo.</p>
+<p>Bất quá Minh Hữu buổi tối về đến nhà thời điểm, vẫn là ngoan ngoãn viết kiểm điểm.</p>
+<p>Mèo hoang tuy hảo, hầu hạ hảo trong nhà miêu mới là nhất chuyện quan trọng.</p>
+<p>Cùng lắm thì, viết kiểm điểm, diện bích tư quá lúc sau, tiếp theo tiếp tục tái phạm đồng dạng sai lầm.</p>
+<p>Đại Hắc miêu một con trảo trảo chống cằm, nằm nghiêng ở trên giường, nhìn Minh Hữu một bên viết kiểm điểm, một bên tròng mắt tích lưu tích lưu chuyển.</p>
+<p>Hắn liền biết, Minh Hữu không có khả năng tỉnh lại.</p>
+<p>Bất quá hắn cũng không cần Minh Hữu tỉnh lại. Hắn không tức giận, hắn chỉ là muốn nhìn Minh Hữu viết kiểm điểm bộ dáng.</p>
+<p>Đây là tình thú, tình thú hiểu không?</p>
+<p>Các thuộc hạ nghị luận sôi nổi.</p>
+<p>“Ngươi tin điện hạ không ghen?”</p>
+<p>“Khẳng định ghen tị, nhưng một hồi gia liền sẽ bị hống trở về.”</p>
+<p>“Tiểu Hữu là thật sự cường.”</p>
+<p>“Trước kia ta như thế nào không biết Tiểu Hữu có đương tra nam tiềm chất?”</p>
+<p>“Cũng không tính tra đi, thích linh thú tính cái gì tra.”</p>
+<p>Đại Hắc miêu tinh thần lực phiêu lại đây, lông xù xù các thuộc hạ lập tức giải tán.</p>
+<p>Lưu lưu, điện hạ tuy rằng sẽ không đối Tiểu Hữu thế nào, nhưng điện hạ là thật sự sẽ tấu chúng ta.</p>
+<p>Đại miêu gia đều là ba phút nhiệt độ, nhìn thoáng qua Arthur cùng Minh Hữu vợ chồng son lúc sau, bọn họ lại lăn trở về nhà mình hang ổ. Liền tính cùng tồn tại Thủ Đô tinh đại miêu, cũng không có tiếp tục xuyến môn ý tứ.</p>
+<p>Tuổi trẻ một ít đại miêu lại mãn vũ trụ loạn phiêu, thực hiện chính mình ( hoa rớt ) chinh phục vũ trụ ( hoa rớt ) mạo hiểm mộng tưởng.</p>
+<p>Bất quá bọn họ đều cùng Minh Hữu trao đổi liên hệ phương thức. Tuy rằng bọn họ lười đến xuyến môn, nhưng nếu Minh Hữu nguyện ý đi nhà bọn họ chơi, bọn họ giơ hai móng hoan nghênh.</p>
+<p>Nhưng hiển nhiên, Minh Hữu tính cách đã bị nhà mình Đại Hắc miêu dưỡng đến cùng miêu nhi dường như, cũng lười đến dịch oa.</p>
+<p>Vốn dĩ Arthur còn tính toán mang theo Minh Hữu đi tuần trăng mật lữ hành, nhưng Minh Hữu một bộ dính ở trong nhà thảm thượng không chịu động bộ dáng, làm hắn từ bỏ quyết định này.</p>
+<p>“Tuần trăng mật nên ở trong nhà quá.” Minh Hữu ôm ấm hô hô Cổn Cổn, trên mặt đất lăn qua lăn lại.</p>
+<p>Arthur rất tưởng phủ nhận, nhưng hắn trong xương cốt tính trơ cũng nói cho hắn, gần nhất quá mệt mỏi, không nghĩ động, tưởng ở trong nhà trạch đến chết.</p>
+<p>Vì thế hắn im lặng biến thành Đại Hắc miêu, bò lên trên chính mình đại đại đá quý nhà cây cho mèo, nằm nghiêng ở đá quý nhà cây cho mèo đỉnh Minh Hữu thuần thủ công định chế xa hoa linh thú mao dệt miêu oa nội, trừ bỏ cái đuôi cùng lỗ tai ở ngoài, toàn bộ miêu mở ra thành một trương đại miêu bánh.</p>
+<p>Thật thoải mái, liền tự hỏi đều phảng phất đình trệ. Trong óc trống rỗng, quá thoải mái.</p>
+<p>Đại Bạch hùng ôm một chồng văn kiện đi vào, liền thấy ôm Cổn Cổn ở trên thảm lăn qua lăn lại Minh Hữu, cùng ở nhà cây cho mèo đỉnh nghiễm nhiên đã là một con phế miêu điện hạ.</p>
+<p>Hắn hết chỗ nói rồi sau một lúc lâu, đem văn kiện hướng không gian ba lô một tắc, chui vào chính mình nhà gỗ nhỏ, tự bế đi.</p>
+<p>Dựa vào cái gì điện hạ ở chỗ này giả mạo phế miêu, ta muốn vội chết bận việc? Liền bởi vì ta là phó quan? Nhưng chúng ta đều đã về hưu, ta đã không phải phó quan. Mặc kệ, ta cũng muốn lười biếng.</p>
+<p>Đang ở chờ văn kiện Nghiêm Dực vội vã lại đây tìm hùng, phát hiện hùng đã ở nhà gỗ nhỏ phát ra vang dội tiếng ngáy, tức khắc vô ngữ.</p>
+<p>“Các ngươi đang làm gì?” Nghiêm Dực nghẹn một hơi hỏi.</p>
+<p>Đại Hắc miêu cho hắn một ánh mắt, liền tâm linh truyền âm đều lười đến phát một cái.</p>
+<p>Minh Hữu đảo còn tính có tinh thần, trung khí mười phần nói “Lười biếng!”</p>
+<p>Nghiêm Dực “…… Thực hảo.” Ngươi còn thực kiêu ngạo có phải hay không?</p>
+<p>Vì thế, trong phòng nhiều một con nằm ngửa ở ( hoa rớt ) cẩu ( hoa rớt ) ổ sói cắn giả xương cốt phế lang.</p>
+<p>Không phải lười biếng sao? Ai sẽ không dường như.</p>
+<p>Lại sau lại, Đại Lam hải cẩu chui vào trong phòng nhiệt độ ổn định trong ao, nằm ngửa ở trên mặt nước chụp bụng bụng;</p>
+<p>Đại Hoàng con khỉ ngồi ở Minh Hữu bên người, bồi Minh Hữu cùng Cổn Cổn đáp xếp gỗ;</p>
+<p>Chuột Túi mụ mụ bưng một mâm điểm tâm lại đây, làm Minh Hữu cùng Cổn Cổn vừa ăn biên chơi;</p>
+<p>Gấu trúc đỏ hỏi chính mình tổn hữu “Đại Tử, bọn họ đang làm gì?”</p>
+<p>Đại Tử mã nói “Tập thể kiều ban lười biếng.”</p>
+<p>Dứt lời, hắn ngồi ở dựa cửa sổ ghế mây thượng, bắt đầu xem.</p>
+<p>Tuy rằng thực miệng tiện, nhưng kỳ thật là cái công tác cuồng gấu trúc đỏ “???” Không phải, các ngươi có thể hay không đừng như vậy suy sút?</p>
+<p>“Nhưng là chúng ta đã về hưu a.” Đại Lam hải cẩu lẻn vào trong nước, một bên dùng tinh thần lực nói chuyện, một bên phun bong bóng.</p>
+<p>Gấu trúc đỏ đầy đầu dấu chấm hỏi.</p>
+<p>Chúng ta chỉ là rời khỏi quân bộ, không phải thật về hưu hảo sao? Chúng ta không phải còn ở mở rộng linh thú học sao? Không phải còn ở bán các loại linh thú chuyên dụng đồ ăn dược phẩm cùng thiết bị sao? Chúng ta không phải mỗi ngày vội đến chân không chạm đất sao? Ta cái này nghiên cứu viên cũng mỗi ngày thức đêm hảo sao? Các ngươi như thế nào có thể đột nhiên suy sút?</p>
+<p>“Nhường một chút, nhường một chút.” Đại Hồng hồ ly một bên ồn ào, một bên đem chặn đường gấu trúc đỏ tễ một bên đi, “Tiểu Hữu! Trò chơi thiết bị tới!”</p>
+<p>“Ngao ngao ngao, chúng ta cùng đi chơi trò chơi đi!” Minh Hữu kích động nói, “《 linh thú thế giới 》 đều khai phục nửa tháng, ta còn chưa có đi chơi qua!”</p>
+<p>“Tránh ra.” Cơ bắp Kerry lộc một chân đem chặn đường gấu trúc đỏ đá văng ra, “Điện hạ, trò chơi thiết bị để chỗ nào?”</p>
+<p>“Ngươi có thể hay không đừng chặn đường?” Bị đá đến một bên gấu trúc đỏ, vừa lúc lại chặn muội muội lộc lộ.</p>
+<p>Gấu trúc đỏ nổi giận “Ta như vậy vội! Các ngươi cư nhiên muốn tập thể đi chơi trò chơi!”</p>
+<p>Minh Hữu kinh ngạc nói “Ngươi không đi sao? Ta đem ngươi trò chơi thiết bị cũng chuẩn bị hảo.”</p>
+<p>Gấu trúc đỏ “…… Đi.”</p>
+<p>Đại Tử mã gỡ xuống trên mặt kính râm, liếc mắt một cái vẻ mặt nghẹn khuất gấu trúc đỏ.</p>
+<p>Cho nên hắn sớm nói, không cần phản kháng, phải học được hưởng thụ. Ngươi xem ngươi, còn không phải bị Tiểu Hữu ăn đến gắt gao.</p>
+<p>Đại Hắc miêu điện hạ từ nhà cây cho mèo thượng “Lưu” xuống dưới, lười biếng một lăn, nhị lăn, tam lăn, lăn đến Minh Hữu bên cạnh, làm Minh Hữu đem hắn khiêng tiến khoang trò chơi nội.</p>
+<p>Tiểu Thiên miêu một bên giúp Đại Hắc miêu điều chỉnh thử trò chơi thiết bị, một bên phun tào nói “Đại Hắc miêu điện hạ càng ngày càng lười.”</p>
+<p>“Làm Đại Hắc lười một thời gian, hiện tại là hưởng tuần trăng mật, có thể lười.” Minh Hữu như cũ vẻ mặt sủng nịch, một bộ “Nhà ta Đại Hắc cái gì cũng tốt” thái độ.</p>
+<p>Hắn mặt khác cộng sự thập phần vô ngữ.</p>
+<p>Ai nói cho ngươi tuần trăng mật là dùng để lười? Ngươi đương đây là học sinh nghỉ đông và nghỉ hè sao? Nghỉ đông và nghỉ hè còn có tác nghiệp đâu.</p>
+<p>Đại Hắc miêu trảo trảo bào bào Minh Hữu tay.</p>
+<p>Minh Hữu lập tức lấy ra cờ lê, lạch cạch lạch cạch cải tạo Đại Hắc miêu khoang trò chơi, đem khoang trò chơi đổi thành hai người khoang trò chơi, chính mình tễ đi vào.</p>
+<p>Chúng lông xù xù “……” Hai người các ngươi đến mức này sao?! Chơi cái trò chơi còn muốn tễ ở bên nhau? Hơn nữa Tiểu Hữu ngươi cải tạo máy móc tốc độ có phải hay không càng ngày càng kinh người?</p>
+<p>Hiện tại bọn họ đã càng ngày càng hoài nghi Minh Hữu đầu óc, có phải hay không cũng bị cao thứ nguyên văn minh cải tạo quá.</p>
+<p>Như thế nào Minh Hữu cái gì cũng biết?</p>
+<p>“Còn thất thần làm gì? Chúng ta cùng đi a.” Minh Hữu nắm tay đầu, “Tiến cùng cái Tân Thủ thôn, thành lập bang hội, xưng vương xưng bá!”</p>
+<p>Đại Bạch hùng một bên nằm tiến khoang trò chơi, một bên nói “Tiểu Hữu, chúng ta trò chơi không có bang hội, không có xưng vương xưng bá.”</p>
+<p>Minh Hữu nói “Ta biết, ta chính là nói nói mà thôi.”</p>
+<p>Dứt lời, hắn khởi động trò chơi, ý thức chìm vào giả thuyết internet trung.</p>
+<p>Tiến vào trò chơi lúc sau, bởi vì hắn là không có đăng ký quá thuần tân nhân, cho nên trước quan khán một đoạn thực tế ảo mở màn động họa.</p>
+<p>Động họa trung, trình bày thượng cổ thời đại ma thú cùng nhân loại đại chiến chuyện xưa, lúc sau không nghĩ đánh giặc ma thú cùng nhân loại tụ ở bên nhau, bình ổn chiến tranh, kiến tạo một cái ma thú cùng nhân loại hoà bình ở chung thế giới.</p>
+<p>Hiện tại, ma thú đã sửa tên kêu linh thú, có thể cùng linh thú kề vai chiến đấu kêu Linh Thú Sư. Cái này tên là “Địa cầu” địa phương, nơi chốn khoa học kỹ thuật cùng sinh hoạt đều là quay chung quanh linh thú.</p>
+<p>Bất quá tuy rằng cơ hồ mỗi người đều có thể có linh thú, nhưng có thể cùng linh thú kề vai chiến đấu, chỉ có “Linh Thú Sư”.</p>
+<p>Mà thế giới này mọi người, đều đem trở thành một người mạnh nhất Linh Thú Sư, làm lúc ban đầu mộng tưởng.</p>
+<p>Minh Hữu thô sơ giản lược nhìn một lần, thế giới quan liền cùng kiếp trước Pokemon không sai biệt lắm, cũng chính là đem tinh linh biến thành linh thú mà thôi.</p>
+<p>Một hai phải nói nơi nào bất đồng nói, linh thú tất cả đều là lông xù xù, không có thực vật loại cá từ từ, dã ngoại cũng có bình thường động vật, sẽ không xuất hiện linh thú thịt thăn loại này kinh tủng đồ vật.</p>
+<p>Bình thường linh thú đều là ai, chỉ số thông minh có, cảm tình đều là giả thiết tốt khuôn mẫu, cùng Tinh Minh bình thường thực tế ảo sủng vật trò chơi không sai biệt lắm.</p>
+<p>Đẳng cấp cao NPC tắc toàn bộ từ Tinh Minh mạnh nhất ai khống chế, bảo đảm có máu có thịt có chuyện xưa, hơn nữa có thể sử dụng linh thú đem ngươi tấu chết. Bọn họ ngẫu nhiên còn tiếp khách xuyến một chút thần thú, Tiểu Thiên miêu cũng đã chơi đến vui vẻ vô cùng, nghiễm nhiên biến thành một con võng nghiện miêu.</p>
+<p>ai cái này mỗi ngày ngâm mình ở trên mạng cư nhiên còn có võng nghiện, cái này Minh Hữu là thật không nghĩ tới.</p>
+<p>Trừ bỏ người thường người chơi ở ngoài, thế giới này còn có linh thú người chơi.</p>
+<p>Linh thú người chơi cũng có chuyên môn trò chơi tuyến, có thể lựa chọn chính mình xuất ngoại lang bạt, cũng có thể ở chuyên môn phó bản nội cùng nhân loại người chơi kết bạn, cùng nhau lang bạt thế giới.</p>
+<p>Linh thú người chơi cùng nhân loại người chơi phối hợp lại, cũng không so nhân loại người chơi cùng ai linh thú cường đại. Bởi vì ai linh thú nghe lời nhiều, nhân loại người chơi có thể tùy tiện thao tác, nhiều lắm chỉ có hảo cảm trốn chạy hệ thống.</p>
+<p>Linh thú người chơi…… Ha hả, ngươi ở dạy ta làm sự?!</p>
+<p>Cho nên có thể đạt được linh thú người chơi tán thành, cần thiết có được huy chương. Tuy rằng có được huy chương cũng không có khả năng làm linh thú người chơi nghe lời.</p>
+<p>Linh thú người chơi cũng có thể lựa chọn nhân loại khai cục, đi nếm thử “Thu phục” mặt khác linh thú. Mạnh nhất dị năng giả chính là có đặc quyền, liền chơi trò chơi đều có đặc quyền, người chơi khác lão hâm mộ.</p>
+<p>“Không phải linh thú, trò chơi này có một nửa nội dung ngươi đều chơi không được, đây là kẻ yếu bi ai.” Những lời này, đã truyền khắp toàn bộ Tinh Minh. Nửa vời s cấp dị năng giả lại lần nữa bị nhục.</p>
+<p>Minh Hữu đi xong thần lúc sau, động họa kết thúc, Tiểu Thiên miêu tự mình tới tiếp đãi Minh Hữu.</p>
+<p>“Tiểu Hữu Tiểu Hữu, muốn hay không đảm đương NPC? Hiện tại rất nhiều ai rất nhiều linh thú đều ở trong trò chơi đương NPC làm công, nhưng hảo chơi.” Tiểu Thiên miêu ở Minh Hữu trên đỉnh đầu nhảy nhót.</p>
+<p>“Không được, cho ta một cái bình thường nhân loại tài khoản khai cục.” Minh Hữu nói, “Bọn họ tuyển chính là cái gì tài khoản?”</p>
+<p>Tiểu Thiên miêu nói “Bọn họ đều tuyển chính là linh thú tài khoản.”</p>
+<p>Minh Hữu nghi hoặc “Vì cái gì? Không chơi chơi như thế nào đương Linh Thú Sư sao?”</p>
+<p>Tiểu Thiên miêu nói “Không biết, đại khái bọn họ đối dưỡng sủng vật không có hứng thú.”</p>
+<p>Tiểu Thiên miêu chửi thầm, bọn họ chỉ đối bị Minh Hữu dưỡng cảm thấy hứng thú.</p>
+<p>Nghe nói nhà mình cộng sự nhóm toàn bộ “Chuyển sinh” linh thú tài khoản, Minh Hữu vội vội vàng vàng tiến trò chơi, rất sợ nhà mình cộng sự bị người chơi khác nhặt đi rồi.</p>
+<p>Tiểu Thiên miêu bị chọc cười.</p>
+<p>Linh thú người chơi tìm cộng sự toàn bằng tự nguyện, bọn họ chính mình không đi theo những người khác đi, còn có ai có thể buộc bọn họ sao?</p>
+<p>Minh Hữu ở trên một cái giường tỉnh lại.</p>
+<p>Đây là hắn mãnh liệt yêu cầu trò chơi tân nhân xuất hiện phương thức.</p>
+<p>Trong trò chơi, sở hữu người chơi đều không phải trực tiếp xuất hiện ở Tân Thủ thôn, mà là xuất hiện ở một cái “Đơn người phó bản” trung.</p>
+<p>Ở đơn người phó bản, bọn họ sẽ trải qua từ trên giường lên, đi linh thú viện nghiên cứu lãnh linh thú, ở nơi sinh bên ngoài rừng rậm vượt qua cái thứ nhất cốt truyện lúc sau, mới có thể tiến vào cái thứ nhất chân chính “Tân Thủ thôn”.</p>
+<p>Bất quá trò chơi này cũng không tồn tại nghiêm khắc Tân Thủ thôn. Sở hữu thành thị đều thực an toàn, bọn họ chỉ cần có tiền, là có thể thông qua phương tiện giao thông đi tới đi lui các thành thị.</p>
+<p>Thành thị chi gian con đường phần lớn cũng thực an toàn, càng lệch khỏi quỹ đạo chủ con đường, dã thú cùng hoang dại linh thú nguy hiểm độ liền càng cao.</p>
+<p>Nói cách khác, nếu người chơi không nghĩ luyện cấp, chỉ nghĩ đương cái phong cảnh đảng, chỉ cần không lệch khỏi quỹ đạo chủ con đường, cũng là hoàn toàn không thành vấn đề. Cho nên sinh hoạt người chơi cũng có thể ở thế giới này quá thật sự tự tại.</p>
+<p>Bởi vì trò chơi này chủ yếu là vì mở rộng Linh Thú Sư tri thức, cho nên trò chơi tài khoản trói định thân phận tài khoản, mỗi người chỉ có một cái tài khoản, thậm chí không thể xóa hào, cùng công cộng xã giao internet giống nhau.</p>
+<p>Bất quá thế giới này có rất nhiều có thể che giấu diện mạo che giấu tung tích đạo cụ, cũng không có mặt khác trò chơi cái gì nick name tìm kiếm, hoặc là người chơi định vị đạo cụ, cũng không sẽ bởi vì trói định tài khoản, chỉ còn thiếu nhưng chơi tính.</p>
+<p>Nói tóm lại, thế giới này bị Arthur cùng Tiểu Thiên miêu chế tạo tận khả năng gần sát thế giới hiện thực. Người thường dung nhập thế giới này, giống như là muối bỏ biển, trừ phi chính ngươi ra tới nhảy nhót, nếu không người khác không quá khả năng tìm được ngươi.</p>
+<p>Tinh Minh người rất nhiều, trò chơi này tự nhiên bị phân thành rất nhiều cái server.</p>
+<p>Mỗi cái server mỗi năm đều sẽ cử hành linh thú đại hội, bình xét ra phân server mạnh nhất Linh Thú Sư.</p>
+<p>Toàn server chung “Linh Thú Sư giải quán quân” bốn năm một lần, bốn năm gian phân server Linh Thú Sư đại hội tiền mười danh người chơi, có thể đạt được tham gia giải quán quân tư cách.</p>
+<p>Tuy rằng hiện tại trò chơi mới vừa khai phục, bốn năm còn quá sớm. Nhưng trò chơi nhà bình luận nhóm đã tiên đoán, bốn năm sau giải quán quân, tuyệt đối là chân chính linh thú thần tiên đánh nhau.</p>
+<p>Mà giải quán quân tuyển thủ dự thi, phỏng chừng đã là chân chính Linh Thú Sư.</p>
+<p>Bốn năm đào tạo một đám có thể quân dụng Linh Thú Sư, thời gian không nhanh không chậm vừa vặn tốt.</p>
+<p>Quen thuộc NPC mụ mụ tiếng gầm gừ vang lên, Minh Hữu không rảnh lo nghe lải nhải, nhanh như chớp vọt vào linh thú viện nghiên cứu, tưởng lấy được tân nhân linh thú, nhanh chóng vượt qua tay mới nhiệm vụ lúc sau, cùng cộng sự nhóm hội hợp.</p>
+<p>Linh thú viện nghiên cứu NPC, bị Arthur ác thú vị thiết trí thành lúc trước hắn ở Minh Hữu tâm linh ảo cảnh nhìn thấy, Minh Hữu hai vị dưỡng phụ hình tượng, liền tính cách đều dựa theo Minh Hữu hồi ức thiết trí, mưu cầu ở lúc sau mạo hiểm trung, đem sở hữu người chơi tức chết.</p>
+<p>Minh Hữu nhìn đến quen thuộc người xuất hiện, ngây người một chút.</p>
+<p>“Ai nha, tiểu minh, ngươi đã tới chậm, ngươi linh thú đều bị một con đột nhiên xuất hiện linh thú nhãi con đánh chạy, hiện tại chúng ta thôn không có tân linh thú.” Tên là “Cẩu kế hoạch” linh thú tiến sĩ phiền não nói.</p>
+<p>Minh Hữu sửng sốt một chút, thanh âm đề cao “Bị đánh chạy?”</p>
+<p>Không phải bị người khác lãnh đi rồi sao?</p>
+<p>Cẩu kế hoạch gật đầu “Đúng vậy, viện nghiên cứu đột nhiên xuất hiện một con màu đen heo miêu thú tiểu tể tử, có thể ăn có thể uống còn hoành hành ương ngạnh, thật là làm người đau đầu.”</p>
+<p>Heo, heo miêu thú? Minh Hữu đem tầm mắt dời về phía Cẩu kế hoạch phía sau, thấy một con quen thuộc heo miêu thú.</p>
+<p>“Heo miêu thú ngươi cái quỷ a! Cái này chủng tộc danh ai thiết trí?! Cho ta sửa trở về!” Một con bàn tay đại, trường một đôi Tiểu Cánh tiểu hắc miêu lao tới, đối với Cẩu kế hoạch chính là một cái miêu miêu cắn câu quyền.</p>
+<p>Tên là “Kiều đại thần” linh thú tiến sĩ chậm rì rì từ trong phòng đi ra, nói “Tiểu minh, nếu không ngươi thử xem xem có thể hay không thu phục này chỉ tiểu hắc miêu? Tuy rằng hắn tính tình táo bạo chút, nhưng tư chất phi thường hảo.”</p>
+<p>Minh Hữu đem truy đánh chó kế hoạch heo miêu thú…… Khụ khụ, phi thiên tiểu hắc miêu ôm lấy, nhỏ giọng hỏi “Ngươi như thế nào ở ta tay mới phó bản?”</p>
+<p>“Làm Tiểu Thiên khai cái cửa sau không phải vào được?” Tiểu hắc miêu tức giận đến cái đuôi ném thành cánh quạt, “Cái gì heo miêu thú tuyệt đối là Tiểu Thiên làm! Cho ta sửa đổi tới!”</p>
+<p>“Sửa sửa sửa.” Minh Hữu cười tủm tỉm nói, “Ta quyết định, Đại Hắc ngươi chính là ta cộng sự!”</p>
+<p>Minh Hữu đôi tay giơ lên tiểu hắc miêu, bày cái thu phục linh thú poss, hai vị linh thú tiến sĩ lạch cạch lạch cạch cho hắn vỗ tay, cũng đưa cho hắn một cái linh thú cầu.</p>
+<p>Nhưng hiển nhiên, tiểu hắc miêu là không có khả năng tiến linh thú cầu.</p>
+<p>Tân nhân Linh Thú Sư Minh Hữu, đỉnh nhà hắn tiểu hắc miêu, đi trên tân lữ đồ, cũng ở tai họa tay mới phó bản rừng rậm toàn thể linh thú lúc sau, rốt cuộc đi tới có thể nhiều người liên cơ đại thế giới.</p>
+<p>Trong thành thị náo nhiệt phồn hoa cảnh tượng, làm Minh Hữu không khỏi ngẩn người.</p>
+<p>Tuy rằng Arthur đã sớm nói qua, thành thị này sở hữu cảnh tượng, đều là căn cứ hắn kiếp trước thế giới mô phỏng sinh thành, Minh Hữu thấy quen thuộc đế đô, vẫn là không khỏi thất thần, dường như về tới quê nhà dường như.</p>
+<p>Lúc này, hắn bị liên tiếp không ngừng tiếng thét chói tai, từ trong hồi ức đánh thức.</p>
+<p>Minh Hữu mờ mịt nhìn vây lại đây người chơi.</p>
+<p>“Ngươi ngươi ngươi ngươi này quần áo, là vừa ra Tân Thủ thôn đi?” Một cái xinh đẹp nữ nhân trẻ tuổi phủng ngực khẩn trương nói.</p>
+<p>Minh Hữu mờ mịt gật đầu.</p>
+<p>Tiểu hắc miêu sửng sốt một chút, sau đó nâng lên một con mèo móng vuốt che khuất mặt.</p>
+<p>Xuẩn Hữu, ngươi xong rồi.</p>
+<p>Này tuyệt đối không phải ta sai. Tiểu hắc miêu thập phần rối rắm tưởng.</p>
+<p>“A a a a a ngươi là Minh tiên sinh đúng hay không? Ngươi khẳng định là Minh tiên sinh!” Nữ nhân trẻ tuổi tiếp tục thét chói tai, một bộ muốn ngất xỉu đi bộ dáng.</p>
+<p>“Trường cánh còn có trường vây cổ tiểu hắc miêu, chỉ có Đại Hắc miêu điện hạ!”</p>
+<p>“Mới vừa ra Tân Thủ thôn liền có độc nhất vô nhị linh thú đi theo Linh Thú Sư, còn dùng tưởng sao? Minh tiên sinh, cầu ký tên, cầu chụp ảnh chung!”</p>
+<p>“Điện hạ điện hạ, ta yêu ngươi, cầu làm ta sờ sờ lỗ tai.”</p>
+<p>“Lăn a ngươi, không chuẩn quấy rầy điện hạ!”</p>
+<p>“Minh tiên sinh, ta là ngươi fans, ta ở linh thú học thượng có cái nghi vấn……”</p>
+<p>“Điện hạ, mặt khác mười anh hùng cũng tới sao? Tiên La thiếu tướng cũng tới sao?”</p>
+<p>“Khẳng định đều tới, oa a, các ngươi đừng tễ a, đừng tễ Minh tiên sinh, Minh tiên sinh offline làm sao bây giờ?”</p>
+<p>Các người chơi một bên hướng bên này tễ, một bên tay trong tay vòng quanh một vòng tròn, tạo thành một đạo người tường, ngăn cách Minh Hữu cùng người chơi khác.</p>
+<p>Minh Hữu giống như là bị vây xem con khỉ dường như, bị “Vòng” ở người tường trung, không thể động đậy.</p>
+<p>Không xong, xã khủng phát tác.</p>
+<p>Tiểu hắc miêu thật sâu thở dài, bắt đầu suy xét chính mình muốn hay không tiến linh thú cầu, sau đó làm bộ cái gì cũng không biết?</p>
+<p>Hắn như thế nào biết, xuẩn Hữu đỉnh chính mình xuất hiện ở thành thị trung, cư nhiên sẽ bị nhận ra tới?</p>
+<p>“Kia, cái kia……” Minh Hữu rất tưởng phủ nhận, nhưng nhìn đại gia kích động như vậy bộ dáng, hắn biết, phủ nhận một chút dùng đều không có.</p>
+<p>Vì thế, chỉ có một cái biện pháp.</p>
+<p>Đó chính là…… Hạ tuyến độn.</p>
+<p>Minh Hữu từ khoang trò chơi chui ra tới thời điểm, nhà hắn linh thú cộng sự sớm từ khoang trò chơi ra tới.</p>
+<p>“Tiểu Thiên nói cho chúng ta biết, ngươi bị nhận ra tới.” Đại Bạch hùng lo lắng nói, “Không có việc gì đi?”</p>
+<p>Minh Hữu lau một phen trên mặt mồ hôi lạnh, miễn cưỡng cười nói “Còn, còn hảo. Nhiều người như vậy, dọa ta một cú sốc.”</p>
+<p>Tuy rằng hắn đã ở trong hiện thực đối mặt quá đám người, nhưng bên người vẫn luôn có người bảo hộ, hắn không có trực tiếp tao ngộ đám người đánh sâu vào.</p>
+<p>Lần này là thật sự dọa đến hắn.</p>
+<p>“Không phải ta sai.” Đại Hắc miêu từ khoang trò chơi nhảy ra, ngồi xổm ngồi ở Minh Hữu trước mặt, thực nghiêm túc nói.</p>
+<p>Sau đó Minh Hữu lông xù xù cộng sự nhóm vây quanh đi lên, đem ý đồ ném nồi Đại Hắc miêu cấp chôn.</p>
+<p>Đại Hắc miêu bị dĩ hạ phạm thượng các thuộc hạ đè ở dưới thân ngao ngao kêu, lại không dám phản kháng.</p>
+<p>Chột dạ.</p>
+<p>Minh Hữu dời đi tầm mắt. Đại Hắc, thực xin lỗi, ngươi giúp ta bối một chút nồi.</p>
+<p>Lần này hai người bọn họ đều có sai, cư nhiên không có ý thức được, đỉnh đầu trường cánh tiểu hắc miêu linh thú đi trong đám người, cư nhiên sẽ bị nhận ra tới chuyện này.</p>
+<p>Trước kia bọn họ cũng thường xuyên như vậy đi dạo phố, tiểu hắc miêu vẫn luôn cho chính mình bộ dị năng ẩn thân cùng quang học ẩn thân, cũng không lo lắng bại lộ thân phận.</p>
+<p>Lần này chơi trò chơi, bọn họ liền sơ sẩy đại ý.</p>
+<p>Dù sao cũng là ở trò chơi thế giới, bọn họ đem này coi như thực tế ảo phát sóng trực tiếp trúng.</p>
+<p>Còn hảo, bọn họ cũng chính là bị dọa nhảy dựng, sẽ không tạo thành vấn đề lớn.</p>
+<p>Hẳn là?</p>
+<p>Minh Hữu nhìn mãn internet hy vọng hắn trở về chơi trò chơi khóc tiếng la, trầm mặc.</p>
+<p>Hẳn là.</p>
+<p>Vì thế Minh Hữu muốn giống cái người chơi bình thường giống nhau chơi trò chơi kế hoạch chết non.</p>
+<p>Bình thường là không có khả năng bình thường, tuy rằng hắn có thể cho nhà mình linh thú cộng sự nhóm đổi một cái “Mô hình”, nhưng dùng chân chính linh thú đi huyết ngược mặt khác người chơi bình thường, vẫn là quá không đạo đức.</p>
+<p>Cuối cùng Minh Hữu cho chính mình an bài một cái NPC nhân vật, cũng thêm ở đổi mới cốt truyện phiến trung.</p>
+<p>Minh Hữu, mười một tuổi trở thành Linh Thú Sư, năm đó trở thành tân nhân Linh Thú Sư đại hội đệ nhất danh, năm sau ở giải quán quân trung đoạt giải quán quân, sau đó bắt đầu cùng cộng sự nhóm hoàn du thế giới, thăm dò các loại truyền thuyết linh thú chi mê truyền kỳ Linh Thú Sư.</p>
+<p>Nghe nói, hắn tuy rằng chỉ có hơn hai mươi tuổi, nhưng thực lực có thể nói toàn địa cầu đệ nhất. Đương ngươi gặp được hắn thời điểm, nếu có thể thông qua hắn thí luyện, nói không chừng sẽ đạt được một ít thứ tốt.</p>
+<p>Bất quá Minh Hữu cùng hắn cộng sự nhóm đều thực bướng bỉnh, ngươi gặp được hắn thời điểm, cũng nói không chừng cái gì đều không chiếm được, còn sẽ bị ác chỉnh một phen.</p>
+<p>Bốn năm sau, giải quán quân thắng lợi giả, sẽ đạt được hướng Minh Hữu khiêu chiến tư cách.</p>
+<p>Minh Hữu thở phào nhẹ nhõm “Đương cái gì người chơi bình thường, đời này đều không thể đương người chơi bình thường, chỉ có đương một đương chung cực Boss, mới có thể miễn cưỡng sinh hoạt bộ dáng.</p>
+<p>Đại Hắc miêu dùng sức gật đầu, chuẩn bị ở tân phiên bản trò chơi trong cốt truyện, gia nhập hắn cùng Minh Hữu cứu vớt thế giới hàng lậu.</p>
+<p>Ai nói thế giới này người chơi mới là vai chính? Ta hoàn toàn có thể đem chúng ta nhóm người này, biên soạn thành thế giới này anh hùng. Minh Hữu phía trước theo như lời cái gì cứu vớt mười hai cái thứ nguyên, hoàn toàn có thể thêm đi vào.</p>
+<p>Hắn linh thú các thuộc hạ thập phần do dự.</p>
+<p>Như vậy thật sự hảo sao? Trong trò chơi bí mật mang theo loại này không biết xấu hổ hàng lậu thật sự hảo sao? Đem trò chơi phim tuyên truyền cùng trò chơi chủ tuyến cốt truyện quay chụp thành lấy bọn họ là chủ anh hùng phiến thật sự không thành vấn đề sao?</p>
+<p>“Thế giới này yêu cầu anh hùng, cùng với biên cái không biết là ai NPC, không bằng làm chúng ta thượng.” Minh Hữu thập phần duy trì Đại Hắc miêu quyết định.</p>
+<p>Đại Hắc miêu mắt lé ngó “Như thế nào? Chúng ta không xứng sao? Nếu thật sự xuất hiện loại này nguy cơ, có thể cứu vớt Tinh Minh trừ bỏ chúng ta, còn có ai?”</p>
+<p>Khí phách!</p>
+<p>Các thuộc hạ vừa nghe, đốn giác có đạo lý.</p>
+<p>Đại Hoàng con khỉ đỡ trán tự mình phun tào “Ta như thế nào cảm thấy, chúng ta tư tưởng cùng điện hạ cùng Tiểu Hữu càng ngày càng xu gần?”</p>
+<p>Càng ngày càng…… Trung nhị?</p>
+<p>Loại này đem chính mình viết thành anh hùng sự, thật không cảm thấy cảm thấy thẹn sao?</p>
+<p>“Tiểu Hữu cùng điện hạ đã quyết định muốn đi cứu vớt trong trò chơi thế giới, nếu Tiểu Hữu bên người mặt khác linh thú cộng sự không phải chúng ta, ngươi chẳng lẽ không cảm thấy càng thêm cách ứng sao?” Đại Tử mã nói.</p>
+<p>Đại Hoàng con khỉ nghe xong, không thể không thừa nhận, lời này chọc trúng hắn tử huyệt.</p>
+<p>Ở bọn họ đã không thể ngăn cản Arthur điện hạ cùng Minh Hữu cùng nhau phạm trung nhị bệnh thời điểm, chỉ có thể căng da đầu đi theo cùng đi.</p>
+<p>Bằng không, làm Minh Hữu mang mặt khác linh thú đi cứu vớt thế giới không thành?</p>
+<p>Vì thế, trò chơi này sau này chủ tuyến cốt truyện hỗn loạn hàng lậu sự, liền như vậy định ra tới.</p>
+<p>Đương trò chơi phiên bản đổi mới, tân cốt truyện động họa xuất hiện lúc sau, sở hữu người chơi đều ở trên đầu đánh liên tiếp dấu chấm hỏi.</p>
+<p>“Ta thật xuẩn, thật sự, ta nhiều lắm cho rằng Minh tiên sinh ở bị chúng ta nhận ra một lần lúc sau, sẽ che giấu tung tích tiếp tục chơi trò chơi. Ta thật sự không nghĩ tới, Minh tiên sinh cư nhiên, cư nhiên biến thành NPC?”</p>
+<p>“Biến thành NPC thực bình thường, nhưng…… Nhưng đến nỗi cho chính mình an bài lớn như vậy bối cảnh sao, cười chết ta ha ha ha.”</p>
+<p>“Tới, ta nhìn xem, thiên tài Linh Thú Sư, mạnh nhất Linh Thú Sư cùng linh thú đào tạo sư, thủ hạ tuy rằng chỉ có mười một chỉ linh thú, nhưng mỗi chỉ linh thú đều có thể cùng hoang dại truyền thuyết cấp bậc thần thoại cấp bậc linh thú bẻ cổ tay. Ân, không thành vấn đề a, nơi nào có vấn đề? Này còn không phải là chúng ta Minh tiên sinh sao?”</p>
+<p>“Đúng vậy, tuy rằng cốt truyện tào điểm rất nhiều, nhưng nhìn kỹ, tào điểm ở nơi nào? Này rõ ràng là sự thật, đỡ trán.”</p>
+<p>“Hảo gia hỏa, phim tuyên truyền trực tiếp là chân nhân xuất cảnh, nói tốt tuyên truyền ‘ động họa ’ đâu?”</p>
+<p>“Sẽ động hình ảnh, không phải động họa là cái gì, phất tay.”</p>
+<p>“Ta muốn sửa đúng một chút, trò chơi trong cốt truyện, Minh tiên sinh đều không phải là chỉ có mười một chỉ linh thú, mà là mười ba chỉ. Tiểu Thiên miêu cũng là Minh tiên sinh linh thú, một con từ internet trung ra đời nhân công linh thú.</p>
+<p>Thí nghiệm phục nội trắc trung, Tiểu Thiên miêu là bị vai ác tổ chức chế tạo ra tới nhân công linh thú, còn sẽ nhấc lên tinh phong huyết vũ, là tân toàn server hoạt động. Hoạt động cốt truyện cuối cùng, vai ác căn cứ bị Minh tiên sinh đánh bạo, Tiểu Thiên miêu liền đi theo Minh tiên sinh chạy.</p>
+<p>Trừ bỏ Tiểu Thiên miêu ở ngoài, Minh tiên sinh còn dưỡng một con hắc bạch gấu con, đối, chính là các ngươi biết rõ Cổn Cổn. Trò chơi trong cốt truyện, có một đôi linh thú vợ chồng ở cứu vớt thế giới khi kiệt lực mà chết, đem hài tử phó thác cấp Minh tiên sinh.”</p>
+<p>“Trên lầu thật nội quỷ? Nội quỷ còn có càng nhiều tin nóng sao??”</p>
+<p>“Hẳn là đã không có, nội quỷ tài khoản đã vô. Bất quá hạ phiên bản lập tức liền phải tới, kịch thấu cũng không quan hệ đi?”</p>
+<p>“Cho nên nội quỷ là ai, thí nghiệm phục người chơi đều là thời hạn nghĩa vụ quân sự quân nhân đi? Sao có thể có người sẽ để lộ bí mật?”</p>
+<p>“Nga, nội quỷ là gấu trúc đỏ.”</p>
+<p>“Hoắc Nhật Thiên thiếu tướng a…… Ngươi muốn ta nói như thế nào ngài đâu……”</p>
+<p>“A, thẩm thẩm a! Ngươi như thế nào có thể chính mình đương anh hùng! Ta cũng muốn ta cũng muốn!” Đại tuyết báo ở trò chơi trailer tuyên bố lúc sau lập tức chạy tới, quỳ rạp trên mặt đất ôm lấy Minh Hữu đùi gào khan, “Ta cũng muốn cứu vớt thế giới!”</p>
+<p>“Hảo hảo hảo, ta làm ngươi thúc thúc ở trong trò chơi cho ngươi thêm diễn.” Minh Hữu thập phần dễ nói chuyện.</p>
+<p>“Một bên đi, nói chính sự, đừng quấy rối.” Đại Kim sư tử bệ hạ dẫm lên hắn báo tuyết nhi tử đầu to nói.</p>
+<p>Đại tuyết báo vâng vâng dạ dạ lăn đến một bên, chỉ dám dùng ánh mắt phản kích cha hắn.</p>
+<p>Hiển nhiên, tuy rằng đại tuyết báo biến cường, nhưng còn không có hắn cha cường, như cũ bị hắn cha đè nặng đánh.</p>
+<p>Đại Kim sư tử bệ hạ theo như lời chính sự, là một vị “Đức cao vọng trọng” lão nhà khoa học qua đời sự.</p>
+<p>“Nhà hắn thật là không biết xấu hổ a, cư nhiên xin quốc táng, còn muốn ta cùng ta các thuộc hạ cùng nhau tham dự?” Arthur cười lạnh.</p>
+<p>Minh Hữu một bên trấn an đáng thương lại bị lão cha dẫm đầu đại tuyết báo, một bên tò mò hỏi “Là người xấu sao?”</p>
+<p>Arthur trầm mặc trong chốc lát, phúng cười nói “Nói như thế nào đâu, hắn cũng không tính làm chuyện xấu, chỉ là bo bo giữ mình mà thôi.”</p>
+<p>Một cái nguyên bản tài hoa hơn người nhà khoa học, đi vào trung niên lúc sau bắt đầu tranh quyền đoạt lợi, kéo bè kéo cánh, bài trừ dị kỷ, thành Tinh Minh đứng đầu học phiệt, nhất “Vĩ đại” nhà khoa học.</p>
+<p>Nhưng hắn không còn có bất luận cái gì khoa học thượng thành tựu.</p>
+<p>Ở chống lại Trùng tộc xâm lấn thời điểm, hắn nghiên cứu đoàn đội nghiêm trọng kéo Tinh Minh chân sau, thẳng đến chiến tranh kết thúc, bọn họ cũng không có nghiên cứu ra Trùng tộc nhược điểm.</p>
+<p>Lúc ấy, ở chiến tranh nhất thảm thiết thời điểm, vẫn là Arthur mang theo đến cậy nhờ hắn tuổi trẻ các nhà khoa học, ở trên chiến trường hoàn thành Trùng tộc nhược điểm phân tích, đặt lúc sau thắng cục. Gấu trúc đỏ cùng Đại Tử mã chính là cái này đoàn đội người phụ trách.</p>
+<p>Tác giả có lời muốn nói ( bắt trùng ) ngươi là thiên tài, , Địa chỉ web</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong100.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong102.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "phat-song-truc-tiep-duong-nhai-con-sau-ta-thanh-tinh-te-nha-giau-so-mot";
+const NOVEL_TITLE = "Phát sóng trực tiếp dưỡng nhãi con sau ta thành tinh tế nhà giàu số một";
+const CHAPTER_TITLE = "Chương 101";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

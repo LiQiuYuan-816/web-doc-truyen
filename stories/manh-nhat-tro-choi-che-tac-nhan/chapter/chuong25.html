@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 25</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Mạnh nhất trò chơi chế tác nhân
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 25</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong24.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong26.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Tiêu Cẩu cùng Kiều Hoành không có lại liền “Ngữ văn mãn phân 150 phân chỉ khảo 120 có phải hay không cọng bún sức chiến đấu bằng 5” cái này vui đùa tiếp tục thảo luận đi xuống. Tiêu Cẩu thập phần cao hứng đem bản thảo cùng PPT giao cho Kiều Hoành, chính mình tiếp tục điều chỉnh thử trò chơi đi.</p>
+<p>Kiều Hoành cực cực khổ khổ bớt thời giờ giúp Tiêu Cẩu đem bản thảo cùng PPT chuẩn bị hảo, còn lôi kéo Tiêu Cẩu tập luyện hồi lâu, Tiêu Cẩu cảm thấy chính mình đã thiên hạ vô địch, không phải, đã tính toán không bỏ sót.</p>
+<p>Kiều Hoành lại lần nữa vì Tiêu Cẩu loạn dùng thành ngữ mà đỡ trán thở dài. Hắn thật không biết Tiêu Cẩu là thật sự thành ngữ tạo nghệ cực kém, vẫn là cố ý loạn dùng thành ngữ.</p>
+<p>Đi tham gia toạ đàm ngày đó, Tiêu Cẩu ở Kiều Hoành mãnh liệt yêu cầu hạ, mặc vào Kiều Hoành giúp hắn mua quần áo, chuyên môn đi tiệm cắt tóc xử lý một chút tóc, làm mặt nạ hóa trang điểm nhẹ, còn phun nam sĩ đạm nước hoa lúc sau mới ra cửa.</p>
+<p>Tiêu Cẩu giống một con cẩu tử giống nhau đối với chính mình ngửi ngửi ngửi “Trên người nhiều không thuộc về chính mình hương vị thật là kỳ quái. Bất quá nguyên lai Đại Kiều ngươi còn sẽ bình thường quần áo phối hợp, ta còn tưởng rằng ngươi chỉ biết phối hợp trào lưu tiền tuyến phong cách quần áo đâu.”</p>
+<p>Tuy rằng trên quần áo trang trí phẩm đã bị tá xuống dưới, nhưng như cũ trang điểm đến khốc đến không bằng hữu Kiều Hoành một bên lái xe một bên nói “Ngươi lại khinh bỉ ta đối phối hợp quần áo ánh mắt, ta liền đem ngươi ném nơi này, chính ngươi đi đường đi.”</p>
+<p>Tiêu Cẩu lẩm bẩm “Nói giống như ta sẽ không đánh xe dường như.”</p>
+<p>Kiều Hoành nhướng mày “Nga?”</p>
+<p>Tiêu Cẩu ho khan “Tốt, ta sai rồi, Đại Kiều ánh mắt giỏi quá! Không hổ là Noãn Noãn thủ tịch thiết kế sư!”</p>
+<p>Kiều Hoành hừ lạnh một tiếng, nói “Ta tuy rằng đối trưởng bối thích lão thổ phối hợp không am hiểu, nhưng ta đối như thế nào làm chính mình thoạt nhìn nhất soái vẫn là thực am hiểu. Ta nhưng không hy vọng ngươi đi Thủy Mộc diễn thuyết thời điểm bị người cười nhạo quần áo lão thổ. Đừng làm mặt quỷ, giả bộ cái đứng đắn bộ dáng ra tới! Ngươi là muốn đi nhận người, đừng làm cho bạn cùng trường cảm thấy ngươi là cái không đáng tin cậy đậu bỉ!”</p>
+<p>Đối như thế nào làm chính mình thoạt nhìn nhất soái vẫn là thực am hiểu? Tiêu Cẩu trong đầu hiện lên Kiều Hoành đã từng phi chủ lưu khói xông trang, thiếu chút nữa không nhịn cười ra tiếng.</p>
+<p>Tiêu Cẩu nhẫn cười nói “Hảo hảo hảo, chính thức trường hợp ta liền dựa ngươi giúp ta phối hợp quần áo. Bất quá trên mặt hồ một tầng đồ vật thật khó chịu, hy vọng ta đợi chút ra mồ hôi đừng hoa trang.”</p>
+<p>Kiều Hoành tức giận nói “Ngươi cho rằng ta đồ trang điểm là cái gì không chính hiệu hóa sao?”</p>
+<p>Tiêu Cẩu thật cẩn thận sờ sờ mặt, nói “Nói lên, ta còn không có gặp qua ngươi hoá trang, ngươi lần trước thượng phát sóng trực tiếp cũng không hoá trang.”</p>
+<p>Kiều Hoành giải thích nói “Lần trước phát sóng trực tiếp không phải bởi vì khai phát sóng trực tiếp trước vẫn luôn ở tăng ca, đầu choáng váng não trướng quên mất sao? Đến nỗi ngày thường……”</p>
+<p>Kiều Hoành dừng một chút, nói “Lười một năm, ra cửa đột nhiên liền không nghĩ hoá trang.”</p>
+<p>Tiêu Cẩu nói “Ngươi lớn lên như vậy soái, không hoá trang đều nghiền áp đại bộ phận người, hoàn toàn không cần hoá trang. Đúng rồi, đợi chút toạ đàm ngươi muốn nghe sao? Vẫn là muốn đi ra ngoài đi dạo?”</p>
+<p>Kiều Hoành nói “Ta sẽ ở dưới đài chờ ngươi. Hy vọng có ta ở đây dưới đài nhìn chằm chằm ngươi, ngươi có thể nhớ kỹ bản thảo, đừng giống lần trước phát sóng trực tiếp thời điểm như vậy rửng mỡ, đột nhiên trường thi phát huy nói bậy một hồi.”</p>
+<p>Tiêu Cẩu thổi huýt sáo. Người nào tới điên, hắn mới không biết đâu.</p>
+<p>Tới rồi trường học lúc sau, Tiêu Cẩu cùng Kiều Hoành đi trước thấy hiệu trưởng, sau đó Kiều Hoành đeo đỉnh đầu mũ lưỡi trai, vành nón áp xuống che khuất nửa bên mặt, cõng nghiêng túi xách lấy notebook liền đi theo trước tiên đi hội trường bậc thang chuẩn bị giáo chức cùng nhau tiên tiến phòng học.</p>
+<p>Kiều Hoành tuyển một cái tương đối dựa sau góc ngồi xuống, đương nghe giảng tòa học sinh tới thời điểm, chỉ đương hắn cũng là trường học học sinh, không có khiến cho bất luận kẻ nào chú ý.</p>
+<p>Thực mau hội trường bậc thang liền ngồi đầy người, còn có người tự mang băng ghế ngồi ở hành lang lối đi nhỏ thượng, cửa cùng cửa sổ cũng đứng đầy người. Tiêu Cẩu tiến hội trường bậc thang thời điểm hoảng sợ.</p>
+<p>“Nguyên lai ta nhân khí như vậy cao sao? Vẫn là nói hiện tại vây quanh ta đều là muốn xử lý ta Hồng Cẩu người chơi?” Tiêu Cẩu khai mạch sau câu đầu tiên lời nói chính là nói giỡn, “Ta và các ngươi nói, trong hiện thực giết người đánh người đều phạm pháp nga.”</p>
+<p>Khán giả cười vang. Kiều Hoành che lại mặt. Nói tốt không rửng mỡ đâu? Tiêu Cẩu ngươi cho ta kiềm chế điểm!</p>
+<p>Còn hảo Tiêu Cẩu ở chính sự thượng vẫn là đáng tin cậy. Khai vài câu vui đùa điều động không khí lúc sau, hắn liền mở ra PPT nghiêm túc bắt đầu bối bản thảo.</p>
+<p>Vào đại học thời điểm, vô luận là tiểu tổ tác nghiệp cá nhân tác nghiệp, lão sư đều yêu cầu học sinh lên đài giảng giải. Tiêu Cẩu cũng không sợ tràng, nói được cũng không tệ lắm.</p>
+<p>Tiêu Cẩu PPT nội dung đương nhiên không phải hắn đối trò chơi giới tiền cảnh triển vọng, Hồng Cẩu sau này phát triển loại này hàng khô. Này đó hàng khô đều là hắn muốn cất giấu bí mật, tương lai khắc địch chế thắng pháp bảo. Hắn cũng chính là nói một ít quốc nội so sánh với nước ngoài, trò chơi ngành sản xuất còn khuyết thiếu một ít đồ vật, sau đó trọng điểm giảng giải một chút trò chơi chơi pháp trung đối giới tính ẩn tính kỳ thị.</p>
+<p>Noãn Noãn sau khi thành công, rất nhiều truyền thông đã bắt đầu thao thao bất tuyệt phân tích vấn đề này, Tiêu Cẩu không cần cất giấu, có thể nghiêm túc giảng một giảng. Dù sao hắn nói lúc sau, mặt khác trò chơi nhà máy hiệu buôn cũng sẽ không thay đổi chính mình dự định trò chơi khai phá kế hoạch. Rốt cuộc ẩn hình kỳ thị liên không phải dễ dàng như vậy liền tiêu trừ.</p>
+<p>Tiêu Cẩu sở giảng hàng khô tuy rằng không nhiều lắm, nhưng ở còn chưa ra cổng trường bọn học sinh trong tai, lại là tràn đầy hàng khô. Đương Tiêu Cẩu dùng “Chơi súng đồ chơi là chủ lưu, chơi búp bê Tây Dương liền không bị đại chúng tiếp thu” cái này tới so sánh hiện giờ trò chơi giới ẩn hình kỳ thị giới tính tình huống khi, có không ít học sinh, đặc biệt là nữ học sinh đem bàn tay đều chụp đỏ.</p>
+<p>“Kỳ thật ta nói Noãn Noãn là nữ tính hướng trò chơi cũng không chuẩn xác, này liền giống vậy ‘ nam hài nhi không thể chơi búp bê Tây Dương quá mọi nhà nhảy dây thun ’ luận điệu hiển nhiên là không đúng giống nhau. Noãn Noãn chỉ là hưu nhàn loại trò chơi.” Tiêu Cẩu nửa nói giỡn nói, “Nói lên đổi trang, hiện tại trang phục thiết kế sư trung nam tính tỷ lệ cũng không thấp, không ai thuyết phục gắn kế cùng phối hợp là nữ tính chuyên chúc, cho nên game thời trang như thế nào có thể nói là nữ tính chuyên chúc? Kế tiếp, chúng ta sẽ ở Noãn Noãn hoạt động trung dẫn vào nam tính đổi trang, đại gia về sau không những có thể ở Noãn Noãn trung dưỡng nữ nhi, còn có thể dưỡng nhi tử.”</p>
+<p>Hiện trường cười vang.</p>
+<p>Kiều Hoành nhẹ nhàng thở ra. Hắn tưởng, Tiêu Cẩu lần này rốt cuộc không có rửng mỡ hồ khản, hoàn toàn là dựa theo bản thảo tới. Hắn trách oan Tiêu Cẩu.</p>
+<p>Nhưng Kiều Hoành khẩu khí này hiển nhiên tùng quá sớm.</p>
+<p>PPT nói xong lúc sau, bắt đầu hiện trường hỏi đáp phân đoạn.</p>
+<p>Học sinh vấn đề “Tiêu Cẩu sư huynh, xin hỏi ngươi gây dựng sự nghiệp thành công bí quyết là cái gì? Là ngươi đối trò chơi giới lâu dài ánh mắt, vẫn là ngươi trác tuyệt năng lực cá nhân? Hoặc là hai người đều có?”</p>
+<p>Tiêu Cẩu mỉm cười “Hiển nhiên, đều không phải. Ta tưởng Thủy Mộc học sinh, chỉ cần vào đại học thời điểm không phải hỗn nhật tử, năng lực cá nhân khẳng định đều có. Tuy rằng các ngươi còn không có rời đi vườn trường, nhưng tại đây sở quốc tế đứng đầu học phủ trung, các ngươi tiếp nhận rồi các ngành các nghề thành công nhân sĩ hun đúc, tầm mắt khẳng định cũng là không lầm. Nhưng là cuối cùng gây dựng sự nghiệp có thể thành công người, như cũ là lông phượng sừng lân. Cho nên, gây dựng sự nghiệp thành công bí quyết trừ bỏ cứng nhắc điều kiện ở ngoài, vận khí cũng là rất quan trọng nhân tố. Cứng nhắc điều kiện có thể bằng vào chính mình nỗ lực đạt tới, đang ngồi đều là nỗ lực người, đối với các ngươi mà nói, khẳng định khiếm khuyết chính là vận khí cùng kỳ ngộ.”</p>
+<p>Học sinh tò mò “Kia Tiêu Cẩu sư huynh cho rằng chính mình lớn nhất vận khí cùng kỳ ngộ là cái gì? Là 《 dao gọt hoa quả khách 》 thành công sao?”</p>
+<p>Tiêu Cẩu lắc đầu “Không, ta lớn nhất vận khí cùng kỳ ngộ, đương nhiên là gặp được Đại Kiều, bế lên Đại Kiều thô to chân a.”</p>
+<p>Bọn học sinh …… Ha?</p>
+<p>Tiêu Cẩu mỉm cười “Đại Kiều chẳng những đảm nhiệm họa sĩ, còn muốn thay ta trau chuốt cốt truyện, kế hoạch hoạt động, hiện tại hành chính cũng là hắn ở quản, hắn vẫn là Hồng Cẩu kim chủ. Càng quan trọng là, hắn lại đưa tiền lại xuất lực, còn không yêu tiền không yêu quyền, liền Hồng Cẩu cổ phần đều là ta ngạnh đưa cho hắn, hắn hiện tại một phân tiền tiền lương cùng phân thành cũng chưa lấy, quả thực là cái đại thánh nhân. Không có như vậy huynh đệ, ta sao có thể thành công?”</p>
+<p>Bọn học sinh Ách……?</p>
+<p>Tiêu Cẩu buông tay “Đáng tiếc loại này vận khí tốt, các ngươi là không quá khả năng ngộ được đến. Cho nên ta thành công không thể phục chế.”</p>
+<p>Bọn học sinh …… Lăn.</p>
+<p>Tiêu Cẩu hỏi “Các ngươi còn có cái gì muốn hỏi?”</p>
+<p>Bọn học sinh …… Nghe ngươi như vậy vừa nói, ta đột nhiên không quá tưởng vấn đề.</p>
+<p>Ngồi ở thính phòng Kiều Hoành khóe miệng run rẩy, có điểm khống chế không được tưởng niết Tiêu Cẩu quai hàm tay.</p>
+<p>Ngươi ở nói hươu nói vượn cái gì? Ngươi tin hay không ngày mai ngươi này phiên nói bậy đại đạo liền sẽ trở thành truyền thông đứng đầu? Thần mẹ nó thành công không dựa ánh mắt không dựa năng lực toàn dựa ôm huynh đệ đùi, có ngươi như vậy độc hại sư đệ sư muội sao?!</p>
+<p>Tiêu Cẩu cười tủm tỉm nói “Ai nha, xem ra nói thật không tốt lắm, đại gia bị ta kích thích không nhẹ a. Không có biện pháp, có tốt như vậy huynh đệ, chính là nhịn không được khoe ra một chút. Các ngươi coi như ta đây là nhà giàu mới nổi tâm thái đi.”</p>
+<p>Bọn học sinh …… Thần mẹ nó nhà giàu mới nổi tâm thái, ngươi làm chúng ta còn như thế nào hỏi?!</p>
+<p>Rốt cuộc có bọn học sinh từ khiếp sợ trung phục hồi tinh thần lại, hỏi tân vấn đề “Hồng Cẩu kế tiếp còn sẽ làm hưu nhàn loại trò chơi sao? Hồng Cẩu là chuẩn bị dùng hưu nhàn loại trò chơi ở trò chơi giới dừng chân sao?”</p>
+<p>Tiêu Cẩu không chút do dự nói “Xem như hưu nhàn loại trò chơi? Bởi vì ta cảm thấy game mobile đều rất hưu nhàn. Bất quá dừng chân hưu nhàn loại trò chơi không tính là, dù sao có huynh đệ cho ta lật tẩy, phá sản ta cũng có cơm ăn, chúng ta mỗi lần đều là đem thượng một cái trò chơi kiếm lấy tài chính toàn bộ đầu nhập tiếp theo cái trò chơi, không suy xét quá cái gì chiến lược cái gì trường kỳ mục tiêu, đều là ta muốn làm cái gì trò chơi liền làm cái đó trò chơi.”</p>
+<p>Bọn học sinh …… Gì?!</p>
+<p>Vấn đề học sinh thanh âm đều có điểm run “Như vậy không kế hoạch không mục tiêu không sợ phá sản sao?”</p>
+<p>Tiêu Cẩu biểu tình thực nghiêm túc, lời nói thực không nghiêm túc “Cho nên ta nói, đã có huynh đệ lật tẩy, phá sản ta đều có cơm ăn, liền không sao cả a. Yên tâm, ta mỗi lần lãng tiếp theo cái trò chơi trước, đều sẽ đem công nhân tiền lương dự lưu đủ, sẽ không cắt xén công nhân tiền lương.”</p>
+<p>Bọn học sinh Ngươi nói “Lãng” đúng không? Ngươi vừa rồi đích xác nói “Lãng” đúng không! Đây là khắc không thể trừ tiền lương vấn đề sao?! Ngươi nha như vậy khai công ty, nhập viên chức công có cái gì tiền đồ đáng nói sao?! Ăn bữa hôm lo bữa mai hảo sao?!</p>
+<p>Kiều Hoành hít sâu, hít sâu, hít sâu, tức giận đến thở không nổi!</p>
+<p>Ngươi nha rốt cuộc còn có nghĩ nhận người?! Vừa rồi đáng tin cậy Tiêu Cẩu đâu?! Như thế nào đột nhiên hồ ngôn loạn ngữ!! Ngươi như vậy sẽ làm người hoài nghi công ty tiền đồ!!</p>
+<p>Tiêu Cẩu mỉm cười “Còn có đồng học vấn đề sao?”</p>
+<p>Kiều Hoành một bàn tay đem vành nón đi xuống ấn, một bàn tay nhấc tay. Phụ trách cử micro chính là cùng hắn cùng tiến phòng học giáo chức, lập tức đặng đặng đặng chạy đến hắn bên người, kích động đem micro đưa qua.</p>
+<p>Tiêu Cẩu không từ đen nghìn nghịt một đám người trung đem chính mình hảo huynh đệ nhận ra tới, hắn mỉm cười nói “Vị đồng học này có cái gì muốn hỏi sao?”</p>
+<p>Kiều Hoành hạ giọng nói “Tiêu Cẩu ngươi câm miệng.”</p>
+<p>Tiêu Cẩu “!!!”</p>
+<p>Ở đây học sinh “!!!”</p>
+<p>Toàn trường người động tác nhất trí quay đầu nhìn về phía cái này dám can đảm làm khách quý câm miệng thần nhân.</p>
+<p>Tiêu Cẩu nháy mắt nghe ra nhà mình huynh đệ thanh âm, cười gượng nói “Đại Kiều, đừng nóng giận, ta này không phải sinh động một chút không khí sao. Các sư đệ sư muội khẳng định đều nghe ra tới ta là ở nói giỡn, ha…… Ha ha……”</p>
+<p>Ở đây học sinh “!!!”</p>
+<p>Ở đây học sinh ồ lên. Nguyên lai Kiều đại thần cũng ở sao sao sao sao sao!!!!!</p>
+<p>Ha ha ha ha ha cẩu tử giây túng a ha ha ha ha ha ha, vẫn là Kiều đại thần có thể chế được lãng cái lãng cẩu tử!</p>
+<p>Kiều Hoành đem micro còn cấp người chủ trì, đem notebook nhét vào nghiêng túi xách, xách theo nghiêng túi xách bước đi hướng trước đài, ở trước mắt bao người đi lên đài, sau đó gỡ xuống mũ, đối với đại gia mỉm cười nói “Hiện tại Tiêu Cẩu diễn thuyết đã kết thúc, ta liền không thỉnh tự đến lên đài, hy vọng đại gia không cần để ý. Công ty phát triển sách lược hắn nói không tính, đại gia có cái gì nghi vấn hỏi ta đi.”</p>
+<p>Tiêu Cẩu mặt dày vô sỉ nói “Đúng đúng đúng đúng, ta nói không tính ha ha ha. Ta vừa rồi chính là cùng Đại Kiều cùng nhau cùng đại gia khai cái vui đùa, chúng ta công ty đương nhiên là có rõ ràng phát triển sách lược. Hành chính phương diện sự vẫn là hỏi Đại Kiều đi, ta không quá am hiểu cái này.”</p>
+<p>Bọn học sinh …… Còn thất thần làm gì? Chạy nhanh thét chói tai a! Kiều đại thần ta yêu ngươi! Hảo soái thật ngầu cùng Tiểu Cẩu cẩu hoàn toàn không giống nhau!</p>
+<p>Tiêu Cẩu tự giác đem C vị nhường ra tới, cùng Kiều Hoành cùng nhau thay phiên trả lời các sư đệ sư muội vấn đề, thành thật cực kỳ, đáng tin cậy cực kỳ, một chút đều không có lãng. Thời gian kết thúc, Tiêu Cẩu cùng Kiều Hoành hai người ở giáo chức hộ tống hạ rời đi trường học, theo tiểu đạo tin tức, có người ở bãi đỗ xe thấy được Kiều đại thần nhéo Tiêu Cẩu hai bên quai hàm dùng sức xả, mà Tiêu Cẩu tắc giơ lên đôi tay làm đầu hàng trạng.</p>
+<p>Có lẽ, lần này toạ đàm thượng Tiêu Cẩu thả bay cùng Kiều đại thần lên sân khấu, đều không phải là hai người cố ý thông đồng tốt?</p>
+<p>“Ta cảm thấy không phải thông đồng tốt, ngươi không thấy được Tiêu Cẩu cái kia hoảng loạn biểu tình, quả thực cùng cắn hỏng gia cụ cẩu tử bị chủ nhân phát hiện dường như, quả thực chột dạ hoảng hốt cực kỳ.”</p>
+<p>“Nói lên ta vẫn luôn kỳ quái vì cái gì Đại Kiều vì cái gì bất hòa Tiểu Cẩu cùng nhau tới, nguyên lai Đại Kiều ở dưới đài cứu tràng a.”</p>
+<p>“Kiều đại thần cũng là tức giận đến không được, nghe cẩu tử nói cái gì a, thành công bí quyết ở chỗ có một kẻ có tiền nhân phẩm hảo cộng thêm lao tâm lao lực hảo cơ hữu, tương lai chiến lược là chèo thuyền không cần mái chèo…… Ta nếu là Kiều đại thần cũng tức ch·ế·t rồi.”</p>
+<p>“Cái gì kêu chèo thuyền không cần mái chèo?”</p>
+<p>“Chèo thuyền không cần mái chèo —— toàn dựa lãng a!”</p>
+<p>“Chỉ có ta cho rằng hai người bọn họ là thật sự thông đồng tốt sao? Rốt cuộc công ty tương lai chiến lược khẳng định là yêu cầu bảo mật, Hồng Cẩu chỉ là tiểu công ty, bọn họ nếu trước tiên tiết lộ chính mình muốn làm trò chơi, nói không chừng sẽ bị công ty lớn vây truy chặn đường. Nếu bị hỏi cập mấu chốt vấn đề không thể nói, cùng với đông cứng cự tuyệt, không bằng nói giỡn hỗn qua đi, không khí khả năng còn tốt một chút.”</p>
+<p>“Ngươi như vậy vừa nói ta cảm thấy cũng có khả năng là như thế này. Sự nghiệp như vậy thành công, Tiêu Cẩu không có khả năng là không lòng dạ người, đích xác như vậy trả lời khẳng định so xụ mặt nói ‘ công ty cơ mật không thể phụng cáo ’ hảo đến nhiều.”</p>
+<p>“Bất quá bọn họ là trước tiên thương lượng tốt sao? Tiêu Cẩu kỹ thuật diễn có như vậy hảo?”</p>
+<p>“Khả năng không phải trước tiên thương lượng tốt, chỉ là Tiêu Cẩu biết Kiều Hoành sẽ ra tới cứu tràng, cho nên cứ yên tâm hồ ngôn loạn ngữ.”</p>
+<p>“Có vài cái người chứng kiến nhìn đến Kiều đại thần ở bãi đỗ xe xả Tiểu Cẩu cẩu quai hàm, hẳn là ở sinh khí đi.”</p>
+<p>“Oa dựa, xả quai hàm? Như vậy có ái? Các ngươi có hay không người chụp được tới?”</p>
+<p>“Nhấc tay, ta là người chứng kiến. Bất quá Kiều Kiều xả một chút liền buông tay, chưa kịp sờ di động.”</p>
+<p>“Hảo cơ, cơ đã ch·ế·t, này hai người nên không phải là gay đi?”</p>
+<p>“Là lại như thế nào, này không phải rất ngọt sao?”</p>
+<p>“Thiên lạp, thế giới này ưu tú nam nhân đều muốn cùng ưu tú nam nhân ở bên nhau sao?!”</p>
+<p>“Phải nói ưu tú người đều cùng ưu tú người ở bên nhau, vô luận nam nữ.”</p>
+<p>“Trên mạng thảo luận có phải hay không đề thi hiếm thấy?” Tiêu Cẩu kiều chân bắt chéo, phiên động di động nói.</p>
+<p>Kiều Hoành tức giận nói “Ngươi hẳn là cảm tạ võng hữu não bổ, không làm ngươi biến thành một cái chê cười.”</p>
+<p>Tiêu Cẩu thiên đầu, nói “Không phải não bổ, ta lúc ấy đích xác như vậy tưởng. Công ty tương lai phát triển khẳng định không có khả năng nói ra, không bằng nói giỡn hỗn qua đi. Ai biết ngươi sẽ tức giận đến chạy lên đài?”</p>
+<p>Kiều Hoành cười lạnh “Ý của ngươi là ta sai la?”</p>
+<p>Tiêu Cẩu chớp chớp mắt, giả bộ thập phần ngoan ngoãn biểu tình “Không, ta ý tứ là, hai chúng ta quả thực tâm hữu linh tê, phối hợp ăn ý.”</p>
+<p>Kiều Hoành nhìn Tiêu Cẩu một hồi lâu, Tiêu Cẩu ngoan ngoãn.jpg. Cuối cùng Kiều Hoành vẫn là phá công, bất đắc dĩ nói “Hảo đi, ta cũng đoán được, ngươi là tưởng hỗn qua đi. Bất quá chúng ta là đi nhận người, ngươi nói được quá không đáng tin cậy, tiểu tâm chiêu không đến người.”</p>
+<p>Tiêu Cẩu thấy cảnh báo giải trừ, thiển mặt tiến đến Kiều Hoành bên người, dựa vào Kiều Hoành ngồi xuống, nói “Như thế nào sẽ chiêu không đến? Nếu thật sự đem ta vui đùa thật sự mà không muốn tới người, cũng không thích hợp tới chúng ta công ty đi làm. Nói nữa, công ty tiếp được tới làm cái gì trò chơi thật là ta tới quyết định điểm này ta nhưng không nói bậy.”</p>
+<p>Kiều Hoành nghĩ nghĩ, bất đắc dĩ nói “Giống như đích xác như thế. Chỉ cần ngươi có thể thuyết phục ta, ta sẽ không can thiệp quyết định của ngươi.”</p>
+<p>Tiêu Cẩu cười nói “Hơn nữa ngươi chú ý điểm không phải trò chơi kiếm không kiếm tiền, mà là chúng ta trước mắt làm không làm được. Điểm này đối với rất nhiều công ty mà nói là thập phần kỳ ba. Cho nên ta nói cái này công ty ở lãng, cũng không có nói sai.”</p>
+<p>Kiều Hoành đỡ trán, thật đúng là như vậy. Đích xác, mỗi lần Tiêu Cẩu đưa ra tiếp theo cái trò chơi tư tưởng, hắn suy xét đều là tính khả thi. Này đại khái là bởi vì hắn gia nhập gây dựng sự nghiệp chỉ là vì cho chính mình tìm được sự làm, không nghĩ tới kiếm bao nhiêu tiền.</p>
+<p>“Đó là phía trước, hiện tại có lẽ sẽ không giống nhau.” Kiều Hoành nhắc nhở, “Đặc biệt là công ty phát triển lên lúc sau, công ty liền không hề là hai chúng ta sự, còn quan hệ rất nhiều người sinh hoạt.”</p>
+<p>Kiều Hoành nhớ tới hắn cha mẹ thở dài, đương công ty phát triển đến đủ đại lúc sau, bọn họ thiết kế liền phải bó tay bó chân, cần thiết đến suy xét thị trường phản ứng. Bởi vì vô luận là công ty cổ đông, vẫn là công ty công nhân, đều trông chờ công ty kiếm tiền.</p>
+<p>“Chúng ta có lẽ không thèm để ý tiền, nhưng là công ty tương lai cổ đông cùng công nhân viên chức để ý.” Tuy rằng thực không đành lòng sớm như vậy đánh nát Tiêu Cẩu thiên chân, Kiều Hoành vẫn là cảm thấy sớm một chút làm Tiêu Cẩu thanh tỉnh càng tốt một ít, “Ngươi tương lai không có khả năng muốn làm cái gì trò chơi liền làm cái đó.”</p>
+<p>Tiêu Cẩu vẫn là đầy mặt không sao cả ý cười “Không, ta tưởng ta tương lai như cũ có thể muốn làm cái gì trò chơi liền làm cái đó. Ngươi xem, ta hiện tại mỗi lần làm ra trò chơi đều không phải thị trường chủ lưu. Chỉ cần ta làm một cái trò chơi hồng một cái trò chơi, lúc sau các cổ đông liền sẽ tín nhiệm ta, cho rằng ta sách lược chính là chính xác, sẽ không đối ta khoa tay múa chân. Hơn nữa về sau công ty làm đại, khẳng định liền không ngừng ta một người làm trò chơi. Bọn họ nếu cảm thấy chủ lưu trò chơi kiếm tiền, đại nhưng làm công ty nội mặt khác trò chơi phòng làm việc đi làm chủ lưu trò chơi, ta cũng sẽ cho tương ứng tài chính duy trì.”</p>
+<p>Tiêu Cẩu chỉ vào chính mình “Ta sẽ tiếp tục làm một cái khai thác giả, gìn giữ cái đã có liền giao cho công ty những người khác. Ta đại biểu chính là Hồng Cẩu đi tới phương hướng, có ta ở đây, Hồng Cẩu liền sẽ không ngừng sửa cũ thành mới.”</p>
+<p>Kiều Hoành nhìn Tiêu Cẩu tự tin phi dương thần sắc, tim đập tốc độ không khỏi gia tốc một chút.</p>
+<p>Kiều Hoành làm bộ bình tĩnh nói “Ta đối trò chơi khai phá thị trường cùng tiền cảnh cũng không mẫn cảm, nếu ngươi như vậy tự tin, kia ta cũng chỉ có thể tín nhiệm ngươi.”</p>
+<p>Tiêu Cẩu cười hì hì nói “Đúng vậy, bất quá ta cũng không thể bảo đảm ta đều là chính xác, cho nên liền toàn dựa Đại Kiều. Ngươi phụ trách công ty hoạt động, kiếm càng nhiều tiền, làm ta tranh thủ có lãng lần thứ hai lần thứ ba cơ hội a. Cho nên ta nói, gây dựng sự nghiệp thành công toàn dựa huynh đệ, lời này cũng không sai.”</p>
+<p>Kiều Hoành bị Tiêu Cẩu khen đến có điểm ngượng ngùng, tuy rằng ngữ khí vẫn là thực bình tĩnh, nhưng bên tai có chút phiếm phấn “Liền tính không có ta, ngươi có kỹ thuật cùng điểm tử còn ở, cũng có thể chậm rãi tích lũy tài nguyên, chỉ là phát triển đến thoáng chậm một chút. Ta cũng không phải tất yếu.”</p>
+<p>Tiêu Cẩu tuy rằng trên mặt như cũ mang theo ý cười, ánh mắt lại rất nghiêm túc “Không có như vậy nhiều nếu, ngươi chính là tất yếu.”</p>
+<p>Kiều Hoành hô hấp cứng lại, đột nhiên cảm giác có không đúng chỗ nào.</p>
+<p>Hắn hồ nghi nói “Ngươi hôm nay như thế nào đột nhiên như vậy kỳ quái, như thế nào vẫn luôn khen ta? Ngươi có phải hay không cõng ta làm cái gì chuyện xấu?”</p>
+<p>Tiêu Cẩu trên mặt thần sắc cứng đờ, lập tức nói “Sao có thể! Ta chính là đơn thuần khen một chút ngươi, cường điệu một chút ngươi đối ta tầm quan trọng!”</p>
+<p>Kiều Hoành hồ nghi thần sắc càng rõ ràng “Không, ta cảm thấy tuyệt đối có vấn đề. Thẳng thắn từ khoan.”</p>
+<p>Tiêu Cẩu nhược nhược nói “Ở tù mọt gông?”</p>
+<p>Kiều Hoành lập tức xụ mặt “Xem ra là thật sự có vấn đề.”</p>
+<p>Tiêu Cẩu cười gượng “Vì cái gì ngươi muốn nói như vậy?”</p>
+<p>Kiều Hoành bắt đầu hoạt động thủ đoạn.</p>
+<p>Tiêu Cẩu lập tức song thủ hợp chưởng “Đừng như vậy a, kỳ thật thật không phải cái gì chuyện quan trọng.”</p>
+<p>Kiều Hoành nói “Nếu không phải cái gì chuyện quan trọng, vậy ngươi như thế nào không dám nói?”</p>
+<p>Tiêu Cẩu ngượng ngùng nói “Kỳ thật cũng không phải không dám, chỉ là có điểm ngượng ngùng.”</p>
+<p>Kiều Hoành nghi hoặc “Rốt cuộc chuyện gì?”</p>
+<p>Tiêu Cẩu do dự trong chốc lát, nói “Ngươi muốn bảo đảm không tức giận.”</p>
+<p>Kiều Hoành mặt vô biểu tình “Không cam đoan.”</p>
+<p>Tiêu Cẩu “……”</p>
+<p>Tiêu Cẩu đáng thương hề hề nói “Đừng như vậy a.”</p>
+<p>Kiều Hoành bế lên cánh tay, nói “Ngươi còn chưa nói, ta như thế nào biết tức giận hay không, mau nói.”</p>
+<p>Tiêu Cẩu do dự trong chốc lát, vẫn là quyết định thẳng thắn từ khoan, tuy rằng khả năng thật sự ở tù mọt gông, nhưng Kiều Hoành khoan hồng độ lượng, cuối cùng có lẽ hẳn là đại khái sẽ tha thứ hắn?</p>
+<p>“Ta chính là…… Chính là ở công ty thời điểm nhận được ngươi bằng hữu điện thoại, sau đó gạt ngươi lén cùng bọn họ trao đổi liên hệ phương thức, kiến cái đàn……” Tiêu Cẩu trộm ngó Kiều Hoành sắc mặt.</p>
+<p>Kiều Hoành nhíu mày “Sau đó?”</p>
+<p>Tiêu Cẩu vẻ mặt đưa đám “Sau đó liền ở trong đàn hồ khản bái. Bọn họ nói một ít ngươi trước kia sự, ta nói một ít ngươi hiện tại sự. Yên tâm, ta chỉ là nói một ít thông thường sự, nói cho bọn họ ngươi quá rất khá. Ta liền ảnh chụp cũng chưa chụp, tuy rằng ngươi đã ra kính qua……”</p>
+<p>Kiều Hoành nhăn lại mày chậm rãi triển khai.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong24.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong26.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "manh-nhat-tro-choi-che-tac-nhan";
+const NOVEL_TITLE = "Mạnh nhất trò chơi chế tác nhân";
+const CHAPTER_TITLE = "Chương 25";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

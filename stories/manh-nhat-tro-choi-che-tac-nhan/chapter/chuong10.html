@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 10</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Mạnh nhất trò chơi chế tác nhân
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 10</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong9.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong11.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Kiều Hoành còn không có nghe qua loại này viết tắt “Cái gì là MOBA trò chơi?”</p>
+<p>Tiêu Cẩu kỹ càng tỉ mỉ giải thích một chút MOBA trò chơi.</p>
+<p>Nơi này thượng đế thị giác giới thiệu một chút MOBA trò chơi ở Tiêu Cẩu xuyên qua tiền thế giới khởi nguyên.</p>
+<p>MOBA loại trò chơi, tiếng Trung tên dịch vì nhiều người tại tuyến chiến thuật cạnh kỹ trò chơi. Ban đầu là ma thú người chơi lợi dụng 《 Warcraft 》 bản đồ khí chính mình biên tập ra tới một trương bản đồ thiết kế một loại chơi pháp, tức DOTA.</p>
+<p>Sau đó nước Mỹ công ty Riot_Games 《 League of Legends 》 làm MOBA chơi pháp ở máy tính đoan bắt đầu lưu hành, Warner Bros 《 Guardians of Middle-earth 》 ý đồ đem MOBA chơi pháp mở rộng đến trưởng máy trò chơi, công ty Zynga 《 Solstice Arena 》 tắc đem MOBA dẫn hướng game mobile ngôi cao.</p>
+<p>Hoa Quốc người chơi hiểu biết nhiều nhất MOBA trò chơi có thể là ngỗng xưởng game mobile 《 Vương Giả Vinh Diệu 》.</p>
+<p>Vô luận nhiều ít người chơi đối ngỗng xưởng trò chơi này khịt mũi coi thường, nhưng trò chơi này thật là quốc dân cấp bậc, hơn nữa tại thế giới khắc Kim Bảng cũng ổn cư tiền mười —— này vẫn là ở không có Hoa Quốc an trác thị trường khắc kim thống kê số liệu tiền đề hạ, có thể thấy được này đáng sợ nhân khí.</p>
+<p>Tiêu Cẩu nói “Nhân thiết chúng ta có thể tuyển nổi danh thế giới lịch sử nhân vật, như vậy mở rộng đến nước ngoài cũng sẽ có đại nhập cảm?”</p>
+<p>Kiều Hoành ở bị Tiêu Cẩu lừa dối gây dựng sự nghiệp trước, không chú ý quá trò chơi nghiệp, tự nhiên không biết thế giới này MOBA còn không tồn tại, chỉ cho rằng đây là một cái tiểu chúng chơi pháp, hoặc là Tiêu Cẩu căn cứ một ít độc lập trò chơi chính mình tổng kết ra tới một loại chơi pháp.</p>
+<p>Bất quá hắn cẩn thận nghe xong Tiêu Cẩu giới thiệu sau, cảm thấy này chơi pháp còn tính thú vị, bất quá đối Tiêu Cẩu nhân thiết cầm phản đối ý kiến “Ngươi cũng muốn suy xét, một ít quốc gia người chơi thậm chí chính phủ sẽ bởi vì ngươi nương hóa manh hóa đối phương lịch sử nhân vật mà chống lại.”</p>
+<p>Tiêu Cẩu gãi gãi đầu, nói “Đến lúc đó xem thị trường nói như thế nào, nếu chống lại, liền đánh cái hài hòa mụn vá bao, đem tên họ thay đổi.”</p>
+<p>Kiều Hoành đề nghị “Kỳ thật ngươi có thể lựa chọn 《 Sơn Hải Kinh 》 linh tinh yêu quái.”</p>
+<p>Tiêu Cẩu đôi tay gối lên sau đầu, nằm ngửa nói “Ta cũng có cái này ý tưởng, bất quá ta muốn làm thành mặt khác loại hình thẻ bài trò chơi.”</p>
+<p>Đời trước âm | dương | sư, fgo đều là hút kim lực rất mạnh trò chơi. Tuy rằng âm | dương | sư sau khai tìm đường ch·ế·t lạnh, nhưng là kế tiếp hoạt động vẫn là không tồi, hắn lao lực mà ch·ế·t phía trước, âm dương sư thu vào vẫn là thực ổn định.</p>
+<p>Tiêu Cẩu đột nhiên nghĩ tới một cái điểm tử “Kỳ thật, làm thành binh khí phổ hoặc là văn vật phổ cũng là không tồi.”</p>
+<p>Vật phẩm nhân cách hoá vẫn luôn là manh điểm, đời trước đao kiếm nhân cách hoá, tàu chiến nhân cách hoá, súng ống nhân cách hoá trò chơi nhân khí đều không tồi, bất quá bởi vì chơi pháp, cho nên không tính đặc biệt đại chúng.</p>
+<p>Nếu đem nhân cách hoá manh điểm, gia nhập đại chúng chơi pháp trung, có lẽ cũng không tồi?</p>
+<p>Kiều Hoành suy nghĩ trong chốc lát, cảm thấy này đề nghị đích xác không tồi “Tựa hồ có chút ý tứ. Ngươi trước làm kế hoạch. Chờ Noãn Noãn hệ liệt tài chính thu hồi, liền có thể tiến hành tuyên truyền.”</p>
+<p>Tiêu Cẩu thở dài “Bất quá trò chơi này cũng không phải là ta hai người là có thể hoàn thành. Cho dù chúng ta hai có thể tăng ca thêm giờ thu phục trò chơi chế tác, kế tiếp hoạt động cùng server giữ gìn khẳng định yêu cầu chuyên môn người…… Ta lại không nghĩ đem trò chơi giao cho những người khác hoạt động……”</p>
+<p>Kiều Hoành bật cười “Nhìn ra được tới, ngươi dã tâm rất lớn, sớm hay muộn sẽ cùng các đại trò chơi nhà máy hiệu buôn đối thượng.”</p>
+<p>Tiêu Cẩu ngồi thẳng thân thể, chống nạnh khoe khoang nói “Ở hiện tại pháp trị xã hội hạ, đối thượng cũng không có gì. Bất quá là chúng ta ra một cái trò chơi, bọn họ lập tức cùng phong một cái chơi pháp. Nhưng nếu chúng ta trò chơi liền cũng đủ hoàn thiện, lập vẽ cũng đủ tinh mỹ, server chất lượng đủ hảo, bọn họ liền tính cùng phong, cũng sẽ không áp quá chúng ta nổi bật. Huống chi, ta lại không chuẩn bị một cái loại hình làm được ch·ế·t, bọn họ cùng một cái, ta liền tân ra một cái, cuối cùng bọn họ cũng chỉ có thể đi theo chúng ta mông mặt sau chạy, nói không chừng bởi vì cùng cương quyết vì, cho chúng ta mang đến càng cao nhân khí.”</p>
+<p>Kiều Hoành tà mạc danh bắt đầu thỏa thuê đắc ý Tiêu Cẩu liếc mắt một cái “Ngươi nhưng thật ra tin tưởng mười phần.”</p>
+<p>Tiêu Cẩu thầm nghĩ, ta trong đầu trang một thế giới khác như vậy nhiều trò chơi chơi pháp, bây giờ còn có hệ thống thêm thành, có thể không tin tưởng sao? Hơn nữa nhân gia làm trò chơi là vì kiếm tiền, hắn là vì tục mệnh, giao tranh sức mạnh đều không giống nhau.</p>
+<p>Bất quá Tiêu Cẩu rất bội phục Kiều Hoành. Hắn là vì tục mệnh mới như vậy đua, Kiều Hoành áo cơm không lo, ban đầu làm trò chơi cũng chỉ là nhàm chán bị chính mình lừa dối bắt lính. Nhưng Kiều Hoành công tác sức mạnh không thua với hắn.</p>
+<p>Hắn tốt xấu là đã có manh mối, cho nên trình tự thiết kế chỉ là thể lực sống. Nhưng Kiều Hoành là tự hành thiết kế tranh vẽ tư liệu sống —— cho dù Tiêu Cẩu dùng thực tế ảo thiết bị đạo ra chính mình trong đầu tranh vẽ hình tượng, nhưng có lẽ là Kiều Hoành yêu cầu càng cao, có lẽ là Tiêu Cẩu đạo ra sai lệch, Kiều Hoành chỉ cho hắn một cái một lời khó nói hết ánh mắt, khiến cho hắn một bên ngốc. Cho nên hiện tại trò chơi nội tranh vẽ đều là Kiều Hoành chính mình thiết kế.</p>
+<p>Kiều Hoành lại phí đầu óc lại lao lực, còn có thể bảo trì như vậy cao ý chí chiến đấu, so với hắn lợi hại nhiều.</p>
+<p>Nhìn Kiều Hoành bộ dáng này, Tiêu Cẩu cũng không tự chủ được càng liều mạng một chút. “Noãn Noãn” hệ liệt so dự tính càng sớm hoàn thành.</p>
+<p>Trò chơi vốn dĩ yêu cầu thí nghiệm, nhưng Tiêu Cẩu phát hiện hệ thống cư nhiên có trả phí hỗ trợ tìm kiếm bug công năng lúc sau, liền tỉnh đi cái này bước đi.</p>
+<p>Ở khoảng cách hệ thống quy định thời gian còn có một tuần thời điểm, 《 du lịch Noãn Noãn 》 thượng giá.</p>
+<p>Lần này Tiêu Cẩu rốt cuộc có có thể dùng cho tuyên truyền tiền. Tuy rằng tiền không nhiều lắm, mua không nổi quảng cáo vị, nhưng tìm mấy cái trò chơi bác chủ thí chơi sau tuyên truyền, làm mấy cái tuyên truyền video, họa mấy trương tranh tuyên truyền vẫn là không thành vấn đề.</p>
+<p>Tiêu Cẩu còn phi thường vô sỉ ở 《 dao gọt hoa quả khách 》 trung cũng đánh quảng cáo, thậm chí làm Kiều Hoành vẽ đao khách Hồng Cẩu tân làn da, làn da thượng ấn Noãn Noãn quảng cáo.</p>
+<p>Như thế vô sỉ tuyên truyền, cũng không có làm người chơi mâu thuẫn. Một cái đáng yêu cùng khốc huyễn tưởng kết hợp miễn phí làn da, liền tính yêu cầu hiểu biết một chút quảng cáo mới đưa tặng, người chơi cũng cảm thấy thực đáng giá.</p>
+<p>Hơn nữa, phía trước Tiêu Cẩu đánh ra “Nữ tính hướng trò chơi” khẩu hiệu sở dẫn phát đối mắng dư ba còn ở. Ai cũng không nghĩ tới, ở không đến một tháng tân trò chơi cũng đã thượng giá, cho nên bởi vì mặt bác mắng chiến tò mò mà xuống tái thí chơi người còn không ít.</p>
+<p>Bất quá rất nhiều trò chơi truyền thông đối Hồng Cẩu tân ra trò chơi này như cũ không xem trọng.</p>
+<p>Trò chơi giới cũng tồn tại không thể nói rõ kỳ thị giới tính. Bọn họ tựa hồ cảm thấy nữ tính người chơi sức mua cùng đối trò chơi trung thành độ chính là so nam tính người chơi kém, hiện tại Hồng Cẩu đánh ra nữ tính hướng trò chơi chiêu bài là chủ động đem người chơi trung quân chủ lực ra bên ngoài đẩy, trò chơi này khẳng định vô pháp kéo dài.</p>
+<p>Sau đó ngày hôm sau download số liệu, lại làm trò chơi truyền thông đầy đầu dấu chấm hỏi.</p>
+<p>《 du lịch Noãn Noãn 》 đương thiên hạ tái lượng liền vượt qua 50 vạn, này tuyệt đối không phải muốn lạnh tiết tấu.</p>
+<p>Trò chơi truyền thông nhóm phân tích, này đại khái là 《 dao gọt hoa quả khách 》 trò chơi kéo? Hoặc là Hồng Cẩu xoát một chút tái lượng? Liền tính thật sự có nhiều như vậy nữ tính người chơi download, nhưng một cái game thời trang, cơ hồ không có trò chơi tính. Không có trò chơi tính liền không có khắc kim điểm, trò chơi này vốn dĩ làm thành miễn phí trò chơi, ăn quảng cáo phí khả năng còn có điểm thu vào. Hiện tại nó thu phí hình thức làm thành nội mua, khẳng định thu vào rất kém cỏi.</p>
+<p>Sau đó lại một ngày đi qua, 《 du lịch Noãn Noãn 》 cư nhiên xuất hiện ở ngôi cao mỗi ngày khắc Kim Bảng tiền mười.</p>
+<p>Trò chơi truyền thông nhóm ……</p>
+<p>Khụ khụ, này nhất định chỉ là ngoài ý muốn. Nói không chừng là Hồng Cẩu xoát! Hoặc là bọn họ khai phục có cái gì hoạt động!</p>
+<p>Trò chơi truyền thông nhóm tiếp tục xướng suy, trên mạng người chơi ngôn luận tắc dần dần xuất hiện cùng trò chơi truyền thông hoàn toàn bất đồng thanh âm.</p>
+<p>“Ta rốt cuộc minh bạch nữ tính hướng là có ý tứ gì, lần đầu tiên cảm thấy đổi trang thật tốt chơi, hoàn toàn dừng không được tới.”</p>
+<p>“Thấy được sao? Bọn tỷ muội giúp Noãn Noãn vọt tới khắc Kim Bảng tiền mười! Ta cũng phụng hiến một chút hì hì hì.”</p>
+<p>“Ta nhìn đến trò chơi đi có đại lão trực tiếp khắc vài vạn, đem thường quy khắc kim ao quần áo đều khắc ra tới!”</p>
+<p>“Có phải hay không trò chơi thác?”</p>
+<p>“【 liên tiếp 】 chính mình đi xem, không phải thác, cái này đại lão rất có danh, ở vài cái trò chơi đều là dầu mỏ đại lão. Ta hiện tại mới biết được, nàng là cái muội tử!”</p>
+<p>“Nhược nhược nói, Tiểu Cẩu nói nam tính cũng có thể chơi đúng không…… Nam người chơi dưỡng nữ nhi không được sao?”</p>
+<p>“Tiểu Cẩu là ai ha ha ha, kia một cái khác người sáng lập có phải hay không muốn kêu tiểu đỏ? Dưỡng nữ nhi có thể a, ta cũng là nam. Ta cảm thấy Noãn Noãn thực đáng yêu a, ta nguyện ý vì nàng mua mua mua.”</p>
+<p>“Còn có thể chính mình thay quần áo, phúc lợi cũng rất nhiều, rõ ràng liền không đơn thuần là nữ tính hướng trò chơi a. Ta liền thích dưỡng người trong sách làm sao vậy?!”</p>
+<p>“Không sai, ta liền không quen nhìn những cái đó mang tiết tấu, trò chơi này vô luận là lập vẽ vẫn là chơi pháp đều không tồi, không khắc kim đẩy chủ tuyến cũng thực dễ dàng, chỉ là đừng nghĩ thượng bảng xếp hạng. Không biết hoạt động là cái gì chơi pháp.”</p>
+<p>“Khẳng định cũng là quần áo phối hợp đẩy đồ. Cho điểm thăng chức được khen thưởng nhiều một ít, cho điểm thiếu liền ít đi một ít, cuối cùng đổi quần áo.”</p>
+<p>“Kia không bằng đoán một chút là cái gì quần áo, ta cảm thấy váy cưới hảo!”</p>
+<p>“Đồ bơi! Đương nhiên là đồ bơi!”</p>
+<p>“Trong lâu bị nam tính người chơi chiếm lĩnh sao! ( khiếp sợ mặt )”</p>
+<p>“Rốt cuộc dưỡng nữ nhi hoặc là dưỡng lão bà cũng là nam tính người chơi yêu thích sao. Trò chơi này thiệt tình không tồi, cũng thực hưu nhàn.”</p>
+<p>“Không quen nhìn những cái đó xướng suy người, ta lại đi khắc một đơn. Lần này ta nhất định phải trừu đến tường vi nữ vương bộ!”</p>
+<p>“Ta đã nhịn không được mua đồng vàng đại lễ bao. Tuy rằng ta biết hậu kỳ đồng vàng khẳng định sẽ tràn ra, nhưng là chính là nhịn không được tay tiện tưởng trừu. Đồng vàng ao cũng có thật nhiều đẹp quần áo.”</p>
+<p>“Ta xem đã 30 cấp gan đế nói, kế tiếp có đồng vàng cùng đại tệ thương thành. Đích xác thực lương tâm. Ta còn là lần đầu tiên nhìn đến trò chơi công bố tạp trì xác suất cùng hằng ngày đồ rớt suất.”</p>
+<p>“Không sai, còn có thể làm hợp thành thiết kế đồ, còn có thể nhuộm màu. Ta hy vọng có nhiều hơn quần áo xuất hiện. Bất quá nghe nói hiện tại Hồng Cẩu cũng chỉ có hai người, có thể làm ra như vậy tinh mỹ trò chơi, thật sự là không thể tưởng tượng.”</p>
+<p>“Nếu ngươi xem một chút giả thiết nhân viên công tác danh sách, ngươi sẽ cảm thấy càng không thể tưởng tượng. Nhiều như vậy xinh đẹp quần áo, đều là Kiều đại thần một người họa.”</p>
+<p>“Tiêu Cẩu cũng là đại thần, trình tự đều là hắn một người viết. Ta hiện tại thực chờ mong hoạt động. Chỉ cần quần áo đẹp, ta liền khắc bạo nó!”</p>
+<p>“Ân…… Truyền thông còn ở xướng suy, còn nói chúng ta khắc kim là Hồng Cẩu tìm người xoát. Nguyên lai ta là Hồng Cẩu thác a ( khắc kim chụp hình ) ( sách tranh chụp hình ).”</p>
+<p>“Bọn họ còn ở nghiêm trang phân tích nữ tính người chơi không có sức mua, ha hả. Liền hướng bọn họ những lời này, ta liền lại đi khắc một đơn ( nạp phí chụp hình ).”</p>
+<p>“Ta liền không rõ, nữ tính không thể chơi trò chơi? Nữ tính không có tiền chơi trò chơi? Nữ tính chơi trò chơi không khắc kim? Đây là từ đâu ra khinh bỉ liên? Ta không thích đánh đánh giết giết trò chơi cho nên không khắc kim, là ta vấn đề la?”</p>
+<p>“Trò chơi lại không phải chỉ có đánh đánh giết giết, ai nói đổi trang không có trò chơi tính? Ngươi biết ta vì hướng bảng, lăn lộn bao lâu, thay đổi nhiều ít phối hợp sao? Bất quá nói thật, a hồng lớn lên như vậy khốc như vậy đáng yêu, thẩm mỹ thật là một lời khó nói hết ( phối hợp chụp hình ) ( điểm chụp hình ).”</p>
+<p>“Trên lầu thái thái! Ta ở bảng xếp hạng nhìn đến ngươi! Cúng bái!”</p>
+<p>“Nhìn Kiều Hoành đại thần họa đồ liền biết Kiều đại thần thẩm mỹ thực hảo, trị số hẳn là Tiểu Cẩu làm, cho nên Tiểu Cẩu = Hồng Cẩu?”</p>
+<p>“Ha ha ha ha ha, Hồng Cẩu phát mặt bác, vẫn là Tiêu Cẩu phát, nói cảm tạ đại gia to lớn duy trì, quyết định ở một tuần sau khai hoạt động, cũng thả ra trong đó một bộ quần áo mới thiết kế đồ, là võ hiệp nga!”</p>
+<p>“Ta thích cổ phong! Lăn đi nhìn.”</p>
+<p>“Nhìn đã trở lại, vẫn là Kiều đại thần, quỳ cầu Kiều đại thần lên mặt bác! Không thể làm Tiểu Cẩu một người tú a!”</p>
+<p>“Chúng ta đi mặt bác hạ nhắn lại đi!”</p>
+<p>Hồng Cẩu trò chơi Cảm nhận được đại gia nhiệt tình, chúng ta quyết định đêm mai 8 giờ khai phát sóng trực tiếp, phát sóng trực tiếp phòng ( liên tiếp ). Phát sóng trực tiếp nội dung vì hiện trường vẽ, hiện trường trừu tạp cùng hoạt động báo trước. Phát sóng trực tiếp quan khán nhân số mỗi gia tăng một vạn, toàn phục đưa tặng 1000 đồng vàng cùng 1 kim cương. Chính là như vậy keo kiệt, gâu gâu gâu.</p>
+<p>Tác giả có lời muốn nói Thượng chương sửa lại cuối cùng một đoạn, không xem cũng không quan hệ, chính là đem nói lỡ miệng đổi thành tâm lý hoạt động.</p>
+<p>Cách vách kết thúc, cả người đều lơi lỏng lên, đã hai ngày không bổ sung hạt thông _( з” ∠)_, ta đại khái là đối sinh tử thời tốc có mê chi chấp nhất đi.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong9.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong11.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "manh-nhat-tro-choi-che-tac-nhan";
+const NOVEL_TITLE = "Mạnh nhất trò chơi chế tác nhân";
+const CHAPTER_TITLE = "Chương 10";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 5</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Mạnh nhất trò chơi chế tác nhân
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 5</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong4.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong6.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Trần Mính, 65 tuổi, Hoa Quốc trứ danh nghệ thuật biểu diễn gia, là ở Hoa Quốc liên hoan phim Ngọc Mẫu Đơn cầm ba cái ảnh đế, nước ngoài liên hoan phim cũng lấy quá ảnh đế, hiện tại đã bắt được liên hoan phim Ngọc Mai chung thân thành tựu thưởng ngưu bức tồn tại.</p>
+<p>Tiêu Cẩu cùng Kiều Hoành liếc nhau, bắt đầu điên cuồng cho chính mình mấy ngày nay cầu đề cử bằng hữu phát tin tức, cầu hỏi đến tột cùng là như thế nào đem trò chơi truyền tới Trần Mính lão sư nơi đó đi.</p>
+<p>Sau lại phá án, cư nhiên không phải phú nhị đại Kiều Hoành lực lượng, mà là Tiêu Cẩu công lao.</p>
+<p>Tiêu Cẩu hướng chính mình đại học đồng học đàn đề cử trò chơi này. Hắn có một cái đang ở đọc tiến sĩ đồng học, ở phòng thí nghiệm chơi trò chơi thời điểm bị sư huynh thấy được, sư huynh cũng vào thiết trái cây hố. Này sư huynh chính là Trần Mính lão sư tôn tử.</p>
+<p>Đã nửa về hưu trạng thái Trần Mính lão sư bị tôn tử đề cử cái này tay tàn đảng cũng có thể chơi hưu nhàn trò chơi sau, chuẩn bị khai tiểu hào đề cử, không nghĩ tới phát đến đại hào thượng.</p>
+<p>Hiển nhiên, Trần Mính lão sư cảm thấy xóa mặt bác có một cổ mạc danh chột dạ cảm giác, chuyện này lại không có gì hảo chột dạ, liền lười đến xóa.</p>
+<p>Làm miễn phí quảng cáo cũng không quan hệ sao, hắn lại không thiếu tiền, cũng không có công ty quản lý ở hắn lỗ tai mặt sau hạt bức bức.</p>
+<p>Kiều Hoành một bên bay nhanh hồi phục chính mình phú nhị đại các bằng hữu về “Ngọa tào ngươi cư nhiên thỉnh tới rồi Trần lão sư giúp ngươi đánh quảng cáo ngươi rốt cuộc là trả giá cái gì PY giao dịch” lời cợt nhả, một bên nói “Ngươi đây là đi rồi cái gì cứt chó vận?”</p>
+<p>Tiêu Cẩu nói “Ta sửa đúng một chút, là chúng ta hai đi rồi cứt chó vận.” Này chẳng lẽ là tân nhân vận may tạp công lao? Như vậy ngưu bức? Này hệ thống rốt cuộc cái gì lai lịch?</p>
+<p>Tính, mặc kệ nó cái gì lai lịch, dù sao hắn hoàn thành nhiệm vụ khó khăn hạ thấp, sẽ không một tháng sau liền bởi vì nhiệm vụ thất bại mà tử vong liền hảo.</p>
+<p>Hắn liền nói sao, tay mới nhiệm vụ như thế nào sẽ như vậy khó, làm một tân nhân trò chơi thiết kế giả cái thứ nhất trò chơi liền nguyệt download lượng phá trăm vạn. Nguyên lai “Tân nhân vận may tạp” cũng là mấu chốt đạo cụ.</p>
+<p>“Hai chúng ta có phải hay không nên đăng ký cái tân mặt bác làm quan phương hào, cảm tạ một chút Trần Mính lão sư?” Tiêu Cẩu hai mắt tỏa ánh sáng không ngừng đổi mới giao diện.</p>
+<p>Kiều Hoành bạo tốc độ tay dỗi xong chính mình hồi lâu không liên hệ bằng hữu, cũng không thể nhịn được nữa đem này cùng hống người kéo vào sổ đen sau nói “Ngày mai trước làm xí nghiệp hào chứng thực lúc sau lại đi cảm tạ Trần Mính lão sư đi. Như vậy chính thức một chút.”</p>
+<p>Lúc này Kiều Hoành di động linh âm vang lên, hắn nhìn thoáng qua điện báo biểu hiện, ở cắt đứt cùng chuyển được trung do dự vài giây, vẫn là thở dài chuyển được điện thoại “Uy, thứ đầu.”</p>
+<p>“Thứ ngươi cái đầu a! Ngươi cư nhiên kéo hắc ta?!” Micro bên kia truyền đến trung tâm mười phần tiếng hô.</p>
+<p>Kiều Hoành đem điện thoại lấy ly lỗ tai thật xa, chờ điện thoại bên kia rống xong, mới nói “Ngươi tao nói nhiều quá.”</p>
+<p>“Keo kiệt, khai không dậy nổi vui đùa.” Thứ đầu nói thầm, “Ta vốn dĩ tưởng giúp ngươi tìm thuỷ quân đề cử, chúng ta đều thỉnh hảo, ai biết cư nhiên không dùng được?! Nói thật, ngươi rốt cuộc là như thế nào thông đồng Trần Mính? Kia cũng không phải là cái gì dễ nói chuyện minh tinh.”</p>
+<p>Kiều Hoành giải thích “Ta đối tác đồng học vừa lúc cùng Trần Mính lão sư tôn tử là sư huynh đệ, Trần Mính lão sư trong lúc vô tình chơi tới rồi trò chơi này, sau đó tựa hồ đề cử thời điểm thượng sai hào.”</p>
+<p>“Thật sự? Ngươi đi cái gì cứt chó vận?” Thứ đầu kinh hô, “Có này vận khí, ngươi như thế nào không đi mua vé số?”</p>
+<p>Kiều Hoành nhướng mày “Ta thiếu tiền?”</p>
+<p>Thứ đầu tấm tắc hai tiếng sau, nói “Hảo đi hảo đi, hiện tại ngươi là chúng ta một đám trung nhất có tiền. Ngươi rốt cuộc chịu liên hệ chúng ta, đi ra? Khi nào tụ một tụ? Đem ngươi đối tác cùng nhau mang đến cấp huynh đệ nhìn một cái?”</p>
+<p>Kiều Hoành cự tuyệt nói “Hiện tại gây dựng sự nghiệp trong lúc, bận quá, chờ không xuống dưới ta thỉnh các ngươi ca mấy cái tụ tụ. Hơn nữa…… Ta hiện tại không quá muốn nghe đến ai ở ta bên tai nói nhà ta sự, ta sẽ khống chế không được phát hỏa. Cho nên ngươi đừng nói cho những người khác. Trò chơi này sau lưng có ta một phần sự, ngươi cũng đừng nói bậy.”</p>
+<p>Thứ đầu nói “Ta miệng nghiêm, ngươi yên tâm, ta liền ba mẹ đều không nói. Trừ bỏ ta ở ngoài, ngươi còn nói cho ai? Ta nhìn xem ai còn bị ngươi như vậy tín nhiệm?”</p>
+<p>Kiều Hoành nói “Ngươi, cục đá, đại ngưu, không có.”</p>
+<p>Thứ đầu thở dài “Ngươi thật đúng là cẩn thận. Thành đi, bất quá ta còn sẽ tiếp tục giúp ngươi tuyên truyền. Có Trần Mính phát sai mặt bác, lại tuyên truyền liền dễ dàng nhiều.”</p>
+<p>Kiều Hoành vội nói “Ngươi dùng ngươi đại hào làm bộ chơi qua trò chơi thổi một thổi là được, mua cái gì thuỷ quân? Đừng hoa cái kia tiền tiêu uổng phí.”</p>
+<p>Thứ đầu cười nói “Ngươi làm ơn ta, nên như thế nào tuyên truyền chính là chuyện của ta. Ta làm việc, ngươi yên tâm, ta cũng sẽ không hỏi ngươi đòi tiền.”</p>
+<p>Kiều Hoành thở dài “Là tiền vấn đề sao?”</p>
+<p>Thứ đầu nói “Không phải tiền vấn đề, là huynh đệ một chút tâm ý, liền tính cho ngươi khai trương bao lì xì. Thành, đừng cùng ta tranh. Ta trước chính mình phát cái mặt bác, cùng một đợt nhiệt độ. Yên tâm, ta sẽ không lộ ra ta cùng ngươi nhận thức chuyện này. Trước đã bái, ta ba mẹ ở kêu ta.”</p>
+<p>Kiều Hoành cúi đầu nhìn cắt đứt điện thoại chính diện lộ bất đắc dĩ, kết quả điện thoại lại vang lên tới.</p>
+<p>Hắn thở dài, lại chuyển được nói “Cục đá……”</p>
+<p>“Ngọa tào! Ngươi cư nhiên dám kéo hắc ta!!”</p>
+<p>“Phốc!” Thấy Kiều Hoành không có tránh hắn, liền lớn mật dựng lỗ tai nghe lén Tiêu Cẩu che miệng cười.</p>
+<p>Kiều Hoành trừng mắt nhìn Tiêu Cẩu liếc mắt một cái, hữu khí vô lực nói “Mới vừa thứ đầu cũng nói giống nhau như đúc nói, các ngươi hai ước hảo?”</p>
+<p>“Ai mẹ nó cùng hắn ước hảo? Ta là nói như thế nào gọi điện thoại đường dây bận…… Từ từ, đừng nói sang chuyện khác, ngươi cùng ta nói rõ, dựa vào cái gì kéo hắc ta?!”</p>
+<p>Kiều Hoành mắt trợn trắng “Bởi vì ta keo kiệt, khai không dậy nổi vui đùa.”</p>
+<p>Micro bên kia trầm mặc hồi lâu, mới nói “Ngươi tàn nhẫn, đem ta nói đều ngăn chặn. Đúng rồi, ngươi như thế nào thông đồng Trần tiên sinh?”</p>
+<p>Kiều Hoành chỉ phải đem lời nói mới rồi lại giải thích một lần, sau đó lại lần nữa liền tuyên truyền cùng tìm thuỷ qu·â·n s·ự thoái thác trong chốc lát, thoái thác không xong sau bị đối phương giành trước cắt đứt điện thoại.</p>
+<p>Tiêu Cẩu cười đến thẳng không dậy nổi eo “Ngươi bằng hữu thật thú vị.”</p>
+<p>Kiều Hoành hắc tuyến “Đích xác có…… Ngọa tào, lại là điện thoại. Uy uy, đại ngưu, hảo hảo hảo, ta đã biết, ngươi muốn trước mắng ta vì cái gì kéo hắc, sau đó hỏi ta như thế nào thông đồng Trần Mính lão sư đúng không……”</p>
+<p>Tiêu Cẩu cười đến bụng đau.</p>
+<p>Chờ cuối cùng một hồi điện thoại nói xong, Kiều Hoành trên mặt tràn đầy bất đắc dĩ.</p>
+<p>“Xem ra tỉnh tuyên truyền phí dụng?” Tiêu Cẩu cười nói, “Sớm biết rằng còn không bằng ngươi tạp tiền tuyên truyền, hiện tại thiếu nhân tình không thoải mái đi?”</p>
+<p>Kiều Hoành đỡ trán “Có điểm. Bất quá chút tiền ấy đối bọn họ mà nói cũng không tính cái gì. Ở ta nơi này hoa một chút, thiếu phao điểm nữu, còn có thể thiếu chọc chút sự.”</p>
+<p>Tiêu Cẩu cười ha ha “Hảo đi hảo đi, ngươi đều nói như vậy. Bất quá ngươi vẫn là hỏi thăm một chút bọn họ xài bao nhiêu tiền. Chờ chúng ta kiếm tiền liền còn cho bọn hắn. Thân huynh đệ cũng muốn minh tính sổ đúng hay không?”</p>
+<p>Kiều Hoành gật đầu “Tuy rằng ta cũng là như vậy tưởng, nhưng là thật sự đề trả tiền sự, bọn họ ngược lại sẽ sinh khí. Chờ chúng ta kiếm tiền sau, mua cái giá cả cao một chút tạ lễ liền thành.”</p>
+<p>Tiêu Cẩu xoa xoa cười ra tới nước mắt, nói “Cũng là. Ha ha ha ha, ta hôm nay cái cao hứng a. Chúng ta đi ra ngoài ăn bữa tiệc lớn đi! Ta mời khách, ăn 500 khối một người siêu cao quý tiệc đứng!”</p>
+<p>Kiều Hoành thiếu chút nữa buột miệng thốt ra, 500 khối một người tiệc đứng nơi nào cao quý? Bất quá nhìn Tiêu Cẩu như vậy cao hứng, hắn cũng không mất hứng. Dù sao hắn đối thức ăn kỳ thật không có hứng thú.</p>
+<p>Hoặc là nói, hắn hiện tại đối cái gì đều không có hứng thú.</p>
+<p>“Hảo, vậy đi ăn buffet cơm đi. Hôm nay ta xe hạn hành, lái xe của ngươi đi.” Kiều Hoành nói.</p>
+<p>Tiêu Cẩu dùng sức xua tay “NoNoNo, như vậy cao hứng nhật tử, đương nhiên muốn uống chút rượu a. Chúng ta xa xỉ một chút, hôm nay kêu xe taxi.”</p>
+<p>Kiều Hoành khóe miệng trừu một chút. Kêu xe taxi tính xa xỉ? Ngươi chính là có thể ở đế đô tứ hoàn bên cạnh mua tiểu cao tầng người, cũng quá đến quá tiết kiệm đi?</p>
+<p>Kiều Hoành trong lòng như vậy tưởng, cũng như vậy phun tào.</p>
+<p>Tiêu Cẩu gãi gãi đầu, nói “A, phải không? Ta trước kia không ở nơi này, cùng lão nhân gia ở tại mười tám tuyến tiểu thành thị. Sau lại lão nhân gia qua đời, ta lại vừa lúc ở đế đô đi học, ba mẹ liền cho ta ở chỗ này mua nhà xe, bọn họ ký đem sở hữu tài sản hiến cho cấp quốc gia di chúc sau, sau đó đi làm nguy hiểm nghiên cứu. Ân, hiện tại vì nước hy sinh thân mình. Cho nên ta đích xác tiểu thị dân sinh hoạt quá quán.”</p>
+<p>Kiều Hoành sửng sốt trong chốc lát, nhíu mày thấp giọng nói “Xin lỗi……”</p>
+<p>Tiêu Cẩu buông tay “Có cái gì xin lỗi? Đây đều là ba năm trước đây sự, ta cũng không sai biệt lắm đi ra. Tuy rằng ban đầu đích xác có điểm khó chịu…… Ân, đại khái cùng ngươi hiện tại trạng thái không sai biệt lắm đi, cho nên ta có thể lý giải tâm tình của ngươi. Nhưng lão nhân gia tuổi rốt cuộc đã lớn, ta cũng làm hảo chuẩn bị tâm lý, ta cùng ba mẹ cảm tình lại không thâm, ngươi chịu đả kích khẳng định so với ta đại. Nói đến này, ngươi đừng chê ta xen vào việc người khác, ta xem ngươi như vậy ăn xài phung phí, di sản khẳng định không ít. Nhưng tiền không cấm hoa a, ngươi như vậy loạn hoa, vẫn là không được. Hai ta đều vội đứng lên đi, vội lên lúc sau, nói không chừng liền từ bi thương trung đi ra, còn có thể kiếm sinh hoạt phí, đúng hay không? Đi, ăn bữa tiệc lớn đi!”</p>
+<p>Kiều Hoành tưởng giải thích, nhưng là lại cảm thấy tùy ý bạo chính mình tiền tiết kiệm hình như là ở khoe giàu “Kỳ thật…… Tính, ngươi nói đúng. Đi thôi…… Đi đường đừng nhìn di động!”</p>
+<p>Kiều Hoành đem trầm mê đổi mới di động xem download lượng, thiếu chút nữa đất bằng quăng ngã Tiêu Cẩu đỡ lấy “Ngươi còn tưởng lại đem đầu quăng ngã cái khẩu tử sao?!”</p>
+<p>“Ha ha ha ha xin lỗi xin lỗi.” Tiêu Cẩu đắc ý, “Hiện tại năm vạn! Năm vạn!”</p>
+<p>“Là là là, chúc mừng chúng ta hai, gây dựng sự nghiệp bước ra hoàn mỹ bước đầu tiên, tháng thứ nhất trăm vạn download lượng mục tiêu sắp tới.” Kiều Hoành có lệ, “Hảo hảo xem lộ!”</p>
+<p>“Rống rống.”</p>
+<p>“Đầu lưỡi loát thẳng nói chuyện.” Kiều Hoành không có phát hiện, hắn trên mặt tự cha mẹ qua đời sau, lần đầu tiên lộ ra trong sáng tươi cười.</p>
+<p>Tác giả có lời muốn nói Tiêu Cẩu Ngươi là người tốt, ta phải khuyên nhủ ngươi, tiền là vĩnh viễn không đủ dùng huynh đệ!</p>
+<p>Kiều Hoành Ân……</p>
+<p>Cảm tạ nhẹ vũ, yên yểm bích lạc, thiều chỉ điệp đồng chí địa lôi duy trì, cùng sở hữu tân lão người đọc cổ động. Tồn cảo còn nhiều, yên tâm truy vấn ( kiêu ngạo mặt ).</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong4.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong6.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "manh-nhat-tro-choi-che-tac-nhan";
+const NOVEL_TITLE = "Mạnh nhất trò chơi chế tác nhân";
+const CHAPTER_TITLE = "Chương 5";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

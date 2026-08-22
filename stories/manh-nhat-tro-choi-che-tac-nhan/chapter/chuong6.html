@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 6</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Mạnh nhất trò chơi chế tác nhân
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 6</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong5.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong7.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Tiêu Cẩu cùng Kiều Hoành ra cửa ăn bữa tiệc lớn khánh công thời điểm, trên mạng về trò chơi này ngôn luận đã bắt đầu dần dần bắt đầu lên men.</p>
+<p>Trần Mính là một cái bức cách rất cao nghệ thuật biểu diễn gia, tuy rằng cũng có tiếp nhận đại ngôn, nhưng là mặt bác thượng mở rộng, hắn đương nhiên là khinh thường với tiếp. Hơn nữa hiện tại hắn liền đại ngôn đều không tiếp, nói tiền kiếm đủ rồi nên dưỡng lão. Cho nên hắn phát cái kia bác văn, có đầu óc biết hắn phát sai rồi, không đầu óc người cho rằng Trần Mính thế nào đó người quen mở rộng.</p>
+<p>Bất quá vô luận là có đầu óc không đầu óc người, đều tò mò đi nhìn một chút thiết trái cây đến tột cùng là cái gì trò chơi, rất nhiều người thấy là miễn phí trò chơi lúc sau, đều download trò chơi.</p>
+<p>Sau đó, mặt bác thượng về trò chơi này bình luận lấy thời gian vì giai đoạn kéo dài, xuất hiện dưới nội dung biến hóa.</p>
+<p>Ban đầu.</p>
+<p>“Trò chơi này cũng chỉ là thiết trái cây? Nhìn qua hảo nhàm chán.”</p>
+<p>“Dù sao là miễn phí trò chơi, tùy tiện chơi chơi bái, bất quá thật sự hảo nhàm chán.”</p>
+<p>“Cắt hai thanh, hảo đơn giản, tống cổ thời gian còn thành.”</p>
+<p>“Đao khách cùng trái cây đều còn rất đáng yêu.”</p>
+<p>“Thật là nhàm chán a, quả nhiên là người già thích chơi trò chơi.”</p>
+<p>Quá một thời gian.</p>
+<p>“Hảo nhàm chán trò chơi, nhưng là ta còn ở chơi, có độc.”</p>
+<p>“Ta xem đều nói trò chơi này nhàm chán, ta cũng không mặt mũi đi lên nói, ta cảm thấy rất thú vị.”</p>
+<p>“Như cũ cảm thấy nhàm chán, nhưng là dừng không được tới, đại khái ta so trò chơi càng nhàm chán.”</p>
+<p>“MD cư nhiên thiết đến bom sẽ ch·ế·t!!!”</p>
+<p>“Trên lầu mới biết được a. Thiết sầu riêng cùng dứa hảo khảo nghiệm tốc độ tay a, cái này network còn có thể nhìn đến bảng xếp hạng, ta ở đệ nhất.”</p>
+<p>“Ngọa tào, bảng xếp hạng đệ nhất đại lão chính là ngươi! Cúng bái! Ngươi đây là độc thân nhiều ít năm tốc độ tay!!”</p>
+<p>“Xem ra trên mạng nhàm chán người thật nhiều, một cái thiết trái cây đều có thể chơi lâu như vậy.”</p>
+<p>Mấy cái giờ đi qua.</p>
+<p>“Trò chơi này thật sự có độc, ta dừng không được tới, liền thừa dịp uống nước thượng WC thời gian đi lên liêu một chút.”</p>
+<p>“Ta ở nghỉ tay, nghỉ ngơi trong chốc lát tái chiến. Tê mỏi ngàn vạn không cần tại như vậy trong khoảng thời gian ngắn, bị người đem ta xếp hạng thọc!”</p>
+<p>“Đang ở một bên nói chuyện phiếm một bên nóng lòng muốn thử thọc mặt trên.”</p>
+<p>“Ta cũng hảo tưởng thọc mặt trên cúc hoa, nhưng là cứng nhắc bị ta mẹ cầm đi, hiện tại nàng ở điên cuồng thiết trái cây, làm ta chính mình điểm cơm hộp QAQ.”</p>
+<p>“Ta còn tưởng rằng theo ta một người như vậy xui xẻo. Di động của ta cũng bị ta ba cầm đi. Ta ba một bên chơi còn một bên dặn dò ta cho hắn mua một cái cảm ứng di động. Nói tốt cảm ứng di động sẽ không dùng, nhất định phải dùng ấn phím lão nhân cơ đâu?!”</p>
+<p>“Ân…… Ta bị nãi nãi cầm đi.”</p>
+<p>“Ta chính là bị gia gia…… Ta hiện tại có điểm tin tưởng, Trần lão sư là đoạt tôn tử trò chơi chơi chuyện này _( з” ∠)_. Chính là ta cũng tưởng chơi.”</p>
+<p>“Ta cảm thấy cũng chính là hiện tại hứng thú tương đối cao đi, thiết một ngày liền nị.”</p>
+<p>“Ta quản nó vài ngày sau có thể hay không nị, ít nhất hiện tại ta tưởng thiết trái cây! Tay ngứa!”</p>
+<p>Kia lúc sau.</p>
+<p>Mỗ ở trên mạng lấy táo bạo nổi tiếng phú nhị đại Các ngươi cho ta đề cử cái gì rác rưởi trò chơi?! Thiết trái cây?! Ai sẽ chơi loại đồ vật này?!</p>
+<p>Quá trong chốc lát, phú nhị đại nói Còn thành, có thể tống cổ thời gian.</p>
+<p>Lại một lát sau, phú nhị đại táo bạo Này thiết kế giả cái gì đầu óc? Vì cái gì không có khắc kim đạo cụ?! Ra cường hóa đao, một kiện thanh bom a! Ít nhất đổi cái làn da đi?! Này đao khách đàn bà hề hề, cho ta cái khốc một chút!</p>
+<p>Cuối cùng, phú nhị đại bắt đầu điên cuồng vòng người chuyển phát Không thể ta một người trúng độc!</p>
+<p>Các fan “Ha ha ha ha ha ha”, sôi nổi trêu chọc, hơn nữa, không có chơi trò chơi này người cũng bắt đầu download nếm thử.</p>
+<p>Liền ngày thường đối trò chơi phẩm vị thực chọn, liền quốc tế đại xưởng trò chơi có đôi khi đều bị hắn mắng thành một đoàn shi táo bạo phú nhị đại đều trúng độc, trò chơi này hẳn là không tồi đi?</p>
+<p>Chỉ chốc lát sau, một cái khác lấy ham thích giới giải trí bát quái tin tức phú nhị đại cũng ra tới lên tiếng Các ngươi đều ở chơi kia ta cũng chơi một chút.</p>
+<p>Sau đó, cái kia phú nhị đại nói Tán thành, ta cảm thấy hẳn là ra điểm đạo cụ. Bằng không lộng cái phân thời gian đoạn bảng xếp hạng. Bởi vì bọn họ chơi đến so với ta thời gian trường, liền ở tổng bảng vẫn luôn đợi, nhìn khó chịu.</p>
+<p>Sau đó này hai phú nhị đại các bằng hữu sôi nổi ra tới điểm tán, tỏ vẻ tổng bảng thượng đám kia hỗn đản chính là chiếm thời gian ưu thế, bằng không khẳng định sẽ bị bọn họ xong bạo.</p>
+<p>Đương cái thứ ba lấy tú sủng vật nổi tiếng phú nhị đại ra tới thời điểm, vây xem quần chúng đã thực bình tĩnh.</p>
+<p>Còn có người ghi hình, cho đại gia xem chính mình huyễn khốc thiết trái cây. Vây xem quần chúng sôi nổi tỏ vẻ, đồng dạng đều là thiết trái cây, vì cái gì chính mình thiết trái cây cùng đại lão thiết trái cây hoàn toàn không giống nhau, đại lão kia không phải tay, là bạch tuộc đi!</p>
+<p>Đương phú nhị đại cùng hắn các bằng hữu xuống nước dam thổi thiết trái cây lúc sau, rất nhiều trò chơi bác chủ phi trò chơi bác chủ sôi nổi bị mang vào cái này hố. Trong lúc nhất thời, giống như ngươi không biết thiết trái cây, liền lạc đơn vị.</p>
+<p>Mà này thiết trái cây chẳng những miễn phí, còn phi thường dễ dàng thượng thủ. Ngươi ở xe điện ngầm thượng có thể thiết —— đương nhiên tiền đề là ngươi có tòa vị; ngươi tại hạ khóa thời điểm có thể thiết —— kỳ thật chỉ cần ngươi lá gan đủ đại đi học cũng có thể; ngươi ở ăn cơm thời điểm có thể thiết —— sau đó quên mất ăn cơm; ngươi thậm chí ở đi đường thời điểm đều có thể thiết —— nếu không sợ quăng ngã cái cẩu gặm bùn……</p>
+<p>Nói tóm lại, đương này một trò chơi ở trên mạng trở thành bạo khoản lúc sau, thực dễ dàng liền ở trong hiện thực mở rộng.</p>
+<p>Tỷ như ở đi làm thời điểm, thời gian nhàn hạ, có người cầm di động ra tới thiết trái cây. Sau đó một người khác nói, hảo xảo nga, ngươi cũng ở thiết, kia nhất định sẽ có người thứ ba ra tới, hỏi cái này là cái gì trò chơi.</p>
+<p>Đương một cái quần thể có ba người vẫn là thiết trái cây, những người khác nhất định sẽ đến vây xem, sau đó thấy trò chơi này đơn giản, chính mình cũng download cái thiết trái cây thử xem xem.</p>
+<p>Rốt cuộc người là xã hội động vật, quần thể động vật, đương chung quanh tất cả mọi người ở làm cùng sự kiện thời điểm, nếu chuyện này hắn cũng không mâu thuẫn, cho dù hắn không có hứng thú, cũng sẽ không tự chủ được làm ra cùng chung quanh người tương đồng sự.</p>
+<p>Một cái miễn phí đối thủ tàn đảng hữu hảo thiết trái cây trò chơi, hiển nhiên là một cái làm người thực dễ dàng tiếp thu cùng quần thể xu cùng hoạt động. Người liền sợ cùng chung quanh người không có tiếng nói chung.</p>
+<p>Đơn vị là như thế này, lớp cũng là như thế này, thậm chí bằng hữu chi gian cũng là như thế này.</p>
+<p>Trong lúc nhất thời, 《 dao gọt hoa quả khách 》 này một trò chơi, dường như đã biến thành một cái lưu hành ký hiệu. Nói đến cảm ứng hưu nhàn trò chơi, tựa hồ liền lách không ra 《 dao gọt hoa quả khách 》.</p>
+<p>Trên mạng cũng xuất hiện rất nhiều 《 dao gọt hoa quả khách 》 đồng nghiệp đồ thậm chí đồng nghiệp âm nhạc. Trời biết một cái thiết trái cây cũng có thể có đồng nghiệp đồ đồng nghiệp âm nhạc, đồng nghiệp sáng tác giả nhóm đây là phi thường có tài hoa.</p>
+<p>Tiêu Cẩu đem điện thoại mặt bàn thiết trí thành 《 dao gọt hoa quả khách 》 đồng nghiệp đồ, đem điện thoại linh âm thiết trí thành 《 dao gọt hoa quả khách 》 đồng nghiệp âm nhạc, mỹ tư tư đối Kiều Hoành nói “Lúc này mới một tuần, download lượng liền mau trăm vạn, phía chính phủ mặt bác fans cũng tăng tới sáu vị đếm, ta cảm giác ta lập tức liền phải thăng chức rất nhanh!”</p>
+<p>“Ân.” Kiều Hoành kỳ thật trong lòng cũng có chút kích động, bất quá hắn cảm thấy chính mình ở trong đó không ra cái gì lực, cho nên còn tính bình tĩnh, “Ngươi tiếp được tới làm cái gì? Nhận người xây dựng thêm phòng làm việc?”</p>
+<p>Tiêu Cẩu xoa bàn tay “Trước thuê cái làm công địa điểm, lại nói nhận người sự đi. Rốt cuộc phải có làm công địa điểm!”</p>
+<p>Kiều Hoành đề nghị “Ta nơi này có một cái tương đối thích hợp mặt tiền, vừa lúc thuê kỳ tới rồi, có thể trực tiếp dùng. Phía trước thuê người đã trang hoàng hảo. Về sau ngươi tưởng hướng cái nào phương diện phát triển? Tiếp tục làm hưu nhàn game mobile?”</p>
+<p>Tiêu Cẩu suy nghĩ một chút hệ thống đối nhiệm vụ chủ tuyến miêu tả, nói “Hẳn là tập game một người chơi, game online, bao gồm máy tính, di động, VR sở hữu cảng, cuối cùng sẽ phát triển đến chính mình buôn bán trưởng máy, xây dựng ngôi cao vì nhất thể đại hình tổng hợp trò chơi nhà máy hiệu buôn.”</p>
+<p>Kiều Hoành “……”</p>
+<p>Kiều Hoành đỡ trán “Thiên còn sáng lên……”</p>
+<p>Tiêu Cẩu buông tay “Ngươi không phải hỏi ta mục tiêu sao? Không nghĩ đương tướng quân binh lính không phải hảo binh lính, chẳng lẽ ngươi không nghĩ hai ta xí nghiệp làm to làm lớn?”</p>
+<p>Kiều Hoành do dự trong chốc lát, nghĩ thầm cũng là “Thành đi, nếu ngươi đều nói như vậy, ta cũng chỉ có thể liều mình bồi quân tử. Vậy ngươi tiếp theo cái trò chơi làm cái gì?”</p>
+<p>Tiêu Cẩu gãi gãi đầu “Chờ ta ngủ một giấc, ngày mai nói cho ngươi.”</p>
+<p>Ngủ một giấc sau, tay mới nhiệm vụ hẳn là đã hoàn thành đi? Đến trước nhìn xem hệ thống khen thưởng thứ gì, tuyên bố cái gì nhiệm vụ lại nói.</p>
+<p>Ngày hôm sau buổi sáng, Tiêu Cẩu quả nhiên nghe được hệ thống nhắc nhở tay mới nhiệm vụ đã hoàn thành thanh âm.</p>
+<p>Hắn ngáp một cái, một bên rửa mặt đánh răng một bên click mở tay mới khen thưởng.</p>
+<p>Tay mới khen thưởng đầu tiên mở ra hắn năng lực cá nhân giao diện, cũng khen thưởng Tiêu Cẩu 5 cái kỹ năng điểm.</p>
+<p>Cá nhân giao diện phân “Mỹ thuật”, “Kế hoạch”, “Trình tự”, “Hoạt động” bốn hạng năng lực.</p>
+<p>Tiêu Cẩu suy tư, hệ thống mở ra cá nhân giao diện tư tưởng năng lực, vừa lúc đối ứng trò chơi tứ đại bộ môn.</p>
+<p>Mỹ thuật bộ môn chủ yếu phụ trách lập vẽ, kiến mô, động họa, đặc hiệu từ từ, phim tuyên truyền cũng là mỹ thuật bộ môn phụ trách;</p>
+<p>Kế hoạch bộ môn còn lại là trò chơi đại não, muốn làm cái gì trò chơi, trò chơi cốt truyện là cái gì, chơi pháp là cái gì, trị số như thế nào giả thiết, chiến lực cân bằng như thế nào bảo trì, đều là kế hoạch bộ môn nồi.</p>
+<p>Trình tự bộ môn xem tên đoán nghĩa, phụ trách trò chơi nội các loại trình tự xây dựng, hoàn thành kế hoạch bộ môn các loại yêu cầu;</p>
+<p>Hoạt động bộ môn bị người chơi mắng đến nhiều nhất, hiểu biết người chơi nhu cầu, cải tiến trò chơi, giữ gìn trò chơi ổn định từ từ đều là bọn họ phụ trách.</p>
+<p>Tiêu Cẩu kiếp trước liền ở trình tự bộ môn, bị kế hoạch bộ môn thay đổi xoành xoạch tức giận đến hộc máu, tăng ca thêm đến lao lực mà ch·ế·t.</p>
+<p>Đời này bởi vì trò chơi thiết kế công cụ thập phần trí năng hóa, lập trình viên nhóm hẳn là không có đời trước như vậy khổ bức, trò chơi sinh sản tốc độ cũng sẽ nhanh hơn rất nhiều lần. Hơn nữa, rất nhiều công tác đều bị cũng ở cùng nhau. Vốn dĩ nguyên bản thuộc về mỹ thuật bộ môn kiến mô cùng đặc hiệu chế tác, dùng trò chơi thiết kế khí là có thể hoàn thành.</p>
+<p>Này bốn cái trị số, người thường cực hạn vì 100 phân. Vượt qua cái này điểm chính là hướng thiên tài phát triển, thông qua học tập đã bất lực, nhưng gia tăng kỹ năng điểm, có thể tiếp tục gia tăng điểm.</p>
+<p>Tiêu Cẩu trình tự trị số đã đạt tới 100 phân. Mặt khác trị số, hoạt động 30 phân, mỹ thuật 0 phân, kế hoạch 70 phân.</p>
+<p>Tiêu Cẩu “Về sau mỗi lần nhiệm vụ đều khen thưởng nhiều như vậy kỹ năng điểm sao?”</p>
+<p>Hệ thống Không phải.</p>
+<p>“Hệ thống có thể tra một chút Kiều Hoành trị số sao?” Tiêu Cẩu lại hỏi.</p>
+<p>Hệ thống Phi ký chủ không thể lượng hóa trị số. Bất quá có thể bước đầu đánh giá ra, hắn mỹ thuật cùng hoạt động đều vượt qua 100 phân.</p>
+<p>Tiêu Cẩu nháy mắt cảm thấy chính mình có thể ở kia hai hạng thượng nằm yên, đặc biệt là mỹ thuật, sau đó không chút do dự đem năm cái kỹ năng điểm đều thêm tới rồi kế hoạch thượng, kế hoạch trị số lập tức tăng tới 79 phân.</p>
+<p>Nguyên lai một cái kỹ năng điểm không ngừng thêm một phân? Là theo điểm tổng số sở thêm trị số giảm dần sao? Tiêu Cẩu như suy tư gì.</p>
+<p>Tác giả có lời muốn nói Kiều Hoành tuy rằng chưa làm qua, nhưng là thông qua mưa dầm thấm đất, thương nghiệp hoạt động phương diện vẫn là so Tiêu Cẩu lợi hại. Đến nỗi mỹ thuật, nơi này chỉ chính là trò chơi nội mỹ thuật năng lực, cùng trở thành họa gia là hai việc khác nhau. Đến nỗi Tiêu Cẩu, đại khái chính là linh hồn họa sĩ thêm thẩm mỹ tai nạn đi.</p>
+<p>Phú nhị đại Trần lão sư không phải thác, nhưng chúng ta là thác.jpg.</p>
+<p>Ngày vạn a…… Không có khả năng. Bất quá tháng 11 tương đối không, khả năng sẽ ngày chín hoặc là ngày sáu. Đến lúc đó rồi nói sau _( з” ∠)_ ( nói như vậy là ngày sáu ).</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong5.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong7.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "manh-nhat-tro-choi-che-tac-nhan";
+const NOVEL_TITLE = "Mạnh nhất trò chơi chế tác nhân";
+const CHAPTER_TITLE = "Chương 6";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

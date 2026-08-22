@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 3</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Mạnh nhất trò chơi chế tác nhân
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 3</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong2.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong4.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Tiêu Cẩu chỉ là thuận miệng vừa nói, không nghĩ tới Kiều Hoành cư nhiên đáp ứng rồi.</p>
+<p>Tiêu Cẩu thập phần cao hứng. Hắn vui tươi hớn hở nói “Kia mỹ thuật tư liệu sống sự liền giao cho ngươi? Ta tiếp tục cải tiến trò chơi chơi pháp cùng hình thức. Đúng rồi, chúng ta hai người cổ phần như thế nào phân? Năm năm?”</p>
+<p>Kiều Hoành nghĩ nghĩ, nói “Ngươi phụ trách sáng ý cùng sáng tác, ta không chiếm ngươi tiện nghi, bốn sáu liền thành.”</p>
+<p>Tiêu Cẩu nói “Thành a, về sau công ty làm lớn phân 30% cổ phần cấp cao quản, ta chiếm gần 42% cổ phần số định mức, vẫn là có thể nắm giữ đại cục. Vậy như vậy định rồi, chúng ta đi tìm cái luật sư viết cái hiệp nghị, ngươi không phải có tư nhân luật sư sao?”</p>
+<p>Kiều Hoành nhướng mày “Ta mới vừa nhập bọn, ngươi liền an bài thượng đúng không? Đừng quên ta trừ bỏ là ngươi hợp tác đồng bọn ở ngoài, vẫn là ngươi kim chủ.”</p>
+<p>Tiêu Cẩu lập tức ở trên mặt đôi thượng khoa trương lấy lòng tươi cười “Đúng đúng, kim chủ các hạ. Làm tiểu nhân cho ngươi xoa bóp bả vai.”</p>
+<p>Kiều Hoành nhìn Tiêu Cẩu kia đáng sợ nịnh nọt tươi cười, nhịn không được nổi lên một thân nổi da gà “Ngươi thật đúng là không biết xấu hổ.”</p>
+<p>Tiêu Cẩu nhéo nhéo chính mình da mặt, nói “Muốn a, như thế nào không cần, ngươi xem, còn rất hậu.”</p>
+<p>Kiều Hoành đỡ trán “Hảo đi, đích xác rất hậu. Ta làm luật sư trau chuốt một cái hợp đồng. Bất quá ngươi không sợ ta thiết trí bẫy rập, ngầm chiếm ngươi tài sản?”</p>
+<p>Tiêu Cẩu chỉ chỉ đầu mình “Ta đáng giá đồ vật ở chỗ này, liền tính công ty làm to làm lớn, ngươi cũng sẽ không đá văng ra ta. Huống chi, ngươi không phải không thiếu tiền sao?”</p>
+<p>Kiều Hoành ôm cánh tay, trên cao nhìn xuống nhìn dựa ngồi ở trên giường bệnh Tiêu Cẩu nói “Ngươi nhưng thật ra thực tự tin. Hảo hảo nghỉ ngơi, trò chơi không vội, thân thể quan trọng nhất. Ngươi cũng không nghĩ ở bệnh viện đợi cho địa lão thiên hoang đi?”</p>
+<p>Tiêu Cẩu làm ra hơi sợ biểu tình, lại chọc đến Kiều Hoành khóe miệng run rẩy.</p>
+<p>Người này như thế nào như vậy đậu? Bất quá đảo cũng không chán ghét.</p>
+<p>Hắn chuyển nhà sau cơ hồ cùng sở hữu người quen bằng hữu đều tạm thời chặt đứt liên hệ. Có cái tương đối ầm ĩ bằng hữu cũng coi như không tồi.</p>
+<p>Dù sao hắn cũng không có chuyện gì, không bằng đầu điểm tiền trinh tùy tiện chơi chơi đi. Kiều Hoành tưởng.</p>
+<p>Tiêu Cẩu vốn tưởng rằng Kiều Hoành họa mỹ thuật tư liệu sống yêu cầu hảo chút thời gian, ai biết Kiều Hoành ngày hôm sau liền đem mỹ thuật tư liệu sống toàn họa hảo.</p>
+<p>Tiêu Cẩu nhìn phong cách tinh tế Q bản tư liệu sống, nhịn không được lôi kéo Kiều Hoành tay lặp lại nhìn “Một ngày? Nhiều như vậy tư liệu sống? Thật là ngươi một người họa? Không tốn tiền tìm người hỗ trợ họa?”</p>
+<p>Kiều Hoành đem lấy tay về, khinh bỉ nói “Liền như vậy điểm đồ vật, yêu cầu họa bao lâu?”</p>
+<p>Tiêu Cẩu đầy mặt không tin.</p>
+<p>Kiều Hoành hừ lạnh một tiếng, lập tức cầm bút cùng bàn vẽ, không đến một phút liền đem một cái Q đao khách câu họa xong “Tuy rằng không có tô màu, bất quá tô màu cũng không cần bao lâu. Nếu là bản vẽ, dùng thời gian càng đoản.”</p>
+<p>Tiêu Cẩu ngơ ngác nhìn Kiều Hoành bản nháp đều không đánh, một cái Q bản sôi nổi trên giấy, đường cong khéo đưa đẩy không có một đinh điểm run rẩy dấu hiệu “Hảo đi, ngươi tay không phải nhân loại tay, ta hiểu được.”</p>
+<p>Kiều Hoành bình tĩnh nói “Bất quá quen tay hay việc, tùy tiện một cái mỹ thuật sinh đều có thể làm được.”</p>
+<p>Tiêu Cẩu dùng sức lắc đầu “Không không không không, này tuyệt đối không phải tùy tiện một cái mỹ thuật sinh ra được có thể đạt tới hiệu quả. Bất quá, ngươi học mỹ thuật? Về sau ngươi phải làm họa gia sao? Kia ta phải trước ôm thật lớn chân.”</p>
+<p>Kiều Hoành thần sắc có trong nháy mắt u ám, bất quá thực mau khôi phục bình thường “Ta không đảm đương nổi họa gia, lão sư nói ta không có linh tính, nhiều lắm đương cái họa tượng.”</p>
+<p>Tiêu Cẩu líu lưỡi “Linh tính? Không linh tính đều họa đến tốt như vậy? Có linh tính có thể họa thành bộ dáng gì? Hảo đi, đại khái là họa thành ta xem không hiểu bộ dáng. Vậy ngươi chuẩn bị làm gì? Tranh minh hoạ gia? Truyện tranh gia?”</p>
+<p>Kiều Hoành nửa nói giỡn nói “Ta không đảm đương nổi truyện tranh gia, liền tính cho ta chuyện xưa kịch bản, ta cũng họa không hảo phân kính. Đến nỗi tranh minh hoạ, ta vì cái gì phải cho người làm công? Nói đến chuẩn bị làm gì, ta không phải ngươi mỹ thuật tổng giám, kim chủ cùng đối tác sao?”</p>
+<p>Tiêu Cẩu cấp Kiều Hoành khuyến khích “Đúng đúng đúng. Chờ chúng ta tiền kiếm nhiều chúng ta liền chính mình đi làm triển lãm tranh, ta cũng không tin ngươi thành không được họa gia. Ngươi họa thật sự rất lợi hại!”</p>
+<p>Kiều Hoành lắc đầu nói “Làm triển lãm tranh tiền ta vẫn phải có, bất quá không đảm đương nổi chân chính họa gia, liền tính thông qua lăng xê gì đó làm ngoại giới tán thành ta là họa gia cũng không thú vị. Ta vẽ tranh không phải vì nổi danh cùng kiếm tiền.”</p>
+<p>Tiêu Cẩu một bàn tay che lại ngực, một bàn tay làm tạm dừng thủ thế “Là vì mộng tưởng đúng không? Kia bị rất nhiều người phát ra từ nội tâm thích ngươi họa có tính không thực hiện mộng tưởng?”</p>
+<p>Kiều Hoành nhún vai “Đại khái? Ta cũng không biết. Tùy tiện làm làm đi, dù sao cũng nhàm chán.”</p>
+<p>Nhìn Kiều Hoành chán đến ch·ế·t, phảng phất đối cái gì đều nhấc không nổi hứng thú bộ dáng. Tiêu Cẩu nghĩ tới chính mình.</p>
+<p>Kiều Hoành đại khái cùng hắn cha mẹ quan hệ thực hảo đi. Hắn cùng cha mẹ quan hệ giống nhau, nhưng ở trên đời một cái nói chuyện được thân nhân đều không có lúc sau, cũng cảm thấy trong lòng trống rỗng, làm cái gì đều nhấc không nổi kính.</p>
+<p>Hắn còn nghĩ kiếm tiền sống tạm, Kiều Hoành không kém tiền, đại khái so với hắn càng nhấc không nổi kính.</p>
+<p>Tiêu Cẩu nói sang chuyện khác nói “Đúng rồi, ngươi sẽ họa đại ngực muội tử cùng soái ca sao? Về sau chúng ta còn phải làm thẻ bài trò chơi nga.”</p>
+<p>Kiều Hoành bình tĩnh nói “Sẽ, ngươi muốn loại nào loại hình ta đều có thể họa. Ta họa quá một đoạn thời gian truyện tranh.”</p>
+<p>Tiêu Cẩu hắc tuyến. Hảo đi, cho nên Kiều Hoành mới vừa nói, cho hắn chuyện xưa kịch bản, hắn cũng họa không hảo phân kính loại sự tình này không phải khiêm tốn, là đã phát sinh quá sự sao?</p>
+<p>Tiêu Cẩu nói “Vậy không thành vấn đề…… Bất quá vốn dĩ cũng không có khả năng làm ngươi một người họa. Ta hiện tại đem tân mỹ thuật tư liệu sống đạo đi vào, ngươi lại chơi chơi xem. Ta còn tăng thêm tân trò chơi hình thức.”</p>
+<p>Kiều Hoành chờ Tiêu Cẩu đổi mới trò chơi sau, lại cắt một buổi trưa trái cây, rời đi thời điểm còn chưa đã thèm, quyết định về nhà tiếp tục thiết.</p>
+<p>Tiêu Cẩu nhìn ra được tới, Kiều Hoành đích xác nhàm chán đến sắp số con kiến chơi.</p>
+<p>Bất quá Kiều Hoành như vậy có tiền, nếu thích chơi trò chơi, trong nhà khẳng định trang bị tối cao đương trò chơi thiết bị đi? Như thế nào sẽ đối một cái hưu nhàn trò chơi yêu thích không buông tay?</p>
+<p>Đương lại qua ba tháng, Tiêu Cẩu xuất viện, Kiều Hoành thế hắn chúc mừng thời điểm, Tiêu Cẩu hỏi vấn đề này.</p>
+<p>Kiều Hoành bưng hắn kia trương tiêu chí tính nhàm chán biểu tình, nói “Network có thể bị bạn tốt nhìn đến trò chơi đều không nghĩ đánh, game một người chơi không có gì thú vị. Còn không phải là đánh đánh giết giết, nị.”</p>
+<p>Tiêu Cẩu thở dài, sờ sờ hắn kia bởi vì trị liệu miệng vết thương cạo một dúm mao, cảm thấy quá khó coi liền dứt khoát toàn cạo đầu trọc, nói “Ngươi có thể đổi cái tài khoản a…… Hảo đi, ngươi nhân vật nhất định cấp bậc rất cao, trang bị thực hảo, từ đầu bắt đầu cũng không thú vị. Chờ ra tân trò chơi, lại đổi tài khoản đi chơi đi. Bất quá chúng ta hiện tại là gây dựng sự nghiệp kỳ, nói không chừng ngươi cũng không có thời gian chơi trò chơi.”</p>
+<p>“Ân.” Kiều Hoành khai một lọ nước trái cây cấp Tiêu Cẩu đảo thượng, “Ngươi chuẩn bị thượng cái nào trò chơi ngôi cao? Dùng cái gì thu phí phương thức?”</p>
+<p>Tuy rằng hiện tại di động đều là khai nguyên, nhưng là tân trò chơi phần lớn sẽ ở nào đó trò chơi ngôi cao thượng giá, bằng vào bọn họ bảng đơn mở rộng.</p>
+<p>Hiện tại quốc nội tương đối nổi danh trò chơi ngôi cao có ba cái. Gấu trúc trò chơi ngôi cao lấy chính mình ổn cư Hoa Quốc tiêu thụ bảng đệ nhất smart phone vì chống đỡ, chỉ làm ngôi cao không làm trò chơi; Hạ Mộng trò chơi ngôi cao dựa vào Hạ Mộng công ty game, chính mình bản thân chính là trò chơi đại xưởng; Bá Thành trò chơi ngôi cao lấy Bá Thành internet công ty làm cơ sở, Bá Thành internet công ty chủ yếu khai phá internet đoan thông tin công cụ, tỷ như pi pi cùng mặt bác.</p>
+<p>Tiêu Cẩu trả lời nói “Đi miễn phí download cùng đổi mới, thu quảng cáo phí hình thức. Ta tưởng trước đánh ra danh khí đi. Ngươi cảm thấy cái nào trò chơi ngôi cao càng tốt?”</p>
+<p>“Ngươi làm chính là càng thích hợp di động cùng máy tính bảng đoan chơi hưu nhàn trò chơi, đi gấu trúc trò chơi ngôi cao càng tốt. Bất quá xem ngươi này biểu tình, có phải hay không có mặt khác ý tưởng?” Kiều Hoành dùng chiếc đũa đánh một chút Tiêu Cẩu muốn chọn hồng du thịt bò tay, “Kia là của ta, ngươi đến ăn thanh đạm đồ ăn.”</p>
+<p>Tiêu Cẩu ủy khuất thu hồi chiếc đũa. Hắn móc di động ra, đăng nhập pi pi, click mở một cái thông cáo nói “Bá Thành trò chơi hiện tại đang làm trò chơi tân nhân thiết kế sư bồi dưỡng kế hoạch, chỉ cần gửi bài đoạt giải, là có thể lấy được đến miễn phí đề cử!”</p>
+<p>Kiều Hoành nhịn không được trắng Tiêu Cẩu liếc mắt một cái “Nếu ngươi muốn đi Bá Thành cầu chức, đi cũng không quan hệ. Ngươi không phải muốn làm một mình sao? Chẳng lẽ ngươi nhìn không ra, mục đích của hắn là vì mời chào trò chơi thiết kế nhân tài?”</p>
+<p>Tiêu Cẩu còn thật không nghĩ tới điểm này “Bá Thành không phải chỉ làm thông tin công cụ sao?”</p>
+<p>Kiều Hoành dùng xem ngốc tử ánh mắt nhìn Tiêu Cẩu “Ai nói? Hiện tại hắn có tiền có ngôi cao, vì cái gì không làm chính mình trò chơi?”</p>
+<p>Tiêu Cẩu nháy mắt héo “Hảo đi, là ta quá ngây thơ rồi. Kia ta đầu gấu trúc đi…… Như thế nào gấu trúc không làm cái duy trì tân nhân hoạt động linh tinh giúp ta tuyên truyền miễn phí một chút đâu?”</p>
+<p>Kiều Hoành nói “Quảng cáo phí tỉnh không được.”</p>
+<p>Tiêu Cẩu đem chén đĩa dịch khai, đem trán tạp trên mặt bàn “Ngươi xem tiểu thuyết internet, đều có cái gì tân nhân trò chơi thiết kế đại thi đấu cấp vai chính xoát danh khí, ta như thế nào liền ngộ không đến loại chuyện tốt này đâu?”</p>
+<p>Kiều Hoành mở ra di động tìm tòi một chút, nói “Tân nhân trò chơi thiết kế giải thưởng lớn có, bình chính là tân nhân trò chơi thiết kế giả đệ một trò chơi ở thượng giá một năm nội tổng hợp biểu hiện. Ngươi có thể đi tranh thủ một chút.”</p>
+<p>Tiêu Cẩu thở dài “Một năm? Rau kim châm đều lạnh. Vì cái gì ta không quen biết cái nào trò chơi đại già giúp ta miễn phí đề cử một chút?”</p>
+<p>Kiều Hoành giội nước lã “Thế gian không có miễn phí cơm trưa, có cũng không thể ăn.”</p>
+<p>Tiêu Cẩu không cao hứng bái đồ ăn, đồ ăn còn tất cả đều là thanh đạm thức ăn, khó chịu, muốn khóc.</p>
+<p>Kiều Hoành đem Tiêu Cẩu đưa về gia…… Không đúng, phải nói hai người cùng nhau về nhà, bởi vì là hàng xóm.</p>
+<p>Bị tạp ra cái động tường đã chữa trị, Kiều Hoành còn ra tiền giúp Tiêu Cẩu thay đổi cái giống nhau như đúc sô pha, trong nhà cũng đã quét tước hảo. Tiêu Cẩu chợt vừa thấy, trừ bỏ sô pha quá tân, trên sô pha ôm gối quá ít ở ngoài, cùng chính mình bị đưa vào bệnh viện phía trước không khác biệt, liền tường sơn nhan sắc đều không hề không khoẻ.</p>
+<p>“Cảm tạ huynh đệ, trang hoàng tiền…… Hảo, hảo, ta biết ngươi không thiếu tiền. Kia lần này trò chơi thu vào, ta nhiều phân ngươi một thành như thế nào? Làm họa sĩ, ngươi cũng nên lãnh tiền lương đúng không? Hơn nữa luật sư cũng là ngươi…… Đừng cùng ta tranh, thân huynh đệ cũng muốn minh tính sổ, huống chi còn không biết có thể kiếm bao nhiêu tiền.” Tiêu Cẩu khuyên can mãi, mới đem Kiều Hoành khuyên hảo.</p>
+<p>Hắn lau một phen không tồn tại hãn “Huynh đệ, ta biết ngươi không thiếu tiền, nhưng là tiền nhiều luôn là chuyện tốt đi? Đừng luôn đẩy tới đẩy đi, chúng ta hai người hiện tại đều là miệng ăn núi lở người.”</p>
+<p>Kiều Hoành thầm nghĩ, ta ở ngân hàng tiền tiết kiệm liền có 5 tỷ. Ta không đánh cuộc không phiêu không hấp độc, liền tính ăn không kỳ hạn lợi tức, cả đời cũng ăn không không sơn.</p>
+<p>Tác giả có lời muốn nói Tiêu Cẩu Ở tứ hoàn trụ cao tầng chung cư người có thể phú đến nào đi?</p>
+<p>Kiều Hoành Ân……</p>
+<p>Cảm tạ thiếu hoa cùng vân lúm đồng tiền địa lôi duy trì, cảm tạ tân lão người đọc cổ động cùng tưới, bổn văn có tồn cảo, trước mắt mỗi ngày giữa trưa 12 điểm đúng giờ đổi mới, xin yên tâm truy văn.</p>
+<p>Tồn cảo dùng xong sau ta cũng sẽ ngày càng, chỉ là mỗi ngày sẽ không cố định thời gian đổi mới, rốt cuộc muốn sinh tử thời tốc sao. Tồn cảo dùng xong khi ta sẽ làm lời nói nhắc nhở, hiện tại còn sớm đâu.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong2.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong4.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "manh-nhat-tro-choi-che-tac-nhan";
+const NOVEL_TITLE = "Mạnh nhất trò chơi chế tác nhân";
+const CHAPTER_TITLE = "Chương 3";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

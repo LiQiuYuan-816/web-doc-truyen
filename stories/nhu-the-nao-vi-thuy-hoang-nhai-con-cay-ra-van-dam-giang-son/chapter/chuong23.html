@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 23 Bạch Khởi hòn đá nhỏ</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Như thế nào vì Thủy Hoàng nhãi con cày ra vạn dặm giang sơn
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 23 Bạch Khởi hòn đá nhỏ</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong22.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong24.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Hai nước chủ tướng từng người đúng chỗ, Trường Bình chi chiến cuối cùng giai đoạn kéo ra mở màn.</p>
+<p>Tần quân khai ra sơn cốc, ở sông Đán tây ngạn dựng trại đóng quân, làm ra một bộ muốn cùng Triệu quân liều mạng tư thế.</p>
+<p>Ngay sau đó, Vương Hột suất lĩnh đại cổ Tần quân, hướng tới sông Đán mặt bắc lòng chảo bước vào.</p>
+<p>Sông Đán mặt bắc lòng chảo là một cái tiêu chuẩn túi hình, cửa cốc nhỏ hẹp, ba mặt núi vây quanh. Này nam diện là núi non trùng điệp, này mặt bắc là trăm dặm thạch trường thành, này phía tây là cao cao Hàn vương sơn ( lúc này Hàn vương sơn còn chưa mệnh danh ), lướt qua Hàn vương sơn chính là Triệu quân đóng quân doanh địa.</p>
+<p>Vượt qua nam diện núi non trùng điệp sau, là Tần quân đã đánh hạ địa bàn; mặt bắc trăm dặm thạch trường thành lúc sau cửa ải, là vượt qua Thái Hành sơn, đi trước Triệu quốc bụng đường bộ chi nhất, nguyên bản Liêm Pha tại đây thiết trạm kiểm soát; phía tây Hàn vương trên núi nguyên bản cũng có Triệu quân thành lũy.</p>
+<p>Triệu Quát tiếp nhận Liêm Pha trở thành Triệu quân chủ tướng lúc sau, vì cùng Tần quân quyết chiến, đem tách ra phòng thủ Triệu quân đều triệt trở về, dựa theo hắn lý giải tiến hành thao luyện. Liêm Pha lưu lại trung hạ tầng tướng lãnh cũng bị hắn kể hết bỏ cũ thay mới. Trăm dặm thạch trường thành cùng Hàn vương trên núi Triệu quân trận địa đều bị vứt đi.</p>
+<p>Triệu Quát thục đọc binh thư, tự nhiên biết làm tướng giả luyện binh là bước đầu tiên. Hiện tại này đó tướng lãnh sĩ tốt đều vẫn là Liêm Pha binh, không phải hắn binh. Hắn phải đối quân đội chỉ huy tự nhiên, liền đầu tiên muốn thao luyện này đó tướng sĩ quân tốt, làm cho bọn họ thói quen nghe theo chính mình chỉ huy phong cách.</p>
+<p>Trước trận đổi tướng là tối kỵ, trước trận đại quy mô sửa đổi quân đội nhân sự biến động cũng là tối kỵ, sẽ cực đại ảnh hưởng sĩ khí. Nhưng Triệu vương cùng Triệu Quát lúc này phi thường hợp phách, đều cho rằng chính mình hành động phi thường chính xác.</p>
+<p>Đời sau ghi lại, Tần quân trước sau đầu nhập chiến trường 60 dư vạn, Triệu quân trước sau đầu nhập chiến trường 40 dư vạn. Dựa theo cổ đại khoác lác truyền thống, cái này con số liền tính là thật sự, cũng gia nhập bảo đảm hậu cần dân chúng nhân số.</p>
+<p>Tần quân trường tuyến tác chiến, thực tế quân tốt nhân số dựa theo nhất hà khắc hậu cần xứng so, nhiều nhất cũng chỉ có 30 vạn tả hữu; mà Triệu quốc tuyến tiếp viện thực đoản, lại dựa vào Thượng Đảng dân chúng vận chuyển hậu cần, quân tốt nhân số ước chừng cũng là hơn hai mươi vạn tiếp cận 30 vạn.</p>
+<p>Liêm Pha dựa vào kiên cố thành lũy một bên đánh một bên lui, thối lui đến sông Đán đông ngạn tránh chiến không ra sau Tần quân mãnh công nhiều lần, Tần quân đã tổn thất tương đối thảm trọng.</p>
+<p>Ai đều biết, một cái chiếm cứ có lợi địa hình kiên cố thành lũy có thể lấy một địch chúng. Tần quân đúng là bởi vì thương vong thảm trọng lại không được tiến thêm, mới cần thiết đổi đi Liêm Pha. Căn cứ đời sau phỏng đoán, Tần quân tiếp cận hai mươi vạn thương vong, ít nhất có một nửa đều ch·ế·t ở cường công Liêm Pha thành lũy trung.</p>
+<p>Triệu Quát thô sơ giản lược phỏng chừng hai bên hiện tại binh lực, phỏng đoán Tần quân tinh nhuệ binh lính nhân số khả năng đã so Triệu quân lược thiếu. Hắn mới vừa mang theo một nhóm người thượng chiến trường, mà Tần quân tinh nhuệ binh lính trên người khẳng định đều mang theo thương, cho nên chiến lực thượng cũng là bên ta càng cường.</p>
+<p>Thượng Đảng quận thủ chủ động hiến thành, Triệu quốc mới là chính nghĩa một phương, dân tâm ở ta;</p>
+<p>Hai quân nhân số tương đương, ta có một nửa sĩ tốt mới vừa thượng chiến trường, mà Tần quân đã mệt chiến lâu rồi, ta quân dĩ dật đãi lao, chiến lực chiếm ưu;</p>
+<p>Triệu quốc lương thảo sung túc, mà Tần quốc không chỉ có tuyến tiếp viện quá dài, còn đã đánh ba năm ch·i·ế·n tr·a·nh, khẳng định lương thảo đã không đủ, cho nên hậu cần ưu thế cũng ở ta quân một phương.</p>
+<p>Triệu Quát suy đoán, ở bên ta có đại ưu thế tiền đề hạ, Tần quốc kéo không đi xuống lại vô pháp cường công, khẳng định sẽ nghĩ cách tránh đi kiên cố phòng tuyến, từ mặt bên vu hồi tấn công Triệu quốc trận địa.</p>
+<p>Đương Triệu Quát hoàn thành quân đội một lần nữa chỉnh biên là lúc, thám tử tới báo, Tần quân chủ tướng Vương Hột suất lĩnh rất nhiều Tần quân bắc thượng.</p>
+<p>Triệu Quát mở ra bản đồ, trong lòng thập phần kích động.</p>
+<p>Hắn mới vừa suy đoán lâu công không dưới sĩ khí hạ xuống Tần quân sẽ được ăn cả ngã về không, từ mặt bên vu hồi tấn công Triệu quân doanh mà, Tần quân quả nhiên như thế làm!</p>
+<p>Triệu Quát phó tướng lại không quá đồng ý chủ tướng suy đoán.</p>
+<p>Hắn chỉ vào lòng chảo bản đồ nói “Tần quân tiến vào sông Đán phương bắc lòng chảo, liền giống như tiến vào một cái túi trung. Tuy rằng bọn họ có thể từ trăm dặm thạch bảo lũy vòng hành ta quân trận địa sau lưng, nhưng bọn hắn hành quân trên đường tao ngộ tập kích, thực dễ dàng bị ta quân đổ ở trong túi ra không được. Vương Hột chính là tướng già, như thế nào sẽ phạm như thế sai lầm?”</p>
+<p>Triệu Quát một phách mặt bàn, tức giận nói “Hắn không phải phạm sai lầm, hắn là xem thường ta!”</p>
+<p>Phó tướng cứng họng.</p>
+<p>Triệu Quát kích động nói “Nếu Triệu quân chủ tướng vẫn là Liêm Pha thượng khanh, hắn đoạn không dám một mình thâm nhập! Hắn định này đây vì ta lần đầu tiên lĩnh quân, chỉ dám tử thủ, không dám xuất trận cùng hắn đối chiến!”</p>
+<p>Phó tướng “……” Hắn có điểm bị thuyết phục.</p>
+<p>Xác thật, nếu là tầm thường lần đầu tiên thượng chiến trường tuổi trẻ tướng lãnh, khẳng định sẽ đối Tần quân tướng già có sợ hãi chi tâm, chẳng sợ đã biết đối phương ý đồ, cũng sẽ gia cố trận địa tử thủ, không dám dễ dàng xuất binh nuốt vào này cổ Tần binh.</p>
+<p>Cho dù Tần quân vòng hành mặt bắc, muốn đánh hạ Triệu quân trận địa cũng không dễ dàng. Chỉ cần cố thủ, dù cho vô công, cũng rất khó làm lỗi. Cho nên nói chung, tuổi trẻ tướng lãnh đều sẽ lựa chọn thiếu sai quyết sách.</p>
+<p>Triệu Quát hít sâu, đem trong lòng bị coi khinh phẫn nộ áp xuống, nói “Mang binh giả nãi Tần quân chủ tướng, chỉ cần chém giết Tần quân chủ tướng, Tần quân vốn đã kinh là mệt binh, khẳng định tự sụp đổ!”</p>
+<p>Triệu Quát luận binh từ trước đến nay rất có đạo lý. Phó tướng bị thuyết phục, lĩnh mệnh lui ra, điểm binh điểm tướng chuẩn bị xuất phát.</p>
+<p>Tần quân chủ trận địa, Bạch Khởi ngồi ở chủ trong trướng, trầm mặc mà nhìn trước mặt bản đồ.</p>
+<p>Trên bản đồ có mấy viên hòn đá nhỏ, đại biểu cho Tần quân cùng Triệu quân binh lực.</p>
+<p>Triệu quân hòn đá nhỏ toàn tễ ở sông Đán đông ngạn doanh địa trung, nhìn qua giống như là một đám chờ đợi đồ tể heo dê.</p>
+<p>Tần quân chia quân một nửa đi trước trăm dặm thạch trường thành, nhưng tại đây phía trước, trăm dặm thạch trường thành thượng cũng đã có một chút Tần binh trộm lẻn vào, chữa trị hàng rào, khuân vác lương thảo.</p>
+<p>Ở Triệu Quát co rút lại binh lực, luyện binh chuẩn bị nhất cử tiến công Tần quân thời điểm, Tần quân đã sờ đến Triệu quân từ bỏ hàng rào, hướng bên trong trộm trữ hàng lương thảo.</p>
+<p>Này đó lương thảo, cũng đủ Vương Hột đại quân ăn 10 ngày. Này 10 ngày, Tần quân định có thể hoàn thành vây kín.</p>
+<p>“Võ An quân, Triệu quân đã xuất phát! Căn cứ thám tử hồi báo, là chủ tướng Triệu Quát tự mình lãnh binh!” Có cấp dưới tiến lều trại báo cáo.</p>
+<p>“Ân.” Bạch Khởi lên tiếng, đem đại biểu Triệu quân đá quét về phía sông Đán phương bắc lòng chảo.</p>
+<p>Nguyên bản liền ở sông Đán phương bắc lòng chảo Tần quân đá cùng đại biểu Triệu quân đá xen lẫn trong cùng nhau.</p>
+<p>“Khinh kỵ binh xuất phát.” Bạch Khởi cầm lấy mấy viên đại biểu Tần quân đá, đặt ở sông Đán phương bắc lòng chảo cùng Triệu quân nguyên bản chủ trận địa chi gian Hàn vương trên núi.</p>
+<p>Cấp dưới lĩnh mệnh lui ra.</p>
+<p>5000 tả hữu khinh kỵ binh xuất phát, bước lên Hàn vương sơn, dựa vào Hàn vương sơn Triệu quân nguyên bản trận địa, ngay tại chỗ lũy thổ chặt cây tu bổ hàng rào.</p>
+<p>Triệu Quát suất lĩnh Triệu quân chủ lực xuất kích, nhưng cũng để lại bộ phận người ở nguyên bản chủ trận địa thủ hậu cần quân nhu. Bạch Khởi suy đoán, Triệu Quát khả năng để lại một nửa người, lấy ứng đối đột phát tình huống.</p>
+<p>5000 tính cơ động kéo mãn khinh kỵ binh lần này chiến lược mục đích, là ở Triệu Quát phát hiện không đúng, chuẩn bị vượt qua Hàn vương sơn trở lại sông Đán đông ngạn trận địa khi, thủ vững ngăn cản Triệu Quát, chờ đợi Bạch Khởi tiếp tục hướng Hàn vương trên núi tăng binh.</p>
+<p>“Tướng quân, đến phiên ta xuất phát đi!” Cùng Bạch Khởi cùng đi Trường Bình chiến trường phó tướng Tư Mã Cận hưng phấn tiến vào.</p>
+<p>Bạch Khởi bất mãn mà quét hắn liếc mắt một cái.</p>
+<p>Tư Mã Cận lập tức thay đổi một bộ nghiêm túc biểu tình, đứng thẳng thân thể chờ đợi mệnh lệnh.</p>
+<p>“Đi phong bế túi.” Bạch Khởi một bên nói, một bên nắm lên mấy viên trọng đại đá, đặt ở sông Đán phương bắc lòng chảo “Túi khẩu” thượng.</p>
+<p>Này một chi không đến ba vạn người Tần binh, là Bạch Khởi tuyển ra tinh nhuệ nhất lão binh. Bọn họ cầm tối ưu lương thiết chế binh khí, tập trung Tần quân cơ hồ sở hữu cung | nỏ, sẽ đem lòng chảo “Túi khẩu” chặt chẽ phong bế, tuyệt không sẽ làm Triệu quân từ đường cũ phản hồi.</p>
+<p>Tư Mã Cận liền lĩnh mệnh đều quên nói, hưng phấn chạy đi.</p>
+<p>Bạch Khởi mày nhảy nhảy, răn dạy nói nuốt đi xuống.</p>
+<p>Hắn đã răn dạy Tư Mã Cận rất nhiều lần, một chút dùng đều không có.</p>
+<p>Không chỉ có Tư Mã Cận. Sở hữu đi theo hắn lâu rồi phó tướng đều không sai biệt lắm.</p>
+<p>Bạch Khởi ở Tần quốc ở ngoài thanh danh hỗn độn, tiểu nhi ngăn đề. Nhưng ở Tần quân bên trong, đi theo Bạch Khởi lâu rồi lão binh đều sẽ đối với Bạch Khởi ngây ngô cười, biết Bạch Khởi sẽ không sinh khí.</p>
+<p>Bạch Khởi phong hào là Võ An quân. Lịch đại Võ An quân thụ phong nguyên nhân các không giống nhau, Bạch Khởi thụ phong nguyên nhân sách sử trung ghi lại thật sự rõ ràng, “Ngôn có thể nuôi nấng quân sĩ, chiến tất khắc, đến bá tánh an tập, cố hào Võ An”.</p>
+<p>Hắn trừ bỏ bách chiến bách thắng, còn có thể vỗ binh an dân, đối đãi bình thường quân tốt cùng Tần quốc dân chúng cực hảo. Cho nên hắn bị Tần vương oan sát lúc sau, Tần quốc dân gian đều trộm vì hắn kiến từ.</p>
+<p>Hiện tại Bạch Khởi đã bắt đầu sầu lo chính mình bách chiến bách thắng, nếu lại bị quân tốt cùng dân chúng yêu thích, chỉ sợ sẽ khiến cho rất nhiều người kiêng kỵ.</p>
+<p>Nhưng hắn có thể cách dùng lệnh nghiêm trị quân tốt dân chúng, làm hắn vô cớ kiêu ngạo ương ngạnh một ít, hắn liền trang đều trang không ra.</p>
+<p>Có một lần Bạch Khởi ý đồ làm bộ vô cớ sinh khí, kết quả một lưu phó tướng đối hắn ngây ngô cười, hỏi hắn muốn hay không uống chút rượu thay đổi tâm tình.</p>
+<p>Bạch Khởi thập phần vô ngữ, xoay người ném xuống kia một đám ngây ngô cười phó tướng, lập tức rời đi, không nghĩ để ý tới bọn họ.</p>
+<p>Hiện tại hắn chỉ có thể tận khả năng mà làm chính mình trở nên càng ngày càng quái gở, trên mặt biểu tình càng ngày càng thưa thớt, trừ bỏ trên chiến trường, bất hòa bất luận cái gì đồng liêu cấp dưới có quan hệ cá nhân. Tân binh rốt cuộc sẽ sợ hắn, nhưng kia một đám lão cấp dưới như cũ dạy mãi không sửa.</p>
+<p>Bạch Khởi nhớ tới việc này, liền rất là bất đắc dĩ.</p>
+<p>Hắn tiếp tục cúi đầu xem bản đồ, suy tư còn có cái gì yêu cầu bổ sung địa phương, đem này nhàm chán phiền não vứt đến một bên.</p>
+<p>“Này chiến duy nhất biến cố ở chỗ Triệu Quát kịp thời phát hiện Vương Hột là mồi, vượt qua Hàn vương sơn phá vây.”</p>
+<p>Bạch Khởi lầm bầm lầu bầu.</p>
+<p>Hắn nói ra thanh suy đoán, chính là một hồi chiến dịch trung nhất khó khăn bộ phận.</p>
+<p>“Nếu 5000 kỵ binh ở tiếp viện đã đến phía trước liền bị thua, Triệu quân trở lại hàng rào……”</p>
+<p>Bạch Khởi trầm tư trong chốc lát, ngón tay gian kẹp một viên đá, nhẹ nhàng gõ địa đồ.</p>
+<p>Một cái, hai cái, ba cái……</p>
+<p>“Hư trương thanh thế, làm Triệu Quát cho rằng chủ trận địa đã thất thủ.”</p>
+<p>“Lại thả chạy hắn cầu viện quân tốt, truyền bá Triệu vương đem phái Liêm Pha chi viện hắn tin tức giả.”</p>
+<p>“Nếu này đó đều không thể thành công, vậy không thể tốc thắng.”</p>
+<p>“Nếu không thể tốc thắng……” Bạch Khởi trầm ngâm nói, “Nên hướng quân thượng góp lời hoà đàm.”</p>
+<p>Nếu không chiếm được cũng đủ chiến quả, nên chuyển biến tốt liền thu, lấy hoà đàm tình thế mưu đoạt lớn hơn nữa ích lợi.</p>
+<p>Bạch Khởi cũng không cho rằng chính mình thật là bách chiến bách thắng, mà là chiến trước liền đã làm tốt vạn toàn chuẩn bị, không đánh hao tổn Tần quốc binh cùng lương, lại không chiếm được cũng đủ ích lợi trượng.</p>
+<p>Bất quá Bạch Khởi tuy rằng làm tốt nhất hư tính toán, lại không cho rằng sẽ tới này một bước.</p>
+<p>Hắn khinh thường Triệu Quát.</p>
+<p>Triệu Quát tuổi tác so Triệu vương hơi hơn mấy tuổi, vừa qua khỏi tuổi nhi lập.</p>
+<p>Bạch Khởi mười lăm tòng quân, ở Triệu Quát cái này tuổi tác, đã tòng quân mười lăm năm, lập hạ không ít công tích; Triệu Quát thân là Triệu quốc đại tướng Triệu Xa nhi tử, lại chỉ có luận binh thanh danh, chưa bao giờ đi qua binh doanh.</p>
+<p>Lấy Triệu Quát thân phận địa vị, chẳng sợ Triệu vương không làm Triệu Xa tiếp tục mang binh đương chủ tướng, Triệu Quát tưởng tiến vào binh doanh đương cái phó tướng dễ như trở bàn tay. Triệu vương không thích lão tướng, nhưng đối tuổi trẻ tướng lãnh vẫn là rất là chiếu cố.</p>
+<p>Triệu Quát có thanh danh, có địa vị, có nhân mạch, hắn vì sao chưa bao giờ từng có bất luận cái gì chiến tích? Đương nhiên là bởi vì hắn muốn noi theo chính mình phụ thân Triệu Xa, lần đầu xuất chinh, tất là chủ đem.</p>
+<p>Bạch Khởi biết được Triệu Quát trải qua, lập tức cùng Ứng hầu Phạm Sư thương nghị, lần này Trường Bình chi chiến Triệu quốc chủ tướng, phi Triệu Quát mạc chúc.</p>
+<p>Triệu Xa xác thật là nhất chiến thành danh. Nhưng Triệu Xa ở đương chủ tướng phía trước, từng bỏ mạng nhập yến, ở Yến quốc đương quá địa phương quan.</p>
+<p>Một đoạn này trải qua làm Triệu Xa có cứng cỏi tinh thần, thả ở Chiến quốc địa phương phương quan đều sẽ kiêm nhiệm tướng lãnh, hắn đã có quân ngũ kinh nghiệm.</p>
+<p>Lúc sau Triệu Xa trở lại Triệu quốc, bị Bình Nguyên quân Triệu Thắng tiến cử chưởng quản Triệu quốc thu nhập từ thuế, lấy hai chân đi khắp toàn bộ Triệu quốc, không chỉ có biết rõ địa lý, cũng đối dân sinh tương đối hiểu biết.</p>
+<p>Một đoạn này trải qua làm Triệu Xa có thể nắm giữ địa lợi, cũng đối dân chúng cùng quân tốt đều tương đối khoan dung, hiểu được như thế nào tụ tập dân tâm sĩ khí.</p>
+<p>Triệu Quát cùng Triệu Xa không giống nhau, hắn trải qua chính là ở phòng sách trong vòng, sĩ tử chi gian khen khen mà nói, từ nhỏ đến lớn cẩm y ngọc thực, không có ăn qua bất luận cái gì khổ, cũng không có cơ hội cùng địa vị so với hắn thấp rất nhiều người ở chung.</p>
+<p>Người như vậy, chỉ cần thoáng tao ngộ một chút suy sụp, nho nhỏ hù dọa một chút, liền sẽ tự sa ngã co đầu rút cổ không ra, sau đó chờ đến mau bị nhốt ch·ế·t thời điểm lại chó cùng rứt giậu dường như hoảng loạn phá vây, hoàn toàn rối loạn đúng mực.</p>
+<p>Bất quá, Bạch Khởi lại xem thường Triệu Quát, săn thú khi đối mặt nhỏ yếu thỏ hoang thượng yêu cầu kéo mãn dây cung bắn tên, hắn cũng sẽ tự hỏi ra sở hữu khả năng, làm ra tận khả năng chu toàn ứng đối.</p>
+<p>Triệu Quát vì truy kích Tần quân chủ tướng Vương Hột, suất lĩnh Triệu quân toàn binh xuất kích, chỉ chừa tiểu bộ phận binh lực khán hộ quân nhu.</p>
+<p>Tần quân vừa đánh vừa lui, làm như bại lui, trận hình lại không có chút nào tan tác.</p>
+<p>Trong quân lão tướng lập tức phát hiện không thích hợp, thỉnh cầu Triệu Quát lui binh.</p>
+<p>Triệu Quát do dự.</p>
+<p>Hắn thục đọc binh thư, nhìn đến loại tình huống này, đương nhiên biết Tần quân có thể là cố ý dụ địch thâm nhập. Chỉ là Tần quân chủ tướng Vương Hột liền ở trước mặt, Tần quân đã liên tiếp bại lui, chỉ cần chính mình chém đầu Vương Hột, cho dù có mai phục cũng là bên ta thắng lợi.</p>
+<p>Triệu Quát nghĩ tới nghĩ lui, chung quy vô pháp từ bỏ “Tần quân chủ tướng Vương Hột” này một khối màu mỡ mồi.</p>
+<p>Hắn hạ lệnh “Tần quân chủ tướng liền ở phía trước, mặt khác Tần quân không đáng sợ hãi! Oan gia ngõ hẹp dũng giả thắng! Chỉ cần bắt sát Tần quân chủ tướng, mai phục tự giải!”</p>
+<p>“Oan gia ngõ hẹp dũng giả thắng” là Triệu Xa đối Triệu Huệ Văn Vương hỏi hắn át cùng chi chiến có thể hay không đánh trả lời. Triệu Xa đúng là ở át cùng chi chiến nhất chiến thành danh.</p>
+<p>Triệu Quát dùng chính mình phụ thân nói tới khích lệ tướng lãnh, tướng sĩ quả nhiên tin phục, không hề do dự, đi theo Triệu Quát tiếp tục tấn công Vương Hột.</p>
+<p>Tần quân không ngừng xuất hiện thương vong, lui ra phía sau tốc độ càng lúc càng nhanh, cuối cùng thối lui đến trăm dặm thạch trường thành phụ cận, tiến vào đã sớm xây dựng tốt thành lũy trung.</p>
+<p>Vương Hột tháo xuống mũ giáp, xoa xoa trên mặt huyết, thở dài nhẹ nhõm một hơi.</p>
+<p>Hắn kiểm kê một chút binh lực. Lần này hắn mang ra làm mồi dụ Tần quân, thiệt hại đã qua nửa. Nhưng còn thừa Tần quân trên mặt cũng không có sợ sắc, thậm chí có chút người còn có chút hỉ khí dương dương.</p>
+<p>“Chúng ta thành công thối lui đến thành lũy, không cho Võ An quân kéo chân sau, này chiến chúng ta đã thắng!” Vương Hột bên người tướng lãnh vui tươi hớn hở nói.</p>
+<p>Vương Hột cảm thán “Đúng vậy.”</p>
+<p>Đi theo bạch tướng quân đánh giặc, tâm tình chính là hảo. Chỉ cần dùng hết toàn lực hoàn thành bạch tướng quân giao cho nhiệm vụ, cũng chỉ yêu cầu chờ đợi thắng lợi thời khắc.</p>
+<p>“Ai, tướng quân, cái này là khoai tây sao?” Có người ở quét tước thành lũy thời điểm, từ trong một góc tìm ra một đống không ăn qua nhưng gặp qua đồ ăn, “Triệu quân còn đem lương thảo lưu tới rồi này?”</p>
+<p>Vương Hột cẩn thận nhìn vài lần “Không sai, là khoai tây. Nghe thám tử nói, khoai tây nảy mầm hoặc là phát thanh khi có độc, Triệu Quát tới Trường Bình sau, cấm Triệu binh ăn có độc thảo căn, để tránh ở trên chiến trường xảy ra chuyện. Cho nên khuân vác vật tư thời điểm, liền đem khoai tây vứt bỏ đi.”</p>
+<p>Quân tốt nói “Tướng quân, này khoai tây không nảy mầm cũng không phát thanh, chúng ta có phải hay không……”</p>
+<p>Vương Hột nói “Nướng chín lúc sau trước cấp mã ăn, mã ăn không có việc gì, liền cho ta nếm thử. Liêm Pha kia lão thất phu ngồi ở tường cao thượng ăn nướng khoai tây mắng ta, ta đã sớm tưởng nếm thử hắn ăn chính là cái gì!”</p>
+<p>Quân tốt lập tức nói “Tướng quân, không ăn qua đồ ăn vẫn là chúng ta ăn đi, nếu thật sự có độc làm sao bây giờ?”</p>
+<p>Vương Hột cự tuyệt cấp dưới hảo ý. Hắn liền tưởng nếm thử Liêm Pha kia lão thất phu ăn thật sự vui vẻ khoai tây là cái gì hương vị. Chỉ cần ăn ít một chút, cho dù có độc cũng sẽ không có sự. Vương Hột hành quân trên đường ăn qua có hơi độc động thực vật nhiều đi.</p>
+<p>Thương vong quá nửa mồi Tần quân nhạc ha hả mà nướng lên Triệu quân vứt bỏ không cần khoai tây. Thành lũy hạ Triệu quân nhìn lên kiên cố tường đá, lộ ra kinh hoảng thần sắc.</p>
+<p>Nhìn đến như thế bị tu sửa Triệu quân đã từng thành lũy, liền tính là bình thường lão binh cũng có thể từ chính mình hành quân kinh nghiệm trung khuy đến trước mắt tình huống không thích hợp.</p>
+<p>Triệu Quát biểu tình có chút mờ mịt.</p>
+<p>Tần quân chủ tướng cư nhiên co đầu rút cổ tới rồi thành lũy trung, mà này thành lũy nhìn qua là vừa tu sửa, thực rõ ràng Tần quân chủ tướng mục đích địa khả năng chính là nơi này.</p>
+<p>Tổng không thể Tần quân chủ tướng đem chính mình coi như mồi đi?</p>
+<p>Triệu Quát chỉ số thông minh không thành vấn đề, chỉ là kinh nghiệm không đủ. Như vậy quỷ dị tình huống, làm hắn ý thức rốt cuộc phát hiện chân tướng.</p>
+<p>Tần quân không có khả năng làm chủ tướng đương mồi. Chủ tướng đương mồi, ai tới tổ chức tiến công?</p>
+<p>Vương Hột thật sự liền ở phía trước, có ở trên chiến trường cùng Vương Hột đánh quá đối mặt tướng lãnh nhận ra hắn. Như vậy chính là Vương Hột đã không phải Tần quân chủ tướng?</p>
+<p>Vương Hột không phải chủ tướng, kia Tần quân chủ tướng là ai?</p>
+<p>Là ai?!</p>
+<p>Triệu Quát trong lòng hiện ra một cái đáng sợ tên, một cái chỉ là suy nghĩ một chút khiến cho hắn tay chân tê dại, trán thượng chỉ đổ mồ hôi lạnh tên.</p>
+<p>“Tướng quân! Tướng quân! Chúng ta muốn chạy nhanh rời đi nơi này!” Phó tướng nôn nóng nói.</p>
+<p>Triệu Quát lấy lại tinh thần “Đúng vậy, đối, phải rời khỏi nơi này, đường cũ phản hồi!”</p>
+<p>Phó tướng nói “Đường cũ khẳng định có Tần quân chờ, chúng ta hẳn là từ phía đông trên núi phiên hồi doanh địa. Chúng ta quân nhu đều ở trong doanh địa! Người kia nếu tới, muốn thủ cũng chỉ có thể hồi doanh địa!”</p>
+<p>Hiển nhiên, không chỉ có Triệu Quát, sở hữu có đầu óc người đều đã đoán được, nguyên bản Tần quân chủ tướng Vương Hột đều có thể đương mồi, kia Tần quân chủ tướng cũng chỉ có thể là người kia.</p>
+<p>Bọn họ tuy rằng đoán được, lại liền “Người kia” tên cũng không dám nói. Chỉ là ở trong lòng hiện ra cái tên kia, bọn họ liền hai đùi run rẩy.</p>
+<p>Triệu Quát hoảng loạn nói “Đúng vậy, từ trên núi lật qua đi! Chạy nhanh đi!”</p>
+<p>Triệu Quát tâm tồn may mắn. Bọn họ hành quân tốc độ thực mau, sơn lại như vậy cao, Tần quân khẳng định còn chưa kịp ở trên núi bố vây!</p>
+<p>Triệu quân hoang mang rối loạn hướng tới phía đông trên núi chạy, ở trên đỉnh núi, tao ngộ Tần quân lăn cây đầu thạch công kích. Chạy đến đằng trước Triệu quân còn chưa nhìn đến Tần quân cờ xí, đã bị lăn cây cự thạch nghiền vào bùn trung.</p>
+<p>“Tần quân đã ở trên núi? Như thế nào nhanh như vậy?!” Phó tướng kinh ngạc.</p>
+<p>Triệu Quát xem cùng lăn cây cùng cự thạch không ngừng rơi xuống, tâm sinh khiếp đảm.</p>
+<p>Hắn nhìn không tới trên núi có bao nhiêu người, trong lòng cũng phán đoán không ra trên núi có bao nhiêu người. Hắn chỉ nhìn đến lăn cây cùng cự thạch che trời lấp đất mà từ trên đỉnh núi rơi xuống, quân tốt không có thể có bất luận cái gì chống cự liền biến thành thịt nát, giống như này không phải hai quân giao chiến, mà là ở đối mặt cái gì trong thiên địa uy lực.</p>
+<p>Từ chân núi hướng lên trên trên đỉnh tấn công, chỉ là nhìn lên cao cao đỉnh núi, sẽ có loại này thất bại cảm.</p>
+<p>Triệu quân trải qua nhiều, đã thói quen loại này sợ hãi, như cũ một đợt lại một đợt mà hướng trên núi xung phong.</p>
+<p>Triệu Quát lại lần đầu tiên trải qua loại này kh·ủ·ng b·ố, lần đầu tiên nhìn đến không đếm được người ở chính mình trước mặt không có bất luận cái gì giãy giụa, liền biến thành một đoàn nhìn không ra hình người huyết nhục. Hắn trong lòng không khỏi hiện ra nùng liệt tuyệt vọng.</p>
+<p>Không thể lại hướng trên núi đánh! Đánh không lại!</p>
+<p>Hắn sợ hãi như vậy nói cho hắn, vì thế hắn minh kim thu binh, làm Triệu quân đình chỉ hướng trên núi xung phong.</p>
+<p>“Trở về! Từ lòng chảo nhập khẩu đường cũ phản hồi!” Triệu Quát gào rống, “Lòng chảo địa thế bằng phẳng, chúng ta người đông thế mạnh, nhất định có thể tách ra bọn họ vây quanh!”</p>
+<p>Phó tướng nhóm không đồng ý Triệu Quát phán đoán.</p>
+<p>Trên núi Tần quân cho dù cùng bọn họ đồng thời xuất phát, một cái bình lộ một cái đường núi, lên đường thời gian cũng nhất định sẽ so với chính mình trường rất nhiều.</p>
+<p>Bọn họ suy đoán, đối phương khẳng định dùng kỵ binh loại này cao tính cơ động bộ đội, hơn nữa nhân số sẽ không quá nhiều, ở trên núi chỉnh đốn và sắp đặt thời gian cũng sẽ không quá dài. Triệu quân chẳng sợ dùng mạng người, mười đổi một đi đôi, cũng có thể đem đối phương trận địa đôi xuống dưới.</p>
+<p>Nhưng Triệu Quát nghe không vào phó tướng ý kiến.</p>
+<p>Hắn lệnh Triệu quân toàn quân xuất kích rơi vào Tần quân bẫy rập, đã chứng minh là sai lầm quyết sách. So với đối mặt Tần quân cùng tử vong sợ hãi, chính mình mới vừa thượng chiến trường liền phạm phải cực đại sai lầm chuyện này, làm hắn càng thêm khó có thể tiếp thu.</p>
+<p>Hiện tại phó tướng nhóm sôi nổi phản đối hắn quyết sách, làm hắn hơi có chút thẹn quá thành giận.</p>
+<p>Vì thế Triệu Quát nhất ý cô hành, mệnh lệnh Triệu quân sau quân biến thành tiên phong, từ đường cũ phá vây.</p>
+<p>Nhân Triệu Quát vừa đến tiền tuyến trận địa khi liền thay cho tư lịch so lão, sẽ không nghe hắn lời nói trung hạ tầng tướng lãnh. Hiện tại trung hạ tầng tướng lãnh hoặc là là hắn gia đinh gia thần, hoặc là là tư lịch còn thấp vô pháp cùng hắn mệnh lệnh cãi lời người. Bởi vậy cho dù trong quân có kinh nghiệm tướng lãnh không đồng ý Triệu Quát phán đoán, Triệu quân như cũ từ trên núi rút về, đường cũ phản hồi, từ sơn cốc khẩu phá vây.</p>
+<p>Tư Mã Cận đã thiết trí hảo nỏ trận, dù bận vẫn ung dung, chờ đợi Triệu quân tiến đến.</p>
+<p>Đương nhìn đến Triệu quân thân ảnh lúc sau, Tư Mã Cận trên mặt hiện ra ác thú vị tươi cười.</p>
+<p>“Đem chúng ta Võ An quân cờ xí đánh ra tới.” Tư Mã Cận lớn tiếng cười nói, “Cờ xí thụ cao chút, làm Triệu người thấy rõ ràng!”</p>
+<p>Tần binh đều theo tướng quân cùng nở nụ cười.</p>
+<p>Bọn họ đem Vương Hột cờ xí giáng xuống, thay Võ An quân Bạch Khởi cờ xí, còn giơ lên cao vẫy vẫy.</p>
+<p>Triệu quân binh phong đi vào cửa cốc, còn chưa tới Tần binh nỏ | mũi tên tầm bắn nội, liền trước xa xa thấy được Võ An quân cờ xí.</p>
+<p>Giờ khắc này, Triệu quân đi tới động tác quỷ dị ngừng lại, cơ hồ sở hữu tướng sĩ quân tốt đều ngừng lại rồi hô hấp.</p>
+<p>Tuyệt vọng chậm rãi leo lên bọn họ trái tim, giống như là một con bàn tay to, đưa bọn họ trái tim nắm ở lòng bàn tay, dần dần nắm chặt.</p>
+<p>Liền tính không biết chữ quân tốt cũng có thể xem hiểu cờ xí đồ hình. Bởi vì đây là bọn họ ác mộng, bọn họ ở xuất phát phía trước liền trộm xem qua này mặt cờ xí, cầu nguyện chính mình sẽ không gặp được này mặt cờ xí.</p>
+<p>“Bạch Khởi……” Không biết ai trước ách thanh hô lên tên này.</p>
+<p>Triệu quân đội hình rối loạn.</p>
+<p>Một ít lần đầu tiên thượng chiến trường quân tốt ném xuống v·ũ kh·í, ôm đầu ngồi xổm xuống dưới, cảm xúc hỏng mất không dám tiếp thu cái này hiện thực.</p>
+<p>Tướng lãnh cưỡi ngựa bồi hồi, tâm hoảng ý loạn không biết nên như thế nào trọng chỉnh sĩ khí.</p>
+<p>Triệu Quát được đến tin tức, từ giữa đoạn cưỡi ngựa đuổi lại đây.</p>
+<p>Hắn dùng roi ngựa trừu hai bên hỏng mất quân tốt, hô lớn “Bạch Khởi lại như thế nào! Bạch Khởi đã già rồi! Hắn năm nay đều mau 50! Ta phụ là Mã Phục quân Triệu Xa! Bị Tần vương sợ hãi Mã Phục quân Triệu Xa! Ta binh, không chuẩn sợ hãi Bạch Khởi!”</p>
+<p>Ở Triệu Quát phẫn nộ mà gào rống trong tiếng, Triệu quân hỗn loạn được đến ngăn chặn.</p>
+<p>Đã từng ở cơ hồ không có khả năng dưới tình huống đại bại Tần quân Mã Phục quân là một cái thần thoại, ở quân tốt trong lòng danh vọng chỉ sợ so tuy rằng chiến tích càng thêm xuất sắc, nhưng có thua có thắng Liêm Pha càng thêm cao.</p>
+<p>Triệu quốc quân tốt hỏng mất hỗn loạn cảm xúc được đến trấn an, bọn họ một lần nữa nhặt lên, nắm chặt trong tay binh khí.</p>
+<p>Triệu Võ Linh Vương cải cách lúc sau, Triệu người hồ phục cưỡi ngựa bắn cung, thượng võ thành phong trào. Triệu quốc quân tốt đơn binh tố chất ở bảy thủ đô coi như thượng thừa.</p>
+<p>Triệu Quát cho bọn họ hy vọng.</p>
+<p>Bọn họ dùng mong đợi ánh mắt nhìn về phía Triệu Quát.</p>
+<p>Triệu quốc này đó tầng dưới chót quân tốt tin tưởng Mã Phục quân, cho nên tin tưởng cái này làm cho bọn họ không cần sợ hãi Tần quốc Võ An quân Bạch Khởi Mã Phục tử.</p>
+<p>Bọn họ múa may trong tay v·ũ kh·í, mang theo nhân trọng châm hy vọng mà trọng chỉnh dũng khí, lớn tiếng gào rống, hướng tới Tần quốc trận địa phóng đi.</p>
+<p>Sau đó, ngã xuống mưa tên trung.</p>
+<p>Lần này cùng Tần quốc nỏ trận giao phong, thẳng đến tử vong kia một khắc, Triệu quốc quân tốt trên mặt cũng không có tuyệt vọng thần sắc.</p>
+<p>Giống như là bọn họ đánh sâu vào Hàn vương sơn gần chỉ có 5000 khinh kỵ binh trận địa, một cái lại một cái Triệu quốc quân tốt ngã xuống cự thạch lăn cây hạ khi giống nhau, bọn họ đều không có tuyệt vọng.</p>
+<p>Triệu người thượng võ, bọn họ không e ngại Tần quân, không e ngại Bạch Khởi.</p>
+<p>Tần quân chủ trướng, một cái lại một cái lính liên lạc không ngừng ra vào, mang đến tình báo, mang đi mệnh lệnh.</p>
+<p>Bạch Khởi ngồi ngay ngắn trước bàn, chau mày, biểu tình cư nhiên có chút ngưng trọng.</p>
+<p>Tiền tuyến truyền đến đều là tin tức tốt.</p>
+<p>Triệu Quát so với hắn trong tưởng tượng càng phế vật. Hắn trước tấn công trên núi trận địa, ngắn ngủi công không dưới lúc sau liền quay đầu từ lòng chảo khẩu phá vây; bị lòng chảo khẩu nỏ | mũi tên ngăn cản lúc sau, hắn lại lần nữa thay đổi quân tiên phong, triều sơn thượng phá vây.</p>
+<p>Triệu Quát dao động không chừng quyết sách, cho trên núi cùng lòng chảo khẩu trận địa đầy đủ mà gia cố trận địa cùng chờ đợi viện quân thời gian, giảm bớt Bạch Khởi chỉ huy Tần quân vây kín áp lực.</p>
+<p>Sau lại Triệu Quát lại tấn công Vương Hột. Vương Hột cũng đã nghỉ ngơi chỉnh đốn xong, dựa vào thành lũy cố thủ không ra.</p>
+<p>Triệu Quát lâu công không dưới, liền ở trong sơn cốc dựng trại đóng quân, đổi công làm thủ.</p>
+<p>Ở Bạch Khởi trong mắt, Triệu Quát mỗi một bước đều chỉ huy sai lầm. Nhưng hắn trăm triệu không nghĩ tới, Triệu Quát sẽ như thế ngu xuẩn!</p>
+<p>Bạch Khởi nguyên bản cho rằng, Triệu Quát sẽ suất lĩnh một nửa Triệu quân xuất kích, một nửa kia lưu thủ sông Đán đông ngạn trận địa. Như vậy đã có thể giữ được trận địa cùng quân nhu, còn có thể tại Triệu Quát ngộ vây khi tiếp viện.</p>
+<p>Bình thường tướng lãnh ở truy kích thời điểm, đều không thể hoàn toàn trí chính mình đường lui cùng hậu cần không màng.</p>
+<p>Bạch Khởi phái đi trên núi khinh kỵ binh là “Cảm tử đội”. Hắn nguyên bản cho rằng này chi kỵ binh nhất định sẽ ở hai mặt giáp công hạ bị cắn nuốt, mới có thể chờ đến Tần binh viện quân đã đến.</p>
+<p>Ai từng tưởng, Triệu Quát cư nhiên đem Triệu quân chủ lực toàn bộ mang đi, Triệu quân dốc toàn bộ lực lượng, chỉ ở nguyên bản trận địa lưu lại một chút hậu cần phi chiến đấu nhân viên.</p>
+<p>Bạch Khởi chỉ phái hai chi tinh binh đi lấp kín Triệu Quát đường lui, dư lại binh lực đều dùng để tấn công sông Đán đông ngạn Triệu quân thành lũy.</p>
+<p>Hắn tưởng trước đánh hạ không có chủ tướng Triệu quân thành lũy, tiêu diệt bộ phận Triệu quân, sau đó lại chậm rãi nuốt ăn Triệu Quát bị vây quanh quân đội.</p>
+<p>Hiện tại Tần quân tiến quân thần tốc Triệu quân nguyên bản trận địa, cơ bản không gặp được chống cự.</p>
+<p>Bị Bạch Khởi vây quanh Triệu Quát quân đội, cư nhiên là Triệu quân toàn bộ chủ lực?! Nhiều người như vậy Tần quân như thế nào nuốt trôi?!</p>
+<p>Tần quân có thể dựa vào giao thông yếu đạo, lấy cực nhỏ binh lực lấp kín Triệu quốc mấy chục vạn đại quân. Đồng dạng, Triệu quốc cũng có thể trái lại dựa vào này mấy cái hẹp hòi yếu đạo ngăn cản Tần quân thế công.</p>
+<p>Nói cách khác, hiện tại Tần quân cùng Triệu quân tiến vào giằng co, Triệu quân vô pháp phá vây, Tần quân cũng ăn không vô Triệu quân.</p>
+<p>Triệu Quát này ngu xuẩn một tay, cư nhiên đem Bạch Khởi bám trụ.</p>
+<p>Bạch Khởi đánh vài thập niên trượng, lần đầu tiên gặp được loại tình huống này. Một chốc cư nhiên nghĩ không ra biện pháp giải quyết.</p>
+<p>Bạch Khởi lại là buồn bực lại là nghẹn khuất, đành phải viết thư hồi Hàm Dương, làm quân thượng nghĩ cách.</p>
+<p>Hiện tại Triệu quân cùng Tần quân giằng co, Bạch Khởi một cái binh đều không thể lộn xộn. Kế tiếp trận ch·i·ế·n tr·a·nh này thắng bại, liền xem bên ngoài —— đến tột cùng là Triệu quốc viện binh tới trước, vẫn là Tần quốc viện binh tới trước.</p>
+<p>Triệu quốc cùng Tần quốc đều cơ hồ lấy ra chính mình sở hữu tinh nhuệ binh lực, hai bên đều rất khó lại phái tới viện quân. Nhưng Triệu quốc còn có Liêm Pha cái này lão tướng có thể chi viện, Tần quốc này một phương liền chi viện tướng lãnh đều phái không ra.</p>
+<p>Bạch Khởi đều bị vây ở Trường Bình trên chiến trường, mặt khác tướng lãnh đều phải phân thủ Tần quốc cùng mặt khác mấy quốc biên cảnh, để ngừa mặt khác mấy quốc nhân cơ hội đánh lén Tần quốc.</p>
+<p>Hắn là hoàn toàn nghĩ không ra, Tần vương còn có thể phái ai tới chi viện hắn.</p>
+<p>Bạch Khởi đưa xong tin sau, bất đắc dĩ thở dài.</p>
+<p>Hắn cả đời huy hoàng chiến tích, sẽ không tại như vậy xuẩn địa phương lưu lại vết nhơ đi?</p>
+<p>Triệu vương so Tần vương trước mấy ngày được đến Triệu Quát toàn quân bị vây khốn tin tức.</p>
+<p>Tuổi trẻ Triệu vương lập tức đầu óc ầm ầm vang lên, hoang mang lo sợ, thiếu chút nữa ngất.</p>
+<p>Triệu vương kỳ thật có Triệu Quát chiến bại chuẩn bị tâm lý.</p>
+<p>Triệu Quát chiến bại, không ngoài chính là Bạch Khởi tới. Tuy rằng bại, nhưng Thượng Đảng vốn dĩ liền không phải Triệu quốc thổ địa, Triệu quốc không quá lớn tổn thất. Triệu Quát người thanh niên này có thể cùng Bạch Khởi quá mấy chiêu, cơ bản cũng có thể xếp vào danh tướng hàng ngũ.</p>
+<p>Vì làm Triệu Quát thua không đến mức quá thảm, Triệu vương điều động Triệu quốc trừ bỏ thú biên ở ngoài cơ hồ sở hữu tinh nhuệ quân tốt. Đánh không lại liền chạy, chỉ cần trở lại Triệu quốc cảnh nội, đã mau cạn lương thực Tần binh còn dám đuổi tới Triệu quốc cảnh nội tới không thành?</p>
+<p>Nhưng Triệu vương như thế nào cũng không nghĩ tới, Triệu Quát sẽ toàn quân đều bị vây quanh a!</p>
+<p>Này nếu là toàn quân bị diệt, Triệu quốc đừng nói binh lực thiếu thốn, sang năm trồng trọt người cũng chưa, chỉ sợ muốn mất mùa!</p>
+<p>Triệu vương hôn mê trong chốc lát, chạy nhanh làm cho phẳng nguyên quân cùng Bình Dương quân tiến cung thương nghị.</p>
+<p>Bình Nguyên quân cùng Bình Dương quân cũng vô kế khả thi, làm Triệu vương triệu tập có thể triệu tập sở hữu quan lớn thương nghị.</p>
+<p>Lận Tương Như cũng ở này liệt.</p>
+<p>Hắn nhìn quanh bốn phía, không thấy được Liêm Pha.</p>
+<p>Liêm Pha bị Triệu vương kêu hồi Hàm Đan lúc sau, phi thường rõ ràng mà tỏ vẻ ra đối Triệu vương bất mãn. Triệu vương miễn Liêm Pha sở hữu chức quan, đem Liêm Pha loát thành bạch thân.</p>
+<p>Ngắn ngủn một tháng, Liêm Pha trong nhà môn khách cơ hồ đều rời đi. 《 Sử Ký 》 ghi lại, “Liêm Pha chi miễn Trường Bình về cũng, thất thế là lúc, cố khách diệt hết”, thập phần thê lương.</p>
+<p>Liêm Pha đãi không được trước cửa có thể giăng lưới bắt chim gia, hiện tại ăn trụ đều ở Chu Tương trong nhà, làm hảo tính tình Chu Tương hầu hạ hắn cái này tính tình cổ quái, liền con cái đều ghét bỏ lão nhân.</p>
+<p>Lận Tương Như vốn tưởng rằng lần này Triệu Quát chiến bại, Triệu vương hẳn là sẽ triệu kiến Liêm Pha. Luận đối Trường Bình hiểu biết, ai có thể so đến quá Liêm Pha? Nếu muốn phái người đi cứu viện Triệu Quát, chỉ có thể phái ra Liêm Pha!</p>
+<p>Lận Tương Như nói “Quân thượng……”</p>
+<p>Hắn lời nói không nói ra tới, Triệu vương liền không kiên nhẫn mà ngắt lời nói “Nếu Lận khanh muốn tiến cử Liêm Pha lập công chuộc tội, liền đừng nói nữa. Nếu không phải Liêm Pha liền Vương Hột đều đánh không lại, Triệu Quát như thế nào sẽ đối thượng Bạch Khởi? Nghe nói hắn như cũ rất có câu oán hận, làm hắn ở trong nhà hảo hảo tỉnh lại!”</p>
+<p>Lận Tương Như thập phần kích động mà muốn phản bác, lại bởi vì kích động quá độ liên tục ho khan, nói không ra lời.</p>
+<p>Triệu vương nhìn Lận Tương Như tuổi già sức yếu bộ dáng, có chút chột dạ “Lận khanh thân thể không tốt, đi về trước dưỡng bệnh đi.”</p>
+<p>Lận Tương Như che lại ho khan miệng, câu lũ thân mình lui ra.</p>
+<p>Bình Nguyên quân Triệu Thắng thấy thế, nói “Ta đưa Lận khanh rời đi.”</p>
+<p>Triệu vương vẫy vẫy tay áo “Đi thôi.”</p>
+<p>Triệu Thắng đuổi theo ra đi, tìm được dựa vào ở trên cây không ngừng ho khan Lận Tương Như, lo lắng nói “Lận khanh, ngươi có khỏe không?”</p>
+<p>Lận Tương Như một bên khụ, một bên nói “Triệu quốc nếu không hảo.”</p>
+<p>Duy trì Triệu vương tiếp thu Thượng Đảng, thúc đẩy Trường Bình chi chiến Triệu Thắng nắm chặt song quyền, nói “Việc này không có chuyển cơ sao?”</p>
+<p>Lận Tương Như thuận thuận ngực, hoãn quá khí tới “Hiện tại Tần Triệu hai quân giằng co, ai viện quân tới trước, ai là có thể chiếm trước thắng cơ. Lâm thời khâu viện binh đều là đám ô hợp, trừ bỏ Liêm tướng quân, ai còn có thể dẫn dắt này chi viện binh?”</p>
+<p>Triệu Thắng thở dài nói “Liêm Pha là quân thượng độc đoán thay cho, Triệu Quát là quân thượng độc đoán bái đem. Nếu làm Liêm Pha đi cứu viện Triệu Quát, chẳng phải là tổn hại quân thượng thể diện? Ngươi cũng miễn bàn Liêm Pha, đổi cá nhân đi, ta lo lắng quân thượng sẽ giận chó đánh mèo ngươi!”</p>
+<p>Lận Tương Như trước mắt bi ai, thanh âm bi thương “Triệu vương thể diện, so Triệu quốc càng quan trọng sao?”</p>
+<p>Triệu Thắng lại lần nữa thật sâu thở dài, cắn răng nói “Ngươi đừng khuyên, ta lén đi khuyên! Ta đem Triệu Báo kêu lên, ta cùng hắn cùng nhau khuyên, định có thể khuyên phục quân thượng!”</p>
+<p>Lận Tương Như khom người chắp tay thi lễ “Liền làm ơn Bình Nguyên quân.”</p>
+<p>Triệu Thắng đỡ lấy Lận Tương Như “Ta trước đưa ngươi trở về.”</p>
+<p>Lận Tương Như lắc đầu “Không cần, ta còn có thể đi, ta chính mình trở về. Bình Nguyên quân thỉnh về, sớm ngày khuyên phục Triệu vương.”</p>
+<p>Triệu Thắng gật đầu “Ngươi cẩn thận.”</p>
+<p>Lận Tương Như xoay người rời đi, bước chân một thâm một thiển, thất tha thất thểu.</p>
+<p>Hắn tưởng, Bình Nguyên quân cùng Bình Dương quân có lẽ thật sự có thể khuyên phục Triệu vương, nhưng Trường Bình Triệu quân chờ nổi sao?</p>
+<p>“Quân thượng, Tần quốc xác thật đã phái không ra binh cùng đem!” Phạm Sư cấp Tần vương tính một chút trướng, lau một chút cái trán mồ hôi, “Có lẽ chúng ta có thể thừa dịp Triệu quân bị vây, tiếp thu Triệu quốc hoà đàm! Ta tin tưởng bọn họ nhất định so với chúng ta càng cấp!”</p>
+<p>Đã hơn 60 tuổi lão Tần vương trầm mặc mà nhìn trống không một vật mặt bàn.</p>
+<p>Sau một lúc lâu, hắn gằn từng chữ một nói “Không, Tần quốc còn có có thể chinh binh, có thể đi đem.”</p>
+<p>Phạm Sư cùng mặt khác Tần quốc trọng thần đều ngẩng đầu, nghi hoặc mà nhìn bọn họ quân thượng.</p>
+<p>“Tiên sinh, ngươi phụ tá An Quốc quân giám quốc.” Tần vương ngữ khí không có phập phồng, giống như lời nói không phải nhiều quan trọng, “Quả nhân tức khắc khởi hành, thân đi dã vương.”</p>
+<p>“Quả nhân muốn gia phong dã vương dân chúng binh tước một bậc! Chinh phạt mười lăm tuổi trở lên thanh niên! Tự mình đi viện trợ Võ An quân!”</p>
+<p>《 Sử Ký 》 ghi lại, “Vương tự chi hà nội, ban dân tước các một bậc, phát năm mười lăm trở lên tất nghệ Trường Bình”.</p>
+<p>Hà nội quận Hán triều đầu trí, Thái Sử công theo như lời “Hà nội”, lúc này chính là dã vương, Tần quân năm kia mới vừa đánh hạ tới dã vương.</p>
+<p>Tần quân đánh hạ dã vương thượng đảng chờ mà lúc sau, địa phương dân chúng còn chưa có chính mình đã là Tần quốc người ý thức. Tần quốc cũng còn chưa ở địa phương trưng binh chinh lương.</p>
+<p>Phạm Sư cùng An Quốc quân toàn từ đệm thượng bò đến Tần vương trước mặt.</p>
+<p>“Quân thượng, trước trận nguy hiểm, tam tư a!”</p>
+<p>“Phụ vương, ngươi quý thể so cái gì đều quan trọng! Nhi tử tuy bất tài, nguyện ý thế phụ vương đi dã vương trưng binh!”</p>
+<p>Lão Tần vương nhìn chính mình tín nhiệm nhất thần tử, cùng chính mình không thế nào vừa lòng Thái tử, nói “Không, chỉ có thể quả nhân đi. Quả nhân ý đã quyết, Hàm Dương liền giao cho các ngươi.”</p>
+<p>Hắn đứng dậy, phất tay áo, cất bước.</p>
+<p>Màu đen quần áo ở hắn phía sau quay cuồng, giống như là cuồn cuộn hắc lãng.</p>
+<p>“Chuẩn bị ngựa xe!”</p>
+<p>“Nặc!”</p>
+<p>Phạm Sư cùng An Quốc quân bò xoay người, ngẩng đầu nhìn về phía mới vừa được đến tiền tuyến tin tức, liền lập tức muốn khởi hành đi trước dã vương Tần vương.</p>
+<p>“Quân thượng! Từ từ, ta đưa ngươi!” Phạm Sư không màng lễ tiết, vén lên quần áo bò dậy, hướng tới Tần vương đuổi theo.</p>
+<p>An Quốc quân lấy lại tinh thần, đi theo bò dậy đuổi theo ra môn.</p>
+<p>Mặt khác trọng thần cũng chạy nhanh đứng dậy, cùng đưa Tần vương rời đi Hàm Dương, thân hướng tiền tuyến chi viện Trường Bình chi chiến.</p>
+<p>Bình Nguyên quân cùng Bình Dương quân còn ở khuyên bảo Triệu vương thời điểm, Tần vương đã đi tới dã vương.</p>
+<p>Đương Triệu vương biết được tin tức này thời điểm, Tần quốc viện quân đã tới rồi Trường Bình chiến trường.</p>
+<p>Lúc này giao thông không phát đạt, tin tức không thông suốt. Triệu quân ở Trường Bình bị vây, tin tức truyền tống thập phần khó khăn. Cho nên Triệu vương chỉ biết Tần quốc viện quân tới rồi, không biết Tần quốc viện quân mang binh tướng lãnh cư nhiên là Tần vương bản nhân. Càng không biết Tần quốc binh, cư nhiên chính là từ dã vương thượng đảng phụ cận sở điều động.</p>
+<p>Nhưng hắn cũng không cần biết này đó. Hắn chỉ cần biết Tần quốc viện binh đã tới rồi chiến trường, mà hắn còn ở do dự hay không phái Liêm Pha xuất binh cứu viện, liền triệu tập nơi nào binh cũng chưa tưởng hảo là đủ rồi.</p>
+<p>Triệu quốc hiện tại có thể điều động binh hoặc là phòng bị Hung nô, hoặc là phòng bị Yến quốc. Triệu vương còn không có suy xét minh bạch, điều bên kia binh nguy hiểm trình độ càng tiểu.</p>
+<p>Hắn kỳ thật không do dự bao lâu, liền một tuần thời gian đều không có. Nhưng Tần quốc động tác quá nhanh, mau đến làm người không dám tin tưởng.</p>
+<p>Triệu vương thập phần sợ hãi, Tần quốc có thể nhanh như vậy liền thấu ra viện binh, hay là Tần quốc lúc sau còn có thể phái ra binh tới?</p>
+<p>Hắn tiếp tục đánh tiếp tâm tư dần dần tắt, suy xét cùng Tần quốc hoà đàm.</p>
+<p>Trong triều tông thất cùng trọng thần đều thập phần vô ngữ. Phía trước Liêm Pha lui giữ thời điểm chúng ta tưởng hoà đàm, Tần vương đều chỉ là có lệ chúng ta. Hiện tại Tần quân lập tức liền phải thắng lợi, bọn họ sao có thể đồng ý hoà đàm? Chúng ta lại có cái gì lợi thế so này ba bốn mươi vạn Triệu quân càng nhiều, có thể làm Tần quốc hoà đàm!</p>
+<p>Triệu vương mờ mịt “Kia làm sao bây giờ?”</p>
+<p>Chu Tương trong nhà.</p>
+<p>Liêm Pha giống như là một cái đại hào hùng hài tử, ôm một đâu cục đá, đi tạp chuồng gà gà, đem gà tạp đến lông chim bay loạn.</p>
+<p>“Liêm Pha, ngươi nói Triệu quốc còn có phần thắng sao?” Lận Tương Như ngồi ở hắn phía sau, biểu tình đồi bại hỏi.</p>
+<p>Liêm Pha một bên tạp gà, một bên nói “Như thế nào thắng? Hiện tại Triệu quân giống như là ở một tòa không có tường thành, lương thảo thiếu thốn trong thành, Tần quốc liền có thể vây thành đánh viện binh viện binh đều tiến đến, liền tính chúng ta rốt cuộc gom đủ viện binh, cũng chỉ là Tần quân trong miệng thịt!”</p>
+<p>“Ta nếu là Bạch Khởi, ta liền vây nhưng không đánh.” Liêm Pha nói nói, cười ha ha lên, “Còn đánh cái gì đánh? Trực tiếp đem Triệu quân đói ch·ế·t thật tốt! Ha ha ha ha, còn đánh cái gì đánh! Đã thua! Toàn thua!”</p>
+<p>Liêm Pha cười cười, đem trong lòng ngực cục đá hung hăng đi phía trước ném đi, sau đó ô ô khóc ra tới.</p>
+<p>“Ba bốn mươi vạn người a! Ba bốn mươi vạn người a! Đầu hàng đi, chạy nhanh đầu hàng đi, có thể sống mấy cái là mấy cái!”</p>
+<p>“Lận Tương Như, ngươi chạy nhanh đi tìm Triệu vương, làm hắn chạy nhanh đầu hàng!”</p>
+<p>“Triệu Quát đáng ch·ế·t, kia ba bốn mươi vạn người không thể ch·ế·t được!”</p>
+<p>Lận Tương Như dùng tay áo thế Lận Tương Như chà lau nước mắt, nức nở nói “Chỉ sợ hiện tại còn sống đã không có ba bốn mươi vạn.”</p>
+<p>Chu Tương dựa vào ở chuồng gà trên tường, yên lặng mà nhìn không trung, yên lặng tự hỏi Trường Bình sự.</p>
+<p>Tư liệu lịch sử ghi lại, Triệu quốc từ Liêm Pha lãnh binh khởi, cộng ở trên chiến trường đầu nhập 45 vạn người.</p>
+<p>Nghe nói Tần quốc này ch·ế·t trận hai mươi vạn. Lấy Tần quốc chiến lực, liền tính là một đổi một, Triệu quốc cũng nên ch·ế·t hai mươi vạn. Liêm Pha phía trước bại lui, sau lại Triệu Quát trong quân đói ch·ế·t, phá vây mà ch·ế·t người, đều sẽ không thiếu.</p>
+<p>Sau lại Trường Bình chi chiến cổ chiến trường khảo cổ khai quật thành quả cũng chứng minh, Triệu quốc này chiến hàng tốt phỏng chừng nhiều lắm mười mấy vạn.</p>
+<p>《 Sử Ký 》 ghi lại, “Nãi hiệp trá mà tẫn khanh sát chi”, “Trước sau chém đầu lỗ 45 vạn người”, cũng là nói trận này ch·i·ế·n tr·a·nh, Triệu quốc tổng cộng đã ch·ế·t 45 vạn.</p>
+<p>Đời sau nói chôn sống, là đem “Khanh sát” coi như “Hố sát”. “Khanh sát” ý tứ là giết hại tù binh cùng bình dân chờ vô tội, thi thể chồng chất như núi bộ dáng. Bạch Khởi không có thời gian đi đào chôn sống hố.</p>
+<p>Bạch Khởi chém đầu vô số, duy độc đối Trường Bình sở khanh sát hàng tốt tâm sinh áy náy. Bởi vì hắn là “Hiệp trá”.</p>
+<p>Bạch Khởi vốn dĩ đồng ý cấp này đó hàng tốt một con đường sống, lừa gạt bọn họ buông xuống v·ũ kh·í, sau đó đưa bọn họ toàn giết.</p>
+<p>Có người nói, Bạch Khởi làm như vậy là bởi vì phải cho Tần quân phân công lao.</p>
+<p>Kỳ thật 《 thương quân thư 》 cùng Tần trốn tránh thổ lúc sau, liền có thể thấy được Tần triều đối chém đầu quân công yêu cầu thập phần khắc nghiệt. Chỉ có có tước vị quân địch thủ cấp, mới có thể thăng chính mình tước vị.</p>
+<p>Hơn nữa 《 thương quân thư 》 ngôn, “Sĩ có chém đầu, bắt lỗ chi công”; 《 Chiến quốc sách 》 ghi lại đi lĩnh thưởng Tần binh, “Tả khiết đầu người, hữu hiệp sinh lỗ”. Này đó đều có thể chứng minh, tuy không có nói rõ, nhưng tù binh cũng coi như chiến công.</p>
+<p>Tần quốc hậu kỳ khai khẩn cùng lao dịch đa dụng tù binh, đã minh bạch sức lao động tầm quan trọng, đem tù binh làm quân công thực bình thường.</p>
+<p>Cho nên chỉ cần Tần quốc tưởng lưu lại tù binh, quân tốt liền có “Bắt lỗ chi công”.</p>
+<p>Chu Tương rất rõ ràng, Tần quốc lần này sát phu lớn nhất nguyên nhân chính là nuôi không nổi. Thượng Đảng thổ địa cằn cỗi, dưỡng tù binh mất nhiều hơn được. Thả Thượng Đảng ly Triệu quốc rất gần, Triệu quốc tù binh ăn không đủ no, liền dễ dàng đào vong.</p>
+<p>Mỗi một cái học nông người, đều khó tránh khỏi thục đọc nạn đói sử.</p>
+<p>Cùng đại chúng trong lòng Tần quốc cường đại, mới tấn công lục quốc ấn tượng bất đồng. Tần quốc kỳ thật là gặp được nạn đói, liền lập tức khai chiến.</p>
+<p>Tần chiêu vương 27 năm địa chấn nạn đói, Tần vương phái Bạch Khởi, Tư Mã sai công Triệu sở hai nước, liên tiếp mấy năm đánh đến Sở quốc dời đô; Tần chiêu vương 38 năm thượng quận đại đói, Tần công Ngụy.</p>
+<p>Tần Thủy Hoàng diệt lục quốc khi càng rõ ràng. Tần Thủy Hoàng tại vị thời kỳ liền ngộ 5 năm nạn đói. Vì thế này 5 năm, Tần Thủy Hoàng liền vội vã đem ** quét.</p>
+<p>Chiến quốc trung kỳ lúc sau, có năng lực đánh giặc Tần quốc đó là phùng tai tất chiến, quả thực giống như là thảo nguyên thượng tao ngộ tuyết tai du mục dân tộc dường như.</p>
+<p>Rất nhiều sử học gia phân tích, Tần Thủy Hoàng tại vị thời điểm, Tần triều cũng đã trải chăn diệt vong khúc nhạc dạo, chính là từ cái này sự thật lịch sử xuất phát phỏng đoán.</p>
+<p>Tần Thủy Hoàng thống nhất lục quốc dời đi quốc nội nạn đói mâu thuẫn, lợi dụng ch·i·ế·n tr·a·nh tiêu giảm dân cư, cướp đoạt nước láng giềng lương thực. Nhưng đương Tần Thủy Hoàng thống nhất lúc ấy kinh tế phát đạt khu vực, liền tính lại đánh giặc cũng không địa phương nhưng đoạt khi, quốc nội mâu thuẫn dần dần chồng chất, đổi cái không quá hành hoàng đế lập tức bùng nổ.</p>
+<p>Chu Tương từ thương đội cùng lưu dân trong miệng nghe được, mấy năm nay Tần quốc tuy rằng không gặp gỡ nạn đói, thu hoạch cũng không phải quá hảo.</p>
+<p>Đập Đô Giang xây cất về công nguyên trước 256 năm đến công nguyên trước 251 năm, hiện tại là công nguyên trước 260 năm; Trịnh Quốc cừ xây cất với Tần Thủy Hoàng thời kỳ. Này hai cái có thể làm Tần quốc lương thực đại tăng sản công trình thuỷ lợi đều còn không có tu. Lúc này Tần quốc lương thực sản lượng, khả năng so liền ngộ 5 năm nạn đói Tần Thủy Hoàng hảo không được quá nhiều.</p>
+<p>A, gặp được mấy năm liên tục nạn đói vì thế xuất binh thống nhất lục quốc nhà ta Chính Nhi thật là quá lợi hại!</p>
+<p>Chu Tương dùng sức quơ quơ đầu, đem trong óc đột nhiên toát ra tới thần kỳ ý niệm hoảng rớt.</p>
+<p>Hắn vỗ vỗ chính mình dựa vào trên tường cọ thượng hôi quần áo, đi hướng Lận Tương Như cùng Liêm Pha.</p>
+<p>“Lận ông, Tần quốc nuôi không nổi mấy chục vạn tù binh, lại không có khả năng đem tù binh đưa còn Triệu quốc, kia chẳng phải là một trận bạch đánh? Bọn họ khẳng định sẽ sát phu.” Chu Tương nói, “Thỉnh Lận ông đề cử ta đi gặp Triệu vương, ta tưởng thuyết phục Triệu vương hiến thành đổi tù binh. Này mấy chục vạn Triệu quốc người, so vài toà thành trì quan trọng nhiều. Ta nguyện ý thân hướng Trường Bình, thuyết phục Bạch Khởi.”</p>
+<p>Thuyết phục Tần vương.</p>
+<p>Chu Tương ở trong lòng tưởng, Tần vương hẳn là cũng đã đến Trường Bình.</p>
+<p>Lận Tương Như bắt lấy Chu Tương ống tay áo nói “Ngươi thật sự có nắm chắc thuyết phục Bạch Khởi?”</p>
+<p>Chu Tương nói “Tóm lại muốn thử thử một lần.”</p>
+<p>Triệu vương khẳng định sẽ đồng ý.</p>
+<p>Bởi vì chính mình một giới bình dân tánh mạng, hắn sẽ không để ý. Cho nên Triệu vương sẽ làm chính mình cầm thành trì bản đồ đi đổi tù binh, làm chính mình lưu tại Tần quốc đương con tin, chờ đổi đến tù binh sau liền bội ước.</p>
+<p>Bất quá không sao cả, Chu Tương vốn là không phải muốn dùng thành trì đổi tù binh. Hắn chỉ cần Triệu vương đồng ý hắn mang theo có thể duy trì Triệu quân hai tháng lương thực đi trước Trường Bình, hắn thuyết phục Tần vương xác suất thành công liền rất cao.</p>
+<p>Đương nhiên, hắn thuyết phục Tần vương phóng thích tù binh lợi thế, không chỉ là có thể vì Tần quốc cung cấp lương thực mà thôi.</p>
+<p>Hắn có thể giúp Tần quốc, so giết này đó tù binh, càng thêm suy yếu Triệu quốc quốc lực cùng Triệu vương uy tín.</p>
+<p>Dùng chính mình mệnh.</p>
+<p>Một cái đã ở Triệu quốc bình dân gian tích góp cũng đủ thật tốt thanh danh chính mình, ở cứu trở về Triệu quốc mười mấy vạn người sau, bị Triệu vương giết ch·ế·t. Liền tính dân chúng lại ngu muội, chỉ sợ cũng nhịn không nổi cái này Triệu vương đi? ,,.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong22.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong24.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "nhu-the-nao-vi-thuy-hoang-nhai-con-cay-ra-van-dam-giang-son";
+const NOVEL_TITLE = "Như thế nào vì Thủy Hoàng nhãi con cày ra vạn dặm giang sơn";
+const CHAPTER_TITLE = "Chương 23 Bạch Khởi hòn đá nhỏ";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

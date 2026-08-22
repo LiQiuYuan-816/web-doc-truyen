@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 104</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Mạnh nhất trò chơi chế tác nhân
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 104</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong103.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong105.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Một tuần xem, xem không xong……” Hai người nhược nhược nói.</p>
+<p>“Ta lại không cho các ngươi từng câu từng chữ xem xong, chỉ là hơi phiên một chút, thể hội một chút này mấy quyển thư tư tưởng cùng kịch bản.” Tiêu Cẩu hận sắt không thành thép nói, “Chẳng lẽ ngươi cho rằng ta muốn cho các ngươi viết đọc lý giải sao?”</p>
+<p>Tiêu Cẩu nổi giận đùng đùng đem người đuổi ra văn phòng, Trương Thản cùng Ngô Hạo Vũ hai mặt nhìn nhau.</p>
+<p>Cái gì gọi là hơi phiên một chút? Hơi phiên một chút như thế nào thể hội tư tưởng cùng kịch bản? Này còn không phải đến xem xong? Như vậy…… Tách ra xem? Sau đó đại gia cùng nhau thảo luận?</p>
+<p>Hai người héo tháp tháp hồi tổ thảo luận, xem đến mặt khác trò chơi phòng làm việc run bần bật.</p>
+<p>Vốn đang có chút người cảm thấy Tiêu tổng như vậy tín nhiệm này hai người, còn có chút hâm mộ. Xem này hai người không hiểu ra sao vẻ mặt mê mang, bị mắng đến tìm không thấy bắc bộ dáng, bọn họ mới đột nhiên thanh tỉnh.</p>
+<p>Tiêu tổng chính mình lợi hại, đương nhiên ánh mắt cao tiêu chuẩn cao. Hắn cung cấp cho ngươi khái niệm bản thảo, ngươi nếu là không đạt được hắn tiêu chuẩn, tưởng “Thăng cấp”, nằm mơ đi.</p>
+<p>Nếu là tân khái niệm bản thảo, tốt xấu chính mình có thể buông tay một bác. Nhưng Tiên Kiếm châu ngọc ở đằng trước còn có tín ngưỡng thêm thành, trò chơi này chính là cái phỏng tay khoai lang, nhìn mỹ vị, nhưng đặt ở trên tay đều có thể bị thương, càng đừng nói nuốt vào.</p>
+<p>Tiêu tổng đối Trương Thản cùng Ngô Hạo Vũ thật là thực tín nhiệm thực coi trọng tưởng trọng điểm bồi dưỡng, nhưng này hai người có thể hay không thông qua Tiêu tổng này tín nhiệm khảo nghiệm, này vẫn là cái không biết bao nhiêu.</p>
+<p>Bất quá, nếu bọn họ hai người thật sự thông qua khảo nghiệm, Hồng Cẩu mặt khác công nhân đối bọn họ là thật sự đến chịu phục, tán thành bọn họ ở Hồng Cẩu diễn chính.</p>
+<p>Cùng Trương Thản, Ngô Hạo Vũ cùng tiến Hồng Cẩu, nhưng yếu đi này hai người một đầu mặt khác mấy cái sớm nhất tiến vào lập trình viên tắc trong lòng nghẹn một hơi, giả tưởng chính mình nếu là này hai người, nên như thế nào làm. Bọn họ trò chơi phòng làm việc tuy cũng có không tồi game mobile hạng mục chống đỡ, nhưng vẫn là so bất quá Trương Thản, Ngô Hạo Vũ hai người. Nhưng ít ra, chính mình trò chơi phòng làm việc thăng cấp không thể thất bại.</p>
+<p>Lại qua một tuần, Tiêu Cẩu kiều chân bắt chéo trầm khuôn mặt chờ hai tiểu đệ tới nộp bài tập. Lần này, sắc mặt của hắn mới miễn cưỡng chuyển biến tốt đẹp một chút “Kế tiếp, các ngươi một tháng sau lại qua đây. Cho các ngươi sách tham khảo tiếp tục đọc, đọc thấu.”</p>
+<p>Trương Thản cùng Ngô Hạo Vũ như trút được gánh nặng rời đi. Ít nhất lần này hoãn lại chấp hành một tháng, có thể thoáng suyễn khẩu khí.</p>
+<p>Hầu Duệ hôm nay như cũ bưng tráng men ly xuyến môn hỏi Tiêu Cẩu công tác thượng sự, nhìn đến hai người sắc mặt thấp thỏm rời đi thời điểm, an ủi hai câu “Không cần khẩn trương, mọi người đều có lần đầu tiên, Tiêu tổng cho các ngươi gây áp lực đại, cũng là vì tín nhiệm các ngươi, tưởng trọng điểm bồi dưỡng các ngươi.”</p>
+<p>Trương Thản cùng Ngô Hạo Vũ cũng không có bị Hầu Duệ an ủi nói, như cũ nơm nớp lo sợ rời đi.</p>
+<p>Hầu Duệ vào cửa văn phòng, nhìn sắc mặt đã khôi phục bình thường Tiêu Cẩu nói “Ngươi hà tất như vậy hung. Ngày thường ngươi không phải hi hi ha ha yêu nhất giả mặt đỏ, lần này như thế nào bắt đầu mắng chửi người.”</p>
+<p>Tiêu Cẩu kéo kéo chính mình cổ áo, nói “Ta có mắng chửi người sao? Không có đi? Chỉ là nghiêm túc một chút. Gần nhất trong công ty bởi vì ta đem Tiên Kiếm cho bọn hắn, mà sau lưng nói thầm người rất nhiều. Nếu ta không biểu hiện nghiêm khắc một chút, này đàn nhãi ranh còn tưởng rằng thăng cấp là cái gì dễ dàng sự. Ở Hồng Cẩu trước mắt trò chơi phòng làm việc trung, ta xem trọng nhất trừ bỏ bốn mùa, đích xác chính là này hai tiểu tể tử. Tiên Kiếm cho bọn hắn cũng thật là đặc thù đãi ngộ. Nhưng mà, đỏ mắt người, cũng phải nhìn xem chính mình gánh không gánh nổi ta hậu đãi.”</p>
+<p>“Hiện tại bọn họ phổ biến cho rằng gánh không dậy nổi ngươi trọng trách.” Hầu Duệ cười nói, “Này nhưng cũng không phải một chuyện tốt.”</p>
+<p>“Chờ này hai người làm ra thành tích tới, bọn họ lại nên cảm thấy chính mình có thể thành.” Tiêu Cẩu chẳng hề để ý nói, “Ta đối kia hai tiểu tử vẫn là có điểm tin tưởng.”</p>
+<p>Hầu Duệ nghe Tiêu Cẩu nói như vậy, cũng không hề liền cái này đề tài tiếp tục nói chuyện phiếm, bắt đầu nói lên chính sự “Hồng Cẩu gia viên đổi mới ra điểm vấn đề nhỏ, yêu cầu ngươi tự mình xử lý.”</p>
+<p>Tiêu Cẩu kinh ngạc “Còn không phải là cái trò chơi không gian đổi mới sao? Còn có thể ra cái gì vấn đề?”</p>
+<p>Hầu Duệ nói “Có người cử báo Hồng Cẩu gia viên gần nhất thượng giá trò chơi ch·i·ế·n tr·a·nh giá cả, đè ép mặt khác tiểu công ty game sinh tồn không gian.”</p>
+<p>Tiêu Cẩu chán đến ch·ế·t nói “Lại là việc này a? Trước kia không phải đã giải quyết sao?”</p>
+<p>“Khi đó Hoa Quốc còn không có như vậy nhiều công ty game, Hồng Cẩu cũng không có như vậy đại danh khí, hiện tại không giống nhau.” Hầu Duệ nói.</p>
+<p>Tiêu Cẩu nói “Yêu cầu ta làm cái gì?”</p>
+<p>Hầu Duệ nói “Kéo một đợt thù hận, nói cho bọn họ miễn phí mới là quý nhất. Loại này lời nói phía chính phủ khó mà nói.”</p>
+<p>“Ta liền hảo thuyết sao?” Tiêu Cẩu bất mãn nói, “Hảo đi hảo đi, nhân tiện vì Hồng Cẩu gia viên kế tiếp mở ra mặt khác trò chơi xin làm tuyên truyền? Bất quá Hồng Cẩu gia viên trò chơi đều là có thể dùng đại tệ đổi, bọn họ vui tới sao?”</p>
+<p>Hầu Duệ nói “Bọn họ khẳng định là có kiếm.”</p>
+<p>Tiêu Cẩu nhìn Hầu Duệ đệ trình Hồng Cẩu gia viên mặt khác trò chơi nhập trú sau một loạt kế hoạch, trong óc tính toán một phen, đầu tiên Hồng Cẩu gia viên trích phần trăm thấp, trò chơi nhà máy hiệu buôn thật là có đến kiếm. Đến nỗi đại tệ, đó là ở Hồng Cẩu tiêu phí mới có đại tệ, ở mặt khác trò chơi tiêu phí không có. Hồng Cẩu mặt dày vô sỉ đem cái này tuyên truyền thành chính mình cấp người chơi trợ cấp, nhìn qua đại tệ có thể đổi đồ vật càng nhiều. Bất quá muốn mua đồ vật nhiều, về điểm này đại tệ đã có thể không đủ dùng.</p>
+<p>“Mặt khác trò chơi không mở ra tiêu phí phản tệ, bất quá không tới tiết ngày nghỉ, bọn họ có thể tham gia Hồng Cẩu trò chơi ngôi cao mặt khác ưu đãi hoạt động. Bá Thành game thực tế ảo sẽ trở thành nhóm đầu tiên nhập trú trò chơi xưởng.” Hầu Duệ cái này phó tổng tài “Chính thức tiền nhiệm” lúc sau đệ nhất kiện nhất chuyện quan trọng, chính là Hồng Cẩu trò chơi ngôi cao mở ra.</p>
+<p>Hạ Mộng trò chơi ngôi cao biến thành bên ngoài quốc trò chơi là chủ đạo, Bá Thành cùng gấu trúc ngôi cao càng có khuynh hướng game mobile cùng võng du, Hồng Cẩu trò chơi ngôi cao xem chuẩn cơ hội, cũng nên mở ra.</p>
+<p>Gấu trúc ngôi cao không làm trò chơi, nhưng thật ra không có gì quan hệ. Bá Thành cùng Hồng Cẩu tới một lần ích lợi trao đổi. Hồng Cẩu đưa điện thoại di động đoan cùng PC quả nhiên trò chơi đặt ở Bá Thành trò chơi ngôi cao trên dưới tái, Hồng Cẩu gia viên trở thành hoàn hoàn toàn toàn game thực tế ảo ngôi cao. Mà Bá Thành từ bỏ game thực tế ảo ngôi cao chế tạo, game thực tế ảo toàn bộ tiến vào chiếm giữ Hồng Cẩu game thực tế ảo ngôi cao.</p>
+<p>Hồng Cẩu trò chơi bằng vào Hồng Cẩu gia viên, đi ở toàn cầu trò chơi nhà máy hiệu buôn đằng trước, làm Hồng Cẩu gia viên trở thành các người chơi ở thế giới giả thuyết “Gia”. Nó đổi nghề làm ngôi cao lúc sau, ít nhất ở Hoa Quốc không ai có thể cùng nó cạnh tranh. Bất quá Hồng Cẩu trò chơi ở PC đoan cùng di động đoan vẫn là không bằng có mạng xã hội làm dựa vào Bá Thành, cùng với có di động phần cứng làm chống đỡ gấu trúc, cho nên Hồng Cẩu cùng Bá Thành liền liên hợp lại, các lấy sở trường, trao đổi ích lợi.</p>
+<p>Bá Thành hiện tại ở game kinh dị, đơn thuần cạnh kỹ loại trò chơi lĩnh vực đi ra con đường của mình, ở quốc tế thượng doanh số cũng dần dần mở ra, bọn họ bắt đầu có nắm chắc tìm kiếm một cái càng tốt ngôi cao bày ra chính mình. Hồng Cẩu kế hoạch cùng bọn họ ăn nhịp với nhau.</p>
+<p>Hiện tại nương Hồng Cẩu lại lần nữa “Lâm vào giá cả chiến nguy cơ”, vừa lúc cấp Hồng Cẩu trò chơi ngôi cao mở ra đánh quảng cáo.</p>
+<p>Hầu Duệ cùng Tiêu Cẩu thương nghị sau, Tiêu Cẩu liền ở chính mình xã giao tài khoản thượng kéo thù hận.</p>
+<p>Tiêu Cẩu Ai nói cho ngươi chúng ta Hồng Cẩu là làm từ thiện? Không biết miễn phí mới là quý nhất sao? ( Hồng Cẩu trò chơi các đại trò chơi tiêu thụ kim ngạch bộ phận chụp hình )</p>
+<p>Tiêu Cẩu sẽ ra tới tất tất vài câu, các người chơi đã sớm đoán được. Tiêu Cẩu vốn chính là “Quản không được miệng”, lại không sợ kéo thù hận cái loại này người.</p>
+<p>Bất quá đương Tiêu Cẩu thật sự ra tới lúc sau, bọn họ mới che mặt trường khóc, cảm thấy Tiêu Cẩu vẫn là không ra càng tốt.</p>
+<p>Này căn bản không phải kéo kia mấy cái hạt bức bức truyền thông thù hận, rõ ràng là kéo người chơi thù hận a!</p>
+<p>Xem đánh cương thi sáng tạo lợi nhuận, xem Hồng Cẩu hoa viên nông mục trường sáng tạo lợi nhuận, xem Hồng Cẩu xây cất phòng ở sáng tạo lợi nhuận, xem Hồng Cẩu mặt khác trò chơi nhỏ sáng tạo lợi nhuận…… Này mẹ nó kêu miễn phí?!</p>
+<p>Nói tốt đại tệ đâu? Nói tốt làm nhiệm vụ kiếm tệ đâu? Các ngươi này đàn thổ hào chính là như vậy không kiên nhẫn sao! Sung sung sung liền mẹ nó biết nạp phí, khắc khắc khắc liền mẹ nó biết khắc kim! Cho ngươi miễn phí trò chơi ngươi không cần, liền biết tiêu tiền mua! Nhà ngươi có quặng sao!</p>
+<p>“Trong nhà người khác có hay không quặng ta là không biết, nhà ta khẳng định là không có. Nhưng mà ta tra xét một chút nạp phí ký lục, emmmm…… Hảo đi, ta mỗi tháng hoa ở Hồng Cẩu gia viên thượng tiền vẫn là có cái một hai trăm.”</p>
+<p>“Mới vừa lão Vương phơi giấy tờ, gia hỏa này ở Hồng Cẩu ra tân đồ vật trước tiên liền khắc kim mua, hoa ở Hồng Cẩu gia viên thượng số lượng cũng có sáu vị đếm. Này còn không liền hắn đại tệ.”</p>
+<p>“Nguyên lai Hồng Cẩu gia viên như vậy hố tiền sao!”</p>
+<p>“Hố ngươi cái đại đầu quỷ a, Hồng Cẩu gia viên chỉ là nội dung phong phú, thú vị trò chơi rất nhiều, đại bộ phận đồng bạc đều có thể mua sắm. Ngươi nếu là từng điểm từng điểm làm nhiệm vụ dưỡng hoa dưỡng thảo trồng trọt, đều là có thể miễn phí chơi. Hồng Cẩu cấp liệt ra nội dung quá phong phú cũng có thể kêu hố sao?”</p>
+<p>“Nếu Hồng Cẩu đại tệ cùng đồng bạc chỉ có thể đổi một hai khoản trò chơi, phỏng chừng lại có người nói Hồng Cẩu moi, trợn trắng mắt.”</p>
+<p>“Ân, hiện tại Hồng Cẩu có thể đổi trò chơi rất nhiều, bị người ta nói là ch·i·ế·n tr·a·nh giá cả, không cho mặt khác trung trò chơi nhỏ phòng làm việc sống. Hiện tại phát hiện Hồng Cẩu này đó có thể đổi trò chơi như cũ thực kiếm tiền, kỳ thật không phải miễn phí, lại có người nói Hồng Cẩu hố tiền. Dù sao cẩu tử bối nồi!”</p>
+<p>“Ngươi đã là một cái thành thục cẩu tử, ngươi có thể bối càng nhiều nồi.”</p>
+<p>“Yên lặng rơi lệ, ta phát hiện nguyên lai ta ở Hồng Cẩu gia viên cũng khắc như vậy nhiều a, một chút cảm giác đều không có.”</p>
+<p>“Mỗi ngày kiên trì đổi mới mua sắm danh sách, nếu có mười đồng tiền dưới trang trí phẩm toàn mua. Không nghĩ tới tích tiểu thành đại, cũng hoa nhiều như vậy a.”</p>
+<p>“Tiền của ta toàn bộ hoa ở trong trò chơi, trò chơi thật tốt chơi.jpg.”</p>
+<p>“Ta còn hoa tiền thăng cấp trông cửa cẩu……”</p>
+<p>“Ta tiêu tiền đem miêu cẩu đều thăng cấp trí tuệ nhân tạo. Nhưng là ta quên mất ta cẩu tuyển chính là Husky……”</p>
+<p>“Ha ha ha ha ha Husky còn trí tuệ nhân tạo, trên lầu nhà của ngươi có khỏe không!”</p>
+<p>“Tiêu tiền khai thông Noãn Noãn tủ quần áo, rà quét ta bản nhân hình tượng, ăn mặc Noãn Noãn trong trò chơi quần áo, mỹ tư tư.”</p>
+<p>“Nghe nói rất nhiều nhãn hiệu muốn ấm áp ấm hợp tác, tiến vào chiếm giữ Noãn Noãn tủ quần áo. Về sau thí xuyên lúc sau cảm thấy đẹp quần áo, có thể trực tiếp hạ đơn.”</p>
+<p>“Cái kia thay đổi da Thiên Nga tiểu biên đã lén tiết lộ, Thiên Nga từ nhẹ xa đến định chế, sở hữu sản phẩm đều sẽ tiến vào chiếm giữ Noãn Noãn.”</p>
+<p>“Ha ha ha ha, cái kia Kiều đại thần fan não tàn Thiên Nga tiểu biên sao? Chỉ cần có Kiều đại thần đồ trò chơi liền có vung tiền như rác nàng Thiên Nga tiểu biên sao?”</p>
+<p>“Nghe nói là phú nhị đại.”</p>
+<p>“Hơn nữa không phải nàng, là hắn.”</p>
+<p>“Rõ ràng nhân gia nói chính mình là Kiều đại thần tiểu đệ……”</p>
+<p>“Kiều đại thần không phải mượn từ Tiểu Cẩu cẩu mặt bác bác bỏ tin đồn sao? Ha ha ha ha.”</p>
+<p>“Hảo đi, nghe nói là tưởng trở thành Kiều đại thần tiểu đệ, nhưng mà không thành công người sùng bái. Nghe nói Kiều đại thần năm đó ở trung nhị thanh niên trung nhân khí thập phần cao.”</p>
+<p>“Rốt cuộc mạnh nhất văn nghệ phi chủ lưu.”</p>
+<p>“Nói lên, hoàng kim con nhím giống như thật sự trở thành Kiều đại thần tiểu đệ, ở Hồng Cẩu đi làm.”</p>
+<p>“Tê mỏi chẳng lẽ không phải mượn từ là Kiều đại thần tiểu đệ tiện lợi, trộm lưu tiến Hồng Cẩu khoa học kỹ thuật gần quan được ban lộc sao!”</p>
+<p>“Không sai không sai, bất quá không nghĩ tới hoàng kim con nhím nguyên lai thật là Hồng Cẩu thác, trước kia xem hắn một phen cùng Hồng Cẩu không thân bộ dáng, thiết.”</p>
+<p>“Ha ha ha ha, hiện tại bại lộ ra tới, thiết trái cây lúc ấy ra tới mấy cái phú nhị đại bác chủ, đều là chúng ta Kiều đại thần thác.”</p>
+<p>“Là thác chẳng lẽ các ngươi không nên chống lại sao? Vì cái gì còn như vậy cao hứng bộ dáng?”</p>
+<p>“A, Hồng Cẩu nếu không như thế nào, khẳng định liền cười nhạo a. Hiện tại này nhóm người có thể vận đỏ cẩu cửa sau, mỗi lần cái gì tân trò chơi tân khoa học kỹ thuật tân cải biến đều có thể trước tiên tới tay, quanh thân không cần đoạt, còn có thể ăn nghe nói trù nghệ kinh người Tiểu Cẩu cẩu thân thủ làm cơm, ta cũng cũng chỉ dư lại hâm mộ ghen tị hận.”</p>
+<p>“Không sai! Chư quân! Ta cũng muốn làm thác!”</p>
+<p>“Hiện tại chúng ta đã là lấy, nhưng mà cũng không có khen thưởng.”</p>
+<p>Các người chơi liền Hồng Cẩu gia viên cường đại hút kim năng lực liêu khai. Tuy rằng Tiêu Cẩu ngữ khí có điểm thiếu đánh, bất quá chuyện này bọn họ đã sớm đoán được. Rốt cuộc chính mình khắc kim tình huống, chẳng lẽ chính mình còn không rõ ràng lắm sao? Hồng Cẩu gia viên tuy rằng không có tiền cũng có thể chơi, nhưng có tiền có thể chơi đến càng vui vẻ. Hơn nữa mua lúc sau, lại có đại tệ trả về, liền cảm thấy càng đáng giá.</p>
+<p>Cấp cái nào trò chơi khắc kim không phải khắc? Ít nhất Hồng Cẩu trò chơi hảo chơi, còn tương đương với vĩnh viễn gấp đôi đâu.</p>
+<p>Tiêu Cẩu này một cái “Cãi lại” vốn dĩ không khiến cho rất mạnh oanh động, hot search cũng liền thượng một ngày trước mười liền đi xuống. Bất quá không mấy ngày, Hồng Cẩu gia viên nhiệt độ lại nổi lên.</p>
+<p>Hồng Cẩu trò chơi rốt cuộc “Đỉnh bất quá” áp lực, tuyên bố mở ra Hồng Cẩu trò chơi ngôi cao. Nếu có mặt khác xưởng trò chơi nguyện ý tiến vào chiếm giữ, như vậy cần thiết tuân thủ một hai ba bốn năm sáu nội quy chương.</p>
+<p>Sau đó, Hồng Cẩu di động, pc game PC diễn tiến vào chiếm giữ Bá Thành trò chơi ngôi cao, Bá Thành game thực tế ảo tắc tiến vào Hồng Cẩu trò chơi ngôi cao. Nghe nói cái này là vì “Phản lũng đoạn”.</p>
+<p>Các người chơi đối “Phản lũng đoạn” gì đó không hiểu lắm, có đại thần lấy ra các quốc gia trường hợp giảng giải một chút. Nói tóm lại, Hồng Cẩu làm cường làm lớn, về sau trò chơi ngôi cao phỏng chừng chính là Hồng Cẩu một nhà độc đại, chúng ta quốc gia nhưng thật ra không cảm thấy có cái gì vấn đề, rốt cuộc rất nhiều ngành sản xuất, đặc biệt là công cộng ngành sản xuất đều là quốc xí lũng đoạn, nhưng nước ngoài động bất động liền lấy cái này nói sự, cho nên Hồng Cẩu liền trước lẩn tránh nguy hiểm.</p>
+<p>Hồng Cẩu cùng Bá Thành hợp tác, cũng coi như là song thắng đi.</p>
+<p>Đến nỗi mặt khác game thực tế ảo cũng có thể tiến vào Hồng Cẩu trò chơi không gian, vì Hồng Cẩu gia viên tăng thêm càng nhiều tân trò chơi, các người chơi là hoan nghênh. Chỉ là nhìn Hồng Cẩu vẫn là không có thể giữ được chính mình “Độc chiếm” địa vị, bị bắt tách ra, vẫn là có chút người chơi thực đồng tình. Cho nên Tiêu Cẩu xã giao tài khoản hạ nhiều rất nhiều an ủi nói.</p>
+<p>Còn có người tỏ vẻ, Hồng Cẩu trò chơi lấy chất lượng thủ thắng lại không phải lấy Hồng Cẩu gia viên thủ thắng. Liền tính những cái đó trò chơi tiến vào Hồng Cẩu trò chơi ngôi cao, cũng sẽ không pha loãng Hồng Cẩu trò chơi doanh số.</p>
+<p>Tuy nói như vậy, trên thực tế cuối cùng Hồng Cẩu trò chơi doanh số đích xác bị pha loãng. Người chơi mỗi tháng mua sắm dự toán liền nhiều như vậy, ban đầu toàn bộ cho Hồng Cẩu trò chơi, hiện tại mặt khác trò chơi phân mỏng bọn họ lực chú ý.</p>
+<p>Hồng Cẩu mặt khác trò chơi phòng làm việc một mảnh tình cảnh bi thảm. Vốn dĩ ở Hồng Cẩu gia viên hộ giá hộ tống hạ, bọn họ dùng cho liên thủ thực tế ảo trò chơi nhỏ doanh số đều không tồi. Hiện tại dẫn vào cạnh tranh, bọn họ mới phát hiện, chính mình nguyên lai không có chính mình trong tưởng tượng như vậy ưu tú, bọn họ tác phẩm không có chính mình trong tưởng tượng như vậy được hoan nghênh.</p>
+<p>Mặt khác công ty game nhập trú lúc sau, Hồng Cẩu rất nhiều trò chơi doanh số đại biên độ trượt xuống, bất quá Tiêu Cẩu chế tác kia mấy khoản thực tế ảo trò chơi nhỏ lại một chút ảnh hưởng đều không có. Này đích xác như các người chơi theo như lời, chất lượng tốt trò chơi, doanh số như thế nào cũng sẽ không bị phân mỏng. Hồng Cẩu kỳ hạ mặt khác trò chơi phòng làm việc trong lòng liền càng khó chịu.</p>
+<p>Bất quá tuy rằng Hồng Cẩu trò chơi doanh số trượt xuống, nhưng thu vào lại là cấp tốc tăng trưởng. Làm ngôi cao, thật là tới tiền phi thường mau phi thường ổn định thủ đoạn.</p>
+<p>Tiêu Cẩu cảm thấy Hồng Cẩu tiền đã đủ nhiều, cho nên đối thu vào không phải thực để ý. Hắn đối Hồng Cẩu mặt khác trò chơi phòng làm việc chế tác thực tế ảo trò chơi nhỏ không có có thể cạnh tranh thắng chuyện này thập phần để ý.</p>
+<p>Vì thế Tiêu Cẩu trong khoảng thời gian này hóa thân Charizard, bắt được ai phun ai. Nguyên bản hội nghị trung vẫn luôn là Kiều Hoành giả mặt trắng, Tiêu Cẩu giả mặt đỏ, hiện tại hoàn toàn điên đảo, Kiều Hoành phụ trách ở Tiêu Cẩu kích động thời điểm hoà giải dập tắt lửa, từ tiêu đại Charizard ngọn lửa hạ cứu vớt Hồng Cẩu đám kia tiểu đáng thương.</p>
+<p>Tiểu đáng thương nhóm run bần bật, quyết định nỗ lực giao tranh, nhất định phải lấy ra điểm bộ dáng tới, không thể lại bị Tiêu tổng nói ở hắn cánh chim tiểu thừa lạnh gà con.</p>
+<p>Trương Thản cùng Ngô Hạo Vũ sở lãnh đạo hai cái phòng làm việc đích xác ở trên thực lực vượt qua mặt khác phòng làm việc, bọn họ hai cái phòng làm việc chế tác trò chơi doanh số trượt xuống không nghiêm trọng, cái này làm cho bọn họ thở dài nhẹ nhõm một hơi.</p>
+<p>Có lẽ thực lực của chính mình so với chính mình trong tưởng tượng cường một ít, có thể cùng Hoa Quốc đồng hành nhóm cạnh tranh. Như vậy Tiên Kiếm nhị hẳn là cũng không có vấn đề đi?</p>
+<p>Vấn đề lớn đâu! Tiên Kiếm nhị mới không phải cùng Hoa Quốc đồng liêu cạnh tranh, mà là cùng toàn thế giới!</p>
+<p>Bọn họ tiếp tục một bên nỗ lực công tác một bên linh hồn xuất khiếu trạng, áp lực thật là lớn đến mép tóc càng ngày càng đáng sợ.</p>
+<p>Hy vọng chờ Tiên Kiếm nhị làm ra tới lúc sau, bị bọn họ nhổ tóc có thể mọc ra tới.</p>
+<p>．．．．．．．．．．．．</p>
+<p>Tiên Kiếm nhị giao cho Trương Thản cùng Ngô Hạo Vũ, Hồng Cẩu gia viên đổi mới đã kết thúc, Tiêu Cẩu vốn tưởng rằng chính mình muốn đi lên giúp Kiều Hoành xử lý việc vặt vãnh, các nơi đảm đương linh vật mở họp sinh hoạt.</p>
+<p>Tuy rằng những việc này lại nhiều lại tạp, nhưng ít ra có thể sáng đi chiều về ngủ ngon, Tiêu Cẩu cũng sẽ không ở đi công tác thời điểm lêu lổng, một kết thúc liền ở thực tế ảo không gian cùng Kiều Hoành liên cơ chơi game.</p>
+<p>Bất quá không bao lâu, phản tà giáo văn phòng nói hy vọng Tiêu Cẩu lại làm một khoản có quan hệ với phản tà giáo trò chơi, tốt nhất là game thực tế ảo.</p>
+<p>Tiêu Cẩu vốn đang không phản ứng lại đây, phản tà giáo cùng ta Tiêu Cẩu có quan hệ gì. Đương bên người bí thư nhắc nhở lúc sau, Tiêu Cẩu mới phản ứng lại đây, nguyên lai phản tà giáo văn phòng theo như lời, là 《 Yên Tĩnh Hồng Điệp 》 trò chơi này a.</p>
+<p>《 Yên Tĩnh Hồng Điệp 》 bởi vì “Tâm linh kh·ủ·ng b·ố” trò chơi này khái niệm mà vận đỏ, cũng dẫn phát rồi rất nhiều người “Kháng nghị” cùng “Suy nghĩ sâu xa”, Tiêu Cẩu vì ném nồi, cấp trò chơi này ấn thượng một cái ưu quốc ưu dân chụp mũ, “Phản tà giáo” là trong đó đỉnh đầu.</p>
+<p>Nhưng hiện tại thật muốn làm hắn làm một khoản phản tà giáo game thực tế ảo, hắn còn thật không biết làm cái gì.</p>
+<p>Đương nhiên, hắn trong trí nhớ có rất nhiều khoản trò chơi đều có thể cùng phản tà giáo liên hệ lên, nhưng mà kia đều là đại tác phẩm. Hắn nếu hiện tại lại nói chính mình muốn khai phá một khoản ３Ａ đại tác phẩm, Kiều Hoành còn không được tước ch·ế·t hắn.</p>
+<p>Hảo đi, tước bất tử hắn, nhưng Kiều Hoành khẳng định thực không cao hứng.</p>
+<p>Tuy rằng phản tà giáo văn phòng theo như lời trò chơi, khả năng chính là một cái trò chơi nhỏ, hơn nữa cũng chỉ là hy vọng, là kiến nghị, cũng không phải cưỡng chế yêu cầu. Nhưng Tiêu Cẩu là ai a, hắn là ái quốc ái dân năm hảo thanh niên, sinh ở quốc kỳ hạ, lớn lên ở tân Hoa Quốc. Điểm này yêu cầu, hắn cảm thấy hắn vẫn là không nên cự tuyệt.</p>
+<p>Nhưng có cái gì thực tế ảo trò chơi nhỏ, có thể cùng phản tà giáo nhấc lên một chút quan hệ đâu?</p>
+<p>Căn cứ vào đối chính mình tín nhiệm, Tiêu Cẩu trước tiếp được nhiệm vụ này, sau đó mới trở về minh tư khổ tưởng.</p>
+<p>Có lẽ là càng chuyên môn tưởng, liền càng không nghĩ ra được, Tiêu Cẩu thật đúng là bị làm khó tới rồi.</p>
+<p>Hắn đành phải thật cẩn thận hỏi Kiều Hoành “Kia ta không làm một cái trò chơi nhỏ, làm một cái đại trò chơi được không a?”</p>
+<p>Kiều Hoành mỉm cười “Ngươi nói đi?”</p>
+<p>Tiêu Cẩu giây túng.</p>
+<p>Kiều Hoành nghẹn cả giận “Ta đi từ chối. Ta cảm thấy không có ai có thể cho chúng ta hạ chính trị nhiệm vụ.”</p>
+<p>Kiều Hoành trong lòng là thực tức giận. Tuy rằng Tiêu Cẩu thật là cái kia cái gì phản tà giáo đại sứ, nhưng là chúng ta có chúng ta công tác kế hoạch, ngươi cho rằng cùng viết cái báo cáo dường như, “Tiểu Tiêu a, ngươi sẽ làm trò chơi đúng hay không? Làm phản tà giáo bái”, loại này thỉnh cầu thực thiểu năng trí tuệ hảo sao?</p>
+<p>Này liền cùng “Tiểu Ｘ a, ngươi là chuyên nghiệp phiên dịch đúng không, cho ta phiên dịch cái văn hiến bái”, “Tiểu Ｘ a, ngươi là học làm bánh ngọt kiểu Âu Tây, cho ta làm bánh sinh nhật bái”, “Tiểu Ｘ a, ngươi là học trang web thiết kế, giúp ta thiết kế cái official website bái”…… Này đó yêu cầu chẳng lẽ không phải một chuyện sao? Dựa vào cái gì a? Công tác của ta bất kể phí tổn sao? Ta thời gian không đáng giá tiền sao? Ngươi cho rằng ta có thể cho ngươi quát mắng sao?</p>
+<p>Cũng chính là xem Tiêu Cẩu dễ nói chuyện, không cái giá, người trẻ tuổi mặt nộn, nhìn qua dễ khi dễ, này đàn lão quan cao mới bụng một phách, đột phát kỳ tưởng, tưởng chiếm Tiêu Cẩu tiện nghi.</p>
+<p>Kiều Hoành càng nghĩ càng sinh khí, làm phú nhị đại, hắn nhất am hiểu chính là cái gì? Cáo trạng a! Tuy rằng hiện tại hắn cha mẹ cùng đại ca qua đời, nhưng hắn không phải một lần nữa tìm tới chỗ dựa sao!</p>
+<p>Kiều Hoành thực uyển chuyển cùng Trâu Hàng oán giận một chút, nói có thể hay không hoãn chút thời gian, hiện tại Hồng Cẩu đích xác lo liệu không hết quá nhiều việc, Tiêu Cẩu bệnh cũng mới hảo, hiện tại thân thể còn suy yếu.</p>
+<p>“Tuy rằng mặt trên nói chỉ là cái trò chơi nhỏ, nhưng game thực tế ảo lại tiểu có thể nhỏ đến nào đi? Tiêu Cẩu lại là cái đã tốt muốn tốt hơn người, hắn sao có thể tùy tiện làm làm liền xong việc? Hơn nữa hiện tại Hồng Cẩu chiêu bài toàn dựa Tiêu Cẩu chống, Tiêu Cẩu trò chơi tất thuộc tinh phẩm đã là người chơi chung nhận thức. Nếu Tiêu Cẩu tùy tiện làm trò chơi, khẳng định sẽ dẫn phát một mảnh cười nhạo, đến lúc đó chúng ta như thế nào xong việc?”</p>
+<p>Kiều Hoành lải nhải oán giận, Trâu Hàng nghe được một cổ hỏa khí.</p>
+<p>“Ai làm Tiểu Cẩu làm trò chơi, trực tiếp đỉnh trở về. Ta liền không nghe nói qua, có thể như vậy làm việc.” Trâu Hàng tuy rằng vẫn là cái địa phương quan, nhưng là hắn bối cảnh kiên cường, nói chuyện cũng kiên cường, “Các ngươi Hồng Cẩu cũng không phải tiểu công ty, điểm này sự trực tiếp cự tuyệt, bọn họ có thể thế nào? Nếu thật sự muốn làm trò chơi, trực tiếp việc công xử theo phép công, đấu thầu sẽ không sao? Hắn cho rằng làm trò chơi liền cùng làm phim ngắn giống nhau? Hơn nữa làm phim ngắn còn phải cho người tiền đâu!”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong103.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong105.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "manh-nhat-tro-choi-che-tac-nhan";
+const NOVEL_TITLE = "Mạnh nhất trò chơi chế tác nhân";
+const CHAPTER_TITLE = "Chương 104";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

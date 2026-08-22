@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 14</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Phát sóng trực tiếp dưỡng nhãi con sau ta thành tinh tế nhà giàu số một
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 14</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong13.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong15.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Odrich  đại sư tử  hoàng đế bệ hạ ghé vào mềm như bông thảm thượng, cả người ánh vàng rực rỡ trường mao, dường như từ thuần túy nhất hoàng kim kéo tơ mà thành, không có một tia tạp sắc. Ánh mặt trời từ đại đại cửa sổ sát đất ngoại chiếu rọi tiến đại sư tử du quang thủy hoạt da lông thượng, phản xạ kim quang thiếu chút nữa lóe mù Neil một đôi lão thị.</p>
+<p>“Bệ hạ.” Neil xử quải trượng, run run rẩy hướng đại sư tử bệ hạ hành lễ.</p>
+<p>Neil đã mau 400 tuổi, liền tính là dị năng giả, cũng đã quá già rồi. Odrich hoài nghi chính mình miệng trương đại một chút, phun ra dòng khí là có thể đem lão già này thổi tan giá.</p>
+<p>Viện khoa học phái lão nhân này tới ăn vạ sao?</p>
+<p>Thật vất vả có buồn ngủ đại sư tử, vẻ mặt khó chịu biến trở về hình người, biến trở về hình người tiền, kia mao trên mặt biểu tình cùng đảo mắt tam giác Arthur có mười thành mười tương tự.</p>
+<p>Odrich ngồi vào trên ghế, ý bảo Neil ngồi hắn đối diện, bí thư lập tức bưng tới hai ly ấm áp bạch thủy.</p>
+<p>Odrich liếc bí thư liếc mắt một cái, bí thư mỉm cười nhìn lại. Bệ hạ, nhẫn nhẫn đi, uống mặt khác đồ uống, ta sợ đem Neil lão nhân uống ra vấn đề.</p>
+<p>Odrich yên lặng uống một ngụm nhạt nhẽo vô vị bạch thủy, nói “Vì Viện điều dưỡng số 1 phát sóng trực tiếp mà đến?”</p>
+<p>Neil vội vàng nói “Bệ hạ, có thể hay không làm cái kia kêu Minh Hữu tiểu thanh niên tiến vào viện khoa học?”</p>
+<p>Odrich không chút do dự nói “Không thể.”</p>
+<p>Neil “……” Có thể hay không chỉ là một cái khách khí cách nói, hắn là nhắc tới yêu cầu a! Bệ hạ ngươi như thế nào có thể từ chối đến như thế dứt khoát?</p>
+<p>“Viện khoa học hội Nguyên Lão nếu đem ngài thỉnh ra tới, liền biết ta tuyệt đối sẽ không đồng ý chuyện này.” Odrich chậm rì rì nói, “Bọn họ hoàn toàn tra không đến Minh Hữu bất luận cái gì tin tức, trong lòng thực hoảng đi?”</p>
+<p>“Viện khoa học nghiên cứu lâu như vậy, mỗi ngày cùng ta nói ta đệ không cứu chờ chết đi cáo từ. Hiện tại một cái không biết từ nào toát ra tới tiểu thanh niên, nhìn mau đem ta đệ trị hết, nóng nảy?” Hoàng đế bệ hạ khóe môi một câu, nghiêm túc khuôn mặt nhiều một phân châm chọc bĩ khí, xem đến Neil không khỏi trong lòng thẳng bồn chồn.</p>
+<p>Viện khoa học chỉ biết Arthur thân vương điện hạ tính cách rất khó làm, chẳng lẽ chúng ta hoàng đế bệ hạ chính là hảo tính tình sao? Cũng không nhìn xem thân vương điện hạ là ai nuôi lớn.</p>
+<p>“Nóng nảy.” Neil đã sớm mặc kệ viện khoa học sự, lần này đáp ứng viện khoa học nguyên lão thỉnh cầu, cũng không phải là xem ở viện khoa học đám kia đã lạnh hắn tâm bọn hậu bối mặt mũi thượng, “Nhưng viện khoa học có thân vương điện hạ mai phục hạt giống, cho dù là làm viện khoa học hiện tại hệ thống sụp đổ cũng thế, ta tưởng chúng ta Tinh Minh yêu cầu càng nhiều người học tập Minh Hữu đào tạo kỹ thuật.”</p>
+<p>“Ta này không phải làm hắn khai phát sóng trực tiếp sao? Muốn học, chính mình xem phát sóng trực tiếp học.” Thấy Neil không đứng ở viện khoa học hội Nguyên Lão một bên, Odrich thu hồi châm chọc tươi cười, nhưng như cũ không buông khẩu, “Lão sư, ngài lần này trở về, có thể nói cho viện khoa học hội Nguyên Lão một cái bọn họ nhất quan tâm tin tức.”</p>
+<p>Neil thở dài một hơi. Hoàng đế bệ hạ đều kêu hắn lão sư, việc này hắn quản không được.</p>
+<p>“Lão sư, bọn họ cùng ngài không giống nhau, ngài quan tâm chính là Tinh Minh các chiến sĩ khỏe mạnh, bọn họ chỉ quan tâm cái này ngang trời xuất thế tiểu thanh niên, có thể hay không cướp đi bọn họ vinh dự. Bọn họ thật sự không cần lo lắng, bởi vì hắn cái kia học phái, chỉ còn lại có hắn một người.” Odrich nghiêm túc thần sắc để lộ ra ba phần bi thương, ba phần phẫn nộ, ba phần đau lòng cùng một phân châm chọc.</p>
+<p>Rõ ràng là đánh lung tung nói, trang đến giống như còn thật giống như vậy hồi sự. Cảm tạ Đàm gia ở Thiên Lam Tinh một tay che trời, lau sạch Minh Hữu phía trước sinh hoạt sở hữu dấu vết, thậm chí chế tạo “Giả Đàm Trường Canh” tử vong ký lục, đem Minh Hữu biến thành tồn tại u linh.</p>
+<p>Từ nay về sau, Tinh Minh chỉ còn lại có cổ xưa học thuật lưu phái duy nhất người thừa kế, Minh Hữu.</p>
+<p>“Trừ bỏ hắn ở ngoài, Tinh Minh không còn có mặt khác Linh Thú Sư.”</p>
+<p>“Linh Thú Sư đào tạo linh thú cây ăn quả cùng mặt khác thích hợp linh thú dùng ăn nguyên liệu nấu ăn dược liệu, toàn bộ bị thiêu hết.”</p>
+<p>“Hắn chạy ra tới thời điểm mang đi sở hữu có thể mang đi đồ vật, nhưng mấy thứ này, còn chưa đủ Arthur một người đem thân thể dưỡng hảo.”</p>
+<p>“Bất quá là học thuật tranh chấp, cuối cùng diễn biến thành dị đoan thẩm phán, đây là hội Nguyên Lão nhất am hiểu đồ vật. Minh Hữu là cái đứa nhỏ ngốc, hắn cái gì cũng không biết; Linh Thú Sư nhóm toàn quân bị diệt, người chết không có biện pháp mở miệng nói chuyện. Ta không có chứng cứ, không biết là ai hạ độc thủ, ai đem Linh Thú Sư nghiên cứu khoa học thành quả che giấu đến nay. Ta chỉ có thể đem hết toàn lực bảo hộ này duy nhất hy vọng.”</p>
+<p>“Muốn cho hắn ở công chúng trước mặt lộ diện, ít nhất chờ Arthur có thể hóa thành hình người lúc sau.” Odrich thở dài, nhéo nhéo mũi, thần sắc thập phần mỏi mệt, “Có hắn danh vọng che chở, liền tính toàn Tinh Minh linh thú đào tạo tương quan chuyên gia học giả nhóm cùng công chi, cũng có thể hộ Minh Hữu chu toàn.”</p>
+<p>Neil thân hình lung lay sắp đổ, phảng phất một hơi không suyễn đi lên, lập tức liền phải té xỉu.</p>
+<p>Bí thư lập tức thoáng hiện, lấy ra trái tim dược cấp Neil ăn vào.</p>
+<p>Neil vỗ vỗ ngực, rốt cuộc suyễn thượng khí. Hắn không dám tin tưởng nói “Không có? Tất cả đều không có? Thật sự tất cả đều không có?”</p>
+<p>Odrich nhẹ nhàng gật đầu, lại thở dài một hơi.</p>
+<p>“Như thế nào không có? Như thế nào toàn không có?” Neil đứng lên, xử quải trượng giống ruồi nhặng không đầu giống nhau ở trong phòng xoay hai vòng, sau đó quải trượng hướng trên mặt đất hung hăng một xử, “Ai làm?! Một chút dấu vết để lại đều không có lưu lại sao?!”</p>
+<p>“Không có. Minh Hữu kia đứa nhỏ ngốc, thậm chí cho rằng bọn họ chỉ là đơn thuần tao ngộ thiên tai, mà không phải **.” Odrich tiếp tục biên, liền không khẩu loạn biên, thuận miệng hồ biên, “Hắn đi vào Viện điều dưỡng số 1, nói có thể trị Arthur, ta cũng là cái gì cũng có thể thử khi tuyệt vọng, không nghĩ tới thật gặp gỡ cái bảo bối.”</p>
+<p>>br ></p>
+<p>“Này đó suy đoán, ta không tính toán nói cho Minh Hữu. Nếu hắn trưởng bối cái gì cũng chưa nói cho hắn, đã nói lên không hy vọng hắn lưng đeo quá nhiều hắc ám đồ vật. Lão sư, về sau ngươi nhìn thấy hắn, cũng đừng liền cùng hắn nói này đó suy đoán.” Gậy gộc phái phát xong rồi, Odrich bắt đầu phát ra kẹo.</p>
+<p>“Đứa nhỏ này vẫn luôn ở tại một cái ngăn cách với thế nhân địa phương, đối Tinh Minh sự hiểu biết không thâm. Hắn hiện tại một bên trị liệu Arthur bọn họ, một bên học tập Tinh Minh hiện giờ linh thú đào tạo học, tìm kiếm bị hủy rớt đồ vật thay thế phẩm, thuận tiện sửa chữa linh thú đào tạo học sai lầm.”</p>
+<p>“Ta đã phái người đi sưu tầm sở hữu ở Hoang thú thực đơn thượng đồ vật, Minh Hữu nói, có lẽ có thể từ mấy thứ này trung tìm được dinh dưỡng khối vuông nguyên liệu thay thế phẩm.”</p>
+<p>“Nếu lão sư còn có tinh lực, có không làm hắn cho ngươi phát bưu kiện dò hỏi vấn đề? Đương kim Tinh Minh linh thú tương quan học thuật giới, luận tri thức uyên bác, cũng sẽ không chèn ép dị đoan người, ta chỉ tín nhiệm lão sư.”</p>
+<p>“Có tinh thần! Có tinh thần thực!” Neil lập tức trung khí mười phần quát, “Cái này học sinh ta tự mình giáo…… Không! Là ta cùng hắn cho nhau học tập cho nhau tiến bộ lẫn nhau vì lão sư! Hội Nguyên Lão sự ngươi đừng động, đem này căn độc đinh mầm hộ hảo! Chờ Arthur điện hạ trở về, ta xem ai còn dám lắm mồm!”</p>
+<p>Rốt cuộc Arthur điện hạ chính là thiếu chút nữa trực tiếp đem viện khoa học hội Nguyên Lão hủy đi thần nhân.</p>
+<p>Năm đó chống lại Trùng tộc xâm lấn chiến tranh đấu võ, viện khoa học hội Nguyên Lão tưởng nhân cơ hội mở rộng thế lực, mượn linh thú trị liệu cùng an dưỡng danh nghĩa tạp tiền tuyến tài nguyên, thậm chí tưởng lấy trọng thương chiến sĩ làm thực nghiệm.</p>
+<p>Arthur điện hạ mở ra cơ giáp, lãnh một đám S cấp chiến sĩ vọt vào viện khoa học, trực tiếp đem vật tư toàn đoạt không nói, còn đem hội Nguyên Lão quyền lực tượng trưng hội Nguyên Lão điện phủ cấp hủy đi.</p>
+<p>Càng kinh người chính là, Arthur điện hạ hủy đi phòng ở đoạt đồ vật thời điểm, viện khoa học bên trong có người tắt đi viện khoa học vòng bảo hộ, đại môn rộng mở chờ Arthur điện hạ tới. Hội Nguyên Lão muốn đuổi theo trách, lại phát hiện tuổi trẻ khoa học sẽ các thành viên lời nói thống nhất, nói rõ cho nhau che chở, mỗi người có phân. Từ đây, hội Nguyên Lão đối viện khoa học quản khống không bằng từ trước. Nếu không phải chiến hậu Arthur điện hạ “Mất tích”, hiện tại viện khoa học hội Nguyên Lão đã tồn tại trên danh nghĩa.</p>
+<p>Neil biết được việc này lúc sau, vỗ đùi, nghiến răng nghiến lợi nói thanh “Nên”.</p>
+<p>Lấy hoàng đế bệ hạ tính tình, nếu không phải vì bị thương các chiến sĩ, tạm thời không thể động này nhóm người, đã sớm đem này nhóm người đưa lên toà án quân sự.</p>
+<p>Cho nên Minh Hữu ở nào đó ý nghĩa, là này nhóm người bùa đòi mạng.</p>
+<p>Neil thử ra hoàng đế bệ hạ bảo hộ Minh Hữu quyết tâm, về nhà lúc sau cao hứng cực kỳ, thậm chí ăn nhiều nửa chén cơm. Hắn liền chờ xem đám kia hội Nguyên Lão người chết, chẳng sợ này nhóm người là hắn đồ tử đồ tôn.</p>
+<p>Odrich biết được việc này lúc sau, cười mắng một tiếng cáo già.</p>
+<p>Này cáo già cũng lo lắng hắn lập trường đâu. Rốt cuộc hội Nguyên Lão đám kia người chính là đem Arthur cùng mười anh hùng mất tích sự, toàn đẩy đến hắn trên đầu.</p>
+<p>Chỉ cần Arthur không xuất hiện, này tin đồn nhảm nhí liền sẽ không biến mất. Bọn họ tốt đẹp nhất dự đoán, là Arthur thương thế, chính mình xuống đài.</p>
+<p>Tuy rằng cái này hoàng đế, là hắn rút thăm trừu thua mới đương, nhưng hắn đều lên làm, trừ phi là chính hắn tưởng xuống dưới, ai dám động hắn?</p>
+<p>Odrich suy nghĩ một chút chính mình chủ động xuống đài lúc sau, đem hoàng đế nhường cho ai.</p>
+<p>Arthur? Này hùng hài tử tuyệt đối không chịu thành thành thật thật xử lý công vụ, làm hắn đương hoàng đế, hắn tuyệt đối suốt đêm chạy trốn;</p>
+<p>Nhi tử? Đứa nhỏ ngốc chỉ trường cơ bắp cùng dị năng không dài đầu óc, xem văn tự vượt qua nửa giờ liền đau đầu;</p>
+<p>Mặt khác con cháu? Mỗi người đều có lấy cớ không nghĩ làm.</p>
+<p>Đến lúc đó, vẫn là rút thăm đi. Đầu tiên, tìm cái lấy cớ đem Arthur cùng nhi tử rút thăm tư cách cấp bài trừ. Ta chịu quá khổ, tuyệt đối không thể làm hai người bọn họ lại chịu. Hoàng đế bệ hạ thần tình u oán.</p>
+<p>Minh Hữu buổi tối còn tưởng phát sóng trực tiếp, bị Arthur một miêu trảo tử chụp trán thượng, phủ quyết!</p>
+<p>Hiện tại muốn lãnh mấy ngày, ngoại hạng giới dư luận lên men đến không sai biệt lắm, hắn ca sự tình xử lý thuận, lại mở ra lần sau phát sóng trực tiếp!</p>
+<p>Minh Hữu một đôi mắt hạnh mở lưu viên, một bộ “Ta đã hiểu” bộ dáng.</p>
+<p>Arthur miêu trảo tử đẩy đẩy Minh Hữu đầu, Minh Hữu đầu quơ quơ, Arthur rõ ràng nghe thấy được Minh Hữu trong đầu bã đậu lẫn nhau va chạm thanh âm.</p>
+<p>Hắn miêu trảo tử lại đẩy Đại Bạch hùng đầu một chút, Đại Bạch hùng đầu quơ quơ, phát ra tiếng vang cùng Minh Hữu nhất trí.</p>
+<p>Arthur minh bạch, vừa nói đến loại này tương đối chuyện phức tạp, Minh Hữu đầu óc liền cùng mất đi trí Đại Bạch hùng giống nhau, não thủy toàn biến thành bã đậu.</p>
+<p>“Ta nghe Đại Hắc thì tốt rồi a!” Biết chính mình đối những cái đó âm mưu dương mưu dốt đặc cán mai Minh Hữu tâm thái thập phần hảo.</p>
+<p>“Ngao.” Arthur héo tháp tháp lên tiếng, tổng cảm thấy tâm mệt.</p>
+<p>Đại Bạch hùng “Ân ân ân” đi theo gật đầu. Đúng đúng đúng, động cái gì đầu óc! Nghe Đại Hắc miêu!</p>
+<p>Arthur tức giận đến bay lên một chân đá Đại Bạch hùng trán thượng “Ân ngươi cái đầu a! Nhanh lên cho ta khôi phục bình thường! Dùng chính ngươi đầu óc tự hỏi vấn đề!”</p>
+<p>Đại Bạch hùng “Ân ngô” một tiếng, che đầu ngã xuống đất.</p>
+<p>Sau đó “Đông” một tiếng, ba điều chân đứng thẳng, trọng tâm không xong Arthur hung hăng ném tới trên mặt đất, quăng ngã thành một quán màu đen miêu chất lỏng.</p>
+<p>“Ngao ô!!!”</p>
+<p>“A a a a Đại Hắc, quăng ngã nào! Làm ta nhìn xem!”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong13.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong15.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "phat-song-truc-tiep-duong-nhai-con-sau-ta-thanh-tinh-te-nha-giau-so-mot";
+const NOVEL_TITLE = "Phát sóng trực tiếp dưỡng nhãi con sau ta thành tinh tế nhà giàu số một";
+const CHAPTER_TITLE = "Chương 14";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

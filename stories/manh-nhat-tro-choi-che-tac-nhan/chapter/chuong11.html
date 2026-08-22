@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 11</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Mạnh nhất trò chơi chế tác nhân
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 11</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Đương Tiêu Cẩu nói muốn khai phát sóng trực tiếp thời điểm, Kiều Hoành là cự tuyệt. Hắn không quá tưởng ở công chúng trước mặt lộ diện.</p>
+<p>Tiêu Cẩu đề nghị “Ngươi là sợ người khác nhận ra ngươi? Vậy ngươi mang cái mặt nạ?”</p>
+<p>Kiều Hoành nghĩ nghĩ chính mình trước kia bộ dáng, lắc đầu “Ta cảm thấy bọn họ hẳn là nhận không ra. Tính, lộ diện liền lộ diện đi, bất quá ta không quá có thể nói, sinh động không khí liền dựa ngươi.”</p>
+<p>Tiêu Cẩu vỗ bộ ngực bảo đảm nói “Ngươi chỉ cần lộ mặt liền thành. Ngươi gương mặt này tuấn có thể đi đương minh tinh, chỉ bằng gương mặt này, các người chơi nữ liền sẽ vì ngươi điên cuồng!”</p>
+<p>Kiều Hoành nhướng mày, nói giỡn nói “Các người chơi chẳng lẽ không phải vì ta họa quần áo điên cuồng, vung tiền như rác sao?”</p>
+<p>Tiêu Cẩu nghiêm túc gật đầu “Hảo đi, đích xác như thế. Như vậy hoạt động tân bản đồ làm ơn!”</p>
+<p>Kiều Hoành thở dài “May mắn ta đã sớm ở chuẩn bị cái này, bằng không một tuần ngươi đến bức tử ta.”</p>
+<p>Tiêu Cẩu vui cười “Này không phải xem ngươi đã chuẩn bị không sai biệt lắm, ta mới nói một tuần sao. Đúng rồi, ta lộng cái official website, đem thông báo tuyển dụng tin tức cũng phóng lên rồi. Ngươi nói ta có phải hay không đi các đại chiêu sính ngôi cao cũng tuyên bố một chút?”</p>
+<p>Kiều Hoành đề nghị nói “Ở mặt bác thượng cũng phát một cái.”</p>
+<p>Tiêu Cẩu hưng phấn nắm tay “Được rồi! Trọng điểm giúp ngươi đem mỹ thuật bộ môn tổ kiến, tuy rằng có tiền sau có thể thỉnh họa sĩ, nhưng là trò chơi bên trong mỹ thuật tư liệu sống vẫn là đến công ty tới đem khống. Ha ha ha, chờ nhận người lúc sau, ta rốt cuộc có thể nói chính mình đây là công ty.”</p>
+<p>Kiều Hoành giội nước lã “Nói cái này còn quá sớm. Trước tắc điểm tiền cấp truyền thông, làm cho bọn họ viết điểm lời hay đi. Ta đoán lần này truyền thông đại diện tích xướng suy, khẳng định có công ty xã giao xuất lực.”</p>
+<p>Tiêu Cẩu xem thường đều mau phiên trời cao “Vừa thấy sẽ biết. Ai sẽ ở một cái trong trò chơi ngày khắc Kim Bảng còn xướng suy? Hiện tại bọn họ cũng xướng không nổi nữa, cấp điểm tiền thỉnh bọn họ viết điểm tốt, cũng coi như cho bọn hắn một cái dưới bậc thang.”</p>
+<p>Tuy rằng Tiêu Cẩu rất tưởng vẫn luôn vả mặt đánh tiếp, nhưng cùng trò chơi truyền thông đối nghịch cũng không có bao lớn chỗ tốt, về sau còn muốn mượn bọn họ tay tuyên truyền, lần này liền tính giải hòa.</p>
+<p>“Về sau chúng ta gặp được công kích khẳng định càng nhiều đi.” Kiều Hoành nhắc nhở nói, “Ngươi không nghĩ bị công ty lớn thu mua, về sau khẳng định muốn đối mặt bọn họ dư luận thế công.”</p>
+<p>Tiêu Cẩu tiếp tục trợn trắng mắt, đem xem thường đều phiên thành mắt cá ch·ế·t “Yên tâm, ta đã sớm làm tốt chuẩn bị tâm lý, ta tâm rất lớn, sẽ không bởi vì truyền thông xướng suy thuỷ quân hắc ta liền khó chịu.”</p>
+<p>Kiều Hoành nửa nói giỡn nói “Cái này ta biết, ngươi liền tâm đại cùng mặt hậu hai hạng ưu điểm.”</p>
+<p>Tiêu Cẩu chẳng những không có phản bác, còn mặt dày vô sỉ gật đầu “Không sai, nếu không phải như vậy, ta như thế nào có thể kéo ngươi thượng tặc thuyền?”</p>
+<p>Kiều Hoành nhún vai.</p>
+<p>．．．．．．．．．．．．．．．．</p>
+<p>Tuy rằng không xác định có thể tới bao nhiêu người, Tiêu Cẩu vẫn là lựa chọn Hoa Quốc lớn nhất phát sóng trực tiếp ngôi cao phát sóng trực tiếp, để tránh phát sóng trực tiếp tạp ch·ế·t, mất đi tuyên truyền hiệu quả.</p>
+<p>Tiêu Cẩu vốn dĩ muốn tìm cái mỹ nữ chủ bá đảm đương người chủ trì, nhưng là hắn hỏi một chút mỹ nữ chủ bá nhóm giá cả lúc sau, nghĩ thầm này đó mỹ nữ lớn lên còn không có Kiều Hoành đẹp, hắn còn không bằng dùng này đó tiền cấp Kiều Hoành nhiều mua điểm xa xỉ nguyên liệu nấu ăn.</p>
+<p>Vì thế Tiêu Cẩu mặt dày vô sỉ quyết định chính mình đương người chủ trì, làm Kiều Hoành đương khách quý.</p>
+<p>Kiều Hoành nhìn Tiêu Cẩu phát sóng trực tiếp lưu trình cùng lời kịch lúc sau, thập phần vô ngữ.</p>
+<p>Ngươi đây là ở phát sóng trực tiếp, vẫn là diễn hai người tướng thanh?</p>
+<p>Kiều Hoành thật sâu thở dài. Hắn tưởng, lần này phát sóng trực tiếp, hắn nhất định sẽ bị cảm kích ba cái bằng hữu cấp cười nhạo đi.</p>
+<p>Nhưng tên đã trên dây không thể không phát, Kiều Hoành cũng chỉ có thể bất đắc dĩ đồng ý. Rốt cuộc so với nói hai người tướng thanh, hắn càng chán ghét phối hợp người xa lạ đàm tiếu. Cho nên không thỉnh nữ chủ bá sự, cũng là hắn đồng ý.</p>
+<p>Tiêu Cẩu cùng Kiều Hoành 7 giờ 55 liền mở ra phát sóng trực tiếp điều chỉnh thử hình ảnh.</p>
+<p>Lúc này phòng live stream nhân số đã vượt qua hai mươi vạn. Hiển nhiên rất nhiều trò chơi người chơi nhìn đến trò chơi nội thông cáo, đều tới vì làm keo kiệt Hồng Cẩu xuất huyết nhiều mà phụng hiến chính mình một phần lực lượng.</p>
+<p>Tiêu Cẩu nhịn không được có điểm đau lòng, cầm lấy micro sau câu đầu tiên lời nói không phải tự giới thiệu, mà là “Ai, này đều hơn hai mươi viên cục đá, đủ trừu hai lần đơn trừu a.”</p>
+<p>Kiều Hoành cho Tiêu Cẩu một cái “Ta liền an tĩnh nhìn ngươi làm” ánh mắt.</p>
+<p>Nháy mắt làn đạn xoát bạo.</p>
+<p>“Ngọa tào! Nói chuyện chính là ai! Là Tiểu Cẩu vẫn là tiểu hồng!”</p>
+<p>“Từ từ, tiểu hồng cùng Tiểu Cẩu đã được công nhận xưng hô sao! Ta đánh cuộc một cây que cay, cái kia siêu cấp hoạt bát đáng yêu keo kiệt nhất định là Tiêu Cẩu!”</p>
+<p>“Ngọa tào ngọa tào, hai người đều hảo soái, bất đồng loại hình soái, một cái ánh mặt trời một cái lãnh khốc, ta mẹ nó là đang xem phim thần tượng sao! Hơn nữa này tra họa chất, này trang điểm, bọn họ cư nhiên vẫn là tố nhan ra kính!”</p>
+<p>“Thật là tố nhan, ta thấy được lãnh khốc soái ca trước mắt thanh hắc, còn có keo kiệt soái ca trên cằm đậu đậu. “</p>
+<p>“Cái gì keo kiệt soái ca?” Tiêu Cẩu nhìn lướt qua làn đạn, nói, “Bất quá các ngươi không đoán sai, ta là Tiêu Cẩu, hắn là các ngươi tâm tâm niệm niệm bạch tuộc họa sĩ đại thần Kiều Hoành.”</p>
+<p>Kiều Hoành khóe miệng run rẩy “Bạch tuộc?”</p>
+<p>Tiêu Cẩu đệ vẽ bản “Ngươi tới họa trương đồ, làm khán giả đánh giá một chút ngươi có phải hay không bạch tuộc.”</p>
+<p>Tiêu Cẩu lấy ra di động, điểm tiến trò chơi “Liền này trương, Noãn Noãn nhân khí tối cao tường vi nữ vương trang phục. Tới, chúng ta đem phát sóng trực tiếp hình ảnh cắt thành hai cái hình ảnh.”</p>
+<p>Nói, hình ảnh một nửa kia liền biến thành Kiều Hoành bản vẽ liên tiếp màn hình.</p>
+<p>Kiều Hoành thở dài, cầm lấy bút.</p>
+<p>“Từ từ, bọn họ có phải hay không khai gấp hai tốc?” Có người xem đặt câu hỏi.</p>
+<p>“Không, ngươi xem Tiêu Cẩu chân bắt chéo đong đưa biên độ.”</p>
+<p>“Ân…… Nếu không phải bên cạnh có cái trong chốc lát hoảng chân trong chốc lát ngáp Tiểu Cẩu cẩu, ta thật đúng là sẽ cho rằng bọn họ khai mau vào. Nói phát sóng trực tiếp có thể khai mau vào?”</p>
+<p>“Không không không, ta cho rằng chính là Kiều đại thần mở ra gấp hai tốc kỹ năng. Ngươi xem hắn tay, ngươi xem hắn họa đồ, cái kia tốc độ, mau đều mau ra tàn ảnh. Hơn nữa ta tưởng PS hoa lửa hoa văn, cư nhiên là hắn tay động họa?!”</p>
+<p>“Có lẽ đại thần cho rằng, chính mình tay động họa, so dán đồ mau? _( з” ∠)_”</p>
+<p>“Ta mắt thấy đường cong phác hoạ hảo, hoa văn bỏ thêm vào hảo, bắt đầu tô màu…… Ngọa tào đã họa hảo!”</p>
+<p>“Còn không có họa hảo, đại thần còn ở tu chi tiết. Bất quá đối với ta chờ phàm nhân mà nói, như vậy đồ đã là thành phẩm……”</p>
+<p>“Ta hiện tại hoàn toàn tin, hai người kia phòng làm việc, sở hữu về mỹ thuật sự, đều là Kiều đại thần một người hoàn thành. Trách không được Tiểu Cẩu cẩu nói Kiều đại thần là bạch tuộc thành tinh.”</p>
+<p>“Kiều đại thần là bạch tuộc thành tinh, Tiêu Cẩu cũng hảo không đến nào đi. Sở hữu trình tự đều là hắn một người làm. Tuy rằng bọn họ khả năng tuy rằng là hiện tại thượng giá, làm trò chơi đã hoa thời gian rất lâu đi.”</p>
+<p>“Ta tưởng cũng là, trước đài mười phút, đài sau mười năm công. Bất quá Kiều đại thần tay…… Ngô, hắn đã họa hảo!”</p>
+<p>“Kiều Hoành a, ta như thế nào cảm thấy này bộ quần áo cùng trong trò chơi không giống nhau?” Tiêu Cẩu nhạy bén nói.</p>
+<p>Kiều Hoành chỉ một chút váy bên cạnh “Đột nhiên có một chút linh cảm, trường thi phát huy một chút. Màu đỏ thẫm váy bên cạnh thêm một chút ám kim sắc đường viền hoa không phải rất đẹp sao?”</p>
+<p>Thẩm mỹ tai nạn Tiêu Cẩu nói “Phải không? Ta cảm thấy đều giống nhau đi?”</p>
+<p>Làn đạn spam.</p>
+<p>“Không không không, ta cảm thấy thật sự phi thường đẹp, vẽ rồng điểm mắt chi bút! Tuy rằng phía trước cũng rất đẹp, nhưng là cái này hảo đẹp đẽ quý giá cảm giác!”</p>
+<p>“Ngọa tào, có thể hay không đổi mới? Hoặc là gia nhập nhuộm màu? Ta xoát tư liệu sống xoát đến bạo! Thật mẹ nó đẹp!”</p>
+<p>“Nhìn xem, nhân gia không đơn thuần chỉ là vẽ, còn muốn trường thi phát huy, mấu chốt hắn còn lớn lên soái! Hơn nữa ngươi xem kia chân dài, cùng áo thun bụng bình thản bộ dáng, hắn dáng người cũng nhất định thực không tồi!”</p>
+<p>“Làm Kiều đại thần đứng dậy đi hai vòng a, ta cảm thấy Kiều đại thần khẳng định có 1 mét tám trở lên, nói không chừng còn có sáu khối cơ bụng!”</p>
+<p>“Nói như thế nào vẽ nói đến cơ bụng. Kiều Hoành, đem quần áo vén lên tới tú một chút ngươi cơ bụng?” Tiêu Cẩu làm mặt quỷ.</p>
+<p>Kiều Hoành trắng Tiêu Cẩu liếc mắt một cái “Ngươi có thể tú chính mình.”</p>
+<p>Tiêu Cẩu sờ sờ chính mình còn không có hoàn toàn bình thản bụng nhỏ “Ta này không phải còn không có luyện ra sao? Tú một chút tú một chút. Ngươi xem làn đạn đều spam.”</p>
+<p>“Ta cự tuyệt.” Kiều Hoành nhéo một chút nắm tay, “Ngươi hiện tại tất cả tại trường thi phát huy a, hoàn toàn không dựa theo ngươi phía trước cho ta lời kịch. Ngươi là rửng mỡ sao?”</p>
+<p>Tiêu Cẩu làm ra một bộ sợ wá thần sắc, nói “Này không phải thấy muốn phát cục đá càng ngày càng nhiều, trong lòng kích động sao?”</p>
+<p>Kiều Hoành tiếp tục niết nắm tay “Là kích động vẫn là đau lòng? Ngươi không phải nên biểu diễn trừu quần áo sao?”</p>
+<p>Tiêu Cẩu tiếp tục làm ra một bộ sợ wá thần sắc, nói “Được rồi, ha ha ha, thực xin lỗi ha, Kiều đại thần muốn thẹn quá thành giận, chúng ta liền không đùa hắn. Hiện tại bắt đầu biểu diễn trừu quần áo. Ta tin tưởng vững chắc ta vận khí nhất định thực không tồi. Hiện tại, ta có kim cương trì cùng đồng vàng trì các mười trương mười trừu khoán, đương đương đương, ta muốn bắt đầu trừu tạp.”</p>
+<p>Kiều Hoành tức giận nói “Gom đủ một bộ năm sao trang phục, toàn phục phát một trương kim cương trì mười trừu khoán.”</p>
+<p>Tiêu Cẩu dại ra “…… Không ngươi như thế nào làm buôn bán!”</p>
+<p>Kiều Hoành cười lạnh “Xem ngươi khó chịu ta liền cao hứng. Việc này liền như vậy định rồi. Chẳng lẽ ta nói chuyện còn không tính toán gì hết?”</p>
+<p>Tiêu Cẩu khóc tang mặt nói “Thành, ngài lão nói đương nhiên tính! Ngài mới là lão đại, mười trừu liền mười trừu, dù sao ta mặt như vậy hắc, khẳng định trừu không đến.”</p>
+<p>“Ngọa tào, ta thấy thế nào ra cơ tình, này nhất định không phải ta mắt hủ thấy người gay!”</p>
+<p>“Có lẽ chỉ là bọn hắn cảm tình thật tốt quá. Bọn họ ở chung thực tự nhiên, còn cùng nhau ra tới gây dựng sự nghiệp, lẫn nhau nói giỡn thực bình thường. Không phải cố ý bán hủ.”</p>
+<p>“Thực xin lỗi, ta chưa nói bọn họ bán hủ. Bọn họ đích xác ở chung thực tự nhiên, cảm tình thực hảo. Bất quá Kiều đại thần thật hào phóng, trực tiếp chính là mười trừu khoán, xem Tiêu Cẩu kia thần sắc, quả thực cùng cắt hắn thịt dường như.”</p>
+<p>“Đúng đúng đúng đúng, ta đã điên cuồng chụp hình làm biểu tình bao. Cười ch·ế·t ta, hiện tại Tiêu Cẩu điên cuồng cầu nguyện chính mình tay hắc, liền không gặp keo kiệt moi đến như vậy đúng lý hợp tình, hắn đều không sợ người chơi sinh khí?”</p>
+<p>“Ta chẳng những không tức giận, còn chuẩn bị đem mặt khác trò chơi hiệp hội thân hữu kéo tới thấu nhân số, bức bách keo kiệt Tiểu Cẩu cẩu phát cục đá, đau lòng ch·ế·t hắn.”</p>
+<p>“Hiện tại ta đã ở cầu nguyện, Tiêu Cẩu một phát mười liền ra một bộ, như vậy chúng ta liền có một trăm trừu ha ha ha ha ha.”</p>
+<p>“Ngọa tào, đệ nhất phát liền xuất sắc, hai cái năm sao bộ kiện!”</p>
+<p>“Đệ nhị phát lại xuất sắc, một cái năm sao bộ kiện, vẫn là cùng phía trước cùng bộ, Tiêu Cẩu thần sắc là thực hoảng loạn thực đáng thương.”</p>
+<p>“Phốc, đệ tam phát mười liền gom đủ một bộ năm sao. Mười liền trừu đến tay.”</p>
+<p>“Hắn không trừu ha ha ha ha ha, nói muốn ở trên tay mạt hôi lại trừu.”</p>
+<p>“Xem Kiều đại thần cười đến hảo vui vẻ. Liếm liếm liếm, Kiều đại thần vì cái gì như vậy soái, mặt lạnh rất soái, phúng cười rất soái, hiện tại vui sướng khi người gặp họa cũng rất soái!”</p>
+<p>“Bất quá Kiều đại thần cũng là người sáng lập chi nhất a, hắn liền không lo lắng trò chơi mệt sao?”</p>
+<p>“Mệt là không có khả năng mệt, nếu không có khả năng mệt, vậy chỉ có thể nhìn xem tiểu đồng bọn thịt đau thần sắc, mới có thể sung sướng một chút.”</p>
+<p>“Sung sướng.jpg.”</p>
+<p>“Tiêu Cẩu lại bắt đầu trừu tạp.”</p>
+<p>“Sách, thứ 4 phát rút cạn, xem Tiêu Cẩu cười đến ngã trước ngã sau bộ dáng, ta thật có thể lý giải Kiều đại thần muốn khi dễ tâm tình của hắn.”</p>
+<p>“Chẳng những muốn khi dễ, còn muốn khi dễ khóc.jpg.”</p>
+<p>“Đừng lái xe, thứ 5 phát…… Thải quang!”</p>
+<p>“Thứ 6 phát không có thải quang…… Ai, ta còn là lần đầu tiên như vậy bức thiết xem người phơi tạp, hồi hồi xuất sắc quang.”</p>
+<p>“Thứ 7 phát màu, ta lặc cái đi hắn cái gì vận khí, lại là cùng thượng vừa kéo cùng cái trang phục. Đây là cái gì xác suất?!”</p>
+<p>“Thứ 8 phát không. Tiêu Cẩu cố lên a!”</p>
+<p>Tiêu Cẩu lau một phen mặt “Uy uy, ngươi có phải hay không điều xác suất? Ta cảm thấy này ra hóa xác suất không khoa học, có lẽ ra bug.”</p>
+<p>Kiều Hoành buông tay “Nói giống như viết trình tự người là ta dường như.”</p>
+<p>Tác giả có lời muốn nói Cảm tạ hương thảo hiểu nhau ném 1 cái nước cạn bom</p>
+<p>Tra tra trà ném 2 cái địa lôi</p>
+<p>Hiện Âu ném 2 cái địa lôi</p>
+<p>Yên yểm bích lạc ném 1 cái địa lôi</p>
+<p>Từ cá ném 1 cái địa lôi</p>
+<p>Đến tình đến thánh ném 1 cái địa lôi</p>
+<p>Dỗi thái thái ném 1 cái địa lôi</p>
+<p>★ mễ di ☆ ném 1 cái địa lôi</p>
+<p>Một con thuộc cẩu miêu ném 1 cái địa lôi</p>
+<p>Hải tư vũ ném 1 cái địa lôi</p>
+<p>Cùng với sở hữu tân lão người đọc cổ động.</p>
+<p>Hôm nay ta như cũ là không có bổ sung hạt thông một ngày đâu _( з” ∠)_.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "manh-nhat-tro-choi-che-tac-nhan";
+const NOVEL_TITLE = "Mạnh nhất trò chơi chế tác nhân";
+const CHAPTER_TITLE = "Chương 11";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

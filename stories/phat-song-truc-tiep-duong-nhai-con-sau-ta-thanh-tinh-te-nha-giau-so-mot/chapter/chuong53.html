@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 53</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Phát sóng trực tiếp dưỡng nhãi con sau ta thành tinh tế nhà giàu số một
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 53</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong52.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong54.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Hôm nay, có một cái đại nhân vật muốn tới Tinh Minh Trung Tâm trường quân đội báo danh.</p>
+<p>Đại nhân vật. Đây là đối cái kia học sinh bản thân đánh giá. Tức, cái kia học sinh bản nhân liền rất ghê gớm. Ngay cả năm đó Arthur thân vương nhập học, đều không tính là đại nhân vật, chỉ có thể nói “Bối cảnh thâm hậu”.</p>
+<p>Tin tức này đã truyền khắp toàn bộ trường quân đội, không hiểu rõ người sôi nổi tò mò dò hỏi, đến tột cùng là thế nào người, có thể bị xưng là đại nhân vật.</p>
+<p>“Mang ta làm thực nghiệm học trưởng nguyên bản trừ bỏ thực nghiệm cái gì đều không quan tâm, 2 ngày trước cư nhiên phá lệ nói muốn nghỉ đi vây xem đại nhân vật?!”</p>
+<p>“Chiến đấu hệ bọn học sinh đã tập thể tự học, lão sư toàn chạy.”</p>
+<p>“Tự học cái rắm, bọn họ cũng toàn chạy.”</p>
+<p>“Liền tính là đại nhân vật nhập học, bọn họ này phản ánh cũng quá mức sao? Liền tính gặp được cái kia đại nhân vật lại như thế nào? Chẳng lẽ muốn học phim thần tượng nam nữ chủ, xông lên đi ăn vạ?”</p>
+<p>“Linh thú đào tạo hệ lão sư cũng toàn điên rồi. Có miệng đầy mắng, có tuyệt vọng suy sụp, có mừng rỡ như điên, phảng phất đại hình kịch nói hiện trường.”</p>
+<p>“Các ngươi linh thú đào tạo hệ như thế nào nhiều chuyện như vậy? Nghe nói các ngươi năm nay sách giáo khoa hiện tại đều còn không có định ra tới? Đều khai giảng.”</p>
+<p>“Này trận trượng cũng quá lớn, theo tiểu đạo tin tức, đặc cảnh đều xuyên y phục thường tới giữ gìn vườn trường trật tự.”</p>
+<p>“Cảm kích người yên lặng nói cho ngươi, kia không phải đặc cảnh, đó là thân vương trực thuộc bộ đội đặc biệt hành động chi đội, bên trong thanh một lưu S cấp dị năng giả.”</p>
+<p>“Thân vương trực thuộc bộ đội xuất động? Là Arthur thân vương sao? Chẳng lẽ là Arthur thân vương một lần nữa nhập học?!”</p>
+<p>“Có khả năng. Có lẽ là Arthur thân vương cho rằng danh dự tiến sĩ không thơm, quyết định trở về phấn đấu học hành mấy cái tiến sĩ học vị?”</p>
+<p>“Trách không được linh thú đào tạo hệ có chút lão sư như tang khảo phê, bọn họ là hội Nguyên Lão kia nhất phái đi?”</p>
+<p>Ăn dưa quần chúng nghị luận sôi nổi, não bổ nội dung càng ngày càng thái quá. Mà chân chính cảm kích nhân sĩ tắc sôi nổi dũng mãnh vào thẩm mỹ viện xử lý bề ngoài, còn có người thật sự làm tốt ăn vạ kế hoạch.</p>
+<p>Nếu, bọn họ chỉ là nói nếu nói. Nếu tiểu Linh Thú Sư là che giấu tung tích tránh đi đại chúng vây xem, một mình tới trường học báo danh, bọn họ đích xác có thể đi chạm vào cái sứ gì đó.</p>
+<p>Tiểu Linh Thú Sư không am hiểu cùng người ở chung, bọn họ có thể biến thành linh thú ăn vạ sao.</p>
+<p>Bọn họ chỉ cần hướng tiểu Linh Thú Sư dưới lòng bàn chân một nhảy, lại hướng trên mặt đất như vậy một nằm, đem bụng bụng như vậy một lộ, nỗ lực ngửa đầu dùng ngập nước mắt to đáng thương hề hề nhiều nhìn tiểu Linh Thú Sư vài lần, tiểu Linh Thú Sư khẳng định sẽ lấy ra đồ ăn đầu uy bọn họ đi?</p>
+<p>Trên đường những cái đó lưu lạc động vật chính là như vậy ăn vạ!</p>
+<p>Đừng nói trường quân đội linh thú học sinh linh thú lão sư, tham dự y phục thường hộ vệ nhiệm vụ đặc biệt hành động chi đội quân nhân nhóm cũng sôi nổi châu đầu ghé tai.</p>
+<p>Nghe nói tiểu Linh Thú Sư chịu qua nhân loại thương tổn cho nên đặc biệt chán ghét nhân loại, bọn họ có phải hay không nên tập thể biến thành lông xù xù đi nghênh đón tiểu Linh Thú Sư?</p>
+<p>“Ngươi nói đi, Đại Đàm?” Thôi Lê hỏi.</p>
+<p>Dưới mắt thanh hắc Đàm Thần Hi lãnh đạm liếc cùng hắn cùng nhau ra nhiệm vụ bạn cùng phòng liếc mắt một cái, không nghĩ nói chuyện.</p>
+<p>Hắn hiện tại đang đứng ở đột phá giới hạn thời khắc mấu chốt, ban đêm thường xuyên ngủ ngủ dị năng bùng nổ đột nhiên bừng tỉnh, giấc ngủ vốn là không đủ. Này chỉ cáo Tây Tạng bạn cùng phòng tối hôm qua còn bởi vì muốn gặp đến tiểu Linh Thú Sư dị thường hưng phấn, hơn nửa đêm nghiến răng nói nói mớ thậm chí ngao ô ngao ô quỷ kêu.</p>
+<p>Hắn đành phải hơn nửa đêm đem cáo Tây Tạng bạn cùng phòng tấu tỉnh, làm hắn “Biến thành người” hoặc là “Cút đi” 2 chọn 1, mới ở phía sau nửa đêm miễn cưỡng ngủ.</p>
+<p>Đàm Thần Hi cuối cùng đã biết, vì cái gì quân doanh có cái không quy định thành văn, dị năng giả có thể biến thành linh thú lúc sau, bạn cùng phòng cũng sẽ đổi thành linh thú.</p>
+<p>Đây là làm đám kia các linh thú cho nhau thương tổn, đừng lan đến người khác đi?!</p>
+<p>Phía trước Thôi Lê biến thành linh thú lúc sau, lo lắng Đàm gia sẽ hướng hắn ra tay, chuyên môn hướng mặt trên xin không đổi ký túc xá, Đàm Thần Hi lúc ấy còn thực cảm động.</p>
+<p>Hiện tại? Hắn cảm động đã toàn uy khối vuông mặt mị mị nhãn cáo Tây Tạng.</p>
+<p>“Ngươi nói đi ngươi nói đi ngươi nói đi?” Thôi Lê bám riết không tha hỏi.</p>
+<p>“Thỉnh ngươi hảo hảo đứng gác, tiểu tâm bị đội trưởng tước.” Đàm Thần Hi hữu khí vô lực nói.</p>
+<p>Thôi Lê nói “Đội trưởng chính mình đều kìm nén không được, làm sao nói chúng ta?”</p>
+<p>Đàm Thần Hi theo Thôi Lê tầm mắt triều đội trưởng nhìn lại, phát hiện bọn họ đội trưởng cũng đang hỏi bên cạnh phó đội trưởng, muốn hay không dứt khoát toàn đội có thể biến linh thú toàn biến linh thú, đường hẻm hoan nghênh tiểu Linh Thú Sư nhập học.</p>
+<p>Đàm Thần Hi trong lòng nảy lên một trận bi ai. Chúng ta là người mặc y phục thường, lẫn vào trong đám người chấp hành bảo hộ nhiệm vụ. Nếu toàn biến linh thú, còn có người mặc y phục thường ẩn nấp bảo hộ tất yếu sao?</p>
+<p>Đàm Thần Hi đầu đau quá. Tưởng tượng đến chính mình cũng muốn biến linh thú, đầu của hắn càng đau.</p>
+<p>Hôm nay phân linh thú sợ hãi chứng gấp bội dâng tặng.jpg.</p>
+<p>Minh Hữu thay Arthur cho hắn quần áo, cưỡi thân vương chuyên dụng “Bá Thiên Hổ” hào thuyền đi trước Thủ Đô tinh.</p>
+<p>Hắn hiện tại cả người ghé vào ngắm cảnh toàn cảnh cửa kính thượng, giống cái lần đầu tiên vào thành đồ nhà quê dường như, đối với Thủ Đô tinh nhìn xuống cảnh sắc không ngừng hô to gọi nhỏ.</p>
+<p>Nói lên Bá Thiên Hổ, tên này giống như có điểm quen tai? Minh Hữu nghĩ nghĩ, đối đối diện bên người một vòng lông xù xù các thuộc hạ hạ mệnh lệnh Arthur nói “Đại Hắc, ta nhớ ra rồi, Bá Thiên Hổ ở ta kiếp trước địa cầu, là một cái người máy vai ác tổ chức tên.”</p>
+<p>Chính nói chính sự Arthur “……” Này tiểu thanh niên, thật là mỗi ngày đều sẽ tâm huyết dâng trào nói một ít làm người muốn cắn chết hắn nói.</p>
+<p>“Ngươi đem cái kia chuyện xưa ký lục xuống dưới, nếu thú vị, ta liền đem nó cải biên thành phù hợp chúng ta thế giới quan tác phẩm. Chúc mừng ngươi, ngươi quỹ hội từ thiện lại có một bút trường kỳ thu vào tiến trướng.” Arthur tức giận nói, “Đừng bò pha lê, lại đây.”</p>
+<p>Minh Hữu dùng cổ tay áo xoa xoa chính mình bò hoa cửa kính, đi đến Đại Bạch hùng trong lòng ngực ngồi xuống.</p>
+<p>Ngồi ngay ngắn ở trên thảm Herman hùng lập tức điều chỉnh dáng ngồi, biến thành một cái thoải mái gấu trắng sô pha.</p>
+<p>Minh Hữu ngẩng đầu, biểu tình đơn thuần lại ngoan ngoãn. Đại Hắc ngươi mời nói, ta ngồi ở gấu trắng trên sô pha nghe.</p>
+<p>Arthur “…… Có sô pha, ngươi ngồi cái gì gấu trắng?”</p>
+<p>Minh Hữu sau này một dựa, đỉnh đầu Đại Bạch hùng cằm, đôi tay đỡ Đại Bạch hùng hai cẳng tay, ngồi đến hình chữ X, giống cái sơn đại vương “Đại Bạch so sô pha thoải mái.”</p>
+<p>Arthur “……” Tính, bất hòa này tiểu thanh niên so đo. Muốn cùng xuẩn Hữu so đo, hắn sớm hay muộn bị tức giận đến tuổi xuân chết sớm.</p>
+<p>“Đợi chút chúng ta mang theo ngươi trực tiếp đi linh thú nghiên cứu học viện tìm lão Neil, cũng chính là ngươi lão Lộc lão sư.” Arthur nói, “Trên đường khẳng định có rất nhiều người vây xem, ngươi ngoan ngoãn đi theo ta, nếu sợ hãi liền mang lên thực tế ảo mắt kính, thực tế ảo mắt kính sẽ đem chung quanh người toàn bộ thay đổi thành ngươi thích nhất lông xù xù.”</p>
+<p>Minh Hữu đôi tay cử qua đỉnh đầu, nỗ lực lướt qua Đại Bạch hùng đầu, so cái “O”.</p>
+<p>Arthur “……” Lần đầu tiên vào thành đồ nhà quê xuẩn Hữu hưng phấn quá độ. Hy vọng đợi chút hắn nhìn đến rất nhiều rất nhiều nhân loại, còn có thể bảo trì hiện tại hưng phấn trạng thái.</p>
+<p>Tiểu Thiên hình chiếu xuất hiện, giáo Minh Hữu sử dụng thực tế ảo mắt kính.</p>
+<p>Minh Hữu chỉ cần ở huyệt Thái Dương thượng sờ một chút, liền có một cái siêu cấp huyễn khốc toàn bao trùm mắt kính đem hắn đôi mắt hoàn toàn che khuất.</p>
+<p>Tiểu Thiên “Không cần lo lắng. Ta sẽ thí nghiệm ngươi tim đập tốc độ cùng tình cảm dao động, tự động thế ngươi điều tiết thực tế ảo mắt kính (づ￣3￣)づ.”</p>
+<p>“Cảm ơn Tiểu Thiên.” Minh Hữu duỗi tay, chọc một chút Tiểu Thiên toát ra tới nhan văn tự biểu tình.</p>
+<p>“(づ￣3￣)づ” biểu tình bị Minh Hữu một chọc, biến thành màu sắc rực rỡ bọt xà phòng phao.</p>
+<p>Bọt xà phòng phao đột nhiên bành trướng, về phía trước một phi, toàn hồ ở Arthur trên mặt.</p>
+<p>Arthur “???” Cái này AI có phải hay không muốn tạo phản?</p>
+<p>Quả nhiên vẫn là quyên đi.</p>
+<p>“Tiểu Thiên đã có thể thí nghiệm tình cảm năng lượng dao động?” Đại Lam hải cẩu vội nói sang chuyện khác, miễn cho Arthur trực tiếp đem Tiểu Thiên cấp hủy đi, “Phía trước thực nghiệm thành công?”</p>
+<p>Tiểu Thiên hình chiếu một cái thực tế ảo ngón tay cái sau nói “Đúng vậy, hiện tại là thí nghiệm 1.0 phiên bản, ta sẽ nỗ lực cấp phiên bản thăng cấp.”</p>
+<p>Arthur đem che khuất hắn đôi mắt thực tế ảo màu sắc rực rỡ bọt xà phòng phao đẩy ra “Xuẩn Hữu, còn có cái gì muốn hỏi sao?”</p>
+<p>Minh Hữu dùng sức gật đầu “Có có có, có rất nhiều.”</p>
+<p>Arthur có điểm hối hận chính mình lệ thường vừa hỏi.</p>
+<p>Minh Hữu “Các ngươi đều sẽ cùng ta cùng đi trường học sao? Linh thú không phải cơ mật sao?”</p>
+<p>Arthur “Tinh Minh trường quân đội Trung Ương vườn trường toàn phong bế, người ngoài không thể tiến giáo. Trường học có chuyên môn bồi dưỡng dị năng giả chiến đấu hệ, chiến đấu hệ rất nhiều thiên tài tiến giáo phía trước là có thể linh thú hóa, cho nên học sinh cùng giáo viên đều biết linh thú sự.”</p>
+<p>Minh Hữu “Nguyên lai biết linh thú người nhiều như vậy sao? Kia ta phòng live stream chẳng phải là cũng có rất nhiều người đang xem? Có thượng vạn người xem sao?”</p>
+<p>Arthur “Lớn mật điểm, đơn vị thỉnh lấy trăm triệu tính toán.”</p>
+<p>Minh Hữu mau hôn mê. Phòng live stream người xem nhiều như vậy?!</p>
+<p>Arthur nhướng mày. Tinh Minh là một cái tinh tế liên minh a, xuẩn Hữu kiến thức như thế nào còn cùng cái cư trú liền tinh tế di dân đều làm không được nguyên thủy tinh cầu cư dân dường như.</p>
+<p>Thiên Lam Tinh giáo dục quả nhiên rất có vấn đề.</p>
+<p>“Còn có cái gì vấn đề sao?” Arthur miệng tiện lại hỏi một câu.</p>
+<p>Sau đó không có gì bất ngờ xảy ra, hắn lại được đến một cái có rất nhiều dấu chấm hỏi Minh Hữu tiểu bằng hữu. Này một đường, liền ở Minh Hữu không ngừng ríu rít hỏi chuyện trung vượt qua.</p>
+<p>Arthur bị dò hỏi đến phiền, bắt đầu nhắm mắt lại điểm binh điểm tướng, trừu cấp dưới ra tới trả lời vấn đề.</p>
+<p>Arthur cùng hắn anh hùng các thuộc hạ hợp mưu hợp sức, rốt cuộc đem Minh  dấu chấm hỏi  Hữu tiểu bằng hữu vấn đề toàn bộ trả lời xong.</p>
+<p>Minh Hữu cảm thấy mỹ mãn, Arthur cùng mặt khác lông xù xù tắc toàn nằm sấp xuống.</p>
+<p>Này tiểu thanh niên, dấu chấm hỏi cũng quá nhiều, hơn nữa tất cả đều là thường thức vấn đề, làm người lại bất đắc dĩ lại phẫn nộ —— bất đắc dĩ là đối Minh Hữu, phẫn nộ tự nhiên là đối Thiên Lam Tinh cùng Đàm gia.</p>
+<p>Minh Hữu liên tục xua tay “Không không không, ta tưởng Thiên Lam Tinh những người khác khẳng định không có ta như vậy vô tri. Ta không thể rời đi trường học, cũng không thể lên mạng, liền khóa ngoại thư cũng chưa chỗ nào bán, thu hoạch tri thức con đường chỉ có sách giáo khoa. Bọn họ cùng ta không giống nhau.”</p>
+<p>“Là là là, Thiên Lam Tinh chỉ có ngươi là cái tiểu thiểu năng trí tuệ.” Arthur đem Minh Hữu từ Đại Bạch hùng trên sô pha kéo tới, “Sửa sang lại một chút dung nhan, mau đến mục đích địa.”</p>
+<p>Minh Hữu cứng đờ.</p>
+<p>Arthur vỗ vỗ Minh Hữu bả vai “Đừng lo lắng, ta nắm ngươi, liền tính ngươi đầu phóng không, ta cũng sẽ không làm ngươi té ngã.”</p>
+<p>“Té ngã còn có ngươi cộng sự các linh thú cho ngươi đương cái đệm.” Arthur nhìn lướt qua chính mình các thuộc hạ, bổ sung nói.</p>
+<p>“Lo lắng cái gì, chúng ta che chở ngươi.”</p>
+<p>“Tiểu Hữu, tỉnh lại!”</p>
+<p>“Chúng ta đã trước tiên thanh tràng, sẽ không có không có mắt người thấu đi lên.”</p>
+<p>“Tiểu Hữu, xin yên tâm dựa vào ta.”</p>
+<p>“Ai khi dễ ngươi ta dùng lửa đốt hắn!”</p>
+<p>Các linh thú ngươi một lời ta một ngữ, lông xù xù đầu to ở Minh Hữu trên người cọ cọ đi, đem Arthur mới vừa giúp Minh Hữu sửa sang lại tốt quần áo lại cọ rối loạn.</p>
+<p>Arthur xoa xoa huyệt Thái Dương, búng tay một cái, thuyền trần nhà vươn máy móc cánh tay, đem nhà mình linh thú các thuộc hạ toàn bộ giam cầm trụ, sau đó một lần nữa cấp Minh Hữu sửa sang lại quần áo “Các ngươi liền tính giúp không được gì, cũng thỉnh không cần quấy rối.”</p>
+<p>Tâm mệt.</p>
+<p>Trước kia đều là cấp dưới cho hắn thu thập cục diện rối rắm. Thật là gậy ông đập lưng ông, không phải không báo, thời điểm chưa tới.</p>
+<p>Bá Thiên Hổ hào đáp xuống ở Tinh Minh Trung Tâm trường quân đội chuyên dụng sân bay thượng, hiệu trưởng đã ở sân bay xin đợi lâu ngày.</p>
+<p>Nhưng đứng ở nghênh đón người chính giữa đều không phải là hiệu trưởng, mà là Arthur hắn ca.</p>
+<p>Arthur đi ra phi hành thuyền cửa khoang thời điểm giật nảy mình. Hắn ca như thế nào bỏ xuống chính vụ, chạy nơi này?</p>
+<p>Odrich hoàng đế bệ hạ trước đối Arthur Điểm Điểm đầu, sau đó chân dài một cái bước nhanh, lướt qua hắn tinh tế anh hùng đệ đệ, cùng với tinh tế anh hùng lông xù xù, đi hướng bị lông xù xù nhóm kín mít chắn phía sau Minh Hữu.</p>
+<p>“Tiểu Hữu, vất vả.” Odrich hoàng đế bệ hạ có một đầu so vàng còn xán lạn tóc, tuy rằng hắn ngũ quan cùng Arthur có tương tự chỗ, nhưng chỉ xem tóc cùng ánh mắt, hắn cùng Arthur kém đến quá xa, trách không được Arthur vẫn là tiểu hắc miêu thời điểm sẽ hiểu lầm chính mình là nhặt được rời nhà trốn đi.</p>
+<p>“Không vất vả, không vất vả.” Minh Hữu chính khẩn trương thời điểm, Tiểu Thiên tự động giúp hắn đem thực tế ảo mắt kính mang lên, trước mắt tràn ngập vương chi khí phách hoàng đế bệ hạ “Phanh” một chút biến thành một con Đại Kim sư tử.</p>
+<p>Đại Kim sư tử nâng lên tiền trảo trảo, tới, nắm trảo.</p>
+<p>Minh Hữu “……”</p>
+<p>Hắn biểu tình vặn vẹo một chút, bay nhanh nắm lấy đại sư tử trảo trảo.</p>
+<p>Tuy rằng xúc cảm như cũ là nhân loại tay, nhưng thực tế ảo hình thức đại sư tử nắm trảo thật sự hảo đáng yêu. Minh Hữu ở trong lòng yên lặng niệm.</p>
+<p>Odrich hoàng đế bệ hạ nhìn đến Minh Hữu trên mặt đột nhiên xuất hiện thực tế ảo mắt kính sửng sốt một chút, sau đó bất đắc dĩ nói “Tiểu Thiên cho ta lộng cái cái gì hình tượng?”</p>
+<p>“Đại Kim sư tử.” Arthur một con mắt đồng tử chỗ phát ra rất nhỏ hồng quang, nửa bên tầm nhìn biến thành Minh Hữu tầm nhìn.</p>
+<p>Hắn cùng hắn linh thú cấp dưới cũng mang theo thực tế ảo mắt kính, bất quá là kính sát tròng kích cỡ thực tế ảo mắt kính.</p>
+<p>Bọn họ sở dĩ không có cấp Minh Hữu dùng loại này công nghệ cao, là bởi vì Minh Hữu thực tế ảo mắt kính bị chính hắn hủy đi làm bừa quá, bên trong gia tăng rồi rất nhiều Linh Thú Sư dùng đến số liệu, tỷ như tình cảm dao động thí nghiệm, linh thú thân thể số liệu thí nghiệm từ từ.</p>
+<p>Đương nhiên, này đó thí nghiệm sẽ không xâm phạm **. Chỉ có linh thú chính mình đồng ý, sau đó đem thăm châm chọc linh thú trên người, Linh Thú Sư chuyên dụng công năng mới có thể khởi động.</p>
+<p>Tuy rằng Minh Hữu vỗ bộ ngực nói chính mình cải tạo tuyệt đối không có vấn đề, nhưng Arthur như cũ thực lo lắng Minh Hữu ma sửa phiên bản thực tế ảo mắt kính sẽ bạo rớt. Dùng bao trùm thức thực tế ảo mắt kính, nếu xuất hiện vấn đề, hắn có thể càng nhanh chóng xử lý, càng an toàn một ít. Liền tính Tiểu Thiên cho hắn đã phát một đống lớn ẩn hình thực tế ảo mắt kính thực an toàn khoa học văn hiến, hắn cũng không thèm nhìn.</p>
+<p>Bất quá Minh Hữu chính mình nhưng thật ra thực thích cái này bao trùm thức thực tế ảo mắt kính. Tuy rằng kính sát tròng khái niệm nhưng có khoa học viễn tưởng cảm, nhưng toàn bao trùm thực tế ảo mắt kính càng giống hắn kiếp trước xem qua các loại khoa học viễn tưởng động họa hình tượng, cảm giác phi thường huyễn khốc.</p>
+<p>“Kia còn hảo.” Odrich hoàng đế bệ hạ tiếp thu tới rồi Tiểu Thiên truyền tới số liệu, hắn nửa cái tầm nhìn cũng biến thành Minh Hữu thực tế ảo mắt kính tầm nhìn.</p>
+<p>Nghe nói Minh Hữu cấp cái này thực tế ảo mắt kính gia tăng rồi linh thú đào tạo tương quan nội dung, Odrich hoàng đế bệ hạ rất tò mò, này đó công năng đến tột cùng sẽ nhìn đến cái gì thú vị đồ vật.</p>
+<p>Minh Hữu sờ sờ trên mặt mắt kính, nguyên lai ẩn hình thực tế ảo hình chiếu kính sát tròng là Tinh Minh tiêu xứng? Thật sự hảo có tương lai cảm a.</p>
+<p>【 hệ thống Ta so với bọn hắn cao cấp. 】</p>
+<p>Minh Hữu “……”</p>
+<p>Nói tốt không có tự mình ý thức đâu? Vì cái gì tại đây loại râu ria sự thượng, hệ thống sẽ ra tới phản bác? Đây cũng là lập trình viên cấy vào công năng sao? Cái này lập trình viên có phải hay không quá mức hảo cường?</p>
+<p>Odrich hoàng đế bệ hạ đều tới trấn bãi, ở đây tưởng quấy rối người trảo trảo rụt trở về.</p>
+<p>Kỳ thật bọn họ ở nhìn đến Arthur thân vương điện hạ hình người xuất hiện thời điểm, cũng đã tưởng quay đầu chạy trốn.</p>
+<p>Arthur thân vương đều từ linh thú biến thành người, vậy thuyết minh thân vương điện hạ thương đã hảo đến không sai biệt lắm. Bọn họ lại giãy giụa còn có ích lợi gì?</p>
+<p>Arthur thân vương ở còn không có bất luận cái gì danh vọng thời điểm, là có thể dựa vào cường đại cá nhân mị lực, từ bọn họ bên trong phân hoá ra một cổ đáng tin tử trung đội ngũ đi theo hắn làm. Hiện tại Arthur thân vương là Tinh Minh hoàn toàn xứng đáng đệ nhất anh hùng, danh vọng không tiền khoáng hậu, còn có bao nhiêu người dám cùng hắn đối nghịch?</p>
+<p>Huống chi……</p>
+<p>Bọn họ tầm mắt đầu hướng hoàng thất hai huynh đệ trung gian, so với hắn hai lùn nửa cái đầu tiểu thanh niên —— cái kia oanh động Tinh Minh nội võng, lấy sức của một người thay đổi linh thú giới giáo dục thiên tài, truyền thuyết kế thừa một chỉnh viên tinh cầu di sản Linh Thú Sư Minh Hữu.</p>
+<p>Arthur thân vương có thể lấy hình người đứng ở chỗ này, liền tỏ rõ Minh Hữu lý luận mới là chính xác. Toàn bộ Tinh Minh linh thú giới giáo dục sắp sửa từ hôm nay trở đi, đi vào một cái hoàn toàn mới chặng đường.</p>
+<p>Lão Neil sửa sang lại một chút quần áo, xử quải trượng đi lên trước.</p>
+<p>Hắn cũng trước cùng Arthur vấn an, còn chưa kịp cùng Minh Hữu chào hỏi, đã bị Minh Hữu một phen đỡ lấy.</p>
+<p>Ở Minh Hữu trong mắt, hắn là một con cơ bắp đã héo rút, trên mặt mọc đầy nếp gấp, liền sừng hươu đều đã khô khốc lão Lộc.</p>
+<p>“Lão Lộc lão sư?” Minh Hữu hỏi.</p>
+<p>Lão Neil cười Điểm Điểm đầu “Đúng vậy, là ta. Tiểu Hữu, ngươi hảo a.”</p>
+<p>“Ân ân ân, ta thực hảo. Đợi chút không xuống dưới, ta cho ngài kiểm tra kiểm tra thân thể.” Minh Hữu biết Tiểu Thiên hình chiếu có thể hóa thú dị năng giả thực tế ảo hình ảnh, đều là căn cứ cơ sở dữ liệu trung bọn họ bản thân linh thú hình tượng tới, cho nên lão Neil linh thú hình thái rất có thể cũng đã thật không tốt.</p>
+<p>“Hảo.” Lão Neil cười nói, “Kêu ta lão Neil là được, ta cũng không dám đương ngươi lão sư, ngươi mới là sư phụ của ta.”</p>
+<p>Minh Hữu vội nói “Neil gia gia, đừng nói như vậy, ta về sau còn muốn đi theo ngài học tập đâu. Ta cơ sở ngành học còn rất mỏng yếu.”</p>
+<p>Lão Neil nghe Minh Hữu cư nhiên kêu hắn “Neil gia gia”, cười đến trên mặt nếp nhăn cùng triển khai đóa hoa dường như, mỗi một cái hoa văn đều thuyết minh cái gì gọi là mỹ tư tư “Hảo, hảo, ngươi nếu kêu ta một tiếng gia gia, ngươi muốn học cái gì, ta đều dạy cho ngươi. Ta giáo không được, ta còn có rất nhiều lão bằng hữu, bọn họ có thể giáo.”</p>
+<p>Thấy Minh Hữu cư nhiên mới vừa một cùng lão Neil gặp mặt, liền kêu lão Neil gia gia, liên tiếp lời ngon tiếng ngọt hống đến lão Neil thấy nha không thấy mắt, linh thú các gia trưởng đều sợ ngây người.</p>
+<p>Lông xù xù nhóm Từ từ, Tiểu Hữu, nói tốt xã khủng đâu?</p>
+<p>Minh Hữu Xã khủng? Xã khủng cùng trước mặt các linh thú có quan hệ gì?</p>
+<p>Lông xù xù nhóm Chính là, này đó linh thú đều là thực tế ảo hình chiếu a?</p>
+<p>Minh Hữu Nhưng ta nhìn đến chính là linh thú a, bọn họ năng lượng dao động cũng thuộc về linh thú.</p>
+<p>Odrich hoàng đế bệ hạ mỉm cười thở dài “Nhà của chúng ta Tiểu Hữu thật là…… Nói như thế nào đâu, có đôi khi thần kinh ngoài ý muốn thực thô.”</p>
+<p>“Phải nói, đại bộ phận thời gian hắn thần kinh đều thực thô.” Arthur thầm nghĩ, nếu không phải biết Minh Hữu thô thần kinh, hắn cũng sẽ không nghĩ đến dùng thực tế ảo mắt kính đem người chung quanh đều biến thành lông xù xù cái này chủ ý.</p>
+<p>Đối với những người khác mà nói, này hoàn toàn là sưu chủ ý. Trong lòng đều biết đây là thực tế ảo hình chiếu, nên khẩn trương khẳng định vẫn là sẽ khẩn trương. Hơn nữa đối mặt linh thú, không phải nên càng khẩn trương sao?</p>
+<p>Nhưng thô thần kinh thả am hiểu tự mình thôi miên Minh Hữu, chính là có thể một mang lên mắt kính, liền thật sự đem người đương linh thú chỗ.</p>
+<p>Hơn nữa Minh Hữu cùng linh thú ở chung thời điểm, cùng bình thường người với người ở chung hình thức không sai biệt lắm, cho nên hoàn toàn sẽ không có đột ngột cảm.</p>
+<p>Odrich hoàng đế bệ hạ đem sân nhà giao cho lão Neil, làm lão Neil mang theo Minh Hữu đi gặp hắn kia nhất bang ông bạn già. Hắn tắc bắt đầu lấy tương đối chính thức lễ nghi, nghênh đón mặt khác linh thú các anh hùng.</p>
+<p>Trong phi thuyền lông xù xù nhóm cùng hoàng đế bệ hạ bắt tay lúc sau, bị hoàng đế bệ hạ thân thủ treo lên vinh dự huy chương vòng cổ.</p>
+<p>Minh Hữu một bên cùng trước mặt lão niên các linh thú chào hỏi, một bên hướng nhà mình lông xù xù bên kia ngó.</p>
+<p>“Tiểu Hữu, lại đây.” Arthur đối Minh Hữu vẫy tay.</p>
+<p>Minh Hữu kinh ngạc “Đại Hắc…… Ách, Arthur, ngươi bị xuyên qua?”</p>
+<p>Arthur “…… Vì cái gì hỏi như vậy?”</p>
+<p>Minh Hữu nghiêm túc nói “Ngươi cư nhiên kêu ta Tiểu Hữu mà không phải xuẩn Hữu.”</p>
+<p>Arthur lôi kéo Minh Hữu quai hàm nói “Thỉnh không cần ở nhiều người như vậy trước mặt đột nhiên bắt đầu nói tướng thanh.”</p>
+<p>Minh Hữu bụm mặt. Ta không phải ta không có, hảo đi, hiện tại hẳn là nghiêm túc một chút.</p>
+<p>Nhưng chung quanh tất cả đều là mắt lấp lánh lông xù xù, hắn nghiêm túc không nổi.</p>
+<p>Nghiêm túc, nghiêm túc.</p>
+<p>“Ngươi vẫn luôn hướng bên này ngó, là tưởng chụp ảnh chung đi.” Arthur trừng mắt nhìn Minh Hữu liếc mắt một cái, làm hắn thành thật một chút, “Ngươi trạm trung gian.”</p>
+<p>Minh Hữu ngoan ngoãn hướng trung gian một xử, đại miêu gia hai huynh đệ dùng hình người trạm hắn hai bên, mặt khác linh thú đem bọn họ vây đến trung gian, cùng sử dụng trảo trảo giơ lên trên cổ huân chương.</p>
+<p>Gia ~~~~ tử!</p>
+<p>Ảnh chụp dừng hình ảnh, lập tức phát hướng toàn Tinh Minh tin tức truyền thông tổng bộ.</p>
+<p>Giờ khắc này, chống lại Trùng tộc chiến tranh hướng công chúng toàn diện giải mật, chiến hậu kỷ niệm công tác cùng thụ huân công tác toàn diện khai triển. Đồng thời, linh thú cùng Linh Thú Sư tin tức, cũng đồng bộ hướng toàn Tinh Minh công bố.</p>
+<p>Tối nay rất nhiều người chú định vô miên. Rất nhiều hành chính tinh cư dân tự phát lên phố, tay phủng ánh huỳnh quang ngọn nến, hướng hy sinh ở trên chiến trường liệt sĩ nhóm ai điếu cầu phúc.</p>
+<p>Nhưng hiện tại Minh Hữu, cũng không biết chính mình chiếu này trương ngốc cực kỳ ảnh chụp, sẽ trở thành Tinh Minh lịch sử bước ngoặt quan trọng tiêu chí. Hắn chỉ là nhìn treo lụa mang huân chương nhà mình lông xù xù, cảm giác phi thường đáng yêu, cho nên muốn thấu cùng nhau chụp trương chiếu mà thôi.</p>
+<p>“Thật là lợi hại.” Minh Hữu từng cái sờ qua nhà mình lông xù xù huân chương, cảm thấy mỹ mãn.</p>
+<p>Nhìn cái này ở nhiều người như vậy vây xem trung đều hoạt bát quá mức, thậm chí có điểm “Không coi ai ra gì” tiểu thanh niên, những người khác hai mặt nhìn nhau. Nói tốt tiểu Linh Thú Sư thập phần thẹn thùng đâu? Này có phải hay không quá kiêu ngạo chút.</p>
+<p>Minh Hữu Ta trong mắt đích xác không có người a, chỉ có một đống không quen biết mao nhung đoàn tử.</p>
+<p>Xa lạ mao nhung đoàn tử rất nguy hiểm, tốt nhất coi như không tồn tại. Đây là Minh Hữu Linh Thú Sư ra ngoài mạo hiểm thủ tục điều thứ nhất. Huống chi, ta cùng nhà ta cộng sự linh thú hỗ động, bọn họ chính mình đều không ngại, các ngươi để ý cái gì?</p>
+<p>Tóm lại, Minh Hữu loại trạng thái này, như cũ thuộc về không am hiểu xã giao. Bất quá hắn hiện tại là ở một đám đại nhân vật trung gian, cho nên này hành vi cũng không đột ngột.</p>
+<p>Rốt cuộc này đàn đại nhân vật chính mình tụ ở bên nhau nói chuyện phiếm, chỉ cần không vẫy tay để cho người khác qua đi, liền không người khác sự.</p>
+<p>Minh Hữu sờ xong nhà mình cộng sự linh thú huân chương lúc sau, lại chạy về lão Neil bên người, tiếp tục cùng lão Neil cùng hắn các bạn già liêu nghiên cứu thượng gặp được vấn đề.</p>
+<p>Lão Neil cùng một chúng lão các nhà khoa học cười đến thập phần hòa ái. Ai, đứa nhỏ này thật hoạt bát. Hoạt bát hảo, hoạt bát mới hảo. Ở biết Minh Hữu toàn tộc bị diệt, chỉ còn lại có hắn một người, bởi vậy hắn còn rơi xuống nghiêm trọng xã giao chướng ngại lúc sau, bọn họ trong lòng thập phần lo lắng.</p>
+<p>Tuy rằng hiện tại Minh Hữu chỉ có thể mang theo thực tế ảo mắt kính, đem bọn họ toàn cho rằng linh thú, mới có thể cùng bọn họ bình thường nói chuyện với nhau, nhưng Minh Hữu lạc quan rộng rãi bộ dáng không phải giả vờ, chỉ cần Minh Hữu chính mình trong lòng có ánh mặt trời, hắn sớm hay muộn sẽ từ bóng ma trung đi ra.</p>
+<p>Tốt như vậy hài tử, hắn muốn dẫn dắt linh thú giới giáo dục đi vào hoàn toàn mới tương lai, người bình thường đều hy vọng hắn cá nhân sinh hoạt cũng có thể quá đến hạnh phúc vui sướng.</p>
+<p>“Nhà ta Đại Hắc a, lại quy mao lại keo kiệt, đối năng lượng dao động tần suất thập phần mẫn cảm, cho nên ta làm ra cái này năng lượng hòa hoãn khí, cùng không khí tươi mát khí giống nhau, có thể…… Ai!” Minh Hữu đang nói nghiêm túc học thuật vấn đề, trên đầu đột nhiên ăn một chút.</p>
+<p>“Ta mang Tiểu Hữu đi xử lý báo danh thủ tục.” Arthur lôi kéo Minh Hữu quai hàm, đem Minh Hữu túm trở về đại bộ đội.</p>
+<p>Lão các nhà khoa học khiếp sợ mặt.</p>
+<p>“Điện hạ hắn…… Từ tiến vào quân bộ lúc sau, liền không có như vậy cảm xúc lộ ra ngoài quá.” Lão Neil lẩm bẩm nói, “Hắn không phải đem phía trước tính tình đều thu liễm đi lên sao?”</p>
+<p>“Điện hạ cố ý đi? Cố ý ở màn ảnh trước mặt cùng Tiểu Hữu biểu hiện thật sự thân mật?”</p>
+<p>“Hẳn là như vậy. Hắn là nói cho truyền thông, Tiểu Hữu chỗ dựa là hắn.”</p>
+<p>“Lấy tâm đổi tâm, Tiểu Hữu có thân vương che chở, đời này hẳn là vô ưu.”</p>
+<p>“Không sai, không thấy bệ hạ đối Tiểu Hữu cũng cùng đối đãi nhà mình hài tử giống nhau sao? Có đại miêu gia tộc che chở, còn lo lắng cái gì? Nhà bọn họ nhất bênh vực người mình.”</p>
+<p>“Ta còn tưởng rằng thân vương điện hạ sẽ đem Tiểu Hữu giấu đi, không nghĩ tới hắn cư nhiên ở toàn Tinh Minh truyền thông trước mặt công khai. Hắn không sợ đem Tiểu Hữu giá hỏa thượng nướng?”</p>
+<p>“Cái gì giá hỏa thượng nướng? Như vậy công khai mới thông minh.”</p>
+<p>Chúng các nhà khoa học nghĩ nghĩ, sôi nổi gật đầu. Không sai, như vậy mới thông minh.</p>
+<p>Arthur làm toàn thế giới đều nhìn đến, bọn họ này đàn Tinh Minh đại nhân vật cùng Minh Hữu quan hệ có bao nhiêu thân mật, bọn họ cho Minh Hữu bao lớn kính ý, làm toàn thế giới đều biết Minh Hữu ở bọn họ trong lòng, ở Tinh Minh địa vị, như vậy mới có thể kinh sợ bọn đạo chích.</p>
+<p>Tưởng đối Minh Hữu động thủ, chính là cùng bọn họ mọi người, chính là cùng toàn bộ Tinh Minh là địch.</p>
+<p>Mà đem Minh Hữu thân phận công khai sau sở hữu đồn đãi vớ vẩn, bằng Arthur năng lực, khẳng định sẽ không làm cho bọn họ truyền tới Minh Hữu bên tai tới.</p>
+<p>Minh Hữu sẽ không cùng quân tâm bất lương người ở chung, sẽ không tiếp thu bất luận cái gì truyền thông phỏng vấn, sẽ không gặp được bất luận cái gì hắn không nghĩ gặp được sự.</p>
+<p>Sở hữu Minh Hữu không nghĩ không muốn xử lý sự, Arthur đều sẽ đại lao.</p>
+<p>Mà Minh Hữu chính mình muốn trưởng thành địa phương, Arthur cũng sẽ buông tay làm Minh Hữu chính mình đi sấm.</p>
+<p>Bọn họ thân vương điện hạ, chính là như vậy đối đãi hắn coi nếu thủ túc cấp dưới, cũng sẽ như vậy đối đãi hắn cộng sự Linh Thú Sư Minh Hữu.</p>
+<p>Minh Hữu tin tức nháy mắt liền thông qua truyền thông màn ảnh truyền khắp toàn bộ Tinh Minh, bọn họ nhất kính yêu Arthur thân vương nhéo Minh Hữu gương mặt đem Minh Hữu kéo vào một đống lông xù xù trung, sau đó đám kia lông xù xù lập tức đem Minh Hữu hộ ở chính giữa video đoạn ngắn, bị toàn võng đăng lại, nháy mắt xông lên ngày điểm đánh bảng đệ nhất danh.</p>
+<p>Các võng hữu sôi nổi nghị luận.</p>
+<p>“Ta vừa mới biết nguyên lai chống lại Trùng tộc chiến tranh như vậy thảm thiết, đã biết Arthur thân vương điện hạ cùng mười anh hùng có bao nhiêu vĩ đại, đem nhân sinh mục tiêu đổi thành đối Arthur thân vương điện hạ tự tiến chẩm tịch…… Cái kia tiểu tử là ai! Một phút đem hắn tư liệu cho ta trình lên tới!”</p>
+<p>“Ai nước tiểu hoàng, trước hết thượng. Có bệnh tiểu đường người một bên đi, đừng làm trên lầu nếm đến ngon ngọt.”</p>
+<p>“Người này thực rõ ràng chính là phía trước phía chính phủ đại khen đặc khen tiểu Linh Thú Sư đi? Thân vương điện hạ cùng mười anh hùng đều là hắn cứu trở về tới.”</p>
+<p>“Làm linh thú, Minh Hữu điện hạ ở trong lòng ta địa vị hòa thân vương điện hạ giống nhau cao QAQ.”</p>
+<p>“Cư nhiên có linh thú chứng thực nhãn? Ngọa tào, cái này ngưu, thật đại thần a. Micro đưa cho trên lầu, nghe nói các ngươi linh thú vẫn luôn ăn không đủ no?”</p>
+<p>“Đúng vậy, chính là ăn không đủ no. Tuy rằng các ngươi rất khó tin tưởng tới rồi tinh tế thời đại, làm mạnh nhất dị năng giả, chúng ta cư nhiên ăn không đủ no, nhưng ăn không đủ no chính là ăn không đủ no. Oa ca ca, nghe nói Tiểu Hữu hôm nay sẽ ở Tinh Minh Trung Tâm trường quân đội linh thú thực đường cho đại gia làm bữa tiệc lớn, mỗi cái linh thú đều có phân, hắc hắc hắc, vuốt ta thẻ học sinh cười ra tiếng.”</p>
+<p>“Đáng khinh! Làm người giận sôi! Dựa vào cái gì! Tinh Minh lại không phải chỉ có một học viện quân sự! Chúng ta cũng đói a!”</p>
+<p>“Kia không có biện pháp, trung tâm trường quân đội là thân vương điện hạ trường học cũ, thân vương điện hạ khẳng định đầu tiên tăng cường nhà mình trường học cũ hắc hắc hắc.”</p>
+<p>“Ta còn là không thể tin được, chúng ta Tinh Minh nhà khoa học nghiên cứu lâu như vậy cũng chưa giải quyết vấn đề, thật sự bị một cái không đến hai mươi tuổi tiểu thanh niên giải quyết?”</p>
+<p>“Ta kính trọng nhất Neil  Groth nói, khoa học ứng dụng là thực tàn khốc, ngươi có thành quả chính là hành, ngươi không có thành quả chính là không được. Minh Hữu có thể giải quyết linh thú ăn cơm no vấn đề, có thể trị hảo thân vương điện hạ cùng mười anh hùng, hắn chính là lợi hại. Huống chi, hắn lại không phải chính mình sửa sang lại những cái đó nghiên cứu.”</p>
+<p>“Không sai, Minh Hữu phỏng vấn bản thảo nói, hắn chỉ là tư liệu sửa sang lại giả, mà không phải phát hiện giả. Hắn trở thành Linh Thú Sư tinh cầu duy nhất người sống sót, chính là bởi vì hắn trí nhớ thực hảo. Ta suy đoán hắn khả năng có siêu nhớ chứng, đã gặp qua là không quên được.”</p>
+<p>“Không phải nói Linh Thú Sư tinh cầu đem sở hữu số liệu tư liệu đều nhét vào tinh cầu chủ AI trung, cấp Minh Hữu đương quang não mang ra tới sao? Cho nên hắn không nhất định có siêu nhớ chứng, chỉ là học tập năng lực mạnh nhất?”</p>
+<p>“Cũng có khả năng, hắn là Linh Thú Sư tinh cầu duy nhất người trẻ tuổi a. Chuyên gia nhóm không phải nói sao? Linh Thú Sư tinh cầu chính là một cái đại hình nghiên cứu căn cứ, bên trong đều là chạy đi nghiên cứu nhân viên, Minh Hữu là duy nhất thế hệ mới.”</p>
+<p>“Chạy đi a, chậc chậc chậc, khoa học ứng dụng thật sự thực tàn khốc. Nghiên cứu không ra thành quả, đem nghiên cứu ra thành quả người xử lý thì tốt rồi ( buồn cười ).”</p>
+<p>“Đừng nói chuyện lung tung, tiểu tâm ngươi hào vô.”</p>
+<p>Minh Hữu vui tươi hớn hở ký tên lãnh học sinh chứng, từ nay về sau, hắn chính là một cái quang vinh sinh viên!</p>
+<p>Hắn tối cao văn bằng, rốt cuộc không phải cao trung chưa tốt nghiệp!</p>
+<p>Ở hắn đối học sinh chứng yêu thích không buông tay, cùng đối đãi cái gì trân bảo dường như thời điểm, Tinh Minh phía chính phủ nhiều gia truyền thông thả ra hắn văn tự phỏng vấn bản thảo, toàn diện giải thích Linh Thú Sư cùng Linh Thú Sư tinh cầu sự, cũng liền linh thú học tương lai làm ra chính mình triển vọng.</p>
+<p>Hắn phía sau lông xù xù nhóm một bên hộ vệ hắn, một bên vội vàng giám thị dư luận, cũng tùy thời phát ra chút “Tiểu đạo tin tức”, dẫn đường đại gia đối linh thú cùng Linh Thú Sư tiến hành thảo luận.</p>
+<p>“Nếu vẫn luôn mang theo thực tế ảo mắt kính, ta tưởng ta liền tính bình thường đi học cũng không thành vấn đề.” Thuận lợi hoàn thành nhập học thủ tục lúc sau, Minh Hữu lòng tự tin bạo lều.</p>
+<p>“Ân, ngươi là muốn cho chúng ta ai đương bồi đọc?” Arthur khiêm tốn thỉnh giáo, “Ở kia phía trước, vì an toàn của ngươi, chúng ta đến ở phụ cận mua khối địa cho ngươi tu cái phòng ở.”</p>
+<p>Minh Hữu “…… Vì cái gì muốn mua đất?”</p>
+<p>Arthur nói “Ngươi biết chúng ta…… Không sai, chúng ta, bao gồm ngươi ở bên trong, ở trên ám võng tiền thưởng đều bài trước trăm sao? Ngươi cộng sự nhóm, mỗi một cái trong tay ít nhất đều có toàn bộ cỡ trung tinh tặc đoàn mệnh.”</p>
+<p>Minh Hữu “Oa, thật là lợi hại! Không, ta ý tứ là, ta còn là ngoan ngoãn hồi viện điều dưỡng đi.”</p>
+<p>Đáng sợ. Cư nhiên còn có ám võng sát thủ gì đó, thế giới này như thế nào cùng ta trong tưởng tượng hoàn toàn không giống nhau?</p>
+<p>Ách, giống như như vậy thế giới mới tương đối bình thường? Ta trong tưởng tượng…… Lợi dụng truyền thuyết linh thú hủy diệt thế giới hoặc là xưng bá thế giới? Thời gian nghịch chuyển? Toàn dân não khống? Minh Hữu lâm vào trầm tư. Giống như hắn não bổ nội dung thực đáng sợ một chút.</p>
+<p>“Như thế nào lại thất thần?” Arthur dặn dò nửa ngày an toàn vấn đề, phát hiện Minh Hữu hai mắt vô thần, đầu óc sớm không biết chạy cái nào trên sườn núi vui vẻ đi.</p>
+<p>“Ta suy nghĩ, thế giới này có thể hay không cùng ta thế giới kia giống nhau, có người lợi dụng truyền thuyết thần thú hủy diệt mười hai cái thứ nguyên gì đó?” Minh Hữu sờ sờ chính mình hắc quyển mao, “Sau đó ta và các ngươi cùng nhau nắm giữ sáng thế linh thú mười hai cái đá phiến lực lượng, cùng mặt khác thứ nguyên chúng ta cùng nhau, cứu vớt sở hữu thứ nguyên, toàn thế giới khởi động lại.”</p>
+<p>Minh Hữu lời nói là thông qua quang võng trò chuyện riêng, cho nên chỉ có hắn cùng hắn cộng sự các linh thú có thể nghe được. Arthur phá cách đem kênh mở ra cho biết Minh Hữu còn có cái kiếp trước hắn ca.</p>
+<p>Hiện tại, đại miêu huynh đệ hai cùng một đám lông xù xù nhóm toàn bộ hiện ra thạch hóa trạng thái.</p>
+<p>Bọn họ còn tưởng rằng, Trùng tộc xâm lấn đã là Tinh Minh xưa nay chưa từng có đại nguy cơ. Minh Hữu kiếp trước thế giới chỉ là một cái còn không có bắt đầu tinh tế di dân nho nhỏ lạc hậu tinh cầu đi? Như thế nào đều bắt đầu hủy diệt mười hai cái thứ nguyên? Các ngươi cái kia tinh cầu có phải hay không có điểm không thích hợp?</p>
+<p>Minh Hữu phát hiện chính mình lại đem chính mình não bổ nội dung tùy ý nói bậy, ngượng ngùng câm miệng.</p>
+<p>“Thực hảo, có thể đem ngươi nói nội dung nhớ kỹ, ta đem nó cải biên thành động họa hoặc là trò chơi.” Arthur đầu óc điên cuồng chuyển động, “Ngươi quỹ hội từ thiện lại có một bút trường kỳ tiến trướng, chúc mừng.”</p>
+<p>Minh Hữu “…… Hảo.” Xem ra, hắn đến tìm cái thời gian, đem kiếp trước tương đối hỏa bạo manga anime phim ảnh trò chơi âm nhạc từ từ đều sửa sang lại ra tới, vì Đại Hắc giúp hắn hư cấu Linh Thú Sư tinh cầu góp một viên gạch.</p>
+<p>Linh Thú Sư tinh cầu tương đương địa cầu, những cái đó manga anime phim ảnh trò chơi từ từ sáng tác giả đều là hắn Linh Thú Sư tiền bối, cái này giả thiết hảo mang cảm.</p>
+<p>Minh Hữu đang cùng Arthur trò chuyện, khóe mắt ánh chiều tà bay tới bên cạnh đám người.</p>
+<p>Không đúng, bên cạnh thú đàn.</p>
+<p>Ở Minh Hữu trong tầm nhìn, có thể hóa thú dị năng giả thực tế ảo hình tượng đều là bọn họ bản thân linh thú hình tượng, mà mặt khác không thể hóa thú người lông xù xù hình tượng tất cả đều là thống nhất vượn người.</p>
+<p>Ở một chúng vượn người trung, một con có thổ hoàng sắc lông tóc đại hồ ly, hấp dẫn Minh Hữu toàn bộ tầm mắt.</p>
+<p>Mặt chữ điền, mị mị nhãn, kia siêu nhiên vật ngoại thần sắc, này chẳng lẽ là……</p>
+<p>Minh Hữu đôi tay lôi kéo Arthur cổ tay áo, thanh âm nhân kích động mà run rẩy “Đại Hắc! Ngươi xem! Ngươi mau xem! Là cáo Tây Tạng! Cáo Tây Tạng ai!!”</p>
+<p>Arthur “???”</p>
+<p>Cáo Tây Tạng? Từ đâu ra cáo Tây Tạng? Cáo Tây Tạng làm sao vậy? Ngươi đến nỗi kích động như vậy sao???</p>
+<p>Tác giả có lời muốn nói ( bắt trùng ) Minh Hữu không tiếp thu quá bất luận cái gì phỏng vấn, cho nên hiện tại Tinh Minh toàn diện phô khai Minh Hữu độc nhất vô nhị phỏng vấn bản thảo là từ đâu ra đâu.</p>
+<p>Arthur miêu Miêu không rõ ràng lắm, miêu không biết, miêu ~~~</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong52.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong54.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "phat-song-truc-tiep-duong-nhai-con-sau-ta-thanh-tinh-te-nha-giau-so-mot";
+const NOVEL_TITLE = "Phát sóng trực tiếp dưỡng nhãi con sau ta thành tinh tế nhà giàu số một";
+const CHAPTER_TITLE = "Chương 53";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
