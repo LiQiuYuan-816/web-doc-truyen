@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 76. Võng luyến đối tượng</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Người qua đường Giáp tiếng lòng tiết lộ sau bị vai ác cả nhà đoàn sủng
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 76. Võng luyến đối tượng</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong75.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong77.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Diệp Nhạc Dao lại muốn đi xem cái kia nam sinh, mới phát hiện bên ngoài đã sớm không có hắn thân ảnh.</p>
+<p>Hoắc Yến lại hô một lần Diệp Nhạc Dao.</p>
+<p>Diệp Nhạc Dao lên tiếng “Tới!”</p>
+<p>Tùy tay đem tờ giấy thu hồi tới, bước nhanh đuổi kịp Tần Diệu cùng Hoắc Yến.</p>
+<p>“Vừa mới cái kia nam sinh là ai a?” Hoắc Yến lại hỏi một lần.</p>
+<p>Diệp Nhạc Dao lắc đầu “Không biết a, khả năng nhận sai người đi?”</p>
+<p>Hoắc Yến gật gật đầu, không lại hỏi nhiều.</p>
+<p>Nhưng thật ra Tần Diệu hơi hơi túc một chút mi, cúi đầu cấp trợ lý đã phát điều tin tức.</p>
+<p>Ba người là cuối cùng trở lại biệt thự, lúc này biệt thự lại vang lên rung trời vang âm nhạc.</p>
+<p>Diệp Nhạc Dao đẩy cửa ra, liền nhìn đến hai cái cùng Sở Thừa quan hệ tốt nam sinh giá hắn ở trong phòng khách gian, cầm micro lại xướng lại nhảy, giống như như vậy là có thể đem vừa mới không thoải mái quên đến không còn một mảnh.</p>
+<p>Tần Diệu nghe sắp sảo phá màng tai âm nhạc, khó được không có tiến lên ngăn cản, mà là quay đầu tiến đến Diệp Nhạc Dao bên tai nhỏ giọng nói “Ta đi liên hệ đưa cơm nhân viên công tác, ngươi đi vào trước.”</p>
+<p>Hai người khoảng cách ai đến gần, Tần Diệu hô hấp nhẹ nhàng đánh vào Diệp Nhạc Dao trên lỗ tai, ẩm ướt, có điểm ngứa.</p>
+<p>Nhưng lại ngoài ý muốn không chán ghét.</p>
+<p>Diệp Nhạc Dao gật gật đầu.</p>
+<p>Tần Diệu xoay người rời đi.</p>
+<p>Hoắc Yến thò qua tới, ôm lấy Diệp Nhạc Dao bả vai “Ngươi muốn hay không đi hậu viện?”</p>
+<p>Diệp Nhạc Dao duỗi tay đi đẩy Hoắc Yến cánh tay, hơi hơi nhíu mày “Không đi, còn có nhị ca, ngươi đừng luôn là ly ta như vậy gần.”</p>
+<p>Hoắc Yến “???”</p>
+<p>Ha?</p>
+<p>Hợp lại vừa mới Tần Diệu đều ghé vào ngươi bên tai nói chuyện cũng không nói Tần Diệu thấu gần, hắn liền ôm một chút bả vai liền không muốn?</p>
+<p>Hoắc Yến khớp hàm âm thầm buộc chặt “Tiểu không lương tâm!”</p>
+<p>Âm nhạc thanh quá lớn, Diệp Nhạc Dao không nghe rõ “A?”</p>
+<p>Hoắc Yến nặng nề mà hừ một tiếng, không để ý tới Diệp Nhạc Dao, chính mình xoay người đi rồi.</p>
+<p>Diệp Nhạc Dao cũng không nghĩ nhiều, hắn hướng tới ngồi ở góc Nhiễm Cảnh đi đến.</p>
+<p>Nhiễm Cảnh đi theo tràng tuyệt đại bộ phận người đều không thân, nhưng bởi vì hắn vừa mới ở nhà ăn kia một nháo, không ít người đều đối hắn có chút tò mò.</p>
+<p>Ở đây người đều là Sở Thừa bằng hữu cùng đồng học, cùng Nhiễm Cảnh tuổi tác xấp xỉ, cho nên Nhiễm Cảnh liền ở biệt thự ngồi như vậy một lát thời gian, liền liên tiếp có vài bát người đi lên cùng Nhiễm Cảnh chào hỏi.</p>
+<p>Nhiễm Cảnh cùng Diệp Nhạc Dao giống nhau, đều không quá am hiểu ứng phó này đó, chỉ có thể ngồi ở tại chỗ cười làm lành.</p>
+<p>Lúc này nhìn đến Diệp Nhạc Dao đi tới, hắn như là nhìn đến cứu tinh giống nhau, đột nhiên đứng lên.</p>
+<p>Phòng khách thật sự là có điểm sảo, Diệp Nhạc Dao liền chỉ vào hậu viện “Chúng ta đi hoa viên?”</p>
+<p>Nhiễm Cảnh gật đầu, chạy nhanh đi theo Diệp Nhạc Dao triều hậu viện đi đến.</p>
+<p>Tới rồi hậu viện, viện môn một quan, rung trời vang âm nhạc thanh mới nhỏ không ít.</p>
+<p>Diệp Nhạc Dao tầm mắt đảo qua, không thấy được Hoắc Yến, liền lôi kéo Nhiễm Cảnh ở hưu nhàn ghế ngồi xuống.</p>
+<p>Hai người đều ăn ý mà không có liêu Mạnh Việt, mà là cho nhau dò hỏi một chút tình hình gần đây.</p>
+<p>Ở biết được Nhiễm Cảnh quá đoạn thời gian chuẩn bị đi đầu lý lịch sơ lược tìm công tác khi, Diệp Nhạc Dao theo bản năng hỏi một câu “Ngươi vì cái gì không đi liên hệ một chút ngươi người đại diện?”</p>
+<p>Nhiễm Cảnh ngẩn ra, theo bản năng hỏi lại “Người đại diện?”</p>
+<p>Diệp Nhạc Dao chống cằm gật đầu “Đúng vậy, ngươi không phải ta đại ca công ty ký hợp đồng nghệ sĩ sao? Ta đại ca phía trước cùng ta nói rồi, chỉ cần là công ty ký hợp đồng nghệ sĩ đều sẽ bị phân phối cấp tương ứng người đại diện, ngươi biểu diễn khóa thành tích so với ta hảo, vì cái gì không thử xem đi diễn kịch đâu?”</p>
+<p>Biệt thự rung trời vang âm nhạc không biết bị ai tắt đi, lúc này hậu viện hết sức an tĩnh, mây trắng bị thanh phong thổi tan, lộ ra xanh thẳm không trung. Sân lại thổi tới một trận gió, lá cây sàn sạt rung động.</p>
+<p>Nhiễm Cảnh theo bản năng đi xem Diệp Nhạc Dao, đối thượng hắn sáng ngời thanh triệt hai tròng mắt.</p>
+<p>Có lẽ chỉ qua ngắn ngủn một giây.</p>
+<p>Lại có lẽ qua dài dòng một phút.</p>
+<p>Nhiễm Cảnh khóe miệng bỗng nhiên cao cao mà giơ lên, hắn triều Diệp Nhạc Dao lộ ra một cái có thể xưng là tươi đẹp cười, hắn nói “Diệp Nhạc Dao, cảm ơn ngươi!”</p>
+<p>Diệp Nhạc Dao giữa mày hơi hơi túc một chút, có chút khó hiểu “Vì cái gì phải hướng ta nói lời cảm tạ a?”</p>
+<p>【 gần nhất giống như có không ít người cùng ta nói lời cảm tạ? 】</p>
+<p>Diệp Nhạc Dao còn không có tưởng minh bạch, Tần Diệu thanh âm liền truyền tới “Nhạc Dao, cơm trưa tới rồi.”</p>
+<p>Diệp Nhạc Dao chạy nhanh lên tiếng, quay đầu đối Nhiễm Cảnh nói “Đi thôi.”</p>
+<p>Nhiễm Cảnh cười dùng sức gật gật đầu.</p>
+<p>Kế tiếp nửa ngày thời gian, mọi người ở làng du lịch chơi một cái thống khoái, thẳng đến sắc trời hoàn toàn ám xuống dưới, bọn họ đoàn người cũng chưa tan cuộc, còn chuẩn bị lại liên tục chiến đấu ở các chiến trường quán bar.</p>
+<p>Hoắc Yến cùng Hoắc ba Hoắc mẹ ăn qua cơm trưa liền rời đi, Diệp Nhạc Dao đối uống rượu cũng không có hứng thú, không tính toán đi, chuẩn bị cùng Sở Thừa chào hỏi liền tính toán đi về trước.</p>
+<p>Diệp Nhạc Dao phải đi, Nhiễm Cảnh cũng thuận thế đưa ra rời đi, Sở Thừa ngượng ngùng lưu, liền nói tự mình đưa bọn họ trở về.</p>
+<p>Tần Diệu nghe vậy liếc mắt nhìn hắn “Ngươi mới vừa uống xong rượu như thế nào đưa? Ta đưa đi.”</p>
+<p>Kỳ thật tài xế đã ở tới đón Diệp Nhạc Dao trên đường, nhưng Diệp Nhạc Dao thấy Tần Diệu cầm chìa khóa đứng dậy, hắn lại đem đến bên miệng nói cấp nuốt trở vào.</p>
+<p>Tần Diệu trước đem Nhiễm Cảnh đưa đến bệnh viện, lại mới lái xe chở Diệp Nhạc Dao triều Hoắc gia mà đi.</p>
+<p>Mắt thấy ly Hoắc gia biệt thự càng ngày càng gần, không biết vì sao Diệp Nhạc Dao đáy lòng đột nhiên liền dâng lên một cổ nhàn nhạt không tha.</p>
+<p>【 kỳ quái. 】</p>
+<p>Tần Diệu dùng dư quang liếc mắt Diệp Nhạc Dao, liền thấy Diệp Nhạc Dao mày hơi hơi nhăn, trên mặt biểu tình nhìn rất là nghiêm túc.</p>
+<p>Đây là làm sao vậy?</p>
+<p>Tần Diệu trong lòng nghi hoặc, nhưng không có mở miệng dò hỏi.</p>
+<p>Nhưng thẳng đến chiếc xe sử nhập Hoắc gia biệt thự tiểu khu, Diệp Nhạc Dao đều không có mở miệng nói một lời, Tần Diệu càng không có lại nghe được một câu tiếng lòng.</p>
+<p>Buổi tối 8 giờ rưỡi, ô tô chậm rãi ngừng ở Hoắc gia biệt thự cửa.</p>
+<p>Tần Diệu cởi bỏ đai an toàn, lúc này mới quay đầu xem Diệp Nhạc Dao “Tới rồi.”</p>
+<p>Diệp Nhạc Dao “Nga” một tiếng, thong thả ung dung mà giải khai chính mình đai an toàn, nhưng hắn lại ngồi ở tại chỗ chậm chạp không có xuống xe ý tứ.</p>
+<p>Thẳng đến Tần Diệu hơi mang nghi hoặc lại lần nữa đi xem Diệp Nhạc Dao, mới nghe được Diệp Nhạc Dao ở trong lòng nhỏ giọng nói thầm</p>
+<p>【 như vậy Tần tổng có thể hay không cảm thấy ta rất kỳ quái? 】</p>
+<p>Không đợi Tần Diệu tự hỏi cái gì kỳ quái, liền nghe Diệp Nhạc Dao bỗng nhiên dùng thực nghiêm túc ngữ khí hỏi “Tần tổng, ta có thể lại cùng ngươi dắt một chút tay sao?”</p>
+<p>Tần Diệu nháy mắt giật mình tại chỗ.</p>
+<p>Sắc trời ảm đạm không ánh sáng, chỉ có ngoài cửa sổ xe đèn đường sáng ngời.</p>
+<p>Một sợi sắc màu ấm vầng sáng xuyên thấu qua cửa sổ xe, dừng ở Diệp Nhạc Dao trên người. Nương điểm này ánh sáng, Tần Diệu có thể rõ ràng mà thấy Diệp Nhạc Dao mặt mày.</p>
+<p>Nam sinh ngũ quan điệt lệ, biểu tình bình thản, chỉ có một đôi mắt sáng lấp lánh, bên trong cảm xúc nhìn không sót gì.</p>
+<p>Có tò mò, có nghi hoặc, nhưng càng nhiều vẫn là chờ mong.</p>
+<p>Tần Diệu ánh mắt hơi trầm xuống.</p>
+<p>Qua thật lâu sau, mới nhẹ giọng nói “Nhạc Dao, ngươi biết ngươi những lời này là có ý tứ gì sao?”</p>
+<p>Diệp Nhạc Dao trong lòng nói thầm</p>
+<p>【 còn không phải là tưởng dắt tay ý tứ sao? Chẳng lẽ ta lời này còn có nghĩa khác? 】</p>
+<p>Diệp Nhạc Dao đôi mắt bỗng chốc trợn to</p>
+<p>【 vẫn là nói Tần tổng lý giải năng lực có vấn đề? 】</p>
+<p>Tần Diệu cảm thấy đau đầu, lại có chút buồn cười.</p>
+<p>“Nhạc Dao, ta buổi sáng hỏi qua ngươi.” Tần Diệu nhìn Diệp Nhạc Dao, mặt mày cất giấu một mạt chính hắn cũng không từng phát hiện lưu luyến.</p>
+<p>Diệp Nhạc Dao thong thả mà chớp một chút mắt “Là vì cái gì không bài xích cùng ngươi bắt tay sao?”</p>
+<p>Tần Diệu hơi hơi gật đầu “Ở ngươi tưởng minh bạch vấn đề này phía trước, ta cảm thấy ngươi tốt nhất tận lực thiếu cùng ta tứ chi tiếp xúc.”</p>
+<p>Diệp Nhạc Dao đôi mắt nháy mắt trừng lớn “Vì cái gì? Này rất quan trọng sao?”</p>
+<p>Tần Diệu nhìn Diệp Nhạc Dao, ngữ khí nghiêm túc “Đối hai chúng ta tới nói đều rất quan trọng.”</p>
+<p>Diệp Nhạc Dao môi nhấp khẩn, mày hiếm thấy mà nhíu lại, ngồi ở tại chỗ bắt đầu trầm tư.</p>
+<p>Chỉ là mới tự hỏi trong chốc lát, Diệp Nhạc Dao liền có chút bất mãn</p>
+<p>【 chẳng lẽ nếu là ta vẫn luôn đều tưởng không rõ, Tần tổng liền chuẩn bị vẫn luôn không cùng ta bắt tay? 】</p>
+<p>Tần Diệu bất đắc dĩ, vừa định lại giải thích một chút, liền nghe được Diệp Nhạc Dao đột nhiên ở trong lòng lớn tiếng nói</p>
+<p>【 quỷ hẹp hòi! 】</p>
+<p>Tần Diệu “……”</p>
+<p>Dứt lời, Diệp Nhạc Dao quay đầu ra vẻ muốn đẩy ra cửa xe “Kia ta đi trước.”</p>
+<p>Ân.</p>
+<p>Còn sẽ uy hiếp người.</p>
+<p>Tần Diệu tầm mắt dừng ở Diệp Nhạc Dao muốn đẩy không đẩy trắng nõn ngón tay thượng, sau một lúc lâu, hắn dẫn đầu nhận thua “Vậy ở ngươi nghĩ kỹ phía trước lại dắt một chút?”</p>
+<p>Diệp Nhạc Dao lập tức vui vẻ ra mặt, một đôi mắt sáng lấp lánh “Thật sự?”</p>
+<p>Tần Diệu đột nhiên không kịp phòng ngừa đâm tiến hắn con ngươi, chỉ là một giây, hắn liền hơi hiện chật vật mà dời đi ánh mắt, hầu kết lăn hạ, Tần Diệu nói “Ân, liền……”</p>
+<p>Hắn còn chưa có nói xong, Diệp Nhạc Dao cũng đã phác lại đây, trực tiếp cho hắn một cái đại đại ôm.</p>
+<p>Diệp Nhạc Dao so Tần Diệu thấp hơn nửa cái đầu, hơn nữa nghiêng người phác lại đây, hắn đầu vừa lúc để ở Tần Diệu cổ. Nam sinh sợi tóc mềm mại, mang theo một cổ nhàn nhạt mùi hương, cọ trên da mềm mại.</p>
+<p>Không chờ Tần Diệu lấy lại tinh thần, Diệp Nhạc Dao liền gấp không chờ nổi mà cầm Tần Diệu tay, sau đó thuần thục mà cùng Tần Diệu mười ngón tay đan vào nhau.</p>
+<p>【 hắc hắc, dắt lấy! 】</p>
+<p>Kính chiếu hậu, nam nhân trắng nõn khuôn mặt nháy mắt bò đầy đỏ ửng.</p>
+<p>Tần Diệu bất đắc dĩ mà một tay che mặt, theo sau hắn nghe được chính mình tiếng tim đập ở trong đêm đen không ngừng gia tốc nhảy lên.</p>
+<p>Thẳng đến Diệp Nhạc Dao từ trên người hắn lên, buông lỏng ra hai người nắm chặt ở bên nhau tay, Tần Diệu bên tai đều vẫn là chính mình như nổi trống tiếng tim đập.</p>
+<p>“Kia Tần tổng ta đi trước.” Diệp Nhạc Dao tươi cười đầy mặt.</p>
+<p>Tần Diệu hơi hơi dời đi tầm mắt, hàm hồ mà lên tiếng.</p>
+<p>Diệp Nhạc Dao lại đi đẩy cửa xe, bỗng nhiên quay đầu lại hỏi “Tần tổng, ngươi mặt như thế nào như vậy hồng?”</p>
+<p>Tần Diệu thuận miệng hồ biên “Có điểm nhiệt.”</p>
+<p>Diệp Nhạc Dao kỳ quái.</p>
+<p>【 rõ ràng khai khí lạnh nha? 】</p>
+<p>Tần Diệu hơi hút một hơi, bình phục hảo tâm tình mới buông chính mình tay, không đi xem Diệp Nhạc Dao, chỉ là nhẹ giọng nói “Cái kia vấn đề, ngươi đáp ứng ta trở về lại hảo hảo ngẫm lại có thể chứ?”</p>
+<p>Diệp Nhạc Dao khó hiểu.</p>
+<p>【 Tần tổng vì cái gì như vậy chấp nhất vấn đề này? 】</p>
+<p>【 bất quá…… Hắn đều lòng tốt như vậy làm ta cùng hắn dắt tay, kia ta phải hảo hảo ngẫm lại đi! 】</p>
+<p>Vì thế Diệp Nhạc Dao gật đầu “Hảo, ta đáp ứng ngươi.”</p>
+<p>Tần Diệu không nhịn xuống truy vấn một câu “Ngươi thật sự có thể chứ?”</p>
+<p>Diệp Nhạc Dao không chút suy nghĩ liền nói “Đương nhiên! Ta chính là không gì làm không được……”</p>
+<p>Diệp Nhạc Dao đột nhiên tạp một chút xác.</p>
+<p>Tần Diệu lại nhoẻn miệng cười “Hảo, ta tin tưởng ngươi.”</p>
+<p>Diệp Nhạc Dao nhấp nhấp môi, thanh thanh giọng nói, dứt khoát đẩy cửa xuống xe, đứng vững sau còn không quên triều Tần Diệu phất tay “Tần tổng, lái xe cẩn thận.”</p>
+<p>Tần Diệu quay cửa kính xe xuống, trên mặt đỏ ửng tiêu một ít, hắn nhìn Diệp Nhạc Dao, mặt mày tất cả đều là ôn nhu ý cười “Ân, ngủ ngon, nhạc……” Cái này tự ở môi lưỡi thấy vòng một cái cong, cuối cùng biến thành, “Ngủ ngon, Dao Dao.”</p>
+<p>Diệp Nhạc Dao đôi mắt bỗng chốc trợn to.</p>
+<p>Không đợi hắn phản ứng lại đây, Tần Diệu cũng đã đóng lại cửa sổ xe.</p>
+<p>Giây tiếp theo, siêu xe bay nhanh mà hướng tới tiểu khu ngoại bay nhanh mà đi.</p>
+<p>Diệp Nhạc Dao đứng ở tại chỗ thật lâu sau, khóe miệng mới cong lên.</p>
+<p>【 hắc hắc, đừng nói, ta còn rất thích Tần tổng như vậy kêu ta ai. 】</p>
+<p>Hoắc trạch trong biệt thự.</p>
+<p>Hoắc Yến tại chỗ đi qua đi lại vài vòng, nghe được những lời này thật sự nhịn không được, quay đầu xem trên sô pha Hoắc ba Hoắc mẹ “Chúng ta thật sự mặc kệ một chút sao?! Lúc này mới một ngày thời gian a! Như thế nào liền xưng hô đều thay đổi a!”</p>
+<p>Hoắc mẹ thở dài, đối Hoắc ba nói “Ta xem như đã nhìn ra, lão nhị thượng một đoạn tình yêu xác thật không xem như luyến ái kinh nghiệm.”</p>
+<p>Hoắc Yến biểu tình nháy mắt liền có chút phát điên “Như thế nào lại bắt đầu đề chuyện này a? Chúng ta không phải thương lượng hảo không hề đề chuyện này sao?”</p>
+<p>Vì cái gì mỗi lần nhắc tới luyến ái, liền phải đem hắn thất bại tình yêu lôi ra tới quất xác?</p>
+<p>Thi thể cũng là sẽ không thoải mái!</p>
+<p>Hoắc ba nhìn Hoắc Yến liếc mắt một cái “Đó là chính ngươi thương lượng, chúng ta nhưng không đáp ứng,” nói xong Hoắc ba lại cười ngâm ngâm đối Hoắc mẹ nói, “Xác thật, phàm là hắn có một chút luyến ái kinh nghiệm cũng nên biết, hai cái lưỡng tình tương duyệt người một khi xác nhận tâm ý, tiến triển chính là thần tốc, đâu giống hắn, đều nói một hai tháng, liền dắt cái tay, cuối cùng còn phải bị ngoa nói trong bụng hài tử là của hắn, cố tình hắn còn tin ha ha ha.”</p>
+<p>Hoắc Yến “……”</p>
+<p>Cái này gia hắn thật là một ngày đều ở không nổi nữa!</p>
+<p>Hoắc Yến quay đầu trực tiếp lên lầu.</p>
+<p>Hoắc ba Hoắc mẹ liếc nhau, thật sự không nhịn cười.</p>
+<p>Mấy ngày kế tiếp thời gian, Diệp Nhạc Dao ở một bên nghiêm túc thượng biểu diễn khóa, một bên nghiêm túc tự hỏi Tần Diệu hỏi cái kia vấn đề.</p>
+<p>Nhưng liên tiếp tự hỏi bốn ngày, Diệp Nhạc Dao đều không có tưởng minh bạch nguyên nhân, ngược lại là thứ 4 kỳ tổng nghệ thu chớp mắt lại muốn tới.</p>
+<p>Tiết mục thu trước một ngày buổi tối, Diệp Nhạc Dao khó được có chút mất ngủ.</p>
+<p>Cuối cùng thật vất vả đi vào giấc ngủ, lại mơ màng hồ đồ làm một cái kỳ quái mộng.</p>
+<p>Trong mộng chính mình tuổi cùng hiện tại giống nhau đại, hắn mỗi ngày thích nhất sự tình chính là ở ban công phơi nắng.</p>
+<p>Cái kia ban công trang hoàng phong cách là phỏng kiểu Tây kiến trúc, diện tích rất lớn, ở ban công trong một góc còn gieo trồng hảo chút tươi đẹp hoa hồng. Nhưng bởi vì Diệp Nhạc Dao thích ở thái dương vị trí tốt nhất phơi nắng, cho nên những cái đó hoa hồng cuối cùng đều bị đặt ở ánh mặt trời hơi chút không có như vậy tốt địa phương.</p>
+<p>Mà Diệp Nhạc Dao mỗi ngày vừa mở mắt, liền sẽ đi vào cái này ban công.</p>
+<p>Ghế nằm sớm đã bãi thành hắn thích độ cung, mặt trên còn có một cái mềm mụp gối dựa, liền ở Diệp Nhạc Dao duỗi tay là có thể đủ đến vị trí, bày một ly thơm ngọt ngon miệng yến mạch sữa bò.</p>
+<p>Mỗi lần chỉ cần Diệp Nhạc Dao duỗi ra tay, là có thể bưng lên yến mạch sữa bò thỏa mãn mà uống một mồm to.</p>
+<p>Một lần, Diệp Nhạc Dao lại đi vào quen thuộc ban công, nhưng ngày này, trên ban công không có yến mạch sữa bò, chỉ có một trương tờ giấy</p>
+<p>“Tài liệu đều ở phòng bếp chuẩn bị hảo, có thể phiền toái thông minh đáng yêu toàn thế giới nhất bổng ngươi hôm nay chính mình gia công một chút sao ^-^”</p>
+<p>Diệp Nhạc Dao nhìn chằm chằm tờ giấy mặt sau gương mặt tươi cười nhìn đã lâu, mới nâng cằm lên kiêu ngạo mà nói một câu “Đương nhiên, ta chính là không gì làm không được……”</p>
+<p>Cảnh trong mơ đến nơi đây đột nhiên im bặt.</p>
+<p>Diệp Nhạc Dao tỉnh ngủ sau còn đang suy nghĩ, hắn rốt cuộc là không gì làm không được cái gì đâu?</p>
+<p>Cẩn thận suy nghĩ một phút không tưởng minh bạch, Diệp Nhạc Dao đột nhiên lại tưởng uống yến mạch sữa bò.</p>
+<p>Đừng nói, mặc kệ là hiện thực vẫn là cảnh trong mơ, yến mạch sữa bò đều là nhất nhất nhất bổng sữa bò!</p>
+<p>Này một kỳ tổng nghệ thu địa điểm ở trứ danh công viên đầm lầy.</p>
+<p>Hoắc ba Hoắc mẹ bởi vì tập đoàn bên trong có một số việc yêu cầu bọn họ ra mặt xử lý, này một kỳ liền không có đi theo.</p>
+<p>Hoắc ba Hoắc mẹ đều đi không khai, Hoắc Cảnh tự nhiên cũng không có thời gian.</p>
+<p>Hoắc Trạch nhưng thật ra tưởng đi theo Diệp Nhạc Dao cùng đi, đáng tiếc hắn mấy ngày nay vẫn luôn ở điều tra Lý Trì sự tình, bận tối mày tối mặt.</p>
+<p>Ngay cả Hoắc Yến đều bởi vì công tác nguyên nhân xuất phát đi nơi khác quay chụp, không thể cùng Diệp Nhạc Dao cùng nhau xuất phát đi trước thu nơi sân.</p>
+<p>Không có biện pháp, Diệp Nhạc Dao chỉ có thể chính mình đi theo người đại diện Lý Lị cùng trợ lý cùng nhau ngồi trên đi trước thu nơi sân phi cơ.</p>
+<p>Hai cái khi còn nhỏ, phi cơ rơi xuống đất, vẫn là cùng trước mấy kỳ giống nhau, tiết mục tổ xe buýt sớm mà liền ở sân bay bên ngoài chờ chư vị khách quý.</p>
+<p>Mắt thấy thực mau liền phải đến tiết mục tổ xe buýt, Diệp Nhạc Dao nghĩ đến cái gì, quay đầu hỏi Lý Lị “Đúng rồi, Lị tỷ, này một kỳ tiết mục tổ có phải hay không vẫn là không có công bố phi hành khách quý danh sách a?”</p>
+<p>Lý Lị gật gật đầu “Ân.”</p>
+<p>Theo 《 Cùng Đi Lữ Hành 》 tiết mục lửa lớn, này hai kỳ tiết mục thu trước trên mạng đều có không ít võng hữu phỏng đoán tiếp theo kỳ phi hành khách quý danh sách.</p>
+<p>Chỉ tiếc, các võng hữu không có nào một lần là đoán đúng rồi.</p>
+<p>Rốt cuộc tiết mục tổ mỗi một kỳ mời phi hành các khách quý, nhiều ít đều sẽ có như vậy một chút dính dưa mang cố.</p>
+<p>Nghĩ đến đây, Lý Lị vẫn là không nhịn xuống nhắc nhở Diệp Nhạc Dao vài câu.</p>
+<p>Cứ việc nàng cũng rõ ràng, trải qua tiền tam kỳ thu sau, Diệp Nhạc Dao khẳng định sẽ không lại ra cái gì sai lầm, nhưng là nàng dù sao cũng là Diệp Nhạc Dao người đại diện, khó tránh khỏi hội thao tâm một ít.</p>
+<p>Cũng may Diệp Nhạc Dao phá lệ ngoan ngoãn, Lý Lị nói cái gì, hắn cũng không phản bác, đều là ngoan ngoãn gật đầu ứng hảo.</p>
+<p>Lý Lị thấy thế lúc này mới thở phào một hơi.</p>
+<p>Nàng đối Diệp Nhạc Dao hy vọng kỳ thật không nhiều lắm, chỉ hy vọng Diệp Nhạc Dao có thể hảo hảo đem tiết mục này lục xong, không cần ra cái gì đường rẽ.</p>
+<p>A đối, tốt nhất cũng không cần ở tiết mục thượng phơi ra cái gì dưa.</p>
+<p>Tuy rằng Diệp Nhạc Dao mới xuất đạo, xác thật không có gì dưa.</p>
+<p>Nhưng tưởng tượng đến Diệp Nhạc Dao đều bị các võng hữu diễn xưng là “Dưa King”, Lý Lị nhiều ít vẫn là sẽ có chút lo âu.</p>
+<p>Rốt cuộc nào có người nhiều lần ruộng dưa quá, nhiều lần dưa không dính thân đâu?</p>
+<p>Nếu là thật sự hơi không chú ý làm Diệp Nhạc Dao cũng biến thành ruộng dưa chủ nhân……</p>
+<p>Lý Lị chỉ là ngẫm lại chính là trước mắt tối sầm trình độ.</p>
+<p>Khi nói chuyện, cũng tới rồi chỉ định khu vực.</p>
+<p>Lý Lị đối Diệp Nhạc Dao nói một câu cố lên, liền triều nhân viên công tác vị trí đi qua.</p>
+<p>Diệp Nhạc Dao triều nàng vẫy vẫy tay, lúc này mới hướng xe buýt đi đến.</p>
+<p>Mới vừa đi không hai bước, Diệp Nhạc Dao đột nhiên quay đầu lại nhìn mắt phía sau, này vừa thấy, Diệp Nhạc Dao đôi mắt trực tiếp sáng ngời, cao hứng mà triều người phất tay “Tần tổng!”</p>
+<p>Tần tổng đã sớm chú ý tới phía trước Diệp Nhạc Dao, chỉ là vừa mới Diệp Nhạc Dao người đại diện vẫn luôn ở nói với hắn lời nói, hắn liền không có tiến lên chào hỏi.</p>
+<p>Thấy Diệp Nhạc Dao chú ý tới chính mình, Tần Diệu đang muốn nhanh hơn bước chân đi tới, liền thấy Diệp Nhạc Dao bỗng nhiên buông lỏng ra chính mình rương hành lý, mở ra đôi tay triều chính mình chạy tới.</p>
+<p>Ở đại não chưa ý thức được không đối phía trước, Tần Diệu thân thể đã trước một bước mở ra hai tay, tiếp được bổ nhào vào trong lòng ngực hắn Diệp Nhạc Dao.</p>
+<p>Ngực chạm vào nhau nháy mắt, Tần Diệu trên mặt biểu tình thiếu chút nữa liền không khống chế được.</p>
+<p>Hắn như thế nào lại ôm lấy Diệp Nhạc Dao?!</p>
+<p>Cố tình Diệp Nhạc Dao căn bản liền không cảm thấy có cái gì không đúng, không chỉ có ôm lấy Tần Diệu, còn trực tiếp dùng đầu ở Tần Diệu cổ cọ một chút, đôi tay càng là trực tiếp hoàn ở Tần Diệu trên eo.</p>
+<p>Tần Diệu máu cuồn cuộn, trực tiếp cương sững sờ ở tại chỗ.</p>
+<p>Vây xem nhân viên công tác càng là hai mắt trừng lớn.</p>
+<p>Không phải……</p>
+<p>Đây là bọn họ có thể xem sao?</p>
+<p>Diệp Nhạc Dao tiến lên ôm Tần Diệu cái này ôm, thật sự có điểm giống người yêu…… Ân……</p>
+<p>Còn có, bọn họ có biết hay không hiện tại phát sóng trực tiếp đã bắt đầu rồi a?!</p>
+<p>Vừa mới ở nhân viên công tác bên trong xe ngồi xuống Lý Lị thấy như vậy một màn, càng là trực tiếp thét chói tai ra tiếng “Hắn, hắn, hắn, Diệp Nhạc Dao!”</p>
+<p>Trợ lý chạy nhanh ngăn lại Lý Lị “Lị tỷ, nhỏ giọng điểm!”</p>
+<p>Phòng live stream làn đạn lúc này cũng xoát đến bay nhanh</p>
+<p>“???”</p>
+<p>“Không phải, Diệp Nhạc Dao, ngươi đang làm gì a?”</p>
+<p>“Này…… Cái này ôm…… Không thể nào, sẽ không thật là ta tưởng như vậy đi?”</p>
+<p>“A? Dưa King muốn yêu đương?”</p>
+<p>“Cái gì? Diệp Nhạc Dao cùng Tần Diệu ở bên nhau?”</p>
+<p>“Không phải? Các ngươi ở tạo cái gì dao a?”</p>
+<p>Làn đạn nháy mắt nổi giận</p>
+<p>“Đây là chúng ta bịa đặt sao?! Các ngươi chính mình trợn mắt nhìn xem, bọn họ này ôm, này không khí, ái muội đều có thể kéo sợi!”</p>
+<p>Mọi người</p>
+<p>“Ân ân ân!”</p>
+<p>“Tần Diệu mặt đều đỏ!”</p>
+<p>Fans</p>
+<p>“Đúng đúng đúng!”</p>
+<p>“Các ngươi còn dám nói bọn họ không có ở bên nhau?”</p>
+<p>Vừa đến phòng live stream các võng hữu là thật sự ngốc</p>
+<p>“Cho nên bọn họ như thế nào liền ở bên nhau a?!”</p>
+<p>“Một chút dự triệu đều không có a!”</p>
+<p>“Quá đột nhiên!”</p>
+<p>Không chỉ có ăn dưa các võng hữu nghi hoặc, máy theo dõi trước nhân viên công tác cùng với đạo diễn nhà làm phim đều là không hiểu ra sao.</p>
+<p>Thượng một kỳ tiết mục thu thời điểm còn chỉ là dắt một chút tay, như thế nào này một kỳ trực tiếp liền tới rồi một cái như vậy ái muội ôm a?</p>
+<p>Này ánh mắt, này ôm, này tư thế…… Thấy thế nào đều không trong sạch a!</p>
+<p>Cho nên thật sự không có ở bên nhau sao?</p>
+<p>Nhưng không có ở bên nhau nói, cái này ôm lại muốn như thế nào giải thích?</p>
+<p>Ái muội kỳ?</p>
+<p>Không thể nào?</p>
+<p>Chẳng lẽ thật sự đến phiên bọn họ ăn dưa King dưa?</p>
+<p>Đừng nói, đột nhiên liền có điểm mong đợi.</p>
+<p>Lại xem màn hình, Diệp Nhạc Dao cùng Tần Diệu lúc này còn không có tách ra.</p>
+<p>Liền ở nhân viên công tác do dự muốn hay không tiến lên nhắc nhở một chút hai người khi, liền nghe được lưỡng đạo giật mình thanh âm trước sau vang lên</p>
+<p>Lê Tư Viễn khiếp sợ “Không phải, hai ngươi tình huống như thế nào a?”</p>
+<p>Tống Triết Hàm càng trực tiếp “Các ngươi đang nói?”</p>
+<p>Lưỡng đạo quen thuộc thanh âm nháy mắt làm Tần Diệu hoàn hồn, hắn ngón tay nhẹ nhàng đáp ở Diệp Nhạc Dao trên vai, đem Diệp Nhạc Dao ra bên ngoài đẩy một chút “Nhạc Dao……”</p>
+<p>Diệp Nhạc Dao tức khắc liền có chút bất mãn</p>
+<p>【 như thế nào không gọi ta Dao Dao? Ta cảm thấy phía trước cái kia xưng hô liền khá tốt. 】</p>
+<p>Tần Diệu trên mặt đỏ ửng càng nhiều.</p>
+<p>Diệp Nhạc Dao cũng chú ý tới Tống Triết Hàm cùng Lê Tư Viễn, ghé vào Tần Diệu cổ cuối cùng nhẹ nhàng ngửi một chút, mới đứng dậy nghiêng đầu nhìn về phía bọn họ phất tay “Các ngươi cũng tới rồi nha.”</p>
+<p>【 bất quá hai người bọn họ biểu tình như thế nào như vậy kỳ quái? 】</p>
+<p>【 còn có, Câu Sử lão sư câu nói kia có ý tứ gì a? 】</p>
+<p>Tống Triết Hàm tầm mắt ở hai người trên người bay nhanh quét tới quét lui, cơ hồ là nháy mắt hắn liền làm rõ ràng tình huống hiện tại.</p>
+<p>Lê Tư Viễn còn tưởng mở miệng nói cái gì, Tống Triết Hàm bỗng nhiên duỗi tay ngăn cản hắn, thấp giọng nói “Đừng nói nữa.”</p>
+<p>Lê Tư Viễn đầy mặt khó hiểu “Vì cái gì? Tốt như vậy cơ hội xem kịch vui cơ hội, ngươi thế nhưng……”</p>
+<p>Tống Triết Hàm buồn cười “Chính là bởi vì muốn xem trò hay, cho nên mới càng không thể lúc này chọc thủng.”</p>
+<p>Lê Tư Viễn sửng sốt một chút, đi theo Tống Triết Hàm tầm mắt xem qua đi, dừng ở Diệp Nhạc Dao trên mặt.</p>
+<p>Diệp Nhạc Dao lúc này đã từ Tần Diệu trong lòng ngực ra tới, đứng ở tại chỗ, trên mặt biểu tình như ngày thường. Lê Tư Viễn mày nháy mắt nhăn lại, Diệp Nhạc Dao như thế nào như vậy bình tĩnh?</p>
+<p>Trong chớp nhoáng Lê Tư Viễn nghĩ đến cái gì, kinh ngạc mà quay đầu xem Tống Triết Hàm “Hắn chẳng lẽ……”</p>
+<p>“Đúng vậy.” Tống Triết Hàm mày hơi chọn.</p>
+<p>Có ý tứ.</p>
+<p>Cái kia ôm tư thế quá thân mật, bằng hữu bình thường sao có thể chịu đựng đối phương như vậy thân mật?</p>
+<p>Chỉ có thể thuyết minh Tần Diệu cùng Diệp Nhạc Dao đều đã lướt qua bằng hữu bình thường kia một cái giới hạn, nhưng cố tình Diệp Nhạc Dao lúc này vẫn là vẻ mặt ngây thơ bộ dáng.</p>
+<p>Thật sự có ý tứ a.</p>
+<p>Xem ra này một kỳ tiết mục thu cũng sẽ phi thường thú vị.</p>
+<p>Tống Triết Hàm nhìn thấu không nói toạc.</p>
+<p>Lê Tư Viễn cũng minh bạch hắn ý tứ, cái gì cũng chưa nói, đến gần sau, chỉ là dùng một loại ý vị thâm trường ánh mắt xem Tần Diệu.</p>
+<p>Tần Diệu lúc này rốt cuộc sửa sang lại hảo biểu tình, đón Lê Tư Viễn ánh mắt cũng không có lại lộ ra cái gì sơ hở.</p>
+<p>Chỉ là đáng tiếc, vô luận hắn ngụy trang đến thật tốt, nên bị chụp được tới đã bị chụp được tới, nên bị nhìn đến cũng đều bị thấy được.</p>
+<p>Tống Triết Hàm trong mắt tất cả đều là chế nhạo, nhìn thoáng qua hai người liền dẫn đầu triều xe buýt đi đến.</p>
+<p>Lê Tư Viễn đi theo hắn phía sau, vừa đi một bên tấm tắc lắc đầu.</p>
+<p>Diệp Nhạc Dao là thật sự không hiểu ra sao, liền đi kéo Tần Diệu tay “Tần tổng, bọn họ như thế nào……”</p>
+<p>Tần Diệu kịp thời đem chính mình tay trừu trở về, sau đó thấp giọng hỏi “Ngày đó vấn đề, ngươi tưởng minh bạch sao?”</p>
+<p>Diệp Nhạc Dao tức khắc mặt lộ vẻ khó xử.</p>
+<p>Tần Diệu dưới đáy lòng bất đắc dĩ thở dài “Không có việc gì, đi thôi, nơi này thái dương đại, chúng ta trước đi lên.”</p>
+<p>Diệp Nhạc Dao gật đầu “Nga.”</p>
+<p>Tống Triết Hàm cùng Lê Tư Viễn đã tìm hảo từng người vị trí ngồi xuống.</p>
+<p>Diệp Nhạc Dao chọn một cái trung gian dựa cửa sổ vị trí, thấy Tần Diệu phóng hảo hành lý, liền triều Tần Diệu phất tay.</p>
+<p>Tần Diệu lần này chỉ là do dự một giây, liền triều Diệp Nhạc Dao đã đi tới, ở hắn bên cạnh ngồi xuống.</p>
+<p>Theo Tần Diệu ngồi xuống, Lê Tư Viễn không nhịn xuống lại cười một tiếng.</p>
+<p>Diệp Nhạc Dao thật sự không nhịn xuống, ở trong lòng buồn bực.</p>
+<p>【 Lê Tư Viễn đang cười cái gì? 】</p>
+<p>【 ta như thế nào cảm giác hắn hôm nay giống như phá lệ cao hứng? 】</p>
+<p>Tần Diệu cảm giác chính mình trên mặt độ ấm liền không có đi xuống quá, hắn nhấp môi, không nói chuyện.</p>
+<p>Cũng may Diệp Nhạc Dao cũng không nghĩ nhiều.</p>
+<p>Thực mau, mặt khác thường trú khách quý lục tục tới rồi.</p>
+<p>Hoắc Yến là cuối cùng một cái đến, hắn vừa lên xe, tầm mắt liền dừng ở Diệp Nhạc Dao trên người, theo sau liếc mắt hắn bên cạnh Tần Diệu, muốn nói lại thôi.</p>
+<p>Cuối cùng, Hoắc Yến vẫn là cái gì cũng chưa nói, nhưng lần này hắn không có trực tiếp ngồi ở Diệp Nhạc Dao bọn họ phía trước, mà là chọn bọn họ đối diện vị trí ngồi xuống.</p>
+<p>Thường trú khách quý đến đông đủ, liền đến phiên phi hành khách quý lên sân khấu.</p>
+<p>“Ai, giống như tới?” Lưu Nghiên nói.</p>
+<p>Một đạo nũng nịu giọng nữ từ xe hạ truyền đến “Các ngươi hảo, ta có phải hay không đã tới chậm nha?”</p>
+<p>Giọng nói lạc, toàn xe các khách quý cũng chưa nhịn xuống đánh một cái rùng mình.</p>
+<p>【 thanh âm này……】</p>
+<p>“Này giống như chính là trong truyền thuyết cái kẹp âm?” Lê Tư Viễn hỏi.</p>
+<p>Không có người trả lời hắn, bởi vì lúc này phi hành khách quý đã chạy tới trên xe.</p>
+<p>Nhìn xa tiền vị này ăn mặc một thân váy đỏ, cuộn sóng cuốn đến eo, hóa lửa cháy môi đỏ nhưng vừa thấy liền không phải nữ khách quý khách quý, mọi người đều mở to hai mắt.</p>
+<p>【 đây là nữ trang? 】</p>
+<p>Diệp Nhạc Dao dẫn đầu lấy lại tinh thần.</p>
+<p>Đột nhiên, Lê Tư Viễn bạo nộ thanh âm từ phía sau vang lên “Con mẹ nó, ai đem cái này súc sinh cấp mời tới?!”</p>
+<p>Chư vị khách quý đều là ngẩn ra, động tác nhất trí mà quay đầu nhìn về phía Lê Tư Viễn.</p>
+<p>【 a? Nhân gia khách quý vừa tới Lê Tư Viễn liền mắng như vậy dơ sao? 】</p>
+<p>【 từ từ…… Nữ trang, súc sinh, Lê Tư Viễn……】</p>
+<p>Diệp Nhạc Dao lấy ra di động, click mở bản ghi nhớ.</p>
+<p>Ngay sau đó, hắn ở trong lòng cuồng tiếu ra tiếng</p>
+<p>【 ha ha ha ha ha ha ha ha ha ha ——】</p>
+<p>【 nguyên lai là hắn a! Ta nói Lê Tư Viễn như thế nào đột nhiên tạc mao, nguyên lai hắn chính là Lê Tư Viễn trước võng luyến đối tượng! 】</p>
+<p>Tần Diệu Hoắc Yến ?</p>
+<p>Trước  võng luyến đối tượng?</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong75.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong77.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "nguoi-qua-duong-giap-tieng-long-tiet-lo-sau-bi-vai-ac-ca-nha-doan-sung";
+const NOVEL_TITLE = "Người qua đường Giáp tiếng lòng tiết lộ sau bị vai ác cả nhà đoàn sủng";
+const CHAPTER_TITLE = "Chương 76. Võng luyến đối tượng";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

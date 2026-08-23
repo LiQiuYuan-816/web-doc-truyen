@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 14</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Trầm mê ăn dưa ta tiết lộ tiếng lòng sau cả nhà tạc
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 14</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong13.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong15.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Hắn chưa nói tin hay không, chỉ là đi theo Lộ Hành Chu phía sau, Lộ Hành Chu cười hì hì quay đầu tới nhìn mắt Lộ Vân Nhĩ, Lộ Vân Nhĩ trong mắt hiện lên một tia bất đắc dĩ nói “Hảo, Tiểu Hành lợi hại nhất.”</p>
+<p>Lộ Hành Chu nghe được khích lệ vừa lòng quay đầu, Lộ Vân Nhĩ đầy mặt sủng nịch nhìn Lộ Hành Chu, tươi sống... Vừa mới cười hì hì Lộ Hành Chu, đặc biệt tươi sống.</p>
+<p>Cùng hắn phía trước an tĩnh giống một bãi nước lặng bộ dáng hoàn toàn không giống nhau.</p>
+<p>Lộ Vân Nhĩ rõ ràng mà biết tại sao lại như vậy, phía trước Lộ Hành Chu, lưng đeo tư sinh tử thanh danh, lưng đeo phá hủy cái này gia đình tội, quản chi này đó không nên hắn lưng đeo.</p>
+<p>Hiện tại, hắn đã biết hết thảy, cho nên những cái đó gông xiềng dần dần chậm rãi biến mất, Tiểu Lục thuộc về thiếu niên tươi sống khí cũng liền đã trở lại.</p>
+<p>Nghĩ vậy, Lộ Vân Nhĩ áy náy lại gia tăng một ít.</p>
+<p>Về tới trong nhà, Lộ Hành Chu bị kéo đến Tống lão gia tử bên người ngồi xuống, trước mặt là một bàn lớn</p>
+<p>Mỹ thực</p>
+<p>Phô mai hấp tôm hùm, thịt kho tàu tiểu bài, hạt dẻ thiêu gà, thanh xào bông cải xanh, đều là một ít cơm nhà.</p>
+<p>Tống Khanh vây quanh tạp dề, cẩn thận nhìn Lộ Hành Chu nói “Này đó đều là mụ mụ làm, Tiểu Hành ngươi nhìn xem ngươi thích sao?”</p>
+<p>Lộ Hành Chu giơ lên mặt, hắn hướng tới Tống Khanh cười cười nói “Đều là ta thích ăn.”</p>
+<p>Tống Khanh cũng buông xuống lo lắng, ôn nhu cười cười nói; “Tiểu Hành thích liền hảo.”</p>
+<p>Lộ Hành Chu gật gật đầu cúi đầu bắt đầu ăn cơm, hạt dẻ thiêu gà hàm tiên mềm mại, thịt gà rất là ngon miệng, hạt dẻ cũng thơm ngọt ngon miệng.</p>
+<p>Thịt kho tàu tiểu bài càng là cắn thoát cốt, xem ra là hạ công phu.</p>
+<p>Kỳ thật nói thật, nếu làm Lộ Hành Chu chính mình tới làm, hắn làm có thể càng tốt ăn, nhưng là, đây là mụ mụ làm cơm, hắn lần đầu tiên ăn đến, mụ mụ cho hắn làm cơm.</p>
+<p>Tuy rằng, hắn biết, Tống Khanh đối hắn càng nhiều có thể là áy náy, nhưng là, không có ái nơi nào tới áy náy?</p>
+<p>Hắn chỉ có tiếp thu Tống Khanh hảo, Tống Khanh mới có thể chậm rãi buông áy náy.</p>
+<p>Ăn cơm thời điểm, Lộ Hành Chu nhìn về phía Tống Thời, nói lên, hắn giống như nghĩ tới vừa mới có chỉ hoa lê nói với hắn, Tống Thời xe thượng bị người trang thượng bom tới.</p>
+<p>Trên xe vượt qua hai người bom liền sẽ kíp nổ.</p>
+<p>【 tê, đại cữu cùng ông ngoại hẳn là không đi rồi đi? Bọn họ tới thời điểm là ngồi trực thăng tới, nếu là phải đi nói, hẳn là cũng là ngồi trực thăng đi? 】</p>
+<p>Tống lão gia tử ngẩng đầu, hắn từ ái nhìn Lộ Hành Chu nói “Chu Chu, muốn hay không cùng ông ngoại cùng nhau trở về a?”</p>
+<p>Lộ Hành Chu lắc lắc đầu nói; “Ông ngoại, mấy ngày nay ta còn là ở nhà ngốc đi, chờ thêm hai ngày ta đi ông ngoại gia chơi.”</p>
+<p>【 ta còn phải cấp miêu miêu nhóm rửa sạch một chút thân thể trị liệu một chút bệnh ngoài da đâu, hơn nữa cái kia hàng giả quá hai ngày cũng nên đã trở lại, nói lên giống như chính là cha ta cấp mang về tới, ta còn chờ xem diễn đâu. 】</p>
+<p>Tống lão gia tử trong mắt tinh quang chợt lóe, hắn nhìn Tống Khanh khụ khụ hai tiếng nói “Kia ta cũng quá hai ngày lại đi, ở các ngươi này ngốc một đoạn thời gian đi.”</p>
+<p>Nói xong hắn nhìn Tống Thời nói “Ngươi đợi lát nữa chính mình làm phi cơ trở về đi.”</p>
+<p>Tống Thời tới phía trước người ở Đông Hải đang theo người nói sinh ý đâu, biên nghỉ phép biên nói sinh ý, bằng không hắn cũng sẽ không một thân bờ biển nghỉ phép giả dạng.</p>
+<p>Nguyên bản cho rằng hắn có thể trực tiếp về nhà tới, kết quả Tống lão gia tử một trương miệng, hắn lại muốn đi làm việc, bất quá... Tống Thời suy nghĩ, là ai cho hắn xe trang bom?</p>
+<p>Tiểu cháu ngoại thần dị hắn đã kiến thức tới rồi, cho nên Lộ Hành Chu lời nói hắn là tin.</p>
+<p>Mà Lộ Hành Chu cũng suy nghĩ Lê Hoa miêu miêu nói, hắn nói chính là Tống Thời, Lê Hoa miêu miêu nói chính là cái kia xuyên hoa hòe loè loẹt cái kia cùng hắn khí vị rất giống hai chân thú.</p>
+<p>Khí vị đối miêu miêu nhóm tới nói chính là huyết thống quan hệ, mỗi một nhân loại hơi thở là không giống nhau, hơi thở gần người đâu, hai người chính là có huyết thống quan hệ thân nhân.</p>
+<p>Ăn uống no đủ lúc sau, Tống Thời điện thoại vang lên, Tống gia tài xế cấp Tống Thời gọi điện thoại hỏi “Thời thiếu gia, ta đã đến Lộ gia trang viên đại môn.”</p>
+<p>Tống Thời sửng sốt một chút, hắn nhìn điện thoại xác thật là tài xế điện thoại, Tống Thời hỏi “Là lão Khâu? Ta không cho ngươi gọi điện thoại phải dùng xe a.”</p>
+<p>Lão Khâu nói “Là ngài cho ta gửi tin tức làm ta lại đây a.”</p>
+<p>Lộ Hành Chu yên lặng ngẩng đầu lên nhìn Tống Thời.</p>
+<p>【 cái này ta biết, miêu miêu nói, trang bom chính là một cái tiểu mang mắt kính nam nhân, di động tin tức cũng là hắn phát. 】</p>
+<p>Tống Thời sửng sốt một chút, Tống lão gia tử còn lại là hận sắt không thành thép nhìn Tống Thời hừ lạnh một tiếng, hắn nói “Sao lại thế này?”</p>
+<p>Tống Thời nhìn lão gia tử nói “Ta không làm lão Khâu lại đây, lão Khâu nói thu được ta tin tức, sau đó lại đây tiếp ta.”</p>
+<p>Nếu nói không nghe được Lộ Hành Chu tiếng lòng, Tống Thời căn bản sẽ không hỏi cái này một câu, ngược lại sẽ trực tiếp làm lão Khâu chờ, hắn đợi lát nữa liền lên xe trở về, rốt cuộc ngồi trực thăng động tĩnh rất đại.</p>
+<p>Mà nghe được Lộ Hành Chu tiếng lòng lúc sau, hắn theo bản năng mà liền hỏi ra những lời này, kết quả lão Khâu nói là hắn số di động phát quá khứ tin nhắn.</p>
+<p>Tống Thời trước làm lão Khâu xuống xe lại đây, sau đó cắt đứt điện thoại nhìn mắt chính mình di động bên trong tin tức.</p>
+<p>Cùng lão Khâu khung thoại căn bản cái gì đều không có, chờ lão Khâu lại đây, hắn nhìn mắt lão Khâu di động.</p>
+<p>Bên trong thình lình xuất hiện một cái tin nhắn, vẫn là chính mình nhận được tiểu muội tin tức lúc sau chuẩn bị lại đây thời điểm chia cho lão Khâu.</p>
+<p>Chính là hắn nhớ rõ rành mạch, chính mình không phát này tin nhắn, mang mắt kính nam nhân... Chính mình bên người mang mắt kính nam nhân còn có thể tiếp xúc đến hắn di động chỉ có hắn trợ thủ, mà hắn trợ thủ là hắn bạn tốt nhi tử, không nên a.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong13.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong15.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tram-me-an-dua-ta-tiet-lo-tieng-long-sau-ca-nha-tac";
+const NOVEL_TITLE = "Trầm mê ăn dưa ta tiết lộ tiếng lòng sau cả nhà tạc";
+const CHAPTER_TITLE = "Chương 14";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

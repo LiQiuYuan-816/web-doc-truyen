@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 18</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Xuyên qua chi nhà có tiểu phu lang
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 18</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong17.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong19.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Lê Diệu Nam rời đi về sau, Lâm Dĩ Hiên cũng không nhàn rỗi, lập tức đi cảnh lan viện phòng khách, làm người gọi tới sở hữu hạ nhân.</p>
+<p>Giống nhau gia đình giàu có cô dâu vào cửa, tổng muốn trước cùng bọn hạ nhân dạy bảo, một là vì lập uy, nhị là vì nhận người, hắn tự nhiên cũng không ngoại lệ.</p>
+<p>“Thiếu gia thỉnh dùng trà!” Xuân tinh xảo cười xinh đẹp, vì Lâm Dĩ Hiên rót thượng nước trà, cười hồi bẩm hôm nay tìm hiểu nói một ít việc “Cô gia sân có một cái ma ma, bốn cái đại a đầu, bốn cái nhị đẳng nha đầu, ba cái thô sử nha đầu, ba cái gã sai vặt, Lý ma ma hôm qua ngài gặp qua, nàng là phu nhân người, hổ phách cùng ngọc châu còn lại là lão phu nhân ban cho. Mặt khác mấy cái nha đầu, trừ bỏ thô sử nha hoàn ở ngoài, đều là cô gia trước đoạn nhật tử mua tới.”</p>
+<p>“Ân! Còn có đâu?” Lâm Dĩ Hiên tùy chỗ hỏi, bình tĩnh ánh mắt gợn sóng bất kinh, tựa hồ đối quanh mình hết thảy đều không lắm để ý.</p>
+<p>Xuân tiêm cười cười, linh động đôi mắt lưu chuyển, lời nói ý vị tuyệt vời “Ngài không biết, chúng ta cô gia thật đúng là vị diệu nhân nhi, nhà người khác nha hoàn, đều là dùng để hầu hạ chủ tử, cô gia nơi này lại là làm như Bồ Tát cung phụng, nhìn hổ phách cùng ngọc châu kia đắc ý kính nhi, còn tự cho là đúng cảnh lan viện đệ nhất nhân đâu, ngày ngày cùng Lý ma ma đấu võ đài, hôm qua còn bởi vì mấy cái tiền thưởng sảo lên, cười chết ta.”</p>
+<p>“Hạ nhân mà thôi, xử trí đó là, các nàng mất mặt, cảnh lan viện trên mặt cũng khó coi, còn nghe được khác cái gì?” Hắn lần này xuất giá, Lâm mẫu tiêu phí bó lớn tâm tư, quang của hồi môn nha hoàn liền có sáu người, trong đó bốn người là trải qua chọn lựa kỹ càng, mỗi người đều có thể một mình đảm đương một phía, mặt khác hai người còn lại là cấp cô gia bị hạ thông phòng, toàn gia bán mình khế đều ở trong tay hắn nắm, không sợ các nàng tâm sinh đừng niệm. Trừ cái này ra còn có bốn cái gã sai vặt, cùng với sáu nhà tôi người, Lâm mẫu liền sợ hắn ở Lê phủ chịu ủy khuất, đem hắn bên người hết thảy đều chuẩn bị chu đáo.</p>
+<p>Nhớ tới Lâm mẫu, Lâm Dĩ Hiên trong lòng hơi hơi ấm áp, ánh mắt nhìn về phía Lê Diệu Nam nơi thư phòng, trầm tư lên, lúc này hắn chẳng sợ lại không muốn thừa nhận, trong lòng đối Lê Diệu Nam lại như thế nào bất mãn, hắn cũng biết, hắn cùng Lê Diệu Nam hiện tại cùng chiếc thuyền thượng, cảnh lan viện sự, cũng chính là chuyện của hắn.</p>
+<p>Xuân tiêm do dự một chút, trả lời nói “Cô gia ở trong phủ tình cảnh không được tốt, hiện tại phu nhân là trắc thất phù chính, tiên phu nhân sớm ở mười năm trước liền đi, hôn sự này là Lê gia đại thiếu bảo đảm, lúc ấy cô gia thực mâu thuẫn, sau lại không biết vì sao lại đáp ứng rồi, ta lo lắng......”</p>
+<p>“Không ngại!” Lâm Dĩ Hiên đánh gãy nàng nói, những việc này hắn đã sớm biết, Mã Ngọc Liên cùng lão phu nhân đánh cái gì tính toán hắn cũng biết, hắn hiện giờ cầu cũng chỉ là cái an thân nơi, Lê Diệu Nam chỉ cần không cùng hắn lão tử giống nhau sủng thiếp diệt thê, trong tay hắn muốn người có người, muốn tiền có tiền, nào còn sầu quá không ngày lành, hiện tại duy nhất chỉ khuyết thiếu một cái người thừa kế, bất quá hiện giờ vừa mới thành hôn, thời gian thượng sớm, nhi tử sự tình hắn sẽ thận trọng suy xét, Lê Diệu Nam nếu thật sự đoản mệnh, hắn tất yếu ở kia phía trước hoài thượng, lúc sau liền có thể mang theo nhi tử dọn ra Lê phủ tự lập môn hộ, chỉ cần hắn một ngày không tái giá, làm tiết phu, liền ai cũng không làm gì được hắn.</p>
+<p>Không thể không nói, ở nào đó địa phương, Lâm Dĩ Hiên tư duy cùng Lê Diệu Nam đạt tới đồng bộ, hai người đều tưởng rời đi Lê phủ tự lập môn hộ.</p>
+<p>Không bao lâu, tím ương tiến đến bẩm báo, Lý ma ma mang theo một cây hạ nhân, đã ở phòng khách bên ngoài chờ.</p>
+<p>“Truyền vào đi!” Lâm Dĩ Hiên thu hồi suy nghĩ, theo hắn giọng nói rơi xuống, bọn hạ nhân nối đuôi nhau mà nhập. Bởi vì hôm qua khăn voan che khuất nhìn không thấy, hôm nay buổi sáng lại quá mức vội vàng, này vẫn là hắn lần đầu tiên con mắt nhìn thấy, Mã Ngọc Liên trong miệng cái gọi là xinh đẹp nha hoàn.</p>
+<p>Quả nhiên lớn lên không tồi, Lâm Dĩ Hiên ngưng mi nhìn chăm chú, quan sát kỹ lưỡng các nàng, cảnh lan viện nha hoàn, trừ bỏ ba cái vẩy nước quét nhà nha đầu thoạt nhìn tư sắc lược hiện đơn bạc, còn lại người, bao gồm ngọc châu, hổ phách ở bên trong, mỗi người đều xinh đẹp thủy linh, hơn nữa còn đúng là hoa giống nhau tuổi tác.</p>
+<p>Lâm Dĩ Hiên trong lòng khinh bỉ, cấp Lê Diệu Nam trên đầu trừ bỏ vô lại ở ngoài, thêm nữa thêm một bút tham hoa háo sắc, mất công tiểu biểu đệ còn nói Lê Diệu Nam không thông phòng, hắn liền biết không có thể tin, này mấy cái nha hoàn tuy không phải thông phòng, nhưng kia dáng vẻ, kia dáng người, không phải vì thông phòng làm chuẩn bị vẫn là cái gì.</p>
+<p>“Cấp nhị thiếu phu nhân thỉnh an.” Lý ma ma ngẩng đầu ưỡn ngực đi tuốt đàng trước đoan, chỉ hành lễ, liền lo chính mình đứng lên.</p>
+<p>Hổ phách cùng ngọc châu, học theo.</p>
+<p>Lâm Dĩ Hiên cũng không thèm để ý, chỉ nhàn nhạt hỏi “Nói nói đều gọi tên gì, sẽ chút cái gì, ở đâu hầu hạ?”</p>
+<p>Lý ma ma vẻ mặt kiêu ngạo, trong lòng hạ quyết tâm, phải cho tân phu nhân một cái ra oai phủ đầu, bằng không này cảnh lan viện nào còn có nàng vị trí, nhị thiếu gia hiện giờ là càng ngày càng gian xảo “Lão nô là nhị thiếu gia trong viện quản sự ma ma, phu nhân cùng nhị thiếu gia giống nhau, kêu lão thân Lý ma ma đó là, cảnh lan viện hết thảy đều là từ lão nô xử lý, nhị thiếu phu nhân tân vào cửa, nếu có cái gì không hiểu, chỉ lo tới hỏi lão nô, lão nô chắc chắn biết gì nói hết, nhị thiếu gia tính tình nha, ta là nhất rõ ràng.”</p>
+<p>Hổ phách cùng ngọc châu khinh thường, Lý ma ma không phải ỷ vào chính mình tư cách lão sao, lại không phải thiếu gia nãi ma ma, còn dám làm bộ làm tịch, hừ! Các nàng chính là lão phu nhân ban cho.</p>
+<p>“Nô tỳ ngọc châu, gặp qua nhị thiếu phu nhân.”</p>
+<p>“Nô tỳ hổ phách, gặp qua nhị thiếu phu nhân.”</p>
+<p>“Chúng ta đều là ở nhị thiếu gia trong phòng hầu hạ.”</p>
+<p>Hai cái nha đầu duyên dáng yêu kiều, trong ánh mắt khinh miệt rõ ràng, nhị thiếu gia lúc trước vì kháng hôn, còn hộc máu hôn mê bất tỉnh, các nàng liền không tin, vị này tân phu nhân có thể ở Lê phủ dừng bước cùng.</p>
+<p>“Nô tỳ tuyết trản, cấp thiếu phu nhân thỉnh an.”</p>
+<p>“Nô tỳ mặc duyên, cấp thiếu phu nhân thỉnh an.”</p>
+<p>“......”</p>
+<p>Lâm Dĩ Hiên an tĩnh ở ngồi, trên mặt tuy rằng lạnh như băng, không có gì biểu tình, lại chính là cho người ta một loại cao không thể phàn cảm giác.</p>
+<p>Lý ma ma xem đến trong lòng thẳng tán thưởng, quả nhiên là nhà cao cửa rộng ra tới, cả người khí thế chính là không giống nhau, bất quá kia lại như thế nào, Lâm Dĩ Hiên xuất thân lại hảo cũng là cái song nhi, hơn nữa còn gả cho nhị thiếu gia, tấm tắc! Về sau còn không phải muốn ở phu nhân dưới tay kiếm ăn.</p>
+<p>Lâm Dĩ Hiên lẳng lặng mà nghe, thực rõ ràng, Lê Diệu Nam tân mua nha hoàn, xưng hô hắn vì thiếu phu nhân, mà những người khác tắc xưng hô hắn vì nhị thiếu phu nhân, tuy rằng chỉ có một chữ chi kém, nhưng nội dung lại cách biệt một trời. Thấy Lý ma ma một đôi mắt hạt châu khắp nơi loạn chuyển, Lâm Dĩ Hiên trong lòng sáng tỏ, này ác nô là tưởng cùng phu nhân hát đôi, một cái mặt đỏ một cái mặt trắng, hắn nếu liền cảnh lan viện đều quản không được, trừ bỏ hướng phu nhân xin giúp đỡ, của hồi môn chỉ sợ cũng khó giữ được.</p>
+<p>Lâm Dĩ Hiên nửa hạp mi mắt, không chút để ý nói “Ta này không có quá nhiều quy củ, làm tốt các ngươi phân nội sự có thể, Lý ma ma là trong phòng lão nhân, hổ phách, ngọc châu lại là lão phu nhân ban cho, các ngươi thân phận bất đồng, không cần làm những cái đó hầu hạ người sống.”</p>
+<p>Lý ma ma vẻ mặt ý cười, liền biết tân phu nhân không được việc, nàng liền nói sao, nhà cao cửa rộng lại như thế nào, gả cho nhị thiếu gia, chính là Lê gia người, tự nhiên phải đối nàng cái này lão ma ma kính.</p>
+<p>Hổ phách cùng ngọc châu rất đắc ý, chỉ nói tân phu nhân là sợ các nàng, quả nhiên nồi nào úp vung nấy, cùng nhị thiếu gia giống nhau không xương cốt, bất quá như vậy cũng hảo, tân phu nhân nếu là cái lợi hại, nào còn có các nàng đường sống.</p>
+<p>Còn không đợi các nàng cao hứng, chỉ nghe Lâm Dĩ Hiên lại nói tiếp “Nghe nói lão phu nhân sinh nhật mau tới rồi, các ngươi một người đi sao chép 100 biến kinh Phật, xem như cấp lão phu nhân cầu phúc.”</p>
+<p>“Này sao được!” Lý ma ma kinh hô ra tiếng, đôi mắt trừng mắt so chuông đồng còn viên, lập tức có chút đứng thẳng không xong.</p>
+<p>Hổ phách, ngọc châu đồng thời biến sắc.</p>
+<p>Lâm Dĩ Hiên mặt mày một chọn “Như thế nào? Các ngươi không muốn?”</p>
+<p>“Không...... Không có......” Lý ma ma nhanh chóng suy tư đối sách, cấp lão phu nhân cầu phúc nàng nào dám nói không muốn, lại không phải không muốn sống nữa.</p>
+<p>Ngọc châu vội vàng nói “Nô tỳ không biết chữ, còn thỉnh nhị thiếu phu nhân thứ lỗi.”</p>
+<p>Hổ phách trong đầu linh quang chợt lóe “Nô tỳ cũng không biết chữ.”</p>
+<p>Lâm Dĩ Hiên đem lộng trong tay bát trà, nhợt nhạt hạp một ngụm “Không quan hệ, tâm ý tới rồi có thể, các ngươi là lão phu nhân người, cấp lão phu nhân cầu phúc theo lý thường hẳn là, chẳng lẽ các ngươi còn tưởng chối từ không thành.”</p>
+<p>Hổ phách ngọc châu âm thầm nôn nóng, tân phu nhân lời nói đều nói đến này phân thượng, các nàng nào còn dám không đáp ứng, trong lòng ẩn ẩn hối hận lên, sớm biết rằng tân phu nhân lợi hại như vậy, các nàng phía trước lại như thế nào bừa bãi.</p>
+<p>“Nếu không có không muốn, vậy các ngươi liền đi xuống đi, vì lão phu nhân cầu phúc là chuyện tốt, cũng là các ngươi phúc khí, lão phu nhân biết trong lòng nhất định vui mừng.” Lâm Dĩ Hiên dăm ba câu, đuổi rồi mấy cái người vướng bận.</p>
+<p>Lý ma ma sắc mặt hôi bại, trong lòng biết việc đã đến nước này, lại vô hoãn chuyển đường sống, chỉ ám hối chính mình xem thường tân phu nhân, hiện giờ nàng liền tính cáo trạng cũng chưa chỗ đi, tân phu nhân nơi chốn chiếm lý, nàng tổng không thể cùng người khác nói, cấp lão phu nhân cầu phúc là sai.</p>
+<p>Hổ phách cùng ngọc châu sắc mặt cũng khó coi, trong lòng đem Lâm Dĩ Hiên hận đến muốn chết, 100 biến kinh Phật, các nàng muốn sao tới khi nào a......</p>
+<p>Tuyết trản cùng mặc duyên đám người sụp mi thuận mắt, thái độ càng thêm kính cẩn nghe theo.</p>
+<p>Lâm Dĩ Hiên chỉ quét các nàng liếc mắt một cái “Được rồi, đều đi xuống bãi, mỗi người một điếu tiền thưởng, nên làm gì làm gì đi.”</p>
+<p>Tất cả mọi người nhẹ nhàng thở ra, vội vàng rời khỏi phòng khách, tân phu nhân ra oai phủ đầu, cũng thật đủ lợi hại, nói mấy câu liền đem bọn họ cấp chấn trụ.</p>
+<p>Lê Diệu Nam biết việc này thời điểm, đã là buổi tối, chỉ ở trong lòng cảm thán một phen, hậu trạch quả nhiên vẫn là phụ nhân thiên hạ, đối mặt Lâm Dĩ Hiên thủ đoạn, hắn hổ thẹn không bằng. Lê Diệu Nam đột nhiên cảm thấy, cưới vợ, kỳ thật cũng không có gì không tốt, hắn thực chờ mong Lâm Dĩ Hiên kế tiếp biểu hiện.</p>
+<p>Đêm đó, hai người phòng ngủ trung nhiều một trương trường kỷ, Lê Diệu Nam chỉ đương không nhìn thấy, như cũ độc bá giường lớn.</p>
+<p>Lâm Dĩ Hiên ban đêm trở lại trong phòng, thấy trên giường ngủ say trượng phu, trong lòng không có chút nào ngoài ý muốn, Lê Diệu Nam trong mắt hắn, chính là một cái gian xảo xảo trá lại ích kỷ người, tuyệt đối sẽ không bởi vì chính mình là song nhi liền có điều khiêm nhượng.</p>
+<p>Trước nhẫn nhẫn đi, Lâm Dĩ Hiên âm thầm nói cho chính mình, chờ đến ba ngày hồi môn qua đi, bọn họ liền có thể phân phòng ngủ, cũng không sợ sẽ bị người khác tranh cãi.</p>
+<p>Sáng sớm hôm sau, Lê Diệu Nam liền đi tộc huynh chỗ, tuy rằng ước hảo chính là 5 ngày sau tái kiến, nhưng hắn thật sự có chút chờ không kịp.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong17.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong19.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "xuyen-qua-chi-nha-co-tieu-phu-lang";
+const NOVEL_TITLE = "Xuyên qua chi nhà có tiểu phu lang";
+const CHAPTER_TITLE = "Chương 18";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

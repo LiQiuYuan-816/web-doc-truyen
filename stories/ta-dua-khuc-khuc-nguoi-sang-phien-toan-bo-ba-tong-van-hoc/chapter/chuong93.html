@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 93: Chương 93 thao tác giả con cá nhỏ ( một )</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ta dựa khúc khúc người, sang phiên toàn bộ bá tổng văn học!
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 93: Chương 93 thao tác giả con cá nhỏ ( một )</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong92.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong94.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Buổi tối, Lệ dĩ sâm chuyên môn đem trên ban công môn, cùng với đi bức màn gắt gao đóng lại.</p>
+<p>Lệ dĩ sâm thề chờ đến đối diện cái kia lão rời đi, kia một bộ biệt thự đều đến sửa chữa tiêu độc, hắn đã không nỡ nhìn thẳng chính mình ban công.</p>
+<p>Đem sở hữu môn cùng cửa sổ đóng kín sau, rõ ràng toàn bộ phòng liền an tĩnh không ít, Thẩm kinh nghiên cùng Lệ dĩ sâm cuối cùng cũng ngủ một cái hảo giác.</p>
+<p>Cách thiên, chúc dư tinh thần phấn chấn ngồi ở trên bàn cơm ăn bữa sáng.</p>
+<p>Nhìn đến hai người xuống dưới còn hướng hai người vẫy vẫy tay “Nhanh lên xuống dưới ăn cơm, quá trong chốc lát chúng ta cùng đi công ty.”</p>
+<p>Thẩm kinh mặc nhìn nhìn hai người chỉ là hơi hơi gật gật đầu, cũng không có nói lời nói.</p>
+<p>Có thể là đêm qua giấc ngủ thời gian đạt tiêu chuẩn, hai người buổi sáng đói bụng thầm thì thẳng kêu, ăn bữa sáng cũng so với phía trước nhiều không ít.</p>
+<p>Chúc dư gần nhất đến công ty liền nhận được các đồng sự nhiệt liệt hoan nghênh.</p>
+<p>Chúc dư cùng tất cả mọi người chào hỏi, đột nhiên thấy được một cái trống rỗng công vị.</p>
+<p>Phó bá ngôn hôm nay không có tới sao?</p>
+<p>Chúc dư nhìn nhìn đồng hồ thượng thời gian, đã đi làm, hắn là đến muộn vẫn là xin nghỉ?</p>
+<p>Chúc dư cấp phó bá ngôn đã phát điều tin tức, đợi một buổi sáng cũng chưa được đến hồi phúc.</p>
+<p>Chúc dư cau mày cấp phó bá ân đã phát điều tin tức.</p>
+<p>Chúc dư: Phó tổng, phó bá ngôn hôm nay không có tới công ty.</p>
+<p>Phó bá ân nhìn đến tin tức trong nháy mắt cũng nhíu mày, rõ ràng hắn đệ đệ sáng sớm liền rời đi biệt thự a.</p>
+<p>Phó bá ân: Hắn không có đi công ty, nhưng là hắn sớm liền rời đi trong nhà.</p>
+<p>Chúc dư: Ta cho hắn đã phát tin tức, nhưng là hắn không có hồi.</p>
+<p>Phó bá ân: Tốt, phiền toái.</p>
+<p>Chúc dư sọ não tê dại, giống nhau xuất hiện loại tình huống này khẳng định lại là nam chủ bệnh phạm vào.</p>
+<p>Nhưng chúc dư cũng không tính toán trộn lẫn, rốt cuộc tốn thời gian cố sức, đối chính mình lại không có lợi.</p>
+<p>Nhưng là sự thật chứng minh thường thường ngươi không nghĩ trộn lẫn sự tình thường thường sẽ hướng trên người của ngươi đâm.</p>
+<p>Mới vừa tan tầm trở lại biệt thự, chúc dư liền nhận được quý dụ điện thoại.</p>
+<p>“Uy?”</p>
+<p>“Ô ô ô……”</p>
+<p>“Uy?”</p>
+<p>“Ô ô ô……”</p>
+<p>Chúc dư hít sâu “Ngươi lại không nói lời nào ta liền quải điện thoại.”</p>
+<p>“Không, không cần.”</p>
+<p>“Vậy ngươi liền nói cái gì chuyện này? Ta mới vừa tan tầm.” Chúc dư ở mới vừa tan tầm ba chữ càng thêm trọng ngữ khí, ngươi biết đối với một cái làm công người tới nói, tan tầm thời gian ý nghĩa cái gì sao? Ý nghĩa tự do.</p>
+<p>“Ta cùng phó bá ngôn chia tay” quý dụ thanh âm đột nhiên bình tĩnh lại.</p>
+<p>Chúc dư nghe thấy cái này tin tức nhướng mày, chia tay? Truy thê hỏa táng tràng nam chủ tuy rằng sẽ chia tay, nhưng là sẽ không vẫn luôn chia tay.</p>
+<p>“Sau đó đâu, sau đó ngươi thương tâm muốn chết, quyết định mang theo hai đứa nhỏ đi xa thiên nhai, đi qua các ngươi ba đơn độc tiểu nhật tử, không mang theo thượng hắn, vĩnh viễn rời đi cái này địa phương, không bao giờ trở lại cái này thương tâm nơi, phải không?” Chúc dư dựa ở trên sô pha lười biếng nói.</p>
+<p>“Ngô…… Ngươi như thế nào biết ta, ta muốn làm cái gì……” Quý dụ trong giọng nói tràn ngập kinh ngạc.</p>
+<p>Tổng cộng các ngươi liền kia nói mấy câu, ngươi trốn hắn truy, hai ngươi đều có chạy đằng trời, chạy bộ chính là hai ngươi gia vị tề, chia tay là hai người các ngươi thiền ngoài miệng, rời đi là hai ngươi quen dùng kỹ xảo.</p>
+<p>Ta cũng không biết nên nói chút cái gì, hảo hảo nhật tử các ngươi phi bất quá, một hai phải làm này đó lung tung rối loạn, một chút cũng không giống người bình thường gia làm đồ vật.</p>
+<p>Liền ở chúc dư đánh điện thoại thời điểm đột nhiên Thẩm kinh nghiên cùng Lệ dĩ sâm vội vã chạy vào.</p>
+<p>Lệ dĩ sâm biểu tình có một chút khó coi, hơi hơi cúi đầu.</p>
+<p>“Các ngươi như thế nào vội vội vàng vàng.”</p>
+<p>“Cách vách bị xe cảnh sát vây quanh!!!” Thẩm kinh nghiên chỉ hướng cửa.</p>
+<p>Chúc dư nghe được những lời này hiểu rõ nhìn nhìn Lệ dĩ sâm.</p>
+<p>Chúc dư đánh điện thoại đi tới 2 lâu ban công, từ phía trên đi xuống xem, có thể rành mạch nhìn đến phía dưới trường hợp.</p>
+<p>Lệ phụ mặt vô biểu tình bị cảnh sát từ phòng mang tới xe cảnh sát, 120 cũng tới, đem đào khê mang về bệnh viện.</p>
+<p>Chúc dư nhìn lệ phụ không vội không chậm đi đường tốc độ, có điểm hoài nghi rốt cuộc là thân phận của hắn làm hắn không có sợ hãi, vẫn là hắn bản thân sẽ biết đào khê tiếp cận mục đích của hắn, hắn là cố ý?</p>
+<p>“Chúc tiên sinh, các ngươi bên kia có phải hay không phát sinh cái gì chuyện này? Nếu sự khẩn cấp nói, ta bên này liền trước treo.” Quý dụ thanh âm vững vàng không ít, nhìn dáng vẻ là khóc đủ rồi.</p>
+<p>“Không cần, các ngươi hai bên sự tình cũng không quấy rầy cũng không xung đột, chạy nhanh giải quyết rớt, ta mới có thời gian hảo hảo hẹn hò.”</p>
+<p>“Nga nga……”</p>
+<p>“Ngươi hiện tại đi đến cửa sổ bên đi xuống xem, là có thể nhìn đến một chiếc siêu xe ngừng ở nhà ngươi dưới lầu, một cái soái khí nam nhân dựa ở màu đen xe hơi biên sương khói lượn lờ.” Chúc dư cuốn cuốn tóc, dưới lầu ngủ xe hơi là truy thê hỏa táng tràng tiêu xứng.</p>
+<p>Quý dụ từ nhà mình trong phòng khách đứng lên, tay cầm di động chậm rãi đi tới bên cửa sổ, lặng lẽ đi xuống xem một cái, quả nhiên như chúc dư theo như lời giống nhau.</p>
+<p>Là phó bá ngôn!!!</p>
+<p>Quý dụ kinh hỉ che miệng lại, nước mắt lại nhịn không được chảy ra.</p>
+<p>Chúc dư nghe thấy cái này khóc nức nở, da đầu đều ở tê dại, có thể hay không không nên hơi một tí liền khóc, rời đi người nam nhân này ngươi lại không phải không thể sống.</p>
+<p>“Câm miệng!”</p>
+<p>“Hảo, tốt.” Quý dụ hoảng sợ, chạy nhanh che lại miệng mình.</p>
+<p>“Được rồi, nghe ta, lập tức đem phòng của ngươi đèn cấp tắt đi, theo sau ngươi liền đứng ở bên cửa sổ nhìn, chỉ cần người khác không ở bên cạnh xe, ngươi mấy cái 2 phút, chậm rãi mở ra môn, hắn tuyệt đối xuất hiện ở ngươi cửa.”</p>
+<p>“Nếu ngươi mở ra môn không có nhìn đến hắn, không cần lo lắng, thỉnh ngươi đầu hơi chút thấp một chút, hướng bên cạnh cửa biên xem một cái, nói không chừng hắn liền ngồi ở ngươi gia môn bên cạnh, đầy mặt đáng thương hề hề biểu tình, theo sau ngẩng đầu hai mắt đẫm lệ nhìn phía ngươi.” Chúc dư uống một ngụm tiên ép quả nho nước.</p>
+<p>Quý dụ có trong nháy mắt phi thường ngốc, chẳng lẽ chúc tiên sinh đều đã thần kỳ đến có biết trước tương lai năng lực sao? Vì cái gì hắn nói chính mình tổng cảm giác nhất định sẽ phát sinh?</p>
+<p>Chúc dư nằm ở ban công trên ghế nằm, nhìn bầu trời dần dần thoáng hiện ngôi sao.</p>
+<p>Thẩm kinh nghiên cùng Lệ dĩ sâm hai người cũng theo đi lên, nghe được chúc dư di động lời nói, hai người vẻ mặt mê mang nhìn nhau liếc mắt một cái.</p>
+<p>Đây là đang xem cái gì kịch bản sao? Cốt truyện?</p>
+<p>Bên kia, quý dụ nghe lời tắt đèn, đi đến bên cửa sổ đứng không trong chốc lát, liền phát hiện dưới lầu phó bá ngôn hướng lâu đống đi tới.</p>
+<p>Quý dụ nhìn thoáng qua di động thời gian, thẳng đến 2 phút qua đi mới chậm rãi đi đến cổng lớn.</p>
+<p>Mới vừa mở ra môn, liền cảm giác phía sau cửa bị cái gì dị vật cấp chống lại.</p>
+<p>Quý dụ yên lặng cúi đầu, quả nhiên như chúc tiên sinh theo như lời, phó bá ngôn hắn cư nhiên khóc!!!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong92.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong94.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "ta-dua-khuc-khuc-nguoi-sang-phien-toan-bo-ba-tong-van-hoc";
+const NOVEL_TITLE = "Ta dựa khúc khúc người, sang phiên toàn bộ bá tổng văn học!";
+const CHAPTER_TITLE = "Chương 93: Chương 93 thao tác giả con cá nhỏ ( một )";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 10</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Xuyên qua chi nhà có tiểu phu lang
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 10</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong9.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong11.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Lâm Trí Viễn hôm nay là hạ quyết tâm, nhất định phải hỏi ra cái nguyên cớ tới.</p>
+<p>Lâm Dĩ Hiên ám đạo một tiếng không tốt, thong thả ung dung thu thập hảo bàn cờ ôm vào trong lòng ngực, cũng không xem nhà mình tứ ca liếc mắt một cái, xoay người liền nói “Ta đi trước.”</p>
+<p>“Ngươi muốn đi chỗ nào?” Lâm Trí Viễn ánh mắt u ám, thẳng lăng lăng mà nhìn chằm chằm hắn, rất có một loại hắn hôm nay nếu là không công đạo rõ ràng, hắn liền thề không bỏ qua tư thế.</p>
+<p>Lâm Dĩ Hiên mày hơi chau, khí chất như không cốc u lan, mặt mày lộ ra nhàn nhạt u sầu, tinh xảo khuôn mặt tựa hồ có đếm không hết đau thương, làm người thấy liền sẽ nhịn không được tâm sinh thương tiếc.</p>
+<p>Lâm Trí Viễn nghẹn họng nhìn trân trối, bị nhà mình đệ đệ biến sắc mặt cấp kinh sợ, vội vàng nhắm mắt lại, thâm hít một hơi thật sâu, lại một lần nói cho chính mình, nhất định không thể mềm lòng.</p>
+<p>“Ngươi cho ta nói rõ ràng!” Lâm Trí Viễn sắc mặt hắc đến giống đáy nồi, trong lòng cũng càng thêm bức thiết, hắn đơn thuần thiện lương đệ đệ đi đâu vậy?</p>
+<p>Lâm Dĩ Hiên bất đắc dĩ, không phải không nghĩ nói cho tứ ca, mà là có sự tình, liền tính nói ra cũng không ai tin, sẽ chỉ làm người cảm thấy đó là thiên phương dạ đàm, hắn không nghĩ dùng chính mình bí mật đánh cuộc nhân tâm, không quan hệ tin tưởng tứ ca cùng không, hắn chỉ là sợ giấy không thể gói được lửa, duy nhất biện pháp chính là, làm bí mật vĩnh viễn lạn ở trong bụng.</p>
+<p>Kỳ thật, cho tới hôm nay hắn đều như đặt mình trong mây mù, sợ hiện tại hết thảy là chu trang mộng điệp, nếu không phải tự mình trải qua, hắn như thế nào cũng không thể tin được, đương hắn uống xong kia ly rượu độc lúc sau, lại lần nữa tỉnh lại thế nhưng về tới mười ba năm trước, về tới hết thảy đều còn không có phát sinh thời điểm.</p>
+<p>“Ngươi muốn biết cái gì?” Lâm Dĩ Hiên mặt trầm như nước, đạm mạc thanh âm không có một tia cảm xúc, cả người đều lộ ra một loại nói không nên lời lạnh lẽo.</p>
+<p>“Ngươi......” Lâm Chí Viễn ẩn ẩn có chút hối hận, thấy đệ đệ như thế bộ dáng, hắn ngược lại không biết nên làm thế nào cho phải.</p>
+<p>Lâm Dĩ Hiên suy tư một lát, thoáng châm chước một chút ngữ khí “Ngươi là muốn hỏi ngày đó sự?”</p>
+<p>Lâm Trí Viễn gật gật đầu, lại lắc lắc đầu, hắn là muốn hỏi ngày đó sự, nhưng hắn càng muốn biết, làm đệ đệ chuyển biến thành như vậy nguyên nhân, đang muốn mở miệng nói chuyện, liền nghe thấy nhà mình đệ đệ kiên định thanh âm.</p>
+<p>“Ta sẽ không nói cho ngươi.”</p>
+<p>Lâm Trí Viễn sắc mặt tối sầm, bị nghẹn họng.</p>
+<p>Lâm Dĩ Hiên ánh mắt xa xưa, thần sắc mơ hồ mà nhìn nơi xa ngoài tường không trung, phảng phất ngay sau đó liền phải mọc cánh thành tiên bay đi.</p>
+<p>Lâm Trí Viễn tâm thần căng thẳng, hắn sợ nhất đệ đệ lộ ra loại vẻ mặt này.</p>
+<p>“Ngươi nói, trong nhà nếu là quyết định muốn đem ta đưa đi Thái tử phủ, vậy nên làm sao bây giờ?” Lâm Dĩ Hiên thanh âm cực đạm, nhẹ nhàng ngữ điệu không có một tia gợn sóng, thật giống như nói cái gì râu ria sự tình.</p>
+<p>“Này không có khả năng.” Lâm Trí Viễn buột miệng thốt ra, liền suy xét đều không có suy xét.</p>
+<p>Lâm Dĩ Hiên cười, chỉ là lại tươi cười như vậy bi thương, như vậy lệnh nhân tâm đau “Vì cái gì không có khả năng?”</p>
+<p>Lâm Trí Viễn sắc mặt xanh mét, nhắc nhở nói “Ngươi hiện tại đã đính hôn, quá mấy ngày đó là hôn kỳ, tứ muội bị chỉ hôn Lục hoàng tử vì chính phi, trong nhà không có khả năng lại làm ngươi nhập Thái tử phủ, mẫu thân cũng sẽ không đáp ứng.” Lâm Trí Viễn nói chém đinh chặt sắt, cũng không biết là nói cho chính mình nghe, vẫn là nói cho đệ đệ nghe, hắn lúc này đầu óc thực loạn, đệ đệ nói đối hắn đánh sâu vào rất lớn, hắn biết đệ đệ không phải cái loại này ba hoa chích choè người.</p>
+<p>Lâm Dĩ Hiên tươi cười chợt tắt “Nếu là thánh chỉ đâu?”</p>
+<p>Lâm Trí Viễn trong lòng giống như sóng to gió lớn, trên mặt lại văn ti không lộ “Thánh chỉ vì cái gì muốn cho ngươi nhập Thái tử phủ, Thánh Thượng không phải hồ đồ người.”</p>
+<p>Lâm Dĩ Hiên châm chọc cong cong khóe môi “Nếu thánh chỉ là chúng ta Cảnh Dương hầu phủ cầu tới đâu?”</p>
+<p>“Ngươi có phải hay không biết cái gì?” Lâm Trí Viễn vẻ mặt nghiêm khắc, rốt cuộc duy trì không được mặt bộ trấn định biểu tình.</p>
+<p>“Ha hả.” Lâm Dĩ Hiên cười lạnh, một ngữ nói toạc ra che giấu ở mặt bàn hạ huyền cơ “Đại bá là trung lập bảo hoàng đảng, nhị bá là Lục hoàng tử đảng, chúng ta tam phòng tự nhiên chính là □□, ngươi nói có thể hay không có thể, hảo cái Cảnh Dương hầu phủ, hảo cái lâm phát huy mạnh, tương lai vô luận ai thượng vị, hắn đều có thể lập với bất bại chi địa.”</p>
+<p>“Đó là chúng ta đại bá.” Lâm Trí Viễn thanh âm thực gian nan, chỉ cảm thấy đến cả người vô lực, hắn biết đệ đệ nói sự tình rất có khả năng phát sinh, từ xưa đến nay đứng thành hàng, có bao nhiêu người cửa nát nhà tan, đại bá như thế nào có thể có ý nghĩ như vậy, còn có tổ phụ đâu, tổ phụ vì cái gì không ngăn cản.</p>
+<p>Lâm Dĩ Hiên liếc mắt một cái nhìn thấu tâm tư của hắn, không lưu tình chút nào đánh vỡ hắn hy vọng “Đại bá là đời kế tiếp cảnh dương hầu, nếu không có tổ phụ duy trì, ngươi cho rằng hắn có thể được việc?”</p>
+<p>“Ngươi đã sớm biết có phải hay không?” Lâm Trí Viễn đầu óc xoay chuyển rất nhanh, trong lòng có trong nháy mắt hiểu ra, đột nhiên vội vàng nhìn đệ đệ “Ngươi không có tư bôn đúng hay không?”</p>
+<p>Lâm Dĩ Hiên lặng im không nói.</p>
+<p>Lâm Trí Viễn lại biết hắn là cam chịu, cả người đều kích động lên “Ta liền biết, ta liền biết ta đệ đệ như thế nào sẽ là người như vậy, mẫu thân còn từng nói qua, phải vì ngươi chọn lựa một môn hảo hôn phu, nếu có thích người, nàng sẽ vì ngươi làm chủ, ngươi lại sao có thể có thể làm ra tư bôn như vậy gièm pha.”</p>
+<p>Chỉ là thực mau, Lâm Trí Viễn cũng không biết nhớ tới cái gì, sắc mặt đột nhiên liền trở nên khó coi, trong ánh mắt khó nén vẻ đau xót “Vì cái gì không còn sớm điểm nói ra, có chuyện gì không thể đại gia cùng nhau giải quyết, vì cái gì ngươi muốn chính mình một người khiêng.” Nếu là hắn sớm chút biết, lại làm sao làm đệ đệ ra này hạ sách, lộng hỏng rồi thanh danh không nói, còn muốn hứa cấp một cái ma ốm.</p>
+<p>“Ngươi là làm sao mà biết được?” Như vậy bí ẩn sự tình, lẽ ra đệ đệ hẳn là không biết tình mới đúng.</p>
+<p>Liên tiếp thoán nghi vấn ở Lâm Trí Viễn trong đầu xoay quanh.</p>
+<p>Lâm Dĩ Hiên ánh mắt nhàn nhạt lẳng lặng xẹt qua hắn, tự nhiên không có khả năng nói cho tứ ca nguyên nhân, ngược lại nói “Ngươi vẫn là trước yên lặng một chút đi, Cảnh Dương hầu phủ không đáng tin cậy, nguyên gia không phải thứ tốt, ngươi hôn sự tốt nhất nhanh chóng giải quyết, ta chỉ sợ đương ngươi ở chiến trường lập hạ chiến công lúc sau, nguyên thêu như sẽ chờ ngươi dăm ba năm, sau đó nàng mỹ danh khắp thiên hạ, khi đó ngươi đương làm sao bây giờ?”</p>
+<p>Lâm Trí Viễn hít hà một hơi “Không thể nào......”</p>
+<p>Lâm Dĩ Hiên thần sắc đạm mạc, hắn cũng không biết có thể hay không, đời trước hắn nhập Thái tử phủ không bao lâu, tứ ca liền cùng nguyên thêu như thành hôn, nhưng lấy hắn đối nguyên gia hiểu biết, như vậy sự bọn họ cũng không phải làm không ra tới, đề phòng một chút tổng không sai.</p>
+<p>Lâm Trí Viễn quả nhiên bị tách ra suy nghĩ, trong lòng có chút dao động “Nguyên gia cô nương rốt cuộc vô tội, nếu ta không lý do từ hôn......”</p>
+<p>“Đó là chuyện của nàng, cùng ngươi không quan hệ.” Lâm Dĩ Hiên lãnh khốc trả lời nói, tận lực làm chính mình không cần tiết lộ ra trong lòng hận ý, nguyên gia cô nương nếu thật vô tội, biểu đệ liền sẽ không chết thảm, ca ca liền sẽ không đau xót muốn chết, điên cuồng trả thù, sau lại cũng sẽ không chết ở người ngoài tính kế dưới, mẫu thân càng sẽ không một đầu đâm chết ở Cảnh Dương hầu phủ trước đại môn sư tử bằng đá thượng, như vậy mà bi tráng, thảm thiết, có thể nói cửa nát nhà tan, cái này làm cho hắn có thể nào không hận, có thể nào không oán!</p>
+<p>Sợ tứ ca lại chính mình hỏi cái gì, Lâm Dĩ Hiên vội vàng nói “Ta về trước, ngươi hảo hảo ngẫm lại bãi!”</p>
+<p>Lâm Trí Viễn nhất thời không phản ánh lại đây, thẳng đến Lâm Dĩ Hiên không thấy thân ảnh, lúc này mới vẻ mặt ảo não lấy lại tinh thần, hắn như thế nào đã bị lừa dối ở. Bất đắc dĩ lắc lắc đầu, trong lòng rất có chút tiếc nuối, tiếp theo lại tưởng từ đệ đệ trong miệng biết cái gì, chỉ sợ sẽ không dễ dàng như vậy.</p>
+<p>Lâm Dĩ Hiên đi ở hồi trình trên đường, trong lòng suy nghĩ lại tung bay đến thật xa, nhớ rõ đời trước lúc này, hắn đã vào Thái tử phủ, khi đó hắn vẫn là một cái thanh nhã như liên, bác mới nhiều học quý công tử, Thái tử trời sinh tính đa nghi, tính tình thô bạo, hắn tuy rằng xuất thân cùng Cảnh Dương hầu phủ, nhị bá lại cùng Lục hoàng tử quan hệ thân mật, hắn ở Thái tử phủ sinh hoạt, lại sao có thể sẽ hảo.</p>
+<p>Đi bước một học được âm mưu, học được tính kế, học được tàn nhẫn độc ác, trên tay hắn không biết lây dính nhiều ít máu tươi, chỉ vì trong lòng kia một chút tưởng niệm.</p>
+<p>Thái tử rơi đài, hắn công không thể không.</p>
+<p>Nguyên tưởng rằng cả đời cứ như vậy, không nghĩ tới người nọ thế nhưng trộm thiên đổi trụ, đem chính mình từ hoang phế Thái tử phủ đổi ra tới.</p>
+<p>Lúc ấy hắn là kinh hỉ, cái loại này tràn đầy ngọt ngào, làm hắn cảm thấy chính mình chính là ăn lại nhiều khổ cũng đáng đến.</p>
+<p>Chỉ tiếc ngày vui ngắn chẳng tày gang, bởi vì thân phận của hắn không thể bại lộ, người nọ đem hắn nuôi dưỡng ở kinh giao một tòa biệt viện, mỗi ngày đều lại đây xem hắn, sau đó mười ngày nửa tháng tới một lần, lại sau đó hơn nửa năm đều không thấy bóng người, Lâm Dĩ Hiên lúc này mới biết được, chính mình thế nhưng trở thành người khác trong miệng nịnh sủng.</p>
+<p>Nhưng khi đó hắn đã là thân ở trong cục, sớm đã không nhà để về, rời đi biệt viện, hắn như vậy thân phận chỉ có thể liên lụy người khác, lại có thể đi đến nơi nào, người nọ đã trở thành hắn duy nhất có thể bắt lấy đồ vật, uyển chuyển từ chối tứ ca hảo ý, khô ngồi ở biệt viện trung chờ đợi, từ ngày ngày chờ đợi tưởng niệm, đối với cửa trông mòn con mắt, đến tâm sinh oán niệm, dùng hết tâm tư mưu đoạt sủng ái, lại đến nản lòng thoái chí, cũng bất quá là mấy năm quang cảnh.</p>
+<p>Nhớ rõ người nọ đối hắn nói “Tiểu hiên, ngươi thay đổi, ngươi không phải người ta thích, ngươi như thế nào trở nên như thế tâm cơ sâu nặng, tính tình còn như thế tàn nhẫn, trong trí nhớ ngươi nhưng không phải bộ dáng này, ta còn là thích lúc trước cái kia ngươi.”</p>
+<p>Nghe thấy lời này, Lâm Dĩ Hiên chỉ cảm thấy cả người lạnh băng, một cổ hàn ý từ lòng bàn chân lan tràn toàn thân, giống như đặt mình trong cùng băng thiên tuyết địa, rốt cuộc không cảm giác được một tia độ ấm, hắn rất tưởng lớn tiếng cãi lại, rất tưởng nói cho hắn nói không phải như thế, nhưng mà chung quy hóa thành vì một trận trầm mặc. Vào Thái tử phủ, vì sống sót, vì có thể giúp được hắn, Lâm Dĩ Hiên sớm đã tay nhiễm máu tươi, nơi nào còn có thể như nhau lúc trước như vậy thuần túy không tỳ vết. Tâm, lập tức liền lạnh xuống dưới, chân chính tâm như tro tàn.</p>
+<p>Lúc này, kỳ thật hắn còn không có như vậy thâm hận ý, thẳng đến tiểu biểu đệ bị người hại chết, tứ ca điên cuồng trả thù, hắn mới bừng tỉnh tỉnh ngộ, nguyên lai chính mình thế nhưng sớm đã trở thành người nọ trong tay một quả kiềm chế tứ ca quân cờ, từ tứ ca từng bước thăng chức, tay cầm trọng binh, hắn liền ở người khác trong kế hoạch, nếu không người nọ lại như thế nào nghĩ mọi cách, đem hắn từ Thái tử phủ trung đổi ra tới, hối hận thì đã muộn!</p>
+<p>Biểu đệ đã chết, tứ ca đã chết, mẫu thân cũng đã chết, không bao lâu, hắn cũng bị ban cho một ly rượu độc.</p>
+<p>Chuyện cũ từng màn nổi lên trong lòng, trước kia tưởng không rõ vấn đề, tại đây một khắc phảng phất đều đặc biệt rõ ràng, trong mắt đột nhiên liền hiện ra tứ tỷ ung dung hoa quý gương mặt tươi cười, khi đó nàng xem chính mình ánh mắt là như vậy khinh miệt, trong mắt giấu giếm châm biếm cùng thương hại, hắn lúc ấy như thế nào liền không phát hiện!</p>
+<p>Thiếu niên không biết sầu tư vị, tuổi nhỏ hiểu nhau, thiếu niên tương hứa, nguyên tưởng rằng là cả đời sự tình, ai ngờ sẽ là như thế này một cái kết cục.</p>
+<p>Một đạo thánh chỉ, đem tứ tỷ đính hôn cho hắn ý trung nhân.</p>
+<p>Đúng vậy, người kia là Lục hoàng tử, bọn họ từ nhỏ liền nhận thức, tương tri tương hứa phảng phất là tự nhiên mà vậy sự tình.</p>
+<p>Cái gọi là cây liễu lâm ước hẹn, kỳ thật thực sự có chuyện lạ, chẳng qua không phải ước hẹn tư bôn, mà là ước hẹn kết thúc.</p>
+<p>Hắn trọng sinh trở về thời điểm, đúng là thời gian này, không kịp tự hỏi quá nhiều, hắn trong lòng chỉ có hạ một ý niệm, kiên quyết không thể tiến vào Thái tử phủ.</p>
+<p>Hắn biết rõ nhớ rõ, khoảng cách cái kia làm hắn thống khổ cả đời ngọn nguồn, chỉ có ba ngày. Ba ngày sau Hoàng thượng liền sẽ dọn hạ thánh chỉ, đem hắn chỉ hôn cùng Thái tử làm sườn quân.</p>
+<p>Nhìn trong tay kia trương ước hẹn cây liễu lâm tờ giấy, Lâm Dĩ Hiên nhanh chóng quyết định, vì chính mình mưu hoa một cọc tư bôn sự kiện, kỳ thật hắn rất tưởng nhìn xem, Lục hoàng tử đến tột cùng sẽ làm gì tính toán, hiện tại hắn vẫn là lúc trước cái kia phong hoa vô song quý công tử, không quan hệ tình yêu, hắn chỉ là tưởng cho chính mình một đáp án.</p>
+<p>Kết quả tự nhiên không ngoài sở liệu, Triệu thừa duệ không có đứng ra, hắn cùng tứ tỷ tuy rằng cùng ra Cảnh Dương hầu phủ, nhưng nhị bá là triều đình nhất phẩm quan to, phụ thân lại còn chỉ là một cái viên ngoại lang, Triệu thừa duệ sẽ lựa chọn ai không cần nói cũng biết, tư bôn sự kiện chỉ có hắn một người gánh vác, nguyên tưởng rằng chính mình sẽ bị đưa đi từ đường, không nghĩ tới vì mặt mũi, bọn họ thế nhưng đem chính mình tùy ý gả chồng.</p>
+<p>Bất quá như vậy cũng hảo, dùng cả đời hôn nhân đổi lấy tự do, hắn cảm thấy thực có lời.</p>
+<p>Lê diệu tổ người này hắn biết, Lê Diệu Nam là ai lại chưa từng nghe qua, ngẫm lại Lê phủ hiện giờ trạng huống, nếu là hắn lường trước không tồi, Lê Diệu Nam tất nhiên mệnh không trường cửu.</p>
+<p>Lâm Dĩ Hiên âm thầm suy tư, hay không muốn sinh cái hài tử, bảo đảm tương lai địa vị, miễn cho Lê Diệu Nam đã chết lúc sau đồ sinh sự tình.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong9.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong11.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "xuyen-qua-chi-nha-co-tieu-phu-lang";
+const NOVEL_TITLE = "Xuyên qua chi nhà có tiểu phu lang";
+const CHAPTER_TITLE = "Chương 10";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

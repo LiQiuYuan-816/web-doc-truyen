@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 24</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Trầm mê ăn dưa ta tiết lộ tiếng lòng sau cả nhà tạc
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 24</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong23.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong25.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Ký lục xong miêu miêu chứng nhân nhóm miêu tả lúc sau, Chu Ngô Đồng đi theo Cảnh Trưởng còn có Lộ Hành Chu hướng tới trên lầu đi đến, này đống lâu người dùng bọn họ đều hỏi qua, nhưng là đều nói không rõ lắm Liên Trình Ý tình huống, rốt cuộc hiện tại cùng phía trước không giống nhau, ngay cả ở tại đối diện đều không quá chào hỏi.</p>
+<p>Hắn cũng đem vấn đề cùng Lộ Hành Chu nói một chút, Lộ Hành Chu gật gật đầu nói “Ta biết, đi theo đi là được.”</p>
+<p>Nói xong, hắn một đường triều thượng, tới rồi Liên Trình Ý cửa nhà, hắn gõ gõ Liên Trình Ý hàng xóm gia môn, bên trong một cái giọng nữ lớn tiếng hỏi “Ai nha?”</p>
+<p>Lộ Hành Chu cùng Cảnh Trưởng ánh mắt thẳng lăng lăng nhìn chằm chằm Chu Ngô Đồng, Chu Ngô Đồng tiến lên một bước nói “Cảnh sát.”</p>
+<p>Nữ nhân xuyên thấu qua mắt mèo hướng tới bên ngoài nhìn mắt, xác định là Chu Ngô Đồng lúc sau, nàng mở ra môn, trong lòng ngực còn có một cái hai tuổi tiểu bằng hữu.</p>
+<p>Tiểu bằng hữu nhìn bên ngoài người vẻ mặt tò mò, ngập nước mắt to đặc biệt đáng yêu.</p>
+<p>Nữ nhân nhìn Chu Ngô Đồng vẻ mặt cẩn thận hỏi “Cảnh sát thúc thúc, đối diện cái kia sự tình có kết quả?”</p>
+<p>Chu Ngô Đồng vẻ mặt bất đắc dĩ, Lộ Hành Chu ở hắn nhìn không thấy địa phương không nhịn cười một tiếng, Chu Ngô Đồng đối với nữ nhân gật gật đầu nói “Hiện tại liền kém mấu chốt tính chứng cứ, ta lần này tới...”</p>
+<p>Hắn nhìn mắt Lộ Hành Chu, Lộ Hành Chu tiến lên một bước nói “Cái kia... Phương tiện đi hạ nhà các ngươi ban công sao?”</p>
+<p>Nữ nhân sửng sốt một chút gật gật đầu, Lộ Hành Chu buông Cảnh Trưởng, Cảnh Trưởng hướng tới ban công bên kia chạy tới, Chu Ngô Đồng đi theo cùng nhau đi qua, Cảnh Trưởng lay một chút nữ nhân gia chậu hoa, theo móng vuốt dần dần nhanh hơn, một cây màu bạc vật thể xuất hiện.</p>
+<p>Chu Ngô Đồng sắc mặt nghiêm túc lên, hắn nhìn Lộ Hành Chu trong ánh mắt mang theo dò hỏi, Lộ Hành Chu hướng tới hắn gật gật đầu.</p>
+<p>Hắn đi nhanh tiến lên mang lên bao tay đem đồ vật rút ra, đây là một cây màu bạc chiếc đũa, Chu Ngô Đồng nhanh chóng quét mắt gia nhân này phòng bếp, gia nhân này dùng bộ đồ ăn cùng cái này chiếc đũa giống nhau, Lộ Hành Chu hướng tới hắn giơ giơ lên cằm nói “Ngươi thử rút một chút.”</p>
+<p>Chu Ngô Đồng gật gật đầu dùng sức rút một chút, chiếc đũa không chút sứt mẻ, theo hắn sức lực tăng lớn, chiếc đũa chung quanh xuất hiện một cái khe hở, ở dùng một chút lực, bên trong lộ ra như là cây trâm lại như là tiểu đao giống nhau đồ vật.</p>
+<p>Nữ nhân đều dọa choáng váng, này ngoạn ý như thế nào sẽ ở nhà bọn họ chậu hoa bên trong.</p>
+<p>Nàng chạy nhanh giải thích nói “Cảnh sát thúc thúc, chúng ta cái gì cũng không biết, cũng không biết hắn khi nào đem đồ vật buông tha tới.”</p>
+<p>Chu Ngô Đồng nhìn nữ nhân liếc mắt một cái, hắn nói “Trước đừng có gấp, chúng ta yêu cầu trước đưa đi xét nghiệm một chút xác định có phải hay không, còn có ngươi khả năng muốn cùng chúng ta nói một chút trong khoảng thời gian này phát sinh sự tình còn có trong nhà có không có gì dị thường.”</p>
+<p>Gia nhân này chuyển đến nơi này mới hai ba tháng, trượng phu là nhân viên công vụ, bình thường đi làm tan tầm, nữ nhân là toàn chức gia đình bà chủ, cha mẹ đều ở khác thành thị, trượng phu điều chức lại đây lúc sau mẫu tử mới đi theo lại đây.</p>
+<p>Nữ nhân hài tử vừa mới hai tuổi, bọn họ cùng đối diện Liên Trình Ý xác thật là không quen biết, mặc kệ là xã giao vòng vẫn là hành động đều không có bất luận cái gì trùng điệp.</p>
+<p>Hơn nữa, hắn hiện tại có một bụng lời nói tưởng hỏi Lộ Hành Chu, nhưng là bởi vì có người ở đây cho nên tạm thời không đặt câu hỏi.</p>
+<p>Nữ nhân hốc mắt có chút hồng hồng, nàng có chút ủy khuất, thậm chí muốn mắng người, đối diện cái kia ngốc bức cái gì tật xấu, như vậy liền đem đồ vật bỏ vào nhà nàng chậu hoa, các nàng gia cùng hắn một chút đều không thân được không.</p>
+<p>Đồ vật bắt được tay, hắn nhìn trước mắt nữ nhân nói “Gần nhất trước đừng ra cửa, ta trước cầm đi xét nghiệm, chờ kết quả ra tới khả năng muốn phiền toái các ngươi tới tranh cục cảnh sát phối hợp một chút.”</p>
+<p>Nữ nhân liên tục gật đầu, xem Chu Ngô Đồng biểu tình nàng cũng hơi chút an tâm một ít.</p>
+<p>Cầm đồ vật, Chu Ngô Đồng ra cửa, nữ nhân còn lại là chạy nhanh cấp trượng phu gọi điện thoại.</p>
+<p>Đi xuống lầu, Chu Ngô Đồng một bụng vấn đề muốn hỏi lộ Lộ Hành Chu, bọn họ về trước cục cảnh sát, đem đồ vật giao ra đi xét nghiệm, sau đó tìm được rồi ngồi ở phía dưới đậu miêu Lộ Hành Chu.</p>
+<p>Lộ Hành Chu vừa thấy hắn liền biết hắn có chuyện muốn hỏi hắn, hắn mắt trợn trắng nói “Ngươi có thể hay không đem ngươi muốn nói lại thôi cái này biểu tình luyện tập một chút, quá giả.”</p>
+<p>Chu Ngô Đồng kỳ quái xoa xoa mặt nói “Giả sao?”</p>
+<p>Lộ Hành Chu hung hăng gật gật đầu, hắn nói “Được rồi, ta tới cùng ngươi lao lao sở hữu tình huống đi.”</p>
+<p>Kỳ thật Liên Trình Ý người này đi, hắn chính là cái loại này phản xã hội nhân cách, chẳng qua trang đến tương đối hảo, hắn vì cái gì giết người Lộ Hành Chu là không biết.</p>
+<p>Nhưng là hung khí vì cái gì sẽ ở hắn tân chuyển đến lãnh ở nhà chậu hoa hắn là rõ ràng địa.</p>
+<p>Đầu tiên bọn họ trụ tiểu khu cách cục là ban công cùng ban công tưởng cái không tính xa cái loại này, mà nữ nhân gia ban công cửa sổ nơi đó là có một cái hướng ra phía ngoài kéo dài bản tử, cái kia bản tử là dùng để phơi chăn phơi quần áo.</p>
+<p>Đặc biệt là hiện tại là mùa hè, thái dương rất nhiều, đến nỗi có thể hay không nhiệt, cái này đương nhiên sẽ không, ban công cùng nhà ở cũng có một phiến cách nhiệt pha lê cửa sổ sát đất đâu.</p>
+<p>Chính là bởi vì cái này cửa sổ sát đất, nữ nhân gia ban công là không trang phòng trộm cửa sổ, bởi vì ban công cùng nhà ở cái kia cửa kính sát đất là có thể khóa lên, vào không được.</p>
+<p>Này cũng liền dẫn tới nhà bọn họ thường xuyên không liên quan ban công cửa sổ, cũng có thể là nữ nhân căn bản không chú ý cái này, rốt cuộc trong nhà còn có cái tùy thời tùy chỗ phải chú ý nhãi con đâu.</p>
+<p>Cho nên này liền cho Liên Trình Ý cơ hội, hắn có thể đem đồ vật tàng đến nơi đây, đặc biệt là đồ vật cùng cái chiếc đũa dạng, liền tính là bị phát hiện, bởi vì bọn họ gia có tiểu hài tử, cũng có thể tưởng tiểu hài tử nghịch ngợm loạn ném, hoặc là tiểu hài tử tay thiếu cắm vào đi.</p>
+<p>Hơn nữa theo Liên Trình Ý quan sát, này một nhà là hơi chút có điểm thói ở sạch lại không thiếu tiền cái loại này, cho nên bọn họ mới có thể lựa chọn dùng loại này chiếc đũa.</p>
+<p>Đến lúc đó nếu từ bên ngoài tìm được, kia này căn chiếc đũa lớn nhất kết quả hẳn là chính là thùng rác, tới rồi thùng rác, liền tính ở thiếu tiền, những cái đó nhặt mót giả còn có lưu lạc còn cũng sẽ không nhặt một cây chiếc đũa, liền tính nhặt, hắn bên ngoài còn thượng tầng giữ tươi đâu.</p>
+<p>Cho nên, hắn căn bản không mang theo sợ, hắn cảm thấy cảnh sát tìm không thấy mấu chốt tính manh mối, cũng tìm không thấy hung khí.</p>
+<p>Nghe xong lúc sau, Chu Ngô Đồng cả người đều đã tê rần, hắn chậm rãi phun ra khẩu khí nhìn Lộ Hành Chu nói “Cảm ơn, phiền toái ngươi.”</p>
+<p>Lộ Hành Chu cong cong khóe miệng sờ một cái Cảnh Trưởng nói “Không có việc gì, Cảnh Trưởng phó quá thù lao, hơn nữa chuyện này là Cảnh Trưởng ủy thác, ngươi hẳn là cảm ơn Cảnh Trưởng.”</p>
+<p>Chu Ngô Đồng cười, hắn xoa xoa ở Lộ Hành Chu trong lòng ngực không chạy thoát được đâu Cảnh Trưởng đầu, ở Cảnh Trưởng căm tức nhìn trong ánh mắt tỏ vẻ “Cảnh Trưởng gần nhất một đoạn thời gian đồ ăn vặt ta bao!”</p>
+<p>Đến nỗi mặt khác, hắn cầm lấy di động nói “Thêm cái bạn tốt bái, về sau hảo liên hệ. “</p>
+<p>Lộ Hành Chu gật gật đầu, nói như thế nào đâu, Chu Ngô Đồng người cũng không tệ lắm, nguyện ý vì án tử đi theo hắn chạy, quan trọng nhất vẫn là, mặc kệ nhiều thái quá, hắn cũng chưa đưa ra nghi ngờ.</p>
+<p>Về sau nói không chừng còn có việc tìm hắn hỗ trợ đâu.</p>
+<p>Thêm xong bạn tốt lúc sau, Lộ Hành Chu nhìn thời gian, hắn đến về nhà, bị hắn phái ra đi miêu miêu cùng quạ quạ nhóm nên trở về tới.</p>
+<p>Chào hỏi lúc sau, Lộ Hành Chu liền về nhà, đến nỗi tiền thưởng gì, đến án kiện sau khi chấm dứt Chu Ngô Đồng sẽ xin, nên có đều sẽ có.</p>
+<p>Ngồi trên xe lúc sau, Lộ Hành Chu nhìn di động xoát sẽ video, vừa click mở, mặt trên xuất hiện cái hot search, Chức Miểu đạo văn.</p>
+<p>Lộ Hành Chu trong lòng lộp bộp một chút, không phải đâu, hắn xác thật còn chưa kịp cùng Tần dì nói, nhưng là sự tình nhanh như vậy đã bị tuôn ra tới?</p>
+<p>Không nên a, hắn vừa mới bắt được Chức Miểu tạp, còn không có mua quần áo đâu!!!</p>
+<p>Hắn điểm đi vào, nội dung cùng hot search hoàn toàn bất đồng, mặt trên là Thất Nguyệt phát sinh mệnh, còn có Chức Miểu phía chính phủ tài khoản phát thanh minh.</p>
+<p>Ngôn Ức Lan bị khai trừ, hơn nữa, còn bị Chức Miểu cùng Thất Nguyệt liên hợp cáo thượng toà án, thuận tiện Thất Nguyệt cũng vào Chức Miểu, thành công trở thành một người thiết kế sư.</p>
+<p>Tần Yên Chức trở về cùng ngày liền tìm Thất Nguyệt, nàng đem Ngôn Ức Lan thiết kế đồ đều chia cho Thất Nguyệt, thuận tiện cùng Thất Nguyệt trò chuyện một chút.</p>
+<p>Thất Nguyệt nhìn đến thời điểm cả người đều là khiếp sợ, này đó thiết kế đồ tuy rằng bị sửa lại, nhưng là, nàng vẫn là liếc mắt một cái liền nhìn ra, đây là nàng trong khoảng thời gian này tâm huyết, này đó đồ nàng cũng chưa phát ra đi, bởi vì nàng tính toán đi Chức Miểu nhận lời mời, chuẩn bị dùng chính là này đó bản vẽ.</p>
+<p>Cho nên thiết kế hảo lúc sau nàng liền cấp đặt ở chính mình trong ngăn kéo mặt, nàng có cái thói quen, ở trên máy tính họa phía trước, nàng sẽ trên giấy trước luyện luyện xúc cảm.</p>
+<p>Ngày đó nàng mới vừa họa xong, nàng dì cả mang theo biểu tỷ liền tới đây, bởi vì mụ mụ kêu chính mình, nàng thuận tay đem bản vẽ đặt ở trong ngăn kéo liền đi ra ngoài, nàng lúc ấy còn cùng Ngôn Ức Lan liêu nàng thiết kế lý niệm đâu, muốn cho biểu tỷ giúp chính mình nhìn xem cùng Chức Miểu lý niệm tương phù hợp không.</p>
+<p>Hiện tại một hồi tưởng, lúc ấy nàng biểu tỷ sắc mặt liền không quá thích hợp...</p>
+<p>Nàng mụ mụ bên kia, nhất kiêu ngạo chính là nàng biểu tỷ, mới vừa tốt nghiệp liền vào Chức Miểu, Chức Miểu chính là học thiết kế người thích nhất địa phương, bởi vì ở Chức Miểu nơi đó, là không có hạn chế, ngươi có thể thiết kế ngươi tưởng thiết kế, chỉ cần thông qua, kia tên của ngươi liền sẽ xuất hiện ở quần áo hệ liệt giới thiệu bên trong.</p>
+<p>Hơn nữa đưa tiền hào phóng, không tăng ca, cũng không có rượu cục văn hóa, mệt mỏi còn có rèn luyện nghỉ ngơi địa phương, quả thực chính là thiên đường được chứ.</p>
+<p>Mặt sau, nàng liền đi mua cái đồ vật, nàng biểu tỷ liền đi rồi, nói cái gì có chút việc, muốn về trước gia, nàng lúc ấy cũng không để ý, cùng dì cả cùng mụ mụ ăn bữa cơm liền trở về phòng chuẩn bị ở trên máy tính động thủ.</p>
+<p>Nhưng là đi, nàng tìm không thấy nàng bản vẽ, bởi vì chuyện này thường xuyên phát sinh, không quá mấy ngày bản vẽ chính mình liền xuất hiện, cho nên nàng liền trực tiếp bãi lạn cắt video đi.</p>
+<p>Sau lại quả nhiên bản vẽ đã trở lại, nàng cũng bắt đầu ở trên máy tính bắt đầu thiết kế lưu trữ.</p>
+<p>Ở thu được tin nhắn trước, nàng thật sự lòng tràn đầy chờ mong chờ Chức Miểu thông báo tuyển dụng sẽ bắt đầu, kết quả ai biết... Nàng bản vẽ thế nhưng bị nàng biểu tỷ lấy đi đi sửa lại lúc sau giao lên rồi...</p>
+<p>Tưởng tượng đến nàng trên máy tính chứng minh thời gian so biểu tỷ vãn, bản vẽ còn vô pháp chứng minh, chờ Chức Miểu tuyên bố tân phẩm, chính mình nhìn đến lúc sau sẽ phát sinh cái gì, nàng liền một trận tâm lạnh...</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong23.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong25.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tram-me-an-dua-ta-tiet-lo-tieng-long-sau-ca-nha-tac";
+const NOVEL_TITLE = "Trầm mê ăn dưa ta tiết lộ tiếng lòng sau cả nhà tạc";
+const CHAPTER_TITLE = "Chương 24";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

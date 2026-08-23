@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 71. Song hướng lựa chọn</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Người qua đường Giáp tiếng lòng tiết lộ sau bị vai ác cả nhà đoàn sủng
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 71. Song hướng lựa chọn</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong70.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong72.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Hôm nay thời tiết hảo, vừa lúc khoảng thời gian trước Hoắc ba đính một đám vườn hoa cây non đã trở lại, lúc này quản gia đang ở an bài người đem này đó cây non loại ở hoa viên. Hoắc ba nghĩ khoảng cách cơm trưa còn có trong chốc lát thời gian, liền đi trước hoa viên xem cây non.</p>
+<p>Kết quả hắn vừa mới đem cây non bắt được trong tay, liền nghe được Diệp Nhạc Dao liên tiếp hai câu tiếng lòng.</p>
+<p>Hoắc Trạch dẫn người đã trở lại?</p>
+<p>Vẫn là cái nằm vùng?</p>
+<p>Sao lại thế này?</p>
+<p>Hoắc ba trực tiếp đem cây non một ném, dưới chân sinh phong bước nhanh về tới phòng khách.</p>
+<p>Hoắc mẹ giờ này khắc này đang ở phòng bếp, trước hai ngày Diệp Nhạc Dao lục tiết mục không phải ăn lẩu chính là ăn nướng BBQ, Hoắc mẹ tính toán hôm nay tự mình xuống bếp cấp Diệp Nhạc Dao cùng Hoắc Yến nấu điểm canh dưỡng dưỡng dạ dày.</p>
+<p>Nàng vừa mới đem nguyên liệu nấu ăn toàn bộ bỏ vào trong nồi, liền nghe được Diệp Nhạc Dao tiếng lòng truyền đến.</p>
+<p>Hoắc mẹ thậm chí liền tạp dề đều đã quên trích, liền vội vàng đi ra.</p>
+<p>Lão tam tên ngốc này lại bị lừa sao?</p>
+<p>Nguyên bản còn ở trên lầu cọ xát Hoắc Yến, nghe được lời này cũng không cọ xát, nhanh chóng đổi hảo quần áo liền chuẩn bị xuống lầu.</p>
+<p>Mà lần này chuyện xưa nhân vật chính Hoắc Trạch, lúc này đang đứng ở huyền quan chỗ, vẻ mặt ngạc nhiên.</p>
+<p>Cái gì nằm vùng?</p>
+<p>Diệp Nhạc Dao có lầm lẫn không?</p>
+<p>Đây là hắn sắp nhập đội tân đội viên, sao có thể là nằm vùng đâu?</p>
+<p>Diệp Nhạc Dao đi đến phòng khách, vừa lúc thấy được Hoắc ba Hoắc mẹ cũng đã đi tới.</p>
+<p>Hoắc ba Hoắc mẹ liếc nhau, Hoắc mẹ dẫn đầu nhìn về phía Hoắc Trạch cùng hắn phía sau nam sinh, đối hai người cười “Mang bằng hữu đã trở lại? Thất thần làm gì, tiến vào nha.”</p>
+<p>Hoắc Trạch lúc này mới miễn cưỡng phục hồi tinh thần lại, nhìn mắt Hoắc ba Hoắc mẹ, lại liếc mắt Diệp Nhạc Dao.</p>
+<p>Không thể hoảng.</p>
+<p>Hiện tại liền tình huống như thế nào đều còn không rõ ràng lắm, hắn tuyệt đối không thể hoảng.</p>
+<p>Vì thế Hoắc Trạch thực mau treo lên một mạt cười, đối Hoắc ba Hoắc mẹ giới thiệu nói “Hắn kêu Lý Trì, là ta tân đồng đội.”</p>
+<p>Lý Trì triều Hoắc ba Hoắc mẹ cười cười, tính làm chào hỏi, sau đó đối Hoắc Trạch nói “Dù sao ta cũng không vội, nếu không vẫn là ngày mai bàn lại hợp đồng sự đi, ta liền trước không quấy rầy……”</p>
+<p>Ở nhận ra Lý Trì nháy mắt, Diệp Nhạc Dao cũng đã nhớ lại này bộ phận cốt truyện.</p>
+<p>【 còn hảo còn hảo, xem ra tam ca còn không có xuẩn đến trực tiếp ký hợp đồng phân thượng, còn biết trước đem người mang về tới nhìn một cái, không được, ta phải nghĩ biện pháp nhắc nhở một chút tam ca, cái này hợp đồng tuyệt đối không thể thiêm! 】</p>
+<p>Hoắc Trạch “……”</p>
+<p>Trên thực tế, hợp đồng liền ở hắn trong bao, hắn hôm nay cùng Lý Trì gặp mặt xác thật cũng là vì ký hợp đồng chuyện này.</p>
+<p>Chẳng qua ở ký hợp đồng phía trước, Hoắc Trạch phát hiện chính mình chiến đội con dấu dừng ở trong nhà, cho nên lúc này mới trở về lấy.</p>
+<p>Hoắc ba Hoắc mẹ nhiều hiểu biết Hoắc Trạch?</p>
+<p>Xem hắn này phúc biểu tình liền biết là chuyện như thế nào.</p>
+<p>Bất quá còn hảo còn không có ký hợp đồng, chỉ cần hợp đồng không thiêm, sự tình liền dễ làm.</p>
+<p>Bất quá tại đây phía trước, bọn họ vẫn là muốn làm rõ ràng vì cái gì Hoắc Trạch sẽ tưởng thiêm một cái nằm vùng tiến chiến đội.</p>
+<p>Bối cảnh điều tra đều không làm một chút sao?!</p>
+<p>Vì thế Hoắc mẹ cười mở miệng nói “Có cái gì quấy rầy? Lý Trì đúng không? Mau tiến vào ngồi, ở trong nhà giống nhau có thể nói sự tình.”</p>
+<p>Hoắc ba đi theo nói “Đúng vậy, trong nhà có thư phòng, lập tức cũng đến cơm điểm, các ngươi có thể cơm nước xong lại từ từ nói chuyện, tiên tiến tới ngồi đi.”</p>
+<p>Hai vị trưởng bối đều đã mở miệng giữ lại, lại thoái thác liền sẽ có vẻ cố tình.</p>
+<p>Lý Trì đứng ở tại chỗ tự hỏi một lát, liền gật gật đầu “Cho các ngươi thêm phiền toái.”</p>
+<p>Hoắc Yến lúc này cũng xuống lầu tới, tầm mắt ở Lý Trì trên người đảo qua, nhận ra hắn.</p>
+<p>Hoắc Yến đối giới điện cạnh không tính đặc biệt hiểu biết, nhưng bởi vì Hoắc Trạch nguyên nhân, hắn ngẫu nhiên cũng sẽ nhìn xem điện cạnh thi đấu, hơn nữa trước đó không lâu trận chung kết thượng Hoắc Yến mới vừa gặp qua Lý Trì, cho nên đối hắn còn tính có điểm ấn tượng.</p>
+<p>Cho nên Hoắc Yến liền càng nghi hoặc.</p>
+<p>Lý Trì có cái gì lý do tới Hoắc Trạch chiến đội đương nằm vùng?</p>
+<p>Hoắc Trạch cũng đồng dạng tưởng không rõ.</p>
+<p>Năm nay Lý Trì nơi MH chiến đội, tuy rằng cái này mùa giải không có đoạt giải quán quân, nhưng cũng là á quân chiến đội. Lý Trì làm MH vương bài tuyển thủ, vẫn luôn là MH trung tâm đội viên.</p>
+<p>Đồng thời MH làm nhãn hiệu lâu đời Hào Môn chiến đội, nội tình rất sâu, bọn họ chiến thuật hệ thống cũng so Hoắc Trạch chiến đội hoàn thiện không ít.</p>
+<p>Theo lý thuyết, như vậy một cái quản lý hệ thống hoàn thiện ưu tú chiến đội căn bản là không cần phải tự đoạn cánh tay, chỉ vì thăm dò rõ ràng bọn họ chiến thuật, liền đem chính mình chiến đội nhất trung tâm đội viên Lý Trì cấp đưa lại đây.</p>
+<p>Cho nên này trong đó có thể hay không là có cái gì hiểu lầm?</p>
+<p>Lý Trì hiện tại tuổi tác cũng bất quá hai mươi, đúng là tuyển thủ chuyên nghiệp hoàng kim thời kỳ.</p>
+<p>Hoàn toàn không cần phải tự hủy tương lai a!</p>
+<p>Hoắc Yến Hoắc Trạch nghi hoặc, Hoắc ba Hoắc mẹ liền càng nghi hoặc.</p>
+<p>Lý Trì dù sao cũng là khách nhân, hiện tại cái gì đều còn không có làm rõ ràng thời điểm, bọn họ cũng không hảo đem người lượng, liền tiếp đón người uống trà, lại bắt đầu đi theo hắn nói chuyện phiếm.</p>
+<p>Thừa dịp Hoắc ba Hoắc mẹ tiếp đón người công phu, Diệp Nhạc Dao đã mở ra bản ghi nhớ, một lần nữa đem này một bộ phận cốt truyện nhìn một lần, xem xong sau, Diệp Nhạc Dao mày trực tiếp liền nhíu lại.</p>
+<p>Hoắc Trạch liền ngồi ở Diệp Nhạc Dao đối diện, thấy hắn mày nhăn lại, Hoắc Trạch trong lòng tức khắc lộp bộp một chút.</p>
+<p>Không phải đâu, chẳng lẽ liền thật sự chỉ là bởi vì bại bởi bọn họ một lần, MH liền phải đưa cái nằm vùng lại đây?</p>
+<p>Vẫn là đem chính mình đội ngũ vương bài cấp đưa lại đây?</p>
+<p>Điên rồi đi?!</p>
+<p>Chính là lúc này, Diệp Nhạc Dao rốt cuộc mở miệng</p>
+<p>【 nguyên lai là như thế này, cho nên Lý Trì là có nhược điểm ở nhân thủ thượng a! 】</p>
+<p>【 ta liền nói sao, Lý Trì ở MH đãi ngộ cũng không kém, tuy rằng hắn cùng MH hợp đồng xác thật đến kỳ, nhưng chỉ cần hắn tưởng gia hạn hợp đồng, MH sao có thể không đồng ý? 】</p>
+<p>【 nguyên lai là bị uy hiếp, bất quá hắn cái này nhược điểm đi……】</p>
+<p>Diệp Nhạc Dao thở dài.</p>
+<p>Hoắc ba Hoắc mẹ liếc nhau.</p>
+<p>Cái gì nhược điểm?</p>
+<p>Hoắc Trạch cũng thoáng ngồi thẳng thân mình.</p>
+<p>Nhược điểm?</p>
+<p>Chỉ cần không phải đánh giả tái loại này nghiêm trọng vết nhơ, hẳn là cũng chưa cái gì vấn đề đi?</p>
+<p>Hắn còn không có tưởng xong, liền nghe được Diệp Nhạc Dao tiếng lòng tiếp tục truyền đến ——</p>
+<p>【 chậc chậc chậc, cái này Lý Trì lá gan là thật sự đại a, hắn thế nhưng còn đánh quá giả tái! 】</p>
+<p>Hoắc Trạch một lòng tức khắc trầm đến đáy biển.</p>
+<p>Không phải?!</p>
+<p>Thật đúng là chính là đánh giả tái sao?!</p>
+<p>Khi nào a?</p>
+<p>Không phải là cùng bọn họ trận chung kết thi đấu đấu cờ đi?</p>
+<p>Nhưng MH vì cái gì muốn cố ý bại bởi bọn họ, sau đó lại đem bọn họ đội ngũ vương bài tuyển thủ đưa lại đây a?</p>
+<p>Hoắc Trạch khiếp sợ, tưởng không rõ.</p>
+<p>Hoắc Yến đồng dạng khiếp sợ.</p>
+<p>Nếu là đánh giả tái nói, một khi bị chứng thực, Lý Trì liền vô cùng có khả năng sẽ bị phía chính phủ cấm tái.</p>
+<p>Thậm chí cái này thi đua kỳ còn sẽ không đoản, giống nhau đều là nửa năm đến một năm, nếu sự tình nghiêm trọng nói, hai năm cũng là có khả năng.</p>
+<p>Đừng nói một năm, chính là nửa năm không có thi đấu, tuyển thủ trạng thái đều sẽ không bằng từ trước.</p>
+<p>Đối với tuyển thủ chuyên nghiệp tới nói, hoàng kim kỳ liền như vậy mấy năm thời gian.</p>
+<p>Hơn nữa càng quan trọng là, chuyện này một khi bị phơi ra, lúc sau mặt khác chiến đội cũng không dám lại dùng Lý Trì.</p>
+<p>Rốt cuộc vô luận là cái nào chiến đội, đều sẽ không yên tâm một cái phía trước vì ích lợi bán đứng chính mình chiến đội người, ai có thể bảo đảm hắn lúc sau liền sẽ không lại bởi vì ích lợi tâm động đâu?</p>
+<p>Chỉ cần chuyện này bị cho hấp thụ ánh sáng, Lý Trì chức nghiệp kiếp sống liền tính xong đời.</p>
+<p>Kia Lý Trì không muốn cùng MH tiếp tục gia hạn hợp đồng lại là chuyện như thế nào?</p>
+<p>Chẳng lẽ Lý Trì là cảm thấy MH rốt cuộc bồi dưỡng hắn, hắn không thể lại lưu lại tiếp tục hoắc hoắc MH, liền tới hoắc hoắc Hoắc Trạch chiến đội?</p>
+<p>Hoắc Yến đột nhiên liền có điểm muốn cười.</p>
+<p>Khó trách hắn gần nhất càng xem Hoắc Trạch, càng cảm thấy hắn lớn lên có điểm giống coi tiền như rác.</p>
+<p>Hoắc mẹ cũng không nhịn xuống nhìn Hoắc Trạch liếc mắt một cái.</p>
+<p>Ai.</p>
+<p>Xem ra Hoắc Trạch sự nghiệp vận năm nay có điểm không tốt lắm đâu.</p>
+<p>Diệp Nhạc Dao đã xem xong rồi này bộ phận cốt truyện, nơi này cốt truyện cũng không có đề cập Lý Trì rốt cuộc là cái gì đánh giả tái, lại là bị ai bắt được nhược điểm, hắn hướng phía sau phiên phiên, cũng không có tìm được tương quan miêu tả, dứt khoát liền thu hồi di động.</p>
+<p>【 đến tưởng cái biện pháp nhắc nhở một chút tam ca đừng ký hợp đồng……】</p>
+<p>Nghĩ nghĩ, Diệp Nhạc Dao tầm mắt liền dừng ở nghiêng đối diện Lý Trì trên người.</p>
+<p>Hoắc ba còn ở cùng Lý Trì nói chuyện phiếm.</p>
+<p>Không biết không phải không phải Lý Trì tính cách nguyên nhân, hắn lời nói cũng không nhiều, thần sắc còn có chút lãnh đạm. Hoắc ba nói với hắn lời nói khi, Lý Trì đại đa số thời điểm chỉ là nhàn nhạt mà ứng một tiếng, đôi khi thậm chí chỉ là gật đầu cùng lắc đầu.</p>
+<p>【 ân, thoạt nhìn Lý Trì còn rất khí định thần nhàn, liền không biết hắn là thật sự không vội vẫn là giả không vội. 】</p>
+<p>Hoắc Yến cũng đi theo nhìn Lý Trì liếc mắt một cái, mày hơi chọn.</p>
+<p>Lý Trì tuy rằng trên mặt không có gì biểu tình, nhưng phỏng chừng hắn kiên nhẫn cũng mau hao hết.</p>
+<p>Quả nhiên, ở lại một lần đề tài Hoắc ba đề tài sau khi kết thúc.</p>
+<p>Lý Trì rốt cuộc nhịn không được, hơi hơi nghiêng đầu nhìn mắt Hoắc Trạch, chủ động mở miệng hỏi “Hoắc đội, ngươi bắt được con dấu sao? Chúng ta có thể ký hợp đồng đi?”</p>
+<p>Diệp Nhạc Dao tức khắc liền nóng nảy</p>
+<p>【 không được a, tam ca ngươi tuyệt đối không thể cùng hắn ký hợp đồng! 】</p>
+<p>【 a a a, ta nếu muốn cái biện pháp gì không cho tam ca cùng Lý Trì ký hợp đồng a? 】</p>
+<p>Diệp Nhạc Dao phi thường sốt ruột.</p>
+<p>Hoắc gia người cả nhà lỗ tai cũng phi thường đau.</p>
+<p>Hoắc Yến thật sự không nhịn xuống nhìn mắt Diệp Nhạc Dao.</p>
+<p>Đừng nóng vội!</p>
+<p>Ngươi tam ca tuy rằng xác thật là cái ngốc tử, nhưng là hiện tại hắn đã biết Lý Trì chân thật mục đích, hắn khẳng định sẽ không theo Lý Trì ký hợp đồng.</p>
+<p>Chỉ tiếc, Diệp Nhạc Dao nghe không được Hoắc Yến tiếng lòng, hắn còn ở trong lòng hò hét.</p>
+<p>Mà Hoắc Trạch nghe được này chói tai hò hét thanh, cũng rốt cuộc từ thất hồn lạc phách trung phục hồi tinh thần lại.</p>
+<p>Mất đi như vậy một cái có thực lực tuyển thủ xác thật thương tâm, nhưng Diệp Nhạc Dao là thật sự có điểm sảo a!</p>
+<p>Hắn đều tưởng che lỗ tai.</p>
+<p>Hoắc Trạch cố nén lỗ tai không khoẻ, quay đầu nhìn mắt Lý Trì.</p>
+<p>Lý Trì là đêm qua đột nhiên liên hệ thượng bọn họ chiến đội người phụ trách.</p>
+<p>Nghe nói Lý Trì cố ý muốn gia nhập bọn họ chiến đội, Hoắc Trạch cao hứng hỏng rồi, phải biết Lý Trì có thể MH vương bài a, thực lực của hắn đều là rõ như ban ngày!</p>
+<p>Nếu có thể làm Lý Trì gia nhập bọn họ chiến đội, bọn họ chiến đội chỉnh thể thực lực khẳng định sẽ có đại biên độ tăng lên.</p>
+<p>Cho nên Hoắc Trạch không chút suy nghĩ, vào lúc ban đêm liền nói phải về tới tự mình cùng Lý Trì nói, vì thế người một nhà đều đi theo hắn vội vàng từ quay chụp nơi sân chạy về nội thành.</p>
+<p>Tối hôm qua cả đêm Hoắc Trạch đều ở cùng Lý Trì câu thông hợp đồng chi tiết, sợ Lý Trì sẽ đột nhiên đổi ý, cũng sợ Lý Trì sẽ bị mặt khác chiến đội tiệt hồ, cho nên mặc dù Lý Trì đưa ra thù lao có điểm cao, Hoắc Trạch đều cắn răng một cái đáp ứng hạ.</p>
+<p>Cả đêm thời gian nhanh chóng gõ định rồi hợp đồng chi tiết, Hoắc Trạch còn sợ Lý Trì đổi ý, sáng sớm hôm sau liền ước người ra tới ký hợp đồng.</p>
+<p>Không nghĩ tới Lý Trì thế nhưng cũng phi thường phối hợp, Hoắc Trạch một ước liền ra tới.</p>
+<p>Lúc ấy Hoắc Trạch còn tưởng rằng là Lý Trì cũng phi thường chân thành tưởng gia nhập chính mình chiến đội, mới chịu đáp ứng như vậy nhanh chóng ký hợp đồng.</p>
+<p>Kết quả không nghĩ tới a, này căn bản chính là vì chính mình chiến đội mà thiết trí bẫy rập.</p>
+<p>Phỏng chừng không chỉ là chính mình sợ Lý Trì chạy, Lý Trì phỏng chừng cũng sợ hãi chính mình không cùng hắn ký hợp đồng đi?</p>
+<p>Nghĩ đến đây, Hoắc Trạch trong mắt hiện lên một tia tức giận.</p>
+<p>Mẹ nó, dám chơi lão tử!</p>
+<p>Giá trên trời thù lao nhưng thật ra việc nhỏ, liền tính thật sự bị lừa, Hoắc Trạch đảo cũng có thể tiếp thu.</p>
+<p>Nhưng hắn như thế nào đều không tiếp thu được chính là có người ở chính mình đội ngũ đánh giả tái, làm mặt khác tuyển thủ vất vả nỗ lực nước chảy về biển đông!</p>
+<p>Tuy rằng còn không rõ ràng lắm Lý Trì rốt cuộc là ai phái tới, nhưng đã không quan trọng.</p>
+<p>Dù sao hiện tại Hoắc Trạch đã sẽ không lại cùng Lý Trì ký hợp đồng, hắn cũng sẽ tra rõ chuyện này.</p>
+<p>Hoắc Trạch hơi hơi hít vào một hơi, thực mau sửa sang lại hảo chính mình biểu tình, cười nói “Con dấu liền ở ta phòng, ký hợp đồng sự tình cũng không nóng nảy, chúng ta ăn cơm trước đi.”</p>
+<p>Vừa lúc quản gia lúc này cũng đã đi tới, báo cho bọn họ cơm trưa đã làm tốt.</p>
+<p>Diệp Nhạc Dao nghe được Hoắc Trạch những lời này mới hơi hơi nhẹ nhàng thở ra.</p>
+<p>【 hảo đi, xem ra ta tam ca cũng không có như vậy ngốc trực tiếp liền ký hợp đồng, nếu không ta khẳng định sẽ trực tiếp đem tam ca hợp đồng cướp đi! 】</p>
+<p>Hoắc Trạch “……”</p>
+<p>Hắn đến tột cùng nơi nào choáng váng!</p>
+<p>Diệp Nhạc Dao ngươi có thể hay không không cần đem hướng trên người hắn dán nhãn a!</p>
+<p>Còn có ngươi giáp mặt đoạt hợp đồng cái này hành động liền không ngốc?</p>
+<p>Hoắc Yến tắc có chút buồn cười, thiếu chút nữa liền không nhịn xuống bật cười.</p>
+<p>Xác thật cũng nên làm Hoắc Trạch thể nghiệm một chút chính mình cảm thụ a.</p>
+<p>Hoắc ba chạy nhanh mở miệng “Đúng vậy, hợp đồng chờ lát nữa là có thể thiêm, ăn cơm trước đi.”</p>
+<p>Lý Trì mày nhíu một chút, nghiêng đầu nhìn mắt Hoắc Trạch, xác định trên mặt hắn không có gì dị thường, mới hơi hơi nhẹ nhàng thở ra.</p>
+<p>Lý Trì tầm mắt rất cẩn thận, chỉ là nhìn Hoắc Trạch liếc mắt một cái liền bay nhanh thu hồi ánh mắt, nhưng vẫn luôn ở quan sát Diệp Nhạc Dao lại chú ý tới hắn biểu tình biến hóa.</p>
+<p>Diệp Nhạc Dao khóe miệng trực tiếp chính là một loan</p>
+<p>【 xem ra Lý Trì có điểm cấp a. 】</p>
+<p>Hoắc Trạch tiếp đón Lý Trì ngồi xuống, khóe miệng trực tiếp chính là một loan.</p>
+<p>Nếu Lý Trì sốt ruột, kia hắn liền càng không thể sốt ruột.</p>
+<p>Hoắc Trạch hiện tại không tính toán cùng Lý Trì xé rách mặt, Hoắc ba Hoắc mẹ cũng nhìn ra hắn ý tưởng, cho nên đối Lý Trì vẫn là trước sau như một.</p>
+<p>Lý Trì không có nhận thấy được dị dạng, đi theo người một nhà ăn xong rồi một bữa cơm.</p>
+<p>Hạ bàn ăn sau, Hoắc ba đột nhiên mở miệng nói “Hoa viên một lần nữa bố trí hẳn là cũng hảo, các ngươi muốn cùng ta cùng đi đi dạo sao?”</p>
+<p>Hoắc Trạch không chút suy nghĩ cười nói “Hảo a, Lý Trì, cùng đi nhìn xem?”</p>
+<p>Lý Trì nhíu mày.</p>
+<p>Hắn tới Hoắc gia cũng không phải là vì dạo nhà bọn họ hoa viên.</p>
+<p>Nhưng Hoắc Trạch đều chủ động khởi xướng mời, mặt khác Hoắc gia người còn đều nhìn lại đây.</p>
+<p>Lý Trì khóe miệng nhấp khẩn.</p>
+<p>Hắn thật đúng là không hảo cự tuyệt.</p>
+<p>Vì thế Lý Trì chỉ có thể căng da đầu gật đầu đồng ý.</p>
+<p>Diệp Nhạc Dao lúc này cũng đã nhận ra cái gì, nghiêng đầu liếc mắt Hoắc Trạch.</p>
+<p>【 ân? Ta như thế nào cảm giác tam ca giống như không nóng nảy ký hợp đồng a. 】</p>
+<p>【 chẳng lẽ ta ngốc tử tam ca rốt cuộc đã nhận ra dị thường? 】</p>
+<p>Hoắc Yến là thật sự không banh trụ, trực tiếp cười hai hạ.</p>
+<p>Hoắc Trạch “……”</p>
+<p>Hoắc Trạch bước nhanh tiến lên, trực tiếp ôm lấy Diệp Nhạc Dao bả vai, cho hắn tới một cái khóa hầu.</p>
+<p>Diệp Nhạc Dao đôi mắt trừng lớn “Tam ca ngươi làm gì a!”</p>
+<p>Hoắc Trạch buông ra Diệp Nhạc Dao, nặng nề mà hừ một tiếng.</p>
+<p>Diệp Nhạc Dao rất là vô ngữ, xoa xoa chính mình cổ, nhíu mày ở trong lòng nói thầm</p>
+<p>【 không nên a, tam ca đều lớn như vậy tuổi tác, chẳng lẽ trung nhị kỳ còn không có quá? 】</p>
+<p>Hoắc Yến khóe miệng thiếu chút nữa liền không ngăn chặn.</p>
+<p>Hoắc Trạch tức giận đến khớp hàm đều buộc chặt.</p>
+<p>Cái gì gọi là hắn đều lớn như vậy tuổi tác?</p>
+<p>Hắn cũng liền so Diệp Nhạc Dao lớn hơn hai tuổi!</p>
+<p>Hoắc Trạch hít sâu một hơi, quyết định không cùng Diệp Nhạc Dao so đo, quay đầu liền đi theo Lý Trì đáp lời.</p>
+<p>Hoắc ba tân quy hoạch hoa viên rất đẹp, nhưng hiện tại rốt cuộc vẫn là giữa mùa hạ, cho nên đoàn người ở bên ngoài đi dạo một lát, liền vào phòng.</p>
+<p>Trở lại phòng khách sau, Hoắc Trạch cười hỏi Lý Trì “Vừa mới xem ngươi vẫn luôn đang xem nhà của chúng ta bể bơi, có nghĩ đi du trong chốc lát?”</p>
+<p>Lý Trì nhíu mày, biểu tình có chút kháng cự “Không có, ta liền tùy tiện nhìn xem……”</p>
+<p>Hoắc Trạch dứt khoát lôi kéo hắn đứng dậy “Đi thôi, đừng cùng chúng ta khách khí, vừa lúc ta cũng nhiệt, cùng đi bơi lội lại thảo luận một chút hợp đồng chi tiết?”</p>
+<p>Nhắc tới hợp đồng, Lý Trì trên mặt biểu tình rõ ràng biến đổi, hắn ngẩng đầu nhìn Hoắc Trạch, trong lòng đột nhiên liền có cổ nói không nên lời buồn bực.</p>
+<p>Rõ ràng đêm qua hai người bọn họ đều đã đem hợp đồng nói hảo, hiện tại còn nói cái gì hợp đồng chi tiết?</p>
+<p>Chẳng lẽ là chính mình đề thù lao có điểm cao, Hoắc Trạch đổi ý?</p>
+<p>Không nên a.</p>
+<p>Rõ ràng đêm qua Hoắc Trạch đều đáp ứng hạ, còn cứ thế cấp ước chính mình ký hợp đồng.</p>
+<p>Lý Trì kỳ thật cũng tưởng điếu một chút Hoắc Trạch, nhưng lại sợ sự tình càng kéo dài sinh biến cố, cho nên mới đáp ứng rồi hôm nay buổi sáng ký hợp đồng.</p>
+<p>Nhưng không biết Hoắc Trạch đến tột cùng đang làm cái gì, đầu tiên là quên mang con dấu nói phải về nhà lấy, kết quả về đến nhà cũng không gặp hắn sốt ruột đi lấy con dấu ký hợp đồng, ngược lại không nhanh không chậm mà làm hắn lưu lại ăn cơm trưa.</p>
+<p>Hiện tại cơm trưa cũng ăn, hoa viên cũng đi dạo, còn nói muốn mang chính mình đi bơi lội……</p>
+<p>Qua lâu như vậy chỉ tự không đề cập tới ký hợp đồng, không phải Lý Trì đa nghi, là hắn thật sự cảm thấy Hoắc Trạch có khả năng đoán được cái gì.</p>
+<p>Chẳng lẽ là Hoắc Trạch tra được chính mình tới hắn chiến đội chân chính nguyên nhân?</p>
+<p>Lý Trì trong lòng cả kinh, lại nhanh chóng trấn định xuống dưới.</p>
+<p>Không có khả năng.</p>
+<p>Cố Tung đáp ứng rồi chính mình, chỉ cần hắn gia nhập Hoắc Trạch chiến đội, ở sự tình còn không có hoàn thành phía trước, hắn không có khả năng đem chính mình đánh quá giả tái sự tình tiết lộ đi ra ngoài.</p>
+<p>Kia……</p>
+<p>Tổng không thể là Hoắc Trạch cảm thấy chính mình đề tiền lương quá cao đi?</p>
+<p>Lý Trì tâm tư bách chuyển thiên hồi, nhưng ở người ngoài xem ra cũng bất quá là qua ngắn ngủn vài giây.</p>
+<p>Lý Trì hơi hít vào một hơi, đi theo Hoắc Trạch đứng lên, một bên đi ra ngoài một bên thử mở miệng hỏi “Nhưng chúng ta không phải đã nói hảo hợp đồng sao? Là có cái gì vấn đề?”</p>
+<p>Diệp Nhạc Dao khẳng định sẽ không sai quá tốt như vậy một cái xem náo nhiệt cơ hội a, vì thế hắn trực tiếp đi theo Hoắc Trạch “Tam ca, ta cũng đi!”</p>
+<p>Hoắc Trạch không có trước tiên trả lời Lý Trì, mà là buồn cười nhìn về phía Diệp Nhạc Dao “Ngươi không phải sợ bơi lội sao?”</p>
+<p>Diệp Nhạc Dao nói “Ta liền chơi trong chốc lát thủy!”</p>
+<p>Hoắc Trạch cười cười, lúc này mới quay đầu lại đối Lý Trì nói “Có cái vấn đề nhỏ……”</p>
+<p>Hắn như là có chút khó có thể mở miệng giống nhau, chờ đi hơi chút xa điểm, Hoắc Trạch mới nói “Về tiền lương phương diện, ta cẩn thận tự hỏi một chút, cảm thấy cái này thù lao có chút quá cao.”</p>
+<p>Tuyển thủ chuyên nghiệp thù lao giống nhau đều ở trăm vạn tả hữu, nhưng mỗi cái tuyển thủ mức độ nổi tiếng, thực lực bất đồng, cố định tiền lương cũng sẽ có điều bất đồng.</p>
+<p>Giống Lý Trì loại thực lực này tuyển thủ, lại có chút danh tiếng, hắn cố định lương một năm giống nhau là nhị mở đầu bảy vị số, hơn nữa mặt khác tiền thưởng, phân thành, một năm xuống dưới có thể có 300 đến 400 vạn.</p>
+<p>Nhưng đêm qua Lý Trì mở miệng cố định lương một năm chính là 400 vạn.</p>
+<p>Cái này thù lao đã không phải giống nhau cao.</p>
+<p>Nhưng vì có thể ký xuống Lý Trì, tối hôm qua Hoắc Trạch đôi mắt cũng chưa chớp một chút liền đáp ứng hạ.</p>
+<p>Hoắc Trạch lúc ấy tưởng chính là, chỉ cần Lý Trì có thể mang theo đội viên khác đánh ra thành tích, thù lao cao một chút liền cao một chút, rốt cuộc như vậy ưu tú tuyển thủ phi thường khó được, một khi bỏ lỡ vậy thật sự bỏ lỡ.</p>
+<p>Nhưng hiện tại như vậy vừa thấy, còn không bằng trực tiếp bỏ lỡ đâu.</p>
+<p>Hoắc Trạch nói xong, liền nghiêng đầu nhìn về phía Lý Trì.</p>
+<p>Quả nhiên, Lý Trì biểu tình lập tức chính là biến đổi.</p>
+<p>Lý Trì mày nhăn lại, trong mắt tựa hồ có chút tức giận, nhưng thực mau lại bị hắn cấp đè ép trở về “Nhưng chúng ta tối hôm qua không phải đã nói hảo sao? Hoắc đội ngươi lúc ấy cũng đáp ứng rồi.”</p>
+<p>Diệp Nhạc Dao thu hồi tầm mắt, khóe miệng cong lên.</p>
+<p>【 ân? Lý Trì còn muốn cao thù lao sao? 】</p>
+<p>【 kia nếu là giá cả không thể đồng ý, này hợp đồng không cũng liền thiêm không được sao? 】</p>
+<p>Diệp Nhạc Dao nghĩ đến đây, nháy mắt yên lòng.</p>
+<p>【 hảo hảo hảo, xem ra tam ca đã bắt đầu trường đầu óc, kia ta liền an tâm rồi! 】</p>
+<p>Hoắc Trạch “……”</p>
+<p>Ngươi mới bắt đầu trường đầu óc!</p>
+<p>Hoắc Trạch nhịn xuống không đi xem Diệp Nhạc Dao, cười đối Lý Trì nói “Ngươi cũng biết, ta cái này chiến đội đâu, là một chi tân chiến đội. Tuy rằng trước mùa giải may mắn cầm một cái quán quân, có rất nhiều nhà đầu tư tìm tới môn, nhưng là chiến đội còn có như vậy nhiều người muốn dưỡng, chúng ta cũng kém mấy cái chiến thuật phân tích sư, cho nên cái này kinh phí a, là thật sự có điểm không đủ.”</p>
+<p>“Việc này cũng trách ta, ta đêm qua căn bản là không nhớ tới chuyện này, mới một ngụm đáp ứng hạ, ta thực xin lỗi, cho nên mới tưởng cùng ngươi lại thương lượng một chút.” Hoắc Trạch nói xong liền đi xem Lý Trì.</p>
+<p>Lý Trì lúc này sắc mặt đã có chút khó coi.</p>
+<p>Ba người đi tới bể bơi bên cạnh.</p>
+<p>Diệp Nhạc Dao căn bản là không chuẩn bị xuống nước, cho nên trực tiếp liền đi bên cạnh bờ cát ghế nửa nằm.</p>
+<p>Hoắc Trạch đối Lý Trì nói “Phòng chuẩn bị áo tắm, đi đổi sao?”</p>
+<p>Lý Trì mặt âm trầm không có trả lời.</p>
+<p>Hoắc Trạch nhướng mày, chuẩn bị chính mình đi trước đổi áo tắm.</p>
+<p>Chính là lúc này, Lý Trì đột nhiên mở miệng “Hoắc đội, ta là bởi vì phi thường thích các ngươi chiến đội bầu không khí, cũng đối ngài tương đối kính ngưỡng, cho nên mới quyết định gia nhập các ngươi chiến đội.”</p>
+<p>Hoắc Trạch bước chân một đốn, quay đầu lại xem Lý Trì.</p>
+<p>Lý Trì tiếp theo nói “Ngài hẳn là cũng rõ ràng, ta cùng MH giải ước tin tức còn không có thả ra, đây cũng là ta trước tiên cùng MH bên kia thương lượng tốt. Một khi ta cùng MH giải ước tin tức thả ra, liên hệ ta chiến đội cũng chỉ biết nhiều sẽ không thiếu, để lại cho ta lựa chọn đường sống còn có rất nhiều.”</p>
+<p>Diệp Nhạc Dao nghe đến đó đôi mắt đều mở to.</p>
+<p>【 oa, đây là trực tiếp bắt đầu uy hiếp? 】</p>
+<p>Diệp Nhạc Dao lại chạy nhanh đi xem Hoắc Trạch.</p>
+<p>【 tam ca! Ngươi cũng không thể bị uy hiếp a! 】</p>
+<p>【 bỏ lỡ ưu tú tuyển thủ xác thật đáng tiếc, nhưng là Lý Trì loại người này không đáng đáng tiếc a! Ngươi bỏ lỡ hắn khẳng định còn sẽ gặp được càng tốt đại thụ, càng tốt chân mệnh thiên tử! 】</p>
+<p>Hoắc Trạch “……”</p>
+<p>Có thể tới hay không cá nhân cấp Diệp Nhạc Dao miệng lấp kín a!</p>
+<p>Hắn từng ngày đến tột cùng ở nói bậy bạ gì đó a? Trực tiếp cho hắn ý nghĩ đều quấy rầy!</p>
+<p>Hoắc Trạch quả thực đau đầu, cảm thấy buồn cười vừa tức giận, trong lúc nhất thời cũng không có sửa sang lại hảo biểu tình.</p>
+<p>Hắn vừa lúc đưa lưng về phía Lý Trì, không có quay đầu lại.</p>
+<p>Dáng vẻ này dừng ở Lý Trì trong mắt, liền thành Hoắc Trạch do dự biểu tình.</p>
+<p>Lý Trì thật sự không nhịn xuống hơi hơi cong một chút môi.</p>
+<p>Hắn liền biết, Hoắc Trạch sẽ thỏa hiệp.</p>
+<p>Rốt cuộc thực lực của chính mình bãi tại nơi này, mà Hoắc Trạch bọn họ chiến đội nhất bạc nhược điểm, cũng chính là thượng đơn vị trí này.</p>
+<p>Tân mùa giải thực mau liền phải bắt đầu, trừ bỏ chính mình, Hoắc Trạch còn có thể đi đâu tìm như vậy thích hợp thượng đơn?</p>
+<p>Cứ việc chính mình đề thù lao xác thật cao điểm, nhưng đây cũng là không có cách nào sự tình.</p>
+<p>Lý Trì không có nghĩ tới mấy năm trước sự tình sẽ bị người phiên ra tới, có cái này nhược điểm ở, hắn trước sau không thể an tâm.</p>
+<p>Dù sao chính mình đánh giả tái chuyện này sớm hay muộn sẽ bị tuôn ra tới, còn không bằng thừa dịp chuyện này không có bị tuôn ra tới phía trước, lại hung hăng vớt một bút.</p>
+<p>Cho nên vô luận như thế nào, Lý Trì đều sẽ không thoái nhượng.</p>
+<p>Hoắc Trạch hoãn một hồi lâu, rốt cuộc sửa sang lại hảo chính mình biểu tình, hắn quay đầu, mở miệng hỏi “Nói cách khác, ngươi còn có mặt khác ái mộ chiến đội?”</p>
+<p>Sự thật là, Lý Trì chỉ có thể gia nhập Hoắc Trạch chiến đội.</p>
+<p>Nhưng Lý Trì vẫn là trả lời nói “Có, ta chỉ là ưu tiên lựa chọn các ngươi chiến đội mà thôi, nếu Hoắc đội không thể đáp ứng thù lao nói, ta khả năng liền sẽ lựa chọn mặt khác chiến đội……”</p>
+<p>“Cũng đúng.”</p>
+<p>Lý Trì giọng nói một đốn, sau đó đột nhiên ngẩng đầu, vô cùng khiếp sợ mà giương mắt xem Hoắc Trạch.</p>
+<p>Từ từ, hắn vừa mới nghe được cái gì?</p>
+<p>Diệp Nhạc Dao trực tiếp liền bật cười.</p>
+<p>【 ha ha ha ha ha ha ha ha ha ha ha, hảo một cái “Cũng đúng” a! 】</p>
+<p>【 hảo hảo hảo, xem ra tam ca đây là thật sự tỉnh ngộ a, ta hoàn toàn yên tâm! 】</p>
+<p>Hoắc Trạch nghe được Diệp Nhạc Dao tiếng cười cũng muốn cười, hắn vốn dĩ tưởng nhẫn một chút, nhưng thật sự không nhịn xuống làm miệng mình kiều lên, hắn dứt khoát cũng không che giấu.</p>
+<p>Nhìn trước mặt Lý Trì, Hoắc Trạch cười đến như tắm mình trong gió xuân “Nếu ngươi có càng tốt lựa chọn, ta cũng không cường lưu ngươi. Dù sao cũng là song hướng lựa chọn sao, mọi người đều không cần thiết ở một thân cây thắt cổ chết.”</p>
+<p>Lý Trì “……”</p>
+<p>Đi nima song hướng lựa chọn!</p>
+<p>Hoắc Trạch còn có thể có mặt khác lựa chọn, hắn căn bản là không đến tuyển!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong70.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong72.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "nguoi-qua-duong-giap-tieng-long-tiet-lo-sau-bi-vai-ac-ca-nha-doan-sung";
+const NOVEL_TITLE = "Người qua đường Giáp tiếng lòng tiết lộ sau bị vai ác cả nhà đoàn sủng";
+const CHAPTER_TITLE = "Chương 71. Song hướng lựa chọn";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

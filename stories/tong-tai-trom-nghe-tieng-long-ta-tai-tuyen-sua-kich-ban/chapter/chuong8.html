@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 8</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tổng tài trộm nghe tiếng lòng ta, tại tuyến sửa kịch bản
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 8</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong7.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong9.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Lục trì uyên nhận thức cố đình sâm là cái không thể xưng là quang minh lỗi lạc người.</p>
+<p>Bọn họ đều là bạn cùng lứa tuổi trung người xuất sắc, ở trên thương trường khó tránh khỏi sẽ bị người lấy tới tương đối.</p>
+<p>Có nhân hình dung lục trì uyên là ánh mặt trời tích cực chính diện, vô luận hắn như thế nào tính kế, đánh cờ, đều là ở bên ngoài, nói được thanh thấy được.</p>
+<p>Mà cố đình sâm tắc bằng không, hắn càng giống âm u thâm trầm phản diện, không từ thủ đoạn.</p>
+<p>Này có lẽ cùng cố gia bối cảnh có nhất định quan hệ.</p>
+<p>Nhà bọn họ thời trẻ thiệp \ hắc, bởi vì siết chặt chuyển hình, nhìn qua là tẩy sạch sẽ, nhưng sau lưng vẫn là có chút không minh không bạch lui tới.</p>
+<p>Cố đình sâm kế thừa gia nghiệp sau, màu xám sản nghiệp một lần tiêu thăng.</p>
+<p>Trong vòng đối hắn nhiều nhất đánh giá là chơi hoa, giải trí tuần san đầu đề khách quen, mỗi lần tham dự hoạt động bạn nữ đều bất đồng.</p>
+<p>Hắn thậm chí ở bị truyền thông truy vấn bạn nữ vấn đề thượng, phát ngôn bừa bãi nữ nhân như quần áo, xuyên qua một lần liền sẽ không muốn.</p>
+<p>Truyền thông đau phê hắn làm người ngạo mạn, không hiểu được tôn trọng người. Nhưng không chịu nổi người khác có cuồng ngạo tư bản, dù vậy, vẫn là có người tễ phá đầu đều tưởng tiếp cận hắn.</p>
+<p>Nhân loại mộ cường trong lòng làm cho bọn họ ở truy đuổi cường giả đồng thời, vì hắn hết thảy hành vi bù, bỏ qua đạo đức.</p>
+<p>Lục trì uyên ở trên thương trường cùng cố đình sâm đã giao thủ, ở hắn xem ra, người này quá mức bạo lực, tàn nhẫn, hắn đối pháp luật không hề kính sợ chi tâm, đạo đức điểm mấu chốt càng là ngã ra thấp nhất tiêu chuẩn.</p>
+<p>Ở đại gia tuân kỷ thủ pháp khuôn sáo nội, hắn một hai phải mọc ra mấy cây phản cốt tới chương hiển chính mình không giống người thường.</p>
+<p>Giang thần nói hắn sẽ dùng không hợp pháp thủ đoạn hại chết lộ minh tuyên, điểm này lục trì uyên hoàn toàn tin tưởng.</p>
+<p>Cùng một cái tùy thời đều sẽ giẫm đạp pháp luật người nói pháp luật, bản thân chính là một kiện buồn cười sự.</p>
+<p>Càng buồn cười chính là, người này hắn là vai chính, thế giới thiên vị làm hắn không có sợ hãi.</p>
+<p>Lục trì uyên không có làm giang thần đơn độc đi xuống xử lý, mà là cùng hắn cùng đi.</p>
+<p>Thời gian này điểm, đúng là thượng hạ ban cao phong kỳ, nhưng vì quán triệt hết thảy vì nam nữ chủ phục vụ nguyên tắc, thế giới ý thức cố ý làm hết thảy dừng lại, ủng đổ dòng xe cộ không chút hoang mang, trên xe người nhất trí chờ đợi.</p>
+<p>Nhưng theo giang thần cùng lục trì uyên từ thang máy trên dưới tới, thuộc về người thường dừng lại thời gian bắt đầu tốc độ chảy.</p>
+<p>Vừa rồi còn an an tĩnh tĩnh xe chủ nhóm sôi nổi ló đầu ra nhìn xung quanh, đằng trước thét to nói: “Các ngươi có đi hay không? Không đi phiền toái nhường một chút.”</p>
+<p>“Bên cạnh có rất nhiều đất trống, thế nào cũng phải đổ ở thông đạo thượng sảo, có bệnh.”</p>
+<p>Bất mãn thanh âm dần dần tăng lên, yên lặng ở hai người thế giới nam nữ chủ cuối cùng là bị người kéo ra, nhường ra bọn họ bá chiếm con đường, làm dòng xe cộ khơi thông.</p>
+<p>Giang thần cùng lục trì uyên chờ chiếc xe hoàn toàn thông hành sau mới qua đi, trần chín không nghĩ tới lục trì uyên chính mình tới xử lý, có chút không được tự nhiên mà che chở Thẩm biết ý lui về phía sau.</p>
+<p>Hai bên xe song song ngừng ở cùng nhau, trần chín khởi động xe khi, cố đình sâm cũng ở khởi động. Trần chín không có cùng hắn tranh, mà là làm hắn đi trước. Chưa từng tưởng hắn khai ra đi sau, không hề dấu hiệu mà sau này chuyển xe, trực tiếp đụng phải trần chín xe đầu.</p>
+<p>Trần chín đều sửng sốt, hắn đi theo lục trì uyên hỗn, nhận được cố đình sâm xe, vấn đề là lái xe người không phải cố đình sâm, mà là hắn bạn nữ.</p>
+<p>Đâm xe sau, bọn họ hai người xuống xe đổi vị trí, cố đình sâm nhìn mắt, cảm thấy vấn đề không nghiêm trọng, không để trong lòng, thậm chí không chào hỏi, cùng bạn nữ vui cười đùa giỡn mà chuẩn bị lên xe chạy lấy người.</p>
+<p>Thẩm biết ý ở giang thần chỗ nào ăn mệt, thấy thế nơi nào nhẫn được? Trực tiếp kéo ra cửa xe xuống xe, ngăn lại cố đình sâm không chuẩn hắn đi.</p>
+<p>Cố đình sâm có lẽ là trước nay không gặp được quá dám cùng hắn gọi nhịp nữ nhân, đưa ra hắn sẽ bồi thường, nhưng Thẩm biết ý muốn không phải bồi thường, mà là xin lỗi.</p>
+<p>Hai người ông nói gà bà nói vịt, trần chín có băn khoăn, không hảo ra mặt, liền muốn cho giang thần xuống dưới làm giảm xóc.</p>
+<p>“Nguyên lai là Lục gia người, khó trách tự tin mười phần, chướng mắt ta tam dưa hai táo.”</p>
+<p>Cố đình sâm thấy lục trì uyên cũng không ngoài ý muốn, hắn ra tai nạn xe cộ tin tức thượng đầu đề, tuy rằng nhiệt độ thực mau liền đi xuống, nhưng tin tức ở trong vòng vẫn là tán thực mau.</p>
+<p>Cố đình sâm tầm mắt lướt qua hắn, dừng ở giang thần trên người, ánh mắt nghiền ngẫm.</p>
+<p>Lục trì uyên hiểu biết tới long đi mạch, Thẩm biết ý cố chấp mà liền một câu: “Xin lỗi!”</p>
+<p>Lục trì uyên nhìn hai người, ánh mắt lãnh lệ mà quét về phía trần chín, nói: “Chúng ta công ty là không có xử lý loại sự tình này bộ môn sao?”</p>
+<p>Trần chín bị xem kinh hãi, chột dạ mà gục đầu xuống.</p>
+<p>Hắn như vậy thể trạng nói hắn ngăn không được Thẩm biết ý, vốn dĩ liền buồn cười, hiện tại còn tùy ý Thẩm biết ý cùng cố đình sâm chính diện đối thượng, hình thể cùng tuổi tác không bình đẳng, đem Thẩm biết ý bại lộ ở một cái nguy hiểm tình cảnh hạ.</p>
+<p>Trần chín làm an bảo, lại phạm loại này cấp thấp sai lầm.</p>
+<p>Nếu là tai nạn xe cộ phía trước, lục trì uyên sẽ cảm thấy vô pháp lý giải.</p>
+<p>Nhưng ở tai nạn xe cộ lúc sau, kiến thức thế giới đối nam nữ tương ngộ chấp nhất, lục trì uyên sẽ hoài nghi hắn bị hàng trí.</p>
+<p>Giang thần qua đi kiểm tra chiếc xe, lấy ra di động chụp ảnh, hai bên đều không phải vấn đề lớn, thuộc về có thể ngồi xuống hiệp thương, đều không cần báo bảo hiểm lý bồi trình độ.</p>
+<p>【 đã tê rần, làm người bình thường hảo thống khổ. 】</p>
+<p>Giang thần ở trong lòng phun tào, thực mau liền lui về lục trì uyên bên người.</p>
+<p>Lục trì uyên nói: “Cố tiên sinh, nếu ngươi cảm thấy ta muội muội yêu cầu không hợp lý, chúng ta có thể báo nguy xử lý. Ta tin tưởng trong xe camera hành trình lái xe, có thể giải thích hết thảy.”</p>
+<p>Lục trì uyên không có cùng cố đình sâm dây dưa tính toán, vứt bỏ lung tung rối loạn các loại nhân tố, hắn đâm xe là sự thật, đâm xe sau làm lơ phía sau phản ứng chuẩn bị trực tiếp rời đi cũng là sự thật.</p>
+<p>Thẩm biết ý chỉ là yêu cầu hắn xin lỗi, có lẽ ở cố đình sâm xem ra có chút ấu trĩ, nhưng ở lục trì uyên xem ra hợp tình hợp lý. Nữ hài tử tố cầu, không nên bị làm lơ.</p>
+<p>“Ta xác thật là kinh hách tới rồi mỗ chỉ tiểu bạch thỏ, bởi vì nàng ca ca vừa mới ra tai nạn xe cộ, nàng đúng là mẫn cảm thời điểm.” Cố đình sâm ngôn ngữ ngả ngớn, lời nói mang thứ.</p>
+<p>Hắn nhìn về phía Thẩm biết ý, không có xin lỗi, ngược lại ý vị thâm trường, “Vì biểu đạt thành ý của ta, không biết Thẩm tiểu thư có nguyện ý hay không hãnh diện cùng ta cộng tiến cơm trưa?”</p>
+<p>“Nàng không muốn.” Lục trì uyên cự tuyệt cố đình sâm yêu cầu, nói, “Cố tiên sinh nếu là thực sự có thành ý, ta hiện tại hẳn là sẽ không đứng ở chỗ này. Mang theo giới giải trí tiểu hoa ở bệnh viện cùng một nữ hài tử so đo, xem ra Cố tiên sinh là cảm thấy giải trí đầu đề không đủ kích thích, tưởng ở xã hội tin tức thượng cũng lộ lộ mặt.”</p>
+<p>Lục trì uyên không chút khách khí, nhìn về phía cố đình sâm ánh mắt cũng không thân thiện.</p>
+<p>Thẩm biết ý mới 18 tuổi, mà cố đình sâm năm nay đã 27, tạm thời đương trước mắt hết thảy giống như giang thần theo như lời như vậy, là tác giả dưới ngòi bút an bài.</p>
+<p>Này đối tuổi tác kém chín tuổi tình lữ, ở một phương còn không có hoàn toàn thành thục dưới tình huống tương ngộ, cố ý tiến hành một ít có chứa tính ám chỉ dẫn đường, thật sự không có vấn đề sao?</p>
+<p>Làm Thẩm biết ý người giám hộ, lục trì uyên không có khả năng trang không nhìn thấy.</p>
+<p>Biết lục trì uyên khó chơi, cố đình sâm chuyển biến tốt liền thu. Bạn nữ đúng lúc ra mặt, thừa nhận là chính mình sai lầm, cấp Thẩm biết ý xin lỗi.</p>
+<p>Thẩm biết ý nhìn chằm chằm cố đình sâm, thoạt nhìn nếu cố đình sâm không nói lời nào, nàng sẽ không thiện bãi cam hưu.</p>
+<p>Giang thần hướng bên cạnh dịch một bước, ngăn trở Thẩm biết ý tầm mắt, thị giác thượng là đem nàng hộ ở sau người, thực tế là chạy nhanh phân cách nàng cùng nam chủ tầm mắt, làm hắn hai kết thúc này lông gà vỏ tỏi lôi kéo.</p>
+<p>Cố đình sâm còn muốn nói cái gì, di động tiếng chuông vang lên tới, hắn tiếp nhận vừa thấy, mịt mờ mà quét lục trì uyên liếc mắt một cái, không lại dây dưa, lập tức lên xe.</p>
+<p>Hắn phát động xe rời đi, lục trì uyên di động cũng vang lên tới, là WeChat tin tức nhắc nhở âm.</p>
+<p>Lục trì uyên còn không có xem, tuyết cầu trước bát quái mà nhảy ra, thổi loa nói: 【 mới nhất bát quái, ký chủ, lộ minh tuyên cùng gián điệp bạn gái nói cúi chào. Hắc hắc, cố đình sâm có chính mình phiền toái. 】</p>
+<p>Lục trì uyên dừng lại cầm di động động tác, hắn đoán được là ai tin tức, cũng đoán được vừa rồi cố đình sâm mịt mờ đánh giá kia liếc mắt một cái là ý gì.</p>
+<p>Gián điệp nhiệm vụ thất bại, tự nhiên phải cho chính mình chủ tử thông báo.</p>
+<p>Giang thần có chút kinh ngạc: 【 lộ minh tuyên như vậy dứt khoát? Hắn bạn gái không nghĩ tới giữ lại một chút? 】</p>
+<p>【 lộ minh tuyên trở về quá kịp thời, bạn gái cùng cuồng đồ đang ở phòng khách điên loan đảo phượng, hắn vào cửa chính là thị giác cùng tinh thần song trọng đánh sâu vào, ta cảm thấy hắn chỉ cần không luyến ái não, đều có thể biết nên làm gì đi? Tuy rằng bạn gái ý đồ PUA một chút, nhường đường minh tuyên cảm thấy là chính mình sai, nhưng là lộ minh tuyên không ăn này bộ. 】</p>
+<p>【 này đều tận mắt nhìn thấy, còn có gì hảo thuyết? 】</p>
+<p>Giang thần không thể không bội phục một chút gián điệp đầu óc, này nếu là làm nàng trả đũa thành công, kia lộ minh tuyên thật sự không cứu.</p>
+<p>Lục trì uyên tỏ vẻ tán thành, hắn trấn an Thẩm biết ý đồng thời, một bộ phận tinh lực ở chú ý nghe giang thần tiếng lòng.</p>
+<p>Tuyết cầu nói: 【 không phải thực hiểu các ngươi nhân loại, bạn gái cảm thấy lộ minh tuyên không tính cái nam nhân, bọn họ kết giao lâu như vậy, cũng liền dắt qua tay, hoài nghi hắn không được. 】</p>
+<p>Giang thần bước chân lảo đảo một chút, ngẫm lại lộ minh tuyên thể trạng: 【 khả năng lộ minh tuyên cảm thấy cảm tình còn không đúng chỗ? 】</p>
+<p>【 hắn trước kia bạn gái cũng chỉ cực hạn với hôn môi, dùng nhân loại nói, hẳn là kêu đẹp chứ không xài được, bạch trường như vậy cao vóc dáng. 】</p>
+<p>Giang thần ý đồ cấp lộ minh tuyên bù: 【…… Vạn nhất nhân gia chỉ là truyền thống đâu? 】</p>
+<p>【 truyền thống? 】 tuyết cầu suy tư một lát, nói, 【 xác thật, hắn rốt cuộc từng có luyến ái kinh nghiệm, chỉ là tương đối khắc chế, bảo vệ cho điểm mấu chốt không nên bị trêu chọc. Thật muốn nói có vấn đề, hẳn là lục trì uyên loại này loại hình, ngươi xem hắn đều không có bạn gái. 】</p>
+<p>Tuyết cầu nghiêm trang mà đến ra một cái khác kết luận, luyến ái sẽ sinh ra dopamine, kích thích người dục vọng, làm người có một ít xúc động. Trái lại, một cái không có luyến ái ý thức người, hắn dục vọng thập phần nhạt nhẽo.</p>
+<p>Liền dục vọng đều không có người, không phải không được, lại là cái gì?</p>
+<p>Tuyết cầu cảm thấy chính mình suy luận thập phần chính xác, rất tán đồng.</p>
+<p>Lục trì uyên: “……”</p>
+<p>Không yêu đương cũng có sai?</p>
+<p>Thời buổi này, không hôn chủ nghĩa đều là item thời trang, không yêu đương như thế nào còn bị phỉ báng?</p>
+<p>Giang thần trầm mặc thật lâu sau, cái này đề tài hắn muốn nói như thế nào đâu?</p>
+<p>Lục trì uyên là không có yêu đương, này cũng không thể đại biểu cái gì, hắn đều là cái độc thân cẩu đâu, như vậy suy luận, hắn có phải hay không cũng có vấn đề?</p>
+<p>Giang thần một trận ác hàn, vội vàng phủ định cái này ý tưởng, vì lục trì uyên chính danh: 【 ta nhãi con là nhất bổng, ngươi hiểu hay không cái gì kêu một đêm bảy lần lang? Hắn không có bạn gái, là bởi vì hắn là cấm dục hệ. 】</p>
+<p>Lục trì uyên nghe thái dương trừu động, đây đều là cái gì cùng cái gì?</p>
+<p>Tuyết cầu cắt một tiếng, nói: 【 ngươi lại chưa thử qua, ngươi như thế nào biết? 】</p>
+<p>Giang thần: 【……】</p>
+<p>Này nhưng không thịnh hành thí.</p>
+<p>Giang thần phát hiện chính mình bị tuyết cầu mang trật, hắn bất đắc dĩ mà thở dài, không hề tiếp tục cái này đề tài, ngẩng đầu nhìn về phía lục trì uyên.</p>
+<p>Bãi đỗ xe vị trí hướng dương, giờ phút này thái dương liền ở trên đầu, phơi bốn phía sáng choang mà phản quang.</p>
+<p>Lục trì uyên ăn mặc áo sơmi, quần áo bản hình rộng thùng thình, gió thổi qua, theo thân thể hình dáng phác họa ra vòng eo.</p>
+<p>Giang thần nghĩ đến mới gặp khi, hắn ngồi ở trên sô pha, tây trang cắt thoả đáng, vai rộng eo thon, khí tràng lạnh lẽo. Mà giờ phút này thiếu tây trang trầm ổn nghiêm túc, áo sơmi nhiều vài phần nhàn dật, phong họa ra hình dạng rất đẹp, cắt giảm trên người hắn lãnh đạm, thêm vài phần văn nhã nho nhã.</p>
+<p>Giang thần tầm mắt tham lam mà lướt qua eo, nhìn về phía lục trì uyên thon dài thẳng tắp hai chân, tuyết cầu nói từ trong đầu thổi qua, hắn nhịn không được nhìn về phía lục trì uyên giữa hai chân, trong đầu nhịn không được mà liên tưởng.</p>
+<p>【 không được không được, ta sao lại có thể hoài nghi nhãi con không được? 】</p>
+<p>Giang thần cảm thấy ý nghĩ của chính mình càng ngày càng nguy hiểm, hắn đều nhịn không được giơ tay ở trên đầu huy một chút.</p>
+<p>Một bên lục trì uyên triều hắn nhìn qua, băng lam con ngươi dưới ánh mặt trời lộ ra hơi thở nguy hiểm.</p>
+<p>Thực hảo, người này là hiểu được như thế nào khiêu chiến nguy hiểm loại hình.</p>
+<p>An bài hảo trần chín cùng Thẩm biết ý, lục trì uyên mang theo giang thần hồi phòng bệnh.</p>
+<p>Hộ sĩ lại đây thẩm tra đối chiếu tên họ đánh điếu châm, lục trì uyên lúc này mới lấy ra di động xem xét tin tức.</p>
+<p>Không ngoài sở liệu là lộ minh tuyên tin nhắn.</p>
+<p>Mới vừa trải qua bạn gái phản bội hắn còn không có hoãn lại đây, ở tin nhắn tự giễu trêu chọc, còn xin một cái thương tâm chia tay kỳ nghỉ.</p>
+<p>Lục trì uyên chuẩn, nghĩ nghĩ vẫn là không có lộ ra đối phương thân phận điểm đáng ngờ, hắn không chứng cứ, nói là lửa cháy đổ thêm dầu.</p>
+<p>Giang thần ngồi ở một bên bồi lục trì uyên, ngắn ngủn một cái buổi sáng, bởi vì nam nữ chủ quá gà bay chó sủa liền tính, hắn còn liền ăn đều không có.</p>
+<p>Nhà ai người tốt xuyên thư là vì chịu đói a!</p>
+<p>Giang thần nhịn không được chửi thầm, cũng may hôm nay đính cơm còn tính ra kịp thời, không có làm hắn giống ngày hôm qua giống nhau, đói bụng ban ngày mới ăn thượng một ngụm nhiệt cơm.</p>
+<p>Ăn qua cơm sáng, lục trì uyên bắt đầu ở trên di động xử lý công ty sự vật, hắn cùng lộ minh tuyên đều không ở công ty, một ít có thể viễn trình quyết sách, hắn liền ở trên di động làm.</p>
+<p>Giang thần ngồi ở một bên ăn không ngồi rồi, liền đem nguyên thân di động một lần nữa mân mê một lần, thiết trí thành chính mình thường dùng cách thức, WeChat cũng một lần nữa phân ra tới một cái, phân thành làm công cùng tư nhân.</p>
+<p>Chờ hắn làm xong, phát hiện lục trì uyên còn ở công tác.</p>
+<p>Hắn liên tiếp một cái video hội nghị, điện thoại kia đầu là kế hoạch bộ.</p>
+<p>Hoàn Vũ tập đoàn sáu tháng cuối năm muốn đẩy ra tân sản phẩm, ở tìm kiếm thích hợp người phát ngôn, bọn họ làm ra mấy cái phương án, định rồi vài cái danh ngạch cấp lục trì uyên lựa chọn.</p>
+<p>Lục trì uyên làm cho bọn họ nói một câu chính mình phương án.</p>
+<p>Giang thần yên lặng mà ngồi ở một bên, không có ra tiếng, để tránh quấy rầy lục trì uyên.</p>
+<p>Hội nghị thanh âm phiêu đãng ở trong phòng bệnh, đối diện lẫn nhau khiêm nhượng một phen, bắt đầu nói chính mình định người được chọn.</p>
+<p>[ ta cảm thấy nơi nào liền rất hảo, tân tấn lưu lượng, tự thân lực ảnh hưởng khả quan, fans số đếm không tồi, có nhất định sức mua. ]</p>
+<p>Giang thần giác bồi lục trì uyên nghe, tuyết cầu càng là nhảy đến lục trì uyên trên người, ỷ vào lục trì uyên nhìn không thấy chính mình, trực tiếp ngồi xổm nhân thủ cơ trước mặt.</p>
+<p>Đối diện bắt đầu thảo luận, nó cũng bắt đầu bạo dưa.</p>
+<p>【 cái này không được a, thực mau liền bạo lôi. 】 tuyết cầu khinh thường nói, 【 hắn là phú bà vòng cộng đồng chó con, lại cầm phú bà tiền dưỡng chính mình bạn trai, đã có phú bà phát hiện không đúng, chuẩn bị chùy hắn. 】</p>
+<p>Giang thần sửng sốt: 【 dưỡng bạn trai? Hắn không phải nam sao? 】</p>
+<p>Lục trì uyên ánh mắt hơi lượng, không chú ý nghe đối diện cao tầng như thế nào thổi phồng đối phương nhân phẩm, mà là như suy tư gì mà nhìn về phía giang thần.</p>
+<p>Hắn như thế nào đã quên, giang thần trên người có bug.</p>
+<p>Tuyết cầu nói: 【 ngươi không có nghe lầm, hắn lại bàng phú bà lại làm gay, phú bà đều bàng không rõ. Tân tấn lưu lượng cũng là phú bà cho hắn tạp đi lên, hắn bị chùy sau, thực mau không tìm được người này. 】</p>
+<p>Tuyết cầu nhìn mắt màn hình di động kia đầu người, nhìn người đang nói chuyện nói: 【 này hai cũng có một chân. 】</p>
+<p>Giang thần nhìn không thấy người, lục trì uyên nhìn không thấy miêu, này một ngụm dưa chỉ có tuyết cầu ăn minh bạch.</p>
+<p>Giang thần đang do dự muốn hay không tới gần một chút, lục trì uyên trước đóng cửa phía chính mình cameras cùng mạch, nhìn về phía giang thần nói: “Có thể hỗ trợ lấy một chút sao?”</p>
+<p>Lục trì uyên tỏ vẻ chính mình tay không quá thoải mái, này việc gãi đúng chỗ ngứa, giang thần tỏ vẻ không có vấn đề.</p>
+<p>Lục trì uyên vốn là tưởng dịch một chút, làm giang thần ngồi trên giường, nghĩ lại tưởng tượng lại cảm thấy không thích hợp, dứt khoát xuống giường cùng giang thần ngồi vào trên sô pha, hai người vai sát vai, dựa ngồi ở cùng nhau.</p>
+<p>Tuyết cầu xê dịch mông, ngồi xổm ở giang thần trên đùi.</p>
+<p>Trong video, mọi người xem thấy lục trì uyên bên này hắc bình, không biết hắn có ở đây không, nhất thời lâm vào trầm mặc trung.</p>
+<p>Lục trì uyên một lần nữa khai mạch, nói: “Tiếp theo cái.”</p>
+<p>Đây là phủ định, đối phương còn muốn nói cái gì, lại bị một người khác cướp đi quyền lên tiếng.</p>
+<p>Mới tới người lấy ra một trương ảnh chụp, giang thần nhìn có chút quen mắt, hắn nhìn kỹ hai mắt, phản ứng lại đây: 【 này không phải cố đình sâm bạn nữ sao? 】</p>
+<p>Tính tiếp nước phòng cùng bãi đỗ xe, đây là hắn hôm nay lần thứ ba thấy đối phương.</p>
+<p>Tuyết cầu nói: 【 là nga, tân tấn tiểu hoa, nàng mặt ngoài thoạt nhìn không có gì, sau lưng lợi dụng cố đình sâm quan hệ trốn thuế lậu thuế, thực mau liền sẽ bị cử báo. Tuy rằng cố đình sâm vì tránh cho bị liên lụy sẽ giúp nàng một lần, nhưng nàng hình tượng bị hao tổn, bị mềm phong sát, này đối đại ngôn thực bất lợi. 】</p>
+<p>Lục trì uyên nhướng mày, không đợi đối diện mở miệng, hắn đã làm tiếp theo cái.</p>
+<p>Tuyết cầu nhìn chằm chằm màn hình, bạo dưa một người tiếp một người.</p>
+<p>【 cái này không được, chỉnh dung mặt, công ty không làm, hắn mặt thực mau liền suy sụp. 】</p>
+<p>【 cái này càng không được, tham dự tà giáo tổ chức, mê hoặc tẩy não một đám thanh thiếu niên, cổ động bọn họ ở internet tiến hành tố nhân thịt người, tàn hại vị thành niên, kinh động mặt trên, cũng muốn lạnh lạnh. 】</p>
+<p>Giang thần một bên ăn dưa, một bên nghe lục trì uyên vô tình mà cái tiếp theo, có loại hắn cũng ở bồi chính mình ăn dưa ảo giác, đều không cần hắn nhắc nhở, quyết đoán đã mở miệng.</p>
+<p>Chiếu hắn cái này chọn lựa, đối diện trầm mặc thanh âm càng lúc càng lớn, cuối cùng chỉ còn hạ một người tuyển, là cái không chớp mắt tiểu diễn viên, khoảng thời gian trước bạo một bộ kịch, nhưng sau lưng không có tư bản, thực mau liền ảm đạm đi xuống.</p>
+<p>Đề cử người thuần túy là cảm thấy hợp nhãn duyên, đương bị tuyển, không nghĩ tới có thể sử dụng.</p>
+<p>Lục trì uyên không nói gì, hắn đang đợi tuyết cầu thanh âm, nhưng qua một hồi lâu, tuyết cầu đều không mở miệng nữa.</p>
+<p>Giang thần cũng cảm thấy kỳ quái, chọc chọc tuyết cầu, nói: 【 không dưa? 】</p>
+<p>Tuyết cầu phiên chính mình tiểu sách vở, nói: 【 cái này tiểu diễn viên khá tốt, chính quy xuất thân, tuy rằng hiện tại nhìn kỹ thuật diễn ngây ngô, nhưng là đáy vững chắc, giả lấy thời gian tất thành châu báu. Nếu muốn tuyển người phát ngôn, hắn cũng không tệ lắm. Bất quá……】</p>
+<p>Tuyết cầu dừng một chút, tới cái biến chuyển: 【 hắn sắp chết, tự sát. 】</p>
+<p>Giang thần cả kinh, theo bản năng nói: “Báo nguy cứu người……”</p>
+<p>Lời còn chưa dứt, giang thần liền ý thức được chính mình đem nói ra tới, hắn vội vàng che miệng, nhưng mặc kệ là lục trì uyên vẫn là video bên kia người đều nghe thấy được.</p>
+<p>Hắn vội vàng bù nói: “Ta thất thần……”</p>
+<p>Nói lại nghĩ đến mạch không quan, lần nữa câm miệng, xấu hổ mà nhìn về phía lục hành uyên.</p>
+<p>Lục trì uyên nói: “Không cần để ý, tiếp tục mở họp.”</p>
+<p>Video hội nghị tiếp tục, tuyết cầu nói: 【 ký chủ đừng lo lắng, cách hắn tự sát còn có mấy ngày. 】</p>
+<p>【 hắn vì cái gì muốn tự sát? 】</p>
+<p>Giang thần thu liễm hảo chính mình cảm xúc, xác định sẽ không ở đem trong lòng nói ra tới sau, tiếp tục cùng tuyết cầu giao lưu. Tuyết cầu dưa có chứa nhất định biết trước tính, nó có thể nhìn đến ngắn ngủi thời gian tuyến nội kết quả.</p>
+<p>【 công ty áp bức, hắn bạo một bộ kịch sau, không những không có kiếm được tiền, còn đảo thiếu công ty tiền, công ty yêu cầu hắn bồi rượu, tiến hành tính giao dịch, nếu hắn không đồng ý, liền tuyết tàng hắn, làm hắn bối thượng kếch xù mắc nợ. Hắn bị bức hậm hực, đã có phí hoài bản thân mình ý niệm. 】</p>
+<p>Tuyết cầu cảm khái: 【 nhân loại tính kế thật là vô cùng vô tận ai. 】</p>
+<p>Giang thần trầm mặc trong chốc lát, nói: 【 nếu hắn có thể bắt được hoàn vũ đại ngôn, tình huống có thể hay không hảo một chút? 】</p>
+<p>Tuyết cầu click mở chính mình trị số bản tính toán: 【 ký chủ thiết tưởng trị ngọn không trị gốc, vấn đề căn nguyên ở chỗ hắn công ty, một cái đại ngôn có lẽ đổi lấy chính là càng nhiều ích lợi áp bức. Nếu ngươi tưởng giúp hắn, bên này cấp ra biện pháp là giúp hắn giải ước. Hoàn vũ kỳ hạ có giới giải trí phong đầu, ký chủ ngươi có thể thuyết phục lục trì uyên, liền còn có cơ hội. 】</p>
+<p>Giang thần theo bản năng mà nhìn về phía lục trì uyên, nguyên thân chỉ là an bảo này một khối nhân viên công tác, hằng ngày phụ trách chính là lục trì uyên đi ra ngoài an toàn, cơ bản tiếp xúc không đến công ty sự.</p>
+<p>Hắn nếu là mở miệng có thể hay không có vẻ quá đột ngột?</p>
+<p>Lục trì uyên sẽ nghĩ như thế nào?</p>
+<p>Giang thần ở trong lòng châm chước, vạn nhất liền kém hắn những lời này, là có thể cứu vớt một cái sinh mệnh đâu?</p>
+<p>“Lục ca.” Giang thần mới vừa mở miệng, ý thức được mạch, vội vàng xem qua đi, phát hiện mạch không biết khi nào đóng lại.</p>
+<p>Lục trì uyên quay đầu nhìn hắn, cũng không có bởi vì hắn liên tiếp xen mồm không vui, ngược lại chờ đợi hắn kế tiếp, cổ vũ nói: “Có cái gì tốt kiến nghị sao?”</p>
+<p>Giang thần tức khắc đã chịu cổ vũ, nói: “Ta cảm thấy người này tuyển cũng không tệ lắm, thực chính khí diện mạo, hình tượng khí chất phù hợp người trong nước thẩm mỹ. Ta phía trước cũng xoát đến quá hắn diễn kịch, bất quá chính là có cái vấn đề nhỏ, hắn công ty phong bình rất kém cỏi, hắn cùng công ty còn có mâu thuẫn.”</p>
+<p>“Công ty lựa chọn người phát ngôn, lực ảnh hưởng là một phương diện, chính hướng giá trị truyền lại là về phương diện khác, giống nhau có phải hay không lựa chọn có vấn đề người phát ngôn, cho chính mình thêm phiền toái.”</p>
+<p>Lục trì uyên không có tiếp thu giang thần kiến nghị, bởi vì ở giang thần truyền lại nói trung, hắn bại lộ nghệ sĩ đoản bản, này sẽ ảnh hưởng công ty suy xét.</p>
+<p>Giang thần cũng biết, nhưng hắn muốn nói không phải đại ngôn: “Lục ca, ta ý tứ là người này trên người có đầu tư giá trị, hoàn vũ có cổ phần khống chế giải trí công ty, không bằng đem người này đào qua đi, phát huy hắn lớn nhất giá trị, sau đó bàn lại đại ngôn.”</p>
+<p>“Tạo tinh? Vậy ngươi có suy xét giai đoạn trước đầu nhập phí tổn sao? Cùng với đại ngôn cái này hạng mục chìm nghỉm phí tổn?” Lục trì uyên hỏi lại.</p>
+<p>Giang thần sửng sốt, hắn không có suy xét. Hắn chủ quan mục đích là vì cứu người, mà cứu người sau lưng che giấu chi ra, hắn cũng không có suy xét nhiều như vậy.</p>
+<p>Giang thần có chút mất mát, bất quá cũng là dự kiến bên trong sự.</p>
+<p>【 tuyết cầu, có hay không cái thứ hai phương án? 】</p>
+<p>Giang thần ở trong lòng hỏi.</p>
+<p>Không đợi tuyết cầu trả lời, lục trì uyên lại nói: “Bất quá ta sẽ suy xét đề nghị của ngươi, ta tin tưởng ngươi ánh mắt.”</p>
+<p>Nói hắn click mở mạch, làm ra hội nghị tổng kết, hắn không có tại hội nghị định ra người phát ngôn, mà là làm cho bọn họ một lần nữa làm phương án.</p>
+<p>Không có xác định chính là còn có chuyển cơ, giang thần cảm thấy chính mình còn có thể lại tranh thủ một chút.</p>
+<p>Lục trì uyên tắt đi hội nghị, hắn nhìn về phía giang thần, nói: “Có hay không suy xét đổi cái công tác?”</p>
+<p>“A? Đổi công tác?” Đề tài chuyển quá đột nhiên, giang thần sửng sốt một chút, trong đầu hiện lên rất nhiều ý niệm, rũ xuống vai nhụt chí nói, “Lục ca, ngươi muốn làm ta cuốn gói?”</p>
+<p>Lục trì uyên bị hắn ủy khuất ba ba bộ dáng chọc cười, khóe miệng khẽ nhếch: “Không làm an bảo, tới cấp ta đương trợ lý. Nếu ngươi đồng ý, ta nhường đường minh tuyên một lần nữa cho ngươi chuẩn bị một phần lao động hợp đồng. Đương trợ lý có song hưu, tiết ngày nghỉ đi theo quốc gia pháp định ngày hội, năm hiểm tam kim, tăng ca còn có gấp đôi tiền lương.”</p>
+<p>Lục trì uyên tung ra chính mình mồi, đương trợ lý có thể so đương an bảo nhẹ nhàng nhiều.</p>
+<p>Hắn làm quyết định này không phải nhất thời hứng khởi, gần nhất là suy xét đến giang thần tiếng lòng ở rất lớn trình độ thượng có thể làm hắn tránh cho một ít vấn đề, đem hắn đặt ở bên người thực thích hợp. Thứ hai là giang thần thật sự sẽ quyền cước công phu, hắn mới đem người đặt ở an bảo trung. Nhưng trước mắt cái này giang thần, lục trì uyên không xác định.</p>
+<p>Hắn nếu là không điểm tự bảo vệ mình năng lực, làm cái này công tác ngược lại nguy hiểm.</p>
+<p>Biết không phải bị cuốn gói, mà là đổi gác, giang thần nhẹ nhàng thở ra.</p>
+<p>【 đương trợ lý còn không phải là mỗi ngày đều có thể thấy nhãi con? 】</p>
+<p>Giang thần cảm thấy không lỗ, nói: “Ta nguyện ý.”</p>
+<p>Tuyết cầu ngồi dậy, múa may tròn tròn móng vuốt: 【 tình cảnh này, ta chỉ nghĩ đọc diễn cảm một đoạn lời thề: Vô luận bần cùng vẫn là phú quý, vô luận già nua vẫn là tử vong, vô luận bệnh tật hoặc là khỏe mạnh, ngươi đều nguyện ý yêu hắn, hộ hắn, vô điều kiện cùng hắn……】</p>
+<p>Giang thần giơ tay, trong lúc lơ đãng bóp chặt tuyết cầu sau cổ, đem nó kéo dài tới một bên: 【 câm miệng, này không phải kết hôn. 】</p>
+<p>【 tốt. 】 tuyết cầu đối đáp trôi chảy, 【 chờ ngươi kết hôn ta lại niệm một lần. 】</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong7.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong9.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tong-tai-trom-nghe-tieng-long-ta-tai-tuyen-sua-kich-ban";
+const NOVEL_TITLE = "Tổng tài trộm nghe tiếng lòng ta, tại tuyến sửa kịch bản";
+const CHAPTER_TITLE = "Chương 8";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

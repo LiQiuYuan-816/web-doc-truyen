@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 22</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tổng tài trộm nghe tiếng lòng ta, tại tuyến sửa kịch bản
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 22</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong21.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong23.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Thẩm biết ý trốn đi, ở cảnh sát thăm viếng điều tra hạ, lam lạc thành lớn nhất hiềm nghi người, nàng thi đại học xong đã bị cảnh sát mang về hỏi chuyện.</p>
+<p>Lam lạc kiên trì xưng là Thẩm biết ý uy hiếp nàng hỗ trợ, nếu nàng không giúp, Thẩm biết ý liền sẽ tìm người giáo huấn nàng.</p>
+<p>Nàng thậm chí lộ ra bị thương cánh tay làm chứng cứ, còn hướng cảnh sát lộ ra Thẩm biết ý cùng hoàng mao là tiểu tình lữ, không ra lục trì uyên sở liệu mà giũ ra Thẩm biết ý bị đình học sự.</p>
+<p>Đề cập đến Thẩm biết ý danh dự, Lâm bá nhất thời lưỡng lự, gọi điện thoại cấp lục trì uyên xin chỉ thị.</p>
+<p>Lục trì uyên không ngoài ý muốn, tan tầm sau mang theo giang thần đi một chuyến cục cảnh sát.</p>
+<p>Hắn làm người giám hộ, này một chuyến không thể thiếu.</p>
+<p>Giang thần coi như thêm cái ban, đi trên đường làm tuyết cầu điều ra về lam lạc tư liệu, dùng để tống cổ thời gian.</p>
+<p>Làm chuyện xưa có tên có họ ác độc nữ xứng, lam lạc nhân sinh trải qua tương đương phong phú.</p>
+<p>Cha mẹ hắn đều là làm công người, công tác vất vả nhưng ổn định. Ở lam lạc thi đậu cao trung này năm, cha mẹ đột nhiên sinh nhị thai, là cái đệ đệ.</p>
+<p>Đệ đệ sinh ra làm vốn dĩ có điểm tiền tiết kiệm gia, nhanh chóng trở nên túng quẫn, lam lạc không thể không giản y súc thực. Nhưng nếu chỉ là như vậy, nàng sẽ không cảm thấy có cái gì, còn sẽ vui vẻ đệ đệ đã đến.</p>
+<p>Cố tình cha mẹ cùng đại đa số người giống nhau, ngoài miệng nói sợ nàng tịch mịch, sinh cái đệ đệ cùng nàng làm bạn, thực tế chính là trọng nam khinh nữ. Đệ đệ sinh ra không chỉ có đoạt đi rồi lam lạc ái, còn làm nàng còn tuổi nhỏ, liền biến thành đệ đệ bảo mẫu.</p>
+<p>Cha mẹ thậm chí muốn cho nàng không đi đọc sách, là nàng náo loạn một hồi, cha mẹ mới thỏa hiệp, tương ứng, nàng sinh hoạt phí thiếu đáng thương.</p>
+<p>Thuộc về nàng tiền tài chảy về phía đệ đệ, nàng ở yêu nhất mỹ tuổi tác, ăn mặc không hợp thân quần áo đi ở vườn trường. Nàng cảm thấy đi ngang qua mỗi người đều ở cười nhạo nàng, đối nàng chỉ chỉ trỏ trỏ.</p>
+<p>Nàng trong lòng chôn xuống thù hận hạt giống, mà này viên hạt giống ở gặp được Thẩm biết ý sau, nhanh chóng mọc rễ nảy mầm, vặn vẹo nàng nội tâm thế giới.</p>
+<p>Cái này khi còn nhỏ bạn chơi cùng xuyên ngăn nắp lượng lệ, còn có một người cao lớn soái khí lại nhiều kim ca ca. Các nàng gặp lại khi, nàng lấy hết can đảm chào hỏi, đổi lấy Thẩm biết ý nghi hoặc ánh mắt.</p>
+<p>Người bên cạnh cùng Thẩm biết ý vừa nói vừa cười, lôi kéo Thẩm biết ý rời đi, lưu lại nàng tại chỗ chân tay luống cuống, mặt thượng nóng rát mà nóng lên.</p>
+<p>Nàng nhìn chằm chằm Thẩm biết ý bóng dáng, nội tâm ghen ghét ấp ủ thật lớn toan ý, khiến nàng một đường hắc hóa, trưởng thành vì Thẩm biết ý trưởng thành lộ tuyến thượng chướng ngại vật.</p>
+<p>【 ân…… Nàng bất hạnh phát sinh ở cha mẹ bất công, nàng lại đem ác ý phát tiết ở Thẩm biết ý trên người? 】</p>
+<p>【 Mary Sue tiểu thuyết sao, nữ chủ chính là nguyên tội. 】</p>
+<p>Tuyết cầu thấy nhiều không trách, nó cùng giang thần bá bá một đường, thẳng đến vào Cục Cảnh Sát, tuyết cầu thanh âm mới nhược đi xuống.</p>
+<p>Ở cục cảnh sát phòng khách, giang thần gặp được lam lạc.</p>
+<p>Nàng ăn mặc tẩy trắng bệch cao bồi nửa tay áo váy dài, trát đuôi ngựa, trên mũi giá mắt kính, là cái bình thường đến không thể lại bình thường nữ hài tử.</p>
+<p>Nàng cố ý lảng tránh lục trì uyên ánh mắt, ở nữ cảnh bồi hộ hạ, bày ra chính mình nhu nhược một mặt, ý đồ gia tăng nàng là người bị hại ấn tượng.</p>
+<p>Lục trì uyên phối hợp cảnh sát làm ghi chép, cục trưởng đối này rất coi trọng, tự mình tiếp đãi hắn.</p>
+<p>Giang thần ở bên ngoài chờ hắn, cố ý tuyển cái ly lam lạc rất gần vị trí ngồi xuống.</p>
+<p>Tuyết cầu còn ở tận tâm tẫn trách mà cấp giang thần bổ sung hắn không biết bát quái.</p>
+<p>Đối mặt xa lạ hơi thở, lam lạc có chút khẩn trương, ngón tay ở bàn hạ đều mau giảo thành bánh quai chèo. Nàng không phải lần đầu tiên nói dối, ở nói dối cho nàng mang đến ích lợi sau, bịa đặt nói dối đối nàng tới nói giống như là chuyện thường ngày.</p>
+<p>Chẳng qua đây là nàng lần đầu tiên bị mời vào Cục Cảnh Sát.</p>
+<p>Bởi vì nàng vẫn là học sinh, cảnh sát liên hệ cha mẹ nàng, lam lạc nghe thấy bọn họ ở điện thoại kia đầu oán giận, bọn họ hỏi vài câu, nói đệ đệ bệnh, lam lạc tẫn cho bọn hắn thêm phiền toái, quả thực chính là cái gây hoạ tinh, một chút cũng không biết kiểm điểm.</p>
+<p>Lam lạc trong lòng chua xót, nàng nói cho chính mình không quan hệ, lại không phải lần đầu tiên bị mắng, không có gì hảo thương tâm.</p>
+<p>“Cảnh sát tỷ tỷ, ta không thể đi trước sao? Nhất định phải chờ cha mẹ ta tới đón ta mới có thể sao?”</p>
+<p>Lam lạc không ngóng trông cha mẹ tới đón nàng, nàng không nghĩ lưu lại nơi này, nàng sợ hãi đối mặt lục trì uyên.</p>
+<p>Nàng đối lục trì uyên hiểu biết đến từ Thẩm biết ý, đến từ tin tức, đến từ internet. Nếu không phải lần này sự, nàng khả năng cả đời đều tiếp xúc không đến bản tôn.</p>
+<p>Lục trì uyên đi vào khi xem nàng ánh mắt làm nàng kinh hãi, nàng cảm thấy chính mình xiếc bị lục trì uyên xem thấu.</p>
+<p>Nữ cảnh trấn an nàng cảm xúc, làm nàng không cần lo lắng, này đó là bình thường lưu trình.</p>
+<p>Giang thần tiếp thu xong tuyết cầu truyền tới tin tức, nhìn chằm chằm lam lạc nhìn hồi lâu, ở trong lòng tính toán.</p>
+<p>【 cầu cầu, hiện tại cốt truyện đại biến dạng, hoàng mao đều có thể lại vào nghề, ta lộng rớt nữ xứng không thành vấn đề đi? 】</p>
+<p>Lam lạc ở chuyện xưa cùng Thẩm biết ý khảo một cái trường học, tiếp tục ở Thẩm biết ý cùng nam chủ chi gian sáng lên nóng lên.</p>
+<p>Hiện tại Thẩm biết ý chạy, cái này đại học khẳng định không được với, giang thần suy nghĩ, nếu cái này cốt truyện điểm rớt, hắn có thể hay không lại chặt đứt nữ xứng cốt truyện tuyến?</p>
+<p>【 có thể thử một lần, bất quá muốn cẩn thận nga. 】</p>
+<p>Tuyết cầu nhắc nhở nói: 【 ngươi có thể dẫn đường người khác đi phá hư cốt truyện. 】</p>
+<p>Giang thần lại lần nữa cảm thấy lục trì uyên báo nguy là cái sáng suốt lựa chọn, cảnh sát tham gia, có thể giải quyết Mary Sue văn 80% vấn đề.</p>
+<p>Hắn ở trong lòng châm chước một chút hỏi chuyện góc độ, mở miệng nói: “Vị đồng học này, chúng ta tổng tài thực giảng đạo lý, ngươi không cần khẩn trương. Nếu Thẩm biết ý thật sự có đối với ngươi thực thi cưỡng bách cùng bá lăng, chúng ta nguyện ý cho bồi thường. Mặt khác, ta có mấy vấn đề muốn hỏi một chút ngươi, có thể chứ?”</p>
+<p>Giang thần lớn lên tựa như đại ca ca nhà bên, thanh âm sạch sẽ, thanh thanh sảng sảng, thực dễ dàng làm người buông đề phòng tâm.</p>
+<p>Lam lạc nghe được có bồi thường, quay đầu trộm ngắm hắn liếc mắt một cái, lại cúi đầu khi, đáy mắt hiện lên vài phần tính kế.</p>
+<p>Cùng lục trì uyên so sánh với, nàng cảm thấy giang thần thoạt nhìn thực hảo lừa, có lẽ nàng có thể lợi dụng.</p>
+<p>Lam lạc điều chỉnh tốt trạng thái, thấp giọng nói: “Ngươi hỏi đi, nếu ta biết, ta nhất định nói cho ngươi.”</p>
+<p>Giang thần cười nhạt nói: “Thẩm biết ý bị thu dưỡng trước, cùng ngươi là một cái thôn người, các ngươi năm tuổi xấp xỉ, là ở cùng một chỗ niệm thôn tiểu đi? Đã làm mấy năm đồng học nha? Cao trung còn có thể tại một cái trường học một cái ban, cũng coi như là một loại duyên phận. Ngươi không trở về thi đại học, là đem hộ tịch dời lại đây sao?”</p>
+<p>Lam lạc chấn động, trong lòng tính kế bị đánh dập nát, nàng đột nhiên ngẩng đầu nhìn về phía giang thần.</p>
+<p>Này người vì cái gì sẽ biết quá khứ của nàng? Đây là kẻ có tiền điều tra năng lực sao?</p>
+<p>Nữ cảnh kinh ngạc nhìn về phía nàng, nghĩ đến chính mình vừa rồi làm ghi chép, lam lạc hiện cư địa chỉ, xác thật là bản địa. Tuy rằng là cái khu chung cư cũ, vị trí cũng có chút thiên, nhưng thật thật tại tại mà khắc ở thân phận chứng thượng, không phải lâm thời ở tạm chứng.</p>
+<p>Nữ cảnh hỏi: “Ngươi dời sang tên khẩu? Phía trước làm ghi chép thời điểm, ngươi không phải nói cao nhị phân ban mới cùng Thẩm biết ý nhận thức sao?”</p>
+<p>Lam lạc đáy mắt hiện lên một tia hoảng loạn, nàng tránh đi hộ tịch vấn đề, bắt đầu giả ngu: “Ta không biết, ta cùng Thẩm biết ý là một chỗ người sao?”</p>
+<p>Nữ cảnh ánh mắt sắc bén mà nhìn về phía nàng, không có sai quá nàng hoảng loạn. Nếu nàng rất sớm phía trước liền nhận thức Thẩm biết ý, kia nàng vừa rồi ở khẩu cung trung nói liền có vấn đề.</p>
+<p>Giang thần thấy nàng tránh nặng tìm nhẹ, không có bị nàng mang thiên, tiếp tục bắt lấy chính mình vấn đề nói: “Theo ta được biết, ngươi gia cảnh túng quẫn, cha mẹ muốn cung ngươi đọc sách, còn muốn dưỡng ngươi mới ba tuổi đệ đệ, nhà các ngươi cũng không có tích cóp hạ dư thừa tiền mua phòng ở, ngươi dùng để lạc hộ phòng ở là từ đâu nhi tới?”</p>
+<p>Lam lạc bị hỏi á khẩu không trả lời được, bắt đầu không tự giác mà khấu chính mình tay, thần sắc khẩn trương lên.</p>
+<p>Nàng nhìn trước mặt sát phản quang cái bàn ảnh ngược chính mình bình thường bộ dáng, nghĩ đến chính mình mấy năm nay ủy khuất, bởi vì không có tiền, sẽ không trang điểm, bị người trào phúng, khi dễ, tức khắc cảm xúc thượng trong lòng.</p>
+<p>Nàng hung tợn mà trừng mắt giang thần, nhưng chỉ liếc mắt một cái, theo sau ánh mắt mềm xuống dưới, mang theo ủy khuất: “Đây là nhà của ta sự, ngươi đây là ở xâm phạm ta riêng tư! Cha mẹ ta phấn đấu hơn phân nửa đời, như thế nào liền không thể có chính mình phòng ở? Các ngươi có tiền liền có thể như vậy xem thường người sao? Thẩm biết ý ở trường học khi dễ ta, ngươi cũng muốn khi dễ ta?”</p>
+<p>Lam lạc nghẹn ra nước mắt, vừa nói vừa khóc.</p>
+<p>Nữ cảnh mềm lòng, cảm thấy dời hộ khẩu cũng không phải cái gì đại sự, thật nhiều cha mẹ vì con cái có thể có càng tốt tiền đồ, tổng hội nghĩ đến biện pháp làm ra thay đổi.</p>
+<p>Nàng ở bên trong điều tiết, làm giang thần hỏi điểm khác đề tài.</p>
+<p>Giang thần đối nàng nước mắt thờ ơ, thậm chí cảm thấy nàng hiện tại khóc một phen nước mũi một phen nước mắt bộ dáng, làm người đáy lòng phát lạnh.</p>
+<p>Nếu không phải thấy tuyết cầu cấp tin tức, hắn đều phải cho rằng chính mình mới là cái kia ác nhân.</p>
+<p>“Đồng học, có tiểu thông minh hẳn là dùng ở chính đạo thượng, mà không phải đường ngang ngõ tắt. Ngươi không nên bởi vì tay không bộ bạch lang bộ tới một căn hộ, nếm đến ngon ngọt, liền cảm thấy người khác đều là ngốc tử.”</p>
+<p>Giang thần thu ý cười, hắn không cười bộ dáng cũng không ôn hòa, ngược lại làm người lưng phát lạnh.</p>
+<p>Lam lạc rùng mình một cái, tức khắc khóc lớn hơn nữa thanh. Nàng dùng tay xoa nước mắt, ánh mắt điên cuồng chuyển động. Một lát sau, nàng như là nghĩ đến biện pháp, một bên khóc còn một bên run rẩy, một bộ sắp ngất xỉu bộ dáng, đem nữ cảnh dọa một cú sốc.</p>
+<p>Nữ cảnh lại là đổ nước, lại là chụp bối thuận khí. Nhưng lam lạc không có chút nào chuyển biến tốt đẹp, nàng hai mắt trắng dã, miệng sùi bọt mép, thẳng tắp mà ngã vào trên ghế, cả người đổ mồ hôi, chỉ chốc lát sau liền ướt trên trán tóc mái.</p>
+<p>“Sao lại thế này?”</p>
+<p>Tự mình tiếp kiến lục trì uyên cục trưởng kết thúc hỏi chuyện, mới vừa cùng lục trì uyên đi ra, liền thấy một màn này, lập tức bước nhanh tiến lên.</p>
+<p>Giang thần đứng dậy, quơ quơ trên tay di động, vô tội nói: “Ta cũng không biết, nàng khả năng có bệnh tâm thần sử, yêu cầu đánh 120 sao?”</p>
+<p>Luống cuống tay chân nữ cảnh ngẩng đầu xem hắn, há mồm tưởng nói điểm cái gì, lại bị lam lạc bắt lấy tay, phân tán lực chú ý, lời nói tới rồi bên miệng lại không có.</p>
+<p>Trực giác nói cho lục trì uyên, chuyện này nhất định cùng giang thần có quan hệ. Hắn đi đến giang thần bên cạnh người, hơi hơi nghiêng người đi phía trước trạm, hình thành một cái bảo hộ tư thế, cách ở hắn cùng cục trưởng chi gian.</p>
+<p>Lam lạc đặng hai hạ chân, trực tiếp hai mắt một bế, nằm liệt trên ghế ngất xỉu.</p>
+<p>【 không phải đâu, nữ xứng là thật bất cứ giá nào, cư nhiên có thể kiên trì diễn lâu như vậy. 】</p>
+<p>Giang thần có chút vô ngữ, lam lạc thân thể khỏe mạnh, không có bất luận cái gì ngất lịm hoặc động kinh loại bệnh tật. Nàng làm này vừa ra, bất quá là muốn đánh đoạn giang thần nói.</p>
+<p>Ở nàng nhận tri, chỉ cần ra Cục Cảnh Sát, cái gì đều không nhận, chết ăn vạ là được.</p>
+<p>Cục trưởng không có thật chờ 120, lam lạc một ngất xỉu, hắn liền lập tức gọi người đem nàng đưa bệnh viện. Bọn họ thỉnh cái học sinh trở về hiệp trợ điều tra, nếu là thực sự có không hay xảy ra, không biết đến nhấc lên bao lớn dư luận.</p>
+<p>“Lục tiên sinh, thật sự là ngượng ngùng, ngươi xem cái này đồng học cái này trạng huống, khả năng không có biện pháp cùng ngươi giao lưu. Bất quá ngươi yên tâm, liền chúng ta trước mắt nắm giữ tình huống, cái này hoàng mỗ thiệp hiểm đánh bạc, tổ chức □□, lừa dối, chứng cứ vô cùng xác thực. Thẩm tiểu thư bị lừa khả năng tính rất lớn, chúng ta nhất định sẽ ở bảo đảm nàng an toàn dưới tình huống, tích cực mà điều tra, đối hoàng mỗ thực thi bắt giữ.”</p>
+<p>Cục trưởng chà xát tay, trên mặt thần sắc có chút không được tự nhiên.</p>
+<p>Một bên nữ cảnh đại khái là chính nghĩa tâm bạo lều, đối mặt lam lạc đột phát trạng huống, nàng cảnh vụ nhân viên trực giác tỏa định giang thần.</p>
+<p>Nàng cảm thấy án này không có đơn giản như vậy.</p>
+<p>Giang thần nhắc tới phòng ở, đề hộ tịch, lam lạc liền sẽ khẩn trương.</p>
+<p>“Cục trưởng, vừa rồi vị tiên sinh này cùng cho chúng ta lộ ra một cái đầu mối mới, hắn nói lam lạc cùng Thẩm biết ý là tiểu học đồng học, lam lạc gia có một bộ nơi phát ra bất chính phòng ở.”</p>
+<p>Nữ cảnh không xác định giang thần trong lời nói chân thật tính, một câu hắn nói, chính là đem giang thần liên lụy tiến vào, hy vọng hắn có thể phối hợp điều tra.</p>
+<p>Cục trưởng nhìn về phía giang thần, bị lục trì uyên che chở người, lộ ra hơn phân nửa thân ảnh, trên mặt mang theo ý cười, đối hắn ánh mắt không có bất luận cái gì lảng tránh.</p>
+<p>Đây là thực sự có tình huống.</p>
+<p>Nhưng cục trưởng không có lập tức mở miệng, mà là nhìn về phía lục trì uyên, quan sát sắc mặt của hắn.</p>
+<p>Đây là lục trì uyên mang đến người, lục trì uyên chói lọi mà che chở, hắn sao hảo đắc tội?</p>
+<p>Lục trì uyên không biết này trong chốc lát công phu, giang thần làm cái gì.</p>
+<p>Hắn hơi hơi nghiêng đầu, giúp cục trưởng đem nghi hoặc hỏi ra tới: “Phòng ở có cái gì vấn đề?”</p>
+<p>Giang thần nói: “Phòng ở tiền nhiệm chủ hộ là hoàng mỗ.”</p>
+<p>【 lam lạc có dã tâm, nàng tưởng lưu tại trong thành không quay về, lại bởi vì cha mẹ bất công, đối phòng ở có loại bệnh trạng chấp nhất. Nàng mỗi ngày đều sẽ chú ý bên đường bán phòng tiểu quảng cáo, cơ duyên xảo hợp dưới kết bạn lúc ấy thiếu một đống nợ, sốt ruột bán phòng hoàng mỗ. 】</p>
+<p>Giang thần điểm đến thì dừng, không có đem tin tức nơi phát ra nói quá rõ ràng, rốt cuộc chỉ là hệ thống cung cấp trợ giúp, không thể làm chứng cứ đệ trình.</p>
+<p>Nữ cảnh cả kinh, đây là một cái phi thường mấu chốt manh mối, khó trách lam lạc phản ứng như vậy đại: “Ngươi nói lam lạc tay không bộ bạch lang, lại là có ý tứ gì? Hoàng mỗ đem phòng ở đưa cho nàng?”</p>
+<p>Giang thần nhún vai, đem vấn đề đẩy trở về: “Ta trá nàng, ta không biết.”</p>
+<p>【 hoàng mỗ một đống nợ, kia khả năng như vậy hảo tâm? 】</p>
+<p>Giang thần ở trong lòng mắt trợn trắng, yên lặng phun tào.</p>
+<p>【 lam lạc lấy Thẩm biết ý đánh oa, trước dùng nàng tin tức ở Thẩm gia trên tay lừa một số tiền, lại lấy này số tiền dụ hoặc hoàng mao, làm hoàng mao tin tưởng nàng có thực lực sau, cố ý vô tình mà lộ ra chính mình nhận thức một kẻ có tiền đại tiểu thư. Đại tiểu thư tưởng yêu đương, hoàng mao chính là nàng thích loại hình. 】</p>
+<p>【 hoàng mao lại phổ lại tự tin, thực mau thượng câu. Lam lạc khiến cho hắn lấy phòng ở trao đổi, dù sao nhà cũ không đáng giá tiền, nếu là bàng thượng đại tiểu thư, đại tiểu thư vẫy vẫy tay, chính là đếm không hết tài phú. 】</p>
+<p>【 vì làm tiểu hoàng mao không có nỗi lo về sau, lam lạc giúp hắn bày mưu tính kế, lộ ra Thẩm biết ý yêu thích cùng hành tung, cấp hai người chế tạo cơ hội. Bọn họ cấu kết với nhau làm việc xấu, Thẩm biết ý bị chẳng hay biết gì, cho rằng chính mình gặp chân ái, từ đây một phát không thể vãn hồi, bắt đầu chính mình tìm đường chết chi lộ. 】</p>
+<p>【 như vậy tưởng tượng, nàng phẩm vị là thật sự thực độc đáo, là ta Lục ca không đủ soái? Vẫn là ta Lục ca dáng người không tốt? Có ta Lục ca cái này đại soái ca ở trước mặt, nàng là thấy thế nào thượng hoàng mao cái kia tế cẩu? 】</p>
+<p>Giang thần không hiểu, chẳng sợ có người từ giữa làm khó dễ, hoàng mao nhan giá trị cũng không nên nhập Thẩm biết ý mắt.</p>
+<p>Tuyết cầu buồn bã nói: 【 đại khái là nhãi con không đủ hư, ngươi nhìn hoàng mao cùng cố đình sâm, một cái người trong cuộc, một cái pháp ngoại cuồng đồ. 】</p>
+<p>Giang thần trầm mặc, đây là hắn vô pháp phản bác lý do.</p>
+<p>“Phòng ở này manh mối rất quan trọng, chúng ta sẽ phái người điều tra. Lục tiên sinh, vất vả ngươi chạy này một chuyến.” Cục trưởng cùng lục trì uyên bắt tay, ý cười rõ ràng mà đưa hắn ra cửa.</p>
+<p>Lục trì uyên khẽ gật đầu, nói: “Là ta muội muội cho các ngươi thêm phiền toái, nàng nữ hài tử gia, da mặt mỏng, còn thỉnh cục trưởng nhiều hơn phí tâm, truyền thông bên kia không cần có tiếng gió.”</p>
+<p>Đây là muốn khống chế dư luận ảnh hưởng, cục trưởng nói: “Ngươi yên tâm.”</p>
+<p>Lục trì uyên cảm tạ hắn, mang theo giang thần rời đi.</p>
+<p>Lâm bá cùng bọn họ thượng cùng chiếc xe, hắn ngồi ở phía trước, chờ đàm thúc khởi động xe, quay đầu lại nhìn về phía lục trì uyên, nói: “Thiếu gia, chuyện này muốn nói cho phu nhân sao?”</p>
+<p>Lâm bá tới cục cảnh sát phía trước, cho rằng Thẩm biết ý chính là thiếu điểm đúng mực, không nghĩ tới là hoàn toàn không có đúng mực. Hắn cũng không dám tưởng, Lục gia cha mẹ nếu là đã biết, đến nhiều thất vọng, nhiều khổ sở.</p>
+<p>Lục trì uyên cởi bỏ cà vạt, xoa xoa giữa mày, nói: “Ta tự mình nói cho bọn họ.”</p>
+<p>Là thời điểm cùng cha mẹ thông cái khí, hắn chặt đứt Thẩm biết ý thẻ ngân hàng, nàng không có kinh tế nơi phát ra, căng không đi xuống khẳng định sẽ liên hệ ba mẹ.</p>
+<p>Nếu nàng muốn theo đuổi cái gọi là hạnh phúc tự do, hắn cũng không cần tiếp tục ở ba mẹ trước mặt cảnh thái bình giả tạo.</p>
+<p>Sớm một chút biết, mới có thể sớm một chút thấy rõ.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong21.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong23.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tong-tai-trom-nghe-tieng-long-ta-tai-tuyen-sua-kich-ban";
+const NOVEL_TITLE = "Tổng tài trộm nghe tiếng lòng ta, tại tuyến sửa kịch bản";
+const CHAPTER_TITLE = "Chương 22";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

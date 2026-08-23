@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 5</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Xuyên qua chi nhà có tiểu phu lang
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 5</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong4.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong6.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Để cho người khác hiểu biết chính mình chuyển biến, là hắn trong dự đoán bước đầu tiên.</p>
+<p>Bước thứ hai chính là muốn đem bên người người cấp đuổi rồi, hắn không nghĩ về sau làm chuyện gì, đều ở người khác giám thị giữa, đợi cho có việc thời điểm, rồi lại không người nhưng dùng, hắn không có tự ngược thói quen, cũng cái kia hứng thú thể hội một lần nguyên chủ cái loại này tứ cố vô thân tâm tình.</p>
+<p>Bước thứ ba, hắn nhớ rõ Trương thị lưu lại của hồi môn, tuy rằng bị bại không ít, nhưng thôn trang cùng cửa hàng lại đều ở, chỉ là bởi vì nguyên chủ không hiểu tục vật, trên tay lại không đắc lực quản sự, mới bị Mã Ngọc Liên phái đi người cầm giữ, hắn hiện tại sở phải làm, chính là muốn đem mấy thứ này lấy về tới.</p>
+<p>Nếu ngay từ đầu liền đề điều kiện, khẳng định sẽ có vẻ quá đột ngột, nguyên chủ trước nay đều trong mắt không chấp nhận được nửa hạt cát, tính tình thanh cao quán, đột nhiên để ý tới này đó tục sự, tất sẽ làm người cảm thấy quái dị, có phía trước chuyển biến làm trải chăn, kế tiếp sự tình liền sẽ thông thuận rất nhiều.</p>
+<p>“Tạ phu nhân, ta bên người nha hoàn tuổi lớn, tưởng thả ra đi xứng người, còn thỉnh phu nhân lưu ý một chút, xem có không có gì người tốt tuyển?”</p>
+<p>Mã Ngọc Liên nga mi nhíu chặt, trong lòng dao động không chừng, âm thầm cân nhắc hắn đây là muốn nháo nào vừa ra “Hầu hạ hảo hảo, như thế nào đột nhiên muốn thay đổi người? Chính là có ai không nghe lời? Ngươi chỉ lo làm người kéo ra ngoài trượng đánh, quá mấy ngày chính là ngươi ngày đại hỉ, lúc này thay đổi người......”</p>
+<p>Lê Diệu Nam liền biết nàng không đồng ý, trong lòng sớm có chuẩn bị, thật muốn ấn nàng theo như lời, đem người kéo ra ngoài trượng đánh, kia hắn thanh danh chỉ sợ lại muốn thêm nữa một bút bạo ngược, nhàn nhạt nói “Phu nhân nhiều lự, đại hôn phía trước, tống cổ nha hoàn ra phủ là lệ thường, tất sẽ không chậm trễ sự tình gì.”</p>
+<p>Mã Ngọc Liên há miệng thở dốc, nhìn mắt bên người chưa xuất giá nữ nhi, rốt cuộc không nói chuyện, người khác đại hôn tống cổ nha hoàn ra phủ, đó là thông phòng nha hoàn, hắn này tính cái gì. Trên dưới đánh giá Lê Diệu Nam liếc mắt một cái, Mã Ngọc Liên bỗng nhiên nhớ tới, đứa nhỏ này đã 17 tuổi phảng phất còn không biết nhân sự, bằng không, như hoa như ngọc đại cô nương tại bên người, nàng cũng không tin, hắn còn sẽ bỏ được đuổi rồi.</p>
+<p>Ám đạo một tiếng chính mình thất sách, cùng với làm Lê Diệu Nam cả ngày chi, hồ, giả, dã cách ứng chính mình, còn không bằng làm hắn có mỹ làm bạn, ôn nhu hương, anh hùng trủng, hưởng qua nữ nhân tư vị, nào còn sầu hắn học không xấu!</p>
+<p>Mã Ngọc Liên thanh thanh giọng nói, giữa mày lộ ra mấy phần thanh sầu, rất là áy náy nói “Ai! Cũng là ta vội đến đã quên, ngươi hiện giờ trong phòng mà ngay cả hầu hạ người đều không có, quá mấy ngày ngươi liền muốn thành hôn, không biết nhân sự sao được, ta xem ngươi kia mấy cái nha hoàn khá tốt, cũng đừng tống cổ đi ra ngoài xứng người, trước đề vì thông phòng nha đầu, chờ sinh hài tử về sau, lại tăng lên vì di nương.”</p>
+<p>Lê Diệu Nam trợn mắt há hốc mồm, thiếu chút nữa không bị nghẹn lại, thông phòng nha đầu? Hắn còn có phúc lợi này? Trong lòng nho nhỏ giãy giụa một chút, lắc lắc đầu, bối chủ nha hoàn hắn vô phúc tiêu thụ, lúc này hắn mới nhớ tới, cổ nhân dạy dỗ hài tử biết nhân sự, còn có thông phòng nha đầu này vừa nói, trước mắt hắn tiền đồ không rõ, vì không gia trạch không yên, hắn quyết định vẫn là muốn nhịn đau bỏ những thứ yêu thích, xụ mặt nói “Đại trượng phu há có thể trì hoãn cùng nhi nữ □□, phu nhân hảo ý diệu nam tâm lĩnh, lại là không dám nhận đồng, phu lang quá mấy ngày muốn vào môn, diệu nam không nghĩ cho hắn ngột ngạt, bọn nha hoàn vẫn là thả ra đi xứng người bãi.”</p>
+<p>“Tùy ngươi!” Mã Ngọc Liên nhìn hắn vẻ mặt đau mình, lại làm bộ làm tịch cố tình đứng đắn, chỉ ở trong lòng cười thầm, tiểu súc sinh quả nhiên vẫn là nộn điểm nhi, nhắc tới đến nữ nhân liền này phúc đức hạnh, tiện đà ngôn nói “Nếu các nàng muốn xứng người, bên cạnh ngươi dù sao cũng phải có người hầu hạ, trong chốc lát ta làm trương bảo gia dẫn người qua đi cho ngươi chọn, bảo quản mỗi người đều thủy linh.”</p>
+<p>“Không! Không! Không!” Lê Diệu Nam đầy mặt trướng đến đỏ bừng, nghẹn, hắn thật sự có chút buồn cười, Mã Ngọc Liên lúc này bộ dáng đặc biệt giống cái tú bà, vội vàng xua xua tay “Không cần như vậy phiền toái, gần đây trong phủ sự vội, vẫn là trước tăng cường trong phủ, sau đó làm mẹ mìn dẫn người tới, ta tùy tiện chọn mấy cái liền thành.”</p>
+<p>Mã Ngọc Liên chỉ đương hắn thẹn thùng, đây là một cái mỹ diệu hiểu lầm, cũng không đem hắn nói để ở trong lòng, dù sao tương lai còn dài, nghĩ nghĩ ngày gần đây trong phủ lại là Lê Diệu Nam thành hôn, lại là lão phu nhân 50 đại thọ, còn có trân nhi, Tông Nhi cũng muốn bắt đầu tương xem nhân gia, thật sự lo liệu không hết quá nhiều việc, liền nói “Cũng đúng, chính ngươi quyết định, tuyển người tốt đi quản sự kia thông báo một tiếng liền thành, chẳng qua mua tới nha hoàn không hiểu lễ nghi, ngươi đại hỉ nhật tử gần ngay trước mắt, ngươi cần phải cẩn thận ước lượng, bêu xấu, mất mặt nhưng không ngừng là chính ngươi, chúng ta Lê gia mặt mũi cũng sẽ bị hao tổn.”</p>
+<p>“Ta đã biết, tạ phu nhân.” Lê Diệu Nam tất nhiên là không biết Mã Ngọc Liên lúc này chính não động mở rộng ra, ảo tưởng như thế nào đem hắn dạy hư, có thể như thế dễ dàng đạt thành mục đích, hắn cảm thấy quả thực có chút không thể tin tưởng.</p>
+<p>Mã Ngọc Liên trong lòng lại nghĩ, bất quá khúc khúc mấy cái nha hoàn mà thôi, đó là dựa vào hắn thay đổi lại như thế nào, chẳng lẽ đổi mấy cái nha hoàn hắn là có thể trở nên nổi bật? Tưởng thoát khỏi nàng khống chế, cũng không xem hắn có hay không cái kia năng lực, liền hắn kia cổ hủ đức hạnh, chỉ cần là cái người thông minh, liền nên biết trạm bên kia, huống chi, Lý ma ma còn ở hắn trong phòng, thay đổi nha hoàn lại như thế nào, thật là không biết cái gọi là.</p>
+<p>Mã Ngọc Liên đối Lê Diệu Nam càng thêm chướng mắt, trong lòng cũng càng thêm cao hứng, Lê Diệu Nam càng không tiền đồ, nàng trong lòng cũng liền càng thống khoái.</p>
+<p>“Được rồi, không có việc gì ngươi liền đi xuống bãi, khoảng cách thành hôn còn có cửu thiên, ngươi mau chóng tìm cái thời gian dọn đi cảnh lan viện, trước quen thuộc quen thuộc hoàn cảnh, nhìn xem còn thiếu chút cái gì, đến lúc đó ta cho ngươi bổ thượng.” Mã Ngọc Liên thật sự không nghĩ thấy hắn, sợ Lê Diệu Nam lại đưa ra cái gì thái quá điều kiện, ngôn ngữ gian vội vàng tống cổ hắn rời đi.</p>
+<p>Lê Diệu Nam lại như thế nào như nàng mong muốn “Còn có một việc muốn làm phiền phu nhân, mẫu thân lưu lại sản nghiệp, ta muốn thu hồi tới.” Hắn trong miệng mẫu thân, tự nhiên là hắn thân sinh mẫu thân, mấy năm nay Lê Diệu Nam trước nay đều chỉ gọi Mã Ngọc Liên vi phu nhân.</p>
+<p>“Ngươi nói cái gì?” Mã Ngọc Liên trong lòng giận dữ, ánh mắt trở nên tàn nhẫn, gắt gao nhìn chằm chằm Lê Diệu Nam, đã bao nhiêu năm, chưa từng có người nào dám ở nàng trước mặt đề Trương thị, đó chính là nàng trong lòng một cây thứ.</p>
+<p>“Mẫu thân đi đến sớm, diệu nam vô năng, báo không được nàng sinh dục chi ân, chỉ có này đó sản nghiệp là cái tưởng niệm, diệu nam muốn thu hồi tới, mong rằng phu nhân đáp ứng.” Lê Diệu Nam trấn định tự nhiên, buổi nói chuyện đĩnh đạc mà nói, trên mặt tuy rằng nhàn nhạt, ngữ điệu lại cực kỳ kiên định.</p>
+<p>Mã Ngọc Liên vừa thấy liền biết hắn là quyết tâm, che giấu trụ trong lòng không vui, khinh miệt nói “Ngươi lại không hiểu quản sự, thu hồi cửa hàng làm cái gì, chúng ta nhân gia như vậy, mọi việc phân phó đi xuống là được, cũng không thể tự hạ thân phận hành kia thương nhân việc, tỷ tỷ nếu là biết ngươi hoang phế việc học, để ý tới này đó tục sự, trong lòng tất nhiên không dễ chịu.”</p>
+<p>Lê Diệu Nam khóe môi trừu trừu, hắn chỉ là thu hồi sản nghiệp mà thôi, như thế nào còn cùng việc học nhấc lên liên hệ, ngay cả hắn qua đời mẫu thân đều ra tới, Mã Ngọc Liên một trương xảo miệng thật sự lợi hại.</p>
+<p>“Phu nhân nói chính là, diệu nam không dám hoang phế việc học, chẳng qua bởi vì muốn thành hôn, mới nghĩ thu hồi sản nghiệp, giao dư phu lang bảo quản, nếu không diệu nam thân vô vật dư thừa, lại nào không biết xấu hổ chậm trễ Lâm gia công tử, mẫu thân nếu là biết, nói vậy cũng là cao hứng.” Lê Diệu Nam gợn sóng bất kinh trả lời, đặc biệt tăng thêm chậm trễ hai chữ.</p>
+<p>Mã Ngọc Liên cười lạnh, tự nhiên nghe hiểu hắn ý tứ trong lời nói, nàng liền nói đâu, mấy ngày hôm trước Lê Diệu Nam còn bởi vì nha hoàn nhàn ngôn toái ngữ hộc máu hôn mê, hôm nay như thế nào liền trở nên cam tâm tình nguyện, nguyên lai là ở chỗ này chờ, châm chọc nói “Ngươi nhưng thật ra đau lòng tân phu nhân.”</p>
+<p>Lê Diệu Nam đối nàng khen vui vẻ tiếp thu “Đó là tự nhiên, còn muốn đa tạ đại ca làm mai.”</p>
+<p>Mã Ngọc Liên bị tức giận đến một cái ngã ngửa, hắn đây là không có sợ hãi có phải hay không, đồng tử lơ đãng mà hơi hơi co rụt lại, đáy mắt hiện lên một đạo khói mù, lúc này nàng nào còn không biết, Lê Diệu Nam đánh chính là cái gì chủ ý, hắn đây là tự hiểu là cánh trường ngạnh tưởng phi đâu, nàng quả nhiên vẫn là quá nhân từ.</p>
+<p>Mã Ngọc Liên nhăn lại mày, khóe miệng căng chặt, ngón tay không ngừng nhẹ đánh mặt bàn, trái lo phải nghĩ lại phát hiện, tại đây tiểu súc sinh thành hôn trước kia, nàng thật đúng là lấy Lê Diệu Nam không có biện pháp.</p>
+<p>Sự tình quan nhi tử tiền đồ, nếu Lê Diệu Nam chết cũng không chịu thành thân, nàng cũng chỉ có ném chuột sợ vỡ đồ.</p>
+<p>Gia đình giàu có nặng nhất thể diện, Lâm gia công tử chẳng sợ lại không được ưa thích, gả vào Lê gia trước kia, Lâm gia đều chỉ biết đối hắn càng tốt, như vậy mới có thể chân chính giấu người tai mắt, coi trọng hôn sự này người, trước nay đều chỉ là Lâm gia, không quan hệ Lê Diệu Nam, cũng không quan Lâm Dĩ Hiên, mà Lê gia vừa lúc đắc tội không nổi Lâm gia. Thật muốn làm Lê Diệu Nam làm ầm ĩ lên, toàn bộ Lê gia nói không chừng đều sẽ đã chịu liên lụy.</p>
+<p>Nhưng muốn cho nàng đem sản nghiệp chắp tay nhường lại, lại là trăm triệu không có khả năng, Mã Ngọc Liên tươi cười thân thiết, dứt khoát bốn lạng đẩy ngàn cân “Tỷ tỷ lưu lại đồ vật, nguyên liền ở trong tay ngươi, nói chuyện gì thu hồi không thu hồi, chính ngươi quyết định đó là.”</p>
+<p>Lê Diệu Nam ánh mắt lạnh lùng, Mã Ngọc Liên lời này nói thật dễ nghe, kỳ thật lại cùng chưa nói giống nhau, khế đất xác thật hắn bảo quản, nhưng sản nghiệp lại ở quản sự trong tay, vì thanh danh, hắn chẳng lẽ còn có thể ngạnh làm các quản sự rời đi? Những cái đó sản nghiệp trên danh nghĩa là từ phu nhân phái người xử lý, thật muốn là làm như vậy, hắn chính là bất hiếu, huống chi, trong tay hắn cũng không đắc dụng người, ai lại sẽ thật nghe lời hắn.</p>
+<p>Nếu chỉ lấy trương khế đất, là có thể thu hồi sản nghiệp, hắn nào còn sẽ ở chỗ này cùng nàng cãi cọ.</p>
+<p>Thay đổi giống nhau người, lời nói đều nói đến này phân thượng, dù cho tất cả không muốn, khẳng định cũng chỉ sẽ từ bỏ, nhưng Lê Diệu Nam lại há là người bình thường, hắn từ trước đến nay đều chỉ biết theo cột hướng lên trên bò, chính là xuyên tạc Mã Ngọc Liên trong lời nói hàm nghĩa, vội nói “Diệu nam không hiểu tục sự, sản nghiệp tuy ở trong tay, quản sự lại lừa trên gạt dưới, còn thỉnh phu nhân hỗ trợ chiêu bọn họ trở về, ta sợ chính mình đem hàng không được, truyền ra đi đối Lê gia thanh danh không tốt, đường đường Lê phủ nhị thiếu gia, lại bị mấy cái quản sự cầm giữ, biết sẽ nói ta vô năng, không biết, còn tưởng rằng phu nhân từ giữa làm khó dễ, như thế đối phu nhân danh dự cũng sẽ có điều ảnh hưởng.”</p>
+<p>“Ngươi lời này là có ý tứ gì?” Mã Ngọc Liên trừng lớn hai mắt, sắc mặt xanh mét, như thế nào đều không thể tin được, người này thế nhưng này hồ ngôn loạn ngữ, tuy rằng phần lớn là tình hình thực tế, nhưng này đó đều ngầm sự tình, ai lại dám quang minh chính đại nói ra, hắn còn đương thật không biết xấu hổ da.</p>
+<p>Lại lần nữa đánh giá trước mặt thiếu niên, Mã Ngọc Liên tâm thần hoảng hốt trong chốc lát, rõ ràng vẫn là gương mặt này, một bộ nhược bất kinh phong bộ dáng, cảm giác lại giống thay đổi cá nhân dường như, lời nói cử chỉ chi gian nào còn có một tia toan hủ, chẳng lẽ một hồi đả kích, thật có thể sử một người biến hóa như vậy đại?</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong4.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong6.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "xuyen-qua-chi-nha-co-tieu-phu-lang";
+const NOVEL_TITLE = "Xuyên qua chi nhà có tiểu phu lang";
+const CHAPTER_TITLE = "Chương 5";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

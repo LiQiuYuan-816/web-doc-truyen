@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 24</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Xuyên qua chi nhà có tiểu phu lang
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 24</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong23.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong25.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Bất quá là pháo hoa nữ tử mà thôi.” Lâm Dĩ Hiên lời nói lạnh nhạt, trên mặt nhan sắc giống vậy mùa đông khắc nghiệt hàn băng.</p>
+<p>Lê Diệu Nam không để bụng, dùng một loại ngươi không hiểu ánh mắt nhìn Lâm Dĩ Hiên “Này ngươi liền không hiểu sao, pháo hoa nữ tử mới đủ vị, những cái đó đại gia tiểu thư không nẩy nở, thấy nào còn có hứng thú.”</p>
+<p>Lâm Dĩ Hiên trong lòng tức giận đến tưởng hộc máu, hoá ra hắn không cần thông phòng nha hoàn, là ngại nhân gia tuổi còn nhỏ, không đủ vị. Cười lạnh nói “Thuyền hoa nhưng không có gì sạch sẽ nữ tử.”</p>
+<p>“Nhìn xem thôi.” Lê Diệu Nam tổng cảm thấy Lâm Dĩ Hiên hôm nay có chút âm dương quái khí, bất quá hắn cũng tập mãi thành thói quen, cũng không để ở trong lòng.</p>
+<p>Không đợi Lâm Dĩ Hiên thở phào nhẹ nhõm, chỉ nghe thấy Lê Diệu Nam còn nói thêm “Kỳ thật ta càng muốn kiến thức một chút bờ sông Tần Hoài, nghe nói bên kia ra tài nữ.”</p>
+<p>Lâm Dĩ Hiên tức khắc chán nản, cảm thấy lại cùng thứ này nói tiếp, hắn hàm dưỡng giữ không nổi muốn phá công, lạnh lùng ném xuống một câu “Ngươi chậm rãi xem.” Xoay người liền đi.</p>
+<p>Lê Diệu Nam không thể hiểu được, phát hiện vị này Lâm gia công tử, từ rời đi Lê phủ liền trở nên càng thêm khó có thể nắm lấy.</p>
+<p>Lâm Dĩ Hiên ngồi ở trong khoang thuyền giận dỗi, lúc này mới có tâm tình sửa sang lại suy nghĩ, từ trước hắn xem nhẹ rất nhiều vấn đề đều nổi lên trong lòng, Lê Diệu Nam thực rõ ràng chỉ đối nữ nhân cảm thấy hứng thú, hắn nói muốn phóng chính mình rời đi cũng không phải ba hoa chích choè, mà là thiệt tình thật lòng vì chính mình suy nghĩ, nhìn ra được Lê Diệu Nam đối hắn vẫn là thực tôn trọng, nhưng loại này tôn trọng lại không phải đối thê tử, mà là đối đãi một cái cộng hoạn nạn chí giao hảo hữu.</p>
+<p>Lâm Dĩ Hiên trong lòng phát khổ, muốn nói hắn đối Lê Diệu Nam có bao nhiêu sâu cảm tình, đó là không có khả năng, nhưng hắn nếu đã gả cho người, cái này đương gia phu nhân vị trí liền nhất định phải ngồi ổn, hắn không ngại Lê Diệu Nam có nữ nhân khác, nhưng lại tuyệt không cho phép Lê Diệu Nam làm ra một cái thứ trưởng tử trở về.</p>
+<p>Lâm Dĩ Hiên trong lòng rùng mình, phía trước hắn luôn cho rằng Lê Diệu Nam mệnh không trường cửu, chỉ nghĩ mau chóng dọn ly Lê phủ, lại đã quên kiếp trước Lê Diệu Nam nếu cũng bị quá kế đi ra ngoài, lê diệu tổ chẳng phải là cũng chỉ dư lại một cái huynh đệ, kia chính mình không nghe nói qua Lê Diệu Nam tên, tựa hồ cũng trở nên hợp tình hợp lý, cũng không phải Lê Diệu Nam đoản mệnh, mà là hắn căn bản là đã không phải Lê gia người!</p>
+<p>Lâm Dĩ Hiên ánh mắt ám ám, tay nhẹ nhàng ấn ở chính mình trên bụng nhỏ, hắn cảm thấy có một số việc không thể lại đợi.</p>
+<p>Đến Tô Châu thời điểm, đã là ngày hôm sau chạng vạng, Lê gia trang khoảng cách Tô Châu thành còn có mấy km, đêm đó bọn họ liền ở khách điếm trụ hạ.</p>
+<p>Lê Diệu Nam cùng Lâm Dĩ Hiên là phu thê, tự nhiên bị an bài ở một gian phòng cho khách, Lê Diệu Nam thực tự giác trên giường trung ương cách một giường chăn, còn nói giỡn mà đối Lâm Dĩ Hiên nói “Sở hán hà giới!”</p>
+<p>Lâm Dĩ Hiên trong lòng thầm hận, Lê Diệu Nam đối song nhi không có hứng thú, kia hắn như thế nào mới có thể hoài hài tử!</p>
+<p>Đêm nay, hai người một đêm vô miên.</p>
+<p>Lê Diệu Nam là hưng phấn, thượng từ đường, hắn liền có thể chân chính thoát khỏi Lê gia.</p>
+<p>Lâm Dĩ Hiên lại là phiền muộn, tóm lại cả đêm đều lăn qua lộn lại, chỉ là từ ngày này sau, hắn liền bắt đầu chú trọng điều dưỡng thân thể, đối Lê Diệu Nam thái độ cũng mười tám độ chuyển biến, trở nên hảo lên, hảo đến Lê Diệu Nam đáy lòng chột dạ, tổng cảm thấy phi thường không thích hợp.</p>
+<p>Sáng sớm hôm sau, đoàn người khởi hành rời đi.</p>
+<p>Lê Diệu Nam lại ở Tô Châu thành mua không ít đồ vật, lê kính tường xem đến âm thầm gật đầu, Lê gia tiểu tử này sẽ làm người, còn chưa có đi quê quán đâu, trong lòng liền nghĩ tộc nhân, lễ vật nhiều ít không phải mấu chốt, mấu chốt ở chỗ tâm ý, lê kính tường càng thêm cảm thấy đem Lê Diệu Nam quá kế không sai, Lê Diệu Nam nếu có thể làm ra Quốc Tử Giám cùng minh hơi thư viện thư đề cử, nói vậy chính hắn tiền đồ cũng sẽ không kém, càng khó đến chính là, hắn sẽ vì tộc nhân suy nghĩ. Lê Thái An là có mắt không tròng, mới làm sẽ vứt bỏ như vậy một cái hảo nhi tử, vừa lúc làm trong tộc nhặt tiện nghi.</p>
+<p>Lê diệu tường trong lòng bàn tính đánh đến bạch bạch vang, lê thái thành tổ phụ, cùng hắn tổ phụ là thân huynh đệ, Lê Diệu Nam này một quá kế, cùng Lê phủ quan hệ xác thật xa, nhưng cùng trong tộc quan hệ lại càng vì chặt chẽ, phần lớn đều quan hệ họ hàng, họ hàng xa cũng là thân không phải.</p>
+<p>Lê Diệu Nam nếu có tiền đồ, chỉ cần tộc nhân hảo hảo đối hắn, còn sợ hắn không giúp đỡ sao? Huống chi, hắn cũng thực xem trọng Lê Diệu Nam phu lang, rốt cuộc là nhà cao cửa rộng ra tới, chỉ xem kia toàn thân khí phái, ngay cả Tri phủ đại nhân đều xa xa không kịp.</p>
+<p>Lê kính tường hiện tại đối Lê Thái An xem như hoàn toàn đã chết tâm, từ lê lão thái gia qua đời sau, Lê phủ bị hai nữ nhân cầm giữ, Lê Thái An hiện giờ hồ đồ mà ngay cả thân sinh nhi tử đều không cần, người như vậy vẫn là thiếu lui tới hảo, dù sao vô ích, Lê gia cưới như vậy nữ nhân thật đúng là gia môn bất hạnh.</p>
+<p>Hai cái canh giờ qua đi, đoàn người rốt cuộc tới rồi Lê gia trang, nhị thúc bá đám người lần lượt cáo từ, Lê Diệu Nam cũng xuống xe ngựa đi bộ, đồ nhà quê giống nhau nhìn bốn phía phong cảnh. Lại không biết chính hắn cũng là một đạo phong cảnh, mấy xe lớn đồ vật, xe ngựa còn như vậy khí phái, người kia là ai nha?</p>
+<p>Lê gia trang là một cái giàu có và đông đúc thôn trang nhỏ, từng nhà gạch xanh nhà ngói, tuy rằng là ở nông thôn, nhưng địa lý vị trí lại rất hảo, Giang Nam không hổ là đất lành, Lê gia trang một chút cũng không có vẻ cằn cỗi, đồng ruộng phì nhiêu, cây ăn quả rậm rạp, dọc theo đường đi Lê Diệu Nam còn thấy mấy cái phóng ngưu oa tử, ngồi ở ngưu bối thượng hừ ca tiểu xướng một bộ điền viên cảnh tượng.</p>
+<p>Bờ sông càng là có không ít hài tử chơi đùa, chín tháng thời tiết tuy rằng chuyển lạnh, nhưng nghịch ngợm bọn nhỏ giống nhau xuống nước sờ cá, vừa rồi đứa bé kia, vừa lúc bị gia trưởng bắt được, nông thôn phụ nhân chửi bậy thanh, giọng đó là một cái đại, thật xa bọn họ liền nghe thấy được.</p>
+<p>Vừa đi Lê Hữu Tín một bên giải thích “Đó là liền bá gia tiểu nhi tử, nghịch ngợm thật sự, hơi chút một cái không chú ý, không phải lên cây đào trứng chim, chính là xuống nước sờ cá, liền thím mắng không biết bao nhiêu lần, kia tiểu tử xảo quyệt thật sự, mỗi một lần đều nói không dám, tiếp theo làm theo tái phạm, liền thím lấy hắn cũng là không thể nề hà.”</p>
+<p>“Xì!” Lê Diệu Nam nở nụ cười, này nhưng còn không phải là hiện đại người theo như lời, dũng cảm nhận sai, chết cũng không hối cải sao?</p>
+<p>“Nha! Tin tiểu tử đã về rồi, tứ thúc công không làm ầm ĩ đi.” Một vị nông gia hán tử nhiệt tình đánh lên tiếp đón, nhìn về phía Lê Diệu Nam cùng Lâm Dĩ Hiên ánh mắt rất tò mò.</p>
+<p>Lê Hữu Tín cười cười “Cha ta ở phía sau, hỏi hắn đi.”</p>
+<p>Nông gia hán tử bị nghẹn họng, cảm thấy người đọc sách chính là một bụng ý xấu, không nghĩ nói liền không nghĩ nói, đề tộc trưởng làm gì, chỉ là mới vừa vừa chuyển đầu, liền thấy lê kính tường từ trên xe ngựa xuống dưới, nông gia hán tử sống lưng một đĩnh “Tộc trưởng hảo.”</p>
+<p>Lê kính tường gật gật đầu “Trong nhà mà đều thu?”</p>
+<p>Nông gia hán tử đầu diêu đến cùng lãng cổ dường như, tộc trưởng ở bọn họ trong lòng, uy nghiêm là lâu ngày hình thành, hắn nơi nào còn dám làm càn.</p>
+<p>Lê kính tường xụ mặt quát “Vậy ngươi còn không mau đi?”</p>
+<p>Nông gia hán tử xám xịt chạy, không lâu, liền nghe thấy nơi xa truyền đến tiếng cười nói.</p>
+<p>“Ha ha, cường tử, thế nào? Hỏi ra tới không có?”</p>
+<p>“Đừng nói nữa, tộc trưởng cũng ở.”</p>
+<p>“Kia có cái gì, chúng ta cũng là quan tâm tộc nhân, ngươi xem kia mấy xe đồ vật, biết là ai không?”</p>
+<p>“Ta nào biết, dù sao ta là không đi hỏi, muốn đi ngươi đi.”</p>
+<p>“Ai làm ngươi vừa rồi đánh cuộc thua, đã đánh cuộc thì phải chịu thua.”</p>
+<p>“Đi, ta mới không hề thượng ngươi đương.”</p>
+<p>“......”</p>
+<p>Lê Diệu Nam vô ngữ, hắn lại không phải gấu trúc, có cái gì hảo hiếm lạ.</p>
+<p>Lê kính tường cười nói “Bọn họ không ác ý, ngươi đừng để ý.”</p>
+<p>Lê Diệu Nam lắc lắc đầu, tự nhiên sẽ không đem việc này để ở trong lòng, chỉ là hắn nếu là nhớ rõ không sai, tứ thúc công phảng phất là hắn sắp sửa quá kế cái kia tiện nghi phụ thân thân bá phụ, ngược lại hỏi “Tứ thúc công làm sao vậy?”</p>
+<p>“Tứ thúc công a......” Lê Hữu Tín blah blah nói cho hắn, tứ thúc công công tích vĩ đại, cần phải muốn cho Lê Diệu Nam lý giải, nếu là không có tứ thúc công, hắn khẳng định còn không có dễ dàng như vậy từ Lê phủ ra tới.</p>
+<p>Lê kính tường bổ sung nói “Cha ngươi mấy ngày trước đây tới tìm ta, nói là tưởng đổi một người cùng ngươi quá kế, ít nhất muốn cha mẹ đều toàn, ta không đáp ứng.”</p>
+<p>Lê Diệu Nam trong lòng lạnh lùng, ngay sau đó lại một trận may mắn, tuy rằng từ Lê gia quá kế ra tới, là hắn cùng tộc trưởng một hồi ích lợi trao đổi, nhưng lê kính tường có thể như thế tận tâm tận lực, này phân tình, hắn lãnh.</p>
+<p>Nếu không có tứ thúc công một khóc hai nháo ba thắt cổ, Lê Thái An nếu thực sự có cái gì ý tưởng, tộc trưởng bên kia chỉ sợ cũng không hảo cự tuyệt, cái này niên đại coi trọng quan hệ thông gia, đem hắn quá kế cấp một cái cả nhà đều tử tuyệt người, về sau hắn chẳng khác nào là người cô đơn, chẳng sợ cùng trong tộc có thân thích quan hệ, rốt cuộc cũng cách vài tầng, chuyện này đến chỗ nào đều không thể nào nói nổi, người ngoài chỉ biết cho rằng trong tộc hành sự quá mức, dựa theo cổ nhân tư tưởng tới xem, này không phải bạc đãi nhân gia hài tử sao.</p>
+<p>Cổ nhân nếu thành lập tông tộc, tự nhiên là có tông tộc chỗ tốt, Lê Diệu Nam đối này tin tưởng không nghi ngờ, nhưng vạn sự có lợi cũng có tệ, trước mắt tới nói, hắn yêu cầu tông tộc làm dựa vào, lại không cần nhiều cha mẹ quản ở trên đầu.</p>
+<p>Bởi vì còn không có khai tông từ, cùng ngày Lê Diệu Nam cùng Lâm Dĩ Hiên liền ở tộc trưởng trong nhà đặt chân.</p>
+<p>Tộc trưởng gia là cái loại này điển hình cổ đại tứ hợp viện, bởi vì bọn họ mang đồ vật nhiều, còn có sáu cái hạ nhân, tộc trưởng đem bọn họ an bài ở đông sương phòng, là một cái độc lập tiểu viện, tương đối tới nói này đã là đối đãi người một nhà thái độ.</p>
+<p>Hai người dàn xếp hảo lúc sau, Lâm Dĩ Hiên làm người đem đồ vật dọn nhập sườn biên nhĩ phòng, tiếp theo liền bắt đầu phân loại, dựa theo dọc theo đường đi nghe được tin tức, làm người từng nhà đưa qua đi, chỉ để lại tộc trưởng cùng tứ thúc công này phân, tính toán chờ lát nữa tự mình đi một chuyến.</p>
+<p>Này vẫn là hắn hai đời, lần đầu tới ở nông thôn, cũng không có trong tưởng tượng thô bỉ, Lâm Dĩ Hiên ngược lại cảm thấy này đó nông hộ nhân gia chân thành không giả bộ, thấy bọn nhỏ gương mặt tươi cười, nông gia người vất vả, hắn nặng nề tâm tình, tựa hồ cũng đi theo hảo lên.</p>
+<p>Kỳ thật Lê Diệu Nam cũng giống nhau, vô luận kiếp trước kiếp này, hắn đều không có đi qua nông thôn, liền lúa mạch trường gì dạng cũng không biết, lần đầu tiên kiến thức điền viên cảnh đẹp, nói thật, nếu không phải quan phủ sưu cao thuế nặng quá nhiều, động bất động triều đình còn muốn trưng binh, hắn nhưng thật ra rất tưởng ở nông thôn đương một cái phú quý người rảnh rỗi.</p>
+<p>Đương nhiên, này cũng chỉ là ngẫm lại mà thôi, thật muốn hắn đi trồng trọt, Lê Diệu Nam là đánh chết cũng không làm.</p>
+<p>Thấy Lâm Dĩ Hiên vội tới vội đi, Lê Diệu Nam trong lòng rất là cảm khái, như vậy hiền huệ một người, vì sao liền không phải nữ nhân đâu.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong23.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong25.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "xuyen-qua-chi-nha-co-tieu-phu-lang";
+const NOVEL_TITLE = "Xuyên qua chi nhà có tiểu phu lang";
+const CHAPTER_TITLE = "Chương 24";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

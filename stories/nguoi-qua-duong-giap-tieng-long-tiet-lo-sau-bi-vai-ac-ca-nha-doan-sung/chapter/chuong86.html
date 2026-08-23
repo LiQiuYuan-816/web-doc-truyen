@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 86. Trò hay bắt đầu</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Người qua đường Giáp tiếng lòng tiết lộ sau bị vai ác cả nhà đoàn sủng
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 86. Trò hay bắt đầu</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong85.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong87.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Ba người đại não còn tại đầu não gió lốc, liền nghe Diệp Nhạc Dao thanh âm tiếp tục truyền đến</p>
+<p>【 tra công Cố Dữ chính là Cố Tung cùng hắn đệ nhị nhậm thê tử sinh nhi tử, liền so Sở Thừa nhỏ hai tuổi đi, tính lên vẫn là cái tư sinh tử. Sở Thừa mẫu thân cùng Cố Tung ly hôn sau, không bao lâu này hai người liền tới cửa, nhưng đoạn hôn nhân này liên tục thời gian cũng không dài, bởi vì Cố Tung chính là cái có mới nới cũ hỗn đản. 】</p>
+<p>【 mấy năm nay, Cố Tung bên người tình nhân không ngừng, nhưng vẫn luôn không có kết hôn, thẳng đến nửa năm trước, hắn gặp được hắn hiện tại tân hoan Hàn Duy, hai người quen biết bất quá một tháng, liền bay nhanh mà lãnh giấy hôn thú. 】</p>
+<p>Diệp Nhạc Dao bĩu môi</p>
+<p>【 Cố Tung chính mình liền không phải cái gì thứ tốt, cùng hắn ngưu tầm ngưu, mã tầm mã Hàn Duy, cùng với từ nhỏ chịu hắn mưa dầm thấm đất Cố Dữ đương nhiên cũng không phải cái gì thứ tốt, Cố Tung cùng Hàn Duy kết hôn tháng thứ hai, Cố Dữ liền cùng nàng làm ở cùng nhau……】</p>
+<p>【 nếu ta nhớ không lầm nói, nguyên văn chuyện này nháo đến còn rất đại. Rốt cuộc Tần tổng gia cũng có giải trí công ty, cho nên hôm nay yến tới không ít phóng viên giải trí, vai chính chịu Ngụy Thanh đi bắt gian khi vừa lúc có phóng viên đi theo cùng đi, thực mau này đó ảnh chụp đã bị truyền tới trên mạng. 】</p>
+<p>【 tra công Cố Dữ lại là một cái còn có điểm danh khí tiểu nghệ sĩ, vì không ngừng đưa chính mình diễn nghệ kiếp sống, mặt sau bọn họ cả nhà còn đẩy một cái kẻ xui xẻo đi ra ngoài đỉnh bao……】</p>
+<p>Diệp Nhạc Dao hồi ức đến nơi đây, mày gắt gao nhăn ở bên nhau, lần đầu nghe hắn ở trong lòng tức giận phi thường nói</p>
+<p>【 một cái hai cái đều là rác rưởi, ta chán ghét bọn họ! 】</p>
+<p>Chính là lúc này, Cố Tung thanh âm vang lên “Nha, Tiểu Diệu tới a, mau tới đây ngồi.”</p>
+<p>Cố Tung dẫn đầu phát hiện đi vào Tần Diệu đoàn người, cười mở miệng triều Tần Diệu vẫy tay, theo sau tầm mắt dừng ở Diệp Nhạc Dao đoàn người trên người, triều bọn họ lộ ra một cái cười nhạt.</p>
+<p>Vẫn luôn ở cùng hắn nói chuyện phiếm nữ nhân đó là Cố Tung thân tỷ tỷ Cố Nhu, đồng thời nàng cũng là Tần Diệu mẫu thân.</p>
+<p>Thấy thế nàng cũng đi theo quay đầu nhìn qua, tầm mắt dẫn đầu dừng ở Diệp Nhạc Dao trên người, đánh giá một lát, nàng mới nhàn nhạt mở miệng nói “Lại đây ngồi đi.”</p>
+<p>Hai người đều đã mở miệng, bọn họ cũng không hảo tiếp tục đứng ở chỗ này, Tần Diệu lúc này thu hồi dừng ở Diệp Nhạc Dao trên người tầm mắt.</p>
+<p>Chỉ là ở quay đầu nháy mắt, hắn bỗng nhiên phát hiện Hoắc Yến cùng Hoắc Trạch cũng đang xem Diệp Nhạc Dao.</p>
+<p>Tần Diệu trong lòng tức khắc có chút nghi hoặc.</p>
+<p>Chính mình vừa mới sẽ đột nhiên quay đầu xem Diệp Nhạc Dao, là bởi vì nghe được Diệp Nhạc Dao tiếng lòng.</p>
+<p>Hoắc Yến cùng Hoắc Trạch cũng triều Diệp Nhạc Dao nhìn thoáng qua, chẳng lẽ Hoắc Yến cùng Hoắc Trạch cũng có thể ——</p>
+<p>Tần Diệu trong lòng cả kinh, nhưng hiện tại cũng không phải thâm tưởng thời điểm, hắn thoáng áp xuống đáy lòng nghi hoặc, dắt lấy Diệp Nhạc Dao tay, tiến đến hắn bên tai nhẹ giọng hỏi “Không nghĩ đi vào nói ta hiện tại mang ngươi rời đi?”</p>
+<p>Diệp Nhạc Dao chạy nhanh lắc đầu.</p>
+<p>【 tuy rằng ta xác thật không thích Cố Tung, nhưng ta tới cũng tới rồi, như thế nào có thể hiện tại liền đi đâu? 】</p>
+<p>【 còn có, Tần tổng như thế nào biết ta không thích Cố Tung? Chẳng lẽ đây là trong truyền thuyết tâm hữu linh tê nhất điểm thông? 】</p>
+<p>Diệp Nhạc Dao thật cao hứng, cười đối Tần Diệu nói “Đi thôi.”</p>
+<p>Đi theo bọn họ phía sau Hoắc Yến cùng Hoắc Trạch tắc đồng thời ở trong lòng thở dài.</p>
+<p>Có cái rắm tâm hữu linh tê!</p>
+<p>Tần Diệu sở dĩ biết ngươi không vui, hoàn toàn là bởi vì Tần Diệu có thể nghe được ngươi tiếng lòng!</p>
+<p>Đương một hai phải nói như vậy nói, kia Hoắc Yến cùng Hoắc Trạch cũng có thể cùng Diệp Nhạc Dao tâm hữu linh tê a!</p>
+<p>Không chỉ là hai người bọn họ, bọn họ cả nhà đều có thể, Tần Diệu lại tính cái gì?!</p>
+<p>Khó được, Hoắc Trạch cùng Hoắc Yến ý tưởng độ cao nhất trí.</p>
+<p>Xác định Diệp Nhạc Dao không có bất luận cái gì không tình nguyện, Tần Diệu lúc này mới hơi hơi gật đầu, mang theo Diệp Nhạc Dao đi qua.</p>
+<p>Hai người ghé vào cùng nhau thì thầm hình ảnh dừng ở Cố Nhu trong mắt, lại thành một loại khác ý tứ, chờ đến Tần Diệu vừa đi gần, nàng liền không nhịn xuống mở miệng quở mắng “Làm ngươi tiến vào như thế nào như vậy chậm? Chẳng lẽ là không nghĩ tới gặp ngươi cữu cữu?”</p>
+<p>Giọng nói rơi xuống đất, Hoắc Yến Hoắc Trạch đồng thời nhíu mày.</p>
+<p>Diệp Nhạc Dao càng là trừng lớn đôi mắt.</p>
+<p>【 ân? 】</p>
+<p>【 tuy rằng ta xác thật không phải rất tưởng tới gặp Cố Tung, nhưng chúng ta cũng không có đi thật sự chậm đi? 】</p>
+<p>【 còn có, nàng hẳn là Tần tổng mụ mụ đi? Vì cái gì dùng loại này ngữ khí cùng Tần tổng nói chuyện? 】</p>
+<p>Tuy là luôn luôn đối tình cảm trì độn Diệp Nhạc Dao, lúc này cũng nhạy bén mà cảm giác được Cố Nhu trong giọng nói không mừng.</p>
+<p>Cũng là lúc này, Diệp Nhạc Dao rốt cuộc hậu tri hậu giác minh bạch Tần Diệu ngay từ đầu câu kia “Mẫu thân của ta đối với ngươi khả năng không bằng ta phụ thân đối với ngươi nhiệt tình” hàm nghĩa.</p>
+<p>Diệp Nhạc Dao đến ra kết luận 【 cho nên, Tần tổng mẫu thân không thích Tần tổng? 】</p>
+<p>Hoắc Yến cùng Hoắc Trạch nhỏ đến khó phát hiện gật gật đầu.</p>
+<p>Đúng vậy, đây cũng là vì sao Hoắc Yến không đồng ý Diệp Nhạc Dao cùng Tần Diệu ở bên nhau nguyên nhân chi nhất.</p>
+<p>Tuy rằng nói như vậy phi thường không lễ phép, nhưng là Hoắc Yến chính là cảm thấy Cố Nhu người này đầu óc có vấn đề!</p>
+<p>Diệp Nhạc Dao hơi hơi nghiêng đầu đi xem Tần Diệu, lúc này mới phát hiện Tần Diệu trên mặt thế nhưng không có một tia cảm xúc dao động, hắn chỉ là dùng ôn nhu chuyên chú ánh mắt nhìn Diệp Nhạc Dao, phảng phất Diệp Nhạc Dao chỉ cần lộ ra bất luận cái gì không thoải mái biểu tình, hắn liền sẽ lập tức mang Diệp Nhạc Dao rời đi.</p>
+<p>Không biết vì sao, Diệp Nhạc Dao trong lòng bỗng nhiên liền có chút khó chịu.</p>
+<p>Cũng là lúc này, tắc nghẽn ký ức như là đột nhiên bị người mở ra, Diệp Nhạc Dao nhớ tới trong nguyên văn đối Cố Nhu miêu tả ——</p>
+<p>【 Đỡ Đệ Ma, thiên vị cháu trai Cố Dữ, không tín nhiệm chính mình lão công Tần Hồng Hi, nhất người đáng ghét là vẫn luôn ngỗ nghịch nàng thân sinh nhi tử Tần Diệu……】</p>
+<p>Diệp Nhạc Dao mỗi đọc một câu, trái tim liền nhẹ nhàng mà trừu đau một chút.</p>
+<p>Khó trách Tần Diệu sẽ lộ ra như vậy một bức tập mãi thành thói quen biểu tình, còn sẽ ở mang Diệp Nhạc Dao tới gặp Cố Nhu phía trước trực tiếp thế Diệp Nhạc Dao làm quyết định.</p>
+<p>Tần Diệu lo lắng Diệp Nhạc Dao sẽ chịu ủy khuất, nhưng lại tưởng đem chính mình giới thiệu cho phụ thân hắn.</p>
+<p>Nhưng Diệp Nhạc Dao ủy khuất cái gì?</p>
+<p>Cố Nhu không phải hắn mẫu thân, không có khả năng bởi vì Cố Nhu tam ngôn hai câu liền bị chịu đả kích, ngược lại là Tần Diệu……</p>
+<p>“Tần Diệu!” Thấy Tần Diệu thật lâu không nói, Cố Nhu thanh âm tức khắc lại lạnh vài phần “Ngươi đây là cái gì thái độ? Ngươi nếu là không nghĩ gặp ngươi cữu cữu ngươi hiện tại liền cút cho ta đi ra ngoài ——”</p>
+<p>Tần Diệu lúc này mày rốt cuộc túc một chút, hắn đang muốn mở miệng, liền thấy Diệp Nhạc Dao bỗng nhiên giương giọng nói “Ta xác thật không nghĩ thấy Cố Tung, một khi đã như vậy a di ta liền trước mang Tần tổng đi rồi.”</p>
+<p>Nói xong, Diệp Nhạc Dao căn bản không cho ở đây người phản ứng thời gian, trực tiếp lôi kéo Tần Diệu xoay người, đồng thời triều hai cái ca ca đưa mắt ra hiệu Đi rồi!</p>
+<p>Hoắc Yến cùng Hoắc Trạch ngầm hiểu, đồng thời xoay người.</p>
+<p>Vừa lúc, bọn họ cũng không muốn cùng Cố Nhu hàn huyên.</p>
+<p>Hoắc Trạch thậm chí lo lắng cho mình một cái không nhịn xuống, liền chỉ vào Cố Tung cái mũi mắng hắn lão bức đăng!</p>
+<p>Thiên giết, cũng dám hãm hại hắn chiến đội!</p>
+<p>Thẳng đến bốn người đi tới phòng tiếp khách cửa, phía sau Cố Nhu mới như là phản ứng lại đây giống nhau, đột nhiên đề cao âm lượng cả giận nói “Ngươi là nhà ai hài tử? Ta cùng ta nhi tử nói chuyện luân được đến ngươi nói chuyện? Như vậy không hiểu lễ nghĩa nói liền thỉnh ngươi từ nhà ta cút đi!”</p>
+<p>Diệp Nhạc Dao nghe vậy đi được càng nhanh, nhưng Tần Diệu lúc này lại đột nhiên dừng bước chân.</p>
+<p>“Tần tổng?”</p>
+<p>Chỉ thấy Tần Diệu xoay người mặt lạnh nhìn chăm chú Cố Nhu, thanh âm tràn đầy sương lạnh “Ta không thể không lại nhắc nhở ngài một câu, nơi này là Tần gia nhà cũ, mặt trên cũng không viết họ Cố tên, liền tính muốn thỉnh người đi, cũng nên là ta thỉnh các ngươi nhị vị đi ra ngoài.”</p>
+<p>Diệp Nhạc Dao đôi mắt nháy mắt trợn to, ngay cả miệng đều giật mình mà hơi hơi mở ra.</p>
+<p>Hoắc Yến Hoắc Trạch càng là nhị mặt khiếp sợ.</p>
+<p>Từ từ, Tần Diệu vừa mới nói cái gì?</p>
+<p>Thỉnh hắn thân mụ từ Tần gia đi ra ngoài?</p>
+<p>Ân……</p>
+<p>Phía trước không phải nói Tần Diệu tuy rằng cùng hắn mẫu thân quan hệ bất hòa, nhưng hai người cũng sẽ duy trì mặt ngoài hoà bình sao?</p>
+<p>Còn có, hôm nay không phải Cố Nhu sinh nhật sao?</p>
+<p>Tần gia đều cho nàng tổ chức sinh nhật yến, nếu là hôm nay đem người thỉnh đi ra ngoài ——</p>
+<p>Thật sự có thể chứ?</p>
+<p>Hoắc Trạch nhìn mắt Hoắc Yến, tâm tình rất là phức tạp.</p>
+<p>Hoắc Yến tâm tình liền càng phức tạp, hắn vừa mới sở dĩ muốn cùng lại đây, chính là lo lắng Cố Nhu cái này đầu óc có bệnh khó xử Tần Diệu đồng thời cũng sẽ khó xử Diệp Nhạc Dao, hắn sợ Diệp Nhạc Dao có hại.</p>
+<p>Kết quả……</p>
+<p>Hảo đi, thật đúng là bị Hoắc ba Hoắc mẹ nói đúng, Tần Diệu sẽ che chở Diệp Nhạc Dao.</p>
+<p>Cố Nhu hiển nhiên cũng không có dự đoán được Tần Diệu sẽ dùng loại này ngữ khí cùng chính mình nói chuyện, trong lúc nhất thời tức giận đến nàng trong tay chén trà đều thiếu chút nữa rớt trên mặt đất.</p>
+<p>Cố Tung chạy nhanh tiến lên, duỗi tay tiếp nhận Cố Nhu trong tay chén trà, sau đó nhíu mày nhìn Tần Diệu “Tiểu Diệu, ngươi như thế nào cùng mẫu thân ngươi nói chuyện? Ngươi lại không phải không biết nàng thân thể không hảo……”</p>
+<p>“Thân thể không hảo liền phiền toái ngươi đem nàng tiếp về Cố gia dưỡng, vừa lúc cũng không cần lưu tại nhà ta làm ta chọc nàng sinh khí không phải sao?” Tần Diệu lạnh giọng nói, “Cùng nhau lăn.”</p>
+<p>Cố Tung bị Tần Diệu dỗi một nghẹn, ở đây những người khác lại đều là tiểu bối, hắn tức khắc cảm thấy thực không có mặt mũi, trên mặt trực tiếp tối sầm “Tiểu Diệu ngươi ——”</p>
+<p>“Làm sao vậy?”</p>
+<p>Lúc này, một đạo quen thuộc thanh âm vang lên.</p>
+<p>Diệp Nhạc Dao quay đầu nhìn lại, mới phát hiện Tần Hồng Hi không biết khi nào tới, bên cạnh còn đi theo Hoắc ba Hoắc mẹ cùng với Hoắc Cảnh.</p>
+<p>Hoắc Yến cùng Hoắc Trạch liếc nhau, biết cha mẹ hẳn là nghe được Diệp Nhạc Dao tiếng lòng cố ý chạy tới.</p>
+<p>Tần Diệu trầm khuôn mặt không nói chuyện.</p>
+<p>Tần Hồng Hi cũng không hỏi Tần Diệu, sâu thẳm tầm mắt dừng ở Cố Tung trên người.</p>
+<p>Cố Tung sắc mặt cổ quái, đón Tần Hồng Hi tầm mắt cùng hắn đối diện vài giây, mạc danh có chút chột dạ, nhưng vẫn là cảm thấy ra không được trong lòng khẩu khí này, trầm giọng nói “Tỷ phu, Tiểu Diệu đứa nhỏ này thật là càng ngày càng vô pháp vô thiên, ngươi biết hắn vừa mới nói cái gì sao? Hắn làm ta mang theo tỷ của ta lăn ra Tần gia……”</p>
+<p>Tần Hồng Hi trên mặt biểu tình biến đều không có biến một chút, hắn không lại nhìn Cố Tung, dời tầm mắt đi xem Cố Nhu, thanh âm vẫn là như nhau nếu bình tĩnh, nhưng cố tình chính là mang theo vài phần làm người khó có thể bỏ qua lạnh lẽo “Ngày hôm qua ngươi mới đáp ứng quá ta sẽ hảo hảo cùng Tiểu Diệu ở chung, nhanh như vậy liền đổi ý?”</p>
+<p>Diệp Nhạc Dao nghe đến đó nao nao.</p>
+<p>【 ân? 】</p>
+<p>【 Tần thúc thúc thế nhưng không có cấp Cố Nhu chống lưng? Hai người bọn họ không phải phu thê sao? 】</p>
+<p>Tần Diệu nhéo nhéo Diệp Nhạc Dao tay, bỗng nhiên tiến đến hắn bên tai dùng chỉ có hai người có thể nghe được thanh âm nói “Ta ba vẫn luôn tưởng cùng nàng ly hôn, nhưng là nàng vẫn luôn kéo không ly thành, hôm nay sở dĩ tổ chức cái này sinh nhật yến, cũng là vì ta ba tưởng mượn cơ hội này thanh minh một chút bọn họ thực mau ly hôn tin tức.”</p>
+<p>Nhưng Cố Nhu cùng Cố Tung hiển nhiên không biết, cho nên mới lại ở chỗ này chơi trưởng bối uy phong.</p>
+<p>Diệp Nhạc Dao trừng lớn đôi mắt, nháy mắt minh bạch.</p>
+<p>【 cho nên nói Tần thúc thúc là tới cấp chúng ta chống lưng?! 】</p>
+<p>Tần Diệu nhẹ nhàng cười một chút.</p>
+<p>Chính là có chuyện như vậy.</p>
+<p>“Ngươi nếu không nghĩ cùng Tiểu Diệu hảo hảo ở chung, chúng ta chi gian cũng liền không có gì hảo nói.” Tần Hồng Hi nói.</p>
+<p>Cố Nhu thân mình đột nhiên run lên, khó có thể tin mà đi xem Tần Hồng Hi “Ta như thế nào không có cùng hắn hảo hảo ở chung? Hắn cữu cữu muốn nhìn xem hắn, cố ý đem hắn kêu lên tới, kết quả hắn đâu, không chỉ có lại đây thời điểm dây dưa dây cà, đều đi tới cửa còn cùng người ngoài lôi lôi kéo kéo không nghĩ tiến vào, ta bất quá liền nói một câu, Tần Diệu hắn liền ——”</p>
+<p>“Hắn kêu Diệp Nhạc Dao, là Tiểu Diệu bạn trai.” Tần Hồng Hi ra tiếng đánh gãy Cố Nhu.</p>
+<p>Cố Nhu sắc mặt khẽ biến, mím môi, dời đi tầm mắt “Ta biết hắn là Tiểu Diệu bạn trai, kia ta còn là mẹ nó đâu, huống hồ ta cũng không nói gì thêm quá mức nói, ta chính là nói hắn không nghĩ tiến vào có thể đi, hắn liền……”</p>
+<p>“Ngươi nói chính là làm ta cút đi.” Diệp Nhạc Dao bỗng nhiên ra tiếng, đánh gãy Cố Nhu.</p>
+<p>Diệp Nhạc Dao nhưng không chịu này ủy khuất!</p>
+<p>Hắn có thù oán đương trường báo, có chuyện đương trường nói!</p>
+<p>Hoắc ba Hoắc mẹ sắc mặt đồng thời biến đổi.</p>
+<p>Tần Hồng Hi biểu tình càng là khó coi.</p>
+<p>Cố Nhu không nghĩ tới Diệp Nhạc Dao sẽ đột nhiên ra tiếng đánh gãy chính mình, nàng hung hăng mà xẻo liếc mắt một cái Diệp Nhạc Dao, đang muốn tiếp tục mở miệng vì chính mình biện giải.</p>
+<p>Tần Hồng Hi bỗng nhiên lạnh lùng nói “Đủ rồi! Quản gia, đưa bọn họ hai đi ra ngoài.”</p>
+<p>Giọng nói rơi xuống đất, Cố Nhu cùng Cố Tung sắc mặt đồng thời biến đổi.</p>
+<p>Diệp Nhạc Dao càng là giật mình mà nhìn Tần Hồng Hi liếc mắt một cái, lại đi xem Tần Diệu.</p>
+<p>【 từ từ, này liền đuổi đi sao? 】</p>
+<p>【 bất quá nếu là Cố Tung đi rồi, hắn còn thấy thế nào con của hắn lục chính hắn a? 】</p>
+<p>Diệp Nhạc Dao nhắc tới chuyện này tức khắc liền có chút tiếc nuối.</p>
+<p>Hoắc gia người đồng dạng tiếc nuối.</p>
+<p>Đúng vậy.</p>
+<p>Tận mắt nhìn thấy chính mình nhi tử lục chính mình, kia mới kêu kích thích a.</p>
+<p>Tốt nhất vẫn là đừng đi.</p>
+<p>“Tỷ phu……”</p>
+<p>“Tần Hồng Hi……” Cố Nhu tức giận đến không được, đứng lên sau cả người đều đang run rẩy, “Ngươi còn có nhớ hay không hôm nay là ngày mấy, ta……”</p>
+<p>“Chính là bởi vì ngươi nói hôm nay là ngươi sinh nhật, ta mới có thể mềm lòng đáp ứng ngươi trở về cho ngươi tổ chức yến hội, nhưng hiện tại xem ra, ngươi cũng không phải thành tâm tưởng cùng ta cùng Tiểu Diệu xin lỗi hòa hảo, vậy thỉnh các ngươi đều rời đi, không được?” Tần Hồng Hi thanh âm bình tĩnh.</p>
+<p>Cố Nhu rốt cuộc nhịn không được, nước mắt rào rạt mà rớt xuống dưới “Tần Hồng Hi, ngươi có phải hay không quyết tâm muốn cùng ta ly hôn?”</p>
+<p>Cố Tung nghe được những lời này mí mắt trực tiếp nhảy dựng, chạy nhanh mở miệng, đối Cố Nhu nói “Tỷ, ngươi mau đừng náo loạn, không thấy được tỷ phu sinh khí sao? Ngươi nhanh lên cùng hắn xin lỗi!”</p>
+<p>Diệp Nhạc Dao chỉ cảm thấy không thể tưởng tượng.</p>
+<p>【 không phải, Cố Tung đây là chuẩn bị phủi sạch chính mình quan hệ sao? 】</p>
+<p>【 hắn như thế nào như vậy không biết xấu hổ! 】</p>
+<p>Tần Diệu bỗng nhiên nhéo nhéo Diệp Nhạc Dao tay.</p>
+<p>Diệp Nhạc Dao đang muốn hỏi làm sao vậy, liền nghe được Cố Nhu đột nhiên mềm ngữ khí “Là ta không tốt, thực xin lỗi…… Ngươi đừng nóng giận……”</p>
+<p>Diệp Nhạc Dao đồng tử động đất.</p>
+<p>【 không phải…… Cố Nhu nàng thật đúng là xin lỗi a? 】</p>
+<p>【 nàng chính là bị Cố Tung PUA đi! 】</p>
+<p>Tần Diệu nghe không nổi nữa, nhẹ giọng đối Diệp Nhạc Dao nói “Chúng ta trước đi ra ngoài.”</p>
+<p>Diệp Nhạc Dao không hề hỏi nhiều, chỉ là đi ra ngoài phía trước liếc mắt Tần Hồng Hi sắc mặt, phát hiện lúc này hắn biểu tình càng là khó coi, có loại mưa gió sắp đến cảm giác.</p>
+<p>Tần Diệu cùng Diệp Nhạc Dao vừa ly khai, Hoắc gia người tự nhiên cũng không thật nhiều lưu, đều đi theo đi ra.</p>
+<p>Rời đi phòng tiếp khách sau, lúc này mới phát hiện tiền viện đình viện vẫn là trước sau như một náo nhiệt.</p>
+<p>Các tân khách ba lượng thành đàn, trát xếp ở bên nhau nói chuyện phiếm đàm tiếu, cũng không biết phòng tiếp khách vừa mới đã trải qua một hồi tranh chấp.</p>
+<p>Hoắc ba Hoắc mẹ ra tới sau, liền mang theo Hoắc gia tam huynh đệ đều đi rồi.</p>
+<p>Diệp Nhạc Dao đi theo Tần Diệu đi tới hoa viên, nơi này hoa hồng bò đằng khai đến chính diễm, Tần Diệu nắm Diệp Nhạc Dao tay đến ghế mây ngồi xuống.</p>
+<p>Mới vừa ngồi xuống, không đợi Diệp Nhạc Dao mở miệng, liền nghe Tần Diệu quan tâm hỏi “Không dọa đến ngươi đi?”</p>
+<p>Diệp Nhạc Dao chạy nhanh lắc đầu “Không có, ta chính là……”</p>
+<p>Có điểm kinh ngạc.</p>
+<p>Diệp Nhạc Dao lại hỏi “Ngươi đâu, Tần tổng ngươi không sao chứ?”</p>
+<p>Tần Diệu hơi hơi nghiêng đầu, tầm mắt dừng ở Diệp Nhạc Dao trên mặt, thấy rõ hắn đáy mắt quan tâm.</p>
+<p>Trong lòng không ngọn nguồn ấm áp, Tần Diệu khẽ lắc đầu, một lát sau lại bỗng nhiên gật đầu “Có điểm khó chịu.”</p>
+<p>Diệp Nhạc Dao lông mi cánh trên dưới quét quét “Thiệt hay giả?”</p>
+<p>【 ta như thế nào không thấy ra Tần tổng ngươi có điểm khó chịu, ta chỉ có thấy ngươi có điểm không cao hứng. 】</p>
+<p>Tần Diệu bỗng chốc liền muốn cười, quả nhiên không thể gạt được Diệp Nhạc Dao.</p>
+<p>Hắn đã sớm đã không khó chịu, hắn chỉ là không vui Cố Nhu đối Diệp Nhạc Dao nói quá mức nói.</p>
+<p>Tần Diệu giải thích nói “Ta đã sớm thói quen nàng đối ta thái độ, cho nên ta cũng không sẽ cảm thấy khó chịu, nhưng là ——” Tần Diệu kéo trường ngữ điệu, trong mắt xẹt qua một tia bị thương, “Nhìn đến Dao Dao ngươi hoài nghi ta, ta hiện tại là thật sự có điểm khó chịu.”</p>
+<p>Diệp Nhạc Dao buồn cười “Kia ta an ủi ngươi một chút?”</p>
+<p>Tần Diệu đang muốn hỏi Diệp Nhạc Dao muốn như thế nào an ủi chính mình, bỗng nhiên liền thấy được nam sinh phóng đại ngũ quan, ngay sau đó, Tần Diệu cảm giác chính mình cánh môi bị nhẹ nhàng mà hàm một chút.</p>
+<p>Hơi lạnh mềm mại nhuận nhuận xúc cảm, như là chuồn chuồn lướt nước, lại chọc đến người dư vị vô cùng.</p>
+<p>Một trận thanh phong phất quá, mùi thơm phác mũi.</p>
+<p>Tần Diệu nhĩ tiêm đột nhiên lấy một loại mắt thường có thể thấy được tốc độ biến đỏ.</p>
+<p>Diệp Nhạc Dao hai mắt sáng lấp lánh, không chớp mắt mà nhìn chằm chằm Tần Diệu xem, đột nhiên vươn tay, có chút ngạc nhiên mà chạm chạm Tần Diệu vành tai.</p>
+<p>Tần Diệu theo bản năng sau này trốn rồi một chút, không né tránh.</p>
+<p>Vành tai nóng bỏng thịt bị Diệp Nhạc Dao lạnh lẽo ngón tay nhẹ nhàng xoa bóp, kia một mảnh nhỏ làn da lại là càng ngày càng hồng, hồng lấy máu.</p>
+<p>Rất dài một đoạn thời gian, hai người đều không có nói một lời.</p>
+<p>Thẳng đến Tần Diệu ách thanh nói “Ngươi lại không buông ra, ta liền phải phản kích.”</p>
+<p>Diệp Nhạc Dao lúc này mới lưu luyến mà thu hồi tay, sau đó đem đầu hướng Tần Diệu trước mặt duỗi ra.</p>
+<p>Tần Diệu “Ân?”</p>
+<p>Diệp Nhạc Dao “Ngươi phản kích bái.”</p>
+<p>Tần Diệu “……”</p>
+<p>Vì cái gì ngươi còn rất chờ mong!</p>
+<p>Tần Diệu hoàn toàn bị đánh tan, duỗi tay bưng kín chính mình hơi hơi nóng lên mặt.</p>
+<p>Nhưng thật ra Diệp Nhạc Dao hơi hơi chu môi, kiên nhẫn đợi trong chốc lát, không có chờ tới Tần Diệu phản kích, hơi có chút bất mãn “Không phản kích sao?”</p>
+<p>“Dao Dao ——” Tần Diệu ngữ khí bất đắc dĩ.</p>
+<p>Diệp Nhạc Dao ngồi thẳng thân mình “Hảo đi.”</p>
+<p>【 ai, không nghĩ tới Tần tổng đều 24 còn rất ngây thơ! 】</p>
+<p>Tần Diệu “……”</p>
+<p>Nơi xa Hoắc gia người “……”</p>
+<p>Hoắc ba “Nếu không chúng ta lại đi xa một chút?”</p>
+<p>Hoắc mẹ quyết đoán “Đi thôi!”</p>
+<p>May mắn Tần gia biệt thự diện tích đại a! Nếu không bọn họ thật đúng là không biết nên hướng nơi nào chạy!</p>
+<p>Bất quá cũng không thể đi quá xa, Diệp Nhạc Dao không phải nói hôm nay còn có cái vai chính chịu bắt gian sao?</p>
+<p>Bọn họ cũng không thể bỏ lỡ cái này náo nhiệt!</p>
+<p>Diệp Nhạc Dao không có lại đi đậu Tần Diệu, Tần Diệu hơi chút bình tĩnh trong chốc lát, mới mở miệng đơn giản cùng Diệp Nhạc Dao giải thích một chút hắn cha mẹ hiện tại quan hệ.</p>
+<p>Tần Hồng Hi cùng Cố Nhu là liên hôn kết hôn, hai người kết hôn là vì từng người gia tộc.</p>
+<p>Nhưng ở kết hôn sau, Tần Hồng Hi liền đối Cố Nhu động tình, quyết định nghiêm túc đem đoạn cảm tình này kinh doanh đi xuống.</p>
+<p>Chỉ tiếc, đoạn cảm tình này ở rất dài một đoạn thời gian đều là Tần Hồng Hi một bên tình nguyện.</p>
+<p>Sớm tại gả cho Tần Hồng Hi trước, Cố Nhu liền ở trong lòng cấp mọi người bài trình tự.</p>
+<p>Cố Tung vĩnh viễn bài ở trong lòng nàng đệ nhất, tiếp theo là Cố gia, lại tiếp theo là Cố gia những người khác.</p>
+<p>Đến nỗi Tần Hồng Hi cùng Tần Diệu, vẫn luôn đều bị vô hạn mà bị Cố Nhu hướng hàng phía sau.</p>
+<p>Tần Hồng Hi rất sớm cũng phát hiện điểm này, hắn nếm thử quá cùng Cố Nhu thổ lộ, đối Cố Nhu ngoan ngoãn phục tùng, chỉ tiếc, giằng co mấy năm xuống dưới, cũng không có thay đổi Cố Nhu một chút ít ý tưởng.</p>
+<p>Nhưng Tần Hồng Hi vẫn là không bỏ xuống được, thẳng đến tám năm trước, Tần Hồng Hi trong lúc vô ý phát hiện Cố Nhu thế nhưng cõng hắn đem Tần gia tài sản trộm dời đi cấp Cố Tung, khi đó, Tần Hồng Hi mới hoàn toàn đối Cố Nhu chân chính hết hy vọng.</p>
+<p>Cũng là từ tám năm trước bắt đầu, Tần Hồng Hi liền bắt đầu xuống tay chuẩn bị cùng Cố Nhu ly hôn.</p>
+<p>Nhưng lúc này, sốt ruột người liền thành Cố Nhu.</p>
+<p>Vô luận Tần Hồng Hi đưa ra điều kiện gì, Cố Nhu chính là không chịu ly hôn, thậm chí còn uy hiếp Tần Hồng Hi……</p>
+<p>Tần Diệu nói tới đây, hơi hơi lắc lắc đầu, không có nói thêm gì nữa.</p>
+<p>Diệp Nhạc Dao lại tự động đem hắn dư lại nói bổ toàn “Thậm chí còn dùng ngươi uy hiếp Tần thúc thúc.”</p>
+<p>Diệp Nhạc Dao nói chính là câu trần thuật.</p>
+<p>Tần Diệu trong mắt hiện lên một tia kinh ngạc, thực mau liền cười nói “Quả nhiên cái gì đều không thể gạt được Dao Dao.”</p>
+<p>Tám năm trước, Tần Diệu mới 16 tuổi.</p>
+<p>Cố Nhu uy hiếp Tần Hồng Hi, nếu hắn một hai phải ly hôn, nàng liền hủy Tần Diệu tiền đồ.</p>
+<p>Tần Hồng Hi đời này duy nhất thua thiệt người chính là Tần Diệu.</p>
+<p>Là hắn lúc trước nhất ý cô hành một hai phải sinh hạ Tần Diệu, hắn cho rằng hắn cùng Cố Nhu chi gian có ràng buộc, Cố Nhu liền sẽ nhiều xem hắn cùng hài tử liếc mắt một cái.</p>
+<p>Nhưng Tần Hồng Hi như thế nào cũng chưa nghĩ đến chính là, bởi vì hắn cái này ấu trĩ ý tưởng, lúc trước thiếu chút nữa mấy năm liên tục ấu Tần Diệu cùng nhau huỷ hoại.</p>
+<p>Diệp Nhạc Dao nghe đến đó nháy mắt có chút lo lắng “Ngươi khi còn nhỏ đã xảy ra cái gì?”</p>
+<p>Tần Diệu không muốn gạt Diệp Nhạc Dao “Ta năm tuổi thời điểm, thiếu chút nữa bị đông chết.”</p>
+<p>Diệp Nhạc Dao đồng tử đột nhiên co rụt lại, âm điệu đều cất cao “Cái, cái gì?”</p>
+<p>Tần Diệu trấn an mà vỗ vỗ Diệp Nhạc Dao bối, đem hắn ôm vào trong lòng ngực, nhẹ giọng nói “Ta nói, là thiếu chút nữa. Nói lên cũng trách ta, ta khi còn nhỏ không rõ vì cái gì nàng sẽ không thích ta, cho nên từ ta có ký ức bắt đầu, ta liền vẫn luôn ở nỗ lực lấy lòng nàng.”</p>
+<p>Làm Cố Nhu thích sự tình, đối Cố Nhu ngoan ngoãn phục tùng, thậm chí bao gồm một ít thực quá mức sự tình, Tiểu Tần Diệu đều cùng nhau đáp ứng rồi.</p>
+<p>Bởi vì ngay lúc đó Tiểu Tần Diệu cho rằng, chỉ cần chính mình nghe lời, Cố Nhu liền sẽ nhiều liếc hắn một cái, sẽ thích hắn.</p>
+<p>Nhưng không phải như thế.</p>
+<p>Trên thế giới cũng không phải sở hữu mẫu thân đều ái hài tử, Cố Nhu chính là như vậy.</p>
+<p>Cho nên vô luận tuổi nhỏ Tần Diệu làm được lại hảo, lấy nhiều ít giải thưởng, Cố Nhu trong mắt đều nhìn không tới hắn.</p>
+<p>Khi đó Sở Thừa mẫu thân còn không có cùng Cố Tung ly hôn, nhưng Cố Tung còn ở bên ngoài sinh một cái tư sinh tử, chính là Cố Dữ.</p>
+<p>Cố Nhu lúc ấy thích nhất người là Sở Thừa, thứ hai chính là Cố Dữ.</p>
+<p>Cố Tung không có phương tiện đi chăm sóc Cố Dữ, Cố Nhu liền chủ động đưa ra đi xem Cố Dữ.</p>
+<p>Vì thảo Cố Dữ vui vẻ, nàng thậm chí không tiếc làm năm ấy chỉ có năm tuổi Tần Diệu cấp Cố Dữ làm trâu làm ngựa, đương tiểu bảo mẫu.</p>
+<p>Nhất quá mức một lần, là Cố Nhu làm Tần Diệu quỳ rạp trên mặt đất giả tiểu cẩu, làm Cố Dữ cưỡi ở trên người hắn đương tướng quân.</p>
+<p>Kia một năm Tần Diệu năm tuổi.</p>
+<p>Vừa mới tiếp thu quá giáo dục hài tử, đã có tôn nghiêm.</p>
+<p>Tần Diệu không đáp ứng, Cố Nhu liền bỏ đi Tần Diệu áo lông vũ, đại tuyết bay tán loạn thời tiết, đem Tần Diệu một người nhốt ở ngoài cửa tỉnh lại.</p>
+<p>Diệp Nhạc Dao tâm đột nhiên nhắc lên “Kia ——”</p>
+<p>“Ta đều nói ta không có việc gì,” Tần Diệu hô hấp đánh vào Diệp Nhạc Dao bên tai, “Ta lại không phải ngốc tử, ta đã năm tuổi, tuy rằng vẫn là không rõ vì cái gì ta mụ mụ không thích ta, nhưng ta cũng sẽ không vẫn luôn đãi ở bên ngoài a.”</p>
+<p>Cho nên ấu tiểu Tần Diệu không có do dự, ngắn ngủi mà khóc trong chốc lát, liền xoay người triều trong trí nhớ Tần gia biệt thự đi trở về đi.</p>
+<p>Suốt hai mươi km tuyết lộ, Tần Diệu cũng không nhớ rõ chính mình đi rồi rất xa, chỉ biết hắn là sáng sớm bắt đầu đi, đi đến sắc trời hoàn toàn hắc trầm, hắn cũng không có về đến nhà.</p>
+<p>Diệp Nhạc Dao sốt ruột “Vậy ngươi là như thế nào trở về?”</p>
+<p>“Có người hảo tâm đem ta bối trở về.” Tần Diệu nói tới đây cười cười.</p>
+<p>“Nhiều năm trôi qua, ta cũng không nhớ rõ hắn trông như thế nào, nhưng ít nhiều hắn, ta hiểu được một đạo lý.”</p>
+<p>Diệp Nhạc Dao hơi hơi đẩy ra Tần Diệu, ngẩng đầu xem hắn đôi mắt.</p>
+<p>Tần Diệu mi mắt cong cong, trong mắt tất cả đều là ôn nhu ý cười “Bối ta trở về nam sinh nói cho ta, cùng với xa cầu người khác ái ngươi, không bằng vẫn luôn ái chính mình. Cho nên từ khi đó bắt đầu, ta liền không hề xa cầu ta mẫu thân yêu ta, từ ngày đó bắt đầu, ta liền vẫn luôn ở học ái chính mình cùng với đi ái thích ta người.”</p>
+<p>Học được ái chính mình sau, Tần Diệu hoàn toàn thoát khỏi Cố Nhu cho hắn giam cầm, tiếp nhận rồi chính mình không hoàn mỹ, bắt đầu học được độc lập, chậm rãi lớn lên.</p>
+<p>Cũng may, Tần Diệu tuy rằng bất hạnh, nhưng cũng là may mắn.</p>
+<p>Bởi vì đã trải qua chuyện này sau, Tần Hồng Hi không bao giờ yên tâm đem Tần Diệu giao cho Cố Nhu.</p>
+<p>Vô luận chính mình công tác nhiều vội, hắn đều sẽ tận lực tự tay làm lấy mang theo Tần Diệu. Tần Diệu thiếu hụt tình thương của mẹ, Tần Hồng Hi vẫn luôn ở nỗ lực dùng tình thương của cha đền bù.</p>
+<p>Ở Tần Hồng Hi che chở hạ, Tần Diệu dần dần lớn lên, cũng cùng Cố Nhu càng lúc càng xa.</p>
+<p>Cho nên đương Cố Nhu đưa ra muốn huỷ hoại Tần Diệu khi, Tần Hồng Hi sợ hãi, thỏa hiệp.</p>
+<p>Mười mấy năm qua đi, Tiểu Tần Diệu đã sớm bị người cõng đi ra kia buổi tối đại tuyết đêm, nhưng Tần Hồng Hi nhưng vẫn không có từ cái kia tuyết đêm đi ra.</p>
+<p>Bất quá cũng là từ tám năm trước bắt đầu, Tần Hồng Hi liền vẫn luôn cùng Cố Nhu ở riêng, mấy năm nay gian, cũng dần dần đem Cố Nhu dời ra ngoài tài sản chậm rãi dời đi trở về.</p>
+<p>“Kia hôm nay trận này sinh nhật yến lại là chuyện như thế nào?” Diệp Nhạc Dao hỏi.</p>
+<p>Tần Diệu cười “Bởi vì Cố thị tập đoàn mau căng không nổi nữa, bọn họ sốt ruột, cho nên Cố Tung khuyến khích Cố Nhu, chủ động tới cùng ta cùng ta ba kỳ hảo.”</p>
+<p>Cố Nhu cùng Cố Tung cảm thấy, chỉ cần bọn họ chủ động cùng Tần Hồng Hi kỳ hảo, Tần thị tập đoàn là có thể trợ giúp bọn họ vượt qua cửa ải khó khăn, thậm chí Cố Tung còn chuẩn bị làm Cố Dữ cũng tiến Tần thị tập đoàn.</p>
+<p>Vì điểm này, Cố Tung thậm chí rất sớm liền bắt đầu đối Tần Diệu các đại hạng mục động thủ.</p>
+<p>Cố Tung cảm thấy, chỉ cần Tần Diệu ra sai, bọn họ liền có cơ hội.</p>
+<p>Cứ việc Tần Diệu đã rất cẩn thận, còn là mắc mưu.</p>
+<p>Nói lên, còn phải cảm tạ Diệp Nhạc Dao.</p>
+<p>“Cảm ơn ngươi, Dao Dao.” Tần Diệu đem đầu nhẹ nhàng đặt ở Diệp Nhạc Dao trên vai.</p>
+<p>Diệp Nhạc Dao có chút buồn bực “Ân?”</p>
+<p>【 cảm tạ ta làm cái gì? 】</p>
+<p>Diệp Nhạc Dao không cần minh bạch, Tần Diệu càng không có giải thích, chỉ là đem Diệp Nhạc Dao ôm chặt hơn nữa.</p>
+<p>Hai người ngồi ở bên này lại trò chuyện trong chốc lát thiên, Diệp Nhạc Dao bỗng nhiên nghĩ đến cái gì</p>
+<p>【 ai, hiện tại cái gì thời gian? 】</p>
+<p>Diệp Nhạc Dao lấy ra di động vừa thấy, đằng đến một chút đứng lên.</p>
+<p>【 mau đến bắt gian! 】</p>
+<p>Tần Diệu thân hình hơi hơi một đốn.</p>
+<p>Liền ở hắn tự hỏi lấy cớ khi, liền nghe Diệp Nhạc Dao tùy tiện biên một cái cớ “Tần tổng, ta có điểm đói bụng……”</p>
+<p>【 này đoạn cốt truyện ta nhớ rõ đặc biệt rõ ràng, Hàn Duy là cái nhát gan, nhưng là Cố Dữ lại là cái hỗn không tiếc, cho nên bọn họ trực tiếp liền ở lầu một bảo mẫu gian……】</p>
+<p>Diệp Nhạc Dao lại tính toán</p>
+<p>【 không được, ta không thể chỉ mang theo Tần tổng qua đi, cũng không biết Cố Tung này lão già thúi tử bị đuổi đi không? 】</p>
+<p>【 nga, còn có không thích Tần tổng Cố Nhu, liền nên làm cho bọn họ hai chính mắt xem bọn hắn phóng ở trên đầu quả tim người đến tột cùng là cái cái gì hỗn cầu! 】</p>
+<p>Tần Diệu nghe buồn cười, cúi đầu nhìn mắt di động, mặt trên là Tần Hồng Hi mới vừa phát tới tin tức “Tạm thời không có làm cho bọn họ rời đi, ngươi tận lực đừng làm cho Tiểu Dao đụng tới bọn họ đi.”</p>
+<p>Tần Diệu lắc lắc đầu, kia phỏng chừng không được, Diệp Nhạc Dao còn muốn nhìn náo nhiệt đâu.</p>
+<p>Tần Diệu tiến lên dắt lấy Diệp Nhạc Dao tay “Đi thôi, ta mang ngươi đi ăn cái gì.”</p>
+<p>Diệp Nhạc Dao chạy nhanh gật đầu “Hảo.”</p>
+<p>Hoa viên ly biệt thự cũng không tính xa, hai người nắm tay đi đến đại sảnh khi, vừa lúc đụng tới Hoắc gia đoàn người.</p>
+<p>Hoắc Yến dẫn đầu hỏi “Diệp Nhạc Dao, chuẩn bị đi chỗ nào?”</p>
+<p>Diệp Nhạc Dao chạy nhanh triều bọn họ phất tay “Nhị ca, tam ca, còn có đại ca, ba mẹ, các ngươi có đói bụng không? Chúng ta đi ăn một chút gì!”</p>
+<p>【 thuận tiện cùng đi xem tràng trò hay a! 】</p>
+<p>Hoắc gia người người một nhà khóe miệng đều thiếu chút nữa không ngăn chặn.</p>
+<p>Bọn họ đương nhiên đói bụng!</p>
+<p>Đói bụng, chính là muốn ha ha dưa, cho nên cái này dưa bọn họ cần thiết muốn đi ăn một chút!</p>
+<p>“Đi!” Hoắc Yến cái thứ nhất tiến lên.</p>
+<p>Mặt khác Hoắc gia người chạy nhanh theo lại đây.</p>
+<p>Tần gia yến hội ở phía trước đình kỳ thật chuẩn bị không ít nước chảy mỹ thực, nhưng Tần Diệu lúc này lại không có đem đoàn người đi phía trước đình mang, mà là mang theo đoàn người triều hậu đình viện đi đến, vừa đi còn không quên một bên giải thích “Tiền đình đồ ăn hẳn là có điểm lạnh, đình viện còn có đầu bếp chuẩn bị mặt khác đồ ăn, ta mang đại gia qua đi nếm thử đi.”</p>
+<p>Diệp Nhạc Dao sợ Hoắc gia người hoài nghi, còn suy nghĩ cái lấy cớ “Ta tưởng uống yến mạch sữa bò, Tần tổng nói qua đi cho ta làm.”</p>
+<p>Nói Diệp Nhạc Dao nhéo nhéo Tần Diệu ngón tay, triều Tần Diệu chớp chớp mắt.</p>
+<p>Tần Diệu ngầm hiểu cười “Ân.”</p>
+<p>Đi hậu đình viện ngắn nhất khoảng cách chính là xuyên qua biệt thự, cho nên đoàn người đi vào biệt thự.</p>
+<p>Vừa đến phòng khách, liền nghênh diện đụng phải Cố Tung cùng Cố Nhu.</p>
+<p>Diệp Nhạc Dao nhìn mắt đi theo bọn họ bên cạnh nam sinh, đôi mắt bỗng chốc sáng ngời</p>
+<p>【 vai chính chịu Ngụy Thanh! 】</p>
+<p>【 xảo không phải, tất cả mọi người đến đông đủ! 】</p>
+<p>【 trò hay lập tức bắt đầu ——】</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong85.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong87.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "nguoi-qua-duong-giap-tieng-long-tiet-lo-sau-bi-vai-ac-ca-nha-doan-sung";
+const NOVEL_TITLE = "Người qua đường Giáp tiếng lòng tiết lộ sau bị vai ác cả nhà đoàn sủng";
+const CHAPTER_TITLE = "Chương 86. Trò hay bắt đầu";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

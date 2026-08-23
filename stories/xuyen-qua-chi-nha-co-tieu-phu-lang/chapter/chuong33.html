@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 33</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Xuyên qua chi nhà có tiểu phu lang
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 33</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong32.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong34.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Thời gian quá đến bay nhanh, đảo mắt liền đã cuối mùa thu.</p>
+<p>Gió lạnh thổi tới trên người lạnh buốt, trong viện hoa cỏ cây cối cũng dần dần điêu tàn, nơi chốn đều lộ ra nhất phái tiêu điều cảnh tượng.</p>
+<p>Mắt thấy mấy ngày nữa liền muốn lập đông, vì sợ Lâm Dĩ Hiên đông lạnh, Lê Diệu Nam vắt hết óc, ở chính viện trải lên một tầng mà ấm, tính toán cho hắn một kinh hỉ.</p>
+<p>Trải qua mấy ngày nay ma hợp, hắn cùng Lâm Dĩ Hiên sinh hoạt đã thượng quỹ đạo, tuy không thể cùng chân chính phu thê giống nhau cầm sắt hòa minh, nhưng cũng coi như tôn trọng nhau như khách, càng cùng Lâm Dĩ Hiên ở chung, hắn liền càng phát hiện, chính mình thật là nhặt được bảo, Lâm Dĩ Hiên tài hoa hơn người, mỗi khi cho hắn chỉ điểm học vấn, tổng có thể làm hắn bế tắc giải khai, nếu không phải bởi vì Lâm Dĩ Hiên là một cái song nhi, Lê Diệu Nam cảm thấy làm hắn khảo cái Trạng Nguyên trở về, nói không chừng cũng không có vấn đề gì.</p>
+<p>Kỳ thật Lâm Dĩ Hiên bắt đầu là có một ít lo lắng, cấp Lê Diệu Nam chỉ điểm học vấn, cũng là hắn châm chước thật lâu mới hạ quyết định, nam nhân tổng không thích tức phụ so với chính mình lợi hại, hắn sợ Lê Diệu Nam sẽ bởi vậy tâm mà sinh khúc mắc, bất quá may mắn, Lê Diệu Nam không chỉ có không có bất mãn, ngược lại lúc nào cũng cầm sách vở cùng hắn nói chuyện, làm hắn có loại bị tôn trọng cảm giác.</p>
+<p>Lâm Dĩ Hiên cảm thấy như vậy ở chung phương thức thực hảo, hắn biết Lê Diệu Nam không yêu chính mình, nhưng hắn chưa bao giờ hối hận quá cấp Lê Diệu Nam hạ dược, bí mật này hắn cũng chỉ sẽ mang tới trong quan tài.</p>
+<p>Không quá mấy ngày, quê quán đưa hạ lễ tới rồi, khoảng cách bọn họ cấp trong tộc phát đi báo tin vui tin, hiện giờ vừa lúc 10 ngày, nhìn trước mắt một đống lớn hạ lễ, tuy không phải cái gì đáng giá đồ vật, phần lớn là ở nông thôn thổ đặc sản, Lê Diệu Nam tâm tình lại đặc biệt sung sướng, đột nhiên tâm sinh ra một loại cảm khái, hiện giờ hắn xem như chân chính ở cổ đại an cư lạc nghiệp bãi.</p>
+<p>Liếc bên cạnh đang ở kiểm kê hạ lễ Lâm Dĩ Hiên liếc mắt một cái, Lê Diệu Nam đột nhiên nhớ tới “Đúng rồi, ngươi cấp trong kinh đưa tin không?”</p>
+<p>Lâm Dĩ Hiên thân mình cứng đờ, trầm mặc một lát, tiện đà tiếp tục trong tay sự tình, nhàn nhạt trả lời “Ta cấp ca ca truyền tin.”</p>
+<p>Lê Diệu Nam đột nhiên có chút ảo não, hắn thật là cái hay không nói, nói cái dở, nhớ rõ đêm đó Lâm Dĩ Hiên nói với hắn không ít Cảnh Dương hầu phủ sự tình, hắn như thế nào liền đã quên, cấp ca ca truyền tin, mà không phải cho mẫu thân truyền tin, nơi này khác biệt, hắn lại như thế nào phát hiện không ra.</p>
+<p>“Đừng lo lắng, đãi ta thi đậu cử nhân, chúng ta liền cử gia đi kinh, đến lúc đó ta này xấu ca tế, cũng vừa lúc muốn bái kiến mẹ vợ.”</p>
+<p>Lâm Dĩ Hiên nghe xong trong lòng ấm áp, thanh lệ trên mặt nở rộ ra một mạt cười nhạt “Cảm ơn ngươi.”</p>
+<p>“Cùng ta còn khách khí cái gì?” Lê Diệu Nam hơi ngượng ngùng, Lâm Dĩ Hiên ngày thường miệng lưỡi sắc bén quán, thình lình xảy ra cảm tạ, làm hắn thiệt tình có chút không thói quen, bất quá thấy Lâm Dĩ Hiên gương mặt tươi cười, hắn trong lòng vẫn là thật cao hứng.</p>
+<p>Lê Diệu Nam há miệng thở dốc muốn nói lại thôi, có nghĩ thầm hỏi Lâm Dĩ Hiên, vì sao sẽ cùng trong nhà nháo đến như vậy cương, nhưng là lời nói đến bên miệng lại phát hiện không mở miệng được, hắn rất sợ nhắc tới chuyện thương tâm, lại làm Lâm Dĩ Hiên khổ sở trong lòng.</p>
+<p>Không biết vì sao, thấy Lê Diệu Nam rối rắm bộ dáng, Lâm Dĩ Hiên mạc danh chính là biết, Lê Diệu Nam muốn nói gì, cẩn thận suy tư một lát, chậm rãi nói “Đại bá muốn đem ta đưa đi Thái tử phủ.”</p>
+<p>Lê Diệu Nam nao nao, đại não cấp tốc vận chuyển, thực mau liền bắt lấy trọng điểm “Vậy ngươi......”</p>
+<p>Lâm Dĩ Hiên cong cong khóe môi, đen bóng trong mắt hiện lên một đạo tàn nhẫn “Ta lại như thế nào làm cho bọn họ thực hiện được.”</p>
+<p>Lê Diệu Nam nhẹ nhàng nở nụ cười, hắn cảm thấy so sánh với Lâm Dĩ Hiên thuận theo, hắn càng thích xem nhà mình phu lang, sinh khí, hoặc là ngoan tuyệt bộ dáng, thật sự rất hợp hắn ăn uống, nếu không phải giới tính không đúng, hắn rất tưởng đem người trực tiếp cầm đi trên giường làm.</p>
+<p>“Những cái đó đồn đãi......” Lê Diệu Nam che giấu không được trong lòng mừng thầm, chẳng sợ sớm đã có phán đoán, nhưng hắn vẫn là muốn nghe Lâm Dĩ Hiên chính miệng nói ra.</p>
+<p>Lâm Dĩ Hiên nguyên liền có quyết định này, hiện giờ hài tử cũng có, hắn cũng không cần lại cố kỵ, chẳng sợ Lê Diệu Nam cũng không yêu hắn, nhưng làm vì một người nam nhân tới giảng, nếu không giải thích rõ ràng, Lê Diệu Nam trong lòng tất nhiên sẽ dựng một cây thứ, hắn cũng không muốn cho Lê Diệu Nam hiểu lầm, khóe môi phác họa ra một mạt trào phúng độ cung, cười lạnh nói “Là ta chính mình làm cho, nếu không tự bát nước bẩn, đám kia người lại như thế nào dễ dàng buông tha, không có Thái tử cũng sẽ có khác gia, ta lại có thể thoát được quá vài lần, ta sinh ra chú định là cái quân cờ.”</p>
+<p>Lê Diệu Nam hối hận, trong lòng bỗng nhiên sinh ra một cổ thương tiếc chi tình, duỗi tay đụng chạm một chút hắn gương mặt, chạm đến trong tay mềm mại, bàn tay tựa như bị cái gì năng tới rồi giống nhau nhẹ nhàng run lên, chạy nhanh súc lại trở về, cười nói “Vậy ngươi cần phải cảm tạ bọn họ, nếu không lại như thế nào được đến ta như vậy một cái hảo phu quân.”</p>
+<p>Lâm Dĩ Hiên cong môi cười, liếc mắt nhìn hắn, gật gật đầu nói thẳng không cố kỵ “Xác thật muốn cảm tạ bọn họ.”</p>
+<p>Lê Diệu Nam ngượng ngùng, loại này ngượng ngùng cảm giác làm xao đây, vì sao hắn sẽ có loại mối tình đầu cảm giác, giống như là về tới sơ trung thời điểm, sống hai đời, đều một phen tuổi người, thẹn thùng, thẹn thùng gì đó, thực mất mặt nha có hay không.</p>
+<p>Lê Diệu Nam ho khan hai tiếng, sửa sang lại mặt bộ biểu tình, cho Lâm Dĩ Hiên một cái ngươi biết liền tốt ánh mắt, chính thức xoay người rời đi.</p>
+<p>Đợi cho Lê Diệu Nam đi rồi, Lâm Dĩ Hiên ôm bụng cười cười to, đã lâu không như vậy vui sướng cười qua, hắn trong lòng thật sự cao hứng, phát hiện Lê Diệu Nam một cái tiểu bí mật.</p>
+<p>Sớm tại trước đó vài ngày, Lâm Dĩ Hiên liền phát hiện, Lê Diệu Nam đối mặt người khác khen, hoặc là theo cột hướng lên trên bò, cả người đều khoe khoang lên, hoặc là liền sẽ thẹn thùng, nói gần nói xa, mệt hắn như vậy da mặt dày người, còn có ngượng ngùng thời điểm, Lâm Dĩ Hiên cảm thấy, chiêu này có lẽ có thể thường dùng dùng xem.</p>
+<p>Lập đông năm ngày qua đi, chính viện mà ấm rốt cuộc phô hảo, Lê Diệu Nam cùng ngày khiến cho người thiêu tới thử xem, hiệu quả cũng không tệ lắm, ấm áp trong phòng, một chút liền xua tan bên ngoài hàn khí.</p>
+<p>Buổi tối thời điểm, Lê Diệu Nam liền mang Lâm Dĩ Hiên dọn lại đây.</p>
+<p>Cởi giày, đạp lên mộc chất trên sàn nhà, Lâm Dĩ Hiên trong lòng rất tò mò, không biết Lê Diệu Nam là như thế nào làm cho, trong nhà mà ấm tựa hồ so trong hoàng cung noãn các còn hảo chút.</p>
+<p>Lê Diệu Nam rất đắc ý, thấy Lâm Dĩ Hiên kinh ngạc cảm thán ánh mắt, chỉ kém điểm không đem cái đuôi nhếch lên tới.</p>
+<p>Lâm Dĩ Hiên trong lòng buồn cười đồng thời lại nổi lên một trận cảm động, vô luận Lê Diệu Nam đối hắn hảo, có phải hay không bởi vì hài tử duyên cớ, nhưng này vừa phân tâm ý xác thật đáng quý, trừ bỏ mẫu thân cùng ca ca, chưa bao giờ có người đối hắn như vậy hảo quá, có Lê Diệu Nam làm đối lập, hồi tưởng đời trước sự tình, Lâm Dĩ Hiên đột nhiên cảm thấy chính mình thực ngốc. Thiệt tình cùng giả ý nào dùng tương đối, nếu không phải bị cảm tình mông tâm, chỉ cần dụng tâm đi xem, hắn lại như thế nào phát hiện không được một ít đã sớm xuất hiện manh mối.</p>
+<p>“Thợ thủ công ở đâu?” Lâm Dĩ Hiên chớp chớp mắt, vẻ mặt khát cầu nhìn Lê Diệu Nam.</p>
+<p>Lê Diệu Nam trong lòng rất đắc ý, loại này tự mình cảm giác không cần quá tốt đẹp, nhướng mày nhìn hắn, trong mắt hàm nghĩa đại khái là, ngươi tới cầu ta a, cầu ta ta liền nói cho ngươi.</p>
+<p>Lâm Dĩ Hiên vô ngữ, hung hăng kháp hắn một phen.</p>
+<p>Lê Diệu Nam hít hà một hơi, phu lang quá hung hãn cũng không tốt, vội vàng xin khoan dung nói “Đau, đau, đừng, ta nói, ta nói còn không được sao?”</p>
+<p>Lâm Dĩ Hiên cao quý lãnh diễm nâng cằm lên, chờ đợi hắn kế tiếp.</p>
+<p>Lê Diệu Nam toét miệng, thấy Lâm Dĩ Hiên như thế sinh động, hắn cảm thấy chịu một chút đau cũng đáng đến, lấy lòng nói “Thợ thủ công tống cổ đi trở về, ngươi nếu phải dùng người, ta cho ngươi gọi tới.”</p>
+<p>Lâm Dĩ Hiên trầm tư một lát, tiếp theo lại trầm mặc xuống dưới, vừa rồi trả hết lượng hai tròng mắt trở nên ảm đạm, lược hiện mất mát thở dài “Tính, muốn thợ thủ công cũng vô dụng.”</p>
+<p>“Vì sao?” Lê Diệu Nam nhíu mày, nhất không thể gặp hắn dáng vẻ này.</p>
+<p>Lâm Dĩ Hiên nhàn nhạt nói, nghe không ra lời nói cảm xúc “Nguyên muốn cho bọn họ đi kinh thành, phương bắc thời tiết lãnh, ta muốn vì mẫu thân tẫn điểm hiếu tâm, chỉ là......” Cảnh Dương hầu phủ nếu biết là hắn đưa đi người, chỉ sợ liền đại môn đều sẽ không làm tiến.</p>
+<p>“Này còn không đơn giản.” Lê Diệu Nam trong lòng hơi một đoán, cười nói “Mà ấm không phải rất khó, ta nơi này có bản vẽ, ngươi đưa qua đi là được, thợ thủ công nào đều có thể tìm được, nào đáng giá vì điểm này tử sự tình thương cảm.”</p>
+<p>Lâm Dĩ Hiên ngẫm lại cũng là, trục vui vẻ ra mặt ép hỏi Lê Diệu Nam bản vẽ.</p>
+<p>Lê Diệu Nam vỗ trán, cảm thấy dựng phu tính tình biến hóa thật đại, Lâm Dĩ Hiên quả thực là trong chốc lát một cái sắc mặt, hiện giờ mới vừa mang thai cứ như vậy, còn có mấy tháng nhật tử như thế nào quá, Lê Diệu Nam càng nghĩ càng phát sầu, sầu đến cam tâm tình nguyện, vui vẻ chịu đựng.</p>
+<p>Có một số việc tưởng không được, không quá hai ngày, Lâm Dĩ Hiên liền bắt đầu nôn nghén, ăn cái gì phun cái gì, sắc mặt tái nhợt, cả người đều gầy một vòng.</p>
+<p>Lê Diệu Nam một cái đầu hai cái đại, biến đổi phương cho hắn tìm thức ăn, lần đầu cảm nhận được dựng phu vất vả, kỳ thật chính hắn cũng vất vả, bất quá hắn vui.</p>
+<p>Tính toán một chút trong tay dư lại tiền tài, Lê Diệu Nam hạ quyết tâm, ở ngoài thành mua một cái suối nước nóng thôn trang.</p>
+<p>Hiện giờ có gian trà lâu khách khứa mãn đường, mỗi tháng ước có 600 lượng bạc thu vào, hắn tin tưởng dùng không được bao lâu, tiền vốn là có thể trở về, tiêu tiền cái gì cũng không cần thật chặt thấu. Mệt cái gì, cũng không thể bạc đãi dựng phu, cổ đại mùa đông rau dưa thiếu, gia đình giàu có cũng phần lớn là ăn thịt, ngay cả hắn dùng cơm thời điểm cũng chưa cái gì ăn uống, huống chi Lâm Dĩ Hiên.</p>
+<p>Lê Diệu Nam làm người ở suối nước nóng thôn trang loại thượng rau dưa, tuy rằng cũng không biết hiện đại người lều lớn rau dưa như thế nào làm cho, nhưng không ăn qua thịt heo còn không có gặp qua heo chạy sao, đại khái nguyên lý cũng liền như vậy, chúng ta không có vải nhựa, nhưng có thể dùng vải dầu thay thế, nếu là thành công nói, năm trước phỏng chừng là có thể ăn thượng.</p>
+<p>Lâm Dĩ Hiên phun đến lợi hại, người lại rất ngoan, cũng không tức giận lung tung, Lê Diệu Nam nhìn đau lòng, kỳ thật hắn tình nguyện Lâm Dĩ Hiên không có việc gì đối hắn thứ hai câu, như vậy hắn trong lòng dễ chịu.</p>
+<p>Lê Diệu Nam vội xong sự tình, liền thấy Lâm Dĩ Hiên héo bẹp ghé vào trên bàn, ngay cả hắn trước đó vài ngày thích nhất nghe thượng cổ diễn nghĩa, đều hấp dẫn không được hắn hứng thú.</p>
+<p>“Hôm nay còn khó chịu?” Lê Diệu Nam quan tâm nhìn hắn, trong ánh mắt lộ ra một chút lo lắng.</p>
+<p>Lâm Dĩ Hiên lắc lắc đầu, miễn cưỡng nhắc tới tinh thần, hướng về phía hắn chậm rãi cười “Ta không có việc gì, nghe nói mang thai đều như vậy, ngươi đừng lo lắng.”</p>
+<p>“Ta mua một cái suối nước nóng thôn trang, ngày khác chúng ta qua đi giải sầu, ngươi cũng đừng lão ở nhà buồn.”</p>
+<p>Lâm Dĩ Hiên ngoan ngoãn gật gật đầu, tuy rằng có chút không tình nguyện, bên ngoài thời tiết thật sự quá lãnh, nhưng hắn biết Lê Diệu Nam là vì hắn hảo, mấy ngày nay thấy Lê Diệu Nam vội tới vội đi, hắn không phải không biết tốt xấu người, hắn giúp không được gì, duy nhất có thể làm chính là nghe lời một ít.</p>
+<p>Tác giả có lời muốn nói Ngao ngao! Hảo vui vẻ, ngày hôm qua thu được thật nhiều bá vương, cảm ơn lạp, sẽ tiếp tục nỗ lực.. o(∩_∩)o</p>
+<p>Song lớn hơn nữa gia đừng chờ, trong chốc lát ta muốn đi ra ngoài nằm, phỏng chừng đệ nhị càng sẽ đã khuya, ngày mai buổi sáng lên liền thấy lạp..</p>
+<p>papa ném một cái địa lôi ném mạnh thời gian 2014-07-</p>
+<p>Uyển, ái ném một cái địa lôi ném mạnh thời gian 2014-07-</p>
+<p>renshuiru ném một cái địa lôi ném mạnh thời gian 2014-07-</p>
+<p>Đừng cũng khó ném một cái địa lôi ném mạnh thời gian 2014-07-</p>
+<p>Bé công chúa ném một cái địa lôi ném mạnh thời gian 2014-07-</p>
+<p>Từ từ ném một cái địa lôi ném mạnh thời gian 2014-07-</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong32.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong34.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "xuyen-qua-chi-nha-co-tieu-phu-lang";
+const NOVEL_TITLE = "Xuyên qua chi nhà có tiểu phu lang";
+const CHAPTER_TITLE = "Chương 33";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

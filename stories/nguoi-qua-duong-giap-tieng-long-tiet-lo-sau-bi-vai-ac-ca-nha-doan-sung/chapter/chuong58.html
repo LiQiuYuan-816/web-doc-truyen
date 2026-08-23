@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 58. Liên hệ phương thức</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Người qua đường Giáp tiếng lòng tiết lộ sau bị vai ác cả nhà đoàn sủng
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 58. Liên hệ phương thức</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong57.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong59.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Hoắc Trạch này đạo tiếng cười đột ngột, rộng thoáng, cơ hồ là nháy mắt, tầm mắt mọi người đều hội tụ ở trên người hắn.</p>
+<p>Diệp Nhạc Dao nguyên bản còn ở nghẹn cười, nghe được Hoắc Trạch tiếng cười cũng hơi mang hoảng sợ mà quay đầu.</p>
+<p>【 tam ca ngươi đang cười cái gì a? 】</p>
+<p>【 hiện tại cái này không khí, cái này trường hợp, là có thể tùy tiện cười ra tới sao?! 】</p>
+<p>Không chỉ có Diệp Nhạc Dao, Hoắc gia cả nhà cũng đem ánh mắt đầu hướng về phía Hoắc Trạch.</p>
+<p>Bị nhiều người như vậy đồng thời nhìn chằm chằm, Hoắc Trạch chỉ cảm thấy da đầu tê dại.</p>
+<p>Đặc biệt là hắn còn dùng dư quang thoáng nhìn Sở Thừa cũng triều bên này nhìn lại đây.</p>
+<p>Hoắc Trạch trong lòng kia kêu một cái hoảng.</p>
+<p>Trong chớp nhoáng, hắn đột nhiên phản ứng lại đây, cầm lấy di động liền đưa cho bên cạnh Hoắc Yến “Nhị ca, ngươi xem ha ha ha ha ha ha ha, bọn họ khai khánh công yến liền khánh công yến sao, thế nhưng còn dùng bánh kem đồ mặt! Cười chết ta ha ha ha ha ha ha ——”</p>
+<p>Hoắc Yến “……”</p>
+<p>Như vậy một cái bình thường thả tầm thường sự tình liền đáng giá ngươi cười đến lớn tiếng như vậy?</p>
+<p>Hoắc Yến mày gân xanh kinh hoàng, nhưng lúc này cũng không phải hủy đi Hoắc Trạch đài thời điểm, chỉ có thể phát huy ra bản thân lô hỏa thuần thanh kỹ thuật diễn “Ha ha ha, xác thật khá buồn cười.”</p>
+<p>Hoắc mẹ cũng kịp thời mở miệng cứu tràng “Làm ta nhìn xem.”</p>
+<p>Hoắc Trạch chạy nhanh đem đen nhánh một mảnh di động đưa qua.</p>
+<p>Hoắc mẹ tiếp nhận di động, nhẹ nhàng cười nói “Xem ra đại gia trong khoảng thời gian này đều quá mệt mỏi, thừa dịp hôm nay cơ hội này xác thật có thể hảo hảo chơi một chút, thả lỏng thả lỏng.”</p>
+<p>Hoắc Trạch cười gượng “Cũng không phải là sao, bọn họ đã sớm chờ mong hôm nay buổi tối đâu……”</p>
+<p>Sau đó liền nghe được Hoắc mẹ dùng chỉ có bọn họ này một bàn thanh âm nghiến răng nghiến lợi nói “Ngươi nếu là sẽ không nghẹn cười, lần sau cũng không cần lại đi theo chúng ta tới.”</p>
+<p>Ăn dưa quan trọng nhất tu dưỡng, chính là nghẹn cười!</p>
+<p>Hoắc Trạch thế nhưng còn không có có thể thuần thục nắm giữ?</p>
+<p>Hoắc Yến buồn bã nói “Ngươi liền nên đi tham gia các ngươi đội ngũ khánh công yến.”</p>
+<p>Thiếu chút nữa liền lòi!</p>
+<p>Hoắc ba cũng dùng khiển trách ánh mắt xem hắn “Còn hảo ngươi lần này phản ứng mau!”</p>
+<p>Nếu không ——</p>
+<p>Thật đúng là liền không hảo giải thích!</p>
+<p>Tuyệt đối không thể lại có tiếp theo.</p>
+<p>Hoắc Trạch “……”</p>
+<p>Hoắc Trạch trong lòng khổ, này không phải hắn lần đầu tiên tới hiện trường ăn dưa không có gì kinh nghiệm sao?</p>
+<p>Chờ hắn có kinh nghiệm, hắn khẳng định có thể nghẹn lại.</p>
+<p>Hoắc mẹ đem điện thoại còn cấp Hoắc Trạch, trên mặt chỉ viết hai cái chữ to Không tin.</p>
+<p>Những người khác cũng không tin, nhưng hiện tại cũng không phải truy cứu thời điểm.</p>
+<p>Có thể đem chuyện này phiên thiên là được!</p>
+<p>Diệp Nhạc Dao nhìn đến nơi này mới thở dài nhẹ nhõm một hơi.</p>
+<p>【 nguyên lai là khánh công yến a, làm ta sợ nhảy dựng, ta còn tưởng rằng tam ca cũng biết bọn họ ba người chi gian gút mắt đâu. 】</p>
+<p>Diệp Nhạc Dao không quá để ý, thu hồi tầm mắt liền đi xem trước mặt ba người.</p>
+<p>Mạnh Việt lực chú ý vẫn luôn đều ở Sở Thừa trên người, lúc này liền tính bên cạnh có người ồn ào đánh nhau hắn đều sẽ không quay đầu. Huống chi, liền ở một giây trước, Sở Thừa mới vừa dùng nghi hoặc mà dò hỏi hắn là ai.</p>
+<p>Đừng nhìn chỉ có ngắn ngủn bốn chữ, nhưng đối Mạnh Việt lực sát thương lại cao tới trăm phần trăm.</p>
+<p>Lúc này Mạnh Việt ngơ ngẩn mà đứng ở tại chỗ, trên mặt tràn ngập thất vọng, bị thương, hốc mắt thậm chí đều hơi hơi nổi lên hồng.</p>
+<p>Nhiễm Cảnh cùng Mạnh Việt giống nhau, hắn lực chú ý cũng ở Sở Thừa trên người.</p>
+<p>Đặc biệt là ở nghe được Sở Thừa câu kia “Xin hỏi ngươi là” sau, hắn liền hô hấp đều phóng nhẹ, sát vết rượu tay một đốn, khăn giấy ném cũng không phải thả cũng không xong, thậm chí căn bản không dám nghiêng đầu đi xem Mạnh Việt biểu tình.</p>
+<p>Mạnh Việt đối Sở Thừa cảm tình có bao nhiêu sâu, Nhiễm Cảnh đi theo Mạnh Việt bên người nửa năm là nhất hiểu biết.</p>
+<p>Phía trước Nhiễm Cảnh còn tưởng rằng Mạnh Việt cùng Sở Thừa hai người chia tay bất đắc dĩ, cho nên Mạnh Việt mới có thể đối Sở Thừa nhớ mãi không quên.</p>
+<p>Nhưng hiện tại cái này tình huống xem ra rõ ràng không phải như vậy a!</p>
+<p>Tình lữ chia tay liền tính là hoà bình chia tay, chia tay lúc sau cũng không có khả năng nhận không ra đối phương đi?</p>
+<p>Trừ phi Sở Thừa là cái tuyệt thế đại tra nam.</p>
+<p>Nhưng phía trước vì có thể càng tốt mà bắt chước học tập Sở Thừa nhân thiết, Nhiễm Cảnh còn cố ý đi chú ý Sở Thừa ở nước ngoài xã giao tài khoản……</p>
+<p>Sở Thừa thoạt nhìn cũng không giống như là tra nam a.</p>
+<p>Chẳng lẽ ——</p>
+<p>Một cái gan lớn suy đoán ở Nhiễm Cảnh trong lòng dâng lên, hắn khiếp sợ đến đồng tử đều mở to.</p>
+<p>Nếu là Diệp Nhạc Dao biết Nhiễm Cảnh lúc này suy nghĩ cái gì, tuyệt đối sẽ lập tức khẳng định Nhiễm Cảnh suy đoán.</p>
+<p>Đúng vậy, không sai.</p>
+<p>Liền cùng Nhiễm Cảnh phỏng đoán giống nhau như đúc, Sở Thừa nhân gia căn bản là không có cùng Mạnh Việt ở bên nhau quá!</p>
+<p>Cũng không biết vì cái gì Mạnh Việt đối Sở Thừa rễ tình đâm sâu.</p>
+<p>Diệp Nhạc Dao lúc này cũng rất tò mò, không nhịn xuống cúi đầu lấy ra di động nhanh chóng xem một chút bản ghi nhớ.</p>
+<p>Sau đó Diệp Nhạc Dao lại thiếu chút nữa cười ra tiếng ——</p>
+<p>【 yêu thầm?! 】</p>
+<p>【 không phải, Mạnh Việt, ngươi thế thân đều dưỡng, hiện tại ngươi nói cho ta tiểu tử ngươi là thuần ái? 】</p>
+<p>Diệp Nhạc Dao cảm thấy không thể tưởng tượng.</p>
+<p>Tần Diệu đồng dạng cảm thấy không thể tưởng tượng.</p>
+<p>Hẳn là không chỉ có chỉ có yêu thầm đơn giản như vậy đi, khẳng định còn có mặt khác nguyên nhân.</p>
+<p>Diệp Nhạc Dao cũng cảm thấy còn có mặt khác nguyên nhân, nhưng là một chốc hắn cũng nghĩ không ra, muốn đi phiên bản ghi nhớ, lại không dễ làm nhiều người như vậy mặt.</p>
+<p>Vì thế hắn chỉ có thể tạm thời thu hồi chính mình lòng hiếu kỳ, ngẩng đầu đi xem Sở Thừa.</p>
+<p>Toàn trường nhất bình tĩnh người, cũng là Sở Thừa.</p>
+<p>Nghe được Hoắc Trạch có chút khoa trương tiếng cười sau, hắn không chỉ có quay đầu lại nhìn mắt Hoắc Trạch, tầm mắt ở còn ở những người khác trên người theo thứ tự đảo qua, sau đó rất là kinh ngạc, triều Hoắc Cảnh phất phất tay “Cảnh ca! Ngươi cũng ở a!”</p>
+<p>Hoắc Cảnh lúc này cũng chỉ có thể làm bộ mới nhận ra tới Sở Thừa bộ dáng, kinh ngạc nói “Hảo xảo, Sở Thừa, ngươi chừng nào thì về nước?”</p>
+<p>Hoắc Yến nhỏ giọng phun tào “Ca, ngươi cười có điểm quá giả.”</p>
+<p>Diệp Nhạc Dao còn lại là duỗi tay hung hăng ninh một chút chính mình đùi</p>
+<p>【 cứu mạng, cho nên Sở Thừa là liền ta đại ca đều có thể liếc mắt một cái nhận ra tới, chính là không có nhận ra Mạnh Việt đúng không! 】</p>
+<p>Diệp Nhạc Dao muốn cười điên rồi, hắn nỗ lực nghẹn lại cười sau mới đi thưởng thức Mạnh Việt biểu tình.</p>
+<p>Quả nhiên, Mạnh Việt sắc mặt đã hoàn toàn đen.</p>
+<p>Hắn ngơ ngẩn mà nhìn Sở Thừa, thân mình thậm chí đều lung lay một chút, bị Sở Thừa câu này chào hỏi nói đả kích đến không nhẹ.</p>
+<p>Bên cạnh Nhiễm Cảnh bị hắn hoảng sợ, rốt cuộc trước mặt nam nhân vẫn là chính mình lão bản, hắn cũng không thể lại trang không thấy được, chạy nhanh đứng dậy đỡ lấy Mạnh Việt, thấp giọng dò hỏi “Ngươi không sao chứ?”</p>
+<p>Bởi vì Mạnh Việt hành động không tiện, cho nên ngẫu nhiên Nhiễm Cảnh cũng sẽ đảm nhiệm một chút hình người quải trượng.</p>
+<p>Không có biện pháp, rốt cuộc hắn này công tác phi thường lương cao, này đó đều là hắn nên làm.</p>
+<p>Bởi vì ngày thường thói quen, cho nên lúc này Nhiễm Cảnh cũng không có cảm thấy đỡ lấy Mạnh Việt tư thế có cái gì không đúng.</p>
+<p>Nhưng thật ra Mạnh Việt, đột nhiên phản ứng rất lớn, trực tiếp duỗi tay ném ra Nhiễm Cảnh tay, lạnh lùng nói “Ngươi đừng chạm vào ta!”</p>
+<p>Nhiễm Cảnh chạy nhanh giơ lên tay, hướng phía sau lui một bước to.</p>
+<p>Sau đó âm thầm cắn răng, xong đời, hắn đã quên bạch nguyệt quang còn ở nơi này!</p>
+<p>Sẽ không lại phải bị trừ tiền lương đi?</p>
+<p>Nhiễm Cảnh rất là khẩn trương.</p>
+<p>Mà Sở Thừa tuy rằng ở cùng Hoắc Cảnh chào hỏi, nhưng tầm mắt dư quang nhưng vẫn ở lưu ý bên này.</p>
+<p>Thấy Mạnh Việt trực tiếp duỗi tay đem Nhiễm Cảnh ném ra, hắn mày hơi hơi nhăn lại, chạy nhanh xoay người, hơi hơi đỡ một chút Nhiễm Cảnh bả vai, thấp giọng ôn nhu hỏi “Ngươi không sao chứ?”</p>
+<p>Tĩnh.</p>
+<p>Yên tĩnh.</p>
+<p>Diệp Nhạc Dao đều phải cười điên rồi.</p>
+<p>【 đồng dạng lời nói, từ bất đồng người trong miệng nói ra, quan tâm còn không phải cùng cá nhân! 】</p>
+<p>【 ha ha ha ha ha ha ha ha ha ha ta chịu không nổi! 】</p>
+<p>【 Sở Thừa trong mắt, căn bản là không có Mạnh Việt người này! Không có! 】</p>
+<p>【 hắn lực chú ý tất cả tại Nhiễm Cảnh trên người a ha ha ha ha, cứu mạng —— ta nghẹn cười nghẹn đến mức thật là khó chịu a, có không ai có thể cứu cứu ta?! 】</p>
+<p>Há ngăn Diệp Nhạc Dao nghẹn cười nghẹn khó chịu a.</p>
+<p>Bên cạnh Hoắc gia cả nhà cũng đều nghẹn đến mức khó chịu.</p>
+<p>Hôm nay tới quán bar phía trước, bởi vì bọn họ đã biết một ít tóm tắt, cho nên bọn họ cũng suy đoán quá hôm nay sự tình sẽ là một cái như thế nào phát triển.</p>
+<p>Nhưng bọn họ trăm triệu không nghĩ tới chính là, Mạnh Việt tâm tâm niệm niệm quải niệm nhiều năm như vậy bạch nguyệt quang, kết quả bạch nguyệt quang không chỉ có không có nhận ra tới hắn, còn trực tiếp hỏi hắn là ai.</p>
+<p>Sở Thừa đều nhận ra tới Hoắc Cảnh!</p>
+<p>Mạnh Việt ngươi sao lại thế này a Mạnh Việt?</p>
+<p>Cho nên thật đúng là chính là một hồi binh hoang mã loạn yêu thầm sao?</p>
+<p>Bất quá cũng bởi vậy có thể thấy được, Sở Thừa trong lòng là thật sự không có Mạnh Việt một chút vị trí.</p>
+<p>Này muốn bọn họ nói cái gì hảo đâu?</p>
+<p>Là đau lòng một đợt Mạnh Việt, vẫn là trực tiếp nói cho Batman vai hề tìm được rồi?</p>
+<p>Đương nhiên, đau lòng là không có khả năng đau lòng.</p>
+<p>Mạnh Việt ngươi liền tính yêu thầm đến lại khổ, ngươi cũng không thể dưỡng thế thân a!</p>
+<p>Nếu là thật sự thích, Mạnh Việt ngươi hoàn toàn có thể trực tiếp đi tìm Sở Thừa thổ lộ.</p>
+<p>Sở Thừa chỉ là xuất ngoại, hắn lại không phải đi ngoài không gian, chẳng lẽ còn có thể tìm không thấy hắn?</p>
+<p>Dùng đến ngươi phí hết tâm tư dưỡng cái thế thân?</p>
+<p>Tuy nói Nhiễm Cảnh cũng chỉ là đem thế thân đương thành một phần chức nghiệp.</p>
+<p>Kia lời nói lại nói đã trở lại, còn phải cảm tạ ngươi Mạnh Việt cấp Nhiễm Cảnh một cái vào nghề cơ hội?</p>
+<p>Không thể nghĩ lại.</p>
+<p>Càng muốn Hoắc gia người càng nhịn không được.</p>
+<p>Hoắc Trạch thậm chí trực tiếp lấy ra di động, bắt đầu tại gia tộc trong đàn điên cuồng phát “Ha ha ha ha” cuồng tiếu biểu tình bao.</p>
+<p>Đại gia tuy rằng đều ở nghẹn cười, nhưng cũng không phải là không thể hơi chút cười một chút, rốt cuộc Sở Thừa lực chú ý tạm thời không ở bọn họ nơi này.</p>
+<p>Nhưng Hoắc Cảnh liền không được, hắn cần thiết gắt gao ức chế trụ chính mình trên mặt ý cười.</p>
+<p>Sở Thừa mới vừa cùng hắn chào hỏi, về tình về lý hắn đều phải qua đi cùng chào hỏi một cái.</p>
+<p>Hít sâu vài khẩu khí, Hoắc Cảnh mới cầm lấy chén rượu, triều đối diện đi qua.</p>
+<p>Sở Thừa động tác rất là thân sĩ, xác định Nhiễm Cảnh sẽ không té ngã sau hắn liền thu hồi tay, sau đó chau mày, hơi mang có chút không vui mà nhìn Mạnh Việt “Ngượng ngùng vị tiên sinh này, ta xác thật không quá nhớ rõ ngươi là ai. Nhưng ngươi nếu là có cái gì tức giận có thể hướng về phía ta tới, không cần đối với vô tội người.”</p>
+<p>Nếu nói vừa mới không khí vẫn là yên tĩnh nói, kia lúc này cái này ghế dài không khí cũng chỉ có thể nói là tĩnh mịch.</p>
+<p>Mạnh Việt khó có thể tin mà nhìn Sở Thừa.</p>
+<p>Hắn không thể tin được Sở Thừa thế nhưng sẽ quên chính mình, thậm chí còn vì Nhiễm Cảnh cái này chỉ thấy một mặt người liền đối chính mình lời nói lạnh nhạt.</p>
+<p>Từ gặp mặt đến bây giờ bất quá ngắn ngủn vài phút, Sở Thừa chỉ đối Mạnh Việt nói hai câu lời nói.</p>
+<p>Nhưng hai câu này lời nói, vô luận là câu nói kia, đều là một phen sắc bén đao nhọn, thẳng tắp mà đâm vào Mạnh Việt ngực.</p>
+<p>Mạnh Việt hốc mắt đỏ bừng, đứng ở tại chỗ thật lâu không nói.</p>
+<p>Sở Thừa có chút buồn bực mà nhăn lại mi, nhưng hắn lại không có nghĩ nhiều.</p>
+<p>Chính là lúc này, Hoắc Cảnh bưng chén rượu đã đi tới.</p>
+<p>Diệp Nhạc Dao nhìn đến Hoắc Cảnh, rất tưởng duỗi tay che mặt.</p>
+<p>【 không phải đại ca, chúng ta cũng không thể cái gì náo nhiệt đều trộn lẫn đúng không! Lúc này ngươi lại đây làm gì nha! 】</p>
+<p>Hoắc Cảnh “……”</p>
+<p>Hắn nếu là bất quá tới, mới có vẻ phá lệ không bình thường hảo đi!</p>
+<p>Tần Diệu thấy Hoắc Cảnh đi tới, cũng hơi nhẹ nhàng thở ra.</p>
+<p>Thật tốt quá, xem ra không cần hắn tới điều tiết không khí.</p>
+<p>Thấy Hoắc Cảnh lại đây, Sở Thừa cũng thu hồi dừng ở Mạnh Việt trên người tầm mắt, một lần nữa cầm lấy chén rượu cùng Hoắc Cảnh chạm vào một chút, cười nói “Ta nhớ rõ cảnh ca giống như ngày thường không thế nào thích tới quán bar.”</p>
+<p>Hoắc Cảnh cười “Hôm nay là bồi ba mẹ tới.”</p>
+<p>Sở Thừa vừa mới cũng thấy được Hoắc gia những người khác, chỉ là còn không có qua đi chào hỏi.</p>
+<p>Hắn cười nói “Vừa lúc, ta qua đi chào hỏi một cái!”</p>
+<p>Vì thế hai người liền bưng chén rượu lại đi cách vách bàn.</p>
+<p>Bọn họ vừa đi, Diệp Nhạc Dao bọn họ cái này ghế dài hoàn toàn an tĩnh lại.</p>
+<p>Diệp Nhạc Dao còn đang xem Mạnh Việt biểu tình.</p>
+<p>Mạnh Việt lúc này là thật sự bị thương tới rồi, hắn ngơ ngác mà nhìn Sở Thừa đi đến cách vách bàn, nói cười yến yến mà cùng mọi người chạm cốc uống rượu, trêu đùa tiếng gió.</p>
+<p>Kia cổ tên là ghen ghét ngọn lửa thiếu chút nữa liền phải đem hắn cả người thiêu, nhưng cố tình nhất trát tâm chính là, vừa mới Sở Thừa thế nhưng hỏi hắn là ai……</p>
+<p>Sở Thừa không nhớ rõ chính mình.</p>
+<p>Sự thật này làm Mạnh Việt thập phần khó chịu, thậm chí một lần tằm ăn lên hắn sở hữu lý trí.</p>
+<p>Hắn thích Sở Thừa nhiều năm như vậy, vẫn luôn ở quốc nội an an tĩnh tĩnh mà chờ Sở Thừa trở về.</p>
+<p>Kết quả, cũng chỉ là đổi lấy một câu “Xin hỏi ngươi là”?</p>
+<p>Mạnh Việt suy sụp mà ngồi trở lại chỗ ngồi, trên mặt mất mát không thêm che giấu.</p>
+<p>Diệp Nhạc Dao</p>
+<p>【 xong đời lạp, xem ra là thật sự thương tâm lạc. 】</p>
+<p>Tần Diệu giương mắt nhìn lại, có chút do dự chính mình muốn hay không mở miệng an ủi một chút.</p>
+<p>Chính là lúc này, Nhiễm Cảnh nhỏ giọng đã mở miệng “Có khả năng là Mạnh tiên sinh ngài mấy năm gần đây biến hóa quá lớn…… Chờ lát nữa ngài hơi chút nhắc nhở một chút, nói không chừng Sở tiên sinh liền nghĩ tới.”</p>
+<p>Câu này hoàn toàn là Nhiễm Cảnh lời từ đáy lòng.</p>
+<p>Hắn rốt cuộc cầm Mạnh Việt nửa năm nhiều tiền lương, hiện tại Mạnh Việt đúng là yêu cầu an ủi thời điểm, hắn như thế nào có thể không động thân mà ra?!</p>
+<p>Rốt cuộc ——</p>
+<p>Nhiễm Cảnh là thiệt tình cảm thấy chính mình công tác mau nhìn đến đầu.</p>
+<p>Phỏng chừng hôm nay buổi tối trở về, Mạnh Việt liền phải lấy tiền làm hắn chạy lấy người.</p>
+<p>Cho nên Nhiễm Cảnh quyết định thừa dịp Mạnh Việt còn không có hoàn toàn làm chính mình chạy lấy người khi, nhiều xoát điểm hảo cảm độ.</p>
+<p>Rốt cuộc Mạnh Việt còn rất hào phóng, nói không chừng còn có thể nhiều cho hắn điểm tiền thưởng đâu!</p>
+<p>Tần Diệu không biết Nhiễm Cảnh suy nghĩ cái gì, nhưng lại theo Nhiễm Cảnh nói đi xuống, thuận tiện giúp chính mình biểu đệ giải thích một câu “Sở Thừa xuất ngoại lâu lắm, không nhớ rõ lão đồng học cũng bình thường.”</p>
+<p>Diệp Nhạc Dao nhìn nhìn Tần Diệu, lại đi xem Nhiễm Cảnh.</p>
+<p>【 hai người các ngươi này an ủi người trình độ có phải hay không có điểm quá kém chút! 】</p>
+<p>【 tuy nói cao trung tốt nghiệp sau, xác thật là sẽ quên một ít cao trung đồng học, nhưng cũng không có khả năng một chút ấn tượng đều không có a! Trừ phi ——】</p>
+<p>Diệp Nhạc Dao lắc đầu, ở trong lòng thở dài.</p>
+<p>【 trừ phi người này thật sự một chút đều không quan trọng! 】</p>
+<p>Tần Diệu biểu tình có vài phần bất đắc dĩ, nhìn mắt Diệp Nhạc Dao, thực mau liền thu hồi ánh mắt.</p>
+<p>Hắn lại như thế nào không biết đạo lý này?</p>
+<p>Nhưng hiện tại xem Mạnh Việt này thất hồn lạc phách bộ dáng, hắn tổng không thể lại nói ra chân tướng hướng hắn ngực trát dao nhỏ đi?</p>
+<p>Mà Hoắc gia người bên này.</p>
+<p>Bọn họ chính một bên cùng Sở Thừa hàn huyên, một bên nương Sở Thừa danh nghĩa, tùy ý mà làm khóe miệng kiều lên.</p>
+<p>Ai.</p>
+<p>Này cũng thật không phải bọn họ muốn cười a!</p>
+<p>Nhân gia Sở Thừa đều chủ động lại đây chào hỏi, bọn họ tổng không thể banh một khuôn mặt đi?</p>
+<p>Vừa mới Mạnh Việt phản ứng thật sự quá buồn cười.</p>
+<p>Vốn tưởng rằng Sở Thừa không nhớ rõ hắn đã là nhất tạc liệt sự tình, không nghĩ tới Sở Thừa còn bởi vì Nhiễm Cảnh đều đối Mạnh Việt mặt lạnh!</p>
+<p>Loại này tình tiết có thể hay không lại đến điểm a?</p>
+<p>Bọn họ là thật sự thực thích xem!</p>
+<p>Sở Thừa cùng Hoắc gia người liêu chính vui vẻ, mà bên này Mạnh Việt còn thất hồn lạc phách.</p>
+<p>Hắn thường thường còn sẽ nghiêng đầu xem một cái Sở Thừa, nhưng như vậy hành vi đối hắn mà nói không thể nghi ngờ là miệng vết thương rải muối.</p>
+<p>Hoắc Cảnh thậm chí cùng Sở Thừa đều không phải cùng giới học sinh đâu!</p>
+<p>Nhưng Sở Thừa không chỉ có nhớ rõ Hoắc Cảnh, thế nhưng liền Hoắc gia những người khác cũng đều nhớ rõ.</p>
+<p>Hắn thậm chí còn hỏi Diệp Nhạc Dao, Diệp Nhạc Dao bất quá chính là Hoắc gia một cái con nuôi, hắn cư nhiên cũng nhớ rõ như vậy rõ ràng!</p>
+<p>Mạnh Việt như thế nào có thể thản nhiên tiếp thu?</p>
+<p>Hoắc mẹ triều Diệp Nhạc Dao phương hướng chỉ chỉ.</p>
+<p>Sở Thừa liền triều bên này Diệp Nhạc Dao phất phất tay.</p>
+<p>Bọn họ bên cạnh nói chuyện thanh âm không nhỏ, Diệp Nhạc Dao biết Sở Thừa đang xem chính mình, cũng lễ phép mà triều hắn phất tay chào hỏi.</p>
+<p>Cẩn thận Diệp Nhạc Dao còn phát hiện, Sở Thừa cùng chính mình đánh xong tiếp đón sau không có trực tiếp thu hồi ánh mắt.</p>
+<p>Mà là tầm mắt vừa chuyển, trực tiếp liền dừng ở bên cạnh Nhiễm Cảnh trên người.</p>
+<p>Nhưng Nhiễm Cảnh lực chú ý lại toàn bộ ở Mạnh Việt trên người, căn bản là không có chú ý tới Sở Thừa tầm mắt.</p>
+<p>Sở Thừa trong mắt tiểu mất mát chợt lóe mà qua.</p>
+<p>Hắn hoàn toàn không biết một màn này bị Diệp Nhạc Dao rõ ràng mà thu vào đáy mắt.</p>
+<p>Diệp Nhạc Dao là thật sự có điểm khó banh.</p>
+<p>Cũng may hiện tại không khí đã hòa hoãn, hắn cũng không cần cùng vừa mới giống nhau nghẹn cười, khóe miệng bắt đầu không chịu khống chế thượng dương.</p>
+<p>【 ta xem như đã nhìn ra, Sở Thừa là thật sự thích Nhiễm Cảnh, từ vừa mới bắt đầu, hắn tầm mắt liền vẫn luôn cố ý vô tình dừng ở Nhiễm Cảnh trên người a. 】</p>
+<p>【 này nếu như bị Mạnh Việt phát hiện……】</p>
+<p>Nói Diệp Nhạc Dao ánh mắt chính là vừa chuyển, nhìn mắt Mạnh Việt.</p>
+<p>Này vừa thấy, Diệp Nhạc Dao nháy mắt liền mở to hai mắt.</p>
+<p>【 phát hiện! 】</p>
+<p>Tần Diệu cùng Hoắc gia nhân tâm đồng thời cả kinh.</p>
+<p>Nhanh như vậy đã bị Mạnh Việt phát hiện sao?</p>
+<p>Sở Thừa còn đứng ở Hoắc gia người trước mặt đâu, bọn họ tạm thời chỉ có thể ngăn chặn tò mò, không có triều bên kia xem.</p>
+<p>Tần Diệu liền không có cái này lo lắng, sớm tại Diệp Nhạc Dao giọng nói rơi xuống nháy mắt, hắn liền ngẩng đầu nhìn về phía đối diện Mạnh Việt.</p>
+<p>Nếu nói vừa mới Mạnh Việt trên mặt còn chỉ là mây đen giăng đầy, kia hiện tại lúc này trên mặt hắn liền tất cả đều là mưa rền gió dữ.</p>
+<p>Nhiễm Cảnh còn lại là không hiểu ra sao.</p>
+<p>Làm sao vậy đây là?</p>
+<p>Trước một giây không còn hảo hảo sao, như thế nào đột nhiên lại biến sắc mặt?</p>
+<p>Nhiễm Cảnh ở Mạnh Việt bên người đãi nửa năm, là thật sự cảm thấy cái này lão bản tính tình âm tình bất định khó hầu hạ.</p>
+<p>Nhưng này lại có biện pháp nào!</p>
+<p>Nhiễm Cảnh một lần nữa treo lên một cái cười nhạt, thấp giọng hỏi “Làm sao vậy?”</p>
+<p>Mạnh Việt trầm giọng nói “Ngươi làm tài xế đưa ngươi trở về!”</p>
+<p>Diệp Nhạc Dao đôi mắt bỗng chốc trợn to.</p>
+<p>【 đây là trực tiếp đuổi người? 】</p>
+<p>【 chậc chậc chậc, Mạnh Việt ngươi nhìn một cái ngươi độ lượng! 】</p>
+<p>Nhiễm Cảnh lại không nói thêm gì.</p>
+<p>Hắn ước gì chạy nhanh rời đi đâu, nghe xong lời này lập tức đứng lên, triều Diệp Nhạc Dao xua xua tay, liền mau chân hướng tới quán bar ngoại đi đến.</p>
+<p>Diệp Nhạc Dao rất tưởng đuổi theo, thủ đoạn lại bị Tần Diệu bắt được.</p>
+<p>Tần Diệu thấp giọng nói “Mạnh gia tài xế liền ở bên ngoài.”</p>
+<p>Ý tứ là làm Diệp Nhạc Dao không cần lo lắng.</p>
+<p>Diệp Nhạc Dao đương nhiên biết không cần lo lắng.</p>
+<p>【 ta liền cảm thấy Nhiễm Cảnh đi được có phải hay không có điểm quá nhanh! 】</p>
+<p>【 hắn thậm chí đều không có làm Sở Thừa lại liếc hắn một cái đâu! 】</p>
+<p>Diệp Nhạc Dao ở trong lòng thở dài.</p>
+<p>Tần Diệu buồn cười, nhưng không nói gì thêm.</p>
+<p>Một khác bàn Hoắc gia người cũng nghe tới rồi Diệp Nhạc Dao lời này, bọn họ trên mặt tức khắc liền có chút tiếc nuối.</p>
+<p>Không thể nào, hôm nay buổi tối dưa nhanh như vậy liền kết thúc sao?!</p>
+<p>Này cũng quá lệnh người tiếc nuối!</p>
+<p>Chính là lúc này, bỗng nhiên nghe được Diệp Nhạc Dao thanh âm vang lên</p>
+<p>【 ai, Tần tổng tay hảo ấm áp a, rất thoải mái ai. 】</p>
+<p>Hoắc Yến khớp hàm đều theo bản năng buộc chặt, thiếu chút nữa liền nhịn không được quay đầu.</p>
+<p>Hoắc mẹ còn lại là trực tiếp bị rượu cấp sặc.</p>
+<p>Diệp Nhạc Dao đứa nhỏ này, có thể hay không không cần đem đề tài dời đi nhanh như vậy!</p>
+<p>Còn có, ngươi cùng Tần Diệu như thế nào lại bắt tay!</p>
+<p>Mà Tần Diệu cũng ngây ngẩn cả người.</p>
+<p>Hắn liền theo bản năng nắm hạ Diệp Nhạc Dao thủ đoạn……</p>
+<p>Nghe được Diệp Nhạc Dao những lời này, hắn cảm giác chính mình lòng bàn tay đều ở nóng lên, giống bắn ra đi giống nhau buông lỏng ra tay mình.</p>
+<p>Diệp Nhạc Dao cúi đầu nhìn mắt chính mình tay, trong mắt tràn ngập nghi hoặc.</p>
+<p>【 ân? Không nên tiếp theo đi xuống sau đó cùng lần trước giống nhau dắt lấy tay của ta sao? Như thế nào buông lỏng ra? 】</p>
+<p>Tần Diệu “……”</p>
+<p>Hoắc Yến duỗi tay che mặt.</p>
+<p>Hoắc Trạch càng là vẻ mặt vô ngữ, đồng thời có chút tò mò, cái gì thượng một lần? Thượng một lần khi nào dắt tay?</p>
+<p>Còn có Diệp Nhạc Dao, ngươi phía trước xem như vậy nhiều tiểu thuyết ngươi đều bạch nhìn sao?</p>
+<p>Tay là có thể tùy tiện cùng người nắm sao?!</p>
+<p>Hoắc Trạch nghiến răng nghiến lợi, thiếu chút nữa liền không kiềm được chính mình biểu tình.</p>
+<p>Cũng may Sở Thừa còn ở cùng Hoắc Cảnh nói chuyện phiếm, không có chú ý tới những người khác thần sắc biến hóa.</p>
+<p>Chỉ là đột nhiên vừa quay đầu lại, không có lại nhìn đến Nhiễm Cảnh thân ảnh, Sở Thừa tức khắc sửng sốt một chút.</p>
+<p>Diệp Nhạc Dao thời khắc chú ý Sở Thừa động tĩnh, thấy thế trực tiếp cong cong khóe miệng.</p>
+<p>【 thực hảo, xem ra là phát hiện Nhiễm Cảnh không còn nữa. Quả nhiên a, bạch nguyệt quang chính là vừa thấy đã yêu, này cũng quá để ý Nhiễm Cảnh! 】</p>
+<p>Hoắc gia người cũng có thể rõ ràng cảm giác được, Sở Thừa hứng thú đột nhiên liền không có phía trước tăng vọt.</p>
+<p>Cho nên bọn họ cũng không có lại lôi kéo Sở Thừa tiếp tục trò chuyện, làm hắn có thể đi bồi bồi mặt khác bằng hữu.</p>
+<p>Sở Thừa gật gật đầu, liền triều Tần Diệu bọn họ này bàn đã đi tới.</p>
+<p>Hắn tầm mắt dừng ở Tần Diệu trên người, nguyên bản là chuẩn bị trực tiếp mở miệng hỏi thăm Nhiễm Cảnh tin tức, lại không nghĩ lúc này Mạnh Việt đột nhiên mở miệng “Sở Thừa, ngươi còn nhớ rõ ngươi cao trung trong ban cái kia người què sao?”</p>
+<p>Sở Thừa sửng sốt, quay đầu nhìn Mạnh Việt.</p>
+<p>Mạnh Việt cằm đều buộc chặt, hơi khẩn trương mà nhìn Sở Thừa.</p>
+<p>Đã nhắc nhở đến cái này phân thượng, nếu là Sở Thừa đối hắn vẫn là không có ấn tượng……</p>
+<p>Mạnh Việt cảm giác miệng mình tràn đầy chua xót.</p>
+<p>Chính là lúc này, Sở Thừa đột nhiên nói “Nga, ta nhớ ra rồi, ngươi chính là chúng ta ban mỗi lần đều thích ngồi cuối cùng một loạt cái kia Mạnh ——”</p>
+<p>Mạnh Việt đôi mắt rõ ràng sáng ngời, hắn kinh hỉ mà nhìn Sở Thừa, khẩn trương lại hưng phấn “Ngươi…… Ngươi nghĩ tới?”</p>
+<p>Sở Thừa “…… Mạnh…… Mạnh cái gì tới?”</p>
+<p>Diệp Nhạc Dao</p>
+<p>【 ha ha ha ha ha ha ——】</p>
+<p>【 nghĩ tới, nhưng lại không hoàn toàn nhớ tới ha ha ha ha ha. 】</p>
+<p>Nhưng Mạnh Việt cũng đã thực vui mừng, Sở Thừa có thể nhớ rõ hắn họ cũng thực hảo.</p>
+<p>Mạnh Việt cười mở miệng “Mạnh Việt.”</p>
+<p>Sở Thừa bừng tỉnh đại ngộ “Mạnh Việt! Thì ra là thế, chúng ta thế nhưng vẫn là lão đồng học……”</p>
+<p>Hắn tức khắc liền có chút xấu hổ, chạy nhanh xin lỗi “Ngượng ngùng, mới vừa không có trước tiên nhận ra ngươi, nhiều năm như vậy không gặp, ngươi thay đổi thật nhiều!”</p>
+<p>Diệp Nhạc Dao quay đầu, dùng tay che môi.</p>
+<p>【 không thể cười, ta tuyệt đối không thể cười ra tới. 】</p>
+<p>Mạnh Việt lúc này là hoàn toàn nhẹ nhàng thở ra, triều Sở Thừa vươn tay “Hoan nghênh về nước.”</p>
+<p>Sở Thừa hào phóng cùng hắn nắm tay, sau đó liền ở Diệp Nhạc Dao đối diện ngồi xuống, giống như trong lúc lơ đãng hỏi “Đúng rồi, ta có thể ngồi ở đây sao? Vừa mới cái kia nam sinh……”</p>
+<p>Mạnh Việt thần sắc tức khắc căng chặt lên, sợ Sở Thừa hiểu lầm, chạy nhanh mở miệng giải thích “Ta…… Ta cùng hắn không có gì, hắn, hắn chính là ta đệ đệ.”</p>
+<p>Dưới tình thế cấp bách, Mạnh Việt chỉ có thể nghĩ ra lấy cớ này.</p>
+<p>Không nghĩ tới đối diện Diệp Nhạc Dao ở trong lòng đều cười đến đánh minh.</p>
+<p>【 có hay không một loại khả năng, Sở Thừa chính là đang đợi ngươi những lời này? 】</p>
+<p>Quả nhiên, giây tiếp theo.</p>
+<p>Chỉ thấy Sở Thừa nháy mắt thả lỏng cười “Vậy là tốt rồi, vừa lúc ta tưởng phiền toái ngươi một sự kiện.”</p>
+<p>Mạnh Việt không thể tưởng tượng mà nhìn Sở Thừa, hắn gương mặt thậm chí đều có chút hồng.</p>
+<p>Mới vừa đã biết hắn là ai, Sở Thừa liền phải phiền toái hắn hỗ trợ.</p>
+<p>Xem ra chính mình ở Sở Thừa trong lòng vẫn là nhiều ít có một chút trọng lượng!</p>
+<p>Nếu không, vì cái gì hắn không đi phiền toái Tần Diệu đâu?</p>
+<p>Phải biết Tần Diệu không chỉ là Sở Thừa biểu ca, còn liền ngồi ở Sở Thừa đối diện! Nhưng Sở Thừa cố tình triều hắn đã mở miệng……</p>
+<p>Mạnh Việt nội tâm kích động vô cùng, nhưng trên mặt lại vẫn là thực bình tĩnh, hơi hít sâu một hơi, hắn mới cười ngẩng đầu xem Sở Thừa “Có thể, chuyện gì, chỉ cần là ngươi đến sự, ta khẳng định giúp ngươi.”</p>
+<p>Câu này nói đến vô cùng trịnh trọng.</p>
+<p>Nghe giống như là hứa hẹn giống nhau.</p>
+<p>Diệp Nhạc Dao thoáng nghẹn lại cười, lúc này ngẩng đầu nhìn hai người liếc mắt một cái.</p>
+<p>Sở Thừa không nghĩ tới Mạnh Việt thế nhưng sẽ đáp ứng đến như vậy sảng khoái, trên mặt hắn ý cười càng sâu “Cảm ơn ngươi, Mạnh Việt.”</p>
+<p>Mà Mạnh Việt còn lại là bị Sở Thừa câu này cảm ơn làm cho mặt đều đỏ, có chút ngượng ngùng mà dời đi tầm mắt “Không, không cần…… Ta thực nguyện ý giúp ngươi.”</p>
+<p>Sở Thừa cười ngâm ngâm “Vậy là tốt rồi, cho nên ngươi phương tiện đem vừa mới cái kia nam sinh liên hệ phương thức chia cho ta sao?”</p>
+<p>Giọng nói rơi xuống đất, Diệp Nhạc Dao trực tiếp duỗi tay che mặt, cười đến có điểm hỏng mất, bả vai đều ở rất nhỏ run rẩy</p>
+<p>【 ha ha ha ha ha ha ha ha ——】</p>
+<p>【 không thể tưởng được đi, Mạnh Việt, bạch nguyệt quang tìm ngươi hỗ trợ chuyện thứ nhất Muốn thế thân liên hệ phương thức ha ha ha ha ha ——】</p>
+<p>【 cứu mạng, cứu mạng, ta thật sự muốn cười điên rồi! 】</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong57.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong59.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "nguoi-qua-duong-giap-tieng-long-tiet-lo-sau-bi-vai-ac-ca-nha-doan-sung";
+const NOVEL_TITLE = "Người qua đường Giáp tiếng lòng tiết lộ sau bị vai ác cả nhà đoàn sủng";
+const CHAPTER_TITLE = "Chương 58. Liên hệ phương thức";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 42</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Đường Môn thiên tài cùng cơ giáp nam thần
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 42</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong41.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong43.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Lam tinh học viện trận đầu nhẹ nhàng bắt lấy, đường dực cơ hồ không có cơ hội ra tay.</p>
+<p>Tam trận thi đấu, nếu trước hai tràng bắt được 5 phân dưới tình huống, đệ tam tràng đoàn chiến thắng lợi phương chỉ cần bắt được 1 phân liền sẽ trực tiếp phán định thắng lợi, đây cũng là vì cấp thực lực cường đội ngũ kế tiếp thi đấu bảo tồn thực lực.</p>
+<p>Thế giới thi đấu tuy rằng sẽ không thương cập tánh mạng, nhưng là bị thương bị đánh chết lúc sau tạo thành tinh thần bị thương vẫn là yêu cầu thời gian tới khôi phục.</p>
+<p>Tham gia thi đua học viện rất nhiều, mỗi ngày thi đấu đều an bài thật sự mãn.</p>
+<p>Lam tinh học viện đầu chiến lúc sau không có nghỉ ngơi bao lâu, liền tiến vào trận thi đấu tiếp theo chuẩn bị kỳ.</p>
+<p>Đối thủ lần này vẫn như cũ là bình thường hành tinh cấp bậc sơ đẳng học viện.</p>
+<p>Có đầu chiến thắng lợi tin tưởng, Lam tinh học viện bọn học sinh đều là ý chí chiến đấu tràn đầy.</p>
+<p>Đường dực làm áp trục tuyển thủ, vẫn luôn cũng chưa cái gì cơ hội ra tay.</p>
+<p>Phòng live stream khán giả sốt ruột đến ngao ngao kêu.</p>
+<p>【 ta muốn nhìn đường dực tiểu ca ca ra tay! 】</p>
+<p>【 ta biết được quá muộn, đường dực tiểu ca ca phía trước video thật nhiều đều là trải qua cắt nối biên tập, hoàn toàn không có hiện trường phát sóng trực tiếp xem đến sảng! 】</p>
+<p>【 lặng lẽ nói một câu, ta cảm giác kia tam đại trường quân đội nam thần cũng là tới xem đường dực tiểu ca ca! 】</p>
+<p>【 học viện thi đua mỗi năm đều có, năm rồi tinh vực cấp thi đua trên cơ bản đều là hằng tinh cấp sơ đẳng học viện, lần này gia tăng rồi thật nhiều tiểu tinh cầu sơ đẳng học viện, trước giai đoạn thi đấu thật đúng là không có gì xem đầu a……】</p>
+<p>【 năm nay cái này Lam tinh học viện liền không tồi nha, tuy rằng là hành tinh cấp học viện, nhưng thực lực tựa hồ không thua cấp hằng tinh cấp học viện. 】</p>
+<p>【 xác thật lợi hại, ngồi chờ đường dực tiểu ca ca ra tay, chạy nhanh tới cái lợi hại một chút học viện đi! 】</p>
+<p>Người xem khu, mỗ tam đại trường quân đội khán đài.</p>
+<p>Bùi ninh đánh đại đại ngáp một cái: “Quả nhiên hạt giống tốt vẫn là rất khó tìm, đều nhìn đã nửa ngày, mỗi một cái có thể coi trọng mắt, Lam tinh học viện mấy cái lính gác biểu hiện giống nhau, hai người tái kia hai cái miễn cưỡng có thể xem.”</p>
+<p>Phong uyên mặt vô biểu tình không biết suy nghĩ cái gì, cả người phảng phất ngăn cách với thế nhân giống nhau tản ra người sống chớ quấy rầy khí chất.</p>
+<p>Bùi ninh liếc mắt một cái liếc lại đây, biểu tình một đốn, khóe miệng run rẩy nói: “Đây là có bao nhiêu đại thần tượng tay nải, trợn tròn mắt cũng có thể ngủ?”</p>
+<p>Bên kia chiến minh cũng không có thanh âm, Bùi ninh lại quay đầu đi xem chiến minh, chỉ thấy chiến minh nhìn chằm chằm vào Lam tinh học viện phương hướng, học viện khác căn bản xem cũng chưa xem một cái.</p>
+<p>Bùi ninh một trận vô ngữ, này hai cái lính gác thật là chuẩn bị tới chiêu sinh sao? Đệ nhất trường quân đội cùng tinh hoàng trường quân đội phòng tuyển sinh sẽ không khóc vựng ở WC đi?</p>
+<p>Còn có chính hắn vì cái gì như vậy có trách nhiệm tâm nghiêm túc nhìn một buổi sáng?</p>
+<p>Ngày đầu tiên sắp kết thúc thời điểm, Lam tinh học viện cùng tinh anh học viện rốt cuộc đối thượng.</p>
+<p>Lúc này lưu lại có thể thăng cấp ngày mai thi đấu học viện chỉ còn lại có không đến một trăm tòa học viện.</p>
+<p>Dù sao cũng là 1v1 đào thải chế, một hồi xuống dưới liền đào thải một nửa, nhị tràng xuống dưới lại đào thải một nửa…… Lấy này loại suy.</p>
+<p>Lam tinh học viện cùng tinh anh học viện là hôm nay thứ 4 tràng.</p>
+<p>“Phát hiện sao? Hôm nay thi đấu cơ hồ là đem hành tinh cấp học viện có thể đào thải đều đào thải, hiện tại còn dư lại hành tinh cấp học viện cũng chỉ dư lại chúng ta cùng tinh anh.” Từ viện trưởng trịnh trọng nói, “Chỉ cần trận này thắng hạ tinh anh học viện, chúng ta chính là Lam tinh đệ nhất!”</p>
+<p>Từ viện trưởng đối mặt sau cùng hằng tinh cấp học viện giao thủ thắng thua đều không quá để ý, thắng một hồi chính là kiếm, chỉ có đối chiến tinh anh trận này, là Lam tinh học viện hy vọng đã lâu.</p>
+<p>Đường dực đứng lên, sửa sang lại một chút quần áo của mình, lúc này hắn trạng thái là tốt nhất, trước mấy tràng đoàn đội chiến, hắn cơ hồ là không có ra tay, bất quá này hôm nay cuối cùng một hồi, hắn là không thể tiếp tục mua nước tương, huống hồ nhìn cả ngày, hắn nhịn không được có chút tay ngứa.</p>
+<p>“Viện trưởng, đối chiến tinh anh học viện nói, yêu cầu ta cho bọn hắn tiến hành tinh thần tăng phúc đi?” Đường dực hỏi.</p>
+<p>Từ viện trưởng gật đầu: “Trước cấp cá nhân tái ba người tăng phúc một chút, tinh anh học viện trừ bỏ song bào thai ở ngoài, mặt khác học viên thực lực cũng không dung khinh thường, các ngươi ba cái làm hết sức đi!”</p>
+<p>Tham gia cá nhân tái đồng học nhịn không được hưng phấn nói: “Đánh tam tràng, rốt cuộc có thể cảm thụ một lần cao cấp dẫn đường tinh thần tăng phúc, thật tốt quá!”</p>
+<p>Đường dực đạm đạm cười, trực tiếp mở ra tinh thần lực, nháy mắt liền đem cá nhân tái sắp lên sân khấu ba cái học viên cấp bao phủ lên.</p>
+<p>Ba vị đồng học chỉ cảm thấy đột nhiên tinh thần thanh tỉnh, toàn thân trên dưới phảng phất bị nước trong cọ rửa quá giống nhau, lực lượng cuồn cuộn không ngừng liền dũng đi lên.</p>
+<p>Phù hợp độ 60%-70% tinh thần tăng phúc, có thể ước chừng tăng lên lính gác thực lực gần gấp hai.</p>
+<p>Ba vị đồng học biểu tình đều là khiếp sợ.</p>
+<p>Đại khái là sau trưởng thành lần đầu tiên tiếp thu dẫn đường tinh thần tăng phúc, cái loại cảm giác này quả thực sảng khoái đến lệnh người vô pháp miêu tả.</p>
+<p>“Ta hiện tại có điểm minh bạch vì cái gì hắc ám thời đại dẫn đường sẽ bị lính gác bốn phía đoạt lấy, loại này có được dẫn đường liền phảng phất ủng có dùng không hết lực lượng, cảm giác thật sự là thật tốt quá!”</p>
+<p>“Đường dực đồng học! Ngươi xem chúng ta phù hợp độ vượt qua 60% liền thuộc về có thể kết hôn phạm trù, có thể cho ta một cơ hội ở thi đua lúc sau truy ngươi sao?!”</p>
+<p>“Ngọa tào! Huynh đệ, ngươi không phúc hậu! Ta cùng đường dực phù hợp độ so ngươi càng cao hảo sao!”</p>
+<p>Đường dực sắc mặt tối sầm, còn chưa kịp nói chuyện, kha duy trực tiếp tiến lên một tay nhắc tới nào đó bạo ngôn muốn truy đường dực đồng học, sắc mặt dữ tợn nói: “Ngươi vừa rồi nói cái gì? Có lá gan ngươi lặp lại lần nữa?! Tiểu gia ta huynh đệ cũng là ngươi có thể mơ ước sao!!!”</p>
+<p>Mayer ánh mắt ám trầm hạ tới, ống tay áo dây đằng đã nhịn không được vận sức chờ phát động tính toán đem muốn theo đuổi đường dực đồng học trừu một đốn.</p>
+<p>Vị kia đồng học bị kha duy dẫn theo cổ áo cười gượng lên: “Ta…… Chính là hỏi một chút……”</p>
+<p>Kha duy cười lạnh: “Hỏi một chút cũng không được!”</p>
+<p>Vị kia đồng học khóe miệng vừa kéo: “Ngươi buông ta ra, lập tức liền phải thi đấu, đường dực đồng học là chưa lập gia đình dẫn đường, mọi người đều có theo đuổi quyền lợi sao, kha duy ngươi nếu là thích cứ việc nói thẳng, uy hiếp ta cũng vô dụng a, hơn nữa hiện tại lính gác số lượng nhiều như vậy, có thể có một cái dẫn đường tại bên người tự nhiên là phải thử một chút…… Vạn nhất liền thành đâu?”</p>
+<p>Mặt khác các bạn học vừa nghe, thần sắc tức khắc chấn động.</p>
+<p>Này…… Nghe tới hảo có đạo lý a! Hiện tại bình thường lính gác cùng dẫn đường tỷ lệ đều là 20 so 1, càng đừng nói cao cấp dẫn đường, chờ sau này có thể hay không gặp được đều khó nói!</p>
+<p>Kha duy cũng là khiếp sợ buông lỏng tay ra, trong đầu không ngừng quanh quẩn vị đồng học này nói ‘ ngươi nếu là thích cứ việc nói thẳng ’ những lời này, một trương khuôn mặt tuấn tú xoát liền đỏ.</p>
+<p>Đường dực hoàn toàn không có dự đoán được sự tình đột nhiên phát triển trở thành như vậy, hắn da đầu căng thẳng, lập tức lời nói kiên định ý đồ đánh mất những người này không thực tế ý tưởng.</p>
+<p>“Xin lỗi, có chút lời nói ta cảm thấy ta cần nói ở phía trước……” Đường dực tinh thần lực nháy mắt bạo trướng, cùng cấp lính gác tăng phúc tinh thần lực bất đồng, như vậy tinh thần lực giống như trầm trọng núi cao vào đầu áp xuống tới, tất cả mọi người không hẹn mà cùng sinh ra một loại bị cường thế áp bách cảm giác. “Ta chỉ biết thích muội tử, cùng với ta sẽ không coi trọng bất luận cái gì so với ta nhược người! Chỉ có cường giả chân chính mới có tư cách ở trước mặt ta làm càn!”</p>
+<p>Lính gác các bạn học: “……”</p>
+<p>Không khí một trận trầm mặc, sau đó mọi người ánh mắt động tác nhất trí nhìn về phía…… Mayer.</p>
+<p>Đường dực vừa thấy mọi người ánh mắt, tức khắc trong lòng một trận ngọa tào, hắn đã quên Mayer là cái muội tử!</p>
+<p>Cũng may Mayer vẫn luôn là phi thường hàm súc tính tình, lúc này nàng cái gì cũng chưa nói, nhưng là cũng có chút đỉnh không được ánh mắt mọi người, lập tức quay người đi trộm bưng kín mặt.</p>
+<p>Nguyên lai đường dực thích nữ lính gác a……</p>
+<p>Mayer chỉ cảm thấy chính mình lỗ tai đều ở nóng lên, nàng trong lòng rất rõ ràng, đường dực đối nàng không có ý khác, nhưng kia nhất định là bởi vì nàng còn chưa đủ cường, chờ về sau biến cường……</p>
+<p>Mayer cảm thấy chính mình tìm được rồi mục tiêu, toàn thân nhiệt huyết đều nhịn không được cuồn cuộn lên.</p>
+<p>Kha duy sắc mặt một trận biến ảo không chừng, hắn vạn phần để ý nhìn về phía đường dực, tâm tình hỗn độn, Mayer cái kia ủ rũ nữ nơi nào hảo? Đường dực sao có thể sẽ coi trọng nàng!</p>
+<p>Đường dực hết chỗ nói rồi trong chốc lát, ra tiếng đánh vỡ trầm mặc: “Thi đấu bắt đầu rồi, chạy nhanh lên sân khấu đi!”</p>
+<p>Từ viện trưởng cũng lấy lại tinh thần, đối này đàn mới thành niên người trẻ tuổi bất đắc dĩ lắc đầu: “Trước cố lên biến cường đi, lính gác biến cường mới có dẫn đường ưu ái.”</p>
+<p>Cá nhân tái ba người lên sân khấu.</p>
+<p>Tinh anh học viện học viên cá nhân thực lực xác thật rất mạnh, tam trận thi đấu xuống dưới, hai bên người dự thi đều có trải qua dẫn đường tăng phúc, trình độ nguyên bản kém không rời.</p>
+<p>Chỉ là không nghĩ tới cuối cùng một hồi cá nhân tái thời điểm, tinh anh học viện lính gác thế nhưng chuẩn bị chiến giáp vũ khí!</p>
+<p>Lam tinh học viện không địch lại, cá nhân tái thất bại, tinh anh học viện đạt được 3 phân.</p>
+<p>Ba cái đồng học bại hạ trận tới, trở lại chuẩn bị khu thời điểm tinh thần uể oải, bị lâm giáo y chạy nhanh mang đi trị liệu.</p>
+<p>Hai người tái khi, kha duy biểu tình so dĩ vãng đều phải ngưng trọng rất nhiều.</p>
+<p>Đường dực cho bọn hắn hai cái tiến hành rồi tinh thần tăng phúc, kha duy cùng nam tu cảm giác được thực lực rõ ràng tăng lên, tức khắc liền minh bạch vừa rồi kia ba cái đồng học vì cái gì như thế kích động.</p>
+<p>“Kha duy, tận lực một bác đi! Vô luận như thế nào, cuối cùng một hồi ta đều có thể thắng trở về!” Đường dực cổ vũ vỗ vỗ kha duy bả vai.</p>
+<p>Nam tu cũng đối kha duy gật gật đầu: “Này chiến lúc sau, chúng ta trở về cấp cô mẫu tảo mộ.”</p>
+<p>Nghe vậy, kha duy trong mắt phảng phất gas hừng hực ngọn lửa.</p>
+<p>Hai người tái bắt đầu, kha gia huynh muội không nhanh không chậm đi vào giữa sân.</p>
+<p>Đường dực ở chuẩn bị khu thần sắc nghiêm túc quan chiến.</p>
+<p>Mayer đi vào hắn bên người, thấp giọng nói: “Kha gia sự tình ở Lam tinh giới thượng lưu trung không phải bí mật.”</p>
+<p>Đường dực quay đầu xem một cái Mayer: “Xem ra nhà ngươi cũng ở cái kia vòng bên trong.”</p>
+<p>Mayer cười cười: “Cái kia trong vòng gia tộc đều tám lạng nửa cân, ta hiện tại đã xem như gia tộc bên cạnh người, chủ gia quản không đến ta.”</p>
+<p>“Ngày sau nếu là có yêu cầu ta hỗ trợ địa phương, cứ việc đề.” Đường dực trầm ổn nói, “Nhận thức lâu như vậy, ta đương các ngươi là bằng hữu.”</p>
+<p>Mayer chớp chớp mắt, thấp giọng hỏi nói: “Ngươi…… Vừa rồi nói, ngươi chỉ thích muội tử sao?”</p>
+<p>Đường dực trong lòng một cái giật mình, vội vàng nói: “Mayer, ngươi đừng hiểu lầm, ta đối với ngươi không có ý khác, kia cái gì…… Ngươi không cần để ý ha!”</p>
+<p>Mayer thở dài một hơi: “Ta hiểu được, có thể làm bằng hữu cũng không tồi, nếu là có thể cùng nhau thi đậu đệ nhất trường quân đội, về sau cũng muốn nhiều hơn liên hệ.”</p>
+<p>Đường dực liên tục gật đầu: “Đó là nhất định.”</p>
+<p>“Về kha gia, tinh hạm thế gia, nói đến cùng kỳ thật cũng chính là dựa vào tinh cầu thông thương mà quật khởi phú thương gia tộc, các tinh vực đều có như vậy tinh hạm thế gia, tính lên cũng bất quá là chủ lưu hào môn gia tộc chi nhất, Lam tinh là cái hành tinh, ở đệ tam tinh vực ở vào nửa vời vị trí, lúc trước kha gia thế lực cũng không tính lợi hại, là cùng nam gia liên hôn lúc sau mới quật khởi.”</p>
+<p>Đường dực lẳng lặng nghe, trong lòng đã nhiều ít đoán được sự tình phát triển phương hướng.</p>
+<p>“Không phải là kha gia gia chủ dựa vào nam gia quan hệ làm lớn lúc sau liền trở mặt không làm người đi?”</p>
+<p>Mayer gật đầu, biểu tình kinh ngạc xem đường dực: “Ngươi là đã biết sao?”</p>
+<p>Đường dực bình tĩnh nói: “Ta đoán, kha duy cùng kia đối song bào thai quan hệ như vậy ác liệt, vừa thấy mâu thuẫn liền tới nhà mình tộc. Có thể làm tiểu bối quan hệ thế cùng nước lửa, không phải có tra cha chính là có mẹ kế, hoặc là hai cái đều trung.”</p>
+<p>“…… Ngươi nói không sai, kha duy phụ thân chính là tra cha, song bào thai tuổi tác cùng kha duy giống nhau đại, bọn họ mẫu thân không phải cùng cá nhân, kha duy mẫu thân là nam gia gia chủ thân muội muội, bản thân cũng là cao cấp dẫn đường.” Mayer thổn thức nói, “Cao cấp dẫn đường mỗi một cái đều thực trân quý, người bình thường gia lính gác cả đời nói không chừng cũng chưa ở trong hiện thực gặp qua đâu!”</p>
+<p>Đường dực hỏi: “Song bào thai mẫu thân là người nào?”</p>
+<p>Mayer trả lời: “Song bào thai mẫu thân là nam gia đối thủ cạnh tranh gia tộc bắc gia một cái chi thứ nữ dẫn đường, thủ đoạn cũng lợi hại, có thể nhẫn có thể tàn nhẫn, ở kha duy mẫu thân qua đời phía trước, vẫn luôn đều đang âm thầm cùng kha gia gia chủ bảo trì quan hệ, hơn nữa âm thầm tính kế nam gia nguồn năng lượng…… Nga, nam gia là nguồn năng lượng thế gia, ở đệ tam tinh vực rất có thế lực.”</p>
+<p>Đường dực tức khắc hiểu rõ: “Khó trách kha duy như vậy chán ghét song bào thai, kha gia này hành vi xác thật lệnh người chán ghét!”</p>
+<p>Mayer thở dài nói: “Hào môn thế gia loại chuyện này cũng là nhìn mãi quen mắt, gia tộc có không hứng khởi vẫn là muốn xem trẻ tuổi bên trong có hay không năng lực xuất chúng nhân tài. Kha gia gia chủ ở song bào thai trên người chính là trút xuống không ít tài nguyên, đại khái là hy vọng bọn họ có thể tiến vào đệ nhất trường quân đội.”</p>
+<p>Có thể đi vào đỉnh cấp trường quân đội, liền đại biểu cho tương lai sẽ có được thường nhân nhìn lên nhân mạch, hơn nữa trường quân đội tốt nghiệp lúc sau lính gác cùng dẫn đường không thể nghi ngờ không phải cao cấp chức nghiệp giả.</p>
+<p>Nếu có thể trở thành chiến giáp sư, kia đó là có thể đứng ở vũ trụ đỉnh đỉnh cấp cường giả.</p>
+<p>Xét đến cùng, bất luận ở vào cái gì thế giới, có cường đại thực lực mới là ngạnh đạo lý!</p>
+<p>“Mayer, ngươi cảm thấy bằng song bào thai thực lực, có thể đi vào đệ nhất trường quân đội sao?” Đường dực nhìn giữa sân đã giao thủ hai bên, trải qua tăng phúc kha duy hai người thực lực bạo trướng, một mở màn liền áp chế kha gia huynh muội.</p>
+<p>Mayer nhìn kỹ trong chốc lát, khách quan bình luận: “Thực lực của bọn họ xác thật lợi hại, đặc biệt là trải qua kha nhã tăng phúc kha thanh, so hiện tại kha duy muốn cường, bất quá kha duy cùng nam tu là hai cái lính gác tổ hợp, hơn nữa ngươi đồng thời cho bọn hắn hai cái tăng phúc, trận này thắng bại có lẽ nếu không như tinh anh học viện ý.”</p>
+<p>Đường dực cũng cười gật gật đầu: “Kha gia huynh muội như vậy thực lực nếu là đều có thể thượng đệ nhất trường quân đội, ta đã có thể muốn hoài nghi đệ nhất trường quân đội ánh mắt.”</p>
+<p>Giữa sân, kha gia huynh muội sắc mặt thập phần khó coi, tiền tam tràng Lam tinh học viện thi đấu quá trình bọn họ đều là tận mắt nhìn thấy quá, căn bản không có như bây giờ thực lực!</p>
+<p>Tinh anh học viện viện trưởng cũng phát hiện vấn đề, nguyên bản hắn cho rằng nắm chắc thắng lợi hai người tái, hiện tại cư nhiên ở vào hoàn cảnh xấu!</p>
+<p>Này rốt cuộc là vì cái gì?!</p>
+<p>“Kha duy! Các ngươi phía trước đều ở che giấu thực lực sao!” Kha nhã thân là dẫn đường, thể năng xa không kịp lính gác, kha thanh cùng kha duy lẫn nhau kiềm chế lúc sau, nam tu không lưu tình chút nào nhằm phía kha nhã.</p>
+<p>Kha nhã phóng xuất ra tinh thần cái chắn đem nam tu ngăn trở, chính mình không ngừng triều kha thanh sau lưng trốn tránh.</p>
+<p>Nhưng mà kha nhã tinh thần cái chắn ở nam tu không ngừng đánh sâu vào dưới sinh ra vết rách, thực mau rách nát.</p>
+<p>Kha nhã biểu tình kinh hãi, thét to: “Ca! Ngươi đang làm gì a ca ca! Tới cứu ta a!!!”</p>
+<p>Kha thanh bất chấp bị kha duy một kích trảo ra mấy đạo vết máu, vội vàng lui trở lại kha nhã trước người, hắn trầm sắc mặt: “Muội muội, ngươi tinh thần cái chắn vì cái gì sẽ bị phá rớt!”</p>
+<p>Kha nhã nghiến răng nghiến lợi: “Bọn họ sau lưng có dẫn đường! Vẫn là tinh thần lực không thua cho ta cao cấp dẫn đường! Kha duy cái kia phế vật cư nhiên cũng sẽ có dẫn đường cho hắn tăng phúc!”</p>
+<p>“Hẳn là Lam tinh học viện cái kia đường dực! Hắn dẫn đường cấp bậc tuyệt đối không thấp!” Kha thanh ánh mắt lạnh băng, “Chúng ta trận này liền tính là thua, cũng không thể làm cho bọn họ hai cái hoàn hảo rời đi đấu trường!”</p>
+<p>Kha nhã biểu tình cả kinh, tức khắc minh bạch kha thanh ý tứ, nàng đáy mắt lộ ra ác độc thần sắc, “Ca, tinh thần quấy nhiễu vũ khí ta mang theo!”</p>
+<p>“Thực hảo, đối phó nam tu, chỉ cần nam tu xảy ra chuyện, nam gia không có khả năng sẽ không đối kha duy tâm sinh khúc mắc, đã không có nam gia, kha duy liền cái gì cũng không phải!”</p>
+<p>Kha thanh như vậy vừa nói, kha nhã lập tức liền minh bạch.</p>
+<p>Tinh thần quấy nhiễu vũ khí là một loại chuyên môn nhằm vào lính gác tinh thần lực vũ khí, sẽ nháy mắt trở nên gay gắt lính gác tinh thần thể, lệnh lính gác cuồng táo bùng nổ đồng thời mất đi lý trí, hơn nữa tinh thần sẽ gặp đến bị thương, yêu cầu lâu dài trị liệu thời gian mới có thể khỏi hẳn.</p>
+<p>Như vậy vũ khí ở trong lúc thi đấu tự nhiên là vi phạm quy định sử dụng, dùng đó là tự động từ bỏ trận này thi đấu.</p>
+<p>Sơ đẳng học viện thi đua rất ít sẽ gặp được như vậy vũ khí, rốt cuộc đều là học viện, cho dù có cạnh tranh quan hệ, cũng không đến mức hạ như vậy tàn nhẫn tay.</p>
+<p>Đường dực ở chuẩn bị khu thấy kha thanh cùng kha nhã biểu tình đột nhiên cảm thấy có chút không thích hợp, hắn không phải cái gì lăng đầu thanh, đối với chiến đấu nhạy bén trình độ so đã từng kinh nghiệm giang hồ đại hiệp đều phải cao, rốt cuộc Đường Môn là cái lấy ám sát lập nghiệp gia tộc, sử dụng ám khí xuất thần nhập hóa Đường Môn đệ tử đối với nguy hiểm cảm giác, tuyệt không phải người thường có thể so sánh nổi.</p>
+<p>“Mayer, nửa đường quấy nhiễu thi đấu sẽ có cái gì hậu quả?” Đường dực đột nhiên ra tiếng hỏi.</p>
+<p>Mayer sửng sốt, không tự chủ được nói: “Bổn trận thi đấu sẽ trực tiếp phán phụ…… Ngươi muốn làm cái…… Sao?!”</p>
+<p>Đương kha duy lại lần nữa cùng kha thanh triền đấu ở bên nhau thời điểm, kha nhã lộ ra ngoan độc ý cười, móc ra một phen tinh thần quấy nhiễu nguồn năng lượng vũ khí.</p>
+<p>Vũ khí ngoại hình cùng loại trọng pháo, pháo khẩu nháy mắt ngưng tụ quang năng, trận này biến cố cơ hồ liền phát sinh ở vài giây bên trong.</p>
+<p>Nam tu thấy kha nhã trong tay tinh thần quấy nhiễu trọng pháo thời điểm trong đầu cơ hồ là trống rỗng.</p>
+<p>Nếu chỉ là bình thường vũ khí nam tu sẽ không như thế thất thố, nhưng là làm lính gác, bọn họ rất rõ ràng cái dạng gì vũ khí sẽ đối lính gác tạo thành tổn thương trí mạng.</p>
+<p>Này trong nháy mắt, nam tu rất rõ ràng nếu bị đánh trúng, hắn chỉ sợ sẽ đương trường cuồng bạo, tinh thần thể cũng sẽ tạo thành khó có thể chữa trị tổn thương!</p>
+<p>Kha nhã bén nhọn thanh âm vang lên: “Đi tìm chết đi!”</p>
+<p>Nam tu cưỡng chế chính mình né tránh, cái loại này bị vũ khí hạng nặng tỏa định lúc sau sợ hãi cảm làm hắn nhất thời vô pháp làm ra phán đoán.</p>
+<p>Kha duy ý thức được không đúng thời điểm, thiếu chút nữa khóe mắt muốn nứt ra.</p>
+<p>“Nam tu!!!!!”</p>
+<p>Một bó chói mắt cường quang ầm ầm phóng thích, trong chớp nhoáng, giữa sân một bóng hình bị cường quang bao phủ.</p>
+<p>Kha duy cả người như bị sét đánh, hắn không thể tin tưởng nhìn về phía kha thanh, không ngoài sở liệu thấy kha thanh trên mặt lộ ra tới khoái ý.</p>
+<p>“Các ngươi điên rồi sao!!! Ta muốn giết các ngươi!!!” Kha duy nổi giận gầm lên một tiếng, liền phải trực tiếp xông lên đi.</p>
+<p>Kha nhã cũng cho rằng chính mình đắc thủ, trên mặt ác ý còn không có thu hồi tới, đột nhiên trợn to mắt phát hiện cường quang tan đi lúc sau, phía trước không có một bóng người.</p>
+<p>“Cái……”</p>
+<p>Đột nhiên, kha nhã cảm giác chính mình phía sau tựa hồ truyền đến một trận lạnh băng hơi thở, nàng biểu tình nháy mắt hoảng sợ, đồng tử kịch liệt co rút lại, liền kinh hô cũng chưa có thể xuất khẩu, liền chỉ cảm thấy yết hầu chợt lạnh.</p>
+<p>Máu tươi trong khoảnh khắc phun trào mà ra.</p>
+<p>Kha thanh cũng tại đây một khắc nhận thấy được dị dạng, theo bản năng quay đầu vừa thấy, cũng chỉ thấy muội muội kha nhã bộ mặt dại ra, một viên đầu trực tiếp rớt xuống dưới.</p>
+<p>“Kha nhã!!!!!”</p>
+<p>Lúc này đến phiên kha thanh khóe mắt muốn nứt ra, nhưng giây tiếp theo, lạnh băng thanh âm cũng xuất hiện ở hắn sau lưng, “Ngươi cũng đi bồi nàng đi!”</p>
+<p>Hàn quang chợt lóe, lại là một đạo máu tươi phun trào.</p>
+<p>Vây xem quần chúng nhóm bị này đột nhiên biến cố làm cho sợ ngây người.</p>
+<p>【 ngọa tào!!!! 】</p>
+<p>【 đây là đã xảy ra cái gì?!! 】</p>
+<p>【 rốt cuộc là tình huống như thế nào a!!!! 】</p>
+<p>【 a a a a a! Làm ta sợ muốn chết!!! Ta đệ nhất thị giác ốc nhật!!!! 】</p>
+<p>……</p>
+<p>Kha thanh kha nhã nháy mắt bị loại trừ, giữa sân thế nhưng có ba người.</p>
+<p>Nam tu cùng kha duy vẫn cứ không có phục hồi tinh thần lại!</p>
+<p>Đấu trường cảnh báo lúc này vang lên: “Bổn trận thi đấu kết thúc, hai bên học viện vi phạm quy định, từ trí tuệ nhân tạo vào bàn phán quyết!”</p>
+<p>Song bào thai huynh muội từ giữa sân biến mất, sau đó về tới chuẩn bị khu nội, hai người phảng phất đã chịu cực đại kinh hách, tinh thần cực độ mẫn cảm.</p>
+<p>Trí tuệ nhân tạo nhân cách hoá hình ảnh xuất hiện ở đấu trường trung gian, từ viện trưởng vội vàng tiến vào giữa sân, biểu tình thập phần khó coi.</p>
+<p>Tinh anh học viện Lưu viện trưởng cũng sắc mặt âm trầm tiến vào giữa sân, thiệp sự hai bên học viện chi gian không khí khẩn trương tới rồi cực điểm.</p>
+<p>Từ viện trưởng trước tiên dò hỏi nam tu: “Ngươi không sao chứ?!”</p>
+<p>Nam tu kinh hồn chưa định, hảo sau một lúc lâu mới ổn định xuống dưới, “Viện trưởng, ta không có việc gì, đường dực vừa rồi đem ta cứu đi.”</p>
+<p>Nói, nam tu nhân sinh lần đầu tiên cảm thấy nghĩ mà sợ, hắn cảm kích nhìn về phía sắc mặt trầm lãnh đường dực, “Cảm ơn ngươi, đường dực, ít nhiều ngươi……”</p>
+<p>Đường dực lắc đầu: “Không có việc gì liền hảo.”</p>
+<p>“Nếu quý học viện học sinh không có việc gì, kia phía chính phủ hay không hẳn là trọng tài một chút bổn tràng Lam tinh học viện vi phạm quy định vào bàn quấy nhiễu thi đấu tình huống?” Lưu viện trưởng lạnh lùng ra tiếng.</p>
+<p>Từ viện trưởng mặt trầm xuống: “Lưu viện trưởng, các ngươi học sinh vi phạm quy định sử dụng tinh thần quấy nhiễu vũ khí hạng nặng, hơn nữa cố ý thương tổn đối thủ hiềm nghi, loại tình huống này, bổn học viện có thể xin phía chính phủ đối vừa rồi hai vị người dự thi tiến hành thương tổn tội thẩm phán!”</p>
+<p>Lưu viện trưởng cười nhạo một tiếng, trào phúng nói: “Đây chính là thi đua, ở trên sân thi đấu nói thương tổn tội có phải hay không có chút buồn cười? Vừa rồi tất cả mọi người thấy vị này đường dực đồng học chính là không chút do dự giết chúng ta học viện hai tên người dự thi! Hắn vẫn là cố ý vào bàn quấy nhiễu thi đấu!”</p>
+<p>Từ viện trưởng sắc mặt đã là hắc trầm như nước: “Nếu quấy nhiễu thi đấu cùng vi phạm quy định sử dụng vũ khí hạng nặng đều phát sinh ở bổn trận thi đấu, bổn học viện xin bổn trận thi đấu trở thành phế thải.”</p>
+<p>Trí tuệ nhân tạo máy móc thanh dò hỏi: “Tinh anh học viện vi phạm quy định sử dụng vũ khí hạng nặng ở phía trước, lý nên phán phụ, Lam tinh học viện quấy nhiễu thi đấu, cũng ứng phán phụ, bổn trận thi đấu trở thành phế thải xin hỏi hai bên học viện có đồng ý hay không.”</p>
+<p>Từ viện trưởng: “Đồng ý.”</p>
+<p>Lưu viện trưởng: “Đồng ý, bất quá bổn học viện xin đoàn đội tái hủy bỏ đường dực đồng học dự thi tư cách, lý do là bổn trận thi đấu hắn trái với quy tắc hẳn là cấp cho xử phạt.”</p>
+<p>Từ viện trưởng: “Ta phản đối, trận thứ hai thi đấu vốn chính là trực tiếp trở thành phế thải, đã tạo thành một lần xử phạt, không được lặp lại xử phạt.”</p>
+<p>Trí tuệ nhân tạo: “Bác bỏ tinh anh học viện thỉnh cầu, duy trì thượng điều phán quyết bất biến. Phía dưới tiến hành đệ tam tràng đoàn đội tái quyết đấu, bổn tràng hiện tại điểm số vì tinh anh học viện 3 phân, Lam tinh học viện 0 phân, hai người tái trở thành phế thải, hai bên phân giá trị biến động, ưu tiên đạt được 5 phân có thể thắng được thăng cấp. Cảnh cáo một lần, nếu tái xuất hiện vi phạm quy định hành vi, đem tiến hành cấm tái ba năm xử phạt!”</p>
+<p>Hai bên học viện lại lần nữa trở lại chuẩn bị khu, mặt khác các bạn học quả thực lòng đầy căm phẫn.</p>
+<p>“Tinh anh cũng thật quá đáng! Thật là không biết xấu hổ!”</p>
+<p>“Đều là một đám ỷ vào trong nhà làm xằng làm bậy bại hoại đi! Quá ghê tởm!”</p>
+<p>……</p>
+<p>Từ viện trưởng nghiêm túc mở miệng: “Hảo, đoàn đội tái chuẩn bị một chút, đường dực, ngươi nắm chắc được bao nhiêu phần thắng hạ bọn họ?”</p>
+<p>Dựa theo quy tắc, kế tiếp đoàn đội tái, đối phương chỉ cần lấy được 2 phân liền sẽ trực tiếp thắng hạ thi đấu.</p>
+<p>Đoàn đội tái cũng không phải một người thi đấu, 5 cái người dự thi, mỗi người các nhớ một phân, thứ 6 phân là ở hai bên đã chia đều dưới tình huống xuất hiện trên bản đồ trung tâm vị trí cờ xí tranh đoạt vì một phân.</p>
+<p>Cho nên ở giai đoạn trước đoàn đội tái thượng, hai bên sẽ tìm mọi cách đánh chết đối phương người dự thi.</p>
+<p>Lúc này, trước hai tràng thắng lợi sẽ mang đến ưu thế là phi thường rõ ràng.</p>
+<p>Hiện tại tinh anh học viện chiếm cứ 3 phân ưu thế, chỉ cần đánh chết Lam tinh học viện hai người liền sẽ trực tiếp thắng lợi.</p>
+<p>Mà tinh anh học viện cá nhân thực lực, trừ bỏ kha duy cùng nam tu, mặt khác trên cơ bản đều so Lam tinh học viện mặt khác người dự thi cường đại một ít.</p>
+<p>Nếu đối phương cuốn lấy đường dực, tìm mọi cách đi đánh chết mặt khác người dự thi hai người, kết quả không cần nói cũng biết.</p>
+<p>Đường dực sắc mặt lạnh băng, hắn giật giật thủ đoạn, nói thẳng nói: “Đoàn đội tái, ta một người thượng.”</p>
+<p>Mọi người cả kinh: “Cái gì?!”</p>
+<p>Từ viện trưởng cũng kinh ngạc, nhưng thực mau liền minh bạch đường dực ý tứ: “Tinh anh học viện…… Đoàn đội thực lực cũng không nhược, hơn nữa thi đua bản đồ cũng không phải là phía trước khai mạc tái cái loại này, đều là nhìn không sót gì.”</p>
+<p>Đường dực gật gật đầu: “Ta biết, chính diện đánh, bọn họ cũng chưa chắc là ta đối thủ, ta một người càng thêm có lợi.”</p>
+<p>Từ viện trưởng do dự nói: “Ngươi sử dụng cung tiễn vũ khí hẳn là ở cự ly xa càng có ưu thế đi? Đoàn đội tái bản đồ cũng không lợi cho ngươi phát huy.”</p>
+<p>“Viện trưởng, ta cận chiến kỳ thật cũng không tồi, chỉ là phía trước thi đấu bản đồ xác thật càng thêm thích hợp ta phát huy mà thôi.” Đường dực nhàn nhạt nói.</p>
+<p>Từ viện trưởng trầm ngâm trong chốc lát, quay đầu đi hỏi kế tiếp muốn tham gia đoàn tái mặt khác vài tên đồng học.</p>
+<p>Mayer cái thứ nhất duy trì đường dực: “Ta tin tưởng đường dực.”</p>
+<p>Có một thì có hai, vài tên đồng học thực mau đều cho thấy chính mình có thể không đi.</p>
+<p>Rốt cuộc bọn họ thật huấn danh ngạch đã sớm xác định, trận này bọn họ đi lên thật đúng là không có nắm chắc có thể trăm phần trăm giữ được chính mình đầu người phân.</p>
+<p>Đường dực nguyện ý một người gánh vác thắng bại, bọn họ tự nhiên vui thành toàn.</p>
+<p>Từ viện trưởng cũng không nói thêm nữa, liền nói: “Kia hảo, cuối cùng một hồi, ngươi một người thượng!”</p>
+<p>……</p>
+<p>Tinh anh học viện chuẩn bị khu.</p>
+<p>Lưu viện trưởng sắc mặt âm trầm, “Cuối cùng một hồi đoàn tái, các ngươi năm người nhớ kỹ, bám trụ đường dực lúc sau mau chóng đánh chết Lam tinh học viện hai người! Ta cũng không tin, ở giai đoạn trước ưu thế lớn như vậy dưới tình huống, chúng ta học viện còn có thể thua!”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong41.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong43.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "duong-mon-thien-tai-cung-co-giap-nam-than";
+const NOVEL_TITLE = "Đường Môn thiên tài cùng cơ giáp nam thần";
+const CHAPTER_TITLE = "Chương 42";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

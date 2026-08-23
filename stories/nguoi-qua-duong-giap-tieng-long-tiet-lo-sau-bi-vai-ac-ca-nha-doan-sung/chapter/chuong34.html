@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 34. Thanh thanh thảo nguyên</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Người qua đường Giáp tiếng lòng tiết lộ sau bị vai ác cả nhà đoàn sủng
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 34. Thanh thanh thảo nguyên</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong33.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong35.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Đi tham gia Dương gia yến hội phía trước, Diệp Nhạc Dao cùng Hoắc ba Hoắc mẹ về trước Hoắc gia.</p>
+<p>Mới vừa vừa vào cửa, liền nghe được một đạo sâu kín thanh âm vang lên “Đã trở lại a?”</p>
+<p>Diệp Nhạc Dao giương mắt nhìn lên, mới phát hiện không chỉ có đại ca Hoắc Cảnh ở nhà, nhị ca Hoắc Yến thế nhưng cũng ở trên sô pha ngồi, nghe được bọn họ trở về động tĩnh, Hoắc Yến hơi mang u oán ánh mắt nháy mắt liền nhìn lại đây.</p>
+<p>Diệp Nhạc Dao không hiểu ra sao</p>
+<p>【 như thế nào chúng ta vừa trở về, nhị ca liền một bức giống như chúng ta thiếu hắn rất nhiều tiền bộ dáng? 】</p>
+<p>Hoắc Yến nghe vậy biểu tình càng u oán.</p>
+<p>Ăn dưa không mang theo thượng hắn, này so thiếu hắn tiền còn muốn nghiêm trọng!</p>
+<p>Mấy ngày hôm trước tổng nghệ thu khi, Diệp Nhạc Dao tên lâu lâu liền xuất hiện ở trên hot search, mà mỗi khi tên của hắn xuất hiện, thường thường đều sẽ cùng với một cái mới mẻ lấy ra khỏi lồng hấp nóng hổi dưa.</p>
+<p>Nhưng cố tình Hoắc Yến không ở hiện trường, căn bản nghe không được Diệp Nhạc Dao tiếng lòng, tự nhiên cũng liền ăn không đến mới mẻ dưa.</p>
+<p>Mà các võng hữu võng tốc liền tính lại mau, kia cũng mau bất quá Diệp Nhạc Dao a!</p>
+<p>Hoắc Yến mỗi lần ăn dưa đều chỉ có thể ăn một nửa, thậm chí đôi khi vẫn là cái biết cái không.</p>
+<p>Oán khí có thể không nặng sao?</p>
+<p>Hoắc ba Hoắc mẹ tự nhiên cũng thấy được Hoắc Yến trên mặt oán khí, nhưng hai người chỉ đương không thấy được, đi vào liền hỏi Hoắc Cảnh “Lễ phục đều chuẩn bị hảo sao?”</p>
+<p>Hoắc Cảnh thiêm xong cuối cùng một phần văn kiện, xoa xoa có chút phát trướng huyệt Thái Dương, lúc này mới ngẩng đầu nói “Đã chuẩn bị hảo, trễ chút sẽ có người đưa tới.”</p>
+<p>Hoắc mẹ vừa lòng gật gật đầu.</p>
+<p>Diệp Nhạc Dao trong tay cầm bình đồ uống, mới vừa uống lên khẩu, động tác bỗng nhiên hơi hơi một đốn.</p>
+<p>【 đại ca…… Như thế nào một vòng không thấy tiều tụy nhiều như vậy a? 】</p>
+<p>Hoắc ba Hoắc mẹ đồng thời đi xem Hoắc Cảnh.</p>
+<p>Hoắc Cảnh “……”</p>
+<p>Này không được hỏi một chút Hoắc ba Hoắc mẹ sao?</p>
+<p>Hoắc ba Hoắc mẹ nào dám cùng Hoắc Cảnh đối diện, hơi có điểm chột dạ từng người quay đầu.</p>
+<p>Hoắc Cảnh nhỏ đến khó phát hiện thở dài, Hoắc ba Hoắc mẹ đều đi ăn dưa xem náo nhiệt, công ty gánh nặng tự nhiên liền toàn bộ dừng ở Hoắc Cảnh trên người.</p>
+<p>Một người mỗi ngày tăng ca thêm giờ xử lý một vòng công ty lớn lớn bé bé sự vật, hắn có thể không tiều tụy sao?!</p>
+<p>Nghĩ đến đây, Hoắc Cảnh ánh mắt cũng cùng Hoắc Yến giống nhau trở nên u oán.</p>
+<p>Hoắc ba ho nhẹ một tiếng, che giấu chính mình khóe miệng ý cười.</p>
+<p>Không có biện pháp sao, nhi tử thật sự là quá ưu tú, cho nên hắn mới yên tâm đem công ty giao cho Hoắc Cảnh nha!</p>
+<p>Hoắc mẹ tắc mở miệng trực tiếp nói sang chuyện khác “Ngày mai hảo hảo nghỉ ngơi một chút đi?”</p>
+<p>Hoắc Cảnh đang có ý này, gần nhất mấy ngày nay vội hắn chân không chạm đất, quả thực là thể xác và tinh thần đều mệt, cũng là thời điểm nghỉ ngơi một chút.</p>
+<p>Nghĩ Hoắc Cảnh liền mở miệng nói “Kia ngày mai Dương thúc thúc gia yến hội ta liền không đi.”</p>
+<p>Hoắc ba Hoắc mẹ nháy mắt ánh mắt sáng quắc mà nhìn hắn.</p>
+<p>Thật sự không đi?</p>
+<p>Hoắc Cảnh trong lòng mạc danh.</p>
+<p>Không phải đều nói tốt làm hắn ngày mai nghỉ ngơi sao?</p>
+<p>Như thế nào…… Lại chuẩn bị đổi ý?</p>
+<p>Hoắc Cảnh nhíu mày, đang muốn mở miệng, liền nghe được Diệp Nhạc Dao nhỏ giọng nói</p>
+<p>【 đại ca không đi yến hội cũng hảo, rốt cuộc ta cũng không xác định có thể hay không ngăn cản hoả hoạn phát sinh, nếu là đến lúc đó hoả hoạn thật sự đã xảy ra, ta còn phải nhọc lòng đại ca an toàn. 】</p>
+<p>Hoắc Cảnh cùng Hoắc Yến hai người sắc mặt đồng thời biến đổi.</p>
+<p>Cái gì hoả hoạn?</p>
+<p>Dương gia yến hội ngày mai sẽ phát sinh hoả hoạn sao?</p>
+<p>Vì cái gì?</p>
+<p>Là ngoài ý muốn vẫn là nhân vi phóng hỏa?</p>
+<p>Hoắc mẹ thưởng thức hai người thay đổi trong nháy mắt sắc mặt, khóe miệng chậm rãi cong lên.</p>
+<p>Muốn biết a? Chính mình tự mình đi nhìn xem chẳng phải sẽ biết?</p>
+<p>Nhưng chính ngươi nói ngươi ngày mai tưởng nghỉ ngơi, kia cũng không có biện pháp lạc.</p>
+<p>Hoắc Cảnh nhấp môi không nói.</p>
+<p>Hoắc Yến còn lại là đôi mắt đều tỏa ánh sáng, không chút do dự mở miệng “Ngày mai ta không có việc gì, vừa lúc lâu lắm cũng không gặp Dương thúc thúc, ta và các ngươi cùng nhau qua đi đi.”</p>
+<p>Đại ca không phải tưởng nghỉ ngơi sao, vậy ở nhà hảo hảo nghỉ ngơi, vừa lúc hắn này bộ kịch cũng chụp xong rồi, gần nhất không có gì sự làm.</p>
+<p>Hoắc Cảnh “……”</p>
+<p>Muốn trách cũng chỉ có thể trách hắn nói quá sớm!</p>
+<p>Diệp Nhạc Dao còn lại là bất đắc dĩ mà nhìn Hoắc Yến liếc mắt một cái.</p>
+<p>【 nhị ca thật đúng là cái gì náo nhiệt đều thích thấu. 】</p>
+<p>Hoắc Yến đối Diệp Nhạc Dao phun tào không chút nào để ý.</p>
+<p>Rốt cuộc hắn là thật sự thực thích ăn dưa!</p>
+<p>Ngày thứ hai.</p>
+<p>Diệp Nhạc Dao lại một lần bị Hoắc Yến từ trên giường cấp kéo lên làm tạo hình.</p>
+<p>Thu một kỳ tổng nghệ sau, Diệp Nhạc Dao cũng dần dần thói quen bị dậy sớm làm tạo hình, nhưng bởi vì không ngủ no toàn bộ hành trình đều là nhắm hai mắt, tùy ý tạo hình sư ở trên mặt hắn lăn lộn.</p>
+<p>Chờ cả nhà đều làm xong tạo hình, bọn họ một nhà cũng ngồi trên đi trước Dương gia yến hội xe.</p>
+<p>Chỉ là ——</p>
+<p>Diệp Nhạc Dao có chút kinh ngạc thả khó hiểu mà nhìn chính mình đối diện Hoắc Cảnh.</p>
+<p>【 đại ca không phải nói hôm nay nghỉ ngơi sao? Như thế nào còn cùng chúng ta cùng đi tham gia yến hội? 】</p>
+<p>Trên xe những người khác không hẹn mà cùng mà cong lên khóe môi.</p>
+<p>Tự nhiên là có so nghỉ ngơi càng chuyện quan trọng a.</p>
+<p>Hoắc Cảnh hơi mất tự nhiên mà quay đầu đi, thanh thanh giọng nói.</p>
+<p>Ai nói tham gia yến hội liền không phải nghỉ ngơi?</p>
+<p>Chỉ cần hôm nay không có công tác xử lý, đó chính là nghỉ ngơi!</p>
+<p>Xã giao tính cái gì công tác?!</p>
+<p>Một cái nửa giờ sau, Hoắc gia xe ngừng ở Dương gia biệt thự cửa.</p>
+<p>Hôm nay là Dương gia lão gia tử 90 đại thọ, phi thường đáng giá chúc mừng, nhưng bởi vì lão nhân gia tuổi tác cũng lớn, không quá chịu được lăn lộn, cho nên Dương gia dứt khoát liền đem tiệc mừng thọ địa điểm tuyển ở nhà mình nhà cũ biệt thự.</p>
+<p>Nhà cũ tọa lạc ở giữa sườn núi, tiền viện là rất lớn một mảnh mặt cỏ, hậu viện còn có một mảnh phong cảnh thực tốt rừng cây, liền tính làm yến hội nơi sân cũng sẽ không chen chúc.</p>
+<p>Diệp Nhạc Dao vừa xuống xe liền không nhịn xuống cảm khái</p>
+<p>【 khó trách một phen hỏa liền cấp biệt thự toàn thiêu, này nhà cũ vị trí không khỏi cũng quá trật đi, xe cứu hỏa lại đây đều đến khai nửa giờ. 】</p>
+<p>Hoắc ba nghe xong lời này bước chân hơi đốn, lạc hậu Diệp Nhạc Dao vài bước dặn dò tài xế, làm hắn liên hệ người khai mấy chiếc xe chở nước lại đây, tốt nhất lại nhiều mang mấy chục bình bình chữa cháy, trước tiên chuẩn bị sẵn sàng.</p>
+<p>Tài xế nghe xong rất là nghi hoặc.</p>
+<p>Dương gia chuẩn bị tiệc thọ yến bọn họ lái xe chở nước quá tới làm cái gì?</p>
+<p>Còn muốn chuẩn bị bình chữa cháy?</p>
+<p>Đưa hạ lễ có đưa nước xe cùng bình chữa cháy sao?</p>
+<p>Tài xế đầy bụng nghi hoặc, nhưng lão bản đều phân phó xuống dưới, hắn cũng không có hỏi nhiều, xoay người liền đi làm.</p>
+<p>Người một nhà đi vào biệt thự, liền đi trước cấp Dương lão gia tử mừng thọ.</p>
+<p>Dương lão gia tử tóc toàn bộ hoa râm, nhưng cả người nhìn tinh thần quắc thước, nhìn thấy Diệp Nhạc Dao còn cười nói nhà hắn Tiểu Nguyên cùng Diệp Nhạc Dao tuổi cũng không sai biệt lắm, khoảng thời gian trước mới từ nước ngoài trở về.</p>
+<p>【 Dương Khôn thúc thúc giống như liền một cái nhi tử? 】</p>
+<p>【 cho nên cái này Dương Nguyên chính là cái kia hạt kê bị thiêu kẻ xui xẻo? 】</p>
+<p>Tần Diệu đang ở bồi Dương Khôn nói chuyện phiếm, bỗng chốc nghe được thanh âm này, hắn theo bản năng ngẩng đầu, tầm mắt ở bên trong thính đảo qua, không có nhìn đến Diệp Nhạc Dao thân ảnh.</p>
+<p>Nhưng có thể nghe được Diệp Nhạc Dao thanh âm, liền đại biểu hắn xác thật tới yến hội.</p>
+<p>Bất quá, cái gì gọi là Dương Nguyên hạt kê bị thiêu?</p>
+<p>Hạt kê là thứ gì? Chẳng lẽ là cái gì hiếm thấy cây lương thực?</p>
+<p>Dương Nguyên còn có thu thập ngũ cốc ngũ cốc đam mê sao?</p>
+<p>Liền tính Dương Nguyên thật sự thích thu thập này đó, kia lại là ai như vậy quá mức ở nhà hắn thiêu hắn hạt kê?</p>
+<p>Tư cập này, Tần Diệu đánh gãy Dương Khôn “Biểu thúc, Tiểu Nguyên người đâu? Như thế nào vẫn luôn không có nhìn đến hắn?”</p>
+<p>Dương Khôn cười “Hẳn là đi ra ngoài tiếp bằng hữu đi? Ngươi lại không phải không biết hắn đã nhiều năm không đã trở lại, hắn đều cùng hắn đám kia bằng hữu đã lâu không gặp.”</p>
+<p>Diệp Nhạc Dao vừa lúc cũng nghĩ đến chuyện này.</p>
+<p>【 ai, cái nào là Dương Nguyên a? Nếu là hắn ở nói, ta còn có thể nhắc nhở một chút hắn ——】</p>
+<p>【 như thế nào còn có hùng hài tử ở trong yến hội nháo sự? Từ từ, sẽ không chính là cái này tiểu mập mạp đi Dương Nguyên phòng xé hắn hạn định hạt kê đi? 】</p>
+<p>Ngũ cốc ngũ cốc còn hữu hạn định bản?</p>
+<p>Nạm hoàng kim vẫn là ngọc lục bảo?</p>
+<p>Tần Diệu rốt cuộc hậu tri hậu giác phản ứng lại đây, chính mình hẳn là lý giải sai rồi.</p>
+<p>Diệp Nhạc Dao trong miệng hạt kê khẳng định không phải hắn lý giải ngũ cốc ngũ cốc, nhưng vô luận là cái gì, Diệp Nhạc Dao đều nói là hạn định, cái này hạt kê giá trị khẳng định cũng sẽ không thấp, còn bị Dương Nguyên đặt ở chính mình phòng, thuyết minh thứ này đối Dương Nguyên tới nói rất quan trọng.</p>
+<p>Tần Diệu không phải một cái thích lo chuyện bao đồng người, nhưng hắn cùng Dương Nguyên cái này biểu đệ quan hệ cũng không tệ lắm.</p>
+<p>Diệp Nhạc Dao thanh âm lại lần nữa vang lên</p>
+<p>【 xác định! Chính là cái này tiểu mập mạp! Bất quá hắn này nhìn…… Cũng không giống như là cái tiểu hài tử a? Nhìn như là học sinh trung học. 】</p>
+<p>【 nhà trẻ lão sư đều sẽ phổ cập khoa học hoả hoạn tri thức, hắn không có khả năng không biết phóng hỏa nguy hại. 】</p>
+<p>【 biết phóng hỏa nguy hại còn cố ý ở Dương gia phóng hỏa ——】</p>
+<p>Càng muốn Diệp Nhạc Dao càng sinh khí 【 hắn chính là thuần hư! 】</p>
+<p>Như thế nào còn phóng hỏa? Sẽ không vạ lây toàn bộ Dương gia nhà cũ đi?</p>
+<p>Tần Diệu mày nhăn lại, nháy mắt hiểu được chuyện này khả năng còn không phải một chuyện nhỏ, vì thế hắn trực tiếp mở miệng nói “Biểu thúc, phiền toái ngươi cấp Dương Nguyên gọi điện thoại, nói cho hắn ta tìm hắn có việc gấp.”</p>
+<p>“Cái gì việc gấp?” Dương Khôn buồn bực.</p>
+<p>Tần Diệu nói “Ngài làm hắn mau chóng trở về đi.”</p>
+<p>“Hành,” Dương Khôn thực thích Tần Diệu cái này chất nhi, nếu hắn đều nói như vậy, cũng chính là gọi điện thoại sự, “Ta hiện tại liền cho hắn gọi điện thoại.”</p>
+<p>Tần Diệu đứng lên, chuẩn bị đi tìm Diệp Nhạc Dao “Hảo, kia ta cũng đi ra ngoài gọi điện thoại.”</p>
+<p>“Đi thôi đi thôi.”</p>
+<p>Tần Diệu đứng dậy, hướng ra ngoài thính đi đến, vừa đến đại sảnh, liếc mắt một cái liền thấy được đứng ở chính giữa đại sảnh Diệp Nhạc Dao.</p>
+<p>Hoắc ba Hoắc mẹ còn có Hoắc Cảnh Hoắc Yến đều đứng ở cách đó không xa, Diệp Nhạc Dao tắc đứng ở thực phẩm khu, tầm mắt thường thường sẽ dừng ở phía trước nghỉ ngơi khu một cái tiểu mập mạp trên người.</p>
+<p>Tần Diệu nhìn kỹ, xảo, này tiểu mập mạp hắn còn nhận thức.</p>
+<p>Tiểu mập mạp kêu Dương Thiêm, là Dương Khôn đệ đệ Dương Kiệt tiểu nhi tử.</p>
+<p>Bởi vì phía trước còn có hai cái tỷ tỷ, Dương Thiêm là Dương Kiệt nhỏ nhất nhi tử, cho nên từ nhỏ Dương Thiêm đã bị cưng chiều lớn lên.</p>
+<p>Dẫn tới Dương Thiêm tính cách bị dưỡng phá lệ ngang ngược bá đạo, không chỉ có ở trong nhà xưng vương xưng bá, ngay cả bên ngoài cũng là một bộ hắn thiên hạ đệ nhất bộ dáng.</p>
+<p>Từ nhỏ đến lớn Dương Thiêm cũng không thiếu gây hoạ, lớn lớn bé bé thêm lên vô số kể, nhưng mỗi lần chọc xong họa Dương Kiệt đều không có giáo dục Dương Thiêm, ngược lại còn vẻ mặt vui mừng mà đối những người khác nói Dương Thiêm không hổ là con hắn, tính cách cùng hắn nhất giống.</p>
+<p>Dương Khôn cũng không phải không có khuyên quá Dương Kiệt, ngay cả Dương lão gia tử đều răn dạy hắn dạy con vô phương, nhưng Dương Kiệt không hề có nghe đi vào, còn cảm thấy bọn họ đối chính mình nhi tử có ý kiến, thật dài một đoạn thời gian đều không có hồi nhà cũ tới xem Dương lão gia tử.</p>
+<p>Dương lão gia tử còn bị chọc tức bị bệnh một hồi, mặt sau xem xác thật cũng quản không được, dứt khoát mặc kệ.</p>
+<p>Vì thế ở Dương Kiệt cố ý mặc kệ hạ, Dương Thiêm càng ngày càng vô pháp vô thiên, trực tiếp thành một cái tiểu bá vương.</p>
+<p>Cũng nguyên nhân chính là như thế, Tần Diệu phụ thân cho rằng Dương Kiệt một nhà liền hài tử cơ bản nhất giáo dục đều làm không tốt, dần dần giảm bớt cùng Dương Kiệt một nhà liên hệ, Tần Diệu cũng có rất nhiều năm không có gặp qua Dương Thiêm.</p>
+<p>Nếu thiêu Dương Nguyên hạt kê người là Dương Thiêm, kia cũng liền không kỳ quái.</p>
+<p>Xem ra đến mau chóng làm Dương Nguyên trở về, rốt cuộc đó là chính hắn hạt kê, chỉ có thể từ chính hắn bảo hộ.</p>
+<p>Tần Diệu triều Diệp Nhạc Dao đi qua.</p>
+<p>Diệp Nhạc Dao chính cầm di động tra trẻ vị thành niên phóng hỏa nhiều ít tuổi dưới không truy cứu hình sự trách nhiệm.</p>
+<p>Phát hiện có người triều chính mình đi tới, Diệp Nhạc Dao vừa nhấc đầu, liền thấy được Tần Diệu.</p>
+<p>【 ân? Như thế nào chỗ nào chỗ nào đều có Tần tổng a? 】</p>
+<p>Tần Diệu bất đắc dĩ.</p>
+<p>Dương Khôn là hắn thân biểu thúc, Dương lão gia tử là hắn cữu tổ phụ, hắn như thế nào không thể ở chỗ này?</p>
+<p>Nhưng thật ra Diệp Nhạc Dao ——</p>
+<p>Tần Diệu đều không cần tưởng liền biết, hắn hôm nay khẳng định lại là lại đây xem náo nhiệt.</p>
+<p>Bất quá cũng ít nhiều Diệp Nhạc Dao thích xem náo nhiệt, nếu không Dương gia nhà cũ phỏng chừng hôm nay liền thật đến bị Dương Thiêm một phen hỏa cấp thiêu.</p>
+<p>Này còn làm cái gì tiệc mừng thọ?</p>
+<p>“Hảo xảo a, Tần ca.” Diệp Nhạc Dao dẫn đầu cùng Tần Diệu đánh chiếu cố.</p>
+<p>Tần Diệu cười cười “Bồi cha mẹ tới tham gia yến hội?”</p>
+<p>Diệp Nhạc Dao gật gật đầu, sau đó tầm mắt liền lướt qua Tần Diệu đi xem phía trước Dương Thiêm.</p>
+<p>Dương Thiêm lúc này đang ngồi ở bên cạnh nghỉ ngơi khu chơi game, mặt mày tất cả đều là lệ khí, sau một lúc lâu, hắn bỗng nhiên dừng động tác, trên màn hình di động là màu đen trò chơi hình ảnh, thực rõ ràng là thua trò chơi.</p>
+<p>Trên mặt hắn lệ khí tức khắc càng trọng, bỗng nhiên hắn đột nhiên giơ tay, chỉ nghe “Phanh” một tiếng, di động nện ở pha lê trên bàn, mấy cái pha lê ly nháy mắt vỡ vụn, rượu chảy đầy đất.</p>
+<p>Người ở chung quanh nghe đến động tĩnh, sôi nổi quay đầu nhìn lại đây.</p>
+<p>Diệp Nhạc Dao trực tiếp liền nhăn lại mi.</p>
+<p>【 hắn loại trình độ này đã không xem như hùng hài tử đi? Sẽ không có táo bạo chứng đi? 】</p>
+<p>Tần Diệu mày cũng trói chặt lên.</p>
+<p>Dương Thiêm mẫu thân Tưởng Phương chú ý tới một màn này, chạy nhanh đi tới nhỏ giọng dò hỏi “Bảo bối, này lại là làm sao vậy?”</p>
+<p>“Phiền đã chết —— đều tại các ngươi! Nếu không phải bởi vì ở chỗ này, ta chơi game cũng sẽ không thua!” Dương Thiêm vừa thấy Tưởng Phương lại đây, hỏa khí nháy mắt liền có phát tiết khẩu, trực tiếp đối với Tưởng Phương một đốn tay đấm chân đá.</p>
+<p>Tưởng Phương nhất thời không bắt bẻ không có thể né tránh, trực tiếp bị Dương Thiêm một chân đá vào trên bụng, đau đến nàng tê một tiếng, nhưng vẫn là theo bản năng đem hắn cấp kéo vào trong lòng ngực “Hảo hảo, không tức giận……”</p>
+<p>Diệp Nhạc Dao xem cả người không khoẻ, phát ra linh hồn chất vấn.</p>
+<p>【 mẹ nó có phải hay không có bệnh a? Hắn đều đánh ngươi, ngươi còn ôm hắn? 】</p>
+<p>Tần Diệu không tỏ ý kiến gật gật đầu.</p>
+<p>Bọn họ người một nhà đều có điểm không quá bình thường.</p>
+<p>Nếu không nhà bọn họ cũng sẽ không mấy năm trước liền cùng bọn họ chặt đứt liên hệ.</p>
+<p>Dương Thiêm đánh Tưởng Phương còn không hết giận, lại nâng lên tay bắt đầu tạp chén rượu, một bộ hận không thể muốn đem chung quanh hết thảy đều tạp lạn bộ dáng.</p>
+<p>Chung quanh khách khứa nghe được động tĩnh, sôi nổi đi xa một ít.</p>
+<p>Mắt thấy nơi này động tĩnh càng lúc càng lớn, Dương Khôn nghe tin mà đến.</p>
+<p>Nhìn đến bên này loạn thành như vậy, nháo sự người vẫn là hắn thân cháu trai, trên mặt hắn biểu tình nháy mắt lạnh xuống dưới, trầm giọng nói “Dương Thiêm! Ngươi đang làm cái gì?!”</p>
+<p>Dương Kiệt đi theo ra tới, nghe được Dương Khôn như vậy huấn hắn bảo bối nhi tử, nháy mắt bất mãn nói “Ca, ngươi hung hắn làm cái gì?”</p>
+<p>Dương Khôn quả thực phải bị Dương Kiệt tức chết “Hôm nay là ba 90 đại thọ, ngươi mặc kệ hảo ngươi nhi tử, vẫn từ hắn ở chỗ này nháo? Ngươi là tưởng ném ai mặt?”</p>
+<p>Dương Kiệt không cho là đúng “Hài tử bất quá chính là tâm tình không tốt, phát điểm tiểu tính tình sao? Hắn ở nhà cũng như vậy, ngươi đến nỗi như vậy hung?”</p>
+<p>“Này còn gọi tiểu tính tình?” Dương Khôn nổi giận đùng đùng, “Dương Kiệt ta đã sớm cùng ngươi đã nói không cần quá quán Dương Thiêm, ngươi nhìn xem ngươi đều đem quán thành bộ dáng gì?”</p>
+<p>Diệp Nhạc Dao nghe được Dương Kiệt tên này, biểu tình bỗng chốc biến đổi.</p>
+<p>【 Dương Kiệt tên này…… Giống như cũng có chút quen tai? 】</p>
+<p>Hoắc gia đoàn người lúc này cũng đã đi tới, Hoắc Cảnh còn thoáng đem Diệp Nhạc Dao sau này kéo một chút “Đã đứng tới điểm.”</p>
+<p>Ăn dưa xem náo nhiệt có thể, nhưng tuyệt đối không thể làm Diệp Nhạc Dao bị thương.</p>
+<p>Diệp Nhạc Dao ngoan ngoãn mà đi theo sau lui lại mấy bước, sau đó thừa dịp Hoắc gia người cùng với Tần Diệu lực chú ý đều ở phía trước, chạy nhanh lấy ra di động, mở ra bản ghi nhớ.</p>
+<p>Chỉ là tìm nửa ngày, Diệp Nhạc Dao cũng chưa tìm được cái gì hữu dụng tin tức, chỉ nhìn thấy Dương Kiệt là Dương Khôn đệ đệ.</p>
+<p>【 chẳng lẽ không phải quyển sách này cốt truyện? 】 Diệp Nhạc Dao cân nhắc, bắt đầu nhanh chóng ở trong não hồi ức phía trước xem qua tiểu thuyết cốt truyện.</p>
+<p>Diệp Nhạc Dao hồi ức cốt truyện công phu, cách đó không xa trò khôi hài còn ở tiếp tục.</p>
+<p>Dương Thiêm từ nhỏ đã bị cha mẹ cưng chiều, đừng nói ai huấn, ngay cả cha mẹ đều không có lớn tiếng nói với hắn nói chuyện, đem hắn dưỡng không sợ trời không sợ đất, nghe được Dương Khôn như vậy răn dạy chính mình, không đợi Dương Kiệt cùng Tưởng Phương mở miệng, Dương Thiêm liền lạnh lùng nói “Quản ngươi đánh rắm! Ngươi là ai, ngươi dựa vào cái gì quản ta?!”</p>
+<p>Dương Khôn nghe được lời này đều kinh ngạc.</p>
+<p>Dương Kiệt cùng Tưởng Phương cũng đều đem Dương Thiêm xem thành chính mình mệnh căn tử, ngày thường bọn họ hai vợ chồng chính mình đều luyến tiếc răn dạy Dương Thiêm, vừa mới nghe được Dương Khôn như vậy không cho hài tử mặt mũi, cũng lãnh hạ mặt.</p>
+<p>“Ca, ngươi đừng thật quá đáng!” Dương Kiệt trầm giọng nói.</p>
+<p>Tưởng Phương cũng nói “Đại ca, chúng ta nhà mình hài tử chính chúng ta sẽ giáo dục, không cần ngươi tới xen vào việc người khác!”</p>
+<p>“Ta xen vào việc người khác?!” Dương Khôn là thật sự phải bị tức chết rồi, “Tưởng Phương, ta là Dương Thiêm thân đại bá, hôm nay là hắn thân gia gia sinh nhật yến, hai người các ngươi mặc kệ hảo hắn vẫn từ hắn phát giận nháo sự, ta hiện tại tới nói hai câu cũng không được sao?”</p>
+<p>Diệp Nhạc Dao nghe đến đó, đôi mắt bỗng chốc trợn to.</p>
+<p>【 Tưởng Phương?! 】</p>
+<p>【 này tiểu mập mạp mẹ kêu Tưởng Phương a? 】</p>
+<p>Diệp Nhạc Dao rốt cuộc nhớ tới chính mình ở đâu nghe qua Dương Kiệt tên.</p>
+<p>Hoắc gia người không nhịn xuống đều quay đầu lại nhìn mắt Diệp Nhạc Dao.</p>
+<p>Rốt cuộc ở đâu nghe qua a?</p>
+<p>Nhanh lên nói nha.</p>
+<p>Chẳng lẽ còn có khác đại dưa?</p>
+<p>Diệp Nhạc Dao không có chú ý tới người nhà ánh mắt, hắn ngẩng đầu đi xem phía trước tình huống.</p>
+<p>Dương Kiệt cùng Tưởng Phương liền không vui nghe người khác nói Dương Thiêm không phải, mặc dù người này là Dương Kiệt thân ca.</p>
+<p>Hai vợ chồng trực tiếp mặt trận thống nhất, mở miệng chính là làm Dương Khôn cùng Dương Thiêm xin lỗi.</p>
+<p>Dương Khôn đều phải bị khí cười.</p>
+<p>Vây xem khách khứa có người nhìn không được, ra tới nói câu công đạo lời nói.</p>
+<p>Dương Kiệt quay đầu liền bắt đầu nhân thân công kích cái kia khách khứa “Cùng ngươi có mao quan hệ a? Ngươi mẹ nó là ai a, luân được đến ngươi giáo dục ta nhi tử?”</p>
+<p>Khách khứa mặt nháy mắt tái rồi.</p>
+<p>Dương Khôn tức giận đến ngực kịch liệt phập phồng, chỉ vào Dương Kiệt cái mũi “Dương Kiệt! Ngươi tin hay không ta làm bảo an đem ngươi ném văng ra?!”</p>
+<p>Dương Kiệt hừ một tiếng “Vậy ngươi nhưng thật ra đem ta ném văng ra a! Ta xem như đã nhìn ra, ngươi hôm nay cũng không phải thành tâm kêu ta tới! Tiểu Thiêm không phải tạp mấy cái chén rượu sao? Ngươi cái này thân đại bá đến nỗi phát lớn như vậy hỏa?”</p>
+<p>Dương Khôn bị hắn lời này tức giận đến không được.</p>
+<p>Mắt thấy vây xem khách khứa càng ngày càng nhiều, Tần Diệu đang do dự muốn hay không tiến lên khuyên giải.</p>
+<p>Chính là lúc này, Diệp Nhạc Dao sâu kín thở dài tiếng vang lên</p>
+<p>【 mấu chốt là Dương Khôn cũng không phải Dương Thiêm thân đại bá a. 】</p>
+<p>Tần Diệu bước chân lập tức một đốn.</p>
+<p>Cái gì?</p>
+<p>Hoắc gia người cũng là vẻ mặt khiếp sợ.</p>
+<p>Không phải thân đại bá?</p>
+<p>Kia nói cách khác ——</p>
+<p>【 Dương Thiêm căn bản là không phải Dương Kiệt thân sinh nhi tử! 】</p>
+<p>Diệp Nhạc Dao cuối cùng tìm được rồi mấu chốt cốt truyện.</p>
+<p>【 không nghĩ tới Tưởng Phương thế nhưng là vạn nhân mê tiểu thuyết trung sa sút nữ chủ…… Ở nhận thức Dương Kiệt phía trước, nàng liền chu toàn ở vài cái nam xứng bên người, thẳng đến gặp được Dương Kiệt cùng hắn kết hôn sau, thế nhưng còn ở cùng những cái đó nam xứng liên lụy không rõ ——】</p>
+<p>Diệp Nhạc Dao thanh âm bỗng nhiên cất cao, ngữ khí hưng phấn</p>
+<p>【 cho nên không chỉ là Dương Thiêm, ngay cả Dương Kiệt kia hai cái không chịu hắn đãi thấy nữ nhi cũng không phải Dương Kiệt thân sinh hài tử? 】</p>
+<p>【 hắc hắc, Dương Kiệt chính là tiểu thuyết trung mạnh nhất nón xanh vương a, hắn quả thực là cả người mạo lục quang, lục người hốt hoảng a! 】</p>
+<p>Tần Diệu đồng tử động đất.</p>
+<p>Hoắc ba Hoắc mẹ càng là giật mình.</p>
+<p>Ba cái hài tử đều không phải Dương Kiệt?</p>
+<p>Hoắc gia người nhìn về phía Dương Kiệt ánh mắt nháy mắt liền mang lên một tia thương hại.</p>
+<p>Dương Kiệt quả thực đỉnh đầu một mảnh thanh thanh thảo nguyên!</p>
+<p>【 làm ta nhìn xem Tưởng Phương vì cái gì muốn cùng Dương Kiệt kết hôn? 】</p>
+<p>Diệp Nhạc Dao nhanh chóng phiên bản ghi nhớ, thực mau tìm được rồi nguyên nhân</p>
+<p>【 thì ra là thế, Tưởng Phương cùng Dương Kiệt kết hôn căn bản là không phải bởi vì thích Dương Kiệt, nàng là coi trọng Dương gia gia sản! 】</p>
+<p>【 cùng Dương Kiệt kết hôn sau, Tưởng Phương liền vẫn luôn ở châm ngòi ly gián, ở nàng ngày qua ngày khuyến khích hạ, Dương Kiệt cùng Dương gia quan hệ càng ngày càng kém, cuối cùng Dương gia phân gia, mà này đó tài sản lại ở Tưởng Phương dụ hống hạ toàn bộ chuyển cấp tới rồi Dương Thiêm danh nghĩa. 】</p>
+<p>【 đến thời cơ thích hợp, Tưởng Phương trực tiếp cùng Dương Kiệt ly hôn, mang theo Dương Thiêm cùng Dương gia phân tới tài sản cùng nàng tình nhân trực tiếp xa chạy cao bay! 】</p>
+<p>Hoắc gia người càng nghe càng cảm thấy kích thích.</p>
+<p>Sau đó đâu sau đó đâu?</p>
+<p>Cuối cùng Dương Kiệt thế nào?</p>
+<p>Diệp Nhạc Dao lúc này cũng rốt cuộc nhớ tới toàn bộ cốt truyện.</p>
+<p>【 mà đáng thương Dương Kiệt, thẳng đến Tưởng Phương mang theo tình nhân chạy, đều còn không biết hắn ba cái hài tử không một cái là của hắn. 】</p>
+<p>【 mà Dương Khôn cũng bị hắn cái này đệ đệ thương thấu tâm, tự nhiên cũng không có lại quản quá hắn. Mặt sau Dương Kiệt sinh bệnh nằm viện, bồi giường đều không có một cái. 】</p>
+<p>“Này không tự làm tự chịu sao?” Hoắc Yến không nhịn xuống nhỏ giọng nói.</p>
+<p>Hoắc Cảnh tán thành gật gật đầu.</p>
+<p>Mắt thấy vây lại đây khách khứa càng ngày càng nhiều, thậm chí ngay cả nội sảnh Dương lão gia tử đều kinh động, Dương Khôn không nghĩ lại cùng Dương Kiệt sảo.</p>
+<p>“Tính ta lười đến cùng ngươi sảo!” Dương Khôn xoay người, bắt đầu dặn dò người hầu đem nơi này nhanh chóng quét tước ra tới, sau đó xoay người liền đi tìm vừa mới bị Dương Kiệt mắng khách khứa xin lỗi.</p>
+<p>Dương Kiệt lại như là đánh thắng trận giống nhau, khiêu khích mà nhìn Dương Khôn rời đi, sau đó kéo qua Dương Thiêm, ở trên mặt hắn hôn một cái, cười hỏi “Nhi tử, ba ba lợi hại hay không?”</p>
+<p>Dương Thiêm cười khanh khách hai tiếng “Lợi hại!”</p>
+<p>“Vậy ngươi nhớ rõ về sau cũng muốn giống ta học tập!” Dương Kiệt cười.</p>
+<p>Dương Thiêm chạy nhanh gật đầu nói tốt.</p>
+<p>Dương Kiệt lại đi ôm Tưởng Phương bả vai, Tưởng Phương cúi đầu nháy mắt giấu đi chính mình trong mắt chán ghét.</p>
+<p>Dương Khôn đều đi rồi, vây xem khách khứa tự nhiên cũng liền tan.</p>
+<p>Dương Thiêm thấy nơi này không có gì hảo ngoạn, dứt khoát hướng tới nội sảnh đi đến.</p>
+<p>Tưởng Phương thấy thế chạy nhanh giương giọng hỏi “Tiểu Thiêm, ngươi đi đâu nhi?”</p>
+<p>“Ta lên lầu chơi chơi!”</p>
+<p>Dương Thiêm chạy trốn tốc độ cực nhanh, nửa đường thậm chí đụng phải một người khách khứa, khách khứa kinh hô ra tiếng.</p>
+<p>Không đợi khách khứa mở miệng nói cái gì, Dương Thiêm liền chạy không ảnh nhi.</p>
+<p>Dương Kiệt thấy thế còn ở cười ha ha “Nhìn xem, chúng ta nhi tử thể lực thật tốt!”</p>
+<p>【 kia có thể không hảo sao? Đều mau phì thành heo. 】</p>
+<p>Diệp Nhạc Dao thật sự là đối Dương Kiệt một nhà không có hảo cảm.</p>
+<p>Đột nhiên, Diệp Nhạc Dao cả kinh 【 Dương Thiêm mới vừa nói hắn muốn lên lầu, Dương Nguyên phòng không phải ở trên lầu sao? 】</p>
+<p>Vừa lúc lúc này một đạo sang sảng giọng nam từ phía sau truyền đến ——</p>
+<p>“Diệu ca! Ta ba nói ngươi tìm ta a?”</p>
+<p>Diệp Nhạc Dao quay đầu lại, liền thấy một cái diện mạo soái khí nam sinh bước nhanh triều bọn họ cái này phương hướng chạy tới, nam sinh cười đến vẻ mặt xán lạn “Ta đều trở về lâu như vậy, Diệu ca ngươi mới nhớ tới hỏi ta, ta đều cho rằng Diệu ca ngươi đã quên ta đâu!”</p>
+<p>Tần Diệu cùng hắn ôm ôm, cười nói “Sao có thể?”</p>
+<p>Dương Nguyên hắc hắc một nhạc, lôi kéo Tần Diệu cánh tay liền chuẩn bị đi ra ngoài.</p>
+<p>Diệp Nhạc Dao rốt cuộc nhịn không được</p>
+<p>【 ngươi còn cười đâu! Ngươi lại không lên lầu ngươi hạt kê liền phải bị toàn ca! 】</p>
+<p>Tần Diệu đứng ở tại chỗ vẫn không nhúc nhích.</p>
+<p>“Mang ta đi một chút phòng của ngươi.” Tần Diệu ngữ khí bình tĩnh.</p>
+<p>Vừa lúc hắn cũng muốn nhìn xem, hạt kê đến tột cùng là cái thứ gì.</p>
+<p>Dương Nguyên buồn bực “Ân?”</p>
+<p>Như thế nào đột nhiên muốn đi hắn phòng?</p>
+<p>“Ta tưởng tham quan một chút.” Tần Diệu tùy tiện bịa chuyện cái lấy cớ.</p>
+<p>Diệp Nhạc Dao chạy nhanh nói “Ta có thể cùng nhau sao?”</p>
+<p>Dương Nguyên “A?”</p>
+<p>Không phải, hắn phòng có cái gì hảo tham quan?</p>
+<p>Còn có, Tần Diệu bên cạnh cái này tiểu soái ca lại là ai?</p>
+<p>Không phải là hắn ca bạn trai đi?</p>
+<p>Dương Nguyên đôi mắt nháy mắt tỏa ánh sáng.</p>
+<p>Nếu là Diệp Nhạc Dao biết Dương Nguyên suy nghĩ cái gì, hắn khẳng định sẽ nghiêm túc giải thích một câu</p>
+<p>Không, ta chỉ là một cái tốt bụng hạt kê hiệp!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong33.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong35.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "nguoi-qua-duong-giap-tieng-long-tiet-lo-sau-bi-vai-ac-ca-nha-doan-sung";
+const NOVEL_TITLE = "Người qua đường Giáp tiếng lòng tiết lộ sau bị vai ác cả nhà đoàn sủng";
+const CHAPTER_TITLE = "Chương 34. Thanh thanh thảo nguyên";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
