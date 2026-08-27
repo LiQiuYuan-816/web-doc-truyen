@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 132</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Thái tử thiên thu vạn tái
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 132</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong131.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong133.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Du Châu tin chiến thắng! Tây Thục bốn châu phủ chinh dân hộ lương, lấy dân cứu tế cấp tin vừa mới truyền đến, Tây Thục bụng tin chiến thắng lại là như vậy mau liền truyền đến! Trong triều đủ loại quan lại lẫn nhau xem lẫn nhau, bọn họ mấy ngày trước còn ở tăng binh cứu tế sự buồn rầu, mà hiện tại không ngừng cứu tế sự có tin tức, ngay cả Tây Thục bên kia đều ra tin chiến thắng!</p>
+<p>“Tần vương bên kia đại quân số lượng không ít, một ngàn người như thế nào khai lộ?!” Có quan văn kinh ngạc.</p>
+<p>“Lục gia quân như vậy nhiều chuẩn bị chiến đấu, căn bản đi không mau a!” Có cái võ quan sắc mặt khẽ biến “Hay là bọn họ bỏ xuống quân nhu!?”</p>
+<p>“Điên rồi sao? Nếu là ở thời điểm này bỏ xuống quân nhu, kia Tần vương quân một đoạn cản phía sau lộ, Lục gia quân liền hoàn toàn mất đi hậu viên!”</p>
+<p>Một ngàn tinh binh mở đường, tất cả mọi người cảm thấy không có khả năng.</p>
+<p>Ngay cả Hồ Bất Ngộ đều ẩn ẩn nhíu mày, bởi vì điểm này ở hắn ngoài ý liệu. Tây Thục Lục gia quân bên kia, Ứng Phù Thăng chưa bao giờ có can thiệp, cũng tùy ý Lục gia quân đi an bài sở hữu, ở giữa chỉ có lục bộ phụ trách lương thảo cùng quân bị là Đông Cung bị thượng……</p>
+<p>Từ từ? Lương thảo cùng quân bị!</p>
+<p>Hồ Bất Ngộ ý thức được cái gì.</p>
+<p>Ứng Phù Thăng nghe đủ loại quan lại nghị luận, hắn không có nói.</p>
+<p>Triều đình cần thiết nôn nóng, cần thiết vô thố, như vậy Ám Thung mới sờ không rõ ý tưởng.</p>
+<p>Không sai, đối với mang theo bọc hành lý đánh giặc Lục gia quân tới nói quân nhu chính là uy hiếp lớn nhất, đặc biệt là ở lấy đường núi là chủ Tây Thục tới nói, quan đạo cùng thuỷ vận căn bản không thể thực hiện được. Ở như vậy địa hình thượng, đối Lục gia quân mà nói là nhất không am hiểu…… Nhưng Thích Hàn Chu đang đi tới Tây Thục trước, cũng đã ý thức được điểm này.</p>
+<p>Thích gia thiếu tướng quân, đánh quá càng nghiêm túc chiến, cũng sờ qua phía sau màn người cục.</p>
+<p>Ngày ấy Đông Cung nội, kia trương Tây Thục bản đồ rõ ràng hiện lên ở Ứng Phù Thăng trong đầu.</p>
+<p>Quân nhu là uy hiếp, nhưng nếu là không tồn tại quân nhu đâu?</p>
+<p>Giang Nam là hắn xa hoa đánh cuộc.</p>
+<p>Tây Thục làm sao không phải Thích Hàn Chu xa hoa đánh cuộc?</p>
+<p>Thích Hàn Chu chẳng sợ rời đi sa trường bảy năm, nhưng hắn cũng ở Cẩm Y Vệ đãi bảy năm.</p>
+<p>Năm ấy rời đi Giang Nam sau, có thể ở Tây Thục tìm được Tần vương nhiều tàng binh mà người, như thế nào sẽ chỉ có tình báo chiêu thức ấy an bài?</p>
+<p>Tây Thục cảnh nội, Tần vương đại quân từ Lương Châu Thành một đường hướng bắc, cùng Lục gia quân oan gia ngõ hẹp. Mấy ngày trước Lục gia quân từ Tây Thục bụng ra bên ngoài triệt khi bị Tần vương quân ngăn chặn, Tần vương quân quen thuộc Tây Thục địa hình, bọc đánh khi cắt đứt Lục gia quân đường lui.</p>
+<p>“Bọn họ muốn đi Du Châu không dễ dàng như vậy, cắt đứt bọn họ đường lui, từng cái đánh bại.” Tần vương tướng lãnh trong lòng biết rõ ràng, Lục gia quân từ mang theo như vậy nhiều lương thảo nhập Tây Thục, cũng đã mất đi sở hữu đường lui, “Thám báo đâu, Lục gia quân bên kia là tình huống như thế nào!?”</p>
+<p>“Chúng ta ở Du Châu ngoại tao ngộ Lục gia quân một tiểu đội chặn lại.”</p>
+<p>“Không hảo! Tướng quân, Lục tướng quân phân lộ rút lui, chúng ta dự đánh giá sơ suất, bọn họ hành quân tốc độ thực mau!”</p>
+<p>Ở trên chiến trường, cắt đứt đường lui đối với Lục gia quân mà nói cơ hồ là một cái trí mạng điểm, nhưng hiếm thấy mà đương phát sinh chuyện này thời điểm, Lục gia quân thế nhưng không có lâm vào tuyệt cảnh.</p>
+<p>Tần vương quân tướng lãnh kinh ngạc, sao có thể!?</p>
+<p>Đây chính là đường núi!!</p>
+<p>Tây Thục núi sâu nội, Lục gia quân đang ở nhanh chóng lên đường.</p>
+<p>Thích Hàn Chu nói dùng một ngàn tinh binh mở đường, Lục gia quân kỳ thật không ôm quá lớn hy vọng.</p>
+<p>Phải biết bọn họ mang theo đại lượng quân nhu, đây là lớn nhất chỗ khó, chú định bọn họ hành quân tốc độ muốn xa chậm với Tần vương quân, ngược lại sẽ bởi vì này đó quân nhu dẫn tới chiến thuật bại lộ. Chẳng sợ Thích Hàn Chu có thể dò ra lộ tới, tốc độ không mau, chú ý lộ sẽ bị Tần vương quân trước tiên phát hiện!</p>
+<p>Nhưng bọn họ trăm triệu không nghĩ tới, Thích Hàn Chu làm cho bọn họ bỏ xuống quân nhu!</p>
+<p>“Thiếu tướng quân trước tiên an bài quá, Lục gia quân mang theo đích xác thật là chiến cần phẩm, nhưng có chút đồ vật trên đường kinh Tây Thục trạm dịch khi, đã bị bí mật thay đổi thành vật liệu đá.” Diệp Huyền Cửu lĩnh mệnh tại đây bẩm báo, nói chuyện khi cảm nhận được bốn phương tám hướng ánh mắt mau đem hắn giết ch·ế·t, hắn căng da đầu nói “Bỏ xuống này đó vật liệu đá, hành quân tốc độ là có thể nhanh hơn ít nhất ba ngày!”</p>
+<p>Lục gia quân thật là bị Đông Cung chơi một tay lại một tay.</p>
+<p>Mấy ngày trước nói cho bọn họ mang đồ vật là chuẩn bị chiến đấu, kết quả mấy ngày sau nói cho bọn họ trên đường bí mật thay đổi một ít vật liệu đá, giấu ở trên đường trạm dịch. Lục gia quân mang theo lương thảo quá nhiều, rất khó đi cẩn thận kiểm tra sở hữu, đặc biệt là cố ý che lấp quá chiếc xe, chân chính đi xem xét khi, Lục gia lão tướng thật là khí cười.</p>
+<p>Bọn họ liền thật sự mang theo hỗn vật liệu đá lương thảo tiến Tây Thục bụng.</p>
+<p>“Các ngươi thiếu tướng quân là thật sự điên rồi, thứ này nếu là thật vận tiến Tây Thục bụng, kia Tần vương quân tạo lời đồn liền là sự thật!” Lục gia tướng sĩ lần cảm vớ vẩn nói.</p>
+<p>“Đây là thiếu tướng quân lưu chuẩn bị ở sau, bởi vì lúc ấy nếu là Lục tướng quân khăng khăng đi vào, chúng ta chỉ có thể đúng sự thật bẩm báo.” Diệp Huyền Cửu nói “Tây Thục bụng chính là âm mưu, vô luận như thế nào đều không thể tiến vào.”</p>
+<p>Bao gồm ở Tây Thục bụng trước, Lục gia quân khăng khăng đi vào tình huống cũng là diễn.</p>
+<p>Giấu giếm này đó, là bởi vì hành quân tất có quân địch thám báo, nếu Lục gia quân không đủ thật, kia lừa gạt không được Tần vương. Mà hiện tại Tây Thục bốn châu phủ bên kia đại thắng, mấy thứ này cũng liền không cần thiết che giấu…… Chính như Đông Cung sở làm sách lược, Lục gia quân từ đầu đến cuối chính là vì đánh giặc, kia ngay từ đầu mục tiêu chính là muốn đem Lục gia quân đưa đến nhất thích hợp Du Châu bình nguyên.</p>
+<p>Thích Hàn Chu cùng Ứng Phù Thăng ăn quá nhiều quan trường Ám Thung mệt, Lục gia quân phi Đông Cung có thể thấm vào, cho nên bọn họ chỉ có thể sau lưng bí mật làm ám tay. Hành quân vấn đề lớn nhất chính là quân nhu, đặc biệt ở Tây Thục khu vực, cho nên lúc ấy Ứng Phù Thăng lưu một vạn tinh binh khi, đại bộ phận đi Giang Nam, nhưng tiểu bộ phận bị Thích Hàn Chu lưu tại Tây Thục.</p>
+<p>“Lấy cái này tốc độ, chúng ta không cần bảy ngày là có thể đến Du Châu.”</p>
+<p>Lục tướng quân trầm tư một lát nói “Hắn khai lộ ổn thỏa sao?”</p>
+<p>“Thiếu tướng quân nói, chỉ cần hành quân tốc độ đi lên, là có thể mê hoặc quân địch tầm nhìn.” Diệp Huyền Cửu nghĩ đến Đông Cung mấy đêm không diệt đèn, trận này nhằm vào Tần vương tạo phản cục, bọn họ sớm tại Giang Nam khi liền ý thức được, càng bởi vì trước tiên ý thức được, càng có thể phòng bị Tần vương chuẩn bị ở sau.</p>
+<p>Thích Hàn Chu mượn một ngàn tinh binh mở đường, bên trong có hơn mười người Khinh Y Vệ.</p>
+<p>Khinh Y Vệ ở Bắc Cảnh Thích gia quân lấy quần áo nhẹ vì doanh, doanh trung các đều là lấy một địch mười hảo thủ, mà từ Khinh Y Vệ ở kinh thành qua bên ngoài sau, lần này Tây Thục chi loạn, trừ bỏ lưu tại Đông Cung mấy người, cơ hồ toàn viên tới rồi Tây Thục.</p>
+<p>Dẫn đường, Thích Hàn Chu huề tinh binh ở phía trước mở đường, mỗi hành mười dặm mà lưu một người Khinh Y Vệ dẫn đường.</p>
+<p>Tuyết thiên đánh giặc nhất kỵ ở núi rừng lạc đường, quá mức rõ ràng ký hiệu dễ dàng bị quân địch phát hiện, nhưng không rõ ràng tín hiệu sẽ bị đại tuyết che giấu. Khinh Y Vệ dẫn đường không giống nhau, này hơn mười vị linh hoạt Khinh Y Vệ vừa vào núi rừng liền ẩn nấp trong đó, ở Lục gia quân đến riêng vị trí khi mới dẫn đường, cực đại hạn độ mà làm Lục gia quân tránh đi rất nhiều nan đề.</p>
+<p>Lục tướng quân nhìn đến Thích Hàn Chu khai ra tới lộ, vứt lại quân nhu vấn đề, lại nói hành quân. Này không có khả năng là trong khoảng thời gian ngắn có thể khai lộ, Thích Hàn Chu chỉ sợ hoa thời gian rất lâu đi thăm dò Tây Thục lộ, thả sờ chính là hành quân lộ. Chẳng sợ Cẩm Y Vệ chính sử Kỷ Vô Danh tới, cũng chưa biện pháp sờ ra như vậy một cái thích hợp quân đội lộ tới, bởi vì người có thể đi lộ, cùng quân có thể đi lộ không giống nhau.</p>
+<p>Tây Thục nhất phức tạp chính là các loại quỷ quyệt mạc biện địa hình bẫy rập, mà mấy vấn đề này, ở Lục gia quân một đường đi xa lại đây thời điểm, đã nhớ kỹ hơn phân nửa. Bọn họ Lục gia quân từ kinh thành ra tới đến Tây Thục bụng, dọc theo đường đi đi đều là hẻo lánh đường xa, này đó lộ xảo quyệt thả hẻo lánh, là thật là không dễ đi, hơn nữa mang theo đại lượng bọc hành lý, dẫn tới đi đường chậm. Cố tình chính là điểm này, lại cũng làm này đó hành quân đánh giặc các tướng sĩ lưu ý đến Tây Thục địa hình hiểm trở.</p>
+<p>Lúc trước Đông Cung cấp vận lương lộ, kỳ thật là một cái đã sớm quy hoạch tốt lộ.</p>
+<p>Cẩm Y Vệ làm thiên tử thân vệ, nhất am hiểu chính là âm thầm hành sự.</p>
+<p>Bọn họ lấy Binh Bộ trạm dịch làm cơ sở điểm, tránh đi Tây Thục châu phủ xếp vào bí mật trạm canh gác điểm đổi vận quân nhu đồng thời, cũng đã sớm ở quy hoạch một cái lộ đi thông Du Châu.</p>
+<p>Trên đường khả năng sẽ gặp được địa hình, phụ cận nhanh nhất có thể đến trạm dịch…… Thích Hàn Chu cùng Đông Cung vị kia Thái tử chỉ sợ đã sớm quy hoạch thật lâu, biết Tây Thục chiến đánh lên tới tất nhiên điều Lục gia quân, biết như thế nào dụ địch cũng biết như thế nào lui lại, này hai người đem này đó giấu đến cũng thật chu đáo chặt chẽ a!</p>
+<p>“Quân nhu phân khu vực vứt, hắn làm như vậy còn có một cái dụng ý.” Lục tướng quân minh bạch Thích Hàn Chu ý tưởng, “Tần vương quân tưởng chính là bức chúng ta cùng đường, kia này quân nhu vứt liền cần phải có kỹ xảo, nếu là Thích thiếu tướng quân làm như vậy, trong triều hẳn là có cho hắn tiếp ứng Thái tử……”</p>
+<p>Thích gia tiểu tử này, cấp Lục gia quân thật để lại một cái diện tích rộng lớn chiến trường a.</p>
+<p>Tây Thục Du Châu, Lục gia quân ở trong bảy ngày đuổi tới Du Châu bên cạnh, Lục tướng quân hành sự có rõ ràng Lục gia tác phong, nếu minh bạch Thích Hàn Chu dụng ý, thực mau liền thượng nói. Chờ Lục gia quân đi được tới Du Châu biên giới thời điểm, thực sự có hai đội Tần vương quân mắc mưu đi theo bị phản mai phục.</p>
+<p>Đông nguyệt đại tuyết, Lục gia quân cùng Tần vương quân giao chiến ở Du Châu bình nguyên khai hỏa.</p>
+<p>Thích Hàn Chu bí mật tiềm hành thân vệ cũng đã liên hệ đến trên đường bí mật trạm gác ngầm điểm, từ Lục gia quân kia thay đổi chân chính chuẩn bị chiến đấu, thực mau liền sẽ đến Du Châu ám điểm. Hắn thay đổi một thân giáp trụ, trên người đã là bao trùm một tầng mỏng tuyết, rét lạnh so ra kém Bắc Cảnh, lại mạc danh âm hàn.</p>
+<p>Thích Hàn Chu cúi đầu nhìn nơi xa Du Châu, hắn nhìn nơi xa đã khai chiến Du Châu bình nguyên, trong lòng nghĩ đến một người khác.</p>
+<p>Xa ở kinh thành người không biết tình cảnh như thế nào, bọn họ lần này sở hữu hành động quá mức bộc lộ mũi nhọn, nhưng đây cũng là ứng đối Tây Thục thương vong nhỏ nhất biện pháp.</p>
+<p>Khinh Y Vệ hỏi “Thiếu tướng quân?”</p>
+<p>Thích Hàn Chu nắm dây cương tay ẩn ẩn rung động, hắn nhíu mày nói “Quá thuận lợi.”</p>
+<p>Tây Thục Lương Châu, liên tiếp phục kích Lục gia quân thất bại Tần vương quân tức muốn hộc máu, Tần vương trong doanh trướng một chúng quân đem tập hợp, luận binh lực bọn họ hơn xa Lục gia quân, nhưng bọn họ mục đích này đây ít nhất thương vong chiến thắng Lục gia quân, bởi vì triều đình sau lưng còn có một cái Bắc Cảnh Thích gia, nếu là ở Du Châu chiến tổn thất thảm trọng, còn mất đi Tây Thục dân tâm, kia bọn họ liền rất khó đối kháng Bắc Cảnh.</p>
+<p>“Giang Nam đâu? Sầm An hầu cái kia phế vật, ở thời điểm này nói hành sự tùy theo hoàn cảnh, bổn vương xem hắn chính là tưởng lâm trận bỏ chạy.” Tần vương lạnh lùng nói “Quả nhiên Giang Nam phế vật liền trông chờ không thượng.”</p>
+<p>Phí Tuân cũng bị Tần vương thoá mạ một đốn, thực mau hắn đi ra doanh trướng, nhìn về phía nơi xa Lương Châu quân.</p>
+<p>Hắn đi ra khi, phía sau đi theo Chu Thanh Viễn.</p>
+<p>Phí Tuân nói “Ngươi ở Tần vương trước mặt đề trạm dịch, lại không cùng hắn đề Thích Hàn Chu cùng Yến Vương khả năng ám tay, che giấu khả năng dời đi quân nhu sự.”</p>
+<p>Chu Thanh Viễn nhìn hắn, thần sắc bất biến mà nói “Này không hợp phí đại công tử tâm ý sao? Vài lần lợi dụng Tần vương đi kích động bạo dân, đến nỗi ta giấu giếm quân nhu sự, ta tưởng chúng ta mục đích là nhất trí, vị kia đại nhân không muốn cho Tần vương thắng.”</p>
+<p>Phí Tuân biết Chu Thanh Viễn thông minh, Tần vương tạo phản ở bọn họ kế hoạch giữa, nếu là Tần vương không vội với đi tìm Nhị hoàng tử phi, bọn họ kế hoạch xác thật là nên càng ổn trọng chút, cố tình ra một cái Ứng Phù Thăng, “Ít nhất lợi dụng Tần vương, thăm dò Ứng Phù Thăng ở Giang Nam cùng Tây Thục bố cục.”</p>
+<p>“Tần vương vẫn luôn muốn thuận theo dân ý trưng binh tập kết đại quân.”</p>
+<p>Phí Tuân nhẹ nhàng cười hạ “Mượn từ hắn dẫn ra Lục gia quân tinh nhuệ, không phải chuyện tốt sao?”</p>
+<p>Chu Thanh Viễn không nói lời nào.</p>
+<p>“Ngươi biết, vị kia đại nhân vì sao tuyển Lương Châu Thành sao?” Phí Tuân nói.</p>
+<p>Lương Châu Thành ở Tây Thục, đã từng cũng là Tây Thục phồn hoa thành trì, năm đó cùng tiên đế tác chiến những cái đó lão binh lão tướng, rất nhiều đều bị an trí tại nơi đây khai hoang, cuối cùng thành tựu Lương Châu Thành. Nơi này đều là xuất ngũ lão binh lão tướng, này đó tướng lãnh đối Đại Uyên có sâu nặng tình cảm, đồng thời cũng là có thể lợi dụng mục tiêu.</p>
+<p>“Ngươi nói những người này, nếu là biết Tần vương từ đầu đến cuối đều ở lợi dụng bọn họ, bọn họ sẽ nghĩ như thế nào?” Phí Tuân xa xa nhìn về phía Lương Châu Thành, những cái đó khởi nghĩa Lương Châu quân nhưng không như vậy ngu muội, hắn sâu kín nói ——</p>
+<p>“Bọn họ sẽ tưởng, cái này Đại Uyên thật sự lạn thấu.”</p>
+<p>Kinh thành, Thái tử Đông Cung.</p>
+<p>“Điện hạ đã nhiều ngày dùng quá dược sao?”</p>
+<p>“Dùng qua, điện hạ ở nghỉ ngơi.”</p>
+<p>Uống xong không chén bãi ở trước mặt, Trần Tự Thu thi xong châm ra tới, thấy Ngô lão đứng ở trước cửa chần chờ. Nàng nói “Lần trước Giang Nam bên kia gởi thư, ngài tôn nhi đều an trí hảo, không cần lo lắng.”</p>
+<p>Ngô lão tôn nhi không đi theo tới kinh, bị an trí ở Cẩm Vương phủ.</p>
+<p>Tây Thục xảy ra chuyện sau, thấy hắn do dự nhiều lần, từ Giang Nam tới mật tin nhiều mang Trần đại phu cùng Ngô lão tôn nhi tin tức, bọn họ cũng đều biết, đây là điện hạ cố ý hỏi, tin trung mới có thể đề cập.</p>
+<p>“Tụng An ở bên trong sao?” Ngô lão hỏi.</p>
+<p>Thích Hàn Chu ly kinh trước công đạo quá bọn họ phải chú ý Thái tử điện hạ tinh thần trạng huống, đêm khuya điện tiền đều phải lưu người, Tụng An cơ hồ hàng đêm túc bên ngoài điện.</p>
+<p>Trần Tự Thu gật đầu, Ngô lão do dự một vài, cuối cùng vẫn là không đi phía trước đi.</p>
+<p>Đông Cung trong vòng, trong triều nhằm vào Tây Thục Du Châu chiến trường một chuyện vẫn luôn ở tranh luận hay không phái binh, nhưng này đó ở hoàng đế cùng Ứng Phù Thăng không gật đầu trước đều là nói suông. Đông Cung ánh nến chưa diệt, từ kinh thành xuất binh đi Tây Thục nhoáng lên mắt qua đi hai tháng, Ứng Phù Thăng khoác áo lông chồn ngồi ở án trước, bên cạnh là Tây Thục chiến trường sa bàn.</p>
+<p>Ứng Phù Thăng ánh mắt huyền ngừng ở Lương Châu Thành phương hướng.</p>
+<p>Lúc này, hắn chú ý tới ngoài điện bóng dáng.</p>
+<p>“Là Ngô lão ở bên ngoài sao, thỉnh hắn vào đi.”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong131.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong133.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "thai-tu-thien-thu-van-tai";
+const NOVEL_TITLE = "Thái tử thiên thu vạn tái";
+const CHAPTER_TITLE = "Chương 132";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

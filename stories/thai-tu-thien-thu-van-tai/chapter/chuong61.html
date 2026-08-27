@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 61</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Thái tử thiên thu vạn tái
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 61</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong60.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong62.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Vừa nghe nói là Thích Hàn Chu, Thái tử vội hô “Thất thần làm gì! Mau đi!”</p>
+<p>Đông Cung cung nhân còn chưa kịp chạy tới nhà kho điều động sổ sách, Cẩm Y Vệ đã là đến Đông Cung vây quanh Đông Cung trong ngoài, ngăn lại ý đồ rời đi cung nhân, này một trận trượng làm Đông Cung bất ngờ.</p>
+<p>Thích Hàn Chu dư quang xẹt qua Đông Cung phủ vệ, thấy trong đó hai người có ẩn ẩn lui về phía sau dấu vết, hắn lạnh giọng phân phó “Bao gồm phủ vệ ở bên trong tất cả mọi người không được rời đi Đông Cung, một khi nhân số giảm bớt, giống nhau y quy xử trí.”</p>
+<p>Này thanh vừa ra, ban đầu còn tưởng mật báo cung nhân đột nhiên dừng bước.</p>
+<p>Lúc này Thích Hàn Chu đã nâng bước đi vào Đông Cung, Thái tử nhìn thấy Thích Hàn Chu sắc mặt căng thẳng, đối mặt còn lại quan viên hắn không cần phải như vậy khẩn trương, nhưng Thích Hàn Chu không giống nhau. Hắn đầu tiên là Thích gia người, lại là Cẩm Y Vệ, phía sau là bao phủ Bắc Cảnh Thích gia quân, bên người là duy hắn là từ Cẩm Y Vệ, chỉ cần đế lệnh cho phép, không người có thể cản hắn.</p>
+<p>“Hạ quan gặp qua Thái tử điện hạ, Hoàng hậu nương nương.” Thích Hàn Chu mặt nếu sương lạnh, cung kính hành lễ “Phụng chỉ hành sự, Đại Lý Tự trình một tông thợ thủ công bản án cũ, đề cập Đông Cung, Đô Sát Viện ngự sử liên danh buộc tội Thái tử, bệ hạ có lệnh, hạ quan phụng mệnh tới điều Đông Cung trướng mục, mong rằng nhị vị phối hợp, lấy chứng điện hạ trong sạch.”</p>
+<p>Trướng mục……?</p>
+<p>Nói đến này, Từ hoàng hậu liền ý thức được là kia tôn ngọc thú giống. Nàng quét thấy Thái tử sắc mặt thượng chợt lóe mà qua hoảng loạn, này đoạn thời gian nhân sườn núi Hà Thủy một chuyện, Hộ Bộ Đại hoàng tử bên kia không thiếu liên danh thợ thủ công bản án cũ, vì chính là đem Công Bộ kéo xuống thủy. Cuối cùng Công Bộ lấy ra minh trướng hóa hiểm vi di. Đối mặt loại này thợ thủ công án, Công Bộ đã là tập mãi thành thói quen hơn nữa có ứng đối thủ đoạn, liền tính thợ thủ công có vấn đề, cũng không nên sẽ đề cập đến Đông Cung, đó là Công Bộ sự tình!</p>
+<p>Nếu đề cập Đông Cung, kia thuyết minh kia tôn ngọc thú giống trướng mục chỉ sợ ra vấn đề, đặt ở ngày thường đều là việc nhỏ, cố tình hiện nay Công Bộ trướng nhân sườn núi Hà Thủy án bị lặp lại hạch tra, là hoàn toàn không có biện pháp đi điền ngọc thú giống như vậy lỗ thủng.</p>
+<p>“Đã phụng chỉ kiểm toán, Đông Cung tự nhiên phối hợp. Chỉ là Đông Cung việc vặt không ít, Nội Vụ Phủ chọn mua, Khôn Ninh Cung qua tay, Công Bộ giam tạo, Đông Cung bên này trướng, Thích chỉ huy sứ hẳn là tra không rõ ràng.” Từ hoàng hậu bình tĩnh nói.</p>
+<p>Thái tử vừa nghe đến Từ hoàng hậu cho hắn ôm hạ việc này, trong lòng không khỏi cảm kích, hắn che giấu chính mình thần sắc, vội tưởng âm thầm phân phó cung nhân đi xử lý. Hắn bên người còn có những cái đó ám vệ, chỉ cần ở chỗ này bám trụ Thích Hàn Chu, hắn còn có cơ hội đi điền thượng này lỗ thủng.</p>
+<p>“Điện hạ, chúng ta người ra không được.” Cung nhân nhỏ giọng nói “Thích chỉ huy sứ đem cửa cung toàn ngăn cản, còn nhớ nhân số, thiếu một người liền luận tội xử lý.”</p>
+<p>Thái tử khẽ biến, nhớ nhân số…… Kia bên ngoài người vào không được, bên trong người cũng không dám đi ra ngoài.</p>
+<p>Đông Cung nội những cái đó tử sĩ muốn tránh đi Cẩm Y Vệ là không thành vấn đề, nhưng nếu là bởi vì này bại lộ thân phận, kia Đông Cung trên người liền không ngừng một quyển trướng mục đơn giản như vậy.</p>
+<p>Lúc này, phụ trách Đông Cung trướng mục cung nhân đã mang theo đi lên.</p>
+<p>Thái tử sắc mặt cứng đờ, Thích Hàn Chu đã lấy quá Đông Cung trướng mục, cẩn thận lật xem xác nhận cái gì. Thái tử thấy hắn thần sắc, càng xem càng hoảng, hiện tại chỉ có thể trông chờ Khôn Ninh Cung bên kia trướng có thể bình, chỉ cần việc này có thể phiết đến Khôn Ninh Cung thượng, kia Đông Cung trướng liền không thành vấn đề.</p>
+<p>“Nếu nương nương như vậy nói, hạ quan liền muốn thỉnh chỉ tra Khôn Ninh Cung trướng.” Thích Hàn Chu nhìn về phía Từ hoàng hậu, nói “Hiện nay Đại Lý Tự đang ở thẩm tra xử lí, Công Bộ các vị đại nhân toàn ở, này chờ chi tiết còn cần đương đường giằng co.”</p>
+<p>Hắn hành lễ nói “Bệ hạ đã thân đến Đại Lý Tự, còn thỉnh Thái tử điện hạ cùng hạ quan đồng hành, lấy chứng Đông Cung trong sạch.”</p>
+<p>Từ hoàng hậu nghe vậy thần sắc hơi động, mà bên cạnh Thái tử, sắc mặt hoàn toàn trở nên cực kỳ khó coi.</p>
+<p>Ngoài cung Đại Lý Tự, công đường thượng chưa bao giờ như vậy náo nhiệt, từ năm trước tra tham ô án sau, đây là đệ nhất tông đề cập tam bộ quan viên án kiện, chính đường thượng ngồi chính là đại lý tự khanh cùng Đô Sát Viện Tiêu đại nhân, đường hạ còn ngồi Lục hoàng tử lục điện hạ.</p>
+<p>Lục điện hạ là Đại Lý Tự giám sát, tra cái gì án, hắn tới bàng quan theo lý thường hẳn là.</p>
+<p>Đương này tông ngọc điêu sư án trình đến Đại Lý Tự án trước khi, đại lý tự khanh đã bay nhanh đi thỉnh lục điện hạ tới tọa trấn. Từ Đại Lý Tự thiếu khanh nam hạ khâm sai trở về, Đại Lý Tự bọn quan viên nhất trí cho rằng, gặp được đại án không cần hoảng, mời đến lục điện hạ có thể, hắn chỉ cần ngồi ở kia, chính là Đại Lý Tự lớn nhất bùa hộ mệnh.</p>
+<p>Nhưng mọi người trăm triệu không nghĩ tới chính là, hoàng đế thân đến.</p>
+<p>Hoàng đế hiếm thấy mà người mặc thường y, phía sau chỉ đi theo Vinh công công cùng cấm quân thống lĩnh, vừa vào công đường khi đại lý tự khanh đương trường chân mềm nhũn. Lúc trước như vậy đại tham ô án, hoàng đế cũng chưa thân đến Đại Lý Tự, nhưng hiện giờ hoàng đế thân đến.</p>
+<p>Hoàng đế xua tay làm chúng quan viên miễn lễ, dư quang quét về phía mọi người, ngồi trên cao đường phía trên.</p>
+<p>Ứng Phù Thăng nguyên cũng đứng dậy đứng, hoàng đế liếc mắt hắn kia gầy yếu thân thể, làm người ban tòa.</p>
+<p>“Đông Cung đâu, Đông Cung bên kia như thế nào?” Công Bộ quan viên nhỏ giọng hỏi.</p>
+<p>Một người khác nói “Từ gia đã khiển người đi Đông Cung dò hỏi, chúng ta chỉ có thể ở bên này kéo dài thời gian.”</p>
+<p>Hoàng đế xuất hiện ở Đại Lý Tự khi, các quan viên tiểu đạo quan hệ đã bay nhanh truyền đến còn lại hoàng tử trong tai, không đến hai chú hương thời gian, Đại Lý Tự liên tiếp truyền đến tiếng hô.</p>
+<p>“Đại hoàng tử điện hạ đến ——”</p>
+<p>“Tam hoàng tử điện hạ đến ——”</p>
+<p>“Từ các lão đến ——”</p>
+<p>Một đám hoàng tử nghe tiếng mà đến, Ứng Phù Thăng quy quy củ củ ngồi, phía sau đứng Thẩm Vân Phi cùng Tụng An, Ông Nghiêm Thanh đứng ở Binh Bộ hàng ngũ, cùng Thẩm Trường Tồn cùng đi.</p>
+<p>Hắn giương mắt, nhìn đến chậm rãi tiến vào Từ các lão.</p>
+<p>Từ các lão thần sắc đã mất lúc trước sườn núi Hà Thủy án khi trấn định, hắn hướng hoàng đế khom mình hành lễ sau, tầm mắt dừng ở Ứng Phù Thăng trên người. Ứng Phù Thăng thản nhiên xem hắn, cách đó không xa Công Bộ quan viên sắc mặt tái nhợt, nhưng ở nhìn thấy Từ các lão khi hơi chút chuyển biến tốt đẹp, mà này hảo không đến nào đi.</p>
+<p>Bởi vì đại lý tự khanh đã bắt đầu thẩm tra xử lí án kiện, sở hữu sự tình bùng nổ liên quan đến mấy năm trước Công Bộ điêu ngọc ngọc thợ.</p>
+<p>Loại tình huống này thật sự là bất ngờ, gần nhất thợ thủ công án nhiều như vậy, Công Bộ vì đề phòng Hộ Bộ cùng Đại Lý Tự, đề cập đến sườn núi Hà Thủy thợ thủ công hồ sơ vụ án tông tất cả đều làm tới tay, không ngờ trong đó thế nhưng còn trà trộn vào như vậy nhìn như không quan hệ án kiện, thế cho nên buộc tội đến trước mặt bệ hạ khi, bọn họ đều không kịp làm chuẩn bị ở sau.</p>
+<p>Công Bộ thuộc hạ thợ thủ công loại hình đông đảo, gần đoạn thời gian bỏ ra sự thợ thủ công phần lớn đều là tu lộ thự hạ, này tông ngọc điêu sư án trình đi lên thực sự đột ngột, ngọc điêu sư tự xưng là Công Bộ thợ thủ công, từng bởi vì giao không nổi công phí mà bị Công Bộ khó xử, hắn tố giác Công Bộ thị lang trung gian kiếm lời túi tiền riêng, tham chạm ngọc các thợ thủ công tiền bạc.</p>
+<p>Này nguyên lai là việc nhỏ, kẻ hèn một người thợ thủ công trướng, Công Bộ tưởng điền cũng có thể điền.</p>
+<p>Cố tình tên này thợ thủ công qua tay pho tượng, là kia tôn ở văn võ bá quan trước mặt lượng quá tương ngọc thú, Công Bộ muốn bình này trướng khi, phát hiện lúc trước căn bản không quá minh trướng, đều là mấy cái Công Bộ quan viên vì lấy lòng Đông Cung, âm thầm ra tiền mua.</p>
+<p>Không chỉ như vậy, Đại Lý Tự cùng Đô Sát Viện thế nhưng tìm tới không ngừng một cái ngọc điêu sư làm lời khai, vài cái lúc ấy đều điêu quá kia tôn ngọc thú giống, đối ngọc liêu hao phí cùng giờ công rõ ràng. Này thuyết minh cái gì, thuyết minh Đại Lý Tự cùng Đô Sát Viện là có thể thông qua ngọc điêu sư phỏng đoán ra đại khái trướng mục tình huống, kể từ đó, khi cách mấy năm, Công Bộ muốn lâm thời làm một cái ngụy trướng ra tới liền khó như lên trời.</p>
+<p>“Công Bộ nhưng còn có dị nghị?” Đại lý tự khanh hỏi.</p>
+<p>Hoàng đế nghe đường hạ chứng cung, thần sắc thâm trầm.</p>
+<p>Công Bộ bọn quan viên đã hoảng đến mức tận cùng, Công Bộ thượng thư còn ở tới rồi trên đường, bọn họ liền xem Từ các lão cũng không dám xem, bởi vì như vậy trong thời gian ngắn, ngụy trướng căn bản vô pháp làm, bọn họ không biết như thế nào biện, “Việc này kỳ quặc, lại sự phát đột nhiên, hạ quan cần trở về cẩn thận thẩm tra trướng mục mới nhưng báo cho.”</p>
+<p>“Ngọc điêu sư nãi Công Bộ sở ra, nhưng Đô Sát Viện thẩm tra khi phát hiện vẫn chưa ở các ngươi Công Bộ trướng mục thượng, điểm này vốn là dị thường.” Đại lý tự khanh lạnh giọng hỏi “Lớn như vậy ngọc kiện, các ngươi Công Bộ còn phải yêu cầu trướng mục mới có thể báo cho?”</p>
+<p>Hoàng tử ở bên nghe, Đại hoàng tử thiếu chút nữa đều phải nhạc ra tiếng, ai có thể nghĩ đến còn có thể dời ra một tông như vậy bản án cũ tới.</p>
+<p>Từ các lão hơi hơi nhìn về phía trong đó một người Công Bộ quan viên.</p>
+<p>“Ngọc điêu sư lời chứng khủng có lầm.” Công Bộ quan viên nói “Khi cách lâu như vậy, dùng liêu như thế nào bằng mấy người khẩu cung khó thành chứng cứ, huống hồ lúc ấy đẩy nhanh tốc độ cấp bách, trướng mục cũng có so le, điểm này xác thật yêu cầu Công Bộ cẩn thận thẩm tra sau mới có thể cấp ra hồi đáp.”</p>
+<p>“Này trướng ghi tạc nơi nào?” Đại lý tự khanh hỏi.</p>
+<p>Công Bộ quan viên khẽ cắn răng nói “Sự tình quan Thái hậu hạ lễ, điêu ngọc công trình tốn thời gian pha lâu, trướng mục Công Bộ Đông Cung đều có ghi lại. Bẩm báo bệ hạ, lúc này yêu cầu cẩn thận thẩm tra mới có thể có kết luận, Lưu đại nhân lời này, là đang ép Công Bộ cấp cái kết luận, thần chờ không dám lung tung ứng thừa a.”</p>
+<p>Công Bộ cắn ch·ế·t trướng mục phân tán, ngọc điêu sư lời chứng có lầm, như vậy Công Bộ thậm chí Từ gia còn có cơ hội đi bổ khuyết này bút trướng mục.</p>
+<p>Ứng Phù Thăng thần sắc bình tĩnh, nghe Công Bộ xảo cãi nhau lấy thời gian, Từ các lão thần sắc dần dần trấn định, Công Bộ tới nhiều như vậy quan viên, thượng thư Chu Bỉnh Quân không tới, hắn biết, từ Từ các lão bước vào nơi đây bắt đầu, Công Bộ còn lại quan viên chỉ sợ đã là ở vì Thái tử này bút trướng tưởng tẫn phương pháp điền lỗ thủng.</p>
+<p>Như vậy tính tính thời gian, Đông Cung bên kia cũng không sai biệt lắm.</p>
+<p>“Thái tử điện hạ đến ——”</p>
+<p>Này thanh rơi xuống khi, Ứng Phù Thăng hơi hơi nhướng mày, Từ các lão sắc mặt rốt cuộc thay đổi.</p>
+<p>Bởi vì đi theo Thái tử phía sau đi vào chính là Cẩm Y Vệ Thích Hàn Chu, sớm tại án kiện bùng nổ khi Từ gia đã trước một bước làm người đi Đông Cung thông tri Thái tử, chỉ cần Đông Cung điền thượng này bút trướng, liền nhưng làm Công Bộ cùng Đông Cung hóa hiểm vi di. Nhưng hiện giờ này hai người đồng thời tiến vào, là Cẩm Y Vệ đi trước một bước.</p>
+<p>Công đường còn chưa ra kết quả, Cẩm Y Vệ thế nhưng trước một bước đi điều lấy Đông Cung trướng mục.</p>
+<p>Thái tử đã tới liền nhìn đến hoàng đế, hắn sắc mặt tái nhợt mà hành lễ. Thích Hàn Chu đã đi lên trước, đem Đông Cung trướng mục trình cấp Đại Lý Tự công đường, đại lý tự khanh nào dám trước xem, chỉ phải trước nộp cấp hoàng đế.</p>
+<p>“Mới vừa rồi nói như thế nào?” Hoàng đế nhìn về phía Công Bộ quan viên.</p>
+<p>Từ các lão nghĩ ra thanh ngăn cản, bên cạnh Đô Sát Viện ngự sử mở miệng “Các lão, đây là công đường, thỉnh tuần hoàn luật pháp.”</p>
+<p>Công Bộ quan viên không biết kia trướng mục thượng rốt cuộc viết cái gì, duy nhất có thể làm chính là cắn ch·ế·t khẩu cung, “Thần vẫn là mới vừa rồi nói, nhiều chỗ đều có ghi lại, cần trù tính chung nhiều chỗ trướng mục mới có thể cấp ra kết luận……”</p>
+<p>Nói còn chưa dứt lời, đại lý tự khanh nói “Nhưng Đông Cung trướng mục thượng cơ hồ không có ghi lại.”</p>
+<p>Đông Cung trướng mục thượng về ngọc thú ghi lại, chỉ có ít ỏi vài nét bút, vừa thấy giống như là người khác sau lại thêm, chỉ nhớ Đông Cung trù bị ngọc thú giống một kiện. Như vậy ký lục cơ hồ tương đương không có, nói cách khác liền Đông Cung cũng chưa nhớ này bút ngọc thú giống trướng mục, Công Bộ theo như lời các nơi trướng mục đều có ghi lại, căn bản là giả dối hư ảo sự!</p>
+<p>Như thế đại tiền bạc xuất nhập, Công Bộ cùng Đông Cung đều vô minh xác ghi sổ.</p>
+<p>Như vậy, này bút trướng nên tính ở Đông Cung vẫn là tính ở Công Bộ!?</p>
+<p>Ứng Phù Thăng lạnh nhạt mà nhìn, đây là căn bản bình không được trướng.</p>
+<p>Nếu Công Bộ lúc trước không có trình chứng minh sườn núi Hà Thủy án trướng mục còn hảo, nhưng khi đó kia bút minh trướng làm được xinh đẹp, chẳng khác nào trướng mục thượng viết đồ vật ở Đô Sát Viện cùng với hắn phụ hoàng trước mặt để lại dấu vết, lại tưởng bổ khuyết ngọc thú giống chỗ trống, chỉ có thể đi phía trước đi làm trướng.</p>
+<p>Kia tôn ngọc thú giống nếu là Đông Cung ra trướng còn hảo, bởi vì Đông Cung xuất từ hoàng gia, Thái tử phủ kho tiền bạc gánh vác đến khởi kia tôn ngọc thú giống, chỉ cần Đông Cung có kỹ càng tỉ mỉ chọn mua ký lục, cùng Công Bộ ấn lệnh, liền tính qua bên ngoài.</p>
+<p>Một khi Đông Cung trướng mục thượng không có về ngọc liêu đại lượng ra trướng, kia Công Bộ này trướng liền bình không được.</p>
+<p>Nếu nói này phân tiền bạc là Công Bộ quan viên lén sở ra, xin hỏi cái nào quan viên gia tài như thế, phải biết Công Bộ ở trong triều hình tượng toàn lấy thanh liêm nổi tiếng, dân gian mỗi người đều ca tụng Công Bộ quan viên như thế nào vì dân suy nghĩ, tiểu nhân quan viên không này quyền lợi làm Đông Cung sai sự, đại quan viên mỗi người “Thanh liêm”, Công Bộ có thể ra nổi này phân tiền bạc đi chế tạo xa hoa ngọc thú giống quan viên cơ hồ không có.</p>
+<p>Này tông án vô luận nói như thế nào, Đông Cung cùng Công Bộ, đều thoát không được can hệ.</p>
+<p>Hoàng đế sắc mặt dần dần trầm hạ tới.</p>
+<p>Ứng Phù Thăng chú ý tới hoàng đế giờ phút này biểu tình.</p>
+<p>Hắn hơi hơi rũ mắt, chuyện này căn bản không có khả năng nhẹ nhàng bâng quơ mà xốc qua đi, tham ô các đời lịch đại đều có, Đại hoàng tử liên tiếp phạm sai lầm, hoàng đế đều có thể nhắm một con mắt.</p>
+<p>Nhưng thợ thủ công án đề cập đến không phải đơn giản tham ô cùng làm trướng, mà là Công Bộ cùng với mặt sau một đống vấn đề, Công Bộ có thể giấu báo trướng mục, sau này liền nhưng ăn bớt ăn xén nguyên vật liệu, thật giả lẫn lộn…… Này đó mang đến vấn đề là nguy hiểm cho dân sinh bá tánh.</p>
+<p>Công Bộ người còn ở cãi lại, Từ các lão lại ở nhìn đến hoàng đế ánh mắt khi, sắc mặt đột nhiên căng chặt.</p>
+<p>Nơi xa, Đại hoàng tử vui sướng khi người gặp họa mà nhìn, Tam hoàng tử khẽ nhíu mày.</p>
+<p>Đường gian tụ tập không ít người, Công Bộ quan viên kiệt lực mà tưởng chải vuốt rõ ràng quan hệ, bọn họ nhìn ra được đây là có người đẩy tay, cố tình lúc này bọn họ không thể làm chuyện này lại phóng đại, Đông Cung đi qua Công Bộ làm nhiều ít sự, đã sớm lý không rõ. Liền này phân ngọc thú giống hạ lễ, lúc ấy trình ở cung yến thượng khi, đã là ngoài ý muốn. Nếu là thúc đẩy này án bùng nổ nhân thủ trung không ngừng một tôn ngọc thú án, kia một khi thứ này bùng nổ, liên lụy đến liền không ngừng là vô cùng đơn giản Công Bộ.</p>
+<p>Mà là trong triều toàn bộ Thái tử đảng phiệt.</p>
+<p>Ở thời điểm này, Ứng Phù Thăng nhìn về phía Thẩm Trường Tồn, chỉ là ngắn ngủi tiếp xúc, Thẩm Trường Tồn đột nhiên về phía trước.</p>
+<p>Thẩm Trường Tồn ở Công Bộ cãi lại trong tiếng đứng ra, “Bệ hạ, thần có việc bẩm báo.”</p>
+<p>Mọi người nhìn đến Thẩm Trường Tồn xuất hiện, Binh Bộ tới trộn lẫn cái gì!?</p>
+<p>Không đúng, Thẩm Trường Tồn tới này làm gì!?</p>
+<p>Liền Đại hoàng tử đều kinh ngạc xem qua đi, chuyện này không ở hắn an bài nội, lại nói Thẩm Trường Tồn căn bản không phải người của hắn.</p>
+<p>Hoàng đế ánh mắt hơi lãnh, ở liên tiếp trốn tránh trách nhiệm trung, hắn kiên nhẫn đã là sắp háo quang, “Nói.”</p>
+<p>Thái Bộc Tự thiếu khanh Thẩm Trường Tồn nói “Ngọc điêu sư lời khai xác thật vô giả, đi qua Đại Lý Tự thiếu khanh gửi gắm, Thái Bộc Tự điều tra quá ngọc liêu quá quan dịch ký lục.”</p>
+<p>Còn lại quan viên bừng tỉnh đại ngộ, Thẩm Trường Tồn tại đây, thế nhưng là bởi vì Đại Lý Tự.</p>
+<p>Như thế tới nay, đủ để chứng minh kia vài vị chạm ngọc thợ thủ công lời khai vì thật, lúc ấy Công Bộ thật sự điều động quá này đó ngọc liêu vào kinh.</p>
+<p>Ứng Phù Thăng mí mắt nửa liễm, Thích Hàn Chu nhìn về phía hắn, hắn biết Thẩm Trường Tồn cùng Ông Nghiêm Thanh ở tra sự tình, nhưng này đó, Ứng Phù Thăng không có cùng hắn nói rõ.</p>
+<p>Hắn thần sắc khẽ nhúc nhích, Ứng Phù Thăng còn chuẩn bị cái gì chuẩn bị ở sau?</p>
+<p>Thẩm Trường Tồn nói tiếp “Như thế ngọc liêu vào kinh, tất nhiên đi quan đạo, quá quan đạo trạm dịch đều sẽ lưu lại dấu vết, ngọc điêu sư theo như lời lời chứng ở Binh Bộ trạm dịch ký lục trung xác có ghi lại.”</p>
+<p>Hoàng đế đảo qua Thẩm Trường Tồn trình ký lục, chú ý tới trong đó dị thường, “Liền này đó?”</p>
+<p>Công Bộ quan viên liễu ám hoa minh, cho rằng Binh Bộ ký lục xảy ra vấn đề, chỉ cần Binh Bộ ra vấn đề, kia bọn họ còn có thể biện! Đang lúc kia Công Bộ quan viên chuẩn bị mở miệng khi, lại thấy Thẩm Trường Tồn lần nữa ra tiếng “Ký lục chỉ tới kinh thành phụ cận, sau này lại vô ký lục, theo Hồ Bất Ngộ Hồ đại nhân một lần nữa phiên điều dấu vết, kinh đô và vùng lân cận phụ cận án lục bị tiêu hủy.”</p>
+<p>Công Bộ quan viên đột nhiên ngậm miệng, Từ các lão sắc mặt đột biến.</p>
+<p>“Ký lục giả vì lúc ấy Thái Bộc Tự thiếu khanh, vị kia thiếu khanh đã ch·ế·t.” Thẩm Trường Tồn nói.</p>
+<p>Nghe đến đó, ở đây vài người sắc mặt đại biến. Thẩm Trường Tồn theo như lời, là mấy năm trước khiếp sợ triều dã Quân Hướng Án khi vị kia sợ tội tự sát Thái Bộc Tự thiếu khanh! Lúc ấy Thái Bộc Tự thiếu khanh sợ tội tự sát với đầu đường, liên lụy Thẩm Trường Tồn từ Binh Bộ thị lang hàng chức đến Thái Bộc Tự, chuyện này trong triều đủ loại quan lại rõ ràng.</p>
+<p>Kẻ hèn một đám ngọc liêu, thế nhưng khiến cho lúc trước trọng tội Binh Bộ Thái Bộc Tự thiếu khanh tiêu hủy dấu vết.</p>
+<p>Vì cái gì? Nếu là một kiện đưa cho Thái hậu hạ lễ, gì cần nơi chốn che giấu!?</p>
+<p>Diệp Huyền Cửu cả kinh, lập tức xem trước Thích Hàn Chu.</p>
+<p>Thích Hàn Chu tay đã là đáp ở bên hông, thần sắc nghiêm nghị.</p>
+<p>Đó là Thích gia tra Quân Hướng Án, lúc ấy nhân Từ các lão ra mặt, đầu sỏ gây tội thân ch·ế·t, lại tìm về bộ phận quân lương mà kết án. Mà hiện tại Đông Cung xảy ra chuyện, cái này bản án cũ đi qua một cái Thái Bộc Tự lại lần nữa phiên đến mọi người trước mặt!</p>
+<p>Ứng Phù Thăng ngồi ở giám sát vị trí thượng, dư quang xẹt qua phía dưới quan viên, Công Bộ quan viên nghe được Thẩm Trường Tồn nói khi, từng cái sắc mặt trở nên càng khó xem.</p>
+<p>Không ai tưởng cùng hắn nhấc lên quan hệ, mấy năm trước việc này, lúc ấy là Từ các lão ra mặt bãi bình, gỡ xuống Công Bộ cùng Binh Bộ quan hệ, mới không làm Quân Hướng Án liên lụy quá nhiều quan viên.</p>
+<p>Hiện giờ, bởi vì một tông ngọc điêu sư án, mấy thứ này trời xui đất khiến toàn bộ liên lụy ra tới.</p>
+<p>Công Bộ quan viên đã là vô pháp cãi lại, thứ này không thể biện, nếu là hắn lại cường điệu Thái Bộc Tự cùng chạm ngọc thợ thủ công lời chứng có vấn đề, kia liên lụy đến liền không đơn giản là một kiện bản án cũ.</p>
+<p>Cao đường phía trên, theo Công Bộ quan viên dần dần tái nhợt cãi lại.</p>
+<p>Hoàng đế ánh mắt âm trầm, ở nghe được ch·ế·t đi Thái Bộc Tự thiếu khanh tái xuất hiện khi, hắn nhìn về phía Thái tử cùng Công Bộ ánh mắt đã là tràn đầy lạnh nhạt.</p>
+<p>Thái tử từ biết được ngọc thú giống xảy ra chuyện sau, hắn đã là tâm loạn như ma, nếu là từ trước loại chuyện này bên người có Sương Nguyệt thế hắn bãi bình, nhưng từ Sương Nguyệt sau khi ch·ế·t, người kia đã là không có lại ra tay tương trợ, ám vệ cũng lấy tạm lánh đế giận vì từ qua loa lấy lệ hắn. Hắn thật vất vả nương sườn núi Hà Thủy xoay người, cố tình lúc này tuôn ra chuyện này tới.</p>
+<p>Hiện giờ chỉ có thể phủi sạch sở hữu quan hệ, cái này trướng mục chỉ có thể Công Bộ đi bối!</p>
+<p>“Phụ hoàng, lúc ấy việc này là Đông Cung đi làm, mẫu hậu bên kia cũng qua tay quá.” Thái tử nóng lòng biện giải, hắn nhìn đến hoàng đế ánh mắt khi đã là chân tay luống cuống, hắn biết chuyện này không thể ăn vạ Đông Cung trên người, nếu không vĩnh viễn nói không rõ, “Có lẽ Khôn Ninh Cung bên kia cũng có điều ghi lại…… Lúc ấy phủ kho trung xác thật có một bút chi ra, chỉ là còn lại hạng mục công việc đều giao từ Công Bộ sở hành, nhi thần thật sự không rõ ràng lắm.”</p>
+<p>Từ các lão ra tiếng ngăn lại “Thái tử điện hạ!”</p>
+<p>Thái tử hoảng hốt, mờ mịt mà nhìn về phía ngoại tổ.</p>
+<p>Chuyện này từ đầu tới đuôi liền không phải trướng mục vấn đề, mà là vượt quyền cùng tham ô. Ngọc thú giống nếu là Đông Cung ủy thác Công Bộ tìm người chế tạo, chỉ cần Đông Cung có minh xác trướng mục, nói là ủy thác Công Bộ chế tạo, tiền bạc rõ ràng, hết thảy đều có thể giải quyết dễ dàng. Nhưng một khi việc này là Đông Cung hoặc là Khôn Ninh Cung phân phó, Công Bộ chế tạo, ở giữa trướng mục không rõ công đạo không rõ, Công Bộ liền không sạch sẽ.</p>
+<p>Loại này không sạch sẽ, liền sẽ liên lụy đến lúc trước sườn núi Hà Thủy án.</p>
+<p>Sườn núi Hà Thủy là Thái tử đề nghị công trình, ngọc thú giống cũng là Thái tử tùy tay giao dư Công Bộ đi làm, kia Công Bộ là Thái tử Công Bộ, vẫn là hoàng đế Công Bộ?</p>
+<p>Từ Đông Cung trướng mục không rõ kia một khắc bắt đầu, vấn đề cũng đã không phải chỉ cần một tôn ngọc thú giống. Công Bộ có thể trốn tránh trách nhiệm tìm kẻ ch·ế·t thay, thậm chí Từ gia đều có thể ra tới, duy độc Thái tử không thể động.</p>
+<p>Thái tử phảng phất mới phản ứng lại đây, hắn sợ tới mức phía sau lưng phát lạnh, ý thức được chính mình nói không lựa lời nói ra cái gì.</p>
+<p>Hắn giương mắt nhìn về phía hoàng đế, hắn phụ hoàng xem hắn ánh mắt như hàn nhận, tấc tấc cắt ở trên người hắn.</p>
+<p>“Ngươi nếu nói ngọc thú giống sự cùng ngươi không quan hệ.” Hoàng đế ánh mắt sắc bén mà nhìn về phía Thái tử, Thái tử lần đầu tiên thừa nhận như vậy tức giận, vẻ mặt hoảng loạn mắt thường có thể thấy được, “Kia trẫm hỏi ngươi, Công Bộ sườn núi Hà Thủy công trình, ngươi nói mọi chuyện từ ngươi đẩy mạnh, trong lúc trướng mục, ngươi có rõ ràng hay không?”</p>
+<p>Từ các lão thần sắc khẽ biến, đặt ở ngày thường, cái này trả lời nhưng ba phải cái nào cũng được, nhưng cố tình nhiều chuyện như vậy đặt ở cùng nhau.</p>
+<p>Sườn núi Hà Thủy sự, có thể là Công Bộ Hộ Bộ gian cho nhau trốn tránh trách nhiệm, liền không thể là Thái tử Từ gia liên lụy trong đó.</p>
+<p>Thái tử hoàn toàn ngậm miệng, “Nhi thần, nhi thần……”</p>
+<p>Hắn vô pháp nói, nói hắn rõ ràng, như vậy sườn núi Hà Thủy giả trướng sự tuôn ra, hắn chính là tính cả Công Bộ khi quân.</p>
+<p>Nếu hắn nói không rõ, như vậy lúc trước ở triều đình làm công thuộc cấp công lao đẩy đến trên người hắn, tính cái gì?</p>
+<p>Thái tử hốt hoảng chi gian, bất đắc dĩ xin giúp đỡ người khác, đột nhiên hắn nhìn đến kia lẳng lặng ngồi thiếu niên, hắn thờ ơ, phảng phất công đường sở hữu sự tình cùng hắn không quan hệ, đột nhiên, hắn nghiêng đầu xem ra, nhìn về phía Thái tử trong ánh mắt, không có khiêm tốn, không có tôn kính…… Mà là một loại coi thường thậm chí là chán ghét ánh mắt.</p>
+<p>Vì cái gì như vậy xem hắn, vì cái gì?</p>
+<p>Hắn biết cái gì? Không đúng, hắn như thế nào sẽ biết?</p>
+<p>“Điện hạ! Điện hạ!”</p>
+<p>Công đường thượng, bọn quan viên nhìn không nói một lời Thái tử, Thái tử sững sờ ở đương trường, sắc mặt biểu tình quái dị, như là hoảng loạn, lại như là kinh sợ, duy độc không có ngày thường ổn trọng trấn định.</p>
+<p>Thái tử ở người khác kêu gọi trung hoàn hồn, phát hiện chung quanh người xem chính mình biểu tình đều không đúng.</p>
+<p>Hắn một ngửa đầu, phát hiện vừa mới chính mình hành động đều dừng ở hắn phụ hoàng trong mắt.</p>
+<p>Hoàng đế ngồi ở cao đường phía trên, trong mắt là hoàn toàn chán ghét “Rất khó trả lời sao?”</p>
+<p>“Trẫm xem ngươi này Thái tử, cũng không cần làm!”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong60.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong62.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "thai-tu-thien-thu-van-tai";
+const NOVEL_TITLE = "Thái tử thiên thu vạn tái";
+const CHAPTER_TITLE = "Chương 61";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

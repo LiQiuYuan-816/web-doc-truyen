@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 11</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Thái tử thiên thu vạn tái
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 11</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Tỷ tỷ để ý nha.”</p>
+<p>Ninh phi thất thần đụng tới thùng rượu, rượu rầm chảy đầy đất, Thái tử sớm đã rời đi trong bữa tiệc, chỉ dư lưu thân ảnh. Trong bữa tiệc không ít người tầm mắt đầu tới, Ninh phi nhìn đến chỗ cao Thái hậu đầu tới cảnh kỳ ánh mắt, tái kiến Thái tử đi đến Hoàng hậu trước mặt kính trà, hoảng loạn gian nàng ngón tay lạnh lẽo.</p>
+<p>Thái tử vô tâm bận tâm phía sau Ninh phi, hơi một tới gần Hoàng hậu, liền nhận thấy được mẫu hậu trách cứ ánh mắt, không khỏi thả chậm thanh âm “Mẫu hậu.”</p>
+<p>Từ hoàng hậu mảnh khảnh ngón tay ngừng ở ly thượng, nhìn thấy Thái tử muốn nói lại thôi bộ dáng, nàng đem chung trà buông, “Thọ lễ một chuyện, ngươi không nên tự chủ trương.”</p>
+<p>Thấy này thần sắc khó coi, lại không có nửa phần nghĩ lại chi ý, Từ hoàng hậu than nhẹ lắc đầu, thấy Thái tử ánh mắt liên tiếp nhìn về phía trong bữa tiệc, nơi xa trong bữa tiệc bị chịu chú mục Lục hoàng tử đang ngồi, nổi bật đã là cái quá Thái tử. Nàng ban đầu đối Ứng Phù Thăng thưởng thức dần dần đạm xuống dưới, nhìn thấy trước mắt chân tay luống cuống thân tử, nhẹ giọng nói “Mẫu hậu đã nói với ngươi, ai đều sẽ không trở thành ngươi trở ngại.”</p>
+<p>Thái tử sửng sốt, “Mẫu hậu……”</p>
+<p>Việc đã đến nước này, Từ hoàng hậu tay đáp ở hắn mu bàn tay thượng, nhắc nhở nói “Nếu ngươi ngoại tổ nói cái gì đó, không cần quá mức để ý.”</p>
+<p>Nghe được ngoại tổ, Thái tử thần sắc có chút khẩn trương, theo Từ hoàng hậu tầm mắt nhìn lại.</p>
+<p>Văn thần trong bữa tiệc tuổi già lão giả kích thích tịch trước rượu, xa xa mà hướng hắn phương hướng nhìn thoáng qua.</p>
+<p>Thái tử rõ ràng đêm nay việc, ngoại tổ khả năng đối hắn đã có một tia bất mãn, mẫu hậu mặc dù không nói, khó tránh khỏi đối hắn cũng còn có một tia thất vọng.</p>
+<p>Hắn không khỏi nắm chặt ống tay áo, trong đầu lặp lại hiện lên Ứng Phù Thăng hiến họa khi ngồi đầy kinh tán hình ảnh.</p>
+<p>Vọng Nguyệt Đình thanh nhạc vòng nhĩ, Ứng Phù Thăng lặng yên không một tiếng động dời đi ánh mắt, không hề nhìn về phía Từ hoàng hậu.</p>
+<p>Không cần phỏng đoán, ở nhìn thấy ngọc thú giống khi, hắn liền biết Thái tử tự chủ trương thay đổi hạ lễ.</p>
+<p>Kiếp trước tiệc mừng thọ thượng Thái tử nổi bật cực kỳ, chính yếu nguyên nhân chính là hai kiện hạ lễ.</p>
+<p>Nếu vô đổi mới, vạn mã tuấn đồ cuối cùng sẽ biến thành Từ gia thúc đẩy thủ đoạn, khen ngợi Võ Đế cùng tướng lãnh, thiếu niên trữ quân ở thiên hạ chúng thần trước mặt lấy đồ xưng hạ Võ Đế cùng tướng lãnh. Nếu hắn nhớ không lầm, Từ hoàng hậu vì Thái tử chuẩn bị hạ lễ hẳn là còn có một khác kiện thi họa, cùng vạn mã tuấn đồ hợp lại càng tăng thêm sức mạnh, làm Thái tử ở một chúng võ tướng trong mắt lưu lại khắc sâu ấn tượng.</p>
+<p>Nàng đó là như thế, mọi chuyện sẽ vì Thái tử chuẩn bị thỏa đáng, tích thủy bất lậu.</p>
+<p>Thái tử rõ ràng không cần trù tính, lại có thể đem một mâm hảo cờ hạ đến như thế chi lạn.</p>
+<p>Ứng Phù Thăng bỗng nhiên cảm thấy kia ôn nhu hình ảnh có chút chói mắt.</p>
+<p>“Điện hạ, lò sưởi tay chính là lạnh?” Bên cạnh người hầu hạ Tụng An hỏi.</p>
+<p>Ứng Phù Thăng lấy lại tinh thần, mới bừng tỉnh phát hiện tay gian Từ hoàng hậu tặng cho lò sưởi đã chuyển lãnh. Hắn như cũ cầm, vuốt ve lò sưởi mặt ngoài hoa văn, lại cái gì cũng chưa nói, chỉ là đem hơi lạnh tay thu hồi trong tay áo, khẩn nắm chặt khi, đầu ngón tay thanh tỉnh đau đớn kéo về suy nghĩ của hắn.</p>
+<p>Đình gian vũ nhạc, cung yến văn thần võ tướng ly rượu châm chước, trong bữa tiệc một chỗ phá lệ an tĩnh.</p>
+<p>Bốn phía quan văn không người tới gần, võ tướng nhóm mừng rỡ tự tại.</p>
+<p>“Không nghĩ tới này họ Ninh, cũng là cái ẩn nhẫn không phát.” Ninh thị lang phong cảnh dừng ở mấy người trong mắt, một võ tướng mở miệng nói “Từ gia còn không có xuất đầu, bọn họ Ninh gia liền toát ra tới.”</p>
+<p>“Cung yến chính là như vậy, ngươi quản bọn họ làm chi, tướng sĩ từ là chuyện tốt, đến nỗi mặt khác, không bằng cho chúng ta nhiều phát chút quân lương tới thật sự.”</p>
+<p>“Im tiếng.” Nhẹ mắng thanh âm rơi xuống.</p>
+<p>Võ tướng nhóm tìm tòi nghiên cứu ánh mắt thu hồi, sôi nổi nhìn về phía đem đầu Thích tướng quân, Thích tướng quân bất động như núi, nghe được cấp dưới nói chuyện với nhau vẫn chưa động dung, bệ hạ quyết sách cùng không, không phải bọn họ có thể phỏng đoán.</p>
+<p>Thích gia trong bữa tiệc, Thích Thận thanh lạc, võ tướng không một ngỗ nghịch.</p>
+<p>Tướng quân bên cạnh người, từ ngồi vào vị trí liền hiếm khi mở miệng thiếu niên hơi hơi liễm mục, nhìn về phía kia phong cảnh đình gian.</p>
+<p>“Ninh gia xác thật kỳ quái.” Hắn ra tiếng nói.</p>
+<p>Thiếu niên ước chừng mười bốn tuổi bộ dáng, hắn cùng chung quanh cẩm tú không hợp nhau, eo lưng thẳng thắn như tùng, hắn ngồi ở Thích tướng quân sườn tịch, tính cả Thích gia đám kia vũ phu, phảng phất cùng quanh mình ngăn cách một đạo biên giới tuyến, mà ở tràng võ tướng không có một người coi khinh hắn, hắn tầm mắt cùng mặt khác người bất đồng, vẫn chưa quá nhiều chú ý Ninh thị lang, mà là dừng ở vị kia hoàng tử trên người, ánh mắt chỗ sâu trong nhiều vài phần xem kỹ tìm tòi nghiên cứu, như là ở quan sát cái gì.</p>
+<p>“Hàn Chu.” Thích Thận nói.</p>
+<p>Thiếu niên lại nói “Phụ thân, hắn là cái người thông minh.”</p>
+<p>Thích Thận nói “Thiên gia không dưỡng kẻ yếu.”</p>
+<p>Thiếu niên đang ngồi gian, tầm mắt đấu chuyển xẹt qua chỗ cao trấn định tự nhiên Từ hoàng hậu cùng Thái tử, Ninh gia cùng Từ gia gian đối lập lập thấy cao thấp, nhưng dù vậy, hắn vẫn là đa nghi mà nhìn mắt đứng ngồi không yên Ninh quý phi, nhận thấy được một tia quái dị cảm.</p>
+<p>Ninh gia người ẩn nhẫn nhiều năm mà phát, cùng với nói như thế, không bằng nói nơi xa người nọ có chút bất đồng. Rõ ràng hạ lễ đã là đạt được mãn đường reo hò, ngự thượng khâm điểm, ban thưởng đều xuống dưới. Nhưng kia trương thẹn thùng an tĩnh gương mặt hạ, mảy may không thấy bất luận cái gì vui mừng, an tĩnh như là cục diện đáng buồn.</p>
+<p>Phảng phất này đó reo hò, đều điền bất mãn kia đáy mắt dã tâm.</p>
+<p>Có lẽ là nhận thấy được một đạo như có như không nhìn chăm chú, Ứng Phù Thăng động tác đột nhiên dừng lại.</p>
+<p>Lại ngẩng đầu khi, hắn tầm mắt dừng ở nơi xa, Thích gia trong bữa tiệc an tĩnh như cũ, hắn đảo qua trong bữa tiệc, cùng một người tầm mắt giao hội.</p>
+<p>Thiếu niên không hề thu liễm ánh mắt sắc bén như lưỡi đao, tuổi trẻ gương mặt đã là vô nửa phần tính trẻ con, mặt mày trước ồn ào náo động sát khí tựa hồ cùng đời sau mỗ đôi mắt trùng điệp, lệnh Ứng Phù Thăng chợt nghĩ đến chim ưng mắt.</p>
+<p>Ước chừng tam tức, thiếu niên thu liễm ánh mắt, quanh thân hàn mang tan đi, chước người tầm mắt biến mất hầu như không còn, phảng phất chưa bao giờ xuất hiện.</p>
+<p>“Hắn chú ý tới ta.” Ứng Phù Thăng nói.</p>
+<p>Tụng An mạc danh có chút khẩn trương, theo nhìn lại, phát hiện nơi xa uy nghiêm cường tráng thân ảnh “Ngài là nói Trấn Bắc tướng quân sao?”</p>
+<p>Ứng Phù Thăng không đáp lời, chỉ là quét rớt cung phục trên người một chút bụi bặm, rũ mắt gian thần sắc tối tăm không rõ.</p>
+<p>Lấy lại tinh thần khi, hắn suy nghĩ từ xa xăm trong trí nhớ rút ra, thần sắc đã khôi phục như thường.</p>
+<p>“Không có việc gì.”</p>
+<p>Đêm dài, cung yến tan cuộc, phi tần hồi cung.</p>
+<p>Nghẹn một đường Ninh phi thiếu chút nữa không nhịn xuống, lệnh người trực tiếp đi tìm Ứng Phù Thăng. Từ cung yến bắt đầu đến kết thúc, quá nhiều đôi mắt nhìn chằm chằm, hơi có vô ý đã bị Thái hậu cảnh cáo, nàng không dám hành động thiếu suy nghĩ. Nhưng kết thúc liền không giống nhau, đêm nay phát sinh sự tình quá nhiều, nàng phải biết rốt cuộc là ai cấp Ứng Phù Thăng đứa con hoang kia ra chủ ý đưa hạ lễ.</p>
+<p>“Ngươi nói tìm không thấy người?!” Ninh phi nghe được Bích Châu bẩm báo, thiếu chút nữa áp không được thanh âm.</p>
+<p>Bích Châu một tan cuộc liền tìm người, lục điện hạ lại sớm đã không ở tại chỗ, “Có lẽ là chạy đi đâu, nô lại đi tìm xem!”</p>
+<p>Cung yến tan cuộc, người đến người đi.</p>
+<p>Ứng Phù Thăng cố ý tránh đi lộ.</p>
+<p>Gió đêm rét lạnh, cung yến còn không có kết thúc, Ninh phi đã gấp không chờ nổi muốn khiển người đến mang hắn trở về. Nhưng cũng xác thật như thế, lấy Ninh phi tính cách có thể nhẫn đến cung yến kết thúc đã là cực hạn, Thái tử lần này không có làm nổi bật, làm hắn mẹ đẻ, Ninh phi tất nhiên nóng nảy.</p>
+<p>Xa hơn địa phương, Từ hoàng hậu nghi thức đã đi xa.</p>
+<p>Ứng Phù Thăng chính nhìn, một khác đạo thân ảnh xuất hiện ở hắn trước mặt.</p>
+<p>Thái hậu bên người Vu cô cô chờ tại Vọng Nguyệt Đình ngoại, bên cạnh người đi theo hai cái cung nhân, nhìn thấy Ứng Phù Thăng khi tới gần một vài, theo sau nói “Thái hậu ở đình gian khi liền chú ý tới rồi, ngài sắc mặt thoạt nhìn không tốt lắm.”</p>
+<p>Ứng Phù Thăng chú ý tới Tụng An lo lắng ánh mắt, mới kinh ngạc phát hiện thân thể ra một thân mồ hôi, lãnh lãnh nhiệt nhiệt cảm giác từ thân thể chỗ sâu trong xuất hiện, nhiều năm thiếu hụt đáy chẳng sợ trong khoảng thời gian này hắn tinh tế dưỡng quá, bị Vọng Nguyệt Đình gió thổi nửa cái buổi tối, cung yến kết thúc liền ngóc đầu trở lại.</p>
+<p>“Thái y đã ở Từ Ninh Cung chờ.” Vu cô cô nói.</p>
+<p>Chờ Ứng Phù Thăng đến Từ Ninh Cung khi, Thái hậu ngự dụng thái y đã là chờ.</p>
+<p>Ứng Phù Thăng muốn hành lễ, Thái hậu hỏi “Nóng lên khi như thế nào không cùng cung nhân nói?”</p>
+<p>Ứng Phù Thăng sửng sốt, tựa hồ không nghĩ tới Thái hậu sẽ hỏi vấn đề này, một chốc một lát không phản ứng lại đây.</p>
+<p>Thái hậu hơi hơi nhìn hắn, xua tay làm thái y lại đây.</p>
+<p>Cung yến thượng toàn bộ hành trình đều ở diễn, hắn biết bày ra bộ dáng gì mới có thể làm người có tâm thả lỏng cảnh giác. Một bộ gương mặt giả khổng mang lâu rồi, chờ Ứng Phù Thăng lấy lại tinh thần khi, thái y đã vì hắn chưởng mạch.</p>
+<p>Từ Ninh Cung chính điện nội đàn hương quanh quẩn, thái y chưởng mạch khi, Thái hậu liền ở bên cạnh. Mới từ cung yến xuống dưới, Thái hậu quanh thân uy nghi chưa tán, luôn luôn ít có biểu tình gương mặt nhiều vài phần trầm tĩnh, chỉ có thái y cùng Vu cô cô nói chuyện khi, nàng sẽ nghiêng tai lắng nghe hai câu, vê Phật châu động tác khi đình khi hoãn.</p>
+<p>“Gió đêm pha đại, cũng không biết nhiều xuyên một ít.” Thái hậu mí mắt khẽ nâng.</p>
+<p>Ứng Phù Thăng ngừng lại, trực tiếp nhận sai “Tôn nhi lần sau sẽ chú ý.”</p>
+<p>Thái hậu không nói nữa.</p>
+<p>Ứng Phù Thăng nhìn nàng ngồi ở bên cạnh, tỉ mỉ bảo dưỡng gương mặt thượng đã có vài phần già cả, chẳng sợ hiện tại thái y nói chuyện, nàng cũng chỉ là nhàn nhạt nghe xong vài câu, phảng phất vừa rồi nhẹ mắng hắn kia một câu chỉ là ảo giác.</p>
+<p>“Điện hạ thân thể thiếu hụt, tiểu phong tiểu hàn đều là tai hoạ ngầm.” Thái y trong khoảng thời gian này không thiếu cấp Ứng Phù Thăng chưởng mạch, đối hắn cơ hồ thiếu hụt đáy sớm có dự định, “Này yêu cầu tỉ mỉ điều dưỡng.”</p>
+<p>“Cho hắn khai mấy cái dưỡng thân phương thuốc.” Thái hậu lúc này mới gật đầu ý bảo, cùng Vu cô cô nói “Thiên điện kia nhiều sinh mấy cái bếp lò, chớ có thụ hàn, thời điểm không còn sớm, đưa lục điện hạ đi nghỉ ngơi đi.”</p>
+<p>Ứng Phù Thăng còn chưa mở miệng, Thái hậu đã an bài thoả đáng, nàng từ trước đến nay hành sự như một, công đạo xong sự tình liền giơ tay ý bảo, bên cạnh Vu cô cô đến gần đỡ tay nàng, là muốn đi nghỉ ngơi.</p>
+<p>“Điện hạ.” Cung nhân nhắc nhở.</p>
+<p>Ứng Phù Thăng lúc này mới hành lễ, theo sau đi theo cung nhân rời đi.</p>
+<p>Thấy nơi xa Ứng Phù Thăng đi xa, Vu cô cô mới giúp Thái hậu đóng lại cửa sổ, nhẹ giọng nói “Ninh phi bên kia phái người tới hỏi, đã ấn ngài phân phó từ chối, hay không muốn cùng Ninh phi nương nương giải thích?”</p>
+<p>Thái hậu nhắm mắt nghỉ ngơi, bàn Phật châu tay chậm rãi dừng lại, “Ngươi thả có thể chú ý tới hắn sắc mặt biến kém, Ninh phi lại chưa từng chú ý tới, hảo hảo một cái hoàng tử, bị nàng dưỡng thành cái dạng gì?”</p>
+<p>Vu cô cô nghe vậy ngừng lại, đi theo Thái hậu nhiều năm, nàng minh bạch Thái hậu lời này ý tứ. Thái hậu hỉ tĩnh, đối với hậu cung hoàng tử hoàng nữ thái độ từ trước đến nay nhất trí, cũng không thiên vị, Lục hoàng tử ngủ lại Từ Ninh Cung nhìn như phá lệ, kỳ thật đổi thành mặt khác hoàng tử, Thái hậu cũng sẽ lưu này tĩnh dưỡng.</p>
+<p>Mà trong khoảng thời gian này tới Lục hoàng tử thần tỉnh hôn định, Thái hậu mặt ngoài không thèm để ý, kỳ thật xem ở trong lòng, đặc biệt là Lục hoàng tử chuẩn bị hạ lễ, Từ Ninh Cung nơi nơi là Thái hậu nhãn tuyến, thành tâm cùng không, nàng nhất rõ ràng.</p>
+<p>Ninh phi dưỡng không hảo hoàng tử, điểm này đã ở Thái hậu trong lòng thành định số.</p>
+<p>Vu cô cô nói “Nô tỳ minh bạch.”</p>
+<p>Từ Ninh Cung ban đêm cực tĩnh, Ứng Phù Thăng trở lại thiên điện khi cảm nhận được trong điện ấm áp.</p>
+<p>Thái hậu phân phó, cung nhân đã an bài hảo.</p>
+<p>Tụng An bồi điện hạ ở Từ Ninh Cung này đoạn thời gian, không ngừng là Thái hậu, hắn đều cảm giác được các cung nhân thoả đáng, cùng Vị Ương Cung khi hoàn toàn không giống nhau. Hắn đang muốn cùng điện hạ nói chuyện, vừa ngẩng đầu phát hiện điện hạ tựa hồ đang ở thất thần, nhìn chằm chằm than lò nhìn sơ qua.</p>
+<p>“Vu cô cô nói, này đó chỉ bạc than đều lấy lại đây.” Cung nhân nói.</p>
+<p>Ứng Phù Thăng nghiêng đầu, nơi xa án trên đài bãi mấy thứ nghiên mực, đều là Thái hậu tân đưa lại đây. Quý trọng nghiên mực liền như vậy sưởng, Ứng Phù Thăng cúi đầu, ngón tay sở chạm đến giường ấm áp, vừa thấy liền biết là dùng lò sưởi ấm quá, nhiệt ý đuổi chi không tiêu tan.</p>
+<p>“Điện hạ, Thái hậu nương nương đối ngài cực hảo.” Tụng An nói.</p>
+<p>Cực hảo sao…… Ứng Phù Thăng không quá lý giải.</p>
+<p>Cung nhân vội ấn Thái hậu phân phó làm việc, nhưng lấy nàng tính cách, sẽ không đối bất luận cái gì hoàng tử có điều thiên vị, nhưng tối nay trong điện đủ loại, đủ để thể hiện Thái hậu đối hắn ban thưởng, nàng đại nhưng làm thái y đi Vị Ương Cung, mà không phải lưu lại hắn.</p>
+<p>Là nàng phát hiện cái gì sao?</p>
+<p>Cung yến thượng hắn như vậy rêu rao, chú ý tới người của hắn rất nhiều.</p>
+<p>Tiệc mừng thọ này cử xác thật liều lĩnh, nhưng hắn không còn cơ hội khác, chỉ có này cử có thể làm Ninh gia cùng hắn cái này bên cạnh hoàng tử đi đến thượng vị giả trước mặt. Nếu là lại làm hắn trở lại Vị Ương Cung, Vọng Nguyệt Đình một chuyện làm Ninh phi nhớ kỹ, lấy Ninh phi tàn nhẫn độc ác, hắn có thể hay không một lần nữa tìm được cơ hội liền khó nói.</p>
+<p>Tuổi thượng tiểu nơi chốn chịu hạn, mà duy nhất có thể chế trụ Ninh phi người cũng chỉ có Thái hậu. Ứng Phù Thăng mưu hoa quá mặt khác, cũng nghĩ tới lợi dụng Thái hậu, hắn có tính toán ở tiệc mừng thọ sau mặt dày mày dạn đãi ở Từ Ninh Cung, thể diện quy củ loại đồ vật này, yêu cầu thời điểm có thể làm bộ làm tịch, không cần thời điểm tự nhiên có thể vứt bỏ không thèm nhìn lại, chỉ là hắn còn chưa kịp hành động, Thái hậu lại chủ động lưu lại hắn.</p>
+<p>Càng là tưởng, Ứng Phù Thăng càng cảm giác được đau đầu, Thái hậu dị thường làm hắn rất là khó hiểu, kiếp trước bị người tính kế nhiều, hiện tại nhìn thấy người khác một chút hảo, hắn đều cảm thấy là dụng tâm kín đáo.</p>
+<p>Ứng Phù Thăng phá lệ mà đẩy ra cửa sổ.</p>
+<p>Ngoài cửa sổ, cung nhân thối lui, chỉ chừa hai cái gác đêm.</p>
+<p>Ứng Phù Thăng động tác một đốn.</p>
+<p>“Điện hạ, bên ngoài phong lãnh.” Tụng An khó hiểu nói “Làm sao vậy?”</p>
+<p>Ứng Phù Thăng khép lại cửa sổ, trong đầu suy nghĩ yên tán, “Không có việc gì.”</p>
+<p>Trong cung ấm áp chậm rãi bao vây lấy hắn, cốt phùng dây dưa âm lãnh tan sơ qua.</p>
+<p>Thái hậu không có lưu lại còn lại nhãn tuyến, so Vị Ương Cung còn sạch sẽ.</p>
+<p>Phảng phất hết thảy an bài cũng chỉ là đơn thuần mà…… Vì hắn hảo.</p>
+<p>Tác giả có lời muốn nói</p>
+<p>[ tốt ] tới tới ~</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "thai-tu-thien-thu-van-tai";
+const NOVEL_TITLE = "Thái tử thiên thu vạn tái";
+const CHAPTER_TITLE = "Chương 11";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

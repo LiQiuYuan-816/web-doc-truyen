@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 15</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tiểu đáng thương tay cầm sảng văn kịch bản
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 15</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong14.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong16.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Tạ Nhiên xem thiệp thời điểm, thiệp đã che đến phiên trang, ngay từ đầu không bao nhiêu người chú ý, sau lại ùa vào tới Diệt Thần bang hội người, trực tiếp biến thành cãi nhau thiệp. Bất quá mang đầu óc thượng diễn đàn người chiếm đa số, hai cái thiệp tự sự phong cách bất đồng, nói hắn ăn trộm kẻ lừa đảo sự căn bản không đứng được chân.</p>
+<p>Hắn thối lui đến bát quái bản khối trang đầu, cũng nhìn đến tối hôm qua cái kia thiệp bị trên đỉnh tới, ăn dưa người trở nên càng ngày càng nhiều.</p>
+<p>Hắn cắt đến cùng tiên nữ trò chuyện riêng,</p>
+<p>Tiên nữ Diệt Thần người lại đây thiệp náo loạn, ngươi bên trong nói được khá tốt, nhưng phía trước cùng Diệt Thần nói bồi thường sự tình không chụp hình sao?</p>
+<p>Châm Không có, chụp hình cũng chỉ có hình ảnh thượng những cái đó.</p>
+<p>Tiên nữ Tương đối có hại a, bọn họ cắn nói chính xác phía trước sự, đều bắt đầu đổi trắng thay đen.</p>
+<p>Châm Không có việc gì, kia thiệp mang đầu óc người đều có thể xem hiểu, mỗi người một ý, không cần thiết giải thích quá nhiều.</p>
+<p>Tiên nữ hhhh ngươi tâm rất lớn, ta chính là không quen nhìn Diệt Thần thao tác, giống như trò chơi chính là bọn họ gia khai.</p>
+<p>Châm ?</p>
+<p>Châm Bọn họ không cái kia tiền khai đi?</p>
+<p>Tạ Nhiên cùng tiên nữ cho tới một nửa, phòng làm việc Tiểu Thất cũng thấy được diễn đàn thiệp, lập tức chạy tới hỏi một chút tình huống.</p>
+<p>Tiểu Thất Lão bản, ta nhìn đến diễn đàn có tân thiệp, là ngươi thân hữu phát sao?</p>
+<p>Châm Một cái bằng hữu đại phát, Diệt Thần sau lại còn có tìm ngươi nói báo thù sự sao?</p>
+<p>Tiểu Thất Không có, 20w nói xong bọn họ thanh cũng không ra.</p>
+<p>Châm OK, ngươi lần trước nói chuyện phiếm chụp hình có thể phát sao?</p>
+<p>Tiểu Thất Không thành vấn đề, lại không phải cái gì nhận không ra người sự.</p>
+<p>Thiệp là tiên nữ đại phát, tuy rằng lầu chính cho thấy là đại người khác phát thiếp, nhưng là thiệp bộ phận Diệt Thần bang hội người đã đem tiên nữ đánh thành Tạ Nhiên thân hữu, thậm chí bắt đầu đối nhân gia cô nương nói năng lỗ mãng. Diễn đàn hạn chế tài khoản mới phát thiếp, lại không hạn chế tài khoản mới thiệp trả lời.</p>
+<p>Hắn trực tiếp đánh chữ hồi phục.</p>
+<p>Phong Dục Nhiên</p>
+<p>Có một số việc nhiều lời vô ích, phát thiếp mục đích cũng không phải giải hòa, chỉ là đem sự tình từ đầu đến cuối nói rõ ràng miễn cho người qua đường bị đương thương sử. Lâu chủ chỉ là hảo tâm hỗ trợ phát thiếp, các vị ngoài miệng tích điểm khẩu đức.</p>
+<p>Mặt khác, khai mạch phun người thỉnh mang chứng cứ, không có chứng cứ bôi nhọ chi từ ta xem một câu nhớ một câu, dã ngoại cũng thấy một cái sát một cái.</p>
+<p>[ chụp hình ] nếu lợi hại như vậy, kia thấu đủ 20w lại đến đề giải hòa hảo sao? )</p>
+<p>Tạ Nhiên đem thiệp phát sau khi ra ngoài liền không lý. Hắn hiện tại thân thể này thân thể trạng huống thiếu giai, thời gian dài ngâm mình ở máy tính trước mặt kỳ thật vô ích, hắn nhàn tới không có việc gì liền đến trong viện đi một chút, quản gia đang ở xây cất trong viện hoa cỏ.</p>
+<p>Thấy hắn lại đây, quản gia ra tiếng nói, “Nhị thiếu.”</p>
+<p>Tạ Nhiên gật gật đầu, sau đó đi đến một bên nhìn mặt khác cây xanh. Tạ gia biệt thự trước cửa là cái hoa viên nhỏ, thật nhiều hoa cỏ Tạ Nhiên nhìn đều kêu không được tên, cũng may quản gia lực chú ý vẫn luôn ở hắn bên này, nhìn đến hắn ở đâu trước mặt dừng lại liền dốc lòng giới thiệu như vậy thực vật.</p>
+<p>Quản gia nghiêm trang, tây trang thượng bộ cái tạp dề, giới thiệu khởi thực vật tới đạo lý rõ ràng.</p>
+<p>Tạ Nhiên bất tri giác ở hắn bên người đứng yên thật lâu, thẳng đến nghe được tiếng chó sủa mới lấy lại tinh thần. Tiếng chó sủa là từ cách vách trong viện truyền đến, kim mao đầu xuyên qua cách vách sân lan can, chính ha khí nhìn về phía bọn họ bên này.</p>
+<p>Tạ Nhiên nhìn đến kim mao thời điểm sửng sốt một chút, nghĩ đến đó là ngày đó buổi tối cho hắn dẫn đường người nắm kim mao. Bất quá kim mao ở hắn xem ra đều trường một cái dạng, đến nỗi hàng xóm dưỡng kim mao đúng là hắn ngoài ý liệu.</p>
+<p>Quản gia nhìn đến nhà mình nhị thiếu nhìn chằm chằm lãnh ở nhà cẩu nhìn thật lâu, không khỏi ra tiếng hỏi, “Nhị thiếu thích kim mao sao? Nếu thích nói, có thể cùng đại thiếu xin ở trong nhà dưỡng một con.”</p>
+<p>Nuôi chó?</p>
+<p>Tạ Nhiên đối sủng vật kỳ thật hiểu biết không thế nào thân thiết, hắn từ nhỏ ở cô nhi viện lớn lên, gặp qua nhiều nhất cũng chính là ở nông thôn lưu lạc cẩu.</p>
+<p>Sau lại thi đậu không tồi đại học, tốt nghiệp được đến không tồi offer, ở nội thành thuê nhà có chút giàu có, lại cũng không dưỡng quá sủng vật.</p>
+<p>Hắn không cái này kinh nghiệm, cũng không cái kia chuẩn bị tới giáo dưỡng một cái khác sinh mệnh.</p>
+<p>Đối mặt quản gia kiến nghị, hắn chỉ là lắc lắc đầu.</p>
+<p>Xã khu internet chỉnh đốn thẳng đến buổi chiều mới xong việc.</p>
+<p>Mà lúc này Tạ Nhiên đã cùng quản gia bắt đầu học khởi như thế nào chăm sóc thực vật, khu biệt thự thật sự là □□ tĩnh, trước hai ngày Tạ Nhiên cá nhân ở thời điểm, ban ngày an tĩnh không người, còn hảo hiện tại có cái quản gia ở, hắn sinh hoạt cũng coi như không thượng quá nhàm chán.</p>
+<p>Kỳ thật xuyên thư làm hắn có loại tu hú chiếm tổ cảm giác, mặc dù nguyên chủ có bó lớn tiền tài cung hắn tiêu xài, nhưng trên thực tế hắn vẫn cứ có chút biệt nữu. Loại này biệt nữu không thể nói là đối vật chất sinh hoạt tội ác cảm, chỉ có thể nói loại này sinh hoạt làm hắn có chút không thích ứng.</p>
+<p>Giúp đã từng Tạ Nhiên hoàn thành nguyện vọng, sau đó xử lý tốt hắn cùng trong nhà quan hệ.</p>
+<p>Đây cũng là hắn hiện giai đoạn có thể làm sự tình.</p>
+<p>Cùng hắn ý tưởng tương bội, nhưng hắn tiềm thức trung tựa hồ còn có nguyên chủ cảm xúc ở, hơn nữa nhiều lần ám chỉ hắn có thể tùy tính mà làm. Hình như là nói, coi như trở thành chính mình mà sống.</p>
+<p>Tạ Nhiên thật dài mà thở dài, có thể là dĩ vãng sinh hoạt thói quen sửa bất quá tới.</p>
+<p>Quản gia nhìn đến Tạ Nhiên thở dài, lập tức liền cảnh giác lên, hắn nghĩ tới nghĩ lui đem nhị thiếu hôm nay sở hữu hành vi loát một lần, đem Tạ Nhiên thở dài quy kết với lãnh ở nhà cẩu trên người, có lẽ nhị thiếu là tưởng nuôi chó nhưng nói không nên lời?</p>
+<p>Tạ Nhiên vẫn luôn cùng quản gia đợi cho ba điểm nhiều, rồi sau đó quản gia đi vội mặt khác, hắn liền đi ra ngoài tản bộ.</p>
+<p>Chờ đến trở về thời điểm, quản gia đã ở phòng bếp chuẩn bị bữa tối, Tạ Nhiên đi vào đi xem món ăn, rồi sau đó phát hiện hắn chuẩn bị có điểm nhiều.</p>
+<p>Vì thế đánh chữ hỏi, 【 về sau có thể chuẩn bị thiếu một chút, chúng ta liền hai người, không cần nhiều như vậy. 】</p>
+<p>Quản gia gật đầu thăm hỏi, “Nhị thiếu yên tâm, ta vừa mới thu được Trình bí thư tin tức, đại thiếu trong khoảng thời gian này đều sẽ hồi nơi này trụ.”</p>
+<p>“?”Tạ Nhiên vẻ mặt ngốc, này cùng trong sách cốt truyện không quá giống nhau, không phải nói Tạ gia đại thiếu Tạ Thời Thanh không yêu trở về nhà sao?</p>
+<p>Như thế nào đột nhiên lãng tử hồi đầu.</p>
+<p>Quản gia chú ý tới nhị thiếu trên mặt chợt lóe mà qua kinh ngạc, ôn nhu giải thích nói “Đại thiếu kỳ thật còn rất quan tâm ngài.”</p>
+<p>Tạ Nhiên không nghe đi vào, hắn toàn bộ tâm tư đều ở cân nhắc Tạ Thời Thanh có phải hay không OOC, dựa theo cốt truyện tới nói hắn cùng nguyên chủ quan hệ còn chưa tới trình độ này, chẳng lẽ là chính mình mấy ngày nay nào đó hành vi khiến cho hắn hoài nghi?</p>
+<p>Tạ Thời Thanh là cái cẩn thận người, có lẽ đã chú ý tới hắn cùng nguyên chủ sai biệt, cho nên mới lựa chọn lưu tại trong nhà quan sát tình huống?</p>
+<p>Tạ Nhiên có điểm hoảng hốt đi ra ngoài, trong lòng nghĩ sự.</p>
+<p>Quản gia nhìn chăm chú vào Tạ Nhiên bóng dáng, nguyên lai thật sự cùng Trình bí thư nói giống nhau, nhị thiếu cùng đại thiếu chi gian quan hệ không tốt lắm.</p>
+<p>Bữa tối thời điểm, Tạ Thời Thanh đúng giờ về đến nhà.</p>
+<p>Tạ Nhiên đi xuống ăn cơm thời điểm vừa vặn nhìn đến Trình bí thư cùng Tạ Thời Thanh cùng đi vào, hai người vừa đi vừa nói chuyện lời nói, tựa hồ là công tác thượng sự tình còn không có giải quyết hảo. Bất quá Trình bí thư không lưu quá dài thời gian, hắn cùng Tạ Nhiên chào hỏi liền đi.</p>
+<p>Cũng không biết có phải hay không chính mình ảo giác, Tạ Nhiên phát hiện Trình bí thư thái độ tựa hồ so lần đầu tiên gặp mặt thời điểm hảo rất nhiều.</p>
+<p>Bữa tối trên bàn chỉ có Tạ Nhiên cùng Tạ Thời Thanh hai người, Tạ Nhiên không quá nguyện ý cùng Tạ Thời Thanh chủ động giao lưu, mà Tạ Thời Thanh không nói lời nào tình huống chiếm đa số, một bữa cơm thượng cơ bản linh giao lưu. Giống mấy ngày hôm trước như vậy Tạ Thời Thanh chủ động đáp lời tình huống không giống nhau, Tạ Nhiên cảm thấy đây mới là này đối huynh đệ nên có ở chung phương thức.</p>
+<p>Quá mức đột ngột kết giao làm hắn không biết theo ai, cũng vô pháp phán đoán Tạ Thời Thanh người này rốt cuộc là OOC vẫn là nói phát hiện hắn cùng nguyên chủ trên người sai biệt. Tạ Nhiên thực mau liền đem chính mình cơm ăn xong, sau đó mã bất đình đề mà trở lại chính mình phòng.</p>
+<p>Mới vừa đóng cửa lại, hắn nhìn chằm chằm chính mình bắt lấy tay nắm cửa tay, như suy tư gì mà nghĩ đến, hắn ban đầu có như vậy sợ hãi cùng người kết giao sao?</p>
+<p>Tiên nữ một buổi trưa đều tại cấp hắn định kỳ bá báo diễn đàn thiệp tình huống, nhưng mà Tạ Nhiên buổi chiều chỉ lo cùng quản gia nghiên cứu hoa hoa thảo thảo, đảo cũng không kịp thời hồi phục nàng tin tức. Lúc này hắn mở ra diễn đàn, thiệp so sánh với buổi chiều đã nhiều che lại thật nhiều tầng lầu, trực tiếp phiên hai ba trang thành trang đầu hồng thiếp.</p>
+<p>Hắn phiên đến chính mình cuối cùng hồi phục thiệp, nhìn đến phía dưới những người khác hồi phục.</p>
+<p>Ái ái tử hôm nay cũng muốn ăn Tạc Gà hồi phục Phong Dục Nhiên Ngọa tào hảo mới vừa a huynh đệ, ngươi đây là chính diện cùng Diệt Thần bang hội mới vừa thượng a.</p>
+<p>Ướp lạnh trái cây trà hồi phục Phong Dục Nhiên Ta nhìn đến cái này 20w mạc danh có điểm sảng sao lại thế này? Mỗ bá phục bang hội lần này đá đến ván sắt sao? Khi dễ ai không được, trực tiếp khi dễ đến lão bản trên đầu?</p>
+<p>Thích trời nắng Ngọa tào ngọa tào, bần cùng ta có phải hay không tiến sai rồi thiệp.</p>
+<p>Tề Thiên Đại Thánh Nhiên lão bản thiếu luyện dùm sao? @ Phong Dục Nhiên</p>
+<p>Trời đãi kẻ cần cù Nhiên lão bản thiếu tài xế? Haruna xe thần cái loại này @ Phong Dục Nhiên</p>
+<p>Không có uống giả rượu Chụp hình phòng làm việc ta nhận thức, toàn phục nổi tiếng thích khách phòng làm việc, chuyên tiếp báo thù, báo giá còn rất cao. Phong Dục Nhiên nếu có thể mướn này đàn thích khách nơi nơi rửa sạch Diệt Thần bang hội người, như thế nào sẽ liền vũ linh thảo tiền đều không cho được? @ Chi Chi Lan Yên, nữ chính nếu không giải thích giải thích?</p>
+<p>Yên Lặng Yên Lặng hồi phục Phong Dục Nhiên Có mấy cái tiền trinh ghê gớm sao?</p>
+<p>Bảo trì đáng yêu hồi phục Yên Lặng Yên Lặng Hải nha, nhà ngươi phu nhân đều xấu hổ đến không dám đi lên làm sáng tỏ, Diệt Thần hiện tại liền ngươi một người ở nhảy, ngươi như vậy chân chó sao?</p>
+<p>Con thỏ manh manh đát hồi phục Yên Lặng Yên Lặng Ta kỳ thật cũng tưởng nói, mượn lâu cùng những người khác nói nói, Diệt Thần tao thao tác không phải lần đầu tiên, các ngươi chẳng lẽ đã quên lần trước Chi Chi Lan Yên xé mỗ gia muội tử sự sao? Nói muội tử đoạt nàng che giấu, kỳ thật thượng là nàng không mang đủ tiền chụp, bị chúng trào quá nhật tử liền như vậy bị quên đi? Internet chính là có ký ức, [ chỉ lộ thiệp từ ngữ mấu chốt Thịnh thế bạch liên ]</p>
+<p>Con thỏ manh manh đát Phong Dục Nhiên lão bản quá đáng yêu, ta liền thích như vậy cương! Trò chơi sát Diệt Thần người mang ta một cái!</p>
+<p>Lão thất Ha ha ha diễn đàn như vậy náo nhiệt sao? Cảm ơn lão bản giúp ta đánh quảng cáo, Thần Ảnh Vô Tung phòng làm việc tại tuyến tiếp đơn, vô luận là tiểu tam vẫn là thù địch vẫn là cẩu nam nữ, chúng ta đều có thể vì ngươi giải quyết phiền não, liên hệ thỉnh xem mỗ bảo cửa hàng [ địa chỉ ]</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong14.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong16.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tieu-dang-thuong-tay-cam-sang-van-kich-ban";
+const NOVEL_TITLE = "Tiểu đáng thương tay cầm sảng văn kịch bản";
+const CHAPTER_TITLE = "Chương 15";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

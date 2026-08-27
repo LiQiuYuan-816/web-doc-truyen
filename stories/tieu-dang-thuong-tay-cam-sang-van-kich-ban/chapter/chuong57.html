@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 57</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tiểu đáng thương tay cầm sảng văn kịch bản
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 57</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong56.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong58.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Khi còn nhỏ Nhiên Nhiên cùng hàng xóm tiểu hài tử ở nhà cũ phụ cận chơi thời điểm bị người bắt cóc.” Tạ Thời Thanh giải thích nói, “Bọn bắt cóc phát tới chuộc người yêu cầu, lúc ấy chúng ta thực mau liền tìm đến tương quan manh mối truy tung, báo nguy đuổi tới thời điểm là ở vùng ngoại thành ngoài bìa rừng tìm được Nhiên Nhiên.”</p>
+<p>Chử Hi một đốn, “Kia sự kiện xử lý xong rồi sao?”</p>
+<p>“Sau lưng sai sử người lúc ấy cùng nhà của chúng ta có mâu thuẫn, bí quá hoá liều tìm người làm chuyện này.” Tạ Thời Thanh trầm mặc một lát, “Nhiên Nhiên cánh tay thượng có súng thương, càng có rất nhiều từ lầu hai nhảy xuống đi thời điểm bị nhánh cây hoa thương. Rất dọa người, trên quần áo từng khối vết máu.”</p>
+<p>Tạ Thời Thanh biết chuyện này thời điểm so vãn, đuổi tới bệnh viện thời điểm liền nhìn đến quần áo dính đầy huyết tiểu hài tử, chung quanh đều là bác sĩ hộ sĩ.</p>
+<p>Tiểu hài tử ngày đó xuyên bạch y phục, súng thương cũng không kịp thời xử lý, đưa đến bệnh viện trong quá trình miệng vết thương vỡ ra, chợt vừa thấy cả người đều là huyết.</p>
+<p>“Cũng may tầng lầu không cao lại có nhánh cây ngăn cản, bị thương ngoài da thoạt nhìn rất nghiêm trọng nhưng cũng may không có gì trở ngại.” Tạ Thời Thanh hồi tưởng năm đó tình huống, “Nghe ta mẹ nói cứu viện kịp thời, nếu lúc ấy lại vãn nửa giờ, khả năng chính là không giống nhau kết quả.”</p>
+<p>Chử Hi nghe Tạ Thời Thanh miêu tả chau mày, “Sau lại đâu.”</p>
+<p>“Thiệp sự nhân viên đều bị xử lý. Nhiên Nhiên đã phát vài trời cao thiêu, tỉnh lại hậu nhân hảo hảo có thể ăn có thể uống, hỏi hắn lời nói thời điểm cũng có đáp lại. Năm đó sự tình phức tạp, ta ba mẹ xử lý kế tiếp sự tình, chờ phát hiện Nhiên Nhiên sẽ không nói thời điểm đã là cách thiên.” Tạ Thời Thanh, “Trải qua kiểm tra xác định là chấn thương tâm lý, Nhiên Nhiên cũng đem kia đoạn trải qua cấp đã quên. Ta ba cảm thấy sự tình còn có điểm đáng ngờ, nhưng là lúc trước người liên quan vụ án đều tìm đến, Nhiên Nhiên lại quên sự, lại tra không ra chi tiết tới.”</p>
+<p>Chử Hi hiểu rõ, “Cho nên năm đó các ngươi là hoài nghi chuyện này bên trong có người ở vận tác?”</p>
+<p>“Có như vậy nghĩ tới, nhưng là không có bất luận cái gì manh mối. Hoặc là chính là chúng ta nhiều lự, hoặc là chính là người này tàng đến quá hảo.” Tạ Thời Thanh nói, “Sau lại sự ngươi cũng rất những người khác nói qua, Nhiên Nhiên những năm gần đây đã không có chuyển biến tốt đẹp, nhưng là lần này Tiết gia sự tình ngoi đầu, hơn nữa Nhiên Nhiên hai lần ngoài ý muốn té xỉu. Năm đó kia sự kiện hẳn là không đơn giản như vậy……”</p>
+<p>Chử Hi suy tư nói, “Có hoài nghi người sao?”</p>
+<p>Tạ Thời Thanh, “Có, nhưng là còn đang xem tình huống, tàng quá sâu.”</p>
+<p>“Gần nhất mấy ngày vẫn là chú ý điểm.” Chử Hi nhắc nhở nói, “Ta phía trước vẫn luôn nghe nói ngươi cùng Nhiên Nhiên quan hệ bất hòa, nhưng ta trong khoảng thời gian này xem ngươi đối hắn còn khá tốt, này lại là chuyện như thế nào?”</p>
+<p>Nhắc tới chuyện này, Tạ Thời Thanh liền ngăn</p>
+<p>Không được hối hận, “Là ta đối hắn quan tâm không đủ.”</p>
+<p>Hắn đem hết thảy nghĩ đến quá đơn giản, lại bỏ qua Tạ Nhiên kỳ thật cái thiếu ái hài tử.</p>
+<p>“Nhà các ngươi sự ta không có quyền can thiệp, bất quá những việc này tốt nhất vẫn là điều tra rõ ràng.” Chử Hi biết Tạ gia cha mẹ xuất ngoại sự, lúc ấy Tạ gia sự nghiệp phát triển không ngừng, xuất ngoại mở rộng sự nghiệp xác thật là lựa chọn tốt nhất. Hắn cùng Tạ Thời Thanh là cùng thế hệ người, ở cùng cái vòng hỗn khó tránh khỏi sẽ bị lấy ra tới tương đối, Tạ Thời Thanh là như thế nào người, Chử Hi trong lòng vẫn là nắm chắc, “Mấy năm trước bá phụ bá mẫu xuất ngoại, ngươi tưởng dừng bước vốn là không dễ, nhưng đối kia hài tử bỏ qua đây cũng là ngươi sai lầm.”</p>
+<p>“Ngươi nếu là thật muốn đối kia hài tử hảo, những việc này sớm một chút điều tra rõ ràng, cũng là đối hắn công đạo.”</p>
+<p>“Hôm nay cảm ơn ngươi.” Chử Hi người này tuy rằng tâm tư thâm, nhưng là không có ích lợi liên quan đến dưới tình huống vẫn là cái không tồi kết giao người được chọn. Này hai lần Tạ Nhiên sự, hắn cũng giúp không ít vội, Tạ Thời Thanh, “Hôm nào thỉnh ngươi ăn cơm.”</p>
+<p>“Ăn cơm liền miễn.” Chử Hi vỗ vỗ hắn bả vai, “Nhiên Nhiên kia hài tử vừa mới ta trạng huống ta cảm thấy có điểm kỳ quái, có một số việc kỳ thật có thể từ mặt khác góc độ đi xem, hắn nói mộng có lẽ không phải mộng, các ngươi có lẽ có thể từ hắn theo như lời chi tiết đi tra.”</p>
+<p>Tạ Thời Thanh nhíu mày, “Ý của ngươi là?”</p>
+<p>“Ngươi có thể hỏi lại vừa hỏi kia hài tử.”</p>
+<p>Tạ Nhiên lại lần nữa tỉnh lại thời điểm, chung quanh vây quanh đều là người, hắn ghé mắt nhìn đến hốc mắt mang hồng Tạ mẫu, cùng bác sĩ thảo luận Tạ Thời Thanh, đầy mặt nghiêm túc Tạ phụ. Trong phòng bệnh thanh âm rất nhỏ, những người khác chính lo lắng mà nhìn hắn, Tạ Nhiên một câu cũng không nghe đi vào, hắn đang suy nghĩ sự tình, một lần nữa hồi ức cái kia ly kỳ cảnh trong mơ, có chút chưa từng có bị hắn phát hiện chi tiết đang dần dần trồi lên mặt nước.</p>
+<p>Này đó hẳn là không phải mộng, mà là nguyên chủ đã từng có được ký ức.</p>
+<p>Trong phòng bệnh những người khác không dám tiến lên đây quấy rầy hắn, bác sĩ lại đây dò hỏi mấy vấn đề, xác định không có việc gì sau Tạ mẫu mới buông tâm lại đây hỏi một chút tình huống, “Mụ mụ không nên đi ra ngoài.”</p>
+<p>Tạ Nhiên bị đỡ làm lên, vừa muốn nói gì, tay đã tự giác đi đủ đặt ở một bên giấy bút. Trong khoảng thời gian này hắn càng ngày càng thói quen cùng người viết chữ giao lưu, hắn viết đến, 【 không có việc gì. 】</p>
+<p>Trong phòng bệnh còn có những người khác, Tạ Nhiên mơ mơ hồ hồ nhớ rõ lúc ấy hắn ý thức không thanh tỉnh thời điểm, tựa hồ có người lại đây, nhưng hắn không có thấy rõ ràng người nọ? Hắn nhớ rõ ý thức còn thanh tỉnh thời điểm tựa hồ là cấp những người khác đã phát tin tức, cũng không biết là phát không phát ra đi.</p>
+<p>Nghĩ đến trong mộng sự, hắn tâm bỗng nhiên trầm hạ tới.</p>
+<p>Tạ mẫu thấy Tạ Nhiên trạng thái còn hảo, liền ra tiếng nói “Lần này là ngươi ca cùng Tiểu Chử phát hiện</p>
+<p>Sớm, bằng không mụ mụ thật không biết nên làm cái gì bây giờ?”</p>
+<p>Nàng biết bác sĩ lại đây kiểm tra, cho rằng có thể theo kịp thời gian trở về, không nghĩ tới bác sĩ chân trước mới vừa đi, Tạ Nhiên liền xảy ra chuyện.</p>
+<p>Tạ Nhiên phục hồi tinh thần lại, nhìn về phía bên kia đứng Tạ Thời Thanh?</p>
+<p>Lúc ấy lại đây người là Tạ Thời Thanh cùng Hi ca sao? Nhưng Hi ca không phải bởi vì có việc vội đã rời đi sao?</p>
+<p>【 Hi ca đi rồi sao? 】</p>
+<p>Tạ Thời Thanh mới vừa cùng bác sĩ nói xong, đi tới thời điểm nhìn đến Tạ Nhiên viết tự, “Hắn vừa mới mới đi, công ty bên kia có việc không thể kéo. Lần này ít nhiều hắn, thân thể hảo điểm cho hắn phát cái tin tức báo bình an.”</p>
+<p>Tạ Nhiên gật đầu, bỗng nhiên nghĩ đến chính mình không Chử Hi liên hệ phương thức.</p>
+<p>Một hồi đến tìm Tạ Thời Thanh muốn một cái.</p>
+<p>Tạ mẫu cũng nói, “Ngươi cũng là, chờ công tác vội xong cũng tìm cái thời gian cảm ơn nhân gia Tiểu Chử. Này hai lần ít nhiều hắn hỗ trợ, Nhiên Nhiên lần này cũng là hắn chú ý tới đi?”</p>
+<p>Tạ Thời Thanh nói, “Ân, là hắn gọi điện thoại cho ta làm ta xác nhận hạ phòng bệnh sự.”</p>
+<p>Tạ Nhiên nghe có điểm kỳ quái, nhưng là nhìn Tạ mẫu cùng Tạ Thời Thanh bình thường biểu đạt cũng không lại đặt câu hỏi.</p>
+<p>Chử Hi như thế nào sẽ đột nhiên đi vòng, lại làm Tạ Thời Thanh xác nhận phòng bệnh sự? Có cái gì chi tiết bị hắn xem nhẹ rớt sao?</p>
+<p>Những người khác không ở trong phòng bệnh lưu quá dài thời gian, Tạ phụ cùng Tạ Thời Thanh thực mau liền rời đi phòng bệnh, tựa hồ là có việc thương nghị đi. Tạ mẫu ngồi ở bên cạnh trên ghế, vẫn luôn ở chú ý Tạ Nhiên nhu cầu.</p>
+<p>Tạ Nhiên hiện tại đầu óc thanh tỉnh thật sự, hắn nguyên bản tưởng đem trong mộng chi tiết một lần nữa loát một chút, nhưng là Tạ mẫu ở chỗ này hắn không hảo viết chữ trinh thám. Mà di động cũng bởi vì yêu cầu nghỉ ngơi nguyên nhân bị phóng tới bên kia.</p>
+<p>Trễ chút thời điểm, quản gia lại đây.</p>
+<p>Tạ mẫu đến bên ngoài đi tiếp điện thoại, trong phòng liền dư lại quản gia cùng Tạ Nhiên hai người.</p>
+<p>Tạ Nhiên thấy thời cơ không sai biệt lắm, liền vẫy tay làm quản gia lại đây, viết chữ, 【 Lý ca, giúp ta bắt lấy di động. 】</p>
+<p>Quản gia nhìn Tạ Nhiên sắc mặt, uyển chuyển từ chối hắn yêu cầu, “Nhị thiếu, ngươi hiện tại yêu cầu nghỉ ngơi.”</p>
+<p>Tạ Nhiên không nghĩ tới duy nhất khả năng hỗ trợ giúp đỡ ở thời điểm này thái độ bỗng nhiên kiên định lên, không có biện pháp, di động sự vẫn là trễ chút nhìn nhìn lại. Hắn trên giấy một lần nữa viết đến, 【 phía trước phiền toái ngươi giúp ta chuẩn bị sự tình thế nào? 】</p>
+<p>“Gần nhất vận chuyển hết thảy bình thường, nhị thiếu không cần lo lắng.” Quản gia nhìn đến Tạ Nhiên để ý ánh mắt, nghĩ nghĩ nói, “Tiên sinh cùng phu nhân gần nhất cũng ở điều tra Tạ gia cùng Tiết gia sự, ta không hảo quá rõ ràng, nhưng là sự tình phát triển đều thực thuận lợi.”</p>
+<p>Tạ Nhiên nghĩ nghĩ, 【 ngươi có thể giúp ta làm sự kiện sao? 】</p>
+<p>Quản gia gật đầu, “Nhị thiếu mời nói.”</p>
+<p>【 hai ngày này hồi tranh Tạ gia nhà cũ, nhiên</p>
+<p>Sau giúp ta chụp mấy trương ảnh chụp hoặc là nói lục cái video. 】 Tạ Nhiên lo lắng quản gia sinh nghi, lại giải thích câu, 【 lâu lắm không trở về nhìn xem, vừa mới mơ thấy khi còn nhỏ sự, muốn nhìn xem bên kia hiện tại thế nào. 】</p>
+<p>“Hảo.” Quản gia phía trước không ở Tạ gia nhà cũ công tác quá, nhưng là Tạ mẫu ở biệt thự trong khoảng thời gian này ngẫu nhiên cũng sẽ làm quản gia hỗ trợ trở về lấy điểm đồ vật, đối nhà cũ bên kia cũng coi như quen thuộc.</p>
+<p>Tạ Nhiên đem sự tình giao cho quản gia sau cũng liền yên lòng. Này sẽ đúng là buổi tối, Tạ Nhiên nhìn thời gian đã tới rồi hắn buổi tối nghỉ ngơi thời điểm, bất quá có thể là bởi vì lúc trước ngủ nhiều, hắn đinh điểm buồn ngủ đều không có.</p>
+<p>Tạ mẫu ở một bên xử lý công tác, hắn nhàn rỗi không có việc gì liền cầm luyện tập sách làm bài.</p>
+<p>Luyện tập sách bên trong kẹp vài trương giấy nháp, Tạ Nhiên viết viết liền nghĩ đến cái kia cảnh trong mơ thượng, hắn lo lắng thời gian lâu rồi dễ dàng quên chi tiết, liền ở giấy nháp thượng đem một ít chi tiết viết xuống dưới.</p>
+<p>Lần này cảnh trong mơ so với phía trước rõ ràng rất nhiều, ở hắn bị bắt bộ nhập hắc ám đường đi trước, hắn kỳ thật là ở vào một phòng nội. Cái kia phòng đặc biệt lượng, chung quanh còn đứng vài người, tựa hồ là bởi vì hắn không quá nghe lời, trong đó một người vì giáo huấn hắn động thủ.</p>
+<p>Tạ Nhiên viết đến nơi đây mày nhăn lại, cuối cùng viết mấu chốt tự ‘ huyết ’.</p>
+<p>Hắn nghĩ đến chính là ở có nguyên chủ cái kia ở cảnh trong mơ, khi còn nhỏ nguyên chủ quần áo dính máu nằm ở trên giường bệnh.</p>
+<p>Cảnh trong mơ xuống chút nữa đi, là hắn sấn những người khác không chú ý ra bên ngoài chạy thoát, lúc ấy cái kia rất sáng phòng môn cũng không có quan trọng, hắn chạy đi thời điểm là hướng ánh sáng địa phương chạy, kết quả thấy được người, rồi sau đó hoảng không chọn lộ chạy đến cái kia hắc ám đường đi trung.</p>
+<p>Người.</p>
+<p>Tạ Nhiên đối nguyên chủ nhận thức người kỳ thật không có gì ấn tượng, hắn đối quyển sách này cốt truyện hiểu biết từ lúc bắt đầu chỉ có văn tự, sau lại mới dần dần có chút mơ hồ ấn tượng. Nguyên chủ nhìn đến người kia thời điểm là kinh ngạc, sau lại hắn mới ra bên ngoài chạy.</p>
+<p>Như vậy vừa nói nói, người này nguyên chủ hẳn là nhận thức, hơn nữa rất có khả năng chính là khiến nguyên chủ phát sinh ngoài ý muốn đầu sỏ gây tội.</p>
+<p>Nếu là cái dạng này lời nói, kia hắn tốt nhất có thể nhìn xem nguyên chủ khi còn nhỏ sẽ gặp được người, có lẽ có thể nhìn đến quen thuộc gương mặt.</p>
+<p>Đây cũng là phiền toái địa phương, hắn biết có như vậy cá nhân tồn tại, nhưng là căn bản không biết người này là ai.</p>
+<p>Nếu có ảnh chụp có thể nhìn xem liền hảo, Tạ Nhiên ngòi bút ở vở dừng một chút, Tạ mẫu chú ý tới thanh âm quay đầu tới, “Nhiên Nhiên làm sao vậy?”</p>
+<p>Tạ Nhiên lắc lắc đầu, hắn đến tìm cái thời gian đem những việc này xác nhận xuống dưới.</p>
+<p>Ít nhất năm đó hắn phát sinh ngoài ý muốn khi những cái đó tương quan nhân viên, có lẽ liền biết trong mộng người kia là ai. Hắn có loại dự cảm, này rất có khả năng chính là trước mắt mới thôi hắn cảm thấy không hợp lý nguyên nhân, cũng có thể là nguyên chủ phát sinh chướng ngại chân tướng.</p>
+<p>Hắn duỗi tay sờ sờ cổ, có thể hay không hắn cởi bỏ này hết thảy chân tướng, là có thể tìm được chữa khỏi giọng nói biện pháp.</p>
+<p>Chử Hi đẩy cửa ra tiến vào thời điểm, liền nhìn đến trên giường bệnh thiếu niên chính rũ mắt trầm tư, tay đặt ở trên cổ, từ hắn nơi này xem qua đi có vẻ thập phần cô đơn.</p>
+<p>Thời gian vừa vặn đi qua 0 điểm, Tạ Thời Thanh ở hắn phía sau đẩy hắn một tay, hai người một trước một sau đi vào trong phòng.</p>
+<p>Tạ Nhiên ngẩng đầu lên, liền nhìn đến Chử Hi xách theo Bánh Kem hộp đi đến.</p>
+<p>“Nhiên Nhiên, sinh nhật vui sướng.”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong56.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong58.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tieu-dang-thuong-tay-cam-sang-van-kich-ban";
+const NOVEL_TITLE = "Tiểu đáng thương tay cầm sảng văn kịch bản";
+const CHAPTER_TITLE = "Chương 57";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

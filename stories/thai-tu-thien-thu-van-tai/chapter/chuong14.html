@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 14</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Thái tử thiên thu vạn tái
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 14</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong13.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong15.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Lời này vừa ra, người khác nhìn về phía Ứng Phù Thăng.</p>
+<p>Hoàng đế trong mắt xẹt qua một tia ngoài ý muốn.</p>
+<p>Thẩm Vân Phi sững sờ ở đương trường, hắn hoàn toàn không nghĩ tới lấy hôm nay lỗ mãng cùng Thẩm gia tình trạng, lại vẫn có hoàng tử ra tiếng tuyển hắn làm thư đồng.</p>
+<p>Hoàng đế nhìn Ứng Phù Thăng, quá dài áo lông chồn rơi trên mặt đất, nhưng nói ra những lời này khi không giống làm bộ, “Ngươi thật muốn làm Thẩm thị lang chi tử vì ngươi thư đồng?”</p>
+<p>Hoàng đế lời nói ra, những người khác như suy tư gì mà nhìn về phía Lục hoàng tử, lấy Ninh gia ở triều dã kia cẩn thận chặt chẽ bộ dáng, cả triều đều biết Thẩm gia ra đại sự, Ninh quý phi cùng Ninh thị lang tất nhiên rõ ràng, ở ngay lúc này cùng Thẩm gia nhấc lên quan hệ tệ xa xa lớn hơn lợi……</p>
+<p>Hoàng đế hỏi như vậy, thực sự là khó có thể làm người nắm lấy, phải biết Thẩm gia hiện nay tình huống nhưng khó có thể xoay người a!</p>
+<p>Lục hoàng tử chẳng sợ ở cung yến thượng pha đến thánh sủng, nhưng một khi dẫm trung hoàng đế nghịch lân, sủng ái đó là công dã tràng.</p>
+<p>Lục hoàng tử bị hoàng đế như vậy vừa hỏi, như là ngơ ngẩn, ngay cả bên cạnh Vinh công công đều nghĩ đề điểm một câu, lại thấy Lục hoàng tử do dự một lát, hình như có do dự mà dò hỏi “…… Không được sao?”</p>
+<p>Như vậy, là thật muốn làm Thẩm Vân Phi đương thư đồng.</p>
+<p>“Có gì không thể?” Hoàng đế nghe thấy cái này đáp án thoải mái cười to.</p>
+<p>Ứng Phù Thăng ngoài ý muốn, trên mặt trồi lên vui mừng, “Tạ phụ hoàng.”</p>
+<p>Hoàng đế nhìn về phía vẫn luôn cúi đầu rũ mắt Thẩm Vân Phi, “Thẩm Vân Phi, ngươi có không nguyện ý?”</p>
+<p>Thẩm Vân Phi cơ hồ thu liễm không được biểu tình, Lục hoàng tử gầy gầy nhược nhược, trên người quần áo đều so còn lại con vua nhiều vài món, vừa thấy chính là thể nhược kiều quý, thậm chí khả năng cũng chưa thượng quá mã.</p>
+<p>Hắn mặt khác giao hảo bằng hữu từng đề qua, Lục hoàng tử ở trong cung cơ hồ không có tồn tại cảm, cũng chỉ là khoảng thời gian trước cung yến dâng tặng lễ vật biểu hiện xuất chúng, mới hơi đến bệ hạ thiên vị.</p>
+<p>Thẩm Vân Phi cảm thấy chính mình thật sự có chút ti tiện, nhưng đưa tới trước mặt cứu mạng rơm rạ, hắn sao có thể không bắt lấy, chỉ cần trở thành thư đồng, liền có thể ở trước mặt bệ hạ lộ diện, Thẩm gia liền còn có cơ hội, “Nếu lục điện hạ không chê, thảo dân nguyện ý.”</p>
+<p>“Kia liền như thế đi.” Hoàng đế xua tay, duẫn, “Lệnh Binh Bộ thị lang chi tử Thẩm Vân Phi vì Lục hoàng tử thư đồng.”</p>
+<p>Thẩm Vân Phi lãnh chỉ.</p>
+<p>Mặt khác còn chưa chọn tuyển hoàng tử nhẹ nhàng thở ra, Ứng Phù Thăng thế nhưng phóng mặt khác thư đồng không cần, tuyển cái Thẩm Vân Phi. Hoàng đế chỉ định xong Lục hoàng tử thư đồng, dư lại mấy cái xuất thân không tồi thư đồng chỉ cho thất hoàng tử Bát hoàng tử đám người.</p>
+<p>Hôm nay tuyển chọn liền tính dừng ở đây.</p>
+<p>Thẩm Vân Phi bị chỉ cấp Lục hoàng tử, không ít người trộm thanh nghị luận, Thái tử ánh mắt liên tiếp nhìn về phía Ứng Phù Thăng, rõ ràng là tuyển cái những người khác nhất không nghĩ muốn Thẩm Vân Phi, nhưng hiện trường phong cảnh đều bị hắn đoạt đi, hắn ba cái thư đồng rõ ràng xuất thân đều không thấp, nhưng một hồi xuống dưới thế nhưng không bằng Thẩm Vân Phi ở đế vương trước mặt chịu một câu khen ngợi.</p>
+<p>Ứng Phù Thăng từ chỗ ngồi đứng dậy khi, Thái tử đã là dịch khai ánh mắt, nơi xa là đi tới Từ hoàng hậu. Từ hoàng hậu hôm nay ăn mặc mộc mạc, tay gian nắm lấy một chuỗi Phật châu, cùng Thái hậu thường bàn bất đồng, nàng trong tay Phật châu năm tháng lắng đọng lại, đã có khô mục chi tượng. Thần sắc thanh nhã gian, cái loại này thanh đăng cổ phật cảm giác càng trọng.</p>
+<p>Từ hoàng hậu ánh mắt vừa lúc từ Thái tử trên người dời đi, như là bị bên sườn thanh âm hấp dẫn, vừa vặn cùng Ứng Phù Thăng trông lại tầm mắt chạm nhau. Cặp kia thương xót Bồ Tát trong mắt không gợn sóng, không kịp ở Thái tử trên người vi diệu dao động, thu liễm đến tĩnh nếu bình đàm…… Lại như là so ngày thường lạnh lùng nửa sẽ, không hề nửa điểm cảm xúc.</p>
+<p>Gần chỉ là thấy.</p>
+<p>Ngay sau đó, nàng ở nghi giá trung rời xa.</p>
+<p>Ứng Phù Thăng chắp tay thi lễ động tác hơi đốn, cho đến bên sườn Tụng An thanh âm đánh vỡ yên tĩnh. Hắn mới định thần, từ kiếp trước hư vô mờ mịt ảo cảnh trung rời xa, nội tâm tự giễu mà cười một tiếng. Mới vừa rồi ở Diễn Võ Trường giả như đứa bé tư thái thu liễm, cũng không phân biệt mã ngân khi cố chấp thiên chân, chỉ dư lại một trương bình tĩnh gương mặt.</p>
+<p>“Điện hạ, ngài vì sao nhìn Hoàng hậu nương nương?” Tụng An hỏi.</p>
+<p>Ứng Phù Thăng khó hiểu tự hỏi “Đúng vậy, vì sao ta muốn xem nàng?”</p>
+<p>Tụng An cảm giác được điện hạ có chút kỳ quái, hắn thấy nơi xa Thẩm công tử chào hỏi qua sau đã là đi xa, trong lòng nhiều vài phần suy nghĩ, “Thẩm công tử bên kia, nô nghe được một ít nghe đồn…… Về Thẩm công tử.”</p>
+<p>Ứng Phù Thăng ánh mắt hơi rùng mình, nghe vậy ghé mắt xem hắn.</p>
+<p>Tụng An đem ở những người khác kia nghe được đủ loại nói ra.</p>
+<p>Cung nhân gian miệng tạp, những người đó không nói rõ kỳ thật ở ngôn lục điện hạ ngu muội.</p>
+<p>Như vậy nhiều thế gia con cháu, cố tình tuyển cái nơi đầu sóng ngọn gió, này không phải hướng hố lửa nhảy sao?</p>
+<p>“Phụ hoàng nếu ghét bỏ Thẩm gia, vì sao làm Thẩm Vân Phi tới đây, cũng không đem Thẩm thị lang hạ ngục?” Ứng Phù Thăng nói “Bởi vì Thẩm gia hay không là Quân Hướng Án chủ mưu, còn chưa định luận.”</p>
+<p>Đế vương thấy được rõ ràng, tuyển chọn thư đồng có thể nhìn ra đồ vật quá nhiều……</p>
+<p>Ứng Phù Thăng biết, đời trước Thẩm Vân Phi xác thật cũng bị chỉ vì Thái tử thư đồng, chỉ là ở vào cung thư đồng trước với một lần kinh giao săn thú trung kinh mã quấy nhiễu Thái tử, không ngừng té gãy chân, còn mất đi thư đồng cơ hội, liên quan Thẩm gia ở thế lực khác tằm ăn lên trung sụp đổ, cho đến nhiều năm sau Thích gia tra rõ năm xưa bản án cũ mới rửa sạch oan khuất.</p>
+<p>Nhưng khi đó, Thẩm thị lang đã sớm đã ch·ế·t, Thẩm Vân Phi hảo hảo một cái tướng tài nhân thiếu niên kinh mã trị liệu không kịp thời, hoàn toàn què chân.</p>
+<p>Thẩm gia sửa lại án xử sai sau hắn điên rồi dường như cắn Thái tử đảng, cuối cùng cũng trở thành nghịch đảng bị tân hoàng xử quyết.</p>
+<p>Tuyển chọn thư đồng là ngoài ý muốn, nhưng quỹ đạo cũng cùng kiếp trước trùng điệp.</p>
+<p>Địch nhân của địch nhân đó là bằng hữu, Ứng Phù Thăng ở cung yến khi quá xuất chúng, đi đến Thái tử cùng Đại hoàng tử trước mặt sẽ càng mau cuốn vào quyền lực trung tâm, nhưng lấy hắn tình cảnh hiện tại, chỉ biết bị ch·ế·t càng mau. Nếu muốn cho người có tâm bỏ qua hắn, chỉ có giấu mối, Ninh phi cùng Ninh gia bị đẩy đến bên ngoài thượng là hắn cái thứ nhất kế hoạch, nhưng kế hoạch của hắn không ngừng tại đây, như tưởng báo thù, hắn yêu cầu thế lực.</p>
+<p>Thẩm Vân Phi xuất hiện thời cơ thật tốt quá.</p>
+<p>Ứng Phù Thăng liễm đi suy nghĩ, xoay người khi đột nhiên liếc đến chỗ cao thân ảnh, thân hình đột nhiên dừng lại.</p>
+<p>Không biết khi nào, người nọ đứng ở vọng tháp chỗ cao, trên cao nhìn xuống xa xa vọng cập, Diễn Võ Trường ồn ào náo động cơ hồ che dấu sở hữu. Thiếu niên đứng yên như tùng, chỉ có ánh mắt nửa phần không rời, phảng phất hắn nhất cử nhất động toàn hạ xuống trong mắt hắn.</p>
+<p>Không quá nửa buổi, Ứng Phù Thăng ngẩng đầu, đáy mắt không kinh, như nhau bình thường mà gật đầu thăm hỏi.</p>
+<p>Diễn Võ Đài chỗ cao, bốn phía luyện võ quân tốt đã tan cuộc, hoàng đế nghi thức đi xa.</p>
+<p>Thích Hàn Chu ôm cánh tay ỷ lập, nhìn đi xa thân ảnh, áo lông chồn khoác thân xa hoa ngăn không được hắn kia thân bệnh khí, hô hấp so thường nhân càng nhược, chỉ là hắn nện bước quá ổn, lướt qua Diễn Võ Đài ánh mắt là cùng kia thân khiếp nhược bề ngoài bất đồng cẩn thận, giống như là không có thu liễm…… Dã tâm.</p>
+<p>Phó tướng đi tới, thấy Thích Hàn Chu trông về phía xa, không khỏi hỏi “Tiểu tướng quân.”</p>
+<p>“Làm người lưu ý Diễn Võ Trường mấy ngày gần đây đổi chức, hôm nay không phải ngoài ý muốn.” Thích Hàn Chu thu hồi ánh mắt, tầm mắt dừng ở Diễn Võ Trường cát đất thượng, “Chỗ ngoặt chỗ mặt đất cát đá bị người đổi quá, tính chất thiên ngạnh, sẽ ở nhập cong chỗ ra vấn đề, là có người cố ý thiết kế.”</p>
+<p>Phó tướng nghe vậy sắc mặt hơi biến, “Việc này muốn bẩm báo Thánh Thượng sao!?”</p>
+<p>Thích Hàn Chu nghe vậy nhíu mày chần chờ, trong đầu hiện lên Ứng Phù Thăng lúc gần đi thần sắc, hơi tư sau một lúc lâu hắn xua tay làm phó tướng đi xử lý, mà nơi xa Ứng Phù Thăng thân ảnh đã biến mất ở Diễn Võ Trường cuối.</p>
+<p>Người này, vì cái gì muốn giúp Thẩm gia?</p>
+<p>Thẩm gia ấu tử trở thành Lục hoàng tử thư đồng một chuyện, Diễn Võ Trường sự tất liền ở triều dã truyền khai.</p>
+<p>Mà cùng lúc đó, Thẩm gia Quân Hướng Án càng thêm kịch liệt, Ninh thị lang biết được tin tức khi cả kinh quăng ngã hai cái chung trà, sôi nổi làm người đi trong cung tìm hiểu tin tức, sợ Ninh gia bị Thẩm gia liên lụy.</p>
+<p>Quân Hướng Án liên lụy cực quảng, nhân này phê đến trễ quân lương, trí Trần tướng quân chi tử ch·ế·t thảm, hiện giờ tướng sĩ từ thiết lập sắp tới, Trần tướng quân phủ bạch liên một ngày không triệt, Quân Hướng Án càng kéo càng khó lấy thu thập.</p>
+<p>Triều dã nhân Quân Hướng Án mây đen giăng đầy khi, hoàng thất tông thân con cháu liền đọc Văn Hoa Điện, Đại Uyên thượng võ, nguyệt đến mười sáu ngày liền muốn đi kinh giao khu vực săn bắn.</p>
+<p>Ứng Phù Thăng đến thời điểm, đi hướng kinh giao xe ngựa đã bị hảo, hắn vừa đến khi liền nhìn đến Vị Ương Cung cung nhân. Kia hai cái cung nhân là sinh gương mặt, nhìn thấy hắn khi vội vàng lại đây, còn mang theo hai cái hộp đồ ăn, chu đáo đến cực điểm, “Lục điện hạ, Ninh phi nương nương hôm nay biết ngài đi trước kinh giao, cố ý công đạo bọn nô tài lại đây.”</p>
+<p>Hai cái cung nhân mang theo hộp đồ ăn, chu đáo đến cực điểm.</p>
+<p>Ứng Phù Thăng không có cự tuyệt, làm cho bọn họ theo ở phía sau, dư quang thoáng nhìn đứng ở một bên Thẩm Vân Phi. Thẩm Vân Phi chỉ có một người, mặt khác thế gia con cháu tránh lui mấy bước, độc hắn một người đứng, cùng chung quanh không hợp nhau. Hắn mấy ngày gần đây sắc mặt không thấy chuyển biến tốt đẹp, theo thời gian chuyển dời, Thẩm gia tình cảnh càng thêm gian nan, mà hắn có thể thấy Thánh Thượng cơ hội cơ hồ không có.</p>
+<p>“Lục điện hạ.” Thẩm Vân Phi khom người chắp tay thi lễ.</p>
+<p>Ứng Phù Thăng hơi hơi gật đầu, “Lên xe đi.”</p>
+<p>Thẩm Vân Phi ngừng lại, thấy mặt khác thư đồng cũng thượng hoàng tử xe giá, đành phải theo sau, mới vừa đi lên hắn liền nhận thấy được bên trong xe ngựa quá mức ấm áp, buồn đến hơi chút có chút không thở nổi. Mà Lục hoàng tử ngồi ở lò sưởi biên tựa hồ còn giác rét lạnh, trong lòng ngực sủy một tay lò, lên xe sau liền lặng im không nói.</p>
+<p>Trở thành thư đồng sau, phụ thân nói cho hắn ở hoàng tử trước mặt không thể qua loa, cần cẩn thận vì này. Chính là hắn đi Văn Hoa Điện mấy ngày, Lục hoàng tử tới đi học số lần có thể đếm được trên đầu ngón tay, Lục hoàng tử thân thể so với hắn trong dự đoán càng kém, xin nghỉ số lần càng nhiều, thế cho nên rõ ràng trở thành thư đồng, nhưng mấy ngày xuống dưới, hắn cùng Lục hoàng tử nói chuyện số lần rất ít.</p>
+<p>“Nếu buồn, nhưng thấu sẽ khí.” Ứng Phù Thăng nói.</p>
+<p>Thẩm Vân Phi ngồi đến thẳng tắp, nói “Ta không cần.”</p>
+<p>Khi nói chuyện, Ứng Phù Thăng xốc lên màn xe, bên ngoài gió thổi tiến vào.</p>
+<p>Thẩm Vân Phi sửng sốt, “Điện hạ?”</p>
+<p>Ứng Phù Thăng ánh mắt ngừng ở Thẩm Vân Phi giữa trán, nơi đó đã là mồ hôi mỏng, “Ta thích có chuyện nói thẳng.”</p>
+<p>Thẩm Vân Phi đành phải hẳn là.</p>
+<p>Đường phố gian náo nhiệt phi phàm, Thẩm Vân Phi ngày thường nhìn quen, bất giác có gì hiếm lạ, nhưng Lục hoàng tử ánh mắt lại theo sát bên đường tình hình, nhìn không chớp mắt. Lục hoàng tử bộ dáng cực hảo, Thẩm Vân Phi gặp qua mặt khác Ninh gia người, đều là mày rậm mắt to, mà Lục hoàng tử một chút cũng không Ninh gia người tư thái, càng như là tính chất nhu hòa cùng điền ngọc, ôn nhuận gian lộ ra ẩn ẩn quý khí.</p>
+<p>Thẩm Vân Phi đốn giác nhìn thẳng hoàng tử không hợp lễ nghĩa, dời đi ánh mắt khi thoáng nhìn ngoài cửa sổ bạch liên, thân hình ngừng lại tránh đi ánh mắt. Hắn thân thể banh thẳng, thế nhưng không dám nhìn tới kia khóc tang đội ngũ, đặt ở trên đầu gối tay chặt chẽ nắm, hình như có nói không rõ cảm xúc.</p>
+<p>Bất quá 12-13 thiếu niên, trên người giống như tròng lên gông xiềng, Thẩm gia còn lại người chờ bị lệnh cưỡng chế cấm túc, chỉ có hắn nhân thư đồng thân phận xuất nhập tự do, lại không cách nào giải quyết Thẩm gia lửa sém lông mày. Ứng Phù Thăng nhìn về phía Thẩm Vân Phi chân, kiếp trước sau lại người này nhân kinh mã té gãy chân, uổng phí như vậy tốt phóng ngựa thuật, hắn chưa thấy qua kiếp trước Thẩm Vân Phi, lại ở mật lệnh trung biết được hắn thiếu niên đầu bạc, cả đời luân đi ở báo thù bên cạnh.</p>
+<p>“Phụ hoàng triệu ngươi tiến cung tham dự tuyển chọn, là tín nhiệm Thẩm thị lang.” Ứng Phù Thăng bỗng nhiên nói.</p>
+<p>Này thanh vừa ra, Thẩm Vân Phi đột nhiên nhìn về phía hắn.</p>
+<p>“Ngươi vào cung là muốn vì phụ cầu tình, nhưng thời cơ không đúng.” Ứng Phù Thăng làm lơ Thẩm Vân Phi ánh mắt, nói tiếp “Võ tướng nãi phụ hoàng duy nhất thân tín, Trần tướng quân càng là tùy phụ hoàng chinh chiến nhiều năm, gặp ngươi đơn giản là Cambrian đem tâm.”</p>
+<p>Thẩm Vân Phi thân thể căng chặt, hắn đè ở giọng mắt nói gắt gao nghẹn, lại không cách nào nói ra, “Là ta vô năng.”</p>
+<p>Hắn lập tức xốc lên vạt áo quỳ xuống, “Cầu lục điện hạ giúp ta.”</p>
+<p>Ứng Phù Thăng thờ ơ “Ta giúp ngươi, nhưng ngươi biết ngươi kẻ thù là ai sao?”</p>
+<p>Thẩm Vân Phi ngậm miệng, hắn không biết, cả triều văn võ, phụ thân hắn nhân ngay thẳng tính cách đắc tội quá nhiều người. Ứng Phù Thăng nhìn Thẩm Vân Phi ẩn nhẫn không phát, móng tay đều khảm nhập lòng bàn tay, giống như một đầu vô chủ ấu lang.</p>
+<p>“Ngươi tưởng cứu phụ thân ngươi sao?” Ứng Phù Thăng bỗng nhiên nói.</p>
+<p>Thẩm Vân Phi thân hình chấn động, không dám tin tưởng mà nhìn về phía Ứng Phù Thăng, “Lục điện hạ.”</p>
+<p>“Thẩm thị lang làm quan thanh liêm, nãi phụ hoàng tín nhiệm người, quân lương qua tay người thiên có hắn quan ấn, kia liền như thế nào đều thoát không khai can hệ.” Ứng Phù Thăng buông màn xe, giản ngôn nói “Cho nên yêu cầu một cái cơ hội.”</p>
+<p>Thẩm Vân Phi tình thế cấp bách mở miệng “Cái gì cơ hội?”</p>
+<p>Ứng Phù Thăng rũ mắt, bình tĩnh mà nói ra kia hai chữ “Mua hung,”</p>
+<p>“Sát Thẩm thị lang.”</p>
+<p>Tác giả có lời muốn nói</p>
+<p>[ làm ta khang khang ] tới!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong13.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong15.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "thai-tu-thien-thu-van-tai";
+const NOVEL_TITLE = "Thái tử thiên thu vạn tái";
+const CHAPTER_TITLE = "Chương 14";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 25</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tiểu đáng thương tay cầm sảng văn kịch bản
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 25</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong24.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong26.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Tạ Thời Thanh cùng Tạ Nhiên nói qua, Tạ gia cha mẹ sẽ tại hạ chu về nước. Tạ Nhiên ban đầu dự tính Tạ gia cha mẹ về nước thời gian sẽ càng vãn một ít, không nghĩ tới lúc này mới mấy ngày liền nhìn đến người đã trở lại. Nguyên thư trung không nhắc tới nguyên chủ như thế nào cùng Tạ gia cha mẹ ở chung, về nguyên chủ cá nhân trong cốt truyện cũng chỉ nhắc tới hắn thực thích phụ mẫu của chính mình, nhưng là cha mẹ luôn là đem quan tâm cùng kỳ vọng đặt ở ca ca trên người.</p>
+<p>Tạ Nhiên còn thật không biết muốn như thế nào cùng này hai người ở chung, tuy rằng nói chính mình xuyên thư xuyên đến trong tiểu thuyết, nhưng là trước mắt người dù sao cũng là có thể ở trong sách thế giới nắm giữ tuyệt bút tài phú người, bọn họ gặp qua nhân tinh so Tạ Nhiên ăn cơm xong đều nhiều. Tạ Nhiên tâm lại đại cũng không dám ở bọn họ trước mặt lỗ mãng, thật vất vả ở Tạ Thời Thanh trước mặt dừng bước, hiện tại lại xuất hiện cái Tạ gia cha mẹ……</p>
+<p>Người khác xuyên thư đều là tay cầm sở hữu cốt truyện, mà hắn xuyên thư chỉ có vài đoạn văn tự tự thuật ký ức nhìn lại, nguyên thư cốt truyện phát triển còn muốn dựa hắn vắt hết óc mà tưởng.</p>
+<p>Tạc Gà bị Tạ Nhiên ấn đến có điểm không thoải mái, giãy giụa vài cái từ trong tay hắn chạy ra, chạy đến xe phía dưới đem cầu cấp ngậm ra tới. Tạ Nhiên tiếp nhận sau, nó mới an ổn mà ngồi xổm ở Tạ Nhiên trước mặt.</p>
+<p>Tạ gia cha mẹ nhìn đến Tạ Nhiên thời điểm thiếu chút nữa không nhận ra tới, Tạ phụ nghiêng đầu hỏi Tạ Thời Thanh, “Biệt thự nuôi chó?”</p>
+<p>Tạ Thời Thanh gật đầu, “Còn có miêu.”</p>
+<p>Tạ Nhiên lần đầu tiên may mắn còn hảo chính mình là cái người câm, bằng không cái này trường hợp không mở miệng thật sự là quá xấu hổ. Tạ mẫu đã đi tới, nàng thân xuyên giỏi giang tây trang, trên dưới nhìn Tạ Nhiên liếc mắt một cái, rồi sau đó nói “Nhiên Nhiên so trước kia trường cao chút.”</p>
+<p>Tạ Nhiên không biết như thế nào ứng đối, hơi chút tránh đi nàng thân cận tay sau ứng phó gật gật đầu.</p>
+<p>Tạ mẫu nhìn đến hắn hơi hơi lui ra phía sau lảng tránh tính động tác, thần sắc ngẩn ra.</p>
+<p>Cũng may mấy người không ở trong sân trạm lâu lắm, thực mau liền vào biệt thự. Tạ Nhiên không đi theo đi vào, còn có cái Tạc Gà đương cái lấy cớ, hắn thuận lý thành chương mảnh đất Tạc Gà hồi ổ chó đi. Trong viện vừa vặn có thể nhìn đến to rộng cửa sổ sát đất, có thể nhìn đến biệt thự bộ phận tình huống. Tạ Nhiên đem cẩu cột lại sau, liền im ắng vòng đến cửa sổ sát đất góc đi, muốn nhìn xem Tạ gia cha mẹ chính đang làm cái gì.</p>
+<p>Mà lúc này, từ nhà ăn ra tới quản gia vừa vặn nhìn đến lén lút Tạ Nhiên, hắn đi đến cửa sổ sát đất trước, kéo ra cửa sổ môn sau đó đi ra, “Nhị thiếu, ngài tại đây làm gì?”</p>
+<p>Tạ Nhiên sau này lui lại mấy bước, lấy ra di động đánh chữ, 【 Tạc Gà cầu rớt bên này, ta tới tìm. 】</p>
+<p>Quản gia hiểu rõ, “Bữa tối đã chuẩn bị hảo, ta tới giúp ngươi tìm.”</p>
+<p>Tạ Nhiên, 【 không cần không cần, ngươi đi về trước, ta một hồi liền tới. 】</p>
+<p>Quản gia lúc này mới rời đi.</p>
+<p>Tạ Nhiên ở bên ngoài đãi một hồi, lúc này nhìn đến di động bắn ra tới VX tin tức, là tiên nữ phát tới.</p>
+<p>Tiên nữ không ăn cơm Nhiên Nhiên, buổi tối hạ bổn vãn một chút nga, Khê ca tăng ca.</p>
+<p>Châm Tốt không có việc gì, đúng rồi, hỏi ngươi cái vấn đề.</p>
+<p>Tiên nữ không ăn cơm ?</p>
+<p>Châm Nếu ngươi một cái thật lâu không ở chung quá bằng hữu đã trở lại, ngươi nên như thế nào đối đãi hắn?</p>
+<p>Tiên nữ không ăn cơm Bạn trai or bạn gái?</p>
+<p>Châm Này không quan trọng.</p>
+<p>Tiên nữ không ăn cơm Ứng đối nam nữ bằng hữu chi gian sách lược không giống nhau hảo sao!</p>
+<p>Châm Hảo đi, phải nói là thân thích.</p>
+<p>Tạ Nhiên nghĩ nghĩ, Tạ gia cha mẹ là nguyên chủ ba mẹ, nhưng là trên thực tế cùng nguyên chủ ở chung thời gian cũng không phải rất dài. Nguyên thư giống như viết quá, nguyên chủ ở xảy ra chuyện sau một hai năm, Tạ gia cha mẹ liền bởi vì công tác sự tình xuất ngoại, ngày thường nguyên chủ đánh video điện thoại thời điểm, cha mẹ luôn là bận rộn công tác.</p>
+<p>Đây cũng là nguyên chủ căm thù Tạ Thời Thanh nguyên nhân chi nhất, bởi vì Tạ Thời Thanh dễ như trở bàn tay là có thể đã chịu cha mẹ toàn bộ chú ý, mà nguyên chủ không có.</p>
+<p>Như vậy lạnh nhạt quan hệ, kỳ thật cũng có thể nói là thân thích.</p>
+<p>Tiên nữ không ăn cơm Thân thích a, này đơn giản, ngươi cùng bọn họ có quen hay không? Thục liền cứ theo lẽ thường ở chung, không thân liền tùy tiện ứng phó ứng phó thì tốt rồi.</p>
+<p>Châm Đã nhiều năm không gặp, đánh quá video điện thoại, bọn họ thái độ rất lạnh nhạt.</p>
+<p>Tiên nữ không ăn cơm Nhiên Nhiên, ta cùng ngươi nói, thế giới này nhất không thiếu chính là bằng hữu, thiếu cái này, ngày mai còn có ngàn ngàn vạn vạn cái, chúng ta không làm cho không, biết không?</p>
+<p>Tiên nữ không ăn cơm Ninh đương hải vương, không lo lốp xe dự phòng, biết không?</p>
+<p>Châm Như vậy phức tạp?</p>
+<p>Châm ok.</p>
+<p>Tạ Nhiên cùng tiên nữ trò chuyện một hồi mới tiến biệt thự, lúc này quản gia đã đem sở hữu đồ ăn mang lên. Tạ gia ba người dường như ở phòng khách kia lại nói chuyện công tác, Tạ Nhiên nhìn đến đặt ở phòng khách trên bàn rải rác biểu đồ, này toàn gia quả nhiên đều là công tác cuồng ma.</p>
+<p>Quản gia là vào buổi chiều trễ chút mới thu được tin tức nói Tạ gia cha mẹ muốn tới biệt thự bên này ăn cơm, mặc dù là lâm thời chuẩn bị tăng đồ ăn, nhưng đối Tạ Nhiên tới nói cũng là Mãn Hán toàn tịch. Tạ gia không có thực không nói thói quen, ba người tới rồi trên bàn cơm cũng là tiếp tục tham thảo vừa mới chưa giải quyết công tác vấn đề, thật không có quan tâm Tạ Nhiên tình huống, cái này làm cho Tạ Nhiên nhẹ nhàng thở ra.</p>
+<p>Tạ Nhiên chỉ nghĩ hạ thấp chính mình tồn tại cảm, ở Tạ gia đương gia làm chủ hai cái đại ma vương trước diễu võ dương oai, đó là không chê ch·ế·t sớm. Tình huống như vậy đối với Tạ Nhiên tới nói là chuyện tốt, nhưng là đối với đã từng nguyên chủ tới nói, nếu ở trên bàn cơm gặp được trường hợp như vậy, nội tâm mẫn cảm xác thật sẽ cảm thấy cha mẹ lạnh nhạt quan tâm không đủ.</p>
+<p>Quản gia canh giữ ở một bên, thời khắc chú ý Tạ gia một nhà bốn người ở chung tình huống, hắn nhìn đến nhị thiếu ngồi ở Tạ Thời Thanh bên cạnh chỉ vùi đầu ăn cơm không tham dự thảo luận, liền cảm thấy này không khí có chút kỳ quái. Hắn nương thượng điểm tâm ngọt công phu cấp Tạ Thời Thanh đề ra cái tỉnh, người sau lúc này mới chú ý tới bên người Tạ Nhiên.</p>
+<p>“Công tác liền nói tới này đi.” Tạ Thời Thanh, “Các ngươi lần này trở về bao lâu thời gian.”</p>
+<p>Tạ phụ “Lâu là mấy tháng, đoản liền mấy chu công phu.”</p>
+<p>Tạ mẫu nhìn về phía Tạ Nhiên, “Trần dì sự ta đã hỏi qua trong nhà a di, người là nàng đề cử, ra chuyện này là nàng không biết nhìn người. Kế tiếp xử lý như thế nào cũng không cần bận tâm nàng, việc công xử theo phép công đi.” Nửa câu sau là đối Tạ Thời Thanh nói.</p>
+<p>Trần dì sự qua đi không sai biệt lắm một tháng, Tạ Nhiên trong khoảng thời gian này đã sớm đem chuyện này đã quên, nguyên lai hiện tại còn ở xử lý trung sao? Đề cử Trần dì tới biệt thự công tác a di ở Tạ gia công tác hai mươi mấy năm, có thể nói là ở Tạ Nhiên khi còn nhỏ liền dốc lòng chiếu cố Tạ gia huynh đệ hai, a di xác thật không tồi, nhưng quán thượng như vậy một cái thân thích cũng sầu người. Bất quá nghe Tạ mẫu cái này ngữ khí, phỏng chừng Trần dì kết cục sẽ không quá hảo.</p>
+<p>Tạ Nhiên cúi đầu ăn cơm nghe bát quái, mà Tạ gia cha mẹ cùng Tạ Thời Thanh lại không phải cái này cảm thụ.</p>
+<p>Tạ Thời Thanh sớm tại tới biệt thự trước liền nói cho bọn họ trong khoảng thời gian này phát sinh sự, làm cha mẹ đương biết chính mình hài tử còn áp dụng quá tự sát như vậy hành động khi trong lòng vẫn là thập phần khó chịu. Tạ Thời Thanh văn kiện tư liệu trung có Trần dì sự kiện sau sửa sang lại về Tạ Nhiên mấy năm nay sở hữu sự tình, Tạ gia cha mẹ mới biết được ở bọn họ đắm chìm công tác thời điểm, bọn họ hài tử quá đến cũng không tốt.</p>
+<p>Nguyên bản đi nhà cũ hành trình thay đổi tuyến đường biệt thự, kết quả bọn họ một không cẩn thận lại nói đến công tác tới, bỏ qua ở một bên trầm mặc ăn cơm tiểu nhi tử.</p>
+<p>“Nhiên Nhiên.” Tạ mẫu đột nhiên mở miệng, “Mụ mụ trong khoảng thời gian này đều sẽ lưu tại quốc nội, nếu có chuyện gì cũng có thể tìm mụ mụ giúp ngươi giải quyết.”</p>
+<p>…… Này hẳn là không cần đi, hắn mỗi ngày trạch cũng không có gì sự làm?</p>
+<p>Tạ Nhiên vốn dĩ tưởng an tĩnh ăn cơm, không nghĩ tới đột nhiên bị cue, chỉ có thể lấy ra di động đánh chữ, 【 tốt, cảm ơn mụ mụ. 】</p>
+<p>Tạ mẫu nhìn kia hành tự, lại nhìn nhìn Tạ Nhiên sắc mặt, trong lòng thập phần phức tạp.</p>
+<p>Này bữa cơm ăn đến Tạ Nhiên cả người không thoải mái, nửa đoạn trước còn hảo, Tạ gia ba người nói công tác hắn ở một bên lùa cơm, nửa đoạn sau đột nhiên triển khai mạc danh quan tâm. Cũng may ăn no sau, kia ba người cũng không ngăn đón hắn nói chuyện phiếm, hắn vội vàng trở lại trong phòng đem cửa đóng lại, mới nghỉ ngơi khẩu khí.</p>
+<p>Tạ gia cha mẹ tới quá đột nhiên, hắn cũng chưa cái gì thời gian hỏi thăm này hai người rốt cuộc cái gì tính cách, có cái gì yêu thích. Tạ Nhiên trở lại phòng sau bắt đầu tìm tòi Tạ gia cha mẹ tư liệu, mà dưới lầu còn lưu tại nhà ăn ba người lại ở Tạ Nhiên rời đi sau lâm vào trầm mặc.</p>
+<p>Tạ Thời Thanh buông chiếc đũa, “Công tác sự, về sau vẫn là không cần ngay trước mặt hắn nói chuyện.”</p>
+<p>Tạ phụ Tạ mẫu trước kia không như vậy trực quan cảm thụ, ở bọn họ trong mắt công tác từ trước đến nay là đệ nhất vị, cho dù là Tạ Thời Thanh, bọn họ cũng trước nay không can thiệp quá hắn cá nhân sinh hoạt thượng sự, nhiều nhất thời điểm đều là trực tiếp hỏi đến việc học cùng công tác.</p>
+<p>Đối với Tạ Nhiên, bọn họ đã từng là nghĩ tới đền bù, nhưng là theo thời gian tiệm trường mà công tác bận rộn, mà vốn dĩ tính toán sự tình chỉ có thể lần nữa gác lại.</p>
+<p>“Ta có phải hay không làm sai cái gì?” Tạ mẫu lập tức liền không muốn ăn, “Nhiên Nhiên trước kia không như vậy an tĩnh.” Tạ mẫu nhớ rõ mỗi lần Tạ Nhiên cùng nàng thông video điện thoại thời điểm, khi còn nhỏ sẽ quơ chân múa tay mặt mang vui sướng, lớn lúc sau cũng sẽ dùng giấy hoặc thủ ngữ biểu đạt chính mình cái nhìn, đối nàng cũng rất có nhiệt tình.</p>
+<p>Tạ phụ cũng trầm mặc.</p>
+<p>Tạ Thời Thanh là quan cảm sâu nhất một người, ở cha mẹ xuất ngoại sau nguyên bản chiếu cố đệ đệ trách nhiệm là dừng ở hắn trên người, hắn cũng thường xuyên tưởng hảo hảo chiếu cố Tạ Nhiên, nhưng mà Tạ Nhiên chỉ biết một muội mâu thuẫn hắn tới gần, thậm chí là làm ra chút vô cớ gây rối sự tình tới tranh cãi. Dần dà, hắn không nghĩ nhìn đến mỗi ngày về nhà Tạ Nhiên châm chọc mỉa mai sắc mặt, liền lựa chọn dọn ra đi trụ.</p>
+<p>Nhưng mà đương Tạ Nhiên xảy ra chuyện lúc sau, hắn ngay từ đầu cho rằng đây là Tạ Nhiên gây chuyện tân manh mối, lại không nghĩ rằng Tạ Nhiên liền cùng thay đổi cá nhân dường như. Người bắt đầu tích cực hướng về phía trước, bắt đầu đối ngoại giới biểu đạt thiện ý, rõ ràng hết thảy đều là hướng tốt địa phương phát triển, Tạ Thời Thanh lại càng ngày càng cảm thấy Tạ Nhiên cùng hắn khoảng cách càng ngày càng xa……</p>
+<p>“Ta đi trong phòng xem hắn.”</p>
+<p>Tạ mẫu đứng dậy tính toán hướng lên trên đi.</p>
+<p>Tạ Thời Thanh đang muốn gọi lại Tạ mẫu.</p>
+<p>Mà lúc này đứng ở bàn ăn biên hồi lâu quản gia đột nhiên mở miệng, “Phu nhân, dung ta mạo muội đề một câu, hiện tại là nhị thiếu trò chơi thời gian, lấy bình thường tuổi tác hài tử phản nghịch tâm lý tới xem, thời gian này quấy rầy khủng có không ổn.”</p>
+<p>Tạ Thời Thanh cũng gật đầu, gần nhất trong nhà đối Tạ Nhiên hiểu biết sâu nhất người chính là quản gia, “Lý quản gia nói không sai, Nhiên Nhiên gần nhất thay đổi rất nhiều, có một số việc không phải chúng ta muốn thân cận là có thể giải quyết, quản gia cùng trong khoảng thời gian này hắn ở chung thời gian dài nhất, chúng ta nên nghe một chút hắn ý kiến.”</p>
+<p>Tạ mẫu một lần nữa ngồi xuống, Tạ phụ cũng ngẩng đầu quan sát kỹ lưỡng vị này mới tới quản gia.</p>
+<p>Quản gia mới đến một tháng, liền gặp phải Tạ gia ba vị người nắm quyền lâm thời khảo nghiệm, hắn gặp nguy không loạn, “Theo ta quan sát……”</p>
+<p>Tạ Nhiên nằm ở trên giường cảm thấy thể xác và tinh thần mỏi mệt, hắn nhìn nhìn điểm, dĩ vãng thời gian này hắn đã thượng tuyến chơi game, nhưng là nghĩ đến tiên nữ nói đêm nay Khê Sơn lão ca tăng ca, vì thế hắn tính toán tắm rửa một cái sau viết sẽ luyện tập đề.</p>
+<p>Tắm rửa xong ra tới, Tạ Nhiên phát hiện từ trước đến nay trốn đến bí ẩn Su Kem giờ phút này chính dẫm lên ghế dựa nhảy thượng hắn máy tính mặt bàn, rồi sau đó bàn thành một đoàn nằm. Hắn đột nhiên bật cười, biên xoa trên tóc bọt nước, đi qua đi loát một phen, thuận tay đem miêu vớt ở trong ngực ôm.</p>
+<p>Su Kem đã không như vậy sợ người lạ, ngẫu nhiên còn sẽ triều Tạ Nhiên vẫy vẫy móng vuốt, cuối cùng chậm rãi thần phục ở hắn thủ pháp hạ. Tạ Nhiên phát hiện loát miêu loại này kỹ xảo có thể nói là không thầy dạy cũng hiểu, trước kia tổng cảm thấy cùng miêu ở chung là việc khó, hiện tại có mèo con, chỉ nghĩ nói thật hương hai chữ quả nhiên là nhân loại định luật.</p>
+<p>Tạ Nhiên cúi đầu nhìn nằm yên ôm hắn ngón tay mèo con, không tiếng động nói Ngươi thật đúng là sẽ hưởng thụ a?</p>
+<p>Tiểu miêu non nớt mèo kêu tiếng vang lên, Tạ Nhiên thở dài, táo úc tâm tình đều bị vật nhỏ này cấp an ủi quét không.</p>
+<p>Su Kem ở Tạ Nhiên trong lòng ngực trát oa, một khi Tạ Nhiên tay chậm lại, nó liền vươn móng vuốt nhỏ đi câu hắn ngón tay, làm cho Tạ Nhiên đề cũng vô pháp viết, chỉ có thể phân ra tâm thần tới bồi nó chơi.</p>
+<p>Thật sự không có biện pháp viết luyện tập đề, Tạ Nhiên đành phải mở ra trò chơi bắt đầu làm làm hôm nay hằng ngày. Luyện dùm sự tình giống như liền như vậy kết thúc, Tạ Nhiên thượng diễn đàn xem thời điểm, về luyện dùm sự kiện thiệp đã không có bao nhiêu người ở nhiệt nghị, nhưng thay thế liền có người chơi khác ở bát quái bản khối cho người ta gỡ mìn trong trò chơi những cái đó không phụ trách nhiệm luyện dùm, bởi vậy dẫn ra rất nhiều luyện dùm liên danh thanh minh.</p>
+<p>Tạ Nhiên trước kia chơi trò chơi thời điểm, cũng xem qua không ít luyện dùm cùng người chơi dưa, hắn đại học thời kỳ chơi trò chơi luyện dùm dưa so hiện tại thiếu. Hắn xuyên quyển sách này trung rất nhiều võng du thiết trí đều so với hắn chơi trò chơi niên đại càng trước một ít, ở hắn thời đại kỳ thật MMORPG trò chơi đã bắt đầu xuống dốc, mà ở trong sách thế giới này vẫn là đang ở bò lên thời kỳ.</p>
+<p>Bất quá trừ bỏ võng du, trong hiện thực mặt khác đồ vật lại cùng hắn hiện thực cực kỳ tương tự, loại này không hợp để ý đến hắn cũng vô pháp lý giải, cuối cùng chỉ có thể quy kết với nguyên thư tác giả hư cấu lộn xộn rất nhiều giả thiết, mới đưa đến như vậy có điểm thời xưa nhưng lại thực tiên tiến thế giới xuất hiện.</p>
+<p>Trên thực tế có một số việc hắn cảm thấy kỳ thật không như vậy tất yếu, nhưng là trong trò chơi tổng có thể nháo ra một ít không biết nên khóc hay cười hoặc là nói não tàn hàng trí hành động, mà nguyên chủ ở tiểu thuyết trung định vị cũng là nhất thành bất biến, vốn dĩ chính là cái tiểu đáng thương vai phụ, vai ác đều hận không thể nhào lên tới làm hắn trở thành pháo hôi.</p>
+<p>Tạ Nhiên mở ra bạn tốt danh sách, sau đó ở bạn tốt xin trung đưa vào vai chính ID.</p>
+<p>Khuynh Thành Thiên, nguyên thư vai chính, hiện tại vẫn là cái mới vừa vào trò chơi Yên Lặng tiểu trong suốt.</p>
+<p>Tên sáng lên, là tại tuyến.</p>
+<p>Tạ Nhiên nhìn chằm chằm cái kia ID nhìn sẽ, bất quá không có điểm xin tăng thêm.</p>
+<p>Còn không có biết rõ ràng vai chính ảnh hưởng phạm vi phía trước vẫn là không cần cùng vai chính có bất luận cái gì giao thoa, hắn liên tiếp cướp đi vốn nên từ vai chính giải quyết sự kiện, trên thực tế đã nhấc lên con bướm cánh. Bất quá kế tiếp giống như không có nguyên chủ cùng vai chính tương quan chi nhánh đã xảy ra, dư lại đều là nguyên chủ giúp vai chính ở trong trò chơi kiến công lập nghiệp sự, tạm thời xem nhẹ bất kể.</p>
+<p>Trong trò chơi chỉ có tiên nữ cùng mười bảy tại tuyến, Khê Sơn Thủy tăng ca, nhưng là rất khó đến Cây vạn tuế ra hoa cũng không ở.</p>
+<p>Tạ Nhiên mới vừa thượng tuyến liền thu được tiên nữ tin tức.</p>
+<p>【 bưu kiện 】 tiên nữ không ăn cơm Nhiên Nhiên tới? Tới yy, ta cùng mười bảy ở.</p>
+<p>Tạ Nhiên thuận tay đăng cái yy, tiến vào kênh.</p>
+<p>【 bưu kiện 】 Phong Dục Nhiên Cây vạn tuế đêm nay không ở?</p>
+<p>“Cây vạn tuế kẹt xe, tăng ca kẹt xe còn ở trên đường, phỏng chừng trễ chút mới đến.” Tiên nữ nói, “Trước thanh thanh hằng ngày, ta cùng mười bảy ở làm tuần hoàn nhiệm vụ, phỏng chừng còn muốn một đoạn thời gian.”</p>
+<p>“Hẳn là yêu cầu mười tới phút.” Mười bảy là cái nam hài tử, tiếng phổ thông mang theo phương nam khẩu âm, nói lên có điểm mềm như bông cảm giác.</p>
+<p>【 bưu kiện 】 Phong Dục Nhiên Hảo.</p>
+<p>“Đúng rồi, diễn đàn sự ta nhìn vài thiên thiệp. Diệt Thần người cơ bản mai danh ẩn tích, luyện dùm cũng không ra tới, nghe cảm kích người ta nói hắn ở vội vàng giao tài liệu giao thiệp?” Tiên nữ hỏi, “Nhiên Nhiên ngươi đem hắn tố cáo?”</p>
+<p>Sự tình đều giao cho quản gia xử lý, hiện tại sự tình tiến triển như thế nào hắn còn không biết tình, quản gia phỏng chừng là tưởng chờ kết quả ra tới lại nói với hắn.</p>
+<p>【 bưu kiện 】 Phong Dục Nhiên Ta giao cho những người khác xử lý, hẳn là đi.</p>
+<p>“Nên như vậy làm a!” Tiên nữ tiếp tục nói, “Sau lại không phải còn có mấy người ra tới bát quái chính mình luyện dùm sao? Có người nói quải ngươi cái kia luyện dùm còn thiếu thân hữu không ít tiền, nếu không phải bởi vì ngươi sự, hắn thân hữu còn bị chẳng hay biết gì, cho rằng hắn hiện thực thật ra chuyện gì vội vã dùng tiền.”</p>
+<p>【 bưu kiện 】 Phong Dục Nhiên Ân? Hắn còn lừa những người khác tiền?</p>
+<p>“Đúng vậy, đề cập kim ngạch còn rất đại, bởi vì hắn bằng hữu có cái là lão bản, nói là trong nhà nữ nhi bệnh cấp tính sau đó yêu cầu làm phẫu thuật không có gì tiền tiết kiệm.” Tiên nữ nghĩ nghĩ nói, “Kia lão bản cùng này luyện dùm cũng ở chung khá dài thời gian, biết người tri tâm không biết mặt a, lừa năm sáu vạn đi?”</p>
+<p>【 bưu kiện 】 Phong Dục Nhiên Kia lão bản cũng tin?</p>
+<p>“Tin a, lão bản lại không thiếu chút tiền ấy, sau đó luyện dùm đều là ngày càng ở chung võng hữu, mấy năm bằng hữu ai có thể nghĩ đến là cái kẻ lừa đảo?” Tiên nữ nói xong lại nói, “Nhiên Nhiên ngươi không phải cũng là? Hiện tại diễn đàn thật nhiều người ta nói ngươi ngốc bạch ngọt cấp luyện dùm đưa tiền, còn hỏi ngươi thiếu không thiếu luyện dùm, bọn họ có thể lập tức thượng cương.”</p>
+<p>【 bưu kiện 】 Phong Dục Nhiên ……</p>
+<p>Cẩn thận ngẫm lại, nguyên chủ từ ở nào đó ý nghĩa xác thật có thể nói là ngốc bạch ngọt.</p>
+<p>Tạ Nhiên biên loát miêu biên nghe tiên nữ bàn luận đàn bát quái, Su Kem ở trong lòng ngực hắn đánh cái khò khè, sau đó thoải mái dễ chịu mà trở mình, ý bảo hắn não một bên khác. Tạ Nhiên bật cười, này miêu còn thành tinh, hưởng thụ thượng?</p>
+<p>“Tiên nữ giao nhiệm vụ!” Mười bảy nhắc nhở nói.</p>
+<p>“Đã quên đã quên.” Tiên nữ nói được miệng khô lưỡi khô, đột nhiên uống lên nước miếng, “Tóm lại a, trên diễn đàn dưa đổi mới quá nhanh, ta hôm nay mới vừa ăn xong một cái, ngày mai lại có thể nhảy ra điểm mới mẻ tới, ta đi làm sờ cá toàn dựa chúng nó giải vây.”</p>
+<p>Tạ Nhiên ở chủ thành tu trang bị, sau đó thuận tiện nhiều mua mấy cái sống lại phù cùng hồng lam dược bị. Hắn gần nhất dã ngoại thường xuyên gặp gỡ Diệt Thần người, lần trước cùng Khê Sơn Thủy đem Diệt Thần người đánh đoàn diệt sau, hai bên liền thường xuyên tại dã ngoại khai làm.</p>
+<p>Những việc này còn rất bình thường, nếu là Diệt Thần đỉnh Kính Hoa Thủy Nguyệt đệ nhất bá phục bang hội danh hiệu lại bị đánh túng, kia mới kỳ quái.</p>
+<p>Hắn mua xong dược lúc sau tính toán đi theo tiên nữ bọn họ hội hợp, hoạt động kinh nghiệm nhiệm vụ ba người còn không có thanh, tính toán tổ đội cùng nhau làm.</p>
+<p>“Hoạt động ở mẫu đơn cốc, ngươi truyền tống lại đây……” Tiên nữ nói đến một nửa đột nhiên tiêu thanh, ngay sau đó Tạ Nhiên liền nghe được bùm bùm bàn phím thanh.</p>
+<p>Tiên nữ không báo tọa độ, Tạ Nhiên đành phải mở ra tin tức danh sách xem xét tiên nữ vị trí, kết quả không cẩn thận nhìn đến chiến đấu tin tức trúng đạn ra tới một câu.</p>
+<p>Ngươi đồng đội tiên nữ không ăn cơm đ·ã t·ử v·o·ng.</p>
+<p>Đã ch·ế·t? Long Chiến trò chơi này ở tổ đội lúc sau có thể ở chiến đấu tin tức nhìn thấy đồng đội trạng thái, Tạ Nhiên vừa mới cùng tiên nữ tổ đội, liền nhìn đến chiến đấu tin tức trung nàng tử vong tin tức.</p>
+<p>【 đội ngũ 】 Phong Dục Nhiên ch·ế·t như thế nào?</p>
+<p>“Không có việc gì, khinh công nhảy đã ch·ế·t.” Tiên nữ giải thích nói, thanh âm có điểm nặng nề.</p>
+<p>Tạ Nhiên khẽ nhíu mày, hắn cảm thấy có điểm không thích hợp.</p>
+<p>“Nàng không phải khinh công nhảy ch·ế·t.” Mười bảy đột nhiên nói, “Tiên nữ ngươi đừng gạt người, ta vừa mới nhìn đến có người khai hồng đánh ngươi.”</p>
+<p>Mười bảy sau lưng đến mẫu đơn cốc, vừa đến liền nhìn đến trong đội ngũ tiên nữ huyết lượng ở đi xuống rớt, cuối cùng huyết điều không tử vong.</p>
+<p>Bị người khai hồng đánh? Tạ Nhiên nhìn màn hình tử vong tin tức, theo sau đánh chữ hỏi.</p>
+<p>【 đội ngũ 】 Phong Dục Nhiên Ai khai hồng?</p>
+<p>“Ai không gì sự, chính là bị Diệt Thần đám kia chó điên cắn.” Tiên nữ sống lại lúc sau một lần nữa chạy ra tới, “Bọn họ nơi nơi cắn người cũng không phải lần đầu tiên, mặc kệ, chúng ta trước làm nhiệm vụ.”</p>
+<p>Tạ Nhiên nghe được ra tiên nữ cảm xúc có điểm hạ xuống. Hắn cùng Diệt Thần bang hội người tại dã ngoại đánh rất nhiều lần, biết cái này bang hội phong cách, giống nhau bọn họ khai hồng đối tượng đều đối địch bang hội hoặc là chính là giống hắn người như vậy. Tiên nữ là Cá Mặn bang người, Diệt Thần một chốc một lát sẽ không chủ động tìm Cá Mặn bang phiền toái……</p>
+<p>【 đội ngũ 】 Phong Dục Nhiên Bọn họ không phải lần đầu tiên đổ ngươi.</p>
+<p>Trò chơi phân tù ch·i·ế·n tr·a·nh phân hoà bình người chơi, tiên nữ kỳ thật chính là cái hoà bình người chơi, đối mặt tình huống như vậy phần lớn thời điểm vẫn là tưởng một sự nhịn chín sự lành, không nghĩ đem sự tình nháo đến quá lớn. Trên thực tế Tạ Nhiên trước kia chơi trò chơi thời điểm cũng gặp được không ít cùng tiên nữ giống nhau người chơi, có thể không chọc thứ đầu liền không chọc, an an tĩnh tĩnh chơi trò chơi.</p>
+<p>Tiên nữ không dự kiến đến Tạ Nhiên đem nói đến như vậy khẳng định, yy một lần xấu hổ, nàng biết giấu không đi xuống, “Ai đừng nói nữa, việc này biến thành như vậy nhiều xấu hổ. Kỳ thật chính là ta rất nhiều lần ở diễn đàn giúp Nhiên Nhiên nói chuyện, bị Diệt Thần ký danh đơn, dã ngoại đổ ta vài lần. Lại nói vú em không hảo PK, cơ bản bị một bộ mang đi. Nhiên Nhiên ngươi đừng để ý, là ta ở diễn đàn khẩu hải cùng Diệt Thần người giang.”</p>
+<p>Long Chiến diễn đàn là nhân vật cùng diễn đàn tài khoản trói định, có thể nhìn đến người chơi nhất thường chơi nhân vật.</p>
+<p>Mười bảy khó hiểu, “Vậy ngươi như thế nào không cùng chúng ta nói?”</p>
+<p>“Cá Mặn bang người gần nhất đi rồi không ít, chúng ta bang người trung lập lại nhiều, một hồi cấp những người khác chọc phiền toái. Không cần thiết cùng chó điên so đo, Phật hệ chơi trò chơi thì tốt rồi, so đo quá cho bọn hắn mặt mũi.”</p>
+<p>Tiên nữ biết trung lập bang hội sợ nhất chọc phải đối địch sau đó khó bình giúp nội tình tự, này sẽ bị những người khác hỏi, nàng đành phải đúng sự thật công đạo “Thụ ca cũng xử lý không tốt, quá mấy ngày thì tốt rồi.”</p>
+<p>【 đội ngũ 】 Phong Dục Nhiên Sẽ đánh nhau sao?</p>
+<p>Tạ Nhiên như vậy vừa hỏi, yy hai người cũng chưa phản ứng lại đây.</p>
+<p>Mười bảy trước nói, “Trước kia ở trò chơi khác đánh quá.”</p>
+<p>Tiên nữ thanh âm hơi trầm xuống, “Nhiên Nhiên ngươi muốn làm gì?”</p>
+<p>【 đội ngũ 】 Phong Dục Nhiên Ngươi muốn đánh nhau sao?</p>
+<p>yy lâm vào trầm mặc, mười bảy, “Chúng ta chủ động đánh nhau không tốt lắm đâu, dễ dàng cấp trong bang chọc phiền toái.”</p>
+<p>Mà tiên nữ trầm mặc một hồi, nàng nhìn đến Kênh Đội Ngũ kia ngắn ngủn mấy chữ, lại không biết như thế nào trong lòng chợt dâng lên một loại cảm giác ủy khuất, nàng hỏi “Tới, ngươi có thể mang ta đánh thắng sao?”</p>
+<p>【 đội ngũ 】 Phong Dục Nhiên Có thể, ta mang ngươi thắng.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong24.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong26.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tieu-dang-thuong-tay-cam-sang-van-kich-ban";
+const NOVEL_TITLE = "Tiểu đáng thương tay cầm sảng văn kịch bản";
+const CHAPTER_TITLE = "Chương 25";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
