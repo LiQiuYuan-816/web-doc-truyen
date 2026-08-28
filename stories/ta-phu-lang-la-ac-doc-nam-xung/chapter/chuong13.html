@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 13 thành thân</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ta phu lang là ác độc nam xứng
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 13 thành thân</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong12.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong14.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Ngu Thời Ngôn biết Diệp Vân Sơ đối hắn có hảo cảm, nhưng bọn hắn thân phận kém quá lớn, ở bên nhau sẽ bị Trấn Nam Vương cùng vương phi ngăn cản, hắn vô tình với phàn cao chi đi qua phú quý nhật tử, hắn chỉ nghĩ chờ gả chồng thời điểm, có thể chính mình chọn lựa một cái ôn nhuận như ngọc hôn phu, sau đó hắn có thể quản lý hậu trạch, sinh một cái hài tử, đem đời này bình bình an an vượt qua đi.</p>
+<p>Cùng Diệp Vân Sơ quen biết là một cái ngoài ý muốn. Ngu Thời Ngôn cảnh cáo chính mình, không thể làm chính mình thoát ly chính mình thiết tưởng người tốt sinh, không thể làm bất luận kẻ nào tới ngăn cản hắn lộ.</p>
+<p>Diệp Vân Sơ vốn tưởng rằng Ngu Thời Ngôn kêu hắn ra tới là tưởng đáp ứng hắn cầu thú, không nghĩ tới là cự tuyệt hắn. Hắn không phải người mù, hắn biết Ngu Thời Ngôn đối hắn cũng có hảo cảm.</p>
+<p>Hắn không có càn rỡ tiến lên một bước làm ra quá kích hành vi, ánh mắt nặng nề nhìn Ngu Thời Ngôn liếc mắt một cái nói “Là ta thích ngươi, này cùng thân phận không quan hệ.”</p>
+<p>Ngu Thời Ngôn nghe lời này chỉ cảm thấy Diệp Vân Sơ trong xương cốt vẫn là có chút thiên chân, hắn không nói chuyện nữa. Chỉ là rũ xuống con ngươi nói “Diệp thế tử nếu là không có việc gì nói, ta đi trước một bước.”</p>
+<p>Đương Ngu Thời Ngôn biểu hiện ra loại này kháng cự thái độ, Diệp Vân Sơ trong lòng cũng có chút hỏa đại. Bọn họ thân phận là có chênh lệch, ở hắn thích thượng Ngu Thời Ngôn thời điểm hắn sẽ biết, hiện tại hắn nói ra chính mình thái độ cùng quyết tâm, Ngu Thời Ngôn lại là nghe cũng chưa nghe, chỉ nghĩ thoát đi hắn.</p>
+<p>Diệp Vân Sơ bắt được Ngu Thời Ngôn thủ đoạn “Ngươi có ý tứ gì? Chúng ta còn có thể hảo hảo nói. Nếu là ngươi sợ hãi ta phụ vương cùng mẫu phi nơi đó, ta có thể đi cùng bọn họ nói, ngươi không cần luôn là như vậy một gặp được sự liền tưởng rời đi. Trốn tránh là giải quyết không được vấn đề.” Diệp Vân Sơ trong lòng mang theo hỏa, trên tay động tác cũng không có đúng mực.</p>
+<p>Ngu Thời Ngôn thủ đoạn đau xót, thần sắc ẩn nhẫn.</p>
+<p>Diệp Vân Sơ chú ý tới Ngu Thời Ngôn thần sắc có dị, hắn vội vàng buông lỏng ra bắt lấy hắn tay, thần sắc hoảng loạn “Thực xin lỗi, tiểu ngôn, ta không phải cố ý, ngươi không sao chứ.”</p>
+<p>“Diệp thế tử, ta hiện tại có thể đi rồi đi.”</p>
+<p>Diệp Vân Sơ muốn nói lại thôi, Ngu Thời Ngôn trực tiếp rời đi.</p>
+<p>Hắn trong lòng cũng có hỏa khí, Diệp Vân Sơ cái gì cũng đều không hiểu, liền biết nói hắn tính tình nhút nhát, thích trốn tránh vấn đề, hắn không có trốn tránh vấn đề, hắn chỉ là không có tin tưởng.</p>
+<p>Hắn là một cái hầu phủ con vợ lẽ, Trường Dương Hầu phủ người vốn dĩ liền không thích hắn, hắn a cha lại là bò giường ca nhi, hắn nền tảng kinh thành mọi người đều biết, mà Diệp Vân Sơ là vương công quý tộc, Thịnh Kinh ca nhi trong mộng tình lang.</p>
+<p>Ngu Thời Ngôn phiền lòng dùng đệm chăn bưng kín chính mình đầu.</p>
+<p>“Thiếu gia, ngài làm ta ở phía sau môn xem tam thiếu gia khi nào trở về, ta nhìn thấy, rời đi trở về ước chừng nửa canh giờ, khi trở về, thủ đoạn là hồng, hốc mắt cũng là hồng.” Kim Vân chạy về trong viện nói cho Ngu Lan Ý.</p>
+<p>Đây là Ngu Thời Ngôn cùng Diệp Vân Sơ cãi nhau? Ngu Lan Ý đột nhiên tâm tình thực hảo, cái gì yêu không yêu, còn không phải cãi nhau, đem người đều phải khí khóc.</p>
+<p>Ngu Lan Ý bĩu môi, Diệp Vân Sơ sẽ không còn động thủ đi, bằng không Ngu Thời Ngôn thủ đoạn như thế nào là hồng, thật không phẩm. Nói lên Trịnh Sơn Từ nhìn qua không giống như là một cái sẽ động thủ người.</p>
+<p>Vì để ngừa vạn nhất, Ngu Lan Ý tính toán ở trên người tùy thời mang theo một cây đao, nếu là Trịnh Sơn Từ dám động thủ, hắn cũng chỉ có thể lượng đao.</p>
+<p>“Thiếu gia, ngài áo cưới……” Kim Vân một lời khó nói hết, Ngu Lan Ý ba ngày phơi võng hai ngày đánh cá, áo cưới căn bản là không thêu hảo, liền một cái tay áo đều không có. Ngu phu lang đã vì hắn chuẩn bị hảo một kiện tú nương thêu áo cưới.</p>
+<p>“Này đó đều là việc nhỏ. Đúng rồi, Tân Phụng huyện thế nào? Ta đời này cũng chưa ra quá kinh thành.” Ngu Lan Ý sáng ngời có thần nhìn về phía Kim Vân.</p>
+<p>Kim Vân “Việc này có thể hỏi một chút đại công tử, đại công tử là nhất bác học người.”</p>
+<p>Ngu Lan Ý trong lòng vẫn là có chút tò mò, hắn tính tình sinh động, sự đã thành kết cục đã định, hắn còn không bằng hảo hảo vì chính mình tính toán.</p>
+<p>Đầu tiên chính là vàng bạc, càng nhiều càng tốt. Còn có chính mình nhận giường, đem giường cũng mang theo đi, còn có đây là hắn thích nhất cái màn giường, còn có thích nhất cái bàn…… Hắn tưởng đem toàn bộ gia đều dọn đi.</p>
+<p>Nghĩ đến phải rời khỏi đại ca, còn có Trường Dương Hầu cùng a cha, Ngu Lan Ý trong lòng đột nhiên mất mát lên. Trước kia không cảm thấy trong nhà có cái gì tốt, chỉ có rời đi gia thời điểm mới hiểu được chính mình là không tha.</p>
+<p>Đều do Trịnh Sơn Từ vô dụng. Hắn như thế nào liền không thể lưu tại kinh thành, vẫn là một cái nho nhỏ huyện lệnh.</p>
+<p>Ngu Lan Ý lại hỏa nổi lên tới.</p>
+<p>Trịnh Sơn Từ đã nhiều ngày cũng không nhàn rỗi, câu cá kỹ thuật thẳng tắp bay lên, hắn cá mang về tới đã bị đoạt xong rồi. Nghe nói hôm nay có đại nho muốn đi Thái Học giảng bài, Thái Học cho phép bọn họ ra vào.</p>
+<p>“Càng lớn người là từ địa phương đề bạt lên quan viên, hiện tại đã lui xuống, nhưng chỉ cần là hắn thống trị quá địa phương, bá tánh đều sẽ kính yêu hắn. Hắn dạy rất nhiều thư sinh, đào lý khắp thiên hạ, kỳ thật hắn đệ tử chỉ có rải rác mấy cái, rất nhiều thư sinh đều nghe qua càng lớn người khóa kiêu ngạo, bọn họ còn tự xưng đã chịu càng lớn người một khóa chi ân, liền nhận càng lớn nhân vi lão sư.”</p>
+<p>“Mau đi mau đi, đi chậm, chỉ có thể ở phía sau liền càng lớn người mặt đều nhìn không thấy.”</p>
+<p>Trịnh Sơn Từ nghe vậy trong lòng vừa động, hắn vừa lúc là muốn hạ cơ sở, có thể đi nghe một chút. Hắn như vậy nghĩ đuổi kịp phía trước người, chờ vào Thái Học, biển người tấp nập.</p>
+<p>Có một loại đặt mình trong với trường học tuyên truyền giảng giải cảnh tượng, Trịnh Sơn Từ chỉ có thể thấy rất nhiều đầu, hắn đứng ở bên ngoài, ẩn ẩn có chút nghe không rõ trên đài người ở nói cái gì.</p>
+<p>Trịnh Sơn Từ “……”</p>
+<p>Trịnh Sơn Từ ngưng thần tĩnh khí, càng lớn người thanh âm có chút lớn lên.</p>
+<p>“Thống trị địa phương ở chỗ nông cùng giáo hóa…… Thương bẩm thật mà biết lễ tiết, áo cơm đủ mà biết vinh nhục. Làm địa phương quan ở thống trị thượng trước muốn lấy lôi đình dáng người đem mọi người kinh sợ, lúc này ngươi mới có nói chuyện tư cách.…… Để cho địa phương quan đau đầu còn có hương thân cùng địa phương cường hào, lúc này ta kiến nghị phân mà hóa chi, mượn sức một cái, chèn ép một cái, nhưng ngươi còn muốn duy trì bọn họ chi gian cân bằng, mà làm cho bọn họ tới truy đuổi ngươi duy trì……”</p>
+<p>Trịnh Sơn Từ trong lòng đem hữu dụng tri thức nhớ kỹ, một hồi khóa sau, Trịnh Sơn Từ trong lòng rất có thu hoạch.</p>
+<p>Ở càng lớn người rời đi khi, Trịnh Sơn Từ đối với càng lớn người rời đi phương hướng hành lễ.</p>
+<p>Còn lại thư sinh đều ủng tiến lên đi, Trịnh Sơn Từ đã từ Thái Học rời đi. Hắn rời đi Thái Học khi, trong lòng trong sáng bằng phẳng. Nếu hắn đã trở thành Tân Phụng huyện lệnh, hắn tự nhiên phải đối tân phụng bá tánh phụ trách.</p>
+<p>Hắn trở về hồi ức nguyên tác cốt truyện, đem mấy cái quan trọng tiết điểm nhớ kỹ. Nguyên tác trung Diệp Vân Sơ là Đại Yến công thần, hắn cùng Ngu Thời Ngôn phòng ngừa ôn dịch khuếch tán bị Võ Minh Đế ủy lấy trọng trách, Diệp Vân Sơ lại đi sứ man di, dương Đại Yến quốc uy.</p>
+<p>Trịnh Sơn Từ đem mấy cái thời gian tiết điểm đều nhớ kỹ, xem thời gian quá dài, hắn nhớ rõ không rõ lắm, chỉ có thể tiếc nuối buông xuống bút.</p>
+<p>Thành thân nhật tử giây lát liền đến, Trịnh Sơn Từ bên này mặc vào hôn phục, Ngu Trường Hành cấp Trịnh Sơn Từ muốn một con cao lớn bạch mã lại đây lấy chương hiển khí độ. Trong thư viện không chỉ có muốn học tứ thư ngũ kinh, còn muốn dạy lễ nhạc bắn ngự thư số.</p>
+<p>Thành thân mấy ngày trước đây hai người là không thể gặp nhau, Trịnh Sơn Từ ở thành thân đêm trước còn có chút khẩn trương, hắn chưa bao giờ cưới quá một người, người này vẫn là một người nam nhân, hắn có chút ngủ không được. Này không phải cái gì nôn nóng cùng hưng phấn, hắn không có này đó cảm xúc.</p>
+<p>Nhưng hắn chính là đơn thuần ngủ không được.</p>
+<p>Có khi còn sẽ nhớ tới, Ngu Lan Ý đem bạc vụn nện ở hắn trên đầu, còn có hắn đem bạc vụn còn cấp Ngu Lan Ý khi, Ngu Lan Ý đôi mắt lóe ngọn lửa, cả khuôn mặt xinh đẹp lại sáng ngời, mang theo tiên minh nhan sắc.</p>
+<p>Hôm sau Trịnh Sơn Từ đi ra cửa, rất nhiều người đem cái này địa phương vây đi lên, thấy nhiều như vậy người Trịnh Sơn Từ có chút choáng váng đầu. Hẻm nhỏ đâu ra như vậy náo nhiệt trường hợp, hầu phủ gả ca nhi, này đó bá tánh đều là tới xem náo nhiệt.</p>
+<p>“Tân lang quan ra tới, tân lang quan thật tuấn!”</p>
+<p>“Đây là Trịnh Sơn Từ, thiếu chút nữa nhận không ra.”</p>
+<p>Thấy trước mắt mang theo hoa hồng bạch mã, Trịnh Sơn Từ dẫm lên yên ngựa lên ngựa.</p>
+<p>Dáng người mạnh mẽ thuần thục.</p>
+<p>Có người ở trong đám người kêu một tiếng hảo.</p>
+<p>Trịnh Sơn Từ lôi kéo dây cương, hắn trong lòng phun ra một hơi hướng tới Trường Dương Hầu phủ kỵ đi.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong12.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong14.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "ta-phu-lang-la-ac-doc-nam-xung";
+const NOVEL_TITLE = "Ta phu lang là ác độc nam xứng";
+const CHAPTER_TITLE = "Chương 13 thành thân";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

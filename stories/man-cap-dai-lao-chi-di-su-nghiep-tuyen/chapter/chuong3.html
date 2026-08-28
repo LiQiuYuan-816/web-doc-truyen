@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 3</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Mãn cấp đại lão chỉ đi sự nghiệp tuyến
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 3</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong2.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong4.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Đầu phiếu?</p>
+<p>Triệu Diệu câu này nói ra tới khi, ở đây mọi người sôi nổi đầu ý đồ đến ngoại ánh mắt, đặc biệt là Triệu Trí Khải cùng Triệu Tề Chân. Triệu Tề Chân nghe vậy quả thực hỉ thượng mày, Triệu Diệu này ra cái tai nạn xe cộ còn đem đầu óc cấp đâm oai? Phía trước vì Khải Thần hạng mục khắp nơi bôn tẩu, hiện tại đến lúc này nói không nghĩ tranh cử người phụ trách vị trí?</p>
+<p>Triệu Tề Chân trào nói “Tam ca thân thể xác thật vẫn là tĩnh dưỡng hảo.”</p>
+<p>Diêu Bạch càng là nghe được vẻ mặt mộng bức, sao lại thế này? Hắn ca không phải tới này đương người phụ trách sao?</p>
+<p>Ở đây người không ít là Triệu Trí Khải trước tiên chuẩn bị quá người, biết lần này hội nghị cuối cùng yêu cầu đầu phiếu tới biểu quyết hạng mục người phụ trách, mà này sẽ Triệu Diệu đột nhiên nói ra nói như vậy tới, làm cho bọn họ không rõ nguyên do, sôi nổi nhìn về phía Triệu Trí Khải.</p>
+<p>Triệu Trí Khải nhíu mày, luôn mãi dò hỏi “Tiểu Diệu, ngươi đây là có ý tứ gì?”</p>
+<p>Triệu Diệu câu này nói đến thiệt tình thật lòng, hắn đời trước vì Triệu gia này phân cái gọi là gia sản vội trước cố sau cuối cùng rơi vào một thân ốm đau kết cục, đời này thật vất vả được đến một cái khỏe mạnh thân thể làm lại từ đầu, hắn như thế nào còn sẽ cùng đời trước giống nhau đi tranh đoạt Triệu gia này phân gia sản? Nhàn rỗi không có việc gì cho chính mình tìm phiền toái sao?</p>
+<p>Không nói đến Triệu gia gia nghiệp vỡ nát, liền đơn nói trận này cái gọi là khảo hạch, nói đến cùng chính là ở đây mọi người đứng thành hàng một lần hội nghị, lúc sau chính là tinh phong huyết vũ, ngươi lừa ta gạt. Hắn là thật không có hứng thú, cũng không nghĩ lại cuốn vào phân tranh giữa, những người này ái như thế nào đấu liền như thế nào đấu.</p>
+<p>“Không có ý tứ gì.” Triệu Diệu bình tĩnh nói “Khải Thần cái này hạng mục nếu thật muốn ở Triệu gia người tuyển ra, từ các điều kiện trung chọn ưu tú lựa chọn, ta tự nhận không bằng ta đại ca Triệu Trường Thước, mà Tề Chân kinh nghiệm không đủ, tổng hợp các hạng điều kiện xem ra, người được chọn không phải thực trong sáng sao?”</p>
+<p>Trong sân những người khác cho nhau nhìn mắt, có người đưa ra dị nghị “Nhưng đại thiếu trên người còn có mặt khác hạng mục, thân kiêm số chức chỉ sợ khó có thể gánh vác trọng trách.”</p>
+<p>Cách đó không xa vẫn luôn im miệng không nói Triệu Trường Thước nghe vậy nghiêm túc mà nhìn Triệu Diệu liếc mắt một cái, đáy mắt mang theo vài phần cẩn thận cùng nghi hoặc.</p>
+<p>Triệu Diệu còn lại là thói quen tính sờ sờ ngón trỏ, nhưng mà đốt ngón tay thượng cũng không hắn đời trước thói quen ngọc ban chỉ, đối mặt những người khác ánh mắt hắn thản nhiên nói “Vậy ngươi nói nói trên người hắn kiêm nhiệm này đó hạng mục? Mà này đó hạng mục hiện nay vận tác tình huống lại như thế nào?”</p>
+<p>“Này……” Đứng lên người nọ mặt lộ vẻ khó xử, rồi sau đó nhìn về phía những người khác.</p>
+<p>Đứng ở Triệu Trường Thước phía sau bí thư nhưng không buông tha cơ hội này, hắn đem trước tiên sửa sang lại tốt hạng mục tư liệu truyền đọc cấp những người khác, hơn nữa nói “Đây là Triệu Trường Thước tiên sinh trước mắt hạng mục, các vị có thể nhìn xem.”</p>
+<p>Triệu Diệu nhìn đến Triệu Trường Thước bí thư động tác liền biết kế tiếp thế cục hẳn là sẽ bắt đầu hướng Triệu Trường Thước độ lệch, mà hắn đã không có gì hứng thú ở bên này chậm trễ thời gian, lần này hắn ở bên này trực tiếp tỏ thái độ, lần này hội nghị hoặc là đẩy Triệu Trường Thước, hoặc là liền không kết quả.</p>
+<p>“Diêu Bạch.” Triệu Diệu nghiêng đầu nhìn Diêu Bạch liếc mắt một cái.</p>
+<p>Diêu Bạch vội vàng tiến lên đây đẩy xe lăn.</p>
+<p>Triệu Diệu mặt mang mỉm cười nhìn mọi người, “Dư lại người giao từ các vị thương lượng, ta còn hẹn bác sĩ, liền không nhiều lắm để lại.”</p>
+<p>Này liền đi rồi!? Hội nghị thượng người sôi nổi nhìn về phía Triệu Diệu, này không nặng đầu diễn vừa đến sao? Liền nói một câu tới đầu phiếu, lại cho thấy lập trường nói duy trì Triệu Trường Thước, tiếp theo muốn đi người? Này Triệu Diệu ra cái tai nạn xe cộ đâm hư đầu óc.</p>
+<p>“Từ từ, tam thiếu.” Có người ra tiếng ngăn cản.</p>
+<p>Triệu Diệu nói “Còn có mặt khác vấn đề sao?”</p>
+<p>Người nọ một chốc một lát cũng không biết như thế nào hỏi, chẳng lẽ làm trò mọi người mặt dò hỏi Triệu Diệu vì cái gì không đoạt người phụ trách sao? Rõ ràng phía trước Triệu Diệu đối vị trí này thập phần tâm động, lại còn có lén liên hệ bọn họ không ít, như thế nào lúc này lại đột nhiên sửa lại chủ ý??</p>
+<p>Triệu Diệu gặp người không nói chuyện, liền ý bảo Diêu Bạch có thể đi rồi.</p>
+<p>Diêu Bạch thân thể cứng đờ mà đẩy xe lăn ra phòng họp, Triệu Diệu không giấu hắn sự tình, mà hắn cũng biết hôm nay tới nơi này hắn Diệu ca chính là tới đoạt người phụ trách, như thế nào liền khai cái sẽ công phu hắn Diệu ca liền người phụ trách đều không cần trực tiếp đầu phiếu cấp Triệu đại thiếu, phải biết khoảng thời gian trước hắn Diệu ca mỗi ngày vì chuyện này vội trước cố sau, hiện tại như vậy lộng không phải kiếm củi ba năm thiêu một giờ sao!</p>
+<p>20260828-</p>
+<p>Hắn nghẹn hơn phân nửa lời nói chưa nói xuất khẩu, chờ đến hai người vào thang máy, hắn mới hỏi nói “Không phải a ca, ngươi chừng nào thì hẹn bác sĩ? Ta như thế nào không biết?”</p>
+<p>Triệu Diệu ánh mắt bình tĩnh, “Một hồi liền ước.”</p>
+<p>Diêu Bạch không hiểu ra sao “Ngươi chạy tới không chính là vì cái người phụ trách sao? Như thế nào duy trì thượng đại thiếu?”</p>
+<p>Triệu Diệu lại đáp “Này không đơn giản? Ta không nghĩ tranh.”</p>
+<p>“Chính là hiện tại mở họp, ngươi như vậy đi luôn có thể hay không cấp những người khác lưu lại không tốt ấn tượng, hơn nữa đầu phiếu cũng còn không có kết thúc, ngươi không đợi kết quả ra tới lại đi sao?” Diêu Bạch lộng không rõ Triệu Diệu cái này thao tác, “Hơn nữa còn có Triệu Tề Chân ở, nếu là hắn lên làm người phụ trách……”</p>
+<p>Thang máy quân tốc giảm xuống.</p>
+<p>“Cái này hội nghị kết thúc.” Triệu Diệu giải thích nói “Ta tỏ thái độ lúc sau kỳ thật đã có kết quả, Triệu Tề Chân phiên không dậy nổi lãng, mà duy trì Triệu Trường Thước người còn sẽ tiếp tục duy trì hắn, chỉ là ban đầu đứng ở ta này trận doanh tưởng đẩy ta đi lên cùng Triệu Trường Thước tranh quyền người hiện tại không có người chọn có thể lựa chọn, Triệu Tề Chân vô dụng, mà ta lại rời khỏi cạnh tranh. Cái này hội nghị hoặc là đẩy Triệu Trường Thước, hoặc là liền vô tật mà chết.”</p>
+<p>Cửa thang máy khai, Diêu Bạch đẩy Triệu Diệu đi ra ngoài.</p>
+<p>Diêu Bạch “A? Nhưng ca ngươi không phải……?”</p>
+<p>“Lưu không lưu ấn tượng tốt cũng không có gì khác nhau, về sau hẳn là cũng sẽ không giao tiếp.” Triệu Diệu biết hắn sau lưng đứng người, trừ bỏ hắn mẫu thân bạn cũ xem ở tình cảm thượng đứng ở hắn bên này, dư lại người trên cơ bản đều là vì chính mình ích lợi mới lựa chọn đem hắn đẩy đi lên cùng Triệu Trường Thước đấu. Nhưng này đều không sao cả, đời trước nên tính trướng cơ bản tính xong, đời này hắn lại không nghĩ giảo vũng nước đục này, cùng những người này bảo trì khoảng cách tốt nhất.</p>
+<p>Diêu Bạch cái hiểu cái không, đang muốn hỏi lại hai câu thời điểm, bỗng nhiên xe lăn phía trước vụt ra tới một người, thực không lễ phép đỗ lại ở hai người trước mặt.</p>
+<p>“Ngươi người này……”</p>
+<p>“Tam thiếu!” Vội vàng tới rồi bí thư ngăn cản bọn họ, “Triệu tổng hy vọng ngươi lưu tại văn phòng chờ hắn một hồi, nói là có việc cùng ngươi thương lượng.”</p>
+<p>Triệu Diệu cũng không ngoài ý muốn, hắn nói “Không được, ta vội vàng đi gặp bác sĩ.”</p>
+<p>Bí thư mặt lộ vẻ khó xử, “Tam thiếu, ngươi như vậy sẽ làm Triệu tổng rất khó làm.”</p>
+<p>Diêu Bạch tiến lên đây “Ai ai ai nhường một chút, tam thiếu chân vốn dĩ liền khó chịu, ngươi còn ngăn đón người không cho xem bác sĩ phải không? Nếu là tam thiếu chân ra cái gì vấn đề, ngươi gánh được trách nhiệm sao?”</p>
+<p>Bí thư do dự nửa sẽ, cuối cùng vẫn là tránh ra lộ.</p>
+<p>Diêu Bạch nghênh ngang mà đẩy Triệu Diệu từ bí thư trước mặt đi qua đi.</p>
+<p>Triệu Diệu một đốn, bình luận “Này bộ lý do thoái thác học được không tồi.”</p>
+<p>“Này không phải sao? Ta ngày thường không thiếu xem công chúng hào tiểu viết văn, như thế nào lừa tình như thế nào tới. Bên trong nam chính tuỳ tùng giống nhau đều là như vậy hù dọa người.” Diêu Bạch đi đến một nửa đột nhiên nghĩ đến sự, “Chuyện xấu, ta quên cùng Vương thúc nói chúng ta đi trước.”</p>
+<p>Lầu một trong đại sảnh điều hòa phong an tĩnh mà lưu động, Triệu Diệu không nói chuyện, mà là đem ánh mắt đặt ở pha lê cửa xoay tròn ngoại ngày mưa.</p>
+<p>Vương thúc còn ở phòng nghỉ đợi đám người, Diêu Bạch vội vàng cấp Vương thúc gọi điện thoại thông tri hắn đến dưới lầu tới đón người.</p>
+<p>Chờ nói chuyện điện thoại xong, Diêu Bạch nói “Ca, chúng ta tại đây đợi lát nữa, Vương thúc thực mau liền tới đây.”</p>
+<p>Diêu Bạch đang định đem Triệu Diệu đẩy đến lầu một nghỉ ngơi khu, lại nghe thấy Triệu Diệu nói “Trước đi ra ngoài đi.”</p>
+<p>“A?” Diêu Bạch sửng sốt, “Nhưng bên ngoài chính rơi xuống vũ đâu.”</p>
+<p>Triệu Diệu “Chúng ta ở bên ngoài chờ hắn.”</p>
+<p>“Vậy được rồi.” Diêu Bạch đành phải đẩy hắn đi ra ngoài, đứng ở đại lâu cửa duyên hạ, “Này tránh mưa.”</p>
+<p>Hắn đứng ở Triệu Diệu xe lăn biên, nói thầm nói “Này bên ngoài vũ thật sự đại, dự báo thời tiết còn nói là trời nắng tới.”</p>
+<p>Triệu Diệu cảm nhận được nghênh diện tới vũ phong, đầy người mỏi mệt tựa hồ bị thổi đi không ít. Hắn nhìn nơi xa tình hình, rốt cuộc giờ phút này trong lòng mới xác nhận thế giới này là chân thật tồn tại, hắn không chân chính chết đi, mà là trọng sinh đến tuổi trẻ thời điểm.</p>
+<p>Hắn mở miệng “Đi phía trước đi điểm.”</p>
+<p>Mà Diêu Bạch lại không nghe thấy hắn nói chuyện, trên mặt có vài phần cấp sắc, dọc theo đường đi tới rồi bên này mở họp chưa kịp đi WC, vừa mới lại ở như vậy nghiêm túc trường hợp khẩn trương thật lâu, này sẽ cảm giác đi lên nhưng không dễ chịu. Hắn phục hồi tinh thần lại, chú ý tới Triệu Diệu chính nhìn hắn, “Ca?”</p>
+<p>Diêu Bạch chân thường thường động vài cái, Triệu Diệu dời đi ánh mắt, “Ngươi có việc đi trước giải quyết đi.”</p>
+<p>Diêu Bạch có điểm do dự “Nhưng ca ngươi không quá phương tiện, ta còn là ở chỗ này chờ Vương thúc lại đây đi.”</p>
+<p>Triệu Diệu nói “Ngươi đi đi, trở về không sai biệt lắm Vương thúc liền tới đây.”</p>
+<p>Diêu Bạch không lại chối từ, dặn dò vài câu liền rời đi.</p>
+<p>Cao ốc cửa lui tới mấy người, Bùi Minh Chiêm một thân thường phục đi theo người đại diện phía sau, mới vừa xuống xe liền chú ý tới đại lâu cửa ngồi xe lăn người. Người nọ thoạt nhìn thực tuổi trẻ, chính một mình đẩy xe lăn đi phía trước duyên vũ lều ngoại đi, mà hắn phía trước là hạ hãm ba tầng tiểu bậc thang.</p>
+<p>Người đại diện vừa đi vừa công đạo sự “Bọn họ bên kia còn tưởng cùng chúng ta tục, một hồi khả năng còn sẽ đề chút điều kiện, ngươi đừng lý là được. Ai ngươi đi đâu a?”</p>
+<p>Bùi Minh Chiêm bước nhanh đi đến, ở kia xe lăn gần bậc thang chỗ thời điểm thành công giữ chặt, hắn nhìn đến trên xe lăn trầm mặc thanh niên, ôn thanh nhắc nhở “Phía trước bậc thang, cẩn thận một chút.”</p>
+<p>Thanh niên tay hơi hơi giương, bên trên có vài giờ tản ra nước mưa.</p>
+<p>Bùi Minh Chiêm khẽ nhíu mày, đem xe lăn sau này kéo đến an toàn vị trí.</p>
+<p>Lúc này đại lâu vội vàng chạy ra một người chạy tới.</p>
+<p>Diêu Bạch thượng xong WC liền nhìn đến hắn Diệu ca xe lăn không ở ban đầu vị trí, một đường nóng vội chạy tới liền nhìn đến một cái ăn mặc hưu nhàn trang nam nhân lôi kéo xe lăn sau này lui.</p>
+<p>“Diệu ca, không phải làm ngươi tại chỗ chờ ta sao?” Hắn nói xong hướng tới Bùi Minh Chiêm nói lời cảm tạ “Đa tạ huynh đệ.”</p>
+<p>Triệu Diệu không nói chuyện, chỉ là trương tay lại hợp tay, tựa hồ suy nghĩ cái gì.</p>
+<p>Bên kia người đại diện đã đi tới, Bùi Minh Chiêm rất là để ý mà nhìn xe lăn người trẻ tuổi liếc mắt một cái, rồi sau đó nói “Chú ý an toàn.”</p>
+<p>“Hảo, cảm ơn a.” Diêu Bạch nói xong đột nhiên cảm thấy Bùi Minh Chiêm thoạt nhìn có điểm quen mắt, “Huynh đệ chúng ta có phải hay không ở đâu gặp qua?”</p>
+<p>Triệu Diệu phục hồi tinh thần lại, nghiêng đầu cẩn thận quan sát bên người người thanh niên này, rồi sau đó nói “Đa tạ.”</p>
+<p>Bùi Minh Chiêm lễ phép mà cười cười.</p>
+<p>“Chúng ta đến đi mau, nếu không bỏ lỡ ước định thời gian.” Người đại diện lại đây thúc giục.</p>
+<p>Bùi Minh Chiêm hướng tới Diêu Bạch gật đầu thăm hỏi, xoay người theo người đại diện rời đi.</p>
+<p>Vương thúc xe lúc này lái qua đây, Diêu Bạch còn ở cân nhắc nơi nào gặp qua người nọ, mà Vương thúc đã cầm ô tới hỗ trợ đỡ người.</p>
+<p>Bùi Minh Chiêm hai người đi vào đại lâu, người đại diện mới hỏi nói “Ngươi nhận thức tam thiếu sao?”</p>
+<p>“Tam thiếu?” Bùi Minh Chiêm nghe vậy nhíu mày.</p>
+<p>“Ta lần trước tới ký hợp đồng gặp được quá hắn một lần, người nọ là Triệu gia tam thiếu Triệu Diệu, nghe nói thượng chu ra tai nạn xe cộ vẫn luôn ở bệnh viện đợi.” Người đại diện nói xong lại hỏi “Ngươi không quen biết hắn?”</p>
+<p>Bùi Minh Chiêm cười cười, như suy tư gì quay đầu lại nhìn thoáng qua.</p>
+<p>Triệu Diệu, nguyên lai hắn trường như vậy.</p>
+<p>……….</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong2.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong4.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "man-cap-dai-lao-chi-di-su-nghiep-tuyen";
+const NOVEL_TITLE = "Mãn cấp đại lão chỉ đi sự nghiệp tuyến";
+const CHAPTER_TITLE = "Chương 3";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

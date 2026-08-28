@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 10</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Mãn cấp đại lão chỉ đi sự nghiệp tuyến
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 10</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong9.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong11.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Triệu Diệu cùng Trần Hệ nói xong lúc sau liền về tới trong nhà, Diêu Bạch dọc theo đường đi lải nhải nói muốn chuẩn bị thỉnh cái đại sư tới trong nhà nhìn xem, nói là Triệu Diệu tháng này thủy nghịch, yêu cầu nhìn xem có phải hay không bị gì kỳ quái đồ vật cấp vọt. Triệu Diệu không lý Diêu Bạch, ngược lại Vương thúc nghe xong chuyện này sau suy xét nửa ngày, cuối cùng khuất phục với Diêu Bạch kiến nghị, hai người lập tức thương lượng khởi thỉnh đại sư tới.</p>
+<p>Huyền hồ sự tình Triệu Diệu từ trước đến nay không tin, nhưng là chính mình trọng sinh loại này khoa học khó có thể giải thích sự tình đều đã xảy ra, cũng nói không chừng còn có mặt khác đồ vật, tóm lại cũng liền tùy hai người lăn lộn đi.</p>
+<p>“Ca, vậy ngươi kế tiếp hành trình có gì tính toán không?” Diêu Bạch chưa quên chính mình vẫn là Triệu Diệu trợ lý, nhưng là hắn ca từ Triệu thị từ chức về sau, gần nhất một lần đứng đắn ra cửa chính là cùng Trần Hệ thấy cái mặt, nói chuyện một cái thoạt nhìn tùy thời lật xe hợp tác.</p>
+<p>Triệu Diệu chính oa ở trên sô pha đọc sách, hắn gần nhất đặc biệt ái ở phòng khách loại này náo nhiệt địa phương nghe Vương thúc nhắc mãi, ngẫu nhiên hơn nữa cái Diêu Bạch, hai người là có thể ở trước mặt hắn lải nhải buổi sáng. Hắn phần lớn thời điểm không đi chú ý hai người rốt cuộc nói chính là cái gì, nhưng cũng may là náo nhiệt, ở vào như vậy bầu không khí trung hắn cũng cảm thấy có chút chân thật cảm.</p>
+<p>Diêu Bạch thấy hắn đọc sách nghiêm túc, lại hỏi câu.</p>
+<p>Triệu Diệu này sẽ mới nghe thấy, vì thế nói “Ở nhà đọc sách đi.”</p>
+<p>Diêu Bạch vừa nghe cả trái tim đều mệt mỏi, “Ca ngươi như vậy không được, ta đương ngươi trợ lý hoàn toàn không cảm giác thành tựu, lấy không ngươi tiền lương ta đều cảm thấy lương tâm bất an.”</p>
+<p>Triệu Diệu phiên phiên thư, “Nhàn rỗi không có việc gì liền giúp ta lưu ý hạ Huy Hoa tình huống, thuận tiện trên mạng kia mấy cái bác chủ Weibo sửa sang lại cái giấy chất bản cho ta, di động xem lâu rồi đôi mắt đau.”</p>
+<p>Diêu Bạch nghe được này ly kỳ yêu cầu đôi mắt trừng lớn “Không phải đâu ca, đóng dấu giấy chất bản nào còn có xoát Weibo nghi thức cảm.”</p>
+<p>Triệu Diệu đôi mắt nâng cũng chưa nâng, “Ngươi không phải nhàn rỗi nhàm chán sao?”</p>
+<p>Ý tứ là nói cho hắn tìm điểm sự làm.</p>
+<p>Diêu Bạch sau này một ngưỡng, “Ta mộng tưởng nhật tử là ở khí phách hăng hái mà đi ở Triệu thị đại lâu, thuận tiện cùng bí thư chỗ xinh đẹp muội muội nói chuyện tâm.” Mà không phải thời gian làm việc bồi Triệu Diệu cá mặn nằm ở sô pha xem luyến ái tiết mục hoặc là phim thần tượng. Mới đầu hắn ca còn nghiêm trang nói muốn nghiên cứu tình yêu, xem tướng thân tiết mục cùng đọc tình cảm canh gà liền có điểm kinh tủng, nhưng gần nhất mấy ngày hắn ca không biết từ nào nhảy ra tới thanh xuân phim thần tượng, còn nghiêm túc mà thoạt nhìn.</p>
+<p>Mỗi khi Diêu Bạch đưa ra nghi ngờ, Triệu Diệu là có thể dùng bình đạm miệng lưỡi tới giải thích, nói lên tới phi thường có đạo lý, thế cho nên hắn tìm không ra lý do tới phản bác.</p>
+<p>Này đã không phải kinh tủng nông nỗi, hắn ca nghiêm túc bộ dáng phảng phất này đó luyến ái công lược chính là cái thượng trăm triệu hạng mục, này hoàn toàn vô pháp dùng lời nói mà hình dung được loại cảm giác này.</p>
+<p>Diêu Bạch “Ca, ta hoài nghi ngươi thật sự bị thứ gì thượng thân.”</p>
+<p>Triệu Diệu nhìn thư, “Thượng ta thân đồ vật biết ngươi mông bên phải dài quá cái chí, khi còn nhỏ bị lãnh ở nhà cẩu đuổi theo ba điều phố, đại học thời điểm bị tự động buôn bán cơ nuốt hai mươi đồng tiền……”</p>
+<p>Diêu Bạch hoảng hốt “Thứ này thật đúng là lợi hại, này cát mấy góc sự tình đều biết.”</p>
+<p>Vương thúc vừa vặn nghe được hai người đối thoại, vui tươi hớn hở nói “Lần trước gặp được Tiểu Bạch mụ mụ nói Tiểu Bạch gần nhất không về nhà, mấy ngày nay công tác nghỉ ngơi tới, cũng nên về nhà nhìn xem.”</p>
+<p>20260828-</p>
+<p>Diêu Bạch nghe vậy đầu đều lớn, “Ta mẹ đều tìm tới ngươi sao? Ta gần nhất đều trốn tránh nàng đi, một hồi gia liền bắt đầu cho ta giảng nhà ai cô nương hảo, nhà ai cô nương tìm đối tượng, trước hai ngày trả lại cho ta phát chúng ta tiểu khu tương thân giác bác gái làm tương thân đại hội, còn chính là muốn ta đi……” Hắn nói đến một nửa tức khắc dừng, thân thể cứng đờ quay đầu nhìn về phía một bên Triệu Diệu.</p>
+<p>Hắn Diệu ca ánh mắt đã không kia bổn tình cảm canh gà thư thượng, lúc này chính nghiêm túc mà nhìn chính mình, dùng đứng đắn không mất thái độ ngữ khí dò hỏi một tiếng “Tương thân giác?”</p>
+<p>Vương thúc là gặp qua đại việc đời người, trong nhà cũng có không ít ham thích với kéo tơ hồng thân thích bằng hữu, nghe được tương thân giác cái này từ cũng không xa lạ, vì thế cấp Triệu Diệu giải thích nói “Bình thường tiểu khu ngẫu nhiên sẽ làm một ít tiểu khu hoạt động, tương thân giác giống nhau là làm mai mối, cấp cùng tiểu khu hộ gia đình kéo kéo tơ hồng, ngẫu nhiên còn sẽ làm tương thân đại hội, liền tiểu khu người cùng nhau nói chuyện cảm tình, xem thuận mắt liền chỗ một đoạn thời gian.”</p>
+<p>Diêu Bạch thân thể cứng đờ, “Diệu ca, tương thân cũng không phải là thứ tốt.”</p>
+<p>Hắn mới vừa tốt nghiệp đại học kia sẽ liền nghe được trong nhà vô số thân thích làm mai lên tiếng, ngày lễ ngày tết đều phải nói thượng vừa nói, mặc dù hắn ngạnh chống nam nhân 30 một cành hoa lý luận, cũng không thắng nổi ba cô sáu bà nói kết hôn sớm sinh con sớm sớm ôm tôn kỳ quái ngụy biện.</p>
+<p>Triệu Diệu nghe vậy khó hiểu, vì thế nói “Cùng cô nương trước thời gian chỗ cảm tình không hảo sao? Tương thân không phải là kết hôn, có thích hợp cơ hội đi nhìn xem cũng là không tồi.”</p>
+<p>Diêu Bạch “Ca a! Tương thân chỉ là bắt đầu, hôn nhân là phần mộ, không được a!”</p>
+<p>Triệu Diệu “Xác thật có cái này cách nói.”</p>
+<p>Diêu Bạch nhẹ nhàng thở ra, hắn liền sợ hắn ca nhất thời hứng khởi muốn đi nhìn cái gì tương thân đại hội, đến lúc đó khổ chính là hắn Diêu Bạch, thảm cũng là hắn Diêu Bạch.</p>
+<p>Vốn tưởng rằng chuyện này liền như vậy đi qua, nhưng Triệu Diệu nhìn sẽ thư, đột nhiên lại giết trở về, “Tiểu Bạch, cái kia tương thân sẽ là cái gì thời gian?”</p>
+<p>Diêu Bạch “……?”</p>
+<p>Bùi Minh Chiêm gần nhất đều ở chạy hoạt động, đặc biệt là cùng các hạng mục hiệp ước tới rồi hậu kỳ, hắn tháng này lượng công việc hoàn toàn đè ở cùng nhau. Mới giữa tháng 8, hắn đã đem hạ nửa tháng công tác an bài đến tràn đầy, trừ bỏ trong vòng hạng mục, hắn còn muốn đi tiếp nhận Bùi gia dừng ở thành phố S công ty.</p>
+<p>Người đại diện gần nhất trừ bỏ giúp hắn vội những việc này, cũng dần dần cũng ở giúp hắn xử lý mặt khác công tác thượng sự tình. Này sẽ bọn họ mới vừa kết thúc một cái thương nghiệp hoạt động, Bùi Minh Chiêm liền ngồi nhà xe mã bất đình đề mà hướng tân công ty đuổi.</p>
+<p>Người đại diện nhìn này một trạng huống đều lo lắng này đó hành trình có thể hay không quá vẹn toàn, nhưng Bùi Minh Chiêm lại thích thú, như vậy hành trình xuống dưới không thấy mệt mỏi, ngồi ở nhà xe thượng còn có rảnh xử lý văn kiện.</p>
+<p>Người đại diện thở dài nói “Thật không biết ngươi này thân thể là cái gì cấu thành, nếu là đổi những cái đó tuổi trẻ nghệ sĩ gặp được tình huống này đã sớm kêu cha gọi mẹ cùng fans khóc thảm.”</p>
+<p>“Ngươi lời này ý tứ là ta không tính tuổi trẻ nghệ sĩ sao?” Bùi Minh Chiêm nhìn không chớp mắt, lại còn có thời gian cùng người đại diện nói giỡn “27 xác thật so ra kém tiểu thịt tươi.”</p>
+<p>Người đại diện “Mấy năm nay ngươi da mặt là càng ngày càng dày.”</p>
+<p>Hắn nói xong lại nói “Đúng rồi lão Bùi, ngươi lần trước không phải chú ý quá Huy Hoa bên kia sao? Ta nghe nói Trần Hệ gần nhất cùng cái phú nhị đại có liên quan, tựa hồ nói hảo hợp đồng liền kém ký tên.”</p>
+<p>Bùi Minh Chiêm lúc này mới quay đầu xem hắn, “Ngươi tin tức nhưng thật ra rất linh thông, mấy ngày nay sự?”</p>
+<p>“Liền mấy ngày nay sự, Huy Hoa sự trong vòng người đều nhìn chằm chằm đâu, Trần Hệ có điểm động tác nhỏ còn không thể gạt được những người khác a. Này mới vừa cùng người bàn hợp đồng từ hội sở ra tới, cách thiên liền ở trong vòng truyền khai, hắn cùng người nọ nói xong lúc sau liền không lại tiếp những người khác hợp tác đề nghị, hẳn là xác định xuống dưới liền kém ký tên.”</p>
+<p>Người đại diện thở dài nói “Ngươi lúc trước không phải tưởng đào Trần Hệ sao? Xem ra lần này không nhiều lắm cơ hội.”</p>
+<p>Bùi gia sản nghiệp hơn phân nửa cùng giải trí chiếm chút biên, Huy Hoa sự Bùi Minh Chiêm nhiều ít có ở chú ý, những người khác nghĩ như thế nào chia cắt Huy Hoa tài nguyên, Bùi Minh Chiêm lại nghĩ đào Huy Hoa lão tổng Trần Hệ đến chính mình thủ hạ làm việc. Bất quá này đề nghị còn không có cùng Trần Hệ nói, Huy Hoa cũng đã tìm được kim chủ.</p>
+<p>Bùi Minh Chiêm nghe xong không gì phản ứng, “Huy Hoa chịu đựng không nổi lần thứ hai, Trần Hệ lần này nếu tìm lầm đối tượng hợp tác, hắn lại tưởng cứu lên Huy Hoa liền khó khăn. Hơn nữa Huy Hoa khó xử lý chính là bên trong những cái đó cao tầng, người này đến ngoan hạ tâm làm một lần tẩy bài.”</p>
+<p>Người đại diện nghe xong rụt rụt bả vai, “Ta cảm thấy ngươi người này vẫn là đương nghệ sĩ dễ dàng ở chung điểm. Huy Hoa có thể hảo đương nhiên tốt nhất, ngươi lần trước tiếp Trình đạo kia bộ huyền nghi kịch bên trong chính là ký không ít Huy Hoa nghệ sĩ, Huy Hoa nếu là chưa gượng dậy nổi, hậu kỳ tuyên truyền đã có thể khó khăn.”</p>
+<p>Nói xong việc này, hắn mới nhớ tới chính sự tới “Đúng rồi, ngày mai tổng nghệ đừng quên, năm trước thiêm phi hành khách quý, vừa vặn liền ở thành phố S.”</p>
+<p>Triệu Diệu cùng Diêu Bạch hỏi thăm XX tiểu khu tương thân giác sự, người sau ngậm miệng không nói chuyện thẳng đến Vương thúc chuẩn bị đem Diêu mụ mụ Wechat đẩy cho Triệu Diệu thời điểm, Diêu Bạch rốt cuộc chiết eo.</p>
+<p>XX tiểu khu tương thân đại hội định ở cuối tuần, Vương thúc không theo tới. Địa điểm ở Diêu mụ mụ sở cư trú tiểu khu ngoại văn hóa công viên tiểu kịch trường, Diêu Bạch lái xe đưa Triệu Diệu đến tiểu khu sau ngừng xe, đỡ Triệu Diệu ngồi ở trên xe lăn sau lại đưa cho hắn một cái khẩu trang.</p>
+<p>Diêu Bạch đã toàn bộ võ trang, liền sợ ở cái này trường hợp gặp được mẹ nó, “Ca, ngươi nhưng đáp ứng ta, nếu là gặp được Diêu nữ sĩ, chúng ta quay đầu liền đi.”</p>
+<p>Triệu Diệu gật đầu, việc này vốn dĩ liền không phải hắn có thể chủ ý, rốt cuộc đẩy xe lăn người là Diêu Bạch.</p>
+<p>Tương thân đại hội quả nhiên náo nhiệt, làm mai mối các bác gái sớm liền đem ghế dựa dọn xong, một bàn hai ghế còn xứng đóa hoa hồng, đã sớm đem tiểu khu ngoại che nắng văn hóa tiểu kịch trường chiếm được tràn đầy. Văn hóa tiểu kịch trường chung quanh cây cối san sát, cao lớn rừng cây xứng với che nắng lều, đem chỗ cao ánh nắng che hơn phân nửa. Diêu Bạch vốn dĩ cho rằng trường hợp này tới người trẻ tuổi hẳn là rất ít, lại không nghĩ rằng cùng Triệu Diệu hai người mới vừa tiến kịch trường cửa thời điểm, liền nhìn đến không ít người trẻ tuổi ngồi ở bên trong.</p>
+<p>Nghe nói lo lắng lần này tới người trẻ tuổi không nhiều lắm, lần này tương thân đại hội còn liên hợp phụ cận mấy cái tiểu khu nhiệt tâm thị dân, này liếc mắt một cái nhìn lại tiểu kịch trường bày ít nhất 30 tới bàn.</p>
+<p>“Kêu ngươi tới ngươi không tới, chờ ngươi 27-28 còn muốn gả đi ra ngoài?” Trung niên nữ nhân thanh âm cũng không tiểu, còn cùng với nàng nữ nhi kháng nghị thanh.</p>
+<p>Đại khuê nữ khóc không ra nước mắt “Mẹ, tự do yêu đương hiểu không? Ta mới vừa tốt nghiệp đại học thật không vội.”</p>
+<p>Trung niên nữ nhân trung khí mười phần “Ngươi không vội ta cấp, chúng ta liền tới nhìn xem, nếu là gặp được tốt liền đi lên tâm sự biết không?”</p>
+<p>“Hiện tại người trẻ tuổi thật khó, tự do yêu đương kinh tế độc lập chính là thiên phương dạ đàm, còn không có triển vọng tương lai liền phải bị bức đối mặt phần mộ.” Diêu Bạch ở Triệu Diệu bên người không tiếng động thở dài, “Quá thảm, ta nếu là về nhà trụ, phỏng chừng cũng bị ta mẹ như vậy lôi ra tới.” Mẹ nó chính là tiểu khu tương thân giác thường trú quản lý viên, khác không được, liền đối việc này thập phần ham thích.</p>
+<p>Trung niên nữ nhân trải qua kịch trường cửa nhìn đến Diêu Bạch cùng Triệu Diệu tức khắc dừng thanh, rồi sau đó nhỏ giọng cùng nhà mình khuê nữ nói “Nhìn thấy không, kia tuổi trẻ tiểu hỏa què chân đều tới, ngươi nhìn ngươi tương cái thân đều phải mẹ ngươi mang ngươi ra cửa.”</p>
+<p>Diêu Bạch “……”</p>
+<p>Triệu Diệu “……”</p>
+<p>Tác giả có lời muốn nói Lão Bùi Tương thân sao?</p>
+<p>Diệu ca Tương thân? Muốn nhìn xem.</p>
+<p>Diêu Bạch ???</p>
+<p>……….</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong9.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong11.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "man-cap-dai-lao-chi-di-su-nghiep-tuyen";
+const NOVEL_TITLE = "Mãn cấp đại lão chỉ đi sự nghiệp tuyến";
+const CHAPTER_TITLE = "Chương 10";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

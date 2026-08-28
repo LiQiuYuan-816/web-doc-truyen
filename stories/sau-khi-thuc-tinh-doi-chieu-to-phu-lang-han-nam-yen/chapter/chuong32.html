@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 32 ngẫu nhiên gặp được cố nhân</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Sau khi thức tỉnh đối chiếu tổ phu lang hắn nằm yên
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 32 ngẫu nhiên gặp được cố nhân</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong31.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong33.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Lục Tùy gia thân thích không tính nhiều, đi đến tháng giêng sơ mười đã đi được không sai biệt lắm.</p>
+<p>Tuy nói không quá tháng giêng đều là năm, nhưng người nhà quê, đặc biệt là phương nam người, ra tết Nguyên Tiêu lập tức liền phải nghênh đón nước mưa, kỳ thật đã muốn bắt đầu chuẩn bị cày bừa vụ xuân ngày mùa.</p>
+<p>Lục Tùy cùng Hạ Thanh Khê một đạo đi trấn trên làm tám ngày công, bởi vì mấy ngày liền trời mưa, lại đình công.</p>
+<p>Một ngày này, bên ngoài rơi xuống mao mao mưa nhỏ, xuân hàn se lạnh, vẫn là lúc ấm lúc lạnh thời điểm, Hạ Thanh Đào cũng không dám đại ý, vẫn là ăn mặc áo bông, hắn cùng Vân Nương ở nhà chính làm thêu sống, Lục Tùy tắc ngồi ở trên ngạch cửa xoa giày rơm —— chờ muốn cày bừa vụ xuân khi, không thiếu được muốn xuyên giày rơm, khi đó hai ba thiên liền xuyên hư một đôi, hiện tại đến nhiều làm mấy song.</p>
+<p>“Ca!” Lục Diêm ăn mặc áo tơi vội vàng chạy vào, đến mái hiên hạ, biên nói chuyện biên thoát áo tơi, “Mẹ a tẩu!”</p>
+<p>“Đi nơi nào, như thế nào mới trở về?” Vân Nương có chút ghét bỏ hắn mang tiến vào một thân hơi nước, “Áo tơi quải bên cạnh đi, miễn cho dính ướt ngươi ca mới làm giày rơm.”</p>
+<p>“A Mậu cùng ta nói hắn cữu cữu gia cẩu sinh mấy chỉ chó con, ta xem chó con đi.” Lục Diêm đem áo tơi quải hảo, tiếp nhận Hạ Thanh Đào đưa qua làm khăn vải, trên vai lau lau, biên hưng phấn nói, “Hắn cữu cữu gia chó cái cũng là điều lang thanh, nhưng tráng, nha so đại môn còn trường, ca ngươi lần trước không phải nói muốn lại dưỡng một con cẩu sao, ta xem kia mấy chỉ liền rất hảo.”</p>
+<p>“Thật sự?” Lục Tùy ngẩng đầu.</p>
+<p>“Tự nhiên thật sự.” Lục Diêm cũng ở trên ngạch cửa ngồi xuống, nhìn xem Hạ Thanh Đào, nhìn xem chính mình ca ca, “A Mậu cữu cữu nói chờ cai sữa là có thể bắt, ca ngươi nếu là muốn, hắn chỉ cần 60 văn!”</p>
+<p>Lục Tùy nghe vậy, trầm mặc trong chốc lát, quay đầu đối Vân Nương cùng Hạ Thanh Đào nói</p>
+<p>“Ta là cố ý hướng lại dưỡng một con, đến lúc đó ta mang trên cửa lớn sơn, liền không cẩu giữ nhà.”</p>
+<p>Đặc biệt là Hạ Thanh Đào, tuy rằng ở nhà mình trong thôn, nhưng không cẩu đi theo, hắn không yên tâm.</p>
+<p>“Vậy đi bắt một con tới.” Vân Nương cũng nói, “Cũng không quý.”</p>
+<p>Hạ Thanh Đào thực cảm thấy hứng thú, đôi mắt lượng lượng “Đến lúc đó ta và ngươi cùng đi?”</p>
+<p>Lục Tùy nói “Hảo.”</p>
+<p>Lục Diêm thấy thế, ở một bên cười nói “Đúng rồi, còn chưa nói đâu, A Mậu cữu cữu trụ Lý ổ, cái kia Lý Tú Trân liền trụ kia, a ca ngươi đi nhưng đừng bị nàng nhìn thấy!”</p>
+<p>Hạ Thanh Đào nghe vậy, cũng cười “Kia không bằng làm ngươi ca che mặt thượng, miễn cho người nhìn thấy.”</p>
+<p>Lục Tùy biết hắn ở trêu ghẹo chính mình, cũng cười.</p>
+<p>Nhưng thật ra Vân Nương nói “Lần trước gặp phải Thúy Phân, nàng nói nàng ca ca gia biết việc này, đem nữ nhi hảo hảo huấn một đốn, nói vậy sẽ không lại tùy tiện ra tới.”</p>
+<p>Hạ Thanh Đào chỉ là cười.</p>
+<p>Hắn tưởng, chẳng sợ Lý Tú Trân còn tưởng dây dưa, kia cũng sẽ không như vậy xảo, liền đi như vậy một hồi liền gặp được đi?</p>
+<p>Liền hạ ba ngày mưa nhỏ, ven đường trong đất thảo nhưng thật ra đều nảy mầm, cây cải dầu cùng lúa mạch non cũng đều càng tráng. Tháng giêng hai mươi ngày liền tình, Lục Tùy lại đi trấn trên liền làm cửu thiên công, đuổi ở lại một lần trời mưa trước làm xong.</p>
+<p>Đợi mưa tạnh, Lục Tùy cùng Hạ Thanh Đào liền cùng đi Lý ổ bắt chó con. Đi ở đi hướng Lý ổ trên đường, hô hấp sau cơn mưa tươi mát lại mang điểm lạnh lẽo không khí, ven đường ngoài ruộng đã có hán tử ở trúc bờ ruộng, kéo ống quần, cẳng chân thượng tràn đầy lầy lội.</p>
+<p>“Thời tiết này trúc bờ ruộng, mặt sau muốn lại trời mưa không phải sụp sao!” Hạ Thanh Đào cơ hồ không dưới điền, đối ngoài ruộng sự tự nhiên không thể so Lục Tùy.</p>
+<p>Lục Tùy thấy, nói “Liền hạ như vậy mấy ngày, hẳn là sẽ không lại hạ, tháng giêng nước mưa nhiều, năm ngoại liền ít đi.”</p>
+<p>“Nga, như vậy nha.” Hạ Thanh Đào nghĩ cái gì, ngửa đầu nhìn về phía bên người cao lớn hán tử, hỏi, “Nhà chúng ta ít người, đến lúc đó làm mẹ ở nhà nấu cơm, ta và ngươi cùng đi ngoài ruộng đi?”</p>
+<p>Hắn rốt cuộc tuổi trẻ, khẳng định so Vân Nương hữu lực, nói nữa, cưới tân phu lang còn làm bà bà hạ điền, bị người nhìn thấy giống cái gì.</p>
+<p>Lục Tùy trên mặt bình đạm, thái độ lại là thực kiên định</p>
+<p>“Không cần, hiện giờ A Diêm cũng lớn, chúng ta hai anh em hai cái sức lao động vậy là đủ rồi, vội thời điểm làm mẹ giúp đỡ liền hảo.”</p>
+<p>Hạ Thanh Đào tuy là làm việc nhà một phen hảo thủ, nhưng đôi tay như cũ trắng nõn non mịn, hắn đều tưởng tượng không đến hạ điền về sau hắn tay đến tháo thành cái dạng gì. Huống chi hắn không xuất giá trước liền cũng không hạ điền, hắn không nghĩ làm hắn xuất giá chịu khổ chịu nhọc.</p>
+<p>Hạ Thanh Đào muốn nói cái gì, Lục Tùy quay đầu xem hắn</p>
+<p>“Ngươi sẽ cấy mạ sao?”</p>
+<p>Hạ Thanh Đào ……</p>
+<p>Hắn thật đúng là sẽ không.</p>
+<p>Một cái nông gia ca nhi, cư nhiên liền cấy mạ đều không biết, nói ra cũng có chút mất mặt.</p>
+<p>Hắn đỏ mặt dời đi ánh mắt “Ta có thể học…… Ai sinh ra liền sẽ a.”</p>
+<p>Lục Tùy thấy hắn bộ dáng này, đáy mắt rơi xuống ý cười</p>
+<p>“Không cần học, ta nói.”</p>
+<p>Hạ Thanh Đào lấy hắn không có biện pháp, bất chấp tất cả nói “Không học liền tính, ngươi đến lúc đó nhưng đừng nơi nơi nói ta lười.”</p>
+<p>Lục Tùy không nói chuyện, cười nhéo nhéo hắn tay.</p>
+<p>Hai người dọc theo đại lộ đi rồi trong chốc lát, vòng qua một tòa tiểu sơn, nhân gia dần dần nhiều lên, này Lý ổ bốn phía đều là sơn, trung gian thấp, ở rất nhiều họ Lý nhân gia, bởi vậy được gọi là Lý ổ.</p>
+<p>Ở cửa thôn hỏi một cái mang nón cói A Công, đã biết A Mậu cữu cữu gia ở Tây Bắc biên, hai người liền tiếp tục hướng trong đi, đi tới đi tới, đi ngang qua một hộ nhà, này hộ nhân gia náo nhiệt thật sự, liền chung quanh hàng xóm đều sôi nổi thăm dò nghỉ chân quan khán, Hạ Thanh Đào từ trước đến nay ái xem náo nhiệt, không khỏi cũng lôi kéo Lục Tùy dừng lại xem động tĩnh.</p>
+<p>Nguyên lai là mẹ chồng nàng dâu hai ở cãi nhau, con dâu biên gào biên mắng</p>
+<p>“Sát ngàn đao nương hai, các ngươi ăn mặc chi phí cái nào không phải ta ra, hiện giờ bắt đầu tr·a t·ấ·n ta…… Chờ ta một hơi thượng không tới, liền chờ dùng ta của hồi môn tiêu dao sung sướng a! Ô ô ô ta không sống……”</p>
+<p>Con dâu này rõ ràng chính là gào khan, nghe không ra một tia khó chịu.</p>
+<p>Bên kia bà bà ước chừng là đứng ở cửa, thanh âm càng vang chút</p>
+<p>“Nhà ai quy củ, bà bà tại đây nói chuyện, tức phụ nhi ở kia hô to gọi nhỏ! Nhà ngươi bất quá có tiền chút, ngươi tả hữu bất quá là cái thương hộ gia nữ nhi, đối với con ta quát mắng hô to gọi nhỏ, làm hắn như thế nào yên tĩnh đọc sách! Cả ngày cũng không làm việc, trong nhà đó là núi vàng núi bạc, này mấy tháng cũng bị ngươi sử xong dùng xong rồi, ngươi như thế nào không biết xấu hổ nói!”</p>
+<p>Này bà bà cũng hung, trung khí mười phần, xem ra mẹ chồng nàng dâu hai thật là gặp gỡ đối thủ tốt.</p>
+<p>Bên cạnh hàng xóm dựa gần viện môn ăn dưa hấu tử, nghe thanh âm còn hì hì cười, đối với một cái khác hàng xóm nói</p>
+<p>“Ba ngày hai đầu cãi nhau, đến bây giờ còn không có phân ra thắng bại tới.”</p>
+<p>Một cái khác cũng cười trộm “Phía trước không phải từng ngày thổi con dâu mang đến nhiều ít của hồi môn sao, còn nói con dâu từ nhỏ là cái đọc sách hiền đức, so với phía trước tương xem ca nhi không biết hảo ra nhiều ít đi, ai biết hiện tại mỗi ngày chịu con dâu khí, nhi tử bị con dâu quản thúc, cũng không hướng về nàng……”</p>
+<p>Bên kia con dâu còn đang mắng</p>
+<p>“Ngươi cái này lão bất tử, ngươi như thế nào không làm việc! Cưới cái con dâu đương lừa sai sử không thành! Ngươi hôm nay còn dám cùng ta kêu to, ta cùng ngươi nhi tử liều mạng, đã ch·ế·t xong hết mọi chuyện!”</p>
+<p>Sau đó liền nghe thấy vang dội “Bang” một tiếng, trong nhà hảo một trận động tĩnh, kia bà bà liền khóc lên</p>
+<p>“Ai da ta phu a, không có thiên lý…… Người đàn bà đanh đá đánh phu quân…… Con ta chính là tú tài a……”</p>
+<p>Hạ Thanh Đào còn đang xem náo nhiệt, nghĩ thầm như thế nào nhà này cũng có cái tú tài, hiện giờ tú tài thật nhiều, còn không có phục hồi tinh thần lại, chợt thấy người nọ trong nhà ra tới một cái xuyên áo dài mảnh khảnh văn nhược hán tử, trên mặt thình lình ấn ngón tay ấn, lại tập trung nhìn vào, này không phải Lý tú tài sao?</p>
+<p>Lý tú tài kinh hoảng trốn đi, vốn là lấy ống tay áo che mặt, có thể đi đến giao lộ, lại thấy một đôi tuổi trẻ phu thê đứng ở kia —— hắn cũng nhận ra Hạ Thanh Đào, trong lúc nhất thời dừng bước, tay áo cũng quên giơ, có chút ngây ra mà nhìn Hạ Thanh Đào, trong miệng kêu lên</p>
+<p>“Thanh Đào……”</p>
+<p>Hạ Thanh Đào không dự đoán được sự tình chính là như vậy xảo, không đụng tới Lý Tú Trân, nhưng thật ra gặp phải Lý tú tài, lập tức ngượng ngùng mà cười nói</p>
+<p>“Ta cùng ta phu quân tới các ngươi thôn bắt chó con, đi ngang qua nơi này……”</p>
+<p>Lục Tùy nhìn Lý tú tài, ánh mắt hàng độ ấm, duỗi tay nắm lấy Hạ Thanh Đào thủ đoạn</p>
+<p>“Đi thôi, Thanh Đào.”</p>
+<p>“Ai.” Hạ Thanh Đào chạy nhanh chạy lấy người, “Chúng ta đi trước, gặp lại.”</p>
+<p>Lý tú tài liền như vậy ngơ ngẩn mà nhìn hắn cùng Lục Tùy thân ảnh đi xa, hắn còn thấy Hạ Thanh Đào vẻ mặt ý cười mà ngẩng đầu cùng Lục Tùy nói chuyện, hai người nhỏ giọng nói nhỏ, ân ái mặn nồng.</p>
+<p>Vốn dĩ Hạ Thanh Đào hẳn là hắn phu lang.</p>
+<p>Tương xem trước, bà mối nói Hạ gia thực vừa lòng, Hạ Thanh Đào cũng thực vừa ý hắn, tương xem thời điểm, hắn cũng liếc mắt một cái liền nhìn trúng Hạ Thanh Đào, Hạ Thanh Đào làn da bạch, dáng người hảo, hoạt bát có thể làm, nhưng tính tình nhu thuận, tuy rằng không như vậy xinh đẹp, nhưng này đó ưu điểm đủ để đền bù.</p>
+<p>Chính là không biết vì cái gì, tương xem sau, Hạ Thanh Đào lại không vừa ý hắn. Mặc dù hắn là tú tài, nhà hắn nguyện ý cấp đủ sính lễ, Hạ Thanh Đào cũng không muốn.</p>
+<p>Hắn không biết là nơi nào xảy ra vấn đề, nhưng nhân gia không muốn, cho dù hắn lại vừa ý cũng không thể cưỡng cầu, chỉ có thể từ hắn mẫu thân cho hắn cưới trấn trên tiệm gạo lão bản gia nữ nhi, nhân gia trấn trên có mặt tiền cửa hàng, của hồi môn còn thực phong phú, hắn mẹ nói, cái này so Hạ Thanh Đào cường gấp trăm lần, huống chi chỉ cần hắn có thể thi đậu cử nhân, về sau còn có thể nạp thiếp, cái gì nữ tử ca nhi nếu không đến.</p>
+<p>Nhưng ai biết, cưới tới, lại là cái dạng này người đàn bà đanh đá.</p>
+<p>Này người đàn bà đanh đá căn bản không làm việc, còn thường xuyên cùng hắn mẹ cãi nhau cãi nhau, nháo đến trong nhà gà bay chó sủa, làm hắn căn bản vô tâm đọc sách, cũng không biết năm nay tám tháng thi hương còn có hay không hy vọng.</p>
+<p>Sự tình như thế nào sẽ biến thành như vậy.</p>
+<p>“Lý nguyên, ngươi đừng chạy, ngươi dám chạy, ta đánh ch·ế·t cái kia lão bất tử!”</p>
+<p>Phía sau truyền đến nữ tử tiếng gầm gừ, Lý tú tài lại đột nhiên nổi giận, xoay người nói</p>
+<p>“Ngươi kêu cái gì! Còn chưa đủ mất mặt sao!”</p>
+<p>“Ngươi dám rống ta, ngươi rõ ràng là khi dễ ta, ta phải về nhà mẹ đẻ đi…… Ta muốn kêu ta ca tới đánh ngươi!”</p>
+<p>Hoa 60 văn, Hạ Thanh Đào cùng Lục Tùy tóm được một con chó con về nhà.</p>
+<p>Này chỉ chó con rất là hung, thấy người sống liền nằm ở trên mặt đất ô ô kêu, thân mình thịt cuồn cuộn, vừa thấy liền biết bởi vì hung ác bá đạo ăn nhiều chó cái nãi.</p>
+<p>Hạ Thanh Đào cảm thấy nó đáng yêu nhất, đen lúng liếng mắt tròn xoe, trên đầu còn có một dúm hắc mao, cho nên liếc mắt một cái liền định ra nó.</p>
+<p>Ra tới về nhà trên đường, Lục Tùy nói</p>
+<p>“Ngươi cho nó lấy cái tên đi.”</p>
+<p>Hạ Thanh Đào nghĩ nghĩ nói “Các ngươi như thế nào cấp đại môn lấy tên này?”</p>
+<p>Lục Tùy lại nói “Không có, nó vốn dĩ kêu ‘ đại mãnh ’, ta mẹ tưởng ‘ đại môn ’, liền vẫn luôn như vậy kêu, sau lại cảm thấy đại môn cũng rất thuận miệng, liền kêu cái này.”</p>
+<p>Hạ Thanh Đào cười ra tiếng “Kia đích xác vẫn là kêu đại môn tương đối thuận miệng.”</p>
+<p>Lại giơ tay chọc chọc bị Lục Tùy cất vào bao tải bối ở bối thượng chó con, nói</p>
+<p>“Hắn trên đầu có dúm hắc mao, không bằng liền kêu tiểu hắc đi, tiện danh hảo nuôi sống.”</p>
+<p>“Hảo.” Lục Tùy nói, “Đều nghe ngươi.”</p>
+<p>Đi rồi một đoạn, Hạ Thanh Đào thấy Lục Tùy giống như có cái gì tâm sự, nhịn không được hỏi</p>
+<p>“Ngươi có phải hay không tò mò vừa mới người kia là ai?”</p>
+<p>Lục Tùy nhìn về phía hắn “Có một chút.”</p>
+<p>Chỉ có một chút sao? Hạ Thanh Đào buồn cười.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong31.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong33.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "sau-khi-thuc-tinh-doi-chieu-to-phu-lang-han-nam-yen";
+const NOVEL_TITLE = "Sau khi thức tỉnh đối chiếu tổ phu lang hắn nằm yên";
+const CHAPTER_TITLE = "Chương 32 ngẫu nhiên gặp được cố nhân";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

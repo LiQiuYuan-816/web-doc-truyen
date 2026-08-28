@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 12 thay đổi người</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Xuyên thành bạc tình thư sinh lang
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 12 thay đổi người</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong11.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong13.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Đêm qua trời mưa thật sự hung, lại là quát phong, đem đồng ruộng hoa màu đều áp cong eo, lộn xộn một mảnh, này còn không phải tệ nhất, tệ nhất chính là Liễu Ứng Cừ một giấc tỉnh lại, trong phòng giọt nước, hắn ngẩng đầu là có thể thấy mái hiên hạ ở tích thủy, tích ở hắn trong phòng.</p>
+<p>Liễu Ứng Cừ “……”</p>
+<p>Sinh hoạt là cỡ nào gian nan.</p>
+<p>Liễu Ứng Cừ đắp lên chăn, run bần bật.</p>
+<p>Ăn cơm sáng thời điểm, bên ngoài người đã đang nói nhàn thoại, Liễu Ứng Cừ ăn màn thầu “Nương, gạo tẻ như thế nào còn thừa nhiều như vậy, ta không ở thời điểm ngươi cùng Vân Nguyện cũng muốn ăn.”</p>
+<p>“Ta đã biết, trong nhà kinh tế đình trệ, ngươi đợi lát nữa ăn xong rồi đi đọc sách, nương xuống ruộng bài thủy.” Đàm đại nương cười nói “Đợi lát nữa Vân Nguyện nhớ rõ cho ta đưa cơm, ta giữa trưa liền không trở lại.”</p>
+<p>Liễu Ứng Cừ hỏi “Năm nay thu hoạch thế nào?”</p>
+<p>“So với năm rồi kém một ít, ông trời âm tình bất định.” Đàm đại nương nói đến hoa màu vẫn là có chút môn đạo “Có khi vũ nhiều, có khi vũ thiếu, hoa màu không thật dài.”</p>
+<p>“Đàm đại nương, đi lên sườn núi.” Một cái giọng nữ hô.</p>
+<p>“Ứng Cừ, Vân Nguyện, ta đi trước.” Đàm đại nương cầm một cái bạch diện màn thầu, cấp vội vàng đi rồi.</p>
+<p>“Ngươi còn ăn bạch diện màn thầu.” Vạn thẩm hâm mộ nói.</p>
+<p>“Ứng Cừ đã trở lại, ăn chút tốt.” Đàm đại nương cười ha hả.</p>
+<p>Vạn thẩm “Nhà ngươi Ứng Cừ thay đổi không ít, tối hôm qua không phải hạ thật lớn vũ, hắn còn hảo tâm đem Vương thẩm đưa về gia, cùng làm một chiếc xe bò chu tiểu hoa liền không như vậy may mắn, đen thùi lùi đem chân cấp té bị thương.”</p>
+<p>Đàm đại nương “Đều là một cái thôn, hỗ trợ lẫn nhau, chính là Ứng Cừ thân thể mới hảo liền gặp mưa, có điểm đau lòng.”</p>
+<p>Vạn thẩm “Nương nào có không đau lòng nhi tử.”</p>
+<p>“Nhà các ngươi Ứng Cừ còn hảo, nào có cửa thôn Lý gia kia khẩu tử, thật còn liền một ngày chỉ biết đi theo trên đường lưu manh.” Vạn thẩm phi một tiếng “Đem nhà bọn họ liên lụy đã ch·ế·t, còn say rượu, uống xong liền đánh trong nhà ca nhi.”</p>
+<p>Đàm đại nương nghĩ thầm, nhà nàng Ứng Cừ nhưng không có kia hư thói quen.</p>
+<p>Vạn thẩm thấy Đàm đại nương cũng không phụ họa nàng, nàng cũng thói quen Đàm đại nương tính tình, nói xong nhà người khác nhàn thoại, Vạn thẩm trong lòng đã thỏa mãn.</p>
+<p>Liễu Ứng Cừ ở nhà hỗ trợ thu thập chén đũa “Vân Nguyện, trong nhà còn có mái ngói không?”</p>
+<p>Liễu Vân Nguyện chính rửa chén, nghe vậy ngẩng đầu lên “Không có, gần nhất không có gì mưa to, trong phòng giữa trưa liền làm, cũng không cần lo lắng.”</p>
+<p>Liễu Ứng Cừ vẫn là đem cái này để ở trong lòng.</p>
+<p>“Ca, ngươi vẫn là đi đọc sách đi, ta chính mình tới làm.” Liễu Vân Nguyện vẫn là không nghĩ chậm trễ Liễu Ứng Cừ đọc sách.</p>
+<p>“Không có việc gì, chậm trễ không được cái gì công phu.” Liễu Ứng Cừ đem chén bỏ vào tủ chén, lại cùng Liễu Vân Nguyện cùng nhau đem chuồng gà gà uy gà thực.</p>
+<p>Liễu Vân Nguyện nhìn gà con đi theo gà mái phía sau, trên mặt có tươi cười “Chờ tiểu kê trưởng thành, liền có thể đi trấn trên bán trứng.”</p>
+<p>Liễu Ứng Cừ biết nơi này gà con còn muốn chút thời gian, Liễu Ứng Cừ biết thanh tuyền trong thôn có một mảnh sau núi, hắn tưởng đọc sẽ thư đến sau núi thử thời vận.</p>
+<p>Liễu Vân Nguyện cõng sọt, lấy bình nước từ trong phòng bếp trang thủy, Liễu Ứng Cừ thấy thế “Thủy là thiêu khai thủy sao?”</p>
+<p>“Không phải.” Củi lửa cũng không thể như vậy lãng phí.</p>
+<p>Liễu Ứng Cừ cường ngạnh nói “Cần thiết uống thiêu khai thủy, bằng không sẽ có sinh bệnh khả năng.” Thấy Liễu Vân Nguyện không tin ánh mắt, Liễu Ứng Cừ tiếp tục nói “Đây là phu tử nói.”</p>
+<p>“Kia ta thiêu khai lại đi.” Liễu Vân Nguyện có chút sợ hãi, hiện tại sinh bệnh sau không hảo trị, muốn dùng nhiều tiền, không chuẩn còn sẽ lưu lại bệnh căn.</p>
+<p>Chờ Liễu Vân Nguyện đi rồi, Liễu Ứng Cừ mở ra sách vở, nhìn nửa giờ liền có chút mệt mỏi, hắn mí mắt ở hôn môi.</p>
+<p>Hắn phô khai một trương giấy, đóng lại sách vở, đem chính mình xem nội dung có thể nhớ kỹ viết chính tả xuống dưới, đem một trương giấy viết đến rậm rạp.</p>
+<p>Nửa giờ chính là hắn tốt nhất đọc sách thời gian, Liễu Ứng Cừ tìm một cái sọt, cầm một phen tiểu cái cuốc.</p>
+<p>Sau núi thượng người không nhiều lắm, Liễu Ứng Cừ đem ướt át bụi cỏ lột ra, thấy nấm, vừa lúc là thiên tình sau, nấm ngoi đầu không ít, nhặt một ít bỏ vào sọt.</p>
+<p>“Nơi này hẳn là sẽ có thảo dược đi.” Liễu Ứng Cừ nói, hắn cũng không thế nào nhận thức thảo dược, nhưng mấy cái quen thuộc vẫn là có thể nhận thức.</p>
+<p>Liễu Ứng Cừ đột nhiên ánh mắt sáng lên, cong lưng lấy tiểu cái cuốc đào vài cọng bình thường thảo dược.</p>
+<p>Này vài cọng dược thảo thanh nhiệt giải độc, có thể trị liệu yết hầu đau cùng cảm mạo, trước kia bọn họ đoàn đội đi núi sâu rừng già tìm kiếm di tích, trong đội có một người sinh bệnh, dược phẩm cũng xong rồi chính là dùng này đó thảo dược.</p>
+<p>Hắn bận việc nửa ngày, đào không ít, nhưng chân chính đáng giá vẫn là không nhìn thấy nhiều ít, bất quá cũng không sai biệt lắm, Liễu Ứng Cừ cõng sọt trở về đi.</p>
+<p>Hắn mới vừa đến gia môn, một cái ước chừng bốn năm tuổi tiểu nam hài liền kinh hỉ ngẩng đầu lên “Vân Nguyện ca ca!” Vừa thấy là Liễu Ứng Cừ mặt liền suy sụp xuống dưới.</p>
+<p>“Ngươi là nhà ai?” Liễu Ứng Cừ đem cửa mở ra, từ trong phòng cầm bánh đậu xanh cấp Lý Đông Đông ăn.</p>
+<p>“Ta là cửa thôn Lý gia.” Lý Đông Đông nuốt nước miếng, có chút đứng ngồi không yên “Ta không ăn.”</p>
+<p>“Vân Nguyện còn không có trở về, ngươi trước ngồi chờ, ăn đi, không ăn liền lãng phí, ta cũng không yêu ăn này đó.” Liễu Ứng Cừ cũng không tại đây ngồi sợ tiểu hài tử ước thúc, hắn đi trong viện xử lý nấm cùng thảo dược.</p>
+<p>Lý Đông Đông nhìn trong chốc lát, hương khí chui vào hắn chóp mũi, hắn vẫn là một cái tiểu hài tử, nhút nhát sợ sệt hỏi “Ứng Cừ ca ca, ta có thể ăn sao?”</p>
+<p>Thanh âm kia cùng miêu nhi giống nhau tiểu, nếu không phải Liễu Ứng Cừ còn để lại một phân chú ý ở bên kia bằng không liền nghe không thấy, hắn nói “Ăn đi.”</p>
+<p>Lý Đông Đông thở phào nhẹ nhõm, cũng không có nhiều khó thật cẩn thận cầm một khối điểm tâm.</p>
+<p>Ăn ngon thật.</p>
+<p>“Ngươi có thể giúp ta uy uy gà sao?” Liễu Ứng Cừ đứng lên thấy Lý Đông Đông vẫn luôn nhìn tiểu kê.</p>
+<p>“Hảo, ta nhất định hảo hảo uy gà.” Lý Đông Đông trong mắt sáng ngời, chạy ra tới cầm gà thực bắt đầu uy tiểu kê, lông xù xù hảo đáng yêu tiểu kê.</p>
+<p>Ứng Cừ ca ca cũng không giống phía trước như vậy chán ghét hắn.</p>
+<p>“Đông Đông, sao ngươi lại tới đây?” Liễu Vân Nguyện gấp trở về nấu cơm, thấy Lý Đông Đông trong lòng có chút cao hứng.</p>
+<p>Liễu Ứng Cừ tị hiềm đi chính mình nhà ở, không bao lâu liền nghe thấy được tiểu hài tử tiếng khóc, còn có Liễu Vân Nguyện tiếng mắng “Hắn đi huyện thành trộm đồ vật bị đánh gãy chân, trở về còn muốn bắt ngươi cùng Liễu đại ca hết giận, này gậy gộc như thế nào không đem hắn đánh ch·ế·t đâu!”</p>
+<p>Liễu Ứng Cừ “……”</p>
+<p>“Thiên giết, ngươi còn như vậy tiểu, hắn cũng hạ thủ được!” Liễu Vân Nguyện thấy Lý Đông Đông cánh tay phía trên xanh tím, đau lòng hỏng rồi.</p>
+<p>Chờ Liễu Ứng Cừ ra tới ăn cơm thời điểm, Lý Đông Đông đã không thấy, Liễu Vân Nguyện vẫn là tức giận bất bình “Này Lý Nghĩa quá không phải người, không chỉ là cái lưu manh còn đánh phu lang cùng hài tử, trước kia nếu là Liễu đại ca, hắn sớm bị đánh ch·ế·t!”</p>
+<p>Liễu Ứng Cừ không hé răng, hắn cũng biết chuyện này, cửa thôn Lý Nghĩa đi theo hỗn quậy với nhau, thường xuyên làm một ít trộm cắp sự, có một lần bị bắt được chủ nhân gia muốn đem hắn đánh tàn phế, còn muốn gặp quan.</p>
+<p>Hắn phu lang nghe thấy tin tức liền đĩnh bụng to đi cầu tình, chủ nhân gia vốn dĩ ở đánh Lý Nghĩa, kết quả hắn phu lang đi ngăn đón liền đem người hài tử đánh không có, chủ nhân gia chột dạ chuyện này liền không giải quyết được gì.</p>
+<p>“Liễu Dung đại ca quá đáng thương.” Liễu Vân Nguyện cũng không có cách nào, Liễu Dung đại ca lại không bằng lòng cùng Lý Nghĩa tách ra.</p>
+<p>“Vân Nguyện, các ngươi giống nhau là như thế nào kiếm tiền?” Liễu Ứng Cừ hỏi một cái ông nói gà bà nói vịt vấn đề.</p>
+<p>“Chúng ta ở nhà hỗ trợ trồng trọt, còn có thêu khăn đi trấn trên đi bán.”</p>
+<p>“Các ngươi sẽ dệt vải sao?” Liễu Ứng Cừ hỏi.</p>
+<p>“Ta không chạm qua.” Liễu Vân Nguyện quẫn bách nói.</p>
+<p>“Cuộc sống này muốn chính mình quá, không được liền đổi một cái, ta đi ngang qua Thanh Bình trấn thời điểm, thấy có nhân gia ở chiêu thêu phường người, bao ăn bao lấy, bạc có chút thiếu.” Liễu Ứng Cừ nói xong, đem đồ ăn đoan hảo “Ta đi cấp nương đưa cơm.”</p>
+<p>Liễu Vân Nguyện còn không kịp nói chuyện, Liễu Ứng Cừ cũng đã không thấy bóng người. Hắn cân nhắc Liễu Ứng Cừ nói, ánh mắt sáng lên.</p>
+<p>“Cửa thôn Lý Nghĩa lại đánh Liễu Dung, tạo nghiệt a, nếu không phải Lý Nghĩa nhìn lén Liễu Dung thân mình, Liễu Dung làm sao gả cho một cái lưu manh, làm hại Đông Đông cũng bị đánh.”</p>
+<p>“Cái này Lý Nghĩa, chúng ta đi khuyên hắn, còn muốn đem chúng ta cũng mắng một đốn, đánh Liễu Dung đánh đến ác hơn.”</p>
+<p>“Lý Nghĩa còn đem trong nhà tiền đều cầm đi, ta ngày hôm qua nhìn thoáng qua, Liễu Dung ăn mặc rách tung toé, chỉ có Đông Đông trên người còn có chút hảo vải dệt.”</p>
+<p>Liễu Ứng Cừ cầm cơm dọc theo đường đi liền nghe thấy này đó nhàn ngôn toái ngữ, hắn nhanh hơn nện bước.</p>
+<p>Đàm đại nương ở đồng ruộng lau mồ hôi, liếc mắt một cái liền thấy Liễu Ứng Cừ “Ứng Cừ, sao ngươi lại tới đây?”</p>
+<p>Liễu Ứng Cừ cười nói “Nương, ta tới cấp ngươi đưa cơm.”</p>
+<p>Lý gia</p>
+<p>“Liễu Dung! Liễu Dung! ch·ế·t đi đâu vậy! Ta đói bụng! Cơm đâu!” Lý Nghĩa che lại chân nằm ở trên giường có chút khó chịu, trên mặt có một đạo từ khóe mắt đến cằm đao sẹo, nhìn qua hung thần ác sát.</p>
+<p>Liễu Dung đứng ở trong phòng bếp bưng một chén nhiệt canh, xương gò má đột ra, sắc mặt tái nhợt, trên mặt thanh ngân đan xen, như là một trương cũ nát giấy, gió thổi qua hắn liền sẽ tiêu tán.</p>
+<p>Liễu Dung thần sắc lạnh nhạt bưng một chén nhiệt canh, lại từ trong phòng cầm một phen kéo.</p>
+<p>May mắn Đông Đông không có ở.</p>
+<p>“Tới.” Liễu Dung thanh âm thấp kém, nghe đi lên cùng bình thường không có gì hai dạng.</p>
+<p>“Lại là canh, ta không uống, ta muốn ăn thịt!” Lý Nghĩa phẫn nộ chụp bay Liễu Dung tay, nóng hầm hập canh dừng ở Liễu Dung mu bàn tay thượng, Liễu Dung cúi đầu thấy không rõ thần sắc, hắn nhàn nhạt nhìn Lý Nghĩa, tay phải thượng kéo run run.</p>
+<p>Đột nhiên ánh mắt nảy sinh ác độc, tiến lên một bước.</p>
+<p>“Liễu đại ca ngươi ở nhà sao?” Liễu Vân Nguyện la lớn.</p>
+<p>Liễu Dung trong lòng cũng không biết là tiếc nuối vẫn là cái gì, hắn không có đi quản Lý Nghĩa rống giận, đem kéo phóng hảo.</p>
+<p>“Liễu đại ca, ngươi không sao chứ, Lý Nghĩa thật không phải cái đồ vật!” Liễu Vân Nguyện bất mãn nói.</p>
+<p>Liễu Dung cười cười, cả người tử khí trầm trầm, Liễu Vân Nguyện lời này hắn nghe nhiều.</p>
+<p>“Đúng rồi, Liễu đại ca, ta nghe nói Thanh Bình trấn có một nhà thêu phường nhận người, ngươi trước kia cũng dùng quá dệt vải cơ, bên kia bao ăn bao lấy, chính là bạc có điểm thiếu.” Liễu Vân Nguyện còn đang nói cái gì, nhưng Liễu Dung đã nghe không rõ mặt khác, hắn nhắc tới một chút tinh thần, thần sắc hoảng hốt.</p>
+<p>Hắn có thể có này phân công, hắn là có thể mang theo Đông Đông hảo hảo sinh hoạt, hắn cũng không cần để ý Lý Nghĩa, hắn có thể đi trấn trên hảo hảo bắt đầu</p>
+<p>Liễu Dung đột nhiên hốc mắt có chút ướt át.</p>
+<p>Đồng ruộng xanh mướt một mảnh cây non, Đàm đại nương cơm nước xong.</p>
+<p>“Ứng Cừ, mau trở về đi thôi.” Đàm đại nương nói.</p>
+<p>Liễu Ứng Cừ cũng biết ở trồng trọt thượng hắn không có gì thiên phú, hắn cầm chén trở về đi, hắn ở Liễu Vân Nguyện hôm nay nói chuyện khi nghĩ tới nguyên tác trung một chút chi tiết nhỏ.</p>
+<p>【 “Nghe nói không, cửa thôn cái kia Liễu Dung đem hắn trượng phu giết ch·ế·t.” 】</p>
+<p>【 “Thật là đáng sợ, chém 130 đao, dùng kéo đâm thủng Lý Nghĩa yết hầu, bị trảo tiến trong nhà lao phán tử hình.” 】</p>
+<p>【 “Ngày thường nhìn qua ôn ôn nhu nhu bộ dáng, không nghĩ tới như vậy tàn nhẫn, không chuẩn Lý Nghĩa cũng nhìn ra tới này ca nhi tàn nhẫn kính, mới đem người đánh thành như vậy, chỉ là đáng thương Lý Đông Đông.” 】</p>
+<p>Liễu Ứng Cừ hái được ven đường một cây cỏ đuôi chó, cắn ở trong miệng.</p>
+<p>Thẩm Thanh Ngô lại bắt đầu tưởng hắn tình lang, hắn ngồi tưởng, nằm tưởng, nhìn thư cũng suy nghĩ. Thẩm phụ tìm tới tú tài có chút nghe không hiểu, hơn nữa hắn lập tức liền phải gả chồng, còn đang nghe khóa này không phải làm người chê cười sao?</p>
+<p>Hắn đem chuyện này cấp Thẩm phụ nói.</p>
+<p>Thẩm phụ cười hắn “Có ai muốn cưới ngươi?”</p>
+<p>Thẩm Thanh Ngô nói “Tổng hội có người.”</p>
+<p>Hắn lại không kém.</p>
+<p>“Thiếu xem chút thoại bản tử.” Thẩm phụ cười ha hả “Nếu là thực sự có người cưới ngươi, ta còn tưởng có cái Trạng Nguyên lang con rể đâu. Đúng rồi, tốt nhất là tam nguyên thi đậu cái loại này, kia mới lấy đến ra tay.”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong11.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong13.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "xuyen-thanh-bac-tinh-thu-sinh-lang";
+const NOVEL_TITLE = "Xuyên thành bạc tình thư sinh lang";
+const CHAPTER_TITLE = "Chương 12 thay đổi người";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

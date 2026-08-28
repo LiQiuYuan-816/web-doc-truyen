@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 41</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Mãn cấp đại lão chỉ đi sự nghiệp tuyến
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 41</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong40.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong42.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Tinh Thần Văn Hóa giải tán sắp tới, công ty bên trong đã xuất hiện bộ phận nhân sự điều động, tuy rằng bên ngoài còn không có truyền ra mấy tin tức này, nhưng Tinh Thần Văn Hóa bên trong người sớm đã biết Triệu thị tập đoàn đã không tính toán ở công ty đầu nhập quá nhiều tiền tài.</p>
+<p>Tập đoàn bên trong bình thường nhân sự điều động là chuyện thường, nhưng có cương vị có thể điều nhiệm đến mặt khác công ty tiếp tục nhậm chức, có công nhân lại gặp phải từ chức lại vào nghề lựa chọn. Gần nhất bởi vì bên trong giao tiếp vấn đề, Tinh Thần Văn Hóa ở vào tăng ca trạng thái.</p>
+<p>“Buổi sáng tổng công ty bên kia tựa hồ phái người tới?”</p>
+<p>“Đúng vậy, mấy ngày nay đều có, giống như chúng ta phó tổng muốn điều đi tổng công ty.”</p>
+<p>“Kỳ thật sớm biết rằng thì tốt rồi, phía trước nghệ sĩ quản lý đoàn đội trực tiếp đi Huy Hoa, sớm biết rằng ta cũng hỏi thăm hỏi thăm đi ăn máng khác qua đi, nghe nói bên kia hiện tại phúc lợi đều khá tốt.”</p>
+<p>“Người lãnh đạo trực tiếp là tam thiếu a! Này có thể không hảo sao? Đại thiếu đều trực tiếp đem chúng ta công ty tốt nhất quản lý đoàn đội đưa đi qua.”</p>
+<p>“Không biết đâu, chúng ta công ty không còn có mấy cái vương bài quản lý sao, bọn họ khẳng định cũng không cần lo lắng nhà tiếp theo, phỏng chừng đã tìm hảo.”</p>
+<p>“Các ngươi không biết sao? Ngày hôm qua chúng ta công ty bên trong giống như có cái tiểu khảo hạch, ta xem phó tổng đều gọi người qua đi nói chuyện.”</p>
+<p>“Nghe nói Huy Hoa giống như tới chúng ta công ty đào người!”</p>
+<p>Sao trời bên trong nhân tâm hoảng sợ, thời gian hồi phóng đến mấy ngày trước.</p>
+<p>Thân xuyên màu đen tây trang giỏi giang nữ bí thư đem văn kiện đặt lên bàn, “Đây là Boss ý tứ, phía trước đệ trình cấp tổng bộ danh sách đã đưa qua đi một phần, Tinh Thần Văn Hóa ở cương nhân viên có thể lựa chọn phương án tối ưu nhập chức. Ngoài ra này phân danh sách cũng chuyển phát một phần cấp Huy Hoa, Tinh Thần Văn Hóa có ưu tiên đề cử danh ngạch, trừ bỏ lựa chọn đi mặt khác công ty con, cũng có thể chờ Huy Hoa bên kia tới thông tri.”</p>
+<p>Phó tổng có điểm ngoài ý muốn “Huy Hoa còn thiếu người?”</p>
+<p>Hắn cẩn thận phiên phiên văn kiện, phát hiện Huy Hoa không ngừng là thiếu người, hơn nữa ẩn ẩn có mở rộng ban đầu quy mô dấu hiệu.</p>
+<p>Gần nhất Huy Hoa Văn Hóa thế càng ngày càng tốt, Tinh Thần phó tổng ở giới giải trí đãi lâu như vậy, cũng biết tình huống như thế nào đối người nào. Lúc trước Triệu tam thiếu từ tập đoàn đi ra ngoài thời điểm, rất nhiều người đều không xem trọng hắn, cảm thấy hắn là ở tự hủy tương lai, còn đầu một cái mắt thấy liền phải đóng cửa Huy Hoa công ty.</p>
+<p>Kết quả này vừa qua khỏi mấy tháng, Huy Hoa khởi tử hồi sinh, không chỉ có ở bá hạng mục tiền lời khả quan, hợp với bạc nhược nghệ sĩ mô khối cũng được đến phát triển. Tinh Thần phó tổng liền cảm thấy Tinh Thần Văn Hóa lên chỉ là vấn đề thời gian, vở kịch lớn còn ở nghỉ đông đương kỳ, tóm lại trở về huy hoàng là hai năm nay sự tình.</p>
+<p>Không chỉ có như thế, lấy Triệu tam thiếu ở tập đoàn nội hai năm biểu hiện, chỉ cần vị này có tâm nâng đỡ, Huy Hoa nhảy mà thành trong nghề đại bài công ty tuyệt đối không thành vấn đề. Nói thực ra nhìn thấy cái này phát triển, phó tổng cũng có chút ngo ngoe rục rịch, hắn mấy năm trước lựa chọn lại đây Tinh Thần Văn Hóa, kỳ thật cũng có chính mình khát vọng, chỉ tiếc Tinh Thần Văn Hóa vận hành hình thức cùng Triệu thị tập đoàn quá mức với giống nhau, chịu không nổi quy mô cải cách, bên trong thường dân cũng là nhiều, mỗi lần hắn muốn làm thật lớn biến động thời điểm đều đã chịu sao trời bộ phận cao tầng ngăn trở, thế cho nên đã nhiều năm xuống dưới cũng chưa cái gì khởi sắc.</p>
+<p>“Hảo, ta đã biết.” Phó tổng đem tại chức công nhân danh sách tìm ra tới, tổng công ty tuy rằng cho cơ hội có thể đi mặt khác công ty con công tác, nhưng là lưu tại Tinh Thần Văn Hóa không ít người vẫn là có điểm tình cảm ở, đột nhiên đổi công ty đổi ngành sản xuất cũng có không khoẻ ứng địa phương, hắn tính toán đem có ý nguyện tại đây ngành sản xuất công tác đi xuống người đề cử qua đi.</p>
+<p>Huy Hoa hiện tại thanh danh không kịp trong nghề công ty lớn, nhưng này chỉ là vấn đề thời gian, lấy như vậy điều kiện, Huy Hoa tiền cảnh không thể đo lường.</p>
+<p>Bí thư thấy phó tổng đã bắt đầu xem văn kiện, vì thế bổ sung câu “Huy Hoa Văn Hóa khoảng thời gian trước đi rồi không ít cao tầng, hiện tại lâm thời đáp khởi quản lý tầng cũng có không ổn địa phương, tam thiếu bên kia là cố ý tìm quản lý nhân viên.”</p>
+<p>Phó tổng ngoài ý muốn nhìn về phía bí thư.</p>
+<p>Bí thư nói “Đại thiếu làm ta cùng ngài nói, nếu ngài còn có ý nguyện ở cái này ngành sản xuất tiếp tục làm đi xuống, có thể suy xét đi Huy Hoa Văn Hóa phát triển. Hắn bên kia là duy trì ngài.”</p>
+<p>Phó tổng nghe được lời này trong lòng thập phần phức tạp, hắn biết đi tổng công ty sẽ có càng tốt phát triển, lại nề hà luôn có không bỏ xuống được khát vọng, đại thiếu cũng là biết điểm này mới có thể làm bí thư lại đây cố ý dặn dò.</p>
+<p>Hắn nhìn mở ra văn kiện, trong lòng ẩn ẩn làm cái quyết định.</p>
+<p>Đi tam thiếu thủ hạ làm việc sao?</p>
+<p>Giống như cũng không tồi.</p>
+<p>Hắn vĩnh viễn nhớ rõ một năm trước đi tổng công ty mở họp thời điểm, vừa lúc gặp công ty hội nghị quyết sách thảo luận tân hạng mục vận hành, tam thiếu như thế nào lấy sức của một người lưỡi biện quần hùng, cấp cái kia hạng mục tranh thủ ba tháng thời gian, trên thực tế tam thiếu cũng không làm không nắm chắc sự tình, cái kia hạng mục ở phía sau tới nhất cử nhảy lên, trở thành Triệu thị tập đoàn các đại hạng mục trung nhất cụ phát triển tiềm lực một cái.</p>
+<p>Nhưng nếu vô tam thiếu tranh thủ ba tháng, cũng liền không có cái này hạng mục tương lai.</p>
+<p>Tam thiếu tổng có thể tự tin quyết đoán mà làm lựa chọn, bao gồm cái kia hạng mục, cũng bao gồm dứt khoát kiên quyết rời đi tập đoàn.</p>
+<p>Huy Hoa Văn Hóa 《 Ly Mộng 》 hạng mục tổ người cuối tuần đang ở tăng ca, Diêu Bạch cuối tuần lâm thời có việc vô pháp lại đây công ty, hạng mục tổ người phụ trách Alexander mà nhìn chằm chằm các loại số liệu phập phồng. Thả ra tin tức account marketing là cùng Lục Tử Thạch phòng làm việc có quan hệ account marketing, Huy Hoa bên này không phí nhiều ít công phu liền tra xét ra tới.</p>
+<p>Lục Tử Thạch nếu làm chính mình quen thuộc account marketing tới phát loại này có chứa dẫn đường tính tin nóng bài PR, thực rõ ràng chính là hướng về phía 《 Ly Mộng 》 đoàn phim tới.</p>
+<p>Trong vòng số 8 [ hình ảnh ] về mỗ đoàn phim phát nam chính tin nóng cắt hình, mọi người xem xem có nghĩ này hình ảnh thượng người?</p>
+<p>【 ngọa tào, cái này giống như so với phía trước Lục Tử Thạch kia trương tạp chí đồ càng thật. 】</p>
+<p>【 mặt bộ hình dáng đều đối được, trong giới không cái thứ hai như vậy nam diễn viên đi? 】</p>
+<p>【 người này ai a? Thoạt nhìn có điểm quen mắt, nhưng là nghĩ không ra tên gọi là gì. 】</p>
+<p>【 ngọa tào này nhan giá trị so với Lục Tử Thạch cũng không kém hảo đi, như thế nào trong giới có cái này nhan người ta cũng chưa phát hiện? 】</p>
+<p>【 vừa mới đi tìm tòi thất đồ, phát hiện này diễn viên tên gọi Trương Tề, mấy năm trước diễn quá không ít phim truyền hình, duy nhất diễn quá điện ảnh giống như còn đạt được tốt nhất nam xứng đề danh……】</p>
+<p>【 thiệt hay giả? Ta xem gương mặt này ta như thế nào cảm thấy là bình hoa. 】</p>
+<p>【 nhan giá trị xác thật có điểm cao, hơn nữa kỹ thuật diễn phương diện này rất khó nói đi, hắn nếu là thật kỹ thuật diễn hảo mấy năm nay sẽ yên lặng vô danh?? 】</p>
+<p>【 không phải đâu, ta ban đầu còn tưởng rằng Triệu tổng cùng Bùi Bùi quan hệ hảo, cái này nam chính khả năng sẽ là Bùi Bùi tới diễn. 】</p>
+<p>【 đừng nghĩ, Bùi ảnh đế không thể nào tới loại này vốn ít kịch, chụp 《 Mê Ảnh 》 web drama cũng chỉ là còn nhân gia Trình đạo nhân tình mà thôi. 】</p>
+<p>【emmm ta đi trước nhìn xem này Trương Tề diễn kịch lại nói, muốn thật là cái bình hoa, còn không bằng thỉnh Lục Tử Thạch đâu……】</p>
+<p>Trương Tề từ mấy năm trước bị phong sát sau ở giới giải trí danh khí có thể nói xuống dốc không phanh, mấy năm trước hắn vẫn là chạm tay là bỏng nam diễn viên, đổi đến bây giờ người quen biết hắn càng ngày càng ít, nhưng cũng có bộ phận fans còn ở, chỉ là đối mặt loại này bị chú ý bầu không khí hạ các nàng không dám ra đây nói chuyện.</p>
+<p>【 phía trước nhìn đến official weibo phóng cắt hình thời điểm, ta liền có suy nghĩ tề ca……】</p>
+<p>【 ta cho rằng tề ca kết hôn sau sinh hoạt trọng tâm liền chuyển dời đến gia đình thượng, năm đó đại gia thoát phấn nháo đến ồn ào huyên náo, nhưng ta cảm thấy này cũng không gì hảo thoát phấn, tề ca lại không phải lưu lượng xuất thân…… Diễn viên liền không thể yêu đương sao? 】</p>
+<p>【 kỳ thật diễn 《 Ly Mộng 》 đối tề ca tới nói không quá thích hợp, cái này Ip hai năm nay đại bạo, chú ý thư phấn quá nhiều. Tề ca một tái nhậm chức liền diễn loại này cấp bậc IP, ta thật sợ hãi hắn bị mắng. 】</p>
+<p>【 đừng nói nữa đừng nói nữa, chúng ta an tĩnh một hồi, diễn cái gì nhân vật lại không phải chúng ta có thể quyết định, liền chờ mong phim chính đi. 】</p>
+<p>Trương Tề fans an tĩnh như gà, nhưng là lòng có không phục Lục Tử Thạch fans lập tức liền bắt đầu nhằm vào Trương Tề tác phẩm bắt đầu kén cá chọn canh, mặt ngoài khoác thư phấn da chú ý 《 Ly Mộng 》 nam chính, mà sau lưng lại kéo dẫm Trương Tề nói hắn kỹ thuật diễn không bằng Lục Tử Thạch.</p>
+<p>Mà lúc này 《 Ly Mộng 》 tiểu thuyết người ủng hộ đại V nhìn thấy này Lục Tử Thạch fans tao thao tác ——</p>
+<p>【 đừng nói, Trương Tề mấy năm trước hỏa thời điểm còn không có các ngươi Lục ca ca chuyện gì, tuy rằng hắn mấy năm nay không diễn kịch, nhưng là luận kỹ thuật diễn vẫn là ở Lục Tử Thạch phía trên, thả không bình phán 《 Ly Mộng 》 đoàn phim tính thế nào, nhưng các ngươi đừng khoác chúng ta thư phấn da đi người da đen, cái nồi này fan nguyên tác không bối. 】</p>
+<p>【 ha ha ha ha ta cười chết, IP sửa mấy năm nay đều có sự tình, nhưng là đi, chúng ta cũng không ghét cái ác như kẻ thù đến toàn diện phủ định. 】</p>
+<p>【 nếu có thể diễn xuất nguyên tác hiệu quả, ta cam bái hạ phong, cũng không biết này Trương Tề có thể hay không diễn xuất ta túc ly quang nam thần cái loại cảm giác này. 】</p>
+<p>【 nguyên tác túc ly quang bản thân chính là cái trải qua lang bạt kỳ hồ người, này đó không mấy năm nhân sinh lịch duyệt cùng mài giũa là rất khó diễn xuất tới. 】</p>
+<p>【 tuyển giác là đoàn phim sự, ta liền muốn hỏi các ngươi sẽ cải biên sao? Nếu ma sửa, mặc dù ta là Triệu tổng fans cũng sẽ dẫn theo đao tới cửa quyết chiến. 】</p>
+<p>Huy Hoa xã giao bộ đã sớm chuẩn bị sẵn sàng, IP cải biên này hạng nhất ở quốc nội mấy năm nay xác thật thực thường thấy, ban đầu vì thị trường hiệu quả bọn họ vốn là tưởng thêm một cái ái muội tuyến, sau lại điểm này bị Triệu tổng cùng Trần tổng phủ quyết, thậm chí vì làm nguyên tác hiệu quả tận khả năng hiện ra, bọn họ đoàn phim còn mời tới tiểu thuyết tác giả tới chỉ đạo, cho nên đương fans đề cập điểm này thời điểm bọn họ đã có dự bị phương án tới giải thích.</p>
+<p>Hạng mục người phụ trách nói “Tháng sau muốn chuẩn bị khởi động máy, diễn viên đội hình kỳ thật cũng định ra tới, Trương Tề dự bị tuyên truyền có thể chuẩn bị.”</p>
+<p>Này Trương Tề cũng là cái bom hẹn giờ, ban đầu đem hắn đào lại đây phế đi thật lớn tâm huyết, hắn đắc tội cái kia nhà tư sản hiện tại còn không có lên tiếng, nhưng tùy thời đều có khả năng tìm Huy Hoa phiền toái, cho nên bọn họ hiện tại đến trận địa sẵn sàng đón quân địch, miễn cho quan tuyên thời kỳ xuất hiện vấn đề lớn.</p>
+<p>“Chủ quản, Lục Tử Thạch sự xử lý như thế nào?” Nhân viên công tác khác hỏi.</p>
+<p>“Kia đương nhiên là không cần buông tha hắn.” Hạng mục người phụ trách gần nhất bởi vì Lục Tử Thạch không biết bỏ thêm bao nhiêu lần ban, chủ yếu hiện tại 《 Ly Mộng 》 khởi động máy sắp tới, bọn họ trạng huống rất là bị động, hơn nữa lại có ngoại giới áp lực đại, lựa chọn phương án càng là phải cẩn thận lại cẩn thận. “Chú ý trên mạng dư luận đi hướng, hỏi cải biên sự cũng có thể chọn mấy cái điểm trả lời, mấy ngày hôm trước cho các ngươi bắt được Lục Tử Thạch hắc liêu trước bị, quá hai ngày toàn tiếp đón còn hắn.”</p>
+<p>“Đúng rồi, trợ lý Diêu điện thoại đả thông không?” Người phụ trách hỏi.</p>
+<p>Đối ngoại liên lạc nhân viên công tác có điểm lúng túng nói “Diêu trợ nói hắn ở làm việc, làm chúng ta trước nhìn làm.”</p>
+<p>Diêu Bạch đúng là làm việc, hắn cùng lao ca hai người theo đuôi người vào công viên hải dương.</p>
+<p>Thành phố S công viên hải dương nội có rất nhiều phân quán, không thể so phía trước đi công viên trò chơi nho nhỏ hải dương phân quán, nó quy mô tương đối so công viên trò chơi phương tiện càng có vẻ toàn diện. Hiện tại thời gian lại ở cuối tuần, công viên hải dương các phân quán thập phần náo nhiệt, hơi có không chú ý liền dễ dàng cùng mất mặt.</p>
+<p>Diêu Bạch ngay từ đầu còn có rảnh lên mạng nói chuyện phiếm, kết quả nháy mắt hắn Diệu ca liền nhân ảnh cũng chưa, lúc này mới nóng vội bắt đầu tìm người. Cũng may người không đi xa, bọn họ hai cái liền đi đến cá heo biển quán phía sau chỗ ngồi kia thủ, nhìn hàng phía trước hai đỉnh hắc mũ, Diêu Bạch hỏi “Ta cảm giác cũng không gì vấn đề a, này một đường đi tới đều không có fans nhận ra bọn họ.”</p>
+<p>Lao ca nâng má cân nhắc “Còn sớm đâu, bọn họ hai cái liền tính ăn mặc rách nát đi ở trên đường tỉ lệ quay đầu cũng là nhất đỉnh nhất, không nhìn thấy bên trái vài cá nhân đều hướng bọn họ hai kia xem sao?”</p>
+<p>Hắn còn nhìn thấy có cái nam sinh cầm lấy di động chụp ảnh, “Hảo gia hỏa, nam nữ thông ăn a.”</p>
+<p>Diêu Bạch hỏi “Chúng ta muốn đi lên ngăn đón sao?”</p>
+<p>Lao ca thân kinh bách chiến, đối loại tình huống này đó là thấy nhiều, “Không có việc gì, góc độ này nhiều lắm chụp cái bóng dáng.”</p>
+<p>“Nói lên ta có chuyện này khá tò mò, Triệu tổng này đi công ty thời gian cũng rất ít, hắn cả ngày vội gì đâu?” Lao ca trong khoảng thời gian này cũng tưởng không rõ việc này, tuy rằng nói Bùi Minh Chiêm thái độ có điểm làm giận, nhưng là làm Bùi Minh Chiêm nhiều năm bằng hữu, vẫn là tưởng cho hắn chi hai cái chiêu, “Liền không điểm hứng thú yêu thích linh tinh?”</p>
+<p>Diêu Bạch nói “Có a, như thế nào không có.”</p>
+<p>Hắn bắt đầu đếm kỹ “Ta ca gần nhất đặc ái xem những cái đó luyến ái tổng nghệ, còn có thần tượng phim bộ.”</p>
+<p>Lao ca nghe xong tổng cảm thấy có điểm không quá đáng tin cậy, “Thật xem này đó?”</p>
+<p>Diêu Bạch liền biết nói ra không ai tin, “Như thế nào không phải? Ta ca vẫn là lý luận phái đâu.”</p>
+<p>Cá heo biển trong quán hôm nay vừa lúc có cá heo biển phổ cập khoa học giới thiệu, Bùi Minh Chiêm cùng Triệu Diệu ngồi vị trí dựa trước, chung quanh còn có không ít gia trưởng mang theo tiểu bằng hữu tới xem phổ cập khoa học. Ở Triệu Diệu công lược trung, công viên hải dương loại này triển quán ở tình lữ hẹn hò thánh địa trung cũng xếp hạng hàng đầu, tuy vô pháp lay động công viên trò chơi cùng rạp chiếu phim đỉnh vị trí, nhưng ở tình lữ đánh giá trung quảng chịu khen ngợi.</p>
+<p>“Kỳ quái.” Triệu Diệu nhìn tràng hạ nhân viên công tác đi lại, nghi hoặc nói “Ta xem công lược thượng viết cá heo biển quán là bồi dưỡng quan hệ hảo địa phương, nhưng là nhìn không ra tới nơi nào thích hợp……”</p>
+<p>Gần nhất cùng Bùi Minh Chiêm nói nhiều này một loại đề tài, hắn có nghi vấn cũng không cất giấu, liền trực tiếp nói ra.</p>
+<p>Bùi Minh Chiêm nói “Thấy thế nào không ra?”</p>
+<p>Triệu Diệu hồi tưởng hạ phim truyền hình diễn đến loại này cốt truyện thời điểm, nam nữ vai chính cảm xúc đều thực nhảy nhót, nhưng hắn lại không có thể cảm nhận được loại này cảm tình, “Các ngươi diễn viên diễn cảm tình diễn linh tinh sẽ gặp được loại này cảnh tượng sao? Ngươi là như thế nào nghiền ngẫm loại này cảm tình?”</p>
+<p>Bùi Minh Chiêm giải thích nói “Giống tình huống như vậy kỳ thật là có cảm tình cơ sở ở phía trước, liền tỷ như nam sinh đối nữ sinh có yêu thích cảm tình, như vậy mang theo nàng ra cửa thời điểm vô luận làm chuyện gì đều sẽ vui vẻ. Nếu là diễn viên đối mặt như vậy tình cảnh, như vậy cũng muốn suy xét đến tình lữ chi gian cảm tình tiến triển.”</p>
+<p>“Cảm tình tiến triển?” Triệu Diệu có điểm hứng thú, đây là hắn ở công lược thượng không thấy được giải thích, “Nói như thế nào?”</p>
+<p>“Nếu vẫn là yêu thầm giai đoạn, như vậy công viên hải dương chính là cái không tồi thông báo địa điểm, tâm tình chính là đã kích động lại khiếp đảm.” Bùi Minh Chiêm tiếp tục nói “Mà vào một bước phát triển, hai người đã là tình lữ quan hệ, như vậy cùng nhau lại đây công viên hải dương bên này chơi đùa, như vậy này phân tâm tình lại không giống nhau.”</p>
+<p>Triệu Diệu hỏi “Là như thế nào?”</p>
+<p>Bùi Minh Chiêm ra vẻ suy tư “Có điểm chờ mong, cũng có chút hưng phấn, còn thật cao hứng.”</p>
+<p>Triệu Diệu nghĩ nghĩ nói “Là bởi vì thích sao?”</p>
+<p>“Kia đương nhiên là bởi vì thích. Thích một người tâm cảnh là hoàn toàn không giống nhau, từ bắt đầu khiếp đảm ngượng ngùng đến sau lại chờ mong hưng phấn, nhưng kỳ thật nói đến cùng là thực quý trọng hai người một chỗ thời gian. Loại cảm giác này cùng đơn giản bằng hữu không giống nhau, liền tỷ như ta giống bằng hữu như vậy câu lấy ngươi ——”</p>
+<p>Bùi Minh Chiêm trực tiếp duỗi tay câu lấy Triệu Diệu cổ, nửa người dựa vào hắn trên người, “Bằng hữu sẽ cảm thấy đây là đơn giản bằng hữu gian đụng chạm, nhưng là ở tình lữ góc độ đây là cái thân mật tiếp xúc.”</p>
+<p>Triệu Diệu hơi hơi nghiêng đầu, hắn cả người bị ôm ở Bùi Minh Chiêm cánh tay hạ, đối phương tay trái đáp ở bờ vai của hắn chỗ, thoạt nhìn tùy ý lại tự nhiên ——</p>
+<p>Hắn tự nhận là rất ít cùng nhân thân thể tiếp xúc, bao gồm Diêu Bạch cũng không dám dễ dàng như vậy thượng thủ đáp bờ vai của hắn. Nhưng hiện giờ Bùi Minh Chiêm như vậy tiếp xúc hắn, hắn lại không nửa điểm chán ghét cảm, thậm chí còn có loại kỳ quái cảm giác.</p>
+<p>Triệu Diệu trong đầu tức khắc nghĩ đến lần trước xem mỗ quyển sách thượng lý luận, bên trong cũng nói cập đến tình lữ chi gian tiếp xúc sẽ khởi đến nhất định tán tỉnh tác dụng, hoặc đơn giản động tác, hoặc trong lúc lơ đãng đụng chạm, ở một bên khác trong mắt đều có không giống nhau ý vị.</p>
+<p>Thư thượng nói như thế nào tới? Hai bên tiếp xúc thời điểm sẽ phát hiện ngoài ý muốn loang loáng điểm, tiện đà sử hai bên chi gian cảm tình thăng ôn ——</p>
+<p>Loang loáng điểm nói……? Hắn ánh mắt dừng lại ở Bùi Minh Chiêm trắng nõn ngón tay thon dài thượng, móng tay tu bổ chỉnh tề, đã mượt mà lại……</p>
+<p>Triệu Diệu thoáng giơ tay trực tiếp nắm Bùi Minh Chiêm ngón giữa móng tay, lòng bàn tay hạ truyền đến ấm áp xúc cảm.</p>
+<p>Mượt mà lại hảo niết.</p>
+<p>“Nói đến ngươi cảm thấy hứng thú tín nhiệm quan hệ, kỳ thật này quan hệ tiệm trường vẫn là có điểm thời gian nguyên nhân ở bên trong, người luôn là càng đi càng gần, đối lẫn nhau sẽ càng ngày càng quen thuộc, có chút cảm giác cũng sẽ dần dần trở nên không giống nhau, tín nhiệm cũng liền tự nhiên mà vậy.”</p>
+<p>Bùi Minh Chiêm đang nói chuyện, đột nhiên cảm nhận được đầu ngón tay truyền đến lạnh lẽo xúc cảm, hắn nghiêng đầu nhìn đến Triệu Diệu dường như không có việc gì mà nhéo hắn móng tay chơi, thân thể hơi cương mà nhìn hắn, “Ngươi đang làm cái gì?”</p>
+<p>“Ngươi sẽ đàn dương cầm sao?” Triệu Diệu buông lỏng tay ra, đột nhiên nói “Ta còn không có xem ngươi diễn quá đàn dương cầm nhân vật.”</p>
+<p>Bùi Minh Chiêm có một đôi phi thường đẹp tay, Triệu Diệu cảm thấy này đôi tay không có một cái đặc tả màn ảnh quái đáng tiếc.</p>
+<p>“Ta chụp quá đàn dương cầm quảng cáo.” Bùi Minh Chiêm đầu ngón tay còn dừng lại vừa mới lạnh lẽo xúc cảm, Triệu Diệu tay cũng không ấm áp, thậm chí có thể nói là có điểm lãnh, nhưng vừa mới cái loại này xúc cảm quả thực câu đến hắn thiếu chút nữa không nhịn xuống, hắn nhịn không được hỏi “Triệu Diệu, ta như vậy đắp ngươi bả vai, ngươi có cái gì cảm giác sao?”</p>
+<p>“Không có gì cảm giác.” Triệu Diệu đúng sự thật nói “Ngươi tay khá xinh đẹp.”</p>
+<p>Nhưng hắn nói xong câu đó đột nhiên cảm thấy có điểm không đúng, hắn vì cái gì sẽ phá lệ để ý một cái khác nam tính tay đẹp hay không đẹp?</p>
+<p>Cách đó không xa, lao ca một tay chùy ở trên đùi, nhìn phía trước kề vai sát cánh hai người, “Bùi Minh Chiêm vẫn là ngưu, ta nhận thua.”</p>
+<p>Diêu Bạch không làm hiểu hắn những lời này có ý tứ gì, “Bùi ảnh đế làm cái gì?”</p>
+<p>“Không nhìn thấy bọn họ hai đều đáp ở bên nhau sao?” Lao ca nói.</p>
+<p>Diêu Bạch cảm thấy không thể hiểu được “Này có gì khác nhau sao? Nam hài tử kề vai sát cánh là chuyện thường a.”</p>
+<p>Lao ca liếc Diêu Bạch liếc mắt một cái, quyết định từ bỏ giải thích.</p>
+<p>Diêu Bạch hướng phía trước nhìn sẽ, thấy đại gia lực chú ý đều đặt ở cá heo biển thượng, liền cúi đầu bắt đầu xem khởi di động tới, lúc này mới phát hiện hạng mục tổ đàn liêu tích lũy hảo chút tin tức không thấy.</p>
+<p>Lao ca mới vừa đi phía trước nhìn sẽ, nghiêng đầu liền nhìn đến Diêu Bạch ở chơi di động, vì thế nói “Huynh đệ ngươi đến giúp ta nhìn chằm chằm a, phía dưới nhiều người như vậy, bọn họ một hồi đi rồi chúng ta đều theo không kịp.”</p>
+<p>“Không phải a lao ca, ta này có chức vị chính công tác ở đâu.” Diêu Bạch biên hồi phục Wechat tin tức, biên nói “Nếu là làm ta ca biết ta không cùng hạng mục tổ chạy tới theo dõi hắn cùng Bùi ảnh đế, quay đầu lại ta liền thảm.”</p>
+<p>Hắn ca gần nhất tuy rằng khá tốt nói chuyện, nhưng Diêu Bạch vẫn cứ nhớ rõ hắn ca ở Triệu thị tập đoàn công tác khi kia nghiêm khắc thái độ, công tác thượng sự tình tuyệt không thể qua loa.</p>
+<p>Phía dưới cá heo biển giới thiệu đã tiếp cận kết thúc, ở một chúng vỗ tay trong tiếng, lao ca nhìn đến Bùi Minh Chiêm cùng Triệu Diệu tựa hồ có tính toán trước rời đi xu thế, vội vàng vớt lên di động tới, “Có phải hay không vẫn là Lục Tử Thạch kia hóa?”</p>
+<p>“Lục Tử Thạch kia ngốc xoa không cần phải chúng ta lãng phí thời gian, chủ yếu là mặt khác phương án sự.” Diêu Bạch lần đầu tiên tiếp nhận như vậy hạng mục, “《 Ly Mộng 》 bắt đầu quay sắp tới, bọn họ ở thảo luận kế tiếp phương án sự, bao gồm tuyên truyền cùng đoàn phim chuẩn bị, sự tình còn rất nhiều.”</p>
+<p>Lao ca bừng tỉnh nói “Tuyên truyền a? Ngươi đem ngươi hạng mục tổ người phụ trách Wechat đẩy cho ta, ta làm phòng làm việc người hỗ trợ đi, việc này chúng ta thục.”</p>
+<p>Diêu Bạch sửng sốt “Này không hảo đi, chúng ta công ty sự.”</p>
+<p>“Liền Triệu tổng cùng lão Bùi quan hệ còn khách khí gì? Không đề cập các ngươi hạng mục sự, liền ra ra chủ ý.” Lao ca thở dài nói “Lão Bùi gần nhất không hoạt động, phòng làm việc người đều mau nhàn mắc lỗi tới, vừa lúc cho bọn hắn tìm điểm sự tình làm. Ngươi chạy nhanh phát, lão Bùi bọn họ này đều đi mau, nhìn chằm chằm khẩn điểm.”</p>
+<p>Diêu Bạch biên phát danh thiếp biên xem phía dưới tình huống, quả thực nhìn đến Triệu Diệu cùng Bùi Minh Chiêm đã tính toán đi trước, “Thật muốn đi rồi, lao ca chúng ta từ bên trái cái kia môn đi ra ngoài.”</p>
+<p>Huy Hoa trong phòng hội nghị, nhân viên công tác nhìn đến trợ lý Diêu thật vất vả trở về mấy cái tin tức, đang muốn hỏi một chút vừa mới đề án có thể hay không hành, kết quả bên kia trợ lý Diêu đột nhiên không chi thanh.</p>
+<p>Nhân viên công tác nói “Chủ quản, Diêu trợ không hồi.”</p>
+<p>Hôm nay cũng coi như là lâm thời tăng ca, luôn là phiền toái Diêu trợ cũng không tốt lắm, chủ quản “Mặt khác công tác trước dựa theo kế hoạch làm, còn không có thông qua phương án liền chờ Diêu trợ cấp cuối cùng ý kiến, hạng mục biểu đưa Trần tổng phòng làm việc không?”</p>
+<p>Trong phòng hội nghị binh hoang mã loạn, một lát sau hạng mục chủ quản đột nhiên thu được một chiếc điện thoại ——</p>
+<p>“Ngươi hảo.” Chủ quản tiếp điện thoại, “Hảo hảo, là Diêu trợ ý tứ sao? Chúng ta bên này an bài hảo.”</p>
+<p>Nhân viên công tác xem chủ quản tiếp xong điện thoại, “Chủ quản, Diêu trợ cho hồi phục sao?”</p>
+<p>Chủ quản ánh mắt phức tạp “Không cho hồi phục, nhưng là cho chúng ta đưa tới cái giúp đỡ.”</p>
+<p>Trong nghề ai không biết Bùi Minh Chiêm phòng làm việc ngưu nhân tụ tập, không nói đến người đại diện là trong nghề vương bài người đại diện lao tiên sinh, hợp với phía dưới xã giao đều không phải tiểu nhân vật, kết quả cái này đoàn đội cư nhiên gọi điện thoại lại đây, nói là Diêu trợ kêu lên tới hỗ trợ.</p>
+<p>Cùng Lục Tử Thạch phòng làm việc hợp tác công ty quản lý thực mau liền thu được trong nghề truyền đến tin tức, gần nhất Huy Hoa đại động tác không ít, không chỉ có nhiều hạng mục an bài tốt nhất đương kỳ, kỳ hạ cũng có tổng nghệ thu cùng đoàn phim trù bị, trong khoảng thời gian này trong ngành có thể nói là thanh danh không nhỏ.</p>
+<p>Không ít công ty trong tay đều đè nặng hạng mục, dĩ vãng này đó hạng mục tài nguyên đều là trong nghề công ty điện ảnh tài nguyên lui tới lợi thế, trong khoảng thời gian này phim ảnh trời đông giá rét quá thẩm gian nan, hơn nữa đương kỳ cạnh tranh kịch liệt, rất nhiều công ty trong tay tài nguyên cơ hồ là lạn ở trong tay. Cái này nghe nói Huy Hoa có vài cái hạng mục lập hồ sơ chuẩn bị bắt đầu quay, cùng Huy Hoa giao hảo công ty đã bắt đầu hiệp thương hợp tác cùng đề cử vấn đề, phía trước cùng Huy Hoa từng có mâu thuẫn nhỏ công ty lại trực tiếp bị Huy Hoa cự chi môn ngoại.</p>
+<p>Có thể thấy được Huy Hoa thái độ cường ngạnh, hoàn toàn có chính mình dừng chân chi bổn.</p>
+<p>Cái này quan vọng hướng gió hồi lâu mặt khác công ty sôi nổi có điểm tâm động, Huy Hoa Văn Hóa hiện tại thanh danh vừa mới lên, nếu trước tiên cùng Huy Hoa giao hảo, phía sau tài nguyên cũng liền không quá dùng sầu.</p>
+<p>“Ngươi nói Lục Tử Thạch 《 Ly Mộng 》 thời điểm cùng Huy Hoa trở mặt?” Bụng phệ trung niên nam nhân vẻ mặt trầm sắc mà nhìn bí thư, “Phía trước Huy Hoa đưa mời lại đây không phải nói mời Lục Tử Thạch đi diễn vai chính sao? Hắn không diễn thành còn cùng Huy Hoa đối nghịch?”</p>
+<p>Bọn họ công ty cùng trước kia Huy Hoa quan hệ không tồi, sau lại cũng không cùng Huy Hoa chủ động trở mặt, cho nên thử kính kia sẽ Huy Hoa vẫn là bỉnh hữu hảo kết giao đưa tới thử kính mời.</p>
+<p>Lúc ấy hạng mục nói rõ mời Lục Tử Thạch, bọn họ đem mời đưa sau khi đi qua liền không có hỏi đến. Không nghĩ tới này sẽ tính toán cùng Huy Hoa Văn Hóa giao hảo thời điểm, đã bị cự chi môn ngoại, này sau khi nghe ngóng là ở Lục Tử Thạch bên này ra sự.</p>
+<p>“Hắn từ đâu ra bản lĩnh cùng Huy Hoa đối nghịch? Không biết Huy Hoa phía sau người không đơn giản sao?” Trung niên nam nhân tức giận đến thiếu chút nữa mắng chửi người, “Hắn không trường đầu óc, người đại diện cũng không đầu óc?”</p>
+<p>Bí thư trầm mặc một lát “Nghe nói là phó tổng bày mưu đặt kế bọn họ làm…… Phó tổng phía trước cùng Huy Hoa cao tầng người quan hệ không tồi, lần này cũng là muốn mượn cơ hội thay người xuất khẩu ác khí.”</p>
+<p>Trung niên nam nhân tức giận đến thẳng ném gạt tàn thuốc “Cái kia bao cỏ biết cái gì? Liền sẽ không nhìn xem thế cục?? Ra ác khí, hắn đây là muốn đem chúng ta công ty đẩy đến cùng Huy Hoa trở mặt nông nỗi a!”</p>
+<p>Bí thư tiếp tục nói “Lục Tử Thạch gần nhất tài nguyên đều không tồi, không ít nhà tư sản đều phủng hắn. Hơn nữa cùng Vương tiên sinh bên kia giao hảo.”</p>
+<p>Trung niên nam nhân “Vương tiên sinh? Kia họ Vương chính là cái nhà giàu mới nổi, có thể lấy tiền phủng hắn liền kiêu ngạo đi lên? Huy Hoa sau lưng chính là Triệu Diệu, tuy rằng Triệu Diệu hiện tại không ở Triệu thị tập đoàn nội công tác, nhưng là mẹ nó lưu lại tài sản cùng hắn ở Triệu thị cổ phần, tại đây giới giải trí còn không đi ngang? Họ Vương trừ bỏ có thể tạp tiền, so với Triệu Diệu cái gì đều không phải……”</p>
+<p>Lúc này điện thoại đột nhiên vang lên, trung niên nam nhân tiếp điện thoại, nghe trong điện thoại biên nói chuyện thanh sắc mặt càng ngày càng đen, cuối cùng trực tiếp tạp điện thoại, nổi giận mắng “Hắn Lục Tử Thạch khi nào đắc tội Bùi Minh Chiêm phòng làm việc?”</p>
+<p>Bí thư ngoài ý muốn nói “Không nghe nói hắn cùng Bùi Minh Chiêm có quan hệ a?”</p>
+<p>Trung niên nam nhân mắng “Không quan hệ? Không quan hệ Bùi Minh Chiêm phòng làm việc người còn sẽ cố ý gọi điện thoại lại đây công đạo?”</p>
+<p>Hắn sắc mặt âm trầm “Này Lục Tử Thạch có thể a, hắn người đại diện cũng không đem chuyện này thông tri công ty một tiếng, hiển nhiên liền không đem chúng ta để vào mắt. Phía trước tới liên hệ cái kia nhãn hiệu hàng xa xỉ cũng không cần cấp Lục Tử Thạch, hắn phòng làm việc nếu như vậy có thể liền toàn làm bọn họ chính mình làm đi, chúng ta cùng hắn hiệp ước cũng không sai biệt lắm đến kỳ, đến lúc đó trực tiếp phóng lời nói đi ra ngoài, chúng ta cùng hắn không có quan hệ.”</p>
+<p>Bí thư gật đầu “Hảo.”</p>
+<p>Trung niên nam nhân điểm yên, đầy mặt buồn rầu “Đến nỗi Huy Hoa bên kia, nghĩ cách liên hệ hạ Triệu tổng hoặc là Trần tổng…… Chuyện này chúng ta xác thật có không đúng, nên xin lỗi nên tới cửa sự đừng chậm trễ, cùng Huy Hoa giao hảo là việc cấp bách.”</p>
+<p>Bên kia, Trương Tề sắp đóng vai 《 Ly Mộng 》 nam chính túc ly quang nghe đồn thực mau truyền khai, ngẫu nhiên chú ý này IP đỉnh phong văn hóa xã giao nhân viên đột nhiên chú ý tới vấn đề nơi, chạy nhanh đem chuyện này đăng báo cấp công ty lão bản.</p>
+<p>Đỉnh phong chính là ban đầu Trương Tề công ty quản lý, khoảng thời gian trước Huy Hoa phụ phí vi phạm hợp đồng kếch xù đem Trương Tề từ công ty giải ước thiêm đi, đỉnh phong lão bản còn bởi vì kiếm lời số tiền đắc chí. Trương Tề hiện tại chính là cái phế, đặt ở trong nghề cái nào hạng mục dám dùng hắn? Sẽ không sợ đắc tội vị kia nhà tư sản đại lão sao? Cũng chính là Huy Hoa loại này nghé con mới sinh không sợ cọp mới dám thiêm người.</p>
+<p>Này sẽ xã giao nhân viên đem tin tức thông tri tới rồi lão bản bên này, đang ở đánh golf đỉnh phong văn hóa người phụ trách sắc mặt lập tức liền thay đổi, “Hắn Huy Hoa thật đúng là dám dùng Trương Tề? Sẽ không sợ đắc tội vị kia?”</p>
+<p>Truyền lời người ta nói “Hẳn là không sợ…… Nam chủ quan tuyên hẳn là thật sự.”</p>
+<p>Ra cá heo biển quán sau, Bùi Minh Chiêm cùng Triệu Diệu tránh đi đám người hướng địa phương khác đi, tính toán đến xa một chút gấu bắc cực quán nhìn xem.</p>
+<p>Bùi Minh Chiêm trên đường đi được thất thần, Triệu Diệu lại mùi ngon mà nhìn di động điện tử thư.</p>
+<p>Lúc này Bùi Minh Chiêm di động vang lên, hắn cùng Triệu Diệu nói một chút, sau đó tiếp điện thoại.</p>
+<p>Điện thoại bên kia người tựa hồ hỏi hắn tương đối quan trọng vấn đề, Bùi Minh Chiêm trầm mặc mà nghe đối diện nói xong, cuối cùng mới nói “Chuyện này ta suy xét suy xét, lại cho ngươi hồi đáp.”</p>
+<p>Triệu Diệu thấy hắn treo điện thoại, “Công tác thượng sự?”</p>
+<p>Bùi Minh Chiêm phủ nhận “Không phải, chính là trước kia hợp tác quá bằng hữu, gần nhất cùng ta thảo luận đầu tư ngôi cao sự.”</p>
+<p>“Ngôi cao?” Triệu Diệu nghĩ đến gần nhất quốc nội video ngôi cao hướng đi, “Gần nhất thị trường điều kiện không tốt lắm, chủ yếu tài nguyên đều bị mặt khác công ty chia cắt, hiện tại chuẩn bị làm network platform thực dễ dàng đã chịu mặt khác mấy phương chèn ép, không hảo xuất đầu.”</p>
+<p>Bùi Minh Chiêm cũng nói “Network platform xác thật khó xuất đầu, nhưng là có cái ngôi cao gần nhất thế chính vượng, hắn muốn cho ta đầu tư chính là phát sóng trực tiếp ngôi cao.”</p>
+<p>Phát sóng trực tiếp ngôi cao? Triệu Diệu nghe vậy một đốn, đời trước hắn bắt đầu chú ý ngành giải trí cũng là có phát sóng trực tiếp ngôi cao nguyên nhân ở bên trong, vui chơi giải trí thời đại đã đến ý nghĩa quốc nội các hạng vui chơi giải trí ngành sản xuất cao tốc phát triển, mới phát sản nghiệp đáp thượng internet ngôi cao, phát triển tốc độ càng là nhanh chóng, phát sóng trực tiếp chính là cực kỳ lộ rõ ngành sản xuất.</p>
+<p>“Phát sóng trực tiếp ngôi cao hiện tại tuy rằng vừa mới bắt đầu phát triển, nhưng là tương lai bản đồ mở rộng trưởng thành tính rất lớn.” Triệu Diệu nhìn về phía Bùi Minh Chiêm “Chuyện này ngươi xác thật có thể suy xét.”</p>
+<p>Bùi Minh Chiêm nghe vậy nhìn mắt Triệu Diệu “Ngươi thoạt nhìn đối này ngành sản xuất còn rất có hứng thú?”</p>
+<p>Triệu Diệu không có phủ nhận “Nó xác thật tiền cảnh hảo.”</p>
+<p>Nếu tương lai Huy Hoa phát triển cũng đủ ổn định, hắn cũng sẽ kiến nghị Trần Hệ cùng phát sóng trực tiếp ngôi cao nối đường ray phát triển mặt khác hạng mục.</p>
+<p>Bùi Minh Chiêm lại nói “Vậy ngươi muốn hay không suy xét cùng chúng ta kết phường làm phát sóng trực tiếp ngôi cao?”</p>
+<p>Trần Hệ gần nhất nét mặt toả sáng, đi ở trên đường eo lưng đều thẳng thắn không ít, trừ bỏ tháng sau cuộc họp báo cùng với Triệu tổng muốn đi Đại Ma Vương party này hai việc có điểm sầu người ở ngoài, gần nhất chính có thể nói là mọi chuyện hài lòng, liên quan Huy Hoa đều nâng cao một bước.</p>
+<p>Cuối tuần Huy Hoa trong công ty trừ bỏ bộ phận hạng mục tổ người ở tăng ca, mặt khác địa phương trống rỗng không ai, Trần Hệ vạn năm công tác cuồng, trải qua phòng họp thời điểm nhìn đến 《 Ly Mộng 》 tổ người đang ở ra sức công tác, vì thế vừa lòng mà làm bí thư cho bọn hắn thêm phân buổi chiều trà.</p>
+<p>Hắn vừa đến văn phòng, bị bắt cuối tuần tăng ca bí thư tiến vào văn phòng, thuận tay còn mang đến phân văn kiện.</p>
+<p>Trần Hệ nhìn bên trên văn kiện, nghi hoặc mà nhìn về phía bí thư “Nhân sự bên kia?”</p>
+<p>Bí thư mặt vô biểu tình nói “Là cái dạng này Trần tổng, những người này tư liệu là Tinh Thần Văn Hóa vừa mới đưa tới.”</p>
+<p>Trần Hệ phiên phiên tư liệu, lần trước hắn cùng Triệu Diệu phun nước đắng nói trong công ty hiện tại thiếu người đại diện, mà này phân tư liệu bám vào nội dung trừ bỏ Tinh Thần Văn Hóa kia hai vị vương bài người đại diện, còn muốn sao trời bổn muốn thôi giữ chức vụ điều động mặt khác công nhân, những người này đặt ở bên ngoài đều là mặt khác công ty tranh phá đầu đối tượng.</p>
+<p>“……” Trần Hệ khó được mơ hồ, “Này……? Triệu tổng ý tứ?”</p>
+<p>Bí thư gật đầu “Triệu tổng làm ngài tùy tiện chọn.”</p>
+<p>……….</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong40.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong42.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "man-cap-dai-lao-chi-di-su-nghiep-tuyen";
+const NOVEL_TITLE = "Mãn cấp đại lão chỉ đi sự nghiệp tuyến";
+const CHAPTER_TITLE = "Chương 41";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

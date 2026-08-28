@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 14</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Mãn cấp đại lão chỉ đi sự nghiệp tuyến
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 14</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong13.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong15.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Ngoại giới áp lực càng lúc càng lớn, hợp với công ty bên trong cao tầng người cũng bắt đầu châm chọc mỉa mai nói Trần Hệ tìm cái phú nhị đại tới đầu tư, nói là hắn đem Huy Hoa tương lai coi như trò đùa. Nhưng mà Trần Hệ không đem bọn họ nói để ở trong lòng, hắn trở về lúc sau tìm luật sư đem Triệu Diệu cho hợp tác hiệp nghị từ đầu tới đuôi nhìn một lần, mới phát hiện này phân trong hiệp nghị không có thiết hạ quá nhiều bẫy rập, đối với Huy Hoa tới nói là cái trăm ích không một làm hại hợp tác hiệp nghị.</p>
+<p>Hơn nữa hắn còn tra xét một chút, cái này Triệu Diệu là trước mắt quốc nội đỉnh đỉnh đại danh Triệu thị tập đoàn tam thiếu gia, lưng dựa đỉnh thiên đại thụ, này quả thực chính là bầu trời rớt bánh có nhân, đại lão hạ phàm tới giúp đỡ người nghèo.</p>
+<p>Đỉnh cao tầng áp lực, Trần Hệ vẫn là thuận theo chính mình nội tâm ý tưởng, cuối cùng hắn vẫn là quyết định cùng Triệu Diệu hợp tác.</p>
+<p>Ước định địa phương vẫn là ở phía trước hội sở, Trần Hệ mang theo một lần nữa định ra hợp đồng lại đây, thấy Triệu Diệu cùng hắn luật sư.</p>
+<p>Triệu Diệu tưởng Trần Hệ là nhắc tới điều kiện, nhưng là nhìn đến trên hợp đồng nội dung thời điểm có chút ngoài ý muốn, “Ta xem qua những người khác cùng ta thương lượng làm lợi, lại chưa thấy qua có người đem chính mình ích lợi ra bên ngoài đẩy, ngươi không nghĩ đương lão bản?”</p>
+<p>Ban đầu ích lợi có thể nói là hợp lý trong phạm vi phân phối, mà hiện tại Trần Hệ chủ động nhường lợi.</p>
+<p>“Ta không thích hợp đương, có chút thời điểm đương lão bản liên lụy quá nhiều sự tình, làm quyết định thời điểm băn khoăn quá nhiều.”</p>
+<p>Trần Hệ nói “Triệu tiên sinh, ngươi hứa hẹn cũng đủ hoàn toàn thu mua Huy Hoa, ngươi nếu tín nhiệm ta, kia ta cũng cứ việc nói thẳng.”</p>
+<p>“Lão bản chỉ là cái danh hiệu, Huy Hoa là ta tâm huyết, ta hy vọng nó có thể trở nên càng tốt.” Trần Hệ nói “Hiện tại Huy Hoa quản lý tầng yêu cầu hoàn toàn chỉnh đốn, bằng không đầu nhập lại nhiều tiền tài, đến hậu kỳ cũng sẽ bị kéo suy sụp……”</p>
+<p>Triệu Diệu đối Trần Hệ trả lời cũng không ngoài ý muốn, đời trước cái kia phú nhị đại đầu tư Huy Hoa sau cũng là trải qua thời gian dài tẩy bài mới làm cái này công ty tái hiện đứng lên, Trần Hệ cũng bởi vậy trong ngành nổi tiếng.</p>
+<p>“Ta tôn trọng ngươi ý kiến, cũng đem lưu giữ ngươi bản thân quyền lợi.”</p>
+<p>Triệu Diệu bình tĩnh nói “Nếu quyết định hợp tác kia đó là người trong nhà, quản lý tầng nên rút u ác tính liền cứ việc rút, tưởng đào người nào cũng có thể cùng ta thương lượng, làm không được sự ta cũng có thể đảm đương cái ác nhân.”</p>
+<p>Trần Hệ thập phần cảm động, “Triệu tiên sinh, này thật là quá cảm tạ.”</p>
+<p>“Cũng đừng có gấp cảm tạ ta.” Triệu Diệu không chút để ý nói “Chỉ là ta bản chất là cái thương nhân, đầu tư cũng không phải là giúp đỡ người nghèo. Ta hiện tại không thích quản sự tình, ta cùng ngươi hợp tác nói đến cùng vì ích lợi, có thể cho ta kiếm tiền, cái gì cũng tốt nói.”</p>
+<p>Diêu Bạch đi theo Triệu Diệu từ hội sở ra tới thời điểm, không nghĩ tới hắn ca liền như vậy đem tiền cấp rải đi vào. Trần Hệ đến cùng Triệu Diệu tách ra thời điểm còn liên tiếp nói lời cảm tạ, bất quá hắn ca phản ứng thường thường, giống như đầu lớn như vậy một số tiền liền cùng uống lên ly nước sôi để nguội giống nhau thường thường vô kỳ.</p>
+<p>Nếu không phải Diêu Bạch gặp qua bên trên kim ngạch, hắn đều hoài nghi hắn ca chỉ là đầu mấy vạn khối.</p>
+<p>“Ca, ngoại giới đối Huy Hoa đánh giá đều không tốt lắm, tuy nói là cái lão công ty đi, nhưng là hiện tại thời đại biến thiên nhanh như vậy, tốt tài nguyên đáy cũng thực dễ dàng bị tiêu ma quang.” Diêu Bạch đẩy xe lăn vừa đi vừa nói “Ta cảm thấy ngươi nói như vậy thân thiện hiệp ước có điểm tiện nghi Trần Hệ, ngươi lại tống tiền hắn làm điểm lợi, ta cảm thấy cũng thành.”</p>
+<p>“Ta cũng không thiếu công ty, ta muốn chỉ là trước tồn với Huy Hoa danh nghĩa tác phẩm cùng với Trần Hệ mà thôi.” Triệu Diệu nói “Trần Hệ là cái có đầu óc người, từ hắn không nghĩ đương lão bản ý tưởng bắt đầu, Huy Hoa quản lý tầng không cần ta nhắc nhở hắn cũng sẽ áp dụng thủ đoạn tiến hành tẩy bài, hắn chỉ là thiếu cái hợp tác người mà thôi.”</p>
+<p>Diêu Bạch “Này cao tầng rung chuyển…… Phía trước ngươi khiến cho ta thu mua Huy Hoa cổ phiếu, hiện tại lại nói chuyện hợp tác hiệp nghị. Kỳ thật sớm đã có tính toán phải không?”</p>
+<p>Triệu Diệu xoa xoa ngón tay, “Mấy ngày nay ngươi nhiều chú ý chút, chờ tin tức vừa ra tới, Huy Hoa danh khí còn sẽ lại ngã. Đến lúc đó giá thấp bán tháo cổ phiếu Trần Hệ phỏng chừng cũng sẽ đoạt, cho nên chúng ta bên này cũng không thể buông tay.”</p>
+<p>“A? Không phải hợp tác sao?” Diêu Bạch khờ dại nghĩ đến.</p>
+<p>20260828-</p>
+<p>Triệu Diệu liếc mắt nhìn hắn “Ta xác thật không nghĩ quản Huy Hoa rất nhiều công việc, ta cùng Trần Hệ hợp tác chỉ là tín nhiệm năng lực của hắn. Tiểu Bạch, ta bản chất là cái thương nhân, có thể hoàn toàn khống ở trong tay đồ vật ta liền sẽ không dễ dàng mà thả ra đi.”</p>
+<p>Diêu Bạch “Kia Trần Hệ có thể hay không có mặt khác ý tưởng?”</p>
+<p>“Điểm này Trần Hệ cũng minh bạch, cho nên hắn hẳn là sớm có tính toán.” Triệu Diệu nói “Chỉ cần ta mặc kệ đến chuyện của hắn thượng, chúng ta hai liền sẽ vẫn luôn hợp tác đi xuống.”</p>
+<p>Diêu Bạch vừa muốn nói gì, đột nhiên túi quần di động chấn động lên.</p>
+<p>Hắn cùng Triệu Diệu nói thanh sau tiếp điện thoại, “Ngươi hảo, Diêu Bạch.”</p>
+<p>Trong điện thoại người ta nói nói mấy câu, Diêu Bạch sắc mặt đột nhiên trở nên cổ quái lên, rồi sau đó cúi đầu nhìn Triệu Diệu, đáp “Tốt, chờ một lát.”</p>
+<p>Hắn đem điện thoại lấy xa chút, dò hỏi “Ca, là cái kêu Quý Hạc Vũ người, nói là có việc tìm ngươi.”</p>
+<p>“Quý Hạc Vũ?” Triệu Diệu nghe vậy một đốn, “Kia cùng hắn ước cái thời gian đi.”</p>
+<p>Văn Lữ phía chính phủ Weibo thả ra sắp tới tuyên truyền vật liêu, Bùi Minh Chiêm lui vòng nghe đồn đang ở nhiệt trên đầu, thu tổng nghệ tin tức sớm tại fans quần thể trung truyền khai. Hiện tại Văn Lữ Weibo vật liêu thả một cái ngắn ngủi ngoài lề video ngắn, lấy nhân viên công tác thị giác thả ra nho nhỏ ngoài lề, trừ cái này ra còn có trương tuyên truyền tổng nghệ tuyên truyền đồ, ảnh chụp trung Bùi Minh Chiêm ngồi ở bàn tròn trước, trong tầm tay phóng cái cắm hoa hồng bình hoa, tựa hồ cùng đối diện người đang ở nói cái gì.</p>
+<p>Bình luận khu fans đã sớm nổ tung ——</p>
+<p>【 này tươi cười? Xác định là Bùi Minh Chiêm sao? 】</p>
+<p>【 ta Bùi đứng đắn cư nhiên như vậy sẽ cười? 】</p>
+<p>【 ô ô ô, ta ca còn không có lui vòng, ta ca còn ở công tác. 】</p>
+<p>【 ngoài lề cười chết ta, không nghĩ tới ta ca còn am hiểu sâu tổng nghệ trò chơi kịch bản. 】</p>
+<p>【 thượng điều tuyên truyền đồ ta đã chết, Bùi Bùi ở cùng ai nói lời nói a, này tươi cười ta đã chết. 】</p>
+<p>【 Văn Lữ tổng nghệ không phải có phối hợp tố nhân sao? Xem cảnh tượng hình như là cùng tố nhân cộng sự nói chuyện phiếm đi? 】</p>
+<p>【 không phải nga, tựa hồ là cái người qua đường. 】</p>
+<p>【 cái dạng gì người qua đường có thể thu hoạch Bùi Ma Vương tươi cười?? 】</p>
+<p>Bùi Minh Chiêm trợ lý Nhạc Nhạc nhìn Văn Lữ phía dưới bình luận khu, lại đem tuyên truyền đồ ảnh chụp cùng trước mặt đang ở công tác Bùi Minh Chiêm đúng rồi đối, xác thật không rất giống……</p>
+<p>Truy quá Bùi Minh Chiêm nhiều năm fans đều biết Bùi Minh Chiêm tươi cười chính là buôn bán tươi cười, tiêu chuẩn có lễ, nhìn như cùng bất luận kẻ nào đều thân cận, kỳ thật thượng chỉ là sơ giao. Nhạc Nhạc nhìn đến này trương tuyên truyền đồ thời điểm cũng thập phần ngoài ý muốn, không nghĩ tới Văn Lữ camera tổ còn có thể bắt giữ đến như vậy một cái tươi cười, xác thật là ngoài ý muốn chi hỉ.</p>
+<p>Người đại diện đem kế tiếp công tác đều đơn giản nói một lần, Bùi Minh Chiêm đỉnh đầu văn kiện cũng mau xem xong rồi. Người đại diện nhìn trợ lý Nhạc Nhạc liếc mắt một cái, theo sau nói “Văn Lữ hưởng ứng không tồi, đạo diễn tổ rất biết tuyên truyền, phim chính còn không có thượng tuyến nhưng cũng dời đi không ít lực chú ý, bất quá vẫn là có một bộ phận fans ở chú ý ngươi lui vòng sự, ngươi thấy thế nào?”</p>
+<p>Bùi Minh Chiêm “Lui vòng sự sớm hay muộn đều phải nói, dựa theo ban đầu kế hoạch đến đây đi.”</p>
+<p>“Kia hành đi, ngươi đè nặng tác phẩm phỏng chừng còn có thể căng cái hai ba năm.” Người đại diện nghĩ nghĩ, bất quá cho đến lúc này phỏng chừng Bùi Minh Chiêm sự nghiệp đi lên quỹ đạo, “Đúng rồi, ngươi ở Văn Lữ bên trong gặp được người quen?”</p>
+<p>Bùi Minh Chiêm nghiêng đầu xem hắn.</p>
+<p>Người đại diện đem vừa mới Nhạc Nhạc đang xem tuyên truyền đồ đưa cho hắn xem, “Này bức ảnh còn rất chân thật, thành thật giảng trước hai năm ta còn đang suy nghĩ muốn hay không giúp ngươi tiếp điểm tinh anh nhân thiết kịch bản, rốt cuộc ngươi người này đáy quá hảo diễn văn nhã kia khoản.”</p>
+<p>Bùi Minh Chiêm tiếp nhận trợ lý đưa qua di động, nhìn đến kia trương tuyên truyền chiếu biên giác vị trí chụp tới rồi Triệu Diệu đặt ở một bên xe lăn một góc, trên bàn bãi hoa hồng bình dịch nơi tay biên, hắn tưởng cho đến lúc này Triệu Diệu đang ở nhìn chằm chằm cách vách bàn tương thân nam nữ xem.</p>
+<p>“Nhạc Nhạc, các ngươi tuổi này người đều rất tưởng yêu đương sao?” Bùi Minh Chiêm đột nhiên nghĩ đến ngày đó Triệu Diệu nói tương thân sự.</p>
+<p>Nhạc Nhạc sửng sốt “Làm sao? Hiện tại độc thân thật tốt a. Chính là người trong nhà thúc giục vô cùng, mới vừa tốt nghiệp liền tổng muốn ngươi đi tìm cái bạn gái gì đó.”</p>
+<p>Bùi Minh Chiêm nghe vậy gật đầu, “Tương thân?”</p>
+<p>Nhạc Nhạc nói “Đúng vậy, bất quá tương thân còn tính việc nhỏ, ứng phó ứng phó liền đi qua.”</p>
+<p>Một bên người đại diện trực tiếp một tay đánh vào Bùi Minh Chiêm trên đùi, “Cái gì kêu các ngươi tuổi này người, ngươi cũng liền so Nhạc Nhạc đại tam tuổi. Nhạc Nhạc tuổi này nào có công phu tìm bạn gái, ngươi muốn hỏi so với hắn nhỏ hai tuổi sinh viên, kia mới có công phu yêu đương. Ngươi không biết lão Lý thủ hạ kia hai cái tiểu thịt tươi, mới vừa tuôn ra tình yêu tới làm đến hắn đầu đại.”</p>
+<p>“Bất quá ngươi liền bớt lo, xuất đạo ngần ấy năm, lăng là một chút tai tiếng bọt nước cũng chưa toát ra tới.” Người đại diện vẻ mặt vui mừng, “Hiện tại nghệ sĩ hoa hoa tâm tư nhiều đi, chờ ngươi về sau không làm, ta cũng không biết muốn như thế nào mang tân nhân.”</p>
+<p>Người đại diện nghĩ thầm nói, Bùi Minh Chiêm người này chính là cái chuyên tâm làm sự nghiệp, bên ngoài hoa hoa thảo thảo cùng hắn không gì quan hệ.</p>
+<p>Vừa mới bắt đầu xác thật có nữ nghệ sĩ lại đây muốn xào tai tiếng còn buộc chặt lên hot search, nhưng mà Bùi ảnh đế vẫn là cái Thái tử gia, những việc này không đợi hắn động thủ đã bị Bùi gia xã giao ấn đến gắt gao.</p>
+<p>Bùi Minh Chiêm “Tới ta công ty làm việc không hảo sao?”</p>
+<p>“Ta đây là hứng thú, cho ngươi làm việc đương nhiên là có cao tiền lương, nhưng là đi, khai quật tân nhân bồi dưỡng tân nhân cảm giác thành tựu thật sự vô pháp so.” Người đại diện nói “Bất quá việc này về sau rồi nói sau, ta hiện tại thật rất khó coi trọng tân nhân, còn không bằng cho ngươi làm công.”</p>
+<p>Triệu Trí Khải lại lần nữa cấp Triệu Diệu gọi điện thoại thời điểm mới chú ý tới chính mình số điện thoại đã bị Triệu Diệu kéo đen, trong khoảng thời gian này hắn nguyên bản còn tưởng lượng Triệu Diệu một đoạn thời gian, chờ hắn mặt xám mày tro tìm tới cửa cầu hắn hỗ trợ. Kết quả bên này hắn còn ở cùng Triệu Trường Thước đánh cờ, Triệu Diệu cũng đã từ chức thả từ văn phòng dọn đi rồi.</p>
+<p>Triệu Trí Khải có dã tâm, tuy rằng Triệu gia gia nghiệp là hắn đại ca một tay đánh hạ giang sơn, nhưng hắn cũng tưởng tại đây tràng tranh đoạt trung phân một ly canh.</p>
+<p>Ở hắn đại ca tính toán trung, hắn là không thể nào tiếp nhận Triệu gia cái này gia nghiệp, bởi vì hắn đại ca tưởng đem gia nghiệp lưu cho con hắn, người thừa kế sẽ chỉ ở Triệu gia ba cái nhi tử bên trong tuyển.</p>
+<p>Triệu Trí Khải ban đầu là nhìn trúng Triệu Diệu, cùng Triệu Diệu hợp tác cũng thập phần vui sướng, hết thảy trù tính vốn dĩ liền kém chỉ còn một bước, kết quả Triệu Diệu ở thời điểm này đột nhiên nói rời khỏi cạnh tranh, cùng cấp với hắn vài tháng bố trí thất bại trong gang tấc.</p>
+<p>Triệu gia người trừ bỏ Triệu Trường Thước, hắn cũng không phải phi Triệu Diệu không thể, vốn là tưởng đẩy Triệu Tề Chân thượng vị, hắn vạn sự đã chuẩn bị chỉ còn chờ hội nghị thượng đem Triệu Trường Thước bài trừ cạnh tranh, lại không nghĩ rằng hắn chuẩn bị phương án đều bị xuyên qua, Triệu Trường Thước giống như là sau lưng dài quá đôi mắt dường như liên tiếp nhìn thấu hắn bẫy rập, mà Triệu Tề Chân một đống phá sự cũng trồi lên mặt nước, trực tiếp đánh hắn cái trở tay không kịp, bất đắc dĩ đem Khải Thần hạng mục chắp tay nhường cho Triệu Trường Thước.</p>
+<p>Triệu Trí Khải không tin Triệu Trường Thước bản lĩnh như vậy đại, nếu Triệu Trường Thước sớm có này đó mưu hoa, cũng không đến mức khoảng thời gian trước vẫn luôn bị hắn đè nặng. Hắn cẩn thận bài trừ lúc sau, duy độc tưởng không rõ điểm ra ở Triệu Diệu trên người, hắn hoài nghi Triệu Trường Thước này đó kế sách sau lưng không thể thiếu Triệu Diệu bóng dáng.</p>
+<p>Triệu Tề Chân là cái ngu xuẩn, nhưng là Triệu Diệu là cái người thông minh.</p>
+<p>Triệu Trí Khải bất đắc dĩ một lần nữa cùng Triệu Diệu thành lập liên hệ, nhưng hiện tại Triệu Diệu hoàn toàn cự tuyệt cùng hắn liên hệ, không chỉ có bí thư ước không đến hắn, thậm chí liền hắn điện thoại đều bị Triệu Diệu kéo hắc.</p>
+<p>“Triệu tổng, buổi chiều sẽ muốn chậm lại sao?” Bí thư hỏi.</p>
+<p>Triệu Trí Khải đem điện thoại ném ở trên bàn, sắc mặt âm trầm nói “Đẩy, đem Triệu Diệu địa chỉ phát ta một phần, thông tri tài xế ở dưới lầu chờ ta.”</p>
+<p>Xem ra có một số việc, phải giáp mặt nói rõ ràng.</p>
+<p>Tác giả có lời muốn nói Người đại diện Nhà người khác người đại diện cả ngày xử lý tai tiếng, nhà của chúng ta lão Bùi liền bớt lo.</p>
+<p>Sau lại ——</p>
+<p>Người đại diện vẻ mặt tang thương Tính.</p>
+<p>……….</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong13.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong15.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "man-cap-dai-lao-chi-di-su-nghiep-tuyen";
+const NOVEL_TITLE = "Mãn cấp đại lão chỉ đi sự nghiệp tuyến";
+const CHAPTER_TITLE = "Chương 14";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

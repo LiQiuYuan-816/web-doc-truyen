@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 10 làm đốn tốt</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ta phu lang là cái làm tinh [ xuyên thư ]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 10 làm đốn tốt</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong9.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong11.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Tống Nghiệp ăn ba cái bánh bao thịt liền dừng, hắn đi mua muối du, mặt khác mua tân chén đũa đồ sứ.</p>
+<p>Lương Tố nói muốn làm sủi cảo ăn. Thịt Trường Tự đã mua, chính mình cán bột làm sủi cảo da. Xả vài thước bố, áo tang trong nhà có rất nhiều, lúc này xả vải bông, chọn màu xanh biếc bố, xả tới cấp Tống Trường Tự làm một thân tân áo dài.</p>
+<p>Nông dân vải dệt đều không lãng phí, Tống Trường Tự khi còn nhỏ quần áo cấp Từ Trừng xuyên, còn có hủy đi tới làm giẻ lau cùng thêu túi tiền, giày đều thành.</p>
+<p>Đem đồ vật lấy lòng, hai cha con liền dẹp đường hồi phủ, lúc này ở xe bò thượng bọn họ không gặp được Hứa gia huynh đệ.</p>
+<p>Hứa Tri Từ sọt còn thừa một phen rau xà lách cùng hai thanh rau cần, này tam đem đồ ăn giá thấp buộc chặt cùng nhau bán cho một vị lão bà bà, miễn cho còn muốn bối trở về.</p>
+<p>Như là hương hành, sinh khương, tỏi cùng hoa tiêu linh tinh, trước nay cũng chưa bán thừa quá, trong nhà đã dự bị năm nay nhiều không vài mẫu đất dùng để loại hương hành, sinh khương cùng tỏi.</p>
+<p>Hoa tiêu mầm không hảo mua, còn muốn bàn bạc kỹ hơn.</p>
+<p>Đem đồng tử thu vào túi tiền, sọt còn có hắn muốn gửi cấp Tạ Hoài Xuyên quần áo, mấy khối thịt khô.</p>
+<p>Tới rồi quân doanh không biết Tạ Hoài Xuyên sinh hoạt được không, thịt khô dễ bảo tồn mang điểm cho hắn đỡ thèm.</p>
+<p>Theo Tạ Hoài Xuyên nói, bình thường binh lính quân lương một tháng một lượng bạc, triều đình là nói như vậy, thực tế đến bọn họ trong tay chỉ có năm sáu trăm văn, còn cần mua sắm lương thực cùng quần áo. Có phát xuống dưới gạo thóc cũng sẽ bị quan quân tư nuốt, ở biên cương chỉ có thể tính miễn cưỡng ấm no.</p>
+<p>Hứng khởi chiến sự khi, bọn họ này đó không có bối cảnh người liền sẽ xông vào trước nhất mặt, đảm đương tiên phong cùng pháo hôi. Không có chiến sự khi, bọn họ cần gánh vác xây dựng công sự, đồn điền khai hoang, điều tra địch tình chờ.</p>
+<p>Nếu là như thế này nhật tử có cuối còn hảo, phục binh dịch không biết muốn bao lâu mới có thể đem người thả lại tới.</p>
+<p>Hứa Tri Từ cùng Hứa Tri Trú một khối đi trạm dịch gửi tay nải, trạm dịch người đối Hứa Tri Từ đã quen thuộc.</p>
+<p>Hắn thực mau đem tay nải gửi hảo, bọn họ lại đi chọn mua trong nhà yêu cầu đồ vật.</p>
+<p>Trong nhà cần mua dầu muối dấm, khác phải cho Hứa Tôn Chính đánh ba lượng rượu vàng, đi bố phô mua chút tuyến đoàn.</p>
+<p>Tuyến đoàn nhưng thật ra tiện nghi, tổng cộng mua năm sáu đoàn đã là đủ dùng. Tới trấn trên bán đồ ăn kiếm lời một đồng bạc, mua này đó hoa nhị đồng bạc, tốt xấu có bán đồ ăn tiền làm triệt tiêu bằng không trong lòng thực sự thịt đau.</p>
+<p>Trạm dịch người thấy huynh đệ hai người đi rồi, ước lượng một chút tay nải cảm thán nói, “Này tay nải đều mau gửi ba năm, nghe nói chỉ là đính hôn còn chưa thành thân, này tiểu ca nhi thật si tâm.”</p>
+<p>Biên cương sinh hoạt khốn khổ, khó được có người nhà nhớ thương, trong lòng nhất định an ủi.</p>
+<p>Hứa Tri Trú phía trước khuyên quá Hứa Tri Từ làm hắn đừng đợi, nhưng có cái gì biện pháp, đại ca chính là nhận chuẩn Tạ Hoài Xuyên.</p>
+<p>Mỗi lần đi hội chùa, Hứa Tri Trú trừ bỏ yêu cầu chính mình cả đời vinh hoa phú quý, người nhà khỏe mạnh ngoại, còn muốn nhiều cầu một phần làm Tạ Hoài Xuyên bình an trở về.</p>
+<p>Bọn họ mua xong đồ vật liền ngồi xe bò trở về, ngồi ở xe bò thượng thực xóc nảy, Hứa Tri Trú nghĩ tới Tống Trường Tự, lúc này không có Tống Trường Tự túm hắn, hắn lôi kéo sọt, nhìn thấy sọt phía trên ba bốn giấy dầu bao.</p>
+<p>Hắn cười tới lui hai chân, mỹ tư tư.</p>
+<p>Hứa Tri Trú trở lại trong thôn, trong mắt vẫn luôn mang theo cười, hành tẩu tuổi trẻ hán tử không tự chủ được đã bị hấp dẫn ánh mắt.</p>
+<p>Hứa gia hai anh em lớn lên đẹp là trong thôn công nhận, Hứa Tri Từ bị nhà ngoại tiểu tử cầu thú, dư lại một cái Hứa Tri Trú.</p>
+<p>Trong thôn tuổi trẻ hán tử đều động quá tâm tư, không nghĩ tới đảo mắt Hứa gia cùng Tống gia liền đính hôn sự.</p>
+<p>Lương Phong chụp một cái tiểu tử đầu, trách mắng “Còn xem đâu, này ta biểu đệ tức phụ, ngươi cổ duỗi đến so ngỗng tử còn muốn trường.”</p>
+<p>Hán tử kia thu hồi ánh mắt, ngượng ngùng cười, thiếu chút nữa quên Lương Phong ở chỗ này.</p>
+<p>Lương Phong bọn họ là một khối thượng sau núi phách sài, thời tiết hảo, phách sài xuống núi vừa lúc, còn có một ít cỏ khô cũng cùng nhau ném tới sọt phát hỏa.</p>
+<p>Một bó củi bán bốn văn tiền, tới rồi vào đông giới liền cao, có thể bán được tám văn tiền. Đúng là xuân vội, bọn họ rảnh rỗi đốn củi chỉ vì cung trong nhà dùng, đi tranh Thủy Ba trấn lui tới liền sáu văn tiền, sở kiếm không nhiều lắm, chờ vào đông đi bán củi mới có thu hạng.</p>
+<p>Choai choai mấy cái tiểu tử đi ngang qua Lương gia đồng ruộng, Lương Phong làm chủ hái được mấy cái dưa leo, phân cho bọn họ, lau lau là có thể ăn.</p>
+<p>Bọn họ nói cày bừa vụ xuân sự từ đại lộ trở về.</p>
+<p>Tống gia củi lửa nhiều nữa, này nửa tháng không dùng tới sơn đốn củi. Tống Trường Tự nhân dùng tiền mua thịt cùng đường bánh đang bị Lương Tố dạy bảo “Kiếm tiền không dễ dàng, ngươi hiện tại nhất quan trọng chính là niệm thư, trong nhà sự ngươi không cần lo lắng.”</p>
+<p>Tống Nghiệp chen vào nói “Hài tử cũng là hảo tâm.”</p>
+<p>Từ Trừng được Tống Trường Tự đường bánh, gió chiều nào theo chiều ấy lập tức đảo hướng hắn “Cữu cữu cũng là hảo tâm.”</p>
+<p>Lương Tố đối hài tử huấn không đứng dậy, nàng chỉ nói “Ngươi trưởng thành lập tức cũng muốn đón dâu, chính mình đối dùng tiền sự phải có đúng mực, tiêu tiền không cần ăn xài phung phí, trong tay thế nào đều phải chừa chút tiền dự phòng bất trắc, huống chi ngươi muốn thành thân, tiêu tiền thời điểm nhiều nữa.”</p>
+<p>Tống Trường Tự nhận sai “Nhi tử đã biết.”</p>
+<p>Lương Tố xách theo thịt đi nhà bếp, nếu đã mua, hôm nay liền làm thịt mạt cà tím, dư lại thịt mạt sáng mai làm mấy cái bánh nhân thịt.</p>
+<p>“Minh Ngôn, ngươi xuống ruộng kéo mấy cái hành lá trở về.”</p>
+<p>Tống Minh Ngôn ứng một tiếng. Tống Nghiệp đem đường bánh bỏ vào quầy, miễn cho đặt lên bàn bị con kiến bò lên trên đi gặm cắn đạp hư đồ vật.</p>
+<p>Tống Trường Tự trở về đem đồng tử khóa ở cái hộp nhỏ.</p>
+<p>Tích cóp điểm tiền không dễ dàng.</p>
+<p>Hắn tưởng tượng đến Hứa Tri Trú giương nanh múa vuốt bộ dáng, ôm chặt chính mình tiểu kim khố.</p>
+<p>Hắn hảo đáng thương.</p>
+<p>Tống Trường Tự vì chính mình lau một phen chua xót nước mắt.</p>
+<p>Về sau tàng tiền muốn nhiều tìm mấy cái địa phương tàng, thỏ khôn có ba hang, hắn cũng không tin, hắn giấu đi tiền còn có thể bị phát hiện.</p>
+<p>Nghĩ như vậy, hắn an tâm.</p>
+<p>Lần này đem này hai quyển sách sao chép xong liền phải nghỉ tạm một trận, nhiều nhìn xem thư luyện bút. Viết văn chương không thể lý luận suông, không thể đình với khẩu thượng.</p>
+<p>Tống Trường Tự đem chính mình viết quá văn chương đều lưu trữ, thường thường lật xem phục bàn. Biết chính mình nơi nào có lỗ hổng muốn đi sửa lại, vô cùng lo lắng lại viết một thiên văn chương giẫm lên vết xe đổ, như vậy là không có ý nghĩa.</p>
+<p>Hắn ở nhà ôn thư, Lương Tố cùng Tống Minh Ngôn ở nhà bếp chặt thịt, tam cân thịt heo trừ bỏ làm thịt mạt cà tím, dùng để làm sủi cảo cũng thành, trong nhà đã lâu không ăn thượng sủi cảo. Lương Tố tuy ngoài miệng quở trách Tống Trường Tự, trong lòng lại vẫn là hàm chứa một tia cao hứng.</p>
+<p>Hai người tay chân mau, từng hàng sủi cảo da mỏng thịt hậu, lưu trữ sáng mai chưng tới ăn.</p>
+<p>Tống Minh Ngôn khom lưng thêm sài chưng cơm.</p>
+<p>Lương Tố thấy chưng cơm còn có một lát lôi kéo Tống Minh Ngôn lên lớp phòng chơi, trùng hợp biểu muội lại đây đưa vật liệu gỗ, Lương Tuệ thấy Lương Tố kêu một tiếng cô cô.</p>
+<p>“Dượng nói muốn vật liệu gỗ, nhà của chúng ta vừa lúc có dư lại, vẫn luôn không gì tác dụng, cha mẹ khiến cho ta đưa lại đây.”</p>
+<p>“Tuệ Tuệ tới a, mau ngồi, ta đi lấy điểm đường bánh ra tới.”</p>
+<p>Lương Tuệ gác một bên ngồi, kêu Tống Minh Ngôn một tiếng biểu ca.</p>
+<p>Tống Minh Ngôn cùng Từ Bằng hòa li khi, nhà mẹ đẻ cữu cữu cô cô, bá phụ bá mẫu, cùng nhau mang theo nhi nữ, ca nhi đều đi Từ gia cấp Tống Minh Ngôn chống lưng.</p>
+<p>Cả gia đình đi đổ Từ Bằng môn, nếu không phải nhà mẹ đẻ đắc lực, Tống Minh Ngôn còn ở Từ gia ép dạ cầu toàn.</p>
+<p>Lương Tuệ còn chưa làm mai, nhìn thấy Tống Minh Ngôn cùng Từ Bằng nháo đến như vậy nan kham, Tống Minh Ngôn lại làm cho cả người là thương, nàng trong lòng liền có bóng ma, cũng vì hắn bất khuất.</p>
+<p>Lương Tố cầm bánh hoa quế cùng bánh đậu xanh, còn có một đĩa ma bánh, mặt khác bắt một đĩa hạt dưa.</p>
+<p>“Tuệ Tuệ ăn đi, này vẫn là sáng nay ngươi Trường Tự biểu ca mới vừa đi trấn trên mua, mới mẻ.”</p>
+<p>Lương Tuệ cầm một khối bánh hoa quế, nhập khẩu hương nhu mềm mại, nàng nói “Cô cô ngươi lấy đến quá nhiều, ta căn bản ăn không hết.”</p>
+<p>Lương Tố “Ăn không hết sủy trong túi mang về.”</p>
+<p>Liêu trong chốc lát tất không thể miễn liền cho tới việc hôn nhân lên rồi, Lương Tuệ đỏ mặt nói “Còn sớm không tương xem, việc này là phải đợi Trường Tự biểu ca thành thân sau xem có hay không ảnh.”</p>
+<p>Lương Tuệ nói “Biểu tẩu bộ dáng xinh đẹp, cùng Trường Tự biểu ca thực xứng đôi.”</p>
+<p>Lương Tố cũng là nhìn Hứa Tri Trú hảo nhan sắc, rất là vừa lòng. Đối Hứa gia gia thế cũng vừa lòng.</p>
+<p>Này kết thân gia liền giảng môn đăng hộ đối, lúc trước thỉnh Thẩm bà mối là làng trên xóm dưới xa gần nổi tiếng hảo bà mối, nói thượng Hứa gia việc hôn nhân này, Tống Nghiệp cùng Lương Tố cho nàng phong một cái đại hồng bao.</p>
+<p>Đưa đi Hứa gia sính lễ đều hoa tâm tư cùng tiền bạc, đủ để tỏ vẻ đối Hứa gia coi trọng.</p>
+<p>Bọn họ còn cắn răng đánh một con vòng bạc đưa đi làm sính lễ, còn lại cũng chưa này vòng quý trọng.</p>
+<p>Nhà người khác ca nhi nguyện ý gả đến bọn họ Tống gia tới, bọn họ tự nhiên là phải hảo hảo đãi nhân.</p>
+<p>Lương Tuệ ngồi một lát liền đi rồi, Lương Tố cho nàng trong túi trang mấy khối bánh, bắt một phen hạt dưa.</p>
+<p>Nhà bếp cơm chưng chín.</p>
+<p>Tống Minh Ngôn nấu ăn là một phen hảo thủ, hắn tới xào thịt mạt cà tím. Một cổ hương khí từ trong phòng truyền ra tới, trong thôn người không thường ăn thịt, nếu là thèm ăn liền ăn chút thịt khô đỡ thèm, có thôn hộ liền thịt khô cũng không có, chỉ có thể chịu đựng trong lòng thèm ý.</p>
+<p>Tống Minh Ngôn xào rau, Lương Tố làm nộm dưa leo, xào xong đồ ăn làm một cái rau xanh canh, hai đồ ăn một canh.</p>
+<p>Trong nhà cơm là dùng bắp nhỏ vụn làm bắp cơm, ánh vàng rực rỡ ở trắng nõn gạo trung gian.</p>
+<p>Tống Trường Tự múc cơm, ngồi ghế kẹp thịt mạt cà tím, hương vị cực hảo.</p>
+<p>Toàn gia đem hai đồ ăn một canh ăn đến sạch sẽ, Lương Tố thấy thế lộ gương mặt tươi cười.</p>
+<p>Nàng hỏi trong nhà đồ ăn bán như thế nào.</p>
+<p>Tống Nghiệp nói “Bán đến không tồi, đều bán xong rồi.”</p>
+<p>Nói lời này, Tống Nghiệp còn nhìn nhi tử liếc mắt một cái.</p>
+<p>Tống Trường Tự hồn nhiên bất giác.</p>
+<p>Trong thôn người họp chợ đi bán đồ ăn, bán đồ ăn tiền cũng lưu không đến trong tay, qua tay liền hoa đi ra ngoài.</p>
+<p>Hứa Tôn Chính trên mặt đất vội xong, khiêng cái cuốc về nhà dùng cơm trưa. Hôm nay đem ngoài ruộng thổ buông lỏng, buổi chiều liền đi ném hạt giống.</p>
+<p>Tào Cầm so với hắn đi về trước, hai cái ca nhi đi họp chợ, nàng về nhà trước đem cơm chưng thượng lại đi đánh cỏ heo.</p>
+<p>Hứa Tôn Chính về đến nhà nghỉ khẩu khí đã nghe đến từ trong phòng truyền đến hương khí, hắn bụng rầm một tiếng đói bụng.</p>
+<p>Buổi sáng liền ăn ba cái ngũ cốc bánh bao, trên mặt đất dốc sức, đói đến mau. Hứa Tri Trú từ bên trong ra tới nghe thấy hắn cha trong bụng thanh âm, khóe miệng giương lên.</p>
+<p>Hứa Tôn Chính quẫn bách nói “Buổi sáng không ăn nhiều ít, đói bụng bình thường.”</p>
+<p>Hứa Tri Trú vào nhà đem chưng cơm mở ra, hắn dùng chiếc đũa chọc chọc, ba cái bánh bao thịt đã chưng chín.</p>
+<p>Đem bánh bao trang đĩa bưng ra đi.</p>
+<p>“Biết ngài đói bụng, cho ngài đưa một đĩa bánh bao.” Hứa Tri Trú nhướng mày, làm bộ bày ra tiệm cơm tiểu nhị bộ dáng.</p>
+<p>Hứa Tôn Chính cầm một cái bánh bao thịt, nuốt cả quả táo liền nuốt xuống đi.</p>
+<p>“Quỷ tiểu tử, ngươi lại loạn tiêu tiền.” Lúc này Hứa Tôn Chính lấy cái bánh bao nhai kỹ nuốt chậm, híp mắt rất là hưởng thụ.</p>
+<p>“Đây là tiệm bánh bao lão bản thấy ta lớn lên đẹp, đưa ta ăn, không cần tiền.”</p>
+<p>Hứa Tôn Chính bánh bao đều không ăn, hồ nghi nhìn về phía Hứa Tri Trú “Kia này lai lịch không rõ bánh bao ta không ăn, không chuẩn là hư nhân thịt.”</p>
+<p>Hứa Tri Trú “Chúng ta hôm nay đi trấn trên đụng phải Tống Trường Tự, hắn mua.”</p>
+<p>Hứa Tôn Chính thở phào nhẹ nhõm “Ta liền nói sao, từ đâu ra coi tiền như rác sẽ đưa ngươi bánh bao ăn.”</p>
+<p>Tác giả có lời muốn nói</p>
+<p>Tiểu Tống Vì ta đậu phộng [ bạo khóc ]</p>
+<p>Nhạc phụ ( thở phào nhẹ nhõm )</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong9.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong11.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "ta-phu-lang-la-cai-lam-tinh-xuyen-thu";
+const NOVEL_TITLE = "Ta phu lang là cái làm tinh [ xuyên thư ]";
+const CHAPTER_TITLE = "Chương 10 làm đốn tốt";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

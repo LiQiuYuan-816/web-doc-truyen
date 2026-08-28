@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 36 tính toán</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ta phu lang là cái làm tinh [ xuyên thư ]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 36 tính toán</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong35.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong37.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Tôn Lục Chân cùng Hứa Tri Trú ở trong phòng liền nghe thấy Vương Yến thanh âm.</p>
+<p>Tôn Lục Chân “Tri Trú ngươi nghe thấy được sao, Tống Trường Tự thi đậu tú tài?”</p>
+<p>Hứa Tri Trú hoa cũng không thêu, hắn nghe thấy tin tức còn có chút ngây người, nghe thấy Tôn Lục Chân nói chuyện, hắn bắt lấy hắn tay hỏi “Đây là thật sao?”</p>
+<p>Tôn Lục Chân minh bạch Hứa Tri Trú kích động lại không thể tin tưởng tâm tình, hắn lôi kéo Hứa Tri Trú một khối ra cửa.</p>
+<p>“Ngươi mau cùng về nhà nhìn xem, nghe Vương Yến nói ta cảm thấy bảo đảm là thật sự.”</p>
+<p>Hứa Tri Trú phục hồi tinh thần lại, vải lẻ màu tuyến đều từ bỏ, hắn đi theo Vương Yến một khối trở về. Thật thi đậu? Kia, kia ta chính là tú tài phu lang, lúc này mới gả cho Tống Trường Tự nửa năm tả hữu liền thành tú tài phu lang?!</p>
+<p>“Tri Trú, ngươi không biết là huyện nha nha dịch đi Tống gia thông tri, nói là Tống Trường Tự là viện thí đầu danh, khảo trúng tú tài. Này không chỉ là tú tài, vẫn là Kim Hà huyện đầu danh a, nghe nói Huyện thái gia còn thưởng thổ địa cùng bạc.”</p>
+<p>Vương Yến trong giọng nói tràn ngập hướng tới chi tình.</p>
+<p>Nàng cùng Lý Hổ cảm tình hảo, nhưng điểm này cũng không ảnh hưởng nàng cảm thấy Tống Trường Tự lần này thật sự rất lợi hại.</p>
+<p>Là tú tài, còn có Huyện thái gia ban thưởng thổ địa cùng bạc, về sau còn muốn đi huyện thành đọc sách. Nàng lớn như vậy, đời này còn không có đi qua huyện thành.</p>
+<p>Hai người bước chân nhanh hơn, tới rồi cửa nhà, Hứa Tri Trú nghe thấy một trận ồn ào thanh âm, vào viện môn vừa thấy, trong thôn hảo những người này đều ở trong sân tán gẫu.</p>
+<p>Tống Minh Ngôn đều phao mấy hồ trà, thấy Hứa Tri Trú đã trở lại, hắn lộ ra một cái cười, “Tri Trú, ngươi đã trở lại.”</p>
+<p>Hứa Tri Trú bước nhanh đến gần Tống Minh Ngôn hỏi “Đại ca, tướng công hắn thật sự thi đậu?”</p>
+<p>Tống Minh Ngôn nhẹ nhàng nói “Thi đậu.”</p>
+<p>Người khác cũng mồm năm miệng mười nói lên.</p>
+<p>“Tri Trú, ngươi lúc này mới trở về đều không có thấy huyện thành tới nha dịch, nhìn qua thực uy phong là cưỡi ngựa tới.”</p>
+<p>“Gia trưởng của ngươi tự thật là có tiền đồ, lúc này không chỉ có khảo trúng tú tài còn phải Huyện thái gia ban thưởng, Huyện thái gia là bao lớn một cái quan a.”</p>
+<p>Làm tóc húi cua dân chúng bọn họ nơi nào gặp qua cái gì Huyện thái gia, chỉ nhìn thấy quá ở trấn trên nha dịch, thấy nha dịch còn muốn trốn tránh đi.</p>
+<p>Huyện thái gia ở bọn họ trong mắt chính là thực ghê gớm quan, toàn bộ Kim Hà huyện đều về Huyện thái gia quản, cái này quan còn chưa đủ đại sao.</p>
+<p>“Tri Trú, ngươi gả cho một hảo nhân gia.”</p>
+<p>“Muốn ta nói, ai biết Trường Tự lợi hại như vậy, lúc này chúng ta Tề Sơn thôn cũng ra một cái tú tài, tú tài chính là bầu trời Văn Khúc Tinh, Trường Tự vẫn là Kim Hà huyện đầu danh, sau này ta đi trấn trên bán đồ ăn đều có thể lôi kéo khách nhân thổi vài câu.”</p>
+<p>“Tri Trú gả đến hảo a.”</p>
+<p>Trong thôn người ta nói cái gì đều có. Hứa Tri Trú nghe ra bên trong có một ít cực kỳ hâm mộ, ghen ghét, khát vọng từ từ, Hứa Tri Trú vẫn luôn là cười.</p>
+<p>Ghen ghét lại làm sao vậy, hắn hiện tại đều không để bụng, hắn là tú tài phu lang. Hứa Tri Trú trong lòng mỹ tư tư, hắn vội vàng Tống Minh Ngôn cùng nhau chiêu đãi trong thôn người.</p>
+<p>Hắn tại cấp người châm trà thời điểm thấy Tống Trường Tự bị trong thôn hán tử vây một vòng cũng là đang nói cái gì.</p>
+<p>Hứa Tri Trú hướng bên trong tễ tễ, thấy Tống Trường Tự. Tống Trường Tự hình như có sở cảm, hắn đối thượng Hứa Tri Trú ánh mắt cười cười.</p>
+<p>Hắn cho bọn hắn thêm nước trà, Hứa Tri Trú trong lòng nhảy nhót, hắn hiện tại xem Tống Trường Tự đều cảm thấy hắn so ngày hôm qua càng tuấn tiếu.</p>
+<p>Trong thôn thím cùng phu lang đều lôi kéo hắn nói chuyện, Hứa Tri Trú chính mình đầu óc vẫn là choáng váng.</p>
+<p>Chờ đem trong thôn người tiễn đi, Tống gia một nhà già trẻ đều vẫn là đắm chìm ở vui sướng bên trong, chiều nay không có xuống ruộng làm việc cũng không có việc gì, như vậy hỉ sự căn bản không thể chú ý đến xuống ruộng làm việc.</p>
+<p>Lương Tố cầm cái chổi tới quét rác, nàng nói “Ngày mai đi trấn trên tửu lầu ăn một đốn tốt, coi như là vì Trường Tự chúc mừng.”</p>
+<p>Tống Trường Tự giúp đỡ thu thập mặt bàn, Tống Nghiệp làm hắn buông tay đến một bên đi, chính mình tới thu thập mặt bàn.</p>
+<p>Tống Trường Tự bất đắc dĩ nói “So với đi tửu lầu ăn cơm, ta còn là tưởng ở trong nhà ăn một đốn tốt.”</p>
+<p>“Vậy nghe Trường Tự, ngày mai ta đi trấn trên mua chút rau trở về, chúng ta nhà mình làm một đốn ăn ngon.” Lương Tố biết nghe lời phải.</p>
+<p>Đem chuyện này định ra sau, đem sân quét tước sạch sẽ. Tống Nghiệp cùng Lương Tố rửa mặt sau, trong lòng còn vẫn luôn không có định ra tới, bọn họ cho rằng nhi tử đọc sách sau về sau liền ở trấn trên làm một cái trướng phòng tiên sinh chính là đỉnh xé trời, không nghĩ tới nhi tử khảo một cái tú tài.</p>
+<p>Lương Tố nói “Cũng không cần chỉ lo nhạc, nghe nói còn muốn đi Huyện học đọc sách, trong nhà muốn nhiều lấy điểm tiền cấp Trường Tự.”</p>
+<p>Tống Nghiệp nói “Đúng vậy, trong nhà là muốn nhiều lấy tiền cho Trường Tự.”</p>
+<p>Nói đến tiền bạc, bọn họ có chút phạm sầu, tưởng tượng đến Huyện thái gia còn thưởng hai mươi lượng bạc, trong lòng lại nhẹ nhàng lên.</p>
+<p>Lương Tố nhỏ giọng nói “Trong nhà còn có hai mươi lượng bạc, hơn nữa Huyện thái gia cấp hai mươi lượng bạc đủ dùng.”</p>
+<p>Tống Nghiệp nghe vậy mặt mày giãn ra, “Vẫn là muốn nhiều kiếm ít tiền, về sau các phương diện tiêu tiền địa phương nhiều.”</p>
+<p>Lương Tố đồng dạng cũng là gật gật đầu, cũng không thể làm trong nhà liên lụy Trường Tự tiền đồ. Bọn họ làm phụ mẫu vất vả một chút liền vất vả một chút, hài tử có cái này thiên phú liền không thể lãng phí.</p>
+<p>Khác một phòng Tống Minh Ngôn cùng Từ Trừng rửa mặt sau, Từ Trừng ghé vào trên giường hỏi Tống Minh Ngôn “Hạ Nha nói cữu cữu về sau phải làm quan, cữu cữu thật sự sẽ làm quan sao?”</p>
+<p>Tống Minh Ngôn cười sờ sờ Từ Trừng đầu “Còn sẽ không, đi ngủ sớm một chút.”</p>
+<p>Từ Trừng ngây thơ gật gật đầu, lôi kéo tiểu chăn cái ở chính mình cái bụng thượng. Tống Minh Ngôn đối tái giá một chút ý tưởng cũng không có, thủ Từ Trừng thì tốt rồi, hắn thổi ngọn nến, vỗ vỗ Từ Trừng phía sau lưng.</p>
+<p>Từ Trừng thực mau liền ngủ rồi.</p>
+<p>Tống Trường Tự cùng Hứa Tri Trú còn chưa ngủ, Hứa Tri Trú tâm tình thực hảo, hắn nằm ở trên giường có chút ngủ không được, Tống Trường Tự nằm ở trên giường có chút bất đắc dĩ.</p>
+<p>“Lại không ngủ, ngày mai liền khởi không tới.”</p>
+<p>Hứa Tri Trú nói “Ngày mai cho ngươi làm khánh công yến, lại không làm việc, hơn nữa ta muốn ngủ cũng ngủ không được.”</p>
+<p>Đại não vẫn luôn thực hưng phấn, Hứa Tri Trú chính mình ngủ không được cũng không chuẩn Tống Trường Tự ngủ, hắn chọc chọc hắn nói “Ngươi thi đậu tú tài sau đi Huyện học đọc sách, ta cùng đi với ngươi đi, tổng phải có người chiếu cố ngươi.”</p>
+<p>Tống Trường Tự trong lòng vừa động. Huyện học là nhất định phải đi, hắn cũng không bỏ được Hứa Tri Trú, nhưng muốn nói Hứa Tri Trú chiếu cố hắn, Tống Trường Tự vẫn là có chút không tin.</p>
+<p>Hứa Tri Trú vừa thấy Tống Trường Tự không có hé răng, hắn tức khắc có điểm nóng nảy “Làm sao vậy, ngươi không nghĩ mang ta đi, có phải hay không thi đậu tú tài tâm liền biến dã, ta như vậy đẹp phu lang ngươi đều chướng mắt?”</p>
+<p>“Không có, ta chỉ là đi trụ đã hơn một năm, sau đó tám tháng phân liền phải tham gia thi hương, ngươi muốn đi chúng ta liền một khối đi, dù sao đều là muốn thuê nhà.”</p>
+<p>Hứa Tri Trú khóe môi thượng kiều “Không sai, ta đi lúc sau, ngươi đi học tan học ít nhất có nóng hôi hổi đồ ăn có thể ăn, không cần đi tiệm ăn ăn.”</p>
+<p>Tống Trường Tự cười nói “Ngươi nói chính là.”</p>
+<p>“Kia đương nhiên, ta hiện tại đã là tú tài phu lang, nói tốt phải làm quan phu lang, tướng công ngươi còn phải hảo hảo nỗ lực.”</p>
+<p>Tống Trường Tự “……”</p>
+<p>Hứa Tri Trú ôm lấy Tống Trường Tự cánh tay, lay động một chút, cười cùng trộm tanh miêu giống nhau.</p>
+<p>Tống Trường Tự cười rộ lên, hắn hôn một cái Hứa Tri Trú cánh môi.</p>
+<p>Hôm sau Tống Nghiệp cùng Lương Tố liền ngồi xe bò tới rồi trấn trên, Lương Tố đi chọn mấy khối hảo thịt, còn đi tiệm vải xả một khối hảo nguyên liệu, tính toán cấp Tống Trường Tự làm một kiện tân y phục. Tống Nghiệp cũng đi mua một hồ rượu ngon, còn có quả nho, quả táo.</p>
+<p>Trước kia giống là cái dạng này trái cây, bọn họ đều luyến tiếc mua, hiện tại trong nhà ra một kiện đại hỉ sự có thể mua điểm nếm thử mới mẻ.</p>
+<p>Bọn họ mua xong đồ vật về đến nhà liền bắt đầu xử lý thịt, Tống Minh Ngôn cũng tới hỗ trợ. Một ngày công phu không đến, Tề Sơn thôn người đều biết Tống Trường Tự thi đậu tú tài.</p>
+<p>Không nghĩ tới Tống gia tiểu tử đọc sách thật thi đậu công danh.</p>
+<p>Trong thôn người lẩm nhẩm lầm nhầm, hiện tại xem Tống gia ánh mắt đều không giống nhau, xem Hứa gia ánh mắt cũng không giống nhau.</p>
+<p>Hứa Tôn Chính nghĩ đến nhà mình nhị con rể nói còn muốn làm quan, nếu là nhị con rể như vậy thông minh nói, nếu là thật làm quan, liên quan bọn họ Hứa gia đều có chỗ lợi.</p>
+<p>Tào Cầm cũng là cao hứng. Tuy nói Hứa gia là Tề Sơn thôn nhà giàu, nhưng bọn hắn đều là chân đất, hiện tại trong nhà ra tú tài, nói ra đi người khác đều phải xem trọng hai mắt.</p>
+<p>“Trong nhà còn có hai đoạn lạp xưởng, ta bắt được Tống gia đi.” Tào Cầm nói.</p>
+<p>Nàng đem lạp xưởng đưa đến Tống gia bị lưu lại cùng nhau ăn cơm, Lương Tố làm Từ Trừng đi Hứa gia đem Hứa Tôn Chính cùng Hứa Tri Từ cũng kêu lên tới, hai nhà một khối ăn một bữa cơm.</p>
+<p>Thi đậu tú tài náo nhiệt sau một lúc, Tống Trường Tự đi tìm nha dịch đem Tề Sơn thôn tuyển mà tuyển hảo, đem đất giao cho Tống Nghiệp cùng Lương Tố tới loại.</p>
+<p>“Cha, trong nhà mà đều treo ở ta danh nghĩa đi, như vậy có thể miễn thuế.”</p>
+<p>Khảo trung tú tài sau có 50 mẫu đất có thể miễn thuế.</p>
+<p>Tống Nghiệp đồng ý tới, cái này không cần cấp triều đình nộp thuế lại có thể tiết kiệm được không ít tiền.</p>
+<p>Hứa Tri Trú hung ba ba nhìn thoáng qua Tống Trường Tự.</p>
+<p>“Nếu là nhạc phụ nhạc mẫu tin được ta, cũng có thể treo ở ta danh nghĩa.” Tống Trường Tự cười nói.</p>
+<p>Hứa Tri Trú ánh mắt sáng lên nói “Ngươi là bọn họ nhị con rể, bọn họ đương nhiên tín nhiệm ngươi.”</p>
+<p>Trong thôn người thường ở sau lưng nói chuyện, có người gia trong lòng còn hối hận không có đem nhà mình nữ nhi cùng ca nhi gả cho Tống Trường Tự.</p>
+<p>Tốt xấu là cái tú tài, liền tính về sau thi không đậu cử nhân, tùy tiện ở một cái trấn trên làm tư thục tiên sinh một năm cũng có thể tích cóp hạ không ít gia sản.</p>
+<p>Bọn họ trong thôn người, đời này có thể ở trấn trên sinh hoạt cũng là tốt.</p>
+<p>Đem một ít việc vặt xử lý xong đã là ba ngày sau, còn có hai ngày Tôn Lục Chân xuất giá, Hứa Tri Trú tưởng đưa bạn tốt xuất giá sau, lại cùng Tống Trường Tự đi Kim Hà huyện.</p>
+<p>Tống Trường Tự gật đầu nói tốt, “Ta đi một chuyến Linh Lai thôn tìm Phùng huynh hỏi một câu hắn khảo trung không có.”</p>
+<p>Nếu là Phùng Tín Âu khảo trúng, hắn đi Kim Hà huyện liền có người làm bạn, hai người tới rồi trời xa đất lạ địa phương còn có thể lẫn nhau nâng đỡ.</p>
+<p>Linh Lai thôn cùng Tề Sơn thôn ly không xa, Tống Trường Tự đi đường liền đến Linh Lai thôn, đến cửa thôn hỏi đường sau tìm được Phùng gia.</p>
+<p>Hắn gõ viện môn “Phùng huynh ở sao?”</p>
+<p>Phùng Tín Âu liền ở trong sân, hắn nghe thấy Tống Trường Tự thanh âm còn có vài phần kinh hỉ, hắn nói “Tống huynh, mau tiến vào đi.”</p>
+<p>Tống Trường Tự tiến vào sau, Giang Trác cho hắn đổ một ly trà, Tống Trường Tự nói một tiếng tạ.</p>
+<p>Hắn vừa thấy Phùng Tín Âu khuôn mặt liền biết là gặp được chuyện tốt, trong lòng hiểu rõ, chắp tay nói “Chúc mừng Phùng huynh khảo trung tú tài.”</p>
+<p>Phùng Tín Âu cho rằng Tống Trường Tự hỏi nha dịch mới biết được chính mình khảo trúng, hắn cười nói “Ta còn là so ra kém Tống huynh, Tống huynh hôm nay tới tìm ta là vì cái gì?”</p>
+<p>“Ta tưởng chúng ta đều thi đậu tú tài, quá hai ngày sau ta sẽ mang phu lang một khối đi Kim Hà huyện Huyện học, ngươi muốn hay không cùng nhau?”</p>
+<p>Phùng Tín Âu trầm tư một lát đáp ứng xuống dưới “Khảo trung tú tài đã là ở ta ngoài ý liệu, ta tưởng khảo cử nhân khả năng tính thấp, nhưng vẫn là muốn đi thử một lần.”</p>
+<p>Tống Trường Tự “Hôm nay ta không có sự tình phải làm, ngươi còn có việc sao, chúng ta có thể đi trấn trên nhìn xem phu tử.”</p>
+<p>Phùng Tín Âu đang có ý này, hắn cùng Giang Trác nói một tiếng liền phải cùng Tống Trường Tự một khối đi.</p>
+<p>Giang Trác “Từ từ, ta cùng đi với ngươi, ta đi trấn trên tìm cha mẹ.”</p>
+<p>Phùng Tín Âu lên tiếng.</p>
+<p>Ba người tới rồi Thủy Ba trấn, Phùng Tín Âu nói “Chờ ta trước cùng Tống huynh đi gặp phu tử liền đi nhạc phụ trong nhà tiếp ngươi.”</p>
+<p>Giang Trác cười gật đầu “Hảo, kia ta chờ ngươi.”</p>
+<p>Giang Trác trong nhà khai một cái quán mì nhỏ, lúc ấy Giang Trác phải gả cho Phùng Tín Âu, trong nhà người còn không đồng ý, rốt cuộc bọn họ là trấn trên, Giang Trác gả đến trong thôn đi tính chuyện gì. Giang Trác một hai phải gả cho Phùng Tín Âu, Giang phụ Giang mẫu đành phải đồng ý. Thành thân sau, Giang phụ Giang mẫu đãi Phùng Tín Âu cũng là không lãnh không đạm.</p>
+<p>Đã nhiều ngày vẫn luôn ở trong nhà vội, Giang Trác còn không có nói cho trong nhà tướng công đã khảo trung tú tài.</p>
+<p>Hiện tại mới có không tới trấn trên đem cái này tin tức tốt nói cho cấp cha mẹ.</p>
+<p>Tống Trường Tự cùng Phùng Tín Âu mua một vò rượu còn có một ít trái cây đi tìm Lý tú tài.</p>
+<p>Tới rồi cửa, Tống Trường Tự trước gõ cửa.</p>
+<p>Sư nương tới mở cửa, vừa thấy là bọn họ hai cái lộ ra một cái cười “Các ngươi như thế nào tới, còn mang theo đồ vật, mau tiến vào ngồi.”</p>
+<p>“Lão Lý, ngươi học sinh tới tìm ngươi.”</p>
+<p>Sư nương bưng một hồ trà đặt ở trên bàn đá, Lý tú tài nghe thấy thanh âm liền từ bên trong ra tới.</p>
+<p>Hắn thấy là Tống Trường Tự cùng Phùng Tín Âu trong mắt hiện lên một tia kinh hỉ. Từ khi mùa đông trở lại trấn trên sau, Lý tú tài một nhà vẫn luôn vội vàng lão mẫu thân thể, ban đêm thời điểm hắn cũng sẽ thường thường nhớ tới chính mình này đó đệ tử, không nghĩ tới Tống Trường Tự cùng Phùng Tín Âu liền tới xem hắn.</p>
+<p>“Mau ngồi, uống trà.” Lý tú tài trên mặt mang cười, cho chính mình đổ một ly trà.</p>
+<p>Phùng Tín Âu chắp tay cung kính nói “Đa tạ phu tử, học sinh đã khảo trung tú tài.”</p>
+<p>Lý tú tài trong tay nước trà sái một ít ra tới, hắn buông chén trà không cấm vỗ tay cười to “Hảo hảo hảo.”</p>
+<p>Lý tú tài trong lòng cao hứng một trận, đảo mắt lại nhìn về phía Tống Trường Tự.</p>
+<p>Tống Trường Tự chắp tay nói “Học sinh bất tài cũng khảo trung tú tài.”</p>
+<p>Lý tú tài ở trấn trên cũng đã dạy không ít học sinh, lần này chỉ là bởi vì lão mẫu bệnh đi trong thôn, không nghĩ tới dạy ra hai cái tú tài.</p>
+<p>Phùng Tín Âu nói “Tống huynh vẫn là lần này viện thí đầu danh.”</p>
+<p>Lý tú tài nghe vậy trong lòng càng thêm vui sướng, “Hảo, hôm nay ta làm ông chủ, chúng ta đi tửu lầu ăn một đốn tốt.”</p>
+<p>Lý tú tài cùng trong nhà người ta nói một tiếng liền mang theo Tống Trường Tự cùng Phùng Tín Âu đi tửu lầu, ba người cho nhau nói một trận lời nói, nói đến muốn đi Huyện học đọc sách sự.</p>
+<p>“Huyện học là triều đình làm, ở bên trong ăn cơm chi tiêu không lớn, mấu chốt là thuê nhà chi tiêu khá lớn. Ta trước kia ở Huyện học đọc sách thời điểm, là ở Mật Giang hẻm bên kia thuê phòng, bên kia phòng ở liền ở trên phố chính là bên trong gia cụ đơn sơ một ít, tương đối an tĩnh, chung quanh cư trú người tương đối an tĩnh.”</p>
+<p>Lý tú tài nói “Kim Hà huyện còn có một chỗ tiền thuê càng tiện nghi, nhưng ta không kiến nghị các ngươi đi trụ quá tiện nghi phòng ở, bởi vì bên trong tam giáo cửu lưu người quá nhiều, dễ dàng sinh sự. Các ngươi là đi đọc sách, vẫn là muốn an tĩnh một chút hoàn cảnh.”</p>
+<p>Tống Trường Tự suy nghĩ một lát “Phu tử nói chính là.”</p>
+<p>Ba người cơm nước xong sau, Lý tú tài nói “Các ngươi nếu còn có nghi hoặc liền tới trong nhà tìm ta.”</p>
+<p>Phùng Tín Âu cùng Tống Trường Tự đồng thời gật gật đầu cảm tạ Lý tú tài hảo ý.</p>
+<p>“Tống huynh, ta muốn đi trước một chuyến nhạc phụ trong nhà liền không cùng một khối đi trở về.”</p>
+<p>Tống Trường Tự cùng Phùng Tín Âu tách ra.</p>
+<p>Tống Trường Tự trên người mang theo hai lượng bạc đi hiệu sách, hắn tính toán nhìn một cái hiệu sách có hay không đối thi hương có trợ giúp thư.</p>
+<p>Tác giả có lời muốn nói</p>
+<p>Tiểu Tống Tiếp tục nỗ lực</p>
+<p>Tiểu Hứa Đi trong huyện chơi [ che mặt nhìn lén ]</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong35.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong37.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "ta-phu-lang-la-cai-lam-tinh-xuyen-thu";
+const NOVEL_TITLE = "Ta phu lang là cái làm tinh [ xuyên thư ]";
+const CHAPTER_TITLE = "Chương 36 tính toán";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

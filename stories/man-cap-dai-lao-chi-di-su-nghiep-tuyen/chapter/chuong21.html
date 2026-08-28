@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 21</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Mãn cấp đại lão chỉ đi sự nghiệp tuyến
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 21</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong20.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong22.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Quá hai ngày Quý Hạc Vũ người đại diện liền tới rồi, Quý Hạc Vũ dọn vào công ty phân phối ký túc xá. Triệu gia chung cư lập tức an tĩnh lại, Quý Hạc Vũ như vậy vừa đi, bên cạnh tức khắc thiếu cái nấu kịch bằng hữu, Triệu Diệu còn có điểm không thói quen.</p>
+<p>Bất quá thực mau hắn lực chú ý đã bị chuyển dời đến Bùi Minh Chiêm mặt khác điện ảnh thượng, mới vừa xem xong Bùi Minh Chiêm 《 Nịch Hải 》, hắn phát hiện Bùi ảnh đế quả nhiên danh bất hư truyền, cuối cùng xoay ngược lại lại xoay ngược lại kia mấy tràng diễn chuyển biến làm hắn thiếu chút nữa bị mang nhập kịch trung cảm xúc giữa.</p>
+<p>Loại cảm giác này thập phần mới lạ, Triệu Diệu quyết định đem Bùi Minh Chiêm diễn đều xem một lần.</p>
+<p>Diêu Bạch lại đây đưa tư liệu, phát hiện hắn ca gần nhất luyến ái tổng nghệ cùng tình cảm sách tham khảo xem thiếu, ngược lại bắt đầu xem khởi Bùi Minh Chiêm kịch tới. Diêu Bạch mạc danh vui mừng, hắn ca xem Bùi Minh Chiêm kịch tổng so xem những cái đó ngốc bạch ngọt thanh xuân phim thần tượng tới bình thường chút, hắn cũng không cần lo lắng đề phòng ngày nào đó tương thân tương liền đem chính mình bồi.</p>
+<p>“Ca ngươi đây là đang xem cái gì kịch?” Diêu Bạch ở Triệu Diệu bên người ngồi xuống.</p>
+<p>Triệu Diệu nhìn không chớp mắt “《 Tầm Tiên 》.”</p>
+<p>Diêu Bạch nhìn TV liếc mắt một cái, thân xuyên cổ trang nam chính đang ở cùng người đánh lộn.</p>
+<p>“Trần tổng làm ta đem cái này đưa cho ngươi, hắn nói tuy rằng ngươi không quản sự, nhưng là ngẫu nhiên cũng phải đi Huy Hoa bên kia nhìn xem đi?” Hắn ca tự đầu tư Huy Hoa sau dem Tinh Thần đoàn đội mang qua đi, liền rốt cuộc không qua đi bên kia xem qua, phảng phất Huy Hoa cùng hắn không nhiều lắm quan hệ dường như.</p>
+<p>Triệu Diệu không chút để ý nói “Có một số việc ngươi bắt đầu quản, mặt sau liền ùn ùn không dứt toát ra tới. Trần Hệ có năng lực này, không cần ta nhọc lòng.”</p>
+<p>Diêu Bạch liếc hắn ca liếc mắt một cái, ân……</p>
+<p>Xác thật không cần nhọc lòng, hắn ca hứng thú không ở quản công ty thượng.</p>
+<p>Triệu Diệu không quản sự, có chút hội nghị có thể không ra tịch, nhưng là văn kiện vẫn là đến xem. Diêu Bạch gần nhất bắt đầu tiếp xúc Huy Hoa hạng mục, Trần Hệ có cái gì việc nhỏ thông thường đều là trực tiếp tìm hắn, hắn đem Trần Hệ yêu cầu văn kiện mang cho Triệu Diệu, sau đó nói “Đúng rồi ca, bên ngoài có ngươi tình ái tin tức, nghe sao?”</p>
+<p>Triệu Diệu tiếp nhận văn kiện, thuận tay phiên phiên, “Nói đi.”</p>
+<p>“Không ngừng Huy Hoa bên trong đang nói, ta phía trước ở Triệu thị đồng sự cũng đang nói.” Diêu Bạch cười nói “Bọn họ cư nhiên nói Tiểu Quý là ngươi bao dưỡng tiểu minh tinh, mà ngươi đầu tư Huy Hoa chính là ở phủng hắn.”</p>
+<p>Triệu Diệu nghe vậy nhíu mày “Nhàn rỗi không có việc gì, nói cái gì đều truyền ra tới?”</p>
+<p>“Khoa trương sự quá nhiều, muốn hay không ta cho ngươi niệm niệm?” Diêu Bạch đem bên ngoài truyền đường viền hoa tiểu liêu cùng Triệu Diệu đơn giản nói nói, Triệu Diệu càng nghe mày nhăn đến càng chặt.</p>
+<p>Triệu Diệu không nghĩ tới việc này đi lên, hắn đối đãi Quý Hạc Vũ liền cùng đối đãi vãn bối giống nhau, đời trước ở công ty dìu dắt tân công nhân thời điểm cũng không gặp truyền ra cái gì lời đồn tới.</p>
+<p>“Nên làm sáng tỏ làm sáng tỏ, nên áp cũng đè ép, Huy Hoa đoàn đội điểm này sự đều xử lý không tốt?”</p>
+<p>“Ai ai ai, hắn người đại diện tiếp nhận lúc sau lập tức liền đem việc này nói cho ta quyết định, tự nhiên là đè ép.” Diêu Bạch nói “Việc này quá hai ngày liền ngừng nghỉ, ta chẳng qua cùng ngươi nói một chút tình huống. Nhưng là ở giới giải trí hỗn tổng hội đề cập chút bát quái diễm nghe linh tinh, ca ngươi về sau vẫn là phải chú ý điểm, Tiểu Quý người thành thật, hôm nào đổi cái nữ minh tinh ngươi liền tẩy cũng tẩy không trắng, nhân gia xoát bài PR đều có thể xoát trời cao.”</p>
+<p>Diêu Bạch cấp Triệu Diệu phổ cập khoa học hạ giới giải trí xoát bài PR kịch bản, các loại nữ minh tinh hào môn dan díu, các loại kim chủ ùn ùn không dứt.</p>
+<p>Nói xong một hồi, Diêu Bạch còn kiên nhẫn giải thích nói “Giống ca ngươi như vậy còn trẻ, quá hai năm thành trong vòng nổi danh kim cương Vương lão ngũ, nói không chừng đi các loại trường hợp còn có người đi theo, trụ khách sạn có người bò giường, party thượng có người tá vị chụp ảnh, còn có cùng ngươi tiến cùng cái tiểu khu tới cái sống chung nghe đồn……”</p>
+<p>Triệu Diệu hỏi “Ngươi gần nhất tiểu thuyết lại xem nhiều?”</p>
+<p>Diêu Bạch phát điên “Văn học sáng tác đều là có hiện thực căn cứ hảo sao! Nếu không ngươi đi hỏi hỏi đại thiếu hắn có hay không bị nữ nhân bò quá giường!”</p>
+<p>“Triệu Trường Thước?” Triệu Diệu nhíu mày “Hắn trụ nhà cũ.”</p>
+<p>Nữ nhân muốn quá nhà cũ an bảo vòng không dễ dàng như vậy.</p>
+<p>Diêu Bạch “……” Phục, giải thích không thông.</p>
+<p>“Ngươi cùng Huy Hoa xã giao nói một chút, về sau có loại này nghe đồn trước tiên giải quyết rớt.” Triệu Diệu ánh mắt trở về cổ trang kịch thượng, “Liền điểm này việc nhỏ đều xử lý không tốt, Trần Hệ cũng không cần cho bọn hắn phát tiền lương.”</p>
+<p>Đăng đăng ——</p>
+<p>Triệu Diệu phục hồi tinh thần lại, phát hiện di động Wechat bắn ra mấy cái tân tin tức tới. Hắn hoa khai Wechat vừa thấy, phát giác Bùi Minh Chiêm lại cho hắn đã phát mấy tắc mất ngủ điều trị phổ cập khoa học văn chương.</p>
+<p>Trước hai ngày Bùi Minh Chiêm đi hắn đề cử bác sĩ khám bệnh, không mất ngủ tật xấu, chính là ban ngày bận quá có điểm lo âu. Hắn xem xong bác sĩ trở về có cùng Triệu Diệu nói lời cảm tạ, Triệu Diệu vừa nghe hắn chẩn bệnh kết quả, biết Bùi Minh Chiêm chỉ là ngẫu nhiên mất ngủ, đều không phải là trường kỳ ở vào mất ngủ trạng thái giữa.</p>
+<p>Nhưng lo âu từ trước đến nay cùng mất ngủ có quan hệ, Triệu Diệu mất ngủ tật xấu cũng là từ lo âu bắt đầu, vì thế hắn liền nhắc nhở Bùi Minh Chiêm vài câu, kết quả hai ngày này Bùi Minh Chiêm liền ngẫu nhiên cho hắn phát loại này đề cử văn chương tới.</p>
+<p>Triệu Diệu cầm lấy di động hồi phục câu cảm ơn.</p>
+<p>“Bùi Minh Chiêm diễn cổ trang là thật sự không tồi,” Diêu Bạch ngồi ở bên cạnh bồi Triệu Diệu xem TV, nhìn nhìn liền bắt đầu phun tào bên trong vai phụ nhược trí hành vi, mới vừa nói hai câu phát hiện hắn ca không ứng hòa hắn, liền nhìn đến hắn ca cầm di động đang ngẩn người, “Ca ngươi không xem TV sao?”</p>
+<p>Trên mạng về Bùi Minh Chiêm tân điện ảnh sự tuyên truyền càng ngày càng quảng, Triệu Diệu trong lòng lại thường thường nghĩ đến 《 Mê Ảnh 》 đoàn phim sự, Bùi Minh Chiêm xảy ra chuyện tiết điểm càng ngày càng gần, nhưng là hiện tại lại một chút tiếng gió cũng không ra tới.</p>
+<p>Rốt cuộc là ở đoàn phim ra sự, vẫn là ở đoàn phim ở ngoài?</p>
+<p>Này đó đều không thể nào biết được.</p>
+<p>Triệu Diệu không khỏi có điểm nóng nảy lên, tuy rằng hắn cố tình làm chính mình không quá đi chú ý những việc này, nhưng mà này hai đêm giấc ngủ chất lượng giảm xuống, mất ngủ dấu hiệu cũng có chút tăng thêm, hắn mới phát hiện chính mình lại khống chế không được chính mình suy nghĩ, vốn dĩ tưởng sửa lại loại này thói quen, lại càng thêm mà khó có thể khống chế lên. Hắn không hy vọng chính mình đời này lại bởi vì mất ngủ mà trở nên tố chất thần kinh lên, cho nên bất luận cái gì nguyên nhân dẫn đến hắn đều không thể xem nhẹ.</p>
+<p>“Ngày mai đi đoàn phim một chuyến đi.” Triệu Diệu ấn diệt màn hình di động.</p>
+<p>Diêu Bạch ngốc “Không phải đâu? Ở trong nhà thổi điều hòa không hảo sao? Phim trường như vậy nhiệt địa phương.”</p>
+<p>Hắn nói xong lại nghĩ đến sự “Ca ngươi nên sẽ không muốn đi xem Tiểu Quý đi? Đừng đi, chúng ta bên này mới vừa áp xuống tới, ngươi liền đi phim trường một chuyến, này nghe đồn chính là sẽ càng truyền càng thật sự.”</p>
+<p>Kim chủ đến phim trường cấp tiểu minh tinh chống lưng, bá đạo tổng tài văn đều là như vậy viết.</p>
+<p>Triệu Diệu một đốn “Ngươi suy nghĩ cái gì? Ngươi nếu là lo lắng cái này liền chọn cái hắn không an bài nhật tử đi.”</p>
+<p>Quý Hạc Vũ diễn chính là vai phụ, có vai chính suất diễn từ trước đến nay là đi theo vai chính an bài đi, cũng không phải mỗi ngày đều ở phim trường đợi.</p>
+<p>Diêu Bạch lên tiếng, “Vậy được rồi, phim trường ly chúng ta này có điểm xa, ngày mai ta sớm một chút lại đây.”</p>
+<p>Này qua lại đều phải nửa ngày thời gian, cũng không biết hắn ca trong lòng nghĩ như thế nào, đoàn phim kia địa phương lại nhiệt lại buồn, cũng không biết có gì hảo đi.</p>
+<p>“Từ từ.” Triệu Diệu khẽ nhíu mày, “Đoàn phim khách sạn ly đến gần sao?”</p>
+<p>Diêu Bạch cầm di động tay một đốn, “Ca ngươi ý gì?”</p>
+<p>“Tóm lại mấy ngày thời gian, qua lại cũng rất phiền toái.” Triệu Diệu dường như không có việc gì nói “Hai ngày này trụ khách sạn đi.”</p>
+<p>Diêu Bạch “???”</p>
+<p>Triệu Diệu nói trụ khách sạn liền trụ khách sạn, 《 Giang Hồ 》 chiếu trước tuyên truyền càng ngày càng dày đặc, Bùi Minh Chiêm thật muốn xảy ra chuyện cũng liền mấy ngày nay thời gian, cùng với công đạo người khác chú ý đoàn phim tình huống, còn không bằng chính mình đi hiện trường nhìn chằm chằm. Vừa vặn trong khoảng thời gian này Quý Hạc Vũ diễn đều đè ở tuần sau, hắn nhiều đãi mấy ngày cũng không có gì vấn đề.</p>
+<p>Diêu Bạch lo lắng đoàn phim an bài khách sạn người nhiều mắt tạp, hơn nữa ngẫu nhiên còn có diễn viên fan tư sinh đi theo, không thế nào an toàn, liền dò hỏi hắn ca ý kiến.</p>
+<p>“Bùi Minh Chiêm trụ đoàn phim an bài địa phương sao?” Triệu Diệu hỏi.</p>
+<p>Như thế ở Diêu Bạch cảm kích phạm vi ngoại, hắn gọi điện thoại hỏi hạ, “Không, Bùi Minh Chiêm trụ khách sạn xa chút, bất quá hắn chỉ có chụp đêm diễn thời điểm ở, mặt khác thời điểm đều ở tại nội thành chính mình chung cư.”</p>
+<p>Bùi ảnh đế chính mình ở thành phố S có phòng ở, ly nội thành gần chút.</p>
+<p>Triệu Diệu gật đầu “Vậy ở tại Bùi Minh Chiêm phụ cận đi.”</p>
+<p>“Cái gì phụ cận??” Diêu Bạch nghẹn lời, nghĩ nghĩ hỏi “Không phải đâu ca, ngươi bắt đầu truy tinh??”</p>
+<p>“Cùng Bùi Minh Chiêm cùng cái khách sạn.” Triệu Diệu nói xong lại hỏi “Cái gì truy tinh?”</p>
+<p>Diêu Bạch nghĩ đến Triệu Diệu hai ngày này vẫn luôn đang xem Bùi Minh Chiêm kịch, hiện tại lại yêu cầu cùng Bùi Minh Chiêm trụ cùng cái khách sạn, khó tránh khỏi hiểu sai, “Không, ngươi vui vẻ liền hảo.”</p>
+<p>Diêu Bạch cách thiên liền thu thập hành lý mang theo Triệu Diệu cùng Vương thúc trực tiếp vào ở phim trường phụ cận cao cấp khách sạn, ly ban đầu đoàn phim an bài đoàn phim nhân viên công tác xa một ít, sẽ không đụng tới đoàn phim phụ cận diễn viên tan tầm, nhưng cũng may hệ số an toàn cao cũng càng thoải mái một chút.</p>
+<p>Lưu Vương thúc ở khách sạn an bài, Triệu Diệu làm Diêu Bạch đưa hắn đi phim trường xem tình huống.</p>
+<p>Phim trường nhân viên công tác nghe nói Triệu tổng tới, vội vàng phái cái nhân viên công tác tới đi theo.</p>
+<p>Quay chụp hiện trường các loại thiết bị phóng, Triệu Diệu không đi quấy rầy những người khác quay phim, mà là tìm cái mát mẻ địa phương nhìn cách đó không xa quay chụp tình huống. Trừ bỏ đang ở quay phim diễn viên, nghỉ ngơi địa phương còn có không ít ngồi tiểu ghế gấp nghỉ ngơi các diễn viên, có đang xem kịch bản, còn có chính nhắm mắt nghỉ ngơi.</p>
+<p>Lều nội độ ấm so cao, quạt hô hô mà thổi.</p>
+<p>Triệu Diệu lần trước lại đây bên này thời điểm studio còn không có hoàn toàn đáp hảo, mà hiện tại đáp tốt studio đứng người, nhân viên công tác các tư này chức mà bận rộn. Trong không khí tràn ngập đủ loại hương vị, thật nhỏ động tác thanh, đạo diễn thanh âm, diễn viên thanh âm……</p>
+<p>Thực náo nhiệt, hắn cũng không chán ghét như vậy náo nhiệt.</p>
+<p>Triệu Diệu thực mau liền chú ý tới trong đó không giống người thường Bùi Minh Chiêm, hắn dựa ở thiết bị phụ cận, trong tay cầm bình nước khoáng, ánh mắt ngưng trọng nhìn quay chụp nơi sân nội tình huống.</p>
+<p>Nơi sân nội thực an tĩnh, chỉ có đang ở diễn kịch diễn viên tê tâm liệt phế tiếng hô.</p>
+<p>Triệu Diệu ánh mắt lại không được ngừng ở Bùi Minh Chiêm trên người, trước mắt người này ăn mặc cùng ngày thường không giống nhau, ăn mặc tùy ý rộng thùng thình trang phục biểu diễn, trang dung cũng thiên hướng với trung niên hóa, trên mặt râu thoạt nhìn cũng mấy ngày không quát.</p>
+<p>Diễn viên thật là thần kỳ, chỉ là trang phục cùng trang dung, Bùi Minh Chiêm liền có thể hoàn toàn biến thành một người khác.</p>
+<p>“Bùi ca, Triệu tổng lại đây.” Trợ lý Nhạc Nhạc nhắc nhở nói.</p>
+<p>Bùi Minh Chiêm lần này đem ánh mắt từ trong sân dịch hồi, quả nhiên ở bên kia nghỉ ngơi địa phương nhìn đến Triệu Diệu.</p>
+<p>Hắn như thế nào lại đây?</p>
+<p>Bùi Minh Chiêm hỏi “Hôm nay có Quý Hạc Vũ diễn?”</p>
+<p>“Không.” Trợ lý phiên phiên quay chụp biểu, “Hắn trước hai ngày chụp xong suất diễn, cùng vai chính suất diễn giống như đều an bài đến tuần sau.”</p>
+<p>Kia Triệu Diệu lại đây liền không phải vì Quý Hạc Vũ.</p>
+<p>Nhạc Nhạc nghi hoặc mà nhìn Bùi Minh Chiêm liếc mắt một cái, hắn phát hiện Bùi ca gần nhất giống như có điểm quá độ chú ý Triệu tổng, nghe nói hai người trước kia nhận thức, nhưng xem tướng chỗ trạng huống cũng giống như không phải rất quen thuộc.</p>
+<p>“Ta qua đi nhìn xem.” Bùi Minh Chiêm cầm trong tay đồ vật giao cho Nhạc Nhạc, nâng bước liền hướng Triệu Diệu nơi địa phương bước vào.</p>
+<p>Tác giả có lời muốn nói Diêu Bạch viết bút ký Dự phòng minh tinh ăn vạ 108 cái phương pháp.</p>
+<p>Ta vì ta ca rầu thúi ruột.</p>
+<p>……….</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong20.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong22.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "man-cap-dai-lao-chi-di-su-nghiep-tuyen";
+const NOVEL_TITLE = "Mãn cấp đại lão chỉ đi sự nghiệp tuyến";
+const CHAPTER_TITLE = "Chương 21";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

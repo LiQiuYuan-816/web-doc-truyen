@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 8 thiên lý nhân duyên nhất tuyến khiên</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Sau khi thức tỉnh đối chiếu tổ phu lang hắn nằm yên
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 8 thiên lý nhân duyên nhất tuyến khiên</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong7.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong9.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Ăn mặc sạch sẽ thể diện?” Lục Tùy mợ nương Vương Thủy Cần nghĩ nghĩ, “A Tùy ngày đó ở cái khê hố biên gặp phải?”</p>
+<p>“Nói là vào núi trước khê hố biên, kia ca nhi ở đánh cỏ heo.” Lục Tùy mẹ nói, cười thở dài nói, “Nhà ta kia khối đầu gỗ, phương diện này chính là không thông suốt, vừa ý cá nhân đều không hiểu được nhân gia là ai, còn phải ta cái này làm mẹ tới hỏi.”</p>
+<p>“Hại, này có cái gì, nói không chừng nhân gia ở ca nhi trước mặt liền thông suốt!” Lục Tùy mợ nương cũng cười nói, “Bất quá ngươi nói như vậy, ta nhưng thật ra nghĩ đến một người, hắn nói người này, nên không phải là Hưng Viễn gia tiểu nhi tử Thanh Đào đi?”</p>
+<p>“Nói như thế nào?”</p>
+<p>“Hưng Viễn gia có cái tiểu nhi tử là cái ca nhi, nga nha, kia kêu một cái có thể làm, sinh đến đảo không tính đặc biệt xinh đẹp, nhưng người bạch thật sự, khi còn nhỏ ôm ra tới chơi mỗi người đều phải tán một câu bạch. Hưng Viễn cùng hắn lão bà Hà Hương sủng đến cùng tròng mắt dường như, toàn Hạ gia thôn liền ca nhi nhà hắn cùng Hạ Miên không hạ quá điền.”</p>
+<p>“Kia sẽ không làm việc a?” Lục Tùy mẹ nhăn lại mi, nhà hắn không phải cái gì gia đình giàu có, quá kiều khí ca nhi vào cửa nhà nàng A Tùy chẳng phải là muốn mệt ch·ế·t?</p>
+<p>“Thật cũng không phải.” Lục Tùy mợ nương vẫy vẫy tay, “Thanh Đào tuy rằng không dưới điền, nhưng thông minh thật sự, thời trẻ cùng hắn ca biết chữ, nghe nói không cần tiên sinh, thư đọc đến so với hắn ca còn hảo, đi đâu gia ăn tịch, xem đầu bếp thiêu đồ ăn, xem một lần liền sẽ, còn có nữ hồng, thêu ra tới khăn chăn, đều xinh đẹp đến cùng cái gì dường như…… Ngươi nói ngươi nếu là có này ca nhi ngươi không bảo bối?”</p>
+<p>Nàng nói, chính mình cười nói “Nhà ta cái kia phải có như vậy thông minh có thể làm, đừng nói hạ điền, chính là đánh cỏ heo ta cũng không cho hắn đi!”</p>
+<p>Lục Tùy mẹ mày một chút giãn ra, cười nói “Kia đảo cũng là, như vậy thông minh lanh lợi, nơi nào bỏ được.” Một lát sau, lại hỏi, “Kia tới cửa làm mai mối người không ít đi?”</p>
+<p>“Hại, kia còn dùng nói?” Lục Tùy mợ nương nói, “Hắn mười lăm tuổi liền có người tới cửa, Hà Hương đau đến cùng cái gì dường như, nơi nào bỏ được hắn sớm như vậy gả đi ra ngoài, nghe nói đều không nói cho Thanh Đào, trực tiếp liền trở về, sau lại, ai, sau lại nói ra ngươi nhưng đừng ủ rũ……”</p>
+<p>“Cái gì?”</p>
+<p>Lục Tùy mợ nương đem Lý tú tài cùng Tôn gia sự đều nói, nghe được Lục Tùy mẹ tâm đều một chút lạnh.</p>
+<p>Tú tài gia cùng Tôn gia tốt như vậy điều kiện đều bị cự, nhà hắn loại này điều kiện, sợ là liền môn còn không thể nào vào được đi?</p>
+<p>Lục Tùy mợ nương nhìn cô em chồng này biểu tình, biết nàng đang lo lắng cái gì, nói</p>
+<p>“Bất quá ngươi cũng đừng lo lắng, A Tùy sinh đến như vậy xinh đẹp, lại cần mẫn lại kiên định, như vậy hán tử thượng chỗ nào tìm đi? Nói không chừng hai người duyên phận ở đâu! Ngươi về trước gia đi, cùng A Tùy nói nói Thanh Đào tình huống, hắn nếu là nguyện ý, hai ngươi thương lượng thương lượng, xem có thể cho nhiều ít lễ hỏi, đến lúc đó lại đến cùng ta nói, ta giúp các ngươi tìm cái bà mối, ta cùng bà mối cùng nhau tới cửa nói đi, ta cùng bọn họ là cùng thôn người, tuy không có nhiều ít thân cận, nhưng rốt cuộc là hiểu tận gốc rễ, vẫn là có thể nói chuyện được.”</p>
+<p>20260828-</p>
+<p>“Như vậy hảo.” Lục Tùy mẹ gật gật đầu, “Chính là muốn ngươi nhọc lòng……”</p>
+<p>“Nhìn ngươi nói, cháu ngoại việc hôn nhân ta không nhọc lòng ai nhọc lòng?” Vương Thủy Cần giữ chặt Lục Tùy mẹ tay, giơ giơ lên mặt nói, “Ta biết kia hai cái thế lực, các ngươi liền đem chúng ta đương mẹ ruột cữu thân mợ nương, chúng ta phu thê cũng không cầu cái gì, hắn không có thân muội tử, các ngươi kêu chúng ta một tiếng cậu mợ nương, chúng ta cao hứng.”</p>
+<p>Lục Tùy mẹ nghe xong, đều sắp khóc, trong mắt lóe nước mắt, cười nói</p>
+<p>“Hảo, hảo, a tỷ……”</p>
+<p>Lục Tùy mẹ trở về liền cùng Lục Tùy nói Hạ Thanh Đào tình huống, lại nói</p>
+<p>“…… Chỉ là không hiểu được cái này ca nhi có phải hay không ngươi nói cái kia.”</p>
+<p>Lục Tùy có một loại dự cảm, cái này kêu Hạ Thanh Đào ca nhi, hẳn là chính là kia một ngày hắn thấy người —— hắn đôi mắt quá xinh đẹp, đáy mắt quang giống ban đêm bầu trời tinh, cười rộ lên cả khuôn mặt đều đẹp, người như vậy, tự nhiên là thông minh lanh lợi.</p>
+<p>Đang ở ma lưỡi hái hắn dừng lại động tác, nói “Tiền ta có thể lại kiếm, lễ hỏi nói, nhà của chúng ta có thể ra hai mươi lượng.”</p>
+<p>Đảo không phải một hai phải so qua Tôn gia, chỉ là hắn tưởng cấp Hạ Thanh Đào nhất thể diện việc hôn nhân.</p>
+<p>Người bình thường gia cho dù là cô nương cũng liền 15 lượng, 18 lượng là đỉnh thiên, nhưng là ở hắn cảm nhận trung Hạ Thanh Đào không phải giống nhau ca nhi, hắn nguyện ý cấp Hạ Thanh Đào tốt nhất.</p>
+<p>Lục Tùy mẹ đầu tiên là ngẩn người, ngay sau đó nhìn nhà mình nhi tử kia kiên định thần sắc, lại là cười</p>
+<p>“Chính ngươi kiếm tiền, mẹ mặc kệ, cái kia ca nhi lại thông minh lanh lợi, chỉ là tương xem vẫn là muốn tương xem, vạn nhất nhận sai, lại là không đẹp, ta cùng ngươi mợ nương nói một câu.”</p>
+<p>“Ân.” Lục Tùy trên mặt gợn sóng bất kinh, vừa ý lại thình thịch nhảy, phảng phất lập tức liền phải đi tương nhìn dường như.</p>
+<p>Không biết Hạ Thanh Đào có thể hay không nhìn trúng chính mình? Hắn ánh mắt như vậy cao, chính mình lại là cái dạng này tình huống……</p>
+<p>Hắn nghĩ, nhanh hơn trong tay ma lưỡi hái động tác.</p>
+<p>Ngày hôm sau buổi tối.</p>
+<p>“Nơi nào?” Ngồi ở dưới đèn thêu khăn Hạ Thanh Đào nghi hoặc mà nhìn về phía chính mình mẹ. “Vừa mới thím nói?”</p>
+<p>Trần Hà Hương trở tay đóng cửa lại, ở Hạ Thanh Đào bên cạnh kéo trương ghế tre ngồi xuống, nói</p>
+<p>“Là nha, đó là ngươi Thủy Cần thím, nàng cùng chúng ta là cùng thôn, chỉ là trụ đến xa, bình thường không lớn lui tới, nhà nàng ca nhi kêu Hạ Hòa, đều kêu hắn Tiểu Hòa Tiểu Hòa, ngươi có nhận thức hay không?”</p>
+<p>Hạ Thanh Đào ngừng tay kim chỉ, nghĩ nghĩ nói “Mẹ ngươi nói ra đảo có điểm ấn tượng, chỉ là hắn so với ta tiểu, giống như không nói như thế nào nói chuyện.”</p>
+<p>“Đúng rồi.” Trần Hà Hương nói, “Vừa mới ăn qua cơm chiều, ta và ngươi a cha ở cửa thừa lương, nàng liền cùng ngươi nguyệt mai thím cùng nhau lại đây, nói trắng ra thiên đại gia đều ở vội, chỉ có thể lúc này lại đây.”</p>
+<p>Lúa mùa thu gặt, lập tức liền phải loại đông mạch, còn muốn phơi hạt thóc thu hạt thóc, từng nhà lúc này đều rất bận.</p>
+<p>“Nói như thế nào?”</p>
+<p>“Chính là nàng có cái biểu cháu ngoại, là Lục gia loan, năm nay 17 tuổi, là cái thợ săn, này hậu sinh ca sinh đến đặc biệt đặc biệt xinh đẹp, duyên sơn mười tám thôn tìm không ra so với hắn còn xinh đẹp tuổi trẻ hán tử, làn da bạch, người lại cao, Thủy Cần nói hắn cùng đại môn giống nhau cao, đại môn thấp một chút nhân gia hắn đi vào đều đến cúi đầu……” Trần Hà Hương nói, chính mình cười, “Quan trọng chính là người lại cần mẫn lại kiên định, không phải cái loại này cả ngày khoe khoang tám khản.”</p>
+<p>Hạ Thanh Đào nghe nghe, không biết như thế nào, liền nghĩ đến ngày đó ở khê hố biên gặp hán tử.</p>
+<p>Tâm không lý do thình thịch nhảy dựng lên.</p>
+<p>“Chỉ là hắn mấy năm trước a cha sinh bệnh không có, còn có cái mười bốn tuổi đệ đệ, cả nhà đều dựa vào hắn, hơn nữa hắn còn không phải hắn cha mẹ thân sinh, nói là vẫn luôn sinh không ra hài tử, ở sau núi khe núi nhặt, dưỡng không mấy năm liền sinh hắn đệ đệ.” Trần Hà Hương nói, điều chỉnh một chút dáng ngồi, ánh mắt dừng ở nhà mình ca nhi trên mặt, “Phòng ở liền tầm thường tam gian nửa, điền cũng bán đến chỉ còn tám mẫu, bất quá nghe nói trước đó vài ngày săn đầu lộc, trong nhà có chút tích tụ, nếu là hai nhìn trúng ý, nhà bọn họ có thể ra hai mươi lượng làm lễ hỏi.”</p>
+<p>“Phốc ——” Hạ Thanh Đào hoảng sợ, lại cảm thấy buồn cười, cùng chính mình mẹ nói giỡn nói, “Mẹ ngươi nhìn, này không được tình còn càng ngày càng tốt.”</p>
+<p>“Ngươi đứa nhỏ này!” Trần Hà Hương ở cánh tay hắn thượng chụp một chút, cười oán trách nói, “Ngươi cho rằng nói ra đi là cái gì hảo nghe lời? Người khác còn tưởng rằng nhà của chúng ta bán ca nhi đâu!”</p>
+<p>Nghĩ nghĩ, lại nghiêm túc mà nói “Nhà hắn điều kiện là kém một chút, bất quá thắng tại đây hậu sinh ca người không tồi, hơn nữa chịu cấp một cái không phải thân sinh nhi tử ra hai mươi lượng cưới con dâu, này mẹ cũng là cái phúc hậu người, mặt trên cũng không chị em dâu, ngươi gả qua đi cũng sẽ không bị tr·a t·ấ·n.”</p>
+<p>Hạ Thanh Đào không nói chuyện, hắn ẩn ẩn có trực giác, này hán tử chính là kia một ngày ở khê hố biên gặp được cái kia đại cao cái.</p>
+<p>Muốn thật là hắn, chẳng lẽ hắn cũng ở kia một ngày vừa ý chính mình? Bằng không như thế nào chịu ra nhiều như vậy lễ hỏi nha?</p>
+<p>Trần Hà Hương thấy nhà mình ca nhi không nói chuyện, tiếp tục nói “Ngươi Thủy Cần thím người ta cũng biết, là cái thực nhiệt tâm thực thật thành người, nàng nói được cũng thực trắng ra, không có khác bà mối dường như nói bốc nói phét, mẹ ý tứ là, không bằng trước tương xem một chút, muốn thật thành, nhà bọn họ cái này tình huống, hai mươi lượng vẫn là đến lấy, miễn cho ngươi bị người xem nhẹ đi, nói ngươi gả đến kém, chỉ là bọn hắn hai mươi lượng lấy lại đây, chúng ta đương trường liền còn hắn năm lượng, rốt cuộc hiện tại trở ra nhiều, về sau khổ vẫn là ngươi, chúng ta lại không phải thật bán ca nhi.”</p>
+<p>Hạ Thanh Đào nghe, đáy lòng mềm thành một mảnh đáy sông bùn dường như, gật gật đầu</p>
+<p>“Hảo, mẹ.”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong7.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong9.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "sau-khi-thuc-tinh-doi-chieu-to-phu-lang-han-nam-yen";
+const NOVEL_TITLE = "Sau khi thức tỉnh đối chiếu tổ phu lang hắn nằm yên";
+const CHAPTER_TITLE = "Chương 8 thiên lý nhân duyên nhất tuyến khiên";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
