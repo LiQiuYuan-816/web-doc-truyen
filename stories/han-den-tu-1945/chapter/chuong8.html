@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 8</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Hắn đến từ 1945
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 8</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong7.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong9.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Lão Chu a, vị này chính là?” Bên cạnh có cổ đông dò hỏi.</p>
+<p>Chu Khải Tông đồng dạng kinh nghi bất định mà nhìn đứng ở trước đài người bên cạnh, chính mình đại nhi tử là cái cái gì đức hạnh hắn so với ai khác đều rõ ràng, giờ phút này nhìn cái kia người trẻ tuổi, hắn trong lúc nhất thời lại có chút không dám nhận.</p>
+<p>Huống hồ Chu Thanh khi nào thành thành thật thật kêu lên hắn ba.</p>
+<p>Trước hai ngày ở trong điện thoại cũng là.</p>
+<p>Đột nhiên nói muốn tới đi làm.</p>
+<p>Liền hắn đi học khi học kia tam dưa hai táo, đối công ty kinh doanh càng là dốt đặc cán mai.</p>
+<p>Hắn lúc ấy nhả ra, bất quá chính là vì không cho hắn thật sự đem phòng ở bán. Cũng chắc chắn hắn đơn giản chính là tâm huyết dâng trào, xem hắn đệ đệ Chu Tùng vào công ty, khí bất quá thế nào cũng phải muốn đi theo tới tranh tranh nổi bật.</p>
+<p>Lúc trước tốt nghiệp đại học không phải không kêu hắn tới công ty đi theo học tập.</p>
+<p>Nhưng hắn khi nào chịu nghe qua?</p>
+<p>Chỉ là trước mắt tái kiến hắn, Chu Khải Tông đột nhiên không như vậy chắc chắn.</p>
+<p>Hắn nhìn trước mắt đại nhi tử, hồi phục bên cạnh cổ đông nói “Chu Thanh, ta làm hắn tới.”</p>
+<p>“Đây là Chu Thanh?!” Bên cạnh cổ đông từng cái lộ ra không thể tưởng tượng biểu tình, lại nhìn nhìn người, liền ngươi một câu ta một câu nói “Không sai, là Chu Thanh bộ dáng. Lần trước thấy đứa nhỏ này cũng là đã lâu phía trước đi, biến hóa cũng thật đại, chúng ta những người này là thật sự già rồi, già cả mắt mờ trong lúc nhất thời thế nhưng không có nhận ra tới.”</p>
+<p>Bọn họ này đó lão cổ đông đi theo Chu Khải Tông cũng có thật nhiều năm.</p>
+<p>Lập tức liền lấy ra trưởng bối thân phận nói “Chu Thanh a, ngươi chịu tới công ty đi làm là chuyện tốt, cũng thay ngươi ba chia sẻ chia sẻ.”</p>
+<p>“Đúng vậy, ngươi ba nhiều không dễ dàng, cũng không thể lại giống như trước kia như vậy lăn lộn.”</p>
+<p>Chu Thanh trên mặt mang theo thoả đáng mỉm cười, không phản bác, nhưng là cũng không theo tiếng.</p>
+<p>Chu Khải Tông làm công ty quyết sách người, có lý tưởng của chính mình cùng trách nhiệm.</p>
+<p>Nhưng Chu Thanh gánh vác thân thể này, đứng ở một cái nhi tử góc độ, hắn không cho rằng phụ tử đi đến như nước với lửa nông nỗi là một người trách nhiệm. Chu Thanh nguyện ý xưng hô một tiếng ba, là căn cứ vào thân thể này thiết không ngừng huyết thống quan hệ, là nguyên tự hắn trong xương cốt giáo dưỡng.</p>
+<p>Nửa giờ sau, Chu Khải Tông văn phòng.</p>
+<p>Hơn 50 tuổi người ngồi ở bàn làm việc mặt sau, sắc mặt cứng đờ hỏi một câu “Thân thể thế nào?”</p>
+<p>“Cũng không tệ lắm.” Chu Thanh không muốn nhiều lời.</p>
+<p>Chu Khải Tông nhíu mày nhìn hắn hai mắt. Nếu Chu Thanh vẫn là trước kia cái kia thái độ, hắn đại có thể giống lần trước trò chuyện như vậy giáo huấn hắn, đem công ty tình trạng, hắn hôn nhân quan hệ lợi và hại nhất nhất thuyết minh, nhưng hiện tại những lời này, hắn phát hiện chính mình nói không nên lời.</p>
+<p>Thừa nhận một cái phụ thân mềm yếu, trốn tránh, sai lầm, vốn là gian nan.</p>
+<p>Đặc biệt là đối thượng hiện tại cặp kia bình tĩnh vô cùng đôi mắt, hắn cảm thấy như là bị một cái tát hung hăng phiến ở trên mặt.</p>
+<p>Hắn cuối cùng không nhắc lại cái này đề tài, chỉ là từ trong ngăn kéo lấy ra một phần văn kiện.</p>
+<p>“Đây là ngươi tốt nghiệp thời điểm chuẩn bị cho ngươi kia phân nhậm chức hợp đồng, cùng ngươi đệ đệ là giống nhau, nếu nguyện ý tới đi làm, kia liền hảo hảo làm.”</p>
+<p>Chu Thanh đi qua đi đem hợp đồng cầm lấy tới phiên phiên.</p>
+<p>Thực mau lại thả trở về.</p>
+<p>“Như thế nào? Ngại chức vị thấp?” Chu Khải Tông ngẩng đầu nói.</p>
+<p>Chu Thanh ngón tay còn ấn ở trên hợp đồng, nhìn Chu Khải Tông nói “Ta nhớ rõ công ty trước hai năm có một cái tây bộ chiến lược kế hoạch, sau lại chết non đúng không, ta tưởng khởi động lại cái này kế hoạch.”</p>
+<p>Chu Khải Tông mặt mày nháy mắt sắc bén lên.</p>
+<p>Hắn nói “Chu Thanh, khai công ty không dựa ngươi đầu óc nóng lên là có thể làm lên, minh bạch sao?”</p>
+<p>Chu Thanh kéo cái ghế ngồi xuống.</p>
+<p>Lại từ trong bao lấy ra một phần văn kiện đệ đi lên, mở miệng nói “Công ty trước mắt đã tới rồi mềm nhũn thời kì cuối, ngài hẳn là rất rõ ràng, lại tiếp tục như vậy đi xuống đơn giản hai cái kết quả, phá sản cùng với giải tán. Hai năm trước ngài thử cứu lại cùng thay đổi, sau lại chuyển hình lại lần nữa thất bại, kế hoạch gác lại. Trữ Khâm Bạch rót vốn đích xác cho công ty ngắn ngủi hy vọng, nhưng ngài càng rõ ràng, hắn đều không phải là vì từ Chu thị đạt được lợi nhuận. Cái này xí nghiệp bất quá là hắn cùng Thịnh Vũ tập đoàn đánh cờ cuối cùng một liều nâng lên lực, hắn thắng được xinh đẹp, hiện giờ tùy thời có thể bứt ra, nhưng công ty vận mệnh giống nhau vô pháp viết lại.”</p>
+<p>Chu Khải Tông mở ra văn kiện thời điểm, từ lúc bắt đầu tùy ý đến càng ngày càng nghiêm túc.</p>
+<p>Đặc biệt là nghe thấy Chu Thanh nói lúc sau, hắn từ văn kiện ngẩng đầu, phức tạp mà nhìn hắn nói “Này đó đều là Trữ Khâm Bạch cùng ngươi nói?”</p>
+<p>Chuyện này Chu Thanh cũng không có tính toán giấu giếm hoặc là nói dối.</p>
+<p>“Đây đều là ta chính mình căn cứ vào công ty mấy năm nay phát triển mạch lạc giản dị đến ra. Ngài trong tay cũng chỉ là một cái bước đầu phân tích, cụ thể, còn cần càng kỹ càng tỉ mỉ số liệu đối lập mới có thể làm.”</p>
+<p>Chu Khải Tông ánh mắt liền càng phức tạp.</p>
+<p>Hắn lại tiếp tục sau này phiên.</p>
+<p>Càng lộn càng kinh ngạc.</p>
+<p>Phân tích thật sự tường tận, chuyên nghiệp trình độ không thể so công ty số liệu phân tích sư kém.</p>
+<p>Từ ngành sản xuất so đối, công ty tiền cảnh, thị trường định vị cùng lợi và hại, đem công ty trước mắt khốn cảnh nhất nhất nói ra, thậm chí là thẳng chỉ yếu hại.</p>
+<p>Chu Khải Tông không cảm thấy chính mình nhi tử có bổn sự này.</p>
+<p>Hắn thậm chí hoài nghi hắn hay không là tìm chuyên nghiệp nhân sĩ làm cái này phân tích báo cáo thư.</p>
+<p>Chu Thanh đồng dạng biết này thực dễ dàng khiến cho người hoài nghi.</p>
+<p>Nhưng hắn tổng không thể vẫn luôn giấu giếm.</p>
+<p>Sinh ý thượng sự hắn luôn là thục lạc, khi còn nhỏ là mưa dầm thấm đất, hai mươi tuổi khi là Chu gia sản nghiệp chỉ có hắn một người chống.</p>
+<p>Hắn sau lại thân phận rất nhiều.</p>
+<p>Nhiều đến liền chính hắn đều cảm thấy, năm đó Chu gia thiếu gia Chu Thanh đã sớm không có, nhưng học quá đồ vật sẽ không quên.</p>
+<p>Tựa như thời đại không giống nhau, công ty vận chuyển hình thức, lý niệm, sản phẩm toàn bộ đều ở biến.</p>
+<p>Nhưng trăm khoanh vẫn quanh một đốm, đương hắn quyết định thượng thủ, những cái đó khắc vào hắn trong đầu đồ vật liền sẽ nhất nhất hiện lên.</p>
+<p>Chu Khải Tông xem hắn không tính toán giải thích.</p>
+<p>Cũng không cưỡng cầu, hắn chỉ là khép lại văn kiện nói “Ngươi nếu muốn làm cũng có thể, nhưng ngươi biết cái này kế hoạch gác lại bản chất là công ty trước mắt tài chính cùng thực lực thác không dậy nổi này phân kế hoạch vận chuyển. Nói ngắn gọn, công ty có thể cho ngươi trợ lực sẽ rất ít.”</p>
+<p>Nguyên bản là muốn cho hắn biết khó mà lui.</p>
+<p>Kết quả Chu Thanh chỉ là gật gật đầu, “Không có việc gì, ngài chịu đồng ý là được.”</p>
+<p>Nói xong chính sự, Chu Khải Tông đột nhiên hỏi “Ta nghe nói ngươi dọn đi Trữ Khâm Bạch nơi đó ở?”</p>
+<p>Chu Thanh nhướng mày “Bằng không ta có chỗ ở?”</p>
+<p>Chu Khải Tông tức khắc bị đổ đến xấu hổ không thôi.</p>
+<p>Hắn cũng là ngày đó nhận được Chu Tùng điện thoại mới nhớ tới, lúc ấy Thư Mỹ Lệ mỗi ngày ở bên tai hắn nhắc mãi, nói tiểu nhi tử từ nhỏ hiểu chuyện cũng không giống hắn đại ca nơi nơi loạn tiêu tiền, hiện giờ đi làm đường xá lại xa, khiến cho hắn ở tạm một chút hắn ca ca phòng ở.</p>
+<p>Chờ đến hắn ca tỉnh, liền đem phòng ở đằng ra tới.</p>
+<p>Lúc ấy Chu Thanh đã kết hôn, lại ra như vậy đại sự, bừng tỉnh mất đi nhi tử kinh đau làm hắn sinh ra xưa nay chưa từng có áy náy. Này phân áy náy cũng có một bộ phận cho hắn tiểu nhi tử, rốt cuộc từ nhỏ đến lớn hai cái nhi tử hắn cũng chưa như thế nào quản quá.</p>
+<p>Trong lúc nhất thời chịu không nổi nữ nhân dong dài, liền nhả ra.</p>
+<p>Hiện giờ lại hồi tưởng, chuyện này quá thiếu suy xét.</p>
+<p>Chu Khải Tông đốn hai giây, như là cố tình ở cùng hắn giải thích, “Phòng ở ngươi đệ đệ đã dọn ra đi, về sau mặc kệ là để đó không dùng vẫn là chính mình trụ, chỉ cần không bán đều tùy ngươi.”</p>
+<p>Chu Thanh không tỏ thái độ.</p>
+<p>Phi làm Chu Tùng dọn ngay từ đầu là vì bán, còn có một chút thật là vì nguyên chủ cảm thấy bất bình.</p>
+<p>Hiện giờ Chu Tùng dọn đi, chính hắn cũng vào công ty, kỳ thật phòng ở liền tính không bán, hắn về sau từ đông hồ dọn đi cũng không tính toán đi trụ.</p>
+<p>Nhưng này đó liền không cần thiết nói cho Chu Khải Tông.</p>
+<p>Chu Thanh đang định từ Chu Khải Tông văn phòng rời đi thời điểm, Chu Tùng vừa lúc tiến vào.</p>
+<p>Chu Tùng hiển nhiên là cố tình tới ngẫu nhiên gặp được, còn một hai phải giả bộ một bộ thực kinh ngạc bộ dáng, nhìn nói “Ca, như thế nào tới công ty tìm ba cũng không nói một tiếng? Ta hảo đi xuống tiếp ngươi đi.”</p>
+<p>Cái này Chu Tùng thoạt nhìn một bộ khôn khéo bộ dáng, nhưng nói chuyện làm việc là thật sự không quá thượng được mặt bàn.</p>
+<p>Chu Thanh tái hảo tính tình, thấy này thái độ, cũng nói một câu “Ta không phải lần đầu tiên tới công ty, biết lộ, liền không phiền toái ngươi tiếp.”</p>
+<p>Trước kia Chu Thanh phỏng chừng không thiếu tới đòi tiền, cũng không gặp Chu Tùng lấy đương quyền người tự cho mình là, còn một hai phải xuống lầu tiếp hắn.</p>
+<p>Sẽ có này phản ứng, đơn giản chính là nghe nói hắn cũng muốn tới công ty đi làm tin tức.</p>
+<p>Chu Tùng bị nghẹn một câu, khóe miệng cười cứng lại rồi.</p>
+<p>Trước một giây Chu Khải Tông mới vừa thích ứng đại nhi tử hiện giờ chuyển biến, trước mắt lại xem chính mình hai cái nhi tử đứng chung một chỗ, mới kinh ngạc phát hiện khác biệt to lớn.</p>
+<p>Từ trước Chu Thanh kia thật là từ ăn mặc đến dáng người, nào nào không vừa mắt.</p>
+<p>Tiểu nhi tử tuy rằng sinh hoạt cá nhân hỗn loạn, nhưng tốt xấu biết thu liễm, ở trước mặt hắn cũng từ trước đến nay quy củ.</p>
+<p>Nhưng hiện tại một đối lập, bối không đủ rất, vai không đủ khoan. So với Chu Thanh trên mặt cái loại này thân thể không tốt tái nhợt khí sắc, tiểu nhi tử mí trên sưng vù, bước chân phù phiếm, hiển nhiên tối hôm qua không biết lại cùng cái nào nữ nhân lêu lổng một đêm.</p>
+<p>Chu Khải Tông lập tức cau mày đối Chu Tùng nói “Ngươi ca từ ngày mai bắt đầu, chính thức tiếp nhận công ty hai năm trước định ra cái kia chiến lược kế hoạch. Ngươi cũng nên đem ngươi những cái đó lung tung rối loạn quan hệ đoạn sạch sẽ, trong công ty cả ngày truyền đến tin đồn nhảm nhí, giống bộ dáng gì!”</p>
+<p>Chu Tùng nguyên bản còn rất bất mãn, nhưng vừa nghe đến hắn ba đối với Chu Thanh an bài liền an tâm rồi.</p>
+<p>Rốt cuộc cái kia cái gì chiến lược kế hoạch căn bản là không được.</p>
+<p>Làm Chu Thanh đi làm cùng trục xuất còn kém không nhiều lắm.</p>
+<p>Hắn cái này tâm tình khá hơn nhiều, thực nghe lời gật gật đầu nói “Đã biết.”</p>
+<p>Ứng xong còn không quên quay đầu lại đối với Chu Thanh nói “Ca, về sau chúng ta ở một cái công ty công tác, chiếu cố nhiều hơn. Còn có a, ngươi phải nhớ kỹ nhiều về nhà ăn cơm, ba mẹ đều nhớ thương ngươi đâu.”</p>
+<p>Chu Khải Tông thuận miệng tiếp một câu “Có thời gian liền trở về ăn bữa cơm, mang lên…… Mang lên Khâm Bạch cùng nhau.”</p>
+<p>“Trữ ca sợ là không có thời gian đi?”</p>
+<p>Chu Tùng lập tức liền nhìn Chu Thanh nói “Ca, nếu kết hôn vẫn là đến hảo hảo quá, tuy rằng trong nhà cùng công ty đều tùy thời lưu trữ ngươi vị trí, nhưng rốt cuộc thân phận không giống nhau. Trữ ca hắn công tác bận rộn như vậy, bên ngoài cho dù có chút cái gì không dễ nghe lời nói ngươi cũng đừng thật hướng trong lòng đi, lại giống như trước kia giống nhau chỉ biết đem người càng đẩy càng xa.”</p>
+<p>Chu Khải Tông nhíu mày “Cái gì không dễ nghe?”</p>
+<p>“Ba, ngươi còn không biết sao?” Chu Tùng kinh ngạc nói “Bên ngoài đều nói Trữ ca cùng một cái kêu Nhậm Kỳ Hiên minh tinh điện ảnh ở bên nhau. Việc này ta xem tám phần là thật sự, nhưng ngài cũng đừng thượng hoả, rốt cuộc ta ca còn có thể tới đi làm chứng minh vấn đề không lớn, chúng ta cũng không thể thượng vội vàng đem người cấp đắc tội a.”</p>
+<p>Chu Khải Tông dùng dò hỏi ánh mắt nhìn về phía Chu Thanh.</p>
+<p>Chu Thanh chỉ cảm thấy buồn cười.</p>
+<p>Một cái hai mắt luống cuống, đối nhi tử quan tâm thập phần hữu hạn, thả liền tính tưởng quản cũng không hề lập trường phụ thân.</p>
+<p>Một cái tự đạo tự diễn, liền kém ở trước mặt hắn xướng vừa ra “Ta biết ngươi quá thật sự thảm” dị mẫu huynh đệ.</p>
+<p>Chu Thanh đành phải nói “Không nhọc các ngươi lo lắng. Hắn xác thật rất bận, về nhà ăn cơm không cần thiết.”</p>
+<p>Chu Tùng hiển nhiên không chịu dễ dàng từ bỏ chèn ép hắn cơ hội.</p>
+<p>Vẻ mặt lo lắng nói “Vẫn luôn như vậy cũng không được, nếu không ca ngươi vẫn là cùng Trữ ca gọi điện thoại hỏi một chút, rốt cuộc người một nhà ngồi ở cùng nhau, không có gì là nói không khai.”</p>
+<p>Chu Thanh bình tĩnh “Ta không hắn điện thoại.”</p>
+<p>Chu Tùng “Không có việc gì, ba có a.”</p>
+<p>Chu Khải Tông so với ai khác đều biết trận này hôn nhân là chuyện như thế nào, nhưng hắn trước mắt liền như vậy bị không nhãn lực thấy tiểu nhi tử hố, đặt tại nơi đó đánh cũng không phải, không đánh cũng không phải.</p>
+<p>Hắn tổng không thể thật sự đi chỉ trích người ở bên ngoài cùng người khác truyền tai tiếng.</p>
+<p>Nhưng cái gì cũng không làm, giống như cũng không đúng.</p>
+<p>Chu Thanh liền cùng cái người ngoài cuộc giống nhau, nhìn Chu Khải Tông ở tiểu nhi tử tha thiết chờ đợi trong ánh mắt, bát thông Trữ Khâm Bạch điện thoại.</p>
+<p>Điện thoại thật lâu mới bị chuyển được.</p>
+<p>“Chu tổng?” Chu Thanh nghe thanh âm là Phạm tỷ tiếp, “Tìm Khâm Bạch a? Hắn nói sự đâu. Ai, gần nhất chính là vội…… Lần trước quảng cáo chụp xong lập tức lại có công tác tìm tới môn, này không liền gia đều vài thiên lại không đi trở về sao…… Có rảnh đi trong nhà ăn cơm? Này hẳn là hẳn là, Chu tổng mời sao có thể chối từ, có rảnh nhất định tới cửa bái phỏng.”</p>
+<p>Nhân gia nói được khách khách khí khí, thậm chí không có trực tiếp cự tuyệt.</p>
+<p>Nhưng ngươi chính là biết chính mình bị có lệ.</p>
+<p>Chu Khải Tông treo điện thoại, trầm mặc.</p>
+<p>Chu Tùng liền kém cười ra tiếng.</p>
+<p>Chu Thanh vốn dĩ đương xem diễn, nhưng giờ phút này đối thượng một cái lão phụ thân muốn nói lại thôi ánh mắt.</p>
+<p>Hắn vẫn là quyết định nhắc nhở hai câu “Ta cùng hắn không có cảm tình đáng nói, ngài cũng nên biết hắn vì cái gì sẽ đáp ứng cùng ta kết hôn, thật sự không cần thiết làm loại sự tình này.”</p>
+<p>Bên cạnh Chu Tùng còn tưởng nói chuyện.</p>
+<p>Chu Thanh một ánh mắt qua đi. Chu Tùng không thể hiểu được đã bị sợ tới mức ngậm miệng.</p>
+<p>Chu Thanh “Chuyện này dừng ở đây.”</p>
+<p>Hắn xoay người đi ra ngoài.</p>
+<p>Chu Tùng kinh nghi bất định mà đứng ở tại chỗ.</p>
+<p>Hắn lần trước thấy Chu Thanh cảm thấy thực không giống nhau, nhưng vừa mới cái loại này thật sự cảm thấy không kiên nhẫn, biểu lộ ra tới lực áp bách, không cần mặt lạnh, khiến cho người áp lực đẩu tăng.</p>
+<p>“Ba.” Chu Tùng là thật sự tưởng nói, cái này Chu Thanh cũng quá kỳ quái.</p>
+<p>Hắn nào còn có quá khứ đinh điểm bóng dáng.</p>
+<p>Đáng tiếc Chu Khải Tông cũng không có chú ý tới vừa mới động tĩnh, hoàn hồn thấy Chu Tùng còn ở nơi này, tức giận nói “Còn không ra đi làm việc, đi làm đến trễ suốt hai cái giờ ngươi rất có mặt?”</p>
+<p>Chu Tùng chọc giận quá mức.</p>
+<p>Ra cửa thấy Chu Thanh đứng ở cửa thang máy.</p>
+<p>Đi qua đi, song song đứng, mở miệng nói “Xác thật, này trảo không được nam nhân tâm, cảm tình cùng tiền tài dù sao cũng phải bắt lấy giống nhau. Công ty nên cho ngươi kia một nửa, ta tương lai tất nhiên sẽ không bạc đãi ca.”</p>
+<p>Chu Thanh không lắm phiền chán.</p>
+<p>Hắn nghiêng người, “Biết cái gì kêu bao tải trang lúa mạch sao?”</p>
+<p>“Có ý tứ gì?” Chu Tùng phản xạ có điều kiện hỏi.</p>
+<p>Chu Thanh lắc đầu “Không có việc gì, ngươi Trữ ca đối với ngươi đánh giá.”</p>
+<p>Nhưng hắn cùng Trữ Khâm Bạch bất đồng.</p>
+<p>Hắn thất lễ nữa, cũng cũng không giáp mặt mắng chửi người bao cỏ.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong7.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong9.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "han-den-tu-1945";
+const NOVEL_TITLE = "Hắn đến từ 1945";
+const CHAPTER_TITLE = "Chương 8";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

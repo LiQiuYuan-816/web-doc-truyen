@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 6</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Hắn đến từ 1945
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 6</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong5.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong7.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Chu Thanh một đêm vô mộng, ngày hôm sau tỉnh lại đều phải đã quên tối hôm qua vào cửa tiểu nhạc đệm.</p>
+<p>Kết quả hắn mới vừa mở ra cửa phòng, liền có một cái nửa người cao, tản ra màu lam nhạt quang hình trứng trụ hoạt đến trước mặt hắn. Tràn ngập kim loại khuynh hướng cảm xúc hoạt bát nam trung âm truyền ra tới, “Chu tiên sinh, buổi sáng tốt lành.”</p>
+<p>Chu Thanh vững chắc bị hoảng sợ.</p>
+<p>Máy móc mặt trên cứng nhắc lớn nhỏ trên màn hình nhảy lên một cái mang mũ dạ, chính ngả mũ khom lưng trí lễ thành niên kiến mô nam tính.</p>
+<p>Chu Thanh không tiếp xúc quá loại này sản phẩm, ngay từ đầu còn tưởng rằng giống điện thoại giống nhau, một khác đầu có cái chân nhân.</p>
+<p>Hắn nhíu mày thử mở miệng “Ngươi hảo, xin hỏi ngươi là?”</p>
+<p>“Chu tiên sinh, ta là chủ nhân Trữ Khâm Bạch tư nhân quản gia, ngươi có thể kêu ta Charlie. Ta ba ba Snow tiến sĩ ở sáng tạo ta thời điểm, đem người sử dụng bạn lữ thiết trí thành có thể cùng chung công năng quan trọng thành viên. Thí nghiệm đến ngài làm chủ nhân hợp pháp phối ngẫu, phục vụ công năng đem tự động đối ngài mở ra.”</p>
+<p>Chu Thanh lúc này mới phản ứng lại đây đều không phải là có người.</p>
+<p>Hơn nữa hắn tổng cảm thấy cái này Charlie rất giống thời đại cũ cái loại này hí kịch diễn viên, ngữ điệu giơ lên, tràn ngập hài kịch hiệu quả.</p>
+<p>Chu Thanh nhạt nhẽo mà đối với nó nói “Charlie, ta tưởng chủ nhân của ngươi nhất định không biết bạn lữ cùng chung cái này công năng, bằng không hắn có thể tức giận đến nhảy dựng lên.”</p>
+<p>“Không không không, Chu tiên sinh.” Charlie nói “Chủ nhân của ta là cái giàu có tài hoa cùng năng lực thành thục nam tính, hắn tuyệt đối sẽ không làm ra tức giận đến dậm chân loại này có thất thể diện sự tình. Đương nhiên ta thừa nhận, hắn có đôi khi khắc nghiệt đến làm người chán ghét, nhưng ngươi nhất định sẽ thích hắn, không phải sao?”</p>
+<p>“Không phải.”</p>
+<p>Chu Thanh cảm thấy hiện tại khoa học kỹ thuật thật sự phi thường thần kỳ, đã tới một loại khó có thể tưởng tượng nông nỗi.</p>
+<p>Hắn hỏi “Phía trước ta như thế nào chưa thấy qua ngươi?”</p>
+<p>Trên màn hình người làm cái bất đắc dĩ nhún vai buông tay động tác, “Hắn luôn là chê ta nói nhiều, giống nhau đều sẽ làm ta đãi ở hắn tư nhân rạp chiếu phim ngủ. Nhưng ngươi biết, hắn uống rượu sau phản ứng tổng hội trì độn một ít. Nga, đúng rồi, hắn thông thường say rượu sau cảm xúc đều không tốt lắm, ta tưởng hắn có lẽ yêu cầu một ly mật ong thủy.”</p>
+<p>Chu Thanh “Mật ong thủy cũng không thể làm hắn cao hứng lên.”</p>
+<p>Charlie tựa hồ mắc kẹt một cái chớp mắt, uể oải “Giống như không sai.”</p>
+<p>“Cho nên hắn không cần mật ong thủy.”</p>
+<p>“Kia hắn yêu cầu cái gì?”</p>
+<p>“Hắn không cứu.”</p>
+<p>Charlie hỏng mất, “Thiên nột, vậy nên làm sao bây giờ?”</p>
+<p>“Ngươi đổi cái chủ nhân đi.”</p>
+<p>Trữ Khâm Bạch đầu đau muốn nứt ra mà đi ra cửa phòng khi, thấy chính là ăn mặc áo ngủ, đứng ở hành lang người đang ở ý đồ bắt cóc một đài AI trí tuệ nhân tạo.</p>
+<p>Hắn không chỉ có tạo chủ nhân dao.</p>
+<p>Còn hứng thú dạt dào thượng hạ nghiên cứu, chọc chọc nơi này, điểm điểm nơi đó.</p>
+<p>Charlie ở các loại dụ dỗ điều kiện hạ, không ngừng phát ra cái loại này khóc chít chít làm người ghê tởm thanh âm, nói “Ta không dám, chủ nhân của ta sẽ đánh gãy ta chân.”</p>
+<p>Chu Thanh nhìn một chút mặt đất, vỗ vỗ nó an ủi “Sẽ không, ngươi không có chân.”</p>
+<p>Trữ Khâm Bạch đi lên trước, giơ tay ấn thượng màn hình.</p>
+<p>“Ngươi như vậy chỉ biết đem nó tàn phá đến chết cơ.”</p>
+<p>“A?” Chu Thanh nghiêng đầu nhìn thần không biết quỷ không hay xuất hiện người, phản xạ có điều kiện đáp lại “Phải không?”</p>
+<p>Trước mắt Trữ Khâm Bạch đại khái là say rượu nguyên nhân, sắc mặt không tốt lắm, trải qua một đêm cằm lộ ra một tầng màu xanh lơ hồ tra. Mí mắt nếp uốn gia tăng, nào còn có đinh điểm TV thượng tây trang phẳng phiu đại minh tinh bộ dáng.</p>
+<p>Một cái thô ráp suy sút nam nhân mà thôi, cũng liền lớn lên anh tuấn điểm.</p>
+<p>“Đẹp sao?” Trữ Khâm Bạch hỏi.</p>
+<p>Chu Thanh từ hắn trong giọng nói nghe ra chính mình bị nhìn chằm chằm khó chịu, lắc đầu “Xấu.”</p>
+<p>Trữ Khâm Bạch tựa hồ bị hắn khí ở.</p>
+<p>“Charlie!”</p>
+<p>“Chủ nhân.”</p>
+<p>“Lăn trở về đi ngủ.”</p>
+<p>“Hảo đi, ta đi rồi, Chu tiên sinh tái kiến.”</p>
+<p>Chu Thanh cảm thấy có chút buồn cười, nhưng đối với Charlie rời đi hắn vẫn là có điểm quyến luyến khó xá.</p>
+<p>Quay đầu liền đối thượng Trữ Khâm Bạch nhíu mày xem kỹ ánh mắt.</p>
+<p>Chu Thanh hỏi trước hắn “Ta khí cầu đâu?”</p>
+<p>“Ném.” Hắn nói.</p>
+<p>Chu Thanh ngữ khí bình tĩnh “Không ngoài ý muốn, ngươi ôm khí cầu mắt đỏ bộ dáng cùng kia con thỏ giống nhau như đúc, ta đoán ngươi sẽ không bỏ được trả lại cho ta.”</p>
+<p>“Chu Thanh.” Trữ Khâm Bạch ngữ khí hàm chứa cảnh cáo “Ngươi trụ tiến vào là vì thử ta nhẫn nại trình độ sao?”</p>
+<p>Chu Thanh nghiêng đầu “Sinh khí? Này chỉ là làm ngươi ngưng hẳn ta cùng Charlie tiếp tục giao lưu một cái tiểu vui đùa, ta cho rằng đem người so sánh thành nào đó tiểu động vật, ít nhất làm hắn thoạt nhìn sẽ tương đối làm cho người ta thích.”</p>
+<p>Trữ Khâm Bạch ngữ khí lạnh cả người “Ngươi là đang mắng ta súc sinh?”</p>
+<p>Chu Thanh mặt lộ vẻ kinh ngạc, qua hai giây, khẳng định “Kia này tuyệt đối là một hồi thiên đại hiểu lầm.”</p>
+<p>Đề tài oai quá xa, Chu Thanh lựa chọn kịp thời ngưng hẳn trận này tai nạn.</p>
+<p>Đứng ở cửa thang lầu triển lộ cơ bản nhất lễ phép cùng giáo dưỡng, nghiêng người nhường đường nói “Trữ tiên sinh trước hết mời.”</p>
+<p>Trữ Khâm Bạch liếc hắn liếc mắt một cái, lướt qua hắn xuống lầu.</p>
+<p>Thích đối với một đống trình tự nói chuyện, còn thích con thỏ.</p>
+<p>Trữ Khâm Bạch hợp lý hoài nghi người này không phải mất trí nhớ, mà là thoái hóa.</p>
+<p>Hai người lần đầu ngồi ở cùng trương trên bàn cơm.</p>
+<p>Đều là có thể làm lơ những người khác tồn tại, chính mình làm chính mình sự tình người.</p>
+<p>Trữ Khâm Bạch dùng cứng nhắc, Chu Thanh thói quen xem báo cùng tập san.</p>
+<p>Lẫn nhau gian không lời nào để nói.</p>
+<p>Trương tẩu ra tới thời điểm, Chu Thanh nghĩ tới cái gì, mở miệng nói “Trương tẩu, tuần sau bắt đầu liền không cần chuẩn bị ta cơm trưa.”</p>
+<p>“Không chuẩn bị cơm trưa?” Trương tẩu sửng sốt, “Không ở nhà sao?”</p>
+<p>“Đúng vậy, ta muốn bắt đầu đi làm.”</p>
+<p>Cái này không ngừng Trương tẩu, đối diện Trữ Khâm Bạch đều ngẩng đầu nhìn hắn một cái.</p>
+<p>Trương tẩu nhíu mày “Ngươi bộ dáng này đi chỗ nào đi làm a? Bác sĩ không phải dặn dò ngươi đến hảo hảo tĩnh dưỡng, ít nhất nửa năm nội không cần mệt nhọc.”</p>
+<p>“Không có việc gì.” Chu Thanh cười cười “Ta chú ý một chút là được.”</p>
+<p>Trương tẩu vẫn là vẻ mặt không đồng ý.</p>
+<p>Thấy Chu Thanh không nghe lời, liền nhìn về phía Trữ Khâm Bạch, “Khâm Bạch, ngươi khuyên nhủ.”</p>
+<p>Trữ Khâm Bạch mở miệng, lại không phải khuyên can, chỉ là đơn thuần hoài nghi, “Cái nào địa phương sẽ muốn ngươi?”</p>
+<p>Chu Thanh lời nói thật lời nói thật “Chu thị tập đoàn.”</p>
+<p>Trữ Khâm Bạch xả hạ khóe miệng “Cũng là, đi cho ngươi cái kia bao cỏ đệ đệ đánh đánh tạp vẫn là hành.”</p>
+<p>Chu Thanh đều đã thói quen.</p>
+<p>Hắn chỉ là hỏi “Ngươi nhận thức Chu Tùng?”</p>
+<p>“Gặp qua một mặt.” Trữ Khâm Bạch cúi đầu nhìn cứng nhắc nói “Rốt cuộc Chu Khải Tông phàm là có cái có điểm thật bản lĩnh nhi tử, hắn cũng không đến mức vội vã đồng ý ta rót vốn hợp tác đề nghị, còn một hai phải đem chính mình đại nhi tử tặng cho ta.”</p>
+<p>Ở chuyện này thượng, Chu Thanh rõ ràng đây là nói vô giải đề.</p>
+<p>Hắn đạt được tân sinh quyền lợi, đồng thời thừa nhận cái này thân phận mang đến hết thảy hảo cùng không hảo, những người khác an bài cùng đánh giá.</p>
+<p>Đến nỗi sau này đi như thế nào, đây là chính hắn sự tình.</p>
+<p>Chu gia công ty Chu Thanh ở trên mạng hiểu biết quá.</p>
+<p>Sáng lập thời gian tuy rằng không ngắn, nhưng nửa đường vài lần chuyển hình. Huy hoàng nhất thời điểm là không sai biệt lắm mười mấy năm trước, dẫm trúng lúc ấy internet quật khởi sóng triều, lấy sinh sản điện tử nguyên kiện phát triển tới rồi cường thịnh thời kỳ.</p>
+<p>Nhưng suy yếu tốc độ cũng phi thường kinh người.</p>
+<p>Chu Thanh nghiên cứu quá công ty giá cấu, nhìn ra được tới dẫn đầu người dã tâm bừng bừng, nhưng rõ ràng theo không kịp thời đại phát triển.</p>
+<p>Hắn bảo lưu lại nguyên thủy công ty chế độ cùng hệ thống, cái này quyết sách không thể nói là sai lầm, chỉ có thể nói qua với bảo thủ. Internet thời đại biến chuyển từng ngày, trí năng nghiên cứu phát minh, tân nguồn năng lượng sinh sản, cao cấp trang bị chế tạo đều ở cuồn cuộn đi phía trước đẩy mạnh, một khi bỏ lỡ hoàn toàn cải cách thời cơ, suy sụp bất quá là hoặc sớm hoặc vãn vấn đề.</p>
+<p>Có thể kiên trì mười năm, Chu Khải Tông cái này phụ thân trong miệng đem tinh lực đều đặt ở công ty, lời này tất nhiên không giả.</p>
+<p>Mà Chu Thanh ý tưởng rất đơn giản.</p>
+<p>Không phải cái gì thay thế nguyên chủ con kế nghiệp cha, cũng không thế hắn đi tranh đoạt nguyên bản nên thuộc về hắn kia bộ phận đồ vật.</p>
+<p>Chỉ là như vậy một cái cơ hội vừa lúc xuất hiện ở trước mặt hắn, mà hắn coi trọng, là Chu thị phía sau vài thập niên căn cơ, là cái này xí nghiệp hiện giờ tưởng từ bỏ rồi lại không thể phóng thủ cựu kia bộ phận.</p>
+<p>Mặc dù già rồi, rỉ sắt, chuyển bất động.</p>
+<p>Những cái đó kéo dài ở một cái xí nghiệp huyết mạch tồn tại, tựa như một trận cương cân thiết cốt đứng ở chỗ đó.</p>
+<p>Dàn giáo loang lổ, lại cũng đủ củng cố.</p>
+<p>Hắn muốn thử xem cứu sống nó.</p>
+<p>Trữ Khâm Bạch cảm thấy hắn là đi cấp Chu Tùng đánh tạp, Chu Thanh cũng không cãi cọ.</p>
+<p>Hắn phải làm sự cùng Trữ Khâm Bạch hoàn toàn không giống nhau, hắn ở vào xã hội nhất mũi nhọn nhất loang loáng cái kia vị trí, thanh sắc khuyển mã, chung quanh đều là đèn tụ quang. Chửi bới cùng vinh quang cùng tồn tại, nhất cử nhất động vạn người chú mục.</p>
+<p>Mà hắn bất đồng, thời đại cũ Chu Thanh, thích hợp đứng ở sau cơn mưa màn trời hạ.</p>
+<p>Nghênh đón chính là một hồi mặt trời mới mọc mọc lên ở phương đông, vẫn là hoàng hôn ngày mộ, chỉ làm phong biết.</p>
+<p>Chuông cửa vang lên tới thời điểm, Trương tẩu đi mở cửa.</p>
+<p>Trần Đăng Đăng trát đuôi ngựa từ cửa thăm tiến đầu, cười nhỏ giọng hỏi Trương tẩu “Trữ ca tỉnh sao?”</p>
+<p>“Tỉnh, ăn cơm sáng đâu.”</p>
+<p>Trần Đăng Đăng cứ yên tâm lớn mật mà vào cửa đổi giày.</p>
+<p>Kết quả đi đến nhà ăn vừa thấy, phát hiện còn có một người ở.</p>
+<p>Tự lần trước chính mắt thấy Trữ ca đối Chu Thanh thái độ sau, nàng hoàn toàn không biết có nên hay không chào hỏi, cũng không biết hiện tại hai người ngồi ở cùng một cái bàn thượng ăn cơm, có phải hay không bão táp trước yên lặng.</p>
+<p>Nhưng thật ra Chu Thanh quay đầu lại thấy nàng xấu hổ đứng ở chỗ đó.</p>
+<p>Cười hỏi “Buổi sáng tốt lành, ăn cơm sao?”</p>
+<p>“Ăn qua.” Trần Đăng Đăng nhỏ giọng ứng một chút.</p>
+<p>Ứng xong rồi đi xem Trữ Khâm Bạch, phát hiện nàng Trữ ca từ đầu tới đuôi liền cấp ánh mắt cũng chưa cho chính mình.</p>
+<p>Trần Đăng Đăng liền đánh bạo ở bàn dài bên cạnh trên ghế ngồi xuống.</p>
+<p>Ngồi không đến hai giây, thiếu chút nữa hét lên, nàng nhìn Khâm Bạch khiếp sợ nói “Trữ ca ngươi trong ánh mắt vì cái gì có hồng tơ máu a?! Ngươi hôm nay quảng cáo quay chụp còn muốn nửa ngày đâu! Ngươi không ngủ sao?”</p>
+<p>“Ồn muốn chết.” Trữ Khâm Bạch cũng không ngẩng đầu lên, “Câm miệng.”</p>
+<p>Trần Đăng Đăng bị nghẹn một chút.</p>
+<p>Chu Thanh ngồi ở đối diện buồn cười nhắc nhở nói “Các ngươi Trữ ca đêm qua uống đại rượu, tâm tình cự kém.”</p>
+<p>Trữ Khâm Bạch nhìn chằm chằm hắn liếc mắt một cái, Trần Đăng Đăng tắc a một tiếng.</p>
+<p>Nàng cúi đầu nhanh chóng từ trong bao tìm kiếm thuốc nhỏ mắt, một bên nói thầm “Như thế nào lại uống rượu a? Ngươi có bệnh bao tử a, hơn nữa ngươi mỗi lần uống rượu không riêng dễ dàng đau đầu, sắc mặt đều rất kém cỏi, ngươi còn không hộ da. Lên không được kính nhãn hiệu phương bên kia lại nên có lấy cớ nói chúng ta kéo dài thời gian.”</p>
+<p>Trữ Khâm Bạch tựa hồ bị lải nhải thanh âm phiền đến không được, ngẩng đầu tức giận nói “Ta hiện tại liền rất đau đầu, an tĩnh, đừng nói chuyện.”</p>
+<p>Trần Đăng Đăng tiếp tục nhỏ giọng “Chính là Trữ ca ngươi thực đỏ, lại không cần phải xã giao, đi chỗ nào uống thành như vậy sao, biết ngươi uống rượu Phạm tỷ muốn hỏi.”</p>
+<p>“Trần Đăng Đăng.” Trữ Khâm Bạch kêu trợ lý đại danh.</p>
+<p>Thành công sợ tới mức tiểu trợ lý cấm thanh, còn không quên uy hiếp “Nói cho Phạm Toàn liền khấu ngươi tiền lương. Nàng lời nói so ngươi còn nhiều.”</p>
+<p>Trần Đăng Đăng ở nhà mình lão bản trước mặt có vẻ là như thế yếu đuối dễ khi dễ, hỏi không ra nguyên do, quay đầu đối thượng Chu Thanh, đáng thương mà nhíu lại tế mi hướng hắn phình phình quai hàm, tiết ra một hơi tới.</p>
+<p>Chu Thanh bị tiểu cô nương đậu cười.</p>
+<p>Hắn cười, Trần Đăng Đăng liền cảm thấy chính mình lão bản đôi mắt mù.</p>
+<p>Này Chu tiên sinh khí chất đỉnh hảo, người lại đẹp, hắn lão bản còn phải tìm cái cái dạng gì mới tính vừa lòng a.</p>
+<p>Nửa giờ sau, Trần Đăng Đăng cầm áo khoác đứng ở huyền quan chỗ chờ Trữ Khâm Bạch.</p>
+<p>Tài xế Tiểu Lâm đã ở bên ngoài đợi.</p>
+<p>Trần Đăng Đăng nhìn nhìn thời gian, còn kịp, liền đem lực chú ý hướng cách đó không xa ngồi ở trên sô pha Chu Thanh trên người nhìn thoáng qua.</p>
+<p>Ngay sau đó nhỏ giọng kinh ngạc cảm thán “Chu tiên sinh muốn ăn như vậy nhiều dược a.”</p>
+<p>Trữ Khâm Bạch sửa sang lại hảo cổ áo, đi theo hướng bên kia nhìn thoáng qua.</p>
+<p>Chu Thanh hôm nay không cần ra cửa, cho nên xuyên một thân miên chất đồ ở nhà.</p>
+<p>Một quyển gạch hậu thư mở ra ở trên bàn trà.</p>
+<p>Hắn một tay cầm một phủng màu sắc rực rỡ dược, một tay cầm ly nước.</p>
+<p>Xem trong chốc lát, nghĩ tới ăn mấy viên, xem trong chốc lát, ăn mấy viên.</p>
+<p>Có dược đại khái là khổ, hắn không quá rõ ràng mà nhíu nhíu mi, ánh mắt từ đầu đến cuối cũng chưa từ thư thượng dịch khai.</p>
+<p>Trữ Khâm Bạch mặt vô biểu tình thu hồi tầm mắt.</p>
+<p>“Đi rồi.” Hắn nói.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong5.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong7.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "han-den-tu-1945";
+const NOVEL_TITLE = "Hắn đến từ 1945";
+const CHAPTER_TITLE = "Chương 6";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
