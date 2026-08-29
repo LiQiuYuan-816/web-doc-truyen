@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 219</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Rời khỏi giới thể dục sau ta thành Trù Thần
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 219</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong218.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong220.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“TV trước khán giả, lập tức muốn bắt đầu, chính là vượt rào 110 mét đấu loại, lần này ở vượt rào 110 mét trong lúc thi đấu, quốc gia của ta đã lâu mà có hai vị tuyển thủ đồng thời đạt được Giải Vô Địch Thế Giới dự thi tư cách, bọn họ chính là lập tức muốn lên sân khấu chuẩn bị dự thi Lộ Mạnh Phàm cùng Thôi Lạc Hằng.”</p>
+<p>Kênh Thể Dục phát sóng trực tiếp gian, theo lịch thi đấu đẩy mạnh đến vượt rào 110 mét đấu loại, Thiệu Mẫn Nhất cùng Lý Sâm hai người bắt đầu giới thiệu nổi lên Lộ Mạnh Phàm cùng Thôi Lạc Hằng hai người.</p>
+<p>“Lộ Mạnh Phàm là quốc gia của ta vượt rào 110 mét hạng mục danh tướng, ở Thôi Lạc Hằng quật khởi phía trước, gần hai năm quốc nội vượt rào 110 mét hạng mục đại kỳ vẫn luôn là khiêng ở Lộ Mạnh Phàm trên vai, tuy rằng cùng Thôi Lạc Hằng so sánh với, Tiểu Lộ đã xem như một viên lão tướng, nhưng là trên thực tế, Lộ Mạnh Phàm năm nay cũng mới 25 tuổi, đúng là đương đánh chi năm, trước mặt cái này tuổi tác, thuộc về vượt rào cản tuyển thủ hoàng kim tuổi tác, chúng ta cũng có thể chờ mong Tiểu Lộ ở cái này chu kỳ nội, thành tích thượng có thể đạt được một cái trọng đại bay vọt.”</p>
+<p>“Theo Lữ Thắng Bân huấn luyện viên nói, Tiểu Lộ hiện tại huấn luyện phương án cũng có tân điều chỉnh, nếu thuận lợi nói, kế tiếp một năm Tiểu Lộ thành tích cũng đem tiến vào bùng nổ kỳ, hy vọng Tiểu Lộ xác thật có thể cùng Lữ huấn luyện viên theo như lời giống nhau, ở kế tiếp một năm thời gian, có một cái tương đối tốt tăng lên.”</p>
+<p>Thiệu Mẫn Nhất cùng Lý Sâm hai người ở giới thiệu qua đường Mạnh Phàm cùng hắn hiện trạng sau, nhìn đường đua thượng đang theo nhân viên công tác chỉ dẫn lên sân khấu Thôi Lạc Hằng, lại đem đề tài chuyển hướng về phía Thôi Lạc Hằng.</p>
+<p>“Úc, Tiểu Thôi ở hôm nay trong lúc thi đấu, là đấu loại đệ nhất tổ lên sân khấu.” Thiệu Mẫn Nhất nói, đồng thời nhìn mắt trong tầm tay đấu loại đệ nhất tổ tuyển thủ tương quan tư liệu “Lần này đấu loại đệ nhất tổ, tương đối tới nói là đấu loại phân tổ trung thực lực nhất mạnh mẽ một tổ, trừ bỏ chúng ta Thôi Lạc Hằng ở ngoài, mặt khác 6 vị tuyển thủ phân biệt đến từ nước Mỹ, Jamaica, Cyprus, Nam Phi, Italy cùng Bahrain, mặt khác còn có một vị này đây cá nhân danh nghĩa dự thi tuyển thủ, mà vị này lấy cá nhân danh nghĩa dự thi tuyển thủ, vượt rào 110 mét hạng mục người yêu thích đối hắn hẳn là thập phần quen thuộc, hắn chính là đến từ Nga, nhân xưng vượt rào 110 mét đương đại người thống trị Vladimir.”</p>
+<p>“Khả năng có bộ phận người xem các bằng hữu đối Vladimir còn không phải quá hiểu biết, hắn là năm trước 18 niên độ bên ngoài mùa giải, vượt rào 110 mét hạng mục thượng duy nhất một cái chạy tiến 13 giây nội tuyển thủ, năm trước vượt rào 110 mét hạng mục thượng sở hữu chạy tiến 13 giây trong vòng thành tích, đều là từ Vladimir một người sáng tạo, mà năm ngoái vượt rào 110 mét xếp hạng thế giới tiền mười thành tích, trong đó có 8 cái thành tích đều đến từ chính hắn.”</p>
+<p>Nói tới đây, Lý Sâm đều không tự chủ được phát ra tán thưởng thanh âm “Ở cái này thành tích dưới, nói Vladimir là đương đại vượt rào 110 mét người thống trị, nói vậy hẳn là không có người sẽ đưa ra phản đối ý kiến.”</p>
+<p>Cùng thời gian, thể dục kênh internet phòng live stream nội, có bộ phận qua đi không có quá mức chú ý vượt rào 110 mét hạng mục người qua đường cũng bị cái này thành tích cấp chấn ra tới.</p>
+<p>【 mẹ nó, có ý tứ gì? Năm trước vượt rào 110 mét thế giới trước 10 thành tích, 8 cái đều là tên này? 】</p>
+<p>【 =口= đây là nơi nào tới thần tiên, liền này ngưu bức thành tích, lần này Giải Vô Địch Thế Giới cảm giác cũng không có trì hoãn đâu……】</p>
+<p>【 di, bất quá nói lên, vì cái gì hắn này đây cá nhân danh nghĩa dự thi? Nga, đúng rồi, mấy ngày nay xem thi đấu, giống như đều không có nhìn đến Nga đội a??? 】</p>
+<p>【 không ngừng là mấy ngày nay đi? Phía trước thế giới điền kinh tiếp sức đại tái, kia cũng không có Nga đội a! Đây là sao hồi sự? 】</p>
+<p>Công bình làn đạn thượng, mọi người trò chuyện trò chuyện liền phát hiện cái này điểm mù —— không biết vì cái gì, Nga đội điền kinh tuyển thủ như là biến mất giống nhau.</p>
+<p>【……_( 3)∠】_ các ngươi mới phát hiện a? 】</p>
+<p>Rốt cuộc có người toát ra tới phun ra một câu tào, sau đó lập tức có người hỏi cái này là chuyện gì xảy ra —— rốt cuộc trong TV mặt Thiệu Mẫn Nhất cùng Lý Sâm hai người cũng không có nhắc tới điểm này, tựa hồ là cam chịu mọi người đều đã biết là chuyện như thế nào giống nhau.</p>
+<p>Làn đạn thượng điền kinh mê nhóm cũng không có úp úp mở mở, thực mau liền có người cấp ra đáp án.</p>
+<p>【15 năm thời điểm cứ như vậy, khụ khụ, bởi vì Nga có đại lượng tuyển thủ sử dụng thuốc kích thích trường hợp, cho nên ở 15 năm thời điểm đã bị tước đoạt Liên Đoàn Điền Kinh Quốc Tế thành viên quốc thân phận, từ kia lúc sau, Nga điền kinh tuyển thủ muốn tham gia Liên Đoàn Điền Kinh Quốc Tế tổ chức thi đấu, cũng chỉ có thể là cá nhân danh nghĩa……】</p>
+<p>【_( 3)∠】_ không ngừng là như thế này…… Bọn Tây giống như còn không giao nộp Liên Đoàn Điền Kinh Quốc Tế cho bọn hắn phạt tiền, nếu không giao nộp phạt tiền nói, khả năng về sau bọn Tây tuyển thủ liền cá nhân danh nghĩa dự thi trao quyền đều phải lấy không được, đến lúc đó Nga tuyển thủ mới kêu thật biến mất không thấy đâu. 】</p>
+<p>????</p>
+<p>Lần đầu tiên ăn đến cái này dưa người qua đường nhóm quả thực một cái tại chỗ chiến thuật ngửa ra sau Cư nhiên còn có loại sự tình này?</p>
+<p>【=. = kỳ thật không ngừng là điền kinh thi đấu a, cái kia cái gì mùa đông hạng mục không phải cũng đúng vậy sao? Phía trước bình xương đông áo sẽ thời điểm, bọn Tây tuyển thủ cũng đều là trung lập tuyển thủ thân phận dự thi đi? 】</p>
+<p>Trên thực tế, Nga thuốc kích thích sự kiện phía trước quốc nội cũng lục tục phát quá nhiều lần báo đạo, công bình làn đạn thượng có người như vậy sau khi nói qua, cũng lục tục có người qua đường nhớ tới chuyện này, lại kết hợp Vladimir thành tích, không tránh được có một ít không xong liên tưởng.</p>
+<p>【 khụ khụ…… Kia cái này Vladimir đại lão, sẽ không cũng?……】</p>
+<p>Bất quá lập tức liền có người đem cái này liên tưởng cấp đánh trở về.</p>
+<p>【 sẽ không lạp, các ngươi ngẫm lại, bọn Tây tuyển thủ hiện tại đó chính là Liên Đoàn Điền Kinh Quốc Tế trọng điểm theo dõi đối tượng, W A ( thuốc kích thích thí nghiệm ) nhân viên công tác quả thực hận không thể tùy thời tùy chỗ mà đi bắt được bọn họ, đừng nói đại tái thượng kiểm tra hạng mục, các ngươi tin hay không Vladimir là tiếp thu phi kiểm nhiều nhất vượt rào 110 mét tuyển thủ? 】</p>
+<p>【 ân, không sai, ta nhớ rõ phía trước có một lần Vladimir ở trên Twitter phun tào, đó là hắn cùng tháng lần thứ ba tiếp thu phi kiểm, hắn kiến nghị W A trực tiếp phái một cái bảo tiêu đi theo ở hắn bên người, phương tiện một ngày 24 giờ đối hắn tiến hành tùy thời kiểm tra. 】</p>
+<p>【? Phốc, một ngày 24 giờ kiểm tra còn hành? 】</p>
+<p>【 dù sao đại khái chính là như vậy cái ý tứ, các ngươi cảm thụ một chút W A đối hắn kiểm tra lực độ sẽ biết, Vladimir mấy năm nay sở hữu nước tiểu kiểm huyết kiểm đều phi thường sạch sẽ, vị này chính là cái hoàn toàn ngưu bức đại lão, xác thật đáng giá nhìn lên. 】</p>
+<p>Ở internet phòng live stream công bình làn đạn thượng mọi người nói đến Vladimir cùng Nga một loạt thuốc kích thích tương quan sự kiện đồng thời, đấu loại đệ nhất tổ tuyển thủ cũng đã toàn bộ vào chỗ.</p>
+<p>Chờ làn đạn thượng người qua đường cũng hiểu biết Vladimir sự tích lúc sau, đối với đấu loại đệ nhất tổ cái này tuyển thủ danh sách, liền không tránh được sinh ra một cổ kính sợ cảm xúc.</p>
+<p>【 kia này một tổ đấu loại đã có một cái danh ngạch bị dự định, sau đó dư lại……3 cái danh ngạch? 】</p>
+<p>“Trừ bỏ Vladimir ở ngoài, Jamaica Tanui cũng ở bổn tổ, vị này cũng là lần này vượt rào 110 mét hạng mục đoạt giải quán quân đứng đầu chi nhất, mặt khác, nước Mỹ đội giả cách nhĩ cũng hoàn toàn có thực lực cạnh trục tiền tam……”</p>
+<p>Thiệu Mẫn Nhất ở đem đấu loại đệ nhất tổ tuyển thủ toàn bộ giới thiệu một lần lúc sau, rất có điểm kinh ngạc “Dựa theo dĩ vãng phân tổ thói quen, ở đấu loại trung, thông thường sẽ không đem sở hữu đại nhiệt tuyển thủ phóng tới cùng tiểu tổ, chẳng sợ có máy tính tùy cơ phân tổ phân đến lúc sau, ban tổ chức cũng sẽ đối tuyển thủ cuối cùng phân tổ tiến hành một ít nhân công can thiệp, không nghĩ tới lúc này đây Doha ban tổ chức thế nhưng đồng thời đem mấy cái đại nhiệt đoạt bài người được chọn đều phóng tới đấu loại đệ nhất tổ trung…… Này thật là làm người hoàn toàn không có dự đoán được cách làm.”</p>
+<p>Lý Sâm đối với ban tổ chức cái này cách làm cũng cảm thấy rất là thần kỳ, bất quá hắn thực mau lại nghĩ đến, đấu loại nói, trên thực tế cũng không có gì cùng lắm thì “Kỳ thật, cái này cách làm nói, rất có khả năng sẽ làm đấu loại đệ nhất tổ tuyển thủ ở trong lúc thi đấu có càng cường lực phát huy, hơn nữa, từ lý luận đi lên nói, các đấu loại phân tổ trừ bỏ trước bốn gã trực tiếp thăng cấp ở ngoài, còn thừa tuyển thủ trung còn sẽ sàng chọn trước bốn gã lần lượt bổ sung thăng cấp, nói cách khác, nếu đấu loại đệ nhất tổ tuyển thủ thật sự cũng đủ cường, bọn họ phát huy cũng đủ ưu tú nói……”</p>
+<p>Nghe được Lý Sâm cách nói, Thiệu Mẫn Nhất sửng sốt, sau đó cười nói “Nói như vậy, thật cũng không phải không có khả năng…… Nếu đấu loại đệ nhất tổ tuyển thủ thật sự toàn thể phát huy đều cực kỳ ưu tú nói, cuối cùng đệ nhất tổ toàn viên thăng cấp cũng không phải không có khả năng sự tình.”</p>
+<p>Kênh Thể Dục phát sóng trực tiếp gian, Thiệu Mẫn Nhất cùng Lý Sâm hai người liêu đến chính vui vẻ, Doha sân vận động hiện trường thính phòng trên chỗ ngồi, Tô Bạch cùng Khương Văn Đào, Bùi Tấn An mấy cái cũng đang ở thảo luận lúc này đây ban tổ chức phân tổ cách làm.</p>
+<p>“Liền loại này phân tổ, ban tổ chức lá gan đó là thật sự không nhỏ.” Bùi Tấn An phía trước ở nhìn đến phân tổ lúc sau, liền nhịn không được phun tào quá cái này phân tổ an bài phương thức.</p>
+<p>Dựa theo cái này phân tổ, đấu loại đệ nhất tổ tuyển thủ, thế tất liền không thể ở hôm nay đấu loại trung, đem trạng thái phóng đến quá mức nhẹ nhàng.</p>
+<p>“Bất quá đừng nói, đấu loại nguyên bản là rất khó khiến cho người xem chú ý, nhưng là lão Bùi ngươi xem, hôm nay hiện trường người xem, hiển nhiên cũng đối trận này phối trí so được với trận chung kết đấu loại sinh ra hứng thú.”</p>
+<p>Khương Văn Đào đem vấn đề xem đến tương đối thực tế “Hơn nữa ngươi xem, kỳ thật đối với này đó tuyển thủ tới nói, cũng không có đặc biệt đại ảnh hưởng tổn thất.”</p>
+<p>Thi đấu chuyện này sao, giảng thật sự, cái dạng gì phân tổ tình huống đều có khả năng gặp được, cái dạng gì tái huống, tuyển thủ đều cần thiết nghiêm túc mà đi ứng đối.</p>
+<p>Tuy rằng Doha ban tổ chức lần này phân tổ không có dựa theo truyền thống cam chịu lệ thường làm điều chỉnh, chính là chân chính nói lên, bọn họ cách làm cũng cũng không có bất luận cái gì vấn đề.</p>
+<p>Tô Bạch không có gia nhập hai người đối thoại, hắn lúc này chính nhìn đến đã lên sân khấu Thôi Lạc Hằng ở điều chỉnh tốt hắn xuất phát chạy khí lúc sau, lại đem tầm mắt chuyển hướng về phía thính phòng phương hướng.</p>
+<p>Tuy rằng khoảng cách rất là xa xôi, nhưng là Thôi Lạc Hằng vẫn là cảm thấy, liền ở vừa mới, hắn nhìn về phía Tô Bạch đồng thời, Tô Bạch cũng chú ý tới hắn tầm mắt.</p>
+<p>Cái này nhận tri, làm Thôi Lạc Hằng nhớ tới buổi sáng Tô Bạch cùng hắn đơn độc đối thoại khi, đối hắn nói qua câu nói kia ——【 không cần khẩn trương, ta sẽ ở thính phòng thượng nhìn ngươi. 】</p>
+<p>Có trong nháy mắt, Thôi Lạc Hằng chỉ cảm thấy chính mình trái tim đều phanh phanh phanh mà cuồng nhảy dựng lên, hắn nghiêm túc mà nhìn thính phòng phương hướng, sau đó nhấc tay hướng tới Tô Bạch phương hướng vẫy vẫy, lúc sau hai tay vỗ vỗ chính mình mặt, đem chính mình lực chú ý từ thính phòng Tô Bạch trên người một lần nữa quay lại trên sân thi đấu!</p>
+<p>Thi đấu liền phải bắt đầu rồi, mà Tô Bạch đang ở thính phòng thượng nghiêm túc mà nhìn hắn!</p>
+<p>Cái này ý niệm làm hắn toàn thân máu đều có một loại đang ở sôi trào lên cảm giác —— hắn đang đứng ở hắn chấp nhất phấn đấu đường đua thượng, mà ở hắn toàn lực chạy băng băng ở đường đua thượng đồng thời, hắn sở thích người, cũng đang ở thính phòng thượng nghiêm túc mà nhìn hắn.</p>
+<p>Nhìn trước mắt đường đua, Thôi Lạc Hằng chớp chớp mắt, sau đó một lần nữa nỗ lực nhớ lại lúc trước Tô Bạch dạy cho hắn hô hấp tiết tấu.</p>
+<p>Hô, hút, hô, hút……</p>
+<p>Theo hô hấp tiết tấu chuyển biến, hắn lực chú ý cũng bị kiềm chế trở về, nguyên bản có chút nóng lên đại não cũng dần dần bình tĩnh xuống dưới.</p>
+<p>Tô Bạch đang nhìn hắn, chuyện này đương nhiên làm hắn cảm thấy cao hứng cùng hưng phấn, chính là nguyên nhân chính là vì Tô Bạch đang nhìn hắn, hắn càng không thể đủ làm người thất vọng……!</p>
+<p>Ở Thôi Lạc Hằng lại lần nữa mở mắt ra khi, hắn lực chú ý đã toàn bộ chuyển dời đến trước mắt đường đua thượng, tại đây điều 110 mễ lớn lên đường đua thượng, còn có 10 cái rào chắn đang chờ đợi hắn vượt qua cùng đột phá.</p>
+<p>Chỉ là đấu loại mà thôi, Thôi Lạc Hằng mà khẳng định, chính mình hoàn toàn có năng lực ở trận thi đấu này trung bắt lấy thăng cấp tư cách.</p>
+<p>Bất quá, hiện tại hắn muốn đem tư cách này lấy đến càng xinh đẹp một chút!</p>
+<p>Thôi Lạc Hằng ở vào thứ 7 đường đua, ở hắn bên tay trái, đệ lục đạo thượng, chính là Nga danh tướng Vladimir, mà ở đệ ngũ đạo thượng, chính là Jamaica tuyển thủ Tanui, đệ tứ đạo thượng còn lại là nước Mỹ đội giả cách nhĩ.</p>
+<p>Có thể nói, này một tổ không chỉ là hội tụ một đám đoạt bài đứng đầu tuyển thủ, hơn nữa này đó đứng đầu tuyển thủ nói thứ cũng gắt gao liền nhau, lấy hận không thể chiếu cáo thiên hạ tư thế, làm mọi người nhìn đến —— xem, này một tổ đệ tứ đạo đến đệ lục đạo tuyển thủ, chính là lúc này đây thi đấu đoạt giải quán quân đại đứng đầu!</p>
+<p>Nước Mỹ đội giả cách nhĩ là một cái tràn ngập khiêu khích dục vọng tuyển thủ, đương hiện trường camera màn ảnh chuyển tới hắn trước mặt khi, giả cách nhĩ căn bản mặc kệ hiện trường còn có phất lai Kimmel cùng Tanui hai người ở đây, hắn liền hướng lên trời dựng lên một cây ngón trỏ.</p>
+<p>——【 này một tổ quán quân, là của ta! 】</p>
+<p>Giả cách nhĩ tay phải dựng ngón trỏ hướng lên trời, tay trái ngón cái tắc hướng tới chính mình ngực phương hướng chỉ chỉ.</p>
+<p>Đương nhiên, nếu trận này thi đấu không ngừng là đấu loại nói, cái này khiêu khích có lẽ còn có thể đủ có vẻ càng thêm hữu lực một ít.</p>
+<p>【 mẹ nó, cái này giả cách nhĩ hảo nhảy a! Vladimir ở đây thi đấu, hắn đều dám nói hắn đệ nhất? 】</p>
+<p>【 gia hỏa này vẫn luôn như vậy kiêu ngạo, bất quá hắn cũng có tư bản kiêu ngạo là được, năm trước thế giới trước 10 thành tích, có 8 cái là Vladimir, mặt khác hai cái liền là của hắn, Tanui pb so với hắn cường, nhưng là năm trước mùa giải tốt nhất thành tích, hắn so Tanui muốn hảo. 】</p>
+<p>【 tới tới, màn ảnh đến Vladimir! 】</p>
+<p>Hiện trường, giới thiệu vận động viên nhiếp ảnh màn ảnh từ giả cách nhĩ chỗ chuyển khai, tới rồi Tanui trước mặt, sau đó lại đến Vladimir trước mặt, Tanui vừa mới không có đáp lại giả cách nhĩ khiêu khích, không ít người đều ở chờ mong, Vladimir có thể hay không đáp lại một chút giả cách nhĩ tên này khiêu khích thủ thế.</p>
+<p>Đáng tiếc chính là, Vladimir tựa hồ cũng cảm thấy giả cách nhĩ khiêu khích thập phần ấu trĩ, vì thế hắn chỉ là hướng tới màn ảnh phương hướng gật gật đầu, sau đó liền không có mặt khác động tác.</p>
+<p>Tiếp theo cái hình ảnh, màn ảnh liền thiết tới rồi Thôi Lạc Hằng trước mặt, có thể nhìn ra được tới, Thôi Lạc Hằng đang ở tập trung tinh thần, nhưng ở chú ý tới nhiếp ảnh màn ảnh xuất hiện lúc sau, ở mọi người cho rằng Thôi Lạc Hằng cũng chỉ sẽ tùy ý gật gật đầu thời điểm, mọi người lại thấy đến Thôi Lạc Hằng cũng dựng lên một cái ngón trỏ.</p>
+<p>Hắn không có bắt tay nâng đến quá cao, chỉ là đem ‘1’ thủ thế rõ ràng mà triển lãm tới rồi trước màn ảnh, sau đó liền đem lực chú ý một lần nữa chuyển hướng đường đua, không hề để ý tới màn ảnh cùng với màn ảnh sau cùng với hiện trường người xem khiếp sợ.</p>
+<p>Ở giả cách nhĩ cái thứ nhất làm ra khiêu khích thủ thế khi, hiện trường người xem liền trước kinh ngạc cảm thán quá một vòng, mà bọn họ không có ở Tanui cùng Vladimir trên người nhìn đến giả cách nhĩ khiêu khích phản hồi, ngược lại là cái này đến từ Trung Quốc tuyển thủ cũng làm ra ‘ đệ nhất ’ thủ thế?</p>
+<p>Đây là tình huống như thế nào?</p>
+<p>Hiện trường ở nhìn đến Thôi Lạc Hằng làm ra cái này thủ thế lúc sau, một mảnh ồ lên kinh ngạc cảm thán, thế cho nên màn ảnh tới rồi thứ 8 đường đua Italy tuyển thủ trên người khi, khán giả đều không có thu hồi lực chú ý.</p>
+<p>“?Thôi Lạc Hằng làm ra khiêu khích thủ thế?!”</p>
+<p>Thiệu Mẫn Nhất hiển nhiên cũng bị Thôi Lạc Hằng động tác hoảng sợ “Không xong, A Hằng cái này cách làm, kỳ thật là có chút không quá lý trí.”</p>
+<p>Lý Sâm cũng là đồng dạng ý tưởng “Đúng vậy, hôm nay chỉ là đấu loại, không cần phải quá mức liều mạng mà đi tranh đoạt đệ nhất vị thứ, chỉ cần có thể thuận lợi thăng cấp vòng bán kết là được, hiện tại cùng giả cách nhĩ tranh đệ nhất vị thứ, thật sự là không có gì chỗ tốt.”</p>
+<p>Lý Sâm không có nói ra chính là Huống chi, còn chưa nhất định có thể đủ đoạt đến quá.</p>
+<p>Thể dục kênh internet phòng live stream công bình làn đạn cũng nổ tung tới, quốc nội người xem đương nhiên duy trì chính là Thôi Lạc Hằng, chính là bọn họ cũng đồng thời cho rằng, ở thi đấu trong sân, quá nhiều hành động theo cảm tình kỳ thật không cần phải, quan trọng vẫn là có thể bắt được hảo thành tích.</p>
+<p>Hiện trường, thính phòng thượng, Khương Văn Đào cùng Bùi Tấn An cũng ở cảm thấy Thôi Lạc Hằng cái này khiêu khích có chút không quá lý trí, nhưng thật ra Tô Bạch phi thường bình tĩnh, trên mặt thậm chí còn mang theo điểm ý cười.</p>
+<p>“Kỳ thật ta cảm thấy không có gì, A Lạc như vậy thực hảo.”</p>
+<p>Khương Văn Đào sửng sốt, nói “Ai nha, Tiểu Bạch, ngươi không thể bởi vì Thôi Lạc Hằng tiểu tử này là ngươi mang liền nói như vậy a, làm huấn luyện viên, vẫn là muốn dạy dỗ vận động viên, càng thêm lý trí mà thi đấu……”</p>
+<p>Đối với Khương Văn Đào cách nói, Tô Bạch cười lắc lắc đầu “Ta là thật sự cho là như vậy.” Dừng một chút, hắn nói tiếp “Ở tuyển thủ lịch thi đấu dày đặc, lại hoặc là có quan trọng thi đấu dưới tình huống, chúng ta xác thật muốn tận lực hợp lý mà an bài tuyển thủ thi đấu thể năng phân phối, làm tuyển thủ tận lực bằng tốt trạng thái đi dự thi, này đó suy tính, đều là xuất phát từ đối tuyển thủ cá nhân thi đấu ích lợi góc độ, đi tiến hành ích lợi hóa suy tính.”</p>
+<p>“Chính là, A Lạc hắn năm nay mới 21 tuổi, hắn thực tuổi trẻ, tương lai còn có vô hạn tiền đồ cùng cơ hội, ở như vậy tuổi trẻ hiện tại, hắn có thể có ý nghĩ của chính mình, hắn cũng có thể có chính mình nhuệ khí cùng ‘ thình lình xảy ra ’, ‘ linh quang chợt lóe ’.”</p>
+<p>Tô Bạch nói làm Khương Văn Đào hai người sửng sốt một chút, sau đó thực mau nhớ tới —— đúng rồi, Thôi Lạc Hằng thành tích thực hảo không có sai, nhưng là hắn hiện tại xác thật còn trẻ thật sự, như vậy tuổi trẻ thậm chí còn xưng là ‘ thanh thiếu niên ’ tuổi tác, đúng là cá tính phi dương thời điểm.</p>
+<p>Bọn họ xác thật không cần phải ở ngay lúc này, cho hắn tròng lên quá nhiều tư tưởng trói buộc.</p>
+<p>Có muốn tranh thủ đệ nhất nhuệ khí, chuyện này bản thân là thực tốt, từ xưa đến nay, nhiều ít thiên tài vận động viên, sáng lập làm người khó có thể tưởng tượng thành tích, bằng vào chính là bọn họ ‘ thình lình xảy ra ’ cùng bọn họ trên người cái loại này nhuệ khí.</p>
+<p>Nghĩ đến đây, Khương Văn Đào cùng Bùi Tấn An cũng bình tĩnh xuống dưới, mà Tô Bạch như cũ như hắn phía trước cùng Thôi Lạc Hằng theo như lời giống nhau, trước sau ở thính phòng thượng, nghiêm túc mà nhìn Thôi Lạc Hằng nơi phương hướng.</p>
+<p>Đường đua thượng, vượt rào 110 mét trên vạch xuất phát, đứng ở Thôi Lạc Hằng bên cạnh người Vladimir có chút kinh ngạc mà nhìn thoáng qua Thôi Lạc Hằng, nhưng là lúc này Thôi Lạc Hằng đã đem lực chú ý hoàn toàn mà chuyển hướng về phía đường đua thượng, không có lại nghĩ nhiều khác sự tình gì, cũng hoàn toàn không có chú ý tới Vladimir nhìn chăm chú.</p>
+<p>Ở đấu loại đệ nhất tổ tuyển thủ toàn viên giới thiệu xong lúc sau, hiện trường quảng bá bên trong thực mau vang lên thi đấu lập tức liền phải bắt đầu phát lệnh thanh.</p>
+<p>Đường đua thượng, 8 danh tuyển thủ cũng ở phát lệnh trong tiếng tuần hoàn phát lệnh viên chỉ dẫn, vòng đến xuất phát chạy khí trước, cúi người hai tay chống đất, ngồi xổm tới rồi xuất phát chạy khí thượng —— vượt rào 110 mét đấu loại đệ nhất tổ thi đấu, đã là chạm vào là nổ ngay!</p>
+<p>“Các vào chỗ.”</p>
+<p>“Dự bị.”</p>
+<p>“Phanh!”</p>
+<p>Ngắn ngủi mà thanh thúy súng lệnh tiếng vang lên đồng thời, này trên vạch xuất phát 8 đạo thân ảnh cũng nhanh chóng đồng thời bắn ra mà ra, mà cái này đấu loại tổ cũng không hổ là sở hữu đấu loại tổ trung có thể nói thực lực mạnh nhất một tổ, từ xuất phát chạy nghe thương phản ứng bắt đầu, là có thể đủ nhìn ra được thực lực của bọn họ phi phàm!</p>
+<p>Đường đua thượng 8 cái tuyển thủ, bình quân nghe thương phản ứng thời gian ở 0.143 giây, như Vladimir, giả cách nhĩ, Tanui cùng Thôi Lạc Hằng này 4 người, bình quân nghe thương phản ứng càng là ở kinh người 0.131 giây!</p>
+<p>Này một tổ tuyển thủ, không có người đem này một tổ thi đấu đương thành một hồi đơn thuần đấu loại, rốt cuộc, bọn họ bên trong không chỉ là có Vladimir tồn tại, Tanui cũng đồng dạng không thể khinh thường, giả cách nhĩ còn phát ra tranh đoạt đệ nhất khiêu khích tuyên ngôn, ngay cả cái kia Trung Quốc tuyển thủ cũng là đồng dạng khiêu khích bộ dáng.</p>
+<p>Dưới tình huống như thế, còn thừa 4 danh tuyển thủ trong lòng tự nhiên cũng sinh ra nguy cơ cảm, không dám ở trận thi đấu này bên trong dễ dàng không thấm nước quá nhiều.</p>
+<p>Bọn họ đều là hoàn toàn có thực lực có thể nhẹ nhàng thăng cấp vòng bán kết tuyển thủ, đương nhiên không nghĩ ở đấu loại bên trong khiến cho chính mình mất đi tiếp tục thăng cấp tư cách.</p>
+<p>“Úc, bảy bước công lan! Cái kia Trung Quốc tuyển thủ dùng cũng là bảy bước công lan!”</p>
+<p>Bởi vì trận này thi đấu cạnh tranh kịch liệt, hiện trường giải thích cũng thập phần hưng phấn, bọn họ không chỉ có chú ý tới giả cách nhĩ bọn họ mấy cái, cũng đồng dạng chú ý tới cùng giả cách nhĩ cùng nhau phát ra khiêu khích Thôi Lạc Hằng.</p>
+<p>Vừa thấy dưới, mới phát hiện, cái này Trung Quốc tuyển thủ, xác thật có phát ra khiêu khích tư bản —— từ xuất phát chạy bùng nổ bắt đầu, đến cái thứ nhất rào chắn trước công lan, hắn cơ hồ vẫn duy trì cùng Vladimir hoàn toàn nhất trí tiết tấu, trừ bỏ trước bốn cái rào chắn còn lược có trì trệ ở ngoài, tới rồi đệ 6 cái rào chắn lúc sau, cái này Trung Quốc tuyển thủ đã cùng Vladimir cùng nhau nhanh chóng trở thành này 8 danh tuyển thủ chi gian đệ nhất tập đoàn!</p>
+<p>Úc, thiên nột, Trung Quốc khi nào lại có một cái như vậy tuyển thủ?</p>
+<p>Nga, không đúng, Trung Quốc xác thật có như vậy một vị tuyển thủ, cái này thôi còn không phải là phía trước Doha giải vô địch Châu Á thượng vượt rào 110 mét kim bài sao?</p>
+<p>Chính là…… Kia chỉ là giải vô địch Châu Á kim bài?</p>
+<p>Hiện trường giải thích ở vì Thôi Lạc Hằng biểu hiện như si như cuồng, mà quốc nội Kênh Thể Dục phát sóng trực tiếp gian, TV cùng trước máy tính người xem cũng bởi vì Thôi Lạc Hằng biểu hiện mà nhanh chóng hưng phấn lên!</p>
+<p>Quản hắn cái gì lý trí không lý trí, cạnh kỹ thể dục, muốn chính là loại này lang giống nhau tinh thần!</p>
+<p>Đấu loại làm sao vậy?</p>
+<p>Muốn ở đấu loại bắt lấy đệ nhất có cái gì mất mặt cùng không lý trí?</p>
+<p>Rất nhiều người trong đầu trong nháy mắt này tưởng đều là Mặc kệ người khác nghĩ như thế nào, như vậy thi đấu thoạt nhìn thật là quá thống khoái!!</p>
+<p>Trên sân thi đấu, Vladimir xác thật không có khuynh tẫn toàn lực mà ở chạy, chính là hắn trong lòng hiểu rõ, chính mình tốc độ đã tuyệt đối không chậm, chính là ở hắn bên tay phải cái kia Trung Quốc tuyển thủ lại như cũ vững vàng mà cùng hắn bảo trì ở một cái trục hoành thượng?!</p>
+<p>Ở công hướng cuối cùng hai cái rào chắn khi, Vladimir theo bản năng mà nhanh hơn một ít chính mình tốc độ, nhưng là cái dạng này tốc độ như cũ không có thể ném ra đệ thất đạo thượng Thôi Lạc Hằng!</p>
+<p>Đến nỗi đệ tứ đạo thượng giả cách nhĩ…… Nguyên bản phát ra kiêu ngạo cướp lấy đệ nhất khiêu khích lời kịch hắn, lúc này lại chỉ có thể ở thứ 4 vị trí thượng giãy giụa, cái này làm cho hắn trong lòng hoàn toàn không dám tin tưởng.</p>
+<p>Ở cùng Vladimir đồng thời công phá cuối cùng một cái rào chắn lúc sau, Thôi Lạc Hằng cùng Vladimir đồng thời hướng về phía cuối cùng vạch đích lao tới mà đi, tại đây cuối cùng mười mấy mét lao tới đường đua thượng, Thôi Lạc Hằng tốc độ thế nhưng lại có một tia tăng lên, cuối cùng, Vladimir phóng</p>
+<p>Hoãn chính mình tốc độ, nhìn hắn bên tay phải Thôi Lạc Hằng dẫn đầu một bước hướng qua vạch đích.</p>
+<p>“Đệ nhất……!” Thiệu Mẫn Nhất kinh ngạc cảm thán mà nhìn hình ảnh trung lấy đệ nhất tư thái hướng quá vạch đích Thôi Lạc Hằng, phát ra một tiếng kinh hô.</p>
+<p>Mà thể dục kênh internet phòng live stream, khán giả đã hoàn toàn hưng phấn phía trên.</p>
+<p>【 ta sát!!! A Hằng ngưu bức!!! 】</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong218.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong220.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "roi-khoi-gioi-the-duc-sau-ta-thanh-tru-than";
+const NOVEL_TITLE = "Rời khỏi giới thể dục sau ta thành Trù Thần";
+const CHAPTER_TITLE = "Chương 219";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

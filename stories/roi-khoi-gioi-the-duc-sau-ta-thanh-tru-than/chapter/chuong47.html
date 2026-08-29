@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 47</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Rời khỏi giới thể dục sau ta thành Trù Thần
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 47</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong46.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong48.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Hảo tiểu tử, làm được xinh đẹp!”</p>
+<p>Thính phòng thượng, Hồ Thiếu Văn ha ha cười vẫy vẫy quyền tay, đối Khâu Văn biểu hiện thập phần mà vừa lòng.</p>
+<p>Đương nhiên, làm một cái 400 mễ hạng mục tân nhân, vừa mới chuyển hạng mục không đủ 4 tháng là có thể bắt được Á Vận dự thi tư cách, loại này biểu hiện lại có ai sẽ đối Khâu Văn cảm thấy không hài lòng đâu?</p>
+<p>Bên cạnh Tô Bạch kỳ thật ở thi đấu tiến hành đến cuối cùng một cái trăm mét tái đoạn khi, cũng đã đứng lên, cùng mọi người cùng nhau, mang theo hơi khẩn trương tâm tình nhìn trên sân thi đấu Khâu Văn cùng Trương Tử Nghĩa chi gian cuối cùng tranh đoạt.</p>
+<p>“Ai nha, đáng tiếc, Khâu Văn nếu là cuối cùng lao tới còn có thể càng mau một chút, nói không chừng hôm nay còn có thể áp xuống Trương Tử Nghĩa, lấy cái quán quân trở về đâu!” Hồ Thiếu Văn ở bên cạnh cảm thán.</p>
+<p>Tô Bạch nghe đến đó, vẫn là lắc đầu “Trương Tử Nghĩa hôm nay trạng thái không tồi, từ chỉnh thể quá cong kỹ thuật cùng khúc cong chuyển thẳng nói, toàn bộ hành trình tiết tấu, thể năng khống chế này đó góc độ đi lên nói, cũng đều so Khâu Văn thành thục rất nhiều, Khâu Văn muốn thắng quá hắn, còn có một đoạn ngắn lộ phải đi.”</p>
+<p>Hồ Thiếu Văn thấy Tô Bạch giải thích đến như vậy nghiêm túc, vừa định nói hắn chính là chỉ đùa một chút, kết quả nghe được cuối cùng hắn nhạy bén mà nhận thấy được Tô Bạch lời nói điểm mấu chốt “Một đoạn ngắn lộ?”</p>
+<p>Tô Bạch quay đầu nhìn mắt Hồ Thiếu Văn, sau đó nhìn về phía trên sân thi đấu tựa hồ còn có điểm không cam lòng Khâu Văn, gật đầu nói “Đúng vậy, một đoạn ngắn lộ.”</p>
+<p>Khâu Văn ở 400 mễ cái này hạng mục thượng thân thể thiên phú so tuyệt đại đa số người đều phải cường thượng rất nhiều, theo hắn đối tiết tấu, thể năng khống chế càng tiến thêm một bước tăng cường, hơn nữa kỹ thuật chi tiết điều chỉnh cùng đối 400 mễ thi đua đối kháng quen thuộc, Khâu Văn kế tiếp trưởng thành không gian còn có rất lớn, muốn đuổi kịp hiện tại Trương Tử Nghĩa, xác thật không tính khó khăn.</p>
+<p>Hồ Thiếu Văn ở thấy Tô Bạch như thế xác thực mà cho như vậy hồi phục sau, trên mặt hưng phấn thần sắc càng đậm.</p>
+<p>Trên sân thi đấu, phá tan vạch đích Khâu Văn khoảng cách Trương Tử Nghĩa chỉ có một cái thân vị tả hữu chênh lệch, nhưng là hắn chung quy vẫn là không có thể phản siêu Trương Tử Nghĩa, chỉ có thể lấy đệ nhị thứ tự hướng quá vạch đích.</p>
+<p>Quá tuyến lúc sau, Khâu Văn trên mặt xuất hiện rõ ràng ảo não thần sắc, ở dần dần dừng lại bước chân lúc sau, hắn đứng ở tại chỗ, rũ đầu, như là một con có chút nản lòng đại hình khuyển.</p>
+<p>Ở hắn phía trước cách đó không xa, Trương Tử Nghĩa trên mặt là thể năng hao hết mỏi mệt cùng một chút may mắn, hắn thở phì phò quay đầu lại nhìn đến Khâu Văn dáng vẻ này, tức khắc có chút dở khóc dở cười.</p>
+<p>“Tiểu Khâu.”</p>
+<p>Trương Tử Nghĩa vỗ vỗ Khâu Văn bả vai, cười nói “Như thế nào? Cảm thấy không có thắng quá ta, không vui phải không?”</p>
+<p>Khâu Văn buồn bực mà ngẩng đầu nhìn đến Trương Tử Nghĩa, lý trí nói cho hắn hẳn là khách khí điểm, nhưng là buồn nản cảm giác còn treo ở hắn trên người, hắn cũng biết khách khí không có gì ý nghĩa, vì thế tiếp tục rũ đầu “Là có điểm……”</p>
+<p>Mắt thấy Khâu Văn trả lời như vậy thành thật, Trương Tử Nghĩa không khỏi liền nở nụ cười “Được rồi, ngươi luyện 400 mễ mới bao nhiêu thời gian? Ta đều bị ngươi nghiền đến sắp không đường nhưng chạy thoát, ngươi đây là ghét bỏ còn không có đem ta này trước lãng hoàn toàn chụp chết ở trên bờ cát a?”</p>
+<p>Khâu Văn kỳ thật vừa mới nói xong, cũng có chút ngượng ngùng, vì thế chuyển khai tầm mắt, gãi gãi đầu.</p>
+<p>“Ách, cũng không phải……”</p>
+<p>“Cũng không phải cái gì?”</p>
+<p>Quách Thuẫn vừa mới ở Khâu Văn phía sau lấy đệ tam danh thành tích phá tan chung điểm, hoãn vài bước sau tới rồi Khâu Văn cùng Trương Tử Nghĩa hai người trước mặt, vừa vặn nghe được Khâu Văn câu kia ’ cũng không phải ’, vì thế thuận miệng thấu câu náo nhiệt.</p>
+<p>Hôm nay trong lúc thi đấu, có thể nói mỗi một vị tuyển thủ đều dùng hết chính mình toàn lực, dĩ vãng quốc nội tái thượng thường xuyên có thể nhìn thấy ’ ăn ý hoa thủy ’ trạng thái hoàn toàn biến mất.</p>
+<p>Quách Thuẫn chạy xong này toàn bộ hành trình, lúc này tuy rằng cảm thấy mỏi mệt, nhưng là cũng cảm thấy thống khoái. Tuy rằng trận thi đấu này hắn toàn lực ứng phó lúc sau vẫn là chỉ lấy cái đệ tam, bất quá loại này cạnh kỹ trạng thái tăng trở lại cảm giác, so với quá khứ không hề phập phồng muốn hảo đến nhiều.</p>
+<p>Trương Vĩ cùng Hồ Lực ở hôm nay trong lúc thi đấu chỉ phân biệt bắt được thứ 4 cùng thứ 6 —— đến từ Z tỉnh thể công đội Lâm Xuyên hôm nay trạng thái cũng thập phần xuất sắc, bằng vào nửa sau phát lực, vượt qua Hồ Lực, bắt lấy thứ 5 thứ tự.</p>
+<p>Tổng thể tới nói, hôm nay trận này 400 mét thi đấu, so với dĩ vãng quốc nội tái tới nói, phải đẹp, kích thích đến quá nhiều.</p>
+<p>Thể dục kênh giải thích phòng live stream nội, Thiệu Mẫn Nhất cùng Lý Sâm cũng là đồng dạng cảm tưởng.</p>
+<p>“Hôm nay trận này 400 mét nam thi đấu, là quốc nội năm gần đây ít có cao cấp, cao cạnh kỹ tính, cao xem xét tính một hồi thi đấu!” Thiệu Mẫn Nhất thiệt tình mà khen nói “Từ thi đấu xuất phát chạy giai đoạn khởi, mỗi một vị tuyển thủ đều phát huy ra chính mình tốt nhất trạng thái, nghe thương, xuất phát chạy, cùng mặt khác tuyển thủ toàn lực đối kháng.”</p>
+<p>“Đặc biệt là ở đường đua cuối cùng 200 mễ giai đoạn, Khâu Văn cùng Trương Tử Nghĩa chi gian siêu việt cùng truy đuổi, người xem nhịn không được vì bọn họ vuốt mồ hôi!”</p>
+<p>“Không có sai!” Lý Sâm nói cũng mang theo hưng phấn ý vị, hắn bản nhân ở thi điền kinh sự thượng cũng tương đối thiên vị 400 mễ cái này hạng mục, hôm nay trận thi đấu này phát sóng trực tiếp, làm hắn cũng thiết thực cảm giác thấy được quốc nội 400 mễ hạng mục đi tới hy vọng.</p>
+<p>“Hôm nay các vị tuyển thủ trạng thái cùng phát huy đều thập phần xuất sắc, Khâu Văn làm một cái 400 mễ hạng mục tân nhân, thiếu chút nữa liền phải đem quốc nội 400 mễ đệ nhất danh tướng Trương Tử Nghĩa đánh bại, cuối cùng 100 mễ hai vị chi gian lao tới truy đuổi, có thể nói là thập phần mà kích thích nhân tâm!”</p>
+<p>“Bất quá, vừa mới ở thi đấu kết thúc khi, Khâu Văn tựa hồ là đối chính mình thứ tự không quá vừa lòng a!” Lý Sâm hồi tưởng khởi vừa mới ở phát sóng trực tiếp hình ảnh nhìn thấy Khâu Văn, không khỏi nở nụ cười.</p>
+<p>Phòng live stream làn đạn thượng, ở Lý Sâm nói đến những lời này khi, cũng là một trận thiện ý ’ ha ha ha ’, hôm nay trận thi đấu này, đối điền kinh người yêu thích nhóm tới nói, có thể nói được thượng là vui sướng tràn trề, đã lâu thống khoái.</p>
+<p>Tỉnh S thể công trong đội, mấy cái thi đấu điền kinh hạng mục huấn luyện viên lúc này cũng đều ngồi ở tiểu trong phòng hội nghị, một khối nhìn thi đấu phát sóng trực tiếp, bọn họ đương nhiên cũng thấy được Khâu Văn ủ rũ cụp đuôi bộ dáng, mấy cái huấn luyện viên nhìn đến nơi này đều nhịn không được nở nụ cười.</p>
+<p>“Cái này tiểu tử thúi, tâm quá phiêu!”</p>
+<p>Đang ngồi huấn luyện viên, có một vị đầu tóc hoa râm, thoạt nhìn đã qua tuổi bảy mươi nhưng đồng dạng ăn mặc một thân đồ thể dục lão nhân gia, hắn ở nhìn đến Khâu Văn hướng quá tuyến lúc sau kia phó ảo não bộ dáng, lập tức đôi mắt trừng râu một thổi, phàm là Khâu Văn lúc này ở đây, đại khái đều phải bị hắn hung tợn mà giáo huấn một đốn.</p>
+<p>Ngồi ở bên trái Hà Nhất Thân nghe được lời này, cười ha hả mà khuyên nhủ “Ai nha, Khâu lão ca, ngươi khí cái gì nha? Tiểu Khâu đây cũng là có tiến thủ tâm, nghĩ muốn bắt đến càng tốt thành tích không phải sao?”</p>
+<p>“Nói nữa, liền xem vừa mới thi đấu, Tiểu Khâu cùng Trương Tử Nghĩa khoảng cách cũng chính là một cái nhiều thân vị sự, nếu này cuối cùng lao tới khoảng cách lại trường 50 mễ, hươu chết về tay ai còn châm cứu chưa chắc.”</p>
+<p>Cái này đầu tóc hoa râm lão nhân gia, đúng là Khâu Văn thân gia gia Khâu Cẩn Hành, cũng là từ tỉnh S đội điền kinh về hưu lão huấn luyện viên, hôm nay là chịu Hà Nhất Thân mời, hồi trong đội tới, cùng đại gia cùng nhau xem hắn thân tôn tử biểu hiện.</p>
+<p>Khâu Cẩn Hành nhìn đến nhà mình tôn tử thi đấu trạng thái ưu tú, đương nhiên là vui vẻ, bất quá hắn cũng xác thật là có chút lo lắng Khâu Văn bởi vì trong khoảng thời gian này xuất sắc thành tích, tâm thái phiêu, kia đối hắn sau này vận động kiếp sống nhưng không có gì chỗ tốt.</p>
+<p>Triệu Hòa Bình ở bên cạnh nhìn ra Khâu Cẩn Hành ý tưởng, hắn cười nói “Yên tâm đi Khâu lão ca, Tiểu Khâu hiện tại đối hắn huấn luyện viên nói đó là nói gì nghe nấy, ngày thường huấn luyện hắn cũng vẫn luôn thực đua, lần này hắn có thể bắt lấy Jakarta dự thi tư cách, quay đầu lại tới rồi quốc gia đội tham gia tập huấn, hắn vẫn là ở hắn hiện tại huấn luyện viên thủ hạ, có Tiểu Bạch nhìn chằm chằm, sẽ không có cái gì vấn đề.”</p>
+<p>Nghe được Triệu Hòa Bình nói, Khâu Cẩn Hành gật gật đầu “Trước kia cùng hắn thông điện thoại, hắn liền thường xuyên nhắc tới cái kia kêu Tiểu Bạch hài tử, nhưng thật ra không nghĩ tới, hiện tại thế nhưng thành hắn huấn luyện viên, còn mang theo hắn xông ra như vậy thành tích.” Dừng một chút, Khâu Cẩn Hành nói “Hôm nào ta phải tự mình cảm ơn vị này Tiểu Bạch huấn luyện viên mới được.”</p>
+<p>Tiểu trong phòng hội nghị, bởi vì tỉnh S đội điền kinh ở 400 mễ hạng mục thượng hôm nay bắt lấy xuất sắc thành tích, huấn luyện viên nhóm tâm tình đều khá tốt, thực mau, phát sóng trực tiếp hình ảnh trung, truyền đến người giải thích thanh âm —— hiện trường bắt đầu tuyên bố vận động viên nhóm thành tích!</p>
+<p>“Lần này cả nước điền kinh đại thi đấu giải quán quân ký Á Vận tuyển chọn tái 400 mét nam hạng mục trận chung kết thành tích —— đệ nhất danh, Trương Tử Nghĩa ( b đội điền kinh thành phố ) 46 giây 16 ( tốc độ gió +0.6m s ), mùa giải sb, đệ nhị danh, Khâu Văn ( tỉnh S đội điền kinh ) 46 giây 29 ( tốc độ gió +0.6m s ), cá nhân pb, đệ tam danh, Quách Thuẫn ( b đội điền kinh thành phố ) 46 giây 68, thứ 4 danh, Trương Vĩ, 47 giây 21…… Z tỉnh Lâm Xuyên 47 giây 26, tỉnh S Hồ Lực 47 giây 39……”</p>
+<p>Theo tuyển thủ dự thi nhóm thành tích công bố, hiện trường lại nhấc lên một trận hoan hô tiểu cao trào, ở hôm nay trong lúc thi đấu, xếp hạng tiền tam Trương Tử Nghĩa, Khâu Văn, Quách Thuẫn đều chạy ra mùa giải này tốt nhất thành tích, trong đó Khâu Văn lại một lần đổi mới cá nhân pb, còn lại tuyển thủ đại đa số cũng chạy ra cá nhân tương đối tốt thành tích cùng trạng thái.</p>
+<p>Giống như là phía trước hai vị giải thích theo như lời giống nhau, hôm nay trận thi đấu này, là quốc nội 400 mễ thi đấu năm gần đây một hồi cao phong.</p>
+<p>Bất luận là trên sân thi đấu lại hoặc là trên mạng, điền kinh mê đều là mang theo tuyệt đối hưng phấn trạng thái ở chúc mừng trận này thi đấu cùng các tuyển thủ biểu hiện, ngay cả thính phòng thượng tỉnh S đội điền kinh nhân viên công tác cũng là giống nhau.</p>
+<p>Hồ Thiếu Văn trên mặt trước sau đều treo vui vẻ cười, nhưng thật ra Tô Bạch, ở nhìn đến chung quanh tất cả mọi người như vậy hưng phấn lúc sau, hơi hơi nhíu nhíu mày, không nói thêm gì.</p>
+<p>Khán giả này cổ hưng phấn tâm tình ở kế tiếp thi đấu bên trong cũng kéo dài xuống dưới, có lẽ là bởi vì G tỉnh bản thân địa lý vị trí độ cao nguyên nhân, tương đối thích hợp điền kinh loại thi đấu tiến hành, lại hoặc là lần này tuyển chọn tái xác thật là quốc nội năm nay trước mắt mới thôi tối cao trình độ thi đấu, các tuyển thủ chi gian cạnh tranh tâm lý cũng so cường.</p>
+<p>Tóm lại, kế tiếp 800 mễ, 1500 chờ bất đồng thi đấu trung, các tuyển thủ đều chạy ra tương đối tốt thành tích, hiện trường khán giả cũng không tiếc với vì này đó tuyển thủ vỗ tay cố lên trợ uy.</p>
+<p>Bất quá này đó cố lên thanh, cùng vượt rào 110 mét trận chung kết tổ tuyển thủ lên sân khấu lúc sau tiếng hoan hô so sánh với, liền lại không tính cái gì.</p>
+<p>Buổi sáng 10 giờ 53 phút, vượt rào 110 mét thi đấu sắp bắt đầu, vượt rào 110 mét trận chung kết tổ tuyển thủ cũng vào lúc này bước lên sân thi đấu, theo các tuyển thủ lên sân khấu, hiện trường tiếng hoan hô trong khoảng thời gian ngắn tiêu tới rồi tối cao đề-xi-ben.</p>
+<p>Này đó tiếng hoan hô trung, có thể nghe được có đại lượng thanh âm là ở kêu ’ Thôi Lạc Hằng cố lên ’!</p>
+<p>Ở phía trước một ngày thi đấu bên trong cái, Thôi Lạc Hằng ở vượt rào 110 mét đấu loại giai đoạn biểu hiện xuất sắc, cấp sở hữu điền kinh mê nhóm đều để lại khắc sâu ấn tượng, đặc biệt là bởi vì Thôi Lạc Hằng tiến bộ biên độ quá lớn, ở đấu loại đệ nhất tổ thi đấu sau khi chấm dứt trực tiếp đã bị W A nhân viên công tác mang đi tiến hành thuốc kích thích thí nghiệm —— cái này rất có truyền kỳ sắc thái chân thật sự tích, càng là tiến thêm một bước gia tăng khán giả đối Thôi Lạc Hằng ấn tượng.</p>
+<p>Hiện tại muốn đi theo tràng khán giả nhắc tới Thôi Lạc Hằng 3 cái tự, đại đa số điền kinh mê đã có thể nhanh chóng phản ứng lại đây, sau đó hưng phấn mà hồi hỏi 【 ngươi nói chính là cái kia đem cá nhân pb đề cao gần 1 giây, bởi vì thành tích quá hảo còn bị mang đi tiến hành thuốc kích thích thí nghiệm vượt rào 110 mét tuyển thủ sao? 】</p>
+<p>Thể dục kênh phòng live stream công bình thượng, bởi vì Thôi Lạc Hằng lên sân khấu, cũng có đại lượng làn đạn bắt đầu xuất hiện.</p>
+<p>【yoooo! Đây là Tiểu Thôi muốn bắt đầu thi đấu sao?! Tiểu Thôi cố lên, hôm nay lại làm cái 1 giây đi lên a! 】</p>
+<p>【?? Phía trước huynh đệ, ngươi suy nghĩ gì? Lại làm một giây đi lên, 12 giây 57? Đổi mới vượt rào 110 mét kỷ lục thế giới sao??? 】</p>
+<p>【 ha ha ha ha, ngượng ngùng, nói sai nói sai, Tiểu Thôi cố lên, lại cố lên làm cái 0.1 giây đi lên a! 】</p>
+<p>【 có chút khẩn trương, Tiểu Thôi mùa giải này phía trước thi đấu thành tích đều giống nhau đi? Ngày hôm qua trạng thái bùng nổ, hôm nay có thể hay không lại băng trở về a? 】</p>
+<p>【 hẳn là không thể nào? Không phải nói hắn là bởi vì đi theo Tô Bạch huấn luyện viên huấn luyện, khắc phục cá nhân cạnh kỹ trạng thái thượng một ít vấn đề, cho nên thành tích bạo phát sao? Nếu vấn đề đã khắc phục, kia lần này hẳn là liền sẽ không lại tùy tiện lại lại băng đi xuống đi? 】</p>
+<p>Phòng live stream công bình thượng, trong khoảng thời gian ngắn đều là ở thảo luận Thôi Lạc Hằng, mà phòng live stream hai vị giải thích, lúc này đề tài tự nhiên cũng là quay chung quanh Thôi Lạc Hằng trạng thái cùng thành tích tại tiến hành suy đoán.</p>
+<p>“Hôm nay vượt rào 110 mét trận chung kết trên sân thi đấu, đến từ tỉnh S đội điền kinh tuyển thủ Thôi Lạc Hằng không thể nghi ngờ là nhất hấp dẫn người xem ánh mắt một vị.” Thiệu Mẫn Nhất cười giới thiệu Thôi Lạc Hằng trước một ngày thi đấu khi trạng thái cùng sự tích, sau đó nói “Hôm nay trận chung kết, là Thôi Lạc Hằng ở cá nhân trạng thái hoàn toàn tăng trở lại lúc sau trận thứ hai thi đấu, ta tưởng, khán giả hẳn là đều đối này đầy cõi lòng chờ mong.”</p>
+<p>“Đúng vậy.” Lý Sâm đi theo gật đầu nói “Kỳ thật không ngừng là người xem các bằng hữu, ta cùng Mẫn Nhất đối với Thôi Lạc Hằng biểu hiện cũng phi thường chờ mong cùng tò mò, không biết ở hôm nay thi đấu bên trong, Thôi Lạc Hằng hay không có thể kéo dài hắn ngày hôm qua xuất sắc trạng thái, ở trận chung kết thượng hoàn toàn mà chứng minh thực lực của hắn đâu?”</p>
+<p>“Lời nói không nói nhiều, thi đấu lập tức liền phải bắt đầu, khiến cho chúng ta rửa mắt mong chờ đi!”</p>
+<p>Thính phòng thượng, trên sân thi đấu, lúc này giữa hai bên bầu không khí đang ở lẫn nhau ảnh hưởng.</p>
+<p>Đường đua thượng, hôm nay Thôi Lạc Hằng tự nhiên không có khả năng lại bị an bài ở thứ 9 đường đua, làm đấu loại bên trong tổng thành tích đệ nhất danh tuyển thủ, hắn bị an bài ở thứ 5 đường đua thượng, ở hắn bên tay trái, thứ 4 đường đua thượng, đúng là trước một ngày bị hắn hung hăng nghiền áp ở sau người Triệu Duyên Khải.</p>
+<p>Lúc này, ở vào thứ 4 đường đua thượng Triệu Duyên Khải chính căng chặt tinh thần, nỗ lực mà điều chỉnh chính mình cạnh kỹ trạng thái.</p>
+<p>Đối với trước một ngày đấu loại trung bị Thôi Lạc Hằng hung hăng áp chế ở vị thứ hai, thậm chí còn sau lại ở công lan trong quá trình tiết tấu đều lược có sụp đổ Triệu Duyên Khải tới nói, hắn trước sau cho rằng, trước một ngày thi đấu, cũng không phải hắn chân thật tiêu chuẩn.</p>
+<p>【 hết thảy đều là bởi vì ngoài ý muốn! 】</p>
+<p>【 hắn cũng không có đoán trước đến sẽ có Thôi Lạc Hằng như vậy một cái gia hỏa ngang trời xuất thế, trực tiếp dẫn tới hắn ở thi đấu bên trong dự tính không đủ, lúc này mới dẫn tới chính mình không có an bài hảo tiết tấu. 】</p>
+<p>Ngày này tới nay, bất luận là Triệu Duyên Khải vẫn là Triệu Duyên Khải huấn luyện viên, dẫn đầu đều là ở như vậy an ủi hắn, làm hắn điều chỉnh tốt tâm thái, ngày hôm sau mới có thể toàn lực ứng phó mà đi đối mặt cùng Thôi Lạc Hằng trận chung kết.</p>
+<p>“Ngươi cá nhân pb là 13 giây 53, cái kia Thôi Lạc Hằng pb bất quá là 13 giây 57, kỳ thật thực lực của hắn vẫn là không bằng ngươi, hơn nữa đây là hắn mới vừa chạy ra, hắn ngày hôm qua sở dĩ có thể chạy ra 13 giây 57 thành tích, chủ yếu vẫn là bởi vì phía trước hắn cơ bản đình tái một năm, năm nay mùa giải phía trước mấy trận thi đấu thành tích đều không tốt lắm, nghẹn đến mức lâu rồi, thật vất vả khắc phục chính mình trên người tật xấu, cho nên muốn ở mọi người trước mặt chứng minh một chút chính mình.”</p>
+<p>Đây là Triệu Duyên Khải huấn luyện viên ngày hôm qua cùng hắn phân tích Thôi Lạc Hằng cá nhân tình huống “Nhưng là cái này cách làm là ngu xuẩn, hắn cái kia huấn luyện viên Tô Bạch vẫn là quá tuổi trẻ, kinh nghiệm không đủ, lại thế nào cũng muốn làm tuyển thủ khống chế một chút, đem tốt nhất trạng thái đặt ở trận chung kết thượng, ngày hôm qua đấu loại, bảo đảm có thể thăng cấp là được.”</p>
+<p>“Chính là ngày hôm qua cái kia Thôi Lạc Hằng, rõ ràng chính là trạng thái bạo lều, sau đó đem chính mình toàn bộ lực lượng đều phóng xuất ra tới.”</p>
+<p>“Chính cái gọi là một tiếng trống làm tinh thần hăng hái thêm lại mà suy tam mà kiệt, ở đấu loại thời điểm như vậy bùng nổ, đem chính mình cá nhân pb đều tăng lên gần 1 giây thời gian, kia hôm nay trận chung kết đâu? Hoàn toàn không suy xét ngày hôm sau thi đấu trạng thái sao?”</p>
+<p>“Càng tốt trạng thái còn là nên giữ lại ở trận chung kết thượng mới đúng.”</p>
+<p>“Ngày hôm qua ngươi gặp được hắn trạng thái bùng nổ, xác thật là ngoài ý muốn, bất quá loại này ngoài ý muốn không phải là thái độ bình thường, hôm nay chuẩn bị sẵn sàng, hảo hảo thi đấu, hôm nay ngươi là có bị mà đến, hắn là ở phía trước một ngày đã dùng hết chính mình tích góp đã hơn một năm nhuệ khí, bên này giảm bên kia tăng, hôm nay chỉnh thể trạng thái là đối với ngươi có lợi.”</p>
+<p>Triệu Duyên Khải đồng dạng cũng nhận đồng hắn huấn luyện viên cách nói, thông thường ở đấu loại bên trong, các tuyển thủ cũng không sẽ dùng hết toàn lực dự thi, có kinh nghiệm tuyển thủ ở đấu loại trung chỉ cần bảo trì nhất định tốc độ, có thể bắt lấy trận chung kết thăng cấp danh ngạch là được, càng tốt trạng thái, xác thật đều là muốn giữ lại ở trận chung kết bên trong lại làm biểu hiện.</p>
+<p>Căn cứ vào này đó phán đoán, Triệu Duyên Khải đồng dạng cho rằng, Thôi Lạc Hằng ngày hôm qua đấu loại biểu hiện là hắn thi đấu kinh nghiệm không thành thục một loại biểu hiện.</p>
+<p>Chỉ là……</p>
+<p>Tưởng về như vậy tưởng, Triệu Duyên Khải trong lòng trước sau cảm thấy, hôm nay thi đấu như cũ vẫn là nguy cơ thật mạnh.</p>
+<p>Rốt cuộc, bọn họ vượt rào 110 mét cái này hạng mục, nếu muốn đạt được Á Vận dự thi tư cách, liền cần thiết theo đuổi đệ nhất!</p>
+<p>Bởi vì ở bọn họ phía trên, còn có một cái nhất định sẽ bắt được Jakarta dự thi tư cách Lộ Mạnh Phàm.</p>
+<p>Vạch xuất phát trước, Triệu Duyên Khải hai tay xoa eo, ngửa đầu hít sâu, ở nỗ lực điều chỉnh chính mình trạng thái —— bất luận như thế nào, hắn nhưng không nghĩ bị Thôi Lạc Hằng như vậy cái còn bất mãn 20 tuổi tiểu hài nhi áp quá hắn nổi bật!</p>
+<p>Hắn Triệu Duyên Khải ở vượt rào 110 mét hạng mục phấn đấu nhiều năm như vậy, cũng không phải là cho người khác làm đá kê chân dùng!</p>
+<p>Thôi Lạc Hằng lúc này đồng dạng cũng đang ở nín thở ngưng thần, hắn cũng không có tưởng càng nhiều chuyện khác, hắn duy nhất ý niệm chính là 【 chỉ có bắt lấy vượt rào 110 mét quán quân, mới có thể đủ đạt được Jakarta Á Vận dự thi tư cách, cũng mới có thể đủ đi theo Tô Bạch cùng nhau tiến đến quốc gia đội tham dự huấn luyện. 】</p>
+<p>Tuy rằng hắn làm không được giống Khâu Văn giống nhau trắng ra mà đối Tô Bạch nói ’ không cần vứt bỏ ta ’, nhưng là hắn trong lòng xác thật là cất giấu một tia sợ hãi, hắn không nghĩ rời đi Tô Bạch, bất luận là bởi vì hắn huấn luyện chỉ đạo lại hoặc là bởi vì ở thực đường khi, luôn là từ Tô Bạch trộm ’ gian lận ’ đưa đến trên tay hắn mỹ vị đồ ăn.</p>
+<p>Hắn biết, lấy Tô Bạch chấp giáo năng lực, lấy hắn ở 400 mễ hạng mục thượng dạy ra Khâu Văn trình độ, chỉ cần Tô Bạch đi quốc gia đội, như vậy lúc sau hắn liền rất khó sẽ lại phản hồi tỉnh S đội điền kinh.</p>
+<p>Hắn muốn đuổi theo Tô Bạch bước chân, đi theo hắn tiếp tục ở hắn bên người tham huấn —— một khi đã như vậy, như vậy hôm nay thi đấu, hắn liền tuyệt không thể thua!</p>
+<p>Thôi Lạc Hằng ánh mắt sắc bén mà nhìn phía trước đường đua còn có đường đua thượng quen thuộc kia mười đạo rào chắn, hắn hơi hơi mà điều chỉnh chính mình hô hấp, làm chính mình theo chính mình hô hấp tiết tấu, đem lực chú ý hoàn toàn quán chú đến này đường đua phía trên —— nghe chính mình tiếng hít thở, nghe chính mình tiếng tim đập, nghe chính mình trong lòng nóng cháy ’ chiến đấu ’ ý nguyện, nghe chính mình trong lòng đối thắng lợi khát vọng.</p>
+<p>Hắn cần thiết thắng được thắng lợi!</p>
+<p>Hắn chắc chắn đem thắng được thắng lợi!</p>
+<p>Đường đua thượng, từ đệ 2 đường đua đến đệ 9 đường đua, các tuyển thủ đều đang ở làm chính mình trước khi thi đấu chuẩn bị, đối với đại đa số lần này vượt rào 110 mét tuyển thủ mà nói, bọn họ đã minh bạch, hôm nay vượt rào 110 mét trận chung kết, chính là Triệu Duyên Khải cùng Thôi Lạc Hằng giữa hai bên chiến đấu.</p>
+<p>Bọn họ hai người ở tranh đoạt ’ đệ nhất ’ cái này xếp hạng cùng với duy nhất cái kia Jakarta Đại Hội Thể Thao Châu Á vượt rào 110 mét dự thi danh ngạch, mà bọn họ dư lại người, tranh đoạt nhiều nhất cũng chỉ là ’ đệ tam ’ cái này thứ tự.</p>
+<p>Vị trí ở Triệu Duyên Khải cùng Thôi Lạc Hằng tả hữu hai vị tuyển thủ, lúc này đều nhận thấy được, thứ 4, thứ 5 đường đua thượng, bất luận là Triệu Duyên Khải lại hoặc là Thôi Lạc Hằng, này hai người khí thế đều phi thường đáng sợ, thoạt nhìn giống như là muốn tại đây điều đường đua phía trên liều chết vật lộn —— cái này so sánh có lẽ có chút khoa trương, nhưng là ở hai người bên cạnh người tuyển thủ đều đã nhận ra đến từ bọn họ hai người trên người kia cổ làm người có chút phát mao khí thế.</p>
+<p>Thính phòng thượng, Triệu Duyên Khải huấn luyện viên cùng bọn họ tỉnh đội dẫn đầu cũng đang ở chú ý đường đua thượng tình huống, hiện trường đại bình thượng hình chiếu đường đua thượng các tuyển thủ hình ảnh.</p>
+<p>Đội ngũ dẫn đầu từ đại bình thượng thấy được Triệu Duyên Khải cùng Thôi Lạc Hằng hai người chi gian giương cung bạt kiếm, chau mày “Lão Lâm, cái kia Thôi Lạc Hằng…… Ta xem hắn hôm nay trạng thái thoạt nhìn cũng thực hảo, không giống như là khí thế so ngày hôm qua kém bộ dáng.”</p>
+<p>Triệu Duyên Khải huấn luyện viên Lâm Như Chí biểu tình cũng không quá đẹp, hắn nghĩ nghĩ, trầm giọng nói “Có lẽ chỉ là khí thế thoạt nhìn tương đối cường, chân chính trạng thái sẽ thế nào còn chưa cũng biết.”</p>
+<p>“Kia……” Dẫn đầu có chút do dự “Nếu cái kia Thôi Lạc Hằng xác thật trạng thái xuất chúng, hôm nay lại chạy ra 13 giây 60 trong vòng thành tích đâu?”</p>
+<p>Lâm Như Chí nghe đến đó, nhắm mắt lại thở dài “Hắn muốn thật có thể như vậy, kia lúc sau chân chính muốn lo lắng người của hắn cũng không phải là Duyên Khải.”</p>
+<p>Dẫn đầu nghe đến đó, có chút chần chờ “…… Ý của ngươi là?”</p>
+<p>Lâm Như Chí nhắm hai mắt nói “Ta ý tứ là, cái này Thôi Lạc Hằng thật muốn là ở khắc phục tự thân nghiêm trọng khuyết tật sau, có thể có liên tục chạy tiến 13 giây 60 trong vòng thực lực, kia lúc sau muốn lo lắng cho mình địa vị người, chính là Lộ Mạnh Phàm.”</p>
+<p>Nghe được Lâm Như Chí những lời này, dẫn đầu cũng nhắm lại miệng, quay đầu đem quan tâm ánh mắt chuyển hướng về phía đường đua thượng —— hy vọng, hết thảy đều có thể giống bọn họ ngày hôm qua đã từng phỏng đoán giống nhau đi.</p>
+<p>Ở mọi người hoặc khẩn trương, hoặc quan tâm nhìn chăm chú bên trong, đường đua trên vạch xuất phát các tuyển thủ rốt cuộc toàn bộ làm tốt chuẩn bị, hiện trường quảng bá bên trong, lạnh băng mà vô cơ chất phát lệnh viên thanh tuyến cũng lần nữa xuất hiện.</p>
+<p>“Các vào chỗ.”</p>
+<p>Các tuyển thủ hai tay chống đất, ngồi xổm tới rồi chính mình xuất phát chạy khí thượng, mông nâng lên, từng người làm tốt chính mình xuất phát chạy dự bị tư thế, sau đó, bọn họ lực chú ý cũng càng thêm mà tập trung, chờ đợi phát lệnh viên tiếp theo thanh mệnh lệnh.</p>
+<p>“Dự bị.”</p>
+<p>Này thanh ra lệnh, các tuyển thủ hai mắt đều nhìn chằm chằm khẩn chính mình trước mắt một đoạn ngắn đường đua khu vực, sau đó —— “Phanh!”</p>
+<p>Súng lệnh giòn vang dưới, mỗi một vị tuyển thủ đều lực lượng bùng nổ, đặng dẫm lên chính mình xuất phát chạy khí, dùng lớn nhất bạo phát lực, làm chính mình có thể ở xuất phát chạy giai đoạn đạt được mạnh nhất xuất phát chạy sơ tốc độ động lực thêm vào!</p>
+<p>Thôi Lạc Hằng chân phải ở mãnh lực bùng nổ dưới, trong đó thôi phát ra bạo phát lực thậm chí làm thân thể hắn có rất nhỏ góc độ nghiêng, nhưng là không chờ loại này góc độ nghiêng đối hắn tạo thành ảnh hưởng, hắn chân trái cũng nhanh chóng đặng mà đuổi kịp, sau đó chân phải chạm đất lại một lần lực lượng bùng nổ!</p>
+<p>Xuất phát chạy giai đoạn mấy cái tiểu nện bước ở phóng thích chân bộ sức bật đồng thời, cũng làm hắn nhanh chóng đạt được mạnh nhất đi tới động lực!</p>
+<p>Thân thể hắn ở xuất phát chạy gia tốc giai đoạn cũng nhanh chóng nâng lên, trọng tâm thượng di, sau đó bằng vào xuất phát chạy khi đạt được bùng nổ sơ tốc độ, hai tay đong đưa, thân thể ổn định buộc chặt, khoan bộ kéo chi dưới bãi chân cất bước sau đặng!</p>
+<p>Này một loạt động tác, sớm đã là hắn thuần thục huấn luyện quá ngàn vạn thứ lưu sướng, mà hắn lực chú ý toàn lực tập trung, hai mắt gắt gao nhìn chằm chằm phía trước, đem chính mình quá mức nhạy bén tiết tấu cảm ứng năng lực phạm vi khống chế co rút lại đến nhỏ nhất, đem loại này tiết tấu cảm giác gần vận dụng đến chính mình trên người.</p>
+<p>Tô Bạch nói —— đây là ngươi ưu thế, không phải hoàn cảnh xấu, co rút lại ngươi lực chú ý, ngươi tiết tấu cảm giác sẽ vì ngươi ở trên sân thi đấu đối tự thân tiết tấu khống chế mang đến không tưởng được kinh hỉ.</p>
+<p>Mà loại này kinh hỉ, Thôi Lạc Hằng ở phía trước huấn luyện bên trong đã cảm thụ qua.</p>
+<p>Hắn có thể nhạy bén mà nhận thấy được chính mình toàn thân trạng thái, hắn đối chính mình tốc độ, đối chính mình tứ chi trạng thái, đối chính mình mỗi một tấc lực lượng, đều có thể đủ khống chế với tâm.</p>
+<p>Vì thế, hắn có thể càng tốt mà khống chế chính mình, dựa theo càng tốt tiết tấu, luật động, đi tới.</p>
+<p>Hắn có thể chạy trốn càng tốt —— so ngày hôm qua đấu loại càng tốt!</p>
+<p>Ở Thôi Lạc Hằng bên người, Triệu Duyên Khải ở khởi bước giai đoạn trạng thái cũng đồng dạng xuất sắc!</p>
+<p>Triệu Duyên Khải không hổ là trước mắt quốc nội vượt rào 110 mét hạng mục đứng thứ hai, đương hắn đối mặt mạnh mẽ đối thủ cùng nguy cơ, đương hắn ở trong lòng bốc cháy lên mãnh liệt thắng bại dục, không nghĩ muốn khuất với người sau khi, hắn bộc phát ra lâu không có quá xuất sắc trạng thái!</p>
+<p>Ở vừa mới xuất phát chạy nghe thương phản ứng giai đoạn, hắn nghe thương phản ứng khi cùng Thôi Lạc Hằng không phân cao thấp, hắn xuất phát chạy phản ứng gần tốn thời gian 0.125 giây, mà thôi Lạc cùng cũng gần so với hắn lược cao một đường, đạt tới 0.122 giây.</p>
+<p>Loại này xuất sắc nghe thương phản ứng tốc độ, đều nhất trực quan mà phản hồi ra hai người lúc này ở trên sân thi đấu tuyệt hảo trạng thái!</p>
+<p>Thính phòng thượng, khán giả cũng đã nhận ra, gần chỉ là xuất phát chạy giai đoạn, Thôi Lạc Hằng cùng Triệu Duyên Khải hai người cũng đã chiến ra một loại khói thuốc súng nổi lên bốn phía mùi thuốc súng!</p>
+<p>Hai người từ xuất phát chạy phản ứng đến lan trước xuất phát chạy gia tốc chạy, cơ hồ đều là gắt gao cắn đối phương ở phía trước tiến, bất luận cái gì một người có lạc hậu dấu hiệu!</p>
+<p>Mà trừ bỏ Thôi Lạc Hằng cùng Triệu Duyên Khải hai người ở ngoài, dư lại tám vị tuyển thủ tốc độ tuy rằng cũng không chậm, nhưng là so với bọn họ hai cái tới nói, từ xuất phát chạy bắt đầu, cũng đã xuất hiện lạc hậu dấu hiệu.</p>
+<p>Trận này trận chung kết, không hề nghi ngờ, chính là Triệu Duyên Khải cùng Thôi Lạc Hằng hai người chi gian một hồi quyết đấu!</p>
+<p>Người thắng đến tột cùng sẽ là ai?</p>
+<p>Chỉ nhìn mở màn xuất phát chạy tiết tấu, trong khoảng thời gian ngắn, không ai có thể đủ nói ra chính xác đáp án!</p>
+<p>Kênh Thể Dục phát sóng trực tiếp gian, Thiệu Mẫn Nhất cùng Lý Sâm hai người chỉ tới kịp nói một câu ’ thi đấu bắt đầu rồi ’, sau đó kế tiếp hai người đã bị Thôi Lạc Hằng cùng Triệu Duyên Khải chi gian giằng co xuất phát chạy tái đoạn hấp dẫn, ở cái này giai đoạn, bất luận cái gì giải thích từ ngữ đều là tái nhợt mệt mỏi, bọn họ gắt gao nhìn chằm chằm Thôi Lạc Hằng cùng Triệu Duyên Khải hai người chi gian quyết đấu, không nói lời nào.</p>
+<p>Phòng live stream, công bình thượng, lúc này là khó được sạch sẽ hình ảnh —— điền kinh mê nhóm ở như vậy thi đấu thượng, căn bản không kịp lại phát cái gì làn đạn, bọn họ đồng dạng khẩn trương mà nhìn trong hình các tuyển thủ ngươi tranh ta đoạt, đặc biệt là bắt đầu công lan Thôi Lạc Hằng cùng Triệu Duyên Khải hai người, chỉ hận không được công bình thượng không cần có bất luận cái gì trở ngại bọn họ nghiêm túc quan khán thi đấu hình ảnh nội dung.</p>
+<p>Trên sân thi đấu, Triệu Duyên Khải khống chế được chính mình hô hấp tiết tấu, cũng làm chính mình nhanh chóng bắt đầu tiến vào công lan trạng thái, hắn công lan kỹ thuật tạm được, nhưng là lan gian tiết tấu không tồi, đặc biệt là ở phía trước 5 lan khi, là hắn dần dần tới phân lan tốc độ cao phong tái đoạn.</p>
+<p>Hắn biết, ở hôm nay như vậy thi đấu thượng, hắn đã không có bất luận cái gì có thể phân tâm tư bản, hắn đem toàn bộ tâm tư đặt ở dùng tốt nhất trạng thái công lan, gia tốc thượng, kế hoạch của hắn là, ở phía trước 5 lan, bằng vào chính mình nửa trước tốc độ ưu thế, cùng Thôi Lạc Hằng kéo ra cũng đủ đại khoảng cách, chẳng sợ ở lúc sau hắn phân lan tốc độ có điều trượt xuống, cũng có thể tận lực ổn định trụ chính mình tốc độ, làm chính mình có thể đem ưu thế bảo trì đến cuối cùng giai đoạn.</p>
+<p>Triệu Duyên Khải là như vậy tưởng, cũng là làm như vậy, hắn phía trước 5 lan tốc độ thượng, xác thật có cũng đủ làm hắn tự hào tư bản, ở hắn trước 5 lan, đặc biệt là 3, 4 lan tái đoạn trung, hắn phân đoạn thành tích cơ bản ổn định ở 1.02 ( ±0.011 ) cái này trình độ thượng, nếu đơn luận đệ 3, 4 lan phân đoạn thành tích, hắn so trước mắt quốc nội đệ nhất nhân Lộ Mạnh Phàm cũng không kém, thậm chí có thể nói, hắn ở cái này giai đoạn bình quân thành tích thượng, so Lộ Mạnh Phàm còn muốn càng tốt một ít.</p>
+<p>Lúc này đường đua thượng, lấy Triệu Duyên Khải, Thôi Lạc Hằng hai người cầm đầu đệ nhất tập đoàn đã đánh tới đệ tam lan, cũng là đến trước mắt cái này giai đoạn mới thôi, Triệu Duyên Khải xác thật cùng Thôi Lạc Hằng chi gian kéo ra ước chừng nửa cái thân vị khoảng cách, đặc biệt là tới rồi thứ 4 lan, Triệu Duyên Khải cùng Thôi Lạc Hằng chi gian cái này khoảng cách càng là dần dần kéo lớn đến gần 1 cái thân vị!</p>
+<p>Thính phòng thượng, nhìn đến trên sân thi đấu cái này tình huống, điền kinh mê nhóm có thể nói là có hỉ có ưu —— bọn họ có thể nhìn ra được tới, hôm nay Triệu Duyên Khải trạng thái phá lệ xuất sắc, có một ít Triệu Duyên Khải lão fans lúc này cố lên thanh kêu đến phá lệ lớn tiếng, kịch liệt.</p>
+<p>Cũng có một ít điền kinh mê nhóm ở nhìn đến Thôi Lạc Hằng lạc hậu gần một cái thân vị, đồng dạng ở lớn tiếng hò hét, vì Thôi Lạc Hằng cố lên trợ uy, hy vọng hắn có thể truy kích phản siêu, lấy ra ngày hôm qua trong lúc thi đấu khí thế tới!</p>
+<p>Triệu Duyên Khải cùng Thôi Lạc Hằng hai cái tương ứng đội ngũ chỗ ngồi khu vực, trước mắt bầu không khí đồng dạng cũng kịch liệt phi thường, Triệu Duyên Khải dẫn đầu nhìn đến Triệu Duyên Khải tạm thời dẫn đầu, huy nắm tay lớn tiếng mà ở vì Triệu Duyên Khải cố lên làm hắn bảo trì đi xuống.</p>
+<p>Tỉnh S đội điền kinh Hồ Thiếu Văn cũng ở xé rách chính mình giọng nói, lớn tiếng mà kêu gọi Thôi Lạc Hằng cố lên!</p>
+<p>Sân thi đấu phía trên, kịch liệt thi đấu bầu không khí bậc lửa mỗi một cái tuyển thủ trên người lửa cháy, tất cả mọi người ở dùng hết toàn lực mà công lan, lan gian ba bước hàm tiếp, lại công lan!</p>
+<p>Thôi Lạc Hằng tuy rằng xác thật đem toàn bộ lực chú ý tập trung tới rồi chính mình trên người, nhưng là Triệu Duyên Khải liền ở hắn bên người đường đua, hắn đương nhiên vẫn là có thể nhận thấy được Triệu Duyên Khải trước mắt dẫn đầu ưu thế.</p>
+<p>Nhưng là hắn không ngừng khống chế được chính mình hô hấp, dựa theo Tô Bạch theo như lời phương thức, làm chính mình lực chú ý không cần bị chung quanh bất luận cái gì nhân tố sở quấy nhiễu!</p>
+<p>Hắn có thể cảm giác được chính mình đáy lòng sôi trào thiêu đốt chiến ý, mà hắn đem này cổ chiến ý thay đổi vì giao tranh ý chí cùng cường đại tự chủ, hắn ở bằng vào như vậy chưa từng có tự chủ, làm chính mình ổn định tâm thần, dựa theo chính mình có khả năng cảm giác đến tiết tấu, nỗ lực về phía trước đột tiến!</p>
+<p>Hắn chân phải mỗi một lần ở lan trước đặng dẫm mặt đất, đều có thể đủ bằng vào mạnh mẽ cổ chân lực lượng cùng sức bật làm hắn có được nhất lưu sướng, nhanh chóng quá lan tiết tấu;</p>
+<p>Hắn chân trái ở mỗi một lần công lan khi, đều ở bằng tiểu nhân biên độ phóng qua rào chắn, sau đó kéo thân thể hắn cùng khởi vượt chân nhanh chóng hất đuôi quá lan!</p>
+<p>Khởi vượt, công lan, bay vọt, ép xuống, quá lan…… Sau đó ổn định mà nhanh chóng lan gian ba bước, bằng vào ổn định mà dần dần tăng lên tiết tấu tốc độ, kéo thân thể tiết lại một lần lặp lại công lan quá trình!</p>
+<p>Nếu nói, Triệu Duyên Khải ưu thế là ở phía trước năm lan, mà Thôi Lạc Hằng ưu thế liền ở chỗ ở hắn chỉnh thể công lan trong quá trình loại này ổn định tốc độ tăng lên cùng công lan tiết tấu nhanh hơn.</p>
+<p>Ở công phá thứ 5 cái rào chắn lúc sau, Triệu Duyên Khải nhanh nhất phân lan tốc độ đã qua đi, mà Thôi Lạc Hằng đang ở từng bước tới hắn phân lan tốc độ tối cao phong!</p>
+<p>“Không hảo……!”</p>
+<p>Thính phòng thượng, Lâm Như Chí nhạy bén mà đã nhận ra Triệu Duyên Khải cùng Thôi Lạc Hằng giữa hai bên tốc độ biến hóa, mà theo hắn này thanh không tốt, tất cả mọi người có thể nhìn đến, đường đua thượng, nguyên bản cùng Thôi Lạc Hằng đã kéo ra một cái thân là Triệu Duyên Khải, hiện tại cùng Thôi Lạc Hằng chi gian khoảng cách đang ở không ngừng mà bị thu nhỏ lại!</p>
+<p>“Cố lên!!! Duyên Khải cố lên!!!”</p>
+<p>“Tiểu Thôi hướng a!! Siêu hắn nha!!!”</p>
+<p>Cố lên thanh, hò hét thanh, thổi còi thanh, sở hữu thanh âm hết đợt này đến đợt khác, khán giả sớm đã ở trên chỗ ngồi ngồi không yên, tất cả mọi người đứng ở chính mình vị trí thượng, nhìn chằm chằm trên sân thi đấu, gắt gao nắm nắm tay vì trên sân thi đấu các tuyển thủ cố lên.</p>
+<p>Làm sao ngăn là hiện trường người xem?</p>
+<p>Trận này vượt rào 110 mét kịch liệt trình độ, ngay cả internet phòng live stream trông được internet phát sóng trực tiếp khán giả đều cảm thấy hô hấp không thuận, bình một hơi, hai mắt chớp cũng không chớp mà nhìn chằm chằm hình ảnh, không nghĩ bỏ lỡ bất luận cái gì một cái ngay lập tức.</p>
+<p>Ở Triệu Duyên Khải cùng Thôi Lạc Hằng đánh tới thứ 7 cái rào chắn khi, Triệu Duyên Khải ở giai đoạn trước chế tạo ưu thế đã cơ hồ bị Thôi Lạc Hằng mạt bình, Triệu Duyên Khải cũng chú ý tới cái này trạng thái, hắn tinh thần lần nữa căng chặt, hắn tâm thần cơ hồ phân liệt thành hai khối, một khối ở thúc giục hắn nhanh hơn chính mình tiết tấu tốc độ, mặt khác một khối ở nói cho hắn, một khi nhanh hơn tiết tấu tốc độ, rất có khả năng sẽ dẫn tới chính mình cuối cùng tiết tấu sụp đổ……</p>
+<p>Hắn trong lòng còn có một tia do dự, nhưng là sân thi đấu phía trên, kẻ hèn 110 mễ tái đoạn, thay đổi trong nháy mắt chi gian, căn bản là không có bất luận cái gì làm hắn tự hỏi đường sống.</p>
+<p>Mắt thấy ở công phá thứ 8 cái rào chắn giai đoạn, Thôi Lạc Hằng rốt cuộc hoàn toàn đánh vỡ cân bằng, phản siêu tới rồi hắn trước người, Triệu Duyên Khải tâm một hoành, cắn răng bức bách chính mình toàn lực tăng lên tiết tấu, đuổi theo đã phản siêu hắn Thôi Lạc Hằng!</p>
+<p>Thôi Lạc Hằng không ngừng nỗ lực khống chế được chính mình hô hấp, chẳng sợ đã phản siêu Triệu Duyên Khải, hắn trong lòng như cũ không dám có một tia khinh thường, cũng không dám làm chính mình tiết tấu xuất hiện một lát hỗn loạn.</p>
+<p>Hô, hút, hô, hút……</p>
+<p>Hắn toàn lực đem lực chú ý phóng tới phía trước rào chắn thượng, đỉnh thân thể bên trong đã nảy lên tới bủn rủn mỏi mệt, nương này cổ mỏi mệt cảm kích thích, hắn càng tiến thêm một bước mà co rút lại chính mình cơ bắp, đem lực lượng của chính mình lần nữa thông qua chính mình tứ chi, tiết tấu phóng xuất ra đi!</p>
+<p>Càng mau một ít……</p>
+<p>Hắn có thể càng mau một ít!</p>
+<p>Thính phòng thượng, có chút đối tốc độ cảm nhạy bén người ngạc nhiên phát hiện, ở trải qua thứ 8 cái rào chắn sau, Thôi Lạc Hằng nguyên bản tốc độ đã có điều trượt xuống, kết quả ở công hướng thứ 10 cái rào chắn trong quá trình, hắn tốc độ lại xuất hiện một tia nghịch chuyển!</p>
+<p>Triệu Duyên Khải ở hôm nay thi đấu bên trong, đã đối chính mình tiết tấu khống chế được thực hảo, hắn thành công mà tăng lên chính mình tốc độ hơn nữa không có làm chính mình tiết tấu sụp đổ, nhưng là, hắn chỉ là ở công hướng thứ 9 lan trong quá trình hơi mà truy hồi một ít hoàn cảnh xấu, nhưng hắn đồng thời lại trơ mắt mà nhìn Thôi Lạc Hằng lấy càng mau tốc độ công phá thứ 10 cái rào chắn!</p>
+<p>Không…… Này không có khả năng!</p>
+<p>Vì cái gì sẽ ở cái này giai đoạn còn có thể đủ có như vậy tốc độ?!</p>
+<p>Triệu Duyên Khải không cam lòng, hắn nỗ lực mà khống chế được chính mình hô hấp cùng tiết tấu, đồng dạng nhanh chóng công phá thứ 10 cái rào chắn, sau đó ở cuối cùng lao tới tái đoạn thượng hướng phía trước Thôi Lạc Hằng đuổi theo!</p>
+<p>Cuối cùng mười mấy mét lao tới tái đoạn thượng, chính là Thôi Lạc Hằng cùng Triệu Duyên Khải hai người cuối cùng quyết đấu, thính phòng thượng khán giả thanh âm sớm đã tại đây ngắn ngủi mười mấy giây thời gian bên trong trở nên khàn khàn, nhưng bọn hắn vẫn là khàn cả giọng mà ở vì trên sân thi đấu hai vị này tuyển thủ cố lên!</p>
+<p>Phòng live stream nội, Thiệu Mẫn Nhất cùng Lý Sâm lực chú ý cũng hết sức tập trung ——</p>
+<p>“Lao tới! Cuối cùng người thắng sẽ là ai đâu?!</p>
+<p>Thôi Lạc Hằng lúc này đã hoàn toàn mà buông ra chính mình tiết tấu khống chế, hắn tăng lớn bãi cánh tay biên độ, bằng mau tốc độ hướng chung điểm phương hướng</p>
+<p>Phóng đi!</p>
+<p>Triệu Duyên Khải cũng ở hắn phía sau truy đuổi, nhưng là bởi vì hắn cuối cùng công lan giai đoạn mạnh mẽ tăng lên tốc độ, tuy rằng hắn tiết tấu không có sụp đổ, nhưng là thể năng thượng tiêu hao so với hắn dự đoán bên trong muốn nhiều.</p>
+<p>Thể năng khuyết thiếu trực tiếp phản ứng ở cuối cùng cái này lao tới giai đoạn thượng —— hắn cùng với không có nhiều hơn lực lượng đi phản vượt mức quy định phương Thôi Lạc Hằng……</p>
+<p>Không, vì cái gì sẽ là như thế này?!</p>
+<p>Triệu Duyên Khải tại hậu phương, nhìn kéo ra chính mình một cái thân vị khoảng cách Thôi Lạc Hằng ở hắn phía trước dẫn đầu phá tan vạch đích, mà hắn chẳng sợ chỉ là lạc hậu Thôi Lạc Hằng một cái thân vị, nhưng là này một cái thân vị liền phảng phất là bị cố định vĩnh hằng.</p>
+<p>Rốt cuộc……</p>
+<p>Hắn vẫn là chỉ có thể lấy vị thứ hai thành tích, phá tan này đạo vạch đích, sau đó ở giảm xóc lúc sau, buồn nản mà quỳ gối đường đua phía trên.</p>
+<p>“Thắng!!!”</p>
+<p>Thính phòng thượng, Hồ Thiếu Văn hưng phấn mà nhảy lên, này ngắn ngủi mười mấy giây thời gian, kích động đến hắn lòng bàn tay tất cả đều là mồ hôi.</p>
+<p>So với phía trước 400 mễ thi đấu, vượt rào 110 mét trận thi đấu này, bởi vì tái đoạn càng đoản, hai vị tuyển thủ chi gian đối kháng càng kịch liệt, vì thế có vẻ càng vì kích thích, xuất sắc.</p>
+<p>Đương Thôi Lạc Hằng cùng Triệu Duyên Khải trước sau phá tan vạch đích, thính phòng thượng sở hữu khán giả cũng bộc phát ra kịch liệt hoan hô hò hét thanh.</p>
+<p>“Tiểu Thôi!! Làm được xinh đẹp!!!”</p>
+<p>“Lão Triệu, không cần khổ sở, chúng ta lần sau lại đua!! Hôm nay ngươi cũng là làm tốt lắm!!”</p>
+<p>Đủ loại tiếng gào vang vọng toàn bộ sân vận động, mà ở Triệu Duyên Khải đội ngũ chỗ ngồi thượng, bọn họ dẫn đầu nặng nề mà thở dài, mà Triệu Duyên Khải huấn luyện viên Lâm Như Chí cũng bất đắc dĩ mà lắc lắc đầu.</p>
+<p>“Là ta xem thường cái này Thôi Lạc Hằng…… Còn có hắn huấn luyện viên Tô Bạch.”</p>
+<p>Internet phòng live stream, Thiệu Mẫn Nhất cùng Lý Sâm cũng thật dài mà ra một hơi, hai người cười thở dài, hôm nay trận chung kết bên trong, xuất sắc kịch liệt thi đấu thật là một hồi lại một hồi, kế phía trước 400 mễ chạy nước rút lúc sau, trận này vượt rào 110 mét thi đấu, cũng kịch liệt kích thích đến phảng phất không giống như là một hồi quốc nội tái.</p>
+<p>Hai người trò cười chi gian, Lý Sâm cười nói “Mẫn Nhất, ngươi có hay không phát hiện, hôm nay trước mắt mới thôi, nhất kích thích hai trận thi đấu, đều cùng tỉnh S đội điền kinh có quan hệ, cũng đều cùng cái kia huấn luyện viên Tô Bạch có quan hệ?”</p>
+<p>Nghe được bạn nối khố nói, Thiệu Mẫn Nhất cũng nở nụ cười “Đúng vậy, vị này huấn luyện viên Tô, thật là này hai trận thi đấu sau lưng linh hồn nhân vật —— ta đã gấp không chờ nổi mà muốn trông thấy vị này huấn luyện viên Tô, nhìn xem đến tột cùng là như thế nào nhân vật, có thể cấp tỉnh S đội điền kinh 400 mễ hạng mục còn có Thôi Lạc Hằng mang đến như vậy thoát thai hoán cốt giống nhau biến hóa……”</p>
+<p>Liền ở hai người tán gẫu gian, hiện trường cuối cùng thành tích cũng đã bắt đầu công bố.</p>
+<p>Thiệu Mẫn Nhất nhìn giám thị trên màn hình biểu hiện ra tới tuyển thủ thành tích, lần nữa mang theo kinh ngạc cảm thán ngữ khí tuyên bố “Bổn tràng cả nước điền kinh đại thi đấu giải quán quân ký Á Vận tuyển chọn tái vượt rào 110 mét hạng mục trận chung kết cuối cùng xếp hạng Đệ nhất danh, Thôi Lạc Hằng ( tỉnh S đội điền kinh ) 13 giây 47 ( tốc độ gió +1.0m s ) cá nhân pb, đệ nhị danh, Triệu Duyên Khải ( F tỉnh đội điền kinh ) 13 giây 56 ( tốc độ gió +1m s ) mùa giải sb……”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong46.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong48.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "roi-khoi-gioi-the-duc-sau-ta-thanh-tru-than";
+const NOVEL_TITLE = "Rời khỏi giới thể dục sau ta thành Trù Thần";
+const CHAPTER_TITLE = "Chương 47";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

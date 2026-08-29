@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 207</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Rời khỏi giới thể dục sau ta thành Trù Thần
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 207</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong206.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong208.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Lý Tuấn Hào ở đấu loại thứ 4 tổ trong lúc thi đấu bắt lấy thứ 4 thành tích!” Thiệu Mẫn Nhất ở nhìn đến cái này thành tích lúc sau, nhanh chóng liền ở trong đầu tính toán lên “Tiểu tổ tái quy tắc là tiểu tổ xếp hạng tiền tam tuyển thủ trực tiếp thăng cấp, nhưng là này cũng không phải đại biểu cho Lý Tuấn Hào hoàn toàn không có thăng cấp hy vọng, ở sở hữu tiểu tổ trực tiếp thăng cấp danh ngạch ở ngoài, còn thừa tuyển thủ trung xếp hạng trước sáu tuyển thủ cũng đem đạt được lần lượt bổ sung thăng cấp tư cách.”</p>
+<p>“Căn cứ trước mắt hiện có tư liệu tới xem, đấu loại đệ nhất tổ tuyển thủ từ thứ 4 danh bắt đầu, thành tích phân biệt là 45 giây 34, 45 giây 45 cùng 45 giây 65, cùng đệ nhị tổ, đệ tam tổ tuyển thủ so sánh với, đệ nhất tổ tuyển thủ bởi vì tiết tấu thượng đã chịu ảnh hưởng, bởi vậy ở thành tích thượng cùng kế tiếp hai tổ có nhất định chênh lệch, đệ nhị tổ cùng đệ tam tổ bốn, năm, sáu gã tuyển thủ, thành tích phân biệt ở 45 giây 12, 45 giây 19, 45 giây 47, 45 giây 20, 45 giây 25 cùng 45 giây 68, nếu chỉ tính toán tiền tam tổ còn thừa tuyển thủ trước sáu gã, trước mắt thứ 6 danh thành tích là 45 giây 45.”</p>
+<p>“Đấu loại thứ 4 tổ thành tích tạm thời còn chưa công bố, nhưng là bởi vì Lý Tuấn Hào phía trước còn có một vị Ame Sfar, nói cách khác, Lý Tuấn Hào nếu muốn bước lên vòng bán kết, ít nhất muốn tễ rớt phía trước hai vị tuyển thủ, mà ở mặt sau thứ 5 tổ cùng thứ 6 tổ tuyển thủ trung, cũng có thể nói là cường tay tụ tập, muốn bảo đảm không cho mặt sau tuyển thủ tễ rớt danh ngạch, kia Lý Tuấn Hào thành tích tốt nhất có thể trước mắt trước còn thừa tuyển thủ xếp hạng trung, bài đến tiền tam.”</p>
+<p>Kênh Thể Dục phát sóng trực tiếp gian, Thiệu Mẫn Nhất cùng Lý Sâm ở Lý Tuấn Hào xếp hạng xác định sau, liền trực tiếp lôi ra phía trước mấy tổ thành tích bắt đầu tính toán, thể dục kênh nơi này biên đạo cũng phi thường phối hợp, trực tiếp ở trên màn hình cắt ra phía trước mấy tổ tuyển thủ thành tích, làm người xem dễ bề trực quan mà nhìn đến phía trước 3 tổ thành tích.</p>
+<p>Đồng thời, Lý Tuấn Hào nơi thứ 4 tổ cũng ở trong hình, chỉ là thành tích vị trí tạm thời toàn bộ đánh thượng dấu chấm hỏi.</p>
+<p>Thể dục kênh internet phòng live stream trung, điền kinh mê nhóm nhìn đến cái này bộ phận, cũng là mỗi người đều đang khẩn trương —— A Hào thành tích rốt cuộc là nhiều ít? A Hào đến tột cùng có thể hay không bước lên đến vòng bán kết trung?</p>
+<p>【 nhìn một chút, trước mắt còn thừa tuyển thủ trung xếp hạng đệ tam, thành tích là 45 giây 20……】</p>
+<p>【 ta cũng thấy được, cái này thành tích nói, A Hào có điểm nguy hiểm a? Hắn pb mới là 45 giây 25 đi? 】</p>
+<p>【 A Hào hôm nay trạng thái không tồi, nếu có thể đổi mới pb nói, thật cũng không phải không có hy vọng……】</p>
+<p>【 từ từ, các huynh đệ, các ngươi suy nghĩ gì? A Hào muốn cướp đến đệ tam nói, hắn phía trước còn có một cái Ame tư đặc nhĩ a! Nói cách khác, Ame tư đặc nhĩ có thể chiếm được đệ nhị danh, hơn nữa A Hào thành tích cũng muốn thắng qua hiện tại đệ nhị danh, hắn mới có thể chiếm được hiện tại còn thừa xếp hạng tiền tam! 】</p>
+<p>…………</p>
+<p>【 nói như vậy…… Hiện tại đệ nhị danh thành tích là 45 giây 19, A Hào ít nhất muốn chạy tiến 45 giây 18? 】</p>
+<p>Tuy rằng hiện tại lấy Trương Tử Nghi cầm đầu 400 mễ chạy nước rút tam kiếm khách thành tích xác thật đã được đến đại biên độ tăng lên, chính là thật làm này đó điền kinh mê nhóm nói Lý Tuấn Hào có thể hay không ở vừa mới trận thi đấu này trung đổi mới pb, đây cũng là không ai có thể chân chính khẳng định nói ra.</p>
+<p>Huống chi, hiện tại theo đuổi còn không ngừng là đổi mới pb, còn muốn đem pb đổi mới đến 45 giây 18.</p>
+<p>Phóng tới một hai năm trước, những lời này ý tứ chính là Lý Tuấn Hào hôm nay muốn tham gia thi đấu, chúng ta hy vọng hắn ở đấu loại tiểu tổ trong lúc thi đấu, đánh vỡ 400 mễ cả nước kỷ lục, hơn nữa đem cái này kỷ lục đi phía trước đẩy cái 0.07 giây.</p>
+<p>Cái này ý niệm ở mọi người trong óc bên trong thoảng qua, làm sở hữu điền kinh mê nhóm thanh tỉnh một chút, nhưng là không tới cuối cùng kết quả ra tới, là tuyệt không sẽ có người chân chính hết hy vọng.</p>
+<p>Thính phòng thượng, Bùi Tấn An cùng Khương Văn Đào bọn họ là không có thật thời màn hình số liệu có thể xem, liền ở vừa mới xếp hạng ra tới sau, bọn họ cũng ở tính Lý Tuấn Hào yêu cầu chạy đến như thế nào thành tích mới tính an toàn, chính là phía trước số liệu nhớ không rõ, bọn họ cũng tính toán không chuẩn.</p>
+<p>Liền ở bọn họ ninh mày thời điểm, Tô Bạch đem trước mặt tiền tam tổ trước sáu thành tích số liệu trực tiếp cho bọn hắn báo một lần.</p>
+<p>…………</p>
+<p>Đúng rồi, bọn họ cư nhiên đã quên bên người còn có như vậy cá nhân hình siêu cấp máy tính ngoại quải.</p>
+<p>Chỉ là nghe xong Tô Bạch báo thành tích sau, Khương Văn Đào bọn họ mấy cái trong lòng cũng trầm trầm —— Lý Tuấn Hào muốn bắt lấy trước sáu, thoạt nhìn sợ là phi thường nguy hiểm.</p>
+<p>Liền ở mọi người khẩn trương chờ đợi sau, hiện trường đại bình rốt cuộc chợt lóe, đấu loại thứ 4 tổ cuối cùng thành tích ra tới!</p>
+<p>Điền kinh Giải Vô Địch Thế Giới 400 mét nam chạy nước rút đấu loại thứ 4 tổ</p>
+<p>Đệ nhất danh Barnes ( nước Mỹ ), 44 giây 98;</p>
+<p>Đệ nhị danh Fraser ( Jamaica ), 45 giây 01;</p>
+<p>Đệ tam danh Walcott ( Botswana ), 45 giây 10;</p>
+<p>Thứ 4 danh Ame Sfar ( Kuwait ), 45 giây 17;</p>
+<p>Thứ 5 danh Lý Tuấn Hào ( Trung Quốc ), 45 giây 22 ( pb );</p>
+<p>45 giây 22!</p>
+<p>Lý Tuấn Hào tại đây một hồi tiểu tổ đấu loại trung, xác thật đổi mới hắn pb, đáng tiếc, hắn pb tăng lên biên độ không cao, chỉ là từ 45 giây 25 đổi mới tới rồi 45 giây 22.</p>
+<p>Sở hữu chú ý Lý Tuấn Hào thi đấu Trung Quốc người xem, đều còn không có có thể tới kịp đối Lý Tuấn Hào pb đổi mới cảm thấy hưng phấn, liền lập tức ý thức được, hắn cái này thành tích, tuy rằng trước mắt xác thật có thể bài đến còn thừa tuyển thủ trước sáu gã, chính là mặt sau còn có thứ 5 tổ tuyển thủ cùng thứ 6 tổ tuyển thủ đánh sâu vào……</p>
+<p>Cái này trước sáu vị trí, lại hoặc là càng chuẩn xác mà nói, trước mắt xếp hạng vị thứ năm Lý Tuấn Hào, chỉ cần mặt sau hai tổ còn thừa tuyển thủ trung, có hai người vượt qua hắn thành tích, hắn liền thế tất vô pháp thăng cấp vòng bán kết.</p>
+<p>Trên sân thi đấu, Lý Tuấn Hào cũng thấy được chính mình thành tích, hắn gắt gao ninh mày, đầu óc trung cũng ở tính toán phía trước mấy tổ tuyển thủ thành tích, chỉ là lúc này đầu óc của hắn cũng không như ở trên sân thi đấu khi như vậy rõ ràng.</p>
+<p>Hắn biết, đây là bởi vì hắn đang khẩn trương cũng ở chờ mong……</p>
+<p>Chỉ là loại này đem chính mình kỳ vọng mong đợi ở người khác sai lầm thượng cảm giác, thật sự là quá mức dày vò, cũng quá mức thấp thỏm.</p>
+<p>Ở trong lòng dâng lên cái này ý niệm đồng thời, Lý Tuấn Hào trầm mặc mà nhéo nhéo chính mình nắm tay —— thực lực, thực lực của hắn còn xa xa không đủ, hắn còn cần càng nỗ lực mà tăng lên chính mình thành tích, mới có thể đủ không sợ chút nào mà đứng ở cái này trên sân thi đấu.</p>
+<p>Nếu hắn có đủ thực lực, có thể trực tiếp tại tiền tam danh thăng cấp, hắn lại như thế nào sẽ có như bây giờ thấp thỏm cùng dày vò?</p>
+<p>Nghĩ đến đây, Lý Tuấn Hào lại lại nhìn thoáng qua đại bình thượng tiểu tổ thành tích, sau đó đi theo chỉ dẫn nhân viên công tác đi hướng xuống sân khấu thông đạo.</p>
+<p>“Thứ 4 tổ thành tích đã ra tới, hiện tại chúng ta có khả năng đủ làm chính là cầu nguyện, hy vọng Lý Tuấn Hào có thể có một cái cũng đủ tốt vận khí.” Thiệu Mẫn Nhất nói tới đây, sau đó liền dừng câu chuyện, đem đề tài dẫn hướng về phía đấu loại thứ 5 tổ sắp lên sân khấu tuyển thủ.</p>
+<p>Lúc này đây, đấu loại thứ 4 tổ, thứ 5 tổ cùng thứ 6 tổ trung, có thể nói ngoài ý muốn tụ tập đại lượng hảo thủ, cuối cùng tam tổ thi đấu, giống như một cái đại hình Tu La tràng, rất nhiều hảo thủ ở cuối cùng này ba cái tổ đừng trung, tranh đoạt các tiểu tổ tiền tam thăng cấp tư cách.</p>
+<p>Nguyên nhân chính là vì nguyên nhân này, mọi người nguyên bản cho rằng, về Lý Tuấn Hào có thể hay không thăng cấp cái này câu đố, cũng không sẽ duy trì lâu lắm, kết quả ngoài ý muốn chính là, đấu loại thứ 5 tổ, cái này nguyên bản có Jamaica, nước Mỹ, Bahamas chờ quốc danh tướng tổ đừng, thành tích lại kém đến phảng phất là ở cùng người nói giỡn giống nhau.</p>
+<p>Trực tiếp thăng cấp tiền tam danh tuyển thủ, thành tích phân biệt ở 45 giây 48, 45 giây 59 cùng 45 giây 81, tiểu tổ trung Jamaica danh tướng, pb ở 43 giây 91 bác lỗ đặc thậm chí ở như vậy một hồi tiểu tổ tái trung cũng chưa có thể chạy tiến tiền tam, 46 giây + thành tích, làm tất cả mọi người xem đến trợn mắt há hốc mồm.</p>
+<p>Thiệu Mẫn Nhất cùng Lý Sâm hai người ở nhìn đến kết quả này sau đều cười “Này…… Cái này tiểu tổ tái thành tích, thật sự là có chút ngoài dự đoán mọi người, không biết này một tổ tuyển thủ là xuất hiện cái gì trạng huống, mỗi một vị tuyển thủ thành tích đều ngoài dự đoán mọi người kém.”</p>
+<p>Tại đây loại cùng tổ tuyển thủ trung danh tướng tụ tập dưới tình huống, tiền tam thành tích phóng tới khác tổ đừng thậm chí trước năm không vào…… Đừng nói trước năm, đấu loại thứ 5 tổ đệ nhất danh, 45 giây 48 thành tích, phóng tới Lý Tuấn Hào nơi đấu loại thứ 4 tổ, thậm chí liền thứ 6 danh thứ tự đều bài không thượng, chính là đặt ở thứ 5 tổ trung, cái này thành tích lại có thể trực tiếp đạt được thăng cấp tư cách.</p>
+<p>“…… Cạnh kỹ thể dục kỳ diệu, ở hôm nay trận thi đấu này trung, cũng hiện ra đến vô cùng nhuần nhuyễn.” Lý Sâm cảm khái một câu, sau đó lại đột nhiên phấn chấn nổi lên tinh thần “Nhưng là, tại đây một cái đặc thù tình huống ảnh hưởng hạ, Lý Tuấn Hào hiện tại như cũ bảo trì còn thừa tuyển thủ trung thứ 5 danh thành tích…… Chỉ cần ở đấu loại thứ 6 tổ trung tuyển thủ, thứ 4 danh cùng thứ 5 danh thành tích không chạy tiến 45 giây 22 trong vòng nói, Lý Tuấn Hào liền có thể bằng vào còn thừa tuyển thủ trung thành tích xếp hạng, thăng cấp vòng bán kết!”</p>
+<p>Nếu nói, ở đấu loại thứ 4 tổ thi đấu vừa mới kết thúc khi, Lý Tuấn Hào thăng cấp hy vọng còn có chút xa vời nói, tới rồi hiện tại, cái này hy vọng rồi lại đột nhiên thăng lên.</p>
+<p>Loại này hy vọng thượng phập phập phồng phồng, làm hiện trường thính phòng thượng Bùi Tấn An, Khương Văn Đào cùng với một chúng Trung Quốc đội vận động viên nhóm tâm bị huyền treo ở giữa không trung, cũng làm quốc nội ngồi canh trận thi đấu này khán giả, tâm cũng bị huyền tới rồi không trung.</p>
+<p>【 a a a a a, ta thiên, này cũng quá ma người đi? Ta nguyên bản cho rằng có thể hay không thăng cấp, xem xong thứ 5 tổ thi đấu sau, cũng có thể có cái đại khái, kết quả thứ 5 tổ thi đấu sau khi xong, còn thừa tuyển thủ trước sáu xếp hạng cư nhiên không có chút nào biến hóa? 】</p>
+<p>【 sát, ta cũng sọ não đau, này thứ 5 tổ thành tích cũng quá thủy một chút đi? A Hào nếu là ở thứ 5 tổ thi đấu nói, vậy trực tiếp là tiểu tổ đệ nhất thăng cấp! 】</p>
+<p>【 đừng nói A Hào, Tiểu Khâu hắn ở thứ 5 tổ thi đấu nói, hắn không cũng có thể là đệ nhất sao? 】</p>
+<p>【 Phật, ta nhìn đến bác lỗ đặc chạy ra 46 giây 22 thời điểm, ta đều sợ ngây người, hoa thủy kia cũng không thể như vậy hoa đi? Đây là hoàn toàn không nghĩ thăng cấp vòng bán kết a? 】</p>
+<p>【 làm sao ngăn là bác lỗ đặc đâu? Vừa mới thứ 5 tổ thi đấu xem đến ta quả thực…… Giải vô địch Châu Á đều so này một tổ thi đấu muốn xuất sắc kích thích đến nhiều a……】</p>
+<p>Rất nhiều người xem đều ở phun tào thứ 5 tổ thành tích cùng thứ 5 tổ tiền tam danh tuyển thủ trực tiếp thăng cấp vận may, chỉ là cái này vận khí người khác xác thật hâm mộ không tới, vì thế chỉ có thể trơ mắt mà nhìn thứ 5 tổ tuyển thủ mang theo phi thường tùy tiện thành tích nhẹ nhàng thăng cấp vòng bán kết.</p>
+<p>Tuyển thủ thông đạo thượng, đang ở chờ đợi lên sân khấu Trương Tử Nghĩa cũng ở tuyển thủ trong thông đạo xem xong rồi đấu loại thứ 5 tổ thi đấu, cùng hắn cùng tổ còn lại tuyển thủ, ở nhìn đến thứ 5 tổ thi đấu khi, hoặc nhiều hoặc ít đều nhướng mày, lộ ra kinh ngạc thần sắc, nhưng là trừ cái này ra, Trương Tử Nghĩa nhìn ra được, hắn này đó đối thủ nhóm cũng không có đối thứ 5 tổ tuyển thủ có cái gì hâm mộ cảm xúc.</p>
+<p>Ở nhìn đến thứ 5 tổ tuyển thủ thành tích sau, này đó tuyển thủ đại đa số đều bình tĩnh mà chuyển qua đầu, sau đó đứng ở trong thông đạo, chờ đợi nhân viên công tác chỉ dẫn.</p>
+<p>Trương Tử Nghĩa liếc mắt một cái TV phát sóng trực tiếp màn hình, cũng đồng dạng bình tĩnh mà chuyển qua đầu, an tĩnh chờ đợi nhân viên công tác chỉ dẫn.</p>
+<p>“Hắc, huynh đệ, ngươi ở hâm mộ thứ 5 tổ những cái đó gia hỏa sao?” Liền ở Trương Tử Nghĩa quay đầu chuẩn bị an tĩnh chờ đợi lên sân khấu khi, một cái mang theo kỳ quái khẩu âm tiếng Anh ở Trương Tử Nghĩa bên tai vang lên, hắn quay đầu lại nhìn thoáng qua, là thứ 6 tổ trung Columbia tuyển thủ.</p>
+<p>Gia hỏa này tuy rằng một thân làn da ngăm đen, nhưng là nhìn ra được năm sau kỷ không lớn, chỉ là vẻ mặt trương dương, thoạt nhìn có điểm chọc người phiền.</p>
+<p>Không chờ Trương Tử Nghĩa cho hắn cái gì hồi phục, hắn liền thao thao bất tuyệt mà nói lên “Ngươi là Trung Quốc tuyển thủ đi? Ta biết, Trung Quốc 400 mễ cả nước kỷ lục là 45 giây 25…… Cái này thành tích ở chúng ta này một tổ nhưng có điểm không xong, bất quá các ngươi vẫn là so Gibraltar cái kia quốc gia muốn cường nhiều, Gibraltar 400 mễ kỷ lục là 47 giây nhiều, hắc, cái này thành tích quả thực quá buồn cười, phải biết, ta luyện 400 mễ hai năm thời điểm, cũng đã có thể chạy đến 47 giây, cái này quốc gia 400 mễ tuyển thủ không khỏi cũng quá không xong một ít……”</p>
+<p>Cũng không biết cái này Columbia tuyển thủ là nơi nào tới tự tin, có lẽ là nhận định Trương Tử Nghĩa thành tích không bằng hắn, vì thế đem Trương Tử Nghĩa coi như một cái yêu cầu nhìn lên hắn nhược đội tuyển thủ.</p>
+<p>Tuyển thủ trong thông đạo, đồng dạng ở thứ 6 tổ Gibraltar tuyển thủ cũng nghe tới rồi hắn nói, ở hắn nhục nhã đến Gibraltar thành tích khi, hai bên khói thuốc súng hương vị đã liền phải xông ra.</p>
+<p>Trương Tử Nghĩa không nói thêm gì, chỉ là ở cái kia Columbia tuyển thủ còn muốn tiếp tục đi xuống nói khi, lạnh nhạt mà đáp lại hắn một câu “Ngươi quá sảo.”</p>
+<p>“Hắc! Ngươi nói cái gì?”</p>
+<p>Trương Tử Nghĩa không có tâm tình quá nhiều để ý tới tên này, đúng lúc này, nhân viên công tác xuất hiện, bắt đầu dẫn đường bọn họ hướng đường đua đi lên, cái này Columbia tuyển thủ có lẽ là bởi vì khoe ra tâm lý không có thể được đến thỏa mãn, còn riêng quay đầu lại nhìn thoáng qua Trương Tử Nghĩa, đối với Trương Tử Nghĩa đưa lên một cái ngón cái triều hạ khinh bỉ thủ thế.</p>
+<p>Chờ sở hữu tuyển thủ đều tới rồi trên sân thi đấu sau, mọi người phân biệt đứng ở chính mình nơi trên đường băng, bắt đầu điều chỉnh chính mình xuất phát chạy khí cũng tiến hành đơn giản thí chạy.</p>
+<p>Này một tổ trong lúc thi đấu, Trương Tử Nghĩa ở vào đệ ngũ đạo, mà vừa mới vẫn luôn ở đối Trương Tử Nghĩa phun rác rưởi cùng phóng trào phúng Columbia tuyển thủ Martins tắc bị an bài ở đệ cửu đạo thượng.</p>
+<p>Căn cứ nói thứ an bài tiềm quy tắc, có thể bị tùy cơ an bài ở bên trong đường đua thượng, cơ bản đều là phân tổ trung thực lực mạnh mẽ tuyển thủ, Martins ở tới rồi chính mình nói thứ lúc sau, quay đầu lại quan vọng liếc mắt một cái, quả nhiên nhìn đến vị kia Gibraltar tuyển thủ bị an bài ở đệ nhị đạo thượng, nhưng là hắn thực mau liền nhìn đến, vừa mới bị hắn trào phúng quá cái kia Trung Quốc tuyển thủ, lại ở đệ ngũ đạo vị trí thượng.</p>
+<p>Này cơ bản là phân tổ trung một cái hoàng kim nói lần, Martins nhìn Trương Tử Nghĩa phương hướng, lộ ra không thể tưởng tượng thần sắc, sau đó lại lần nữa chuyển vì không sao cả cùng khinh miệt —— hắn cảm thấy lần này đấu loại có lẽ cũng không có tuần hoàn ngày thường nói thứ phân chia nguyên tắc, mà là từ máy tính tùy cơ quyết định.</p>
+<p>Đứng ở đường đua thượng Trương Tử Nghĩa cũng không để ý đến Martins suy nghĩ cái gì, hắn điều chỉnh xong chính mình xuất phát chạy khí, lại lợi dụng xuất phát chạy khí đơn giản mà thí chạy qua lúc sau, liền một lần nữa trạm trở về xuất phát chạy điểm vị trí thượng, đơn giản mà giãn ra tứ chi, chờ đợi thi đấu bắt đầu.</p>
+<p>Trương Tử Nghĩa nhìn quanh chung quanh, tại đây to như vậy sân vận động trung, người xem cơ hồ ngồi đến tràn đầy, hiện trường mỗi một cái người xem đều thập phần nhiệt tình, cho dù thi đấu còn không có bắt đầu, cũng có người xem thỉnh thoảng lại tụ ở bên nhau hô lên cố lên thanh, mà này đó nhiệt tình thanh âm quanh quẩn ở sân vận động hiện trường trung, làm hiện trường người xem cũng càng thêm mà kích động lên.</p>
+<p>Ở hắn quanh thân, có nước Mỹ danh tướng, pb43 giây 87 Christensen, có Kenya gần hai năm tới 400 mét nam hạng mục tân tinh, đã từng chạy từng vào 44 giây 30 Jipuluto, mà cái kia đối hắn kêu gào Columbia Martins, hắn tuy rằng quá mức kiêu ngạo, nhưng là hắn pb cũng ở 44 giây 88, là một cái có ưu tú thiên phú tuổi trẻ tiểu tướng.</p>
+<p>Đứng ở như vậy đường đua thượng, nhìn quanh này đó thực lực mạnh mẽ đối thủ nhóm, Trương Tử Nghĩa có trong nháy mắt xúc động, muốn ở trận thi đấu này trung toàn lực ứng phó, thử xem chính mình có thể vọt tới cái dạng gì thành tích —— may mà, hắn kịp thời nhớ tới, hiện tại còn chỉ là đấu loại.</p>
+<p>Mục đích của hắn, cũng không phải là ở như vậy một hồi đấu loại lúc sau, liền ở vòng bán kết trung từ bỏ.</p>
+<p>Hắn tưởng muốn nhìn một cái, nhìn một cái càng đứng đầu vị trí phong cảnh, sau đó đứng ở cái kia ở vào đỉnh vòng chung kết tử, làm càng nhiều người nhìn đến chính mình, nhìn đến…… Đến từ Trung Quốc tuyển thủ, có thể đứng ở như thế nào độ cao thượng!</p>
+<p>Tuy rằng Tô Bạch nói, hy vọng bọn họ có thể càng thuần túy mà hưởng thụ đường đua, nhưng là Trương Tử Nghĩa biết, loại này gia quốc vinh dự, sớm đã khắc vào chính mình trong cốt nhục, hắn sẽ không vứt bỏ này đó, hắn sẽ mang theo loại này vinh dự cùng trách nhiệm, sau đó chạy vội tại đây điều hắn chí ái đường đua thượng.</p>
+<p>Hô, hút, hô, hút……</p>
+<p>Theo một cái vi diệu hô hấp tiết tấu, Trương Tử Nghĩa dần dần làm chính mình tiến vào tới rồi càng thêm đầu nhập trạng thái bên trong, hắn bình tĩnh mà đứng ở chính mình đường đua thượng, cảm thụ được bàn chân xuyên thấu qua mềm nhẹ giày chạy đua chạm đến mặt đất đường băng cảm giác, cảm thụ được thính phòng thượng tiếng hoan hô, cảm thụ được làm chính mình cực nóng hết thảy……</p>
+<p>Sau đó, theo quảng bá bên trong ‘ các vào chỗ ’ nhắc nhở thanh vang lên, đi vào xuất phát chạy khí trước, cúi người ngồi xổm, làm tốt xuất phát chạy dự bị tư thế.</p>
+<p>“400 mét nam thứ 6 tổ đấu loại, Trương Tử Nghĩa nơi cái này tiểu tổ thi đấu, liền phải bắt đầu rồi!!”</p>
+<p>Thiệu Mẫn Nhất thanh âm mang theo một chút run rẩy, đây là một loại khó có thể ức chế khẩn trương cảm.</p>
+<p>Không chỉ là hắn, còn có Lý Sâm, còn có thể dục kênh đạo bá thất trung lúc này đồng dạng đang nhìn thi đấu nhân viên công tác, TV trước ngàn ngàn vạn vạn khán giả, còn có thi đấu hiện trường Trung Quốc tuyển thủ khu Khương Văn Đào bọn họ……</p>
+<p>Mỗi người, đều đang khẩn trương mà chờ mong trước mắt thi đấu.</p>
+<p>“Dự bị…… Phanh!”</p>
+<p>Cơ hồ chính là ngay lập tức chi gian, dự bị thanh sau, súng lệnh lập tức vang lên —— 400 mét nam chạy nước rút cuối cùng một tổ đấu loại bắt đầu rồi!</p>
+<p>Ở súng vang trong nháy mắt, Trương Tử Nghĩa lực lượng cũng đã đúng lúc bùng nổ, sau đó đặng dẫm lên xuất phát chạy khí hướng về phía trước nhanh chóng đặng mà gia tốc mà đi!</p>
+<p>Trận này đấu loại, cũng không giống thứ 5 tổ đấu loại như vậy lỏng, tương phản, có lẽ là bởi vì thấy được thứ 5 tổ đấu loại khi cái kia phản diện trường hợp, trận này thi đấu mỗi một cái tuyển thủ đều trạng thái siêu phàm, ở xuất phát chạy giai đoạn, liền hiện ra ra một cổ làm người vô pháp lay động khí thế.</p>
+<p>“Trương Tử Nghĩa xuất phát chạy phi thường hảo! Sức bật ưu tú, hắn này cổ sức bật hoàn toàn không thua cho hắn phía sau nước Mỹ tuyển thủ Christensen!”</p>
+<p>“Trương Tử Nghĩa bằng vào hắn khởi bước bùng nổ, nhanh chóng kéo gần lại cùng hắn phía trước đệ lục đạo Anh quốc tuyển thủ chi gian khoảng cách!”</p>
+<p>“Thực hảo! Bảo trì!!”</p>
+<p>Đường đua thượng, đệ lục đạo Anh quốc tuyển thủ tạm thời không biết ở hắn tả phía sau, cái kia đến từ Trung Quốc tuyển thủ đã nhanh chóng ở tiếp cận hắn, mà ở Trương Tử Nghĩa tả phía sau, đến từ Iraq đệ tứ đạo tuyển thủ ở nhìn đến Trương Tử Nghĩa xuất phát chạy bùng nổ cùng hàm tiếp gia tốc tốc độ lúc sau, trên mặt đều lộ ra một chút khiếp sợ thần sắc.</p>
+<p>Thật nhanh!</p>
+<p>Cái kia đến từ Trung Quốc tuyển thủ xuất phát chạy bùng nổ gia tốc tốc độ thật nhanh!</p>
+<p>Trương Tử Nghĩa tuy rằng không có hoàn toàn phóng xuất ra chính mình trạng thái, nhưng là ở như vậy đứng đầu trên sân thi đấu, ở đối mặt này đó đứng đầu tuyển thủ khi, mặc dù chỉ là giống trước đây Giải Vô Địch Thế Giới tuyển chọn tái khi duy trì đồng dạng lực độ, cũng sẽ ở như vậy trên sân thi đấu, có một loại vượt xa người thường phát huy.</p>
+<p>Trong lòng vứt bỏ chung quanh hết thảy hoàn cảnh cùng thanh âm, trong tai tựa hồ chỉ nghe được đến chính mình tiếng tim đập, tiếng bước chân cùng máu nóng bỏng lưu động sôi trào thanh.</p>
+<p>Cái loại này nóng cháy cảm giác làm Trương Tử Nghĩa nhịn không được có một loại vui sướng cảm.</p>
+<p>Hắn có thể chạy trốn càng mau!</p>
+<p>Chẳng sợ khống chế được thể năng, hắn cũng như cũ có thể chạy đến càng mau……! Loại này uyển chuyển nhẹ nhàng tựa hồ có lực lượng ở kéo chính mình ở đường đua tiến lên hành cảm giác, làm Trương Tử Nghĩa tại đây điều 400 mễ đường đua thượng nhanh chóng chạy như bay.</p>
+<p>Hiện tại, không chỉ là ở hắn phía sau Iraq tuyển thủ chú ý tới hắn, ngay cả càng phía sau nước Mỹ đội Christensen đều phát hiện phía trước thứ 5 đường đua thượng cái kia Trung Quốc tuyển thủ, tốc độ mau đến hoàn toàn vượt qua hắn dự tính.</p>
+<p>Christensen cơ hồ là theo bản năng mà liền bắt đầu về phía trước đuổi theo —— hắn có thể cảm nhận được, phía trước cái kia Trung Quốc đội tuyển thủ, hắn tiết tấu phi thường vững vàng, nhưng là chính là tại đây loại tiết tấu vững vàng dưới tình huống, hắn chạy tốc như cũ phi thường mau.</p>
+<p>Này còn không phải hắn cực hạn!</p>
+<p>Christensen lập tức phải ra cái này kết luận.</p>
+<p>Hắn cần thiết mau một chút, hắn nhưng không nghĩ như là thứ 5 tổ những cái đó gia hỏa giống nhau, chạy ra làm người trào phúng thành tích.</p>
+<p>Cùng thứ 5 tổ so sánh với, thứ 6 tổ đấu loại, các tuyển thủ chi gian lẫn nhau cạnh trục, tốc độ kích thích đến làm người cho rằng này không phải một hồi đấu loại, mà là vòng bán kết cuộc đua.</p>
+<p>Từ cái thứ nhất khúc cong qua đi, Trương Tử Nghĩa liền dần dần đuổi theo phía trước thứ 6 đường đua Anh quốc tuyển thủ, sắp tới đem tiến vào cái thứ hai khúc cong khi, chỉ là đơn giản giằng co lúc sau, hắn liền hoàn thành đối đệ lục đạo Anh quốc tuyển thủ phản siêu.</p>
+<p>Sau đó là đệ thất đạo Bỉ tuyển thủ.</p>
+<p>Chờ đến cái thứ hai khúc cong sau khi chấm dứt, bất luận là hiện trường Trung Quốc tuyển thủ khu thính phòng thượng, vẫn là quốc nội thể dục kênh phòng live stream, lại hoặc là TV trước, Trung Quốc đội người ủng hộ nhóm đều bắt đầu gân cổ lên không quan tâm mà bắt đầu cố lên hò hét.</p>
+<p>“A a a! Trương Soái hướng a!! Cố lên!!!”</p>
+<p>“Vượt qua đi! Vượt qua đi!”</p>
+<p>Tới rồi cuối cùng một cái thẳng tắp đường đua, trên sân thi đấu đã là Christensen, Jipuluto cùng Trương Tử Nghĩa chi gian cuộc đua, ở vào thứ 9 đường đua thượng Martins nguyên bản cho rằng chính mình trực tiếp thăng cấp nắm chắc, kết quả chờ tới rồi thẳng tắp đường đua thượng lúc sau, hắn nhoáng lên mắt gian lại phát hiện chính mình rơi xuống vị thứ tư, mà phía trước ba cái tuyển thủ bên trong, có một cái đúng là trước khi thi đấu bị hắn khinh bỉ quá Trung Quốc tuyển thủ.</p>
+<p>Này không có khả năng?!</p>
+<p>Martins ở nhìn đến Trương Tử Nghĩa bóng dáng khi, trên mặt thần sắc hiển nhiên là khiếp sợ, ở trong nháy mắt chấn động sau, hắn bắt đầu không hề yêu quý thể lực, toàn lực về phía trước lao tới, muốn xé xuống cái kia đệ tam danh Trung Quốc tuyển thủ, chính là không chờ đến hắn thành công xé xuống cái kia Trung Quốc đội tuyển thủ, hắn liền phát hiện, cái kia Trung Quốc đội tuyển thủ, đã phản siêu nước Mỹ đội Christensen, gắt gao mà cắn ở Kenya Jipuluto phía sau……!</p>
+<p>Jipuluto hôm nay trạng thái toàn bộ hành trình đều phi thường xuất sắc, tuy là tại đây loại xuất sắc trạng thái hạ, tới rồi cuối cùng 50 mễ lao tới đoạn đường thượng, hắn cũng cảm nhận được đến từ phía sau uy hiếp, may mà, cái này uy hiếp cuối cùng không có thể vượt qua hắn thứ tự.</p>
+<p>Cuối cùng 50 mễ, Trương Tử Nghĩa trong lòng dâng lên toàn lực về phía trước lao tới phản siêu Jipuluto ý niệm, nhưng là hắn lý trí cũng đồng thời dâng lên, khắc chế hắn cái này ý tưởng.</p>
+<p>Cuối cùng, trận này 400 mét nam chạy nước rút đấu loại thứ 6 tổ thi đấu, Trương Tử Nghĩa thành công lấy tiểu tổ đệ nhị thành tích, thuận lợi thăng cấp vòng bán kết!</p>
+<p>Đến tận đây, Trung Quốc đội đã có hai tên tuyển thủ, đạt được trực tiếp thăng cấp danh ngạch.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong206.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong208.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "roi-khoi-gioi-the-duc-sau-ta-thanh-tru-than";
+const NOVEL_TITLE = "Rời khỏi giới thể dục sau ta thành Trù Thần";
+const CHAPTER_TITLE = "Chương 207";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

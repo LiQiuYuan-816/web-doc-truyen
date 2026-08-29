@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 49</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Rời khỏi giới thể dục sau ta thành Trù Thần
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 49</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong48.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong50.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Không phải…… Huấn luyện viên Tô, ngươi tính toán làm cho bọn họ như thế nào nhận rõ hiện thực?”</p>
+<p>Tô Bạch vừa mới trả lời, làm Bùi Tấn An trong lòng nhảy dựng, cảm thấy có điểm hoảng loạn.</p>
+<p>Nhìn Bùi Tấn An khẩn trương bộ dáng, Tô Bạch vẻ mặt bình tĩnh nói “Không có gì, khiến cho bọn họ biết một chút, chính mình hiện tại rốt cuộc là cái cái gì trình độ.”</p>
+<p>Dừng một chút, Tô Bạch đối Bùi Tấn An nói “Nếu phương tiện nói, ta tưởng thỉnh quốc gia đội hỗ trợ cấp trước mắt vài vị 400 mễ hạng mục trọng điểm bồi dưỡng tuyển thủ an bài một hồi ngoại chiến, hoặc là mời Âu Mỹ vận động viên tới quốc nội, tiến hành một hồi đơn giản đội nội luyện tập tái.”</p>
+<p>Nghe được Tô Bạch những lời này, Bùi Tấn An cuối cùng là hoàn toàn minh bạch —— Tô Bạch đây là phải cho trong đội 400 mễ các tuyển thủ một cái ra oai phủ đầu nha!</p>
+<p>Hắn cau mày, đối Tô Bạch nói “Huấn luyện viên Tô, ta minh bạch ngươi mới đến, khả năng sẽ lo lắng vận động viên ở huấn luyện thượng không đủ phối hợp, chính là chúng ta làm huấn luyện viên, không chỉ có muốn suy xét vận động viên huấn luyện, cũng muốn suy xét vận động viên tâm lý tình huống, trước mắt tình huống là, Á Vận thi đấu chu kỳ liền ở ngày 23 tháng 8 đến ngày 1 tháng 9 trong lúc, hôm nay đã là ngày 18 tháng 7, tập huấn vận động viên đem ở 3 thiên nội đúng chỗ, khấu trừ trước khi thi đấu chuẩn bị thả lỏng thích ứng thời gian, tính toán đâu ra đấy chúng ta cũng chỉ có 40 thiên không đến tập huấn thời gian.”</p>
+<p>“Chúng ta muốn bảo đảm vận động viên nhóm ở trong khoảng thời gian này nội huấn luyện có hiệu quả, càng muốn bảo đảm vận động viên nhóm thi đua tin tưởng, hiện tại làm các tuyển thủ cùng Âu Mỹ 400 mễ hạng mục tuyển thủ tiến hành luyện tập tái đối kháng, chỉ sợ sẽ nghiêm trọng đả kích vận động viên dự thi tin tưởng, đối lần này Á Vận thi đấu chỉ sợ sẽ thực bất lợi……”</p>
+<p>Từ Bùi Tấn An phản ứng đi lên xem, có thể thực rõ ràng mà nhìn ra, hắn đối với Tô Bạch cái này kế hoạch là cũng không tán đồng, chẳng qua bởi vì Tô Bạch là mới tới tân nhân huấn luyện viên, hắn cấp Tô Bạch để lại một ít đường sống, không có trắng ra mà phản đối, phê bình.</p>
+<p>Tô Bạch kỳ thật ở đưa ra cái này nhu cầu phía trước, cũng đã làm tốt sẽ được đến loại này phản hồi chuẩn bị, ở Bùi Tấn An cự tuyệt qua đi, Tô Bạch cũng nói ra chính mình sở dĩ sẽ đưa ra loại này yêu cầu nguyên nhân.</p>
+<p>Trên thực tế, Tô Bạch Khâu Văn lần đầu tiên tham gia 400 mễ hạng mục đại thi đấu phân trạm tái khi, đối với 400 mễ cái này hạng mục hiện trạng cũng đã có điều phát hiện, mà hai ngày này Tô Bạch xem xong rồi tuyển chọn tái thượng 400 mễ hạng mục đấu loại cùng trận chung kết lúc sau, loại cảm giác này liền càng rõ ràng —— trước mắt quốc nội thi đấu hoàn cảnh, đối 400 mễ cái này hạng mục, đều quá mức khoan dung.</p>
+<p>Mà sẽ có loại này khoan dung hoàn cảnh nguyên nhân rất đơn giản, bởi vì quốc nội 400 mễ hạng mục thực nhược, nhược đến phàm là có một chút tiến bộ, nhược đến phàm là có một chút trưởng thành, điền kinh mê nhóm đều là đối tuyển thủ báo bằng nóng cháy đáp lại.</p>
+<p>Loại tình huống này, kỳ thật nói lên cũng là chuyện tốt, bởi vì có điền kinh mê nhóm khoan dung cùng cổ vũ, cho nên vận động viên nhóm sẽ không ở cao áp hoàn cảnh hạ đã chịu các loại không nên bọn họ thừa nhận nhân sinh công kích cùng một ít miệt thị ngôn luận.</p>
+<p>Nhưng là từ một cái khác góc độ tới nói, sinh trưởng tại đây loại ấm áp dư luận hoàn cảnh hạ vận động viên nhóm, liền sẽ tương đối lười biếng cùng dễ dàng được đến thỏa mãn.</p>
+<p>Bởi vì chỉ cần bọn họ được đến nhất định thành tích, được đến nhất định tiến bộ, sẽ có vô số khen ngợi ập vào trước mặt.</p>
+<p>Kỳ thật thời trẻ 100 mễ cùng 200 mễ cũng là cùng loại hoàn cảnh, nhưng là này hai cái hạng mục trung, đặc biệt là 100 mễ cái này hạng mục, vẫn luôn là quốc nội thi đấu điền kinh thượng nhất chịu coi trọng hạng mục, cho nên Điền Quản Trung Tâm sẽ thừa nhận đến từ Thể Tổng áp lực, mà Điền Quản Trung Tâm cũng sẽ đem loại này dưới áp lực phát đến các đội điền kinh, làm đội điền kinh tăng lớn đối tuyển thủ bồi dưỡng lực độ.</p>
+<p>Có thể nói, vì ở 100 mễ cái này hạng mục thượng đạt được đột phá, quốc nội toàn bộ thể dục hệ thống đều là thừa nhận rồi nhất định cảm giác áp bách, ở trong hoàn cảnh này, mỗi một giây tiến bộ đương nhiên cũng sẽ được đến khen, nhưng là mọi người trên vai gánh nặng đồng thời cũng như cũ thực trọng, cũng không sẽ bởi vì lấy được một chút thành tích liền trở nên cao hứng mơ hồ.</p>
+<p>400 mễ cái này hạng mục tắc bất đồng, quốc nội đương nhiên đồng dạng cũng ở 400 mễ cái này hạng mục thượng đầu nhập vào không nhỏ, nhưng là 400 mễ hạng mục bởi vì chỉnh thể kỹ thuật khó khăn so cao, đối với quốc nội tới nói, tuy rằng biết 400 mễ cái này hạng mục từ huấn luyện đi lên giảng chính là như vậy điểm đạo lý, chính là này đó đạo lý rốt cuộc nên như thế nào vận dụng, rốt cuộc nên như thế nào mới có thể bồi dưỡng ra ít nhất Châu Á nhất lưu tiêu chuẩn 400 mễ vận động viên…… Này đó đều là quốc nội khó có thể giải quyết nan đề.</p>
+<p>Cứ thế mãi, Điền Quản Trung Tâm phương diện cam chịu 400 mễ hạng mục là khó có thể phá được xương cứng, quyết định trước phá được 100 mễ cùng 200 mễ hạng mục, sau đó lại đem đã nắm giữ thành thục huấn luyện kinh nghiệm tiếp tục nghiên cứu, vận dụng đến 400 mễ cái này hạng mục đi lên.</p>
+<p>Này liền quyết định, Điền Quản Trung Tâm cùng Thể Tổng phương diện có thể ’ lý giải ’400 mễ hạng mục không ra thành tích chuyện này, hạng mục bản thân chỉ còn thiếu đến từ thượng tầng áp lực.</p>
+<p>Không chỉ có như thế, 400 mễ cái này hạng mục, vận động viên bản thân cũng sẽ theo bản năng mà cảm thấy, quốc nội 400 mễ kỹ thuật chính là không bằng nước ngoài, như vậy dưới tình huống như vậy, quốc nội 400 mễ vận động viên tuy rằng biểu hiện thượng sẽ không đề cập, nhưng là nội tâm trong ý thức sớm đã nhận đồng chính mình ’ yếu kém ’ cái này hiện thực, có lẽ ngay cả bọn họ bản thân đều không có nghĩ tới, chính mình là thừa nhận cái này hiện thực, nếu có người cùng bọn họ nhắc tới cái này đề tài nói, bọn họ có lẽ vẫn là một nhảy ba trượng cao điểm phản phun trở về.</p>
+<p>Mà quốc nội điền kinh mê đâu?</p>
+<p>Nguyên bản điền kinh cái này hạng mục fans liền không nhiều lắm, mà chân chính thích cái này hạng mục thể dục mê, đều là biết điền kinh hạng mục huấn luyện vất vả lại ăn thiên phú, bọn họ còn phi thường am hiểu các loại khảo cổ, nghiên cứu trong ngoài nước các loại thể dục tin tức cùng nghiên cứu khoa học thành quả, dưới loại tình huống này, điền kinh mê nhóm đối với trong ngoài nước thành tích nguyên bản kém giá trị tuy rằng đau lòng, nhưng đối với vận động viên như cũ là thập phần khoan dung.</p>
+<p>Này thượng không có đến từ chuyên nghiệp quản lý mặt nhiệm vụ áp lực, hạ không có đến từ fans mặt áp lực, hơn nữa vận động viên nhóm chính mình trong lòng tự mình nhận tri còn ái trốn tránh hiện thực.</p>
+<p>Các loại trong ngoài giới nhân tố tổng hợp dưới, liền hình thành trước mắt quốc nội 400 mễ cái này hạng mục tương đối xấu hổ hiện trạng —— tất cả mọi người cảm thấy vận động viên nỗ lực, là thiên phú cùng huấn luyện viên phương án thượng hạn chế, nhưng là thực tế trong lúc thi đấu, mọi người lại thường xuyên nhìn đến vận động viên ở hoa thủy, hoa thủy đồng thời còn sẽ vì bọn họ bù lấy cớ, nói là bởi vì bọn họ biết chính mình chạy không ra quá tốt thành tích, cho nên cạnh kỹ trạng thái thực ’ mệt ’.</p>
+<p>Từ Tô Bạch bắt đầu tiếp nhận Khâu Văn 400 mễ hạng mục huấn luyện lúc sau, hắn cũng là trải qua vài lần thi đấu, đồng thời xem qua rất nhiều quốc nội 400 mễ hạng mục thi đấu video, mới dần dần xác nhận cái này tình huống.</p>
+<p>Trước mắt Khâu Văn tạm thời còn không có đã chịu hoàn cảnh này ảnh hưởng, nhưng là Trương Vĩ cùng Hồ Lực phía trước cũng coi như là trong hoàn cảnh này ’ người bị hại ’.</p>
+<p>Tô Bạch ở đi vào quốc gia đội phía trước, cũng đơn giản nhìn một chút Trương Tử Nghĩa, Quách Thuẫn tư liệu, còn có thành phố B đội mặt khác một vị bị Hồ Lực, Trương Vĩ bài trừ lần này tuyển chọn tái Lý Tuấn Hào, từ này đó tuyển thủ trên người, Tô Bạch đã hoặc nhiều hoặc ít mà nhìn ra bọn họ ở dị dạng quốc nội 400 mễ hoàn cảnh ảnh hưởng hạ sở sinh ra lười biếng cảm xúc.</p>
+<p>Xa không nói, liền nói thành phố B đội Lý Tuấn Hào —— cái này thành phố B đội tuyển thủ, thiên phú không thấp, hôm nay bất quá 23 tuổi, nhưng là hắn ở 16 niên độ bên ngoài mùa giải trung, liền chạy ra 46 giây 89 thành tích, là một cái ra thành tích rất sớm vận động viên, chính là năm nay bên ngoài mùa giải trung, hắn mỗi một lần thi đấu cũng chưa có thể chạy tiến 47 giây 50, nguyên bản hắn thành tích không sai biệt lắm tạp ở tiến đại thi đấu trận chung kết xếp hạng cuối cùng thượng, kết quả năm nay ở đại thi đấu thượng đột nhiên sát ra Khâu Văn, Hồ Lực, Trương Vĩ như vậy 3 cá nhân, ở bọn họ 3 người đánh sâu vào dưới, Lý Tuấn Hào trận chung kết dự thi tư cách liền trực tiếp bị hướng đi rồi.</p>
+<p>Chuyện này phía trước trên mạng cũng có không ít võng hữu thảo luận, rất nhiều người đều cho rằng, thành phố B đội cùng tỉnh S đội điền kinh lúc này sống núi xem như kết lớn.</p>
+<p>Nhưng là cũng có điền kinh mê nhóm thực thanh tỉnh mà ý thức được, này thuần túy là bởi vì Lý Tuấn Hào bản nhân ở niên độ nội đại thi đấu phân trạm tái thượng không hề làm, cho nên mới sẽ sinh ra như vậy kết quả.</p>
+<p>Đến nỗi không hề làm nguyên nhân?</p>
+<p>“Cho nên, Lý Tuấn Hào vì cái gì sẽ không hề làm đâu?”</p>
+<p>Tô Bạch đang nói xong rồi mặt trên liên tiếp nội dung lúc sau, phi thường trắng ra mà cứ như vậy dò hỏi Bùi Tấn An, mà ở Tô Bạch hỏi ra vấn đề này lúc sau, Bùi Tấn An sau một lúc lâu không có trả lời, hắn dựa tới rồi chính mình làm công lưng ghế thượng, thật dài mà thở dài.</p>
+<p>“…… Ngươi nói đúng.”</p>
+<p>Bùi Tấn An không có trả lời Tô Bạch sở đưa ra nghi vấn, mà là trực tiếp tán đồng Tô Bạch quan điểm.</p>
+<p>Từ huấn luyện viên góc độ đi lên nói, bọn họ vẫn luôn cảm thấy quốc nội 400 mễ hạng mục huấn luyện năng lực không đủ, mà đối với vận động viên, bọn họ tuy rằng từ huấn luyện thượng thập phần nghiêm khắc, nhưng là từ sinh hoạt thượng từ tâm lý khỏe mạnh thượng, đều là thập phần quan ái che chở.</p>
+<p>Không chỉ có như thế, quốc gia đội chủ yếu gánh vác chính là quốc tế thi đấu thi đấu nhiệm vụ, bởi vậy yêu cầu trọng điểm chú ý vận động viên nhóm thi đua trạng thái cùng tâm lý khỏe mạnh.</p>
+<p>Nhiều trọng nguyên nhân dưới, liền dẫn tới bọn họ cũng không nguyện ý như vậy trực tiếp mà làm vận động viên đã chịu suy sụp giáo dục, bởi vì này rất có khả năng dẫn tới vận động viên ở chính thức thi đấu bên trong không có biện pháp phát huy ra nguyên bản thực lực.</p>
+<p>“Là ta nghĩ sai rồi, huấn luyện viên Tô, ngươi nói đúng, là nên làm cho bọn họ nhận rõ một chút hiện thực!”</p>
+<p>Bùi Tấn An trầm khuôn mặt gật gật đầu.</p>
+<p>Hắn điểm này đầu dưới, chính là đồng ý Tô Bạch cách làm, muốn đem nguyên bản có thể nói là ở vào nhà ấm hoàn cảnh trung các tuyển thủ ném đến hiện thực hoàn cảnh bên trong đi một đợt, làm cho bọn họ thấy rõ thực lực của chính mình, sau đó lại đến điều chỉnh bọn họ đối kháng tâm thái cùng tiến thêm một bước huấn luyện kế hoạch.</p>
+<p>Như vậy cách làm, đương nhiên là có khả năng dẫn tới vận động viên tâm lý bị đả kích, thậm chí khả năng sẽ có cá biệt vận động viên chưa gượng dậy nổi, nhưng là quát cốt liệu độc, mất bò mới lo làm chuồng vì khi chưa vãn.</p>
+<p>Hạ định rồi cái này quyết tâm lúc sau, Bùi Tấn An lại nhìn thoáng qua Tô Bạch, cười khổ lắc đầu nói “Huấn luyện viên Tô, ngươi tuy rằng tuổi trẻ, nhưng là so với chúng ta này đó lão nhân đều phải có thể tàn nhẫn đến hạ tâm a! Chúng ta phía trước cũng hoặc nhiều hoặc ít nhận thấy được quá phương diện này vấn đề, nhưng là trong lòng cố kỵ quá nhiều, ngược lại làm không được giống ngươi như vậy dứt khoát.”</p>
+<p>“Ngươi yên tâm, lần này quyết định này, nếu lúc sau thi đấu có cái gì kế tiếp ảnh hưởng, ta sẽ cùng ngươi cùng nhau gánh khởi trách nhiệm, chẳng sợ bởi vì lần này luyện tập tái kích thích phương án dẫn tới tuyển thủ cạnh kỹ trạng thái đã chịu ảnh hưởng, nhưng là chỉ cần có thể thông qua lúc này đây thi đấu, làm cho bọn họ ở lúc sau vận động trên đường đi được càng lâu dài, vậy đáng giá!”</p>
+<p>Nhìn đến Bùi Tấn An đối chính mình toàn lực duy trì, Tô Bạch hơi hơi nhẹ nhàng thở ra, lại xem Bùi Tấn An tựa hồ là ôm tráng sĩ đoạn cổ tay quyết tâm ở duy trì chính mình, Tô Bạch nghĩ nghĩ, vẫn là trấn an nói “Bùi chỉ đạo, ngài yên tâm, tuy rằng sẽ có một ít kích thích, nhưng là các tuyển thủ cuối cùng thành tích chưa chắc sẽ chịu quá lớn ảnh hưởng.”</p>
+<p>Bùi Tấn An nghe được Tô Bạch lời này, cảm thấy hắn ước chừng là đang an ủi chính mình, vì thế cười xua xua tay “Được rồi, không có việc gì, nếu quyết định lần này tập huấn đem 400 mễ cái này hạng mục giao cho ngươi trên tay, vậy ngươi cứ yên tâm lớn mật mà làm đi!”</p>
+<p>Nói xong, Bùi Tấn An chính mình đảo cũng trước nở nụ cười, lúc ban đầu triệu Tô Bạch tới quốc gia đội, vì đương nhiên chính là các tuyển thủ có thể ở trong lúc thi đấu lấy được hảo thành tích, nhưng là vừa mới một phen đối thoại sau khi chấm dứt, Bùi Tấn An nhưng thật ra đem thành tích trước phóng tới sau đầu, cảm thấy có thể làm các tuyển thủ điều chỉnh tốt tâm lí trạng thái, ở trường kỳ phát triển thượng có tiến bộ, cũng là một chuyện tốt.</p>
+<p>Nghĩ nghĩ, Bùi Tấn An nói “Hiện tại vẫn là bên ngoài mùa giải giai đoạn, đại đa số tuyển thủ đều còn ở chạy các loại thi đấu, lập tức chính là Á Vận, tìm Châu Á tuyển thủ cũng không thích hợp, như vậy đi, ta làm dẫn đầu đi liên hệ vài vị năm trước mùa giải tốt nhất thành tích tại thế giới xếp hạng 50 tả hữu tuyển thủ, một vòng trong vòng đến chúng ta trong đội, cùng chúng ta trong đội 400 mễ hạng mục tuyển thủ ’ giao lưu giao lưu ’.”</p>
+<p>Tô Bạch nghe thấy cái này, cũng nghiêm túc gật gật đầu tỏ vẻ đồng ý.</p>
+<p>Thế giới xếp hạng 50 vị, nghe tới cũng không phải cái gì đặc biệt cao thứ tự, đối các tuyển thủ tới nói, liền rất khó nhắc tới cái gì đặc biệt cảnh giác cảm, mà này đó các tuyển thủ thực tế cá nhân thực lực sao……</p>
+<p>Nghĩ đến đây, Tô Bạch cũng cảm thấy Bùi Tấn An an bài phi thường thích hợp.</p>
+<p>Lúc này, còn không có đi vào quốc gia đội điền kinh huấn luyện căn cứ báo danh 400 mễ hạng mục tập huấn các thành viên hoặc nhiều hoặc ít mà đều cảm thấy một trận giật mình —— tổng cảm thấy sau lưng lông tơ đột nhiên dựng lên, đây là chuyện như thế nào?</p>
+<p>Ở giải quyết 400 mễ hạng mục ’ hiện thực nhu cầu ’ lúc sau, Tô Bạch cũng đi đến vượt rào cản tổ, cùng vượt rào cản tổ chủ giáo luyện Lữ Thắng Bân đơn giản câu thông một chút, Lữ Thắng Bân vẫn luôn là Lộ Mạnh Phàm chủ quản huấn luyện viên, ở Tô Bạch mang ra Thôi Lạc Hằng như vậy cái quái vật tân nhân lúc sau, Lữ Thắng Bân là rất tưởng làm Tô Bạch trực tiếp đến vượt rào cản tổ tới, nhưng là hắn ở biết 400 mễ hạng mục sự tình lúc sau, cũng biết yêu cầu này không quá hiện thực.</p>
+<p>Lui mà cầu tiếp theo, Lữ Thắng Bân lo lắng cho mình đối Thôi Lạc Hằng tình huống không hiểu biết, vì thế hắn công đạo Tô Bạch, Thôi Lạc Hằng còn sẽ từ hắn phụ trách.</p>
+<p>Đến nỗi Lữ Thắng Bân nguyên bản rối rắm điểm, chủ yếu vẫn là ở chỗ hay không muốn cho Tô Bạch tới cùng nhau nghiên cứu một chút Lộ Mạnh Phàm huấn luyện phương án, chỉ là ở lặp lại suy xét lúc sau, hắn vẫn là quyết định làm Tô Bạch tạm thời chỉ phụ trách Thôi Lạc Hằng liền hảo.</p>
+<p>Ở vượt rào 110 mét phương diện này, Tô Bạch nhưng thật ra không có gì đặc biệt kế hoạch, kế tiếp hơn một tháng thời gian, hắn đối với Thôi Lạc Hằng chỉnh thể huấn luyện vẫn là sẽ lấy lực chú ý khống chế là chủ, trừ cái này ra, sẽ tiến hành bộ phận kỹ thuật chi tiết thượng điều chỉnh cùng lực lượng, phản ứng tốc độ phương diện duy trì huấn luyện.</p>
+<p>Cùng Lữ Thắng Bân minh xác huấn luyện công tác phân phối lúc sau, Tô Bạch cũng trở lại chính mình ký túc xá, ngồi xuống trên sô pha nhỏ hơi hơi nhẹ nhàng thở ra.</p>
+<p>Ở quốc gia đội nơi này, hoàn toàn mới hoàn cảnh, hoàn toàn mới công tác đồng bạn, may mà, trước mắt xem ra, mọi người đều vẫn là thuần túy thể dục nhân tính cách, công tác ở chung lên hẳn là sẽ không có cái gì quá lớn vấn đề.</p>
+<p>Ở ngắn ngủi mà nghỉ ngơi lúc sau, Tô Bạch mở ra chính mình mang đến laptop, bắt đầu tiến hành kế tiếp thô sơ giản lược huấn luyện kế hoạch cùng mục tiêu quy hoạch.</p>
+<p>Ngày mùa hè giữa trưa ánh mặt trời phô vẩy vào trong nhà, có vẻ phá lệ mà sáng ngời thậm chí có chút chói mắt.</p>
+<p>Tô Bạch giơ tay hơi xoa xoa đôi mắt, ở thu hồi tay khi, hắn nhìn chính mình mu bàn tay, nhíu nhíu mày —— không biết có phải hay không hắn ảo giác, tổng cảm thấy trong khoảng thời gian này tới nay, trên người hắn làn da càng ngày càng trắng nõn lên……</p>
+<p>Hắn nguyên bản ở vận động viên cũng là phơi không hắc loại hình, nhưng hôm nay, thậm chí một nhìn qua dưới cánh tay thượng đều nhìn không tới cái gì lỗ chân lông tồn tại dấu vết.</p>
+<p>Chẳng lẽ là bởi vì hắn từ vận động viên biến thành huấn luyện viên viên, cho nên nguyên bản liền phơi không hắc, hiện tại lại bạch đến càng quá mức lên?</p>
+<p>Tô Bạch gãi gãi đầu, đem cái này nhàm chán ý tưởng vứt tới rồi sau đầu, sau đó lại đem lực chú ý đầu chú đến trước mắt hồ sơ trung đi.</p>
+<p>Ngày hôm sau, đội Điền Kinh Quốc Gia tập huấn huấn luyện viên tổ danh sách chính thức đối ngoại công bố, mà quốc gia đội huấn luyện viên tổ lần đầu tiên toàn thể động viên hội nghị cũng đồng thời triệu khai.</p>
+<p>Ở hội nghị trung, đến từ Điền Quản Trung Tâm thi đua tổ phó chủ nhiệm Khương Văn Đào chủ trì hội nghị, cường điệu nỗ lực giao tranh, cự tuyệt cự tuyệt thuốc kích thích từ từ thường quy tinh thần yêu cầu, đồng thời cũng cùng huấn luyện viên tổ trực tiếp hạ đạt lần này Jakarta Á Vận các hạng mục nhiệm vụ yêu cầu.</p>
+<p>Có lẽ là trước một ngày Bùi Tấn An đã trực tiếp cùng Điền Quản Trung Tâm phương diện thông qua khí, ở nhắc tới 400 mét nam hạng mục khi, Khương Văn Đào đối hạng mục nhiệm vụ vùng mà qua, chỉ cần cầu vận động viên ’ toàn lực phát huy, tái ra tốt nhất trạng thái ’.</p>
+<p>Đồng thời, Khương Văn Đào còn ám chỉ, 【 vì vận động viên lâu dài phát triển biết quy hoạch, cho phép chiến lược tính mà từ bỏ một hai trận thi đấu thành tích 】.</p>
+<p>Nghe đến đó, Tô Bạch minh bạch, này hẳn là chính là Điền Quản Trung Tâm cũng đáp ứng kế hoạch của hắn, cho hắn cũng đủ quyền tự chủ.</p>
+<p>Hội nghị sau khi kết thúc, Khương Văn Đào lại đơn độc để lại Tô Bạch, nói cho hắn Điền Quản Trung Tâm đã thu được Bùi Tấn An phương diện phản hồi, cho phép Tô Bạch yêu cầu, nhưng là đã có kế hoạch cùng phương án, liền phải có tương đối ứng mục tiêu làm toàn bộ kế hoạch phương án thực hành hiệu quả nghiệm chứng.</p>
+<p>Điền Quản Trung Tâm phương diện không cần cầu Tô Bạch lấy lần này Đại Hội Thể Thao Châu Á 400 mễ hạng mục trong khi hạn, cấp ra huấn luyện hiệu quả phản hồi, nhưng là hy vọng Tô Bạch có thể lấy 9 cuối tháng cả nước điền kinh thi đấu tranh giải vì mục tiêu, cấp ra chu kỳ tính huấn luyện hiệu quả nghiệm chứng.</p>
+<p>Tô Bạch hơi hơi sửng sốt “Chính là tập huấn chu kỳ không phải chỉ tới Á Vận trước?”</p>
+<p>Khương Văn Đào lắc lắc đầu “Á Vận trước chỉ là tập huấn đệ nhất giai đoạn, lần này tập huấn, sẽ căn cứ thực tế hiệu quả, có khả năng ở sàng chọn ra bộ phận tuyển thủ sau, trực tiếp cùng năm nay quốc gia đội huấn luyện vào mùa đông nối tiếp.”</p>
+<p>“Tuy rằng hiện tại chỉ là 7 dưới ánh trăng tuần, nhưng là cũng là bên ngoài mùa giải trung hậu kỳ, sang năm chính là 19 năm, giải vô địch Châu Á, Giải Vô Địch Thế Giới liền ở trước mắt, còn có lại sau này 20 năm Thế vận hội Olympic dự thi hạng mục đạt tiêu chuẩn nhiệm vụ……”</p>
+<p>Nói tới đây, Khương Văn Đào sắc mặt trịnh trọng “Huấn luyện viên Tô, lúc này đây, Điền Quản Trung Tâm cùng quốc gia đội đem ngươi điều tới quốc gia đội phụ trách 400 mét nam hạng mục, lấy ngươi tuổi tác cùng huấn luyện viên chức danh tư lịch, đây đều là xưa nay chưa từng có, bao gồm đối với ngươi lúc này đây đề nghị duy trì lực độ, cũng là xưa nay chưa từng có. 400 mễ cái này hạng mục xác thật là quốc nội thi đấu điền kinh thượng đau điểm chi nhất, chúng ta đều hy vọng ngươi có thể ở cái này hạng mục thượng làm ra làm tất cả mọi người phấn chấn thành tích!”</p>
+<p>“Nhưng là ngươi cũng nên minh bạch, nếu ngươi sở làm ra thành tích không có thể đạt tới mong muốn, như vậy Điền Quản Trung Tâm cùng quốc gia đội đều sẽ đối với ngươi một lần nữa phán đoán.”</p>
+<p>“Hết thảy đều là vì vận động viên càng tốt thành tích cùng với vinh quang, hy vọng ngươi có thể minh bạch điểm này.”</p>
+<p>Khương Văn Đào này một phen lời nói, cũng là cùng Tô Bạch rõ ràng minh bạch mà nói xong sở hữu lợi hại quan hệ —— Điền Quản Trung Tâm cùng quốc gia đội phương diện duy trì Tô Bạch làm lúc này đây luyện tập tái, nhưng là Tô Bạch luyện tập tái kích thích còn có lúc sau huấn luyện, cần thiết phải có cũng đủ thành tích phản hồi, nếu không ở đối mặt kế tiếp hai cái ’ điền kinh thi đấu đại niên ’ thi đấu áp lực dưới, quốc gia đội thế tất sẽ lựa chọn mặt khác đã có thành tích, càng có sức thuyết phục huấn luyện viên viên tiếp quản.</p>
+<p>Tô Bạch nhìn Khương Văn Đào, cũng đồng dạng trịnh trọng mà nhìn thẳng hắn hai mắt “Yên tâm, Khương chủ nhiệm ngươi ý tứ ta minh bạch, hiệu quả nghiệm chứng phương án, ta sẽ ở nhìn thấy vận động viên cũng thí nghiệm sau, cấp ra tương ứng tiêu chuẩn.”</p>
+<p>“Hảo.” Khương Văn Đào nở nụ cười “Kia ta liền chờ huấn luyện viên Tô ngươi tin tức tốt!”</p>
+<p>Đến tận đây, Điền Quản Trung Tâm, quốc gia đội chạy nước rút tổ còn có Tô Bạch tam phương đều hoàn toàn đạt thành nhất trí, mà Tô Bạch cũng đạt được lớn nhất quyền tự chủ, có thể đối sắp đi vào chính mình thuộc hạ tham huấn đội viên làm ra một loạt huấn luyện quy hoạch.</p>
+<p>Sắp đi vào Tô Bạch thủ hạ 400 mễ tham huấn vận động viên, tổng cộng có 7 người, trong đó 400 mễ hạng mục truyền thống cường đội thành phố B đội càng là liền người mang huấn luyện viên đều tới, phân biệt là đi vào quốc gia đội làm Tô Bạch phó thủ thành phố B đội 400 mễ hạng mục chủ quản huấn luyện viên Vương Đĩnh, còn có hắn thủ hạ 3 vị đội viên Trương Tử Nghĩa, Quách Thuẫn, Lý Tuấn Hào, mặt khác còn có Z tỉnh đội điền kinh Lâm Xuyên, G tỉnh đội điền kinh Chu Húc, F tỉnh đội điền kinh Trương Sướng, cuối cùng chính là tỉnh S đội điền kinh Khâu Văn.</p>
+<p>Này 6 người bên trong, Trương Tử Nghĩa, Khâu Văn sẽ là 400 mét nam chạy nước rút hạng mục tuyển thủ dự thi, mà Trương Tử Nghĩa, Quách Thuẫn, Lý Tuấn Hào, Lâm Xuyên cùng Chu Húc, Trương Sướng tắc đều là nam tử 4*400 mễ hạng mục tiếp sức đội đội viên, trong đó, Lý Tuấn Hào, Chu Húc, Trương Sướng thay phiên làm thay thế bổ sung tuyển thủ, chỉ có Trương Tử Nghĩa, Quách Thuẫn cùng Lâm Xuyên là tiếp sức đội trưởng kỳ cố định đội viên.</p>
+<p>Này đó đội viên tương quan tư liệu đã tất cả đều đưa tới Tô Bạch trên tay, nhưng là trừ bỏ này đó mặt ngoài tư liệu, Tô Bạch còn muốn hiểu biết đến càng chi tiết một ít nội dung, vì thế hắn nghĩ nghĩ, gọi điện thoại cấp Tôn Hướng Đông, thỉnh hắn hỗ trợ cho chính mình liên hệ một chút quốc gia đội dinh dưỡng sư cùng sau bếp chủ bếp đại sư phó……</p>
+<p>Ngày 20 tháng 7, hôm nay, sở hữu tham dự Jakarta Á Vận quốc gia đội tập huấn vận động viên đều đã tới rồi huấn luyện căn cứ báo danh, Tô Bạch cũng gặp được hắn đội viên còn có phó chủ giáo luyện Vương Đĩnh.</p>
+<p>Ở cùng các đội viên gặp mặt khi, Tô Bạch không để ý đến vẫn luôn cùng hắn làm mặt quỷ Khâu Văn, mà là đối mọi người thống nhất nói “Vì hiểu biết đại gia thực lực, ta làm chủ, mời một ít thế giới xếp hạng ở 50-100 vị 400 mễ hạng mục vận động viên, an bài ở hai ngày sau cùng đại gia tiến hành một hồi luyện tập tái.”</p>
+<p>“Đại gia không cần khẩn trương, hai ngày này mau chóng điều chỉnh tốt chính mình trạng thái.”</p>
+<p>Dừng một chút, Tô Bạch thập phần thân thiện nói “Vì hoan nghênh các vị đã đến, hôm nay ta sẽ tự mình xuống bếp, cho đại gia làm một đốn đón gió bữa tối, buổi tối 6 điểm, đại gia đúng giờ đến thực đường lầu 3 thấy.”</p>
+<p>Ở đây vận động viên nhóm, trừ bỏ Khâu Văn ở ngoài, nguyên bản đều là chuẩn bị nghe huấn luyện viên dạy bảo, kết quả huấn luyện viên thoạt nhìn còn thực dễ nói chuyện bộ dáng sao!</p>
+<p>Không chỉ có dễ nói chuyện, còn nói phải cho bọn họ làm tiếp phong yến a?</p>
+<p>Ở đây này đó vận động viên nơi nào gặp qua này tư thế? Rốt cuộc bọn họ phía trước huấn luyện viên đều là sẽ không xuống bếp tháo hán tử.</p>
+<p>Bất quá bọn họ cũng có chút mê hoặc Cái này huấn luyện viên thoạt nhìn trắng nõn sạch sẽ, còn rất hòa thuận, lại như vậy tuổi trẻ…… Thật sự chính là mang ra Khâu Văn cái kia ngưu bức huấn luyện viên sao?</p>
+<p>Mọi người như có như không đem tầm mắt đều chuyển tới Khâu Văn phương hướng, kết quả chỉ nhìn đến tiểu tử này chính hai mắt tỏa ánh sáng.</p>
+<p>“Tiểu Bạch…… A không, huấn luyện viên huấn luyện viên, hôm nay bữa tối, A Hằng cùng Vương Thâm có thể tham gia sao?”</p>
+<p>Tô Bạch nhìn thoáng qua nối tiếp xuống dưới ’ luyện tập tái ’ nguy hiểm không hề hay biết vận động viên nhóm, sau đó lại nhìn thoáng qua càng thêm ngốc bạch ngọt Khâu Văn, phi thường dễ nói chuyện gật gật đầu “Có thể.”</p>
+<p>Ở đây vận động viên nhóm lại không biết vì sao, ở nghe được Tô Bạch câu này ’ có thể ’, ẩn ẩn mà cả người phát lạnh……</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong48.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong50.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "roi-khoi-gioi-the-duc-sau-ta-thanh-tru-than";
+const NOVEL_TITLE = "Rời khỏi giới thể dục sau ta thành Trù Thần";
+const CHAPTER_TITLE = "Chương 49";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

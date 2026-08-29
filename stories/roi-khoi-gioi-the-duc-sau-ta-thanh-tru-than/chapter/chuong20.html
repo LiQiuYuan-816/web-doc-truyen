@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 20</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Rời khỏi giới thể dục sau ta thành Trù Thần
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 20</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong19.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong21.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Tại đây một vòng thí nghiệm tái lúc sau, về Khâu Văn chuyển hạng mục đến 400 mễ chuyện này, xem như hoàn toàn trần ai lạc định, chỉ là tất cả mọi người không nghĩ tới, trừ bỏ Khâu Văn chuyển hạng mục ở ngoài, 400 mễ hạng mục còn thêm vào nhiều một vị kiêm chức chuyên gia huấn luyện viên.</p>
+<p>Trong đội hành chính nhân viên hiệu suất thực mau, cùng ngày tin tức này đã bị tuyên bố ở trong đội bảng thông báo thượng, mà bảng thông báo phía trên chưa từng xé đi thông cáo bên trong, còn có Tô Bạch giải nghệ chuyển nhập đội điền kinh hậu cần đội ngũ tin tức.</p>
+<p>Thực mau, thể công đội nặc danh trên diễn đàn, thực mau xuất hiện như vậy một cái bát quái cao lầu.</p>
+<p>Chủ đề 【 có người thấy được sao! Khâu Văn chuyển đi luyện 400 mễ, Tô Bạch đi theo làm hắn 400 mễ huấn luyện viên!! 】</p>
+<p>Tin tức này có thể nói là hai ngày này trừ bỏ quốc gia đội huấn luyện viên viên tới đội điền kinh chỉ đạo công tác ở ngoài, trong đội lớn nhất bát quái, rốt cuộc như vậy ly kỳ chuyện này, đừng nói là gần nhất, chính là bọn họ tỉnh đội đi phía trước lại mấy cái vài thập niên, kia cũng là không ai gặp qua.</p>
+<p>Chủ đề 【 chuyện khác ta không quan tâm, ta liền quan tâm Tô Bạch nếu là chuyển đi làm Khâu Văn 400 mễ huấn luyện viên, kia chúng ta lầu 3 thực đường còn có người quản sao?! 】</p>
+<p>1l 【 bằng hữu, ngươi lời này liền không đúng rồi, 3 lâu phía trước từ lão Tôn một người phụ trách thời điểm, các ngươi không phải cũng quá đến hảo hảo sao? 】</p>
+<p>3l 【 ha ha ha, xem ra lâu chủ là hưởng thụ có lầu 3 Trù Thần đãi ngộ đại lão nha, bất quá mắt thấy lầu 3 Trù Thần nơi này lại đi, ta này trong lòng xem như cân bằng…… Rốt cuộc mỗi ngày đi đến lầu hai cửa thang lầu thời điểm, ta trong lòng kia kêu một cái hâm mộ ghen tị hận nha! 】</p>
+<p>6l 【 không phải, các ngươi đều không có người quan tâm quá, hắn Tô Bạch một cái 100 mễ giải nghệ tuyển thủ, chuyển đi sau bếp làm đầu bếp liền tính, này như thế nào còn có thể chuyển tới huấn luyện viên tổ, còn bắt đầu làm 400 mễ huấn luyện viên?! 】</p>
+<p>9l 【 Khâu Văn chuyển hạng mục chuyện này cũng rất kỳ quái đi? Hắn không phải 100 mễ cùng 200 mễ hạng mục trọng điểm tuyển thủ sao? Ta cho rằng hắn năm nay hẳn là hướng về phía quốc gia kiện tướng cấp bậc đột phá mục đích đi, như thế nào lại đột nhiên chuyển tới 400 mễ đi? Này hắn không được từ đầu luyện khởi sao? 400 mễ kỹ thuật phức tạp trình độ so 100 mễ cùng 200 mễ đều cao đi, này không phải chậm trễ chuyện này sao? 】</p>
+<p>15l 【 nếu nhìn đến cái này thiệp, ta liền nói hai câu đi…… Xảo, ta hai ngày này xem qua Khâu Văn 400 mễ thí nghiệm tái, nói ra các ngươi khả năng không tin, hắn vòng thứ nhất thí nghiệm thành tích là 47 giây 58. 】</p>
+<p>17l 【??? 15 lâu bằng hữu, ngươi nói gì? Khâu Văn vòng thứ nhất thí nghiệm thành tích là nhiều ít??? 】</p>
+<p>19l 【…… Cái này thành tích, ta lý trí là không nghĩ tin tưởng, nhưng là Khâu Văn gia hỏa này xác thật bị chuyển tới 400 mễ hạng mục, cho nên…… Này còn thật có khả năng là thật sự?! 】</p>
+<p>27l 【 chuyện này xác thật là thật sự, Hồ Lực chính miệng cùng ta nói, hắn cùng Trương Vĩ hai người cùng nhau cùng Khâu Văn kia tiểu tử chạy thí nghiệm tái, vòng thứ nhất chạy xong thời điểm hai người bọn họ đều ngốc, vẫn là đợt thứ hai chạy thời điểm, Khâu Văn tiết tấu rối loạn, hai người bọn họ mới thắng quá Khâu Văn. Hơn nữa Hồ Lực nói, Khâu Văn thí nghiệm tái, sở hữu chạy vào 48 giây thành tích, toàn bộ đều là Tô Bạch cho hắn hiện trường chỉ đạo, không có ngoại lệ. Ngay cả hôm nay vòng thứ nhất thí nghiệm, quốc gia đội Ngô Thắng Bình tự mình ở trước khi thi đấu cấp Khâu Văn chỉ đạo, cũng không đuổi kịp sau lại đợt thứ hai Tô Bạch chỉ đạo hữu hiệu. 】</p>
+<p>Nếu nói đơn chỉ là Khâu Văn chuyển hạng mục đến 400 mễ nói, kia đội điền kinh đại gia nhiều lắm ăn cái dưa tò mò một chút còn chưa tính, kết quả 27 lâu tuôn ra tới cái này liêu, xem như chân chính làm đội điền kinh vận động viên nhóm chấn động.</p>
+<p>Lời này nói…… Tô Bạch chẳng lẽ ở 400 mễ cái này hạng mục chấp giáo trình độ thượng, so quốc gia đội huấn luyện viên viên còn mạnh hơn sao?</p>
+<p>Này đống cao lầu, bị huấn luyện sau khi chấm dứt vận động viên nhóm một đường cuồng đỉnh, cuối cùng thành cái này nặc danh diễn đàn ít có vượt qua trăm lâu thiệp, hơn nữa từ diễn đàn thiệp danh sách thượng có thể nhìn đến, cái này thiệp điểm đánh số liệu còn ở một đường bão táp, hiển nhiên còn có không ít đơn thuần ăn dưa không nói lời nào vận động viên đang xem thiệp không mở miệng.</p>
+<p>Buổi tối 9 điểm, theo thường lệ ở đội điền kinh thực đường lầu 3 sau bếp trung, Khâu Văn, Vương Thâm cùng Thôi Lạc Hằng ba người lại tụ ở cùng nhau, chờ Tô Bạch cho bọn hắn chuẩn bị ăn khuya thêm cơm.</p>
+<p>Sau bếp, trừ bỏ Khâu Văn ở ngoài, Vương Thâm cùng Thôi Lạc Hằng cảm xúc đều không cao lắm, rốt cuộc, trong đội bảng thông báo, Tô Bạch sẽ kiêm nhiệm Khâu Văn 400 mễ hạng mục huấn luyện viên thông cáo đều đã dán ra tới, liền tính Tô Bạch ngắn hạn nội còn có thể kiêm thực đường lầu 3 sau bếp đầu bếp, nhưng là thời gian lâu rồi đâu?</p>
+<p>Chờ Tô Bạch ở 400 mễ hạng mục thượng chấp giáo, mang theo Khâu Văn thật sự làm ra thành tích lúc sau, 400 mễ hạng mục không có khả năng vĩnh viễn chỉ bồi dưỡng Khâu Văn một người đi? Kia chờ Tô Bạch toàn chức chỉ đạo trong đội 400 mễ hạng mục nói, kia 400 mễ chủ lực huấn luyện viên còn có thể kiêm nhiệm sau bếp đầu bếp sao?</p>
+<p>Sau bếp bệ bếp trước, Tô Triết đang ở thu thập đêm nay cho bọn hắn ăn khuya thêm cơm —— lẩu niêu hầm thịt bò, đây là trong khoảng thời gian này tới nay, Tô Bạch hiếm khi làm tương đối trọng khẩu một đốn ăn khuya, lúc này trên bệ bếp tiểu hỏa ùng ục ùng ục mà châm, đem lẩu niêu thịt bò hương khí từ nắp nồi cùng nồi duyên khe hở thẳng bức ra tới.</p>
+<p>Cũng không biết Tô Bạch tại đây nồi thịt bò bên trong rốt cuộc đều bỏ thêm cái gì, hương vị kia kêu một cái câu nhân hồn phách, thuần hậu thịt bò nùng hương ngẫu nhiên mang theo một tia khương vị cay độc, làm người từ nùng hương tỉnh quá thần tới, sau đó lại bởi vì này hăng hái cay độc kính nhi, làm thịt bò nùng hương khí lại càng hiện mê người.</p>
+<p>Trừ bỏ này thịt bò nấu ở ngoài, Tô Bạch theo thường lệ cho bọn hắn mỗi người kéo một đoạn ngắn mì sợi, bất quá hôm nay mì sợi cục bột tựa hồ là trộn lẫn vào rau dưa nước, xanh miết xanh biếc, thoạt nhìn thập phần sảng khoái, hạ đến nước trong nồi canh, có một loại hết sức tươi mới cảm giác.</p>
+<p>Hiển nhiên, này mì sợi cũng là vì phối hợp buổi tối cái này lẩu niêu hầm thịt bò, có này một chén nhỏ rau dưa mì sợi thức ăn, liền sẽ không làm hương vị nồng hậu thịt bò làm người cảm giác được chán ngấy.</p>
+<p>Hải nha, bất quá chỉ cần là Tô Bạch làm được đồ ăn, lại có ai sẽ ngại đồ ăn nị đâu?</p>
+<p>Mỗi đốn kia nhưng đều ăn không đủ nha!</p>
+<p>Vương Thâm nhìn Tô Bạch trong tay động tác không ngừng, quay đầu ai thở dài một hơi “Ai, Tiểu Bạch cơm, chúng ta đây là ăn một đốn thiếu một đốn nha!”</p>
+<p>Bên cạnh Thôi Lạc Hằng từ hôm nay biết được Tô Bạch sẽ phụ trách Khâu Văn 400 mễ hạng mục chấp giáo sau, cả người liền có vẻ phá lệ rầu rĩ không vui, tuy rằng buổi tối theo thường lệ lôi đả bất động mà đi tới lầu 3 sau bếp, nhưng là hắn 1 mễ 91 người cao to lúc này hơi hơi cuộn, như thế nào xem đều là thực không có tinh thần bộ dáng.</p>
+<p>Thôi Lạc Hằng trong lòng minh bạch, Tô Bạch nếu có thể chính thức chuyển nhập huấn luyện viên cương, kia đối Tô Bạch tới nói tuyệt đối là chuyện tốt, nhưng là hắn chính là rất khó cao hứng đến lên.</p>
+<p>Hắn nguyên bản cho rằng, chính mình phía trước như vậy nhiều năm thời gian, vẫn luôn ở chịu đựng khó chịu bức bách chính mình bình thường ăn cơm, chuyện này hắn hẳn là đã thói quen, kết quả hiện giờ hưởng thụ hôm nay Tô Bạch mang đến vị giác thịnh yến, hiện tại một lần nữa hồi tưởng lên, nếu muốn trở lại quá khứ sinh hoạt, loại sự tình này quang chỉ là ngẫm lại cũng đã làm Thôi Lạc Hằng táo bạo mà gãi gãi tóc.</p>
+<p>Không muốn ăn lão Tôn làm đồ ăn.</p>
+<p>Muốn ăn Tô Bạch làm ăn ngon!</p>
+<p>Thôi Lạc Hằng một bên nghe lẩu niêu truyền đến mùi hương, một bên cảm thấy phiền muộn, loại này phiền muộn, thẳng đến Tô Bạch đem buổi tối ăn khuya chuẩn bị xong, đưa tới bọn họ trước mặt, cũng chưa biện pháp biến mất.</p>
+<p>Trong tay ôm Tô Bạch đưa cho hắn mâm đồ ăn, Thôi Lạc Hằng đầu óc vừa kéo, đối với Tô Bạch hỏi “…… Tiểu Bạch, ngươi có thể hay không cũng làm ta huấn luyện viên?”</p>
+<p>Ha?</p>
+<p>Bên cạnh Vương Thâm nghe được lời này, phốc mà một tiếng hơi kém không đem trong miệng thịt bò cấp phun tới, sau đó che miệng, cuồng tiếu triều Thôi Lạc Hằng dựng lên ngón cái “A Hằng ngưu bức, A Hằng thực sự có ngươi!”</p>
+<p>Thôi Lạc Hằng cái này mạch não thực hảo lý giải —— huấn luyện viên viên thuộc hạ liền như vậy mấy cái vận động viên, vận động viên nếu ăn không ngon, chỉ nghĩ ăn huấn luyện viên thân thủ làm đồ ăn, kia huấn luyện viên cho chính mình vận động viên khai cái tiểu táo không có vấn đề đi?</p>
+<p>Cái này mạch não tuy rằng có thể lý giải, nhưng là không khỏi cũng quá ý nghĩ kỳ lạ, Vương Thâm vì thế không thể không dựng thẳng lên ngón cái cấp Thôi Lạc Hằng điểm cái tán.</p>
+<p>Đừng nói Vương Thâm, Thôi Lạc Hằng đang nói ra những lời này lúc sau, cũng náo loạn cái đỏ thẫm mặt, hắn kia trương một quán viết ’ ta là thứ đầu nhi ’ trên mặt, lúc này đột nhiên bạo đỏ lên, sau đó cũng không quay đầu lại mà ôm chính mình mâm đồ ăn chuyển tới khoảng cách Tô Bạch xa nhất trên bàn, sau đó buông mâm liền bắt đầu khò khè khò khè ăn lên, ý đồ bịt tai trộm chuông thức mà làm bộ vừa mới chính mình không có nói qua câu kia lời nói ngu xuẩn.</p>
+<p>Tô Bạch nhìn đến nơi này, cũng biết Vương Thâm, Thôi Lạc Hằng bọn họ phía trước tựa hồ vẫn luôn không khí hạ xuống là vì cái gì, vì thế nghĩ nghĩ lúc sau, nghiêm túc giải thích nói “Ta tạm thời vẫn là sẽ kiêm sau bếp nơi này chức vụ, ít nhất năm nay bên ngoài mùa giải kết thúc phía trước, ta đều còn sẽ ở phía sau bếp tiếp tục công tác.”</p>
+<p>Đây cũng là Hà Nhất Thân còn có Triệu Hòa Bình nghĩ đến giảm xóc biện pháp, rốt cuộc lầu 3 sau bếp nơi này cố đều là trong đội năm nay trọng điểm tuyển thủ, trải qua năm trước thành tích thất lợi cùng kiểm điểm lúc sau, trong đội đối năm nay thi đấu thành tích là thập phần coi trọng, sở hữu có khả năng ảnh hưởng đến tuyển thủ cá nhân trạng thái nhân tố đều sẽ bị trước tiên tiêu diệt.</p>
+<p>Tô Bạch ở phía sau bếp công tác tới nay, lầu 3 những cái đó trọng điểm tuyển thủ trạng thái thậm chí đều kinh động tới rồi trong đội, có thể nghĩ, Tô Bạch phụ trách thức ăn đối này đó trọng điểm tuyển thủ tới nói có cực kỳ quan trọng ý nghĩa, dưới tình huống như vậy, ít nhất năm nay nội Tô Bạch đều không thể từ sau bếp hoàn toàn định cư lại, cần thiết phải ở lại chỗ này ổn định quân tâm mới được.</p>
+<p>Còn có ít nhất hơn nửa năm thời gian!</p>
+<p>Tô Bạch nói rốt cuộc làm sau bếp bầu không khí nhất thời lung lay lên.</p>
+<p>Vương Thâm đầu óc nhất linh hoạt, hắn nghĩ đến chính là, còn có hơn nửa năm thời gian, ý nghĩa việc này hiển nhiên còn có cứu vãn đường sống, rốt cuộc Tô Bạch làm thức ăn, xác thật làm mọi người đốn đốn đều thập phần chờ mong —— kia, nguyên bản Tô Bạch đều phải bị chuyển đi đảm nhiệm Khâu Văn 400 mễ huấn luyện viên, vì cái gì lão Hà cùng lão Triệu nơi đó còn nguyện ý làm Tô Bạch kiêm nhiệm sau bếp chức vụ đâu?</p>
+<p>Vương Thâm thực mau nhạy bén mà nghĩ đến, mục đích này là vì ổn định ở thực đường lầu 3 ăn cơm đội nội trọng điểm vận động viên tâm tình.</p>
+<p>Kia…… Nếu có thể ổn định một lần, liền khẳng định sẽ có huấn luyện viên tổ thỏa hiệp lần thứ hai cơ hội —— chỉ cần Tô Bạch đừng bị khác đội ngũ đào đi rồi vậy hành!</p>
+<p>Nghĩ đến đây, Vương Thâm đột nhiên lại một giật mình, hắn đột nhiên nghĩ tới hai ngày này đến bọn họ tỉnh đội chỉ đạo công tác quốc gia đội huấn luyện viên nhóm, lại nghĩ đến 400 mễ này hạng mục quốc nội nhân tài nghiêm trọng khuyết thiếu, nếu là Khâu Văn này tiểu tử ngốc thật sự luyện đến ngưu bức trình độ, quốc gia đội liên quan Khâu Văn cùng Tô Bạch cùng nhau đào đi nói……?!</p>
+<p>Sẽ không như vậy xui xẻo đi?</p>
+<p>Vương Thâm một bên ăn thơm ngào ngạt lẩu niêu thịt bò xứng rau dưa tố mặt, một bên ở trong lòng cầu nguyện chính mình ngàn vạn không cần miệng quạ đen.</p>
+<p>Ở Khâu Văn, Vương Thâm cùng Thôi Lạc Hằng ba người ăn xong ăn khuya, sau đó giúp đỡ Tô Bạch đem sau bếp thu thập sạch sẽ lúc sau, một hàng bốn người lại từ sau bếp cùng nhau rời đi, quay trở về vận động viên ký túc xá.</p>
+<p>Tô Bạch ở trở lại ký túc xá lúc sau, trước một bước vào phòng vệ sinh rửa mặt đánh răng, chờ đến hắn rốt cuộc một mình một người thời điểm, hắn não nội an tĩnh một ngày sa điêu hệ thống bắt đầu keng keng keng mà ra bên ngoài bắn liên tiếp tin tức.</p>
+<p>【【 đinh!</p>
+<p>Mục tiêu nhiệm vụ Chỉ đạo nhị cấp liên hệ người dùng Khâu Văn, làm này thuận lợi chuyển nhập 400 mễ chạy nước rút hạng mục.</p>
+<p>Nhiệm vụ trạng thái Đã hoàn thành.</p>
+<p>Nhiệm vụ khen thưởng</p>
+<p>( nhưng tuyển kỹ năng )</p>
+<p>1, tốt nhất tiềm lực hạng mục quan sát Nhưng đối phi liên hệ người dùng sử dụng, quan sát mục tiêu tốt nhất tiềm lực hạng mục cùng tiềm lực phân giá trị, cd thời gian 10 phút, mỗi lần tiêu hao 10 điểm danh vọng giá trị.</p>
+<p>2, động thái thân thể trạng thái phân tích Chỉ có thể đối liên hệ người dùng sử dụng, trói định đệ 1 danh liên hệ người dùng cần tiêu hao 10 điểm danh vọng giá trị, từ nay về sau trói định vận động viên, tiêu hao danh vọng giá trị đem lấy 2 lần chồng lên, trói định sau nhưng quan sát liên hệ người dùng vận động khi thân thể mệt nhọc độ, năng lượng giá trị, sức chịu đựng giá trị, nghị lực giá trị chờ tương quan động thái số liệu.</p>
+<p>3, tuyển thủ huấn luyện trạng thái đoán trước Chỉ có thể đối liên hệ người dùng sử dụng, nhưng căn cứ tuyển thủ trước mặt huấn luyện trạng thái cùng huấn luyện phương án, phân tích đoán trước tuyển thủ kế tiếp một đoạn thời gian huấn luyện thành hiệu. 】</p>
+<p>Đây là Tô Bạch lần đầu tiên gặp được nhưng tuyển nhiệm vụ khen thưởng, này mấy cái khen thưởng, các có các tác dụng, nhưng là Tô Bạch cẩn thận suy xét qua đi, liền có thể biết, đệ 1 điều cùng đệ 3 điều ở hệ thống trung đều có thể tìm được tạm thời thay thế phương án, tỷ như đệ 1 điều có thể lựa chọn đem tưởng quan sát tuyển thủ nghĩ cách trói định vì 2 cấp liên hệ người dùng, đệ 3 điều hiện tại tắc có hệ thống huấn luyện không gian trung mô phỏng vận động viên có thể sử dụng.</p>
+<p>Duy có đệ nhị điều, cái này động thái số liệu, có thể quan trắc đến tin tức quá nhiều, mà này đó tin tức đối với định ra vận động viên huấn luyện phương án cũng đều là quan trọng nhất.</p>
+<p>Nghĩ đến chính mình hôm nay vừa mới bị giao cho vì Khâu Văn chấp giáo 400 mễ hạng mục trọng trách, Tô Bạch không hề do dự, trực tiếp tuyển định đệ 2 điều kỹ năng làm chính mình khen thưởng nội dung.</p>
+<p>Tại mục tiêu nhiệm vụ đạt thành nhắc nhở lúc sau, thực mau hệ thống lại bắn ra lưỡng đạo nhắc nhở, phân biệt là liên tục hoàn thành hằng ngày nhiệm vụ mãn 15 ngày đạt được thành tựu khen thưởng nhắc nhở, cùng với kỹ năng điểm thỏa mãn cơ sở trù nghệ kỹ năng tăng lên nhu cầu nhắc nhở.</p>
+<p>Chỉ là làm Tô Bạch có chút vô ngữ chính là, điều thứ nhất liên tục hoàn thành nhiệm vụ thành tựu khen thưởng, thế nhưng là mở ra một cái tên là ’ hoàn mỹ bảo dưỡng quang hoàn lv1’ kỳ quái công năng, cái này công năng nhắc nhở là thu hoạch lúc sau sẽ tự động mở ra, hơn nữa đối ký chủ tiến hành 24 giờ không gián đoạn thân thể bảo dưỡng, làm ký chủ thời khắc có thể ở vào hoàn mỹ thần tượng trạng thái.</p>
+<p>…………</p>
+<p>Tuy là Tô Bạch, tại đây loại thời khắc cũng nhịn không được muốn hỏi hệ thống —— ngươi vì cái gì sẽ tại đây loại thời điểm nhớ rõ chính mình là cái thần tượng hệ thống?</p>
+<p>Ở trong lòng bất đắc dĩ mà phun tào qua đi, Tô Bạch liền đem cái này cái gì quang quản cấp quên tới rồi sau đầu, ngược lại suy xét hạ, liền đem tích góp xuống dưới kỹ năng điểm cống hiến cho cơ sở trù nghệ kỹ năng 3 cấp.</p>
+<p>Ở Tô Bạch điểm xong rồi cơ sở trù nghệ kỹ năng tăng lên lúc sau, hôm nay có vẻ hết sức bận rộn hệ thống nhắc nhở lại một lần vang lên.</p>
+<p>【 đinh, ký chủ lần đầu điểm mãn cơ sở kỹ năng 3 cấp, ban phát đặc thù khen thưởng, cơ sở trù nghệ kỹ năng lv3 thăng cấp vì trù nghệ kỹ năng lv1. 】</p>
+<p>Tại đây một tiếng hệ thống nhắc nhở tiếng vang sau, cơ sở trù nghệ cái này kỹ năng trực tiếp biến mất, ngược lại biến thành 【 trù nghệ 】 cái này kỹ năng, trước mặt kỹ năng cấp bậc là lv1.</p>
+<p>Trù nghệ kỹ năng đồng dạng sẽ đối trù nghệ của hắn ngũ cảm, sở làm ra thái sắc thành phẩm có sắc hương vị phương diện thêm thành, trừ cái này ra, Tô Bạch chú ý tới trù nghệ kỹ năng cùng cơ sở trù nghệ chi gian lớn nhất khác nhau.</p>
+<p>Ở cơ sở trù nghệ giai đoạn, chỉ có liên hệ người dùng ở ăn hắn nấu nướng thức ăn khi, có xác suất đạt được vi lượng đặc thù hiệu quả, mà đương hắn kỹ năng tiến trình vì trù nghệ lv1 sau, hắn nấu nướng thức ăn trung sở cụ bị hiệu quả cũng tăng lên, mà 2 cấp liên hệ người dùng có trọng đại xác suất có thể hoàn chỉnh mà đạt được hắn thức ăn trung hiệu quả, 1 cấp liên hệ người dùng có ít xác suất, trừ cái này ra, phi liên hệ người dùng cũng có cơ hội từ hắn nấu nướng thức ăn trung đạt được nhất định đặc thù phụ trợ hiệu quả, chỉ là hiệu quả cao thấp, liền đơn thuần xem vận khí.</p>
+<p>Này ý nghĩa, chẳng sợ hắn liên hệ người dùng số lượng có hạn chế, nhưng là chỉ cần hắn ở 3 lâu thực đường tiếp tục cấp vận động viên nhóm nấu cơm nói, như vậy này đó tuyển thủ bên trong, tổng hội có người có cơ hội đạt được bộ phận huấn luyện trạng thái hoặc là cái khác trạng thái thêm thành, này đối toàn bộ tỉnh đội huấn luyện, hiển nhiên đều sẽ có điều trợ giúp cùng tăng lên.</p>
+<p>Nhìn cái này xem như bị sa điêu hệ thống nhét vào trong tay kỹ năng, Tô Bạch bất đắc dĩ mà cười một cái, cái này sa điêu hệ thống, thật là cho hắn một cái không nhỏ nan đề.</p>
+<p>Ngày hôm sau buổi sáng, Tô Bạch tới rồi sau bếp chuẩn bị cấp các đội viên chuẩn bị bữa sáng khi, Tôn Hướng Đông đã ở lầu 3 sau bếp, mà lúc này lầu 3 không ngừng là Tôn Hướng Đông một người, nguyên bản ở lầu hai sau bếp Vương Võ lúc này cũng ở lầu 3 bận rộn.</p>
+<p>“Ai, Vương ca, ngươi như thế nào cũng ở?”</p>
+<p>Đừng nói Tô Bạch sửng sốt, Tôn Hướng Đông cùng Vương Võ cũng sửng sốt.</p>
+<p>Vương Võ nhìn Tô Bạch nở nụ cười “Tiểu Bạch ngươi không phải muốn phụ trách Khâu Văn kia tiểu tử 400 mễ huấn luyện sao? Lão Tôn nơi này lo lắng lo liệu không hết quá nhiều việc, khiến cho ta trước đi lên giúp đỡ.”</p>
+<p>Tô Bạch sửng sốt, minh bạch Tôn Hướng Đông cùng Vương Võ đây là hảo ý, làm chính mình có thể có càng nhiều thời gian chuẩn bị huấn luyện viên nơi đó sự vụ.</p>
+<p>Tôn Hướng Đông nhìn đến Tô Bạch sững sờ, đại khái cũng biết Tô Bạch trong lòng suy nghĩ cái gì, hắn cười phất phất tay “Ngươi chuyện này, lão Hà, lão Triệu bọn họ tối hôm qua đều cùng ta thương lượng qua, gần nhất trong khoảng thời gian này ngươi ở phía sau bếp làm được thực hảo, vận động viên nhóm cũng đều thực thích ngươi làm đồ ăn, nhưng là ngươi lúc sau có huấn luyện viên sự vụ, ở phía sau bếp lượng công việc cũng không thể giống như trước như vậy lớn.”</p>
+<p>“Ta cùng bọn họ thương lượng một chút, liền đem Vương Võ tiểu tử này trước điều đi lên đỉnh trứ, quay đầu lại ngươi làm theo ở lầu 3 muốn phụ trách bộ phận màu sắc rực rỡ chế tác, nhưng là phụ trách số lượng so với phía trước sẽ thiếu một ít.” Tôn Hướng Đông cười nói “Cứ như vậy, đã có thể giảm bớt ngươi gánh nặng, lầu 3 nguyên bản vận động viên nhóm cũng còn làm theo có thể ăn đến ngươi làm đồ ăn, một công đôi việc.”</p>
+<p>Tô Bạch do dự một chút “Chính là lầu hai thực đường nguyên bản cũng thiếu người……” Nếu không lúc trước Tôn Hướng Đông cũng sẽ không muốn thêm vào nhận người.</p>
+<p>Tôn Hướng Đông cười vẫy vẫy tay “Hải nha, này cũng chính là lại chiêu cá nhân chuyện này, ngươi chỉ cần thật có thể đem Khâu Văn kia tiểu tử ở 400 mễ thượng cấp dạy ra tới, kia lão Hà bọn họ liền phải cười nở hoa nhi!”</p>
+<p>Tô Bạch ở phía sau bếp công tác nhiệm vụ, trải qua ngày hôm qua cả ngày khẩn cấp phối hợp, cuối cùng dừng hình ảnh vì trước mắt loại này bộ dáng, bữa sáng khi, tới rồi lầu 3 vận động viên nhóm đầu tiên là nhìn đến sau bếp có Vương Võ ở, trong lòng khẩn trương một cái chớp mắt, sau lại phát hiện bọn họ thân ái đáng yêu 3 hào tủ kính người phụ trách Tô Bạch cũng ở, tức khắc thở dài nhẹ nhõm một hơi.</p>
+<p>Tôn Hướng Đông cũng phi thường thật sự, trực tiếp ở thực đường dán cái bố cáo, nói cho vận động viên thực đường nơi này đối Tô Bạch công tác an bài.</p>
+<p>Nguyên bản ngày hôm qua ăn dưa ăn cả đêm, thời khắc lo lắng Tô Bạch muốn chạy lầu 3 vận động viên nhóm, lúc này nhìn đến cái này xử lý phương án, tuy rằng đi, bọn họ mỗi đốn xoát đến Tô Bạch chuẩn bị xứng cơm xác suất hạ thấp, nhưng là này tổng vẫn là có cơ hội ăn đến sao!</p>
+<p>Vì thế tạm thời, chuyện này liền tính là giai đại vui mừng mà đi qua.</p>
+<p>Bữa sáng khi đoạn sự tình vội sau khi xong, Tô Bạch thực mau trực tiếp từ sau bếp rời đi, đi tới rồi huấn luyện viên tổ văn phòng, trực tiếp tìm được rồi sư phụ của mình Triệu Hòa Bình.</p>
+<p>Trong văn phòng, Triệu Hòa Bình cũng đang ở chờ Tô Bạch đã đến, rốt cuộc, Khâu Văn này liền xem như chính thức chuyển tới 400 mễ hạng mục, hơn nữa trước mắt lập tức liền có một cái thi đấu nhiệm vụ nhu cầu, chính là ngày hôm qua Hà Nhất Thân nhắc tới cả nước điền kinh đại thi đấu phân trạm tái.</p>
+<p>Cả nước điền kinh đại thi đấu phân trạm tái xem như quốc nội so cao cấp điền kinh thi đấu, mỗi năm đều sẽ có mấy cái bất đồng phân trạm, toàn quốc vận động viên có thể lựa chọn chính mình muốn tham dự phân trạm báo danh dự thi.</p>
+<p>Đại bộ phận quốc nội tuyển thủ, muốn xoát chính mình thành tích cùng thành tựu, đều chỉ có thể ở cái này phân trạm tái thượng xoát một xoát, đặc biệt là 400 mễ cái này hạng mục, quốc nội tuyển thủ tiêu chuẩn không nói thế giới trình độ, ngay cả Châu Á nhất lưu trình độ cũng chưa có thể đạt tới, vì thế cả nước 400 mễ các tuyển thủ, càng là chỉ có thể ở đại thi đấu phân trạm tái thượng cho chính mình xoát một xoát thành tựu.</p>
+<p>Ngày hôm qua Hà Nhất Thân nói thật sự minh bạch, chỉ cần Khâu Văn có thể ở đại thi đấu phân trạm tái tiến tới nhập trận chung kết, như vậy Khâu Văn liền sẽ là trong đội 400 mễ hạng mục duy nhất trọng điểm tuyển thủ.</p>
+<p>Mà cái này tiến vào trận chung kết, hiển nhiên không phải không có thời gian hạn chế —— dựa theo trong đội kế hoạch, Khâu Văn năm nay điền kinh bên ngoài mùa giải sau khi chấm dứt, căn cứ đối hắn năm nay thành tích quan sát, hắn đem có rất lớn xác suất bị di trừ ra trọng điểm tuyển thủ danh sách.</p>
+<p>Như vậy Khâu Văn muốn giữ được chính mình trọng điểm tuyển thủ tư cách, hiển nhiên cần thiết là ở hắn chuyển luyện 400 mễ hạng mục năm thứ nhất, cũng chính là mùa giải này trong vòng, xông vào cả nước đại thi đấu phân trạm tái trận chung kết danh sách trung.</p>
+<p>Đối với một cái chưa bao giờ luyện qua 400 mễ hạng mục tuyển thủ tới nói, cái này thành tích yêu cầu kỳ thật là thập phần khắc nghiệt, nhưng là Khâu Văn cùng mặt khác tuyển thủ bất đồng, hắn rốt cuộc ở lần đầu 400 mễ thí nghiệm là có thể chạy ra 47 giây 58 thành tích, mà ở quốc nội đại thi đấu phân trạm tái thượng, chỉ cần Khâu Văn có thể chạy ra 48 giây trong vòng thành tích, như vậy tiến trận chung kết cơ bản liền ổn.</p>
+<p>Đồng thời, Khâu Văn dù sao cũng là một cái trải qua trường kỳ huấn luyện chuyên nghiệp chạy nước rút vận động viên, 400 mễ kỹ thuật tuy rằng phức tạp, tiết tấu khống chế tuy rằng không hảo nắm giữ, nhưng là có hắn trước đây 100 mễ cùng 200 mễ hạng mục cơ sở ở, hảo hảo huấn luyện một phen, xông vào trận chung kết tuyệt không phải không có khả năng sự tình.</p>
+<p>Hiện giờ, Triệu Hòa Bình cùng Tô Bạch sở phải làm sự tình, chính là đối Khâu Văn tiến hành một phen tốt đẹp huấn luyện phương án quy hoạch, làm Khâu Văn mau chóng chuyển hình thành một cái đủ tư cách 400 mễ hạng mục vận động viên.</p>
+<p>Mà liền ở Tô Bạch bọn họ ở vì Khâu Văn tiến hành huấn luyện quy hoạch đồng thời, một cái tên là Điền Kính vương quốc trên diễn đàn, có người đã phát cái thiệp.</p>
+<p>Chủ đề 【 quốc nội chạy 100 mễ cùng 200 mễ cái kia Khâu Văn đại gia biết đi? Vừa mới được đến tin tức, hắn chuyển luyện 400! 】</p>
+<p>Cái này thiệp vừa ra, ở Điền Kính vương quốc trên diễn đàn nhấc lên một trận dư luận phong ba.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong19.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong21.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "roi-khoi-gioi-the-duc-sau-ta-thanh-tru-than";
+const NOVEL_TITLE = "Rời khỏi giới thể dục sau ta thành Trù Thần";
+const CHAPTER_TITLE = "Chương 20";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

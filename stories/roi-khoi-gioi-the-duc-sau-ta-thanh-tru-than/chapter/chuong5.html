@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 5</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Rời khỏi giới thể dục sau ta thành Trù Thần
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 5</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong4.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong6.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Cái này thoạt nhìn không quá hòa hợp với tập thể thanh niên, tên là Thôi Lạc Hằng, là tỉnh S thể công đội điền kinh tổ vượt rào cản hạng mục đội viên, cũng đối trong đội nổi danh thứ đầu nhi.</p>
+<p>Thôi Lạc Hằng là trước hai năm vừa mới từ tỉnh S thể giáo bị tuyển chọn đến tỉnh trong đội tới, dùng tỉnh đội vượt rào cản tổ huấn luyện viên nói tới nói —— tiểu tử này thiên phú khá tốt, chính là một khuôn mặt mỗi ngày thoạt nhìn giống người khác thiếu hắn 800 vạn nhất dạng.</p>
+<p>Kỳ thật Thôi Lạc Hằng cũng phiền, người khác đều cảm thấy hắn một khuôn mặt tràn ngập phản nghịch, nhưng là hắn cảm thấy, phàm là ai mỗi ngày đều ăn không ngon, còn muốn đại thể lượng mà huấn luyện, kia người nọ sắc mặt cũng chỉ định hảo không đến chỗ nào đi.</p>
+<p>Đương nhiên, trừ bỏ Thôi Lạc Hằng chính mình, trong đội những người khác căn bản không biết, tiểu tử này xú mặt cư nhiên là bởi vì cảm thấy ăn không đủ no loại này duyên cớ.</p>
+<p>Vấn đề này, nói lên hắn đều ngại làm ra vẻ, nhưng là hắn từ nhỏ chính là ăn cơm khó khăn hộ, cũng may trong nhà hắn rất có tiền, hắn không yêu ăn cơm, người trong nhà liền biến đổi biện pháp cho hắn làm ăn, các loại tinh tế đồ ăn bị uy đến trong miệng của hắn, lúc này mới làm hắn 16 tuổi thời điểm liền trường tới rồi 186, hiện giờ lật qua năm 20 tuổi ngoi đầu hắn, đã nhảy tới rồi 1 mễ 91 dáng vóc, ở vượt rào cản này hạng mục thượng, luận thân cao cũng chút nào không sợ.</p>
+<p>Chỉ là hắn có thể hảo hảo ăn cơm thời gian, chỉ duy trì đến hắn bị lúc ban đầu huấn luyện viên khai quật, vào thể giáo phía trước.</p>
+<p>Trong nhà hắn điều kiện khá tốt, hắn cha cũng không ngóng trông từ nhỏ thoán thiên thoán mà hắn có thể ở văn hóa khóa thượng có cái gì đại tiền đồ, ở năm đó khai quật hắn huấn luyện viên một hồi lừa dối hạ, cái gì vì nước làm vẻ vang, quang tông diệu tổ linh tinh cách nói, làm trong nhà hắn người kiên định làm hắn đi luyện thể dục tâm.</p>
+<p>Hơn nữa, trong nhà hắn thượng đến gia gia hạ đến cha hắn, đều xem như thân thể dục mê, tóm lại, hắn còn tuổi nhỏ đã bị ném tới rồi thể giáo, từ đây quá thượng “Đồ ăn không hương không muốn ăn cơm - huấn luyện lượng thật lớn không ăn không được - muốn về nhà ăn chút tốt nhưng huấn luyện viên không được - mạnh mẽ ăn cơm tâm tình khó chịu ’’ ác liệt tuần hoàn.</p>
+<p>Nhiều năm như vậy qua đi, hắn cũng coi như là luyện ra có thể mặt không đổi sắc ăn các loại chính mình chán ghét đồ ăn năng lực, rốt cuộc huấn luyện yêu cầu tiêu hao đại lượng thể năng, làm vận động viên, nếu không thể bảo đảm các loại dinh dưỡng thu lấy, ngắn hạn nội có lẽ sẽ không có quá lớn vấn đề, nhưng là từ trường kỳ đi lên xem, thế tất sẽ ảnh hưởng một cái vận động viên cá nhân trạng thái cùng thành tích.</p>
+<p>Chỉ là, học được ăn không thích ăn đồ ăn, cùng ăn xong rồi khó chịu, này hai việc đó là hoàn toàn không mâu thuẫn.</p>
+<p>Từ bắt đầu huấn luyện tới nay, Thôi Lạc Hằng liền không có thể hảo hảo ăn qua một đốn vừa lòng đẹp ý cơm, cho tới bây giờ, hắn còn chỉ là mỗi ngày bãi cái xú mặt mà thôi.</p>
+<p>Thôi Lạc Hằng cảm thấy chính mình tính tình quả thực thật tốt quá, toàn bộ tỉnh S thể công đội đều không thể có so với hắn tính tình càng tốt người tồn tại!</p>
+<p>Bất quá, hôm nay thực đường lầu 3 truyền đến này sợi mùi hương lại tựa hồ ở nói cho Thôi Lạc Hằng —— hắn cho tới nay đều ăn cơm không ngon nhật tử, có lẽ lập tức liền phải đi qua?</p>
+<p>Thôi Lạc Hằng đi vào 3 lâu nhà ăn khi, có thể nhìn đến, có một cái cửa sổ bài đội ngũ phá lệ mà trường, mà lầu 3 thực đường trung làm người nhịn không được nuốt nước miếng mùi hương cũng là từ cái này cửa sổ truyền ra tới.</p>
+<p>Thôi Lạc Hằng ở nhìn thoáng qua cửa sổ tự hào là 3 hào sau, lập tức lấy ra chính mình đi ăn cơm tạp, ở lấy cơm cơ vị thượng xoát một lần —— bọn họ này đó lầu 3 đi ăn cơm vận động viên đều có chính mình mỗi ngày chuyên chúc thực đơn, ở lấy cơm cơ vị thượng quét qua tạp sau, bọn họ là có thể biết chính mình xứng cơm yêu cầu đi đâu cái cửa sổ phân biệt lấy dùng.</p>
+<p>Xảo, Thôi Lạc Hằng hôm nay buổi tối xứng cơm tam tố một huân một canh, trong đó có một tố một huân một canh đều là ở cái này 3 hào cửa sổ lấy dùng.</p>
+<p>Nhìn đến nơi này, Thôi Lạc Hằng trên mặt hơi hơi lộ ra vừa lòng thần sắc, bưng mâm đồ ăn liền hướng 3 hào cửa sổ đi trước đi.</p>
+<p>Thôi Lạc Hằng đi đến 3 hào cửa sổ đội ngũ phần đuôi khi, Khâu Văn cũng vừa mới từ 3 hào cửa sổ lấy xong cơm, hắn hôm nay xứng cơm, canh cà chua trứng gà cùng bò kho là ở 3 hào cửa sổ nơi này lấy dùng, nhưng là hắn hôm nay cơm đơn bên trong không có tương bạo cà tím, mà là mặt khác một đạo xào măng tây —— hắn gần nhất đang ở tiến hành sức chịu đựng huấn luyện, nói là ăn măng tây có thể bổ sung thấp tụ đường, đúng là hắn huấn luyện sở cần bổ sung.</p>
+<p>Tuy rằng đã bắt được Tô Bạch làm một thịt một canh, nhưng là Khâu Văn nhìn kia đạo tương bạo cà tím cũng rất thèm, chỉ là cơm đơn thượng ký lục đã viết đến rõ ràng, hắn cũng chỉ có thể vẻ mặt ai oán mà ôm bò kho cùng canh cà chua trứng gà sau đó liên tục chiến đấu ở các chiến trường khác cửa sổ lấy chính mình kia phân hoàn chỉnh đồ ăn.</p>
+<p>Thôi Lạc Hằng liền không như vậy rối rắm, trước mắt 3 hào cửa sổ 3 nói đồ ăn hắn đều có phân, mang theo một tia vừa lòng thần sắc, Thôi Lạc Hằng phủng mâm đồ ăn, vòng một vòng đem bữa tối của chính mình cùng xứng cơm trái cây đều bắt được tay sau, tùy ý tìm vị trí liền ngồi xuống, cầm lấy chiếc đũa, liền chuẩn thúc đẩy.</p>
+<p>Hắn trước mắt vài đạo đồ ăn, kỳ thật đều xem như tỉnh đội lầu 3 nhà ăn thường thấy tài liệu cùng cách làm nhi, tựa như này đạo bò kho, đầu bếp Tôn Hướng Đông không biết đã làm bao nhiêu lần rồi, nhưng là qua đi, Thôi Lạc Hằng đều chỉ là miễn cưỡng vì huấn luyện, mạnh mẽ hướng trong bụng nuốt mà thôi, nơi nào như là hôm nay hắn trước mắt dáng vẻ này?</p>
+<p>Thoạt nhìn vốn nên cũng là thường thường vô kỳ bãi bàn, nhưng là màu sắc vừa lúc thịt bò bọc một tầng ngao nấu ra tới nước canh, nhan sắc có vẻ hết sức xinh đẹp, này thịt bò ở đưa cho hắn phía trước, là vừa từ hầm trong nồi múc ra tới, lúc này còn mang theo nhiệt khí nhi, Thôi Lạc Hằng vươn chiếc đũa kẹp lên một khối thịt bò, đưa tới miệng mình, trong nháy mắt, một cổ mỹ diệu hương vị liền ở trong miệng của hắn tạc mở ra.</p>
+<p>Loại này đã lâu hưởng thụ đến vừa lòng đồ ăn cảm giác, làm hắn thoải mái mà híp híp mắt.</p>
+<p>Thôi Lạc Hằng nhai nhai trong miệng thịt bò, cái loại này mỹ diệu cảm giác liên tục ở trong miệng hắn lan tràn, thịt bò bản thân tự mang gân nói gãi đúng chỗ ngứa, nhai hai khẩu càng là đem nguyên bản hương khí lại làm người nhiều vài phần dư vị.</p>
+<p>Bị thịnh ra tới bò kho chén đế còn mang theo một ít nước canh, Thôi Lạc Hằng ở ăn một ngụm thịt bò lúc sau, liền không chút do dự cầm lấy cái muỗng, đem trong chén nước canh múc ra tới, tưới ở hắn cơm canh thượng, làm nguyên bản liền nóng hầm hập bạch nhu nhu cơm cũng trở nên càng thêm thơm nức mỹ vị lên.</p>
+<p>Ở ăn qua một ngụm bò kho sau, Thôi Lạc Hằng lại đem chiếc đũa duỗi hướng về phía kia đạo tương bạo cà tím —— cà tím là cái thứ tốt, cũng là vận động viên nhóm dinh dưỡng cơm thượng thường có thái phẩm, chỉ là vận động viên ẩm thực, dầu trơn loại là muốn nghiêm khắc khống chế, trừ cái này ra, ăn uống thượng cũng sẽ tận lực thanh đạm, mà làm tương bạo cà tím món này, lại muốn thiếu du lại muốn thanh đạm, cuối cùng làm được thành phẩm thường thường ở hương vị thượng liền có vẻ có chút nhạt nhẽo.</p>
+<p>Nhưng hôm nay này đạo cà tím, thoạt nhìn xác thật cũng không giống nhiều hơn du như vậy béo ngậy màu sắc, nước chấm thoạt nhìn cũng cũng không có phá lệ nhiều, chính là nó cho người ta mang đến cảm giác chính là —— thoạt nhìn liền rất ăn ngon.</p>
+<p>Thôi Lạc Hằng không biết này có phải hay không chính mình ảo giác, nhưng là hắn xác thật cũng đối này đạo cà tím cảm thấy hứng thú, mà ở một chiếc đũa đem cà tím kẹp đến chính mình trong miệng lúc sau, cái loại này vừa lòng cảm giác liền càng đủ.</p>
+<p>Này đạo cà tím chút nào không hiện dầu mỡ, một ngụm cắn đi xuống, mềm mại mà, cà tím hấp thu no đủ nước canh cũng liền xông ra, kia sợi nước canh mang theo cà tím mùi hương, rầm một ngụm nuốt vào bụng.</p>
+<p>Sách, hoàn mỹ.</p>
+<p>Ăn đến này hai khẩu, Thôi Lạc Hằng trên mặt vừa lòng đều đã muốn tràn ra tới.</p>
+<p>Càng miễn bàn ở uống một ngụm thoải mái thanh tân canh cà chua trứng gà sau, mỹ vị đồ ăn nhanh chóng đem hắn muốn ăn điều động lên —— loại này ăn đến mỹ thực sung sướng cảm, làm Thôi Lạc Hằng luôn luôn được xưng là ’ người khác thiếu hắn 800 vạn ’ xú mặt đều hòa hoãn rất nhiều.</p>
+<p>Một ngụm tưới thượng thịt kho tàu nước canh cơm tẻ, một ngụm thịt bò, lại một ngụm cơm tẻ, lại một ngụm tương bạo cà tím…… Ăn này đó đồng thời, Thôi Lạc Hằng vẫn duy trì sung sướng tâm tình, cũng không quên mâm đồ ăn thượng cái khác thái sắc, có vài đạo mỹ vị đồ ăn mở đầu trận, thỉnh thoảng ăn một ít bình thường đồ ăn, tuy rằng không tính như vậy hoàn mỹ, nhưng là này đã là Thôi Lạc Hằng ngần ấy năm tới nay ăn đến tốt nhất một bữa cơm.</p>
+<p>Đúng rồi, khởi điểm những người đó nói làm này đó đồ ăn đầu bếp là ai tới?</p>
+<p>Tiểu Bạch tên này xuất hiện ở Thôi Lạc Hằng trong đầu.</p>
+<p>Tô Bạch.</p>
+<p>Thôi Lạc Hằng là biết Tô Bạch, bất quá hai người cũng không ở cùng tổ huấn luyện, bất luận là Tô Bạch lại hoặc là hắn đều không phải có thể nhiệt tình mà nơi nơi giao bằng hữu tính cách, cho nên cũng liền giới hạn trong nhận thức.</p>
+<p>Hai ngày này Tô Bạch tên ở tỉnh trong đội thảo luận đến nhiều một ít, bởi vì trước một ngày tỉnh đội bảng thông báo, Tô Bạch xuất hiện ở giải nghệ tuyển thủ danh sách —— ở Tô Bạch tuổi này lựa chọn giải nghệ tuyển thủ nhưng không nhiều lắm, hắn lại cũng không có bị cái gì trọng thương, liền như vậy lựa chọn giải nghệ, chuyện này nhi ở trong đội rất là đưa tới một phen thảo luận.</p>
+<p>Chỉ là không nghĩ tới, cái này thảo luận sự kiện vai chính nhi thế nhưng thành lầu 3 nhà ăn đầu bếp chi nhất, hơn nữa có một tay như vậy xuất sắc tay nghề.</p>
+<p>Nghĩ đến đây, Thôi Lạc Hằng lập tức ở chính mình trong lòng cấp Tô Bạch tên này thượng treo lên một cái thiên sứ quang hoàn, thuận tiện hơn nữa một chuỗi hảo cảm độ.</p>
+<p>Quản hắn làm gì giải nghệ đâu, nấu cơm ăn ngon như vậy người, nhất định là người tốt!</p>
+<p>Có lẽ hôm nào có thể suy xét nhận thức nhận thức?</p>
+<p>Thôi Lạc Hằng một bên mặt vô biểu tình mà đang ăn cơm, một bên ở trong lòng không bờ bến mà nghĩ.</p>
+<p>Mà toàn bộ lầu 3 nhà ăn, trừ bỏ Thôi Lạc Hằng như cũ nhìn như bình tĩnh ở ăn cơm ở ngoài, còn lại tuyển thủ, bất luận cả trai lẫn gái, đều ôm chính mình mâm đồ ăn may mắn từ 3 hào cửa sổ đánh tới đồ ăn, chảy xuống kích động nước mắt.</p>
+<p>“Ngọa tào ngọa tào ngọa tào, đây là ta đời này ăn qua ăn ngon nhất bò kho tương bạo cà tím canh cà chua trứng gà!”</p>
+<p>Nhà ăn, như là Thôi Lạc Hằng như vậy một lần gom đủ Tô Bạch trong tay ba đạo đồ ăn người may mắn cũng không nhiều, nhưng là đại đa số người đều có một hai đạo từ 3 hào cửa sổ đánh tới đồ ăn.</p>
+<p>Lúc này mọi người ăn từ 3 hào cửa sổ vào tay xứng cơm, đều hưng phấn lên, nhà ăn trong khoảng thời gian ngắn náo nhiệt phi phàm.</p>
+<p>“Ngao! Như thế nào sẽ là ăn ngon như vậy bò kho, liền nó, lại cho ta 10 chén cơm, ta có thể hành!”</p>
+<p>“Tưởng bở, 10 chén cơm xuống bụng, lão Trương có thể đem ngươi treo lên đánh! Kêu ngươi hạt ăn!”</p>
+<p>“Ta nhìn đến 3 hào cửa sổ phụ trách đầu bếp tên họ tạp, này vài đạo đồ ăn nhưng đều là Tô Bạch làm! Chân nhân bất lộ tướng a, Tô Tiểu Bạch tiểu tử này nấu ăn lại là như vậy hương, ta không cam lòng a, lúc trước như thế nào liền không có gõ hắn làm hắn cấp chúng ta làm vài bữa cơm ha ha đâu?”</p>
+<p>Ở lầu 3 nhà ăn vận động viên, cơ bản cũng đều nhận thức Tô Bạch, có quen hay không khác nói.</p>
+<p>Tất cả mọi người không nghĩ tới, cái kia thoạt nhìn lạnh như băng Tô Tiểu Bạch, thế nhưng ở trù nghệ thượng có như vậy bản lĩnh.</p>
+<p>Ăn đến này vài đạo đồ ăn người, mỗi cái đều thập phần quý trọng, ở cuồng ăn một lát lúc sau, mắt thấy kia một phần từ Tô Bạch nấu nướng xứng đồ ăn không thừa nhiều ít, ngay sau đó liền đổi thành cái miệng nhỏ chậm nhai.</p>
+<p>Cũng có người xứng cơm vận khí không tốt, liền một đạo đồ ăn cũng chưa đuổi kịp, cũng chỉ có thể tả hữu nhìn xem có hay không người quen cọ một chiếc đũa thử xem, sau đó liền nhà ăn hương khí, mặc sức tưởng tượng một phen có thể đem này đó mỹ thực thống khoái ăn một bữa no nê tốt đẹp cảm giác.</p>
+<p>Đi ăn cơm trong đám người, Khâu Văn ở đệ nhất cà lăm đến bò kho sau, liền bắt đầu tưởng niệm kia đạo chính mình không có thể bắt được tay tương bạo cà tím, một bên tưởng một bên ai oán, sau đó nghe chung quanh mọi người đối Tô Bạch tay nghề khẳng định, một bên ở trong lòng tự đắc —— hắn chính là cái thứ nhất ăn đến Tô Tiểu Bạch cốt mì nước người, ai nha, không biết hôm nay cái buổi tối có thể hay không lại lừa đến một chén cốt mì nước ha ha?</p>
+<p>Sau bếp, Tô Bạch lúc này cũng đã nghỉ ngơi xuống dưới, lầu 3 cái tầng lầu từng người sau bếp, đầu bếp nhóm đều sẽ cho chính mình lưu chút đồ ăn, coi như chính mình cơm trưa.</p>
+<p>Lúc này, Tôn Hướng Đông cũng đã ôm cơm tẻ, liền Tô Bạch làm vài đạo đồ ăn, ăn đến vẻ mặt thống khoái.</p>
+<p>Tôn Hướng Đông lại không phải vận động viên, hắn đương nhiên không cần quản này đó dinh dưỡng xứng cơm dinh dưỡng xứng so vấn đề, chỉ lo nào nói đồ ăn ăn lên hương, vì thế hắn lúc này so bên ngoài nhà ăn vận động viên nhóm cần phải hạnh phúc đến nhiều.</p>
+<p>Một bên ăn, Tôn Hướng Đông trong lòng đối Tô Bạch lại càng vừa lòng thập phần, cảm thấy làm Tô Bạch vào sau bếp, thật sự là cái hảo vô cùng quyết định.</p>
+<p>Nếu lúc này Tô Bạch có thể nghe được hảo cảm giá trị nhắc nhở âm, kia hắn hẳn là đã bị các loại điên cuồng hảo cảm giá trị +1 thanh âm cấp bao phủ.</p>
+<p>Buổi tối chầu này cơm qua đi, lúc này Tô Bạch cái kia mục tiêu nhiệm vụ đã hoàn thành, hắn đạt được 20 cái sơ cấp liên hệ người dùng, mà trong đó, xếp hạng đệ nhất vị cùng vị thứ hai Khâu Văn, Tôn Hướng Đông, bởi vì đã ăn hắn hai bữa cơm, ở sơ cấp liên hệ người dùng kinh nghiệm giá trị thượng, hai người đều biến thành 2 20, rất có khả năng, ở hai người kinh nghiệm giá trị mãn lúc sau, liền sẽ chuyên vì hắn trung cấp liên hệ người dùng.</p>
+<p>Mà trừ cái này ra, hai người ’ liên hệ người dùng thời hạn có hiệu lực ’ cũng thuận thế kéo dài 1 thiên.</p>
+<p>Tô Bạch một bên đang ăn cơm, một bên nhìn não nội hệ thống giao diện, lật xem khởi lúc này hắn 20 cái liên hệ người dùng tin tức, đặc biệt là hạng mục tiềm lực giá trị cái này tin tức tới.</p>
+<p>Ngày hôm qua hắn ở nhìn đến Khâu Văn 100 mễ chạy nước rút cùng 200 mễ chạy nước rút hạng mục tiềm lực giá trị chỉ có 3.9 cùng 4.2 khi, vẫn là cảm thấy khiếp sợ, phải biết, Khâu Văn đã là tỉnh trong đội thành tích khá tốt tuyển thủ, ở cả nước điền kinh đại thi đấu linh tinh thi đấu thượng, Khâu Văn là có thể ở trăm mét thượng tranh đoạt tiền tam, thậm chí ở Toàn Cẩm Tái thượng như vậy đại tái thượng, hắn đều là có thể tranh đoạt trước năm tuyển thủ hạt giống.</p>
+<p>Ngược lại là 200 mễ chạy, Khâu Văn thành tích tuy rằng cũng không tồi, nhưng là trước mắt tới xem, hắn 200 mễ thành tích vẫn là không bằng 100 mễ chạy nước rút.</p>
+<p>Mà ở này hai hạng tiềm lực giá trị thượng, Khâu Văn 200 mễ lại so với 100 mễ lược cao…… Hơn nữa chẳng sợ lược cao lúc sau, tại đây hai cái hạng mục thượng, Khâu Văn tiềm lực giá trị thoạt nhìn cũng xa xa còn không có đạt tiêu chuẩn.</p>
+<p>Tô Bạch nguyên bản không biết, như vậy vấn đề, đến tột cùng là sa điêu hệ thống bình phán tiêu chuẩn quá khắc nghiệt, vẫn là khác cái gì nguyên do, cho nên vẫn luôn đang chờ đợi tân liên hệ người dùng xuất hiện.</p>
+<p>Lúc này, hắn lần lượt từng cái nhìn lướt qua sở hữu liên hệ người dùng lúc sau, rốt cuộc xác định —— này sa điêu hệ thống, chính là cái khắc nghiệt tới cực điểm hệ thống, không cứu.</p>
+<p>Hôm nay hắn thu nhận sử dụng 18 cái liên hệ người dùng, có một cái là nữ tử tạ xích hạng mục thượng kim bài tuyển thủ, nàng hằng ngày huấn luyện có bảy tám thành đô là từ quốc gia đội nơi đó phụ trách, gần nhất chỉ là vừa lúc trở lại tỉnh đội nơi này, vì không lâu lúc sau sẽ ở thành phố S tổ chức một hồi thi đấu làm chuẩn bị.</p>
+<p>Nữ tử tạ xích là quốc nội cường thế hạng mục, vị này tỉnh đội đại tỷ đầu có thể ở cả nước có được đứng đầu thực lực, như vậy ở phạm vi thế giới, thực lực của nàng cũng là đủ để tranh đoạt Thế vận hội Olympic huy chương.</p>
+<p>Như vậy vị này đại tỷ đầu ở hạng mục tiềm lực cho điểm thượng là nhiều ít đâu?</p>
+<p>Lấy thực lực của nàng, ở hạng mục tiềm lực cho điểm thượng, cũng bất quá 8.2 phân mà thôi.</p>
+<p>Tô Bạch nhìn đến cái này thời điểm, cũng không khỏi ở trong lòng cảm thán —— thật không biết cái này sa điêu hệ thống trong mắt có thể hay không tồn tại cho điểm 9 phân trở lên thần nhân, có cái loại này tiềm lực thần nhân, đại khái đều là có thể đổi mới kỷ lục thế giới tiêu chuẩn đi?</p>
+<p>Trong đầu suy nghĩ có trong nháy mắt tán loạn, sau đó Tô Bạch thực mau đem này đó ý tưởng vứt tới rồi sau đầu, lại lần nữa nhìn thoáng qua sở hữu liên hệ người dùng tiềm lực giá trị.</p>
+<p>Sau đó ở trong đó thấy được hai cái ở sa điêu hệ thống khắc nghiệt đánh giá hạ, đã có vẻ cực cao trị số.</p>
+<p>Một cái, là trong đội nổi danh thiên tài tuyển thủ, Vương Thâm, hắn ở trước mặt hạng mục nhảy cao thượng tiềm lực giá trị, cao tới 7.3 phân.</p>
+<p>Một cái khác, còn lại là trong đội nổi danh thứ đầu nhi Thôi Lạc Hằng, hắn ở trước mặt hạng mục vượt rào 110 mét thượng hạng mục tiềm lực giá trị thậm chí so Vương Thâm còn yếu lược cao một tia, đạt tới 7.5 phân.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong4.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong6.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "roi-khoi-gioi-the-duc-sau-ta-thanh-tru-than";
+const NOVEL_TITLE = "Rời khỏi giới thể dục sau ta thành Trù Thần";
+const CHAPTER_TITLE = "Chương 5";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
