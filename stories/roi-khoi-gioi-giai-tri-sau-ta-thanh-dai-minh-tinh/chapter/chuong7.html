@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 7. Ra vòng & thành tích ( hơi tu )</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Rời khỏi giới giải trí sau ta thành đại minh tinh
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 7. Ra vòng & thành tích ( hơi tu )</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong6.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong8.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Trong đàn các fan còn ở ngốc, Tô Triết đã nhanh chóng từ di động thượng đổ bộ S tỉnh vận động viên đăng ký tin tức ngôi cao, đổ bộ chính mình đăng ký vận động viên tài khoản, sau đó ở hậu đài tiệt cái đồ.</p>
+<p>Liên quan tài khoản chụp hình, hơn nữa Tô Dần Sinh Bách Khoa Baidu, Tô Triết trịnh trọng mà đẩy tặng một cái Weibo.</p>
+<p>【 truy đuổi tốc độ là ta thiếu niên thời đại mộng tưởng, ở truy đuổi mộng tưởng trong quá trình, ta đã từng lệch khỏi quỹ đạo quá đường đua, nhưng hai năm nay học tập cùng nỗ lực quá trình, ta cũng không hối hận. Hai năm thời gian, làm ta nhận thức không giống nhau thế giới, cũng cho các ngươi nhận thức ta. Ta khát vọng bằng vào thực lực của chính mình đứng ở lóng lánh đỉnh, kế tiếp nhật tử, ta sẽ lấy vận động viên thân phận, cùng ta huấn luyện viên cùng nhau nỗ lực, tranh thủ ở trên sân thi đấu đoạt được ưu dị thành tích. Nếu có thể, kế tiếp thỉnh duy trì vận động viên Tô Triết. 】</p>
+<p>Nghĩ nghĩ, Tô Triết lại liên hệ Weibo khách phục, chuẩn bị đem chính mình chứng thực sửa chữa vì the third nam đoàn trước thành viên, thời hạn nghĩa vụ quân sự vận động viên.</p>
+<p>Trịnh trọng chuyện lạ Weibo, vừa lúc ở ăn dưa quần chúng nhóm ăn dưa cao phong kỳ đẩy ra, nhanh chóng bị khiếp sợ quần chúng nhóm luân thượng vạn điều.</p>
+<p>【 cái quỷ gì?! Vận động viên??? Ta không nhìn lầm đi??? 】</p>
+<p>【…… Ta đi tra xét một chút, cái này tài khoản xác có một thân, hơn nữa là từ thanh thiếu niên vận động viên một đường thăng lên tới trong danh sách vận động viên. 】</p>
+<p>【 ải du, lên tiếng vị này không phải mỗ nổi danh biểu tình bao bản thể sao? 】</p>
+<p>【 ngọa tào, cảm giác ăn đến dưa đều phải rớt, cho nên đây là vận động viên tham gia một hồi thần tượng tuyển tú, thành nam đoàn thành viên, đương hai năm idol lúc sau, một lần nữa lui vòng trở về tiếp tục vận động kiếp sống chuyện xưa? 】</p>
+<p>【 nam đoàn thần tượng chuyển hình chức nghiệp vận động viên, đây là cái gì ma huyễn cốt truyện……? 】</p>
+<p>Chuyển phát bình luận, tràn ngập các loại bị khiếp sợ quần chúng, đương nhiên, trong đó cũng có một ít không hài hòa thanh âm.</p>
+<p>【 phục liêu, nói được dễ nghe, còn không phải đương idol hồ xuyên địa tâm, lúc này mới trở về đương vận động viên? 】</p>
+<p>【 lúc trước lên mặt trăng ăn vạ giới giải trí đỉnh lưu thất bại, hiện tại là muốn đi thể dục vòng ăn vạ sao? 】</p>
+<p>【 cả nước như vậy nhiều vận động viên, thành tích tốt hơn nhiều đi, duy trì cái này ở giới giải trí hỗn không đi xuống gia hỏa làm gì? 】</p>
+<p>【 thần tượng đổi vận động viên? Hơn hai năm không huấn luyện còn có thể có cái gì hảo thành tích sao? Này không phải ngược hướng bác ra vị cùng cho hấp thụ ánh sáng đi? 】</p>
+<p>Chói tai bình luận không nhiều lắm, nhưng cũng tuyệt đối không ít, có chút là mặt khác nam đoàn thần tượng phấn, còn có một ít lại là thật đánh thật ăn dưa người qua đường.</p>
+<p>Ở đại đa số người trong lòng, thể dục vòng cùng vận động viên thân phận đều là mang theo thần thánh quang hoàn, cạnh kỹ thể dục đều là dựa vào liều mạng huấn luyện, một khắc không ngừng khắc khổ cùng với trác tuyệt thiên phú, mới có thể đứng ở vòng đỉnh.</p>
+<p>Hiện tại, đột nhiên có như vậy một cái thoạt nhìn quang xem diện mạo liền không giống vận động viên gia hỏa, tuyên bố chính mình kế tiếp muốn trở thành chức nghiệp vận động viên, đương nhiên liền dẫn phát rồi quần chúng nhóm trong lòng lo lắng —— loại này giới giải trí nam đoàn thần tượng, tới rồi thể dục vòng, sẽ không dạy hư thể dục vòng không khí đi?</p>
+<p>Thực mau, về Tô Triết quá khứ thi đấu thành tích, hắn cùng Tô Dần Sinh quan hệ từ từ, đều bị ăn dưa võng hữu nhanh chóng lột ra tới.</p>
+<p>【 Tô Triết là 17 tuổi khi tham gia thành phố S đại hội thể thao, đạt được trăm mét thứ 4 danh, hoạch ban nhị cấp vận động viên tư cách. 】</p>
+<p>【 mới thứ 4 danh? 】</p>
+<p>【 không cần xem thường thành phố S chạy nước rút thành tích, S tỉnh là quốc nội chạy nước rút danh tướng nôi, thành phố S càng là đứng mũi chịu sào, này hết thảy chính là bởi vì Tô Triết cái kia chủ giáo luyện. Tô Dần Sinh Tô giáo luyện là quốc gia cấp huấn luyện viên viên, quốc gia đội điền kinh vài vị chạy nước rút kiện tướng lúc trước đều là hắn mang ra tới! 】</p>
+<p>【 oa…… Tốt như vậy huấn luyện viên đều đến mang cái này Tô Triết? Hắn thiên phú thực hảo sao? 】</p>
+<p>【 xem hắn tiến giới giải trí trước thành tích, vẫn là rất có tiềm lực đi? Bất quá Tô giáo luyện dẫn hắn cũng không phải là bởi vì cái này, ngươi không phát hiện bọn họ đều họ Tô sao? 】</p>
+<p>Trên mạng bát quái tám đến lửa nóng, Tô Triết cũng không nghĩ tới, chính mình ở rời khỏi giới giải trí sau, ngược lại leo lên nhiệt độ tân cao phong —— hơn nữa vẫn là ra vòng cái loại này.</p>
+<p>Ngắn ngủn hai cái giờ, Tô Triết liền kiến thức tới rồi võng hữu bát quái thực lực, có mắt sắc võng hữu bái ra Tô Triết ngày hôm qua phát tự chụp bối cảnh là S tỉnh thể công đội điền kinh sân huấn luyện, tiếp theo lại có cái thâm niên thể dục mê, đem nhà hắn ở thể dục vòng mạng lưới quan hệ đều mau tám cái biến, cuối cùng vô cùng đau đớn.</p>
+<p>【 rõ ràng có thiên phú, còn có tư bản, đang ở thể dục thế gia, cư nhiên chạy tới giới giải trí?! Đây là bị giới giải trí nơi phồn hoa mê mắt! 】</p>
+<p>Giảng thật sự, nếu không xem võng hữu tư liệu, Tô Triết đều cho rằng đây là hắn cha tự mình phát biểu rít gào.</p>
+<p>Trải qua một vòng lên trời xuống đất thảo luận, võng hữu đại khái cũng nhìn ra Tô Triết xác thật tính toán trở về thể dục vòng, mặc kệ hắn thiên phú như thế nào, lúc sau thành tích như thế nào, cùng với bản tâm đến tột cùng là như thế nào tưởng, nhưng nhân gia xác thật là rời khỏi giới giải trí.</p>
+<p>Trước một ngày “Ta lại về rồi”, chính xác giải đọc hẳn là lại về tới trên sân huấn luyện, mà hôm nay dưa…… Các võng hữu sôi nổi tỏ vẻ trước quan vọng lại nói.</p>
+<p>Tuy rằng còn có một ít hắc tử thượng xuyến hạ nhảy, nhưng đã không ảnh hưởng toàn cục.</p>
+<p>“Triết Học Gia” nhóm trải qua ngắn ngủi mộng bức sau, sôi nổi tiếp nhận rồi Tô Triết chuyển hình vận động viên hiện thực, hơn nữa đại đa số đều biểu đạt tiếp tục phấn đi xuống quyết tâm.</p>
+<p>Rốt cuộc trải qua Tô Triết này một năm tới lãnh đến Siberia trong suốt độ, có thể kiên trì đến bây giờ còn phấn Tô Triết, đều đã là có được sắt thép trái tim thiết phấn.</p>
+<p>Cùng lúc đó, còn có một cái ý nghĩ thanh kỳ tiểu fans phát biểu chấn động tính lên tiếng.</p>
+<p>【 bọn tỷ muội! Chúng ta nhãi con bao lâu không có hoạt động! Bao lâu không có lộ thấu? Ngẫm lại nhãi con thành vận động viên hậu đại biểu cái gì? Hắn muốn tham gia thi đấu a! 】</p>
+<p>【 mỗi năm như vậy nhiều thi điền kinh sự, này cho hấp thụ ánh sáng độ, này lên sân khấu xác suất, này không thể so chúng ta qua đi cường sao? Nếu nhãi con thi đấu thành tích tốt lời nói, còn có thể dục phóng viên phỏng vấn hắn, còn có thi đấu phát sóng trực tiếp, còn có thể dục phóng viên chụp ảnh ra đồ……! 】</p>
+<p>【 hơn nữa, muốn nhìn hiện trường nhãi con nói, những cái đó thể dục thi đấu vé vào cửa, một cái so một cái tiện nghi, còn có rất nhiều miễn phí tặng phiếu có thể lãnh! Này không thể so the third gặp mặt hội môn phiếu hảo sao? 】</p>
+<p>【 ngẫm lại, đại gia ngẫm lại! Chúng ta có thể ở hiện trường nhìn đến ăn mặc huấn luyện phục, lộ ra cánh tay xương quai xanh còn có chân dài nhãi con! A, ta không được, ta tưởng tượng đã bay đến thiên đường! 】</p>
+<p>Nhìn đến này liên tiếp lên tiếng, “Triết Học Gia” nhóm sôi nổi bôn tẩu bẩm báo, vui mừng khôn xiết. Tên là “A Triết bảo bối tiểu manh manh” tiểu fans cũng nhảy trở thành Tô Triết phấn vòng trung danh nhân.</p>
+<p>【 đồng dạng là Triết Học Gia tỷ muội, ngươi như thế nào liền như vậy xông ra! 】</p>
+<p>【 ô ô ô, tỷ muội, ngươi nói được quá tuyệt vời, ta đã bắt đầu chờ mong nhãi con trận đầu thi đấu! Chúng ta tay phúc đèn bài làm lên, muốn cho nhãi con làm sân vận động thượng nhất mắt sáng cái kia nhãi con! 】</p>
+<p>Ở một phen lên xuống phập phồng cốt truyện lúc sau, Tô Triết lần này nguy cơ xem như thuận lợi vượt qua.</p>
+<p>Tô Triết trở lại thể công đội thời điểm, Thiệu đại lão đã ở thể công đội nội tiếp thu huấn luyện.</p>
+<p>Nhìn đến Tô Triết khoan thai tới muộn, Tô Dần Sinh một đôi mắt trừng đến tàn ác, đem hắn một đốn giáo huấn “Nhân gia đại minh tinh cùng ngươi cùng đi chụp chiếu, nhân gia đã trình diện huấn luyện 1 tiếng đồng hồ, ngươi đâu? Đã muộn suốt 1 tiếng đồng hồ! Ngươi trong lòng còn nhớ rõ chính mình hiện tại là cái vận động viên sao?!”</p>
+<p>Ở Tô Dần Sinh giáo huấn hạ, Tô Triết không có giải thích cái gì, ngoan ngoãn cúi đầu nghe huấn.</p>
+<p>Thể công trong đội, chủ giáo luyện nói chính là tuyệt đối quyền uy, không dung khiêu khích. Chẳng sợ trong lén lút Tô Triết sẽ cùng Tô Dần Sinh không lớn không nhỏ, ở trên sân huấn luyện, hắn cần thiết tôn trọng hắn cha quyền uy.</p>
+<p>Giáo huấn chừng 10 phút sau, Tô Dần Sinh trừng mắt, đem Tô Triết tiến đến phòng thay quần áo thay huấn luyện phục.</p>
+<p>“Động tác nhanh lên, ra tới nhiệt thân một chút, hôm nay ở bên ngoài đường đua thượng, thử lại ngươi trăm mét tốc độ.”</p>
+<p>Tô Triết từ phòng thay quần áo ra tới thời điểm, Tô Dần Sinh cùng Triệu Trường Hà đã làm tốt chuẩn bị, lần này bên ngoài thể công đội điện tử đồng hồ đếm ngược cũng đã mở ra, bọn họ chuẩn bị nhìn xem Tô Triết trạng thái hay không ổn định, lo lắng nhất chính là ngày hôm qua Tô Triết thành tích phù dung sớm nở tối tàn.</p>
+<p>Rốt cuộc tuy rằng Tô Triết thể trắc kết quả còn hành, nhưng là so với trường kỳ ở đội nội luyện tập chạy nước rút vận động viên cũng không có gì ưu thế, nhưng là hai năm không có huấn luyện, lại một lần chạy vào kiện tướng thể dục thể thao thành tích tiêu chuẩn, cái này làm cho trường kỳ làm chạy nước rút huấn luyện viên công tác Tô Dần Sinh cùng Triệu Trường Hà vẫn là có chút không chắc.</p>
+<p>Mọi người chuẩn bị thời điểm, không ít ở thể công đội làm trù bị đoàn phim thành viên cũng đem lực chú ý chuyển tới nơi này.</p>
+<p>Không ít người ngày hôm qua không có chính mắt nhìn thấy Tô Triết thí chạy, hôm nay lại ở trên mạng ăn một đợt Tô Triết dưa, giờ này khắc này, tất cả mọi người muốn biết, Tô Triết đến mà là thực sự có vận động thiên phú, vẫn là chỉ là lui vòng đến thể dục vòng hỗn nhật tử.</p>
+<p>Tô Triết nhiệt thân thời điểm, liền có người lặng lẽ chụp video ngắn, đảo không phải người khác, là đoàn phim trung phụ trách tuyên truyền nhân viên công tác, này đó nội dung đều là tương lai kịch tập tuyên truyền khi tư liệu sống.</p>
+<p>Chờ đến Tô Triết ở trăm mét đường đua xuất phát chạy khí thượng làm tốt dự bị động tác khi, sân huấn luyện chung quanh trên khán đài đã tụ tập không ít người, ngay cả Thiệu Tinh Thần cùng Lý Thành cũng ở trong đó.</p>
+<p>Mọi người sôi nổi thảo luận, Tô Triết đến tột cùng có thể chạy ra cái dạng gì thành tích.</p>
+<p>“Phanh!”</p>
+<p>Theo một tiếng súng vang, Tô Triết từ xuất phát chạy khí thượng nhanh chóng bắn ra, giây lát gian như tia chớp về phía trước lao đi.</p>
+<p>Mảnh khảnh thân ảnh ăn mặc màu đỏ huấn luyện phục, như một đoàn hỏa ở mọi người trước mắt bay vút mà qua, tất cả mọi người theo bản năng nín thở ngưng thần, ngẫu nhiên có người phát ra có chứa kinh ngạc cảm thán úc thanh.</p>
+<p>“Ta thiên, này cũng quá nhanh…… Đây là chuyên nghiệp vận động viên tốc độ sao?”</p>
+<p>Có người ở trên khán đài kinh hô.</p>
+<p>Mà hắn người chung quanh cũng nhịn không được ở trong lòng đồng ý cái này cách nói.</p>
+<p>Tô Triết tốc độ giống như gió xoáy, mọi người đều cảm thấy, nếu hắn giờ phút này ở chính mình bên cạnh xẹt qua, mang theo phong nhất định có thể nhấc lên bọn họ góc áo.</p>
+<p>Mười giây xuất đầu thời gian, giây lát tức quá.</p>
+<p>Đương ý thức được Tô Triết đã chạy đến chung điểm khi, tất cả mọi người theo bản năng mà nhìn về phía chung điểm chỗ lược hiện đơn sơ điện tử đồng hồ đếm ngược.</p>
+<p>“Nhiều ít nhiều ít? Hắn chạy nhiều ít giây?”</p>
+<p>“Di? 10.35 giây? Có người biết này thành tích thế nào sao? Ta nhớ rõ những cái đó cái gì trăm mét kỷ lục đều là 9 điểm nhiều giây, cái này thành tích có phải hay không có điểm bình thường?”</p>
+<p>Cũng có nguyên nhân vì lần này Trục Quang quay chụp mà đặc biệt học bổ túc quá điền kinh thi đấu người, chạy nhanh lắc đầu.</p>
+<p>“Ngài nhưng đừng, Tô Triết này thành tích thực có thể! Ta thiên, này thành tích đã chạy vào quốc gia cấp kiện tướng thể dục thể thao tiêu chuẩn, cái này tốc độ, nếu là lại mau một chút, đó chính là quốc tế cấp kiện tướng thể dục thể thao!”</p>
+<p>“Oa, nghe tới giống như rất lợi hại bộ dáng?”</p>
+<p>“Còn không phải sao? 10 điểm 3 mấy thành tích, ở Châu Á thi đấu thượng, cơ bản là ổn tiến trận chung kết! Hơn nữa hắn này còn vừa trở về, giống như còn không bắt đầu khôi phục huấn luyện đi?”</p>
+<p>Nghe được người này cách nói, chung quanh đoàn phim nhân viên một trận ồ lên, Thiệu Tinh Thần ánh mắt cũng lóe lóe.</p>
+<p>Lý Thành ở bên cạnh cảm khái mà khen đến “Không nghĩ tới Tô Triết lợi hại như vậy, phía trước hai năm ở giới giải trí đảo thật là có điểm lãng phí, ai, Tinh Thần, ngươi nói này bộ Trục Quang, có Tô Triết ở, về sau nói không chừng còn có thể đánh ra quảng cáo, mỗ mỗ điền kinh đại tái chạy nước rút quán quân tham diễn…… Ai nha, kia khẳng định có thể bạo một đợt!”</p>
+<p>Đoàn phim nhân viên công tác nơi này liêu náo nhiệt, thể công đội người càng là một trận ồn ào.</p>
+<p>“Ngọa tào, ta nhìn thấy gì? A Triết tiểu tử ngươi thành tích chạy tới 10.35?!”</p>
+<p>Chân chính luyện thể dục người, mới biết được cái này thành tích đến tột cùng là cái gì phân lượng.</p>
+<p>Quốc nội kiện tướng thể dục thể thao cấp bậc, thành tích tiêu chuẩn là 10.50, đương nhiên không phải nói ngươi bình thường chạy tiến cái này thành tích là có thể trình báo kiện tướng thể dục thể thao, còn cần thiết ở phù hợp tiêu chuẩn thi đấu thượng chạy ra nhất định thành tích mới có thể, nhưng chạy tiến cái này tiêu chuẩn tuyến, liền đại biểu đã có được kiện tướng cấp thực lực.</p>
+<p>Huống chi Tô Triết hôm nay chạy ra thành tích là 10.35?!</p>
+<p>Đoàn phim điền kinh fans nói không sai, cái này thành tích, là ở Châu Á cấp bậc chạy nước rút thi đấu thượng, có hi vọng bắt được huy chương thành tích. Ngày hôm qua tay kế 10.43 nếu còn chưa đủ tinh chuẩn nói, hôm nay điện tử tính giờ tắc làm đội điền kinh tất cả mọi người xem đến rõ ràng.</p>
+<p>Hơn nữa chỉ là một ngày chi cách, Tô Triết thành tích thế nhưng từ ngày hôm qua 10.43 nhảy đến 10.35?!</p>
+<p>Cho dù là tay tính giờ có khác biệt, kia hôm nay thành tích cũng so ngày hôm qua muốn cường, hơn nữa đừng quên, hắn này còn không bắt đầu chính thức huấn luyện đâu!</p>
+<p>Sở hữu đội điền kinh đội viên nhìn Tô Triết tựa như thần tiên.</p>
+<p>Tô Dần Sinh cùng Triệu Trường Hà liếc nhau, sau đó cũng nhanh chóng hạ quyết tâm, tháng sau khiến cho Tô Triết đi Tỉnh Vận Hội thượng thử xem thủy.</p>
+<p>Nhìn đến Tô Dần Sinh ánh mắt, Triệu Trường Hà tự nhiên cũng minh bạch trong đó ý tứ, chỉ là lúc này hắn nhìn Tô Triết lại có tiến bộ thành tích, không khỏi sờ sờ cằm.</p>
+<p>“Ai, ta nói lão Tô, A Triết cái này thành tích, ngươi làm hắn đi Tỉnh Vận Hội, có thể hay không có điểm khi dễ người a?”</p>
+<p>Tô Dần Sinh nghe được lời này, mắt trợn trắng “Cạnh kỹ thể dục, bằng thực lực nói chuyện, khi dễ người nào a? Nói nữa, Tô Triết gia hỏa này, hiện tại thành tích thoạt nhìn còn tính ổn định, ai biết thi đấu thời điểm tố chất tâm lý thế nào đâu? Tỉnh Vận Hội, cũng khiến cho hắn thử xem can đảm, vừa lúc.”</p>
+<p>Khi nói chuyện, Tô Triết đột nhiên nghe được một tiếng nhắc nhở âm, hắn phân tâm hướng hệ thống nhìn thoáng qua, phát hiện mục tiêu nhiệm vụ đã từ “Tham gia một hồi chính thức thi đấu”, biến thành “Tham gia S tỉnh Tỉnh Vận Hội điền kinh chạy nước rút hạng mục thi đấu, cũng đạt được quán quân.”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong6.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong8.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "roi-khoi-gioi-giai-tri-sau-ta-thanh-dai-minh-tinh";
+const NOVEL_TITLE = "Rời khỏi giới giải trí sau ta thành đại minh tinh";
+const CHAPTER_TITLE = "Chương 7. Ra vòng & thành tích ( hơi tu )";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

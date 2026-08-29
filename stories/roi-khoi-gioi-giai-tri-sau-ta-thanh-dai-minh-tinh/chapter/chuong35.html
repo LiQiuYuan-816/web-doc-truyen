@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 34</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Rời khỏi giới giải trí sau ta thành đại minh tinh
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 34</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong34.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong36.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Niên độ thi điền kinh sự biểu thực mau bị đưa đến Điền Quản trung tâm phòng họp trung, đối chiếu ppt thượng triển lãm ngày 23 tháng 8 - ngày 6 tháng 9 thời gian này đoạn nội lịch thi đấu, Tôn Chí Hải đám người nhanh chóng bắt đầu thảo luận cái nào thi đấu nhất thích hợp trước mắt Tô Triết, Triệu Chí Tuyên, Mạnh Hạo chờ tiến đến dự thi.</p>
+<p>Thi đấu biểu thượng, trước hết bị bài trừ, chính là hai tràng Diamond league.</p>
+<p>Làm quốc tế thượng đỉnh cấp điền kinh league, kim cương tái tự thân thi đấu tiêu chuẩn cực cao, chỉ có niên độ xếp hạng trước 20 danh tuyển thủ mới có thể đạt được dự thi tư cách, mà trước mắt quốc nội có được Diamond league dự thi tư cách, chỉ có Trần Chí một người.</p>
+<p>Quốc nội sắp tới thi đấu trung, cao quy cách thi đấu chỉ có hai tràng, một hồi là không lâu trước đây vừa mới kết thúc Toàn Cẩm tái, mặt khác một hồi chính là trước mắt lịch thi đấu sắp tiến vào ngày thứ hai Giải Vô Địch Thế Giới khiêu chiến tái.</p>
+<p>“Cái này……” Trịnh Văn Thắng chỉ chỉ thi đấu thời gian ở ngày 27 tháng 8 cả nước điền kinh đại thi đấu trận chung kết “Cái này là quốc nội thi đấu, Triệu Chí Tuyên cùng Mạnh Hạo năm nay độ nội đều tham dự quá lớn thưởng tái, đã bắt được quá trận chung kết dự thi tư cách, chúng ta trung tâm cấp Tô Triết một trương ngoại tạp, làm hắn dự thi là không có gì vấn đề.”</p>
+<p>“Ân……” Tôn Chí Hải lặp lại nhìn này nửa tháng lịch thi đấu, trong lòng có chút do dự.</p>
+<p>Cái này ngắn ngủi chu kỳ nội, loại bỏ rớt tuyển thủ khuyết thiếu tư cách tham gia, thả Điền Quản trung tâm không có ngoại tạp có thể an bài thi đấu sau, cuối cùng dư lại chỉ có 3 tràng thi đấu, phân biệt là Ngày 4 tháng 9 cả nước điền kinh đại thi đấu trận chung kết, ngày 1 tháng 9 cả nước sinh viên điền kinh thi đấu tranh giải cùng với đồng dạng ngày 1 tháng 9 ở Nhật Bản Tokyo tổ chức Châu Á điền kinh quán quân thi đấu theo lời mời.</p>
+<p>“Sinh viên điền kinh thi đấu tranh giải cái này, không cần phải.” Tôn Chí Hải trầm tư một lát sau, chỉ vào trong đó hạng nhất phủ định nói “Triệu Chí Tuyên cùng Tô Triết còn chưa tính, Mạnh Hạo còn có thể đi tham gia cái này thi đấu không thành? Hơn nữa trận này tuyển thủ trình độ cũng không được, ta xem là kích không dậy nổi bọn họ mấy cái thi đấu trạng thái.”</p>
+<p>Đối với vận động viên mà nói, tự thân trạng thái thông thường sẽ bởi vì trước khi thi đấu khẩn trương trình độ, huấn luyện điều chỉnh, thi đấu tự thân quan trọng độ, cùng tràng thi đấu tham dự nhân viên thực lực tình huống từ từ nhân tố có điều biến hóa.</p>
+<p>Rất nhiều thành tích ưu dị thể dục tuyển thủ, đều sẽ tự động từ bỏ một ít thấp tiêu chuẩn thi đấu, chính là vì phòng ngừa chính mình ở thấp tiêu chuẩn thi đấu trung mất đi chính mình thi đấu trạng thái cùng tiết tấu.</p>
+<p>Lần này thi đấu an bài, nguyên bản chính là vì làm Tô Triết mấy người tìm được càng tốt trạng thái, một lần là bắt được Giải Vô Địch Thế Giới dự thi ghế. Một khi đã như vậy, thời gian hữu hạn, cơ hội hữu hạn, ở thi đấu lựa chọn thượng liền yêu cầu càng thêm mà chú ý một ít.</p>
+<p>“Một khi đã như vậy.” Trần Quảng Chí nói “Vậy chỉ có đại thi đấu trận chung kết đi? Xác định xuống dưới nói, chúng ta liền mau chóng đem thi đấu thông tri phát đi xuống, cũng liên hệ tổ ủy hội đem Tô Triết dự thi danh ngạch dự lưu ra tới.”</p>
+<p>Trầm ngâm sau một hồi, Tôn Chí Hải vẫn là lắc đầu, đem bút chỉ hướng Châu Á điền kinh quán quân thi đấu theo lời mời phương vị “Này một cái, Nhật Bản điền hiệp không phải mời chúng ta điền kinh thi đấu quán quân các tuyển thủ đi trước dự thi? Ta nhớ rõ nam tử trăm mét cái này hạng mục, nguyên bản chúng ta người được chọn định chính là Trần Chí đi? Hiện tại, ta xem không bằng đổi thành Tô Triết.”</p>
+<p>“Châu Á quán quân thi đấu theo lời mời…… Đơn độc an bài Tô Triết một người tiến đến dự thi, cần thiết sao?”</p>
+<p>Nhìn đến Trần Quảng Chí cùng Trịnh Văn Thắng mấy người đều đối này có chút nghi hoặc, Tôn Chí Hải một mặt dùng bút điểm trên bàn vở, một mặt giải thích nói “Bọn họ ba người, lấy Tô Triết dự thi kinh nghiệm ít nhất, đặc biệt là quốc tế thi đấu, trước mắt hắn còn toàn vô kinh nghiệm. Tiếp theo hắn lập tức liền phải tham gia Giải Vô Địch Thế Giới, chẳng sợ lần này chính là luyện luyện binh cũng là tốt.”</p>
+<p>“Huống hồ, hắn cũng là trước mắt 3 người trung nhất có mở ra 10 giây 10 hy vọng một người tuyển, nhiều cho hắn một cái cơ hội, ta xem rất cần thiết.”</p>
+<p>Điền Quản trung tâm hội nghị cùng trên mạng dư luận Tô Triết tạm cũng chưa biết, ở phản hồi tài trợ thương an bài khách sạn sau, hắn đã bị lập tức chạy về chính mình phòng nội nghỉ ngơi.</p>
+<p>Trở về phòng sau Tô Triết, ở đơn giản mà thu thập sau, liền vô lực lại để ý tới cái khác, một đầu đảo đến trên giường lâm vào trầm miên bên trong.</p>
+<p>Ngày thứ hai tỉnh lại khi, ngoài cửa sổ ánh mặt trời vừa lúc, trải qua cả đêm nghỉ ngơi hơn nữa giấc ngủ sâu kỹ năng chữa trị, trầm trọng mỏi mệt cảm rốt cuộc từ thân thể bên trong thối lui.</p>
+<p>Cho đến lúc này, Tô Triết mới một lần nữa mở ra di động, bắt đầu hồi phục đến từ Thiệu Tinh Thần chờ các bằng hữu chúc mừng tin tức.</p>
+<p>Buổi sáng 9 giờ, Tô Triết nhận được đến từ thi đấu tổ ủy hội tin tức, mời hắn hôm nay đi tham dự trước một ngày quán quân tuyển thủ tuyên truyền chiếu làm phim cùng tạp chí phỏng vấn, đồng thời còn thông tri ở thi đấu sau khi kết thúc, tức 23 ngày, đem tổ chức Giải Vô Địch Thế Giới động viên đại hội, làm hắn nhớ kỹ tham dự hội nghị thời gian.</p>
+<p>Điền Quản trung tâm lúc này đây động tác thực nhanh chóng, ở đem Tô Triết ba người lịch thi đấu đều xác định hảo sau, nhanh chóng liên hệ tới rồi Tô Dần Sinh bản nhân, trực tiếp trước đối hắn tiến hành rồi thông tri, đồng thời làm hắn lập tức đệ trình Tô Triết tương quan tài liệu, từ Điền Quản trung tâm đi thông đạo màu xanh mau chóng hoàn thành nhân công hộ chiếu xử lý.</p>
+<p>Ở biết được còn cần chuyên môn xử lý nhân công hộ chiếu khi, Tô Triết có chút tò mò “Dùng bình thường hộ chiếu không được sao?”</p>
+<p>Tô Dần Sinh vẻ mặt không sao cả nói “Có thể a, nếu ngươi không nghĩ muốn thi đấu tiền thưởng nói.”</p>
+<p>Trước một ngày thi đấu tuy rằng đã kết thúc, nhưng là lần này khiêu chiến tái sau việc vặt còn không ít, ăn qua cơm sáng sau, Tô Triết liền đi theo Triệu Chí Tuyên cùng nhau tới rồi thi đấu tổ ủy hội an bài chỉ định địa điểm, là hứng lấy lần này Giải Vô Địch Thế Giới khiêu chiến tái tuyên truyền công tác một nhà quảng cáo công ty, cũng là tài trợ phương Cuồng Tiêu tập đoàn tỉ mỉ chọn lựa quá công ty, trong ngành rất có một ít danh khí.</p>
+<p>Tới quảng cáo công ty khi, sớm có Cuồng Tiêu tập đoàn phẩm tuyên tổ nhân viên công tác chờ ở ngoài cửa, lần này quán quân tuyên truyền chiếu làm phim công tác trên thực tế cũng là Cuồng Tiêu phẩm tuyên tổ ở kế hoạch chỉnh thể thi đấu tuyên truyền tiết điểm khi định ra nhu cầu chi nhất, này đó tuyên truyền chiếu có thể dùng làm một ít cùng thi đấu tương quan phúc lợi phát, đồng thời còn có thể phối hợp tiến hành một ít tin tức, nhãn hiệu thượng tuyên truyền.</p>
+<p>Đi vào studio sau, Tô Triết nhưng thật ra có một loại đã lâu quen thuộc cảm, rốt cuộc mấy tháng trước hắn còn minh xác mà treo nghệ sĩ danh hiệu.</p>
+<p>So sánh với thần tượng nghệ sĩ tuyên truyền chiếu, ngạnh chiếu quay chụp, vận động viên quay chụp công tác tắc muốn đơn giản đến nhiều.</p>
+<p>Ở Tô Triết hai người tới lều nội khi, đã có vài vị trước một ngày quán quân tuyển thủ chờ ở hiện trường, hai tên chuyên viên trang điểm đang ở đơn giản mà vì bọn họ tiến hành mặt bộ tân trang, biến thành trang mặt cũng không giống nghệ sĩ như vậy phức tạp, chỉ cầu ở trước màn ảnh có thể khiến cho ngũ quan càng hiện lập thể rõ ràng là được.</p>
+<p>Ở đến phiên Tô Triết hoá trang khi, phụ trách vì hắn thượng trang chuyên viên trang điểm sửng sốt một chút, sau đó kinh hỉ nói “Ai nha, ngươi là Tô Triết! Ta ngày hôm qua có nhìn đến ngươi thi đấu phát sóng trực tiếp cùng sân bay phỏng vấn, ngươi cái này làn da cùng ngũ quan…… Thật là so TV thượng xem còn muốn tinh xảo đến nhiều!”</p>
+<p>“Ách, cảm ơn.”</p>
+<p>Đối với chuyên viên trang điểm khích lệ, Tô Triết cười nói thanh tạ.</p>
+<p>Trong khoảng thời gian này tới nay, có sa điêu hệ thống hoàn mỹ bảo dưỡng quang hoàn 24 giờ chiếu cố, Tô Triết làn da so với lúc trước còn tại giới giải trí khi còn muốn tinh tế hoàn mỹ đến nhiều.</p>
+<p>Cũng chính là tại đây loại thời điểm, Tô Triết mới có một loại, sa điêu hệ thống quả nhiên không phụ “Hoàn mỹ thần tượng hệ thống” tên này cảm giác.</p>
+<p>Tuy rằng chuyên viên trang điểm rất tưởng vì Tô Triết tinh tế làm một phen tạo hình, nhưng làm lần này thi đấu tuyên truyền chiếu, thật sự là không cần như vậy hoa hòe loè loẹt, mỗi cái vận động viên ăn mặc lại đều là Cuồng Tiêu tập đoàn sở chuẩn bị hưu nhàn đồ thể dục, vì thế chuyên viên trang điểm chỉ phải ở đồng dạng đơn giản mà miêu tả lúc sau, tiếc nuối mà thả Tô Triết rời đi.</p>
+<p>Cùng hoá trang khi ngắn gọn nhanh chóng bất đồng, nhiếp ảnh gia công tác tắc yếu lược hơi đau đầu một ít.</p>
+<p>Phải biết hiện trường này đó vận động viên nhóm, chẳng sợ ở trên sân thi đấu phong thái lớn lao, nhưng ở sân thi đấu ở ngoài địa phương, cũng chỉ là một người bình thường, ở đối mặt màn ảnh khi, bản năng phản ứng chính là cứng đờ cùng trốn tránh.</p>
+<p>Nhiếp ảnh gia chỉ phải không ngừng mà dẫn đường vận động viên làm ra chính mình ngày thường huấn luyện trung hoặc trong lúc thi đấu quen thuộc nhất động tác, làm cho bọn họ có thể bày ra ra bản thân càng tự nhiên tự nhiên, sau đó từ giữa chụp hình, bắt giữ một ít xuất sắc nháy mắt.</p>
+<p>Nhưng mặc dù là loại này phương pháp, cũng có không ít đau đầu địa phương —— thi điền kinh vận động viên nhóm đảo còn hảo, từng người có từng người kỹ thuật động tác. Đến phiên thi đấu điền kinh vận động viên khi, tắc cơ bản chính là xuất phát chạy tư thế, động tác, ngày thường huấn luyện trung một ít động tác cũng rất khó ở tuyên truyền chiếu trung thể hiện ra chạy giả hình tượng. Vì thế ở quay chụp thi đấu điền kinh hệ liệt quán quân khi, nhiếp ảnh gia rất là đau đầu một phen.</p>
+<p>Cuối cùng, nhiếp ảnh gia vẫn là lựa chọn vì mỗi vị thi đấu điền kinh vận động viên quay chụp đơn người chuyên chúc xuất phát chạy động tác cùng chạy động gian động tác dừng hình ảnh chiếu, tuy rằng động tác thượng cũng không có gì đặc biệt xuất sắc địa phương, nhưng là các thi đấu điền kinh quán quân các có các khí thế, thoạt nhìn đảo cũng thập phần không tồi.</p>
+<p>Làm đã từng chuyên nghiệp nghệ sĩ, Tô Triết tuyên truyền chiếu quay chụp quá trình so với những người khác muốn thuận lợi đến nhiều, rốt cuộc chỉ là xuất phát chạy cùng chạy động gian dừng hình ảnh mấy cái hữu hạn động tác, quay chụp lên cũng không có gì khó khăn.</p>
+<p>Hoàn thành nguyên bộ quay chụp cùng phỏng vấn sau, thời gian cũng đã tới rồi buổi chiều khi đoạn.</p>
+<p>Tuy rằng trước một ngày thi đấu làm Tô Triết mệt đến thể năng hao hết, nhưng là trải qua một ngày nghỉ ngơi sau, ’ muốn động nhất động ’ ý tưởng một lần nữa lại ở Tô Triết trong lòng chiếm cứ thượng phong.</p>
+<p>Tô Dần Sinh cũng sớm biết rằng hắn ý tưởng, ở phía trước một ngày Tô Triết mấy người nghỉ ngơi sau, hắn cùng Triệu Trường Hà suốt đêm câu thông qua Tô Triết cùng Triệu Chí Tuyên hai người thi đấu trạng thái, vì bọn họ hai người ở 9 nguyệt thi đấu phía trước một lần nữa chế định một bộ thích ứng tính huấn luyện nội dung.</p>
+<p>Hai ngày sau thời gian, Tô Triết một mặt hoàn thành Tô Dần Sinh vì hắn cùng Triệu Chí Tuyên phân biệt chế định huấn luyện kế hoạch, một mặt tham gia lần này khiêu chiến tái sau khi kết thúc Giải Vô Địch Thế Giới động viên đại hội.</p>
+<p>Trừ cái này ra, Giải Vô Địch Thế Giới tổ ủy hội còn đem lúc trước quay chụp tuyên truyền chiếu khẩn cấp chế tạo gấp gáp in ấn ra tới, làm thành hơi có chút một đáng yêu tay nhỏ phúc, đồng thời làm Tô Triết đám người ở chính mình tuyên truyền tay phúc thượng từng cái ký tên —— đây là đưa tặng cấp vận động viên các fan tiểu lễ vật, đồng thời cũng là phát cấp lần này khiêu chiến tái người tình nguyện quà tặng chi nhất.</p>
+<p>Tô Triết đang nghe nói lúc sau, từ tổ ủy hội chỗ thêm vào xin một ít tay phúc, ở Weibo thượng, chuẩn bị đưa cho những cái đó vẫn luôn duy trì chính mình fans các tiểu cô nương.</p>
+<p>Trên mạng dư luận trải qua mấy ngày nay lên men, rốt cuộc hình thành một cái hoàn chỉnh logic xích, từ Tô Triết xuất đạo bắt đầu đến rời khỏi giới giải trí trở về thể dục vòng một loạt thi đấu, đều đã bị chế thành phổ cập khoa học trường đồ, trong đó còn thêm tắc hắn cùng Thiệu Tinh Thần quay chụp 《 Trục Quang 》 cánh hoa cùng hắn ở sân bay phỏng vấn video chờ, hoàn toàn đem phía trước đề tài trung sân bay vận động mỹ thiếu niên cùng Tô Triết bản nhân vận động viên thân phận, từ trước nghệ sĩ thân hỗn hợp ở cùng nhau.</p>
+<p>Theo mỗi ngày mới mẻ nhiệt điểm xuất hiện, cái này trước hai ngày thập phần lửa nóng đề tài cũng dần dần không hề xuất hiện ở bình thường ăn dưa chúng tầm mắt bên trong. Nhưng dù vậy, Cuồng Tiêu tập đoàn phẩm tuyên tổ cũng thành công hoàn thành chính mình lần này tuyên truyền kế hoạch cùng mục tiêu.</p>
+<p>Ngày 24 tháng 8, lần này Giải Vô Địch Thế Giới khiêu chiến tái các hạng mục thi đấu đã toàn bộ kết thúc.</p>
+<p>Hết hạn khiêu chiến tái kết thúc, trước mặt quốc nội đã có tổng cộng 21 cái hạng mục đạt được Giải Vô Địch Thế Giới dự thi ghế, đạt được dự thi tư cách đợt người tổng cộng 52 người. Mà ở thi đấu cùng động viên đại hội đều sau khi kết thúc, Tô Triết, Triệu Chí Tuyên, Trịnh Kiện cùng Tô Dần Sinh một hàng, thực mau liền ở trưa hôm đó thừa cơ quay trở về thành phố S.</p>
+<p>Trên mạng, bởi vì Cuồng Tiêu nhãn hiệu lần này tuyên truyền sự kiện, cũng khiến cho không ít ăn dưa người qua đường hiểu biết tới rồi thế giới điền kinh thi đấu tranh giải sắp khai mạc, vì thế nguyên bản chỉ ở điền kinh trong vòng bị thảo luận Giải Vô Địch Thế Giới dự thi ghế cũng bị kéo đến bình thường ăn dưa chúng trước mắt.</p>
+<p>Đối với bình thường đại chúng tới nói, thể dục giới việc trọng đại cơ bản chính là bốn năm một lần thế vận hội Olympic, trên thực tế, thế vận hội Olympic luận lực ảnh hưởng xác thật thế giới mạnh nhất, nhưng là Giải Vô Địch Thế Giới làm thi đơn làm cao cấp bậc thể dục thi đấu, ở này quy cách đi lên nói, trên thực tế là cùng thế vận hội Olympic ngang hàng.</p>
+<p>Ở hiểu biết đến Giải Vô Địch Thế Giới đến tột cùng là như thế nào một hồi thi đấu sau, không ít người mới giật mình kỳ phát hiện, tại Giải Vô Địch Thế Giới bên trong, còn có rất nhiều hạng mục bổn quốc tuyển thủ không có thể đạt được dự thi ghế, đến nỗi không thể đạt được toàn ngạch dự thi ghế hạng mục, vậy càng nhiều.</p>
+<p>【?? Mới biết được cái này điền kinh Giải Vô Địch Thế Giới, vừa mới thấy được dự thi bảng biểu, chúng ta còn có nhiều như vậy hạng mục không có thể bắt được dự thi ghế sao? Không phải đều tổ chức khiêu chiến tái sao? Khiêu chiến tái quán quân đều không thể tham gia cái này Giải Vô Địch Thế Giới sao? 】</p>
+<p>Mọi việc như thế lên tiếng cùng nghi vấn, ở Weibo thượng thỉnh thoảng xuất hiện, cũng có không ít thể dục người yêu thích đúng lúc xuất hiện bắt đầu vì ăn dưa người qua đường giải đáp vấn đề.</p>
+<p>【 cái này thi đấu là thi đơn cấp bậc cao nhất thi đấu, đối tuyển thủ dự thi tư cách là có yêu cầu, chỉ có đạt tới nhất định thành tích tiêu chuẩn nhân tài có thể dự thi…… Hơn nữa các quốc gia tuyển thủ dự thi nhân số đều là có hạn chế. 】</p>
+<p>【 trên lầu nói không sai, Giải Vô Địch Thế Giới dự thi tư cách là có một cái khảo hạch kỳ, chỉ có ở cái này khảo hạch kỳ trong lúc, ở chính thức thi đấu trung đạt tới thi đấu tiêu chuẩn thành tích, mới có thể đạt được 1 cái hạng mục dự thi tư cách. 】</p>
+<p>【 thế vận hội Olympic dự thi tư cách thu hoạch phương thức trên thực tế cũng là giống nhau, chỉ là đại gia ngày thường rất ít chú ý đến cái này chi tiết, cho nên không rõ ràng lắm trên thực tế tình hình. 】</p>
+<p>Quốc gia của ta là một cái thể dục cường quốc, nhưng là liền tính lại cường thể dục vương quốc, cũng không có khả năng toàn phương vị toàn hạng mục chế bá, như là điền kinh cái này đại loại trung, thi đấu điền kinh loại, trừ bỏ Marathon ngoại cùng trường khoảng cách thi đi bộ ngoại, cơ hồ có thể xưng là là toàn quân bị diệt.</p>
+<p>Đối với thể dục người yêu thích nhóm mà nói, có thể nhân cơ hội này nhiều tuyên truyền một □□ dục tương quan tri thức cũng khá tốt, một khi có thể làm càng nhiều người đối thể dục, đối điền kinh sinh ra hứng thú, như vậy hứng thú thúc đẩy thương nghiệp hóa, thương nghiệp hóa mang đến tài chính, tài chính dẫn vào nhân tài, điền kinh hạng mục mới có thể từng bước trở nên càng tốt.</p>
+<p>Giải Vô Địch Thế Giới Marathon danh ngạch sở dĩ có thể nam nữ song hạng mục đủ quân số dự thi, cùng Marathon ở quốc nội mức độ nổi tiếng cập phổ cập độ còn có các loại thi đấu tuyên truyền cũng là phân không khai.</p>
+<p>Vì làm quảng đại ăn dưa chúng có thể đối thi điền kinh sự càng thêm mà hiểu biết, thể dục người yêu thích nhóm có thể nói là đem hết cả người thủ đoạn, vì bình thường ăn dưa chúng chế tác các loại đơn giản dễ hiểu phổ cập khoa học nội dung.</p>
+<p>Này phiên vất vả cũng cũng không có uổng phí, từ bọn họ phổ cập khoa học trung, ăn dưa lộ nhóm cũng nhanh chóng hiểu biết tới rồi điền kinh Giải Vô Địch Thế Giới địa vị, đạt được tham dự tư cách vinh quang cùng gian khổ, cùng với quan trọng nhất một chút —— thi đấu thành tích đạt tiêu chuẩn chu kỳ tính toán hết hạn đến ngày 7 tháng 9, cho nên không ít còn chưa có nhân viên đạt tiêu chuẩn hạng mục, đang ở nỗ lực vì tương quan nhân viên an bài dự thi cơ hội, tranh thủ ở hữu hạn thời gian nội vì quốc gia tranh đến càng nhiều Giải Vô Địch Thế Giới dự thi tư cách.</p>
+<p>【 ta nhìn một chút dự thi tiêu chuẩn bảng biểu, Tô Triết trăm mét thành tích chỉ kém 0.02 giây oa??? Điểm này nhi thời gian, cảm giác đôi mắt đều không đủ chớp một chút…… Hắn như vậy không phải rất có hy vọng đạt được ghế? 】</p>
+<p>【 đúng vậy, Tô Triết là trước mắt nhất có hy vọng đạt được Giải Vô Địch Thế Giới nam tử trăm mét dự thi tư cách tuyển thủ, Điền Quản trung tâm đã vì Tô Triết an bài trong lúc này thi đấu, cùng nhau chờ mong kế tiếp hắn thi đấu đi! 】</p>
+<p>Quay trở về thành phố S thể công đội Tô Triết, ở huấn luyện ngày hôm sau nghênh đón một cái ngoài ý muốn lai khách —— Thiệu Tinh Thần.</p>
+<p>Đã lâu Thiệu đại lão trải qua điệu thấp ngụy trang đi tới thể công đội sân huấn luyện trung, an tĩnh mà ở một bên nhìn hồi lâu Tô Triết huấn luyện, thẳng đến hắn một tổ huấn luyện hoàn thành, tiến vào nghỉ ngơi thời gian, mới đi lên trước tới cùng Tô Triết chào hỏi.</p>
+<p>“Ai? Đại lão…… A không, Tinh Thần, sao ngươi lại tới đây?” Tô Triết đối đột nhiên xuất hiện Thiệu đại lão có chút kinh ngạc, trước một ngày buổi tối hai người mới ở WeChat thượng từng có ngắn gọn đối thoại, Thiệu đại lão lúc ấy cũng không có đề cập ngày hôm sau sẽ tới thể công đội tới chuyện này.</p>
+<p>Thiệu Tinh Thần ở cùng Tô Triết chào hỏi qua sau, ánh mắt hơi hơi sáng chút, nguyên bản có vẻ có chút lạnh nhạt mặt mày cũng hơi có nhu hòa độ cung.</p>
+<p>Hắn gật gật đầu, đơn giản nói “Vừa vặn có rảnh đương, liền tới đây nhìn xem.”</p>
+<p>Trên thực tế, ở ngày đó xem qua Tô Triết tái sau hư thoát bộ dáng sau, Thiệu Tinh Thần trong lòng liền vẫn luôn có chút lo lắng, lúc này mới ở Tô Triết phản hồi thành phố S sau, nhịn không được tự mình lại đây tưởng tự mình nhìn thấy hắn, xác nhận hắn trạng thái như thế nào.</p>
+<p>Tuy rằng không rõ Thiệu Tinh Thần tới mục đích, bất quá gặp được đã lâu đại lão, Tô Triết cũng rất vui vẻ, đang chuẩn bị huấn luyện sau khi kết thúc cùng đại lão nói chuyện phiếm một phen ăn một bữa cơm, lại không chờ hắn huấn luyện xong, Thiệu Tinh Thần đã bị một hồi điện thoại hô đi rồi.</p>
+<p>Trước khi đi, Thiệu Tinh Thần chỉ tới kịp cho hắn lưu lại một câu cầu chúc Nhật Bản thi đấu thuận lợi chúc phúc, thẳng đến huấn luyện kết thúc, Tô Triết mới nhớ tới, chính mình hẳn là cấp Thiệu đại lão đưa cái thi đấu kỷ niệm tiểu lễ vật mới đúng, vì thế tìm ra phía trước từ ban tổ chức nơi đó xin đến tay nhỏ phúc, chụp tấm ảnh phát cho đại lão.</p>
+<p>【=w=! Giải Vô Địch Thế Giới khiêu chiến tái vật kỷ niệm…… Quên cho ngươi! 】</p>
+<p>Nhìn đến tin tức Thiệu Tinh Thần hơi hơi cười một cái, trên tay nhanh chóng tin tức trở về 【 chờ ta lần sau tới lấy, thi đấu thuận lợi. 】</p>
+<p>Ở kế tiếp thời gian, huấn luyện một lần nữa thành Tô Triết sinh hoạt chủ đề, đây cũng là mỗi cái vận động viên nhất thường quy sinh hoạt trạng thái.</p>
+<p>Huấn luyện, điều chỉnh trạng thái, đột phá thành tích, thi đấu, huấn luyện…… Như thế tuần hoàn lặp lại, cho dù là lại thiên tài tuyển thủ, cũng không thể tránh né loại này khô khan hằng ngày.</p>
+<p>Đối với Tô Triết mà nói, ở trở về đến thể dục vòng sau, này hai ba tháng tới, sớm đã thích ứng, thói quen loại này sinh hoạt, đã trải qua khoảng thời gian trước cao cường độ huấn luyện tuần hoàn hắn, đối với trước mắt trước khi thi đấu thích ứng tính huấn luyện thậm chí cảm thấy không đủ thỏa mãn.</p>
+<p>Loại này huấn luyện thời gian luôn là giây lát lướt qua, thẳng đến hắn chuẩn bị đi trước thành phố B cùng mặt khác đi trước Nhật Bản dự thi điền kinh tuyển thủ hội hợp khi, Khương Hàn Ninh phát tới một cái tin tức mới làm Tô Triết nhớ tới chính mình đến tột cùng quên đi cái gì —— lập tức liền phải 9 nguyệt, mà hắn trường học S đại cũng sắp báo danh khai giảng.</p>
+<p>Nhớ tới này tra nhi sau, Tô Triết xấu hổ mà cấp phụ đạo viên bát đi điện thoại, thuyết minh tình huống.</p>
+<p>Phụ đạo viên đối này nhưng thật ra thập phần khai sáng, hắn ở trong điện thoại cười nói “Học viện đã biết tình huống của ngươi, ngươi ở S tỉnh Tỉnh Vận Hội, cả nước thi đấu tranh giải còn có Giải Vô Địch Thế Giới khiêu chiến tái thượng đạt được ưu dị thành tích, cũng vì trường học tranh được vinh dự. Lần này Nhật Bản thi đấu hảo hảo cố lên, tương quan thủ tục ta nơi này sẽ cho ngươi xử lý, chờ ngươi hồi giáo sau lại đến đăng ký không muộn.”</p>
+<p>Ngày hôm sau, Tô Triết đang đi tới thành phố B cao thiết thượng, thấy được Khương Hàn Ninh phát tới một trương ảnh chụp —— ở Tô Triết quen thuộc trường học khu dạy học ngoại, treo một cái thật lớn tranh chữ 【 chúc mừng ta viện học sinh Tô Triết vinh hoạch cả nước điền kinh thi đấu tranh giải 100 mét nam quán quân, vì nước làm vẻ vang, thành công đạt được Giải Vô Địch Thế Giới vượt rào 110 mét dự thi tư cách! 】</p>
+<p>Phát tới điện mừng Khương Hàn Ninh ngay sau đó ném tới liên tiếp cười ha ha biểu tình bao, quả thực là cười đến dừng không được tới.</p>
+<p>Nhìn WeChat Khương Hàn Ninh sắc mặt, Tô Triết trầm mặc một lát, ném ra cùng với đã lâu bạo kích 【 Khương đồng học, thi lại đạt tiêu chuẩn sao? 】</p>
+<p>Tức khắc, nguyên bản cười đến vẻ mặt càn rỡ Khương Hàn Ninh như sương đánh cà tím giống nhau héo ở tại chỗ, kiên định mà đưa lên tái kiến hai chữ, sau đó làm bộ biến mất kiên quyết không chịu lại đáp lời.</p>
+<p>Trưa hôm đó, Tô Triết ở cùng Điền Quản trung tâm đội ngũ hội hợp sau, tùy đội cưỡi quốc tế chuyến bay chính thức đi trước Nhật Bản, cũng sắp nghênh đón hắn thể dục kiếp sống trận đầu quốc tế thi đấu. Đã sửa địa chỉ web, đã sửa địa chỉ web, đã sửa địa chỉ web, đại gia một lần nữa cất chứa tân địa chỉ web, tân m.. Tân máy tính bản.., Đại gia cất chứa sau liền ở tân địa chỉ web mở ra, về sau lão địa chỉ web sẽ mở không ra,,</p>
+<p>Chương ) chương 35 trước khi thi đấu ( thượng ) canh một</p>
+<p>Lần này ở Nhật Bản Tokyo tổ chức trận này Châu Á quán quân thi đấu theo lời mời, kỳ thật chất chính là một hồi điền kinh chủ đề minh tinh tái, mời Châu Á các quốc gia thi điền kinh sự minh tinh tuyển thủ tiến đến tham chiến, cũng coi như là vì sang năm Tokyo thế vận hội Olympic trước tiên làm các hạng diễn thử.</p>
+<p>Cùng Tô Triết cùng cơ tiến đến dự thi, đều là đội điền kinh một ít minh tinh tuyển thủ, trừ bỏ số ít mấy cái giống hắn giống nhau mang theo nhiệm vụ dự thi thành viên ở ngoài, còn lại tuyển thủ phần lớn trạng thái thập phần nhẹ nhàng, so với dự thi, thoạt nhìn càng như là đến Tokyo hưu nhàn một phen.</p>
+<p>Tô Triết đối với mọi người trạng thái có chút khó hiểu.</p>
+<p>“Làm sao vậy?” Ngồi ở Tô Triết bên trái Diệp Tuấn nhìn ra hắn nghi hoặc, cười hỏi —— lần này Tô Triết dự thi mục đích chính là toàn lực đầu nhập nam tử trăm mét chiến đấu, tranh thủ mở ra 10 giây 10 thành tích, vì bổn quốc đoạt được 1 cái Giải Vô Địch Thế Giới nam tử trăm mét dự thi ghế, vì vậy, Điền Quản trung tâm không có lại an bài hắn tham dự vượt rào 110 mét thi đấu, mà là phái Diệp Tuấn làm vượt rào 110 mét đại biểu đi trước.</p>
+<p>Tô Triết do dự hạ, vẫn là gãi gãi đầu cười nói “Không có gì, chỉ là cảm thấy đại gia trạng thái tựa hồ đều thực thả lỏng……”</p>
+<p>Nghe được những lời này, Diệp Tuấn nháy mắt minh bạch Tô Triết ý tứ, vì thế có chút buồn cười nói “Có phải hay không cảm thấy đại gia trạng thái không giống như là ra ngoài thi đấu?”</p>
+<p>Nhìn đến Tô Triết gật đầu, Diệp Tuấn vỗ vỗ bờ vai của hắn “A nha, thật không dễ dàng, ta cuối cùng ở trên người của ngươi thấy được như là một tân nhân bộ dáng.”</p>
+<p>Đối với ngây người Tô Triết, Diệp Tuấn tiếp tục cười nói “Ta đại khái biết ngươi suy nghĩ cái gì —— tham gia thi đấu, liền nên đem chính mình tốt nhất trạng thái hoàn toàn đầu nhập đến thi đấu, làm vận động viên, sao lại có thể không có quyết thắng chi tâm? Đúng không?”</p>
+<p>Diệp Tuấn trên mặt mang theo ý cười, cười ha hả mà đối với Tô Triết lắc đầu nói “Ngươi cái này, là tân nhân thường thấy tâm thái vấn đề, ta cho rằng Tô giáo luyện có cùng ngươi phân tích quá.” Dừng một chút, Diệp Tuấn tiếp tục nói “Nghiêm túc đối đãi mỗi một hồi thi đấu, cái này tâm thái là đúng, nhưng là cũng không phải muốn đem mỗi một hồi thi đấu đều đương thành quan trọng nhất thi đấu giống nhau, toàn lực ứng phó, tinh thần căng chặt.”</p>
+<p>“Ngươi cũng biết, vận động viên trạng thái đều sẽ theo cá nhân huấn luyện chu kỳ từ từ có điều phập phồng, liền tính ngươi lại thiên tài, cũng thắng không nổi trạng thái thung lũng thời điểm. Vì bảo đảm chúng ta cạnh kỹ trạng thái có thể ở quan trọng thi đấu thượng tới đỉnh, huấn luyện viên ở chúng ta hằng ngày chu kỳ tính huấn luyện đều sẽ không ngừng đối chúng ta huấn luyện mục tiêu tiến hành điều tiết.”</p>
+<p>“Kia nếu lời nói nói tới đây, ngươi xem, chúng ta vừa mới trải qua Toàn Cẩm tái, Giải Vô Địch Thế Giới khiêu chiến tái như vậy liên tục cường thế thi đấu chu kỳ, kế tiếp chờ đợi chúng ta đại đa số người, còn có một tháng sau Giải Vô Địch Thế Giới. Đối lập lên, lần này thi đấu theo lời mời, xác thật càng như là tới thả lỏng một chút, lấy tái đại luyện, tìm xem trạng thái liền hảo. Người thân thể cùng tâm lý là sẽ mỏi mệt, nếu chúng ta đem chính mình tốt nhất trạng thái toàn lực đầu nhập tới rồi trận thi đấu này, có lẽ tổn thất chính là mặt sau càng quan trọng thi đấu.”</p>
+<p>Diệp Tuấn này đoạn lời nói, làm Tô Triết nhớ tới nhà mình lão cha trong khoảng thời gian này tới nay đối trong lời nói của mình lời nói ngoại hơi mịt mờ ý tứ.</p>
+<p>Trên thực tế, Tô Dần Sinh trong khoảng thời gian này cũng đang không ngừng mà đối hắn giáo huấn cùng loại ý tưởng, chỉ là chính hắn cũng không có thể hoàn toàn lĩnh hội tầng này ý tứ, chỉ cho rằng chính mình lo âu tâm lí trạng thái đang ở giảm bớt, tâm thái điều chỉnh đã có nhất định hiệu quả……</p>
+<p>Nghĩ đến đây, Tô Triết không khỏi mà lại xoa xoa chính mình cái trán, hắn nguyên bản cho rằng chính mình đã cụ bị vận động viên sở cần thiết cầu thắng dục cùng tiến thủ tâm, nhưng là hiện tại xem ra, nếu muốn trở thành một cái hoàn toàn đủ tư cách vận động viên, hắn còn có không ít lộ phải đi.</p>
+<p>Phi cơ rơi xuống đất khi, là Tokyo địa phương thời gian buổi tối 9 giờ 33 phút.</p>
+<p>Tô Triết đi theo dự thi đoàn các thành viên một đường hướng sân bay xuất khẩu đi đến.</p>
+<p>Thời gian này sân bay vẫn là thập phần bận rộn khi đoạn, không ít người kéo rương hành lý đi ra sân bay đại sảnh, khắp nơi nhìn xung quanh, chờ tới đón cơ bằng hữu thân nhân hoặc là hợp tác đồng bọn.</p>
+<p>Một đường đi theo đội điền kinh hành động, Tô Triết nhưng thật ra hoàn toàn không có phương diện này phiền não, mà Nhật Bản điền hiệp tiếp đãi đồng dạng thập phần chu đáo, phụ trách tiến đến nghênh đón Trung Quốc đội điền kinh dự thi đoàn nhân viên sớm đã chờ đợi ở sân bay xuất khẩu chỗ, một bên còn có hai cái thoạt nhìn là vận động viên bộ dáng thanh niên đi theo hai sườn, trong đó một người còn phụ trách giơ 【 nhiệt tình hoan nghênh Trung Quốc đội điền kinh đến 】 thẻ bài.</p>
+<p>Vị này phụ trách tiến đến nghênh đón Trung Quốc đội điền kinh dự thi đoàn nhân viên, là đến từ Nhật Bản điền hiệp phía chính phủ nhân viên vũ điền có giới, mà đi theo hắn phía sau hai tên người trẻ tuổi, còn lại là Nhật Bản điền hiệp vì tỏ vẻ đối Trung Quốc đội điền kinh coi trọng, đặc cầu phái tới làm đi cùng tiếp khách công tác hai vị Nhật Bản bản thổ nổi danh tuyển thủ.</p>
+<p>Bọn họ phân biệt là nước Nhật nội nam tử trăm mét chạy nước rút xếp hạng đệ tam Shota Shiraishi quá cùng xếp hạng thứ 6 trúc hạ khoan minh, đồng dạng là lần này thi đấu người dự thi.</p>
+<p>Bởi vì lần này thi đấu, đối với có không cướp lấy Giải Vô Địch Thế Giới trăm mét ghế có trọng đại ý nghĩa, Tô Triết ở quốc nội khi tự nhiên cũng hiểu biết quá lần này khả năng dự thi Nhật Bản tuyển thủ tin tức.</p>
+<p>Này hai người trung, Shota Shiraishi quá ở năm nay mùa giải tốt nhất thành tích là 10 giây 03, không chỉ có sớm đã đạt được Giải Vô Địch Thế Giới dự thi ghế, đồng dạng cũng bước vào sang năm Tokyo thế vận hội Olympic dự thi tiêu chuẩn, vô cùng có khả năng sẽ ở sang năm đại biểu Nhật Bản đội tham dự nam tử trăm mét hạng mục cuộc đua.</p>
+<p>Mà xếp hạng Nhật Bản thứ 6 trúc hạ khoan minh, năm nay mùa giải tốt nhất thành tích là 10 giây 12, lịch sử cá nhân pb10 giây 09, cũng là sớm đã đánh vỡ 10 giây 10 đại quan mạnh mẽ tuyển thủ.</p>
+<p>Chỉ là nước Nhật nội nam tử trăm mét tuyển thủ trung, tại Giải Vô Địch Thế Giới dự thi tiêu chuẩn khảo hạch kỳ nội thành tích đạt tới 10 giây 10 trong vòng tuyển thủ đã siêu qua Giải Vô Địch Thế Giới tối cao danh ngạch, vì vậy, trúc hạ khoan minh đã sai mất lần này Giải Vô Địch Thế Giới dự thi tư cách.</p>
+<p>Này hai người bên trong, Shota Shiraishi quá thoạt nhìn như là không quá nhàn được tính cách, tuy rằng thân cao thoạt nhìn chừng 180 xuất đầu, nhưng ngoài ý muốn có một trương oa oa mặt, cười rộ lên còn sẽ lộ ra một viên răng nanh.</p>
+<p>Đúng là hắn phụ trách giơ hoan nghênh Trung Quốc tuyển thủ thẻ bài, lúc này hai bên nhân viên công tác đang ở câu thông giao tiếp, Shota Shiraishi quá cười giơ trong tay thẻ bài, cùng đội điền kinh các đội viên phất tay ý bảo, thoạt nhìn rất là hữu hảo.</p>
+<p>Cùng hắn đồng hành trúc hạ khoan minh tắc bình tĩnh khắc chế đến nhiều, trên người lộ ra một cổ có lễ nhưng xa cách lễ phép khí chất, đứng ở Shota Shiraishi quá bên người, cũng không mở miệng nói thêm cái gì.</p>
+<p>Liền ở Tô Triết đứng ở tại chỗ cùng Diệp Tuấn nói chuyện phiếm khi, một cái tràn ngập ngạc nhiên thanh âm xuất hiện ở Tô Triết bên người —— người nói chuyện là Nhật Bản đội Shota Shiraishi quá.</p>
+<p>Cái này vóc dáng cao oa oa mặt chính lấy một loại kinh ngạc xem mỹ lệ oa oa ánh mắt nhìn Tô Triết, trong miệng thỉnh thoảng toát ra một ít Tô Triết nghe không hiểu ngày văn từ ngữ, tựa hồ là muốn cùng Tô Triết giao lưu, nhưng là lại vô pháp câu thông nôn nóng bộ dáng.</p>
+<p>Vóc dáng cao oa oa mặt, cũng chính là Shota Shiraishi quá, lúc này nguyên nhân chính là vì ngôn ngữ không thông cái này khốn cảnh mà lâm vào u buồn bên trong, hắn quay đầu nhìn về phía bên cạnh trúc hạ khoan minh, tựa hồ muốn tìm kiếm đến từ đồng bạn an ủi.</p>
+<p>Shota Shiraishi quá “Trúc hạ quân, ngươi thấy được sao? Hắn lớn lên hảo mỹ a…… Tinh xảo, lạnh nhạt, trắng nõn, yếu ớt…… Ta quả thực muốn đem sở hữu ta có thể nắm giữ tốt đẹp từ ngữ đều dùng ở hắn trên người!”</p>
+<p>“Ta cảm giác ta thấy được mỹ lệ yêu tinh…… Vì cái gì sẽ có như vậy tốt đẹp người tồn tại đâu? Ta hối hận, ta hẳn là ở hôm nay phía trước trước học được một ít Trung Quốc ngữ, như vậy ta là có thể tự mình đem này đó ca ngợi từ ngữ truyền lại cho hắn!”</p>
+<p>Đối với Shota Shiraishi quá kích động trạng thái, trúc hạ khoan minh ý bảo hắn trước bình tĩnh lại.</p>
+<p>“Shiraishi-kun, hắn là từ Trung Quốc tới điền kinh tuyển thủ, cũng là lần này thi đấu theo lời mời người dự thi…… Người như vậy cũng sẽ không là cái gì yếu ớt yêu tinh.”</p>
+<p>Chỉ tiếc, như vậy khuyên giải đối với Shota Shiraishi quá mà nói cũng không có gì tác dụng, hắn ngược lại càng thêm phấn chấn lên.</p>
+<p>“A! Ngươi nói đúng, hắn chính là tiến đến tham gia thi đấu theo lời mời cường giả! Cường đại như vậy mà mỹ lệ sinh mệnh……” Shota Shiraishi quá nói, trong mắt cơ hồ toát ra thực chất ngôi sao.</p>
+<p>“Như vậy hoàn mỹ người vì cái gì sẽ trên thế giới này ra đời đâu? Đến từ Trung Hoa đế quốc tuyệt mỹ yêu tinh…… Ta cảm giác hắn bắt đi ta tâm……”</p>
+<p>Shota Shiraishi quá lên tiếng làm trúc hạ lâm vào trầm mặc bên trong, rốt cuộc quyết ý không hề để ý tới bên người bạn tốt.</p>
+<p>Ở trung ngày hai bên nhân viên công tác trải qua đơn giản câu thông cùng thẩm tra đối chiếu sau, Tô Triết đoàn người bắt đầu đi theo dẫn đường vũ điền có giới hướng tiếp đãi xe nơi vị trí đi đến.</p>
+<p>Kế tiếp trên đường, Shota Shiraishi quá cũng không có lại ý đồ nói cái gì đó, chỉ là ngẫu nhiên sẽ nhìn Tô Triết phương hướng, lộ ra một cổ mộng ảo thần sắc.</p>
+<p>Tới ban tổ chức an bài tốt khách sạn, dàn xếp hảo khi, đã là Nhật Bản thời gian 23 điểm.</p>
+<p>Tô Triết ở đơn giản mà thu thập sau, liền nằm đến trên giường bắt đầu nghỉ ngơi —— giấc ngủ là vận động viên nhất cần quý trọng thói quen chi nhất, từ một lần nữa bắt đầu huấn luyện sau, Tô Triết cơ hồ đều ở thời gian này điểm đã bình yên đi vào giấc ngủ.</p>
+<p>Mà cái này khi đoạn, là quốc nội 22 điểm, lúc này đúng là ăn dưa các võng hữu sinh động cao phong.</p>
+<p>Buổi sáng khi, Khương Hàn Ninh chia cho Tô Triết ảnh chụp, lúc này sớm đã chuyển biến internet.</p>
+<p>Đúng vậy, Tô Triết nơi S đại Văn học viện official weibo, ở hôm nay ban ngày khi, không chút do dự đem cái này màu đỏ tranh chữ ảnh chụp cấp quải tới rồi học viện Official Weibo thượng, đồng thời phụ thượng còn có Tô Triết thi đấu phát sóng trực tiếp liên tiếp cùng Tô Triết cá nhân chiếu.</p>
+<p>Văn học viện sẽ như thế vui vẻ cũng không kỳ quái, rốt cuộc làm một cái âm thịnh dương suy học viên, nguyên bản chưa bao giờ trông chờ quá học sinh xuất hiện Tô Triết nhân tài như vậy. Kết quả mãnh không đinh, nguyên bản chỉ là giới giải trí bên cạnh nhân vật học sinh đột nhiên liền nhấc lên dư luận phong ba, đảo mắt vào thể dục vòng, thậm chí còn bắt lấy thế giới điền kinh thi đấu tranh giải hạng nhất dự thi tư cách???</p>
+<p>Này đối với học viện tới nói, giống như vì thế bầu trời rớt bánh có nhân chuyện tốt, tự nhiên phải hảo hảo tuyên truyền một phen!</p>
+<p>S đại Official Weibo ở nhìn đến này Weibo sau, xuất phát từ duy trì bổn giáo học sinh cùng học viện phương pháp, cũng không chút do dự chuyển phát Weibo, cộng đồng chúc mừng tin tức tốt này.</p>
+<p>Nếu hết thảy dừng ở đây nói, có lẽ liền không có gì kế tiếp, nhưng S đại mới vừa khai giảng, đang đứng ở nhàm chán trạng thái bọn học sinh phát hiện này Weibo, nhìn kỹ —— hắc, gần nhất rất có danh khí cái kia Tô Triết, là chúng ta trường học học viện?</p>
+<p>Vì thế một đợt chú ý cùng chuyển phát, bình luận vọt tới, lăng là làm Tô Triết lại đi theo thượng một lần hot search cái đuôi. Đã sửa địa chỉ web, đã sửa địa chỉ web, đã sửa địa chỉ web, đại gia một lần nữa cất chứa tân địa chỉ web, tân m.. Tân máy tính bản.., Đại gia cất chứa sau liền ở tân địa chỉ web mở ra, về sau lão địa chỉ web sẽ mở không ra,,</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong34.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong36.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "roi-khoi-gioi-giai-tri-sau-ta-thanh-dai-minh-tinh";
+const NOVEL_TITLE = "Rời khỏi giới giải trí sau ta thành đại minh tinh";
+const CHAPTER_TITLE = "Chương 34";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

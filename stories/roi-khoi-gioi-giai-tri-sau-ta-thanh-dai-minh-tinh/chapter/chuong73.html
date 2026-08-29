@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 73</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Rời khỏi giới giải trí sau ta thành đại minh tinh
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 73</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong72.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong74.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Trước hết đem Tô Triết thơ ấu chiếu chụp hình phóng lên mạng, đương nhiên là ở Nhật Bản “Triết Học Gia” các muội tử, ngồi canh ở TV trước quan khán phú sĩ đài phát sóng trực tiếp các nàng, ở nhìn đến Tô Triết thơ ấu chiếu sau, lập tức hai mắt tỏa ánh sáng mà nhảy dựng lên, có vẫn luôn ở ghi hình muội tử, không chút do dự đem Tô Triết thơ ấu Hán phục loli chiếu còn có Tô Triết cơ hồ cương ở đương trường xấu hổ buôn bán tươi cười trước chụp hình xoát thượng siêu thoại.</p>
+<p>【 ha ha ha ha, thiên nột, có người nhận được đây là ai sao?! 】</p>
+<p>Lúc đầu xoát đến ảnh chụp Triết Học Gia nhóm đều là sửng sốt, nhưng là ở có người chọc khai đại đồ cẩn thận quan sát qua sau, này Weibo phía dưới chuyển phát cùng bình luận nhanh chóng bị thảo bay lên.</p>
+<p>【 a a a, ôi trời ơi, đây là ma ma tiểu bảo bối! Ta thiên ta muốn cười chết, nhãi con thế nhưng có như vậy thơ ấu nữ trang chiếu! Tàng đến hảo nghiêm, thế nhưng chưa từng có chảy ra quá! 】</p>
+<p>【 đây là cái gì tuyệt thế tiểu mỹ nữ? Là đang lừa ta sinh nữ nhi sao? Ô, ta khô, như vậy đáng yêu tiểu nhãi con, này vẫn là lần đầu tiên nhìn đến! 】</p>
+<p>【 ha ha ha ha ha ha ha, ta cười đến trời đất quay cuồng, chúng ta nhãi con trước nay đều một trương ’ ta siêu bình tĩnh ’ băng sơn mặt, kết quả khi còn nhỏ cư nhiên là như thế này ngập nước tiểu loli sao? 】</p>
+<p>【 ta một cái cười ầm lên, trước quỳ vì kính, cảm ơn tỷ muội vì chúng ta cung cấp trực tiếp tư liệu! Nhãi con gương mặt tươi cười đều phải cương ở đương trường, thật là quá khổ…… Ta đánh đố ta nhãi con trong lòng nhất định ở táo bạo —— vì cái gì còn ở giới giải trí thời điểm loại này liêu cũng chưa tuôn ra tới, thành vận động viên lúc sau loại này năm xưa hắc lịch sử cư nhiên bị phiên cái đế hướng lên trời? 】</p>
+<p>Liền ở mọi người một đường cười ầm lên khi, đột nhiên có cái Triết Học Gia tiểu cô nương đã phát một câu ——【 từ từ? Nhãi con cái này ảnh chụp hảo quen mắt??? 】</p>
+<p>Ở cái này tiểu cô nương phát xong những lời này ước chừng 10 phút sau, lại một cái tân thiệp bị chuyển tới Tô Triết siêu thoại bên trong, đó là một cái nổi danh đại v mấy năm trước đã từng phát quá thiệp —— đếm kỹ trên mạng nhất manh tố nhân tiểu hài tử, tất cả đều là lừa ngươi sinh oa hệ liệt! ( phụ đầu phiếu Ngươi thích nhất là mấy hào tố nhân manh oa? )</p>
+<p>Cái này thiệp ở 4-5 năm trước đã từng là một cái bạo khoản đề tài, thiệp tổng kết ra bị cha mẹ hoặc thân thích bằng hữu o lên mạng tố nhân manh oa hệ liệt ảnh chụp, mà ở cuối cùng đầu phiếu liên tiếp trung, cao cư đệ nhất vị chính là nào đó vẻ mặt ngây thơ sơ hai cái túi xách đầu Hán phục loli.</p>
+<p>Mà nguyên rộng lớn rộng rãi v giới thiệu quá này bức ảnh, là càng sớm phía trước bị o ở nào đó không biết tên trên diễn đàn, ước chừng chính là chia sẻ nhà mình manh oa cái loại này không biết tên tiểu diễn đàn, bởi vì ảnh chụp quá mức đáng yêu, cho nên ở trên mạng có nhất định truyền lưu nhiệt độ.</p>
+<p>Ở cái này đại v đầu phiếu thiếp phía dưới, có không ít người đều ở nhắc mãi, cái này tiểu cô nương thật là đẹp mắt, trưởng thành nhất định cũng khuynh quốc khuynh thành. Bởi vì ảnh chụp đã có mấy năm lịch sử, rất nhiều người đều ở chờ mong có thể tám ra cái này manh oa trưởng thành lúc sau bộ dáng, chỉ tiếc cái này tìm kiếm manh loli hành động ở mọi người khổ tìm không có kết quả lúc sau, cuối cùng vô tật mà chết.</p>
+<p>Đem cái này thiệp chuyển phát đến siêu thoại bên trong Triết Học Gia muội tử đã phát một cái hoạt quỳ biểu tình, sau đó nói 【 đại gia tới khang khang, cái kia xếp hạng đệ nhất nhân là ai? 】</p>
+<p>【_( 3” ∠)_……dbq, cái này thiệp ta cũng có ấn tượng, nhưng là ta cư nhiên không có trước tiên nhớ tới này bức ảnh là chúng ta nhãi con, ta có tội. 】</p>
+<p>【 phá án……??? Cười khóc, đây là cái gì thần phát triển? Mấy vạn người đau khổ tìm kiếm loli mỹ thiếu nữ, thế nhưng là……】</p>
+<p>Có lẽ là khiếp sợ chuyển phát Triết Học Gia các muội tử có điểm nhiều, thế cho nên nguyên o đại v bác chủ cũng bị kinh động, cái này bác chủ đang âm thầm nhìn trộm một chút các muội tử cộng đồng nơi phát ra siêu thoại lúc sau, cũng nhanh chóng phát hiện cái này làm người khiếp sợ sự thật.</p>
+<p>Thực mau, cái này tên là “Hôm nay ta bát quái sao” nguyên rộng lớn rộng rãi v, liền đem nguyên thiếp trung loli ảnh chụp cùng Tô Triết ảnh chụp còn có từ siêu thoại trung phiên đến phú sĩ đài buổi tối phòng live stream trung video chụp hình làm cái trò chơi ghép hình, tuyên bố một cái mới nhất Weibo.</p>
+<p>【 đại gia hảo…… Đại gia đến xem đây là ai? ( mỉm cười jg ) manh loli Tô Triết tìm được rồi 】</p>
+<p>Chú ý cái này bác chủ hơi lâu một ít fans, đối nàng năm đó này bạo khoản Weibo đề tài đều còn có ấn tượng, này Weibo cùng đề tài vừa ra, bình luận chuyển phát trung nhanh chóng tụ tập đại lượng khiếp sợ ăn dưa lộ.</p>
+<p>【……】</p>
+<p>【…………】</p>
+<p>【??? Ta cho rằng ta nhìn lầm rồi, nhưng là ta cẩn thận nhìn thoáng qua, phát hiện không nhìn lầm. 】</p>
+<p>Bình luận khu trung khiếp sợ đảng nhóm nhìn bác chủ này trương danh mục, đưa lên đủ loại kiểu dáng đại biểu khiếp sợ cùng mê hoặc biểu tình bao.</p>
+<p>Có ăn dưa lộ vẻ mặt dại ra mà chuyển phát bình luận nói 【 ta năm đó liền đặc biệt thích cái này tiểu loli, còn hứa nguyện nhất định phải sinh cái như vậy khuê nữ, kết quả ta sinh đứa con trai. Hiện tại ngẫm lại, có phải hay không ta năm đó hứa nguyện có hiệu lực? 】</p>
+<p>Này bình luận bị đại lượng ăn dưa lộ nhóm một đường tán tới rồi điểm tán bình luận đệ nhất danh, đối với cái này loli thế nhưng giới tính có lầm loại chuyện này, sở hữu đối lúc trước đầu phiếu đề tài có điểm ấn tượng ăn dưa lộ đều lộ ra dở khóc dở cười biểu tình.</p>
+<p>Manh loli Tô Triết tìm được rồi cái này đề tài, bởi vì quần chúng cơ sở phía sau, cùng với đối mọi người sinh ra khiếp sợ hiệu quả quá mức mãnh liệt, thực mau liền một đường lại bò lên trên Weibo hot search bảng đơn thượng.</p>
+<p>Theo cái này đề tài lên men, ngay cả thể dục vòng sắt thép thẳng nam nhóm cũng ở Weibo trang đầu thượng xoát tới rồi tương quan chuyển phát, thậm chí còn, có một ít thể dục đại v nhóm ở nhìn đến cái này đề tài, phát hiện ảnh chụp trung người nào đó đặc biệt quen mắt sau, đều nhanh chóng ở ha ha ha qua đi, chuyển phát tới rồi chính mình Weibo thượng.</p>
+<p>Mà ở loại này truyền bá thế hạ, nguyên bác chủ chụp hình trò chơi ghép hình ở thực trong khoảng thời gian ngắn, cũng bị chuyển phát tới rồi điền kinh vương quốc trên diễn đàn.</p>
+<p>【 ha ha ha ha ha ha ha ha ha, các huynh đệ, mau đến xem xem đây là ai!!! 】</p>
+<p>Cứ như vậy, cái này làm Tô Triết trong lòng cảm thấy vô cùng cảm thấy thẹn ảnh chụp, lấy sét đánh không kịp bưng tai chi thế, thiêu biến Weibo cùng các đại thể dục diễn đàn.</p>
+<p>Ở Tô Triết khách khí mà cùng phú sĩ đài nhân viên công tác chụp ảnh chung từ biệt lúc sau, mới vừa ngồi trên xe lấy ra di động, liền phát hiện chính mình WeChat đã nổ mạnh.</p>
+<p>Xếp hạng nhất phía trên, chính là Khương Hàn Ninh cái này đậu bỉ, nhiều đạt hai ba mươi điều tin tức số lượng, còn ở lấy mắt thường có thể thấy được tốc độ không ngừng bành trướng.</p>
+<p>Nhìn đến WeChat thượng cái này tư thế, Tô Triết liền sắc mặt một lục, cảm thấy có cái gì chính mình không nghĩ đối mặt bi kịch đã đã xảy ra.</p>
+<p>Quả nhiên, ở hắn chọc khai Khương Hàn Ninh WeChat tin tức sau, liền thấy được liên tiếp ôm bụng cười đến đầy đất lăn lộn biểu tình bao, đồng thời còn có hệ liệt trào phúng đối thoại.</p>
+<p>【 ha ha ha ha ha ha ha Tô Triết ngươi xong rồi!!! 】</p>
+<p>【 ha ha ha ha, ngươi khi còn nhỏ như thế nào như vậy manh??? Manh loli! Mỹ thiếu nữ! 】</p>
+<p>Ở nhìn đến Khương Hàn Ninh phát này một chuỗi tin tức sau, Tô Triết liền biết, chính mình hắc lịch sử hẳn là đã không có gì nhưng vãn hồi đường sống.</p>
+<p>Ở mặt vô biểu tình mà trở về Khương Hàn Ninh một cái “Lăn” tự sau, Tô Triết tạm thời làm lơ cái này đậu bỉ kế tiếp nhắn lại, mà là ở mở ra Weibo sau, ở che trời lấp đất hạ, bất đắc dĩ mà xoa xoa chính mình đầu, theo sau đem trên mạng đồ tiệt xuống dưới, yên lặng ở WeChat thượng chia cho nhà mình lão mẹ.</p>
+<p>Trên thực tế, này tổ ảnh chụp còn không ngừng như vậy một trương, khi còn nhỏ, nhà hắn lão mẹ cho hắn chụp một tổ Hán phục loli chiếu, nhưng là nhà hắn lão mẹ vẫn là rất có đúng mực, tuy rằng thực thích này tổ ảnh chụp, nhưng là cũng không có đối ngoại huyễn quá, nhưng thật ra nhà hắn lão cha, đã từng đem bị o đến trên mạng này bức ảnh làm chính mình tiền bao chiếu, cũng là khi đó, này bức ảnh làm tiền bao chiếu, bị hắn lão cha bằng hữu nhìn đến phục chế, lúc này mới trằn trọc truyền tới trên mạng.</p>
+<p>Ở Tô Triết lớn lên, hơn nữa cố tình che giấu khởi chính mình trên người “Nãi” khí sau, Tô mụ mụ liền rất thiếu ở trước mặt hắn nhắc tới hắn này tổ Hán phục loli chiếu.</p>
+<p>Tô Triết tự nhiên biết, đây là nhà hắn lão mẹ ở chiếu cố hắn tâm tình, vì thế, hắn ở trong lòng xấu hổ cảm thấy thẹn tâm tình dần dần bình phục sau, vô tình mà đem cái này đã cho hấp thụ ánh sáng hắc lịch sử chụp hình còn có đầu sỏ gây tội đưa đến nhà mình lão mẹ trước mặt —— là thời điểm làm nhà mình lão mẹ giúp chính mình báo cái này công khai xử tội chi thù.</p>
+<p>Quốc nội, ngầm bãi đỗ xe, Thiệu Tinh Thần ở nhân viên công tác hộ tống hạ, đi nhanh sải bước lên chính mình tọa giá, ở cửa xe khép lại sau, mang theo mỏi mệt hơi thở hắn ngồi ở trên ghế sau, hơi hơi đóng một lát mắt.</p>
+<p>Trong khoảng thời gian này tới nay, Trục Quang bá ra, theo rating không ngừng đi cao, tương ứng tuyên truyền thông cáo liền ắt không thể thiếu.</p>
+<p>Làm Thiệu Tinh Thần chuyển hình bước đầu tiên, cái này kịch tập bá ra cũng làm hắn chân chính mà bắt đầu lấy “Diễn viên” cái này thân phận bắt đầu mặt hướng đại chúng.</p>
+<p>May mà, Trục Quang này bộ kịch ở Lưu Chính Ngôn đem khống dưới, phẩm chất có thể xưng là ưu dị, Thiệu Tinh Thần ở quay chụp trong lúc dụng tâm cũng không có cô phụ chính hắn sở trút xuống tâm huyết, tuy rằng ở biểu diễn thượng ngẫu nhiên còn có chút hứa trúc trắc, nhưng là không xấu hổ, không nhảy diễn, ở Tạ Uy trưởng thành trên đường mấy cái giai đoạn, làm được tính cách thay đổi thượng lưu sướng cùng với bất đồng giai đoạn phân chia độ biểu đạt.</p>
+<p>Đặc biệt là ở mấy tràng biết được Lộ Minh bị bệnh, làm bạn Lộ Minh, ở Lộ Minh sau khi chết chính mình ở huấn luyện trung hỏng mất trạng thái, còn bị chuyên chú bình luận điện ảnh đại v hào chuyên môn xách ra tới khích lệ một phen.</p>
+<p>Ở chuyển hình diễn viên con đường này thượng, Thiệu Tinh Thần xem như bước ra còn tính thành công bước đầu tiên, mà vì làm chính mình từ nay về sau đường đi đến càng vững vàng, Lý Thành vì hắn tỉ mỉ chọn lựa hai vị cực kỳ nghiêm khắc kỹ thuật diễn lão sư, đều là trong vòng diễn viên gạo cội, ở bằng vào Trục Quang trung biểu diễn cùng thành khẩn thái độ làm nước cờ đầu sau, hắn ở kỹ thuật diễn học tập đào tạo sâu thượng, cũng đang ở từng bước tăng lớn lực độ.</p>
+<p>Vì phối hợp kỹ thuật diễn học tập cùng trước mặt phim truyền hình tuyên truyền kỳ còn có mặt khác nhãn hiệu quảng cáo tuyên truyền công tác, Thiệu Tinh Thần gần đây cơ hồ có thể xưng là là ở làm liên tục, mỗi ngày giấc ngủ thời gian cũng đã bị áp súc tới rồi cực hạn.</p>
+<p>Ở xe khởi động sau, hắn ước chừng nhắm mắt nghỉ ngơi 10 phút sau, mới một lần nữa trợn mắt, đem tầm mắt chuyển hướng về phía một bên Lý Thành.</p>
+<p>Thoáng nhìn hắn bộ dáng, Lý Thành sớm đã đem trong tay đồ vật chuẩn bị hảo, đưa đến trên tay hắn —— đúng là Tô Triết hôm nay thi đấu còn có phú sĩ đài buổi tối phát sóng trực tiếp phỏng vấn, đồng thời còn tặng kèm giờ phút này chính xoát bạo Weibo Tô Triết thơ ấu loli chiếu.</p>
+<p>Nhìn đến cuối cùng xẹt qua chính mình trước mắt Tô Triết thơ ấu chiếu, Thiệu Tinh Thần đầu tiên là sửng sốt, ngay sau đó khóe miệng nhịn không được nổi lên một tia mỉm cười độ cung, làm hắn nguyên bản bởi vì mỏi mệt căng chặt mà lược hiện lãnh lệ khí chất cũng nhu hòa xuống dưới.</p>
+<p>Ngón tay ở trên màn hình cắt hoa, đem Tô Triết này bức ảnh tồn vào chính mình di động, dừng một chút, lại ở trên ảnh chụp điểm cái cất chứa đánh dấu, đem ảnh chụp bỏ vào chuyên chúc với Tô Triết bookmark trung.</p>
+<p>Bên cạnh, Lý Thành ở nhìn đến Thiệu Tinh Thần dáng vẻ này sau, nhịn không được thở dài, nói “Ta nói ngươi, liền không nghĩ tới cùng Tô Triết quán cái bài sao? Ta xem hắn hiện tại vẫn là chỉ đem ngươi đương bằng hữu đi?”</p>
+<p>Nghe được Lý Thành vấn đề, Thiệu Tinh Thần trầm mặc một lát, sau đó lắc lắc đầu “Bất luận là đối hắn, hoặc là đối ta, hiện tại đều còn không phải một cái thích hợp thời gian.”</p>
+<p>Ở nghe được Thiệu Tinh Thần sau khi trả lời, Lý Thành cũng trầm mặc một lát, theo sau lại thở dài “Hành đi, ngươi nói đúng. Kia…… Ngươi yên tâm đi, Tô Triết này đó thi đấu cái gì ta sẽ giúp ngươi đều thu thập hảo, đừng sự tình, chúng ta về sau lại nói……”</p>
+<p>Ở cảm tạ Lý Thành sau, Thiệu Tinh Thần cầm lấy trong tay di động, nghiêm túc mà xem nổi lên Tô Triết đêm nay video lục bá.</p>
+<p>Internet thượng, vĩnh viễn đều có tân nhiệt điểm.</p>
+<p>Lúc này đây Tô Triết thơ ấu nữ trang sự kiện, ở trải qua toàn võng ha ha ha thảo luận, chuyển phát sau, cũng dần dần tiêu ngừng lại.</p>
+<p>Rốt cuộc, Tô Triết hiện giờ thân phận là cái vận động viên, đối với đại gia tới nói, thơ ấu manh hệ nữ trang chiếu cái gì, chỉ là ở hắn huy hoàng thành tích thượng một cái thú vị điểm xuyết.</p>
+<p>Điền kinh vương quốc trên diễn đàn một cái đại huynh đệ nói rất đúng —— chúng ta Triết thiếu khi còn nhỏ là cái manh loli làm sao vậy? Hiện tại không phải là làm theo ngưu bức?</p>
+<p>Ở thi đấu theo lời mời sau khi kết thúc ngày thứ hai, Trung Quốc đội điền kinh cũng không hề Nhật Bản nhiều hành lưu lại, mà là nhanh chóng liền thừa cơ quay trở về quốc nội, tiếp tục mang theo các đội viên đầu nhập vào khẩn trương huấn luyện vào mùa đông bên trong.</p>
+<p>Đối với Tô Triết mà nói, ở tham gia xong Nhật Bản thi đấu theo lời mời sau, hắn đối với tự thân kỹ thuật khuyết điểm cùng yêu cầu cải tiến phương hướng cũng lại có càng thêm minh xác nhận tri.</p>
+<p>Ở điền kinh vòng trung có một câu, kêu, 100 mễ chạy trốn hảo tuyển thủ, hắn 60 mễ thành tích nhất định sẽ không kém.</p>
+<p>Nhưng là phản ứng ở Tô Triết trên người khi, những lời này tắc có thể từ một cái khác góc độ tiến hành hóa giải —— chỉ cần hắn 60 mễ thành tích có thể tiến thêm một bước đề cao, như vậy hắn trăm mét thành tích nhất định có thể được đến nhảy vọt tiến bộ!</p>
+<p>Đạo lý này, đồng dạng có thể đặt ở hắn vượt rào 110 mét hạng mục phía trên.</p>
+<p>Lúc này đây, tuy rằng nói hắn bại bởi Chu Thiên Tước có nhiều phương diện nhân tố, nhưng là hắn không am hiểu nửa trước bùng nổ cùng gia tốc, chính là hắn ở phía trước nửa trình thất lợi vấn đề căn bản.</p>
+<p>Sức bật huấn luyện, xuất phát chạy gia tốc huấn luyện, còn có các loại khả năng ảnh hưởng tự thân nửa trước tốc độ kỹ thuật chi tiết điều chỉnh, nhiều vô số.</p>
+<p>Ở về nước sau, Tô Dần Sinh cùng chạy nước rút huấn luyện viên tổ thành viên lại nhằm vào hắn ở Nhật Bản thi đấu theo lời mời trung biểu hiện cùng thực chiến tái quả, đối hắn huấn luyện kế hoạch tiến hành rồi hơi điều, Lữ Phi một phương, đồng dạng cũng ở nghiên cứu quá Tô Triết, Chu Thiên Tước, Diệp Tuấn ba người thi đấu ghi hình tư liệu sau, đối mấy người huấn luyện kế hoạch tiến hành rồi tương ứng điều chỉnh.</p>
+<p>【 tiếp theo muốn thắng lợi 】 cái này tín niệm, ở trải qua Nhật Bản thi đấu theo lời mời sau, lại một lần ở Tô Triết trong lòng khắc vào chấp niệm bên trong.</p>
+<p>Đường đua thượng tốc độ chinh phạt, cùng với tại đây loại chinh phạt bên trong truy đuổi thắng lợi tâm, đều ở Tô Triết trong óc bên trong không ngừng gia tăng.</p>
+<p>Loại này hy vọng có thể đứng ở thắng lợi đỉnh tâm tình, tại Giải Vô Địch Thế Giới lúc sau, liền dần dần trầm tích ở trong lòng hắn —— muốn thắng lợi, muốn ở càng cao trên sân thi đấu thu hoạch càng mau, càng tốt thành tích.</p>
+<p>Loại này tâm tình, ở Tô Triết trong lòng không ngừng mà lên men, sau đó thay đổi vì hắn tăng mạnh chính mình huấn luyện động lực.</p>
+<p>Theo ngày đêm không ngừng huấn luyện chương trình học đẩy mạnh, hệ thống không gian trung, màn ảnh biểu hiện lực, xạ kích kỹ năng huấn luyện chương trình học đều đã lục tục kết thúc, duy nhất dư lại chương trình học, chính là từ hệ thống bố trí, toàn diện tăng lên thân thể tố chất huấn luyện chương trình học.</p>
+<p>Vừa lúc là ở Nhật Bản trong nhà thi đấu theo lời mời kết thúc ngày này khởi, Tô Triết ở huấn luyện không gian bên trong hoàn thành xạ kích kỹ năng cuối cùng chương trình học. Kế tiếp, ở một lần nữa mở ra huấn luyện vào mùa đông sau, hắn liền ở lấy mỗi ngày 6 giờ hoàn chỉnh huấn luyện khi đoạn, ở không gian bên trong không ngừng phá được có thể tăng lên tự thân thuộc tính tương quan huấn luyện.</p>
+<p>Mà vì có thể càng tiến thêm một bước mà tăng lên chính mình huấn luyện hiệu suất, hắn cũng ở ban ngày huấn luyện sau khi chấm dứt, dần dần đem không gian trung bộ phân huấn luyện kế hoạch, chuyển dời đến ban ngày huấn luyện thêm luyện hạng mục bên trong.</p>
+<p>Thời gian liền tại đây loại mỏi mệt, bận rộn mà lại mang theo không ngừng trưởng thành cảm giác thành tựu trạng thái trung dần dần trôi đi.</p>
+<p>Trong nháy mắt, công lịch năm cũng đã vượt qua 2019, ngược lại đi tới 2020 năm Nguyên Đán kỳ nghỉ.</p>
+<p>Đương nhiên, ở huấn luyện vào mùa đông trung vận động viên trong mắt, là không tồn tại cái gì kỳ nghỉ —— phóng cái gì giả? Là huấn luyện đã làm xong vẫn là đã ngưu bức đến thế giới đứng đầu?</p>
+<p>Nhân gia thế giới đứng đầu vận động viên, phàm là ở huấn luyện thượng hơi chút lơi lỏng một ít, đều sẽ ở trong lúc thi đấu kéo thương cơ bắp thành tích trượt xuống!</p>
+<p>Ngươi thành tích có thể so sánh đến quá người ta sao? Liền dám mở miệng nói nghỉ?</p>
+<p>Càng không cần phải nói, ở huấn luyện vào mùa đông sau khi chấm dứt, ngày 1 tháng 3 khởi, thế giới Thi Đấu Điền Kinh Trong Nhà liền phải ở Trung Quốc cử hành!</p>
+<p>Loại này ở cửa nhà tổ chức thế giới tứ đại thi điền kinh sự chi nhất, làm đội điền kinh sắp dự thi mỗi một cái đội viên đều cảm thấy có một tia hưng phấn, cũng có không nhỏ áp lực.</p>
+<p>Điền Quản trung tâm đối với lần này thi đấu mục tiêu, đã làm ra minh xác chỉ thị —— cường thế hạng mục như nam tử tam cấp nhảy xa, nữ tử quả tạ chờ, bảo bạc tranh kim, nhất thứ cũng muốn tranh thủ huy chương. Nhược thế hạng mục, như nam tử 60 mễ chạy nước rút chờ, tuy rằng không bắt buộc huy chương, nhưng cần phải tranh thủ ở thi đấu thượng làm ra lịch sử tính đột phá!</p>
+<p>Ở bận rộn huấn luyện vào mùa đông quý trung, đội điền kinh như cũ vì thế thứ thế giới trong nhà thi đấu tranh giải chuyên môn đằng ra nửa ngày thời gian, đối có điều dự thi đội viên cùng tương quan huấn luyện viên nhân viên tiến hành rồi một lần thâm nhập thiển xuất hội đàm.</p>
+<p>Tại hội nghị, Điền Quản trung tâm chủ nhiệm Tôn Chí Hải cũng tự mình trình diện, lại một lần cường điệu lần này thi đấu tầm quan trọng.</p>
+<p>“Cái này thi đấu sự tình thượng, ta tin tưởng đại gia so với ta cái này lão nhân phải có chuẩn bị đến nhiều, ta chỉ là cùng mọi người lại dong dài một lần, chúng ta lần này trong nhà thi đấu tranh giải, liền ở thành phố N cử hành, lập tức, chúng ta truyền thông liền phải bắt đầu toàn diện tuyên truyền chuyện này nhi, đến lúc đó, ở hiện trường, sẽ có bao nhiêu song chờ mong đôi mắt đang nhìn các ngươi đâu? Các ngươi nguyện ý ở hiện trường nhìn đến bọn họ thất vọng bộ dáng sao?”</p>
+<p>Tôn Chí Hải dừng một chút, lời nói thấm thía nói “Ta tin tưởng các ngươi đều là hảo hài tử, ta cũng hy vọng các ngươi đến lúc đó có thể ở trên sân thi đấu cấp ra tốt nhất biểu hiện! Làm những cái đó tới chúng ta quốc nội tham gia thi đấu thế giới đứng đầu các tuyển thủ nhìn xem, chúng ta Trung Quốc điền kinh hạng mục, có tương lai!”</p>
+<p>Lật qua Nguyên Đán kỳ nghỉ lúc sau, chính như Tôn Chí Hải lời nói, quốc nội truyền thông bắt đầu phạm vi lớn mà bắt đầu tuyên truyền khởi trận này sắp ở quốc nội tổ chức “Thế giới tứ đại thi điền kinh sự” chi nhất.</p>
+<p>Ở phía chính phủ truyền thông phổ cập khoa học oanh tạc sau, rất nhiều nguyên bản cũng không chú ý thi điền kinh sự người thường cũng biết lần này thi đấu tầm quan trọng, ở mọi người sinh hoạt hằng ngày bên trong, về sắp ở thành phố N tổ chức trận này trong khi 4 thiên thi đấu cũng bắt đầu xuất hiện ở các loại nói chuyện phiếm bên trong.</p>
+<p>Thi đấu tổ ủy hội ở khua chiêng gõ mõ mà trù bị thi đấu cùng tuyên truyền, mà đối với đội điền kinh vận động viên nhóm, ở quan trọng thi đấu dưới áp lực, cũng không dám ở huấn luyện bên trong có chút lơi lỏng thả lỏng.</p>
+<p>Đối với Tô Triết mà nói, huấn luyện vào mùa đông sau mùa giải mới đem gặp phải này trận đầu thi đấu, áp lực cùng động lực đồng loạt tồn tại, áp lực là đến từ chính thi đấu, động lực đồng dạng là đến từ chính này, hắn tưởng tại đây tràng thi đấu bên trong, làm chính mình thành tích, lại lần nữa có điều đột phá!</p>
+<p>Ở Nhật Bản thi đấu theo lời mời sau, phản hồi huấn luyện vào mùa đông trên sân huấn luyện lúc sau, đối với thi đấu khát vọng kỳ thật vẫn luôn đều không có từ hắn trong lòng rút đi.</p>
+<p>Tuy rằng, làm thật đi lên nói, trong khoảng thời gian này tới nay, hắn huấn luyện thành tích cùng hiệu quả cũng đang ở từng bước tăng lên, nhưng là mỗi khi huấn luyện kết thúc khoảnh khắc, hắn đều vẫn là cảm thấy, đơn thuần huấn luyện khó có thể làm hắn đạt tới chân chính tốt nhất trạng thái.</p>
+<p>Ở Tô Triết trong lòng, ẩn ẩn có một loại “Chính mình thành tích điểm đột phá có lẽ vẫn là ở thi đấu bên trong” ý tưởng, loại này ý tưởng làm hắn không khỏi sinh ra một loại mơ hồ nôn nóng cảm, làm hắn ở huấn luyện bên trong ngẫu nhiên sẽ xuất hiện thất hành trạng thái.</p>
+<p>Như vậy trạng thái, làm Tô Triết đối chính mình hơi chút sinh ra một chút lo lắng.</p>
+<p>Tô Dần Sinh tự nhiên cũng phát hiện Tô Triết cái này trạng thái, ở chỗ hắn câu thông lúc sau, nhưng thật ra pha không sao cả mà đồng ý hắn ý tưởng.</p>
+<p>“Kỳ thật ngươi tưởng không sai, phía trước chúng ta liền liêu quá, có tuyển thủ thuộc về huấn luyện hình, mà có tuyển thủ thuộc về đại tái hình.” Tô Dần Sinh hai tay ôm ở trước ngực, nói “Ngươi trạng thái, không hề nghi ngờ, chính là tiêu chuẩn thi đấu hình tuyển thủ, lấy tái đại luyện về sau ở mùa giải cũng sẽ là ngươi một cái huấn luyện chu kỳ thái độ bình thường. Ngươi loại này loại hình tuyển thủ, ở không có thi đấu thời điểm, sẽ cảm thấy nôn nóng cũng là bình thường, chẳng sợ các ngươi huấn luyện thành tích đủ hảo, nhưng là khuyết thiếu thi đấu kích thích, liền sẽ cho các ngươi cảm thấy cả người nơi nào đều không đúng.”</p>
+<p>Tổng kết xong Tô Triết trạng thái nguyên nhân sau, Tô Dần Sinh không sao cả mà xua xua tay nói “Ngươi cái này trạng thái, chính là thi đấu hình rửng mỡ, bất quá đảo cũng không có gì cái gọi là, ngươi phải làm, chính là khống chế tốt chính mình cái này khát vọng thi đấu tâm tình, nói cho chính mình —— hiện tại mỗi một ngày huấn luyện, đều là ở vì ngươi lúc sau ở trong lúc thi đấu đột phá đánh hảo cơ sở.”</p>
+<p>“Tóm lại, đừng nghĩ quá nhiều có không, khống chế tốt chính mình tâm lí trạng thái chuyện này, hiện tại cũng vẫn là ngươi hiện tại yêu cầu nắm giữ hảo quan trọng chương trình học chi nhất.”</p>
+<p>Đối mặt nhà mình lão cha dạy bảo, Tô Triết ở cẩn thận sau khi tự hỏi, nghiêm túc gật gật đầu.</p>
+<p>Xác thật, chính như nhà hắn lão cha theo như lời, chỉ có ở huấn luyện bên trong đánh hảo cơ sở, hắn mới có thể ở trong lúc thi đấu không ngừng đạt được chính mình sở khát vọng thành tích đột phá, thậm chí với thắng lợi.</p>
+<p>Ở một lần nữa tin được chính mình tâm thái lúc sau, Tô Triết cũng may mắn mà hơi hơi thở dài nhẹ nhõm một hơi —— tuy rằng đối lập lúc ban đầu khi, đã hảo rất nhiều, nhưng là đối với tự thân tâm lý thi đấu, huấn luyện tâm lý biến hóa cảm thụ, hắn mẫn cảm độ cùng thành thục độ vẫn là có điều khiếm khuyết.</p>
+<p>May mà mỗi khi chính mình khả năng tâm lí trạng thái không xong hoặc là tâm thái di động khi, hắn bên người đều có người có thể đủ kịp thời địa điểm tỉnh hắn, làm hắn tránh cho tâm thái di động sở mang đến trạng thái không xong.</p>
+<p>Vẫn là muốn nỗ lực hơn a, bất luận là tại thân thể huấn luyện thượng, hoặc là tại tâm lí huấn luyện thượng!</p>
+<p>Mang theo cách nghĩ như vậy, Tô Triết lần nữa toàn thân tâm mà đầu nhập vào nông lịch năm trước huấn luyện vào mùa đông trung.</p>
+<p>Mà ở nông lịch năm sắp đến khi, Trần Chí yên lặng đã lâu Weibo thượng, đột nhiên xuất hiện một cái hoàn toàn mới đẩy đưa tin tức ——【 cảm ơn đại gia quan tâm, ta đã trở về, ngày mai về đơn vị. Trung Quốc đội điền kinh, Tô Triết, đại gia, ngày mai thấy. 】 đã sửa địa chỉ web, đã sửa địa chỉ web, đã sửa địa chỉ web, đại gia một lần nữa cất chứa tân địa chỉ web, tân m.. Tân máy tính bản.., Đại gia cất chứa sau liền ở tân địa chỉ web mở ra, về sau lão địa chỉ web sẽ mở không ra,,</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong72.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong74.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "roi-khoi-gioi-giai-tri-sau-ta-thanh-dai-minh-tinh";
+const NOVEL_TITLE = "Rời khỏi giới giải trí sau ta thành đại minh tinh";
+const CHAPTER_TITLE = "Chương 73";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

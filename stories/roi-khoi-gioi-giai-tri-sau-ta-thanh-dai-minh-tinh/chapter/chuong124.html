@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 124</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Rời khỏi giới giải trí sau ta thành đại minh tinh
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 124</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong123.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong125.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Chúc mừng bọn họ!</p>
+<p>Chúc mừng chúng ta các anh hùng!</p>
+<p>Đương Trương Kính ở phát sóng trực tiếp giải thích trung hô lên này một câu khi, sở hữu hiện trường, phát sóng trực tiếp trước Trung Quốc người xem cũng tất cả đều phát ra nhiệt liệt tiếng hoan hô!</p>
+<p>Bọn họ thành công!</p>
+<p>Trung Quốc tiếp sức đội này đó đám tiểu tử, thành công!!</p>
+<p>Thế vận hội Olympic ngân bài, đây là một cái ở Thế vận hội Olympic bắt đầu thi đấu phía trước không có người dám tưởng tượng thành tích.</p>
+<p>Trung Quốc tiếp sức đội đoản bản thực rõ ràng, ở lần này Thế vận hội Olympic phía trước, tại thế giới đại tái thượng tốt nhất thành tích cũng chỉ là thứ 4 mà thôi, đối mặt trận chung kết thượng này 7 cái cường địch, mặc dù là đội điền kinh chính mình, cũng không dám đem mục tiêu dễ dàng mà liền thiết lập tại vàng bạc huy chương vị trí thượng.</p>
+<p>Phòng live stream nội, Trương Kính cùng Vương Miểu Xuyên như cũ mang theo kích động tâm tình, ở trần thuật đối với giờ phút này này một tái quả kích động chi tình “Đây là một hồi vượt quá tưởng tượng thắng lợi! Trung Quốc tiếp sức đội dũng sĩ nhóm, lấy bọn họ ăn ý, đoàn kết, hợp tác, ở đêm nay này vòng tròn trên đường băng vì chúng ta trình diễn một giấc mộng huyễn kỳ tích!”</p>
+<p>Vương Miểu Xuyên thanh âm bên trong cũng tràn ngập kích động ý vị “Ở đêm nay trên sân thi đấu, ở đêm nay cái này thời khắc, làm chúng ta nhớ kỹ này 4 cái khai sáng hoàn toàn mới lịch sử tên! Bọn họ là đệ nhất bổng Triệu Chí Tuyên, đệ nhị bổng Trần Chí, đệ tam bổng Mạnh Hạo còn có thứ 4 bổng, Tô Triết! Này chi trải qua khắc nghiệt huấn luyện đội ngũ, bằng vào đội viên chi gian lẫn nhau ăn ý cùng tín nhiệm, bằng vào bọn họ đã từng vất vả trả giá mồ hôi, ở đêm nay vì chúng ta mang đến này một cái chấn động, xuất sắc biểu hiện!”</p>
+<p>“Giờ này khắc này, ngôn ngữ đã khó có thể biểu đạt trong lòng ta kích động, làm chúng ta lại một lần đem ánh mắt chuyển hướng hiện trường, chuyển hướng vì chúng ta mang đến này một kỳ tích tái quả bốn vị anh hùng!”</p>
+<p>“Lại một lần, nhớ kỹ tên của bọn họ —— Triệu Chí Tuyên, Trần Chí, Mạnh Hạo còn có Tô Triết!!!”</p>
+<p>Phát sóng trực tiếp TV trước, rất nhiều điền kinh người yêu thích đều còn ở vẫn duy trì hai tay che mặt tư thái, đối với trước mắt cái này kinh diễm nhân tâm thành tích cảm thấy không dám tin tưởng.</p>
+<p>Năm nay Tokyo Thế vận hội Olympic, đối với điền kinh người yêu thích nhóm tới nói, là tràn ngập ’ kỳ tích ’ cùng ’ không thể tin tưởng ’ này 4 cái tự một lần Thế vận hội Olympic, gần là khai sáng lịch sử này 4 cái tự, liền từ Trương Kính, Vương Miểu Xuyên hai vị này người giải thích trong miệng nhiều lần bị lặp lại.</p>
+<p>Ở quá vãng mỗi một cái ngày ngày đêm đêm, điền kinh các fan luôn là ở trong lòng yên lặng chờ đợi, Trung Quốc đội trăm mét hoàn toàn quật khởi, trạm thượng đỉnh;</p>
+<p>Ở quá vãng mỗi một cái ngày ngày đêm đêm, điền kinh các fan cũng luôn là ở trong lòng yên lặng chờ đợi, Trung Quốc đội vượt rào 110 mét cái này đã từng tiếu ngạo với thế giới đỉnh hạng mục, có thể một lần nữa quật khởi, lại sang huy hoàng;</p>
+<p>Ở quá vãng mỗi một cái ngày ngày đêm đêm, điền kinh các fan càng là ở trong lòng vô số lần mà chờ đợi quá, Trung Quốc đội 4*100 mễ đua tiếp sức, cái này thể hiện Trung Quốc chạy nước rút tập thể tiêu chuẩn hạng mục, có thể sáng tạo kỳ tích, đi lên đỉnh.</p>
+<p>Ở một lần lại một lần mà chờ đợi qua đi, điền kinh mê nhóm không thể không thừa nhận, Trung Quốc đội này đó hạng mục, tuy rằng đang ở trưởng thành, nhưng khoảng cách bò lên trên đỉnh, khoảng cách đi lên thế giới đỉnh cấp sân thi đấu còn có khoảng cách nhất định.</p>
+<p>Cho đến năm trước mới thôi.</p>
+<p>Cái kia đại biểu cho ’ kỳ tích ’ tên, xuất hiện ở mọi người trước mắt, hắn tựa hồ bản thân liền mang theo một loại tên là ’ may mắn ’ lực lượng, theo hắn xuất hiện, Trung Quốc đội điền kinh trung, thuộc về này đó hạng mục các tuyển thủ, thành tích cũng bắt đầu từng bước bò lên, xuất hiện ra làm người vui sướng hậu bị lực lượng.</p>
+<p>Liền hiện giờ năm Thế vận hội Olympic điền kinh hạng mục thi đấu.</p>
+<p>Trăm mét hạng mục, Tô Triết huy chương đồng, Trần Chí, vết thương khỏi hẳn lúc sau một lần nữa bước vào 10 giây đại quan, cùng Tô Triết cùng xâm nhập trận chung kết, bắt lấy trận chung kết thứ 5 thứ tự;</p>
+<p>Vượt rào 110 mét hạng mục, Tô Triết huy chương đồng, Tô Triết, Diệp Tuấn, Chu Thiên Tước ba người đồng thời xâm nhập vòng bán kết, Chu Thiên Tước đồng thời nhập vây trận chung kết, bắt lấy trận chung kết thứ 6;</p>
+<p>Mà tối nay nam tử 4*100 mễ đua tiếp sức…… Từ Tô Triết, Trần Chí, Triệu Chí Tuyên cùng Mạnh Hạo bốn người tạo thành đội ngũ, càng là ở cường địch hoàn hầu dưới, ngạnh sinh sinh ở Nhật Bản sân nhà, xé xuống ở cái này hạng mục có cường đại thực lực Nhật Bản đội, cuối cùng một lần là bắt được bổn trận thi đấu ngân bài!!</p>
+<p>Thế vận hội Olympic hiện trường, Trung Quốc khu tuyển thủ tịch thượng, tất cả mọi người lộ ra vui sướng gương mặt tươi cười.</p>
+<p>“Hảo, thật tốt quá!” Khâu Trung Văn, Trịnh Văn Thắng đều đang không ngừng mà lải nhải những lời này, Trịnh Văn Thắng còn quay đầu lại đối Tô Dần Sinh nói “Lão Tô, làm được xinh đẹp! Đêm nay này cực hạn gậy tiếp sức chạy pháp nhi, thật là quá xinh đẹp!”</p>
+<p>Tô Dần Sinh nhìn thoáng qua chính mình lão bằng hữu, không nói thêm gì, trên thực tế, hắn tuy rằng như cũ cứ theo lẽ thường bản một khuôn mặt, nhưng nhìn trên sân thi đấu các vị đội viên, hắn trong lòng cũng hơi hơi thở dài nhẹ nhõm một hơi.</p>
+<p>Hắn tùng hạ này một hơi, cũng không phải bởi vì cuối cùng thành tích, mà là bởi vì trên sân thi đấu này đó tiếp sức đội các đội viên, ở dùng hết toàn lực ra sức một bác lúc sau, thành công đạt thành chính mình mong muốn.</p>
+<p>Ở trả giá cũng đủ nỗ lực lúc sau, có thể ở như vậy một canh bạc khổng lồ bên trong nghênh đón thành công, này đã là một loại may mắn.</p>
+<p>Trên sân thi đấu, đương nhìn đến Tô Triết lấy đệ nhị danh tư thái xông qua vạch đích sau, mặc dù là lấy Trần Chí ổn trọng, cũng không khỏi mà tràn ra một cái đại đại gương mặt tươi cười, Mạnh Hạo càng là nhảy dựng lên thống khoái mà vẫy vẫy nắm tay.</p>
+<p>Bao gồm Triệu Chí Tuyên, Trần Chí cùng Mạnh Hạo ba người, đều trước tiên nhằm phía chung điểm chỗ Tô Triết, sau đó bốn người ôm làm một đoàn, lấy Mạnh Hạo cầm đầu, ba người một tay đem Tô Triết cử lên, giá tới rồi giữa không trung.</p>
+<p>Đối với chính mình ba cái đồng đội đột nhiên làm ra cái này ấu trĩ hành động, Tô Triết không có nửa điểm phòng bị, chờ hắn phản ứng lại đây khi, hắn đã bị Mạnh Hạo khiêng lên, mà hắn hai cái sư huynh đang ở bên cạnh đỡ hắn chân, phòng ngừa hắn bởi vì đong đưa mà xuất hiện ngoài ý muốn.</p>
+<p>Hiện trường chung điểm chỗ nhiếp ảnh các phóng viên cũng thấy được một màn này, rất nhiều người bắt đầu thay đổi màn ảnh, ký lục hạ này đáng yêu thú vị một màn.</p>
+<p>Màn ảnh, Trung Quốc tiếp sức đội này tư duy đội viên cười đến sáng loá, tại đây xán lạn tươi cười sau lưng, là bọn họ vì đêm nay trận này thi đấu sở trả giá gian khổ nỗ lực, cùng với ở đêm nay trận thi đấu này phía trên sở làm ra cực hạn khiêu chiến.</p>
+<p>Phòng live stream trung, Trương Kính cùng Vương Miểu Xuyên lúc này cảm xúc cũng đã bình phục xuống dưới, hai người nhìn hình ảnh trung Mạnh Hạo ba người khiêng Tô Triết một màn này, trên mặt cũng là cảm khái vạn phần.</p>
+<p>“Xem hiện trường không khí, chúng ta tiếp sức đội đám tiểu tử hiển nhiên cũng là đặc biệt mà vui vẻ, bọn họ nỗ lực trả giá đạt được xưa nay chưa từng có hồi báo. Nói thật, ở trước khi thi đấu nghe được tô chỉ đạo nói, ta trong lòng vẫn luôn ở lo lắng…… Cực hạn truyền tiếp bổng, một khi thất bại, Trung Quốc đội sở gặp phải liền sẽ là thành tích hủy bỏ cái này vi phạm quy định trừng phạt.”</p>
+<p>“Đúng vậy.” Vương Miểu Xuyên gật đầu nói “Có thể nói, chúng ta đội viên, ở đêm nay trận thi đấu này bên trong, bọn họ sở có được không chỉ là dùng hết hết thảy nỗ lực, sung túc ăn ý, còn có rất nhiều, một chút có khuynh hướng thắng lợi thiên cân may mắn.”</p>
+<p>Liền ở hai người nói chuyện phiếm trung, thi đấu hiện trường, trọng tài tổ rốt cuộc đem cuối cùng thành tích công bố tới rồi hiện trường đại bình phía trên.</p>
+<p>Trương Kính hai người nhìn màn hình phía trên cuối cùng thành tích, cười báo ra cuối cùng thành tích kết quả.</p>
+<p>“Tokyo thế vận hội Olympic nam tử 4*100 mễ đua tiếp sức, đệ nhất danh, nước Mỹ đội, 37 giây 37 ( mùa giải sb ), đệ nhị danh, Trung Quốc đội, 37 giây 62 ( NR đổi mới quốc gia kỷ lục ), đệ tam danh, Nhật Bản đội, 37 giây 69 ( mùa giải sb )……”</p>
+<p>“Lại một lần chúc mừng chúng ta tiếp sức các đội viên, bọn họ không chỉ có thành công thu hoạch lần này Thế vận hội Olympic ngân bài, đồng thời bọn họ cũng thành công đổi mới Trung Quốc 4*100 mễ tiếp sức kỷ lục! Chúng ta tin tưởng, cái này thành tích tuyệt không sẽ là Trung Quốc đội chung điểm, ở này đó các đội viên không ngừng tiến bộ, nỗ lực hạ, hôm nay kỷ lục cũng chung đem ở kế tiếp không ngừng mà đổi mới!!!”</p>
+<p>Ở cái này thành tích bị công bố lúc sau, sở hữu chú ý thi đấu mọi người lại là một trận sôi trào, đêm khuya trên mạng, khắp nơi đều là lửa nóng chúc mừng bầu không khí, mọi người vui sướng mà chia sẻ Trung Quốc đội điền kinh đạt được này cái ngân bài gian khổ lịch trình, chia sẻ tiếp sức các đội viên ở trận thi đấu này bên trong gan lớn, thận trọng.</p>
+<p>Weibo thượng, các đại quan hơi sớm đã nhanh chóng ở thành tích báo ra kia một khắc, liền treo lên cùng đua tiếp sức ngân bài có quan hệ tin tức đẩy đưa.</p>
+<p>Điền kinh quốc gia đội Official Weibo càng là kích động mà @ Tô Triết mấy người, nhiệt tình dào dạt mà khích lệ nhà mình này 4 vị đội viên 【# Tokyo Thế vận hội Olympic ## nam tử 4*100 mễ ngân bài # chúc mừng chúng ta 4 vị anh hùng! @ Triệu Chí Tuyên, @ Trần Chí, @ Mạnh Hạo, @ Tô Triết, các ngươi đại biểu điền kinh quốc gia đội sáng tạo hoàn toàn mới lịch sử! Đây là Trung Quốc 4*100 mễ tiếp sức đội mới nhất kỷ lục, là Trung Quốc 4*100 mễ tiếp sức đội ở Thế vận hội Olympic thượng thu hoạch đệ 1 cái huy chương! Đây cũng là các ngươi hành trình khởi điểm, tin tưởng ở sau này, các ngươi còn đem ở con đường này thượng, đi ra càng huy hoàng tiền đồ! 】</p>
+<p>Các lộ thể dục bình luận giả nhóm cũng sôi nổi hoá trang lên sân khấu, tình cảm mãnh liệt bốn phía mà tán dương đến từ chính Trung Quốc tiếp sức đội này 4 cái hảo các huynh đệ.</p>
+<p>Đôi mắt đại thúc 【 trận thi đấu này, là một hồi nguy hiểm xa hoa đánh cuộc, nhưng là bọn họ bằng vào đối các đồng đội tín nhiệm cùng ăn ý, đạt tới cuối cùng thắng lợi!</p>
+<p>Ở đêm nay trận thi đấu này trung, để cho ta kinh ngạc cảm thán không phải cuối cùng thời khắc Tô Triết cực hạn sau trình năng lực bày ra cùng với đối Nhật Bản đội đuổi theo siêu việt.</p>
+<p>Đêm nay trận thi đấu này trung, làm ta nhất tán thưởng, vẫn là này 4 vị đội viên đối với từng người đồng đội chi gian tuyệt đối tín nhiệm.</p>
+<p>Bất luận là Trần Chí, Mạnh Hạo hoặc là Tô Triết, bọn họ ở dự chạy tuyến thượng khởi động sau, liền không hề quay đầu lại, mà là bắt đầu toàn lực gia tốc, bọn họ tin tưởng chính mình đồng đội có thể chuẩn xác mà cho chính mình mệnh lệnh, sau đó ở các đồng đội phát ra mệnh lệnh đồng thời, bọn họ cũng có thể đủ không chút do dự hồi bằng dứt khoát lưu loát tiếp bổng động tác.</p>
+<p>Truyền bổng vận động viên cùng tiếp bổng vận động viên chi gian, đều khiêng lấy áp lực cực lớn, bọn họ không có lựa chọn bảo thủ chiến thuật, mà là ở trận thi đấu này bên trong, lấy ra không thành công liền xả thân khí phách!</p>
+<p>Loại này lựa chọn, yêu cầu dũng khí, yêu cầu tín nhiệm, cũng yêu cầu thực lực. 】</p>
+<p>Không chỉ là như Đào Sinh, đôi mắt đại thúc loại này chuyên nghiệp thể dục bình luận giả nhóm, ngay cả Weibo thượng bình thường ăn dưa lộ nhóm, cũng nhịn không được đang xem xong thi đấu sau, đánh ra một trường xuyến tiểu luận văn.</p>
+<p>【 a a a, ta nguyên bản cho rằng, tiếp sức thi đấu không có gì hảo kích động, nhưng là ta sai rồi!! Đêm nay đua tiếp sức thật sự quá kích thích!</p>
+<p>Trước khi thi đấu ta nghe phát sóng trực tiếp giải thích thời điểm nói Trung Quốc đội lựa chọn cái kia cái gì cực hạn gậy tiếp sức chiến lược, lúc ấy nghe qua cái gì kêu cực hạn gậy tiếp sức phổ cập khoa học sau, liền cảm thấy siêu cấp khẩn trương! Ta nghĩ nghĩ, chính mình ngày thường đi ở trên đường cấp bằng hữu đệ đồ vật thời điểm, đều còn sẽ hơi chút chú ý phải về đầu xem một cái, liền kia vẫn là ở trên đường chậm rì rì đi đường trạng thái đâu! Chạy nhanh như vậy thời điểm, còn muốn ở cái gì nhất cực hạn truyền tiếp bổng khu vực vị trí tiến hành gậy tiếp sức……</p>
+<p>Má ơi, chỉ cần ra một chút sai, bọn họ Thế vận hội Olympic trận chung kết thành tích liền xong rồi hảo sao?</p>
+<p>Theo ta loại này ăn dưa người qua đường, chỉ cần tưởng tượng đến điểm này, liền adrenalin tiêu thăng, bọn họ còn không chỉ là có loại này áp lực tâm lý, còn muốn ở trên sân thi đấu chân chính mang theo loại này áp lực thi đấu…… Trừ bỏ bội phục không biết còn có thể nói cái gì nữa!</p>
+<p>Cuối cùng nói một câu, Trung Quốc nam tử 4*100 mễ tiếp sức đội ngưu bức!!! 】</p>
+<p>Giống như là thể dục bình luận giả nhóm lại hoặc là vị này bình thường ăn dưa người qua đường sở đánh giá giống nhau, sở hữu quan khán quá trận thi đấu này người, đều có thể đủ ở mọi người gậy tiếp sức khi cảm nhận được cái loại này bức nhân áp lực tâm lý, mà bọn họ bốn người, không chỉ có đứng vững loại này áp lực tâm lý, hơn nữa dứt khoát lưu loát mà hoàn thành gậy tiếp sức truyền tiếp.</p>
+<p>Cùng lúc đó, bốn người cũng đều ở đường đua thượng chạy ra chính mình tốt nhất trạng thái, bảo đảm tại đây hạng nhất tập thể hạng mục bên trong, thuộc về chính mình kia một vòng, vững vàng mà khấu ở tốt nhất cái kia vị trí thượng, lúc này mới tạo thành cuối cùng cái này kỳ tích.</p>
+<p>Ở Weibo thượng, mọi người hàng ngàn hàng vạn thi đấu bình luận bên trong, có một cái cũng không thu hút Weibo nội dung, nó đến từ chính chứng thực vì tự do người đại diện Trần Chanh Weibo.</p>
+<p>【@ Tô Triết, đáp ứng ngươi sự, tỷ tỷ làm được, thi đấu rất tuyệt, ngươi cũng rất tuyệt. Đêm nay nhìn đến ngươi cùng ngươi đồng đội ăn ý, hữu ái cùng hỗ động, cảm thấy thực hảo. Cố lên, A Triết, ta ở trên người của ngươi thấy được vô hạn tinh quang, bất luận ngươi ở đâu cái vòng, ta tưởng, ngươi cuối cùng đều đem là nhất lóa mắt kia viên minh tinh. Hôm nay lúc sau, tỷ tỷ ta cũng muốn bắt đầu chính mình hoàn toàn mới lịch trình, chúc tỷ tỷ ta cũng thuận lợi thành công đi. 】</p>
+<p>Này Weibo ở tuyên bố sau, cũng không có khiến cho quá nhiều người chú ý.</p>
+<p>Trần Chanh tại đây trước cũng không có mang ra quá cái gì đặc biệt đỏ thẫm nghệ sĩ, nàng ở trong vòng làm người hành sự cũng tương đối phải cụ thể điệu thấp, cũng không làm yêu cũng rất ít tuyên bố một ít nghệ sĩ tương quan nội dung, bởi vậy cho dù là nàng mang quá nghệ sĩ fans, cũng hiếm khi có chú ý nàng Weibo.</p>
+<p>Nhưng rất ít, cũng không tỏ vẻ không có.</p>
+<p>Tô Triết gia thâm niên ’ Triết Học Gia ’ nhóm, tự nhiên là biết cái này người đại diện tỷ tỷ, cho dù là ở Tô Triết lui vòng sau, các nàng cũng cũng không có đặc biệt unfollow Trần Chanh, các nàng phía trước vẫn luôn biết, Trần Chanh đối Tô Triết đã rất là chiếu cố, bởi vậy trong lòng đối Trần Chanh cũng là thập phần cảm kích.</p>
+<p>Hôm nay buổi tối, hỗn tạp ở các loại Thế vận hội Olympic đua tiếp sức tương quan tin tức Weibo bên trong, các nàng ngoài ý muốn sờ đến Trần Chanh nơi này, ở nhìn đến nàng lên tiếng sau, cũng không khỏi có chút thương cảm.</p>
+<p>Này đó lão phấn đương nhiên biết Trần Chanh lời nói nói chính là có ý tứ gì, như là Tô Triết lúc trước sở ngốc đoàn, nếu là đoàn, liền có bất đồng đoàn viên chi gian nhân tế quan hệ tồn tại, ở loại quan hệ này xích dưới, liền tất nhiên sẽ có đoàn viên chi gian ích lợi tranh đoạt cùng lẫn nhau chi gian một ít vấn đề nhỏ.</p>
+<p>Giống như là lúc trước, Tô Triết đi trước Nhật Bản tham dự Châu Á quán quân thi đấu theo lời mời trong lúc toàn võng hắc sự kiện…… Mọi người cũng không nghĩ tới, ở sau lưng thao tác hắc tử thuỷ quân bôi đen Tô Triết, thế nhưng chính là hắn một cái trước đồng đội.</p>
+<p>Xem qua này đó tao thao tác lúc sau, lại nhìn đến hiện giờ đội điền kinh đội viên chi gian hài hòa hữu ái, loại này tình cảm thượng đối lập chênh lệch, xác thật quá mức kỳ diệu.</p>
+<p>Cũng là đang xem Trần Chanh này Weibo sau, này đó lão các fan cũng mới phát hiện, Trần Chanh đi Tokyo hiện trường quan khán các nàng gia nhãi con thi đấu, hơn nữa các nàng gia nhãi con đã từng vị này người đại diện, cũng đã rời đi Nịnh Mông giải trí, sắp một mình dốc sức làm. Không ít lão phấn lúc này đều xông ra, vì Trần Chanh đưa lên từng người chúc phúc.</p>
+<p>【_( з” ∠)_ cố lên nha! Trần Chanh tỷ tỷ, chúc ngươi hết thảy thuận lợi. 】</p>
+<p>Tokyo hiện trường, Tô Triết bốn người đã bị đến từ thể dục kênh phóng viên chặn lại.</p>
+<p>Tận mắt nhìn thấy quá hiện trường thi đấu Từ Trí, lúc này cũng là tình cảm mãnh liệt mênh mông bộ dáng, ở chính thức phỏng vấn bắt đầu phía trước, hắn cùng tiếp sức đội 4 người lần lượt từng cái ôm một vòng, vì bọn họ mỗi người đều đưa lên chân thành chúc phúc.</p>
+<p>Ở đúng là phỏng vấn ghi hình trung, Từ Trí phân biệt vì 4 người từng người thu một cái đơn người giới thiệu, cường điệu giới thiệu mấy người ở tiếp sức đội trung vị trí vị trí, cùng với bọn họ vị trí này ở đội ngũ bên trong sở phát huy ra quan trọng tác dụng.</p>
+<p>“Ở hôm nay trận thi đấu này bên trong, ’ Trung Quốc tốc độ ’ quật khởi làm tất cả mọi người không dám tin tưởng, cũng nghẹn họng nhìn trân trối, mà trận này tốc độ kỳ tích sáng lập giả, chính là từ Triệu Chí Tuyên, Trần Chí, Mạnh Hạo cùng Tô Triết sở tạo thành tiếp sức thiên đoàn!”</p>
+<p>Từ Trí nhiệt tình mà giới thiệu trước mắt bốn người, cũng từng cái khai quật ra bốn người trên người loang loáng điểm, tỷ như Triệu Chí Tuyên khúc cong xuất phát chạy, Mạnh Hạo khúc cong chạy cùng với hiện giờ ưu tú ổn định truyền tiếp bổng kỹ thuật từ từ.</p>
+<p>“Nói thật, các ngươi có nghĩ tới hôm nay sẽ bắt lấy ngân bài, đạt được như vậy thành tích ưu tú sao?” Từ Trí nói, đem micro đưa tới đội trưởng Trần Chí trước mặt.</p>
+<p>Trần Chí lúc này đã khôi phục ngày thường ôn hòa trầm ổn, hắn cười, cũng phi thường dứt khoát mà phủ nhận nói “Kỳ thật cũng không có. Ở trước khi thi đấu, chúng ta huấn luyện viên liền cùng chúng ta lặp lại xác nhận quá hôm nay phương án, cái này cực hạn truyền tiếp bổng sách lược cũng không bảo hiểm, chuyện này chúng ta là đều biết đến, nhưng là chúng ta cũng làm hảo chuẩn bị, nếu thất bại, đương nhiên cũng sẽ nghiêm túc mà đối diện.”</p>
+<p>“Ở Thế vận hội Olympic trận chung kết như vậy trên sân thi đấu, chọn dùng loại này phương án sẽ không quá mức nguy hiểm sao?”</p>
+<p>“Kỳ thật không có gì quá mức nguy hiểm.” Trần Chí nhìn chung quanh các đồng đội, sau đó cười nói “Cho dù chúng ta chọn dùng bảo thủ phương án, ở truyền tiếp bổng trong quá trình cũng sẽ có sai lầm xác suất, mà ở cái này trên sân thi đấu, chúng ta đều muốn vì chúng ta cộng đồng mộng tưởng đua thượng một phen. May mà chính là, chúng ta thành công.”</p>
+<p>Nhìn Trần Chí, Tô Triết mấy người vui sướng bầu không khí, Từ Trí cũng lộ ra tươi cười, hắn nhìn trước mắt này mấy người, bọn họ ở trước màn ảnh, chính cười đến làm càn mà vui sướng.</p>
+<p>Tại đây một đêm trở lại Làng Olympic ký túc xá trung lúc sau, nằm ở trên giường Tô Triết rốt cuộc cảm thấy một tia hoảng hốt.</p>
+<p>Ở đêm nay trận này đua tiếp sức kết thúc giờ phút này, hắn lần đầu tiên Thế vận hội Olympic lịch trình, cũng theo đó kết thúc.</p>
+<p>Thế vận hội Olympic, cỡ nào kỳ diệu lại làm người tim đập thình thịch từ ngữ.</p>
+<p>Hắn nhắm hai mắt, từ năm trước mùa hè cho đến năm nay giờ phút này, từng bức họa ở hắn trong óc bên trong xẹt qua —— lần đầu trở về hắn, trở về sau lần đầu dự thi hắn, trở về sau lần đầu đoạt giải hắn.</p>
+<p>Bất tri bất giác trung, từ lúc ban đầu cái kia nhỏ bé khởi điểm bắt đầu, hắn thế nhưng đã đi bước một đi tới hiện giờ như vậy độ cao.</p>
+<p>Huấn luyện, học tập, thi đấu, thậm chí còn ở ngủ mơ bên trong cũng một mình một người ở cái kia trống trải huấn luyện không gian bên trong, vì mỗi một giây, mỗi một hào giây thành tích, không ngừng mà điều chỉnh, không ngừng mà hướng về phía trước giãy giụa.</p>
+<p>Này nghe tới là cỡ nào khô khan, nhạt nhẽo lịch trình, nhưng là hắn lại trầm mê trong đó, tùy ý thời gian xẹt qua cũng không hề hay biết.</p>
+<p>Tên là ’ tiến bộ ’, ’ thắng lợi ’ cùng ’ đột phá ’ này đó từ ngữ, hương vị thật sự quá mức thơm ngọt, thế cho nên hắn ở nhấm nháp đến lúc sau, sẽ không bao giờ nữa bỏ được buông chúng nó.</p>
+<p>Mà hắn may mắn nhất chính là, được đến sa điêu hệ thống phụ trợ, làm hắn có thể dùng ’ nỗ lực ’, ’ chăm chỉ ’ cùng ’ mồ hôi ’, đi bước một đổi lấy những cái đó thơm ngọt thành công.</p>
+<p>Loại mùi vị này, thực sự là làm người muốn ngừng mà không được.</p>
+<p>Ở thuộc về hắn Thế vận hội Olympic lịch thi đấu toàn bộ kết thúc giờ phút này, Tô Triết rốt cuộc lại đã lâu địa điểm vào hệ thống bên trong, chính thức tiếp thu toàn bộ Thế vận hội Olympic lịch thi đấu bên trong khen thưởng kết toán.</p>
+<p>“Đinh.</p>
+<p>Thế vận hội Olympic lịch thi đấu thi đấu thành tựu kết toán.</p>
+<p>1, tiến vào Thế vận hội Olympic nam tử trăm mét chạy nước rút trận chung kết thành tựu đạt thành</p>
+<p>2, tiến vào Thế vận hội Olympic nam tử trăm mét chạy nước rút tiền tam thành tựu đạt thành</p>
+<p>3, tiến vào Thế vận hội Olympic vượt rào 110 mét hạng mục trận chung kết thành tựu đạt thành</p>
+<p>4, tiến vào Thế vận hội Olympic vượt rào 110 mét hạng mục tiền tam thành tựu đạt thành</p>
+<p>5, tiến vào Thế vận hội Olympic nam tử 4*100 mễ tiếp sức trận chung kết thành tựu đạt thành</p>
+<p>5, tiến vào Thế vận hội Olympic nam tử 4*100 mễ tiếp sức tiền tam thành tựu đạt thành</p>
+<p>6, đổi mới nam tử trăm mét chạy nước rút cùng vượt rào 110 mét hạng mục kiêm hạng tuyển thủ tốt nhất thành tích</p>
+<p>Trở lên khen thưởng đã toàn bộ thống nhất kết toán phát</p>
+<p>Khen thưởng</p>
+<p>Hoàn mỹ thần tượng huấn luyện không gian huấn luyện khi số *600 giờ</p>
+<p>Chiều sâu học tập hình thức huấn luyện khi số *60 giờ</p>
+<p>Đĩa quay rút thăm trúng thưởng số lần *3</p>
+<p>Tự do thuộc tính điểm *6”</p>
+<p>Ở nhìn đến đĩa quay rút thăm trúng thưởng cái này khen thưởng thời điểm, Tô Triết không khỏi nhớ tới thượng một lần rút thăm trúng thưởng, cái này sa điêu hệ thống, không chỉ có vì hắn phóng thủy đưa lên màn ảnh biểu hiện lực huấn luyện chương trình học, càng là lấy ’ không chút nào rõ ràng ’ thái độ, làm hắn trừu trúng lúc ấy nhu cầu cấp bách dùng một lần thân thể chữa trị quang hoàn.</p>
+<p>Tuy rằng hắn thẳng đến hôm nay vẫn là ở trong lòng xưng hô nó vì sa điêu hệ thống, nhưng là trong lòng kỳ thật cũng sớm đã đem hệ thống đương thành một cái đáng giá tương giao đồng bọn.</p>
+<p>Đang xem qua hệ thống phát khen thưởng sau, Tô Triết rất có hứng thú địa điểm khai đĩa quay rút thăm trúng thưởng.</p>
+<p>Lấy hắn hiện giờ trạng thái, kỳ thật cũng không có gì đặc biệt sở cần kỹ năng, hiện tại click mở rút thăm trúng thưởng, càng có rất nhiều ôm thú vị tâm lý —— lại hoặc là nói, trừu tạp chi tâm đột nhiên rơi xuống, quyết định trừu nó một phát thử xem.</p>
+<p>Lúc này đây click mở đĩa quay khi, mặt trên biểu hiện một loạt diễn nghệ tài nguyên cùng vận động kỹ xảo, lòng mang tùy ý điểm điểm xem tâm tình, Tô Triết tùy tay chọc một chút rút thăm trúng thưởng lựa chọn, sau đó liền thấy trước mắt đĩa quay bắt đầu từ một đường mau chuyển, đến dần dần bằng phẳng, cuối cùng, đĩa quay kim đồng hồ dừng ở một cái làm hắn cảm thấy có chút mê hoặc kỹ năng thượng —— băng thượng nhảy lên kỹ năng.</p>
+<p>Cái này kỹ năng, chẳng lẽ là hắn biết đến cái kia, hoa hoạt băng thượng nhảy lên kỹ năng?</p>
+<p>Tô Triết ngẩn người, nếu nói, phía trước trừu đến xạ kích kỹ năng, ít nhất hắn ở hằng ngày ngẫu nhiên còn có thể tiếp xúc đến nói, như vậy băng thượng nhảy lên cái này kỹ năng, với hắn mà nói, liền căn bản từ mùa hạ Thế vận hội Olympic hạng mục nhảy lên tới rồi mùa đông Thế vận hội Olympic hạng mục bên trong.</p>
+<p>Này trong đó chiều ngang, làm Tô Triết hơi có chút dở khóc dở cười.</p>
+<p>Mà cùng với cái này kỹ năng xuất hiện, sa điêu hệ thống quả nhiên đồng thời vì hắn tuyên bố chỉ định kỹ năng huấn luyện chương trình học, làm hắn cần phải muốn đem cái này kỹ năng học tập thấu triệt.</p>
+<p>Thực hảo, này hoàn toàn phù hợp sa điêu hệ thống một quán điều tính.</p>
+<p>Vì phòng ngừa lại xuất hiện thượng một hồi cần thiết mạnh mẽ học tập xong các loại chương trình học phần ăn thảm thống tình huống xuất hiện, Tô Triết quyết đoán mà rời khỏi rút thăm trúng thưởng hệ thống, ngược lại mở ra hắn ngày thường ban đêm huấn luyện sử dụng thần tượng huấn luyện không gian.</p>
+<p>Mà lúc này, huấn luyện không gian bên trong quả nhiên đã biến thành một mảnh băng lên sân khấu mà, phụ trách chương trình học chỉ đạo hệ thống huấn luyện viên cũng đã canh giữ ở giữa sân, chờ hắn đã đến.</p>
+<p>Hảo đi, chính mình tay thiếu trừu thưởng, khóc lóc cũng muốn đem chương trình học học xong.</p>
+<p>Ôm loại này tráng sĩ đoạn cổ tay tâm thái, Tô Triết lắc đầu, tiểu tâm mà từ băng thượng đi hướng hệ thống huấn luyện viên nơi phương vị.</p>
+<p>Tác giả có lời muốn nói _( з” ∠)_ nằm yên, ta, rốt cuộc càng xong rồi, bởi vì có chút việc, ngày mai buổi sáng yêu cầu đuổi phi cơ, đêm nay chuẩn bị đồ vật có điểm nhiều, vì thế buổi tối gõ chữ thời gian thật sự không quá đủ</p>
+<p>Ngày mai người ở nơi khác, sẽ mang notebook gõ chữ, nhưng là ngày mai đổi mới thời gian cũng không quá xác định, bất quá khẳng định chính là nhất định sẽ đổi mới lạp ~~ moah moah!</p>
+<p>Khụ khụ khụ, tuy rằng, dư lại nội dung không nhiều lắm, nhưng là, trên thế giới này không phải còn nổi danh kêu phiên ngoại đồ vật sao!</p>
+<p>Trước mắt đã muốn viết phiên ngoại đã có không ít, bao gồm đại gia quan tâm xạ kích, xạ kích chính tái hẳn là sẽ đặt ở phiên ngoại trung, nhưng là bảo đảm xạ kích chính tái nội dung sẽ không thiếu với 10 chương (??? ), mặt khác, kỳ thật còn có một cái phi thường tưởng viết phiên ngoại……=w= cụ thể ngạnh là gì liền trước không nói ( bị đánh shi )</p>
+<p>Vì thế rác rưởi đồ ăn ta đi trước ngủ, 4 tiếng đồng hồ chờ lên đuổi hôi cơ…… Đại gia đêm mai thấy! ~~~</p>
+<p>——————————</p>
+<p>Cảm tạ vì ta đầu ra bá vương phiếu hoặc tưới dinh dưỡng dịch tiểu thiên sứ nga ~</p>
+<p>Cảm tạ đầu ra [ địa lôi ] tiểu thiên sứ Lãng mạn đến chết không phai, tả du, xgd, douzipmy, nửa chén trà nhỏ 1 cái;</p>
+<p>Cảm tạ tưới [ dinh dưỡng dịch ] tiểu thiên sứ</p>
+<p>Mùa hè tiểu quất miêu 185 bình; như tiểu sinh 100 bình; lưu li & tâm vũ 83 bình; ngày Hàn?h??vx wzxan1 60 bình; Mạc đại nhân, lizy2002, tả du 50 bình; chứa kỳ 47 bình; tịch tuyết dung, Natalia, cái chai 30 bình; lôi lôi 24 bình; mỹ thiện 23 bình; nick name gì đó còn không có tưởng hảo, ta là một con gà con, Ezreal 20 bình; mặc mặc mạc mạch nhiên 14 bình; liusuliusu, tĩnh chiêu, wskiss419, chín cùng, hề tiểu đoá, bingruo, tia nắng ban mai, Lam Điền ngọc khói bay 10 bình; Hc 6 bình; cam lặc, yuffie, bubu, kiều, ngươi nếu mạnh khỏe, đó là trời nắng 5 bình; mc mộng mộng, hoa tàn, tự tương tích 3 bình; yếm có đường, dice tương, mê thất ở người sanh trung, nữ vương 2 bình; mộc mộc tịch, cửu, Đặng Đặng 1 bình;</p>
+<p>Phi thường cảm tạ đại gia đối ta duy trì, ta sẽ tiếp tục nỗ lực!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong123.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong125.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "roi-khoi-gioi-giai-tri-sau-ta-thanh-dai-minh-tinh";
+const NOVEL_TITLE = "Rời khỏi giới giải trí sau ta thành đại minh tinh";
+const CHAPTER_TITLE = "Chương 124";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
