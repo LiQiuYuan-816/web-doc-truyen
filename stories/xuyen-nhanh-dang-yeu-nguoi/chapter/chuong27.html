@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 27</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        [ Xuyên nhanh ] Đáng Yêu Ngươi
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 27</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong26.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong28.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Thời Văn đã đến dẫn phát rồi tân một đợt nhiệt nghị, giảm phai nhạt Tô Tô đã đến khi khiến cho đề tài nhiệt độ, Tô Tô không dấu vết mà nhẹ nhàng thở ra. Nghe ngồi cùng bàn nữ sinh ở thảo luận cao trung thời điểm Thời Văn là nhiều ít huyễn khốc soái.</p>
+<p>“Thời Văn vẫn là bộ dáng cũ a, lãnh đạm cấm dục nam a! Trước hai lần đồng học hội hắn cũng không có tới, như thế nào lần này Lưu Lị tới, Tô Tô cùng Thời Văn đều tới?”</p>
+<p>“Thời Văn thật là càng dài càng soái a! Đáng tiếc soái ca đều chướng mắt chúng ta những người này, ai!”</p>
+<p>“Đừng nghĩ, nhân gia thích đều là ban hoa hảo sao? Ngươi xem ban hoa Lưu Lị cũng là càng ngày càng có nữ nhân vị, thật là người so người sẽ tức chết a!”</p>
+<p>“Nhưng không, lớn lên đẹp, công tác lại hảo! Nghe nói nàng ở một nhà gọi là gì Người Khổng Lồ Xanh trang web viết văn, một quyển sách 20 vạn tự là có thể kiếm cái mười mấy vạn, hơn nữa cái gì xuất bản a, cải biên phim ảnh a, một năm mấy trăm vạn không chạy a!”</p>
+<p>“Thiệt hay giả a? Dễ dàng như vậy kiếm? Ngươi đương tiền là gió to quát tới a?”</p>
+<p>“Ta cũng là nghe đồng học giảng, ai biết có phải hay không thật sự giống nàng nói như vậy hảo? Bất quá nàng viết văn kiếm tiền nhưng thật ra thật sự! Đúng rồi, mấy ngày trước đây chúng ta ban khác một người nữ sinh còn đã phát nàng văn liên tiếp cho ta, ta cho ngươi xem hạ, viết hình như là đồng tính luyến ái, gọi là gì Yêu Thầm Thành Thật. Ta tuy rằng không phải hủ nữ, nhưng là cảm thấy còn khá xinh đẹp. Nếu đổi thành nam nữ liền càng tốt.”</p>
+<p>“Phải không? Ta cũng đến xem!”</p>
+<p>Yêu Thầm Thành Thật? Lưu Lị? Lưu Ly Tử?</p>
+<p>Tô Tô duỗi tay điểm điểm chính mình khóe mắt nốt ruồi đỏ, tố bạch ngón tay cùng về điểm này quyến rũ giao hòa chiếu sáng lẫn nhau, xem đối diện các nữ nhân đều nhịn không được nuốt nuốt nước miếng.</p>
+<p>A, thế giới nói lớn không lớn, nói nhỏ không nhỏ, ngươi nói như thế nào liền như vậy có duyên đâu?</p>
+<p>“Thời Văn, đã lâu không thấy, gần nhất quá đến thế nào?” Lưu Lị tay cầm rượu vang đỏ ly, nhẹ nhàng tới lui bên trong rượu vang đỏ, nàng trang dung tinh xảo, da thịt tái tuyết, nhìn qua mỹ diễm động lòng người.</p>
+<p>Thời Văn dựa vào ghế dựa thượng, ánh mắt lãnh đạm mà ừ một tiếng, nhưng thật ra kêu Khổng Tân Hải xem vò đầu bứt tai, hận không thể thay thế hắn cùng nữ thần nói chuyện.</p>
+<p>“Lưu Lị a, ngươi không phải nói có chuyện tìm Thời Văn hỗ trợ sao? Liền cái kia trên mạng sao chép sự tình?”</p>
+<p>Tô Tô lỗ tai giật giật, “Hệ thống, Lưu Lị bên kia ngươi có thể cho ta toàn bộ hành trình ghi âm xuống dưới sao?” Hắn nhưng thật ra muốn dùng di động lục, nhưng là như vậy quá rõ ràng, dễ dàng bị người bên cạnh phát hiện.</p>
+<p>【 không thành vấn đề! 】</p>
+<p>Tô Tô vừa lòng mà cười cười, lấy ra di động giả vờ ở chơi trò chơi, không tiếng động mà cự tuyệt người khác bắt chuyện, lỗ tai dựng lão trường, nghe sau lưng ba người nói chuyện.</p>
+<p>“Nói lên, ta cũng không nghĩ tới sự tình sẽ biến thành như vậy!” Lưu Lị buông rượu vang đỏ ly, có chút u buồn mà hợp lại nổi lên mày, lưỡng đạo mày đẹp tinh tế, không phải đương thời nhất lưu hành Hàn thức một chữ mi, như vậy ngược lại càng hiện ra nàng đỡ phong nhược liễu nhu nhược cảm.</p>
+<p>“Làm võng văn tác giả, nguyên sang quyền lợi thực có thể được đến bảo đảm, ta cũng không nghĩ tới một cái vô danh tiểu tốt sao chép ta văn chương còn có thể như vậy đúng lý hợp tình, nàng tìm không ít thuỷ quân tới tạo thế, còn ở ta văn hạ, trên Weibo nói ẩu nói tả, ở ta trên người bát nước bẩn. Ta thật nhiều fans đều bởi vì nàng bịa đặt nói, cởi phấn, trái lại mắng ta. Ta cũng không biết thế giới này làm sao vậy? Như thế nào sẽ có người như vậy mặt dày vô sỉ!”</p>
+<p>Tô Tô mỉm cười chọc trên màn hình di động cương thi, thuận tay liền cầm cái địa lôi nổ chết nó, thật đúng là diễn nhiều a!</p>
+<p>Lưu Lị nói như vậy thời điểm, một chút đều không lo lắng Khổng Tân Hải bọn họ sẽ không tin, không phải võng văn vòng người, không xem võng văn người, sẽ không biết bên trong có cái gì miêu nị. Mấy năm trước một bộ sao chép kịch hỏa đến không được, võng văn trong giới hắc cái kia sao chép tác giả hắc không được thời điểm, xem phim truyền hình như cũ không biết cái này tác giả sao chép, ngược lại là lực đĩnh nàng.</p>
+<p>Cho nên nói, nàng hắc bạch điên đảo thời điểm, một chút đều không hoảng hốt.</p>
+<p>Không phải hỗn vòng, như thế nào biết sao chép định nghĩa? Chỉ cần nàng vào trước là chủ, liền tính Thời Văn nhìn văn chương hạ bình luận lại như thế nào, vẫn là sẽ đứng ở nàng bên này.</p>
+<p>“Thời Văn, ngươi có thể giúp giúp ta sao? Trang web không có phán nàng sao chép, người đọc đều bị nàng mê hoặc, ta cũng là không có biện pháp, mới muốn tìm người hỗ trợ. Vừa lúc nghe được Khổng Tân Hải nói ngươi hiểu máy tính, ta mới nghĩ làm ngươi hỗ trợ một chút.” Lưu Lị nhu tình như nước mà nhìn hắn, đồ lông mi cao, thượng mắt ảnh mà có vẻ càng thêm thủy uông đôi mắt tràn ngập khẩn cầu.</p>
+<p>Xem Khổng Tân Hải là tâm đều mềm, vội không ngừng mà đẩy đẩy vẻ mặt lãnh đạm Thời Văn nói “Ngươi xem mọi người đều là đồng học, ngươi liền giúp giúp nàng bái! Cái loại này sao chép người nhất ghê tởm, Thời Văn ngươi không phải cũng chán ghét người như vậy sao? Phía trước không phải có người sao chép ngươi trình tự sao? Đây đều là giống nhau a!”</p>
+<p>“Cái kia tác giả gọi là gì?”</p>
+<p>Lưu Lị đôi mắt hơi hơi sáng ngời, “Nàng kêu Mạc Tử. Ta cũng không nghĩ ngươi đối nàng làm chút cái gì, chính là hack nàng máy tính, cảnh cáo nàng một chút. Nếu có thể bắt được nàng sao chép hoặc là mặt khác cái gì nhược điểm, phiền toái ngươi giao cho ta một chút. Cứ như vậy, về sau nàng cũng không dám quang minh chính đại mà sao chép! Lại còn có có thể những người khác thấy rõ nàng gương mặt thật.”</p>
+<p>Thời Văn lấy ra di động, làm IT công tác giả, không có máy tính khi, di động cũng có thể vận tác, hắn đầu tiên là lục soát Weibo, tìm được rồi cái kia kêu Mạc Tử người, một đường nhìn nàng Weibo, thuận tiện sờ đến Lưu Lị Weibo thượng.</p>
+<p>“Ngươi kêu Lưu Ly Tử?”</p>
+<p>“Đối!” Lưu Lị gật gật đầu, “Ta đem nàng chuyên mục phát ngươi đi, như vậy ngươi có thể trực tiếp tìm được nàng IP địa chỉ. Ngươi số WeChat là nhiều ít?”</p>
+<p>Thời Văn không có trả lời, hắn một mực tam hành mà xem xong rồi sở hữu, sau đó lại sờ vào Người Khổng Lồ Xanh trang web, đem hai thiên tiểu thuyết tiền tam chương đều xem một lần, thuận tiện lật xem một chút phía dưới bình luận.</p>
+<p>Thời Văn chậm chạp không có trả lời, Lưu Lị cũng không thúc giục hắn, ngược lại là Khổng Tân Hải xum xoe mà nói cho Lưu Lị, trong đàn cái nào người là Thời Văn, làm nàng thêm một chút. Lưu Lị xin, nhưng là Thời Văn cũng không có thông qua nàng bạn tốt xin.</p>
+<p>Ngược lại là chính mình tiêu phí hơn mười phút thời gian hiểu được ngọn nguồn, giương mắt nhìn thấy Lưu Lị tươi cười tràn đầy bộ dáng, nhăn nhăn mày, đưa điện thoại di động giao cho Khổng Tân Hải, “Ngươi nhìn xem, xem xong rồi nói cho ta kết quả.”</p>
+<p>Khổng Tân Hải không hiểu ra sao, bất quá vẫn là ngoan ngoãn mà làm theo.</p>
+<p>Lưu Lị có chút khó hiểu, nhưng là đối với Thời Văn giống như khắc băng giống nhau lạnh nhạt sườn mặt khi, lại không dám hỏi cái gì.</p>
+<p>Mấy phút đồng hồ sau, Khổng Tân Hải một bộ khiếp sợ bộ dáng, “Ngọa tào, trên thế giới này thế nhưng có như vậy không biết xấu hổ người. Này 《 Yêu Thầm Thành Thật 》 rõ ràng chính là sao chép 《 Thời Gian Giao Cho Ngươi Ôn Nhu 》 a, cái gì bảng màu gì đó, cái gì thạch chuỳ gì đó, tuy rằng ta không hiểu, nhưng là xem tiền tam chương, lại xem phát biểu thời gian, thực rõ ràng chính là 《 Yêu Thầm Thành Thật 》 cái kia tác giả có vấn đề a, như vậy rõ ràng sự tình còn dùng làm cho như vậy phức tạp sao? Ta cái này thường dân đều xem rõ ràng, cái kia kêu Mạc Tử người khẳng định thua định rồi!”</p>
+<p>Nói xong lúc sau, hắn đưa điện thoại di động trả lại cho Thời Văn, sau đó hướng về phía Lưu Lị chó săn mà cười nói “Ngươi yên tâm, Thời Văn nhất định sẽ giúp ngươi báo thù! Ta cũng sẽ giúp ngươi ở Weibo thượng mắng người kia.”</p>
+<p>Lưu Lị sắc mặt khó coi đáng sợ, đặt ở đầu gối ngón tay hung hăng mà véo ở thịt, Khổng Tân Hải hậu tri hậu giác phát hiện không đúng, hắn nhìn xem Lưu Lị lại nhìn xem Thời Văn, thanh âm không tự giác mà thu nhỏ không ít, “Làm sao vậy? Ta nói không đúng sao?”</p>
+<p>Thời Văn khó được nói một câu trường lời nói, “Mạc Tử viết chính là 《 Thời Gian Giao Cho Ngươi Ôn Nhu 》, mà Lưu Lị viết chính là 《 Yêu Thầm Thành Thật 》. Đã hiểu sao?”</p>
+<p>Khổng Tân Hải không thèm để ý nói “Ta đương nhiên biết.” Chỉ là qua ba giây, hắn mới phản ứng lại đây, mở to hai mắt nói “Ngươi nói, Mạc Tử viết chính là 《 Thời Gian Giao Cho Ngươi Ôn Nhu 》, mà Lưu Lị viết chính là 《 Yêu Thầm Thành Thật 》?”</p>
+<p>Thời Văn gật gật đầu, “Không sai!”</p>
+<p>Khổng Tân Hải nghẹn họng nhìn trân trối, lấy một bộ xuẩn dạng nhìn xem Lưu Lị, nhìn nhìn lại vẻ mặt đạm nhiên Thời Văn, nhất thời nói không ra lời.</p>
+<p>Lưu Lị bị xem có chút nan kham, nàng hít một hơi thật sâu, sau đó có chút thương tâm nói “Ngươi xem, các ngươi cũng cho rằng như thế đúng hay không? Mạc Tử miệng có bao nhiêu lợi hại, có thể đem hắc bạch điên đảo, liền các ngươi đều tin.”</p>
+<p>Khổng Tân Hải theo bản năng mà trả lời “Ta không thấy bình luận a, như vậy nhiều tự, ta nhìn mệt, liền nhìn tiền tam chương.”</p>
+<p>Lưu Lị sắc mặt càng thêm nan kham, xanh trắng một mảnh, liền trên mặt má hồng đều mau thắng không nổi cái loại này tái nhợt.</p>
+<p>Thời Văn cuối cùng tổng kết nói “Thị phi hắc bạch xem ra mọi người đều là rõ ràng, ngươi hiểu, ta cũng hiểu. Ta nhìn trên mạng, bình luận trên cơ bản là nghiêng về một phía, trừ bỏ ngươi những cái đó fan trung thành. Sự tình đều đã như vậy sáng tỏ, ngươi cần gì phải lại làm mặt khác đem sự tình làm đến càng không xong. Xem ở đồng học phân thượng, ta khuyên ngươi một câu, hướng cái kia tác giả nói lời xin lỗi đi! Tổng so về sau chúng bạn xa lánh muốn hảo.”</p>
+<p>Thời Văn nói tuy rằng nhẹ nhàng bâng quơ, lại như là một cái vang dội cái tát đánh vào Lưu Lị trên mặt, làm nàng cảm thấy nóng rát đau, lại còn có tao đến hoảng, nàng như thế nào cũng không nghĩ tới, hai người kia sẽ như vậy không cho nàng mặt mũi. Liền tính là biết nàng là sao chép, xem ở nàng là đồng học lại ái mộ nàng phân thượng, không nên không nói hai lời mà liền giúp nàng, như thế nào còn lại ở chỗ này chỉ trích nàng?</p>
+<p>Khổng Tân Hải xem nàng khổ sở sắp khóc ra tới bộ dáng, có chút không đành lòng nói “Lưu Lị a, ngươi cao trung thời điểm viết làm văn liền như vậy lợi hại, vì cái gì muốn sao người khác đâu? Lần này sự tình coi như là ngươi bị ma quỷ ám ảnh, lần sau chính mình lại nỗ lực, vẫn là có thể viết ra làm mọi người đều thích tác phẩm.”</p>
+<p>Lưu Lị cắn răng, kiên trì mình thấy nói “Mặc kệ nói như thế nào, nàng chính là sao chép ta tác phẩm, các ngươi không giúp ta, ta còn sẽ tìm người khác hỗ trợ.” Tiêu tiền mướn người, chẳng lẽ còn sẽ quản ngươi có phải hay không sao chép? Nếu không phải Khổng Tân Hải chính mình chủ động tìm nàng nói Thời Văn sẽ máy tính, nàng hiện tại cũng sẽ không ném lớn như vậy cái mặt.</p>
+<p>Lưu Lị oán hận mà nhìn Khổng Tân Hải liếc mắt một cái, đứng dậy liền đi đến một khác bàn thay đổi vị trí, người khác hỏi nàng khi, nàng cố nén cả giận, hai người vẫn luôn quấn lấy nói chuyện, nàng cảm thấy có chút phiền.</p>
+<p>Hỏi chuyện người cực kỳ hâm mộ mà nhìn nàng một cái, làm Lưu Lị thoải mái không ít.</p>
+<p>Tô Tô toàn bộ hành trình đều đang nghe, hệ thống toàn bộ hành trình đều ở ghi âm, thậm chí còn đem Lưu Lị ở một khác bàn nói cũng ghi âm, lại còn có nói cho hắn, mừng rỡ Tô Tô cười đến đều mau chịu không nổi.</p>
+<p>Này mặt thật đúng là chính là real đại a!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong26.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong28.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "xuyen-nhanh-dang-yeu-nguoi";
+const NOVEL_TITLE = "[ Xuyên nhanh ] Đáng Yêu Ngươi";
+const CHAPTER_TITLE = "Chương 27";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

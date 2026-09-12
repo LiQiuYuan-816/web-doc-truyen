@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 17</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        [ Xuyên nhanh ] Đáng Yêu Ngươi
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 17</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong16.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong18.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Lục Tử Ngọc vẻ mặt nghiêm túc, từ khuôn mặt thượng xem phảng phất thần thánh không thể xâm phạm, nhưng là thuộc hạ động tác lại làm Tô Tô che lại cái miệng nhỏ, lộ ra một đôi nước mắt lưng tròng mắt to, hắn đuôi mắt tung bay, phiếm hồng điểm điểm, vừa thấy giống như là bị khi dễ tàn nhẫn đáng thương bộ dáng.</p>
+<p>“Ta có nghiêm túc mà đang nói, là ngươi —— là ——” hắn mềm mại thanh âm đột nhiên tiêm tế lên, phát ra chạy dài mà hoặc nhân làn điệu, tiểu thân mình run run rẩy rẩy, trong mắt hơi nước đều mau nồng đậm mà muốn đem Lục Tử Ngọc cấp bao phủ.</p>
+<p>Này tiểu bộ dáng thật nhận người yêu thương, Lục Tử Ngọc một bên như vậy nghĩ, sau đó mềm như bông mà ngã vào chính mình trên người, phát ra rất nhỏ lại dồn dập thanh âm.</p>
+<p>Tên này ——</p>
+<p>Tô Tô thẹn quá thành giận mà nắm chặt nắm tay, “Hệ thống, nói tốt ôn nhu nho nhã đâu? Rõ ràng chính là cái đại lưu manh!!!”</p>
+<p>【 ký chủ, lấy độc trị độc, ngươi cũng thượng! 】</p>
+<p>Tô Tô ngắm ngắm hắn, ở hệ thống xúi giục hạ, nhanh chóng mà duỗi tay chạm vào hạ, ở Lục Tử Ngọc đảo hút khẩu khí trong nháy mắt kia, cầm lấy quần áo liền cùng một con bị xà đuổi theo con thỏ, lộc cộc mà bỏ chạy vào phòng tắm, chỉ dư Lục Tử Ngọc vẻ mặt màu xanh lơ mà nghiến răng nghiến lợi.</p>
+<p>Cái này tiểu sắc quỷ, ngươi xong rồi!</p>
+<p>Lục Tử Ngọc thong thả ung dung mà đi đến Tô Tô vị trí, lấy khăn giấy xoa xoa tay, lúc này, ngoài phòng truyền đến một trận tất tốt thanh, sau đó cửa mở, Ngô Tư Khải ba người dẫn theo đồ ăn vặt đã trở lại. Lục Tử Ngọc thấy vậy, nhanh chóng đem những cái đó ảnh chụp nhét vào chính mình túi.</p>
+<p>Ở nhìn thấy Lục Tử Ngọc một người ngốc tại bọn họ phòng ngủ khi, Ngô Tư Khải sửng sốt, “Tô Tô đâu?”</p>
+<p>Lục Tử Ngọc cười cười, “Ở phòng tắm đâu!”</p>
+<p>Hoàng Tinh đem đồ vật bang mà một tiếng ném tới trên mặt đất, ngồi ở trên vị trí của mình cười lạnh nói “Nên không phải là muốn làm cái gì ghê tởm sự tình, cho nên chạy đến trong phòng tắm đi chuẩn bị đi?”</p>
+<p>Lục Tử Ngọc nghe vậy, lạnh mặt, ánh mắt u ám mà nhìn về phía Hoàng Tinh, Hoàng Tinh cười lạnh nhìn thẳng hắn, trong mắt toàn là chán ghét cùng khinh thường, trước đó, Lục Tử Ngọc cùng Hoàng Tinh cũng chỉ là hời hợt chi giao, hai người tuy rằng không thân, nhưng quan hệ cũng sẽ không kém như vậy. Mà hiện tại này hết thảy tựa hồ đều là từ Tô Tô thay đổi bắt đầu.</p>
+<p>Lục Tử Ngọc nghĩ đến Tô Tô chụp những cái đó ảnh chụp, lại nghĩ tới thứ bảy buổi tối hắn đối Tô Tô nói năng lỗ mãng, phản kích nói “Chúng ta là tình lữ, mặc kệ làm cái gì thân mật hành động cùng ngươi lại có quan hệ gì đâu?”</p>
+<p>Hoàng Tinh trong mắt tàn khốc chợt lóe mà qua, “Ngại ta mắt, ghê tởm!”</p>
+<p>Lục Tử Ngọc khí định thần nhàn nói “Vậy ngươi thừa nhận năng lực cũng quá kém, bởi vì về sau ngươi khả năng gặp được số lần sẽ càng nhiều a, bất quá, ngươi ghét không chán ghét đều không sao cả, rốt cuộc chúng ta ai cũng không đem ngươi đương hồi sự.”</p>
+<p>“Ngươi ——” Hoàng Tinh khí tạc, mắt thấy suy nghĩ muốn động thủ đánh người, bị Lưu Dịch một phen cấp ngăn cản, “Đừng xúc động a!”</p>
+<p>Ngô Tư Khải đứng ở một bên xem, tấm tắc lắc đầu, Hoàng Tinh chính là miệng tiện, nhân gia hảo hảo đứng cũng không trêu chọc ngươi cái gì, hiện tại bị ngược thống khoái đi!</p>
+<p>Lưu Dịch cùng Hoàng Tinh là bạn cùng phòng, hiển nhiên cùng hắn cảm tình muốn so Lục Tử Ngọc hảo, nhưng là lại như thế nào hảo, hắn cũng không có biện pháp nói thẳng Lục Tử Ngọc thật quá đáng, người sáng suốt đều có thể nhìn ra tới là Hoàng Tinh chính mình trước khiêu khích.</p>
+<p>Lưu Dịch cũng là phiền thực, “Được rồi, ngươi chính là lại chán ghét, cũng cho ta nhẫn mấy ngày. Tô Tô không phải nói muốn dọn phòng ngủ sao? Liền mấy ngày công phu ngươi đều nhịn không nổi sao?”</p>
+<p>Lục Tử Ngọc xen mồm nói “Không cần mấy ngày rồi, hắn đêm nay thượng liền dọn.” Nói xong, hắn hướng ba cái có chút kinh ngạc người cong cong khóe môi, “Ta chính là tới cấp hắn cùng nhau hỗ trợ.”</p>
+<p>Nói xong, hắn cầm lấy instant camera, cởi giày liền hướng lên trên phô bò đi, mới vừa dẫm lên đệ nhất giai thang lầu, lại quay đầu đối với đứng ở chỗ đó cả người tản ra áp suất thấp Hoàng Tinh nói “Miệng tiện người tốt nhất quản hảo miệng mình, tiểu tâm họa là từ ở miệng mà ra.”</p>
+<p>Hoàng Tinh hưu mà quay đầu, lửa giận trong mắt hắn thiêu đốt, Lục Tử Ngọc lại là cười nhạo một tiếng, không để ý đến.</p>
+<p>Tô Tô nói với hắn qua, hắn cùng bạn cùng phòng đã sớm nói khai, lẫn nhau ân oán đã xong, nhưng là Hoàng Tinh lại như cũ như vậy chán ghét Tô Tô, thậm chí so với trước kia còn khoa trương, hắn dùng đến như vậy sinh khí sao? Khí Tô Tô biến hóa lớn như vậy đảo mắt liền nói không thích hắn, lòng tự trọng ở quấy phá, vẫn là nói hắn tâm thái đã xảy ra biến hóa, đột nhiên thông suốt, thích Tô Tô?</p>
+<p>Nhưng là mặc kệ loại nào, Hoàng Tinh chú định cũng chỉ là nhảy nhót vai hề.</p>
+<p>Tô Tô ở trong phòng tắm đổi hảo quần áo ra tới khi, phòng ngủ không khí chính cương, Ngô Tư Khải dựa vào ven tường, Lưu Dịch vỗ vỗ Hoàng Tinh bả vai, sắc mặt không tốt, Hoàng Tinh nhìn thấy hắn ra tới thời điểm, trợn mắt giận nhìn, Tô Tô đương nhiên mà bỏ qua, liền một câu dò hỏi ý tứ đều không có, lo chính mình bắt đầu tiếp tục sửa sang lại.</p>
+<p>Ngô Tư Khải tung ta tung tăng mà theo đi lên, “Tô Tô, ngươi hôm nay thật sự dọn a?”</p>
+<p>“Đúng vậy! Ta cùng phụ đạo viên cũng nói qua, Lục Tử Ngọc bên kia còn có dư thừa giường ngủ, ta dọn đến hắn bên kia đi.”</p>
+<p>Ngô Tư Khải thầm than vài tiếng, theo sau nói “Tùy thời hoan nghênh ngươi tới xuyến môn chơi a!”</p>
+<p>Tô Tô cười cười, không có tiếp lời, chỉ là nói “Đồ vật có điểm nhiều, hôm nay buổi tối khả năng dọn không xong, này lúc sau một tuần ta khả năng sẽ thường thường trở về, không cần quá kinh ngạc nga.”</p>
+<p>“Sao có thể? Nói lời này quá khách khí!” Ngô Tư Khải lắc đầu nói.</p>
+<p>Hoàng Tinh cứng đờ mà ngồi trở lại chính mình vị trí, khai máy tính, ánh mắt tự do, nội tâm phẫn uất tựa như một con mãnh thú ở tùy ý va chạm hắn đại não, làm hắn cả người đều trở nên giống lôi khu giống nhau, hết sức căng thẳng.</p>
+<p>Lục Tử Ngọc cùng Tô Tô hợp tác, còn có Ngô Tư Khải hỗ trợ, thực mau liền đem giường đệm, quần áo đuổi kịp khóa phải dùng thư đều dọn tới rồi Lục Tử Ngọc phòng ngủ.</p>
+<p>Thành thật giảng, Tô Tô đồ vật cũng không nhiều, bỏ thêm một cái Ngô Tư Khải hỗ trợ, cư nhiên một buổi tối đem đồ vật đều cấp dọn xong rồi, dư lại, chính là Tô Tô chính mình lại sửa sang lại.</p>
+<p>“Thoạt nhìn, ngươi đều không cần hồi phòng ngủ lại dọn đồ vật!” Ngô Tư Khải nhìn kia một đống đồ vật cười khổ nói.</p>
+<p>Tô Tô nói “Lại không phải sinh ly tử biệt, về sau vẫn là muốn cùng nhau đi học a!”</p>
+<p>“Cũng là!” Ngô Tư Khải cười cười, đại khái như vậy mới là tốt nhất kết quả đi!</p>
+<p>Chờ Ngô Tư Khải sau khi trở về, Lục Tử Ngọc giúp hắn trải giường chiếu, Tô Tô tắc bắt đầu sửa sang lại chính mình mặt khác đồ vật, đồ vật không nhiều lắm, cho nên thực mau liền thu phục.</p>
+<p>Chờ hắn mệt đại thở dốc khi, Lục Tử Ngọc cầm chén nước cho hắn, “Nột, hiện tại đều thu phục, tới nói nói Hoàng Tinh vấn đề.”</p>
+<p>Tô Tô nằm liệt vị trí thượng, đầy đầu hãn, điều hòa gió lạnh đều sơ giải không được hắn khô nóng, “Hắn có cái gì hảo thuyết, nhìn liền phiền.”</p>
+<p>Lục Tử Ngọc nghiêm túc nhìn nhìn hắn thần sắc, giữa mày tất cả đều là nôn nóng chi sắc, ẩn ẩn mang theo vài phần chán ghét, hiển nhiên đối người này không có gì hảo cảm, “Hắn miệng như vậy tiện, ngươi liền như vậy nhịn?”</p>
+<p>Tô Tô hừ lạnh nói “Miệng tiện người thông thường chính mình sẽ đem chính mình tìm đường chết.”</p>
+<p>Cho nên sau lại Hoàng Tinh ở học sinh hội làm việc thời điểm, mỗi lần làm nhất vất vả, chính là công lao tất cả đều là người khác, khí hắn đều mau hộc máu.</p>
+<p>Bạch Sinh hồi phòng ngủ thời điểm, trong miệng còn hừ ca, một mở cửa nhìn thấy Tô Tô ngồi ở Lục Tử Ngọc bên người khi, còn trước mắt sáng ngời, hưng phấn mà cùng hắn chào hỏi, cho rằng hắn tới xuyến môn chơi. Nhưng là vừa thấy hắn vị trí thượng bày biện chỉnh tề thư tịch cùng với đối diện giường đệm phô tốt khăn trải giường khi, hắn sửng sốt, “Tô Tô là dọn đến chúng ta phòng ngủ?”</p>
+<p>Tô Tô đứng lên cười nói “Đúng vậy đúng vậy, về sau chính là bạn cùng phòng, đại gia nhiều hơn chỉ giáo!”</p>
+<p>Bạch Sinh còn tưởng nắm lấy hắn tay nhỏ tới cái hoan nghênh lễ, lại thấy Lục Tử Ngọc đứng lên, đem Tô Tô ấn trở lại vị trí thượng, chặn hai người hành động, “Nắm cái gì tay a, lại không phải lãnh đạo quốc gia gặp gỡ?”</p>
+<p>“Hắc, Lục Tử Ngọc, ngươi không đến mức đi! Nhỏ mọn như vậy.” Bạch Sinh buồn bực nói.</p>
+<p>Lục Tử Ngọc liếc mắt nhìn hắn, “Lăn đi tắm rửa, mau tắt đèn!”</p>
+<p>“Đến, ngươi có lễ, ngươi định đoạt!”</p>
+<p>Thấy Bạch Sinh vào phòng tắm, Tô Tô lúc này mới nói “Kỳ thật tình huống cũng không có ta tin tưởng như vậy hư, ít nhất vẫn là có người có thể đủ tiếp thu chúng ta.”</p>
+<p>Lục Tử Ngọc cong cong khóe môi, “Đó là tự nhiên, không phải tất cả mọi người cùng Lưu Dịch Hoàng Tinh giống nhau. Nhưng là cái dạng này người cũng không ở số ít.”</p>
+<p>“Ta biết, kỳ thật ta không có gì bằng hữu, ngược lại không sao cả. Nhưng thật ra ngươi, ngươi có như vậy nhiều nhận thức bằng hữu, lại là học sinh hội một viên, ta là sợ người khác cười ngươi.”</p>
+<p>Lục Tử Ngọc xoa bóp Tô Tô mặt, khiến cho kia lo lắng thần sắc thực mau liền vặn vẹo biến hình, hắn trừng mắt, mơ hồ không rõ nói “Ngươi đang làm gì?”</p>
+<p>“Ngu ngốc, nếu bởi vì cái này mà xa cách mà chán ghét ta, bằng hữu như vậy muốn lại có ích lợi gì? Liền tính là tới rồi về sau, cũng không phải là ta thành thật với nhau bạn tốt. Ta nếu làm, cũng đã nghĩ kỹ rồi về sau.”</p>
+<p>Tô Tô ừ một tiếng, nắm lấy Lục Tử Ngọc đặt ở trên mặt hắn tay, trong mắt phiếm tinh quang, “Ta cảm thấy ta thực may mắn.”</p>
+<p>Lục Tử Ngọc đem đầu để ở hắn trên trán, thiển màu nâu trong mắt mang theo tràn đầy ôn nhu, hắn thấp giọng nói “Ta cũng là!”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong16.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong18.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "xuyen-nhanh-dang-yeu-nguoi";
+const NOVEL_TITLE = "[ Xuyên nhanh ] Đáng Yêu Ngươi";
+const CHAPTER_TITLE = "Chương 17";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

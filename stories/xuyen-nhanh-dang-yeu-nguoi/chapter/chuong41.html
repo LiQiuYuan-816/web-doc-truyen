@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 41</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        [ Xuyên nhanh ] Đáng Yêu Ngươi
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 41</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong40.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong42.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Cáp Nhĩ Ba Lạp tiến vào thời điểm, Tô Tô đang theo Hồng Liên nói chuyện, nhưng thấy hắn thân xuyên khắc kim chọn sắc phấn váy lụa, đầu búi phong lưu độc đáo phu nhân búi tóc, trên chân xuyên chính là xanh đen đế rải hoa hồ điệp giày thêu, cả người kiều kiều nhược nhược, đẹp không sao tả xiết. Cùng thảo nguyên thượng nữ tử là hoàn toàn hai loại bất đồng mỹ cảm. Thảo nguyên nữ nhi là bôn phóng, nhiệt liệt, mà hắn còn lại là, uyển chuyển, tinh xảo, giống Cáp Nhĩ Ba Lạp gặp qua tinh mỹ đồ sứ, yêu cầu làm người phủng ở lòng bàn tay.</p>
+<p>Nếu không phải ngày hôm qua bọn họ đã sớm thâm nhập tiếp xúc qua, Cáp Nhĩ Ba Lạp khả năng thật sự sẽ cho rằng trước mặt người này chính là hàng thật giá thật nữ nhân. Nhưng là —— hắn ngoắc ngoắc môi, đối với tình huống hiện tại phi thường vừa lòng.</p>
+<p>“Đại Hãn ——” nhìn thấy Cáp Nhĩ Ba Lạp, Tô Tô vội vàng đứng dậy, bên cạnh Hồng Liên nhớ tới tối hôm qua bị Đại Hãn chi phối sợ hãi, cung cung kính kính mà hành lễ.</p>
+<p>Bởi vì hôn sự vội vàng, hơn nữa nguyên thân cái này công chúa cũng không được sủng ái, nếu không phải liên hôn yêu cầu một cái công chúa, chỉ sợ Tô Dao đến bây giờ đều không nhớ rõ hắn phụ vương còn có một cái nữ nhi tồn tại. Cũng bởi vậy, của hồi môn thị nữ trừ bỏ Hồng Liên ngoại, thế nhưng vô những người khác, cũng không ai dạy dỗ các nàng Khuyết tộc hành lễ phương thức.</p>
+<p>Cáp Nhĩ Ba Lạp cũng không ngại, nói lên, kia Tô Dao mượn đến hắn binh mã sau, thế nhưng nửa phần huynh muội chi tình đều không màng, chỉ chừa một cái thị nữ liền vội vội vàng mà rời đi. Tuy rằng trước kia đã biết này công chúa không được sủng ái, nào nghĩ đến Tô Dao mà ngay cả mặt ngoài công phu cũng lười đến làm, a, Tô Quốc hoàng đế!</p>
+<p>“Đi xuống đi!”</p>
+<p>“Là!” Hồng Liên lo lắng mà nhìn Tô Tô liếc mắt một cái, muốn nói lại thôi mà rời đi.</p>
+<p>Tô Tô đứng ở Cáp Nhĩ Ba Lạp trước mặt, thân hình càng thêm nhỏ xinh suy nhược, trên cổ là che giấu không được hoa lệ dấu vết, này vừa thấy khiến cho Cáp Nhĩ Ba Lạp trong lòng bốc hỏa, rõ ràng buổi sáng mới muốn quá hai lần, sao nhìn đến hắn liền tới kính!</p>
+<p>Muốn liền phải, Cáp Nhĩ Ba Lạp từ trước đến nay cường thế, nói một không hai, tuyệt không bạc đãi chính mình, này không, duỗi tay liền đem Tô Tô ôm lấy đè ở trên giường, cực nóng hôn lung tung mà khắc ở hắn trên mặt, mút trụ hắn cái miệng nhỏ liền bắt đầu không kiêng nể gì mà khi dễ hắn lên.</p>
+<p>Mạn diệu dáng người ở Cáp Nhĩ Ba Lạp dưới thân vặn vẹo, Tô Tô phát ra miêu nhi đáng thương lại ngọt nị tiếng kêu.</p>
+<p>Trướng ngoại, Hồng Liên nghe được bên trong động tĩnh sau, đột nhiên không kịp phòng ngừa mà đỏ mặt, lại nhịn không được ở trong lòng phỉ nhổ Cáp Nhĩ Ba Lạp, mọi rợ liền mọi rợ, ban ngày tuyên bạc bậc này mắc cỡ sự tình đều làm được ra tới, đáng thương nàng công chúa, không ai cho nàng chống lưng, chỉ có thể tùy ý người khác khi dễ. Cáp Na cùng Duy Na tuy rằng cũng là vân anh chưa gả, nhưng là so với Hồng Liên sau, mặt không đỏ khí không suyễn, thậm chí ở nhìn đến Hồng Liên thẹn thùng bộ dáng khi, hai người lẫn nhau nhìn thoáng qua, đều ở lẫn nhau trong mắt gặp được Trung Nguyên nhân thật là đại kinh tiểu quái thần sắc.</p>
+<p>Lửa đỏ hôn giường thượng, Tô Tô nhấp nháy con mắt nhìn Cáp Nhĩ Ba Lạp, trắng nõn trên da thịt bị ấn một cái lại một cái dấu vết, tóc đen của hắn phô tán ra tới, sấn khuôn mặt nhỏ Doanh Doanh nhuận nhuận, mày liễu nhíu lại, liền gọi người hận không thể mổ tâm cho hắn.</p>
+<p>Hắn như thế nào như vậy đẹp, đẹp làm người hận không thể xoa tiến trong xương cốt.</p>
+<p>Tô Tô đỏ mặt, thủy mắt mờ mịt, Khuyết tộc nam nhân như thế nào như vậy phát rồ!</p>
+<p>Từ từ, hắn đột nhiên có một cái vấn đề quan trọng!</p>
+<p>“Hệ thống, ta phải hỏi một chút, thân thể này nữ tính khí quan thành thục không có?”</p>
+<p>【 thành thục! 】</p>
+<p>“Ta ta ta ta…… Kia ta cùng Cáp Nhĩ Ba Lạp như vậy, sẽ không mang thai đi?” Tô Tô đốn giác sét đánh giữa trời quang, muốn chết a!</p>
+<p>【 cái này —— ngô —— Cáp Nhĩ Ba Lạp năng lực như vậy cường hãn, hắn nếu là mỗi ngày đều tới như vậy mấy phát, mà ngươi lại không tránh thai nói, có lẽ có khả năng. 】</p>
+<p>Tô Tô “……” Sống không còn gì luyến tiếc.JPG</p>
+<p>【 kỳ thật có hài tử không hảo sao? Như vậy càng có thể làm ngươi cùng Cáp Nhĩ Ba Lạp chi gian có ràng buộc, ngày sau nếu là Khuyết tộc công chiếm Tô Quốc, ngươi cái này hòa thân công chúa không đến mức bị ném tới góc xó xỉnh tự sinh tự diệt a! 】</p>
+<p>Tô Tô “Không phải ngươi sinh hài tử, ngươi nói nhưng thật ra nhẹ nhàng nga! Mau, cho ta thuốc tránh thai!”</p>
+<p>【 ngô, cái này không có! 】</p>
+<p>Tô Tô mới không tin, “Sao có thể không có? Ngươi không phải mười hạng toàn năng sao?”</p>
+<p>【 bất luận cái gì bị phán đoán ra dùng ở ký chủ trên người sẽ ảnh hưởng nhiệm vụ đồ vật, đều bị chủ hệ thống cấp cấm, cho nên ta liền tính là tưởng cấp cũng cấp không được. 】</p>
+<p>Tô Tô MLGJB nháy mắt cảm thấy tâm hảo mệt.</p>
+<p>Ăn đủ rồi Cáp Nhĩ Ba Lạp đem Tô Tô mềm như bông thân mình ôm vào chính mình trong lòng ngực, bàn tay to có một chút không một chút mà vỗ bờ vai của hắn, “Tô Dao đã mang binh rời đi, ngày sau ngươi chính là chúng ta Khuyết tộc Yên thị, ta nữ nhân, chỉ cần ngươi ngoan ngoãn, ta sẽ không bạc đãi ngươi.”</p>
+<p>Tô Tô ngoan ngoãn mà rúc vào hắn trong lòng ngực, chỉ là bị hắn tay chọc ghẹo có chút khó chịu, người song tính thân thể thực sự mẫn dám chút, “Đại Hãn thật sự không ngại thân thể của ta sao?” Hắn thấp thỏm bất an hỏi ra tiếng, thủy nhuận con ngươi còn mang theo thỏ con bất an cảm xúc.</p>
+<p>Cáp Nhĩ Ba Lạp xoa bóp hắn ửng đỏ khuôn mặt nhỏ, thấp giọng cười cười, “Ta nếu là để ý ghét bỏ nói, tối hôm qua liền đem ngươi kéo đi ra ngoài chém, nào còn sẽ giống như bây giờ ôm ngươi. Ta biết ngươi dĩ vãng ở Tô Quốc quá đến nơm nớp lo sợ không vui, hiện tại ở ta nơi này, liền không cần lo lắng, ta sẽ tự che chở ngươi.”</p>
+<p>“Cảm ơn Đại Hãn!” Tô Tô vui sướng vạn phần, ngẩng đầu ở hắn trên mặt nhẹ nhàng rơi xuống một cái hôn, “Ta tự gả vào Khuyết tộc, liền sinh là Đại Hãn người, chết là Đại Hãn quỷ.” Nói thật, Tô Quốc trừ bỏ còn có cái kia Tiệp Dư nương bên ngoài, nguyên thân đối Tô Quốc là một chút hảo cảm đều không có. Nếu Cáp Nhĩ Ba Lạp chiến bại, hắn chỉ sợ gặp qua thảm hại hơn.</p>
+<p>Cáp Nhĩ Ba Lạp lớn lên thực tục tằng, là một loại khác nhau cùng Tô Quốc quân tử dã tính chi mỹ, cả người tràn ngập nam tính hormone hơi thở, ít nhất hai ngày này trên giường vận động, Tô Tô cảm thấy thực tận hứng.</p>
+<p>Cáp Nhĩ Ba Lạp đối với Tô Tô vui mừng đôi mắt nhỏ thực hưởng thụ, hắn thích người nam nhân này, tự nhiên nguyện ý che chở hắn.</p>
+<p>Hai người ở trên giường nhĩ tấn tư ma một phen, lại nói chút tri kỷ nói, tình chàng ý thiếp ngọt ngào không được.</p>
+<p>Cáp Nhĩ Ba Lạp bồi Tô Tô sau một hồi, liền gọi người đưa nước tiến vào, nơi này là Cáp Nhĩ Ba Lạp nơi ở, nguyên bản trên giường lớn là không có rèm trướng, là Hồng Liên nhìn này trong trướng liền cái bình phong giống nhau che đậy vật cũng không có, liền đi của hồi môn tìm rèm trướng chính mình động thủ cấp treo đi lên.</p>
+<p>Cáp Nhĩ Ba Lạp ban đầu cảm thấy có chút quái quái, còn chưa kịp gọi người triệt hạ đi, nhưng là nhìn thấy những cái đó hạ nhân nâng thùng gỗ tiến vào sau, lại cảm thấy này ngoạn ý vẫn là rất cần thiết.</p>
+<p>Tô Tô nơi ở là đã gọi người chuẩn bị hảo, hôn sau liền có thể dọn qua đi, bởi vì khoá trước Đại Hãn bên người trừ bỏ Yên thị ngoại, còn sẽ có mặt khác nữ nhân, cho nên thông thường Đại Hãn cùng Yên thị là tách ra trụ, cùng Tô Quốc hậu cung giống nhau.</p>
+<p>Bất quá đương nhiệm Đại Hãn Cáp Nhĩ Ba Lạp chuyên tâm ở chỗ sự nghiệp, trừ bỏ tân cưới Yên thị ngoại, còn không có mặt khác nữ nhân, đối này, Tô Tô cũng coi như là nhẹ nhàng thở ra. Nếu là hắn vừa tới, phía sau còn đi theo mười bảy tám nữ nhân chờ cho hắn kính trà, Tô Tô cảm thấy chính mình sẽ nhịn không được cắt Cáp Nhĩ Ba Lạp đại JJ, tuy rằng hắn biết làm một cái thủ lĩnh không nữ nhân là không có khả năng.</p>
+<p>Ba ngày sau, Tô Tô là muốn dọn đến Yên thị nơi ở đi, nhưng là Cáp Nhĩ Ba Lạp buổi tối khi trở về, phát hiện người không thấy sau, nháy mắt liền đêm đen mặt, vô cùng lo lắng mà chạy qua đi, đem đang chuẩn bị dỡ xuống ngọc bội trang sức chuẩn bị nghỉ tạm Tô Tô lại cấp ôm trở về, phân phó đi xuống, ngày sau Yên thị liền tùy hắn cùng ăn cùng ở.</p>
+<p>Lời này vừa nói ra, Khuyết tộc người xem như minh bạch, Đại Hãn đối cái kia Trung Nguyên đến công chúa chính là hiếm lạ thực, làm những cái đó bởi vì Tô Dao mà coi khinh Tô Tô người, sôi nổi một lần nữa coi trọng lên. Tuy rằng bọn họ cảm thấy cái kia công chúa không thích hợp bọn họ anh dũng vô cùng Đại Hãn, nhưng là Đại Hãn thích, bọn họ tự nhiên cũng sẽ tiếp thu. Ai kêu Đại Hãn là bọn họ trong lòng thiên thần đâu!</p>
+<p>Trừ cái này ra, Đại Hãn trăm vội bên trong, còn gọi người đi tìm một cái Trung Nguyên đầu bếp, chuyên vì Yên thị nấu cơm, đơn giản là Yên thị đến từ Trung Nguyên, ăn không quen Khuyết tộc đồ ăn.</p>
+<p>Những cái đó nguyên bản liền đối Đại Hãn xuân tâm manh động Khuyết tộc cô nương ở nhìn thấy Đại Hãn đối Yên thị như vậy săn sóc ôn nhu bộ dáng, càng là sôi nổi hâm mộ không thôi, nghĩ Đại Hãn khi nào lại cưới. Rốt cuộc mỗi người đàn bà cảm nhận trung muốn thành thân đối tượng chính là giống Đại Hãn giống nhau uy vũ hùng tráng nam nhân.</p>
+<p>Ngốc tại trong trướng mấy ngày, cảm thấy có chút phiền muộn Tô Tô mang theo Hồng Liên đi ra ngoài đi một chút, phía sau còn đi theo Cáp Na Hán Na hai tên Khuyết tộc thiếu nữ, các nàng đều biết chút quyền cước công phu, là Cáp Nhĩ Ba Lạp ban cho Tô Tô.</p>
+<p>Mênh mông bát ngát thảo nguyên bình thản vô biên, cùng rộng lớn không trung tương liên, mênh mông mênh mông, khí phách nhiếp người. Tô Tô lần đầu tiên cảm nhận được cái gì gọi là tự nhiên mỹ cảm.</p>
+<p>Đứng ở này rộng lớn thảo nguyên, ngươi có thể cảm nhận được chính mình tâm linh phảng phất đều bị tinh lọc giống nhau, nhắm mắt lại, hít sâu một hơi, khoang bụng trọc khí giống như biến mất không còn một mảnh. Thay thế, là kia làm người thoải mái mang theo cỏ dại hơi thở không khí. Cùng hắn phía trước ngốc hiện đại xã hội là hoàn toàn không giống nhau.</p>
+<p>Chăn dê nữ nhóm cưỡi ngựa nhi, tùy ý mà huy tiểu roi da, trước mặt dương đàn nhóm mị mị mà kêu, từ xa nhìn lại, từng đoàn bạch, té ngã trên đỉnh mây trắng giống nhau bạch. Phía dưới là trước mắt màu xanh lục, trên đầu mênh mông vô bờ màu lam, đồng dạng thuần tịnh sạch sẽ mà làm người say mê. Tô Tô vẫn luôn thật đáng tiếc, chính mình ở nguyên thế giới thời điểm, không có đi qua đại thảo nguyên.</p>
+<p>Đó là cùng Tô Quốc trong cung hoàn toàn không giống nhau hình ảnh, nơi này mọi người bôn phóng tự do nhiệt liệt, Tô Quốc người rụt rè e lệ đoan trang.</p>
+<p>Tô Tô cũng tưởng cưỡi ngựa, ở nguyên lai thế giới, hắn liền muốn đi thảo nguyên chơi một chuyến, nhìn một cái phong xuy thảo đê kiến ngưu dương thịnh cảnh, hiện giờ may mắn gặp được, tự nhiên là vui mừng vô cùng.</p>
+<p>“Công chúa, này con ngựa liệt thực, tiểu tâm bị thương!” Hồng Liên nhìn trước mặt phun khí cao đầu đại mã, nhịn không được có chút run sợ, nàng chưa từng tiếp xúc quá này đó con ngựa, ở thảo nguyên lâu như vậy, cũng chỉ là xa xa xem qua người khác kỵ. Giống loại đồ vật này, nàng là chạm vào cũng không dám chạm vào.</p>
+<p>Ở trong cung, bởi vì công chúa không được sủng ái, cho nên mỗi lần săn thú, là không có nàng đi trước phân, bởi vậy nàng cái này bên người cung nữ cũng tự nhiên là nhìn không thấy săn thú rầm rộ.</p>
+<p>Tô Tô có chút hưng phấn, nhưng là nghĩ chính mình hiện tại này thân quần áo thực sự phức tạp một ít, liền nói “Đi về trước đổi một chút cưỡi ngựa trang.”</p>
+<p>Yên thị quần áo đều bị, chỉ là Tô Tô thói quen cung trang, hơn nữa Hồng Liên cũng là theo bản năng mà vì chọn lựa như vậy quần áo, Cáp Nhĩ Ba Lạp cũng thích xem hắn mỗi ngày bất đồng sở trang trang phẫn, đó là cùng Khuyết tộc thiếu nữ hoàn toàn bất đồng nhu nhược mỹ, đảo cũng không cưỡng chế tính yêu cầu hắn thay Khuyết tộc quần áo.</p>
+<p>Chỉ là người song tính thân thể rốt cuộc đặc thù, vì an toàn khởi kiến, Cáp Nhĩ Ba Lạp cũng là làm hắn trước không cần hồi phục nam nhi thân. Tô Tô tự nhiên là biết đến, người song tính ở hiện đại đều là dị loại, càng đừng nói là ở cổ đại. Hắn khôi phục nam nhi thân, vạn nhất một ngày nào đó bụng nổi lên tới, hắn như thế nào giải thích? QAQ~ quả thực là phải bị người kéo đi ra ngoài thiêu tiết tấu a!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong40.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong42.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "xuyen-nhanh-dang-yeu-nguoi";
+const NOVEL_TITLE = "[ Xuyên nhanh ] Đáng Yêu Ngươi";
+const CHAPTER_TITLE = "Chương 41";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

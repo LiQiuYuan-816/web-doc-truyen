@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 49</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        [ Xuyên nhanh ] Đáng Yêu Ngươi
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 49</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong48.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong50.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Này bữa cơm, Tô Tô ăn có chút thực chi vô vị, có lẽ là bởi vì Tiếu gia trên bàn cơm lúc ăn và ngủ không nói chuyện thói quen, hoặc là bởi vì Tiếu Ngụy Nhiên quá lãnh, dẫn tới nguyên bản manh manh đát Tiếu Hằng Tinh ở ăn cơm thời điểm, đều phá lệ nghiêm túc, cũng không quấn lấy hắn muốn hắn uy cơm.</p>
+<p>Thật vất vả trầm mặc ăn xong một bữa cơm, Tô Tô cảm thấy hắn đêm nay có chút tiêu hóa bất lương, ăn điểm sau khi ăn xong trái cây, hắn quyết định chờ Tiếu Ngụy Nhiên lên lầu sau, tìm Tiếu Tiêu nói một chút, ngày mai dọn ra đi.</p>
+<p>Nào biết Tiếu Ngụy Nhiên cư nhiên chủ động cho hắn đệ một khối quả táo, “Hai ngày này cảm ơn ngươi chiếu cố Tiểu Tinh, về sau có chuyện gì yêu cầu hỗ trợ cứ việc mở miệng. Đúng rồi, về Tiếu Tiêu nói, ngươi muốn đương diễn viên, ngày mai tới ta công ty một chuyến, ta kêu mang ngươi người đại diện cùng nhau lại đây thiêm một chút hợp đồng.”</p>
+<p>Tô Tô nháy mắt liền cảm thấy trong miệng này khối quả táo khó có thể nuốt xuống, ngọa tào, cốt truyện tựa hồ cùng hắn tưởng tượng có chút không giống nhau, hắn thụ sủng nhược kinh nói “Không cần, không cần phiền toái ngươi! Tiểu Tinh như vậy đáng yêu, chiếu cố hắn ta cũng vui. Đến nỗi ngươi nói cái kia, vô công bất thụ lộc, ta không hảo tiếp thu.”</p>
+<p>Tiếu Tiêu xen mồm nói “Đừng ngượng ngùng a, chúng ta không phải đều nói tốt sao? Ta ca phía dưới cái kia giải trí công ty, minh tinh nhiều như vậy, cũng không kém ngươi một cái. Nói nữa, ngươi lớn lên đẹp như vậy, đến lúc đó nhất định chụp cái gì hỏa cái gì, sau đó ta ca là có thể kiếm cái đầy bồn đầy chén, này tính song thắng a! Nhà của chúng ta đối công nhân đều siêu cấp thân thiện!”</p>
+<p>Tô Tô Xác thật, đều thân thiện quá mức!</p>
+<p>Đến cuối cùng, Tô Tô vẫn là bị thuyết phục, trở lại nhà ở sau, Tô Tô đối hệ thống nói “Ta phảng phất ngửi được âm mưu hương vị, nhà tư bản không phải đều bóc lột lao động nhân dân mồ hôi và máu sao?”</p>
+<p>Hệ thống hự nói 【 kia cũng đạt được người đi! Dù sao bọn họ không phải nguyên thân kiếp trước gặp được những cái đó người xấu, ta cảm thấy hẳn là không có vấn đề. 】</p>
+<p>Tô Tô ở trong đầu lọc một lần, nguyên thân cua đồng trước cùng cua đồng sau nhân vật quan hệ, xác thật không phát hiện họ Tiêu người một nhà, hắn sờ sờ cằm, như vậy nói đến khả năng chính là phía trước người qua đường Giáp Ất Bính, nhưng là bởi vì hắn thay đổi nguyên thân rời đi biển rộng thời gian, cho nên khiến cho nguyên bản người qua đường Giáp xuất hiện ở chính mình trước mặt.</p>
+<p>Nghĩ thông suốt sau, Tô Tô hôm nay buổi tối giác cũng ngủ đến đặc biệt hương.</p>
+<p>Hôm sau, Tô Tô lên thời điểm, mới buổi sáng 7 giờ, bởi vì nhớ thương Tiếu Ngụy Nhiên ngày hôm qua nói ký hợp đồng, cho nên hắn tỉnh vẫn là rất sớm. Hắn đi xuống lầu, Tiếu Tiêu cùng Tiếu Hằng Tinh đều không ở, chỉ có Tiếu Ngụy Nhiên một người, ngồi ở chỗ đó nhìn báo chí.</p>
+<p>Tô Tô ngồi xuống, “Buổi sáng tốt lành!”</p>
+<p>Tiếu Ngụy Nhiên buông báo chí, hướng hắn gật gật đầu, “Ăn xong cơm sáng chúng ta cùng đi công ty.”</p>
+<p>“Tốt!” Tô Tô cười cười, liền cúi đầu nhanh chóng mà giải quyết nổi lên bữa sáng. Tiếu Ngụy Nhiên nhìn như ở nghiêm túc mà nhìn báo chí, kỳ thật nhìn một cái mà dùng dư quang ngắm một bên Tô Tô, khóe miệng cong lên cười ngây ngô độ cung.</p>
+<p>Tô Tô dùng mười phút giải quyết bữa sáng, xoa xoa miệng sau, có chút ngượng ngùng nói “Làm ngươi đợi lâu, ta đã ăn xong rồi!”</p>
+<p>“Ân, như vậy đi thôi!” Tiếu Ngụy Nhiên như cũ mặt vô biểu tình, lạnh lùng trên mặt lộ ra một cổ tinh anh phạm.</p>
+<p>Tô Tô ngoan ngoãn mà đi theo hắn mặt sau, lên xe sau, đối mặt hắn kia trầm mặc ít lời mặt, cũng nói không nên lời nói cái gì tới, cuối cùng hai người một đường lái xe đến công ty, toàn bộ hành trình không nói chuyện, Tô Tô cảm thấy siêu cấp xấu hổ.</p>
+<p>Thật vất vả tới rồi công ty, Tô Tô gần như không thể nghe thấy mà nhẹ nhàng thở ra, Tiếu Ngụy Nhiên nhấp nhấp môi, mang theo hắn thượng văn phòng.</p>
+<p>Trong văn phòng, Dương Đặc đã đang chờ, ngày hôm qua nhận được tổng tài điện thoại sau, hắn là vẻ mặt mộng bức, cẩn thận tưởng tượng, lại có chút bóp cổ tay, không nghĩ tới chính mình xem trọng tổng tài cư nhiên cũng đi nổi lên mặt khác công ty bao dưỡng tiểu minh tinh lộ tuyến, hắn còn tưởng rằng nhà mình tổng tài sẽ không giống nhau.</p>
+<p>Liền sợ tổng tài làm hắn mang người là đỡ không dậy nổi A Đấu, quân không thấy nhiều ít đi cửa sau trừ bỏ một khuôn mặt, liền cái gì cũng không có.</p>
+<p>Nhưng là nhìn thấy Tô Tô bản nhân sau, Dương Đặc lại yên lặng mà đem câu nói kia cấp nuốt đi xuống, đỡ không đỡ khởi, ít nhất dựa gương mặt này, chỉ cần không làm yêu, vẫn là có thể dựa nhan phấn lâu lâu dài dài đi xuống.</p>
+<p>Lẫn nhau bước đầu nhận thức một chút, lại nói chuyện hợp đồng, Tô Tô kêu hệ thống xem một chút hợp đồng có không có gì che giấu hố người điều khoản, hệ thống hồi phục, cũng không có, nhưng thật ra đối ký chủ thực ưu đãi.</p>
+<p>Dương Đặc nhìn thấy hợp đồng thời điểm, cũng có chút kinh ngạc, xem tổng tài như vậy dụng tâm, hắn đối với Tô Tô dùng tới mười hai phần tâm a.</p>
+<p>“Đúng rồi, Trần Na không phải đang ở cho nàng MV tìm nam chính sao? Kêu Tô Tô đi!” Tiếu Ngụy Nhiên ra lệnh một tiếng, Dương Đặc mạc dám không từ, lại nói, xem Tô Tô ngoại hình, cũng phù hợp vai chính chi nhất thân phận.</p>
+<p>“Thành, khiến cho Tô Tô biểu diễn.” Trần Na là bọn họ Vạn Thái giải trí đương hồng ngôi sao ca nhạc, tiếng ca điềm mỹ, người cũng lớn lên đáng yêu. Xuất đạo 5 năm, điềm mỹ nhân thiết vòng vô số phấn, hiện tại tuổi có chút lớn, muốn sáng tạo đột phá, thử xem mặt khác ca khúc. Lần này số tiền lớn chế tạo một trương album, chủ đánh u buồn phong, trong đó một đầu tên là 《 Lựa Chọn 》, giảng chính là một cái cũ kỹ mà tục khí chuyện xưa, hai nam tranh một nữ, nữ chủ không muốn thương tổn trong đó bất luận cái gì một người, cho nên kết cục cuối cùng mở ra thức.</p>
+<p>Tuy rằng chuyện xưa cũ kỹ, nhưng là chỉ cần MV vai chính tuyển hảo, cũ kỹ chuyện xưa cũng có thể hút người tròng mắt.</p>
+<p>MV một cái khác nam chính là Lăng Trác, bọn họ công ty ảnh đế, cùng Trần Na là đồng môn sư huynh muội, Trần Na người đại diện da mặt dày tìm Lăng Trác người đại diện nói hạ, Lăng Trác suy xét một chút liền đáp ứng rồi. Ảnh đế đều ra ngựa, một cái khác vai chính càng là phải dùng tâm lựa chọn, kết quả tuyển ba ngày, người còn không có định ra tới, hiện tại hảo, không cần lại rối rắm.</p>
+<p>Dương Đặc cùng Tô Tô ra cửa sau, làm Tô Tô đi về trước, hắn đến đi tìm Trần Na cùng Lăng Trác thông tri chuyện này, nếu người đều tề, như vậy MV cũng có thể bắt đầu rồi.</p>
+<p>“Ta di động rớt, còn không có mua trở về, như vậy đi, ta ngày mai buổi sáng cũng ở chỗ này chờ ngươi đã khỏe, thế nào?”</p>
+<p>“Hành đi, kia buổi sáng 8 giờ, ngươi ở công ty chờ ta!”</p>
+<p>Ra cửa sau, Tô Tô đột nhiên phát hiện một vấn đề nghiêm trọng, trên người hắn một mao tiền cũng không có, như thế nào trở về? Hắn sờ sờ cằm, có thể trước tiên tìm Dương Đặc dự chi tiền lương sao?</p>
+<p>Dương Đặc ra công ty môn, vừa vặn nhìn thấy Tô Tô đứng ở cửa do dự không chừng, liền nói “Làm sao vậy? Không đánh tới xe?”</p>
+<p>Tô Tô có chút ngượng ngùng nói “Ta buổi sáng ngồi Tiếu —— Tiếu tổng tài xe tới, quên mang tiền, ngươi có thể mượn ta điểm sao? Đến lúc đó từ ta tiền lương khấu!”</p>
+<p>Dương Đặc từ trong bao cầm mấy trăm đồng tiền cho hắn, người khác tổng tài bao dưỡng tiểu minh tinh, đều là xe thể thao biệt thự bó lớn đưa, như thế nào đến phiên bọn họ công ty, này tiểu đáng thương chẳng những không có di động dùng, ngay cả đánh tiền xe đều không có, này thật là bị đại tổng tài cấp bao dưỡng sao?</p>
+<p>Hắn nhìn theo Tô Tô rời đi sau, vừa mới chuẩn bị lái xe, liền nhận được Tiếu Ngụy Nhiên điện thoại, làm hắn đem dựa theo minh tinh hạng nhất đãi ngộ cấp Tô Tô xứng đôi hảo nhân viên xe, mặt khác đi mua một bộ di động cho hắn.</p>
+<p>Dương Đặc …… Hắn quả nhiên không nên chửi thầm.</p>
+<p>Tiếu Tiêu rời giường sau, đã là buổi sáng 10 điểm, hắn biết buổi sáng Tô Tô cùng đại ca đi công ty, không nói hai lời liền chui vào hắn phòng, ở gối đầu thượng cẩn thận tra tìm một phen, bắt được hai ba căn tóc, sau đó vui sướng mà mang về, phóng tới bao nilon.</p>
+<p>Theo sau liền cơm cũng không ăn, liền vội vã mà chạy tới bệnh viện.</p>
+<p>Cùng lúc đó, lão gia tử bên kia lông tóc đã bị người trộm đưa tới, Tiếu Tiêu đem hai cái đều giao cho bác sĩ, làm hắn mau chóng kiểm nghiệm ra tới.</p>
+<p>Làm xong việc này sau, Tiếu Tiêu lại vội vã mà về tới gia, vừa vào cửa, liền phát hiện Tô Tô chính bồi Tiếu Hằng Tinh ở ăn cơm trưa, Tiếu Hằng Tinh buổi sáng lên chưa thấy được Tô Tô, trong lòng còn nháo đừng niết, Tô Tô cho hắn nói mấy cái tiểu chuyện xưa hống hắn, lại bồi hắn ăn cơm, hắn mới một lần nữa vui vẻ lên.</p>
+<p>“Thúc thúc, ngươi đã trở lại, mau tới ăn cơm!” Tiếu Hằng Tinh mồm to mà đang ăn cơm, muốn mượn này làm Tô Tô khen khen hắn, Tô Tô thực nể tình mà khen hắn giống cái tiểu lão hổ, Tiếu Hằng Tinh cười đến nhưng vui vẻ.</p>
+<p>Tiếu Tiêu cười tủm tỉm mà nhìn bọn họ hỗ động, trong lòng cảm thấy, Angel biến thành người nhà, kỳ thật cũng là thực không tồi.</p>
+<p>Ở dài dòng chờ đợi sau, Tiếu Tiêu nhận được bệnh viện điện thoại, hắn không nói hai lời, mã bất đình đề mà đuổi qua đi, “Kết quả thế nào?”</p>
+<p>“Kinh kiểm nghiệm, có huyết thống quan hệ, Y nhiễm sắc thể đều là tương đồng. Có thể phán đoán là trực hệ.”</p>
+<p>Tiếu Tiêu cầm báo cáo, lòng đang bang bang thẳng nhảy, nói cách khác, Tô Tô thật sự cùng lão gia tử có quan hệ, là cái kia trên ảnh chụp nữ nhân sinh hài tử sao?</p>
+<p>Không đúng, lão gia tử đã lớn tuổi như vậy rồi, tính lên, nữ nhân kia cũng không sai biệt lắm nửa thanh thân mình xuống mồ, sao có thể sinh ra Tô Tô? Như vậy chính là nữ nhân kia sinh đứa con trai, mà đứa con này lại sinh Tô Tô, cho nên một thế hệ xuống dưới, Y nhiễm sắc thể đều là giống nhau.</p>
+<p>Càng nghĩ càng cảm thấy có khả năng Tiếu Tiêu lập tức cầm báo cáo lái xe đi tìm nhà mình đại ca, hắn hấp tấp mà vào cửa, lớn giọng nói “Ca, báo cáo ra tới, ngươi mau đến xem, Tô Tô cùng chúng ta thật sự có quan hệ!”</p>
+<p>Tiếu Ngụy Nhiên tiếp nhận báo cáo, trực tiếp phiên tới rồi cuối cùng một tờ, “Quả nhiên cùng ta tưởng giống nhau!”</p>
+<p>“Kia ca chúng ta muốn nói cho lão gia tử sao?” Tiếu Tiêu hỏi.</p>
+<p>Tiếu Ngụy Nhiên cầm quần áo nói “Đi, đi một chuyến nhà cũ.”</p>
+<p>Nhà cũ ——</p>
+<p>Lão gia tử ngồi ở ghế bập bênh thượng, chính thừa cảm lạnh, trong tay của hắn nhéo một trương ảnh chụp, đã ố vàng, nhìn dáng vẻ niên đại thật lâu xa.</p>
+<p>Hắn nhắm mắt lại nghe chim chóc tiếng kêu to, ngẫu nhiên trợn mắt sờ sờ ảnh chụp trung nữ nhân mặt, ho khan vài tiếng.</p>
+<p>“Lão gia tử, đại thiếu gia cùng nhị thiếu gia tới!” Người hầu tiến lên nói.</p>
+<p>Lão gia tử trợn mắt, trên mặt nếp nhăn mọc lan tràn, khe rãnh đạo đạo, đôi mắt lại như cũ phi thường sắc bén, không thấy vẩn đục, “Gọi bọn hắn lại đây đi!”</p>
+<p>“Là!”</p>
+<p>Tiếu Ngụy Nhiên cùng Tiếu Tiêu đi qua đi thời điểm, lão gia tử đang ở uống nước, hắn động tác chậm chạp mà xoa xoa miệng, nói “Hôm nay cái khó được nhìn thấy các ngươi hai cái a! Đặc biệt là ngươi Tiếu Tiêu!” Lão gia tử làm người nghiêm túc, động bất động liền huấn người, Tiếu Tiêu nhất không thích chính là hồi nhà cũ, mỗi ngày sẽ bị hắn nhắc mãi một đốn.</p>
+<p>Tiếu Tiêu vẻ mặt đau khổ nói “Tôn nhi này không phải tưởng ngươi sao?”</p>
+<p>Lão gia tử hừ một tiếng, hiển nhiên không tin, Tiếu Ngụy Nhiên mắt sắc mà nhìn đến lão gia tử trong tay ảnh chụp, nữ nhân kia khuôn mặt như ẩn như hiện, “Gia gia, ta gần nhất gặp được một người.”</p>
+<p>Lão gia tử nhìn về phía hắn, quơ quơ ghế bập bênh, “Sau đó đâu?”</p>
+<p>Tiếu Ngụy Nhiên gằn từng chữ “Hắn cùng trên ảnh chụp người lớn lên rất giống.”</p>
+<p>Ghế bập bênh rắc thanh đột nhiên im bặt, lão gia tử hưu mà đứng dậy, kích động vạn phần nói “Ngươi nói cái gì?”</p>
+<p>Lúc này Tiếu Ngụy Nhiên cùng Tiếu Tiêu hoàn toàn có thể xác định xuống dưới, Tô Tô thật là lão gia tử tôn tử!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong48.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong50.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "xuyen-nhanh-dang-yeu-nguoi";
+const NOVEL_TITLE = "[ Xuyên nhanh ] Đáng Yêu Ngươi";
+const CHAPTER_TITLE = "Chương 49";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
