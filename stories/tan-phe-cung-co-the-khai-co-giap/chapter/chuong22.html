@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 22. Cái gọi là cố nhân</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tàn phế cũng có thể khai cơ giáp?!
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 22. Cái gọi là cố nhân</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong21.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong23.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Ngày hôm sau Hứa Dung thức dậy rất sớm, uống lên điểm dinh dưỡng dịch liền chui vào huấn luyện khoang.</p>
+<p>Cái kia lão đầu nhi còn ở mặt tiền cửa hàng cửa nằm, vị trí cùng tư thế đều cùng ngày hôm qua giống nhau như đúc.</p>
+<p>Bất quá lần này Hứa Dung mới đi vào, hắn liền chính mình tỉnh lại.</p>
+<p>Lão đầu nhi ôm ngực “Hừ” một tiếng, “Ngươi biết có bao nhiêu người mời ta làm việc nhi cầu đều cầu không được sao?”</p>
+<p>Hứa Dung thái độ tốt đẹp mà giải thích, “Ngày hôm qua là ngoài ý muốn hạ tuyến. Hôm nay sáng sớm liền tới tìm ngài xin lỗi.”</p>
+<p>Lão đầu nhi mở một con mắt liếc hắn một chút, thật lâu sau, mới nói “Lại đây, ta nhìn xem ngươi cánh tay máy.”</p>
+<p>Hứa Dung đi qua đi.</p>
+<p>Lão đầu nhi thượng thủ qua lại sờ Hứa Dung cánh tay máy, cuối cùng trực tiếp dùng hai ngón tay nhéo cánh tay máy ngón út, đem Hứa Dung toàn bộ cánh tay nâng lên tới, hắn híp mắt nói “Hậu sinh, ngươi này cánh tay máy giống như có điểm quen mắt…… Ân, bất quá nhìn kỹ lại không rất giống, này hẳn là cái tay mới tác phẩm đi.”</p>
+<p>Hứa Dung đã sớm hiểu biết đến rất nhiều máy móc sư một mạch tương thừa, bọn họ tác phẩm thông thường có rất nhiều tương tự chỗ. Hứa Dung suy đoán lão đầu nhi trong miệng quen thuộc cảm chính là như vậy mà đến.</p>
+<p>“Đây là ta một vị bằng hữu thiết kế.”</p>
+<p>Lão đầu nhi chậm rì rì hoảng hai căn ma côn dường như chân hướng trong phòng đi, một bên nói “Ý tưởng rất lớn gan, nhưng vẫn là quá non nớt. Vào đi, ta dạy cho ngươi điểm khác.”</p>
+<p>Hứa Dung trước mắt sáng ngời, đuổi kịp lão đầu nhi, “Ngài đồng ý thu ta vì đồ đệ?”</p>
+<p>Lão đầu nhi quay đầu lại, ánh mắt mạc danh, “Ngươi còn chưa đủ tư cách.”</p>
+<p>Lão đầu nhi hướng bên cạnh nhường một bước, lộ ra trong phòng nhỏ chân thật bộ dáng.</p>
+<p>Từng khối cục sắt chất đống ở phòng giác, nhưng chúng nó đều không phải là phế liệu, mà là từng khối hoàn chỉnh nhìn ra được công năng kết cấu, ở cường quang chiếu xuống chiếu ra lạnh lẽo mỹ cảm.</p>
+<p>Hứa Dung không tự chủ được tiến lên một bước.</p>
+<p>Lão đầu nhi nhìn đến Hứa Dung lộ ra biểu tình phi thường vừa lòng, “Không tồi, ngươi còn rất biết hàng.”</p>
+<p>Ra ngoài Hứa Dung dự kiến chính là, lão đầu nhi lại mở ra một phiến ám môn, “Bất quá chúng ta muốn đi không phải nơi này. Vào đi, tạ.”</p>
+<p>Cái này xưng hô từ lão đầu nhi trong miệng nhổ ra thời điểm, Hứa Dung phảng phất lại nghe được thời không chỗ sâu trong cái kia nữ tử nhất quán nhiệt tình dào dạt thanh âm. Hắn bừng tỉnh gian có thời không đan xen cảm giác.</p>
+<p>Theo ám môn hoàn toàn mở ra, này đó cổ quái ý tưởng nhanh chóng tan thành mây khói.</p>
+<p>Trong môn là một khác phiên thiên địa.</p>
+<p>Chuyên nghiệp cách đấu thiết bị, chuyên nghiệp tự động đường băng, thậm chí còn có Hứa Dung chỉ ở quang não gặp qua truyền cảm thiết bị, bao gồm hắn liền nghe cũng chưa nghe qua không biết tên đồ vật.</p>
+<p>Hứa Dung không kịp nhìn.</p>
+<p>Lão đầu nhi đem Hứa Dung mang tới một cái quang bình trước mặt, đem hắn ấn đến quang bình phía trước trên ghế. Sau đó lão đầu nhi đem bên cạnh đạp khuỷu tay bộ truyền cảm khí cùng với tay bộ truyền cảm khí hình thức trang bị ném tới Hứa Dung trong lòng ngực.</p>
+<p>“Chính mình tròng lên.”</p>
+<p>Hứa Dung dứt khoát lưu loát mà cầm lấy liền hướng trên tay bộ, chờ bộ xong rồi mới hỏi, “Đây là cái gì?”</p>
+<p>Lão đầu nhi giống như có điểm vô ngữ, “Có thể đem ngươi tay bộ thần kinh cắt đứt đồ vật.” Qua hai giây mới đứng đắn giải thích, “Cái này là thần kinh phản ứng bia tiêu huấn luyện.”</p>
+<p>Hứa Dung chậm rãi ở trên đầu đánh ra một cái dấu chấm hỏi, “Tiêu bia huấn luyện?”</p>
+<p>Lão đầu nhi trực tiếp điểm ở quang bình thượng mỗ nhấn một cái nút, mặt trên tự nhiên hiện lên một cái to lớn bia tiêu.</p>
+<p>Cùng lúc đó, Hứa Dung đột nhiên cảm thấy đôi tay trầm xuống, phảng phất bị vô hình đồ vật trói buộc, không thể động đậy. Lúc này hắn chú ý tới ở quang bình hai sườn xuất hiện hai cái cơ giáp cánh tay tiêu chí.</p>
+<p>Này hai cái cơ giáp cánh tay cực kỳ rất thật, mặc kệ là lớn nhỏ vẫn là nhan sắc cơ hồ đều là một so một phục khắc.</p>
+<p>Lão đầu nhi cầm cái mũ giáp hướng Hứa Dung trên đầu một bộ, giải thích nói “Ngươi hiện tại có thể dùng ngươi đại não chỉ huy ngươi đôi tay, cùng với ngươi trước mặt cơ giáp cánh tay.”</p>
+<p>Hứa Dung ngộ tính rất cao, cơ hồ không cần hai giây liền làm ra phản ứng.</p>
+<p>Hắn dùng não bộ hạ đạt mệnh lệnh, tay bộ đã chịu gông cùm xiềng xích rốt cuộc buông lỏng, quang bình thượng cơ giáp cánh tay đồng bộ làm ra tương ứng động tác.</p>
+<p>Lão đầu nhi lúc này mới hơi chút vừa lòng nói “Chính là như vậy. Nhìn đến ngươi trước mắt hồng tâm sao? Mục tiêu của ngươi chính là cái kia.”</p>
+<p>Hứa Dung hướng bên cạnh nhìn một vòng, nghi hoặc nói “Vũ khí đâu?”</p>
+<p>Lão đầu nhi kỳ quái, “Cái gì vũ khí?”</p>
+<p>“Ngươi không phải làm ta xạ kích hồng tâm?”</p>
+<p>Lão đầu nhi càng kỳ quái, “Yêm gì thời điểm làm ngươi xạ kích? Dùng ngón tay a! Chọc sẽ không sao? Dùng ngón tay chọc a.”</p>
+<p>Hứa Dung trừu trừu khóe miệng, quyết đoán kết thúc này một đề tài.</p>
+<p>Hắn theo bản năng tay bộ dùng sức, ở đã chịu trở ngại khi mới đột nhiên nhớ tới quy tắc, sửa dùng não bộ hạ đạt mệnh lệnh.</p>
+<p>Quang bình cơ giáp cánh tay động đi lên, bởi vì ly đến khoảng cách xa, hơn nữa cái kia máy móc cánh tay độ cao cùng chính hắn cánh tay chênh lệch phi thường đại, hắn tại hạ đạt mệnh lệnh khi cơ hồ không có bất luận cái gì thật cảm.</p>
+<p>Cùng với nói hắn ở khống chế chính mình cánh tay di động, không bằng nói Hứa Dung là ở một chút hoạt động trước mắt cơ giáp cánh tay, chính mình tay ngược lại là bị động di động.</p>
+<p>Hứa Dung nhắm ngay nửa ngày, mới ở hồng tâm vị trí thật mạnh một chọc.</p>
+<p>Toái bình thanh âm truyền đến.</p>
+<p>“……?”</p>
+<p>Hứa Dung trơ mắt nhìn trước mắt màn hình xuất hiện chia năm xẻ bảy đặc hiệu.</p>
+<p>Lão đầu nhi từ từ nói “Tay kính nhi quá lớn, chậm đã điểm. Còn có a, ngươi cái này đối cũng quá xa. Không đạt tiêu chuẩn, tuyệt đối không đạt tiêu chuẩn.”</p>
+<p>Hứa Dung một lần nữa dùng đầu óc hạ truyền mệnh lệnh, cánh tay máy một lần nữa động tác.</p>
+<p>Bởi vì có hai cái máy móc cánh tay, trước mắt bia tiêu cũng là song hồng tâm. Hứa Dung yêu cầu đồng thời thao tác hai cái, thể năng tiêu hao thật lớn.</p>
+<p>Hứa Dung thái dương thực mau thấm ra mồ hôi lạnh, dán ở mũ giáp nội sườn làn da buồn đến phát dính, liền hô hấp đều mang theo trệ sáp trọng cảm.</p>
+<p>Hắn ý đồ làm hai chỉ cơ giáp cánh tay đồng bộ nâng cổ tay, hơi điều góc độ, nhưng đại não mệnh lệnh truyền đến cơ giáp cánh tay khi tổng chậm hơn nửa nhịp.</p>
+<p>Tay trái mới vừa nhắm ngay bên trái hồng tâm, tay phải lại trật ba tấc, đầu ngón tay xoa bia biên xẹt qua, quang bình thượng lập tức nhảy ra màu đỏ cảnh cáo.</p>
+<p>Thật vất vả làm song chỉ đều lạc hướng hồng tâm, lực đạo lại không khống chế được, đầu ngón tay chọc đi xuống nháy mắt, hồng tâm trực tiếp ao hãm, quang bình vù vù nhảy ra phát ra cảnh báo.</p>
+<p>“Mắt xem lục lộ, ngươi này đầu óc tiện tay là phân gia?”</p>
+<p>Lão đầu nhi dựa vào khung cửa thượng, xem náo nhiệt không chê chuyện này đại, “Cơ giáp cánh tay độ cao kém, phát lực điểm, không phải làm ngươi cứng nhắc chính mình cánh tay thói quen, là làm ngươi đem thần kinh cảm giác khảm tiến cơ giáp. Ngươi yêu cầu thời khắc nhớ kỹ, nó chính là ngươi tay, ngươi cùng nó là nhất thể.”</p>
+<p>Hứa Dung cắn răng điều chỉnh, cố tình áp xuống thân thể cơ bắp ký ức, đi bắt giữ cơ giáp cánh tay xúc cảm.</p>
+<p>Bất quá mười phút, hắn huyệt Thái Dương liền thình thịch mà nhảy, não bộ truyền đến đau đớn.</p>
+<p>Lại cứ lão đầu nhi còn ở một bên thêm hỏa, ngón tay ở quang bình thượng một chút, hồng tâm đột nhiên bắt đầu chậm rãi di động, tốc độ không mau, lại cũng đủ quấy rầy hắn thật vất vả tìm được tiết tấu.</p>
+<p>Tả cơ giáp cánh tay đuổi theo hồng tâm dịch nửa tấc, hữu cơ giáp cánh tay lại trì trệ một cái chớp mắt, đầu ngón tay hung hăng đánh vào quang bình bên cạnh, phát ra “Đông” một tiếng trầm vang.</p>
+<p>“Không đạt tiêu chuẩn!”</p>
+<p>“Lại trật!”</p>
+<p>Lão đầu nhi cười tủm tỉm nói “Ta xem vẫn là tính, ngươi liền không phải học cơ giáp này khối liêu. Hảo hảo cùng người học máy móc được, làm gì một hai phải cùng phong cùng người khác cùng nhau khai cơ giáp? Khai cơ giáp như vậy nhiều lại không thiếu ngươi một cái.”</p>
+<p>Khai cơ giáp như vậy nhiều vì cái gì không thể nhiều ta một cái?</p>
+<p>Hứa Dung không nói gì, nhắm mắt, trong đầu đau đớn tại tâm lí dưới tác dụng tựa hồ bình ổn vài phần.</p>
+<p>Lão đầu nhi ở một bên nhìn Hứa Dung tiếp tục bắt đầu thao tác cơ giáp cánh tay, trong mắt rốt cuộc nhiều vài phần hứng thú.</p>
+<p>Một lần chênh chếch, hai lần va chạm, ba lần lực đạo thất hành…… Thẳng đến không biết đệ mấy mười lần, hai căn cơ giáp cánh tay đầu ngón tay rốt cuộc đồng thời vững vàng chọc ở di động song hồng tâm thượng, lực độ không nặng không nhẹ, quang bình thượng nhảy ra đạm lục sắc “Đủ tư cách” chữ.</p>
+<p>Ở nhìn đến “Đủ tư cách” này hai chữ nháy mắt, Hứa Dung ý thức đột nhiên mơ hồ, trước mắt vạn vật điên đảo.</p>
+<p>Lại trợn mắt, hắn quả nhiên lại bị bắn ra huấn luyện khoang.</p>
+<p>Bất quá lần này là huấn luyện khoang cưỡng chế đem hắn bắn ra.</p>
+<p>Hứa Dung đổ mồ hôi đầm đìa mà từ huấn luyện khoang bò ra tới, não bộ nhất trừu nhất trừu mà đau đớn, miệng khô khốc.</p>
+<p>Hắn xoa xoa huyệt Thái Dương đi ra ngoài, chuẩn bị đi uống chén nước.</p>
+<p>Mới vừa đẩy mở cửa, liền đối thượng từ dưới lầu đi lên Hạ Thời Hành.</p>
+<p>Hạ Thời Hành nhíu mày nhìn trước mắt mặt trắng như tờ giấy người, “Ngươi lại thời gian dài đãi ở huấn luyện khoang?”</p>
+<p>Hứa Dung vui vẻ tiếp thu Hạ Thời Hành lại đây đỡ lấy hắn, “Chỉ là ngoài ý muốn, lần sau sẽ không.”</p>
+<p>Hạ Thời Hành lãnh a một tiếng, không tin đến phi thường rõ ràng.</p>
+<p>Chờ Hứa Dung nhấp khẩu nước ấm, mới cảm giác chính mình miễn cưỡng hoãn lại đây.</p>
+<p>“Bất luận cái gì huấn luyện đều phải tuần tự tiệm tiến, chỉ vì cái trước mắt chỉ biết mất nhiều hơn được.”</p>
+<p>Hứa Dung đối Hạ Thời Hành quan tâm toàn bộ tiếp thu, “Đã biết.” Hắn chớp chớp mắt, liền kém nhấc tay thề, “Lần sau nhất định.”</p>
+<p>“Ngươi cảm giác thế nào? Yêu cầu đi bệnh viện sao?”</p>
+<p>Hứa Dung tuy rằng đầu óc đau, nhưng còn ở tiếp thu trong phạm vi, không cho rằng chính mình tình huống có nguy cơ đến yêu cầu đi bệnh viện nông nỗi. Huống chi hắn từ trước đến nay đối loại địa phương kia trí tạ khờ.</p>
+<p>Hắn cự tuyệt, “Không cần, ta nghỉ ngơi một chút thì tốt rồi.”</p>
+<p>Hạ Thời Hành mày còn chưa giãn ra, làm trò Hứa Dung mặt gọi tới phỉ so á, phân phó nó thời khắc chú ý Hứa Dung thân thể trạng huống.</p>
+<p>Hứa Dung bừng tỉnh cảm thấy Hạ Thời Hành tựa hồ vẫn luôn đối hắn tự gánh vác năng lực có cái gì hiểu lầm.</p>
+<p>Hạ Thời Hành ánh mắt lãnh túc mà nhìn hắn.</p>
+<p>Hứa Dung giây túng, một lát sau mới nhược nhược nhấc tay, “Ta trong chốc lát còn muốn đi ra ngoài.”</p>
+<p>Hạ Thời Hành mày nhăn đến càng sâu, “Nhất định phải hôm nay đi?”</p>
+<p>Sớm hay muộn phải làm sự tình Hứa Dung từ trước đến nay không thích sau này kéo, tục xưng sớm chết sớm siêu sinh.</p>
+<p>Hạ Thời Hành được đến đáp án, vẫn là hỏi, “Yêu cầu ta bồi ngươi sao?”</p>
+<p>Lại không phải thật sự tiểu hài tử, Hứa Dung quyết đoán lắc đầu, “Không cần.”</p>
+<p>Hạ Thời Hành vẫn luôn đem Hứa Dung đưa ra gia môn, dặn dò, “Có việc quang não liên hệ.”</p>
+<p>Hứa Dung hoàn toàn thoát ly Hạ Thời Hành tầm mắt sau mới thở dài nhẹ nhõm một hơi, cảm giác đột nhiên có thể lý giải những cái đó đi ra ngoài chơi còn sợ hãi gia trưởng đồng học tâm lý.</p>
+<p>Thật là đáng sợ.</p>
+<p>Hứa Dung liên hệ đã nghỉ học ở nhà Nặc Tạp.</p>
+<p>【 ta đi nhà ngươi phòng khám tìm ngươi. 】</p>
+<p>Sau đó ngồi trên công cộng huyền phù xe.</p>
+<p>Trên xe người rất nhiều, phần lớn đều câu lấy đầu ở trên quang não vội chính mình sự tình.</p>
+<p>Hứa Dung ghé vào bên cửa sổ không ngừng xoa ấn ẩn ẩn co rút đau đớn huyệt Thái Dương, trước mắt pha lê thượng phản xạ ra Hứa Dung phụ cận người mơ hồ thân ảnh.</p>
+<p>Hứa Dung chỉ là trong lúc lơ đãng ở pha lê thượng ngó quá.</p>
+<p>Trơ mắt nhìn mặt sau một cái đeo mắt kính đi làm tộc hốc mắt vươn một đôi râu.</p>
+<p>Bất quá hai giây thời gian, Hứa Dung vừa mới quay đầu, liền thấy cái kia nam sĩ mặt lộ vẻ hoảng sợ, sau đó hoảng sợ mặt bị vô số đối móng vuốt sinh sôi xả thành hai nửa, óc vỡ toang.</p>
+<p>Lộ ra bên trong rậm rạp, đang ở mấp máy sâu.</p>
+<p>Một cái loại nhỏ trùng triều, cứ như vậy ở hắn trước mắt bạo phát.</p>
+<p>Tác giả có chuyện nói</p>
+<p>----------------------</p>
+<p>Đẩy một đợt dự thu « tỉnh lại sau thế giới thế nhưng tận thế?! »</p>
+<p>Mạt thế buông xuống, vạn vật cơ biến, nhân loại cũng ở sốt cao cùng ngắn ngủi hôn mê trung hoàn thành tiến hóa, đạt được siêu việt cực hạn lực lượng.</p>
+<p>Mà Lê Ngung liền lợi hại, ở mạt thế bắt đầu hắn liền lâm vào hôn mê, một giấc ngủ 50 năm.</p>
+<p>Lê Ngung rốt cuộc tỉnh.</p>
+<p>Thế giới này cũng rốt cuộc băng thành hắn nhận không ra bộ dáng.</p>
+<p>Có đối với hắn mỉm cười to lớn thực nhân ngư, trường răng nanh đáng yêu hoa ăn thịt người, thậm chí ruồi bọ đều trường dài đến hai mét khẩu khí……</p>
+<p>Tin tức tốt là, nhân loại cũng không có tại đây tràng tiến hóa trung diệt sạch. Bọn họ dựng nên sắt thép lâu đài, đem các loại dị hình sinh vật ngăn cản bên ngoài, xây dựng thuộc về nhân loại nơi ẩn núp.</p>
+<p>Tin tức xấu là, hắn tại đây tràng toàn thế giới phạm vi long trọng tiến hóa trung cũng không có đạt được bất luận cái gì lực lượng. Ở cái này người đều kim cương babi thời đại, hắn gầy yếu đến không giống như là một cái sinh hoạt ở mạt thế nhân loại.</p>
+<p>Lê Ngung ? Ta giống như bị toàn thế giới cô lập</p>
+<p>Bạch tháp người chấp hành du tẩu với dị chủng chi gian, ý thức không ngừng bị ô nhiễm vật ăn mòn.</p>
+<p>Bọn họ thương có khi không ngừng muốn chỉ hướng dị hình sinh vật, còn phải đối chuẩn chính mình đồng bạn.</p>
+<p>Lục Chấp Xuyên là bạch tháp tối cao chấp hành trường, được xưng là nhân loại cuối cùng một đạo phòng tuyến.</p>
+<p>Ngoại giới đồn đãi hắn lạnh nhạt đến bất cận nhân tình, thẳng đến bọn họ nhìn đến Lục Chấp Xuyên mang về tới một cái đẹp thanh niên.</p>
+<p>Cái kia thanh niên nhìn qua gầy yếu lại mềm mại, có một đôi không giống đến từ chính mạt thế sạch sẽ hai mắt.</p>
+<p>Lục Chấp Xuyên từ nhìn thấy Lê Ngung đệ nhất mặt bắt đầu, liền cảm thấy hắn rất kỳ quái.</p>
+<p>Người này cơ hồ không có bất luận cái gì sinh hoạt thường thức, cũng hoàn toàn không hiểu nhân loại xã giao lễ nghi.</p>
+<p>Mọi người nhìn đến cái này xinh đẹp thanh niên túm chặt chấp hành lớn lên góc áo, nhẹ giọng nói “Trưởng quan, ta có thể cùng ngươi ở cùng một chỗ sao?”</p>
+<p>Vây xem quần chúng …… Hắn muốn xong</p>
+<p>Lại không nghĩ rằng chấp hành trường chỉ là rũ mắt, lại không có đẩy ra cái tay kia.</p>
+<p>“Tùy ngươi.”</p>
+<p>Hắn không chút để ý nói.</p>
+<p>Nhưng thực mau Lục Chấp Xuyên liền hối hận.</p>
+<p>Hắn nhìn nửa đêm lăn đến chính mình trong lòng ngực một đoàn, yên lặng nói “Trở về ngủ.”</p>
+<p>Lê Ngung nghi hoặc ngẩng đầu, “Chúng ta đều là nhân loại, vì cái gì không thể cùng nhau ngủ?”</p>
+<p>Lục Chấp Xuyên ý thức đang ở bị ô nhiễm vật một tấc tấc ăn mòn, vốn nên đẩy ra tay lại chậm rãi dừng ở đối phương bối thượng.</p>
+<p>“…… Tùy ngươi.”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong21.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong23.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tan-phe-cung-co-the-khai-co-giap";
+const NOVEL_TITLE = "Tàn phế cũng có thể khai cơ giáp?!";
+const CHAPTER_TITLE = "Chương 22. Cái gọi là cố nhân";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 19. Đặc thù cảm ứng</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tàn phế cũng có thể khai cơ giáp?!
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 19. Đặc thù cảm ứng</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong18.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong20.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Trước mặt “Người” có nhân loại tứ chi cùng cơ bản dáng người, đôi mắt bạo khởi, ngoài miệng trường thuộc về trùng loại khẩu khí, đầu lưỡi vô lực mà ra bên ngoài gục xuống, còn ở xuống phía dưới nhỏ màu đỏ nhạt không rõ chất lỏng. Cả khuôn mặt xanh trắng, đỉnh đầu có một cái thật dài khẩu tử, mơ hồ có thể nhìn đến một đoàn màu đen đồ vật ở bên trong mấp máy.</p>
+<p>Cái này “Người” xụi lơ trên mặt đất, thoạt nhìn đã chết.</p>
+<p>Nôn……</p>
+<p>Hứa Dung cơ hồ trong nháy mắt liền hồi tưởng nổi lên phía trước ở trên Tinh Võng xuất hiện tần suất cực cao một cái từ “Trùng tộc”.</p>
+<p>Cecil phản ứng cũng chứng thực hắn phỏng đoán.</p>
+<p>Cecil sắc mặt thật không đẹp, hắn dùng dày rộng thân hình che ở Hứa Dung cùng Đoan Mộc Quỳnh trước người, chậm rãi cùng nhau sau này lui, sau đó giữ cửa hung hăng một quan.</p>
+<p>Đoan Mộc Quỳnh động tác thực mau, nhanh nhẹn mà ở quang não trung liên hệ người phụ trách, theo sau gửi đi vị trí.</p>
+<p>Kia tốt người phụ trách thực dứt khoát mà nói cho bọn họ thực mau liền có chuyên nghiệp nhân viên trình diện, làm cho bọn họ cần phải bảo vệ tốt chính mình an toàn.</p>
+<p>Hứa Dung “Chúng ta đãi ở trong phòng liền sẽ không có việc gì sao?”</p>
+<p>Cecil giật nhẹ khóe miệng, cứng đờ mà lộ ra một cái cười, “Ít nhất ở bên ngoài vị kia kẻ xui xẻo bị chúng nó ăn xong phía trước, chúng nó tạm thời sẽ không đánh chúng ta chủ ý.”</p>
+<p>Đoan Mộc Quỳnh đối Trùng tộc hiểu biết so Hứa Dung nhiều đến nhiều, “Vì cái gì trường quân đội người sẽ bị Trùng tộc ký sinh? Là chỉ có này một cái, vẫn là……”</p>
+<p>Hứa Dung lập tức liền theo Đoan Mộc Quỳnh nói tiếp tục tưởng đi xuống.</p>
+<p>Ở nhân loại tiến vào tinh tế thời đại về sau, đương nhiên đụng tới rất nhiều ngoại tinh sinh mệnh. Cùng nhân loại có ích lợi tranh cãi có tinh thú cùng Trùng tộc.</p>
+<p>Tinh thú trí tuệ trình độ không cao, mà cao cấp Trùng tộc có cùng nhân loại so sánh với nghĩ trí tuệ.</p>
+<p>Chúng nó vẫn luôn ý đồ ngầm chiếm nhân loại lãnh thổ, thậm chí có thể trực tiếp ký sinh nhân loại.</p>
+<p>Loại này giống loài năng lực sinh sản cực cường.</p>
+<p>Nếu trước mặt cái này “Người” không phải cái thứ nhất bị ký sinh giả, như vậy hiện giờ trường quân đội rốt cuộc có bao nhiêu cái như vậy ký sinh giả đã không dám nghĩ nhiều.</p>
+<p>Cecil nhún nhún vai, “Chúng ta trường quân đội phải có phiền toái.”</p>
+<p>Cecil đoán trước tương đương tinh chuẩn.</p>
+<p>Kế tiếp chuyên nghiệp nhân viên bay nhanh tới hiện trường, Hứa Dung ở trong phòng nghe được bên ngoài truyền đến “Tư xèo xèo” thanh âm, theo sau có người gõ cửa, “Bên trong đồng học, có thể đem cửa mở ra.”</p>
+<p>Đoan Mộc Quỳnh mở cửa.</p>
+<p>Bên ngoài có mười mấy người, từ đầu võ trang đến chân, mỗi người trên tay đều giơ thương, miệng vết thương nhắm ngay Hứa Dung bọn họ ba cái.</p>
+<p>Cecil tiến lên một bước, giơ lên tay, “Ta bảo đảm, từ đầu tới đuôi chúng ta đều không có tiếp xúc quá hắn.”</p>
+<p>Người phụ trách ngữ khí thực nhẹ nhàng, “Không cần khẩn trương, chúng ta chỉ là yêu cầu bảo đảm bọn học sinh an toàn. Kế tiếp phiền toái các ngươi cùng chúng ta cùng nhau làm mấy hạng kiểm tra, sẽ không chậm trễ các ngươi thời gian rất lâu. Phiền toái.”</p>
+<p>Giữa những hàng chữ tương đương khách khí, nhưng nhậm là ai đều có thể nghe ra trong giọng nói cường hoành cùng chân thật đáng tin.</p>
+<p>Người phụ trách là một cái vóc dáng cao nữ tính, lưu trữ giỏi giang tóc ngắn, ở đi viện nghiên cứu trên đường nói cho bọn họ, nàng kêu Allie.</p>
+<p>“Nếu các ngươi có chỗ nào không thoải mái địa phương có thể tùy thời nói cho ta. Không cần sợ hãi. Này chỉ là cấp thấp Trùng tộc, tư liệu biểu hiện chúng nó năng lực sinh sản thực nhược.”</p>
+<p>Viện nghiên cứu mỗi người đều là toàn bộ võ trang, một cái áo blouse trắng trừu bọn họ mỗi người một ống máu, sau đó Allie liền đem bọn họ mang tới phòng nghỉ, “Ở kết quả ra tới phía trước các ngươi không thể rời đi, hy vọng các ngươi có thể lý giải. Yên tâm, chúng ta bên này sẽ giúp ngươi liên hệ các ngươi huấn luyện viên cùng lão sư, cùng bọn họ câu thông các ngươi huấn luyện tiến độ, sẽ không ảnh hưởng đến các ngươi việc học. Các ngươi đều là dự bị quân nhân, cái nào nặng cái nào nhẹ hẳn là đều phân rõ.”</p>
+<p>Hứa Dung nhấc tay, “Ta có thể hỏi nhiều một câu sao?”</p>
+<p>Allie làm ra một cái “Thỉnh” tư thế.</p>
+<p>Đoan Mộc Quỳnh cùng Cecil cũng vọng lại đây. Hứa Dung nói “Ta muốn biết chuyện này sẽ xử lý như thế nào? Ta chỉ chính là Tinh Xuyên trường quân đội người.”</p>
+<p>Allie mỉm cười, “Không có gì không thể nói, chúng ta sẽ tổ chức nhân viên qua đi tiến hành phạm vi lớn Trùng tộc diệt sát, hơn nữa mấy ngày nay tiếp xúc quá Tinh Xuyên trường quân đội học sinh mỗi người bao gồm bọn họ tự thân đều sẽ từng cái làm thân thể kiểm tra, sẽ không bỏ qua bất luận cái gì một cái khả nghi nhân tố. Ngươi còn có vấn đề sao?”</p>
+<p>Hứa Dung sáng suốt nói “Đã không có.”</p>
+<p>Allie gật đầu, ngọn tóc vứt ra một đạo lưu loát đường cong, “Vậy các ngươi liền ở chỗ này hảo hảo nghỉ ngơi đi, ta bảo đảm, nếu các ngươi không có vấn đề nói thực mau là có thể đi ra ngoài.”</p>
+<p>Cecil nhàn rỗi không có việc gì ngồi ở giường đơn thượng nhắm mắt dưỡng thần, Đoan Mộc Quỳnh thì tại ăn nghiên cứu viên miễn phí điểm tâm ngọt.</p>
+<p>Hứa Dung mở ra quang não, Nặc Tạp vẫn luôn ở tin tức oanh tạc hắn.</p>
+<p>【 thiên nột! Tinh Xuyên tới thật nhiều người! Đều là một ít quân nhân, không biết là cái nào quân khu, bọn họ đem chúng ta trường học toàn bộ vây đi lên! 】</p>
+<p>【 Hứa Dung ngươi có khỏe không? Ta nghe nói ngươi bị mang đi. 】</p>
+<p>【 chúng ta sở hữu học sinh đều bị khấu ở trong trường học không cho đi ra ngoài, bằng không ta đi liên hệ một chút ta mẹ, làm nàng an ủi một chút lộ thúc không nên gấp gáp? 】</p>
+<p>【 tới thật nhiều khác trường quân đội lãnh đạo, tê, ta thấy được Tinh Xu cùng Phụ Quân người. Chuyện này giống như nháo đến rất đại. 】</p>
+<p>【 Hello? Ở sao? Nhìn đến đừng quên hồi ta. 】</p>
+<p>Hắn thật sự không thể tưởng được Caria người như vậy bối rối là bộ dáng gì. Caria biết chuyện này đại khái chỉ biết một cái tát hô ở trên người hắn, sau đó nói một câu “Vấn đề không lớn”.</p>
+<p>Hứa Dung ngón tay dừng một chút, ở cuối cùng chậm rãi đánh ra một cái dấu chấm câu, sau đó gửi đi.</p>
+<p>Nặc Tạp bên kia giây hồi, 【 ngươi không có việc gì thật là quá tốt rồi! Ta còn tưởng rằng ngươi thật sự bị Trùng tộc ký sinh đâu. Đáng giận sâu, thật là ghê tởm đã chết. 】</p>
+<p>Hứa Dung hồi tưởng khởi người nọ thảm trạng, rất khó không đối Nặc Tạp nói tỏ vẻ tán đồng.</p>
+<p>【 ngươi hiện tại an toàn liền hảo, có thời gian lại đây ta lại cho ngươi cánh tay máy giọng tính năng, gần nhất viện trưởng đại nhân mới vừa dạy chúng ta……】</p>
+<p>Hứa Dung một mực tam hành mà vấn an, đã phát một cái tiểu hùng khom lưng biểu tình bao, theo sau phản hồi tin tức giao diện, vừa muốn đóng lại quang não, đột nhiên lại bắn ra một cái tin tức lan.</p>
+<p>Thế nhưng là vẫn luôn không có liên hệ quá hắn Hạ Thời Hành.</p>
+<p>【 ngươi hiện tại an toàn sao? 】</p>
+<p>Hứa Dung lễ phép hồi phục 【 ta ở viện nghiên cứu, phi thường an toàn. Cảm ơn quan tâm? 】</p>
+<p>Hứa Dung nhìn trước mắt tự, không tự chủ được mà liền hồi tưởng khởi Hạ Thời Hành giấu ở nghiêm túc dưới ôn nhu.</p>
+<p>【 ra viện nghiên cứu sau không cần lập tức hồi Tinh Xuyên trường quân đội, nơi đó mấy ngày nay tương đối loạn. Ngươi có mặt khác đãi địa phương sao? 】</p>
+<p>Hứa Dung nhớ tới Caria co quắp phòng nhỏ, cảm thấy chính mình phi thường không thích hợp qua đi, nhưng hắn cũng không tưởng phiền toái cái này bị hắn hố quá người hảo tâm, vẫn là nói 【 không cần lo lắng, ta biết đang ở nơi nào, sẽ không hồi trường quân đội. 】</p>
+<p>Hứa Dung xuất phát từ chủ nghĩa nhân đạo cũng kiến nghị Đoan Mộc Quỳnh cùng Cecil tạm thời không cần hồi trường học.</p>
+<p>Đoan Mộc Quỳnh nho nhã lễ độ, “Ta giáo ngoại không có chỗ ở, hơn nữa ta còn có rất nhiều kiêm chức không có hoàn thành.”</p>
+<p>Cecil nhưng thật ra nhận đồng cái này cái nhìn, “Đế Đô Tinh đã rất nhiều năm không có tao ngộ quá Trùng tộc quấy nhiễu, chuyện này phỏng chừng sẽ không đơn giản, ta còn là trở về tránh tránh đầu sóng ngọn gió.”</p>
+<p>Hứa Dung không có lại khuyên Đoan Mộc Quỳnh, bọn họ vốn dĩ liền không quen biết, này cũng bất quá là thuận miệng nhắc tới.</p>
+<p>Bọn họ đều tâm trí thành thục, tự nhiên đều có thể chính mình hành vi phụ trách.</p>
+<p>Qua không lâu, một cái viện nghiên cứu lại đây thông tri bọn họ có thể rời đi.</p>
+<p>Ba người cho nhau từ biệt.</p>
+<p>Hứa Dung chạy chậm cùng Đoan Mộc Quỳnh sóng vai đi tới.</p>
+<p>Đoan Mộc Quỳnh “…… Ta cho rằng ngươi sẽ trở về.”</p>
+<p>Hứa Dung cười hì hì, “Ta cũng không chỗ ở.”</p>
+<p>Hai người ngồi huyền phù xe trở về, còn hoa năm cái tinh tệ, Hứa Dung rất là đau mình, “Vì cái gì viện nghiên cứu người đem chúng ta đưa qua đi không phụ trách đem chúng ta đưa về tới? Quá không đáng tin cậy đi.”</p>
+<p>Đoan Mộc Quỳnh rất có đồng cảm.</p>
+<p>Hai người xuống xe về sau, Hứa Dung đục lỗ liền nhìn đến dựa vào trường quân đội đại môn Hạ Thời Hành.</p>
+<p>Hai người hai mặt nhìn nhau.</p>
+<p>Hứa Dung “……”</p>
+<p>Hạ Thời Hành cười có điểm lạnh, “Sẽ không trở về? Biết đang ở nơi nào?”</p>
+<p>Đoan Mộc Quỳnh nhìn xem Hạ Thời Hành trên người Tinh Xu trường quân đội giáo phục, hỏi Hứa Dung, “Ngươi nhận thức?”</p>
+<p>Hứa Dung đẩy một phen Đoan Mộc Quỳnh, “Ngươi đi về trước đi, người này là tới tìm ta.”</p>
+<p>Đoan Mộc Quỳnh không nói thêm gì, nhàn nhạt từ Hạ Thời Hành trên người đảo qua, liền đi rồi.</p>
+<p>Cuối cùng vẫn là Hạ Thời Hành tiến lên đây thuận tay xoa nhẹ một phen Hứa Dung nổ tung màu xanh biển mềm mại sợi tóc, “Đi thôi, đi trước ta nơi đó trụ?”</p>
+<p>Hứa Dung nhíu mày khó hiểu, “Ngươi cố ý tới đón ta?”</p>
+<p>Hạ Thời Hành câu môi, “Tiện đường.”</p>
+<p>Tin ngươi cái quỷ nga.</p>
+<p>Bất quá đây là cái lợi cho chính mình chuyện tốt, Hứa Dung không cần phải cự tuyệt, vì thế liền thượng Hạ Thời Hành mang đến tư nhân huyền phù xe.</p>
+<p>Hạ Thời Hành xe phi thường khốc, tao bao lượng màu đỏ.</p>
+<p>Hứa Dung trộm nhìn Hạ Thời Hành liếc mắt một cái.</p>
+<p>Nhìn không ra tới sao. Người này thế nhưng thích loại này phong cách.</p>
+<p>Hạ Thời Hành tựa hồ trong lúc lơ đãng giải thích, “Cái này xe không phải ta chính mình mua.”</p>
+<p>Hứa Dung gật đầu, “Ân ân.” Thực có lệ.</p>
+<p>Hạ Thời Hành tựa hồ có chút vô ngữ, dọc theo đường đi đều không có nói nữa.</p>
+<p>Tới rồi địa phương lúc sau, Hạ Thời Hành đem Hứa Dung mang đi vào, đèn bị trí tuệ nhân tạo mở ra.</p>
+<p>Có một đạo ôn nhu âm thanh cơ giới vang lên “Là có khách nhân sao?”</p>
+<p>Hạ Thời Hành cấp Hứa Dung tìm vào nhà giày, nói “Hắn tạm thời ở nơi này.”</p>
+<p>Sau đó đối Hứa Dung nói “Nó kêu phỉ so á, ngươi có cái gì yêu cầu có thể cùng nó nói.”</p>
+<p>Phỉ so á đối lập lần đầu tiên thấy Hạ Thời Hành liền cử pháo Duy Tát quả thực quá có lễ phép, “Ngươi hảo, ta là hạ tiên sinh quản gia.”</p>
+<p>Hứa Dung nhìn trước mắt nhìn qua thập phần thân sĩ soái khí người phỏng sinh, trong lòng có điểm ngứa.</p>
+<p>Tưởng cấp đãi ở Caria nơi đó Duy Tát cũng làm một cái xác.</p>
+<p>Hạ Thời Hành đại khái cùng Hứa Dung ở cái này trong phòng dạo qua một vòng, đại khái giới thiệu một lần này đó phòng tác dụng.</p>
+<p>Hứa Dung đối Hạ Thời Hành xa hoa đại phòng phi thường đỏ mắt.</p>
+<p>Hạ Thời Hành cuối cùng nói “Ngươi liền ở tại phòng này, ta phòng liền ở ngươi chính phía dưới, ngươi có thể đi tìm ta, nhưng ta rất ít trở về. Bình thường này đó nhà ở ngươi đều có thể sử dụng, ngươi cái kia trong phòng ngủ ta còn trang huấn luyện khoang, ngươi có thể tiến hành hằng ngày huấn luyện.”</p>
+<p>Hứa Dung hiếu kỳ nói “Nơi này bình thường chỉ có ngươi một người trụ sao?”</p>
+<p>“Cha mẹ ta không ở bên này trụ.”</p>
+<p>“Nga.” Hứa Dung gật đầu, “Kia không có vấn đề.”</p>
+<p>Hạ Thời Hành tùy tay trảo quá một kiện áo khoác, “Trường quân đội bên kia còn có chuyện, ta phải đi về xử lý. Phỉ so á sẽ chuẩn bị ngươi bữa tối, muốn ăn cái gì trực tiếp phân phó nó, nó sẽ tiến hành chọn mua. Hoặc là ngươi có mặt khác yêu cầu cũng có thể trực tiếp dùng quang não liên hệ ta, nếu nhìn đến ta sẽ cho ngươi hồi phục. Còn có, mấy ngày nay không cần đi ra ngoài chạy loạn.”</p>
+<p>Hứa Dung nhìn theo Hạ Thời Hành vội vã rời đi.</p>
+<p>Phong giống nhau nam nhân.</p>
+<p>Hứa Dung ở trong lòng cảm khái.</p>
+<p>Tác giả có chuyện nói</p>
+<p>----------------------</p>
+<p>Ngắn ngủi sống chung 【bu shi】 sinh hoạt muốn bắt đầu rồi</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong18.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong20.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tan-phe-cung-co-the-khai-co-giap";
+const NOVEL_TITLE = "Tàn phế cũng có thể khai cơ giáp?!";
+const CHAPTER_TITLE = "Chương 19. Đặc thù cảm ứng";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 49. or lựa chọn</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tàn phế cũng có thể khai cơ giáp?!
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 49. or lựa chọn</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong48.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong50.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Bằng hữu, ngươi như vậy làm ta rất khó làm.”</p>
+<p>Hứa Dung cảm giác chính mình chỉ là máy móc mà nhấc chân, lại buông, quá độ mỏi mệt thân thể không có lúc nào là không nhớ tới bãi công.</p>
+<p>“Ta là tới giúp của các ngươi, ngươi như vậy sẽ thương tổn chúng ta hoà bình hữu hảo quan hệ.”</p>
+<p>Đao sẹo nam bỗng nhiên quay đầu, dùng ánh mắt câu lấy hắn, “Ngươi còn có đồng lõa?”</p>
+<p>Hứa Dung giây đáp “Có a, đương nhiên là chúng ta xa ở Doron độ sáng tinh thể đối đãi các ngươi trở về mọi người trong nhà a.”</p>
+<p>Hắn trực giác hiện tại tình tiết phát triển có chút không đúng, không dám đem Đoan Mộc Quỳnh đám người tồn tại để lộ ra đi.</p>
+<p>Hứa Dung theo theo dạy bảo “Còn có, cái gì kêu đồng lõa? Ở chỗ này muốn kêu đồng chí, chúng ta đều là chiến hữu, quân dân một nhà thân hiểu được sao.”</p>
+<p>Nhưng đao sẹo nam không có đơn giản mà buông tha hắn, híp mắt khẩu súng để ở Hứa Dung trên đầu, “Ít nói nhảm, ta nhưng không tin ngươi là chính mình tới.”</p>
+<p>“Đương nhiên không phải.” Trên trán lạnh lẽo xúc cảm nhắc nhở Hứa Dung muốn thận trọng từ lời nói đến việc làm, nhưng ngoài miệng còn tại bần, “Chúng ta tới cứu các ngươi là thực nghiêm túc, cho nên phái ra một chi tinh nhuệ nhất tiểu đội.”</p>
+<p>Hứa Dung cảm giác một cái khác vẫn luôn bảo trì trầm mặc đại ca đột nhiên nhìn hắn một cái, Hứa Dung không cần đoán cũng biết hắn suy nghĩ cái gì.</p>
+<p>Liền ngươi?</p>
+<p>Hứa Dung tiếp tục nói “Bất quá bảo hiểm khởi kiến bọn họ đang ở cách lâm tinh cùng đóng giữ quân đội giao thiệp, từ ta trước tới tìm tới nơi này người sống sót, lấy được các ngươi tín nhiệm, lấy nhanh hơn đến lúc đó chúng ta nhiệm vụ hiệu suất.”</p>
+<p>“Cho nên nói, các ngươi thái độ này làm ta rất khó làm a.”</p>
+<p>Tuy rằng Hứa Dung cũng cảm thấy cái này lý do thực xả, nhưng đối phương cũng không có lý do gì nghi ngờ hắn nói.</p>
+<p>Rốt cuộc bọn họ xác thật chỉ có thấy hắn một người. Liền tính hoài nghi, cũng chỉ sẽ cho rằng những người khác đều táng thân trùng bụng.</p>
+<p>Đao sẹo nam không có nói nữa.</p>
+<p>Bọn họ sở đi phương hướng càng ngày càng thiên, dần dần rời xa kiến trúc đàn, triều hoang mạc chỗ sâu trong đi đến.</p>
+<p>Hứa Dung chửi thầm, nếu hắn chết ở nơi này lời nói, liền tính cho hắn các bạn nhỏ một năm thời gian, bọn họ đều không nhất định có thể tìm được hắn thi thể.</p>
+<p>Gió to cuốn hạt cát đánh vào Hứa Dung trên người, hắn đôi mắt gian nan mà híp, cuối cùng đơn giản đem đôi mắt một bế, trực tiếp theo hai người lực đạo đi phía trước đi.</p>
+<p>Liền ở Hứa Dung cảm giác chính mình đã sắp bởi vì mất nước ngất xỉu đi thời điểm, kia hai người rốt cuộc ngừng lại.</p>
+<p>Hứa Dung cười khổ.</p>
+<p>Hiện tại cho dù có người dùng hắn làm thực nghiệm trên cơ thể người, phỏng chừng chính mình đều không có gì phản kháng sức lực.</p>
+<p>Hứa Dung trước mắt là một cái dung mạo bình thường kiến trúc, bề ngoài xây dựng phi thường thô ráp, nhìn qua đã ở gió cát đứng sừng sững có chút năm đầu, thậm chí có thể nhìn đến bên cạnh có một thân cây nửa ngã nửa không mà ỷ ở vật kiến trúc trên người.</p>
+<p>Hứa Dung ở trong lòng phán đoán đây là cái địa phương nào, có thể hay không là những người sống sót tụ tập địa.</p>
+<p>Kết quả tiến vào sau hắn mới phát hiện, bên trong thế nhưng cùng bề ngoài hoàn toàn bất đồng.</p>
+<p>Một bước vào đại môn, dày nặng cửa hợp kim liền ở sau người không tiếng động khép lại, ngăn cách bên ngoài gào thét gió cát.</p>
+<p>Trong không khí tràn ngập nhàn nhạt nước sát trùng cùng năng lượng làm lạnh tề hỗn hợp hương vị, ánh đèn đều đều tưới xuống, chiếu đến mỗi một chỗ góc đều rõ ràng vô cùng.</p>
+<p>Hai sườn là khảm ở tường thể phong kín pha lê khoang, bên trong huyền phù không biết tên tinh tế sinh vật hàng mẫu, có còn ở chậm rãi mấp máy, xúc tu ở dinh dưỡng dịch nhẹ nhàng đong đưa.</p>
+<p>Các loại thực nghiệm phương tiện đầy đủ mọi thứ.</p>
+<p>Đao sẹo nam cùng một nam nhân khác đem hắn hướng trung gian đẩy, lực đạo không chút khách khí.</p>
+<p>Hứa Dung lảo đảo vài bước, cường chống nhũn ra chân đứng vững, mí mắt hung hăng nhảy dựng.</p>
+<p>“Vị này chính là……”</p>
+<p>Nghe đến đó động tĩnh, một cái mạc ước hơn 50 tuổi ăn mặc áo blouse trắng nam nhân đẩy ra một phiến ám môn, từ bên trong đi ra, thấy như vậy một màn hỏi.</p>
+<p>“Giáo thụ, đây là ta cùng lão tam đi ra ngoài tìm vật tư thời điểm gặp được người, thực khả nghi.”</p>
+<p>Hứa Dung mắt thấy vừa rồi tục tằng đại thúc lắc mình biến hoá thành thẹn thùng phong cách, đao sẹo nam sờ sờ chính mình cái ót, nhìn qua cái này cái gọi là giáo thụ phi thường tôn kính.</p>
+<p>“Ta nơi nào khả nghi? Ta phải hảo hảo ở kia tìm vật tư, các ngươi hai cái đột nhiên toát ra tới liền giơ súng công kích ta, ta mới cảm thấy các ngươi khả nghi đâu. Ta hiện tại nghiêm trọng hoài nghi các ngươi là nguy hiểm phần tử.”</p>
+<p>Đáng tiếc ở đây vài người không có một người lý Hứa Dung, đao sẹo nam còn ở hướng cái kia giáo thụ hội báo tình huống, “Tiểu tử này nói hắn là quân đội người, tới cứu chúng ta.”</p>
+<p>Trong giọng nói hoàn toàn không có đối quân đội kính sợ.</p>
+<p>“Ngươi cảm thấy hắn bị ký sinh?”</p>
+<p>Giáo thụ tiến lên liền mạnh mẽ bẻ ra Hứa Dung mí mắt, đánh quang cẩn thận tới tới lui lui mà chiếu.</p>
+<p>Đao sẹo nam nói “Đúng vậy giáo thụ, chúng ta đụng tới hắn thời điểm, hắn thoạt nhìn phi thường mỏi mệt, nhìn qua đã ở chỗ này đãi có một đoạn thời gian, ta không cho rằng hắn có thể an an ổn ổn mà đãi như vậy thời gian.”</p>
+<p>…… Có ý tứ gì?</p>
+<p>Nói đến nói đi vẫn là khinh thường hắn?</p>
+<p>“Cái gì ký sinh?” Hứa Dung phản kháng không có kết quả, lại bị gắt gao mà ấn ở trên mặt đất, chỉ có thể tùy ý cái kia giáo thụ kiểm tra, “Các ngươi cảm thấy ta bị Trùng tộc ký sinh?”</p>
+<p>Hứa Dung khiếp sợ mà tới tới lui lui từ vài người trên người qua lại nhìn quét, xác định bọn họ ngữ khí là nghiêm túc sau, mới miễn cưỡng nghiêm túc nói</p>
+<p>“Ta cũng không cho rằng ta nếu đụng phải những cái đó Trùng tộc sẽ hảo hảo sống ở hiện tại, còn có thể có tinh lực cùng các ngươi bẻ xả mấy vấn đề này.”</p>
+<p>Hứa Dung trơ mắt nhìn cái kia giáo thụ kiểm tra xong hắn mắt kính sau, cầm một cây phi thường thô châm thẳng tắp chọc tiến hắn cánh tay, rút ra một ống to huyết.</p>
+<p>Mất máu quá nhiều, Hứa Dung cảm thấy trước mắt từng trận biến thành màu đen.</p>
+<p>Giáo thụ đem Hứa Dung huyết bỏ vào một cái dụng cụ, vài giây về sau, hắn tự mình tới đem Hứa Dung từ trên mặt đất nâng dậy tới.</p>
+<p>Nhìn qua thực xin lỗi, “Là chúng ta trách oan ngươi, lão nhị cùng lão tam chỉ là phải vì căn cứ phụ trách, đều không phải là có tâm có lỗi.”</p>
+<p>Đao sẹo nam thực kinh ngạc, lại hỏi một lần, “Thật không phải?”</p>
+<p>“Các loại kích thích tố trình độ đều thực ổn định.”</p>
+<p>Cái này Hứa Dung hai cái cánh tay mới toan hoàn toàn giải thoát rồi.</p>
+<p>Hắn hoạt động hoạt động đau nhức bả vai, giáo thụ thấy thế tiến lên thế hắn xử lý trên vai miệng vết thương, “Đây là lão nhị làm cho?”</p>
+<p>“…… Hảo nhãn lực.”</p>
+<p>Giáo thụ nói “Căn cứ này điều kiện tương đối đơn sơ, không có khoang trị liệu, cho nên chỉ có thể dùng bổn phương pháp tới xử lý miệng vết thương. Bất quá ta xem ngươi tự lành năng lực cũng không tệ lắm, cho nên vấn đề không lớn.”</p>
+<p>Hứa Dung bắt lấy hắn lời nói từ, “Đơn sơ?”</p>
+<p>Này quả thực là hắn gặp qua các loại dụng cụ nhiều nhất địa phương, liền Nặc Tạp gia phòng khám dởm đều không có như vậy toàn đồ vật.</p>
+<p>Giáo thụ ha hả cười nói “Nơi này trước kia là sinh vật viện nghiên cứu.”</p>
+<p>Kết hợp người khác đối hắn xưng hô, Hứa Dung hợp lý suy đoán, “Cho nên ngươi là……”</p>
+<p>“Ta là nơi này nghiên cứu viên, bọn họ đều kêu ta giáo thụ. Ở Trùng tộc hoàn toàn xâm chiếm hải cốc tinh về sau, nơi này liền trở thành người sống sót chỗ tránh nạn.”</p>
+<p>Nơi này chính là hải cốc tinh.</p>
+<p>Hứa Dung đột nhiên mạc danh cảm thấy một tia hoang đường.</p>
+<p>“Cho nên là các ngươi hướng bên ngoài phát ra cầu cứu tín hiệu?”</p>
+<p>Giáo thụ gật đầu, “Đúng vậy, chúng ta ở năm ngày trước hướng khoảng cách nơi này gần nhất cách lâm tinh gửi đi cầu cứu tín hiệu, không nghĩ tới các ngươi tốc độ nhanh như vậy.”</p>
+<p>Hứa Dung ở phán đoán hắn trong lời nói chân thật tính.</p>
+<p>Hắn vuốt cánh tay thượng vừa rồi rút máu lưu lại lỗ kim, trên mặt bất động thanh sắc, trong lòng bàn tính đánh đến bay nhanh.</p>
+<p>Năm ngày trước phát ra tín hiệu, Hứa Dung cùng những người khác ở nửa đường trung tao ngộ phục kích, như vậy xảo liền bách hàng ở hải cốc tinh.</p>
+<p>Mà hắn vừa vặn liền cùng đồng bạn thất lạc.</p>
+<p>Hải cốc tinh như vậy đại, hắn đi bộ hành tẩu bất quá hai ngày, liền như vậy xảo đụng phải này đó người sống sót.</p>
+<p>Một vòng khấu một vòng, này đã không phải đơn giản vận khí có thể khái quát.</p>
+<p>Huống hồ.</p>
+<p>Hắn giương mắt đảo qua hai sườn pha lê khoang chậm rãi mấp máy dị tinh sinh vật hàng mẫu, xúc tu xẹt qua dinh dưỡng dịch dấu vết rất nhỏ có thể thấy được. Những cái đó hàng mẫu hình thái quỷ dị, tuyệt phi bình thường tinh tế sinh vật có khả năng có được, càng như là…… Trùng tộc ấu thể cùng biến dị thể.</p>
+<p>Bọn họ còn tại tiến hành sinh vật thực nghiệm.</p>
+<p>Giáo thụ tựa hồ nhận thấy được hắn ánh mắt, ôn hòa mà cười cười, quay đầu ý bảo kia hai người rời đi.</p>
+<p>Đao sẹo nam có điểm do dự, cảnh giác mà nhìn về phía Hứa Dung. Nhưng vẫn là bị cái kia kêu lão tam người lôi đi.</p>
+<p>“Xem ra hứa tiểu hữu đối này đó hàng mẫu thực cảm thấy hứng thú.” Giáo thụ giơ tay phất quá pha lê khoang vách tường, “Trùng tộc xâm lấn hải cốc tinh ba năm, chính phủ đã sớm an bài nhân viên rút lui, nhưng ta cùng ta nghiên cứu viên nhóm vẫn luôn không muốn rời đi, chính là bởi vì này đó sinh vật hàng mẫu. Thẳng đến hải cốc tinh hoàn toàn luân hãm, chúng ta cũng đã không có rời đi cơ hội. Mà mặt khác người sống sót cũng là trùng triều đến cái này giờ địa phương vừa khéo liền ở viện nghiên cứu phụ cận. Chúng ta chỉ là cho bọn hắn cung cấp một cái nơi nương náu.”</p>
+<p>“Vậy các ngươi như thế nào sẽ lưu lạc đến nước này? Theo ta được biết, mỗi cái cao cấp viện nghiên cứu đều có độc lập phòng ngự hệ thống cùng võ trang công cụ.”</p>
+<p>Nghe được Hứa Dung nghi ngờ, giáo thụ sắc mặt khó coi vài phần, “Nơi này Trùng tộc biến dị.”</p>
+<p>“Biến dị?”</p>
+<p>Hứa Dung nhịn không được lặp lại một lần.</p>
+<p>“Đúng vậy, chúng nó biến dị.” Giáo thụ nói, “Hoặc là nói là tiến hóa. Căn cứ ta dự phán, viện nghiên cứu phòng ngự hệ thống căn bản vô pháp ngăn cản Trùng tộc tập kích. Chúng ta định kỳ phái ra nhân viên đến ngoại giới tìm kiếm vật tư, có một nửa người đều không có lại trở về.”</p>
+<p>Hứa Dung không có lý do gì đi hoài nghi hắn nói.</p>
+<p>Giáo thụ nhìn về phía Hứa Dung, “Đến ngươi. Ngươi như thế nào chứng minh chính mình thân phận.”</p>
+<p>“Giáo thụ.” Hứa Dung cũng lựa chọn cái này xưng hô, “Liền tính ta không phải, ngươi hiện tại cũng chỉ có thể tin tưởng ta.”</p>
+<p>Huống chi, một cái quân giáo sinh nên như thế nào chứng minh chính mình là quân giáo sinh?</p>
+<p>Này gian trong phòng trầm mặc hai giây, “Hảo đi.” Giáo thụ thỏa hiệp, “Ta nên tin tưởng ngươi. Ngươi không phải là chính mình tới, ngươi đồng bạn đâu?”</p>
+<p>Hứa Dung vừa rồi lời nói không tồi, giáo thụ chỉ có thể tin tưởng hắn, nhưng đồng dạng, hắn cũng chỉ có thể tin tưởng người này.</p>
+<p>Hứa Dung đơn giản đem chính mình tao ngộ nói cho giáo thụ, đồng thời dò hỏi người của hắn hay không phát hiện những người khác tồn tại dấu vết, hoặc là nói đột kích hạm rơi xuống phát ra động tĩnh.</p>
+<p>“Thật đáng tiếc, cũng không có.”</p>
+<p>Giáo thụ dừng một chút, rồi sau đó chậm rãi mở miệng, “Ngươi xác định, ngươi đồng đội, thật sự còn an toàn sao?”</p>
+<p>Hứa Dung rất có tin tưởng, “Bọn họ còn sống.”</p>
+<p>Giáo thụ bị hắn tích cực lạc quan cảm nhiễm, lộ ra tươi cười, chỉ là còn chưa nói chuyện, liền nghe được ngoài cửa truyền đến rung động thanh.</p>
+<p>Hứa Dung lỗ tai vừa động, một chút căng thẳng thần kinh.</p>
+<p>“Không cần khẩn trương.” Giáo thụ đè đè bờ vai của hắn, “Nơi này phong rất lớn, có đôi khi là sẽ như vậy.”</p>
+<p>Hứa Dung cảm giác chính mình lại ở hoàn cảnh này đãi đi xuống, thực mau liền phải thần kinh suy vi.</p>
+<p>Giáo thụ hướng vừa rồi chính mình xuất hiện ám môn phương hướng đi rồi vài bước, vừa mới đụng tới khi, hắn quay đầu lại, “Hứa tiểu hữu, có hứng thú đến xem chúng ta nghiên cứu sao?”</p>
+<p>“Đương nhiên.”</p>
+<p>Hứa Dung bước nhanh đuổi kịp giáo thụ nện bước.</p>
+<p>Ám môn ở Hứa Dung phía sau chậm rãi khép kín, thay thế chính là một cái hẹp dài kim loại thông đạo, thông đạo thượng ấn cảm ứng đèn. Mờ nhạt ánh đèn phát xuống dưới, Hứa Dung bóng dáng ở sau người kéo thật sự trường.</p>
+<p>Hứa Dung đạp lên trên mặt đất, phát ra thanh thúy tiếng bước chân, còn có một chút hồi âm.</p>
+<p>Nơi này thường thường có thể nhìn đến mấy cái đồng dạng ăn mặc áo blouse trắng nghiên cứu viên, bọn họ sẽ nghi hoặc mà nhìn phía Hứa Dung, nhưng cái gì cũng chưa hỏi, chỉ là khẽ gật đầu xem như hướng giáo thụ chào hỏi.</p>
+<p>Hứa Dung yên lặng mà quan sát bốn phía, thông đạo hai sườn không có bất luận cái gì dư thừa trang trí, chỉ có mỗi cách mấy mét liền xuất hiện dày nặng cách ly môn, trên cửa có khắc phức tạp mật mã khóa cùng sinh vật phân biệt trang bị.</p>
+<p>Hai người mạc ước đi rồi nửa phút, nhìn đến chỗ sâu nhất một cái kim loại môn.</p>
+<p>“Nơi này là viện nghiên cứu trung tâm khu vực, là chúng ta gửi số ῳ*Ɩ theo cùng nhất đặc thù hàng mẫu địa phương, cũng là ta suốt đời tâm huyết nơi.”</p>
+<p>Giáo thụ ngữ khí thực nhẹ nhàng, tiến lên một bước thông qua tròng đen phân biệt, mở cửa.</p>
+<p>“Aiya.”</p>
+<p>Một cái nữ viện nghiên cứu nghe tiếng quay đầu lại, “Giáo thụ ngài đã tới.”</p>
+<p>Nàng chú ý tới giáo thụ phía sau Hứa Dung, “Vị này chính là…… Mới vừa cứu người sống sót?”</p>
+<p>Hứa Dung vừa muốn giải thích, liền nghe giáo thụ nói “Ra một chút ngoài ý muốn. Aiya, ngươi đi trước vội đi, nơi này ta tới nhìn.”</p>
+<p>Aiya đem trên tay ký lục sách khép lại, trải qua Hứa Dung thời điểm vỗ vỗ bờ vai của hắn.</p>
+<p>Hứa Dung lúc này mới chân chính bắt đầu quan sát nơi này.</p>
+<p>Phía sau cửa không gian xa so gian ngoài phòng thí nghiệm lớn hơn nữa, trung ương đứng sừng sững một cái to lớn trong suốt bồi dưỡng khoang, khoang nội rót đầy màu lam nhạt dinh dưỡng dịch.</p>
+<p>Mà bên trong huyền phù đồ vật, làm Hứa Dung đồng tử chợt co rút lại, bước chân đột nhiên dừng lại.</p>
+<p>Đó là một con hình thể khổng lồ Trùng tộc cơ thể mẹ, rồi lại cùng hắn ở thư thượng gặp qua bất luận cái gì trùng sau đều hoàn toàn bất đồng.</p>
+<p>Nó thân thể thượng trường nhân loại tứ chi hình dáng, phần đầu càng là mơ hồ mà hiện ra người mặt hình dạng, vô số trong suốt xúc tu ở dinh dưỡng dịch trung giãn ra, liên tiếp bồi dưỡng khoang trên vách vô số tuyến ống, tuyến ống một khác đầu, hợp với mãn tường lập loè số liệu màn hình.</p>
+<p>“Đây là…… Biến dị sau Trùng tộc?”</p>
+<p>Hứa Dung nuốt khẩu nước miếng, gian nan phát ra tiếng.</p>
+<p>Đồng thời hắn nổi da gà rớt đầy đất.</p>
+<p>“Ta nói rồi, đây là một loại tiến hóa.” Giáo thụ tiến lên thao tác trên màn hình cái nút, “Ngươi có thể nhìn một cái Aiya ký lục.”</p>
+<p>Hứa Dung ánh mắt đặt ở ký lục thượng.</p>
+<p>“Ngày đầu tiên Bước đầu phán đoán thực nghiệm thể trí lực tiếp cận thành niên nhân loại trình độ, có thể đối đơn giản mệnh lệnh làm ra đáp lại……”</p>
+<p>“Ngày hôm sau Bên ngoài thân Trùng tộc đặc thù rõ ràng thoái hoá, có thể phát ra mơ hồ âm tiết, hư hư thực thực ở học tập ngôn ngữ nhân loại……”</p>
+<p>“……”</p>
+<p>“Thứ 45 thiên Trải qua thảo luận, nhất trí quyết định tiêu hủy thực nghiệm thể……”</p>
+<p>“Thứ 48 thiên Thực nghiệm thể xác nhận tử vong. Di hài đem tiếp tục bảo tồn quan sát…… Ký lục xong.”</p>
+<p>Hứa Dung đã trong bất tri bất giác ra một thân mồ hôi lạnh.</p>
+<p>“Trùng tộc học tập năng lực phi thường cường đại.” Giáo thụ ở Hứa Dung xem xong về sau, mới mở miệng, “Chúng ta đã cùng Trùng tộc ngừng chiến quá dài thời gian, đã sớm đã không rõ ràng lắm chúng nó phát triển tới rồi kiểu gì nông nỗi.”</p>
+<p>Giáo thụ ngóng nhìn phiêu phù ở chất lỏng trung to lớn thực nghiệm thể, “Kỳ thật Liên Bang nghiên cứu bên trong lĩnh vực bộ vẫn luôn lưu hành một cái cách nói.”</p>
+<p>Hứa Dung mạnh mẽ làm chính mình đem ánh mắt dời đi, tiến lên một bước, đứng ở giáo thụ bên cạnh người.</p>
+<p>Giáo thụ tiếp tục nói “Đó chính là, Trùng tộc có thể cùng một ít trí tuệ sinh vật gien dung hợp.”</p>
+<p>“Dung hợp?”</p>
+<p>“Không sai.”</p>
+<p>Giáo thụ nói “Căn cứ ghi lại, ở viễn cổ thời kỳ, Trùng tộc là một loại phi thường gầy yếu sinh vật, cơ hồ có thể nói chúng nó sinh tử liền khống chế ở nhân loại nhất niệm chi gian. Nhưng chúng nó năng lực sinh sản cùng thích ứng năng lực phi thường cường đại, này dẫn tới chúng nó ở các loại cực đoan hoàn cảnh hạ sinh tồn xuống dưới. Gien truyền lưu đến nay.”</p>
+<p>Hứa Dung lẳng lặng mà nghe giáo thụ nói, quay đầu dùng đôi mắt nhìn chăm chú vào trước mắt cái này hơi hơi hạp mục đích trùng mẫu, trong đầu tự nhiên mà vậy mà hiện lên Trùng tộc tiến hóa sử.</p>
+<p>“Nhưng chúng nó phát triển quá nhanh. Nếu nói nhân loại từ trăm vạn năm trước cho tới bây giờ tinh tế thời đại hoàn thành tiến bộ là nhiều năm lắng đọng lại mà đến, như vậy Trùng tộc tiến bộ tắc có thể nói là điên đảo tính. Này cơ hồ là một loại không có khả năng phát sinh sự tình.”</p>
+<p>Giáo thụ than thở, “Chúng ta vẫn luôn đang tìm kiếm nguyên nhân. Thẳng đến phát hiện Trùng tộc sở mang theo một loại đặc thù gien.”</p>
+<p>Hứa Dung lập tức hỏi “Cái gì gien?”</p>
+<p>“Cái này gien đang không ngừng cùng nó tiếp xúc đến mặt khác sinh vật gien tiến hành đồng hóa.”</p>
+<p>Giáo thụ trả lời, “Chúng ta suy đoán chúng nó đã dung hợp rất nhiều trí tuệ sinh vật gien, đi bước một tiến hóa đến nay, mới có hôm nay chúng ta nhìn đến bộ dáng.”</p>
+<p>Hứa Dung sinh ra một cái lớn mật ý tưởng, “Cho nên hàng mẫu này cũng là……”</p>
+<p>“Đúng vậy.” Giáo thụ đột nhiên cười một chút, nhưng không có gì ý cười, lại làm Hứa Dung sau sống lạnh cả người, “Hàng mẫu này là chúng ta người ở một hoàn cảnh cực độ không thích hợp nhân loại sinh tồn không người tinh phát hiện. Hắn không có tồn tại rời đi nơi đó, nhưng hy sinh trước đem hàng mẫu để vào hàng mẫu khoang đầu nhập vũ trụ bên trong. Hắn dùng chính mình sinh mệnh đem cái này quan trọng nhất mà lại làm người không dám tin tưởng tin tức để lại cho chúng ta.”</p>
+<p>Hứa Dung uổng phí há miệng thở dốc, nói không nên lời bất luận cái gì lời nói tới.</p>
+<p>Cuối cùng chỉ nói “Cho nên ngươi ở lần đầu tiên thấy ta thời điểm liền kiểm tra ta hay không bị ký sinh.”</p>
+<p>“Chúng ta biết rõ Trùng tộc khó lòng phòng bị, đây là bất đắc dĩ cử chỉ. Trên thực tế ta căn bản không biết Trùng tộc hay không đã tiến hóa ra tránh né nhân loại dụng cụ ký sinh phương pháp.”</p>
+<p>Giáo thụ cười khổ, “Lại hoặc là, ta thậm chí không thể xác định ngươi có phải hay không như vậy một con ngụy trang thành nhân loại cao cấp Trùng tộc, đã hoàn toàn thoát ly Trùng tộc hình thái, so hàng mẫu này càng cao cấp tồn tại.”</p>
+<p>“Kia……” Xuất khẩu khi Hứa Dung mới phát hiện chính mình tiếng nói có điểm ách, hắn thanh thanh giọng nói, “Ta vì cái gì chưa bao giờ biết chuyện này?”</p>
+<p>“Ngươi hẳn là lý giải, này cũng không phải một cái có thể thông báo khắp nơi sự tình. Nếu tuyên dương đi ra ngoài, thế tất sẽ tạo thành thật lớn khủng hoảng, đối liên bang phát triển sinh ra thật lớn ảnh hưởng. Huống chi chúng ta căn bản vô pháp xác định chúng ta suy đoán cái loại này hoàn mỹ che giấu thành nhân loại Trùng tộc có phải hay không chân thật tồn tại. Chúng ta không có nói cho bất luận kẻ nào, sở hữu nghiên cứu đều là ở cái này viện nghiên cứu tiến hành.”</p>
+<p>Nếu dân chúng đã biết chuyện này, kia thế tất sẽ mỗi người cảm thấy bất an. Rốt cuộc ai cũng không biết thượng một giây còn đang nói cười người rốt cuộc có phải hay không chân chính “Người”?</p>
+<p>Hứa Dung nhắm mắt lại, lại lần nữa mở, “Vậy ngươi lại vì cái gì đem chuyện này nói cho ta?”</p>
+<p>“Chúng ta vô pháp gánh vác chuyện này lạn ở chúng ta nơi này hậu quả.” Giáo thụ bình thản mà nhìn Hứa Dung, “Nếu chúng ta cuối cùng không có đi ra cái này địa phương quỷ quái, ít nhất đến có một người biết bí mật này. Ta tin tưởng ngươi là nơi này nhất có hy vọng sống sót người.”</p>
+<p>“Ta……”</p>
+<p>Giáo thụ ôn hòa nói “Nếu chúng ta cuối cùng không có đi ra nơi này, kia chuyện này đem từ ngươi tới quyết định hay không muốn nói đi ra ngoài, nói cho ai, khi nào nói. Ngươi không cần cảm giác được khẩn trương, có lẽ tại đây trên đời đang ở làm ra cái này lựa chọn không ngừng ngươi một người. Có lẽ chúng ta cũng không phải duy nhất một cái phát hiện chuyện này viện nghiên cứu, chỉ là chúng ta không hẹn mà cùng đều bởi vì đủ loại nguyên nhân không có lựa chọn nói ra đi.”</p>
+<p>“Mặc kệ ngươi như thế nào làm, ta đều cho rằng kia sẽ là một cái nhất thích hợp thời cơ.”</p>
+<p>Một cái, không, là một đám kẻ điên.</p>
+<p>Điên cuồng dân cờ bạc.</p>
+<p>Hứa Dung trong đầu đã lâu mà cảm giác được một cuộn chỉ rối, hoàn toàn không có biện pháp bình tĩnh mà tự hỏi.</p>
+<p>Giáo thụ thực khoan dung mà nhìn hắn, “Ngươi nên nghỉ ngơi. Ta sẽ làm Aiya mang ngươi đi, nếu ngươi có cái gì yêu cầu đều có thể đề, nơi này cũng có dinh dưỡng dịch.”</p>
+<p>Thẳng đến Hứa Dung đi theo Aiya trở lại thuộc về hắn phòng nghỉ, hắn khống chế không được mà ngã ngồi tại mép giường.</p>
+<p>Mới đột nhiên phát giác chính mình chân đã hoàn toàn đã tê rần.</p>
+<p>Hứa Dung nhéo dinh dưỡng dịch “Lộc cộc lộc cộc” rót mấy khẩu, sau đó tùy tay ném ở một bên, thẳng tắp mà ngã vào trên giường.</p>
+<p>Ngủ một giấc.</p>
+<p>Có chuyện gì ngày mai lại tưởng đi.</p>
+<p>Hứa Dung như vậy nghĩ, cưỡng bách chính mình quét sạch đại não, mạnh mẽ làm chính mình ý thức ở vào trống rỗng trạng thái.</p>
+<p>Đại khái qua 30 phút, Hứa Dung một lăn long lóc ngồi dậy, oán quỷ dường như ngồi ở án thư trước, lấy ra một chi bút.</p>
+<p>Bắt đầu vẽ máy móc đồ, làm chính mình bình tĩnh lại.</p>
+<p>Họa họa, Hứa Dung đem bút một lược.</p>
+<p>Vừa mới bắt đầu bút pháp còn tính bình thường, là máy móc bộ kiện một bộ phận, rồi sau đó tới càng ngày càng hỗn độn, thẳng đến dần dần hiện lên một cái qua loa người mặt.</p>
+<p>…… Nhìn qua tương đương kinh tủng.</p>
+<p>Hứa Dung phục.</p>
+<p>Một lần nữa làm chính mình trở lại thoải mái giường lớn ôm ấp.</p>
+<p>Ngủ ngủ.</p>
+<p>-----------------------</p>
+<p>Tác giả có chuyện nói Chương trước cuối cùng bộ phận bỏ thêm tự, hôm nay buổi sáng liền xem xong kia một chương các bằng hữu có thể quay đầu lại nhìn một cái</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong48.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong50.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tan-phe-cung-co-the-khai-co-giap";
+const NOVEL_TITLE = "Tàn phế cũng có thể khai cơ giáp?!";
+const CHAPTER_TITLE = "Chương 49. or lựa chọn";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
