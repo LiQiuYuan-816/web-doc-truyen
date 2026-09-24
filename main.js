@@ -64,7 +64,8 @@ const genreMap = {
   "hoa-hoat": "Hoa hoạt",
   "dien-kinh": "Điền kinh",
   "tuong-lai": "Tương lai",
-  "my-thuc": "Mỹ thực"
+  "my-thuc": "Mỹ thực",
+  "truyen-tranh": "Truyện tranh"
 };
 /* =======================
 CONFIG
