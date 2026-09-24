@@ -74,10 +74,11 @@ const PAGE_SIZE = 5;
 STATE
 ======================= */
 let stories = [];
-let currentList = [];
+let currentList = [];  // Danh sách sau lọc
 let currentPage = 1;
-let totalPages = 1; // Thêm biến lưu tổng số trang
+let totalPages = 1;    // Tổng trang dựa trên danh sách sau lọc
 const BASE_PATH = "/web-doc-truyen";
+
 /* =======================
 LOAD DATA
 ======================= */
@@ -92,11 +93,13 @@ fetch("stories.json")
       return;
     }
     stories = data.map(normalizeStory);
+    console.log(`✅ Đã tải ${stories.length} truyện`); // Kiểm tra số lượng
     applyFilters();
   })
   .catch(err => {
     console.error("Không tải được stories.json", err);
   });
+
 /* =======================
 NORMALIZE DATA
 ======================= */
@@ -113,6 +116,7 @@ function normalizeStory(raw) {
     summary: raw.summary || "Chưa có giới thiệu."
   };
 }
+
 /* =======================
 RENDER STORY LIST
 ======================= */
@@ -120,59 +124,60 @@ function renderStories(list) {
   const ul = document.getElementById("story-list");
   if (!ul) return;
   ul.innerHTML = "";
+  
   if (list.length === 0) {
     ul.innerHTML = "<li>Không có truyện phù hợp.</li>";
     return;
   }
+  
   list.forEach(story => {
     const li = document.createElement("li");
-    const statusText =
-      story.status === "hoan-thanh"
-        ? "✅ Hoàn thành"
-        : "🟢 Đang ra";
-    const countryText =
-      countryMap[story.country] || story.country;
+    const statusText = story.status === "hoan-thanh" ? "✅ Hoàn thành" : "🟢 Đang ra";
+    const countryText = countryMap[story.country] || story.country;
     const maxGenres = 6;
-    const genreText =
-      story.genre
-        .slice(0, maxGenres)
-        .map(g => `<span class="genre-tag">${genreMap[g] || g}</span>`)
-        .join("") +
-      (story.genre.length > maxGenres
-        ? `<span class="genre-more">…</span>`
-        : "");
+    const genreText = story.genre
+      .slice(0, maxGenres)
+      .map(g => `<span class="genre-tag">${genreMap[g] || g}</span>`)
+      .join("") + (story.genre.length > maxGenres ? `<span class="genre-more">…</span>` : "");
+    
     li.innerHTML = `
-<a href="${BASE_PATH}/stories/${story.slug}/index.html">
-<strong>${story.title}</strong>
-</a>
-<br>
-<small>✍️ ${story.author} · 🌍 ${countryText}</small><br>
-<small>📚 ${genreText}</small><br>
-<small>${statusText} · 📖 ${story.chapters} chương</small>
-<p>${story.summary.replace(/\n/g, "<br>")}</p>
-`;
+      <a href="${BASE_PATH}/stories/${story.slug}/index.html">
+        <strong>${story.title}</strong>
+      </a>
+      <br>
+      <small>✍️ ${story.author} · 🌍 ${countryText}</small><br>
+      <small>📚 ${genreText}</small><br>
+      <small>${statusText} · 📖 ${story.chapters} chương</small>
+      <p>${story.summary.replace(/\n/g, "<br>")}</p>
+    `;
     ul.appendChild(li);
   });
 }
+
 /* =======================
-PAGINATION
+PAGINATION - ĐÃ SỬA
 ======================= */
 function renderPage(list, page = 1) {
   currentList = list;
-  // Giới hạn trang hợp lệ
-  totalPages = Math.ceil(list.length / PAGE_SIZE) || 1;
+  
+  // Tính tổng trang TRƯỚC khi giới hạn currentPage
+  totalPages = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
+  
+  // Giữ trang trong khoảng hợp lệ
   currentPage = Math.max(1, Math.min(page, totalPages));
   
   const start = (currentPage - 1) * PAGE_SIZE;
   const end = start + PAGE_SIZE;
-  renderStories(list.slice(start, end));
-  renderPagination(totalPages);
+  const pageData = list.slice(start, end);
+  
+  renderStories(pageData);
+  renderPagination();
 }
 
-function renderPagination(totalItems) {
+function renderPagination() {
   const container = document.getElementById("pagination");
   if (!container) return;
-  totalPages = Math.ceil(totalItems / PAGE_SIZE);
+  
   container.innerHTML = "";
   
   if (totalPages <= 1) return;
@@ -182,7 +187,7 @@ function renderPagination(totalItems) {
     container.innerHTML += `<button onclick="gotoPage(${currentPage - 1})">‹</button>`;
   }
 
-  // Thông tin trang + ô nhập nhảy trang
+  // Ô nhập nhảy trang - Hiển thị ĐÚNG tổng số trang
   container.innerHTML += `
     <span>Trang</span>
     <input type="number" id="jump-page-input" min="1" max="${totalPages}" 
@@ -201,7 +206,6 @@ function gotoPage(page) {
   renderPage(currentList, page);
 }
 
-// === HÀM MỚI: Xử lý nhảy trang ===
 function jumpToPage() {
   const input = document.getElementById("jump-page-input");
   if (!input) return;
@@ -209,31 +213,29 @@ function jumpToPage() {
   let targetPage = parseInt(input.value, 10);
   if (isNaN(targetPage)) targetPage = 1;
   
-  // Đảm bảo nằm trong khoảng hợp lệ
+  // Giới hạn chặt chẽ
   targetPage = Math.max(1, Math.min(targetPage, totalPages));
   
   gotoPage(targetPage);
 }
 
-// Cho phép nhấn Enter trong ô nhập để nhảy trang
+// Nhấn Enter để nhảy trang
 document.addEventListener("keydown", function(e) {
   if (e.key === "Enter" && document.activeElement?.id === "jump-page-input") {
     e.preventDefault();
     jumpToPage();
   }
 });
+
 /* =======================
 FILTER LOGIC
 ======================= */
 function applyFilters() {
-  const titleKeyword =
-    document.getElementById("search-title")?.value.toLowerCase() || "";
-  const authorKeyword =
-    document.getElementById("search-author")?.value.toLowerCase() || "";
-  const country =
-    document.getElementById("filter-country")?.value || "all";
-  const genre =
-    document.getElementById("filter-genre")?.value || "all";
+  const titleKeyword = document.getElementById("search-title")?.value.toLowerCase() || "";
+  const authorKeyword = document.getElementById("search-author")?.value.toLowerCase() || "";
+  const country = document.getElementById("filter-country")?.value || "all";
+  const genre = document.getElementById("filter-genre")?.value || "all";
+  
   const filtered = stories.filter(story => {
     const matchTitle = story.title.toLowerCase().includes(titleKeyword);
     const matchAuthor = story.author.toLowerCase().includes(authorKeyword);
@@ -241,8 +243,13 @@ function applyFilters() {
     const matchGenre = genre === "all" || story.genre.includes(genre);
     return matchTitle && matchAuthor && matchCountry && matchGenre;
   });
+  
+  console.log(`🔍 Sau lọc: ${filtered.length} truyện → Tổng ${Math.ceil(filtered.length / PAGE_SIZE)} trang`);
+  
+  // Luôn bắt đầu từ trang 1 sau khi lọc
   renderPage(filtered, 1);
 }
+
 /* =======================
 DEBOUNCE
 ======================= */
@@ -254,14 +261,11 @@ function debounce(fn, delay = 300) {
   };
 }
 const debouncedFilter = debounce(applyFilters, 300);
+
 /* =======================
 EVENT LISTENERS
 ======================= */
-document.getElementById("search-title")
-  ?.addEventListener("input", debouncedFilter);
-document.getElementById("search-author")
-  ?.addEventListener("input", debouncedFilter);
-document.getElementById("filter-country")
-  ?.addEventListener("change", applyFilters);
-document.getElementById("filter-genre")
-  ?.addEventListener("change", applyFilters);
+document.getElementById("search-title")?.addEventListener("input", debouncedFilter);
+document.getElementById("search-author")?.addEventListener("input", debouncedFilter);
+document.getElementById("filter-country")?.addEventListener("change", applyFilters);
+document.getElementById("filter-genre")?.addEventListener("change", applyFilters);
