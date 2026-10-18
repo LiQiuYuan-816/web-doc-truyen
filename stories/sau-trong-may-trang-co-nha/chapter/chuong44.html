@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 43 xử trí, năm cũ</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Sâu trong mây trắng có nhà
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 43 xử trí, năm cũ</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong43.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong45.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Ta chỉ là nghĩ, này trong phủ mới vừa náo loạn tặc, làm quản gia mang theo điểm người đi ngân khố lấy tiền, khả năng quản gia lấy tiền, liền tiện đường đưa đi qua, không có triệt rớt bên người hộ viện. “Ngô Tuấn giải thích một chút.</p>
+<p>Muốn nói tiện đường, cũng thật là tiện đường, tiền viện đặt tiền bạc địa phương, liền ở phía tây, đơn độc một gian nhà ở, mà trong nhà tiền kho, còn lại là ở lão phu nhân cùng phu nhân chi gian trong viện, đơn độc tam gian phòng ở, từ lão phu nhân cùng phu nhân của hồi môn, cùng với Ngô gia người hầu tổng cộng 21 cá nhân, thay phiên trông giữ.</p>
+<p>Ngày hôm qua cái kia tặc, vào tiền viện, kỳ thật là có thể sờ đến tiền viện đặt tiền tài địa phương, nơi đó thả không ít hiện bạc, hoàn toàn có thể cầm liền đi.</p>
+<p>Lại không lấy, ngược lại chạy tới hậu viện.</p>
+<p>Hậu viện tuy rằng có ngân khố, nhưng là tiền bạc loại đồ vật này, nhiều cũng lấy bất động a!</p>
+<p>“Không phải đã bắt được sao?” Ngô Hữu Vi dùng Ngô Tuấn nói, đổ hắn miệng mình.</p>
+<p>Ngô Tuấn một nghẹn, hắn nói như thế nào?</p>
+<p>Chẳng lẽ muốn nói với hắn, bắt được tặc, kỳ thật là đêm qua uống rượu đánh bạc người trông cửa?</p>
+<p>Này không phải tự vả miệng sao?</p>
+<p>“Bắt được là bắt được, chỉ sợ có đồng lõa.” Ngô Tuấn này phản ứng, cùng hắn phái đi người giống nhau như đúc.</p>
+<p>“Tại tiền viện không bắt được....” Ngô Hữu Vi cố ý nói “Chẳng lẽ chạy tới.....</p>
+<p>“Không có khả năng!” Ngô Tuấn tức khắc liền phản bác “Người còn tại tiền viện, ngươi yên tâm, nhất định có thể bắt được.”</p>
+<p>Nói thập phần kiên quyết, thập phần khẳng định.</p>
+<p>Ngô Hữu Vi lại không để trong lòng, muốn thật sự như vậy hảo trảo, đêm qua ngươi nháo cái gì?</p>
+<p>“Kia râu xồm hộ viện hảo sinh kỳ quái, nếu bắt được tặc, hắn cố tình một hai phải hướng ta chính phòng sấm, ngày hôm qua các ngươi đều điều tra qua, sáng sớm Tiểu Tiểu liền tiến vào hầu hạ ta, cửa phòng cũng thủ người, hắn một hai phải đi vào làm gì đâu?” Ngô Hữu Vi tiếp tục nói “Hơn nữa ta trước nay chưa thấy qua hắn, nhà ta hộ viện ta cũng coi như đều nhận thức đi?”</p>
+<p>Ngô Tuấn không rõ nguyên do “Hắn là trong nhà nông hộ thượng tuyển chọn ra tới...”</p>
+<p>“Hắn thoạt nhìn.... Càng như là tặc tử.” Ngô Hữu Vi nói xong, liền vỗ vỗ mông đi rồi, lưu lại Ngô Tuấn một người, sắc mặt một trận biến hóa.</p>
+<p>Cuối cùng cao giọng nói “Người tới!”</p>
+<p>Quản gia liền vào được “Lão gia.</p>
+<p>“Đi, cho ta đem râu xồm bắt lại!” Ngô Tuấn đã tưởng minh bạch, thứ đệ đây là bị người chọc mao.</p>
+<p>Kỳ thật thứ đệ đã thực thành thật, này hai cái tháng sau vẫn luôn ở hắn kia tiểu viện tử ngồi xổm, trừ bỏ tri kỷ bạn cũ phái người lâu lâu tới xem một hồi, cũng không gây chuyện.</p>
+<p>Ngay cả chính mình đêm qua như vậy thất lễ, hắn cũng không thế nào, chính là hiện tại lại tìm tới cửa, liền hai trăm lượng bạc cũng chưa có thể áp chế lửa giận, có thể thấy được kia râu xồm thật là làm việc không thỏa đáng, hắn chỉ là làm người đi kiểm tra một chút nhà kho, thứ đệ nhà kho bên trong có cái gì, hắn so với ai khác đều rõ ràng, lão gia tử qua đời đoạn thời gian đó, hắn kia nhà kho đều làm bọn hạ nhân cấp quét sạch.</p>
+<p>Hắn sở dĩ cấp hai trăm lượng bạc qua đi, cũng là muốn cho thứ đệ xem ở tiền bạc phân thượng, xem ở cái này hợp lý lý do phân thượng, không so đo lục xem nhà kho việc nhỏ nhi.</p>
+<p>Này nếu là không có râu xồm tìm tra, thứ đệ khẳng định sẽ không như vậy sinh khí, mặt dưa giống nhau mềm mại người, có thể có cái gì cùng lắm thì tính tình?</p>
+<p>Nguyên lai là mẫu thân bức người quá đáng, hắn mới phản kích, hiện giờ mọi người đều thái thái bình bình, hắn càng là đương nổi lên ẩn hình người.</p>
+<p>“A?” Quản gia sửng sốt “Bắt lại?”</p>
+<p>“Liền hắn kia cha mẹ người nhà đều cho ta bắt lại, đem nhà bọn họ sao một chút, liền nói bọn họ trộm đạo chủ nhân tài vật, cho ta đưa quan xử lý.” Ngô Tuấn lạnh lùng nói “Phòng chất củi cái kia, cùng hắn nhất nhất khởi đưa quan.</p>
+<p>Quản gia một thân mồ hôi lạnh đều xuống dưới, này liền đưa quan xử theo pháp luật?</p>
+<p>“Đi thôi, nhớ rõ cái gì nên nói, cái gì không nên nói.” Ngô Tuấn quay người lại, rời đi phòng khách.</p>
+<p>Ngô Tuấn không thể không như thế xử trí, thứ đệ nói đã biết tối hôm qua sự tình, hắn đã sớm biết, đệ đệ là cái thông minh, nhưng là thì tính sao?</p>
+<p>Thân là Ngô gia người, hắn phải che chở Ngô gia!</p>
+<p>Bất luận cái kia trương tam vẫn là Lý Tứ hay không từng nhập quá Ngô gia hậu viện, hắn đều nhất định, cần thiết, chỉ có thể chưa bao giờ tới gần qua đi viện!</p>
+<p>Bởi vì hậu viện bên trong có nữ quyến.</p>
+<p>Nữ quyến thanh danh so kẻ cắp quan trọng gấp mười lần.</p>
+<p>Một cái tiểu tặc tính thứ gì? Liền tính là bắt mới giá trị mấy cái tiền?</p>
+<p>Nhiên Ngô gia nữ quyến thanh danh nặng như Thái Sơn, kia một cái tiểu tặc tánh mạng nhẹ như hồng mao.</p>
+<p>Thứ đệ chính mình là cái minh bạch người, là nhà mình nữ quyến thanh danh quan trọng, vẫn là một cái tiểu tặc tánh mạng quan trọng?</p>
+<p>Nếu không phải chọc giận thứ đệ, chỉ sợ hắn liền tính minh bạch cũng sẽ không tìm tới môn 】 tới, kia chỉ có thể là kia râu xồm hộ viện quá phận, thứ đệ giận mà tìm hắn làm chủ.</p>
+<p>Thấy nhà mình lão gia cũng không quay đầu lại liền đi rồi, quản gia xoa hãn, đi xử lý.</p>
+<p>Bởi vì cơm sáng là ở Ngô lão phu nhân nơi đó ăn, Ngô Hữu Vi cơm sáng liền dư lại, bị Tiểu Tiểu ăn, Tiểu Tiểu cơm sáng còn lại là bị trông cửa hai cái thư đồng phân.</p>
+<p>Hiện giờ này hai thư đồng đều thành đứa bé giữ cửa.</p>
+<p>Ngô Hữu Vi vừa trở về, ở trong thư phòng chính phát ngốc, phỏng đoán Ngô Tuấn sẽ xử lý như thế nào chuyện này, Huyên Thảo liền tới rồi, hội báo Ngô Tuấn xử lý kết quả.</p>
+<p>Ngô Hữu Vi nghe xong, không sao cả vẫy vẫy tay “Như vậy cũng hảo, làm người biết biết, tiểu lão gia cũng không phải người nào đều có thể khi dễ.</p>
+<p>Huyên Thảo lần này bị dọa phá lá gan, so trước kia càng thêm cung kính mà đối Ngô Hữu Vi.</p>
+<p>Kỳ thật không ngừng Huyên Thảo, ngay cả Phù Dung cùng Mạt Lị đều càng cung kính, Ngô Húc thân là nơi này quản sự, tại hạ nhân gian danh vọng lại cao một mảng lớn, nếu không phải hắn lúc trước không buông khẩu, không thả người đi vào, Tiểu Tiểu một cái thư đồng cũng ngăn không được.</p>
+<p>Hiện giờ Ngô Tuấn xử lý râu xồm, là cho tiểu lão gia mặt mũi, tiểu lão gia làm như vậy, làm sao không phải cấp Ngô Húc bọn họ làm chủ đâu?</p>
+<p>Chỉ một thoáng, trong tiểu viện bọn hạ nhân đi ra ngoài thời điểm đều ngẩng đầu ưỡn ngực.</p>
+<p>Cứ như vậy, đảo mắt tới rồi năm cũ.</p>
+<p>23 kẹo mạch nha viên dính;</p>
+<p>24 quét dọn nhà cửa tử;</p>
+<p>25 xay đậu hủ;</p>
+<p>26 hầm thịt heo;</p>
+<p>27 tể gà trống;</p>
+<p>28 đem mặt phát;</p>
+<p>29 chưng màn thầu;</p>
+<p>30 buổi tối ngao một đêm, đại niên mùng một vặn uốn éo!</p>
+<p>Ngô phủ 23 cúng ông táo, Ngô Tuấn mang theo Ngô Anh cùng Ngô Dong cùng nhau cúng ông táo.</p>
+<p>Không mang nữ quyến, bởi vì “Nam không tế nguyệt, nữ không cúng ông táo” quy củ.</p>
+<p>Năm cũ tuy rằng bắt đầu chuẩn bị ăn tết, kỳ thật sớm tại qua tháng chạp mười lăm liền bắt đầu chọn mua đồ vật.</p>
+<p>24 quét tước vệ sinh, ngày này là sở hữu bọn hạ nhân ngày lao động, liền xem đều dùng nước ấm tướng môn xoa xoa, chỉ tiếc, nhà mình bởi vì giữ đạo hiếu, là không thể dán câu đối.</p>
+<p>Ngô Hữu Vi ở trong thư phòng, cùng Tiểu Tiểu tự mình quét tước thư phòng, đến nỗi phòng khách cùng phòng ngủ, còn lại là Huyên Thảo các nàng quét tước, cơ hồ là không dính bụi trần.</p>
+<p>25 phòng bếp làm đậu hủ, ngày này buổi sáng bọn họ cơm sáng chính là tàu hủ, này tàu hủ khẩu vị nhi là bắc địa hàm khẩu, Ngô Hữu Vi cũng là phương bắc người sống, vì thế ăn phun thơm nức, một chậu đều làm hắn cùng Tiểu Tiểu xử lý, nhưng thật ra kia màn thầu không ăn nhiều ít.</p>
+<p>26, 27 nguyên bản là muốn sát gà tể vịt, nhưng là trong nhà có hiếu trong người, ăn không được, đành phải làm phòng bếp làm tố thịt.</p>
+<p>Lúc này tố thịt, kỳ thật chính là dùng đậu chế phẩm trộn lẫn mỡ heo làm thành, có thịt mùi vị, nhưng không phải chân chính thịt.</p>
+<p>Phòng bếp lại dùng dầu thực vật làm chân chính “Tố thịt”, cái này chính là phải cho trong phủ các chủ tử ăn.</p>
+<p>Vừa lúc 26 thời điểm, cùng trường nhóm giống như nói tốt giống nhau, cùng nhau phái người cấp Ngô Hữu Vi tặng năm lễ.</p>
+<p>Biết hắn ở nhà giữ đạo hiếu, này năm lễ đưa cũng thập phần giản mỏng Một trăm trứng gà, hai thất tố lụa, bốn thất miên vải mịn, giấy và bút mực các một bộ.</p>
+<p>Có hơn nữa hai bổn tân ra 《 hiếu kinh giáo trình 》.</p>
+<p>Làm Ngô Hữu Vi hưng phấn chính là, Lý Đông Dương cái này danh nhân, thế nhưng cũng cho hắn tặng năm lễ, tuy rằng chỉ là một ít nấm làm, đậu hủ khô chờ sĩ đặc sản, lại có vẻ thực tri kỷ.</p>
+<p>Lễ vật đưa đến, người tới liền cáo từ, nói tháng giêng mười lăm phía trước đều sẽ không tới cửa, rốt cuộc ăn tết, người khác cũng rất bận.</p>
+<p>Ngô Hữu Vi gật đầu tỏ vẻ đã biết.</p>
+<p>Chờ người đi rồi, hắn mới mở ra này đó hộp quà, mấy cái cùng trường có thể là sợ hắn ở nhà tiền bạc không đủ hoa, nhiều ít đều cho hắn bao điểm tiền mặt, mỹ kỳ danh rằng Tiền mừng tuổi.</p>
+<p>Dù sao hắn ở bọn họ này một khoa cử người, tuổi tác nhỏ nhất, nói là tiểu sư đệ, cũng không quá.</p>
+<p>Có cấp một trăm lượng, đều là chế tạo thành bút thỏi như ý, tam nguyên thi đậu từ từ cát tường hình thức, như luận sự lưu trữ vẫn là cấp đi ra ngoài, đều không mất mặt.</p>
+<p>Càng có cấp lá vàng, một mảnh lá vàng, một tiền trọng, thập phần tinh xảo, đặt ở một cái hộp nhỏ bên trong, ánh vàng rực rỡ đặc biệt đẹp.</p>
+<p>Ngô Hữu Vi đều thu lên, hắn nhưng không nghĩ đưa ra đi, này lưu trữ thật tốt a!</p>
+<p>Chỉ là, thu lễ vật, lại bắt đầu phạm sầu, hắn nên tặng lễ vật đi ra ngoài, chính là đưa cái gì đâu?</p>
+<p>Tới nơi này lúc sau hắn liền bắt đầu giữ đạo hiếu, một cho tới bây giờ cũng chưa ra quá môn, hơn nữa mỗi ngày xem thư tịch cũng chính là 《 Hiếu Kinh 》.</p>
+<p>Hắn cũng không có người thương lượng, hơn nữa cũng không thể đưa quá mức quý trọng đồ vật, kia cùng hắn tình huống hiện tại cùng thân phận đều không xứng đôi.</p>
+<p>Thẻ kẹp sách đã cấp đi ra ngoài, lần này không thể lại cấp thẻ kẹp sách.</p>
+<p>Chính là không làm thẻ kẹp sách, lại có thể làm cái gì đâu?</p>
+<p>“Tiểu Tiểu a, ngươi nói, ta bồi thường cái dạng gì lễ vật thích hợp đâu?” Ngô Hữu Vi phạm sầu.</p>
+<p>Trong không gian ngọc thạch có một ít, nhưng là kia quá quý báu, không thích hợp hắn; vàng bạc hắn cũng có một ít, chỉ là không thể trắng ra cấp vàng bạc đi? Hơn nữa nhân gia đều cho hắn, lại trở về đưa? Không phải như vậy hồi sự a.</p>
+<p>“Tiểu lão gia, nghe Ngô Húc quản sự nói, trong phủ sẽ cho bị một một phần. “Tiểu Tiểu gãi gãi đầu “Nếu không, hỏi một chút hắn?"</p>
+<p>“Ân, kêu hắn tới!” Ngô Hữu Vi lúc này mới nhớ tới chính mình nơi này còn có cái quản sự đâu.</p>
+<p>Ngô Húc thực mau liền đến.</p>
+<p>Ngô Hữu Vi vừa hỏi, quả nhiên, trong phủ là có chuẩn bị đáp lễ, chẳng qua lúc này lễ bình bình đạm đạm, nhân gia tặng cái gì, đại khái giá trị bao nhiêu tiền, trong phủ liền sẽ đáp lễ nhiều ít giá trị đồ vật, tám lạng nửa cân.</p>
+<p>Đương nhiên, áp đáy hòm nhân gia đưa vào tới gạt người không cho biết đến những cái đó tiền, trong phủ liền không tính ở bên trong.</p>
+<p>Quyền đương đó là tiểu lão gia tư nhân giao thoa, cùng trong phủ không quan hệ, dù sao tiền cũng xuống dốc ở trong phủ công trướng thượng.</p>
+<p>“Kia ta cũng không thể liền tùy ý trong phủ ra đồ vật đưa qua đi....” Ngô Hữu Vi cũng vò đầu.</p>
+<p>“Tiểu lão gia, không phải tiểu nhân tranh cãi, ngài lần trước làm cái kia thẻ kẹp sách liền rất hảo, ngài xem, ngài hai vị Tọa Sư đều thực thích đâu.” Ngô Húc ở đạo lý đối nhân xử thế thượng thực lành nghề “Không bằng còn làm thẻ kẹp sách, vừa lúc, tiểu nhân cho ngài tìm được rồi mấy khối không tồi</p>
+<p>Ngô Hữu Vi tưởng tượng, còn không phải sao!</p>
+<p>Làm sinh không bằng làm thục, hơn nữa hắn hiện tại cũng đích xác không thứ gì có thể lấy đến ra tay.</p>
+<p>Đặc biệt là năm nào sau còn phải cấp hai vị Tọa Sư trong nhà tặng lễ, người khác thượng nhưng lừa gạt một chút, hai vị Tọa Sư nơi đó là không được.</p>
+<p>“Hành, ngươi đem vật liệu gỗ đưa tới đi!” Ngô Hữu Vi nghĩ nghĩ “Lại đi cho ta tìm thô ống trúc, ta làm một ít ống đựng bút, cùng thẻ kẹp sách phối hợp một chút.</p>
+<p>“Là, tiểu nhân này liền đi!” Ngô Húc nhất nhất chắp tay đi rồi.</p>
+<p>Chỉ chốc lát sau, liền đem đồ vật cấp Ngô Hữu Vi tìm đủ, Ngô Hữu Vi còn thực buồn bực “Thô ống trúc cũng có sao?"</p>
+<p>Ai biết hắn không hỏi còn hảo, vừa hỏi Ngô Húc liền xấu hổ cười cười “Đây là trong kinh làm thẻ tre cơm dùng ống trúc......</p>
+<p>Ngô Hữu Vi......!!”</p>
+<p>“Bất quá ngài yên tâm, đây đều là vô dụng quá, bọn họ trữ hàng!” Ngô Húc chạy nhanh giải thích “Bảo đảm sạch sẽ.”</p>
+<p>Ngô Hữu Vi lúc này mới nhẹ nhàng thở ra “Này còn kém không nhiều lắm.</p>
+<p>“Không sạch sẽ tiểu nhân cũng không thể cho ngài đưa tới a!” Ngô Húc xấu hổ xoa xoa trên mặt hãn.</p>
+<p>Ngô Hữu Vi liền bắt đầu làm đồ vật, hắn tính toán làm một bộ đọc sách tam bộ kiện, phân biệt là Ống đựng bút, cái chặn giấy, thẻ kẹp sách.</p>
+<p>“Tam” vừa lúc cũng đại biểu thiên, địa, người tam tài.</p>
+<p>Đầu tiên làm chính là cấp hai vị Tọa Sư đồ vật, ống đựng bút hắn cũng không hội họa, thời đại này thợ thủ công tay nghề có thể so hắn khá hơn nhiều, hắn chỉ có thể ở địa phương khác xuất sắc, chỉ là ở ống đựng bút thượng viết một đầu Tô Thức Tô Đông Pha 《 Thủy Điệu Ca Đầu 》.</p>
+<p>Cái chặn giấy thượng còn lại là một câu Đào Uyên Minh 《 Đào Hoa Nguyên Ký 》 một câu Thổ địa bình khoáng, phòng ốc nghiễm nhiên, có ruộng tốt mỹ trì tang trúc chi thuộc, đường ruộng giao thông, gà chó tương nghe.</p>
+<p>Vừa lúc hắn xuyên qua thời điểm, vừa lúc là gà năm kết thúc, cẩu năm sắp xảy ra.</p>
+<p>Mà thẻ kẹp sách còn lại là 《 Luận Ngữ 》 học mà thiên trung, từng tử một câu Thận chung truy xa, dân đức về hậu rồi.</p>
+<p>Ống đựng bút là “Thiên”; cái chặn giấy là “địa”; thẻ kẹp sách là “Người”.</p>
+<p>Vừa lúc lại phù hợp hắn giữ đạo hiếu tâm tình.</p>
+<p>……….</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong43.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong45.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "sau-trong-may-trang-co-nha";
+const NOVEL_TITLE = "Sâu trong mây trắng có nhà";
+const CHAPTER_TITLE = "Chương 43 xử trí, năm cũ";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
