@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 32 kỹ thuật diễn</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Từ diễn viên quần chúng bắt đầu ( trọng sinh )
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 32 kỹ thuật diễn</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong31.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong33.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Trở lại trấn Trường Khê thời điểm là buổi chiều 2 giờ, Tô Hướng Dương cùng Quý Vệ Ngôn cùng nhau, tìm được rồi bọn họ xe đạp.</p>
+<p>Nhưng Trương Duệ Tân là không xe, Tô Hướng Dương nói “Chương đạo, ta tái ngươi?”</p>
+<p>Trương Duệ Tân đang muốn đáp ứng, Quý Vệ Ngôn nói “Tô ca, ngươi tái ta, làm Chương đạo kỵ ta xe đạp đi!”</p>
+<p>Nói xong, Quý Vệ Ngôn còn vươn chính mình không có mấy lượng thịt cánh tay “Ta phân lượng nhẹ!”</p>
+<p>Hành đi…… Tô Hướng Dương không có ý kiến.</p>
+<p>Tương đối với xa lạ Trương Duệ Tân, hắn vẫn là càng nguyện ý chở Quý Vệ Ngôn.</p>
+<p>Trương Duệ Tân cũng không có ý kiến. Bọn họ tuổi này người trên cơ bản đều sẽ kỵ xe đạp, rốt cuộc đây là thập niên 90 nhất thường thấy phương tiện giao thông.</p>
+<p>Ba người cùng đi 《 Lý tam thiếu 》 đoàn phim nơi khách sạn.</p>
+<p>Đoàn phim hôm nay còn ở nghỉ, bất quá có chút diễn viên cùng nhân viên công tác nghỉ trong lúc không rời đi, ở khách sạn đợi, cho nên bọn họ dọc theo đường đi, còn gặp được mấy cái đoàn phim người.</p>
+<p>“Tô ca, Vệ Ngôn!” Nhìn đến Tô Hướng Dương cùng Quý Vệ Ngôn, đoàn phim người đều cười chào hỏi.</p>
+<p>Bọn họ ngay từ đầu là không quá nhìn trúng Tô Hướng Dương, rốt cuộc Tô Hướng Dương khi đó chính là cái mặt xám mày tro nông dân công.</p>
+<p>Nhưng Tô Hướng Dương có bản lĩnh, ở nhà làm phim rời đi sau bắt đầu hỗ trợ quản đoàn phim…… Hiện tại ai dám đắc tội Tô Hướng Dương?</p>
+<p>Trương Duệ Tân thấy những người này đều đối Tô Hướng Dương khách khách khí khí, nghĩ đến chính mình phía trước thế nhưng hoài nghi Tô Hướng Dương, có chút ngượng ngùng.</p>
+<p>“Chương đạo, ngươi đồ vật trước tiên ở khách sạn phóng một chút, sau đó chúng ta đi ra ngoài thuê nhà.” Tô Hướng Dương mở ra Quý Vệ Ngôn phòng môn, đem hắn cấp Quý Vệ Ngôn mua quần áo đặt ở tủ quần áo.</p>
+<p>Trương Duệ Tân đáp ứng xuống dưới, đem hắn camera cùng ba lô đặt ở một bên.</p>
+<p>Ba người phóng thứ tốt, liền đạp xe đi trấn Trường Khê phố cũ.</p>
+<p>Trước kia trấn Trường Khê kỳ thật rất nhỏ, sau lại vẫn luôn xây dựng thêm, mới chậm rãi biến đại.</p>
+<p>Chờ từng cái thành phố điện ảnh tu lên…… Trấn Trường Khê hiện tại đã so một ít huyện thành đều lớn!</p>
+<p>Trấn Trường Khê càng lúc càng lớn, nhưng ở vào trung tâm vị trí phố cũ, kỳ thật là chậm rãi xuống dốc.</p>
+<p>Nơi này có dựa gần nhà trệt, có 70-80 niên đại cái nhà xưởng ký túc xá, có chợ bán thức ăn…… Nơi này rất nhiều con đường, cũng chỉ có thể thông xe đạp xe máy, ô tô căn bản liền vào không được.</p>
+<p>Lại quá cái mười năm, bên này nhà cũ liền không mấy cái người địa phương ở, đều là người bên ngoài tại đây thuê trụ, lại sau lại sao…… Đại bộ phận đều hủy đi, tiểu bộ phận cũng cải tạo thành cổ kính phố cũ, ngẫu nhiên còn có đoàn phim ở bên này lấy cảnh.</p>
+<p>Bất quá lúc này, người địa phương vẫn là ở nơi này.</p>
+<p>Tô Hướng Dương mang theo Trương Duệ Tân đi vào bên này, hỏi Trương Duệ Tân “Ngươi cảm thấy bên này thế nào? Có thể lấy cảnh sao?” Hắn xem qua Trương Duệ Tân cái kia kịch bản, vai chính gia trụ chính là cái dơ loạn kém địa phương</p>
+<p>“Có thể!” Trương Duệ Tân cảm thấy nơi này khá tốt.</p>
+<p>Loang lổ nhà cũ tường viện biên loại mướp hương, chứa đầy bùn đất bồn tráng men có mới vừa cắm vào đi tỏi, có một gian nhà cũ là bán hoa vòng, cửa treo vòng hoa, bên cạnh lại có mấy cái lão nhân ngồi ở râm mát chỗ nói chuyện phiếm……</p>
+<p>Nơi này nơi chốn đều là chuyện xưa.</p>
+<p>“Kia chúng ta đi tìm phòng ở.” Tô Hướng Dương nói xong, liền mang theo Trương Duệ Tân đi hỏi những cái đó ngồi nói chuyện phiếm lão nhân, hỏi thăm có hay không phòng ở cho thuê.</p>
+<p>Trấn Trường Khê trừ bỏ Vương lão bản bên ngoài, mặt khác mấy cái đàn đầu là bao lấy, đương nhiên bọn họ vì khống chế diễn viên quần chúng, cấp diễn viên quần chúng môi trường ở trọ rất kém cỏi.</p>
+<p>Bất quá dù vậy, ở trấn Trường Khê thuê nhà người vẫn như cũ rất nhiều, chỉ là những người đó đều sẽ lựa chọn ở thành phố điện ảnh phụ cận thuê nhà, mà không phải tới khu phố cũ bên này thuê.</p>
+<p>Tô Hướng Dương là người địa phương, cùng nơi này lão nhân câu thông vô chướng ngại, hắn hỏi một vòng, thực mau liền thuê tới rồi một gian nhà cũ.</p>
+<p>Kia trong phòng thuộc về một đôi lão phu thê, bọn họ nhi tử ở thành phố an gia, bọn họ cũng liền đi theo đi thành phố trụ, này nhà cũ lưu tại cái này làm cho hàng xóm nhìn, có thể cho thuê tốt nhất, thuê không ra đi cũng không sao.</p>
+<p>Này nhà cũ là một đống tễ ở khe hở hai tầng tiểu lâu, chiếm địa đại khái cũng chỉ có 40 cái bình phương, nói là hai tầng, mặt trên cũng chỉ có một cái gác mái cộng thêm một cái tiểu ban công.</p>
+<p>Này phòng ở hai bên dựa gần khác phòng ở, phía trước khoảng cách không đến hai mét địa phương lại có phòng ở, bởi vậy lấy ánh sáng phi thường kém, nhìn âm u ẩm ướt, liền cùng Tô Hướng Dương ở mười mấy năm sau xem những cái đó cải tạo phòng ở trong tiết mục nhà cũ một cái dạng.</p>
+<p>A Chí gia, nên là cái dạng này!</p>
+<p>Trương Duệ Tân đối cái này phòng ở phi thường vừa lòng.</p>
+<p>Hắn ban đầu kỳ thật tưởng ở chính mình bằng hữu gia chụp bộ điện ảnh này, chính là ngày hôm qua Tô Hướng Dương bọn họ đi qua cái kia dơ loạn kém nhị phòng ở.</p>
+<p>Chính là có cái này phòng ở châu ngọc ở đằng trước, bộ phòng ở kia liền không đủ phá!</p>
+<p>Này phòng ở thuê lên còn tiện nghi, bọn họ hoa hai trăm đồng tiền liền thuê một tháng.</p>
+<p>“Chương đạo, ngươi hôm nay trụ khách sạn, ngày mai dọn lại đây đi.” Tô Hướng Dương đối Trương Duệ Tân nói, Trương Duệ Tân tính toán ở tại quay phim dùng trong phòng, chỉ là hiện tại này phòng ở không có quét tước quá, tưởng trụ nói vẫn là muốn trước dọn dẹp một chút.</p>
+<p>“Hành!” Trương Duệ Tân một ngụm đáp ứng, lại có chút cảm kích “Đa tạ.”</p>
+<p>“Không cần cảm tạ.” Tô Hướng Dương cười nói.</p>
+<p>Một phen lăn lộn xuống dưới, đã mau 6 giờ, Tô Hướng Dương cùng Quý Vệ Ngôn vội vội vàng vàng đạp xe trở về nhà.</p>
+<p>Bọn họ về đến nhà thời điểm Chu Anh Anh đã ăn qua, mà bọn họ đồ ăn bị đặt ở thổ bếp chưng giá thượng, bởi vì trong nồi có ấm áp thủy, đồ ăn cũng là ấm áp.</p>
+<p>Tô Hướng Dương cùng Quý Vệ Ngôn ăn cơm lại đi bên ngoài, liền thấy còn có người ở nhà bọn họ nhà chính dẫm máy may.</p>
+<p>Này mấy cái trong thôn nữ nhân phía trước trở về ăn cơm chiều, ăn qua lúc sau lại lại đây.</p>
+<p>Ở Chu Anh Anh nơi này làm quần áo không cần cố định thời gian đi làm tan tầm, có rảnh lại đây là được, làm một kiện quần áo tiền tuy rằng không nhiều lắm, nhưng một ngày xuống dưới nhiều làm vài món, cũng có thể có cái mười mấy hai mươi khối.</p>
+<p>Này thu vào rất thấp, nhưng ở nông thôn nữ nhân một chút không chê, từng cái nhiệt tình mười phần.</p>
+<p>Nếu không phải Chu Anh Anh buổi sáng không ở, các nàng cảm thấy các nàng có thể tránh càng nhiều.</p>
+<p>Này mấy người đều là Tô Hướng Dương bọn họ thôn, Tô Hướng Dương nhìn liền cảm thấy các nàng quen mặt, bất quá hắn đời trước rời đi thôn lâu lắm, bởi vậy không biết các nàng rốt cuộc là nhà ai, lại gọi là gì.</p>
+<p>Hắn dứt khoát liền sắm vai một cái thẹn thùng người trẻ tuổi, chỉ hướng tới các nàng cười.</p>
+<p>“A Dương, nghe nói ngươi đi làm nghề mộc?” Có người cùng Tô Hướng Dương đáp lời.</p>
+<p>Tô Hướng Dương đáp, nói chính mình đúng là đoàn phim làm nghề mộc sống. Đến nỗi hắn kỳ thật là một cái nhà thầu nhỏ sự tình…… Tô Hướng Dương chưa nói.</p>
+<p>Tài không lộ bạch, làm người biết hắn hiện tại kiếm tiền nhiều không phải cái gì chuyện tốt.</p>
+<p>“Học một môn tay nghề khá tốt.”</p>
+<p>“Ngươi kiếm tiền, mẹ ngươi liền nhẹ nhàng.”</p>
+<p>“A Dương từ nhỏ liền hiểu chuyện.”</p>
+<p>Những người này đem Tô Hướng Dương khen một phen, còn kéo dẫm một chút cách vách Tô Giai Cường “Nghe nói Tô Giai Cường mỗi ngày ở tiệm net chơi.”</p>
+<p>“Lớn như vậy, cũng không đứng đắn làm điểm sự tình.”</p>
+<p>“Mẹ hắn còn làm người cho hắn giới thiệu đối tượng, vóc dáng lùn liền tính, còn cả ngày hỗn nhật tử, ai nguyện ý a.”</p>
+<p>Tô Hướng Dương cùng Chu Anh Anh cũng chưa nói tiếp.</p>
+<p>Bọn họ cùng bọn họ tiểu thúc một nhà quan hệ chẳng ra gì, những người này nói như vậy, chính là vì cho bọn hắn lấy lòng…… Bọn họ nghe một chút liền tính, không cần thiết đi theo mắng.</p>
+<p>Những người này 8 giờ nhiều thời điểm, liền đều đi rồi, Tô Hướng Dương lúc này hỏi Chu Anh Anh “Mẹ, ngươi hiện tại sẽ làm quần áo nhiều sao?”</p>
+<p>Chu Anh Anh nói “Ta học được vài cái cổ trang hình thức, làm sao vậy?”</p>
+<p>Tô Hướng Dương nói “Mẹ, ngươi nỗ nỗ lực, nói không chừng có thể khai cái chuyên môn giúp đoàn phim diễn trò phục phòng làm việc.”</p>
+<p>Làm diễn viên quần chúng quần áo có thể kiếm tiền, nhưng kiếm không được quá nhiều, huống chi Chu Anh Anh còn không phải trực tiếp cấp đoàn phim làm, mà là giúp thuê quần áo cấp đoàn phim người làm.</p>
+<p>Chu Anh Anh lại nỗ lực, cũng cũng chỉ có thể tránh cái vất vả tiền.</p>
+<p>Nhưng nếu Chu Anh Anh có thể cấp đoàn phim chủ yếu diễn viên lượng thân định chế các loại quần áo, kia nàng kiếm tiền liền nhiều!</p>
+<p>Chu Anh Anh cười rộ lên “Đây là ta nỗ nỗ lực là được sao? Khẳng định muốn dựa ngươi, ngươi nhận thức đoàn phim nếu yêu cầu quần áo, có thể tới tìm ta hỗ trợ làm.”</p>
+<p>“Mẹ, ta sẽ lưu ý,” Tô Hướng Dương nói, “Về sau ngươi cấp đoàn phim làm trang phục, ta cấp đoàn phim làm đạo cụ, đoàn phim phục đạo hóa chúng ta hai cái chiếm hai dạng, tránh đồng tiền lớn!”</p>
+<p>Kỳ thật hắn hôm nay riêng cùng Chu Anh Anh nói cái này, chính là có ý nghĩ như vậy.</p>
+<p>Chu Anh Anh cười ha ha “Đúng vậy, chúng ta tránh đồng tiền lớn.”</p>
+<p>Hiện giờ thời tiết đã lạnh rất nhiều, buổi tối Tô Hướng Dương tắm rửa thời điểm, đều cảm thấy có điểm lạnh.</p>
+<p>Hắn là nông thôn lớn lên, bọn họ thôn người, mùa đông đều không thế nào tắm rửa, hắn khi còn nhỏ tiểu đồng bọn, có chút có thể một cái mùa đông đều không tắm rửa, liền ngẫu nhiên sát một chút.</p>
+<p>Mẹ hắn tính khảo cứu, cách một đoạn thời gian sẽ thiêu rất nhiều thủy, sau đó tuyển cái thái dương đại buổi chiều, dùng plastic màng đáp cái lều, ở bên trong phóng cái đại bồn tắm đem hắn ấn bên trong rửa sạch.</p>
+<p>Khi đó hắn kỳ thật không yêu tắm rửa, nhưng hiện tại không giống nhau.</p>
+<p>Đời trước hắn thói quen mỗi ngày tắm rửa, hiện tại…… Hắn không ý tưởng khác, liền hy vọng trong nhà có thể có cái phòng tắm, trong phòng tắm lại có một cái bồn cầu, một cái phòng tắm vòi sen.</p>
+<p>Ngày hôm sau sáng sớm, Tô Hướng Dương liền đi 《 Lý tam thiếu 》 đoàn phim.</p>
+<p>Đoàn phim tiếp tục bắt đầu quay, sự tình các loại lại ùn ùn kéo đến.</p>
+<p>Cũng may so với phía trước, Tô Hướng Dương đã nhiều rất nhiều kinh nghiệm, xử lý khởi đoàn phim sự tình tới thành thạo.</p>
+<p>Trương Duệ Tân ở bên cạnh xem đến bội phục không thôi, cảm thấy chính mình vận khí thực sự không tồi, ngồi cái xe buýt, thế nhưng đều có thể gặp gỡ có năng lực người.</p>
+<p>Hắn cũng không đi quấy rầy Tô Hướng Dương công tác, liền ngồi ở Tô Hướng Dương bên người, quan sát cái này đoàn phim.</p>
+<p>Tô Hướng Dương bên người nhiều cá nhân, Giang Trạm Thâm trước tiên liền chú ý tới, hỏi Tô Hướng Dương “Tiểu Tô, đây là ai?”</p>
+<p>Tô Hướng Dương nói “Đây là Trương Duệ Tân, hắn cũng là cái đạo diễn, tính toán tự biên tự đạo chụp một bộ điện ảnh, Giang đạo ngươi có thể tìm hắn tâm sự.”</p>
+<p>Tự biên tự đạo đóng phim điện ảnh? Giang đạo tới hứng thú, nhìn về phía Trương Duệ Tân “Chương đạo hảo!”</p>
+<p>Giang Trạm Thâm như vậy một cái đại đoàn phim đạo diễn, hiện tại nhiệt tình về phía chính mình chào hỏi…… Trương Duệ Tân nói “Tiền bối hảo!”</p>
+<p>“Ta tính cái gì tiền bối a! Ha ha.” Giang Trạm Thâm cùng Trương Duệ Tân trò chuyện lên.</p>
+<p>Trò chuyện trò chuyện, Giang Trạm Thâm hậm hực.</p>
+<p>Hắn năm nay 29, Trương Duệ Tân năm nay…… 30.</p>
+<p>Ha hả, so với hắn đại người, kêu hắn tiền bối, không biết xấu hổ?</p>
+<p>Nhưng Giang Trạm Thâm không chiêu. Trương Duệ Tân tốt nghiệp sau đương lão sư, cả ngày cùng một đám người trẻ tuổi ở bên nhau, sinh hoạt hoàn cảnh thực đơn thuần, người cũng liền tinh thần phấn chấn bồng bột, người ngoài nhìn, tuyệt đối là hắn so Giang Trạm Thâm tiểu.</p>
+<p>Tâm tình không tốt Giang Trạm Thâm dứt khoát liền ngồi thật chính mình “Tiền bối” thân phận, bắt đầu chỉ điểm Trương Duệ Tân.</p>
+<p>Hắn cùng quá vài cái đoàn phim, liền tính kinh nghiệm không phải đặc biệt đủ, chỉ điểm Trương Duệ Tân cũng dư dả.</p>
+<p>Bất quá này một chỉ điểm, Giang Trạm Thâm liền cảm thấy hắn cùng Trương Duệ Tân không có cộng đồng đề tài.</p>
+<p>Khác không nói, liền Trương Duệ Tân tính toán chụp cái kia 《 A Chí cả đời 》, loại này điện ảnh ai ái xem a! Dù sao hắn là tuyệt đối không xem!</p>
+<p>Còn có chính là, Trương Duệ Tân cũng quá nghèo, thế nhưng tính toán lấy mười vạn khối tới chụp một bộ điện ảnh, này mười vạn khối còn bao gồm Trương Duệ Tân ăn mặc cần kiệm lúc sau tồn xuống dưới nhiều năm tích tụ……</p>
+<p>Giang Trạm Thâm cùng Trương Duệ Tân nói một ít như thế nào trù bị đoàn phim sự tình, kết quả những cái đó đối Trương Duệ Tân tới nói, đều không hề ý nghĩa!</p>
+<p>Trương Duệ Tân nào có tiền trù bị đoàn phim!</p>
+<p>Giang Trạm Thâm phía trước vẫn luôn cảm thấy chính mình đương đạo diễn quay phim là ở truy mộng, hiện tại lại cảm thấy không phải.</p>
+<p>Hắn khả năng chính là có cái tiểu yêu thích, vừa lúc chính mình lại có tiền nguyện ý cấp cái này tiểu yêu thích tạp tiền……</p>
+<p>Tô Hướng Dương thấy Trương Duệ Tân cùng Giang Trạm Thâm liêu đến vui vẻ, liền đi vội chính mình sự tình.</p>
+<p>Trương Duệ Tân cùng Giang Trạm Thâm đều là đạo diễn, hẳn là sẽ rất có cộng đồng đề tài, làm bọn họ chính mình liêu hảo, đến nỗi hắn…… Hôm nay đoàn phim vừa lúc thỉnh một ít diễn viên quần chúng, Tô Hướng Dương cân nhắc có thể ở bên trong tìm kiếm một chút, xem có hay không thích hợp người có thể tham diễn Trương Duệ Tân điện ảnh.</p>
+<p>Tuy rằng bộ điện ảnh này không thể thượng viện tuyến, nhưng hắn vẫn là hy vọng có thể chụp đến tận lực hoàn mỹ một ít.</p>
+<p>《 Lý tam thiếu 》 đoàn phim diễn viên quần chúng, ngay từ đầu là một cái Tô Hướng Dương không thân đàn đầu đưa tới, nhưng sau lại quản lý đoàn phim thành Tô Hướng Dương, hắn yêu cầu diễn viên quần chúng thời điểm, khiến cho Vương lão bản dẫn người lại đây.</p>
+<p>Hắn nhìn này đó diễn viên quần chúng, tưởng từ bên trong tìm xem cái loại này trời sinh nhiệt ái diễn kịch người.</p>
+<p>Tỷ như đồng dạng là ở trên đường cái đi đường diễn viên quần chúng…… Có chút người là tới hỗn nhật tử, liền chết lặng mà qua lại đi, nhưng có chút người sẽ tràn ngập tình cảm mãnh liệt, biết rõ ở hình ảnh bọn họ chỉ là cái rất xa bối cảnh, cũng sẽ bày ra ra một ít không giống người thường.</p>
+<p>《 A Chí cả đời 》, sắm vai A Chí phụ thân, còn có A Chí thích nữ nhân kia người, cần thiết là nhiệt ái quay phim.</p>
+<p>Đáng tiếc, những cái đó đương diễn viên quần chúng người phần lớn hai mắt vô thần……</p>
+<p>Tô Hướng Dương chính cân nhắc muốn như thế nào tìm được thích hợp diễn viên, Trương Duệ Tân lại đây “Tô Hướng Dương, nói cho ngươi một cái tin tức tốt, Giang đạo hắn muốn mang vốn vào đoàn!”</p>
+<p>Tô Hướng Dương sửng sốt “Cái gì?”</p>
+<p>Giang Trạm Thâm muốn mang vốn vào đoàn? Hắn muốn làm gì? Tễ đi Trương Duệ Tân hắn đảm đương đạo diễn?</p>
+<p>“Giang đạo tính toán đầu tư ta mười vạn khối, hắn còn sẽ biểu diễn A Chí phụ thân.” Trương Duệ Tân thực hưng phấn.</p>
+<p>Tô Hướng Dương là hắn phúc tinh a!</p>
+<p>Tô Hướng Dương cho hắn một cái cơ hội, làm hắn tới tham quan như vậy một cái đại đoàn phim, còn giới thiệu hắn cùng Giang đạo nhận thức, sau đó…… Hắn liền nói động Giang đạo diễn hắn điện ảnh.</p>
+<p>Giang đạo chỉ cần lại hóa hoá trang…… Thực phù hợp A Chí phụ thân hình tượng sao!</p>
+<p>Tô Hướng Dương tò mò “Giang đạo nguyện ý diễn một cái gia bạo người xấu?”</p>
+<p>“Ta nói với hắn nhân vật này rất có tính khiêu chiến, hắn liền đồng ý.” Trương Duệ Tân nói.</p>
+<p>Trương Duệ Tân đặc biệt hưng phấn, vội vã đi thu thập quay chụp nơi sân, Tô Hướng Dương tắc đi tìm Giang Trạm Thâm hiểu biết tình huống.</p>
+<p>Giang Trạm Thâm nói “Dù sao hắn cái kia điện ảnh không có khả năng thượng viện tuyến, ta liền tùy tiện vỗ vỗ, diễn một cái ác ôn cũng rất có ý tứ!”</p>
+<p>Giang Trạm Thâm sĩ diện, nếu là Trương Duệ Tân chụp kịch sẽ thượng đài truyền hình hoặc là thượng viện tuyến, hắn khẳng định không đi diễn người xấu.</p>
+<p>Nhưng Trương Duệ Tân bộ điện ảnh này rất tiểu chúng, hắn tham diễn coi như là chơi một chút.</p>
+<p>Hắn kỳ thật vẫn luôn đều tưởng thống thống khoái khoái diễn cái nhân vật, diễn sau khi xong, hắn liền trở về kế thừa gia nghiệp, tiếp tục đào than đá.</p>
+<p>Hắn về sau sẽ không lại đương đạo diễn, cũng sẽ không lại quay phim, nhiều nhất chính là làm làm đầu tư, đầu tư một ít đoàn phim.</p>
+<p>Thì ra là thế…… Tô Hướng Dương cùng Giang Trạm Thâm trò chuyện, xem như biết Giang Trạm Thâm ý tưởng.</p>
+<p>Như vậy cũng khá tốt, Trương Duệ Tân đệ nhất bộ điện ảnh đầu tư phiên bội, thế nhưng có hai mươi vạn!</p>
+<p>A Chí cùng A Chí phụ thân nhân vật đã tuyển định, Trương Duệ Tân liền tính toán mau chóng bắt đầu quay.</p>
+<p>Đến nỗi nữ chủ diễn…… Ân, bọn họ một bên chụp một bên tìm.</p>
+<p>Cái kia nữ chủ diễn kỳ thật lên sân khấu không nhiều lắm, tìm cái khí chất ôn hòa tuổi tác cũng không sai biệt lắm nữ diễn viên quần chúng là được, Trương Duệ Tân đối người nọ diện mạo gì đó, hoàn toàn không có yêu cầu.</p>
+<p>Đến nỗi kịch mặt khác diễn viên…… A Chí bên người kia mấy tên côn đồ, Trương Duệ Tân trực tiếp ở trên đường cái tìm kiếm tới rồi thích hợp, sau đó lấy một ngày một trăm khối giá cả, thỉnh bọn họ đảm đương diễn viên quần chúng.</p>
+<p>Này mấy cái bị Chương đạo tìm tới diễn viên quần chúng, còn chính là trấn trên không yêu đi học tên côn đồ, bản sắc biểu diễn diễn đến phi thường hảo.</p>
+<p>Bị A Chí khi dễ học sinh, Giang đạo cũng trực tiếp ngồi xổm cổng trường tìm kiếm hai cái, đến nỗi hàng xóm gì đó, hắn thuê trụ phòng ở, vốn là có hàng xóm!</p>
+<p>Này bộ kịch đại bộ phận người đều là bản sắc biểu diễn, trấn Trường Khê người thấy nhiều chụp TV đóng phim điện ảnh, cũng đều nguyện ý tham diễn.</p>
+<p>Đến nỗi quan trọng nhất hai cái nhân vật……</p>
+<p>A Chí phụ thân là một cái thích uống rượu, uống say liền đánh người người, nói thật, như vậy nhân vật cũng không khó diễn.</p>
+<p>Diễn nào đó nhân vật yêu cầu chú ý vi biểu tình, yêu cầu chú ý ánh mắt, biểu tình không thể quá dùng sức cũng không thể không biểu tình, nhưng nhân vật này……</p>
+<p>Giang Trạm Thâm chỉ cần hoàn toàn buông ra tùy ý gào rống rít gào là có thể diễn hảo, hắn làm được thực hảo.</p>
+<p>Nhưng biểu hiện tốt nhất, vẫn là Quý Vệ Ngôn.</p>
+<p>Tô Hướng Dương bớt thời giờ lại đây, liền thấy Trương Duệ Tân cầm cái camera đang ở chụp Quý Vệ Ngôn cùng Giang Trạm Thâm vai diễn phối hợp.</p>
+<p>Trương Duệ Tân dùng báo chí quấn lấy bóng đèn coi như quay phim dùng ánh đèn, đem camera đặt ở một cái rương hành lý thượng, đang từ từ di động tới rương hành lý tiến hành quay chụp.</p>
+<p>Giang Trạm Thâm sắc mặt đỏ bừng, biểu tình dữ tợn, múa may một cây gậy gỗ đang ở đánh người.</p>
+<p>Quý Vệ Ngôn đâu? Hắn ở bị đánh.</p>
+<p>Gầy yếu thiếu niên vô lực phản kháng, nhưng ngẫu nhiên lộ ra tới biểu tình cùng trong ánh mắt, lại mạo hỏa.</p>
+<p>Tô Hướng Dương nhìn đến như vậy Quý Vệ Ngôn, tâm đều bị nắm một chút.</p>
+<p>Phía trước 《 Lý tam thiếu 》 đoàn phim thử kính thời điểm, Quý Vệ Ngôn biểu hiện đặc biệt hảo, nhưng đó là học người khác.</p>
+<p>Mà ở 《 Lý tam thiếu 》 quay chụp trong lúc, Quý Vệ Ngôn biểu hiện không kém, lại cũng không tới làm người kinh diễm trình độ.</p>
+<p>Nhưng hiện tại không giống nhau…… Tô Hướng Dương chỉ là trạm bên cạnh nhìn, đã bị Quý Vệ Ngôn cảm xúc cảm nhiễm, giờ này khắc này, hắn rất tưởng xông lên đi tấu Giang Trạm Thâm một đốn.</p>
+<p>Giang Trạm Thâm như thế nào có thể như vậy đối một cái hài tử!</p>
+<p>Hảo đi, đáng giận không phải Giang Trạm Thâm, mà là Quý Vệ Ngôn người nhà.</p>
+<p>Phía trước Quý Vệ Ngôn diễn kịch, chủ yếu dựa vào là bắt chước, nhưng lần này không giống nhau, hắn nhập diễn.</p>
+<p>Hắn đem chính mình đương thành “A Chí”.</p>
+<p>Hắn đem A Chí diễn sống.</p>
+<p>Quay chụp hạ màn, Giang Trạm Thâm buông trên tay cái kia bên ngoài bọc một tầng cao su đạo cụ gậy gỗ, hỏi Quý Vệ Ngôn “Tiểu Quý, vừa rồi ta có hay không đả thương ngươi?”</p>
+<p>Quý Vệ Ngôn biểu tình còn có điểm âm trầm, hắn nhàn nhạt mà liếc Giang Trạm Thâm liếc mắt một cái “Không có, liền điểm này lực đạo, chỉ có thể cào cái ngứa.”</p>
+<p>“Không có liền hảo, Tiểu Quý, ngươi kỹ thuật diễn thật sự thật tốt quá! Trách không được phía trước Tô Hướng Dương nói ta đoàn phim mai một ngươi, ta cũng cảm thấy ta cho ngươi nhân vật quá bình thường, không có biện pháp làm ngươi hảo hảo phát huy…… Vừa rồi ngươi đều đem ta mang nhập diễn!” Giang Trạm Thâm vẻ mặt cảm khái.</p>
+<p>Quý Vệ Ngôn vẫn là không nói chuyện. Hắn kỳ thật không phải nhập diễn, hẳn là cũng coi như là…… Bản sắc biểu diễn?</p>
+<p>Hắn thật sự thực thích nhân vật này, ở quay phim trong quá trình, hắn trong lòng tích áp, không chỗ phát tiết phụ năng lượng, bị hoàn toàn phóng xuất ra tới.</p>
+<p>Hắn trong lòng đóng lại một đầu dã thú, này bộ diễn có thể đem nó thả chạy.</p>
+<p>Quý Vệ Ngôn uống lên nước miếng, sau đó liền thấy được Tô Hướng Dương.</p>
+<p>Hắn không tự giác mà cười, nháy mắt đã quên “Dã thú” linh tinh sự tình.</p>
+<p>“Tiểu Quý, ngươi không sao chứ? Như thế nào không nói lời nào? Ngươi nhưng đừng nhập diễn quá sâu……” Giang Trạm Thâm nói đến một nửa, liền thấy Quý Vệ Ngôn cười rộ lên, còn hướng tới Tô Hướng Dương đi đến.</p>
+<p>Hắn thật sự nhiều lo lắng! Nhân gia chính là chuyên nghiệp, căn bản không cần hắn đi lo lắng nhân gia nhập diễn quá sâu!</p>
+<p>“Vệ Ngôn.” Tô Hướng Dương thấy Quý Vệ Ngôn cười, yên lòng.</p>
+<p>Hắn vốn muốn hỏi Quý Vệ Ngôn vài câu, nhưng nghĩ vậy dạng khả năng sẽ xốc Quý Vệ Ngôn vết sẹo, dứt khoát liền không hỏi, chỉ từ trong túi ra bên ngoài lấy hộp cơm “Ta cho các ngươi mang theo ăn.”</p>
+<p>Tô Hướng Dương chuẩn bị đồ ăn thực phong phú, Quý Vệ Ngôn nhìn nhìn liền nói “Tô ca, đều là ta thích ăn!”</p>
+<p>“Ngươi liền không có không thích ăn đi.” Tô Hướng Dương cười nói.</p>
+<p>Quý Vệ Ngôn không nói tiếp, hắn đương nhiên là có không thích ăn, chỉ là cùng Tô Hướng Dương nói qua chính mình không thích ăn đồ vật lúc sau, Tô Hướng Dương liền sẽ tránh đi kia mấy thứ.</p>
+<p>Không có kia mấy thứ, nhưng không phải tất cả đều là hắn thích ăn?</p>
+<p>Quý Vệ Ngôn lấy ra một cái hộp cơm, thỏa mãn mà ăn một mồm to.</p>
+<p>“Tiểu Quý, ngươi bưng ngươi hộp cơm, qua bên kia ăn.” Trương Duệ Tân đột nhiên chỉ vào kia trương đáp ở nhà ăn giường nói “Ta tới cấp ngươi chụp một đoạn ngươi ăn cơm hình ảnh, chờ về sau nữ chủ diễn tới, lại chụp cái nàng đưa ngươi cái này hộp cơm hình ảnh! Đúng rồi này hộp cơm muốn lưu lại đương đạo cụ!”</p>
+<p>Tô Hướng Dương “……” Hắn mới vừa mua hộp cơm……</p>
+<p>Trương Duệ Tân lại còn ở dặn dò Quý Vệ Ngôn “Tiểu Quý, ngươi ăn cơm thời điểm biểu tình muốn ôn hòa một ít, ngươi lúc ấy trong lòng là nghĩ cái kia ngươi thích nữ nhân…… Đối, chính là cái này biểu tình, ngươi từ từ ăn, ta nhiều chụp trong chốc lát!”</p>
+<p>Trương Duệ Tân cũng không ăn cơm, hưng phấn mà bắt đầu chụp, còn từ bất đồng góc độ đi chụp Quý Vệ Ngôn.</p>
+<p>Giang Trạm Thâm bay nhanh mà đem chính mình kia phân ăn xong, có chút cảm khái.</p>
+<p>Đương đạo diễn quả nhiên không phải hắn mộng tưởng, hắn chỉ nghĩ chụp một bộ có hắn ký tên phim truyền hình, muốn cho hắn huy hiệu duệ tân như vậy điên cuồng…… Đó là không có khả năng.</p>
+<p>Quý Vệ Ngôn cũng rất điên cuồng, gần nhất cùng Quý Vệ Ngôn cùng nhau diễn kịch, có đôi khi nhìn đến Quý Vệ Ngôn cái kia ánh mắt, hắn thậm chí sẽ cảm thấy Quý Vệ Ngôn là thật sự muốn lộng chết hắn.</p>
+<p>Này đó diễn kịch thiên tài, thật sự rất đáng sợ.</p>
+<p>Giang Trạm Thâm nghĩ đến đây, thấp giọng hỏi Tô Hướng Dương “Tô Hướng Dương, ta trước kia hợp tác quá một cái đạo diễn muốn chụp một bộ phim mới, ngươi muốn hay không mang Quý Vệ Ngôn đi thử kính?”</p>
+<p>“Cái nào đạo diễn, cái gì diễn?” Tô Hướng Dương hỏi Giang Trạm Thâm.</p>
+<p>Giang Trạm Thâm nói “Là Cao Chế Cường đạo diễn, hắn muốn chụp chính là cái quân sự đề tài dốc lòng kịch, kêu 《 Tân binh doanh 》……”</p>
+<p>“Như thế nào liên hệ hắn? Giang đạo ngài có thể cho cái đề cử sao?” Tô Hướng Dương lập tức liền hỏi, một lòng thiếu chút nữa nhảy ra lồng ngực.</p>
+<p>《 Tân binh doanh 》 này bộ phim truyền hình phi thường nổi danh, cũng không biết là linh bảy năm vẫn là linh tám năm, nó ratings là năm đó cả nước tiền tam, phủng đỏ vài cái nam diễn viên.</p>
+<p>Như vậy kịch, Tô Hướng Dương phía trước căn bản không dám tưởng!</p>
+<p>Tuy rằng hắn nhớ rõ này bộ kịch tuyển một ít tân nhân, nhưng này bộ kịch không phải ở thành phố điện ảnh bên này chụp, hắn căn bản không có phương pháp giúp Quý Vệ Ngôn liên hệ.</p>
+<p>“Ta có hắn điện thoại, cấp đề cử cũng không phải không được.” Giang Trạm Thâm chần chờ mà nhìn Tô Hướng Dương “Tiểu Tô a, ngươi cùng ta nói chuyện có thể hay không đừng dùng ngài? Ta có điểm không thói quen.”</p>
+<p>Từ khi bị Tô Hướng Dương chỉ vào cái mũi nói chính mình kịch là lạn kịch, Giang Trạm Thâm liền có điểm sợ Tô Hướng Dương, tổng lo lắng Tô Hướng Dương cho chính mình chọn thứ.</p>
+<p>Tô Hướng Dương là phương nam người, nói chuyện không thói quen nói “Ngài”, hiện tại đột nhiên như vậy tới một câu, hắn nổi da gà đều đi lên.</p>
+<p>Tô Hướng Dương nên không phải là ghi hận hắn đánh Quý Vệ Ngôn, muốn làm điểm cái gì đi?</p>
+<p>Lại hoặc là, Tô Hướng Dương là Cao đạo đáng tin fans?</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong31.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong33.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tu-dien-vien-quan-chung-bat-dau-trong-sinh";
+const NOVEL_TITLE = "Từ diễn viên quần chúng bắt đầu ( trọng sinh )";
+const CHAPTER_TITLE = "Chương 32 kỹ thuật diễn";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
