@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 8  vấn tâm</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Xuyên Việt Chi Tu Tiên
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 8  vấn tâm</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong7.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong9.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Từ Tử Đường lập tức cầm linh thảo cáo từ mà đi, Điền Lượng thấy mỹ nhân đi rồi, tự nhiên là liên tục đuổi kịp, cuối cùng cũng chưa quên ném cho Từ Tử Thanh một cái sắc bén con mắt hình viên đạn, Từ Tử Thanh gục đầu xuống, đóng qua đi.</p>
+<p>Sau mấy ngày, Từ Tử Thanh cứ theo lẽ thường nhớ nằm lòng dược thư, chưa từng tưởng ngày này bữa tối sau, hắn mới nhớ thục một quyển 《 Thần Nông thảo lục 》, đã bị Hạ lão đầu gọi vào một bên.</p>
+<p>Từ Tử Thanh khó hiểu, canh giờ này, nên là bọn họ từng người ở trong phòng nghỉ ngơi là lúc, không biết vì sao bị gọi lại đây.</p>
+<p>Lại thấy Hạ lão đầu trừu một túi yên, hỏi “Ngươi làm sao không tới cầu ta?”</p>
+<p>Từ Tử Thanh không nhiều minh bạch “Ngày gần đây tới, Hạ quản sự ngài đối vãn bối chỉ điểm rất nhiều, đã là vô cùng cảm kích……”</p>
+<p>Hạ lão đầu xua tay “Đều không phải là cái này. Ngày ấy ngươi đã chịu Điền gia tiểu tử làm khó dễ, hắn chỉ sợ còn muốn tìm ngươi phiền toái, ngươi còn chưa có nửa điểm tu vi trong người, thế nhưng không lo lắng tánh mạng sao? Ngươi ứng minh bạch, đó là lão đầu nhi ta, cũng không thể lúc nào cũng che chở ngươi.”</p>
+<p>Từ Tử Thanh mới biết được Hạ lão đầu ý tứ. Hắn nghĩ nghĩ, nói “Vãn bối thật là lo lắng mình thân tánh mạng, cũng muốn sớm chút tu tập công pháp, có một kỹ bàng thân. Chỉ là vãn bối sớm đã đáp ứng rồi quản sự, muốn trước đem trong tay mấy quyển dược thư nhớ thục. Người vô tin tắc không lập, dược thư còn chưa đọc xong, vãn bối có thể nào mặt dày tới tìm quản sự cầu kia công pháp?”</p>
+<p>Hạ lão đầu nhìn chằm chằm hắn mặt “Tánh mạng cũng chưa, còn muốn giảng kia đồ bỏ danh dự?”</p>
+<p>Từ Tử Thanh nghiêm mặt nói “Nếu là mọi chuyện đều có thể lật lọng, vãn bối cũng bất quá là cái lắc lư không chừng người. Tuy nói vãn bối chưa tu hành, nhưng cũng minh bạch đó là đại gian đại nạn chi đồ, nếu như liền tâm niệm đều không thể kiên trì, chỉ sợ cho dù bước vào tiên đồ, cũng tuyệt không thể có điều thành tựu, càng không thể giữ được tánh mạng.”</p>
+<p>“Hảo, hảo, hảo!” Liên tiếp nói ba cái “Hảo” tự, Hạ lão đầu trên mặt cũng khó được mang lên chút tươi cười tới, “Ngươi có thể có này tâm, quả nhiên không có theo ta thấy sai người.” Hắn nói xong, lại hỏi, “Ngươi còn có mấy quyển dược thư chưa xem?”</p>
+<p>Từ Tử Thanh đáp “Liền chỉ còn lại có 《 Hạo Thiên thảo cương 》.”</p>
+<p>Hạ lão đầu trầm ngâm một lát, nói “Ngươi trước đem này thảo mộc cương học thuộc lòng, rồi sau đó không so đo khi nào, liền tới tìm ta. Ta truyền cho ngươi công pháp.” Lại hừ lạnh một tiếng, “Điền Lượng người này ngươi không cần lo lắng, ngươi chỉ ở ta nơi này làm một ngày tạp dịch, hắn liền nề hà ngươi không được.”</p>
+<p>Từ Tử Thanh vui mừng quá đỗi, lập tức hành một cái đại lễ “Đa tạ Hạ quản sự.”</p>
+<p>Này đó thời gian tới nay Từ Tử Thanh không đã chịu quấy rầy, tự nhiên không phải kia Điền Lượng buông tha hắn, thật sự là bởi vì hắn ở Từ gia cũng không nhiều ít giúp đỡ. Đó là tông gia có người có tâm nịnh bợ cái này Điền gia công tử, lại không thể bắt được nhập Bách Thảo Viên linh bài, mới kêu hắn đành phải hậm hực buông tay. Đúng lúc ở hôm qua, Điền gia cuối cùng là sai người tới đón, Điền Lượng đó là lại không cam nguyện, cũng chỉ đến đi trở về.</p>
+<p>Tới rồi Điền gia sau, Điền Lượng lập tức vào nhà chính, đối kia gia chủ nói “Phụ thân, ngươi vì sao như vậy vội vàng muốn hài nhi trở về? Kia Từ Tử Đường đã nhiều ngày đối diện hài nhi có chút mềm mại, hài nhi lại ngây ngốc một đoạn thời gian, chẳng phải là dễ như trở bàn tay!”</p>
+<p>Nguyên lai Từ Tử Đường được Hạ lão đầu chỗ tốt, có tâm cho hắn mặt mũi, liền trừu chút công phu cùng Điền Lượng lá mặt lá trái, không cho hắn đi tìm Từ Tử Thanh phiền toái. Đó là như thế, thái độ cũng là không nóng không lạnh, chưa từng tưởng lại bị Điền Lượng cho rằng đối hắn ái mộ, đắc chí lên.</p>
+<p>Kia gia chủ Điền Thăng nghe vậy đại hỉ “Lửa đèn, ngươi lời nói thật sự?”</p>
+<p>Điền Lượng rất có đắc sắc, nói “Phụ thân, ngươi đương hài nhi là người nào, nếu vô nắm chắc, hài nhi sao lại như thế đối phụ thân nói.”</p>
+<p>Điền Thăng vỗ tay cười to “Kia Từ Tử Đường chính là Từ gia gần trăm năm tới xuất chúng nhất nữ tử, lửa đèn có thể đem nàng cưới quá môn, định có thể vì ta nhi sinh hạ thiên tư xuất chúng hài nhi tới!” Hắn cao hứng rất nhiều, không cấm đứng dậy vỗ vỗ Điền Lượng bả vai, “Vi phụ này liền chuẩn bị lễ hỏi, làm đại trưởng lão đến Từ gia cầu hôn đi!”</p>
+<p>Điền Lượng nghe được, cũng là thập phần vui sướng, lập tức thật sâu hành lễ “Hài nhi đa tạ phụ thân! Hài nhi đa tạ phụ thân!”</p>
+<p>Từ Tử Thanh rốt cuộc trí nhớ bất phàm, không quá mấy ngày, đã là học thuộc lòng cuối cùng một quyển dược thư, lúc ấy liền đi tìm Hạ lão đầu. Hạ lão đầu dùng khói côn gõ gõ sống lưng, làm Từ Tử Thanh nhất nhất bối tới, quả nhiên không một để sót. Từ Tử Thanh đối Hạ lão đầu cũng là khâm phục, nếu nói hắn chỉ là đem thư thượng nội dung nhớ chín, kia Hạ lão đầu đó là thông hiểu đạo lí, có khi hỏi ra vấn đề, đó là Từ Tử Thanh đã là đọc làu làu, cũng muốn tinh tế suy tư một phen, mới có thể đáp được.</p>
+<p>Một phen đối đáp sau, Hạ lão đầu thần sắc hòa hoãn không ít “Xem ra, ngươi thật là hạ công phu, không tồi.”</p>
+<p>Từ Tử Thanh thở phào nhẹ nhõm, cười nói “Còn muốn đa tạ Hạ quản sự dốc lòng dạy dỗ.”</p>
+<p>Hạ lão đầu đối Từ Tử Thanh công khóa vừa lòng, liền mở ra bàn tay, thoáng chốc lòng bàn tay xuất hiện một quyển ố vàng sổ ghi chép “Đây là công pháp giới thiệu, ngươi hẳn là trước hiểu biết một vài.”</p>
+<p>Từ Tử Thanh tiếp nhận tới, lại vẫn là nhịn không được hỏi “Hạ quản sự, này sổ ghi chép làm sao……”</p>
+<p>Hạ lão đầu ha ha cười, hắn thấy này tân thu tạp dịch luôn là trầm tĩnh ổn trọng, hiện nay đột nhiên hiện ra ra một chút thiếu niên tâm tính tới, thái độ liền càng hòa ái vài phần, một phách bên hông, nói “Ta nơi này có một cái túi trữ vật, cùng ta tâm huyết tương liên, này bổn sổ ghi chép ta nguyên bản liền đặt ở trong đó, chỉ cần tâm niệm vừa động, liền tự nhiên lấy ra tới.”</p>
+<p>Từ Tử Thanh cười, trong lòng rất là vì này đó thủ đoạn chấn động. Hắn tiền sinh chứng kiến thức đến cái gọi là “Khoa học kỹ thuật”, đỉnh thiên cũng bất quá là đem vật phẩm áp súc, đang đợi thể tích trong không gian trang nhập càng nhiều đồ vật. Lại không giống hiện tại hắn nhìn thấy kia Hạ quản sự bên hông giắt một cái kẻ hèn túi gấm giản tiện. Kia túi gấm vẻ ngoài xem ra tinh xảo vô cùng, ai có thể lường trước, nó bên trong thế nhưng có khác không gian?</p>
+<p>Suy nghĩ một chút nữa ngày trước tao ngộ, Từ Tử Thanh không khỏi thở dài. Hắn ban đầu chỉ là muốn dựa núi gần sông quá này cả đời, hiện giờ kiến thức đến thế giới to lớn, lại minh bạch kia tiên lộ không biết, thần bí khó lường, liền cũng không khỏi sinh ra một ít dã tâm. Muốn xem sơn xem thủy, muốn cùng hoa cỏ làm bạn, muốn có thể khỏe mạnh trường thọ…… Như thế đủ loại, nếu không có thực lực trong người, khủng sợ cũng không có thể sống được lâu dài.</p>
+<p>Từ Tử Thanh không muốn gây chuyện, cố tình luôn có sự muốn chọc hắn. Hắn từ trước luôn cho rằng trên đời người đều là muốn giảng đạo lý, hiện giờ xem ra, giảng đạo lý người cố nhiên là có, nhưng nếu như gặp gỡ không nói đạo lý người, hắn cũng muốn có thể có thừa lực hảo sinh bảo vệ chính mình mới là.</p>
+<p>Phủng kia một quyển sổ ghi chép, hắn triều Hạ quản sự gật gật đầu sau, liền gấp không chờ nổi mà đọc lên.</p>
+<p>Sổ ghi chép trung sở nhớ, đều là tu tiên thường thức, cũng làm này Từ Tử Thanh ở ngây thơ mười mấy năm sau, cuối cùng biết được chính mình là sinh ra ở một cái địa phương nào.</p>
+<p>Vũ trụ to lớn, rộng, có 9000 đại thế giới, phân Thượng Tam Thiên, Trung Tam Thiên, Hạ Tam Thiên, mỗi một cái đại thế giới lại có vô số tiểu thế giới vờn quanh, liên hệ lui tới, lẫn nhau liên lụy. Trong đó mỗi một cái tiểu thế giới diện tích đều vì cửu cửu chi số, đại thế giới diện tích tắc vì tiểu thế giới cửu cửu bội số, nhân số đông đảo, mênh mông bể sở.</p>
+<p>Từ Tử Thanh hiện giờ vị trí thế giới liền vì Hạo Thiên tiểu thế giới, chính là Trung Tam Thiên thế giới Khuynh Vẫn đại thế giới phụ thuộc. Mạc xem Từ thị tông gia như thế danh môn diễn xuất, nhưng gần ở phương đông các lục địa trung, liền có Điền gia, La gia, Mạnh gia cùng Ngụy gia, cùng với tề danh. Có khác rất nhiều hải ngoại tiên sơn đại phái, chỉ cần có thể có mỏng danh giả, liền có mấy chục nhiều.</p>
+<p>Này vô số lớn nhỏ thế giới, phàm nhân đều tưởng tu tiên, nhiên chỉ có thân cụ linh căn giả được không, nếu là tiên duyên thâm hậu, tắc có hi vọng trường sinh. Mà nếu muốn lượng tiên duyên thâm hậu cùng không, vừa thấy khí vận, nhị xem thiên tư. Khí vận giả nói hư vô mờ mịt, bình thường người tính kế không được, thiên tư giả nói lại thập phần sáng tỏ. Đơn linh căn giả tiên duyên dày nhất, Ngũ linh căn giả tiên duyên nhất mỏng.</p>
+<p>Bước vào tiên lộ sau, thành tựu nhiều ít cũng phải nhìn công pháp tốt xấu cùng thiên tư dày mỏng. Công pháp cũng có thuộc tính, cùng linh căn thuộc tính tương hợp tắc tiến cảnh mau, tương bội tắc tiến cảnh thong thả.</p>
+<p>Công pháp cấp bậc cùng sở hữu sáu loại, vì Thiên, Địa, Huyền, Hoàng, Nhân, cùng với bất nhập lưu, mỗi nhất đẳng lại chia làm thượng, trung, hạ Tam phẩm. Với Hạo Thiên tiểu thế giới trung, không có sư môn tán tu, cũng hoặc là thế gia các phái trung tầng dưới chót đệ tử, sở tập thường thường vì bất nhập lưu công pháp, mà bị ký thác kỳ vọng cao giả, tắc tu tập Nhân giai pháp môn. Hoàng giai pháp môn liền đã là rất là khó được, phi thiên tư tung hoành giả không thể học. Mà Huyền giai vừa ra, tắc toàn bộ tiểu thế giới tu sĩ xua như xua vịt, tranh đoạt không thôi. Đến nỗi thiên địa Nhị giai, tự cổ chí kim, còn chưa từng ở tiểu thế giới trung gặp qua……</p>
+<p>Có khác tu sĩ chi gian lấy linh thạch, linh châu dễ vật, linh thạch cùng linh châu lại có phẩm cấp, pháp trận có phẩm cấp, tu sĩ mình thân tu vi cũng có phẩm cấp…… Vân vân.</p>
+<p>Này vừa thấy liền vào mê, Từ Tử Thanh mất ăn mất ngủ, ước chừng nhìn ba ngày hai đêm, sung hai mắt tơ máu, mới đưa sổ ghi chép trung sở tái xem xong.</p>
+<p>Nhắm lại sách, Từ Tử Thanh hít sâu một hơi, tâm tồn kính sợ. Càng thêm tâm sinh hướng tới.</p>
+<p>Chớ trách thế nhân đều tưởng tu tiên, đến tiên duyên giả mỗi người khâm tiện, thật sự là tiên lộ mênh mông, người lập với này thượng, ngửa mặt lên trời mà vọng, khó tránh khỏi tâm say thần mê. Cho nên cầu tiên, hỏi tiên, tìm tiên, tu tiên.</p>
+<p>Xem xong này đó, Từ Tử Thanh cũng là tâm triều mênh mông, hiện giờ hắn thủy biết thiên địa to lớn, lại minh bạch mình thân chi nhỏ bé. Mặc dù là hắn từ trước một lòng chỉ ở sơn dã nơi tự tại cả đời, lúc này cũng là hào hùng bỗng sinh. Nếu là muốn cùng sơn thủy hoa cỏ làm bạn, vì sao không đạp biến cửu tiêu, lãm cửu thiên chi sơn thủy, thưởng thiên hạ chi hoa cỏ? Khó khăn thoát khỏi đời trước trầm kha nhiều năm bệnh khu, thật sự chỉ có thể sống kẻ hèn trăm năm cũng liền thôi, hắn rõ ràng có hi vọng trường sinh, làm sao có thể cam tâm thọ tẫn mà chết!</p>
+<p>“Tưởng minh bạch?” Lúc này, một đạo tiếng nói tự hắn màng tai trung vang lên, thẳng đánh nhập thiên linh, chấn động trái tim.</p>
+<p>Từ Tử Thanh sợ hãi mà kinh “Hạ quản sự?”</p>
+<p>Nguyên lai không biết khi nào, Hạ lão đầu tới lại đi, đi rồi phục tới, lúc này chính gắt gao nhìn chằm chằm hắn đâu.</p>
+<p>Hạ lão đầu cười nói “Tiểu tử, ngươi xem đến mê mẩn, chính là minh bạch?”</p>
+<p>Từ Tử Thanh chậm rãi lắc đầu, phục lại chậm rãi gật đầu “Tuy nói còn chưa tìm được mình thân chi đạo, lại quyết tâm đã định rồi.”</p>
+<p>Hạ lão đầu vừa lòng mà hút điếu thuốc “Ta thật lâu không giáo ngươi công pháp, ngươi nhưng oán trách quá ta?”</p>
+<p>Từ Tử Thanh nói “Hạ quản sự vì vãn bối có thể đem viên trung sự làm tốt hao tổn tâm huyết, vãn bối há là như vậy không biết tốt xấu người.”</p>
+<p>Hạ lão đầu phun ra yên tới, nói “Không tồi, ở ta Bách Thảo Viên trung làm việc, liền linh thảo cũng không thể toàn nhận được, lại có thể có chỗ lợi gì!” Rồi sau đó chuyện vừa chuyển, “Bất quá chỉ cần nhận được linh thảo, cũng không thể làm công. Hầu hạ linh thảo, không ngừng muốn hiểu biết linh thảo tập tính, còn muốn thân cụ linh khí, mới có thể ở hầu hạ là lúc, không thương này căn cơ.”</p>
+<p>Nói xong, hắn bàn tay lần nữa mở ra, lần này vẫn là một cuốn sách, chỉ có ít ỏi số trang, mà ở kia sách da, chính viết ba cái ruồi muỗi chữ nhỏ.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong7.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong9.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "xuyen-viet-chi-tu-tien";
+const NOVEL_TITLE = "Xuyên Việt Chi Tu Tiên";
+const CHAPTER_TITLE = "Chương 8  vấn tâm";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
