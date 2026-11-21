@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 16</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ta còn có thể cẩu [tinh tế]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 16</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong15.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong17.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Ban đầu mong muốn trong khi ba ngày thực tập chỉ tiến hành hai ngày một đêm đã bị bách kết thúc, sở hữu thực tập học sinh đều thống nhất bị đưa về trường học.</p>
+<p>Hạ tinh hạm thời điểm, hiệu trưởng đã cùng một số lớn ăn mặc áo blouse trắng bác sĩ ở bỏ neo chỗ chờ bọn họ, sở hữu học sinh đều yêu cầu trải qua một loạt thí nghiệm lúc sau, mới có thể bị đưa về nhà, một chút tinh hạm bọn họ đã bị dẫn dắt phân biệt tiến vào một gian gian cách gian.</p>
+<p>Đại đa số người cũng không có trực diện tinh tặc, cũng không có gì bóng ma tâm lý, còn ở thảo luận ai ai biểu hiện anh dũng, dọc theo đường đi đều vô cùng náo nhiệt.</p>
+<p>Diệp Vân đem bắt được tay một chồng bảng biểu ba lượng hạ điền xong đưa cho bác sĩ, có lệ tư thái thực rõ ràng.</p>
+<p>Bác sĩ bất mãn gõ gõ cái bàn, “Ngươi thấy rõ đề mục sao?”</p>
+<p>Diệp Vân cắt một tiếng, lại muốn lấy lại đi, bác sĩ ngày thường ở trường quân đội nhìn quen loại này hành vi, cũng khí không đứng dậy.</p>
+<p>Loại này vô tâm không phổi học sinh cũng có một chút chỗ tốt, tâm đại, cái gì khảm đều dễ dàng vượt qua đi, hắn xua xua tay, “Được rồi, trở về đi, còn có này tinh lực có lệ ta, ta xem ngươi rất khỏe mạnh.”</p>
+<p>Diệp Vân cũng không khách khí, quay đầu liền đi, tìm kiếm tới rồi Diệp Mặc căn nhà nhỏ, đôi tay ôm vai liền ngồi tới rồi nhà ở mặt sau, Diệp Mặc đang ở điền đệ nhất trương bảng biểu, quay đầu lại nhìn Diệp Vân liếc mắt một cái.</p>
+<p>Diệp Vân “Hảo hảo điền biểu, không cần thất thần, bác sĩ hỏi cái gì nói cái gì.”</p>
+<p>Đối diện bác sĩ phụ họa “Đúng vậy, nghe ngươi ——”</p>
+<p>Diệp Vân tiếp thượng “Ca ca.”</p>
+<p>Bác sĩ “Đúng vậy, nghe ca ca của ngươi.”</p>
+<p>Diệp Mặc liền tiếp theo Mặc Mặc cúi đầu điền biểu, chờ điền xong, bác sĩ đưa cho Diệp Mặc một khối đường.</p>
+<p>“Các ngươi có thể trực tiếp rời đi, kết quả ở trải qua đánh giá sau sẽ trực tiếp gửi đi đến các ngươi người giám hộ đầu cuối.”</p>
+<p>Diệp Mặc vừa mới muốn đứng lên, liền có một bàn tay đè lại bờ vai của hắn, cái tay kia đem trong đó một trương bảng biểu rút ra, một lần nữa phóng tới Diệp Mặc trước mặt.</p>
+<p>“Cái này, lại viết một lần.”</p>
+<p>Diệp Mặc nghiêng đầu, là Diệp Hạ, hắn không biết cái gì tới, đại khái vẫn luôn đứng ở Diệp Mặc phía sau, nhìn Diệp Mặc điền biểu.</p>
+<p>Diệp Mặc một bên đầu vừa lúc đối thượng Diệp Hạ tầm mắt, Diệp Hạ thong thả ung dung nói.</p>
+<p>“Mẫu thân để cho ta tới tiếp các ngươi, nàng thực lo lắng.”</p>
+<p>Viết này trương bảng biểu thời điểm, Diệp Mặc đúng là thất thần, điền có lệ một chút, vài cái đề mục đều không có xem liền câu lựa chọn.</p>
+<p>Diệp Hạ cái này ca ca từ trước đến nay rất có uy nghiêm, mọi chuyện ưu tú, làm cái gì đều thực tay đến nhặt ra, hoàn mỹ đến không giống nhân loại, Diệp Mặc cùng Diệp Vân đều thực nghe lời hắn.</p>
+<p>Diệp Mặc thành thành thật thật lấy bút một lần nữa điền một lần, Diệp Hạ đem bảng biểu không sai chút nào một lần nữa phóng tới nguyên lai vị trí, sau đó giao cho bác sĩ.</p>
+<p>Trở về thời điểm, Diệp Hạ thuận tay từ bên cạnh chuyên môn cung cấp cấp người bệnh đường hộp cầm một khối đường, đưa cho Diệp Mặc, phảng phất là trấn an, cũng phảng phất là khen thưởng.</p>
+<p>“Chúng ta về nhà.”</p>
+<p>Diệp Mặc ừ một tiếng, hắn bằng kinh nghiệm bản năng cảm giác được Diệp Hạ có điểm sinh khí, vì thế chậm hai bước, cùng Diệp Vân đi cùng một chỗ, hai người đi theo Diệp Hạ phía sau, hắn từ nhỏ liền có chút sợ Diệp Hạ, một cho tới bây giờ.</p>
+<p>Tuy rằng có điểm buồn cười, nhưng so với hiện tại, khi còn nhỏ Diệp Hạ càng làm cho Diệp Mặc cảm thấy sợ hãi.</p>
+<p>Khi đó Diệp Hạ còn chỉ là một cái hài tử, nhưng giơ tay nhấc chân cũng đã thực thành thục, làm việc cũng thực tích thủy bất lậu, Diệp Mặc có đôi khi thậm chí sẽ hoài nghi trong thân thể ở một cái thành thục linh hồn rốt cuộc là chính mình vẫn là Diệp Hạ.</p>
+<p>Diệp Hạ không giống Diệp Vân, cái gì đều tàng không được, có bất mãn liền phát tiết ra tới, Diệp Hạ rất biết nhẫn nại, hắn sinh khí cũng sẽ không ở trên mặt biểu lộ ra tới, thực mịt mờ, cũng thực khủng bố, liền Diệp Vân loại này không sợ trời không sợ đất tiểu bá vương đều ở Diệp Hạ trước mặt thành thành thật thật.</p>
+<p>Diệp Mặc khi còn nhỏ vừa đến Diệp gia thời điểm, Diệp Vân bởi vì cố ý khi dễ Diệp Mặc bị Diệp Tri Viễn giáo huấn quá rất nhiều lần, mà Diệp Hạ một lần cũng không có.</p>
+<p>Nhưng kỳ thật Diệp Vân tiếp thu Diệp Mặc so Diệp Hạ muốn sớm rất nhiều, Diệp Vân khi còn nhỏ làm khó dễ quá Diệp Mặc một đoạn thời gian, nhưng đương Diệp phu nhân đầu tiên triều Diệp Mặc vươn tay, Diệp Vân biệt nữu một đoạn thời gian liền tiếp nhận rồi Diệp Mặc.</p>
+<p>Nhưng Diệp Hạ không giống nhau, hắn muốn tiếp nhận một người, yêu cầu trải qua thực dài dòng thời gian.</p>
+<p>Tại đây đoạn dài dòng thời gian, hắn sẽ dùng ra các loại thủ đoạn phát tiết chính mình bất mãn, mỗi một lần Diệp Mặc ký ức đều rất khắc sâu.</p>
+<p>Ở lại một lần Diệp Vân bị Diệp Tri Viễn giáo huấn lúc sau, Diệp Mặc dưỡng ở pha lê nhà ấm trồng hoa thực vật bởi vì không biết tên nguyên nhân, toàn bộ khô héo chết, khi đó, còn chỉ có mười mấy tuổi Diệp Hạ liền đứng ở pha lê phòng ấm cửa, cách khô héo mấy chục bồn thực vật thực bình đạm nhìn qua.</p>
+<p>“Là ta làm.”</p>
+<p>Diệp Mặc khi đó một lần cảm thấy chính mình khả năng sẽ chết, hắn khi đó vừa mới đi vào một cái xa lạ xã hội, liền ngôn ngữ đều còn gập ghềnh, ở lúc ban đầu gia đình, Diệp Vân biểu đạt ra nhất trắng ra chán ghét, Diệp phu nhân đắm chìm ở bi thương, Diệp Tri Viễn bận rộn công vụ, Diệp Hạ, còn lại là mịt mờ ác ý.</p>
+<p>Sợ hãi ở cái kia nháy mắt đạt tới đỉnh núi, có rất dài một đoạn thời gian, Diệp Mặc chỉ cùng chính mình bảo mẫu người máy giao lưu.</p>
+<p>Sau lại Diệp Hạ trưởng thành, cũng dần dần tiếp nhận rồi Diệp Mặc, không còn có đã làm những việc này, nhưng lúc ban đầu ấn tượng rất khó thay đổi, Diệp Mặc vẫn là khống chế không được sợ hãi.</p>
+<p>Diệp Hạ tựa hồ cũng có điều phát hiện, hắn đã thật lâu không có ở Diệp Mặc trước mặt phát hỏa, ở Diệp Mặc trước mặt, hắn luôn là ôn hòa, liền tính là giáo huấn Diệp Vân cũng chưa bao giờ ở Diệp Mặc trước mặt.</p>
+<p>Huyền phù xe mau đến thời điểm, rất xa, Diệp Mặc thấy được cửa đứng Diệp Tri Viễn cùng Diệp phu nhân, sớm chờ ở cửa.</p>
+<p>Xe ngừng lại, Diệp Vân trước xuống xe, Diệp Mặc cũng đứng dậy, cùng Diệp Hạ gặp thoáng qua thời điểm, Diệp Hạ đột nhiên mở miệng.</p>
+<p>“Diệp Vân đã đem sự tình trải qua đều thuyết minh cho trong nhà, phụ thân cùng mẫu thân thực tức giận, ngươi tốt nhất có điều chuẩn bị.”</p>
+<p>Nói xong, Diệp Hạ đỡ lấy Diệp Mặc bả vai, đem hắn nhẹ nhàng đẩy đi ra ngoài.</p>
+<p>Diệp Mặc cùng Diệp Vân từ lúc trong xe ra tới, đã bị Diệp phu nhân ôm lấy.</p>
+<p>Tuy rằng đã sớm biết bọn họ không có chuyện, nhưng Diệp phu nhân thấy bọn họ giống như mới rốt cuộc buông tâm, lập tức khóc ra tới.</p>
+<p>“Trong trường học sao lại thế này, như thế nào có thể có lớn như vậy sơ hở, còn có hai người các ngươi, ta nói muốn cẩn thận một chút, cẩn thận một chút, một cái so một cái lỗ mãng.</p>
+<p>Còn có Tiểu Mặc, ca ca ngươi nói, ban đầu kêu ngươi đi ngươi không đi, lại trở về, làm đến chính mình đầy người là thương, cuối cùng gặp được Trùng tộc cũng một hai phải tiến lên, vốn dĩ thân thể liền không tốt, ta vừa mới còn đang suy nghĩ, ngươi trở về nhất định phải mắng ngươi……”</p>
+<p>Diệp Tri Viễn ở Diệp phu nhân phía sau nửa bước địa phương, vẻ mặt nghiêm túc phụ họa Diệp phu nhân.</p>
+<p>“Là bọn họ còn chưa đủ thành thục, hẳn là nhiều hơn rèn luyện.”</p>
+<p>Diệp phu nhân quay đầu lại hướng về phía Diệp Tri Viễn phát hỏa.</p>
+<p>“Rèn luyện cái gì a, hai người bọn họ còn chưa đủ ưu tú sao? Từ từ tới không được sao? Ta xem này chính là bọn họ trường học an bài không hợp lý, còn tuổi nhỏ, đi theo tinh tặc đua cái gì, từ tiểu địa phương tới thật tốt, ngươi còn gọi bọn họ đi rèn luyện.”</p>
+<p>Nàng vẫn luôn không buông ra Diệp Mặc còn có Diệp Vân tay, nói xong liền lôi kéo bọn họ hai cái hướng bên trong đi.</p>
+<p>“Tới, vào nhà, mấy ngày này không ăn được cũng không ngủ hảo đi, ta và các ngươi ba ba làm thật nhiều đồ ăn đâu.”</p>
+<p>Diệp phu nhân cùng Diệp Tri Viễn đã ăn qua, liền nhìn Diệp Vân còn có Diệp Mặc ăn. Diệp Hạ chậm bọn họ một bước, hắn đem quần áo phóng hảo, ở Diệp Mặc bên cạnh ngồi xuống.</p>
+<p>Diệp phu nhân còn lải nhải.</p>
+<p>“Hai người các ngươi làm ta sợ muốn chết, bọn họ cho ta đệ tin tức, nói bọn họ chạm vào trứ Vương Trùng, Vương Trùng đó là liền s cấp cường giả cũng chưa biện pháp, cứu viện chậm một bước liền nguy hiểm.</p>
+<p>Tiểu Mặc ăn nhiều một chút thịt, ngươi nhìn xem ngươi, thương thành cái dạng này, lần này về nhà phải hảo hảo dưỡng dưỡng, cũng trước đừng tưởng nhớ ngươi những cái đó hoa a thảo a, ta đều kêu quản gia gia gia hảo hảo làm người xử lý trứ, đều còn lớn lên hảo hảo, lần này một cái đều không có xảy ra chuyện.”</p>
+<p>Diệp Mặc xác thật đói lả, vẫn luôn cúi đầu ăn đồ vật, chỉ dừng một chút, liền ừ một tiếng, sau đó tiếp theo ăn cơm.</p>
+<p>Diệp Vân ngẩng đầu bất mãn nói “Mụ mụ, không có như vậy khoa trương, cũng chỉ là một cái ấu thể.”</p>
+<p>“Chỉ là?”</p>
+<p>Diệp Hạ buông trong tay cái ly, như cũ là không nhanh không chậm.</p>
+<p>“Nói như vậy, cái kia ấu thể, là ngươi giết?”</p>
+<p>Diệp Vân tiếp theo không có thanh âm, sắc mặt không tốt lắm, hắn lại nhớ tới ở đáy giếng ôm Diệp Mặc khi cái loại này cảm giác vô lực.</p>
+<p>Diệp Hạ đem Diệp Mặc cái ly thêm mãn thủy, hướng hắn trong tầm tay xê dịch.</p>
+<p>“Mặt khác, phụ thân, ta phía trước nghe Diệp Vân nhắc tới Tiểu Mặc dược tề, Diệp Vân cho hắn tiêm vào khi, phát hiện Tiểu Mặc phản ứng có chút kịch liệt, hắn tựa hồ không quá thích ứng cái loại này dược tề.”</p>
+<p>Diệp Tri Viễn sắc bén ánh mắt đảo qua huynh đệ hai cái, cuối cùng dừng lại ở Diệp Hạ trên người.</p>
+<p>Diệp Hạ không giống Diệp Vân, hắn không càng không trốn, trực tiếp đón nhận chính mình phụ thân tầm mắt.</p>
+<p>Một bên Diệp phu nhân nhắc tới tâm.</p>
+<p>“Cái gì dược tề? Diệp Tri Viễn ngươi xem bọn họ làm gì, có bản lĩnh ngươi hướng về phía ta tới, đừng hù dọa hai người bọn họ, ngươi nói cho ta ngươi gạt ta cái gì?”</p>
+<p>Diệp Tri Viễn thu hồi tầm mắt, trấn an Diệp phu nhân.</p>
+<p>“Không có gì đại sự, ngươi cũng biết hắn từ nhỏ thân thể liền có điểm kém, thường xuyên sinh bệnh, hắn hiện tại ở tinh thần lực Phát Dục Kỳ, tinh thần lực dao động khá lớn, thân thể cũng có chút không ổn định, ta sợ ngươi lo lắng, không có nói cho ngươi.”</p>
+<p>Diệp phu nhân không ăn hắn này bộ “Này còn không lớn đâu, cái gì mới tính đại, Diệp Hạ nói dược tề sao lại thế này?”</p>
+<p>“Phía trước chữa bệnh đoàn đội chưa thấy qua loại tình huống này, lâm thời cấp dược tề, khả năng tác dụng phụ có điểm đại.”</p>
+<p>Diệp Tri Viễn rất có kiên nhẫn giải thích “Hiện tại đã không có việc gì, Glinton gia chữa bệnh đoàn đội có thể trị liệu, ta vốn dĩ hai ngày này liền tưởng cùng ngươi nói một chút, sắp tới liền đem Diệp Mặc đưa qua đi, sớm một chút trị liệu.”</p>
+<p>Chờ đến buổi tối, Diệp phu nhân nhất định phải cùng bọn họ khi còn nhỏ giống nhau, tự mình xem qua bọn họ an an ổn ổn nằm ở trên giường mới trở về phòng ngủ.</p>
+<p>Kiểm tra đến Diệp Mặc, Diệp phu nhân vốn dĩ tưởng nói điểm cái gì, cuối cùng vẫn là cái gì cũng chưa giảng, chỉ cùng khi còn nhỏ giống nhau ôm một chút hắn, vỗ vỗ hắn bối.</p>
+<p>“Tiểu Mặc, đối mụ mụ cũng hảo quan trọng, cũng là mụ mụ bé ngoan.”</p>
+<p>Diệp Mặc do dự một chút, vẫn là không có vươn tay hồi ôm Diệp phu nhân, chỉ lộ ra một cái cười tới, nhìn ôn ôn thôn thôn.</p>
+<p>“Thực xin lỗi, mụ mụ, làm ngươi lo lắng.”</p>
+<p>Diệp Tri Viễn chờ ở cửa, chờ Diệp phu nhân đều nhất nhất xem qua, một khối về phòng.</p>
+<p>Hắn cùng Diệp phu nhân ở bên nhau thời điểm liền sẽ có vẻ so bình thường thời điểm ôn hòa, lời nói cũng sẽ nhiều một chút.</p>
+<p>“Lại không tức giận, không phải nói muốn mắng một đốn sao?”</p>
+<p>“Hai đứa nhỏ vừa mới tìm được đường sống trong chỗ chết trở về, như thế nào sinh khí a, ngươi cũng không cho hung hắn, đứa nhỏ này từ nhỏ liền thật cẩn thận, giống chỉ tiểu lão thử, ngươi nếu là mắng hắn, hắn liền lập tức kinh sợ bắt đầu xin lỗi.”</p>
+<p>Diệp phu nhân nóng giận, nàng đánh một chút Diệp Tri Viễn.</p>
+<p>“Còn không phải ngươi sai.”</p>
+<p>Một lát sau nàng lại lo lắng sốt ruột lên.</p>
+<p>“Ngươi nhanh lên liên hệ Glinton, hắn thân thể như vậy nhược, đánh tiểu liền dễ dàng sinh bệnh, cũng không thích đánh đánh giết giết, vốn dĩ hẳn là tiến cái đại học tổng hợp, kết quả ngươi lại thăng quân đoàn trưởng, hiện tại cùng các ngươi giống nhau đánh đánh giết giết, ta nhìn liền không yên tâm.”</p>
+<p>Diệp Tri Viễn cũng nhận đồng Diệp phu nhân quan điểm, theo tiểu dã tâm bừng bừng Diệp Hạ còn có hiếu động lại hảo cường Diệp Vân bất đồng, Diệp Mặc là thực vật giống nhau ôn thôn tính tình, cục bột giống nhau, ai đều có thể tới niết một chút.</p>
+<p>Nhưng ở đế quốc, vâng chịu toàn dân toàn binh lý niệm, từ giáo dục bắt buộc bắt đầu, cổ vũ chính là Diệp Hạ Diệp Vân như vậy có công kích tính hài tử, mà không phải Diệp Mặc như vậy sẽ vì một chậu thực vật khô héo khổ sở hài tử.</p>
+<p>Giáo dục bắt buộc chương trình học trung có 40% chương trình học đều là như là các loại thể năng huấn luyện khóa, thực chiến khóa, xạ kích khóa chờ tràn ngập đối kháng tính thực tiễn chương trình học, Diệp Mặc ban đầu cơ hồ sở hữu phi văn hóa khóa đều không đạt tiêu chuẩn.</p>
+<p>Có một đoạn thời gian khá dài, trường học lão sư mỗi cái học kỳ đều sẽ tới tìm Diệp Tri Viễn còn có Diệp phu nhân, nói đứa nhỏ này chỉ sợ theo không kịp chương trình học.</p>
+<p>Diệp Tri Viễn đã từng cũng thực khó hiểu, Grans như vậy ở công kích tính phương diện xuất sắc gia tộc, vì cái gì sẽ ra tới như vậy Diệp Mặc.</p>
+<p>Grans gia liền máu đều là khói thuốc súng mùi vị.</p>
+<p>Nhưng thực mau Diệp Tri Viễn liền không rối rắm vấn đề này, ôn ôn thôn thôn tính tình cũng không có gì không tốt, hắn hy vọng ba cái hài tử đều có thể an ổn cả đời. ,,.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong15.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong17.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "ta-con-co-the-cau-tinh-te";
+const NOVEL_TITLE = "Ta còn có thể cẩu [tinh tế]";
+const CHAPTER_TITLE = "Chương 16";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

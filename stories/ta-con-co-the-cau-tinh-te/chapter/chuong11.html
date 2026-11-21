@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 11</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ta còn có thể cẩu [tinh tế]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 11</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Cảng phòng chỉ huy.</p>
+<p>Một cái mang mũ người gầy đầy mặt ưu sầu.</p>
+<p>“Đầu nhi, chúng ta cần thiết nghĩ cách đi ra ngoài, chúng ta vật tư đã mau dùng xong rồi, hiện tại tiêu hao đều là đế quốc đám kia kẻ điên cho chúng ta thả xuống cơ sở vật tư, nhiều nhất còn có thể kiên trì ba ngày.”</p>
+<p>Hắn đè thấp thanh âm.</p>
+<p>“Kia chỉ đồ vật cũng càng ngày càng sinh động, nó ăn cơm lượng hiện tại đều sắp cung ứng không thượng, bằng không chúng ta không cần lưu nó, dùng chiến hạm lao ra đi.”</p>
+<p>Tóc đỏ nam nhân vẻ mặt không kiên nhẫn.</p>
+<p>“Ta không phải làm ngươi cho nó uy thi thể sao? Thứ đồ kia cái gì đều ăn.”</p>
+<p>“Đã không có, ta liền chúng ta người thi thể đều ném xuống.”</p>
+<p>Tóc đỏ nam nhân đột nhiên quay đầu lại.</p>
+<p>“Nhưng không có nó, chúng ta mới xem như xong rồi! Không có nó chúng ta liền cái này phòng chỉ huy đều thượng không tới, hơn nữa bên ngoài vây quanh chính là Grans đế quốc, nếu là quốc gia khác, thậm chí liền tính là Liên Bang ta cũng sẽ cầm đao lao ra đi.”</p>
+<p>Nói xong hắn hung hăng chụp một chút cái bàn</p>
+<p>“Đám kia nạo loại, ta sớm biết rằng bọn họ không dám cùng Grans đối thượng, liền Vương Trùng đều từ bỏ.”</p>
+<p>Người gầy thật cẩn thận đề nghị.</p>
+<p>“Chúng ta có thể đi trảo những cái đó học sinh dùng bọn họ đương con tin mở đường.”</p>
+<p>“Chúng ta đã giết bọn họ như vậy nhiều người, vẫn là dùng những cái đó sâu, bọn họ sẽ không bỏ qua chúng ta.”</p>
+<p>Tóc đỏ nam nhân đột nhiên xoay đầu.</p>
+<p>“Cảng những cái đó sâu đều nhốt ở nơi nào?”</p>
+<p>“Dùng Vương Trùng huyết, đem chúng nó xua đuổi tới rồi thùng đựng hàng, có thể quan đều nhốt lại, còn lại đều dùng súng bắn giết.”</p>
+<p>Người gầy nhịn không được oán giận.</p>
+<p>“Lãng phí chúng ta không ít viên đạn.”</p>
+<p>Tóc đỏ nam nhân trầm tư trong chốc lát.</p>
+<p>“Ngươi trở về, đem chúng nó đều thả xuống đến trên mặt đất đi, Vương Trùng thả xuống đến chúng ta ném trứng nhà xưởng, chiến hạm đình đến ẩn nấp địa phương, chờ đến đám kia Trùng tộc khiến cho hạm đội chú ý, bọn họ khẳng định muốn đánh vỡ trận hình đi cứu bọn họ học sinh, đến lúc đó chúng ta lại đục nước béo cò đi ra ngoài.”</p>
+<p>Chung quanh cùng phía trước giống nhau một lần nữa an tĩnh xuống dưới, nhưng Diệp Mặc còn có Diệp Vân đều đã biết phía dưới có thứ gì, hai người cẩn thận dựa vào vách tường.</p>
+<p>Tựa hồ là phát giác Diệp Mặc cùng Diệp Vân không bao giờ sẽ xuống dưới, lúc này từ cái đáy dần dần truyền đến sột sột soạt soạt bò sát thanh, thậm chí thường thường còn sẽ có một trận lệnh người sởn tóc gáy nhấm nuốt thanh.</p>
+<p>Này có vẻ phía trước tĩnh mịch càng thêm không bình thường.</p>
+<p>Diệp Mặc sắc mặt còn tái nhợt, hắn thanh âm phóng thật sự nhẹ, thoạt nhìn còn ở phía sau sợ.</p>
+<p>“Chúng nó phía trước ở cố ý dụ hoặc chúng ta đi xuống.”</p>
+<p>Không khó tưởng tượng nếu bọn họ nếu cứ như vậy dọc theo cây thang sẽ có cái gì kết quả.</p>
+<p>Diệp Vân đã bình tĩnh xuống dưới.</p>
+<p>“Phía dưới cái gì đều không có, chúng nó ở giết hại lẫn nhau, bên trong hẳn là không có Vương Trùng.”</p>
+<p>Nếu có Vương Trùng ở nói, sở hữu sâu đều đem là Vương Trùng tồn tại cánh tay, Vương Trùng sẽ không cho phép loại chuyện này phát sinh.</p>
+<p>Này rất kỳ quái, chỉ có Vương Trùng mới có thể chế tạo ra trùng sào hơn nữa bắt đầu đẻ trứng, nhưng phía dưới không có trùng sào cũng không có Vương Trùng, chúng nó hình thể lớn nhỏ còn có phát dục trình độ cũng hoàn toàn không nhất trí, có đã phát dục hoàn toàn thành trùng, còn có chưa phu hóa trứng bị lung tung rối loạn chất đống.</p>
+<p>Diệp Mặc nhẹ giọng nói.</p>
+<p>“Có người đem trùng trứng ném tới phía dưới, sau đó chúng nó phu hóa ra tới, nhưng là phía dưới không có đồ ăn, vì thế chúng nó bắt đầu giết hại lẫn nhau.”</p>
+<p>Diệp Vân giương mắt, tiếp theo nói đi xuống.</p>
+<p>“Sở dĩ phát dục trình độ không giống nhau, là bởi vì trùng trứng sẽ bị không hẹn giờ thả xuống, trước phát dục hoàn toàn Trùng tộc sẽ đem trùng trứng dùng ăn rớt một bộ phận, còn có một bộ phận sẽ sống sót.”</p>
+<p>Mặc kệ những người đó có phải hay không những cái đó tinh tặc, nhưng có thể xác định chính là nơi này cũng không an toàn.</p>
+<p>Diệp Vân nhanh chóng quyết định.</p>
+<p>“Thừa dịp sắc trời còn ám, chúng ta từ phía trên đi.”</p>
+<p>Bọn họ bắt đầu dọc theo xoắn ốc thang lầu trở về đi.</p>
+<p>Mới vừa đi đến một nửa, phía trước Diệp Vân liền ngừng lại.</p>
+<p>Từ trước mặt truyền đến trọng vật va chạm đến mặt đất thanh âm, sau đó là mơ hồ nói chuyện thanh, còn có trầm trọng tiếng bước chân.</p>
+<p>Hiện tại sắc trời đã tờ mờ sáng.</p>
+<p>Hắn quay đầu lại, cùng Diệp Mặc đối thượng tầm mắt, đánh cái thủ thế.</p>
+<p>“Các ngươi tiểu tâm một chút!”</p>
+<p>Một cái lùn tráng nam nhân khiêng một cái màu đen túi, phía sau hai cái đồng bạn cùng nhau nâng một cái khác khá lớn một chút túi, phía trước người kia có thể là thoát lực, bối thượng túi hoạt tới rồi trên mặt đất.</p>
+<p>Phía trước người kia lau một chút cái trán mồ hôi, một lần nữa nâng lên đại túi, nhịn không được oán giận nói.</p>
+<p>“Ngoạn ý nhi này còn nhỏ tâm cái gì, như thế nào đều không chết được, thật là, nếu không phải bị đế quốc đám kia kẻ điên ngăn ở này chậm trễ lâu như vậy, chúng ta cũng không đến mức như bây giờ, muốn ta nói trực tiếp một phen lửa đốt hiểu rõ sự, quái phiền toái.”</p>
+<p>Lùn tráng nam nhân thoạt nhìn thực khẩn trương, hắn không ngừng điều chỉnh trên vai túi.</p>
+<p>“Đừng oán giận, đi nhanh đi, đợi lát nữa sớm một chút trở về, đầu nhi ngày hôm qua còn nói hôm nay có hoạt động.”</p>
+<p>Vài người một lần nữa nâng lên trọng vật, tiếp theo đi xuống.</p>
+<p>Lùn tráng nam nhân đi ở phía trước, đi ngang qua cửa sổ thời điểm, hắn sườn một chút đầu, nhìn thoáng qua ngoài cửa sổ, nương tối tăm ánh sáng tựa hồ nhìn thấy gì đồ vật.</p>
+<p>Thiên liền phải tờ mờ sáng.</p>
+<p>Hắn nheo lại đôi mắt, hướng bên cửa sổ đi rồi một bước, đi xuống xem, vừa lúc cùng phía dưới người đối diện.</p>
+<p>Hắn mở to hai mắt, còn chưa kịp kêu, đã bị bái trụ cửa sổ giấu ở cửa sổ hạ Diệp Vân dùng chủy thủ cắt yết hầu, trên người cõng màu đen túi từ bối thượng rớt đi xuống, nam nhân xụi lơ đi xuống, nửa treo ở cửa sổ.</p>
+<p>Sách, bị phát hiện, Diệp Vân nhanh chóng đá văng ra thi thể, lật qua cửa sổ,</p>
+<p>Đi theo nam nhân phía sau mặt khác hai người đã ném xuống bối thượng khiêng túi, sôi nổi rút ra bên hông đao cùng chủy thủ.</p>
+<p>Diệp Vân giành trước một bước tiến lên, muốn dùng chủy thủ đâm vào đối phương ngực, nhưng là bởi vì bị thi thể ngăn trở, chậm một phách, bị bắt được thủ đoạn, hắn chân sau đứng thẳng, một khác chỉ chân đột nhiên hướng về phía trước va chạm đối phương phần đầu, nam nhân bởi vì đau đớn buông hắn ra thủ đoạn, Diệp Vân mới lại lần nữa xoay người đem chủy thủ hung hăng đâm vào đi.</p>
+<p>Bởi vì vừa mới một cái tạm dừng, Diệp Vân chủy thủ còn thọc ở nam nhân trong thân thể, vừa quay đầu lại, một người khác đã giơ một phen trường đao, triều Diệp Vân bổ xuống.</p>
+<p>Trốn đã không còn kịp rồi, Diệp Vân động tác cứng lại, ngạnh sinh sinh nhịn xuống tránh né bản năng, ngược lại đem bả vai đi phía trước đưa, đã chuẩn bị hảo ai thượng lần này, sau đó Diệp Vân trơ mắt nhìn trước người giơ trường đao nam nhân ngã xuống, lộ ra phía sau nắm chặt chủy thủ Diệp Mặc tới.</p>
+<p>Bởi vì khoảng cách thân cận quá, Diệp Vân trên mặt cũng bị bắn thượng vài giọt máu tươi, nhưng hắn thực hưng phấn.</p>
+<p>“Làm được không tồi.”</p>
+<p>Cửa sổ quá tiểu, Diệp Mặc vừa mới bái trụ thang lầu, tránh ở thang lầu phía dưới.</p>
+<p>Diệp Vân trước tìm tòi một chút mấy thi thể trên người đạn dược còn có vũ khí, cuối cùng ngồi xổm xuống, dùng chủy thủ đưa bọn họ cõng màu đen đại túi hoa khai một cái cái miệng nhỏ.</p>
+<p>Từ trong túi mặt trào ra tới một quán chất nhầy còn có mấy cái trắng tinh trứng, còn có một quả hoạt tới rồi Diệp Mặc dưới chân.</p>
+<p>Diệp Vân đem túi một lần nữa đánh một cái kết, phong lên.</p>
+<p>“Đám kia tinh tặc trong tay có một con Vương Trùng.”</p>
+<p>Vương Trùng chỉ cần tồn tại, liền sẽ không ngừng đẻ trứng, thẳng đến nó cảm giác đã cũng đủ mới có thể đình chỉ, nó đẻ trứng tốc độ thực mau, nếu không có được đến thành trùng phản hồi, nó đẻ trứng tốc độ sẽ càng lúc càng nhanh, đồng thời còn cần thiết muốn cũng đủ đồ ăn, không có đủ đồ ăn nó thậm chí sẽ không lý trí tiêu hao bản thân năng lượng đi đẻ trứng, thẳng đến khô kiệt mà chết.</p>
+<p>Diệp Vân đang muốn đi xem xét một khác chỉ so nhỏ lại túi, kia chiếc túi to bị thi thể chảy ra máu tươi sũng nước, hắn vừa muốn cắt ra.</p>
+<p>Diệp Mặc bên chân trứng đột nhiên động một chút, phảng phất có cái gì từ bên trong chọc ra tới một cái nhô lên, Diệp Mặc theo bản năng sau này lui nửa bước, nửa ngồi xổm ở Diệp Mặc bên chân Diệp Vân lập tức dùng chủy thủ xỏ xuyên qua nó, trứng mặt ngoài rung động vài cái, bất động.</p>
+<p>Diệp Vân đem mặt khác mấy cái trứng cũng nhất nhất xử lý rớt, sau đó khiêng lên trên mặt đất cái kia đại túi, hắn thoạt nhìn rất khinh xảo liền đem nguyên bản hai người nâng đều cố hết sức túi khiêng lên, sau đó lại một tay nhắc tới một khác chiếc túi to.</p>
+<p>“Chúng nó mau phu hóa, phải nhanh một chút xử lý rớt.”</p>
+<p>Diệp Mặc đuổi kịp hắn.</p>
+<p>“Xử lý như thế nào?”</p>
+<p>“Cùng đám kia tinh tặc giống nhau, đem chúng nó ném xuống.”</p>
+<p>Diệp Vân eo lưng thẳng thắn.</p>
+<p>“Ta nhưng không nghĩ ứng phó tinh tặc thời điểm còn muốn ứng phó một đám sâu.”</p>
+<p>Diệp Mặc thấu đi lên muốn tiếp nhận hắn trên vai túi, bị Diệp Vân tránh đi.</p>
+<p>“Đừng dựa ta như vậy gần, vướng chân vướng tay.”</p>
+<p>Diệp Vân cùng Diệp Mặc một lần nữa trở lại thâm bên cạnh giếng, hắn vừa mới bắt đầu còn từng cái đem trứng thả ra thứ chết lại ném xuống đi, sau lại không kiên nhẫn, liền trực tiếp đem túi ném đi xuống.</p>
+<p>Diệp Mặc có điểm sợ hãi, ở cách xa xa.</p>
+<p>Diệp Vân trước ném xuống bị hắn khai một cái khẩu đại túi, nặng nề một tiếng lúc sau, phía dưới một trận sột sột soạt soạt.</p>
+<p>Sau đó hắn lại khiêng lên cái túi nhỏ, đang định ném xuống, túi mặt ngoài đột nhiên phá vỡ, dính nhớp mềm mại một cái xúc tu từ bên trong vươn tới, nhanh chóng quấn quanh thượng Diệp Vân cổ.</p>
+<p>Túi rơi trên mặt đất, trắng tinh trứng tan đầy đất.</p>
+<p>Lúc này kia đồ vật mới hoàn chỉnh từ trong túi triển lộ ra tới, nó phi thường mập mạp, toàn thân trắng tinh, phúc mãn chất nhầy, hôn bộ lây dính một chút màu đỏ, bối thượng một đôi đối đôi mắt, nhưng là kích cỡ không lớn, đại khái đứng thẳng lên cũng mới đến người cẳng chân.</p>
+<p>Nó từ Diệp Vân sau lưng cuốn lấy Diệp Vân cổ, gắt gao bám vào hắn bối thượng.</p>
+<p>Diệp Vân bản năng đôi tay dùng sức nắm lấy trên cổ dị vật, hắn cung hạ eo, ý đồ đem nó dùng lực lượng ngăn cách, nhưng thứ này lực lượng vô cùng lớn, nó quấn quanh trụ Diệp Vân bộ phận còn đang không ngừng thong thả buộc chặt.</p>
+<p>Bên cạnh Diệp Mặc lập tức chạy tới, một tay bắt lấy kia đồ vật, một tay cầm chủy thủ, tránh đi Diệp Vân, dùng chủy thủ sườn cắm vào nó thân thể, thực mềm mại xúc cảm, Diệp Mặc thực nhẹ nhàng liền đâm vào đi, nó như cũ không có buông ra Diệp Vân, chỉ dùng đuôi bộ quấn quanh trụ Diệp Mặc cánh tay.</p>
+<p>Diệp Mặc buồn hừ một tiếng, cánh tay hắn hẳn là bị bẻ gãy, nhưng hắn như cũ không có buông tay, tiếp theo dùng một cái tay khác, ý đồ đem vật kia từ Diệp Vân trên người xé xuống tới.</p>
+<p>Diệp Vân cung thân mình, sau này lui một bước, dựa vào lan can, nửa quỳ trên mặt đất, mồm to thở hổn hển.</p>
+<p>“Diệp Mặc, buông ra.”</p>
+<p>“Nghe, này hẳn là Vương Trùng, chúng ta phân công hợp tác, ta chờ lát nữa mang theo nó nhảy xuống đi, ngươi đi tìm những người khác, nói cho bọn họ nơi này có chỉ Vương Trùng.”</p>
+<p>Diệp Mặc lắc lắc đầu, hắn cắn chặt hàm răng quan, dùng một cái tay khác bắt lấy kia Vương Trùng một bộ phận dùng sức sau này xả, nhưng cơ hồ không chút sứt mẻ, chính hắn ngược lại bị kéo gần lại một chút.</p>
+<p>“Không phải thực ghê tởm loại đồ vật này sao?”</p>
+<p>“Buông ra!”</p>
+<p>Diệp Vân lạnh lùng nói, đồng thời chính hắn chủ động buông ra tay, vươn tay làm Vương Trùng cuốn lấy chính mình buông ra Diệp Mặc.</p>
+<p>Diệp Mặc cũng đồng thời thu hồi tay, nhưng thực mau, hắn dùng chủy thủ cắt mở chính mình cánh tay, lại một lần dùng máu tươi đầm đìa cánh tay đi bắt Diệp Vân.</p>
+<p>Kia đồ vật lúc này đây không chút do dự nhanh chóng buông ra Diệp Vân, quấn quanh trụ Diệp Mặc, quá nhanh, thế cho nên Diệp Vân đứng dậy khi cũng chỉ thấy Diệp Mặc dựa vào lan can, cánh tay té ngã đều bị quấn quanh, bao trùm trụ đôi mắt, chỉ lộ ra hạ nửa khuôn mặt.</p>
+<p>Cơ hồ không có tạm dừng, Diệp Mặc phóng qua lan can, đi xuống nhảy xuống.</p>
+<p>Sâu không thấy đáy lỗ trống phía dưới phát ra một trận tiếp một trận tiếng rít.</p>
+<p>Diệp Vân đồng tử chợt co chặt. ,,.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "ta-con-co-the-cau-tinh-te";
+const NOVEL_TITLE = "Ta còn có thể cẩu [tinh tế]";
+const CHAPTER_TITLE = "Chương 11";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

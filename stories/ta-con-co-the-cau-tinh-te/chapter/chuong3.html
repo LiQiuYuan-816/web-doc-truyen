@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 3</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ta còn có thể cẩu [tinh tế]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 3</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong2.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong4.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Không biết khi nào đứng ở cửa giáo thụ vỗ vỗ tay, hấp dẫn bọn học sinh lực chú ý.</p>
+<p>“Đi học.”</p>
+<p>Có người đứng lên, bất mãn nói.</p>
+<p>“Quý giáo thụ, ngài vừa mới vì cái gì không ngăn cản loại này hành vi, đối đồng học thực thi bạo lực là bị cho phép sao?”</p>
+<p>Lại có một người nữ sinh đứng lên.</p>
+<p>“Đúng vậy, vì cái gì mặc kệ loại này lén đối đồng học tiến hành loại này vũ nhục hành vi, chẳng lẽ đối phương không nên đã chịu xử phạt sao?”</p>
+<p>Quý nghiêm đem thư phóng tới trên bục giảng, đảo qua trước mặt học sinh.</p>
+<p>“Xem ra các ngươi còn không có ý thức được nơi này quy tắc.”</p>
+<p>Hắn dùng giáo côn gõ gõ cái bàn, than thở nói.</p>
+<p>“Các tân sinh, các ngươi tinh thần lực lập tức liền phải vững vàng đi? Chờ cái này thời kỳ một quá, tân sinh bảo hộ kỳ liền đến, mà các ngươi lại còn đối nơi này hoàn toàn không biết gì cả, chỉ xem tới được nó mặt ngoài bình thản.”</p>
+<p>“Ở chỗ này, hoặc là bị chi phối, hoặc là chi phối người khác, tựa như vừa mới A ban tiểu gia hỏa cũng yêu cầu hướng cao niên cấp thủ tịch cúi đầu giống nhau.”</p>
+<p>Quý nghiêm vừa mới tại đây tràng tranh chấp nửa đường liền đến, nhưng là cũng không có ra tiếng ngăn cản, không chỉ là hắn, chỉ cần không có ảnh hưởng dạy học, bất luận cái gì một cái lão sư ở còn không có bất luận cái gì thương vong dưới tình huống đều sẽ không ngăn cản, trường học mỗi một cái quy tắc đều ở cổ vũ cạnh tranh, bao gồm cho phép thích hợp bạo lực.</p>
+<p>Ở trong trường học, quý tộc cùng con cháu hàn môn lẫn nhau căm thù, hai bên lẫn nhau như nước với lửa, nhưng chưa từng có người nào nghĩ tới, là cái gì cho những cái đó uổng có thiên phú không hề bối cảnh người trẻ tuổi cùng những cái đó tích lũy thâm hậu căn cơ quyền quý chi tử nhóm tương đối kháng tự tin.</p>
+<p>Nơi này làm lơ bối cảnh, làm lơ quyền thế, giai cấp bị một lần nữa định nghĩa, nếu ngươi tưởng giữ lại chính mình tôn nghiêm, vậy yêu cầu liều mạng hướng lên trên bò.</p>
+<p>Đối với quý nghiên cái này ba phải cái nào cũng được đáp án, tuổi trẻ khí thịnh những người trẻ tuổi kia không tiếp thu, không phục phản bác.</p>
+<p>“A ban liền như vậy vênh váo sao?”</p>
+<p>“Thành tích so với chúng ta ưu dị, so với chúng ta ưu tú, liền có thể tùy ý giẫm đạp chúng ta tôn nghiêm sao?”</p>
+<p>Ở quần chúng tình cảm trào dâng trong phòng học, có mấy cái học sinh còn ngồi ở nguyên lai vị trí thượng, thực bình tĩnh tiếp nhận rồi cái này hiện thực.</p>
+<p>Quý nghiên không quen biết bọn họ, nhưng đối bọn họ dòng họ thực quen mắt, không phải thường xuyên xuất hiện ở tin tức thượng chính là thường xuyên xuất hiện ở quân bộ xuất chinh danh sách thượng.</p>
+<p>Quý nghiên đối những cái đó quyền quý giáo dục phương thức rất có phê bình kín đáo, này đó hài tử thực ổn trọng, ổn trọng đến không có người trẻ tuổi mạnh mẽ, người trẻ tuổi không nên có thành niên người nhiều như vậy băn khoăn, không nên thuận theo thấp hèn chính mình đầu, hắn lắc lắc đầu.</p>
+<p>“Tuy rằng là D ban, nhưng tổng không đến mức liền này đó cũng không biết đi, xem ra ta cái này lão sư đương không phải thực đủ tư cách, là ta thất trách, như vậy chúng ta hôm nay liền tới thượng một tiết khóa, cho các ngươi minh bạch một chút quy tắc.”</p>
+<p>Hắn đề cao âm lượng, lạnh lùng nói.</p>
+<p>“Mở ra các ngươi đầu cuối, nhìn đến các ngươi tích phân sao? Trải qua hơn phân nửa cái học kỳ học tập, các ngươi mỗi người đều tích lũy xuống dưới đại lượng tích phân, tích phân tác dụng các ngươi hẳn là đều rất rõ ràng.</p>
+<p>Tích phân không thể lén giao dịch, sử dụng xong lúc sau chuyển hôi, nhưng con số như cũ ở tài khoản thượng tích lũy, đưa vào tích phân bảng, mà các ngươi ở trường học hết thảy hoạt động đều yêu cầu tích phân chi trả, bao gồm khoang mô phỏng sử dụng.”</p>
+<p>Quý nghiên ngữ tốc thực mau, hắn từ trên bục giảng mặt bước nhanh đi xuống đi.</p>
+<p>“Như vậy các ngươi có hay không chú ý tới, mặt khác niên cấp tích phân bảng đều là công khai, mà mặt trên con số mỗi thời mỗi khắc đều ở biến động.”</p>
+<p>“Ta đoán các ngươi chưa từng có nghĩ tới tích phân biến động sau lưng ý nghĩa cái gì, cao niên cấp chi gian loại này tích phân biến động hành vi xưng là săn giết chiến, trừ năm nhất bên ngoài, chỉ cần thân thể khỏe mạnh, toàn viên cam chịu tham chiến, quy tắc có rất nhiều, tổng kết một chút trung tâm liền một cái, cá lớn nuốt cá bé.”</p>
+<p>Trong phòng học nháy mắt bắt đầu nhỏ giọng nghị luận lên.</p>
+<p>“Kia xong đời, chúng ta D ban đều không có tinh thần lực thượng A đi, này còn không phải là người khác nơi đó một mâm đồ ăn sao?”</p>
+<p>“Năm nhất còn ở tinh thần lực Phát Dục Kỳ, chờ tinh thần lực Phát Dục Kỳ qua đi đại khái còn sẽ có mấy cái lên tới A.”</p>
+<p>“Như vậy quy tắc cũng quá bạo lực đi.”</p>
+<p>Quý nghiên điểm đến thì dừng.</p>
+<p>“Sau học kỳ sau khi chấm dứt, các ngươi tinh thần lực, các ngươi tích phân bảng liền phải bị công khai, cao niên cấp đều ở nhìn chằm chằm các ngươi này đàn dê béo, hơi chút có điểm gấp gáp cảm đi, tân sinh.”</p>
+<p>Nhìn phảng phất bị dọa ngây người bọn nhãi ranh, quý nghiên lại chậm lại ngữ khí.</p>
+<p>“Cũng không cần quá lo lắng, còn có thời gian, các ngươi tinh thần lực Phát Dục Kỳ còn không có quá, chờ các ngươi tinh thần lực ổn định xuống dưới, mới có thể chân chính tham dự đến trong đó.”</p>
+<p>“Mặt khác tinh thần lực trời sinh có chút nhược thế đồng học cũng không cần nản lòng, đệ tam quân đoàn trưởng Cố Nhất Khiếu tinh thần lực cấp bậc chỉ có C, nhưng hắn vẫn là lấy trác tuyệt năng lực thuyết phục mọi người, bị chịu tôn kính. Trí lực cùng thủ đoạn cũng là thực lực một bộ phận.”</p>
+<p>Quý nghiên cầm giáo côn, tùy tay vẽ vài nét bút, mấy cái đồ hình liền hình chiếu ở không trung.</p>
+<p>“Nếu các ngươi có lưu tâm, có thể chú ý tới cao niên cấp chi gian hình thành các loại phe phái còn có xã đoàn, lựa chọn thích hợp bè phái, đầu nhập vào bọn họ, gia nhập bọn họ, bọn họ sẽ cho các ngươi trợ giúp.</p>
+<p>Đồng dạng, các ngươi gia nhập cũng sẽ lớn mạnh bọn họ, mỗi năm đều có tân nhân bộc lộ tài năng, viết truyền kỳ, lấy sức của một người thay đổi các phe phái chi gian cân bằng, đi thử thử đi, ta chờ mong các ngươi kia bộ phận.”</p>
+<p>Hắn đi đến trên bục giảng, đột nhiên đem tầm mắt đầu hướng Diệp Mặc.</p>
+<p>“Diệp Mặc, nói cho ta ngươi mô phỏng khoang đăng nhập số lần.”</p>
+<p>“…… Linh, giáo thụ.”</p>
+<p>Trong phòng học tức khắc một mảnh ồ lên, trong trường học lão sư ở trong giờ học cũng không sẽ cố ý cấp rất nhiều luyện tập thời gian, cam chịu khóa hạ chính mình luyện tập, ở không hề luyện tập trạng thái hạ, ai cũng không dám bảo đảm chính mình có thể khảo hạch đủ tư cách, mà Diệp Mặc tuy rằng không tính đứng đầu kia một nhóm người, cũng chưa bao giờ có quải quá khoa.</p>
+<p>“Ta xem qua ngươi thành tích, không tính kém cũng không được tốt lắm, phi thường không chớp mắt, nhưng này không có gì dùng, ngươi bản thân đã thực đáng chú ý, ngươi là cái thông minh hài tử, nếu minh bạch nói, liền lại nghiêm túc một chút.”</p>
+<p>“Là, giáo thụ.”</p>
+<p>Quý nghiên gật gật đầu.</p>
+<p>“Hảo, chúng ta bắt đầu đi học……”</p>
+<p>Vừa mới tan học, Chu Nhiên liền ôm thượng Diệp Mặc cổ, một bên đi ra ngoài một bên oán giận nói.</p>
+<p>“Ca ca ngươi thế nhưng là Diệp Hạ, ngươi như thế nào không nói sớm, hắn chính là chỉ huy hệ đại thần, tỷ tỷ của ta cũng là chỉ huy hệ, ngươi cũng không biết, nàng có bao nhiêu sùng bái Diệp Hạ, có thể giúp ta muốn cái ký tên sao? Ta trở về bán cho nàng.”</p>
+<p>Không đợi Diệp Mặc trả lời, Chu Nhiên liền lẩm bẩm.</p>
+<p>“Tính, nàng không xứng, ca ca ngươi đối với ngươi thật tốt, riêng tới thế ngươi chống lưng, nếu là tỷ tỷ của ta, khả năng nắm ta lỗ tai hỏi ta vì cái gì thua, thua vì cái gì còn có mặt mũi tìm nàng khóc.”</p>
+<p>Diệp Mặc nhịn không được cười một chút “Ân, tỷ tỷ ngươi thực thẳng thắn.”</p>
+<p>Chu Nhiên còn muốn nói cái gì, lại bị người bên cạnh hô một tiếng.</p>
+<p>“Ta đi trước một chút, ngươi đi về trước đi, buổi tối cho ngươi mang cơm.”</p>
+<p>Hắn triều Diệp Mặc xua xua tay, vài bước liền chạy xa.</p>
+<p>Diệp Mặc trở lại ký túc xá, mới vừa vào cửa liền trước đem áo khoác cởi ra, sở hữu tiết học đều yêu cầu quân trang ăn mặc, không lo ăn mặc sẽ bị khấu phân, nhưng ăn mặc thật sự là có điểm khó chịu, hắn vẫn luôn không có thể thói quen.</p>
+<p>Trong một góc từ nhỏ dùng đến đại bảo mẫu người máy bắt đầu thu thập Diệp Mặc quần áo.</p>
+<p>Diệp Mặc phóng không chính mình, ngã vào trên giường, màu đen tóc ở màu trắng khăn trải giường thượng tản ra, hắn lấy ra đầu cuối, ở xin mô phỏng khoang sử dụng giao diện thượng dừng lại thật lâu, cuối cùng vẫn là lui đi ra ngoài.</p>
+<p>Tuy rằng rất xin lỗi quý nghiên giáo thụ dụng tâm dạy dỗ còn có khuyên nhủ, nhưng hắn đối hiện tại thành tích cũng đã thực thỏa mãn, thời gian nhàn hạ vẫn là tưởng đủ loại hoa, đủ loại thảo.</p>
+<p>Cùng thực vật ở chung làm Diệp Mặc cảm giác thực thả lỏng, thực vui sướng, từ rất nhỏ bắt đầu, Diệp Mặc mộng tưởng chính là mua một miếng đất, lại khai một cái cửa hàng bán hoa.</p>
+<p>Tuy rằng bị đánh thực mất mặt, nhưng Diệp Mặc biết một chút về săn giết chiến sự tình, cũng không có quý giáo thụ nói như vậy tàn khốc, đương tích phân thấp hơn nhất định trị số, dư lại tích phân liền sẽ tự động bị bảo vệ lại tới, tạm thời rời khỏi săn giết chiến, tuy rằng cái này trị số không cao, chỉ có thể vừa vặn tốt thỏa mãn cơ bản nhu cầu.</p>
+<p>Cùng lắm thì liền ai vài lần tấu, vẫn luôn ném tích phân cũng không quan hệ, ném đến không thể bị khiêu chiến thì tốt rồi, dù sao muốn như vậy nhiều tích phân cũng không có gì dùng, Diệp Mặc vui sướng mở ra đầu cuối, chuẩn bị tiếp tục đọc tiểu cà chua gieo trồng phương pháp.</p>
+<p>Trên tay đầu cuối đột nhiên vang lên một tiếng, một cái tin tức nhảy ra tới.</p>
+<p>【 tuần sau cuối tuần, ta cùng Diệp Vân ở cửa trường chờ ngươi, mặt khác, thực xin lỗi hôm nay đột nhiên đi ngươi lớp. 】</p>
+<p>Còn có một cái chưa đọc tin tức đến từ Diệp Tri Viễn, xem thời gian hẳn là đi học thời điểm thu được, chỉ có một cái không đầu không đuôi nói.</p>
+<p>【 tuần sau là nàng sinh nhật, tham dự sinh nhật yến lễ phục cho ngươi phóng tới trong phòng. 】</p>
+<p>Diệp Mặc không cần hỏi liền biết, Diệp Tri Viễn cái kia hẳn là Diệp phu nhân nhắc nhở Diệp Tri Viễn phát, Diệp Tri Viễn trước nay liền không có như vậy cẩn thận quá.</p>
+<p>Hắn thở dài, từ nhỏ đến lớn, Diệp Hạ cùng Diệp Vân có hắn đều có, thậm chí Diệp gia hoa viên còn có một khối địa phương thuộc về Diệp Mặc, là Diệp phu nhân làm người thu thập ra tới, nhưng càng tốt, hắn liền càng là cảm thấy khổ sở.</p>
+<p>Diệp Mặc tồn tại thực xấu hổ, rất dài một đoạn thời gian Diệp Mặc đều tìm không thấy chính mình định vị, hắn là gia đình nhỏ nhất hài tử, nhưng lại là cái này hạnh phúc mỹ mãn gia đình một đạo vết thương, hắn tựa hồ không nên bị hận, nhưng càng không nên bị ái.</p>
+<p>Hắn mỗi lần xuất hiện đều sẽ vạch trần đã khép lại miệng vết thương, máu tươi đầm đìa nhắc nhở mọi người kia đạo miệng vết thương tồn tại.</p>
+<p>Diệp Mặc có khả năng làm, chỉ có thể là tận khả năng làm kia đạo vết thương thoạt nhìn không như vậy thu hút, hắn cũng không phải hài tử, hắn tình nguyện an tĩnh, giống như thực vật giống nhau sinh trưởng, tận khả năng ở cách xa xa, nhưng hắn lại chú định không thể hoàn toàn cùng Diệp gia cắt ly, tất cả mọi người ở trên người hắn đánh thượng tư sinh tử nhãn đồng thời lại chặt chẽ đánh thượng Diệp gia nhãn.</p>
+<p>Diệp Mặc đem đầu cuối ném tới một bên, duỗi thân khai tứ chi, Mặc Mặc đem chính mình lăn đến giường bên trong, đụng tới vách tường bất động, một bên đầu, thấy trên bàn bãi một chậu cây xanh, không biết khi nào run run rẩy rẩy vươn một cái vàng nhạt sắc nụ hoa.</p>
+<p>Hắn lúc này mới có một chút hảo tâm tình, ngồi dậy, trên mặt mang theo một chút ý cười.</p>
+<p>“Nở hoa rồi a.”</p>
+<p>Thu thập xong việc nhà người máy bưng một cái khay chạy tới, mặt trên phóng trường học phát tinh thần lực an ủi tề.</p>
+<p>【 ngoan bảo bảo, uống tinh thần lực an ủi tề lạp! 】</p>
+<p>“Thật nhanh a, cảm giác ngày hôm qua vừa mới uống qua, có thể không uống sao?”</p>
+<p>【 không uống liền không phải ngoan bảo bảo, uống xong ta có thể cho ngươi một cái nâng lên cao! 】</p>
+<p>Người máy đi phía trước đi vài bước, đem khay giơ lên Diệp Mặc trước mặt.</p>
+<p>“Ha ha ha, kia vẫn là thôi đi, ta còn không nghĩ đem ngươi áp tiến tu lý”</p>
+<p>Người máy là Diệp Mặc từ nhỏ dùng đến đại trẻ nhỏ bảo mẫu người máy, Diệp Mặc khi còn nhỏ vẫn luôn không chịu đổi, liền vẫn luôn dùng đến bây giờ, vì thế cho tới bây giờ, Diệp Mặc vẫn là bảo mẫu người máy ngoan bảo bảo.</p>
+<p>Diệp Mặc cau mày nuốt xuống dược tề.</p>
+<p>Tinh thần lực an ủi tề cũng không có gì hương vị, Diệp Mặc nghe người khác nói, uống xong sẽ cảm giác thực thả lỏng, cả người đều khinh phiêu phiêu, nhưng Diệp Mặc uống xong ngược lại sẽ cảm thấy đau đầu, nguyên bản trầm tịch tinh thần lực đều sinh động lên, rậm rạp, phảng phất con kiến gặm cắn giống nhau.</p>
+<p>Tác giả có lời muốn nói Diệp Mặc Nhân sinh quy hoạch, làm một cái người làm vườn.</p>
+<p>Ta phía trước nhìn đến có người đọc nói, truy tác giả mỗi ngày thúc giục bình luận, làm nàng có đi làm cảm giác.</p>
+<p>Ta Học được</p>
+<p>Thúc giục bình luận! Thúc giục bình luận!</p>
+<p>, cảm tạ ở 2021-11- ~2021-11- trong lúc vì ta đầu ra bá vương phiếu hoặc tưới dinh dưỡng dịch tiểu thiên sứ nga ~</p>
+<p>Cảm tạ đầu ra địa lôi tiểu thiên sứ Tóc cùng linh uyên giống nhau nhiều, lệ vị 1 cái;</p>
+<p>Cảm tạ tưới dinh dưỡng dịch tiểu thiên sứ Lệ vị 100 bình; ta tâm là tiêu thiều 26 bình; que cay không biết 14 bình; MeinTraum, bắc cực tinh er, miêu miêu, Guardiola cùng đậu đậu, nặng nề tinh, chính là muốn tìm đường chết 10 bình; cơm, poiu 5 bình; nguyệt chiếu tuyền, sâm sâm như nước 2 bình; ngàn mặc, mặc hiên ảnh, đào đào, không cần ku ku ku 1 bình;</p>
+<p>Phi thường cảm tạ đại gia đối ta duy trì, ta sẽ tiếp tục nỗ lực!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong2.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong4.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "ta-con-co-the-cau-tinh-te";
+const NOVEL_TITLE = "Ta còn có thể cẩu [tinh tế]";
+const CHAPTER_TITLE = "Chương 3";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

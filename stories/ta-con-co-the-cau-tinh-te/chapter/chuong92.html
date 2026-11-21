@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 92</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ta còn có thể cẩu [tinh tế]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 92</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong91.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong93.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Norton dọc theo thang lầu đi xuống dưới thời điểm, ngồi ở phòng tiếp khách lão Glinton còn có Diệp phu nhân cùng với diệp quân đoàn trưởng cũng đã đứng lên.</p>
+<p>Bọn họ đối với Norton hành lễ.</p>
+<p>Thẳng đến Norton ở thượng vị ngồi xuống, duỗi tay mời bọn họ nhập tòa, mấy người mới một lần nữa ngồi xuống ban đầu vị trí thượng.</p>
+<p>Lão Glinton trực tiếp tiến vào đề tài, “Bệ hạ, ngài hay không nên suy xét làm tiểu điện hạ tổ kiến chính hắn quân cận vệ đoàn, thử làm hắn tiến vào nội các.”</p>
+<p>Diệp Tri Viễn cùng Diệp phu nhân đều giật mình mà nhìn về phía lão Glinton, Diệp phu nhân nhịn không được đứng lên, nàng trong lời nói hàm chứa tức giận, “Glinton đại nhân, hắn còn quá tiểu, thậm chí còn không có thành niên.”</p>
+<p>Lão Glinton không dao động. “Phu nhân, tiểu điện hạ là một người Grans, ở tiểu điện hạ tuổi này, bệ hạ cùng với mặt khác vài vị điện hạ sớm đã có thuộc về chính mình quân cận vệ đoàn cũng đã bắt đầu tham dự nội các biểu quyết.”</p>
+<p>“Nếu ngài cảm thấy lo lắng, kia ta sẽ làm ta hậu đại ta con nối dõi đi theo ở tiểu điện hạ bên người, nếu tiểu điện hạ có cái gì sai lầm, khiến cho bọn họ trước che ở phía trước, sống sót lấy chết tạ tội.”</p>
+<p>Diệp Tri Viễn theo Diệp phu nhân đứng lên, cùng Diệp phu nhân bảo trì cùng lập trường, “Ngang ngược thời đại cũ sản vật đã sớm bị vứt bỏ, hiện tại không phải vật tư thiếu thốn quá khứ, chúng ta có càng tốt điều kiện tới làm chúng ta hậu đại chậm rãi trưởng thành.”</p>
+<p>Lão Glinton không dao động, “Phải không? Như vậy ta nghe nói ngươi trưởng tử, mới từ trường quân đội tốt nghiệp không đủ 6 năm Diệp Hạ, ở liệt cốc tiền tuyến biểu hiện anh dũng, lập hạ xa xỉ chiến công, phi thường xuất sắc hài tử, hắn thực mau sẽ tới đạt cùng ngươi giống nhau vị trí, đồng ý thư là ngươi ra cụ đi?”</p>
+<p>Diệp Hạ tốt nghiệp không đủ 6 năm, Diệp Tri Viễn đối hắn được hưởng nửa giám hộ quyền, đi tiền tuyến là Diệp Hạ chính mình yêu cầu, này đều không phải là nhất thường quy tấn chức con đường, nhưng là nhất định là nhanh nhất.</p>
+<p>Diệp Tri Viễn ký tên đồng ý thư trước, bọn họ rõ ràng mà báo cho Diệp Tri Viễn sẽ có tử vong nguy hiểm cũng sẽ không bảo đảm sẽ đem Diệp Hạ di thể mang về tới.</p>
+<p>Diệp phu nhân không dám tin tưởng mà quay đầu lại xem Diệp Tri Viễn, nàng đè thấp thanh âm, nhưng trên thực tế trong phòng người đều có thể nghe rõ, “Ngươi dám gạt ta loại chuyện này?”</p>
+<p>Ít nhất lão Glinton liền nghe rõ, hắn khụ một tiếng, “Thoạt nhìn diệp quân đoàn trưởng cùng phu nhân có điểm bất đồng ý kiến, làm bạn lữ ta kiến nghị không cần giấu giếm đối phương bất luận cái gì sự tình.”</p>
+<p>Norton nâng một chút tay, phòng khách lập tức an tĩnh xuống dưới, hắn tầm mắt nhìn về phía lão Glinton, “Ta tạm thời không có cái kia tính toán.”</p>
+<p>Norton minh bạch lão Glinton ý tứ, hắn ở khiến cho Norton đối Diệp Mặc buông tay, làm Diệp Mặc có thể bồi dưỡng chính mình người theo đuổi, nếu ấn Norton phía trước kế hoạch, hiện tại cũng là Diệp Mặc tiếp xúc này đó thời điểm.</p>
+<p>Nhưng hiện tại Diệp Mặc cái này trạng thái, không chỉ có ký ức không có khôi phục, còn có giải trừ dược tề tai hoạ ngầm đặt ở kia. Hắn tuyệt không khả năng làm Diệp Mặc rời đi chính mình tầm mắt nửa bước.</p>
+<p>Sau đó Norton lại chuyển hướng về phía Diệp phu nhân còn có Diệp Tri Viễn, “Thực xin lỗi, ta biết các ngươi ý đồ đến, nhưng là hiện tại cũng không phải một cái thỏa đáng thời cơ, chờ lại quá chút thời gian, ta sẽ an bài các ngươi gặp mặt.”</p>
+<p>Lão Glinton vẫn luôn nhìn chăm chú vào Norton, hắn không chịu buông tha vừa mới bắt đầu đề tài, trắng ra nói, “Bệ hạ, nếu ngài đáp án như cũ là phía trước cái kia nói, ta không thể không nói, ngài phụ thân muốn so ngài lòng dạ rộng lớn nhiều.”</p>
+<p>Norton không có trả lời, đứng lên, “Ta sẽ làm người đưa ngươi rời đi.”</p>
+<p>Lão Glinton cũng đứng lên, “Bệ hạ, tiểu điện hạ lần này xảy ra chuyện, thật là ngoài ý muốn sao?”</p>
+<p>Hiện trường không khí lập tức lạnh xuống dưới.</p>
+<p>Norton vừa mới bước lên thang lầu bậc thang, hắn ngừng ở nơi đó, bóng dáng phảng phất đọng lại, vài giây lúc sau mới có động tác, hắn chuyển hướng lão Glinton, cùng lão Glinton một lần nữa đối diện.</p>
+<p>“Thỉnh ngài nhớ kỹ.”</p>
+<p>“Có lẽ có một ngày ta sẽ giết chết hắn, nhưng ta nhất định sẽ không đem cơ hội này giao cho người khác, ta sẽ thân thủ tới.”</p>
+<p>Lão Glinton sắc mặt lãnh đạm, “Bệ hạ, duy độc điểm này, ta trước sau tin tưởng ngài, ta trung với ngài, trung với Grans, nhưng cùng dĩ vãng mấy lần giống nhau, ta cũng sẽ toàn lực ngăn cản ngài, nếu ngài muốn lại một lần làm như vậy, liền trước từ ta thi thể thượng, từ Glinton lớn lớn bé bé tộc nhân thi thể thượng bước qua đi.”</p>
+<p>Ở đây người trừ bỏ Norton, đều nhìn về phía lão Glinton, đây là cơ hồ cùng cấp với mưu nghịch nói.</p>
+<p>Grans giết hại lẫn nhau vẫn luôn là lão Glinton sở canh cánh trong lòng sự tình, kia mấy cái hài tử bao gồm Norton đều là hắn tận mắt nhìn thấy lớn lên, cùng hắn hài tử cũng không có gì khác nhau.</p>
+<p>Norton một lần nữa đạp lên cầu thang, truyền đến Norton nhẹ nhàng bâng quơ mà lời nói, “Phải không? Kia hy vọng ngài sống được lâu một chút, nhìn chằm chằm khẩn ta đi.”</p>
+<p>Lão Glinton lớn tiếng nói, hồn hậu thanh âm ở trong đại sảnh quanh quẩn, “Ta sẽ, ta sẽ vẫn luôn nhìn chăm chú vào ngài! Nhìn chăm chú vào tiểu điện hạ!”</p>
+<p>Adelaide dẫn dắt Diệp Mặc, hắn dọc theo đường đi vì Diệp Mặc giới thiệu cung điện nội bố cục, “Bên kia là phòng bếp, ngài phía trước thực thích qua đi lấy quả táo, bên này là bệ hạ thư phòng, bệ hạ nếu ở cung điện, thông thường đều sẽ ở bên này……”</p>
+<p>Diệp Mặc vừa đi một bên nghiêng đầu theo Adelaide chỉ hướng xem qua đi, dưới chân bước chân cũng không đình, nhẹ nhàng mà đụng phải một người ngực.</p>
+<p>Đối phương văn ti chưa động, thậm chí còn có thừa dụ đỡ đứng thẳng không xong Diệp Mặc.</p>
+<p>Trước mặt nhân thân quân trang, theo động tác, bên hông bội kiếm va chạm một chút, phát ra thanh thúy tiếng đánh, áo choàng rũ ở hắn phía sau, phía sau còn đi theo hai tên thị vệ.</p>
+<p>Diệp Mặc theo bản năng quay đầu lại xem phía sau Adelaide.</p>
+<p>Adelaide đã sớm ngừng lại, hắn đứng ở Diệp Mặc phía sau không xa không gần địa phương, hơi hơi cúi người, “Diệp Hạ đại nhân.”</p>
+<p>Làm này tòa cung điện hằng ngày quản lý giả, Adelaide đối nhân viên biến động tự nhiên đều rất rõ ràng, tối hôm qua thời điểm, Diệp Hạ cũng đã đi tới nơi này, hắn nguyên bản bị an bài phụ trách cung điện hằng ngày phòng vệ công tác, hằng ngày chỉ cần thị sát một lần liền hảo, lúc sau liền có thể đi tiến hành cận vệ bên trong huấn luyện, vì chính mình tương lai tổ kiến quân đoàn đánh hảo cơ sở.</p>
+<p>Ở trùng triều trung, Diệp Hạ chiến tích trác tuyệt, hắn năng lực chỉ huy xác thật thực xông ra, tích góp quân công khiến cho hắn quân hàm tới rồi hắn tuổi này có thể đạt tới tối cao, chiếu cái này tốc độ đi xuống, Diệp Hạ thực mau liền có thể từ quân cận vệ độc lập đi ra ngoài, tổ kiến thuộc về chính hắn quân đoàn, hắn rất có thể sẽ trở thành Grans tuổi trẻ nhất quân đoàn trưởng chi nhất.</p>
+<p>Nhưng Diệp Hạ cự tuyệt, hắn xin làm Diệp Mặc hộ vệ.</p>
+<p>Loại này chức vị giống nhau đều yêu cầu nghiêm khắc, nhưng lúc sau cũng sẽ không lại có tấn chức, tỷ như Arnold, thực lực mạnh mẽ, nhưng vẫn chưa tổ kiến quân đoàn, vẫn luôn lưu tại Norton bên người.</p>
+<p>Diệp Mặc phía trước công tác hộ vệ vẫn luôn từ Arnold đảm nhiệm, rất nhiều người đều suy đoán Norton khả năng muốn đem Arnold điều đi làm Diệp Mặc bên người cận vệ.</p>
+<p>Diệp Hạ kỳ thật cũng không có ôm hy vọng, hắn tinh thần lực cấp bậc như ngừng lại a cấp thiên thượng, ưu thế ở chỉ huy phương diện, cùng chức vị Arnold tinh thần lực cùng □□ đều là có tiếng cường hoành.</p>
+<p>Diệp Hạ phía trước cũng xin quá vài lần, đều không có bị thông qua, nhưng lần này, Diệp Hạ xin bị thông qua.</p>
+<p>Adelaide lui qua một bên, “Như vậy, tiểu điện hạ liền giao cho ngài.”</p>
+<p>Diệp Hạ đối với Adelaide gật gật đầu, “Vất vả ngài.”</p>
+<p>Tiếp theo, Diệp Hạ nhìn thoáng qua phía sau đi theo người, bọn họ cũng thực khoái ý sẽ, hành lễ sau liền rời đi.</p>
+<p>Hành lang cũng chỉ dư lại hắn cùng Diệp Mặc hai người, Diệp Hạ mới buông lỏng ra Diệp Mặc thủ đoạn, hắn sờ soạng một chút Diệp Mặc mặt sườn, tầm mắt chậm rãi đảo qua Diệp Mặc toàn thân trên dưới, phảng phất ở xác nhận cái gì, cuối cùng mới dừng lại ở Diệp Mặc trên mặt, cùng hắn đối diện, “Kêu đại ca.”</p>
+<p>Diệp Mặc theo bản năng tưởng sau này lui, nhưng là bị Diệp Hạ kéo lại tay, hắn đi theo Diệp Hạ nói lặp lại một lần, “Đại, đại ca.”</p>
+<p>Diệp Hạ ừ một tiếng, lúc này mới lui về phía sau một bước, xoay người, “Đi thôi, chúng ta đi hoa viên.”</p>
+<p>Diệp Mặc ở Diệp Hạ trước mặt đã sớm không tự giác mà đứng thẳng thân thể, chờ đến Diệp Hạ dời đi tầm mắt, chuyển hướng hoa viên phương hướng hắn mới đuổi sát hai bước, “Ta phía trước nhận thức ngươi sao?”</p>
+<p>Diệp Mặc nói ra mới cảm thấy có không ổn, lại giải thích nói, “Ta phía trước sự tình đều không nhớ rõ ——”</p>
+<p>“Ta biết.”</p>
+<p>Diệp Hạ không biết khi nào ngừng lại.</p>
+<p>Hắn tới phía trước cũng đã bị cho biết Diệp Mặc tình huống, ở chiến hạm thượng thời điểm cũng xa xa mà gặp qua Diệp Mặc ở trong đám người mờ mịt lại vô thố bộ dáng.</p>
+<p>Diệp Hạ đẩy cửa ra. “Tới rồi, bên này là hoa viên.”</p>
+<p>Diệp Mặc đứng ở cạnh cửa ra bên ngoài xem.</p>
+<p>Diệp Hạ lại nhấp một chút môi, “Bên kia là ngươi nhà ấm.”</p>
+<p>Diệp Mặc ở trong nhà nhà ấm hắn cũng chiếu cố rất khá, Diệp Mặc không ở thời điểm vẫn luôn là Diệp Hạ cân nhắc chiếu cố, trung gian còn dưỡng đã chết một chậu hoa, sau lại Diệp Hạ lại lặng lẽ tìm tương đồng, bổ một chậu, rời đi gia sau Diệp Hạ còn chuyên môn tìm người tới chăm sóc.</p>
+<p>Diệp Mặc lực chú ý không ở nhà ấm còn có hoa viên thượng, hắn lén lút đi xem Diệp Hạ, lại thực mau mà thu hồi tầm mắt, sau đó lại lén lút đi xem Diệp Hạ.</p>
+<p>Diệp Hạ đã sớm bắt giữ tới rồi rất nhiều lần Diệp Mặc động tác nhỏ, Diệp Hạ đã thật lâu không có gặp qua Diệp Mặc ở trước mặt hắn trừ bỏ cúi đầu lui về phía sau ở ngoài thần thái.</p>
+<p>Diệp Mặc là so con thỏ còn muốn yếu ớt sinh vật, đối đau đớn cùng ác ý đều tương đương mẫn cảm, nếu thương tổn hắn một lần, hắn lần sau sẽ không bao giờ nữa sẽ ló đầu ra, chỉ biết xa xa mà né tránh.</p>
+<p>Nhưng đối đãi hắn phương pháp cũng rất đơn giản, Diệp Mặc là cảm nhận được bị kiên định mà ái liền sẽ nhiệt liệt đáp lại, hơn nữa trở nên phá lệ dũng cảm người, thậm chí sẽ dũng cảm đến làm người giật mình nông nỗi, vô luận là cái nào phương diện.</p>
+<p>Chờ đến Diệp Mặc lại một lần đem ánh mắt đầu hướng Diệp Hạ thời điểm, Diệp Hạ cúi đầu nhìn về phía Diệp Mặc.</p>
+<p>Diệp Hạ phóng nhẹ thanh âm, “Làm sao vậy, không thích sao? Ngươi phía trước hoa rất nhiều thời gian ở nơi đó, có cái gì vấn đề, ngươi có thể trực tiếp hỏi ta.”</p>
+<p>“Không.”</p>
+<p>Diệp Mặc tựa hồ là đã chịu cái gì cổ vũ, cơ hồ không có nhiều do dự vài giây liền mở miệng, “Ngươi là của ta đại ca đúng không? Ngươi gặp qua mụ mụ sao?”</p>
+<p>Diệp Mặc bán ra đại môn, hướng tới cách đó không xa nhà ấm nhìn giống nhau, lại hạ mấy cái bậc thang, thẳng thắn thành khẩn nói, “Ta còn có rất nhiều chuyện đều không có làm thanh.”</p>
+<p>Diệp Hạ hơi hơi cong lưng, “Ta là ngươi đại ca, nhưng chúng ta cũng không có huyết thống thượng quan hệ, này thực phức tạp, ta có thể xem như ngươi dưỡng huynh, ngươi ở địa phương khác còn có một đôi cha mẹ, một cái gia, một cái nhà ấm, có lẽ còn có một cái nhị ca.”</p>
+<p>Diệp Mặc quay đầu lại nhìn Diệp Hạ, “Vậy ngươi khẳng định là cái hảo huynh trưởng.”</p>
+<p>Diệp Hạ đứng thẳng người, “Không, hoàn toàn tương phản, ta đã làm đối với ngươi thực quá mức sự tình.”</p>
+<p>Diệp Mặc hiện tại có thể không hề cố kỵ mà tới gần hắn, nhưng là lúc sau khôi phục ký ức khả năng lại muốn biến đến phía trước như vậy, nhìn thấy hắn phản ứng đầu tiên chính là cúi đầu, súc đến góc.</p>
+<p>Diệp Hạ thậm chí có như vậy trong nháy mắt ti tiện nghĩ tới, nếu là Diệp Mặc có thể vĩnh viễn nhớ không nổi, hết thảy một lần nữa bắt đầu kỳ thật cũng khá tốt.</p>
+<p>Nhưng Diệp Hạ cuối cùng nói ra thời điểm, vẫn là cảm thấy nhẹ nhàng cùng với tiêu tan. “Cho tới nay ta đều thiếu ngươi một cái xin lỗi.”</p>
+<p>Diệp Mặc xoay người, “Vậy ngươi vì cái gì không xin lỗi đâu? Ta khẳng định sẽ tha thứ ngươi a.”</p>
+<p>Diệp Hạ thực thản nhiên, “Ngại với buồn cười huynh trưởng thân phận cùng tôn nghiêm đi.”</p>
+<p>Diệp Mặc lại nhìn về phía nhà ấm, “Hảo đi, kia đại ca có thể không xin lỗi, ta tha thứ ngươi.”</p>
+<p>Diệp Hạ ngẩn ra một chút, hắn tay đặt ở đầu gối, cong lưng, buồn cười một tiếng, “Đều không cần hỏi một chút là sự tình gì sao? Có lẽ ngươi nhớ tới lúc sau sẽ hối hận.”</p>
+<p>“Sẽ không, đại ca là người nhà, ta nhất định đã sớm tha thứ đại ca.”</p>
+<p>Diệp Mặc lại nghe thấy Diệp Hạ cười vài tiếng, hắn có chút thẹn thùng mà quay đầu lại, muốn ngăn lại Diệp Hạ, “Đại ca ——”</p>
+<p>Diệp Hạ không biết khi nào tới rồi hắn bên người, đem Diệp Mặc ôm vào một chút trong lòng ngực, Diệp Mặc nghe thấy được Diệp Hạ thanh âm. “Phi thường xin lỗi, ta lộng hỏng rồi ngươi nhà ấm, cố ý giết chết ngươi rất nhiều thực vật.”</p>
+<p>Diệp Mặc mông ở Diệp Hạ trong lòng ngực, thanh âm rầu rĩ truyền ra tới, “Tuy rằng thực quá mức, nhưng là ta tha thứ ngươi, không có quan hệ.”</p>
+<p>Diệp Mặc vỗ vỗ Diệp Hạ bối, “Không có quan hệ, không cần khổ sở.” ,,.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong91.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong93.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "ta-con-co-the-cau-tinh-te";
+const NOVEL_TITLE = "Ta còn có thể cẩu [tinh tế]";
+const CHAPTER_TITLE = "Chương 92";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

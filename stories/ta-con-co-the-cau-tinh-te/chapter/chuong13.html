@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 13</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ta còn có thể cẩu [tinh tế]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 13</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong12.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong14.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Keynes cái thứ nhất phát hiện không thích hợp.</p>
+<p>Từ chiến hạm rớt xuống lúc sau hắn liền vẫn luôn cùng một cái bị thương đồng bạn ở bên nhau, trong lúc còn tìm tới rồi mấy cái đồng học, thẳng đến bọn họ cùng nhau bị Clay nhĩ tìm được, đi vào Aaron nơi cứ điểm.</p>
+<p>Hắn đi vào nơi này lúc sau, không có cùng mấy cái bị thương đồng học giống nhau quay chung quanh ở Aaron bên người, mà là rời xa đám người, ngồi ở cửa, tự giác gánh vác nổi lên cảnh giới chức trách.</p>
+<p>Keynes đứng lên, hắn chế phục áo khoác đã cùng thường lui tới ở trong trường học giống nhau, cởi xuống tới hệ ở bên hông, thượng thân cũng không phải chế phục nguyên bộ nội sấn, mà là hắn nhất quán ăn mặc màu đen vô tay áo quần áo nịt, nó cũng xác thật rất thực dụng, dễ bề hoạt động, không dễ dàng tổn hại.</p>
+<p>Hắn nhìn chằm chằm nơi xa mơ hồ màu đen sóng triều nhìn vài giây, sau đó quay đầu lại lớn tiếng nói “Chạy! Hướng trên lầu chạy! Đem lộ lấp kín.”</p>
+<p>Nhân loại tốc độ cùng sức chịu đựng đều xa so ra kém không biết mệt mỏi Trùng tộc, đế quốc từ nhỏ học giáo dục liền bắt đầu diễn luyện gặp phải Trùng tộc thời điểm khẩn cấp tránh hiểm, bất luận cái gì thời điểm tránh hiểm đều là tìm kiếm cao thả kiên cố vật kiến trúc, coi đây là che đậy tránh hiểm, chờ đợi cứu viện.</p>
+<p>Trong đại sảnh vài người đều không có do dự, khiêng lên người bệnh liền hướng trên lầu đi.</p>
+<p>Trừ bỏ lão thử chậm một phách, hắn vừa mới tỉnh ngủ, vẻ mặt mờ mịt.</p>
+<p>“Chạy cái gì? Vì cái gì chạy? Chạy trốn nơi đâu?”</p>
+<p>Hắn vừa lăn vừa bò mà đuổi kịp đội ngũ, trong miệng còn ở lải nhải cằn nhằn.</p>
+<p>“Có phải hay không đám kia tinh tặc đi tìm tới?”</p>
+<p>Keynes không có trả lời, hắn quay người đem đại môn đóng lại, Aaron huấn luyện viên cùng hắn cùng nhau đem tủ chờ đồ vật đứng vững môn, bọn họ đi theo đội ngũ nhất đuôi bộ, mỗi trải qua một cái hàng hiên đều phải tướng môn đóng lại, cuối cùng một đám người thượng tầng cao nhất sân thượng.</p>
+<p>Đi thông sân thượng lộ là từ cây thang buông xuống,</p>
+<p>Chờ đến lão thử cuối cùng một cái bò lên trên cây thang, Aaron rút ra bên hông trường đao, quay người đối với hành lang, hắn đã suy đoán tới rồi cái gì.</p>
+<p>Hắn đưa lưng về phía Keynes.</p>
+<p>“Qua đi, cùng bọn họ cùng nhau lấp kín nhập khẩu.”</p>
+<p>Keynes leo lên cây thang một nửa, nghe vậy một bàn tay bắt lấy cây thang, xoay người nhìn Aaron.</p>
+<p>Aaron đôi tay cầm đao, hai chân tách ra, lược cong lưng, sống lưng đơn bạc, nhưng lại chặt chẽ ngăn chặn hàng hiên, hai cái huấn luyện viên tuổi tác đều không lớn, cũng liền so với bọn hắn đại mười mấy tuổi, cùng rất nhiều đồng học trong nhà huynh tỷ không sai biệt lắm số tuổi, thậm chí còn muốn càng tiểu một chút.</p>
+<p>Keynes buông ra tay, từ cây thang thượng nhảy xuống, nhẹ nhàng rơi xuống đất, hắn đem bên hông hệ áo khoác kéo xuống tới ném ở một bên, cũng học Aaron bộ dáng, ở Aaron phía sau sườn đứng yên.</p>
+<p>Aaron liếc mắt nhìn hắn, vốn dĩ muốn nói cái gì, nhưng là từ hàng hiên cuối nơi đó đã truyền đến pha lê tan vỡ thanh âm, từ kia hẹp hòi phá trong động nhanh chóng vụt ra tới số chỉ Trùng tộc.</p>
+<p>Khẩu tử không tính đại, chỉ có thể một con một con hướng trong tiến.</p>
+<p>Aaron cùng Keynes vừa mới bắt đầu ứng phó còn tính nhẹ nhàng, nhưng Trùng tộc cuồn cuộn không ngừng, chỉ cần cắn người, cho dù chết rớt cũng sẽ không nhả ra, vì không ảnh hưởng hành động chỉ có thể ngạnh kéo ra, khiến cho miệng vết thương mở rộng, thực mau, hai người trên người liền để lại loang lổ điểm điểm vết máu.</p>
+<p>Lúc này hành lang cuối môn rốt cuộc chống đỡ không được, hoàn toàn tan vỡ, thành đàn sâu lập tức vọt vào.</p>
+<p>Này đã không phải bọn họ có thể chống đỡ số lượng.</p>
+<p>Aaron cùng Keynes chậm rãi sau này lui, vai sát vai chống lại nhập khẩu.</p>
+<p>“Ta trên người còn có cuối cùng một viên bom.”</p>
+<p>Aaron nhẹ giọng nói.</p>
+<p>Clay nhĩ trên người cũng có một viên, tốt nghiệp chính thức nhập ngũ thời điểm liền trang bị, là dùng để ở tuyệt cảnh lúc kết chính mình, thuận tiện bị thương nặng địch quân.</p>
+<p>Keynes phun ra một ngụm mang theo máu loãng nước bọt.</p>
+<p>“A, kia cũng không tệ lắm, lại chờ một lát.”</p>
+<p>Chờ đến càng nhiều Trùng tộc dũng lại đây, nhấm nháp bọn họ huyết nhục thời điểm.</p>
+<p>Aaron ngón tay đã ấn ở khởi động trang bị thượng, hắn yêu cầu ở chính mình còn có một hơi thời điểm khởi động.</p>
+<p>Nhưng Trùng tộc đột nhiên không hề tiếp tục ùa vào, màu đen sóng triều ngừng lại, xuất khẩu cũng bởi vậy dần dần triển lộ ra tới, từ xuất khẩu thăm tiến vào mấy cái toàn bộ võ trang người, bọn họ thăm dò tiến vào nhìn thoáng qua, sau đó đi nhanh mại tiến vào.</p>
+<p>“Nơi này có người! Hộ lý cũng lại đây!”</p>
+<p>Sau đó càng nhiều người vào được, bọn họ ăn mặc phòng hộ phục, không sợ Trùng tộc cắn xé, trực tiếp dùng cao hỏa lực bao trùm, đem hành lang Trùng tộc cơ hồ tiêu diệt hầu như không còn, còn thừa mấy chỉ cũng đều khắp nơi chạy trốn.</p>
+<p>Aaron buông ra khởi động trang bị, quỳ một gối, dựa vào tường mồm to thở dốc lên.</p>
+<p>“Được cứu trợ.”</p>
+<p>Keynes cũng tê liệt ngã xuống trên mặt đất, chủy thủ leng keng một tiếng rơi trên mặt đất.</p>
+<p>Vài cá nhân lại đây, đưa bọn họ hai cái giá cánh tay nâng lên.</p>
+<p>Cùng lúc đó, chiến hạm mẫu hùng bị đoàn đoàn vây quanh, nó trên người so ban đầu nhiều rất nhiều chỗ vết thương, từ phía trên cuồn cuộn không ngừng có tinh tặc bị áp giải xuống dưới, đưa vào chiến hạm thượng ngục giam.</p>
+<p>Vứt đi hành tinh trôi nổi cảng, một con thuyền lại một tàu chiến hạm tiến vào cảng, hàng trăm hàng ngàn cái toàn bộ võ trang chiến sĩ từ trên tinh hạm nhảy lên xuống dưới, sau đó bắt đầu ở cảng phía dưới vứt đi thành thị bắt đầu sưu tầm.</p>
+<p>Còn đang không ngừng có tân chiến hạm gia nhập, bọn họ tùy thân mang theo cao hỏa lực vũ khí còn có túi cấp cứu, tiêu diệt Trùng tộc, sưu tầm học sinh.</p>
+<p>Bên tai tai nghe thường thường truyền đến chỉ huy đài mệnh lệnh, làm cho bọn họ có thể tùy thời điều chỉnh chính mình phương hướng, lớn nhất hiệu suất tiến hành sưu tầm.</p>
+<p>Lại một cái tin tức vang ở mọi người bên tai.</p>
+<p>【 các tiểu đội chú ý, Vương Trùng còn chưa bị tìm được, nếu tìm được Vương Trùng thỉnh lập tức lui lại cũng đăng báo, nếu tìm được Vương Trùng thỉnh lập tức lui lại cũng đăng báo. 】</p>
+<p>Vương Trùng có trí tuệ, nếu phát dục lên, so mặt khác thành trùng muốn khó chơi rất nhiều, huỷ diệt tiểu đội là thực sự tình đơn giản.</p>
+<p>Một đội tiểu đội tiến vào thành thị bên cạnh nhà xưởng, bọn họ sưu tầm quá mỗi một đống kiến trúc, cuối cùng chỉ còn tối cao kia một đống kiến trúc.</p>
+<p>Này đống kiến trúc bên ngoài không có nhập khẩu, chỉnh thể phong bế, chỉ có tường thể leo lên vuông góc cây thang.</p>
+<p>Tiểu đội tìm một vòng không có nhập khẩu lúc sau, có cái đội viên lập tức mở to hai mắt, hắn tuổi tác còn tương đối tiểu, một đầu quyển mao, nhưng là là tiểu đội thương pháo tay, thân bối trong đội ngũ nặng nhất súng máy.</p>
+<p>Tiểu quyển mao ý đồ thuyết phục đội trưởng.</p>
+<p>“Bên này hẳn là sẽ không có người đi, có cái nào ngốc tử sẽ tiến nơi này ẩn thân.”</p>
+<p>>br ></p>
+<p>Kiến trúc tối cao thuyết minh nhất thấy được, lại không có xuất khẩu, bị đổ ở bên trong chính là tuyệt lộ.</p>
+<p>Đội trưởng kiên định bày một chút tay.</p>
+<p>“Thượng.”</p>
+<p>Một đội người bắt đầu hướng lên trên bò, bò đến trên cùng mới có một cái cửa nhỏ.</p>
+<p>Theo xoắn ốc thang lầu đi xuống.</p>
+<p>Chờ đến lộ trình quá nửa, đằng trước đội trưởng dừng bước chân.</p>
+<p>“Có thi thể.”</p>
+<p>Vẫn là tam cụ, một khối treo ở cửa sổ, hai cụ chồng chất ở bên nhau, thấy không rõ mặt.</p>
+<p>Đều không cần câu thông, trong đội ngũ đi theo đội trưởng bên người một cái đuôi ngựa nữ sinh đầu tiên tiến lên, dùng chân nhất nhất đem thi thể phiên lại đây.</p>
+<p>Chờ đến thấy rõ, tiểu đội người đồng thời thở dài nhẹ nhõm một hơi, ngưng trọng bầu không khí cũng không có.</p>
+<p>”Là tinh tặc.”</p>
+<p>Đuôi ngựa nữ sinh bên miệng triển lộ một chút ý cười.</p>
+<p>“Làm đều không kém, vết đao thực nhanh nhẹn, không hổ là đệ nhất trường quân đội học sinh.”</p>
+<p>Tiểu quyển mao thở dài nhẹ nhõm một hơi, tinh thần tỉnh táo, hắn ríu rít cùng đuôi ngựa nữ sinh đáp lời.</p>
+<p>“Thật là có người trốn bên trong, may mắn chúng ta tới, Thẩm tỷ, lần này ta có thể hay không cùng đội trưởng đi, ta vũ khí hỏa lực đại.”</p>
+<p>Đi theo đội trưởng bên người giống nhau đều là trong đội đội trưởng phó thủ, muốn ra mặt sự tình các loại, tỷ như vừa mới tiến lên xem xét thi thể, tỷ như gặp được người lúc sau đi cứu viện.</p>
+<p>Hắn có điểm ngượng ngùng.</p>
+<p>“Liền một lần, ta cũng tưởng cứu người, ta nghe tam đội bọn họ đều gặp phải hai lần học sinh.”</p>
+<p>Đuôi ngựa nữ sinh nghe vậy sau này lui một vị trí, trong đội ngũ có người phun tào.</p>
+<p>“Ngươi chính là tưởng uy phong một chút đi.”</p>
+<p>Tiểu quyển mao cũng không phủ nhận, một bên đuổi kịp đội trưởng một bên bức bức.</p>
+<p>“Hắc hắc, ta liền phải thần binh trời giáng đi cứu đắm chìm ở hoảng sợ bên trong học sinh, không phải sợ, ta tới!”</p>
+<p>Bọn họ hạ đến nhất phía dưới, ở xuất khẩu nhìn quét một vòng, cơ bản trống không, chỉ có lan can biên có cái không túi.</p>
+<p>Tiểu quyển mao có điểm mất mát.</p>
+<p>“Không có người, cũng không có xuất khẩu a.”</p>
+<p>Đáy giếng nơi nơi đều là Trùng tộc trứng còn thành công trùng thi thể.</p>
+<p>Diệp Vân không biết là chuyện như thế nào, hắn còn quá tiểu, còn không có vượt qua tinh thần lực Phát Dục Kỳ, không có cái loại này nhạy bén độ, cũng cảm thụ không đến tinh thần lực biến hóa.</p>
+<p>Nhưng hắn đã bất chấp như vậy nhiều.</p>
+<p>Diệp Mặc hô hấp dần dần mỏng manh, trên người đã vết máu loang lổ.</p>
+<p>Loại này màu đen Trùng tộc là không độc, nhưng chúng nó cắn ra miệng vết thương đều rất sâu, còn sẽ phân bố ra chất nhầy khiến cho miệng vết thương khó có thể khép lại.</p>
+<p>Máu tươi vẫn luôn ở trào ra.</p>
+<p>Diệp Vân vẫn luôn ở ý đồ ngừng huyết, hắn đem chính mình còn tính sạch sẽ quần áo xé thành một cái một cái coi như băng vải trói chặt miệng vết thương, nhưng này cơ bản là phí công.</p>
+<p>Hắn lung tung lau lau chính mình mặt, nỗ lực đứng lên.</p>
+<p>“Không cần ngủ, Diệp Mặc, ta cõng ngươi đi ra ngoài.”</p>
+<p>Diệp Mặc há mồm muốn nói cái gì đó, nhưng vừa mở miệng, máu tươi liền bừng lên.</p>
+<p>Đỏ bừng máu tươi ở hắn tái nhợt làn da thượng hết sức chói mắt.</p>
+<p>Diệp Vân quỳ ngồi xuống, đem Diệp Mặc ôm vào trong ngực, làm hắn nửa người trên có thể ngồi dậy, không cần sặc đến.</p>
+<p>Hắn cơ hồ là run rẩy tay đem Diệp Mặc bên miệng còn có mặt mũi sườn những cái đó máu tươi hủy diệt, nhưng là vô dụng, máu tươi còn đang không ngừng trào ra.</p>
+<p>Phía trước vô luận như thế nào đều kiên trì cổ vũ dẫn dắt người khác Diệp Vân, lần đầu tiên cảm nhận được tuyệt vọng.</p>
+<p>Miệng vết thương ngăn không được huyết.</p>
+<p>Hắn ý đồ làm Diệp Mặc lại kiên trì một chút.</p>
+<p>“Không cần sợ hãi, Diệp Mặc, ta cõng ngươi về nhà ——”</p>
+<p>Lời nói mới nói được một nửa, từ phía trên liền truyền đến tiếng bước chân.</p>
+<p>Thực rõ ràng, thực hỗn độn, hẳn là có bảy tám cá nhân.</p>
+<p>Diệp Vân ôm Diệp Mặc, nắm chặt nắm tay, hắn ngẩng đầu, không hề chớp mắt gắt gao nhìn chằm chằm miệng giếng.</p>
+<p>Là ai? Sẽ là tinh tặc sao?</p>
+<p>Liền tính là tinh tặc, liền tính là tinh tặc cũng hảo, tới cá nhân cứu cứu Diệp Mặc.</p>
+<p>Tiếng bước chân nhỏ một chút, tựa hồ muốn dần dần vận đi.</p>
+<p>Diệp Vân nắm chặt thương, lớn tiếng kêu gọi lên.</p>
+<p>Vì thế nguyên bản đi xa tiếng bước chân lại trọng lên, sau đó ngừng lại, mơ hồ trung, có người thăm dò ra tới, lại rụt trở về.</p>
+<p>Tiểu quyển mao là trước hết chạy tới, bên người đồng đội cảnh giác đem trong tay vũ khí nhắm ngay miệng giếng, phía trước cũng không phải không có tinh tặc làm bộ dân chúng bình thường thiết hạ quá bẫy rập,</p>
+<p>Tiểu quyển mao duỗi tay muốn chiếu sáng đèn, hắn lẩm bẩm lầm bầm.</p>
+<p>“Thấy không rõ a.”</p>
+<p>Mãnh liệt chùm tia sáng từ miệng giếng chiếu xạ đi xuống.</p>
+<p>“Không phải sợ, chúng ta lập tức ——”</p>
+<p>Tiểu quyển mao lời nói đến một nửa ngừng lại, thấy rõ trong nháy mắt kia, hắn đồng tử hơi hơi phóng đại, bên người đồng đội cũng chậm rãi buông xuống trong tay thương.</p>
+<p>Chiếu sáng đèn đem đáy giếng thảm thiết chiếu rành mạch.</p>
+<p>Không đếm được Trùng tộc thi thể còn có trùng trứng, bên cạnh còn nằm một cái vặn vẹo thân thể màu trắng mập mạp Vương Trùng.</p>
+<p>Còn có trung gian hai người.</p>
+<p>Diệp Vân ôm Diệp Mặc, thượng thân chế phục đã cởi xuống dưới, chỉ ăn mặc màu trắng nội sấn, mặt trên đều là một đoàn một đoàn vựng nhiễm khai máu, hắn khóe miệng còn có ứ thanh, lộ ra tới làn da cơ bản đều có đã ngưng kết máu.</p>
+<p>Đặc biệt là Diệp Vân trên tay, đã bị Diệp Mặc máu tươi nhiễm hồng.</p>
+<p>Diệp Mặc càng là thảm thiết, hắn thượng thân nguyên bản cột lấy băng vải cũng vết máu loang lổ, cái trán, khóe miệng, trên cằm đều là máu tươi.</p>
+<p>Là cứu viện, Diệp Vân buông lỏng tay ra trung nắm chặt thương.</p>
+<p>Hắn nước mắt hỗn hợp máu tươi ở trên mặt một đạo một đạo, rống lớn.</p>
+<p>“Cứu người!” ,,.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong12.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong14.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "ta-con-co-the-cau-tinh-te";
+const NOVEL_TITLE = "Ta còn có thể cẩu [tinh tế]";
+const CHAPTER_TITLE = "Chương 13";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

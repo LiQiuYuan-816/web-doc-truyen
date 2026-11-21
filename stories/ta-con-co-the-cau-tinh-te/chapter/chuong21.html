@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 21</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ta còn có thể cẩu [tinh tế]
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 21</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong20.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong22.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Nửa tháng kỳ nghỉ thực mau liền kết thúc, Diệp Vân cố ý tới rồi tiếp Diệp Mặc, ở trước khi đi, chữa bệnh đoàn đội cuối cùng cấp Diệp Mặc kiểm tra rồi một lần.</p>
+<p>“Hết thảy bình thường.”</p>
+<p>Bác sĩ ý bảo Diệp Mặc có thể đứng dậy, hắn trước đem số liệu đệ đơn, lại từ bên cạnh cầm một cái tay nhỏ va-li, đưa cho Diệp Mặc.</p>
+<p>“Đợi chút đi thời điểm đem này đó mang lên, dược tề đều mang theo đánh số, chính mình mỗi ngày đúng hạn tiêm vào, lúc sau tốt nhất mỗi tháng đều xin nghỉ lại đến kiểm tra một chút, nếu có đau đầu tinh thần lực mất khống chế chờ bệnh trạng liền lập tức lại đây.”</p>
+<p>Diệp Vân liền đứng ở một bên, thực tự nhiên tiếp nhận vali xách tay, đảm nhiệm nổi lên gia trưởng nhân vật.</p>
+<p>“Hảo, ta đã biết, còn có cái gì yêu cầu chú ý sao?”</p>
+<p>“Nhớ rõ đúng hạn tiêm vào dược tề liền hảo, dựa theo phía trước kinh nghiệm, chờ vững vàng vượt qua tinh thần lực Phát Dục Kỳ lúc sau hắn liền sẽ không tái xuất hiện đau đầu cùng tinh thần lực không chịu khống bệnh trạng, đến lúc đó có thể dùng một ít trị liệu tính dược vật.”</p>
+<p>Diệp Vân đẩy Diệp Mặc đi ra ngoài, một đường đến bên ngoài huyền phù xe.</p>
+<p>“Đi mau, hồi giáo, chúng ta thời gian không nhiều lắm, ly cuối kỳ còn có ngắn ngủn hai chu.”</p>
+<p>Diệp Mặc có điểm không hiểu.</p>
+<p>“Chúng ta năm nhất không phải hủy bỏ toàn bộ khảo thí sao?”</p>
+<p>Bởi vì thực tập ngoài ý muốn, năm nhất toàn viên nghỉ phép nửa tháng, còn đem sở hữu khảo thí đều hủy bỏ.</p>
+<p>“Nhưng là còn có trường quân đội league a, kia chính là trường quân đội league! Còn ở trường học học sinh đều đã chuẩn bị thật lâu, chúng ta không cần khảo thí, vừa lúc lập tức hồi giáo tìm Diệp Hạ.”</p>
+<p>Diệp Mặc cái hiểu cái không ở Diệp Vân nhìn chăm chú hạ gật gật đầu, hắn vẫn luôn cho rằng kế tiếp chính là trà trộn vào chính mình đại ca đội ngũ, hảo hảo đợi, an toàn vượt qua lần này trường quân đội league.</p>
+<p>Phía trước August còn ở trang viên thời điểm cũng không ngừng cùng hắn thảo luận trường quân đội league, trường học diễn đàn cũng không lâu trước cũng toàn bộ đều là thảo luận trường quân đội league thiệp.</p>
+<p>Nhưng Diệp Mặc vẫn là không có gì khái niệm, hắn đối trường quân đội league ấn tượng chính là một hồi chủ thể vì sinh viên tốt nghiệp, mặt khác niên cấp đặc biệt là năm nhất mua nước tương đại hình thực tiễn khảo thí.</p>
+<p>Chỉ cần là khảo thí, khiến cho Diệp Mặc cảm thấy khẩn trương, rốt cuộc hắn khi còn nhỏ trừ bỏ văn bản khảo thí, mặt khác khảo thí một khảo liền quải, thiếu chút nữa bị lưu ban, thế cho nên mỗi lần thượng môn đấu vật tiểu bằng hữu đều cướp cùng hắn tổ đội, sau đó Diệp Mặc liền mặt mũi bầm dập về nhà.</p>
+<p>Diệp Tri Viễn vừa mới bắt đầu cho rằng Diệp Mặc bị người khi dễ, còn đi tìm lão sư, cuối cùng xem theo dõi, phát hiện xác thật là chính mình gia nhãi con một chọc liền đảo, trở về học bù trong khoảng thời gian ngắn cũng không có gì tiến bộ, còn hảo sau lại Diệp Mặc càng dài càng đẹp, không có gì người bỏ được tấu mặt, sau lại thích ứng lúc sau, cũng chậm rãi đuổi kịp chương trình học.</p>
+<p>Huyền phù xe đình tới rồi cổng trường, Diệp Vân từ trên xe trong ngăn tủ cầm cái hộp cơm, một tay kia dẫn theo vali xách tay, lập tức nhảy xuống.</p>
+<p>“Tới rồi, chúng ta đi mau.”</p>
+<p>Hắn đem trong tay xách theo hộp cơm đưa cho Diệp Mặc, nhanh chóng công đạo.</p>
+<p>“Đây là mụ mụ cho chúng ta mang cơm trưa, ngươi đi trước đại ca kia, ta phía trước cùng đại ca nói qua muốn đi qua, hắn ở hắn phòng họp, ta đem dược tề trước phóng tới ký túc xá, một lát liền đến.”</p>
+<p>Công đạo xong Diệp Vân liền hấp tấp xông ra ngoài, không có thân ảnh.</p>
+<p>Diệp Mặc cúi đầu nhìn một chút trong tay trầm trọng hộp cơm, ước lượng một chút, phỏng chừng có thể huynh đệ vài người ăn hai đốn.</p>
+<p>Hắn triều một phương hướng đi qua đi.</p>
+<p>Làm đối ưu dị giả khen thưởng, mỗi danh thủ tịch đều có thuộc về chính mình đơn độc một đống kiến trúc, có phòng họp, còn có chuyên môn tổ chức vũ hội phòng khiêu vũ, dù sao chỉ cần không trái với nội quy trường học làm gì đều được, Diệp Vân cũng có.</p>
+<p>Bên kia Diệp Vân thực mau liền đến ký túc xá, hắn là thủ tịch, trụ chính là đơn người chung cư.</p>
+<p>Một bộ phận dược tề yêu cầu yêu cầu ướp lạnh chứa đựng, Diệp Vân phân loại đem dược tề dựa theo ngày nhét đầy chính mình tủ lạnh.</p>
+<p>Hắn vừa mới sửa sang lại xong, đầu cuối liền vang lên một chút, gởi thư tín người thuộc về Diệp Vân đặc biệt chú ý, tin tức tự động ở hắn trước mắt triển khai.</p>
+<p>【 có việc, trước mang Diệp Mặc đi ngươi nơi đó. 】</p>
+<p>Diệp Mặc thực mau liền đến độc thuộc về Diệp Hạ kia đống kiến trúc, chiếm địa rất lớn, giống thân thể dục quán.</p>
+<p>Đại môn phụ cận rải rác tụ tập rất nhiều người, đều ăn mặc màu đen giáo phục.</p>
+<p>Diệp Mặc ngẩng đầu xác nhận chính mình không có đi sai, do dự một chút, vẫn là đi qua, chờ hắn xách theo hộp cơm đến gần mới phát hiện đám kia người tuy rằng ăn mặc màu đen giáo phục, nhưng cũng không phải đệ nhất trường quân đội học sinh, bọn họ giáo phục thượng huy chương cũng không thuộc về đệ nhất trường quân đội, giáo phục chi tiết thượng cũng có rất nhiều bất đồng.</p>
+<p>Trường quân đội league từ đế đô bốn sở trường quân đội cộng đồng tham dự, tổ chức phương ở bốn sở trường quân đội thay phiên, năm nay vừa lúc đến phiên đệ nhất trường quân đội, sắp tới league liền phải bắt đầu, bọn họ cũng dần dần ở lão sư dẫn dắt hạ bắt đầu tụ tập đến đệ nhất trường quân đội.</p>
+<p>Bọn họ nguyên bản khả năng cho nhau chi gian đều nhận thức, vốn dĩ đều ăn không ngồi rồi chờ ở cửa.</p>
+<p>Nhưng Diệp Mặc phát hiện theo hắn tới gần, bọn họ mỗi người đều dừng trong tay động tác nhỏ, nhìn chằm chằm Diệp Mặc xem, Diệp Mặc không tự giác dựng thẳng bối, hắn có điểm không quá thích ứng nhiều người như vậy nhìn chăm chú, xách theo hộp cơm, Mặc Mặc nhanh hơn tốc độ, ở trước mắt bao người đẩy cửa đi vào.</p>
+<p>Chờ Diệp Mặc thân ảnh không thấy, cửa đám kia nhân tài bắt đầu thảo luận lên.</p>
+<p>Một cái oa oa mặt đôi mắt thẳng lăng lăng nhìn chằm chằm Diệp Mặc đi vào đại môn.</p>
+<p>“Nơi này còn đưa cơm hộp sao? Ta đói bụng, ta cũng muốn, ta vừa mới ngửi được mùi thịt, cái kia hộp cơm khẳng định có thịt.”</p>
+<p>Hắn bên cạnh là cái vóc dáng cao nam sinh, tóc lộn xộn, còn mang mắt kính, hắn gãi gãi chính mình tóc, vẻ mặt phát điên cùng không dám tin tưởng.</p>
+<p>“Đây là trọng điểm sao? Trọng điểm là đây là cái nào kỳ ba tại đây loại vương thấy vương quyết chiến thời khắc điểm cơm hộp a, lại còn có thật sự bị đưa lại đây, đây là đệ nhất trường quân đội sao, đưa cơm hộp đều đến như vậy ngạnh hạch?”</p>
+<p>Một cái khác đồng bạn xen mồm.</p>
+<p>“Không, ta tò mò là, hắn cảm thụ không đến bên trong tinh thần lực uy áp sao? Ta ở cửa đều phải không thể hô hấp, a Phổ Lí Nhĩ cơm trưa phía trước có thể kết thúc sao? Thực đường mau đóng cửa.”</p>
+<p>Vóc dáng cao không phụ sự mong đợi của mọi người tiếp thượng đề tài phun tào.</p>
+<p>“Này muốn xem Diệp Hạ khi nào đem hắn đánh trở về đi, ta thật sự không rõ, a Phổ Lí Nhĩ vì cái gì như vậy chấp nhất, dù sao hắn lại không có thắng quá, đương nhiên ta cũng không rõ hắn làm một cái s cấp vì cái gì mỗi lần đều bại bởi a cấp.”</p>
+<p>Bên kia Diệp Mặc xách theo hộp cơm, dọc theo hành lang đi vào đi chính là thực rộng lớn một cái đại sảnh, nhưng quá an tĩnh, Diệp Mặc chỉ có thể nghe thấy chính mình tiếng bước chân, hắn vốn dĩ tưởng hỏi trước một chút phòng họp ở đâu, nhưng dọc theo đường đi một người đều không có thấy.</p>
+<p>Có tiếng bước chân.</p>
+<p>Tựa hồ có điểm quen thuộc, Diệp Hạ nhíu một chút mày, hắn đang ở lầu hai, thuần thục đem trong tay súng ống trang thượng tân băng đạn, đem thân thể dán ở lầu hai chỗ ngoặt, che giấu lên, hắn ở trong lòng nhanh chóng làm ra phán đoán, này không phải đồng đội, hắn vài tên đội viên phân biệt bị hắn an bài ở lầu 3 phòng họp còn có thang lầu ẩn núp, một người ở chỗ cao đảm đương tay súng bắn tỉa.</p>
+<p>Này tiếng bước chân nghe tới quả thực không hề phòng bị, là mồi sao? Như vậy, bọn họ khả năng cũng ở lầu hai có mai phục, hắn ở trong lòng xây dựng ra mấy cái khả năng mai phục điểm, chuẩn bị nhận lấy đưa tới cửa tới con mồi, lại trêu đùa đối phương một phen.</p>
+<p>Chờ một chút, Diệp Hạ dừng động tác, nửa ngồi xổm xuống thân thể.</p>
+<p>Ngay sau đó có người từ lầu 3 phiên tới rồi lầu hai, vừa lúc liền dừng ở Diệp Hạ cách đó không xa, kia không phải Diệp Hạ đồng đội, sau đó đối phương không có dừng lại lại xoay người nhảy đến lầu một đại sảnh.</p>
+<p>Không phải mồi, cũng không phải địch quân, quen thuộc tiếng bước chân bỗng nhiên cùng trong trí nhớ nghe qua trùng hợp, Diệp Hạ phản ứng lại đây, cũng bất chấp che giấu, lập tức đứng lên, tay một chống lan can, cũng đi theo phiên đi xuống.</p>
+<p>Phía dưới người quả nhiên là Diệp Mặc, hắn đứng ở tại chỗ, trong tay còn xách theo hộp cơm, chính ngẩng đầu mờ mịt hướng lên trên nhìn.</p>
+<p>Thực bất hạnh, cái thứ nhất phiên đi xuống người là a Phổ Lí Nhĩ, hắn so Diệp Hạ mau một chút, thân thể đã ở giữa không trung, tay phải cầm chủy thủ.</p>
+<p>Diệp Hạ ở không trung điều chỉnh một chút phương hướng, đem lạc điểm hướng tới a Phổ Lí Nhĩ, tận lực ngắn lại khoảng cách, vừa rơi xuống đất liền nhanh chóng nhào tới.</p>
+<p>Hai người nhanh chóng đối chiến mấy chiêu, cuối cùng Diệp Hạ bắt lấy a Phổ Lí Nhĩ đá tới chân, ngưng hẳn chiến đấu.</p>
+<p>Diệp Hạ “Nếu ngươi có một chút đầu óc, liền sẽ phát hiện này không phải chúng ta hai đội bất luận cái gì một người.”</p>
+<p>Nói xong, hắn buông ra tay, ngữ khí thực lãnh đạm “Thu hồi tinh thần lực của ngươi, hôm nay dừng ở đây.”</p>
+<p>A Phổ Lí Nhĩ luôn luôn không chịu ở không phân ra thắng bại trước thu tay lại, lần này lại ngoài ý muốn nghe lời, hắn xuống dưới thời điểm cũng phát hiện chính mình thiếu chút nữa tập kích sai rồi người, hắn một đầu trương dương tóc đỏ xoã tung giống đầu sư tử, không sao cả nhún vai.</p>
+<p>“Hảo đi, ta cũng muốn ăn cơm, trường quân đội league thượng thấy, ta lần này nhất định sẽ không thua cho ngươi.”</p>
+<p>A Phổ Lí Nhĩ thổi một tiếng huýt sáo, lục tục có người từ trên lầu thăm dò ra tới, tốp năm tốp ba đi theo hắn phía sau đi ra ngoài.</p>
+<p>Diệp Hạ mới chuyển hướng Diệp Mặc, hắn đem Diệp Mặc trong tay hộp cơm tiếp nhận tới, nhìn chằm chằm Diệp Mặc, hắn không xác định vừa mới a Phổ Lí Nhĩ có hay không đối Diệp Mặc tiến hành tinh thần lực công kích.</p>
+<p>“Đau đầu sao?”</p>
+<p>Diệp Mặc phảng phất mới phản ứng lại đây, hắn vừa mới tựa hồ lại có trong nháy mắt hỗn độn, lắc lắc đầu.</p>
+<p>Diệp Hạ xác nhận Diệp Mặc không có việc gì sau, mới thực tự nhiên dắt Diệp Mặc tay hướng trong đi.</p>
+<p>“Diệp Vân đâu?”</p>
+<p>“Hắn trở về phóng đồ vật.”</p>
+<p>Bên kia, có người đi mau vài bước, đuổi kịp a Phổ Lí Nhĩ.</p>
+<p>Người tới vóc dáng rất cao, mang mắt kính, một bộ thực khôn khéo bộ dáng, hắn đẩy một chút đôi mắt nói “Không tiếp theo thăm thăm bọn họ chi tiết?”</p>
+<p>A Phổ Lí Nhĩ không có trả lời, ngược lại hỏi “Vừa mới cái kia xông tới người là ai?”</p>
+<p>Mắt kính nam cảnh giác lên, “Có cái gì không thích hợp sao?”</p>
+<p>A Phổ Lí Nhĩ mở ra tay, hắn lòng bàn tay là một đạo rất sâu vết máu.</p>
+<p>“Ta vừa mới nếu là trốn chậm một chút, hiện tại này đạo miệng vết thương chính là ở ta trên cổ.”</p>
+<p>Mắt kính cũng nghiêm túc lên, có thể thương đến a Phổ Lí Nhĩ, thuyết minh đối phương tinh thần lực rất có thể cũng là s cấp, mỗi một cái s cấp ở chiến dịch trung đều là có thể thay đổi chiến cuộc quan trọng tài nguyên.</p>
+<p>Hắn đẩy một chút mắt kính “Ta sẽ đi điều tra rõ.”</p>
+<p>“Điều tra rõ một chút, xem Diệp Hạ như vậy dáng vẻ khẩn trương, kia cực có thể là Diệp Hạ vũ khí bí mật.” ,,.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong20.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong22.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "ta-con-co-the-cau-tinh-te";
+const NOVEL_TITLE = "Ta còn có thể cẩu [tinh tế]";
+const CHAPTER_TITLE = "Chương 21";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
