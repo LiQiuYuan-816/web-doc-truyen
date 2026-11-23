@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 23</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Thân thủ nuôi lớn người trong sách muốn cưới ta
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 23</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong22.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong24.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Đêm nay thời tiết sáng sủa, không trung vạn dặm không mây, chỉ có một vòng minh nguyệt cao treo ở không trung.</p>
+<p>Hứa Tư Lập khoác kiện áo ngoài, chậm rì rì ở hành lang dài thượng tản bộ, hướng trong trí nhớ bồn tắm lớn phương hướng mà đi.</p>
+<p>Hắn đã đã phát tin tức cấp Janice, làm nàng phân phó người đem bể tắm hết thảy chuẩn bị hảo —— tuy rằng nàng bị thương, nhưng việc này cũng không cần nàng tự thân xuất mã, làm thị nữ đi làm là được.</p>
+<p>Hắn đi được không mau, cấp bọn thị nữ lưu đủ chuẩn bị thời gian.</p>
+<p>Ân, làm quân chủ, hắn vẫn là thực săn sóc.</p>
+<p>Một trận thanh phong quất vào mặt mà đến, đem hắn ngân bạch sợi tóc thổi đến phi dương dựng lên.</p>
+<p>Hứa Tư Lập đi tới đi tới, chậm rãi ở hành lang dài hạ đứng yên.</p>
+<p>Hắn ngẩng đầu nhìn bầu trời đêm minh nguyệt, màu tím đôi mắt hơi hơi ảm đạm xuống dưới, cả người bao phủ thượng một tầng u buồn sắc thái.</p>
+<p>Đại khái là ánh trăng quá mức say lòng người, ban ngày bị xem nhẹ một ít cảm xúc, khó tả liền nảy lên trong lòng.</p>
+<p>Hắn bỗng nhiên có điểm……</p>
+<p>Tưởng ba mẹ cùng ca ca bọn họ……</p>
+<p>《 Tinh Không Kỷ Nguyên 》 là hắn sau khi chết gần mười năm mới nghiên phát ra tới, nói cách khác, hiện giờ hiện thực đại khái đã qua tám chín năm thời gian.</p>
+<p>Ba mẹ cùng đại ca nhị ca……</p>
+<p>Còn có gia gia nãi nãi…… Bọn họ có khỏe không?</p>
+<p>Hứa Tư Lập nhấp khẩn môi, hắn đứng ở ánh trăng, hơi thở trở nên có chút trầm lãnh.</p>
+<p>Ở thiếu niên cảm giác không đến bóng ma góc, nào đó không tiếng động giao lưu đang ở tiến hành.</p>
+<p>“Bệ hạ đây là làm sao vậy?”</p>
+<p>“Khả năng nhớ tới nhị điện hạ đi? Nghe nói bệ hạ cùng công chúa điện hạ cảm tình thực tốt.”</p>
+<p>“Ai, thật đáng thương, vẫn là cái hài tử a……”</p>
+<p>“Mười một, ngươi cẩn thận một chút, đừng bị phát hiện!”</p>
+<p>“Phát hiện? Ảnh Cửu ngươi cũng quá cẩn thận, bệ hạ sao có thể phát hiện được chúng ta?”</p>
+<p>“Bệ hạ đã thành tinh thần hệ nguyên tố sư……”</p>
+<p>“Kia thì thế nào? Justin đều không nhất định có thể phát hiện chúng ta, huống chi bệ hạ?”</p>
+<p>“Chính là, ngươi không cảm thấy bệ hạ biến cường sao?”</p>
+<p>Một thanh âm khác không nói gì.</p>
+<p>Thật lâu sau mới nói một câu “Giống như…… Là so ban ngày cường.”</p>
+<p>Đối với lưỡng đạo bóng dáng giao lưu, Hứa Tư Lập không hề có cảm giác, hắn ở dưới ánh trăng đứng một lúc, liền lại tiếp tục nhấc chân, chuẩn bị hướng bể tắm phương hướng mà đi.</p>
+<p>Kết quả……</p>
+<p>“Uống! Ha!”</p>
+<p>Trong gió truyền đến một đạo nho nhỏ thanh âm, thực nhẹ rất xa, nếu là trước đây, hắn phỏng chừng sẽ nghe không rõ ràng lắm.</p>
+<p>Nhưng mà hiện tại bất đồng, âm nguyên tố thành hắn ống loa, hắn có thể nghe được càng xa xôi địa phương truyền đến động tĩnh.</p>
+<p>Hứa Tư Lập có chút cảnh giác, hắn dựng lên lỗ tai, nghiêng tai lắng nghe.</p>
+<p>Giống như…… Không có gì nguy hiểm?</p>
+<p>Cảm giác là cái tiểu hài tử thanh âm.</p>
+<p>Nhưng là trong hoàng cung như thế nào sẽ có tiểu hài tử? Hắn nghe lầm…… Hứa Tư Lập bỗng nhiên một đốn, hắn nghĩ tới nào đó tên.</p>
+<p>Chẳng lẽ là hắn……</p>
+<p>Hứa Tư Lập chần chờ một chút, dưới chân khẽ nhúc nhích, hướng thanh âm truyền đến phương hướng mà đi.</p>
+<p>Đến nỗi an toàn phương diện, ở trong hoàng cung hẳn là còn hảo đi?</p>
+<p>Lý Triết Thành không phải nói có ám vệ ở bảo hộ hắn?</p>
+<p>Hứa Tư Lập nghĩ như vậy, vừa đi, vừa khắp nơi nhìn xung quanh.</p>
+<p>Hắn có hảo cảm độ hệ thống, chỉ cần là người, cũng đừng tưởng ở hắn chung quanh ẩn nấp, rốt cuộc trên đầu đỉnh một cái nhãn, quả thực tựa như bia ngắm giống nhau, hắn tưởng không phát hiện đều khó.</p>
+<p>Đương nhiên, nếu ly đến quá xa, hắn khả năng cũng xem không rõ lắm là được.</p>
+<p>Bóng ma nơi nào đó góc, vốn dĩ yên lặng đi xuống giao lưu, lại lần nữa sinh động lên.</p>
+<p>“Bệ hạ muốn đi đâu nhi?”</p>
+<p>“Không biết, dù sao đi theo là được.”</p>
+<p>“Hắn nhìn đông nhìn tây, đang tìm cái gì sao? Ân? Ta như thế nào cảm giác…… Bệ hạ đang xem ta?”</p>
+<p>“Ngươi đừng cả ngày khẩn trương hề hề, bệ hạ là biến cường, nhưng cũng không đến mức đến có thể phát hiện chúng ta trình độ.”</p>
+<p>“Thật vậy chăng? Ngươi xác định sao?”</p>
+<p>“Thật sự, xác định.”</p>
+<p>“Nhưng là…… Nhưng là…… Ta thật sự cảm thấy bệ hạ đang xem chúng ta a!”</p>
+<p>Hứa Tư Lập nhìn cách đó không xa, khoảng cách chính mình đại khái 20 mét tả hữu địa phương, ở một cục đá lớn phía dưới, hai cái nhãn phập phềnh ở mặt trên.</p>
+<p>【 tôn kính 】【 tôn kính 】</p>
+<p>Một cái nhan sắc tương đối thâm, một cái hơi chút thiển một chút.</p>
+<p>Hắn nhíu nhíu mày, trộm ném hai cái thấy rõ thuật qua đi.</p>
+<p>【 Ảnh Cửu 】</p>
+<p>Thân phận NPC</p>
+<p>Cá nhân cấp bậc lv19</p>
+<p>Lượng máu 71500 71500</p>
+<p>Ma lực giá trị 1100 1100</p>
+<p>Nguyên tố thân hòa Ám</p>
+<p>Chức nghiệp Võ giả</p>
+<p>【 Ảnh Thập Nhất 】</p>
+<p>Thân phận NPC</p>
+<p>Cá nhân cấp bậc lv18</p>
+<p>Lượng máu 68000 68000</p>
+<p>Ma lực giá trị 1000 1000</p>
+<p>Nguyên tố thân hòa Ám</p>
+<p>Chức nghiệp Võ giả</p>
+<p>Nhìn hiện lên giao diện, Hứa Tư Lập gật gật đầu, an tâm mà thu hồi tầm mắt.</p>
+<p>Tuy rằng so Lý Triết Thành kém một chút, nhưng cũng so Janice cường rất nhiều, hơn nữa này hai cái ám vệ, ẩn nấp năng lực rất mạnh.</p>
+<p>Nếu thật sự có địch nhân xuất hiện, hắn dùng tiếng ca khống chế được, này hai cái ám vệ lại bạo khởi đả thương người, cảm giác lực sát thương vẫn là rất mạnh.</p>
+<p>Đương nhiên, không đụng tới Tư Thịnh cái loại này biến thái nói.</p>
+<p>Hứa Tư Lập tiếp tục đi phía trước, hướng tới thanh âm truyền đến phương hướng đi đến.</p>
+<p>Có người tại bên người bảo hộ, hắn liền cảm giác an tâm rất nhiều, hơn nữa hắn hiện tại mới lv7, lượng máu liền có Ảnh Thập Nhất một nửa, thậm chí lập tức muốn vượt qua Janice.</p>
+<p>Tự thân cường đại, tổng có thể làm người càng có tự tin.</p>
+<p>Thực mau, Hứa Tư Lập rời đi hành lang dài, vòng quanh cao cao tường vây đi tới, cuối cùng ở mỗ một chỗ đứng yên.</p>
+<p>Nơi này có một phiến chạm rỗng cửa sổ, hắn đứng ở bên ngoài, có thể nhìn đến tường vây bên trong tình cảnh.</p>
+<p>Đó là một chỗ lộ thiên đình viện.</p>
+<p>Trên đất trống, đứng một đạo thấp bé thân ảnh.</p>
+<p>Mặc hắc sắc tóc ngắn, theo hắn không ngừng múa may, phách trảm trong tay mộc kiếm, mà nhẹ nhàng run rẩy, ở ngân bạch dưới ánh trăng hơi hơi phiếm quang.</p>
+<p>Đó là một cái mười tuổi tả hữu tiểu thiếu niên.</p>
+<p>Ngũ quan nhìn không rõ lắm, từ sườn mặt hình dáng thượng xem, nhan giá trị không thấp, hẳn là cái tiểu soái ca.</p>
+<p>Trong tay hắn nắm một thanh mộc kiếm, đang ở đối với trước mặt mộc nhân phách chém.</p>
+<p>Tuy rằng tuổi nhỏ, trên mặt lại tràn đầy kiên nghị.</p>
+<p>Hắn huấn luyện hẳn là liên tục một đoạn thời gian, tại đây rét lạnh ban đêm, lại có chút đổ mồ hôi đầm đìa cảm giác, phía sau lưng quần áo đều ướt.</p>
+<p>“Uống! Ha!”</p>
+<p>Hắn nhất kiếm kiếm phách trảm, không biết mệt mỏi.</p>
+<p>“Điện hạ, nên nghỉ ngơi.” Lúc này, một đạo ôn nhu giọng nữ vang lên.</p>
+<p>“Natasha, ngươi đi trước ngủ đi, ta muốn lại luyện tập một hồi.” Tiểu thiếu niên không có quay đầu lại, tiếp tục nắm kiếm phách trảm, phát ra lộc cộc tiếng vang.</p>
+<p>“Điện hạ, ngài là tinh thần hệ thiên phú……” Tên là Natasha thị nữ còn tưởng lại khuyên.</p>
+<p>“Thì tính sao?”</p>
+<p>Tiểu thiếu niên lạnh lùng thốt, “Đại hoàng huynh cũng là cường đại tinh thần hệ nguyên tố sư, kết quả đâu? Đương ma lực thanh linh thời điểm, thân thể mới là ngươi cuối cùng cậy vào!”</p>
+<p>Natasha lo lắng mà nhìn hắn, giữa mày nhíu lại, “Điện hạ, ngài cũng không sẽ lâm vào cái loại này tình cảnh……”</p>
+<p>“Ai biết được?”</p>
+<p>Tiểu thiếu niên nhàn nhạt nói, nhất kiếm thứ hướng mộc nhân trái tim.</p>
+<p>Natasha do dự một chút, lại khuyên “Nhưng là điện hạ, ngài ngày mai còn muốn đi học viện……”</p>
+<p>“Ta sẽ đúng hạn rời giường.”</p>
+<p>Thấy hắn như thế kiên trì, Natasha thở dài “Vậy được rồi, ta đi vì ngài chuẩn bị một ít ăn chín, chờ ngài huấn luyện xong liền có thể ăn.”</p>
+<p>“Ân, giúp Tuyết Cầu cũng chuẩn bị một chút.”</p>
+<p>“Tốt, điện hạ.”</p>
+<p>Cùng với một trận tiếng bước chân vang lên, tên là Natasha thị nữ rời đi sân.</p>
+<p>Mà tiểu thiếu niên cũng không có bị ảnh hưởng, vẫn như cũ gắt gao nhìn chằm chằm trước mắt mộc nhân, tựa như nhìn cái gì sinh tử kẻ thù giống nhau, không ngừng dùng mộc kiếm phách trảm thứ.</p>
+<p>Nhất chiêu nhất thức, đều dùng đến ra dáng ra hình.</p>
+<p>Tuy rằng là tinh thần hệ nguyên tố sư, nhưng thân thể hắn tố chất, đã có thể cùng một ít cùng tuổi võ giả so sánh với.</p>
+<p>Nơi xa bảo hộ Hứa Tư Lập hai cái ám vệ, lại bắt đầu giao lưu lên.</p>
+<p>“Này không phải tiểu điện hạ sao?”</p>
+<p>“Còn tuổi nhỏ, luyện tập lên nhưng thật ra rất khắc khổ, thiên phú cũng thực hảo, so bệ hạ…… Khụ khụ, so rất nhiều người đều nỗ lực.”</p>
+<p>“Đúng vậy, nhưng là bệ hạ tới nơi này làm gì? Nghe nói…… Bệ hạ vẫn là hoàng tử thời điểm, cùng tiểu điện hạ chi gian có một chút hiềm khích, hắn tới nơi này……”</p>
+<p>“Ảnh Cửu, ngươi như thế nào giống như cái gì đều biết?”</p>
+<p>“Này không phải rất nhiều người đều biết đến sao? Hảo, đừng nói chuyện, tiếp tục xem.”</p>
+<p>Khắc phía trước cửa sổ, Hứa Tư Lập nhìn trong viện tiểu thiếu niên, cũng ở hồi tưởng Snow · Roland ký ức.</p>
+<p>Ký ức bên trong, Snow cùng Joan cảm tình cũng không tốt.</p>
+<p>Này một thế hệ Roland hoàng thất, tổng cộng có bốn vị hoàng tử hoàng nữ, bốn người, chỉ có Tam hoàng tử Snow là người thường, không cụ bị nguyên tố sư thiên phú.</p>
+<p>Mà Joan, còn lại là thiên phú tốt nhất cái kia.</p>
+<p>Hắn hiện tại chỉ mới mười tuổi, cấp bậc đã tới lv5, cũng chính là nửa tinh thực lực, chờ đến 18 tuổi, một tinh là không có vấn đề, thậm chí một tinh nửa cũng không biết chừng.</p>
+<p>Đối mặt đại ca cùng nhị tỷ, Snow · Roland là tôn kính, mà đối nhỏ nhất đệ đệ, hắn cảm tình lại rất phức tạp.</p>
+<p>Ở Tiểu Joan năm tuổi trước, hắn là thực thích cái này đệ đệ.</p>
+<p>Tuy rằng chính mình quá đến không thế nào hảo, nhưng cũng sẽ đem được đến thứ tốt cùng hắn chia sẻ, liền tính lại như thế nào sợ hãi, cũng sẽ động thân mà ra, bảo hộ tuổi nhỏ hắn không chịu nô bộc khi dễ.</p>
+<p>Khi đó Snow, đem Joan coi như tình cảm ký thác.</p>
+<p>Nhưng mà, đương năm tuổi Tiểu Joan bị thí nghiệm ra cường đại nguyên tố sư thiên phú lúc sau, hết thảy bắt đầu thay đổi.</p>
+<p>Snow vì đệ đệ cao hứng, đồng thời cũng vô pháp ức chế đáy lòng mất mát cùng ghen ghét.</p>
+<p>Rõ ràng trong thân thể đều lưu động đồng dạng huyết mạch, mà hắn lại là rõ đầu rõ đuôi người thường, rõ ràng đều là hoàng tử, mà hắn ở hoàng cung bên trong, lại giống cái trong suốt người giống nhau bị người xem nhẹ.</p>
+<p>Trừ bỏ nhị tỷ tỷ, giống như ai đều sẽ không nhớ rõ hắn.</p>
+<p>Vì thế, chờ Tiểu Joan bị chấp thuận ra cung, đi học viện Nguyên Tố Sư báo danh lúc sau, hai huynh đệ cảm tình liền dần dần xa cách.</p>
+<p>Sau lại còn bởi vì một chuyện nhỏ cãi nhau, từ khi đó khởi hai người liền rốt cuộc chưa nói nói chuyện.</p>
+<p>Snow đăng cơ sau, cũng không lại nhớ đến cái này nhỏ nhất đệ đệ, thậm chí quyết định vứt bỏ ngôi vị hoàng đế, thoát đi Escher tinh thời điểm, cũng không nghĩ tới muốn mang lên hắn.</p>
+<p>Hứa Tư Lập hồi ức, có chút thổn thức.</p>
+<p>Nếu không phải mở ra hảo cảm độ hệ thống, hắn căn bản sẽ không biết, Joan · Roland, cái này bị Snow ghen ghét ghét bỏ đệ đệ, kỳ thật là hắn fan trung thành.</p>
+<p>Ở điểm này, hắn tin tưởng hệ thống cũng không sẽ tính sai.</p>
+<p>Đồng thời, hắn lại có chút vô ngữ.</p>
+<p>Nếu giờ phút này, trò chơi kế hoạch trạm ở trước mặt hắn, Hứa Tư Lập tuyệt đối sẽ không lưu tình chút nào mà đánh bạo hắn đầu chó.</p>
+<p>Nói tốt bá đạo vô song vua của một nước đâu?</p>
+<p>Vì cái gì cho hắn an bài như vậy cẩu huyết trưởng thành trải qua?</p>
+<p>Cũng may, hắn hiện tại tới.</p>
+<p>Từ tương lai diễn đàn nhìn đến hết thảy, đều sẽ không phát sinh.</p>
+<p>Mà anh em bất hoà loại sự tình này, càng thêm không có khả năng.</p>
+<p>Hứa Tư Lập cuối cùng lại nhìn vào trong viện tiểu thiếu niên, xoay người, chuẩn bị rời đi nơi này, không nghĩ quấy rầy hắn tu luyện.</p>
+<p>Chỉ là……</p>
+<p>“Sàn sạt ——”</p>
+<p>Đế giày cọ xát mặt đất thanh âm, không tính đặc biệt lớn tiếng, lại vẫn là bị nghe được.</p>
+<p>“Ai ở nơi đó?!”</p>
+<p>Tiểu thiếu niên non nớt quát lớn tiếng vang lên.</p>
+<p>Hứa Tư Lập chỉ tới kịp quay đầu lại, trơ mắt nhìn kia đạo thấp bé thân ảnh nhanh chóng vọt tới, sạch sẽ lưu loát mà phóng qua tường vây, trực tiếp dừng ở trước mặt hắn.</p>
+<p>Trước sau cũng liền nháy mắt công phu.</p>
+<p>Joan · Roland, thật sự không thẹn với hắn thiên phú cùng nỗ lực.</p>
+<p>Tiểu thiếu niên một đôi mắt tím lạnh lùng mà trừng hướng hắn, tay cầm mộc kiếm liền phải công kích lại đây, chỉ là ở nhìn rõ Hứa Tư Lập mặt khi, hắn không khỏi sững sờ ở tại chỗ.</p>
+<p>“Hoàng…… Hoàng huynh?”</p>
+<p>Hắn ngửa đầu nhìn Hứa Tư Lập, vốn dĩ lãnh lệ khuôn mặt nhỏ, trong nháy mắt trở nên ngốc manh ngốc manh.</p>
+<p>Hứa Tư Lập cũng không nghĩ tới tiểu tể tử lại là như vậy mãng, nghe được động tĩnh liền trực tiếp vọt lại đây, nhìn dáng vẻ còn tưởng cùng hắn làm một trận.</p>
+<p>Hắn nhìn nho nhỏ thiếu niên, bỗng nhiên âm trầm hạ mặt tới.</p>
+<p>“Ngươi đang làm gì?”</p>
+<p>“Ta……”</p>
+<p>Joan nhìn trong tay mộc kiếm, vội vàng bối đến phía sau.</p>
+<p>Tiểu thiếu niên mắt tím trung hiện lên một tia hoảng loạn, nhưng thực mau, hắn lại kéo căng khuôn mặt nhỏ.</p>
+<p>“Lời này hẳn là ta hỏi mới là.”</p>
+<p>Hắn ngước mắt, nhìn thẳng Hứa Tư Lập, thậm chí có chút sinh khí.</p>
+<p>“Đã trễ thế này, hoàng huynh vì cái gì lại ở chỗ này? Tối hôm qua không phải mới tao ngộ thích khách sao? Lý Triết Thành đâu? Hắn vì cái gì còn làm ngươi chạy loạn?”</p>
+<p>Còn tuổi nhỏ, nổi giận lên nhưng thật ra khí thế mười phần.</p>
+<p>Trong nháy mắt, Hứa Tư Lập đều có chút bị hù dọa.</p>
+<p>Bất quá, hắn cảm nhận được tiểu hài tử ngôn ngữ bên trong quan tâm, loại này thân nhân gian ràng buộc, làm hắn nguyên bản có chút nặng nề tâm tình, bỗng nhiên sáng sủa một ít.</p>
+<p>“Ta đến xem ngươi.”</p>
+<p>Hắn nhu hòa ngữ khí nói.</p>
+<p>“Đến xem……”</p>
+<p>Vốn đang hùng hổ, nói đến mặt sau, bỗng nhiên yếu đi đi xuống, biến thành nghi hoặc thanh âm.</p>
+<p>“Xem…… Xem ta?”</p>
+<p>Hắn ngơ ngác mà nhìn Hứa Tư Lập.</p>
+<p>“Đúng vậy, ai biết ngươi đột nhiên liền lao tới muốn đánh ta?” Hứa Tư Lập đi qua, vươn tay, ấn ở hắn trên đầu xoa nhẹ một chút.</p>
+<p>“Đem ta đương thích khách?”</p>
+<p>Nói đến này, hắn thanh âm bỗng nhiên nghiêm khắc lên, “Nếu là thật thích khách làm sao bây giờ? Cầm cây mộc kiếm liền muốn làm gì?”</p>
+<p>Tiểu thiếu niên ngốc lăng lăng, hơi hơi hé miệng, tựa hồ tưởng biện giải, lại không có phát ra âm thanh tới.</p>
+<p>Nguyên bản ngọc bạch bên tai, chậm rãi biến đỏ.</p>
+<p>Hắn hơi cúi đầu, tùy ý Hứa Tư Lập xoa hắn đầu.</p>
+<p>“Vừa mới xem ngươi còn rất thông minh, biết muốn rèn luyện võ kỹ, như thế nào đột nhiên liền biến xuẩn?”</p>
+<p>Hứa Tư Lập hận sắt không thành thép địa đạo.</p>
+<p>“Lần sau phát hiện không đúng, chạy nhanh chạy, hoặc là kêu người lại đây lại đánh, biết không?”</p>
+<p>“Đã biết, hoàng huynh.”</p>
+<p>Tiểu thiếu niên thấp đầu, thực thuận theo mà đáp.</p>
+<p>Không có nghe được trong tưởng tượng phản bác, Hứa Tư Lập ngẩn ra một chút, theo sau hơi cong khóe môi.</p>
+<p>Này tiểu hài tử…… Xác thật thực ngoan a.</p>
+<p>“Biết liền hảo, đừng làm cho ta lo lắng.” Hắn nhẹ giọng nói, “Ta đã có thể ngươi một cái đệ đệ, đã xảy ra chuyện làm sao bây giờ?”</p>
+<p>Tiểu thiếu niên bỗng nhiên ngẩng đầu, tròn xoe màu tím đôi mắt nhìn chăm chú vào Hứa Tư Lập.</p>
+<p>Như là có chút khó có thể tin, lại có điểm kích động.</p>
+<p>Hứa Tư Lập lại lần nữa xoa nhẹ hạ hắn đầu, tiểu hài tử tóc lại mềm lại tế, sờ lên xúc cảm đặc biệt hảo.</p>
+<p>Hắn không có nói cái gì nữa buồn nôn nói, mà là xoay người, vòng qua cửa hông, đi vào Joan tiểu viện tử.</p>
+<p>Nếu bị phát hiện, vậy tùy tiện dạo một dạo hảo.</p>
+<p>Joan nhìn ca ca bóng dáng, trong ánh mắt hiện lên vài phần vui sướng, thực mau phản ứng lại đây, vội vàng nắm kiếm, chạy chậm truy ở hắn phía sau.</p>
+<p>Cách đó không xa, lưỡng đạo bóng ma lại lần nữa giao lưu lên.</p>
+<p>“Ngươi không phải nói…… Bọn họ hai anh em cảm tình không hảo sao?” Ảnh Thập Nhất hoài nghi mà nói, “Ta thấy thế nào khá tốt?”</p>
+<p>“Ta như thế nào biết? Trong lời đồn xác thật quan hệ rất kém cỏi a……” Ảnh Cửu có chút buồn bực.</p>
+<p>“Cho nên a, mắt thấy vì thật, ngươi liền không nên lão nghe những cái đó bát quái, nghe nhiều ảnh hưởng phán đoán.”</p>
+<p>“Đã biết……”</p>
+<p>Ảnh Cửu thanh âm rầu rĩ, “Muốn vào đi sao? Vẫn là ở bên ngoài thủ liền hảo?”</p>
+<p>“Ở bên ngoài thủ đi, dù sao tiểu điện hạ bên người cũng có người.”</p>
+<p>“Ân……”</p>
+<p>Lưỡng đạo bóng ma lặng yên không một tiếng động mà mấp máy lên, ở bốn phía đề phòng.</p>
+<p>Trong viện, Hứa Tư Lập vừa đi đi vào, liền thấy được trong một góc huyền phù hảo cảm độ nhãn.</p>
+<p>Nhìn đến là tôn kính, hắn không có lãng phí ma lực giá trị, làm bộ không nhìn thấy, ở trong sân dạo qua một vòng, cuối cùng đi vào kia tôn mộc nhân trước mặt, cẩn thận đánh giá.</p>
+<p>Vừa mới ở bên ngoài cũng chưa thấy thế nào rõ ràng, giờ phút này để sát vào, mới phát hiện này cũ nát mộc nhân trên người, sớm đã vết thương chồng chất.</p>
+<p>Vô số vết thương cũ vết sẹo mới, tỏ rõ chủ nhân huấn luyện khắc khổ.</p>
+<p>“Hoàng huynh……”</p>
+<p>Lúc này, Joan đi vào hắn phía sau, có chút chần chờ mà nhìn hắn, đáy mắt lại mơ hồ mang theo vài phần khát khao.</p>
+<p>Hứa Tư Lập quay đầu lại, đối hắn cười cười.</p>
+<p>“Tiểu Joan rất lợi hại a.”</p>
+<p>Nhìn trên mặt hắn tươi cười, tiểu thiếu niên hơi hơi có chút mặt đỏ, lại vội vàng lắc đầu nói “Ta quá yếu, còn kém thật sự xa đâu!”</p>
+<p>“Hoàng huynh, ta nhìn tiếp sóng, ngươi hôm nay ở Dong Binh trấn nhỏ……”</p>
+<p>“Ngươi cư nhiên cũng nhìn?”</p>
+<p>Hứa Tư Lập hơi nhướng mày, hồi tưởng hôm nay ở Dong Binh trấn nhỏ kia một màn, hiện tại nhớ lại tới còn cảm thấy thực kích thích.</p>
+<p>“Xác thật, chúng ta đều còn kém xa.”</p>
+<p>“Nếu không phải Tư Thịnh kịp thời đuổi tới, chỉ sợ thật đúng là không hảo xong việc…… Liền tính bị trọng thương, kia đầu tam tinh thú vẫn là như vậy cường hãn a.”</p>
+<p>Joan nhìn hắn, mím môi.</p>
+<p>Kỳ thật hắn tưởng nói chính là…… Hoàng huynh hôm nay thực dũng cảm.</p>
+<p>Hắn còn tưởng nói, chờ hắn lớn lên về sau, cũng sẽ giống đại nguyên soái như vậy bảo hộ hắn.</p>
+<p>Chính là…… Hắn nói không nên lời.</p>
+<p>Hoàng huynh giống như vẫn luôn đều không thích hắn……</p>
+<p>“Từ từ tới liền hảo, ngươi còn nhỏ, về sau còn có rất dài thời gian tu luyện, không vội với này nhất thời.”</p>
+<p>Hứa Tư Lập lắc đầu, không có lại tiếp tục cái này đề tài.</p>
+<p>Hắn ánh mắt khẽ nhúc nhích, nhưng thật ra đối tiểu thiếu niên trong tay kiếm nổi lên hứng thú.</p>
+<p>Joan nhìn ra tới, chủ động đem mộc kiếm đưa cho hắn.</p>
+<p>Hứa Tư Lập không có chối từ.</p>
+<p>Này mộc kiếm nhìn khinh phiêu phiêu, không nghĩ tới vào tay còn rất trầm.</p>
+<p>Dùng thấy rõ thuật nhìn thoáng qua, mới biết được dùng đặc thù tài chất chế tác, phi thường trọng, mà Tiểu Joan như vậy tiểu, sử dụng thanh kiếm này tới lại cử trọng nhược khinh.</p>
+<p>Xem ra là thật sự vẫn luôn có ở khắc khổ huấn luyện.</p>
+<p>Thưởng thức này cây mộc kiếm, Hứa Tư Lập bỗng nhiên tâm huyết dâng trào, nhớ tới ban ngày thời điểm, Tư Thịnh dùng kia nhất chiêu kiếm thuật.</p>
+<p>Nhất kiếm trực tiếp đem kia đầu đóng băng thú chém thành hai nửa!</p>
+<p>Hắn liếm liếm môi, ở Tư Thịnh kỹ năng giao diện tìm lên, thực mau đã bị hắn phiên tới rồi.</p>
+<p>【 giam cầm chi kiếm 】</p>
+<p>Miêu tả Tất sát kỹ, phát động kiếm thuật lúc sau, địch nhân đem bị giam cầm tại chỗ, liên tục 3 giây, bị giam cầm trong lúc, hết thảy phòng ngự mất đi hiệu lực.</p>
+<p>Đồng thời, ngươi đem chém ra nhất kiếm, nhất kiếm lúc sau, ngươi đem tạm thời vô pháp lại sử dụng kiếm thuật, liên tục 1 phút.</p>
+<p>Kỹ năng cấp bậc lv10( mãn cấp )</p>
+<p>Sử dụng sở cần thể lực</p>
+<p>Thuộc tính Lôi</p>
+<p>Hứa Tư Lập nhìn kỹ năng miêu tả, không khỏi có chút bừng tỉnh.</p>
+<p>Khó trách!</p>
+<p>Kia chỉ đóng băng thú bỗng nhiên giống yên lặng giống nhau, bị chém thành hai nửa sau mới rớt đến trên mặt đất, theo sát máu tươi mới chảy đầy đất.</p>
+<p>Nguyên lai là bị giam cầm ở a.</p>
+<p>Đây là võ kỹ, sử dụng này nhất kiếm, hắn yêu cầu trả giá thể lực.</p>
+<p>Nếu tao ngộ địch nhân, dùng ra chiêu này sau, hắn chỉ sợ cũng không có bất luận cái gì sức phản kháng, nhưng hiện tại là ở trong hoàng cung, lại có ám vệ thủ hắn.</p>
+<p>Nếu không…… Thử xem xem?</p>
+<p>Hứa Tư Lập nhíu mày suy tư, đây là tất sát kỹ, không đến vạn bất đắc dĩ sẽ không dùng, nhưng hắn cũng yêu cầu luyện tập một chút, làm được trong lòng hiểu rõ mới được.</p>
+<p>Hắn nhìn vào bên cạnh tiểu thiếu niên, chần chờ một chút, nói “Tiểu Joan, có thể mượn ngươi mộc kiếm dùng dùng sao?”</p>
+<p>Joan gật đầu, “Hoàng huynh cứ việc dùng.”</p>
+<p>Sau đó, hắn liền thấy hoàng huynh hơi cong môi, lộ ra một cái vô cùng ôn hòa tươi cười, tiếp theo, ánh mắt ở trong sân băn khoăn một chút, theo sau hướng trong một góc đại thạch đầu đi đến.</p>
+<p>Xem hắn triển khai tư thế, Joan vội vàng nói “Hoàng huynh, chém mộc nhân đi.”</p>
+<p>“Không được, ta sợ đem ngươi mộc nhân cấp lộng hỏng rồi.” Hứa Tư Lập nói.</p>
+<p>Lộng hỏng rồi, hắn nhưng không có tiền bồi.</p>
+<p>Joan lại là nhíu mày, “Cái này người gỗ, thực kiên cố! So cục đá còn ngạnh.”</p>
+<p>“Ân, ta biết.”</p>
+<p>Hứa Tư Lập gật đầu, đôi mắt lại nhìn chằm chằm trước mặt đại thạch đầu, đây là Tư Thịnh kiếm, uy lực có thể đoán trước, hắn không nghĩ xuất hiện bất luận cái gì ngoài ý muốn.</p>
+<p>Joan nghĩ tới tới, lại bị Hứa Tư Lập quát bảo ngưng lại.</p>
+<p>“Ngươi đứng ở nơi đó liền hảo, đừng tới đây.”</p>
+<p>Joan đành phải nghe lời, mày nhăn thành tiểu ngật đáp, có chút nghi hoặc mà nhìn hắn.</p>
+<p>Hoàng huynh rốt cuộc muốn làm gì?</p>
+<p>Mà Hứa Tư Lập, lúc này hít sâu một hơi, sau đó ánh mắt dừng ở kỹ năng giao diện thượng.</p>
+<p>Tâm niệm khẽ nhúc nhích gian, xác định sử dụng.</p>
+<p>Chỉ này một giây đồng hồ, hắn bỗng nhiên cảm giác được một cổ cường đại năng lượng ở hắn trong cơ thể tràn ngập, thân thể hắn, phảng phất bị một cái khác cường đại vô cùng linh hồn sở chiếm cứ.</p>
+<p>Cái kia cường giả…… Là Tư Thịnh!</p>
+<p>Hứa Tư Lập cảm giác giờ khắc này, hắn phảng phất biến thành Tư Thịnh, hoặc là nói, Tư Thịnh khống chế thân thể hắn.</p>
+<p>Đó là một loại huyền diệu lại cảm giác cổ quái.</p>
+<p>Hắn ánh mắt hơi ngưng, theo cảm giác đem tầm mắt chặt chẽ tỏa định trước mặt đại thạch đầu.</p>
+<p>Giam cầm!</p>
+<p>Chỉ thấy vô hình khí cơ đem nham thạch tỏa định, ngay cả mặt trên sinh trưởng thảo diệp đều yên lặng xuống dưới.</p>
+<p>Sau đó…… Nhất kiếm chém ra.</p>
+<p>Không có bất luận cái gì thanh âm, không có bất luận cái gì thật lớn động tĩnh, lặng yên không một tiếng động trung, một đạo thẳng tắp trung tuyến xuất hiện trên cục đá mặt.</p>
+<p>Gió nhẹ nhàng một thổi.</p>
+<p>Sau đó, này nửa người cao cục đá, không tiếng động mà phân thành hai nửa, mặt cắt san bằng, bóng loáng như gương.</p>
+<p>An tĩnh, bỗng nhiên mà an tĩnh.</p>
+<p>Hứa Tư Lập ngơ ngác mà nhìn trước mặt bị cắt thành hai nửa đại thạch đầu, khó có thể tưởng tượng đây là hắn dùng một phen mộc kiếm tạo thành kết quả.</p>
+<p>Ngay sau đó, cái loại này bị bám vào người cảm giác biến mất.</p>
+<p>Một cổ thật lớn hư không cảm giác cùng thoát lực cảm, truyền khắp hắn toàn thân, làm hắn suýt nữa không thể đứng vững.</p>
+<p>【 đinh ～[ giam cầm chi kiếm lv10] phát động thành công, thể lực giá trị -100】</p>
+<p>Hứa Tư Lập có chút chân mềm.</p>
+<p>Có loại một giây đồng hồ chạy 1500 mễ cảm giác.</p>
+<p>Nhưng thí nghiệm kết quả lại là lệnh người vui sướng.</p>
+<p>Tư Thịnh kỹ năng, quá dùng tốt! Này giam cầm chi kiếm, soái ngây người!</p>
+<p>Joan hơi há hốc miệng, ngơ ngác mà nhìn nơi xa đại thạch đầu.</p>
+<p>Tuy rằng mộc kiếm so cục đá ngạnh, nhưng giống như vậy san bằng mà đem cục đá cắt thành hai nửa, là…… Người bình thường có thể làm được sao?</p>
+<p>Dù sao…… Hắn là làm không được.</p>
+<p>Căn bản không có khả năng làm được a.</p>
+<p>Hứa Tư Lập cường chống thân thể, tâm tình tốt lắm đi rồi trở về, sau đó cây mộc kiếm trả lại cho tiểu hài tử.</p>
+<p>Hắn cũng không có giải thích vừa mới kia nhất kiếm là chuyện như thế nào, mà là cười tủm tỉm hỏi</p>
+<p>“Tiểu Joan, muốn hay không cùng ta cùng đi ngâm tắm a?”</p>
+<p>Joan máy móc mà lắc lắc đầu, “Ta…… Ta phải đi về ngủ.”</p>
+<p>Sau đó, ở Hứa Tư Lập mộng bức nhìn chăm chú hạ, xoay người chạy vào chính mình tẩm cung.</p>
+<p>Chờ xuyên thấu qua cửa sổ, nhìn đến Hứa Tư Lập xoay người rời đi sau, hắn mới thu hồi tầm mắt, ngốc ngồi dưới đất, hồi ức vừa mới kia cường đại vô cùng nhất kiếm.</p>
+<p>“Miêu ô ——”</p>
+<p>Không biết qua bao lâu, mèo kêu tiếng vang lên, một đạo tuyết trắng thân ảnh đi tới Joan bên người, nhẹ nhàng liếm liếm hắn khuôn mặt.</p>
+<p>Hắn bỗng nhiên bẹp miệng, đem tuyết trắng miêu mễ ôm vào trong lòng ngực, thấp giọng nức nở nói “Tuyết Cầu, ta về sau bảo hộ không được hoàng huynh…… Ô ô, hoàng huynh trở nên hảo cường a……”</p>
+<p>Nho nhỏ thiếu niên cuộn tròn ở bóng ma, tâm thái hoàn toàn băng rồi, may mắn, còn có một con mèo con an tĩnh mà làm bạn hắn……</p>
+<p>Mà làm người khởi xướng Hứa Tư Lập, đối này hết thảy không thể nào biết được, hắn thấy tiểu hài tử bỗng nhiên chạy, tuy rằng có chút nghi hoặc, nhưng cũng không có truy đi vào.</p>
+<p>Cảm thụ được ban đêm lạnh lẽo phong, hắn nhịn không được đánh cái rùng mình, sau đó nhớ tới đại buổi tối ra tới mục đích.</p>
+<p>Ngâm tắm ngâm tắm!</p>
+<p>Hứa Tư Lập chạy nhanh xoay người, kéo nhân thể lực tiêu hao quá mức mà trở nên trầm trọng bước chân, hướng bồn tắm lớn phương hướng dịch đi……</p>
+<p>Đồng thời hắn cùng hai cái ám vệ đều không có phát hiện, một đạo thân ảnh ở trên tường vây dừng dừng, theo sau chợt lóe rồi biến mất.</p>
+<p>Tác giả có lời muốn nói Tiểu Joan Hoàng huynh, ta là ngươi duy nhất đệ đệ sao?</p>
+<p>Hứa Tư Lập Đúng vậy.</p>
+<p>Tiểu Ngũ Ca ca, kia ta đâu?</p>
+<p>Hứa Tư Lập ……</p>
+<p>Tư Thịnh ? Đột nhiên có loại bị trộm gia cảm giác</p>
+<p>——————————————————</p>
+<p>Ngao ngao, buông bổn dự thu, đại gia cảm thấy hứng thú có thể chọc chuyên mục cất chứa ～</p>
+<p>《 luận tiểu y tu như thế nào trở thành tinh tế đoàn sủng 》</p>
+<p>Văn án Diệp Dư Manh sau khi chết xuyên qua, đi vào một cái xa lạ tinh tế thế giới.</p>
+<p>Nguyên chủ là cái cô nhi, khốn cùng thất vọng, nhân đắc tội với người bị đánh thành trọng thương, trước khi chết triệu hoán Diệp Dư Manh, duy nhất tâm nguyện gần là giúp hắn hoàn thành đệ nhất công tác, chiếu cố viện điều dưỡng sở hữu người bệnh, thẳng đến bọn họ toàn bộ xuất viện.</p>
+<p>Diệp Dư Manh vui vẻ đáp ứng.</p>
+<p>Thân là một người diệu thủ hồi xuân tiểu y tu, một giây là có thể làm người bệnh nhóm xuất viện, chút lòng thành!</p>
+<p>Ngày đầu tiên, hắn kéo còn không có khỏi hẳn gãy chân, khập khiễng đi viện điều dưỡng đưa tin, chờ nhìn đến một phòng tiểu động vật khi, hắn không khỏi lâm vào mê mang.</p>
+<p>Ân? Nguyên chủ ngươi thanh tỉnh một chút, ngươi xác định ngươi yêu cầu chính là y tu sao? Ngọa tào, như thế nào còn có thực vật?!</p>
+<p>Bất quá, nhìn một phòng hấp hối tiểu đáng thương nhóm, Diệp Dư Manh vẫn là mềm lòng.</p>
+<p>Hắn bế lên trong đó một con bàn tay đại, toàn thân lông tóc đều bị đốt thành than thỏ con, loát loát nó trên đầu còn sót lại một nắm bạch mao, vành mắt hồng hồng mà nói “Yên tâm đi, ta sẽ chữa khỏi ngươi.”</p>
+<p>Đế quốc viện điều dưỡng, cư trú đều là đến từ các lĩnh vực, đối đế quốc làm ra kiệt xuất cống hiến nhân vật trọng yếu.</p>
+<p>Những người này nhân đủ loại nguyên do thân bị trọng thương, đánh mất sở hữu năng lực biến trở về ấu sinh thái, ở viện điều dưỡng trung, ngày qua ngày chịu đựng ốm đau tra tấn, suy sụp chờ chết.</p>
+<p>Mà đương nhiệm hoàng đế lục nam châu, không thể nghi ngờ là trong đó bị thương nặng nhất một vị.</p>
+<p>Ngày này, viện điều dưỡng mới tới một cái Tiểu Mỹ người.</p>
+<p>Tiểu Mỹ người lớn lên nhu nhu nhược nhược, trên người còn mang theo tàn tật, gần nhất liền ôm lục nam châu khóc, còn dõng dạc nói muốn chữa khỏi bọn họ.</p>
+<p>Bọn họ thương liền tính tinh tế cao cấp nhất bác sĩ đều trị không hết, càng đừng nói hắn một cái nho nhỏ hộ công.</p>
+<p>Chỉ là mỗi ngày nhìn tiểu hộ công bận bận rộn rộn, buổi tối ôm hắn khóc chít chít bộ dáng, lục nam châu cuối cùng vẫn là không nhịn xuống, gian nan thăm khởi duy nhất năng động đầu, giúp hắn liếm đi khóe mắt nước mắt.</p>
+<p>Sau lại, đương bạn chung phòng bệnh kiêm thần thuộc nhóm từng cái chữa khỏi xuất viện, lục nam châu không khỏi lâm vào trầm tư.</p>
+<p>Hắn là tiếp tục trang bệnh đâu? Vẫn là tiếp tục trang bệnh đâu?</p>
+<p>Cuối cùng hắn quyết định không trang, trực tiếp đem tiểu hộ công ngậm hồi cung đi, miễn cho những cái đó không có mắt gia hỏa nhóm cả ngày mơ ước nhà hắn Tiểu Mỹ người.</p>
+<p>Sau lại sau lại, đương lục nam châu khôi phục thành niên thể xuất hiện ở Diệp Dư Manh trước mặt khi, tiểu y tu đều dọa ngốc.</p>
+<p>Ngọa tào ngọa tào, nhà hắn manh manh tiểu bạch thỏ đâu?</p>
+<p>Này không phải trong truyền thuyết thần thú hướng lên trời Hống sao? Có thể ăn long cái loại này!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong22.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong24.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "than-thu-nuoi-lon-nguoi-trong-sach-muon-cuoi-ta";
+const NOVEL_TITLE = "Thân thủ nuôi lớn người trong sách muốn cưới ta";
+const CHAPTER_TITLE = "Chương 23";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

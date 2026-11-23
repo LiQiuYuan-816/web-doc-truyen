@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 25</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Thân thủ nuôi lớn người trong sách muốn cưới ta
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 25</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong24.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong26.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Hứa Tư Lập có chút ngốc lăng.</p>
+<p>Giờ phút này, hắn cùng Tư Thịnh dựa đến thân cận quá.</p>
+<p>Hắn vừa nhấc mắt, là có thể vọng tiến hắn màu xanh xám giống biển sâu giống nhau đôi mắt, như vậy mê người thâm thúy, mang theo điểm điểm ôn hòa ánh sáng nhu hòa.</p>
+<p>Trong tay hắn cầm khăn, giúp hắn lau đi ngoài miệng dính vết sữa, động tác mềm nhẹ, lại có chút quá mức thân mật.</p>
+<p>Không sai, quá thân mật.</p>
+<p>Hứa Tư Lập chớp chớp mắt, đột nhiên bắt lấy Tư Thịnh tay, ở nam nhân tạm dừng gian, đoạt quá hắn khăn tay, sau đó đột nhiên đứng lên.</p>
+<p>Tư Thịnh hơi ngửa đầu nhìn hắn.</p>
+<p>Lúc này đây, lại đổi Hứa Tư Lập không dám nhìn thẳng hắn đôi mắt.</p>
+<p>“Bổn…… Bổn hoàng chính mình tới liền hảo!”</p>
+<p>Hắn nói xong, một bên dùng khăn tay xoa miệng, một bên bước nhanh đi ra nhà ăn, kia vội vã bóng dáng, hơi có chút chạy trối chết cảm giác.</p>
+<p>Phủng sữa bò hồ đứng ở một bên hầu hạ Jenna, nhìn xem cái này, nhìn xem cái kia, đôi mắt có chút tỏa sáng.</p>
+<p>Mà Tư Thịnh, tắc vẫn luôn nhìn cửa phương hướng, ánh mắt sâu kín, thật lâu sau mới thu hồi tầm mắt.</p>
+<p>Hắn hơi cúi đầu, không biết suy nghĩ cái gì, chỉ nhìn chằm chằm chính mình tay xem.</p>
+<p>“Tư Thịnh đại nhân, ngài còn cần thêm sữa bò sao?” Jenna ra tiếng hỏi.</p>
+<p>“Không cần.”</p>
+<p>Tư Thịnh lại ngẩng đầu, thần sắc đã là khôi phục lạnh nhạt.</p>
+<p>“Ngươi đi chiếu cố bệ hạ đi.”</p>
+<p>“Tốt, đại nhân.”</p>
+<p>Jenna buông sữa bò hồ, cung thanh nói, “Kia Tư Thịnh đại nhân thỉnh chậm dùng.”</p>
+<p>Nàng hành lễ, xoay người khi bên miệng lại mang theo mạt cười trộm, như là nhìn thấy gì chuyện thú vị.</p>
+<p>Hứa Tư Lập xem nhẹ hành lễ thủ vệ, sải bước mà đi trở về tẩm cung, chờ đem cửa đóng lại, lúc này mới phát hiện chính mình trên tay còn cầm kia phương khăn tay.</p>
+<p>Màu trắng hàng dệt tơ, khảm từng đợt từng đợt chỉ vàng, cùng người nào đó trên người kia bộ duy nhất tính quân trang phong cách rất giống.</p>
+<p>Hứa Tư Lập phảng phất bị năng tay dường như, bỗng nhiên một cái giật mình, đem khăn tay cấp ném.</p>
+<p>Màu trắng nạm vàng biên khăn tay, cứ như vậy khinh phiêu phiêu mà dừng ở trên mặt đất.</p>
+<p>Nhìn chằm chằm khăn tay nhìn vài giây, Hứa Tư Lập mím môi, phi thường quyết đoán mà dời đi tầm mắt.</p>
+<p>Này không thích hợp.</p>
+<p>Này quá không thích hợp!</p>
+<p>Từ ngày hôm qua ở học viện Nguyên Tố Sư bắt đầu, hắn liền cảm thấy Tư Thịnh gia hỏa này phi thường không thích hợp.</p>
+<p>Vô sự hiến ân cần, phi gian tức đạo, Tư Thịnh khẳng định có cái gì âm mưu!</p>
+<p>Hứa Tư Lập nheo nheo mắt.</p>
+<p>Hắn bắt đầu đặt mình vào hoàn cảnh người khác mà tự hỏi, nếu hắn là Tư Thịnh, cái gì có thể cho hắn phát sinh lớn như vậy thay đổi?</p>
+<p>Cái gì có thể làm hắn như vậy ép dạ cầu toàn, đối một cái nguyên bản muốn giết chết, lại ngoài ý muốn khống chế hắn, đem hắn biến thành con rối, còn khả năng trường kỳ kéo hắn lông dê người tốt như vậy?</p>
+<p>Không chỉ có vẫn luôn phối hợp hành động, hôm nay còn tới bồi hắn ăn cơm, còn làm ra như vậy thân mật hành động?</p>
+<p>Hứa Tư Lập tại chỗ xoay vòng vòng, đi rồi hai vòng lúc sau, hắn bỗng nhiên linh quang chợt lóe, cảm thấy chính mình ngộ.</p>
+<p>Không sai, là tự do!</p>
+<p>Nếu hắn bị người biến thành con rối, khẳng định sẽ tìm mọi cách bài trừ bí thuật, trọng hoạch tự do.</p>
+<p>Mà Tư Thịnh làm con rối, ở quy tắc hạn chế hạ không có biện pháp thương tổn hắn, cho nên chỉ có thể đường cong cứu quốc, trước lấy lòng hắn, lại tìm kiếm phá thuật biện pháp!</p>
+<p>Hứa Tư Lập càng nghĩ càng cảm thấy có đạo lý, cũng rốt cuộc vì Tư Thịnh dị dạng hành vi, tìm được rồi một hợp lý giải thích.</p>
+<p>Hắn đứng yên tại chỗ, màu tím nhạt đôi mắt hơi hơi chớp động lên.</p>
+<p>Nói thật, hắn đối Tư Thịnh tình cảm cũng có chút phức tạp —— dù sao cũng là chính mình thân thủ nuôi lớn người trong sách, nếu là không cảm tình, cũng sẽ không làm trò chơi tổ đem hắn số liệu nhổ trồng lại đây.</p>
+<p>Nhưng hiện tại cái này Tư Thịnh, hắn cũng không phải hắn người trong sách, không phải cái kia hắn một tay mang đại tiểu nô lệ, cũng không phải cái kia coi hắn vì duy nhất trung thành tín đồ.</p>
+<p>Hắn đã bị trò chơi tổ một lần nữa giao cho thân thế tuyến cùng chuyện xưa tuyến, hắn đã ở 《 Tinh Không Kỷ Nguyên 》 trọng hoạch tân sinh.</p>
+<p>Hiện tại hắn, là cái sống sờ sờ người.</p>
+<p>Đi vào thế giới này thời gian thực đoản, nhưng trước mắt tiếp xúc đến mọi người, đều không thể làm Hứa Tư Lập đưa bọn họ đương thành trò chơi trong thế giới không có cảm tình NPC.</p>
+<p>Bất luận là Tư Thịnh, vẫn là Lý Triết Thành, Janice, Tiểu Joan, cũng hoặc là Justin viện trưởng, Chris phó viện trưởng, Tô Lâm, thậm chí còn có ở đi Dong Binh trấn nhỏ thượng, chỉ có gặp mặt một lần Ali mẫu tử.</p>
+<p>Bọn họ đều như vậy chân thật, có từng người hỉ nộ ai nhạc, có từng người tươi sống nhân sinh.</p>
+<p>Mà Tư Thịnh đồng dạng như thế.</p>
+<p>Hắn không hề là 《 Thần Minh Trò Chơi 》, bị kế hoạch sáng tạo ra tới, ở các phương diện đón ý nói hùa người chơi người trong sách.</p>
+<p>Hắn có chính mình cảm xúc, tư tưởng, cái này làm cho hắn không hề tiếp thu khống chế.</p>
+<p>Có lẽ, đây là vốn dĩ dựa theo giả thiết, hẳn là kế thừa ngôi vị hoàng đế cũng sống thọ và chết tại nhà Snow · Roland, sẽ sớm bị hắn giết chết hạ tuyến nguyên nhân đi?</p>
+<p>Hứa Tư Lập nheo lại đôi mắt.</p>
+<p>Nhưng là, này không thể trở thành tha thứ hắn lý do.</p>
+<p>Ít nhất hắn sẽ không bởi vậy mà giải trừ Tư Thịnh trên người con rối thuật, đương nhiên, hắn trước mắt cũng không biết như thế nào giải trừ là được.</p>
+<p>Tư Thịnh phải vì chính mình vận mệnh đấu tranh, hắn cũng đồng dạng phải vì sống sót, sớm ngày cùng người nhà đoàn tụ mà nỗ lực.</p>
+<p>Mà giống Tư Thịnh cường đại như vậy lại không ổn định nhân tố, còn là nên khống chế ở an toàn trong phạm vi.</p>
+<p>Có lẽ, chờ chính mình về sau cường đại rồi, đối Tư Thịnh khó chịu bình phục, sẽ thử phóng hắn tự do đi.</p>
+<p>Hứa Tư Lập nghĩ như vậy, ánh mắt dừng ở đi thông phòng tối vách tường.</p>
+<p>Hiện tại không phải rối rắm này đó thời điểm, khoảng cách giao nộp minh phí còn có 28 thiên, hắn đến tiếp tục vì kiếm lấy một ngàn vạn vũ trụ tệ mà nỗ lực.</p>
+<p>Hắn nhấc chân hướng phòng tối đi đến, chỉ là ở đi ngang qua kia phương khăn tay khi, hắn còn dừng bước chân.</p>
+<p>Thiếu niên thật sâu mà cau mày.</p>
+<p>Tựa hồ trải qua một phen tâm lý giãy giụa, cuối cùng, hắn vẫn là không kiên nhẫn mà nhẹ sách một tiếng, khom lưng đem kia phương khăn tay nhặt lên, khốc khốc mà cất vào trong túi.</p>
+<p>Sau đó, hắn lập tức đi hướng vách tường, mở ra phòng tối môn đi vào.</p>
+<p>“Tinh Tế Liên Minh internet hoan nghênh ngài, ca ca.”</p>
+<p>Mới vừa nằm tiến khoang trò chơi, Tiểu Ngũ manh manh shota âm liền vang lên, làm Hứa Tư Lập nhịn không được cong môi cười.</p>
+<p>“Buổi sáng tốt lành a, Tiểu Ngũ.” Hắn ngữ khí nhẹ nhàng mà chào hỏi.</p>
+<p>“Buổi sáng tốt lành, ca ca.”</p>
+<p>Tiểu Ngũ có nề nếp mà hồi phục nói.</p>
+<p>Hứa Tư Lập mở to mắt, lại lần nữa đi vào giả thuyết phòng bên trong, quen cửa quen nẻo mà đi hướng sô pha, mới vừa ngồi xuống, Tiểu Ngũ thanh âm lại vang lên “Ngài muốn chơi trò chơi……”</p>
+<p>“Không chơi trò chơi.”</p>
+<p>Hứa Tư Lập đánh gãy nó, sợ nó lại đem những cái đó cay đôi mắt game thực tế ảo thả ra, ô nhiễm hắn tầm mắt.</p>
+<p>Hắn nghĩ nghĩ, vẫn là không yên tâm, lại dặn dò nói “Tiểu Ngũ, đem phía trước những cái đó game thực tế ảo đều phân loại đến một cái folder, mệnh danh là ‘ rác rưởi ’.”</p>
+<p>“Về sau cái này folder đồ vật đều không cần tùy tiện thả ra, trừ phi trải qua ta đồng ý.”</p>
+<p>Trực tiếp xóa rớt quá đáng tiếc, rốt cuộc đều là lão hoàng đế dùng nhiều tiền mua, vẫn là lưu lại đi, xem về sau có không có khả năng phế vật lợi dụng.</p>
+<p>“Tốt.”</p>
+<p>Qua hai giây, Tiểu Ngũ ngoan ngoãn mà nói, “Đã phân loại hảo, ca ca.”</p>
+<p>“Thực hảo, cảm ơn Tiểu Ngũ.”</p>
+<p>Tiểu shota thanh âm nãi manh nãi manh, làm Hứa Tư Lập nhịn không được đem Tiểu Ngũ thật sự đương thành tiểu hài tử, cùng nó nói chuyện cũng cảm thấy nhẹ nhàng vui sướng.</p>
+<p>“Tiểu Ngũ, mở ra tinh khúc võng, ta muốn nhìn hậu trường.”</p>
+<p>“Tốt, thỉnh chờ một lát.”</p>
+<p>Thực mau, một đạo trong suốt quang bình xuất hiện ở Hứa Tư Lập trước mặt, Tiểu Ngũ thanh âm lại vang lên.</p>
+<p>“Đã vì ngài mở ra tinh khúc võng hậu trường, ca ca.”</p>
+<p>Hứa Tư Lập gật gật đầu, sau đó ở quang bình thượng thao tác lên —— ở giả thuyết trong phòng, hắn có thể trực tiếp chạm đến quang bình.</p>
+<p>Hắn mở ra ngày hôm qua thượng truyền kia trương album, xem xét lên.</p>
+<p>Nói thật, Hứa Tư Lập đã khẩn trương, lại mang theo điểm tiểu chờ mong.</p>
+<p>Tuy rằng vẫn luôn nói hắn album tại đây đại vũ trụ số liệu thời đại, ném vào Tinh Võng phỏng chừng liền bọt nước đều kích không dậy nổi, nhưng hắn lại không khỏi tồn tại may mắn tâm lý.</p>
+<p>Vạn nhất đâu?</p>
+<p>Liền xuyên qua tiến trò chơi đều làm hắn đụng phải, vạn nhất liền bạo hỏa đâu?</p>
+<p>Chỉ là đương nhìn đến hậu trường số liệu thời điểm, hắn không khỏi cười khổ một chút.</p>
+<p>Thất vọng, lại có chút thoải mái.</p>
+<p>Tổng truyền phát tin lượng 10</p>
+<p>《 phản quang 》 2</p>
+<p>《 Tinh Không 》 2</p>
+<p>《 thiêu đốt 》 2</p>
+<p>《 Nở Rộ 》 2</p>
+<p>《 Roland Ngủ Ngon Khúc 》 2</p>
+<p>Cả đêm thời gian, chỉnh trương album chỉ có 10 cái truyền phát tin lượng, năm bài hát phi thường đều đều, đều các cống hiến hai cái.</p>
+<p>Nói cách khác, rất lớn khả năng chỉ có hai người điểm tiến vào, sau đó mỗi bài hát đều thí nghe xong một lần.</p>
+<p>Bất quá làm Hứa Tư Lập ngoài ý muốn chính là, hắn đặt mua nhân số thế nhưng cũng có 2, vốn dĩ chỉ có linh ngạch trống, giờ phút này biến thành 1.10.</p>
+<p>Tinh khúc võng mỗi ca khúc, đều có một lần miễn phí thí nghe cơ hội, nếu muốn tiếp tục nghe nói, phải trả phí.</p>
+<p>Càng đứng đầu ca khúc, thu phí càng cao.</p>
+<p>Mà một ít không có gì nhiệt độ tân ca, liền rất tiện nghi, một cái vũ trụ tệ liền có thể mua ba bốn đầu ——</p>
+<p>Đương nhiên, đại đa số chỉ có một tháng thời hạn có hiệu lực, đã đến giờ lúc sau, có thể lựa chọn nạp phí bổ sung, chỉ là khả năng giá cả sẽ tăng lên.</p>
+<p>Cứ như vậy, luôn có thích nghe ca lại ham món lợi nhỏ người, không đi lựa chọn đứng đầu ca khúc, mà là ở tân ca trong kho đào ca.</p>
+<p>Chờ này đó dễ nghe tân ca trổ hết tài năng, giá cả tăng lên sau, bọn họ lại sẽ tiếp tục liên tục chiến đấu ở các chiến trường tân ca, tinh khúc trên mạng cũng có chuyên môn bảng đơn, phương tiện như vậy người nghe đào ca.</p>
+<p>Như vậy chế độ vì tân nhân cung cấp xuất đầu cơ hội, cũng là tinh khúc võng có thể làm to làm lớn nguyên nhân chi nhất.</p>
+<p>Hứa Tư Lập hồi ức Tiểu Ngũ cho hắn phổ cập khoa học, lại mở ra đặt mua minh nhìn kỹ xem.</p>
+<p>Hắn một chỉnh trương album năm bài hát, chỉ cần 1 cái vũ trụ tệ, đơn độc một đầu còn lại là 0.25.</p>
+<p>Nhưng bởi vì 《 Roland Ngủ Ngon Khúc 》 thị phi nguyên sang ca khúc, cho nên chỉ có thể thu 0.1 vũ trụ tệ biểu diễn phí.</p>
+<p>Ngày hôm qua có người đặt hàng hắn một chỉnh trương album, còn có một cái chỉ mua một đầu, chính là kia đầu 《 Roland Ngủ Ngon Khúc 》.</p>
+<p>Như thế làm Hứa Tư Lập có chút ngoài ý muốn.</p>
+<p>Hơn nữa, hắn còn thấy được một cái bình luận, là tối hôm qua hơn mười một giờ thời điểm lưu lại.</p>
+<p>【 Ái Đào Ca Đào Ca 】</p>
+<p>“Ngón giọng không thể chê, trước bốn đầu rất có Hứa Tư Lập cổ điển phong cách, nhưng cảm giác làm từ soạn nhạc phương diện vẫn là thiếu một chút hỏa hậu, nhưng thật ra cuối cùng một đầu dân dao làm người kinh hỉ, nghe có loại yên lặng tường hòa cảm giác, phi thường thích hợp đêm khuya tĩnh lặng thời điểm nghe.”</p>
+<p>“Rất tuyệt một trương album, ta sẽ liên tục chú ý ngươi, ps Roland bệ hạ, cái này nghệ danh thật là quá trung nhị hhhh”</p>
+<p>Hứa Tư Lập sửng sốt một chút, hắn nhưng thật ra không chú ý nghệ danh sự, trực tiếp liền dùng trên Tinh Võng lão hoàng đế ID.</p>
+<p>Hắn vội vàng nói “Tiểu Ngũ, ta tưởng sửa cái danh.”</p>
+<p>“Tinh Võng id có không thể lặp lại tính, sửa chữa một lần yêu cầu 100 vũ trụ tệ, ngạch trống không đủ, vô pháp sửa chữa.”</p>
+<p>Hứa Tư Lập có chút buồn bực, lại hỏi “Kia tinh khúc trên mạng nghệ danh đâu?”</p>
+<p>“Tinh tế khúc kho võng id cam chịu cùng Tinh Võng nhất trí, sửa chữa yêu cầu 1000 vũ trụ tệ, ca ca.”</p>
+<p>“Như thế nào tinh khúc võng còn so Tinh Võng muốn quý?”</p>
+<p>“Ca ca, đây là quy định.”</p>
+<p>Hứa Tư Lập không khỏi thở dài, một phân tiền làm khó anh hùng hán, huống chi là một ngàn khối?</p>
+<p>Tính, trung nhị liền trung nhị đi.</p>
+<p>Hắn đóng cửa hậu trường, dù sao liếc mắt một cái xem xong, cũng không gì đẹp.</p>
+<p>“Ca ca, ngươi là ở khổ sở sao?”</p>
+<p>Lúc này, Tiểu Ngũ mềm mụp thanh âm vang lên.</p>
+<p>Hứa Tư Lập cười một chút, lắc đầu, “Sớm có đoán trước sự tình, đảo cũng không tính khổ sở.”</p>
+<p>“Tiểu Ngũ, ngươi tiếp tục giúp ta lưu ý, xem có hay không có thể ở ngắn hạn nội kiếm được rất nhiều vũ trụ tệ tin tức, mức không hạn định ở một ngàn vạn, mấy chục vạn mấy trăm vạn cũng có thể.”</p>
+<p>“Truy nã treo giải thưởng không được, còn có rời đi Escher tinh cũng không được……”</p>
+<p>Hứa Tư Lập bày ra mấy cái điều kiện.</p>
+<p>Kỳ thật hạn chế đến như vậy chết, muốn tìm được phù hợp yêu cầu thật sự rất khó.</p>
+<p>Hắn nghĩ nghĩ lại hỏi “Tiểu Ngũ, cùng loại phúc lợi vé số hoạt động, ngươi cũng giúp ta lưu ý một chút.”</p>
+<p>“Đang ở vì ngài tuần tra, thỉnh chờ một lát.”</p>
+<p>“Tuần tra kết quả như sau, đã vì ngài sàng chọn ra tối ưu giải.”</p>
+<p>“Frenda tinh tế liên bang phúc lợi vé số, khởi mua ngạch ở Tinh Tế Liên Minh bên trong thấp nhất, chỉ cần 2 vũ trụ tệ liền nhưng mua sắm một trương, mỗi tuần một mở thưởng, trước mặt giải nhất thưởng trì đã tích lũy 4280 vạn vũ trụ tệ.”</p>
+<p>Hứa Tư Lập chớp chớp mắt, sau đó lại lần nữa cười khổ.</p>
+<p>Hắn hiện tại tài khoản ngạch trống, liền một trương vé số đều mua không nổi đâu.</p>
+<p>“Như vậy đi Tiểu Ngũ, nếu ta tài khoản có thừa ngạch, ngươi liền mỗi kỳ giúp ta mua một trương phúc lợi vé số, con số tùy cơ liền hảo.”</p>
+<p>“Tốt, ca ca.”</p>
+<p>Tuy rằng không ôm hy vọng, nhưng không mua nói liền một chút hy vọng cũng không có, cho nên liền mua thử thời vận đi.</p>
+<p>“Hảo đi, làm ta ngẫm lại kế tiếp muốn làm gì?”</p>
+<p>Hứa Tư Lập sau này nằm liệt ở trên sô pha.</p>
+<p>“Đến làm người đem Hắc Cốc hạt giống đưa cho Tô Lâm, xem hắn có thể hay không đào tạo ra Tuyết Cốc tới, ngô……”</p>
+<p>Nghĩ đến cái gì, Hứa Tư Lập lại lần nữa ngồi dậy.</p>
+<p>“Tiểu Ngũ, giúp ta tra một chút Hắc Cốc cùng Tuyết Cốc tương quan tư liệu, Tuyết Cốc phỏng chừng tương đối khó tra, nhưng Hắc Cốc làm thường thấy cây lương thực, gieo trồng phương pháp, sở cần hoàn cảnh hẳn là có có sẵn tư liệu.”</p>
+<p>“Sau đó còn có một ít phòng ốc kiến tạo bản vẽ, không cần quá cao cấp, bình thường nhà gỗ cùng gạch phòng là được.”</p>
+<p>“Tốt, ca ca.” Tiểu Ngũ lại lần nữa vì hắn sưu tập khởi tư liệu tới.</p>
+<p>“Ngươi có thể đem tư liệu truyền tới ta thông tin nghi thượng sao?”</p>
+<p>“Lấy ca ca thông tin nghi kích cỡ, chỉ có thể từ phần ngoài thiết bị tiến hành số liệu đạo ra, vô pháp trực tiếp đạo ra.”</p>
+<p>“Vậy được rồi, phiền toái ngươi, Tiểu Ngũ.”</p>
+<p>“Không phiền toái, ca ca.”</p>
+<p>Không biết có phải hay không Tiểu Ngũ shota âm quá mức nhuyễn manh, Hứa Tư Lập nghe, tổng cảm thấy nó giống như thực vui vẻ bộ dáng.</p>
+<p>Cái này làm cho hắn cảm giác cũng nhẹ nhàng không ít.</p>
+<p>Đi bước một từ từ tới đi, tổng có thể nghĩ đến biện pháp.</p>
+<p>Hứa Tư Lập ở giả thuyết trong phòng ngồi sẽ, chờ Tiểu Ngũ giúp hắn tra hảo tư liệu, liền rời khỏi tẩm nhập hình thức, căn cứ chỉ dẫn, đem tư liệu từ khoang trò chơi dẫn vào thông tin nghi trung.</p>
+<p>Truyền tốc độ thực mau, mười giây thu phục.</p>
+<p>“Leng keng ——”</p>
+<p>Vừa lúc tin tức nhắc nhở âm vang lên, có người đã phát tin tức cho hắn.</p>
+<p>Hứa Tư Lập quét mắt, là Janice chia cho hắn, nhắc nhở hắn thủ tịch chấp chính quan Ôn Quý Sơn cầu kiến.</p>
+<p>Ôn Quý Sơn?</p>
+<p>Nhìn tên này, Hứa Tư Lập nhíu nhíu mày.</p>
+<p>Hắn cảm giác có chút quen mắt, cũng không phải bởi vì Snow · Roland ký ức, mà là giống như ở địa phương khác nhìn đến quá……</p>
+<p>Hắn hồi phục Janice, sau đó đi ra phòng tối.</p>
+<p>Tẩm cung ngoại, tĩnh dưỡng cả đêm, đã hoàn toàn khang phục Janice đang ở chờ hắn.</p>
+<p>Ở nhìn đến Hứa Tư Lập đi ra khi, nàng ánh mắt hơi hơi có chút dị dạng.</p>
+<p>Bệ hạ……</p>
+<p>Giống như trường cao? Hơi thở cũng trở nên cường đại rất nhiều.</p>
+<p>Nàng quan sát Hứa Tư Lập, chờ xác định không phải ảo giác, không khỏi biểu lộ vài phần vui sướng.</p>
+<p>Ngày hôm qua ở đi trấn nhỏ trên đường, nàng liền nhìn đến bệ hạ ngộ đạo tình cảnh, nghĩ đến đêm qua, bệ hạ lại ngộ đạo!</p>
+<p>Còn có so này càng lệnh người cao hứng sao?</p>
+<p>“Bệ hạ, một ngày tốt lành.” Janice che giấu vui sướng, cung kính mà hành lễ.</p>
+<p>“Janice, xem ra thân thể của ngươi đã khôi phục.”</p>
+<p>Hứa Tư Lập cho nàng ném cái thấy rõ thuật, nhìn đến nàng các hạng số liệu đã hồi mãn, có chút vừa lòng gật gật đầu.</p>
+<p>“Đúng vậy, cảm tạ bệ hạ quan tâm.”</p>
+<p>Janice nở nụ cười, màu đỏ trong mắt tràn đầy hiền từ cùng vui mừng, xem đến Hứa Tư Lập thập phần không được tự nhiên.</p>
+<p>Hắn vội vàng nói “Đi thôi, đi xem Ôn Quý Sơn.”</p>
+<p>Hứa Tư Lập hướng đại điện phương hướng đi đến, Janice theo sát sau đó, mà vẫn luôn làm phông nền hộ vệ trưởng Lý Triết Thành cũng theo qua đi.</p>
+<p>Đại điện bên trong.</p>
+<p>Tư Thịnh đứng ở điện tiền, lẳng lặng nhìn bậc thang vương tọa, ai cũng không thể nhìn ra hắn nghĩ đến cái gì.</p>
+<p>Ở bên cạnh hắn, còn đứng đạo cao gầy mảnh khảnh thân ảnh, người nọ tóc xám mắt xanh lục, mang một bộ viên khung mắt kính, màu da tái nhợt như tờ giấy, môi sắc cũng thập phần nhạt nhẽo.</p>
+<p>Giờ phút này, hắn nhìn dưới chân ao hãm vỡ vụn gạch, cảm thấy hứng thú mà nghiên cứu vài lần.</p>
+<p>Lại nghiêng đầu nhìn về phía Tư Thịnh, thấy hắn nhìn chằm chằm vương tọa đôi mắt không chớp mắt bộ dáng, không khỏi xả hạ khóe miệng.</p>
+<p>“Xem ra Tư Thịnh đại nhân, rốt cuộc nghĩ kỹ?” Ôn Quý Sơn đạm thanh nói, “Ta tưởng, lấy ngài thực lực, ngồi trên cái kia vị trí…… Cũng là danh xứng với thật.”</p>
+<p>Tư Thịnh thu hồi tầm mắt, lạnh nhạt nói “Ôn Quý Sơn, nói cẩn thận.”</p>
+<p>Ôn Quý Sơn nhún vai, vừa định tiếp tục nói cái gì, liền nghe được bên ngoài có tiếng bước chân vang lên.</p>
+<p>Hắn trong nháy mắt thu liễm tươi cười, quy củ mà sườn đến một bên, nhìn tiểu hoàng đế ở thị nữ cùng hộ vệ vây quanh hạ, từ bên ngoài đi đến.</p>
+<p>Chờ tiểu hoàng đế ngồi trên vương tọa, hắn mới cung kính hành lễ.</p>
+<p>Bất quá lệnh Ôn Quý Sơn ngoài ý muốn chính là, Tư Thịnh thế nhưng cũng quy quy củ củ mà hành lễ, hơn nữa nhìn dáng vẻ, tựa hồ không có nửa điểm miễn cưỡng ý tứ.</p>
+<p>Hắn ánh mắt lập loè, vẫn chưa nhiều lời.</p>
+<p>Hứa Tư Lập nhàn nhạt liếc Tư Thịnh liếc mắt một cái, liền không có lại nhiều quản hắn, màu tím nhạt đôi mắt nhìn từ trên xuống dưới Ôn Quý Sơn.</p>
+<p>Chờ nhìn đến bản nhân, hắn mới có chút bừng tỉnh.</p>
+<p>Hắn sở dĩ cảm thấy Ôn Quý Sơn quen thuộc, là bởi vì —— hắn cũng là 《 Thần Minh Trò Chơi 》 thẻ bài!</p>
+<p>Ôn Quý Sơn, hẳn là cũng coi như nhân khí nhân vật chi nhất.</p>
+<p>Rốt cuộc thích mang mắt kính phúc hắc văn nhã bại hoại, là rất có thị trường, ăn này khoản Otome người chơi không ít.</p>
+<p>Bất quá đối với Hứa Tư Lập mà nói, trừ bỏ Tư Thịnh ngoại, hắn đối mặt khác thẻ bài chủ yếu suy xét vẫn là thực dụng tính, tỷ như Ôn Quý Sơn, ở trò chơi giai đoạn trước chính là thực dùng tốt một trương bài.</p>
+<p>Bởi vì hắn am hiểu ——</p>
+<p>Quản lý tài sản!</p>
+<p>Chỉ cần mang lên hắn, chiến trường kết toán khen thưởng có thể ít nhất tăng lên gấp đôi, hơn nữa này trương bài còn có thể dùng để kinh doanh, khai tiệm bánh ngọt tiền lời sẽ thực không tồi.</p>
+<p>Đối giai đoạn trước tích lũy tài chính mà nói, là trọng yếu phi thường.</p>
+<p>Mà công chúa muốn trở thành quốc vương, tài phú cũng là cân nhắc tiêu chuẩn chi nhất.</p>
+<p>Bất quá Ôn Quý Sơn là cái cọng bún sức chiến đấu bằng 5, tới rồi trung hậu kỳ tiến vào một ít cao cấp chiến trường, mang theo hắn thực dễ dàng thất bại.</p>
+<p>Lần nọ ở hắn liên lụy hạ, suýt nữa phá thắng liên tiếp kỷ lục lúc sau, Hứa Tư Lập dưới sự tức giận, liền đem hắn ném trong một góc ăn hôi.</p>
+<p>Dù sao hắn lại không thiếu tiền, yêu cầu tiền trực tiếp khắc liền hảo.</p>
+<p>Nhưng là hiện tại……</p>
+<p>Hắn thiếu a!</p>
+<p>Hắn quá yêu cầu sẽ kiếm tiền nhân tài!</p>
+<p>Hứa Tư Lập ánh mắt sắc bén mà nhìn chằm chằm Ôn Quý Sơn, một cái thấy rõ thuật trực tiếp ném qua đi.</p>
+<p>【 Ôn Quý Sơn 】</p>
+<p>Thân phận Đặc thù tài năng NPC</p>
+<p>Cá nhân cấp bậc lv5</p>
+<p>Lượng máu 8000 8000</p>
+<p>Nguyên tố thân hòa Vô</p>
+<p>Đặc thù tài năng Quản lý tài sản ( tham gia kinh doanh loại hoạt động, doanh thu đem tăng lên , trong đó, kinh doanh tiệm bánh ngọt khi, doanh thu đem tăng lên 1 )</p>
+<p>Đặc thù tài năng NPC?</p>
+<p>Hứa Tư Lập chớp chớp mắt, hắn trăm triệu không nghĩ tới, thế nhưng còn có như vậy kinh hỉ.</p>
+<p>Vị này thủ tịch chấp chính quan, thật đúng là một nhân tài!</p>
+<p>Hắn không khỏi ở trong đầu tìm kiếm về Ôn Quý Sơn tư liệu.</p>
+<p>Ở Snow · Roland hữu hạn nhận tri trung, vị này thủ tịch chấp hành quan thực tuổi trẻ, năm nay mới 28 tuổi, hai năm trước mới đi nhậm chức.</p>
+<p>Tuy rằng tuổi không lớn, nhưng hắn lại làm được thực hảo.</p>
+<p>Bởi vì ba năm trước đây thú triều, Roland đế quốc nguyên khí đại thương, có thể nhanh như vậy khôi phục lại, vị này thủ tịch chấp chính quan tuyệt đối công không thể không.</p>
+<p>Đại khái cũng là vì hắn quan hệ, lão hoàng đế mới có thể lãng đến nhân bệnh qua đời, cuối cùng đem cái này cục diện rối rắm ném cho vẫn luôn không chịu coi trọng con thứ ba đi.</p>
+<p>Hứa Tư Lập cân nhắc, càng xem Ôn Quý Sơn, càng cảm thấy vừa lòng, đối lập lên, đồng dạng làm thẻ bài xuất thân Lý Triết Thành, liền quá mức bình thường.</p>
+<p>Tuy rằng cũng là nhị tinh chiến lực, nhưng ở Tư Thịnh đối lập hạ, chiến lực đã là bị giây thành tra, lại không có đặc thù tài năng, đại khái trừ bỏ trung thành ngoại, liền không có khác ưu điểm.</p>
+<p>Nghĩ vậy, Hứa Tư Lập có chút ghét bỏ mà nhìn Lý Triết Thành liếc mắt một cái, đem vị này hộ vệ trưởng xem đến khó tả kỳ diệu.</p>
+<p>Làm sao vậy đây là? Tổng cảm thấy bệ hạ thực ghét bỏ hắn dường như……</p>
+<p>Lý Triết Thành không khỏi đứng thẳng thân thể, đồng thời ở trong lòng kiểm điểm, hắn nơi nào lại đắc tội vị này tiểu bệ hạ sao?</p>
+<p>Mà Hứa Tư Lập đã lại lần nữa nhìn về phía Ôn Quý Sơn.</p>
+<p>Gia hỏa này xuất hiện, cho hắn mở ra một cái tân ý nghĩ.</p>
+<p>Trừ bỏ hắn ở ngoài, có phải hay không còn có mặt khác đặc thù tài năng NPC đâu? Nếu là đem bọn họ đều khai quật ra tới, tuyệt đối là một đại trợ lực a!</p>
+<p>Nghĩ đến đây, Hứa Tư Lập đôi mắt tỏa sáng.</p>
+<p>Nhìn Ôn Quý Sơn ánh mắt càng thêm ôn hòa, cuối cùng thậm chí hơi hơi cong môi, lộ ra một tia cười nhạt tới.</p>
+<p>Xinh đẹp đến giống tinh linh giống nhau thiếu niên đế vương, vốn dĩ lạnh mặt, giờ phút này bỗng nhiên nhoẻn miệng cười, liền như là băng tuyết tan rã, làm người nhìn không khỏi đầu quả tim khẽ run.</p>
+<p>Ôn Quý Sơn bên người, vẫn luôn biểu hiện đến lãnh đạm trầm mặc Tư Thịnh, lúc này cũng nâng nâng mắt, nhìn tiểu hoàng đế trên mặt tươi cười, môi mỏng hơi hơi một nhấp.</p>
+<p>Mà Ôn Quý Sơn, đối mặt tiểu hoàng đế đột nhiên mặt giãn ra, cũng là quơ quơ thần, bất quá thực mau lại khôi phục lại.</p>
+<p>Hắn hơi hơi khom người, tư thái cung kính, lại cho người ta một loại khó tả cao ngạo cảm giác.</p>
+<p>“Thần hôm nay cầu kiến bệ hạ, vì chính là ngày hôm qua Dong Binh trấn nhỏ việc.” Ôn Quý Sơn nói, “Thần quan khán tiếp sóng, biết bệ hạ hứa hẹn trấn nhỏ trấn trưởng, sắp chi ngân sách trùng kiến trấn nhỏ?”</p>
+<p>Hứa Tư Lập nhìn hắn, trên mặt tươi cười phai nhạt xuống dưới.</p>
+<p>“Không sai.” Hắn nhẹ giọng nói.</p>
+<p>Ôn Quý Sơn hơi nhíu mi, thái độ vẫn như cũ kính cẩn, nhưng mà nói ra nói lại không chút khách khí.</p>
+<p>“Thần cho rằng, chi ngân sách trùng kiến việc, có lẽ hẳn là tạm hoãn một vài, Dong Binh trấn nhỏ đều không phải là yếu địa, chỉ cần an trí nạn dân có thể, tân trang trùng kiến……”</p>
+<p>“Thần cho rằng, cũng không tất yếu.”</p>
+<p>Hứa Tư Lập nhìn chằm chằm hắn, kiên nhẫn chờ hắn nói xong, một khuôn mặt đã một lần nữa lạnh xuống dưới.</p>
+<p>Quân thần giằng co.</p>
+<p>Đại điện trung, bầu không khí bỗng nhiên trở nên khẩn trương lên.</p>
+<p>Mà một bên Tư Thịnh, giờ phút này lại là yên lặng dời đi tầm mắt, vốn dĩ nhấp chặt môi tuyến, hơi thả lỏng lại.</p>
+<p>Thậm chí, có chút cong lên xu thế……</p>
+<p>Tác giả có lời muốn nói Tư Thịnh Hừ, xứng đáng! Lão bà cũng chưa đối ta cười quá T^T</p>
+<p>Hứa Tư Lập = =</p>
+<p>——————————————</p>
+<p>Ngượng ngùng, ta quên hôm nay rút thăm trúng thưởng, viết xong liền đã phát không chú ý thời gian…… Bất quá khen thưởng là phát, chúc mừng 50 cái toàn đính tiểu khả ái, sau đó này chương trước 100 nhắn lại mỗi người phát cái tiểu bao lì xì đi, xin lỗi 【 khom lưng 】</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong24.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong26.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "than-thu-nuoi-lon-nguoi-trong-sach-muon-cuoi-ta";
+const NOVEL_TITLE = "Thân thủ nuôi lớn người trong sách muốn cưới ta";
+const CHAPTER_TITLE = "Chương 25";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

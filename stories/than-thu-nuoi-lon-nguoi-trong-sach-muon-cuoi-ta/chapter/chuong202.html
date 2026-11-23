@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 202</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Thân thủ nuôi lớn người trong sách muốn cưới ta
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 202</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong201.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong203.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Nhị đoàn yêu cầu chi viện, quang dũ sư tiểu đội đuổi kịp!”</p>
+<p>“Thổ hệ chú ý gia cố tường thành, các ngươi nhiệm vụ chỉ có một cái, đó chính là đem tường cho ta đứng vững! Kiên trì đến giữa trưa, giữa trưa sẽ có người thượng tuyến thay đổi các ngươi!”</p>
+<p>“Phía sau pháp sư không cần hoa thủy, kịp thời bổ lam bảo trì trạng thái, này không cần ta lại nhắc nhở đi?”</p>
+<p>“Phát ra không cần phân tán, tập trung hỏa lực!”</p>
+<p>Khinh Nhan ở kênh đội ngũ khàn cả giọng mà kêu.</p>
+<p>Liên tục chỉ huy gần 40 nhiều giờ, cho dù thân thể thượng không cảm giác được mỏi mệt, nàng tinh thần cũng mau ăn không tiêu.</p>
+<p>“Khinh Nhan, ngươi trước đứng vững, ta muốn offline, sẽ mau chóng gấp trở về.”</p>
+<p>Lúc này, Lâm Mục thanh âm từ chỉ huy tiểu đội kênh trung vang lên, nghe được Khinh Nhan không khỏi chửi nhỏ một tiếng.</p>
+<p>Làm đối thủ cạnh tranh, hai người ngày thường không quá đối phó, nhưng tối hôm qua Lâm Mục thượng tuyến sau, cũng xác thật vì nàng giảm bớt không ít áp lực.</p>
+<p>Mà hiện tại, ở có thể sử dụng người chơi càng ngày càng ít thời khắc mấu chốt, gia hỏa này thế nhưng cũng muốn đi rồi?</p>
+<p>Khinh Nhan tức muốn hộc máu.</p>
+<p>Tình huống hiện tại cùng ngay từ đầu ít người khi hoàn toàn bất đồng, đánh đoàn nhất chú trọng khí thế, ngươi người càng đánh càng thiếu, càng đánh càng không kính, thực dễ dàng tạo thành sĩ khí sụp đổ, cuối cùng thất bại thảm hại!</p>
+<p>Đạo lý này, nàng không tin chỉ huy kinh nghiệm phong phú Lâm Mục sẽ không hiểu.</p>
+<p>“Ngươi liền không thể xin nghỉ sao?” Khinh Nhan nhịn không được rống hắn.</p>
+<p>Lâm Mục xin lỗi nói “Hai ngày này xác thật có việc, xin lỗi, ngươi lại kiên trì một chút, ta vừa mới nhìn đến tân thông cáo.”</p>
+<p>“Cái gì tân thông cáo?”</p>
+<p>“24 giờ sau, trò chơi thời gian cùng hiện thực sẽ điều chỉnh vì 1 6, cũng chính là trò chơi 1 giờ, hiện thực 6 giờ.”</p>
+<p>Lâm Mục cùng nàng giải thích nói “Đến lúc đó, liền sẽ không xuất hiện đại bộ đội thời gian dài không ở tình huống.”</p>
+<p>Đương nhiên, cái này thi thố cũng chỉ có thể khởi đến tạm thời giảm bớt tác dụng mà thôi.</p>
+<p>Giả thiết đi làm tộc học sinh đảng, mỗi ngày có thể có một nửa thời gian ở Tinh Không Kỷ Nguyên, kia trong trò chơi cũng sẽ mỗi 2 giờ xuất hiện một số đông người không ở trạng huống.</p>
+<p>Cho nên, cái này thông cáo quan trọng nhất một chút vẫn là ——</p>
+<p>“Hiện thực một tháng, cũng chính là trò chơi thời gian sáu ngày lúc sau, đem tân tăng 100 vạn người chơi, chỉ cần chúng ta kiên trì cho đến lúc này, thắng mặt liền sẽ tăng nhiều.”</p>
+<p>Khinh Nhan lại một chút cũng không cảm giác vui mừng.</p>
+<p>“Ngươi mẹ nó chính là tưởng nói này thú triều đến liên tục một vòng thời gian? Ngươi khai cái gì quốc tế vui đùa?”</p>
+<p>“Khinh Nhan, này sẽ là một hồi đánh lâu dài.”</p>
+<p>Lâm Mục kiên nhẫn cùng nàng phân tích nói, “Lần này thú triều như vậy đột nhiên, giai đoạn trước không có một chút dự triệu, hiển nhiên cũng ra ngoài phía chính phủ đoán trước, hơn nữa lần này thú triều tính nguy hiểm cực cường, nếu không phía chính phủ sẽ không áp dụng như vậy khẩn cấp thi thố.”</p>
+<p>“Mà trò chơi thời gian bốn năm trước, liền đã trải qua một hồi thập phần nghiêm trọng thú triều, liên tục thời gian ở một tháng trở lên.”</p>
+<p>“Ta xem qua NPC lưu lại một ít hình ảnh tư liệu, cùng lần này quy mô không sai biệt lắm, cho nên chúng ta phải làm tốt chuẩn bị tâm lý.”</p>
+<p>Khinh Nhan rất tưởng nói hắn là ở hồ ngôn loạn ngữ, nhưng Lâm Mục nói nghe đi lên lại đích xác thập phần có đạo lý.</p>
+<p>Nàng cảm giác áp lực lớn hơn nữa.</p>
+<p>Khinh Nhan hít sâu một hơi, thấp giọng nói “Hành đi, chạy nhanh lăn, đi nhanh về nhanh!”</p>
+<p>“Ân, ta đại khái buổi tối 7 giờ trở về, ngươi kiên trì một chút.”</p>
+<p>Nói xong, Lâm Mục liền hạ tuyến đi.</p>
+<p>Khinh Nhan thấp thấp mà mắng một tiếng, lại đầu nhập vào chiến đấu bên trong.</p>
+<p>Trong trò chơi thân thiết nóng bỏng, trên diễn đàn, về tân thông cáo đàm luận cũng ở hừng hực khí thế mà triển khai.</p>
+<p>Trò chơi thời gian cùng hiện thực tốc độ dòng chảy thời gian điều chỉnh, này lợi và hại đã bị người lặp lại tham thảo, mà nói đàn trung đại bộ phận người vẫn là duy trì.</p>
+<p>Đặc biệt là những cái đó còn đang chờ trò chơi mũ giáp cùng khoang trò chơi vân các người chơi.</p>
+<p>Tuy rằng hiện thực chờ đợi thời gian là giống nhau, nhưng chờ đến bọn họ tiến trò chơi thời điểm, liền sẽ không bị phía trước người chơi ném xuống như vậy xa!</p>
+<p>Phát sóng trực tiếp mọi người đều nhìn, thủ thành là vất vả, nhưng đạt được tiền lời cũng là khả quan.</p>
+<p>Liền này không đến một ngày thời gian, trong trò chơi người chơi cấp bậc liền ở nguyên lai cơ sở thượng, phổ biến tăng lên hai đến tam cấp, mà những cái đó đẳng cấp cao người chơi cũng phổ biến thăng một bậc!</p>
+<p>Lớn như vậy biên độ tăng lên, nếu bọn họ bỏ lỡ này một đợt, liền đem rất khó lại đuổi theo, cho nên cái này quyết sách đối bọn họ mà nói, không chỉ có không có ảnh hưởng, ngược lại còn có thể có lợi!</p>
+<p>Cho nên loại chuyện tốt này, như thế nào có thể không duy trì đâu?</p>
+<p>Phía chính phủ mới vừa tung ra 100 vạn cái trò chơi mũ giáp danh ngạch, gần nửa ngày thời gian đã bị đoạt không, sở hữu chi trả thành công người chơi, đem ở một tháng sau thu được vật thật.</p>
+<p>Mà khoang trò chơi đơn đặt hàng không giảm phản tăng, càng không có xuất hiện lui đính tình huống ——</p>
+<p>Cùng trò chơi mũ giáp bất đồng, khoang trò chơi tiếp thu đặt trước, ai đến cũng không cự tuyệt, chính là yêu cầu chi trả kếch xù tiền trả trước.</p>
+<p>Này đủ để nhìn ra tới Tinh Không Kỷ Nguyên hỏa bạo.</p>
+<p>Đến nỗi đã có được trò chơi thiết bị các người chơi, ngay từ đầu phản ứng rất lớn, nhưng cuối cùng đang xem quá các loại phân tích sau, cũng tiếp nhận rồi như vậy thi thố.</p>
+<p>Rốt cuộc không phải mỗi người đều như vậy nhàn, có thể suốt ngày đều ở đãi ở trong trò chơi.</p>
+<p>Bọn họ không thể không đi làm, học tập, tiến hành các loại xã giao hoạt động, nhưng bọn hắn trong lòng cũng quan tâm trò chơi.</p>
+<p>Chỉ là khi bọn hắn thật vất vả kết thúc hành trình, gấp rống rống mà gấp trở về, lại phát hiện chiến đều đã đánh xong, thậm chí còn đánh thua khi, cái loại cảm giác này ai thể nghiệm quá ai biết.</p>
+<p>Lúc này, bọn họ thậm chí hy vọng trò chơi có thể tạm dừng, chờ bọn họ trở về lại đánh, nhưng này rõ ràng là không hiện thực.</p>
+<p>Tuy rằng tốc độ dòng chảy thời gian biến thành 1 6, này ý nghĩa bọn họ trong trò chơi đãi thời gian, ở cảm giác thượng biến thiếu, nhưng nguyên bản chính là lợi dụng giấc ngủ thời gian tiến hành trò chơi.</p>
+<p>Nếu có thể mượn này đánh thắng trận này thủ thành chiến, cũng vẫn có thể xem là một loại sách lược, đối với người chơi mà nói, chỉ cần có thể đánh thắng, áp dụng cái gì chiến thuật kia đều là hợp lý.</p>
+<p>Huống hồ, thông cáo thượng cũng viết “Tạm thời” hai chữ, mọi người đều suy đoán, phỏng chừng chờ trò chơi mũ giáp đem bán thời điểm liền sẽ điều chỉnh đã trở lại.</p>
+<p>Rất nhiều người cũng không khỏi phỏng đoán, nếu công ty game có thể làm được làm tư duy giảm bớt, đó có phải hay không cũng có thể làm tư duy gia tốc?</p>
+<p>Đến lúc đó hiện thực 1 giờ, trò chơi 6 giờ, kia không được sảng bạo? Thậm chí có thể áp dụng ban ngày tốc độ chảy biến chậm, buổi tối biến mau sách lược.</p>
+<p>Như vậy đã không cần lo lắng ban ngày không ở trò chơi, theo không kịp trò chơi tiến trình, cũng có thể hưởng thụ buổi tối nhiều ra tới 6 lần giải trí thời gian!</p>
+<p>Nhìn đến như vậy kiến nghị, trò chơi tổ cũng chỉ có thể cười khổ.</p>
+<p>Tuy rằng thí nghiệm số liệu đi lên xem, tạm thời không có phát hiện vấn đề, loại này tư duy biến chậm biến mau điều tiết, bọn họ căn bản không nắm chắc hoàn toàn sẽ không đối nhân thể tạo thành thương tổn.</p>
+<p>Càng đừng nói, vẫn là cùng trong vòng một ngày tiến hành như vậy điều tiết.</p>
+<p>Về tân thông cáo, ý kiến lớn nhất ngược lại là phòng live stream người xem cùng chủ bá nhóm.</p>
+<p>Giống Thái Thái Tử như vậy đem phát sóng trực tiếp đương chủ nghiệp tới làm chủ bá, như vậy điều chỉnh đối nàng mà nói quả thực là sét đánh giữa trời quang, trực tiếp phá hủy nàng sự nghiệp hòn đá tảng.</p>
+<p>Nhưng là, công ty game cũng không có cùng chủ bá ký hợp đồng, đối chủ bá nhóm không có nghĩa vụ cùng trách nhiệm, bọn họ cũng là khiếu nại không cửa.</p>
+<p>Cho nên liền tính tâm thái lại như thế nào hỏng mất, chủ bá nhóm cũng chỉ có thể lựa chọn điều chỉnh thích ứng.</p>
+<p>Cũng may, công ty game cũng không phải không hề nhân tính, xem ở chủ bá nhóm đối trò chơi khởi đến tuyên truyền tác dụng thượng, phía chính phủ đối này bộ phận chuyên trách chủ bá tiến hành rồi bồi thường, cũng cung cấp trò chơi tình hình thực tế thu giáo trình.</p>
+<p>Tinh Không diễn đàn trung tình hình thực tế khu, cũng ở cùng thời gian sáng lập ra tới, hơn nữa tổ chức tương quan hoạt động, khen thưởng thiết trí thập phần hấp dẫn người.</p>
+<p>Này hết thảy cử động cuối cùng bình ổn chủ bá nhóm oán khí, cũng chặt chẽ ổn định Tinh Không Kỷ Nguyên danh tiếng.</p>
+<p>Vì thế, ở phía chính phủ công bố vài đoạn video sau, khán giả cũng có thể đủ lý giải vì cái gì muốn làm như vậy ——</p>
+<p>Đó là trò chơi bế phục trong lúc giám sát video, có thể nhìn đến hoàn toàn là dựa theo bình thường tốc độ bội số nhanh hơn hoặc là giảm bớt truyền phát tin, dưới loại tình huống này căn bản phát sóng trực tiếp không được.</p>
+<p>Mà ở các người chơi không biết thời điểm, cả nước các nơi có đại khái 100 gia Tinh Không Kỷ Nguyên thể nghiệm cửa hàng đang ở trù bị bên trong, đem ở 100 vạn cái trò chơi mũ giáp chính thức diện thế cùng ngày, đồng thời ở cả nước khai trương.</p>
+<p>Thể nghiệm cửa hàng đem 24 giờ buôn bán, hơn nữa chỉ kinh doanh Tinh Không Kỷ Nguyên tương quan nghiệp vụ, mà thể nghiệm trong cửa hàng trò chơi mũ giáp, tự nhiên là không tiến hành trói định, nhưng nhiều người sử dụng.</p>
+<p>Tuy rằng Hứa Ngọc Hành cũng suy xét quá trực tiếp đầu nhập các tiệm net, lấy Tinh Không Kỷ Nguyên hỏa bạo trình độ, không có cái nào tiệm net lão bản sẽ cự tuyệt.</p>
+<p>Nhưng mà sử dụng trò chơi mũ giáp tiến vào Tinh Không Kỷ Nguyên sau, người dùng cũng là tiến vào giấc ngủ sâu trạng thái, này đối hoàn cảnh an toàn tính yêu cầu rất cao.</p>
+<p>Vì tránh cho xảy ra chuyện, hơn nữa hiện tại tài chính sung túc, hắn cuối cùng quyết định tạm thời không đối ngoại thả xuống.</p>
+<p>Trong hiện thực sở hữu an bài đều ở khua chiêng gõ mõ mà tiến hành, mà trong trò chơi, người chơi cùng tinh tế thú đánh giằng co còn ở tiếp tục.</p>
+<p>Trận chiến đấu này coi như thảm thiết.</p>
+<p>Cơ hồ mỗi cái người chơi đều chết quá một lần, đỉnh ở tối tiền tuyến người chơi, thậm chí có người đã chết 10 thứ trở lên.</p>
+<p>Cũng may sống lại quy tắc, ở phía trước mấy ngày trải qua điều chỉnh ——</p>
+<p>Chỉ cần là chết vào cùng tinh tế thú chiến đấu bên trong, người chơi liền có thể lựa chọn sinh ra điểm sống lại, kia đem sẽ không đã chịu sống lại thời gian hạn chế.</p>
+<p>Cho nên từ tinh tế thú quần công đánh tường cao sau, Truyền Tống Trận quang mang liền liên tiếp không ngừng mà sáng lên, không ngừng có chạy thi người chơi gấp trở về, sau đó bị canh giữ ở Truyền Tống Trận phụ cận phong hệ người chơi thêm vào thượng khinh thân thuật.</p>
+<p>Ở khinh thân thuật dưới tác dụng, bọn họ có thể lấy càng mau tốc độ trở về chiến trường.</p>
+<p>“Con mẹ nó, này rốt cuộc muốn đánh tới khi nào a?”</p>
+<p>Tường thể bên trong, một người người chơi rót xuống huyết dược, một bên oán giận, một bên xuyên thấu qua trên tường cửa sổ nhỏ đối bên ngoài tinh tế thú phóng thích công kích.</p>
+<p>Từ ngày hôm qua giữa trưa đến bây giờ, hắn đã liên tục tại tuyến tiếp cận 20 tiếng đồng hồ.</p>
+<p>Trò chơi hảo chơi là hảo chơi, chân thật là chân thật, nhưng như vậy liên tục không ngừng tập trung tinh thần lặp lại thao tác, thời gian lâu rồi thật sự khảo nghiệm người ý chí lực a.</p>
+<p>“Lại kiên trì sẽ, giữa trưa có người thay ca, mặt sau chờ trò chơi tốc độ chảy điều chỉnh thì tốt rồi.”</p>
+<p>Bên cạnh có người nói nói.</p>
+<p>Đến lúc đó, bọn họ thượng tuyến đánh cái một hai giờ liền có thể hạ tuyến thay đổi người, chờ chịu đựng này sóng thú triều đại khái liền sẽ khôi phục.</p>
+<p>“Oanh ——”</p>
+<p>Tường thể lại lần nữa chấn động, vừa mới oán giận người chơi, lượng máu lại lần nữa đi xuống một nửa, hắn chỉ phải lại lần nữa rót xuống cuối cùng một lọ huyết dược.</p>
+<p>Từ trước mặt cửa sổ nhỏ nhìn ra đi, chiến trường một mảnh hỗn loạn.</p>
+<p>Tinh tế thú thật sự quá nhiều, căn bản không có cái nào xe tăng có thể khiêng được, cũng kéo không được thù hận, cho nên bọn họ chỉ có thể dựa vào tường thể yểm hộ.</p>
+<p>Nhưng mà, tường thể truyền đến chấn động cùng tinh tế thú xuyên thấu qua cửa sổ nhỏ phóng thích tiến vào công kích, đối bọn họ mà nói vẫn như cũ quá sức.</p>
+<p>“Tránh ra tránh ra, ta muốn ném bom!”</p>
+<p>Lúc này, một người người chơi đem người đẩy ra, sau đó từ ba lô lấy ra một viên bom.</p>
+<p>“Ngươi đến mặt trên ném đi a? Đoạt ta vị trí làm gì?”</p>
+<p>“Hắc hắc, mặt trên quá nguy hiểm, đỉnh không được a, vẫn là nơi này ném an toàn một chút.”</p>
+<p>Nói, tên này người chơi đã thao tác vừa mới chế tạo ra tới bom hướng ngoài cửa sổ phi —— hắn hẳn là phong hệ nguyên tố sư, có thể thao tác vật thể phi hành.</p>
+<p>“Oanh —— oanh ——”</p>
+<p>“Rống!!!”</p>
+<p>Bên ngoài dầu cải hỏa vẫn như cũ không diệt, bom căn bản không cần dẫn châm liền trực tiếp nổ mạnh.</p>
+<p>Này người chơi cũng không có nhàn rỗi, một quả tiếp một quả bom không cần tiền dường như ra bên ngoài ném, trực tiếp nổ chết một đầu tinh tế thú.</p>
+<p>“Ngươi này ném bom sống cũng quá sung sướng!”</p>
+<p>“Tính nguy hiểm cũng rất cao a! Một không cẩn thận liền đem chính mình cấp tạc, ai, lại không bom.”</p>
+<p>Phong hệ người chơi bắt đầu hướng bên ngoài ném lưỡi dao gió, bọn họ không có đi học viện Nguyên Tố Sư tiến tu quá, sẽ pháp thuật đều là nhất cơ sở kỹ năng, thương tổn tính cũng không tính cường.</p>
+<p>“Ai, này chiến khó đánh a, ta cảm giác đệ tam phòng tuyến mau chịu đựng không nổi.”</p>
+<p>“Lại kiên trì kiên trì đi, cho dù chết cũng muốn ở tinh tế thú thân thượng cắn khối thịt xuống dưới!”</p>
+<p>Tinh Không hào phi thuyền huyền phù ở giữa không trung, không có người chơi phát hiện nó thân ảnh.</p>
+<p>Hứa Tư Lập nhìn phía dưới đã là ở kiên trì người chơi, trong lòng nhịn không được động dung, này đó người chơi thế nhưng đem thú triều thành công sau này chậm lại một ngày.</p>
+<p>Roland biên cảnh, hai mặt là cao ngất núi non, Dũng Giả Chi Thành vừa vặn thiết lập tại xuất khẩu thượng, đem thú triều đại bộ đội ngăn chặn.</p>
+<p>Bất quá, Hứa Tư Lập vẫn như cũ không tính toán ra tay.</p>
+<p>Vừa ra tay chính là vĩnh viễn chiến đấu, thật vất vả nghỉ một chút, hắn mới không cần cho chính mình đào hố đâu.</p>
+<p>Đại khái là Cynos cùng Cyleen cứu trở về tới sau, hắn tâm thái bất tri bất giác trung đã xảy ra thay đổi, hơn nữa hôm nay một trận chiến này, cũng làm hắn thấy được người chơi khả năng tính.</p>
+<p>Nhìn phía dưới vẫn như cũ đau khổ tác chiến không chịu từ bỏ các người chơi, Hứa Tư Lập quyết định điều chỉnh tác chiến kế hoạch.</p>
+<p>Hắn từ không gian bao con nhộng sờ ra chế tạp tài liệu, rất nhiều thẻ bài tài liệu đã thất truyền, bất quá hắn muốn chế tác này một loại, vừa lúc đều có thể tìm được.</p>
+<p>Hứa Tư Lập nín thở ngưng thần, tiến vào chuyên chú trạng thái.</p>
+<p>Ước chừng hai cái giờ lúc sau, một trương hoàn toàn mới thẻ bài xuất hiện ở hắn trước mặt.</p>
+<p>【 thẻ bài ( cân bằng thuật ) 】</p>
+<p>Cấp bậc Tam tinh</p>
+<p>Miêu tả Kỹ năng tính thẻ bài, không sợ chia ít, chỉ sợ chia không đều, ngươi có thể chỉ định một cái đoàn đội, đoàn đội thành viên sở bị thương tổn đem chia đều đến đoàn đội trung mỗi cái thành viên trên người, liên tục thời gian 30 phút.</p>
+<p>Người chế tác Snow · Roland</p>
+<p>Nhìn này trương thẻ bài, Hứa Tư Lập vừa lòng mà cười cười, sau đó thiết trí hảo điều kiện, ném vào trận doanh kho hàng.</p>
+<p>Trên bầu trời, một con thật lớn hỏa điểu phe phẩy cánh, từ tường cao thượng bay qua, phụt lên ra ngọn lửa quay nướng tường thể, đem tránh ở tường bên trong người chơi sống sờ sờ nướng chết.</p>
+<p>“Thủy hệ, bạo vũ thuật!”</p>
+<p>Khinh Nhan ở kênh rống giận, cảm giác chính mình thật sự muốn đỉnh không được.</p>
+<p>Đúng lúc này ——</p>
+<p>【 đinh ～ ngài đã trong trò chơi liên tục chỉ huy đội ngũ chiến đấu vượt qua 48 giờ, cũng lấy được kinh người chiến quả, đạt được thành tựu “Người chỉ huy”, nhưng ở trận doanh kho hàng lĩnh khen thưởng 】</p>
+<p>Khinh Nhan sửng sốt, người chỉ huy? Thành tựu danh hiệu? Cái này danh hiệu có thể có cái gì khen thưởng?</p>
+<p>Nàng nhíu nhíu mày, tuy rằng không ôm hy vọng, nhưng vẫn là mở ra trận doanh kho hàng nhìn nhìn, sau đó……</p>
+<p>Nàng không khỏi ngây dại.</p>
+<p>Nhìn xuất hiện ở nàng trước mặt thẻ bài, nhìn thẻ bài thuộc tính cùng giới thiệu, Khinh Nhan kích động đến nhịn không được tại chỗ nhảy nhót hai hạ.</p>
+<p>Thế nhưng là Tiểu La bệ hạ cân bằng thuật!</p>
+<p>A a a, là cái kia có thể cân bằng thương tổn thần kỹ!</p>
+<p>Khinh Nhan đều sắp khóc, này cũng tới quá kịp thời đi! Nàng tuyên bố hôm nay bắt đầu, Tiểu La bệ hạ chính là nàng nam thần!</p>
+<p>Bất quá vấn đề thực mau tới, này trương thẻ bài……</p>
+<p>Hẳn là dùng như thế nào đâu?</p>
+<p>Cái này nghi vấn mới vừa hiện lên trong lòng, Khinh Nhan liền cảm giác này trương thẻ bài thượng có loại khó tả lực lượng, dẫn đường nàng tinh thần lực đem thẻ bài bao vây.</p>
+<p>Sau đó ——</p>
+<p>【 đinh ～ ngươi thành công sử dụng thẻ bài [ cân bằng thuật ], thỉnh lựa chọn tác dụng đoàn đội 】</p>
+<p>Thảo, thế nhưng như vậy liền thành công!</p>
+<p>Tác giả có lời muốn nói Hứa bảo Không cần quá yêu ta</p>
+<p>Tư nhãi con Nhìn chằm chằm</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong201.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong203.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "than-thu-nuoi-lon-nguoi-trong-sach-muon-cuoi-ta";
+const NOVEL_TITLE = "Thân thủ nuôi lớn người trong sách muốn cưới ta";
+const CHAPTER_TITLE = "Chương 202";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

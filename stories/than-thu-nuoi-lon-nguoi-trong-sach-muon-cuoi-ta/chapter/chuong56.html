@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 56</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Thân thủ nuôi lớn người trong sách muốn cưới ta
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 56</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong55.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong57.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Người chơi cùng NPC ở bên nhau……</p>
+<p>Sẽ có hạnh phúc sao?</p>
+<p>Túc Mặc cùng Trì Dư không thể không nói chuyện xưa?</p>
+<p>Nhìn cái này tiêu đề, Hứa Tư Lập đều sợ ngây người.</p>
+<p>Hắn quang nghĩ người chơi cùng NPC sẽ có mâu thuẫn xung đột, nhưng chưa từng nghĩ tới, còn có thể có hạnh phúc?</p>
+<p>Là hắn trong tưởng tượng cái loại này “Hạnh phúc” sao?</p>
+<p>Hắn nhất thời đã quên đi hồi phục Lý Triết Thành, mà là click mở thiệp, hơi mang bát quái mà nhìn lên.</p>
+<p>【 Tinh Không tiểu phóng viên 】</p>
+<p>“Lạp lạp lạp, lại đến tiểu phóng viên đưa tin thời gian! Hôm nay chúng ta tới tâm sự Túc Mặc đại lão cùng kiến trúc đại sư Trì Dư chi gian không thể không nói chuyện xưa ～”</p>
+<p>“Túc Mặc đại lão, lấy một hồi chi lực đánh vỡ cấp bậc hạn chế siêu cấp đại thần, đại gia khẳng định không xa lạ, mà Trì Dư, hắc hắc, hiện tại đã trở thành Túc Mặc đại lão hiệp hội thường trú NPC!”</p>
+<p>“Nếu đại gia may mắn gia nhập Túc Mặc đại lão hiệp hội —— Mặc Nhiễm Hồng Trần, là có thể nhìn thấy vị này say mê với kiến trúc đại sư.”</p>
+<p>Sau đó, Tinh Không tiểu phóng viên dán một trương động đồ ra tới.</p>
+<p>Động đồ trung là cái tóc đỏ mắt đỏ thanh niên, dung mạo thanh tuấn, trong tay chính nắm một phần kiến trúc bản vẽ, đứng ở chưa làm xong công trường trước, cúi đầu nhìn.</p>
+<p>“Vị này chính là Trì Dư đại sư ～”</p>
+<p>“Hiện tại đại gia sử dụng Truyền Tống Trận, chính là hắn cùng Túc Mặc đại lão cùng nhau kiến tạo nga!”</p>
+<p>“Cùng các ngươi chia sẻ một cái tiểu bát quái, hắc hắc hắc, Túc Mặc đại lão hiện tại sở dĩ say mê với kiến tạo, hoàn toàn là bởi vì Trì Dư nga ～”</p>
+<p>“Tương truyền Túc Mặc đại lão đối Trì Dư nhất kiến chung tình, đáng tiếc hoa rơi cố ý nước chảy vô tình, Trì Dư đại sư một lòng làm xây dựng, Túc Mặc đại lão đành phải cũng dấn thân vào xây dựng bên trong, còn thành lập Mặc Nhiễm Hồng Trần hiệp hội!”</p>
+<p>Trung gian dán rất nhiều hình ảnh cùng luận cứ làm bằng chứng, nói được ra dáng ra hình, dẫn tới một đống hồi phục kdlkdl.</p>
+<p>“Mặc Nhiễm Hồng Trần đều là sinh hoạt người chơi, không ít chơi mô phỏng thành thị đại lão, lúc trước Túc Mặc đại lão có thể đem Hoàng Thành thăng cấp, bọn họ cũng là công không thể không.”</p>
+<p>“Cuối cùng, Túc Mặc đại lão xem như chờ đến mây tan thấy trăng sáng, đem Trì Dư lừa dối tiến hiệp hội thành thường trú NPC, hai người hiện tại song túc song phi, giống thần tiên quyến lữ dường như, làm người hảo sinh hâm mộ a!”</p>
+<p>“……”</p>
+<p>Hứa Tư Lập đem thiệp xem xong, đối tiểu phóng viên cách nói ôm có hoài nghi thái độ.</p>
+<p>Hắn đã nghĩ tới, Trì Dư cũng là cái đặc thù tài năng NPC, lần trước gặp được quá, chưa kịp đối hắn sử dụng thấy rõ thuật liền cho hắn chạy.</p>
+<p>Hiện tại xem ra, Trì Dư đặc thù tài năng, hẳn là kiến trúc tương quan.</p>
+<p>Là một nhân tài!</p>
+<p>Hơn nữa hắn mặt sau còn chủ trì Truyền Tống Trận kiến tạo, nói cách khác —— cho hắn bản vẽ, hắn đại khái suất là có thể đem Truyền Tống Trận làm ra tới!</p>
+<p>Hứa Tư Lập có chút hưng phấn.</p>
+<p>Túc Mặc có hay không tham gia nội trắc râu ria, quan trọng nhất vẫn là tìm được Trì Dư.</p>
+<p>Trì Dư một cái kiến trúc đại sư, bản thân liền rất có năng lực, nếu hắn kế tiếp có thể đem Túc Mặc thông đồng lại đây…… Mặc kệ hai người là cái gì quan hệ, đều thực có lời!</p>
+<p>Hứa Tư Lập chạy nhanh gửi tin tức cấp Ôn Quý Sơn, làm hắn hỗ trợ tìm kiếm Trì Dư.</p>
+<p>Về Trì Dư, hắn biết đến tin tức cũng không nhiều lắm, chỉ hy vọng vị này năng lực xuất chúng chấp chính quan, có thể mau chóng giúp hắn đem người tìm ra đi.</p>
+<p>Đến nỗi Lý Triết Thành vừa mới cho hắn phát tin tức, Hứa Tư Lập nghĩ nghĩ, vẫn là hồi phục hắn, làm hắn chú ý điểm.</p>
+<p>Hoa Tùy.</p>
+<p>Cái này người chơi tên làm hắn cảm giác có chút quen mắt, khẳng định là hôm nay xem thiệp bên trong xuất hiện quá.</p>
+<p>Tham khảo gia hỏa này làm được sự, rất có thể liền trong tương lai tập thành kia phê người chơi, hơn nữa đại khái suất là cái trung tâm nhân vật.</p>
+<p>Bằng không sẽ không ở thiệp bị người đề cập, còn làm hắn thấy được.</p>
+<p>Ném đến tân binh doanh huấn luyện, cũng mệt Lý Triết Thành nghĩ ra.</p>
+<p>Bất quá Hứa Tư Lập cũng không có thực để ý.</p>
+<p>Một cái không hợp đàn người, tưởng nhảy ra bọt sóng vẫn là tương đối khó khăn.</p>
+<p>Chỉ cần đem dư lại 99.9% người chơi mượn sức hảo, làm cho bọn họ cùng NPC hài hòa ở chung, hẳn là liền không đến mức tái xuất hiện đại quy mô lạm sát kẻ vô tội NPC sự tình.</p>
+<p>Kế tiếp, Hứa Tư Lập tiếp tục ở diễn đàn phiên thiệp.</p>
+<p>Tuy rằng là vì tìm tin tức, nhưng kỳ thật này đó mồ thiếp thoạt nhìn cũng rất có ý tứ.</p>
+<p>Giờ này khắc này, tẩm cung trung chỉ có hắn cùng Tư Thịnh hai người ở.</p>
+<p>Vừa mới giúp Tư Thịnh phủ thêm thảm lông sau, hắn liền ngồi ở bên cạnh, giờ phút này chuyên chú với diễn đàn thiệp Hứa Tư Lập, bất tri bất giác điều chỉnh một cái thoải mái tư thế.</p>
+<p>Hắn hai chân cuộn tròn lên, oa vào sô pha.</p>
+<p>Mà ở hắn không có nhận thấy được thời điểm, bên cạnh cao lớn thân ảnh, bắt đầu từng điểm từng điểm mà, hướng hắn bên này nghiêng lệch lại đây.</p>
+<p>Cuối cùng, nam nhân đầu, nhẹ nhàng mà gác ở tóc bạc thanh niên trên vai.</p>
+<p>Hứa Tư Lập chớp chớp mắt, một bên đầu, gương mặt đã bị nam nhân mềm mại tóc vàng gãi gãi.</p>
+<p>Thuộc về Tư Thịnh ấm áp hơi thở, trực tiếp ập vào trước mặt.</p>
+<p>Hắn bỗng nhiên liền nhớ tới ngày đó ở bể tắm, hắn hư nhuyễn ở trong lòng ngực hắn, bị hắn ôm ra bể tắm khi sở ngửi ngửi đến hơi thở……</p>
+<p>Một cổ nhiệt ý tức khắc ập lên Hứa Tư Lập gương mặt, nãi màu trắng da thịt, giống chọc một tầng phấn mặt, ngay cả môi đều hồng nhuận không ít.</p>
+<p>Hắn tim đập rối loạn vài phần, lại thực mau bị áp xuống.</p>
+<p>Nói tốt không hề tưởng chuyện này.</p>
+<p>Hơn nữa, kia chỉ là bởi vì thân thể tăng lên quá nhanh mang đến ngoài ý muốn thôi.</p>
+<p>Nghĩ như vậy, Hứa Tư Lập hít sâu một hơi, đem lực chú ý lại lần nữa đặt ở tương lai trên diễn đàn.</p>
+<p>Tẩm cung bên trong như thế an tĩnh.</p>
+<p>Tóc vàng nam tử trên người khoác một cái thảm lông, nghiêng dựa vào thân thể hơi hiện mảnh khảnh thanh niên, đầu gác dựa vào trên vai hắn, thiển sắc lông mi hơi hơi có chút rung động.</p>
+<p>Mà kia màu bạc tóc dài thanh niên, khuôn mặt phiếm một tia đỏ ửng, đôi mắt lại chuyên chú mà nhìn trong hư không một chút.</p>
+<p>Hắn giống ở đọc cái gì, nhưng lại thường thường có chút phân tâm mà thất thần, chỉ là vẫn luôn thực an tĩnh, vẫn không nhúc nhích, chưa từng đánh thức chợp mắt nam tử.</p>
+<p>Hai người liền như vậy dựa vào cùng nhau, bên ngoài thái dương chậm rãi rơi xuống, ánh nắng chiều nhiễm hồng không trung.</p>
+<p>Lan Nguyệt Thành, trung tâm trấn nhỏ.</p>
+<p>Trên nóc nhà phương, lưỡng đạo thân ảnh đứng chung một chỗ, nhìn xuống bị ánh nắng chiều nhuộm đẫm thành màu cam hồng trấn nhỏ.</p>
+<p>“Trò chơi này cảnh sắc là thật không sai a!”</p>
+<p>Bách Phong cảm khái nói, “Rốt cuộc là cái dạng gì thiên tài, mới có thể sáng tạo ra như vậy chân thật trò chơi? Nếu là về sau có thể gặp một lần thì tốt rồi.”</p>
+<p>Hứa Ngọc Hành gật đầu, nhàn nhạt nói “Ngươi đi trước ăn cơm đi, ta cũng trước hạ tuyến một hồi.”</p>
+<p>“Hảo! Đợi lát nữa trở lên tuyến đem hằng ngày chạy xong!”</p>
+<p>Bọn họ đều nhận được hằng ngày cùng hằng tuần nhiệm vụ.</p>
+<p>Bất quá Hứa Ngọc Hành khai tay mới lễ bao khai ra 100 điểm danh vọng, xem như toàn phục cái thứ nhất có được hợp pháp quyền tạm trú người chơi, tạm thời có thể không cần làm nhiệm vụ.</p>
+<p>Bách Phong là cái sấm rền gió cuốn tính cách, nói xong liền trực tiếp offline.</p>
+<p>Mà vừa muốn hạ tuyến Hứa Ngọc Hành, lại phát hiện —— cứ việc hệ thống đã nhắc nhở hắn “Bạn tốt Bách Phong đã hạ tuyến”, nhưng Bách Phong thân thể vẫn như cũ biểu hiện tại chỗ.</p>
+<p>Thật giống như…… Ở treo máy giống nhau.</p>
+<p>Hứa Ngọc Hành nhíu mày, hắn duỗi tay đáp thượng Bách Phong bả vai, phát hiện vẫn như cũ có thể chạm đến hắn.</p>
+<p>Hắn lại dùng sức chụp hắn một chút.</p>
+<p>Một cái thương tổn trị số, tức khắc từ Bách Phong trên đỉnh đầu toát ra tới.</p>
+<p>Cho nên, cho dù hạ tuyến vẫn là sẽ chịu công kích?</p>
+<p>Hứa Ngọc Hành mím môi, cảm giác được một tia ngưng trọng, hắn không có offline, mà là tại chỗ đợi chờ.</p>
+<p>Đại khái mười phút sau, Bách Phong thân thể mới chậm rãi biến mất tại chỗ.</p>
+<p>Cái này phát hiện, làm Hứa Ngọc Hành nhẹ nhàng thở ra.</p>
+<p>Nếu hạ tuyến sau thân thể vẫn luôn lưu lại nơi này, hơn nữa có thể đã chịu công kích, kia hạn chế có thể to lắm.</p>
+<p>Như bây giờ nói, cũng chính là tốt nhất không cần tại dã ngoại offline, hoặc là hạ tuyến thời điểm, bên người phải có người nhìn.</p>
+<p>Hứa Ngọc Hành muốn chờ Bách Phong trở về, chỉ là lúc này, trò chơi nhắc nhở âm lại lần nữa vang lên.</p>
+<p>“Ngài hảo, ngài thu được một cái phần ngoài điện báo, căn cứ thông tin lục ghi chú, nên điện báo là —— mẫu thân, xin hỏi hay không tiếp nghe?”</p>
+<p>Hứa Ngọc Hành đành phải lựa chọn tiếp nghe.</p>
+<p>Một cái di động ở trước mặt hắn hiện lên.</p>
+<p>Hứa Ngọc Hành đưa điện thoại di động đặt ở bên tai, tức khắc nghe được một đạo ôn nhu thanh âm ở bên tai vang lên.</p>
+<p>“A Hành a, cơm đã làm tốt, mau ra đây ăn đi.”</p>
+<p>Không đợi Hứa Ngọc Hành giải thích, Hứa mẫu tiếp tục lải nhải nói “Công tác quan trọng, thân thể cũng rất quan trọng, ngươi chính là không đúng hạn ăn cơm, mới có thể đem dạ dày cấp ngao hỏng rồi.”</p>
+<p>“Mẹ, lại chờ một chút, ta thực mau liền hảo.”</p>
+<p>Hứa Ngọc Hành tả hữu nhìn xung quanh, tìm kiếm thích hợp hạ tuyến ẩn nấp địa điểm, kết quả……</p>
+<p>“Ngươi mỗi lần đều nói như vậy, mỗi lần không đều là đồ ăn lạnh mới ra tới? Ai, ngươi cùng A Phong đều lớn lên lạp, ta cũng quản không đến các ngươi.”</p>
+<p>Hứa mẫu thanh âm trở nên có chút nghẹn ngào lên.</p>
+<p>“Rõ ràng sinh các ngươi thời điểm, từng cái đều khỏe mạnh, như thế nào hiện tại đều như vậy……”</p>
+<p>Hứa Ngọc Hành không khỏi đau đầu, từ đệ đệ ngoài ý muốn qua đời, lại xem qua hắn sinh thời bệnh lịch sau, mẫu thân liền trở nên có chút tố chất thần kinh.</p>
+<p>Hắn cũng không dám nói cái gì lời nói nặng, chỉ có thể hống.</p>
+<p>“Hảo hảo hảo, ta hiện tại lập tức đi ra ngoài ăn cơm, cho ta hai phút được không? Hai phút sau liền đi ra ngoài.”</p>
+<p>“Ngươi nói nga.” Hứa mẫu nói.</p>
+<p>“Là, ta nói, hai phút sau không đi ra ngoài, ngươi khiến cho Lưu thúc đá môn, được không?”</p>
+<p>“Lão Lưu tuổi lớn, nhưng đá bất động.”</p>
+<p>“Vậy ngươi khiến cho hắn lấy dao phay, giữ cửa cấp băm.”</p>
+<p>“Phốc —— tịnh ra hạt chủ ý!” Hứa mẫu cười mắng, “Vậy được rồi, chờ ngươi hai phút, ngươi không ra, ta và ngươi ba cũng không ăn.”</p>
+<p>“Hảo, lập tức đi ra ngoài.”</p>
+<p>Rốt cuộc đem người hống hảo, Hứa Ngọc Hành nhẹ nhàng thở ra, hắn cũng không có biện pháp tìm cái gì ẩn nấp địa phương, từ nóc nhà nhảy đến lầu hai, hướng trong một góc trốn vào đi lúc sau, liền trực tiếp offline.</p>
+<p>Hắn chỉ hy vọng thượng tuyến thời điểm, chính mình nhân vật vẫn là hoàn hảo không tổn hao gì đi.</p>
+<p>Đây là một căn nhà gỗ cũ nát, lầu hai có một cái ban công.</p>
+<p>Ánh nắng chiều nghiêng nghiêng mà chiếu xạ qua tới, phô ở tấm ván gỗ thượng.</p>
+<p>Ở ráng màu trung, ban công môn bỗng nhiên ê a một tiếng khai, một đạo thân ảnh từ phía sau cửa dò xét ra tới, thật cẩn thận mà tả hữu nhìn xung quanh.</p>
+<p>Hứa Ngọc Hành hạ tuyến sau ra phòng khách.</p>
+<p>Nhìn đến hắn thật sự đúng giờ ra tới, Hứa mẫu mặt mày hớn hở, Hứa phụ tắc liếc nhi tử liếc mắt một cái, chưa nói cái gì, tiếp tục xem trong tay báo chí.</p>
+<p>Chỉ là trước mặt đồ ăn, xác thật một ngụm không nhúc nhích.</p>
+<p>“Tới, A Hành, uống trước khẩu canh.”</p>
+<p>Hứa mẫu cho hắn thịnh một chén canh gà, nhẹ nhàng phóng ở trước mặt hắn, cười ha hả nói, “Ta hôm nay ngao một ngày đâu, uống nhiều điểm.”</p>
+<p>Hứa Ngọc Hành quy củ mà ở hai lão đối diện ngồi xuống, cúi đầu uống một ngụm, đối nàng cong môi nói “Rất thơm, ngài nấu chính là hảo uống.”</p>
+<p>Hứa mẫu cười đến càng vui vẻ.</p>
+<p>“Tam huynh đệ a, liền ngươi nhất sẽ hống người.”</p>
+<p>“Đại ca ngươi đâu là cái hũ nút, nửa ngày nghẹn không ra một câu, Lập Lập…… Lập Lập liền thích chơi âm nhạc cùng trò chơi……”</p>
+<p>Nói nói, nàng thanh âm nhỏ đi xuống, đôi mắt lại có chút phiếm hồng.</p>
+<p>Hứa Ngọc Hành bất đắc dĩ, mà Hứa phụ cũng sắc mặt khó coi, hắn nhíu mày nói “Êm đẹp, ngươi lại đề lão tam làm cái gì?”</p>
+<p>“Hắn là ta nhi tử, vì cái gì không thể đề?”</p>
+<p>Hứa mẫu kích động mà nói.</p>
+<p>Lúc này nàng nghĩ đến cái gì, bỗng nhiên nhìn về phía Hứa Ngọc Hành, thanh âm trở nên nhu hòa xuống dưới, mang theo thật cẩn thận chờ mong.</p>
+<p>“A Hành, các ngươi nói cái kia trò chơi…… Có thể ở trong trò chơi nhìn thấy Lập Lập, là thật sự đi?”</p>
+<p>“Không phải mỗi năm đều phải đầu thật nhiều tiền đi vào sao? Khi nào mới có thể làm tốt a? Ta nghe người ta nói, kia cái gì thực tế ảo kỹ thuật thực phức tạp, khả năng…… Khả năng muốn vài thập niên sau mới có thể thực hiện?”</p>
+<p>Nói đến này, nàng ánh mắt lại mất mát mà ảm đạm xuống dưới.</p>
+<p>Hứa Ngọc Hành siết chặt cái thìa, đầu ngón tay mất đi huyết sắc, trên mặt lại lộ ra một cái ôn hòa cười.</p>
+<p>“Mẹ, thực nhanh.”</p>
+<p>Hắn nói, “Dùng không được bao lâu, ngài liền có thể tiến trò chơi, nhìn thấy Tiểu Lập.”</p>
+<p>“Ngươi không gạt ta?” Hứa mẫu hoài nghi mà nhìn hắn.</p>
+<p>“Đương nhiên, ta không có khả năng tại đây sự kiện thượng lừa ngài.” Hứa Ngọc Hành ôn thanh nói.</p>
+<p>“Trên thực tế, trò chơi hiện tại đã ở thí vận hành, nhưng còn chưa đủ ổn định, chờ chính thức thông qua thí nghiệm sau, ngài liền có thể cùng ta cùng nhau tiến trò chơi.”</p>
+<p>“Ân? Cùng ngươi cùng nhau?” Hứa mẫu chớp chớp mắt.</p>
+<p>“Đúng vậy.” Hứa Ngọc Hành cũng không hảo lại gạt, “Ta vừa mới chính là ở trong trò chơi, ta trong phòng kia đài đại gia hỏa chính là khoang trò chơi, chỉ có dùng nó mới có thể chơi game thực tế ảo.”</p>
+<p>“Yên tâm đi, chờ thí nghiệm thông qua sau, ngài cũng có thể cùng nhau đi vào.”</p>
+<p>Hứa mẫu vui mừng mà nở nụ cười, hỏi “Vậy ngươi nhìn thấy Lập Lập sao?”</p>
+<p>Hứa Ngọc Hành một đốn.</p>
+<p>Nếu không phải đại ca, hắn đã gặp được.</p>
+<p>Hắn cũng không có cáo trạng, chỉ nói “Hôm nay mới vừa tiến trò chơi, nào có nhanh như vậy?”</p>
+<p>“Tiểu Lập ở trong trò chơi chính là hoàng đế, ở tại trong hoàng cung, ta còn phải làm nhiệm vụ, nỗ lực trà trộn vào trong cung mới có thể nhìn thấy hắn đâu.”</p>
+<p>“A? Như vậy phiền toái a……”</p>
+<p>Hứa mẫu lẩm bẩm nói một tiếng, lại nhìn con thứ hai, cổ vũ nói, “A Hành như vậy thông minh, khẳng định có thể.”</p>
+<p>“Chờ ngươi làm đại quan, Lập Lập liền sẽ gặp ngươi, muốn cố lên a!”</p>
+<p>Hứa Ngọc Hành cười cười, nhẹ nhàng gật đầu.</p>
+<p>Lúc này, Hứa mẫu lại liên thanh thúc giục nói “Vậy ngươi chạy nhanh ăn, nhanh lên ăn xong đi chơi trò chơi, sớm một chút ở trong trò chơi đương đại quan!”</p>
+<p>“Ngô, nếu không bắt được trong phòng đi ăn?”</p>
+<p>Hứa Ngọc Hành “……”</p>
+<p>Chờ Hứa Ngọc Hành cơm nước xong, bị dặn dò vội vàng online, phát hiện chính mình còn ở đứng ở hạ tuyến địa phương, lượng máu cũng vẫn là mãn, không khỏi nhẹ nhàng thở ra.</p>
+<p>Chỉ là thực mau, hắn liền đã nhận ra không thích hợp.</p>
+<p>Lệch về một bên đầu, đối thượng một đôi tròn xoe màu nâu đôi mắt.</p>
+<p>Ở hắn xem qua đi khi, đôi mắt chủ nhân hoảng sợ, nhưng trong tay vẫn như cũ giơ một phen đốn củi dùng đao, vẻ mặt cảnh giác mà trừng mắt hắn.</p>
+<p>Đây là cái gầy trơ cả xương tiểu hài tử, đại khái sáu bảy tuổi, ngắn ngủn tóc hỗn độn rối rắm, cả người dơ hề hề, ẩn ẩn tản ra một cổ khó nghe hương vị.</p>
+<p>Hứa Ngọc Hành nhẹ nhíu mày, quét mắt bạn tốt danh sách, Bách Phong còn không có online.</p>
+<p>Hắn tiến lên một bước, kia tiểu hài tử tức khắc hô</p>
+<p>“Ngươi không cần lại đây!”</p>
+<p>Hứa Ngọc Hành không khỏi đốn tại chỗ, hắn nhìn tiểu hài tử, chờ hắn nói chuyện.</p>
+<p>“Ngươi…… Ngươi là u linh sao?”</p>
+<p>Tiểu hài tử thanh âm có chút run rẩy, nhưng biểu hiện vẫn như cũ xưng là dũng cảm.</p>
+<p>Hứa Ngọc Hành nhướng mày, hơi hơi tưởng tượng liền minh bạch.</p>
+<p>Phỏng chừng tiểu gia hỏa này thấy được hắn trên dưới tuyến thời điểm, biến mất lại xuất hiện tình cảnh, cho nên hiểu lầm.</p>
+<p>Hắn đánh giá nhóc con, nhớ tới đệ đệ khi còn nhỏ, đương nhiên, trước mắt đứa nhỏ này không có nhà hắn Tiểu Lập đáng yêu.</p>
+<p>Hắn chỉ chỉ sàn nhà, nói “Ta có bóng dáng, nhìn đến không?”</p>
+<p>Tiểu hài tử triều trên mặt đất nhìn lại, quả nhiên gặp được hắn dưới chân bóng dáng, bị hoàng hôn kéo đến thật dài, vẫn luôn hướng trên vách tường kéo dài.</p>
+<p>Hắn lúc này mới thở dài nhẹ nhõm một hơi, ánh mắt không có như vậy sợ hãi.</p>
+<p>Hứa Ngọc Hành tiếp tục nói “Ngươi vừa mới nhìn đến, chỉ là ta hạng nhất kỹ năng mà thôi.”</p>
+<p>Nghe vậy, tiểu hài tử đôi mắt hơi lượng.</p>
+<p>“Kỹ năng? Ngươi…… Ngươi là nguyên tố sư đại nhân sao?”</p>
+<p>Hứa Ngọc Hành dừng một chút, đảo không phải tiểu hài tử nói, mà là trò chơi hệ thống nhắc nhở bắn ra tới.</p>
+<p>【 ấm áp nhắc nhở Ngài bình thường nhiệm vụ —— tôn lão ái ấu (1 6), xuất hiện nhiệm vụ mục tiêu, thỉnh mau chóng hoàn thành, để tránh mất đi hiệu lực 】</p>
+<p>Tuy rằng không cần làm hằng ngày, nhưng Hứa Ngọc Hành vẫn là tiếp nhiệm vụ, giờ phút này nhìn hệ thống nhắc nhở, không khỏi lại nhìn vào nhiệm vụ giao diện.</p>
+<p>【 tôn lão ái ấu (1 6) Thỉnh làm bạn một người tiểu nam hài hưởng dụng bữa tối 】</p>
+<p>Nếu hắn nhớ không lầm nói, cái này bình thường hằng ngày, nhiệm vụ đối tượng đều là goá bụa lão ấu, cho nên trước mặt này tiểu hài tử……</p>
+<p>Là cái cô nhi?</p>
+<p>Hứa Ngọc Hành nhàn nhạt mà nhìn lướt qua trước mặt củ cải nhỏ.</p>
+<p>Này, chỉ là một cái NPC.</p>
+<p>Hắn như vậy nói cho chính mình, cho nên hiện tại, hắn càng hẳn là đi tìm đi trước quân đội biện pháp, lấy cầu ở nguyên tố sư thí nghiệm kết thúc, trở về là lúc có thể đi theo bọn họ cùng đi Hoàng Thành.</p>
+<p>Ở kia phía trước, còn phải mau chóng đi sát quái thăng cấp đề cao thực lực, mà không phải đem thời gian lãng phí ở như vậy hằng ngày nhiệm vụ thượng ——</p>
+<p>Ban ngày thời điểm, hắn giúp Bách Phong chạy hằng ngày, cho nên biết một vòng hằng ngày nhiệm vụ, chỉ có thể đạt được 10 điểm kinh nghiệm giá trị.</p>
+<p>Tuy rằng tích lũy xuống dưới tựa hồ cũng không tệ lắm, nhưng bọn hắn hoa một cái buổi chiều thời gian, cũng liền hoàn thành 4 hoàn.</p>
+<p>Đối Hứa Ngọc Hành mà nói, tính giới so không cao.</p>
+<p>Nếu không phải vì giúp Bách Phong xoát đến hợp pháp quyền tạm trú, hắn khả năng đã đi dã ngoại sát quái.</p>
+<p>Chỉ là, nhìn tiểu hài tử xanh xao vàng vọt, trong tay đốn củi đao so với hắn cánh tay còn thô bộ dáng, Hứa Ngọc Hành cắn chặt răng, cuối cùng cũng không mại động cước bộ.</p>
+<p>“Ngươi tên là gì?”</p>
+<p>Hắn nhìn tiểu hài tử, thấp giọng hỏi nói.</p>
+<p>Nói đến cũng là thảm, cho dù này tiểu hài tử nhìn nhỏ gầy, thực lực cũng so với hắn cường, cho nên xem xét hắn tin tức, chỉ có thể nhìn đến “Kỹ cao một bậc” chữ.</p>
+<p>Hắn cũng biết nguyên nhân —— bởi vì NPC lượng máu thuật toán cùng người chơi bất đồng, mà trò chơi hệ thống đánh giá thực lực đối lập, chỉ xem lượng máu.</p>
+<p>Tiểu hài tử nhìn hắn, do do dự dự nói “Ta…… Ta kêu Jayne.”</p>
+<p>Hứa Ngọc Hành “Trong nhà liền ngươi một người?”</p>
+<p>Tiểu hài tử lắc đầu, bỗng nhiên lại cảnh giác nói “Ngươi muốn làm gì?”</p>
+<p>Hứa Ngọc Hành từ bối ở phía sau trong bao, sờ ra một cái bánh mì tới.</p>
+<p>Này vẫn là Bách Phong mua cho hắn.</p>
+<p>Trò chơi thực chân thật, cho dù người chơi cũng sẽ đói, đói khát giá trị tích lũy đến nhất định, liền sẽ rớt huyết.</p>
+<p>Ở biết cái này tình báo sau, tài đại khí thô Bách Phong, liền đi mua một bao lớn bánh mì, đem hắn mới bắt đầu ba lô tắc đến tràn đầy.</p>
+<p>“Nếu ngươi chỉ có một người, ta cũng chỉ cho ngươi một cái bánh mì, nếu có hai người, liền cho ngươi hai cái.” Hứa Ngọc Hành nói.</p>
+<p>Tiểu Jayne nhìn trong tay hắn bánh mì, điên cuồng nuốt nước miếng.</p>
+<p>“Kia nếu có ba cái đâu?”</p>
+<p>Hứa Ngọc Hành ngẩn ra, sau đó cười, “Vậy cấp ba cái.”</p>
+<p>“Ta…… Ta còn có một cái đệ đệ cùng một cái muội muội!” Tiểu Jayne nói, “Bọn họ ở bên trong.”</p>
+<p>Có ăn, nhưng thật ra đem cái gì cảnh giác đều đã quên.</p>
+<p>Thật sự thực chân thật.</p>
+<p>Hứa Ngọc Hành nhìn hắn đáy mắt biểu lộ khát vọng, hắn khó có thể tưởng tượng, này thật là số liệu bện ra tới.</p>
+<p>Cho dù biết là giả, đối mặt như vậy một đôi mắt, hắn cũng không có cách nào làm được không mềm lòng.</p>
+<p>Hắn thở dài, đem trong tay bánh mì ném cho hắn, lại từ ba lô sờ nữa ra hai cái.</p>
+<p>Chỉ là không vội vã cấp, tiểu Jayne cũng đã thực thỏa mãn.</p>
+<p>Hắn phủng đại khái chỉ có hắn hai cái nắm tay như vậy đại bánh mì, vui vẻ mà chạy vào trong phòng, liền đốn củi đao đều từ bỏ.</p>
+<p>“Jamie, Lily! Chúng ta có bánh mì ăn!”</p>
+<p>Hắn thịch thịch thịch chạy vào nhà, Hứa Ngọc Hành đi theo hắn phía sau, cùng nhau đi vào đi.</p>
+<p>Hai cái so Jayne còn muốn tiểu nhân oa oa, từ đáy giường hạ bò ra tới, vốn dĩ thật cao hứng, nhìn đến Hứa Ngọc Hành, lại vội vàng trốn đến ca ca phía sau.</p>
+<p>Nếu nói Jayne là củ cải nhỏ, kia này hai cái oa oa chính là tiểu đậu đinh.</p>
+<p>Thoạt nhìn không sai biệt lắm cái đầu cùng ngũ quan, hẳn là song bào thai.</p>
+<p>Jayne trấn an đệ đệ muội muội, sau đó đem bánh mì phân cho bọn họ ăn.</p>
+<p>Song bào thai huynh muội tiếp nhận bánh mì, chỉ cắn một ngụm, liền sôi nổi đem dư lại đưa tới ca ca bên miệng, muốn hắn cũng cùng nhau ăn.</p>
+<p>Jayne liền cũng cắn một ngụm, hai cái tiểu đậu đinh liền nở nụ cười.</p>
+<p>Hứa Ngọc Hành nhìn một màn này, môi nhấp thành thẳng tắp, mắt kính hạ đôi mắt, quang mang có chút đen tối.</p>
+<p>Đúng lúc này, cửa sổ phương hướng truyền đến động tĩnh.</p>
+<p>Hắn nghiêng đầu xem qua đi, liền thấy hai điều thon dài chân, xuất hiện ở phía bên ngoài cửa sổ, theo ê a một thanh âm vang lên, Bách Phong linh hoạt mà từ hẹp hòi cửa sổ nhảy tiến vào.</p>
+<p>“Hắc, Ngọc ca, ta tới rồi!”</p>
+<p>Bách Phong cười hì hì, sau đó phát hiện trong phòng ba cái tiểu hài tử, “Oa, hảo đáng yêu a! Các ngươi ở ăn cơm sao? Quang ăn bánh mì có thể hay không thực khát a?”</p>
+<p>Hắn từ trong bao sờ ra một lọ thủy, “Tới tới tới, cho các ngươi uống nước.”</p>
+<p>Nhìn hắn tự quen thuộc bộ dáng, Hứa Ngọc Hành lắc lắc đầu.</p>
+<p>Bách Phong luôn luôn như thế.</p>
+<p>Phía trước ở trò chơi khác, cũng là đói bụng muốn ăn đồ ăn, bằng không sẽ rớt huyết, gia hỏa này ở trên đường nhìn đến người khác có đói khát rớt huyết debuff, liền sẽ tùy tay đưa mấy cái màn thầu.</p>
+<p>Bọn họ lúc trước cũng là như vậy nhận thức.</p>
+<p>Đại khái là Bách Phong tươi cười càng có lực tương tác, ba cái tiểu hài tử cũng không có sợ hãi, ở hắn đầu uy hạ, thực mau đem bánh mì ăn xong rồi.</p>
+<p>【 đinh ～[ Jayne ] đối với ngươi hảo cảm độ +10】</p>
+<p>【 đinh ～[ Jamie ] đối với ngươi hảo cảm độ +10】</p>
+<p>【 đinh ～[ Lily ] đối với ngươi hảo cảm độ +20】</p>
+<p>Hứa Ngọc Hành chớp chớp mắt, hệ thống hảo cảm độ nhắc nhở, làm hắn lại lần nữa ý thức được, trước mắt ba cái tiểu hài tử là NPC, cũng không phải chân nhân.</p>
+<p>Mà hắn đệ nhất hoàn hằng ngày nhiệm vụ, cũng liền như vậy hoàn thành ——</p>
+<p>【 đinh ～ chúc mừng hoàn thành bình thường nhiệm vụ [ tôn lão ái ấu (1 6)], đạt được cơ sở khen thưởng kinh nghiệm giá trị +10, Roland đế quốc trận doanh danh vọng +1】</p>
+<p>【 bởi vì ngươi ưu tú biểu hiện, thêm vào khen thưởng kinh nghiệm giá trị +89, Roland đế quốc trận doanh danh vọng +8】</p>
+<p>Hứa Ngọc Hành sửng sốt.</p>
+<p>Mà bên cạnh Bách Phong đã nở nụ cười, nói “Oa, Ngọc ca, ta lần này có 99 điểm kinh nghiệm gia! Ta thăng 1 cấp lạp!”</p>
+<p>Cái này khen thưởng, không thể nói không phong phú.</p>
+<p>Chỉ là nhìn hằng ngày nhiệm vụ giao diện, Hứa Ngọc Hành vẫn là có chút chần chờ, lại nghe Bách Phong nhìn ba cái oa oa, cười nói “Ta ngày mai còn tới!”</p>
+<p>Hứa Ngọc Hành “……”</p>
+<p>Hứa Tư Lập cũng không biết, nhà mình nhị ca chính vì chính mình tuyên bố hằng ngày nhiệm vụ mà rối rắm, hắn giờ phút này dựa vào sô pha, dáng ngồi có chút cứng đờ.</p>
+<p>Hắn đã duy trì tư thế này thật lâu.</p>
+<p>Tư Thịnh gia hỏa này rốt cuộc muốn ngủ tới khi nào? Đều nghỉ ngơi lâu như vậy, hẳn là đủ rồi đi?</p>
+<p>Liền ở hắn mau kiên trì không được khi, vẫn luôn nhắm hai mắt nam nhân, rốt cuộc lông mi khẽ run, nhẹ nhàng mở một đôi màu xanh xám đôi mắt.</p>
+<p>Tư Thịnh kỳ thật đã sớm tỉnh.</p>
+<p>Chỉ là vì nhiều cùng thần minh đại nhân thân cận một hồi, mới như vậy làm bộ ngủ thôi.</p>
+<p>Bất quá, hắn có thể cảm nhận được, thần minh đại nhân ở dần dần tiếp cận cực hạn.</p>
+<p>Trên thực tế, đại nhân có thể như vậy dung túng hắn, đã làm Tư Thịnh cảm thấy thực ngoài ý muốn, trong lòng gợn sóng từng vòng nhộn nhạo.</p>
+<p>Chỉ là tuy rằng không tha, lại vẫn là không thắng nổi đau lòng.</p>
+<p>Đại nhân hiện tại thực suy yếu, tựa như nhân loại bình thường giống nhau chịu không nổi lăn lộn, hắn hẳn là muốn khắc chế chính mình……</p>
+<p>Hắn mím môi, chậm rãi ngồi dậy tới.</p>
+<p>Vừa muốn mở miệng, liền nghe thanh niên vui sướng nói “Ai, ngươi cuối cùng là tỉnh!”</p>
+<p>Sau đó, bên người ấm áp đột nhiên rời đi ——</p>
+<p>Thanh niên gấp không chờ nổi mà đứng lên.</p>
+<p>Chỉ là Tư Thịnh còn chưa kịp mất mát, kia đột nhiên đứng lên thân ảnh, mới vừa bán ra một bước, liền run run rẩy rẩy mà sau này ngã ngồi xuống dưới.</p>
+<p>Tư Thịnh ánh mắt hơi lóe.</p>
+<p>Hắn thân ảnh bỗng nhiên biến mất, chờ tái xuất hiện khi, đã dịch một cái thân vị, ngồi ở Hứa Tư Lập vừa mới vị trí, vừa lúc đem hắn tiếp được.</p>
+<p>Hứa Tư Lập một trương khuôn mặt tuấn tú đều nhăn thành thống khổ mặt nạ.</p>
+<p>Hắn cảm giác toàn bộ nửa người dưới đều đã tê rần.</p>
+<p>Bất quá nói trở về, hắn rõ ràng là hướng trên sô pha đảo a, như thế nào cảm giác có chút kỳ quái?</p>
+<p>Duỗi tay hướng mông phía dưới sờ sờ, càng sờ càng không thích hợp.</p>
+<p>Chờ hắn nhẫn quá đệ nhất sóng chân ma, tưởng quay đầu lại đi xem khi, một đôi thiết cánh tay ôm hắn eo.</p>
+<p>Nam nhân chước - nhiệt hô hấp phun ở hắn trên vành tai, trầm thấp tiếng nói, có chút khắc chế cùng bất đắc dĩ mà vang lên</p>
+<p>“Bệ hạ, ngài đừng nhúc nhích.”</p>
+<p>Lại động, sẽ xảy ra chuyện.</p>
+<p>Tác giả có lời muốn nói Moah moah</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong55.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong57.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "than-thu-nuoi-lon-nguoi-trong-sach-muon-cuoi-ta";
+const NOVEL_TITLE = "Thân thủ nuôi lớn người trong sách muốn cưới ta";
+const CHAPTER_TITLE = "Chương 56";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

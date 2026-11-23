@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 11</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Thân thủ nuôi lớn người trong sách muốn cưới ta
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 11</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Gió nhẹ từ ngoài đình thổi quét mà đến.</p>
+<p>Thiếu niên nhíu mày trầm tư, tùy ý thanh phong quấn quanh ngân bạch sợi tóc vui đùa ầm ĩ, nhẹ gãi hắn gương mặt.</p>
+<p>Rốt cuộc, hắn cảm giác có chút ngứa, giơ tay kích thích sợi tóc, ở đầu ngón tay vô ý thức mà vòng động.</p>
+<p>Làm sao bây giờ?</p>
+<p>Hứa Tư Lập có chút buồn rầu.</p>
+<p>Giống vừa mới như vậy gióng trống khua chiêng mà sát con thỏ, khẳng định là không được, nhưng…… Trộm mà đi?</p>
+<p>Thôi bỏ đi, cũng không biết có phải hay không bị gõ quá, mới vừa đi thay quần áo thời điểm, hắn liền phát hiện.</p>
+<p>Những cái đó hộ vệ hoàn toàn thu liễm tản mạn, một cái hai cái đều thực cảnh giác, tưởng tượng tối hôm qua Snow · Roland giống nhau trộm đi đi ra ngoài, rất khó.</p>
+<p>Sát quái thăng cấp tốt như vậy lối tắt, hắn là không có khả năng từ bỏ, hắn hiện tại nhất thiếu chính là thời gian, nếu thông qua minh tưởng, này một tháng có thể tăng lên nhiều ít cấp?</p>
+<p>Hứa Tư Lập khẽ cắn răng.</p>
+<p>Nếu không liền bất cứ giá nào, chỉ mang theo Janice cùng Lý Triết Thành đi phòng bếp sát con thỏ, sau đó làm cho bọn họ bảo mật, nếu là dám nói đi ra ngoài liền trị tội?</p>
+<p>Hắn chính tự hỏi khả năng tính, lúc này, một trận tiếng bước chân truyền đến.</p>
+<p>Hứa Tư Lập không có quay đầu lại, tiếp tục vẫn duy trì cao thâm khó đoán biểu tình, thẳng đến Lý Triết Thành cung kính thanh âm vang lên.</p>
+<p>“Bệ hạ……”</p>
+<p>Mặt sau lại dừng lại, không có nói tiếp.</p>
+<p>Hứa Tư Lập nhíu nhíu mày, nghiêng đầu nhìn về phía hắn.</p>
+<p>Vừa mới hắn bình lui mọi người, thị nữ trưởng liền đứng ở ngoài đình mặt, giờ phút này chính nhìn qua, chú ý bên này.</p>
+<p>“Có chuyện gì?” Hắn hỏi.</p>
+<p>Lý Triết Thành trên mặt lộ ra một tia giãy giụa, nhưng vẫn là đi phía trước đến gần một bước, cố ý vô tình mà ở thị nữ trưởng nhìn không tới góc độ, thấp giọng nói “Bệ hạ, ngài còn ở vì tinh tế thú sự phiền não sao?”</p>
+<p>Hứa Tư Lập nhìn hắn một cái, nhẹ nhàng gật đầu, lại không nói lời nào.</p>
+<p>Gia hỏa này rõ ràng có chuyện muốn nói.</p>
+<p>“Bệ hạ, ngài muốn tiếp xúc tinh tế thú nói, kỳ thật thần biết có một chỗ……” Lý Triết Thành nói, hơi hơi một đốn, lại không hướng hạ nói.</p>
+<p>Hứa Tư Lập cảm thấy hắn ở cố ý nhử, không truy vấn, chỉ lấy màu tím nhạt đôi mắt lạnh lùng mà liếc hắn.</p>
+<p>Có chuyện mau nói, có rắm mau phóng!</p>
+<p>Lý Triết Thành trong lòng căng thẳng, lại lần nữa cảm giác được vị này thiếu niên hoàng đế thay đổi, đành phải tiếp tục nói “Đấu thú trường.”</p>
+<p>“Đấu thú trường?”</p>
+<p>Hứa Tư Lập nhíu mày, Snow · Roland trong trí nhớ, cũng không có tương quan ký ức, bất quá nghe tên đại khái là có thể biết là đang làm gì.</p>
+<p>Lý Triết Thành giải thích nói “Bệ hạ khả năng không có nghe nói qua.”</p>
+<p>“Đấu thú trường, ở vào ngoại thành, ly nội thành môn còn có không xa khoảng cách, mỗi cách một đoạn thời gian, sẽ có lính đánh thuê tiểu đội vận chuyển tinh tế thú trở về thành.”</p>
+<p>“Nếu còn có tồn tại, liền đầu nhập đấu thú trường, cử hành đấu thú hoạt động, này cũng coi như là khích lệ dân chúng, cổ vũ sĩ khí một loại thủ đoạn.”</p>
+<p>“Mỗi lần có đấu thú hoạt động đều sẽ tiến hành tiếp sóng, cũng có thể hiện trường quan khán……”</p>
+<p>Nói tới đây, Lý Triết Thành ngừng lại, không có tiếp tục nói tiếp, bởi vì câu nói kế tiếp, thật sự không thể nói nữa.</p>
+<p>Bất quá hắn tin tưởng, hắn ám chỉ đã cũng đủ rõ ràng.</p>
+<p>Hứa Tư Lập xác thật nghe hiểu.</p>
+<p>Snow · Roland không chịu tiên hoàng đãi thấy, trụ điều kiện giống nhau, cũng không có gì cơ hội xem TV, cho nên mới không biết đấu thú tiếp sóng loại chuyện này.</p>
+<p>“Đấu thú trường tinh tế thú, đều là không có trải qua thuần dưỡng?” Hắn hỏi.</p>
+<p>Lý Triết Thành gật gật đầu, “Đây là tự nhiên.”</p>
+<p>Thuần dưỡng quá tinh tế thú mất đi dã tính, đấu lên cũng khó coi a.</p>
+<p>Hắn cảm thấy bệ hạ tiếp xúc tiếp xúc hoang dại tinh tế thú, kỳ thật cũng là chuyện tốt, Roland đế quốc hoàn cảnh ác liệt, điều kiện gian khổ, một vị mềm yếu quân vương, là không thích hợp dẫn dắt đại gia đi ra khốn cảnh.</p>
+<p>Cho nên, hắn tuy rằng lo lắng thiếu niên an nguy, nhưng vẫn là tán đồng Tư Thịnh đại nhân đề nghị.</p>
+<p>Chỉ sợ vị đại nhân này, cũng cảm thấy bệ hạ nên rèn luyện rèn luyện đi? Cũng không biết……</p>
+<p>Nhớ tới tối hôm qua ở đại điện nhìn thấy kia một màn, Lý Triết Thành trong lòng vẫn như cũ líu lưỡi không thôi, hai người thế nhưng…… Này thật là làm người không tưởng được a!</p>
+<p>“Thú vị!”</p>
+<p>Hứa Tư Lập không biết Lý Triết Thành não bổ cái gì, hắn tâm tình thực hảo gật gật đầu, nói, “Vậy đi gặp hảo.”</p>
+<p>Tới rồi địa phương, lại xem có hay không cơ hội giết mấy chỉ.</p>
+<p>Đó là chưa kinh thuần dưỡng tinh tế thú, đến lúc đó hắn liền tính giết được chật vật, cũng sẽ không lại đọa quân vương uy phong đi?</p>
+<p>Hứa Tư Lập hưng phấn mà muốn xuất cung, việc này cũng không gạt Janice, tuy rằng nàng không quá tán đồng, nhưng chung quy ma bất quá Hứa Tư Lập, ngược lại cho hắn bày mưu tính kế lên.</p>
+<p>Việc này không thể gióng trống khua chiêng, bằng không chỉ biết gia tăng nguy hiểm cùng trở ngại, cho nên bọn họ chuẩn bị cải trang vi hành.</p>
+<p>Đến nỗi đấu thú trường vé vào cửa vấn đề, Lý Triết Thành đảo không lo lắng, hắn cùng nơi đó thủ vệ quân quen biết, tùy thời đi vào đều có thể, không cần bại lộ thân phận.</p>
+<p>Trải qua một phen cải trang, theo sau, Hứa Tư Lập liền ở thị nữ trưởng cùng hộ vệ trưởng yểm hộ hạ, thuận lợi chuồn ra hoàng cung, sau đó đi nhờ phi toa, hướng đấu thú trường phương hướng bay đi.</p>
+<p>Này phi toa, cũng là Tinh Tế Liên Minh viện trợ.</p>
+<p>Nói đến chua xót, Escher tinh thượng cơ hồ sở hữu công nghệ cao sản phẩm đều phát sinh ở Tinh Tế Liên Minh, bản địa không có bất luận cái gì cao tân kỹ thuật sản nghiệp, liền xưởng gia công đều không có.</p>
+<p>Bởi vì 9000 vạn dân cư, đặt ở rộng lớn vô ngần tinh tế trung thật sự không đủ xem, lại còn có muốn gánh vác siêu kếch xù phí chuyên chở cùng khả năng đến từ tinh tế thú công kích.</p>
+<p>Có thể nghĩ, không có bất luận cái gì nhãn hiệu nguyện ý tới nơi này kiến xưởng đầu tư.</p>
+<p>Phi toa ở thành thị trung tầng trời thấp phi hành.</p>
+<p>Hứa Tư Lập cúi đầu, nhìn trên mặt đất cảnh quan, trên mặt bình tĩnh, nhưng mà một đôi sáng ngời như tinh màu tím nhạt đôi mắt lại bán đứng hắn.</p>
+<p>Phi toa a!</p>
+<p>Hiện thực nhưng không như vậy cao cấp đồ vật, cảm giác so đua xe còn sảng.</p>
+<p>Đại khái là nhìn ra cái gì, Lý Triết Thành nhỏ giọng phân phó người điều khiển khai chậm một chút, lại chưa nói rõ nguyên nhân.</p>
+<p>Người điều khiển không hỏi, chậm rãi phóng tốc độ thấp độ.</p>
+<p>Hàng phía sau Hứa Tư Lập nghe được, làm bộ không nghe thấy, tiếp tục thưởng thức Roland Hoàng Thành cảnh sắc.</p>
+<p>Có thể thấy được tới, có được phi toa như vậy công nghệ cao người cũng không nhiều, ngay cả ô tô đều rất ít, trong thành đại đa số người thay đi bộ công cụ, nếu không phải xe ngựa, nếu không liền dứt khoát là thuần dưỡng quá tinh tế thú.</p>
+<p>Kiến trúc thượng, đại thể bảo trì vốn có phong cách, thiên hướng thời Trung cổ Âu thức phong cách, chỉ là ở một ít chi tiết nhỏ thượng, gia tăng rồi điểm khoa học kỹ thuật hàm lượng đồ vật.</p>
+<p>Đây là một bộ tràn ngập mâu thuẫn lại hài hòa cảnh tượng, các loại cổ xưa tiên tiến đồ vật hỗn hợp ở bên nhau, lẫn nhau đan chéo cộng dung, hình thành độc cụ Roland đặc sắc cảnh quan.</p>
+<p>Hứa Tư Lập xem đến mê mẩn.</p>
+<p>Nơi này, chính là hắn quốc gia.</p>
+<p>Từ giờ khắc này bắt đầu, hắn càng rõ ràng mà nhận thức đến điểm này, cũng vì chi hưng phấn.</p>
+<p>Bọn họ phi toa thực mau rời đi nội thành phạm vi.</p>
+<p>Bay qua tường thành sau, đương ngoại thành cảnh sắc ánh vào mi mắt khi, Hứa Tư Lập không khỏi ngẩn ra.</p>
+<p>Nếu nói nội thành cho hắn cảm giác, là tinh thần phấn chấn bồng bột, tràn ngập trật tự cùng mộng ảo, kia ngoại thành, càng như là…… Xóm nghèo.</p>
+<p>Có lẽ, nó chính là.</p>
+<p>Gồ ghề lồi lõm bùn đất mà bại lộ, dùng đá vụn cùng cát đất phô liền một cái lộ, từ cửa thành kéo dài hướng phương xa.</p>
+<p>Con đường hai bên đắp từng cái cũ nát nhà tranh, ăn mặc rách nát mọi người ở trong đó đi lại, ngoài thành thế giới, đã không có công nghệ cao.</p>
+<p>Chỉ có hoang vu, chỉ có bần cùng, chỉ có hôi hoàng sắc thái.</p>
+<p>Hứa Tư Lập ngơ ngác mà nhìn này mạc.</p>
+<p>Bỗng nhiên nói “Phi cao điểm, đến bầu trời đi.”</p>
+<p>Người điều khiển biết hắn là đại nhân vật, không có nhiều lời, trầm mặc mà đem phi toa kéo thăng, đi tới trời cao trung.</p>
+<p>Từ bầu trời đi xuống xem, càng thêm chấn động.</p>
+<p>Nội thành cùng ngoại thành khác nhau như thế rõ ràng.</p>
+<p>Vốn dĩ chủ quan cảm giác thượng cũng không nhỏ nội thành, cùng ngoại thành một so, tựa như chảo đáy bằng thượng bò một con con kiến giống nhau.</p>
+<p>Hứa Tư Lập mím môi, không có tiếp tục xem đi xuống, mở miệng làm người điều khiển lại bay đến tầng trời thấp đi.</p>
+<p>Người điều khiển yên lặng mà làm theo.</p>
+<p>Bọn họ lại lần nữa trở lại tầng trời thấp, Hứa Tư Lập nhịn không được lại ra bên ngoài xem.</p>
+<p>Có tiểu hài tử ở thổ hoàng sắc trên đất trống chơi trò chơi, nhìn đến phi toa, từng cái dùng tay chỉ trời, hưng phấn mà la to.</p>
+<p>Cũng có đại nhân chạy ra xem náo nhiệt.</p>
+<p>Tuy rằng nhật tử khả năng nghèo khổ, nhưng bọn hắn cũng không tử khí trầm trầm, thậm chí còn có lấy cục đá hướng bầu trời ném, tựa hồ muốn đem bọn họ nện xuống đi.</p>
+<p>Hứa Tư Lập cảm giác tâm tình hảo một ít.</p>
+<p>Dù sao những người này cũng tạp không đến, hắn coi như làm là ở hoan nghênh hắn hảo.</p>
+<p>Phi toa tiếp tục đi phía trước, thực mau rời đi cư dân khu.</p>
+<p>Cái kia đường đất nhưng thật ra vẫn luôn đi phía trước kéo dài, còn có không ít xe ngựa cùng kỵ thừa tinh tế thú đi ở mặt trên.</p>
+<p>“Những người này là muốn đi làm gì?” Hứa Tư Lập có chút kỳ quái hỏi.</p>
+<p>“Đấu thú trường a.”</p>
+<p>Người điều khiển nói, “Hôm nay dong binh đoàn trở về, phỏng chừng sẽ mang về không ít tinh tế thú.”</p>
+<p>“Trừ bỏ đuổi kịp đấu thú ngoại, còn có thể mua sắm một ít mới mẻ thú thịt, ở đấu thú trường bên kia mua so ở trong thành muốn tiện nghi rất nhiều.”</p>
+<p>Hứa Tư Lập gật gật đầu, đường xá xa xôi, phí chuyên chở liền không ít.</p>
+<p>Hắn nguyên bản cho rằng này đấu thú là thượng tầng giai cấp giải trí hạng mục, hiện tại xem ra, tựa hồ còn rất bình dân hóa.</p>
+<p>Snow · Roland rốt cuộc thâm cư hoàng cung, có quá nhiều hắn không hiểu sự vật, tương quan ký ức không phải không có chính là rất mơ hồ, thậm chí có nhận tri lệch lạc.</p>
+<p>Hứa Tư Lập cảm thấy, có lẽ hắn về sau có thời gian, thật muốn nhiều ra tới đi lại đi lại.</p>
+<p>Liền ở thiếu niên trầm tư thời điểm, bỗng nhiên, cách đó không xa một đạo thân ảnh hấp dẫn hắn chú ý.</p>
+<p>Đó là một cái độc hành nữ nhân, cõng cái em bé, đi ở bụi đất đầy trời bùn đất trên đường, đi bước một đi phía trước, thân mình câu lũ, dị thường gian nan bộ dáng.</p>
+<p>Ven đường có không ít người trải qua, nhưng không ai vì nàng dừng lại.</p>
+<p>Cuối cùng, đoạn đường này tạm thời không xuống dưới, chỉ có nàng một người yên lặng đi phía trước đi tới.</p>
+<p>Hứa Tư Lập có chút không đành lòng.</p>
+<p>Ở phi toa sắp lướt qua nàng đỉnh đầu khi, gọi lại người điều khiển.</p>
+<p>“Đi xuống, hỏi nàng đi chỗ nào, tiện đường liền mang nàng đoạn đường.”</p>
+<p>Phi toa thực rộng mở, lại nhiều ngồi một người cũng không thành vấn đề.</p>
+<p>Lý Triết Thành không tán đồng, nếu là thích khách làm sao bây giờ? Mà Janice, nhìn xem thần sắc kiên định thiếu niên, nhìn nhìn lại kia đối đáng thương mẫu tử, cuối cùng do dự mà hạ phi toa.</p>
+<p>Nàng đến tự mình đi nhìn xem, xác nhận không có nguy hiểm.</p>
+<p>Cũng may, Janice không có tại đây tuổi trẻ nữ nhân trên người, cảm ứng được bất luận cái gì nguyên tố hơi thở.</p>
+<p>Nàng chỉ là một cái tay không tấc sắt người thường, thậm chí còn càng nhu nhược một ít.</p>
+<p>Nhìn đến phi toa bỗng nhiên ngừng ở chính mình trước mặt, một cái ăn mặc tinh xảo nữ nhân triều chính mình đi tới, tuổi trẻ nữ tử cả người đều ngốc.</p>
+<p>Đãi Janice cho thấy ý đồ đến, nàng đã sợ hãi lại vui sướng.</p>
+<p>Nếu chỉ có nàng một người nói, nàng khả năng sẽ cự tuyệt, nhưng nàng còn mang theo hài tử, người hảo tâm nguyện ý tiện thể mang theo nàng, nàng tự nhiên vô cùng cảm kích.</p>
+<p>Nữ tử kêu Ali, là ngoại thành người, mang theo hài tử chuẩn bị đi đấu thú trường, tìm đang ở kia công tác trượng phu.</p>
+<p>“Tiểu thiếu gia, thật là thật cám ơn ngài!”</p>
+<p>Vừa lên phi toa, Ali liền kích động nói cảm ơn, “Ta đã đi rồi một ngày, nếu lại dựa ta chính mình, khả năng còn phải đi một ngày thời gian đâu.”</p>
+<p>Hứa Tư Lập chính xuyên thấu qua cửa sổ, nhìn nơi xa đường chân trời.</p>
+<p>Vừa mới phi toa giảm xuống thời điểm, hắn giống như nhìn đến thứ gì chợt lóe rồi biến mất, hắn nhăn chặt mi, bất động thần sắc mà nắm chặt trong tay lôi diệu 4000.</p>
+<p>Hy vọng là hắn hoa mắt đi.</p>
+<p>Nói cách khác, hắn chỉ sợ thật đến triệu hoán Tư Thịnh lại đây……</p>
+<p>Nghe được nữ tử nói, Hứa Tư Lập thu hồi ánh mắt, đối thượng nữ tử, thần sắc nhưng thật ra ôn hòa xuống dưới.</p>
+<p>“Uống trước nước miếng đi.”</p>
+<p>Hắn vừa dứt lời, Janice liền đã vì Ali đảo thượng một chén nước.</p>
+<p>Ali liên tục nói lời cảm tạ, lại không có vội vã uống, mà là đem bối thượng tiểu oa nhi thả xuống dưới.</p>
+<p>Tiểu oa nhi có một đôi thanh triệt mắt lục, tròn xoe, nhìn đặc biệt đáng yêu, ở mẫu thân uy thực hạ, hắn mở ra cái miệng nhỏ nhẹ nhàng mút nước miếng.</p>
+<p>Uống lên mấy khẩu lúc sau, liền quay mặt đi không uống.</p>
+<p>Ali liền đem dư lại chính mình uống lên.</p>
+<p>Nàng nhìn qua thực câu nệ, súc ở trong góc, cũng không dám cùng Hứa Tư Lập bọn họ nhiều giao lưu, chỉ là ôm hài tử, nhỏ giọng mà hừ khởi ca dao, trấn an hài tử cảm xúc.</p>
+<p>Hứa Tư Lập nghe kia xa lạ ca dao, cảm giác thập phần êm tai, có loại trấn an nhân tâm lực lượng.</p>
+<p>Yên lặng nghe xong một hồi, hắn liền nhớ kỹ giai điệu, cuối cùng không nhịn xuống, nhẹ nhàng mà đi theo nữ tử ngâm nga lên.</p>
+<p>Này vẫn là hắn đi vào thế giới này sau, lần đầu tiên ca hát.</p>
+<p>Cũng không biết có phải hay không hắn ảo giác, hắn tổng cảm thấy, theo hắn biểu diễn, trong không khí tựa hồ có cái gì năng lượng ở kích động, thực rất nhỏ, nhưng hắn cảm giác được.</p>
+<p>Janice cũng kinh ngạc mà nhìn hắn một cái, chậm rãi, biểu tình thả lỏng lại, tựa hồ đắm chìm ở kia giai điệu bên trong.</p>
+<p>Đương Hứa Tư Lập đem một bài ca dao hừ xong……</p>
+<p>【 đinh ～ chúc mừng lĩnh ngộ Escher tinh dân dao, đạt được kỹ năng mới [ Roland ngủ ngon khúc ], trí lực +1, kinh nghiệm +500】</p>
+<p>【 đinh ～ kinh nghiệm giá trị đã mãn, cá nhân cấp bậc lv2 tăng lên vì lv3, các thuộc tính +1】</p>
+<p>【 đinh ～ thành công phát động phạm vi kỹ [ Roland ngủ ngon khúc ], thuần thục độ +1】</p>
+<p>【 thỉnh không ngừng cố gắng, tiếp tục nỗ lực! 】</p>
+<p>Nhìn trước mặt spam nhắc nhở, Hứa Tư Lập cả người đều sợ ngây người.</p>
+<p>Hắn liền nhất thời ngứa nghề, tùy tiện xướng ca hát, như thế nào đột nhiên liền thăng cấp?</p>
+<p>Hơn nữa……</p>
+<p>500 kinh nghiệm, đây là nhiều ít con thỏ a?!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "than-thu-nuoi-lon-nguoi-trong-sach-muon-cuoi-ta";
+const NOVEL_TITLE = "Thân thủ nuôi lớn người trong sách muốn cưới ta";
+const CHAPTER_TITLE = "Chương 11";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
