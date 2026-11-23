@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 169 một sáu chín</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        [MĐTS] Mọi người đọc Ma Đạo Tổ Sư
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 169 một sáu chín</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong168.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong170.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>【 chúng thiếu niên vội vàng đều vọt tới boong tàu biên… Quả nhiên, bái ở mép thuyền phía dưới, từ dưới hướng lên trên xem màu đen thân ảnh, đúng là quỷ tướng quân Ôn Ninh…… Chúng thiếu niên bị hoảng sợ… Âu Dương Tử Chân trước rụt trở về, ngồi ở boong tàu thượng nói “Quỷ tướng quân như thế nào đơn độc tới tìm chúng ta?”… “Hắn…… Bái ở nơi đó làm gì?” “Dù sao khẳng định không phải muốn hại chúng ta lạp, bằng không ban ngày liền sẽ không ở Loạn Táng Cương thượng bảo hộ chúng ta.”……</p>
+<p>“Phốc!… Các ngươi xem hắn dáng vẻ kia, ghé vào thuyền bên ngoài vẫn không nhúc nhích, giống như một con ngốc ngốc đại hải quy!” Hắn như vậy vừa nói nhưng thật ra thực sự có người cảm thấy giống, nhưng mà còn không có cười rộ lên, Âu Dương Tử Chân kinh hô “Hắn đi lên!”… Vài tên thiếu niên ầm ầm tản ra, mấy cái nhát gan hoảng hoảng loạn loạn mà ở boong tàu thượng chạy vòng chạy trốn thùng thùng rung động… Lam Cảnh Nghi nói “Có cái gì rất sợ hãi, phía trước lại không phải chưa thấy qua!”… Ôn Ninh ướt đẫm mà lật qua mép thuyền nặng nề dừng ở boong tàu thượng… Nhìn chằm chằm Lam Tư Truy mặt, triều hắn đi qua. Lam Tư Truy cảm thấy được hắn là hướng chính mình tới, lấy lại bình tĩnh, Ôn Ninh hỏi hắn nói “Ngươi, ngươi tên là gì?” Lam Tư Truy hơi hơi sửng sốt, trạm đến đoan đoan chính chính, đáp “Vãn bối là Cô Tô Lam thị con cháu, tên là Lam Nguyện.” Ôn Ninh nói “Lam uyển?”</p>
+<p>Lam Tư Truy gật gật đầu. Ôn Ninh nói “Ngươi… Ngươi có biết hay không, cái này danh, tên là ai cho ngươi lấy?”… Lam Tư Truy… Cẩn thận mà đáp “Tên tự nhiên là cha mẹ lấy.” Ôn Ninh nói “Kia, cha mẹ ngươi còn khoẻ mạnh sao?” Lam Tư Truy nói “Cha mẹ ta ở ta lúc còn rất nhỏ liền qua đời” một bên một người thiếu niên… Thấp giọng nói “Tư Truy, đừng nói nhiều như vậy, để ý có cổ quái” Ôn Ninh giật mình, “Tư Truy? Tư Truy là ngươi tự?” Lam Tư Truy nói “Đúng là.” Ôn Ninh nói “Là ai cho ngươi lấy?” Lam Tư Truy nói “Hàm Quang Quân.” Ôn Ninh cúi đầu, yên lặng đem “Tư Truy” hai chữ niệm hai lần. Thấy hắn như hiểu ra chút gì, Lam Tư Truy “Đem…” Hắn vốn là tưởng xưng hô tướng quân, nhưng lại cảm thấy quái quái, sửa lời nói “Ôn tiên sinh? Tên của ta làm sao vậy?” Ôn Ninh nhìn chăm chú hắn mặt, hỏi một đằng trả lời một nẻo nói “Ngươi, ngươi lớn lên, rất giống, rất giống ta một vị phương xa thân thích…” Lời này nghe tới, thật như là hạ cấp tu sĩ, họ khác môn sinh tưởng cùng bổn gia con cháu làm thân thích lôi kéo làm quen lý do thoái thác. 】</p>
+<p>Ôn Ninh cúi đầu nhìn chằm chằm A Uyển không bỏ, sắc mặt rất là ngưng trọng, Ôn Tình cho rằng nhà mình đệ đệ lại phát hiện sự tình gì, cũng vì này một túc.</p>
+<p>Ôn Ninh làm như rốt cuộc quan sát xác nhận rồi kết quả, ngẩng đầu nói “A Uyển chính là lớn lên rất giống đường huynh, ta nói đều là lời nói thật.”</p>
+<p>“……” Ôn Tình “Ngươi đầu óc là rỉ sắt đi?” Ở như vậy trường hợp hạ nói Lam gia dòng chính con cháu hội trưởng đến giống Ôn gia người? Sẽ có người tin ngươi chuyện ma quỷ mới là lạ!</p>
+<p>Ôn Ninh nghiêng đầu “?”</p>
+<p>Ngụy Vô Tiện đỡ trán, Ôn Ninh đây là tưởng nhận hồi A Uyển, vẫn là không nghĩ? Nếu cũng chưa tính toán làm A Uyển nhận tổ quy tông, như thế nào còn như vậy trước công chúng mà nói lời này? Bất quá, cũng chính là như thế nói thẳng, ngược lại càng sẽ không có người khả nghi đi.</p>
+<p>Bất quá, so sánh với tới, ‘ Tư Truy ’ cái này tự quả nhiên là Lam Trạm lấy sao.</p>
+<p>“Lam Trạm……”</p>
+<p>“Ân.”</p>
+<p>“……”</p>
+<p>“Chuyện gì?”</p>
+<p>“Nói ngươi cấp tiểu A Uyển lấy tự thật sự phi thường có Cô Tô Lam thị phong cách a.” ‘ cân nhắc chuyện cũ bất kham truy ’ gì đó, kẻ si tình gì đó, thật sự làm hắn một chút cũng không dám thâm tưởng.</p>
+<p>“…… Ân.”</p>
+<p>An tĩnh như gà không bao lâu, Nhiếp Hoài Tang có điểm không nín được, ‘ nhiều lời nhiều sai ’ nháy mắt vứt tới rồi sau đầu, nhưng mà đại ca bên này không dễ chọc, Ngụy Vô Tiện bên kia cắm không được lời nói, châm chước sau một lúc lâu……</p>
+<p>“Lam lão tiên sinh, kỳ thật, nhà các ngươi Cảnh Nghi cũng là một nhân tài a.”</p>
+<p>“……”</p>
+<p>“Gặp qua quỷ tướng quân hung tàn bộ dáng sau, còn dám đi đầu giễu cợt, lá gan thật không nhỏ.”</p>
+<p>Lam Khải Nhân hướng hắn xốc hạ mí mắt, lại nhắm mắt tĩnh thần đi.</p>
+<p>Nhiếp Hoài Tang …… Giống như không khen đến giờ nhi đi lên?</p>
+<p>Tiểu Cảnh Nghi (＾▽＾)</p>
+<p>【… Lam Tư Truy cũng không biết nên như thế nào trả lời, đành phải nói “Thật, thật vậy chăng?” Ôn Ninh nói “Thật sự!”… Không biết vì sao, nhìn “Quỷ tướng quân” dáng vẻ này, Lam Tư Truy trong lòng bỗng nhiên nảy lên một cổ mang theo nồng đậm chua xót thân thiết cảm… Nhưng đúng lúc này, Lam Tư Truy thấy được một bên Kim Lăng sắc mặt biến thành màu đen, cực kỳ khó coi… Hắn lúc này mới nhớ tới, trước mặt nhìn như vô hại quỷ tướng quân Ôn Ninh, là Kim Lăng kẻ thù giết cha… Ôn Ninh “Tươi cười” cũng dần dần biến mất, hắn chậm rãi chuyển hướng Kim Lăng, nói “Kim như lan công tử?” Kim Lăng lạnh lùng nói “Đó là ai” trầm mặc một chút, Ôn Ninh sửa lời nói “Kim Lăng tiểu công tử.” Kim Lăng gắt gao nhìn chằm chằm hắn, mặt khác các thiếu niên tắc khẩn trương mà nhìn chằm chằm Kim Lăng, sợ hắn xúc động hành sự. Lam Tư Truy nói “Kim công tử…”</p>
+<p>Kim Lăng nói “Ngươi tránh ra, không liên quan ngươi sự.” Lam Tư Truy lại mơ hồ cảm thấy, này nhất định sẽ không không liên quan chuyện của hắn, tiến lên che ở Kim Lăng trước mặt, nói “Kim Lăng, ngươi trước thanh kiếm thu……”</p>
+<p>Kim Lăng nguyên bản liền tiếng lòng căng chặt, tầm mắt bị hắn một chắn, không tự chủ được quát “Đừng cản ta!” Hắn duỗi tay đẩy, Lam Tư Truy nguyên bản liền say tàu… Đụng vào mép thuyền, suýt nữa lật qua đi tái tiến đen như mực đêm giang, may mắn bị Ôn Ninh đề ra một phen, túm trở về. Một đám thiếu niên lập tức ba chân bốn cẳng đi lên dìu hắn “Tư Truy huynh!” Lam công tử ngươi không có việc gì đi? Ngươi còn vựng sao?” Ôn Ninh thấy Lam Tư Truy sắc mặt trắng bệch, nhất thời sốt ruột, nói “Kim công tử, ngươi hướng ta tới, Ôn Ninh tuyệt không phản kháng, nhưng là a… Lam uyển công tử…”</p>
+<p>Lam Cảnh Nghi đại khí, trách nói “Kim Lăng ngươi người này như thế nào như vậy! Tư Truy chiêu ngươi chọc ngươi?”</p>
+<p>… Thấy bạn cùng lứa tuổi đều đi dìu hắn, đều tới chỉ trích chính mình, một màn này cùng quá vãng vô số hình ảnh trùng điệp ở cùng nhau… Rõ ràng thân phận tôn quý, nhưng tình cảnh lại như thế xấu hổ, khi còn nhỏ không có thích cùng hắn chơi thế gia con cháu, lớn một chút không có nguyện ý đi theo hắn thế gia con cháu. Hắn càng muốn hốc mắt càng hồng, bỗng nhiên lớn tiếng nói “Là! Đều là ta sai! Ta chính là tệ như vậy một người! Thế nào?!” Mặt khác thiếu niên bị hắn rống đến đồng thời ngơ ngẩn. Cứng họng một trận, có người không phục, nói thầm nói “Cái gì nha, rõ ràng là chính ngươi trước động tay…… Vì cái gì ngược lại còn hung đi lên.” Kim Lăng hung tợn nói “Các ngươi quản ta?! Luân được đến các ngươi tới quản giáo ta?!” 】</p>
+<p>Đối Kim Lăng cái này thực tế còn không có sinh ra đại cháu ngoại, tuy rằng mặt mũi thượng lớn lên giống Kim Tử Hiên, áo trong trung lại đem Giang Trừng học cái mười thành mười, nhưng ở Ngụy Vô Tiện nơi này vẫn như cũ là đau lòng áp đảo hết thảy, hắn đại cháu ngoại, nên là so Kim Tử Hiên càng thiên chi kiêu tử thiên chi kiêu tử.</p>
+<p>Nhưng bỉ thế Kim Lăng, lại như câu kia, thân phận tôn quý, tình cảnh xấu hổ.</p>
+<p>Đây là Ngụy Vô Tiện lần thứ hai ‘ thấy ’ Kim Lăng cùng này đó ở chung đến còn tính không tồi tiểu bối nổi lên tranh chấp.</p>
+<p>Lần đầu tiên là Phục Ma Động trung, tiểu Kim Lăng thấy bị hắn thọc quá một đao lại bình yên vô sự Di Lăng lão tổ, thần sắc phức tạp khoảnh khắc, bị nghĩ lầm còn tưởng lại thọc một đao;</p>
+<p>Lần này là thấy kẻ thù giết cha, muốn động chưa động là lúc, đẩy một phen Lam Tư Truy, lại đã chịu mọi người chỉ trích.</p>
+<p>Nhưng kỳ thật, hắn cũng bất quá là thấy kẻ thù, vài phần khó có thể tự ức thôi.</p>
+<p>Cố tình đứa nhỏ này, còn không phải như vậy am hiểu cùng người tương giao.</p>
+<p>Không người làm bạn, không người có thể hiểu, liền cũng chỉ có thể bày ra ngoài mạnh trong yếu bộ dáng.</p>
+<p>Ngụy Vô Tiện hung hăng trừng mắt nhìn mắt Giang Trừng, nói đến cùng, chính là Giang Trừng sẽ không mang hài tử, nếu là hắn tới, tuyệt đối sẽ không đem người giáo thành như vậy!</p>
+<p>Giang Trừng trừng mắt nhìn trở về Ngươi gia hỏa này rốt cuộc từ đâu ra đúng lý hợp tình?!</p>
+<p>【 Ngụy Vô Tiện cùng Lam Vong Cơ nguyên bản liền ở khoảng cách so gần một cái trên thuyền, này một kêu dưới, Ngụy Vô Tiện ở trong khoang thuyền ngẩn ra, lao tới cách thuyền tương vọng, thấy Kim Lăng giơ kiếm cùng những người khác tương đối, nói “Sao lại thế này?” Vừa thấy này hai người, Lam Tư Truy liền cảm thấy cái gì khó giải quyết cục diện cũng có thể giải quyết dễ dàng, đại hỉ nói “Hàm Quang Quân! Ngụy tiền bối! Mau tới đây a!” Lam Vong Cơ tay phải đem hắn eo vừa xem, mang lên Tị Trần, hai người ngự kiếm rơi xuống kia con thuyền đánh cá thượng, Ngụy Vô Tiện thân hình đầu tiên là quơ quơ, bị Lam Vong Cơ đỡ lấy, lúc này mới lại hỏi “Ôn Ninh sao lại thế này? Ngươi không phải nói liền tới nhìn xem?” Ôn Ninh nói “Xin lỗi công tử, là ta sai, ta không nhịn xuống……”</p>
+<p>Kim Lăng thanh kiếm thay đổi hướng hắn giận dữ hét “Không cần phải ngươi ở chỗ này giả mù sa mưa!”</p>
+<p>Ngụy Vô Tiện nói “Kim Lăng, ngươi trước thanh kiếm buông.” Kim Lăng nói “Ta không bỏ!”</p>
+<p>Ngụy Vô Tiện còn muốn nói nữa lời nói, ai ngờ, Kim Lăng bỗng nhiên lên tiếng khóc lớn lên. Này vừa khóc, mọi người ngây ra như phỗng. Ngụy Vô Tiện ngốc ngốc nhiên triều hắn đi rồi một bước, nói “Này…… Đây là làm sao vậy?” Kim Lăng tuy rằng khóc đến đầy mặt đều là nước mắt, lại còn nghẹn ngào lớn tiếng nói “Đây là cha ta kiếm. Ta không bỏ!” Trong lòng ngực hắn gắt gao ôm, là Kim Tử Hiên bội kiếm, Tuế Hoa. Thanh kiếm này, là hắn cha mẹ để lại cho hắn duy nhất một thứ.</p>
+<p>Giờ này khắc này, ở trước mặt mọi người gào khóc mà khóc Kim Lăng, làm hắn phảng phất lại thấy được năm đó Giang Yếm Ly thương tâm đến cực chỗ khi lên tiếng khóc lớn bộ dáng. Giống Kim Lăng lớn như vậy thiếu niên, có đều đã thành thân, lớn chút nữa thậm chí đều có hài tử. Khóc thút thít đối với bọn họ mà nói, là kiện thực sỉ nhục sự. Trước mặt mọi người khóc lớn, đó là trong lòng nên có bao nhiêu ủy khuất. Trong khoảng thời gian ngắn, Ngụy Vô Tiện lại có chút chân tay luống cuống. Hắn nhìn sang Lam Vong Cơ, tựa hồ tưởng xin giúp đỡ, nhưng Lam Vong Cơ liền càng không thể biết nên làm cái gì bây giờ. Đúng lúc này, một thanh âm từ trên mặt sông truyền đến “A Lăng!” 】</p>
+<p>Ngụy Vô Tiện cùng Giang Trừng tức khắc lẫn nhau trừng không đứng dậy, hận không thể bản thân chạy đến mười mấy năm sau sống sờ sờ Kim Lăng trước mặt, tranh đoạt đem người ôm đến trong lòng ngực xoa bóp vê viên, ách trấn an che chở, tuyệt đối muốn ngôi sao không cho ánh trăng.</p>
+<p>Nhưng mà hiện tại không phải nhiều năm sau, cũng không có có sẵn bảo bối cháu ngoại, tức khắc khiến cho bọn họ đầy ngập tình thương con không chỗ nhưng đã phát, vì thế hai người không hẹn mà cùng về phía Giang Yếm Ly, Kim Tử Hiên nhìn lại.</p>
+<p>Kim Tử Hiên đang ở an ủi Giang Yếm Ly, “A Ly đừng khổ sở, chúng ta A Lăng này thế cũng nhất định sẽ đến, đến lúc đó, hắn sẽ có trên đời tốt nhất sủng ái cha mẹ hắn, tôn quý nhất thân phận, nghiêm khắc dạy dỗ hắn thành tài trừng cữu cữu, mang theo hắn nhảy nhót lung tung, chơi biến thiên hạ tiện cữu cữu, sẽ có thành đàn đồng bạn, ba năm trúc mã bạn tốt, bình bình an an mà lớn lên, sau đó trở thành danh mãn tu giới danh sĩ, đỉnh thiên lập địa nam tử hán!”</p>
+<p>Ngụy Vô Tiện & Giang Trừng Này còn nói giống lời nói, nếu không, xem ở Kim Lăng phần thượng, đãi Kim Lăng đài thế cục ổn định, liền nhận cái này cháu ngoại cha hắn?</p>
+<p>Nhiếp Hoài Tang vươn móng vuốt ba kéo một vòng, ân, nếu là vị này Kim Lăng, kim như lan tiểu công tử sinh ra nói, có cái đại khái đã là Kim gia tông chủ cha, Vân Mộng Giang thị đại tiểu thư nương, Di Lăng lão tổ đại cữu, Cô Tô Lam thị mợ cả, Vân Mộng tông chủ nhị cữu…… Thật là thực ghê gớm oa oa! Nói, giang tỷ tỷ xương sườn canh như vậy ăn ngon, hắn có thể hay không đi nhận cái nghĩa tỷ, cũng hỗn cái Nhiếp cữu cữu đương đương?</p>
+<p>【… Vân Mộng Giang thị thuyền lớn ở tiểu thuyền đánh cá bên phải… Mới vừa rồi ra tiếng đúng là mép thuyền biên Giang Trừng. Kim Lăng hai mắt đẫm lệ mông lung, vừa thấy cữu cữu, lập tức lung tung lau một phen mặt hút hút cái mũi… Cắn răng bay qua đi, rơi xuống Giang Trừng bên người. Giang Trừng bắt lấy hắn nói “Ngươi sao lại thế này? Ai khi dễ ngươi!” Kim Lăng hung hăng xoa đôi mắt, không chịu nói chuyện. Giang Trừng ngẩng đầu, âm lãnh ánh mắt đầu hướng kia con thuyền đánh cá, hai mắt hàn quang đảo qua Ôn Ninh, đang muốn đình trú đến Ngụy Vô Tiện trên người, Lam Vong Cơ cố ý vô tình mà đi rồi một bước, vừa lúc chặn Ngụy Vô Tiện thân hình. Một người gia chủ cảnh giác nói “Ngụy Vô Tiện, ngươi đến kia con thuyền đi lên làm gì?”… Âu Dương Tử Chân nói “Diêu tông chủ ngài hà tất dùng như vậy khẩu khí nói chuyện đâu? Nếu Ngụy tiền bối muốn làm cái gì, hiện tại đại gia chỉ sợ căn bản đều không thể bình yên vô sự mà ngồi ở trên thuyền a.” Lời này vừa ra, rất nhiều lớn tuổi tu sĩ đều có chút xấu hổ…</p>
+<p>Giang Trừng hơi hơi nghiêng đầu, nói “Âu Dương tông chủ.” Bị điểm đến danh Âu Dương tông chủ mí mắt đi theo tâm một khối thình thịch thẳng nhảy, chỉ nghe Giang Trừng lạnh lùng thốt “Nhớ không lầm nói, nói chuyện cái kia, là ngươi nhi tử đi. Thật là năng ngôn thiện biện.” Âu Dương tông chủ vội nói “Tử Chân! Trở về, đến cha nơi này tới!”</p>
+<p>Âu Dương Tử Chân khó hiểu nói “Cha, không phải ngươi làm ta đến trên con thuyền này tới, đừng phiền các ngươi sao?”</p>
+<p>Âu Dương tông chủ mạt hãn nói “Được rồi! Ngươi hôm nay ra nổi bật còn chưa đủ sao, cho ta lại đây!” Nhà mình trú trấn ba lăng, cùng Vân Mộng ly đến gần, cùng Giang thị thế lực vô pháp nhi so, hắn nhưng không nghĩ bởi vì nhi tử liên tiếp vì Ngụy Vô Tiện phát ra tiếng bị Giang Trừng ghi hận thượng. Giang Trừng xẻo liếc mắt một cái Ngụy Vô Tiện cùng Lam Vong Cơ, liền ôm lấy Kim Lăng vai hồi trong khoang thuyền đi. Âu Dương tông chủ thở dài nhẹ nhõm một hơi, lại đối nhi tử quát “Ngươi ngươi ngươi! Thật là càng lớn càng không nghe lời! Ngươi rốt cuộc quá bất quá tới! Lại bất quá tới ta qua đi bắt ngươi!” Âu Dương Tử Chân quan tâm nói “Cha, ngài cũng đi vào nghỉ ngơi đi, ngài linh lực còn không có khôi phục đâu, khẳng định vô pháp lại đây, nhưng đừng tùy tiện ngự kiếm nha.”</p>
+<p>Hiện tại đại đa số người linh lực đều còn ở thong thả tăng trở lại trung… Âu Dương tông chủ dáng người lại phá lệ cao lớn cường tráng, hiện tại thật đúng là không thể bay qua đi bắt hắn, bị nhi tử tức giận đến phất tay áo tiến khoang. Nhiếp Hoài Tang ở khác trên một con thuyền ha ha cười lên tiếng, mặt khác gia chủ nhìn hắn, đều là không nói gì, nhưng nên tán cũng lục tục tan. 】</p>
+<p>Ngụy Vô Tiện chỉ vào Giang Trừng, đối lại có miệng cười Giang Yếm Ly cáo trạng nói “Sư tỷ ngươi nhìn xem Giang Trừng, tiền đồ a hắn, người tiểu tử thật liền nói câu công đạo lời nói, Âu Dương cái kia làm lão tử đã bị trực tiếp uy hiếp, hắn cái này tông chủ đương đến thật là uy phong a, bình thường chính là như vậy dạy hư Kim Lăng đi?”</p>
+<p>Giang Trừng đối này mắt điếc tai ngơ, chỉ vào Ngụy Vô Tiện, hướng Lam Vong Cơ chất vấn nói “Lam Nhị ngươi có ý tứ gì, ta cùng Ngụy Vô Tiện như thế nào, yêu cầu ngươi tới che ở trung gian sao?!”</p>
+<p>Lam Vong Cơ ngó mắt Giang Trừng, không đáp một ngữ, chỉ là có khác ý vị mà lại đem Ngụy Vô Tiện hướng trong lòng ngực mang theo mang, cũng thay đổi cái triều mặt phương hướng.</p>
+<p>Giang Trừng “……”</p>
+<p>Giang Trừng bị Lam Nhị mặt dày vô sỉ cả kinh không thanh nhi, Kim Tử Hiên cũng nhẹ nhàng thở ra, sau đó…… Cũng đem Giang Yếm Ly mang theo dịch vị trí.</p>
+<p>Vẫn là ly này hai người xa một chút hảo.</p>
+<p>Ngụy Vô Tiện “……”</p>
+<p>Nhiếp Hoài Tang lại đi theo ‘ ha ha ’ cười lên tiếng, lại chậm rãi tiêu thanh ở hắn đại ca không nói gì trừng mắt bên trong.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong168.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong170.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "mdts-moi-nguoi-doc-ma-dao-to-su";
+const NOVEL_TITLE = "[MĐTS] Mọi người đọc Ma Đạo Tổ Sư";
+const CHAPTER_TITLE = "Chương 169 một sáu chín";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

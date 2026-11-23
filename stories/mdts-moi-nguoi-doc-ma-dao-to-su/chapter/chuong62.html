@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 62 62</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        [MĐTS] Mọi người đọc Ma Đạo Tổ Sư
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 62 62</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong61.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong63.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>【… Lam Hi Thần nói “Gần đây, Lan Lăng Kim thị kim tông chủ ở Lang Tà vùng chống đỡ pha khổ… Ta nhớ rõ ngươi nói với ta, hy vọng đạt được phụ thân tán thành. Hiện tại ngươi đã ở Minh Quyết huynh kỳ hạ, này vọng hay không như cũ?”</p>
+<p>Mạnh Dao tựa hồ nín thở ngưng thần lên, sau một lúc lâu lặng im, đáp “…… Như cũ.”</p>
+<p>Lam Hi Thần nói “…… Ta tin tưởng, nếu là ngươi mở miệng dò hỏi, Minh Quyết huynh sẽ tôn trọng ngươi lựa chọn.”</p>
+<p>Nhiếp Minh Quyết… Nói “Ta cho ngươi viết một phong tiến cử tin. Ngươi nếu thật muốn báo ta nhiều sát mấy cái Ôn cẩu đó là!”</p>
+<p>… Nhiếp Minh Quyết… Cầm trong tay một khác đem bội đao hướng trên bàn một phóng Lam Hi Thần thấy cười nói “Hoài Tang đao?”</p>
+<p>Nhiếp Minh Quyết nói “Hắn ở ngươi nơi đó tuy nói an toàn, nhưng cũng không thể hoang phế công khóa. Ngươi kêu người khác có rảnh đốc xúc hắn, lần sau gặp mặt ta muốn tra hắn đao pháp tâm pháp…… Nói đến, như thế nào, các ngươi trước kia gặp qua sao?”</p>
+<p>Mạnh Dao nói “Trạch Vu Quân, ta là gặp qua.” Nhiếp Minh Quyết nói “Ở nơi nào? Khi nào?”</p>
+<p>Lam Hi Thần cười lắc đầu nói “Vẫn là đừng nói nữa suốt đời sỉ nhục, Minh Quyết huynh ngươi cũng không cần hỏi lại.”</p>
+<p>Nhiếp Minh Quyết nói “Ở trước mặt ta còn sợ cái gì mất mặt, Mạnh Dao nói.”</p>
+<p>Mạnh Dao lại nói “Trạch Vu Quân nếu không muốn nói, kia ta cũng chỉ có thể bảo thủ bí mật.”</p>
+<p>… Nghe bọn hắn nói chuyện phiếm, Ngụy Vô Tiện tổng nhịn không được tưởng xen mồm, nhưng mà lại cắm không thượng, thầm nghĩ “Lúc này bọn họ cảm tình thật không kém. Trạch Vu Quân còn rất có thể nói chuyện phiếm, như thế nào Lam Trạm như vậy sẽ không nói chuyện phiếm? Bất quá, hắn sẽ không nói chuyện phiếm, câm miệng cũng khá tốt, lời nói đều bị ta nói, hắn liền nghe ‘ ân ’ một ‘ ân ’ cũng man hảo. Cái này kêu cái gì tới……” Ít ngày nữa, Mạnh Dao liền dắt Nhiếp Minh Quyết kia phong tiến cử tin rời đi hà gian, hướng Lang Tà xuất phát. 】</p>
+<p>Ngụy Vô Tiện vui cười, “‘ gọi là gì ’, này vừa nói tất cả, đương nhiên là kêu ‘ phu xướng phu tùy ’ a, đúng không, Lam Trạm?”</p>
+<p>Lam Vong Cơ trả lời “Ân.”</p>
+<p>Ngụy Vô Tiện “……” Lời này thực tiễn cũng quá nhanh.</p>
+<p>Mọi người vô ngữ, người tam tôn trò chuyện một chút, nói cái lời nói, ngươi còn tưởng xen mồm, cắm không thượng liền tính, liền này đều có thể quải đến Hàm Quang Quân trên người, khoe ra hai ngươi trời sinh một đôi sao?</p>
+<p>Lam Hi Thần mỉm cười, ta rất có thể nói chuyện phiếm, cùng ta đệ đệ có quan hệ gì sao? Hiện tại nghĩ đến, kia một lần đại khái là duy nhất một lần ba người hảo hảo ngồi xuống tâm bình khí hòa một lần nói chuyện, lại sau lại đại ca cùng tam đệ chi gian khác nhau lại càng lúc càng lớn, nếu là……</p>
+<p>Nhiếp Minh Quyết đối Kim Quang Dao nói “Nếu như sớm biết hậu sự, ta lúc trước tuyệt đối sẽ không cho ngươi đi hướng Kim thị!” Nhiếp Minh Quyết giờ phút này cùng Lam Hi Thần ý tưởng không ước mà hợp, chỉ là, trên đời không có như vậy nhiều sớm biết.</p>
+<p>Bị đánh thức đại ca kiểm tra việc học sợ hãi cảm Nhiếp Hoài Tang thầm nghĩ Hiện tại đã biết cũng không tính vãn sao.</p>
+<p>Ngụy Vô Tiện tròng mắt chuyển động, hướng về phía Lam Hi Thần chớp hạ mắt, nói “Nói Trạch Vu Quân, ‘ suốt đời sỉ nhục ’ là cái gì a, so Lam Trạm uống say còn mất mặt sao?”</p>
+<p>Lam Hi Thần “……” Ngụy công tử, thỉnh cầu xem hạ ngươi phía sau Vong Cơ, nếu lại nói thượng vài câu, Lam gia khủng có anh em bất hoà chi nguy!</p>
+<p>【… Nhiếp Minh Quyết bắt tay phóng tới chuôi đao thượng, tiềm qua đi… Chỉ thấy Mạnh Dao đứng ở đầy đất thi đôi bên trong, đem một thanh trường kiếm từ một người tu sĩ ngực rút ra… Chết ở hắn dưới kiếm người nọ, là Lan Lăng Kim thị tu sĩ.</p>
+<p>Nhiếp Minh Quyết đem một màn này xem ở trong mắt, lưỡi đao ra khỏi vỏ một tấc…… Nghe thấy cái này quen thuộc ra khỏi vỏ tiếng động, Mạnh Dao đột nhiên quay đầu lại, hồn phách đều phải bay “…… Nhiếp tông chủ?” Mạnh Dao là nhất rõ ràng Nhiếp Minh Quyết làm người…… Hoảng sợ muôn dạng dưới, hắn ngữ tốc bay nhanh…… Công đạo sự tình lại như cũ trật tự rõ ràng, thả những câu cường điệu người khác có bao nhiêu đáng giận, chính mình có bao nhiêu vô tội. Nhiếp Minh Quyết một phen xách lên hắn cổ áo, nhắc tới tới, nói “Ngươi nói dối!”</p>
+<p>…… Cuối cùng, ở Nhiếp Minh Quyết áp bách dưới, Mạnh Dao vẫn là gian nan mà nói một cái “Đúng vậy” tự.</p>
+<p>…… Nhiếp Minh Quyết xoay người sang chỗ khác, ai ngờ, chợt nghe hắn nói “…… Vẫn là không được.”</p>
+<p>Nhiếp Minh Quyết đột nhiên quay đầu lại, Mạnh Dao…… Đã đem kiếm nhắm ngay chính mình bụng, thần sắc tuyệt vọng…… Dùng sức đâm. Nhiếp Minh Quyết đồng tử sậu súc…… Xông về phía trước tiến đến, nửa quỳ trên mặt đất…… Đỡ hắn thân thể, bàn tay ấn ở hắn ngực thua một trận linh lực. Ai ngờ, hắn đột nhiên thân thể hơi chấn, một trận âm lãnh linh lưu Miên Miên không dứt mà tự bụng truyền đến.</p>
+<p>…… Nhiếp Minh Quyết chỉ sợ là vạn vạn lần không thể đoán được, Mạnh Dao thật sự sẽ đối hắn hạ độc thủ…… Mạnh Dao cũng cái gì cũng chưa nói, đem kiếm cắm vào trong vỏ, hướng hắn cúi người hành lễ, cũng không quay đầu lại mà chạy như bay mà đi.</p>
+<p>…… Nhiếp Minh Quyết đại khái là lần đầu nhìn thấy như thế mặt dày vô sỉ người, hơn nữa người này vẫn là hắn từ trước một tay đề bạt đi lên thân tín. Vì thế, hắn nổi trận lôi đình…… Lam Hi Thần vừa tới liền cười nói “Minh Quyết huynh thật lớn hỏa khí, Mạnh Dao đâu? Như thế nào không tới tưới tắt ngươi hỏa?”</p>
+<p>Nhiếp Minh Quyết đối Lam Hi Thần đem Mạnh Dao giết người giá họa, giả chết chạy trốn việc còn nguyên thuật lại, Lam Hi Thần cũng ngẩn ngơ… Nhiếp Minh Quyết lạnh lùng nói “Hắn tốt nhất không cần bị ta bắt được, nếu không ta nhất định lấy hắn tế đao của ta!”</p>
+<p>Nhưng mà, ở kế tiếp mấy năm, Mạnh Dao người này giống như là bỗng nhiên biến mất giống nhau, đá chìm đáy biển, một chút tung tích cũng đã không có. Nhiếp Minh Quyết…… Tố không cùng người thân cận, hiếm khi cùng người thổ lộ tình cảm, khó khăn một lần có một cái đắc lực thoả đáng, tín nhiệm phi thường tâm phúc cấp dưới, tán thành năng lực của hắn, cũng tán thành hắn làm người, ai ngờ người này chân thật bộ mặt căn bản không phải chính mình sở cho rằng như vậy, cũng khó trách hắn bắn ngược cảm xúc như thế mãnh liệt. 】</p>
+<p>Không ngoài sở liệu, chuyện này cũng bị đọc ra tới, Kim Quang Dao còn duy trì ngay ngắn dáng người, lại càng hiện suy sụp thái độ.</p>
+<p>Lam Hi Thần lẩm bẩm “Lúc trước, lúc trước cùng ta theo như lời chính là, là……”</p>
+<p>Kim Quang Dao nói “Là ta cô phụ nhị ca tín nhiệm, làm đại ca, nhị ca thất vọng rồi, ta cũng là thân bất do kỷ a!”</p>
+<p>Nhiếp Minh Quyết làm như nghe nhiều loại này trốn tránh chi ngữ, ghét cực kỳ loại lý do này, hai mắt bốc hỏa mà trừng mắt nhìn qua đi.</p>
+<p>Này ba cái làm người xử thế trời nam đất bắc, thiên kém mà nhân vật, thế nhưng cũng có thể gom lại cùng nhau, kết thành khác họ huynh đệ, này đến tột cùng là như thế nào một loại nghiệt duyên?</p>
+<p>Ngụy Vô Tiện yên lặng cảm thán, nhịn không được thế tâm mệt Xích Phong Tôn mở miệng phản kích, nói “Đối phó loại này khinh hạ giấu thượng, đoạt người công lao người, tùy tiện ngẫm lại đều có thể nghĩ ra mấy chục loại đường ra, huống chi còn có trở về Xích Phong Tôn trướng hạ đường lui ở, Liễm Phương Tôn như thế dĩnh ngộ tuyệt luân, mặt khác được không biện pháp thật sự một cái cũng không nghĩ ra được sao?”</p>
+<p>“Nhưng ngươi luôn là vì chính mình tìm đủ lý do, sau đó hy sinh chính mình nhân nghĩa đạo đức, lựa chọn ‘ giết người sự ’ loại này gần nhất nhanh nhất biện pháp, chẳng sợ này thủ đoạn thiên lí bất dung. Nhưng ngươi hiển nhiên đã quên một câu, ‘ nếu muốn người không biết, trừ phi mình đừng làm ’!”</p>
+<p>Kim Quang Dao nói “Đối với Ngụy công tử ngươi người như vậy tới giảng, có lẽ có mấy chục loại phương pháp, nhưng ta có cái gì đâu? Xuất thân làm người trơ trẽn, tu đạo thiên tư bình thường, còn có coi ta như không có gì huyết thống phụ thân, giống cái ngốc tử giống nhau quy quy củ củ, muốn tới khi nào mới có thể dương mi thổ khí, trở nên nổi bật?!”</p>
+<p>Kim Tử Hiên tự biết, mặc dù hắn chưa nói, chính mình cái này chính chi con vợ cả chỉ sợ cũng là hắn trở ngại chi nhất.</p>
+<p>Nhiếp Minh Quyết lạnh lùng nói “Còn ở xây từ giảo biện! Ta Nhiếp thị tổ tiên xuất thân không thấp hơi sao? Nhưng mà vẫn là đừng ra máy dệt, lượng đao nhập đạo, sáng lập Nhiếp gia mấy trăm năm cơ nghiệp! Di Lăng lão tổ lúc ấy tình cảnh thực hảo sao? Lấy linh lực bị hao tổn thấp kém chi hoàn cảnh xấu, ngạnh sinh sinh tự mở ra một con đường sát ra một cái đường máu tới! Ngươi là xuất thân không hiện, tu vi thấp, nhưng có ta cùng nhị đệ duy trì, hơn nữa ngươi cái không cần ở oai lộ thượng đầu óc, nơi nào liền thành không cần mạng người máu tươi đi điền liền muôn vàn bất đắc dĩ, tất cả khổ sở?”</p>
+<p>Kim Quang Dao ngập ngừng môi, run rẩy nói không ra lời. Hắn có thể nói cái gì? Nói lòng người khó dò, ta trừ bỏ chính mình chưa bao giờ tín nhiệm người nào sao? Trước nay không dưới đáy lòng tin quá ngươi cùng nhị ca sẽ giúp ta sao? Hắn bỏ lỡ cái gì a……</p>
+<p>Nhiếp Hoài Tang che lại lỗ tai trang chim cút, đại ca ngươi kêu đến quá lớn thanh! Còn có ngươi như vậy có thể nói, nên sẽ không cũng ở Cô Tô Lam tiên sinh tiểu tiết học từng vào học đi?</p>
+<p>Ngụy Vô Tiện Này tài ăn nói, căn bản không cần người khác lắm miệng đi? Còn có Xích Phong Tôn nhớ rõ ngươi trước kia là nói như thế nào ta sao? Có hay không một loại bị vả mặt sảng cảm? →_→</p>
+<p>【… Nhiếp Minh Quyết tựa hồ phần đầu bị thương, khô cạn huyết ô đọng lại ở hai mắt cùng trên mặt… Hơi hơi ngẩng đầu, chỉ thấy màu đen ngọc thạch phô mà phía trước cuối, là một trương thật lớn ngọc tòa. Mặt trên ngồi một người.</p>
+<p>… Tiến vào một người… Lẳng lặng đánh giá một trận quanh thân tắm máu vẫn cường tự chống đỡ không ngã Nhiếp Minh Quyết, cười một chút, nói “Nhiếp tông chủ, đã lâu” thanh âm này, không phải Mạnh Dao lại là ai?… Năm đó, Nhiếp Minh Quyết nhận được tình báo, ở Dương Tuyền phát động một lần tập kích bất ngờ… Cùng Kỳ Sơn Ôn thị gia chủ Ôn Nhược Hàn đụng phải vừa vặn… Tù binh hồi Bất Dạ Thiên thành.</p>
+<p>Mạnh Dao ở Nhiếp Minh Quyết bên người nửa quỳ xuống dưới…… Trong tiếng cười mang theo một cổ thương hại chi ý, nói “Ngài còn tưởng rằng chính mình là hà gian vương đâu? Thấy rõ ràng, nơi này chính là viêm dương điện.”</p>
+<p>… Mạnh Dao trường kiếm ra khỏi vỏ… Tên kia tu sĩ cần cổ tiêu ra một đạo huyết tuyến… Lại một người tu sĩ rống giận… Mạnh Dao mi trở tay lại là nhất kiếm… Mỉm cười nói “Còn có ai tưởng nói cái kia từ sao?” Nhiếp Minh Quyết lạnh lùng nói “Ôn cẩu”</p>
+<p>…… Mạnh Dao lại là hơi hơi mỉm cười…… Trình một phương trường hộp đến hắn tay…… Mạnh Dao lại như là cố ý muốn chọc giận hắn dường như, xoi mói nói “Nhiếp tông chủ ngài cây đao này đâu, so với ngài phụ thân Nhiếp lão tông chủ kia thanh đao, vẫn là hơi chút kém hơn một ít. Ngài không bằng đoán xem, ôn tông chủ lần này phải chụp thượng vài cái, nó mới có thể đoạn đâu?” Ở Ôn Nhược Hàn trước mặt, Mạnh Dao cầm hắn đao, nhắc lại phụ thân hắn đao toái người vong việc đáng tiếc, quả thực là cay nghiệt đến cực điểm!</p>
+<p>Nhiếp Minh Quyết vỗ tay một chưởng, đánh đến Mạnh Dao sau này một cái lảo đảo, phun ra một ngụm máu tươi…… Mạnh Dao lập tức bò lên, tiến lên một chân liền đá vào Nhiếp Minh Quyết ngực…… Nhiếp Minh Quyết đánh ra một chưởng, Mạnh Dao trong tay trường kiếm bị hắn chụp đến chém làm số tiệt. Mạnh Dao cũng bị một chưởng này đánh ngã, Nhiếp Minh Quyết thân thể lại đột nhiên bị một trận dị thường hấp lực kéo hướng khác một phương hướng…… Cả người cấp tốc ở ngọc thạch phô trên mặt đất kéo ra một cái dài đến ba trượng vết máu, còn ở tiếp tục kéo động.</p>
+<p>Nhiếp Minh Quyết duỗi tay bắt lấy một người quỳ xuống đất Ôn gia môn sinh…… Ôn Nhược Hàn thế nhưng trực tiếp phách không một chưởng đem tên này môn sinh bổ cái sọ não dập nát…… Tay mới vừa cầm Bá Hạ chuôi đao, tiến đến vây đổ hắn mười mấy tên Ôn gia tu sĩ đều bị chặn ngang chém làm hai đoạn!…… Phía sau đột nhiên đã nhiều một bóng người…… Thật mạnh đánh vào trong điện kim trụ thượng, sặc ra một ngụm nhiệt huyết…… Lần này tắc bị người một quyền đánh trong lòng, cả người đều hướng ngọc thạch mặt đất hãm vài phần!</p>
+<p>Ngụy Vô Tiện cùng hắn ngũ cảm tương thông, một bên bị đánh đến vỡ đầu chảy máu, một bên trong lòng thất kinh.</p>
+<p>Ôn Nhược Hàn thực lực, quả thật là tính áp đảo đáng sợ! Ngụy Vô Tiện chưa cùng Nhiếp Minh Quyết chính diện giao thủ, không biết hai người bọn họ thắng thua như thế nào, nhưng theo hắn sở quan sát, Nhiếp Minh Quyết ở hắn chứng kiến người, có thể bài tiến tiền tam. Nhưng mà mặc dù là như vậy, ở Ôn Nhược Hàn trước mặt, như cũ không hề có sức phản kháng! Hơn nữa, liền tính là giờ phút này thay đổi hắn bản nhân, hắn cũng không dám nói, chính mình ở Ôn Nhược Hàn thủ hạ ai đánh, là có thể so Nhiếp Minh Quyết thiếu chút……】</p>
+<p>Nhiếp Hoài Tang bị tức giận đến nảy sinh ác độc, trong ánh mắt hình như có tơ máu, mặt lộ vẻ hung quang mà hung hăng nhìn chằm chằm Kim Quang Dao, tựa hồ tiếp theo nháy mắt là có thể giống bị chọc giận mà dã lang xông lên đi hung hăng cắn xuống một miếng thịt tới!</p>
+<p>Những người khác đều là kinh ngạc này có tiếng Nhiếp gia bao cỏ cư nhiên còn sẽ có như vậy hung ác một mặt, mà ở như vậy trong ánh mắt ở vào con mồi vị trí Kim Quang Dao sớm đã cả người phát lạnh, bối đổ mồ hôi lạnh……</p>
+<p>Không biết có phải hay không bởi vì huyết thống quan hệ tự mang lọc, Nhiếp Minh Quyết tuy rằng cũng cảm thấy kinh ngạc, nhưng ở hắn xem ra cũng chỉ bất quá là một con thỏ bị chọc nóng nảy đỏ mắt nhe răng thôi, theo bản năng mà lại là một cái tát đánh ra, ân, tiểu đệ lại là một bộ muốn khóc không khóc túng bao dạng, vẫn là như vậy xuẩn!</p>
+<p>Nhiếp Hoài Tang nước mắt lưng tròng mà lại một lần che lại cái ót, hai mắt đều ở biểu đạt lên án Đại ca, ngươi mau xem, cái kia vũ nhục ta cha lại đá ngươi đánh ngươi gia hỏa ở bên kia, ngươi này bàn tay huy sai phương hướng rồi a uy (#`O′)</p>
+<p>Nhiếp Minh Quyết cũng không để ý tới cùng hắn, xoay người lại hướng Ngụy Vô Tiện hỏi “Nghe ý tứ này, chẳng lẽ ngươi còn nghĩ tới muốn bằng sức của một người cùng Ôn Nhược Hàn chính diện ngạnh chiến không thành?”</p>
+<p>Ngụy Vô Tiện đối Nhiếp Hoài Tang đưa lên một cái cười nhạo ánh mắt, thuận miệng nói “Là nha, làm sao vậy?”</p>
+<p>Nhiếp Minh Quyết lại nói “Chỉ bằng ngươi điểm này kỹ xảo?”</p>
+<p>Ngụy Vô Tiện cũng không tức giận, đùa nghịch Lam Vong Cơ bàn tay nói “Lam Trạm ngươi còn nhớ rõ không? Có một đoạn thời gian, rõ ràng trên chiến trường Ôn cẩu tu sĩ tử thi thành sơn, ta còn cố tình nơi nơi đào mồ quật động, hai ta còn kém điểm bởi vì cái này đánh lên tới đâu.”</p>
+<p>Lam Vong Cơ nói “Nhớ rõ, chính là vì đánh bại Ôn Nhược Hàn?”</p>
+<p>Lam Khải Nhân cả giận nói “Ôn Nhược Hàn thần công đại thành, Xích Phong Tôn ở này thủ hạ đi bất quá nhất chiêu, không hề có sức phản kháng, kẻ hèn mấy cổ tẩu thi năng lực hắn gì? Ngươi đây là ở tìm chết sao?”</p>
+<p>Ngụy Vô Tiện cư nhiên gật gật đầu, nói “Khi ta đem Âm Hổ Phù luyện ra tới lại nhận thấy được nó lực lượng thời điểm, liền bắt đầu vì xạ nhật chi chinh khó nhất quan —— đối chiến Ôn Nhược Hàn làm chuẩn bị, ta vì hắn tự mình kế hoạch vừa ra ‘ vạn thi cùng hào, vạn quỷ cùng khóc ’ trò hay, còn đều là bị Ôn thị hãm hại mà chết oán giả nga, mặc dù vây ẩu bất tử hắn, chỉ cần ở này đó thi quỷ trên người lại làm chút tay chân, vây bất tử hắn cũng có thể độc chết, kéo chết hắn, bỏ mạng với Hung Thi lệ quỷ dưới, không phải phi thường thích hợp hắn cách chết sao? Đáng tiếc chính là, không có cơ hội này a, a!”</p>
+<p>Lam Vong Cơ lại nói “Vậy còn ngươi? Một lần khống chế nhiều như vậy tẩu thi lệ quỷ, ngươi thật sự không ngại?”</p>
+<p>Ngụy Vô Tiện cười cười không nói chuyện nữa, khi đó chính tay đâm kẻ thù, nợ máu đã thảo, mà hắn vì Giang gia lập hạ một công lớn, hảo một chút mà dứt khoát thân chết chỉ dư một giai thoại, hư một chút mà chỉ sợ sẽ bị oán khí xâm nhuộm thành hoạt thi! Bất quá, chung quy không phát sinh sự, có cái gì nhưng nói đâu?</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong61.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong63.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "mdts-moi-nguoi-doc-ma-dao-to-su";
+const NOVEL_TITLE = "[MĐTS] Mọi người đọc Ma Đạo Tổ Sư";
+const CHAPTER_TITLE = "Chương 62 62";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 15 mười lăm</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        [MĐTS] Mọi người đọc Ma Đạo Tổ Sư
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 15 mười lăm</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong14.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong16.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Tuy rằng Ngụy Vô Tiện rốt cuộc có thể danh chính ngôn thuận mà dựa vào nhà hắn Lam Trạm trên người thoải mái dễ chịu nghe thư, nhưng là vì thúc phụ đại nhân thân thể suy nghĩ, hắn chỉ có thể lui mà cầu tiếp theo ôm ngoan ngoan ngoãn ngoãn không sảo không nháo A Uyển (╯︵╰).</p>
+<p>【… Ngụy Vô Tiện nói “Tên này đao phủ đột tử, hóa thành Hung Thi đây là tất nhiên. Nếu hắn sinh thời trảm giả du trăm người, không bằng quật này trăm người phần mộ, kích này oán khí, kết trăm viên đầu, cùng nên Hung Thi đánh nhau…”</p>
+<p>…… Ngụy Vô Tiện nói “Dù sao có chút đồ vật độ hóa vô dụng, sao không tăng thêm lợi dụng? Đại Vũ trị thủy cũng biết, đổ vì hạ sách, sơ vì thượng sách. Trấn áp tức vì đổ, chẳng lẽ không phải hạ sách……” Lam Khải Nhân một quyển sách quăng ngã lại đây, hắn chợt lóe sai thân né tránh, mặt không đổi sắc, trong miệng tiếp tục nói hươu nói vượn “Linh khí cũng là khí, oán khí cũng là khí. Linh khí trữ với đan phủ, có thể phá núi điền hải làm người sở dụng. Oán khí lại vì sao không thể làm người sở dụng?”</p>
+<p>Lam Khải Nhân lại là một quyển sách bay tới, lạnh lùng nói “Kia ta hỏi lại ngươi! Ngươi như thế nào bảo đảm này đó oán khí vì ngươi sở dụng mà không phải sát hại người khác?” Ngụy Vô Tiện biên trốn biên nói “Chưa nghĩ đến!”</p>
+<p>Lam Khải Nhân giận dữ “Ngươi nếu là nghĩ tới, tiên môn bách gia liền lưu ngươi đến không được. Lăn!”</p>
+<p>… Ngụy Vô Tiện cắn thảo, lao xuống mặt hô “Hỏi gì đáp nấy, làm lăn liền lăn, hắn còn muốn ta như thế nào?”</p>
+<p>…… Nhiếp Hoài Tang nghĩ nghĩ, thế nhưng toát ra tiện diễm hướng tới chi tình, nói “Kỳ thật Ngụy huynh nói rất có ý tứ. Linh khí muốn chính mình tu luyện, cực cực khổ khổ kết Kim Đan, giống ta loại này thiên tư kém đến phảng phất từ trong bụng mẹ bị cẩu gặm quá, không biết muốn háo nhiều ít năm. Mà oán khí là đều là những cái đó hung thần lệ quỷ, nếu có thể lấy tới liền dùng, kia thật đẹp”</p>
+<p>…… Ngụy Vô Tiện cũng ha ha nói “Đúng không? Không cần bạch không cần.”</p>
+<p>Giang Trừng cảnh cáo nói “Đủ rồi. Ngươi nói tới nói lui, nhưng đừng đi loại này đường tà đạo tử.”</p>
+<p>Ngụy Vô Tiện cười nói “Ta phóng hảo hảo dương quan đại đạo không đi, đi này cống ngầm cầu độc mộc làm gì. Thật như vậy hảo tẩu sớm đã có người đi rồi. Yên tâm, hắn liền như vậy vừa hỏi, ta chỉ như vậy vừa nói. Uy, các ngươi tới hay không? Thừa dịp không cấm đi lại ban đêm, cùng ta đi ra ngoài đánh gà rừng.” 】</p>
+<p>Nghe này đoạn chuyện cũ miêu tả, Ngụy Vô Tiện cũng nhớ tới năm đó hắn buột miệng thốt ra trả lời, túc tích hoang đường lời nói, nay đã vô cùng xác thực sự. Liền này một câu, làm hắn có từ Loạn Táng Cương tồn tại bò ra tới khả năng, cũng bởi vì những lời này, thế nhân trong mắt oán khí tận trời cấm địa, thành hắn cùng Ôn gia người cuối cùng chỗ dung thân.</p>
+<p>“Bạch bạch bạch,” Ngụy Vô Tiện nhấc tay vỗ tay, thật là cảm thấy ‘ vận mệnh chú định tự có thiên chú định ’ a, liền đối với thúc phụ đại nhân này trương cổ hủ cứng nhắc như cũ mặt đều cảm khái vạn ngàn, “Ai nha, năm đó chúng ta những người này có phải hay không đều giả mạo một phen đầu đường thần côn a, đều nói như vậy chuẩn, một ngữ thành châm đâu!"</p>
+<p>Mọi người đối này cũng là bao nhiêu cảm khái, Lam Khải Nhân nhớ tới thằng nhãi này kia mấy tháng trừ bỏ trốn học vi kỷ, uống rượu đánh nhau, chọc gà trảo thỏ, gây chuyện thị phi liền không trải qua khác, đột nhiên có loại hối hận xúc động……</p>
+<p>Lam Vong Cơ nương ống tay áo che lấp lại lần nữa yên lặng nắm chặt bên cạnh người thủ đoạn.</p>
+<p>Mọi người trong lòng đều có loại này nghi vấn, rốt cuộc là cái gì nguyên nhân, làm ban đầu thiên tư tung hoành, kinh tài tuyệt diễm người dấn thân vào quỷ đạo? Có lẽ trừ bỏ hắn bản nhân ở ngoài, chỉ có trước mắt ‘ Vô Tự Thiên Thư ’ có thể giải tỏa nghi vấn thích hoặc.</p>
+<p>Bất quá……</p>
+<p>“Nhiếp Hoài Tang, ngươi cư nhiên còn dám có loại suy nghĩ này? “Nhiếp Minh Quyết cảm thấy vì cái này không tiến tới đệ đệ chính mình quả thực rầu thúi ruột, nhưng không tiến tới cùng học vị này Di Lăng lão tổ tu quỷ đạo có thể giống nhau sao? “Oán khí lấy tới là có thể dùng thực mỹ? Trở về cho ta cấm đoán ba tháng diện bích tư quá!”</p>
+<p>Ngụy Vô Tiện tức khắc vuốt cằm tỏ vẻ, xem ở vừa mới viện trợ chi tình phân thượng chính mình hẳn là phụ một chút giúp một chút, “Hoài Tang huynh a, nếu là ngươi bây giờ còn có loại này ý tưởng nói, hoan nghênh vậy ngươi tùy thời tới Loạn Táng Cương tìm ta ha ~”</p>
+<p>Tiện tiện ngươi xác định không phải ở vui sướng khi người gặp họa sao?</p>
+<p>Nhiếp Hoài Tang Ai biết năm đó nói những cái đó lung tung rối loạn còn sẽ có lại bị giũ ra tới một ngày a, thật muốn trở lại quá khứ bắt được trước kia chính mình phiến thượng mấy bàn tay! Còn có Ngụy huynh ta cảm ơn ngươi a cầu ngươi đừng lại lửa cháy đổ thêm dầu được không!</p>
+<p>Mặc dù nghe ra tới chỉ là vui đùa lời nói, Lam Khải Nhân vẫn như cũ khí đến râu phát run, thực hảo, gia quy mười biến trước nhớ thượng!</p>
+<p>【…… Ngụy Vô Tiện ăn hắn bóng dáng, thảo cái không thú vị, quay đầu lại đối người lên án nói “Hắn không đáp ta.”</p>
+<p>“Đúng vậy.” Nhiếp Hoài Tang nói “Xem ra hắn là thật sự thực chán ghét ngươi a Ngụy huynh, Lam Vong Cơ giống nhau…… Không đúng, chưa bao giờ đến nỗi như thế thất lễ.”</p>
+<p>…… Nhiếp Hoài Tang giúp Ngụy Vô Tiện sao hai lần 《 thượng nghĩa thiên 》, lâm khảo phía trước cầu xin nói “Cầu xin ngươi lạp Ngụy huynh, ta năm nay là năm thứ ba tới Cô Tô, nếu là còn bình xét cấp bậc bất quá Ất, ta đại ca thật sự sẽ đánh gãy ta chân! Cái gì phân rõ trực hệ chi thứ bổn gia phân gia, chúng ta như vậy thế gia con cháu, liền nhà mình thân thích quan hệ đều xả không rõ ràng lắm, biểu hai tầng bên ngoài liền thuận miệng cô thẩm thúc bá gọi bậy, ai còn có dư thừa đầu óc đi nhớ nhà người khác!”</p>
+<p>…… Vì thế Ngụy Vô Tiện lại bị phạt. 】</p>
+<p>Nhớ tới này tra, Ngụy Vô Tiện lại cảm thấy chính mình thực nghẹn khuất “Hoài Tang huynh a, năm đó ta cho ngươi làm bộ tay thời điểm viết tờ giấy nhỏ nhưng chuyên nghiệp, ngắn gọn sáng tỏ, trọng điểm đều toàn, kết quả ngươi còn muốn ném trở về hỏi tỉnh lược chính là gì, lúc này mới bị trảo vừa vặn, nhưng là sau lại vì cái gì bị phạt chỉ có ta một cái đâu? “Nói xong liền ủy khuất ba ba mà nhào hướng nhà hắn Lam Trạm trong lòng ngực cầu an ủi đi, liền thúc phụ đại nhân đại liên thanh hô to ‘ còn thể thống gì ’ đều bỏ mặc, dường như thật sự bị lớn lao oan khuất giống nhau.</p>
+<p>Lam Khải Nhân bị tức giận đến đều phải ngất đi rồi, càng làm cho hắn tức giận là Lam Vong Cơ cư nhiên thật đúng là duỗi tay che chở an ủi cái này không hề thể thống người.</p>
+<p>Lam Khải Nhân Vô sỉ Ngụy Vô Tiện, mau buông ra Vong Cơ!</p>
+<p>Lam Hi Thần tâm mệt, ở mọi người trước mắt liền không thể thu liễm điểm sao</p>
+<p>Nhiếp Minh Quyết Lam tiền bối xin hỏi bội kiếm sao? Không đúng sự thật có thể thanh đao cho ngươi mượn dùng hạ không cần cảm tạ!</p>
+<p>Giang Trừng & Nhiếp Hoài Tang Hàm Quang Quân ngươi đừng trừng mắt nhìn, nói thực ra chúng ta cảm thấy trận này phạt sao người giám sát ngươi càng ủy khuất!</p>
+<p>【…… Ngụy Vô Tiện là cái rất biết cho chính mình tìm việc vui người, đặc biệt am hiểu khổ trung mua vui. Nếu không có thứ khác nhưng chơi, vậy đành phải chơi Lam Vong Cơ. Hắn nói “Vong Cơ huynh.”</p>
+<p>Lam Vong Cơ lù lù bất động.</p>
+<p>Ngụy Vô Tiện nói “Vong Cơ.”</p>
+<p>Nghe nếu không nghe thấy.</p>
+<p>Ngụy Vô Tiện “Lam Vong Cơ.”</p>
+<p>Ngụy Vô Tiện “Lam Trạm!” 】</p>
+<p>Nghe Lam Vong Cơ thanh lãnh tiếng nói bình bình đạm đạm mà đọc một đoạn này, Ngụy Vô Tiện kia viên làm yêu tâm lại lần nữa nhẫn nại không được ngo ngoe rục rịch, hắn điểm cái tự chế tránh âm phù, sau đó chậm rãi tiến đến Lam Vong Cơ bên tai, một tiếng lại một tiếng mà kêu to, ôn nhu lại lưu luyến, “Vong Cơ huynh”, “Vong Cơ”, “Lam Vong Cơ”, “Lam Trạm”, “Lam Nhị công tử”, “Lam Nhị ca ca”, đột nhiên phát hiện Lam Vong Cơ vành tai dường như bị lửa đốt giống nhau đỏ bừng một mảnh, lại ái muội khẽ cười nói “Nguyên lai Lam Trạm ngươi thích ta như vậy kêu ngươi a, kia ta về sau đều như vậy kêu ngươi được không, Lam Nhị ca ca, nhị ca ca, ân?”</p>
+<p>Lam Vong Cơ chột dạ quay đầu, hắn này phó nói thật khó có thể mở miệng, nói láo có không muốn trái lương tâm bộ dáng, xem Ngụy Vô Tiện có một loại khó có thể miêu tả hưng phấn cảm, vừa mới chuẩn bị tiếp tục làm chút gì, bị ‘ răng rắc ’ một tiếng quăng ngã vang bừng tỉnh. Hai người quay đầu đi xem, nguyên lai là thúc phụ đại nhân thật mạnh khái hạ chung trà.</p>
+<p>Đọc đọc liền không có kế tiếp, tuy nói dùng tránh âm phù nghe không được hai người nhỏ giọng nói chuyện, nhưng quang xem kia ghé vào cùng nhau bộ dáng khiến cho người không nỡ nhìn thẳng.</p>
+<p>Lam Khải Nhân lại hối hận, vừa mới như thế nào liền luẩn quẩn trong lòng tùng khẩu đâu, không thể nhịn được nữa nói “Ngụy Vô Tiện ngươi cho ta ngồi ở chỗ kia đừng cử động, Vong Cơ đến ngươi huynh trưởng phía sau đi, Hi Thần, ngươi tới tiếp tục đọc!”</p>
+<p>Lam Hi Thần khoanh tay đáp ‘Đúng vậy’, sau đó chuyển hướng ‘ lưu luyến chia tay ’ hai người,” Ngụy công tử? “</p>
+<p>“Nga……” Ngụy Vô Tiện ủy ủy khuất khuất theo tiếng, chỉ cảm thấy nhà hắn nhị ca ca vị này thúc phụ đại nhân chính là là cái bổng đánh uyên ương Vương Mẫu, ngạnh sinh sinh ở bọn họ hai người chi gian hoa hạ xa xôi sông ngân, quả thực thật quá đáng!</p>
+<p>Lam Khải Nhân bị này ai ai oán oán ánh mắt nhìn chằm chằm đến một thân ác hàn, cư nhiên còn cảm thấy một loại quỷ dị sảng cảm. Dở khóc dở cười đồng thời lại rất là không thể tưởng tượng, Giang Phong Miên đến tột cùng là như thế nào dạy dỗ ra như thế một lời khó nói hết người?</p>
+<p>Hảo thúc thúc Giang Phong Miên mỉm cười Tội này ta không gánh.</p>
+<p>Nhiếp Hoài Tang muốn khóc, hắn nhớ tới lúc này phát sinh chuyện này, xuân - cung - đồ a, tuy rằng không phải hắn đưa cho Lam Vong Cơ xem, nhưng là làm chuyện này Di Lăng lão tổ là từ hắn nơi này lấy nha, hắn tẩm điện những cái đó trân bản tuyệt phẩm còn giữ được sao?</p>
+<p>Giang Trừng cùng Nhiếp Minh Quyết âm thầm may mắn, thực hảo, nơi này rốt cuộc có cái chính thức ra lệnh chế được này Ngụy Vô Tiện người.</p>
+<p>【…… Ngụy Vô Tiện cố bệnh nặng phạm, tặng một trương giấy lại đây, ý bảo hắn xem.</p>
+<p>Lam Vong Cơ vốn tưởng rằng lại là chút lung tung rối loạn nhàm chán câu chữ, nhưng ma xui quỷ khiến mà đảo qua, lại là một bộ hình người. Ngồi nghiêm chỉnh, ỷ cửa sổ tĩnh đọc, mặt mày thần thái giống như đúc, đúng là chính mình.</p>
+<p>…… Hắn thói quen, cũng không thèm để ý, bỗng nhiên nói “Ta đã quên, còn phải cho ngươi thêm cái đồ vật.”</p>
+<p>Nói xong hắn nhặt giấy đề bút, tam hạ thêm hai bút, nhìn xem họa, nhìn nhìn lại chân nhân, cười ngã xuống đất. Lam Vong Cơ gác xuống quyển sách, nhìn lướt qua, nguyên lai hắn ở họa thượng chính mình bên mái bỏ thêm một đóa hoa.</p>
+<p>Nguyên bản hắn xem chính là một quyển kinh Phật, nhưng vừa rồi mở ra kia đảo qua, đập vào mắt thế nhưng tất cả đều là trần truồng giao triền bóng người, khó coi. Hắn ban đầu xem kia một sách thế nhưng bị người đánh tráo thành một quyển sách da ngụy trang thành Phật kinh xuân cung đồ.</p>
+<p>Không cần đầu óc tưởng cũng biết là ai làm chuyện tốt, nhất định là người nào đó sấn cho hắn xem họa dời đi lực chú ý đương thời tay. Huống chi Ngụy Vô Tiện căn bản không có che giấu ý tứ, còn ở bên kia chụp bàn cuồng tiếu “Ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha!”</p>
+<p>Kia quyển sách bị ném tới trên mặt đất, Lam Vong Cơ như tránh rắn rết, khoảnh khắc thối lui đến Tàng Thư Các góc, giận cực mà khiếu “Ngụy Anh ——!”</p>
+<p>Ngụy Vô Tiện cười đến cơ hồ lăn đến án thư hạ, khó khăn giơ lên tay “Ở! Ta ở!”</p>
+<p>…… “Dáng vẻ! Lam Nhị công tử! Chú ý dáng vẻ! Ta hôm nay cũng là mang theo kiếm, đánh lên tới nhà ngươi Tàng Thư Các còn muốn hay không lạp!”……</p>
+<p>Lam Vong Cơ mệt liền mệt ở sẽ không mắng chửi người, nghẹn sau một lúc lâu, dương kiếm chỉ hắn, đầy mặt sương lạnh “Ngươi đi ra ngoài. Chúng ta đánh quá.”</p>
+<p>Ngụy Vô Tiện liên tục lắc đầu trang ngoan ngoãn “Không đánh không đánh. Ngươi không biết sao lam công tử? Vân Thâm Bất Tri Xử cấm tư đấu.”……</p>
+<p>Lam Vong Cơ nhịn rồi lại nhịn, rốt cuộc không thể nhịn được nữa, phẫn nộ quát “Lăn!”</p>
+<p>Ngụy Vô Tiện nói “Hảo ngươi cái Lam Trạm, đều nói ngươi là sáng trong quân tử trạch thế minh châu, nhất minh nghi biết lễ bất quá, nguyên lai cũng bất quá như vậy. Vân Thâm Bất Tri Xử cấm ồn ào ngươi không biết sao? Còn có ngươi thế nhưng kêu ta ‘ lăn ’. Ngươi có phải hay không lần đầu tiên đối người dùng loại này từ……” Lam Vong Cơ rút kiếm triều hắn đâm tới. Ngụy Vô Tiện vội nhảy lên cửa sổ “Lăn liền lăn. Ta nhất sẽ lăn. Không cần đưa ta!”</p>
+<p>…… “Không đáng tiếc! Muốn nhiều ít có bao nhiêu.”</p>
+<p>…… Giang Trừng một chân đá qua đi “Lăn lăn lăn! Lần sau làm loại chuyện này, đừng làm ta biết! Cũng không cần kêu ta tới xem!” 】</p>
+<p>Nghe Lam Hi Thần ôn hòa tiếng nói đọc ra năm đó Tàng Thư Các phát sinh hoang đường sự, Lam Khải Nhân khí đem trên tay chung trà khái đến ‘ ca ca ’ rung động, lại ảo não mà hận không thể đấm ngực dừng chân, như thế nào năm đó khiến cho Vong Cơ trông giữ thằng nhãi này đâu, là hắn đem Vong Cơ đẩy vào ‘ hố lửa ’ a!</p>
+<p>Lam Hi Thần là cảm thấy buồn cười chiếm đa số, hắn đệ đệ tính như ngăn thủy, không nghĩ tới Ngụy công tử năm đó liền có bản lĩnh có thể làm hắn nỗi lòng thay đổi rất nhanh, cùng với, kia trương bị trân quý có chút buồn cười cài hoa tiểu tượng nguyên lai là như vậy tới sao.</p>
+<p>Nhiếp Minh Quyết ở nghe được ‘ muốn nhiều ít có bao nhiêu ’ sau, phi thường bình tĩnh lại không dung phản bác về phía hắn đệ đệ nói “Ngươi tẩm điện những cái đó, sau khi trở về đều lấy tới cấp ta thiêu hủy đi!”</p>
+<p>Nhiếp Hoài Tang Quả nhiên, làm ta đã chết đi ┭┮﹏┭┮</p>
+<p>Giang Trừng Đi theo Ngụy Vô Tiện niên thiếu khinh cuồng này đó hoang đường sự tuyệt đối là cả đời hắc lịch sử (#‵′)</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong14.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong16.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "mdts-moi-nguoi-doc-ma-dao-to-su";
+const NOVEL_TITLE = "[MĐTS] Mọi người đọc Ma Đạo Tổ Sư";
+const CHAPTER_TITLE = "Chương 15 mười lăm";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
