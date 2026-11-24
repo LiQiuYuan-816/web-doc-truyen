@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 29</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tiểu y tu như thế nào cứu vớt lông xù xù
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 29</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong28.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong30.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Đừng thất thần, các ngươi chỉ có hai cái giờ thời gian.”</p>
+<p>Ở Diệp Dư Manh thúc giục trong tiếng, Trác Ngọc Tuyền hít sâu một hơi, rốt cuộc vẫn là hành động lên.</p>
+<p>Hắn nhìn về phía hạ lão phu nhân cùng Mặc Ngân bọn họ, nói “Trừ bỏ ta trợ thủ ở ngoài, không quan hệ nhân sĩ thỉnh rời đi phòng giải phẫu.”</p>
+<p>Trác Ngọc Tuyền một mở miệng, Đỗ Giai liền minh bạch hắn ý tứ.</p>
+<p>Hắn nhìn mắt rõ ràng lại muốn kích động lên lão phu nhân, vội vàng giải thích nói “Giải phẫu yêu cầu vô khuẩn hoàn cảnh, thỉnh ngài trước đến phòng giải phẫu ngoại chờ đợi đi.”</p>
+<p>Tiếp theo hắn lại nhìn về phía Mặc Ngân, “Vị tiên sinh này……”</p>
+<p>Mặc Ngân gật đầu, hắn cuối cùng lại nhìn mắt Diệp Dư Manh, lúc này mới xoay người rời đi.</p>
+<p>Phòng giải phẫu phát sóng trực tiếp thông suốt quá trí não theo dõi, trực tiếp truyền tới thân vương điện hạ quang não, cũng không cần hắn vẫn luôn đãi ở chỗ này.</p>
+<p>Tuy rằng kết quả còn không có ra tới, nhưng lấy diệp hộ công biểu hiện tới xem, trận này khảo hạch đối hắn mà nói hẳn là không tồn tại bất luận vấn đề gì.</p>
+<p>Có lẽ, hắn hiện tại có thể sửa miệng xưng hắn vì “Diệp bác sĩ”.</p>
+<p>Mắt thấy Mặc Ngân rời đi, hạ lão phu nhân cũng không hảo kiên trì, rốt cuộc nàng mục đích, cũng chỉ là hy vọng cháu gái có thể sống sót mà thôi.</p>
+<p>“Ta tiểu cháu gái liền làm ơn các ngươi……”</p>
+<p>Nói xong câu đó, nàng thật sâu mà nhìn bàn mổ phương hướng liếc mắt một cái, liền ở hai tên hộ công nâng hạ hướng ngoài cửa mà đi.</p>
+<p>“Vị này lão sư, xin theo ta đến bên trong tới.”</p>
+<p>Chờ phòng giải phẫu kim loại môn đóng cửa, Trác Ngọc Tuyền cùng hắn trợ thủ lại lần nữa hành động lên, ngay cả Diệp Dư Manh cũng bị mời tiến đến đổi mới vô khuẩn phục.</p>
+<p>“Xin hỏi ngài xuyên chính là cái gì mã số?”</p>
+<p>Đỗ Giai thái độ cung kính, chút nào không thấy vừa rồi ở phòng giải phẫu cửa đuổi người khí thế.</p>
+<p>Diệp Dư Manh liền cùng hắn báo cái mã số, chờ thay quần áo mang lên mũ sau, hắn lại cự tuyệt Đỗ Giai truyền đạt bao tay.</p>
+<p>“Mang cái này sẽ ảnh hưởng ta phát huy.”</p>
+<p>Đến nỗi vi khuẩn vấn đề, cái này cũng không cần lo lắng, hắn ở thi thuật khi đụng chạm người bệnh, trên tay sẽ bám vào một tầng linh lực.</p>
+<p>Có tầng này linh lực bảo hộ, trên tay hắn chính là dính độc cũng sẽ không ảnh hưởng đến người bệnh.</p>
+<p>Đỗ Giai có chút khó xử mà nhìn hắn.</p>
+<p>Đây là hoàn toàn không phù hợp thao tác quy phạm hành vi, bị trác chủ nhiệm nhìn đến nói tuyệt đối sẽ bị mắng!</p>
+<p>Huống chi hiện tại viện trưởng cũng ở……</p>
+<p>Nhưng mà vừa rồi chính mắt chứng kiến Diệp Dư Manh là như thế nào làm gần chết người bệnh khôi phục sinh cơ, Đỗ Giai lại không dám cưỡng cầu.</p>
+<p>Không nói chọc giận đối phương, chính là chậm trễ người bệnh trị liệu, kia cũng là cực đại tội lỗi a.</p>
+<p>Cuối cùng Đỗ Giai không có kiên trì, chỉ là làm Diệp Dư Manh rửa tay tiêu độc.</p>
+<p>Chờ bọn họ một lần nữa trở lại bàn mổ biên, Trác Ngọc Tuyền đã bắt đầu cứu giúp.</p>
+<p>Tuy rằng động tác thượng đâu vào đấy, nhưng chỉ có chính hắn biết, hắn giờ phút này có bao nhiêu hãi hùng khiếp vía, trợ thủ vì hắn lau mồ hôi bông đều đã ướt vài đoàn.</p>
+<p>Vì làm người nhà thấy người bệnh cuối cùng một mặt, bọn họ nguyên bản đã đem hạ nam tuyết ngực khâu lại lên.</p>
+<p>Kết quả hiện tại lại lần nữa mở ra, lại nhìn đến nàng trái tim không chỉ có khôi phục nhảy lên, thả có máu hình thành dây nhỏ đảm đương nổi lên mạch máu tác dụng.</p>
+<p>Cho dù nàng trái tim chỗ đại mạch máu đứt gãy, cũng không có ảnh hưởng đến trái tim bình thường công năng.</p>
+<p>Một màn này thật sự quá mức quỷ dị, cho dù gặp qua không ít thần kỳ huyết mạch chi lực, hắn cũng chưa bao giờ nghĩ tới trên thế giới tồn tại như vậy một loại lực lượng.</p>
+<p>Này rốt cuộc là một loại cái dạng gì thủ đoạn a? Cái loại này kỳ quái thủ thế lại phát huy cái dạng gì tác dụng?</p>
+<p>Thân là y học thiên tài kiêu ngạo, rốt cuộc làm Trác Ngọc Tuyền ổn định tâm thần.</p>
+<p>Nếu ở như vậy điều kiện hạ còn không thể hoàn thành này một đài giải phẫu, đem người bệnh cứu giúp trở về, kia hắn liền không xứng cầm lấy này đem giải phẫu đao!</p>
+<p>Diệp Dư Manh nhìn vài lần, liền tạm thời không có quá khứ xem náo nhiệt, mà là ôm đồng dạng bộ cái lồng thanh ngọc trúc, ngồi xếp bằng ngồi ở trong góc khôi phục linh lực.</p>
+<p>Hắn yên lặng tính toán thời gian, chờ đến không sai biệt lắm mới đi ra phía trước.</p>
+<p>Mà lúc này, theo hộ rắp tâm hiệu quả rút đi, dụng cụ thượng vốn dĩ ở vững bước tăng trở lại trị số lại một lần đoạn nhai thức giảm xuống.</p>
+<p>Trác Ngọc Tuyền tâm thần đều chấn, đôi tay cương ở giữa không trung.</p>
+<p>Vẫn là không được sao?</p>
+<p>“Không có việc gì, có ta đâu.”</p>
+<p>Đứng ở Trác Ngọc Tuyền đối diện trợ thủ tự giác hướng bên cạnh vừa đứng, cấp Diệp Dư Manh nhường ra vị trí.</p>
+<p>Ở bảy tám đôi mắt khẩn trương nhìn chăm chú hạ, Diệp Dư Manh lại lần nữa thi triển hộ rắp tâm, ngón tay nhẹ điểm ở hạ nam tuyết kia viên ấu tiểu trái tim thượng.</p>
+<p>Hai tay của hắn ở ánh đèn chiếu xuống là như vậy tinh tế trắng nõn, huyền diệu động tác có một loại khôn kể mỹ cảm.</p>
+<p>Bất quá, nhìn hắn ngón tay ở hoàn toàn không có làm bất luận cái gì thi thố dưới tình huống, liền đụng chạm người bệnh bại lộ trái tim……</p>
+<p>Trác Ngọc Tuyền thái dương gân xanh thẳng nhảy, chuyên nghiệp tu dưỡng làm hắn tức giận đến thiếu chút nữa chửi ầm lên.</p>
+<p>Nhưng mà chính là như vậy một cái hoàn toàn không phù hợp thao tác quy phạm, nhìn qua không thể tưởng tượng động tác, lại làm người bệnh mỏng manh đi xuống tim đập, lại lần nữa khôi phục lại đây.</p>
+<p>“Tích —— tích ——”</p>
+<p>Tim đập nghi tiếng vang đều trở nên càng thanh thúy dễ nghe, nhắc nhở hắn, này cũng không phải hắn ảo giác.</p>
+<p>Mà cùng với tim đập khôi phục, còn có kia quỷ dị máu dây nhỏ.</p>
+<p>Hạ nam tuyết thân thể trị số lại một lần tăng trở lại.</p>
+<p>“Tiếp tục đi.” Diệp Dư Manh nhìn một chút thời gian, “Ta sẽ mỗi bảy phút vì nàng thi triển một lần, các ngươi cố lên!”</p>
+<p>Trác Ngọc Tuyền “……”</p>
+<p>Đối mặt này thanh cố lên, không biết vì cái gì, hắn cảm giác có loại muốn hộc máu xúc động.</p>
+<p>Nhìn thần bí thanh niên lại lần nữa xoay người rời đi bóng dáng, hắn cuối cùng vẫn là há mồm ứng thanh hảo, lại phát hiện chính mình thanh âm đã khàn khàn đến cơ hồ nghe không thấy.</p>
+<p>Giải phẫu tiếp tục khẩn trương mà tiến hành.</p>
+<p>Diệp Dư Manh chỉ là an tĩnh mà ở trong góc đợi, cũng không có mặt khác động tác.</p>
+<p>Nhưng mà, mặc kệ là Trác Ngọc Tuyền vẫn là hắn các trợ thủ, đều nhịn không được hết sức chăm chú.</p>
+<p>Trác Ngọc Tuyền không dám có bất luận cái gì sai lầm, phảng phất đánh bạc toàn bộ danh dự.</p>
+<p>Thời gian một phút một giây mà trôi đi.</p>
+<p>Rốt cuộc, ở Trác Ngọc Tuyền cùng hắn các trợ thủ đã kiệt sức là lúc, trận này liên tục hơn hai giờ cứu giúp cuối cùng là kết thúc.</p>
+<p>Trác Ngọc Tuyền buông dao phẫu thuật, dư lại khâu lại đã không cần hắn tới hoàn thành.</p>
+<p>Hắn nhìn thoáng qua sinh mệnh giám sát nghi, mặt trên trị số đã cũng không đến 1% tăng tới 60% trở lên.</p>
+<p>Này ý nghĩa chỉ cần thuật sau khang phục thuận lợi, cái này kêu hạ nam tuyết tiểu nữ hài, nàng tánh mạng xem như bảo vệ.</p>
+<p>Hồi tưởng này không đến ba cái giờ trải qua, Trác Ngọc Tuyền chỉ cảm thấy giống đang nằm mơ.</p>
+<p>Mỗi khi hắn cảm thấy sắp đến cực hạn thời điểm, tổng hội có một người kịp thời xuất hiện, vì hắn thao tác lật tẩy.</p>
+<p>Phảng phất chỉ cần có hắn ở, người bệnh liền nhất định sẽ không tử vong.</p>
+<p>Tới rồi sau lại, hắn đã thói quen mỗi cách bảy phút liền sẽ xuất hiện đôi tay kia —— tuy rằng mỗi khi nhìn đến kia ngón tay đụng vào người bệnh trái tim, hắn như cũ có mắng chửi người xúc động.</p>
+<p>Nhưng mặc kệ thế nào, hoàn thành như vậy một đài giải phẫu, giờ phút này hắn trừ bỏ mỏi mệt ở ngoài, chỉ cảm thấy vui sướng tràn trề!</p>
+<p>Hắn không cấm nhìn về phía cái kia đãi ở trong góc ngồi xếp bằng thanh niên, tất cả mọi người rất rõ ràng, là hắn mang đến trận này kỳ tích.</p>
+<p>Do dự một lát, Trác Ngọc Tuyền vẫn là triều hắn đi qua.</p>
+<p>Ở phẫu thuật kết thúc khi, Diệp Dư Manh như có cảm giác mà ngẩng đầu nhìn về phía bàn mổ.</p>
+<p>Trong mắt hắn linh quang hơi lóe, liền thấy được bao phủ ở hạ nam tuyết trên người công đức kim quang, biến phai nhạt rất nhiều.</p>
+<p>Đại bộ phận tự nhiên tiêu tán, có móng tay cái như vậy đại một tiểu đoàn lảo đảo lắc lư mà triều hắn bay tới, cuối cùng dung nhập hắn giữa mày.</p>
+<p>Là công đức chi lực!</p>
+<p>Đã có thể trở thành công đức kim quang che chở hắn, cũng có thể bị cửu chuyển linh xu kinh lợi dụng, trở thành hắn về sau tu luyện đột phá trợ lực.</p>
+<p>Nếu hắn hôm nay cứu chính là tội ác chồng chất hạng người, kia đạt được liền sẽ là tà ám chi khí.</p>
+<p>Tà ám chi khí sẽ cùng công đức chi lực triệt tiêu, một khi tà ám chi khí làm đại, hắn cũng sẽ đi lên tà tu con đường……</p>
+<p>Như phi bất đắc dĩ, Diệp Dư Manh vẫn là muốn chạy chính đạo.</p>
+<p>Nghĩ vậy, hắn liền bế lên kia bồn thanh ngọc trúc, thong thả ung dung đứng dậy, chuẩn bị đi tìm Mặc Ngân tiếp tục mặt sau khảo hạch.</p>
+<p>Bất quá hắn hiện tại trong cơ thể linh lực đã trống rỗng, chỉ còn hai ba điểm.</p>
+<p>Muốn tiếp tục chẩn trị, chỉ có thể chờ hắn khôi phục lại nói.</p>
+<p>“Ngươi hảo.” Một đạo hơi có chút khàn khàn giọng nam vang lên.</p>
+<p>Diệp Dư Manh ngẩng đầu xem qua đi, chỉ thấy vị kia mổ chính bác sĩ triều hắn đi tới, hắn tháo xuống khẩu trang, lộ ra một trương thanh tuấn đoan chính mặt.</p>
+<p>Ở nhân loại tuổi thọ trung bình đã đạt tới 150 tuổi tinh tế thời đại, Trác Ngọc Tuyền tuyệt đối xưng là tuổi trẻ đầy hứa hẹn.</p>
+<p>Diệp Dư Manh cũng cảm thấy hắn thực tuổi trẻ, đặc biệt kia đầu nồng đậm màu xám bạc tóc, quả thực cùng đầu trọc Lôi Khế viện trưởng hình thành tiên minh đối lập ——</p>
+<p>Vị kia hướng hoành phục viện trưởng tựa hồ cũng có chút hói đầu.</p>
+<p>Ở tuổi này có thể có được như vậy tinh vi y thuật, thật đúng là là ghê gớm.</p>
+<p>“Ngươi hảo.” Diệp Dư Manh gật gật đầu, lại không có lấy tấm che mặt xuống.</p>
+<p>Đây là lâm hạ phi hành khí khi A Mặc làm hắn mang, hẳn là có hắn dụng ý, hắn vẫn là ngoan ngoãn mang cho thỏa đáng.</p>
+<p>“Ta là Trác Ngọc Tuyền, xin hỏi như thế nào xưng hô?”</p>
+<p>“Ta họ Diệp.”</p>
+<p>Họ Diệp? Hoàng viện bên kia khi nào ra nhân vật này? Trác Ngọc Tuyền né tránh, mới thấp giọng nói “Diệp bác sĩ.”</p>
+<p>Nghe thấy cái này xưng hô, Diệp Dư Manh hơi hơi nở nụ cười.</p>
+<p>Trác Ngọc Tuyền nhìn hắn lộ ở mặt nạ bảo hộ ngoại, cười khanh khách có vẻ quá mức xinh đẹp đôi mắt, thiếu chút nữa quên chính mình vừa rồi muốn hỏi cái gì.</p>
+<p>Tạm dừng một lát, hắn mới tiếp tục hỏi ra trong lòng nghi hoặc.</p>
+<p>“Ngươi vừa rồi ở phẫu thuật trong quá trình thi triển…… Là cái gì thủ đoạn? Đó là ngươi huyết mạch thiên phú sao? Cái loại này phức tạp thủ thế lại khởi đến cái gì tác dụng?”</p>
+<p>Diệp Dư Manh mới vừa ở tự hỏi muốn như thế nào trả lời, liền nghe một đạo giọng nam đánh gãy bọn họ “Xin lỗi, vấn đề này tạm thời không thể trả lời ngươi.”</p>
+<p>Mặc Ngân không biết khi nào vào phòng giải phẫu, ngăn ở bọn họ chi gian.</p>
+<p>Tại đây hơn hai giờ giải phẫu trong quá trình, Mặc Ngân cũng vẫn luôn ở bên ngoài mở ra theo dõi phát sóng trực tiếp, quan khán phòng giải phẫu trung tình huống.</p>
+<p>Phát sóng trực tiếp sử dụng viễn trình hội nghị trình tự, có thể biểu hiện tại tuyến quan khán nhân số.</p>
+<p>Nguyên bản vẫn luôn có ba người, giải phẫu mới vừa kết thúc liền ít đi một cái.</p>
+<p>Mặc Ngân còn ở suy đoán rời đi người là bệ hạ vẫn là thân vương điện hạ, kết quả trên quang não liền bắn ra tân tin tức.</p>
+<p>【 bệ hạ 】 Đi mang Diệp Dư Manh rời đi.</p>
+<p>Vì thế Mặc Ngân vào phòng giải phẫu.</p>
+<p>Kết quả vừa vào cửa, liền nhìn đến trong lòng ngực ôm bồn hoa Diệp Dư Manh, đang theo vị kia chủ trị bác sĩ đứng chung một chỗ, nhìn qua trò chuyện với nhau thật vui bộ dáng.</p>
+<p>Chờ đến gần, liền nghe thấy vị kia mổ chính bác sĩ vấn đề.</p>
+<p>Mặc Ngân tự nhiên ra tiếng vì Diệp Dư Manh chắn rớt, chính mắt kiến thức đến hắn thủ đoạn, hắn thực minh bạch vị này diệp hộ công, không, Diệp bác sĩ tầm quan trọng.</p>
+<p>Hiện tại tình huống không rõ, vẫn là tạm thời bảo mật cho thỏa đáng.</p>
+<p>Hắn sườn xoay người, từ Diệp Dư Manh trong tay tiếp nhận kia bồn thanh ngọc trúc.</p>
+<p>“Không cần, ta chính mình tới thì tốt rồi.”</p>
+<p>Diệp Dư Manh chạy nhanh tránh đi, A Mặc chỉ có một bàn tay, hắn nào dám làm hắn hỗ trợ lấy trọng vật?</p>
+<p>Nhưng mà Mặc Ngân lại kiên trì từ trong tay hắn tiếp nhận bồn hoa.</p>
+<p>Cứ việc chỉ còn lại có một bàn tay, nhưng hắn thực ổn, nhìn qua cử trọng nhược khinh.</p>
+<p>“Chúng ta đi thôi.”</p>
+<p>“Nga nga hảo.”</p>
+<p>Diệp Dư Manh bị Mặc Ngân mang đi, kia đài hộ công người máy lại là bị một cái trung niên nam nhân thay thế được —— đây là hướng viện trưởng trợ thủ.</p>
+<p>Trác Ngọc Tuyền như thế nào cam tâm như vậy bỏ qua?</p>
+<p>Hắn tưởng tác muốn liên hệ phương thức, kết quả mới vừa bán ra bước chân đã bị dò hỏi thuật hậu sự hạng trợ thủ trì hoãn một chút, lại đuổi theo ra tới thời điểm, lại đụng tới hạ lão phu nhân bởi vì tâm tình thay đổi rất nhanh mà ngất qua đi.</p>
+<p>Chờ vội xong lại tìm kiếm Diệp Dư Manh, cũng đã không thấy bọn họ thân ảnh.</p>
+<p>Nhìn trống rỗng hành lang, nếu không phải hạ nam tuyết giải phẫu quá trình bị rõ ràng mà ký lục xuống dưới, hắn tuyệt đối sẽ cho rằng vừa rồi phát sinh hết thảy đều là hắn phán đoán.</p>
+<p>Cho nên vị kia họ Diệp thần bí thanh niên, rốt cuộc là thần thánh phương nào?</p>
+<p>Diệp Dư Manh đi theo Mặc Ngân vào thang máy.</p>
+<p>“Ngài muốn nghỉ ngơi một hồi sao?” Mặc Ngân hỏi.</p>
+<p>Diệp Dư Manh chú ý tới hắn xưng hô cùng thái độ chuyển biến.</p>
+<p>Hắn dừng một chút, nói “A Mặc, ngươi đừng có khách khí như vậy, chúng ta là bằng hữu.”</p>
+<p>Nếu không phải A Mặc tin tưởng hắn, nguyện ý giúp hắn tranh thủ, hắn muốn liên hệ đến tiểu thỏ người nhà đều phải pha phí một phen trắc trở.</p>
+<p>Đối với này phân ân tình, Diệp Dư Manh là tưởng nhớ ở trong lòng.</p>
+<p>Hơn nữa trong khoảng thời gian này ở chung xuống dưới, hắn cảm thấy A Mặc là có thể kết giao người.</p>
+<p>Mặc Ngân nghiêng đầu nhìn hắn, nhìn Diệp Dư Manh thanh triệt đôi mắt, hắn có thể cảm giác được hắn thành khẩn cùng cảm kích.</p>
+<p>Bằng hữu sao?</p>
+<p>Hắn gật gật đầu ứng thanh hảo.</p>
+<p>Diệp Dư Manh lúc này mới nói “Ta đã đến cực hạn, hôm nay khảo hạch có thể tạm dừng sao?”</p>
+<p>“Hảo, kia ta an bài một chút.”</p>
+<p>Mặc Ngân không có miễn cưỡng, “Chúng ta hồi hoàng gia viện điều dưỡng, ngày mai lại tiếp tục.”</p>
+<p>“Đúng rồi.” Diệp Dư Manh nghĩ đến cái gì, hỏi, “Này ba người đều tính ở kia mười cái người sao?”</p>
+<p>Nếu bọn họ hiện tại trở về, dư lại hai người kiên trì không đến ngày hôm sau làm sao bây giờ?</p>
+<p>“Ta phản ánh quá tình huống.” Mặc Ngân lắc đầu nói.</p>
+<p>“Cố chủ nói, chỉ có ngươi tiếp khám người bệnh mới tính ở khảo hạch, không có bắt đầu trị liệu tự nhiên không tính.”</p>
+<p>Nhân lực có khi mà tẫn, huống chi như vậy thần kỳ lực lượng, yêu cầu Diệp Dư Manh làm liên tục không ngừng cứu người, kia không phải khảo hạch, mà là làm khó dễ.</p>
+<p>“Ha ha, ngươi cố chủ còn khá tốt nói chuyện.”</p>
+<p>Diệp Dư Manh này mới yên lòng, hắn nghĩ nghĩ còn nói thêm “Trước khi rời đi, chúng ta đi xem kia hai cái người bệnh đi.”</p>
+<p>Tuy rằng linh lực đã hao hết, hôm nay không thể lại tiếp khám, nhưng nhìn một cái, trước tiên ngẫm lại trị liệu phương án cũng không tồi.</p>
+<p>Bất quá sau khi nói xong, hắn lại xác nhận nói “Chỉ là nhìn một cái, hẳn là không tính bắt đầu trị liệu đi?”</p>
+<p>“Không tính.”</p>
+<p>“Hắc hắc, vậy là tốt rồi.”</p>
+<p>Mặc Ngân không có dị nghị, đi theo ở bọn họ bên người viện trưởng trợ thủ lục phi quang, tự nhiên cũng không có khả năng ngăn trở.</p>
+<p>Vị này lục trợ thủ là ở phẫu thuật tiến hành trong lúc, bị hướng hoành phục khẩn cấp điều phái lại đây.</p>
+<p>Bắt đầu thời điểm hắn còn thực ngốc.</p>
+<p>Bọn họ Đông viện đã không có xin quá, cũng không có biểu đạt quá bên này thiếu nhân thủ —— trên thực tế bọn họ viện trưởng hôm nay còn đi tây khu hiệp trợ một đài giải phẫu đâu.</p>
+<p>Êm đẹp, vì cái gì hoàng viện sẽ phái người lại đây chi viện?</p>
+<p>Chờ hắn tới rồi phòng giải phẫu cửa, nhìn thấy Mặc Ngân thượng giáo thời điểm liền càng ngốc.</p>
+<p>Vị này một tay thượng giáo, tuy rằng còn không đến đem cấp, lại là quân bộ lừng lẫy nổi danh nhân vật.</p>
+<p>Hắn hôm nay không có mặc quân trang, lục phi quang vẫn là nhận ra hắn.</p>
+<p>Chính là vị này thượng giáo, cùng hoàng viện phái tới hiệp trợ nhân viên có quan hệ gì? Là vị nào Y Học Thái Đấu yêu cầu hắn tới tự mình hộ tống?</p>
+<p>Thực mau, hắn liền từ phòng giải phẫu theo dõi trung đã biết đáp án.</p>
+<p>Tuy rằng không biết đó là cái gì thủ đoạn, nhưng hắn có thể nói là mở rộng tầm mắt, cũng rốt cuộc minh bạch viện trưởng vì cái gì vô cùng lo lắng mà phái hắn lại đây.</p>
+<p>Vị này Diệp bác sĩ tưởng lại đi nhìn xem mặt khác người bệnh? Kia hoá ra hảo a!</p>
+<p>Lục phi quang thậm chí hy vọng hắn có thể lưu lại, hoặc là lại hơi chút đãi lâu một chút, chờ hướng viện trưởng gấp trở về tự mình tiếp đãi.</p>
+<p>Thực mau, bọn họ liền tới đến vị thứ hai người bệnh phòng.</p>
+<p>Đây là một vị đầu tóc hoa râm, dáng người câu lũ nhỏ gầy lão tiên sinh, hắn mang dưỡng khí tráo nằm ở trên giường bệnh, hít vào nhiều thở ra ít, mắt thấy liền sắp không được rồi.</p>
+<p>Sinh mệnh giám sát nghi thượng biểu hiện trị số cũng đích xác như thế.</p>
+<p>Diệp Dư Manh chỉ nhìn liếc mắt một cái liền lắc đầu, tỏ vẻ bất lực.</p>
+<p>Hắn một không cứu đại gian đại ác đồ đệ, nhị không cứu dương thọ đã đi xong hẳn phải chết người.</p>
+<p>Không nói hắn có hay không năng lực cứu đến sống, cho dù cứu, hắn cái này cứu người giả cũng cần thiết trả giá thật lớn đại giới, rốt cuộc đây là ở nghịch thiên sửa mệnh a.</p>
+<p>Mà vị này lão tiên sinh……</p>
+<p>Diệp Dư Manh có thể thấy được tới, hắn thọ nguyên sắp hết, từ tư liệu thượng xem hắn đã 161 tuổi, cũng ánh chứng điểm này.</p>
+<p>“Vị này chính là Sư tộc nghiêm tiến lão tiên sinh.” Mặc Ngân nói.</p>
+<p>Lục phi quang cũng tiến lên một bước giải thích nói “Nghiêm lão tôn tử đang ở chạy tới trên đường, chỉ là tinh tế lữ đồ khá xa, hắn phỏng chừng còn muốn một đoạn thời gian mới có thể đến.”</p>
+<p>Nói đến này, hắn không cấm thở dài, “Cũng không biết nghiêm lão có thể hay không căng cho đến lúc này.”</p>
+<p>Chữa bệnh tinh hoàn cảnh thực hảo, chữa bệnh cùng bảo dưỡng kỹ thuật đều là tinh tế nổi tiếng, cho nên có không ít lão nhân lựa chọn đến chữa bệnh tinh dưỡng lão.</p>
+<p>Chỉ là có lợi có tệ, ưu việt cư trú chữa bệnh hoàn cảnh lại là cùng thân nhân chung đụng thì ít mà xa cách thì nhiều đổi lấy.</p>
+<p>“Xin hỏi các ngươi là……”</p>
+<p>Lúc này, một cái đôi mắt đỏ bừng nữ nhân từ phòng trong phòng ngủ ra tới, nhìn đến Diệp Dư Manh mấy người, không cấm mặt lộ vẻ nghi hoặc.</p>
+<p>“Nghiêm nữ sĩ, ta là viện trưởng trợ thủ bác sĩ lục phi quang, chúng ta phía trước gặp qua.”</p>
+<p>Nghiêm tiến đã từng là Sư tộc lãnh tụ, có thể nói đức cao vọng trọng, ở hắn bệnh tình nguy kịch sau, lục phi quang từng đi theo viện trưởng tới thăm quá.</p>
+<p>Chỉ là tình huống của hắn, hướng hoành phục cũng là bó tay không biện pháp.</p>
+<p>“Ân, ta nhớ rõ ngươi.” Nghiêm tuyết vân gật gật đầu, ánh mắt nhìn về phía Diệp Dư Manh cùng Mặc Ngân.</p>
+<p>“Hai vị này là hoàng gia viện điều dưỡng người, tiến đến Đông viện chi viện.” Lục phi quang đơn giản giới thiệu nói, “Bởi vì nghiêm lão tình huống…… Cho nên bọn họ lại đây nhìn xem.”</p>
+<p>“Thì ra là thế.” Nghiêm tuyết vân hỏi, “Kia ta phụ thân…… Hắn còn có thể cứu chữa sao?”</p>
+<p>Lục phi quang tức khắc lộ ra vẻ khó xử.</p>
+<p>Ngay cả vị này thần bí Diệp bác sĩ đều lắc đầu, phỏng chừng là vô lực xoay chuyển trời đất.</p>
+<p>Nghiêm tuyết vân trên mặt bi, nhưng nàng vẫn là nói “Cũng là, ta phụ thân đều cái này số tuổi, cũng coi như hỉ tang.”</p>
+<p>“Chỉ là…… Có thể cho hắn lại căng mấy ngày sao?”</p>
+<p>Nàng lại nhịn không được nói “Ta cháu trai đã ở phía trước tới trên đường, phụ thân rất tưởng ở trước khi đi thấy hắn cuối cùng một mặt, các ngươi có thể ngẫm lại biện pháp sao?”</p>
+<p>Lục phi quang cũng không dám ứng thừa, hắn nhìn về phía Diệp Dư Manh.</p>
+<p>Nhìn ra hắn thần sắc không đúng lắm, nghiêm tuyết vân cũng theo hắn ánh mắt nhìn lại, tầm mắt dừng ở kia trước sau không có lấy tấm che mặt xuống người trẻ tuổi trên người.</p>
+<p>Chẳng lẽ……</p>
+<p>“Ngươi, ngươi có biện pháp sao?” Nàng tràn đầy mong đợi hỏi.</p>
+<p>Diệp Dư Manh không có lập tức trả lời, mà là lâm vào tự hỏi.</p>
+<p>Nếu chỉ là kéo dài mấy ngày thọ mệnh, nhưng thật ra vấn đề không lớn, nhưng hắn cần thiết mạo hiểm như vậy sao?</p>
+<p>Sống thọ và chết tại nhà cùng mặt khác người bệnh tình huống bất đồng, cho dù chỉ là mấy ngày, hắn đều khả năng có tao ngộ phản phệ nguy hiểm.</p>
+<p>Bất quá lời nói lại nói trở về, cái này tinh tế thế giới Thiên Đạo…… Còn quản sự sao?</p>
+<p>Diệp Dư Manh không khỏi có chút tò mò.</p>
+<p>Ở mọi người nhìn chăm chú hạ, hắn không nói gì, chỉ là tiến lên đây đến giường bệnh biên, vươn ra ngón tay đáp ở lão tiên sinh trên cổ tay.</p>
+<p>Cảm giác được đụng chạm, lão nhân mở to mắt, suy yếu mà nhìn hắn.</p>
+<p>Diệp Dư Manh đối hắn cười cười, tiếp theo thu hồi tay, cẩn thận mà đem lão nhân cánh tay thả lại chăn hạ.</p>
+<p>“Lão tiên sinh lại kiên trì hai ba thiên hẳn là không thành vấn đề, ta ngày mai lại đến nhìn xem đi.”</p>
+<p>“Chính là sinh mệnh giám sát nghi biểu hiện thời gian là đêm nay……”</p>
+<p>Thấy nghiêm tuyết vân không tin, Diệp Dư Manh nhún nhún vai.</p>
+<p>“Ngày mai sẽ biết.”</p>
+<p>Dù sao từ mạch tượng đi lên xem, hai ba thiên khẳng định không thành vấn đề, đương nhiên hắn cũng không thể hoàn toàn phỏng đoán ra tinh chuẩn thời gian, chỉ có một cái đại khái phán đoán.</p>
+<p>Vốn dĩ suy yếu mà nhìn chăm chú vào Diệp Dư Manh lão nhân gia, lúc này nhưng thật ra một lần nữa nhắm mắt lại, hô hấp tựa hồ bằng phẳng một ít.</p>
+<p>“Chúng ta đi thôi.” Diệp Dư Manh nhìn về phía Mặc Ngân.</p>
+<p>“Tốt.”</p>
+<p>Mặc Ngân ôm kia bồn thanh ngọc trúc, hộ ở hắn bên cạnh người cùng nhau rời đi.</p>
+<p>Lục phi quang cũng muốn chạy, lại bị nghiêm tuyết vân giữ chặt.</p>
+<p>“Lục bác sĩ, bọn họ rốt cuộc là người nào? Y thuật rất lợi hại sao?”</p>
+<p>Lục phi quang chần chờ hạ, nói “Ta cá nhân cho rằng, trước mắt ở chữa bệnh tinh thượng, có thể giúp ngươi kéo dài nghiêm lão sinh mệnh người cũng cũng chỉ có hắn.”</p>
+<p>Cứ việc cùng vị này Diệp bác sĩ tiếp xúc thực ngắn ngủi, đối hắn y thuật trình độ cũng hoàn toàn không hiểu biết, nhưng xem qua hắn ở phòng giải phẫu trung biểu hiện, lục phi quang cảm thấy chính mình nói như vậy hoàn toàn không khoa trương.</p>
+<p>Rốt cuộc hướng viện trưởng cũng tới xem qua nghiêm lão, hắn đều không có cách nào.</p>
+<p>Mà này chữa bệnh tinh thượng trừ bỏ vài vị Y Học Thái Đấu, mặt khác mấy cái phân viện trưởng y thuật, cũng liền cùng bọn họ viện trưởng ngang hàng mà thôi.</p>
+<p>Cái này mấu chốt, vài vị Y Học Thái Đấu là không quá khả năng chạy tới, muốn thỉnh bọn họ xem bệnh đều đến trước tiên vài tháng hẹn trước, bọn họ cũng rất nhiều năm không xem khám gấp.</p>
+<p>Kia hiện tại có thể sáng tạo kỳ tích, không phải chỉ còn vị này thần bí Diệp bác sĩ sao?</p>
+<p>Lục phi quang cũng mặc kệ nghiêm tuyết vân là cái gì ý tưởng, sau khi nói xong liền vội vàng đuổi theo.</p>
+<p>Thực mau, bọn họ đi vào cái thứ ba phòng bệnh.</p>
+<p>Nằm ở trên giường bệnh chính là một cái hình tiêu mảnh dẻ nam nhân, hắn gương mặt ao hãm, cả người cơ bắp héo rút, nhìn qua thập phần dọa người.</p>
+<p>Này gian phòng bệnh nhưng thật ra náo nhiệt không ít, trừ bỏ nhân viên y tế ở ngoài, còn có ba năm cái tựa hồ là người bệnh người nhà.</p>
+<p>Trừ bỏ ngồi ở giường bệnh biên một thiếu niên, hắn thần sắc tương đối bi thương khổ sở ở ngoài, mặt khác mấy cái đều là sắc mặt khác nhau.</p>
+<p>Bọn họ mới vừa tiến vào thời điểm, liền nghe được đứng ở bên cửa sổ một người nam nhân mở miệng nói “Nếu nơi này đại phu đều trị không hết, không bằng từ bỏ tính, làm ba đi được an ổn chút……”</p>
+<p>Nhìn đến Diệp Dư Manh bọn họ, hắn mới dừng lại câu nói kế tiếp.</p>
+<p>“Lục bác sĩ?”</p>
+<p>Lục phi quang điểm gật đầu, giống phía trước giống nhau đơn giản giới thiệu Diệp Dư Manh cùng Mặc Ngân.</p>
+<p>“Hoàng gia viện điều dưỡng?”</p>
+<p>Vài vị người bệnh người nhà đều là sắc mặt biến đổi, ban đầu nói chuyện nam nhân rõ ràng có chút nóng nảy.</p>
+<p>“Chúng ta chưa nói muốn thỉnh hoàng gia viện điều dưỡng bác sĩ a!”</p>
+<p>Đứng ở bên cạnh hắn nữ nhân kéo hắn một chút, nam nhân lúc này mới ý thức được tự mình nói sai, chạy nhanh nhắm lại miệng.</p>
+<p>Trừ bỏ ngồi ở giường bệnh biên thiếu niên, mặt khác mấy cái cũng đều có chút ngượng ngùng.</p>
+<p>Lục phi quang thấy như vậy một màn, cũng cảm thấy thực không thú vị.</p>
+<p>Nằm ở trên giường bệnh nam nhân tên là đơn hải, là Diệu Kim đế quốc nổi danh phú hào, nhưng mà lại có tiền, cũng trốn bất quá sinh lão bệnh tử.</p>
+<p>Hơn nữa so với người bình thường gia càng sốt ruột, còn có tranh đoạt “Di sản” con cái.</p>
+<p>Tuy rằng mỗi người đều bồi ở hắn bên người, nhưng trừ bỏ hắn tiểu nhi tử ở ngoài, mặt khác một cái hai cái đều ước gì hắn chạy nhanh tắt thở.</p>
+<p>“Kia còn trị không trị?” Lục phi quang nhịn không được nói.</p>
+<p>“Trị!”</p>
+<p>Ngồi ở giường bệnh biên đơn bác văn, giành trước một bước hô, hắn đôi mắt rưng rưng mà nhìn về phía lục phi quang, đầy mặt cầu xin.</p>
+<p>“Lục bác sĩ, mặc kệ dùng cái gì phương pháp, cầu xin ngài cứu cứu phụ thân ta đi! Chỉ cần phụ thân có thể tỉnh lại, hắn nhất định sẽ báo đáp của các ngươi!”</p>
+<p>Lục phi quang chạy nhanh lắc đầu, “Ngươi yêu cầu, liền cầu vị này Diệp bác sĩ, ta nhưng không có cái này năng lực.”</p>
+<p>Đơn bác văn sửng sốt, chạy nhanh nhìn về phía hắn phía sau hai người.</p>
+<p>Kia tóc bạc nam tử một thân quân ngũ khí khái, lại còn có mất đi một cái cánh tay, nhìn cũng không giống bác sĩ.</p>
+<p>Cho nên vị này Diệp bác sĩ là……</p>
+<p>Hắn nhìn về phía Diệp Dư Manh, nhìn hắn lộ ở bên ngoài một đôi xinh đẹp đôi mắt, còn có mặt mày tuổi trẻ, cảm giác cũng không rất giống.</p>
+<p>Đơn bác văn đành phải lung tung nói “Cầu xin ngươi, Diệp bác sĩ……”</p>
+<p>Vốn dĩ như lâm đại địch đơn Thiệu huy mấy huynh muội, đang xem thanh Mặc Ngân cùng Diệp Dư Manh bộ dáng sau, không khỏi liếc nhau, đều là nhẹ nhàng thở ra.</p>
+<p>Đơn Thiệu huy một lần nữa sửa sang lại hảo biểu tình, đầy mặt tươi cười nói “Đúng vậy đúng vậy, cầu xin ngươi, cứu một chút chúng ta phụ thân đi!”</p>
+<p>Nghe thấy đơn Thiệu huy nói, đơn hải mặt khác mấy cái con cái, cũng sôi nổi phụ họa.</p>
+<p>“Đúng vậy, cứu một chút hắn đi!”</p>
+<p>“Chúng ta phụ thân năm nay cũng mới không đến 70, như thế nào có thể cứ như vậy đi rồi? Mau cứu một cứu hắn đi!”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong28.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong30.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tieu-y-tu-nhu-the-nao-cuu-vot-long-xu-xu";
+const NOVEL_TITLE = "Tiểu y tu như thế nào cứu vớt lông xù xù";
+const CHAPTER_TITLE = "Chương 29";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

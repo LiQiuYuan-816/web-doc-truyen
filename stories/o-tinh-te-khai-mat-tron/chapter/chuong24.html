@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 24</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ở tinh tế khai mật trốn
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 24</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong23.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong25.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Tuy rằng…… Nhưng là…… Hannibal vừa rồi kia một chút phi đao thật sự là quá soái a a a!”</p>
+<p>“Chỉ là một cây đao mà thôi, như thế nào bay ra như vậy xinh đẹp độ cung.”</p>
+<p>“Nguyên lai giết người cũng có thể như vậy ưu nhã.”</p>
+<p>“Hắn thậm chí đầu đều không có nâng, chỉ là như vậy nhẹ nhàng giơ tay, ta không biết nên hình dung như thế nào ta cảm thụ, tóm lại…… Ta giống như mê thượng hắn.”</p>
+<p>“Bằng hữu thanh tỉnh a!! Đó là cái ăn người não biến thái, ngươi đã biến thành luyến ái não!”</p>
+<p>“Ta đi, nguyên lai đây là luyến ái não! Khủng bố như vậy.”</p>
+<p>Trương Hâm nhìn này hủy tam quan làn đạn, bỗng nhiên có chút lo lắng “Nếu không vẫn là sửa một chút Hannibal ngoại hình đi.”</p>
+<p>“Làm sao vậy?” Đồng Du khó hiểu.</p>
+<p>“Ngươi xem làn đạn, tất cả đều là khen Hannibal soái khí, cường đại, ưu nhã, căn bản là không có người ở sợ hãi.” Trương Hâm nói ra chính mình lo lắng, “Làm trò chơi thông quan BOSS, khủng bố hiệu quả có phải hay không quá kém chút? Ta cảm thấy vẫn là xấu xí hung ác hình tượng càng thích hợp Hannibal một ít. Quan trọng nhất còn có năng háo giá trị, theo lý thuyết Hannibal lên sân khấu lúc sau, người xem năng háo giá trị hẳn là ở đỉnh, nhưng trừ bỏ vừa rồi Hannibal phi đao kia một chút xuất hiện quá một lần tiểu cao phong ở ngoài, mặt sau năng háo giá trị vẫn luôn thực bằng phẳng.”</p>
+<p>Mật thất chạy thoát lớn nhất bán điểm chính là đối người chơi cùng người xem năng háo giá trị hao tổn, nhưng tình huống hiện tại, rõ ràng cùng mong muốn đi ngược lại.</p>
+<p>Đồng Du chỉ chỉ phát sóng trực tiếp hình ảnh phía bên phải vài vị người chơi năng háo giá trị “Người chơi năng háo giá trị cũng không có hạ thấp.”</p>
+<p>Trương Hâm “Nhưng người xem năng háo giá trị hạ thấp a.”</p>
+<p>Đồng Du không cho là đúng “Người xem không có người lạc vào trong cảnh đương nhiên sẽ không sợ hãi, năng háo giá trị hàng thiếu cũng là tình lý bên trong. Bọn họ khen Hannibal soái, là bởi vì Hannibal giết không phải bọn họ, thật chờ bọn họ tiến vào trò chơi, bọn họ liền sẽ không cảm thấy Hannibal soái.”</p>
+<p>Trương Hâm “Nhưng là cái dạng này lời nói, phát sóng trực tiếp hiệu quả liền đại suy giảm.”</p>
+<p>Đồng Du “Ta cảm thấy phát sóng trực tiếp hiệu quả khá tốt a, không phải rất nhạc a.”</p>
+<p>Trương Hâm “Chính là bởi vì quá nhạc a mới có vấn đề, chúng ta đây là game kinh dị, làm người xem khẩn trương, sợ hãi, kinh tủng mới có thể làm cho bọn họ hao tổn càng nhiều năng lượng giá trị.”</p>
+<p>Đồng Du không phải thực tán đồng Trương Hâm nói, nhưng hiện tại còn ở phát sóng trực tiếp trong lúc, hắn không phải rất tưởng liêu chuyện này, liền nói “Chúng ta trước xem phát sóng trực tiếp, chờ trò chơi kết thúc lại thảo luận.”</p>
+<p>Trương Hâm cũng biết chuyện này cấp không được, lập tức không nói nữa, hai người lực chú ý lại lần nữa trở lại trong trò chơi.</p>
+<p>Trong trò chơi, ở Hannibal tuyệt sát giống nhau phi đao hạ, đánh mất không chỉ là vừa mới vị kia người qua đường NPC mệnh, còn có sáu người thật vất vả phồng lên dũng khí.</p>
+<p>“Còn có cơ hội sao?” Lưu Minh Kiệt nhìn về phía khởi xướng người Arlene.</p>
+<p>Arlene máy móc lắc đầu, liền kia phi đao tốc độ, bọn họ mấy cái phỏng chừng liền thang lầu đều còn không có hạ đâu liền toàn cấp đóng đinh.</p>
+<p>Derrick thở dài “Vẫn là thành thành thật thật đi cốt truyện đi.”</p>
+<p>Tạp BUG thất bại, mấy người lực chú ý một lần nữa trở lại cốt truyện thượng, Hannibal vừa rồi ở mép giường đối Stalynn nói kia một phen lời nói làm chỉ có manh mối, bị mấy người lăn qua lộn lại nghiên cứu.</p>
+<p>“Hiện tại mục tiêu đã thực minh xác, chúng ta cần phải làm là lộng tới mật mã, mở ra hộp, dùng dược tề đánh thức Stalynn, sau đó Stalynn đi giết Hannibal, chúng ta mới có thể rời đi lâu đài.” Hạ ảnh đế tổng kết nói.</p>
+<p>“Nhưng mật mã chỉ có Hannibal biết, chúng ta như thế nào mới có thể từ Hannibal nơi đó bắt được mật mã.” Lưu Minh Kiệt hỏi.</p>
+<p>“Luyến ái não!” Hạ ảnh đế phân tích nói, “Vừa rồi Hannibal vẫn luôn ở cường điệu luyến ái não, nói chúng ta tám người bên trong nhất định có người là luyến ái não, bắt được luyến ái não, hắn liền sẽ đánh thức Stalynn.”</p>
+<p>Derrick trong lòng vừa động “Ngươi là nói tìm ra luyến ái não, đem luyến ái não cấp Hannibal?”</p>
+<p>Hạ ảnh đế gật đầu, nói thẳng nói “Chỉ có thể như vậy, tại như vậy đi xuống, chúng ta tất cả mọi người sẽ bị vây chết ở chỗ này.”</p>
+<p>Lời này vừa ra, làn đạn tức khắc lại nổ thành một mảnh.</p>
+<p>“Đây là muốn đẩy một người đi ra ngoài chịu chết ý tứ sao?”</p>
+<p>“Như thế nào như vậy, này cũng quá máu lạnh.”</p>
+<p>“Chính là a, muốn chết chính mình đi tìm chết, dựa vào cái gì để cho người khác đi.”</p>
+<p>“Cũng không thể nói như vậy, hiện tại còn không biết ai là luyến ái não đâu.”</p>
+<p>“Mặc kệ ai là luyến ái não cũng không thể đề như vậy yêu cầu đi, này thuần thuần chính là đạo đức bắt cóc, liền bởi vì ta là luyến ái não, ta liền phải bị đẩy ra đi chịu chết, dựa vào cái gì?”</p>
+<p>“Chính là, vốn dĩ chính là lâm thời tổ đội ngũ, lại không phải thật tốt quan hệ, dựa vào cái gì làm ta thế ngươi đi tìm chết.”</p>
+<p>“Ta nguyện ý vì nam thần đi tìm chết.”</p>
+<p>“Muốn chết chính mình đi tìm chết, đừng yêu cầu người khác a.”</p>
+<p>“Chẳng lẽ muốn đại gia cùng chết sao?”</p>
+<p>“Chính là, chết một cái tổng hảo quá chết toàn bộ, này một phen ta duy trì Hạ ảnh đế, nhân tiện nhắc tới, bản nhân phi phấn thuần người qua đường.”</p>
+<p>“Lăn, muốn chết chính ngươi đi tìm chết.”</p>
+<p>Đồng Du nhìn sảo thành một mảnh làn đạn cũng là bất ngờ, này đều cái gì cùng cái gì, đây là cái trò chơi mà thôi, lại không phải thật sự sẽ chết người, từng cái như thế nào thượng cương thượng tuyến. Quả nhiên, võng hữu loại này sinh vật, vô luận là ở địa cầu thời kỳ vẫn là tinh tế thời đại, đều không phải đèn cạn dầu a.</p>
+<p>Đưa cái gì chết a, mật thất chạy thoát đương nhiên là bao nhiêu người đi vào liền bao nhiêu người ra tới a.</p>
+<p>So với làn đạn thượng sảo túi bụi khán giả, trong trò chơi vài người lại muốn hài hòa nhiều, rốt cuộc luyến ái não là ai đều còn không biết đâu.</p>
+<p>“Nhưng chúng ta như thế nào mới có thể biết ai là luyến ái não?” Lưu Minh Kiệt hỏi ra mọi người đều muốn biết vấn đề.</p>
+<p>Lúc này cửa thứ hai cửa bỗng nhiên có động tĩnh, có thanh âm từ ngoài cửa truyền đến “Quản gia, các khách nhân cuối cùng vào phòng này.”</p>
+<p>“Tiệc tối lập tức bắt đầu rồi, đi lấy chìa khóa, mời chúng ta các khách nhân qua đi.” Là quản gia thanh âm.</p>
+<p>Bị phát hiện!</p>
+<p>Mọi người sắc mặt trắng nhợt, Arlene kêu lên “Xong rồi, bọn họ đi tìm tới.”</p>
+<p>Hạ ảnh đế bỗng nhiên chủ động triều cửa thứ hai phòng đi đến “Ta đi trước.”</p>
+<p>“Ngươi đi trước làm gì?” Derrick hỏi hắn.</p>
+<p>“Nơi này tin tức quá ít, nếu chúng ta không biết ai là luyến ái não, vậy từng cái thí.” Hạ ảnh đế bình tĩnh nói chính mình biện pháp, “Ta đi trước tham gia tiệc tối, nếu ta là luyến ái não, chờ Hannibal bắt được ta đầu óc, các ngươi liền có thể đi ra ngoài. Nếu ta không phải, các ngươi lại tuyển một người ra tới.”</p>
+<p>Hạ ảnh đế lời này vừa ra, làn đạn thượng nói phong lại là vừa chuyển, Hạ ảnh đế các fan ra tới điểm danh.</p>
+<p>“Thấy không có, nhà của chúng ta nam thần là tính toán hy sinh chính mình, phía trước mắng chửi người ra tới xin lỗi!”</p>
+<p>“Nói chúng ta nam thần đạo đức bắt cóc, ích kỷ, vả mặt không?”</p>
+<p>“Không đúng.” Derrick lắc đầu, “Dựa theo ngươi phương pháp này, từng cái đi thử, vạn nhất bị lưu đến cuối cùng một nhân tài là luyến ái não đâu, kia không phải toàn quân bị diệt?”</p>
+<p>Nếu cuối cùng một nhân tài là luyến ái não, kia phía trước tự nguyện hy sinh năm người chính là tặng không.</p>
+<p>Hạ ảnh đế ngẩn ra, hiển nhiên không nghĩ tới này một tầng “Cũng…… Không đến mức như vậy xui xẻo đi.”</p>
+<p>Derrick kiên trì nói “Mặc kệ có phải hay không sẽ như vậy xui xẻo, chúng ta giải đề ý nghĩ liền không đúng, này khẳng định không phải một cái đua vận khí trạm kiểm soát.”</p>
+<p>Mật thất ngoại Đồng Du nghe chính là liên tục gật đầu, Derrick, duy nhất minh bạch người, không hổ là trò chơi chủ bá, này đầu óc chính là dùng tốt.</p>
+<p>Arlene nghe hai người phân tích đầu đều lớn “Này cũng không đúng, kia cũng không đúng, vậy ngươi nói đến cùng như thế nào lộng sao!”</p>
+<p>“Thịch thịch thịch.” Có tiếng đập cửa truyền đến.</p>
+<p>“Tôn kính khách nhân, ta mở cửa vào được.” Quản gia thanh âm như cũ ôn hòa, nhưng bên trong người lại nghe trái tim thình thịch thẳng nhảy.</p>
+<p>“Mau, quản gia muốn vào tới!” Hoàng mao tiểu ca chân bỗng nhiên lại có chút mềm.</p>
+<p>Trong trò chơi tranh luận đồng thời, làn đạn thượng cũng ở kịch liệt thảo luận.</p>
+<p>“Này cuối cùng một quan rốt cuộc muốn như thế nào quá, tổng sẽ không thật sự muốn từng cái đưa đầu óc cấp Hannibal đi.”</p>
+<p>“Ta cảm thấy Hạ ảnh đế biện pháp là đúng, đại gia đừng quên trò chơi này ước nguyện ban đầu, đây là một cái SS cấp game kinh dị, quá trình khẳng định là càng khủng bố càng tốt, còn có cái gì so Hannibal đào đầu óc còn khủng bố!”</p>
+<p>“Không đúng, trò chơi này tên gọi mật thất chạy thoát, nếu có thể chạy thoát khẳng định liền có biện pháp.”</p>
+<p>“Có thể chạy thoát a, này không phải xem Hannibal khai đầu óc vận khí sao, vạn nhất phía trước bảy cái có một cái là luyến ái não, cuối cùng một cái không phải đào thoát?”</p>
+<p>“Chỉ có thể chạy một cái, này cùng tử cục có cái gì khác nhau? Khai phá giả cũng quá ác độc.”</p>
+<p>“Khai phá giả sinh hài tử không □□!”</p>
+<p>Đồng Du nổi giận, như thế nào lại bắt đầu nhân thân công kích!</p>
+<p>Việc này không thể nhịn, Đồng Du quyết đoán kết cục, sung tiền, mua hội viên, làn đạn đặc hiệu thêm thô, một hàng hồng tự thổi qua “Chỉ số thông minh không đủ liền nhiều đọc sách.”</p>
+<p>Trương Hâm nhìn lòng đầy căm phẫn Đồng Du, nhược nhược hỏi một câu “Cho nên thật sự có biện pháp thông quan?!”</p>
+<p>Kỳ thật vừa rồi hắn cũng mẫn tư khổ nghĩ đến, lại như thế nào cũng chưa nghĩ đến thông quan biện pháp, cho nên hắn cùng làn đạn thượng võng hữu giống nhau cho rằng Đồng Du chính là như vậy thiết kế.</p>
+<p>Đồng Du cắn răng “Ngươi câm miệng!” Không giáp mặt mắng chửi người là hắn cuối cùng tố chất.</p>
+<p>Trò chơi trong ngoài đều không có thảo luận ra cái nguyên cớ tới, ngoài cửa quản gia đã bắt được chìa khóa, mắt nhìn môn liền phải khai, Hạ ảnh đế nhanh chóng quyết định “Ta đi trước nhà ăn, các ngươi lại ngẫm lại biện pháp.”</p>
+<p>Nói xong, Hạ ảnh đế liền về tới cửa thứ hai phòng, đóng lại hai cái phòng tương liên môn.</p>
+<p>Lúc này cửa phòng vừa lúc mở ra, quản gia tiến vào, nhìn Hạ ảnh đế, như cũ là câu kia lời kịch “Tôn kính khách nhân, nên ngồi vào vị trí.”</p>
+<p>Hạ ảnh đế lúc này đây không có tránh né, chủ động hướng cửa đi đến “Phía trước dẫn đường.”</p>
+<p>Quản gia triều hắn phía sau nhìn nhìn “Mặt khác khách nhân đâu?”</p>
+<p>Hạ ảnh đế “Không biết.”</p>
+<p>Quản gia cũng không nóng nảy, chỉ là phân phó nam phó “Đi nơi khác tìm xem.”</p>
+<p>Bất đồng với bị kéo đi nhà ăn Tiểu Mã đồng chí, Hạ ảnh đế là từ quản gia lãnh đi nhà ăn, thảm đỏ vẫn luôn từ hành lang dài phô đến nhà ăn, từ cửa chính tiến vào thời điểm Hannibal thậm chí đứng dậy đón chào “Hoan nghênh đi vào ta tiệc tối, thân ái bằng hữu.”</p>
+<p>“Hạ ảnh đế, ngươi cũng bị bắt?!” Tiểu Mã đồng chí nhìn đến Hạ ảnh đế đó là lại thân thiết lại kích động, rốt cuộc không phải hắn một người đối với cái này biến thái, ô ô ô.</p>
+<p>Hạ ảnh đế nhìn hắn liếc mắt một cái không nói chuyện.</p>
+<p>“Mời ngồi.” Hannibal dứt lời, đã có hầu gái tiến lên vì Hạ ảnh đế kéo ra một phen ghế dựa.</p>
+<p>“Đừng ngồi, này ghế dựa ngồi xuống hạ nhân liền sẽ bị khóa chết.” Tiểu Mã đồng chí sốt ruột nhắc nhở.</p>
+<p>Hạ ảnh đế tự nhiên biết ngồi xuống người liền sẽ bị khóa chết ở trên ghế, nhưng lúc này nơi đây hắn cũng không có lựa chọn khác, chỉ có thể căng da đầu ngồi xuống đi. Mà hắn ngồi xuống hạ, ghế dựa liền phát ra ca ca một trận động tĩnh, tiếp theo hắn cả người liền bị khóa lại.</p>
+<p>Tay chân bị khóa chặt thời điểm Hạ ảnh đế còn tương đối bình tĩnh, nhưng đương đầu bị lạnh lẽo thiết vòng siết chặt thời điểm, hắn năng háo giá trị xoát một chút rớt một đoạn.</p>
+<p>“Ta đi, Hạ ảnh đế năng háo giá trị vừa rồi rớt 5000 nhiều.”</p>
+<p>“Hạ ảnh đế cũng sợ hãi a.”</p>
+<p>“Vô nghĩa, là ngươi ngươi không sợ hãi?”</p>
+<p>“Cho dù sợ hãi cũng anh dũng về phía trước, ta nam thần hảo soái!”</p>
+<p>“Ngươi nam thần trong chốc lát phải bị cạo trọc!”</p>
+<p>“Phốc, anh em, chính khẩn trương đâu, ngươi một câu cho ta chỉnh cười.”</p>
+<p>“Chờ mong đầu trọc Hạ ảnh đế.”</p>
+<p>“Động, động, hầu gái cầm cạo đầu công cụ lại đây!”</p>
+<p>“Không cần a! Đừng chạm vào ta nam thần tóc.”</p>
+<p>“Mau cạo, mau cạo!”</p>
+<p>Vô luận Hạ ảnh đế fans như thế nào kêu gọi, cũng ngăn cản không được hầu gái trong tay tông đơ, tư tư tư một trận động tĩnh, Hạ ảnh đế liền đầu trọc.</p>
+<p>Có người nói quá, vô luận nhiều hư kết quả đều không đáng sợ, đáng sợ chính là chờ đợi kết quả quá trình.</p>
+<p>Giờ khắc này Hạ ảnh đế là tràn đầy thể hội, hắn quyết định tới nhà ăn thời điểm liền làm tốt sọ não sẽ bị Hannibal mở ra chuẩn bị, nhưng này giai đoạn trước chuẩn bị công tác có thể hay không quá dài một ít!</p>
+<p>Hạ ảnh đế hít sâu một hơi, quyết định chủ động xuất kích, hắn nhìn về phía ngồi ở chủ vị Hannibal “Hannibal tiên sinh, ta đầu óc là luyến ái não sao?”</p>
+<p>Luyến ái não? Cái gì ngoạn ý? Tiểu Mã đồng chí vẻ mặt khó hiểu.</p>
+<p>Loạng choạng rượu vang đỏ ly Hannibal lại là sắc mặt biến đổi, không còn có chu đáo lễ nghi khách sáo, mà là xem kỹ “Ngươi biết luyến ái não?”</p>
+<p>Xúc phát kịch tình!</p>
+<p>Hạ ảnh đế không hổ là diễn kịch kinh nghiệm phong phú diễn viên, một chút không hoảng hốt, lập tức bắt đầu ngẫu hứng diễn xuất “Nghe nói qua, lại chưa thấy qua, cũng không biết cái dạng gì nhân tài sẽ có luyến ái não.”</p>
+<p>Hannibal buông rượu vang đỏ ly, ánh mắt buông xuống, phảng phất lâm vào mỗ đoạn hồi ức, hồi lâu lúc sau mới ra tiếng hỏi “Ngươi có ái nhân sao?”</p>
+<p>“Có.” Hạ ảnh đế gật đầu.</p>
+<p>“A a a a, Hạ ảnh đế quan tuyên tình yêu!”</p>
+<p>“Đây là vì trò chơi, không phải thật sự!”</p>
+<p>“Câm miệng, manh mối ra tới, xem phát sóng trực tiếp!”</p>
+<p>Hannibal cười “Vậy ngươi liền có khả năng là luyến ái não.”</p>
+<p>Hạ ảnh đế đồng tử co rụt lại, thật là chính mình?</p>
+<p>Hannibal tiếp tục nói “Luyến ái não, chính là mãn đầu óc đều nghĩ luyến ái đầu óc, là tình yêu cuồng nhiệt trung tình lữ mới có đầu óc, như vậy đầu óc, là hồng nhạt, hương vị ngọt ngào, giống dâu tây bánh kem giống nhau.”</p>
+<p>Hạ ảnh đế “Cho nên, chỉ cần có ái nhân người liền có luyến ái não?”</p>
+<p>Hannibal lắc đầu “Không, mỗi người đều sẽ có ái nhân, nhưng chỉ có ái cực nóng, ái điên cuồng, ái trong đầu chỉ có hắn một người khi, ngươi đầu óc mới là luyến ái não. Giống như là các ngươi lần đầu tiên tương ngộ, ngươi ở trong đám người nhìn đến nàng kia liếc mắt một cái.”</p>
+<p>Tương ngộ!</p>
+<p>Hạ ảnh đế trái tim đập bịch bịch “Ngài cùng ngài ái nhân là khi nào tương ngộ?”</p>
+<p>“Đó là ở ba năm trước đây một cái mùa xuân……” Hannibal mới vừa nổi lên cái đầu bỗng nhiên lại dừng lại, “Không vội, chờ tiệc tối bắt đầu rồi, khách nhân nhiều lên, ta lại đến chia sẻ ta chuyện xưa.”</p>
+<p>Hannibal không có tiếp tục đi xuống giảng, nhưng vừa rồi kia nói mấy câu, lại để lộ ra rất quan trọng tin tức.</p>
+<p>“Chúng ta cần thiết đi tham gia tiệc tối.” Lầu hai trong phòng, Derrick kết hợp vừa rồi Hannibal lời nói, bay nhanh phân tích, “Chỉ có tiệc tối bắt đầu, Hannibal mới có thể chia sẻ hắn cùng Stalynn chuyện xưa, chúng ta mới có cơ hội hỏi ra bọn họ tương ngộ ngày.”</p>
+<p>“Nhưng nếu chúng ta đều đi, liền tính đến đến mật mã, cũng không ai có thể khai hộp a.” Lưu Minh Kiệt nói.</p>
+<p>“Lưu một người ở chỗ này.” Derrick nói, “Hannibal chỉ nói người nhiều lên hắn liền giảng, nhưng cũng không có nói nhất định phải tám người đến đông đủ.”</p>
+<p>“Tám người cũng đến không đồng đều, Trương giáo thụ đều rớt tuyến.” Arlene nhược nhược tiếp một câu.</p>
+<p>“Ta lưu lại, các ngươi đi.” Hoàng mao tiểu ca nói xong, thấy những người khác đều nhìn hắn, tức khắc vẻ mặt đưa đám giải thích, “Ta nhát gan, vạn nhất đi nhà ăn dọa rớt tuyến, người không đủ, không phải bạch mù.”</p>
+<p>“Không, ai lưu lại đều được, ngươi không được.” Derrick quyết đoán phủ quyết rớt hoàng mao tiểu ca thỉnh cầu.</p>
+<p>“Vì cái gì?!”</p>
+<p>“Vạn nhất ngươi ở chỗ này dọa rớt tuyến, chúng ta mới là toàn bạch hạt!” Derrick nói.</p>
+<p>“!!”Hoàng mao tiểu ca trừng mắt, lại vô lực phản bác.</p>
+<p>Nhìn hoàng mao tiểu ca 囧 dạng, làn đạn lại là một mảnh tiếng cười.</p>
+<p>“Ha ha ha, nói rất đúng, kiên quyết không thể lưu hoàng mao, hắn năng háo giá trị liền thừa ba vạn nhiều một chút. Hannibal khai một cái sọ não, hắn là có thể trực tiếp hạ tuyến.”</p>
+<p>“Nói, sáu cá nhân ở dưới thật vất vả bộ ra tới mật mã, kết quả cuối cùng một người dọa rớt tuyến không có thể đánh thức Stalynn, sau đó toàn quân bị diệt, cũng đĩnh hảo ngoạn không phải sao.”</p>
+<p>“Có điểm muốn nhìn.”</p>
+<p>“Có điểm muốn nhìn +1”</p>
+<p>“Các ngươi quá tổn hại đi.”</p>
+<p>Mật thất trung, năm người cuối cùng lựa chọn làm Arlene lưu lại, bởi vì Arlene là năm người trung duy nhất nữ tính.</p>
+<p>Ở quản gia lại một lần mở cửa tiến vào phía trước, Derrick mang theo ba vị đồng đội chủ động bước ra phòng “Tiệc tối có phải hay không muốn bắt đầu rồi? Mang chúng ta qua đi đi.”</p>
+<p>Quản gia “Còn có một vị mỹ lệ nữ sĩ đâu?”</p>
+<p>Derrick thuận miệng nói “Vị kia mỹ lệ nữ sĩ tiêu chảy, chính thượng WC đâu, đến chờ một lát.”</p>
+<p>Quản gia không có kiên trì “Tôn kính khách nhân, mời theo ta tiến vào nhà ăn.”</p>
+<p>Rốt cuộc, một hàng tám người, trừ bỏ Arlene ở ngoài, tất cả mọi người ở nhà ăn gặp nhau. ( tuy rằng Trương giáo thụ đã offline, nhưng tóc của hắn còn ở! )</p>
+<p>“Tiệc tối bắt đầu.” Ở Hannibal tuyên bố tiệc tối bắt đầu lúc sau, quản gia mang theo một chúng nữ phó bắt đầu thượng đồ ăn, đồ ăn là thật đồ ăn, chẳng qua thân thể bị trói buộc các khách nhân ai cũng ăn không hết.</p>
+<p>Cũng may mọi người cũng vô tâm tình ăn cái gì, Derrick cùng Hạ ảnh đế liếc nhau, hai người bắt đầu dẫn đường đề tài.</p>
+<p>“Hannibal tiên sinh, có thể hay không chia sẻ một chút ngài cùng ngài ái nhân chuyện xưa.” Hạ ảnh đế chủ động mang theo đề tài.</p>
+<p>Hannibal “Ngươi rất tò mò?!”</p>
+<p>Hạ ảnh đế “Đúng vậy, giống ngài như vậy ưu tú người, nhất định có phi thường tốt đẹp tình yêu, chúng ta nghe xong, có lẽ cũng có thể kêu lên chúng ta đã từng cùng ái nhân ngọt ngào nháy mắt.”</p>
+<p>Derrick vội bổ sung “Đúng vậy, ta cùng ta ái nhân mới vừa nhận thức thời điểm, mãn đầu óc cũng chỉ có hắn, quả thực chính là cái luyến ái não.”</p>
+<p>Derrick chủ động nhắc tới luyến ái não, quả nhiên, Hannibal lập tức biến cảm thấy hứng thú lên.</p>
+<p>“Đúng đúng đúng, ta cũng là.” Những người khác sôi nổi phụ họa.</p>
+<p>Derrick tính toán thả con tép, bắt con tôm “Ta trước chia sẻ ta, ta cùng ta ái nhân là ở đại học nhận thức, đó là ba năm trước đây chín tháng nhất hào, hắn đứng ở trong đám người, tóc đen mắt đen như là từ trong đêm đen đi ra tinh linh……”</p>
+<p>Hannibal bỗng nhiên đứng dậy, theo Derrick giảng thuật, đi đến Derrick phía sau, hắn giơ tay vuốt ve Derrick đã bóng loáng đầu, trong mắt quang mang lập loè “Làm ta nhìn xem…… Ngươi đầu óc.”</p>
+<p>Derrick còn không có phản ứng lại đây đâu, liền cảm giác da đầu chợt lạnh, có thứ gì xuyên thấu đầu của hắn cốt.</p>
+<p>“A!” Ngồi ở Derrick chính đối diện hoàng mao tiểu ca kêu thảm thiết một tiếng, hai mắt vừa lật, đương trường hóa thành bạch quang tại chỗ biến mất.</p>
+<p>Derrick tuy rằng không thấy mình đỉnh đầu bộ dáng, cũng không đau, nhưng xuyên thấu qua còn lại người hoảng sợ ánh mắt đã có thể đoán được vài phần.</p>
+<p>Làn đạn thượng nháy mắt nổ tung nồi.</p>
+<p>“Ngọa tào, thật sự khai người chơi sọ não!”</p>
+<p>“Trò chơi này đùa thật!”</p>
+<p>“Cứu mạng a!!!”</p>
+<p>Khủng bố hình ảnh cũng không có như vậy đình chỉ, Hannibal còn ở tiếp tục, hắn kia đem giải phẫu đao cũng không biết là cái gì tài chất, thiết xương sọ liền cùng thiết đậu hủ giống nhau, nhẹ nhàng như vậy vừa chuyển, liền hoàn thành cắt. Sau đó mũi đao nhẹ nhàng thượng chọn, một khối lây dính tơ máu xương sọ tựa như vặn ra nắp bình giống nhau, quay cuồng mở ra, run rẩy rũ ở một bên.</p>
+<p>Lúc này chính là lá gan lớn nhất Hạ ảnh đế, cũng hai mắt sung huyết, gân xanh thẳng nhảy.</p>
+<p>Derrick năng háo giá trị ở lấy một cái không thể tưởng tượng tốc độ giảm xuống, lại như cũ kiên cường làm tâm lý xây dựng Không quan hệ, đây là trò chơi, đây là trò chơi, đều là giả.</p>
+<p>Lúc này, Hannibal dùng cái muỗng đựng đầy một cái màu trắng ngà đồ vật đặt ở trước mắt hắn, tràn đầy tiếc nuối nỉ non một câu “Không phải hồng nhạt, đáng tiếc.”</p>
+<p>Đây là…… Ta đầu óc?!</p>
+<p>Ý thức được đó là gì đó Derrick hoàn toàn phá vỡ, năng háo giá trị tuyết lở giống nhau tán loạn, tại chỗ hóa thành bạch quang.</p>
+<p>Toàn võng can đảm đệ nhị dũng sĩ, cũng bỏ mình!</p>
+<p>Hannibal nhìn không bàn ghế, càng thêm tiếc nuối “Đầu óc còn không có đào xong đâu.”</p>
+<p>“Nôn!” Trò chơi trong ngoài tức khắc một mảnh nôn khan thanh.</p>
+<p>“Ta chạy nhanh sờ soạng một chút đầu, còn hảo, đầu óc còn ở!”</p>
+<p>“Tuy rằng đầu óc còn ở, nhưng ta cảm giác trong óc mặt đã không.”</p>
+<p>“Hannibal tuy rằng không có đào đi ta đầu óc, nhưng đào đi rồi ta tinh thần lực.”</p>
+<p>“Ta lần đầu tiên cảm giác được tinh thần hải hư không.”</p>
+<p>“Nói, chỉ có ta chú ý tới hoàng mao thật sự rớt tuyến sao?”</p>
+<p>“Arlene có khỏe không?”</p>
+<p>Mọi người bị này vừa nhắc nhở, vội vàng đi xem Arlene năng háo giá trị, còn hảo, tuy rằng cũng rớt không ít, nhưng người còn ở.</p>
+<p>Người ở là được a!</p>
+<p>Phòng live stream khán giả còn có thể gào rống hò hét, nhưng trong trò chơi mấy người lại là liền thở dốc cũng không dám ra tiếng.</p>
+<p>Hannibal lại là hứng thú bừng bừng nhìn mấy người, cầm dao phẫu thuật ở mỗi người trên đầu khoa tay múa chân “Còn có người muốn chia sẻ sao? Vừa mới đầu óc tuy rằng không phải hồng nhạt, nhưng đã có một chút vị ngọt.”</p>
+<p>Ngọt? Hắn ăn?</p>
+<p>Hannibal dạo qua một vòng, thấy không có người nói chuyện, cười ngồi trở lại chủ vị, nhấp một ngụm rượu vang đỏ, chậm rãi mở miệng “Nếu không có, vậy nghe một chút ta chuyện xưa đi……”</p>
+<p>Tác giả có lời muốn nói</p>
+<p>Vốn dĩ tưởng một hơi viết xong cái này phó bản, nhưng xem ở đã 6000 tự phân thượng, cho phép ta ngày mai bổ thượng đi.</p>
+<p>PS Sơ năm, nhớ rõ nghênh Thần Tài a. Hiện tại bên ngoài so qua năm đều náo nhiệt.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong23.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong25.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "o-tinh-te-khai-mat-tron";
+const NOVEL_TITLE = "Ở tinh tế khai mật trốn";
+const CHAPTER_TITLE = "Chương 24";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 101</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ở tinh tế khai mật trốn
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 101</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong100.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong102.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“A a a, thỉnh cho ta một đôi không có xem qua tủ lạnh đôi mắt!!”</p>
+<p>“Như vậy tiểu nhân tủ lạnh, như thế nào tắc đi xuống một cái thành niên nam tính?”</p>
+<p>“Mặt hướng về phía bên ngoài, vì cái gì muốn mặt hướng về phía bên ngoài, Đồng biến thái nhất định là cố ý.”</p>
+<p>“Mụ mụ, ta về sau không thể một người tiến phòng tắm tắm rửa, không thể một người ngủ giường, không thể một người nhìn trần nhà, cũng không thể đi tủ lạnh lấy đồ vật, ô ô ô……”</p>
+<p>“Trong nhà tổng cộng liền như vậy điểm địa phương, toàn cấp Đồng biến thái hoắc hoắc xong rồi.”</p>
+<p>“Ô ô ô, ta hiện tại cảm thấy trong nhà nào nào đều có quỷ!”</p>
+<p>“Đừng sợ, chúng ta vẽ bùa.”</p>
+<p>“Này phù chú rốt cuộc có hay không dùng còn không có thực nghiệm đâu.”</p>
+<p>“Mắt kính nam thật là xuẩn đã chết, đều nói muốn vẽ bùa vẽ bùa, kết quả hắn gì cũng chưa làm, chính mình mở cửa hướng quỷ diện trước đưa.”</p>
+<p>“Không sai, toàn bộ bạch cấp, đều cho ta xuẩn khóc.”</p>
+<p>“Không phải nói trò chơi này muốn tuyển có đầu óc sao? Người này rốt cuộc như thế nào bị chọn trúng, có phải hay không Đồng biến thái thân thích a, đi cửa sau đi vào.”</p>
+<p>Ở đoàn đội trong trò chơi, heo đồng đội là để cho nhân sinh khí, tuy rằng đứng ở mắt kính nam góc độ, hắn chỉ là tự hỏi phương hướng cùng những người khác bất đồng mà thôi, nhưng là võng hữu cũng mặc kệ này đó, ở góc nhìn của thượng đế xem ra, hắn phương hướng chính là sai lầm, hắn chính là heo đồng đội.</p>
+<p>“Cũng không thể toàn quái mắt kính nam, này xem như người bình thường cầu sinh bản năng. Ngươi tưởng tượng một chút, nếu ngươi biết có một người lập tức muốn tới giết ngươi, hơn nữa người này cường đại đến ngươi căn bản là đánh không lại. Lúc này ngươi có hai lựa chọn, một cái là mở cửa đi ra ngoài tìm hàng xóm cầu cứu, một cái là chính mình cầm một cái không biết có hay không dùng vũ khí cùng đối phương một mình đấu, ngươi sẽ như thế nào tuyển? Người bình thường phản ứng đầu tiên hẳn là đều là ra cửa cầu cứu đi.”</p>
+<p>“Chính là đi ra ngoài cũng là chết a.”</p>
+<p>“Ngươi đây là kết quả hướng phát triển, hắn lúc ấy lại không biết đi ra ngoài cũng sẽ chết.”</p>
+<p>“Hiện tại nói này đó đã vô dụng, này một vòng trọng trí xem như bạch mù, liền thừa ba người, phỏng chừng rất khó thông quan rồi.”</p>
+<p>Trong trò chơi, Tiểu Mễ mụ mụ lần thứ năm xuất hiện lại rời đi, chờ nàng vừa ly khai, Tiểu Lộc cô nương liền gấp không chờ nổi hỏi “Sao lại thế này? Không phải nói có hai mươi phút thời gian sao?”</p>
+<p>Mắt kính nam là chết nhanh nhất, từ bọn họ vào phòng đến nghe được mắt kính nam kêu thảm thiết, trước sau không đến hai phút.</p>
+<p>Bạch Vi “Hắn hẳn là mở cửa.”</p>
+<p>Tiểu Lộc “Nhưng chúng ta quá khứ thời điểm cửa phòng là đóng lại.”</p>
+<p>Bạch Vi giải thích nói “Giả thiết chúng ta phía trước phỏng đoán không có sai, kia mắt kính nam nhất định là làm cái gì chuyện khác, dẫn tới tử vong trước tiên. Thượng một vòng trò chơi chúng ta suy đoán, cửa phòng thượng đồ án là phòng ngừa tiểu quỷ tiến vào phòng phù chú, cho nên chúng ta tiến vào phòng việc đầu tiên chính là xác nhận cửa phòng thượng phù chú có phải hay không sáng.”</p>
+<p>Tiểu Lộc cùng Công Minh giáo thụ gật đầu, bọn họ tiến vào phòng sau việc đầu tiên thật là xác nhận phù chú là không lượng.</p>
+<p>Bạch Vi tiếp tục nói “Giả thiết mắt kính nam tiến vào phòng sau phát hiện hắn cửa phòng thượng phù chú không có lượng, hắn sẽ như thế nào làm?”</p>
+<p>Tiểu Lộc tưởng tượng một chút “Nếu là ta, ta hẳn là sẽ nghĩ cách đem cái này phát hiện nói cho các ngươi.”</p>
+<p>Tuy rằng phía trước bọn họ mấy cái đã đoán được phù chú tác dụng, nhưng suy đoán là suy đoán, chân tướng là chân tướng.</p>
+<p>Bạch Vi gật đầu “Không sai, hắn hẳn là cũng là tưởng đem tin tức này nói cho chúng ta biết, nhưng là hắn không nghĩ tới mở cửa sẽ lập tức tử vong.”</p>
+<p>Công Minh giáo thụ thở dài “Đây cũng là chúng ta không có đoán trước đến, vốn tưởng rằng ít nhất sẽ có mười phút giảm xóc kỳ, ai có thể nghĩ đến, nơi này còn có cái mở cửa tức chết giả thiết. Cái này phó bản có quá nhiều che giấu giả thiết, hơi không chú ý liền sẽ người chết.”</p>
+<p>Thấy như vậy một màn mắt kính nam cơ hồ muốn khóc, ở toàn võng đều mắng hắn xuẩn thời điểm, chỉ có Công Minh giáo thụ hiểu hắn. Hắn không phải không nhớ rõ phù chú tác dụng, hắn là tin Bạch Vi cái kia hai mươi phút phân tích, hắn vốn tưởng rằng hai mươi phút sau tiểu quỷ mới có thể tới tìm hắn, cho nên muốn đem chính mình phát hiện trước nói cho các đồng đội, ai biết kia tiểu quỷ sẽ ở cửa chờ hắn.</p>
+<p>Đều do kia đáng chết Đồng biến thái, trò chơi này thiết kế cũng quá biến thái, một chút manh mối đều không cho bọn họ, sở hữu quy luật đều phải dựa tử vong tới tổng kết.</p>
+<p>Bạch Vi tiếp tục nói “Tuy rằng chúng ta chưa dùng tới phù chú, nhưng mắt kính nam chết, cũng từ mặt bên bằng chứng phù chú tác dụng. Lúc này đây ta tới tặng lễ vật, ta có tám phần nắm chắc tồn tại chờ đến trò chơi trọng trí.”</p>
+<p>Tiểu Lộc khó hiểu “Không phải hiến tế đồng đội mới có thể kích phát trò chơi trọng trí sao? Tồn tại như thế nào trọng trí trò chơi?”</p>
+<p>Công Minh giáo thụ “Bởi vì chúng ta còn không có tìm được Tiểu Mễ, vô pháp đến ngày mai.”</p>
+<p>Bạch Vi gật đầu “Không sai, hiện tại nhất quan trọng là tìm được Tiểu Mễ. Trò chơi đã tiến hành rồi bốn luân, năm cái hài tử chúng ta tiếp xúc bốn cái, lại vẫn như cũ một chút manh mối đều không có. Này không khoa học, nhất định có biện pháp nào có thể tìm được Tiểu Mễ, chỉ là chúng ta còn không có phát hiện mà thôi.”</p>
+<p>Nói đến Tiểu Mễ, Công Minh giáo thụ cũng là khẩn ninh mày, này như thế nào cảm giác so với hắn làm thực nghiệm đều khó, hắn tìm vũ trụ thiên thể vận động quy luật đều không có như vậy phức tạp quá.</p>
+<p>Không chỉ là bọn hắn, toàn võng đều ở tìm Tiểu Mễ.</p>
+<p>“Rốt cuộc ai là Tiểu Mễ a.”</p>
+<p>“Vẫn là đến trước tìm ra Tiểu Mễ, không biết Tiểu Mễ là ai, trò chơi này liền thông quan không được.”</p>
+<p>“Không phải đã xác định phù chú tác dụng sao? Chỉ cần phù chú hữu dụng, bọn họ liền có vô hạn trọng trí cơ hội, hoàn toàn có thể sinh đẩy.”</p>
+<p>“Sinh đẩy? Mấy trăm cái lễ vật cùng năm cái Tiểu Mễ xứng đôi, ngươi biết có bao nhiêu loại tổ hợp phương pháp sao?”</p>
+<p>“Không phải đã tra ra lễ vật là bút màu nước sao?”</p>
+<p>“Bạch Vi không phải nói sao? Lễ vật khả năng sẽ không đơn giản như vậy.”</p>
+<p>“Này còn đơn giản? Chỉ là phỏng đoán ra cái này phù chú tác dụng liền đã chết bốn người, này còn đơn giản?”</p>
+<p>“Giống như cũng là.”</p>
+<p>Viện nghiên cứu thực đường, đang ở phát sóng trực tiếp trận này mật thất trò chơi.</p>
+<p>Thức tỉnh giả là không kiến nghị quan khán mật thất phát sóng trực tiếp, bởi vì đồng dạng là kích thích tinh thần hải, khế ước giả bị kích thích sau sẽ phóng xuất ra dư thừa tinh thần lực, do đó giảm bớt tinh thần hải căng chặt, nhưng thức tỉnh giả sau khi xem xong, lại sẽ kích thích ra càng nhiều hỗn loạn tinh thần lực, tăng thêm tinh thần hải gánh nặng. Hai người là hoàn toàn tương phản kết quả.</p>
+<p>Nhưng Đồng lão bản mật thất phó bản thật sự là quá phát hỏa, hiện tại ngay cả nhà trẻ xướng nhạc thiếu nhi đều là Đồng lão bản trong mật thất xuất phẩm 《 đào nha đào 》 cùng 《 dũng khí đại bùng nổ 》. Thật vất vả nghỉ phép về nhà, người nhà bằng hữu thảo luận cũng đều là mật thất phó bản cốt truyện, bọn họ ngày thường vốn dĩ liền về nhà thiếu, kết quả hiện tại về nhà liền cái cộng đồng đề tài đều tìm không thấy, này nơi nào có thể hành. Vì thế thức tỉnh giả nhóm thật sự là nhịn không được, bắt đầu trộm hiểu biết mật thất cốt truyện.</p>
+<p>Ngay từ đầu thời điểm, vì phòng ngừa bị trực tiếp kích thích, bọn họ không xem phát sóng trực tiếp cùng hồi phóng, chỉ là từ diễn đàn văn tự phổ cập khoa học hiểu biết đại khái tin tức. Nhưng bọn hắn là nghiên cứu khoa học công tác giả a, như thế nào có thể chịu đựng chính mình đối một cái tri thức điểm cái biết cái không đâu, cho nên càng hiểu biết, bọn họ liền càng tò mò, càng tò mò liền càng muốn biết. Sau đó từ văn tự xem, đến xem hồi phóng, lại đến xem phát sóng trực tiếp, liền như vậy tự nhiên hoàn thành. Bất quá bọn họ như cũ ở kiên trì cuối cùng điểm mấu chốt, đó chính là tuyệt không tự mình đi chơi trò chơi, tuy rằng bọn họ thật sự rất muốn đi.</p>
+<p>Tóm lại, cứ như vậy, Đồng lão bản mật thất phát sóng trực tiếp liền như vậy công khai xuất hiện ở viện nghiên cứu thực đường. Ai tới ăn cơm, liền nhìn liếc mắt một cái, ai xem tinh thần lực hỗn loạn, thực đường đại sư phó liền giúp đỡ đem người đưa đi phòng y tế.</p>
+<p>Đối này Thôi bác sĩ phi thường có ý kiến, Đồng Du vẫn luôn bá, hắn liền phải tăng ca, hắn không nghĩ tăng ca, hắn cũng muốn nhìn phát sóng trực tiếp a.</p>
+<p>Bởi vì biết Đồng Du hôm nay muốn phát sóng trực tiếp, cho nên Thịnh Cảnh cố ý điều chỉnh chính mình nghỉ ngơi thời gian, tuyển ở phát sóng trực tiếp thời gian đoạn ngồi xổm ở thực đường xem phát sóng trực tiếp. Trò chơi vòng thứ nhất thời điểm, thực đường là chen đầy, hiện giờ bốn luân trò chơi qua đi, thực đường liền dư lại một phần ba, dư lại hai phần ba, tất cả tại phòng y tế. Đặc biệt là vừa rồi tủ lạnh cửa vừa mở ra, trực tiếp liền đổ mười mấy.</p>
+<p>Bạch chủ nhiệm xem thẳng lắc đầu “Thật là lấy mệnh xem phát sóng trực tiếp.”</p>
+<p>Thịnh Cảnh nghe vậy, chỉ là nhấp miệng cười.</p>
+<p>Bạch chủ nhiệm nhìn hắn liếc mắt một cái “Ngươi tinh thần hải không có việc gì đi.”</p>
+<p>Thịnh Cảnh lắc đầu “Không có việc gì.”</p>
+<p>Đồng Du xây dựng cái này mật thất xây dựng tương đối cấp, rút ra hắn không ít tinh thần lực, hơn nữa hắn đối tinh thần Ma trận đồ nắm giữ, hắn tinh thần hải so với phía trước muốn củng cố rất nhiều. Hơn nữa…… Cái này phó bản là Đồng Du xây dựng, cho nên cái này phó bản ở trong mắt hắn là có lự kính, thích so khủng bố nhiều.</p>
+<p>Bạch chủ nhiệm nếu là biết Thịnh Cảnh xem cái khủng bố phó bản đều có thể sinh ra vui sướng cảm xúc, nhất định sẽ hung hăng mắng Thịnh Cảnh một câu luyến ái não.</p>
+<p>Ngồi ở Thịnh Cảnh bên cạnh viện nghiên cứu, đã đau sắc mặt trở nên trắng, lại chết sống không rời đi thực đường, như cũ đang xem phát sóng trực tiếp, thuận tiện cùng đồng sự thảo luận như thế nào tìm Tiểu Mễ. Luận đầu óc, bọn họ này đó ở viện nghiên cứu công tác người, cái nào không có đầu óc? Nhưng bọn họ nhiều như vậy đầu óc kết hợp ở bên nhau, lăng là cũng không đoán được ai là Tiểu Mễ. Nhưng thật ra kia mấy trăm cái lễ vật cùng năm cái Tiểu Mễ tổ hợp chủng loại nhẹ nhàng tính ra tới.</p>
+<p>Này đồng sự liếc Thịnh Cảnh liếc mắt một cái, thật sự là nhịn không được, qua đi hỏi Thịnh Cảnh “Thịnh công, ngươi biết Tiểu Mễ là ai sao?”</p>
+<p>Thịnh Cảnh lắc lắc đầu “Không biết.”</p>
+<p>“Ngươi cũng không biết?” Người nọ vẻ mặt khiếp sợ, “Đồng biến…… Đồng lão bản không cùng ngươi nói sao?”</p>
+<p>Thịnh Cảnh nhàn nhạt liếc hắn một cái, làm bộ không có nghe được đối phương nói lắp kia một chút, tiếp tục lắc đầu “Không có.”</p>
+<p>“Kia…… Vậy ngươi biết như thế nào tìm ra Tiểu Mễ sao?”</p>
+<p>Thịnh Cảnh “Không biết.”</p>
+<p>“Không phải đâu, liền Thịnh công ngươi cũng không biết, kia khẳng định liền tìm không ra, chỉ có thể sinh đẩy.”</p>
+<p>“Nếu chỉ có thể sinh đẩy, kia lễ vật nhất định chính là bút màu nước, hoặc là sổ nhật ký mặt sau vài tờ lại bày ra ra tới mặt khác lễ vật.” Nếu thật muốn đem kia mấy trăm loại lễ vật cùng hài tử nhất nhất xứng đôi, kia đến xứng đôi đến địa lão thiên hoang, cho nên trực tiếp bài trừ loại này khả năng.</p>
+<p>Thịnh Cảnh nghe xong, lại nói “Bút màu nước hẳn là không phải lễ vật.”</p>
+<p>“Kia cái gì là lễ vật?”</p>
+<p>Cái này liền Bạch chủ nhiệm đều tò mò nhìn qua, cái này phó bản thật sự là quá khó khăn, bọn họ tưởng phá đầu cũng không biết muốn như thế nào phá cục, bọn họ thật sự là quá tò mò.</p>
+<p>Thịnh Cảnh trầm ngâm một chút nói “Bút màu nước xuất hiện ở đệ tam trang, xuất hiện quá sớm, đây là một cái trinh thám phó bản, đáp án sẽ không cấp như vậy rõ ràng. Cho nên lễ vật rốt cuộc là cái gì, không nhìn đến sổ nhật ký cuối cùng một tờ, nhất định là phát hiện không được.”</p>
+<p>“Cho nên muốn đem nhật ký đọc xong, mới có thể biết lễ vật. Kia cũng còn hảo, đã đến trang thứ năm, lại trọng trí hai lần, liền có thể biết lễ vật.”</p>
+<p>Thịnh Cảnh không có phát biểu ý kiến, nhưng hắn kỳ thật cảm thấy liền tính đến cuối cùng một tờ, Đồng Du đại khái suất cũng sẽ không trực tiếp đem lễ vật tên viết ở mặt trên, hẳn là sẽ cho một ít nhắc nhở. Hắn dừng một chút, tiếp tục nói “Tiểu Mễ hẳn là có biện pháp tìm được.”</p>
+<p>Hắn cảm thấy Đồng Du sẽ không thiết kế một cái không có kỹ thuật hàm lượng sinh đẩy phân đoạn.</p>
+<p>Cái kia đồng sự khó hiểu “Ngươi vừa rồi không phải nói ngươi không biết như thế nào tìm Tiểu Mễ sao?”</p>
+<p>Thịnh Cảnh “Ta không biết, không đại biểu không có phương pháp, chỉ là ta hiểu biết tin tức không đủ.”</p>
+<p>“Cái này phó bản vẫn luôn ở tuần hoàn, trong trò chơi tin tức liền nhiều như vậy, còn cần cái gì tin tức?”</p>
+<p>Thịnh Cảnh nói ra chính mình suy đoán “Lúc này đây người chơi tuyển chọn có hai hạng tất yếu điều kiện, một cái là thông quan quá dĩ vãng sở hữu phó bản, còn có một cái là mật thất bách khoa tích phân cần thiết cao. Phía trước bọn họ phát hiện tinh thần Ma trận đồ có thể đuổi quỷ, chính là bởi vì liên tưởng đến quỷ tân nương phó bản. Cho nên, phân rõ Tiểu Mễ biện pháp, nếu không ở trong trò chơi này, kia nhất định ở mặt khác cùng loại trong trò chơi xuất hiện quá, thậm chí có thể là cùng phù chú đuổi quỷ giống nhau thường thức tính tri thức.”</p>
+<p>Người nọ trầm mặc một chút, bỗng nhiên mở ra chính mình quang não, ở phòng live stream bắt đầu phát làn đạn.</p>
+<p>“Phân rõ Tiểu Mễ biện pháp hẳn là cùng phù chú đuổi quỷ giống nhau thường thức tính tri thức, đại gia cùng đi mật thất bách khoa tìm a”</p>
+<p>Thịnh Cảnh “……”</p>
+<p>Thế giới giả thuyết mật thất ngoại, Đồng Du nhìn đến này làn đạn, bỗng nhiên di một tiếng “Có người phát hiện ta thiết kế ý nghĩ.”</p>
+<p>Trương Hâm đã ép hỏi Đồng Du vô số lần, Đồng Du chính là chết sống không nói cho hắn như thế nào phân biệt Tiểu Mễ, nghe vậy lập tức nói “Phân rõ Tiểu Mễ biện pháp thật sự ở mật thất bách khoa.”</p>
+<p>Đồng Du gật đầu “Trò chơi này chỗ khó kỳ thật liền hai cái, phù chú đuổi quỷ cùng lễ vật xác định. Kỳ thật chỉ cần xác định lễ vật, Tiểu Mễ là ai liền có thể sinh đẩy. Nhưng sinh đẩy thật sự là quá không thú vị, cho nên Tiểu Mễ vẫn là có thể phân biệt ra tới, chỉ là phương pháp tương đối lạ, nếu không phải đem mật thất bách khoa thượng tri thức nhớ rõ thuộc làu người, căn bản là phát hiện không được. Cho nên Tiểu Mễ phát hiện kỳ thật là một cái trứng màu, không thể phát hiện cũng có thể thông quan, nhưng là phát hiện, sẽ có trứng màu khen thưởng.”</p>
+<p>Trương Hâm tò mò “Cái gì khen thưởng?”</p>
+<p>Đồng Du “Bánh sinh nhật phối phương.”</p>
+<p>Ăn? Đồng Du làm ra tới ăn ngon ăn sao? Đây là yêu cầu hoài nghi sự tình sao? Kia cần thiết ăn ngon a.</p>
+<p>Trương Hâm nhịn không nổi, kéo ra hậu trường giao diện, bắt đầu phát làn đạn, hơn nữa dùng chính là Lam Hải tập đoàn hào “Tìm được Tiểu Mễ có thể kích phát trứng màu khen thưởng, khen thưởng có bánh kem phối phương!!!”</p>
+<p>Này tin tức phát ra đi, cùng phía chính phủ thông tri liền không khác nhau.</p>
+<p>Đồng Du “……”</p>
+<p>Trương Hâm “Kích thích một chút võng hữu tính tích cực sao. Lại nói, ta chỉ là phát ở làn đạn, lại không tính gian lận.”</p>
+<p>Đồng Du cười lạnh một tiếng “Ta cấm hậu trường hồi phóng thời điểm, ngươi nghe được lời nói của ta đi.”</p>
+<p>Trương Hâm “Kia cái gì, xem phát sóng trực tiếp, xem phát sóng trực tiếp, Bạch Vi bọn họ mở ra trang thứ năm nhật ký.”</p>
+<p>Mà lúc này phòng live stream, mọi người đều đang hỏi bánh kem là cái gì? Trong đó nhất kích động chính là Bạch chủ nhiệm, Bạch chủ nhiệm chính là ăn qua bánh kem, kia mỹ diệu khẩu cảm, hắn ăn lúc sau nằm mơ làm ba ngày, trong mộng tất cả đều là bánh kem.</p>
+<p>Lập tức cũng bất chấp trưởng giả thân phận, trực tiếp mệnh lệnh Thịnh Cảnh “Đem Tiểu Mễ cho ta tìm ra, lập tức, lập tức!”</p>
+<p>Thịnh Cảnh “…… Ta liền tính tìm đến, cũng nhiều lắm phát làn đạn thượng, bên trong người chơi lại không thể biết.”</p>
+<p>Bạch chủ nhiệm phản ứng lại đây, tức khắc khóc tang mặt.</p>
+<p>Hắn bánh kem a ~</p>
+<p>Trong trò chơi ba người nhảy ra trang thứ năm</p>
+<p>【 ba ba mang ta đi công viên chơi, chúng ta gặp một con từ trên cây rơi xuống chim nhỏ, vì đưa chim nhỏ về nhà, ba ba đem ta khiêng ở trên vai, cử cao cao, làm ta đem chim nhỏ đưa về trên cây. Về nhà sau, ta dùng ba ba đưa ta bút màu nước, đem chuyện này vẽ xuống dưới, ta muốn đem họa dán ở đầu giường, mỗi ngày xem. 】</p>
+<p>Bạch Vi “Vẫn là bút màu nước.”</p>
+<p>Cái này liền Công Minh giáo thụ cũng cứ địa lễ vật chính là bút màu nước “Xem ra lễ vật chính là bút màu nước.”</p>
+<p>Tiểu Lộc “Chúng ta đây chỉ cần từng cái bài trừ là được.”</p>
+<p>Bạch Vi khép lại nhật ký “Trước đi ra ngoài đi, chờ mặt sau hai trang xem xong lại nói.”</p>
+<p>Lúc này đây, bọn họ mang theo bút màu nước đi ra ngoài, từ Bạch Vi tự mình đi tặng lễ vật, nàng tuyển thứ 5 cái hài tử.</p>
+<p>Buổi tối, ở đã chết đi bốn vị đồng đội vong hồn mời bọn họ cùng nhau ngủ lúc sau, ba người lần thứ năm tiến vào phòng.</p>
+<p>Quả nhiên, Bạch Vi cửa phòng phù chú không có sáng lên, có mắt kính nam vết xe đổ, Bạch Vi phi thường bình tĩnh đi đến án thư trước, bắt đầu vẽ đồ án.</p>
+<p>Chỉ là nàng nhắc tới bút, lại chậm chạp không có rơi xuống.</p>
+<p>“Làm gì vậy, Bạch Vi như thế nào không vẽ bùa chú?”</p>
+<p>“Có phải hay không không nhớ rõ?”</p>
+<p>“Ngươi ngu ngốc a, liền ở trên cửa, miêu là được a.”</p>
+<p>Liền ở võng hữu không rõ nguyên do thời điểm, trong trò chơi Bạch Vi bỗng nhiên nhìn về phía cửa phòng trên có khắc Ma trận đồ, lẩm bẩm tự nói một câu “Khởi điểm là nơi nào?”</p>
+<p>“Từ từ, có ý tứ gì, khởi điểm?”</p>
+<p>“Oa thảo không thể nào, cái này phù chú chẳng lẽ còn muốn ấn trình tự tới?”</p>
+<p>“Ta cảm giác hẳn là muốn, các ngươi không phát hiện sao, từ bắt đầu đến bây giờ, cái này đồ án thượng lượng điểm chính là vẫn luôn dựa theo cố định trình tự ở di động.”</p>
+<p>Các võng hữu vội đi Công Minh giáo thụ cùng Tiểu Lộc phòng xem, quả nhiên phát hiện, kia trên cửa phù chú, vận động lộ tuyến là cố định. Cho nên cái này phù chú, không phải sao lại đây là được, hơn nữa là yêu cầu dựa theo nhất định trình tự đem hắn vẽ ra tới.</p>
+<p>Phát hiện điểm này, các võng hữu lại lần nữa kêu rên lên.</p>
+<p>“Này TM cũng quá khó khăn, như vậy phức tạp đồ hình, ai có thể nhớ rõ trụ vận động lộ tuyến.”</p>
+<p>“Đừng nói nhớ, ta chỉ là xem đều xem đến hoa mắt.”</p>
+<p>“Mau họa a, năm phút, tiểu quỷ muốn vào tới a a.”</p>
+<p>“Bạch Vi sẽ không muốn treo đi.”</p>
+<p>“Không cần miệng quạ đen a.”</p>
+<p>Trong trò chơi, Bạch Vi còn ở suy tư phù chú họa pháp, các võng hữu cũng đã cấp nhảy nhót lung tung.</p>
+<p>Lại qua năm phút, Bạch Vi như là rốt cuộc nhớ ra rồi, nàng trở lại trước bàn, dựa theo ký ức bắt đầu vẽ bùa. Nàng họa rất chậm, mắt nhìn hai mươi phút thời gian hạn chế muốn tới, nàng trong tay phù chú cũng chỉ vẽ một phần ba.</p>
+<p>“Xong rồi, xong rồi, họa không xong rồi.”</p>
+<p>“Này không phải vô nghĩa đi, nếu phải nhớ kỹ nguyên lai trình tự, đừng nói hai mươi phút, chính là 200 phút cũng họa không ra a.”</p>
+<p>“Tỷ tỷ.”</p>
+<p>Một tiếng tỷ tỷ, trong trò chơi Bạch Vi còn không có như thế nào phản ứng, làn đạn đã một mảnh kêu rên.</p>
+<p>“Tới, tới!”</p>
+<p>“Muốn chết a.”</p>
+<p>“Ta hiện tại nghe không được ca ca tỷ tỷ linh tinh xưng hô a.”</p>
+<p>Bạch Vi nhéo trong tay lá bùa, xoay người, nhìn về phía hôm nay nàng lỏng lễ vật tiểu nữ hài. Tiểu nữ hài ăn mặc đáng yêu tiểu hùng quần yếm, trát hai cái bím tóc, chính nghiêng đầu cười hì hì nhìn nàng.</p>
+<p>Liền tính là làm đủ chuẩn bị tâm lý, nhìn đến tiểu nữ hài kia một khắc, Bạch Vi vẫn là dọa ra một thân mồ hôi lạnh.</p>
+<p>“Tiểu…… Muội muội, sao ngươi lại tới đây.”</p>
+<p>“Ta tới tìm tỷ tỷ a, buổi chiều thời điểm, ta đều không có tìm được tỷ tỷ, nguyên lai tỷ tỷ giấu ở chỗ này a.” Tiểu nữ hài cười hì hì đi phía trước nhảy nhót hai bước.</p>
+<p>“A a a, ngươi không cần lại đây a!”</p>
+<p>Kêu không phải Bạch Vi, là phòng live stream võng hữu, này đắm chìm cảm, so Bạch Vi cái này đương sự đều cường.</p>
+<p>“Ngươi tìm được ta, thật lợi hại.”</p>
+<p>“Tỷ tỷ, bị bắt được người là tiếp theo cái quỷ nga.” Tiểu nữ hài nói lại đi phía trước đi rồi vài bước.</p>
+<p>Bạch Vi đồng tử co rụt lại “Tỷ tỷ không nghĩ đương quỷ.”</p>
+<p>Tiểu nữ hài “Không được tỷ tỷ, bị bắt được chính là tiếp theo cái quỷ, đây là quy tắc trò chơi, không thể thay đổi quy tắc.”</p>
+<p>Nói tiểu nữ hài lại đi phía trước đi rồi vài bước, cơ hồ liền phải dán đến Bạch Vi trên người, Bạch Vi lập tức giơ tay, đem chộp trong tay phù chú trực tiếp dỗi ở tiểu nữ hài trên mặt.</p>
+<p>Lá bùa thiêu đốt, nữ hài kêu thảm thiết một tiếng, lui khai đi.</p>
+<p>Dần dần mà, tiểu nữ hài thân hình vặn vẹo, bắt đầu tiêu tán, tiêu tán trước, nàng dùng oán độc vặn vẹo mặt nguyền rủa Bạch Vi, “Tỷ tỷ, ta còn sẽ lại đến tìm ngươi!!”</p>
+<p>Bạch Vi bị tiểu nữ hài tiêu tán trước oán độc dọa ra một tiếng mồ hôi lạnh, mà nàng trong tay phù chú cũng hóa thành tro tàn.</p>
+<p>“Leng keng, chúc mừng người chơi giải khóa vẽ bùa đuổi quỷ thành tựu, có thể phát hiện phù chú bí mật hơn nữa không có họa sai trình tự, chứng minh ngươi vẫn là có điểm đầu óc. Vì khen thưởng người chơi, ở kích hoạt trò chơi trọng trí công năng đồng thời, đại từ đại bi Đồng lão bản quyết định cấp cho người chơi một lần bên ngoài xin giúp đỡ cơ hội.”</p>
+<p>“Nhắc nhở, nên bên ngoài xin giúp đỡ công năng, không thể xin giúp đỡ đã tử vong đồng đội, bởi vì bọn họ đã là quỷ hồn, dương gian thông tin là đánh không đến âm phủ. Người chơi chỉ có thể xin giúp đỡ với phòng live stream quan khán phát sóng trực tiếp võng hữu, chỉ có bọn họ ở rõ ràng quan tâm ngươi chết sống. Đến nỗi ai có thể tiến vào các ngươi xin giúp đỡ danh sách, hết thảy giao cho vận mệnh đi.”</p>
+<p>“Leng keng, trò chơi trọng trí bắt đầu.”</p>
+<p>Lần đầu tiên, người chơi bình an trở về món đồ chơi phòng.</p>
+<p>Nhưng lúc này đã không có người để ý cái này, bên ngoài xin giúp đỡ?</p>
+<p>Trò chơi này, bọn họ cư nhiên cũng có thể tham dự?</p>
+<p>“Mau, tìm Tiểu Mễ a, bánh kem phối phương!! Cần thiết bắt lấy!”</p>
+<p>Thịnh Cảnh nhìn thoáng qua trạng nếu điên cuồng Bạch chủ nhiệm, đứng dậy, yên lặng phải đi.</p>
+<p>“Ngươi đi đâu?” Bạch chủ nhiệm cười dữ tợn nhìn hắn.</p>
+<p>Thịnh Cảnh “……”</p>
+<p>Tác giả có lời muốn nói</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong100.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong102.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "o-tinh-te-khai-mat-tron";
+const NOVEL_TITLE = "Ở tinh tế khai mật trốn";
+const CHAPTER_TITLE = "Chương 101";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 21</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ở tinh tế khai mật trốn
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 21</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong20.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong22.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Người thông minh đầu óc càng có nhai kính? Đây là tiếng người sao?!”</p>
+<p>“Phía trước, ngươi còn đem hắn đương người sao? Hắn so quỷ tân nương đều không phải người!”</p>
+<p>“Quỷ tân nương vốn dĩ liền không phải người.”</p>
+<p>“Muốn thượng khoan dò sao? Muốn toản đầu óc sao?”</p>
+<p>“Phía trước, không cần nhắc nhở Hannibal a.”</p>
+<p>“Không nhắc nhở hắn sẽ không ăn đầu óc sao?”</p>
+<p>“Mụ mụ, từ hôm nay trở đi ta không học tập! Sẽ trở thành cao cấp nguyên liệu nấu ăn.”</p>
+<p>“Thần mẹ nó cao cấp nguyên liệu nấu ăn!!”</p>
+<p>“Quản gia dẫn người truy lại đây!”</p>
+<p>Trong mật thất, quản gia đã dẫn người đuổi tới ngoài cửa phòng, chính “Loảng xoảng loảng xoảng” tạp vào môn.</p>
+<p>“Tôn kính khách nhân, bữa tối đã chuẩn bị hảo, mời theo ta ngồi vào vị trí.” Quản gia thanh âm như cũ ôn hòa lễ phép, nhưng nghe vào lúc này mọi người trong tai lại phá lệ khủng bố.</p>
+<p>“Bữa tối là cái gì, là vừa mới kia anh em đầu óc, vẫn là Trương giáo thụ đầu óc.”</p>
+<p>“Trương giáo thụ còn chưa có chết đâu, năng lượng giá trị còn rớt đâu.”</p>
+<p>“Lại như vậy ngã xuống đến offline đi.”</p>
+<p>“Ta là hắn, ta lập tức trích mũ giáp!”</p>
+<p>“Làm sao bây giờ?” Đột nhiên tới biến cố làm mật thất trung người chơi đều hoảng sợ.</p>
+<p>“Khẳng định không thể đi ra ngoài, đi ra ngoài chúng ta đều đến biến thành bữa tối.”</p>
+<p>“Kia vẫn là đến phục hồi như cũ khối Rubik.”</p>
+<p>Bảy người lại lần nữa nhìn về phía kia khảm ở trên vách tường khối Rubik, ninh mi suy tư nên như thế nào phục hồi như cũ.</p>
+<p>“Tôn kính khách nhân, đồ ăn liền phải lạnh, chạy nhanh ra đây đi.”</p>
+<p>“Thần mẹ nó lạnh, ngươi đun nóng quá sao ngươi?”</p>
+<p>Quản gia mỗi một câu nói, làn đạn liền có không chịu thua võng hữu tiếp một câu, náo nhiệt không được.</p>
+<p>Có lẽ là biết bên trong người sẽ không ra tới, quản gia bình tĩnh đối bên người người hầu nói “Đi đem chìa khóa mang tới.”</p>
+<p>“Nam thần chạy mau, hắn đi lấy chìa khóa a a a a!”</p>
+<p>“Như thế nào chạy, khối Rubik phục hồi như cũ không được a.”</p>
+<p>“Mẹ nó, chờ cái gì, sát đi ra ngoài đồng quy vu tận!”</p>
+<p>“Nếu không sát đi ra ngoài đi.” Arlene nháy mắt cùng phòng live stream nhiệt huyết võng hữu cộng não, nàng nhất am hiểu chính là cách đấu, so với lộng cái này chưa bao giờ có gặp qua khối Rubik, đánh nhau hiển nhiên càng đơn giản.</p>
+<p>“Đừng xúc động.” Hạ Chính bình tĩnh nói, “Lúc này mới cửa thứ nhất, thông thường tới nói trò chơi cửa thứ nhất sẽ không thiết kế quá khó, hẳn là có biện pháp cởi bỏ.”</p>
+<p>Màn hình ngoại, Đồng Du điên cuồng gật đầu, đối, đối, ta thiết kế một chút đều không khó.</p>
+<p>Trương Hâm nhịn không được quay đầu lại hỏi Đồng Du “Này khối Rubik có phải hay không có cái gì nhắc nhở?”</p>
+<p>Đồng Du lắc đầu “Không có.”</p>
+<p>Trương Hâm trừng mắt “Không có? Thuần đua?”</p>
+<p>Đồng Du “Không có, thuần đua.”</p>
+<p>Trương Hâm điên rồi “Này mẹ nó ai 30 giây đua ra tới? Ngươi cửa thứ nhất này liền phải đem người đều lộng chết, mặt sau như thế nào chơi.”</p>
+<p>Đồng Du yên lặng từ trong ngăn tủ móc ra một cái khối Rubik, sau đó làm trò Trương Hâm mặt, lanh lợi, không đến mười giây, phục hồi như cũ hoàn thành.</p>
+<p>“……” Trương Hâm trầm mặc mấy giây, lời nói thấm thía nói, “Trên thế giới này không phải mỗi người đều là thiên tài.”</p>
+<p>Đồng Du cuồng táo “Thứ này chỉ cần có điểm đầu óc đều đua ra tới, là bọn họ quá khẩn trương.”</p>
+<p>Cuối cùng Hạ Chính đi ra phía trước “Ta tới thử xem.”</p>
+<p>Nói Hạ Chính duỗi tay sờ hướng khối Rubik, đồng thời khối Rubik mặt trên đếm ngược bắt đầu nhảy lên, chẳng qua lúc này đây không phải 30 giây mà là 60 giây.</p>
+<p>“Thời gian biến nhiều.”</p>
+<p>“Là bởi vì Trương giáo thụ bị bắt, cho nên nhiều 30 giây?”</p>
+<p>“Cho nên cái này khối Rubik phục hồi như cũ, yêu cầu chính là thời gian, chỉ cần thời gian đủ liền nhất định có thể phục hồi như cũ?”</p>
+<p>“Ta biết như thế nào phục hồi như cũ, màu lam chuyển xuống dưới, lại bên trái ninh, bên phải ninh, hồng nhạt lại……”</p>
+<p>“Trên lầu có phải hay không ngu ngốc a, ngươi nơi này phát làn đạn bên trong lại nhìn không thấy.”</p>
+<p>“A a a, cấp chết ta, giống như cấp Hạ ảnh đế gọi điện thoại.”</p>
+<p>Hạ Chính tự nhiên là tiếp không được điện thoại, hắn chỉ có thể dựa vào cảm giác ở Trương giáo thụ đã phục hồi như cũ một nửa cơ sở thượng tiếp tục phục hồi như cũ khối Rubik, mà ở hắn phục hồi như cũ khối Rubik đồng thời, ngoài cửa tiếng đập cửa liền không có đình quá, “Loảng xoảng loảng xoảng loảng xoảng” phá cửa thanh càng ngày càng dồn dập, phảng phất tùy thời đều sẽ phá cửa mà vào.</p>
+<p>“Làm sao bây giờ? Bọn họ muốn vào tới?” Có người sợ hãi lên.</p>
+<p>“Đừng sợ.” Arlene tả hữu nhìn nhìn, sau đó đột nhiên túm lên một phen ghế dựa, canh giữ ở cửa.</p>
+<p>“Arlene, ngươi rốt cuộc khôi phục nữ hán tử bản sắc.”</p>
+<p>“Ta còn là càng thích thẹn thùng Arlene.”</p>
+<p>“Thẹn thùng đầu óc sẽ là hồng nhạt sao?”</p>
+<p>“Trên lầu, ngươi có phải hay không bị Hannibal bám vào người.”</p>
+<p>Hạ Chính bay nhanh chuyển động mê muội phương lắp ráp, chuyển chuyển, hắn bỗng nhiên phát giác một ít quy luật, tiện đà ánh mắt sáng lên “Ta biết như thế nào phục hồi như cũ.”</p>
+<p>Mọi người kinh hỉ xem qua đi, lúc này Derrick nhìn lướt qua thời gian “Mau, còn thừa mười giây.”</p>
+<p>Hạ Chính bay nhanh chuyển động, lúc này ngoài cửa người hầu cũng cầm chìa khóa đi tới.</p>
+<p>Này mười giây, trò chơi trong ngoài, trừ bỏ Đồng Du bản nhân, cơ hồ tất cả mọi người ngừng lại rồi hô hấp, không tiếng động ở trong lòng hò hét “Mau, mau, mau một chút!”</p>
+<p>Phòng live stream, bảy người năng háo giá trị xoát xoát đi xuống rớt.</p>
+<p>Liền ở quản gia bắt được chìa khóa nháy mắt, khối Rubik cũng đồng thời bị phục hồi như cũ, chỉ nghe “Ca” một tiếng, khối Rubik vỡ ra, lộ ra bên trong một quả màu bạc chìa khóa.</p>
+<p>“Chìa khóa, là chìa khóa!” Mọi người hoan hô ra tiếng, bởi vì quá mức vui vẻ, bọn họ tiếng hoan hô phủ qua quản gia chuyển động chìa khóa thanh âm.</p>
+<p>“Chạy mau! Quản gia ở mở cửa!”</p>
+<p>“Đừng hô, chạy nhanh chạy a a a a!”</p>
+<p>Này nhưng đem người xem lo lắng, từng cái ở làn đạn bên trong spam, chạy mau a a thanh, một phút xoát ra mười vạn điều.</p>
+<p>Arlene ly cửa gần nhất, trước hết phản ứng lại đây “Bọn họ ở mở cửa, mau, chạy nhanh mở cửa sau!”</p>
+<p>Nói Arlene dùng thân thể lấp kín cửa phòng, mà cơ hồ là ở nàng lấp kín cửa phòng nháy mắt, quản gia cũng đã đem người đẩy ra một cái phùng.</p>
+<p>“Mỹ lệ nữ sĩ……”</p>
+<p>“Ta mỹ lệ nima!!” Arlene táo bạo, một cái dùng sức, giữ cửa một lần nữa khóa trở về.</p>
+<p>Derrick phản ứng nhanh nhất, từ khối Rubik lấy chìa khóa, bay nhanh mở cửa “Mau, từ nơi này chạy.”</p>
+<p>Bảy người nối đuôi nhau mà ra, nhưng mới chạy ra đi ba cái, quản gia đã làm giữ cửa đá văng, mang theo người hầu đuổi theo tiến vào.</p>
+<p>“Tôn kính khách nhân, nên đi nhà ăn!”</p>
+<p>“Ta đi nima!” Arlene thật sự nhịn không được, túm lên ghế dựa triều quản gia soái mặt liền tạp qua đi.</p>
+<p>“Hannibal lâu đài không chào đón không hiểu lễ phép khách nhân.” Quản gia sinh khí, giơ tay, bọn người hầu hướng tới Arlene chen chúc mà đi.</p>
+<p>Người chơi cùng quản gia lại một lần bắt đầu rồi sinh tử truy đuổi, nhưng lâu đài là quản gia sân nhà, các người chơi chạy vội mỗi một cái hành lang đều có khả năng xuất hiện ăn mặc tây trang anh tuấn người hầu.</p>
+<p>Chạy vội lộ tuyến Đồng Du là thiết kế quá, chỉ cần người chơi tránh đi sở hữu có người hành lang liền có thể thuận lợi tiến vào tiếp theo quan tạp.</p>
+<p>Nhưng cố tình tinh tế thời đại đồng bào nhóm chiến tranh trò chơi chơi nhiều, bọn họ trốn chạy thời điểm tuy rằng không ai lộ bọn họ cũng chạy, nhưng ít người đánh quá lộ bọn họ cũng chạy. Vì thế liền thấy bảy người, hoặc bàn tay trần, hoặc sao bàn ghế, cùng hành lang xuất hiện người hầu chiến ở một khối, mật thất chạy thoát một giây liền nhiệt huyết cách đấu.</p>
+<p>Đồng Du một ngụm trà sữa phun đi ra ngoài.</p>
+<p>“Mau, sát đi ra ngoài a a!”</p>
+<p>“Dùng cái gì ghế, đi phòng bếp cầm đao, lấy máy khoan điện a, cũng toản bọn họ đầu.”</p>
+<p>“Lộng chết bọn họ, lộng chết bọn họ.”</p>
+<p>“Không cần ham chiến, mặt sau quản gia tới.”</p>
+<p>Tuy rằng chiến đấu trường hợp không phải Đồng Du thiết kế, nhưng bên trong mỗi một cái NPC đều có chính mình nhiệm vụ giả thiết. Tỷ như người hầu mục đích chính là ngăn cản cùng bắt giữ người chơi, quản gia tác dụng chính là đem bắt được người chơi mang đi nhà ăn.</p>
+<p>Cho nên các người chơi như vậy một trận chiến đấu, nhiệt huyết là nhiệt huyết, nhưng bọn hắn không có ở quy định thời gian thoát ly NPC tầm mắt, liền dẫn tới chung quanh NPC tất cả đều tụ tập lại đây.</p>
+<p>Hạ Chính nhận thấy được không đúng “Không được, người càng ngày càng nhiều, như vậy chúng ta sẽ bị trảo.”</p>
+<p>Derrick tả hữu nhìn nhìn, chỉ chỉ phía trước một phòng môn “Vào phòng.”</p>
+<p>Bọn họ tốc độ đã thực nhanh, nhưng đánh nhau chậm trễ thời gian quá dài, quản gia đã đến, chạy ở cuối cùng một người bị quản gia đè lại “Tôn kính khách nhân, nên đi nhà ăn!”</p>
+<p>Bị trảo người chơi là cái hán tử, lập tức anh dũng hô “Có bản lĩnh ngươi hiện tại liền giết ta.”</p>
+<p>Trừ bỏ bị trảo vị này anh em, còn lại sáu người toàn bộ trốn vào phòng, bọn họ đóng cửa lại dán ở trên cửa nghe xong trong chốc lát, chậm rãi hành lang liền không có thanh âm.</p>
+<p>“Bên ngoài người giống như đi rồi.” Arlene nói.</p>
+<p>Mọi người nghe vậy nhẹ nhàng thở ra.</p>
+<p>“Lâu đài nhiều người như vậy, chúng ta căn bản đánh không lại.”</p>
+<p>“Không sai, hơn nữa bọn họ trong tay còn có vũ khí, chúng ta trong tay cái gì đều không có.”</p>
+<p>“Trò chơi này căn bản là thông quan không được.”</p>
+<p>Derrick là trò chơi chủ bá, ở chơi trò chơi này phía trước, hắn đã làm một ít công lược, lập tức phát biểu ra không giống nhau cái nhìn “Ta cảm thấy, chúng ta chơi trò chơi phương pháp không đúng.”</p>
+<p>Đồng Du tức khắc lệ nóng doanh tròng Rốt cuộc có cái minh bạch người.</p>
+<p>Hạ Chính hỏi “Nói như thế nào.”</p>
+<p>Derrick “Ta xem qua trò chơi tóm tắt, này không phải chiến đấu loại trò chơi, mà là giải mê trò chơi. Mật thất chạy thoát, nói ngắn gọn, chính là thông qua giải mê từ một cái phong bế mật thất hoàn cảnh chạy đi.”</p>
+<p>Lưu Minh Kiệt “Nhưng bên ngoài như vậy nhiều người truy chúng ta, chúng ta sớm hay muộn sẽ bị đuổi theo.”</p>
+<p>Derrick “Nhất định có quy luật, chỉ là chúng ta còn không có tìm được, liền tỷ như phía trước cái kia khối Rubik, quản gia thực mau liền tìm tới rồi chúng ta nơi phòng, nhưng hắn cũng không có trước tiên liền vọt vào tới, mà là cho chúng ta phục hồi như cũ khối Rubik thời gian.”</p>
+<p>Hạ Chính cũng gật gật đầu “Ta tán đồng, tựa như phía trước quỷ tân nương, bái đường lúc sau quỷ tân nương nhất định sẽ vào động phòng, cho nên nhất định có nào đó quy luật.”</p>
+<p>Arlene hỏi “Thành thân cho nên nhập động phòng, chúng ta đây là tới ăn cơm chiều, có thể hay không xuất khẩu ở nhà ăn?!”</p>
+<p>Hắn cái này suy đoán vừa ra, vài người sắc mặt đều không tốt.</p>
+<p>Lưu Minh Kiệt bỗng nhiên nhược nhược tới một câu “Ngươi nói Trương giáo thụ cùng Tiểu Mã đầu óc có thể hay không đã ở mâm đồ ăn.”</p>
+<p>Tiểu Mã là vừa mới bị bắt đi hán tử.</p>
+<p>Lưu Minh Kiệt những lời này trình bày hình ảnh quá có lực đánh vào, mọi người sắc mặt lại trắng vài phần.</p>
+<p>“Sẽ không, người đã chết đầu óc liền không mới mẻ.”</p>
+<p>“Sẽ không, người đã chết đầu óc liền không mới mẻ.”</p>
+<p>Câu này spam làn đạn, đến từ chính lúc này Tiểu Mã ca tao ngộ.</p>
+<p>Tiểu Mã ca bị quản gia một đường kéo dài tới nhà ăn, bị an trí ở Trương giáo thụ chính đối diện trên ghế, hai người thân thể bị chặt chẽ khóa chết, đầu bị một cái thật lớn kim loại khoanh tròn trụ, không thể động đậy.</p>
+<p>“Trương giáo thụ, ngươi tóc đâu?” Tiểu Mã nhìn đến Trương giáo thụ, liếc mắt một cái liền thấy được Trương giáo thụ bóng loáng trán.</p>
+<p>Trương giáo thụ mặt già đỏ lên, trong lúc nhất thời cũng không biết là 囧 vẫn là khí “Trong chốc lát, ngươi sẽ biết.”</p>
+<p>“Chủ nhân, khách nhân đã ngồi vào vị trí.” Quản gia khom người triều Hannibal hành lễ.</p>
+<p>Hannibal triều bên cạnh phất phất tay, lập tức liền có một cái xinh đẹp hầu gái cầm cạo đầu công cụ lại đây, ôn nhu nói “Tôn kính khách nhân, ta sẽ thực ôn nhu.”</p>
+<p>“Ngươi muốn làm gì? Ngươi muốn làm gì?” Tiểu Mã nhìn không thấy hầu gái động tác, nhưng có thể cảm giác được có cái gì lạnh lạnh đồ vật ở đầu mình thượng di động, “Có bản lĩnh ngươi trực tiếp giết ta.”</p>
+<p>Tiểu Mã hồng mắt triều Hannibal gào rống.</p>
+<p>Hannibal dùng hắn cặp kia xem cẩu đều vô cùng thâm tình đôi mắt nhìn chăm chú vào Tiểu Mã đồng chí “Kia sao lại có thể đâu, người đã chết, đầu óc liền không mới mẻ, sẽ ảnh hưởng khẩu cảm.”</p>
+<p>“A a a…… Ngươi cái tử biến thái, ngươi giết ta, giết ta a!!”</p>
+<p>Đồng Du nhìn Tiểu Mã ca xoát xoát đi xuống rớt năng háo giá trị, một trận vô ngữ, nhóm người này có phải hay không nhập diễn quá sâu, đây là cái trò chơi mà thôi.</p>
+<p>Hannibal cũng không để ý tới hắn, mà là làm trò hai người mặt bắt đầu ăn trong mâm đồ vật.</p>
+<p>Kia đồ vật Tiểu Mã cùng Trương giáo thụ đều nhận được, đúng là bọn họ nhìn lấy ra đầu óc.</p>
+<p>“Nôn!” Hai người đồng thời nôn ra tới.</p>
+<p>Hannibal tinh tế phẩm, rồi sau đó lại uống một ngụm như máu giống nhau rượu vang đỏ, bình luận “Hoảng sợ trung chết đi đầu óc, có một cổ hạnh nhân cay đắng.”</p>
+<p>“Ngươi cái biến thái!!!” Tiểu Mã lớn tiếng mắng.</p>
+<p>Hannibal liếc hắn một cái, bỗng nhiên cười, bưng mâm triều hắn đi đến “Ngươi muốn nếm thử sao?”</p>
+<p>Tiểu Mã gắt gao nhắm miệng, lại không dám nói một lời, phảng phất chỉ cần hắn một mở miệng, kia đồ vật liền sẽ nhân cơ hội lưu tiến trong miệng hắn.</p>
+<p>Hannibal lại chỉ chỉ ngồi ở hắn chính đối diện Trương giáo thụ “Vẫn là nói, ngươi tưởng nếm thử hắn đầu óc?”</p>
+<p>Vốn là tinh thần độ cao khẩn trương Trương giáo thụ rốt cuộc kiên trì không được, hai mắt vừa lật, bạch quang chợt lóe, offline.</p>
+<p>“Trương giáo thụ!” Tiểu Mã kêu thảm.</p>
+<p>“Hù chết?” Trò chơi giả thiết, người chơi rớt tuyến, NPC cam chịu người chơi tử vong, cho nên ở Hannibal trong mắt Trương giáo thụ đã chết, “Không nguyên liệu nấu ăn tươi mới liền không thể ăn, đáng tiếc.”</p>
+<p>Dứt lời hắn vỗ vỗ Tiểu Mã đã trơn bóng đầu phân phó hầu gái “Cho hắn rửa sạch sẽ, trong chốc lát ta muốn liền hắn đầu ăn.”</p>
+<p>“Liền…… Liền đầu ăn?”</p>
+<p>“Là đem đầu đương chén ý tứ sao?”</p>
+<p>“Mụ mụ, ta cảm giác ta sọ não lạnh căm căm sao lại thế này?”</p>
+<p>“Phía trước ngươi không phải một người.”</p>
+<p>“Ta mẹ hỏi ta vì cái gì đại mùa hè chụp mũ.”</p>
+<p>“Ta rớt tuyến!!! Ta xem cái phát sóng trực tiếp cư nhiên xem rớt tuyến.”</p>
+<p>“Ta sớm hai phút liền rớt tuyến, ta thức tỉnh giả hỏi ta có phải hay không gặp được nguy hiểm, ta nói ta đang xem phát sóng trực tiếp, hắn không tin, đã ở về nhà trên đường.”</p>
+<p>“Trò chơi này khai phá giả nhất định là cái biến thái, như vậy ác độc cốt truyện đều có thể nghĩ ra được!”</p>
+<p>“+1”</p>
+<p>Đồng Du không biết nên khóc hay cười, này kịch bản sáng tác như thế nào còn bay lên cá nhân đâu?</p>
+<p>Trương Hâm quay đầu, nhìn Đồng Du “Biến thái!”</p>
+<p>Đồng Du “!!”</p>
+<p>Tác giả có lời muốn nói</p>
+<p>Long năm, chúc đại gia long năm hành đại vận, đều có thể phát đại tài, chuyện tốt liên tiếp tới, khoẻ mạnh lại bình an. Toàn gia sung sướng, tâm tưởng sự thành.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong20.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong22.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "o-tinh-te-khai-mat-tron";
+const NOVEL_TITLE = "Ở tinh tế khai mật trốn";
+const CHAPTER_TITLE = "Chương 21";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

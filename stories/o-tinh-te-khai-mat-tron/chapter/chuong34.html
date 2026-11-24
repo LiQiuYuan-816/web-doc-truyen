@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 34</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ở tinh tế khai mật trốn
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 34</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong33.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong35.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Như thế nào tới không phải Hắc Bạch Vô Thường?” Tuấn Tài phát hiện tới lãnh chính mình chính là đầu trâu mặt ngựa rất là thất vọng, không nhịn xuống lẩm bẩm một câu.</p>
+<p>Những người khác trong lòng cũng như vậy cảm thấy, rốt cuộc so với hung thần ác sát đầu trâu mặt ngựa, “Vừa thấy phát tài” cùng “Thiên hạ thái bình” Hắc Bạch Vô Thường liền có vẻ vui mừng nhiều.</p>
+<p>Đặng Bằng Bằng đang muốn phụ họa hai câu, liền thấy đi ở đằng trước mặt ngựa bỗng nhiên quay đầu lại, mặt ngựa kéo lão trường, húc đầu chính là một xích sắt trừu lại đây, chỉ trừu Tuấn Tài đồng chí nháy mắt biến thành ba cái tàn ảnh.</p>
+<p>Này đột như lên một chút đem mọi người đều cấp chỉnh ngốc, đặc biệt là Tuấn Tài đồng chí, không hề dự triệu một roi năng háo giá trị nháy mắt giảm 5000B, so với hắn vừa rồi bị lão thôn trưởng lặc chết hao tổn đều nhiều.</p>
+<p>“Ngươi…… Ngươi như thế nào đánh người đâu?” Ước chừng là bị trừu thành ba người quan hệ, Tuấn Tài đồng chí có chút choáng váng.</p>
+<p>“Nhữ chờ tội hồn, cũng dám vọng nghị quỷ sai!” Mặt ngựa lời nói sắc bén, biểu tình lạnh lùng, so với nói chuyện mang theo chút linh hoạt đầu trâu, càng như là phổ cập khoa học miêu tả Địa Phủ ác quan.</p>
+<p>“Đây là không hài lòng phú quý nói Hắc Bạch Vô Thường.”</p>
+<p>“Là ta ta cũng không cao hứng a, muốn ghét bỏ cũng không thể giáp mặt ghét bỏ a, còn có, nhân gia kêu Tuấn Tài!”</p>
+<p>“Một roi trừu thành ba người, này sao lại thế này, trò chơi BUG sao?”</p>
+<p>“Vừa thấy ngươi liền không có hảo hảo xem Địa Phủ tiểu bách khoa, tiểu bách khoa nói, người có ba hồn bảy phách, thiếu thứ nhất tắc tàn khuyết, mặt ngựa vừa rồi kia một roi phỏng chừng là rút ra ba hồn bảy phách hai đi.”</p>
+<p>“Thiếu thứ nhất tắc tàn khuyết? Kia những cái đó trời sinh có tàn tật người kỳ thật là ba hồn bảy phách tàn khuyết?”</p>
+<p>“Địa Phủ tiểu bách khoa là nói như vậy.”</p>
+<p>“Này nghe so y học sinh giải thích đều hợp lý a.”</p>
+<p>“Lý trí trò chơi, ngăn chặn phong kiến mê tín?”</p>
+<p>“Cái gì là phong kiến mê tín?”</p>
+<p>“Kỳ thật ta cũng không hiểu lắm, đại khái ý tứ là nói trong trò chơi giả thiết chỉ do bịa đặt, chúng ta vẫn là phải tin tưởng khoa học.”</p>
+<p>“Ta cảm thấy này rất khoa học a.”</p>
+<p>Đồng Du nhìn làn đạn thượng kia càng ngày càng nguy hiểm nhắn lại, tức khắc mồ hôi ướt đẫm, lo lắng phòng live stream phải bị phong. Hoãn một hồi lâu mới phản ứng lại đây, hiện tại là tinh tế thời đại.</p>
+<p>Trong trò chơi, bị mặt ngựa trừu một xích sắt lúc sau, sáu cá nhân nháy mắt liền đều ngoan, lại không dám nói lời nào, đi theo đầu trâu mặt ngựa vùi đầu đi phía trước đi. Thực mau liền tới, miếu thổ địa.</p>
+<p>Miếu thổ địa vật dễ cháy trong sáng, sương trắng lượn lờ, thổ địa gia ngồi ở thượng đầu, lật xem trong tay sổ hộ khẩu “Thân phận xác minh, nằm xuống sáu người đều là Ngưu gia thôn vong hồn, cho phép đi thông Địa Phủ, tiến đến quỷ môn quan đi.”</p>
+<p>Dứt lời giơ tay ném đi sáu khối thẻ bài, sáu người cầm ở trong tay tò mò đánh giá lên.</p>
+<p>Đó là một khối phi thường bình thường mộc bài, mặt trên dùng mực nước viết “Đã chết” hai chữ.</p>
+<p>Này tự nhìn liền không may mắn.</p>
+<p>“Không biết ta vì cái gì, một màn này lộ ra một tia không may mắn.”</p>
+<p>“Đây là Địa Phủ mật thất, thấy cái chết tự nhiều bình thường, tuy rằng xác thật không may mắn.”</p>
+<p>“Lớn mật đánh cuộc, ta cảm thấy bọn họ thông quan không được, bởi vì không may mắn.”</p>
+<p>“Tuy rằng không may mắn, nhưng này chỉ là B cấp khủng bố phó bản.”</p>
+<p>“Qua quỷ môn quan, có phải hay không liền phải đi đi hoàng tuyền lộ?”</p>
+<p>Ở sở hữu Địa Phủ mật thất bại lộ cảnh tượng, hoàng tuyền lộ là võng hữu thích nhất cũng là nhất chú ý, đại gia tức khắc cũng không thảo luận cát lợi hay không sự tình, liền chờ xem hoàng tuyền lộ cảnh tượng.</p>
+<p>Trò chơi sáu người tự nhiên cũng tò mò hoàng tuyền lộ, hoàng tuyền lộ là Địa Phủ trên đường duy nhất phong cảnh, qua đi chính là Địa Phủ.</p>
+<p>Đầu trâu mặt ngựa, lãnh sáu người đi tới quỷ môn quan, mặt ngựa chỉ vào phía trước con đường “Qua quỷ môn quan, một đường đi phía trước, ở tới Vong Xuyên phía trước, không cần quay đầu lại.”</p>
+<p>“Nếu là quay đầu lại sẽ thế nào?” Có Hannibal kinh nghiệm, Lý Thiệu biết trong mật thất NPC nói có đôi khi là sẽ có chứa tin tức, đặc biệt là mặt ngựa một đường lời nói không nhiều lắm, lúc này bỗng nhiên nhắc nhở, nhất định có thâm ý.</p>
+<p>“Chờ có người kêu ngươi thời điểm quay đầu lại chẳng phải sẽ biết.” Mặt ngựa hừ lạnh một tiếng, xoay người liền đi.</p>
+<p>Đầu trâu ở bên cạnh ha hả cười, cũng đi theo mặt ngựa cùng nhau rời đi, chỉ là trước khi đi thời điểm dùng ngưu mắt triều sáu người bay cái mị nhãn, chỉ công kích sáu người năng háo giá trị nháy mắt rớt 500B.</p>
+<p>“Lý Thiệu, như thế nào lộng, trong chốc lát trên đường có trở về hay không đầu?” Có người hỏi Lý Thiệu.</p>
+<p>Bởi vì Lý Thiệu là tiến vào trò chơi lúc sau cái thứ nhất phân tích trò chơi thả nói có sách mách có chứng người, cho nên vô hình trung thành sáu người đội trưởng.</p>
+<p>Lý Thiệu nhăn nhăn mày, nói “Ta kiến nghị không cần quay đầu lại, mặt ngựa tính cách giả thiết hẳn là không phải một cái sẽ nói vô dụng lời nói NPC.”</p>
+<p>“Hành, vậy đừng quay đầu lại.” Mọi người cũng đều cảm thấy Lý Thiệu nói có đạo lý, sôi nổi đáp ứng xuống dưới.</p>
+<p>Một hàng sáu người vượt qua quỷ môn quan, tiến vào hoàng tuyền lộ.</p>
+<p>Nói là quỷ môn quan, nhưng trên thực tế chỉ là một cánh cửa, nhưng trong ngoài cảnh sắc lại khác nhau rất lớn, mênh mông vô bờ bỉ ngạn hoa như ngọn lửa giống nhau phảng phất muốn thiêu đốt đến thế giới màn ảnh, cùng phía sau u ám hoang vắng lai lịch hoàn toàn bất đồng.</p>
+<p>Hoàng tuyền lộ không hổ là Địa Phủ duy nhất phong cảnh, mỹ đoạt nhân tâm phách, tuy rằng mọi người đã sớm trước tiên xem qua ảnh chụp, nhưng người lạc vào trong cảnh, chân nhân vẽ trong tranh lúc sau, kia lại là kiên quyết bất đồng mỹ.</p>
+<p>“Hảo mỹ, so trên mạng công bố ảnh chụp mỹ nhiều.”</p>
+<p>“Nếu là thật sự có Địa Phủ tồn tại thì tốt rồi.”</p>
+<p>“Ngươi như thế nào biết không có, ngươi lại không chết quá.”</p>
+<p>“Nếu Địa Phủ trường như vậy, bỗng nhiên cảm thấy chết cũng không đáng sợ.”</p>
+<p>Trò chơi ngoại, Trương Hâm nhìn đến nơi này nhẫn không ngừng nói “Ngươi muốn làm phổ cập khoa học ta lý giải, nhưng ngươi này có thể hay không quá ôn nhu, này nơi nào là khủng bố mật thất, này thỏa thỏa du lịch tiết mục a. Cho tới bây giờ, năng háo giá trị tổn thất lớn nhất chính là đầu trâu cái kia mị nhãn.”</p>
+<p>Đồng Du lão thần khắp nơi uống ngụm trà “Gấp cái gì, trò chơi lúc này mới bắt đầu đâu.”</p>
+<p>Đều nói phía trước là cốt truyện giới thiệu.</p>
+<p>Trong trò chơi, sáu người rốt cuộc đạp xuống suối vàng.</p>
+<p>“Ta như thế nào cảm giác nơi này so bên ngoài lãnh nhiều.” Tiêu Tiêu hỏi.</p>
+<p>“Nơi này là Địa Phủ, Địa Phủ dưới nền đất hạ, khẳng định so ở mặt trên lãnh.”</p>
+<p>“Không chỉ là lãnh, còn lộ ra một cổ quái quái cảm giác, rõ ràng không có gì phong, nhưng ta đều nổi da gà.” Đặng Bằng Bằng kéo tay áo bày ra ra bản thân nổi lên gà da tay.</p>
+<p>Phòng live stream các người chơi đều biết Đặng Bằng Bằng không có nói sai, bởi vì từ vừa rồi bắt đầu, hắn năng háo giá trị liền ở thong thả đi xuống hàng.</p>
+<p>“Kia nơi xa lục điểm là cái gì?” Vương Nhị mặt rỗ hỏi đi ở phía trước Lý Thiệu, “Ngươi tại địa phủ bách khoa thượng xem qua sao?”</p>
+<p>Lý Thiệu lắc đầu “Không biết.”</p>
+<p>“Địa Phủ trừ bỏ quỷ còn có thể có cái gì, đừng chính mình dọa chính mình.” Tuấn Tài đồng chí thuận miệng nói.</p>
+<p>Ai biết hắn lời này vừa ra, còn lại năm người liền đồng thời an tĩnh triều hắn xem ra, biểu tình một mảnh trắng bệch.</p>
+<p>Tuấn Tài đồng chí béo đô đô thịt mặt run rẩy một chút “Không…… Không thể nào.”</p>
+<p>Không biết là nhất khủng bố, bởi vì ở vào không biết trạng thái hạ nhân sẽ vô hạn não bổ, hơn nữa càng sợ cái gì càng não bổ cái gì.</p>
+<p>“Ô ô ô ~~”</p>
+<p>“Đây là…… Có người ở khóc sao?” Cả người ướt lộc cộc Warsaw run thanh âm hỏi.</p>
+<p>“Đừng chính mình dọa chính mình, hoàng tuyền trên đường liền chính chúng ta, không ai nói chuyện.” Vương Nhị mặt rỗ ý đồ ổn định đại gia cảm xúc, loại này cảm xúc nếu lan tràn đi xuống, bọn họ người còn chưa tới Địa Phủ đâu, năng háo giá trị liền rớt một nửa.</p>
+<p>“Vương Nhị mặt rỗ.”</p>
+<p>Lúc này bỗng nhiên có người hô hắn một tiếng, thanh âm từ phía sau truyền đến.</p>
+<p>Vương Nhị mặt rỗ theo bản năng quay đầu lại, Lý Thiệu muốn ngăn cản đã không kịp, liền thấy nguyên bản biến mất ở trong sương đen lục điểm bỗng nhiên như là giải khai cấm giống nhau từ trong sương đen vọt ra, hóa thành thiên kỳ bách quái hình người, dữ tợn triều Vương Nhị mặt rỗ dũng đi.</p>
+<p>“Chạy mau!” Lý Thiệu hô to một tiếng, cái thứ nhất hướng phía trước mặt phóng đi, nhưng có chút người bản thân liền đứng ở Vương Nhị mặt rỗ phía sau, quỷ hồn xông tới thời điểm bọn họ căn bản không kịp chạy, chỉ có thể trơ mắt nhìn vô số vong hồn nhào lên tới, hoặc cắn xé, hoặc lôi kéo, vẫn luôn đem kêu thảm thiết Vương Nhị mặt rỗ kéo vào phòng tối.</p>
+<p>“Cứu mạng, cứu mạng a a!!”</p>
+<p>Cùng với Vương Nhị mặt rỗ thê lương kêu thảm thiết, linh hoạt kỳ ảo lời tự thuật thanh lại lần nữa vang lên “Hoàng tuyền trên đường có muôn vàn du hồn, nhân dương thọ chưa hết, sau khi chết vô □□ hồi, liền chỉ có thể ở hoàng tuyền trên đường du đãng, thường biến ảo thành vong hồn thân nhân kêu gọi vong hồn tên, đãi này quay đầu lại, cắn nuốt chi, rồi sau đó thay thế được hắn vị trí, tiến đến Địa Phủ đầu thai.”</p>
+<p>Rõ ràng là đồng dạng dễ nghe thanh âm, ở nhân gian khi chỉ cảm thấy thanh âm này linh hoạt kỳ ảo mỹ diệu, lúc này lại lộ ra âm trầm lạnh nhạt.</p>
+<p>Dứt lời, một cái xa lạ người tự trong sương đen đi ra, lướt qua bọn họ, sốt ruột triều hoàng tuyền cuối đường chạy tới.</p>
+<p>“Đó là……”</p>
+<p>“Nuốt Vương Nhị mặt rỗ du hồn?”</p>
+<p>“Hắn đây là……”</p>
+<p>“Đi đầu thai?”</p>
+<p>Mọi người nhìn kia vui sướng chạy đi vong hồn bóng dáng, chỉ cảm thấy sau xương sống lưng lạnh cả người.</p>
+<p>“Bỗng nhiên sởn tóc gáy có hay không, kêu cái tên là có thể bị nuốt, này cũng quá dọa người.”</p>
+<p>“Hơn nữa nuốt người của ngươi, còn thế thân ngươi vị trí đi đầu thai.”</p>
+<p>“Này quả thực khó lòng phòng bị a, bị người kêu tên, quay đầu lại căn bản chính là theo bản năng hành vi.”</p>
+<p>“Ta liền không có, vừa rồi ta mẹ kêu ta ăn cơm, ta lăng là không dám quay đầu lại. Ta mẹ còn tưởng rằng ta không thoải mái, đi tới chụp ta một chút, ta dọa trực tiếp rớt 1000 năng háo giá trị.”</p>
+<p>“Ha ha ha mẫn, anh em ngươi đã thực may mắn, mẹ ngươi ít nhất sẽ không nuốt ngươi.”</p>
+<p>“Kia Vương Nhị mặt rỗ đâu, hắn năng háo giá trị như thế nào xám trắng, đây là rớt tuyến?”</p>
+<p>Trong trò chơi, Vương Nhị mặt rỗ bị nhân viên công tác dẫn ra tới, lại là nghĩ mà sợ lại là mộng bức nhìn Đồng Du “Đồng lão bản, ta như thế nào ra tới?”</p>
+<p>“Ngươi trò chơi đã kết thúc.” Đồng Du giải thích nói.</p>
+<p>Vương Nhị mặt rỗ không muốn “Như thế nào liền ra tới đâu, ta lại không rớt tuyến.”</p>
+<p>Đồng Du “Ngươi đi bất quá hoàng tuyền lộ, liền đến không được Địa Phủ, mặt sau trò chơi ngươi căn bản không có biện pháp chơi, chính là ở lại bên trong cũng chỉ là bị khóa ở hoàng tuyền trên đường, còn không bằng ra tới xem phát sóng trực tiếp.”</p>
+<p>Vương Nhị mặt rỗ nghe mặt một trận thanh một trận bạch, cuối cùng hóa thành ảo não “Ta thật vất vả đi rồi một hồi cứt chó vận, liền như vậy không có.”</p>
+<p>“Hảo đừng thương tâm, độc nhất vô nhị khen thưởng ngươi một phần đậu hủ thúi.” Đồng Du cũng biết chính mình cái này giả thiết có điểm hố người chơi, nhịn đau đem chính mình chuẩn bị ăn vặt cho Vương Nhị mặt rỗ.</p>
+<p>“Không có trà sữa sao?” Vương Nhị mặt rỗ vẻ mặt hy vọng xa vời nhìn Đồng Du.</p>
+<p>Đồng Du “Không chuẩn bị.”</p>
+<p>Vương Nhị mặt rỗ vẻ mặt bi phẫn “Thôi, kẻ thất bại chỉ xứng ăn này thúi hoắc đồ vật.”</p>
+<p>Dứt lời, cắm một khối đậu hủ thúi bỏ vào trong miệng.</p>
+<p>Ngoại giòn nộn khẩu cảm, kết hợp hương cay nước sốt, nháy mắt tạc ở khoang miệng trung cảm giác, làm Vương Nhị mặt rỗ trực tiếp đã tê rần?</p>
+<p>Vẫn luôn tò mò, nhưng bởi vì thật sự quá xú không dám ăn Trương Hâm tò mò thò qua tới “Ăn ngon sao?”</p>
+<p>Vương Nhị mặt rỗ liếc hắn một cái, một lời không hợp, cúi đầu một trận mãnh huyễn.</p>
+<p>Trong trò chơi, có Vương Nhị mặt rỗ vết xe đổ, Lý Thiệu đám người cũng bất chấp xem trên đường phong cảnh, vùi đầu đi phía trước đi, trên đường không ngừng có người kêu tên của bọn họ, có nói bọn họ rớt tiền, có nói có thông quan mật mã, còn có người làm bộ Vương Nhị mặt rỗ thanh âm kêu bọn họ từ từ. Nhưng ở Lý Thiệu luôn mãi cảnh kỳ dưới, năm người không còn có quay đầu lại, thuận lợi đi qua hoàng tuyền lộ, đi tới Vong Xuyên.</p>
+<p>“Đây là Vong Xuyên?” Lý Thiệu nhắc nhở nói, “Tìm cầu Nại Hà, qua cầu Nại Hà liền có thể đi Địa Phủ.”</p>
+<p>Vong Xuyên phía trên chỉ có một tòa kiều, cho nên mọi người thực mau liền thấy cầu Nại Hà, đầu cầu Nại Hà có vong hồn xếp hàng, kia đội ngũ liếc mắt một cái vọng không đến cuối, Lý Thiệu sơ sơ phỏng chừng một chút, dựa theo này xếp hàng tốc độ, bọn họ bài thượng một năm cũng không qua được.</p>
+<p>“Này đội ngũ cũng quá dài.” Có nhân đạo.</p>
+<p>“Này Địa Phủ liền ở trước mắt, khẳng định sẽ không làm khó chúng ta, nếu không chúng ta trực tiếp cắm đội qua đi?”</p>
+<p>Mấy người cảm thấy cái này đề nghị đáng tin cậy, trò chơi tổng cộng mấy cái giờ, tổng không thể làm cho bọn họ toàn xếp hàng đi.</p>
+<p>Năm người nâng bước triều cầu Nại Hà đi đến, chỉ là nhân tài đến gần, liền thấy một đội tuần tra binh lính vây quanh lại đây “Lớn mật tội hồn, còn dám tới cầu Nại Hà, người tới, bắt lại, đưa đi thấy phán quan!”</p>
+<p>Mấy người còn không có phản ứng lại đây đâu, liền bị trói gô, cực kỳ thô bạo áp đi rồi. Năm người bị áp giải tới rồi một tòa âm trầm trang nghiêm trong cung điện, cung điện hai bên là mặt mũi hung tợn quỷ sai, trong tay nắm các màu binh khí. Cung điện thượng đầu ngồi một cái nộ mục trợn lên, râu quai nón nam tử, nam tử thân xuyên quan bào, tả hữu đứng một đen một trắng hai cái quỷ sai.</p>
+<p>“Hắc Bạch Vô Thường!” Tuấn Tài đồng chí rốt cuộc nhìn đến tâm tâm niệm niệm Hắc Bạch Vô Thường, thất thanh hô ra tới.</p>
+<p>“Lớn mật, phán quan lại lần nữa, cũng dám lớn tiếng ồn ào.” Bên cạnh quỷ sai lớn tiếng quát lớn nói, dọa Tuấn Tài đồng chí một câu không dám nói.</p>
+<p>“Này Phán Quan Điện làm gì?”</p>
+<p>“Không biết a, Địa Phủ bách khoa thượng chưa nói.”</p>
+<p>Phán quan trong tay cầm một quyển sách, thư danh mơ hồ có thể xem ra Sổ Sinh Tử ba chữ, một lát sau, phán quan nộ mục nhìn phía dưới năm người “Các ngươi năm người, sinh thời không chuyện ác nào không làm, thế nhưng tàn sát bạn tốt, quả thật thiên lý nan dung! Hiện đánh vào mười tám tầng địa ngục, đãi hình mãn phóng thích, tội nghiệt chuộc quá, mới có thể đầu thai. Người tới, kéo đi mười tám tầng địa ngục.”</p>
+<p>Phán quan thật mạnh một phách kinh đường mộc, “Bang” một tiếng, chỉ dọa mấy người năng háo giá trị lại là nhảy dựng.</p>
+<p>“Từ từ, chúng ta không có giết người a.”</p>
+<p>Năm người bị này Phán Quan Điện không khí kinh sợ, tức khắc toàn quên mất cốt truyện việc này, bản năng bắt đầu kêu oan.</p>
+<p>“Phán quan đại nhân, chúng ta không có giết người, càng không có sát bạn tốt.”</p>
+<p>“Không có sát bạn tốt, ngươi đó là chết ở ngươi bên cạnh vị này Tiêu Tiêu trong tay, bị ngưu đạp mà chết. Mà Tiêu Tiêu ngươi cũng bị Warsaw giết chết, nhân ghen ghét mỹ mạo của ngươi làm tiệm rượu lão bản độc sát ngươi!”</p>
+<p>Mọi người nghe vậy, từng cái kinh ngạc đương trường, có miệng khó trả lời.</p>
+<p>Tại đây chờ chúng ta đâu!</p>
+<p>“Ha ha ha, ta liền nói ta sao, dù sao đều là chết, vì sao nhất định phải làm đồng đội cho nhau giả thiết cách chết, nguyên lai tại đây chờ đâu.”</p>
+<p>“Ai nha ta đi, Đồng lão bản cũng quá hắc, bất quá ta thích.”</p>
+<p>“Mười tám tầng địa ngục địa phương nào, phổ cập khoa học tốt nhất giống không có.”</p>
+<p>“Nghe như là Địa Phủ lao ngục.”</p>
+<p>Các võng hữu thảo luận thời điểm, trong trò chơi năm người đã bị kéo vào mười tám tầng địa ngục, ném ở tầng thứ nhất địa ngục nhập khẩu.</p>
+<p>Đối với chính mình kế tiếp vận mệnh hoàn toàn không biết gì cả Warsaw còn ở sinh khí “Có thể hay không không cần lung tung cho ta thêm diễn, ta như thế nào liền ghen ghét ngươi mỹ mạo.”</p>
+<p>Tiêu Tiêu “Không có việc gì, ta tha thứ ngươi giết ta sự.”</p>
+<p>Warsaw “Lăn!”</p>
+<p>Tác giả có lời muốn nói</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong33.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong35.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "o-tinh-te-khai-mat-tron";
+const NOVEL_TITLE = "Ở tinh tế khai mật trốn";
+const CHAPTER_TITLE = "Chương 34";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

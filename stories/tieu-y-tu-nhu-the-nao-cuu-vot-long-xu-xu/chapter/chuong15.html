@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 15</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tiểu y tu như thế nào cứu vớt lông xù xù
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 15</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong14.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong16.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>【 Diệp Dư Manh hộ công, buổi sáng tốt lành! 】</p>
+<p>【 từ hôm nay trở đi, ngươi cương vị đã bị điều đến trung tâm khu nằm viện đỉnh tầng phòng bệnh, tương quan quyền hạn đã đổi mới, thỉnh đúng giờ báo danh —— bổn tin tức từ chữa bệnh tinh trí não gửi đi 】</p>
+<p>Nhìn tin tức, Diệp Dư Manh không khỏi nghi hoặc, mới nhập chức ngày hôm sau, như thế nào lại điều cương?</p>
+<p>Hắn mày hơi hơi nhăn lại, có chút không tình nguyện.</p>
+<p>Loại này kế hoạch bị quấy rầy cảm giác, thật sự làm người cao hứng không đứng dậy, hơn nữa…… Hắn bị điều đi rồi, còn có thể đi hoạt động trung tâm sao?</p>
+<p>Nếu không thể nói, những cái đó ấu tể làm sao bây giờ?</p>
+<p>Còn có kia chỉ thỏ con, nó bị thương nặng nhất, nếu về sau cũng chưa cơ hội tiếp xúc, kia nó tử vong khả năng tính sẽ rất lớn.</p>
+<p>Diệp Dư Manh rầu rĩ không vui mà ra cửa.</p>
+<p>“Lá cây, sớm!”</p>
+<p>Cam Tiểu Dương đã ở cửa chờ hắn, nhìn qua nhưng thật ra sức sống tràn đầy bộ dáng.</p>
+<p>“Ngươi ở 5 lâu thế nào?” Diệp Dư Manh dò hỏi.</p>
+<p>“Thực hảo a, ngày đầu tiên không có gì lượng công việc, chính là bồi người bệnh nói chuyện phiếm nói chuyện, đậu hắn vui vẻ, so với ta thượng công tác nhẹ nhàng nhiều!”</p>
+<p>Chữa bệnh tinh người máy hộ công thập phần phổ cập, việc nặng việc dơ đều không cần nhân viên y tế làm.</p>
+<p>Trừ bỏ đặc thù tình huống ở ngoài, hằng ngày công tác cũng chính là lấy làm bạn người bệnh, vì bọn họ làm tâm lý khai thông, giảm bớt thống khổ là chủ, xác thật không tính khổ sai sự.</p>
+<p>Diệp Dư Manh gật gật đầu, đem Cam Tiểu Dương lời nói đều nhớ xuống dưới.</p>
+<p>Người ở dưới mái hiên không thể không cúi đầu, tuy rằng không vui, nhưng hắn cũng chỉ có thể phục tùng an bài, tận lực ở tân cương vị thượng làm tốt chính mình thuộc bổn phận sự.</p>
+<p>Cửa thang máy chậm rãi mở ra.</p>
+<p>“Đỉnh tầng phòng bệnh tới rồi, hoan nghênh lần sau đi thang máy.”</p>
+<p>Diệp Dư Manh vừa định từ thang máy ló đầu ra ra bên ngoài nhìn một cái, liền thấy thang máy ngoại xuất hiện một đạo thân ảnh.</p>
+<p>Là ngày hôm qua cái kia một tay thanh niên.</p>
+<p>Bởi vì thiếu chút nữa bị hắn công kích, hơn nữa vẫn là mang theo sát ý cái loại này, Diệp Dư Manh đối hắn ấn tượng khắc sâu, theo bản năng liền nghiêng người tránh ra.</p>
+<p>Mặc Ngân một đốn.</p>
+<p>Hắn đánh giá thang máy mảnh khảnh thân ảnh, Diệp Dư Manh bàn tay đại mặt trái xoan thượng, một đôi xinh đẹp thanh triệt đôi mắt cực kỳ động lòng người.</p>
+<p>Thật dài lông mi nồng đậm hơi kiều, giống họa sư dùng bút miêu tả ra tới, nhất tần nhất tiếu đều là bất đồng phong thái.</p>
+<p>Hắn vóc người thon thả, cổ tinh tế, nhìn đi lên nhược liễu phù phong, thoáng dùng sức một véo khả năng liền chặt đứt, một bộ mềm mại yếu ớt, không có gì lực công kích bộ dáng.</p>
+<p>Nhìn ra hắn khẩn trương, Mặc Ngân liền chủ động mở miệng nói “Diệp hộ công, chúng ta lại gặp mặt.”</p>
+<p>“Ngạch, đúng vậy, buổi sáng tốt lành……”</p>
+<p>Diệp Dư Manh thấy hắn còn đứng tại chỗ, liền từ thang máy trung đi ra.</p>
+<p>“Ta là tới nơi này nhập chức.”</p>
+<p>Hắn mở ra thông tin nghi, cho hắn triển lãm chính mình điều cương tin tức, miễn cho lại đưa tới cái gì hiểu lầm.</p>
+<p>Mặc Ngân ôn thanh nói “Ta biết, ta chính là đặc biệt tới nơi này tiếp ngươi, ngày hôm qua…… Thực xin lỗi, ta có phải hay không dọa đến ngươi?”</p>
+<p>Diệp Dư Manh theo bản năng gật đầu, tiếp theo rộng lượng nói “Không có việc gì, đều là một hồi hiểu lầm sao.”</p>
+<p>“Đa tạ thông cảm.”</p>
+<p>Mặc Ngân nhợt nhạt cười, tiếp theo vươn tay trái, “Xin theo ta tới.”</p>
+<p>Diệp Dư Manh cùng hắn vẫn duy trì hai mét xa khoảng cách, nhấc chân hướng hắn chỉ phương hướng đi.</p>
+<p>Trung tâm khu nằm viện đỉnh tầng rất lớn, lại chỉ có một gian phòng bệnh, có thể ở nơi này, phỏng chừng là một vị đại nhân vật……</p>
+<p>Chỉ là đương xuyên thấu qua cửa kính, nhìn đến phòng bệnh trung cuộn tròn ở trên giường ấu thú khi, Diệp Dư Manh lại ngoài ý muốn phát hiện ——</p>
+<p>Thế nhưng là ngày hôm qua kia chỉ thỏ con!</p>
+<p>Diệp Dư Manh không khỏi kinh hỉ.</p>
+<p>Thỏ con cấp bậc cư nhiên như vậy cao sao?</p>
+<p>“Nó chính là ta kế tiếp muốn phụ trách người bệnh?” Diệp Dư Manh ghé vào pha lê thượng quan sát.</p>
+<p>Mặc Ngân cũng nhìn chăm chú vào trên giường bệnh Lục Nam Châu.</p>
+<p>Nếu ở cái này tiểu hộ công bên người, bệ hạ thật sự có thể thoải mái một ít nói, kia mặc kệ tiểu hộ công trên người tồn tại cái gì vấn đề, hắn đều sẽ không làm hắn trở thành vấn đề.</p>
+<p>“Ân, kế tiếp liền làm ơn ngươi.” Hắn trịnh trọng nói.</p>
+<p>Diệp Dư Manh gật đầu.</p>
+<p>“Ta sẽ hảo hảo chiếu cố nó…… Đúng rồi, nó là nam hài tử sao? Vẫn là nữ hài tử?”</p>
+<p>Ngày hôm qua ở hoạt động trung tâm ngây người một ngày, Diệp Dư Manh biết này đó ấu tể tư liệu, hắn là không có quyền hạn điều xem, cho nên thừa dịp Mặc Ngân ở, chạy nhanh hỏi thăm hỏi thăm.</p>
+<p>Mà Mặc Ngân nghe thấy hắn vấn đề này, biểu tình lại là có chút cổ quái.</p>
+<p>Nam hài tử……</p>
+<p>Cái này danh từ dùng ở bệ hạ trên người, như thế nào nghe đều cảm thấy rất quái dị.</p>
+<p>“Nam.” Mặc Ngân ngắn gọn mà trả lời.</p>
+<p>“Kia hắn như vậy trạng thái liên tục đã bao lâu?” Diệp Dư Manh lại hỏi.</p>
+<p>Mặc Ngân nhìn Diệp Dư Manh, ý đồ từ hắn thanh triệt trong ánh mắt nhìn ra điểm cái gì tới.</p>
+<p>Thời gian là thực mấu chốt tình báo, mà hắn đã cùng Lôi Khế đạt thành chung nhận thức —— ở xác định Diệp Dư Manh là có thể tín nhiệm phía trước, sẽ không hướng hắn lộ ra bệ hạ thân phận.</p>
+<p>Hắn nghĩ nghĩ, nói “Có một năm.”</p>
+<p>“Lâu như vậy lạp……”</p>
+<p>Diệp Dư Manh xuyên thấu qua pha lê nhìn trên giường bệnh ấu tể, trong ánh mắt nhiều thương tiếc.</p>
+<p>“Kia hắn năm nay vài tuổi?”</p>
+<p>Mặc Ngân đánh giá hắn, bởi vì Diệp Dư Manh cái thứ nhất vấn đề, hắn cũng không có trực tiếp trả lời, mà là hỏi ngược lại “Ngươi cảm thấy hắn vài tuổi?”</p>
+<p>Diệp Dư Manh nghĩ đến ngày hôm qua xem trẻ nhỏ video.</p>
+<p>Diệu Kim đế quốc ấu tể, giống nhau từ ba tuổi bắt đầu cũng đã có thể nắm giữ nhân loại hình thái…… Đương nhiên cũng không bài trừ bởi vì thương thế mà vô pháp duy trì tình huống.</p>
+<p>Hắn cân nhắc một lát, thử nói “Có ba tuổi sao?”</p>
+<p>Mặc Ngân “……”</p>
+<p>Phòng bệnh công chính dùng tinh thần lực quan sát bọn họ Lục Nam Châu “……”</p>
+<p>Cho nên tiểu hộ công là thật sự hoàn toàn không có nhận ra hắn? Còn đem hắn đương thành chân chính tiểu hài tử?</p>
+<p>Từ Mặc Ngân vi biểu tình, Diệp Dư Manh cũng có thể đoán được chính mình khả năng nói sai rồi, hắn lại nói “Năm tuổi?”</p>
+<p>“Không sai biệt lắm đi.” Mặc Ngân hàm hồ nói.</p>
+<p>Nếu Diệp Dư Manh thật cho rằng bệ hạ là ấu tể, kia tựa hồ cũng không tồi.</p>
+<p>Nhìn ra Mặc Ngân cũng không phải rất tưởng tiếp tục cái này đề tài, Diệp Dư Manh liền thức thời mà không có miệt mài theo đuổi, mà là dò hỏi mặt khác.</p>
+<p>“Kia tiểu thỏ tên gọi là gì đâu?”</p>
+<p>“Khụ, khụ khụ!” Mặc Ngân một sặc, kịch liệt ho khan lên.</p>
+<p>Tiểu thỏ? Đây là ở kêu bệ hạ sao?</p>
+<p>“Ngươi không sao chứ?” Diệp Dư Manh quan tâm nói.</p>
+<p>Mặc Ngân xua xua tay, khụ sau khi mới khôi phục bình thường “Ngươi đợi lát nữa chính mình hỏi hắn đi.”</p>
+<p>Dù sao bệ hạ cũng có thể nghe thấy bọn họ đối thoại…… Hắn bỗng nhiên có chút tò mò, bệ hạ nghe thấy cái này xưng hô khi phản ứng.</p>
+<p>Nói vừa rồi trong phòng bệnh dụng cụ giám sát số liệu, có phải hay không sóng động một chút?</p>
+<p>Bệ hạ cũng chịu không nổi cái này xưng hô đi?</p>
+<p>Diệp Dư Manh nhìn hắn, bỗng nhiên nhớ tới chính mình còn không biết tên của hắn, liền trực tiếp hỏi “Đúng rồi, ngươi kêu gì?”</p>
+<p>“Ngươi kêu ta A Mặc đi.”</p>
+<p>“Tốt A Mặc.” Diệp Dư Manh biết nghe lời phải.</p>
+<p>Sau đó, hắn tưởng tiếp tục dò hỏi thỏ con tin tức, Mặc Ngân cũng đã mở miệng nói “Ngươi có thể đi vào.”</p>
+<p>“Nga nga, hảo.”</p>
+<p>Diệp Dư Manh đi vào phòng bệnh trước cửa, kim loại môn cũng không có trực tiếp mở ra, mà là nghiệm chứng quá thân phận tin tức sau mới cho phép hắn tiến vào.</p>
+<p>Phòng bệnh trung độ ấm hơi chút có điểm thấp, cũng may trên người hắn ăn mặc hộ công phục là đặc thù tài liệu chế tác, nhẹ nhàng thoải mái, còn có tự động điều tiết độ ấm công năng.</p>
+<p>Cho nên cho dù trong nhà độ ấm thấp, Diệp Dư Manh cũng không cảm thấy lãnh.</p>
+<p>Bất quá ở phòng bệnh trung còn khai như vậy thấp độ ấm, có phải hay không đối người bệnh không tốt lắm? Đặc biệt là đối ấu tể mà nói.</p>
+<p>Lúc này, phòng bệnh môn lại lần nữa mở ra, tiến vào lại không phải Mặc Ngân, mà là một cái có điểm hói đầu trung niên nam nhân.</p>
+<p>Diệp Dư Manh ở chữa bệnh tinh trên official website nhìn đến quá hắn ảnh chụp.</p>
+<p>Từ ngực hắn nhãn cũng có thể phán đoán ra hắn chính là hoàng gia viện điều dưỡng viện trưởng —— Lôi Khế.</p>
+<p>Nói đến cái này, Diệp Dư Manh bỗng nhiên ý thức được, vị kia A Mặc tiên sinh cũng không có đeo nhãn, chẳng lẽ hắn không phải viện điều dưỡng nhân viên công tác?</p>
+<p>Lôi Khế cùng Diệp Dư Manh gật gật đầu, cũng không có gì vô nghĩa, trực tiếp kiểm tra sở hữu dụng cụ thượng số liệu.</p>
+<p>“Trí não sẽ căn cứ người bệnh nhiệt độ cơ thể biến hóa, tự động điều tiết trong nhà độ ấm, làm người bệnh có thể thoải mái một ít.”</p>
+<p>Hắn nói “Đương nhiên máy móc cũng không phải hoàn toàn chuẩn xác, ngươi muốn nhiều quan sát nhiều dò hỏi, khi cần thiết tay động tiến hành điều tiết.”</p>
+<p>“Tốt.” Diệp Dư Manh chạy nhanh ghi nhớ.</p>
+<p>Lôi Khế nhìn Lục Nam Châu các hạng trị số đều có mỏng manh tăng trở lại, cuối cùng nhẹ nhàng thở ra.</p>
+<p>Còn hảo còn hảo, mệnh tạm thời bảo vệ, xem ra bọn họ lần này nếm thử phương hướng là chính xác?</p>
+<p>Diệp Dư Manh nhìn Lôi Khế bận rộn thân ảnh, phát hiện hắn cơ bản đều là nhìn chằm chằm dụng cụ.</p>
+<p>Thế giới này y học hệ thống, tựa hồ cũng không chú trọng “Vọng, văn, vấn, thiết”, mà là càng chú trọng máy móc thí nghiệm kết quả.</p>
+<p>Cố tình đây là Diệp Dư Manh nhược hạng, những cái đó trị số hắn một cái đều xem không hiểu……</p>
+<p>Lôi Khế lại nói với hắn một ít chú ý yếu điểm, sau đó liền vội vã rời đi, một bộ sấm rền gió cuốn bộ dáng.</p>
+<p>Vì thế, trong phòng bệnh chỉ còn lại có Diệp Dư Manh cùng hai cái người máy hộ công.</p>
+<p>Mặc Ngân cũng từ bên ngoài tiến vào, cùng hắn gật đầu thăm hỏi sau, liền an tĩnh mà ở trong góc ngồi xuống.</p>
+<p>Diệp Dư Manh suy đoán hắn có thể là người nhà.</p>
+<p>Khó trách hắn không nghĩ đề cập thỏ con tuổi tác, rốt cuộc như vậy tiểu liền gặp tội lớn, làm người nhà hẳn là rất khó chịu đi.</p>
+<p>Cho nên, vị này mặc tiên sinh động vật hình thái cũng là con thỏ? Nhưng hắn cho người ta cảm giác, càng giống một đầu báo, trầm tĩnh, ưu nhã, vận sức chờ phát động.</p>
+<p>Hắn lắc đầu, ánh mắt nhìn về phía trên giường bệnh ấu tể.</p>
+<p>“Ngươi hảo, ta là mới tới hộ công, ta kêu Diệp Dư Manh.” Hắn lộ ra ôn nhu tươi cười, tận lực biểu hiện đến thân thiết vô hại, đây cũng là Cam Tiểu Dương dạy hắn.</p>
+<p>Tuy rằng thỏ con nhắm mắt lại, nhưng Diệp Dư Manh biết hắn là tỉnh.</p>
+<p>Từ hắn đi vào ngoài phòng bệnh, cái loại này cùng loại thần thức lực lượng liền vẫn luôn ở hắn chung quanh càn quét, A Mặc tiên sinh không cần như thế, kia cụ thể là ai liền không cần nói cũng biết ——</p>
+<p>Hoạt động trong phòng các ấu tể cũng có tinh thần lực, hắn ở hoạt động thất đãi một ngày, bọn họ liền không đình chỉ quá đối hắn quan sát.</p>
+<p>Diệp Dư Manh ngay từ đầu còn không thói quen, nhưng chậm rãi cũng liền thích ứng, rốt cuộc loại này cùng loại thần thức lực lượng, tựa hồ thương tổn không được hắn.</p>
+<p>“Chúng ta ngày hôm qua gặp qua, ngươi còn nhớ rõ sao?” Hắn tiếp tục nói.</p>
+<p>Cuộn tròn ở trên giường bệnh thỏ con, đôi mắt hơi hơi mở, lộ ra một đôi bị ốm đau tra tấn đến ảm đạm vô thần kim sắc tròng mắt.</p>
+<p>Diệp Dư Manh nhịn không được lại nhớ tới chính mình linh thỏ tuyết cầu.</p>
+<p>Tuyết cầu cũng là đặc biệt sẽ nhẫn đau, bị lại trọng thương đều là không rên một tiếng, tựa như không biết đau đớn dường như, thường thường chỉ có từ nó run rẩy thân thể mới có thể thấy được manh mối.</p>
+<p>“Có thể nói cho ta tên của ngươi sao?”</p>
+<p>Nói, hắn giơ tay khẽ vuốt ở thỏ con trên đầu, bất động thanh sắc mà phát động tiểu hồi xuân thuật.</p>
+<p>Lại lần nữa nhìn thấy Diệp Dư Manh, Lục Nam Châu không khỏi hồi tưởng khởi một đêm kia ngắn ngủi kỳ ngộ, sau lại…… Hắn là chính mình đi trở về sao?</p>
+<p>Lúc này, bỗng nhiên bị chạm đến, vẫn là đỉnh đầu, hắn mày không cấm nhăn lại, theo bản năng liền muốn né tránh.</p>
+<p>Chỉ là thực mau, kia cổ quen thuộc ấm áp lại bao bọc lấy hắn.</p>
+<p>Kia thời thời khắc khắc tra tấn hắn, phảng phất một khắc cũng chưa từng ngừng lại đau đớn, lại một lần giảm bớt, cho đến hoàn toàn biến mất.</p>
+<p>Lục Nam Châu nhịn không được híp lại hai mắt, đắm chìm vào giờ phút này khó được an bình, lúc này, hắn nghe thấy tiểu hộ công ôn nhu mang cười thanh âm vang lên.</p>
+<p>“Ngươi không nói, kia ta về sau đã có thể kêu ngươi tiểu thỏ lạp.”</p>
+<p>“……”</p>
+<p>Mặc Ngân nhìn chằm chằm vào Diệp Dư Manh, ở hắn giơ tay khi càng là cả người căng chặt.</p>
+<p>Giờ phút này nghe thấy hắn nói, rồi lại vì hắn khẩn trương lên, lấy bệ hạ ít khi nói cười tính cách, sợ là sẽ tức giận.</p>
+<p>Kết quả ——</p>
+<p>Kia đạo không có cảm tình máy móc hợp thành âm ở phòng bệnh trung vang lên, lại chỉ nói một chữ.</p>
+<p>“Hảo.”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong14.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong16.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tieu-y-tu-nhu-the-nao-cuu-vot-long-xu-xu";
+const NOVEL_TITLE = "Tiểu y tu như thế nào cứu vớt lông xù xù";
+const CHAPTER_TITLE = "Chương 15";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

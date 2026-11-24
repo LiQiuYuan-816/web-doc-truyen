@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 13</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ở tinh tế khai mật trốn
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 13</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong12.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong14.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Thịnh Cảnh về đến nhà thời điểm đã là đêm khuya, trong tiểu viện im ắng, nhưng đèn lại là mở ra.</p>
+<p>Ở cửa nghỉ chân một lát, hít sâu một hơi, Thịnh Cảnh mới đẩy cửa vào phòng. So với viện nghiên cứu những cái đó khó có thể phá được nghiên cứu, hắn vẫn luôn cảm thấy, đối mặt Đồng Du mới là lớn hơn nữa nan đề.</p>
+<p>“Chủ nhân, ngài đã trở lại.” Người máy gia dụng tiểu béo nhanh chóng trượt qua đi, dùng hai chỉ cái kìm giống nhau cánh tay máy cánh tay, giúp Thịnh Cảnh lấy dép lê.</p>
+<p>Thịnh Cảnh nhìn kia lông xù xù dép lê, nhăn nhăn mày “Này không phải ta dép lê.”</p>
+<p>“Đây là một vị khác chủ nhân giúp ngài mua, cùng hắn hiện tại xuyên chính là tình lữ khoản.” Tiểu béo giải thích.</p>
+<p>Thịnh Cảnh nhìn chằm chằm kia dép lê nhìn trong chốc lát, rốt cuộc vẫn là mặc vào. Này một cái tuần Đồng Du thay đổi phi thường đại, hắn không nghĩ một hồi gia liền bởi vì dép lê sự tình cùng Đồng Du nháo không thoải mái.</p>
+<p>Thay dép lê vào phòng, Thịnh Cảnh liếc mắt một cái liền phát hiện trong phòng có biến hóa, trong đó nhất thấy được đó là kia cơ hồ chiếm cứ một chỉnh mặt vách tường nãi màu trắng bức màn.</p>
+<p>Lầu một pha lê có tự động điều tiết thấu quang tính công năng, đây là Đồng Du mới vừa kết hôn thời điểm cố ý đổi, nói đã không có bức màn che đậy, phòng khách sẽ có vẻ càng rộng mở sáng ngời.</p>
+<p>Đây là bỗng nhiên sửa chủ ý?</p>
+<p>Không chỉ là bức màn, trong phòng còn nhiều rất nhiều cây xanh, trên bàn trà, trên bàn cơm, thậm chí là phòng trong một góc, đều bãi hoặc đại hoặc tiểu nhân cây xanh. Rõ ràng chỉ là một ít vật nhỏ, đại bố trí cũng không có biến hóa, nhưng không biết vì cái gì, lại giống như toàn bộ nhà ở đều thay đổi.</p>
+<p>“Chủ nhân, ngài ăn cơm chiều sao?” Tiểu béo tri kỷ hỏi.</p>
+<p>“Không có, cho ta lấy điểm ăn lại đây.” Hắn là lâm thời quyết định trở về, còn không có ăn cơm chiều.</p>
+<p>“Tốt.” Tiểu béo đi vòng quanh phòng bếp.</p>
+<p>Thịnh Cảnh có chút mỏi mệt, nằm xoài trên ở sô pha, chờ người máy gia dụng đưa dinh dưỡng dịch lại đây. Chính là đợi trong chốc lát, chờ đến không phải dinh dưỡng dịch, mà là người máy gia dụng thỉnh cầu.</p>
+<p>“Chủ nhân, thỉnh dời bước bàn ăn hưởng dụng ngài bữa tối.”</p>
+<p>Uống cái dinh dưỡng dịch còn muốn đi bàn ăn, là trình tự mắc lỗi?</p>
+<p>Liền ở Thịnh Cảnh nghĩ muốn hay không cấp tiểu béo đồng chí tới một lần “Thân thể kiểm tra” thời điểm, hắn thấy được trên bàn cơm một mâm thơm ngào ngạt cơm chiên.</p>
+<p>“Cho ta dinh dưỡng dịch là được.” Thịnh Cảnh sợ này cơm là Đồng Du làm, không phải rất tưởng ăn.</p>
+<p>Hắn cùng Đồng Du mới vừa kết hôn thời điểm, Đồng Du liền bắt đầu học tập chế tác tự nhiên đồ ăn, nói là nghe nói mỹ vị đồ ăn có thể thư hoãn tinh thần hải, nguyện ý vì hắn đua kính hết thảy. Nhưng thực tế thượng là, hắn làm này hết thảy đơn giản là vì đề yêu cầu thời điểm có đề tài nhưng nói.</p>
+<p>“Ta vì ngươi, đi học chính mình không thích nấu nướng.”</p>
+<p>“Ngươi mỗi lần nói phải về nhà, ta liền trước tiên mua đồ ăn, ở trong nhà cho ngươi thiêu một bàn lớn đồ ăn, bình thường ta chính mình đều chỉ uống dinh dưỡng dịch.”</p>
+<p>“Thịnh Cảnh, ngươi ăn ta làm đồ ăn, uống ta đảo thủy, còn bãi sắc mặt cho ta xem.”</p>
+<p>“Ta làm nhiều như vậy, chẳng lẽ ngươi nhìn không thấy sao?”</p>
+<p>Bởi vì này đó ngôn luận, Thịnh Cảnh đối tự nhiên đồ ăn đều có mâu thuẫn cảm xúc, ở viện nghiên cứu thời điểm, hắn đều là có thể uống dinh dưỡng dịch, liền không đi thực đường.</p>
+<p>“Xin lỗi chủ nhân, trong nhà không có dinh dưỡng dịch, liền tính hiện tại hạ đơn nói, cũng đến ngày mai buổi sáng 8 giờ lúc sau mới có thể đưa đến.” Tiểu béo trả lời.</p>
+<p>“Không ăn, thu hồi đến đây đi.” Chẳng sợ bị đói, Thịnh Cảnh cũng tuyệt không sẽ làm Đồng Du lại có nói ra những lời này đó cơ hội.</p>
+<p>Không thể ăn cơm chiều, Thịnh Cảnh liền nhanh chóng lên lầu, tính toán đi ngủ sớm một chút. Tới lầu hai thời điểm, hắn thoáng nhìn thư phòng có quang, biết Đồng Du hẳn là còn ở thế giới giả thuyết. Thịnh Cảnh suy đoán Đồng Du hẳn là không nghĩ tới chính mình sẽ trước tiên về nhà, cho nên mới không có trước tiên hạ tuyến chờ chính mình.</p>
+<p>Như vậy cũng hảo, hắn không biết, chính mình cũng có thể nhiều cả đêm thanh tịnh.</p>
+<p>Thịnh Cảnh bước chân vừa chuyển, đi phòng cho khách.</p>
+<p>Trong khách phòng bố trí cũng có một ít rất nhỏ biến hóa, tỷ như nhiều một ít trước kia không có đồ vật, nhưng trải qua quá dưới lầu phòng khách đại cải biến lúc sau, đối này hắn đã không kỳ quái. Bởi vì trở về phía trước ở viện nghiên cứu ký túc xá đã rửa mặt đánh răng qua, Thịnh Cảnh liền không có lại rửa mặt đánh răng, mà là trực tiếp ngủ.</p>
+<p>Một giờ sau, Đồng Du rốt cuộc xoát xong rồi nguyên chủ sở hữu xem bệnh ký lục, mồ hôi ướt đẫm hái được mũ giáp.</p>
+<p>Quá dọa người.</p>
+<p>Đồng Du bản thân là cái rất lạc quan người, nhưng chính là hắn, làm một cái người đứng xem xem xong rồi kia 50 mấy cái video, đều giác sợ nổi da gà, trong lòng hậm hực.</p>
+<p>Tâm tình hậm hực Đồng Du đồng chí nhu cầu cấp bách muốn một cái hảo giác tới chữa trị thể xác và tinh thần, từ thư phòng ra tới, hắn đi trước phòng tắm tắm rửa một cái, sau đó ăn mặc cái quần cộc liền hướng phòng cho khách đi. Xuyên qua trước Đồng Du chính là một người trụ, xuyên qua tới sau, Đồng Du vẫn là một người trụ, tự tại quán hắn, tự nhiên không có gì xuyên áo ngủ thói quen. Bởi vì đã có chút buồn ngủ, hắn vào cửa đèn cũng chưa khai, dựa vào cảm giác đi đến mép giường, tùy ý chính mình ngã ở trên giường, sau đó tự nhiên túm chặt chăn một góc, triều giường trung gian một lăn……</p>
+<p>Ân?? Như thế nào lăn bất quá đi?</p>
+<p>Giống như có thứ gì chặn?</p>
+<p>Đồng Du nhắm mắt lại lấy tay đi sờ……</p>
+<p>Thịnh Cảnh ở Đồng Du ngã vào trên giường thời điểm cũng đã bừng tỉnh, chỉ là Đồng Du kế tiếp động tác quá nhanh, hắn còn chưa kịp phản ứng, Đồng Du tay liền đã sờ đến hắn trên người. Kia tay ở hắn ngực một đốn sờ soạng lúc sau, còn muốn hướng lên trên, hắn không thể nhịn được nữa, duỗi tay một tay đem người bắt.</p>
+<p>Oa thảo! Là người! Tiến tặc?!</p>
+<p>Làm một cái nhiệt ái vận động thả thể trạng kiện thạc thanh niên, kia có thể sợ xông vào nhà mình trong phòng tặc sao? Kia thế tất là muốn ngay tại chỗ bắt giữ, một đốn đòn hiểm, sau đó vặn đưa đồn công an a.</p>
+<p>Đồng Du xoay người mà đi, hướng tới người nọ trên người nhào qua đi, lại không nghĩ người nọ phản ứng so với hắn còn nhanh, bắt cánh tay hắn tay lôi kéo vùng, hắn ăn đau, người liền rớt mỗi người, phản bị kẻ cắp đè ở dưới thân.</p>
+<p>“Ta nói cho ngươi…… Thịnh Cảnh?!” Đồng Du vừa muốn rống thượng hai câu tàn nhẫn lời nói, phòng trong đèn liền bang một chút khai, chỉ thấy một thân áo ngủ, tóc hỗn độn, trên mặt mang theo vài phần tức giận tuyệt thế mỹ nam, chính gắt gao đè ở trên người hắn.</p>
+<p>Đồng Du treo máy chừng một giây đồng hồ mới phản ứng lại đây, đây là chính mình lão công.</p>
+<p>Nói thật ra, nếu không phải Thịnh Cảnh dài quá một trương một kiện khó quên mặt, Đồng Du thật đúng là không nhất định có thể nhận ra cái này chỉ thấy một lần, liền câu nói cũng chưa nói qua tiện nghi lão công.</p>
+<p>“Ngươi như thế nào ở ta trên giường?”</p>
+<p>Thịnh Cảnh trong mắt hiện lên một mạt châm biếm “Đây là ta phòng.”</p>
+<p>Gì ngoạn ý?</p>
+<p>Đồng Du ngốc, này phòng ở tuy rằng là cái hai tầng tiểu lâu, nhưng tổng cộng liền tam gian phòng. Phòng ngủ chính, phòng cho khách, cùng thư phòng.</p>
+<p>Giả thuyết mũ giáp cùng mặt khác điện tử thiết bị đều phòng ngừa ở thư phòng, cho nên Đồng Du ban ngày thói quen tính đãi ở nơi đó. Dư lại đó là phòng ngủ chính cùng phòng cho khách, hắn nghĩ này phòng ở là Thịnh Cảnh, chính mình tuy rằng đỉnh nguyên chủ thân xác, nhưng rốt cuộc là cái người ngoài, không ngủ ngon nhân gia phòng ngủ chính, liền lựa chọn phòng cho khách. Hơn nữa hắn trụ tiến vào thời điểm riêng nhìn, phòng cho khách sạch sẽ cực kỳ, gì đồ vật đều không có, vừa thấy liền không thế nào trụ người.</p>
+<p>Này như thế nào sẽ là Thịnh Cảnh phòng đâu?</p>
+<p>Không đúng, đây là Thịnh Cảnh phòng, bởi vì nguyên chủ bá chiếm phòng ngủ chính, Thịnh Cảnh liền chỉ có thể ngủ phòng cho khách. Hắn buổi chiều thời điểm ở trong video hiểu biết đến điểm này lúc sau, còn quyết định dọn về phòng ngủ chính, chỉ là vừa rồi hắn mơ mơ màng màng liền bản năng vào.</p>
+<p>Cũng không đúng, Thịnh Cảnh như thế nào ở trong nhà?</p>
+<p>“Ngươi không phải thuyết minh thiên tài trở về sao?” Đồng Du hỏi.</p>
+<p>Thịnh Cảnh “Ngươi là tưởng nói cho ta, ngươi này đây vì ta không ở nhà, cho nên mới tới ta phòng ngủ.”</p>
+<p>Đúng vậy, đây là sự thật a. Nhưng tình cảnh này, hơn nữa nguyên chủ cấp Thịnh Cảnh lưu lại ấn tượng, hắn giống như cũng sẽ không tin a.</p>
+<p>“Cái kia…… Nếu không trước đem ta buông ra?” Đồng Du chọc chọc Thịnh Cảnh cánh tay.</p>
+<p>Thịnh Cảnh phục hồi tinh thần lại, lúc này mới phát hiện, chính mình chính lấy cực kỳ ái muội tư thế đem Đồng Du vây ở trên giường, tức khắc liền cùng cái châu chấu giống nhau, nhảy đánh lên. Lên sau còn không tính, thậm chí còn sau này liên tiếp lui ba bước.</p>
+<p>Uy, này cũng quá đả thương người đi.</p>
+<p>Tuy rằng biết Thịnh Cảnh không phải nhằm vào chính mình, nhưng Đồng Du vẫn là thực bị thương.</p>
+<p>Đồng Du ngồi dậy, vừa muốn nói chuyện, liền thấy Thịnh Cảnh đột nhiên xoay người ra cửa “Mặc xong quần áo!”</p>
+<p>Đồng Du một cúi đầu, lúc này mới phát hiện chính mình toàn thân trên dưới chỉ xuyên một cái quần cộc.</p>
+<p>Oa thảo, hắn thật không phải tới bò giường a. Nhưng này muốn như thế nào giải thích, chẳng lẽ nói chính mình nếu tưởng bò giường, liền sẽ không xuyên quần cộc?</p>
+<p>Có như vậy trong nháy mắt, Đồng Du hận không thể một đầu đâm chết chính mình.</p>
+<p>Cũng may rối rắm không phải Đồng Du tính cách, thực mau hắn liền điều chỉnh tốt cảm xúc, thay đổi một thân thoả đáng quần áo. Thoả đáng phảng phất lập tức muốn đi ra cửa đi làm.</p>
+<p>Đều như vậy, tổng sẽ không hoài nghi ta còn muốn bò giường đi.</p>
+<p>Đồng Du từ phòng ra tới, phát hiện Thịnh Cảnh đang ở dưới lầu uống nước, hắn nghĩ nghĩ, vẫn là đi rồi đi xuống.</p>
+<p>Liền ở hắn cân nhắc muốn nói điểm gì đó thời điểm, tiểu béo hoạt động lại đây “Chủ nhân, ngài muốn ăn khuya sao?”</p>
+<p>Ăn khuya? Đúng vậy, có thể cùng nhau ăn khuya.</p>
+<p>“Ăn ăn ăn, cái kia…… Cảnh ca ca……” Đồng Du kêu cả người biệt nữu, nhưng nguyên chủ chính là như vậy kêu, hắn chỉ có thể căng da đầu thượng, “Ngươi có muốn ăn hay không điểm đồ vật?”</p>
+<p>“Không cần!” Thịnh Cảnh lạnh giọng cự tuyệt.</p>
+<p>Đồng Du giới trụ.</p>
+<p>“Chủ nhân, Thịnh Cảnh chủ nhân tưởng uống dinh dưỡng dịch, ta đã dự định, ngày mai buổi sáng 8 giờ liền sẽ đưa lại đây.” Tiểu béo tri kỷ nói.</p>
+<p>“Nga, kia cho ta lấy điểm ăn tới.”</p>
+<p>“Cơm chiên có thể chứ?”</p>
+<p>“Hành.”</p>
+<p>Thịnh Cảnh thấy Đồng Du phảng phất vừa rồi sự tình gì cũng chưa phát sinh bộ dáng, tâm lý chán ghét, lại cũng không nghĩ chủ động đề, rốt cuộc đối với hắn tới nói cũng không phải cái gì thể diện sự tình. Hắn nhìn Đồng Du, hỏi một câu “Là ngươi làm người máy gia dụng đình chỉ mua sắm dinh dưỡng dịch.”</p>
+<p>Hắn cấp người máy gia dụng giả thiết mỗi tuần cố định mua sắm dinh dưỡng dịch mệnh lệnh, cho nên trong nhà căn bản là sẽ không thiếu dinh dưỡng dịch, nếu thiếu, kia nhất định là có người cho người máy gia dụng tân mệnh lệnh.</p>
+<p>“Đúng vậy, kia đồ vật quá khó uống lên, hạn sử dụng lại đoản, ta liền không làm tiểu béo mua.” Đồng Du ngượng ngùng nói, “Thực xin lỗi a, ta không nghĩ tới ngươi thích ăn, lần sau ngươi trở về, ta nhất định trước tiên cho ngươi bị. Nếu không ngươi thử xem cơm chiên, hương vị so dinh dưỡng dịch cường.”</p>
+<p>Quả nhiên, vẫn là tìm mọi cách muốn cho chính mình ăn hắn làm gì đó.</p>
+<p>“Ta nói rồi, ta……”</p>
+<p>“Chủ nhân, thỉnh dùng cơm.” Tiểu béo bưng một mâm quen mắt cơm chiên bày biện ở Đồng Du trước mặt.</p>
+<p>Phía trước cách khá xa, Thịnh Cảnh không như thế nào để ý, lúc này ly đến gần, hắn mới phát hiện, này cơm chiên nghe lên như thế nào như vậy hương?</p>
+<p>“Cảm ơn.”</p>
+<p>“Chủ nhân ngài thật là quá khách khí, đây đều là tiểu béo nên làm.”</p>
+<p>Đồng Du cười tủm tỉm cầm lấy cái muỗng, bắt đầu vui sướng ăn cơm.</p>
+<p>Kia cơm chiên vốn dĩ liền hương, lại có Đồng Du như vậy một cái ăn bá ở, kia chỉ cần là cá nhân đều sẽ muốn ăn điểm cái gì, càng miễn bàn Thịnh Cảnh vốn là đói bụng.</p>
+<p>“Ục ục ～”</p>
+<p>Đồng Du kinh ngạc ngẩng đầu, rồi sau đó chân thành mời “Tới một chậu?”</p>
+<p>“Không cần!” Thịnh Cảnh nội tâm cảm thấy thẹn, ngữ khí lãnh khốc cự tuyệt.</p>
+<p>Từ từ, không phải muốn cảnh cáo hắn sao? Như thế nào thành xem hắn ăn cơm đâu?</p>
+<p>Tác giả có lời muốn nói</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong12.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong14.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "o-tinh-te-khai-mat-tron";
+const NOVEL_TITLE = "Ở tinh tế khai mật trốn";
+const CHAPTER_TITLE = "Chương 13";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

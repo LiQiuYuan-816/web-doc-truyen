@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 25</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ở tinh tế khai mật trốn
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 25</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong24.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong26.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Đó là ba năm trước đây một cái mùa xuân, kia một năm khí hậu thực ấm, hoa hồng khai phá lệ xinh đẹp, nhưng lại xinh đẹp hoa cũng không bằng Stalynn nửa phần mỹ diễm.” Hannibal thâm tình tự thuật, ánh mắt ôn nhu nhìn trên bàn cơm trang trí dùng hoa hồng, phảng phất kia đóa hoa chính là Stalynn mỹ diễm khuôn mặt, “Ta từ bệnh viện tan tầm, trang phục lộng lẫy tham gia bằng hữu vũ hội, ở lâu đài trong hoa viên, gặp nàng. Nàng ăn mặc thâm hắc sắc lễ phục dạ hội, tóc dài vãn khởi, không có đeo bất luận cái gì châu báu, chỉ có trong tay một đóa vừa mới từ trong hoa viên bẻ tới hoa hồng. Ta còn nhớ rõ hoàng hôn ánh chiều tà rơi tại nàng trên mặt, nàng ở bụi hoa trung ngoái đầu nhìn lại, đối với ta cười.”</p>
+<p>Hannibal nhịn không được nhìn về phía mọi người, như là một cái vừa mới rơi vào bể tình mao đầu tiểu tử, kích động cùng bằng hữu chia sẻ chính mình vui sướng “Thượng đế a, chỉ là kia liếc mắt một cái, ta liền rơi vào bể tình. Kia cả một đêm, ta đều ở truy tìm thân ảnh của nàng, ta rốt cuộc đã biết tên nàng, Stalynn. Thượng đế a, nàng thật là cực kỳ xinh đẹp, ta cảm thấy vũ hội thượng sở hữu nam nhân đều ở trộm xem nàng. Mà ta lại giống cái vừa mới thành niên mao đầu tiểu tử giống nhau, cổ cả đêm dũng khí mới dám thỉnh nàng khiêu vũ.”</p>
+<p>“Ta nhiều sợ nàng sẽ cự tuyệt ta, rốt cuộc nàng như vậy mỹ lệ, mà ta là như vậy bình thường. Cũng may, nàng đáp ứng rồi ta, Stalynn đáp ứng rồi ta! Nhưng ta quá khẩn trương, kia điệu nhảy ta nhảy sai sót chồng chất, ta thậm chí dẫm nàng chân, úc, thượng đế a, ta ở khiêu vũ thời điểm dẫm thục nữ chân, ta quả thực tội đáng chết vạn lần.”</p>
+<p>“Dẫm cái chân mà thôi không đến mức tội đáng chết vạn lần đi.”</p>
+<p>“Ngươi không hiểu, ở trước mặt người mình thích là không thể phạm sai lầm.”</p>
+<p>“Nói Hannibal còn rất ngây thơ.”</p>
+<p>“Dù sao cũng là trường luyến ái não giai đoạn sao.”</p>
+<p>“Nói đã nửa ngày, ngày đâu, ngày rốt cuộc là ngày nào đó?”</p>
+<p>“Phía trước câm miệng, không cần phá hư không khí.”</p>
+<p>“Ngươi đương xem tình yêu điện ảnh đâu, không thấy các ngươi thân ái Hạ ảnh đế sọ não còn trần trụi đâu sao?”</p>
+<p>Hạ ảnh đế so bất luận kẻ nào đều sốt ruột, nhưng hắn càng rõ ràng, lúc này không thể đánh gãy Hannibal, hắn duy nhất có thể làm chính là nỗ lực từ Hannibal nói trung lấy ra tin tức, sau đó tìm được mật mã.</p>
+<p>“Đó là vũ hội cuối cùng một chi vũ, chúng ta từ lâu đài ra tới thời điểm, giáo đường tiếng chuông vừa qua khỏi 12 giờ. Nàng cùng ta từ biệt, liền phải rời đi, kia một khắc có một thanh âm nói cho ta, không thể làm nàng liền như vậy rời đi, không thể làm nàng cứ như vậy biến mất ở ta sinh mệnh, vì thế ta vọt đi lên, hướng nàng thổ lộ.” Hannibal hô hấp dồn dập, hai má phiếm hồng, phảng phất về tới cái kia thổ lộ buổi tối, “Ta đã không nhớ rõ chính mình lúc ấy nói gì đó, nhưng nhất định biểu hiện thật không tốt, thế cho nên làm nàng cho rằng đó là ngày cá tháng tư vui đùa. Úc, thượng đế a, ta cư nhiên không có chú ý, đã là ngày cá tháng tư. Tuy rằng nàng lúc ấy không có đáp ứng ta, nhưng nàng rời đi thời điểm bắt tay cổ tay hoa để lại cho ta, chính là kia đóa nàng ở trong hoa viên trích hoa hồng.”</p>
+<p>“Cũng may trời cao chiếu cố, chúng ta thực mau liền lại gặp mặt, Mason bắt cóc ta, là Stalynn đã cứu ta. oh, đúng rồi, ta ái nhân Stalynn là một người thăm viên. Vì cảm tạ Mason, ta ở hắn đầu óc thượng rải tiêu xay.” Hannibal vẻ mặt ngọt ngào, phảng phất đầu óc thêm tiêu xay chính là nhân gian trân phẩm.</p>
+<p>“Một khắc trước vẫn là duy mĩ tình yêu, sau một khắc liền ở đầu óc thượng rải tiêu xay, hình ảnh nhiều ít có điểm tua nhỏ a.”</p>
+<p>“Chỉ có thể nói không hổ là Hannibal, nói cái luyến ái cũng không quên ăn đầu óc.”</p>
+<p>“Xuất hiện manh mối, ngày cá tháng tư, từ ngữ cảnh tới nghe này hẳn là cái ngày hội, có người biết ngày cá tháng tư là ngày nào đó sao?”</p>
+<p>“Ta thượng Tinh Võng lục soát, không lục soát.”</p>
+<p>Trên Tinh Võng không lục soát? Chẳng lẽ tinh tế thời đại người không biết ngày cá tháng tư?</p>
+<p>Đồng Du quay đầu hỏi Trương Hâm “Ngươi biết ngày cá tháng tư sao?”</p>
+<p>Trương Hâm “Không biết a, này thật là cái ngày hội?”</p>
+<p>Đồng Du “……”</p>
+<p>Tính, không biết liền không biết đi, dù sao manh mối hắn trong trò chơi đều cấp đúng chỗ, chỉ cần cửa hàng bán hoa tâm tư là có thể tìm ra.</p>
+<p>Khán giả có thể nghe ra tới tin tức, trong trò chơi người chơi tự nhiên cũng có thể nghe ra tới, Derrick rớt tuyến lúc sau, Hạ ảnh đế làm duy nhất chỉ số thông minh đảm đương, nhanh chóng sửa sang lại tin tức Ngày cá tháng tư hẳn là cái ngày hội, tiếng chuông vang quá 12 giờ, nói cách khác bọn họ tương ngộ thời gian ở ngày cá tháng tư trước một ngày, mật mã là tám vị số, cho nên phía trước khẳng định còn có một cái bốn vị số niên đại.</p>
+<p>“Nghe xong như vậy tốt đẹp câu chuyện tình yêu, các ngươi có phải hay không cũng nhớ tới chính mình tình yêu, để cho ta tới nhìn xem, có hay không người đã biến thành luyến ái não.” Hannibal nói một lần nữa từ chủ vị thượng đứng lên, ánh mắt sưu tầm tiếp theo cái có thể là “Luyến ái não” khách nhân.</p>
+<p>Các người chơi tất cả đều cúi đầu, không có một người dám cùng Hannibal đối diện.</p>
+<p>“Liền tính vừa rồi mọc ra luyến ái não, lúc này cũng muốn dọa không có.”</p>
+<p>“Ta đi, cốt truyện này xem như đi xong rồi, lại tìm không thấy mật mã, Hannibal muốn động thủ đi.”</p>
+<p>“Nhà ta nam thần sọ não khó giữ được, Arlene đang làm gì, chạy nhanh đánh thức Stalynn a!”</p>
+<p>Liền ở toàn võng kêu gọi Arlene thời điểm, Arlene cũng cấp không được, nhưng nàng cũng không biết ngày cá tháng tư là ngày nào đó a, nàng cấp chính tay không bẻ hộp sắt đâu, ý đồ dùng chính mình sức trâu đem hộp mở ra.</p>
+<p>“Hannibal tiên sinh!” Hạ ảnh đế ở Hannibal triều Tiểu Mã đồng chí đi đến thời điểm, bỗng nhiên ra tiếng, “Ta cho ngươi nói một chút ta câu chuyện tình yêu đi, có hai cái câu chuyện tình yêu thêm vào, mọc ra luyến ái não tỷ lệ lớn hơn nữa ngài nói đúng sao?”</p>
+<p>Hannibal liếc hắn một cái, cười nói “Chờ ngươi nói xong, ta cạy ra ngươi sọ não sẽ biết.”</p>
+<p>Tiểu Mã đồng chí biết chính mình tránh được một kiếp, cảm kích nhìn thoáng qua Hạ ảnh đế. Hạ ảnh đế lại không công phu phản ứng hắn, mà là liều mạng tổ chức ngôn ngữ “Ta cùng ta ái nhân là hai năm trước nhận thức, đặc biệt xảo, là ngày cá tháng tư ngày hôm sau, ngày đó là ba tháng……”</p>
+<p>“Ngày cá tháng tư rõ ràng là ở tháng tư, ngươi có phải hay không nhớ lầm.” Hannibal nghi ngờ nói.</p>
+<p>“Đúng đúng đúng, là tháng tư……”</p>
+<p>“Ngọa tào, Hạ ảnh đế ngưu b a, một câu bộ ra tới tháng.”</p>
+<p>“Hannibal nói qua, hắn cùng Stalynn là ở mùa xuân nhận thức, mùa xuân là 2-4 nguyệt, tháng khẳng định ở 234 bên trong, bất quá có thể tỏa định cụ thể tháng cũng rất lợi hại.”</p>
+<p>“Nếu là có điện tử lịch ngày thì tốt rồi, mặt trên khẳng định sẽ ghi lại ngày hội, tìm được tháng tư là có thể biết ngày cá tháng tư cụ thể ngày.”</p>
+<p>“Đây là cổ địa cầu thời kỳ bối cảnh, nơi nào tới điện tử lịch ngày?”</p>
+<p>“Kia cổ địa cầu người là dựa vào cái gì nhớ nhật tử, khẳng định cũng có lịch ngày a.”</p>
+<p>“Đối, tìm lịch ngày a, chỉ cần tìm được lịch ngày, tìm được tháng tư phân, chẳng phải sẽ biết cụ thể ngày sao?”</p>
+<p>“Arlene, tìm lịch ngày a!!”</p>
+<p>Tục ngữ nói rất đúng, ba anh thợ giày còn hơn một Gia Cát Lượng, các võng hữu nhất ngôn nhất ngữ thảo luận so thân ở cục trung người chơi càng mau tìm được rồi thông quan biện pháp. Trong lúc nhất thời toàn võng đều ở kêu gọi Arlene, làm nàng đi tìm lịch ngày. Nhưng Arlene là cái nhà đấu vật, động não liền không phải nàng am hiểu lĩnh vực.</p>
+<p>Lúc ấy Derrick đem nàng lưu tại trong phòng một là nhìn trúng Arlene cùng Stalynn cùng là nữ tính, nhị là suy xét đến Arlene lá gan đại, làm bọn họ hi vọng cuối cùng, hẳn là sẽ không bị dọa rớt tuyến. Hắn nghĩ tới sở hữu, nhưng duy độc không nghĩ tới Arlene đầu óc không đủ sử, sẽ phá giải không được mật mã.</p>
+<p>Bất quá này cũng không trách Derrick, rốt cuộc Derrick cũng không nghĩ tới chính mình mới vừa đi xuống liền chịu khổ độc thủ. Hắn nguyên bản là dự bị chính mình phá giải mật mã lúc sau lại nói cho Arlene, cũng không trông chờ Arlene động não.</p>
+<p>Chỉ có thể nói người định không bằng trời định.</p>
+<p>Giờ này khắc này, các võng hữu nhìn Arlene ở kia dùng các loại tư thế hóa giải hộp, thật là lại cấp lại tức, hận không thể chui vào trong trò chơi kéo Arlene đi tìm.</p>
+<p>“Động não a, đây là một cái giải mê trò chơi!”</p>
+<p>“Hạ ảnh đế cùng Derrick hai cái chỉ số thông minh đảm đương không nên đều đi xuống!”</p>
+<p>“Cấp chết ta!”</p>
+<p>“Ta dựa, ta thấy lịch ngày, liền ở đầu giường.”</p>
+<p>“Ta cũng thấy, liền ở Stalynn ngủ đầu giường, cùng hộp đặt ở cùng nhau! Nima, mật mã liền ở trước mắt a!!”</p>
+<p>“Ta đảo trở về nhìn, lịch ngày thượng biểu hiện thời gian là 1976 năm 3 nguyệt, trở về số ba năm, chính là 1973 năm, tám vị mật mã ra tới sáu vị 197304, liền kém cụ thể ngày!”</p>
+<p>“Lật qua đi a, phiên đến tháng tư phân, tìm được ngày cá tháng tư, trở về đảo một ngày, mật mã liền ra tới a a a a!”</p>
+<p>Các võng hữu phá giải mật mã lúc sau càng kích động, làn đạn số lượng nháy mắt tăng vọt. Loại này rõ ràng đáp án liền ở trước mắt, đồng đội lại hoàn toàn không biết, bên kia còn có người mệnh treo tơ mỏng tình huống thật sự là làm người không thể bình tĩnh.</p>
+<p>“Mau phiên, mau phiên, ai nha, cấp chết ta, Arlene rốt cuộc đang làm gì?!” Trò chơi ngoại Trương Hâm cũng cấp không được, thậm chí hướng tới mật thất nhập khẩu xem xét vài mắt.</p>
+<p>Đồng Du nhìn, gia hỏa này sẽ không còn tưởng vọt vào đi nói cho Arlene mật mã đi.</p>
+<p>“Lúc ấy ta ái nhân đang cùng hắn hảo bằng hữu Arlene ở bên nhau đi dạo phố!”</p>
+<p>Đang cố gắng hủy đi hộp Arlene bỗng nhiên nghe được tên của mình, quay đầu nhìn về phía nhà ăn.</p>
+<p>“Arlene trí nhớ không tốt, luôn là không nhớ được ngày, cho nên ta ái nhân tính toán bồi nàng đi mua lịch ngày…… Hannibal tiên sinh, ngài lâu đài có lịch ngày sao?”</p>
+<p>Hạ ảnh đế lời này vừa ra, phòng live stream một mảnh ngọa tào, ngưu bức spam, bởi vì tất cả mọi người nghe ra tới, Hạ ảnh đế đây là tại cấp Arlene đệ lời nói, làm nàng đi tìm lịch ngày.</p>
+<p>“Hắn không chỉ là đệ lời nói, hắn thậm chí còn hỏi Hannibal lâu đài có hay không lịch ngày.”</p>
+<p>“Này chỉ cần không phải cái thiểu năng trí tuệ đều hẳn là biết nên làm như thế nào đi.”</p>
+<p>Cũng may, Arlene tuy rằng không yêu động não, nhưng đích xác không phải cái thiểu năng trí tuệ. Nàng rốt cuộc phản ứng lại đây, bắt đầu ở trong phòng sưu tầm lịch ngày.</p>
+<p>Lịch ngày, lịch ngày ở nơi nào?</p>
+<p>Ở Arlene tư duy theo quán tính, loại quan hệ này đến mật mã đồ vật nhất định tàng thực kín mít, cho nên nàng tìm đều là ẩn nấp địa phương, cái này nhưng lại đem võng hữu lo lắng.</p>
+<p>“Mật mã liền kém viết ngươi trên mặt, ngươi như thế nào còn tìm không đến!!”</p>
+<p>“Tìm cái gì tủ a, ở đầu giường, đầu giường a!!”</p>
+<p>“Ta cầu xin ngươi, tỷ muội, ngươi chuyển cái thân a!”</p>
+<p>“Mau, Hạ ảnh đế muốn chịu đựng không nổi!”</p>
+<p>“Bổn đã chết, liền nàng này chỉ số thông minh rốt cuộc là như thế nào sát tiến tám cường tới tham gia thể nghiệm! Đen thế giới giả thuyết hậu trường sao?” Trương Hâm khí không được.</p>
+<p>Đồng Du bị hắn sảo hướng bên cạnh xê dịch.</p>
+<p>Nhà ăn, Hạ ảnh đế vắt hết óc kéo dài thời gian, ám chỉ Arlene. Lúc này, Hannibal bỗng nhiên rút đao “Ngươi ở gạt ta! Ngươi chuyện xưa tất cả đều là Arlene, căn bản là không có ngươi ái nhân.”</p>
+<p>Hạ ảnh đế phía sau lưng chợt lạnh, mắt nhìn dao mổ liền phải dừng ở chính mình trên đầu, bỗng nhiên cái khó ló cái khôn “Đó là bởi vì ta di tình biệt luyến, ta yêu ta ái nhân hảo bằng hữu Arlene!”</p>
+<p>Ở sinh tử tồn vong khoảnh khắc, Hạ ảnh đế lấy ra suốt đời kỹ thuật diễn, hắn hai mắt rưng rưng, thâm tình thả thống khổ “Ta yêu Arlene, nhưng ta lại cảm thấy thực xin lỗi ta ái nhân, ta nội tâm cực kỳ thống khổ, một bên là đạo đức đối ta thẩm phán, một bên là tình yêu cầm lòng không đậu, ta thật sự không biết nên làm cái gì bây giờ?”</p>
+<p>“Này đều được?!”</p>
+<p>“666 a, cái này biến chuyển là ta không thể tưởng được.”</p>
+<p>“Tuy rằng quá trình thực thái quá, nhưng logic là thông, Hạ ảnh đế cùng ái nhân chuyện xưa tất cả đều là Arlene, nhưng còn không phải là di tình biệt luyến sao?”</p>
+<p>Quả nhiên, thân là trí năng AI Hannibal cũng tán thành cái này logic, hắn biểu tình ôn hòa lên “Thân ái bằng hữu, muốn vâng theo chính mình tâm, dũng cảm đi ái Arlene, không cần để ý đạo đức thẩm phán. Đêm nay qua đi, ngươi liền sẽ không có cái này phiền não rồi.”</p>
+<p>“Người đều đã chết, nhưng không phải không có phiền não rồi sao?” Võng hữu phun tào.</p>
+<p>“Hảo hảo giảng ngươi cùng Arlene chuyện xưa.” Hannibal đao ở Hạ ảnh đế trên đầu qua lại hoạt động, lạnh băng đao kiếm kích thích Hạ ảnh đế mí mắt thẳng nhảy, “Thừa dịp ngươi kể chuyện xưa trong khoảng thời gian này, ta sẽ đem đầu của các ngươi từng cái cắt ra. Như vậy, ta là có thể ở các ngươi đầu óc biến thành hồng nhạt trước tiên, đem nó đào ra.”</p>
+<p>“Này…… Như vậy liền không mới mẻ.” Hạ ảnh đế mặt mũi trắng bệch.</p>
+<p>“Không có việc gì, chỉ cần không đem đầu óc đào ra, người không thể nhanh như vậy chết. Ta là bác sĩ, tin tưởng ta.” Hannibal nói chuyện đồng thời, bỗng nhiên đi đến Hạ ảnh đế bên cạnh Tiểu Mã đồng chí phía sau, một đao đi xuống, ca ca hai hạ, cạy ra sọ não, “Ngươi xem……”</p>
+<p>Ngươi xem hai chữ mới nói xong, Tiểu Mã ca liền tại chỗ hóa thành bạch quang rớt tuyến, liền kêu thảm thiết cũng chưa tới cập phát ra.</p>
+<p>Tiểu Mã đồng chí tinh thần lực đã sớm ở hỏng mất bên cạnh, cho nên sọ não một bị cạy ra, liền trực tiếp GM.</p>
+<p>Hạ ảnh đế cùng Hannibal liếc nhau, trong lúc nhất thời trường hợp có chút xấu hổ.</p>
+<p>Nhưng kỳ thật xấu hổ chỉ có Hạ ảnh đế mà thôi, làm nhiệm vụ NPC, Hannibal thực mau liền tìm tới rồi mục tiêu kế tiếp, Lưu Minh Kiệt.</p>
+<p>Lưu Minh Kiệt biết chính mình lập tức phải bị cạy ra sọ não, dọa oa oa kêu to “Arlene, Arlene!”</p>
+<p>Trò chơi trong ngoài người đều biết Lưu Minh Kiệt vì cái gì kêu Arlene, nhưng Hannibal không biết, Hannibal thậm chí còn hiểu lầm “Ngươi cũng thích Arlene?”</p>
+<p>Mà giờ này khắc này, bị hai cái nam nhân đồng thời ái Arlene cũng rốt cuộc tìm được rồi lịch ngày. Arlene tìm được lịch ngày kia một khắc, toàn bộ làn đạn đều ở chúc mừng, phòng live stream lễ vật xoát cùng ăn tết giống nhau.</p>
+<p>“Ngày cá tháng tư, ngày cá tháng tư, tháng tư……” Arlene phiên đến tháng tư phân, ánh mắt đầu tiên liền thấy được ngày cá tháng tư, “Tháng tư nhất hào là ngày cá tháng tư! 19730401.”</p>
+<p>Arlene một khắc cũng không dám trì hoãn, bắt đầu đưa vào mật mã 19730401.</p>
+<p>“Như thế nào mở không ra?”</p>
+<p>“Trước một ngày, trước một ngày, là 19730331”</p>
+<p>“19730331”</p>
+<p>Làn đạn mật mã bắt đầu spam, hận không thể trực tiếp đi vào thua. Cũng may lúc này đây Arlene chỉ số thông minh tại tuyến, thực mau phản ứng lại đây, nhanh chóng sửa chữa mật mã, lại lần nữa đưa vào.</p>
+<p>“Ca” một tiếng, hộp mở ra, lộ ra bên trong ống tiêm cùng dược tề.</p>
+<p>Tìm được rồi!</p>
+<p>Arlene lấy ra dược tề, giơ tay liền triều Stalynn cánh tay trát đi.</p>
+<p>Cùng lúc đó, dao phẫu thuật đã đâm vào Lưu Minh Kiệt sọ não, Hannibal đang muốn ngay tại chỗ vừa chuyển, đem sọ nhấc lên tới thời điểm, một tiếng Hannibal kêu gọi kịp thời từ đỉnh đầu truyền đến.</p>
+<p>“Hannibal.”</p>
+<p>Hannibal động tác cứng lại, hắn run rẩy ngẩng đầu, ở lầu hai cửa thang lầu thấy được chính mình ái nhân.</p>
+<p>Stalynn ăn mặc màu trắng váy ngủ, tóc dài xõa trên vai, để chân trần nhặt cấp mà xuống, như không trung hải dương giống nhau xanh thẳm con ngươi thẳng tắp nhìn chăm chú vào Hannibal, thâm tình mà ôn nhu. Hannibal đồng dạng nhìn lại, phảng phất thiên địa chi gian, giờ khắc này chỉ có bọn họ hai người mà thôi.</p>
+<p>Bỗng nhiên chi gian, nhà ăn vang lên tiếng ca, nữ ca sĩ dùng mê người lại tràn ngập thương cảm thanh âm xướng “We meet in the night in the Spanish café, I look in your eyes just don't know what to……”</p>
+<p>Hannibal cầm lòng không đậu triều Stalynn đi đến, ôm nhau, lại thật sâu hôn lấy Stalynn môi. Bỗng nhiên, hai người thân thể, theo âm nhạc đong đưa, xoay tròn nhảy lên vũ.</p>
+<p>Một màn này là như vậy đột ngột, chính là ở duy mĩ thương cảm âm nhạc trung, ở nam soái nữ mỹ thâm tình trung, phảng phất lại không có bất luận cái gì tật xấu. Hai người tận tình vũ đạo, cho dù là chưa bao giờ có xem qua cái này vũ đạo tinh tế người xem, cũng có thể từ bọn họ tứ chi động tác nhìn thấy bọn họ chi gian triền miên tình yêu.</p>
+<p>Không biết qua bao lâu, âm nhạc đình chỉ, vũ đạo hai người cũng đình chỉ, Hannibal gắt gao ôm chặt Stalynn, tay phải nắm đao lại lặng yên không một tiếng động để ở Stalynn đỉnh đầu, trong mắt tràn đầy là bi thương “Stalynn, sẽ rất đau!”</p>
+<p>“Oa thảo! Hắn muốn làm gì?!”</p>
+<p>Ý thức được Hannibal những lời này ý tứ, trò chơi trong ngoài người đều sợ ngây người.</p>
+<p>Nói tốt thâm ái đâu, như thế nào bỗng nhiên liền phải hạ sát thủ?</p>
+<p>“Hannibal, ngươi muốn giết ta sao?” Stalynn nhìn Hannibal, trong mắt không có sợ hãi, chỉ có bi thương.</p>
+<p>Hannibal nắm đao tay bắt đầu run rẩy, xanh biếc con ngươi chứa đầy nói không rõ cảm xúc. Bỗng nhiên, hắn lui về phía sau một bước, cười thảm nói “Stalynn, ta ái nhân, ta nguyện dùng sinh mệnh ái ngươi.”</p>
+<p>Nói xong, Hannibal giơ tay triều chính mình cổ chính là một mạt, máu tươi phun ra, nhiễm hồng hoa lệ thảm.</p>
+<p>Hannibal ngã xuống Stalynn trong lòng ngực, vĩnh viễn nhắm hai mắt lại.</p>
+<p>Đã chết? Hannibal cứ như vậy đã chết?</p>
+<p>Stalynn gắt gao ôm chặt Hannibal thân thể, lại không nói lời nào.</p>
+<p>Nhà ăn môn lại lần nữa mở ra, quản gia Duncan đi đến, cởi bỏ trói buộc mọi người cơ quan “Tôn kính khách nhân, tiệc tối kết thúc, xin cho phép ta đưa các ngươi rời đi.”</p>
+<p>Bốn người mộng bức đứng dậy, đi theo quản gia đi rồi.</p>
+<p>“Hannibal liền như vậy đã chết?”</p>
+<p>“Hắn thâm ái Stalynn, không đành lòng thương tổn Stalynn, cho nên chỉ có thể tự sát.”</p>
+<p>“Hắn thật sự dùng mệnh ở ái Stalynn.”</p>
+<p>“Không biết vì cái gì, nghe được Hannibal nói câu kia “Stalynn, sẽ rất đau”, ta bỗng nhiên hảo muốn khóc, hắn tình nguyện chính mình chết, cũng không muốn âu yếm Stalynn đau.”</p>
+<p>“Tuy rằng Hannibal là cái biến thái, nhưng hắn là thuần ái chiến thần a, nếu hắn không tự sát, ai có thể giết hắn.”</p>
+<p>“Hắn chết ở Stalynn trong tay, Stalynn giết hắn, chỉ dùng một câu.”</p>
+<p>“Cho nên Hannibal vẫn luôn ở tìm luyến ái não, kỳ thật chính là chính hắn.”</p>
+<p>“Vì cái gì bọn họ liền không thể ở bên nhau đâu?”</p>
+<p>“Bọn họ cuối cùng nhảy vũ hảo mỹ, hảo cảm người, ta đều xem khóc.”</p>
+<p>“Còn có kia bài hát, hảo hảo nghe, là Stalynn cùng Hannibal xướng sao?”</p>
+<p>“Ta phiên dịch một chút ca từ, kia ca là cổ địa cầu thời kỳ chúng ta quê nhà phương ngôn, giảng chính là sắp phân biệt nam nữ nhảy cuối cùng một chi vũ……”</p>
+<p>“Cho nên Hannibal vẫn luôn biết, chỉ cần Stalynn tỉnh, hắn liền sẽ chết.”</p>
+<p>“Ô ô ô…… Quá thê mỹ, quá cảm động.”</p>
+<p>Trò chơi kết thúc, các võng hữu thảo luận lại còn ở tiếp tục, chỉ là đại gia giống như cũng chưa ở thảo luận trò chơi bản thân, mà là càng chú ý cuối cùng này vài phút Hannibal tình yêu.</p>
+<p>“Ô ô, vì cái gì Hannibal cùng Stalynn không thể ở bên nhau.” Trương Hâm khóc hốc mắt đều đỏ.</p>
+<p>Đang chuẩn bị đi xuất khẩu nghênh đón người chơi Đồng Du nghe vậy một đốn, biểu tình cổ quái nhìn Trương Hâm “Ngươi hiện tại đầu óc khẳng định là hồng nhạt.”</p>
+<p>Tác giả có lời muốn nói</p>
+<p>Hannibal Nghe nói Lễ Tình Nhân vừa qua khỏi, hiện tại bên ngoài khẳng định rất nhiều luyến ái não, ta muốn đi ra ngoài đi dạo.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong24.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong26.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "o-tinh-te-khai-mat-tron";
+const NOVEL_TITLE = "Ở tinh tế khai mật trốn";
+const CHAPTER_TITLE = "Chương 25";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

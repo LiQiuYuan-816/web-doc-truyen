@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 1</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ở tinh tế khai mật trốn
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 1</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      
+      <a class="back-link" href="chuong2.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Đồng Du xuyên qua, chỉ là hắn còn không có lộng minh bạch sao lại thế này đâu, đâu đầu đã bị người phiến một cái đại bức đấu.</p>
+<p>“Ngươi như thế nào bất tử? Ngươi như vậy muốn chết liền an an tĩnh tĩnh đi tìm chết a, ngươi như thế nào lại sống, ngươi đi tìm chết a.”</p>
+<p>“Hảo, Tiểu Du biết sai rồi.” Một nữ nhân đi lên giữ chặt phẫn nộ nam nhân.</p>
+<p>“Đều là ngươi quán!” Nam nhân hung hăng trừng mắt nhìn liếc mắt một cái nữ nhân, tiếp tục chỉ vào Đồng Du cái mũi mắng, “Ta nói cho ngươi, ngươi muốn thật muốn chết, liền chọn cái không ai biết địa phương chết cái sạch sẽ, đừng lại liên lụy Thịnh Cảnh.”</p>
+<p>Thịnh Cảnh là ai?</p>
+<p>Đồng Du đang nghĩ ngợi tới đâu, liền thấy nam nhân quay đầu nhìn về phía bên kia, ngữ khí bỗng nhiên mang theo áy náy cùng tự trách “Thịnh Cảnh, là nhà của chúng ta không có đem hài tử giáo hảo, lại có lần sau, ngươi đừng động hắn, làm hắn đi tìm chết, như vậy mọi người đều giải thoát, ngươi cũng không cần ly hôn.”</p>
+<p>Ly hôn? Là hắn lý giải cái kia ý tứ sao?</p>
+<p>Cái kia được xưng là Thịnh Cảnh nam nhân từ đầu tới đuôi vẫn luôn đứng ở một bên, ánh mắt nhìn ngoài cửa sổ, chút nào không quan tâm bên này, thẳng đến lúc này mới quay đầu tới, tinh xảo khuôn mặt làm Đồng Du cái này nhan cẩu thiếu chút nữa oa thảo một tiếng. Chỉ là cái này đẹp có chút quá mức nam nhân, nói ra nói lại không thế nào dễ nghe “Ba mẹ, cái này hôn ta là nhất định phải ly, thực xin lỗi.”</p>
+<p>Nghe xong lời này, kia phiến Đồng Du một cái tát nam nhân đáy mắt hiện lên một mạt thất vọng, nhưng như cũ gật gật đầu “Hảo, ba mẹ duy trì ngươi.”</p>
+<p>Thịnh Cảnh nghe được lời này cũng không có gì tỏ vẻ, chỉ là gật gật đầu “Các ngươi liêu, ta đi một chút thư phòng.”</p>
+<p>Thịnh Cảnh rời đi sau, trung niên nam nhân chán ghét nhìn chính vẻ mặt ăn dưa biểu tình Đồng Du, khí kia kêu một cái ngứa răng, lại muốn động thủ, lại bị thê tử một phen chặn “Đừng đánh, Tiểu Du vừa mới khôi phục, tinh thần hải còn không xong đâu.”</p>
+<p>Tinh thần hải là cái gì ngoạn ý?</p>
+<p>Chẳng lẽ chính mình xuyên qua đến dị thế giới?</p>
+<p>Dựa vào đại lượng tiểu thuyết internet cùng phim truyền hình tri thức dự trữ, Đồng Du bay nhanh phân tích chính mình lúc này tình cảnh. Trước mắt này hai người hẳn là phụ mẫu của chính mình, vừa rồi cái kia soái có điểm quá mức nam nhân là chính mình lão công, hơn nữa cảm tình đã tan vỡ, đang ở nháo ly hôn.</p>
+<p>“Ta nhìn hắn liền tới khí.” Nam nhân tựa hồ là xem không được Đồng Du, khí quăng ngã môn đi ra ngoài.</p>
+<p>“Ngươi về sau nhưng đừng lại làm yêu.” Nữ nhân nói.</p>
+<p>Làm yêu? Xem ra nguyên chủ nhân thiết không ra sao a, thân sinh cha mẹ đều như vậy chướng mắt hắn. Bất quá nguyên chủ làm cái gì yêu, chẳng lẽ là bởi vì lão công muốn ly hôn, hắn chết sống không muốn, cho nên nháo đi lên? Kỳ thật đây cũng là có thể lý giải, nếu là ta lão công như vậy soái, bỗng nhiên muốn cùng ta ly hôn, ta khẳng định cũng là muốn giãy giụa một chút.</p>
+<p>“Cũng đừng lại tự sát.”</p>
+<p>Tự sát?!!!</p>
+<p>Nam nhân lại soái, kia cũng mất mạng quan trọng a, anh em, ngươi này liền qua a.</p>
+<p>“Vừa rồi ngươi thiếu chút nữa não tử vong, cùng Thịnh Cảnh tinh thần lực khế ước đều chặt đứt, nếu không phải Thịnh Cảnh mềm lòng, một lần nữa cùng ngươi ký kết tinh thần khế ước, dùng hắn tinh thần lực bảo vệ ngươi tinh thần hải, ngươi liền chết thật, ngươi biết không?”</p>
+<p>Đồng Du chớp chớp mắt.</p>
+<p>“Ly hôn chuyện này, ba mẹ biết ngươi không nghĩ ly, nhưng ngươi làm thật sự là thật quá đáng. Nếu ngươi thật sự không muốn cùng Thịnh Cảnh ly hôn, này một năm ngươi phải hảo hảo đối nhân gia, nếu một năm sau Thịnh Cảnh vẫn là muốn ly hôn, ta cũng không dây dưa, hảo sao?” Nữ nhân tận tình khuyên bảo nói.</p>
+<p>Này trong nháy mắt tin tức lượng có chút đại, Đồng Du nghe không phải thực minh bạch, nhưng tốt xấu lời nói vẫn là hiểu, vì thế gật đầu đáp ứng “Hảo.”</p>
+<p>Nữ nhân thở dài “Nghĩ thông suốt liền hảo, ngươi nghỉ ngơi trong chốc lát, mụ mụ đi cho ngươi làm điểm ăn.”</p>
+<p>Trong phòng rốt cuộc chỉ còn lại có Đồng Du một người, hắn đầu tiên là đại đại nhẹ nhàng thở ra, sau đó mới bắt đầu đánh giá chung quanh cảnh vật, mãi cho đến từ pha lê phản quang thượng thấy được chính mình mặt.</p>
+<p>Đây là một trương cùng hắn nguyên bản diện mạo có tám phần tương tự mặt, chỉ là cả người thoạt nhìn có chút uể oải cùng suy yếu, đại khái là bởi vì bệnh nặng mới khỏi quan hệ, cả người không có gì tinh khí thần.</p>
+<p>Làm một cái đã đương a phiêu nhiều năm, nhàm chán đến chỉ có thể ở mật thất chạy thoát khách mời NPC du hồn, Đồng Du đối với lúc này đây tân sinh tràn ngập cảm kích cùng vui sướng. Còn không phải là cha không thương mẹ không yêu lão công còn muốn ly hôn sao, này đều không phải sự.</p>
+<p>Đồng Du đi đến bên cửa sổ, lấy tay đi đủ ngoài cửa sổ ánh mặt trời, đang lúc hắn cảm thụ được đã lâu chiếu sáng khi, trên bầu trời bỗng nhiên có thứ gì bay qua, sau đó dừng ở cách vách sân.</p>
+<p>Đó là gì? Đĩa bay sao?</p>
+<p>Đồng Du chính hoài nghi chính mình có phải hay không hoa mắt, chân trời liền lại bay tới một cái không sai biệt lắm đồ vật, ngừng ở bên kia trong viện.</p>
+<p>Chính mình này rốt cuộc là xuyên đến một cái địa phương nào?</p>
+<p>Một giờ sau, đồ ăn chuẩn bị hảo, Đồng mụ mụ ý bảo trượng phu đem đồ ăn bưng ra đi, sau đó chính mình đi hô Thịnh Cảnh, cuối cùng lại đi kêu nhi tử.</p>
+<p>Lúc này Đồng Du đã chậm rãi bình tĩnh lại, xuyên qua loại chuyện này đều tiếp nhận rồi, mặt khác cũng liền không có gì khó có thể tiếp thu. Hơn nữa hắn vừa rồi xác định hai việc, ngôn ngữ cùng văn tự hắn đều có thể hiểu, chỉ cần câu thông không có chướng ngại, muốn hiểu biết thế giới này cũng chỉ là vấn đề thời gian.</p>
+<p>Đồng Du thật cẩn thận cọ đến bàn ăn nhất phần đuôi ngồi xuống, sau đó nhìn lướt qua trên bàn cơm đồ ăn, lập tức đến ra một cái kết luận, chính mình thân thể này mẫu thân trù nghệ hẳn là không được tốt. Này nóng hầm hập đồ ăn đủ mọi màu sắc thấu một khối, lăng là liền điểm mùi hương cũng chưa bay ra.</p>
+<p>“Ăn cơm đi.” Đồng ba ba ghét bỏ nhìn thoáng qua nhi tử, sau đó cái thứ nhất giơ lên chiếc đũa.</p>
+<p>Đồng Du chờ mọi người đều động chiếc đũa, lúc này mới đi theo giơ lên chiếc đũa, cẩn thận gắp một khối thịt cá, gấp không chờ nổi bỏ vào trong miệng, sau đó biểu tình liền vặn vẹo.</p>
+<p>Tuy rằng đối với này một bàn đồ ăn vốn là không có gì chờ mong, nhưng này cũng…… Quá khó ăn, này mùi tanh tanh hắn thiếu chút nữa chết ngất qua đi. Làm một cái đương nhiều năm quỷ người, Đồng Du phi thường có tư cách tưởng kêu một câu, thứ này thật là liền quỷ đều không ăn a.</p>
+<p>Hắn liều mạng chịu đựng, nước mắt đều nghẹn ra tới.</p>
+<p>“Ngươi khóc cái gì? Tang cái mặt cho ai xem?” Đồng ba ba không thể gặp Đồng Du bộ dáng này.</p>
+<p>Đồng Du chạy nhanh giải thích “Ta không phải, là này cá……”</p>
+<p>“Cá làm sao vậy, là bị xương cá tạp chủ sao?” Đồng mụ mụ lo lắng hỏi.</p>
+<p>“Ân.” Đồng Du thuận thế gật đầu, cúi đầu mãnh lay chén đế cơm. Cũng may cơm là bình thường, tuy rằng thủy phóng nhiều có điểm mềm.</p>
+<p>Một bữa cơm thật vất vả ăn xong, Đồng Du cha mẹ liền chuẩn bị rời đi, Thịnh Cảnh cùng Đồng Du cơ bản không nói lời nào, nhưng từ đầu tới đuôi đối Đồng Du cha mẹ vẫn luôn thực tôn kính.</p>
+<p>“Đồng Du, này một năm ngươi thành thật đợi, một năm sau nếu Thịnh Cảnh kiên trì muốn ly hôn, ngươi cần thiết vô điều kiện đáp ứng.” Đồng ba ba lời này tuy rằng là đối với Đồng Du nói, nhưng lời nói lại là nói cho Thịnh Cảnh nghe. Nói đến cùng, hắn vẫn là hy vọng Thịnh Cảnh có thể cho nhà mình nhi tử một cái cơ hội.</p>
+<p>Nói xong hắn lặng lẽ nhìn lướt qua Thịnh Cảnh, thấy Thịnh Cảnh trên mặt một chút biểu tình đều không có, biết không diễn, chỉ có thể yên lặng thở dài.</p>
+<p>“Làm gì muốn một năm sau, hiện tại ly cũng đúng a.” Đồng Du là cái dứt khoát tính tình, thuận thế liền hỏi như vậy một câu.</p>
+<p>“Ngươi này nói cái gì?!” Đồng ba ba giơ tay lại phải cho nhi tử một cái đại bức đấu,</p>
+<p>Đồng Du dọa sau này co rụt lại, thập phần không hiểu, không phải đều hy vọng hắn ly hôn sao, như thế nào hắn đồng ý ngược lại càng tức giận đâu.</p>
+<p>“Hảo, thời gian không còn sớm, chúng ta trở về đi.” Đồng mụ mụ sợ hai người lại sảo lên, lôi kéo trượng phu đi rồi.</p>
+<p>“Ta đưa ba mẹ trở về, sau đó hồi viện nghiên cứu.”</p>
+<p>Đồng Du sửng sốt trong chốc lát, mới phản ứng lại đây, lời này là Thịnh Cảnh đối hắn nói.</p>
+<p>Thịnh Cảnh đi đến trong viện, giơ tay ở trên cổ tay thao tác vài cái, mặt đất liền bỗng nhiên rung động lên, tiếp theo xuất hiện một cái thật lớn hình tròn mở miệng, một chiếc toàn màu đen phi hành khí từ giữa bay ra tới.</p>
+<p>Phi hành khí huyền ngừng ở cách mặt đất mười cm địa phương, Đồng gia cha mẹ cùng Thịnh Cảnh cực kỳ tự nhiên ngồi trên đi, sau đó “Vèo” một chút, bay đi.</p>
+<p>Đồng Du tại chỗ sửng sốt ước chừng một phút, lúc này mới đem giương miệng cấp nhắm lại.</p>
+<p>Phi hành khí thật ngầu a, cũng không biết ly hôn thời điểm chính mình cái này tiện nghi lão công có thể hay không đem thứ này phân chính mình.</p>
+<p>Lúc sau ba ngày, Đồng Du nào cũng chưa đi, ở trí năng người máy gia dụng dưới sự trợ giúp, hoàn thành đối thời đại này cơ sở hiểu biết.</p>
+<p>Cái này tinh cầu kêu Thủy Lam Tinh, lấy tên này là bởi vì trên tinh cầu này nhân loại là địa cầu di dân. Đại khái ở 500 nhiều năm trước, địa cầu nhiệt độ không khí sậu hàng, không hề thích hợp sinh tồn, nhân loại chỉ phải hướng vũ trụ di chuyển, nhân loại ở vũ trụ phiêu lưu 97 năm, mới ngoài ý muốn tìm được một cái thích hợp sinh tồn tinh cầu, cũng chính là Thủy Lam Tinh, mở ra tinh tế thời đại.</p>
+<p>Từ tư liệu, Đồng Du còn hiểu biết đến, tinh tế thời đại văn minh là có được cấp bậc, mà cấp bậc đánh giá tiêu chuẩn là tinh thần lực. Bởi vì chỉ cần là có trí tuệ chủng tộc liền đều có tinh thần lực, chỉ là mạnh yếu bất đồng. Mà mới vừa vào trú Thủy Lam Tinh địa cầu di dân, còn ở vào tinh thần lực chưa khai phá trạng thái, nói cách khác, vừa mới tiến vào tinh tế thời đại người địa cầu, đối với văn minh khác tới nói chính là chưa khai hoá dã nhân. Cũng bởi vì nguyên nhân này, Thủy Lam Tinh đã từng bị ngoại hình văn danh xâm lược cũng nô dịch thời gian rất lâu.</p>
+<p>Ở kia đoạn bị xâm lược nhật tử, địa cầu nhà khoa học nghiên cứu phát minh ra mạnh mẽ kích phát tinh thần lực dụng cụ, dựa vào cái này dụng cụ cùng người địa cầu bất khuất tinh thần, cuối cùng mới chống được tinh tế Liên Minh xuất hiện, đạt được độc lập tư cách. Đương nhiên, cũng có người nói, nếu không phải người địa cầu tinh thần lực bị kích phát đến trình độ nhất định, liền tính tinh tế Liên Minh xuất hiện, văn minh khác cũng sẽ không thừa nhận Thủy Lam Tinh độc lập tính</p>
+<p>Vì sinh tồn, nhân loại mạnh mẽ kích phát rồi tinh thần lực, nhưng mạnh mẽ kích phát tinh thần lực có nghiêm trọng di chứng, sẽ bởi vì vô pháp tự nhiên khống chế chính mình tinh thần lực mà lâm vào điên cuồng, lúc ban đầu kia một đám kích phát giả, phần lớn sống không quá 5 năm. Sau lại, trải qua không ngừng mà nghiên cứu, nhà khoa học cuối cùng tìm được rồi một cái biện pháp có thể giảm bớt loại tình huống này, cũng chính là tinh thần khế ước. Đem tinh thần lực dị thường cường đại người, cùng tinh thần lực ổn định người thông qua khế ước trói định ở bên nhau, hoàn thành cân bằng.</p>
+<p>Nguyên lý này Đồng Du xem không phải quá hiểu, nhưng đại khái ý tứ chính là nói, mỗi người trong não đều có một cái tinh thần hải, cái này tinh thần hải có tự chủ điều tiết tinh thần lực tác dụng, chẳng qua bị mạnh mẽ kích phát quá tinh thần lực nhân tinh thần hải có tổn thương, cho nên vô pháp hoàn toàn điều tiết tự thân tinh thần lực. Mà người thường tuy rằng tinh thần lực nhược, nhưng tinh thần hải là hoàn chỉnh, có thể trợ giúp điều tiết tinh thần lực.</p>
+<p>Khế ước ký kết lúc sau, người thường yêu cầu thừa nhận khế ước giả tinh thần lực cọ rửa, cái này quá trình sẽ rất thống khổ, nhưng đồng thời, đang không ngừng kích thích dưới, người thường tinh thần hải có cơ hội tự nhiên thức tỉnh. Mà tự nhiên thức tỉnh, liền sẽ không có bất luận cái gì di chứng.</p>
+<p>Hắn cùng Thịnh Cảnh giống như chính là ký kết loại này khế ước.</p>
+<p>Tinh thần khế ước một khi thành lập, là không thể dễ dàng giải trừ, trừ phi một phương não tử vong, tiêu vong chính mình tinh thần lực, bằng không một bên khác nhất định sẽ chịu phản phệ. Đương nhiên, nếu bất kể hậu quả mạnh mẽ giải trừ nói cũng không phải là không thể, bất quá vừa mới ký kết khế ước bởi vì tinh thần lực không ổn định, có một năm bảo hộ kỳ.</p>
+<p>Hiểu biết đến nơi đây, Đồng Du mới xem như biết một năm sau ly hôn ý tứ.</p>
+<p>“Cho nên nguyên chủ cùng Thịnh Cảnh khế ước ở nguyên chủ tử vong kia một khắc liền giải trừ, sau đó lại cùng ta cái này du hồn ký kết khế ước? Chẳng lẽ kia không phải mộng?” Ở thức tỉnh trước, Đồng Du có một đoạn thời gian là hãm ở trong bóng tối, kia hắc ám có áp lực cực lớn, hắn cảm giác linh hồn đều phải bị nghiền nát, rồi lại không chỗ để đi, thẳng đến một cổ lực lượng đem hắn túm ra tới, hắn vừa mở mắt, liền đi tới nơi này, “Chẳng lẽ, là Thịnh Cảnh tinh thần lực đem ta túm ra tới?”</p>
+<p>Kia chẳng phải là thiếu hắn một cái mệnh?</p>
+<p>Tác giả có lời muốn nói</p>
+<p>Lặng lẽ khai văn, sau đó kinh diễm mọi người. ( ＃…….……＃ )</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      
+      <a class="back-link" href="chuong2.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "o-tinh-te-khai-mat-tron";
+const NOVEL_TITLE = "Ở tinh tế khai mật trốn";
+const CHAPTER_TITLE = "Chương 1";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
