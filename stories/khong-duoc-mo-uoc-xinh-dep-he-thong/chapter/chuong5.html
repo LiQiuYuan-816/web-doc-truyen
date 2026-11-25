@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 5</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Không được mơ ước xinh đẹp hệ thống!!
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 5</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong4.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong6.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Phó Thành Trạch hoài nghi chính mình thính lực có phải hay không ra điểm vấn đề.</p>
+<p>Hắn như thế nào không nghe hiểu này tiểu hài tử đang nói cái gì?</p>
+<p>“Ca ca ngươi là ai?”</p>
+<p>Hắn đột nhiên lại nhớ tới vừa rồi các nữ sinh nói hai anh em, tức khắc ánh mắt thượng di, thấy chính xếp hàng mua bánh rán Bùi Thanh Nguyên.</p>
+<p>Nhưng mà cái này cùng hắn ăn mặc đồng dạng giáo phục nam sinh chỉ là lạnh lùng mà liếc chính mình liếc mắt một cái, liền dời đi tầm mắt.</p>
+<p>Phó Thành Trạch càng thêm không hiểu ra sao “Ngươi ca? Ta đều không quen biết hắn, ta tấu hắn làm gì?”</p>
+<p>Hắn là nhị trung một bá, mỗi ngày hằng ngày chính là đi học ngủ tan học chơi bóng rổ, tan học liền đi cùng đối diện ngũ trung đối thủ sống còn nhóm ở tiệm net trên máy tính quyết nhất sinh tử, ngẫu nhiên đánh đánh giá, cũng không chú ý trong trường học trừ bỏ mỹ nữ bên ngoài người.</p>
+<p>Chín tháng tân học kỳ mới vừa khai giảng không lâu, Bùi Thanh Nguyên phía trước là ấn bình thường lưu trình chuyển trường xếp lớp tiến vào, tuy rằng xuất sắc ngoại hình đã chịu một ít nữ sinh chú ý, nhưng ở trong trường học không tính thực nổi danh, tỷ như Phó Thành Trạch liền không quen biết hắn, chỉ là cái này cuối tuần từ Bùi Ngôn nơi đó nghe nói cái này li miêu đổi Thái tử hiếm lạ sự lúc sau, mới nhớ kỹ Bùi Thanh Nguyên tên này.</p>
+<p>Cho nên cho dù hiện tại hắn phóng lời nói muốn tấu Bùi Thanh Nguyên liền ở trước mắt, hắn cũng căn bản không khớp.</p>
+<p>Tiểu nam hài nghe được hắn nói như vậy, đáng yêu tươi cười lập tức nhiễm một tia hoang mang “Ngươi lại không quen biết hắn, kia vì cái gì muốn nói hàng giả một nhà đều rất xấu đâu?”</p>
+<p>Ở cái này sắc bén vấn đề, Phó Thành Trạch tức khắc có điểm mắc kẹt, hắn há mồm muốn nói lại thôi, muốn thôi lại nói, không quá phát đạt đại não cuối cùng phản ứng lại đây “Ngươi ca là Bùi……”</p>
+<p>Quý Đồng không đợi hắn nói xong, nhón chân kéo kéo hắn giáo phục vạt áo, ngắt lời nói “Ngươi quá cao, ta ngửa đầu mệt mỏi quá, có thể hay không ngồi xổm xuống một chút cùng ta nói chuyện?”</p>
+<p>Nghe được tiểu hài tử nửa câu đầu lời nói, Phó Thành Trạch trong lòng không cấm nảy lên một loại khắc vào DNA kiêu ngạo, còn oán giận mà ho khan một tiếng “1m85 chính là phiền toái.”</p>
+<p>Ngay sau đó Phó Thành Trạch thực nghe lời mà ngồi xổm xuống dưới, nhìn thẳng tiểu nam hài đôi mắt.</p>
+<p>Bị tiểu hài tử như vậy một gián đoạn, hắn phía trước thề phải vì Bùi Ngôn hết giận kia cổ kính tựa hồ đánh tan hơn phân nửa.</p>
+<p>Lúc này hắn khống chế được chính mình âm lượng, tâm bình khí hòa mà xác nhận nói “Ca ca ngươi là Bùi Thanh Nguyên sao?”</p>
+<p>Quý Đồng gật gật đầu, thực nghiêm túc mà nhìn hắn “Không cần kêu hắn hàng giả, hắn cái gì cũng không có làm sai, là vô tội.”</p>
+<p>Hắn thanh âm đồng dạng thực nhẹ, cách ríu rít đám người, cố tình không nghĩ làm Bùi Thanh Nguyên nghe thấy.</p>
+<p>“Hắn bị đổi thời điểm còn rất nhỏ, nhỏ đến cái gì cũng không biết, đó là đại nhân sai, nếu ca ca có thể chính mình tuyển, hắn khẳng định cũng tưởng cùng chính mình mụ mụ mỗi ngày ở bên nhau.”</p>
+<p>Quý Đồng thanh âm giòn giòn, không có mang quá nhiều cảm tình, một đôi mắt to lượng lượng mà nhìn hắn, giống như chỉ là ở trần thuật một kiện lại bình thường bất quá việc nhỏ, cũng không biết vì cái gì, Phó Thành Trạch lại nghe đến có chút khổ sở.</p>
+<p>Hắn hồi tưởng khởi chính mình vài phút phía trước lược hạ tàn nhẫn lời nói, bỗng nhiên cảm thấy có điểm áy náy.</p>
+<p>Bùi Ngôn đích xác không nói gì thêm về Bùi Thanh Nguyên nói bậy, chỉ nói là dưỡng mẫu trộm ở bệnh viện đổi hắn cùng Bùi Thanh Nguyên, vốn tưởng rằng sửa đúng sai lầm sau, hai cái gia đình có thể ai lo phận nấy, lại ở ban ngày Bùi gia vì hắn làm hoan nghênh bữa tiệc gặp được đột ngột xuất hiện Bùi Thanh Nguyên, không biết là bởi vì trùng hợp vẫn là cái gì khác.</p>
+<p>Hắn vào trước là chủ, cảm thấy bạch được mười mấy năm giàu có nhật tử Bùi Thanh Nguyên khẳng định là lưu luyến Bùi gia sinh hoạt, không muốn rời đi, tưởng cùng Bùi Ngôn tranh cha mẹ, quả nhiên cùng hắn có thể làm ra loại sự tình này thân mụ là một mạch tương thừa.</p>
+<p>Nhưng trên thực tế hắn căn bản không quen biết Bùi Thanh Nguyên, cũng không từ biết được hắn trong lòng ý tưởng, chỉ là xuất phát từ bản khắc ấn tượng cùng lập trường gây ra thành kiến liền đối hắn hạ như vậy định nghĩa.</p>
+<p>Vì thế Phó Thành Trạch ngồi xổm đến càng thấp, nguyên bản căng chặt cẳng chân bụng đều mềm xuống dưới, có điểm khó có thể mở miệng mà mở miệng “Thực xin lỗi a, ta không nên như vậy nói.”</p>
+<p>Nói, hắn đột nhiên nghĩ tới một cái vấn đề “Hai người bọn họ không đều là con một sao?”</p>
+<p>Như thế nào còn toát ra tới một cái quản Bùi Thanh Nguyên gọi ca ca tiểu hài tử.</p>
+<p>Quý Đồng nghĩ thầm này liền thế ký chủ thu phục một cái tiềm tàng vai ác, chính mình không hổ là hệ thống giới thông minh nhất AI, hắn mặt không đổi sắc nói “Thanh Nguyên ca ca cho ta làm gia giáo, ta nhưng thích hắn, ba ba mụ mụ công tác bận quá, đều mặc kệ ta, nếu là ta thực sự có như vậy một cái ca ca thì tốt rồi.”</p>
+<p>Đối với “Sinh hoạt ở giàu có gia đình từ Bùi Thanh Nguyên đảm nhiệm gia giáo ba tuổi tiểu hài tử” cái này bịa đặt lung tung giả thiết, Quý Đồng càng nghĩ càng vừa lòng, quyết định đem nó làm chính mình đối ngoại thân phận, hơn nữa tăng thêm hoàn thiện.</p>
+<p>Như vậy vạn nhất có người yêu cầu tìm hắn ba ba mụ mụ, tuy rằng hắn tạm thời không thể biến thành thành nhân hình thái, nhưng có thể thông qua số liệu xâm nhập thông tin hệ thống, ở tiếp điện thoại thời điểm chế tạo ra ưu nhã nữ cường nhân hoặc là lãnh khốc bá tổng thanh âm, hơn nữa hắn còn có thể cùng trong điện thoại ba ba mụ mụ cãi nhau hoặc là làm nũng.</p>
+<p>Hắn nguyện xưng là tràn ngập thú vị Cyber song hoàng.</p>
+<p>Phó Thành Trạch không hề có hoài nghi hắn giải thích, đã tự phát mà não bổ một cái song song không chiếm được cha mẹ yêu thương phi thân huynh đệ hai cho nhau làm bạn thương cảm chuyện xưa.</p>
+<p>Hắn vỗ bộ ngực bảo đảm nói “Ngươi yên tâm, ở trong trường học ta tuyệt đối không khi dễ ca ca ngươi, về sau ta che chở hắn.”</p>
+<p>“Đại ca ca thật tốt.” Quý Đồng đem ánh mắt dời xuống, rơi xuống trong tay hắn nóng hầm hập bánh rán thượng, “Bánh rán thơm quá nha.”</p>
+<p>Phó Thành Trạch nghe vậy sờ đầu ngây ngô cười, chưa ý thức được hắn đem mất đi cái gì.</p>
+<p>“Ngươi là mỗi ngày ăn bánh rán mới có thể trường như vậy cao sao? Ta cũng tưởng lớn lên giống ngươi như vậy cao, hảo hâm mộ.”</p>
+<p>Giây tiếp theo, Phó Thành Trạch bàn tay vung lên, không chút do dự đem bánh rán đưa cho Quý Đồng.</p>
+<p>“Ta là gien hảo, không có biện pháp, ngươi ăn đi, tranh thủ trường cao điểm!”</p>
+<p>Quý Đồng cười tủm tỉm mà gặm một ngụm thơm ngào ngạt chiến lợi phẩm bánh rán “Cảm ơn cao ca ca.”</p>
+<p>Đối với cái này xưng hô rất là vừa lòng Phó Thành Trạch cưỡi lên xe đạp, một đường huýt sáo kỵ hướng về phía trường học, đã sớm đem chính mình phía trước muốn đánh người tấu đến kêu cha hào ngôn chí khí vứt tới rồi sau đầu.</p>
+<p>Mà bên kia, Bùi Thanh Nguyên nhìn trong tay nhiều ra một cái bánh rán Quý Đồng bước chân ngắn nhỏ chạy về tới, ngữ khí thập phần đắc ý “Chúng ta một người một cái, ta lừa tới hắn bữa sáng, hắn muốn đói bụng.”</p>
+<p>Bùi Thanh Nguyên không hỏi hắn cùng Phó Thành Trạch nói chút cái gì, chỉ là trong lòng đối chính mình cái này hệ thống trí năng trình độ nhận tri, lại bay lên tới rồi hoàn toàn mới độ cao.</p>
+<p>Hắn vốn dĩ thế Quý Đồng mua một cái thêm trứng thêm thịt bánh rán, hiện tại một người một cái, tuy rằng hắn đã ăn qua cơm sáng, nhưng chỉ là một chút không đỉnh no cháo, lúc này xem Quý Đồng ăn đến như vậy hương, cũng đi theo đói bụng lên.</p>
+<p>Mùa thu sáng sớm ánh mặt trời ấm áp, chiếu đắc nhân tâm tình sáng ngời, Bùi Thanh Nguyên cùng Quý Đồng song song ngồi ở xe đạp bên ăn bánh rán, bóng cây sái lạc điểm điểm quầng sáng.</p>
+<p>Ước chừng từ ngày hôm qua chạng vạng đói tới rồi hiện tại Quý Đồng ăn đến phá lệ thành kính “Bánh rán ăn quá ngon, đương nhân loại thật tốt a.”</p>
+<p>Bùi Thanh Nguyên nghe này thanh đến từ chính trí tuệ nhân tạo kỳ dị cảm khái, khóe miệng hơi hơi giơ lên “Ngươi thích nói, ta mỗi ngày buổi sáng đều mang ngươi tới mua.”</p>
+<p>“Chúng ta cùng nhau ăn bữa sáng.” Quý Đồng vội không ngừng gật gật đầu, “Hiện tại ta không cảm thấy ký chủ gia cơm sáng thơm, vẫn là cái này hương.”</p>
+<p>La gia hiện tại cũng không có nghèo đến ăn cháo độ nhật loại tình trạng này, chỉ là như vậy nhất bớt việc, cũng mặt bên chứng minh rồi La Tú Vân đối chính trực tuổi dậy thì yêu cầu sung túc dinh dưỡng thân nhi tử Bùi Thanh Nguyên thật sự không đủ để bụng.</p>
+<p>Không biết Bùi Ngôn ở đi học thời điểm, La Tú Vân mỗi ngày sáng sớm sẽ vì hắn chuẩn bị cái gì bữa sáng.</p>
+<p>Quý Đồng cảm thấy hẳn là không phải là cháo trắng dưa muối cùng đậu nhự.</p>
+<p>Bùi Thanh Nguyên hiển nhiên cũng minh bạch điểm này, hắn rũ xuống đôi mắt, ứng tiếng nói “Hảo.”</p>
+<p>Hắn thích cái này bỗng nhiên rối loạn quỹ đạo buổi sáng.</p>
+<p>Ánh mặt trời ở nhựa đường mặt đường thượng ấn hạ lưỡng đạo dựa gần thân ảnh, loá mắt mà phát ra năng.</p>
+<p>Hắn dọn đến La gia sau nhật tử luôn là độc lai độc vãng, hiện tại bên cạnh lại có một cái nho nhỏ bóng dáng.</p>
+<p>“Hệ thống là cái gì hình thái?” Bùi Thanh Nguyên đột nhiên hỏi hắn, “Ngươi…… Là bộ dáng gì?”</p>
+<p>Quý Đồng trả lời thật sự mau “Số liệu lưu cấu thành tiểu người máy, vóc dáng không cao, cả người mạo xanh mơn mởn quang, có đôi khi sẽ đi xuống rớt điện tử viên, tựa như nhân loại rụng tóc giống nhau, mặt khác còn sẽ biến nhan sắc.”</p>
+<p>Hắn vốn dĩ có thể trực tiếp triển lãm cấp Bùi Thanh Nguyên xem, nhưng trước công chúng không có phương tiện.</p>
+<p>“Ký chủ muốn nỗ lực làm nhiệm vụ, chờ trưởng thành giá trị đủ rồi, chúng ta liền có thể tại ý thức trong không gian tùy thời gặp mặt.”</p>
+<p>Bùi Thanh Nguyên nghiêm túc mà tưởng tượng thấy hắn miêu tả bộ dáng, hứa hẹn nói “Ta sẽ.”</p>
+<p>Bánh rán ăn đến tinh quang, Quý Đồng vừa lòng mà sờ sờ bụng, cùng lúc đó, hắn thu được một cái từ hệ thống trung tâm tuyên bố số liệu.</p>
+<p>【 hai mươi phút sau ở hệ thống trung tâm triệu khai hội nghị khẩn cấp, thỉnh các hệ thống an bài hảo hôm nay nhật trình, tránh cho ảnh hưởng ký chủ cùng cốt truyện tuyến, cần phải đúng giờ trình diện tham gia. 】</p>
+<p>…… Cái này hệ thống trung tâm tiểu biên tập và phát hành khởi thông tri tới còn rất giống người.</p>
+<p>Lập tức liền phải nhìn thấy mặt khác hệ thống đồng sự, Quý Đồng không khỏi có điểm hưng phấn, hắn nhìn về phía Bùi Thanh Nguyên “Ký chủ, trong chốc lát ta liền phải đi hệ thống trung tâm mở họp, khi trường không xác định, ngươi khả năng sẽ có đoạn thời gian liên hệ không đến ta, không cần khẩn trương.”</p>
+<p>Bùi Thanh Nguyên đối hắn hôm nay muốn đi làm sự cảm thấy thực kinh ngạc, hắn tiêu hóa một chút cái này hệ thống cư nhiên cũng muốn mở họp mới lạ tri thức “Hảo, ta đã biết.”</p>
+<p>Hắn cũng ăn xong rồi đệ nhị đốn bữa sáng, nên đi trường học.</p>
+<p>Quý Đồng ngồi ở lề đường thượng, vui sướng mà triều hắn vẫy vẫy tay “Buổi tối tan học thấy.”</p>
+<p>Cưỡi lên xe đạp Bùi Thanh Nguyên ở trong gió theo tiếng “Tan học thấy.”</p>
+<p>Chưa từng có người nói với hắn quá tan học thấy.</p>
+<p>La Tú Vân không có, đã từng mẫu thân Diệp Lam Đình cũng không có, càng không cần phải nói công tác bận rộn hàng năm đi sớm về trễ Bùi Minh Hồng.</p>
+<p>Diệp Lam Đình chạng vạng luôn là cùng một đám đồng dạng tinh xảo mỹ lệ các phu nhân cùng nhau vượt qua, ở tỉ mỉ xử lý trong hoa viên xem mặt trời lặn, oán giận từng người không về nhà trượng phu chỉ biết tiêu tiền thảo người niềm vui, đàm luận những cái đó mỗi ngày đều ở đổi mới hào môn dật sự, lại không dự đoán được có một ngày chính mình gia sự cũng sẽ trở thành nơi đó mặt một bộ phận.</p>
+<p>Bùi Ngôn đã đến sẽ thay đổi kia hết thảy sao?</p>
+<p>Hắn mơ mơ hồ hồ mà nghĩ, nhanh hơn tốc độ, càng dùng sức mà vọt vào phong.</p>
+<p>Nhị trung cửa, hôm nay vườn trường có vẻ phá lệ ồn ào náo động, bọn học sinh trên mặt tràn đầy nào đó vi diệu hưng phấn, rất nhiều người đều ở châu đầu ghé tai khe khẽ nói nhỏ.</p>
+<p>“Thiệt hay giả? Chúng ta trường học còn ra như vậy đại một cái phú nhị đại nha?”</p>
+<p>“Đương nhiên là thật sự, ai, các ngươi có hay không gặp qua cái kia học sinh chuyển trường a, mấy ban? Bọn họ ba mẹ cũng thật đủ tàn nhẫn, làm giả mạo nhi tử chuyển tới thân sinh nhi tử đọc quá trường học tới.”</p>
+<p>“Tam ban, ta đã thấy, còn rất soái —— dựa, liền vừa mới tiến vào cái kia!”</p>
+<p>“Phó ca đâu? Ta nghe người ta nói Phó ca buổi sáng phóng lời nói muốn thu thập hàng giả…… Phó ca Phó ca! Nơi này!”</p>
+<p>Đến giáo sau Phó Thành Trạch đi vào lớp ngồi xuống, nhìn đến cách vách bàn đồng học ở ăn bánh mì, đã đói bụng đến thầm thì hai tiếng lúc sau, mới nhớ tới chính mình tựa hồ không ăn bữa sáng.</p>
+<p>Hắn đành phải xuống lầu một lần nữa đi mua, kết quả đi đến một nửa đã bị chuyện tốt đồng học gọi lại.</p>
+<p>Phó Thành Trạch không kiên nhẫn mà quay đầu, ánh mắt thẳng tắp mà đối thượng chính xe đẩy tiến vào Bùi Thanh Nguyên.</p>
+<p>Ở vây xem quần chúng xem náo nhiệt không chê to chuyện lửa nóng trong tầm mắt, Bùi Thanh Nguyên vẻ mặt mặt vô biểu tình, hắn đương nhiên nhớ rõ Phó Thành Trạch ở bánh rán quán bên nói muốn tấu hắn kia phiên lời nói.</p>
+<p>Hắn không như thế nào từng đánh nhau, nhưng từ nhỏ vẫn là tiếp thu quá một ít Tae Kwon Do Karate linh tinh phòng thân giáo dục, không nhất định liền sẽ bại bởi giờ phút này chính diện lộ tức giận đại cao cái Phó Thành Trạch.</p>
+<p>Liền ở hắn chuẩn bị cuốn tay áo thời điểm, lại thấy Phó Thành Trạch bước đi đến đổ thêm dầu vào lửa nam sinh bên cạnh, không lưu tình chút nào mà cho hắn khấu cái đại bạo lật.</p>
+<p>“Mạo mạo mạo, ta mạo ngươi cái đầu!”</p>
+<p>Bùi Thanh Nguyên ……?</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong4.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong6.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "khong-duoc-mo-uoc-xinh-dep-he-thong";
+const NOVEL_TITLE = "Không được mơ ước xinh đẹp hệ thống!!";
+const CHAPTER_TITLE = "Chương 5";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

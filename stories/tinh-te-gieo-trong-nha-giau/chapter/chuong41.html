@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 41</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tinh tế gieo trồng nhà giàu
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 41</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong40.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong42.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Nhan Quân Trạch ngước mắt, thấy đứng ở bên sân Giang Hàn Khinh, trong mắt tràn đầy bất đắc dĩ.</p>
+<p>Ăn mặc chế phục nam nhân quay đầu lại, thấy Giang Hàn Khinh, đối Nhan Quân Trạch nói một câu cái gì, Nhan Quân Trạch gật đầu.</p>
+<p>Chế phục nam nhân đi tới, Nhan Quân Trạch ba người đi theo lại đây.</p>
+<p>“Ngươi là Giang Hàn Khinh?” Trung niên chế phục nam nhân trên dưới đánh giá hắn.</p>
+<p>“Ta là, các ngươi là?” Giang Hàn Khinh trong lòng đã có suy đoán.</p>
+<p>Trung niên chế phục nam nhân đào. Ra bản thân giấy chứng nhận, “Ta họ Lý.”</p>
+<p>Giang Hàn Khinh nhìn giấy chứng nhận, chỉ nghĩ thở dài, hắn thật muốn cấp Lư bác sĩ quỳ xuống, cầu hắn đừng động này nhàn sự được không?</p>
+<p>Hiển nhiên không được.</p>
+<p>“Chúng ta nhận được cử báo, ngươi tiếp xúc tới rồi Phệ Hồn, là như thế này sao?” Lý cảnh sát hỏi.</p>
+<p>Giang Hàn Khinh thấy Bạch Dã cùng Lam Hiên sắc mặt thật không tốt, hẳn là mới vừa biết Phệ Hồn sự.</p>
+<p>Nhan Quân Trạch thần sắc trấn định, ở Giang Hàn Khinh nhìn qua thời điểm, cho hắn một cái trấn an ánh mắt, ý bảo hắn đừng sợ.</p>
+<p>Giang Hàn Khinh “Ta không rõ ràng lắm, cho ta kiểm tra Lư bác sĩ nói, ta ý thức hải bị Phệ Hồn huỷ hoại, ta chính mình không có phương diện này ấn tượng.”</p>
+<p>Lý cảnh sát được đến chính mình muốn đáp án, “Phệ Hồn sự, chúng ta yêu cầu ngươi hiệp trợ điều tra.”</p>
+<p>Giang Hàn Khinh không phản ứng lại đây, “Xin lỗi, ta muốn hỏi một chút, hai vị là bởi vì Phệ Hồn tới điều tra ta, vẫn là ta ý thức hải bị hủy, tới điều tra ta? Ta có điểm phân không rõ chủ thứ.”</p>
+<p>“Hai người đều có, Phệ Hồn là đế quốc đệ nhất nghiêm. Đánh vi. Cấm. Phẩm, chúng ta yêu cầu biết, ngươi là ở nơi nào tiếp xúc đến Phệ Hồn, chúng ta cũng muốn xác định, ngươi là tự chủ dùng, vẫn là bị bắt dùng.”</p>
+<p>Giang Hàn Khinh “……”</p>
+<p>Bạch Dã vẻ mặt khó chịu, “Ta có thể làm chứng, hắn tuyệt đối sẽ không tự chủ dùng.”</p>
+<p>Giang Hàn Khinh có điểm ngốc, “Loại đồ vật này còn có tự chủ dùng sao? Nếu tự chủ dùng sẽ thế nào?”</p>
+<p>Lý cảnh sát sắc mặt trầm lãnh, “Ngươi sẽ chịu pháp luật chế tài.”</p>
+<p>Giang Hàn Khinh “……”</p>
+<p>Ta đi, còn có loại này cách nói? Chẳng lẽ tinh tế thời đại có quy định, tự sát bất tử phạm nhân. Pháp?</p>
+<p>Giang Hàn Khinh nhớ tới Lư bác sĩ nói qua nói, nếu Phệ Hồn là chính hắn uống xong đi, hắn hẳn là sẽ tiến ngục giam.</p>
+<p>Này cần thiết không thể thừa nhận a!</p>
+<p>Giang Hàn Khinh nghiêm túc lại nghiêm túc, “Trên thực tế, ta căn bản không biết Phệ Hồn là thứ gì, trước đó không lâu kiểm tra sức khoẻ, mới biết được chính mình tinh thần lực có vấn đề.”</p>
+<p>“Lúc ấy vì cái gì không có báo. Cảnh?”</p>
+<p>Giang Hàn Khinh “Ta bên này không có bất luận cái gì manh mối, thân thể cũng không có gì vấn đề, không nghĩ tới báo. Cảnh.”</p>
+<p>“Có hay không manh mối không phải ngươi định đoạt, bất luận cái gì tiếp xúc Phệ Hồn dẫn đường, chúng ta đều sẽ điều tra.”</p>
+<p>Giang Hàn Khinh hoàn toàn mơ hồ, “Ta là đã chịu Phệ Hồn thương tổn người, các ngươi không đi điều tra hại ta người, lại ở chỗ này điều tra ta cái này người bị hại? Có phải hay không nơi nào nói không thông?”</p>
+<p>“Có cái kêu Tịch Tử Nhạc người, ngươi nhận thức sao?” Lý cảnh sát đột nhiên hỏi.</p>
+<p>Giang Hàn Khinh cùng Nhan Quân Trạch ba người đều là sửng sốt, không nghĩ tới chuyện này cư nhiên còn liên lụy đến hắn.</p>
+<p>Giang Hàn Khinh “Nhận thức, nhưng không thân.”</p>
+<p>Lý cảnh sát nhìn Giang Hàn Khinh liếc mắt một cái, “Căn cứ hắn lời chứng, ngươi đối dẫn đường có rất nghiêm trọng mâu thuẫn tâm lý, đối dẫn đường rất có thành kiến, có phải như vậy hay không?”</p>
+<p>Bạch Dã nóng nảy, “Hắn vẫn luôn căm thù Giang Hàn Khinh, hắn nói không thể làm lời chứng!”</p>
+<p>Lý cảnh sát lạnh lùng nhìn hắn một cái, tiếp tục hỏi Giang Hàn Khinh “Có phải như vậy hay không?”</p>
+<p>Giang Hàn Khinh đã ẩn ẩn nhận thấy được không đúng chỗ nào.</p>
+<p>Hắn vừa mới bắt đầu đối dẫn đường cái này thân phận đích xác không thích, nhưng lúc này hiển nhiên không thể như vậy trả lời.</p>
+<p>“Không phải.”</p>
+<p>“Nhà ngươi còn có cái gì người? Ở nơi nào? Bọn họ cũng yêu cầu tiếp thu điều tra……”</p>
+<p>Nhan Quân Trạch mỉm cười đánh gãy hắn nói, “Lý cảnh sát, ta là Nhan Quân Trạch, là hắn ở Đế Đô Tinh đảm bảo người, đề cập Phệ Hồn án kiện, đích xác rất quan trọng, ngài có thể đối này triển khai điều tra, nhưng không thể đem ta người mang đi.”</p>
+<p>“Đến nỗi hắn có phải hay không tự chủ dùng Phệ Hồn, kỳ thật rất đơn giản, tân thương cùng vết thương cũ tổng có thể thí nghiệm ra tới, nếu Lý cảnh sát yêu cầu, ta có thể mang Giang Hàn Khinh đi một lần nữa kiểm tra một lần, cho ngài một phần tận khả năng chính xác bị hao tổn thời gian, ngài chính mình phán đoán, hắn có hay không tự chủ dùng Phệ Hồn năng lực.”</p>
+<p>Lý cảnh sát ở biết được Nhan Quân Trạch tên thời điểm, rõ ràng sửng sốt, nhan họ là hoàng tộc dòng họ, đế quốc Tứ hoàng tử, liền kêu tên này.</p>
+<p>Tứ hoàng tử không có ở truyền thông thượng công khai lộ diện quá, người quen biết hắn không nhiều lắm, nhưng biết hắn tên người cũng rất nhiều, ít nhất chính phủ quan. Viên khẳng định đều biết.</p>
+<p>Nếu đế quốc Tứ hoàng tử là đảm bảo người, sự tình đích xác có thể không ấn trình tự tới.</p>
+<p>Lý cảnh sát hơi hơi cúi đầu, lấy kỳ tôn kính, “Giang Hàn Khinh thí nghiệm kết quả, đã bị chúng ta điều ra tới, căn cứ chuyên nghiệp bác sĩ phân tích, hắn ý thức hải không giống tân thương, hẳn là ở thức tỉnh phía trước dùng Phệ Hồn.”</p>
+<p>Nhan Quân Trạch nói “Một khi đã như vậy, hẳn là có thể phán định hắn không thuộc về cố ý tổn hại dẫn đường thân phận tội.”</p>
+<p>Chỉ có năm mãn 18 một tuổi, số ít nhân tài sẽ thức tỉnh trở thành lính gác hoặc là dẫn đường.</p>
+<p>Nếu là liền thức tỉnh cũng không có, còn nói cái gì tổn hại dẫn đường thân phận tội?</p>
+<p>Ai lại biết hắn khẳng định có thể thức tỉnh thành dẫn đường?</p>
+<p>Nam dẫn đường thức tỉnh quá trình, muốn so nữ dẫn đường càng vất vả, nguyên nhân chủ yếu chính là triệu chứng phân hoá, thức tỉnh trong lúc, là bọn họ nhất suy yếu thời điểm, hơi có vô ý, liền sẽ bỏ mạng.</p>
+<p>Giang Hàn Khinh thức tỉnh thời điểm, là cái tình huống như thế nào, Giang phụ đại khái cùng hắn nói qua, liền dùng thuốc hạ sốt sự cũng chưa giấu giếm, khẳng định không phải lúc ấy ra vấn đề, bằng không Giang Hàn Khinh có thể hay không sống quá thức tỉnh kỳ đều là vấn đề.</p>
+<p>Nhan Quân Trạch phi thường tin tưởng vững chắc điểm này.</p>
+<p>Giang gia một nhà ba người đối Giang Hàn Khinh như thế nào, Nhan Quân Trạch thông qua ngắn ngủi tiếp xúc, đều xem ở trong mắt, huống hồ bọn họ hoàn toàn không có làm hại Giang Hàn Khinh lý do.</p>
+<p>Nhan Quân Trạch nói “Còn thỉnh ngài mau chóng điều tra rõ này án, còn Giang Hàn Khinh một cái trong sạch.”</p>
+<p>Lý cảnh sát trịnh trọng gật đầu, “Thỉnh ngài yên tâm, chúng ta sẽ mau chóng kết án.”</p>
+<p>Hai vị cảnh sát xoay người phải đi, Lý cảnh sát dưới chân dừng một chút, lại nói “Giang Hàn Khinh tình huống có điểm đặc thù, căn cứ hắn tin tức tố chất lượng phán định, ý thức hải nếu không có bị hủy, hắn vô cùng có khả năng thức tỉnh thành ss cấp trở lên dẫn đường, đế quốc mất đi một vị như thế quan trọng dẫn đường, Dẫn Đường Hiệp Hội bên kia khẳng định sẽ nhúng tay.”</p>
+<p>Nhan Quân Trạch gật đầu, “Cảm ơn nhắc nhở, ta đã biết.”</p>
+<p>Hai vị cảnh sát lúc này mới rời đi.</p>
+<p>Cuối cùng nhắc nhở là hảo tâm, làm cho bọn họ trước tiên có cái chuẩn bị.</p>
+<p>Đám người vừa đi, Bạch Dã đi theo rời đi, thẳng đến Dẫn Đường học viện đi.</p>
+<p>“Bạch Dã! Ngươi đừng xúc động!” Lam Hiên đuổi theo.</p>
+<p>Bạch Dã thân là lính gác, không trải qua cho phép, không thể tùy tiện đi vào Dẫn Đường học viện, bọn họ thân là tân sinh dẫn đường huấn luyện viên, hoạt động phạm vi cũng chỉ ở tân sinh khu, không thể tiến vào bên trong, nhưng Bạch Dã đã khí điên rồi, không quan tâm xông vào cao niên cấp.</p>
+<p>Đi ngang qua dẫn đường lão sư, lớn tiếng quát lớn, “Vị kia lính gác, ngươi không thể đi vào, dừng lại!”</p>
+<p>Bạch Dã phảng phất không nghe thấy, tốc độ không giảm.</p>
+<p>Lam Hiên vẫn luôn theo ở phía sau truy, “Bạch Dã! Đừng nổi điên! Mau trở lại!”</p>
+<p>“Tịch Tử Nhạc ngươi cấp lão tử lăn ra đây!” Bạch Dã phẫn nộ hô to, dưới chân đột nhiên một cái lảo đảo, phác gục trên mặt đất, cuộn tròn thân mình, ôm lấy đầu mình.</p>
+<p>Lam Hiên nhào qua đi, bảo vệ đã chịu công kích Bạch Dã, vội vàng nhìn lại, lại đây hai tên lão sư.</p>
+<p>“Lão sư! Thỉnh thu tay lại! Chúng ta này liền rời đi!”</p>
+<p>Trung niên nữ dẫn đường ánh mắt lạnh băng, cánh mũi chỗ pháp lệnh văn khắc sâu, nhìn về phía Lam Hiên cùng Bạch Dã ánh mắt, làm người thực không thoải mái.</p>
+<p>Bên cạnh nam lão sư, thấp giọng nhắc nhở, “Phan chủ nhiệm, bọn họ đều vẫn là hài tử.”</p>
+<p>Phan chủ nhiệm lúc này mới thu hồi chính mình tinh thần lực, thần sắc lạnh nhạt, “Lính gác tự tiện xông vào Dẫn Đường học viện, cho ngươi cái giáo huấn, miễn cho lần sau tái phạm.”</p>
+<p>Lam Hiên liễm đi mãn nhãn lạnh lẽo, đi đỡ trên mặt đất Bạch Dã.</p>
+<p>Bạch Dã sắc mặt tái nhợt, phát tiêm bị mồ hôi lạnh tẩm ướt, hắn ngồi dưới đất không nhúc nhích, thở hổn hển nhìn bọn họ, ánh mắt kiên định, “Ta tìm năm 3 Tịch Tử Nhạc.”</p>
+<p>Phan chủ nhiệm nhìn xuống hắn, “Có xin sao? Không đúng sự thật, liền tan học chính hắn đi ra ngoài, hiện tại là đi học thời gian.”</p>
+<p>Bạch Dã “Ta có việc gấp tìm hắn.”</p>
+<p>“Vậy đi xin.”</p>
+<p>Nam lão sư hảo tâm nhắc nhở hắn, “Tịch Tử Nhạc không ở chúng ta trường học, hắn đã chuyển trường.”</p>
+<p>Bạch Dã sửng sốt, “Chuyện khi nào?”</p>
+<p>“Hai ngày trước, hắn thủ tục đã xong xuôi.”</p>
+<p>Bạch Dã nhìn mắt kia trung niên lão bà liếc mắt một cái, trong ánh mắt đều là lạnh lẽo, hắn bị Lam Hiên đỡ rời đi.</p>
+<p>Trương lão sư do dự mà mở miệng “Phan chủ nhiệm, bọn họ là Tứ hoàng tử tiểu đội người, ngài như vậy trực tiếp ra tay thương hắn……”</p>
+<p>Phan chủ nhiệm lạnh lùng liếc hắn, “Thì tính sao? Tự tiện xông vào Dẫn Đường học viện, ta có quyền xử trí hắn.”</p>
+<p>Trương lão sư không dám lại nói.</p>
+<p>Thẳng đến ra Dẫn Đường học viện, Lam Hiên mới mở miệng, “Ngươi thế nào? Bị thương nặng không nặng?”</p>
+<p>Bạch Dã xả ra một mạt cười lạnh, “Cái kia lão bà tưởng phế bỏ ta.”</p>
+<p>Lam Hiên ngày thường ôn hòa không còn sót lại chút gì, “Ngươi quá lỗ mãng.”</p>
+<p>Bạch Dã ngẩng đầu xem bầu trời, bỗng nhiên cười rộ lên, “Ta hiện tại quá mẹ nó tán đồng Khinh Khinh nói, ngoại giới đối dẫn đường đánh giá đều là giả, bọn họ không nhu nhược, không ôn nhu, cũng không thiện lương, bọn họ tàn nhẫn lên liền chính mình cũng không buông tha, chúng ta này đó lính gác, ở dẫn đường trong mắt, lại tính cái gì?”</p>
+<p>“Ỷ lại dẫn đường mà sống ‘ ký sinh vật ’.” Lam Hiên tiếp một câu.</p>
+<p>Đây là Dẫn đường chủ quyền hội đối bọn họ lính gác xưng hô.</p>
+<p>Bạch Dã cười nhạo, “Ngươi đoán cái kia lão bà có biết hay không chúng ta thân phận?”</p>
+<p>Bọn họ bốn cái tiểu đội thành viên danh sách cùng ảnh chụp, mỗi ngày đều treo ở giáo trên mạng, tưởng không biết đều khó đi?</p>
+<p>Huống chi, Lam Hiên còn hô lên tên của hắn.</p>
+<p>“Biết rõ thân phận, còn ra tay thương ta, ngươi cảm thấy nàng là bên kia người?”</p>
+<p>“Chính ngươi xuẩn, nhân gia muốn giết ngươi, ngươi còn cho người ta đệ đao, ngươi bất tử ai chết?” Lam Hiên thật hận không thể đá hắn mấy đá, xem hắn trong đầu trang đều là cái gì.</p>
+<p>“Việc này chờ lát nữa đừng nói, ta sợ Nhan ca biết sau tấu ta.”</p>
+<p>“Ngươi này sắc mặt bạch cùng quỷ giống nhau, Quân Trạch tưởng không biết đều khó.”</p>
+<p>Bạch Dã thở ngắn than dài, thập phần ưu sầu.</p>
+<p>Bốn ban nữ sinh đều ở nghiêm túc huấn luyện, các nàng tuy rằng cũng rất tò mò, nhưng hiển nhiên huấn luyện càng quan trọng.</p>
+<p>Nhan Quân Trạch không có yêu cầu các nàng mỗi người đều học được tinh thần lực trinh. Sát, một cái trong đội ngũ, có người có thể làm được là được, bọn họ ban tổng cộng có 12 cá nhân học xong tinh thần lực kéo dài tới, trước mắt có thể làm được bện tinh thần lực cái chắn người, lại chỉ có Giang Hàn Khinh một cái.</p>
+<p>Tới gần quân huấn khảo hạch, mỗi người đều thực khẩn trương.</p>
+<p>Giang Hàn Khinh nhìn Bạch Dã cùng Lam Hiên chạy đi phương hướng, “Bọn họ làm gì đi?”</p>
+<p>“Hẳn là đi tìm Tịch Tử Nhạc.” Chuyện này, cơ hồ thành Bạch Dã trong lòng thứ.</p>
+<p>“Sẽ không có việc gì đi?” Giang Hàn Khinh có điểm lo lắng bọn họ.</p>
+<p>“Có Lam Hiên đi theo, sẽ không có việc gì.”</p>
+<p>Nhan Quân Trạch nhìn về phía hắn, bất đắc dĩ thở dài, “Ngươi nên lo lắng một chút chính mình vấn đề.”</p>
+<p>“Ta cảm thấy các ngươi Đế Đô Tinh người, tư duy có điểm đặc biệt, bọn họ không đi bắt hung thủ, lại tới điều tra ta cái này người bị hại, khó có thể lý giải.” Giang Hàn Khinh bất đắc dĩ lắc đầu.</p>
+<p>“Bọn họ muốn trước điều tra rõ ràng, ngươi có phải hay không tự chủ dùng Phệ Hồn, nếu là, trước đem ngươi bắt lại, lại tiếp tục thâm nhập điều tra.” Nhan Quân Trạch chỉ ra.</p>
+<p>Giang Hàn Khinh trợn tròn đôi mắt, “Ngươi xem ta giống có bệnh bộ dáng sao? Liền tính muốn tự sát cũng sẽ không dùng như vậy xuẩn biện pháp đi? Chịu tội lại không chết được người, đồ cái gì?”</p>
+<p>Nhan Quân Trạch “Phệ Hồn chế tạo ra tới, chính là vì hủy diệt dẫn đường ý thức hải, chuyện này ngươi biết đi?”</p>
+<p>Giang Hàn Khinh gật đầu, “Biết, Lư bác sĩ nói qua.”</p>
+<p>Nhan Quân Trạch tiếp tục hỏi “Vậy ngươi có biết hay không Phệ Hồn là ai nghiên cứu cũng chế tạo ra tới?”</p>
+<p>Giang Hàn Khinh lắc đầu, này còn thật không biết.</p>
+<p>“Là dẫn đường chính mình.”</p>
+<p>Giang Hàn Khinh “……”</p>
+<p>Chính mình nghiên cứu ra hại chính mình đồ vật, có phải hay không không đúng chỗ nào?</p>
+<p>Giang Hàn Khinh thử thăm dò hỏi “Dẫn đường nhóm là muốn……”</p>
+<p>Nghĩ đến cái kia suy đoán, Giang Hàn Khinh chỉ cảm thấy cả người lạnh cả người.</p>
+<p>Nhan Quân Trạch sâu kín nhìn hắn một cái, “Đế quốc có một cái tổ. Dệt, kêu ‘ Dẫn đường chủ quyền hội ’, bên trong thành viên đều là dẫn đường, bọn họ thờ phụng dẫn đường tối thượng, cho rằng dẫn đường địa vị, hẳn là ở lính gác phía trên, đế quốc người cầm quyền, không nên là lính gác, hẳn là dẫn đường.”</p>
+<p>“Dẫn đường chỉ cần nhập hội, liền sẽ bị tẩy não, ý tưởng cực đoan, hành vi cực đoan, mất đi lý trí, ở bọn họ trong mắt, lính gác chỉ là dẫn đường ‘ ký sinh vật ’, không có dẫn đường, liền sẽ không có lính gác, lính gác chết sống, từ dẫn đường định đoạt.”</p>
+<p>“Cường đại lính gác, giống nhau đều sẽ thân cư chức vị quan trọng, bên người khẳng định sẽ có dẫn đường bạn lữ, Dẫn đường chủ quyền hội liền từng mượn dùng những cái đó dẫn đường bạn lữ tay, bắt cóc hoặc là ám sát đế quốc cao tầng, muốn phát động chính biến, lật đổ lính gác thành lập chế độ sở hữu độ, từ bọn họ dẫn đường khống chế cái này quốc gia.”</p>
+<p>Giang Hàn Khinh trợn mắt há hốc mồm, dẫn đường nhóm chí hướng rất rộng lớn a?</p>
+<p>“Sau lại đâu?” Thất bại là khẳng định, bằng không hiện giờ người cầm quyền không phải là lính gác.</p>
+<p>“Hành động tự nhiên thất bại, Dẫn đường chủ quyền hội phía sau màn cao tầng ẩn nấp không ra, lại ở lấy một loại khác phương thức, ảnh hưởng đế quốc dẫn đường.”</p>
+<p>“Vũ trụ lịch 1980 năm đến 1990 trong năm, dẫn đường số lượng kịch liệt giảm bớt. Dẫn đường chủ quyền hội nghiên cứu ra một loại dược, có thể hủy diệt dẫn đường ý thức hải, làm cho bọn họ biến thành ‘ người thường ’, không hề biến thành lính gác ‘ tư hữu vật ’, bọn họ có thể tự do tự tại sinh hoạt, tự nguyện dùng loại này dược dẫn đường rất nhiều.”</p>
+<p>“Kia dược chính là Phệ Hồn?” Giang Hàn Khinh nhíu mày.</p>
+<p>“Không sai, giống nhau tự nguyện dùng Phệ Hồn dẫn đường, cơ hồ đều là Dẫn đường chủ quyền hội thành viên, Phệ Hồn đích xác có thể phá hủy ý thức hải, lại không cách nào đem dẫn đường biến thành người thường, chờ đợi bọn họ, chỉ có tử vong.”</p>
+<p>“Lúc ấy, dẫn đường rất nhiều tử vong, số lượng cực kỳ thưa thớt, lính gác tỷ lệ tử vong theo sát tiêu thăng, toàn bộ đế quốc rung chuyển bất an, vì thế, đế quốc cao tầng hạ nghiêm lệnh, cần thiết diệt trừ Chủ Quyền Hội, nhưng phía sau màn người lãnh đạo đã chết một cái, lại sẽ xuất hiện một cái, nhiều lần cấm không ngừng.”</p>
+<p>“Không từ bản chất thay đổi, hẳn là rất khó ngăn chặn.” Giang Hàn Khinh tâm tình thực phức tạp, hắn cơ hồ có thể nghĩ đến, đó là như thế nào hỗn loạn niên đại.</p>
+<p>“Ngươi nói rất đúng, đế quốc hoàng thất nhằm vào dẫn đường chính sách nhất biến tái biến. Từ dẫn đường phong bế thức tập trung giáo dục, biến thành bình thường cao giáo giáo dục; sau khi thức tỉnh cưỡng chế phân phối, biến thành hôn nhân tự do; hôn sau chỉ có thể đãi ở trong nhà, biến thành chức nghiệp tự do……”</p>
+<p>“Tân thời đại dẫn đường, đế quốc cho bọn hắn cũng đủ tự do, cũng đủ tôn trọng, tốt nhất phúc lợi, dẫn đường số lượng, quả nhiên bắt đầu tăng trở lại, mấy năm gần đây, cơ hồ nhìn không thấy cái này tổ chức dấu vết, thương thế của ngươi huống, cho bọn hắn đề ra tỉnh, Chủ Quyền Hội người, nói không chừng vẫn như cũ tồn tại.”</p>
+<p>Giang Hàn Khinh rốt cuộc minh bạch, vì cái gì rõ ràng hắn mới là người bị hại, lại phải bị điều tra, cũng minh bạch, vì cái gì Lư bác sĩ sẽ như vậy ái lo chuyện bao đồng, nắm chuyện này không bỏ, nguyên lai Phệ Hồn sau lưng còn có chuyện như vậy.</p>
+<p>Giang Hàn Khinh vội vàng tỏ thái độ, “Ta tuyệt đối không phải cái này sẽ thành viên.”</p>
+<p>Nhan Quân Trạch cười khẽ, “Tước Vĩ Tinh khả năng chỉ có ngươi một cái dẫn đường, Chủ Quyền Hội qua bên kia phát triển offline, là mắt manh sao?”</p>
+<p>Giang Hàn Khinh “Chúng ta hữu nghị thuyền nhỏ, khả năng muốn phiên……”</p>
+<p>Giang Hàn Khinh thấy Lam Hiên đỡ Bạch Dã đã trở lại, Bạch Dã trạng thái rõ ràng không đúng.</p>
+<p>Hắn bước nhanh đón nhận đi, “Làm sao vậy? Sắc mặt khó coi như vậy?”</p>
+<p>Bạch Dã có điểm chột dạ, sợ hãi nhìn Nhan Quân Trạch liếc mắt một cái, không dám nói lời nói.</p>
+<p>Lam Hiên đem Bạch Dã đã chịu Phan chủ nhiệm tinh thần lực công kích sự tình nói một lần.</p>
+<p>Giang Hàn Khinh quả thực không thể tin được, “Một cái chủ nhiệm dùng tinh thần lực công kích học sinh, trường học mặc kệ sao?”</p>
+<p>Nhan Quân Trạch trầm mặt, “Hắn thượng vội vàng đưa nhược điểm, liền tính bị phế đi ý thức hải, cũng là hắn đuối lý.”</p>
+<p>“Thảo, này đều cái gì cẩu so quy củ, dẫn đường là người, lính gác đều không phải người sao?”</p>
+<p>Vừa mới nghe nói dẫn đường nhóm là như thế nào hung tàn, lúc này lập tức liền cho hắn tới cái hiện trường bản, Giang Hàn Khinh có điểm đã chịu kích thích.</p>
+<p>Nhan Quân Trạch “……”</p>
+<p>Bạch Dã “……”</p>
+<p>Lam Hiên “……”</p>
+<p>Bạch Dã ho khan một tiếng, “Khinh Khinh a, ngươi, ngươi cũng là dẫn đường.”</p>
+<p>“Dẫn đường làm sao vậy? Dẫn đường liền không lo người?!” Giang Hàn Khinh một cái tát chụp qua đi.</p>
+<p>Bị đánh trúng cái ót Bạch Dã, đầy mặt khiếp sợ.</p>
+<p>“Trừng cái gì trừng? Khó trách lính gác lấy dẫn đường không có biện pháp, nguyên lai lính gác đều là ngốc tử!”</p>
+<p>Nằm cũng trúng đạn lính gác ba người tổ “……”</p>
+<p>Giang Hàn Khinh “Hiện tại phải làm sao bây giờ? Muốn hay không đi bệnh viện?”</p>
+<p>Nhan Quân Trạch lạnh lạnh nhìn hắn một cái, Bạch Dã lập tức súc đầu không dám nói lời nào.</p>
+<p>“Ta đưa hắn đi bệnh viện, Lam Hiên ngươi lưu lại nhìn.”</p>
+<p>Lam Hiên gật đầu, “Hảo.”</p>
+<p>Giang Hàn Khinh nghĩ đến bị đưa đi bệnh viện Diệp Cẩn, có điểm lo lắng, “Ta và các ngươi cùng đi.”</p>
+<p>Nhan Quân Trạch “Ngươi có thể đi về trước.”</p>
+<p>Giang Hàn Khinh có chút do dự, “Ta muốn đi xem Diệp Cẩn, hắn ăn xong mứt trái cây đột nhiên té xỉu, bị đưa đi bệnh viện.”</p>
+<p>Nhan Quân Trạch “……”</p>
+<p>Bạch Dã “……”</p>
+<p>Lam Hiên “……”</p>
+<p>Nhan Quân Trạch không hề nhiều lời, mang theo hai cái không bớt lo chạy đến bệnh viện.</p>
+<p>Diệp Cẩn nếu là ra chuyện gì, truyền ra đi còn tưởng rằng bọn họ dẫn đường cho hắn hạ độc đâu.</p>
+<p>Tác giả có lời muốn nói Diệp Cẩn chỉ có thể chờ đến ngày mai, tranh thủ ngày mai buổi sáng 9 điểm tả hữu càng, nếu siêu khi đừng đánh ta, ta tận lực đem thời gian điều chỉnh đến buổi sáng đổi mới.</p>
+<p>ps Nếu có canh hai, sẽ trước tiên nói, chưa nói chính là bình thường canh một, đại gia đừng chờ, moah moah ~~</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong40.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong42.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tinh-te-gieo-trong-nha-giau";
+const NOVEL_TITLE = "Tinh tế gieo trồng nhà giàu";
+const CHAPTER_TITLE = "Chương 41";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

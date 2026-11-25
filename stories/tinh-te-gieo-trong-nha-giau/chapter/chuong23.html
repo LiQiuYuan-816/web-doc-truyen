@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 23</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tinh tế gieo trồng nhà giàu
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 23</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong22.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong24.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Trên Tinh Võng sự, Nhan Quân Trạch ngày hôm sau mới biết được.</p>
+<p>Hắn không nghĩ tới Giang Hàn Khinh sẽ như vậy nhanh chóng, bọn họ vừa ly khai, hắn liền ở Tinh Võng thương thành khai cửa hàng bán ra.</p>
+<p>Đáng tiếc tin người không nhiều lắm, còn bị người cử báo, càng là bị đương thành kẻ lừa đảo quải tới rồi trên Tinh Võng.</p>
+<p>Giang Hàn Khinh ở trên tinh hạm bán ra có trấn an tác dụng quả táo, chuyện này lúc ấy ở trên tinh hạm người đều biết, căn bản không phải bí mật, sở dĩ không có truyền khai, bọn họ đều là quân nhân, không có nhận được mệnh lệnh, sẽ không tự mình ngoại truyện.</p>
+<p>Nếu Giang Hàn Khinh yêu cầu bọn họ ra mặt, Nhan Quân Trạch sẽ hỗ trợ.</p>
+<p>Nhưng Nhan Quân Trạch dò hỏi Giang Hàn Khinh khi, Giang Hàn Khinh cự tuyệt.</p>
+<p>Một ngàn cá nhân ra mặt chứng minh, cũng không bằng một người tự mình dùng ăn tới hiệu quả hảo.</p>
+<p>Ngày hôm sau, Giang Hàn Khinh ở một mảnh nghi ngờ trong tiếng, lại thượng một đám rau quả.</p>
+<p>[ hình ảnh ] thấp hiệu quả táo 3 vạn cái;</p>
+<p>[ hình ảnh ] thấp hiệu đại cà chua 2 vạn cái;</p>
+<p>[ hình ảnh ] thấp hiệu dâu tây 1 vạn viên;</p>
+<p>[ hình ảnh ] bình thường rau xanh 1000 cây;</p>
+<p>[ hình ảnh ] bình thường khoai tây 2000 viên;</p>
+<p>[ hình ảnh ] bình thường cà chua 3000 cái;</p>
+<p>[ hình ảnh ] bình thường dâu tây 4000 viên;</p>
+<p>[ hình ảnh ] bình thường quả táo 5000 cái;</p>
+<p>Giang lão bản nhắn lại</p>
+<p>Mua nhà ta rau quả, ma ma không bao giờ kêu ngươi về nhà thứ cơm ).</p>
+<p>ps Đừng hỏi nhà ta rau quả vì cái gì so nhà người khác quý, hỏi ngươi cũng không tin, ăn qua còn không tin, ngươi tới tìm ta, ta tự mình làm ngươi tin ).</p>
+<p>Giang Hàn Khinh Phật hệ khai cửa hàng, đổi mới thương phẩm lúc sau, đương nổi lên phủi tay chưởng quầy, đem cá mặn Giang Hàn Thần trảo lại đây, đảm đương lâm thời khách phục, làm hắn đi hầu hạ những cái đó thượng đế, hắn tiếp tục vội.</p>
+<p>Nhan Quân Trạch một phen lời nói, cho hắn dẫn dắt.</p>
+<p>Dâu tây đích xác không hảo chứa đựng, như vậy, nếu đem dâu tây chế thành dâu tây tương, không phải hảo chứa đựng nhiều?</p>
+<p>Nghĩ đến dâu tây tương, Giang Hàn Khinh tự nhiên liền nghĩ tới sốt cà chua.</p>
+<p>Nơi này hẳn là có bánh mì.</p>
+<p>Bột mì vẫn là hạt giống, còn không có mọc ra tới.</p>
+<p>Giang Hàn Khinh một người ở mân mê dâu tây tương, đem cá mặn đệ đệ ném đi trải qua trắc trở, ngắn ngủn mấy cái tinh khi, Giang Hàn Thần từ bắt đầu “Yên tâm đi giao cho ta bảo đảm hoàn thành nhiệm vụ”, biến thành sau lại “Ta là ai ta ở đâu ta vì cái gì phải làm cái này khách phục” hoảng hốt trung.</p>
+<p>Khai cửa hàng ngày đầu tiên, quá vạn người cố vấn, 0 tiêu thụ.</p>
+<p>Khai cửa hàng ngày hôm sau, vài vạn người cố vấn, 0 tiêu thụ.</p>
+<p>Khai cửa hàng ngày thứ ba……</p>
+<p>Tiểu sói con Giang Hàn Thần trong mắt rốt cuộc không có thượng đế, cả người tràn ngập nồng đậm báo xã hơi thở.</p>
+<p>Giang Hàn Thần nghĩ lại.</p>
+<p>Ta sai rồi, bọn họ không phải thượng đế, bọn họ đều là lừa, mỗi ngày đều ở lừa ta chơi!</p>
+<p>Hỏi nhiều như vậy, các ngươi nhưng thật ra mua a!</p>
+<p>Tiểu sói con lộ ra tà ác cười dữ tợn, đem khung thoại thiết trí thành tự động hồi phục, lại cũng sẽ không giống ngày đầu tiên như vậy mỗi cái vấn đề đều nghiêm túc hồi phục sợ làm thượng đế tâm sinh không vui, hắn hận không thể xuyên hồi ngày đầu tiên, đem lễ phép khách khí lại nhiệt tình chính mình chụp chết.</p>
+<p>Là lừa liền không cần ôn nhu, chỉ cần tiểu roi da.</p>
+<p>【 ánh trăng có thể thiếu không thể thiếu ngươi 】 Nhà các ngươi rau quả như vậy quý, mạ vàng sao?</p>
+<p>【 người sói bổn lang 】 [ tự động hồi phục ] đừng hỏi nhà ta rau quả vì cái gì so nhà người khác quý, hỏi ngươi cũng không tin, ăn trước lại nói, không ăn không trở về. Mắng chửi người không cử, bình xịt bắn ngược, Hắc Tử lui tán! Hắc ha!</p>
+<p>【 ánh trăng có thể thiếu không thể thiếu ngươi 】 ……</p>
+<p>【 người sói bổn lang 】 [ tự động hồi phục ] đừng hỏi nhà ta rau quả vì cái gì so nhà người khác quý, hỏi ngươi cũng không tin, ăn trước lại nói, không ăn không trở về. Mắng chửi người không cử, bình xịt bắn ngược, Hắc Tử lui tán! Hắc ha!</p>
+<p>【 ánh trăng có thể thiếu không thể thiếu ngươi 】 Như vậy ngưu bức sao?</p>
+<p>【 người sói bổn lang 】 [ tự động hồi phục ] đừng hỏi nhà ta rau quả vì cái gì so nhà người khác quý……</p>
+<p>【 ánh trăng có thể thiếu không thể thiếu ngươi 】 Chủ quán ngưu bức.</p>
+<p>【 người sói bổn lang 】 [ tự động hồi phục ]……</p>
+<p>Nghẹn khuất hai ngày tiểu sói con, rốt cuộc lộ ra thắng lợi tươi cười.</p>
+<p>Giang Hàn Khinh thay đổi thân quần áo ra tới, thấy Giang Hàn Thần cười đến phi thường tà ác.</p>
+<p>Đi tới xoa xoa hắn đầu, “Ngươi cố lên, ta đi ra ngoài một chuyến.”</p>
+<p>Giang Hàn Thần nhìn chằm chằm vài tầng khung chat, đối hắn xua tay.</p>
+<p>“Yên tâm đi, ta muốn đem này đó thượng đế toàn bộ đạp lên dưới chân.”</p>
+<p>Giang Hàn Khinh bật cười, biết hắn đã mở ra mặt trái cảm xúc bắn ngược, sẽ không lại bị mắng đến tinh thần hoảng hốt.</p>
+<p>Bạch Dã cùng Lam Hiên liên hệ hắn, tưởng từ trên Tinh Võng mua sắm, cho hắn xoát một đợt tiêu thụ, bị Giang Hàn Khinh cự tuyệt.</p>
+<p>Làm cho bọn họ muốn ăn tới trong nhà ăn, lười đến gửi.</p>
+<p>Bạch Dã & Lam Hiên ……</p>
+<p>Đây là cần lao lão bản nên có tư thế sao?</p>
+<p>Thí nghiệm trung tâm bên kia liên hệ Giang Hàn Khinh, yêu cầu hắn đi một chuyến.</p>
+<p>Giang Hàn Khinh kêu taxi đi thí nghiệm trung tâm, tìm được cho hắn làm kiểm tra bác sĩ.</p>
+<p>Bác sĩ thời gian đã không ra tới.</p>
+<p>Thấy Giang Hàn Khinh tiến vào, đầu tiên nói “Đang nói chính sự phía trước, ta cảm thấy ta hẳn là trước báo cái cảnh.”</p>
+<p>Giang Hàn Khinh cười nói “Báo nguy phía trước, có thể trước làm ta biết nguyên nhân sao?”</p>
+<p>Bác sĩ tràn đầy tiếc nuối nói “Ngươi nguyên bản có thể trở thành một người phi thường ưu tú dẫn đường, ngươi tin tức tố nói cho ta, ngươi có trở thành ss cấp hoặc là càng cao cấp dẫn đường tiềm chất……”</p>
+<p>Nói tới đây, bác sĩ dừng một chút, quan sát Giang Hàn Khinh biểu tình.</p>
+<p>Giang Hàn Khinh toàn bộ hành trình mỉm cười, biểu tình bất động chút nào.</p>
+<p>Bác sĩ “Đáng tiếc, ngươi hiện tại chỉ là một người vừa mới đạt tới C cấp dẫn đường.”</p>
+<p>Giang Hàn Khinh “C cấp dẫn đường hẳn là không có xúc phạm đế quốc pháp luật.”</p>
+<p>Bác sĩ “Đương nhiên, vấn đề là, ngươi cấp bậc ngã xuống, không phải tự nhiên hiện tượng, mà là nhân vi.”</p>
+<p>“Xin thứ cho ta đối người nhà của ngươi sinh ra nghi ngờ, đế quốc pháp luật quy định, cao cấp dẫn đường là quốc gia tài phú, bất luận kẻ nào đều không thể thương tổn cao cấp dẫn đường, đặc thù tình huống ngoại trừ, mà tình huống của ngươi, là nghiêm trọng nhất một loại.”</p>
+<p>“Ngươi bị người dùng Phệ Hồn cướp đi thiên phú, ngươi tinh thần thể không hề hoàn chỉnh, rất lớn tỷ lệ triệu hoán không ra tinh thần thể, ngươi ý thức hải trở nên héo rút, dị dạng, không ổn định ——”</p>
+<p>“Trắng ra điểm nói, ngươi về sau vô pháp cùng lính gác tinh thần kết hợp, ngươi hẳn là biết, chỉ có tinh thần kết hợp cùng thân thể kết hợp, mới là hoàn mỹ nhất kết hợp, mà tình huống của ngươi, vô pháp làm được kia một bước.”</p>
+<p>Giang Hàn Khinh ……</p>
+<p>Không, ta không biết.</p>
+<p>Giang Hàn Khinh nghĩ nghĩ “Ta còn có thể cứu giúp một chút sao?”</p>
+<p>Cứu giúp mục đích đương nhiên không phải vì tinh thần kết hợp như vậy không đứng đắn mục đích, hắn chỉ là muốn nhìn xem chính mình tinh thần thể rốt cuộc là cái dạng gì, có thể hay không cũng là chỉ mao nhung tiểu khả ái.</p>
+<p>Bác sĩ đối hắn bình tĩnh, cảm thấy không thể tưởng tượng, bất luận cái gì dẫn đường nghe được như vậy tin dữ, đều không thể làm được hắn như vậy bình tĩnh.</p>
+<p>Bác sĩ lắc đầu, “Phệ Hồn tạo thành thương tổn, không thể nghịch, vô pháp trị liệu.”</p>
+<p>Giang Hàn Khinh “Phệ Hồn rốt cuộc là thứ gì?”</p>
+<p>Bác sĩ “Phi thường tà ác, chế tạo ra tới mục đích, chính là hủy diệt dẫn đường, đế quốc nghiêm cấm nhiều năm, nhưng ngươi lại bị thứ này hủy diệt tư chất, chuyện này ta sẽ không giấu giếm, người nhà của ngươi sẽ bị điều tra.”</p>
+<p>Giang Hàn Khinh “Ngài xác định ta tình huống thật là bởi vì Phệ Hồn?”</p>
+<p>Bác sĩ phi thường khẳng định nói cho hắn, “Ta thực xác định, ngươi cũng không phải trường hợp đặc biệt, bị Phệ Hồn hủy diệt dẫn đường, bệnh trạng phần lớn tương tự, tình huống của ngươi cũng cùng bọn họ không sai biệt lắm, bất quá vận khí của ngươi tương đối hảo, ít nhất còn để lại ý thức hải. Đại bộ phận đều là trực tiếp tử vong, thiếu bộ phận sống sót, không phải mất đi ý thức hải biến thành người thực vật, chính là ý thức hải héo rút, chậm rãi mất đi tinh thần lực, đến sau lại xuất hiện các loại bệnh biến chứng, thẳng đến chết đi.”</p>
+<p>Giang Hàn Khinh “……”</p>
+<p>Giang Hàn Khinh “Có thể không báo nguy sao? Ta tưởng chính mình xử lý.”</p>
+<p>Bác sĩ “Chuyện này rất nghiêm trọng, ta không thể bao che hành vi phạm tội.”</p>
+<p>Giang Hàn Khinh vẻ mặt đau kịch liệt “Ta nói, là ta chính mình uống xong đi, ngươi tin sao?”</p>
+<p>Bác sĩ vẻ mặt tiếc nuối, “Vậy ngươi hiện tại không nên ở chỗ này, hẳn là bị đưa đi dẫn đường ngục giam.”</p>
+<p>Giang Hàn Khinh “……”</p>
+<p>“Như vậy nghiêm trọng?”</p>
+<p>“Chính là như vậy nghiêm trọng.”</p>
+<p>Hai đôi mắt ở trong không khí giao hội, đao quang kiếm ảnh, ngươi ra vô ảnh chân, ta ra đào háng quyền, hoả tinh văng khắp nơi, ai cũng không nhường ai.</p>
+<p>Liền ở không khí cực độ giằng co, Giang Hàn Khinh suy nghĩ muốn hay không chân nhân pk, đem người phách vựng chạy nhanh thoát đi hiện trường thời điểm, phòng khám bệnh môn bị gõ vang lên.</p>
+<p>Đánh thanh nhẹ nhàng chậm chạp, âm lượng cùng tiết tấu đều nắm giữ thực hảo, có vẻ người tới phi thường thân sĩ lại có lễ phép.</p>
+<p>Bác sĩ nhìn chằm chằm Giang Hàn Khinh, ấn trong tầm tay nút mở cửa, phòng khám bệnh môn tự động mở ra, một đạo thon dài thân ảnh xuất hiện ở cửa.</p>
+<p>Giang Hàn Khinh vừa quay đầu lại, thấy đứng ở cửa Nhan Quân Trạch, vui mừng nhào qua đi.</p>
+<p>“Cứu tinh mau tới, có cái dẫn đường mau bị bức điên rồi, nhu cầu cấp bách ngươi cứu vớt.”</p>
+<p>Mang theo trong gió, bao vây lấy Giang Hàn Khinh trên người đặc có thanh nhã thanh hương, Nhan Quân Trạch cảm quan nháy mắt bị loại này mùi hương bắt tù binh, cái loại này quen thuộc ngo ngoe rục rịch lại lần nữa xuất hiện, hắn tin tức tố khó có thể tự khống chế đón ý nói hùa đi lên, đem người bao vây tiến chính mình hơi thở bên trong.</p>
+<p>Giang Hàn Khinh sửng sốt, hắn nghe thấy thanh sơn tuyết trắng hương vị, tươi mát cam liệt, đề thần tỉnh não, hắn hơi thở nhào vào mạn sơn biển rừng, bị bao dung, bị tiếp nhận, phảng phất khắp nơi phiêu bạc tiểu thảo, rốt cuộc về tới thuộc về hắn kia phiến đồng cỏ xanh lá, cho tới nay bất an, nóng nảy, chỉ vì tìm được như vậy một chỗ an tâm chỗ.</p>
+<p>Kia thoải mái, thích ý, hoàn mỹ phù hợp, làm Giang Hàn Khinh đầu gối mềm nhũn, suýt nữa trực tiếp trước mặt mọi người quỳ xuống.</p>
+<p>Trên eo căng thẳng, Giang Hàn Khinh bị người chặn ngang kéo lên.</p>
+<p>Nhan Quân Trạch khóe môi câu ra một cái độ cung, hẹp dài đơn phượng nhãn tẩm mãn sung sướng cười.</p>
+<p>Giang Hàn Khinh thất thần con ngươi, đều bị ở biểu thị, bọn họ tin tức tố, hoàn mỹ phù hợp.</p>
+<p>Giang Hàn Khinh giờ phút này trong đầu, chỉ có một hàng chữ to tuần hoàn thổi qua</p>
+<p>Linh hồn an giấc ngàn thu chỗ.</p>
+<p>Nhan Quân Trạch thanh âm vang ở bên tai, thanh âm trầm thấp, “Trạm đến ổn sao?”</p>
+<p>Giang Hàn Khinh hít vào một hơi, tưởng đem thân thể dị dạng cảm đuổi đi, nhưng mà cái loại này làm hắn chân mềm hơi thở càng nhiều rót vào hắn miệng mũi, hắn lập tức ngừng thở, trạm đến thẳng tắp, ngạnh bang bang giống điều cá chết.</p>
+<p>Dùng hành động nói cho hắn, chính mình trạm đến ổn!</p>
+<p>Vẫn luôn bị lượng ở bên cạnh, ăn hai tấn cẩu lương bác sĩ “……”</p>
+<p>Nhan Quân Trạch mang theo người tiến vào, “Bức điên lý do?”</p>
+<p>Giang Hàn Khinh cứng đờ thân thể, hướng ra phía ngoài dịch hai bước, rời xa Nhan Quân Trạch hơi thở phạm vi.</p>
+<p>Cái loại cảm giác này quá kỳ quái, thân thể của mình cùng linh hồn, không chịu chính mình khống chế, muốn bị người khác chi phối, đây là muốn tạo phản sao?!</p>
+<p>“Hắn muốn báo nguy, ta không cho.”</p>
+<p>Nhan Quân Trạch nhìn hắn càng dịch càng xa, chủ động thu liễm hơi thở, ý bảo hắn không cần trốn.</p>
+<p>Sau đó nhìn về phía bác sĩ.</p>
+<p>Bác sĩ đang ở dùng xem kỹ ánh mắt đánh giá hắn.</p>
+<p>Giang Hàn Khinh phảng phất thấy bác sĩ sau lưng quang mang vạn trượng chính nghĩa chi hồn, vội vàng kêu đình, “Không phải hắn!”</p>
+<p>Bác sĩ nheo lại đôi mắt, tràn ngập cơ trí, “Vẫn là báo nguy đi.”</p>
+<p>Nhan Quân Trạch hiện tại còn không có minh bạch trạng huống.</p>
+<p>Giang Hàn Khinh giải thích “Bác sĩ phán định ta bị Phệ Hồn hại, muốn báo nguy.”</p>
+<p>Nhan Quân Trạch “?!”</p>
+<p>Bác sĩ “Tình huống của ngươi đã chẩn đoán chính xác, xác định là ăn Phệ Hồn.”</p>
+<p>Nhan Quân Trạch “!!!!!”</p>
+<p>Hắn chẳng thể nghĩ tới, lần này lại đây, thu hoạch khả quan, kích thích cũng là lớn như vậy!</p>
+<p>Cuối cùng, vẫn là từ Nhan Quân Trạch ra mặt, phi thường thành khẩn nói</p>
+<p>“Chính chúng ta đi báo án, cảm ơn ngài.”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong22.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong24.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tinh-te-gieo-trong-nha-giau";
+const NOVEL_TITLE = "Tinh tế gieo trồng nhà giàu";
+const CHAPTER_TITLE = "Chương 23";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

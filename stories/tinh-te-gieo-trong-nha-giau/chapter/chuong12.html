@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 12</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tinh tế gieo trồng nhà giàu
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 12</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong11.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong13.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Giang Hàn Khinh bưng một cái khay ra tới, bị nhiều như vậy đôi mắt hoảng sợ.</p>
+<p>Bạch Dã trực tiếp nhảy dựng lên, “Hàn Khinh, bên này bên này.”</p>
+<p>Giang Hàn Khinh đi qua đi, thấy bọn họ trước mặt đồ ăn, trầm mặc ba giây.</p>
+<p>Nấu rau xanh, khoai tây nghiền, trái cây thập cẩm cùng…… Dinh dưỡng tề.</p>
+<p>Nhìn đến bọn họ đồ ăn, Giang Hàn Khinh lại nghĩ tới vừa mới ở phòng bếp cảnh tượng.</p>
+<p>Hắn cầm quả táo, cùng đầu bếp thương lượng, mượn phòng bếp cùng đổi điểm nguyên liệu nấu ăn, đầu bếp thực sảng khoái đồng ý.</p>
+<p>Tinh hạm trường kỳ ở vào vũ trụ trung, trái cây giá trị xa so tinh tế tệ cao, Giang Hàn Khinh cũng là bắt được điểm này.</p>
+<p>Nguyên liệu nấu ăn chủng loại rất nhiều, nhưng gia vị liêu lại là muốn gì gì không có, cái loại này ngày cẩu tâm tình.</p>
+<p>Cuối cùng chỉ có thể làm hấp cá cùng chưng trứng, liền điểm hành thái cũng không có, ớt cay càng là đừng nghĩ.</p>
+<p>Rốt cuộc biết đầu bếp làm đồ ăn vì cái gì như vậy khó ăn, cũng là vất vả hắn.</p>
+<p>“Các ngươi ăn thật…… Dinh dưỡng.” Giang Hàn Khinh tìm không thấy từ ngữ hình dung.</p>
+<p>Nhan Quân Trạch ấn một chút kim loại trên mặt tường cái nút, nguyên bản bốn người bàn, kéo dài ra tới một khối, biến thành sáu người bàn, ghế dựa từ bàn đế vươn tới.</p>
+<p>“Cảm ơn.” Giang Hàn Khinh ngồi xuống.</p>
+<p>Bạch Dã duỗi cổ, không ngừng ngửi, “Ngươi ăn cái gì?”</p>
+<p>Giang Hàn Khinh cười khẽ, “Hấp cá với nước chưng trứng, không ăn qua sao?”</p>
+<p>Bạch Dã ngạc nhiên, “Đây là trứng? Trứng không phải viên sao?”</p>
+<p>Giang Hàn Khinh “……”</p>
+<p>Miễn cưỡng duy trì được tươi cười, “Ngươi ăn trứng đều là viên?”</p>
+<p>“Ân ân, viên, một phân mấy cánh cái loại này.” Bạch Dã khẳng định gật đầu.</p>
+<p>Giang Hàn Khinh “Đó là trứng luộc đi?”</p>
+<p>Bạch Dã lại lần nữa gật đầu, “Trứng không đều là như vậy ăn sao?”</p>
+<p>Giang Hàn Khinh thấy bọn họ tất cả đều tò mò nhìn chính mình, giải thích nói “Trứng ăn pháp có rất nhiều loại, phòng bếp điều kiện không đủ, chỉ có thể làm chưng trứng, gia vị liêu cũng không có, cá kho, cá hầm ớt là đừng nghĩ, chỉ có thể ăn hấp cá.”</p>
+<p>Giang Hàn Khinh cầm lấy cái muỗng, chuẩn bị khai ăn, lại thấy bọn họ còn ở nhìn chằm chằm chính mình.</p>
+<p>Giang Hàn Khinh do dự một chút, “Các ngươi…… Nếm thử?”</p>
+<p>Bạch Dã tuy rằng rất tưởng ăn, nhưng lại có chút do dự.</p>
+<p>Tịch Tử Nhạc cười nói “Hàn Khinh khả năng còn không rõ ràng lắm, lính gác ngũ cảm xa cao thường nhân, không thể ăn những món khẩu vị nặng, không thể nghe nồng đậm hương vị, người thường nghe lên rất thơm hương vị, đến bọn họ trước mặt, sẽ là mãnh liệt kích thích, đối bọn họ khứu giác thực không hữu hảo.”</p>
+<p>Giang Hàn Khinh dừng lại, khó trách hắn tìm hành gừng tỏi ớt cay thời điểm, đầu bếp nói “Những cái đó hương vị quá nặng, lính gác không ăn những cái đó”, hắn lúc ấy còn không có minh bạch, nguyên lai là ý tứ này sao?</p>
+<p>Giang Hàn Khinh hậu tri hậu giác quay đầu lại, quả nhiên phát hiện tất cả mọi người đang xem hắn, hiển nhiên là bị hắn đồ ăn hương vị kích thích tới rồi.</p>
+<p>“Xin lỗi, ta không biết này đó.”</p>
+<p>Khó trách đầu bếp làm đồ ăn vô tư vô vị, nguyên lai ở ngũ cảm nhanh nhạy lính gác ăn lên, những cái đó chính là mỹ vị sao?</p>
+<p>Giang Hàn Khinh rũ xuống lông mi, do dự mà muốn hay không đoan về phòng ăn, liền nghe thấy một cái trầm thấp thanh âm.</p>
+<p>“Ta có thể nếm thử sao?”</p>
+<p>Giang Hàn Khinh ngẩng đầu, đâm tiến một đôi hắc như hồ sâu trong mắt.</p>
+<p>Giang Hàn Khinh chần chờ, “Ngươi vị giác……”</p>
+<p>“Không quan hệ, nghe hương vị thực mỹ vị.” Nhan Quân Trạch khóe miệng mỉm cười, mặt mày chây lười.</p>
+<p>“Quân Trạch, ngươi vị giác càng thêm nhanh nhạy, ngươi đừng……”</p>
+<p>Tịch Tử Nhạc ngăn trở nói còn chưa dứt lời, Nhan Quân Trạch chính mình duỗi tay, đoan đi Giang Hàn Khinh trước mặt chưng trứng, dùng cái muỗng múc một chút để vào trong miệng, tinh tế nhấm nháp.</p>
+<p>Vài người tất cả đều khẩn trương nhìn hắn, “Thế nào?”</p>
+<p>Nhan Quân Trạch không có trả lời, lại múc một muỗng để vào trong miệng.</p>
+<p>Bạch Dã nóng nảy, “Rốt cuộc thế nào a? Cái gì hương vị? Ăn ngon sao?”</p>
+<p>Mắt thấy Nhan Quân Trạch bắt đầu loại kém tam muỗng, Bạch Dã rốt cuộc giác ra không đúng rồi.</p>
+<p>“Ta ngày, ta đã xuyên qua ngươi gian kế!”</p>
+<p>Bạch Dã cầm lấy cái muỗng đi đoạt lấy, múc đi một muỗng liền hướng trong miệng tắc, đôi mắt đột nhiên trừng lớn.</p>
+<p>“Đây là cái gì hương vị…… Hảo tiên, thơm quá, hoàn toàn không có nấu trứng điểu shi vị…… Oa Nhan ca! Cho ta chừa chút nhi a a a!!!”</p>
+<p>Bạch Dã còn tưởng lại duỗi cái muỗng, một chung chưng trứng đã thấy đáy.</p>
+<p>Ở cuối cùng, Lam Hiên tay mắt lanh lẹ đoạt một muỗng, cũng bị này chưa bao giờ hưởng qua mỹ vị kinh diễm tới rồi.</p>
+<p>“Tiên hương trơn mềm, hương vị gãi đúng chỗ ngứa, đích xác ăn rất ngon, đầu bếp đổi tân thực đơn? Không giống hắn nhất quán tục tằng tác phong a?”</p>
+<p>Giang Hàn Khinh “……”</p>
+<p>Hắn chỉ là bị bắt làm thanh đạm một chút mà thôi.</p>
+<p>Nhan Quân Trạch còn lại là nhìn về phía Giang Hàn Khinh, “Đây là ngươi làm?”</p>
+<p>Giang Hàn Khinh “Ân, phòng bếp không có gì gia vị liêu, chỉ có thể làm nguyên nước nguyên vị đồ ăn.”</p>
+<p>Nhan Quân Trạch sát miệng, “Thực mỹ vị.”</p>
+<p>Giang Hàn Khinh “…… Cảm ơn?”</p>
+<p>Bạch Dã bất mãn, “Ta chỉ ăn đến một muỗng!”</p>
+<p>Giang Hàn Khinh nhìn cái đĩa chưng cá, “Ăn cá sao?”</p>
+<p>Lần này Bạch Dã không chút do dự gật đầu, “Ăn.”</p>
+<p>Cầm lấy nĩa, chọn một khối thịt cá để vào trong miệng, vài người tất cả đều không thể tưởng tượng nhìn hắn.</p>
+<p>“Thịt cá rất non, thực tiên, còn có điểm điểm vị ngọt…… Ngọa tào! Ta cư nhiên ăn cá! Lại tanh lại xú cá cư nhiên ở ta trong miệng!” Bạch Dã quái kêu lên, “Thật hương!”</p>
+<p>Nhan Quân Trạch cùng Lam Hiên cũng một người nếm một ngụm, đích xác thực tươi ngon.</p>
+<p>Lam Hiên cười nói “Không nghĩ tới Hàn Khinh như vậy sẽ nấu ăn, tay nghề phi thường hảo.”</p>
+<p>Giang Hàn Khinh mỉm cười nói tạ, thủ hạ không ngừng, lấy tốc độ nhanh nhất ăn luôn chính mình cá cùng cơm, lại chờ đợi, liền này cá cũng muốn giữ không nổi.</p>
+<p>Giang Hàn Thần còn đắm chìm ở tân khẩu vị dinh dưỡng tề trung vô pháp tự kiềm chế, Giang phụ Giang mẫu ngại trên thuyền nhà ăn đồ ăn khó ăn lại quý, tình nguyện trở về ăn dinh dưỡng tề, cho nên, Giang Hàn Khinh chỉ cần chiếu cố hảo chính mình là được.</p>
+<p>Hắn là mộc hệ dị năng giả, liền tính trải qua quá tàn khốc mạt thế, cũng không ai quá đói, trừ bỏ hoàn cảnh chung không tốt, hắn chỉnh thể sinh hoạt điều kiện vẫn là không tồi, đến nơi nào đều thực được hoan nghênh, khi đó, hắn một người cung ứng một cái đại hình căn cứ lương thực cũng không có vấn đề gì.</p>
+<p>Đầu bếp chính tan tầm trở về nghỉ ngơi, nhớ tới hôm nay được đến cái kia lại đại lại hồng quả táo, lấy ra tới rửa rửa, chuẩn bị làm bữa ăn khuya ăn luôn.</p>
+<p>Cùng hắn cùng cái khoang trợ thủ, tới hứng thú, “Hôm nay tiến vào vị nào, nghe nói là cái dẫn đường, nhưng ta trải qua hắn bên người hai lần, cũng chưa nghe thấy một chút tin tức tố hương vị, đầu bếp chính ngươi nghe thấy sao? Cái gì hương vị?”</p>
+<p>Đầu bếp chính “Răng rắc” cắn một ngụm quả táo, miệng đầy thơm ngọt, hắn thoải mái nheo lại đôi mắt.</p>
+<p>“Ta giống như cũng không nghe thấy.”</p>
+<p>Trợ thủ nhìn chằm chằm hắn quả táo, nuốt một ngụm nước miếng, “Ta nghe người ta truyền, hắn kỳ thật căn bản không phải dẫn đường, chính là Tước Vĩ Tinh thượng một người bình thường, trong nhà nhưng nghèo, nương điện hạ quang, tưởng di cư Đế Đô Tinh.”</p>
+<p>Đầu bếp chính lại cắn một ngụm, “Mặc kệ hắn có phải hay không dẫn đường, chẳng sợ hắn là người thường, có thể được điện hạ coi trọng, kia cũng là hắn bản lĩnh……”</p>
+<p>Đầu bếp chính đột nhiên dừng lại, nhìn nhìn quả táo, lại cắn một ngụm, sau đó đột nhiên từ trên giường ngồi dậy.</p>
+<p>Trợ thủ hoảng sợ, “Làm sao vậy?”</p>
+<p>Đầu bếp chính lấy ra dao gọt hoa quả, cắt ra một khối quả táo đưa cho trợ thủ, “Ngươi nếm thử, xem có cái gì cảm giác?”</p>
+<p>Trợ thủ sớm đã mắt thèm cái này quả táo, tiếp nhận tới hai ngụm ăn rớt, “Thực ngọt, thực giòn, hơi nước thực đủ……”</p>
+<p>Trợ thủ cũng dừng lại, khiếp sợ nhìn về phía đầu bếp chính.</p>
+<p>Đầu bếp chính khẩn trương nói “Cái gì cảm giác?”</p>
+<p>Trợ thủ không thể tin được, “Ta tinh thần lực giống như…… Bị vỗ thuận?”</p>
+<p>Đầu bếp chính yết hầu lăn lộn, “Không phải giống như, ta cũng cảm giác được. Hai ngày này ta tới rồi đánh dẫn đường tố thời gian, buổi tối luôn là ngủ không tốt, tinh thần lực phi thường xao động, liền ở vừa mới, ta cảm giác ta tinh thần lực bị trấn an, phi thường nhu thuận, bằng phẳng, không có như vậy bực bội.”</p>
+<p>Hai người đồng thời nhìn chằm chằm trong tay quả táo, sau đó, đầu bếp chính phi thường cẩn thận, đem dư lại quả táo bao vây lại, tính toán lưu trữ lần sau ăn, nhưng nghĩ lại tưởng tượng, đã ăn một nửa quả táo, căn bản phóng không được.</p>
+<p>Cùng với làm nó lạn rớt, không bằng trực tiếp ăn luôn.</p>
+<p>Đầu bếp chính cầm lấy quả táo bắt đầu gặm, thiếu chút nữa đem hột đều cấp ăn, gặm đến đặc biệt sạch sẽ.</p>
+<p>Trợ thủ khẩn trương đại khí không dám suyễn, “Thế, thế nào?”</p>
+<p>Đầu bếp chính thở phào một hơi, “Cảm giác xử lý hai chi dẫn đường tố.”</p>
+<p>Trợ thủ “……”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong11.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong13.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tinh-te-gieo-trong-nha-giau";
+const NOVEL_TITLE = "Tinh tế gieo trồng nhà giàu";
+const CHAPTER_TITLE = "Chương 12";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 19</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Tinh tế gieo trồng nhà giàu
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 19</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong18.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong20.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Nghe Tịch Tử Nhạc nói xong, Chử Dục trực tiếp nhảy dựng lên.</p>
+<p>“Đây là thật vậy chăng? Đây chính là tạo phúc lính gác đại sự, ngươi cũng không thể nói giỡn!”</p>
+<p>Tịch Tử Nhạc “……”</p>
+<p>Không phải, ngươi chú ý điểm có phải hay không có điểm thiên?</p>
+<p>Chử Dục có chút kích động, gấp không chờ nổi nói “Cái kia dẫn đường ở nơi nào? Có thể cho ta giới thiệu một chút sao? Lợi hại như vậy dẫn đường, ta thật muốn nhận thức một chút.”</p>
+<p>Tịch Tử Nhạc “……”</p>
+<p>Tịch Tử Nhạc nhắm mắt, đem sắp bùng nổ lửa giận cưỡng chế đi, “Ngươi nên quan tâm, chẳng lẽ không phải thực tiễn đạt được bị siêu việt sao?”</p>
+<p>Chử Dục bình tĩnh lại, “Ngươi nói rất đúng.”</p>
+<p>Tịch Tử Nhạc nhẹ nhàng thở ra, “Hiện tại quan trọng nhất, chính là mau chóng đem bọn họ làm ra Đế Đô Tinh, chỉ cần không chiếm được chứng thực, Nhan Quân Trạch bên kia liền vô pháp thêm phân.”</p>
+<p>Chử Dục sửng sốt, “Vì cái gì muốn làm ra Đế Đô Tinh?”</p>
+<p>Tịch Tử Nhạc cả giận “Ngươi tưởng bại bởi Nhan Quân Trạch sao?”</p>
+<p>Chử Dục “Không nghĩ.”</p>
+<p>Tịch Tử Nhạc “Vậy ngươi còn……”</p>
+<p>Chử Dục “Ta đem cái kia dẫn đường đoạt lấy tới không phải được rồi?”</p>
+<p>Tịch Tử Nhạc “……”</p>
+<p>Tịch Tử Nhạc “……”</p>
+<p>Tịch Tử Nhạc “……”</p>
+<p>Chử Dục “Nếu cái này dẫn đường thật sự lợi hại như vậy, kia khẳng định không thể làm hắn cùng Nhan Quân Trạch một bên.”</p>
+<p>Chử Dục nghĩ như thế nào như thế nào chính xác, vỗ đùi, “Liền như vậy làm, ta đem người đoạt lấy tới.”</p>
+<p>Tịch Tử Nhạc làm vài lần hít sâu, “Ngươi đem hắn đoạt lấy tới, muốn làm gì?”</p>
+<p>Chử Dục “Vì ta sở dụng.”</p>
+<p>Tịch Tử Nhạc sắp khí khóc, “Hắn khi dễ ta, ngươi còn phải dùng hắn? Không thấy ta nửa đường bị đuổi xuống xe sao?”</p>
+<p>Chử Dục trừng mắt, “Hắn khi dễ ngươi? Là hắn đem ngươi đuổi xuống xe?!”</p>
+<p>Tịch Tử Nhạc gật đầu, tuy rằng không phải Giang Hàn Khinh bản nhân, nhưng Nhan Quân Trạch chính là bởi vì hắn, mới có thể như vậy đối chính mình.</p>
+<p>Chử Dục giận trừng hai mắt, một phách cái bàn đứng lên, “Ngươi yên tâm, chờ ta đem người đoạt lấy tới, khẳng định cho ngươi báo thù, làm hắn hảo hảo cho ngươi xin lỗi, đến ngươi vừa lòng mới thôi.”</p>
+<p>Tịch Tử Nhạc nghĩ lại tưởng tượng, như vậy tựa hồ cũng không tồi, chỉ cần Giang Hàn Khinh không cần xuất hiện ở Nhan Quân Trạch trước mặt, kia cũng ngại không hắn chuyện gì, lấy hắn thủ đoạn, không tin bắt không được Nhan Quân Trạch.</p>
+<p>“Đây chính là ngươi nói, ngươi cũng đừng quên.”</p>
+<p>“Yên tâm, ta khẳng định cho ngươi báo thù.”</p>
+<p>Lợi hại dẫn đường Giang Hàn Khinh, giờ phút này đang bị một đống tư liệu áp không dám ngẩng đầu.</p>
+<p>Nhan Quân Trạch, Bạch Dã cùng Lam Hiên sợ hắn thi không đậu Tinh Lan đại học, tìm nhận thức dẫn đường, mượn một đống tư liệu, toàn bộ đóng gói chia cho Giang Hàn Khinh, làm hắn ở khảo thí phía trước, cần phải xem xong.</p>
+<p>Giang Hàn Khinh “……”</p>
+<p>Ngọa tào?</p>
+<p>Ngọa tào ngọa tào ngọa tào!</p>
+<p>Hắn thấy cái gì?!</p>
+<p>Giang Hàn Khinh trừng lớn đôi mắt, một chữ một chữ qua lại nhìn vài biến.</p>
+<p>Cuối cùng xác nhận, thật là —— nam, hướng, đạo, hoài, dựng!</p>
+<p>Thế giới quan hoàn toàn bị cẩu nhật.</p>
+<p>Giang Hàn Khinh tại chỗ bạo tẩu.</p>
+<p>Thảo nê mã, nam nhân có thể mang thai sao?!</p>
+<p>Ngươi nói cho ta nam nhân như thế nào mang thai?!</p>
+<p>Mạt thế đều có thể tiếp thu cũng không tiếp thu được như vậy quỷ xả thế giới!</p>
+<p>Tay động xóa bỏ, toàn bộ xóa bỏ, này đó phản khoa học phản nhân loại tà giáo phần tử, hết thảy phải bị tiêu diệt!</p>
+<p>Chính là lúc này, Nhan Quân Trạch thông tin tới.</p>
+<p>“Tư liệu xem thế nào?” Nhan Quân Trạch vừa nhấc mắt, nháy mắt bị Giang Hàn Khinh trạng thái dọa tới rồi ——</p>
+<p>Tóc hỗn độn, ánh mắt dại ra, vẻ mặt hoài nghi nhân sinh.</p>
+<p>“Ngươi làm sao vậy?”</p>
+<p>Giang Hàn Khinh hai mắt vô thần “Suy ngẫm nhân sinh.”</p>
+<p>Nhan Quân Trạch nhẫn cười, “Kiểm tra sức khoẻ trung tâm hẹn trước hảo, khi nào có thời gian? Ta đi tiếp ngươi.”</p>
+<p>Giang Hàn Khinh một giật mình, gió bão thức rít gào, “Kiểm tra sức khoẻ cái quỷ, không đi!”</p>
+<p>Thông tin cắt đứt.</p>
+<p>Nhan Quân Trạch “……”</p>
+<p>Lâm vào tự mình tỉnh lại trung.</p>
+<p>Kiểm tra sức khoẻ sự, hắn phía trước cùng Giang Hàn Khinh nói qua, Giang Hàn Khinh không có ý kiến, hôm nay thái độ khác thường…… Không, hôm nay trạng thái phi thường không đúng, hoàn toàn không giống ngày thường Giang Hàn Khinh, tạc mao bộ dáng còn……</p>
+<p>Rất đáng yêu.</p>
+<p>Rõ ràng so với hắn nhỏ hai tuổi, cả ngày trang thâm trầm.</p>
+<p>Nhan Quân Trạch nghĩ hắn phát điên bộ dáng, nhịn không được cười rộ lên.</p>
+<p>Giang Hàn Khinh đầu nhập điên cuồng gieo trồng giữa, áp áp kinh.</p>
+<p>Hắn mua một đống hạt giống trở về, ở Giang ba Giang mẹ kinh ngạc trong ánh mắt, điên cuồng gieo trồng.</p>
+<p>Giang Hàn Thần “Ta ca rốt cuộc quyết chí tự cường.”</p>
+<p>Giang ba cùng Giang mẹ “……”</p>
+<p>Hai vợ chồng già liếc nhau, đều từ đối phương trong mắt thấy ưu sầu.</p>
+<p>Bọn họ sở dĩ đáp ứng theo tới Đế Đô Tinh, nếu không phải có mục đích, bọn họ chết đều sẽ không rời đi Tước Vĩ Tinh.</p>
+<p>Giang ba ba công tác, là cho người dựng nuôi trồng viên, đây là thể lực kỹ thuật song tu việc, đến nơi nào đều có thể tìm được công tác, nếu không phải Giang Hàn Thần mỗi tháng uống thuốc, hắn tiền lương hoàn toàn đủ một nhà chi tiêu.</p>
+<p>Hắn nguyên bản nghĩ, Đế Đô Tinh phú quý nhân gia nhiều, dinh dưỡng tề khẳng định không yêu ăn, kia tất nhiên muốn ăn rau quả, nếu muốn ăn rau quả, khẳng định muốn dựng nuôi trồng viên, hắn theo tới bên này có lẽ tiền lương có thể cao một chút, chỉ là, tới lúc sau mới biết được ý tưởng có bao nhiêu thiên chân.</p>
+<p>Hắn liền đi ra ngoài tìm công tác dũng khí cũng không có, Đế Đô Tinh nuôi trồng viên đều kiến ở trời cao, căn bản không phải mặt đất, cũng không cần nhân công dựng, nhân gia dùng đều là người máy, cao tinh vi, hiệu suất cao, căn bản không cần nhân công, hắn ở tin tức bế tắc, sinh hoạt trình độ lạc hậu Tước Vĩ Tinh, hoàn toàn không hiểu biết này đó.</p>
+<p>Hắn mỗi ngày đãi ở trong nhà, càng ngày càng ưu sầu.</p>
+<p>Giang Hàn Khinh cũng phát hiện điểm này, hắn tưởng mau chóng đem nuôi trồng viên gieo trồng lên, làm cha mẹ quản lý, làm cho bọn họ có việc nhưng làm, không đến mức mỗi ngày nhàn rỗi miên man suy nghĩ.</p>
+<p>Chỉ là, hắn hạt giống mới vừa gieo đi ngày hôm sau, Giang ba Giang mẹ liền cùng hắn ngả bài.</p>
+<p>Bọn họ tưởng hồi Tước Vĩ Tinh.</p>
+<p>Mấy ngày này cha mẹ sầu lo, Giang Hàn Khinh đều xem ở trong mắt, vì tỉnh tiền, bọn họ mỗi ngày ăn dinh dưỡng tề, Đế Đô Tinh dinh dưỡng tề đều so mặt khác tinh cầu quý vài lần.</p>
+<p>Giang Hàn Khinh nói cho bọn họ, tiền không là vấn đề, hắn sẽ kiếm được tiền, nhưng lâu dài dưỡng thành tư tưởng quan niệm, cũng không phải một sớm một chiều có thể thay đổi.</p>
+<p>Giang Hàn Khinh trầm ngâm hồi lâu, mới nói “Có thể chờ một chút sao? Chờ này phê rau quả đưa ra thị trường, chúng ta liền có tiền……”</p>
+<p>“Khinh Khinh a, chúng ta ở bên này, cũng không thể giúp ngươi cái gì, mỗi ngày còn muốn nhiều ra thêm vào tiêu dùng.”</p>
+<p>Giang Hàn Khinh thở dài, “Các ngươi lúc trước đáp ứng lại đây, là vì cái gì?”</p>
+<p>Không có khả năng tới rồi bên này mới biết được giá hàng cao.</p>
+<p>Giang ba ba xoa xoa tay, “Ngươi kia họ nhan bằng hữu nói cho ta, Đế Đô Tinh có thể chữa khỏi Thần Thần bệnh, Đế Đô Tinh hoàn cảnh, cũng càng thích hợp Thần Thần, nếu Thần Thần có thể ở bên này đọc sách, về sau khẳng định càng có tiền đồ.”</p>
+<p>Giang Hàn Khinh “Kia hiện tại vì cái gì phải đi?”</p>
+<p>“Ngươi bằng hữu thay ta cố vấn quá bệnh viện, bên kia nói, giống Thần Thần loại tình huống này, trường kỳ khuyết thiếu thực tốt trị liệu, muốn tiến hành gien chữa trị, khai một lần khoang, yêu cầu 5000 vạn tinh tế tệ……”</p>
+<p>Giang ba ba hốc mắt phiếm hồng, đôi môi run rẩy, “Ta, chúng ta cả đời cũng không có khả năng kiếm được nhiều như vậy tiền, tiếp tục ở bên này đợi cũng là lãng phí thời gian……”</p>
+<p>Giang Hàn Khinh “Ta có thể kiếm được, cho ta điểm thời gian.”</p>
+<p>Này không phải số lượng nhỏ, nhưng Giang Hàn Khinh có tự tin, hắn một thân mộc hệ dị năng, không đạo lý kiếm không đến tiền.</p>
+<p>Giang mụ mụ nức nở nói “Khinh Khinh a, nhiều năm như vậy mẹ không cầu quá ngươi cái gì, mẹ tưởng cầu ngươi mang theo Thần Thần lưu tại Đế Đô Tinh, ta và ngươi ba ba trở về, chúng ta chỉ hy vọng, Thần Thần có thể đã chịu càng tốt giáo dục, có thể có một cái càng tốt tương lai, ngươi hiện tại là quốc gia nhất yêu cầu dẫn đường, chúng ta không lo lắng ngươi, chỉ lo lắng Thần Thần……”</p>
+<p>“Mẹ, đừng nói chuyện như vậy, Thần Thần ta sẽ chiếu cố, các ngươi……”</p>
+<p>“Chúng ta trở về, cái này tinh cầu không thích hợp chúng ta.” Giang mụ mụ bắt đầu gạt lệ.</p>
+<p>Vẫn luôn trầm mặc Giang Hàn Thần, đột nhiên mở miệng nói “Các ngươi kỳ thật căn bản liền không nghĩ tới lưu lại nơi này đi? Đừng lấy chữa bệnh tiền đương lý do, ta không tin các ngươi không biết này sẽ có bao nhiêu quý, hiện tại mới nói ra tới, các ngươi chân chính mục đích, là tưởng đem ta ném cho ta ca đi? Ta ca là dẫn đường, có năng lực, liền tưởng đem ta ném cho hắn, ta ca dựa vào cái gì muốn gánh nặng áp lực như vậy?”</p>
+<p>Giang mụ mụ khóc không thành tiếng, bắt lấy Giang Hàn Khinh quần áo khóc, “Mụ mụ thực xin lỗi ngươi, chúng ta thật sự không đủ sức, ngươi ba năm trước từ nuôi trồng viên thượng ngã xuống, eo vẫn luôn không hảo, làm việc cũng không nhanh nhẹn, thường xuyên bị lão bản chọn tật xấu, trừ tiền lương. Hắn nói điều đi đệ nhất đại khu công tác, đó là lừa của các ngươi, bên kia có cái công tác, rất nguy hiểm, không ai nguyện ý tiếp, ngươi ba tưởng tiếp cái kia việc, ta không đáp ứng……”</p>
+<p>“Thần Thần ta sẽ chiếu cố, ngươi đừng khóc.” Giang Hàn Khinh đáp ứng xuống dưới.</p>
+<p>“Các ngươi hồi Tước Vĩ Tinh lại có thể làm cái gì?”</p>
+<p>“Ta và ngươi ba đều đi công tác, ngươi ba không thể làm việc nặng, chúng ta liền chọn nhẹ nhàng điểm nhi sống làm, tóm lại sẽ không đói chết, chính là muốn vất vả ngươi, Thần Thần……”</p>
+<p>Giang mụ mụ nói lại muốn khóc, Giang Hàn Khinh vội vàng lại khuyên, khuyên can mãi cuối cùng khuyên lại, làm cho bọn họ lại chờ hai ngày, hắn ngẫm lại biện pháp.</p>
+<p>Phòng ngoại cái này nuôi trồng viên, hắn có khác tính toán.</p>
+<p>Thế giới này cây nông nghiệp giá cả như vậy cao, làm cái gì đều không có làm gieo trồng kiếm tiền càng mau.</p>
+<p>Giang Hàn Khinh đột nhiên nghĩ đến, hắn đến thế giới này lâu như vậy, giống như còn không ăn qua mì phở.</p>
+<p>Hắn tra tra về tiểu mạch tin tức, thế mới biết, Viện Gây Giống nghiên cứu ra tới tiểu mạch loại, không biết cái gì nguyên nhân, trồng ra lúc sau, chỉ trường tuệ, không dài viên, thời gian dài, đã không ai lại loại.</p>
+<p>Tinh tế nhân loại món chính là Khoai tây cùng gạo tẻ.</p>
+<p>Cùng gạo tẻ so sánh với, bọn họ càng ái khoai tây, mà Giang Hàn Khinh tắc thiên vị mì phở.</p>
+<p>Có thể là tiểu mạch không dài viên nguyên nhân, cũng có thể là đế quốc muốn cổ vũ loại tiểu mạch, mạch loại giá cả cực kỳ tiện nghi, Giang Hàn Khinh không chút do dự mua hai túi trở về.</p>
+<p>Mua xong mạch loại lúc sau, Giang Hàn Khinh mới bắt đầu tra phụ cận tinh cầu tin tức, cuối cùng lựa chọn Phổ La Tinh.</p>
+<p>Đế Đô Tinh đến Phổ La Tinh, bình thường phi thuyền chỉ cần 7 cái tinh khi.</p>
+<p>Trừ bỏ gần bên ngoài, chính là nó địa chất hoàn cảnh, ác liệt trình độ có thể so với Tước Vĩ Tinh, bất quá, bởi vì tới gần Đế Đô Tinh, dân cư xa cao Tước Vĩ Tinh, trị an cũng so Tước Vĩ Tinh hảo không biết nhiều ít lần.</p>
+<p>Đương nhiên, tiêu phí trình độ khẳng định cũng sẽ cao hơn Tước Vĩ Tinh, nhưng sẽ xa thấp hơn Đế Đô Tinh.</p>
+<p>Viên tinh cầu này phi thường phù hợp Giang Hàn Khinh yêu cầu, bởi vì chỉ có như vậy, mới có thể bắt được đại diện tích thổ địa.</p>
+<p>Bị hắn dùng mộc hệ dị năng ôn dưỡng quá hạt giống, không sợ bất luận cái gì ác liệt hoàn cảnh cùng cằn cỗi thổ địa, cũng không cần nuôi trồng viên như vậy nhà ấm, điểm này hắn ở Tước Vĩ Tinh đã thử qua, đương nhiên cũng được đến giáo huấn, lần này hắn nhất định chuyện xảy ra trước đem các loại giấy chứng nhận làm thỏa đáng, không thể lại để cho người khác hái được quả đào.</p>
+<p>Giang Hàn Khinh đem tính toán của chính mình cùng cha mẹ nói, trải qua một đêm suy xét, bọn họ đáp ứng rồi.</p>
+<p>Bất quá, bọn họ tưởng tự mình đi trước Phổ La Tinh, thuận tiện nhìn xem có hay không thích hợp thổ địa, thuê xuống dưới, như vậy có thể tỉnh đi không ít phiền toái, Tước Vĩ Tinh sự, bọn họ đều không nghĩ lại phát sinh.</p>
+<p>Giang Hàn Khinh đáp ứng rồi, dặn dò bọn họ chú ý an toàn, có cái gì vấn đề cho hắn thông tin.</p>
+<p>Giang Hàn Khinh đánh xe đưa nhị lão đi bỏ neo cảng, vé tàu ở trên Tinh Võng đã mua xong, cấp lớp rất nhiều, tùy mua tùy đi.</p>
+<p>Thẳng đến nhìn bọn họ lên thuyền, hắn mới mang theo Giang Hàn Thần trở về.</p>
+<p>Cha mẹ không đi rồi, không có thật sự từ bỏ hắn, Giang Hàn Thần tâm tình cũng một lần nữa hảo lên.</p>
+<p>Trên đường trở về, vẫn luôn lải nhải, truy vấn Giang Hàn Khinh học tập tình huống, có thể hay không thi đậu vân vân.</p>
+<p>Làm cho Giang Hàn Khinh có điểm hấp tấp, hắn kỳ thật căn bản không nghĩ lấy dẫn đường thân phận thi được kia sở đại học.</p>
+<p>Nếu nói, hắn phía trước đối dẫn đường cái này thân phận vô cảm, hiện tại còn lại là đối cái này thân phận bài xích, nguyên nhân vô hắn, đơn giản là nam dẫn đường cư nhiên có thể sinh hài tử!</p>
+<p>Này mẹ nó còn có thể hay không hảo?</p>
+<p>Hai đời mẫu thai solo, cũng không phải là vì cho ai sinh hài tử!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong18.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong20.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "tinh-te-gieo-trong-nha-giau";
+const NOVEL_TITLE = "Tinh tế gieo trồng nhà giàu";
+const CHAPTER_TITLE = "Chương 19";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

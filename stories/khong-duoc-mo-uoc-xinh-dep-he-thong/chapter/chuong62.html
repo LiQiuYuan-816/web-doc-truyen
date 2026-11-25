@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 62</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Không được mơ ước xinh đẹp hệ thống!!
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 62</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong61.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong63.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Vào đêm sau khu dạy học đèn đuốc sáng trưng, nơi nơi phiêu đãng ầm ĩ thanh âm.</p>
+<p>Cao tam tam ban trong phòng học, lục tục có gia trưởng đi vào, bọn họ căn cứ bất đồng bàn học thượng bày biện quyển sách tên họ, tìm được chính mình hài tử vị trí ngồi xuống.</p>
+<p>Lúc này còn chưa tới chính thức bắt đầu thời gian, chủ nhiệm lớp Chu Phương đang ở trong văn phòng cuối cùng sửa sang lại trong chốc lát phải dùng đến tài liệu, sấn lão sư không có tới, có chút quen biết gia trưởng tùy ý mà liêu nổi lên thiên, cũng có gia trưởng lo chính mình ngồi xem di động.</p>
+<p>“Tiểu Hải lần này ở trong toàn khối xếp hạng lại đi tới vài tên, thật không hổ là học tập ủy viên, nếu là nhà ta hài tử có thể có cái này đầu óc thì tốt rồi.”</p>
+<p>“Hắn gần nhất đặc biệt dụng công, ngay cả di động đều không chơi, nói là có mấy môn khóa phát huy đến giống nhau, hơn nữa lần này trong ban đệ nhất danh rất lợi hại a, mỗi khoa đều tiếp cận mãn phân, Tiểu Hải sùng bái hắn sùng bái vô cùng.”</p>
+<p>“Nga, ta cũng nghe nói, là lớp trưởng, vẫn là niên cấp đệ nhất, hình như là cái học sinh chuyển trường đi? Học kỳ này mới đến. Không biết vị đồng học này gia trưởng có tới không, thật muốn hướng hắn thỉnh giáo một chút kinh nghiệm.”</p>
+<p>“Còn chưa tới đi, ta nghe Tiểu Hải nói hắn ngồi cuối cùng một loạt, nơi đó vị trí còn không. Ngươi đều tưởng tượng không được, hắn mỗi tuần trở về đều cùng ta nhắc mãi, nói nhân gia luôn là giúp hắn giải đáp sai đề, đối hắn đặc biệt chiếu cố, ai da, cái kia hưng phấn kính nha, ta nhớ rõ người khác mới vừa chuyển tới lúc ấy, hắn còn chán ghét nhân gia, oán giận nói không có trước kia lớp trưởng hảo, tiểu hài tử chính là trở nên mau!”</p>
+<p>“Ha ha ha ha, nhà ta cái kia cũng là, trước một trận còn đặc biệt không vui cùng ta đề trong trường học phát sinh sự, vừa hỏi hắn liền bản khuôn mặt, từ trong ban ra niên cấp đệ nhất, hảo, cái này liền nhân gia niên cấp đệ nhị chạy tới lớp bên ngoài lắc lư vài vòng đều phải cùng ta nhất nhất hội báo……”</p>
+<p>Lâm Tử Hải mụ mụ cùng một vị khác đồng học mụ mụ chính vui tươi hớn hở mà trò chuyện thiên, bên cạnh có trung niên nam gia trưởng nghe thấy được các nàng đối thoại, nhịn không được cắm vào tới “Các ngươi đang nói Bùi đồng học đi?”</p>
+<p>“Đúng vậy.”</p>
+<p>“Hắn gia trưởng hôm nay hẳn là sẽ không đến đây đi, các ngươi phỏng chừng là nghe không được kinh nghiệm.”</p>
+<p>“A, vì cái gì?”</p>
+<p>“Các ngươi không nghe nói a, chuyện này không đều truyền khai sao? Hắn cùng tam ban nguyên lai cái kia chuyển đi lớp trưởng, là hai cái cho nhau ôm sai hài tử……”</p>
+<p>Cái này gia trưởng mặt phiếm hồng quang, hưng phấn mà nói về bát quái, nước miếng bay tứ tung.</p>
+<p>Hai cái mụ mụ nghe được sửng sốt sửng sốt, hai mặt nhìn nhau, nhịn không được nói “Này hai hài tử đều đủ đáng thương.”</p>
+<p>“Từ nhà có tiền trở lại nơi này, là rất xui xẻo, ai kêu hắn quán thượng đâu? Hắn dưỡng mẫu khẳng định sẽ không tới, ta đoán thân mụ cũng sẽ không, nhiều xấu hổ nha, lần trước vẫn là thế một cái khác nhi tử tới mở họp phụ huynh đâu, ta xem này chỗ ngồi phỏng chừng rảnh rỗi cả đêm ——”</p>
+<p>Hắn ngoài miệng nói xui xẻo, ngữ khí nhưng thật ra hứng thú bừng bừng, nhìn không ra nửa phần tiếc hận.</p>
+<p>Chỉ là hắn nói nói, bỗng nhiên phát hiện trước mắt hai vị mụ mụ biểu tình thay đổi, ánh mắt lướt qua hắn thưa thớt đỉnh đầu, thẳng tắp mà nhìn về phía ngoài cửa sổ.</p>
+<p>Không chỉ là các nàng, toàn bộ trong phòng học cũng đột nhiên an tĩnh lại, giống như bị vô hình tay ấn xuống nút tạm dừng.</p>
+<p>Một cổ không thể hiểu được hàn ý từ giữa năm nam nhân sau lưng thoán khởi, hắn cứng đờ, không tự chủ được mà đi theo quay đầu lại nhìn lại.</p>
+<p>Bị bóng đêm tẩm không hành lang, nam nhân anh đĩnh sườn mặt bị ánh đèn phác hoạ đến tiên minh lập thể, hắn đạm mạc mà triều trong phòng học nhìn liếc mắt một cái, vừa lúc đối thượng hắn ánh mắt nam gia trưởng như là bị đâm đến, khiếp sợ, cuống quít dời đi tầm mắt.</p>
+<p>Ở đột nhiên đến yên tĩnh, hắn ở tam ban cửa dừng lại, đi vào phòng học, ở đây sở hữu gia trưởng đều sắc mặt ngơ ngẩn, ai cũng không dám nói lời nói, tiếng hít thở đều theo bản năng phóng nhẹ.</p>
+<p>Cái này ngoại hình cùng khí tràng thật sự là làm người vô pháp bỏ qua, căn bản không giống như là tới mở họp phụ huynh, ngược lại bọn họ đến như là không cẩn thận vào nhầm mỗ gia công ty lớn triệu khai hội đồng quản trị.</p>
+<p>Nam nhân đi vào phòng học sau, ánh mắt đầu tiên là dừng ở cuối cùng một loạt không vị thượng, ở cất bước hướng Bùi Thanh Nguyên chỗ ngồi đi đến khi, hắn vừa lúc trải qua Lâm Tử Hải bàn học bên.</p>
+<p>Vì thế hắn dừng lại bước chân, nhìn về phía hiển nhiên rất là khẩn trương trung niên nữ nhân, dùng một loại thượng tính ấm áp ngữ khí hỏi “Là Lâm Tử Hải mụ mụ sao?”</p>
+<p>“A! Ta là ta là.” Ở cái này tương đương ưu nhã từ tính trong thanh âm, Lâm Tử Hải mụ mụ không biết làm sao mà đứng lên, còn phản xạ tính mà dùng tới kính ngữ, “Ngài là?”</p>
+<p>“Ta là Thanh Nguyên thúc thúc.” Nam nhân ngữ mang ý cười, “Ta nghe hắn nhắc tới quá con của ngươi, cảm ơn Tiểu Hải đối hắn chiếu cố.”</p>
+<p>Ở so TV thượng thần tượng minh tinh còn muốn anh tuấn rất nhiều lần gần gũi mỹ nhan đánh sâu vào hạ, Lâm Tử Hải mụ mụ hoãn nửa ngày, nói năng lộn xộn nói “Nguyên lai là Bùi đồng học gia trưởng! Đừng khách khí đừng khách khí, rõ ràng là Tiểu Hải ở Bùi đồng học dưới sự trợ giúp tiến bộ rất nhiều……”</p>
+<p>Nói, nàng theo bản năng mà nhìn bên cạnh nam gia trưởng liếc mắt một cái.</p>
+<p>Vừa rồi còn ở nói ẩu nói tả trung niên nam nhân, lúc này súc bả vai rũ đầu, một câu cũng không dám nói.</p>
+<p>Cùng Lâm Tử Hải mụ mụ đơn giản hàn huyên hai câu, nam nhân liền lập tức đi tới Bùi Thanh Nguyên chỗ ngồi trước ngồi xuống.</p>
+<p>Ở hắn mở miệng sau, trong phòng học kỳ dị yên tĩnh bị đánh vỡ, các gia trưởng một lần nữa bắt đầu nói chuyện phiếm, thanh âm lại phóng thấp rất nhiều, vốn dĩ lười nhác tư thái phần lớn bị thu hồi, rất nhiều gia trưởng đều không thể hiểu được mà thẳng thắn bối ngồi.</p>
+<p>Bọn họ cũng không biết vì cái gì, nhưng là ở cái loại này khó có thể hình dung khí tràng bao phủ trung, cảm giác còng lưng đều mất mặt.</p>
+<p>Mà cùng Bùi Thanh Nguyên thúc thúc từng có tiếp xúc gần gũi Lâm Tử Hải mụ mụ cùng một cái khác mụ mụ, thập phần hoảng hốt mà nhìn đối phương nửa ngày, mới lục tục hoàn hồn.</p>
+<p>“Nguyên lai đây là Bùi đồng học thúc thúc……” Bên cạnh mụ mụ thật ngượng ngùng mà nhỏ giọng nói, “Thật soái a, so minh tinh còn soái.”</p>
+<p>“Ta hiện tại có thể lý giải Tiểu Hải vì cái gì trở nên như vậy cuồng nhiệt.” Lâm Tử Hải mụ mụ liên tục cảm khái nói, “Thúc thúc khí chất xuất chúng tu dưỡng lại hảo, Bùi đồng học khẳng định cũng là một cái thực xuất sắc người.”</p>
+<p>Bên cạnh trung niên nam nhân nghe được nàng cố tình tăng thêm tu dưỡng lại hảo mấy chữ này, không rên một tiếng.</p>
+<p>Chờ đến gia trưởng sẽ sắp chính thức bắt đầu, Chu Phương ôm một chồng tư liệu đi vào tam ban cửa thời điểm, thiếu chút nữa không dám vào tới, cố ý ngẩng đầu nhìn thoáng qua trên tường thẻ bài xác định chính mình không có đi sai.</p>
+<p>…… Vì cái gì không khí như vậy túc mục?</p>
+<p>Đương nàng nhìn đến ngồi ở Bùi Thanh Nguyên trên chỗ ngồi Quý Yến Hành, càng là mở to hai mắt.</p>
+<p>Nàng đều chuẩn bị dùng tốt công tác vội lấy cớ tới giải thích cá biệt gia trưởng vắng họp.</p>
+<p>Thừa dịp cấp gia trưởng phát tư liệu cơ hội, Chu Phương đi đến Quý Yến Hành bên người khi nhỏ giọng dò hỏi, biết được hắn là Bùi Thanh Nguyên thúc thúc, họ Quý.</p>
+<p>Chu Phương lập tức liền nghĩ tới mấy ngày hôm trước mới ở đại hội thể thao thượng gặp qua Quý Đồng.</p>
+<p>Cẩn thận tưởng tượng, hai người mặt mày xác thật có chút tương tự.</p>
+<p>Nàng nhớ rõ Quý Đồng gia đình điều kiện thực hảo, nhưng phụ thân rất bận, thường thường không thấy người, cho nên hắn mới có thể thường xuyên cùng gia giáo lão sư Bùi Thanh Nguyên đãi ở bên nhau, không nghĩ tới hôm nay Quý Đồng ba ba sẽ giúp Bùi Thanh Nguyên tới mở họp phụ huynh.</p>
+<p>Liền một cái không có huyết thống quan hệ cố chủ thúc thúc, đều có này phân tâm.</p>
+<p>Chu Phương trong lòng trăm vị trần tạp, ngay sau đó thu liễm tâm thần, chuẩn bị ở trong chốc lát nói chuyện trung muốn cường điệu cường điệu Bùi Thanh Nguyên đối tam ban đồng học kéo cùng trợ giúp.</p>
+<p>“Các vị gia trưởng buổi tối hảo, ta là cao tam tam ban chủ nhiệm lớp Chu Phương……”</p>
+<p>Chờ nàng thật sự bắt đầu cấp các gia trưởng giới thiệu lớp chỉnh thể tình huống khi, lại cảm thấy một tia không giống bình thường thấp thỏm.</p>
+<p>…… Nàng dư quang mỗi lần quét đến cứ việc không nói một lời nhưng tồn tại cảm cực cường Quý Yến Hành, đều sẽ sinh ra một loại ảo giác, giống như nàng không phải tại cấp các gia trưởng phân tích hài tử thành tích, mà là tại cấp lão tổng hội báo cái gì một giây mấy ngàn vạn trên dưới đại sinh ý.</p>
+<p>Chu Phương mê chi khẩn trương, nhưng nàng cảm thấy, khẩn trương người khẳng định không ngừng nàng một cái.</p>
+<p>Ở nào đó kỳ diệu từ trường nhuộm đẫm hạ, toàn bộ tam ban thoạt nhìn cùng mặt khác lớp không khí không hợp nhau, cơ hồ sở hữu gia trưởng đều ngồi nghiêm chỉnh, phá lệ nghiêm túc mà nhìn về phía chính phía trước chủ nhiệm lớp cùng bảng đen, không có người dám thất thần.</p>
+<p>Ngoài cửa sổ ngẫu nhiên có nhàn rỗi tới xem náo nhiệt học sinh đi ngang qua, ở trải qua tam ban khi, đều sẽ lặng lẽ thả chậm bước chân, ngừng thở.</p>
+<p>Tới thị sát gia trưởng sẽ tình huống giáo lãnh đạo sững sờ ở trên hành lang nhìn nửa ngày, càng là rất là tán thưởng.</p>
+<p>“Cao tam tam ban tiến bộ phi thường rõ ràng, không riêng gì các bạn học ở nỗ lực, các gia trưởng cũng thực dụng tâm a. Toàn bộ năm đoạn, tam ban trận này gia trưởng sẽ không khí là tốt nhất, ta chưa từng gặp qua như thế chuyên chú, túc mục, hơn nữa giàu có lực ngưng tụ gia trưởng sẽ bầu không khí……”</p>
+<p>Ở mọi người hoặc cố ý hoặc vô tình nhìn chăm chú, ngồi ở phòng học cuối cùng Quý Yến Hành trước sau biểu tình đạm mạc mà nhìn chăm chú vào phía trước, ngẫu nhiên đề bút ở notebook thượng ký lục chút cái gì.</p>
+<p>Bất quá, ở những người khác nhìn không thấy địa phương, lại là một khác phiên phong cảnh.</p>
+<p>Gundam Phương Hạo ngữ khí hưng phấn “Ta lần đầu tiên cảm thấy gia trưởng sẽ như vậy có ý tứ!”</p>
+<p>Phi công Quý Đồng ở hồi phóng ghi hình “Xem ta vừa rồi mỉm cười độ cung, có phải hay không vừa vặn tốt! Ba phần ưu nhã ba phần ấm áp ba phần khoảng cách!”</p>
+<p>“Là là là, soái!” Phương Hạo chính phối hợp mà phủng tràng, đột nhiên một đốn, cảnh giác nói, “Ngươi phát hiện sao?”</p>
+<p>“Ta phát hiện, đã truy tung số liệu phân tích qua, sẽ không cấu thành uy hiếp.” Quý Đồng trong thanh âm mang lên Quý tổng thức ưu nhã trào phúng, “Chỉ biết dẫn tới thông minh phản bị thông minh lầm.”</p>
+<p>Ở phòng học các gia trưởng vốn không nên lưu ý đến cửa sau ngoại, một cái tướng mạo bình phàm nam nhân cúi đầu nhanh chóng mà phát ra tin tức.</p>
+<p>[ đã ở họp phụ huynh thượng phát hiện mục tiêu, ảnh chụp như sau, tạm thời không thể tra tìm đến bất cứ thân phận tin tức. ]</p>
+<p>Cùng thời gian, thành thị bên kia.</p>
+<p>Ánh đèn hoa lệ ăn uống linh đình yến hội đại sảnh, một đám tiếng cười vui vẻ quần áo tinh xảo các nữ nhân chính trò chuyện thiên, bên cạnh đi theo mấy cái tiểu đồng lứa người trẻ tuổi.</p>
+<p>“Elert mới nhất bị tìm về kia bức họa, có phải hay không vào tháng sau bắt đầu bán đấu giá?”</p>
+<p>“Ta nhớ rõ đúng vậy, Mạn Ninh chính là đối nó chí tại tất đắc nga.”</p>
+<p>“Nào có, là ta lão công phi nói muốn chụp tặng cho ta, dù sao ta là nhìn không ra tới nơi nào sấn ta……”</p>
+<p>Ở tinh tế đàm tiếu thanh, Diệp Lam Đình tay trong bao truyền đến cực rất nhỏ chấn động cảm, nàng lập tức nghiêng đi thân đi, mượn từ bên người nhi tử che đậy, tránh đi đang ở nói chuyện các nữ nhân, mở ra tay bao lấy ra di động.</p>
+<p>Bùi Ngôn chú ý tới mẫu thân động tác, nghe này đàn quý phụ cao đàm khoát luận tranh sơn dầu nghe được chán đến chết hắn, tò mò mà liếc đi liếc mắt một cái, thế nhưng nhìn thấy Diệp Lam Đình trên mặt đột nhiên hiện lên kinh hoàng.</p>
+<p>Loại này kịch liệt cảm xúc chợt lóe mà qua, thực mau khôi phục thành không hề dị dạng doanh doanh ý cười, không có người thứ hai chú ý tới một màn này.</p>
+<p>Bùi Ngôn suýt nữa cho rằng chính mình xuất hiện ảo giác.</p>
+<p>Diệp Lam Đình quay lại tầm mắt, đối các bằng hữu ôn nhu mà mỉm cười lên, xin lỗi nói “Ta rời đi một chút, đi tiếp cái điện thoại.”</p>
+<p>Không ai cảm thấy dị thường, chỉ có Bùi Ngôn từ mẫu thân rời đi bóng dáng nhìn ra một tia hiếm thấy hoảng loạn.</p>
+<p>Hắn không biết đã xảy ra cái gì, cũng không xác định chính mình có phải hay không xuất hiện ảo giác.</p>
+<p>Mẫu thân bóng dáng biến mất ở tầm nhìn, Bùi Ngôn lược hiện mờ mịt mà thu hồi tầm mắt, vẫn duy trì thói quen tính im miệng không nói không nói, hấp tấp mà đón nhận các nữ nhân mỉm cười ánh mắt.</p>
+<p>“Tiểu Ngôn luôn là như vậy an tĩnh, có phải hay không mụ mụ ngươi ở, không quá dám nói lời nói nha?”</p>
+<p>Đồ đỏ tươi móng tay xinh đẹp nữ nhân, phảng phất bắt được lạc đơn thú vị con mồi, dụ hống tựa mà mở miệng “Người trẻ tuổi vẫn là muốn rộng rãi chút mới hảo đâu.”</p>
+<p>“Tiểu Ngôn, ngươi có thích hay không Elert kia bức họa? Gọi là 《 nông thôn thiếu nữ 》, nghe nói rất có thể là hắn họa giá trị tối cao một bức, qua đời sau mới thành danh họa gia, tác phẩm lại thiếu, thật là làm nhà sưu tập nhóm hỉ ưu nửa nọ nửa kia……”</p>
+<p>Đột nhiên trở thành mọi người tầm mắt tiêu điểm cùng đề tài trung tâm, Bùi Ngôn trở tay không kịp.</p>
+<p>Hắn đối tranh sơn dầu không có hứng thú, không quan tâm mỗ vị đã từng lặng lẽ vô danh họa gia là như thế nào bị một lần nữa phát hiện cũng đại chịu truy phủng, càng không biết nông thôn thiếu nữ trông như thế nào.</p>
+<p>Nhưng hắn cưỡng bách chính mình bảo trì trấn định, kiệt lực lộ ra tán đồng mỉm cười, chọn lựa một cái sẽ không làm lỗi đáp án “…… Ta cảm thấy nàng thực mỹ.”</p>
+<p>“Phải không?” Các nữ nhân nhìn nhìn lẫn nhau, không cấm cười rộ lên, “Phong cảnh là man mỹ, cũng không biết thiếu nữ giấu ở nơi nào, Elert cũng thật là kỳ quái, một bức tranh phong cảnh, như thế nào sẽ đặt tên gọi là nông thôn thiếu nữ đâu?”</p>
+<p>Nhẹ nhàng lời nói rơi xuống đất, Bùi Ngôn ngực thoáng chốc bị một loại gần như không chỗ dung thân cảm xúc tràn ngập, chúng nó phồng lên, ở sau lưng kích ra hoang đường mồ hôi lạnh, lại dưới đáy lòng tạp ra một cái hận không thể làm quanh mình thanh âm toàn bộ biến mất hố sâu.</p>
+<p>Hắn hơi hơi hé miệng, muốn lại bổ sung chút cái gì, cực lực vãn hồi chính mình nhỏ bé thật đáng buồn tự tôn, hốt hoảng trung, có một đạo ôn nhuận thanh âm gãi đúng chỗ ngứa mà vang lên.</p>
+<p>“Đó là cách mạng công nghiệp thời kỳ, một ít người đối ngày cũ điền viên sinh hoạt lưu luyến.” Khí chất ôn tồn lễ độ người trẻ tuổi lấy một loại chút nào không lệnh người phản cảm miệng lưỡi chậm rãi nói, “Nông thôn còn còn sót lại nhưng cung tưởng tượng phế tích, mà ở nông thôn thiếu nữ ảo ảnh lại chỉ có thể hiện ra ở xem giả trong lòng.”</p>
+<p>“Yên lặng sinh hoạt không ngừng trôi đi, vô ưu vô lự thiếu nữ không thấy bóng dáng, chỉ còn lại có không biết mệt mỏi vĩnh không ngừng nghỉ máy móc.” Hắn nhìn thoáng qua Bùi Ngôn, trong lời nói ẩn ẩn mang theo khẳng định, “Khi đó họa gia trong mắt thế giới, cùng chúng ta giờ phút này chứng kiến thế giới cứ như vậy trùng điệp, đích xác thực mỹ.”</p>
+<p>Hắn sau khi nói xong, lập tức có người lộ ra kinh hỉ tươi cười “Ta nghe xong cái thứ nhất tự liền biết là Văn Bạch, nói được thật tốt, ai nha, vừa rồi mãn tràng tìm ngươi……”</p>
+<p>Trang Văn Bạch mãn hàm xin lỗi nói “Nghe được các ngươi đang nói Elert, ta cũng thực thích hắn, cho nên không lễ phép mà chen vào nói, thực xin lỗi.”</p>
+<p>“Từ đâu ra lời nói, ta nhưng thật ra không biết này bức họa sau lưng còn có cái này bối cảnh, ít nhiều ngươi giải thích, xem ra ta lão công còn có điểm ánh mắt đâu.”</p>
+<p>Trang Văn Bạch liền cười rộ lên “Dương thúc thúc ánh mắt thực hảo, nơi này thiếu nữ là một loại siêu thoát thế tục tốt đẹp ý tưởng, đương nhiên thực sấn hắn trong mắt ngài.”</p>
+<p>“Tấm tắc, không thể tưởng được lão Dương còn có chiêu thức ấy, Mạn Ninh thật là hảo phúc khí……”</p>
+<p>“Thôi đi, ngươi nhưng đừng giáp mặt nói như vậy hắn, hắn cái đuôi lại muốn kiều đến bầu trời đi.”</p>
+<p>Trang Văn Bạch đã đến sau, một vòng người nói chuyện phiếm không khí so với phía trước muốn thân mật rất nhiều.</p>
+<p>Cái loại này vi diệu trêu đùa cùng quẫn bách bất tri bất giác mà biến mất.</p>
+<p>Thừa dịp những người khác ở đối thoại khoảng cách, Bùi Ngôn nhỏ giọng đối bên người nhân đạo “Cảm ơn hội trưởng.”</p>
+<p>Hắn ở trong trường học thường xuyên có thể nhìn thấy hội trưởng Hội Học Sinh Trang Văn Bạch, cũng biết đối phương rất là hiển hách gia thế, nhưng cơ bản không có cái gì lén lui tới, căn bản không nghĩ tới hôm nay hắn sẽ giúp chính mình giải vây.</p>
+<p>Trang Văn Bạch nhìn hắn một cái, nhàn nhạt nói “Ngươi không biết kia bức họa, đúng không?”</p>
+<p>Bùi Ngôn ngẩn người, ngón tay nắm chặt, chần chờ một lát sau hổ thẹn gật gật đầu.</p>
+<p>“Vậy ngươi hẳn là đi gặp.”</p>
+<p>Ra ngoài hắn dự kiến chính là, Trang Văn Bạch tiếp theo câu nói phá lệ ôn hòa, như là nhớ lại vải vẽ tranh thượng ngưng kết mỹ lệ nháy mắt, tuấn lãng gương mặt thượng hiện lên tươi cười có vẻ thân thiết lại chân thành tha thiết.</p>
+<p>“Ngươi sẽ thích.”</p>
+<p>Ngoài cửa sổ mê mang ánh trăng tượng sương mù giống nhau ở trong bóng đêm tản ra.</p>
+<p>Sơ lãng sao trời hạ, Bùi Thanh Nguyên cùng Phó Thành Trạch đám người một đạo đi hướng cổng trường.</p>
+<p>Đêm nay đội bóng rổ cao tam sinh nhóm đều đánh đến thất thần, Từ huấn luyện viên đối này thập phần lý giải, thả lỏng yêu cầu, tùy ý bọn họ một bên chơi bóng một bên não bổ cách đó không xa khu dạy học tình hình.</p>
+<p>Vốn dĩ Phó Thành Trạch là muốn lôi Bùi Thanh Nguyên đi phòng học bên ngoài lắc lư một vòng, thăm thăm tình huống, kết quả bị Bùi Thanh Nguyên cự tuyệt, hắn mất mát mà thở ngắn than dài nửa ngày.</p>
+<p>Bóng rổ huấn luyện cùng gia trưởng sẽ không sai biệt lắm cùng thời gian kết thúc, hiện tại hướng cổng trường đi, phỏng chừng vừa vặn có thể gặp được từng người cha mẹ.</p>
+<p>“Ta lần này từ toàn ban đếm ngược đệ nhất tiến bộ đến đếm ngược đệ tam.” Phó Thành Trạch biểu tình thấp thỏm, “Bùi ca, ngươi nói ta ba hắn có thể hay không khen ngợi ta? Ta từ tiểu học tốt nghiệp lúc sau liền không có bởi vì thành tích bị khen ngợi qua.”</p>
+<p>Bùi Thanh Nguyên trầm mặc một cái chớp mắt, tận lực cổ vũ nói “Sẽ đi.”</p>
+<p>Đi ngang qua cao tam niên cấp khu dạy học thời điểm, rất nhiều gia trưởng đi ra, làm đến Phó Thành Trạch lại chờ mong lại không dám nhìn, ở hắn bên cạnh vòng tới vòng lui.</p>
+<p>“Bùi ca ngươi hôm nay lời nói rất ít nga, ngươi cũng đang khẩn trương sao?” Hắn toái toái niệm lên, “Không đến mức đi, ngươi thành tích tốt như vậy, đúng rồi, hôm nay ai tới cho ngươi mở họp phụ huynh a?”</p>
+<p>Bùi Thanh Nguyên đang muốn trả lời, bỗng dưng nghe thấy hắn tràn ngập chấn động kinh hô “Ngọa tào, là Đồng Đồng ba ba!!”</p>
+<p>Cách đó không xa kia đạo ăn mặc màu đen tây trang thân ảnh tương đương bắt mắt, từ hắn bên người trải qua người phần lớn vẫn duy trì không dám hết giận lặng im, nhưng lại nhịn không được trộm đánh giá ánh mắt.</p>
+<p>Nghe được Phó Thành Trạch nhanh chóng nhận ra đối phương, Bùi Thanh Nguyên khẽ nhíu mày “Ngươi nhận thức hắn?”</p>
+<p>“Đồng Đồng cho ta xem qua ảnh chụp nha, ta lúc ấy còn nói khẳng định là p, không nghĩ tới chân nhân càng khoa trương.” Phó Thành Trạch thuận miệng nói, “Về sau ta cũng muốn như vậy xuyên tây trang, quá con mẹ nó soái!”</p>
+<p>Ngữ bãi, hắn nhiệt tình mà hướng tới Quý Yến Hành bôn qua đi, hoàn toàn không nhìn thấy bên kia ở cùng hắn vẫy tay thân ba.</p>
+<p>“Quý thúc thúc! Ta là Đồng Đồng hảo bằng hữu!”</p>
+<p>Bùi Thanh Nguyên ……</p>
+<p>Cứ việc hắn trong lòng từng có mong muốn, giờ khắc này vẫn là lắp bắp kinh hãi.</p>
+<p>Hắn vẫn luôn cho rằng Quý Đồng sẽ chỉ là gọi điện thoại cấp lão sư, rốt cuộc hắn hiện tại không có biện pháp trực tiếp biến thành một cái người trưởng thành, không nghĩ tới thế nhưng gặp được sống sờ sờ “Quý Yến Hành”.</p>
+<p>Cho nên cái này thoạt nhìn cùng nhân loại bình thường giống nhau như đúc “Quý Yến Hành”, là ai?</p>
+<p>Quý Đồng chính vui sướng mà nghe Phó Thành Trạch cung cung kính kính mà quản chính mình kêu Quý thúc thúc, thuận tiện ghi lại xuống dưới làm trân quý lưu niệm.</p>
+<p>Chú ý tới xa cách một ngày ký chủ xuất hiện, hắn sắc mặt bình tĩnh mà ngoái đầu nhìn lại, đối chính hướng nơi này đi tới cao trung sinh nhẹ nhàng gật đầu, cực có đại lão phong phạm.</p>
+<p>Thật ngầu.</p>
+<p>Hắn còn không có ở ký chủ trước mặt như vậy khốc quá đâu.</p>
+<p>Vẫn như cũ ở thành thật đương gundam Phương Hạo cũng thực hưng phấn “Đây là ngươi ký chủ sao? Cũng không tệ lắm sao, chính là thoạt nhìn tâm tình giống nhau bộ dáng.”</p>
+<p>“Khả năng chơi bóng rổ đánh mệt mỏi đi.” Quý Đồng giải thích nói, “Ký chủ hằng ngày hình thái chính là mặt vô biểu tình.”</p>
+<p>“Ta cảm thấy hắn ở cẩn thận quan sát ta.” Gundam đối phóng ra ở chính mình soái khí xác ngoài thượng ánh mắt thập phần mẫn cảm, “Như thế nào cảm giác có điểm lạnh lùng.”</p>
+<p>“Không nên đi, ngươi như vậy sợ lạnh không? Đều có tây trang thêm áo sơmi……”</p>
+<p>“Không phải cái này lãnh, ai, cùng ngươi nói không rõ.” Phương Hạo hình dung không ra, đơn giản mặc kệ, đột phát kỳ tưởng nói, “Ngươi ký chủ có thể hay không đem ta nhận thành ngươi a? Ta dám đánh với ngươi đánh cuộc, hắn khẳng định phát hiện không được ngươi bản thể biến thành ta……”</p>
+<p>Bùi Thanh Nguyên đi đến Quý Yến Hành trước mặt dừng lại, ngắn ngủi vài giây yên tĩnh sau, hắn ánh mắt từ kia trương đã từng ở trên ảnh chụp gặp qua hoàn mỹ gương mặt thượng dời đi, ngừng ở Quý Yến Hành trên cổ tay.</p>
+<p>Hắn nhìn kia viên khảm ở thuần hắc áo sơ mi cổ tay áo thiển kim nút tay áo, nhẹ giọng nói “Quý Đồng.”</p>
+<p>Phương Hạo !!!</p>
+<p>“Ngươi ký chủ sẽ thuật đọc tâm sao?!” Tiểu học sinh đồng tử động đất, cảm thấy khiếp sợ, “Này không khoa học a, ngươi này không phải cái bình thường đô thị thế giới sao?”</p>
+<p>Quý Đồng cũng thực kinh ngạc, sấn người khác tầm mắt bị Bùi Thanh Nguyên ngăn trở, màu sắc lộng lẫy nút tay áo lóe lóe quang, phảng phất ở cùng trước mắt cao trung sinh chào hỏi.</p>
+<p>“Ký chủ buổi tối hảo!” Kinh ngạc rất nhiều, hắn còn có một chút mạc danh cảm động, liền ở trong lòng tò mò hỏi ký chủ, “Ngươi là như thế nào phát hiện ta?”</p>
+<p>“Ngươi ở kia bức ảnh duỗi tay trảo quá nút tay áo.” Bùi Thanh Nguyên nhẹ giọng trả lời, “Ta đoán ngươi thực thích nó.”</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong61.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong63.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "khong-duoc-mo-uoc-xinh-dep-he-thong";
+const NOVEL_TITLE = "Không được mơ ước xinh đẹp hệ thống!!";
+const CHAPTER_TITLE = "Chương 62";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 107</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Không được mơ ước xinh đẹp hệ thống!!
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 107</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong106.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong108.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>[ ngày 1 tháng 10, thời tiết tình, tâm tình…… Là bí mật. ]</p>
+<p>[ hôm nay là kỳ nghỉ ngày đầu tiên. Đi nhìn điện ảnh, đè ép đường cái, ngồi bánh xe quay. ]</p>
+<p>[ lần đầu tiên cùng người đi xem tình yêu điện ảnh, lần đầu tiên cùng người áp đường cái, lần đầu tiên cùng người cùng nhau ngồi bánh xe quay, nguyên lai làm những việc này là cái dạng này cảm giác, tim đập đến giống muốn bay ra tới. ]</p>
+<p>[ kỳ thật ký chủ cũng rất biết an ủi người. ]</p>
+<p>[ có thể là được đến một chút ta chân truyền. ]</p>
+<p>[ ngày 3 tháng 10, mưa nhỏ, ăn tôm hùm đất. ]</p>
+<p>[ ký chủ trù nghệ càng thêm tinh tiến, may mắn ta sẽ không mập lên, nhưng là vì phối hợp mỗi ngày ăn đồ ăn vặt khách quan sự thật, có phải hay không hẳn là làm ngoại hình trở nên mượt mà một chút? ]</p>
+<p>[ có điểm ngượng ngùng tiếp tục cùng ký chủ ở cùng một chỗ, tuy rằng ở chung phương thức cơ bản cùng quá khứ giống nhau, nhưng cảm giác không khí luôn là thực ái muội, ta nhiệt độ cơ thể khống chế mô khối đã thăng cấp thật nhiều lần, vẫn là sẽ hư. ]</p>
+<p>[ mỗi ngày đều giống ở trộm yêu sớm, có lẽ chính thức thông báo sau liền sẽ không như vậy? ]</p>
+<p>[…… Nhưng là ta không dám thí, vạn nhất nhiệm vụ giao diện xác chết vùng dậy đâu? ]</p>
+<p>[ còn hảo có Hoa Hoa ở, bốn bỏ năm lên, trong nhà xem như có ba người trụ đi? ]</p>
+<p>[ trong nhà có ba người!! Ngươi thấy sao nhiệm vụ giao diện!! Không được xác chết vùng dậy!! ]</p>
+<p>[ ngày 6 tháng 10, nhiều mây, kỳ nghỉ đếm ngược ngày hôm sau. ]</p>
+<p>[ kỳ nghỉ quá đến thật mau, ngày mai liền phải cấp ký chủ chúc mừng sinh nhật. Suy nghĩ một tháng muốn đưa cái gì, cuối cùng quyết định xuống dưới. ]</p>
+<p>[ năm nay lễ vật cũng là một trương hơi mỏng giấy, không thể quá khoa trương, hy vọng sẽ không kinh động ngủ say lăng mộ. ]</p>
+<p>[ ta cũng nghĩ tới sinh nhật. ]</p>
+<p>[ còn chưa kịp quá 18 tuổi sinh nhật. ]</p>
+<p>7 hào sáng sớm, thói quen tính dậy sớm Bùi Thanh Nguyên đang ở hồi phục di động tin tức khi, nghe thấy một trận lễ phép tiếng đập cửa.</p>
+<p>Bởi vì phía trước Quý Đồng ở trong ký túc xá trưng cầu đại gia đối với quà sinh nhật kiến nghị, cho nên hai cái bạn cùng phòng cùng Âu Dương Vũ đã biết hắn sinh nhật, lại bởi vì Âu Dương Vũ là cái phi thường nhiệt tâm thân thiện lớp trưởng, kế tiếp toàn ban đều đã biết.</p>
+<p>Này dẫn tới Bùi Thanh Nguyên rời giường rửa mặt đánh răng xong sau, cầm lấy di động liền thấy được một đống lớn tin tức, có quá khứ cao trung khi đồng học cùng đội bóng rổ bằng hữu phát tới, cũng có tân nhận thức đại học đồng học cùng bằng hữu, cùng với lão sư từ từ.</p>
+<p>Mãn màn hình đều là chưa đọc tin tức điểm đỏ, hắn thu được đủ loại kiểu dáng chúc phúc, đang ở từng cái nói lời cảm tạ.</p>
+<p>Trong đó lấy Tạ học trưởng chúc phúc nhất cụ đặc sắc.</p>
+<p>[ Tạ Dữ Trì Sinh nhật vui sướng, không quên sơ tâm, rèn luyện đi trước, lâu lâu dài dài. ]</p>
+<p>Suy xét đến Tạ Dữ Trì ở hằng ngày nói chuyện phiếm trung đối tiền nhiệm khắc sâu oán niệm, những lời này phiên dịch lại đây hẳn là Liền tính trưởng thành một tuổi cũng không cần biến hư trở thành tra nam.</p>
+<p>…… Rất có cảnh kỳ ý nghĩa chúc phúc.</p>
+<p>Bùi Thanh Nguyên buông xuống di động đứng dậy, suy đoán là Quý Đồng rời giường, bất quá cái này tiếng đập cửa không rất giống Quý Đồng phong cách.</p>
+<p>Hắn mở cửa, chuẩn bị đi phòng bếp làm bữa sáng, kết quả thấy trên cổ đánh màu đỏ lụa mang nơ con bướm phấn mao miêu mễ Hoa Hoa, chính nâng lên một con chân trước thùng thùng gõ cửa, đầy mặt viết vui sướng.</p>
+<p>Ở cái này ngày đại hỉ, nó rốt cuộc được như ý nguyện mà có được hôm nay hạn định màu hồng phấn miêu mao.</p>
+<p>Bùi Thanh Nguyên ……</p>
+<p>Hảo quái.</p>
+<p>Không bằng nấm đáng yêu.</p>
+<p>Xét thấy số 2 chủ nhân nghe lời mà sử dụng ma pháp làm chính mình biến thành xinh đẹp màu hồng phấn, Hoa Hoa cam tâm tình nguyện đương một lần người mang tin tức, nó dịu ngoan mà rũ xuống đầu, lộ ra bối thượng kia phân đồng dạng trát nơ con bướm lễ vật, mặt trên dùng thanh tú chữ viết viết ký chủ sinh nhật vui sướng.</p>
+<p>Bùi Thanh Nguyên có chút ngoài ý muốn, hắn khom lưng cầm lấy này phân hơi mỏng lễ vật, mở ra nơ con bướm cùng bao bì, nghĩ thầm có lẽ lại là một trương ảnh chụp.</p>
+<p>Cùng hắn tưởng tượng bất đồng, bên trong là một bức tranh màu nước.</p>
+<p>Họa thượng có một phiến thanh thấu cửa kính, phía trước cửa sổ là hắn cùng mỉm cười khoa tay múa chân kéo tay Quý Đồng, thời tiết tươi đẹp, xán lạn ánh mặt trời mơ hồ phía sau phong cảnh.</p>
+<p>Thoạt nhìn hẳn là cải biên bánh xe quay đêm đó chụp ảnh chụp.</p>
+<p>Không nghĩ tới Quý Đồng còn sẽ vẽ tranh.</p>
+<p>Màu hồng phấn Hoa Hoa hoàn thành nhiệm vụ, kiều cái đuôi đi ra ngoài, lại cắn oa ở chính mình trong phòng không chịu ra tới Quý Đồng ống quần, đem hắn túm lại đây thị sát, ý đồ được đến chủ nhân khen ngợi.</p>
+<p>Quý Đồng cọ tới cọ lui mà bị kéo qua tới, nhỏ giọng nói “Không phải số liệu sinh thành, là ta họa, tuy rằng họa đến giống nhau.”</p>
+<p>Hắn rảnh rỗi không có việc gì, viết suốt một năm nhật ký, bởi vì luôn hướng bên trong cắm ảnh chụp cùng họa giản bút họa, đem ký chủ thuần hóa nhật ký làm thành một quyển hoa hòe loè loẹt tay trướng, dần dần mà cũng liền học được vẽ tranh.</p>
+<p>“Rất đẹp.” Bùi Thanh Nguyên nghiêm túc nói, “Ta giống như không có gặp qua ngươi vẽ tranh.”</p>
+<p>Bởi vì toàn họa ở không thể bị ký chủ thấy vở.</p>
+<p>Hiện tại ký chủ có được tiến vào ý thức không gian quyền hạn, làm đến hắn không dám tùy thời tùy chỗ viết nhật ký, chỉ có thể ở ký chủ ngủ lúc sau trộm ghé vào trong hoa viên viết.</p>
+<p>Quý Đồng chột dạ mà dời đi tầm mắt, lừa gạt nói “Vẽ tranh đơn giản như vậy, một hai ngày liền học được sao.”</p>
+<p>Bùi Thanh Nguyên không có hoài nghi, xoay người đi hướng trong phòng án thư, cầm một cái nho nhỏ hộp ra tới, đưa cho hắn “Trao đổi lễ vật.”</p>
+<p>Quý Đồng vẻ mặt kinh ngạc “Cho ta sao? Là ngươi ăn sinh nhật.”</p>
+<p>“Lần trước nói qua, hôm nay là ngươi ăn sinh nhật diễn tập.” Bùi Thanh Nguyên nói, “Cho nên ngươi cũng muốn thu được lễ vật.”</p>
+<p>Quý Đồng ngơ ngác mà tiếp nhận cái này phân lượng thực nhẹ cái hộp nhỏ.</p>
+<p>Vây xem quần chúng Hoa Hoa giơ lên một con chân trước, vẻ mặt chờ đợi.</p>
+<p>“Miêu miêu?” Ta đâu?</p>
+<p>“……” Bùi Thanh Nguyên khó được chần chờ một chút, nếm thử có lệ qua đi, “Ngươi đã có màu hồng phấn miêu mao.”</p>
+<p>“Miêu miêu miêu miêu miêu miêu miêu!” Kia lại không phải ngươi đưa!</p>
+<p>Bùi Thanh Nguyên lấy nhào vào trong lòng ngực làm nũng chơi xấu miêu mễ không có cách, đành phải nói “Sang năm tiếp viện ngươi.”</p>
+<p>“Miêu miêu miêu miêu!” Ngày mai liền phải!</p>
+<p>“Buổi chiều chúng ta liền phải hồi trường học, ngày mai không ở nhà.”</p>
+<p>“Miêu ô……” Bất công nhân loại QAQ</p>
+<p>Nhìn cao lãnh ký chủ ý đồ cùng miêu mễ giảng đạo lý, Quý Đồng nhịn không được nở nụ cười, đem này phân nho nhỏ lễ vật nắm ở lòng bàn tay, đáp lại nói “Cảm ơn…… Nhuyễn Nhuyễn.”</p>
+<p>Giờ khắc này kêu ký chủ quá mới lạ, gọi ca ca lại ngượng ngùng.</p>
+<p>Từ Bùi Thanh Nguyên cao trung tốt nghiệp, hắn đã thật lâu không lại kêu cái này có điểm ấu trĩ tên.</p>
+<p>Lúc ban đầu là hắn ở nỗ lực an ủi ở vào nhân sinh thung lũng ký chủ.</p>
+<p>Bị cái này đã lâu xưng hô gợi lên hồi ức, một lát hoảng hốt sau, Bùi Thanh Nguyên đối với trước mắt so với hắn lùn một chút thiếu niên ôn thanh nói “Chúng ta cùng đi ăn sinh nhật.”</p>
+<p>Quý Đồng hoàn toàn không biết ký chủ đối hôm nay an bài, chỉ có thể thành thật mà đương một cái tiểu tuỳ tùng.</p>
+<p>Hắn đem lễ vật cái hộp nhỏ sủy ở trong túi, không có lập tức mở ra, một khắc không ngừng tưởng tượng hộp sẽ là cái gì, lòng bàn tay độ ấm đem hộp mặt ngoài đều che nhiệt.</p>
+<p>Đoán lễ vật cảm giác là mỹ diệu.</p>
+<p>Hôm nay sinh nhật diễn tập trạm thứ nhất liền ở nhà phụ cận.</p>
+<p>Bị Bùi Thanh Nguyên lãnh đi vào này quen thuộc đường phố, Quý Đồng mạc danh có một chút thấp thỏm.</p>
+<p>Nước đường phô trước vẫn là bài hàng dài, cách vách tiệm bánh mì cửa tủ kính vẫn cứ bãi xinh đẹp bánh kem mô hình, đủ mọi màu sắc chiêu bài tràn ngập đồng thú.</p>
+<p>Quý Đồng xa xa mà trông thấy Hà Thế Văn ở trong tiệm bận rộn thân ảnh.</p>
+<p>Vào tiệm khi, hắn theo bản năng hướng ký chủ phía sau né tránh.</p>
+<p>Hà Thế Văn cũng không nhận thức hiện tại hắn, cũng bởi vì thế giới quy tắc quên mất đã từng tiểu Quý Đồng.</p>
+<p>Chuông gió thanh vang nhỏ, mồ hôi đầy đầu Hà Thế Văn quay đầu lại nhìn lại, thói quen tính nói “Hoan nghênh quang lâm ——”</p>
+<p>Hắn mập mạp trên mặt nháy mắt nở rộ ra vui sướng tươi cười “Ai, Tiểu Bùi tới!”</p>
+<p>“Sinh nhật vui sướng a!” Năm trước cùng một đám cao trung sinh cùng nhau cấp Bùi Thanh Nguyên chúc mừng sinh nhật Hà Thế Văn đương nhiên nhớ rõ ngày này, buổi sáng còn cấp Bùi Thanh Nguyên phát quá tin tức, “Không nghĩ tới ngươi sẽ qua tới, ta cho rằng ngươi sẽ ở trường học ăn sinh nhật đâu!”</p>
+<p>“Buổi chiều lại hồi trường học.” Bùi Thanh Nguyên ngữ khí ôn hòa, “Đã lâu không thấy, Hà thúc thúc.”</p>
+<p>“Kia vừa vặn! Ta cho ngươi làm cái bánh kem, mang về cùng các bạn học cùng nhau chúc mừng.”</p>
+<p>Hà Thế Văn lập tức cao giọng dặn dò sau bếp, quen thuộc điểm tâm sư phó cũng đi theo thăm dò ra tới cùng Bùi Thanh Nguyên chào hỏi.</p>
+<p>Năm trước tiểu Quý Đồng ăn bánh sừng trâu kem sữa trứng ảnh chụp chính là điểm tâm sư phó chụp.</p>
+<p>Quý Đồng nhịn không được nhìn phía quầy thu ngân sau lưng mặt tường, nơi đó có rất nhiều Hà Thế Văn phóng đi lên ảnh chụp.</p>
+<p>Trong đó có tiểu hài tử bộ dáng Quý Đồng ảnh chụp đã qua sớm mà phát hoàng phai màu.</p>
+<p>Vì thế hắn lại hướng ký chủ phía sau dịch một chút.</p>
+<p>Hà Thế Văn cao hứng mà tiếp đón Bùi Thanh Nguyên ngồi xuống, hắn thấy Bùi Thanh Nguyên mang đến xa lạ người trẻ tuổi, nhiệt tình nói “Ngươi là Tiểu Bùi bằng hữu đi? Hoan nghênh tới trong tiệm, mau ngồi mau ngồi.”</p>
+<p>“Ta trước kia liền cùng Tiểu Bùi nói qua, làm hắn thường mang bằng hữu tới chơi, sau đó ta mang các ngươi đi ăn ngon.”</p>
+<p>Hắn nhớ tới chuyện cũ, tiếc hận nói “Đáng tiếc hôm nay không có trước tiên làm chuẩn bị, các ngươi còn có mặt khác an bài đi? Ta trước cho ngươi lấy điểm bánh mì nếm thử, nếu là có yêu thích, trong chốc lát mang điểm hồi trường học a.”</p>
+<p>Hà Thế Văn cầm khay đi kẹp trong tiệm chiêu bài bánh mì, bánh sừng trâu kem sữa trứng, tiểu khủng long bánh quy……</p>
+<p>Hắn động tác hơi hơi tạm dừng, nhớ không nổi chính mình vì cái gì sẽ nghiên cứu phát minh này khoản tiểu khủng long hình dạng bánh quy.</p>
+<p>Này khoản bánh quy bán đến tương đương hảo, cơ hồ mỗi cái vào tiệm khách nhân đều sẽ bị cái này sinh động nghịch ngợm tiểu khủng long tạo hình hấp dẫn.</p>
+<p>Lược hiện vô thố Quý Đồng tiếp nhận tiệm bánh mì lão bản truyền đạt khay, nghe thấy hắn cười ha hả thanh âm “Tuy rằng là lần đầu tiên thấy, nhưng tổng cảm thấy ngươi thực quen thuộc, về sau nhiều tới chơi a.”</p>
+<p>Bên cạnh liền có quen biết khách nhân cười hắn “Hà lão bản, ngươi ôm khách nói cũng quá mức khi.”</p>
+<p>“Nào có, ta là thiệt tình.” Hà Thế Văn vội vàng đỡ đỡ trượt xuống dưới mắt kính, xua xua tay, “Đây là ta bằng hữu bằng hữu, cũng chính là bằng hữu của ta, không tính khách nhân.”</p>
+<p>Quý Đồng nhìn trên khay đủ mọi màu sắc tiểu khủng long bánh quy, hơi hơi nhấp khởi khóe miệng “Cảm ơn Hà thúc thúc.”</p>
+<p>Thấp thỏm rút đi, tâm tình của hắn bỗng nhiên trở nên thực hảo.</p>
+<p>Bùi Thanh Nguyên vẫn luôn quan sát hắn mỗi một cái rất nhỏ biểu tình biến hóa, đến thời khắc này rốt cuộc yên lòng.</p>
+<p>Ngày đó bồi Quý Đồng đi tìm Thẩm Dịch Minh khi, hắn phát hiện trời sinh tính nội hướng Thẩm Dịch Minh đối đãi Quý Đồng cái loại này thiên nhiên thân cận.</p>
+<p>Cho nên Bùi Thanh Nguyên tưởng, có lẽ sẽ không có người chân chính hoàn toàn mà quên mất Quý Đồng.</p>
+<p>Hắn là như vậy đặc biệt một người.</p>
+<p>Bùi Thanh Nguyên kệ sách chỗ sâu nhất, có một trương tiểu người máy đứng ở hoa viên trước ảnh chụp, có một con xấu xấu màu trắng con bướm thú bông, còn có một trương tân được đến tranh màu nước.</p>
+<p>Chúng nó không phải hư vô số liệu, là chân thật lễ vật.</p>
+<p>Hắn hệ thống trên thế giới này để lại sẽ không biến mất dấu vết, cũng ở người ngoài trong trí nhớ để lại thật sâu dấu vết.</p>
+<p>Vô luận là cái gì thân phận, hắn đều tồn tại với nhân loại cảm tình ràng buộc bên trong, không phải là cái kia muốn biến thành một đống sắt vụn máy móc quản gia.</p>
+<p>Ở Quý Đồng chuyên tâm mà ăn tiểu khủng long bánh quy thời điểm, Bùi Thanh Nguyên đem từ trong nhà mang ra tới một cái túi giao cho Hà Thế Văn “Hà thúc thúc, đây là cấp Tinh Tinh lễ vật.”</p>
+<p>Hà Thế Văn nhìn quà tặng túi thượng bản vẽ, kinh hỉ nói “Này có phải hay không cái kia…… Sẽ khiêu vũ người máy?”</p>
+<p>“Đúng vậy.” Bùi Thanh Nguyên gật đầu.</p>
+<p>Đặng Trừ vừa lúc đem đường đậu người máy đưa ra thị trường bán nhật tử định ở hôm nay.</p>
+<p>“Tạ tạ tạ tạ, Tinh Tinh nhất định thật cao hứng, nàng mấy ngày trước còn nhắc mãi Tiểu Bùi ca ca như thế nào không tới trong tiệm.” Nói tới đây, Hà Thế Văn một phách đầu, “Đúng rồi, dù sao nàng hôm nay không đi học, ta kêu lão bà đem nàng đưa lại đây.”</p>
+<p>Mười lăm phút sau, trát hai chỉ tóc bím tiểu nữ hài nhảy nhót mà đi vào trong tiệm “Ba ba, ngươi muốn đưa ta cái gì thứ tốt nha?”</p>
+<p>“Không phải ta đưa, là người khác đưa cho ngươi lễ vật.” Hà Thế Văn cười nói, “Ngươi nhìn xem đây là ai?”</p>
+<p>Hà Tinh Tinh nhìn về phía Bùi Thanh Nguyên, chớp chớp đôi mắt, đang muốn nói chuyện, bỗng nhiên bị hắn bên người đang ở cấp bất đồng nhan sắc tiểu khủng long bánh quy nhất nhất chụp ảnh xa lạ ca ca hút đi lực chú ý.</p>
+<p>Vài giây sau, tiểu nữ hài sờ sờ chính mình bím tóc, ngượng ngập nói “Đại ca ca hảo, ta kêu Hà Tinh Tinh, ta cũng thích ăn cái này bánh quy.”</p>
+<p>Lần này, nhan khống hoa hướng dương Hà Tinh Tinh tầm mắt không vây quanh Tiểu Bùi ca ca xoay.</p>
+<p>Nàng bắt đầu vây quanh tân nhận thức Tiểu Quý ca ca chuyển.</p>
+<p>Hà Thế Văn bị nữ nhi phản ứng đậu đến cười ha ha, trêu ghẹo nói “Ngươi như thế nào nhanh như vậy liền thay lòng đổi dạ? Có phải hay không không nhớ rõ Tiểu Bùi ca ca?”</p>
+<p>“Nhớ rõ nha, ta lại không ngốc.” Hà Tinh Tinh bĩu môi, đúng lý hợp tình nói, “Nhưng là ta trưởng thành sao, đã thượng đại ban, cho nên không như vậy thích băng lãnh lãnh nam hài tử, ta hiện tại thích nhất đáng yêu.”</p>
+<p>Một phòng người đều cười đến dừng không được tới.</p>
+<p>Náo nhiệt tiếng cười, chỉ có bị biếm lãnh cung Tiểu Bùi ca ca ngữ khí nghiêm túc mà đồng ý nàng cái nhìn.</p>
+<p>“Ta cũng thích.”</p>
+<p>Thừa dịp người khác không chú ý, Tiểu Quý ca ca tay mắt lanh lẹ mà hướng bên người người trong miệng tắc một khối bánh quy, không cho hắn tiếp tục nói tiếp.</p>
+<p>Hắn rõ ràng chỉ có được quá một con bướm, giờ phút này lại có che trời lấp đất con bướm triều trong tim mặt ngoài mãnh liệt mà bay tán loạn.</p>
+<p>Rời đi tiệm bánh mì thời điểm, Hà Thế Văn cùng Bùi Thanh Nguyên ước hảo thời gian, nói chạng vạng đưa bánh kem cùng mặt khác điểm tâm đi trường học, miễn cho hắn muốn dẫn theo như vậy nhiều đồ vật vượt qua ban ngày.</p>
+<p>Tiếp theo trạm là thương trường, Bùi Thanh Nguyên dẫn hắn đi nhìn phóng mãn đường đậu người máy quầy, có khốc soái mũ lưỡi trai, tròn vo thân thể cùng linh hoạt chân dài người máy hấp dẫn không ít tiểu bằng hữu chú ý, đồng thời có hứa nhiều người trẻ tuổi nghỉ chân thí chơi.</p>
+<p>Đây là hắn đột phát kỳ tưởng thiết kế tạo hình, hiện tại bị rất rất nhiều người thấy.</p>
+<p>Nơi nơi đều tiếng vọng âm nhạc thanh âm, ồn ào nói chuyện với nhau.</p>
+<p>Trong đám người, có cái lạc đơn tiểu bằng hữu nhón chân, tò mò mà nhìn trong ngăn tủ dáng vẻ này cổ quái người máy, muốn sờ sờ xem, lại khiếp đảm mà lùi về tay.</p>
+<p>Không có gia trưởng tại bên người, lùn lùn tiểu bằng hữu ở kệ thủy tinh trước lưu luyến, thật lâu không muốn rời đi, bận rộn quầy người bán hàng không có chú ý tới hắn.</p>
+<p>Quý Đồng ngơ ngác mà nhìn một màn này.</p>
+<p>Hắn có một chút muốn khóc.</p>
+<p>“Có thể đưa một cái đường đậu cho hắn sao?” Hắn hỏi bên người ký chủ.</p>
+<p>Bùi Thanh Nguyên không hỏi nguyên nhân “Hảo, chờ ta một chút.”</p>
+<p>Cao lớn ký chủ đi qua đi, ở tiểu bằng hữu trước mặt ngồi xổm xuống, nhẹ giọng hỏi hắn thích cái gì nhan sắc.</p>
+<p>Quý Đồng đứng ở một bên lặng lẽ nhìn chăm chú vào.</p>
+<p>Hắn nhớ tới rất nhiều sự.</p>
+<p>Bất quá hắn hiện tại nhất muốn làm, là mở ra kia phân trao đổi tới lễ vật.</p>
+<p>Sấn ký chủ đang ở cùng xa lạ tiểu bằng hữu nói chuyện, Quý Đồng cúi đầu từ trong túi móc ra cái hộp nhỏ, thật cẩn thận mà mở ra.</p>
+<p>Hộp thế nhưng là một cái vòng cổ.</p>
+<p>Khuynh hướng cảm xúc tinh tế dây xích thượng xuyến một phen bộ dáng tinh xảo kim sắc tiểu chìa khóa.</p>
+<p>Chìa khóa mặt ngoài điểm xuyết mấy viên đường cong nhu hòa ngôi sao, chỉnh thể tạo hình cũng không phức tạp, có loại chất phác lãng mạn hơi thở, đồng thời phù hợp Quý Đồng cùng Bùi Thanh Nguyên hoàn toàn bất đồng thẩm mỹ.</p>
+<p>Vòng cổ phía dưới lót một tấm card, mặt trên là ký chủ quen thuộc bút tích.</p>
+<p>[ hẳn là so kim sắc nút tay áo đẹp. ]</p>
+<p>Quý Đồng lập tức nhớ tới khai xong cao trung gia trưởng sẽ ngày đó, ký chủ liếc mắt một cái liền từ Phương Hạo giả trang “Quý Yến Hành” trên người tìm được rồi biến thành nút tay áo hắn.</p>
+<p>Đương nhiên so nút tay áo đẹp.</p>
+<p>Nút tay áo chỉ có thể làm trên quần áo trang trí, nhưng chìa khóa có thể dùng để khai bảo rương.</p>
+<p>Hắn nghĩ như vậy, động tác tiểu tâm mà đem này vòng cổ treo ở trên cổ, sau đó cẩn thận mà đem chìa khóa mặt dây bãi chính.</p>
+<p>Hắn phi thường thích phần lễ vật này.</p>
+<p>Đem nó mang ở trên người, sẽ có một loại nắm giữ bí mật tàng bảo đồ tinh tế hải tặc cảm giác.</p>
+<p>Vòng cổ có thể mỗi ngày mang, hộp cùng tấm card cũng muốn cất chứa lên.</p>
+<p>Quý Đồng thuận tay đem hộp lễ vật tấm card lật qua tới, nhìn xem mặt trái có hay không mặt khác tự hoặc đồ án.</p>
+<p>Mặt trái không phải chỗ trống.</p>
+<p>Hắn thật sự lại gặp được một hàng tự.</p>
+<p>[ bảo rương giấu ở tương lai. ]</p>
+<p>Rũ ở trắng nõn xương quai xanh bên kim sắc chìa khóa nhẹ nhàng đong đưa, lập loè ôn nhu quang.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong106.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong108.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "khong-duoc-mo-uoc-xinh-dep-he-thong";
+const NOVEL_TITLE = "Không được mơ ước xinh đẹp hệ thống!!";
+const CHAPTER_TITLE = "Chương 107";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
