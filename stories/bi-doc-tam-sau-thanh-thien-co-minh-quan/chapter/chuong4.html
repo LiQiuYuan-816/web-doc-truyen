@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 4</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Bị đọc tâm sau thành thiên cổ minh quân
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 4</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong3.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong5.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Hạ Sơ Chu lặng lẽ ngáp một cái, nhìn phía dưới đứng văn võ bá quan.</p>
+<p>Tiền Chi Vinh đứng ra, “Bệ hạ, hôm qua bệ hạ phê duyệt về dự phòng Lĩnh Nam dịch bệnh tấu chương, thứ thần ngu dốt, này tiêu độc là ý gì? Lại vì sao phải ở tai khu rải vôi sống?”</p>
+<p>Hạ Sơ Chu “Này dịch bệnh kỳ thật là một loại cực nhỏ bé tiểu sâu giống nhau đồ vật, tiến vào người trong cơ thể, sinh lợi sinh sản, liền sẽ làm người được với dịch bệnh.”</p>
+<p>“Thế nhân đều biết muốn rời xa dịch bệnh người bệnh, không cần tiếp xúc bọn họ dùng quá đồ vật, nhưng hiện giờ, Lĩnh Nam lũ lụt nghiêm túc, này thủy tai liền có khả năng đem núi sâu mang theo dịch bệnh động vật thi thể cấp mang tới có người địa phương, lại lây bệnh cấp tai khu bá tánh, cho nên các bá tánh muốn thiêu chế vôi, ở nơi ở rải lên vôi sống, là có thể giết chết trong không khí, trên mặt đất dịch bệnh sâu. Phòng ngừa bá tánh nhiễm dịch bệnh.”</p>
+<p>Tiền Chi Vinh lại hỏi “Kia vì sao lại muốn, phong hàn ho khan khả năng sinh bệnh nạn dân, đều dùng bố che lại miệng mũi, khả năng cùng bọn họ tiếp xúc người cũng muốn che lại miệng mũi, bài tiết cũng muốn đơn độc tìm địa phương đâu?”</p>
+<p>Hạ Sơ Chu “Này tiểu sâu ở người trong cơ thể nhưng sinh sản đến thượng ngàn vạn chi số, lại thông qua đánh hắt xì, ho khan, bài tiết, cùng với cùng người bệnh thiết da tiếp xúc, lây bệnh cho người khác. Cho nên, chỉ cần khả năng đã nhiễm dịch bệnh người, che lại miệng mũi không cho này tiểu sâu bay loạn, bài tiết cũng không cần cùng khỏe mạnh người cùng nhau, bài tiết vật kịp thời tiêu độc vùi lấp, là có thể dự phòng dịch bệnh, không đến mức làm tai khu bá tánh lại phùng dịch bệnh chi khổ a.”</p>
+<p>Tiền Chi Vinh “Bệ hạ anh minh, vi thần lập tức đem phòng chống dịch bệnh chi sách thi hành đi xuống, tai khu bá tánh tất sẽ cảm nhớ bệ hạ anh minh.”</p>
+<p>【 này đại buổi sáng, ta tốt xấu ngồi, này đó văn võ bá quan, thiên không lượng liền khởi, còn muốn vào cung đi lớn như vậy một đoạn đường, thật là không dễ dàng a 】</p>
+<p>[ Hoắc Tùng trung thành gia tăng 1, tích phân +1]</p>
+<p>[ Tiền Chi Vinh trung thành gia tăng 1, tích phân +1]</p>
+<p>[ Giang Vân Sơn trung thành gia tăng 1, tích phân +1]</p>
+<p>【 như thế nào này ba người lại thêm trung thành độ, bầu trời rớt tích phân 】</p>
+<p>【 chẳng lẽ là xem ta như thế anh minh thần võ, trong lòng sùng bái kính ngưỡng khó có thể khống chế, hắc hắc 】</p>
+<p>Có thể nghe được Hạ Sơ Chu tiếng lòng ba người sôi nổi lộ ra mỉm cười, bệ hạ, hiện tại cũng chỉ là một cái 18 tuổi hài tử a, nếu có nhiều hơn người có thể nghe được bệ hạ như thế săn sóc hạ thần, bệ hạ lại thu hoạch một đống tích phân đi.</p>
+<p>“Hộ Bộ thượng thư.” Hạ Sơ Chu nhìn hôm qua Hộ Bộ trình lên tới về quốc khố thu chi sổ con.</p>
+<p>“Thần ở.” Hộ Bộ thượng thư kỷ bác dung đứng ra.</p>
+<p>“Hôm qua trình lên tới quốc khố thu chi sổ con, đánh trở về trọng viết.”</p>
+<p>“Bệ hạ thứ tội, vi thần tuân chỉ.”</p>
+<p>Tưởng hắn kỷ bác dung ở Hộ Bộ cũng hơn hai mươi năm, vẫn luôn không ra quá cái gì đại đường rẽ, này Hoàng thượng ba năm không để ý tới triều chính, hiện giờ bất quá liền thượng hai □□, liền lấy bọn họ Hộ Bộ làm ra oai phủ đầu, còn đánh trở về trọng viết, này bệ hạ chỉ biết phong hoa tuyết nguyệt, sợ là liền sổ con cũng xem không hiểu đâu, thôi, đi trọng viết một phần mười tuổi tiểu nhi cũng xem hiểu đi.</p>
+<p>【 này viết đều là gì nha, đại nguy quản quốc gia tài chính, liền này trình độ, tiểu hài nhi đều không bằng, liền này, liền này……】</p>
+<p>Trong đầu truyền đến Hạ Sơ Chu phun tào, Hộ Bộ thượng thư tức giận đến mặt đều đỏ, bên tai còn truyền đến ba người cười khẽ thanh. Hộ Bộ thượng thư nhìn về phía gần nhất Hoắc Tùng, Hoắc Tùng triều hắn gật gật đầu, lại ngẫm lại hôm qua hoắc tương đối đủ loại quan lại nhóm không thể hiểu được nói một câu, biết được thánh ý là thần tích, chớ có sợ hãi, hiện giờ mới phản ứng lại đây là ý gì, chỉ có thể nói hiểu được đều hiểu, không hiểu vĩnh viễn đều sẽ không hiểu.</p>
+<p>Liền tính là hoàng đế a, cũng không thể hoài nghi hắn trình độ.</p>
+<p>Lý Hướng minh tận lực bình phục hảo tâm tình,” bệ hạ, hôm qua thượng quốc khố thu chi sổ con, vi thần cảm thấy lời ít mà ý nhiều, vừa xem hiểu ngay, đã sửa không thể sửa.”</p>
+<p>Hạ Sơ Chu nhìn chằm chằm kỷ bác dung “Nga, ngươi cảm thấy cái này sổ con không tồi, ngược lại là trẫm không có việc gì tìm việc?”</p>
+<p>Kỷ bác dung vội vàng quỳ xuống “Vi thần không dám.” Chẳng lẽ không phải không có việc gì tìm việc sao? Đáng thương ta Hộ Bộ, vận khí không hảo cái thứ nhất gặp được ra oai phủ đầu.</p>
+<p>Hạ Sơ Chu đảo nở nụ cười “Kỷ ái khanh, ngươi này sổ con, vì sao chỉ viết chủ yếu phí tổn, cụ thể nơi nào hoa, nơi nào hoa nhiều ít, vì sao không có viết a? Tỷ như này quân phí, vì sao chỉ viết năm trước hoa 800 vạn lượng bạc trắng, như thế nào hoa, này trong quân lương thực hoa nhiều ít, này chống lạnh quần áo hoa nhiều ít? Này trong quân vũ khí, khôi giáp, ngựa, lại các hoa nhiều ít? Này biên quan hai mươi vạn đại quân hoa nhiều ít? Này bờ biển chống đỡ hải tặc quân coi giữ lại hoa nhiều ít?”</p>
+<p>Lý Hướng minh có vài phần bất đắc dĩ, “Bệ hạ, khối này thể như thế nào hoa, ngài muốn hiểu biết, Hộ Bộ đều có sổ sách, này nho nhỏ mười tới trang sổ con, sao có thể viết đến hạ đâu?”</p>
+<p>【 này đó sổ con vừa xú vừa dài lại khó hiểu, nếu là bọn họ sẽ dùng con số Ả Rập thì tốt rồi, con số Ả Rập lại hảo viết lại hảo tính, còn không chiếm địa phương, Hộ Bộ nếu là học xong con số Ả Rập cùng báo biểu, lại thông hiểu đạo lí, ta liền không cần xem Hộ Bộ trình lên tới so vừa xú vừa dài sổ con. 】</p>
+<p>Con số Ả Rập, báo biểu, đây đều là vật gì? Có thể so sánh khoảng một nghìn lão tổ tông truyền xuống tới đồ vật còn hảo, thiếu niên này hoàng đế còn nộn đâu, hắn kỷ bác dung hôm nay liền phải làm hoàng đế biết bọn họ Hộ Bộ, cũng không phải dễ chọc.</p>
+<p>“Bệ hạ nếu là có lương sách, không bằng giáo dư vi thần, vi thần ngu dốt, là thật lấy này sổ con không hề biện pháp a.”</p>
+<p>Hạ Sơ Chu có vài phần tâm động, “Giáo dư ngươi?”</p>
+<p>“Không tồi, nhưng thật ra cái biện pháp, bất quá quá lãng phí trẫm thời gian.”</p>
+<p>Kỷ bác dung thầm nghĩ quả nhiên như thế, này Hoàng thượng bất quá là không hiểu trang hiểu, làm hắn dạy người liền túng.</p>
+<p>[ kỷ bác dung trung thành -1, khấu trừ tích phân 10 phân ]</p>
+<p>【 kỷ bác dung trung thành giảm 1 phân, sao khấu ta 10 phân a, gia tăng liền một so một, giảm bớt thế nhưng một so mười, lòng dạ hiểm độc hệ thống. 】</p>
+<p>Ba người đối kỷ bác dung trợn mắt giận nhìn, cũng dám không trung thành với bệ hạ, dẫn tới bệ hạ tích phân đều thiếu, nếu là toàn triều đình đều là này chờ nghịch thần, bọn họ chẳng phải là ly xi măng càng ngày càng xa, ngày mai muốn đem bậc này nghịch thần đánh ra triều đình đi, biếm đi địa phương, càng hẻo lánh càng tốt, không cần ảnh hưởng bệ hạ xi măng đại kế.</p>
+<p>“Chỉ dạy ngươi một cái chẳng phải là quá mức lãng phí, bãi triều, kỷ thượng thư, nhị vị thừa tướng cùng vài vị thượng thư, chúng ta đi Hộ Bộ một chuyến.”</p>
+<p>Hộ Bộ thượng thư cùng Hộ Bộ thị lang đều đi thượng triều, lúc này Hộ Bộ quyền thị lang chính là Hộ Bộ chủ sự, đương thuộc hạ người tới bẩm báo, bệ hạ sắp sửa đến Hộ Bộ, quyền thị lang còn tưởng rằng chính mình đang nằm mơ, kim thượng triều đều không có thượng quá vài lần, sao có thể sẽ đến Hộ Bộ.</p>
+<p>Đương chân chính nhìn thấy bệ hạ, quyền thị lang biết chính mình làm không được như vậy thái quá mộng, bệ hạ phía sau còn đi theo hai vị thừa tướng cùng vài vị thượng thư, bệ hạ còn phải cho Hộ Bộ từ trên xuống dưới mấy chục người đi học, hai vị thừa tướng còn vẻ mặt chờ mong, chỉ có bọn họ kỷ thượng thư vẻ mặt khinh thường, kỷ thượng thư ngươi nhìn xem nhân gia, đạo lý đối nhân xử thế kéo mãn, kỷ thượng thư ngươi chín tộc là bán sỉ sao? Một chút đạo lý đối nhân xử thế đều không có, một chút biểu tình quản lý đều không làm.</p>
+<p>Bệ hạ làm người thế nhưng như thế hòa khí, kỷ thượng thư như thế đại bất kính đều không có so đo, kỷ thượng thư này mạo phạm bệ hạ khẳng định muốn biếm quan đi, kia hắn chẳng phải là muốn thăng quan.</p>
+<p>[ Hộ Bộ quyền thị lang trung thành +5, tích phân +5]</p>
+<p>Hạ Sơ Chu giáo chúng người nhớ kỹ mười vị con số, sau đó lại dạy mọi người dùng con số tới biểu đạt cái mười hàng trăm vạn.</p>
+<p>Thừa tướng cùng vài vị thượng thư đều là vạn dặm mới tìm được một nhân tài, lập tức liền học được, Hộ Bộ cũng đều là cùng toán học giao tiếp, cũng thực mau học xong.</p>
+<p>Kỷ bác dung nhiều năm ông chủ vụ, nhìn chằm chằm cái này kêu con số đồ vật, một cái thượng trăm vạn con số chỉ cần vài nét bút liền viết thành, mà dùng để trước lão phương pháp không được viết mười mấy tự, nếu là thi hành đi xuống, này đến tiết kiệm Hộ Bộ quan viên bao nhiêu thời gian a.</p>
+<p>Hơn nữa này con số vừa xem hiểu ngay, ngắn gọn sáng tỏ, chính là con trẻ cũng có thể nhẹ nhàng học được, nếu là thi hành đi xuống, thượng đến châu phủ, hạ đến huyện nha thậm chí thôn trấn, nếu là đều học được này con số, đến tiết kiệm người trong thiên hạ bao nhiêu thời gian a.</p>
+<p>[ kỷ bác dung trung thành +10, tích phân +10]</p>
+<p>[ Tiền Chi Vinh trung thành +5, tích phân +5]</p>
+<p>Hộ Bộ quan viên, đều hoặc nhiều hoặc ít gia tăng rồi trung thành độ, nhiều nhất chính là kỷ bác dung trung thành độ bỏ thêm thập phần, Hạ Sơ Chu lập tức được đến hơn 100 tích phân, tổng tích phân đạt tới 287.</p>
+<p>Đương Hạ Sơ Chu giáo Hộ Bộ bọn quan viên con số thêm giảm khi, đại đa số quan viên đều một lần học xong.</p>
+<p>Kỷ bác dung trung thành độ lại bỏ thêm 10 phân.</p>
+<p>Kỷ bác dung lẩm bẩm tự nói “Đơn giản như vậy, về sau đều không cần phải bàn tính. Ta dám nghi ngờ bệ hạ, thế gian này còn có so bệ hạ càng anh minh thần võ người sao?”</p>
+<p>Đương Hạ Sơ Chu giáo Hộ Bộ bọn quan viên con số nhân chia khi, cũng chỉ có vài vị quan viên một lần học xong.</p>
+<p>Trong đó liền có kỷ bác dung, hắn ngơ ngác mà nhìn bệ hạ ở trên tờ giấy trắng viết đã đơn giản lại thần kỳ tính toán phương pháp, cảm giác trước kia học tính toán phương pháp đều bạch học, này quả thực chính là thần tích, dữ dội may mắn, Đại Nguy Quốc có bệ hạ.</p>
+<p>Kỷ bác dung nhìn bệ hạ, trung thành độ cuồng trướng, nháy mắt liền cũng không đến 60 phân tăng tới 90 phân.</p>
+<p>“Có vài vị ái khanh học xong này con số nhân chia a, học được liền đem tay giơ lên.”</p>
+<p>Nhìn đến chỉ có mấy chỉ tay giơ lên, Hạ Sơ Chu gật gật đầu, “Kia dư lại ái khanh liền tiếp tục nghiên cứu này tính toán số nhân chi thuật.”</p>
+<p>“Học được ái khanh, liền tiếp tục tới cùng ta học tập sử dụng này con số tới viết báo biểu đi.”</p>
+<p>Trải qua hai cái canh giờ học tập, cuối cùng chỉ có kỷ bác dung một người học xong sử dụng đơn giản báo biểu, nhưng tin tưởng có kỷ bác dung giáo thụ, nhiều nhất mấy ngày này Hộ Bộ trên dưới liền đều có thể học được sử dụng báo biểu.</p>
+<p>Mà học xong báo biểu kỷ bác dung trung thành độ cũng tăng tới 95.</p>
+<p>“Bệ hạ, vi thần ngu dốt đến cực điểm, coi rẻ hoàng uy, tội đáng chết vạn lần, cầu Hoàng thượng trách phạt.”</p>
+<p>Hai vị thừa tướng cũng ở một bên phụ họa, “Bệ hạ, này kỷ bác dung coi rẻ hoàng uy, đối bệ hạ đại bất kính, nhưng tội không đến chết, không bằng đem hắn biếm đến địa phương đi, càng xa càng tốt, miễn cho ngại bệ hạ mắt.”</p>
+<p>Hạ Sơ Chu hào phóng cười “Hai vị thừa tướng, nếu là đem kỷ thượng thư biếm đến địa phương đi, các ngươi nhị vị tới Hộ Bộ giáo thụ hơn mười vị Hộ Bộ quan viên này con số cùng báo biểu sao?”</p>
+<p>Tiền Chi Vinh gãi gãi đầu, “Bệ hạ này con số cùng báo biểu tuy rằng tinh xảo, nhưng chúng ta hai người ngu dốt, còn chưa học được, vọng bệ hạ thứ lỗi.”</p>
+<p>Hạ Sơ Chu tiếp theo nói “Kia chẳng lẽ làm trẫm ngày ngày tới này Hộ Bộ giáo thụ, thẳng đến chư vị quan viên đều học được sao?”</p>
+<p>Tiền Chi Vinh chạy nhanh hồi “Vi thần không dám.”</p>
+<p>“Cho nên sao, kỷ thượng thư ở Hộ Bộ vài thập niên, tại đây toán học phương diện tạo nghệ thâm hậu, này Hộ Bộ nhưng không rời đi kỷ thượng thư.”</p>
+<p>“Đến nỗi hắn mạo phạm trẫm sao, liền phạt hắn ba tháng bổng lộc, kỷ thượng thư là này Hộ Bộ duy nhất học được con số cùng báo biểu, muốn phụ trách giáo thụ hơn mười vị thuộc hạ quan viên, này vốn không phải kỷ thượng thư chức trách, trẫm liền lại thưởng hắn ba trăm lượng, chư vị nhưng thấy thế nào?”</p>
+<p>Mấy chục người đồng loạt nói “Bệ hạ anh minh.”</p>
+<p>Kỷ bác dung trung thành độ tăng tới 99.</p>
+<p>Kỷ bác dung nghẹn ngào “Nhận được bệ hạ khoan dung, vi thần vô cùng cảm kích, vi thần không chỉ có sẽ giáo thụ Hộ Bộ quan viên con số cùng báo biểu chi thuật, càng là sẽ đem này con số cùng báo biểu thi hành đi ra ngoài, thi hành đến châu phủ, thi hành đến huyện trấn, làm người trong thiên hạ đều đã chịu bệ hạ ân huệ.”</p>
+<p>【 đều sẽ chính mình nhận việc, thật không sai. 】</p>
+<p>Hạ Sơ Chu cảm động nói “Kỷ ái khanh thật là có tâm, nếu kỷ ái khanh yêu cầu, hy vọng vài vị thượng thư tận lực phối hợp, mau chóng đem này kiểu mới con số cùng báo biểu thi hành đến khắp thiên hạ.”</p>
+<p>Vài vị thượng thư cùng kêu lên “Tuân chỉ.”</p>
+<p>Công Bộ thượng thư nhìn Hạ Sơ Chu, bệ hạ tới một chuyến Hộ Bộ, này Hộ Bộ liền nghiêng trời lệch đất, xem ra đến mau chóng đem bệ hạ quải đến Công Bộ đi một chuyến.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong3.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong5.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "bi-doc-tam-sau-thanh-thien-co-minh-quan";
+const NOVEL_TITLE = "Bị đọc tâm sau thành thiên cổ minh quân";
+const CHAPTER_TITLE = "Chương 4";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

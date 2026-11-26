@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 16</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Bị đọc tâm sau thành thiên cổ minh quân
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 16</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong15.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong17.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Ngày này rốt cuộc vội xong Hạ Sơ Chu nằm ở long sàng thượng, tổng cảm giác có điểm không thích hợp, cảm giác này đàn đại thần quá cuốn, không chỉ có ở cuốn bọn họ chính mình, càng ở cuốn hoàng đế, tổng muốn cho hắn nói điểm cái gì tưởng điểm cái gì an bài điểm cái gì, hảo tưởng đem hắn đầu óc đào làm giống nhau, còn đặc biệt tín nhiệm hắn, nói gì tin gì.</p>
+<p>Ai, năng lực quá cường vẫn là một loại sai a, đều không thể đương du thủ du thực.</p>
+<p>May mà ngày mai chính là nghỉ tắm gội.</p>
+<p>Ngày thứ hai, Lục Lan thương hôm nay sáng sớm liền tiến cung tới giáo Hạ Sơ Chu học võ, thực hiện bọn họ nhiều ngày trước ước định.</p>
+<p>Hạ Sơ Chu đối với Lục Lan thương đã đến cảm thấy ngoài ý muốn.</p>
+<p>“An bình vương, trẫm hôm nay nghỉ tắm gội, muốn xuất cung cải trang vi hành, hôm nay không thể luyện võ, thật là tiếc nuối a.”</p>
+<p>【 chạy nhanh đi, không cần quấy rầy ta nghỉ. 】</p>
+<p>Lục Lan thương bổn tính toán rời đi, nghe được lời này “Kia thần vừa lúc hôm nay cũng nghỉ tắm gội, có thể bồi bệ hạ cải trang vi hành, thần đối chính mình võ nghệ vẫn là có vài phần tin tưởng, vừa lúc có thể bảo hộ bệ hạ.”</p>
+<p>【 an bình vương, ngươi không có chính mình bằng hữu sao? Ngươi không có chính mình xã giao vòng sao? Làm gì muốn đi theo ta, có bản lĩnh thiếu khấu ta tích phân. 】</p>
+<p>Lục Lan thương ngữ khí hạ xuống “Từ 6 năm trước phụ thân mẫu thân qua đời, thần phòng thủ biên cương, đã nhiều năm không có hồi kinh, cùng kinh thành bạn bè cũng đã mới lạ, bệ hạ cải trang vi hành, thần vốn định đi cùng bảo hộ bệ hạ, nhưng nếu là bệ hạ không cam nguyện, vi thần đành phải một mình hồi vương phủ.”</p>
+<p>“Đáng tiếc trong vương phủ cũng không có người đang đợi thần, ở vương phủ cùng ở biên cương nơi nào đều là giống nhau lạnh băng cô tịch, an bình vương cùng Đại Nguy Quốc quân mấy trăm năm hữu nghị, vốn tưởng rằng bệ hạ có thể tiếp nhận vi thần, nhưng cũng là thần nghĩ nhiều.”</p>
+<p>【 hảo gia hỏa, bẩm sinh trà xanh thánh thể. 】</p>
+<p>Lục Lan thương trường thở dài một hơi, "Thần cáo lui, bệ hạ ra cung nhất định phải cẩn thận, phương thủ lĩnh nhất định phải bảo vệ tốt bệ hạ."</p>
+<p>【 hành hành hành, ta phục ngươi, coi như thêm một cái bảo tiêu. 】</p>
+<p>Phương Ngô Ninh bất động thanh sắc mà trừng mắt nhìn Lục Lan thương liếc mắt một cái, đoạt ta sống làm, còn tới trong cung cọ cơm, hiện giờ còn đoạt ta bảo tiêu không gần vệ công tác, an bình vương ngươi hảo cẩu a.</p>
+<p>“Nếu an bình vương một lòng muốn bảo hộ trẫm, Phương Ngô Ninh ngươi liền lưu tại trong cung bảo hộ Hoàng hậu, trẫm có an bình vương liền đủ rồi.”</p>
+<p>Lục Lan thương tiếp thu tới rồi Phương Ngô Ninh căm tức nhìn, không có chút nào tức giận, ngược lại có vài phần khoe ra hương vị.</p>
+<p>Hạ Sơ Chu xuyên qua một tháng nhiều tới nay, trừ bỏ lần trước cấp an bình vương đón gió tẩy trần, ra một lần hoàng cung, đây mới là lần thứ hai ra cung.</p>
+<p>“Ai, chỉ lo khai triều hội, xử lý công vụ, liền hưởng thụ sinh hoạt cũng đã quên.”</p>
+<p>Lục Lan thương cười nhạt “Hạ đệ hôm nay nghỉ tắm gội, liền không cần tưởng công vụ, hảo hảo nghỉ ngơi đi.”</p>
+<p>Nhìn đến cùng hiện đại hoàn toàn bất đồng phố lớn ngõ nhỏ, rao hàng người bán rong, đầu đường bán nghệ nghệ sĩ, còn có tửu lầu bố phô trà phổ thợ rèn phô, đều là Hạ Sơ Chu chưa thấy qua cảnh sắc, xác thật cổ hương cổ sắc.</p>
+<p>Hạ Sơ Chu tựa như một cái không thượng quá phố đồ nhà quê giống nhau ( xác thật là ), xem gì đều mới mẻ, đường hồ lô thịt nướng bánh niết tượng đất, thấy gì mua gì. Xem đầu đường bán nghệ đều có thể xem nửa ngày.</p>
+<p>Ngực toái tảng đá lớn, xiếc ảo thuật nhìn cái biến.</p>
+<p>Nghệ sĩ biểu diễn xong sau xác thật như điện coi kịch diễn, muốn thảo tiền thưởng “Các vị đại gia có tiền phủng cái tiền tràng, không có tiền phủng cá nhân tràng.”</p>
+<p>Hạ Sơ Chu “Hảo!!!!” Bổn tính toán cấp tiền thưởng, phát hiện tay bị một đường đi tới mua vô số tiểu ngoạn ý nhi chiếm, dời không ra tay, triều Lục Lan thương cho cái ánh mắt.</p>
+<p>【 thất thần làm gì, cấp tiền thưởng a. 】</p>
+<p>Lục Lan thương bất đắc dĩ cho tiền thưởng.</p>
+<p>【 không phải chính mình tiền tiêu chính là không đau lòng. 】</p>
+<p>Lục Lan thương Đảo không phải đau lòng tiền, nhưng lời này nghe như thế nào như vậy khó chịu đâu?</p>
+<p>[ Lục Lan thương trung thành độ -1, tích phân -10. ]</p>
+<p>【 hoa ngươi mười mấy văn tiền đồng, liền rớt độ trung tâm, như vậy moi, thảo đến lão bà sao? 】</p>
+<p>[ Lục Lan thương trung thành độ -1, tích phân -10. ]</p>
+<p>Hạ Sơ Chu âm dương quái khí “Lục huynh, trẫm, ta này tay chiếm đâu, không phải cố ý phải tốn ngươi bạc, ngươi không nên gấp gáp ha ~~, ta trở về liền đem này tiền trả lại ngươi.”</p>
+<p>【 nhớ rõ khai phá phiếu a, trở về trẫm cho ngươi chi trả. 】</p>
+<p>Lục Lan thương nghe càng khí, này tiểu hoàng đế chính là có có thể làm hắn tức chết năng lực.</p>
+<p>“Tiểu mỹ nhân, này nam nhân một chút tiền cũng luyến tiếc cho ngươi hoa, không bằng theo tiểu gia ta, có hoa không xong bạc ha ha ha ha ha.”</p>
+<p>Một cái đầu trâu mặt ngựa nam tử, mặt sau còn đi theo mấy cái tùy tùng, đối Hạ Sơ Chu trêu đùa.</p>
+<p>【 bên đường đùa giỡn đàng hoàng dân nữ, không, đùa giỡn đàng hoàng dân nam, như vậy cũ kỹ lại kính bạo tiết mục cũng cho ta gặp được. 】</p>
+<p>Cũng chưa chờ Hạ Sơ Chu lên tiếng, Lục Lan thương liền đem này nam nhân cùng hắn tùy tùng bắt lấy.</p>
+<p>Bị Lục Lan thương ngăn chặn nam tử “Đau đau đau, ta khuyên ngươi chạy nhanh buông tay, ngươi biết tiểu gia là ai sao? Ngươi liền dám trêu ta.”</p>
+<p>Lục Lan thương “Thành thật điểm.”</p>
+<p>Hạ Sơ Chu “Nga, xem ngươi cũng là cái nha nội, ngươi là nhà ai?”</p>
+<p>Này nam tử đảo nghe ra ý khác, này lớn lên cao lớn lại biết võ nam nhân, lúc này hắn đã nhìn ra, cũng không phải này tiểu mỹ nhân thân mật, mà là này tiểu mỹ nhân hộ vệ. Này tiểu mỹ nhân biết hắn là có bối cảnh, không những không sợ hãi, ngược lại hỏi hắn là nào một nhà.</p>
+<p>Này sợ là đá đến ván sắt, tưởng hắn cũng không dám đi khả năng có quyền quý lui tới địa giới thượng giương oai, luôn luôn chỉ là tại đây bình dân trên đường cái mở miệng đùa giỡn vài câu mỹ nhân, ai ngờ đây đều là bình dân áo vải đường cái cũng đụng tới quyền quý, lần này sợ là tài.</p>
+<p>Nam nhân cảm giác quỳ xuống “Tiểu nhân có mắt thỉnh thoảng Thái Sơn, mạo phạm đến các hạ, tiểu nhân không phải cái gì nhà ai, bất quá là có hai cái tiền, thỉnh mấy cái tùy tùng thôi.”</p>
+<p>Lục Lan thương “Thiên tử dưới chân, tha cho ngươi bậc này bọn đạo chích hạng người giương oai, nếu ngươi không phải nhà ai? Này tuần tra tuần kiểm nha môn cũng có thể đối với ngươi mở một con mắt nhắm một con mắt?”</p>
+<p>Từ trước bị này nam tử ngôn ngữ đùa giỡn quá bán hoa nương đánh bạo nói “Hắn là Hình Bộ thị lang gia nhị công tử, bị hắn đùa giỡn quá dân nữ cùng…… Dân nam cũng không ngừng một cái hai cái.”</p>
+<p>“Người nào tại đây nháo sự?” Một cái tuần kiểm tư tiểu đầu mục mang theo mười mấy người, quát lớn.</p>
+<p>Hạ Sơ Chu mặt trầm xuống “Ngươi là tuần kiểm tư?”</p>
+<p>Người tới xem Hạ Sơ Chu khí thế bất phàm, cũng chỉ tuyệt phi thường nhân, sợ là lai lịch không nhỏ “Tại hạ là tuần kiểm tư chính thất phẩm trung chờ, chuyên quản này kinh thành tuần cảnh việc.”</p>
+<p>Hạ Sơ Chu “Nếu ngươi chuyên quản tuần cảnh việc, người này ở trường nhai thượng đùa giỡn dân nữ không ngừng một hồi, tuần kiểm tư vì sao mặc kệ?”</p>
+<p>Tuần kiểm tư trung hầu hình như có khó xử “Các hạ, quý sơn chính là Hình Bộ thị lang chi tử, huống hồ hắn chỉ là trong lời nói đùa giỡn dân nữ, không có cái gì chuyện khác người, tại hạ cũng không thật nhiều quản quá nhiều.”</p>
+<p>Hình Bộ thị lang, Hạ Sơ Chu xác thật có điểm ấn tượng, năng lực không tồi, nhưng, Hạ Sơ Chu điều ra này Hình Bộ thị lang nhân vật giao diện, đạo đức giá trị xác thật so giống nhau đại thần đạo đức phân muốn thấp đến nhiều, chỉ có 40 phân, khó trách có thể dưỡng ra bậc này ti tiện nhi tử.</p>
+<p>Phía trước Hạ Sơ Chu cũng không coi trọng này đó đại thần đạo đức giá trị, chỉ cần năng lực đủ rồi là được, rốt cuộc vô luận mèo đen mèo trắng có thể bắt được lão thử chính là hảo miêu.</p>
+<p>Hắn thậm chí liền trung thành độ cũng không quá coi trọng, trong khoảng thời gian này ở chung, các đại thần cũng xác thật đều đối hắn dâng lên trung thành.</p>
+<p>Hiện giờ xem ra hắn là sai rồi, không trung thành nhưng đạo đức cao thuộc hạ phân công không có vấn đề, lại như thế nào cũng là một cái quan tốt.</p>
+<p>Nhưng đạo đức thấp đại thần, liền như này Hình Bộ thị lang, liền tính hắn trung thành độ hiện tại cũng cao tới 85 phân, nhưng hắn đạo đức giá trị thấp, sẽ không vì bá tánh suy nghĩ, liền sẽ làm hại bá tánh.</p>
+<p>Hạ Sơ Chu hoa 20 tích phân xem xét này Hình Bộ thị lang nhân vật chuyện xưa.</p>
+<p>【 20 năm trước khảo trung sau bị bảng hạ bắt tế, thành trước Hình Bộ thượng thư con rể, vứt bỏ vợ cả. 】</p>
+<p>【 xâm chiếm đồng ruộng. 】</p>
+<p>【 tham ô bạc 10 vạn lượng, trẫm tư khố cũng bất quá 20 vạn lượng, hắn liền tham ô 10 vạn lượng, cẩu quan a. 】</p>
+<p>Hạ Sơ Chu triều Lục Lan thương ánh mắt ý bảo.</p>
+<p>Lục Lan thương ?????? Lại là làm cái gì?</p>
+<p>【 cho thấy ngươi thân phận a, này cũng đều không hiểu, ta triều khác đại thần đưa mắt ra hiệu nhân gia lập tức liền đã hiểu, làm ta há mồm làm ngươi cho thấy thân phận chẳng phải là thực hàng ta b cách. 】</p>
+<p>Lục Lan thương Bệ hạ, hy vọng ngươi vĩnh viễn không biết những cái đó thật đúng là ngươi con giun trong bụng.</p>
+<p>Lục Lan thương làm một thị vệ khác ngăn chặn quý tam, lấy ra một khối lệnh bài cấp vị này tuần kiểm tư trung hầu xem một cái.</p>
+<p>Trung hầu “Tham kiến an bình vương, tiểu nhân có mắt không thấy Thái Sơn, vọng an bình vương thứ tội.”</p>
+<p>Trung hầu cả kinh một thân mồ hôi lạnh, có thể làm an bình vương làm hộ vệ, cũng chỉ có kia trong cung vị nào.</p>
+<p>Bị thị vệ ngăn chặn quý tam cũng ý thức được, tưởng nói điểm cái gì, bị thị vệ che miệng lại.</p>
+<p>Trung hầu “Đem quý sơn mang về tuần kiểm tư, chờ xử lý.” Tiếp theo đối Hạ Sơ Chu nịnh nọt nói “Tiểu nhân nhất định đúng sự thật bẩm báo trưởng quan, còn này trường nhai thượng bị này lưu manh vô tội bị nhục bá tánh một cái công đạo.”</p>
+<p>Mà Hình Bộ thị lang quý văn đống, nghe được thủ hạ báo lại, hắn con thứ hai bị tuần kiểm tư bắt, trước mắt tối sầm.</p>
+<p>“Này cái nào không có mắt cấp bắt, bất quá là đùa giỡn hai cái dân nữ…… Còn có dân nam, ta này tiểu nhi tử tuy rằng không biết cố gắng, nhưng cũng không tính là vi phạm pháp lệnh, còn không đi tìm người cấp vớt ra tới.”</p>
+<p>Hình Bộ thị lang lời nói còn chưa nói xong, Đại Lý Tự thiếu khanh mang theo mấy trăm quan binh nhảy vào trong phủ.</p>
+<p>“Hình Bộ thị lang quý văn đống, dạy con bất lợi.”</p>
+<p>“Vứt bỏ vợ cả, tức chết cha mẹ.”</p>
+<p>“Xâm chiếm đồng ruộng, tham ô trái pháp luật.”</p>
+<p>“Phụng Hoàng thượng thánh chỉ, đem Hình Bộ thị lang quý văn đống bắt lấy, mất chức điều tra, ép vào Đại Lý Tự nhà giam, chờ xử lý.”</p>
+<p>Quý văn đống “Ngươi không thể bắt ta, chúng ta chính là người cùng thuyền, chúng ta nhưng đều là có thể nghe thấy……”</p>
+<p>[ hệ thống thí nghiệm ra trói định đối tượng có tiết lộ hệ thống tồn tại hành động, khả năng tạo thành thế giới hỏng mất, trừng phạt cấm ngôn ba ngày. ]</p>
+<p>[ trói định đối tượng đã mất đi triều viên chức phân, trói định mất đi hiệu lực, xóa bỏ trói định đối tượng tương quan ký ức. ]</p>
+<p>[ cảnh cáo Xóa bỏ ký ức là không thể rút về thao tác, khả năng tổn thương tâm trí. ]</p>
+<p>Quý văn đống đột nhiên đầu đau muốn nứt ra, thống khổ mà đầy đất lăn lộn, mọi người bị hoảng sợ, chỉ cho rằng hắn ở trang bệnh, ước qua mười lăm phút, quý trường đống ánh mắt không còn nữa từ trước thanh minh, thế nhưng chảy ra nước miếng, đối với mọi người cười ha ha.</p>
+<p>Đại Lý Tự thiếu khanh “Quý văn đống, giả ngây giả dại cũng không thể thoát tội, mang đi.”</p>
+<p>Mà mấy ngày sau, triều quan trung có vài vị đại thần, cũng bởi vì phạm vào đủ loại tội, chứng cứ vô cùng xác thực, bị Đại Lý Tự bắt lấy. Những người này đều không ngoại lệ đều là đạo đức giá trị thấp hơn 50.</p>
+<p>Này đó bị hạch tội quan viên bị bắt khi, đều đầu đau muốn nứt ra, sau đó biến thành ngốc tử.</p>
+<p>Mà lúc này Hạ Sơ Chu Ai, làm việc người lại mất đi, giải khóa nhân vật chuyện xưa tìm hành vi phạm tội, hoa ta hơn 100 phân, đau lòng. Bất quá quốc khố lại nhiều 50 vạn lượng bạc, vui vẻ.</p>
+<p>Hạ Sơ Chu một ngày nghỉ tắm gội —— đại thất bại.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong15.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong17.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "bi-doc-tam-sau-thanh-thien-co-minh-quan";
+const NOVEL_TITLE = "Bị đọc tâm sau thành thiên cổ minh quân";
+const CHAPTER_TITLE = "Chương 16";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

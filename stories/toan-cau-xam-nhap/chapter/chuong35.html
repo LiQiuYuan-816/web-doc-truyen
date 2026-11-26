@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 35</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Toàn cầu xâm nhập
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 35</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong34.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong36.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Bạch Kình siêu thị một tầng đã hoàn toàn biến thành chỗ tránh nạn, sở hữu không thể ăn thương phẩm bị cất vào đại thùng giấy, kệ để hàng đẩy đến dựa cửa sổ vị trí, không ra tới địa phương hoặc ngồi hoặc nằm không ít người, có nhân thân hạ phô chiếu, có người trực tiếp nằm trên mặt đất, bọn họ từng cái hình dung gầy ốm, làn da thượng đốm đen trải rộng.</p>
+<p>Mạt thế sau, siêu thị cửa chính không có lại khai quá, người sống sót ra vào đi đều là cửa sau, Bạch Kình cha mẹ xem như không ràng buộc hiến cho lầu một sở hữu có thể ăn đồ ăn, rốt cuộc mạt thế sau ai còn nhận tiền? Linh đắc thanh người sẽ chính mình đi ra ngoài tìm vật tư, buổi tối trở về, bên ngoài không có nơi nào là an toàn chỗ, cửa chống trộm cùng cửa kính đều thực giòn, ngay cả vách tường đều không vững chắc, muốn nghỉ ngơi, chỉ có thể trở lại siêu thị.</p>
+<p>Xách không rõ thả người nhát gan, oa ở siêu thị không muốn thò đầu ra, chờ xem Bạch gia có thể hay không thật sự thấy chết mà không cứu, nhìn bọn họ đói chết cũng không mở ra lầu hai, bọn họ thường xuyên tụ ở bên nhau lẩm nhẩm lầm nhầm, nói một ít lời nói, liền như vậy cùng Bạch gia tốn.</p>
+<p>Bạch gia người đều tụ ở lầu một trong phòng bếp, phòng bếp hợp với một cái tiểu trữ vật gian, bên trong có một chiếc giường, tận cùng bên trong có cái tiểu phòng vệ sinh, mấy ngày nay bọn họ chính là tránh ở như vậy chật chội hẹp hòi địa phương sinh hoạt.</p>
+<p>Bạch gia còn lưu tại Bạch Loan trấn chỉ có tam đại gia, những người khác hoặc là sớm đã đi nơi khác phát triển, định cư nơi khác, hoặc là gả đi hoặc dọn đi bên ngoài, lưu tại trấn trên chỉ có Quý Hủ khắp nơi công, sáu ông ngoại cùng bảy ông ngoại tam gia. Trước mắt xác định tồn tại có Bạch Kình một nhà ba người. Bạch Đình Nham cùng phụ thân hắn, mẫu thân mất tích. Bạch Giảo Giảo cùng nàng phụ thân, mấy năm trước Bạch Giảo Giảo cha mẹ ly dị, mẫu thân lựa chọn mang đi đệ đệ, đem Bạch Giảo Giảo lưu tại Bạch gia.</p>
+<p>Bạch gia lão nhân không có một người sống sót, Bạch gia xuất giá cô cô nhóm, cũng đều sinh tử không biết.</p>
+<p>Bạch Kình càng ngày càng nôn nóng, rõ ràng toàn bộ siêu thị đều là nhà bọn họ, lại muốn bảy người tễ ở cái này nhỏ hẹp trong không gian, ngủ đều chỉ có thể ngồi ngủ, duy nhất một chiếc giường để lại cho mụ mụ cùng đường tỷ.</p>
+<p>Nhất tao chính là, bọn họ đồ ăn đã ăn xong rồi, hoặc là cùng bên ngoài người cùng nhau đói bụng, hoặc là mở cửa đi lầu hai, chỉ cần bọn họ dám mở cửa, tuyệt đối sẽ bị tranh đoạt không còn, Hủ Hủ bên ngoài những cái đó nghị luận sẽ biết.</p>
+<p>Bạch Kình lại đói lại khó chịu, ăn không ngon ngủ không tốt, không thể ra ngoài không thể tắm rửa, liền tưởng tận tình uống nước đều làm không được, càng nghĩ càng nghẹn khuất, càng nghĩ càng giận, hung hăng đạp xuống giường chân, “Ta chịu không nổi! Đem bọn họ đều đuổi đi! Siêu thị là nhà ta, ta vì cái gì muốn quá đến như vậy nghẹn khuất!”</p>
+<p>“Hư! Ngươi nói nhỏ thôi!” Bạch mẫu tưởng che hắn miệng, đã muộn rồi.</p>
+<p>Vừa mới bắt đầu bọn họ xác thật là xuất phát từ hảo tâm thu lưu, nghĩ sớm hay muộn sẽ có cứu viện lại đây, nhưng từ Bạch Đình Nham mấy người mang về tin tức tới xem, bọn họ cực đại khả năng đợi không được cứu viện.</p>
+<p>Hiện giờ siêu thị tình huống, đã không phải bọn họ một nhà định đoạt, liền tính hơn nữa Bạch Đình Nham cùng Bạch Kình bằng hữu cùng với người nhà, kia cũng chỉ có mười mấy người, siêu thị chính là tụ tập không dưới trăm người. Bọn họ không thể hành động thiếu suy nghĩ, vạn nhất đem người bức nóng nảy, không nói siêu thị sở hữu vật tư sẽ ném, bọn họ có không mạng sống đều là không biết, chẳng sợ bọn họ có súng phun lửa cùng thiêu đốt bình nơi tay, không đến vạn bất đắc dĩ, tuyệt đối không thể ở siêu thị động thủ, trừ phi tưởng đem siêu thị một phen hỏa toàn thiêu.</p>
+<p>Bạch Giảo Giảo một tay nắm rìu chữa cháy, nhẹ nhàng mở ra một cái kẹt cửa, bên ngoài người đến người đi, không biết có hay không người nghe được Bạch Kình khí lời nói. Lúc này đem người đuổi ra đi, không thể nghi ngờ là bức người đi tìm chết, bọn họ không phản kích mới kỳ quái.</p>
+<p>Bạch Giảo Giảo đóng cửa lại, nằm trên mặt đất chết khiếp có sống hay không một người mở to mắt, hắn ở phòng bếp nhỏ tường ngoài nhất dựa vô trong vị trí, là kẹt cửa góc chết, Bạch Giảo Giảo không có thấy hắn, Bạch Kình kia một giọng nói, bị hắn nghe xong cái rõ ràng.</p>
+<p>Nam nhân cung thân mình, ngồi vào đồng dạng nằm bất động mấy người bên người, nhỏ giọng nói vài câu, liền đứng dậy sau này môn đi.</p>
+<p>Có người quen biết hắn kêu hắn, “Hầu Tam Nhi, ngươi lại đi ra ngoài a? Ta liền nói tay không đi ra ngoài không được, ngươi đến mang lên gia hỏa, bằng không ngươi lại muốn tay không đã trở lại!”</p>
+<p>Hầu Tam Nhi bị này một giọng nói hoảng sợ, biểu tình đổi đổi, mới miễn cưỡng cười nói “Ta không dám đi quá xa, phụ cận đồ ăn đều bị người khác lục soát xong rồi, lần này ta tranh thủ đi xa một chút.”</p>
+<p>Chuẩn bị đi ra ngoài người đều tụ ở phía sau cửa, chờ cùng nhau ra bên ngoài hướng, trước xử lý ngoài cửa quái vật, mới có thể chạy ra đi tìm đồ ăn.</p>
+<p>Thủ vệ Phạm Lâm cũng bị này một giọng nói hấp dẫn ánh mắt, nhìn nhiều Hầu Tam Nhi liếc mắt một cái, người này hắn có ấn tượng, buổi sáng đã đi ra ngoài quá một lần, thực mau liền tay không đã trở lại, không nghĩ tới nhanh như vậy lại muốn đi ra ngoài.</p>
+<p>Chờ đến chuẩn bị trở về người sống sót sau này môn chạy, bên trong cánh cửa chuẩn bị ra ngoài người sống sót cũng chuẩn bị hảo lao ra đi, Phạm Lâm tạp điểm kéo ra cửa sau, trong ngoài giáp công, bồi hồi ở phía sau môn quái vật bị nhanh chóng giải quyết, trong ngoài người sống sót trao đổi vị trí, lập tức đóng cửa. Mấy ngày nay bọn họ đều là như thế này lại đây, đi ra ngoài cùng trở về đều phải mấy người cùng nhau, một người không đáng mạo hiểm mở cửa.</p>
+<p>Phạm Lâm đem cửa sau giao cho Bùi Ngẩng cùng Phương Quận, bọn họ trên người đều cõng súng phun lửa, ai dám có oai tâm tư, đừng trách bọn họ xuống tay vô tình, đây cũng là siêu thị vẫn luôn không loạn nguyên nhân chủ yếu, hai bên đều có kiêng kỵ.</p>
+<p>Phạm Lâm đi gõ phòng bếp nhỏ môn, mấy người bọn họ thay phiên thủ vệ, lúc này Bạch Đình Nham cùng Bạch Giảo Giảo đổi gác nghỉ ngơi, hai ngày này Bạch Đình Nham không có ra ngoài, vẫn luôn đang đợi Quý Hủ lại đây.</p>
+<p>Bạch Giảo Giảo mở cửa, Phạm Lâm đi vào, phòng bếp nhỏ môn một lần nữa đóng lại.</p>
+<p>Bạch Đình Nham dựa vào trên tường tiểu ngủ trong chốc lát, trợn mắt liền thấy Phạm Lâm ở phòng bếp nhỏ, “Làm sao vậy?”</p>
+<p>Phạm Lâm có điểm không xác định, liền đem Hầu Tam Nhi sự cùng Bạch Đình Nham nói, “Ta chính là cảm thấy hắn có điểm kỳ quái, buổi sáng đi ra ngoài trong chốc lát, sau đó tay không trở về, vừa mới lại đi ra ngoài, trong đó khoảng cách không đến hai cái giờ.”</p>
+<p>Dựa theo mấy ngày này sờ ra quy luật, một người một ngày cơ bản chỉ biết đi ra ngoài một lần, đi ra ngoài chính là vì tìm đồ ăn, có người đi ra ngoài một lần mang về so nhiều đồ ăn, có thể hai, ba ngày không hề ra ngoài, không có ai nguyện ý thường xuyên đi ra ngoài mạo hiểm.</p>
+<p>Bạch Đình Nham nhíu mày, “Nói như vậy hắn hành vi xác thật khác thường, có ai chú ý quá hắn mấy ngày nay hành động quỹ đạo?”</p>
+<p>Siêu thị người quá nhiều, cơ hồ tới rồi người tễ người nông nỗi, thật nhiều người bọn họ đều không quen biết, nơi nào sẽ nhất nhất đi chú ý?</p>
+<p>Phạm Lâm nói “Ta lúc trước cũng không chú ý tới, là có người hô một giọng nói, nói hắn lại đi ra ngoài còn tay không trở về, ta mới chú ý tới, hắn buổi sáng liền đi ra ngoài quá.”</p>
+<p>Tay không trở về người sống sót không ngừng Hầu Tam Nhi một cái, như vậy trong thời gian ngắn thường xuyên ra ngoài lại chỉ có hắn một cái.</p>
+<p>Bạch Đình Nham đứng lên, “Đi tìm kêu gọi người hỏi một chút, hắn hẳn là chú ý Hầu Tam Nhi so nhiều.”</p>
+<p>Bạch Đình Nham cùng Phạm Lâm đi ra phòng bếp nhỏ, Bạch Giảo Giảo theo ở phía sau, những người khác không có ra tới. Mấy ngày nay bọn họ rất ít xuất hiện ở siêu thị, để ngừa nghe được không dễ nghe nghị luận, áp không được tính tình.</p>
+<p>Bạch Đình Nham phụ thân lo lắng nói “Các ngươi nói Quý Hủ kia hài tử thật sự sẽ qua tới sao? Hắn cha mẹ qua đời sau, liền cùng chúng ta hoàn toàn xa cách, bốn năm không liên hệ quá, chúng ta cũng không có thể giúp được hắn cái gì, hiện tại lại yêu cầu hắn tới hỗ trợ, thật sự là…… Ai!”</p>
+<p>Bạch Kình phụ thân nói “Đình Nham nói, không cần dính líu quan hệ, việc nào ra việc đó, chúng ta sẽ không làm hắn bạch hỗ trợ.”</p>
+<p>Bên ngoài, Phạm Lâm mang theo Bạch Đình Nham tìm được kêu gọi người, là cái không quen biết đại thúc, tóc lộn xộn, làn da ngăm đen, xem bề ngoài đại khái có năm, 60 tuổi, đầy mặt tang thương.</p>
+<p>Đứng ở mặt sau Bạch Giảo Giảo không xác định hô thanh, “Thôi thúc?”</p>
+<p>Đại thúc đỡ tường đứng lên, trên mặt mang theo cười, “Ai, là ta.”</p>
+<p>Bạch Đình Nham nhìn về phía Bạch Giảo Giảo, “Các ngươi nhận thức?”</p>
+<p>Bạch Giảo Giảo nói “Ta ba trại chăn nuôi chăn nuôi viên, ta đi trại chăn nuôi thời điểm gặp qua Thôi thúc vài lần.”</p>
+<p>Nói đến trại chăn nuôi, Thôi thúc liền đau lòng không được, trong mắt ẩn có thủy quang, “Toàn huỷ hoại nha, thật vất vả nuôi lớn gà vịt ngỗng toàn chạy, lần này tổn thất lớn nha.”</p>
+<p>Thôi thúc ở trại chăn nuôi làm đã nhiều năm, ăn trụ đều ở trại chăn nuôi, Bạch Giảo Giảo phụ thân phi thường tín nhiệm hắn, trại chăn nuôi đều giao cho Thôi thúc xử lý, Thôi thúc cũng là kiên định chịu làm, trại chăn nuôi chưa từng ra quá nhiễu loạn, lần này lại gặp đại nạn.</p>
+<p>Bạch Giảo Giảo khuyên nhủ “Hiện tại không phải đau lòng gà vịt ngỗng thời điểm, người tồn tại quan trọng nhất. Thôi thúc tới nơi này, như thế nào không đi tìm ta ba? Hắn ở phòng bếp nhỏ.”</p>
+<p>Thôi thúc cúi đầu xua tay, “Biết các ngươi đều tồn tại là được, nơi này lộn xộn, ta liền không đi quấy rầy.”</p>
+<p>Hắn không biết như thế nào đối mặt lão bản, như vậy đại cái trại chăn nuôi, cái gì cũng chưa, cái gì đều huỷ hoại.</p>
+<p>Bạch Đình Nham nói “Thôi thúc, có thể hướng ngài hỏi thăm chuyện này nhi sao?”</p>
+<p>Thôi thúc nói “Là muốn hỏi Hầu Tam Nhi sự đi? Người này ta nhận thức, không phải cái tốt, từ nhỏ liền trộm hàng xóm gia gà đi bán tiền, thường xuyên trộm trong nhà tiền đi ra ngoài ăn nhậu chơi bời, cha mẹ bị khí tiến bệnh viện rất nhiều lần. Mấy ngày hôm trước ta thấy hắn cùng những người khác lẩm nhẩm lầm nhầm, sau đó liền oa ở siêu thị bất động, liền như vậy tốn. Ngày hôm qua buổi chiều ta thấy hắn đi ra ngoài một chuyến, tay không trở về, hôm nay buổi sáng lại đi ra ngoài, như cũ tay không, vừa mới lại lần nữa đi ra ngoài, liền hắn kia có thể tức chết cha mẹ người, tuyệt đối nghẹn hư chiêu……”</p>
+<p>Thôi thúc vừa dứt lời, liền có người ồn ào lên, “Bạch gia đây là ý định không cho chúng ta sống a! Ta nghe được rành mạch, bọn họ liền ở phòng bếp nhỏ mưu đồ bí mật muốn đem chúng ta mọi người đuổi ra đi, nói siêu thị là nhà bọn họ, trên lầu sở hữu vật tư cũng đều là nhà bọn họ, bọn họ là tưởng bức tử chúng ta a!”</p>
+<p>“Bạch gia người đâu? Đừng trốn tránh đương rùa đen rút đầu! Ra tới nói rõ ràng!”</p>
+<p>Có người lớn tiếng bác bỏ, “Nói cái gì rõ ràng! Siêu thị thật là Bạch gia, nơi nào nói sai rồi? Các ngươi đây là ăn trụ nhân gia siêu thị ngại không đủ, còn muốn xúi giục người cùng nhau bá chiếm siêu thị sao?!”</p>
+<p>“Ai bá chiếm? Là bọn họ muốn đuổi chúng ta đi ra ngoài, là bọn họ muốn bức tử chúng ta!”</p>
+<p>“Không cho chúng ta đãi, kia đại gia liền đều đừng đãi!”</p>
+<p>Hai bên từ khóe miệng tranh chấp phát triển đến huy khởi nắm tay, mọi người lực chú ý đều bị hấp dẫn tới rồi bên này, thủ vệ Bùi Ngẩng cùng Phương Quận cũng ở duỗi cổ xem.</p>
+<p>Phòng bếp nhỏ Bạch gia người cũng đãi không được, mang lên phòng thân vũ khí đi ra.</p>
+<p>Bạch Đình Nham tổng cảm thấy không đúng chỗ nào, như vậy chính diện khởi xung đột vẫn là lần đầu tiên, phía trước nhiều lắm phát sinh khóe miệng, không ai dám thật sự động thủ, hắn nhìn mắt cửa sau, chính nhìn đến một cái lén lút thân ảnh sờ hướng khoá cửa.</p>
+<p>Bạch Đình Nham hô một tiếng, “Bảo vệ cho môn!”</p>
+<p>Siêu thị nội cãi cọ ầm ĩ, Bùi Ngẩng cùng Phương Quận không nghe rõ, chỉ nhìn thấy Bạch Đình Nham, Phạm Lâm cùng Bạch Giảo Giảo hướng bên này vọt tới, chính là lúc này, cửa sau bị người một phen kéo ra, ngoài cửa vọt vào tới một đám người, chờ ở cửa chuẩn bị ra ngoài người sống sót cùng thủ vệ người đều bị đánh ngã.</p>
+<p>Vọt vào tới người lớn tiếng gầm lên, “Đừng nhúc nhích! Đều không được nhúc nhích!”</p>
+<p>Chạy tới Bạch Đình Nham ba người chính diện đối thượng vọt vào tới người, vốn tưởng rằng vọt vào tới sẽ là Cuồng Thi đàn, không nghĩ tới là người, vẫn là một đám tay cầm vũ khí người!</p>
+<p>Ầm ĩ siêu thị tức khắc một tĩnh, chờ thấy rõ trong tay bọn họ vũ khí, tất cả đều hoảng sợ im tiếng!</p>
+<p>Thương! Trong tay bọn họ cư nhiên có thương! Còn có hai côn hướng, súng tự động!</p>
+<p>Thương uy lực bọn họ đều rất rõ ràng, tuy rằng không có thân thủ sờ qua chính mắt gặp qua, nhưng TV điện ảnh thấy được nhiều, cùng dao phay, rìu chữa cháy so sánh với, thương mới là vương giả!</p>
+<p>Bạch Đình Nham mặt ngoài trấn định, kỳ thật lòng bàn tay đều là mồ hôi lạnh, hắn chuyên nghiệp làm công nghiệp quốc phòng, như thế nào nhìn không ra thật thương vẫn là giả thương, này mấy cái súng lục cùng súng tự động đều là thật sự, hơn nữa là chế thức súng ống!</p>
+<p>Này nhóm người cướp sạch trấn nhỏ cục cảnh sát vũ khí kho!</p>
+<p>Trong đám người Bạch Đình Nham phụ thân cùng Bạch Giảo Giảo phụ thân, gấp đến độ liền phải lao ra đi, bị Bạch Kình một nhà gắt gao giữ chặt, trong tay bọn họ có thương, hiện tại đi ra ngoài chỉ có thể chịu chết, muốn bình tĩnh!</p>
+<p>Cầm đầu mấy người trong tay đều có thương, bọn họ mang đầu đen bộ, họng súng thẳng chỉ siêu thị nội mọi người, nặng nề thanh âm từ đầu đen bộ hạ truyền ra tới, “Nhà này siêu thị chúng ta tiếp nhận, không quan hệ người lập tức rời đi!”</p>
+<p>“……”</p>
+<p>Mọi người im như ve sầu mùa đông, không ai rời đi, cũng không ai dám động.</p>
+<p>Đầu đen bộ hơi lệch về một bên đầu, phía sau có người bắt lấy một cái bị đánh ngã người sống sót kéo ra tới, trước mặt mọi người lau cổ, máu loãng bắn đi ra ngoài thật xa, có người sợ tới mức thất thanh thét chói tai.</p>
+<p>Đầu đen bộ lại lần nữa mở miệng, “Cơ hội chỉ có một lần, lại không đi, giết sạch các ngươi.”</p>
+<p>Bạch Đình Nham ba người đứng ở đằng trước, bọn họ không xác định này đó thương hay không còn có thể bình thường sử dụng, không dám hành động thiếu suy nghĩ, ba người vừa muốn đi đầu rời đi, cầm đầu đầu đen bộ họng súng đã nhắm ngay Bạch Đình Nham, “Bạch gia người lưu lại, vật tư còn cần các ngươi kiểm kê, những người khác lập tức rời đi!”</p>
+<p>Bạch Đình Nham liếc mắt đứng ở trong đám người Bạch Kình đám người, hy vọng bọn họ có thể đi theo đám người hỗn đi ra ngoài.</p>
+<p>Đầu đen bộ nhóm lui qua hai bên, vừa mới bị giết người sống sót, bị một người kéo đi ra ngoài hấp dẫn quái vật, cửa sau mở ra, bọn họ có thể rời đi.</p>
+<p>Đứng ở đầu đen bộ mặt sau Hầu Tam Nhi hô một tiếng, “Chạy mau a! Còn chờ cái gì?!”</p>
+<p>Cùng Hầu Tam Nhi thông đồng tốt kia mấy cái, đẩy ra chặn đường người, hướng tới cửa sau chạy tới. Tận mắt nhìn thấy có người chạy ra đi, mặt sau người lập tức đuổi kịp, tranh đoạt ra bên ngoài chạy, chen chúc một siêu thị người, thực mau liền chạy không thừa nhiều ít.</p>
+<p>Bạch gia người gấp đến độ nổi điên, muốn viễn trình phun hỏa, có thể muốn gặp phun hoả tốc độ tuyệt đối không đuổi kịp viên đạn tốc độ! Mắt thấy người càng ngày càng ít, bọn họ thực mau liền sẽ bại lộ ra tới, này đó nhân tàn nhẫn độc ác, tuyệt đối sẽ không lưu người sống!</p>
+<p>Bạch Kình liên tiếp nhìn về phía pha lê tường, hy vọng xuất hiện kỳ tích, hắn biểu ca có thể hiện tại lại đây, mở ra xe vận tải đâm chết này đàn hỗn đản!</p>
+<p>Ở Bạch Kình không biết đệ bao nhiêu lần quay đầu lại, bỗng nhiên từ kệ để hàng khe hở thấy có xe khai qua đi, hắn cho rằng chính mình quá khẩn trương xuất hiện ảo giác, lại nhìn chằm chằm nhìn trong chốc lát, chưa thấy được xe vận tải, lại thấy cửa cuốn bên cạnh đứng một người, đúng là hắn tâm tâm niệm niệm biểu ca! Thật sự tới!</p>
+<p>Chỉ lộ nửa người Quý Hủ, đang ở cấp Bạch Kình điệu bộ, Bạch Kình liều mạng gật đầu, nước mắt ào ào rớt.</p>
+<p>Mắt thấy siêu thị người sống sót toàn bộ chạy xong, Bạch Kình bắt lấy bên người cha mẹ, hô to một tiếng, “Ca! Tránh ra!”</p>
+<p>Bạch Đình Nham theo bản năng quay đầu lại —— oanh! Cửa cuốn mang theo cửa kính bị cùng nhau đâm bay, một chiếc xe vận tải giống như sắt thép mãnh thú giống nhau đụng phải tiến vào, cửa một lần nữa xuất hiện một bức tường! Bạch Kình sớm đã lôi kéo bên người người né tránh mở ra, Bạch Đình Nham ba người nhanh chóng nhào hướng hai bên!</p>
+<p>Xe vận tải nổ vang đâm về phía sau môn những cái đó đầu đen bộ, có người bị đâm bay, có người may mắn tránh đi va chạm, một cái đầu đen bộ phác gục trên mặt đất, đang muốn bò dậy, nghênh diện đánh xuống một cái thon dài thẳng tắp chân, Bạch Giảo Giảo đã giết lại đây!</p>
+<p>Bạch Đình Nham cũng cùng sống sót đầu đen bộ đánh lên tới, Quý Hủ cùng Tần Nghiên An một tả một hữu nhảy xuống phòng điều khiển, Quý Hủ múa may gậy bóng chày, đánh nghiêng hai người, Tần Nghiên An ra tay như điện, nhanh chóng giải quyết mấy người.</p>
+<p>“Đừng, đừng tới đây! Bằng không ta giết bọn họ!” Dư lại hai cái đầu đen bộ, nhéo Bùi Ngẩng cùng Phương Quận đương con tin, chủy thủ dính sát vào ở hai người yết hầu thượng, tùy thời đều khả năng đâm xuống, kéo người sau này lui.</p>
+<p>Đầu đen bộ không phải tùy tiện tuyển con tin, này hai người trên người bối súng phun lửa, vừa thấy liền cùng Bạch gia người một đám, phi thường hảo nhận.</p>
+<p>Bạch Kình nhặt lên trên mặt đất súng lục, hai mắt đỏ đậm, “Ta trước giết các ngươi!”</p>
+<p>Quý Hủ vội vàng ngăn cản, “Từ từ! Ngươi trước đừng kích động, khẩu súng buông!”</p>
+<p>Bạch Kình phi thường kích động, lấy thương tay kịch liệt đong đưa, hắn hoài nghi biểu ca nói sai rồi, nên buông không phải kẻ bắt cóc chủy thủ sao?</p>
+<p>Tần Nghiên An tầm mắt đảo qua hiện trường, đã minh bạch, hắn bắt lấy Bạch Kình trong tay thương, hơi dùng một chút lực, súng lục liền vỡ thành từng khối rơi trên mặt đất.</p>
+<p>Hiện trường mọi người “……”</p>
+<p>Này thương nếu là thật có thể dùng, này đó đầu đen bộ là choáng váng không cần thương, dùng chủy thủ?</p>
+<p>Bạch Kình nhìn trong tay chỉ còn thương đế giá cùng cò súng súng lục, vẻ mặt chỗ trống.</p>
+<p>Quý Hủ nhẹ nhàng thở ra, còn hảo không nổ súng, bằng không chết không phải đầu đen bộ, mà là Bạch Kình cùng phụ cận người.</p>
+<p>Lúc này đầu đen bộ nắm Bùi Ngẩng cùng Phương Quận ra bên ngoài kéo, cửa sau khẩu nằm hảo mấy thi thể, đều là bị đâm bay đầu đen bộ, Hầu Tam Nhi càng là chết đến không thể càng chết, hai người khẩn trương thối lui đến cửa sau khẩu.</p>
+<p>Bạch gia người càng thêm khẩn trương, mạt thế sau này hai cái tiểu hài tử vẫn luôn cùng bọn họ ở bên nhau, bọn họ đều là Bạch Kình đồng học, quan hệ thực hảo, gặp được như vậy sự, cũng là bị bọn họ liên lụy, bọn họ không có khả năng trơ mắt nhìn tiểu hài tử bị giết, cần phải như thế nào cứu bọn họ?</p>
+<p>Bạch Kình phụ thân Bạch Thuấn Lịch ý đồ khuyên bảo, “Các ngươi đem người thả, chúng ta tha các ngươi đi, nói được thì làm được.”</p>
+<p>Hai tên đầu đen bộ đã một chân rời khỏi cửa sau, Tần Nghiên An rũ xuống tay phải bắt đầu biến hình, tiêu pha thượng vảy bay nhanh hiện lên sau lại biến mất, tay phải cũng khôi phục bình thường.</p>
+<p>Bạch Thuấn Lịch trán đổ mồ hôi, “Chúng ta không có gì tổn thất, khẳng định sẽ không đuổi tận giết tuyệt, các ngươi đem người thả chạy nhanh đi.”</p>
+<p>Một người đầu đen bộ bị kích thích kêu to, “Các ngươi mẹ nó không tổn thất, chúng ta tổn thất lớn!”</p>
+<p>Hai tên đầu đen bộ hoàn toàn rời khỏi cửa sau nháy mắt, sau lưng đột nhiên nhào lên tới vài người, có người bắt lấy đầu đen bộ cầm đao cánh tay, đoạt hạ bọn họ chủy thủ, có người thít chặt đầu đen bộ cổ, chính là từ bọn họ trong lòng ngực đem Bùi Ngẩng cùng Phương Quận đoạt xuống dưới.</p>
+<p>Siêu thị người thực kinh ngạc, bọn họ không nghĩ tới đào tẩu người sống sót không có rời đi, mà là tránh ở bên ngoài, chờ đợi thời cơ!</p>
+<p>Đương nhiên, kinh ngạc người trung trừ bỏ Tần Nghiên An cùng Quý Hủ, Tần Nghiên An là cảm giác đến tránh ở ngoài cửa sợ hãi cảm xúc, Quý Hủ còn lại là nhìn ra có vấn đề, cửa sau rộng mở đến bây giờ không có Cuồng Thi nhào vào tới, vốn là không bình thường, bên ngoài khẳng định có người ở ngăn trở Cuồng Thi.</p>
+<p>Chế trụ đầu đen bộ những người sống sót, nắm tay không khách khí hướng hai người trên người tiếp đón, một người đầu đen bộ đột nhiên lớn tiếng gào rống lên, gắt gao ôm lấy đầu mình, thân thể không ngừng giãy giụa run rẩy, rất là thống khổ bộ dáng.</p>
+<p>“Buông tay!” Quý Hủ ra tiếng nhắc nhở.</p>
+<p>Thít chặt người nọ người sống sót vội vàng buông tay lui về phía sau, sau đó bọn họ liền thấy một cái đại người sống ở trước mặt biến mất, như là bị một cổ vô hình lực lượng sinh sôi xé nát, tiếng kêu thảm thiết không dứt, chỉ để lại từng mảnh phảng phất tro tàn giống nhau màu đen, phân dương bay xuống, chân chính rơi xuống trên mặt đất, rồi lại cái gì cũng không có.</p>
+<p>Không đợi mọi người hoàn hồn, còn sót lại đầu đen bộ đã bị dọa điên rồi, bò dậy liền chạy, trong miệng la to, lại giữa đường đột nhiên im bặt, đầu đen bộ nhằm phía phụ cận một vị bác gái, lúc này hắn đôi mắt đã chỉ còn đồng tử.</p>
+<p>Bác gái ôm một cái đại thùng rác, tạp phiên từng con quái vật, không cho chúng nó thông qua phòng tuyến, phi thường hung hãn, phát hiện sau lưng đánh tới quái vật, giơ lên thùng rác liền khấu đi lên, cùng nhau phòng thủ người trẻ tuổi bổ khuyết thêm một chân, đem quái vật đá lăn.</p>
+<p>“Chạy chạy chạy! Chạy mau!” Thật vất vả ngăn lại quái vật người sống sót tứ tán bôn đào.</p>
+<p>Bạch Thuấn Lịch đứng ở cửa sau khẩu hô to, “Bên này bên này!”</p>
+<p>Bị truy đến khắp nơi chạy trốn người sống sót, vòng một vòng lại chạy về tới, bay nhanh trốn vào siêu thị, nhanh chóng khóa lại cửa sau, hổn hển thẳng suyễn.</p>
+<p>“Nguy hiểm thật…… Hảo nguy hiểm! May mắn ta chân cẳng hảo, ngần ấy năm quảng trường vũ không bạch nhảy!” Bác gái vỗ ngực, há mồm thở dốc.</p>
+<p>Quý Hủ “……”</p>
+<p>Quý Hủ thấy nhiều chỉ biết trốn đi run bần bật bác gái, dám ôm một cái đại thùng rác liền cùng Cuồng Thi chính diện cương bác gái thật không nhiều lắm thấy, mấu chốt cái loại này lục da đại thùng rác rất trầm, nàng là như thế nào vung lên tới liền một hồi tạp?</p>
+<p>Thực mau Quý Hủ liền biết nguyên nhân, bởi vì bác gái làn da thượng không thấy một chút đốm đen, nhưng thật ra cùng bác gái đứng chung một chỗ người trẻ tuổi, làn da thượng có từng khối đốm đen.</p>
+<p>Không cần hoài nghi, bác gái là Cơ Hóa Người, hơn nữa khả năng còn cùng lực lượng có quan hệ.</p>
+<p>Bạch gia người nhìn này đó hoặc nhận thức hoặc không quen biết người, may mắn bọn họ lúc ấy không có thấy chết mà không cứu, bằng không cũng liền sẽ không có những người này, ở bọn họ gặp nạn thời điểm ra tay tương trợ.</p>
+<p>Bạch gia mấy người nhìn về phía kịp thời đuổi tới Quý Hủ hai người, rất là cảm kích, đang chuẩn bị nói cái gì đó, chợt thấy Quý Hủ sắc mặt thay đổi, Bạch Kình nôn nóng tiếng la xuất hiện ở sau người, “Ca!”</p>
+<p>Bạch gia người lúc này mới phát hiện, Bạch Đình Nham tình huống không đúng, hắn một tay chống ở trên tường, cánh tay gân xanh bạo khởi, mồ hôi lạnh xoát xoát rơi xuống, cả người đều ở kịch liệt run rẩy, hiển nhiên đang ở thừa nhận thật lớn thống khổ!</p>
+<p>“Đừng chạm vào hắn!” Quý Hủ ra tiếng ngăn cản, nhưng đã muộn rồi, Bạch Kình bị mất khống chế Bạch Đình Nham một tay quét bay ra đi, đông một tiếng đánh vào thùng xe thượng, người trực tiếp quăng ngã ngốc.</p>
+<p>Bạch gia người luống cuống, không rõ đã xảy ra chuyện gì, lại thấy Quý Hủ cùng Tần Nghiên An đã bước nhanh qua đi, một người bắt lấy hắn một cái cánh tay, không cho hắn giãy giụa nổi điên.</p>
+<p>Quý Hủ hướng về phía Bạch Đình Nham kêu gọi, “Bảo vệ cho tự mình ý thức! Đừng bị xâm chiếm!”</p>
+<p>Quý Hủ lại hướng người khác kêu, “Lấy dây thừng tới! Rắn chắc dây thừng!”</p>
+<p>Bạch gia mấy người cuống quít chạy tới kho hàng tìm tới dây thừng, Quý Hủ cùng Tần Nghiên An bắt lấy người, những người khác triền dây thừng, trói một vòng lại một vòng.</p>
+<p>Quý Hủ nhìn lỏng lẻo dây thừng, “Bó khẩn!”</p>
+<p>Bạch gia người không đành lòng xuống tay, bưu hãn bác gái bước nhanh lại đây, “Ta tới!”</p>
+<p>Bác gái tiếp nhận dây thừng, xoát xoát vài tiếng, đem Bạch Đình Nham hoàn toàn bó thành bánh chưng.</p>
+<p>Quý Hủ “Có hay không đơn độc phòng?”</p>
+<p>Bạch gia người chỉ hướng phòng bếp nhỏ, Quý Hủ chỉ huy mấy người đem Bạch Đình Nham nâng đi phòng bếp nhỏ, hướng trên giường một phóng, khóa lại môn, phóng hắn một người ở bên trong lăn lộn nổi điên.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong34.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong36.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "toan-cau-xam-nhap";
+const NOVEL_TITLE = "Toàn cầu xâm nhập";
+const CHAPTER_TITLE = "Chương 35";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

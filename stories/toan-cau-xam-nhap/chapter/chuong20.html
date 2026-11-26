@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 20</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Toàn cầu xâm nhập
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 20</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong19.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong21.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Bữa sáng là tố nhân bánh bao, cà rốt, bầu, trứng gà cùng mộc nhĩ nhân, không bị ăn mòn bột mì làm ra bánh bao, hương thật sự.</p>
+<p>Pha lê lều lớn không có cà rốt cùng bầu, Chung Trì gia có loại, hẳn là bọn họ đưa tới.</p>
+<p>“Thu dì tay nghề thật tốt quá, đặc biệt ăn ngon.” Mạch thơm nồng úc, tố nhân tiên hương, ngay cả đơn giản cháo cũng rất thơm.</p>
+<p>Miêu Lập Thu cười nói “Cả ngày bên ngoài chạy, khẳng định đói lả, ăn nhiều một chút nhi.”</p>
+<p>“Cách thật xa đã nghe thấy các ngươi gia đồ ăn thơm, lập thu này tay nghề, có rảnh nhưng đến giáo giáo ta, đồng dạng đồ ăn, ngươi làm chính là hương.” Trình mẫu người chưa đến, thanh tới trước.</p>
+<p>Trình mẫu đi vào, trên mặt tươi cười không ngừng, nàng là nghe được xe thanh, biết Quý Hủ đã trở lại, lúc này mới lại đây nhìn xem.</p>
+<p>Miêu Lập Thu cười tiếp đón người ngồi xuống ăn chút nhi, Trình mẫu nói đã ăn qua, hiện tại mọi nhà khó khăn, đều ở ăn mặc cần kiệm.</p>
+<p>Không thấy được Trình Mạch, Trình mẫu cảm thấy kỳ quái, “Mạch Mạch đâu?”</p>
+<p>Quý Hủ ăn xong bánh bao, “Còn ở thành phố, ta trước vận một đám tấn thùng trở về, lại trở về tiếp hắn.”</p>
+<p>Miêu Lập Thu lại cấp hai người bưng một mâm bánh bao, thúc giục bọn họ ăn nhiều một chút nhi, mỗi ngày bên ngoài chạy, ăn đốn cơm no không dễ dàng.</p>
+<p>Trình mẫu trên mặt cười sắp duy trì không được, “Mạch Mạch hắn ở đâu đâu? An toàn sao?”</p>
+<p>“Ở nhà ta, trong nhà có ăn có uống, chỉ cần không ra khỏi cửa liền sẽ không có nguy hiểm.” Lấy kia chỉ cơ quái thể mang đến thị giác bạo kích, Trình Mạch trong khoảng thời gian ngắn khẳng định không dám ra cửa.</p>
+<p>Trình mẫu “……”</p>
+<p>Nàng là thật lo lắng nhà mình ngốc nhi tử sẽ chạy ra đi.</p>
+<p>Trình mẫu lòng nóng như lửa đốt, “Ngươi chừng nào thì lại đi thành phố? Ta có thể hay không cùng các ngươi cùng đi?”</p>
+<p>Trên bàn cơm bốn người tất cả đều nhìn về phía nàng.</p>
+<p>Miêu Lập Thu nói “Văn Nhân, bọn họ muốn đi vận du trở về, đều là việc tốn sức, chúng ta làm không được, chúng ta chỉ cần bảo vệ tốt căn cứ chờ bọn họ trở về là được.”</p>
+<p>Nói đến bảo vệ tốt căn cứ, Miêu Lập Thu bỗng nhiên nhớ tới một chuyện, “Đúng rồi, các ngươi đi ra ngoài dọn du ngày đó, có một đám người tới gõ cửa cầu cứu, nói là trấn trên người sống sót, nghĩ đến căn cứ tị nạn, ngươi không ở, chúng ta không dám mở cửa.”</p>
+<p>Căn cứ vốn là không vài người, hơn nữa Quý Hủ, Trình Mạch, Chung gia phụ tử đều đi ra ngoài, dư lại không phải nữ nhân chính là người bệnh, bọn họ là thật sự không dám mở cửa.</p>
+<p>Quý Hủ gật đầu “An toàn quan trọng nhất.”</p>
+<p>Nghĩ đến Thu dì cùng Trương thúc đã đem hắn nói để ở trong lòng, không có tùy tiện cho người ta mở cửa.</p>
+<p>Trấn trên có tị nạn địa phương, cùng với mạo bị quái vật ăn luôn nguy hiểm chạy tới bên này, hiển nhiên đi trấn trên càng gần càng an toàn.</p>
+<p>Ngoài cửa lại có tiếng bước chân, là Chung gia phụ tử cùng Trình Kỳ Phùng tới rồi.</p>
+<p>Chung Trì cùng Chung Phong Dân vận trở về thùng xăng còn ở trên xe, không có vội vã dỡ hàng, tưởng chờ Quý Hủ trở về lại quyết định.</p>
+<p>Quý Hủ cùng Tần Nghiên An bữa sáng ăn đến không sai biệt lắm, một đám người đi theo Quý Hủ rời đi, nhiều như vậy thùng xăng cùng tấn thùng, yêu cầu chuyên môn kho hàng trữ lượng dầu mới được.</p>
+<p>Quý Hủ dẫn bọn hắn đi kho hàng lớn.</p>
+<p>Kho hàng lớn bị phân thành sáu cái độc lập kho hàng, mỗi cái độc lập kho hàng đều có một phiến đại môn, 1 hào kho hàng chính là trữ lượng dầu kho hàng.</p>
+<p>Chung gia phụ tử đều là lời nói không nhiều lắm người, xoay người đi khai xe vận tải, Trương Hữu Đức phu thê cùng Tần Nghiên An đi theo Quý Hủ đi dỡ hàng.</p>
+<p>Trình Kỳ Phùng thương ở trên cổ, miệng vết thương trọng đại, không thể có đại động tác, để tránh băng rồi miệng vết thương lại xuất huyết, chỉ có thể cầm đạo du quản đem mỡ lợn thùng du hướng tấn thùng trừu.</p>
+<p>Trình mẫu một người dọn bất động tấn thùng, cũng may Chung mẫu lại đây, hai người cùng nhau đem dỡ xuống tới tấn thùng hướng 1 hào kho hàng dọn.</p>
+<p>Chung mẫu làm quán việc tốn sức, một hơi dọn đi vào không thành vấn đề, Trình mẫu lại không được, một đoạn đường nghỉ ngơi vài lần, mới đem một cái tấn thùng đưa đến kho hàng.</p>
+<p>Chờ đem tấn thùng dọn xong, mỡ lợn thùng du đều chuyển dời đến tấn thùng, đã tới rồi giữa trưa, tam người nhà từng người về nhà chuẩn bị cơm trưa, thuận tiện tắm rửa một cái, quần áo đều bị mướt mồ hôi.</p>
+<p>Quý Hủ thẳng đến lúc này mới mở ra viện môn, mang Tần Nghiên An đi vào, “Trong nhà có năng lượng mặt trời máy nước nóng, có thể tắm nước nóng.”</p>
+<p>Tần Nghiên An ở bên ngoài liền thấy, năng lượng mặt trời đặt ở mái nhà, bên cạnh có cái bể cá to, hẳn là sau trang đi lên, dùng cho chứa đựng nước lạnh, phương tiện khi tắm điều thủy ôn, như vậy mặc dù không điện không thủy, cũng không ảnh hưởng năng lượng mặt trời máy nước nóng bình thường sử dụng.</p>
+<p>Chờ năng lượng mặt trời cùng két nước thủy dùng xong, lại dùng máy bơm nước cùng nhau tiếp nước là được.</p>
+<p>Quý Hủ đem người mang đi phòng tắm, “Ngươi trước tẩy, ta đi cho ngươi tìm thân quần áo.”</p>
+<p>Quý Hủ theo thang lầu đi tầng hầm, nơi này đồng dạng bị xây dựng thêm quá, bên trong thả một ít vật tư, đều là từ nhà kho ngầm phân ra tới, đỡ phải thường xuyên đi nhà kho ngầm lấy đồ vật, bại lộ kho hàng tồn tại.</p>
+<p>Nhà kho ngầm hoàn toàn bị phong bế dưới mặt đất, trừ bỏ Quý Hủ, không ai có thể đi vào, cũng không ai biết nhà kho ngầm cụ thể vị trí.</p>
+<p>Quý Hủ chuẩn bị không ít quần áo cùng giày vớ, bốn mùa đều có, trong ngoài y đầy đủ hết, số đo cũng tương đối toàn diện, chủ yếu là vì về sau hắn trường cao trường tráng xuyên.</p>
+<p>Bên ngoài những cái đó bị xâm nhập quá quần áo, nhan sắc ám trầm, thoạt nhìn thực cũ. Có thể mặc, chỉ là không quá rắn chắc, không chừng một cái hạ ngồi xổm liền phải xuyên quần hở đũng, không nghĩ xấu hổ, cũng chỉ có thể trước tiên chứa đựng một ít.</p>
+<p>Tần Nghiên An thân cao chân dài, Quý Hủ cầm lớn nhất mã cho hắn.</p>
+<p>Tần Nghiên An còn đứng ở phòng tắm cửa, Quý Hủ đem quần áo đưa cho hắn, “Đây là lớn nhất mã, tạm chấp nhận xuyên.”</p>
+<p>Tần Nghiên An “Cảm ơn.”</p>
+<p>Hắn xác thật yêu cầu tắm rửa một cái, từ tỉnh táo lại đến bây giờ, không phải đang đào vong chính là đang đào vong trên đường, không có thời gian cũng không cơ hội tắm rửa. Lần trước tắm rửa vẫn là ba ngày trước, ở nãi nãi gia dụng nước khoáng đơn giản lau, lúc sau liền vẫn luôn bên ngoài bôn ba.</p>
+<p>Thời tiết như vậy nhiệt, người thật sự muốn xú.</p>
+<p>Quý Hủ đi tiểu kho hàng, hắn để lại bộ năng lượng mặt trời phát điện thiết bị ở kho hàng, suy xét đến căn cứ cùng lều lớn dùng điện, hắn mua không ít quang phục bản cùng cái giá.</p>
+<p>Này đó nhưng đều là thứ tốt, một khi bị xâm nhập phá hư, cơ bản không có khả năng lại khôi phục, về sau chẳng sợ xuất hiện tân nguồn năng lượng, kia cũng không phải ai đều dùng đến khởi, miễn phí năng lượng mặt trời nguyên bãi ở trước mặt, Quý Hủ không có khả năng buông tha.</p>
+<p>Trong nhà dùng năng lượng mặt trời phát điện là được, dùng tốt cũng hảo trang bị. Quang phục trạm phát điện không phải một hai ngày có thể trang hảo, chỉ có thể chờ vội quá này trận nhi lại nói.</p>
+<p>Tần Nghiên An tắm rửa xong, không ở trong nhà tìm được Quý Hủ, ra tới liền thấy Quý Hủ ở kho hàng bên kia, chính ra bên ngoài dọn năng lượng mặt trời bản.</p>
+<p>Tần Nghiên An đi qua đi, thấy kho hàng chất đầy quang phục bản cùng cái giá, có điểm ngoài ý muốn.</p>
+<p>Tần Nghiên An “Ngươi sẽ không sợ mạt thế không có tới, này đó vật tư áp trong tay?”</p>
+<p>Quý Hủ “……”</p>
+<p>Nếu không có nắm chắc, hắn cũng không dám như vậy tiêu tiền, đối Tần Nghiên An lại không thể nói như vậy.</p>
+<p>Quý Hủ “Đương nhiên sợ, bất quá liền tính mạt thế không có tới, này đó vật tư ta cũng có thể nghĩ cách bán trao tay đi ra ngoài, không sợ áp trong tay.”</p>
+<p>Tần Nghiên An không lại hỏi nhiều, cùng Quý Hủ cùng nhau đem năng lượng mặt trời phát điện thiết bị dọn về gia.</p>
+<p>Quý Hủ đem năng lượng mặt trời bản trang ở tiểu lâu nóc nhà, cùng Tần Nghiên An cùng nhau động thủ, tốc độ thực mau, chờ Thu dì tới tìm bọn họ đi ăn cơm, đã cơ bản trang hảo.</p>
+<p>Cơm trưa sau, còn muốn đi thành phố dọn du dọn tấn thùng, Quý Hủ qua đi kêu Chung Trì ra cửa.</p>
+<p>Có Tần Nghiên An gia nhập, Chung Phong Dân không cần lại cùng đi ra ngoài mạo hiểm, bọn họ ba cái đều là Cơ Hóa Người, so với người bình thường mạng sống tỷ lệ càng cao, bị xâm lấn tỷ lệ càng thấp.</p>
+<p>Chung gia trước cửa phơi nắng không ít rau xanh, phía trước tràn đầy một xe vận tải, căn bản ăn không hết, như vậy nhiệt thời tiết, không mau chút xử lý sẽ toàn bộ lạn rớt, hơn nữa lều lớn còn ở không ngừng sản xuất, nhưng lo lắng Chung gia người.</p>
+<p>Hiện giờ nhất thiếu chính là đồ ăn, này đó rau xanh không thể lãng phí, Chung mẫu cùng Miêu Lập Thu tính toán, liền đem có thể phơi phơi khô, có thể nấu nấu chín, có thể yêm ướp, tận khả năng bảo tồn xuống dưới.</p>
+<p>Muốn ướp, liền yêu cầu đại lượng gia vị cùng bình, Chung mẫu dặn dò Chung Trì ra ngoài nhiều tìm chút trở về.</p>
+<p>Ba người đang muốn rời đi, liền thấy Chung Phong Dân ôm đại sọt từ một cái lều lớn ra tới, “Các ngươi từ từ, đem cái này mang lên.”</p>
+<p>Chung Phong Dân đem tràn đầy một sọt quả nho đặt ở trên mặt đất, màu nho đến biến thành màu đen, mỗi một viên đều có đốt ngón tay trường, nhìn phi thường mê người.</p>
+<p>Chung Phong Dân lấy mũ rơm quạt gió, đầy mặt ưu sầu, “Hiện tại đúng là quả nho thành thục quý, suốt năm mẫu quả nho a, ăn lại ăn không hết, bán cũng bán không ra đi, thật muốn lạn trong đất, các ngươi mang theo trên đường ăn, giải khát, còn có thể bổ sung đường phân.”</p>
+<p>Mấy năm nay trái cây giá cả cư cao không dưới, Chung gia cũng cân nhắc loại chút trái cây, bọn họ liền chọn ba loại quen thuộc thả am hiểu trái cây gieo trồng, tiền lời không tồi. Nguyên bản còn nghĩ, năm nay mùa thu lại đằng ra một cái lều lớn loại trái cây, chỉ chừa hai cái lều lớn trồng rau rau là được, nơi nào có thể nghĩ đến nhân loại sẽ gặp được như vậy tai nạn?</p>
+<p>Quý Hủ hái được một viên quả nho, tùy tiện xoa xoa bỏ vào trong miệng, thịt quả giòn sảng, nước sốt chua ngọt thơm ngọt, ăn rất ngon.</p>
+<p>Đối người khác tới nói, mạt thế còn không đến một tháng, đối Quý Hủ tới nói, cũng đã ba năm, suốt ba năm hắn đều không có ăn qua bình thường đồ ăn, trái cây càng là tưởng cũng đừng nghĩ.</p>
+<p>Chung gia lều lớn trừ bỏ quả nho ở ngoài, còn có thanh long cùng quả táo, các chiếm một cái lều lớn, quả táo thành thục còn sớm, thanh long cũng mau thành thục, hiện tại nhất quan trọng chính là quả nho.</p>
+<p>Loại này quả nho rất cao sản, đằng giá thượng treo đầy chuỗi dài quả nho, hoà bình niên đại đó là phi thường khả quan, hiện tại lại có điểm sầu người.</p>
+<p>Mạt thế lúc đầu, xã hội trật tự tan vỡ, mọi người còn sống ở hỗn loạn cùng sợ hãi trung, căn cứ không có hình thành, vô pháp làm giao dịch, chỉ có thể trước tận khả năng kéo dài bảo tồn thời gian, một tháng sau sẽ có căn cứ lục tục thành lập lên.</p>
+<p>Quý Hủ nói “Ta cho các ngươi kiến cái phong bế kho hàng, có thể đem thành thục trái cây cùng rau xanh bỏ vào đi, nếu có thể tìm được khối băng liền lộng chút trở về, kéo dài giữ tươi thời gian.”</p>
+<p>Hắn xây dựng thành lũy độ ấm thích hợp, so với bên ngoài cực nóng, bảo tồn thời gian khẳng định càng dài, nếu có khối băng bỏ vào đi, giữ tươi thời gian chỉ biết càng dài.</p>
+<p>Quý Hủ tiến vào ý thức thế giới, vì gia tăng giữ tươi hiệu quả, cố ý đem vách tường tăng hậu, thuần hắc ý thức thế giới, chỉ có tinh thần năng lượng ở xây dựng kho hàng mô hình.</p>
+<p>Kho hàng mô hình rất đơn giản, chính là một cái phong bế hình chữ nhật, Quý Hủ ở điều chỉnh tỷ lệ thời điểm, phát hiện thuần hắc thế giới bên cạnh, sương trắng giống như trở nên loãng.</p>
+<p>Hắn nhìn kỹ hướng sương trắng thế giới, quay cuồng sương trắng trung, mơ hồ có hắc ảnh hiện lên.</p>
+<p>Quý Hủ nỗ lực muốn nhìn thanh đó là thứ gì, liên tục không ngừng đau đầu đột nhiên tăng lên, hắn không có từ bỏ, cắn răng chống đỡ, liền mau thấy rõ kia hắc ảnh chân thật bộ dáng!</p>
+<p>Quý Hủ sở hữu lực chú ý đều ở hắc ảnh thượng, không chú ý bên cạnh sương trắng đã xâm lấn hắc ám thế giới, nhất tới gần bên cạnh kho hàng mô hình đứng mũi chịu sào, nhè nhẹ từng đợt từng đợt sương trắng rót tiến kho hàng mô hình……</p>
+<p>Đầu tạc đau, tự mình ý thức đã chịu xâm nhập, một tấc tấc xé rách ăn mòn, Quý Hủ ý thức có nháy mắt chỗ trống, trường kỳ dưỡng thành cảnh giác cùng ý thức phòng thủ, làm hắn lập tức ý thức được loại này đau nhức ý nghĩa cái gì.</p>
+<p>Hắn ý thức chính đã chịu xâm lấn.</p>
+<p>Nhưng hắn đã đạt tới Hoàn Mỹ Cơ Thái, xâm lấn hắn tinh thuần hắc ám vật chất đã bị hắn hoàn toàn cắn nuốt, không có khả năng tro tàn lại cháy.</p>
+<p>Trừ phi…… Hắn bị lần thứ hai xâm lấn!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong19.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong21.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "toan-cau-xam-nhap";
+const NOVEL_TITLE = "Toàn cầu xâm nhập";
+const CHAPTER_TITLE = "Chương 20";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 32</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Bị đọc tâm sau thành thiên cổ minh quân
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 32</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong31.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong33.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Ngày 10 tháng 11, ba năm một lần đại nguy nhân viên công vụ khảo thí —— khoa cử chính thức bắt đầu rồi.</p>
+<p>Đại nguy khoa cử khảo thí chia làm ở trong huyện tổ chức một năm một làm đồng thí, thông qua đồng thí thí sinh liền gọi đồng sinh.</p>
+<p>Đồng sinh tham gia mỗi năm một lần huyện thí cùng viện thí, thông qua viện thí thí sinh liền có công danh, thành tú tài, có được tú tài công danh có thể thấy được quan không quỳ, tú tài danh nghĩa hai mươi mẫu đất có thể miễn thuế, tú tài nhưng miễn trừ lao dịch, trở thành đầu danh lẫm sinh nhưng miễn 30 mẫu đất thuế, có được mỗi tháng một lượng bạc tử lẫm sinh tiền trợ cấp, cho nên đại nguy giai cấp chia làm sĩ nông công thương, sĩ ở đằng trước, địa vị tối cao. Phàm là trong nhà không có trở ngại nhân gia đều hy vọng nhà mình con cháu đọc sách.</p>
+<p>Đương nhiên nghèo khổ nhân gia cũng có cắn răng đưa tử đưa tôn tiến học đường, nếu là thi đậu tú tài, nhà này cũng coi như là xoay người, nếu là lại thi đậu cử nhân cùng tiến sĩ, kia mới thật là phần mộ tổ tiên thượng mạo khói nhẹ.</p>
+<p>Tú tài mới có thể tham gia ba năm một làm thi hương, thi hương giống nhau ở châu phủ tổ chức, thông qua thi hương liền thành cử nhân, cử nhân liền có thể tuyển quan, nhưng giống nhau là huyện thừa linh tinh tiểu quan.</p>
+<p>Nếu tưởng lại tiến thêm một bước, liền muốn đi trước kinh thành tham gia ba năm một làm kỳ thi mùa thu, kỳ thi mùa thu chia làm thi hội cùng thi đình, viện thí liền tính là nhân viên công vụ khảo thí trung thi viết.</p>
+<p>Nhưng thi hội muốn khảo ba ngày, trong ba ngày này ăn uống tiêu tiểu đều phải ở một cái tiểu ô vuông giải quyết, giống nhau thân thể không người tốt thật đúng là không chịu nổi, hàng năm có thi khoa cử khảo một nửa ngất xỉu đi thí sinh, rất nhiều người thi xong lúc sau cũng bệnh nặng một hồi.</p>
+<p>Hạ Sơ Chu cau mày, khách quan mà đối đãi này cổ nhân khắc nghiệt thậm chí có vài phần biến thái khoa cử khảo thí quy củ, kỳ thật vẫn là có vài phần đạo lý.</p>
+<p>Này khoa cử khảo thí chủ yếu mục đích là cái gì? Là tuyển chọn nhân tài.</p>
+<p>Tuyển chọn nhân tài nhất quan trọng là, là công bằng, muốn ở hữu hạn nhân lực tài nguyên hạ, hoàn thành một hồi ba ngày đại hình khảo thí.</p>
+<p>Cần thiết phải làm ra một ít hy sinh, tỷ như làm thí sinh tự mang ba ngày lương khô, viện thí không đề cập tới cao thức ăn, này không phải vì tiết kiệm phí tổn, mà là vì tránh cho có người mượn cung cơm khoảnh khắc gian lận.</p>
+<p>Mà một hồi khảo thí khảo ba ngày, cũng từ trình độ nhất định thượng si trừ bỏ thân thể không người tốt, cũng coi như là biến tướng một loại kiểm tra sức khoẻ.</p>
+<p>Cho nên, từ trình độ nhất định thượng, khoa cử khảo thí đích xác có thể tuyển chọn nhân tài, Hạ Sơ Chu bởi vì minh quân hệ thống nguyên nhân, có thể nhìn đến triều quan nhóm thuộc tính, cơ hồ đều thực không tồi, có thể đảm nhiệm bản chức công tác, cho nên biết hắn thuộc hạ cũng coi như là có người nhưng dùng, nhưng có người nhưng dùng cùng có dùng tốt người là hai việc khác nhau nhi.</p>
+<p>Tỷ như này mới nhất pha lê xưởng, xưởng xi măng cùng xưởng rượu, còn có về sau tinh dầu xưởng thậm chí quan doanh ăn uống chờ, làm này đó bình quân tuổi tác đều cao hơn 50 tuổi, quan chức đều không thua kém tam phẩm nhị triều thậm chí tam triều lão thần đi làm, đã đại tài tiểu dụng cũng không thích hợp, không bằng chính mình chọn lựa một ít càng tuổi trẻ, tiếp thu năng lực càng cường, tính dẻo cũng càng cường nhân tài, như vậy được đến nhân tài phương pháp tốt nhất chính là gần nhất trận này khoa cử khảo thí.</p>
+<p>Cho nên Hạ Sơ Chu đối trận này khoa cử khảo thí cũng phá lệ coi trọng chút, tuy rằng ba năm trước đây thân thể này nguyên thân mới vừa đăng cơ khi cũng bỏ thêm ân khoa, nhưng bởi vì nguyên thân tính cách, kia tràng khoa cử khảo thí cũng là từ Lễ Bộ phụ trách, nguyên thân không có quá để bụng, tuyển cũng là chút chỉ tinh thông thơ từ ca phú, ở trị quốc quản lý phương diện ngược lại không quá am hiểu nhân tài, trước tả tướng Hoắc Tùng không quá xem trọng, cũng liền không có đề bạt phân công, hiện giờ trừ bỏ một giáp ba gã vào Hàn Lâm Viện, đại đa số đều phái đến nơi khác.</p>
+<p>Năm nay tham gia khoa cử tiến sĩ đều biết, bệ hạ nửa năm trước bắt đầu cần chính ái dân, ba năm trước đây kia tràng khoa cử bệ hạ lúc ấy cũng không tính coi trọng, năm nay trận này khoa cử mới có thể coi như tân đế đăng cơ trận đầu ân khoa, trúng người đã chịu bệ hạ trọng dụng tỷ lệ so về sau vài thập niên đều phải lớn hơn rất nhiều, cho nên này đó cử nhân đều phá lệ may mắn, nhưng lại phá lệ thấp thỏm, bởi vì ba năm trước đây bệ hạ yêu thích thơ từ ca phú khi, tham gia khoa cử còn sờ đến chuẩn bệ hạ yêu thích, viết văn chương muốn viết một ít hoa đoàn cẩm thốc văn chương, mới có thể đến bệ hạ ưu ái.</p>
+<p>Nhưng hôm nay, vị này bị truyền đến ồn ào huyên náo thần tiên hạ phàm bệ hạ, cùng dĩ vãng đồn đãi hoàn toàn bất đồng, vừa không yêu thích thơ từ ca phú, cầm kỳ thư họa, cũng không thích đi săn tuần du, ngược lại mân mê ra xi măng pha lê linh tinh kỳ vật, này đó bọn họ gian khổ học tập khổ số ghi mười năm cũng không có đọc qua, như vậy nên như thế nào đón ý nói hùa này tân đế yêu thích đâu?</p>
+<p>Bất quá đã có thấp thỏm mơ hồ, tự nhiên cũng có rõ ràng minh bạch.</p>
+<p>Lương văn hạo là trí minh hai năm cử tử, cũng là Ích Châu Giải Nguyên. Cùng đại đa số thí sinh xuất thân thư hương dòng dõi bất đồng, hắn là hàn môn xuất thân, tổ tiên mười mấy đại bần nông, trong thôn tú tài phu tử một lần ngẫu nhiên gặp được hắn, thấy hắn thông tuệ dị thường, đã gặp qua là không quên được, một văn chưa thu hắn quà nhập học, làm hắn đã bái phu tử, ở tú tài phu tử tư thục bất quá ba năm, liền thi đậu đồng sinh, năm sau liền thi đậu tú tài, thi đậu tú tài khi mới bất quá mười hai tuổi.</p>
+<p>Lương văn hạo bần nông xuất thân, tuy đi theo phu tử đọc sách, giúp trong nhà làm việc nhà nông lại một chút cũng không có chậm trễ, mười hai tuổi trung tú tài khi, trong nhà tuy miễn hai mươi mẫu điền thuế, nhưng mẫu thân nhiều bệnh trường kỳ uống dược, trong nhà vẫn là thu không đủ chi, cho nên hắn mười hai tuổi liền ở trong huyện tiệm sách chép sách, thế nhà người khác viết thư trợ cấp gia dụng, cho nên so với đại đa số không biết sầu là vật gì cử tử tới nói, hắn nhiều năm như vậy vẫn luôn ở vào sầu lo trung.</p>
+<p>Thẳng đến năm trước hai mươi tuổi thi đậu cử nhân, hắn mới cảm thấy cả người thả lỏng lại.</p>
+<p>Bởi vì gánh sự đến sớm, lương văn hạo ngược lại tự nhận là hiểu biết đương kim bệ hạ yêu thích, nào đó trình độ đi lên nói, hắn cho rằng hắn cùng bệ hạ tình cảnh ý tưởng có nhất định tương đồng, hắn sầu lo gia bần thu không đủ chi, không có tiền mua mẫu thân dược. Bệ hạ cũng sầu lo quốc khố thiếu hụt, không có tiền đi bổ khuyết năm nay nhị châu nạn dân, mới có thể lấy ra xi măng pha lê phương thuốc tới tràn đầy quốc khố.</p>
+<p>Hắn tâm hệ người trong nhà vô luận nam nữ già trẻ, đều là hắn giống nhau thân người nhà, muốn đem bọn họ nạp vào cánh chim dưới. Bệ hạ cũng tâm hệ đại nguy bá tánh vô luận nam nữ già trẻ, tưởng đem bọn họ nạp vào cánh chim dưới, mới có thể tháng trước đế tuyên bố nữ tử cũng có thể đọc sách khoa cử, hướng mấy vạn bá tánh bảo đảm mười năm nội tất làm sở hữu đại nguy bá tánh ăn cơm no.</p>
+<p>Cho nên, bệ hạ muốn loại người như vậy mới, đã vừa xem hiểu ngay. Hắn tuổi trẻ trên sống lưng gánh toàn bộ đại nguy, tự nhiên muốn thay hắn chia sẻ nhân tài, bệ hạ vừa không yêu cầu viết ra hoa đoàn cẩm thốc tài tử, cũng không cần cao đàm khoát luận Đàm gia, càng không cần thanh cao cao ngạo thanh lưu, hắn yêu cầu làm thật sự người.</p>
+<p>Nếu bệ hạ thật là thần tiên hạ phàm, hắn đã đến là vì làm đại nguy lại lần nữa đi hướng cường thịnh, nếu hắn thật sự có thể lấy ra vô cùng vô tận tiên vật, như nước bùn pha lê linh tinh, nếu hắn thật sự muốn cho nữ tử cũng đọc sách thi khoa cử, như vậy chúng ta vị này tuổi trẻ bệ hạ, chính là một cái xưa nay chưa từng có cách tân giả, hắn còn sẽ có vô số cách tân, tự nhiên yêu cầu nghe lời thả thiện biến khéo đưa đẩy, làm việc năng lực lại cường thần tử, cho nên viết văn chương, đã không thể hoa đoàn cẩm thốc, cũng không thể cao đàm khoát luận, ngược lại muốn tả thực sự, muốn ngắn gọn sáng tỏ, muốn bày ra ra thái độ cùng quyết tâm.</p>
+<p>Cho nên, lương văn hạo đi theo 3000 danh cử nhân tiến vào trường thi khi, không có này đó thí sinh bồi hồi mê mang, ngược lại kiên định dị thường.</p>
+<p>Đương nhiên, cũng có mấy vị thí sinh, đã có nhạy bén cao ngạo thế gia con cháu, cũng có khéo đưa đẩy cơ trí thương nhân con cháu, cũng có giản dị tự nhiên giang hồ chi tử, bọn họ hoặc từ tự thân trải qua, hoặc từ xem người trí tuệ, ẩn ẩn đoán được đương kim vị này bệ hạ ra sao yêu thích, nhưng những lời này, liền không cần đối người ngoài nói.</p>
+<p>Ba ngày thi hội sau khi kết thúc, năm nay quan chủ khảo Lễ Bộ thượng thư nhìn này 3000 phân khoa cử bài thi, hết đường xoay xở, không có đầu mối.</p>
+<p>Này thượng một lần khoa cử khảo thí, cứ việc tuyển một ít văn phong tuyệt đẹp hoa lệ văn chương, bệ hạ nhất định thích, này hiện giờ bệ hạ, đến tột cùng thích cái gì, hắn nhưng thật ra hoàn toàn không biết gì cả, khó trách còn lại năm bộ đều đến bệ hạ coi trọng, chỉ có bọn họ Lễ Bộ, gần đây bệ hạ mới nhớ tới, an bài một ít việc tới.</p>
+<p>Bất quá Lễ Bộ thượng thư tuy rằng không biết, nhưng hắn biết, có một người nhất định biết, đó chính là đương kim tả tướng Tiền Chi Vinh, đừng nhìn tiền tương ngày thường vui tươi hớn hở, một bộ hoạt không lưu thu, cái gì cũng không dính bộ dáng. Nhưng muốn nói này toàn bộ triều đình, nhất xem đến minh bạch người, nhất định là tiền tướng.</p>
+<p>Vô luận là bệ hạ lấy ra xi măng pha lê, làm tân xưởng làm tân bộ môn, thậm chí bệ hạ một ít kinh thiên cử chỉ, tiền tương đều không có phản đối quá, giống như vị này không bằng trước kia vị kia đại nghịch bất đạo Hoắc Tùng, có năng lực làm việc.</p>
+<p>Nhưng tiền tương tiếp thu đại bộ phận Hoắc Tùng sự vụ, đến nay không có ra quá một cái cái sọt, này tiền tương a, ai cũng không biết hắn có bao nhiêu đại năng lực, đừng nhìn hắn 60 nhiều, chuyện này không cho hắn, hắn cũng xem đến khai. Chuyện này toàn giao cho hắn, hắn cũng tiếp được trụ.</p>
+<p>Xem người cũng là, xem đến minh bạch, này Hoắc Tùng cũng là đem kinh quan non nửa đều kéo xuống mã, này tiền tương cũng có thể tìm được thích hợp người điền thượng, vô luận là cùng hắn thân sơ viễn cận, hắn đều xem đến minh bạch, an bài vị trí cũng không tồi, những người này là có thể làm hảo vị trí thượng chuyện này.</p>
+<p>Vị này nước chảy bèo trôi tiền tướng, hiện giờ lại so với tiền triều tuổi trẻ khi, đương kim bệ hạ hoàng gia gia ở khi, càng cẩn thận, nếu không phải xem minh bạch, nhận đồng đương kim bệ hạ, cớ gì như thế.</p>
+<p>Cho nên lấy tiền tương nhãn lực, này bệ hạ hảo loại người như vậy mới, nhất định rõ ràng.</p>
+<p>Này Lễ Bộ thượng thư bái phỏng tiền tương là lúc, Tiền Chi Vinh chạy nhanh đem Lễ Bộ thượng thư đẩy ra đi.</p>
+<p>“Lư hưng văn, khoa khảo trong lúc, ngươi không chủ trì phê duyệt bài thi, tới gặp ta làm cái gì?”</p>
+<p>Này khảo khoa trong lúc, gặp riêng quan chủ khảo chính là nói không rõ.</p>
+<p>“Tiền tướng, này bệ hạ có thông thiên khả năng, nếu ta thật sự có gây rối chi tâm, bệ hạ xem cái kia bát quái không phải biết. Hạ quan tới xác thật là có việc muốn nhờ.”</p>
+<p>Tiền Chi Vinh lúc này mới phóng Lễ Bộ thượng thư tiến vào, tròng mắt vừa chuyển, liền biết này Lễ Bộ thượng thư vì sao mà đến.</p>
+<p>“Lư hưng văn, ngươi có phải hay không sờ không chuẩn bệ hạ yêu thích, cho nên không dám phê duyệt bài thi.”</p>
+<p>Lễ Bộ thượng thư sờ sờ đầu, mới ngượng ngùng mà trả lời nói “Đúng là.”</p>
+<p>Tiền Chi Vinh cười ha ha “Ngươi Lễ Bộ thượng thư, thiên tử cận thần cũng sờ không chuẩn bệ hạ yêu thích, này 3000 thí sinh có thể hợp bệ hạ tâm ý chỉ sợ cũng càng thiếu.”</p>
+<p>Lễ Bộ thượng thư bất đắc dĩ nói “Tiền tướng, ngài liền lần này giúp giúp hạ quan, cũng là thế đại nguy tuyển nhân tài không phải sao?”</p>
+<p>Tiền Chi Vinh cười nói “Ngươi xem bệ hạ tân thành lập thiếu công giam, ba vị Giam Tư, này có mồm mép có thể nói, có có thể viết có thể tính, có có thể nghiên cứu có thể nghiên cứu, cho nên a, chỉ cần là nhân tài, đối bệ hạ đều hữu dụng, có một mặt hoặc vài lần đặc biệt xông ra, cứ việc muốn.”</p>
+<p>Lễ Bộ thượng thư cẩn thận ngẫm lại “Xác thật cũng là.”</p>
+<p>Tiền Chi Vinh tiếp theo nói “Bất quá a?”</p>
+<p>“Bất quá cái gì?” Lễ Bộ thượng thư vội vàng hỏi.</p>
+<p>“Bất quá a, có một loại người bệ hạ là sẽ không muốn, bệ hạ là thần tiên hạ phàm, sở tư sở tưởng cùng thế gian bất đồng, muốn đem này đại nguy cũng cải biến thành như Tiên giới giống nhau bộ dáng, cho nên cái loại này luôn là chi, hồ, giả, dã, tổ tông phương pháp không thể đổi, bệ hạ trăm triệu không thể ngoan cố người, đối bệ hạ là một tia tác dụng cũng không có, bệ hạ là sẽ không muốn.”</p>
+<p>Lễ Bộ thượng thư bừng tỉnh đại ngộ, vội vàng trở về phê duyệt bài thi.</p>
+<p>5 ngày lúc sau, Hạ Sơ Chu trên bàn chỉnh chỉnh tề tề bày 120 vị cử nhân bài thi, không có gì bất ngờ xảy ra nói, này 120 vị cử tử giữ gốc chính là này giới khoa cử tiến sĩ.</p>
+<p>Hạ Sơ Chu cầm lấy mấy phân tinh tế xem xét, không biết qua bao lâu, mới nhìn về phía phía dưới chờ Lễ Bộ thượng thư.</p>
+<p>“Lư ái khanh làm được không tồi, đều là đại nguy lương đống chi tài.”</p>
+<p>【 ngày thường xem ngươi so mặt khác năm bộ thượng thư lăng, không nghĩ tới cũng cho trẫm lớn như vậy kinh hỉ, thật đúng là cái dạng gì nhân tài đều có a, còn không có cái loại này vừa thấy văn chương làm người liền lải nhải dài dòng, chẳng lẽ Lễ Bộ thượng thư ngươi là trí tuệ nếu lăng? 】</p>
+<p>【 hay là ngươi là chịu quá cao nhân chỉ điểm? 】</p>
+<p>Thật chịu quá cao nhân chỉ điểm Lễ Bộ thượng thư xoa xoa mồ hôi lạnh, trong lòng yên lặng rơi lệ, ô ô ô bệ hạ nói ta lăng, ta không sống.</p>
+<p>Ngày 20 tháng 11, thi hội thông qua 120 vị cống sinh tiến vào trong cung, tham gia này khoa cử khảo thí cuối cùng một bước —— thi đình, quan chủ khảo không phải người khác, đúng là đương kim bệ hạ.</p>
+<p>Các thí sinh tiến vào triều kiến điện, trong điện đứng chính là hơn mười vị tam phẩm trở lên triều quan, nếu là ngày thường gặp được trong đó một vị, sợ là cũng là thiên đại may mắn, nhưng hôm nay này đại nguy quyền quý nhóm, cung cung kính kính mà đứng ở chỗ này, lúc này, này đó quan lớn cùng bọn họ cũng không bất đồng, đều nhìn lên cao ngồi trên cao đường long ỷ phía trên vị nào, đương kim bệ hạ.</p>
+<p>Lúc này nhát gan thí sinh đã bị trên long ỷ vị kia uy hiếp dọa đến run bần bật, mà lá gan đại lại lặng lẽ ngẩng đầu, nhìn liếc mắt một cái đương kim bệ hạ, tuy rằng mũ miện lúc sau mặt xem không rõ lắm, bệ hạ xác thật có tiên nhân chi tư.</p>
+<p>【 lá gan rất đại sao, tiểu tử, nhớ kỹ ngươi. Dám trộm xem trẫm, không thấy ngươi bên cạnh vị kia đều sợ hãi sao? 】’</p>
+<p>Nghe thấy lời này, Lục Lan thương nhìn liếc mắt một cái chính lén lút xem bệ hạ người, phát hiện này thí sinh còn lớn lên nhân mô cẩu dạng, thấy thế nào như thế nào không vừa mắt, thật là cuồng vọng đồ đệ, cả gan làm loạn, nội tâm yên lặng cho hắn nhớ một bút.</p>
+<p>Hạ Sơ Chu vì hôm nay thi đình, nhịn đau hoa hắn tích góp lên suốt một ngàn tích phân, đổi một ngày nhưng xem người xa lạ thuộc tính bàn tay vàng.</p>
+<p>【 trẫm một ngàn tích phân a, tâm hảo đau, nếu là không có tuyển ra vài người mới, làm trẫm tổn thất vãn hồi một chút. 】</p>
+<p>【 trẫm nhất định…… Trẫm giống như cũng làm không được cái gì, trẫm tích phân, đừng rời khỏi trẫm a! Ô ô ô ô!!! 】</p>
+<p>Triều quan nhóm nghe được bệ hạ đau mình thanh, yên lặng nhìn này giới khoa cử khảo thí quan chủ khảo —— Lễ Bộ thượng thư, ngươi tốt nhất đôi mắt lợi một chút, nếu là lãng phí bệ hạ một ngàn tích phân, chúng ta sẽ không bỏ qua ngươi.</p>
+<p>Lễ Bộ thượng thư mồ hôi như mưa hạ, yên lặng cho chính mình cổ vũ, ta chịu quá cao nhân chỉ điểm, nhất định không thành vấn đề.</p>
+<p>Đại nguy thi đình chia làm sách văn cùng thi vấn đáp.</p>
+<p>Đương trường hướng 120 danh thí sinh phát bài thi, căn cứ đề thi, viết một thiên 800 tự đến một ngàn tự sách văn, một canh giờ sau, sách văn kết thúc.</p>
+<p>Mà này một trăm nhị phân bài thi, đương trường nộp bệ hạ phê duyệt.</p>
+<p>Hạ Sơ Chu nhìn kỹ này 120 bài thi, cùng sử dụng hồng bút ở mặt trên ngoắc ngoắc tuyển tuyển, phía dưới các đại thần nhìn không chiếu tổ tiên quy củ bệ hạ, đã hoàn toàn đã thấy ra.</p>
+<p>Lúc này trong điện các đại thần không nói một lời, phía dưới thí sinh càng là một chút động tĩnh cũng không dám có, đại điện bên trong châm rơi có thể nghe.</p>
+<p>Tại đây trong điện chờ đợi trong khoảng thời gian này, là các thí sinh nhân sinh nhất dài dòng chờ đợi thời gian, bởi vì này đem quyết định bọn họ cả đời.</p>
+<p>Hai cái canh giờ lúc sau, Hạ Sơ Chu xem xong cuối cùng một trương bài thi, mà hắn trên bàn bài thi chia làm hai chồng, một chồng có 110 trương, một chồng chỉ có mười trương.</p>
+<p>Hạ Sơ Chu cầm lấy này mười trương bài thi, phía dưới triều thần đều minh bạch này mười trương bài thi chủ nhân ít nhất sẽ là nhị giáp tiến sĩ.</p>
+<p>Hạ Sơ Chu cầm lấy đệ nhất trương bài thi “Yến minh là vị nào thí sinh?” Hạ Sơ Chu xem qua yến minh thi hội cùng thi đình bài thi, đều lời nói thực tế, làm hắn ấn tượng khắc sâu.</p>
+<p>Yến minh năm nay 25 tuổi, năm nay là hắn lần thứ hai vào kinh thành đi thi, hắn văn phong giản dị, ba năm trước đây liền thi rớt.</p>
+<p>Lần này tham gia khoa cử, phu tử cùng bạn bè đều nói bệ hạ ái hoa lệ cẩm tú văn chương, lần trước mới thi rớt, lần này nhất định phải viết chút hoa mỹ từ ngữ trau chuốt, liền tính là phù hoa một ít cũng không sao, chớ có giống lần trước giống nhau viết đến giản dị tự nhiên, nhưng lần này đi thi, yến minh đó là ngày ấy kinh thành hí kịch đại tái mấy vạn danh người xem chi nhất, cũng coi như là gặp qua bệ hạ một mặt, hắn ngược lại không cảm thấy hiện giờ bệ hạ hảo cẩm tú văn chương, vì thế lần này thi hội cùng thi đình, liền không có ấn phu tử cùng bạn bè theo như lời, văn chương vẫn là viết đến phi thường giản dị.</p>
+<p>Yến minh đứng ra.</p>
+<p>Hạ Sơ Chu mở ra một ngày bàn tay vàng.</p>
+<p>[ yến minh</p>
+<p>Tuổi tác 25</p>
+<p>Thân phận Thanh Châu cử nhân, lâm đông tiêu cục Tổng tiêu đầu tam tử.</p>
+<p>Văn học 85</p>
+<p>Võ nghệ 65</p>
+<p>Mưu lược 49</p>
+<p>Nhân tế 81</p>
+<p>Đạo đức 92</p>
+<p>Trung thành 78</p>
+<p>Nhìn đến yến minh là lâm đông tiêu cục Tổng tiêu đầu chi tử, nhưng thật ra có vài phần hứng thú. Lâm đông tiêu cục là đại nguy lớn nhất tiêu cục, này yến minh là này Tổng tiêu đầu tam tử, nói vậy không phải trưởng tử không thể kế thừa gia nghiệp, liền làm này đọc sách khoa khảo, cho chính mình tránh cái tiền đồ.</p>
+<p>“Yến minh, trẫm xem ngươi trạm tư, chỉ sợ là hàng năm học võ người.”</p>
+<p>Yến minh có chút không hiểu ra sao, này bệ hạ không hỏi hắn tài học cùng sách luận, ngược lại hỏi hắn có phải hay không luyện qua võ, hắn cũng không phải tham gia võ khoa cử a.</p>
+<p>“Hồi bệ hạ, thảo dân là lâm đông tiêu cục Tổng tiêu đầu chi tử, từ nhỏ luyện võ. Trừ bỏ đọc sách viết chữ, có khi cũng giúp tiêu cục áp giải tiêu vật.”</p>
+<p>Lục Lan thương nghe được học võ hai chữ, trong lòng lộp bộp một tiếng, nhìn thoáng qua yến minh, trường thở dài nhẹ nhõm một hơi, trong lòng nguy cơ giải trừ, này cống sinh võ công thường thường, không phải bệ hạ muốn hình lục giác chiến sĩ.</p>
+<p>Hạ Sơ Chu “Nhưng thật ra không tồi, xem như văn võ song toàn.”</p>
+<p>【 không kiêu ngạo không siểm nịnh, nhất quan trọng là còn có kinh nghiệm, này không phải trời sinh tương lai đại nguy bưu chính tổng cục người sao? Không tồi không tồi, lưu dụng. Tiên tiến Hàn Lâm Viện đãi một trận mài giũa tâm tính, chờ trẫm tưởng làm hậu cần đến lúc đó lại dùng. 】</p>
+<p>Lương văn hạo xem bệ hạ cái thứ nhất yêu cầu yến minh, xác thật như hắn sở liệu, bệ hạ vừa ý giản dị thật làm người, này yến minh không một ti phù hoa chi khí.</p>
+<p>Hạ Sơ Chu cầm lấy hạ một phần bài thi “Hàn hưu.”</p>
+<p>Lệnh lương văn hạo không thể tưởng được chính là, này Hàn hưu là một vị thế gia công tử, trang điểm rêu rao, loại người này, chỉ sợ viết đều là cẩm tú văn chương. Vì sao cũng có thể bị bệ hạ lựa chọn? Chẳng lẽ hắn suy đoán là sai, vốn dĩ cho rằng hắn ít nhất có thể đến một cái nhị giáp, hiện giờ xem ra có lẽ không diễn.</p>
+<p>Hạ Sơ Chu nhìn này Hàn hưu, Hàn gia ra hơn ba mươi danh tiến sĩ, hai vị thừa tướng, tam phẩm trở lên quan lớn mười một vị, là danh xứng với thực thế gia. Hắn lựa chọn sử dụng nhân tài, vô luận xuất thân, tự nhiên cũng là vô luận xuất thân tốt, này Hàn hưu xác thật lời nói thực tế, đến nỗi từ ngữ trau chuốt hoa lệ, làm người nhìn qua cũng có vài phần phù hoa, đảo không ảnh hưởng toàn cục.</p>
+<p>Hạ Sơ Chu hỏi Hàn hưu vài câu, Hàn hưu đáp đến đều không tồi, chính là lời nói chi gian có vài phần ngạo khí. Hạ Sơ Chu xem xét Hàn hưu thuộc tính.</p>
+<p>[ Hàn hưu</p>
+<p>Tuổi tác 21</p>
+<p>Thân phận Tịnh Châu cử nhân, xuất thân thế gia Hàn gia</p>
+<p>Văn học 90</p>
+<p>Võ nghệ 10</p>
+<p>Mưu lược 90</p>
+<p>Nhân tế 30</p>
+<p>Đạo đức 84</p>
+<p>Trung thành 58</p>
+<p>Hạ Sơ Chu nhìn này Hàn hưu thuộc tính, này mưu lược đặc biệt cao, không hổ là thế gia xuất thân, trong bụng là có điểm hắc. Bất quá này nhân tế quan hệ có điểm kém a, bất quá xem này Hàn hưu tham gia thi đình gặp mặt hoàng đế cũng ăn mặc như thế rêu rao, chắc là không quá thảo đại bộ phận là lão cũ kỹ người đọc sách thích, bất quá sao, này Hàn hưu loại người này khẳng định tương đương tự phụ, nhưng các hạng chỉ số xác thật cũng không tồi. Chính là này trung thành độ sao.</p>
+<p>【 cũng không tồi, bất quá một giáp ngươi là không cần suy nghĩ, sợ ngươi kiêu ngạo. Trước ném đến Binh Bộ đương cái tiểu quan rèn luyện mấy năm, này mưu lược giá trị ở Binh Bộ cũng dùng đến, khi nào tính tình ma bình trung thành độ thăng lên tới, khi nào lại trọng dụng. 】</p>
+<p>Mà khi nhậm Hộ Bộ thị lang Hàn Phi bằng, đúng là Hàn hưu đường thúc, nghe thấy bệ hạ tiếng lòng, vốn tưởng rằng lấy Hàn hưu làm người xử thế, nói vậy không thảo bệ hạ thích, liền tính là bọn họ Hàn gia, cũng cảm thấy Hàn hưu tính tình không thích hợp làm quan, sợ là phải đắc tội người, nhưng Hàn gia này đại thật sự cũng không có gì đọc sách xuất chúng con cháu, cũng liền Hàn hưu việc học còn lấy đến ra tay, chỉ có thể căng da đầu làm hắn thượng. Vốn tưởng rằng Hàn hưu chỉ có thể lấy cái đồng tiến sĩ liền đi, trong nhà lại vận tác một chút, làm hắn đi địa phương làm quan, cũng coi như là cấp gia tộc làm cống hiến.</p>
+<p>Ai ngờ này Hàn hưu thế nhưng tiến vào nhị giáp, nghe bệ hạ ý tứ, ma ma Hàn hưu góc cạnh, về sau còn khả năng sẽ được đến trọng dụng, thật đúng là ngoài ý muốn chi hỉ, chạy nhanh đề điểm đề điểm này cháu trai.</p>
+<p>Hộ Bộ thị lang lúc này trong lòng mỹ tư tư, có thể nghe thấy bệ hạ tiếng lòng, mở sách khảo thí chính là hảo, hắc hắc hắc!!!</p>
+<p>Mặt khác hơn mười vị triều quan căm tức nhìn Hộ Bộ thị lang Hàn Phi bằng, làm tiểu tử ngươi chiếm được tiện nghi, nhìn đến đồng liêu từ bệ hạ tiếng lòng trung đến lợi, so với ta chính mình có hại còn khó chịu.</p>
+<p>Hạ Sơ Chu tiếp theo xem tiếp theo vị.</p>
+<p>“Thi Diêu.”</p>
+<p>Thi Diêu là thương nhân chi tử, tiền triều thương nhân chi tử còn không thể tham gia khoa cử, đại nguy lại sửa lại này quy củ, này thương nhân chỉ cần nộp thuế vẫn luôn không ra quá sai lầm, này tử liền có thể tham gia khoa cử khảo thí. Cho nên đại nguy thương nhân địa vị so tiền triều muốn cao một chút, chỉ là vẫn là sĩ nông công thương trung cuối cùng nhất đẳng.</p>
+<p>Thi Diêu lúc này nhớ tới phụ thân vài thập niên tới một chút tiểu sai cũng không dám phạm, nhiều năm qua nơm nớp lo sợ như đi trên băng mỏng, nộp thuế giao đến so với ai khác đều mau, sợ giao đến không đủ thường thường còn nhiều chước, chính là vì hắn có thể tham gia khoa cử, hiện giờ hắn đứng ở này đại điện phía trên, chịu Hoàng thượng triệu kiến, cuối cùng không phụ phụ thân nhiều năm trả giá, lúc này thi Diêu trong lòng cảm khái vạn ngàn.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong31.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong33.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "bi-doc-tam-sau-thanh-thien-co-minh-quan";
+const NOVEL_TITLE = "Bị đọc tâm sau thành thiên cổ minh quân";
+const CHAPTER_TITLE = "Chương 32";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 101</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Bị đọc tâm sau thành thiên cổ minh quân
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 101</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong100.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong102.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Phó bổn “Này bón phân là có chú trọng, dùng lượng muốn thích hợp, không thể quá nhiều, cũng không thể quá thiếu; hạ phân bón thời cơ cũng muốn thích hợp, không thể quá sớm, cũng không thể quá vãn, muốn ở lúa nước súc thủy thời kỳ bón phân, điểm này, bản quan đã sớm ở mua bán phân bón là lúc liền phái người lặp lại báo cho chư vị, hơn nữa chư vị cũng bảo đảm nhớ kỹ phân bón sử dụng phương pháp, ký tên lúc sau mới rời đi.”</p>
+<p>“Nếu sử dụng chính xác phương pháp bón phân, kia liền không khả năng thiêu mầm.”</p>
+<p>Chính là vẫn là có thôn dân khó chịu nói “Phó đại nhân, nhưng hôm nay nhiều người như vậy gia thủy bị hủy, ngài dù sao cũng phải có cái cách nói đi?”</p>
+<p>Phó vốn cũng là bị này đó vô cớ gây rối người khí cười, “Bản quan phải cho chư vị cái gì cách nói, nguyên bản nông học viện sáng tạo phân bón chính là vì chư vị lúa nước cùng tiểu mạch chờ thu hoạch có thể được mùa, như thế nào sử dụng các hương thân cũng là ký tên, chính là bẩm báo bệ hạ nơi đó, bản quan cũng là không sợ.”</p>
+<p>“Bản quan duy nhất có thể cho các vị hương thân bồi thường, chính là quá mấy ngày phủ thành còn có giao ung các trong huyện, sẽ tổ chức một cái phân bón sử dụng dạy học ban, chư vị nếu là muốn tiếp theo quý lúa nước có thể chính xác bón phân, liền chạy nhanh đi nghe một chút khóa, học tập học tập.”</p>
+<p>Vây quanh người không nghĩ tới bọn họ lúa mầm bị thiêu, vị này phó đại nhân không những một chút cách nói đều không cho bọn họ, còn nếu muốn bọn họ tiếp theo quý còn muốn tiếp theo dùng kia cái gì phân bón.</p>
+<p>“Quả thực là si tâm vọng tưởng, hại chúng ta một lần còn chưa đủ, còn muốn hại chúng ta lần thứ hai.” Một người tức giận đến dậm chân mà nói.</p>
+<p>Một người khác cũng nói tiếp nói “Chính là, muốn cho chúng ta tiếp theo dùng kia cái gì phân bón, ta liền đảo gội đầu.”</p>
+<p>Không thảo cách nói, nếu là trước kia, trong nhà lúa nước tẫn hủy, những người này gia không ít sợ là muốn đi vay tiền mượn lương, may mắn hiện giờ mấy năm nay năm được mùa, lại còn loại có bắp cùng khoai tây, những người này gia nhật tử cũng còn không có trở ngại, vừa nghe nói muốn đăng báo đến bệ hạ nơi đó, bọn họ cũng biết lần này là chính mình không chiếm lý, bệ hạ cũng không thể đứng ở bọn họ bên này, ngược lại khả năng sẽ cảm thấy bọn họ là điêu dân, bị bệ hạ không mừng có thể so giết bọn họ còn khó chịu, này đó bá tánh chỉ phải hùng hùng hổ hổ mà đi rồi.</p>
+<p>Giao ung phủ ninh giang thôn thôn dân mễ thành đi theo mọi người tới phân bón xưởng cửa náo loạn một phen, lại không thu hoạch được gì còn bị phó đại nhân mắng một đốn lúc này mới đi trở về, tới cửa thôn là lúc thở ngắn than dài, đột nhiên, hắn thấy được cùng thôn thôn dân mễ đức, nhớ tới tiểu tử này cũng mua mười túi phân bón rải nhà mình ngoài ruộng, như thế nào không đi theo bọn họ đi nháo, một chút động tĩnh đều không có.</p>
+<p>“Đức tử, hôm nay chúng ta thôn mấy cái mua phân bón đi phân bón xưởng thảo cách nói, nhà ngươi như thế nào không đi, không phải là nghĩ chúng ta đi nháo, ngươi ở phía sau nhặt có sẵn đi?” Mễ thành vừa thấy cái này quang biết chiếm tiện nghi gia hỏa liền tới khí, vốn dĩ trong lòng liền không sảng khoái, liền tưởng giáo huấn một chút tiểu tử này.</p>
+<p>Mễ đức nghe thấy mễ thành hỏi như vậy, thập phần nghi hoặc “Ta vì sao phải đi phân bón xưởng nháo?”</p>
+<p>“Bón phân lúa mầm đều bị huỷ hoại, ngươi không đi tìm phân bón xưởng, chờ ăn cái này ngậm bồ hòn a?”</p>
+<p>Mễ đức càng là nghi hoặc, “Bón phân lúa mầm đều huỷ hoại? Nhưng nhà ta lúa mầm đều hảo hảo a?”</p>
+<p>Mễ thành cảm thấy tiểu tử này ở mạnh miệng, “Sao có thể?”</p>
+<p>Vội vàng gọi lại mua phân bón đi phân bón xưởng nháo mấy hộ nhà, cùng đi mễ thành gia ruộng lúa dạo qua một vòng, kết quả phát hiện mễ đức gia ruộng lúa thật sự một chút việc đều không có, ngược lại cảm giác lớn lên càng tốt.</p>
+<p>Tức giận đến kéo lấy mễ đức cổ áo “Tiểu tử ngươi là như thế nào bón phân?”</p>
+<p>Mễ đức đem mễ thành tay chụp bay, “Thành thúc, tuy rằng ngài là trưởng bối, nhưng vẫn là tôn trọng một chút, ta đức tử cũng không phải dễ chọc, tự nhiên là dựa theo bán phân bón người theo như lời, ở trồng trọt nửa tháng lúc sau bón phân, thả rải phân bón muốn đều đều, không thể ở phóng thủy lúc sau bón phân, khả năng sẽ thiêu mầm.”</p>
+<p>Những người này cẩn thận ngẫm lại, mua phân bón là lúc, người kia giống như thật là như vậy nói, bất quá bọn họ nhưng một chút cũng không có nghe, chẳng lẽ bọn họ thật là bón phân không đúng, mới hủy diệt rồi nhà mình vất vả trồng trọt lúa mầm, chỉ cần dựa theo người nọ theo như lời bón phân, liền không có việc gì?</p>
+<p>Nghĩ đến đây, những người này trong lòng càng là khó chịu, may mắn không có hoàn toàn đắc tội vị kia phó đại nhân, bằng không hắn hướng bệ hạ tố cáo một trạng, bệ hạ liền sẽ cảm thấy bọn họ giao ung phủ bá tánh đều là vô cớ gây rối điêu dân.</p>
+<p>Này mấy người cũng đã không có vừa mới khí thế, ngược lại ngượng ngùng nói “Đức tử, tuy rằng nhà ngươi lúa mầm không hủy, nhưng ai biết này phân bón có hay không dùng? Nói không chừng ngươi uổng phí một phen công phu đâu?”</p>
+<p>Mễ đức cũng không quán những người này “Tổng so lúa mầm cũng chưa hảo đi?”</p>
+<p>Mọi người bị mễ đức chọc giận “Ngươi?” Nhưng hôm nay đại nguy luật pháp nghiêm minh, dĩ vãng loại này trong thôn đánh nhau đều là trong thôn điều giải, sẽ không có cái gì đại sự, nhưng hôm nay lại có thể bẩm báo huyện nha, nghĩ đến đây, mọi người lại đem nắm tay thu lên.</p>
+<p>“Chúng ta chờ xem.” Dứt lời liền tức giận mà rời đi.</p>
+<p>Mễ đức nhìn mấy người bóng dáng, cười nói “Thật là một chút đầu óc đều không cần, liền biết nửa giá bán đồ vật tiện nghi liền đi đoạt lấy, liền dùng như thế nào cũng không biết, nhân gia phía trước đều nói cho các ngươi bón phân không đối muốn thiêu mầm, lúa mầm bị hủy đảo biết tìm quan phủ đại nhân náo loạn.”</p>
+<p>Ba tháng về sau, giao ung lúa nước đều đã thành thục.</p>
+<p>Ninh giang thôn mễ đức gia tổng cộng loại mười mẫu lúa nước, trong đó có năm mẫu đều dùng phân bón, này ba tháng tới nay, mễ đức mỗi ngày đều đi trước nhà mình ngoài ruộng xem lúa nước kết tuệ như thế nào, thực mau phát hiện làm phì ruộng lúa lúa nước kết tuệ so mặt khác năm mẫu điền nhiều hơn, hắn tháng này tới càng là ăn trụ đều ở điền biên, liền sợ bị ghen ghét người phát hiện, huỷ hoại nhà hắn ruộng lúa.</p>
+<p>Thẳng đến trong nhà mười mẫu ruộng lúa đều thu hoạch, mễ đức mới thở dài nhẹ nhõm một hơi.</p>
+<p>Nhưng cả nhà nhìn đôi suốt một gian nhà ở hạt thóc, sắp kinh hỉ mà hôn mê bất tỉnh, không có bón phân năm mẫu ruộng lúa, cùng trước kia giống nhau, một mẫu đất ước chừng thu hoạch 300 cân hạt thóc, khả thi phân bón năm mẫu ruộng lúa, thế nhưng mỗi mẫu đất thu hoạch 600 cân hạt thóc, suốt phiên gấp đôi, so với phía trước theo như lời trướng thu năm thành còn muốn hảo.</p>
+<p>Mà cùng thôn các thôn dân cũng đã sớm biết mễ đức một nhà sợ là được mùa, này hướng trong nhà vận hạt thóc so với bọn hắn gia nhiều hơn, đều vây quanh ở mễ đức trong nhà đi xem náo nhiệt.</p>
+<p>Ninh giang thôn thôn trưởng “Nhiều ít, một mẫu đất thu hoạch 600 cân hạt thóc? Đức tử ngươi không phải ở nói bậy đi?”</p>
+<p>Nhưng mọi người nhìn mễ đức gia đôi đến tràn đầy hạt thóc, cũng biết mễ đức gia chỉ có mười mẫu đất, nếu không phải năm mẫu đất thu hoạch tăng, sao có thể thu hoạch nhiều như vậy?</p>
+<p>Mà mễ thành đoàn người xanh mặt, “Này bán phân bón người không phải nói, làm phì nhưng tăng gia sản xuất một nửa sao? Sao có thể tăng?”</p>
+<p>Mễ đức này mấy tháng luôn bị những người này ghen ghét nhằm vào, cười nhạo nói “Có đôi khi người vẫn là muốn trường lỗ tai, bằng không đã không thể biết như thế nào bón phân làm đến nhà mình lúa mầm bị hủy, lại không có nghe được nhân gia bán phân bón người theo như lời chính là tăng gia sản xuất ít nhất một nửa, này ít nhất tự nhiên khả năng tăng, thậm chí về sau mẫu sản ngàn cân lúa nước cũng nói không chừng?”</p>
+<p>Mà này đó lúa mầm bị chính mình hủy diệt người lúc này tâm đang nhỏ máu, nếu là mễ đức gia hỏa này không có được mùa cũng liền thôi, còn tăng gia sản xuất một nửa, nếu là lúc trước bọn họ cũng có thể hảo hảo bón phân, có phải hay không cũng có thể nhiều thu hoạch một ngàn nhiều cân lương thực, nhiều tránh hai lượng nhiều bạc, một năm là có thể nhiều tránh năm lượng bạc, nhìn đến mễ đức gia hỏa này được mùa, so với bọn hắn không thu hoạch còn khó chịu.</p>
+<p>Mà ninh giang thôn thôn dân cũng dưới đáy lòng tính toán đi lên, nguyên bản cho rằng này phân bón một chút dùng đều không có, một mẫu đất phải dùng hai túi phân bón, dùng 200 văn tiền, tăng gia sản xuất năm thành nhiều thu hoạch 150 cân, cũng chính là kiếm 300 văn tiền, này tính xuống dưới một mẫu đất mới kiếm một trăm văn tiền, trong nhà có mười mẫu đất nói, liền nhiều kiếm một lượng bạc tử, nhưng yêu cầu nhân lực bón phân cũng là khiến người mệt mỏi.</p>
+<p>Nhưng này phân bón có thể sử lúa nước thu hoạch tăng, này một mẫu đất là có thể nhiều kiếm 500 văn tiền, mười mẫu đất chính là năm lượng bạc, một người đi ra ngoài làm việc bán chết bán sống một năm, cũng lấy không trở lại năm lượng bạc, nghĩ đến đây, ninh giang thôn bá tánh đều cảm thấy này phân bón thật đúng là một cái thứ tốt a, khó trách bệ hạ muốn ở bọn họ giao ung trước thi hành phân bón.</p>
+<p>Bệ hạ ở bọn họ giao ung tu đập chứa nước, kiến nông học viện, lại trước thi hành phân bón, bệ hạ đối bọn họ giao ung bá tánh thật đúng là hảo.</p>
+<p>Đồng thời, Hạ Sơ Chu bên tai truyền đến quen thuộc hệ thống nhắc nhở âm.</p>
+<p>[ hệ thống thông tri Giao ung dân tâm đề cao 10%, cả nước dân tâm đề cao 0.5%, đạt được tích phân 50 phân. ]</p>
+<p>Lúc này Hạ Sơ Chu đã không để bụng hệ thống cấp tích phân, dù sao vô luận nhiều ít cuối cùng đều đến trả nợ, nhưng dân tâm độ, xây dựng độ cùng phồn vinh độ chính là có quan hệ hắn mạng nhỏ. Hơn nữa gần nhất rất khó đề cao, Hạ Sơ Chu nghĩ nghĩ, liền biết đầu tiên sử dụng phân bón giao ung sợ là đạt được được mùa, lúc này mới đề cao dân tâm độ.</p>
+<p>Nghĩ giao ung đáng yêu bá tánh, Hạ Sơ Chu rũ mi cười nhạt.</p>
+<p>Nguyên bản giao ung phủ còn có các huyện thành phân bón cửa hàng trước cửa có thể giăng lưới bắt chim, cửa hàng chưởng quầy cùng việc mỗi ngày đều chỉ có thể ngủ, nhưng này việc còn tính nhẹ nhàng, bất quá chưởng quầy việc ngày ngày đều ở lo lắng này phân bón xưởng đóng cửa, đến lúc đó bọn họ đã có thể không có như thế nhẹ nhàng việc.</p>
+<p>Giao ung phủ đang ở cửa hàng ngủ phân bón xưởng chưởng quầy đột nhiên bị một trận tiếng ồn ào đánh thức, mở mắt ra thấy thế nhưng có không ít người hướng tới bọn họ cửa hàng tới.</p>
+<p>“Chưởng quầy, mua hai mươi túi phân bón.”</p>
+<p>“Chưởng quầy, trước bán cho ta, ta muốn 50 túi.”</p>
+<p>Mắt thấy tới cửa hàng mua phân bón người càng ngày càng nhiều, chưởng quầy cảm thấy chính mình có thể là đang nằm mơ.</p>
+<p>Vội vàng hỏi thăm, mới biết được phân bón thế nhưng sử lúa nước tăng gia sản xuất gấp đôi, một mẫu điền trướng 300 cân hạt thóc, liền tính là bán phân bón chưởng quầy, cũng không nghĩ tới này phân bón tác dụng lại là như vậy đại, cũng khó trách những người này cướp muốn mua phân bón.</p>
+<p>Một ngày xuống dưới, cửa hàng phân bón đều bán xong rồi, chưởng quầy cùng tiểu nhị cũng không dám nghĩ nữa phân bón xưởng sẽ đóng cửa, ngày này xuống dưới đều phải mệt chết, ngược lại nghĩ phân bón có thể hay không thiếu bán một chút, hoặc là nhiều thỉnh hai người.</p>
+<p>Nhưng mà, cùng ngày ban đêm, liền có thượng vạn cân phân bón bị vận đến trong tiệm, tuy rằng phía trước mấy tháng phân bón doanh số không tốt, nhưng phó bổn vẫn cứ tin tưởng phân bón là cái thứ tốt, phân bón xưởng không những không có giảm sản lượng, ngược lại tăng lớn sinh sản, nhà xưởng nhà kho trữ hàng không ít phân bón, thậm chí cũng đủ toàn bộ giao ung ruộng lúa sở dụng.</p>
+<p>Nửa năm sau, giao ung đệ nhị quý lúa nước được mùa, giao ung lúa nước sản lượng so năm rồi gia tăng rồi tám phần, mà Hộ Bộ thu được giao ung lương thuế tự nhiên cũng gia tăng rồi tám phần.</p>
+<p>Hộ Bộ thượng thư kỷ bác dung vốn là lục bộ thượng thư bên trong nhất đau đầu một vị, lúc này thấy đến giao ung giao đi lên lương thuế, cũng không mất miên, cũng không rụng tóc, ngược lại mỗi ngày tinh thần sáng láng.</p>
+<p>Mà lúc sau mấy cái loại đại lượng lúa nước cùng tiểu mạch châu phủ, cũng ở trù hoạch kiến lập phân bón xưởng, Hộ Bộ thượng thư tính lại tính, tính ra mấy năm về sau, Hộ Bộ thu được lương thuế sợ là sẽ gia tăng một nửa, này bát bạc cũng không khấu khấu sưu sưu.</p>
+<p>Bàn tay vung lên, lại đồng ý hướng đường sắt cùng tàu thuỷ bát không ít bạc.</p>
+<p>Thực mau, ba năm chi kỳ đã đến, dương tiên huyện cùng tới mẫn huyện chi gian đường sắt thuận lợi hoàn công.</p>
+<p>Hạ Sơ Chu mang theo quần thần, còn có quần thần người nhà cùng với Thái hậu đám người, đi trước tới mẫn huyện, tham quan thế giới này đoạn thứ nhất đường sắt cùng đệ nhất liệt xe lửa.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong100.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong102.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "bi-doc-tam-sau-thanh-thien-co-minh-quan";
+const NOVEL_TITLE = "Bị đọc tâm sau thành thiên cổ minh quân";
+const CHAPTER_TITLE = "Chương 101";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
