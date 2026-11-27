@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 11</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ta đại khái suất không phải người
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 11</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Giang Tứ từ bên ngoài trở về, nhìn đến dưới lầu dừng lại một chiếc vừa thấy liền rất quý xe, bên cạnh còn có một chiếc tiểu xe vận tải, đưa hóa nhân viên đang ở đi xuống dọn đồ vật, tân mua gia cụ bày đầy đất.</p>
+<p>Giang Tứ trụ chính là khu chung cư cũ, sáu tầng cao, một thang hai hộ.</p>
+<p>Giang Tứ gia ở lầu 3, hắn đi tới cửa, thấy cách vách Dư nãi nãi gia cửa phòng mở rộng ra, đang có người từ bên trong nâng cũ gia cụ ra tới.</p>
+<p>Cửa đứng một vị béo a di, đang ở chỉ huy chuyển nhà công ty, “Chậm một chút nhi chậm một chút, đừng đụng vào môn.”</p>
+<p>Giang Tứ dựa tường trạm, làm nâng cũ gia cụ người qua đi.</p>
+<p>Giang Tứ hỏi “A di, ngài là Dư nãi nãi người nào?”</p>
+<p>Béo a di sửng sốt, theo sau phản ứng lại đây, “Ngươi nói Dư nãi nãi là trước đây phòng chủ đi? Nghe người môi giới nói, trước kia phòng chủ qua đời, phòng chủ nhân tử không được thành thị này, lúc này mới muốn bán phòng ở, bị nhà của chúng ta mua tới.”</p>
+<p>Giang Tứ cả người đều ngây ngẩn cả người, Dư nãi nãi mới vừa bị tiếp đi mấy ngày, người đã qua đời, liền phòng ở đều cấp bán.</p>
+<p>Giang Tứ nói không nên lời là cái gì tư vị, rất khó chịu, hắn ở nơi này, giao tiếp nhiều nhất chính là Dư nãi nãi.</p>
+<p>Mụ mụ mới vừa qua đời đoạn thời gian đó, Giang Tứ mơ màng hồ đồ, Dư nãi nãi mỗi ngày đều phải tới gõ mấy lần môn, kêu Giang Tứ đi trong nhà ăn cơm, hoặc là chính là đổi đèn quản, tu bồn cầu, hỗ trợ đề gạo và mì, đem chơi xấu không chịu bò lâu Corgi ôm lên lầu từ từ, chính là không cho Giang Tứ nhàn rỗi.</p>
+<p>Giang Tứ phiền không thắng phiền, không nghĩ mở cửa, nàng có thể gõ cửa nửa giờ, lại không khai nàng liền đi tìm bảo an tới, Giang Tứ thực phiền, làm nàng đi tìm người khác, đừng tới tìm chính mình, Dư nãi nãi quyết giữ ý mình, ngươi phiền ngươi, nàng tìm nàng.</p>
+<p>Chờ Giang Tứ đi ra tang mẫu chi đau, Dư nãi nãi vẫn là sẽ tìm hắn hỗ trợ, lại sẽ không mỗi ngày tới gõ cửa.</p>
+<p>Giang Tứ biết, Dư nãi nãi là hảo ý, sợ hắn một cái hài tử buồn ở trong nhà sẽ xảy ra chuyện……</p>
+<p>Loại này thời điểm, Giang Tứ khó tránh khỏi nhớ tới Giang Tư Lâm thường xuyên mắng hắn nói.</p>
+<p>Hắn người bên cạnh, đích xác cũng chưa kết cục tốt, cho nên hắn không muốn cùng bất luận kẻ nào từng có nhiều lui tới, hắn chỉ nghĩ một người, như vậy liền sẽ không lại có người nhân hắn mà đã chết đi?</p>
+<p>Giang Tứ thấy béo a di bận rộn trong ngoài, đột nhiên nói “A di, Dư nãi nãi mới vừa qua đời, ngài liền mua này phòng ở, ngài không sợ hãi sao?”</p>
+<p>Béo a di nói “Có cái gì nhưng sợ hãi? Nhà ai còn không có cái lão nhân qua đời? Nguyên phòng chủ sống tám, 90 tuổi, sống thọ và chết tại nhà, xem như cao thọ, này phòng ở phong thuỷ hảo, mua không lỗ. Huống chi này đều qua đời vài tháng, không tính mới vừa qua đời đi?”</p>
+<p>Lời này không biết là người môi giới nói, vẫn là Dư nãi nãi nhi tử vì phòng ở hảo bán, mới nói như vậy.</p>
+<p>Giang Tứ quyết định nói cho béo a di chân tướng, cũng có thể có cái chuẩn bị tâm lý, rốt cuộc này phòng ở nháo quá quỷ dị, ai ngờ di ảnh quỷ có hay không rời đi?</p>
+<p>“Không phải vài tháng, Dư nãi nãi hẳn là vừa mới chết không mấy ngày, hơn nữa cũng không tính sống thọ và chết tại nhà……”</p>
+<p>Béo a di sắc mặt trầm xuống dưới, “Ai ngươi này tiểu hài tử như thế nào như vậy sẽ không nói? Ta phòng ở đều mua tới ngươi cùng ta nói này đó? Ý định làm nhân tâm không thoải mái đúng không?”</p>
+<p>Giang Tứ “……”</p>
+<p>Giang Tứ không hề nhiều lời, mở cửa về nhà, thực mau cầm một phen chìa khóa ra tới.</p>
+<p>“Đây là Dư nãi nãi sinh thời đặt ở ta nơi này dự phòng chìa khóa.”</p>
+<p>Béo a di không tiếp, xem Giang Tứ ánh mắt rất kỳ quái, “Chúng ta muốn đổi khóa, ngươi ném đi.”</p>
+<p>Giang Tứ đóng cửa, đem chìa khóa ném vào thùng rác.</p>
+<p>Nằm liệt ở trên sô pha, nhìn trần nhà suy nghĩ xuất thần.</p>
+<p>Một đoàn bạch quang từ Giang Tứ trong túi bay ra, Corgi xuất hiện ở trong phòng khách, nó không rên một tiếng, đi đến Giang Tứ bên người, cằm đáp ở Giang Tứ trên bụng, toàn bộ cẩu có thể thấy được không tinh thần.</p>
+<p>Corgi hẳn là đã nghe được, Dư nãi nãi qua đời, nó chủ nhân không có.</p>
+<p>Giang Tứ từng cái vuốt Corgi đầu, “Ngươi phải làm sao bây giờ? Là đưa ngươi đi Dư nãi nãi nhi tử gia, vẫn là lưu tại ta nơi này, chính ngươi tuyển, ta tôn trọng ngươi lựa chọn.”</p>
+<p>Corgi rầm rì một tiếng, đem đầu nhét vào Giang Tứ khuỷu tay hạ, một cái khung thoại đỉnh ở trên đầu.</p>
+<p>【 nửa linh thân Corgi Lưu lại. 】</p>
+<p>Giang Tứ đem Corgi bế lên sô pha, đối Dư nãi nãi đột nhiên qua đời canh cánh trong lòng.</p>
+<p>Hắn cấp Mục Vi đi điện thoại, dò hỏi một người bị âm linh xâm lấn sau sẽ như thế nào?</p>
+<p>Mục Vi cấp ra trả lời là, thời gian đoản khả năng sẽ sinh bệnh, thời gian trường khả năng tinh thần thất thường, cũng có thể hôn mê bất tỉnh, càng nghiêm trọng sẽ trực tiếp não tử vong.</p>
+<p>Nếu xuất hiện não tử vong, đương trường liền xuất hiện, sẽ không có cứu giúp cơ hội, cho nên phía trước ba loại tình huống so nhiều.</p>
+<p>Dư nãi nãi tuy rằng bị di ảnh quỷ ảnh vang, cử chỉ khác thường, nhưng nàng chân chính bị xâm lấn thời gian thực đoản, đã bị sủng linh đẩy ra đi, chính là hiện tại, Dư nãi nãi lại qua đời.</p>
+<p>Giang Tứ nhớ rõ Dư nãi nãi cùng hắn nói qua, nhi tử ở Phồn thị an gia, ở tại Lục Nhân gia viên, cụ thể trụ mấy đống mấy lâu Giang Tứ quên mất, bất quá hắn nhớ rõ Dư nãi nãi nhi tử diện mạo, nếu nhìn thấy, khẳng định có thể nhận ra tới.</p>
+<p>Giang Tứ tính toán đi Phồn thị một chuyến, nhìn xem Dư nãi nãi rốt cuộc là tình huống như thế nào, bằng không hắn trong lòng khó an.</p>
+<p>Tiếng đập cửa truyền đến, Giang Tứ sờ sờ đầu chó, làm nó trở lại trên giấy đi.</p>
+<p>Ngoài cửa đứng một cái ăn mặc tây trang xa lạ nam nhân.</p>
+<p>Nam nhân nhìn đến Giang Tứ, lộ ra một cái chức nghiệp mỉm cười, “Giang đồng học ngươi hảo, ta là Hàn tổng trợ lý, ta kêu Điền Vĩ.”</p>
+<p>Cửa có điểm chen chúc, Điền Vĩ nghiêng người, làm cách vách dọn đồ vật người qua đi.</p>
+<p>Điền Vĩ nói “Chúng ta có thể vào nhà nói sao?”</p>
+<p>Giang Tứ không có thỉnh người xa lạ vào nhà ý tứ, “Ngượng ngùng, ta không quen biết Hàn tổng.”</p>
+<p>Điền Vĩ tươi cười bất biến, “Không quen biết Hàn tổng không quan hệ, ngươi nhất định nghe nói qua Thanh thị Hàn gia, Hàn Diệc Trình Hàn thiếu cùng ngươi là bạn cùng trường, hắn hiện tại tình huống nguy cấp, Hàn gia nguyện ra 300 vạn mua ngươi một con sủng linh……”</p>
+<p>“Lạch cạch!”</p>
+<p>Béo a di trong tay điều chổi rớt trên mặt đất.</p>
+<p>Thấy hai người đều nhìn nàng, béo a di đầy mặt tươi cười, “Sủng linh là cái cái gì chủng loại? Như vậy đáng giá? Tiểu hài tử nhà ngươi dưỡng sủng linh?”</p>
+<p>Giang Tứ mặt vô biểu tình, “Không dưỡng.”</p>
+<p>Lại đối tây trang nam nhân nói “Ta không có sủng linh, ngài mời trở về đi.”</p>
+<p>Giang Tứ đóng cửa, ngăn cách bên ngoài tạp âm.</p>
+<p>Hắn xác thật không có sủng linh, duy nhất Corgi cũng không hoàn toàn xem như hắn sủng linh.</p>
+<p>Nguyên bản ba con sủng linh, hiện tại chỉ còn một con, Giang Tứ cảm giác phi thường không an toàn, thế đạo nguy hiểm, cho dù đơn chỉ sủng linh thực lực hữu hạn, cũng có thể dùng số lượng thủ thắng, quả nhiên sủng linh đến nhiều một chút nhi mới an toàn.</p>
+<p>Hắn muốn đi Phồn thị, trên đường sẽ gặp được cái gì ai cũng không biết, cần thiết có lợi hại sủng linh bảo hộ mới có thể yên tâm.</p>
+<p>Giang Tứ click mở di động, tưởng từ trên mạng tìm điểm sủng vật hình ảnh, xem có thể hay không đụng tới phù hợp điều kiện miêu miêu cẩu cẩu.</p>
+<p>Hắn dùng bút chì màu ở hội họa bổn thượng thí họa, linh giá trị tiêu hao có thể khôi phục, Thải Nhung Sa tiêu hao xong, hắn thật không biết lại đi nơi nào tìm, cho nên có thể tỉnh tắc tỉnh.</p>
+<p>Giang Tứ vẽ một ngày internet cẩu cẩu, kết quả một con sủng linh cũng không xuất hiện, không biết là cẩu cẩu đều còn sống, vẫn là bởi vì internet cẩu cẩu vốn là không phù hợp điều kiện, tóm lại không thành công.</p>
+<p>Cách vách ngày này đều ở chuyển nhà, quét tước, bang bang thùng thùng thanh âm không ngừng, thẳng đến mau 10 điểm mới an tĩnh lại.</p>
+<p>Từ tỉnh lại lúc sau, Giang Tứ liền không cảm giác được đói, chỉ cần đói khát trạng thái bảo trì ở 0 trở lên, hắn có thể vẫn luôn không ăn không uống.</p>
+<p>Giang Tứ biết chính mình không bình thường, nhưng này chỉ là thân thể phương diện, hắn trước sau cho rằng chính mình vẫn là cá nhân, cũng sẽ lấy người phương thức tồn tại.</p>
+<p>Đã đã khuya, Giang Tứ đang muốn rửa mặt đánh răng ngủ, cách vách đột nhiên truyền đến một tiếng nữ nhân thét chói tai, sau đó liền không thanh.</p>
+<p>Giang Tứ “???”</p>
+<p>Thanh âm này, nghe giống ban ngày béo a di.</p>
+<p>Đi theo Giang Tứ bên người Corgi, hướng về phía phòng khách vách tường phương hướng, uông một tiếng.</p>
+<p>Vách tường bên kia, chính là Dư nãi nãi gia.</p>
+<p>Giang Tứ nhìn thời gian, ban đêm 12 giờ nhiều.</p>
+<p>Lúc này mới trụ đi vào đệ nhất vãn, sẽ không liền gặp được di ảnh quỷ đi?</p>
+<p>Giang Tứ cảm thấy không quá khả năng.</p>
+<p>Nhà ai bán phòng ở không đem thân cha di ảnh mang đi, còn lưu tại trong phòng cho nhân gia đương di ảnh sao?</p>
+<p>Đang muốn mang theo Corgi rửa mặt đánh răng ngủ, đột nhiên nghe được mở cửa thanh, sau đó là dồn dập xuống lầu tiếng bước chân.</p>
+<p>Giang Tứ “???”</p>
+<p>Giang Tứ rửa mặt đánh răng xong, chuẩn bị trở về phòng ngủ, lại nghe được tiếng bước chân đã trở lại.</p>
+<p>Ngoài cửa truyền đến mơ hồ nói chuyện thanh, thanh âm đã run thành cuộn sóng tuyến.</p>
+<p>“Là thật, thật sự, thật sự có quỷ a! Ta ta ta…… Lão bà của ta trực tiếp dọa hôn mê, ta nghe được động tĩnh ra tới vừa thấy, liền gặp khách thính trên sô pha ngồi một cái lão, lão nhân, chính chính đang xem TV, TV không có thanh âm…… Hắn hắn hắn hắn ngẩng đầu xem ta, sắc mặt chết bạch, còn, còn không có mắt mắt, châu……”</p>
+<p>Ngoài cửa xuất hiện một thanh âm khác, Giang Tứ nghe ra, là cửa bảo an.</p>
+<p>“Đừng chính mình dọa chính mình, trên đời nào có quỷ?”</p>
+<p>“Thật, thực sự có a!”</p>
+<p>“Ở đâu? Ta như thế nào không nhìn thấy?”</p>
+<p>“Mới vừa, vừa mới…… Đối, vừa mới đột nhiên có cẩu tiếng kêu, sau đó kia, kia lão nhân liền, đã không thấy tăm hơi!”</p>
+<p>Ngoài cửa an tĩnh một lát, bảo an thanh âm lại lần nữa truyền đến, lúc này thanh âm cũng có chút mơ hồ.</p>
+<p>“Này phòng ở nguyên chủ nhân đích xác dưỡng quá một con cẩu, bất quá đã chết…… Ta kiểm tra qua, trong phòng cái gì cũng không có, mau đem ngươi tức phụ nhi dọn trên giường đi thôi, vẫn luôn nằm trên mặt đất không ra gì, ta còn muốn trực ban, đi trước.”</p>
+<p>Nói xong liền đặng đặng đặng chạy xuống lâu, tốc độ kia kêu một cái mau, hiển nhiên cũng bị dọa tới rồi.</p>
+<p>Giang Tứ về phòng ngủ, ngủ đến mơ mơ màng màng, mơ hồ nghe được có người gõ cửa, một chút một chút, liên tục không ngừng.</p>
+<p>Giang Tứ sờ khởi di động nhìn thoáng qua, rạng sáng 2 giờ nhiều, một cái giật mình ngồi dậy, buồn ngủ đều bị dọa chạy.</p>
+<p>Tiếng đập cửa còn ở tiếp tục, không nhanh không chậm, một chút một chút, rất có không mở cửa liền vẫn luôn gõ đi xuống ý tứ.</p>
+<p>Thời gian này điểm xuất hiện như vậy Phật hệ tiếng đập cửa, Giang Tứ cả người lông tơ đều lập lên.</p>
+<p>Corgi từ tạp bộ xuất hiện, bảo hộ ở Giang Tứ bên người.</p>
+<p>Giang Tứ bật đèn xuống giường, nắm lên nhét ở gối đầu hạ đánh quỷ côn, khai phòng ngủ môn, chậm rãi đi hướng cửa chống trộm.</p>
+<p>Corgi an an tĩnh tĩnh đi theo, không có phát ra một chút thanh âm.</p>
+<p>Giang Tứ tiểu tâm tiến đến mắt mèo, chỉ nhìn đến một đoàn hắc, không biết là cảm ứng đèn hỏng rồi, vẫn là mắt mèo hỏng rồi, cái gì cũng nhìn không thấy.</p>
+<p>Đang muốn dời mắt, kia đoàn hắc bỗng nhiên động, thang lầu gian ánh sáng thấu tiến vào, nguyên lai kia đoàn hắc thế nhưng là tóc, có người đứng ở ngoài cửa gõ cửa, trạm đến cực gần, cơ hồ là ghé vào trên cửa gõ cửa.</p>
+<p>Giang Tứ nắm chặt đánh quỷ côn, tránh ở cạnh cửa, “Ai nha?”</p>
+<p>Tiếng đập cửa đình chỉ.</p>
+<p>Đột nhiên, “Phanh” một tiếng vang lớn, cửa chống trộm bị đâm cho run rẩy.</p>
+<p>Giang Tứ sợ tới mức liên tục lui về phía sau, trong lòng bay nhanh tính toán, ngoài cửa nếu là người, hắn có thể lập tức báo nguy, nếu không phải người, báo nguy cũng vô dụng, còn sẽ gia tăng thương vong, hiện tại phải làm sao bây giờ? Gọi điện thoại cấp Mục Vi tìm kiếm chi viện?</p>
+<p>Giang Tứ biết, Thanh thị hai vị này Trấn Quỷ Nhân mỗi ngày vội đến chân không chạm đất, hắn thân là Linh Giả, gặp được quỷ dị cư nhiên còn muốn Trấn Quỷ Nhân cứu viện, Linh Giả mặt có phải hay không đều bị hắn mất hết?</p>
+<p>Liên tiếp không ngừng tông cửa thanh còn ở tiếp tục, “Phanh phanh phanh”, một tiếng tiếp theo một tiếng.</p>
+<p>Giang Tứ trái tim thình thịch kinh hoàng, này mẹ nó rốt cuộc là cái gì kẻ điên ở bên ngoài?!</p>
+<p>Trên lầu cửa mở, truyền đến nam nhân phẫn nộ tiếng mắng, “Gõ nima bức gõ! Còn có để người ngủ!”</p>
+<p>Tông cửa thanh đình chỉ, bắt đầu đổi thành thịch thịch thịch phá cửa thanh, nam nhân như là mắng một đoàn không khí.</p>
+<p>Nam nhân phẫn nộ tột đỉnh, đạp đạp đạp chạy xuống lâu, “Hơn nửa đêm còn chưa đủ……”</p>
+<p>Thanh âm đột nhiên im bặt.</p>
+<p>Một cái hình thể mập mạp nữ nhân, ăn mặc áo ngủ, phi đầu tán phát đứng ở cách vách trước cửa, đang dùng đầu một chút một chút phá cửa, mỗi một chút đều thực dùng sức, cửa phòng thượng dính dính nhớp vết máu, đang ở đi xuống lưu.</p>
+<p>Nữ nhân như là nghe được thanh âm, chậm rãi chuyển qua cổ, lộ ra một trương máu me nhầy nhụa mặt cùng chỉ còn tròng trắng mắt đôi mắt!</p>
+<p>Nam nhân miệng càng trương càng lớn, lại phát không ra thanh âm, nhìn nữ nhân cứng đờ xoay người, hai tay vuông góc bất động, hướng thang lầu lại đây.</p>
+<p>“A a a a ——!!!!”</p>
+<p>Dọa rớt hồn tiếng kêu thảm thiết, vang vọng toàn bộ tiểu khu.</p>
+<p>Nam nhân nghiêng ngả lảo đảo chạy lên lầu, “Phanh” một tiếng đóng cửa lại, bay nhanh khóa trái!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong10.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong12.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "ta-dai-khai-suat-khong-phai-nguoi";
+const NOVEL_TITLE = "Ta đại khái suất không phải người";
+const CHAPTER_TITLE = "Chương 11";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

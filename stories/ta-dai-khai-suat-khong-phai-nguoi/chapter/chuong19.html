@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 19</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ta đại khái suất không phải người
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 19</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong18.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong20.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Giang Tứ tới Lục Nhân gia viên, đã mau buổi chiều 6 giờ.</p>
+<p>Lục Nhân gia viên cũng là một cái khu chung cư cũ, chiếm địa diện tích rất đại, chính trực tan tầm cao phong kỳ, tiểu khu cửa ra ra vào vào không ít người.</p>
+<p>Bọn họ từng cái cảnh tượng vội vàng, thường thường liền phải mọi nơi nhìn xem, như là ở sợ hãi cái gì.</p>
+<p>Giang Tứ đứng ở tiểu khu ngoại nhìn trong chốc lát, quyết định tìm bảo an hỏi thăm một chút, kết quả phát hiện phòng an ninh môn đóng lại, chỉ có đối diện cửa cửa sổ khai nửa phiến, bên trong ngồi hai tên bảo an.</p>
+<p>Giang Tứ đứng ở cửa sổ cùng bọn họ nói chuyện, “Thúc, cái này tiểu khu có phải hay không ra chuyện gì?”</p>
+<p>Hai tên bảo an toàn bộ võ trang, nhìn chằm chằm Giang Tứ nhìn lại nhìn, “Là ra điểm nhi sự, trời sắp tối rồi, ngươi mau về nhà đi thôi.”</p>
+<p>Giang Tứ nói “Thúc, ta từ nơi khác lại đây, tới nơi này tìm người, ngài biết gần nhất có cái họ Tưởng nhân gia làm tang sự sao? Qua đời chính là cái lão thái thái, họ Dư, bọn họ liền trụ cái này tiểu khu, ngài biết nhà bọn họ trụ mấy đống mấy thất sao?”</p>
+<p>Trong nhà có cái việc hiếu hỉ nhi, người khác có lẽ không biết, cửa bảo an khẳng định biết.</p>
+<p>Quả nhiên, hai tên bảo an vừa nghe lời này, lập tức sắc mặt liền thay đổi.</p>
+<p>Tuổi tác hơi đại bảo an nói “Đại khái mấy ngày trước, có hộ họ Tưởng nhân gia đem bệnh nặng không trị lão mẫu thân tiếp nhận tới, an trí ở gara, không hai ngày người liền đi, ngươi muốn tìm chính là nhà này sao?”</p>
+<p>Giang Tứ nhíu mày, “Là nhà này, bọn họ đem người tiếp trở về, không đưa đi bệnh viện sao?”</p>
+<p>Bảo an vẫy vẫy tay, trong thần sắc tràn đầy sợ hãi, “Nghe nói là từ bệnh viện tiếp trở về, bệnh đến quá nặng, vô pháp trị, chỉ có thể phóng trong nhà chờ chết…… Ngươi là nhà bọn họ người nào?”</p>
+<p>Giang Tứ dừng một chút mới nói “Ta là Dư nãi nãi hàng xóm, mấy năm nay chịu nàng chiếu cố, nghe nói nàng qua đời, liền nghĩ tới đến xem.”</p>
+<p>Bảo an thò người ra hướng ngoài cửa sổ nhìn nhìn, hạ giọng nói “Đừng nhìn, ngươi mau trở về đi thôi. Nhà bọn họ cụ thể tình huống ta không biết, ta chỉ biết, kia lão thái thái qua đời sau, bị đưa đi nhà tang lễ, cùng ngày ban đêm lão thái thái liền chính mình đã trở lại, đêm đó trực ban chính là lão Từ, ban ngày hắn chính mắt thấy người bị nhà tang lễ lôi đi, buổi tối lại gặp được người trở về, lúc ấy liền dọa ném hồn.”</p>
+<p>Dư nãi nãi biến thành quỷ vật, đây là Giang Tứ nhất không nghĩ nhìn đến.</p>
+<p>“Có thể nói cho ta nhà hắn trụ mấy đống mấy thất sao?”</p>
+<p>Bảo an kinh hồn táng đảm, “Ngươi đừng đi, nhà bọn họ đã không ai.”</p>
+<p>Giang Tứ kinh ngạc, “Người đâu?”</p>
+<p>Giang Tứ lo lắng Dư nãi nãi quỷ vật làm ác, vậy biến thành chân chính ác quỷ.</p>
+<p>Bảo an nói “Lão thái thái trở về đêm đó, ở cửa nhà gõ một đêm môn, muốn về nhà, người một nhà sợ tới mức không dám mở cửa, hừng đông lúc sau lão thái thái liền rời đi. Ngày hôm sau ban đêm lão thái thái lại tới gõ cửa, người một nhà thật sự không biện pháp, liền dọn đi rồi, nghe nói lão thái thái tôn tử ở nơi khác mua nhà mới, người một nhà phỏng chừng trốn đi nhà mới.”</p>
+<p>Giang Tứ mặc mặc, “Kia Dư nãi nãi đâu? Lúc sau còn trở về quá sao?”</p>
+<p>Bảo an “Này ta không rõ ràng lắm, nghe nói nhà tang lễ vứt thi thể không ngừng này một khối, gần nhất việc lạ tần phát, ngươi tốt nhất trước tìm lữ quán ở lại, buổi tối nghe được tiếng đập cửa ngàn vạn đừng khai, càng đừng buổi tối ra cửa, an toàn làm trọng.”</p>
+<p>Giang Tứ nghĩ nghĩ, “Ta còn là tưởng đi gặp, có thể mang ta đi một chút sao?”</p>
+<p>Bảo an không lay chuyển được Giang Tứ, dẫn hắn qua đi, xoát thang máy tạp, làm Giang Tứ chính mình đi lên.</p>
+<p>Bảo an một khắc cũng không nghĩ ở lâu, vội vàng rời đi.</p>
+<p>Giang Tứ đứng ở thang máy, tự hỏi một cái vấn đề.</p>
+<p>Dư nãi nãi nhi tử gia ở 11 lâu, Dư nãi nãi ở không có thang máy tạp dưới tình huống, như thế nào thượng đến 11 lâu? Chẳng lẽ là đi thang lầu? Hoặc là quỷ lực ảnh hưởng thang máy vận hành?</p>
+<p>Giang Tứ đi ra thang máy, đứng ở 1102 cửa, phát hiện ngoài cửa thảm thực dơ, mặt trên có dấu chân, còn có màu đen vết bẩn, không biết là cái gì.</p>
+<p>Lục Nhân gia viên là một thang hai hộ.</p>
+<p>Giang Tứ nhìn về phía 1101 cửa, trước cửa không có thảm, trên mặt đất rơi xuống một tầng hôi, như là thật lâu không ai đặt chân.</p>
+<p>1101 hẳn là không ai trụ.</p>
+<p>Giang Tứ ngồi xổm xuống, quan sát thảm thượng màu đen vết bẩn, chỉ cảm thấy một cổ quen thuộc xú vị thẳng xông lên đỉnh đầu, huân đến hắn thiếu chút nữa ngồi dưới đất.</p>
+<p>Là ngươi sao? Lên men chết lão thử!</p>
+<p>Giang Tứ bỗng nhiên cảm thấy, có lẽ Dư nãi nãi không phải biến thành quỷ vật, mà là thi thể bị kia quỷ sâu độc thủ!</p>
+<p>Giang Tứ ghé vào cửa phòng thượng nghe nghe, bên trong an an tĩnh tĩnh, như là thật sự không ai.</p>
+<p>Giang Tứ quyết định tại đây thủ, nhìn xem Dư nãi nãi có thể hay không xuất hiện.</p>
+<p>Hắn ôm chính mình tiểu ba lô, ngồi vào cửa thang lầu chờ.</p>
+<p>Ba lô là hắn đánh quỷ côn, hội họa giấy bút cùng hằng ngày đồ dùng, hai trương sủng linh họa bị hắn thu nhỏ lại trang ở tạp bộ, treo ở trên cổ, như vậy càng an toàn, không dễ dàng ném.</p>
+<p>Trời dần dần đêm đen tới, cảm ứng đèn khi minh khi diệt, cửa thang lầu đối diện thang máy, có thể nhìn đến thang máy vẫn luôn ở vận hành, từ trên xuống dưới, đến buổi tối 9 giờ qua đi, thang máy ngừng ở 17 lâu bất động.</p>
+<p>Giang Tứ phủng di động chơi trò chơi nhỏ cho hết thời gian.</p>
+<p>Đêm tiệm thâm, bên ngoài cũng càng thêm an tĩnh lên.</p>
+<p>Thang máy đột nhiên vận hành lên, từ 17 lâu một đường đi xuống, Giang Tứ nhìn thời gian, 11 giờ nhiều.</p>
+<p>Lại xem thang máy tầng lầu, ở lầu một ngừng một lát, sau đó bắt đầu thượng hành.</p>
+<p>Giang Tứ trang khởi di động, bối thượng ba lô, trong tay bắt lấy đánh quỷ côn, gắt gao nhìn chằm chằm thượng hành thang máy, thang máy dọc theo đường đi đến 13 lâu, Giang Tứ nghe được thang máy quan hợp thanh, lúc này mới nhẹ nhàng thở ra.</p>
+<p>Đang lúc Giang Tứ thả lỏng khi, ẩn ẩn nghe được sàn sạt thanh, như là đế giày dẫm mà truyền ra cọ xát thanh.</p>
+<p>Giang Tứ theo bản năng nhìn về phía thang máy, như cũ ngừng ở 13 lâu không nhúc nhích.</p>
+<p>Hắn lại nghe xong một lát, nháy mắt lông tơ dựng ngược, thanh âm là từ thang lầu phía trên truyền đến!</p>
+<p>Có người đang ở xuống lầu!</p>
+<p>Hơn nữa bước chân thực nhẹ!</p>
+<p>Giang Tứ lập tức nhảy lên, phóng nhẹ bước chân đi xuống dưới, đứng ở 10 lâu cùng 11 lâu chi gian thang lầu chỗ rẽ chỗ.</p>
+<p>Hắn muốn nhìn xem, có phải hay không Dư nãi nãi đã trở lại.</p>
+<p>Giang Tứ ngừng thở, ngẩng đầu hướng lên trên xem, xuyên thấu qua ngoài cửa sổ ánh trăng, mơ hồ thấy một cái bóng đen thong thả đi xuống thang lầu, hắc ảnh toàn thân trên dưới chỉ có hai chân ở động, hai tay rũ tại bên người vẫn không nhúc nhích, thân thể cứng còng, lập tức đi đến 1102 cửa.</p>
+<p>Hắc ảnh ở cửa đứng trong chốc lát, bắt đầu gõ cửa.</p>
+<p>“Đông! Đông! Đông!”</p>
+<p>Cảm ứng đèn sáng lên.</p>
+<p>Giang Tứ liếc mắt một cái nhìn thấy đứng ở cửa bóng dáng, cái đầu không cao, hoa râm tóc có chút hỗn độn, ăn mặc một thân màu đỏ sậm áo liệm, đang ở một chút một chút gõ cửa.</p>
+<p>Giang Tứ đại khí không dám ra, tuy rằng không có thấy mặt, nhưng bằng bóng dáng Giang Tứ là có thể xác định, người này chính là Dư nãi nãi!</p>
+<p>Dư nãi nãi còn ở gõ cửa, Giang Tứ nắm chặt đánh quỷ côn, lặng lẽ đi trên nhất giai.</p>
+<p>Hắn muốn tận mắt nhìn thấy xem Dư nãi nãi rốt cuộc là quỷ vật, vẫn là bị Thi Khôi Trùng thao tác thi nô, nếu là Thi Khôi Trùng đang làm trò quỷ, cần thiết đánh chết, không đến thương lượng, không thể làm kia quỷ đồ vật phá hủy Dư nãi nãi thi thể.</p>
+<p>Làm Giang Tứ không nghĩ tới chính là, môn cư nhiên khai!</p>
+<p>Nghe nói cả nhà dọn đi, đã không ai phòng ở, cư nhiên từ bên trong mở ra!</p>
+<p>Bên trong cánh cửa đen sì, giống cái ăn người hắc động, không thấy một tia ánh sáng, Dư nãi nãi bước cứng đờ bước chân, đi vào.</p>
+<p>Môn không quan, bên trong an an tĩnh tĩnh, một chút thanh âm cũng không có.</p>
+<p>Giang Tứ trái tim thình thịch kinh hoàng, lặng lẽ điểm điểm Dobermann tạp bộ, uy vũ soái khí Dobermann xuất hiện ở Giang Tứ bên người, Giang Tứ hướng nó so cái im tiếng thủ thế, làm nó an tĩnh.</p>
+<p>Dobermann quanh thân quang mang nội liễm, an an tĩnh tĩnh đi theo Giang Tứ bên người.</p>
+<p>Giang Tứ từ ba lô sờ ra đèn pin cường quang, lặng lẽ tới gần rộng mở cửa, dựa vào càng gần, cái loại này không biết lên men bao lâu mùi hôi thối càng nặng.</p>
+<p>Giang Tứ vài lần ngừng thở, đứng ở cửa, thấy bên trong cánh cửa thiển sắc thảm thượng, có mấy quán thâm sắc vết bẩn, cùng cửa thảm thượng rất giống.</p>
+<p>Giang Tứ đang muốn đi vào, ống quần bị một móng vuốt lay một chút.</p>
+<p>Giang Tứ cúi đầu, thấy Dobermann đang gắt gao nhìn chằm chằm phòng trong, trong cổ họng phát ra thấp thấp uy hiếp thanh, thân thể phục thấp, tiến vào công kích tư thái.</p>
+<p>Dobermann đột nhiên “Uông” một tiếng, toàn bộ cẩu đã phác đi vào!</p>
+<p>Giang Tứ lập tức ấn khai đèn pin cường quang, đối diện thượng phác ra tới đồ vật!</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong18.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong20.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "ta-dai-khai-suat-khong-phai-nguoi";
+const NOVEL_TITLE = "Ta đại khái suất không phải người";
+const CHAPTER_TITLE = "Chương 19";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

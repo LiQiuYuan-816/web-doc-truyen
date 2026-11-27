@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 13</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ta đại khái suất không phải người
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 13</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong12.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong14.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>“Ta có hay không sủng linh cùng ngươi có quan hệ sao? Chính ngươi nói, ta bất luận cái gì sự đều cùng ngươi không quan hệ, như bây giờ, ngươi không cảm thấy chính mình vả mặt sao?”</p>
+<p>Giang Tư Lâm xem Giang Tứ ánh mắt, không mang theo bất luận cái gì cảm tình, “Ta hiện tại muốn một con sủng linh, điều kiện ngươi khai.”</p>
+<p>Giang Tứ không nói chuyện, lãnh lãnh đạm đạm nhìn hắn.</p>
+<p>Giang Tư Lâm khai điều kiện, “Hào Uyển nhất hào biệt thự có thể cho ngươi, lúc trước mụ mụ ngươi muốn nhất chính là kia căn biệt thự, nhiều năm như vậy vẫn luôn không ai trụ, hiện tại ta đem biệt thự cho ngươi, đổi ngươi một con sủng linh.”</p>
+<p>Giang Tứ ngực tạc liệt đau đớn, tức giận đến cả người phát run.</p>
+<p>Từ nhỏ đến lớn, Giang Tứ trong sinh hoạt, chỉ có mụ mụ, không có ba ba, bọn họ liền người xa lạ đều không tính.</p>
+<p>Cha mẹ kết</p>
+<p>Hôn sau</p>
+<p>, cùng nhau ở Thanh thị làm buôn bán, sau lại mụ mụ sinh Giang Tứ, lưu tại quê quán chiếu cố Giang Tứ thuận tiện chiếu cố lão nhân, mụ mụ rất tưởng mang theo bọn họ đến Thanh thị cùng Giang Tư Lâm cùng nhau sinh hoạt, đều bị cự tuyệt, chỉ làm nàng lưu tại quê quán.</p>
+<p>Mụ mụ không phải không có hoài nghi quá hắn ở bên ngoài có người, nhưng Giang Tư Lâm không thừa nhận, thẳng đến bị trảo hiện hành, mới biết được Giang Tư Lâm mấy năm nay quá nhiều dễ chịu, quê quán có thê có tử, Thanh thị đồng dạng có thê có tử, khác nhau chỉ ở một cái có chứng một cái không chứng.</p>
+<p>Có chứng lưu tại quê quán, chiếu cố tuổi già mẫu thân cùng Giang Tứ, không chứng nhi tử chỉ so Giang Tứ nhỏ hai tuổi, từ nhỏ cẩm y ngọc thực, phủng ở lòng bàn tay kiều dưỡng lớn lên, cùng Giang Tứ đãi ngộ khác nhau như trời với đất.</p>
+<p>Lão nhân qua đời, lại bị mụ mụ đánh vỡ chân tướng, Giang Tư Lâm chuẩn bị hảo hết thảy, chủ động đưa ra ly hôn, hắn chỉ cấp mụ mụ một bộ nhà cũ, chính là Giang Tứ hiện tại trụ này bộ.</p>
+<p>Mụ mụ tự nhiên không chịu, nàng muốn vì Giang Tứ tranh thủ đến càng nhiều, Hào Uyển nhất hào biệt thự địa lý vị trí thực hảo, lúc trước mua thời điểm, Giang Tư Lâm nói qua sẽ cho Giang Tứ, phút cuối cùng Giang Tư Lâm lại thay đổi.</p>
+<p>Mụ mụ chỉ nghĩ muốn Giang Tứ cùng này căn biệt thự, mặt khác cái gì cũng không cần, nhưng Giang Tư Lâm vô luận như thế nào đều không nghĩ làm mụ mụ như nguyện, chẳng sợ trong tay hắn không thiếu biệt thự, mụ mụ chỉ có thể khởi tố Giang Tư Lâm, lại chết ở khởi tố trên đường……</p>
+<p>Giang Tư Lâm tình nguyện làm Hào Uyển nhất hào không trí nhiều năm như vậy, cũng không nghĩ cấp mụ mụ, mụ mụ vì này căn biệt thự mà chết, hiện tại hắn khinh phiêu phiêu liền nói ra, lấy Hào Uyển nhất hào đổi hắn một con sủng linh!</p>
+<p>Giang Tứ móng tay khảm tiến lòng bàn tay, thanh âm đều ở phát run, “Lúc trước ngươi nói cái gì cũng không cho mụ mụ, hiện tại vì một con sủng linh, ngươi liền phải cấp Hào Uyển nhất hào biệt thự, ngươi là cảm thấy ta mẹ còn không bằng một con sủng linh sao?!”</p>
+<p>Giang Tư Lâm thần sắc không có bất luận cái gì biến hóa, “Xác thật không bằng.”</p>
+<p>Giang Tứ phẫn nộ dưới, kéo lấy khăn trải bàn, xốc đầy bàn món ngon!</p>
+<p>“Nàng vì ngươi sinh nhi dục nữ, vì ngươi chiếu cố lão nhân, nàng có cái gì sai?! Bất trung chính là ngươi, thực xin lỗi nàng chính là ngươi, xem thường nàng cũng là ngươi! Ngươi dựa vào cái gì như vậy đối nàng!” Giang Tứ hốc mắt đỏ bừng, rống lên.</p>
+<p>Giang Tư Lâm đột nhiên đứng dậy, hung tợn nhìn chằm chằm Giang Tứ, “Nàng nhất thực xin lỗi ta chính là sinh ngươi! Ngươi mới sinh ra liền hại chết ngươi gia gia! Không mấy năm lại hại chết ngươi nãi nãi! Ngươi ông ngoại, bà ngoại, cữu cữu, hàng xóm, phát tiểu, còn có ngươi đại bá một nhà bốn người, sở hữu cùng ngươi có tiếp xúc người đều đã chết! Đúng là bởi vì ngươi, ta Giang gia sắp chết tuyệt hậu!”</p>
+<p>“Ngươi dựa vào cái gì hận ta? Hại chết mụ mụ ngươi người rõ ràng là chính ngươi, ngươi có cái gì lý do hận ta?! Giang Tứ ta nói cho ngươi, nhất người đáng chết là ngươi! Ngươi không cần oán hận người khác, hết thảy ngọn nguồn đều là chính ngươi! Ngươi một ngày bất tử, cùng ngươi có tiếp xúc người liền sẽ không ngừng chết đi! Không nghĩ liên lụy người khác, ngươi liền chính mình đi tìm chết!”</p>
+<p>Giang Tứ bình tĩnh nhìn hắn, hắn đã bị Giang Tư Lâm rèn luyện ra sắt thép trái tim, nhiều năm như vậy, Giang Tư Lâm vô số lần làm hắn đi tìm chết, nếu hắn thật sự đã chết, chẳng phải là như Giang Tư Lâm nguyện?</p>
+<p>Giang Tứ cười lạnh một tiếng, “Ngươi yên tâm, ta khẳng định hảo hảo tồn tại, sẽ không chết ở ngươi đằng trước.”</p>
+<p>Giang Tứ xoay người rời đi, lại nghe Giang Tư Lâm lạnh lùng nói “Ngươi tốt nhất bán một con sủng linh cấp Hàn gia, Hàn Diệc Trình nếu là đã chết, ngươi có thể liền hắn lại không cứu, Hàn gia sẽ không bỏ qua ngươi.”</p>
+<p>Giang Tứ cảm thấy buồn cười đến cực điểm, “Đồng dạng không buông tha còn có ngươi đi, rốt cuộc ngươi là ta sinh vật học thượng phụ thân, bằng không ngươi hôm nay cũng sẽ không mạo hiểm thấy ta, không phải sao?”</p>
+<p>Giang Tứ rời đi nhà ăn, thẳng đến ngồi lên xe taxi xe, hắn như cũ cảm thấy ngực buồn đau.</p>
+<p>Hắn cũng nghĩ tới, có phải hay không chính mình hại chết mụ mụ……</p>
+<p>Hắn không dám tưởng, mụ mụ bồi hắn mười mấy năm, vẫn luôn tường an không có việc gì, cuối cùng vẫn là ra ngoài ý muốn…… Hắn sợ đây là thật sự, hắn sợ thật là chính mình hại chết mụ mụ……</p>
+<p>Mỗi khi Giang Tứ bắt đầu tự mình hoài nghi thời điểm, đều sẽ nhớ tới mụ mụ nói.</p>
+<p>Mụ mụ vẫn luôn nói cho hắn, không phải hắn vấn đề, những cái đó đều là ngoài ý muốn, mụ mụ hy vọng hắn có thể hảo hảo tồn tại, mỗi ngày vui vẻ, làm người tốt, không cần lưng đeo người khác tử vong, hắn cái gì cũng chưa làm qua, không cần lưng đeo những cái đó.</p>
+<p>Nhưng hắn thật sự chưa làm qua sao? Ngẫm lại hắn đặc thù thể chất, là vừa xuất hiện, vẫn là vẫn luôn là? Nếu là, có thể hay không bởi vì loại này thể chất vô hình trung ảnh hưởng đến bên người người?</p>
+<p>Giang Tứ có điểm không xác định lên.</p>
+<p>Giang Tứ tinh thần hoảng hốt, lâm vào vũng lầy vô pháp tự kiềm chế, đột nhiên thấy trước xe xuất hiện một người, tài xế sư phó hiển nhiên cũng thấy, lập tức chuyển hướng phanh xe!</p>
+<p>Chạy trung xe taxi quăng đi ra ngoài, hoành ở trên đường, mặt sau chiếc xe liên tiếp chạm vào nhau, xe taxi bị đâm đi ra ngoài thật xa mới dừng lại.</p>
+<p>Giang Tứ có nháy mắt mất đi ý thức, hắn nghe được Corgi ở kêu, trong thanh âm tràn ngập cảnh cáo cùng uy hiếp.</p>
+<p>Giang Tứ nghe được nam nhân kêu to thanh, nỗ lực từ mơ hồ trung mở to mắt, nhìn đến tài xế sư phó kêu to chạy xuống xe, chân mềm ngã trên mặt đất, không ngừng “A a” kêu to, như là gặp được cực kỳ khủng bố sự tình.</p>
+<p>Giang Tứ ngồi dậy, thấy ngoài cửa sổ đứng một người, người nọ ăn mặc tây trang, tây trang thượng đều là bùn đất cùng hắc bạch sắc sền sệt vật, hắn chỉ có nửa bên đầu, một nửa kia như là bị thứ gì tạp lạn, máu đen đi theo màu trắng vật chất theo cổ đi xuống lưu.</p>
+<p>Hắn quần tây cùng giày da đều thực dơ, giày tiêm một cái về phía trước một cái về phía sau, nam nhân đang ở từng bước một tới gần xe taxi.</p>
+<p>Cũng may Giang Tứ có thi quỷ thị giác đánh sâu vào ở phía trước, bằng không khẳng định phải bị vị nhân huynh này dọa ra cái tốt xấu.</p>
+<p>“A a a a ——!!!!!”</p>
+<p>Tài xế sư phó lại không có như vậy miễn dịch, vẫn luôn ở hoảng sợ kêu to, sợ hãi đến tứ chi cứng đờ, liền đào tẩu sức lực cũng không có.</p>
+<p>Giang Tứ một chân đá văng đã biến hình cửa xe, từ trong xe bò ra tới.</p>
+<p>Mấy chiếc xe chạm vào nhau, này giai đoạn đã phá hỏng, không ít người đi đường xuống xe hỗ trợ, cứu trợ người bệnh, Giang Tứ bên này lại không ai dám tới gần, chung quanh thỉnh thoảng vang lên hoảng sợ kêu to, có người sợ hãi đến cả người run rẩy, còn không quên cầm di động quay chụp.</p>
+<p>“Cứu, cứu mạng!”</p>
+<p>Tài xế sư phó trên mặt đất bò sát, muốn rời xa kia khủng bố tây trang nam nhân.</p>
+<p>Giang Tứ duỗi tay tiến ba lô, sờ ra bên trong đánh quỷ côn, nâng dậy tài xế sư phó, giá hắn rời xa tây trang nam nhân.</p>
+<p>Corgi vẫn luôn gâu gâu kêu, che ở Giang Tứ trước người.</p>
+<p>Ra như vậy tai nạn xe cộ, Giang Tứ cùng tài xế sư phó cũng chưa bị thương, liền điểm da cũng chưa sát phá.</p>
+<p>Giang Tứ trước mắt bắn ra khung thoại.</p>
+<p>【 ác quỷ Hà Vĩnh Bỉnh, quỷ dị giá trị 800】</p>
+<p>【 đưa tới cửa đồ ăn, không cần bạch không cần, đi lên làm, đừng túng! 】</p>
+<p>Giang Tứ “……”</p>
+<p>Đối phó di ảnh quỷ đều cảm thấy cố hết sức, này 800 quỷ dị giá trị ác quỷ, thật có thể trải qua sao? Không cần lừa dối hắn a!</p>
+<p>Giang Tứ cảm thấy chính mình làm bất quá, trước chạy vì kính!</p>
+<p>Giang Tứ kéo trầm trọng tài xế sư phó, thật sự chạy bất động, “Sư phó, chân của ngươi có thể hay không phát huy một chút tác dụng? Ta khiêng bất động ngươi a!”</p>
+<p>Tài xế sư phó ủy khuất, “Ta ta ta ta chân mềm, trạm đứng dậy không nổi.”</p>
+<p>Giang Tứ mang theo tài xế sư phó rời xa, tây trang ác quỷ đi bước một đi theo, tốc độ tuy rằng chậm, nhưng mục tiêu minh xác, không phải hướng về phía Giang Tứ chính là hướng về phía tài xế sư phó tới.</p>
+<p>Giang Tứ “Sư phó, ngài là thủ pháp hảo công dân sao?”</p>
+<p>“Ta khai nhiều năm như vậy xe taxi, chưa từng ra quá chuyện này, hôm nay này xe phiên đến ta đột nhiên không kịp phòng ngừa, thứ này tuyệt đối không phải hướng ta tới!” Tài xế sư phó nói, nhìn về phía Giang Tứ ánh mắt liền không đúng rồi.</p>
+<p>Lại xem trong tay hắn cầm đồ vật, “Người trẻ tuổi, ngươi nếu là làm cái gì sai sự, không cần trốn tránh, chủ động tự thú, tranh thủ to rộng xử lý.”</p>
+<p>Giang Tứ “……”</p>
+<p>Giang Tứ buông tay, đem người ném trên mặt đất, từ ba lô sờ ra một tờ tiền đỏ đưa cho tài xế sư phó.</p>
+<p>“Tiền xe, không cần thối lại.”</p>
+<p>Lúc này bọn họ đã tới gần vây xem đám người, đem người phóng nơi này, thực mau liền có người hảo tâm đi lên hỗ trợ.</p>
+<p>Vì nghiệm chứng thứ này là hướng ai tới, Giang Tứ cõng bao hướng khác một phương hướng chạy, sau đó hắn liền thấy, tây trang ác quỷ đi theo chuyển hướng, tiếp tục triều hắn lại đây.</p>
+<p>Giang Tứ “……”</p>
+<p>Thảo! Hắn cái gì cũng không làm a!</p>
+<p>Tài xế sư phó thấy thế, lớn tiếng nói “Tiểu huynh đệ! Chủ động tự thú, tranh thủ to rộng xử lý!”</p>
+<p>Giang Tứ “……”</p>
+<p>Nếu là đi theo hắn, kia hắn liền càng có lý do chạy, đem này tây trang ác quỷ mang ly đường phố ném xuống.</p>
+<p>Này giai đoạn đã hoàn toàn vô pháp thông hành, ngừng ở bên ngoài chờ mấy chiếc xe, đột nhiên động cơ nổ vang, phá khai chặn đường chiếc xe, đồng thời hướng tới Giang Tứ đánh tới!</p>
+<p>“Gâu gâu gâu gâu!!!”</p>
+<p>Corgi đột nhiên quay đầu, chạy ra một đạo bạch quang, hướng tới tây trang ác quỷ đánh tới, hung hăng một ngụm cắn ở tây trang ác quỷ…… Trên vai!</p>
+<p>Giang Tứ tin tưởng, Corgi nguyên bản mục tiêu hẳn là cổ, nó tương đối thích cắn nơi đó, đáng tiếc cái này tây trang ác quỷ vóc dáng không lùn, Corgi vóc dáng lại quá lùn, không có thể cắn cổ, lại cắn ở trên vai.</p>
+<p>Dù vậy, cũng không phải không hề tác dụng.</p>
+<p>Đâm hướng Giang Tứ mấy chiếc xe, khẩn cấp thời điểm đột nhiên dừng lại, khoảng cách Giang Tứ đều chỉ có một bước xa!</p>
+<p>Tây trang ác quỷ bóp chặt Corgi cổ xách lên, Corgi trên người bạch quang đang ở bay nhanh yếu bớt.</p>
+<p>Giang Tứ dùng tốc độ nhanh nhất tiến lên, đánh quỷ côn vung lên, nện ở tây trang ác quỷ bắt lấy Corgi trên tay, Corgi rơi xuống đất, trên người quang mang mỏng manh cơ hồ biến mất.</p>
+<p>“Trở về!” Giang Tứ hô to.</p>
+<p>Corgi hóa thành quang đoàn trở lại Giang Tứ ba lô.</p>
+<p>Giang Tứ bắt lấy đánh quỷ côn chiếu ác quỷ đầu chính là một hồi mãnh tạp, sền sệt máu đen văng khắp nơi!</p>
+<p>Này ác quỷ có thể khống chế chiếc xe, này nếu là không giải quyết, ngày nào đó đi ở trên đường, nói không chừng liền không thể hiểu được bị xe đâm chết.</p>
+<p>Ác quỷ như là bị bức nóng nảy, quanh thân quỷ khí vờn quanh, hình thành một đạo quỷ khí cái chắn, lại là chặn Giang Tứ đánh quỷ côn.</p>
+<p>Tái nhợt vặn vẹo quỷ thủ, một phen bóp chặt Giang Tứ cổ, liền phải vặn gãy, Giang Tứ tay trái phản bắt lấy vặn vẹo quỷ thủ, quỷ thủ bị áp chế, Giang Tứ tay phải đánh quỷ côn không ngừng, từng cái nện ở tây trang ác quỷ phá trên đầu!</p>
+<p>Như thế gần gũi ẩu đả ác quỷ, này thị giác hiệu quả quả thực là khủng bố bạo kích, nhưng Giang Tứ không dám đình, đây chính là so âm linh lợi hại hơn ác quỷ, một không cẩn thận mạng nhỏ liền không có, cần thiết không thể nương tay!</p>
+<p>Thấy như vậy một màn sở hữu người chứng kiến đều sợ ngây người!</p>
+<p>Ở bọn họ sợ hãi đến run rẩy không ngừng thời điểm, một thiếu niên cư nhiên luân ghế dựa chân liền dám xông lên đi, hành hung khủng bố quỷ vật!</p>
+<p>Hiện tại người trẻ tuổi đều như vậy sinh mãnh sao?</p>
+<p>Lại xem phụ cận run rẩy tay chụp video người trẻ tuổi……</p>
+<p>Giang Tứ không biết tạp nhiều ít hạ, thủ hạ không còn, tây trang ác quỷ đột nhiên biến mất.</p>
+<p>Là biến mất, không phải tiêu diệt, bởi vì không có quỷ khí, cũng không thu đến quỷ dị giá trị.</p>
+<p>Tây trang ác quỷ bị đánh chạy.</p>
+<p>Giang Tứ che lại cổ, thiếu chút nữa bị cắt đứt khí.</p>
+<p>Này nếu không phải có Quỷ Dị tay trái có thể áp chế quỷ vật, cổ hắn hôm nay nhất định đến đoạn.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong12.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong14.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "ta-dai-khai-suat-khong-phai-nguoi";
+const NOVEL_TITLE = "Ta đại khái suất không phải người";
+const CHAPTER_TITLE = "Chương 13";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>

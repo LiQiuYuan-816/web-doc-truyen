@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chương 16</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Style dùng chung -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-chapter">
+
+
+  <!-- ===== NÚT MỞ THƯ VIỆN (TRÁI) ===== -->
+  <div class="menu-toggle" onclick="toggleLibrary()">☰</div>
+
+  <div class="overlay" id="overlay" onclick="toggleLibrary()"></div>
+
+  <div class="library-sidebar" id="librarySidebar">
+    <div class="library-header">
+      📚 Thư viện
+      <span class="close-btn" onclick="toggleLibrary()">✕</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Tìm truyện..." />
+    <ul id="storyList"></ul>
+  </div>
+
+
+  <!-- ===== NÚT MỞ MỤC LỤC (PHẢI) ===== -->
+  <div class="chapter-menu-toggle" onclick="toggleChapterMenu()">📑</div>
+
+  <div id="chapterOverlay" class="chapter-overlay" onclick="toggleChapterMenu()"></div>
+
+  <div id="chapterSidebar" class="chapter-sidebar">
+    <div class="chapter-sidebar-header">
+      📚 Mục lục
+      <span class="close-btn" onclick="toggleChapterMenu()">✕</span>
+    </div>
+
+    <ul id="chapterList"></ul>
+  </div>
+<!-- ================= HEADER ================= -->
+<div class="fixed-top">
+  <div class="fixed-inner page-chapter">
+
+    <!-- LEFT -->
+    <div class="top-left">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <button id="bookmarkBtn" class="back-link">📌 Kẹp sách</button>
+    </div>
+    <!-- CENTER -->
+    <div class="novel-header top-center">
+      <h1 class="novel-title">
+        Ta đại khái suất không phải người
+      </h1>
+      <div class="novel-meta">
+        <span>Chương 16</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG -->
+    <div class="top-right">
+      <a class="back-link" href="chuong15.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong17.html">⏭ Chương sau</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<main>
+<div class="content chapter-content">
+<p>Hai người mới vừa đi không trong chốc lát, cửa phòng lại lần nữa bị gõ vang.</p>
+<p>Giang Tứ cho rằng hai người bọn họ lại về rồi, mở cửa phát hiện ngoài cửa đứng Cố Mậu Sinh cùng Mục Vi.</p>
+<p>Này hai người so với lần trước nhìn thấy, rõ ràng tiều tụy rất nhiều, quầng thâm mắt phi thường nghiêm trọng.</p>
+<p>Đặc biệt là Cố Mậu Sinh, sắc mặt tái nhợt, người cũng gầy một vòng, cả người thoạt nhìn trạng thái rất kém cỏi.</p>
+<p>Giang Tứ không biết bọn họ như thế nào sẽ cùng nhau tới hắn nơi này.</p>
+<p>Mục Vi nói “Có việc gấp tìm ngươi, sợ trong điện thoại nói không rõ, chúng ta tự mình lại đây một chuyến.”</p>
+<p>Giang Tứ “Chuyện gì?”</p>
+<p>Mục Vi “Đi vào nói.”</p>
+<p>Hai người vào cửa, Cố Mậu Sinh đi thẳng vào vấn đề, “Nghe nói ngươi sủng linh có thể áp chế quỷ chú?”</p>
+<p>Giang Tứ nhìn về phía Mục Vi.</p>
+<p>Mục Vi bất đắc dĩ, “Nhân mệnh quan thiên, chỉ cần có một đường hy vọng, chúng ta cũng không thể từ bỏ.”</p>
+<p>“Hiện tại bị nguyền rủa người càng ngày càng nhiều, nữ thi vẫn luôn không thấy tung tích, chúng ta không thể trơ mắt nhìn bọn họ toàn bộ đi tìm chết, cho nên ta cùng Cố đội suy nghĩ một cái biện pháp, yêu cầu ngươi trợ giúp……”</p>
+<p>Giang Tứ chặn đứng câu chuyện, “Trước nói rõ, ta không có dư thừa sủng linh.”</p>
+<p>“Một con cũng đúng.”</p>
+<p>Mục Vi “Chúng ta có thể đem những cái đó bị nguyền rủa người tập trung ở bên nhau, làm một con sủng linh thống nhất áp chế, không biết như vậy hay không có thể?”</p>
+<p>Cố Mậu Sinh nói “Ngươi yên tâm, sủng linh chỉ là mượn, hơn nữa là có thù lao trợ giúp, Quỷ Quản Cục sẽ chi trả phí dụng.”</p>
+<p>“Đại khái có bao nhiêu người?”</p>
+<p>Giang Tứ trong tay còn có hai chỉ sủng linh, nhưng này hai chỉ đều không thể ngoại mượn, hắn hiện tại đang bị một con ác quỷ quấn lên, trước hết cần bảo đảm chính mình an toàn, mới có thể suy xét người khác, huống chi hắn còn tính toán mang hai chỉ đi Phồn thị một chuyến.</p>
+<p>Mục Vi thở dài “Đã qua trăm, nhân số còn ở không ngừng tăng trưởng.”</p>
+<p>Giang Tứ kinh ngạc, “Như thế nào sẽ có nhiều như vậy?”</p>
+<p>Nói đến cái này, Mục Vi liền áp không được tính tình.</p>
+<p>“Các ngươi Q đại không ít người biết sự tình từ đầu đến cuối, liền đem chuyện này phát tới rồi trên mạng, theo tin nóng, nhiệt độ càng ngày càng cao, kia nữ quỷ còn bị võng hữu phong làm ‘ cảm tình trung trinh vệ sĩ ’.”</p>
+<p>“Không ít không biết nặng nhẹ người trẻ tuổi, bọn họ ở trên mạng triệu hoán nữ quỷ thí nghiệm chính mình nam bạn gái hay không trung trinh, chúng ta lo lắng nữ quỷ sự kiện tiến thêm một bước mở rộng, phong hào, xóa thiếp, áp nhiệt độ đều dùng, nhưng sự kiện còn ở lên men, bị nguyền rủa người càng ngày càng nhiều.”</p>
+<p>Giang Tứ “……”</p>
+<p>Sự tình không có đến phiên trên đầu mình, có rất nhiều ăn dưa xem diễn người.</p>
+<p>Chỉ có làm cho bọn họ nhận thức đến chân chính khủng bố, bọn họ mới có thể sợ hãi, mới có thể kiêng kỵ.</p>
+<p>Từ gặp được quỷ dị bắt đầu, Giang Tứ vẫn luôn ở chú ý phía chính phủ động thái, cho tới bây giờ, quan môi không có chính diện đưa tin quá chuyện này.</p>
+<p>Bất quá đối trên mạng tin nóng chính mình ngộ quỷ thiệp, video, phát sóng trực tiếp chờ, cũng không có mệnh lệnh rõ ràng cấm, này tựa hồ là một cái tín hiệu, mặt trên ở hướng dân chúng chậm rãi truyền lại quỷ dị xuất hiện tin tức.</p>
+<p>Hiện tại Đại Triều quốc chính là không công khai, không cấm thái độ.</p>
+<p>Theo quỷ dị sự kiện càng ngày càng nhiều, hẳn là thực mau liền sẽ thắng tới toàn diện công khai một ngày.</p>
+<p>Giang Tứ nói “Người quá nhiều, một con sủng linh rất khó áp chế.”</p>
+<p>Mục Vi lập tức nói “Ngươi có dư thừa sủng linh?”</p>
+<p>Giang Tứ “Không có.”</p>
+<p>Mục Vi “……”</p>
+<p>Mục Vi lòng tràn đầy sốt ruột, “Nữ thi một chốc tìm không thấy, này đó bị nguyền rủa người tùy thời tùy chỗ đều sẽ chết, chúng ta là bó tay không biện pháp, chỉ có thể tìm ngươi hỗ trợ. Ngươi cấp câu lời chắc chắn, rốt cuộc có biện pháp nào không?”</p>
+<p>Giang Tứ không nghĩ bởi vì sủng linh xuất hiện, làm nguyên bản hạnh phúc sủng vật đã chịu hãm hại, ngẫm lại Hàn gia cấp ra sủng linh giá cả, động bất động chính là trăm vạn khởi bước, có bao nhiêu người có thể chịu được như vậy dụ hoặc?</p>
+<p>Đặc biệt là ở hiện giờ thời đại này, sủng linh giá trị, Giang Tứ rất rõ ràng.</p>
+<p>Nhưng vì bảo hộ sủng vật mà làm lơ mạng người, Giang Tứ cũng làm không đến, ở hắn khả năng cho phép thả đối chính mình không có nguy hại dưới tình huống, hắn nguyện ý cứu người.</p>
+<p>Không nghĩ tiết lộ sủng linh hình thành điều kiện, hắn chỉ có thể chính mình từ bên ngoài tìm kiếm sủng linh.</p>
+<p>Giang Tứ nói “Ta hiện tại vô pháp trả lời ngươi, ngày mai cho ngươi hồi đáp.”</p>
+<p>Giang Tứ nhìn chằm chằm Mục Vi nhìn một lát, bỗng nhiên nói “Ngươi dưỡng quá sủng vật sao?”</p>
+<p>Mục Vi đầy đầu dấu chấm hỏi, “Đại học khi, ta gặp được một đôi tình lữ nháo chia tay, nữ hài đem nam hài đưa Tử Thương (hamster) ném, ta xem không ai muốn, liền nhặt về đi chính mình dưỡng, này…… Tính sao?”</p>
+<p>Giang Tứ “……”</p>
+<p>Giang Tứ cũng không biết Tử Thương (hamster) có tính không, chỉ có thể thử xem xem.</p>
+<p>Giang Tứ nói “Như vậy, các ngươi trở về hỏi một chút Quỷ Quản Cục, có hay không nhân ái sủng qua đời, ta có thể hỗ trợ chiêu linh.”</p>
+<p>Mục Vi cùng Cố Mậu Sinh vẻ mặt mờ mịt.</p>
+<p>Mục Vi bỗng nhiên nghĩ tới cái gì, “Chiêu linh là có thể biến thành sủng linh?”</p>
+<p>Giang Tứ ánh mắt hơi lóe, “Này muốn xem vận khí, sủng linh hình thành điều kiện tương đối hà khắc, chỉ có đối chủ nhân còn có lưu luyến sủng linh mới có thể gọi trở về.”</p>
+<p>Sủng linh chân chính hình thành điều kiện liền Giang Tứ chính mình cũng chưa thăm dò rõ ràng, chỉ có thể tận khả năng hướng tốt phương hướng lừa dối.</p>
+<p>Mục Vi lập tức nói “Ta cùng nhà ta A Tử quan hệ thực hảo, ngươi giúp ta chiêu linh, nói không chừng A Tử nguyện ý trở về giúp ta.”</p>
+<p>Giang Tứ hóa thân thần côn, “Có ảnh chụp sao?”</p>
+<p>“Này quá có, A Tử tồn tại khi, ta chụp thật nhiều ảnh chụp.” Mục Vi nói click mở di động cấp Giang Tứ xem.</p>
+<p>Giang Tứ làm Mục Vi đem ảnh chụp chia cho hắn, hắn có rảnh sẽ hỗ trợ chiêu linh.</p>
+<p>Tiễn đi Mục Vi cùng Cố Mậu Sinh lúc sau, Giang Tứ chuẩn bị đi ra ngoài tìm kiếm sủng linh.</p>
+<p>Từ Dobermann trên người được đến dẫn dắt, Giang Tứ quyết định đi Thanh thị lưu lạc sủng vật thu dụng sở trung tìm xem xem, những cái đó bị vứt bỏ sủng vật, không có người nhận nuôi, rất nhiều đều sẽ ở thu dụng trong sở chết già bệnh chết, bên kia sủng vật nhiều nhất.</p>
+<p>Trước mắt lớn nhất vấn đề là, ra cửa có thể hay không gặp được ác quỷ.</p>
+<p>Giang Tứ chuẩn bị hảo hết thảy, bối thượng ba lô, rời đi tiểu khu.</p>
+<p>Hắn không nghĩ liên lụy người khác, không có lựa chọn xe buýt cùng xe taxi, chính mình đạp xe qua đi.</p>
+<p>Hắn tuyển tam gia khoảng cách tiểu khu so gần sủng vật thu dụng sở, chuyên chọn ngõ nhỏ cùng đường nhỏ đi, như vậy không cần đề phòng sẽ có ô tô đâm lại đây.</p>
+<p>Giang Tứ cấp tam gia sủng vật thu dụng sở các quyên một vạn, sau đó đưa ra tưởng muốn nhìn một cái trước kia sủng vật ảnh chụp, tán gẫu trung lại giống như lơ đãng hỏi, này đó cẩu cẩu hay không đều còn sống.</p>
+<p>Giang Tứ đem đã qua đời thả có toàn thân chiếu ảnh chụp, dùng di động chụp được tới, tính toán mang về nếm thử nhìn xem, có thể hay không biến thành sủng linh.</p>
+<p>Tam gia chạy xong, đã đã khuya, đại bộ phận thời gian đều lãng phí ở trên đường.</p>
+<p>Chờ hắn đổ mồ hôi đầm đìa trở lại dừng xe chỗ, tiểu lục mới vừa đình hảo, chỉ nghe “Phanh” một tiếng vang lớn, theo sau chính là người qua đường tiếng thét chói tai, một chiếc xe bị đâm cho lệch khỏi quỹ đạo đường xe chạy, hướng tới Giang Tứ vị trí đâm lại đây.</p>
+<p>Giang Tứ dùng tốc độ nhanh nhất phác gục, thuận thế một lăn, kia xe đâm xe kéo lều, đâm đoạn khóa xe trụ, bánh xe dán Giang Tứ chân nghiền qua đi, thiếu chút nữa nhi hắn chân liền phế đi.</p>
+<p>Không đợi Giang Tứ bò dậy, một khác chiếc xe đã xông tới!</p>
+<p>“Hoa Tiêu! Thiên Lang!” Giang Tứ hô to.</p>
+<p>Hắn căn bản không nhìn thấy ác quỷ giấu ở nơi nào, nhưng này đó mất khống chế chiếc xe, khẳng định là ác quỷ bút tích!</p>
+<p>Hắn nhìn không thấy không quan hệ, hắn sủng linh khẳng định có thể tìm ra giấu đi ác quỷ.</p>
+<p>Đệ nhị chiếc xe tăng tốc hữu hạn, đánh vào khóa xe trụ thượng, vô pháp tiếp tục về phía trước, Giang Tứ may mắn giữ được mạng chó.</p>
+<p>Trên đường phố lại lần nữa truyền đến tiếng thét chói tai, hai chỉ sủng linh cũng triều cái kia phương hướng phóng đi!</p>
+<p>Đám người tản ra, Giang Tứ thấy được kia chỉ chỉ còn nửa bên đầu ác quỷ, đang dùng xám xịt đôi mắt nhìn hắn, ở sủng linh nhào lên đi thời điểm, biến mất tại chỗ.</p>
+<p>Hai chỉ sủng linh một lần nữa chạy về Giang Tứ bên người, đem hắn bảo vệ, lo lắng kia ác quỷ lại lần nữa xuất hiện.</p>
+<p>Giang Tứ không có trở ngại, chỉ là phác gục khi sát phá da.</p>
+<p>Hắn không dám bên ngoài dừng lại, dùng tốc độ nhanh nhất chạy về gia đi.</p>
+<p>Hắn thực bực bội, không biết này chỉ ác quỷ rốt cuộc muốn làm gì, bọn họ không oán không thù, vì cái gì sẽ theo dõi hắn?</p>
+<p>Như vậy xuất quỷ nhập thần, hắn về sau còn muốn hay không ra cửa?</p>
+<p>Di động có tin tức tiến vào, click mở vừa thấy, đều là Mục Vi phát tới sủng vật toàn thân chiếu, hơn nữa Mục Vi Tử Thương (hamster), tổng cộng 11 chỉ.</p>
+<p>Giang Tứ nghĩ nghĩ, ở lục tin thượng cấp Mục Vi trở về điều tin tức.</p>
+<p>Quỷ Yếm [ có thể giúp ta tra cá nhân sao? ]</p>
+<p>Mục Vi [ ai? ]</p>
+<p>Quỷ Yếm [ Hà Vĩnh Bỉnh, đại khái 30 tuổi tả hữu, thân cao ở 178~181cm chi gian, khi chết ăn mặc tây trang cùng giày da, hẳn là chết vào tai nạn xe cộ, không có nửa bên đầu. ]</p>
+<p>Mục Vi [??? Quỷ vật?! ]</p>
+<p>Quỷ Yếm [ vẫn luôn dây dưa ta ác quỷ, ta muốn biết nó vì cái gì đi theo ta. ]</p>
+<p>Mục Vi [ hảo, ta làm người đi tra, ngươi cấp tin tức so nhiều, hẳn là thực mau sẽ có kết quả. ]</p>
+<p>Mục Vi [ sủng linh nói như thế nào? Giang hồ cứu cấp a đại ca! ]</p>
+<p>Quỷ Yếm [ đang ở chiêu linh ing. ]</p>
+<p>Mục Vi đã phát cái cố lên biểu tình bao, kết thúc đối thoại.</p>
+
+<!-- ===== NAV DƯỚI: CHỈ HIỆN NÚT KHI CÓ CHƯƠNG ===== -->
+<div class="nav">
+      <a class="back-link" href="../index.html">📑 Mục lục</a>
+      <a class="back-link" href="../../../index.html">🏠 Trang chủ</a>
+      <a class="back-link" href="../../../thu-vien-ten/name-library.html">📖 Thư viện tên</a>
+      <a class="back-link" href="chuong15.html">⏮ Chương trước</a>
+      <a class="back-link" href="chuong17.html">⏭ Chương sau</a>
+</div>
+  </main>
+<!-- ================= BOOKMARK ================= -->
+<script>
+const NOVEL_ID = "ta-dai-khai-suat-khong-phai-nguoi";
+const NOVEL_TITLE = "Ta đại khái suất không phải người";
+const CHAPTER_TITLE = "Chương 16";
+const btn = document.getElementById("bookmarkBtn");
+function getBookmarks() {
+  return JSON.parse(localStorage.getItem("bookmarks")) || {};
+}
+function isBookmarked() {
+  return !!getBookmarks()[NOVEL_ID];
+}
+function updateButton() {
+  const marked = isBookmarked();
+  btn.textContent = marked ? "✅ Đã kẹp" : "📌 Kẹp sách";
+  btn.classList.toggle("active", marked);
+}
+function toggleBookmark() {
+  const bookmarks = getBookmarks();
+  if (bookmarks[NOVEL_ID]) {
+    delete bookmarks[NOVEL_ID];
+    alert("❌ Đã bỏ kẹp sách");
+  } else {
+    bookmarks[NOVEL_ID] = {
+      novelTitle: NOVEL_TITLE,
+      chapterTitle: CHAPTER_TITLE,
+      url: location.href,
+      time: Date.now()
+    };
+    alert("📌 Đã lưu chương đang đọc");
+  }
+  localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+  updateButton();
+}
+updateButton();
+btn.addEventListener("click", toggleBookmark);
+</script>
+<!-- ================= HEADER SHRINK ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* =========================
+     HEADER SHRINK + PADDING
+  ========================== */
+
+  const fixedHeader = document.querySelector(".fixed-top");
+  const main = document.querySelector("main");
+
+  function adjustMainPadding() {
+    if (!fixedHeader || !main) return;
+    main.style.paddingTop = fixedHeader.offsetHeight + 20 + "px";
+  }
+
+  function handleHeaderShrink() {
+    if (!fixedHeader) return;
+    fixedHeader.classList.toggle("shrink", window.scrollY > 80);
+    adjustMainPadding();
+  }
+
+  window.addEventListener("scroll", handleHeaderShrink);
+  window.addEventListener("resize", adjustMainPadding);
+  adjustMainPadding();
+
+
+  /* =========================
+     SIDEBAR THƯ VIỆN (TRÁI)
+  ========================== */
+
+  const sidebar = document.getElementById("librarySidebar");
+  const overlay = document.getElementById("overlay");
+  const storyList = document.getElementById("storyList");
+  const searchInput = document.getElementById("searchInput");
+
+  function toggleLibrary() {
+    if (!sidebar || !overlay) return;
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  }
+
+  window.toggleLibrary = toggleLibrary;
+
+  let storiesData = [];
+
+  fetch("../../../stories.json")
+    .then(res => res.json())
+    .then(data => {
+      storiesData = data;
+      renderStories(data);
+    })
+    .catch(err => console.error("Lỗi load stories.json:", err));
+
+  function renderStories(data) {
+    if (!storyList) return;
+
+    storyList.innerHTML = "";
+
+    const pathParts = window.location.pathname.split("/");
+    const currentSlug = pathParts[2];
+
+    data.forEach((story, index) => {
+      const li = document.createElement("li");
+      li.style.animationDelay = `${Math.min(index * 0.03, 0.3)}s`;
+
+      const a = document.createElement("a");
+      a.href = `/web-doc-truyen/stories/${story.slug}/`;
+      a.textContent = `${story.title} (${story.chapters} chương)`;
+
+      if (story.slug === currentSlug) {
+        a.style.background = "#e0e7ff";
+      }
+
+      li.appendChild(a);
+      storyList.appendChild(li);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = storiesData.filter(story =>
+        story.title.toLowerCase().includes(keyword)
+      );
+      renderStories(filtered);
+    });
+  }
+
+
+  /* =========================
+     SIDEBAR MỤC LỤC CHƯƠNG (PHẢI)
+  ========================== */
+
+  const chapterSidebar = document.getElementById("chapterSidebar");
+  const chapterOverlay = document.getElementById("chapterOverlay");
+  const chapterList = document.getElementById("chapterList");
+
+  function toggleChapterMenu() {
+    if (!chapterSidebar || !chapterOverlay) return;
+    chapterSidebar.classList.toggle("active");
+    chapterOverlay.classList.toggle("active");
+  }
+
+  window.toggleChapterMenu = toggleChapterMenu;
+
+  if (chapterList) {
+    fetch("../index.html")
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const toc = doc.querySelector(".content ul");
+        if (!toc) return;
+
+        const currentPage = window.location.pathname.split("/").pop();
+
+        toc.querySelectorAll("li").forEach(li => {
+          const a = li.querySelector("a");
+          if (!a) return;
+
+          let href = a.getAttribute("href");
+
+          if (href.startsWith("chapter/")) {
+            href = href.replace("chapter/", "");
+          }
+
+          const newLi = document.createElement("li");
+          const newA = document.createElement("a");
+
+          newA.href = href;
+          newA.textContent = a.textContent;
+
+          if (href === currentPage) {
+            newA.style.background = "#e0e7ff";
+          }
+
+          newLi.appendChild(newA);
+          chapterList.appendChild(newLi);
+        });
+      })
+      .catch(err => console.error("Không load được mục lục:", err));
+  }
+});
+</script>
+</body>
+</html>
